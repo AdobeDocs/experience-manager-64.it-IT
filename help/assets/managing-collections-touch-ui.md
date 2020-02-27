@@ -4,7 +4,7 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0ffda4a6919f2a7ba9f49321fbb59f076bf5c406
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
@@ -19,9 +19,8 @@ Potete condividere più raccolte con un utente. Ogni raccolta contiene riferimen
 
 Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le risorse:
 
-* Una raccolta che contiene un elenco di riferimento statico di risorse, cartelle e altre raccolte
-
-* Una raccolta dinamica che include dinamicamente risorse basate su criteri di ricerca
+* Una raccolta che contiene un elenco di riferimento statico di risorse, cartelle e altre raccolte.
+* Una raccolta smart che include dinamicamente risorse basate su criteri di ricerca.
 
 ## Accedere alla console delle raccolte {#navigating-the-collections-console}
 
@@ -162,19 +161,33 @@ I metadati della raccolta includono i dati sulla raccolta, compresi eventuali ta
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** per visualizzare i metadati della raccolta.
 1. Modificate i metadati, se necessario, quindi toccate o fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti per salvare le modifiche.
 
-### Modificare i metadati della raccolta in blocco {#editing-collection-metadata-in-bulk}
+### Modificare i metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
 
 Potete modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
 1. Nella console Raccolte, selezionate due o più raccolte per le quali desiderate modificare i metadati.
-1. Dalla barra degli strumenti, toccate o fate clic sull’icona **[!UICONTROL Proprietà]** .
+1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Proprietà]**.
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, modifica i metadati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, secondo necessità.
+1. Per visualizzare le proprietà dei metadati per una raccolta specifica, deselezionate le raccolte rimanenti nell&#39;elenco delle raccolte. I campi dell&#39;editor di metadati vengono compilati con i metadati per la raccolta specifica.
+
+   >[!NOTE]
+   >
+   >* Nella pagina delle proprietà della raccolta, potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. I metadati per le raccolte rimosse non vengono aggiornati.
+   >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
+
+
 1. Toccate/fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti, quindi chiudete la finestra di dialogo di conferma per completare il processo.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >
-   >La modalità di aggiunta funziona solo per i campi che possono contenere più valori. Per i campi che possono includere un solo valore, i nuovi metadati non vengono aggiunti al valore esistente del campo, anche se selezioni **[!UICONTROL Modalità di aggiunta]**.
+   >I metadati aggiunti per le raccolte selezionate sovrascrivono i metadati precedenti per queste raccolte. Utilizzate la modalità  Aggiungi per aggiungere nuovi valori ai metadati esistenti nei campi che possono contenere più valori. I campi con valore singolo vengono sempre sovrascritti. Eventuali tag aggiunti nel campo [!UICONTROL Tag] vengono aggiunti all’elenco esistente di tag presenti nei metadati.
+
+Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzare l&#39;Editor schema.
+
+>[!TIP]
+>
+>Il metodo di modifica collettiva funziona per le risorse disponibili in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è possibile aggiornare in massa i metadati dopo la ricerca di tali risorse.
 
 ## Cerca raccolte {#searching-collections}
 
@@ -288,6 +301,5 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 >[!MORELIKETHIS]
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Modificare le proprietà dei metadati di più raccolte](managing-multiple-assets.md)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
