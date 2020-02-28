@@ -154,7 +154,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Utilizzo di Tracciatore pagina e codice da incorporare nelle pagine Web](touch-ui-using-page-tracker.md)
    + [Gestione delle risorse composte](managing-linked-subassets.md)
    + [Risorse correlate](related-assets.md)
-   + [ Informazioni sulla risorsa](touch-ui-asset-insights.md)
+   + [Informazioni sulla risorsa](touch-ui-asset-insights.md)
    + [Ricerca di risorse video](search-video-assets.md)
    + [Condivisione di cartelle private](private-folder.md)
    + [Linee guida per la formazione sui servizi di contenuto avanzato](smart-tags-training-guidelines.md)
