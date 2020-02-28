@@ -4,7 +4,7 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
 
 ---
 
@@ -381,7 +381,7 @@ Quando copiate una risorsa o una cartella, viene copiata l’intera risorsa o la
 
 Alcuni attributi univoci per una particolare copia di una risorsa non vengono riportati avanti. Alcuni esempi sono:
 
-* Percorso relativo, ID risorsa, data e ora di creazione, versioni e cronologia delle versioni. Alcune di queste proprietà sono indicate dalle proprietà `dam:relativePath`, `jcr:uuid`, `jcr:created`e `cq:name`.
+* ID risorsa, data e ora di creazione, versioni e cronologia delle versioni. Alcune di queste proprietà sono indicate dalle proprietà `jcr:uuid`, `jcr:created`e `cq:name`.
 
 * L’ora di creazione e i percorsi di riferimento sono univoci per ciascuna risorsa e per ciascuna delle relative rappresentazioni.
 
