@@ -3,7 +3,7 @@ title: Metadati A Cascata
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
 
-   **** Figura: Metadati *a cascata per la risorsa Video*
+   *Figura: Cascading metadata for Video asset*
 
    ![Creazione di metadati in cascata per la risorsa del documento](assets/doc_type_fields.png)
 
-   **** Figura: Metadati *a cascata per la risorsa documento*
-
+   *Figura:Creazione di metadati in cascata per la risorsa del documento*
