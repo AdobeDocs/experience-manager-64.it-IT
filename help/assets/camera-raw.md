@@ -3,7 +3,7 @@ title: Supporto di Camera Raw
 description: Scopri come abilitare il supporto per Camera Raw in Risorse di Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2404241676daeb5e4b53149c03a23d5ee2f2667
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -55,9 +55,13 @@ Per abilitare il supporto per Camera Raw in Risorse Adobe Experience Manager, pr
 
 È ora possibile importare file da fotocamera in formato raw in Risorse AEM. Dopo aver installato il pacchetto Camera RAW e configurato il flusso di lavoro richiesto, nell’elenco dei riquadri laterali viene visualizzata l’opzione Regola **** immagine.
 
-![chlimage_1-337](assets/chlimage_1-337.png)*Figura: Opzioni nel riquadro laterale.*
+![chlimage_1-337](assets/chlimage_1-337.png)
 
-![chlimage_1-338](assets/chlimage_1-338.png)*Figura: Utilizzate questa opzione per apportare modifiche leggere alle immagini.*
+*Figura: Opzioni nel riquadro laterale.*
+
+![chlimage_1-337](assets/chlimage_1-338.png)
+
+*Figura: Utilizzate questa opzione per apportare modifiche leggere alle immagini.*
 
 Dopo aver salvato le modifiche in un’immagine Camera Raw, `AdjustedPreview.jpg` viene generata una nuova rappresentazione per l’immagine. Per altri tipi di immagini eccetto Camera Raw, le modifiche si riflettono in tutte le rappresentazioni.
 
