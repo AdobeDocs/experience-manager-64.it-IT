@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 154f92ac459ff4d4a69bcad9b8beae440582beec
+source-git-commit: 274c043eadbb6dda125062bf53ed145a5b101a2e
 
 ---
 
@@ -215,7 +215,7 @@ Options:
 
 Di seguito sono riportate alcune attività comuni eseguite in VLT. Per informazioni dettagliate su ciascun comando, vedere i singoli [comandi](#vlt-commands).
 
-### Estrazione di una struttura ad albero {#checking-out-a-subtree}
+### Estrazione di una sottostruttura {#checking-out-a-subtree}
 
 Se desiderate ad esempio estrarre solo una sottostruttura del repository, `/apps/geometrixx`digitate quanto segue:
 
