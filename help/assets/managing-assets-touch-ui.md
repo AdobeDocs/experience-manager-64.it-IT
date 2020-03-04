@@ -4,7 +4,7 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
+source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 ---
 
@@ -21,7 +21,9 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->La condivisione di una cartella di risorse di tipo non `sling:OrderedFolder` è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate Ordinato al momento della creazione di una cartella.
+>* La condivisione di una cartella di risorse di tipo non `sling:OrderedFolder` è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate Ordinato al momento della creazione di una cartella.
+>* Experience Manager non consente l&#39;uso di `subassets` parole come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
+
 
 1. Andate alla posizione nella cartella delle risorse digitali in cui desiderate creare una nuova cartella.
 1. Nel menu, fate clic su **[!UICONTROL Crea]**. Selezionate **[!UICONTROL Nuova cartella]**.
