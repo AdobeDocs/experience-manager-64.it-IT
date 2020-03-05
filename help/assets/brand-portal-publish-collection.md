@@ -3,14 +3,14 @@ title: Pubblicare raccolte in Brand Portal
 description: Scoprite come pubblicare e annullare la pubblicazione delle raccolte in Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-In qualità di amministratore di Risorse Adobe Experience Manager (AEM), potete pubblicare le raccolte nell&#39;istanza del Portale marchio di AEM Assets per la vostra organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare l&#39;integrazione di AEM Assets con Brand Portal](brand-portal-configuring-integration.md).
+In qualità di amministratore di Risorse Adobe Experience Manager (AEM), potete pubblicare le raccolte nell&#39;istanza del Portale marchio di AEM Assets per la vostra organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare AEM Assets con il Portale](configure-aem-assets-with-brand-portal.md)marchio.
 
 Se apportate modifiche successive alla raccolta originale in Risorse AEM, le modifiche non vengono riportate nel Portale marchio finché non pubblicate nuovamente la raccolta. Questa caratteristica garantisce che le modifiche in corso di lavoro non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono disponibili in Brand Portal.
 
@@ -37,7 +37,7 @@ Se apportate modifiche successive alla raccolta originale in Risorse AEM, le mod
 
    ![published_collection](assets/published_collection.png)
 
-## Annulla pubblicazione delle raccolte {#unpublish-collections}
+## Annullamento della pubblicazione delle raccolte {#unpublish-collections}
 
 Potete annullare la pubblicazione delle raccolte pubblicate da AEM Assets al Brand Portal. Dopo aver annullato la pubblicazione della raccolta originale, la relativa copia non è più disponibile per gli utenti di Brand Portal.
 
