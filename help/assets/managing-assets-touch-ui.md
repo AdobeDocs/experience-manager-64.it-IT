@@ -27,12 +27,12 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 1. Andate alla posizione nella cartella delle risorse digitali in cui desiderate creare una nuova cartella.
 1. Nel menu, fate clic su **[!UICONTROL Crea]**. Selezionate **[!UICONTROL Nuova cartella]**.
-1. Nel campo **[!UICONTROL Titolo]** , inserite un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, potete sostituire quella predefinita e specificare un altro nome di cartella.
+1. Nel campo **[!UICONTROL Titolo]** , inserite un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, potete ignorare l’impostazione predefinita e specificare un altro nome di cartella.
 1. Fai clic su **[!UICONTROL Crea]**. La cartella viene visualizzata nella cartella delle risorse digitali.
 
 I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
-* il nome del file risorsa non deve contenere `* / : [ \ \ ] | # % { } ? &`
+* il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
 * il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload assets {#uploading-assets}
@@ -92,7 +92,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
    >
    >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto **** nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se **[!UICONTROL Asset Insights]** è abilitato per tenere traccia di impression/clic con Adobe Analytics, questo ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Adobe Analytics.
+   >Se **[!UICONTROL Asset Insights]** è abilitato per il tracciamento di impression/clic con Adobe Analytics, questo ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Adobe Analytics.
 
    Se la risorsa caricata esiste in Risorse AEM, la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avverte che stai tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore di checksum SHA 1 del binario della risorsa esistente corrisponde al valore di checksum della risorsa caricata. In questo caso, i nomi delle attività sono irrilevanti. In altre parole, la finestra di dialogo può essere visualizzata anche per le risorse con nomi diversi se i valori SHA 1 per i rispettivi binari sono gli stessi.
 
@@ -111,7 +111,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
-   * il nome del file risorsa non deve contenere `* / : [ \ \ ] | # % { } ? &`
+   * il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
    Inoltre, l’interfaccia Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta in tutte le viste (vista **[!UICONTROL a]** schede, vista **** Elenco e vista **** Colonna).
 
@@ -140,11 +140,11 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 >[!NOTE]
 >
 >Per caricare le risorse mediante FTP in Contenuti multimediali dinamici - Pacchetto di funzioni di installazione in modalità Scene7 (FP) 18912 sull’autore di AEM. Contattate il supporto Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
-Se utilizzate FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
+Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
 
-1. Utilizzando il client FTP desiderato, accedete al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
+1. Utilizzando il client FTP desiderato, effettuate l&#39;accesso al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
 1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, toccate **[!UICONTROL Carica]**.
 
 1. Nella pagina **[!UICONTROL Carica]** , nell’angolo in alto a sinistra, toccate la scheda **[!UICONTROL Mediante FTP]** .
@@ -168,24 +168,24 @@ Se utilizzate FTP per caricare le risorse, le impostazioni di caricamento specif
 
 | Opzione Carica | Sottoopzione | Descrizione |
 |---|---|---|
-| Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
+| Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Decomprimi file ZIP o TAR al caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
 |  | Includi sottocartelle | Caricate tutte le sottocartelle all’interno della cartella che desiderate caricare. I nomi della cartella e delle relative sottocartelle caricate vengono inseriti automaticamente in Risorse AEM. |
-|  | Opzioni di ritaglio | Per ritagliare manualmente dai lati di un’immagine, selezionate il menu Ritaglio e scegliete Manuale. Immettete quindi il numero di pixel da ritagliare da ogni lato o da uno dei lati dell’immagine. La quantità di immagine che viene ritagliata dipende dall’impostazione ppi (pixel per pollice) nel file immagine. Ad esempio, se l’immagine viene visualizzata a 150 ppi e immettete 75 nelle caselle di testo, viene ritagliato mezzo pollice da ogni lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un’immagine, aprite il menu Ritaglio, scegliete Manuale e immettete i valori in pixel nei campi In alto, A destra, In basso e A sinistra per ritagliare dai lati. Potete anche scegliere Rifila dal menu Ritaglio e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliete l’opzione Colore. Dal menu Angolo scegliete quindi l’angolo dell’immagine con il colore che rappresenta meglio quello dello spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliete l’opzione Trasparenza.<br> **Tolleranza** - Trascinate il cursore per specificare una tolleranza da 0 a 1. Per rifilare in base al colore, specificate 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. Con valori più vicini a 1 viene invece tollerata una maggiore differenza di colore.<br>Per rifilare in base alla trasparenza, l’impostazione 0 ritaglia i pixel solo se sono trasparenti. Con valori più vicini a 1 viene invece tollerata una minore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
+|  | Opzioni di ritaglio | Per ritagliare manualmente dai lati di un’immagine, selezionate il menu Ritaglio e scegliete Manuale. Immettete quindi il numero di pixel da ritagliare da ogni lato o da uno dei lati dell’immagine. La quantità di immagine che viene ritagliata dipende dall’impostazione ppi (pixel per pollice) nel file immagine. Ad esempio, se l’immagine viene visualizzata a 150 ppi e immettete 75 nelle caselle di testo, viene ritagliato mezzo pollice da ogni lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un’immagine, aprite il menu Ritaglio, scegliete Manuale e immettete i valori in pixel nei campi In alto, A destra, In basso e A sinistra per ritagliare dai lati. Potete anche scegliere Rifila dal menu Ritaglio e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliete l’opzione Colore. Dal menu Angolo scegliete quindi l’angolo dell’immagine con il colore che rappresenta meglio quello dello spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliete l’opzione Trasparenza.<br> **Tolleranza** - Trascinate il cursore per specificare una tolleranza da 0 a 1. Per rifilare in base al colore, specificate 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. Con valori più vicini a 1 viene invece tollerata una maggiore differenza di colore.<br>Per rifilare in base alla trasparenza, l’impostazione 0 ritaglia i pixel solo se sono trasparenti. Con valori più vicini a 1 viene invece tollerata una minore trasparenza.</li></ul><br>Tenete presente che queste opzioni di ritaglio non sono distruttive. |
 |  | Opzioni profilo colore | Scegliete una conversione del colore quando create file ottimizzati per la distribuzione:<ul><li>Mantenimento colore predefinito: mantiene i colori dell’immagine sorgente ogni volta che le immagini contengono informazioni sullo spazio colore; non esiste alcuna conversione del colore. Quasi tutte le immagini presentano già il profilo colore appropriato. Tuttavia, se un’immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti nello spazio colore sRGB (standard Rosso Verde Blu). sRGB è lo spazio colore consigliato per la visualizzazione di immagini sulle pagine Web.</li><li>Mantieni spazio colore originale: Mantiene i colori originali senza alcuna conversione colore. Per le immagini senza un profilo colore incorporato, qualsiasi conversione colore viene effettuata utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati con il colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l’opzione Mantenimento colore predefinito.</li><li>Personalizzato da > Per<br> aprire i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata ha la priorità sulle informazioni di colore incorporate nel file sorgente. Selezionate questa opzione quando tutte le immagini che state inviando contengono dati di profilo colore errati o mancanti.</li></ul> |
 |  | Opzioni di modifica delle immagini | Potete mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consultate [Impostazione delle opzioni di modifica delle immagini al momento del caricamento](#setting-image-editing-options-at-upload). |
 |  | Opzioni PostScript | Potete rasterizzare i file PostScript®, ritagliare i file, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e Illustrator. |
 |  | Opzioni Photoshop | Potete creare modelli da file di Adobe® Photoshop®, mantenere i livelli, specificare i nomi dei livelli, estrarre del testo e specificare il modo in cui le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in AEM.<br> Consultate [Impostazione delle opzioni](#setting-photoshop-upload-options)di caricamento di Photoshop. |
 |  | Opzioni PDF | Potete rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br> Gli eCatalog non sono supportati in AEM. <br> Consultate [Impostazione delle opzioni](#setting-pdf-upload-options)di caricamento PDF. |
-|  | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, conservare lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e Illustrator. |
+|  | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, conservare gli sfondi trasparenti, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e Illustrator. |
 |  | Opzioni eVideo | Potete transcodificare un file video scegliendo un predefinito per video.<br> Consultate [Impostazione delle opzioni](#setting-evideo-upload-options)di caricamento per eVideo. |
 |  | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fate clic sulla colonna Attivo per il predefinito che desiderate usare. Potete selezionare più predefiniti. Potete creare i predefiniti nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Consultate [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 360 gradi per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Consultate [Impostazione dei predefiniti per set di batch al momento del caricamento](#setting-batch-set-presets-at-upload). |
 
-#### Impostazione delle opzioni di modifica delle immagini al caricamento {#setting-image-editing-options-at-upload}
+#### Impostazione delle opzioni di modifica delle immagini al momento del caricamento {#setting-image-editing-options-at-upload}
 
 Quando caricate dei file immagine, inclusi i file AI, EPS e PSD, potete effettuare le seguenti operazioni di modifica nella finestra di dialogo Opzioni **[!UICONTROL processo di]** caricamento:
 
@@ -200,9 +200,9 @@ Quando caricate dei file immagine, inclusi i file AI, EPS e PSD, potete effettua
 |---|---|---|
 | Crea maschera dal tracciato di ritaglio |  | Create una maschera per l’immagine in base alle informazioni del tracciato di ritaglio. Questa opzione si applica alle immagini create con applicazioni di modifica delle immagini in cui è stato creato un tracciato di ritaglio. |
 | Maschera di contrasto |  | Consente di regolare un effetto filtro di nitidezza sull’immagine ricampionata finale, controllando l’intensità dell’effetto, il raggio dell’effetto (in pixel) e una soglia di contrasto da ignorare.<br> Questo effetto utilizza le stesse opzioni del filtro Maschera di contrasto di Photoshop. Contrariamente a quanto suggerisce il nome, Maschera di contrasto è un filtro di nitidezza. In Maschera di contrasto, impostate le opzioni desiderate. Le opzioni di impostazione sono descritte di seguito: |
-|  | Quantità | Controlla la quantità di contrasto applicata ai pixel lungo i bordi.<br> Lo consideri come l&#39;intensità dell&#39;effetto. La differenza principale tra i valori di Maschera di contrasto negli elementi multimediali dinamici e i valori di quantità in Adobe Photoshop, è che Photoshop ha un intervallo compreso tra 1% e 500%. Nel supporto dinamico, invece, l’intervallo di valori è compreso tra 0,0 e 5,0. Il valore 5.0 equivale approssimativamente al 500% in Photoshop; il valore 0,9 equivale al 90% e così via. |
+|  | Quantità | Controlla la quantità di contrasto applicata ai pixel lungo i bordi.<br> Lo consideri come l&#39;intensità dell&#39;effetto. La differenza principale tra i valori di Maschera di contrasto negli elementi multimediali dinamici e i valori di quantità in Adobe Photoshop, è che Photoshop ha un intervallo compreso tra 1% e 500%. Nel supporto dinamico, invece, l’intervallo di valori è compreso tra 0,0 e 5,0. Il valore 5.0 equivale approssimativamente al 500% in Photoshop; un valore pari a 0,9 equivale a 90% e così via. |
 |  | Raggio | Controlla il raggio dell’effetto. L&#39;intervallo di valori è compreso tra 0 e 250.<br> L’effetto viene eseguito su tutti i pixel di un’immagine e si irradia da tutti i pixel in tutte le direzioni. Il raggio viene misurato in pixel. Ad esempio, per ottenere un effetto di nitidezza simile per un’immagine da 2000 x 2000 pixel e da 500 x 500 pixel, occorre impostare un raggio di due pixel sull’immagine da 2000 x 2000 pixel e un raggio di un pixel sull’immagine da 500 x 500 pixel. Per un’immagine con più pixel viene utilizzato un valore maggiore. |
-|  | Soglia | Soglia è un intervallo di contrasto che viene ignorato quando viene applicato il filtro Maschera di contrasto. È importante in modo che non venga introdotto alcun &quot;disturbo&quot; a un’immagine quando questo filtro viene utilizzato. L’intervallo di valori è compreso tra 0 e 255, ossia il numero di incrementi di luminosità in un’immagine in scala di grigio. 0=nero, 128=grigio al 50% e 255=bianco.<br> Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato, per evitare l’aggiunta di disturbo, ma viene aumentato il contrasto lungo i bordi delle aree di contrasto, ad esempio nelle aree in cui le ciglia si incontrano.<br> Ad esempio, se avete una foto del volto di un altro utente, Maschera di contrasto agisce sulle parti contrastanti dell’immagine, ad esempio dove si incontrano le ciglia e la pelle per creare un’area di contrasto evidente e l’incarnato uniforme. Anche l’incarnato più uniforme presenta lievi variazioni nei valori di luminosità. Se non utilizzate un valore di soglia, il filtro accentuerà tali lievi modifiche nei pixel dell’interfaccia. A sua volta, viene creato un effetto rumoroso e indesiderato, mentre il contrasto sulle ciglia viene aumentato, migliorando la nitidezza.<br> Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel con modifiche lievi del contrasto, come appunto per l’incarnato uniforme.<br> Nell’immagine precedentemente illustrata, osservate la texture accanto alle zip. Il disturbo dell’immagine è causato dal fatto che i valori di soglia erano troppo bassi per eliminarlo. |
+|  | Soglia | Soglia è un intervallo di contrasto che viene ignorato quando viene applicato il filtro Maschera di contrasto. È importante in modo che non venga introdotto alcun &quot;disturbo&quot; a un’immagine quando questo filtro viene utilizzato. L’intervallo di valori è compreso tra 0 e 255, ossia il numero di incrementi di luminosità in un’immagine in scala di grigio. 0=nero, 128=grigio al 50% e 255=bianco.<br> Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato, per evitare l’aggiunta di disturbo, ma viene aumentato il contrasto lungo i bordi delle aree di contrasto, ad esempio nelle quali le ciglia si incontrano con l’incarnato.<br> Ad esempio, se avete una foto del volto di un altro utente, Maschera di contrasto agisce sulle parti contrastanti dell’immagine, ad esempio dove si incontrano le ciglia e la pelle per creare un’area di contrasto evidente e l’incarnato uniforme. Anche l’incarnato più uniforme presenta lievi variazioni nei valori di luminosità. Se non utilizzate un valore di soglia, il filtro accentuerà tali lievi modifiche nei pixel dell’interfaccia. A sua volta, viene creato un effetto rumoroso e indesiderato, mentre il contrasto sulle ciglia viene aumentato, migliorando la nitidezza.<br> Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel con modifiche lievi del contrasto, come appunto nel caso dell’incarnato uniforme.<br> Nell’immagine precedentemente illustrata, osservate la texture accanto alle zip. Il disturbo dell’immagine è causato dal fatto che i valori di soglia erano troppo bassi per eliminarlo. |
 |  | Monocromatico | Selezionate per applicare la maschera di contrasto alla luminosità dell’immagine (intensità).<br> Deselezionate questa opzione per applicare la maschera di contrasto separatamente a ciascun componente di colore. |
 | Foratura sfondo |  | Rimuove automaticamente lo sfondo di un’immagine al momento del caricamento. Questa tecnica è utile per attirare l&#39;attenzione su un particolare oggetto e farlo risaltare da uno sfondo occupato. Selezionate questa opzione per attivare o disattivare la funzione Foratura sfondo e le seguenti opzioni secondarie: |
 |  | Angoli | Obbligatorio.<br> Angolo dell’immagine utilizzato per definire il colore di sfondo da forare.<br> Potete scegliere tra **In alto a sinistra**, In **basso a sinistra**, **In alto a destra** o In **basso a destra**. |
@@ -271,7 +271,7 @@ Scegliete tra le seguenti opzioni:
 |  | Forza come CMYK | Effettua la conversione nello spazio colore CMYK. |
 |  | Forza come scala di grigio | Effettua la conversione nello spazio colore Scala di grigio. |
 
-#### Impostare le opzioni di caricamento per eVideo {#setting-evideo-upload-options}
+#### Impostare le opzioni di caricamento di eVideo {#setting-evideo-upload-options}
 
 Potete transcodificare un file video scegliendo tra diversi predefiniti per video.
 
@@ -285,13 +285,13 @@ Potete transcodificare un file video scegliendo tra diversi predefiniti per vide
 
 #### Imposta predefiniti per set di batch al caricamento {#setting-batch-set-presets-at-upload}
 
-Per creare automaticamente un set di immagini o un set 360 gradi dalle immagini caricate, fate clic sulla colonna **[!UICONTROL Active** per il predefinito che desiderate usare. Potete selezionare più predefiniti.
+Per creare automaticamente un set di immagini o un set 360 gradi dalle immagini caricate, fate clic sulla colonna Attivo **** [!UICONTROL per il predefinito che desiderate usare. Potete selezionare più predefiniti.
 
- Consultate [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 360 gradi per ulteriori informazioni sulla creazione di predefiniti per set di batch.
+Consultate [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 360 gradi per ulteriori informazioni sulla creazione di predefiniti per set di batch.
 
 ### Caricamenti in streaming {#streamed-uploads}
 
-Se carichi numerose risorse, le chiamate di I/O al server AEM aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche timeout. Risorse AEM supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l&#39;I/O del disco durante l&#39;operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell&#39;archivio. Al contrario, i dati vengono trasferiti direttamente al repository. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in Risorse AEM.
+Se carichi numerose risorse, le chiamate di I/O al server AEM aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche timeout. Risorse AEM supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l&#39;I/O del disco durante l&#39;operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell&#39;archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Per impostazione predefinita, il caricamento in streaming è abilitato in Risorse AEM.
 
 Il caricamento dello streaming è disattivato per AEM in esecuzione su un server JEE con la versione servlet-api inferiore a 3.1.
 
@@ -340,13 +340,13 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](previewing-as
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. Nella pagina **[!UICONTROL Proprietà]** , modificate le proprietà dei metadati in varie schede. Ad esempio, nella scheda **[!UICONTROL Base]** modificare il titolo, la descrizione e così via.
+1. Nella pagina **[!UICONTROL Proprietà]** , modificate le proprietà dei metadati in varie schede. Ad esempio, nella scheda **[!UICONTROL Base]** , modificare il titolo, la descrizione e così via.
 
    Il layout della pagina **[!UICONTROL Proprietà]** e le proprietà dei metadati disponibili dipendono dallo schema di metadati sottostante. Per informazioni su come modificare il layout della pagina **[!UICONTROL Proprietà]** , consultate Schemi [di](metadata-schemas.md)metadati.
 
 1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
-   ![Impostazione dell&#39;ora di attivazione per rendere le risorse disponibili per un periodo fisso tra l&#39;ora di attivazione e di disattivazione](assets/chlimage_1-12.png)
+   ![Impostazione dell&#39;ora di attivazione per rendere le risorse disponibili per un periodo di tempo fisso tra l&#39;ora di attivazione e di disattivazione](assets/chlimage_1-12.png)
 
 1. Per disattivare la risorsa dopo una determinata durata, scegliete la data e l’ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora]** disattivazione.
 
@@ -427,12 +427,12 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Toccate **[!UICONTROL Annulla]** per interrompere il processo.
    >[!NOTE]
    >
-   >Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la copia.
+   >Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
 
    >[!NOTE]
    >
    >I seguenti caratteri (elenco separato da spazi) non sono supportati:
-   >* il nome del file risorsa non deve contenere `* / : [ \ \ ] | # % { } ? &`
+   >* il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
    >* il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 
@@ -579,7 +579,7 @@ Per annullare la pubblicazione di una risorsa complessa, annullate la pubblicazi
 1. Nella finestra di dialogo di conferma, effettuate una delle seguenti operazioni:
 
    * Toccate **[!UICONTROL Annulla]** per interrompere l’azione
-   * Toccate **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
+   * Toccate **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
 
 ## Creare un gruppo utenti chiuso {#closed-user-group}
 
@@ -695,7 +695,7 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. Per info
 
 La **[!UICONTROL timeline]** consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti, annotazioni, registri attività e versioni.
 
-Nella console [](managing-collections-touch-ui.md#navigating-the-collections-console)Raccolte, l&#39;elenco **[!UICONTROL Mostra tutto]** contiene opzioni per visualizzare solo commenti e flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di livello principale elencate nella console. Non viene visualizzato se vi spostate all&#39;interno di una qualsiasi raccolta.
+Nella console [](managing-collections-touch-ui.md#navigating-the-collections-console)Raccolte, l&#39;elenco **[!UICONTROL Mostra tutto]** contiene opzioni per visualizzare solo commenti e flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di livello principale elencate nella console. Non viene visualizzato se vi spostate all&#39;interno di una qualsiasi delle raccolte.
 
 **[!UICONTROL La timeline]** contiene diverse [opzioni specifiche per i frammenti](content-fragments-managing.md#timeline-for-content-fragments)di contenuto; questa funzionalità richiede [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
 
@@ -712,7 +712,7 @@ Nella console [](managing-collections-touch-ui.md#navigating-the-collections-con
 
 ## Aggiunta di annotazioni {#annotating}
 
-Le annotazioni sono commenti o note esplicative aggiunte a immagini o video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare commenti sulle risorse.
+Le annotazioni sono commenti o note esplicative aggiunti alle immagini o ai video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare commenti sulle risorse.
 
 Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da Risorse AEM dipendono dal browser.
 
@@ -786,9 +786,9 @@ Potete anche scegliere di stampare solo le annotazioni o lo stato della revision
 
 Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, Adobe consiglia di limitare le annotazioni a 50 parole.
 
-Per stampare le annotazioni e verificare lo stato, toccate l&#39;icona **[!UICONTROL Stampa]** e seguite le istruzioni della procedura guidata. L’icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo se alla risorsa è assegnata almeno un’annotazione o uno stato di revisione.
+Per stampare le annotazioni e verificare lo stato, toccate l&#39;icona **[!UICONTROL Stampa]** e seguite le istruzioni della procedura guidata. L’icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo se alla risorsa è stata assegnata almeno un’annotazione o uno stato di revisione.
 
-1. Nell’interfaccia utente Risorse, apri la pagina di anteprima per una risorsa.
+1. Nell’interfaccia utente delle risorse, apri la pagina di anteprima per una risorsa.
 1. Effettua una delle operazioni seguenti:
 
    * Per stampare tutte le annotazioni e lo stato della revisione, passare al punto 4.
@@ -830,13 +830,14 @@ Per stampare le annotazioni e verificare lo stato, toccate l&#39;icona **[!UICON
 
    Tornare al file PDF di cui è stato effettuato il rendering e aggiornarlo. Il PDF aggiornato riflette le modifiche apportate.
 
-**Per stampare le annotazioni in lingue** straniere:Se una risorsa include annotazioni in lingue straniere (in particolare nelle lingue non latine), per poter stampare tali annotazioni è innanzitutto necessario configurare CQ-DAM-Handler-Gibson Font Manager Service nel server AEM. Quando si configura CQ-DAM-Handler-Gibson Font Manager Service, fornire il percorso in cui si trovano i font per le lingue desiderate.
+**Per stampare le annotazioni in lingue**straniere:
+Se una risorsa include annotazioni in lingue straniere (in particolare nelle lingue non latine), per poter stampare tali annotazioni è innanzitutto necessario configurare CQ-DAM-Handler-Gibson Font Manager Service nel server AEM. Quando si configura CQ-DAM-Handler-Gibson Font Manager Service, fornire il percorso in cui si trovano i font per le lingue desiderate.
 
 1. Aprite la pagina di configurazione **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** dall’URL [https://&lt;server>:&lt;porta>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Per configurare il servizio **** CQ-DAM-Handler-Gibson Font Manager, effettuate una delle seguenti operazioni:
 
    * Nell&#39;opzione della directory Font **[!UICONTROL di]** sistema, specificate il percorso completo della directory dei font nel sistema. Ad esempio, se siete un utente Mac, potete specificare il percorso come `/Library/Fonts` nell&#39;opzione di directory **[!UICONTROL Font]** di sistema. AEM recupera i font da questa directory.
-   * Create una directory denominata **fonts** all&#39;interno della cartella **[!UICONTROL crx-quickstart]** . **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font **[!UICONTROL di]** Adobe Server.
+   * Create una directory denominata **fonts** all&#39;interno della cartella **[!UICONTROL crx-quickstart]** . **[!UICONTROL Il servizio]** CQ-DAM-Handler-Gibson Font Manager recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font **[!UICONTROL di]** Adobe Server.
    * Create una nuova cartella per i font nel sistema e memorizzate i font desiderati nella cartella. Quindi, specificate il percorso completo della cartella nell&#39;opzione di directory Font **** cliente.
 
 1. Accedete alla configurazione PDF **** Annotation dall&#39;URL [https://&lt;server>:&lt;porta>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
@@ -844,7 +845,7 @@ Per stampare le annotazioni e verificare lo stato, toccate l&#39;icona **[!UICON
 
    * Includere la stringa `<font_family_name_of_custom_font, sans-serif>` nell&#39;opzione font-family. Ad esempio, se desiderate stampare le annotazioni in CJK (cinese, giapponese e coreano), includete la stringa `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` nell&#39;opzione font-family. Se desiderate stampare le annotazioni in hindi, scaricate il font appropriato e configurate la famiglia di font come Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Riavviate l’istanza AEM.
+1. Riavviate l’istanza di AEM.
 
 Esempio di configurazione di AEM per la stampa di annotazioni in CJK (cinese, giapponese e coreano):
 
