@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di Communities
-seo-title: Distribuzione di Communities
+title: Implementazione di Communities
+seo-title: Implementazione di Communities
 description: Come implementare AEM Communities
 seo-description: Come implementare AEM Communities
 uuid: 1f7faf1a-a339-4eaa-b728-b9110cb350a8
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
 
-# Distribuzione di Communities {#deploying-communities}
+# Implementazione di Communities {#deploying-communities}
 
 ## Prerequisiti {#prerequisites}
 
@@ -103,7 +103,7 @@ Con AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities f
 
 Due funzionalità Community utilizzano un database MySQL:
 
-* Per [l&#39;abilitazione](enablement.md): registrazione delle attività SCORM e degli studenti
+* Per l&#39; [abilitazione](enablement.md): registrazione delle attività SCORM e degli studenti
 * Per [DSRP](dsrp.md): memorizzazione di contenuto generato dall&#39;utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
@@ -132,7 +132,7 @@ Le misure necessarie sono:
 
 1. Ripetere i passaggi 3 e 4 per tutte le istanze di creazione e pubblicazione
 
-Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella pagina Console [](../../help/sites-deploying/configuring-web-console.md#bundles) Web.
+Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella pagina Console [](/help/sites-deploying/web-console.md#bundles) Web.
 
 #### Esempio: Bundle del connettore MySQL installato {#example-installed-mysql-connector-bundle}
 
@@ -140,7 +140,7 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 ### Pacchetto SCORM {#scorm-package}
 
-SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un pacchetto ZIP trasferibile.
+SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un file ZIP trasferibile.
 
 Il motore SCORM di AEM Communities è richiesto per la funzione di [abilitazione](overview.md#enablement-community) . I pacchetti scorm supportati nella versione AEM Communities 6.4 sono:
 
@@ -158,7 +158,7 @@ Per una nuova installazione del motore SCORM, utilizzare il pacchetto contenente
 1. Scaricate **`/libs/social/config/scorm/database_scormengine_data.sql`** dall&#39;istanza cq ed eseguitela in server mysql per creare uno schema scormEngineDB aggiornato.
 1. Aggiungi `/content/communities/scorm/RecordResults` nella proprietà Percorsi esclusi nel filtro CSRF dagli `https://<hostname>;:<port>/system/console/configMgr` editori.
 
-Le installazioni SCORM esistenti possono essere aggiornate al pacchetto [**cq-social-scorm versione 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(che utilizza[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se il contenuto del corso creato richiede SCORM 2017.1.
+Le installazioni SCORM esistenti possono essere aggiornate al pacchetto [**cq-social-scorm, versione 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(che utilizza[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se il contenuto del corso creato richiede SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Il download avanzato di MLS (noto anche come &#39;phasetwo&#39;) è disponibile 
 
 Per informazioni dettagliate e sull&#39;installazione, visitare Configurazione [](solr.md) solare per SRP.
 
-### Collegamenti a Package Share {#about-links-to-package-share}
+### Informazioni sui collegamenti a Package Share {#about-links-to-package-share}
 
 **Pacchetti visibili in Adobe AEM Cloud**
 
@@ -215,7 +215,7 @@ Per installare i pacchetti visibili in `adobeaemcloud.com` un’istanza AEM loca
 
 Nell&#39;istanza locale di AEM, utilizza il gestore pacchetti (ad esempio [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio pacchetti di AEM locale.
 
-In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), il `Download`pulsante verrà scaricato nell&#39;archivio pacchetti dell&#39;istanza locale AEM.
+In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), il `Download`pulsante viene scaricato nell&#39;archivio pacchetti dell&#39;istanza locale di AEM.
 
 Una volta nell&#39;archivio pacchetti dell&#39;istanza AEM locale, utilizzate il gestore pacchetti per installare il pacchetto.
 
@@ -256,7 +256,7 @@ Per tutte le altre istanze di pubblicazione (secondarie) in una farm di pubblica
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Individua il `AEM Communities Publisher Configuration`
+* Individua la variabile `AEM Communities Publisher Configuration`
 * Selezionate l’icona di modifica
 * Deselezionare la casella Editore **** principale
 * Seleziona **[!UICONTROL Salva]**
@@ -314,7 +314,7 @@ Per abilitare il servizio tunnel:
 
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Individua il `AEM Communities Publish Tunnel Service`
+* Individua la variabile `AEM Communities Publish Tunnel Service`
 * Selezionate l’icona di modifica
 * Selezionare la casella di **[!UICONTROL attivazione]**
 * Seleziona **[!UICONTROL Salva]**
@@ -329,17 +329,17 @@ A partire da AEM 6.3, il materiale chiave viene memorizzato nel file system e no
 
 Per copiare il materiale chiave dall’autore a tutte le altre istanze, è necessario:
 
-* Accedete all’istanza AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare
+* Accedete all’istanza di AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare
 
    * Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale
 
-      Ad esempio:
+      Esempio,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Il `bundle.info` file identificherà il bundle
    * Accedere alla cartella dei dati
 
-      Ad esempio:
+      Esempio,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Copiare i file hmac e master
@@ -350,7 +350,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
    * Accedere alla cartella dei dati
 
-      Ad esempio:
+      Esempio,
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Incolla i 2 file precedentemente copiati
