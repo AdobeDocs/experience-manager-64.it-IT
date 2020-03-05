@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -91,7 +91,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Riferimento schema metadati](meta-ref.md)
    + [Best practice per tradurre le risorse in modo efficiente](best-practices-for-translating-assets-efficiently.md)
    + [Guida all&#39;ottimizzazione delle prestazioni di Assets](performance-tuning-guidelines.md)
-   + [Come modificare o aggiungere metadati](meta-edit.md)
+   + [Come modificare o aggiungere i metadati](meta-edit.md)
    + [Guida alla migrazione delle risorse](assets-migration-guide.md)
    + [Metadati XMP](xmp.md)
    + [Considerazioni sulla rete delle risorse](assets-network-considerations.md)
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Schema metadati cartelle](folder-metadata-schema.md)
    + [Gestione dei tag avanzati](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurare l’integrazione di AEM Assets con Brand Portal](brand-portal-configuring-integration.md)
+   + [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Pubblicare risorse su Brand Portal](brand-portal-publish-assets.md)
    + [Pubblicare raccolte in Brand Portal](brand-portal-publish-collection.md)
    + [Pubblicare le cartelle su Brand Portal](brand-portal-publish-folder.md)
 + Frammenti di contenuto {#fragments}
