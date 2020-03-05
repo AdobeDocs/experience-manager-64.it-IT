@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
    >
    >
 * Alcune funzionalità non sono disponibili su tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’ [utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 
@@ -40,11 +40,11 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 ![screen_shot_2018-03-23at102603](assets/screen_shot_2018-03-23at102603.png)
 
-Facendo clic su una delle opzioni si apre la rispettiva console. Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**.
+Facendo clic su una delle opzioni si apre la rispettiva console. Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites.**
 
 Tocca o fai clic su **Sites** per iniziare.
 
-### Navigazione nel prodotto {#product-navigation}
+### Navigazione nel prodotto   {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviata un’esercitazione relativa alla navigazione nel prodotto. Dedica alcuni minuti all’esercitazione per ottenere una buona panoramica dell’utilizzo di base di AEM.
 
@@ -58,7 +58,7 @@ Se non selezioni l’opzione **Non mostrare più**, la panoramica viene riavviat
 
 È possibile spostarsi tra le console utilizzando il pannello di navigazione globale. Questo è attivato come elenco a discesa a schermo intero quando tocchi o fai clic sul collegamento Adobe Experience Manager in alto a sinistra.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
 ![screen_shot_2018-03-23at102631](assets/screen_shot_2018-03-23at102631.png)
 
@@ -68,7 +68,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **Navigazione**: rappresentata da una bussola
+* **Navigazione**: rappresentata da una bussola  
 * **Strumenti**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
@@ -77,7 +77,7 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
    ![screen_shot_2018-03-23at102603-1](assets/screen_shot_2018-03-23at102603-1.png)
 
-   In Navigazione sono disponibili le console seguenti:
+   Nel pannello di navigazione sono disponibili le console seguenti:
 
 <table> 
  <tbody>
@@ -114,10 +114,6 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
    <td>La <a href="/help/sites-authoring/touch-ui-managing-projects.md">console Progetti offre accesso diretto ai tuoi progetti</a>, che sono dashboard virtuali. Possono essere usati per creare un team di persone con obiettivi comuni e consentire al team di accedere a risorse, flussi di lavoro e attività. <br /> </td> 
   </tr>
   <tr>
-   <td>Screens</td> 
-   <td><a href="/help/screens/authoring-screens.md">Screens</a> consente di gestire tutti gli schermi, di qualsiasi dimensione, che verranno utilizzati dai clienti.</td> 
-  </tr>
-  <tr>
    <td>Sites</td> 
    <td>Le console Sites ti permettono di <a href="/help/sites-authoring/author-environment-tools.md">creare, visualizzare e gestire siti web</a> in esecuzione sull’istanza AEM. Da queste console puoi creare, modificare, copiare, spostare ed eliminare pagine di siti web, avviare flussi di lavoro e pubblicare pagine.<br /> </td> 
   </tr>
@@ -136,7 +132,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * [Navigazione globale](#global-navigation)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   Seleziona il collegamento **Adobe Experience Manager** per spostarti tra le diverse console.
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
@@ -144,7 +140,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
 * [Aiuto](#accessing-help)
 
@@ -192,7 +188,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    Questa funzione è disponibile solo nella vista a elenco. See [list view](#list-view) for more information.
 
-* **Pulsante Crea**
+* Pulsante **Crea**
 
    ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
 
@@ -228,7 +224,7 @@ Sono disponibili diverse risorse di Aiuto:
 
    Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine **potete selezionare** Help **](/help/sites-authoring/author-environment-tools.md#accessing-help)per accedervi di nuovo in un secondo tempo.
+   Dal menu [**Informazioni sulle pagine **puoi selezionare** Aiuto **](/help/sites-authoring/author-environment-tools.md#accessing-help)per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
@@ -239,7 +235,7 @@ Sono disponibili diverse risorse di Aiuto:
    * **Risorse per sviluppatori** Risorse per sviluppatori e download
    >[!NOTE]
    >
-   >È possibile accedere a una panoramica dei tasti di scelta rapida disponibili in qualsiasi momento utilizzando il tasto di scelta rapida `?` (punto interrogativo) in una console.
+   >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
    >
    >Per una panoramica di tutte le scelte rapide da tastiera, consulta la documentazione seguente:
    >
@@ -247,7 +243,7 @@ Sono disponibili diverse risorse di Aiuto:
    >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni {#actions-toolbar}
+## Barra delle azioni   {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -259,7 +255,7 @@ L’azione disponibile nella barra degli strumenti varia per riflettere le azion
 
 La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dipende dalla vista.
 
-A causa delle limitazioni di spazio in alcune finestre, la barra degli strumenti può facilmente superare lo spazio disponibile. In questo caso vengono visualizzate ulteriori opzioni. Toccando o facendo clic sui puntini di sospensione (i tre punti o **...**) si apre un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo aver selezionato una pagina nella console **Sites**:
+A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso compaiono altre opzioni. Tocca o fai clic sui tre puntini (**...**) per aprire un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
@@ -267,7 +263,7 @@ A causa delle limitazioni di spazio in alcune finestre, la barra degli strumenti
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide {#quick-actions}
+## Azioni rapide   {#quick-actions}
 
 Nella [Vista a schede](#quick-actions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -284,13 +280,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco](#list-view)
+* [Vista a elenco  ](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse {#selecting-resources}
+### Selezionare le risorse   {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -302,7 +298,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
    <td>Deselezionare</td> 
   </tr>
   <tr>
-   <td>Visualizzazione a colonne <br /> </td> 
+   <td>Vista a colonne<br /> </td> 
    <td>
     <ul> 
      <li>Desktop: <br /> Fate clic sulla miniatura</li> 
@@ -315,20 +311,20 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
     </ul> </td> 
   </tr>
   <tr>
-   <td>Visualizzazione a schede<br /> </td> 
+   <td>Vista a schede<br /> </td> 
    <td>
     <ul> 
-     <li><br /> Desktop: Passate il mouse sopra, quindi utilizzate l'azione rapida con il segno di spunta</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>Dispositivo mobile: <br /> Tenete premuto sulla scheda</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> Desktop:Fate clic sulla scheda</li> 
-     <li><br /> Dispositivo mobile:Toccate la scheda</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Vista a elenco</td> 
+   <td>Vista a elenco  </td> 
    <td>
     <ul> 
      <li>Desktop: <br /> Fate clic sulla miniatura</li> 
@@ -363,7 +359,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
    To exit selection mode select the **X** to the top-right.
 
-### Visualizzazione a colonne {#column-view}
+### Vista a colonne {#column-view}
 
 ![screen_shot_2018-03-23at105607](assets/screen_shot_2018-03-23at105607.png)
 
@@ -417,7 +413,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco {#list-view}
+### Vista a elenco   {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
@@ -448,13 +444,13 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Tempo sulla pagina**
    ![screen_shot_2018-03-23at105952](assets/screen_shot_2018-03-23at105952.png)
 
-   By default the **Name** column is shown, which makes up part of the URL for the page. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
+   Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
 
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
 >[!NOTE]
 >
->Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+>La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -470,7 +466,7 @@ Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in u
 
 ## Selettore della barra {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+Il **selettore della barra** è disponibile in alto a sinistra nella finestra e visualizza opzioni che dipendono dalle console correnti.
 
 ![screen_shot_2018-03-21at095653](assets/screen_shot_2018-03-21at095653.png)
 
@@ -480,7 +476,7 @@ Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezi
 
 >[!NOTE]
 >
->Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra.
+>Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
 
 ### Struttura contenuto {#content-tree}
 
@@ -496,13 +492,13 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline {#timeline}
+### Timeline   {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
 La colonna della timeline consente di effettuare le seguenti operazioni:
 
-* Visualizzare vari eventi relativi all’elemento selezionato
+* Visualizzare vari eventi relativi all’elemento selezionato.
 
    * I tipi di evento possono essere selezionati dall’elenco a discesa:
 
@@ -517,14 +513,14 @@ La colonna della timeline consente di effettuare le seguenti operazioni:
       * e Mostra tutto
 
 
-* [Aggiungi o visualizza commenti sull’elemento selezionato. ](#TimelineAddingandViewingComments) La casella **Commento** è riportata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, questo verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
+* [Aggiungere o visualizzare commenti sulla voce selezionata. ](#TimelineAddingandViewingComments) La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Per registrare un commento, digitalo e premi Invio. Il commento verrà visualizzato quando selezioni **Commenti** o **Mostra tutto**.
 
 * Alcune console offrono funzionalità aggiuntive. Ad esempio, nella console Sites è possibile:
 
    * [Salvare una versione](/help/sites-authoring/working-with-page-versions.md).
    * [Avviare un flusso di lavoro](/help/sites-authoring/workflows-applying.md).
 
-These options accessible via the chevron next to the **Comment** field.
+Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**.
 
 ![screen_shot_2018-03-23at110958](assets/screen_shot_2018-03-23at110958.png)
 
