@@ -3,14 +3,14 @@ title: Pubblicare le cartelle su Brand Portal
 description: Scoprite come pubblicare e annullare la pubblicazione delle cartelle in Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
-In qualità di amministratore Risorse Adobe Experience Manager (AEM), puoi pubblicare risorse e cartelle nell’istanza del Portale del marchio di AEM Assets (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare l&#39;integrazione di AEM Assets con Brand Portal](brand-portal-configuring-integration.md).
+In qualità di amministratore Risorse Adobe Experience Manager (AEM), puoi pubblicare risorse e cartelle nell’istanza del Portale del marchio di AEM Assets (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare AEM Assets con il Portale](configure-aem-assets-with-brand-portal.md)marchio.
 
 Dopo aver pubblicato una risorsa o una cartella, questa è disponibile per gli utenti in Brand Portal.
 
