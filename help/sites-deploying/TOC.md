@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Deploying Guide
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [Installazione dell’applicazione da server](application-server-install.md)
    + [Installazione personalizzata indipendente](custom-standalone-install.md)
    + [Avvio e interruzione da riga di comando](command-line-start-and-stop.md)
-   + [Configurazione di archivi di nodi e archivi di dati in AEM 6](data-store-config.md)
+   + [Configurazione degli archivi di nodi e degli archivi di dati in AEM 6](data-store-config.md)
    + [Pulizia revisioni](revision-cleanup.md)
    + [Come eseguire AEM con TarMK Cold Standby](tarmk-cold-standby.md)
    + [Supporto RDBMS in AEM 6.4](rdbms-support-in-aem.md)
@@ -57,6 +57,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [Guida alle prestazioni di Risorse](assets-performance-sizing.md)
    + [Articoli guida alla configurazione](ht-deploy.md)
    + [Rimozione di Geometrixx Sites](removing-the-geometrixx-sites.md)
+   + [Configurazione della console Web](configuring-web-console.md)
 + Upgrading to AEM 6.4 {#upgrading}
    + [Aggiornamento ad AEM 6.4](upgrade.md)
    + [Pianificazione dell&#39;aggiornamento](upgrade-planning.md)
@@ -74,7 +75,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [Passaggi di aggiornamento per le installazioni di Application Server](app-server-upgrade.md)
    + [Elenco dei pacchetti obsoleti disinstallati dopo l&#39;aggiornamento](obsolete-bundles.md)
 + Ristrutturazione repository {#restructuring}
-   + [Ristrutturazione repository in AEM 6.4](repository-restructuring.md)
+   + [Ristrutturazione del repository in AEM 6.4](repository-restructuring.md)
    + [Ristrutturazione del repository comune in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione del repository dei siti in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell&#39;archivio risorse in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
@@ -87,7 +88,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Best practice {#practices}
++ Best practice   {#practices}
    + [Best practice di distribuzione](best-practices.md)
    + [Struttura delle prestazioni](performance-tree.md)
    + [Best practice per il test delle prestazioni](best-practices-for-performance-testing.md)
