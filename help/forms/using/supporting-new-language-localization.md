@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
 
 ---
 
@@ -22,7 +22,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari di lingua
 
 **Dizionario** specifico per il modulo Contiene le stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi di campi, messaggi di errore, descrizioni della guida e così via. È gestito come un set di file XLIFF per ogni lingua e può essere utilizzato all&#39;indirizzo https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
-**Dizionari** globali Nella libreria client AEM sono presenti due dizionari globali, gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni lingua. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
+**Dizionari** globali Nella libreria client AEM sono presenti due dizionari globali, gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni impostazione internazionale. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
 
 ### Funzionamento della localizzazione del modulo adattivo {#how-localization-of-adaptive-form-works}
 
@@ -40,15 +40,15 @@ Quando viene eseguito il rendering di un modulo adattivo, identifica le impostaz
 
 Una volta identificate le impostazioni internazionali, i moduli adattivi selezionano il dizionario specifico del modulo. Se il dizionario specifico del modulo per le impostazioni internazionali richieste non viene trovato, viene utilizzato il dizionario inglese (en).
 
-Se non esiste una libreria client per l&#39;impostazione internazionale richiesta, essa cerca una libreria client per il codice della lingua presente nelle impostazioni internazionali. Ad esempio, se le impostazioni internazionali richieste sono `en_ZA` (inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizzerà la libreria client per la lingua `en` (inglese), se esiste. Tuttavia, se non ne esiste alcuna, il modulo adattivo utilizza il dizionario per le `en` impostazioni internazionali.
+Se non esiste una libreria client per l&#39;impostazione internazionale richiesta, essa cerca una libreria client per il codice della lingua presente nelle impostazioni internazionali. Ad esempio, se le impostazioni internazionali richieste sono `en_ZA` (Inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizzerà la libreria client per la lingua `en` (Inglese), se esiste. Tuttavia, se non ne esiste alcuna, il modulo adattivo utilizza il dizionario per le `en` impostazioni internazionali.
 
 ## Aggiunta del supporto per la localizzazione per le lingue non supportate {#add-localization-support-for-non-supported-locales}
 
-AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-br), cinese-tn, cinese-tw (zh-tw) e coreano (ko-kr).
+AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR, cinese-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
 Per aggiungere il supporto per una nuova impostazione internazionale in fase di esecuzione dei moduli adattivi:
 
-1. [Aggiunta di impostazioni internazionali al servizio GuideLocalizationService](/help/forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [Aggiunta di un&#39;impostazione internazionale al servizio GuideLocalizationService](/help/forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
 1. [Aggiungere una libreria client XFA per una lingua](/help/forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
@@ -56,7 +56,7 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 1. [Aggiunta del supporto per le impostazioni internazionali per il dizionario](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Riavviare il server](/help/forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Aggiunta di una lingua al servizio Guide Localization {#add-a-locale-to-the-guide-localization-service-br}
+### Aggiunta di un&#39;impostazione internazionale al servizio Guide Localization {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Passa a `https://[server]:[port]/system/console/configMgr`.
 1. Fare clic per modificare il componente **Guide Localization Service** .
@@ -66,7 +66,7 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 
 ### Aggiungere una libreria client XFA per una lingua {#add-xfa-client-library-for-a-locale-br}
 
-Create un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria `xfaforms.I18N.<locale>`e aggiungete i seguenti file alla libreria client:
+Create un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria `xfaforms.I18N.<locale>`, e aggiungete i seguenti file alla libreria client:
 
 * **I18N.js** che definisce `xfalib.locale.Strings` per il `<locale>` contenuto come definito in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
@@ -97,12 +97,12 @@ LogMessages.js
 
 ### Aggiunta del supporto per le impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary-br}
 
-Esegui questo passaggio solo se il `<locale>` contenuto aggiunto non è compreso tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja``ko-kr`.
+Esegui questo passaggio solo se il `<locale>` contenuto aggiunto non è compreso tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja``ko-kr`.
 
 1. Crea un `nt:unstructured` nodo `languages` sotto `etc`, se non già presente.
 
 1. Aggiungi una proprietà stringa con più valori `languages` al nodo, se non già presente.
-1. Aggiungete i valori `<locale>` di lingua predefiniti `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja``ko-kr`, se non già presenti.
+1. Aggiungete i valori `<locale>` di lingua predefiniti `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja``ko-kr`, se non già presenti.
 
 1. Aggiungete i valori `<locale>` della `languages` proprietà di `/etc/languages`.
 
