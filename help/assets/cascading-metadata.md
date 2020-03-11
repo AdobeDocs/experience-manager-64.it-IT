@@ -3,7 +3,7 @@ title: Metadati A Cascata
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -27,7 +27,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali potete definire metada
 
 ## Configurare i metadati in cascata in AEM {#configure-cascading-metadata-in-aem}
 
-Considerate uno scenario in cui visualizzare i metadati CSS in base al tipo di risorsa selezionata. Alcuni esempi
+Considerate uno scenario in cui visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
 * Per un video, visualizzate i campi applicabili come formato, codec, durata e così via.
 * Per un documento Word o PDF, visualizzare campi quali conteggio delle pagine, autore e così via.
@@ -59,15 +59,15 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    >[!NOTE]
    >
-   >Quando si aggiunge un file JSON, le coppie chiave-valore non vengono visualizzate nell&#39;editor dello schema di metadati ma sono disponibili nel modulo pubblicato.
+   >Quando si aggiunge un file JSON, le coppie chiave-valore non vengono visualizzate nell&#39;editor dello schema di metadati, ma sono disponibili nel modulo pubblicato.
 
    >[!NOTE]
    >
-   >Quando si aggiungono delle scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Quando aggiungete le opzioni al menu a discesa, non fate clic nuovamente sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo nuovamente per continuare a modificarlo.
+   >Quando si aggiungono delle scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Quando aggiungete le opzioni al menu a discesa, non fate clic nuovamente sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo di nuovo per continuare a modificarlo.
 
 1. (Facoltativo) Aggiungete gli altri campi richiesti. Ad esempio, formato, codec e durata per il tipo di risorsa video.
 
-   Analogamente, aggiungete campi dipendenti per altri tipi di risorse. Ad esempio, aggiungere il conteggio delle pagine dei campi e creare risorse per i documenti, come file PDF e Word.
+   Allo stesso modo, aggiungete campi dipendenti per altri tipi di risorse. Ad esempio, aggiungere il conteggio delle pagine dei campi e creare risorse per i documenti, come file PDF e Word.
 
    ![video_Depend_fields](assets/video_dependent_fields.png)
 
@@ -110,4 +110,4 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![Creazione di metadati in cascata per la risorsa del documento](assets/doc_type_fields.png)
 
-   *Figura:Creazione di metadati in cascata per la risorsa del documento*
+   *Figura: Creazione di metadati in cascata per la risorsa del documento*
