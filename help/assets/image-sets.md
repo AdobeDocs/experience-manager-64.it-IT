@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
 
 ---
 
@@ -31,7 +31,7 @@ Ad esempio, supponete di voler presentare immagini di berretti con diverse bolle
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente Risorse, consulta [Gestione delle risorse con l’interfaccia](managing-assets-touch-ui.md)touch.
+>Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](managing-assets-touch-ui.md)touch.
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
@@ -39,7 +39,9 @@ Per iniziare subito a lavorare:
 
 1. [Caricate le immagini originali per più viste.](#uploading-assets-in-image-sets)
 
-   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. Risorse AEM supporta molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
+   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+
+   Risorse AEM supporta molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
 
 1. [Creare set di immagini.](#creating-image-sets)
 
@@ -49,7 +51,7 @@ Per iniziare subito a lavorare:
 
    You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-   **Importante** —I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+   **Importante** — I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
    Consultate [Preparazione delle risorse di set di immagini per il caricamento e Caricamento dei file](#uploading-assets-in-image-sets).
 
@@ -66,9 +68,9 @@ Per iniziare subito a lavorare:
 
    Selezionate il set di immagini ed effettuate l’anteprima. Toccate le icone delle miniature per esaminare il set di immagini nel visualizzatore selezionato. Potete scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]** , disponibile dal menu a discesa della barra a sinistra.
 
-1. [Pubblicare i set di immagini](publishing-dynamicmedia-assets.md)
+1. [Pubblicare i set di immagini.](publishing-dynamicmedia-assets.md)
 
-   La pubblicazione di un set di immagini attiva la stringa URL e incorpora. Inoltre, dovete [pubblicare qualsiasi predefinito](managing-viewer-presets.md) per visualizzatori personalizzato creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
+   Quando si pubblica un set di immagini, vengono attivate le stringhe URL e Incorpora. Inoltre, dovete [pubblicare qualsiasi predefinito](managing-viewer-presets.md) per visualizzatori personalizzato creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
 
 1. [Collegare gli URL all’applicazione](linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](embed-code.md)video o immagini.
 
@@ -116,7 +118,7 @@ Potete creare i set di immagini tramite l’interfaccia utente o tramite l’API
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-**** Importante:I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+**Importante:** I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
 Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte in ordine alfanumerico. Potete riordinare o ordinare manualmente le risorse dopo averle aggiunte.
 
@@ -167,11 +169,11 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 ## Visualizzazione di set di immagini {#viewing-image-sets}
 
-Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti per set di [batch](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti [per set di](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)batch.
 
-**Importante** —I set di batch vengono creati da IPS [Image Production System] come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+**Importante** — I set di batch vengono creati da IPS [Image Production System] come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
-Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente. Potete visualizzare questi set in tre modi diversi. Questi metodi sono disponibili anche se avete creato i set di immagini nell’interfaccia utente.
+Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente. Potete visualizzare questi set in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set di immagini nell’interfaccia utente).
 
 * Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano i set di cui la risorsa selezionata è membro (in **[!UICONTROL Membro dei set]**). Toccate il nome del set per visualizzare l’intero set.
 
@@ -179,11 +181,11 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono 
 
 * Da un’immagine inclusa in un qualsiasi set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
-   ![chlimage_1-340](assets/chlimage_1-344.png)
+   ![chlimage_1-344](assets/chlimage_1-344.png)
 
 * From search, you can select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull’utilizzo dei criteri di ricerca &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull&#39;utilizzo dei criteri di ricerca &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
 
    ![chlimage_1-345](assets/chlimage_1-345.png)
 
