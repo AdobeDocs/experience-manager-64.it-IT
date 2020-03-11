@@ -1,17 +1,9 @@
 ---
 title: Configurare i plug-in Editor Rich Text
-seo-title: Configurare i plug-in Editor Rich Text
 description: Scoprite come configurare i plug-in Editor di testo RTF di AEM per abilitare singole funzionalità.
-seo-description: Scoprite come configurare i plug-in Editor di testo RTF di AEM per abilitare singole funzionalità.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -126,7 +118,7 @@ Per configurare l’editor Rich Text in modo da visualizzare le icone richieste,
    `/apps/<myProject>/components/text`
 
 1. Individuare il nodo `rtePlugins/edit`. Se il nodo non esiste, vedi [attivare un plug-in](#activateplugin) .
-1. Creare la `features` proprietà sul `edit` nodo e aggiungere una o più funzioni. Salvate tutte le modifiche.
+1. Create la `features` proprietà sul `edit` nodo e aggiungete una o più funzioni. Salvate tutte le modifiche.
 
 ### Configurare il comportamento dell&#39;icona Incolla (Ctrl+V) e della scelta rapida {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
@@ -134,11 +126,11 @@ Per preconfigurare il comportamento dell&#39;icona **[!UICONTROL Incolla (Ctrl+V
 
 La configurazione consente tre tipi di casi di utilizzo:
 
-*  Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati. Configurato utilizzando `browser` di seguito.
+* Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati. Configurato utilizzando `browser` di seguito.
 
-*  Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM. Configurato utilizzando `plaintext` di seguito.
+* Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM. Configurato utilizzando `plaintext` di seguito.
 
-*  Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale. Configurato utilizzando `wordhtml` di seguito.
+* Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale. Configurato utilizzando `wordhtml` di seguito.
 
 1. Nel componente, passa al `<rtePlugins-node>/edit` nodo. Creare i nodi se questi non esistono. Per ulteriori informazioni, consultate [Attivare un plug-in](#activateplugin).
 1. Nel `edit` nodo create una proprietà utilizzando i seguenti dettagli:
@@ -151,7 +143,7 @@ La configurazione consente tre tipi di casi di utilizzo:
 
 È possibile configurare ulteriormente la modalità Incolla come Microsoft Word (`paste-wordhtml`) in modo da definire in modo esplicito gli stili consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft Word.
 
-Ad esempio, se per incollare in AEM solo i formati e gli elenchi in grassetto è possibile filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
+Ad esempio, se per incollare in AEM solo i formati grassetto e gli elenchi devono essere consentiti, potete filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
 
 * [Testo](#pastemodes)
 * [Collegamenti](#linkstyles)
@@ -178,7 +170,7 @@ Per configurare quali formati sono consentiti quando si incolla del testo in AEM
    * **Nome** `underline`
    * **Nome** `anchor` (per collegamenti e ancoraggi denominati)
    * **Nome** `image`
-   Tutte le proprietà sono di **tipo** `Boolean`, quindi nel **valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
+   Tutte le proprietà sono di **tipo** `Boolean`, quindi in **Valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
 
    >[!NOTE]
    Se non viene definito in modo esplicito, viene utilizzato il valore predefinito true e il formato viene accettato.
@@ -255,7 +247,7 @@ Esempio di una `htmlPasteRules` struttura valida:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Ad esempio:
+Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -288,7 +280,7 @@ Una volta abilitato il plug-in Stili, l&#39;elenco a discesa Stile viene visuali
 
 ### Specificare la posizione del foglio di stile {#locationofstylesheet}
 
-Quindi, specificare le posizioni dei fogli di stile a cui fare riferimento:
+Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare riferimento:
 
 1. Individuate, ad esempio, il nodo principale del componente di testo `/apps/<myProject>/components/text`.
 1. Aggiungete la proprietà `externalStyleSheets` al nodo padre di `<rtePlugins-node>`:
@@ -458,7 +450,7 @@ Se si aggiungono caratteri speciali, la selezione predefinita viene ignorata. Se
 
 1. Salva le modifiche.
 
-Una volta salvata la proprietà, il carattere rappresentato viene visualizzato in CRXDE. Vedere l&#39;esempio della metà sottostante. Ripetete i passaggi indicati per rendere disponibili agli autori altri caratteri speciali.
+Una volta salvata la proprietà, il carattere rappresentato viene visualizzato in CRXDE. Vedere l&#39;esempio della metà sottostante. Ripetete i passaggi indicati sopra per rendere disponibili agli autori altri caratteri speciali.
 
 ![In CRXDE, aggiungere un singolo carattere da rendere disponibile nella barra degli strumenti dell’editor Rich Text](assets/chlimage_1-412.png)
 
@@ -502,7 +494,7 @@ Gli stili vengono in genere applicati al testo, ma su una tabella o su alcune ce
 È possibile definire stili per tabelle e celle solo per l&#39;interfaccia classica.
 
 >[!NOTE]
-Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è supportato in tutti i browser. È possibile ottenere risultati variabili a seconda della struttura della tabella e del browser. Ad esempio, quando copiate e incollate una tabella in un componente RTE in Mozilla Firefox nell’interfaccia classica e Touch, il layout della tabella non viene mantenuto.
+Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è supportato out-of-box per tutti i browser. È possibile ottenere risultati variabili a seconda della struttura della tabella e del browser. Ad esempio, quando copiate e incollate una tabella in un componente RTE in Mozilla Firefox nell’interfaccia classica e Touch, il layout della tabella non viene mantenuto.
 
 1. All’interno del componente, andate al nodo `<rtePlugins-node>/table`. Creare i nodi se questi non esistono. Per ulteriori dettagli, consultate [Attivare un plug-in](#activateplugin).
 1. Creare la `features` proprietà sul `table` nodo:
@@ -559,7 +551,7 @@ Ripetere i passaggi indicati sopra per ogni stile richiesto.
 
 A volte è possibile creare tabelle di dati senza testo visivo in un&#39;intestazione di colonna, partendo dal presupposto che lo scopo dell&#39;intestazione sia determinato dalla relazione visiva della colonna con altre colonne. In questo caso, è necessario fornire testo interno nascosto all&#39;interno della cella nella cella di intestazione per consentire agli assistenti vocali e altre tecnologie di assistenza di aiutare i lettori con varie esigenze a comprendere lo scopo della colonna.
 
-Per migliorare l’accessibilità in tali scenari, RTE supporta le celle di intestazione nascoste. Inoltre, fornisce le impostazioni di configurazione relative alle intestazioni nascoste nelle tabelle. Queste impostazioni consentono di applicare stili CSS alle intestazioni nascoste nelle modalità di modifica e anteprima. Per aiutare gli autori a identificare le intestazioni nascoste nella modalità di modifica, includete nel codice i seguenti parametri:
+Per migliorare l’accessibilità in tali scenari, l’editor Rich Text supporta le celle di intestazione nascoste. Inoltre, fornisce le impostazioni di configurazione relative alle intestazioni nascoste nelle tabelle. Queste impostazioni consentono di applicare stili CSS alle intestazioni nascoste nelle modalità di modifica e anteprima. Per aiutare gli autori a identificare le intestazioni nascoste nella modalità di modifica, includete nel codice i seguenti parametri:
 
 * `hiddenHeaderEditingCSS`: Specifica il nome della classe CSS applicata alla cella di intestazione nascosta quando viene modificato l&#39;editor Rich Text.
 * `hiddenHeaderEditingStyle`: Specifica una stringa di stile applicata alla cella di intestazione nascosta quando viene modificato l&#39;editor Rich Text.
@@ -575,7 +567,7 @@ Se specificate sia il CSS che la stringa Stile nel codice, la classe CSS ha la p
 
 ## Aggiunta di dizionari per il controllo ortografia {#adddict}
 
-Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Text utilizza i dizionari per ciascuna lingua appropriata. Questi vengono selezionati in base alla lingua del sito Web, ottenendo la proprietà language della struttura ad albero secondaria o estraendo la lingua dall’URL; ad esempio. il `/en/` ramo è controllato come inglese, il `/de/` ramo come tedesco.
+Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Text utilizza i dizionari per ciascuna lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito Web, ottenendo la proprietà language della struttura ad albero secondaria o estraendo la lingua dall’URL; ad esempio. il `/en/` ramo è controllato come inglese, il `/de/` ramo come tedesco.
 
 >[!NOTE]
 Messaggio &quot;Controllo ortografia non riuscito&quot;. viene visualizzato se viene provato un controllo per una lingua non installata.
@@ -683,7 +675,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
    * **Nome** `xtype`
    * **Tipo** `String`
    * **Valore**`richtext`
-   La posizione del `../items/text` nodo può variare a seconda della struttura del dialogo; due esempi:
+   La posizione del `../items/text` nodo può variare, a seconda della struttura del dialogo; due esempi:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
 
@@ -742,7 +734,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
          * **Nome** `targetExternal`
          * **Tipo** `String`
-         * **Valutare** la destinazione dei collegamenti esterni (utilizzata solo quando la modalità è `auto`).
+         * **Valutare** la destinazione per i collegamenti esterni (utilizzata solo quando la modalità è `auto`).
 
 
 
