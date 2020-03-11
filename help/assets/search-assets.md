@@ -3,7 +3,7 @@ title: Ricerca di risorse in AEM
 description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -27,10 +27,12 @@ Potete eseguire una ricerca in base alle seguenti opzioni (predicati):
 * Stile
 * Approfondimenti
 
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
+
 Potete personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet [di](search-facets.md)ricerca. Per visualizzare il pannello Filtri, effettuare le seguenti operazioni:
 
 1. Nell’interfaccia utente Risorse, tocca o fai clic sull’icona ![](assets/search_icon.png) search_per visualizzare la casella di ricerca Omnico.
-1. Inserite il termine da cercare e premete Invio. In alternativa, è sufficiente premere Invio senza immettere alcun termine di ricerca. Non inserire spazi iniziali se la ricerca non funziona.
+1. Inserite il termine da cercare e premete Invio. In alternativa, è sufficiente premere Invio senza immettere alcun termine di ricerca. Non inserire spazi iniziali, altrimenti la ricerca non funziona.
 
 1. Toccate o fate clic sull&#39;icona GlobalNav. Viene visualizzato il pannello Filtri.
 
