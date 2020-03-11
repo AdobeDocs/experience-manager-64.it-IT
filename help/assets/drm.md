@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -11,6 +11,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
 
 Le risorse digitali sono spesso associate a una licenza, che specifica i termini e la durata di utilizzo. Poiché Risorse Adobe Experience Manager (AEM) è completamente integrato con la piattaforma AEM, puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e gli stati delle risorse. Potete anche associare le informazioni sulla licenza alle risorse.
+
+<!-- TBD see if adding more UICONTROL tags is needed -->
 
 ## Scadenza risorsa {#asset-expiration}
 
@@ -20,21 +22,21 @@ Potete visualizzare lo stato di scadenza di una risorsa nella console Risorse ne
 
 **Vista a schede**
 
- Per una risorsa scaduta, un flag sulla scheda indica che è scaduta.
+Per una risorsa scaduta, un flag sulla scheda indica che è scaduta.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-**Visualizzazione elenco**
+**Vista a elenco**
 
- Per le risorse scadute, nella colonna **[!UICONTROL Stato]** viene visualizzato il banner **[!UICONTROL Scaduto]** .
+Per le risorse scadute, nella colonna **[!UICONTROL Stato]** viene visualizzato il banner **[!UICONTROL Scaduto]** .
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
- Potete visualizzare lo stato di scadenza di una risorsa nella timeline. Selezionate la risorsa e scegliete Timeline dal menu Navigazione globale.
+Potete visualizzare lo stato di scadenza di una risorsa nella timeline. Selezionate la risorsa e scegliete Timeline dal menu Navigazione globale.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
+Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
 
 1. Andate alla risorsa per la quale desiderate visualizzare il riferimento a pagine Web e risorse composte.
 1. Selezionate la risorsa e toccate o fate clic sull’icona di navigazione globale.
@@ -49,7 +51,7 @@ Potete visualizzare lo stato di scadenza di una risorsa nella console Risorse ne
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute della **[!UICONTROL risorsa]**.
+   Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute per la **[!UICONTROL risorsa]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
