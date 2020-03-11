@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -20,16 +20,12 @@ source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
 AEM supporta entrambi:
 
 * funzioni di accessibilità standard, compreso il testo alternativo per le immagini
-* nonché altre funzioni accessibili durante la creazione di contenuti con componenti che utilizzano l’editor Rich Text (Rich Text)
+* nonché funzioni aggiuntive a cui è possibile accedere durante la creazione di contenuti con componenti che utilizzano l’editor Rich Text (Rich Text Editor)
 
 >[!NOTE]
 >
->Consulta anche:
->
->* la nostra [Guida rapida a WCAG 2.0](/help/managing/qg-wcag.md) per ulteriori dettagli
+>* [Guida rapida a WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Creazione di contenuto accessibile (conformità WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Gli autori dei contenuti possono utilizzare le funzioni dell’editor Rich Text per fornire informazioni di accessibilità durante l’aggiunta di contenuti a una pagina. Ciò può includere l&#39;aggiunta di informazioni strutturali tramite titoli ed elementi paragrafo.
@@ -196,7 +192,7 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
    }
    ```
 
-1. Salva le modifiche con **Salva tutto...**
+1. Salva le modifiche con **Salva tutto**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
 >
 >* La `itemId` proprietà per ciascun campo corrispondente viene impostata sul nome dell&#39;attributo DOM appropriato (`TablePropertiesDialog`).
 >* L&#39;attributo viene impostato e/o rimosso in modo esplicito sull&#39;elemento DOM (`Table`).
-
 
