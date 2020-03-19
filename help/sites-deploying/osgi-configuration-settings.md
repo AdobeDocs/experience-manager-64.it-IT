@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -35,7 +35,7 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 
 >[!NOTE]
 >
->Lo strumento [AEM OSGi Config Details (Dettagli](https://www.aemstuff.com/osgi.html) configurazione AEM OSGi) può essere utilizzato per elencare le configurazioni OSGi predefinite.
+>Lo strumento di configurazione DIFF OSGi, che fa parte di [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), può essere utilizzato per elencare le configurazioni OSGi predefinite.
 
 >[!NOTE]
 >
@@ -45,9 +45,9 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 
 * Modalità di **esecuzione**, in cui gli eventi di replica verranno distribuiti ai listener. Ad esempio, se definito come autore, questo è il sistema che &quot;avvia&quot; la replica.
 
-* È necessario aggiungere la modalità di **pubblicazione** se il codice del progetto elabora eventi di replica (replica inversa) in un ambiente di pubblicazione. Ad esempio, quando il dispatcher viene utilizzato per cancellare dall’ambiente di pubblicazione o quando si verifica la replica standard ad altre istanze di pubblicazione.
+* È necessario aggiungere la modalità di esecuzione **pubblicazione** se il codice del progetto elabora gli eventi di replica (replica inversa) in un ambiente di pubblicazione. Ad esempio, quando il dispatcher viene utilizzato per cancellare dall’ambiente di pubblicazione o quando si verifica la replica standard ad altre istanze di pubblicazione.
 
-**Configurazione del listener** delle modifiche dell&#39;archivio AEM
+**Configurazione del listener** delle modifiche dell&#39;archivio AEM:
 
 * I **percorsi**, le posizioni in cui ascoltare gli eventi del repository pronti per la distribuzione.
 
@@ -84,7 +84,7 @@ Per ulteriori informazioni, consultate Registrazione [AEM e Registrazione](/help
 
 **Apache Sling Eventing Thread Pool** Configura:
 
-* **Dimensione** pool minima e Dimensione **pool** massima, dimensione del pool utilizzato per contenere i thread dell&#39;evento.
+* **Dimensione** pool minima e Dimensione **pool** massima, dimensione del pool utilizzato per ospitare i thread dell&#39;evento.
 
 * **Dimensione** coda, dimensione massima della coda di thread se il pool è esaurito.
 
@@ -169,7 +169,7 @@ Per ulteriori informazioni, consultate Registrazione [AEM e Registrazione](/help
 * **File** di registro per definire l’esistenza di un file di registro.
 * **Numero di file** di registro per definire la rotazione della versione.
 
-* Il writer può essere utilizzato da una configurazione **Apache Sling Logging Logger Configuration** .
+* Il writer può essere utilizzato da una configurazione **Apache Sling Logging Logging Logger Configuration** .
 
 * Tali configurazioni sono utili durante lo sviluppo; ad esempio, per registrare i messaggi TRACE per un servizio specifico in un file di registro specifico.
 * Tali configurazioni sono utili in un ambiente di produzione; ad esempio, per avere messaggi su un servizio specifico registrato in un singolo file di registro per un monitoraggio più semplice.
@@ -178,7 +178,7 @@ Per ulteriori informazioni, consultate Registrazione [AEM e Registrazione](/help
 
 **Apache Sling Main Servlet** Configure:
 
-* **Numero di chiamate per richiesta** e profondità **di** ricorsione per proteggere il sistema da infinite chiamate ricorsive ed eccessive chiamate script.
+* **Numero di chiamate per richiesta** e profondità **di** ricorsione per proteggere il sistema da infinite chiamate di ricorsione ed eccessive chiamate di script.
 
 **Apache Sling MIME Type Service** Configure:
 
@@ -235,13 +235,13 @@ Per ulteriori informazioni, consulta: [https://cwiki.apache.org/confluence/displ
 
 1. Agisce come il `SlingScriptResolver`.
 
-1. Gestisce la gestione degli errori implementando l&#39; `ErrorHandler` interfaccia utilizzando lo stesso algoritmo per selezionare servlet e script di gestione degli errori utilizzato per risolvere i servlet e gli script di elaborazione delle richieste.
+1. Gestisce la gestione degli errori implementando l&#39; `ErrorHandler` interfaccia utilizzando lo stesso algoritmo per selezionare i servlet e gli script di gestione degli errori utilizzati per risolvere i servlet e gli script di elaborazione delle richieste.
 
 È possibile impostare diversi parametri, tra cui:
 
 * **Percorsi** di esecuzione elenca i percorsi per la ricerca di script eseguibili; configurando percorsi specifici è possibile limitare gli script che è possibile eseguire. Se non è configurato alcun percorso, viene utilizzata l&#39;impostazione predefinita ( `/` = root), che consente l&#39;esecuzione di tutti gli script.
 
-   Se un valore di percorso configurato termina con una barra, viene eseguita la ricerca nell&#39;intero sottoalbero. Senza una barra finale di questo tipo, lo script verrà eseguito solo se corrisponde esattamente.
+   Se un valore di percorso configurato termina con una barra, viene eseguita la ricerca nell&#39;intero sottoalbero. Senza una barra finale di questo tipo, lo script verrà eseguito solo se si tratta di una corrispondenza esatta.
 
 * **Utente** script: questa proprietà facoltativa può specificare l&#39;account utente dell&#39;archivio utilizzato per leggere gli script. Se non viene specificato alcun account, l&#39; `admin` utente viene utilizzato per impostazione predefinita.
 
@@ -251,7 +251,7 @@ Per ulteriori informazioni, consulta: [https://cwiki.apache.org/confluence/displ
 
 * Definire il Percorso **** font da cercare per i font specifici del progetto.
 
-   Ad esempio, `/apps/myapp/fonts`.
+   Esempio, `/apps/myapp/fonts`.
 
 **Configurazione proxy di configurazione** proxy dei componenti Apache HTTP per tutto il codice che utilizza il client Apache HTTP, utilizzato quando viene creato un HTTP; ad esempio durante la replica.
 
@@ -298,9 +298,9 @@ Quando utilizzate gruppi [di utenti](/help/sites-administering/cug.md) chiusi po
 * **Realm HTTP**
 * Pagina di accesso **predefinita**
 
-**Day CQ Link Checker Service** Check ed eventualmente configurare:
+**Day CQ Link Checker Service** Check e, se necessario, configurare:
 
-* **Periodo** pianificazione per definire l&#39;intervallo in cui i collegamenti esterni devono essere controllati automaticamente.
+* **Periodo** di pianificazione per definire l&#39;intervallo in cui i collegamenti esterni devono essere controllati automaticamente.
 
 * Selezionare Intervallo **tolleranza collegamento** non valido per il periodo in cui un collegamento esterno non riuscito viene considerato non valido.
 * **Sovrascrivi pattern** di controllo collegamento per definire eventuali percorsi da escludere dal controllo dei collegamenti.
@@ -315,7 +315,7 @@ Quando utilizzate gruppi [di utenti](/help/sites-administering/cug.md) chiusi po
 
 **Day CQ MCM Newsletter** Configurare le varie impostazioni utilizzate con la newsletter.
 
-**Configurazione mappatura** radice CQ giorno:
+**Configurazione della mappatura** radice di CQ Day:
 
 * **Percorso** di destinazione per definire la destinazione di reindirizzamento di una richiesta a &quot; `/`&quot;.
 
@@ -356,7 +356,7 @@ Sono disponibili diverse proprietà di configurazione:
 
 * **Nomi** dei cookie I nomi dei cookie che possono contenere un ID utente.
 
-* **Nomi** dei parametri I nomi dei parametri di richiesta che possono fornire l&#39;ID utente.
+* **Nomi** dei parametri I nomi dei parametri di richiesta che potrebbero fornire l&#39;ID utente.
 
 * **Mappa** utente Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell&#39;oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura verrà ignorata. Tenere presente che il carattere &quot;=&quot; deve essere preceduto da un carattere &quot;\&quot; iniziale.
 
@@ -415,7 +415,7 @@ Sono disponibili diverse proprietà di configurazione:
 **Day CQ WCM Version Manager** Control se e come vengono gestite le versioni nel sistema:
 
 * **Crea versione all&#39;attivazione**, abilitata in un&#39;installazione standard
-* **Abilita eliminazione**
+* **Abilita rimozione forzata**
 
 * **Elimina percorsi**, percorsi che verranno cercati in un’azione di ricerca
 * **Percorsi** di controllo delle versioni impliciti, i percorsi in cui è attivo il controllo delle versioni implicite.
@@ -431,7 +431,7 @@ Per ulteriori informazioni, consulta [Scorrimento](/help/sites-deploying/version
 **Day CQSE HTTP Service** Control the CQ Servlet Engine:
 
 * **NIO per HTTP**, Indica se utilizzare o meno NIO per HTTP. Valori predefiniti per true. Utilizzata solo se HTTP è abilitato.
-* **Timeout** connessione, timeout connessione in millisecondi. Questa proprietà si applica alle connessioni HTTP e HTTPS. Il valore predefinito è 60 secondi.
+* **Timeout** connessione, timeout connessione in millisecondi. Questa proprietà si applica sia alle connessioni HTTP che a quelle HTTPS. Il valore predefinito è 60 secondi.
 
 * **Abilita HTTPS,** se HTTPS è abilitato o meno. Il valore predefinito è false.
 * **Timeout** sessione, durata predefinita di una sessione HTTP specificata in minuti. Se il timeout è pari a 0 o inferiore, le sessioni non avranno mai un timeout. Il valore predefinito è 10 minuti.
@@ -447,7 +447,7 @@ Le seguenti proprietà sono valide solo se HTTPS è abilitato.
 * **Password** archivio chiavi, Password per accedere al Keystore.
 * **Alias** chiave, alias della chiave segreta in Keystore.
 * **Password** chiave, Password per sbloccare la chiave segreta in Keystore.
-* **Certificato** client, requisito per il client di fornire un certificato valido. Il valore predefinito è none.
+* **Certificato** client, requisito per la fornitura di un certificato valido da parte del client. Il valore predefinito è none.
 
 Consultate anche [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md) per informazioni dettagliate sulle opzioni relative a SSL e una descrizione completa su come abilitare HTTPS per CQSE.
 
@@ -456,7 +456,7 @@ Consultate anche [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-
 Controlla il parser HTML per la riscrittura CQ.
 
 * **Tag aggiuntivi da elaborare** - È possibile aggiungere o rimuovere tag HTML da elaborare dal parser. Per impostazione predefinita, vengono elaborati i seguenti tag: A,IMG,AREA,MODULO,BASE,COLLEGAMENTO,SCRIPT,CORPO,TESTA.
-* **Mantieni cassa** del cammello - Per impostazione predefinita, il parser HTML converte gli attributi in caso di cammello (ad es. eBay) in lettere maiuscole (ad es. ebay). È possibile disattivare questa opzione per mantenere gli attributi della custodia cammello. Questa funzione è utile quando si utilizzano strutture frontali come Angular 2.
+* **Mantieni cassa** del cammello - Per impostazione predefinita, il parser HTML converte gli attributi in caso di cammello (ad es. eBay) in lettere maiuscole (ad es. ebay). È possibile disattivare questa opzione per mantenere gli attributi della cassa del cammello. Questa funzione è utile quando si utilizzano strutture frontali come Angular 2.
 
 **Day Commons JDBC Connection Pool** Configura l&#39;accesso a un database esterno utilizzato come origine per il contenuto.
 
@@ -475,7 +475,7 @@ AEM consente di riscrivere gli URL delle risorse interne in URL CDN esterni. Ris
 
 Il flusso complessivo è il seguente:
 
-1. L’utente si autentica con AEM e richiede una pagina con risorse.
+1. L’utente si autentica con AEM e richiede una pagina con le risorse.
 1. La pagina richiesta contiene una risorsa simile a `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. Rewriter trasforma il collegamento a un URL CDN contenente una firma JWS:
 
