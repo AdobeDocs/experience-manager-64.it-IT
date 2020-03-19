@@ -3,7 +3,7 @@ title: Configurare AEM Assets con Brand Portal
 description: 'Scopri come configurare Risorse AEM con il Portale del marchio per la pubblicazione di risorse e raccolte nel Portale del marchio. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 16ed5bc3a06976d2cd616da9987cb7e70f87210f
+source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
 
 ---
 
@@ -183,17 +183,19 @@ Assicurarsi di aver eseguito i seguenti passaggi:
 
    ![Configurazione account IMS](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >Create una sola configurazione IMS. Non creare più configurazioni IMS.
-
 1. Selezionate la configurazione IMS e fate clic su **[!UICONTROL Verifica stato]**. Viene visualizzata una finestra di dialogo.
 
    Fate clic su **[!UICONTROL Controlla]**. In caso di connessione riuscita, viene visualizzato il messaggio *Token recuperato* .
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>Create una sola configurazione IMS valida. Non creare più configurazioni IMS.
+>
+>Verificare che la configurazione sia sana. Nel caso in cui la configurazione non sia sana, eliminarla e creare una nuova configurazione sana.
+
+<br/> <br/>
 
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
