@@ -3,7 +3,7 @@ title: Formati di file supportati in AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -37,10 +37,12 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 I formati immagine raster supportati per le funzioni di Dynamic Media sono i seguenti:
 
@@ -52,19 +54,19 @@ I formati immagine raster supportati per le funzioni di Dynamic Media sono i seg
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PGM |  |  |  |  |  |
+| PFM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
- &amp;ast; L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+**¹** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 Oltre alle informazioni di cui sopra, considerate quanto segue:
 
-* Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configurare ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, vedi Gestore [multimediale basato su riga di](media-handlers.md#command-line-based-media-handler)comando.
+* Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configurare ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, consulta Gestore [multimediale basato su riga di](media-handlers.md#command-line-based-media-handler)comando.
 
 * La funzione di reimpostazione dei metadati funziona per il formato di file PSB quando viene aggiunta al `NComm` gestore.
 
@@ -76,7 +78,7 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF di grandi dimensioni e ricchi di contenuti. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
 
-* I file AI/PDF che richiedono molta risorse per l&#39;elaborazione.
+* I file AI/PDF ad alta intensità di contenuto che richiedono molte risorse per l&#39;elaborazione.
 * File AI/PDF, per i quali le miniature non vengono generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
@@ -98,7 +100,7 @@ La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude.
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
-| Formato | Archiviazione | Gestione metadati<br> | Estrazione full-text<br> | Metadata<br> extraction | Generazione delle miniature<br> | Estrazione di risorse<br> secondarie | Write-back metadati<br> |
+| Formato | Archiviazione | Gestione dei metadati<br> | Estrazione full-text<br> | Metadata<br> extraction | Generazione delle miniature<br> | Estrazione di risorse<br> secondarie | Write-back metadati<br> |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -204,9 +206,9 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast; Gli archivi ZIP creati con `Deflate64` l’algoritmo dispongono di un supporto limitato in AEM. Le operazioni di archiviazione e annullamento dell&#39;archiviazione non sono supportate. Tuttavia, sono supportate operazioni quali il caricamento, la navigazione e il download.
+**²** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno. Gli archivi ZIP creati con `Deflate64` l’algoritmo dispongono di un supporto limitato in AEM. Le operazioni di archiviazione e annullamento dell&#39;archiviazione non sono supportate. Tuttavia, sono supportate operazioni quali il caricamento, la navigazione e il download.
 
 ## Altri formati supportati {#other-supported-formats}
 
@@ -214,14 +216,14 @@ L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di 
 
 | Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (se configurato con un proprio dominio di consegna) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Gli altri formati sono supportati in DAM per l&#39;archiviazione, il controllo delle versioni, ACL, il flusso di lavoro, la pubblicazione e la gestione dei metadati.
+**³** Gli altri formati sono supportati in DAM per l&#39;archiviazione, il controllo delle versioni, ACL, il flusso di lavoro, la pubblicazione e la gestione dei metadati.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -269,7 +271,7 @@ Consultate anche [Supporto](/help/sites-administering/scene7.md#enabling-mime-ty
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
