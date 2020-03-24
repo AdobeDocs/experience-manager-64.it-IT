@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 649b53d9ab4165f4731889495f1a63de9eb07bc1
+source-git-commit: 31efe07cd66963559ff207bcd5492bf97076f875
 
 ---
 
@@ -46,7 +46,7 @@ Miglioramenti nell&#39;ultima versione di Smart Imaging:
 * La funzione Smart Imaging può essere disattivata utilizzando il parametro URL &quot;bfc&quot;.
 * TTL (Time To Live) indipendente. Precedentemente, era obbligatorio un limite minimo di 12 ore per l&#39;utilizzo di Smart Imaging.
 * Precedentemente, sia le immagini originali che quelle derivate erano memorizzate nella cache, ed era un processo in due fasi per annullare la validità della cache. Nella versione più recente di Smart Imaging, solo i derivati vengono memorizzati nella cache, consentendo un singolo processo di annullamento della validità della cache.
-* I clienti che utilizzano intestazioni personalizzate nel set di regole (ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) trarranno vantaggio dall’ultima Smart Imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging.
+* I clienti che utilizzano intestazioni personalizzate nel set di regole (ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) trarranno vantaggio dall’ultima Smart Imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging.
 
 ## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
