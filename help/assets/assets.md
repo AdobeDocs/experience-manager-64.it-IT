@@ -1,9 +1,9 @@
 ---
 title: Informazioni su AEM Assets
-description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta Adobe AEM Assets.
+description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta di Risorse AEM di Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -41,7 +41,7 @@ Le risorse gestite in CQ DAM sono quindi accessibili tramite Content Finder di W
 
 >[!NOTE]
 >
->La navigazione di base dell’interfaccia utente è la stessa di tutte le altre funzionalità di AEM. Per informazioni dettagliate, consultate [Panoramica della console](/help/sites-authoring/qg-page-authoring.md) GUI.
+>La navigazione di base dell’interfaccia utente è la stessa di tutte le altre funzionalità di AEM. Per ulteriori informazioni, consulta [Panoramica della console](/help/sites-authoring/qg-page-authoring.md) GUI.
 
 ### Gestione delle risorse digitali e componente Immagine {#digital-asset-management-versus-image-component}
 
@@ -64,21 +64,21 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 
 Quando lavori con risorse digitali in AEM, è importante comprendere la seguente terminologia:
 
-* **** Raccolta: Una raccolta di risorse, basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione dell’utente (cartelle lightbox).
+* **Raccolta:** Una raccolta di risorse, basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione dell’utente (cartelle lightbox).
 
-* **** Metadati: Le risorse dispongono di metadati; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. AEM Assets offre e supporta i seguenti schemi di metadati di uso comune:
+* **Metadati:** Le risorse dispongono di metadati; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. AEM Assets offre e supporta i seguenti schemi di metadati di uso comune:
 
    * **Dublin Core**: inclusi autore, descrizione, data, oggetto e così via.
    * **IPTC**: compresi evento, modello, posizione e così via.
    * **WCM**: incluse le proprietà della pagina, il tempo di attivazione e disattivazione e così via.
 
-* **** Assegnazione tag: Le risorse possono essere classificate e con tag. Consulta Utilizzo dei tag e Gestione dei tag.
+* **Assegnazione tag:** Le risorse possono essere classificate e con tag. Consulta Utilizzo dei tag e Gestione dei tag.
 
-* **** Rappresentazioni:Una rappresentazione è la rappresentazione binaria di una risorsa. Le risorse dispongono sempre di una rappresentazione principale, cioè quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
+* **Rappresentazioni:** Una rappresentazione è la rappresentazione binaria di una risorsa. Le risorse dispongono sempre di una rappresentazione principale, cioè quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
 
-* **** Versioni:Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. Consulta Controllo delle versioni in AEM Assets.
+* **Versioni:** Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** Risorse secondarie: Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
+* **Risorse secondarie:** Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
 
 ### Come lavorare con le risorse {#how-to-work-with-assets}
 
