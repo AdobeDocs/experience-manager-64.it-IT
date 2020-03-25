@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: a8e5786731c24dc4c0122dbc75e59a6c3be82cf7
+source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
 
 ---
 
@@ -49,7 +49,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 
    * La formattazione CSS deve essere separata dalle definizioni dei componenti. Definite le convenzioni per denominare gli elementi HTML in modo da poterli modificare tramite file CSS esterni.
 
-* Quali aspetti di sicurezza devo considerare?
+* Quali aspetti di sicurezza devo prendere in considerazione?
 
    * Per ulteriori informazioni, vedere Elenco di controllo [sicurezza - Best practice](/help/sites-administering/security-checklist.md#development-best-practices) per lo sviluppo.
 
@@ -130,7 +130,7 @@ Per spostare i componenti nell’istanza di pubblicazione, usate i seguenti stru
 
 ## Struttura {#structure}
 
-La struttura di un componente AEM è potente e flessibile e le considerazioni principali sono:
+La struttura di un componente AEM è potente e flessibile, e le considerazioni principali sono:
 
 * Tipo risorsa
 * Definizione componente
@@ -171,7 +171,7 @@ La definizione di un componente può essere ripartita come segue:
 
       Un elenco delle proprietà JCR; queste sono variabili e alcune possono essere facoltative anche se la struttura di base di un nodo componente, le sue proprietà e i suoi sottonodi sono definiti dalla `cq:Component` definizione
 
-   * Risorse:
+   * Riferimenti:
 
       Definiscono gli elementi statici usati dal componente.
 
@@ -185,7 +185,7 @@ La definizione di un componente può essere ripartita come segue:
 * **Proprietà** vitali:
 
    * `jcr:title` - Titolo componente; ad esempio, utilizzato come etichetta quando il componente è elencato nel browser o nella barra laterale dei componenti.
-   * `jcr:description` - Descrizione del componente; può essere utilizzato come hint di posizionamento del mouse nel browser o nella barra laterale dei componenti.
+   * `jcr:description` - Descrizione del componente; può essere utilizzato come hint per il passaggio del mouse nel browser Componenti o nella barra laterale.
    * Interfaccia classica:
 
       * `icon.png` - Icona per questo componente.
@@ -436,7 +436,7 @@ I nodi secondari di particolare interesse includono:
 
 * Interfaccia classica:
 
-   * `dialog` ( `cq:Dialog`) - definisce la finestra di dialogo per la modifica del contenuto di questo componente (specifica per l’interfaccia classica)
+   * `dialog` ( `cq:Dialog`) - Definisce la finestra di dialogo per la modifica del contenuto di questo componente (specifica per l’interfaccia classica)
    * `design_dialog` ( `cq:Dialog`) - specifica le opzioni di modifica della progettazione per questo componente
    * `icon.png` - file di grafica da usare come icona per il componente nella barra laterale
    * `thumbnail.png` - file di grafica da usare come miniatura per il componente mentre lo trascinate dalla barra laterale
@@ -464,7 +464,7 @@ Le definizioni delle finestre di dialogo sono specifiche dell’interfaccia:
       * definire la finestra di dialogo per la modifica del contenuto di questo componente
       * specifica per l’interfaccia touch
       * sono definiti utilizzando componenti dell’interfaccia utente Granite
-      * hanno una proprietà `sling:resourceType`come struttura standard di contenuto Sling
+      * dispongono di una proprietà `sling:resourceType`come struttura di contenuto Sling standard
       * può disporre di una proprietà `helpPath` per definire la risorsa della guida sensibile al contesto (percorso assoluto o relativo) a cui si accede quando l&#39;icona della Guida (l&#39;icona ?) icon) è selezionata.
 
          * Per i componenti out-of-the-box questo fa spesso riferimento a una pagina nella documentazione.
@@ -501,7 +501,7 @@ Le definizioni delle finestre di dialogo sono specifiche dell’interfaccia:
 
 ### Finestre di dialogo Progettazione {#design-dialogs}
 
-Le finestre di dialogo di progettazione sono molto simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori l’interfaccia per configurare e fornire dettagli di progettazione per quel componente.
+Le finestre di dialogo di progettazione sono molto simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori l’interfaccia per configurare e fornire i dettagli di progettazione per quel componente.
 
 [Le finestre di dialogo Progettazione sono disponibili in modalità](/help/sites-authoring/default-components-designmode.md)Progettazione, anche se non sono necessarie per tutti i componenti, ad esempio **Titolo** e **Immagine** , entrambe dispongono di finestre di dialogo di progettazione, mentre **Testo** non è disponibile.
 
@@ -551,7 +551,7 @@ Le proprietà definite dipendono dalle singole definizioni. Anche se possono ess
 
 ## Gerarchia e ereditarietà dei componenti {#component-hierarchy-and-inheritance}
 
-I componenti in AEM sono soggetti a 3 gerarchie diverse:
+I componenti all’interno di AEM sono soggetti a 3 gerarchie diverse:
 
 * **Gerarchia tipo di risorsa**
 
@@ -586,11 +586,11 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
 * [ proprietà `cq:editConfig` del](#configuring-with-cq-editconfig-properties)nodo:
 
    * `cq:actions` ( `String array`): definisce le azioni che possono essere eseguite sul componente.
-   * `cq:layout` ( `String`):: definisce la modalità di modifica del componente nell’interfaccia classica.
+   * `cq:layout` ( `String`): : definisce la modalità di modifica del componente nell’interfaccia classica.
    * `cq:dialogMode` ( `String`): Definisce la modalità di apertura della finestra di dialogo del componente nell’interfaccia classica
 
       * Nell’interfaccia touch, le finestre di dialogo sono sempre mobili in modalità desktop e automaticamente aperte come schermo intero in dispositivi mobili.
-   * `cq:emptyText` ( `String`): definisce il testo visualizzato quando non è presente alcun contenuto visivo.
+   * `cq:emptyText` ( `String`): definisce il testo che viene visualizzato quando non è presente alcun contenuto visivo.
    * `cq:inherit` ( `Boolean`): definisce se i valori mancanti vengono ereditati dal componente da cui eredita.
    * `dialogLayout` (String): Definisce la modalità di apertura della finestra di dialogo.
 
@@ -625,7 +625,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
 
 Nella directory archivio sono presenti diverse configurazioni. È possibile cercare facilmente proprietà specifiche o nodi secondari:
 
-* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio È `cq:actions`possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa query XPath:
+* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio È `cq:actions`possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa di query XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
@@ -657,6 +657,10 @@ La `cq:actions` proprietà ( `String array`) definisce una o più azioni che pos
    <td><code>edit</code></td> 
    <td>Aggiunge un pulsante per modificare il componente.</td> 
   </tr> 
+    <tr>
+    <td><code>editannotate</code></td>
+    <td>Aggiunge un pulsante per modificare il componente e consentire <a href="/help/sites-authoring/annotations.md">le annotazioni</a>.</td>
+   </tr>
   <tr> 
    <td><code>delete</code></td> 
    <td>Aggiunge un pulsante per eliminare il componente</td> 
@@ -783,7 +787,7 @@ La `dialogLayout` proprietà definisce come aprire una finestra di dialogo per i
 
 * Il valore di `fullscreen` apre la finestra di dialogo a schermo intero.
 * Per impostazione predefinita, un valore vuoto o l’assenza della proprietà determina l’apertura normale della finestra di dialogo.
-* L’utente può sempre attivare la modalità a schermo intero all’interno della finestra di dialogo.
+* L’utente può sempre attivare o disattivare la modalità a schermo intero all’interno della finestra di dialogo.
 * Non si applica all’interfaccia classica.
 
 ### Configurazione con i nodi figlio cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
@@ -857,7 +861,7 @@ La seguente configurazione di esempio definisce un nuovo pulsante (con un separa
 
 * un separatore, definito dal xtype `tbseparator`;
 
-   * Viene utilizzata solo dall’interfaccia classica.
+   * Questa opzione è utilizzata solo dall’interfaccia classica.
    * Questa definizione viene ignorata dall’interfaccia touch in quanto i xtype vengono ignorati (e i separatori non sono necessari in quanto la barra degli strumenti delle azioni è costruita in modo diverso nell’interfaccia touch).
 
 * un pulsante denominato **Gestisci commenti** che esegue la funzione gestore `CQ_collab_forum_openCollabAdmin()`.
@@ -1035,7 +1039,7 @@ L&#39;esempio seguente è equivalente alla `REFRESH_INSERTED` configurazione:
 >[!NOTE]
 Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consultare la sezione `before<action>` ed `after<action>` eventi della documentazione [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ dei `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
 
-Con la seguente configurazione la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
+Con la seguente configurazione, la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
 
 ```
     <cq:listeners
