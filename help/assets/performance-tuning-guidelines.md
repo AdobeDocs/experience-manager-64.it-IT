@@ -3,7 +3,7 @@ title: Guida all'ottimizzazione delle prestazioni di Assets
 description: AEM Assets offre aree di interesse chiave per la configurazione di AEM, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -12,11 +12,11 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 Una configurazione di Risorse Adobe Experience Manager (AEM) contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete per rimuovere i colli di bottiglia delle prestazioni.
 
-Inoltre, l’identificazione e il rispetto di alcune linee guida per l’ottimizzazione hardware e software consente di creare solide basi per l’implementazione di Risorse AEM al fine di soddisfare le aspettative in termini di prestazioni, scalabilità e affidabilità.
+Inoltre, l’identificazione e il rispetto di alcune linee guida per l’ottimizzazione hardware e software consente di creare solide basi per l’implementazione di Risorse AEM, al fine di soddisfare le aspettative in termini di prestazioni, scalabilità e affidabilità.
 
 Le scarse prestazioni in Risorse AEM possono influire sull’esperienza degli utenti in relazione alle prestazioni interattive, all’elaborazione delle risorse, alla velocità di download e ad altre aree.
 
-In realtà, l&#39;ottimizzazione delle prestazioni è un&#39;attività fondamentale che esegui prima di stabilire metriche di destinazione per qualsiasi progetto.
+In realtà, l&#39;ottimizzazione delle prestazioni è un&#39;attività fondamentale che esegui prima di stabilire le metriche di destinazione per qualsiasi progetto.
 
 Di seguito sono riportate alcune aree di interesse principali intorno alle quali è possibile individuare e risolvere problemi di prestazioni prima che abbiano un impatto sugli utenti.
 
@@ -39,7 +39,7 @@ mkfs -q /dev/ram1 800000
 
 In Windows OS, è necessario utilizzare un driver di terze parti per creare un&#39;unità RAM o semplicemente utilizzare storage ad alte prestazioni come SSD.
 
-Una volta pronto il volume temporaneo ad alte prestazioni, impostare il parametro JVM -Djava.io.tmpdir. Ad esempio, potete aggiungere il parametro JVM di seguito alla variabile CQ_JVM_OPTS nello script bin/start di AEM:
+Una volta che il volume temporaneo ad alte prestazioni è pronto, impostare il parametro JVM -Djava.io.tmpdir. Ad esempio, potete aggiungere il parametro JVM di seguito alla variabile CQ_JVM_OPTS nello script bin/start di AEM:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -47,7 +47,7 @@ Una volta pronto il volume temporaneo ad alte prestazioni, impostare il parametr
 
 ### Versione Java {#java-version}
 
-Poiché Oracle ha smesso di rilasciare aggiornamenti per Java 7 a partire da aprile 2015, Adobe consiglia di implementare AEM Assets su Java 8. In alcuni casi, ha dimostrato prestazioni migliori.
+Poiché Oracle ha smesso di rilasciare aggiornamenti per Java 7 a partire da aprile 2015, Adobe consiglia di implementare AEM Assets su Java 8. In alcuni casi, ha dimostrato prestazioni migliorate.
 
 ### Parametri JVM {#jvm-parameters}
 
@@ -108,8 +108,8 @@ Adobe consiglia di abilitare HTTPS perché molte aziende dispongono di firewall 
 
 In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantità di larghezza di banda disponibile e dal carico sull’istanza di AEM. Le comuni opzioni di configurazione, inclusi firewall o proxy, possono migliorare le prestazioni della rete. Ecco alcuni punti chiave da tenere a mente:
 
-* A seconda del tipo di istanza (piccolo, moderato, grande), assicurati di disporre di una larghezza di banda di rete sufficiente per l’istanza di AEM. Un’adeguata allocazione della larghezza di banda è particolarmente importante se AEM è ospitato su AWS.
-* Se l’istanza di AEM è ospitata su AWS, è possibile trarre vantaggio da un criterio di ridimensionamento versatile. Aggiornate l&#39;istanza se gli utenti prevedono un carico elevato. Sgrandisci per un carico medio/basso.
+* A seconda del tipo di istanza (piccolo, moderato, grande), accertati di disporre di una larghezza di banda di rete sufficiente per l’istanza di AEM. Un’adeguata allocazione della larghezza di banda è particolarmente importante se AEM è ospitato su AWS.
+* Se l’istanza di AEM è ospitata su AWS, è possibile trarre vantaggio da un criterio di ridimensionamento versatile. Aggiornate l&#39;istanza se gli utenti prevedono un carico elevato. Sgrandisci per un carico moderato o basso.
 * HTTPS: La maggior parte degli utenti dispone di firewall che troncano il traffico HTTP, il che può avere un impatto negativo sul caricamento di file o persino di file danneggiati durante l’operazione di caricamento.
 * Caricamenti di file di grandi dimensioni: Verificate che gli utenti dispongano di connessioni cablate alla rete (le connessioni WiFi si saturano rapidamente).
 
@@ -117,7 +117,7 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
-Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. L&#39;impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro perché, in questo caso, i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
+Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ L&#39;impostazione di una coda a metà dei processori disponibili è una soluzio
 
 ### Offload {#offloading}
 
-Per flussi di lavoro o flussi di lavoro ad alta intensità di risorse, come la transcodifica video, potete scaricare flussi di lavoro DAM Update Asset in una seconda istanza di authoring. Spesso, il problema dello scaricamento è che qualsiasi carico salvato scaricando l&#39;elaborazione del flusso di lavoro viene compensato dal costo della replica del contenuto avanti e indietro tra le istanze.
+Per flussi di lavoro o flussi di lavoro ad alta intensità di risorse, come la transcodifica video, potete scaricare flussi di lavoro DAM Update Asset in una seconda istanza di authoring. Spesso, il problema dello scaricamento è che qualsiasi carico salvato mediante l&#39;offload dell&#39;elaborazione del flusso di lavoro viene compensato dal costo della replica del contenuto avanti e indietro tra le istanze.
 
 A partire da AEM 6.2 e con un pacchetto di funzioni per AEM 6.1, potete eseguire lo scaricamento con la replica binaria-less. In questo modello, le istanze dell&#39;autore condividono un datastore comune e inviano i metadati solo avanti e indietro attraverso la replica in avanti. Anche se questo approccio funziona bene con un archivio dati file condiviso, possono verificarsi problemi con un archivio dati S3. Poiché i thread di scrittura in background possono determinare una latenza, è possibile che una risorsa non sia stata scritta nel datastore prima dell&#39;inizio del processo di scaricamento.
 
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-Durante il caricamento delle risorse, il flusso di lavoro di AEM crea una risorsa separata per ciascuna pagina nei documenti PDF e Office. Ciascuna di queste pagine è una risorsa di per sé, che consuma ulteriore spazio su disco, richiede il controllo delle versioni e un&#39;ulteriore elaborazione del flusso di lavoro. Se non sono necessarie pagine separate, disabilitate Generazione risorse secondarie ed Estrazione pagina.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-Per disattivare la generazione di Risorse secondarie, effettuate le seguenti operazioni:
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. Aprite lo strumento Console **** flusso di lavoro da */libs/cq/workflow/content/console.html*
+To disable Sub Asset generation, do the following:
+
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Models]** tab
-1. Fate doppio clic sul modello di flusso di lavoro Aggiorna risorsa **** DAM
-1. Elimina il passaggio **[!UICONTROL Elabora risorsa]** secondaria dal modello di flusso di lavoro Aggiorna risorsa **** DAM.
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. Fate clic su **[!UICONTROL Salva]**
+1. Click on **[!UICONTROL Save]**
 
-Per disabilitare l&#39;estrazione pagina:
+To disable Page Extraction:
 
-1. Aprite lo strumento Console **** flusso di lavoro da */libs/cq/workflow/content/console.html*
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. Selezionare un avvio che avvia il modello di flusso di lavoro di analisi documenti **[!UICONTROL di Word]** DAM
-1. Fai clic su **[!UICONTROL Modifica]**
-1. Seleziona **[!UICONTROL disattivazione]**
-1. Fai clic su **[!UICONTROL OK]**
-1. Ripetere i passaggi da 3 a 6 per altri elementi di avvio che utilizzano il modello di flusso di lavoro **DAM Parse Word Documents **workflow
-
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP writeback {#xmp-writeback}
@@ -345,12 +347,11 @@ Aggiornare le configurazioni dell&#39;indice per migliorare il tempo di reindici
 
    type=&quot;String&quot;
 
-1. Nel nodo /oak:index/ntBaseLucene, impostate la proprietà *reindex=true*
+1. Sul nodo /oak:index/ntBaseLucene, imposta la proprietà `reindex=true`
 1. Fate clic su **[!UICONTROL Salva tutto]**
 1. Monitorate il file error.log per vedere quando l&#39;indicizzazione è completata:
 
-   
-Reindicizzazione completata per gli indici: [/quercia:index/ntBaseLucene]
+   Reindicizzazione completata per gli indici: [/quercia:index/ntBaseLucene]
 
 1. È inoltre possibile verificare che l&#39;indicizzazione viene completata aggiornando il nodo /oak:index/ntBaseLucene in CRXDe, poiché la proprietà reindex torna a false
 1. Una volta completata l&#39;indicizzazione, tornare a CRXDe e impostare la proprietà **[!UICONTROL type]** su disabled su questi due indici
@@ -404,17 +405,17 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’u
 
 ## Elenco di controllo delle prestazioni di AEM Assets {#aem-assets-performance-checklist}
 
-* Abilitare HTTPS per aggirare qualsiasi utilità di rilevamento del traffico HTTP aziendale
-* Utilizzare una connessione cablata per il caricamento di risorse pesanti
-* Implementare in Java 8.
-* Impostare parametri JVM ottimali
-* Configurare un archivio dati del file system o un archivio dati S3
-* Attiva flussi di lavoro transitori
-* Regola le code del flusso di lavoro Granite per limitare i processi simultanei
-* Configurare ImageMagick per limitare l&#39;utilizzo delle risorse
-* Rimozione di passaggi superflui dal flusso di lavoro DAM Update Asset
-* Configurare l&#39;eliminazione di flussi di lavoro e versioni
-* Ottimizza la configurazione dell&#39;indice Lucene nelle versioni precedenti alla 6.2
+* Abilitate HTTPS per aggirare eventuali misuratori di traffico HTTP aziendali.
+* Usate una connessione cablata per il caricamento di risorse pesanti.
+* Impostare parametri JVM ottimali.
+* Configurare un archivio dati del file system o un archivio dati S3.
+* Disattiva la generazione delle risorse secondarie. Se è attivato, il flusso di lavoro di AEM crea una risorsa separata per ogni pagina di una risorsa con più pagine. Ciascuna di queste pagine è una singola risorsa che consuma ulteriore spazio su disco, richiede il controllo delle versioni e un&#39;ulteriore elaborazione del flusso di lavoro. Se non sono necessarie pagine separate, disattivate la generazione di risorse secondarie e le attività di estrazione della pagina.
+* Abilita flussi di lavoro transitori.
+* Regola le code del flusso di lavoro Granite per limitare i processi simultanei.
+* Configurare ImageMagick per limitare il consumo di risorse.
+* Rimuovete i passaggi superflui dal flusso di lavoro DAM Update Asset (Aggiorna risorsa).
+* Configurare l&#39;eliminazione del flusso di lavoro e delle versioni.
+* Ottimizzare la configurazione dell&#39;indice Lucene.
 * Ottimizzate gli indici con i service pack e gli hotfix più recenti. Consultate il supporto Adobe per eventuali ottimizzazioni di indice aggiuntive disponibili.
 * Utilizzare `guessTotal` per ottimizzare le prestazioni della query.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
