@@ -3,7 +3,7 @@ title: Configurare AEM Assets con Brand Portal
 description: 'Scopri come configurare Risorse AEM con il Portale del marchio per la pubblicazione di risorse e raccolte nel Portale del marchio. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -17,12 +17,14 @@ Risorse Adobe Experience Manager (AEM) è configurato con Brand Portal tramite A
 >La configurazione di AEM Assets con il Portale del marchio tramite Adobe I/O è supportata in AEM 6.4.8.0 e versioni successive.
 >
 >Precedentemente, Brand Portal era stato configurato nell’interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione.
+
+
+>[!TIP]
 >
->Se siete già utenti Brand Portal con configurazione su gateway OAuth, si consiglia di eliminare le configurazioni esistenti e creare una nuova configurazione su Adobe I/O.
+>***Solo per i clienti esistenti***
 >
->Se siete già utenti Brand Portal con configurazione su gateway OAuth, si consiglia di eliminare le configurazioni esistenti e creare una nuova configurazione su Adobe I/O.
->
->Tuttavia, se non modificate le configurazioni, la configurazione esistente continuerà a funzionare.
+>Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth precedente, eliminate la configurazione esistente e create una nuova configurazione tramite Adobe I/O.
+
 
 Questa guida descrive i due casi d’uso seguenti:
 * [Nuova configurazione](#configure-new-integration-64): Se sei un nuovo utente del Brand Portal e vuoi configurare l’istanza di creazione di Risorse AEM con Brand Portal, puoi creare una nuova configurazione in Adobe I/O.
