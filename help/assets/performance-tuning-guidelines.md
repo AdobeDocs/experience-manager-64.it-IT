@@ -281,7 +281,7 @@ La funzione di writeback XMP aggiorna la risorsa originale ogni volta che i meta
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
-Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
+Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
 
 ## Replica {#replication}
 
