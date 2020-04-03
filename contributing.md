@@ -1,5 +1,5 @@
 ---
-source-git-commit: 10c53b92c068c4a6da76ebedbb85b0c0add7a5ed
+source-git-commit: 1164941ff909800729027072f14cd49d2920ebff
 translation-type: tm+mt
 
 ---
@@ -19,7 +19,7 @@ Anche se siamo lieti di ricevere contributi per migliorare la documentazione di 
 
 ## Come contribuire
 
-Vogliamo che i vostri contributi siano presentati il più facilmente possibile. Potete contribuire in due modi:
+Desideriamo rendere il più semplice possibile la presentazione dei vostri contributi. Potete contribuire in due modi:
 
 * [Creare un&#39;edizione](#create-an-issue)
 * [Creare una richiesta pull](#create-a-pull-request)
@@ -32,7 +32,7 @@ Il metodo scelto dipende dalla comodità con cui state modificando la documentaz
 
 ### Creare un problema {#create-an-issue}
 
-Hai un suggerimento, un&#39;osservazione sui documenti attuali, o hai dei dubbi sul modo in cui qualcosa viene descritto? Quindi create un problema. I problemi sono anche eccellenti se hai qualcosa da contribuire, ma non sentirti a tuo agio nel modificare i documenti o fare una richiesta pull.
+Hai un suggerimento, un&#39;osservazione sui documenti attuali, o hai dei dubbi sul modo in cui qualcosa viene descritto? Quindi create un problema. I problemi sono anche eccellenti se si ha qualcosa da contribuire, ma non sentirsi a proprio agio nel modificare i documenti o fare una richiesta pull.
 
 I problemi ti consentono di descrivere facilmente la tua idea di miglioramento ai documenti e un membro del team Docs di AEM può esaminarla. È sufficiente fare clic sul collegamento **Registra un problema** nella parte superiore del pannello di navigazione a destra in qualsiasi pagina per creare un problema.
 
@@ -50,9 +50,9 @@ Guardate il seguente video per una rapida panoramica su come creare problemi e t
 
 ### Contributi dei dipendenti Adobe
 
-Se siete un dipendente Adobe e desiderate effettuare una richiesta pull, utilizzate il repository privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se siete dipendenti Adobe e disponete di un contributo, utilizzate l&#39; `AdobeDocs` organizzazione nel git aziendale.
 
-Per problemi, non esitate a utilizzare i repository pubblici.
+Naturalmente, siamo lieti di qualsiasi contributo e valuteremo il vostro contributo se viene fornito sul repository pubblico, ma le richieste pull da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente sul repo aziendale. Assicurarsi che tutte le informazioni proprietarie siano discusse solo nel repo aziendale.
 
 ## Ulteriori informazioni
 
