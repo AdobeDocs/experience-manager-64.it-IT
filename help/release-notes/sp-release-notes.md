@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
+source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
 
 ---
 
@@ -46,6 +46,8 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * L&#39;integrazione del modello di dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
 * AEM Assets è ora configurato con Brand Portal tramite Adobe I/O.
+
+* È stata aggiornata la versione jQuery inclusa nel pacchetto ContextHub alla 3.4.1.
 
 ## Elenco delle modifiche {#list-of-changes}
 
@@ -768,7 +770,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * Quando un file CSV ha un valore separato da virgole in una singola colonna, l’editor CSV AEM non esce dalla virgola e la tratta come una colonna separata. NPR-28801: Hotfix per CQ-4261694
 * Problema con l&#39;Editor schema metadati quando si utilizza il browser percorsi per selezionare i dati. NPR-28674: Hotfix per CQ-4263005
 * Troppe risorse vengono elaborate in Smart Content Service e il processo periodico di assegnazione dei tag viene completato per un periodo di tempo molto lungo. NPR-28640: Hotfix per CQ-4262661, CQ-4262644, CQ-4263234
-* Le azioni desktop non funzionano per i risultati di ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
+* Le azioni desktop non funzionano per i risultati della ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
 * L’API Assets non consente il caricamento di file > 2 GB, causando errori di caricamento. NPR-27629: Hotfix per GRANITE-23590
 * I metadati non vengono salvati nella risorsa scaricata nel primo tentativo nel caso in cui l&#39;elemento multimediale dinamico sia abilitato nell&#39;istanza. NPR-28233: Hotfix per CQ-4260759
 * Il risolutore del servizio non è chiuso nella configurazione SiteCatalyst. NPR-28015: Hotfix per CQ-4259397
@@ -803,7 +805,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * I dati JSON ricevuti da Target hanno una serie di caratteri escape che causano l&#39;interruzione della pagina dell&#39;applicazione. NPR-28318: Hotfix per CQ-4252043
 * Non è possibile modificare alcun componente dopo l’installazione di AEM 6.4.3. NPR-28125: Hotfix per CQ-4261216
 * L&#39;eliminazione di tutti i tag per un campo tag non è persistente per un frammento di contenuto strutturato. NPR-28133: Hotfix per CQ-4247241
-* Quando si modifica una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
+* Quando modificate una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
 * La versione dei frammenti di contenuto confronta diversi miglioramenti per AEM 6.4. NPR-27764
 * Se nel modello di frammento esperienza non è definito alcun cq:allowTemplates su /content/experience-fragments e allowPaths, viene generato un errore quando il frammento esperienza viene spostato/copiato. NPR-27487: Hotfix per CQ-4257489
 * Il pulsante Crea viene visualizzato all’aggiornamento per il nuovo utente. NPR-27335: Hotfix per CQ-4255360
@@ -946,7 +948,7 @@ Elementi di rilievo di AEM 6.4.4.0 Forms:
 * Impossibile impostare il valore tra i campi dei frammenti caricati pigri di un modulo adattivo. NPR-28320: Hotfix per CQ-4262345
 * Il modulo adattivo non utilizza l’editor Rich Text, ma ne carica le librerie.  NPR-28001: Hotfix per CQ-4259703, CQ-4259193
 * La firma scarabocchio non funziona per l&#39;app AEM Forms in esecuzione su Apple iOS 12.1. NPR-28497: Hotfix per CQ-4261765
-* Invia un’azione utilizzando i problemi di creazione classici di ‘Flusso di lavoro moduli’ in 6.4. Hotfix per CQ-4252740
+* Invia un&#39;azione utilizzando i problemi di creazione classici del flusso di lavoro moduli in 6.4. Hotfix per CQ-4252740
 * Errore durante la gestione della rimozione di blocchi e spazio di archiviazione tmp. NPR-28806: Hotfix per CQ-4264441
 
 **Forms - Gestione della corrispondenza**
