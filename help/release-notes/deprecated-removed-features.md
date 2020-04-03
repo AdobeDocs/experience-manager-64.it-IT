@@ -10,21 +10,21 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le capacità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne per migliorare il valore complessivo dei clienti, sempre in considerazione della compatibilità con le versioni precedenti.
+Adobe valuta costantemente le funzionalità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
 
 Per comunicare l’imminente rimozione/sostituzione delle funzionalità AEM, si applicano le seguenti regole:
 
 1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Le funzionalità obsolete restano disponibili, ma non saranno ulteriormente migliorate.
 1. La rimozione delle funzionalità obsolete verrà attuata a partire dalla versione principale successiva. La data di riferimento effettiva per la rimozione verrà annunciata.
 
-Questo processo offre ai clienti almeno un processo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
+Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
 
 ## Funzioni obsolete {#deprecated-features}
 
@@ -96,7 +96,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
   </tr>
   <tr>
    <td>Portal Director</td> 
-   <td><p>Portal Director è una serie di funzioni che consentono di ospitare contenuti AEM tramite Portlet nei server di terze parti.</p> <p>Adobe non prevede di apportare ulteriori miglioramenti alla funzionalità di Portal Director nella posizione indicata di seguito. In AEM 6.4 Portal Director è incluso e i clienti che effettuano l’aggiornamento da versioni precedenti possono continuare a utilizzarlo così com’è. Portal Direct rimane completamente supportato anche se è obsoleto.</p> 
+   <td><p>Portal Director è una serie di funzioni che consentono di ospitare contenuti AEM tramite Portlet nei server di terze parti.</p> <p>Adobe non prevede di apportare ulteriori miglioramenti alla funzionalità di Portal Director nella posizione indicata di seguito. In AEM 6.4 Portal Director è incluso e i clienti che effettuano l’aggiornamento da versioni precedenti possono continuare a utilizzarlo così com’è. Portal Direct rimane completamente supportato anche se viene dichiarato obsoleto.</p> 
     <ul> 
      <li>/libs/portale/director</li> 
     </ul> </td> 
@@ -122,7 +122,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 ## Funzioni rimosse {#removed-features}
 
-Questa sezione elenca le funzioni e le funzionalità che sono state rimosse da AEM 6.4. Nelle versioni precedenti queste funzionalità erano indicate come obsolete.
+In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
 
 <table> 
  <tbody>
@@ -185,6 +185,41 @@ Questa sezione elenca le funzioni e le funzionalità che sono state rimosse da A
    <td>Forms</td> 
    <td>Il supporto per le immagini all'interno di frammenti di documento è stato rimosso. </td> 
    <td>Le comunicazioni interattive consentono di utilizzare direttamente le immagini nei canali Web e per la stampa.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td> Aggiornamento fuori sede </td> 
+   <td>Il supporto per l'esecuzione dell'aggiornamento locale non è disponibile <br/> </td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Sidegrade per le migrazioni da TarMK a DocumentMK </td> 
+   <td> È possibile esportare i dati da sistemi meno recenti e quindi importarli in un sistema di configurazione più recente. Per istruzioni dettagliate, consultate Moduli AEM su documenti di aggiornamento JEE <br/> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+ <td>AEM Forms sul programma di installazione JEE a 32 bit non disponibile.</td> 
+   <td>Adobe ha interrotto la spedizione di AEM Forms sul programma di installazione JEE a 32 bit. Potete continuare a utilizzare il programma di installazione a 64 bit per installare AEM Forms su JEE. </td>  
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>È stato rimosso il supporto per l'utilizzo di immagini DAM in Componente frammento documento.</td> 
+    <td> Potete usare i componenti Immagine e Grafico nel canale di stampa delle comunicazioni interattive. Se nei moduli adattivi si utilizza il componente frammento di documento del documento adattivo, questo non funziona più dopo l'aggiornamento ad AEM 6.4 Forms. </td>  
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> È stata rimossa la funzione Documenti adattivi</td> 
+   <td> Potete utilizzare la funzione di comunicazione interattiva per creare comunicazioni stampate e basate sul Web. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>AEM Forms è stato rimosso sulla pagina di destinazione specifica di JEE.</td> 
+    <td>La pagina di destinazione AEM Forms su JEE viene sostituita dalla pagina di destinazione AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Rimosso il supporto per Captcha predefinito</td> 
+   <td>Utilizzate il servizio reCAPTCHA di Google.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
