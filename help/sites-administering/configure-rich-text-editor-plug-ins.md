@@ -3,7 +3,7 @@ title: Configurare i plug-in Editor Rich Text
 description: Scoprite come configurare i plug-in Editor di testo RTF di AEM per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
 
 ---
 
@@ -87,7 +87,9 @@ Dopo aver attivato un plug-in, attenetevi alle seguenti linee guida per configur
 
 ## Comprendere il plug-in più recente {#understand--findreplace-plugin}
 
-Il `findreplace` plug-in non richiede alcuna configurazione. Funziona come previsto, fuori dagli schemi.
+Il `findreplace` plug-in non richiede alcuna configurazione. Funziona fuori dagli schemi.
+
+Quando si utilizza la funzionalità replace, la stringa replace da sostituire deve essere immessa contemporaneamente alla stringa find. È comunque possibile fare clic su find per cercare la stringa prima di sostituirla. Se la stringa di sostituzione viene immessa dopo aver fatto clic su Trova, la ricerca viene reimpostata all’inizio del testo.
 
 La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore. Se gli utenti fanno clic su replace all (Sostituisci tutto), la finestra di dialogo viene chiusa e viene visualizzato il numero di sostituzioni effettuate.
 
