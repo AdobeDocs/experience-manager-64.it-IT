@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -89,7 +89,7 @@ Per impostare rapidamente un file slinglog:
    1. Immettere un nome per il file **[!UICONTROL di]** registro, ad esempio
 
       * logs/scoring-debug.log
-   1. Inserite due voci **[!UICONTROL Logger]** (classe) (tramite `+` icona)
+   1. Inserite due voci **[!UICONTROL Logger]** (classe) (utilizzando l&#39; `+` icona)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -110,13 +110,13 @@ Per visualizzare le voci di registro:
 * Sul disco locale del server
 
    * Il file di registro si trova in &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
-   * Ad esempio: `.../crx-quickstart/logs/scoring-debug.log`
+   * Esempio, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
@@ -149,8 +149,10 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
       * `/content/sites/engage/en/forum/jcr:content`
    * Aggiunta di proprietà di punteggio e contrassegno
 
-      * regole di punteggio = [/etc/community/scoring/rules/comments-scoring,/etc/community/scoring/rules/forums-scoring]
-      * badgingRules=[/etc/community/badging/rules/comments-scoring,/etc/community/badging/rules/forums-scoring]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * Individuare il nodo del componente forum
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -257,7 +259,7 @@ Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella de
 
 * /home/users/community/w271Oup2Z4DjnOQrviv/profile/badges
 
-#### Badge assegnato {#awarded-badge}
+#### Badge aggiudicato {#awarded-badge}
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -269,6 +271,6 @@ Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella de
 
 Per visualizzare un elenco ordinato di membri in base ai punti:
 
-* [Funzione](functions.md#leaderboard-function) di leadership per l&#39;inclusione in un sito o modello di gruppo community.
+* [Funzione](functions.md#leaderboard-function) della classifica per l&#39;inclusione in un sito o modello di gruppo community.
 * [Componente](enabling-leaderboard.md)Leaderboard, componente della funzione Leaderboard per l’authoring delle pagine.
 
