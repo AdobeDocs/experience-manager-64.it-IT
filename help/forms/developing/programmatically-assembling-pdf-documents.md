@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 ![pa_pa_document_assembly](assets/pa_pa_document_assembly.png)
 
-Per assemblare due o più documenti PDF in un singolo documento PDF, è necessario un documento DDX. Un documento DDX descrive il documento PDF prodotto dal servizio Assembler. In altre parole, il documento DDX indica al servizio Assembler quali azioni eseguire.
+Per assemblare due o più documenti PDF in un singolo documento PDF, è necessario disporre di un documento DDX. Un documento DDX descrive il documento PDF prodotto dal servizio Assembler. In altre parole, il documento DDX indica al servizio Assembler quali azioni eseguire.
 
 Ai fini di questa discussione, si supponga di utilizzare il seguente documento DDX.
 
@@ -52,7 +52,7 @@ Questo documento DDX unisce due documenti PDF denominati *map.pdf* e *directiona
 
 ## Considerazioni durante la chiamata del servizio Assembler con i servizi Web {#considerations-when-invoking-assembler-service-using-web-services}
 
-Quando si aggiungono intestazioni e piè di pagina durante il montaggio di documenti di grandi dimensioni, si potrebbe verificare un `OutOfMemory` errore e i file non verranno assemblati. Per ridurre la possibilità che si verifichi questo problema, aggiungere un `DDXProcessorSetting` elemento al documento DDX, come illustrato nell&#39;esempio seguente.
+Quando si aggiungono intestazioni e piè di pagina durante l&#39;assemblaggio di documenti di grandi dimensioni, si potrebbe verificare un `OutOfMemory` errore e i file non verranno assemblati. Per ridurre la possibilità che si verifichi questo problema, aggiungere un `DDXProcessorSetting` elemento al documento DDX, come illustrato nell&#39;esempio seguente.
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
@@ -100,11 +100,11 @@ Sia il file map.pdf che il file direction.pdf devono essere inseriti in un ogget
 
 >[!NOTE]
 >
->Se si richiama l&#39; `*AssemblerResult*` operazione, viene restituito un oggetto `*invokeDDX*` che contiene un oggetto raccolta. Questa operazione viene utilizzata quando si passano due o più documenti PDF di input al servizio Assembler. Tuttavia, se trasmettete un solo PDF di input al servizio Assembler e prevedete un solo documento di restituzione, richiamate l&#39; `*invokeOneDocument*` operazione. Quando si richiama questa operazione, viene restituito un singolo documento. Per ulteriori informazioni sull&#39;utilizzo di questa operazione, vedere [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-encryling-pdf-documents-assembling assembling-encryling-pdf-documents-assembling.md#assembling-Encrypted-pdf-documents).
+>Se si richiama l&#39; `*AssemblerResult*` operazione, viene restituito un oggetto `*invokeDDX*` che contiene un oggetto raccolta. Questa operazione viene utilizzata quando si passano due o più documenti PDF di input al servizio Assembler. Tuttavia, se trasmettete un solo PDF di input al servizio Assembler e prevedete un solo documento di restituzione, richiamate l&#39; `*invokeOneDocument*` operazione. Quando si richiama questa operazione, viene restituito un singolo documento. Per informazioni sull&#39;utilizzo di questa operazione, vedere [Assemblaggio di documenti](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)PDF crittografati.
 
 **Impostazione delle opzioni di esecuzione**
 
-È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe in Riferimento API di [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe nella Guida di riferimento [delle API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Assemblare i documenti PDF in input**
 
@@ -198,7 +198,7 @@ Assemblate un documento PDF utilizzando l&#39;API di Assembler Service (Java):
    Per ottenere il documento PDF appena creato, effettuare le seguenti operazioni:
 
    * Richiama il metodo dell’ `AssemblerResult` oggetto `getDocuments` . Questo restituisce un `java.util.Map` oggetto.
-   * Iterare l&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante. Per ottenere il documento è possibile utilizzare l&#39;elemento risultato PDF specificato nel documento DDX.
+   * Eseguire un&#39;iterazione sull&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante. Per ottenere il documento è possibile utilizzare l&#39;elemento risultato PDF specificato nel documento DDX.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per estrarre il documento PDF.
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ Assemblate i documenti PDF utilizzando l&#39;API di Assembler Service (servizio 
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Questo oggetto raccolta viene utilizzato per memorizzare i documenti PDF di input.
    * Per ciascun documento PDF di input, creare un `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto. Ad esempio, se si utilizzano due documenti PDF di input, creare due `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetti.
-   * Assegnare un valore stringa che rappresenta il nome chiave al campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `key` . Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX. (Eseguire questa operazione per ciascun documento PDF di input.)
+   * Assegnare un valore di stringa che rappresenta il nome chiave al campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `key` . Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX. (Eseguire questa operazione per ciascun documento PDF di input.)
    * Assegnare l&#39; `BLOB` oggetto che memorizza il documento PDF nel campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `value` . (Eseguire questa operazione per ciascun documento PDF di input.)
    * Aggiungere l&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto all&#39; `MyMapOf_xsd_string_To_xsd_anyType` oggetto. Richiamare il `MyMapOf_xsd_string_To_xsd_anyType` metodo dell&#39;oggetto `Add` e passare l&#39; `MyMapOf_xsd_string_To_xsd_anyType` oggetto. (Eseguire questa operazione per ciascun documento PDF di input.)
 
 1. Impostare le opzioni di esecuzione.
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati appartenente all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
+   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati che appartiene all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
 
 1. Assemblare i documenti PDF di input.
 
