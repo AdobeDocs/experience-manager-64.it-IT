@@ -10,7 +10,7 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 2cb6420879ed93ab4ed3c70603aa11afe919840d
+source-git-commit: 3995381542c86694bad6ff6d3f726b1e24bf7ddc
 
 ---
 
@@ -34,7 +34,7 @@ Potete scaricare l&#39;app da un&#39;istanza di AEM. Per informazioni dettagliat
 L&#39;app desktop AEM utilizza il protocollo WebDAV su Microsoft Windows e SMB1 su Mac OS X per connettersi a un server AEM Forms. Il server AEM Forms non è abilitato per la sincronizzazione di file binari e altre risorse con un client WebDAV o SMB. Per attivare l’app desktop AEM Forms per AEM, effettuate le seguenti operazioni:
 
 1. Accedi ad AEM Forms come amministratore.
-1. Nell’istanza di creazione, fate clic su ![adobeexperienceemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Strumenti **![martello](assets/hammer.png)**> Distribuzione > Operazioni > Console]**Web. La console Web si apre in una nuova finestra.
+1. Nell’istanza di creazione, fate clic su ![adobeexperienceemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Strumenti]** ![martello](assets/hammer.png) **[!UICONTROL > Distribuzione > Operazioni > Console]** Web. La console Web si apre in una nuova finestra.
 1. Nella finestra Console Web individuare e aprire l&#39;opzione di configurazione **[!UICONTROL del componente aggiuntivo]** FormsManager.
 1. Nella finestra di dialogo Configurazione AddOn di FormsManager, deselezionare la casella di controllo **[!UICONTROL Sincronizza risorse]** in modo asincrono e fare clic su **[!UICONTROL Salva]**.
 1. Riavviate il server AEM Forms. Dopo il riavvio, il server AEM Forms è abilitato per accettare e condividere il contenuto con l&#39;app desktop AEM.
