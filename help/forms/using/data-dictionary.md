@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
 
 ---
 
@@ -40,7 +40,7 @@ Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/f
 
 ## Creare un dizionario dati {#createdatadictionary}
 
-È possibile utilizzare l&#39;Editor dizionario dati per creare un dizionario dati oppure caricare un file di schema XSD per creare un dizionario dati basato su di esso. Potete quindi estendere il dizionario dati aggiungendo ulteriori informazioni, compresi i campi. Indipendentemente da come è stato creato il dizionario dati, il proprietario del processo aziendale non ha bisogno di conoscere i sistemi back-end. Il proprietario del processo aziendale necessita solo di conoscere gli oggetti del dominio e le relative definizioni per il loro processo.
+È possibile utilizzare l&#39;Editor dizionario dati per creare un dizionario dati oppure caricare un file di schema XSD per creare un dizionario dati basato su di esso. È quindi possibile estendere il dizionario dati aggiungendo ulteriori informazioni, compresi i campi. Indipendentemente da come è stato creato il dizionario dati, il proprietario del processo aziendale non ha bisogno di conoscere i sistemi back-end. Il proprietario del processo aziendale ha bisogno solo di conoscere gli oggetti del dominio e le relative definizioni per il loro processo.
 
 >[!NOTE]
 >
@@ -50,11 +50,11 @@ Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/f
 1. Toccare **Crea dizionario** dati.
 1. Nella schermata Proprietà, aggiungete quanto segue:
 
-   * **** Titolo: (Facoltativo) Immettere il titolo per il dizionario dati. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Alle lettere e ad altri frammenti di documento viene fatto riferimento il relativo titolo (se disponibile), ad esempio nelle miniature e nelle proprietà delle risorse. I dizionari dati sono citati con i relativi nomi e non con i titoli.
-   * **** Nome: Nome univoco per il dizionario dati. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo e i caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **Titolo:** (Facoltativo) Immettere il titolo per il dizionario dati. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Alle lettere e ad altri frammenti di documento viene fatto riferimento il relativo titolo (se disponibile), ad esempio nelle miniature e nelle proprietà delle risorse. I dizionari dati sono citati con i relativi nomi e non con i titoli.
+   * **Nome:** Nome univoco per il dizionario dati. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo e i caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
 
    * **Descrizione**: (Facoltativo) Descrizione del dizionario dati.
-   * **** Tag: (Facoltativo) Per creare un tag personalizzato, immettete un valore nel campo di testo e premete Invio. Potete visualizzare il tag sotto il campo di testo dei tag. Quando salvate questo testo, vengono creati anche i nuovi tag aggiunti.
+   * **Tag:** (Facoltativo) Per creare un tag personalizzato, immettete un valore nel campo di testo e premete Invio. Potete visualizzare il tag sotto il campo di testo dei tag. Quando salvate questo testo, vengono creati anche i nuovi tag aggiunti.
    * **Proprietà** estese: (Facoltativo) Toccate **Aggiungi campo** per specificare gli attributi di metadati per il dizionario dati. Nella colonna Nome proprietà, inserite un nome di proprietà univoco. Nella colonna Valore, immettere un valore da associare alla proprietà.
    ![Proprietà del dizionario dati specificate in tedesco](do-not-localize/1_ddproperties.png)
 
@@ -112,7 +112,7 @@ Per creare rapidamente uno o più dizionari di dati con proprietà ed elementi s
 
 1. Dall&#39;elenco dei dizionari di dati, selezionare i dizionari di dati appropriati. L’interfaccia utente presenta l’icona Copia.
 1. Tocca Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla.
-1. Toccate Incolla. Viene visualizzata la finestra di dialogo Incolla. Il sistema assegna automaticamente nomi e titoli ai nuovi dizionari dati.
+1. Toccate Incolla. Viene visualizzata la finestra di dialogo Incolla. Il sistema assegna automaticamente nomi e titoli ai nuovi dizionari di dati.
 1. Se necessario, modificare il Titolo e il Nome con cui si desidera salvare la copia del dizionario dati.
 1. Toccate Incolla. Viene creata la copia del dizionario dati. Ora puoi apportare le modifiche necessarie nel dizionario dati appena creato.
 
@@ -131,7 +131,7 @@ Durante la modifica o la visualizzazione di un dizionario dati, puoi vedere qual
 
    Insieme alle proprietà Base e Avanzate dell&#39;elemento, viene visualizzato anche il contenuto Lent.
 
-1. Toccate Contenuto di prestito.
+1. Toccate Contenuto Quarto.
 
    La scheda Contenuto prestato viene visualizzata con le seguenti opzioni: Testi, condizioni, lettere e comunicazioni interattive. Ciascuna di queste intestazioni mostra anche il numero di riferimenti all&#39;elemento selezionato.
 
@@ -190,7 +190,7 @@ Durante la modifica o la visualizzazione di un dizionario dati, puoi vedere qual
    >
    >In questo esempio, XML crea uno spazio per tre valori per un elemento di raccolta, ma il numero di valori può essere aumentato/diminuito in base al requisito.
 
-1. Dopo aver compilato le voci di dati, è possibile utilizzare questo file XML per visualizzare in anteprima una lettera con i dati di prova.
+1. Dopo aver compilato le voci di dati, è possibile utilizzare questo file XML quando si visualizza in anteprima una lettera con i dati di prova.
 
    Potete aggiungere questi dati di prova con DD (selezionate DD, toccate Carica dati di prova e caricate questo file xml)
 
@@ -333,9 +333,9 @@ Nella tabella seguente sono descritti gli attributi comuni associati a un DDE:
  </tbody> 
 </table>
 
-### Elementi dizionario dati calcolati {#computedddelements}
+### Elementi del dizionario dati calcolati {#computedddelements}
 
-Un dizionario dati può anche includere elementi calcolati. Un elemento del dizionario dati calcolato è sempre associato a un&#39;espressione. Questa espressione viene valutata per ottenere il valore di un elemento dizionario dati in fase di esecuzione. Un valore DDE calcolato è una funzione di altri valori DDE o letterali. Per impostazione predefinita, sono supportate le espressioni JSP Expression Language (EL). Le espressioni EL utilizzano i caratteri ${ } e le espressioni valide possono includere letterali, operatori, variabili (riferimenti agli elementi del dizionario dati) e chiamate di funzioni. Durante il riferimento a un elemento del dizionario dati nell&#39;espressione, viene utilizzato il nome di riferimento del DDE. Il nome di riferimento è univoco per ogni elemento del dizionario dati all&#39;interno di un dizionario dati.
+Un dizionario dati può anche includere elementi calcolati. Un elemento del dizionario dati calcolato è sempre associato a un&#39;espressione. Questa espressione viene valutata per ottenere il valore di un elemento dizionario dati in fase di esecuzione. Un valore DDE calcolato è una funzione di altri valori DDE o letterali. Per impostazione predefinita, sono supportate le espressioni JSP Expression Language (EL). Le espressioni EL utilizzano i caratteri ${ } e le espressioni valide possono includere letterali, operatori, variabili (riferimenti agli elementi del dizionario dati) e chiamate di funzioni. Quando si fa riferimento a un elemento del dizionario dati nell&#39;espressione, viene utilizzato il nome di riferimento del DDE. Il nome di riferimento è univoco per ogni elemento del dizionario dati all&#39;interno di un dizionario dati.
 
 Un DDE PersonFullName calcolato può essere associato a un&#39;espressione di concatenazione EL come ${PersonFirstName} ${PersonLastName}.
 
@@ -372,7 +372,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, dettagl
   </tr> 
   <tr> 
    <td>xs:attribute /xs:element di tipo - xs: boolean <br /> </td> 
-   <td>DDE di tipo - Boolean <br /> </td> 
+   <td>DDE di tipo - booleano <br /> </td> 
    <td>java.lang.Boolean<br /> </td> 
   </tr> 
   <tr> 
@@ -405,7 +405,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, dettagl
 
 ## Scaricare un file di dati di esempio da un dizionario dati {#download-a-sample-data-file-from-a-data-dictionary}
 
-Dopo aver creato un dizionario dati, puoi scaricarlo come file di dati di esempio XML per inserire delle voci di testo.
+Dopo aver creato un dizionario dati, è possibile scaricarlo come file di dati di esempio XML per inserire delle voci di testo.
 
 1. Nella pagina Dizionari dati, tocca **Seleziona** , quindi tocca un dizionario dati per selezionarlo.
 1. Select **Download Sample XML Data**.
@@ -424,19 +424,15 @@ Se si desidera inviare la stessa lettera in lingue diverse ai clienti, è possib
 1. Toccate **OK** nell&#39;avviso. Gestione corrispondenza scarica un file zip nel computer con il nome DataDictionary-&lt;NomeFile>.zip.
 1. Il file ZIP contiene un file .properties. Questo file definisce il dizionario dati scaricato. Il contenuto del file delle proprietà è simile al seguente:
 
-   # Wed maggio 20 16:06:23 BST 2015
-
-   DataDictionary.DipendenteDD.description=
-
-   DataDictionary.DipendenteDD.displayName=DipendenteDataDictionary
-
+   ```
+   #Wed May 20 16:06:23 BST 2015
+   DataDictionary.EmployeeDD.description=
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
    DataDictionaryElement.name.description=
-
    DataDictionaryElement.name.displayName=name
-
-   DataDictionaryElement.Person.description=
-
-   DataDictionaryElement.Persona.displayName=persona
+   DataDictionaryElement.person.description=
+   DataDictionaryElement.person.displayName=person
+   ```
 
    La struttura del file delle proprietà definisce una riga ciascuna per la descrizione e il nome visualizzato per il dizionario dati e per ciascun elemento del dizionario dati nel dizionario dati. Inoltre, il file delle proprietà definisce una riga per un valore enum impostato per ciascun elemento del dizionario dati. Come per un dizionario dati, il file delle proprietà corrispondente può avere più definizioni di elementi del dizionario dati. Inoltre, il file può contenere le definizioni per uno o più set di valori enum.
 
@@ -467,7 +463,7 @@ L&#39;Editor dizionario dati applica le seguenti convalide durante la creazione 
 * Il nome è l&#39;unico parametro richiesto per un dizionario dati.
 * Un DDE padre (composito) non può avere due figli con lo stesso nome
 * Assicurarsi che un DDE sia contrassegnato come calcolato, solo se non è un parametro obbligatorio. Non è possibile calcolare un elemento richiesto e non è possibile richiedere un elemento calcolato. Non è inoltre possibile calcolare gli elementi di raccolta e di composizione.
-* Assicurarsi che un DDE sia contrassegnato come obbligatorio, solo quando non viene calcolato. Inoltre, assicura che non sia &quot;collectionElement&quot; a indicare il tipo di Collection (ovvero gli unici elementi secondari di un elemento di raccolta).
+* Assicurarsi che un DDE sia contrassegnato come obbligatorio, solo quando non viene calcolato. Inoltre, assicura che non sia &quot;collectionElement&quot; a denotare il tipo di Collection (ovvero gli unici elementi secondari di un elemento di raccolta).
 * Le chiavi vuote o le chiavi duplicate non sono consentite nelle proprietà estese per un dizionario dati o DDE.
 * Non utilizzare i caratteri due punti (:) o barre verticali(|) all&#39;interno della chiave o del valore di una proprietà estesa. Nessuna convalida per l&#39;uso di questi caratteri proibiti.
 
@@ -491,7 +487,7 @@ Convalide applicate a livello di elemento del dizionario dati.
 * Un DDE padre composito non deve avere due elementi secondari con lo stesso nome.
 * Il sottotipo ENUM è utilizzato solo per gli elementi String e Number.
 * Impossibile calcolare gli elementi di raccolta e compositi.
-* Un DDE non può essere calcolato e richiesto.
+* Un DDE non può essere sia calcolato che richiesto.
 * I DDE calcolati devono contenere un&#39;espressione valida.
 * I DDE calcolati non devono avere binding XML.
 * Un DDE che indica il tipo per un DDE di raccolta non può essere calcolato o richiesto.
@@ -531,7 +527,7 @@ L&#39;esempio seguente mostra uno schema semplice.
 
 ### Mappatura di elementi compositi {#mapping-composite-elements}
 
-Il binding non è supportato per gli elementi compositi. Se viene fornito il binding, viene ignorato. Il binding per tutti i DDE secondari costitutivi di tipo primitivo deve essere assoluto. Consentire la mappatura assoluta per gli elementi secondari di un DDE composito offre maggiore flessibilità in termini di Binding XPath. La mappatura di un DDE composito a un elemento di tipo complesso nello schema XML limita l&#39;ambito del binding dei relativi elementi secondari.
+Il binding non è supportato per gli elementi compositi. Se viene fornito il binding, viene ignorato. Il binding per tutti i DDE secondari costitutivi di tipo primitivo deve essere assoluto. Consentire la mappatura assoluta per gli elementi secondari di un DDE composito offre maggiore flessibilità in termini di Binding XPath. La mappatura di un DDE composito a un elemento di tipo complesso nello schema XML limita l&#39;ambito del binding per i relativi elementi secondari.
 
 L&#39;esempio seguente mostra lo schema di una nota.
 
