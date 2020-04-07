@@ -66,8 +66,7 @@ Questa esercitazione illustra i passaggi necessari per integrare le immagini int
 1. **Aggiunta di un’immagine interattiva al sito Web o al sito Web in AEM**
 
    * Se utilizzate AEM Sites, AEM eCommerce o entrambi, potete aggiungere l’immagine interattiva direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
-   * 
-Se utilizzi Risorse AEM e Contenuti multimediali dinamici autonomamente, devi copiare il codice da incorporare nel tuo sito Web e quindi integrarlo con la visualizzazione rapida esistente. Consultate [Integrazione di un’immagine interattiva con il sito Web](#integrating-an-interactive-image-with-your-website).
+   * Se utilizzi Risorse AEM e Contenuti multimediali dinamici autonomamente, devi copiare il codice da incorporare nel tuo sito Web e quindi integrarlo con la visualizzazione rapida esistente. Consultate [Integrazione di un’immagine interattiva con il sito Web](#integrating-an-interactive-image-with-your-website).
    * Se utilizzate un WCM di terze parti (Web Content Manager), dovete integrare il nuovo video interattivo con l’implementazione esistente di Quickview utilizzata sul sito Web. Consultate [Integrazione di un’immagine interattiva con una visualizzazione rapida](#integrating-an-interactive-image-with-an-existing-quickview)esistente.
 
 ## (Facoltativo) Identificazione delle variabili dei punti di attivazione {#optional-identifying-hotspot-variables}
