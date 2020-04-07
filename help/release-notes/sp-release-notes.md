@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -212,7 +212,7 @@ Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nel
 
 * Dopo aver creato una pagina con un componente Contenuti multimediali dinamici durante la pubblicazione dello stesso elemento, dall’istanza di creazione in esecuzione su Contenuti multimediali dinamici - Modalità di esecuzione di Scene7, all’utente viene richiesto di pubblicare la configurazione dmscene7 (NPR-30880).
 
-* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo la modifica dei valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
+* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo che sono stati modificati i valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31306).
 
@@ -805,7 +805,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * I dati JSON ricevuti da Target hanno una serie di caratteri escape che causano l&#39;interruzione della pagina dell&#39;applicazione. NPR-28318: Hotfix per CQ-4252043
 * Non è possibile modificare alcun componente dopo l’installazione di AEM 6.4.3. NPR-28125: Hotfix per CQ-4261216
 * L&#39;eliminazione di tutti i tag per un campo tag non è persistente per un frammento di contenuto strutturato. NPR-28133: Hotfix per CQ-4247241
-* Quando modificate una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
+* Quando si modifica una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
 * La versione dei frammenti di contenuto confronta diversi miglioramenti per AEM 6.4. NPR-27764
 * Se nel modello di frammento esperienza non è definito alcun cq:allowTemplates su /content/experience-fragments e allowPaths, viene generato un errore quando il frammento esperienza viene spostato/copiato. NPR-27487: Hotfix per CQ-4257489
 * Il pulsante Crea viene visualizzato all’aggiornamento per il nuovo utente. NPR-27335: Hotfix per CQ-4255360
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni degli elementi di rilie
 * È stato aggiunto il supporto ARIA a Print (Stampa) e PrintDialog (Finestra di dialogo Stampa).
 * È stato aggiunto il supporto ARIA per la convalida dell&#39;e-mail.
 * Correzioni di backport proattivo per platform.clientlibs.
-* Prevenzione dell&#39;esecuzione automatica degli script in assenza di input nel dataType esplicito.
+* Prevenzione dell&#39;esecuzione automatica degli script in assenza di input nel dataType esplicito (risolve CVE-2015-9251).
 
 **Assets**
 
@@ -2166,7 +2166,7 @@ che copierà i nuovi predefiniti per visualizzatori nella posizione /conf.
 >AEM 6.4.8.0 include una nuova versione del [pacchetto di compatibilità di AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT). Se si utilizza una versione precedente del pacchetto di compatibilità AEM Forms e si aggiorna a AEM 6.4.8.0, installare la versione più recente del pacchetto di compatibilità AEM Forms dopo l&#39;installazione del pacchetto di componenti aggiuntivi Forms.
 
 1. Assicurati di aver installato il Service Pack di AEM.
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
@@ -2175,7 +2175,7 @@ che copierà i nuovi predefiniti per visualizzatori nella posizione /conf.
 >
 >Ignora questa sezione se non usi AEM Forms in JEE. Le correzioni apportate in JEE per AEM Forms vengono distribuite tramite un programma di installazione separato.
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Impostazioni di configurazione richieste per NPR-21268 {#configuration-settings-required-for-npr}
 
@@ -2264,7 +2264,7 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.8.0
 
 * [Note sulla versione di AEM 6.4](../release-notes/release-notes.md)
 * [Pagina del prodotto AEM](https://www.adobe.com/solutions/web-experience-management.html)
-* [Documentazione di AEM 6.4](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [Documentazione di AEM 6.4](https://helpx.adobe.com/it/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Siti con limitazioni {#restricted-sites-new}
