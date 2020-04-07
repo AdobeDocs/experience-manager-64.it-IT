@@ -31,13 +31,19 @@ Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
 1. Aprire la sovrapposizione `comment.hbs`
    * Fare doppio clic sul nodo `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Trovate le righe seguenti ed eliminatele o aggiungetele un commento:
-   `xml <aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 Eliminare le righe o circondarle con &#39;&lt;!—&#39; e &#39;—>&#39; per commentare. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo del punto in cui l&#39;avatar sarebbe stato.
-`xml <!-- do not display avatar with comment
-<aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 ## Replica della sovrapposizione {#replicate-the-overlay}
 
