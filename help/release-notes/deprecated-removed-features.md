@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
   </tr>
   <tr>
    <td>Portal Director</td> 
-   <td><p>Portal Director è una serie di funzioni che consentono di ospitare contenuti AEM tramite Portlet nei server di terze parti.</p> <p>Adobe non prevede di apportare ulteriori miglioramenti alla funzionalità di Portal Director nella posizione indicata di seguito. In AEM 6.4 Portal Director è incluso e i clienti che effettuano l’aggiornamento da versioni precedenti possono continuare a utilizzarlo così com’è. Portal Direct rimane completamente supportato anche se viene dichiarato obsoleto.</p> 
+   <td><p>Portal Director è una serie di funzioni che consentono di ospitare contenuti AEM tramite Portlet nei server di terze parti.</p> <p>Adobe non prevede di apportare ulteriori miglioramenti alla funzione Portal Director nella posizione indicata di seguito. In AEM 6.4 Portal Director è incluso e i clienti che effettuano l’aggiornamento da versioni precedenti possono continuare a utilizzarlo così com’è. Portal Direct rimane completamente supportato anche se viene dichiarato obsoleto.</p> 
     <ul> 
      <li>/libs/portale/director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
   <tr>
    <td>Forms</td> 
    <td><p>Il supporto per il servizio Adobe Central Migration Bridge è stato dichiarato obsoleto perché il prodotto Adobe Central non è più supportato.</p> </td> 
-   <td> </td> 
+   <td>Nessuna sostituzione </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td><p>Utilizzo obsoleto di JSONObject in Query e OperationOptions. Le seguenti API sono obsolete:
+   <ul><li>setArguments(argomenti JSONObject)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, argomenti JSONObject</li><li>JSONObject getArguments()</li><li>void setArguments(argomenti JSONObject)</li></ul>
+   </p> </td> 
+   <td>Utilizzare l'API IValueMap </td> 
   </tr>
   <tr>
    <td>Assets</td> 
@@ -134,7 +141,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
   <tr>
    <td>Activity Map di Analytics</td> 
    <td>Versione della Activity Map inclusa in AEM.</td> 
-   <td>In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.<br><br>È ora necessario utilizzare il plug-in <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap fornito da Adobe Analytics</a> .</td> 
+   <td>In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.<br><br>È ora necessario utilizzare il plug-in <a href="https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap fornito da Adobe Analytics</a> .</td> 
   </tr>
   <tr>
    <td>Componenti</td> 
@@ -209,12 +216,17 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
   <tr>
    <td>Forms</td> 
    <td> È stata rimossa la funzione Documenti adattivi</td> 
-   <td> Potete utilizzare la funzione di comunicazione interattiva per creare comunicazioni stampate e basate sul Web. <br/> </td> 
+   <td> Potete utilizzare la funzione di comunicazione interattiva per creare comunicazioni stampate e basate sul Web. Se utilizzate Documenti adattivi, installate il pacchetto di compatibilità per continuare a utilizzare i documenti adattivi esistenti<br/> </td> 
   </tr>
     <tr>
     <td>Forms</td> 
     <td>AEM Forms è stato rimosso sulla pagina di destinazione specifica di JEE.</td> 
     <td>La pagina di destinazione AEM Forms su JEE viene sostituita dalla pagina di destinazione AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Rimosso il supporto per Captcha predefinito</td> 
+   <td>Utilizzate il servizio reCAPTCHA di Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
