@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -32,10 +32,10 @@ Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
    * Fare doppio clic sul nodo `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Trovate le righe seguenti ed eliminatele o aggiungetele un commento:
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 Eliminare le righe o circondarle con &#39;&lt;!—&#39; e &#39;—>&#39; per commentare. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo del punto in cui l&#39;avatar sarebbe stato.
 
@@ -45,7 +45,7 @@ Eliminare le righe o circondarle con &#39;&lt;!—&#39; e &#39;—>&#39; per com
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-## Replica della sovrapposizione {#replicate-the-overlay}
+## Replicare la sovrapposizione {#replicate-the-overlay}
 
 Inviate il componente dei commenti sovrapposti all’istanza di pubblicazione utilizzando lo strumento di replica.
 
@@ -55,7 +55,7 @@ Inviate il componente dei commenti sovrapposti all’istanza di pubblicazione ut
 
 Dalla navigazione globale, selezionare **[!UICONTROL Strumenti > Distribuzione > Replica]** , quindi **[!UICONTROL Attiva albero]**.
 
-Per Percorso iniziale immettere `/apps/social/commons` e selezionare **[!UICONTROL Attiva]**.
+Per Percorso iniziale, immettete `/apps/social/commons` e selezionate **[!UICONTROL Attiva]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
