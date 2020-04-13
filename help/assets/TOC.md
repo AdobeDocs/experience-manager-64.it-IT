@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: Guida utente di AEM 6.4 Assets
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Utilizzo di risorse Adobe Stock in Risorse AEM](aem-assets-adobe-stock.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Flusso di attività nella timeline](activity-stream.md)
-   + [Applicazione dei flussi di lavoro alle risorse](assets-workflow.md)
+   + [Elabora risorse](assets-workflow.md)
    + [Aggiunta di mappe immagine](image-maps.md)
    + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
@@ -110,7 +110,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Rilevamento di risorse di tipo MIME con Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Supporto per i metadati IPTC](iptc-support.md)
-   + [Schemi di metadati](metadata-schemas.md)
+   + [Schemi metadati](metadata-schemas.md)
    + [Più tenant per raccolte, snippet e modelli di snippet](multi-tenancy.md)
    + [Inserimento di filigrane](watermarking.md)
    + [Importazione ed esportazione di metadati in massa](metadata-import-export.md)
