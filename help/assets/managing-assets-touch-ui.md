@@ -4,7 +4,7 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -878,25 +878,23 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
 **Per creare la versione** delle risorse:
 
-1. Andate alla posizione della risorsa per la quale desiderate creare una versione e toccatela per aprire la pagina della risorsa.
+1. Andate alla posizione della risorsa per la quale desiderate creare una versione e fate clic su di essa per aprire la pagina della risorsa.
 
-1. Toccate l&#39;icona Navigazione **** globale, quindi scegliete **[!UICONTROL Timeline]** dal menu.
+1. Fate clic sull&#39;icona Navigazione **** globale, quindi scegliete **[!UICONTROL Timeline]** dal menu.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Toccate l&#39;icona **[!UICONTROL Azioni]** (freccia) in basso per visualizzare le azioni disponibili che potete eseguire sulla risorsa.
+1. Fate clic su **[!UICONTROL Azioni]** in basso per visualizzare le azioni disponibili sulla risorsa.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
-
-1. Toccate **[!UICONTROL Salva come versione]** per creare una versione per la risorsa.
+1. Fate clic su **[!UICONTROL Salva come versione]** per creare una versione per la risorsa.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Aggiungete un&#39;etichetta e un commento, quindi toccate **[!UICONTROL Crea]** per creare una versione. In alternativa, toccate **[!UICONTROL Annulla]** per uscire dall&#39;operazione.
+1. Aggiungete un&#39;etichetta e un commento, quindi fate clic su **[!UICONTROL Crea]** per creare una versione. In alternativa, toccate **[!UICONTROL Annulla]** per uscire dall&#39;operazione.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Per visualizzare la nuova versione, apri l’elenco **[!UICONTROL Mostra tutti]** nella timeline dalla pagina dei dettagli della risorsa o dall’interfaccia utente Assets, quindi scegli **[!UICONTROL Versioni]**.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the [!DNL Assets] interface, and choose **[!UICONTROL Versions]**.
 
    ![version_option](assets/versions_option.png)
 
@@ -912,9 +910,9 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap **[!UICONTROL Preview Version]**.
+1. To generate a preview for the version, click **[!UICONTROL Preview Version]**.
 1. Per visualizzare questa versione nell’interfaccia utente delle risorse, seleziona **[!UICONTROL Ripristina questa versione]**.
-1. Per confrontare due versioni, andate alla pagina delle risorse e toccate la versione da confrontare con la versione corrente.
+1. Per confrontare due versioni, andate alla pagina delle risorse e fate clic sulla versione da confrontare con la versione corrente.
 
    ![Seleziona una versione precedente della risorsa da confrontare con la versione corrente](assets/select_version_tocompare.png)
 
@@ -924,30 +922,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
 ### Avviare un flusso di lavoro su una risorsa {#starting-a-workflow-on-an-asset}
 
-1. Andate alla posizione della risorsa per la quale desiderate avviare un flusso di lavoro e toccate la risorsa per aprire la pagina della risorsa.
-1. Toccate l&#39;icona Navigazione **** globale, quindi scegliete **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
-
-   ![timeline-2](assets/timeline-2.png)
-
-1. Toccate l’icona **[!UICONTROL Azioni]** (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
-
-   ![chlimage_1-48](assets/chlimage_1-48.png)
-
-1. Toccate **[!UICONTROL Avvia flusso di lavoro]** dall’elenco.
-
-   ![chlimage_1-49](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog box, select a workflow model from the list.
-
-   ![chlimage_1-50](assets/chlimage_1-50.png)
-
-1. (Facoltativo) Specificate un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
-
-   ![chlimage_1-51](assets/chlimage_1-51.png)
-
-1. Toccate **[!UICONTROL Avvia]**, quindi toccate **[!UICONTROL Procedi]** nella finestra di dialogo per confermare. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
+Consultate [Applicare un flusso di lavoro a una risorsa](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)AEM.
 
 ## Informazioni sulle raccolte {#collections}
 
