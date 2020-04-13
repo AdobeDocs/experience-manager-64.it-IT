@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * I menu a discesa **Società** e **Suite di rapporti** vengono nascosti dopo che **Origine** rapporti è stata selezionata durante la configurazione di Adobe Analytics nei servizi cloud di Experience Manager (NPR-31729).
 
 * Le proprietà di Adobe Campaign non vengono pulite quando viene effettuata la copia per lingua di una newsletter collegata ad Adobe Campaign, mentre quando una newsletter collegata a una campagna Adobe viene copiata o incollata (NPR-32540).
+
+* ReportSuitesServlet è vulnerabile all&#39;SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 
@@ -770,7 +772,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * Quando un file CSV ha un valore separato da virgole in una singola colonna, l’editor CSV AEM non esce dalla virgola e la tratta come una colonna separata. NPR-28801: Hotfix per CQ-4261694
 * Problema con l&#39;Editor schema metadati quando si utilizza il browser percorsi per selezionare i dati. NPR-28674: Hotfix per CQ-4263005
 * Troppe risorse vengono elaborate in Smart Content Service e il processo periodico di assegnazione dei tag viene completato per un periodo di tempo molto lungo. NPR-28640: Hotfix per CQ-4262661, CQ-4262644, CQ-4263234
-* Le azioni desktop non funzionano per i risultati di ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
+* Le azioni desktop non funzionano per i risultati della ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
 * L’API Assets non consente il caricamento di file > 2 GB, causando errori di caricamento. NPR-27629: Hotfix per GRANITE-23590
 * I metadati non vengono salvati nella risorsa scaricata nel primo tentativo nel caso in cui l&#39;elemento multimediale dinamico sia abilitato nell&#39;istanza. NPR-28233: Hotfix per CQ-4260759
 * Il risolutore del servizio non è chiuso nella configurazione SiteCatalyst. NPR-28015: Hotfix per CQ-4259397
