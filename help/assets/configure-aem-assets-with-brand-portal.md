@@ -3,7 +3,7 @@ title: Configurare AEM Assets con Brand Portal
 description: 'Scopri come configurare Risorse AEM con il Portale del marchio per la pubblicazione di risorse e raccolte nel Portale del marchio. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -63,7 +63,7 @@ Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza di creazi
 
 Per istruzioni dettagliate, vedete
 
-* [Note sulla versione di AEM 6.4 Service Pack](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [Note sulla versione di AEM 6.4 Service Pack](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **Se non riesci a trovare il pacchetto AEM o il Service Pack più recente, contatta il supporto** .
 
@@ -193,7 +193,7 @@ Assicurarsi di aver eseguito i seguenti passaggi:
 
 >[!CAUTION]
 >
->Create una sola configurazione IMS valida. Non creare più configurazioni IMS.
+>Create una sola configurazione IMS valida.
 >
 >Verificate che la configurazione sia sana. Nel caso in cui la configurazione non sia sana, eliminarla e creare una nuova configurazione sana.
 
@@ -278,7 +278,7 @@ Brand Portal è stato configurato correttamente con l’istanza di creazione di 
 * [Pubblicare risorse da Risorse AEM a Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Pubblicare cartelle da Risorse AEM a Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Pubblicare raccolte da Risorse AEM a Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configurare l’origine](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse in Risorse AEM.
+* [Configurare l’origine](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse in Risorse AEM.
 
 ## Aggiornamento della configurazione {#upgrade-integration-64}
 
