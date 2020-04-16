@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
 
 ---
 
@@ -25,9 +25,8 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
->
-
+>* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+> * Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
 
 
 ## Configurare e configurare l’esempio {#set-up-and-configure-the-sample}
@@ -52,12 +51,12 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 
    | **Proprietà** | **Descrizione** | **Valore** |
    |---|---|---|
-   | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsPortal.sampledataservice |
-   | Servizio metadati bozza del portale Forms | Identificatore per il servizio metadati bozza | formsPortal.samplemetadataservice |
-   | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsPortal.sampledataservice |
-   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsPortal.samplemetadataservice |
-   | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsPortal.sampledataservice |
-   | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati Firma in sospeso | formsPortal.samplemetadataservice |
+   | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsportal.sampledataservice |
+   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsportal.samplemetadataservice |
+   | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsportal.sampledataservice |
+   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
+   | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsportal.sampledataservice |
+   | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati Firma in sospeso | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -296,7 +295,7 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-L&#39;implementazione di esempio è ora configurata, che consente di elencare le bozze e gli invii durante la memorizzazione di tutti i dati e metadati in un database. Vediamo ora in che modo i servizi dati e metadati sono configurati nell’esempio.
+L&#39;implementazione di esempio è ora configurata, che consente di elencare le bozze e gli invii durante la memorizzazione di tutti i dati e metadati in un database. Vediamo ora in che modo i servizi di dati e metadati sono configurati nell’esempio.
 
 ## Installare il file mysql-Connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
@@ -312,7 +311,7 @@ Per installare il file mysql-Connector-java-5.1.39-bin.jar, eseguite i seguenti 
 1. Fate clic su **[!UICONTROL Installa o Aggiorna]**. Al termine, riavviare il server.
 1. (Solo ** Windows) Disattivare il firewall di sistema del sistema operativo in uso.
 
-## Codice di esempio per i dati del portale moduli e il servizio di metadati {#sample-code-for-forms-portal-data-and-metadata-service}
+## Codice di esempio per i dati del portale dei moduli e il servizio di metadati {#sample-code-for-forms-portal-data-and-metadata-service}
 
 Il file ZIP seguente contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMetadataServiceImpl` (classi di implementazione) per le interfacce di servizi di dati e metadati. Contiene inoltre tutte le classi necessarie per la compilazione delle suddette classi di implementazione.
 
@@ -325,7 +324,7 @@ L&#39;implementazione del database di Forms Portal utilizza una tabella di metad
 Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizzare lo script, effettuate le seguenti operazioni:
 
 1. Accedete a CRXDE e andate a /etc/clientlibs/
-1. Create un nodo di tipo **cq:ClientLibraryFolder** e fornite il nome del nodo. Ad esempio, `validation`.
+1. Create un nodo di tipo **cq:ClientLibraryFolder** e fornite il nome del nodo. Esempio, `validation`.
 
    Fate clic su **[!UICONTROL Salva tutto]**.
 
@@ -336,7 +335,7 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
     util.js
    ```
 
-   Nel codice riportato sopra, `util` è il nome della cartella e `util.js` del file nella `util` cartella. La `util` cartella e `util.js` il file vengono creati nei passaggi successivi.
+   Nel codice riportato sopra, `util` è il nome della cartella e `util.js` il nome del file nella `util` cartella. La `util` cartella e `util.js` il file vengono creati nei passaggi successivi.
 
 1. Fate clic con il pulsante destro del mouse sul `cq:ClientLibraryFolder` nodo creato al punto 2, selezionate Crea > Crea cartella. Create una cartella denominata `util`. Fate clic su **[!UICONTROL Salva tutto]**. Fate clic con il pulsante destro del mouse sulla `util` cartella e scegliete Crea > Crea file. Create un file denominato `util.js`. Fate clic su **[!UICONTROL Salva tutto]**.
 
@@ -399,13 +398,13 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
 
 1. Aggiungete la seguente proprietà alla cartella creata nel passaggio 2 e fate clic su **[!UICONTROL Salva tutto]**.
 
-   * **** Nome: category
+   * **[!UICONTROL Nome:]** category
 
-   * **** Tipo:Stringa
+   * **[!UICONTROL Tipo:]** Stringa
 
-   * **** Valore: fp.validation
+   * **[!UICONTROL Valore:]** fp.validation
 
-   * **** opzione multipla: Abilitato
+   * **[!UICONTROL opzione multipla:]** Abilitato
 
 1. Spostarsi `/libs/fd/af/runtime/clientlibs/guideRuntime`e aggiungere il `fp.validation` valore alla proprietà **embed** .
 
