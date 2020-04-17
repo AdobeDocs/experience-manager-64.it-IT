@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
    <td>In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.<br><br>È ora necessario utilizzare il plug-in <a href="https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap fornito da Adobe Analytics</a> .</td> 
   </tr>
   <tr>
-   <td>Componenti</td> 
+   <td>Componenti - Moduli</td> 
    <td>Captcha<br /> modulo (foundation/components/form/captcha)</td> 
    <td>Utilizzare invece il componente ReCaptcha di Google</td> 
   </tr>
@@ -185,11 +185,6 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
   </tr>
   <tr>
    <td>Forms</td> 
-   <td>Il supporto per il servizio AEM Captcha predefinito nei moduli adattivi è stato rimosso. </td> 
-   <td>Utilizzate invece ReCaptcha di Google.</td> 
-  </tr>
-  <tr>
-   <td>Forms</td> 
    <td>Il supporto per le immagini all'interno di frammenti di documento è stato rimosso. </td> 
    <td>Le comunicazioni interattive consentono di utilizzare direttamente le immagini nei canali Web e per la stampa.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
     <td>Forms</td> 
     <td>AEM Forms è stato rimosso sulla pagina di destinazione specifica di JEE.</td> 
     <td>La pagina di destinazione AEM Forms su JEE viene sostituita dalla pagina di destinazione AEM (/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>Forms</td> 
-   <td>Rimosso il supporto per Captcha predefinito</td> 
-   <td>Utilizzate il servizio reCAPTCHA di Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 
