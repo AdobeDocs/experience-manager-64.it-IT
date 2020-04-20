@@ -4,7 +4,7 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ Alcune limitazioni della funzione sono:
 
 ## Visualizzare le risorse {#previewing-assets}
 
-Consultate anche [Anteprima delle risorse multimediali dinamiche.](previewing-assets.md)
-
 **Per visualizzare in anteprima le risorse**:
 
 1. Dall’interfaccia utente Risorse, andate alla posizione della risorsa da visualizzare in anteprima.
@@ -331,6 +329,12 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](previewing-as
    Toccate il pulsante **[!UICONTROL Ripristina]** per ripristinare le dimensioni originali della visualizzazione.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
+>* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
+
 
 ## Modifica proprietà {#editing-properties}
 
