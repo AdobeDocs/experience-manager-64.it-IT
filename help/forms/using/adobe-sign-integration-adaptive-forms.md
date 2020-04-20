@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
 
 ---
 
@@ -30,7 +30,7 @@ Per integrare Adobe Sign con AEM Forms è necessario disporre dei seguenti eleme
 
 * Un account [sviluppatore](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)Adobe Sign attivo.
 * Un server AEM Forms abilitato [per](/help/sites-administering/ssl-by-default.md) SSL.
-* Un&#39;applicazione [API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/create_app.md)Adobe Sign.
+* Un&#39;applicazione [API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)Adobe Sign.
 * Credenziali (ID client e Segreto cliente) dell’applicazione API Adobe Sign.
 
 ## Configurare Adobe Sign con AEM Forms {#configure-adobe-sign-with-aem-forms}
@@ -74,7 +74,7 @@ Dopo aver creato i prerequisiti, effettua i seguenti passaggi per configurare Ad
 
    **na1** fa riferimento alla condivisione di database predefinita.
 
-   Potete modificare il valore per la condivisione del database. Riavviate il server per poter utilizzare il nuovo valore per la condivisione del database.
+   È possibile modificare il valore per la condivisione del database. Riavviate il server per poter utilizzare il nuovo valore per la condivisione del database.
 
 1. Specificate l&#39;ID **** client (altrimenti denominato ID applicazione) e il segreto **** client. Selezionare l&#39;opzione **[!UICONTROL Abilita Adobe Sign per gli allegati anche]** per aggiungere i file allegati a un modulo adattivo al documento Adobe Sign corrispondente inviato per la firma.
 
@@ -84,7 +84,7 @@ Dopo aver creato i prerequisiti, effettua i seguenti passaggi per configurare Ad
 
 1. Aprite la console Web di AEM. L&#39;URL è `https://[server]:[port]/system/console/configMgr`
 1. Aprire **[!UICONTROL Forms Common Configuration Service]**.
-1. Nel campo **[!UICONTROL Consenti]** , selezionare **[!UICONTROL Tutti gli utenti]** - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **[!UICONTROL Salva]**.  L’istanza Author è configurata per l’utilizzo di Adobe Sign.
+1. Nel campo **[!UICONTROL Consenti]** , selezionare **[!UICONTROL Tutti gli utenti]** - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **[!UICONTROL Salva]**. L’istanza Author è configurata per l’utilizzo di Adobe Sign.
 1. Nell’istanza [Pubblica](/help/sites-deploying/deploy.md) , effettuate l’accesso e aprite il seguente URL:
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
