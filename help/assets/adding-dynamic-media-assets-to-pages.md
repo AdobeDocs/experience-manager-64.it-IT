@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
 
 ---
 
@@ -23,7 +23,7 @@ Se utilizzi AEM come WCM, puoi aggiungere risorse multimediali dinamiche diretta
 
 >[!NOTE]
 >
->Devi pubblicare le risorse prima di aggiungerle alle pagine in AEM. See [Publishing Dynamic Media Assets](publishing-dynamicmedia-assets.md).
+>È necessario pubblicare le risorse prima di aggiungerle alle pagine in AEM. See [Publishing Dynamic Media Assets](publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -38,7 +38,7 @@ Il procedimento da usare per aggiungere un Componente elementi multimediali dina
 1. In AEM, aprite la pagina in cui desiderate aggiungere il componente Contenuti multimediali dinamici o Contenuti multimediali interattivi.
 1. Nel riquadro a sinistra, fai clic sull’icona **[!UICONTROL Componenti]** e applica il filtro per gli elementi multimediali **** dinamici. Se non è disponibile alcun componente Contenuti multimediali dinamici, è necessario abilitare i componenti Contenuti multimediali dinamici. Per ulteriori informazioni, consulta [Modifica dei modelli](/help/sites-authoring/templates.md#editing-templates-template-authors) di pagina.
 
-   ![chlimage_1-538](assets/chlimage_1-537.png)
+   ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Trascinate il componente **[!UICONTROL Contenuti multimediali]** dinamici o Contenuti multimediali **** interattivi sulla pagina nella posizione desiderata.
 1. Fate clic sulla casella blu intorno al componente, quindi toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese).
@@ -94,7 +94,7 @@ Il componente elementi multimediali dinamici consente di aggiungere immagini din
 
 È possibile anche configurare il predefinito visualizzatore, il predefinito immagine o il formato immagine direttamente nel componente. Per rendere un&#39;immagine reattiva è possibile impostare i punti di interruzione o applicare un predefinito immagine reattiva.
 
-You can edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You must edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -133,7 +133,7 @@ Usate il componente Contenuti multimediali dinamici per aggiungere video dinamic
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Il componente Contenuti multimediali interattivi è elegante e offre diverse opz
 
 * **[!UICONTROL Mostra modulo]** prodotto Per impostazione predefinita, questo valore non è selezionato. Il Modulo del prodotto include tutte le varianti del prodotto, come la dimensione e il colore. Rimuovi il segno di spunta per non visualizzare le varianti prodotto.
 
-### Componente Panoramico {#panoramic-media-component}
+### Componente per contenuti multimediali panoramici {#panoramic-media-component}
 
 Il componente Contenuti multimediali panoramici è destinato alle risorse che sono immagini panoramiche sferiche. Tali immagini forniscono un&#39;esperienza di visualizzazione a 360° di una stanza, una proprietà, una posizione o un paesaggio. Affinché un’immagine possa essere definita come panorama sferico, deve avere una O entrambe le caratteristiche seguenti:
 
