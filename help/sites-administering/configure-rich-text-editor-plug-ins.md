@@ -3,7 +3,7 @@ title: Configurare i plug-in Editor Rich Text
 description: Scoprite come configurare i plug-in Editor di testo RTF di AEM per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -249,7 +249,7 @@ Esempio di una `htmlPasteRules` struttura valida:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Esempio:
+Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Ad esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -321,7 +321,7 @@ L’Editor Rich Text utilizza un elemento DOM contenitore con un ID `CQrte` che 
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente.; ad esempio, `cssClass` anziché `.cssClass`)
+   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente.; for example, `cssClass` instead of `.cssClass`)
 
 1. Aggiungere la proprietà `text` allo stesso nodo; definisce il testo visualizzato nella casella di selezione:
 
@@ -572,20 +572,18 @@ Se specificate sia il CSS che la stringa Stile nel codice, la classe CSS ha la p
 Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Text utilizza i dizionari per ciascuna lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito Web, ottenendo la proprietà language della struttura ad albero secondaria o estraendo la lingua dall’URL; ad esempio. il `/en/` ramo è controllato come inglese, il `/de/` ramo come tedesco.
 
 >[!NOTE]
-Messaggio &quot;Controllo ortografia non riuscito&quot;. viene visualizzato se viene provato un controllo per una lingua non installata.
+Il messaggio `Spell checking failed` viene visualizzato se viene eseguito un controllo per una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
 
-Un’installazione standard di AEM include dizionari per:
+Un’installazione standard di AEM include i dizionari per inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, procedere come segue.
 
-* Inglese americano (en_us)
-* Inglese britannico (en_gb)
+1. Passate alla pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
->[!NOTE]
-I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
+1. Per trovare un dizionario della lingua desiderata, effettuate una delle seguenti operazioni:
 
-Per aggiungere altri dizionari, se necessario, procedere come segue.
+   * Cerca dizionario di tua scelta di lingua. Nella pagina del dizionario, individuate il collegamento alla pagina Web dell&#39;origine o dell&#39;autore originale. Individuare i file dizionario per v2.x su una pagina di questo tipo.
+   * Cercate i file dizionario v2.x all&#39;indirizzo [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Passate alla pagina [http://download.services.openoffice.org/contrib/dictionaries/](http://download.services.openoffice.org/contrib/dictionaries/).
-1. Selezionate la lingua desiderata e scaricate il file ZIP con le definizioni di ortografia. Estrarre il contenuto dell&#39;archivio nel file system.
+1. Scaricate l&#39;archivio con le definizioni dell&#39;ortografia. Estrarre il contenuto dell&#39;archivio nel file system.
 
    >[!CAUTION]
    Sono supportati solo i dizionari nel `MySpell` formato per OpenOffice.org v2.0.1 o versioni precedenti. Poiché i dizionari ora sono file di archivio, si consiglia di verificare l&#39;archivio dopo il download.
@@ -594,9 +592,8 @@ Per aggiungere altri dizionari, se necessario, procedere come segue.
 1. Caricate i file .aff e .dic nella directory archivio `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Il controllo ortografia RTE è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo.
-Per eseguire il controllo ortografia, toccate o fate clic sul pulsante Controllo ortografia nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole e evidenzia le parole con errori di ortografia.
-Se si incorporano modifiche suggerite dal controllo ortografia, lo stato del testo cambia e le parole con errori di ortografia non vengono più evidenziate. Per eseguire il controllo ortografia, toccate o fate di nuovo clic sul pulsante Controllo ortografia.
+Il controllo ortografia RTE è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo. Per eseguire il controllo ortografia, fare clic su [!UICONTROL Controllo ortografia] nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
+Se si incorporano modifiche suggerite dal controllo ortografia, lo stato delle modifiche di testo e delle parole errate non vengono più evidenziati. Per eseguire il controllo ortografia, toccate o fate di nuovo clic sul pulsante Controllo ortografia.
 
 ## Configurare la dimensione della cronologia per le azioni di annullamento e ripristino {#undohistory}
 
@@ -693,12 +690,12 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
       * **Nome** `cssInternal`
       * **Tipo** `String`
-      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; ad esempio, `cssClass` anziché `.cssClass`)
+      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; for example, `cssClass` instead of `.cssClass`)
    * Stile CSS per collegamenti esterni
 
       * **Nome** `cssExternal`
       * **Tipo** `String`
-      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; ad esempio, `cssClass` anziché `.cssClass`)
+      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; for example, `cssClass` instead of `.cssClass`)
    * Array di **protocolli** validi (tra cui https://, https:// file://, mailto:, ecc.)
 
       * **Nome** `protocols`
