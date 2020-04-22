@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Lo `start` script è disponibile *nella directory &lt;cq-install>/bin* . Sono disponibili entrambe le versioni Unix e Windows. Lo script avvia l&#39;istanza installata nella directory *&lt;cq-install>* .
 
-Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e ottimizzare l’istanza di AEM.
+Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e sintonizzare l’istanza di AEM.
 
 <table> 
  <tbody> 
@@ -91,7 +91,7 @@ Per arrestare AEM, effettuate una delle seguenti operazioni:
 * A seconda della piattaforma in uso:
 
    * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
-   * Se avete utilizzato lo script start in UNIX, dovete utilizzare lo script stop per arrestare AEM.
+   * Se è stato utilizzato lo script start in UNIX, è necessario utilizzare lo script stop per arrestare AEM.
 
 * Se AEM è stato avviato facendo doppio clic sul file JAR, fate clic sul pulsante **Attivato** nella finestra di avvio (il pulsante diventa **Disattivato**) per arrestare il server.
 
@@ -122,4 +122,3 @@ Per preconfigurare la directory archivio (senza rimuoverla) è sufficiente:
 * creare `bootstrap.properties` e definire `repository.config`
 
 Di nuovo, prima di avviare l&#39;installazione effettiva.
-
