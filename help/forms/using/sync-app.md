@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,6 +44,5 @@ Toccate il pulsante Sincronizza ![sincronizzazione-app](assets/sync-app.png) nel
 * La logica principale per l&#39;invio dei dati dell&#39;app offline al server AEM Forms è inclusa in runtime/offline/util/offline.js.
 * In .js, la chiamata alla funzione processOfflineSubsentSavedTasks(...) invia al server le attività salvate/inviate. Vengono inoltre gestiti eventuali errori o conflitti nel processo di sincronizzazione. Se l&#39;invio di un&#39;attività non riesce, l&#39;attività nell&#39;app viene contrassegnata come non riuscita. Inoltre, l&#39;attività rimane nella casella in uscita.
 * Le funzioni syncSubsentTask() e syncSavedTask() eseguono operazioni su singole attività.
-* La chiamata alla funzione processOfflineSubsentSavedTasks() viene avviata dal componente Elenco attività dopo che un utente ha selezionato la sincronizzazione dello stato offline con il server o una sincronizzazione automatica dal thread in background.
+* La chiamata alla funzione processOfflineSubsentSavedTasks() viene avviata dal componente Elenco attività dopo che l&#39;utente ha selezionato la sincronizzazione dello stato offline con il server o una sincronizzazione automatica dal thread in background.
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
