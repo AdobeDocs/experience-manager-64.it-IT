@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -88,6 +88,5 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
 1. Fai clic su **[!UICONTROL Salva tutto]**, cancella la cache e aggiorna l&#39;area di lavoro di AEM Forms.
 
-   Accedete all’URL `https://[server]:[port]/lc/ws` e accedete con le credenziali di amministratore/password. Il browser si reindirizzerà a `https://[server]:[port]/lc/apps/ws/index.html`.
+   Accedete all’URL `https://[server]:[port]/lc/ws` ed effettuate l’accesso con le credenziali di amministratore/password. Il browser si reindirizzerà a `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
