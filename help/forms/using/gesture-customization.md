@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -67,8 +67,7 @@ Nell&#39;app AEM Forms, lo scorrimento a sinistra apre una nuova attività o un 
 
 
 1. Salvate e chiudete il `task.js` file.
-1. Create ed eseguite l&#39;app AEM Forms. Ora è possibile aprire un&#39;applicazione con il dito sinistro e il passaggio del dito destro.
+1. Create ed eseguite l&#39;app AEM Forms. Ora è possibile aprire un’interfaccia con il passaggio del dito verso sinistra e il passaggio del dito verso destra.
 
 Allo stesso modo, potete apportare modifiche in altre viste per diverse combinazioni di gesti, elementi HTML e funzioni.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
