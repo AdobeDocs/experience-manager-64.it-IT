@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -84,7 +84,7 @@ Un&#39;applicazione HTML esistente può sfruttare l&#39;API FormBridge per inter
 
 1. **Accesso ai campi modulo dalla pagina**
 
-   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare i valori in un campo modulo.
+   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare i valori in un campo del modulo.
 
    Ad esempio, se si desidera impostare il **NomeDipendente** utilizzando i valori in Nome **campo e** Cognome **, chiamare la funzione** window.formBridge.setFieldValue **** .
 
@@ -101,4 +101,3 @@ Un&#39;applicazione HTML esistente può sfruttare l&#39;API FormBridge per inter
            });
    ```
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
