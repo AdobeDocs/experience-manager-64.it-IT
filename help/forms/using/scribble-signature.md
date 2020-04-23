@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -62,9 +62,9 @@ Dopo aver aggiunto il campo Firma scarabocchio al modulo ed eseguito il renderin
 
 ![geolocalizzazione](assets/geolocation.png)
 
-******** A. Pennello **B. Gomma** C.**Geolocalizzazione** D. Informazioni sulla geolocalizzazione
+**A.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni sulla geolocalizzazione
 
-### Geotagging {#geo-tagging}
+### Geo-tagging {#geo-tagging}
 
 Facendo clic sull&#39;icona di geolocalizzazione durante la creazione dello script, le informazioni relative alla posizione geografica e all&#39;ora vengono incorporate nel campo.
 
@@ -84,7 +84,7 @@ Quando si utilizza questa funzione, un utente può fare clic sull&#39;icona **Go
 
 ### Salvataggio di una firma {#saving-a-signature}
 
-Facendo clic sull&#39;icona **OK** lo script viene salvato come immagine nel campo. L’immagine e i valori possono essere inviati al server per un’ulteriore elaborazione. Dopo aver fatto clic su **OK**, il campo dello script viene bloccato. Non è possibile modificare nuovamente la firma utilizzando il widget degli script.
+Facendo clic sull&#39;icona **OK** lo script viene salvato come immagine nel campo. L’immagine e i valori possono essere inviati al server per un’ulteriore elaborazione. Dopo aver fatto clic su **OK**, il campo dello script viene bloccato. La firma non può essere modificata di nuovo utilizzando il widget degli script.
 
 Toccando o facendo clic sul campo scarabocchio si apre la finestra di dialogo in modalità di sola lettura.
 
@@ -100,5 +100,3 @@ Per eliminare le firme dal modulo:
 
 * (Dispositivi mobili) Tenete premuto il campo firma e, nella finestra di dialogo di conferma, toccate **Sì**.
 * (Desktop) Passa il mouse sul campo firma, fai clic sull’icona **Annulla** e, nella finestra di dialogo di conferma, fai clic su **Sì**.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
