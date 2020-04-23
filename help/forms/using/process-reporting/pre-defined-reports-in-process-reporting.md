@@ -1,6 +1,6 @@
 ---
-title: Report predefiniti in Process Reporting
-seo-title: Report predefiniti in Process Reporting
+title: Rapporti predefiniti in Process Reporting
+seo-title: Rapporti predefiniti in Process Reporting
 description: Query per AEM Forms su dati del processo JEE per creare rapporti su processi in esecuzione a lungo termine, durata del processo e volume del flusso di lavoro
 seo-description: Query per AEM Forms su dati del processo JEE per creare rapporti su processi in esecuzione a lungo termine, durata del processo e volume del flusso di lavoro
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
@@ -9,18 +9,18 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: ec74a1c3b1d3686a1f5216e06dfc33dc1dccfb2f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Report predefiniti in Process Reporting {#pre-defined-reports-in-process-reporting}
+# Rapporti predefiniti in Process Reporting {#pre-defined-reports-in-process-reporting}
 
 AEM Forms Process Reporting viene fornito con i seguenti rapporti *out-of-the-box* :
 
 * **[Processi](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**Di Lunga Durata: Report di tutti i processi AEM Forms che richiedono più di un tempo specificato per il completamento
 
-* **[Grafico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**durata processo: Report relativo a un determinato processo di AEM Forms per durata
+* **[Grafico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**durata processo: Report relativo a un determinato processo in base alla durata di un modulo AEM Forms
 
 * **[Volume](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**flusso di lavoro: Report delle istanze in esecuzione e completate del processo specificato per data
 
@@ -47,7 +47,7 @@ Il rapporto Processi con esecuzione prolungata visualizza i processi AEM Forms c
 
 1. Fate clic su **Vai** per eseguire il rapporto.
 
-   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra **Process Reporting (Generazione rapporti** processo).
+   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra **Process Reporting** (Generazione rapporti sui processi).
 
    ![long_run_process](assets/long_running_processes.png)
 
@@ -107,7 +107,7 @@ Il rapporto Volume flusso di lavoro visualizza il numero di istanze attualmente 
 
    * **Seleziona processo**(*obbligatorio*): Selezionare un processo AEM Forms.
    * **Avviato dopo** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo iniziate dopo la data specificata.
-   * **Avviato prima** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo avviate prima della data specificata.
+   * **Avviato prima** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo iniziate prima della data specificata.
 
 1. Fate clic su **Vai** per eseguire il rapporto.
 
@@ -121,4 +121,3 @@ Il rapporto Volume flusso di lavoro visualizza il numero di istanze attualmente 
    * **Cambia colore** legenda: Seleziona e modifica il colore della legenda del rapporto
    * **Esporta in CSV**: Esportare e scaricare i dati dal rapporto in un file separato da virgole
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
