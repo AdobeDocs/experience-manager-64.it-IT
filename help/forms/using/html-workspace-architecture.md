@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,9 +30,7 @@ Il server AEM Forms accede al database AEM Forms tramite JDBC. Il database persi
 
 L&#39;area di lavoro AEM Forms è stata progettata per includere componenti JavaScript™ modulari che possono essere personalizzati e riutilizzati in altre applicazioni Web. I componenti sono basati su BackBone, una libreria JavaScript che fornisce struttura alle applicazioni Web. Un articolo dettagliato che descrive l&#39;interazione dei componenti con BackBone è disponibile [qui](/help/forms/using/backbone-interaction.md). L’organizzazione dei componenti nella struttura di cartelle CRX è descritta in [questo](/help/forms/using/folder-structure.md) articolo.
 
-Pacchetti consegnati per l&#39;area di lavoro di AEM Forms:
+Pacchetti consegnati per l&#39;area di lavoro Moduli AEM:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: È un pacchetto CRX, ovvero può essere distribuito in CRX utilizzando Package Manager.
-* `adobe-lc-workspace-<version>-src.zip`: Si tratta di un archivio che contiene il codice completo dell&#39;area di lavoro e degli script di AEM Forms per creare i pacchetti di distribuzione: spedizione, debug e sviluppo.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
+* `adobe-lc-workspace-<version>-src.zip`: Si tratta di un archivio che contiene il codice completo dell&#39;area di lavoro e degli script di AEM Forms per creare i pacchetti di distribuzione, ovvero i pacchetti Spedizione, Debug e Sviluppo.
