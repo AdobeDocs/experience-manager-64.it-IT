@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -69,7 +69,7 @@ Nell’elenco delle istanze di processo, per ogni istanza di processo l’area d
 
 Per visualizzare la `description` proprietà dell&#39;istanza di processo nella scheda dell&#39;istanza di processo, eseguire le operazioni seguenti.
 
-1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
+1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 1. Effettua le seguenti operazioni:
 
    1. Copiate /libs/ws/js/runtime/templates/processinstance.htmlà/apps/ws/js/runtime/templates/, se non esiste. Fate clic su **Salva tutto**.
@@ -94,5 +94,3 @@ Per visualizzare la `description` proprietà dell&#39;istanza di processo nella 
        padding : 2px;
    }
    ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
