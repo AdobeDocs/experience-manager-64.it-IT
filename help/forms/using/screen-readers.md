@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,5 +43,3 @@ I moduli HTML5 supportano tutti i tasti e i gesti predefiniti di Voice over. Per
 * **(Solo Internal Explorer 9)** Il controllo del selettore data nei moduli HTML5 non è completamente accessibile tramite tastiera. Nel controllo Selettore data, se si premono più volte i tasti Su/Giù, il controllo Selettore data si chiude e lo stato attivo si sposta sul campo Successivo/Ultimo.
 
 * VoiceOver non è in grado di rilevare i tasti freccia sul widget data sul Safari iPad.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
