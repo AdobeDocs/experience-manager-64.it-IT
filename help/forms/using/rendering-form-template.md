@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,7 +22,7 @@ I moduli HTML5 hanno la nozione di **profili** esposti come endpoint REST per ab
 
 https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente il modulo xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
 
-Ad esempio: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
+Esempio, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
 Per un profilo personalizzato, l&#39;endpoint cambia di conseguenza. Ad esempio, il punto finale per il profilo personalizzato con le maschere del nome è:
 
@@ -70,16 +70,14 @@ I parametri di richiesta supportati durante il rendering del modulo come HTML so
 
 ### Passaggio del parametro di rendering {#passing-the-render-parameter}
 
-I moduli HTML5 supportano tre metodi per passare i parametri di rendering. Puoi trasmettere i parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo profilo. Il parametro Richiesta URL ha la precedenza minore.
+I moduli HTML5 supportano tre metodi per passare i parametri di rendering. Puoi trasmettere i parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo del profilo. Il parametro Richiesta URL ha la precedenza minore.
 
 * **Parametri** di richiesta URL: Potete specificare i parametri di rendering nell’URL. Nei parametri della richiesta URL, i parametri sono visibili all’utente finale. Ad esempio, il seguente URL di invio contiene il parametro di modello nell’URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
-* **Parametri** della richiesta SetAttribute: Potete specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP a JSP per il rendering del profilo di modulo HTML5 e utilizzare *setAttribute* su un oggetto richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza maggiore.
+* **Parametri** della richiesta SetAttribute: Potete specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP a JSP per il rendering del profilo di modulo HTML5 e utilizzare *setAttribute* su un oggetto richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
 
-* **** Parametri di richiesta nodo profilo: Potete specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo del profilo, i parametri non sono visibili all&#39;utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare i parametri come proprietà del nodo, utilizzare CRXDE lite.
+* **Parametri di richiesta nodo profilo:** Potete specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo del profilo, i parametri non sono visibili all&#39;utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare i parametri come proprietà del nodo, utilizzare CRXDE lite.
 
 ### Invia parametri {#submit-parameters}
 
 I moduli HTML5 inviano dati; eseguire script sul lato server e servizi Web sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script sul lato server e servizi Web sui server AEM, consultate Proxy [di servizio moduli](/help/forms/using/service-proxy.md)HTML5.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
