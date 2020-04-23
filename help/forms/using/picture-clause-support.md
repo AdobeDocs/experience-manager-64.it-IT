@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -109,7 +109,7 @@ Le espressioni supportate per la clausola Immagine numerica in **HTML Forms** so
 * num.integer{}
 * num.decimal{}
 * num.currency{}
-* num.percentuale{}
+* num.percent{}
 * num{Simboli di clausola illustrazione numerica}
 
 <table> 
@@ -156,11 +156,11 @@ Le espressioni supportate per la clausola Immagine numerica in **HTML Forms** so
   </tr>
   <tr>
    <td>v</td> 
-   <td>Radice decimale delle impostazioni internazionali prevalenti. Consentire la radice decimale di essere implicita nell'analisi dell'input e nella formattazione dell'output.</td> 
+   <td>Radice decimale delle impostazioni internazionali prevalenti. Consentire la radice decimale di essere implicita durante l'analisi dell'input e la formattazione dell'output.</td> 
    <td><br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td> "merge_preserve".</td> 
+   <td>.</td> 
    <td>Radice decimale delle impostazioni internazionali prevalenti.</td> 
    <td><br type="_moz" /> </td> 
   </tr>
@@ -211,4 +211,3 @@ I moduli HTML5 supportano le seguenti espressioni della clausola Text Picture:
 | 0 (zero) | Singolo carattere alfanumerico. |
 | 9 | Singola cifra. |
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
