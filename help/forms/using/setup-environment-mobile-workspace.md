@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,5 +43,3 @@ Per creare e implementare l’app AEM Forms sono necessari hardware, software e 
 >[!NOTE]
 >
 >adobe-lc-mobileworkspace-src.zip contiene PhoneGap SDK 5.0. Accertatevi che PhoneGap SDK non sia preinstallato.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
