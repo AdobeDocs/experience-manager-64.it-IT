@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -52,25 +52,25 @@ Le seguenti API vengono utilizzate nell&#39;area di lavoro di AEM Forms.
   </tr>
   <tr>
    <td>getRootEndpointCategories</td> 
-   <td>ProcessManagementStartService</td> 
+   <td>ProcessManagementInitipointService</td> 
    <td>getRootEndpointCategories</td> 
    <td>Recupera tutte le categorie principali presenti sul server.</td> 
   </tr>
   <tr>
    <td>getDirectChildCategories</td> 
-   <td>ProcessManagementStartService</td> 
+   <td>ProcessManagementInitipointService</td> 
    <td>getDirectChildCategories2</td> 
    <td>Recupera tutti gli elementi figlio diretti per una categoria.</td> 
   </tr>
   <tr>
    <td>getAllInitipoints</td> 
-   <td>ProcessManagementStartService</td> 
+   <td>ProcessManagementInitipointService</td> 
    <td>getAllInitipoints</td> 
    <td>Recupera tutti i punti di avvio presenti sul server in tutte le categorie.</td> 
   </tr>
   <tr>
    <td>invokeStartPoint</td> 
-   <td>ProcessManagementStartService</td> 
+   <td>ProcessManagementInitipointService</td> 
    <td>invokeStartPoint</td> 
    <td>Viene richiamato un punto di inizio e viene creata una nuova attività corrispondente a un punto di partenza</td> 
   </tr>
@@ -246,7 +246,7 @@ Le seguenti API vengono utilizzate nell&#39;area di lavoro di AEM Forms.
    <td>saveOutOfOfficeSettingsJson</td> 
    <td>ProcessManagementOutOfOfficeService</td> 
    <td>saveOutOfOfficeSettingsJson</td> 
-   <td>Consente di risparmiare le impostazioni di un utente.</td> 
+   <td>Consente di risparmiare le impostazioni di un utente fuori sede.</td> 
   </tr>
   <tr>
    <td>getAllProcesses</td> 
@@ -312,7 +312,7 @@ Le seguenti API vengono utilizzate nell&#39;area di lavoro di AEM Forms.
    <td>deleteAttachment </td> 
    <td>TaskManagerService</td> 
    <td>deleteAttachment</td> 
-   <td>Elimina un allegato.</td> 
+   <td>Consente di eliminare un allegato.</td> 
   </tr>
   <tr>
    <td>initialize</td> 
@@ -401,5 +401,5 @@ Le seguenti API vengono utilizzate nell&#39;area di lavoro di AEM Forms.
  </tbody>
 </table>
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+
 
