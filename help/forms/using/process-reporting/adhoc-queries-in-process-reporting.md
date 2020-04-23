@@ -9,14 +9,14 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Query ad hoc in Process Reporting {#ad-hoc-queries-in-process-reporting}
 
-Query ad hoc in Process Reporting (Generazione di rapporti di processo) consentono di creare query personalizzate da utilizzare per cercare i dettagli di processo e attività relativi alle istanze di processo definite nell&#39;ambiente AEM Forms.
+Query ad hoc in Process Reporting (Generazione di rapporti di processo) consentono di creare query personalizzate da utilizzare per cercare i dettagli di processo e attività relativi alle istanze di processo definite in AEM Forms nell&#39;ambiente AEM Forms.
 
 È inoltre possibile definire query ad hoc utilizzando i filtri di proprietà processo e attività. Questi filtri possono quindi essere salvati e utilizzati per eseguire i report in un secondo momento.
 
@@ -24,7 +24,7 @@ Query ad hoc in Process Reporting (Generazione di rapporti di processo) consento
 
 [**Dettagli **](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p)processo: Visualizzare i dettagli di un&#39;istanza di processo specificando l&#39;ID del processo.
 
-**Ricerca** attività: Cercare le istanze delle attività con un filtro di ricerca definito dall&#39;utente basato sugli attributi delle attività.
+**Ricerca** attività: Cercare le istanze di attività con un filtro di ricerca definito dall&#39;utente basato sugli attributi dell&#39;attività.
 
 **Dettagli** attività: Visualizzare i dettagli di un&#39;istanza di attività specificando l&#39;ID attività.
 
@@ -38,7 +38,7 @@ In questo articolo vengono descritte le sezioni Processo/Ricerca attività e Det
 
 ## Ricerca processo/attività {#process-task-search}
 
-È possibile utilizzare Process/Task Search per definire i filtri per la query delle istanze di processi/attività.
+È possibile utilizzare Process/Task Search per definire i filtri per l&#39;esecuzione di query sulle istanze di processi/attività.
 
 ### Per creare una query di ricerca di processo/attività {#to-create-a-process-task-search-query}
 
@@ -95,7 +95,7 @@ Dopo aver creato una query, utilizzate le opzioni nell’angolo superiore destro
 
 * **Esegui**: Esegui la query corrente per visualizzare e/o verificare i risultati. In questo caso, non è necessario salvare la query prima di eseguire la query. È possibile verificare i risultati, apportare modifiche se necessario, quindi salvare la query quando si è soddisfatti dell&#39;output.
 
-* **Salva**:Salvate il filtro. Il filtro può essere visualizzato ed eseguito dal pannello **Filtri** personali.
+* **Salva**: Salvate il filtro. Il filtro può quindi essere visualizzato ed eseguito dal pannello **Filtri** personali.
 
 ### Opzioni nel pannello Filtri personali {#options-in-my-filters-panel}
 
@@ -156,7 +156,7 @@ Utilizzate le opzioni nel pannello **Filtri** personali per **aggiungere** ![lc_
 
 ## Dettagli processo/attività {#process-task-details}
 
-Il pannello Dettagli **** processo consente di visualizzare i dettagli di un processo specifico.
+Potete usare il pannello Dettagli **** processo per visualizzare i dettagli di un processo specifico.
 
 Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visualizzare i dettagli di una specifica attività.
 
@@ -187,7 +187,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
 
    ![process_details](assets/process_details.png)
 
-   **** Pannello sinistro: Visualizza i seguenti dettagli del processo selezionato:
+   **Pannello sinistro:** Visualizza i seguenti dettagli del processo selezionato:
 
    * Nome del processo
    * Ora data creazione processo
@@ -195,7 +195,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Durata processo
    * Stato processo
    * Iniziatore processo
-   **** Pannello superiore destro: Visualizza i dettagli seguenti delle attività che compongono il processo selezionato:
+   **Pannello superiore destro:** Visualizza i dettagli seguenti delle attività che compongono il processo selezionato:
 
    * ID attività
    * Nome attività
@@ -205,7 +205,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Ora completamento attività
    * Durata attività
    * Stato attività
-   **** Pannello inferiore destro: Visualizza i seguenti dettagli della cronologia del processo selezionato:
+   **Pannello inferiore destro:** Visualizza i seguenti dettagli della cronologia del processo selezionato:
 
    * Nome processo
    * Iniziatore processo
@@ -216,7 +216,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
 
    ![task_details](assets/task_details.png)
 
-   **** Pannello sinistro: Visualizza i dettagli seguenti dell&#39;attività selezionata:
+   **Pannello sinistro:** Visualizza i dettagli seguenti dell&#39;attività selezionata:
 
    * Nome attività
    * ID processo a cui appartiene l&#39;attività
@@ -226,13 +226,13 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Durata attività
    * Stato attività
    * Ciclo di attività selezionato
-   **** Pannello superiore destro: Visualizza i dettagli seguenti dei moduli che compongono l&#39;attività selezionata:
+   **Pannello superiore destro:** Visualizza i dettagli seguenti dei moduli che compongono l&#39;attività selezionata:
 
    * ID modulo
    * Ora data creazione modulo
    * Ora data aggiornamento modulo
    * URL modello modulo
-   **** Pannello inferiore destro: Visualizza i dettagli seguenti della cronologia del processo dell&#39;attività selezionata:
+   **Pannello inferiore destro:** Visualizza i dettagli seguenti della cronologia del processo dell&#39;attività selezionata:
 
    * Tipo assegnazione task
    * Proprietario attività
@@ -260,10 +260,10 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
 
    ![process_details-1](assets/process_details-1.png)
 
-   I campi del risultato della query **Processo/Dettagli** attività sono campi specifici di un processo/attività AEM Forms.
+   I campi del risultato della query Dettagli **** processo/attività sono campi specifici di un processo/attività di AEM Forms.
 
    Per un processo, il risultato della query visualizza i dettagli delle attività contenute nel processo.
 
    Per un&#39;attività, il risultato della query visualizza i dettagli dei moduli contenuti nell&#39;attività.
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+
