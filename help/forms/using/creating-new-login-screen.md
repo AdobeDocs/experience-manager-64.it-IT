@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Creazione di una nuova schermata di login {#creating-a-new-login-screen}
 
-Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
+È possibile modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
 
 ## Prerequisito {#prerequisite}
 
@@ -37,21 +37,21 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
 
 1. Copiate la `i18n` cartella:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. Eliminate tutte le cartelle all&#39;interno `i18n` tranne una, ad esempio `en`.
 1. Nella cartella `en`, effettuate le seguenti operazioni:
 
-   1. Rinominare la cartella con il nome delle impostazioni internazionali da supportare. Ad esempio, `ar`.
+   1. Rinominare la cartella con il nome delle impostazioni internazionali da supportare. Esempio, `ar`.
    1. Modificate il valore della proprietà `jcr:language` in `ar`(per la `ar` cartella).
    >[!NOTE]
    >
-   >Se l&#39;impostazione internazionale è una combinazione di codice paese lingua, ad esempio, `ar-DZ`modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
+   >Se l&#39;impostazione internazionale è una combinazione di codice paese lingua, ad esempio `ar-DZ`, modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
 
 1. Copia `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. Modificate il frammento di codice seguente per `/apps/livecycle/core/components/login/login.jsp`:
@@ -180,7 +180,7 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
 
 1. Copia `i18n` cartella:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. A questo punto, modificate il valore della proprietà `sling:message` del nodo (nella cartella del codice lingua desiderata) per il quale desiderate modificare il testo. La conversione viene eseguita tramite la chiave indicata nel valore della `sling:key` proprietà del nodo.
@@ -189,7 +189,7 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
    1. Creare un nodo di tipo `sling:MessageEntry`, o copiare un nodo esistente e rinominarlo, in tutte le cartelle delle impostazioni internazionali.
    1. Copia `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * da `/libs/livecycle/core/components/login`
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
    ![capture](assets/capture.png)
@@ -215,7 +215,7 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * da `/libs/livecycle/core/content`
    * a `/apps/livecycle/core/content`
 
 1. Eliminare file `login.js` e `jquery-1.8.0.min.js`, dal nodo `/apps/livecycle/core/content/login.`
@@ -225,7 +225,7 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
    1. Aggiungi nuovi stili a `/apps/livecycle/core/content/login/login.css`
    1. Copia `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * da `/libs/livecycle/core/components/login`
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
 
@@ -288,5 +288,3 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
    
    <div class="newLginContainerBkg">
    ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
