@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -20,11 +20,11 @@ I moduli (moduli adattivi e moduli HTML5) utilizzano le librerie [jQuery](https:
 
 Questo articolo è destinato agli sviluppatori che dispongono di conoscenze sufficienti sui widget jQuery e jQuery. Fornisce informazioni approfondite sul framework di aspetto e consente agli sviluppatori di creare un aspetto alternativo per un campo modulo.
 
-Il framework dell&#39;aspetto si basa su varie opzioni, eventi (attivatori) e funzioni per acquisire le interazioni dell&#39;utente con il modulo e risponde alle modifiche del modello per informare l&#39;utente finale. Inoltre:
+Il framework dell&#39;aspetto si basa su varie opzioni, eventi (attivatori) e funzioni per acquisire le interazioni dell&#39;utente con il modulo e risponde alle modifiche apportate al modello per informare l&#39;utente finale. Inoltre:
 
 * Il framework fornisce una serie di opzioni per l&#39;aspetto di un campo. Queste opzioni sono coppie chiave-valore e sono suddivise in due categorie: opzioni comuni e opzioni specifiche per il tipo di campo.
 * L&#39;aspetto, come parte del contratto, attiva un set di eventi come enter ed exit.
-* L&#39;aspetto è necessario per implementare un set di funzioni. Alcune delle funzioni sono comuni, altre specifiche per le funzioni dei tipi di campo.
+* L&#39;aspetto è necessario per implementare un set di funzioni. Alcune delle funzioni sono comuni, mentre altre sono specifiche per le funzioni dei tipi di campo.
 
 ## Opzioni comuni {#common-options}
 
@@ -78,7 +78,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
   </tr>
   <tr>
    <td>dir</td> 
-   <td>Direzione del testo. I valori possibili sono ltr (da sinistra a destra) e rtl (da destra a sinistra).</td> 
+   <td>La direzione del testo. I valori possibili sono ltr (da sinistra a destra) e rtl (da destra a sinistra).</td> 
   </tr>
  </tbody>
 </table>
@@ -186,7 +186,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
   </tr>
   <tr>
    <td>items<br /> </td> 
-   <td>Array di oggetti da visualizzare come opzioni. <br /> Ciascun oggetto contiene due proprietà:<br /> salvare: per salvare, visualizzare: da visualizzare. <br /> </td> 
+   <td>Array di oggetti da visualizzare come opzioni. Ciascun oggetto contiene due proprietà:<br /> salvare: per salvare, visualizzare: da visualizzare.<br /> <br /> </td> 
   </tr>
   <tr>
    <td><p>modificabile</p> <p><strong>Nota</strong>: Applicabile solo ai moduli HTML5.<br /> </p> </td> 
@@ -212,7 +212,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
    <th>Descrizione</th> 
   </tr>
   <tr>
-   <td><p><em> addItem: function(itemValues)<br /> itemValues: oggetto contenente il valore di visualizzazione e salvataggio <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: oggetto contenente il valore di visualizzazione e salvataggio <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td> 
    <td>Aggiunge una voce all'elenco.</td> 
   </tr>
   <tr>
@@ -268,4 +268,3 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
 | zero | Testo localizzato per il numero 0. |
 | clearText | Testo localizzato per il pulsante Cancella. |
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
