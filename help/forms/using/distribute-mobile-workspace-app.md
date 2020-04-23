@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ Mobile Device Management (MDM) consente la distribuzione su larga scala delle ap
 * Abilitare l&#39;iscrizione ai dispositivi nell&#39;ambiente aziendale
 * Consenti configurazione e aggiornamento delle impostazioni del dispositivo
 * Applica la conformità alla sicurezza.
-* Accesso mobile sicuro alle risorse aziendali
+* Protezione dell&#39;accesso mobile alle risorse aziendali
 
 Una soluzione MDM insieme a Mobile Application Management consente di gestire le app interne, pubbliche e acquistate sui dispositivi mobili dell&#39;azienda.
 
@@ -44,5 +44,3 @@ Se disattivate l&#39;opzione **Consenti uso fotocamera**, la funzionalità della
 * **Richiedi passcode sul dispositivo** nella sezione Criteri passcode
 
 Per abilitare la **cifratura dei dati** dell&#39;applicazione, si consiglia di abilitare la **passcode** sul dispositivo. Se passcode non è impostato sul dispositivo, i dati dell&#39;applicazione memorizzati sul dispositivo non sono crittografati.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
