@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,4 +40,3 @@ La modifica apportata alla schermata iniziale dell&#39;app ha effetto sulla sche
 
 Tuttavia, la modifica apportata in Area di lavoro HTML ha effetto su tutti gli utenti dell&#39;app AEM Forms che hanno eseguito l&#39;accesso al server AEM Forms.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
