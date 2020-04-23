@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -48,8 +48,5 @@ L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostr
    </html>
    ```
 
-   * Impostare il valore dell&#39;URL di riepilogo attività come `/lc/content/SampleSummary.html` nel passaggio Assegna attività.
-   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta nell&#39;area di lavoro AEM Forms, viene eseguito il rendering `html.esp` `/apps/SampleSummary` in nel riquadro di riepilogo delle attività.
-
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+   * Impostate il valore dell&#39;URL di riepilogo attività come `/lc/content/SampleSummary.html` nel passaggio Assegna attività.
+   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta nell&#39;area di lavoro Moduli AEM, viene eseguito il rendering `html.esp` in `/apps/SampleSummary` nel riquadro di riepilogo delle attività.
