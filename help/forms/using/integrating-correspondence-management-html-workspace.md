@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Integrazione di applicazioni di terze parti nell&#39;area di lavoro di AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
 
-L&#39;area di lavoro Moduli AEM supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. È possibile utilizzare moduli XDP, moduli Flex® o guide (obsoleti) per il rendering in formato XDP, PDF, HTML o Flex.
+L&#39;area di lavoro Moduli AEM supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. Tali moduli e documenti possono essere moduli XDP, Flex® o Guide (obsoleto) per i quali è stato eseguito il rendering in formato XDP, PDF, HTML o Flex.
 
 Tali capacità sono ulteriormente migliorate. AEM Forms ora supporta la collaborazione con applicazioni di terze parti che supportano funzionalità simili all’area di lavoro Moduli AEM. Una parte comune di questa funzionalità è rappresentata dal flusso di lavoro dell&#39;assegnazione e successiva approvazione di un&#39;attività. AEM Forms offre un&#39;unica esperienza unificata agli utenti enterprise di AEM Forms affinché tutte queste assegnazioni di attività o approvazioni per le applicazioni supportate possano essere gestite tramite l&#39;area di lavoro Moduli AEM.
 
@@ -100,7 +100,7 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
 
    [Ottieni DSC](assets/dscsample.zip)download file: Un DSC di esempio è disponibile nel file DSCSample.zip allegato qui sopra. Scaricate e decomprimete il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per informazioni, consultate [Configurare il servizio](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
 
-   Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata come getLetterInstanceInfo e fate clic su **OK**.
+   Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata, ad esempio getLetterInstanceInfo, quindi fate clic su **OK**.
 
 1. Implementare l&#39;applicazione. Se richiesto, archiviate e salvate le risorse.
 1. Accedete all&#39;area di lavoro moduli di AEM all&#39;indirizzo `https://[server]:[port]/lc/content/ws`.
@@ -114,4 +114,3 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
    >
    >Il pulsante Invia non viene attivato finché non vengono compilate tutte le variabili richieste nella lettera.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
