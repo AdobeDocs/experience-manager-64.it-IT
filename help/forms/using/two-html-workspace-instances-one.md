@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -20,14 +20,14 @@ L’installazione e le impostazioni predefinite di AEM Forms consentono la dispo
 
 Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due URL diversi e rendere disponibili due aree di lavoro sullo stesso server. In questo articolo sulla personalizzazione, si presuppone che le due aree di lavoro siano accessibili in `https://[server]:[port]/lc/ws` e `https://[server]:[port]:/lc/ws2`.
 
-Per configurare l&#39;area di lavoro Moduli AEM, effettuate le seguenti operazioni.
+Per configurare l&#39;area di lavoro Moduli AEM, procedi come indicato di seguito.
 
 1. Installa il pacchetto di sviluppo dell’area di lavoro AEM Forms sul server. Per istruzioni su come crearlo, consultate [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 1. Accedi a CRXDE Lite come amministratore, accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Copiare il nodo in /content e incollare in /content. Rinominare il nodo in ws2. Fate clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` su ws2. Fate clic su **[!UICONTROL Salva tutto]**.
+1. Copiare il nodo era in /content e incollare in /content. Rinominare il nodo in ws2. Fate clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` su ws2. Fate clic su **[!UICONTROL Salva tutto]**.
 
 1. Copiare la cartella era da /libs e incollare in /apps. Rinominate la cartella in ws2. Fate clic su **[!UICONTROL Salva tutto]**.
-1. Nella `GET.jsp` parte `/apps/ws2`, apportate le seguenti modifiche al codice. Sostituisci quanto segue
+1. Nella `GET.jsp` pagina `/apps/ws2`, apportate le seguenti modifiche al codice. Sostituisci quanto segue
 
    ```
    <html lang="en">
@@ -91,6 +91,4 @@ Per configurare l&#39;area di lavoro Moduli AEM, effettuate le seguenti operazio
 
 1. Nelle proprietà di `ws2`, modificare il valore di `sling:redirect` in `content/ws2`.
 
-1. Cambia il valore `sling:match` in `^[^/\||]/[^/\||]/ws2$`.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+1. Modificate il valore di `sling:match` in `^[^/\||]/[^/\||]/ws2$`.
