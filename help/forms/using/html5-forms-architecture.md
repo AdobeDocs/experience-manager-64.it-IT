@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 ## Architettura {#architecture}
 
-La funzionalità dei moduli HTML5 è implementata come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
+La funzionalità dei moduli HTML5 è distribuita come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
     [ ![01-aem-forms-architecture](assets/01-aem-forms-architecture.jpg)
 *Visualizza dimensioni* intere](javascript:void(0).md)
@@ -32,7 +32,7 @@ La funzionalità dei moduli HTML5 è implementata come pacchetto all’interno d
 
 Per informazioni dettagliate sull&#39;endpoint REST e sui parametri di richiesta supportati, consultate Modello [per moduli di](/help/forms/using/rendering-form-template.md)rendering.
 
-Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Una volta che la richiesta raggiunge un JSP di rendering del profilo, il JSP chiama il servizio Forms OSGi.
+Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Una volta che la richiesta raggiunge un JSP per il rendering dei profili, il JSP chiama il servizio Forms OSGi.
 
 Per ulteriori dettagli sulla risoluzione degli script Sling, consultate [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) o [Apache Sling Url decomposizione](https://sling.apache.org/site/url-decomposition.html).
 
@@ -42,7 +42,7 @@ I moduli HTML5 memorizzano nella cache tutti gli oggetti intermedi necessari per
 
 Mobile Form mantiene due diversi livelli di cache, cache PreRender e cache di rendering. La cache preRender contiene tutti i frammenti e le immagini di un modello risolto e la cache di rendering contiene il contenuto di cui è stato effettuato il rendering, ad esempio HTML.
 
-![](assets/cacheworkflow.png) Flusso di lavoro **** per moduli HTML5: Flusso di lavoro per i moduli *HTML5*
+![Flusso di lavoro](assets/cacheworkflow.png)**per moduli HTML5:** Flusso di lavoro per i moduli *HTML5*
 
 I moduli HTML5 non memorizzano nella cache i modelli con riferimenti di frammenti e immagini mancanti. Se i moduli HTML5 richiedono più tempo del normale, controllate che nei registri del server siano presenti riferimenti e avvisi mancanti. Inoltre, verificare che la dimensione massima dell&#39;oggetto non sia raggiunta.
 
@@ -134,7 +134,7 @@ Per ulteriori dettagli, vedere l&#39;articolo [Form Bridge](/help/forms/using/fo
 
 Il layout e l’aspetto visivo dei moduli HTML5 si basano sulle funzioni SVG 1.1, jQuery, BackBone e CSS3. L&#39;aspetto iniziale di un modulo viene generato e memorizzato nella cache del server. Il tweaking di tale layout iniziale e di eventuali ulteriori modifiche incrementali al layout del modulo vengono gestiti sul client. A tal fine, il pacchetto Runtime contiene un motore di layout scritto in JavaScript e basato su jQuery/Backbone. Questo motore gestisce tutti i comportamenti dinamici, come Aggiungi/Rimuovi istanze ripetibili, layout oggetto espandibile. Questo modulo di gestione del layout esegue il rendering di un modulo una pagina alla volta. Inizialmente un utente visualizza solo una pagina e la barra di scorrimento orizzontale rappresenta solo la prima pagina. Tuttavia, quando un utente scorre verso il basso, la pagina successiva avvia il rendering. Questa rappresentazione pagina per pagina riduce il tempo necessario per eseguire il rendering della prima pagina in un browser e migliora le prestazioni percepite del modulo. Questo motore/libreria fa parte di CQ Client Lib con il nome della categoria **xfaforms.profile**.
 
-Il motore di layout contiene anche un set di widget utilizzati per acquisire il valore dei campi modulo da un utente. Questi widget sono modellati come Widget [interfaccia utente](https://api.jqueryui.com/jQuery.widget/) jQuery che implementano alcuni contratti aggiuntivi per lavorare senza problemi con il motore di layout.
+Il motore di layout contiene anche un set di widget utilizzati per acquisire il valore dei campi del modulo da un utente. Questi widget sono modellati come Widget [interfaccia utente](https://api.jqueryui.com/jQuery.widget/) jQuery che implementano alcuni contratti aggiuntivi per lavorare senza problemi con il motore di layout.
 
 Per ulteriori dettagli sui widget e i contratti corrispondenti, vedere Widget [personalizzati per i moduli](/help/forms/using/introduction-widgets.md)HTML5.
 
@@ -182,5 +182,5 @@ Per ulteriori informazioni sulle librerie client CQ, consulta la documentazione 
 Come descritto in precedenza, il renderer di profili JSP chiama Forms Service tramite un sling include. Questa JSP imposta anche diverse opzioni di debug in base alla configurazione dell&#39;amministratore o ai parametri di richiesta.
 
 I moduli HTML5 consentono agli sviluppatori di creare il modulo di rendering dei profili e di personalizzarne l&#39;aspetto. Ad esempio, i moduli HTML consentono agli sviluppatori di integrare moduli in un pannello o nella sezione &lt;div> di un portale HTML esistente.\
-Per ulteriori dettagli sulla creazione di profili personalizzati, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.\
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
+Per ulteriori dettagli sulla creazione di profili personalizzati, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
+
