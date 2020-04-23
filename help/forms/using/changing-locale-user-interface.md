@@ -1,8 +1,8 @@
 ---
 title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
 seo-title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore data sull'interfaccia.
-seo-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore data sull'interfaccia.
+description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
+seo-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -25,7 +25,7 @@ Per localizzare l&#39;interfaccia utente dell&#39;area di lavoro AEM Forms nella
 * Localizzare categorie, code e processi compressi.
 * Localizza selettore data
 
-Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
+Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
 >[!NOTE]
 >
@@ -178,18 +178,18 @@ Per localizzare le immagini, effettuate le seguenti operazioni:
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+a
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```
