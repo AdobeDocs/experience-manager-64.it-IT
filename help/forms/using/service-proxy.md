@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,10 +22,10 @@ Il proxy di servizio moduli HTML5 è una configurazione per registrare un proxy 
 
 Il proxy di servizio elimina quanto segue:
 
-* Il flusso di lavoro dei moduli HTML5 richiede l’apertura del servizio di invio &quot;/content/xfaforms/submit/default&quot; per gli utenti dei moduli HTML5. Espone i server AEM a un pubblico più vasto e non intenzionale.
+* Il flusso di lavoro dei moduli HTML5 richiede l’apertura del servizio di invio &quot;/content/xfaforms/submit/default&quot; per gli utenti dei moduli HTML5. Consente di esporre i server AEM a un pubblico più vasto e non intenzionale.
 * L&#39;URL del servizio è incorporato nel modello runtime del modulo. Non è possibile modificare il percorso dell&#39;URL del servizio.
 * L&#39;invio è un processo in due fasi. Per inviare i dati del modulo, l&#39;invio richiede almeno due viaggi al server. Aumenta quindi il carico sul server.
-* I moduli HTML5 inviano dati nella richiesta POST invece che nella richiesta PDF. Per i flussi di lavoro che coinvolgono moduli PDF e HTML5, sono necessari due metodi diversi per elaborare gli invii.
+* I moduli HTML5 inviano i dati nella richiesta POST invece che nella richiesta PDF. Per i flussi di lavoro che coinvolgono moduli PDF e HTML5, sono necessari due metodi diversi per elaborare gli invii.
 
 ## Topologie {#topologies-br}
 
@@ -38,7 +38,7 @@ I moduli HTML5 possono utilizzare le seguenti topologie per connettersi ai serve
 
 Topologie proxy del servizio moduli HTML5
 
-I moduli HTML5 si connettono ai server AEM per eseguire script sul lato server, servizi Web e invii. Il runtime XFA dei moduli HTML5 utilizza chiamate Ajax al punto finale &quot;/bin/xfaforms/submitaction&quot; con vari parametri per connettersi ai server AEM. I moduli HTML5 collegano i server AEM per eseguire le operazioni seguenti:
+I moduli HTML5 si connettono ai server AEM per eseguire script sul lato server, servizi Web e invii. Il runtime XFA dei moduli HTML5 utilizza chiamate Ajax al punto finale &quot;/bin/xfaforms/submitaction&quot; con vari parametri per la connessione ai server AEM. I moduli HTML5 collegano i server AEM per eseguire le operazioni seguenti:
 
 ### Esecuzione di script sul lato server e servizi Web {#execute-server-sided-scripts-and-web-services}
 
@@ -133,4 +133,3 @@ Il proxy del servizio di invio seleziona una topologia se l’URL di invio è pr
 
 * Prima di inviare i dati (richiesta POST) a un server, i moduli HTML5 verificano la connettività e la disponibilità del server. Per verificare la connettività e la disponibilità, i moduli HTML inviano al server una richiesta head vuota. Se il server è disponibile, il modulo HTML5 invia dati (richiesta POST) al server. Se il server non è disponibile, viene visualizzato un messaggio di errore *Impossibile connettersi al server,* Il rilevamento anticipato impedisce agli utenti di compilare il modulo in modo semplice. Il servlet proxy gestisce la richiesta dell&#39;intestazione e non genera eccezioni.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
