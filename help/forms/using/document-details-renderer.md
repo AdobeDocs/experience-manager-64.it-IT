@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -81,11 +81,11 @@ Questo protocollo è definito dall&#39; `WsNextAdapter.swf`. L&#39;oggetto `flex
 
 Il rendering delle applicazioni di terze parti viene eseguito utilizzando la visualizzazione ExtAppTaskForm.
 
-**Comunicazione di applicazioni di terze parti all’area di lavoro AEM Forms**
+**Comunicazione di applicazioni di terze parti all’area di lavoro di AEM Forms**
 
 L&#39;area di lavoro Moduli AEM ascolta `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`Il messaggio`ErrorMessage` può essere una stringa specificata come||| `actionEnabledMessage`nel `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche all&#39;area di lavoro di AEM Forms, in base alle esigenze. L&#39;utilizzo di questa interfaccia è obbligatorio perché l&#39;area di lavoro Moduli AEM deve sapere che all&#39;invio dell&#39;attività in modo da poter ripulire la finestra dell&#39;attività.
+[Il messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`nel `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche all&#39;area di lavoro di AEM Forms, in base alle esigenze. L&#39;utilizzo di questa interfaccia è obbligatorio, perché l&#39;area di lavoro Moduli AEM deve sapere che all&#39;invio dell&#39;attività in modo da poter ripulire la finestra dell&#39;attività.
 
 **Area di lavoro AEM Forms per comunicare con applicazioni di terze parti**
 
@@ -95,5 +95,3 @@ Ad esempio, un&#39;applicazione Flex può definire `ExternalInterface.addCallbac
 
 Per ulteriori informazioni sull’integrazione di applicazioni di terze parti con la gestione della corrispondenza, consulta [Integrazione della gestione della corrispondenza nell’area di lavoro](/help/forms/using/integrating-correspondence-management-html-workspace.md)Moduli AEM.
 
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
