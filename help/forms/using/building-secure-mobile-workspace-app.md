@@ -1,15 +1,15 @@
 ---
 title: Creazione di un'app AEM Forms protetta per iOS
 seo-title: Creazione di un'app AEM Forms protetta per iOS
-description: Procedura per creare un'app AEM Forms protetta.
-seo-description: Procedura per creare un'app AEM Forms protetta.
+description: Passaggi per creare un'app AEM Forms protetta.
+seo-description: Passaggi per creare un'app AEM Forms protetta.
 uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -39,5 +39,3 @@ source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
 1. Per Identità **[!UICONTROL firma]** codice, selezionare la firma appropriata. Verifica che la stessa firma sia selezionata per **[!UICONTROL Debug]**, **[!UICONTROL Release]** e **[!UICONTROL Qualsiasi SDK]** iOS.
 1. In **[!UICONTROL PROJECT]**, seleziona **[!UICONTROL AEM Forms]** e accertati che sia selezionata la firma appropriata per Identità **[!UICONTROL di firma del]** codice, **[!UICONTROL Debug]**, **[!UICONTROL Rilascio]** **** e Qualsiasi SDK iOS.
 1. Creazione e distribuzione di app AEM Forms. Per istruzioni dettagliate sulla creazione e distribuzione di app AEM Forms, consultate [Creazione del programma di installazione per l&#39;app](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)AEM Forms.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
