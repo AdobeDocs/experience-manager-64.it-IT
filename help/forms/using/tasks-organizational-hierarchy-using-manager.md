@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ Nell&#39;area di lavoro Moduli AEM, i manager possono ora accedere alle attivit�
 
 **Rifiuta** un&#39;attività inoltrata a un rapporto diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un rapporto diretto.
 
-AEM Forms limita l&#39;accesso degli utenti solo alle attività per le quali l&#39;utente dispone del controllo di accesso (ACL, Access Control). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l&#39;utente dispone delle autorizzazioni di accesso. Utilizzando servizi Web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
+AEM Forms limita l&#39;accesso di un utente solo alle attività per le quali l&#39;utente dispone del controllo di accesso (ACL, Access Control). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l&#39;utente dispone delle autorizzazioni di accesso. Utilizzando servizi Web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
 
 1. Creare un DSC. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
 1. In DSC, definire un nuovo SPI per la gestione gerarchica per definire i rapporti diretti e la gerarchia all’interno degli utenti di AEM Forms. Segue un esempio di snippet di codice Java™.
@@ -118,4 +118,3 @@ La schermata seguente illustra l’accesso alle attività dei rapporti diretti e
 
 Accesso alle attività dei rapporti diretti e azione sulle attività
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
