@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -28,7 +28,7 @@ Un profilo contiene vari moduli. I moduli sono formRuntime.jsp, config.jsp, tool
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-I moduli formRuntime.jsp contengono riferimenti delle librerie client. Contiene inoltre metodi per estrarre informazioni sulle impostazioni internazionali dalla richiesta e includere i messaggi localizzati nella richiesta. È possibile includere libs o stili JavaScript personalizzati in formRuntime.jsp.
+I moduli formRuntime.jsp contengono riferimenti delle librerie client. Inoltre, mostra i metodi per estrarre le informazioni sulle impostazioni internazionali dalla richiesta e includere i messaggi localizzati nella richiesta. È possibile includere libs o stili JavaScript personalizzati in formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 
@@ -60,7 +60,7 @@ Per creare un profilo personalizzato, effettuate le seguenti operazioni:
 
 1. Nel riquadro a sinistra, passare alla posizione */content/xfaforms/profile*.
 
-1. Copiate il nodo predefinito e incollate il nodo in una cartella diversa (*/content/profile*) con *il nome hrform*.
+1. Copiate il nodo predefinito e incollate il nodo in un&#39;altra cartella (*/content/profile*) con *il nome hrform*.
 
 1. Selezionare il nuovo nodo, *hrform* e aggiungere una proprietà stringa: *sling:resourceType* con valore: *hrform/demo*.
 
@@ -72,7 +72,7 @@ Dopo aver creato un profilo personalizzato, aggiungete le informazioni di render
 
 1. Nel riquadro a sinistra, individuate la `/apps` cartella.
 1. Fate clic con il pulsante destro del mouse sulla `/apps` cartella e scegliete di creare una cartella con il nome **hrform**.
-1. Nella cartella **hrform** , crea una cartella denominata **demo**.
+1. All’interno della cartella **hrform** , create una cartella denominata **demo**.
 1. Fate clic sul pulsante **Salva tutto** .
 1. Andate a `/libs/xfaforms/profile/html.jsp` e copiate il nodo **html.jsp**.
 1. Incollate il nodo **html.jsp** nella `/apps/hrform/demo` cartella precedentemente creata con lo stesso nome **html.jsp** e fate clic su **Salva**.
@@ -80,6 +80,4 @@ Dopo aver creato un profilo personalizzato, aggiungete le informazioni di render
 
 1. Per verificare che il profilo sia stato creato, apri URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in AEM Forms e visualizzare l&#39; [anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di creazione del server AEM.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in AEM Forms e [visualizzare l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di creazione del server AEM.
