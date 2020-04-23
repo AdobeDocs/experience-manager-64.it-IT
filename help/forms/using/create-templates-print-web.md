@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -55,7 +55,7 @@ In base al caso di [utilizzo](/help/forms/using/create-your-first-interactive-co
 
 ![create_print_template](assets/create_print_template.gif)
 
-Questi sottomoduli vengono visualizzati come aree di destinazione nel modello Stampa dopo il caricamento del file XDP nel server Forms. Tutte le entità quali frammenti di documento, grafici, frammenti di layout e immagini vengono aggiunte alle aree di destinazione durante la creazione della comunicazione interattiva.
+Questi sottomoduli vengono visualizzati come aree di destinazione nel modello di stampa dopo il caricamento del file XDP nel server Forms. Tutte le entità quali frammenti di documento, grafici, frammenti di layout e immagini vengono aggiunte alle aree di destinazione durante la creazione della comunicazione interattiva.
 
 Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
@@ -95,7 +95,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    Per spostare il sottomodulo **Grafici** a destra del sottomodulo Addebiti, selezionare il sottomodulo **Grafici** dal riquadro a sinistra, selezionare la scheda **Layout** e specificare un valore per il campo **AnchorX** . Il valore deve essere maggiore del valore relativo al campo **Larghezza** del sottomodulo **Addebiti** . Selezionare il sottomodulo **Addebiti** e selezionare la scheda **Layout** per visualizzare il valore del campo **Larghezza** .
 
 1. Trascinare l&#39;oggetto **Testo** dalla Libreria **** oggetto al modulo e immettere il **Dial XXXX per sottoscrivere** il testo nella casella.
-1. Fare clic con il pulsante destro del mouse sull&#39;oggetto testo nel riquadro a sinistra, selezionare **Rinomina oggetto**, quindi immettere il nome dell&#39;oggetto di testo come **Sottoscrivi**.
+1. Fare clic con il pulsante destro del mouse sull&#39;oggetto di testo nel riquadro a sinistra, selezionare **Rinomina oggetto**, quindi immettere il nome dell&#39;oggetto di testo come **Sottoscrivi**.
 
    ![print_xdp_template_subform](assets/print_xdp_template_subform.png)
 
@@ -109,7 +109,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
 Dopo aver creato un modello XDP utilizzando Designer moduli, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionare **Moduli** > **Moduli e documenti**.
+1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** > Caricamento **** file.
 
    Individuate e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
@@ -171,7 +171,7 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
 1. Toccate **Strumenti** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > Browser **** di configurazione.
-1. Nella pagina Browser configurazione, toccate **Crea**.
+1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
    ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
@@ -210,14 +210,14 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
 
 1. Toccate Pannello **** principale e quindi toccate **+** per visualizzare l’elenco dei componenti che potete aggiungere al modello.
 1. Selezionate **Pannello** dall’elenco per aggiungere un pannello sopra il pannello **** principale.
-1. Selezionate la scheda **Contenuto** nel riquadro a sinistra. Il nuovo pannello aggiunto al punto 8 viene visualizzato nel pannello **Principale** della struttura del contenuto.
+1. Selezionate la scheda **Contenuto** nel riquadro a sinistra. Il nuovo pannello aggiunto al punto 8 viene visualizzato sotto il pannello **** Principale nella struttura del contenuto.
 
    ![content_tree_root_panel](assets/content_tree_root_panel.png)
 
 1. Selezionate il pannello e toccate ![configure_icon](assets/configure_icon.png) (Configura).
 1. Nel riquadro Proprietà:
 
-   1. Specificare **i dettagli** fatturati nel campo Nome.
+   1. Specificate **i dettagli** fatturati nel campo Nome.
    1. Specificate Dettagli **** fatturazione nel campo Titolo.
    1. Selezionare **1** dall&#39;elenco a discesa **Numero di colonne** .
    1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà.
@@ -231,7 +231,7 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
    | billsummary | Riepilogo fatturazione | 1 |
    | riepiloghi | Riepilogo delle spese | 2 |
    | itemisedCalls | Chiamate dettagliate | 1 |
-   | paga | Paga ora | 2 |
+   | paynow | Paga ora | 2 |
    | vas | Servizi a valore aggiunto | 1 |
 
    L&#39;immagine seguente rappresenta la struttura del contenuto dopo l&#39;aggiunta di tutti i pannelli al modello:
