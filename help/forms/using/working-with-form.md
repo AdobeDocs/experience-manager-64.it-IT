@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ Per sincronizzare il modulo nell&#39;app AEM Forms:
 1. Nella pagina delle proprietà fare clic su **Avanzate.**
 1. In Avanzate, abilita opzione: **Sincronizza con l&#39;app** AEM Forms e tocca **Salva**.
 
-Per sincronizzare più moduli, nell&#39;istanza di creazione selezionare più moduli in Forms Manager e toccare **Sincronizza con l&#39;app** AEM Forms. Quando il modulo viene pubblicato, l&#39;app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
+Per sincronizzare più moduli, nell&#39;istanza di creazione, selezionare più moduli in Forms Manager e toccare **Sincronizza con l&#39;app** AEM Forms. Quando il modulo viene pubblicato, l&#39;app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
 
 >[!NOTE]
 >
@@ -43,5 +43,3 @@ Gli allegati a livello di modulo non sono supportati nei moduli adattivi recuper
 
 1. Per aprire un modulo, toccate il modulo nella schermata iniziale.
 1. È possibile aggiornare i campi del modulo, aggiungere allegati, salvare come bozza e inviarlo.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
