@@ -9,7 +9,7 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -68,4 +68,4 @@ Process Reporting fornisce l&#39;accesso basato sulle autorizzazioni all&#39;int
 
 Ciò significa che solo gli utenti con autorizzazioni di reporting hanno accesso all&#39;interfaccia utente di Process Reporting.
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+
