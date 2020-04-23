@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -22,7 +22,7 @@ Per impostazione predefinita, nell&#39;elenco A-do dell&#39;area di lavoro AEM F
 
 In questo articolo sono descritti i passaggi da eseguire per aggiungere informazioni da visualizzare per ogni attività nell&#39;elenco Attività.
 
-## Cosa aggiungere {#what-can-be-added}
+## Cosa è possibile aggiungere {#what-can-be-added}
 
 Potete aggiungere le informazioni disponibili in `task.json` inviato dal server. Le informazioni possono essere aggiunte come testo normale oppure potete usare gli stili per formattare le informazioni.
 
@@ -30,7 +30,7 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 ## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
+1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 1. Per visualizzare informazioni aggiuntive su un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti all&#39;interno del blocco attività di `translation.json`.
 
    Ad esempio, change `/apps/ws/locales/en-US/translation.json` for English:
@@ -138,7 +138,7 @@ Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà c
 
 1. Copia `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * da: `/libs/ws/js/runtime/templates/`
    * a: `/apps/ws/js/runtime/templates/`
 
 1. Aggiungete le nuove informazioni a `/apps/ws/js/runtime/templates/task.html`.
@@ -148,5 +148,3 @@ Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà c
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
