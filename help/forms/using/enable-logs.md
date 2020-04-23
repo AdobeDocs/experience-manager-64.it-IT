@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -48,7 +48,7 @@ Per abilitare la registrazione lato client nei moduli HTML5 è possibile utilizz
 
 ### Attivazione della registrazione tramite il parametro di richiesta {#enabling-logging-using-request-parameter}
 
-Con questo metodo potete generare registri per una particolare richiesta. Il nome del parametro di richiesta è **log**. L’URL del registro è il seguente:
+Utilizzando questo metodo, potete generare file di registro per una particolare richiesta. Il nome del parametro di richiesta è **log**. L’URL del registro è il seguente:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -159,7 +159,7 @@ Ad esempio:
   </tr> 
   <tr> 
    <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>Destinazione: Livello xfa server<br /> : Livello INFO<br /> xfaView: Livello DEBUG<br /> xfaPerf:TRACE</td> 
+   <td>Destinazione: Livello xfa server<br /> : Livello INFO<br /> xfaView: Livello DEBUG<br /> xfaPerf: TRACE</td> 
   </tr> 
  </tbody> 
 </table>
@@ -167,9 +167,9 @@ Ad esempio:
 >[!NOTE]
 >
 >Il livello di registro predefinito per ciascuna categoria di registro a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli di registro per le diverse categorie sono:\
->a (xfa): 2 (livello predefinito ERROR)\
+>a (xfa): 2 (ERRORE di livello predefinito)\
 >b (xfaView): 6 (TRACE specificato dall&#39;utente)\
->a (xfaPerf): 2 (livello predefinito ERROR)
+>a (xfaPerf): 2 (ERRORE di livello predefinito)
 
 ### Abilitazione dell&#39;accesso tramite Configuration Manager {#enabling-logging-using-configuration-manager}
 
@@ -202,8 +202,7 @@ Per modificare il percorso e il nome del file di registro:
 
    >[!NOTE]
    >
-   >Per creare file di registro nella stessa directory in cui sono conservati altri file di registro, specificare ../logs/&lt;nomefile> nella proprietà File di registro.
+   >Per creare file di registro nella stessa directory in cui sono conservati gli altri file di registro, specificare ../logs/&lt;nomefile> nella proprietà File di registro.
 
 1. Modificate il **logger** in **HTMLFormsPerfLogger** e fate clic su **Salva**.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
