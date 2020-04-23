@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Funzionalità dell&#39;area di lavoro Flex non disponibili nell&#39;area di lavoro AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
-L’area di lavoro AEM Forms è una nuova area di lavoro. Di seguito sono elencate alcune delle funzioni dell&#39;area di lavoro basata su Flex che non sono disponibili nell&#39;area di lavoro AEM Forms.
+L’area di lavoro AEM Forms è la nuova area di lavoro. Di seguito sono elencate alcune delle funzioni dell&#39;area di lavoro basata su Flex che non sono disponibili nell&#39;area di lavoro AEM Forms.
 
 * Pagina di benvenuto non disponibile. È possibile impostare le pagine Avvia processo, A-fare, Tracciamento e Preferiti come prima pagina da visualizzare al momento dell&#39;accesso all&#39;area di lavoro.
 * I messaggi e le notifiche per gli eventi di sistema non vengono visualizzati nell&#39;area di lavoro di AEM Forms. Tutte le impostazioni corrispondenti ai messaggi (come &#39;Ora di visualizzazione notifica dei messaggi&#39;) non sono applicabili anche all&#39;area di lavoro Moduli AEM.
@@ -27,4 +27,3 @@ L’area di lavoro AEM Forms è una nuova area di lavoro. Di seguito sono elenca
 * L&#39;impostazione di un contenitore di approvazione o di un contenitore personalizzato per un&#39;attività utente non viene rispettata nell&#39;area di lavoro di AEM Forms.
 * Un&#39;opzione per cercare i modelli è disponibile nella scheda Tracciamento ma non nella scheda Attività.
 
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
