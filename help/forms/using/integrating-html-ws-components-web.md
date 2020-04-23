@@ -1,8 +1,8 @@
 ---
 title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
 seo-title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-description: Come riutilizzare i componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
-seo-description: Come riutilizzare i componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+seo-description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,11 +23,11 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 1. Creare un percorso `/apps/sampleApplication/wscomponents`.
 1. Copiate css, immagini, js/libs, js/runtime e js/registry.js
 
-   * from `/libs/ws`
+   * da `/libs/ws`
    * a `/apps/sampleApplication/wscomponents`.
 
 1. Create un file dominio.js all&#39;interno della cartella /apps/sampleApplication/wscomponents/js. Copiate il codice da /libs/ws/js/main.js a download.js.
-1. In demomain.js, rimuovere il codice per inizializzare Router e aggiungere il codice seguente:
+1. In demomain.js, rimuovi il codice per inizializzare Router e aggiungi il seguente codice:
 
    ```
    require(['initializer','runtime/util/usersession'], 
@@ -40,7 +40,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
        });
    ```
 
-1. Create un nodo in /content per nome `sampleApplication` e tipo `nt:unstructured`. Nelle proprietà di questo nodo aggiungere `sling:resourceType` di tipo Stringa e valore `sampleApplication`. Nell&#39;elenco Controllo accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read. Inoltre, nell&#39;elenco Controllo accesso di `/apps/sampleApplication` aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read.
+1. Create un nodo in /content per nome `sampleApplication` e tipo `nt:unstructured`. Nelle proprietà di questo nodo aggiungere `sling:resourceType` di tipo Stringa e valore `sampleApplication`. Nell&#39;elenco Controllo accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read. Inoltre, nell&#39;elenco di controllo degli accessi `/apps/sampleApplication` aggiungete una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read.
 1. In `/apps/sampleApplication/wscomponents/js/registry.js` percorsi di aggiornamento da `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` per i valori dei modelli.
 1. Nel file JSP della home page del portale in `/apps/sampleApplication/GET.jsp`, aggiungi il codice seguente per includere i componenti richiesti all&#39;interno del portale.
 
@@ -89,5 +89,3 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
        margin: 0 auto;
    }
    ```
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
