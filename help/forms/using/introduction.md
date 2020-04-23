@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,5 +44,3 @@ AEM fornisce inoltre una visualizzazione unificata per elencare e gestire tutti 
 ### Personalizzazione dei moduli {#forms-customization}
 
 I moduli HTML5 eseguono il rendering dei modelli di modulo utilizzando costrutti HTML5 standard. Questo semplifica la personalizzazione e l’estensione dei moduli in formato HTML5 utilizzando tecnologie Web, principalmente CSS e JavaScript. È possibile personalizzare facilmente l&#39;aspetto dei widget esistenti, creare widget personalizzati o utilizzare stili personalizzati nei moduli. Per ulteriori informazioni sulla creazione di widget personalizzati e sulla personalizzazione di widget esistenti, vedere [Inserire widget personalizzati con moduli](/help/forms/using/custom-widgets.md)HTML5.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
