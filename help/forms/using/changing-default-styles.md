@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -32,7 +32,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
 1. **Creare un foglio di stile CSS per la formattazione dei moduli HTML5**
 
-   Passare alla cartella in cui è stato creato il renderer del profilo e creare un file foglio di stile CSS. I passaggi da seguire sono
+   Passare alla cartella in cui è stato creato il renderer del profilo e creare un file foglio di stile CSS. I passaggi da seguire sono:
 
    1. Fare clic con il pulsante destro del mouse sulla cartella e selezionare **Crea** -> **Crea file** dal menu
    Per sapere quali classi CSS creare per un particolare componente nei moduli HTML5, vedere [Introduzione agli stili](/help/forms/using/css-styles.md).
@@ -51,4 +51,3 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
    1. Salvate il file.
 
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
