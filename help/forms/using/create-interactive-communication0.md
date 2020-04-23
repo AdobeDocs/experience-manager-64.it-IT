@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -37,22 +37,22 @@ Questa esercitazione illustra i passaggi necessari per creare comunicazioni inte
 
 Di seguito sono elencate le risorse già create in questa esercitazione e necessarie per la creazione della comunicazione interattiva per il canale di stampa:
 
-**** Modello di stampa: [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
+**Modello di stampa:** [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
 
-**** Modello dati modulo: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Modello dati modulo:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Frammenti del documento: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charge_first_ic](/help/forms/using/create-document-fragments.md)
+**Frammenti del documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charge_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Frammenti di layout: [table_lf](/help/forms/using/create-templates-print-web.md)
+**Frammenti di layout:** [table_lf](/help/forms/using/create-templates-print-web.md)
 
-**** Immagini: PayNow e ValueAddedServices
+**Immagini:** PayNow e ValueAddedServices
 
-1. Accedete all’istanza di creazione di AEM e passate ad **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
+1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
 
-   1. Specificate **create_first_ic_print_template** come modello di stampa e toccate **Seleziona**. Assicurarsi che la casella **Usa stampa come master per canale** Web non sia selezionata.
+   1. Specificate **create_first_ic_print_template** come modello di stampa e toccate **Seleziona**. Assicurarsi che la casella di controllo **Usa stampa come master per canale** Web non sia selezionata.
    1. Specificate la cartella **Create_First_IC_templates** > **Create_First_IC_Web_Template** come modello Web e toccate **Seleziona**.
    1. Toccate **Crea**.
    Viene visualizzato un messaggio di conferma della corretta creazione della comunicazione interattiva.
@@ -99,20 +99,20 @@ Di seguito sono elencate le risorse già create in questa esercitazione e necess
 
 Di seguito è riportato l&#39;elenco delle risorse già create in questa esercitazione e necessarie per la creazione della comunicazione interattiva per il canale Web:
 
-**** Modello Web: [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
+**Modello Web:** [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
 
-**** Modello dati modulo: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Modello dati modulo:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Frammenti del documento: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charge_first_ic](/help/forms/using/create-document-fragments.md)
+**Frammenti del documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charge_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Immagini: PayNowWeb e ValueAddedServicesWeb
+**Immagini:** PayNowWeb e ValueAddedServicesWeb
 
-1. Accedete all’istanza di creazione di AEM e passate ad **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
+1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
 
-   1. Specificate **create_first_ic_print_template** come modello di stampa e toccate **Seleziona**. Assicurarsi che la casella **Usa stampa come master per canale** Web non sia selezionata.
+   1. Specificate **create_first_ic_print_template** come modello di stampa e toccate **Seleziona**. Assicurarsi che la casella di controllo **Usa stampa come master per canale** Web non sia selezionata.
    1. Specificate la cartella **Create_First_IC_templates** > **Create_First_IC_Web_Template** come modello Web e toccate **Seleziona**.
    1. Toccate **Crea**.
    Viene visualizzato un messaggio di conferma della corretta creazione della comunicazione interattiva.
@@ -186,7 +186,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
 Per derivare il contenuto del canale Web utilizzando il canale di stampa, eseguire la procedura seguente:
 
-1. Accedete all’istanza di creazione di AEM e passate ad **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
+1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -211,7 +211,7 @@ Per derivare il contenuto del canale Web utilizzando il canale di stampa, esegui
    Se è stata annullata l’ereditarietà di un componente, è possibile riattivarlo. Per abilitare nuovamente l&#39;ereditarietà, passate il puntatore del mouse sul contorno dell&#39;area di destinazione interessata, che include il componente, e toccate ![renableinheritance](assets/reenableinheritance.png).
 
 1. Selezionate la scheda **Contenuto** nel riquadro a sinistra.
-1. Trascinate il contenuto del canale Web generato automaticamente nei pannelli esistenti nel modello Web utilizzando la struttura del contenuto. Di seguito è riportato l’elenco dei componenti da ridisporre:
+1. Trascinate il contenuto del canale Web generato automaticamente nei pannelli esistenti nel modello Web utilizzando la struttura del contenuto. Di seguito è riportato l’elenco dei componenti che devono essere ridisposti:
 
    * Componente Dettagli fatturazione - Pannello Dettagli fatturazione
    * Componente Dettagli cliente - Pannello Dettagli cliente
