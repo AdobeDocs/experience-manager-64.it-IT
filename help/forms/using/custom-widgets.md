@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 È possibile collegare widget personalizzati a moduli mobili. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere Framework [Aspetto per i moduli](/help/forms/using/introduction-widgets.md) adattivi e HTML5.
 
-![](assets/custom-widgets.jpg) Esempio di widget **** Figura predefinita e personalizzata: *Esempio di widget predefinito e personalizzato*
+![Esempio di widget](assets/custom-widgets.jpg)**Figura predefinita e personalizzata:** *Esempio di widget predefinito e personalizzato*
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -51,7 +51,7 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
   </tr> 
   <tr> 
    <td>getCommitValue</td> 
-   <td>Il framework di widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAModel (ad esempio, all'uscita da un evento textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td> 
+   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAM (ad esempio, in corrispondenza dell'evento exit di un oggetto textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td> 
   </tr> 
   <tr> 
    <td>showValue</td> 
@@ -100,5 +100,3 @@ dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un partic
 | Campo particolare con nome campo | Identificatore:&quot;div.fieldname&quot; | Viene eseguito il rendering di tutti i campi con il nome &quot;nome campo&quot; utilizzando il widget. |
 | Tutti i campi di tipo &quot;type&quot;(dove type è NumericField, DateField e così via): | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield in quanto questi campi non sono supportati. |
 | Tutti i campi | Identificatore: &quot;div.field&quot; |  |
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
