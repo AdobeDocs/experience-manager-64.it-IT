@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe valuta costantemente le funzionalità dei prodotti, per reinventare o sost
 
 Per comunicare l’imminente rimozione/sostituzione delle funzionalità AEM, si applicano le seguenti regole:
 
-1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Le funzionalità obsolete restano disponibili, ma non saranno ulteriormente migliorate.
+1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Anche se è obsoleta, le funzionalità sono ancora disponibili, ma non saranno ulteriormente migliorate.
 1. La rimozione delle funzionalità obsolete verrà attuata a partire dalla versione principale successiva. La data di riferimento effettiva per la rimozione verrà annunciata.
 
 Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
 
 ## Funzioni obsolete {#deprecated-features}
 
-In questa sezione sono elencate le funzioni e le funzionalità contrassegnate come obsolete per AEM 6.4. In genere, le funzioni che si prevede di rimuovere in una versione futura vengono inizialmente rese obsolete e viene fornita un’alternativa.
+La tabella seguente elenca le funzioni e le funzionalità contrassegnate come obsolete con AEM 6.4. In genere, le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleta, con un&#39;alternativa fornita.
 
 Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
@@ -120,6 +120,11 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
    <td>Utilizzare l'API IValueMap </td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td><p>Servizio Bridge di migrazione centrale obsoleto</p> </td> 
+   <td> Nessuna sostituzione </td> 
+  </tr>
+  <tr>
    <td>Assets</td> 
    <td><p>L’offload di risorse è stato dichiarato obsoleto a partire da AEM 6.4</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 ## Funzioni rimosse {#removed-features}
 
-In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
+La tabella seguente elenca le funzioni e le funzionalità rimosse da AEM 6.4. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
 
 <table> 
  <tbody>
@@ -215,13 +220,18 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
   </tr>
     <tr>
     <td>Forms</td> 
-    <td>AEM Forms è stato rimosso sulla pagina di destinazione specifica di JEE.</td> 
+    <td>AEM Forms rimosso sulla pagina di destinazione specifica per JEE.</td> 
     <td>La pagina di destinazione AEM Forms su JEE viene sostituita dalla pagina di destinazione AEM (/aem/start.html) </td>  
   </tr>
    <tr>
    <td>Forms</td> 
    <td>Rimosso il supporto per Captcha predefinito</td> 
    <td>Utilizzate il servizio reCAPTCHA di Google.</td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td>È stato rimosso il supporto per i campi Flash in AEM Designer. AEM Designer non consente di modificare i campi Flash utilizzati in un modulo.</td> 
+   <td>È possibile utilizzare AEM Designer rilasciato per una versione precedente per modificare tali moduli.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
@@ -233,7 +243,8 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.4. Le versioni
 
 ## Pre-annuncio per rilascio successivo {#pre-announcement-for-next-release}
 
-In questa sezione vengono pre-annunciate le modifiche future che non riguardano funzioni dichiarate obsolete, ma che hanno un impatto sui clienti. Queste informazioni vengono fornite a scopo di pianificazione.
+
+La tabella seguente fornisce un elenco delle modifiche per le release future, che non sono obsolete, ma che possono interessare i clienti. Queste informazioni vengono fornite a scopo di pianificazione.
 
 <table> 
  <tbody>
