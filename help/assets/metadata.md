@@ -1,20 +1,20 @@
 ---
-title: Gestione dei metadati delle risorse digitali
-description: Scopri i tipi di metadati e come Risorse Adobe Experience Manager consente di gestire i metadati per le risorse per facilitarne la categorizzazione e l’organizzazione. Grazie alla possibilità di gestire e mantenere metadati arbitrari con le risorse, Risorse Adobe Experience Manager consente di organizzare ed elaborare automaticamente le risorse in base ai metadati.
+title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
+description: Scopri i tipi di metadati e come [!DNL Risorse Adobe Experience Manager] consente di gestire i metadati per le risorse per facilitarne la categorizzazione e l’organizzazione. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 
 ---
 
 
 # Gestione dei metadati delle risorse digitali {#managing-metadata-for-digital-assets}
 
-Risorse Adobe Experience Manager conserva i metadati per ogni risorsa. Questo consente di suddividere le risorse in categorie e organizzarle in modo più semplice e aiuta le persone che cercano una risorsa specifica. Grazie alla possibilità di estrarre i metadati dai file caricati in Experience Manager Assets, la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla capacità di Experience Manager di mantenere e gestire i metadati con le risorse, puoi organizzare ed elaborare automaticamente le risorse in base ai metadati.
+[!DNL Adobe Experience Manager Assets] mantiene i metadati per ogni risorsa. Questo consente di suddividere le risorse in categorie e organizzarle in modo più semplice e aiuta le persone che cercano una risorsa specifica. Grazie alla possibilità di estrarre i metadati dai file caricati in [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di conservare e gestire i metadati con le risorse, [!DNL Experience Manager Assets] è possibile organizzare ed elaborare automaticamente le risorse in base ai metadati.
 
-* [Metadati XMP](xmp.md)
-* [Come modificare o aggiungere i metadati](meta-edit.md)
-* [Riferimento schemi metadati](meta-ref.md)
+* [Metadati XMP](xmp.md).
+* [Come modificare o aggiungere metadati](meta-edit.md).
+* [Riferimento](meta-ref.md)per gli schemi di metadati.
 
 ## Perché abbiamo bisogno di metadati {#why-we-need-metadata}
 
@@ -28,7 +28,7 @@ I metadati sono la raccolta di tutti i dati disponibili per una risorsa, ma non 
 * Nome della cartella in cui è contenuta.
 * Risorse correlate o tag applicati.
 
-Queste sono le proprietà di metadati di base che Experience Manager è in grado di gestire per le risorse. Questo consente agli utenti di visualizzare tutte le risorse, ad esempio, ordinate in base alla data dell’ultima modifica, utile per scoprire quali risorse sono state aggiunte di recente alla directory archivio.
+Si tratta delle proprietà di metadati di base che [!DNL Experience Manager] possono essere gestite per le risorse e che consentono agli utenti di visualizzare tutte le risorse, ad esempio, ordinate in base alla data dell’ultima modifica, utile per scoprire quali risorse sono state aggiunte di recente alla directory archivio.
 
 Puoi aggiungere più dati di alto livello alle risorse digitali, ad esempio:
 
@@ -40,30 +40,30 @@ Puoi aggiungere più dati di alto livello alle risorse digitali, ad esempio:
 
 Più metadati consentono di classificare ulteriormente le risorse ed è utile man mano che cresce la quantità di informazioni digitali. È possibile gestire poche centinaia di file in base solo ai nomi dei file. Tuttavia, questo approccio non è scalabile e si riduce rapidamente quando il numero di persone coinvolte e il numero di risorse gestite aumenta.
 
-Man mano che i metadati vengono aggiunti alle risorse, il valore della risorsa aumenta, poiché diventa,
+Con l’aggiunta di metadati, il valore di una risorsa digitale aumenta, poiché la risorsa diventa,
 
-* più accessibile - la gente può trovarlo molto più facile.
-* gestione più semplice: è possibile trovare più facilmente le risorse con lo stesso set di proprietà e apportare loro le modifiche necessarie.
-* più complessi: più metadati sono stati aggiunti a una risorsa, più importante sarà la gestione dei metadati.
+* Più accessibile - i sistemi e gli utenti possono trovarlo facilmente.
+* Gestione più semplice: puoi trovare più facilmente le risorse con lo stesso set di proprietà e apportare loro le modifiche necessarie.
+* Più completo: più metadati sono stati aggiunti a una risorsa, più informazioni e contesto sono disponibili.
 
-Per questi motivi, Experience Manager Assets offre i mezzi giusti per creare, gestire e scambiare metadati per le risorse digitali.
+Per questi motivi, [!DNL Assets] offre i mezzi giusti per creare, gestire e scambiare metadati per le risorse digitali.
 
 ## Tipi di metadati {#types-of-metadata}
 
 I due tipi di metadati di base sono i metadati tecnici e i metadati descrittivi.
 
-I metadati tecnici sono utili per le applicazioni software che si occupano di risorse digitali e non devono essere mantenuti manualmente. Experience Manager Assets e altri software determinano automaticamente i metadati tecnici e i metadati potrebbero essere modificati al momento della modifica della risorsa. I metadati tecnici disponibili per una risorsa dipendono in larga misura dal tipo di file della risorsa. Alcuni esempi di metadati tecnici sono:
+I metadati tecnici sono utili per le applicazioni software che si occupano di risorse digitali e non devono essere mantenuti manualmente. [!DNL Experience Manager Assets] e altri software determinano automaticamente i metadati tecnici e i metadati potrebbero essere modificati al momento della modifica della risorsa. I metadati tecnici disponibili per una risorsa dipendono in larga misura dal tipo di file della risorsa. Alcuni esempi di metadati tecnici sono:
 
-* Dimensioni di un file
-* Dimensioni (altezza e larghezza) di un’immagine
-* Bitrate di un file audio o video
-* Risoluzione (livello di dettaglio) di un&#39;immagine
+* Dimensione di un file.
+* Dimensioni (altezza e larghezza) di un’immagine.
+* Bitrate di un file audio o video.
+* Risoluzione (livello di dettaglio) di un’immagine.
 
 I metadati descrittivi sono metadati relativi al dominio applicazione, ad esempio l’azienda da cui proviene una risorsa. I metadati descrittivi non possono essere determinati automaticamente. Viene creato manualmente o semi-automaticamente. Ad esempio, una fotocamera GPS può tracciare automaticamente latitudine e longitudine e aggiungere il geotag all&#39;immagine.
 
 A causa dell&#39;alto costo del lavoro manuale necessario per creare informazioni descrittive sui metadati, sono stati definiti standard per facilitare lo scambio di metadata tra i sistemi software e le organizzazioni.
 
-Experience Manager Assets supporta tutti gli standard pertinenti per la gestione dei metadati.
+[!DNL Experience Manager Assets] supporta tutti gli standard pertinenti per la gestione dei metadati.
 
 Data l&#39;importanza dei metadata e l&#39;elevato coinvolgimento manuale necessario per creare i metadata, sono stati definiti standard che semplificano lo scambio.
 
@@ -71,14 +71,14 @@ Data l&#39;importanza dei metadata e l&#39;elevato coinvolgimento manuale necess
 
 Esistono diversi modi per incorporare i metadati nei file. Sono supportati alcuni standard di codifica:
 
-* XMP: utilizzato da Experience Manager Assets per archiviare i metadati estratti nell’archivio.
+* XMP: utilizzato per [!DNL Assets] archiviare i metadati estratti nella directory archivio.
 * ID3: per i file audio e video.
 * Exif: per i file di immagine.
 * Altro/Legacy: da Microsoft Word, PowerPoint, Excel e così via.
 
 ### XMP {#xmp}
 
-XMP (Extensible Metadata Platform) è uno standard aperto utilizzato da Experience Manager Assets per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre società supportano lo standard XMP in quanto fornisce un modello di contenuto avanzato. Gli utenti dello standard XMP e di Experience Manager Assets dispongono di una piattaforma potente su cui basarsi. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+XMP (Extensible Metadata Platform) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre società supportano lo standard XMP in quanto fornisce un modello di contenuto avanzato. Gli utenti dello standard XMP e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui costruire. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,11 +94,11 @@ I tag ID3 sono progettati per il formato di file MP3. Ulteriori informazioni sui
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Queste coppie nome-valore di metadati sono anche denominate tag, da non confondere con i tag in Experience Manager. Exif viene creato automaticamente dalle moderne fotocamere digitali e viene supportato dai moderni software grafici, e può essere considerato il denominatore più basso per la gestione dei metadata.
+Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Le coppie nome-valore dei metadati sono anche denominate tag, da non confondere con i tag in [!DNL Experience Manager]. Exif viene creato automaticamente dalle moderne fotocamere digitali e viene supportato dai moderni software grafici, e può essere considerato il denominatore più basso per la gestione dei metadata.
 
 Un importante limite di Exif è dato dal fatto che alcuni formati di file immagine popolari come BMP, GIF o PNG non lo supportano.
 
-I campi di metadati generalmente definiti da Exif sono di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, Experience Manager Assets offre la mappatura delle proprietà Exif in schemi [di metadati](metadata-schemas.md) comuni e in [XMP](xmp-writeback.md).
+I campi di metadati generalmente definiti da Exif sono di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif negli schemi [di metadati](metadata-schemas.md) comuni e in [XMP](xmp-writeback.md).
 
 ### Altri metadati {#other-metadata}
 
@@ -106,9 +106,9 @@ Altri metadati che possono essere incorporati dai file sono Microsoft Word, Powe
 
 ## Schemi metadati {#metadata-schemata}
 
-Gli schemi di metadati sono set predefiniti di definizioni di proprietà di metadati utilizzabili in varie applicazioni. Le proprietà sono sempre associate a una risorsa, il che significa che le proprietà sono &quot;informazioni sulla risorsa&quot;.
+Gli schemi di metadati sono set predefiniti di definizioni di proprietà di metadati utilizzabili in varie applicazioni. Le proprietà sono sempre associate a una risorsa, il che significa che le proprietà sono &#39;about&#39; della risorsa.
 
-Potete anche progettare i vostri schemi di metadati, se non ne esiste uno che soddisfi le vostre esigenze. Non duplicare le informazioni esistenti. La separazione degli schemi all&#39;interno di un&#39;organizzazione semplifica la condivisione dei metadati. Experience Manager fornisce un elenco predefinito degli schemi di metadati più comuni. L’elenco consente di iniziare nuovamente la strategia dei metadati e di scegliere rapidamente le proprietà di metadati necessarie.
+Potete anche progettare i vostri schemi di metadati, se non ne esiste uno che soddisfi le vostre esigenze. Non duplicare le informazioni esistenti. La separazione degli schemi all&#39;interno di un&#39;organizzazione semplifica la condivisione dei metadati. [!DNL Experience Manager] fornisce un elenco predefinito degli schemi di metadati più comuni. L’elenco consente di iniziare nuovamente la strategia dei metadati e di scegliere rapidamente le proprietà di metadati necessarie.
 
 Gli schemi di metadati supportati sono elencati di seguito.
 
@@ -123,19 +123,19 @@ Gli schemi di metadati supportati sono elencati di seguito.
 
 ### Metadati specifici per l’applicazione {#application-specific-metadata}
 
-I metadati specifici dell&#39;applicazione includono metadati tecnici e descrittivi. Se utilizzate queste opzioni, altre applicazioni potrebbero non essere in grado di utilizzare i metadati. Ad esempio, se disponete di una risorsa con metadati Adobe Photoshop e un’altra applicazione per il rendering delle immagini tenta di accedere ai metadati, potrebbe non essere in grado di accedere ai metadati. Se nelle risorse sono presenti molti metadati specifici per l’applicazione, potete creare un passaggio del flusso di lavoro che modifica una proprietà specifica per l’applicazione in una proprietà standard.
+I metadati specifici dell&#39;applicazione includono metadati tecnici e descrittivi. Se utilizzate queste opzioni, altre applicazioni potrebbero non essere in grado di utilizzare i metadati. Ad esempio, se disponete di una risorsa con [!DNL Adobe Photoshop] metadati e un’altra applicazione per il rendering delle immagini tenta di accedere ai metadati, potrebbe non essere in grado di accedere ai metadati. Se nelle risorse sono presenti molti metadati specifici per l’applicazione, potete creare un passaggio del flusso di lavoro che modifica una proprietà specifica per l’applicazione in una proprietà standard.
 
 * acdsee - metadati gestiti dal programma ACDSee [www.acdsee.com/](https://www.acdsee.com/).
 * album - Adobe Photoshop Album.
-* cq - utilizzato da Experience Manager Assets.
-* dam, utilizzato da Experience Manager Assets.
+* cq - utilizzato da [!DNL Experience Manager Assets].
+* dam - utilizzato da [!DNL Experience Manager Assets].
 * dex - Optima SC Description Explorer.
 * crs - Adobe Photoshop Camera Raw.
 * lr - Adobe Lightroom.
 * mediapro - IView MediaPro.
 * MicrosoftPhoto e MP - Microsoft Photo.
-* pdf e pdfx
-* photoshop &amp; psAux - Adobe Photoshop
+* pdf e pdfx.
+* photoshop &amp; psAux - Adobe Photoshop.
 
 ### Metadati Digital Rights Management {#digital-rights-management-metadata}
 
