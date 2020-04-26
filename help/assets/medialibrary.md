@@ -3,7 +3,7 @@ title: Confronto delle funzioni disponibili in Risorse AEM e Libreria di AEM Med
 description: Domande frequenti su Risorse AEM e Libreria AEM Media, comprese le differenze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
@@ -12,11 +12,11 @@ source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
 
 Risorse Adobe Experience Manager (AEM) è parte integrante della piattaforma AEM. Questa integrazione fluida è vista come un importante vantaggio di AEM e assicura coerenza nella gestione dei contenuti e un&#39;elevata produttività per gli autori dei contenuti.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Domande frequenti {#frequently-asked-questions}
 
 ### Cos’è AEM Assets? {#what-is-aem-assets}
 
-AEM Assets è un’applicazione della piattaforma AEM che consente ai clienti di gestire le risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l’interfaccia utente di amministrazione di AEM Assets.
+Risorse AEM è un’applicazione della piattaforma AEM che consente ai clienti di gestire le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l’interfaccia utente di amministrazione di AEM Assets.
 
 ### Cos’è la libreria AEM Media? {#what-is-the-aem-media-library}
 
@@ -41,10 +41,6 @@ No. Per semplificare l&#39;installazione e la distribuzione, tutte le applicazio
 
 Se intendete modificare metadati diversi da titolo, descrizione e tag, è necessario concedere la licenza a Risorse AEM.
 
-#### Voglio usare il predicato della categoria sul mio sito web. Sono necessarie Risorse AEM? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-Sì, il predicato della categoria, insieme a tutti gli altri componenti utilizzati in Geometrixx Press Center, fanno parte di AEM Assets e richiedono una licenza AEM Assets.
-
 #### È possibile ridimensionare automaticamente le immagini al momento dell&#39;importazione. Sono necessarie Risorse AEM? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 No. Il ridimensionamento e la trasformazione automatica basata sul flusso di lavoro delle immagini statiche, nonché la possibilità di gestire le rappresentazioni, fanno parte della libreria AEM Media. Queste funzioni non richiedono una licenza di AEM Assets.
@@ -64,3 +60,4 @@ Per questo caso d’uso non è necessario acquistare AEM Assets, anche l’utili
 >[!MORELIKETHIS]
 >
 >* [Elenco dettagliato delle differenze tra le funzioni](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+
