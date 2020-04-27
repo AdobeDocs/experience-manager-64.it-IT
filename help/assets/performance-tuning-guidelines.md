@@ -3,7 +3,7 @@ title: Guida all'ottimizzazione delle prestazioni di Assets
 description: AEM Assets offre aree di interesse chiave per la configurazione di AEM, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -209,11 +209,9 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 
 >[!NOTE]
 >
->I file ImageMagick policy.xml e configure.xml si trovano in /usr/lib64/ImageMagick-&amp;ast;/config/ invece di /etc/ImageMagick/. Per informazioni dettagliate sui percorsi dei file di configurazione, consultate la documentazione [](https://www.imagemagick.org/script/resources.php) ImageMagick.
+>I file ImageMagick `policy.xml` e `configure.xml` imageMagick si trovano in `/usr/lib64/ImageMagick-*/config/` anziché `/etc/ImageMagick/`. Per informazioni dettagliate sui percorsi dei file di configurazione, consultate la documentazione [di](https://www.imagemagick.org/script/resources.php) ImageMagick.
 
->[!NOTE]
->
->Se utilizzi AEM su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni.
+Se utilizzi AEM su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Experience Manager potrebbe non essere in grado di elaborare file PSB ad alta risoluzione con risoluzione superiore a 30000 x 23000 pixel.
 
 <!-- 
 
@@ -281,7 +279,7 @@ La funzione di writeback XMP aggiorna la risorsa originale ogni volta che i meta
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
-Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
 
 ## Replica {#replication}
 
