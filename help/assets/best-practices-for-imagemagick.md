@@ -3,7 +3,7 @@ title: Installazione e configurazione di ImageMagick per l’utilizzo con Risors
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -18,7 +18,7 @@ Per elaborare file di grandi dimensioni con ImageMagick, considerate requisiti d
 
 >[!NOTE]
 >
->Se utilizzi AEM su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni.
+>Se utilizzi AEM su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Experience Manager potrebbe non essere in grado di elaborare file PSB ad alta risoluzione con risoluzione superiore a 30000 x 23000 pixel.
 
 ## Installa ImageMagick {#installing-imagemagick}
 
@@ -27,7 +27,7 @@ Sono disponibili diverse versioni dei file di installazione ImageMagic per vari 
 1. Scaricate i file [di installazione](https://www.imagemagick.org/script/download.php) ImageMagick appropriati per il sistema operativo in uso.
 1. Per installare ImageMagick sul disco che ospita il server AEM, avviate il file di installazione.
 
-1. Impostate la variabile del percorso Ambiente sulla directory di installazione ImageMagic.
+1. Impostate la variabile del percorso Ambiente sulla directory di installazione di ImageMagic.
 1. Per verificare se l&#39;installazione è riuscita, eseguite il `identify -version` comando.
 
 ## Impostazione del passaggio della riga di comando {#set-up-the-command-line-process-step}
