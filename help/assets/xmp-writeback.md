@@ -3,7 +3,7 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
 
 ---
 
@@ -65,7 +65,7 @@ Le modifiche ai metadati vengono propagate alle rappresentazioni `thumbnail.140.
 
 ## Filtrare i metadati XMP {#filtering-xmp-metadata}
 
-AEM Assets supporta sia il filtro in blacklist che quello nella whitelist di proprietà/nodi per i metadati XMP che vengono letti dai file binari delle risorse e memorizzati in JCR quando vengono assimilate le risorse.
+AEM Assets supporta sia il filtro in blacklist che quello nella whitelist di proprietà/nodi per i metadati XMP letti dai binari delle risorse e memorizzati in JCR quando vengono assimilate le risorse.
 
 Il filtro Blacklist consente di importare tutte le proprietà dei metadati XMP, ad eccezione delle proprietà specificate per l&#39;esclusione. Tuttavia, per i tipi di risorse come i file INDD con enormi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtraggio della blacklist consente di importare un gran numero di risorse con numerosi metadati XMP, l’istanza o il cluster AEM può incontrare problemi di stabilità, ad esempio code di osservazione bloccate.
 
@@ -73,7 +73,7 @@ Il filtro whitelist dei metadati XMP risolve questo problema consentendo di defi
 
 >[!NOTE]
 >
->Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. AEM rileva questo valore nel campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
+>Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. AEM memorizza questo valore nel campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
 
 1. Apri Configuration Manager da `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
