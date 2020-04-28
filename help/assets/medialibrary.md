@@ -3,7 +3,7 @@ title: Confronto delle funzioni disponibili in Risorse AEM e Libreria di AEM Med
 description: Domande frequenti su Risorse AEM e Libreria AEM Media, comprese le differenze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
@@ -51,7 +51,7 @@ Il componente immagine fa parte di AEM WCM. La libreria grafica utilizzata dal c
 
 ### Come posso impedire ai miei utenti di utilizzare Risorse AEM se non dispongo della licenza per Risorse AEM? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Puoi rimuovere da AEM tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore di Risorse AEM. In questo modo si evita che gli utenti utilizzino accidentalmente le funzioni di Risorse AEM che non sono state autorizzate.
+Puoi rimuovere da AEM tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore di Risorse AEM. In questo modo si evita che gli utenti utilizzino accidentalmente le funzioni di Risorse AEM per le quali non è stata concessa la licenza.
 
 ### Desidero aggiungere delle immagini a una pagina e ritagliarle e ridimensionarle. Sono necessarie Risorse AEM? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
