@@ -3,7 +3,7 @@ title: Configurare l’editor Rich Text
 description: Scopri come configurare l’Editor Rich Text di AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ Configura le seguenti proprietà che si applicano in modalità di modifica fines
 * `rte-start`: Attiva questo evento sull’ `contenteditable-div` editor Rich Text, quando avviare la modifica dell’editor Rich Text. Questo funziona solo se `customStart` è stato impostato su true.
 
 Quando l’editor Rich Text viene utilizzato nella finestra di dialogo con attivazione touch, l’impostazione della proprietà `useFixedInlineToolbar` su true è obbligatoria per evitare problemi.
+
+## Personalizzazione della modifica locale {#customizing-in-place-editing}
+
+Potete definire il selettore HTML che verrà avviato dall&#39;editor di testo configurando le seguenti proprietà:
+
+* **`editElementQuery`** - Definita in `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare un selettore dell&#39;elemento HTML sul quale verrà avviata la modifica in linea per il componente Testo. Se non viene specificato, la modifica in linea viene avviata direttamente sul componente di testo HTML.
+* **`textPropertyName`** - Definita in `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare il nome della proprietà che verrà salvata nel nodo di contenuto in cui il valore HTML del componente di testo verrà mantenuto dopo la modifica in linea.
+
+La proprietà corrispondente per la modalità finestra di dialogo è `name`.
 
 ## Abilitare le funzionalità RTE attivando i plug-in {#enable-rte-functionalities-by-activating-plug-ins}
 
