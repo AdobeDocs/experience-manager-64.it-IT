@@ -3,7 +3,7 @@ title: Best practice per il formato dei file delle risorse
 description: Procedure ottimali per il supporto dei file in Risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -43,7 +43,7 @@ Adobe consiglia di utilizzare Adobe InDesign Server per estrarre rappresentazion
 
 Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la rete globale, scalabile e ottimizzata per le prestazioni. Offre esperienze di visualizzazione interattive e semplifica il processo di gestione delle campagne digitali. Per informazioni dettagliate sull’abilitazione di elementi multimediali dinamici, consultate [Configurazione di elementi multimediali](config-dynamic.md)dinamici.
 
-Al momento, Dynamic Media può supportare video fino a 20 GB di contenuto per file.
+Attualmente, Dynamic Media supporta i video fino a 15 GB di contenuto per file.
 
 ## Libreria ImageMagick {#imagemagick-library}
 
@@ -58,7 +58,7 @@ Per informazioni su come impostare la libreria ImageMagic in AEM, consultate [Ut
 
 ## Libreria di transcodifica immagini {#image-transcoding-library}
 
-La libreria Adobe Imaging Transcoding è una soluzione per l’elaborazione delle immagini che esegue le funzioni di base per la gestione delle immagini, tra cui codifica delle immagini, transcodifica, ricampionamento, ridimensionamento e così via.
+La libreria Adobe Imaging Transcoding è una soluzione per l’elaborazione delle immagini che esegue le funzioni di base per la gestione delle immagini, tra cui la codifica delle immagini, la transcodifica, il ricampionamento, il ridimensionamento e così via.
 
 La libreria Imaging Transcoding supporta i seguenti tipi MIME:
 
