@@ -10,14 +10,14 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
 
 # Video {#video}
 
-Questa sezione descrive come lavorare con i video in elementi multimediali dinamici.
+In questa sezione viene descritto come lavorare con i video in Contenuti multimediali dinamici.
 
 ## Avvio rapido: Video {#quick-start-videos}
 
@@ -39,12 +39,12 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 
       * [Creazione di un profilo](video-profiles.md)di codifica video.
       * Ulteriori informazioni sulle [procedure ottimali per la codifica](#best-practices-for-encoding-videos)video.
-   * Associate il profilo di elaborazione video a una o più cartelle in cui desiderate caricare i video principali.
+   * Associate il profilo di elaborazione video a una o più cartelle in cui intendete caricare i video principali.
 
       * [Applicazione di un profilo video alle cartelle](video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni sulle [procedure ottimali per l&#39;organizzazione delle risorse digitali per l&#39;utilizzo dei profili](organize-assets.md#organize-using-folders)di elaborazione.
       * Ulteriori informazioni sull’ [organizzazione delle risorse](organize-assets.md)digitali.
-   * Caricate i video principali nelle cartelle. Potete caricare file video fino a 20 GB ciascuno. Quando aggiungete dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
+   * Caricate i video principali nelle cartelle. Potete caricare file video fino a 15 GB ciascuno. Quando aggiungete dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
       * [Caricate i video](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Ulteriori informazioni sui formati [di file di input](assets-formats.md#supported-multimedia-formats)supportati.
@@ -86,7 +86,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
-   * Revisione, approvazione e annotazione di video
+   * Rivedere, approvare e annotare i video
 
       * [Annotazione dei video](managing-video-assets.md#annotating-video-assets) o [Annotazione delle risorse](managing-assets-touch-ui.md#annotating)
       * [Applicazione di flussi di lavoro alle risorse](assets-workflow.md) o [avvio di un flusso di lavoro su una risorsa](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
@@ -121,7 +121,7 @@ Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazio
 
 Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi, seleziona automaticamente il video con la codifica corretta tra i vari bitrate video presenti nel set video adattivo. Il video viene trasmesso in streaming a computer desktop, dispositivi mobili o tablet.
 
-Inoltre, la qualità video viene modificata automaticamente in modo dinamico se le condizioni della rete cambiano sul desktop o sul dispositivo mobile. Inoltre, se un cliente passa alla modalità a schermo intero su un computer desktop, il set video adattivo risponde utilizzando una risoluzione migliore, in modo da migliorare l’esperienza di visualizzazione del cliente. L’utilizzo di set video adattivi rappresenta la soluzione ottimale per i clienti che riproducono video Dynamic Media su schermi e dispositivi diversi.
+Inoltre, la qualità video viene modificata automaticamente in modo dinamico se le condizioni della rete cambiano sul desktop o sul dispositivo mobile. Inoltre, se un cliente passa alla modalità a schermo intero su un computer desktop, il set video adattivo risponde utilizzando una risoluzione migliore, in modo da migliorare l’esperienza di visualizzazione del cliente. L’utilizzo di set video adattivi rappresenta la soluzione ottimale per i clienti che riproducono video per contenuti multimediali dinamici su schermi e dispositivi diversi.
 
 La logica utilizzata da un lettore video per determinare quale video codificato riprodurre o selezionare durante la riproduzione si basa sul seguente algoritmo:
 
@@ -144,21 +144,21 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la Guida di riferimento visualizzatori [Adobe](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_about.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la Guida di riferimento dei visualizzatori [Adobe](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_about.html).
 
-Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: Formati video [supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Per un elenco dei dispositivi Windows che supportano questo formato video, consultate: Formati video [supportati su Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+Per un elenco dei dispositivi Windows che supportano questo formato video, consultate: [Formati video supportati su Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
 * Riproducete il video utilizzando i predefiniti per visualizzatori video per file multimediali dinamici, inclusi i seguenti elementi:
 
    * Visualizzatori per singoli video.
    * Visualizzatori per file multimediali diversi che combinano video e immagini.
 
-* Configurare i lettori video per soddisfare le esigenze di branding.
+* Configurate i lettori video per soddisfare le vostre esigenze di branding.
 * Integrare video nel sito Web, nel sito mobile o nell’applicazione mobile con un semplice URL o codice da incorporare.
 
-Consultate Riproduzione [video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480)dinamica.
+Consultate Riproduzione [video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)dinamica.
 
 Consultate anche [I visualizzatori](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 nella guida di riferimento dei visualizzatori Adobe Scene7.
 
@@ -166,7 +166,7 @@ Consultate anche [I visualizzatori](https://marketing.adobe.com/resources/help/e
 
 I predefiniti per visualizzatori video HTML5 per contenuti multimediali dinamici sono lettori video affidabili. Potete utilizzarli per evitare molte delle problematiche più comuni relative alla riproduzione di video HTML5 e ai dispositivi mobili, ad esempio la mancanza di distribuzione con streaming adattivo e la portata limitata del browser desktop.
 
-Dal punto di vista della progettazione del lettore, potete progettare tutte le funzionalità del lettore video utilizzando gli strumenti di sviluppo Web standard. Ad esempio, potete progettare pulsanti, controlli e sfondo personalizzato con immagine poster utilizzando HTML5 e CSS per raggiungere i clienti con un aspetto personalizzato.
+Dal punto di vista della progettazione del lettore, è possibile progettare tutte le funzionalità del lettore video utilizzando gli strumenti di sviluppo Web standard. Ad esempio, potete progettare pulsanti, controlli e sfondo personalizzato con immagine poster utilizzando HTML5 e CSS per raggiungere i clienti con un aspetto personalizzato.
 
 Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente la capacità video del browser. Viene quindi trasmesso il video con streaming HLS (streaming video adattivo). Oppure, se tali metodi di consegna non sono presenti, viene utilizzato lo progressivo HTML5.
 
@@ -279,19 +279,19 @@ Di seguito sono riportati alcuni suggerimenti per la codifica di file video sorg
 
 Per consigli sulla codifica video, consultate i seguenti riferimenti:
 
-* *Articolo:* Streaming 101: Le basi — Codec, larghezza di banda, velocità dati e risoluzione: [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* *Video: Nozioni di base sulla codifica* video: [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* Articolo: *Streaming 101: Nozioni di base — Codec, larghezza di banda, velocità dati e risoluzione:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Nozioni di base sulla codifica video:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### File video sorgente {#source-video-files}
 
-Quando codificate un file video, usate un file video sorgente della massima qualità possibile. Evitate di usare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica comporterebbe la perdita di qualità del video.
+Quando codificate un file video, usate un file video sorgente della massima qualità possibile. Evitate di usare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica comporterebbe la creazione di video di qualità inferiore.
 
 La tabella seguente riassume le dimensioni consigliate, le proporzioni e il bitrate minimo che i file video sorgente dovrebbero avere prima di codificarli:
 
 | Dimensione | Proporzioni | Bitrate minimo |
 |--- |--- |--- |
 | 1024x768 | 4:3 | 4500 kbps per la maggior parte dei video. |
-| 1280x720 | 16:9 | 3000 - 6000 Kbps, a seconda della quantità di movimento presente nel video. |
+| 1280x720 | 16:9 | 3000 - 6000 kbps, a seconda della quantità di movimento presente nel video. |
 | 1920 X 1080 | 16:9 | 6000 - 8000 kbps, a seconda della quantità di movimento presente nel video. |
 
 ### Ottenimento dei metadati di un file {#obtaining-a-file-s-metadata}
@@ -300,7 +300,7 @@ Per ottenere i metadati di un file potete visualizzarne i metadati utilizzando u
 
 1. Vai a questa pagina Web: [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo).
 1. Selezionate e scaricate il programma di installazione per la versione GUI in uso, quindi seguite le istruzioni di installazione.
-1. Dopo l’installazione, fate clic con il pulsante destro del mouse sul file video (solo Windows) e selezionate **[!UICONTROL MediaInfo]** oppure aprite **[!UICONTROL MediaInfo]** e trascinate il file video nell’applicazione. Vengono visualizzati tutti i metadati associati al file video, inclusi larghezza, altezza e fps.
+1. Dopo l’installazione, fate clic con il pulsante destro del mouse sul file video (solo Windows) e selezionate **[!UICONTROL MediaInfo]** oppure aprite **[!UICONTROL MediaInfo]** e trascinate il file video nell’applicazione. Vengono visualizzati tutti i metadati associati al file video, inclusi larghezza, altezza e fotogrammi al secondo.
 
 ### Proporzioni {#aspect-ratio}
 
@@ -335,9 +335,10 @@ Quando selezionate una codifica bitrate, potete scegliere due tipi:
 
 * **Codifica** a bitrate variabile (VBR) - La codifica VBR regola la velocità dati verso il basso e il limite superiore impostato, in base ai dati richiesti dal compressore. Ciò significa che durante un processo di codifica VBR il bitrate del file multimediale aumenta o diminuisce dinamicamente in base alle esigenze del bitrate dei file multimediali.
 
-   La codifica VBR richiede più tempo ma produce i risultati più favorevoli; la qualità del file multimediale è superiore. VBR è utilizzato soprattutto per la distribuzione http progressiva dei contenuti video.
+   La codifica VBR richiede più tempo, ma produce i risultati più favorevoli; la qualità del file multimediale è superiore. VBR è utilizzato soprattutto per la distribuzione http progressiva dei contenuti video.
 
-**Quando utilizzare VBR e CRB?** Quando si tratta di selezionare VBR e CBR, si consiglia quasi sempre di utilizzare VBR per i file multimediali. VBR offre file di qualità superiore con bitrate competitivi. Quando usate il VBR, accertatevi di utilizzarlo con una codifica a due passate e impostate il bitrate massimo su 1,5 volte il bitrate video di destinazione.
+**Quando utilizzare VBR e CRB?**
+Quando si tratta di selezionare VBR e CBR, si consiglia quasi sempre di utilizzare VBR per i file multimediali. VBR offre file di qualità superiore con bitrate competitivi. Quando usate il VBR, accertatevi di utilizzarlo con una codifica a due passate e impostate il bitrate massimo su 1,5 volte il bitrate video di destinazione.
 
 Quando scegliete un predefinito di codifica video, prendete in considerazione la velocità di connessione dell’utente finale di destinazione. Scegliete un predefinito con una velocità dati pari all’80% di quella velocità. Ad esempio, se la velocità di connessione dell’utente finale di destinazione è di 1000 Kbps, il predefinito migliore è uno con una velocità dati video di 800 Kbps.
 
@@ -347,14 +348,14 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 |--- |--- |
 | 256 | Connessione remota. |
 | 800 | Connessione mobile tipica. Per questa connessione, eseguite il targeting di una velocità dati compresa tra 400 e 800 per esperienze 3G. |
-| 2000 | Connessione desktop tipica a banda larga. Per questa connessione, eseguite il targeting di una velocità dati nell&#39;intervallo 800-2000 Kbps, con una media di 1200-1500 Kbps. |
+| 2000 | Connessione desktop tipica a banda larga. Per questa connessione, eseguite il targeting di una velocità dati nell&#39;intervallo 800-2000 Kbps, con una media di 1200-1500 Kbps per la maggior parte delle destinazioni. |
 | 5000 | Connessione a banda larga elevata tipica. La codifica in questo intervallo superiore non è consigliata perché la maggior parte dei consumatori non può distribuire video a questa velocità. |
 
 ### Risoluzione {#resolution}
 
 **La risoluzione** descrive l’altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
-La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
+La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320x240 e un file video con risoluzione 640x480:
 
 | Risoluzione | Pixel per fotogramma |
 |--- |--- |
@@ -383,7 +384,7 @@ Quando scegliete (o create) un predefinito di codifica video per il file video p
 
 ### Fps (fotogrammi al secondo) {#fps-frames-per-second}
 
-Negli Stati Uniti e in Giappone, la maggior parte dei video viene riprodotta a 29,97 fotogrammi al secondo (fps); in Europa, la maggior parte dei video viene riprodotta a 25 fps. I film sono ripresi a 24 fps.
+Negli Stati Uniti e in Giappone, la maggior parte dei video è riprodotta a 29,97 fotogrammi al secondo (fps); in Europa, la maggior parte dei video viene riprodotta a 25 fps. I film sono ripresi a 24 fps.
 
 Scegliete un predefinito di codifica video con un valore fps pari a quello del file video principale. Ad esempio, se il video principale è di 25 fps, scegliete un predefinito di codifica da 25 fps. Per impostazione predefinita, per tutte le codifiche personalizzate viene utilizzato il valore fps del file video principale. Per questo motivo, non è necessario specificare l’impostazione fps quando create un predefinito di codifica video.
 
@@ -440,7 +441,7 @@ Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264.
 
 Potete pubblicare risorse video AEM locali direttamente su un canale YouTube precedentemente creato.
 
-Per pubblicare le risorse video su YouTube, impostate Risorse AEM con i tag . Potete associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. Se la risorsa video non ha un tag, non viene pubblicata su YouTube.
+Per pubblicare le risorse video su YouTube, impostate Risorse AEM con i tag . Potete associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. Se la risorsa video non dispone di un tag, non viene pubblicata su YouTube.
 
 La pubblicazione su YouTube ignora il sistema del profilo di elaborazione in AEM e, di conseguenza, anche il profilo di codifica video. Questo bypass si verifica perché YouTube ha una propria codifica, pertanto non è necessario un profilo di elaborazione video. Nella maggior parte dei casi, tuttavia, si prevede che le risorse video siano già state sottoposte a un profilo di elaborazione video. Se si bypassa il profilo di elaborazione video e lo si pubblica direttamente su YouTube, significa semplicemente che la risorsa video in Risorse AEM non ottiene una miniatura visualizzabile. Inoltre, se eseguite in modalità di esecuzione per i contenuti multimediali dinamici, i video non codificati non funzioneranno con nessuno dei tipi di risorse per file multimediali dinamici.
 
@@ -479,7 +480,7 @@ Per pubblicare contenuti su YouTube, è necessario un account Google. Se avete u
 1. Nella pagina **[!UICONTROL Dashboard]** , toccate **[!UICONTROL Crea progetto]**.
 1. Nella finestra di dialogo **[!UICONTROL Nuovo progetto]** , inserite il nome di un progetto.
 
-   L&#39;ID progetto si basa sul nome del progetto. Scegliere con attenzione il nome del progetto; non può essere modificato dopo la creazione. Inoltre, dovrete immettere di nuovo lo stesso ID progetto quando in seguito avrete impostato YouTube in Adobe Experience Manager. Potrebbe essere utile annotare l&#39;ID del progetto.
+   L&#39;ID progetto si basa sul nome del progetto. Scegliere con attenzione il nome del progetto; non può essere modificato dopo la creazione. Inoltre, dovrete immettere di nuovo lo stesso ID progetto quando in un secondo momento avrete impostato YouTube in Adobe Experience Manager. Potrebbe essere utile annotare l&#39;ID del progetto.
 1. Toccate **[!UICONTROL Crea]**.
 
 1. Nel **[!UICONTROL dashboard]** del progetto, nella scheda **[!UICONTROL Guida introduttiva]** , toccate **[!UICONTROL Abilita API e ottenete le credenziali come chiavi]**.
@@ -495,7 +496,7 @@ Per pubblicare contenuti su YouTube, è necessario un account Google. Se avete u
 
    `https://<servername.domain>:<port_number>`
 
-   Ad esempio: `https://1a2b3c.mycompany.com:4321`
+   Esempio, `https://1a2b3c.mycompany.com:4321`
 
    **Nota**: L’esempio di percorso riportato sopra è solo a scopo illustrativo.
 
@@ -503,7 +504,7 @@ Per pubblicare contenuti su YouTube, è necessario un account Google. Se avete u
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Ad esempio: `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Esempio, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **Nota**: L’esempio di percorso riportato sopra è solo a scopo illustrativo.
 
@@ -608,11 +609,11 @@ Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa 
 
 ### (Facoltativo) Automatizzare l’impostazione delle proprietà predefinite di YouTube per i video caricati {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-Potete automatizzare l’impostazione delle proprietà di YouTube al caricamento dei video. A questo scopo, in AEM potete creare un profilo di elaborazione metadati.
+Potete automatizzare l’impostazione delle proprietà di YouTube al caricamento dei video. A questo scopo, in AEM è possibile creare un profilo di elaborazione metadati.
 
 Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori dai campi **[!UICONTROL Etichetta campo]**, **[!UICONTROL Mappa su proprietà]** e **[!UICONTROL Scelte]**, tutti disponibili in Schemi metadati per i video. Quindi, puoi aggiungere i valori per creare il tuo profilo di elaborazione dei metadati video di YouTube.
 
-**Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i video** caricati:
+**Per automatizzare facoltativamente l’impostazione delle proprietà predefinite di YouTube per i video** caricati:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 1. Toccate **[!UICONTROL il valore predefinito]**. (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;).
@@ -713,7 +714,7 @@ Dopo otto ore se viene ancora visualizzato un messaggio di stato con la dicitura
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-Potete ottenere una stringa URL di YouTube generata da elementi multimediali dinamici dopo la pubblicazione del video. Quando copiate l’URL di YouTube, questo viene inserito negli Appunti in modo da poterlo incollare nelle pagine del sito Web o dell’applicazione.
+Potete ottenere una stringa URL di YouTube generata da elementi multimediali dinamici dopo la pubblicazione del video. Quando copiate l’URL di YouTube, questo viene inserito negli Appunti e può quindi essere incollato nelle pagine del sito Web o dell’applicazione.
 
 L’URL di YouTube non è disponibile per la copia finché non avete pubblicato la risorsa video su YouTube.
 
@@ -769,7 +770,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
 1. Visualizzare l’avanzamento nei dettagli della risorsa. Quando toccate una risorsa, aprite il menu a discesa e selezionate **[!UICONTROL Timeline]**. Per restringere il campo alle attività del flusso di lavoro come la codifica o la pubblicazione su YouTube, selezionate **[!UICONTROL Flussi di lavoro]**.
 
-   ![chlimage_1-433](assets/chlimage_1-432.png)
+   ![chlimage_1-432](assets/chlimage_1-432.png)
 
    Eventuali informazioni sul flusso di lavoro, ad esempio la codifica, vengono visualizzate nella timeline. Per la pubblicazione su YouTube, la timeline **[!UICONTROL Workflow]** include anche il nome del canale YouTube e l’URL del video di YouTube. Inoltre, nella timeline **[!UICONTROL Workflow]** vengono visualizzate eventuali notifiche di errore.
 
@@ -778,7 +779,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >It may take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
    >* Configurazione coda di lavoro Apache Sling
-   >* Gestore processo esterno di Adobe Granite Workflow
+   >* Gestore processo esterno flusso di lavoro Adobe Granite
    >* Coda timeout flusso di lavoro Granite
    > 
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
@@ -795,7 +796,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
-   Nell’area Istanze **** flusso di lavoro potete inoltre sospendere, terminare o rinominare i flussi di lavoro. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro](/help/sites-administering/workflows-administering.md) .
+   Nell’area Istanze **** flusso di lavoro è inoltre possibile sospendere, terminare o rinominare i flussi di lavoro. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro](/help/sites-administering/workflows-administering.md) .
 
 1. For failed jobs, see **Workflow Failures** available from **[!UICONTROL Tools > Workflow > Failures]**. In **[!UICONTROL Errore flusso di lavoro]** sono elencate tutte le attività del flusso di lavoro che hanno generato errori.
 
@@ -810,7 +811,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >It may take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
    >* Configurazione coda di lavoro Apache Sling
-   >* Gestore processo esterno di Adobe Granite Workflow
+   >* Gestore processo esterno flusso di lavoro Adobe Granite
    >* Coda timeout flusso di lavoro Granite
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
@@ -938,15 +939,13 @@ Per visualizzare i rapporti sui video basati su un visualizzatore video creato c
 
    * Connetti i componenti a TrackingManager effettuando le seguenti operazioni:
 
-      
-Nel gestore di `s7sdk.Event.SDK_READY` eventi, allegare il componente che si desidera tracciare a TrackingManager.
+      Nel gestore di `s7sdk.Event.SDK_READY` eventi, allegare il componente che si desidera tracciare a TrackingManager.
 
       Ad esempio, se il componente è `videoPlayer`, aggiungete
 
       `trackingManager.attach(videoPlayer);`
 
-      
-per allegare il componente a trackingManager. Per tenere traccia di più visualizzatori su una pagina, utilizzate più componenti di gestione del tracciamento.
+      per allegare il componente a trackingManager. Per tenere traccia di più visualizzatori su una pagina, utilizzate più componenti di gestione del tracciamento.
 
    * Create l&#39;oggetto AppMeasurementBridge aggiungendo quanto segue:
 
@@ -1000,7 +999,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
    >
    >Per il supporto globale dei sottotitoli video in più lingue, tenete presente che lo standard WebVTT richiede la creazione di file .vtt e chiamate separati per ogni lingua da supportare.
 
-   In genere, è consigliabile assegnare al file VTT dei sottotitoli lo stesso nome del file video e aggiungerlo con le impostazioni internazionali della lingua, ad esempio -EN, -FR, -DE e così via. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti Web esistente.
+   In genere, è consigliabile assegnare al file VTT dei sottotitoli lo stesso nome del file video, aggiungendo il suffisso con le impostazioni internazionali della lingua, ad esempio -EN, -FR, -DE e così via. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti Web esistente.
 
 1. In AEM, caricate il file di sottotitoli WebVTT in DAM.
 1. Andate alla risorsa video *pubblicata* che desiderate associare al file di sottotitoli che avete caricato.
@@ -1029,7 +1028,7 @@ Per semplificare la visualizzazione e la navigazione dei video di formato esteso
 
 >[!NOTE]
 >
->Il lettore video utilizzato deve supportare l’uso di marcatori capitolo. I lettori video per contenuti multimediali dinamici supportano i marcatori di capitolo, ma l’utilizzo di lettori video di terze parti potrebbe non essere supportato.
+>Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video per contenuti multimediali dinamici supportano i marcatori di capitolo, ma l’utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
 Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nella guida Adobe Scene7 Viewer SDK for HTML5 fate riferimento all’intestazione &quot;Customizing Behavior Using Modifiers&quot; (Personalizzazione del comportamento mediante modificatori) nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. L’SDK per visualizzatori Adobe Scene7 può essere scaricato da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
@@ -1087,7 +1086,7 @@ Vedere [WebVTT: Formato Tracce testo video Web](https://dev.w3.org/html5/webvtt/
        <li>Nella barra a sinistra, toccate il nome del predefinito per visualizzatori video. L’anteprima del video viene aperta in una pagina separata.</li> 
        <li>Nella barra a sinistra, nella parte inferiore, toccate <strong>URL</strong>.</li> 
        <li>Nella finestra di dialogo URL, selezionate e copiate l’URL negli Appunti, quindi passate l’URL in un semplice editor di testo.</li> 
-       <li><br /> Aggiungete l’URL del video copiato con la sintassi seguente per associarlo all’URL del capitolo copiato: <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
+       <li>Aggiungete l’URL del video copiato con la sintassi seguente per associarlo all’URL copiato al file del capitolo:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
       </ol> </td> 
       </tr> 
       <tr> 
@@ -1109,7 +1108,7 @@ Vedere [WebVTT: Formato Tracce testo video Web](https://dev.w3.org/html5/webvtt/
 
 Potete scegliere tra dieci immagini in miniatura generate automaticamente da Contenuti multimediali dinamici e aggiungerle al video. Il lettore video visualizza la miniatura selezionata quando una risorsa video viene utilizzata con il componente Contenuti multimediali dinamici nell’ambiente di authoring di AEM Sites, AEM Mobile o AEM Screens. La miniatura funge da immagine statica che rappresenta al meglio il contenuto dell’intero video e incoraggia ulteriormente gli utenti a toccare il pulsante Riproduci.
 
-In base al tempo totale del video, Contenuti multimediali dinamici acquisisce dieci immagini in miniatura (impostazione predefinita) a 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono e se successivamente scegliete un’altra miniatura, non è necessario rigenerare la serie. Visualizzate l’anteprima delle dieci miniature, quindi selezionate quella da usare con il video. Se si desidera impostare l&#39;impostazione predefinita, è possibile utilizzare CRXDE Lite per configurare l&#39;intervallo di tempo in cui vengono generate le miniature. Ad esempio, se desiderate generare solo una serie di quattro immagini in miniatura con spaziatura uniforme dal video, potete configurare l’intervallo temporale a 24%, 49%, 74% e 99%.
+In base al tempo totale del video, Contenuti multimediali dinamici acquisisce dieci immagini in miniatura (impostazione predefinita) a 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono e se successivamente scegliete un’altra miniatura, non è necessario rigenerare la serie. Visualizzate l’anteprima delle dieci miniature, quindi selezionate quella da usare con il video. Se si desidera impostare l&#39;impostazione predefinita, è possibile utilizzare CRXDE Lite per configurare l&#39;intervallo di tempo durante il quale vengono generate le miniature. Ad esempio, se desiderate generare solo una serie di quattro immagini in miniatura con spaziatura uniforme dal video, potete configurare l’intervallo temporale a 24%, 49%, 74% e 99%.
 
 È consigliabile aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul sito Web.
 
