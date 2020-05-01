@@ -3,7 +3,7 @@ title: Formati di file supportati in AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
@@ -54,7 +54,7 @@ I formati immagine raster supportati per le funzioni di Dynamic Media sono i seg
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PFM |  |  |  |  |  |
+| PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
 | PSD **†** | ✓ |  |  |  |  |
@@ -73,6 +73,17 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 * Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, consultate Formati di file [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Per i file EPS, la funzione di writeback dei metadati è supportata in PostScript Document Structuring Convention (PS-Adobe) versione 3.0 o successiva.
+
+## Formati immagine raster non supportati in Contenuti multimediali dinamici (#unsupported-image-format-dynamic-media)
+
+Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Contenuti multimediali dinamici.
+
+* File PNG con dimensioni blocco IDAT superiori a 100 MB.
+* File PSB.
+* I file PSD con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati. Gli spazi colore DuoTone, Lab e Indexed non sono supportati.
+* File PSD con una profondità di bit maggiore di 16.
+* File TIFF con dati a virgola mobile.
+* file TIFF con spazio colore Lab.
 
 ## Libreria Rasterizer PDF {#supported-pdf-rasterizer-library}
 
