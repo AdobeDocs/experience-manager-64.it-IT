@@ -3,7 +3,7 @@ title: Importazione ed esportazione di metadati in massa
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
+source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
 
 ---
 
@@ -36,6 +36,12 @@ Per importare i metadati in massa, effettuate le seguenti operazioni:
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna per il file CSV con le risorse. |
 
 1. Toccate o fate clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla inbox Notifica. Passate alla pagina delle proprietà della risorsa e verificate se i valori dei metadati sono stati importati correttamente per le risorse.
+
+Per aggiungere data e marca temporale al momento dell’importazione dei metadati, utilizzate `YYYY-MM-DDThh:mm:ss.fff-00:00` il formato per la data e l’ora. Data e ora sono separate da `T`, `hh` è ore in formato 24 ore, `fff` è nanosecondi e `-00:00` è l’offset del fuso orario. Ad esempio, `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 ora di ora precedente.
+
+>[!CAUTION]
+>
+>Se il formato della data non corrisponde, `YYYY-MM-DDThh:mm:ss.fff-00:00`i valori della data non vengono impostati. I formati data del file CSV dei metadati esportati sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desiderate importarlo, convertitelo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
 
 ## Esporta metadati {#export-metadata}
 
