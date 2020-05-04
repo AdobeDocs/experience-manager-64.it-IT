@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -37,7 +37,7 @@ Prima di leggere questo articolo, è necessario avere familiarità con la [strut
 >[!CAUTION]
 >Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Tutti i progetti SPA su AEM devono essere basati sul [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ## Componente Meteo {#the-weather-component}
 
@@ -61,7 +61,7 @@ Il cambiamento è persistente e il componente si aggiorna automaticamente con i 
 
 ### Implementazione dei componenti del tempo {#weather-component-implementation}
 
-La componente meteo è in realtà basata su un componente React disponibile al pubblico, denominato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
+La componente meteo è in realtà basata su un componente React disponibile al pubblico, chiamato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
 
 Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’utilizzo del componente React Open Weather.
 
