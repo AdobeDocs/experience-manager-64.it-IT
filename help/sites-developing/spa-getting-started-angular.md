@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti in AEM per un sito creato utilizzando i framework SPA.
 
-La funzione di authoring SPA offre una soluzione completa per il supporto degli SPA in AEM. Questo articolo presenta un&#39;applicazione SPA semplificata sul framework Angular, spiega come viene assemblato, consentendo di iniziare a utilizzare rapidamente la propria SPA.
+La funzione di authoring SPA offre una soluzione completa per il supporto degli SPA in AEM. Questo articolo presenta un&#39;applicazione SPA semplificata sul framework Angular, spiega come viene assemblato, consentendo di iniziare rapidamente a utilizzare la propria SPA.
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ In realtà, la creazione dell&#39;app si basa su [Webpack](https://webpack.js.or
 
 Una volta creato, il pacchetto può essere caricato in un’istanza AEM.
 
-### Archetype Maven per SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+### AEM Project Archetype {#aem-project-archetype}
 
-Adobe consiglia di sfruttare il [Maven Archetype per SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) per avviare un progetto SPA personalizzato per AEM.
+Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
-## Struttura applicazione {#application-structure}
+## Struttura dell&#39;applicazione {#application-structure}
 
 L’inclusione delle dipendenze e la creazione dell’app come descritto in precedenza vi lasceranno con un pacchetto SPA funzionante che potete caricare nell’istanza di AEM.
 
@@ -226,7 +226,7 @@ Consente di `MainComponent` acquisire la rappresentazione JSON del modello di pa
 
 ### image.component.ts {#image-component-ts}
 
-Il componente `Page` è composto da componenti. Con l’assimilazione del JSON, il gruppo `Page` può elaborare quei componenti come `image.component.ts` illustrato di seguito.
+Il componente `Page` è composto da componenti. Con l’assimilazione del JSON, il gruppo `Page` può elaborare tali componenti, come `image.component.ts` illustrato di seguito.
 
 ```
 /// image.component.ts
@@ -282,9 +282,9 @@ Infine, l’immagine può essere riprodotta in `image.component.html`.
 
 È necessario che i componenti all’interno di un’applicazione a pagina singola condividano informazioni. Ci sono diversi modi consigliati di fare questo, elencati come segue in ordine crescente di complessità.
 
-* **** Opzione 1: Centralizzate la logica e la trasmissione ai componenti necessari, ad esempio utilizzando una classe util come soluzione orientata agli oggetti.
-* **** Opzione 2: Condividere gli stati dei componenti utilizzando una libreria di stati come NgRx.
-* **** Opzione 3: Sfruttare la gerarchia di oggetti personalizzando ed estendendo il componente contenitore.
+* **Opzione 1:** Centralizzate la logica e la trasmissione ai componenti necessari, ad esempio utilizzando una classe util come soluzione orientata agli oggetti.
+* **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come NgRx.
+* **Opzione 3:** Sfruttare la gerarchia di oggetti personalizzando ed estendendo il componente contenitore.
 
 ## Passaggi successivi {#next-steps}
 
