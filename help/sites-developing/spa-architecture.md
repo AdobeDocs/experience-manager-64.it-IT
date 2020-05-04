@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -27,9 +27,9 @@ Questo articolo presenta domande importanti da tenere in considerazione quando u
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
-## Archetype Maven per SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM Project Archetype {#aem-project-archetype}
 
-Qualsiasi progetto SPA su AEM deve sfruttare il [Maven Archetype per SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ## Principi di sviluppo SPA per AEM {#spa-development-principles-for-aem}
 
@@ -46,7 +46,7 @@ Se non è necessario supportare le funzioni di authoring di AEM, potrebbe essere
 
 ### Portabilità {#portability}
 
-Come per lo sviluppo di qualsiasi componente, i componenti devono essere progettati in modo da massimizzarne la portabilità. Eventuali schemi che contrastino con la portabilità o riutilizzabilità dei componenti dovrebbero essere evitati per garantire compatibilità, flessibilità e manutenibilità in futuro.
+Come per lo sviluppo di qualsiasi componente, i componenti devono essere progettati in modo da massimizzarne la portabilità. Eventuali schemi che si oppongono alla portabilità o alla riutilizzabilità dei componenti dovrebbero essere evitati per garantire compatibilità, flessibilità e manutenibilità in futuro.
 
 Lo sviluppatore deve evitare di utilizzare percorsi statici che fanno riferimento alla struttura del contenuto come percorsi che possono essere modificati in qualsiasi momento dagli autori del contenuto. Ciò limita anche la riutilizzabilità della libreria e impedisce l’utilizzo dell’Editor modelli di AEM, poiché la sua struttura si trova in una posizione diversa dal contenuto.
 
@@ -95,7 +95,7 @@ Ci possono essere tuttavia dei casi in cui ciò non è del tutto necessario. La 
   </tr>
   <tr>
    <td>Il progetto sfrutta appieno l’SDK dell’editor SPA e i componenti frontend sono sviluppati come libreria e la struttura del contenuto dell’app è delegata ad AEM.</td> 
-   <td><p>L'app è riutilizzabile e portatile.</p> <p>L'autore del contenuto può modificare l'app utilizzando l'esperienza di creazione del contenuto di AEM.<br /> </p> <p>L'SPA è compatibile con l'editor modelli.</p> </td> 
+   <td><p>L'app è riutilizzabile e portatile.</p> <p>L'autore del contenuto può modificare l'app utilizzando l'esperienza di authoring dei contenuti di AEM.<br /> </p> <p>L'SPA è compatibile con l'editor modelli.</p> </td> 
    <td><p>Lo sviluppatore non ha il controllo della struttura dell'app e della parte di contenuto delegata ad AEM.</p> <p>Lo sviluppatore può comunque riservare aree dell’app per il contenuto che non deve essere creato tramite AEM.</p> </td> 
   </tr>
  </tbody>
@@ -151,7 +151,7 @@ Di seguito è riportato un profilo dei passi che uno sviluppatore front-end deve
 
    Gli esempi `Page` e `ResponsiveGrid` sono buoni di classi che estendono la base `Container`.
 
-1. **Definire il componente`EditConfig`come parametro`MapTo()`**
+1. **Definite il componente come`EditConfig`parametro in`MapTo()`**
 
    Questo parametro è necessario per indicare all’editor in che modo il componente deve essere nominato fino a quando non viene ancora eseguito il rendering o non ha contenuto da riprodurre.
 
@@ -178,8 +178,8 @@ Questi blocchi di codice illustrano come i componenti React e Angular non necess
 
 L&#39; `MapTo` aiutante è la &quot;colla&quot; che permette di combinare i componenti back-end e front-end:
 
-* Indica al contenitore JS (o sistema di paragrafi JS) quale componente JS è responsabile per il rendering di ciascuno dei componenti presenti nel JSON.
-* Aggiunge all’HTML un attributo di dati HTML di cui il componente JS esegue il rendering, in modo che l’editor SPA sappia quale finestra di dialogo visualizzare all’autore quando modifica il componente.
+* Indica al contenitore JS (o al sistema di paragrafi JS) quale componente JS è responsabile per il rendering di ciascuno dei componenti presenti nel JSON.
+* Aggiunge un attributo di dati HTML al codice HTML rappresentato dal componente JS, in modo che l’editor SPA sappia quale finestra di dialogo visualizzare all’autore quando modifica il componente.
 
 Per ulteriori informazioni sull’utilizzo `MapTo` e la creazione di app SPA per AEM in generale, consulta la Guida introduttiva per il framework scelto.
 
@@ -219,7 +219,7 @@ L’architettura generale di AEM, compresi gli ambienti di sviluppo, authoring e
 
    Il dispatcher funge da livello di caching di AEM per i visitatori del sito.
 
-   * Le richieste vengono elaborate in modo simile a come si trovano in AEM Author, ma non vi sono richieste di informazioni sulla pagina, perché sono necessarie solo per l&#39;editor.
+   * Le richieste vengono elaborate in modo simile a come si trovano in AEM Author, ma non vi sono richieste di informazioni sulla pagina, poiché ciò è necessario solo per l&#39;editor.
    * Javascript, CSS, JSON e HTML sono memorizzati nella cache, ottimizzando la pagina per una distribuzione rapida.
 
 >[!NOTE]
