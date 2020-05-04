@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 # Rendering SPA e lato server{#spa-and-server-side-rendering}
 
 >[!NOTE]
->La funzione Editor applicazione per pagina singola (SPA) richiede [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o successivo.
+>La funzione Editor applicazione per pagina singola (SPA) richiede [AEM 6.4 Service Pack 2](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html) o successivo.
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
@@ -40,8 +40,8 @@ Quando si decide di implementare SSR è necessario prima stimare quale ulteriore
 
 SSR di solito fornisce un certo valore quando esiste un chiaro &quot;sì&quot; a una delle seguenti domande:
 
-* **** SEO: Il servizio SSR è ancora effettivamente richiesto affinché il sito venga indicizzato correttamente dai motori di ricerca che generano traffico? Tenere presente che i principali crawler del motore di ricerca ora valutano JS.
-* **** Velocità pagina: La SSR offre un miglioramento misurabile della velocità negli ambienti reali e contribuisce all&#39;esperienza complessiva dell&#39;utente?
+* **SEO:** Il servizio SSR è ancora effettivamente richiesto affinché il sito venga indicizzato correttamente dai motori di ricerca che generano traffico? Tenere presente che i principali crawler del motore di ricerca ora valutano JS.
+* **Velocità pagina:** La SSR offre un miglioramento misurabile della velocità negli ambienti reali e contribuisce all&#39;esperienza complessiva dell&#39;utente?
 
 Solo quando ad almeno una di queste due domande viene risposto con un &quot;sì&quot; chiaro per il progetto, Adobe consiglia di implementare SSR. Le sezioni seguenti descrivono come eseguire questa operazione utilizzando Adobe I/O Runtime.
 
@@ -88,7 +88,7 @@ I campi seguenti sono disponibili per la configurazione:
 
 >[!NOTE]
 >
->Questa configurazione sfrutta il modulo di rendering dei contenuti [remoti](#remote-content-renderer), che offre ulteriori opzioni di estensione e personalizzazione.
+>Questa configurazione sfrutta il modulo di rendering dei contenuti [remoti](#remote-content-renderer), che dispone di ulteriori opzioni di estensione e personalizzazione.
 
 ## Flusso di comunicazione basato su AEM {#aem-driven-communication-flow}
 
@@ -141,7 +141,7 @@ Per un esempio semplicistico, consultate l&#39;app [](https://github.com/Adobe-M
 >L&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal è solo a scopo dimostrativo e pertanto utilizza Node.js come esempio semplice invece del runtime di I/O Adobe consigliato. Questo esempio non deve essere utilizzato per nessun progetto.
 
 >[!NOTE]
->Tutti i progetti SPA su AEM devono essere basati sul [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ## Utilizzo di Node.js {#using-node-js}
 
