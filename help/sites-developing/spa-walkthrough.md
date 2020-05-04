@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -44,7 +44,7 @@ La procedura dettagliata si basa sulle funzionalità standard di AEM e sull’ap
 >
 >Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Tutti i progetti SPA su AEM devono essere basati sul [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ### Che cos&#39;è un SPA? {#what-is-a-spa}
 
@@ -205,7 +205,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione](/help/sites-developi
    </html>
    ```
 
-   La pagina non ha alcun contenuto all’interno del suo corpo. È composto principalmente da fogli di stile e una chiamata a uno script React, `we-retail-journal-react.js`.
+   La pagina non ha alcun contenuto all’interno del suo corpo. È composta principalmente da fogli di stile e una chiamata a uno script React, `we-retail-journal-react.js`.
 
    Questo script React è il driver principale di questa applicazione ed è responsabile del rendering di tutto il contenuto.
 
@@ -251,7 +251,7 @@ Utilizzando l&#39;applicazione di esempio We.Retail Journal, è chiaro come l&#3
 
 Inoltre, per l’autore di contenuti, la creazione di contenuti tramite un editor SPA è semplice in AEM.
 
-Nella sezione seguente verrà illustrato il contratto che consente all’editor SPA di correlare i componenti dell’SPA ai componenti di AEM e di ottenere questa esperienza di editing senza soluzione di continuità.
+Nella sezione seguente verrà illustrato il contratto che consente all’editor SPA di correlare i componenti dell’SPA ai componenti di AEM e di ottenere questa esperienza di modifica senza soluzione di continuità.
 
 1. Caricate l&#39;applicazione We.Retail Journal nell&#39;editor e passate alla modalità **Anteprima** .
 
