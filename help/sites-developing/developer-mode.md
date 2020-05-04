@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 ---
 
 
 # Modalità Sviluppatore{#developer-mode}
 
-Quando modificate le pagine in AEM, sono disponibili diverse [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) , inclusa la modalità Sviluppatore. Si apre un pannello laterale con diverse schede che forniscono allo sviluppatore informazioni sulla pagina corrente. Le tre schede sono:
+Quando si modificano le pagine in AEM, sono disponibili diverse [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) , inclusa la modalità Sviluppatore. Si apre un pannello laterale con diverse schede che forniscono allo sviluppatore informazioni sulla pagina corrente. Le tre schede sono:
 
 * **[Componenti](#components)**per visualizzare informazioni sulla struttura e sulle prestazioni.
 * **[Test](#tests)**per l’esecuzione di test e l’analisi dei risultati.
@@ -35,15 +35,8 @@ che aiutano uno sviluppatore a:
 >
 >* È disponibile solo nell’interfaccia touch (durante la modifica delle pagine).
 >* Non è disponibile sui dispositivi mobili o su piccole finestre sul desktop (a causa di limitazioni di spazio).
-   >
-   >  
-* Questo si verifica quando la larghezza è inferiore a 1024 px.
-   >
-   >
-* Richiede autorizzazioni/privilegi appropriati:
-   >
-   >  
-* L&#39;accesso alla modalità Sviluppatore è concesso agli utenti che dispongono dell&#39;accesso in scrittura su `/apps`.
+   >   * Questo si verifica quando la larghezza è inferiore a 1024 px.
+>* È disponibile solo per gli utenti membri del `administrators` gruppo.
 
 
 >[!CAUTION]
