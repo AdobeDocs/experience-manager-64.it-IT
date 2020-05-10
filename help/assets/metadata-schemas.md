@@ -3,7 +3,10 @@ title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
+source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 12%
 
 ---
 
@@ -32,22 +35,34 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
-   AEM offre i seguenti modelli:
-   * **predefinito**: Modulo schema metadati di base per le risorse.
+## Moduli schema metadati disponibili per impostazione predefinita {#available-metadata-schema-templates}
 
-      I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
+[!DNL Experience Manager] fornisce i seguenti modelli di modulo Schema metadati:
 
-      1. **immagine**: Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio `image/jpeg`, `image/png`e così via.
+### impostazione predefinita {#default-template}
 
-         Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:
-         * **jpeg**: Modulo schema per risorse con sottotipo `jpeg`.
-         * **tiff**: Modulo schema per le risorse con sottotipo `tiff`.
-      1. **applicazione**: Modulo schema per risorse con tipo MIME `application`, ad esempio `application/pdf`, `application/zip`e così via.
-         * **pdf**: Modulo schema per risorse con sottotipo `pdf`.
-      1. **video**: Modulo schema per risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
-   * **insieme**: Modulo schema per le raccolte.
-   * **content fragment:** Modulo schema per frammenti di contenuto.
-   * **moduli**: Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md).
+L’ [!UICONTROL impostazione predefinita] è il modulo dello schema di metadati di base per le risorse. I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
+
+* **image** è il modulo dello schema per le risorse con il tipo MIME &quot;image&quot;. Ad esempio `image/jpeg`, `image/png`e così via. Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:
+   * **jpeg** è il modulo dello schema per le risorse con sottotipo `jpeg`.
+
+   * **tiff** è il modulo dello schema per le risorse con sottotipo `tiff`.
+
+* **application** è il modulo dello schema per le risorse con tipo MIME `application`. Ad esempio `application/pdf`, `application/zip`e così via. **pdf** è il modulo dello schema per le risorse con sottotipo `pdf`.
+
+* **video** è il modulo dello schema per le risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
+
+### collection {#collection-template}
+
+La [!UICONTROL raccolta] è il modulo dello schema per le raccolte.
+
+### contentfragment {#contentfragment-template}
+
+Il frammento di [!UICONTROL contenuto] è il modulo dello schema per i frammenti di contenuto.
+
+### forms {#forms-template}
+
+Il modulo schema [!UICONTROL moduli] fa riferimento ad [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -78,7 +93,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. Nella pagina **[!UICONTROL Editor schema metadati]**, personalizza la pagina delle proprietà della risorsa trascinando uno o più componenti dall’elenco dei tipi di componenti della scheda **[!UICONTROL Genera modulo]** alla scheda **[!UICONTROL Base]**.
 
