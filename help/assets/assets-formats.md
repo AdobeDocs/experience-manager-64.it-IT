@@ -3,7 +3,10 @@ title: Formati di file supportati in AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 8%
 
 ---
 
@@ -77,6 +80,8 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 ## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Contenuti multimediali dinamici.
+
+Consultate anche [Rilevamento di formati di file non supportati per gli elementi multimediali](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dinamici.
 
 * File PNG con dimensioni blocco IDAT superiori a 100 MB.
 * File PSB.
