@@ -9,7 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '2128'
+ht-degree: 0%
 
 ---
 
@@ -78,14 +81,14 @@ I componenti SPA devono essere sincronizzati con il modello di pagina ed essere 
 
 ### Metadati {#meta-fields}
 
-Il modello di pagina utilizza JSON Model Exporter, anch&#39;esso basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html) . I modelli di sling esportabili mostrano il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello dati:
+Il modello di pagina utilizza JSON Model Exporter, anch&#39;esso basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html) . I modelli di sling esportabili mostrano il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 
 * `:type`: Tipo di risorsa AEM (predefinito = tipo di risorsa)
 * `:children`: Elementi secondari gerarchici della risorsa corrente. Gli elementi figlio non fanno parte del contenuto interno della risorsa corrente (si trova sugli elementi che rappresentano una pagina)
 * `:hierarchyType`: Tipo gerarchico di una risorsa. Al `PageModelManager` momento supporta il tipo di pagina
 
 * `:items`: Risorse di contenuto figlio della risorsa corrente (struttura nidificata, presenti solo in contenitori)
-* `:itemsOrder`: Elenco ordinato degli elementi figlio. L&#39;oggetto mappa JSON non garantisce l&#39;ordine dei campi. Con la mappa e l&#39;array corrente, il consumatore dell&#39;API ha i vantaggi di entrambe le strutture
+* `:itemsOrder`: Elenco ordinato degli elementi figlio. L&#39;oggetto mappa JSON non garantisce l&#39;ordine dei relativi campi. Avendo sia la mappa che l&#39;array corrente, il consumatore dell&#39;API ha i vantaggi di entrambe le strutture
 * `:path`: Percorso del contenuto di un elemento (presente su elementi che rappresentano una pagina)
 
 Consultate anche [Guida introduttiva ad AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -133,7 +136,7 @@ I seguenti metadati devono essere aggiunti all&#39;elemento HTML esterno prodott
 
 I seguenti metadati e nomi di classe devono essere aggiunti all&#39;elemento HTML esterno prodotto dal componente del progetto. Consentono all’Editor pagina di offrire funzionalità correlate.
 
-* `cq-placeholder`: Nome classe che identifica il segnaposto per un componente vuoto
+* `cq-placeholder`: Nome della classe che identifica il segnaposto per un componente vuoto
 * `data-emptytext`: Etichetta visualizzata dalla sovrapposizione quando un’istanza di componente è vuota
 
 **Segnaposto per componenti vuoti**
@@ -149,11 +152,11 @@ Ogni componente deve essere esteso con una funzionalità che decori l’elemento
 
 Un contenitore è un componente destinato a contenere ed eseguire il rendering di componenti secondari. A questo scopo, il contenitore esegue un&#39;iterazione sulle proprietà `:itemsOrder`, `:items` e `:children` del modello.
 
-Il contenitore recupera in modo dinamico i componenti secondari dallo store della [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) libreria. Il contenitore quindi estende il componente secondario con le funzionalità Provider di modelli e, infine, lo crea come istanza.
+Il contenitore recupera in modo dinamico i componenti secondari dallo store della [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) libreria. Il contenitore quindi estende il componente secondario con le funzionalità del provider di modelli e, infine, lo crea come istanza.
 
 ### Pagina {#page}
 
-Il `Page` componente estende il `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari, incluse le pagine figlie. A questo scopo, il contenitore esegue un&#39;iterazione sulle `:itemsOrder`, `:items`, e `:children` proprietà del modello. Il `Page` componente recupera dinamicamente i componenti secondari dall’archivio della libreria [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) . È `Page` responsabile della creazione di istanze dei componenti secondari.
+Il `Page` componente estende il `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari, incluse le pagine figlie. A questo scopo, il contenitore esegue un&#39;iterazione sulle `:itemsOrder`, `:items`, e `:children` proprietà del modello. Il `Page` componente recupera dinamicamente i componenti secondari dall’archivio della libreria [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) . È `Page` responsabile della creazione di un&#39;istanza dei componenti secondari.
 
 ### Griglia reattiva {#responsive-grid}
 
@@ -190,7 +193,7 @@ Ad esempio:
 
 #### Component Mapping {#component-mapping}
 
-La libreria [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) (Mappatura `MapTo` componente) sottostante e la suafunzione possono essere racchiusi ed estesi per fornire le funzionalità relative alla configurazione di modifica fornita insieme alla classe di componenti corrente.
+La [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) libreria sottostante e la sua `MapTo` funzione possono essere racchiusi ed estesi per fornire le funzionalità relative alla configurazione di modifica fornita insieme alla classe di componenti corrente.
 
 ```
 const EditConfig = {
@@ -212,7 +215,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-Nell’implementazione precedente, il componente del progetto viene esteso con la funzionalità di svuotamento prima che venga effettivamente registrato nell’archivio Mappatura [](/help/sites-developing/spa-blueprint.md#componentmapping) componente. A tal fine, è possibile incorporare ed estendere la libreria [ComponentMapping](#componentmapping) per introdurre il supporto dell&#39;oggetto di `EditConfig` configurazione:
+Nell’implementazione precedente, il componente del progetto viene esteso con la funzionalità di svuotamento prima che venga effettivamente registrato nell’archivio Mappatura [](/help/sites-developing/spa-blueprint.md#componentmapping) componente. A tal fine, è possibile incorporare ed estendere la [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) libreria per introdurre il supporto dell&#39;oggetto di `EditConfig` configurazione:
 
 ```
 /**
@@ -235,7 +238,7 @@ Nell’implementazione precedente, il componente del progetto viene esteso con l
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## Contratto con l’Editor pagina {#contract-wtih-the-page-editor}
+## Contratto con l’Editor pagina {#contract-with-the-page-editor}
 
 I componenti del progetto devono generare almeno i seguenti attributi di dati per consentire all’editor di interagire con essi.
 
