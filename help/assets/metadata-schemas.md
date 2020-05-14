@@ -3,9 +3,9 @@ title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 12%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 12%
 
 # Schemi metadati {#metadata-schemas}
 
-In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via.
+In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via. È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
-È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati. Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
+Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
 1. Tocca o fai clic su **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede.
 
@@ -25,7 +25,7 @@ In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout de
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Potete modificare le proprietà dei metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
+1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
