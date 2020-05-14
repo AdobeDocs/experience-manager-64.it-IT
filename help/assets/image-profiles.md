@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 37fb5430c64e0d5b6b82ec57c47e3c004b6e7f4f
+source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+workflow-type: tm+mt
+source-wordcount: '2626'
+ht-degree: 12%
 
 ---
 
@@ -26,6 +29,10 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 ## Crop options {#crop-options}
 
 Potete scegliere tra due opzioni di ritaglio immagini e un’opzione per automatizzare la creazione di campioni di colore e immagini.
+
+>[!IMPORTANT]
+>
+>Tenete presente che ogni generazione di Smart Crop creata richiede ulteriore elaborazione. Ad esempio, l’aggiunta di più di cinque proporzioni di SmartCrop può determinare una lenta velocità di assimilazione delle risorse. Può anche causare un maggiore carico sui sistemi. Poiché potete applicare Smart Crop a livello di cartella, Adobe consiglia di usarlo nelle cartelle *solo* dove è necessario.
 
 <table> 
  <tbody> 
@@ -54,7 +61,7 @@ Potete scegliere tra due opzioni di ritaglio immagini e un’opzione per automat
   <tr> 
    <td>Campione immagine e colore</td> 
    <td>Generare in massa un campione immagine per ciascuna immagine.</td> 
-   <td><p><strong>Nota</strong>: Lo Smart Swatch non è supportato in Dynamic Media Classic.</p> <p>Individuate e generate automaticamente campioni di alta qualità dalle immagini di prodotto che mostrano colore o texture.</p> <p>Per usare Campioni colore e immagine, selezionate <strong>Ritaglio</strong> avanzato dall’elenco a discesa Opzioni di ritaglio, quindi attivate la funzione a destra di Colore e Campione immagine. Immettete un valore in pixel nelle caselle di testo Larghezza e Altezza.</p> <p>Anche se tutti i ritagli immagine sono disponibili dalla barra Rendering, i campioni vengono utilizzati solo tramite la funzione Copia URL. Per eseguire il rendering del campione sul sito, dovete usare un componente di visualizzazione personalizzato. (L’eccezione a questo è rappresentata dai banner carosello. Dynamic Media fornisce il componente di visualizzazione per il campione usato nei banner del carosello.</p> <p><strong>Utilizzo dei campioni immagine</strong></p> <p>L’URL per i campioni immagine è semplice. Ovvero:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>dove <code>:Swatch</code> viene aggiunta alla richiesta della risorsa.</p> <p><strong>Utilizzo dei campioni colore</strong></p> <p>Per usare i campioni colore, effettuate una <code>req=userdata</code> richiesta con le seguenti opzioni:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Esempio di seguito è riportata una risorsa campione in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>ed ecco l' <code>req=userdata</code> URL corrispondente della risorsa campione:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> risposta è la seguente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Nota</strong>: Lo Smart Swatch non è supportato in Dynamic Media Classic.</p> <p>Individuate e generate automaticamente campioni di alta qualità dalle immagini di prodotto che mostrano colore o texture.</p> <p>Per usare Campioni colore e immagine, selezionate <strong>Ritaglio</strong> avanzato dall’elenco a discesa Opzioni di ritaglio, quindi attivate la funzione a destra di Colore e Campione immagine. Immettete un valore in pixel nelle caselle di testo Larghezza e Altezza.</p> <p>Anche se tutti i ritagli immagine sono disponibili dalla barra Rendering, i campioni vengono utilizzati solo tramite la funzione Copia URL. Per eseguire il rendering del campione sul sito, dovete usare un componente di visualizzazione personalizzato. (L’eccezione a questo è rappresentata dai banner carosello. Dynamic Media fornisce il componente di visualizzazione per il campione usato nei banner del carosello.</p> <p><strong>Utilizzo dei campioni immagine</strong></p> <p>L’URL per i campioni immagine è semplice. Ovvero:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>dove <code>:Swatch</code> viene aggiunta alla richiesta della risorsa.</p> <p><strong>Utilizzo dei campioni colore</strong></p> <p>Per usare i campioni colore, effettuate una <code>req=userdata</code> richiesta con le seguenti opzioni:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Ad esempio, di seguito è riportata una risorsa campione in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>ed ecco l' <code>req=userdata</code> URL corrispondente della risorsa campione:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> risposta è la seguente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -79,7 +86,7 @@ In Maschera **di contrasto**, sono disponibili le seguenti opzioni di filtro:
   </tr> 
   <tr> 
    <td>Quantità</td> 
-   <td>Controlla la quantità di contrasto applicata ai pixel lungo i bordi. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5.  Considerate il fattore come una misura dell'intensità del filtro. L'intervallo è 0-5.</td> 
+   <td>Controlla la quantità di contrasto applicata ai pixel lungo i bordi. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5. Considerate l'importo come una misura dell'intensità del filtro. L'intervallo è 0-5.</td> 
   </tr> 
   <tr> 
    <td>Raggio</td> 
@@ -87,7 +94,7 @@ In Maschera **di contrasto**, sono disponibili le seguenti opzioni di filtro:
   </tr> 
   <tr> 
    <td>Soglia</td> 
-   <td><p>Determina l’intervallo di contrasto da ignorare quando viene applicato il filtro maschera di contrasto.In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo e quindi resi più nitidi. Per evitare di introdurre disturbo, provate con valori compresi tra 0 e 255.</p> </td> 
+   <td><p>Determina l’intervallo di contrasto da ignorare quando viene applicato il filtro maschera di contrasto. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo e quindi resi più nitidi. Per evitare di introdurre disturbo, provate con valori compresi tra 0 e 255.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -112,7 +119,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 1. Toccate **[!UICONTROL Salva]**. Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
 
-## Modifica o eliminazione di profili immagine per elementi multimediali dinamici {#editing-or-deleting-image-profiles}
+## Modifica o eliminazione di profili immagine per elementi Contenuti multimediali dinamici {#editing-or-deleting-image-profiles}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selezionate il profilo immagine da modificare o rimuovere. Per modificarlo, selezionare **[!UICONTROL Modifica profilo]** elaborazione immagine. Per rimuoverlo, selezionate **[!UICONTROL Elimina profilo]** elaborazione immagine.
@@ -131,7 +138,7 @@ Le cartelle a cui è assegnato un profilo sono indicate nell&#39;interfaccia ute
 
 Quando aggiungete un ritaglio avanzato a un profilo di immagine esistente, dovete attivare nuovamente il flusso di lavoro [Aggiorna risorsa](assets-workflow.md) DAM per generare i raccolti per le risorse esistenti nell’archivio delle risorse.
 
-Potete applicare profili immagine a cartelle specifiche o globalmente a tutte le risorse.
+Potete applicare i profili immagine a cartelle specifiche o globalmente a tutte le risorse.
 
 ### Applicazione dei profili immagine per elementi multimediali dinamici a cartelle specifiche {#applying-image-profiles-to-specific-folders}
 
@@ -190,7 +197,7 @@ Consultate anche [Modifica del campione avanzato o avanzato di più immagini](#e
 
 **Per modificare il ritaglio avanzato o il campione avanzato di una singola immagine**:
 
-1. Toccate il logo AEM e andate a **[!UICONTROL Risorse]**, quindi alla cartella a cui è stato applicato un profilo immagine di ritaglio avanzato o campione avanzato.
+1. Toccate il logo AEM e andate a **[!UICONTROL Risorse]**, quindi alla cartella a cui è stato applicato un profilo immagine di ritaglio avanzato o di campione avanzato.
 
 1. Toccate la cartella per aprirne il contenuto.
 1. Toccate l’immagine di cui desiderate regolare il ritaglio avanzato o il campione avanzato.
@@ -228,14 +235,14 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 
    * Filtrare l’elenco di immagini visualizzabili in base ai nomi dei punti di interruzione. Nell’esempio seguente, le immagini vengono filtrate sul nome del punto di interruzione &quot;Medium&quot;.
 
-      Nell’angolo superiore destro della pagina, dall’elenco a discesa, selezionate un nome per punto di interruzione per filtrare le immagini visualizzate. Consultate l’immagine qui sopra.
+      Nell’angolo superiore destro della pagina, dall’elenco a discesa, selezionate un nome per punto di interruzione per filtrare le immagini visualizzate. (Vedete l’immagine qui sopra).
 
       ![edit_smart_Ritagini-elenco a discesa](assets/edit_smart_crops-dropdownlist.png)
 
    * Ridimensionate la casella di ritaglio avanzato. Effettuate una delle seguenti operazioni:
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio.
-      * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio. Oppure toccate o fate clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la maniglia d’angolo della casella di ritaglio per regolare la dimensione dell’area visibile del campione.
+      * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio. Oppure, toccate o fate clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la maniglia d’angolo della casella di ritaglio per regolare la dimensione dell’area visibile del campione.
       ![Ridimensionamento del ritaglio avanzato di un’immagine.](assets/edit_smart_crops-resize.png)
 
    * Spostate la casella di ritaglio avanzato. Effettuate una delle seguenti operazioni:
@@ -270,7 +277,7 @@ Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UIC
 
 ### Rimozione dei profili immagine per elementi multimediali dinamici dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
 
-1. Toccate il logo AEM, individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo immagine.
+1. Toccate il logo AEM, individuate le **[!UICONTROL risorse]** e quindi la cartella da cui desiderate rimuovere un profilo immagine.
 1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
 1. Seleziona **[!UICONTROL Nessuno]** dal menu a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi]**.
