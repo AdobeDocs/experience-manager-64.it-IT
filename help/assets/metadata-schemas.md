@@ -3,9 +3,9 @@ title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
+source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2527'
 ht-degree: 12%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 12%
 
 # Schemi metadati {#metadata-schemas}
 
-In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via.
+In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via.
 
-È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
+È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati. Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
-1. Per visualizzare la pagina delle proprietà di una risorsa, tocca o fai clic su **[!UICONTROL Visualizza proprietà]** da Azioni **** rapide nella sezione della risorsa nella vista a schede.
+1. Tocca o fai clic su **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,7 +25,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Modificate le proprietà dei metadati modificabili nelle varie schede.
+1. Potete modificare le proprietà dei metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -62,7 +62,7 @@ Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager
 
 1. Nella finestra di dialogo, immettere il titolo del modulo schema e fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## Modificare i moduli dello schema di metadati {#editing-metadata-schema-forms}
 
