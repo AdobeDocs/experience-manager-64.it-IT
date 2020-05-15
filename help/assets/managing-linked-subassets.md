@@ -1,16 +1,19 @@
 ---
-title: 'Gestione di risorse composte e '
-description: Scoprite come creare riferimenti a risorse AEM da file InDesign, Adobe Illustrator e Photoshop. Scoprite inoltre come utilizzare la funzione Visualizzatore pagina per visualizzare le singole pagine di file multipagina, inclusi file PDF, INDD, PPT, PPTX e Ai.
+title: Gestire le risorse composte e generare le risorse secondarie.
+description: Scoprite come creare riferimenti a risorse AEM da file InDesign, Adobe Illustrator e Photoshop. Scoprite inoltre come utilizzare la funzione Visualizzatore pagina per visualizzare le singole pagine di file con più pagine, inclusi file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+workflow-type: tm+mt
+source-wordcount: '1388'
+ht-degree: 0%
 
 ---
 
 
 # Gestire le risorse composte con le risorse secondarie {#managing-compound-assets}
 
-Risorse Adobe Experience Manager (AEM) può identificare se un file caricato contiene riferimenti a risorse già presenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a risorse AEM, viene creato un collegamento bidirezionale tra le risorse caricate e a cui viene fatto riferimento.
+Risorse Adobe Experience Manager (AEM) può identificare se un file caricato contiene riferimenti a risorse già presenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a risorse AEM, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui viene fatto riferimento.
 
 Oltre ad eliminare la ridondanza, il riferimento alle risorse AEM nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l&#39;efficienza e la produttività degli utenti.
 
@@ -45,7 +48,7 @@ Le risorse di riferimento esistono già in AEM Assets. Potete estrarre le risors
 
 >[!NOTE]
 >
->Se il server InDesign è proxy, i file InDesign hanno la loro anteprima incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il server InDesign non è proxy, le miniature devono essere estratte esplicitamente per i file InDesign.
+>Se il server InDesign è proxy, i file InDesign hanno la loro anteprima incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il server InDesign non è proxy, le miniature devono essere estratte in modo esplicito per i file InDesign.
 
 ### Creare riferimenti Trascinando le risorse AEM {#create-references-by-dragging-aem-assets}
 
@@ -84,9 +87,9 @@ Per le risorse supportate con formati con più pagine — File PDF, file AI, fil
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per attivare la generazione di risorse secondarie, effettuate le seguenti operazioni:
 
-1. Accedi a Experience Manager come amministratore. Accedere **[!UICONTROL a Strumenti > Workflow > Modelli]**.
+1. Accedi a Experience Manager come amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
 1. Selezionate il flusso di lavoro Aggiorna risorsa **** DAM e fate clic su **[!UICONTROL Modifica]**.
-1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungi il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
+1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
 
 Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 
@@ -110,7 +113,7 @@ Potete visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e A
 
 ![Visualizzare e visualizzare le pagine di una risorsa con più pagine](assets/view_multipage_asset_fmr.gif)
 
-Per InDesign, potete estrarre pagine utilizzando il server InDesign. Se le anteprime delle pagine vengono salvate durante la creazione di file InDesign, InDesign Server non è richiesto per l&#39;estrazione della pagina.
+Per InDesign, potete estrarre le pagine utilizzando il server InDesign. Se le anteprime delle pagine vengono salvate durante la creazione di file InDesign, InDesign Server non è richiesto per l&#39;estrazione della pagina.
 
 Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a sinistra e nei controlli Visualizzatore pagina:
 
@@ -120,6 +123,14 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 * **[!UICONTROL L’opzione Annota]** consente di inserire note sulla risorsa secondaria specifica. Le annotazioni utilizzate in risorse secondarie separate vengono raccolte e visualizzate insieme all’apertura della risorsa principale per la visualizzazione.
 
-* **[!UICONTROL L’opzione Panoramica]** pagina mostra tutte le risorse secondarie contemporaneamente.
+* **[!UICONTROL L’opzione Panoramica]** pagina consente di visualizzare tutte le risorse secondarie contemporaneamente.
 
 * **[!UICONTROL L&#39;opzione Timeline]** dalla barra a sinistra dopo aver fatto clic sull&#39;icona ![della barra a](assets/do-not-localize/aem_leftrail_contentonly.png) sinistra mostra il flusso di attività per il file.
+
+## Best practice e limitazioni {#best-practice-limitation-tips}
+
+* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi implementazione di Experience Manager. Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
+
+>[!MORELIKETHIS]
+>
+>* [Utilizzo dell’app desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
