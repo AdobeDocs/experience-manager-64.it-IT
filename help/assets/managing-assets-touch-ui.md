@@ -4,7 +4,10 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '9812'
+ht-degree: 2%
 
 ---
 
@@ -32,8 +35,8 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
-* il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
-* il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+* il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
+* il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload assets {#uploading-assets}
 
@@ -111,8 +114,8 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
-   * il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
-   * il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   * il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
+   * il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
    Inoltre, l’interfaccia Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta in tutte le viste (vista **[!UICONTROL a]** schede, vista **** Elenco e vista **** Colonna).
 
    Spesso, durante il caricamento simultaneo di risorse grandi o più risorse, gli indicatori visivi consentono di valutare l’avanzamento. Nella finestra di dialogo **[!UICONTROL Stato]** caricamento vengono visualizzati il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
@@ -436,8 +439,8 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >[!NOTE]
    >
    >I seguenti caratteri (elenco separato da spazi) non sono supportati:
-   >* il nome del file di risorse non deve contenere `* / : [ \ \ ] | # % { } ? &`
-   >* il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
+   >* il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 
 1. Nella pagina **[!UICONTROL Seleziona destinazione]** , effettuate una delle seguenti operazioni:
@@ -477,13 +480,13 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 1. Selezionate una rappresentazione per visualizzare o eliminare la rappresentazione.
 
-   **Eliminazione di una rappresentazione**
+   **Eliminare una rappresentazione**
 
-   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate l&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla [barra degli strumenti](/help/sites-authoring/basic-handling.md).
+   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate l&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla [barra degli strumenti](/help/sites-authoring/basic-handling.md). Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Caricamento di una nuova rappresentazione**
+   **Caricare una nuova rappresentazione**
 
    Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
