@@ -3,7 +3,10 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 2%
 
 ---
 
@@ -98,6 +101,10 @@ Per un modello di workflow, gli utenti possono creare un modulo di avvio che lo 
 
 * Effettuate una copia del flusso di lavoro Aggiorna risorsa  DAM e modificatelo per l&#39;esecuzione in una gerarchia di cartelle specifica. Questo approccio è utile per alcune cartelle.
 * I passaggi di elaborazione aggiuntivi possono essere aggiunti utilizzando un [OR diviso](/help/sites-developing/workflows-step-ref.md#or-split) in base alle condizioni applicabili a tutte le cartelle richieste.
+
+## Best practice e limitazioni {#best-practices-limitations-tips}
+
+* Considerate le vostre esigenze per tutti i tipi di rappresentazioni durante la progettazione di flussi di lavoro. Se non prevedete la necessità di una rappresentazione in futuro, rimuovete il passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
 
 >[!MORELIKETHIS]
 >
