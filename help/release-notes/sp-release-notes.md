@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b46378657b8a173986a669beaa56468886b23266
+source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+workflow-type: tm+mt
+source-wordcount: '21556'
+ht-degree: 24%
 
 ---
 
@@ -94,7 +97,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Impossibile aprire il file ZIP scaricato da DAM con WinZip (NPR-31745).
 
-### Integrazioni {#integrations-6480}
+### Integrations (Integrazioni){#integrations-6480}
 
 * I menu a discesa **Società** e **Suite di rapporti** vengono nascosti dopo che **Origine** rapporti è stata selezionata durante la configurazione di Adobe Analytics nei servizi cloud di Experience Manager (NPR-31729).
 
@@ -186,6 +189,10 @@ Alcuni degli elementi di rilievo di AEM 6.4.7.0 sono:
 * La versione di esportazione del pacchetto API `package com.day.cq.dam.handler.standard.msoffice` supportata dal `dam-handler` bundle viene aggiornata a 6.0.0 (CQ-4279059).
 Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nella vostra implementazione personalizzata, si consiglia di compilare il `dam-handler` bundle con l&#39;ultimo jar uber.
 
+* La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco (NPR-31311).
+
+* L&#39;ordinamento delle risorse in base alla colonna Nome è stato consentito nella vista Elenco (NPR-31299).
+
 **Problemi risolti**
 
 * I metadati di alcuni documenti PDF non vengono aggiornati e salvati nel PDF quando si modifica il titolo (NPR-31575).
@@ -214,7 +221,7 @@ Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nel
 
 * Dopo aver creato una pagina con un componente Contenuti multimediali dinamici durante la pubblicazione dello stesso elemento, dall’istanza di creazione in esecuzione su Contenuti multimediali dinamici - Modalità di esecuzione di Scene7, all’utente viene richiesto di pubblicare la configurazione dmscene7 (NPR-30880).
 
-* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo che sono stati modificati i valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
+* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo la modifica dei valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31306).
 
@@ -266,7 +273,7 @@ Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nel
 
 * Quando si salva il modello di frammento di contenuto, l&#39;ora nel campo data e ora è impostata su 00:00 (NPR-30540).
 
-##### Integrazioni {#integrations-6470}
+##### Integrations (Integrazioni){#integrations-6470}
 
 * Quando si configura Adobe Launch, viene anteposta una barra (/) all&#39;URL della libreria (NPR-30700).
 
@@ -807,7 +814,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * I dati JSON ricevuti da Target hanno una serie di caratteri escape che causano l&#39;interruzione della pagina dell&#39;applicazione. NPR-28318: Hotfix per CQ-4252043
 * Non è possibile modificare alcun componente dopo l’installazione di AEM 6.4.3. NPR-28125: Hotfix per CQ-4261216
 * L&#39;eliminazione di tutti i tag per un campo tag non è persistente per un frammento di contenuto strutturato. NPR-28133: Hotfix per CQ-4247241
-* Quando si modifica una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
+* Quando modificate una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
 * La versione dei frammenti di contenuto confronta diversi miglioramenti per AEM 6.4. NPR-27764
 * Se nel modello di frammento esperienza non è definito alcun cq:allowTemplates su /content/experience-fragments e allowPaths, viene generato un errore quando il frammento esperienza viene spostato/copiato. NPR-27487: Hotfix per CQ-4257489
 * Il pulsante Crea viene visualizzato all’aggiornamento per il nuovo utente. NPR-27335: Hotfix per CQ-4255360
@@ -1370,7 +1377,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 
 **Platform**
 
-* Ciclo di reindicizzazione| NPE durante l&#39;esecuzione di BinaryTextExtraction durante l&#39;aggiornamento locale da 6.3 a 6.4. Hotfix per Granite - 21677
+* Ciclo di reindicizzazione | NPE durante l&#39;esecuzione di BinaryTextExtraction durante l&#39;aggiornamento locale da 6.3 a 6.4. Hotfix per Granite - 21677
 * Sostituzione transfrontaliera del percorso interno contrassegnato /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Problema durante l&#39;esecuzione del rilevatore di pattern. NPR-25036: Hotfix per CQ-4248597
 * Voci di registro non scritte a causa di NPE in LogEntryImpl. NPR-25627: Hotfix per GRANITE-22383
 * La replica dell&#39;evento delete non verifica i diritti. NPR-25679: Hotfix per CQ-4241234
@@ -2221,10 +2228,10 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete in AEM 6.4.
 
-| Area | Funzione | Sostituzione | Versione |
+| Area | Funzione obsoleta | Sostituzione | Versione |
 |---|---|---|---|
-| Assets | Gestisci azione tag per risorse secondarie | Nessuna sostituzione | AEM 6.4.2.0 |
-| Integrazione di Assets con Adobe Creative Cloud | [AEM per la condivisione](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) di cartelle di Creative Cloud è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non apporterà ulteriori miglioramenti alla funzionalità di condivisione cartelle. Sebbene la funzione sia inclusa in AEM, i clienti sono invitati a usare la sostituzione. | Collegamento risorse Adobe o app desktop. Per ulteriori informazioni, consulta l’articolo sull’[integrazione di AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Assets | Gestisci azione tag per risorse secondarie | Nessuna sostituzione | AEM 6.4.2.0   |
+| Integrazione di Assets con Adobe Creative Cloud | [AEM per la condivisione](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) di cartelle di Creative Cloud è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non apporterà ulteriori miglioramenti alla funzionalità di condivisione cartelle. Sebbene la funzione sia inclusa in AEM, i clienti sono invitati a usare la sostituzione. | Collegamento risorse Adobe o app desktop. Per ulteriori informazioni, consulta l’articolo sull’[integrazione di AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0   |
 
 ### Problemi noti {#known-issues}
 
