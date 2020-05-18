@@ -3,7 +3,10 @@ title: Guida all'ottimizzazione delle prestazioni di Assets
 description: AEM Assets offre aree di interesse chiave per la configurazione di AEM, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3201'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Per migliorare i tempi di caricamento delle risorse, utilizzate lo storage ad al
 
 Presupponendo che il server disponga di memoria sufficiente, configurare un’unità RAM. In Linux, eseguite questi comandi per creare un&#39;unità RAM da 8 GB:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -75,13 +78,13 @@ Da AEM 6.1 SP1, se utilizzate un `sling:osgiConfig` nodo per configurare questa 
 
 ### Archivio dati condivisi {#shared-data-stores}
 
-L&#39;implementazione di un archivio dati file S3 o condiviso può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta Guida [al ridimensionamento delle](assets-sizing-guide.md)risorse.
+L&#39;implementazione di un archivio dati file condiviso o S3 può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta Guida [al ridimensionamento delle](assets-sizing-guide.md)risorse.
 
 ### S3 data store {#s-data-store}
 
 La seguente configurazione dell&#39;archivio dati S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ha aiutato Adobe a estrarre 12,8 TB di oggetti BLOB (Binary Large Object) da un archivio dati di file esistente in un archivio dati S3 presso un sito cliente:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -117,7 +120,7 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
-Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
+Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. L&#39;impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro perché, in questo caso, i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
 >[!NOTE]
 >
@@ -279,7 +282,7 @@ La funzione di writeback XMP aggiorna la risorsa originale ogni volta che i meta
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
-Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
+Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
 
 ## Replica {#replication}
 
@@ -297,7 +300,7 @@ Quando si replicano le risorse in un numero elevato di istanze pubblicate, ad es
 
 ## Indice di ricerca {#search-indexes}
 
-Assicuratevi di implementare i Service Pack più recenti e gli hotfix correlati alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consultate Suggerimenti per l’ottimizzazione [delle prestazioni| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) per alcune ottimizzazioni indice che possono essere applicate, a seconda della versione di AEM in uso.
+Assicuratevi di implementare i Service Pack più recenti e gli hotfix correlati alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consultate Suggerimenti per l’ottimizzazione [delle prestazioni | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) per alcune ottimizzazioni indice che possono essere applicate, a seconda della versione di AEM in uso.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consultate [Metodologia per l’analisi di query](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lente e per la creazione di [indici](/help/sites-deploying/queries-and-indexing.md)personalizzati. Per ulteriori informazioni sulle best practice relative alle query e agli indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -349,7 +352,7 @@ Aggiornare le configurazioni dell&#39;indice per migliorare il tempo di reindici
 1. Fate clic su **[!UICONTROL Salva tutto]**
 1. Monitorate il file error.log per vedere quando l&#39;indicizzazione è completata:
 
-   Reindicizzazione completata per gli indici: [/quercia:index/ntBaseLucene]
+   Reindicizzazione completata per gli indici: [/oak:index/ntBaseLucene]
 
 1. È inoltre possibile verificare che l&#39;indicizzazione viene completata aggiornando il nodo /oak:index/ntBaseLucene in CRXDe, poiché la proprietà reindex torna a false
 1. Una volta completata l&#39;indicizzazione, tornare a CRXDe e impostare la proprietà **[!UICONTROL type]** su disabled su questi due indici
