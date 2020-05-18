@@ -3,7 +3,10 @@ title: Scaricare risorse da AEM
 description: Scoprite come scaricare risorse da AEM e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ Per scaricare le risorse, individuate una risorsa, selezionatela, quindi toccate
 
 Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file multimediali diversi e Set caroselli.
 
-![Opzioni disponibili durante il download delle risorse da Risorse AEM](assets/asset_download_dialog.png)
+![Opzioni disponibili quando si scaricano le risorse da Risorse AEM](assets/asset_download_dialog.png)
 
 Di seguito sono riportate le opzioni di esportazione/download. Le rappresentazioni dinamiche sono univoche per gli elementi multimediali dinamici e consentono di generare rapidamente rappresentazioni oltre alla risorsa selezionata. Tale opzione è disponibile solo se è stata attivata l’opzione per gli elementi multimediali dinamici.
 
@@ -43,11 +46,12 @@ Il servlet predefinito in AEM consente agli utenti autenticati di emettere richi
 Per consentire il download delle risorse da DAM, ad esempio quando si utilizza un sistema simile a Asset Share Commons o ad altre implementazioni di tipo portale, è necessario abilitare manualmente il servlet tramite una configurazione OSGi. Adobe consiglia di impostare la dimensione di download consentita il più bassa possibile senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
 
 1. Create una cartella con una convenzione di denominazione per la modalità di esecuzione della pubblicazione, vale a dire `config.publish`:
-   `/apps/<your-app-name>/config.publish`Per definire le proprietà di configurazione per una modalità di esecuzione, vedere Modalità di [esecuzione](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode) per ulteriori informazioni.
+   `/apps/<your-app-name>/config.publish`
+Per definire le proprietà di configurazione per una modalità di esecuzione, vedere Modalità di [esecuzione](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode) per ulteriori informazioni.
 1. Nella cartella di configurazione, create un nuovo file di tipo `nt:file` denominato `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Compilate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` con le seguenti opzioni. Imposta una dimensione massima (in byte) per il download come valore di `asset.download.prezip.maxcontentsize`. L&#39;esempio seguente configura la dimensione massima del download ZIP a un massimo di 100 kB.
 
-```
+```java
 enabled=B"true"
 asset.download.prezip.maxcontentsize=I"102400"
 ```
@@ -56,9 +60,7 @@ asset.download.prezip.maxcontentsize=I"102400"
 
 È `Asset Download Servlet` possibile disabilitare il dispatcher in un&#39;istanza di AEM Publish aggiornando la configurazione del dispatcher per bloccare qualsiasi richiesta di download di risorse. Il servlet può anche essere disattivato manualmente tramite la console OSGi direttamente.
 
-1. Per bloccare le richieste di download delle risorse tramite una configurazione dispatcher, modifica la `dispatcher.any` configurazione e aggiungi una nuova regola alla sezione [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
-
-   ```/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }```
+1. Per bloccare le richieste di download delle risorse tramite una configurazione dispatcher, modifica la `dispatcher.any` configurazione e aggiungi una nuova regola alla sezione [filtro](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Potete disattivare manualmente il componente OSGi in un’istanza Pubblica, accedendo alla console OSGi all’indirizzo `<aem-host>/system/console/components`. Individuate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e fate clic su **[!UICONTROL Disattiva]**.
 
@@ -66,5 +68,5 @@ asset.download.prezip.maxcontentsize=I"102400"
 >
 >* [Scaricare risorse protette DRM](drm.md)
 >* [Scaricare risorse dall’app desktop AEM su Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Scaricare risorse tramite il collegamento Adobe Assets dall&#39;interno delle app Adobe Creative Cloud supportate](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Scaricare risorse tramite il collegamento Adobe Assets dall&#39;interno delle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
