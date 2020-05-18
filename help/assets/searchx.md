@@ -1,9 +1,12 @@
 ---
 title: Estensione della ricerca delle risorse
-description: Estendi le capacità di ricerca di Risorse AEM oltre le ricerche out-of-the-box per le risorse in base alle stringhe.
+description: Estendi le funzionalità di ricerca di Risorse AEM oltre le ricerche "out-of-the-box" per le risorse in base alle stringhe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 15%
 
 ---
 
@@ -44,7 +47,7 @@ Puoi aggiungere ulteriori schede di ricerca configurandole nell’amministratore
 
 ## Creazione di predicati personalizzati {#creating-custom-predicates}
 
-Risorse AEM include un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+Risorse AEM viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
 
 Oltre a utilizzare i predicati preesistenti, gli sviluppatori AEM possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
 
@@ -169,7 +172,7 @@ Per creare un predicato di gruppo:
 
 1. Aggiungi `titlepredicate.jsp`:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
