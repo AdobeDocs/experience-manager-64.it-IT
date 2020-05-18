@@ -3,7 +3,10 @@ title: Estendi editor risorse
 description: Scoprite come estendere le funzionalità di Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 13%
 
 ---
 
@@ -40,7 +43,7 @@ Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps
 
 Alcuni dei componenti di AEM Assets richiedono funzioni JS definite in `component.js`. Copiate questo file nella directory dei componenti e collegatelo.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,7 +53,7 @@ L&#39;esempio carica questa origine javascript in `head.jsp`(`/apps/geometrixx/c
 
 Alcuni dei componenti di Risorse AEM utilizzano la libreria widget di AEM. Per poter eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente azione tag richiede un altro componente.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -113,7 +116,7 @@ Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor
 
 Nella parte HTML, utilizzate il set di titoli precedente (risorsa o titolo della pagina):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,10 +139,10 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
 
 1. Aggiungi `samplemeta.jsp` con il seguente snippet:
 
-   ```xml
+   ```javascript
    <%--
    
-     Sample metadata field comopnent
+     Sample metadata field component
    
    --%><%@ page import="com.day.cq.dam.api.Asset,
                     java.security.AccessControlException" %><%
