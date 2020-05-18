@@ -1,9 +1,12 @@
 ---
 title: Utilizzo di Tracciatore pagina e codice da incorporare nelle pagine Web
-description: Scopri come includere il Tracciatore pagina e incorporare codici JavaScript nel codice del sito Web per consentire ad Adobe Analytics di acquisire dati di utilizzo intorno alle risorse.
+description: Scoprite come includere il Tracciatore pagina e incorporare codici JavaScript nel codice del sito Web per consentire ad Adobe Analytics di acquisire dati di utilizzo intorno alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
