@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2865'
 ht-degree: 33%
 
 ---
@@ -45,12 +45,13 @@ L’aggiunta di un componente Contenuti multimediali dinamici a una pagina equiv
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Trascinate sulla pagina un componente Contenuti multimediali dinamici da usare nella posizione desiderata.
-1. Fate clic sulla casella blu intorno al componente, quindi toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese).
+1. Passate il puntatore del mouse direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese).
 1. [Modificate i componenti](#dynamic-media-components) secondo necessità e fate clic sul segno di spunta per salvare le modifiche.
+1. 
 
 ### Abilitazione di componenti per contenuti multimediali dinamici {#enabling-dynamic-media-components}
 
-Se non è disponibile alcun componente per contenuti multimediali dinamici da aggiungere a una pagina, è probabile che sia necessario abilitare i componenti.
+Se non è disponibile alcun componente per contenuti multimediali dinamici da aggiungere a una pagina, è probabile che sia necessario prima abilitare i componenti che si desidera utilizzare.
 
 1. In AEM, apri la pagina in cui desideri aggiungere il Componente elementi multimediali dinamici.
 1. Sul lato sinistro della barra degli strumenti accanto alla parte superiore della pagina, toccate l’icona Informazioni pagina, quindi toccate **[!UICONTROL Modifica modello]** dall’elenco a discesa.
@@ -59,17 +60,17 @@ Se non è disponibile alcun componente per contenuti multimediali dinamici da ag
 
 1. Sul lato destro della barra degli strumenti accanto alla parte superiore della pagina, toccate **[!UICONTROL Struttura dall’elenco a discesa]**.
 
-![Criterio](/help/assets/assets-dm/structure-mode.png)
+   ![Criterio](/help/assets/assets-dm/structure-mode.png)
 
 1. Nella parte inferiore della pagina, toccate Contenitore **[!UICONTROL di]** layout per aprire la relativa barra degli strumenti, quindi toccate l&#39;icona Criterio.
 1. Nella pagina Contenitore **[!UICONTROL di]** layout, sotto l&#39;intestazione **[!UICONTROL Proprietà]** , assicurarsi che la scheda Componenti **** consentiti sia selezionata.
 
-![Componenti consentiti](/help/assets/assets-dm/allowed-components.png)
+   ![Componenti consentiti](/help/assets/assets-dm/allowed-components.png)
 
 1. Scorrete fino a visualizzare gli elementi **[!UICONTROL multimediali]** dinamici.
 1. Toccate l’icona > a sinistra di **[!UICONTROL Contenuti multimediali]** dinamici per espandere l’elenco, quindi selezionate i componenti Contenuti multimediali dinamici da attivare.
 
-![Elenco dei componenti per elementi per elementi per elementi per elementi per contenuti multimediali dinamici](/help/assets/assets-dm/dm-components-select.png)
+   ![Elenco dei componenti per elementi per elementi per elementi per elementi per contenuti multimediali dinamici](/help/assets/assets-dm/dm-components-select.png)
 
 1. Nell&#39;angolo superiore destro della pagina Contenitore **[!UICONTROL di]** layout, toccate l&#39;icona Fine (segno di spunta).
 
