@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 7%
 
 ---
 
@@ -50,8 +53,8 @@ Dopo aver acquisito familiarità con queste nozioni di base, nelle seguenti sott
 * [Articoli guida alla configurazione](/help/sites-deploying/ht-deploy.md)
 * [Console Web](/help/sites-deploying/web-console.md)
 * [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practice](/help/sites-deploying/best-practices.md)
-* [Distribuzione di Communities](/help/communities/deploy-communities.md)
+* [Best practice  ](/help/sites-deploying/best-practices.md)
+* [Implementazione di Communities](/help/communities/deploy-communities.md)
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
@@ -66,7 +69,7 @@ Adobe Experience Manager è un sistema client-server basato sul Web per la creaz
 
 A livello di infrastruttura, AEM fornisce le seguenti informazioni:
 
-* **Server** applicazioni Web: AEM può essere implementato in modalità standalone (include un server Web Jetty integrato) o come applicazione Web in un server applicazione di terze parti (WebLogic, WebSphere, ecc.).
+* **Server** applicazioni Web: AEM può essere implementato in modalità standalone (include un server Web Jetty integrato) o come applicazione Web all’interno di un server applicazione di terze parti (WebLogic, WebSphere, ecc.).
 * **Framework** applicazione Web: AEM incorpora Sling Web Application Framework che semplifica la scrittura di applicazioni Web RESTful orientate ai contenuti.
 * **Repository** contenuto: AEM include un JCR (Java Content Repository), un tipo di database gerarchico progettato specificamente per i dati non strutturati e semistrutturati. L&#39;archivio memorizza non solo il contenuto rivolto all&#39;utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall&#39;applicazione.
 
@@ -88,7 +91,7 @@ Il server AEM è basato su **Java** ed è eseguito sulla maggior parte dei siste
 
 Nella terminologia di AEM un’istanza è una copia di AEM in esecuzione su un server. Le installazioni di AEM in genere coinvolgono almeno due istanze, in genere eseguite su computer separati:
 
-* **Autore**: Un’istanza di AEM utilizzata per creare, caricare e modificare i contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
+* **Autore**: Un’istanza di AEM utilizzata per creare, caricare e modificare i contenuti e per amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
 * **Pubblica**: Un’istanza di AEM che trasmette al pubblico il contenuto pubblicato.
 
 Queste istanze sono identiche in termini di software installato. Sono differenziati solo per configurazione. Inoltre, la maggior parte delle installazioni utilizza un dispatcher:
@@ -101,7 +104,7 @@ Le sezioni seguenti descrivono entrambi gli scenari:
 
 * **In sede**: AEM è stato implementato e gestito nell’ambiente aziendale.
 
-* **Servizi gestiti - Cloud Manager per Adobe Experience Manager**: AEM distribuito e gestito da Adobe Managed Services.
+* **Servizi gestiti - Cloud Manager per Adobe Experience Manager**: AEM implementato e gestito da Adobe Managed Services.
 
 ### On-premise {#on-premise}
 
@@ -115,13 +118,13 @@ AEM Managed Services è una soluzione completa per la gestione dell&#39;esperien
 
 Con i servizi gestiti AEM i clienti possono trarre i seguenti vantaggi:
 
-**** Time to Market più veloce: Grazie all&#39;infrastruttura cloud flessibile di Adobe Managed Services, le organizzazioni possono pianificare, avviare e ottimizzare rapidamente le esperienze digitali di successo. Adobe gestisce l’architettura cloud senza bisogno di capitale, hardware o software aggiuntivi e di tecnici Adobe per il successo dei clienti, aiuto con l’architettura AEM, il provisioning, la personalizzazione per la connessione alle app back-end e procedure ottimali per la trasmissione live.
+**Time to Market più veloce:** Grazie all&#39;infrastruttura cloud flessibile di Adobe Managed Services, le organizzazioni possono pianificare, avviare e ottimizzare rapidamente le esperienze digitali di successo. Adobe gestisce l’architettura cloud senza bisogno di capitale, hardware o software aggiuntivi e di tecnici Adobe per il successo dei clienti, aiuto con l’architettura AEM, il provisioning, la personalizzazione per la connessione alle app back-end e procedure ottimali per la trasmissione live.
 
-**** Prestazioni superiori: Offre esperienze digitali affidabili per la vostra azienda con quattro opzioni di disponibilità del servizio: 99,5%, 99,9%, 99,95% e 99,99%. Inoltre, consente il backup automatico e modelli di disaster recovery multimodali per garantire affidabilità e gestione degli eventi.
+**Prestazioni superiori:** Offre esperienze digitali affidabili per la vostra azienda con quattro opzioni di disponibilità del servizio: 99,5%, 99,9%, 99,95% e 99,99%. Inoltre, consente il backup automatico e modelli di disaster recovery multimodali per garantire affidabilità e gestione degli eventi.
 
-**** Costi IT ottimizzati: La guida e l&#39;esperienza proattiva aiutano le organizzazioni a rimanere aggiornate sull&#39;ultima versione di AEM. Il servizio di manutenzione e supporto Adobe Platinum viene incluso automaticamente nelle nuove installazioni di AMS Enterprise/Basic, offrendo esperienza tecnica ed operativa per aiutare le organizzazioni a mantenere le proprie applicazioni mission critical. Le funzionalità Analytics o Target di base gratuite offrono un valore aggiuntivo, specialmente alle organizzazioni di mercato di fascia media con esigenze limitate di analisi e personalizzazione.
+**Costi IT ottimizzati:** La guida e l&#39;esperienza proattiva aiutano le organizzazioni a rimanere aggiornate sull&#39;ultima versione di AEM. Il servizio di manutenzione e supporto Adobe Platinum viene incluso automaticamente nelle nuove installazioni di AMS Enterprise/Basic, offrendo esperienza tecnica ed operativa per aiutare le organizzazioni a mantenere le proprie applicazioni mission critical. Le funzionalità Analytics o Target di base gratuite offrono un valore aggiuntivo, specialmente alle organizzazioni di mercato di fascia media con esigenze limitate di analisi e personalizzazione.
 
-**** Massima sicurezza: Garantisce la sicurezza fisica, di rete e dei dati di livello aziendale ospitando le applicazioni dei clienti in una struttura ad accesso limitato, dietro i sistemi firewall o all&#39;interno di un cloud privato virtuale. Include macchine virtuali a tenant singolo con crittografia solida dello storage dei dati, antivirali e isolamento dei dati.
+**Massima sicurezza:** Garantisce la sicurezza fisica, di rete e dei dati di livello aziendale ospitando le applicazioni dei clienti in una struttura ad accesso limitato, dietro i sistemi firewall o all&#39;interno di un cloud privato virtuale. Include macchine virtuali a tenant singolo con crittografia solida dello storage dei dati, antivirali e isolamento dei dati.
 
 **Cloud Manager**: Cloud Manager, parte dell&#39;offerta Adobe Experience Manager Managed Services è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include un&#39;integrazione continua all&#39;avanguardia e una pipeline di fornitura continua (CI/CD) che consente ai team IT e ai partner di implementazione di velocizzare la fornitura di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per i clienti dei servizi gestiti Adobe.
 
@@ -139,13 +142,13 @@ Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft Edge**, *
 
 ### Ottenimento del software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
 
 Il pacchetto software AEM è disponibile in due moduli:
 
-* **** cq-quickstart-6.4.0.jar: Un file *jar* eseguibile autonomo che include tutto il necessario per iniziare a usare.
+* **cq-quickstart-6.4.0.jar:** Un file *jar* eseguibile autonomo che include tutto il necessario per iniziare a usare.
 
-* **** cq-quickstart-6.4.0.war: Un file *bellico* da distribuire in un server applicazione di terze parti.
+* **cq-quickstart-6.4.0.war:** Un file *bellico* da distribuire in un server applicazione di terze parti.
 
 Nella sezione seguente viene descritta l&#39;installazione **** indipendente. Per informazioni dettagliate sull&#39;installazione di AEM in un server applicazione, consultate Installazione [di](/help/sites-deploying/application-server-install.md)Application Server.
 
@@ -171,7 +174,7 @@ Nella sezione seguente viene descritta l&#39;installazione **** indipendente. Pe
        license.properties
    ```
 
-   Se non fornite un `license.properties` file, AEM reindirizzerà il browser a una schermata di **benvenuto** all’avvio, in cui potete immettere una chiave di licenza. Se non disponete ancora di una chiave di licenza valida, dovrete richiedere ad Adobe una chiave di licenza valida.
+   Se non fornite un `license.properties` file, AEM reindirizzerà il browser a una schermata di **benvenuto** all’avvio, in cui è possibile immettere una chiave di licenza. Se non disponete ancora di una chiave di licenza valida, dovrete richiedere ad Adobe una chiave di licenza valida.
 
 1. Per avviare l&#39;istanza in un ambiente GUI, fai doppio clic sul **`cq-quickstart-6.4.0.jar`** file.
 
@@ -291,7 +294,7 @@ AEM viene avviato e reindirizzato automaticamente il browser Web alla pagina app
 
 Una volta effettuato l’accesso, potete accedere ad AEM. Per ulteriori informazioni, a seconda del ruolo, consulta quanto segue:
 
-* [Authoring](/help/sites-authoring/home.md)
+* [Authoring  ](/help/sites-authoring/home.md)
 * [Amministrazione](/help/sites-administering/home.md)
 * [Sviluppo](/help/sites-developing/home.md)
 * [Gestione](/help/managing/best-practices.md)
@@ -312,8 +315,8 @@ Questa sezione descrive le nozioni di base dell’installazione di AEM. Tuttavia
 * [Articoli guida alla configurazione](/help/sites-deploying/ht-deploy.md)
 * [Console Web](/help/sites-deploying/web-console.md)
 * [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practice](/help/sites-deploying/best-practices.md)
-* [Distribuzione di Communities](/help/communities/deploy-communities.md)
+* [Best practice  ](/help/sites-deploying/best-practices.md)
+* [Implementazione di Communities](/help/communities/deploy-communities.md)
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
