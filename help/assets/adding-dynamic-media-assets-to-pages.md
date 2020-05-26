@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 33%
@@ -47,7 +47,6 @@ L’aggiunta di un componente Contenuti multimediali dinamici a una pagina equiv
 1. Trascinate sulla pagina un componente Contenuti multimediali dinamici da usare nella posizione desiderata.
 1. Passate il puntatore del mouse direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese).
 1. [Modificate i componenti](#dynamic-media-components) secondo necessità e fate clic sul segno di spunta per salvare le modifiche.
-1. 
 
 ### Abilitazione di componenti per contenuti multimediali dinamici {#enabling-dynamic-media-components}
 
