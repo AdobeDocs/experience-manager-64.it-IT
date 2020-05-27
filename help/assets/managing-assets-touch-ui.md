@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
 >[!NOTE]
 >
->Per caricare le risorse mediante FTP in Contenuti multimediali dinamici - Pacchetto di funzioni di installazione in modalità Scene7 (FP) 18912 sull’autore di AEM. Contattate il supporto Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
+>Per caricare le risorse mediante FTP in Contenuti multimediali dinamici - Pacchetto di funzioni di installazione in modalità Scene7 (FP) 18912 sull’autore di AEM. Contatta l&#39;Assistenza clienti Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
 Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
@@ -339,7 +339,7 @@ Alcune limitazioni della funzione sono:
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
 
 
-## Modifica proprietà {#editing-properties}
+## Modifica delle proprietà {#editing-properties}
 
 1. Andate alla posizione della risorsa di cui desiderate modificare i metadati.
 
