@@ -3,7 +3,10 @@ title: Configurare AEM Assets con Brand Portal
 description: 'Scopri come configurare Risorse AEM con il Portale del marchio per la pubblicazione di risorse e raccolte nel Portale del marchio. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: a2bd2734b1ec923c87f707c5183b3813e4511f10
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1717'
+ht-degree: 46%
 
 ---
 
@@ -65,7 +68,7 @@ Per istruzioni dettagliate, vedete
 
 * [Note sulla versione di AEM 6.4 Service Pack](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Se non riesci a trovare il pacchetto AEM o il Service Pack più recente, contatta il supporto** .
+**Contatta l’Assistenza** clienti se non riesci a trovare il pacchetto AEM o il Service Pack più recente.
 
 ## Creare la configurazione {#configure-new-integration-64}
 
@@ -193,9 +196,9 @@ Verifica di aver eseguito i seguenti passaggi:
 
 >[!CAUTION]
 >
->È necessario disporre di una sola configurazione IMS. Non creare più configurazioni IMS.
+>Puoi disporre di una sola configurazione IMS. Non creare più configurazioni IMS.
 >
->Verificate che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera il controllo dello stato, non è valida. È necessario eliminarlo e creare una nuova configurazione valida.
+>Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
 
 
 
