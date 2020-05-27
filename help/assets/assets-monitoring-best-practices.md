@@ -3,7 +3,10 @@ title: Tecniche consigliate per il monitoraggio delle risorse
 description: Procedure ottimali per il monitoraggio dell’ambiente e delle prestazioni dell’istanza AEM dopo l’implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ In genere, Risorse AEM può essere monitorato in due modi, dal monitoraggio live
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/): Iftop visualizza informazioni dettagliate sull&#39;utilizzo di Ethernet/rete. Iftop visualizza le statistiche sui canali di comunicazione delle entità che utilizzano Ethernet e la quantità di larghezza di banda utilizzata. Iftop può essere installato nella maggior parte dei sistemi Linux utilizzando `yum install iftop` o `apt-get install iftop`.
 
 * Registratore di volo Java (JFR): Uno strumento commerciale di Oracle che può essere utilizzato liberamente in ambienti non di produzione. Per ulteriori dettagli, vedere [Come utilizzare il registratore di volo Java per diagnosticare problemi](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)di runtime CQ.
-* File di registro di errore AEM: Potete esaminare il file AEM error.log per informazioni sugli errori registrati nel sistema. Utilizzare il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
+* File di registro di errore AEM: Potete esaminare il file AEM error.log per informazioni sugli errori registrati nel sistema. Utilizzate il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
 * [Console](../sites-administering/workflows.md)Flusso di lavoro: Utilizza la console del flusso di lavoro per monitorare i flussi di lavoro che si trovano in ritardo o che restano bloccati.
 
 In genere, questi strumenti vengono utilizzati insieme per ottenere un’idea completa delle prestazioni dell’istanza AEM.
@@ -111,25 +114,25 @@ Di seguito sono riportati alcuni parametri di base che potete monitorare per AEM
 Agenti di replica
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: */system/console/jmx/com.adobe.granite.replica:type=agent,id=&quot;&lt;NOME_AGENTE>&quot;*
+* URL: */system/console/jmx/com.adobe.granite.replica:type=agent,id=&quot;&lt;NOME_AGENT>&quot;*
 * Istanze: Un autore e tutte le istanze pubblicate (per gli agenti di scaricamento)
 * Soglia allarme: Quando il valore di `QueueBlocked` è true o il valore di `QueueNumEntries` è maggiore del 150% della linea di base.
 
 * Definizione allarme: Presenza di una coda bloccata nel sistema per indicare che la destinazione di replica è inattiva o non raggiungibile. Spesso, problemi di rete o di infrastruttura causano la messa in coda di voci eccessive, che possono avere un impatto negativo sulle prestazioni del sistema.
 
-**Nota**:Per i parametri MBean e URL, sostituite `<AGENT_NAME>` con il nome dell&#39;agente di replica da monitorare.
+**Nota**: Per i parametri MBean e URL, sostituite `<AGENT_NAME>` con il nome dell&#39;agente di replica da monitorare.
 
-Contatore sessione
+Contatore di sessione
 
 * MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
 * URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;Statistiche OakRepository&quot;,type*=&quot;RepositoryStats&quot;
 * Istanze: Tutti i server
 * Soglia allarme: Quando le sessioni aperte superano la linea di base di oltre il 50%.
-* Definizione allarme: Le sessioni possono essere aperte tramite un frammento di codice e mai chiuse. Questo può accadere lentamente nel tempo e alla fine causare perdite di memoria nel sistema. Il numero di sessioni dovrebbe variare su un sistema, ma non dovrebbe aumentare continuamente.
+* Definizione allarme: Le sessioni possono essere aperte tramite un frammento di codice e non chiudersi mai. Questo può accadere lentamente nel tempo e alla fine causare perdite di memoria nel sistema. Il numero di sessioni dovrebbe variare su un sistema, ma non dovrebbe aumentare continuamente.
 
 Verifiche stato
 
-I controlli di integrità disponibili nel dashboard [](/help/sites-administering/operations-dashboard.md#health-reports) delle operazioni presentano MBean JMX corrispondenti per il monitoraggio. Tuttavia, potete scrivere controlli di integrità personalizzati per esporre ulteriori statistiche di sistema.
+I controlli di integrità disponibili nel dashboard [](/help/sites-administering/operations-dashboard.md#health-reports) delle operazioni presentano MBeans JMX corrispondenti per il monitoraggio. Tuttavia, potete scrivere controlli di integrità personalizzati per esporre ulteriori statistiche di sistema.
 
 Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per monitorare:
 
@@ -144,7 +147,7 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
 * Coda di replica
 
    * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
-   * URL: */system/console/jmx/org.apache.sling.healthcheck:name=replicaQueue,type=HealthCheck*
+   * URL: */system/console/jmx/org.apache.sling.Healthcheck:name=replicaQueue,type=HealthCheck*
    * Istanze: Un autore, tutti i server di pubblicazione
    * Soglia allarme: Quando lo stato non è OK
    * Definizione allarme: Lo stato di una delle metriche è WARN o CRITICAL. Per ulteriori informazioni sulla coda che ha causato il problema, controllate l’attributo di registro.
@@ -168,7 +171,7 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
 * Bundle attivi
 
    * MBean: org.apache.sling.HealthCheck:name=inactiveBundles,type=HealthCheck 
-   * URL: */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
+   * URL: */system/console/jmx/org.apache.sling.Healthcheck:name=inactiveBundles,type=HealthCheck*
    * Istanze: Tutti i server
    * Soglia allarme: Quando lo stato non è OK
    * Definizione allarme: Presenza nel sistema di bundle OSGi inattivi o non risolti. Per ulteriori informazioni sui bundle che hanno causato il problema, consultate l&#39;attributo di registro.
@@ -176,22 +179,20 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
 * Errori registro
 
    * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
-   * URL: */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
+   * URL: */system/console/jmx/org.apache.sling.Healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * Istanze: Tutti i server
    * Soglia allarme: Quando lo stato non è OK
    * Definizione allarme: I file di registro presentano degli errori. Per ulteriori informazioni sulla causa del problema, consultate l’attributo di registro.
 
-## Problemi comuni e risoluzioni {#common-issues-and-resolutions}
+## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
 Nel processo di monitoraggio, in caso di problemi, sono disponibili alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni relativi alle istanze di AEM:
 
 * Se si utilizza TarMK, eseguire spesso la compattazione Tar. Per ulteriori dettagli, vedere [Gestione dell&#39;archivio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Controllare `OutOfMemoryError` i registri. Per ulteriori informazioni, consultate [Analizzare i problemi](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)di memoria.
-
 * Controllate i file di registro per eventuali riferimenti a query non indicizzate, traversate ad albero o traverse di indice. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le procedure ottimali per l&#39;ottimizzazione delle prestazioni delle query e dell&#39;indicizzazione, consultate [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizzate la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o elevati consumatori di risorse specifiche.
 * Esaminare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze di AEM, incluso il dispatcher. Spesso si tratta di aree con collo di bottiglia. Per ulteriori informazioni, consulta Considerazioni sulla rete delle [risorse](assets-network-considerations.md).
-* Aggiornate il server AEM. L’istanza di AEM potrebbe avere dimensioni insufficienti. Il supporto Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
+* Aggiornate il server AEM. L’istanza di AEM potrebbe avere dimensioni insufficienti. L&#39;Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
 * Esaminare i `access.log` file e `error.log` le voci relative al momento in cui qualcosa è andato storto. Cercare pattern che possono indicare anomalie di codice potenzialmente personalizzate. Aggiungeteli all’elenco degli eventi monitorati.
-
