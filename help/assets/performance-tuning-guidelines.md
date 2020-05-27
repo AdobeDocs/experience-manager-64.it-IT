@@ -3,9 +3,9 @@ title: Guida all'ottimizzazione delle prestazioni di Assets
 description: AEM Assets offre aree di interesse chiave per la configurazione di AEM, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Da AEM 6.1 SP1, se utilizzate un `sling:osgiConfig` nodo per configurare questa 
 
 ### Archivio dati condivisi {#shared-data-stores}
 
-L&#39;implementazione di un archivio dati file condiviso o S3 può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta Guida [al ridimensionamento delle](assets-sizing-guide.md)risorse.
+L&#39;implementazione di un archivio dati file S3 o condiviso può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta Guida [al ridimensionamento delle](assets-sizing-guide.md)risorse.
 
 ### S3 data store {#s-data-store}
 
@@ -120,7 +120,7 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
-Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. L&#39;impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro perché, in questo caso, i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
+Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
 >[!NOTE]
 >
@@ -417,6 +417,6 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’u
 * Rimuovete i passaggi superflui dal flusso di lavoro DAM Update Asset (Aggiorna risorsa).
 * Configurare l&#39;eliminazione del flusso di lavoro e delle versioni.
 * Ottimizzare la configurazione dell&#39;indice Lucene.
-* Ottimizzate gli indici con i service pack e gli hotfix più recenti. Consultate il supporto Adobe per eventuali ottimizzazioni di indice aggiuntive disponibili.
+* Ottimizzate gli indici con i service pack e gli hotfix più recenti. Consultate l&#39;Assistenza clienti Adobe per eventuali ottimizzazioni dell&#39;indice aggiuntive disponibili.
 * Utilizzare `guessTotal` per ottimizzare le prestazioni della query.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
