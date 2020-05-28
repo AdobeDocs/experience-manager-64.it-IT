@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '7663'
+ht-degree: 0%
 
 ---
 
@@ -210,7 +213,7 @@ Potete creare variabili mutevoli per i metodi di elaborazione dei file basati su
 
 È possibile avviare un flusso di lavoro, un servizio o uno script per elaborare i documenti posizionati in una cartella di controllo.
 
-### Utilizzo di un servizio per elaborare i file di una cartella esaminata {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Utilizzo di un servizio per elaborare i file di una cartella esaminata   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un servizio è un&#39;implementazione personalizzata dell&#39; `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaccia. È registrato con OSGi insieme ad alcune proprietà personalizzate. Le proprietà personalizzate dell&#39;implementazione lo rendono unico e aiutano a identificare l&#39;implementazione.
 
@@ -720,7 +723,7 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 ### Creazione di un flusso di lavoro {#create-a-workflow-1}
 
-1. Apri l’interfaccia utente di AEM Workflow in una finestra del browser. `https://[server]:[port]/worklow`
+1. Apri l’interfaccia utente di AEM Workflow in una finestra del browser. `https://[server]:[port]/workflow`
 
 1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificate **Titolo** e fate clic su **OK**.
 1. Selezionate il flusso di lavoro appena creato e fate clic su **Modifica**. Il flusso di lavoro si apre in una nuova finestra.
