@@ -1,8 +1,8 @@
 ---
 title: Profili immagine per elementi multimediali dinamici
 seo-title: Profili immagine per elementi multimediali dinamici
-description: Potete creare profili immagine contenenti impostazioni per maschera di contrasto, ritaglio avanzato o campioni avanzati o entrambi, quindi applicare il profilo a una cartella di risorse di immagini.
-seo-description: Potete creare profili immagine contenenti impostazioni per maschera di contrasto, ritaglio avanzato o campioni avanzati o entrambi, quindi applicare il profilo a una cartella di risorse di immagini.
+description: Create profili immagine contenenti impostazioni per la maschera di contrasto, il ritaglio avanzato, lo smart campione o entrambi, quindi applicate il profilo a una cartella di risorse di immagini.
+seo-description: Create profili immagine contenenti impostazioni per la maschera di contrasto, il ritaglio avanzato, lo smart campione o entrambi, quindi applicate il profilo a una cartella di risorse di immagini.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2627'
 ht-degree: 12%
 
 ---
@@ -28,11 +28,11 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 
 ## Crop options {#crop-options}
 
-Potete scegliere tra due opzioni di ritaglio immagini e un’opzione per automatizzare la creazione di campioni di colore e immagini.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Tenete presente che ogni generazione di Smart Crop creata richiede ulteriore elaborazione. Ad esempio, l’aggiunta di più di cinque proporzioni di SmartCrop può determinare una lenta velocità di assimilazione delle risorse. Può anche causare un maggiore carico sui sistemi. Poiché potete applicare Smart Crop a livello di cartella, Adobe consiglia di usarlo nelle cartelle *solo* dove è necessario.
+Tenete presente che ogni generazione di Smart Crop creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque proporzioni di SmartCrop può determinare una lenta velocità di assimilazione delle risorse. Può anche causare un maggiore carico sui sistemi. Poiché potete applicare Smart Crop a livello di cartella, Adobe consiglia di usarlo nelle cartelle *solo* dove è necessario.
+
+Potete scegliere tra due opzioni di ritaglio immagine. Potete anche automatizzare la creazione di campioni di colore e immagini.
 
 <table> 
  <tbody> 
@@ -51,7 +51,7 @@ Potete scegliere tra due opzioni di ritaglio immagini e un’opzione per automat
      <li>Punto di partenza del ritaglio: A sinistra è X e In alto è Y</li> 
      <li>Calcolo orizzontale: dimensione in pixel orizzontale dell’immagine originale meno sinistra e quindi meno destra.</li> 
      <li>Calcolo verticale: altezza in pixel verticale meno in alto, quindi meno in basso in basso.</li> 
-    </ul> <p>Ad esempio, supponete di avere un’immagine da 4000 x 3000 pixel. Vengono utilizzati i valori: Top=250; Bottom=500; Left=300; Right=700.</p> <p>Dall’alto a sinistra (300.250) ritagliare utilizzando lo spazio di riempimento di (4000-300-700, 3000-250-500 o 3000.2250).</p> </td> 
+    </ul> <p>Ad esempio, supponete di avere un’immagine da 4000 x 3000 pixel. Vengono utilizzati i valori: Top=250, Bottom=500, Left=300, Right=700.</p> <p>Dall’alto a sinistra (300.250) ritagliare utilizzando lo spazio di riempimento di (4000-300-700, 3000-250-500 o 3000.2250).</p> </td> 
   </tr> 
   <tr> 
    <td>Ritaglio avanzato</td> 
@@ -74,7 +74,7 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 
 >[!NOTE]
 >
->La maschera di contrasto viene applicata solo alle rappresentazioni ridimensionate nel PTIFF (piramide tiff) con downsampling superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del file ptiff non vengono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostreranno la maschera di contrasto).
+>La maschera di contrasto viene applicata solo alle rappresentazioni ridimensionate nel PTIFF (piramide tiff) con downsampling superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del PTIFF non vengono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate e mostrano la maschera di contrasto.
 
 In Maschera **di contrasto**, sono disponibili le seguenti opzioni di filtro:
 
@@ -201,7 +201,7 @@ Consultate anche [Modifica del campione avanzato o avanzato di più immagini](#e
 
 1. Toccate la cartella per aprirne il contenuto.
 1. Toccate l’immagine di cui desiderate regolare il ritaglio avanzato o il campione avanzato.
-1. Sulla barra degli strumenti, toccate **[!UICONTROL Smart Crop]**.
+1. Nella barra degli strumenti, toccate **[!UICONTROL Smart Crop]**.
 
 1. Effettua una delle operazioni seguenti:
 
@@ -248,7 +248,7 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
    * Spostate la casella di ritaglio avanzato. Effettuate una delle seguenti operazioni:
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascinate la casella di ritaglio in una nuova posizione.
-      * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate la casella di ritaglio avanzato in una nuova posizione. Oppure, toccate o fate clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la casella di ritaglio campione avanzato in una nuova posizione.
+      * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate la casella di ritaglio avanzato in una nuova posizione. Oppure toccate il campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la casella di ritaglio campione avanzato in una nuova posizione.
       ![edit_smart_ritagriturismo](assets/edit_smart_crops-move.png)
 
    * Annullate tutte le modifiche e ripristinate il ritaglio avanzato o il campione avanzato originale (applicabile solo alla sessione di modifica corrente).
@@ -280,6 +280,6 @@ Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UIC
 1. Toccate il logo AEM, individuate le **[!UICONTROL risorse]** e quindi la cartella da cui desiderate rimuovere un profilo immagine.
 1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. Seleziona **[!UICONTROL Nessuno]** dal menu a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
