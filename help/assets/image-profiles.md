@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
+source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
 workflow-type: tm+mt
-source-wordcount: '2627'
-ht-degree: 12%
+source-wordcount: '2708'
+ht-degree: 11%
 
 ---
 
@@ -26,9 +26,15 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 >
 >Smart Crop è disponibile solo in modalità Contenuti multimediali dinamici - Scene7.
 
+>[!IMPORTANT]
+>
+>I profili immagine non sono applicabili ai file PDF.
+
 ## Crop options {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for paragraph directly below -->
+
+Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Vale a dire, per le diverse impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate agli elementi multimediali dinamici. Per questo motivo, Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo non si verificherà alcun impatto sulle diverse dimensioni utilizzate nel profilo immagine.
 
 Tenete presente che ogni generazione di Smart Crop creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque proporzioni di SmartCrop può determinare una lenta velocità di assimilazione delle risorse. Può anche causare un maggiore carico sui sistemi. Poiché potete applicare Smart Crop a livello di cartella, Adobe consiglia di usarlo nelle cartelle *solo* dove è necessario.
 
