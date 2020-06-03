@@ -4,7 +4,7 @@ description: Note sulla versione specifiche dei pacchetti di correzioni cumulati
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 22%
@@ -237,7 +237,7 @@ In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete i
 
 ## Problemi noti {#known-issues}
 
-* L&#39;aggiornamento della [!DNL chrome] versione 83 causa un problema nella creazione di pacchetti. Per risolvere il problema, utilizzate altri browser disponibili, ad esempio [!DNL Internet Explorer] e [!DNL Edge], o altre opzioni di installazione dei pacchetti standard di AEM.
+* L&#39;aggiornamento della [!DNL chrome] versione 83 causa un problema nella creazione di pacchetti. Per risolvere il problema, utilizzate altri browser disponibili, ad esempio [!DNL Internet Explorer] e [!DNL Firefox], o altre opzioni di installazione dei pacchetti standard di AEM.
 
 * Impossibile inviare un&#39;e-mail al server SMTP remoto utilizzando il mittente di posta predefinito di AEM, in quanto consente solo la comunicazione mediante TLS v1.2. Rimuovete il bundle `javax.mail:mail:1.5.0-b01` da `system/console` e aggiornate i bundle per risolvere il problema.
 
