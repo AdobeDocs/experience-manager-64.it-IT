@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+workflow-type: tm+mt
+source-wordcount: '1908'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Per assegnare tag ai contenuti e sfruttare l’infrastruttura di assegnazione ta
 * NodeType del nodo del contenuto con tag deve includere il [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin
 * Il [TagID](#tagid) viene aggiunto alla [`cq:tags`](#tagged-content-cq-tags-property) proprietà del nodo di contenuto e viene risolto in un nodo di tipo [`cq:Tag`](#tags-cq-tag-node-type)
 
-## Tag: cq:Tipo nodo tag {#tags-cq-tag-node-type}
+## Tag: cq:Tipo nodo tag  {#tags-cq-tag-node-type}
 
 La dichiarazione di un tag viene acquisita nella directory archivio in un nodo di tipo `cq:Tag.`
 
@@ -71,7 +74,7 @@ Gli spazi dei nomi consentono di raggruppare gli elementi. Il caso d’uso più 
 
 Lo spazio dei nomi del tag è il primo livello nella struttura ad albero secondaria della tassonomia, ovvero il nodo immediatamente sotto il nodo [radice della](#taxonomy-root-node)tassonomia. Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui elemento principale non è un tipo di `cq:Tag`nodo.
 
-Tutti i tag hanno uno spazio nomi. Se non viene specificato alcuno spazio dei nomi, il tag viene assegnato allo spazio dei nomi predefinito, che è TagID `default` (Title è `Standard Tags),`che è `/content/cq:tags/default.`
+Tutti i tag hanno uno spazio nomi. Se non viene specificato alcuno spazio dei nomi, il tag viene assegnato allo spazio dei nomi predefinito, che è TagID `default` (il titolo è `Standard Tags),`che è `/content/cq:tags/default.`
 
 ### Tag contenitore {#container-tags}
 
@@ -81,7 +84,7 @@ Inoltre, i tag contenitore (o super-tag) in una tassonomia fungono da sottotitol
 
 ### Risoluzione degli ID tag {#resolving-tagids}
 
-Se l&#39;ID del tag contiene due punti &quot;:&quot;, i due punti separano lo spazio nomi dal tag o dalla sotto-tassonomia, che vengono quindi separati con le normali barre &quot;/&quot;. Se l&#39;ID del tag non ha due punti, lo spazio dei nomi predefinito è implicito.
+Se l&#39;ID del tag contiene due punti &quot;:&quot;, i due punti separano lo spazio dei nomi dal tag o dalla sotto-tassonomia, che vengono quindi separati con le normali barre &quot;/&quot;. Se l&#39;ID del tag non ha due punti, lo spazio dei nomi predefinito è implicito.
 
 La posizione standard e unica dei tag si trova sotto /content/cq:tags.
 
@@ -89,9 +92,7 @@ I tag che fanno riferimento a percorsi o percorsi non esistenti che non puntano 
 
 Nella tabella seguente sono riportati alcuni tag ID di esempio, i relativi elementi e il modo in cui il tagID corrisponde a un percorso assoluto nell’archivio:
 
-
 Nella tabella seguente sono riportati alcuni tag ID di esempio, i relativi elementi e il modo in cui il tagID corrisponde a un percorso assoluto nell’archivio:\
-
 Nella tabella seguente sono riportati alcuni tag ID di esempio, i relativi elementi e il modo in cui il tagID corrisponde a un percorso assoluto nell’archivio:
 
 <table> 
@@ -102,7 +103,7 @@ Nella tabella seguente sono riportati alcuni tag ID di esempio, i relativi eleme
    <td><strong>ID locale</strong></td> 
    <td><strong>Tag contenitore</strong></td> 
    <td><strong>Tag foglia</strong></td> 
-   <td><strong>Percorso tag assoluto archivio<br /></strong></td> 
+   <td><strong>Percorso del tag assoluto del repository<br /></strong></td> 
   </tr> 
   <tr> 
    <td>diga:frutta/mela/rombo</td> 
@@ -227,8 +228,7 @@ Di seguito è riportata una descrizione degli effetti presenti nell’archivio d
 
 * `cq:movedTo` punta al tag B.
 
-   
-Questa proprietà indica che il tag A è stato spostato o unito nel tag B. Se si sposta il tag B, questa proprietà verrà aggiornata di conseguenza. Il tag A è quindi nascosto e viene conservato solo nell’archivio per risolvere gli ID tag nei nodi di contenuto che puntano al tag A. Il raccoglitore di tag per elementi indesiderati rimuove i tag come tag A, a cui nessun altro nodo di contenuto punta.
+   Questa proprietà indica che il tag A è stato spostato o unito nel tag B. Se si sposta il tag B, questa proprietà verrà aggiornata di conseguenza. Il tag A è quindi nascosto e viene conservato solo nell’archivio per risolvere gli ID tag nei nodi di contenuto che puntano al tag A. Il raccoglitore di tag per elementi indesiderati rimuove i tag come tag A, a cui nessun altro nodo di contenuto punta.
 
    Un valore speciale per la `cq:movedTo` proprietà è `nirvana`: viene applicato quando il tag viene eliminato ma non può essere rimosso dalla directory archivio perché sono presenti tag secondari con un tag `cq:movedTo` che deve essere mantenuto.
 
@@ -256,3 +256,88 @@ Questa proprietà indica che il tag A è stato spostato o unito nel tag B. Se si
 * Per pubblicare la modifica quando un tag è stato spostato o unito, è necessario replicare il `cq:Tag` nodo e tutti i relativi backlink: questa operazione viene eseguita automaticamente quando il tag viene attivato nella console di amministrazione dei tag.
 
 * Gli aggiornamenti successivi alla `cq:tags` proprietà della pagina puliscono automaticamente i riferimenti &quot;vecchi&quot;. Questo viene attivato perché la risoluzione di un tag spostato attraverso l&#39;API restituisce il tag di destinazione, fornendo così l&#39;ID del tag di destinazione.
+
+## Migrazione dei tag {#tags-migration}
+
+A partire da Experience Manager 6.4 i tag sono memorizzati in `/content/cq:tags`, precedentemente memorizzati in `/etc/tags`. Tuttavia, negli scenari in cui Adobe Experience Manager è stato aggiornato dalla versione precedente, i tag sono ancora presenti nella vecchia posizione `/etc/tags`. Nei sistemi aggiornati i tag devono essere migrati in `/content/cq:tags`.
+
+> [!NOTE]
+> Nella pagina Proprietà pagina dei tag, si consiglia di utilizzare l’ID tag (ad esempio `geometrixx-outdoors:activity/biking`) invece di codificare il percorso base del tag (ad esempio, `/etc/tags/geometrixx-outdoors/activity/biking`).
+> Per elencare i tag, `com.day.cq.tagging.servlets.TagListServlet` è possibile utilizzarli.
+
+> [!NOTE]
+> Si consiglia di utilizzare l&#39;API di gestione tag come risorsa.
+
+**Se l’istanza di AEM aggiornata supporta l’API TagManager**
+
+1. All’inizio del componente, l’API TagManager rileva se si tratta di un’istanza AEM aggiornata. Nel sistema aggiornato, i tag sono memorizzati in `/etc/tags`.
+
+1. L&#39;API TagManager viene quindi eseguita in modalità di compatibilità con versioni precedenti, il che significa che l&#39;API utilizza `/etc/tags` come percorso di base. In caso contrario, utilizza una nuova posizione `/content/cq:tags`.
+
+1. Aggiorna il percorso dei tag.
+
+1. Dopo aver migrato i tag nella nuova posizione, eseguire lo script seguente:
+
+```java
+import org.apache.sling.api.resource.*
+import javax.jcr.*
+
+ResourceResolverFactory resourceResolverFactory = osgi.getService(ResourceResolverFactory.class);
+ResourceResolver resolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
+Session session = resolver.adaptTo(Session.class);
+
+def queryManager = session.workspace.queryManager;
+def statement = "/jcr:root/content/cq:tags//element(*, cq:Tag)[jcr:contains(@cq:movedTo,\'/etc/tags\') or jcr:contains(@cq:backlinks,\'/etc/tags\')]";
+def query = queryManager.createQuery(statement, "xpath");
+
+println "query = ${query.statement}\n";
+
+def tags = query.execute().getNodes();
+
+
+tags.each { node ->
+        def tagPath = node.path;
+        println "tag = ${tagPath}";
+
+        if(node.hasProperty("cq:movedTo") && node.getProperty("cq:movedTo").getValue().toString().startsWith("/etc/tags")){
+
+                def movedTo = node.getProperty("cq:movedTo").getValue().toString();
+
+                println "cq:movedTo = ${movedTo} \n";
+
+                movedTo = movedTo.replace("/etc/tags","/content/cq:tags");
+                node.setProperty("cq:movedTo",movedTo);
+        } else if(node.hasProperty("cq:backlinks")){
+
+               String[] backLinks = node.getProperty("cq:backlinks").getValues();
+               int count = 0;
+
+               backLinks.each { value ->
+                       if(value.startsWith("/etc/tags")){
+                               println "cq:backlinks = ${value}\n";
+                               backLinks[count] = value.replace("/etc/tags","/content/cq:tags");
+    }
+                       count++;
+               }
+
+               node.setProperty("cq:backlinks",backLinks);
+  }
+}
+session.save();
+
+println "---------------------------------Success-------------------------------------"
+```
+
+Lo script raccoglie tutti i tag presenti `/etc/tags` nel valore della `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione sul set di risultati recuperato e risolve i valori `cq:movedTo` e `cq:backlinks` proprietà ai `/content/cq:tags` percorsi (nel caso in cui `/etc/tags` venga rilevato nel valore).
+
+**Se l’istanza AEM aggiornata viene eseguita sull’interfaccia utente classica**
+
+> [!NOTE]
+> L&#39;interfaccia classica non è conforme allo zero tempi di inattività e non supporta il nuovo percorso della base tag. Per utilizzare l’interfaccia classica, è necessario `/etc/tags` evitare di creare e riavviare il `cq-tagging` componente.
+
+
+In caso di istanze AEM aggiornate supportate dall’API TagManager e in esecuzione nell’interfaccia classica:
+
+1. Una volta che i riferimenti al vecchio percorso di base dei tag `/etc/tags` vengono sostituiti utilizzando tagId o una nuova posizione di tag `/content/cq:tags`, potete migrare i tag nella nuova posizione `/content/cq:tags` in CRX seguita dal riavvio del componente.
+
+1. Dopo aver trasferito i tag nella nuova posizione, eseguire lo script di cui sopra.
