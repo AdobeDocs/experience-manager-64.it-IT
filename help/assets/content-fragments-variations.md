@@ -10,7 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1845'
+ht-degree: 18%
 
 ---
 
@@ -46,7 +49,7 @@ Eseguire una serie di altre azioni in base al tipo di dati in corso di modifica;
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Tieni presente quanto segue:
+Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Operazioni disponibili:
 
 * apportare modifiche direttamente nella scheda **Variazioni**
 * aprire l’editor [a schermo](#full-screen-editor) intero su:
@@ -101,7 +104,7 @@ Le opzioni per la modifica del testo su più righe dipendono dal formato selezio
 * [Testo normale](#plain-text)
 * [Markdown](#markdown)
 
-Il formato può essere selezionato con l&#39;editor a schermo intero.
+Il formato può essere selezionato quando si utilizza l&#39;editor a schermo intero.
 
 ### Formato RTF {#rich-text}
 
@@ -119,7 +122,7 @@ La modifica RTF consente di formattare:
 
    * Incolla testo/da Word
    * Inserire una tabella
-   * Stile paragrafo: Paragrafo, Rubrica 1/2/3
+   * Stile paragrafo: Paragrafo, Intestazione 1/2/3
    * [Inserire risorse visive](#inserting-assets-into-your-fragment)
    * Ricerca
    * Trova/Sostituisci
@@ -190,12 +193,12 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
 >
 >L&#39;inglese è disponibile out-of-the-box.
 >
->Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share:
+>Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share o Software Distribution:
 >
->* [Francese (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francese (fr) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francese (fr) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [tedesco (de) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [Italiano (IT) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [Spagnolo (es) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -290,7 +293,7 @@ Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; �
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di prendere il contenuto **principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di utilizzare il contenuto **principale** e di modificarlo in base allo scopo (se necessario).
 
 Per creare una nuova variante:
 
