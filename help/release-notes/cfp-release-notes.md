@@ -4,9 +4,9 @@ description: Note sulla versione specifiche dei pacchetti di correzioni cumulati
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
+source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2152'
 ht-degree: 22%
 
 ---
@@ -114,7 +114,7 @@ Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
 * Moduli adattivi: `AddInstance` e `RemoveInstance` i metodi per la classe Instance Manager non aggiungono un numero dinamico di istanze per i frammenti di caricamento pigri in [!DNL Internet Explorer 11] (NPR-33201).
 * Moduli adattivi: Le analisi abilitate su un modulo adattivo incorporato in una [!DNL Sites] pagina non registrano i dati per gli eventi Submit e Abandon (NPR-31359).
 * Moduli adattivi: Quando un utente incolla il contenuto di un [!DNL Word] documento in un modulo adattivo e lo invia, il modulo adattivo inviato include caratteri unicode. Inoltre, la conversione da PDF a PDF/A non riesce a causa dei caratteri unicode (NPR-33348).
-* BackendIntegration: Le richieste del modello dati del modulo non riescono a causa dello stato inattivo non corretto del token di aggiornamento (NPR-33168).
+* BackendIntegration: Le richieste del modello dati del modulo non vanno a buon fine perché il token di aggiornamento scade a causa di uno stato inattivo non corretto (NPR-33168).
 * Document Services: Il servizio Converti PDF non è in grado di convertire i documenti PDF in PostScript a causa di jar Gibson mancanti [!DNL WebLogic] sul [!DNL Linux] server (NPR-33515, CQ-4292239).
 * Document Services: Quando un utente converte un file di testo in un PDF, i caratteri giapponesi non vengono rappresentati correttamente (NPR-33239).
 
@@ -237,7 +237,7 @@ In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete i
 
 ## Problemi noti {#known-issues}
 
-* L&#39;aggiornamento della [!DNL chrome] versione 83 causa un problema nella creazione di pacchetti. Per risolvere il problema, utilizzate altri browser disponibili, ad esempio [!DNL Internet Explorer] e [!DNL Firefox], o altre opzioni di installazione dei pacchetti standard di AEM.
+* Durante l&#39;installazione di AEM 6.4.8.1, l&#39;aggiornamento della [!DNL Chrome] versione 83 causa un problema nella creazione di pacchetti. Per risolvere il problema, utilizzate altri browser disponibili, ad esempio [!DNL Internet Explorer] e [!DNL Firefox], o altre opzioni di installazione dei pacchetti standard di AEM. Il problema viene risolto dopo l&#39;installazione di AEM 6.4.8.1.
 
 * Impossibile inviare un&#39;e-mail al server SMTP remoto utilizzando il mittente di posta predefinito di AEM, in quanto consente solo la comunicazione mediante TLS v1.2. Rimuovete il bundle `javax.mail:mail:1.5.0-b01` da `system/console` e aggiornate i bundle per risolvere il problema.
 
