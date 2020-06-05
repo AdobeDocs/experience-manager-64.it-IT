@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
      <li>Creazione, anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
      <li>Caricare le risorse in un’istanza di AEM</li> 
-     <li>Creare temi</li> 
+     <li>Creazione di temi</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -47,7 +50,7 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
      <li>Creazione, anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
      <li>Creazione di script per i moduli adattivi tramite l'editor di codice</li> 
      <li>Caricare le risorse inclusi gli script</li> 
-     <li>Creare temi</li> 
+     <li>Creazione di temi</li> 
      <li>Importa pacchetti contenenti XDP</li> 
     </ul> </td> 
   </tr>
@@ -64,14 +67,6 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
    <td>
     <ul> 
      <li>Creazione e anteprima di moduli adattivi o modelli di comunicazione interattiva</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Creazione e anteprima di moduli adattivi o modelli di comunicazione interattiva</li> 
-     <li>Creazione di script per moduli adattivi o modelli di comunicazione interattiva tramite l'editor di codice</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -116,6 +111,6 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
  </tbody>
 </table>
 
-1. L&#39;utente con privilegi di gruppo di moduli non può scrivere script per moduli adattivi.
+1. L&#39;utente con privilegi di gruppo di moduli non è in grado di scrivere script per i moduli adattivi.
 1. L&#39;utente con privilegi di gruppo di autori di modelli non può scrivere script per i modelli.
 
