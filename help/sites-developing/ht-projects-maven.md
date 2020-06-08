@@ -10,7 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 0e3c64b43ceba3b8ebee134872123f5c5d03affa
+source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+workflow-type: tm+mt
+source-wordcount: '2247'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ La creazione del progetto AEM basato su Maven offre diversi vantaggi:
 * Utilizzo di archetipi e artefatti del cielo forniti da Adobe
 * Utilizzo dei set di strumenti Apache Sling e Apache Felix per le impostazioni di sviluppo basate su Maven
 * Facilità di importazione in un IDE; ad esempio, Eclipse e/o IntelliJ
-* Integrazione semplice con sistemi di integrazione continua
+* Integrazione semplice con i sistemi di integrazione continua
 
 ## Dipendenze API Experience Manager {#experience-manager-api-dependencies}
 
@@ -39,9 +42,9 @@ La creazione del progetto AEM basato su Maven offre diversi vantaggi:
 
 ### Perché Adobe ha creato UberJar? {#why-did-adobe-create-the-uberjar}
 
-In passato, gli sviluppatori dovevano gestire un numero relativamente elevato di dipendenze individuali per diverse librerie AEM e quando veniva utilizzata ogni nuova API, era necessario aggiungere al progetto una o più dipendenze singole. Su un progetto, l&#39;introduzione di UberJar causava la rimozione di 30 dipendenze separate dal progetto.
+In passato, gli sviluppatori dovevano gestire un numero relativamente elevato di dipendenze individuali per diverse librerie AEM e, quando veniva utilizzata ogni nuova API, era necessario aggiungere al progetto una o più dipendenze singole. Su un progetto, l&#39;introduzione di UberJar causava la rimozione di 30 dipendenze separate dal progetto.
 
-### Come si utilizza UberJar? {#how-to-i-use-the-uberjar}
+### Come si utilizza UberJar? {#how-do-i-use-the-uberjar}
 
 Se utilizzi Apache Maven come sistema di compilazione (come avviene per la maggior parte dei progetti AEM Java), dovrai aggiungere uno o due elementi al file *pom.xml* . Il primo è un elemento di *dipendenza* che aggiunge la dipendenza effettiva al progetto:
 
@@ -99,7 +102,7 @@ Con UberJar, puoi compilare il codice del progetto che dipende dalle API di AEM 
 
 Poiché UberJar contiene **solo** API, non è eseguibile e non può essere utilizzato per **eseguire** Adobe Experience Manager. Per eseguire AEM, è necessario disporre del modulo AEM Quickstart, Standalone o Archivio applicazioni Web (WAR).
 
-### Hai menzionato i limiti dei unit test. Per favore, spieghi meglio. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
+### Hai menzionato i limiti dei unit test. Per favore, spieghi di più. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
 I test di unità interagiscono generalmente con le API del prodotto in tre modi diversi, ciascuno dei quali ha un impatto leggermente diverso da UberJar.
 
@@ -560,7 +563,7 @@ Per ottenere l&#39;eliminazione delle classi compilate dai JSP, abbiamo impostat
 >   </resource>  
 >  ```
 
-### Come utilizzare i sistemi SCM {#how-to-work-with-scm-systems}
+### Come lavorare con i sistemi SCM {#how-to-work-with-scm-systems}
 
 Quando lavorate con Gestione configurazione origine (SCM), accertatevi che
 
@@ -607,7 +610,7 @@ maven-eclipse.xml
 
 In alcuni casi, è possibile che nella struttura dell&#39;origine di contenuto siano presenti file di controllo SCM che non si desidera archiviare nella directory archivio.
 
-Si pensi alla situazione seguente:
+Si consideri la situazione seguente:
 
 archetype ha già creato un file .vltignore per impedire che il file Jar del bundle installato venga nuovamente sincronizzato nel file system:
 
@@ -617,7 +620,7 @@ archetype ha già creato un file .vltignore per impedire che il file Jar del bun
 *.jar
 ```
 
-Ovviamente, non si desidera questo file nel SCM, quindi se ad esempio si utilizza git, si aggiungerà un corrispondente . `gitignore` file:
+Ovviamente, non si desidera questo file neanche nel vostro SCM, quindi se ad esempio si sta utilizzando git, si aggiungerà un corrispondente . `gitignore` file:
 
 #### src/main/content/jcr_root/apps/myproject/install/.gitignore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
 
@@ -634,7 +637,7 @@ Come il . `gitignore` il file non deve entrare nella directory archivio, il . `v
 .gitignore
 ```
 
-### Come utilizzare i profili di distribuzione {#how-to-work-with-deployment-profiles}
+### Procedura per l&#39;utilizzo dei profili di distribuzione {#how-to-work-with-deployment-profiles}
 
 Se il processo di creazione fa parte di una configurazione di gestione del ciclo di vita per lo sviluppo più ampia, ad esempio un processo di integrazione continua, spesso è necessario eseguire l&#39;implementazione su altri computer, non solo sull&#39;istanza locale dello sviluppatore.
 
