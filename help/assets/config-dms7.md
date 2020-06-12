@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Con la nuova architettura, AEM è responsabile delle risorse principali e delle 
 >
 > Contenuti multimediali dinamici - La modalità Scene7 è solo per l’istanza di AEM Author. Di conseguenza, è necessario configurare `runmode=dynamicmedia_scene7`l&#39;istanza AEM Author, non l&#39;istanza AEM Publish.
 
-Per attivare l’elemento multimediale dinamico, è necessario avviare AEM utilizzando la modalità `dynamicmedia_scene7` di esecuzione dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
+Per abilitare Dynamic Media, è necessario avviare AEM utilizzando la modalità `dynamicmedia_scene7` di esecuzione dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -107,7 +107,7 @@ Per configurare i servizi Dynamic Media Cloud:
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toccate **[!UICONTROL Salva]**.
-1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima di pubblicarlo, è necessario &quot;inserire in una whitelist&quot; l’istanza di creazione di AEM per collegarsi a Contenuti multimediali dinamici:
+1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima della pubblicazione, dovrete &quot;consentire l’elenco&quot; dell’istanza di creazione di AEM per collegarvi a Contenuti multimediali dinamici:
 
    * Accedete al vostro account Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Le credenziali e l&#39;accesso sono stati forniti da Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
    * Nella barra di navigazione in alto a destra della pagina, toccate **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
@@ -154,7 +154,7 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 
 * **[!UICONTROL Attributi]** richiesta - Queste impostazioni impongono limiti alle immagini che possono essere distribuite dal server.
 * **[!UICONTROL Attributi]** richiesta predefiniti - Queste impostazioni interessano l&#39;aspetto predefinito delle immagini.
-* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle miniature.
+* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle immagini in miniatura.
 * **[!UICONTROL Valori predefiniti per i campi]** catalogo: queste impostazioni interessano la risoluzione e il tipo predefinito di miniatura delle immagini.
 * **[!UICONTROL Attributi]** di gestione del colore: queste impostazioni determinano quali profili colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi]** di compatibilità - Questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
@@ -318,7 +318,7 @@ Sebbene l’impostazione di una convenzione di denominazione predefinita non sia
 
 In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza campi modulo. In questa visualizzazione potete creare definizioni complete delle convenzioni di denominazione utilizzando espressioni regolari.
 
-Sono disponibili due elementi per la definizione, **[!UICONTROL Corrispondenza]** e Nome **** base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una singola convenzione di denominazione di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
+Sono disponibili due elementi per la definizione, **[!UICONTROL Corrispondenza]** e Nome **** base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
 **Per configurare la denominazione predefinita:**
 
