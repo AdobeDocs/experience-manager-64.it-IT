@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Cartella esaminata in AEM Forms {#watched-folder-in-aem-forms}
 
-Un amministratore può configurare una cartella di rete, nota come Cartella esaminata, in modo che quando un utente inserisce un file (ad esempio un file PDF) nella cartella esaminata, venga avviato un flusso di lavoro, un servizio o un&#39;operazione script preconfigurata per l&#39;elaborazione del file aggiunto. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su flusso di lavoro, servizio e script, vedere [Vari metodi per l&#39;elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+Un amministratore può configurare una cartella di rete, nota come Cartella esaminata, in modo che quando un utente inserisce un file (ad esempio un file PDF) nella cartella esaminata, venga avviato un flusso di lavoro, un servizio o un&#39;operazione script preconfigurata per l&#39;elaborazione del file aggiunto. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su flusso di lavoro, servizio e script, vedere [Vari metodi per l&#39;elaborazione dei file](#variousmethodsforprocessingfiles).
 
 ## Creare una cartella esaminata {#create-a-watched-folder}
 
@@ -29,7 +29,7 @@ Per creare una cartella esaminata nel file system è possibile utilizzare uno de
 
    La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
 
-* Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)esaminate.
+* Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](#watchedfolderproperties)esaminate.
 
 >[!NOTE]
 >
@@ -53,7 +53,8 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Per un elenco completo delle proprietà supportate, consultate Proprietà delle cartelle [esaminate](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+
+   Per un elenco completo delle proprietà supportate, consultate Proprietà delle cartelle [esaminate](#watchedfolderproperties).
 
 1. Fate clic su **Salva tutto**. Dopo la creazione del nodo e il salvataggio delle proprietà. Le `input`, `result`, `failure``preserve`e `stage`le cartelle vengono create nel percorso specificato nella `folderPath` proprietà.
 
@@ -80,8 +81,9 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
    * creazione,pubblicazione
 
    * publish, author
-
-**Nota**: *Se il server che ospita la cartella esaminata non dispone della modalità di esecuzione specificata, la cartella esaminata viene sempre attivata indipendentemente dalle modalità di esecuzione sul server.*
+   >[!NOTE]
+   >
+   >Se il server che ospita la cartella esaminata non dispone della modalità di esecuzione specificata, la cartella esaminata viene sempre attivata indipendentemente dalle modalità di esecuzione sul server.
 
 * **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file. [Il pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) di file e cartelle può anche specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
 
@@ -139,6 +141,7 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
    * %l = millisecondi
    * %R = numero casuale (tra 0 e 9)
    * %P = ID processo o processo
+
    Ad esempio, se il numero è alle 20 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati è C:/Test/WF0/failure/2009/07/17/20
 
    Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella esaminata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella esaminata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)di file.
@@ -397,7 +400,7 @@ Se la struttura di un payload è diversa dalla struttura della cartella esaminat
 
 1. Scarica [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Imposta l’SDK del client nel percorso di creazione del progetto basato su server. Per iniziare, puoi scaricare e aprire il seguente progetto basato sul cielo nell’IDE di tua scelta.
-1. Modificate il codice del filtro di mappatura payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
+1. Modificate il codice del filtro di mappatura del payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
 1. Utilizzate maven per creare un bundle del filtro Payload Mapper personalizzato.
 1. Utilizzate la console [dei bundle](http://localhost:4502/system/console/bundles) AEM per installare il bundle.
 
@@ -534,6 +537,7 @@ Se la cartella esaminata non è in grado di elaborare i file sorgente nella cart
 
    * Modificate la proprietà includeFilePattern per la cartella esaminata in modo che non corrisponda ad alcun nuovo file di input (ad esempio, immettete NOMATCH).
    * Sospendere il processo di creazione di nuovi file di input.
+
    Attendete che AEM Forms recuperi ed elabori tutti i file. La maggior parte dei file dovrebbe essere recuperato e tutti i nuovi file di input elaborati correttamente. Il tempo di attesa per la cartella esaminata per recuperare ed elaborare i file dipenderà dalla lunghezza dell&#39;operazione da richiamare e il numero di file da recuperare.
 
 1. Determinare quali file non possono essere elaborati. Se avete atteso un periodo di tempo adeguato e avete completato il passaggio precedente e se nella cartella dell’area di visualizzazione sono ancora presenti file non elaborati, passate al passaggio successivo.
@@ -669,7 +673,7 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
    * inputProcessorId (String): Il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. In questo esempio, il valore della proprietà inputProcessorType è workflow. Pertanto, per la proprietà inputProcessorId specificare il seguente percorso del flusso di lavoro PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
-   Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per un elenco completo e una descrizione delle proprietà facoltative, consultate Proprietà [cartella](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)esaminate.
+   Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per un elenco completo e una descrizione delle proprietà facoltative, consultate Proprietà [cartella](#watchedfolderproperties)esaminate.
 
 ## Utilizzo di Central Migration Bridge (obsoleto) con una cartella esaminata {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +754,4 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
    * **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
 
-Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per l&#39;elenco completo e la descrizione delle proprietà facoltative, consultate Proprietà [cartella](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)esaminate.
+Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per l&#39;elenco completo e la descrizione delle proprietà facoltative, consultate Proprietà [cartella](#watchedfolderproperties)esaminate.
