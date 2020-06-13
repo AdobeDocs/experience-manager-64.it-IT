@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: aac6f7aa5b9fba9c8721f175438dd7badca8cade
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Appl
 
 [Avvio rapido (modalità SOAP): Ottenimento di un&#39;applicazione AEM Forms tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Ottenimento dello stato delle applicazioni tramite Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
@@ -37,7 +40,9 @@ La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Appl
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: Avvio rapido nella programmazione con AEM Forms è basato su Forms Server implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Avvio rapido nella programmazione con AEM Forms è basato su Forms Server implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di una versione dell&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -435,7 +440,7 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite l&#39;API Java {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
 L&#39;esempio di codice Java seguente ottiene le applicazioni utilizzando l&#39;API Java.
 
