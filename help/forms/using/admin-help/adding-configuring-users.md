@@ -8,7 +8,10 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1763'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,8 @@ Le informazioni su utenti e gruppi vengono conservate in un sistema di storage d
 
 Quando create degli utenti, potete aggiungerli ai gruppi e assegnare loro i ruoli.
 
-1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Utenti e gruppi]**, quindi fate clic su **[!UICONTROL Nuovo utente]**. .
+1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Utenti e gruppi]**, quindi fate clic su **[!UICONTROL Nuovo utente]**.
+.
 1. In Impostazioni **** generali, fornite le informazioni necessarie, quindi fate clic su **[!UICONTROL Avanti]**. Per informazioni dettagliate sulle impostazioni, consultate Impostazioni [](adding-configuring-users.md#user-settings)utente.
 1. (Facoltativo) Per aggiungere l’utente a un gruppo, fate clic su **[!UICONTROL Trova gruppi]** ed effettuate le seguenti operazioni:
 
@@ -38,37 +42,37 @@ Quando create degli utenti, potete aggiungerli ai gruppi e assegnare loro i ruol
    >
    >Se si verificano problemi di accesso con l’utente, consultate [AEM Forms on JEE user (I moduli AEM su JEE non possono accedere ad AEM Forms su OSGi)](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
-## User settings {#user-settings}
+## Impostazioni utente {#user-settings}
 
 Specificate le seguenti impostazioni quando create o modificate un utente.
 
-**** Nome canonico: (Obbligatorio) Identificatore univoco dell&#39;utente. Ogni utente e gruppo in un dominio deve avere un nome canonico univoco. Selezionate la casella di controllo Sistema generato per consentire a Gestione utente di assegnare un valore univoco, oppure deselezionate la casella di controllo e specificate un valore personalizzato per il Nome canonico.
+**Nome canonico:** (Obbligatorio) Identificatore univoco per l’utente. Ogni utente e gruppo in un dominio deve avere un nome canonico univoco. Selezionate la casella di controllo Sistema generato per consentire a Gestione utente di assegnare un valore univoco, oppure deselezionate la casella di controllo e specificate un valore personalizzato per il Nome canonico.
 
-Evitare di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esempio `sample_user`. Quando cercate degli utenti in base al nome canonico, quelli che contengono caratteri di sottolineatura non vengono restituiti.
+Evitare di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esempio `sample_user`. Quando cercate degli utenti in base al loro nome canonico, quelli che contengono caratteri di sottolineatura non vengono restituiti.
 
-**** Nome: (Obbligatorio) Nome specificato dall&#39;utente
+**Nome:** (Obbligatorio) Nome specificato dall&#39;utente
 
-**** Cognome: (Obbligatorio) Cognome utente
+**Cognome:** (Obbligatorio) Cognome utente
 
-**** Nome comune: Nome completo o nome visualizzato per l’utente. Ad esempio, se Nome = Gloria e Cognome = Rios, Nome comune = Gloria Rios.
+**Nome comune:** Nome completo o nome visualizzato per l’utente. Ad esempio, se Nome = Gloria e Cognome = Rios, Nome comune = Gloria Rios.
 
-**** E-mail: Indirizzo e-mail dell’utente
+**E-mail:** Indirizzo e-mail dell’utente
 
-**** Telefono: Numero di telefono dell’utente
+**Telefono:** Numero di telefono dell’utente
 
-**** Descrizione: Descrizione facoltativa. Utilizzate questo campo in base alle esigenze della vostra organizzazione.
+**Descrizione:** Descrizione facoltativa. Utilizzate questo campo in base alle esigenze della vostra organizzazione.
 
-**** Indirizzo: Indirizzo postale dell&#39;utente
+**Indirizzo:** Indirizzo postale dell&#39;utente
 
-**** Organizzazione: Organizzazione a cui appartiene l&#39;utente
+**Organizzazione:** Organizzazione a cui appartiene l&#39;utente
 
-**** Alias e-mail: Alias e-mail dell’utente. Separate gli alias e-mail con virgole.
+**Alias e-mail:** Alias e-mail dell’utente. Separate gli alias e-mail con virgole.
 
-**** Dominio: Dominio a cui appartiene l&#39;utente
+**Dominio:** Dominio a cui appartiene l&#39;utente
 
-**** Impostazioni internazionali: Impostazioni internazionali ISO dell&#39;utente
+**Impostazioni internazionali:** Impostazioni internazionali ISO dell&#39;utente
 
-**** Chiave calendario aziendale: Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione. I calendari aziendali definiscono i giorni lavorativi e non lavorativi. I moduli AEM possono utilizzare i calendari aziendali per calcolare le date e le ore future per eventi quali promemoria, scadenze e inoltro per moderazione. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. (Vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Chiave calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione. I calendari aziendali definiscono i giorni lavorativi e non lavorativi. I moduli AEM possono utilizzare i calendari aziendali per calcolare le date e le ore future per eventi quali promemoria, scadenze e inoltro per moderazione. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. (Vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Se utilizzate un dominio locale o ibrido, le informazioni sugli utenti vengono memorizzate solo nel database Gestione utente. Per questi utenti, impostate la chiave del calendario aziendale su una stringa. Quindi mappare la chiave del calendario aziendale (la stringa) su un calendario aziendale nel flusso di lavoro dei moduli.
 
@@ -78,7 +82,7 @@ Per ulteriori informazioni sui calendari aziendali, inclusa la modalità di mapp
 
 Limita il nome a meno di 53 caratteri. Un nome più breve consente di evitare problemi durante la visualizzazione della chiave del calendario aziendale nelle pagine Gestione processi nella console di amministrazione.
 
-**** ID utente: (Obbligatorio) ID utente utilizzato dall&#39;utente per effettuare l&#39;accesso. L&#39;ID utente non fa distinzione tra maiuscole e minuscole e deve essere univoco nel dominio.
+**ID utente:** (Obbligatorio) ID utente utilizzato dall&#39;utente per effettuare l&#39;accesso. L&#39;ID utente non fa distinzione tra maiuscole e minuscole e deve essere univoco nel dominio.
 
 Nei domini enterprise, utilizzate un attributo non DN come ID utente perché il DN di un utente può cambiare se si sposta in un&#39;altra parte dell&#39;organizzazione. Questa impostazione dipende dal server di directory. Il valore è `objectGUID` per Active Directory 2003, `nsuniqueID` per Sun™ One e `guid` per eDirectory.
 
@@ -92,7 +96,7 @@ Quando si utilizza MySQL, l&#39;ID utente può contenere caratteri estesi. Tutta
 
 Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39;esecuzione delle ricerche di attività non restituisce alcun risultato per tali nomi utente. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
-**** Password e conferma password: Password utilizzata dall&#39;utente per effettuare l&#39;accesso. Deve contenere almeno otto caratteri. Una password non è necessaria per un utente che fa parte di un dominio ibrido.
+**Password e conferma password:** Password utilizzata dall&#39;utente per effettuare l&#39;accesso. Deve contenere almeno otto caratteri. Una password non è necessaria per un utente che fa parte di un dominio ibrido.
 
 ## Visualizzazione dei dettagli su un utente {#view-details-about-a-user}
 
@@ -128,15 +132,18 @@ Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39
    * Fate clic su **[!UICONTROL Trova gruppo]** e completate le informazioni di ricerca.
    * Per aggiungere l’utente a un nuovo gruppo, selezionate la casella di controllo del gruppo, fate clic su **[!UICONTROL OK]**, quindi su **[!UICONTROL Salva]**.
 
-      ***Nota **: Gli utenti locali non possono essere aggiunti ai gruppi di directory. Tuttavia, gli utenti della directory possono essere aggiunti ai gruppi locali.*
+   >[!NOTE]
+   >
+   >Gli utenti locali non possono essere aggiunti ai gruppi di directory. Tuttavia, gli utenti della directory possono essere aggiunti ai gruppi locali.
 
    * Per rimuovere l’utente da un gruppo, selezionate la casella di controllo del gruppo, fate clic su **[!UICONTROL Elimina]**, quindi su **[!UICONTROL Salva]**.
+
 
 1. Per modificare i ruoli dell&#39;utente, fate clic sulla scheda Assegnazioni **** ruoli ed effettuate le seguenti operazioni:
 
    * Per visualizzare un elenco dei ruoli, fare clic su **[!UICONTROL Trova ruoli]**.
    * Per aggiungere un ruolo, selezionate la casella di controllo relativa al ruolo, fate clic su **[!UICONTROL OK]** e quindi su **[!UICONTROL Salva]**.
-   * Per rimuovere un ruolo, selezionate la casella di controllo relativa al ruolo, fate clic su **[!UICONTROL Annulla assegnazione]** e quindi su **[!UICONTROL Salva]**.
+   * Per rimuovere un ruolo, selezionate la casella di controllo relativa al ruolo, fate clic su **[!UICONTROL Annulla assegnazione]**, quindi fate clic su **[!UICONTROL Salva]**.
 
 ## Eliminare un utente {#delete-a-user}
 
@@ -161,7 +168,7 @@ Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accede
 * Soluzione per la gestione della corrispondenza
 * AEM Forms Workspace
 
-   ***nota **:Flex Worksapce è obsoleto per la versione dei moduli AEM.*
+   ***nota **: Flex Worksapce è obsoleto per la versione dei moduli AEM.*
 
 * Forms Manager
 * Reporting processi
