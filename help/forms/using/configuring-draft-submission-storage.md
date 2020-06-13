@@ -9,7 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Panoramica {#overview}
 
-Con AEM Forms puoi archiviare:
+Con AEM Forms è possibile archiviare:
 
 * **Bozze**: Modulo di lavoro in corso che gli utenti finali compilano e salvano per un secondo momento e che inviano successivamente.
 
@@ -102,7 +105,7 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
 
 Oltre alla configurazione specificata in precedenza, fornisci informazioni sull&#39;istanza di elaborazione remota configurata.
 
-In Configurazione console Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), fare clic per aprire **AEM DS Settings Service **in modalità di modifica. Nella finestra di dialogo Servizio impostazioni AEM DS, fornisci informazioni sull’URL del server di elaborazione, il nome utente e la password del server di elaborazione.
+In Configurazione console Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), fai clic per aprire il servizio **** Impostazioni di AEM DS in modalità di modifica. Nella finestra di dialogo Servizio impostazioni AEM DS, fornisci informazioni sull’URL del server di elaborazione, il nome utente e la password del server di elaborazione.
 
 >[!NOTE]
 >
