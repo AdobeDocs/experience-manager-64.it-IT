@@ -8,7 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 68ab70332a16a9a043f0db0ede75049b85188750
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '947'
+ht-degree: 1%
 
 ---
 
@@ -114,9 +117,9 @@ function getAdobeSignRecipients() {
 
 ## Utilizzare l&#39;interfaccia Java per scegliere dinamicamente un utente o un gruppo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per i passaggi Adobe Sign e Assign Task. Puoi creare un bundle OSGi che utilizza l’interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo nel server AEM Forms. Questa opzione è disponibile per la selezione nei componenti Assegna attività e Adobe Sign del flusso di lavoro AEM.
+È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per i passaggi Adobe Sign e Assign Task. Puoi creare un bundle OSGi che utilizza l’interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo nel server AEM Forms. Questa opzione è disponibile per la selezione nei componenti Assegna attività e Adobe Sign del flusso di lavoro AEM.
 
-Per compilare l’esempio di codice riportato di seguito, è necessario disporre dei file JAR e Jar [dell’SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per client AEM Forms e [dei file JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per i graniti. Aggiungete questi file JAR come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente illustra i passaggi per utilizzare Eclipse per creare un bundle OSGi:
+Per compilare l’esempio di codice riportato di seguito, è necessario disporre dei file JAR e Jar [dell’SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per client AEM Forms e [dei file JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per i graniti. Aggiungete questi file JAR come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente illustra i passaggi per utilizzare Eclipse per creare un bundle OSGi:
 
 1. Aprite Eclipse IDE. Passare a **[!UICONTROL File]**> **[!UICONTROL Nuovo progetto]**.
 1. Nella schermata Seleziona una procedura guidata, selezionate Progetto **** Paradiso e fate clic su **[!UICONTROL Avanti]**.
@@ -223,7 +226,7 @@ Per compilare l’esempio di codice riportato di seguito, è necessario disporre
    </project>
    ```
 
-1. Aggiungete il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per il passaggio dell&#39;attività Assegna. Per un esempio di codice, consultate [Esempio per la scelta dinamica di un utente o di un gruppo tramite l&#39;interfaccia](#-sample-scripts-for)Java.
+1. Aggiungete il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per il passaggio dell&#39;attività Assegna. Per un esempio di codice, consultate [Esempio per la scelta dinamica di un utente o di un gruppo tramite l&#39;interfaccia](#-sample-scripts-for)Java.
 1. Aprite un prompt dei comandi e andate alla directory contenente il progetto bundle OSGi. Usate il comando seguente per creare il bundle OSGi:
 
    `mvn clean install`
