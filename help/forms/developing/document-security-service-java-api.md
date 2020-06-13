@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -45,11 +48,13 @@ Java API Quick Start(SOAP) è disponibile per il servizio Rights Management:
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: La sezione Avvio rapido nella programmazione con AEM Forms è basata sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>La sezione Avvio rapido nella programmazione con AEM Forms è basata sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
 
 ```as3
  /* 
@@ -371,7 +376,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio
 
 ## Avvio rapido (modalità SOAP): Applicazione di un criterio a un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -698,7 +703,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
 
 ## Avvio rapido (modalità SOAP): Verifica dei documenti PDF protetti tramite criterio tramite l&#39;API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L&#39;esempio di codice Java riportato di seguito esamina un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
+Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
 
 ```as3
  /* 
@@ -1055,7 +1060,7 @@ public class PDFWatermarksSOAPMode {
 
 ## Avvio rapido (modalità SOAP): Creazione di una filigrana di testo tramite l&#39;API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *campione*. Questa filigrana contiene un singolo elemento.
+Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *di esempio*. Questa filigrana contiene un singolo elemento.
 
 ```as3
 /* 
@@ -1527,7 +1532,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;event
 
 ## Avvio rapido (SOAP): Applicazione di un criterio a un documento Word tramite l&#39;API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /* 
@@ -1750,7 +1755,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio astratto tramite l&#39;API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio astratto denominato AllowCopy. Il set al quale viene aggiunto il criterio è denominato Set criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio astratto denominato AllowCopy. Il set di criteri a cui viene aggiunto il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
 
 ```as3
 /* 
@@ -2159,7 +2164,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Protezione di un PDF nel flusso di lavoro istruzioni per un nuovo utente tramite l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Avvio rapido (modalità SOAP): Proteggere un PDF nel flusso di lavoro istruzioni per un nuovo utente, utilizzando l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 Il seguente esempio di codice Java illustra come proteggere un documento in Flusso di lavoro istruzioni. Si tratta di un processo in due fasi:
 
