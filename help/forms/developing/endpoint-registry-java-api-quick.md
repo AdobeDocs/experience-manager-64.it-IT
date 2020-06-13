@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
 Java API Quick Start(SOAP) è disponibile per il Registro di sistema degli endpoint.
 
-[Avvio rapido:Aggiunta di un endpoint EJB tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[Avvio rapido: Aggiunta di un endpoint EJB tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
 [Avvio rapido: Aggiunta di un endpoint SOAP tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
@@ -33,19 +36,23 @@ Java API Quick Start(SOAP) è disponibile per il Registro di sistema degli endpo
 
 [Avvio rapido: Modifica di un endpoint tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[Avvio rapido:Rimozione di un endpoint tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[Avvio rapido: Rimozione di un endpoint tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
 [Avvio rapido: Recupero delle informazioni sul connettore endpoint tramite l&#39;API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: La sezione Avvio rapido nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, come Unix, e sostituisce percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>La sezione Avvio rapido nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, come Unix, e sostituisce percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
-***Nota**: Non è possibile utilizzare gli endpoint utilizzando un servizio Web. *
+>[!NOTE]
+>
+>Non è possibile utilizzare gli endpoint utilizzando un servizio Web.
 
-## Avvio rapido:Aggiunta di un endpoint EJB tramite l&#39;API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## Avvio rapido: Aggiunta di un endpoint EJB tramite l&#39;API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-L&#39;esempio di codice Java seguente aggiunge un endpoint EJB a un servizio denominato *MyApplication/EncryptDocument*. (Vedere [Aggiunta di endpoint](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
+Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un endpoint EJB a un servizio denominato *MyApplication/EncryptDocument*. (Vedere [Aggiunta di endpoint](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 
 ```as3
  /* 
@@ -379,11 +386,11 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiunto l&#39;endpoi
 
 ## Avvio rapido: Aggiunta di un endpoint e-mail tramite l&#39;API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un endpoint e-mail a un servizio denominato *MyApplication/* EncryptDocument.Consultate [Aggiunta di endpoint](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)e-mail.
+Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un endpoint e-mail a un servizio denominato *MyApplication/* EncryptDocument. Consultate [Aggiunta di endpoint](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)e-mail.
 
 >[!NOTE]
 >
->È necessario includere il file EmailEndpointConfigConstants.java nel progetto per compilare ed eseguire il seguente avvio rapido. Consultate File [costante dei valori di configurazione](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)e-mail.
+>È necessario includere il file EmailEndpointConfigConstants.java nel progetto per compilare ed eseguire il seguente avvio rapido. Consultate File [costante per i valori di configurazione](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)e-mail.
 
 ```as3
  /* 
@@ -734,7 +741,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un endpoint 
  
 ```
 
-## Avvio rapido:Modifica di un endpoint tramite l&#39;API Java {#quickstart-modifying-an-endpoint-using-the-java-api}
+## Avvio rapido: Modifica di un endpoint tramite l&#39;API Java {#quickstart-modifying-an-endpoint-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene modificato l&#39;endpoint di una cartella esaminata. L&#39;endpoint è relativo al processo *MyApplication/EncryptDocument* . La cartella esaminata viene modificata in `C:\NewWatchedFolder`. (Vedere [Modifica degli endpoint](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
@@ -884,7 +891,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene modificato l&#39;endp
  
 ```
 
-## Avvio rapido:Rimozione di un endpoint tramite l&#39;API Java {#quickstart-removing-an-endpoint-using-the-java-api}
+## Avvio rapido: Rimozione di un endpoint tramite l&#39;API Java {#quickstart-removing-an-endpoint-using-the-java-api}
 
 Il seguente codice Java rimuove un endpoint EJB da un servizio denominato *MyApplication/EncryptDocument*. (Vedere [Rimozione di endpoint](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
