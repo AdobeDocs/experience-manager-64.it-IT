@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '9242'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 Configurate i siti di riferimento come descritto in [Impostazione e configurazione dei siti](/help/forms/using/setup-reference-sites.md)di riferimento di AEM Forms.
 
-## Scenari del sito di riferimento We.Finance {#we-finance-reference-site-scenarios}
+## Scenari del sito di riferimento di We.Finance {#we-finance-reference-site-scenarios}
 
 We.Finance è un&#39;organizzazione leader nel settore dei servizi finanziari che offre soluzioni finanziarie complete e personalizzate in base alle esigenze dei diversi profili cliente. Offrono carte di credito, mutui per la casa e servizi di assicurazione per la casa.
 
@@ -31,9 +34,9 @@ Continua a leggere informazioni dettagliate sui casi di utilizzo di We.Finance e
 * [Procedura dettagliata sulle applicazioni con carta di credito](#credit-card-application-walkthrough)
 * [Procedura dettagliata sull&#39;applicazione di ipoteca](#home-mortgage-application-walkthrough)
 * [Home Informazioni dettagliate sull&#39;applicazione ipotecaria con Microsoft Dynamics](#home-mortgage-application-walkthrough-with-microsoft-dynamics)
-* [Procedura dettagliata per l&#39;applicazione di assicurazione](#home-insurance-application-walkthrough)
+* [Procedura dettagliata per l&#39;applicazione di assicurazione sulla casa](#home-insurance-application-walkthrough)
 * [Procedura dettagliata sulla gestione della ricchezza](#wealthmanagementwalkthrough)
-* [Procedura dettagliata sulle applicazioni di assicurazione automatica](#autoinsuranceapplicationwalkthrough)
+* [Procedura dettagliata sull&#39;applicazione di assicurazione automatica](#autoinsuranceapplicationwalkthrough)
 
 ## Procedura dettagliata sulle applicazioni con carta di credito {#credit-card-application-walkthrough}
 
@@ -50,7 +53,7 @@ Esaminiamo in dettaglio lo scenario relativo al sito di riferimento per comprend
 
 ### Sarah riceve una newsletter da We.Finance e fa domanda per una carta di credito {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
-Sarah Rose è un cliente esistente di We.Finance. Riceve una newsletter da We.Finance sulle nuove carte di credito in offerta. Trova le offerte eccitanti e decide di richiedere una carta di credito. Fa clic sul pulsante Applica ora nella newsletter, che la porta all&#39;applicazione della carta di credito sul portale We.Finance.
+Sarah Rose è un cliente esistente di We.Finance. Riceve una newsletter da We.Finance sulle nuove carte di credito in offerta. Trova le offerte eccitanti e decide di fare domanda per una carta di credito. Fa clic sul pulsante Applica ora nella newsletter, che la porta all&#39;applicazione della carta di credito sul portale We.Finance.
 
 ![marketing-email](assets/marketing-email.png)
 
@@ -131,7 +134,7 @@ Puoi consultare il modello We.Finance all&#39;indirizzo:
 
 ### Sarah riprende e invia l&#39;applicazione {#sarah-resumes-and-submits-the-application}
 
-Sarah ritorna più tardi e trova un&#39;e-mail da We.Finance. Fa clic sul pulsante **[!UICONTROL Riprendi]** nell&#39;e-mail che la porta alla sua applicazione di carte di credito bozza. Le informazioni che ha compilato prima vengono precompilate. Compila il modulo di richiesta rimanente, firma l&#39;applicazione e lo invia.
+Sarah ritorna più tardi e trova un&#39;e-mail da We.Finance. Fa clic sul pulsante **[!UICONTROL Riprendi]** nell&#39;e-mail che la porta alla sua applicazione di carte di credito bozza. Le informazioni che ha compilato in precedenza vengono precompilate. Compila il modulo di richiesta rimanente, firma l&#39;applicazione e lo invia.
 
 ![curriculum-1](assets/resume-1.png)
 
@@ -173,7 +176,7 @@ Quando si approva l&#39;applicazione, Sarah riceve un&#39;e-mail con il kit di b
 
 ### Sarah riceve il kit di benvenuto e richiede una scheda aggiuntiva {#sarah-receives-the-welcome-kit-and-applies-for-an-add-on-card}
 
-Quando l&#39;applicazione della carta di credito di Sarah viene approvata, riceve una e-mail con un collegamento al kit di benvenuto. Apre il kit di benvenuto, che include i dettagli del conto della sua carta di credito. Il kit di benvenuto mostra anche offerte promozionali personalizzate per Sarah. Mentre scorre verso il basso, il kit di benvenuto contiene un modulo incorporato da richiedere per una scheda aggiuntiva. Sarah ha rapidamente inserito i dettagli richiesti dall&#39;interno del kit di benvenuto e si applica alla scheda aggiuntiva. Viene visualizzata una finestra di dialogo di conferma per l&#39;applicazione della scheda aggiuntiva.
+Quando l&#39;applicazione della carta di credito di Sarah viene approvata, riceve un&#39;e-mail con un collegamento al kit di benvenuto. Apre il kit di benvenuto, che include i dettagli del conto della sua carta di credito. Il kit di benvenuto mostra anche offerte promozionali personalizzate per Sarah. Mentre scorre verso il basso, il kit di benvenuto contiene un modulo incorporato da richiedere per una scheda aggiuntiva. Sarah ha rapidamente inserito i dettagli richiesti dall&#39;interno del kit di benvenuto e si applica alla scheda aggiuntiva. Viene visualizzata una finestra di dialogo di conferma per l&#39;applicazione della scheda aggiuntiva.
 
 ![welcome-kit-for-sara](assets/welcome-kit-for-sara.png)
 
@@ -193,7 +196,7 @@ L&#39;applicazione scheda aggiuntiva è un modulo adattivo incorporato nel kit d
 
 #### Vedi te stesso {#see-it-yourself-3}
 
-Fate clic sul pulsante **[!UICONTROL Riprendi]** nel messaggio e-mail ricevuto nel passaggio precedente. Apre la bozza di applicazione. Compila tutti i dettagli e invia la domanda. Riceverete quindi un kit di benvenuto. Esaminate il kit di benvenuto.
+Fate clic sul pulsante **[!UICONTROL Riprendi]** nell’e-mail che avete ricevuto nel passaggio precedente. Apre la bozza di applicazione. Compila tutti i dettagli e invia la domanda. Riceverete quindi un kit di benvenuto. Esaminate il kit di benvenuto.
 
 Potete anche visualizzare il kit di benvenuto al seguente URL:
 
@@ -205,7 +208,7 @@ Potete accedervi nelle istanze di creazione e pubblicazione.
 
 Mentre Sarah inizia a utilizzare la carta di credito, riceve un&#39;altra e-mail da We.Finance che include il suo estratto conto della carta di credito. Le immagini seguenti mostrano l&#39;e-mail con un collegamento all&#39;estratto conto della carta di credito su dispositivo mobile.
 
-![Statement-email](assets/statement-email.png)
+![resoconto-email](assets/statement-email.png)
 
 Sarah fa clic su Visualizza rendiconto nell&#39;e-mail per visualizzare il rendiconto della carta di credito. L&#39;istruzione è una comunicazione interattiva. Sono disponibili versioni Web e Stampa (PDF). L&#39;istruzione si integra con Forms Data Model per recuperare dal database i dati specifici del cliente. La dichiarazione interattiva costituisce vari elementi:
 
@@ -243,7 +246,7 @@ Il rendiconto della carta di credito visualizza le offerte promozionali verso la
 
 ### We.Finance analizza le prestazioni dell&#39;applicazione della carta di credito {#we-finance-analyzes-the-performance-of-the-credit-card-application}
 
-We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
+We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero dover affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
 
 Per ulteriori informazioni sull&#39;interpretazione del dashboard di analisi, consultate [Visualizzazione e comprensione dei rapporti](/help/forms/using/view-understand-aem-forms-analytics-reports.md)di analisi di AEM Forms.
 
@@ -255,14 +258,14 @@ Le metriche delle prestazioni per il modulo dell&#39;applicazione con carta di c
 
 #### Vedi te stesso {#see-it-yourself-br}
 
-Per visualizzare ed esaminare il rapporto di analisi, forniamo dati iniziali per l&#39;applicazione della carta di credito nel sito di riferimento. Prima di utilizzare i dati iniziali, consulta [Configurare Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Per visualizzare il rapporto con i dati iniziali, effettuate i seguenti passaggi nell’istanza di creazione:
+Per visualizzare ed esaminare il rapporto di analisi, forniamo i dati iniziali per l&#39;applicazione della carta di credito nel sito di riferimento. Prima di utilizzare i dati iniziali, consulta [Configurare Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Per visualizzare il rapporto con i dati iniziali, effettuate i seguenti passaggi nell’istanza di creazione:
 
 1. Passate all&#39;interfaccia utente **[!UICONTROL Moduli e documenti]** all&#39;indirizzo https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Fate clic per aprire la cartella **[!UICONTROL We.Finance]** .
 1. Selezionate **[!UICONTROL Applicazione per modulo adattivo carta]** di credito, quindi fate clic su **[!UICONTROL Abilita analisi]** nella barra degli strumenti.
 
-1. Selezionate di nuovo il modulo adattivo e fate clic su Rapporto **** analisi nella barra degli strumenti per generare il rapporto. Inizialmente verrà visualizzato un rapporto vuoto.
+1. Selezionate di nuovo il modulo adattivo e fate clic su Report **[!UICONTROL di]** Analytics nella barra degli strumenti per generare il rapporto. Inizialmente verrà visualizzato un rapporto vuoto.
 
 Per generare report di analisi con dati iniziali:
 
@@ -301,7 +304,7 @@ Effettuare le seguenti operazioni per verificare la creazione di test A/B per il
 
 1. Ora aprire il modulo nel browser Chrome diverse volte utilizzando il seguente URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
 
 1. Selezionate il modulo, fate clic su **Altro** e fate clic su Rapporto **** test A/B. Non troverai molti dati nel rapporto come hai appena iniziato il test. Forniamo ora alcuni dati iniziali per vedere come si presenterà il rapporto Test A/B.
@@ -309,7 +312,7 @@ Effettuare le seguenti operazioni per verificare la creazione di test A/B per il
 1. Aprite CRXDE Lite ed effettuate il backup del seguente file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Sostituire la definizione di funzione `onReportLoadSuccess` nel file di cui sopra con la definizione di funzione nel file seguente: /apps/we-finance/demo-artifacts/targetreport.js
 
-   **** Nota: Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
+   **Nota:** Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
 
 1. Aggiorna il rapporto generato e vedrai qualcosa di simile al seguente. Esaminate il dashboard di reporting.
 
@@ -325,7 +328,7 @@ Lo scenario di mutuo per la casa We.Finance include le seguenti persone:
 
 * Sarah Rose, un cliente di We.Finance
 * Gloria Rios, responsabile della carta di credito e ipoteca, We.Finance
-* John Doe, rappresentante di assistenza clienti, We.Finance
+* John Doe, rappresentante dell&#39;assistenza clienti, We.Finance
 
 La seguente infografica illustra il flusso di lavoro dettagliato di un&#39;applicazione mutuo per la casa.
 
@@ -337,9 +340,9 @@ Esaminiamo ora i passaggi nello scenario relativo al sito di riferimento per sco
 
 Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano ipotecario.
 
-![](assets/loans1.png) prestiti1![ ](assets/loans2.png)prestiti2 **** Figura: Calcolatore *ipotecario*
+![prestiti1](assets/loans1.png) ![prestiti2](assets/loans2.png)**Figura:** *Calcolatore ipotecario*
 
-![](assets/loans3.png) loan3 **** Figura: Risultato del calcolo *ipotecario*
+![loan3](assets/loans3.png)**Figura:** *Risultato del calcolo ipotecario*
 
 #### Come funziona {#how-it-works-6}
 
@@ -361,7 +364,7 @@ Le immagini seguenti mostrano il flusso di lavoro man mano che Sarah naviga attr
 
 ![Compilazione dell’applicazione del mutuo su dispositivo mobile](assets/mortgage-form-on-mobile.png)
 
-Se Sarah fa clic su **Applica ora** dal suo desktop, si apre il modulo di richiesta ipoteca come segue. Le informazioni fornite da Sarah nel calcolatore ipotecario sono precompilate nel modulo di richiesta. Sarah compila i dettagli rimanenti e fa clic su **Continua**.
+Se Sarah fa clic su **Applica ora** dal suo desktop, si apre il modulo di richiesta ipotecaria come indicato di seguito. Le informazioni fornite da Sarah nel calcolatore ipotecario sono precompilate nel modulo di richiesta. Sarah compila i dettagli rimanenti e fa clic su **Continua**.
 
 ![richiesta ipotecaria](assets/mortgage-application.png)
 
@@ -440,7 +443,7 @@ Per informazioni sull’utilizzo di AEM Inbox per le attività relative ai fluss
 
 ### Sarah riceve il kit di benvenuto {#sarah-receives-the-welcome-kit}
 
-Con l&#39;approvazione dell&#39;applicazione dell&#39;ipoteca di Sarah, riceve una e-mail con un collegamento al kit di benvenuto. Apre il kit di benvenuto, che include un carosello con offerte promozionali personalizzate per Sarah.
+Con l&#39;approvazione dell&#39;applicazione dell&#39;ipoteca di Sarah, riceve un&#39;e-mail con un collegamento al kit di benvenuto. Apre il kit di benvenuto, che include un carosello che mostra offerte promozionali personalizzate per Sarah.
 
 ![kit di benvenuto](assets/mortgage-welcome-kit.png)
 
@@ -448,7 +451,7 @@ Il kit di benvenuto è personalizzato per Sarah e mostra informazioni rilevanti 
 
 #### Come funziona {#how-it-works-9}
 
-Il kit di benvenuto è una comunicazione interattiva inclusa nel `cq-we-finance-content-pkg.zip` pacchetto. Le offerte promozionali nel kit di benvenuto sono servite dal server Adobe Target. Le offerte sono personalizzate e mirate per segmenti di clienti specifici. Il kit di benvenuto raccoglie offerte da un server Adobe Target preconfigurato per un segmento di pubblico femminile.
+Il kit di benvenuto è una comunicazione interattiva inclusa nel `cq-we-finance-content-pkg.zip` pacchetto. Le offerte promozionali nel kit di benvenuto sono servite dal server Adobe Target. Le offerte sono personalizzate e mirate per segmenti di clienti specifici. Il kit di benvenuto raccoglie le offerte da un server Adobe Target preconfigurato per un segmento di pubblico femminile.
 
 Le schede interattive nella versione desktop del kit di benvenuto utilizzano un layout personalizzato creato utilizzando il layout scheda predefinito di un frammento di documento.
 
@@ -508,7 +511,7 @@ Per visualizzare ed esaminare il rapporto di analisi, forniamo i dati iniziali p
 1. Passate all&#39;interfaccia utente **Moduli e documenti** all&#39;indirizzo https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Fate clic per aprire la cartella **di finanziamento** .
-1. Selezionate **[!UICONTROL Applicazione per modulo adattivo ipotecario]** principale, quindi fate clic su **[!UICONTROL Abilita analisi]** nella barra degli strumenti.
+1. Selezionate **[!UICONTROL Applicazione per modulo adattivo ipotecario]** principale, quindi, nella barra degli strumenti, fate clic su **[!UICONTROL Abilita analisi]**.
 
 1. Seleziona di nuovo il modulo e fai clic su Report **[!UICONTROL di]** Analytics nella barra degli strumenti per generare il rapporto. Inizialmente verrà visualizzato un rapporto vuoto.
 
@@ -548,7 +551,7 @@ Per verificare la creazione di un test A/B per il modulo di richiesta di mutuo W
 
 1. Ora aprire il modulo nel browser Chrome diverse volte utilizzando il seguente URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
 
 1. Selezionate il modulo, fate clic su **Altro** e fate clic su Rapporto **** test A/B. Non troverai molti dati nel rapporto come hai appena iniziato il test. Forniamo ora alcuni dati iniziali per vedere come si presenterà il rapporto Test A/B.
@@ -578,9 +581,9 @@ La procedura dettagliata dell&#39;applicazione Home Mutuo con Microsoft Dynamics
 
 Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano ipotecario.
 
-![](assets/loans1.png) prestiti1![ ](assets/loans2.png)prestiti2 **** Figura: Calcolatore *ipotecario*
+![prestiti1](assets/loans1.png) ![prestiti2](assets/loans2.png)**Figura:** *Calcolatore ipotecario*
 
-![](assets/loans3.png) loan3 **** Figura: Risultato del calcolo *ipotecario*
+![loan3](assets/loans3.png)**Figura:** *Risultato del calcolo ipotecario*
 
 #### Come funziona {#how-it-works-12}
 
@@ -602,7 +605,7 @@ Le immagini seguenti mostrano il flusso di lavoro man mano che Sarah naviga attr
 
 ![Compilazione dell’applicazione del mutuo su dispositivo mobile](assets/mortgage-form-on-mobile.png)
 
-Se Sarah fa clic su **Applica ora** dal suo desktop, si apre il modulo di richiesta ipoteca come segue. Le informazioni fornite da Sarah nel calcolatore ipotecario sono precompilate nel modulo di richiesta. Sarah compila i dettagli rimanenti e fa clic su **Continua**.
+Se Sarah fa clic su **Applica ora** dal suo desktop, si apre il modulo di richiesta ipotecaria come indicato di seguito. Le informazioni fornite da Sarah nel calcolatore ipotecario sono precompilate nel modulo di richiesta. Sarah compila i dettagli rimanenti e fa clic su **Continua**.
 
 ![richiesta ipotecaria](assets/mortgage-application.png)
 
@@ -636,7 +639,7 @@ We.Finance riceve l&#39;applicazione ipotecaria inviata da Sarah nell&#39;istanz
 
 ![msdynamicsrecord](assets/msdynamicsrecord.png)
 
-## Procedura dettagliata per l&#39;applicazione di assicurazione {#home-insurance-application-walkthrough}
+## Procedura dettagliata per l&#39;applicazione di assicurazione sulla casa {#home-insurance-application-walkthrough}
 
 Lo scenario di assicurazione per le famiglie We.Finance comprende le seguenti persone:
 
@@ -672,7 +675,7 @@ A Sarah piace il piano di assicurazione della casa nella newsletter e decide di 
 
 Nella pagina Informazioni personali, mentre Sarah fornisce il suo numero di previdenza sociale, riceve una richiesta per accedere con le sue credenziali.
 
-![assicurazioni](assets/insurance-ssn.png)
+![assicurazione-ssn](assets/insurance-ssn.png)
 
 Sarah è un cliente esistente di We.Finance. Effettua l&#39;accesso con le credenziali del suo account We.Finance e i suoi dati personali vengono compilati automaticamente nel modulo. Continua a compilare e inviare la domanda.
 
@@ -752,7 +755,7 @@ Effettua le seguenti operazioni:
 
 Mentre Sarah firma il contratto di assicurazione sulla casa, riceve una email con i dettagli della polizza.
 
-![polizza assicurativa](assets/insurance-policy-details.png)
+![assicurazione-polizza-dettagli](assets/insurance-policy-details.png)
 
 In breve, riceve un&#39;altra email da We.Finance con un kit di benvenuto per la sua polizza assicurativa. Dal kit di benvenuto, Sarah può accedere ai suoi documenti e visualizzare le dichiarazioni.
 
@@ -760,7 +763,7 @@ In breve, riceve un&#39;altra email da We.Finance con un kit di benvenuto per la
 
 #### Vedi te stesso {#see-it-yourself-14}
 
-Se avessi specificato l&#39;ID e-mail nell&#39;applicazione, avresti ricevuto un&#39;e-mail con un collegamento al kit di benvenuto. Fate clic su **[!UICONTROL My Welcome Kit]** per aprire il kit di benvenuto.
+Se avessi specificato l&#39;ID e-mail nell&#39;applicazione, avresti ricevuto un&#39;e-mail con un collegamento al kit di benvenuto. Fate clic su **[!UICONTROL My Welcome Kit]** (Mio kit di benvenuto) per aprire il kit di benvenuto.
 
 ![assicurazione-welcome-kit-email](assets/insurance-welcome-kit-email.png)
 
@@ -784,11 +787,11 @@ Sarah Rose sta pensando di investire in un fondo comune. È un cliente esistente
 
 #### Come funziona {#how-it-works-17}
 
-Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Utilizza testi, immagini, grafici e componenti di tabella (frammenti di documento) per visualizzare il riepilogo del prodotto, lo stile delle scorte, le prestazioni del fondo, i dettagli del fondo e altre informazioni correlate. [ Potete controllare la comunicazione interattiva in modalità di modifica all&#39;indirizzo https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Utilizza testi, immagini, grafici e componenti di tabella (frammenti di documento) per visualizzare il riepilogo del prodotto, lo stile delle scorte, le prestazioni del fondo, i dettagli del fondo e altre informazioni correlate. Potete controllare la comunicazione interattiva in modalità di modifica all&#39;indirizzo https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
 
 I grafici e le tabelle recuperano i dati da un modello dati del modulo. Il modello dati del modulo si connette alle origini dati configurate, un database in questa procedura dettagliata, per recuperare informazioni specifiche per il fondo. È possibile esaminare il modello di dati del modulo all&#39;indirizzo https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
 
-#### Vedi te stesso {#see-it-yourself-15}
+#### Vedi te stesso  {#see-it-yourself-15}
 
 Andate al portale We.Finance all&#39;indirizzo https://[publishHost]:[publishPort]/wefinance, toccate Gestione patrimoniale, espandete i fondi per classe asset e toccate We.Finance Blue Chip Growth Fund. Viene aperto il prospetto del Fondo di crescita per i chip blu We.Finance.
 
@@ -802,31 +805,31 @@ Sarah esplora le schede Panoramica, Prezzi e Prestazioni, Gestione dei portafogl
 
 La comunicazione interattiva Blue Chip Growth Fund utilizza i pannelli padre e figlio per separare le informazioni correlate in sezioni diverse. Il pannello principale organizza tutti i pannelli secondari in schede.
 
-Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. [ Potete controllare i pannelli della comunicazione interattiva in modalità di modifica all&#39;indirizzo https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. Potete controllare i pannelli della comunicazione interattiva in modalità di modifica all&#39;indirizzo https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
-#### Vedi te stesso {#see-it-yourself-16}
+#### Vedi te stesso  {#see-it-yourself-16}
 
-[ Andate alla comunicazione interattiva Blue Chip Growth Fund all&#39;indirizzo https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Esplora tutte le schede.
+Andate alla comunicazione interattiva Blue Chip Growth Fund all&#39;indirizzo https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Esplora tutte le schede.
 
 ### Sarah visualizza ed e-mail la versione PDF della pagina Blue Chip Growth Fund {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
-Sarah sta viaggiando in campagna durante il weekend. Ha intenzione di discutere del Fondo per la crescita dei Chip Blu con il fratello maggiore. Suo fratello maggiore lavora con una banca e la aiuta nelle decisioni relative ai finanziamenti. Sarah scarica una copia della versione PDF della pagina Blue Chip Growth Fund sul suo laptop per la lettura offline. Invia inoltre una copia della versione PDF al fratello.
+Sarah sta viaggiando in campagna durante il weekend. Ha intenzione di discutere del Fondo per la crescita dei Chip Blu con il fratello maggiore. Suo fratello maggiore lavora con una banca e la aiuta nelle decisioni relative ai finanziamenti. Sarah scarica una copia della versione PDF della pagina Blue Chip Growth Fund sul suo computer portatile per la lettura offline. Invia inoltre una copia della versione PDF al fratello.
 
 ![blue-chip-pdf](assets/blue-chip-pdf.gif)
 
 #### Come funziona {#how-it-works-19}
 
-Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Ha un canale Web e PDF. La comunicazione interattiva si integra con AEM Workflows per inviare la versione PDF tramite e-mail. [ Per vedere il modello di workflow, visitate https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Ha un canale Web e PDF. La comunicazione interattiva si integra con AEM Workflows per inviare la versione PDF tramite e-mail. Per vedere il modello di workflow, visitate https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
 
 ![gestione patrimoniale](assets/wealth-management.png)
 
-#### Vedi te stesso {#see-it-yourself-17}
+#### Vedi te stesso  {#see-it-yourself-17}
 
-[ Per scaricare la versione PDF, andate alla comunicazione interattiva Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate Scarica PDF.
+Per scaricare la versione PDF, accedete alla comunicazione interattiva Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate Scarica PDF.
 
-[ Per inviare PDF tramite e-mail, andate alla comunicazione interattiva Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate EMAIL PDF. Specificate **Nome** completo e Indirizzo **** e-mail. Fate clic su **Invia e-mail**.
+Per inviare PDF tramite e-mail, andate alla comunicazione interattiva Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate EMAIL PDF. Specificate **Nome** completo e Indirizzo **** e-mail. Fate clic su **Invia e-mail**.
 
-## Procedura dettagliata sulle applicazioni di assicurazione automatica {#auto-insurance-application-walkthrough}
+## Procedura dettagliata sull&#39;applicazione di assicurazione automatica {#auto-insurance-application-walkthrough}
 
 Lo scenario dell&#39;applicazione di assicurazione auto We.Finance include la persona seguente:
 
@@ -835,21 +838,21 @@ Lo scenario dell&#39;applicazione di assicurazione auto We.Finance include la pe
 
 Sarah Rose è un cliente esistente di We.Finance e ha acquistato una polizza di assicurazione auto. Ora è il momento dell’anno per il rinnovo della sua polizza assicurativa. Conrad Simms, agente assicurativo, We.Finance invia un promemoria a Sarah riguardo il rinnovo della sua polizza. Il promemoria contiene un PDF contenente i dettagli per il rinnovo del criterio e un collegamento alla versione Web della comunicazione interattiva. Le comunicazioni interattive hanno un design mobile facile e reattivo. Può aprire la comunicazione interattiva su qualsiasi dispositivo e la comunicazione interattiva si ripete in base alle dimensioni dello schermo del dispositivo sottostante. La versione PDF della comunicazione interattiva, allegata alla e-mail, è utile per la lettura offline.
 
-Sarah segue le istruzioni fornite nell&#39;e-mail e rinnova con successo il processo. L&#39;immagine seguente mostra il flusso di lavoro della procedura dettagliata dell&#39;applicazione di assicurazione automatica:  procedura dettagliata sull&#39;applicazione ![di assicurazione automatica](assets/auto-insurance-application-walkthrough.png)
+Sarah segue le istruzioni fornite nell&#39;e-mail e rinnova con successo il processo. L&#39;immagine seguente mostra il flusso di lavoro della procedura dettagliata dell&#39;applicazione di assicurazione automatica:  ![procedura dettagliata sull&#39;applicazione di assicurazione automatica](assets/auto-insurance-application-walkthrough.png)
 
 ### Conrad invia una comunicazione di rinnovo polizza assicurativa da We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad accede all’istanza AEM, apre il dashboard Assicurazione automatica che specifica l’ID **** cliente di Sarah e fa clic su **Rinnova criterio**. L&#39;interfaccia utente **** agente si apre con i dettagli politici di Sarah Rose già compilati. Selezionare l&#39;indirizzo e-mail specificato di Sarah e fare clic su **Invia**. Sarah riceve un&#39;e-mail con l&#39;oggetto **Il rinnovo** dell&#39;assicurazione automatica.
+Conrad accede all’istanza AEM, apre il dashboard Assicurazione automatica che specifica l’ID **** cliente di Sarah e fa clic su **Rinnova criterio**. L&#39;interfaccia utente **** agente si apre con i dettagli dei criteri di Sarah Rose già compilati. Selezionare l&#39;indirizzo e-mail specificato di Sarah e fare clic su **Invia**. Sarah riceve un&#39;e-mail con l&#39;oggetto **Il rinnovo** dell&#39;assicurazione automatica.
 
 ![cc-dashboard](assets/cc-dashboard.png)
 
 #### Come funziona {#how-it-works-20}
 
-La comunicazione sul rinnovo della polizza assicurativa è una comunicazione interattiva. Conrad Simms utilizza l&#39;interfaccia utente dell&#39;agente per inviare la comunicazione sul rinnovo del polizza assicurativa a Sarah. La comunicazione include la stampa (PDF) e il collegamento al canale Web della comunicazione interattiva. La comunicazione interattiva utilizza AEM Workflow per inviare l’e-mail. [ Per informazioni sul flusso di lavoro, consultate https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+La comunicazione sul rinnovo della polizza assicurativa è una comunicazione interattiva. Conrad Simms utilizza l&#39;interfaccia utente dell&#39;agente per inviare la comunicazione sul rinnovo del polizza assicurativa a Sarah. La comunicazione include la stampa (PDF) e il collegamento al canale Web della comunicazione interattiva. La comunicazione interattiva utilizza AEM Workflow per inviare l’e-mail. Per informazioni sul flusso di lavoro, consultate https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
 ![autoassicurazione-flusso di lavoro](assets/auto-insurance-workflow.png)
 
-#### Vedi te stesso {#see-it-yourself-18}
+#### Vedi te stesso  {#see-it-yourself-18}
 
 Accedete al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L’URL è https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. Un messaggio e-mail con oggetto Rinnovo **** assicurazione automatica e viene inviato all&#39;indirizzo e-mail specificato. La politica offerta a Sarah Rose è una politica premium.
 
@@ -870,7 +873,7 @@ Il sito di riferimento fornisce inoltre una comunicazione interattiva che utiliz
 1. Impostate il valore `FormFieldRequestParameter`su `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Toccate **Salva tutto**. Il sito di riferimento è configurato per utilizzare la comunicazione interattiva che utilizza MS Dynamics come origine dati.
 
-Accedete ora al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L’URL è https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. All&#39;indirizzo e-mail specificato viene inviato un messaggio e-mail con l&#39;oggetto Rinnovo **** assicurazione automatica.
+Ora, accedete al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L’URL è https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. All&#39;indirizzo e-mail specificato viene inviato un messaggio e-mail con l&#39;oggetto Rinnovo **** assicurazione automatica.
 
 >[!NOTE]
 >
@@ -882,19 +885,19 @@ Accedete ora al dashboard **di assicurazione automatica** We.Finance come Conrad
 
 Sarah riceve una email con un allegato da We.Finance che le ricorda che la sua assicurazione auto sta per scadere. L&#39;allegato è la versione cartacea dei dettagli di rinnovo della polizza di assicurazione auto.
 
-Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa come Numero polizza, Importo dovuto e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
+Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa, come Numero polizza, Importo dovuto, e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
 
 ![auto-assicurazione-rinnovo-email](assets/auto-insurance-renewal-email.png)
 
-#### Come funziona {#how-it-works-21}
+#### Come funziona  {#how-it-works-21}
 
 Le uscite web e di stampa della lettera di assicurazione auto vengono create utilizzando le funzionalità multicanale delle comunicazioni interattive. Il pulsante **Rinnova ora** nell’e-mail è collegato all’applicazione di rinnovo dell’assicurazione automatica, che è una comunicazione interattiva su un’istanza di pubblicazione.
 
 ![versione i-web](assets/ic-web-version.png)
 
-#### Vedi te stesso {#see-it-yourself-19}
+#### Vedi te stesso  {#see-it-yourself-19}
 
-Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione cartacea della lettera di assicurazione auto. Fate clic su **Rinnova ora** per accedere alla versione Web del criterio. Controlla i tuoi dati personali e le informazioni legali e fai clic su **Rinnova**. Viene utilizzato un modulo adattivo per il pagamento.
+Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione cartacea della lettera di assicurazione auto. Fate clic su **Rinnova ora** per accedere alla versione Web del criterio. Controlla i tuoi dati personali e le informazioni legali e fai clic su **Rinnova ora**. Viene utilizzato un modulo adattivo per il pagamento.
 
 Il pulsante **Rinnova ora** nell&#39;e-mail indirizza Sarah alla versione Web del criterio. Potete visitare il seguente URL:
 
@@ -906,13 +909,13 @@ https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;docum
 
 Quando Sarah fa clic su **Rinnova ora** sulla versione Web della comunicazione interattiva, si apre la pagina dei pagamenti. Sarah ricontrolla il suo numero e la data di scadenza con i suoi record. Sul lato destro della pagina, controlla il Riepilogo pagamenti del rinnovo con sconto del 10% sull&#39;importo totale. Sarah riempie i dettagli della sua carta di credito e fa clic su **Effettua pagamento**.
 
-![forma adattiva-pagamento](assets/payment-adaptive-form.png)
+![pagamento-adattivo-modulo](assets/payment-adaptive-form.png)
 
-#### Come funziona {#how-it-works-22}
+#### Come funziona  {#how-it-works-22}
 
 Il pulsante Rinnova ora indirizza Sarah alla pagina di pagamento. La pagina di pagamento è un modulo adattivo. Sarah compila i dettagli della carta di credito e fa clic su **Invia**. Il pagamento con carta di credito viene elaborato e sullo schermo viene visualizzato un messaggio di ringraziamento configurato nel modulo adattivo.
 
-#### Vedi te stesso {#see-it-yourself-20}
+#### Vedi te stesso  {#see-it-yourself-20}
 
 Fare clic su **Rinnova ora** per accedere alla pagina Pagamento. Compila le informazioni sulla carta di credito e fai clic su **Effettua pagamento.** Puoi accedere alla pagina del pagamento nell’istanza di creazione all’indirizzo:
 
