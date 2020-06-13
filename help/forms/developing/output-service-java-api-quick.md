@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,10 @@ Java API Quick Start(SOAP) è disponibile per il servizio Output.
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-* ***Nota **: Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+
 
 ## Avvio rapido (modalità SOAP): Creazione di un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
@@ -288,7 +294,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creato un documento P
 
 ## Avvio rapido (modalità SOAP): Trasmissione di un documento situato nell&#39;archivio al servizio Output tramite l&#39;API Java {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-Il seguente codice Java recupera un file XDP dal repository e lo trasmette al servizio Output all&#39;interno dell&#39; `com.adobe.idp.Document` istanza. Il file XDP viene distribuito come parte di un’applicazione AEM Forms denominata `Applications/FormsApplication`. Il percorso URI è `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+Il seguente codice Java recupera un file XDP dall&#39;archivio e lo trasmette al servizio Output all&#39;interno dell&#39; `com.adobe.idp.Document` istanza. Il file XDP viene distribuito come parte di un’applicazione AEM Forms denominata `Applications/FormsApplication`. Il percorso URI è `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
@@ -807,7 +813,7 @@ Il seguente avvio rapido Java recupera il file *Loan.xdp* da Content Services. Q
 
 ## Avvio rapido (modalità SOAP): Creazione di un documento PDF basato su frammenti tramite l&#39;API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un documento PDF basato su una struttura del modulo assemblata dal servizio Assembler. Il servizio Assembler assembla i frammenti contenuti in più file XDP in una singola struttura del modulo. La logica dell&#39;applicazione che richiama il servizio Assembler si trova in un metodo definito dall&#39;utente denominato `GetFormDesign`. Il modulo non interattivo viene salvato come file PDF denominato *Loan.pdf *sul computer client. (Vedere [Creazione di documenti PDF utilizzando i frammenti](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)).
+Nell&#39;esempio di codice Java riportato di seguito viene creato un documento PDF basato su una struttura del modulo assemblata dal servizio Assembler. Il servizio Assembler assembla i frammenti contenuti in più file XDP in un&#39;unica struttura del modulo. La logica dell&#39;applicazione che richiama il servizio Assembler si trova in un metodo definito dall&#39;utente denominato `GetFormDesign`. Il modulo non interattivo viene salvato come file PDF denominato *Loan.pdf *sul computer client. (Vedere [Creazione di documenti PDF utilizzando i frammenti](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)).
 
 ```as3
  /* 
@@ -1252,7 +1258,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene inviato un flusso di 
 
 ## Avvio rapido (modalità SOAP): Creazione di più file PDF tramite l&#39;API Java {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-Il seguente codice Java crea più file PDF per ciascun record di dati che si trova in un file di dati XML denominato *Loan_data_batch.xml*. I file vengono scritti nella cartella C:\Adobe directory. I file PDF vengono scritti nella cartella C:\Adobe folder located on the J2EE application server hosting AEM Forms, non nel computer client. Consultate [Creazione di più file](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)di output.
+Il seguente codice Java crea più file PDF per ciascun record di dati che si trova in un file di dati XML denominato *Loan_data_batch.xml*. I file vengono scritti nella cartella C:\Adobe directory. I file PDF vengono scritti nella cartella C:\Adobe folder located on the J2EE application server hosting AEM Forms, non nel computer client. (Vedere [Creazione di più file](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)di output.)
 
 ```as3
  /* 
