@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,10 @@ Java API Quick Start (SOAP) è disponibile per l&#39;API User Manager.
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: La sezione Avvio rapido nella programmazione con moduli AEM si basa sul documento se si utilizza un altro sistema operativo, come Unix, e sostituisce i percorsi specifici di Windows con quelli supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>La sezione Avvio rapido nella programmazione con moduli AEM si basa sul documento se si utilizza un altro sistema operativo, come Unix, e sostituisce i percorsi specifici di Windows con quelli supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+
 
 ## Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l&#39;API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
