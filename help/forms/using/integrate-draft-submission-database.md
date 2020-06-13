@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -74,10 +77,13 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    Per assegnare un nome diverso alla tabella di metadati:
 
    * Nella console Web Configuration (Configurazione console Web), individuare e fare clic su Forms Portal Metadata Service Sample Implementation. Potete modificare i valori dell’origine dati, i metadati o il nome della tabella di metadati aggiuntivi.
+
    Per specificare un nome diverso per la tabella di dati:
 
    * In Configurazione console Web, individuare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e il nome della tabella dati.
-   **Nota**: Se si modificano i nomi delle tabelle, fornirli nella configurazione di Form Portal.
+   >[!NOTE]
+   >
+   >Se si modificano i nomi delle tabelle, fornirli nella configurazione di Form Portal.
 
 1. Lasciate invariate le altre configurazioni e fate clic su **[!UICONTROL Salva]**.
 
@@ -157,6 +163,7 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 >
 > * Il driver JDBC per MySQL non è fornito con l&#39;esempio. Assicurarsi di aver effettuato il provisioning e fornire le informazioni necessarie per configurare il pool di connessioni JDBC.
 > * Indicate le istanze di creazione e pubblicazione per utilizzare lo stesso database. Il valore del campo URI della connessione JDBC deve essere lo stesso per tutte le istanze di creazione e pubblicazione.
+
 >
 
 
@@ -317,7 +324,7 @@ Il file ZIP seguente contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalS
 
 [Ottieni file](assets/sample_package.zip)
 
-## Verificare la lunghezza del nome del file {#verify-length-of-the-file-name}
+## Verificare la lunghezza del nome del file  {#verify-length-of-the-file-name}
 
 L&#39;implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella presenta una chiave primaria composita basata sulle colonne Key e id della tabella. MySQL consente chiavi primarie fino a un massimo di 255 caratteri. È possibile utilizzare il seguente script di convalida sul lato client per verificare la lunghezza del nome file associato al widget del file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio, quando il nome del file è maggiore di 150 (inclusa l&#39;estensione). È possibile modificare lo script per verificarne la presenza di un numero diverso di caratteri.
 
