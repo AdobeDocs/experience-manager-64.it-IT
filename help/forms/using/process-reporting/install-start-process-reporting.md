@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,8 @@ Per modificare la pianificazione di pubblicazione, effettuate le seguenti operaz
 >
 >Se stai eseguendo l&#39;implementazione di AEM Forms su un cluster, effettua i seguenti passaggi su ciascun nodo del cluster.
 
+#### Server applicazioni JBoss {#jboss-application-server}
+
 1. Arrestate l&#39;istanza del server AEM Forms.
    * (Per Windows) Aprite il `[*JBoss root*]/bin/run.conf.bat` file in un editor.
    * (per Linux, AIX e Solaris) `[*JBoss root*]/bin/run.conf.sh` in un editor.
@@ -63,6 +68,8 @@ Per modificare la pianificazione di pubblicazione, effettuate le seguenti operaz
 1. Salvate e chiudete il `run.conf.bat` file.
 
 1. Riavviate l&#39;istanza del server AEM Forms.
+
+#### Server applicazioni WebSphere {#websphere-application-server}
 
 1. Arrestate l&#39;istanza del server AEM Forms.
 1. Accedete alla console di amministrazione di WebSphere. Nella struttura di navigazione fare clic su **Server** > Server **** applicazioni e quindi, nel riquadro a destra, fare clic sul nome del server.
@@ -80,6 +87,8 @@ Per modificare la pianificazione di pubblicazione, effettuate le seguenti operaz
 1. Fate clic su **Applica**, su OK, quindi su **Salva direttamente nella configurazione** principale.
 
 1. Riavviate l&#39;istanza del server AEM Forms.
+
+#### Server applicazioni WebLogic {#weblogic-application-server}
 
 1. Arrestate l&#39;istanza del server AEM Forms.
 1. Accedere alla console di amministrazione WebLogic. L&#39;indirizzo predefinito della console di amministrazione WebLogic è `https://[hostname]:[port]/console`.
@@ -108,7 +117,7 @@ Il servizio ProcessDataStorageProvider riceve i dati del processo dal servizio P
 
 Ad ogni ciclo di pubblicazione, i dati vengono salvati nelle sottocartelle di una cartella principale predefinita.
 
-Puoi usare la console di amministrazione per configurare la directory principale (**impostazione predefinita**: `/content/reporting/pm`) posizione e sottocartella (**impostazione predefinita**: Formato `/yyyy/mm/dd/hh/mi/ss`) gerarchia in cui verranno memorizzati i dati del processo.
+Puoi usare la console di amministrazione per configurare la directory principale (**impostazione predefinita**: `/content/reporting/pm`) posizione e sottocartella (**impostazione predefinita**: `/yyyy/mm/dd/hh/mi/ss`) formato gerarchico in cui vengono memorizzati i dati del processo.
 
 #### Per configurare i percorsi dell&#39;archivio di Process Reporting {#to-configure-the-process-reporting-repository-locations}
 
@@ -165,7 +174,7 @@ Il servizio ReportConfiguration viene utilizzato da Process Reporting per config
 
 Il servizio ProcessDataPublisher importa i dati del processo dal database AEM Forms e li pubblica nel servizio ProcessDataStorageProvider per l&#39;archiviazione.
 
-#### Per configurare il servizio ProcessDataPublisher {#to-configure-processdatapublisher-service-nbsp}
+#### Per configurare il servizio ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
 1. Accedete ad **Amministrazione Console** con le credenziali di amministratore.
 
