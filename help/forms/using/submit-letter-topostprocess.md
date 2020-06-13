@@ -1,15 +1,18 @@
 ---
 title: Post-elaborazione di lettere e comunicazioni interattive
 seo-title: Post-elaborazione delle lettere
-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
-seo-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
+description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, ad esempio per la stampa e l’e-mail, e di integrarli con le lettere.
+seo-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, ad esempio per la stampa e l’e-mail, e di integrarli con le lettere.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ Gli agenti possono associare ed eseguire flussi di lavoro post-elaborazione su l
 
 Per associare i processi post a lettere o comunicazioni interattive, è innanzitutto necessario impostare i processi post. È possibile eseguire due tipi di flussi di lavoro sulle lettere inviate:
 
-1. **** Flusso di lavoro moduli: Si tratta dei flussi di lavoro di gestione dei processi AEM Forms su JEE. Istruzioni per la configurazione del flusso di lavoro [](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3)Forms.
+1. **Flusso di lavoro moduli:** Si tratta dei flussi di lavoro di gestione dei processi AEM Forms su JEE. Istruzioni per la configurazione del flusso di lavoro [](#formsworkflow)Forms.
 
-1. **** Flusso di lavoro AEM: I flussi di lavoro AEM possono essere utilizzati anche come processi di pubblicazione per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **Flusso di lavoro AEM:** I flussi di lavoro AEM possono essere utilizzati anche come processi di pubblicazione per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Flusso di lavoro per moduli {#formsworkflow}
 
@@ -56,11 +59,12 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
 
    Andate alla pagina Configurazioni console Web di Adobe Experience Manager > Configurazioni **[!UICONTROL di gestione della corrispondenza]** e configurate i seguenti parametri:
 
-   1. **** inPDFDoc (parametro del documento PDF): Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
-   1. **** inXMLDoc (parametro dati XML): Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
-   1. **** inXDPDoc (parametro del documento XDP): Un documento XML come input. Questo input contiene il layout sottostante (XDP).
-   1. **** inAttachmentDocs (parametro Attachment Documents): Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
-   1. **** redirectURL (Redirect URL Output): Un tipo di output che indica l&#39;URL a cui reindirizzare.
+   1. **inPDFDoc (parametro del documento PDF):** Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
+   1. **inXMLDoc (parametro dati XML):** Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
+   1. **inXDPDoc (parametro del documento XDP):** Un documento XML come input. Questo input contiene il layout sottostante (XDP).
+   1. **inAttachmentDocs (parametro Attachment Documents):** Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
+   1. **redirectURL (Redirect URL Output):** Un tipo di output che indica l&#39;URL a cui reindirizzare.
+
    Il flusso di lavoro dei moduli deve avere parametri di documento PDF o dati XML come input con lo stesso nome specificato in **[!UICONTROL Correspondence Management Configurations]**. Questo è necessario per elencare il processo nel menu a discesa Post Process (Processo post).
 
 ## Impostazioni nell’istanza Pubblica {#settings-on-the-publish-instance}
@@ -71,7 +75,7 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
 
 >[!NOTE]
 >
->Durante l&#39;utilizzo di flussi di lavoro Forms o AEM, prima di effettuare qualsiasi invio dal server di pubblicazione è necessario configurare il servizio delle impostazioni DS. In caso contrario, la presentazione del modulo non può essere effettuata.
+>Durante l&#39;utilizzo di flussi di lavoro Forms o AEM, prima di effettuare qualsiasi invio dal server di pubblicazione, è necessario configurare il servizio delle impostazioni DS. In caso contrario, la presentazione del modulo non può essere effettuata.
 
 ## Recupero Istanze Lettera {#letter-instances-retrieval}
 
@@ -117,7 +121,7 @@ Nell&#39;interfaccia utente CCR, completa i seguenti passaggi per associare un p
 1. Toccate **Salva**.
 1. Dopo aver configurato la lettera con il processo di pubblicazione, pubblicate la lettera ed eventualmente sull’istanza di pubblicazione, specificate l’URL di elaborazione nel servizio Impostazioni di AEM DS. In questo modo il processo post viene eseguito sull&#39;istanza di elaborazione.
 
-## Ricaricare un&#39;istanza di lettera bozza {#reloaddraft}
+## Ricaricare un&#39;istanza di lettera bozza  {#reloaddraft}
 
 Un&#39;istanza di lettera bozza può essere ricaricata nell&#39;interfaccia utente utilizzando il seguente URL:
 
