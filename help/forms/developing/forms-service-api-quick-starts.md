@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 0%
 
 ---
 
@@ -47,13 +50,15 @@ Per il servizio Forms sono disponibili i seguenti Avvio rapido:
 
 [Avvio rapido (modalità SOAP): Rendering per valore tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Invio di documenti al servizio Forms tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Avvio rapido (modalità SOAP): Trasmissione di documenti al servizio Forms tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 La logica dell&#39;applicazione che utilizza l&#39;API del servizio Forms è implementata come servlet Java. Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-* **Nota**: Gli avvii rapidi disponibili in Programmazione con v si basano sul server dei moduli in uso in un altro sistema operativo, come Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili in Programmazione con v si basano sul server dei moduli in uso in un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
-   **Suggerimento**: Il sito Web di Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione di applicazioni](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET per il rendering dei moduli.
+**Suggerimento**: Il sito Web di Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione di applicazioni](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET per il rendering dei moduli.
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo PDF interattivo mediante l&#39;API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -199,7 +204,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo sul client mediante l&#39;API Java {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering del modulo *Loan.xdp *sul client tramite l&#39;API Java del servizio Forms. Tenere presente che la struttura del modulo fa parte di un&#39;applicazione e a cui viene fatto riferimento utilizzando il valore URI della radice del contenuto `repository:///`. (Vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
+Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering del modulo denominato *Loan.xdp *sul client mediante l&#39;API Java del servizio Forms. Tenere presente che la struttura del modulo fa parte di un&#39;applicazione e a cui viene fatto riferimento utilizzando il valore URI della radice del contenuto `repository:///`. (Vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
 ```as3
  /* 
@@ -1210,7 +1215,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 ## Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come XML mediante l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene gestito un modulo inviato come XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=text/xml`. I valori corrispondenti ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
+Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=text/xml`. I valori corrispondenti ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore di stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
 ```as3
  /* 
@@ -1379,7 +1384,7 @@ Nell&#39;esempio di codice seguente viene gestito un modulo inviato come XML. Il
 
 ## Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come PDF tramite l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene gestito un modulo inviato come dati PDF. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/pdf`. Il modulo inviato viene salvato come file PDF denominato *tempPDF.pdf*. Inoltre, poiché il modulo viene inviato come PDF, è possibile recuperare gli allegati. Tutti gli allegati vengono salvati come file JPEG. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
+Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come dati PDF. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/pdf`. Il modulo inviato viene salvato come file PDF denominato *tempPDF.pdf*. Inoltre, poiché il modulo viene inviato come PDF, è possibile recuperare gli allegati. Tutti gli allegati vengono salvati come file JPEG. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
 ```as3
  /* 
@@ -1529,7 +1534,7 @@ Nell&#39;esempio di codice seguente viene gestito un modulo inviato come dati PD
 
 ## Avvio rapido (modalità SOAP): Gestione dei moduli HTML inviati come XML mediante l&#39;API Java {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene gestito un modulo HTML inviato come dati XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/x-www-form-urlencoded`.I valori che corrispondono ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
+Nell&#39;esempio di codice riportato di seguito viene gestito un modulo HTML inviato come dati XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/x-www-form-urlencoded`.I valori che corrispondono ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore di stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
 ```as3
  /* 
@@ -2617,7 +2622,7 @@ Il seguente avvio rapido Java esegue il rendering di un modulo PDF interattivo b
  }
 ```
 
-## Avvio rapido (modalità SOAP): Invio di documenti al servizio Forms tramite l&#39;API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Trasmissione di documenti al servizio Forms tramite l&#39;API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
 Il seguente avvio rapido Java recupera il file Loan.xdp da Content Services (obsoleto). Questo file XDP si trova nello spazio `/Company Home/Form Designs`. Il file XDP viene restituito in un&#39; `com.adobe.idp.Document` istanza. L&#39; `com.adobe.idp.Document` istanza viene passata al servizio Forms. Il modulo interattivo viene scritto in un browser Web client. (vedere [Trasmissione di documenti al servizio](/help/forms/developing/passing-documents-forms-service.md)Forms).
 
