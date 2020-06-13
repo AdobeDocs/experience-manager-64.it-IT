@@ -9,7 +9,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 116995858cd81f69d330b77fbae6a4cff97a5c2d
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Questa esercitazione è un passaggio della serie [Crea il primo modulo](/help/fo
 
 ## Informazioni sull&#39;esercitazione {#about-the-tutorial}
 
-Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, quali profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
+Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, quali profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
 
 Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello di dati del modulo, consultate Integrazione [dei dati di](/help/forms/using/data-integration.md)AEM Forms.
 
@@ -37,7 +40,7 @@ Il modello dati del modulo sarà simile al seguente:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Origini dati configurate** B. Schemi origine dati **C.** Servizi disponibili **D. Oggetti del modello dati** E. Servizi configurati
+**A.** Origini dati configurate **B.** Schemi origine dati **C.** Servizi disponibili **D.** Oggetti del modello dati **E.** Servizi configurati
 
 ## Prerequisiti {#prerequisites}
 
@@ -67,24 +70,25 @@ Per configurare il database MySQL, effettuate le seguenti operazioni:
    1. Individua la configurazione DataSource **** in pool di connessione Apache Sling. Toccate per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specificate i seguenti dettagli:
 
-      * **** Nome origine dati: Potete specificare qualsiasi nome. Ad esempio, specificate **WeRetailMySQL**.
+      * **Nome origine dati:** Potete specificare qualsiasi nome. Ad esempio, specificate **WeRetailMySQL**.
       * **Nome** proprietà del servizio DataSource: Specificare il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell&#39;istanza dell&#39;origine dati come servizio OSGi. Ad esempio, **datasource.name**.
       * **Classe** driver JDBC: Specificate il nome della classe Java del driver JDBC. Per il database MySQL, specificate **com.mysql.jdbc.Driver**.
       * **URI** connessione JDBC: Specificate l&#39;URL di connessione del database. Per il database MySQL in esecuzione sulla porta 3306 e lo schema weretail, l&#39;URL è: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Nome utente: Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
-      * **** Password: Password del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
-      * **** Test sul credito: Abilitate l&#39;opzione **Prova in prestito** .
-      * **** Test al ritorno: Abilitate l&#39;opzione **Test on Return** (Test su ritorno).
-      * **** Query di convalida: Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio, **selezionare &amp;ast; dai dettagli** del cliente.
+      * **Nome utente:** Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
+      * **Password:** Password del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
+      * **Test sul credito:** Abilitate l&#39;opzione **Prova in prestito** .
+      * **Test al ritorno:** Abilitate l&#39;opzione **Test on Return** (Test su ritorno).
+      * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio, **selezionare &amp;ast; dai dettagli** del cliente.
       * **Isolamento** transazione: Impostare il valore su **READ_COMMTED**.
+
       Lasciate le altre proprietà con [i valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predefiniti e toccate **Salva**.
-   Viene creata una configurazione simile alla seguente.
+   Viene creata una configurazione simile a quella riportata di seguito.
 
    ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms offre un&#39;interfaccia utente intuitiva per [creare un](/help/forms/using/data-integration.md#main-pars-header-1524967585)modello di dati del modulo da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il nostro caso di utilizzo, utilizzeremo l&#39;origine dati MySQL configurata.
+AEM Forms offre un&#39;interfaccia utente intuitiva per [creare un modello](data-integration.md) di dati del modulo da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il nostro caso di utilizzo, utilizzeremo l&#39;origine dati MySQL configurata.
 
 Per creare un modello dati modulo, effettuare le seguenti operazioni:
 
@@ -106,7 +110,7 @@ La configurazione del modello dati del modulo comporta:
 
 Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, passa a **Forms > Integrazioni** dati. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Nell’istanza di creazione di AEM, andate a **Moduli > Integrazioni** dati. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Il modello di dati del modulo **per la spedizione dei clienti e la fatturazione** creato in precedenza è riportato di seguito. Aprirlo in modalità di modifica.
 
    L&#39;origine dati selezionata **WeRetailMySQL** è configurata nel modello dati del modulo.
@@ -127,6 +131,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
 
       * get
       * aggiorna
+
    Toccare **Aggiungi selezionato** per aggiungere gli oggetti e i servizi del modello dati selezionati al modello dati del modulo.
 
    ![weretail-schema](assets/weretail-schema.png)
@@ -142,7 +147,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
 
       ![read-default](assets/read-default.png)
 
-   1. Analogamente, selezionate **update** come servizio di scrittura. L&#39;oggetto **custom details** viene aggiunto automaticamente come argomento. L&#39;argomento è configurato come segue.
+   1. Analogamente, selezionate **update** come servizio di scrittura. L&#39;oggetto **customerdetails** viene aggiunto automaticamente come argomento. L&#39;argomento è configurato come segue.
 
       ![write-default](assets/write-default.png)
 
@@ -171,6 +176,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
          schema dettaglio cliente
       * **Restituisce array**: Disattivate l&#39;opzione **Return array** (Restituisce array).
       * **Argomenti**: Selezionare l&#39;argomento denominato **ID**.
+
       Toccate **Chiudi**. Il servizio per recuperare i dettagli del cliente dal database MySQL è configurato.
 
       ![ricerca dell&#39;indirizzo di spedizione](assets/shiiping-address-retrieval.png)
@@ -191,9 +197,10 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
 
       * **Tipo** di output: Selezionare **BOOLEAN**.
       * **Argomenti**: Selezionate l’argomento denominato **ID** e i dettagli **** del cliente.
+
       Toccate **Chiudi**. Il servizio di **aggiornamento** per aggiornare i dettagli del cliente nel database MySQL è configurato.
 
-      ![hip-address-update](assets/shiiping-address-update.png)
+      ![shiiping-address-update](assets/shiiping-address-update.png)
 
 
 
