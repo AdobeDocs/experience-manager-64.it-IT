@@ -1,6 +1,6 @@
 ---
 title: Esercitazione - Creazione della prima comunicazione interattiva
-seo-title: ' Creazione della prima comunicazione interattiva'
+seo-title: Creazione della prima comunicazione interattiva
 description: Scopri come creare la tua prima comunicazione interattiva.
 seo-description: Scopri come creare la tua prima comunicazione interattiva.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Scopri come creare la tua prima comunicazione interattiva.
 
 Le comunicazioni interattive centralizzano e gestiscono la creazione, l&#39;assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, e-mail di marketing, fatture e kit di benvenuto. Le comunicazioni interattive possono essere distribuite su due canali: Stampa e Web. Il canale Stampa viene utilizzato per creare PDF e comunicazioni cartacee, mentre il canale Web viene utilizzato per distribuire esperienze online.
 
-Questa esercitazione fornisce un framework end-to-end per creare una comunicazione interattiva. L’esercitazione è organizzata in un caso di utilizzo e in più guide. Ogni guida è utile per creare funzioni utilizzate come elementi costitutivi per creare una comunicazione interattiva.
+Questa esercitazione fornisce un framework end-to-end per creare una comunicazione interattiva. L’esercitazione è organizzata in un caso d’uso e in più guide. Ogni guida è utile per creare funzioni utilizzate come elementi costitutivi per creare una comunicazione interattiva.
 
 Nell&#39;immagine seguente sono illustrati i blocchi costitutivi necessari per creare una comunicazione interattiva.
 
@@ -84,9 +87,9 @@ Un modello dati del modulo consente di collegare una comunicazione interattiva a
 * Creare associazioni tra gli oggetti del modello dati
 * Visualizzare i dati di esempio generati automaticamente
 * Modifica dei dati di esempio
-* Verifica del modello dati del modulo e dei servizi configurati con i dati di prova
+* Verifica del modello di dati del modulo e dei servizi configurati con i dati di prova
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
 ## Passaggio 3: Creazione di frammenti di documento {#step-create-document-fragments}
 
@@ -96,7 +99,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 
 **Obiettivi:**
 
-*  Creazione di frammenti di documento
+* Creazione di frammenti di documento
 * Creare variabili
 * Creazione e applicazione di regole
 
@@ -137,7 +140,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: S
 * Creazione di un grafico nella versione Web della comunicazione interattiva
 * Creazione di collegamenti ipertestuali nella versione Web della comunicazione interattiva
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
 ## Passaggio 6: Test della comunicazione interattiva {#step-test-your-interactive-communication}
 
