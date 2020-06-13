@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +52,7 @@ L&#39;anatomia include i dati con le seguenti modalità di input:
 * Dati condizionali
 * Immagini
 
-In ogni sezione, il testo in grassetto rappresenta testo statico. Il database include tabelle cliente, fatture e chiamate. Un modello dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, vedere [Creazione di un modello](/help/forms/using/create-form-data-model0.md)dati del modulo.
+In ogni sezione, il testo in grassetto rappresenta testo statico. Il database include tabelle cliente, fatture e chiamate. Un modello dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, vedere [Creazione di un modello](create-form-data-model-tutorial.md)dati del modulo.
 
 Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’anatomia della comunicazione interattiva:
 
