@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,9 @@ Java API Quick Start(SOAP) è disponibile per il servizio Barcoded Forms:
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili nella programmazione con AEM Forms si basano sul server Forms in fase di implementazione nel server applicazioni JBoss e nel sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Decodifica dei dati del modulo con codice a barre tramite l&#39;API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
@@ -216,5 +221,5 @@ Il seguente codice Java decodifica i dati del modulo che si trova in un modulo P
 
 >[!NOTE]
 >
->Se si utilizza un `org.w3c.dom.Document` oggetto e un `com.adobe.idp.Document` oggetto nella stessa logica di applicazione, è buona norma qualificare entrambi gli oggetti.
+>Se si utilizza un `org.w3c.dom.Document` oggetto e un `com.adobe.idp.Document` oggetto nella stessa logica dell&#39;applicazione, è buona norma qualificare entrambi gli oggetti.
 
