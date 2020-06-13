@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 0%
 
 ---
 
@@ -24,16 +27,16 @@ Potete [incorporare un modulo adattivo nella pagina AEM Sites](/help/forms/using
 Effettuare le seguenti operazioni prima di incorporare un modulo adattivo in un sito Web esterno:
 
 * Pubblicate il modulo adattivo sull’istanza AEM Publish.
-* Create o identificate una pagina Web nel sito Web in cui è installato il modulo adattivo. Verificate che la pagina Web sia in grado di [leggere i file jQuery da un CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o che disponga di una copia locale di jQuery incorporata. jQuery è richiesto per eseguire il rendering di un modulo adattivo.
+* Create o identificate una pagina Web nel sito Web in cui è ospitato il modulo adattivo. Verificate che la pagina Web sia in grado di [leggere i file jQuery da un CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o che disponga di una copia locale del file jQuery incorporato. jQuery è richiesto per eseguire il rendering di un modulo adattivo.
 * Quando il server AEM e la pagina Web si trovano su domini diversi, effettua i passaggi elencati nella sezione, [abilita AEM Forms per distribuire moduli adattivi a un sito](#cross-domain-sites)interdominio.
 * [Imposta il proxy](#reveseproxy) inverso per abilitare la comunicazione tra la pagina esterna e il server AEM Forms.
 
 ## Incorpora modulo adattivo {#embed-adaptive-form}
 
-È possibile incorporare un modulo adattivo inserendo alcune righe di JavaScript nella pagina Web. L’API nel codice invia una richiesta HTTP al server AEM per risorse di moduli adattivi e inserisce il modulo adattivo nel contenitore specificato. Di seguito è riportato un esempio di codice per incorporare un modulo adattivo in una pagina esterna. Non utilizzare il codice così come è in un ambiente di produzione. Personalizzate il codice in base alle vostre esigenze, ad esempio utilizzando un iFrame per i siti Web che utilizzano una propria versione di jQuery. L’utilizzo di iFrame consente di evitare conflitti nelle versioni jQuery:
+È possibile incorporare un modulo adattivo inserendo alcune righe di JavaScript nella pagina Web. L’API nel codice invia una richiesta HTTP al server AEM per risorse di moduli adattivi e inserisce il modulo adattivo nel contenitore di moduli specificato. Di seguito è riportato un esempio di codice per incorporare un modulo adattivo in una pagina esterna. Non utilizzare il codice così come è in un ambiente di produzione. Personalizzate il codice in base alle vostre esigenze, ad esempio utilizzando un iFrame per i siti Web che utilizzano una propria versione di jQuery. L’utilizzo di iFrame consente di evitare conflitti nelle versioni jQuery:
 
 
-1. Incorporate il seguente codice in una pagina Web del sito Web:
+1. Incorpora il seguente codice in una pagina Web del tuo sito Web:
 
    ```
    
@@ -113,7 +116,7 @@ Il modulo adattivo è incorporato nella pagina Web. Osservate quanto segue nel m
 * Il targeting delle esperienze e i test A/B configurati nel modulo adattivo originale non funzionano nel modulo incorporato.
 * Se Adobe Analytics è configurato sul modulo originale, i dati di analisi vengono acquisiti nel server Adobe Analytics. Tuttavia, non è disponibile nel rapporto di analisi Moduli.
 
-## Imposta proxy inverso {#reveseproxy}
+## Imposta proxy inverso  {#reveseproxy}
 
 La pagina Web esterna che incorpora il modulo adattivo invia le richieste al server AEM, che in genere si trova dietro il firewall in una rete privata. Per garantire che le richieste siano indirizzate in modo sicuro al server AEM, si consiglia di configurare un server proxy inverso.
 
@@ -156,15 +159,15 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## Best practices {#best-practices}
 
-Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le seguenti procedure ottimali:
+Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le procedure ottimali seguenti:
 
 * Assicurarsi che le regole di stile definite nella pagina Web CSS non siano in conflitto con l&#39;oggetto modulo CSS. Per evitare i conflitti, potete riutilizzare il CSS della pagina Web nel tema del modulo adattivo utilizzando la libreria client AEM. Per informazioni sull&#39;uso della libreria client nei temi dei moduli adattivi, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
 * Per fare in modo che il contenitore del modulo nella pagina Web utilizzi l’intera larghezza della finestra. Garantisce il funzionamento delle regole CSS configurate per i dispositivi mobili senza alcuna modifica. Se il contenitore del modulo non occupa l&#39;intera larghezza della finestra, è necessario scrivere CSS personalizzato per adattare il modulo ai diversi dispositivi mobili.
-* Utilizzare ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` l&#39;API per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
-* Utilizzate ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API per scaricare il modulo adattivo dal DOM HTML.
+* Utilizzare [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
+* Utilizzare [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API per scaricare il modulo adattivo dal DOM HTML.
 * Configurate l’intestazione access-control-origin quando inviate la risposta dal server AEM.
 
-## Abilitare AEM Forms per distribuire moduli adattivi a un sito interdominio {#cross-domain-sites}
+## Abilitare AEM Forms per distribuire moduli adattivi a un sito interdominio  {#cross-domain-sites}
 
 1. Nell’istanza di creazione di AEM, andate a Gestione configurazione console Web AEM all’indirizzo `http://[server]:[port]/system/console/configMgr`.
 1. Individuate e aprite la configurazione del filtro **Apache Sling Referrer** Filter.
