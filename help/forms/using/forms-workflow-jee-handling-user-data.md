@@ -1,6 +1,6 @@
 ---
-title: Flussi di lavoro JEE Forms| Gestione dei dati utente
-seo-title: Flussi di lavoro JEE Forms| Gestione dei dati utente
+title: Flussi di lavoro JEE Forms | Gestione dei dati utente
+seo-title: Flussi di lavoro JEE Forms | Gestione dei dati utente
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -8,12 +8,15 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 0%
 
 ---
 
 
-# Flussi di lavoro JEE Forms| Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
+# Flussi di lavoro JEE Forms | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
 
 I flussi di lavoro AEM Forms JEE forniscono strumenti per progettare, creare e gestire i processi aziendali. Un processo di workflow consiste in una serie di passaggi eseguiti in un ordine specificato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. Un processo può interagire con risorse, account utente e servizi e può essere attivato utilizzando uno dei seguenti metodi:
 
@@ -41,7 +44,7 @@ Tuttavia, non potete identificare l’ID dell’istanza di processo per un inizi
 
 ### Identificare gli ID dell’istanza del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
 
-Effettuate le seguenti operazioni per identificare gli ID dell’istanza di processo per un iniziatore di workflow o un partecipante:
+Effettuate le seguenti operazioni per identificare gli ID dell’istanza di processo per un iniziatore di flusso di lavoro o un partecipante:
 
 1. Eseguite il comando seguente nel database del server AEM Forms per recuperare l’ID principale per l’iniziatore di workflow o il partecipante dalla tabella del `edcprincipalentity` database.
 
@@ -59,7 +62,7 @@ Effettuate le seguenti operazioni per identificare gli ID dell’istanza di proc
 
    La query restituisce le attività iniziate dal `initiator`_ specificato `principal_id`. Le attività sono di due tipi:
 
-   * **Attività** completate: Tali attività sono state inviate e presentano un valore alfanumerico nel `process_instance_id` campo. Prendi nota di tutti gli ID di istanza del processo per le attività inviate e continua con i passaggi.
+   * **Attività** completate: Tali attività sono state inviate e presentano un valore alfanumerico nel `process_instance_id` campo. Prendete nota di tutti gli ID di istanza del processo per le attività inviate e continuate con i passaggi.
    * **Attività avviate ma non completate**: Tali attività sono iniziate ma non ancora inviate. Il valore nel `process_instance_id` campo di queste attività è **0** (zero). In questo caso, prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività](#orphan)orfane.
 
 1. (**Per i partecipanti** al flusso di lavoro) Esegui il comando seguente per recuperare gli ID dell’istanza di processo associati all’ID principale del partecipante al processo per l’iniziatore dalla tabella del `tb_assignment` database.
@@ -70,7 +73,7 @@ Effettuate le seguenti operazioni per identificare gli ID dell’istanza di proc
 
    La query restituisce gli ID di istanza per tutti i processi associati al partecipante, compresi quelli in cui il partecipante non ha inviato alcuna attività.
 
-   Prendi nota di tutti gli ID di istanza del processo per le attività inviate e continua con i passaggi.
+   Prendete nota di tutti gli ID di istanza del processo per le attività inviate e continuate con i passaggi.
 
    Per le attività o le attività orfane in cui il valore `process_instance_id` è 0 (zero), prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività](#orphan)orfane.
 
@@ -86,7 +89,7 @@ Un flusso di lavoro può essere progettato in modo che i dati utente vengano acq
 
 Per determinare se un flusso di lavoro che memorizza i dati in variabili di tipo primitivo contiene i dati per l’utente, procedere come segue:
 
-1. Esegui il seguente comando del database:
+1. Eseguite il seguente comando del database:
 
    ```sql
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
@@ -126,7 +129,7 @@ Dopo aver identificato gli ID dell’istanza di processo associati a un utente, 
 
 1. Create un&#39;istanza del `ProcessManager` client pubblico ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un&#39; `ServiceClientFactory` istanza con le impostazioni di connessione corrette.
 
-   Per ulteriori informazioni, consultate Riferimento API Java per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Per ulteriori informazioni, consultate Riferimento API Java per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controllare lo stato dell&#39;istanza del flusso di lavoro. Se lo stato è diverso da 2 (COMPLETE) o 4 (TERMINATED), terminare l’istanza chiamando il seguente metodo:
 
