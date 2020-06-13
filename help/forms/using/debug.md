@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile eseguire il rendering di un modulo (viene visualizzato un messaggio di errore) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
 
-1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consultate Parametri di [rendering](/help/forms/using/debug.md#main-pars-table).
+1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consultate Parametri di [rendering](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Accedete a CRX Package Manager (all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/packmgr/index.jsp) e verificate che i pacchetti seguenti siano installati correttamente:
 
    * adobe-lc-forms-content-pkg-&lt;versione>.zip
@@ -65,12 +68,15 @@ Controllate i seguenti parametri:
    Verificate che lo stato dei seguenti bundle sia &quot;attivo&quot;:
 
    * scala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
    * Modulo di rendering Adobe XFA
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
    * Adobe XFA Forms LC Connector
+
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
 ## Problema: Rendering del modulo senza stili {#problem-form-renders-without-styles}
