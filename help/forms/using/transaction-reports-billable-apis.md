@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 0d0c6c6e536bf91ddc579382593c07144bd0ba8f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1881'
+ht-degree: 7%
 
 ---
 
@@ -26,17 +29,17 @@ AEM Forms offre diverse API per l&#39;invio di moduli, l&#39;elaborazione di doc
 * Appiattimento di un documento PDF dinamico
 * Generazione di un documento di record
 * Unione di un documento PDF interattivo con un altro documento PDF
-* Utilizzo del passaggio attività di assegnazione e dei passaggi dei servizi doc dei flussi di lavoro AEM
+* Utilizzo della fase di assegnazione delle attività e dei passaggi dei servizi doc dei flussi di lavoro AEM
 * Uso di moduli adattivi all&#39;interno di un modulo adattivo
 
 Le API di fatturazione non tengono conto del numero di pagine, della lunghezza di un documento o modulo o del formato finale del documento di cui è stato effettuato il rendering. Un rapporto sulle transazioni divide le transazioni in tre categorie: Documenti elaborati, Documenti sottoposti a rendering e Moduli inviati.
 
-* **** Moduli inviati: Quando i dati vengono inviati da qualsiasi tipo di modulo creato con AEM Forms e i dati vengono inviati a qualsiasi archivio dati o database, viene considerato come invio del modulo. Ad esempio, l&#39;invio di un modulo adattivo, di un modulo HTML5, di moduli PDF e di un set di moduli viene contabilizzato come moduli inviati. Ciascun modulo in un set di moduli è considerato un invio. Ad esempio, se un set di moduli contiene 5 moduli, all&#39;invio del set di moduli il servizio di reporting delle transazioni li conteggia come 5 invii.
-* **** Documenti sottoposti a rendering: La generazione di un documento mediante la combinazione di un modello e dati, la firma digitale o la certificazione di un documento, l&#39;utilizzo di API Document Services fatturabili per Document Services o la conversione di un documento da un formato a un altro vengono contabilizzate come documenti sottoposti a rendering.
+* **Moduli inviati:** Quando i dati vengono inviati da qualsiasi tipo di modulo creato con AEM Forms e i dati vengono inviati a qualsiasi archivio dati o database, viene considerato come invio del modulo. Ad esempio, l&#39;invio di un modulo adattivo, di un modulo HTML5, di moduli PDF e di un set di moduli viene contabilizzato come moduli inviati. Ciascun modulo in un set di moduli è considerato un invio. Ad esempio, se un set di moduli contiene 5 moduli, all&#39;invio del set di moduli il servizio di reporting delle transazioni li conteggia come 5 invii.
+* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e dati, la firma digitale o la certificazione di un documento, l&#39;utilizzo di API Document Services fatturabili per Document Services o la conversione di un documento da un formato a un altro vengono contabilizzate come documenti sottoposti a rendering.
 
 >[!NOTE]
 >
->L&#39;interfaccia utente Report transazione presenta tre categorie: Moduli inviati, documenti sottoposti a rendering e documenti elaborati. Sia i documenti sottoposti a rendering che i documenti elaborati vengono considerati come documenti sottoposti a rendering.
+>L&#39;interfaccia utente Rapporti transazione presenta tre categorie: Moduli inviati, documenti sottoposti a rendering e documenti elaborati. Sia i documenti sottoposti a rendering che i documenti elaborati vengono considerati come documenti sottoposti a rendering.
 
 ## API Document Services fatturabili {#billable-document-services-apis}
 
@@ -81,7 +84,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
    <td><p>Crea PDF da pagine HTML.</p> </td> 
    <td>Documenti elaborati<br /> </td> 
    <td> </td> 
@@ -100,7 +103,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td> 
-   <td>Ottimizza i PDF per ridurre le dimensioni dei file eliminando i metadati non necessari senza compromettere la qualità.</td> 
+   <td>Ottimizza i file PDF per ridurne le dimensioni eliminando i metadati non necessari senza comprometterne la qualità.</td> 
    <td>Documenti elaborati<br /> </td> 
    <td> </td> 
   </tr>
@@ -274,8 +277,8 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
    <td>Informazioni aggiuntive</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Esegue il documento DDX specificato e restituisce un oggetto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenente i documenti risultanti. </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
+   <td>Esegue il documento DDX specificato e restituisce un oggetto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenente i documenti risultanti. </td> 
    <td>Documenti elaborati</td> 
    <td>Le seguenti operazioni non sono contabilizzate come transazioni:
     <ul> 
@@ -285,7 +288,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Esegue il documento DDX specificato e restituisce un oggetto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> contenente i documenti risultanti. </td> 
+   <td>Esegue il documento DDX specificato e restituisce un oggetto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> contenente i documenti risultanti. </td> 
    <td>Documenti elaborati</td> 
    <td>Tutti i formati di file di input supportati dai servizi PDF Generator, Forms e Output, il servizio Assembler supporta tutti questi formati come formati di file di output. </td> 
   </tr>
@@ -306,7 +309,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 
 
-### PDF Utility Service {#pdf-utility-service}
+### PDF Utility Service  {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -353,7 +356,7 @@ Tutti gli eventi di invio di moduli adattivi, moduli HTML5 e set di moduli sono 
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso d’uso</p> </td> 
+   <td><p>Caso d’uso    </p> </td> 
    <td>Descrizione</td> 
    <td>Categoria report transazioni</td> 
    <td>Informazioni aggiuntive</td> 
@@ -376,7 +379,7 @@ Tutti gli eventi di invio di moduli adattivi, moduli HTML5 e set di moduli sono 
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso d’uso</p> </td> 
+   <td><p>Caso d’uso    </p> </td> 
    <td>Descrizione </td> 
    <td>Categoria report transazioni</td> 
    <td>Informazioni aggiuntive</td> 
@@ -415,7 +418,7 @@ Tutti gli eventi di invio di moduli adattivi, moduli HTML5 e set di moduli sono 
 
 ## Comunicazione interattiva fatturabile e flussi di lavoro AEM incentrati sui moduli sulle API OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM incentrati sui moduli in OSGi e tutte le rappresentazioni delle comunicazioni interattive e sono contabilizzate come transazioni. L’anteprima di una comunicazione interattiva sull’istanza di creazione e l’anteprima sull’istanza di pubblicazione mediante l’interfaccia utente dell’agente non vengono considerate come transazioni. Se una fase del flusso di lavoro registra una transazione e il flusso di lavoro non viene completato, il conteggio delle transazioni non viene invertito.
+Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM incentrati sui moduli in OSGi e tutte le rappresentazioni delle comunicazioni interattive e sono contabilizzate come transazioni. L’anteprima di una comunicazione interattiva sull’istanza di creazione e l’anteprima sull’istanza di pubblicazione mediante l’interfaccia utente dell’agente non vengono considerate come transazioni. Se una fase del flusso di lavoro registra una transazione e il flusso di lavoro non viene completato, il conteggio delle transazioni non viene stornato.
 
 ### Comunicazione interattiva - Canale web {#interactive-communication-web-channel}
 
@@ -459,7 +462,7 @@ Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM incentra
  </tbody>
 </table>
 
-### Flussi di lavoro AEM incentrati sui moduli in OSGi {#form-centric-aem-workflows-on-osgi}
+### Flussi di lavoro AEM incentrati sui moduli in OSGi  {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
