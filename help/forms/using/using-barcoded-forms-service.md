@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1043'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +42,7 @@ Il servizio supporta inoltre le seguenti simbologie **monodimensionali** fornite
 * Estrarre i dati dei codici a barre dalle immagini dei codici a barre (TIFF o PDF). I dati vengono memorizzati come testo delimitato.
 * Conversione di dati di testo delimitati in XML (XDP o XFDF). I dati XML sono più facili da analizzare rispetto al testo delimitato. Inoltre, i dati in formato XDP o XFDF possono essere utilizzati come input per altri servizi in AEM Forms.
 
-Per ciascun codice a barre contenuto in un&#39;immagine, il servizio Moduli codici a barre individua il codice a barre, lo decodifica ed estrae i dati. Il servizio restituisce i dati del codice a barre (utilizzando la codifica di entità dove richiesto) in un elemento di contenuto di un documento XML. Ad esempio, la seguente immagine TIFF digitalizzata di un modulo contiene due codici a barre:
+Per ciascun codice a barre contenuto in un&#39;immagine, il servizio Moduli con codice a barre individua il codice a barre, lo decodifica ed estrae i dati. Il servizio restituisce i dati del codice a barre (utilizzando la codifica di entità dove richiesto) in un elemento di contenuto di un documento XML. Ad esempio, la seguente immagine TIFF digitalizzata di un modulo contiene due codici a barre:
 
 ![esempio](assets/example.png)
 
@@ -108,7 +111,7 @@ Durante la decodifica dei codici a barre, specificare il carattere utilizzato pe
 
 Se gli autori dei moduli aggiungono oggetti codice a barre ai moduli utilizzando Designer, è possibile specificare una codifica dei caratteri. Le codifiche riconosciute sono UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Per impostazione predefinita, tutti i dati sono codificati nei codici a barre come UTF-8.
 
-Durante la decodifica dei codici a barre, è possibile specificare la codifica dei set di caratteri da utilizzare. Per garantire la corretta decodifica di tutti i dati, specificare lo stesso set di caratteri specificato dall&#39;autore del modulo al momento della progettazione del modulo.
+Durante la decodifica dei codici a barre, è possibile specificare la codifica dei set di caratteri da utilizzare. Per garantire che tutti i dati siano decodificati correttamente, specificare lo stesso set di caratteri specificato dall&#39;autore del modulo al momento della progettazione del modulo.
 
 ### Limitazioni API {#api-limitations}
 
@@ -127,7 +130,7 @@ Inoltre, quando si utilizza il servizio Barcoded Forms, è consigliabile tenere 
 
 Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata, se vengono osservate le limitazioni di cui sopra. Per ulteriori informazioni sulla creazione di moduli interattivi con codice a barre, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.
 
-## Configurare le proprietà del servizio {#configureproperties}
+## Configurare le proprietà del servizio   {#configureproperties}
 
 È possibile utilizzare il servizio **AEMFD** Barcoded Forms Servicenella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:[port]/system/console/configMgr`.
 
@@ -135,9 +138,9 @@ Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la 
 
 In Barcoded Forms Service sono disponibili le due API seguenti:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodifica tutti i codici a barre disponibili in un documento PDF di input o in un&#39;immagine tiff. Restituisce un altro documento XML contenente i dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
+* **[decode](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodifica tutti i codici a barre disponibili in un documento PDF di input o in un&#39;immagine tiff. Restituisce un altro documento XML contenente i dati recuperati da tutti i codici a barre disponibili nel documento o nell&#39;immagine di input.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convertire i dati decodificati utilizzando l&#39;API di decodifica in dati XML. È possibile unire questi dati XML a un modulo XFA. Restituisce un elenco di documenti XML, uno per ciascun codice a barre.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convertire i dati decodificati utilizzando l&#39;API di decodifica in dati XML. È possibile unire questi dati XML a un modulo XFA. Restituisce un elenco di documenti XML, uno per ciascun codice a barre.
 
 ### Utilizzo del servizio BCF con un JSP o servlet {#using-bcf-service-with-a-jsp-or-servlets}
 
