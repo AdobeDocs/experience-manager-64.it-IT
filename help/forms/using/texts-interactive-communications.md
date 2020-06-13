@@ -8,7 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2255'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 * **Oggetti** del modello dati: Le proprietà dei dati utilizzano un&#39;origine dati back-end.
 * **Contenuto** basato su regole: Parti di contenuto in un testo che vengono visualizzate o nascoste in base a una regola. Una regola può anche essere basata sulle proprietà e sulle variabili del modello dati del modulo.
 * **Variabili**: Nel frammento di documento di testo, le variabili non sono associate a un&#39;origine dati back-end. L&#39;agente compila/seleziona i valori nelle variabili o vincola le variabili alle origini dati durante la preparazione della comunicazione interattiva per l&#39;invio a un processo di pubblicazione.
-* **Ripeti**: È possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, come le transazioni in un rendiconto della carta di credito, il cui numero di occorrenze può continuare a cambiare con ogni comunicazione interattiva generata. Utilizzando la ripetizione, potete formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere Condizione [in linea e ripetizione](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Ripeti**: È possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, come le transazioni in un rendiconto della carta di credito, il cui numero di occorrenze può continuare a cambiare con ogni comunicazione interattiva generata. Utilizzando la ripetizione, potete formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere Condizione [in linea e ripetizione](cm-inline-condition.md).
 
 ## Create text {#createtext}
 
@@ -35,7 +38,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 1. Specificate le seguenti informazioni:
 
    * **[!UICONTROL Titolo]**: (Facoltativo) Immettere il titolo per il frammento di documento di testo. I titoli non devono essere univoci e possono contenere caratteri speciali e caratteri non inglesi. I testi sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà.
-   * **[!UICONTROL Nome]**: Nome univoco del testo, all’interno di una cartella. In una cartella non possono essere presenti due frammenti di documento (testo, condizione o elenco) con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **[!UICONTROL Nome]**: Nome univoco del testo, all’interno di una cartella. In una cartella non possono essere presenti due frammenti di documento (testo, condizione o elenco) con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
    * **[!UICONTROL Descrizione]**: Digitate una descrizione del testo.
    * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare il testo basato su un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo Modello dati **[!UICONTROL modulo*]** . Individuare e selezionare un modello dati del modulo. Durante la creazione di testo e condizioni per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere Integrazione [](/help/forms/using/data-integration.md)dei dati.
    * **[!UICONTROL Tag]**: Se necessario, per creare un tag personalizzato immettete un valore nel campo di testo e premete Invio. Quando salvate questo testo, vengono creati i nuovi tag aggiunti.
@@ -68,7 +71,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 È possibile modificare un frammento di documento di testo esistente utilizzando la procedura seguente. È inoltre possibile scegliere di modificare un frammento di documento di testo direttamente da un editor di comunicazione interattiva.
 
 1. Selezionare **`[!UICONTROL Forms]`** > Frammenti **** documento.
-1. Selezionare un frammento di documento di testo.
+1. Individuare e selezionare un frammento di documento di testo.
 1. Toccate **[!UICONTROL Modifica]**.
 1. Apportate le modifiche necessarie. Per ulteriori informazioni sulle opzioni nel testo, consultate [Creare testo](#createtext).
 1. Toccate **[!UICONTROL Salva]** , quindi toccate **[!UICONTROL Chiudi]**.
@@ -81,7 +84,7 @@ Se durante la creazione di un testo è stato specificato un modello dati modulo,
 
 ![insert tfdmelementtext](assets/insertfdmelementtext.png)
 
-* Per inserire una proprietà FDM nel testo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la **`[A]`** proprietà nel riquadro a sinistra toccandola e toccare **`[B]`** Aggiungi **[!UICONTROL selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del **`[C]`** cursore. Le proprietà del modello dati modulo sono evidenziate in un colore di sfondo brunastro.
+* Per inserire una proprietà FDM nel testo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la **`[A]`** proprietà nel riquadro a sinistra toccandola e toccare **`[B]`** Aggiungi **[!UICONTROL selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del **`[C]`** cursore. Le proprietà del modello dati del modulo sono evidenziate in un colore di sfondo brunastro.
 
 * Per consentire agli agenti di modificare il valore di una proprietà FDM nell&#39;interfaccia utente dell&#39;agente durante la [preparazione e l&#39;invio della comunicazione](/help/forms/using/prepare-send-interactive-communication.md) interattiva tramite l&#39;interfaccia utente dell&#39;agente, toccate l&#39;icona **`[D]`** a forma di lucchetto per tale proprietà e assicuratevi che sia nello stato sbloccato. Lo stato predefinito della proprietà è bloccato e un agente non può modificare la proprietà nell&#39;interfaccia utente dell&#39;agente.
 
@@ -96,7 +99,7 @@ Le variabili sono segnaposto che possono essere associati durante la creazione d
 È possibile utilizzare le variabili invece delle proprietà del modello dati modulo quando:
 
 * Un frammento di documento di testo deve essere utilizzato in più comunicazioni interattive in cui il binding deve essere diverso per le diverse comunicazioni interattive.
-* Al momento della creazione del frammento di testo non è presente un modello dati del modulo. È possibile inserire variabili e successivamente associarle alle proprietà del modello dati del modulo al momento della creazione della comunicazione interattiva.
+* Al momento della creazione del frammento di documento di testo non è presente un modello dati del modulo. È possibile inserire variabili e successivamente associarle alle proprietà del modello dati del modulo al momento della creazione della comunicazione interattiva.
 * È necessario eseguire un binding e recuperare il testo da un frammento di documento di testo. Solo i frammenti di documento di testo che possono essere associati a variabili non devono contenere variabili al loro interno.
 
 Durante la creazione o la modifica di un frammento di documento di testo, è possibile creare e inserire variabili. Le variabili create vengono visualizzate nella scheda Dati dell’interfaccia utente agente. L&#39;agente specifica i valori per le variabili durante la [preparazione e l&#39;invio della comunicazione interattiva tramite l&#39;interfaccia utente](/help/forms/using/prepare-send-interactive-communication.md)agente.
@@ -155,6 +158,7 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 
    * Proprietà del modello dati del modulo associato
    * Qualsiasi variabile creata
+
    Selezionare l&#39;opzione appropriata da valutare.
 
    ![ruleeditor](assets/ruleeditor.png)
@@ -175,7 +179,7 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 
    Regola per visualizzare il testo selezionato se la posizione del destinatario è US in base ai dati di origine di FDM
 
-   * Quando create o modificate una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a tutta finestra consente di trascinare le proprietà e le variabili del modello dati del modulo per creare le regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a tutta finestra consente di trascinare le proprietà e le variabili del modello dati del modulo per creare le regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
    * È inoltre possibile creare più condizioni in una regola.
    * Potete anche creare regole di sovrapposizione, in cui una regola viene applicata a una parte di contenuto a cui è già applicata una regola.
 
@@ -202,9 +206,9 @@ Barra degli strumenti di modifica dei font
 
 Allineamento, barra degli strumenti
 
-![Barra degli strumenti Elenco](do-not-localize/listingtoolbar.png)
+![Elenco, barra degli strumenti](do-not-localize/listingtoolbar.png)
 
-Barra degli strumenti Elenco
+Elenco, barra degli strumenti
 
 ### Evidenziare/enfatizzare parti di testo {#highlight}
 
@@ -261,6 +265,7 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
    * Se viene trovata un&#39;altra istanza del testo di ricerca, tale istanza viene evidenziata nel frammento del documento di testo. Se toccate nuovamente **[!UICONTROL Sostituisci]** , l’istanza evidenziata viene sostituita e il cursore si sposta in avanti, se viene trovata una terza istanza.
    * Se non viene trovata un&#39;altra istanza, nella finestra di dialogo Trova e sostituisci viene visualizzato un messaggio: Fine del modulo raggiunta.
+
    Potete anche toccare Replace all (Sostituisci tutto) per sostituire tutte le corrispondenze in una sola volta.
 
    Trova e sostituisci include anche una potente ricerca di espressioni regolari. Per utilizzare regex nella ricerca, selezionare **[!UICONTROL Reg ex]** , quindi toccare **[!UICONTROL Trova]** o **[!UICONTROL Sostituisci]**.
