@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 4%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
 
 Conoscenza dei CSS e del framework LESS.
 
-## Cosa personalizzare {#what-can-be-customized}
+## Elementi personalizzabili {#what-can-be-customized}
 
-L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per definire lo stile di vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, non rientra nell’ambito di questo articolo. Utilizzate questi costrutti di stile per creare stili (utilizzando CSS o Less) solo quando non è possibile formattare i componenti utilizzando l&#39;editor [di](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)temi.
+L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per definire lo stile di vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, non rientra nell’ambito di questo articolo. Utilizzate questi costrutti di stile per creare stili (utilizzando CSS o Less) solo quando non è possibile formattare i componenti utilizzando l&#39;editor [di](themes.md)temi.
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
@@ -36,7 +39,7 @@ Il framework LESS semplifica l&#39;uso di maiuscole e minuscole per personalizza
 
 È possibile modificare il tema di un modulo adattivo per assicurare che l&#39;aspetto sia coerente con le pagine Web in cui il modulo adattivo è incorporato.
 
-Le modifiche nell&#39;aspetto generale del modulo adattivo che utilizzano le proprietà CSS in genere fanno parte di modifiche ai temi. Le modifiche principali apportate al &quot;ok&quot; del modulo adattivo, come le modifiche nel layout e nella posizione dei componenti, non vengono considerate modifiche ai temi.
+Le modifiche nell&#39;aspetto generale del modulo adattivo che utilizzano le proprietà CSS in genere fanno parte di modifiche ai temi. Le modifiche principali allo &quot;ok&quot; e al funzionamento del modulo adattivo, come le modifiche nel layout e nella posizione dei componenti, non sono considerate modifiche ai temi.
 
 In base al programma di avvio, il seguente set di proprietà CSS definisce il tema di una pagina Web:
 
@@ -433,7 +436,7 @@ Codice HTML per il pulsante:
   </tr> 
   <tr> 
    <td><p><code>button-small-font-size</code></p> </td> 
-   <td><p>Dimensione font per i pulsanti di piccole dimensioni</p> </td> 
+   <td><p>Dimensione del font per i pulsanti di piccole dimensioni</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-info-background-color</code></p> </td> 
@@ -973,7 +976,7 @@ Queste variabili influenzano la barra dell’intestazione visibile su un disposi
   </tr> 
   <tr> 
    <td><p><code>headerbar-padding</code></p> </td> 
-   <td><p>Spaziatura per la barra di intestazione</p> </td> 
+   <td><p>Spaziatura per la barra dell’intestazione</p> </td> 
   </tr> 
  </tbody> 
 </table>
