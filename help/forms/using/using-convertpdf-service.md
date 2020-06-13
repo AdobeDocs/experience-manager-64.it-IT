@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Con il servizio Converti PDF puoi effettuare le seguenti operazioni:
 * Convertire i documenti PDF in PostScript. Durante la conversione in PostScript, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e se convertire in PostScript livello 2 o 3. Il documento PDF convertito in file PostScript deve essere non interattivo.
 * Convertite i documenti PDF nei formati immagine JPEG, JPEG 2000, PNG e TIFF. Durante la conversione in uno di questi formati immagine, potete utilizzare l&#39;operazione di conversione per specificare il documento di origine e una specifica delle opzioni immagine. La specifica contiene diverse preferenze, come il formato di conversione delle immagini, la risoluzione delle immagini e la conversione del colore.
 
-## Configurare le proprietà del servizio {#properties}
+## Configurare le proprietà del servizio   {#properties}
 
 Puoi usare il servizio **** AEMFD ConvertPDF nella console AEM per configurare le proprietà del servizio. L’URL predefinito della console AEM è `https://[host]:[port]/system/console/configMgr`.
 
@@ -33,9 +36,9 @@ Puoi usare il servizio **** AEMFD ConvertPDF nella console AEM per configurare l
 
 Il servizio ConvertPDF fornisce le due API seguenti:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Converte un documento PDF in un file PostScript.
+* **[toPS](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Converte un documento PDF in un file PostScript.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
 
 ### Utilizzo dell&#39;API toPS con un JSP o Servlet {#using-tops-api-with-a-jsp-or-servlets}
 
