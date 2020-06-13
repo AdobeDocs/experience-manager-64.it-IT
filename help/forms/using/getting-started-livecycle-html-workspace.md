@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 0%
 
 ---
 
@@ -61,11 +64,11 @@ Quando si passa all&#39;area di lavoro Moduli AEM utilizzando una tastiera, la n
 
 Puoi impostare le varie preferenze dell’area di lavoro Moduli AEM nelle seguenti categorie:
 
-**Fuori sede:** Impostare le preferenze per controllare in che modo le attività vengono assegnate ad altre persone mentre non si è in ufficio. Consultate [Impostazione delle preferenze](/help/forms/using/todo-lists.md#main-pars-heading-22)esterne all’ufficio.
+**Fuori sede:** Impostare le preferenze per controllare in che modo le attività vengono assegnate ad altre persone mentre non si è in ufficio. Consultate [Impostazione delle preferenze](/help/forms/using/todo-lists.md#setting-out-of-office-preferences)esterne all’ufficio.
 
-**Code:** Impostate le preferenze per la condivisione dell’elenco A-fare con altri utenti o per la richiesta di accesso all’elenco di altri utenti. Consultate [Operazioni con le attività dalle code](/help/forms/using/todo-lists.md#main-pars-heading-19)di gruppi e condivisi.
+**Code:** Impostate le preferenze per la condivisione dell’elenco A-fare con altri utenti o per la richiesta di accesso all’elenco di altri utenti. Consultate [Operazioni con le attività dalle code](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues)di gruppi e condivisi.
 
-**Impostazioni interfaccia utente:** Impostare le preferenze per l&#39;interazione con l&#39;area di lavoro Moduli AEM. Consultate [Impostare le preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5)dell’interfaccia utente.
+**Impostazioni interfaccia utente:** Impostare le preferenze per l&#39;interazione con l&#39;area di lavoro Moduli AEM. Consultate [Impostare le preferenze](#set-user-interface-preferences)dell’interfaccia utente.
 
 ### Impostare le preferenze dell’interfaccia utente {#set-user-interface-preferences}
 
