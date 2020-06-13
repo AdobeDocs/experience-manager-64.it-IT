@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+workflow-type: tm+mt
+source-wordcount: '1824'
+ht-degree: 0%
 
 ---
 
@@ -70,12 +73,14 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
    1. Specificare **BillDetails** nel campo **Nome** .
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Analogamente, selezionare il sottomodulo principale, la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto** . Nella scheda **Binding** :
 
    1. Specificare **TelecaBill** nel campo **Nome** .
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+
    ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Ripetere i passaggi da 2 a 5 per creare i sottomoduli seguenti:
@@ -90,6 +95,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    * ItemCalls
    * PayNow
    * ValueAddedServices
+
    Per risparmiare tempo, è inoltre possibile copiare e incollare sottomoduli esistenti per creare nuovi sottomoduli.
 
    Per spostare il sottomodulo **Grafici** a destra del sottomodulo Addebiti, selezionare il sottomodulo **Grafici** dal riquadro a sinistra, selezionare la scheda **Layout** e specificare un valore per il campo **AnchorX** . Il valore deve essere maggiore del valore relativo al campo **Larghezza** del sottomodulo **Addebiti** . Selezionare il sottomodulo **Addebiti** e selezionare la scheda **Layout** per visualizzare il valore del campo **Larghezza** .
@@ -153,6 +159,7 @@ Per creare un frammento di layout per il canale di stampa della comunicazione in
    1. Andate alla posizione in cui salvare il file e specificate il nome come **table_lf**.
    1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
    1. Toccate **Salva**.
+
    Dopo aver creato un modello XDP per un frammento di layout utilizzando Forms Designer, è necessario [caricarlo](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) nel server AEM Forms in modo che il modello sia disponibile per la creazione di frammenti di layout.
 
 ## Creare un modello per il canale Web {#create-template-for-web-channel}
@@ -170,7 +177,7 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
-1. Toccate **Strumenti** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > Browser **** di configurazione.
+1. Toccare **Strumenti** ![Strumenti](assets/tools-icon.svg) > **Browser** di configurazione.
 1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
@@ -221,6 +228,7 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
    1. Specificate Dettagli **** fatturazione nel campo Titolo.
    1. Selezionare **1** dall&#39;elenco a discesa **Numero di colonne** .
    1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà.
+
    Il nome del pannello viene aggiornato in Dettagli **** fatturazione nella struttura del contenuto.
 
 1. Ripetete i passaggi da 7 a 11 per aggiungere al modello i pannelli con le seguenti proprietà:
@@ -244,7 +252,7 @@ Dopo aver creato il modello Web, è necessario attivarlo per utilizzare il model
 
 Per abilitare il modello Web, eseguite i seguenti passaggi:
 
-1. Toccate **Strumenti** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Modelli**.
+1. Toccare **Strumenti** ![Strumenti](assets/tools-icon.svg) > **Modelli**.
 1. Individuate il modello **Create_First_IC_Web_Template** , selezionatelo e toccate **Abilita**.
 1. Scheda **Abilita** di nuovo per confermare.
 
