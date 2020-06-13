@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 0%
 
 ---
 
@@ -42,12 +45,14 @@ Puoi configurare i database relazionali utilizzando la configurazione della cons
    * Nome della classe Java per il driver JDBC
    * URI connessione JDBC
    * Nome utente e password per stabilire la connessione con il driver JDBC
+
    >[!NOTE] {grigioBox=&quot;true&quot;}
    >
    >Prima di configurare l&#39;origine dati, assicurarsi di crittografare le informazioni riservate come password. Per crittografare:
    >
    >1. Passa a `https://[server]:[port]/system/console/crypto`.
    >1. Nel campo Testo **** normale, specificare la password o qualsiasi stringa da cifrare e fare clic su **[!UICONTROL Proteggi]**.
+
    >
    >Il testo cifrato viene visualizzato nel campo Testo protetto che è possibile specificare nella configurazione.
 
@@ -73,15 +78,18 @@ Puoi configurare il profilo utente AEM tramite la configurazione del connettore 
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {grigioBox=&quot;true&quot;}
    >
-   >**The**&amp;ast; nell’esempio precedente indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM nella struttura CRXDE. Significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
+   >The **&amp;ast;** nell’esempio precedente indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM nella struttura CRXDE. Ciò significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
 
 1. Toccate **[!UICONTROL Salva]** per salvare la configurazione.
 
 ## Configurare la cartella per le configurazioni del servizio cloud {#cloud-folder}
 
-**Nota**: La configurazione della cartella dei servizi cloud è necessaria per configurare i servizi cloud per i servizi RESTful, SOAP e OData.
+>[!NOTE]
+>
+>La configurazione della cartella dei servizi cloud è necessaria per configurare i servizi cloud per i servizi RESTful, SOAP e OData.
 
 Tutte le configurazioni del servizio cloud in AEM sono consolidate nella `/conf` cartella dell’archivio AEM. Per impostazione predefinita, la `conf` cartella contiene la `global` cartella in cui è possibile creare configurazioni del servizio cloud. Tuttavia, è necessario abilitarlo manualmente per le configurazioni cloud. Potete anche creare ulteriori cartelle in `conf` per creare e organizzare le configurazioni del servizio cloud.
 
@@ -138,7 +146,7 @@ Un servizio OData è identificato dall&#39;URL principale del servizio. Per conf
 
 >[!NOTE]
 >
->Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, online o in locale, vedere Configurazione [di](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics OData.
+>Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, in linea o in locale, vedere Configurazione [di](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics OData.
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
@@ -149,6 +157,7 @@ Un servizio OData è identificato dall&#39;URL principale del servizio. Per conf
 
    * URL radice del servizio per il servizio OData da configurare.
    * Selezionare il tipo di autenticazione — Nessuno, OAuth2.0, autenticazione di base o autenticazione personalizzata — per accedere al servizio OData e fornire quindi i dettagli per l&#39;autenticazione.
+
    >[!NOTE]
    >
    >È necessario selezionare il tipo di autenticazione OAuth 2.0 per connettersi con i servizi di Microsoft Dynamics utilizzando l&#39;endpoint OData come radice del servizio.
