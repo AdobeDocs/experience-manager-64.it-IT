@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2206'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ I file di applicazione e di dati da sottoporre a backup sono descritti più dett
 
 Considerare i seguenti punti relativi a backup e ripristino:
 
-* Il backup del database deve essere eseguito prima dell’archivio GDS e AEM.
+* Il backup del database deve essere eseguito prima di GDS e dell’archivio AEM.
 * Se è necessario arrestare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi slave vengano chiusi prima del nodo master. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo master deve essere reso attivo prima di qualsiasi nodo slave.
 * Per l&#39;operazione di ripristino di un cluster, il server applicazione deve essere arrestato per ogni nodo del cluster.
 
@@ -86,7 +89,7 @@ Il database dei moduli AEM memorizza il contenuto, ad esempio artefatti di modul
 
 In un sistema di moduli AEM configurato correttamente, l&#39;amministratore di sistema e l&#39;amministratore di database possono collaborare facilmente per ripristinare lo stato del sistema in modo coerente e noto.
 
-Per eseguire il backup del database in tempo reale, è necessario utilizzare la modalità snapshot o configurare il database per l&#39;esecuzione in modalità log specificata. Questo consente il backup dei file di database mentre il database è aperto e disponibile per l&#39;uso. Inoltre, il database mantiene il rollback e i log delle transazioni quando viene eseguito in queste modalità.
+Per eseguire il backup del database in tempo reale, è necessario utilizzare la modalità snapshot o configurare il database per l&#39;esecuzione in modalità log specificata. Questo consente il backup dei file di database mentre il database è aperto e disponibile per l&#39;uso. Inoltre, il database mantiene il rollback e i log delle transazioni quando è in esecuzione in queste modalità.
 
 >[!NOTE]
 >
@@ -113,11 +116,11 @@ Per ulteriori informazioni sul backup e il ripristino del database DB2, vedere [
 
 Utilizzare i backup degli snapshot o configurare il database Oracle per l&#39;esecuzione in modalità log di archivio. (Vedere [Oracle Backup: Introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i seguenti siti:
 
-[](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Backup e ripristino Oracle: Illustra i concetti di backup e ripristino e le tecniche più comuni per utilizzare Recovery Manager (RMAN) per backup, ripristino e reporting in modo più dettagliato, oltre a fornire ulteriori informazioni su come pianificare una strategia di backup e ripristino.
+[Backup e ripristino Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Illustra i concetti di backup e ripristino e le tecniche più comuni per utilizzare Recovery Manager (RMAN) per backup, ripristino e reporting in modo più dettagliato, oltre a fornire ulteriori informazioni su come pianificare una strategia di backup e ripristino.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Oracle Database Backup and Recovery User&#39;s Guide: Fornisce informazioni approfondite sull&#39;architettura RMAN, sui concetti e sui meccanismi di backup e ripristino, sulle tecniche di ripristino avanzate come il ripristino point-in-time e le funzionalità di flashback del database, nonché sul tuning delle prestazioni di backup e ripristino. Vengono inoltre trattati il backup e il ripristino gestiti dall&#39;utente, utilizzando le strutture del sistema operativo host invece di RMAN. Questo volume è essenziale per il backup e il ripristino di installazioni di database più sofisticate e per scenari di ripristino avanzati.
+[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornisce informazioni approfondite sull&#39;architettura RMAN, sui concetti e sui meccanismi di backup e ripristino, sulle tecniche di ripristino avanzate come il ripristino point-in-time e le funzionalità di flashback del database, nonché sul tuning delle prestazioni di backup e ripristino. Vengono inoltre trattati il backup e il ripristino gestiti dall&#39;utente, utilizzando le strutture del sistema operativo host invece di RMAN. Questo volume è essenziale per il backup e il ripristino di installazioni di database più sofisticate e per scenari di ripristino avanzati.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Riferimento per backup e ripristino del database Oracle: Fornisce informazioni complete sulla sintassi e la semantica per tutti i comandi RMAN e descrive le visualizzazioni del database disponibili per il reporting sulle attività di backup e ripristino.
+[Riferimento per backup e ripristino del database Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornisce informazioni complete sulla sintassi e la semantica per tutti i comandi RMAN e descrive le visualizzazioni del database disponibili per il reporting sulle attività di backup e ripristino.
 
 ### SQL Server {#sql-server}
 
@@ -132,10 +135,11 @@ Consulta [Strategie di](https://articles.techrepublic.com.com/5100-1035_61-10436
 
 ### MySQL {#mysql}
 
-Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL da eseguire in modalità di registro binario. Consultate Registrazione [binaria](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)MySQL. Uno strumento di backup a caldo per MySQL è disponibile anche dal software InnoBase. (Vedete Backup [Hot](https://www.innodb.com/hot-backup/features.md)Innobase.)
+Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL da eseguire in modalità di registro binario. Consultate Registrazione [binaria](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)MySQL. Uno strumento di backup a caldo per MySQL è disponibile anche dal software InnoBase. (Vedete Backup [a caldo](https://www.innodb.com/hot-backup/features.md)Innobase.)
 
-**Nota**: *La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;.*Per abilitare la registrazione &quot;mista&quot;, aggiungete il seguente argomento al file my.ini:
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungete l&#39;argomento seguente alla file:*`binlog_format=mixed log-bin=logname`my.ini.
 
 È possibile utilizzare l&#39;utility mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono convenienti. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, assicurarsi di avviare il server con l&#39;opzione - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL si riavvia, interrompe la scrittura nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un interruttore manualmente con il `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utility mysqladmin con il `flush-logs` comando, che crea il file di registro successivo.
 
@@ -172,9 +176,9 @@ Se la directory /backup-lucene-indexes non è presente, eseguite il backup della
 
 Quando installate Content Services (obsoleto) in un ambiente cluster, la directory principale di Content Storage viene suddivisa in due directory separate:
 
-**** Directory principale dell&#39;archivio contenuti: In genere, una directory di rete condivisa con accesso in lettura/scrittura per tutti i nodi del cluster
+**Directory principale dell&#39;archivio contenuti:** In genere, una directory di rete condivisa con accesso in lettura/scrittura per tutti i nodi del cluster
 
-**** Directory radice indice: Una directory creata su ciascun nodo del cluster, sempre con lo stesso percorso e lo stesso nome di directory
+**Directory radice indice:** Una directory creata su ciascun nodo del cluster, sempre con lo stesso percorso e lo stesso nome di directory
 
 Il percorso predefinito per la directory radice di memorizzazione dei contenuti è *[GDS root]*/lccs_data, dove *[GDS root]* è il percorso descritto nel percorso [](files-back-recover.md#gds-location)GDS. Esegui il backup delle seguenti directory che si trovano nella directory principale di Content Storage:
 
