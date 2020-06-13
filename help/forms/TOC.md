@@ -1,11 +1,14 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
-sub-product: forms
+sub-product: 'forms '
 audience: end-user
-user-guide-title: AEM 6.4 Forms User Guide
+user-guide-title: Guida utente di AEM 6.4 Forms
 translation-type: tm+mt
-source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
+source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+workflow-type: tm+mt
+source-wordcount: '3702'
+ht-degree: 1%
 
 ---
 
@@ -30,10 +33,10 @@ source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
-      + [Esercitazione: Crea modello dati modulo](using/create-form-data-model0.md)
+      + [Esercitazione: Crea modello dati modulo](using/create-form-data-model-tutorial.md)
       + [Esercitazione: Creazione di frammenti di documento](using/create-document-fragments.md)
       + [Esercitazione: Creare i modelli](using/create-templates-print-web.md)
-      + [Esercitazione: Creazione di comunicazioni interattive](using/create-interactive-communication0.md)
+      + [Esercitazione: Creazione di comunicazioni interattive](using/create-interactive-communication-tutorial.md)
    + Materiali di riferimento per i moduli AEM {#aem-forms-reference-collaterals}
       + [Configurare e configurare i siti di riferimento per i moduli AEM](using/setup-reference-sites.md)
       + [Procedura dettagliata sul sito di riferimento We.Finance](using/finance-reference-site-walkthrough.md)
@@ -95,7 +98,7 @@ source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
       + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
       + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + Gestisci moduli AEM {#manage-administer-aem-forms}
    + [AEM Forms su gruppi OSGi e privilegi](using/forms-groups-privileges-tasks.md)
    + [Creazione di nuove cartelle per classificare i moduli](using/creating-new-folders-categorize-forms.md)
@@ -568,7 +571,7 @@ source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
    + [Risoluzione dei problemi relativi ai processi di reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Riferimento per sviluppatori {#developer-reference}
    + [Nozioni di base sugli sviluppatori](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [HTML Template Language](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
    + [Plug-in AEM per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java per AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Guida di riferimento per le API Java di AEM Forms su JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
