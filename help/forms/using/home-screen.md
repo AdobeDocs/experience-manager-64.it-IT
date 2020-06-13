@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Per impostazione predefinita, nella schermata Home sono visualizzati tutti i mod
 Nella figura riportata di seguito vengono annotate le chiamate ai componenti essenziali nella schermata iniziale predefinita.
 ![Schermata](assets/home-screen-1.png)iniziale dell&#39;app Forms[Fare clic per ingrandire](assets/home-screen-1-1.png)
 
-1. **Pulsante** menu: Toccate il pulsante **Menu **per passare ad Attività, Moduli, In uscita e Impostazioni. Se l’app AEM Forms è connessa a un server AEM Forms JEE, è possibile visualizzare l’opzione Attività. L&#39;opzione Attività memorizza inoltre le bozze create dalle attività in un processo. Per i server AEM Forms OSGi, l&#39;opzione Attività è nascosta. In Output vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella casella in uscita vengono caricati nel server AEM Forms quando l&#39;app viene [sincronizzata con il server](/help/forms/using/sync-app.md). Per informazioni sulle impostazioni, consultate [Aggiornamento delle impostazioni](/help/forms/using/update-general-settings.md)generali.
+1. **Pulsante** menu: Toccate il pulsante **Menu** per passare a Attività, Moduli, In uscita e Impostazioni. Se l’app AEM Forms è connessa a un server AEM Forms JEE, è possibile visualizzare l’opzione Attività. L&#39;opzione Attività memorizza inoltre le bozze create dalle attività in un processo. Per i server AEM Forms OSGi, l&#39;opzione Attività è nascosta. In Output vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella casella in uscita vengono caricati nel server AEM Forms quando l&#39;app viene [sincronizzata con il server](/help/forms/using/sync-app.md). Per informazioni sulle impostazioni, consultate [Aggiornamento delle impostazioni](/help/forms/using/update-general-settings.md)generali.
 1. **Attività o modulo**: Toccare l&#39;attività o il modulo elencati con cui si desidera lavorare.
 1. **Ellissi** orizzontale: Indica che sono disponibili azioni per il modulo. Toccando i puntini di sospensione vengono visualizzate le azioni e la descrizione fornite dall’autore. L&#39;opzione **Elimina bozza** e **Completa** è visibile quando si toccano i puntini di sospensione.
 1. **Icona** Aggiorna: Toccate l&#39;icona di aggiornamento per sincronizzare l&#39;app con il server AEM Forms.
