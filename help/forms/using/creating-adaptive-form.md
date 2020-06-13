@@ -9,14 +9,17 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: c0ce06a6dccefeb4c4285d51ad85a26f0cefe1ba
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2046'
+ht-degree: 0%
 
 ---
 
 
 # Creazione di un modulo adattivo {#creating-an-adaptive-form}
 
-## <strong>Creare un modulo</strong> adattivo {#strong-create-an-adaptive-form-strong}
+## <strong>Creare un modulo adattivo</strong> {#strong-create-an-adaptive-form-strong}
 
 Per creare un modulo adattivo, procedere come segue.
 
@@ -38,10 +41,10 @@ Per creare un modulo adattivo, procedere come segue.
 1. Viene visualizzata un’opzione per selezionare un modello. Per ulteriori informazioni sui modelli, vedere Modelli [di moduli](/help/forms/using/creating-adaptive-form.md#p-adaptive-form-templates-p)adattivi. Toccate un modello per selezionarlo e toccate Avanti.
 1. Viene visualizzata l&#39;opzione &quot;Aggiungi proprietà&quot;. Specificare i valori per i seguenti campi di proprietà. I campi Titolo e Nome sono obbligatori:
 
-   * **** Titolo: Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di AEM Forms.
-   * **** Nome: Specifica il nome del modulo. Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. Potete modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
-   * **** Descrizione: Specifica le informazioni dettagliate sul modulo.
-   * **** Tag: Specifica i tag per identificare in modo univoco il modulo adattivo. I tag consentono di effettuare ricerche nel modulo. Per creare i tag, digitate nuovi nomi di tag nella casella **Tag** .
+   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di AEM Forms.
+   * **[!UICONTROL Nome:]** Specifica il nome del modulo. Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. È possibile modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
+   * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
+   * **[!UICONTROL Tag:]** Specifica i tag per identificare in modo univoco il modulo adattivo. I tag consentono di effettuare ricerche nel modulo. Per creare i tag, digitate nuovi nomi di tag nella casella **Tag** .
 
 1. È possibile creare un modulo adattivo basato su uno dei seguenti modelli di modulo:
 
@@ -49,6 +52,7 @@ Per creare un modulo adattivo, procedere come segue.
    * [Modello di modulo XFA](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
    * [Schema XML o JSON](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
    * Nessuno o senza un modello di modulo
+
    È possibile configurarli dalla scheda Modello **** modulo della pagina **[!UICONTROL Aggiungi proprietà]** . Per impostazione predefinita, il modello di modulo selezionato è **[!UICONTROL Nessuno]**.
 
 1. Toccate **Crea**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
@@ -57,7 +61,7 @@ Per creare un modulo adattivo, procedere come segue.
 
    Dopo aver specificato tutte le proprietà, fate clic su **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
-1. Toccare **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Visualizza inoltre la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
+1. Toccare **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Inoltre, consente di visualizzare la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
 
    In base al tipo di modulo adattivo, gli elementi del modulo presenti nel modello di modulo XFA, nello schema XML o nello schema JSON associato vengono visualizzati nella scheda Oggetti **[!UICONTROL modello]** dati del browser **** Contenuto nella barra laterale. Potete anche trascinare questi elementi per creare il modulo adattivo.
 
@@ -101,7 +105,7 @@ Per utilizzare un modello di modulo XFA come modello di modulo per il modulo ada
 1. Nella scheda Modello modulo, dall&#39;elenco a discesa, selezionare Modelli **** modulo. Tutti i modelli di modulo caricati nell&#39;archivio tramite l&#39;interfaccia utente di AEM Forms sono elencati per la selezione. Selezionate un modello dall’elenco.
 
    ![Associare il modello di modulo XFA a un modulo adattivo](assets/form_model_xfa_associate.png)
-   **** Figura: *Selezione di un modello di modulo*
+   **Figura:** *Selezione di un modello di modulo*
 
    >[!NOTE]
    >
@@ -113,7 +117,7 @@ Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti 
 
 Per informazioni su come progettare lo schema XML o JSON per la creazione di moduli adattivi, vedere i documenti seguenti.
 
-* [Creazione di moduli adattivi con schema XML](/help/forms/using/adaptive-form-xml-schema-form-model.md)
+* [Creazione di moduli adattivi mediante lo schema XML](/help/forms/using/adaptive-form-xml-schema-form-model.md)
 * [Creazione di moduli adattivi con lo schema JSON](/help/forms/using/adaptive-form-json-schema-form-model.md)
 
 Per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattivo, effettuate le seguenti operazioni:
@@ -123,19 +127,20 @@ Per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattiv
 
 1. Toccate **[!UICONTROL Seleziona schema]** ed effettuate una delle seguenti operazioni:
 
-   * **[!UICONTROL Caricamento dal disco]** - Selezionate questa opzione e toccate Carica definizione schema per individuare e caricare uno schema XML o JSON dal file system. Il file dello schema caricato risiede nel modulo e non è accessibile ad altri moduli adattivi.
+   * **[!UICONTROL Caricamento dal disco]** - Selezionate questa opzione e toccate Carica definizione schema per sfogliare e caricare uno schema XML o JSON dal file system. Il file dello schema caricato risiede nel modulo e non è accessibile ad altri moduli adattivi.
    * **[!UICONTROL Ricerca nella directory archivio]** - Selezionare questa opzione per selezionare dall&#39;elenco dei file di definizione dello schema disponibili nella directory archivio. Selezionare il file di schema XML o JSON come modello di modulo. Lo schema selezionato sarà associato al modulo tramite riferimento e sarà accessibile per l&#39;uso in altri moduli adattivi.
+
    >[!CAUTION] {grigioBox=&quot;true&quot;}
    >
    >Verificate che il nome del file dello schema JSON termini con **.schema.json**. Ad esempio: mySchema.schema.json
 
    ![Selezione dello schema XML o JSON](assets/upload-schema.png)
-   **** Figura: *Selezione dello schema XML o JSON*
+   **Figura:** *Selezione dello schema XML o JSON*
 
 1. (Solo per lo schema XML) Dopo aver selezionato o caricato uno schema XML, specificare un elemento principale del file XSD selezionato da mappare con il modulo adattivo.
 
    ![Selezione dell&#39;elemento principale XSD](assets/xsd-root-element.png)
-   **** Figura: *Selezione dell&#39;elemento principale XSD*
+   **Figura:** *Selezione dell&#39;elemento principale XSD*
 
 >[!NOTE]
 >
@@ -143,13 +148,13 @@ Per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattiv
 
 ## Modelli di moduli adattivi {#adaptive-form-templates}
 
-Un modello fornisce una struttura di base e definisce l&#39;aspetto (layout e stili) di un modulo adattivo. Contiene componenti preformattati che contengono determinate proprietà e struttura del contenuto. In AEM Forms sono disponibili alcuni modelli di modulo adattivi. Per ottenere il pacchetto completo dei modelli che include modelli avanzati, è necessario installare il pacchetto del componente aggiuntivo AEM Forms. Per ulteriori informazioni, consultate [Installazione del pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms.
+Un modello fornisce una struttura di base e definisce l&#39;aspetto (layout e stili) di un modulo adattivo. Contiene componenti preformattati che contengono determinate proprietà e struttura del contenuto. In AEM Forms sono disponibili alcuni modelli di modulo adattivi. Per ottenere il pacchetto completo dei modelli, inclusi i modelli avanzati, è necessario installare il pacchetto del componente aggiuntivo AEM Forms. Per ulteriori informazioni, consultate [Installazione del pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms.
 
 Inoltre, potete usare l’editor modelli per creare modelli personalizzati. Per ulteriori informazioni sull&#39;utilizzo dei modelli, vedere Modelli [di moduli](/help/forms/using/template-editor.md)adattivi.
 
 >[!NOTE]
 >
->Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Nel modello avanzato è presente un componente Passaggio firma e per impostazione predefinita è abilitato Adobe Sign. Crea e seleziona una configurazione [cloud](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configura un firmatario](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) per la risoluzione dell’errore.
+>Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Nel modello avanzato è presente un componente Passaggio firma e per impostazione predefinita è abilitato Adobe Sign. Crea e seleziona una configurazione [cloud](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configura un firmatario](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) per la risoluzione dell’errore.
 
 ## Modifica delle proprietà del modello di modulo di un modulo adattivo {#edit-form-model}
 
@@ -179,14 +184,16 @@ Per impostazione predefinita, l&#39;opzione di salvataggio automatico non è abi
 1. Per accedere alla sezione di salvataggio automatico nelle proprietà, selezionare un componente, quindi toccare il livello ![del](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
 1. Nella sezione Salvataggio **** automatico, **[!UICONTROL selezionate]** l’opzione di salvataggio automatico.
 1. Nella casella Evento **[!UICONTROL modulo]** adattivo, specificare 1 o TRUE per avviare automaticamente il salvataggio del modulo quando il modulo viene caricato nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
-1. Specifica l&#39;attivatore. Il salvataggio automatico viene attivato in base alla configurazione. Le opzioni disponibili sono:
+1. Specifica l&#39;attivatore. Il salvataggio automatico viene attivato in base alla configurazione in uso. Le opzioni disponibili sono:
 
-   * **** Basato su ora: Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
-   * **** Basato sull&#39;evento: Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
+   * **[!UICONTROL Basato su ora:]** Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
+   * **[!UICONTROL Basato sull&#39;evento:]** Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
+
    Quando selezionate un attivatore, la casella Configurazione strategia è abilitata. La finestra Configurazione strategia consente di:
 
    * Specificate un intervallo di tempo se selezionate l&#39;attivatore **[!UICONTROL basato su]** tempo.
    * Specificate un nome evento se selezionate l&#39;attivatore basato sull **[!UICONTROL &#39;]** evento.
+
    Potete anche creare e aggiungere all&#39;elenco una strategia personalizzata. Per informazioni dettagliate, vedere [Implementazione di una strategia personalizzata per l&#39;salvataggio automatico dei moduli](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Solo salvataggio automatico basato su tempo) Effettuate le seguenti operazioni per configurare le opzioni per l&#39;salvataggio automatico basato su tempo.
