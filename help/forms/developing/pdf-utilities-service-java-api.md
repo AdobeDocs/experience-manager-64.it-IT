@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
@@ -27,11 +30,13 @@ Per il servizio Utilità PDF sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Impostazione dello stile di salvataggio per un documento PDF tramite l&#39;API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
 
-[Avvio rapido (modalità SOAP):Rimozione di informazioni riservate sui documenti PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
+[Avvio rapido (modalità SOAP): Rimozione di informazioni riservate sui documenti PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Conversione di un documento PDF in un documento XDP mediante l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -353,7 +358,7 @@ L&#39;esempio di codice seguente determina se il documento è un documento PDF e
 
 ## Avvio rapido (modalità SOAP): Impostazione dello stile di salvataggio per un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene impostata la modalità di salvataggio per una visualizzazione Web veloce e quindi il documento PDF viene passato al servizio di cifratura in cui è crittografato. Il documento PDF crittografato salvato per la visualizzazione Web veloce viene salvato come file PDF denominato* FastWebViewLoan.pdf*. (Vedere [Impostazione delle modalità](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)di salvataggio dei documenti PDF.)
+Nell&#39;esempio di codice seguente viene impostata la modalità di salvataggio per una visualizzazione Web veloce e quindi il documento PDF viene passato al servizio di cifratura in cui è cifrato. Il documento PDF cifrato salvato per la visualizzazione Web veloce viene salvato come file PDF denominato* FastWebViewLoan.pdf*. (Vedere [Impostazione delle modalità](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)di salvataggio dei documenti PDF.)
 
 ```as3
  /* 
