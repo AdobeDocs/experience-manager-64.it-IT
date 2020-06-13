@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1695'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +49,7 @@ Ciascun frammento di documento include campi con testo statico, dati ricevuti da
 
 Durante la creazione di frammenti di documento in questa esercitazione, vengono create variabili per i campi che ricevono dati tramite l&#39;interfaccia utente dell&#39;agente.
 
-In questa esercitazione, utilizzare **FDM_Create_First_IC**, come descritto nella sezione [Crea modello](/help/forms/using/create-form-data-model0.md) dati modulo, come modello dati modulo per creare frammenti di documento.
+In questa esercitazione, utilizzare **FDM_Create_First_IC**, come descritto nella sezione [Crea modello](create-form-data-model-tutorial.md) dati modulo, come modello dati modulo per creare frammenti di documento.
 
 ## Passaggio 1: Crea frammento di testo Dettagli fatturazione {#step-create-bill-details-text-document-fragment}
 
@@ -77,12 +80,14 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    1. Immettere il **numero di fattura** come nome della variabile.
    1. Selezionare **Stringa** come tipo.
    1. Toccate **Crea**.
+
    ![variable_create_string](assets/variable_create_string.png)
 
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Periodo di fatturazione: Tipo stringa
    * Data fatturazione: Tipo data
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. Utilizzando il riquadro a destra, potete creare testo statico per i seguenti campi:
@@ -91,6 +96,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Periodo fatturazione
    * Data fatturazione
    * Il tuo piano
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Posizionare il cursore accanto al campo **Numero** fattura e fare doppio clic sulla variabile **Numero** fattura dalla scheda **Variabili** nel riquadro a sinistra.
@@ -135,6 +141,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    1. Immettere **Placesupply** come nome della variabile.
    1. Selezionare **Stringa** come tipo.
    1. Toccate **Crea**.
+
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Codice di stato: Tipo di numero
@@ -151,10 +158,11 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Numero relazione
    * Codice di stato
    * Numero di connessioni
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Posizionare il cursore accanto al campo Numero **** mobile e fare doppio clic sulla proprietà **customer** > **mobilenum** .
-1. Posizionare il cursore accanto al campo Numero **di contatto** alternativo e fare doppio clic sulla proprietà** customer* > **alternatemobilenumber** .
+1. Posizionare il cursore accanto al campo Numero **di contatto** alternativo e fare doppio clic sulla proprietà **customer** > **alternatemobilenumber** .
 1. Posizionare il cursore accanto al campo Numero **** relazione e fare doppio clic sulla proprietà **cliente** > Numero **** relazione.
 1. Selezionare la scheda **Variabili** , posizionare il cursore accanto al campo **Posizione fornitura** e fare doppio clic sulla variabile **Placesupply** .
 1. Posizionare il cursore accanto al campo Codice **di** stato e fare doppio clic sulla variabile **Codice** di stato.
@@ -194,6 +202,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    1. Immettere **il saldo** precedente come nome della variabile.
    1. Selezionare **Numero** come tipo.
    1. Toccate **Crea**.
+
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Pagamenti: Tipo di numero
@@ -211,6 +220,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Importo dovuto
    * Data di scadenza
    * Le spese di pagamento tardivo dopo la data di scadenza sono $ 20
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. Posizionare il cursore accanto al campo **Saldo** precedente e fare doppio clic sulla variabile Saldo **** precedente.
@@ -246,7 +256,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
-   1. Immettere **summary_charge_first_ic **come nome nel campo **Titolo** . Il titolo viene compilato automaticamente nel campo Nome.
+   1. Immettete **summary_charge_first_ic** come nome nel campo **Titolo** . Il titolo viene compilato automaticamente nel campo Nome.
    1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
    1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
    1. Toccate **Avanti**.
@@ -262,6 +272,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
    * Spese per servizi a valore aggiunto
    * Oneri totali
    * TOTALE PAGABILE
+
    ![summary_charge_static](assets/summary_charges_static.png)
 
 1. Selezionare la scheda Oggetti **modello** dati.
@@ -283,6 +294,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
    1. Selezionare Modelli **dati e variabili** , quindi **fatture** > **callcharge**.
    1. Select **è minore** dell&#39;operatore.
    1. Selezionate **Numero** e immettete il valore come **60**.
+
    In base a questa condizione, la riga Added Services Added Cost viene visualizzata solo se il valore per il campo Call Addebiti è inferiore a 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
