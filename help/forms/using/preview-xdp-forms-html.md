@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 14%
 
 ---
 
@@ -45,7 +48,7 @@ Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, esegu
       * -/etc/clientlibs/fd/xfaforms
    >[!NOTE]
    >
-   >Non copiate e incollate il valore specificato nel campo Requisiti autenticazione, in quanto potrebbe danneggiare i caratteri speciali presenti nel valore. Digitare il valore specificato nel campo.
+   >Non copiate e incollate il valore specificato nel campo Requisiti autenticazione, in quanto potrebbe danneggiare i caratteri speciali presenti nel valore. Digitare invece il valore specificato nel campo.
 
 1. Specificate rispettivamente il nome utente e la password nei campi Nome **[!UICONTROL utente]** anonimo e Password **[!UICONTROL utente]** anonima. Le credenziali specificate vengono utilizzate per gestire l&#39;autenticazione anonima e consentire l&#39;accesso agli utenti anonimi.
 1. Click **Save** to save the configuration.
@@ -69,15 +72,15 @@ Per impostazione predefinita, la modalità [](/help/forms/using/get-xdp-pdf-docu
 
    * **URL** server: URL del server AEM Forms.
    * **Numero** porta HTTP: Porta server AEM. Il valore predefinito è 4502.
-   * **** Contesto anteprima HTML: Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
+   * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
-   * **** Contesto Forms Manager: Percorso di contesto in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
+   * **Contesto Forms Manager:** Percorso di contesto in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
 
       * `/aem/forms` (AEM Forms su OSGi)
       * `/lc/forms` (AEM Forms su JEE)
-   **** Nota: *Assicurati che il server AEM Forms sia attivo ed in esecuzione. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Nota:** *Verifica che il server AEM Forms sia attivato ed in esecuzione. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Opzioni di AEM Forms Designer ](assets/server_options.png)
 
@@ -103,12 +106,12 @@ La verifica del modulo mediante un’origine dati di esempio garantisce la mappa
 
 1. Select **File > Form Properties**.
 
-1. Fare clic sulla scheda **Preview **e, nella casella File dati, digitare il percorso completo del file di dati di prova. Potete anche utilizzare il pulsante Sfoglia per individuare il file.
+1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. Potete anche utilizzare il pulsante Sfoglia per individuare il file.
 
 1. Fai clic su **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
 ## Anteprima dei moduli che si trovano in un archivio {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms è possibile visualizzare in anteprima moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
+In AEM Forms è possibile visualizzare l&#39;anteprima di moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
 
 [**Contattare il supporto **](https://www.adobe.com/account/sign-in.supportportal.html)
