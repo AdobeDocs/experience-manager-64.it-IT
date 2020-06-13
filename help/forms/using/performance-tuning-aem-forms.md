@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
 
 # Ottimizzazione delle prestazioni del server AEM Forms {#performance-tuning-of-aem-forms-server}
 
-Questo articolo illustra le strategie e le procedure ottimali che potete implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni della distribuzione di AEM Forms.
+Questo articolo illustra le strategie e le procedure ottimali che è possibile implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni della distribuzione di AEM Forms.
 
 ## Impostazioni cache {#cache-settings}
 
@@ -33,7 +36,7 @@ Le opzioni disponibili per il caching sono le seguenti:
 
 Le impostazioni predefinite della cache per AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
 
-* **Strategia** cache:Aggressivo
+* **Strategia** cache: Aggressivo
 * **Dimensione** cache (in termini di numero di moduli): Come richiesto
 * **Dimensione** massima oggetto: Come richiesto
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Nota**: Le impostazioni consigliate sono per Windows 2008 R2 8 Core e per Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
+>[!NOTE]
+>
+>Le impostazioni consigliate sono per Windows 2008 R2 8 Core e per Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
 
 ## Utilizzo di un server Web {#using-a-web-server}
 
@@ -62,7 +67,9 @@ Il rendering dei moduli adattivi e dei moduli HTML5 è in formato HTML5. L&#39;o
 
 Ad esempio, per abilitare la compressione su Apache Web Server 2.0 a 32 bit con JBoss, eseguire le operazioni seguenti:
 
-***Nota **: Le seguenti istruzioni non si applicano ad alcun server diverso da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici per qualsiasi altro server, consulta la documentazione di prodotto corrispondente.*
+>[!NOTE]
+>
+>Le seguenti istruzioni non si applicano ad alcun server diverso da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici per qualsiasi altro server, consulta la documentazione di prodotto corrispondente.
 
 I passaggi seguenti dimostrano le modifiche necessarie per abilitare la compressione con Apache Web Server
 
@@ -70,7 +77,7 @@ I passaggi seguenti dimostrano le modifiche necessarie per abilitare la compress
 
 * Windows: scaricate il server Web Apache dal sito Apache HTTP Server Project.
 * Solaris a 64 bit: scaricate il server Web Apache dal sito Web Sunfreeware per Solaris.
-* Linux: il server web Apache è preinstallato in un sistema Linux.
+* Linux: il server Web Apache è preinstallato in un sistema Linux.
 
 Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono per l&#39;ottimizzazione tramite HTTP.
 
