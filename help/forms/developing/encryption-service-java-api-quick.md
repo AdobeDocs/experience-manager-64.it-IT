@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,9 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Cifratura di un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
@@ -155,7 +160,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene crittografato un docu
 
 ## Avvio rapido (modalità SOAP): Rimozione della crittografia basata su password tramite l&#39;API Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su password da un documento PDF denominato *EncryptLoan.pdf*. Il valore della password master utilizzato per rimuovere la crittografia basata su password è *PermissionPassword*. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della crittografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)della password.)
+Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su password da un documento PDF denominato *EncryptLoan.pdf*. Il valore della password master utilizzato per rimuovere la crittografia basata su password è *PermissionPassword*. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)della password.)
 
 ```as3
  /* 
