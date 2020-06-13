@@ -1,6 +1,6 @@
 ---
-title: Personalizzazione delle azioni
-seo-title: Personalizzazione delle azioni
+title: Personalizzazione delle azioni attività
+seo-title: Personalizzazione delle azioni attività
 description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
 seo-description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
@@ -9,12 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 
-# Personalizzazione delle azioni {#customizing-task-actions}
+# Personalizzazione delle azioni attività {#customizing-task-actions}
 
 L&#39;area di lavoro Moduli AEM consente agli utenti di personalizzare le azioni dell&#39;attività. Prima di personalizzare le azioni dell&#39;attività, accertatevi di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
@@ -135,7 +138,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
 
 ### Menu a comparsa delle azioni elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiate /libs/ws/js/runtime/templates/task.html per `/apps/ws/js/runtime/templates/task.html`sostituire il frammento di codice seguente:
 
