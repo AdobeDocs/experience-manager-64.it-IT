@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 translation-type: tm+mt
-source-git-commit: 1c79deea23ad9c5ba1c4e2471f36a40f5dbafea9
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '6809'
+ht-degree: 0%
 
 ---
 
@@ -68,6 +71,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    * **Condizione**: Toccate per inserire una condizione. Inserisci testo in base alla condizione. Se la condizione è true, il testo è visibile nella lettera, altrimenti non è visibile.
    * **Aggiungi descrizione**: Aggiungete un’annotazione a un elemento di testo. Si tratta di metadati visibili all’autore, ma non a una parte della lettera creata.
    * **Interruzione** pagina: Se si imposta l&#39;attributo di interruzione di pagina di un modulo di testo su false, il modulo di testo non viene suddiviso tra le pagine.
+
    Viene aperto un editor di testo. Inserite il testo. La barra degli strumenti cambia a seconda del tipo di modifiche che si desidera apportare: Paragrafo, Allineamento o Elenco:
 
    ![Selezionare il tipo di barra degli strumenti](assets/toolbarselection.png)
@@ -76,15 +80,15 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    ![Barra degli strumenti Paragrafo](assets/fonteditingtoolbar.png)
 
-   **Figura:** Barra degli strumenti *Paragrafo*
+   **Figura:** *Barra degli strumenti Paragrafo*
 
    ![Allineamento, barra degli strumenti](assets/paragrapheditingtoolbar.png)
 
-   **Figura:** Barra degli strumenti *Allineamento*
+   **Figura:** *Allineamento, barra degli strumenti*
 
    ![Elenco, barra degli strumenti](assets/bulleteditingtoolbar.png)
 
-   **Figura:** Barra degli strumenti *Elenco*
+   **Figura:** *Elenco, barra degli strumenti*
 
 1. Per riutilizzare uno o più paragrafi di testo esistenti in un’altra applicazione, ad esempio da pagine MS Word o HTML, copiate e incollate il testo nell’editor di testo. La formattazione del testo copiato viene mantenuta nell’editor di testo.
 
@@ -105,6 +109,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    * Simboli di valuta come €,⇒ e £
    * Simboli matematici come i simboli all&#39;unisono, seguente:
    * Simboli di punteggiatura come ‟ e&quot;
+
    ![caratteri speciali](assets/specialcharacters.png)
 
    La gestione della corrispondenza è dotata di supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere il supporto per più o meno caratteri speciali personalizzati in base alla personalizzazione](/help/forms/using/custom-special-characters.md).
@@ -125,13 +130,14 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    * Aggiungete un elemento del dizionario dati nel testo, selezionate un elemento dati dall&#39;elenco e toccate Inserisci ( ![inserire](assets/insert.png)). Se selezionate Protetto, l’elemento del dizionario dati è di sola lettura e viene visualizzato nell’editor di lettere, ma non nell’interfaccia utente Crea corrispondenza o in Creazione corrispondenza.
    * Aggiungi un elemento segnaposto nel testo, nel pannello Elementi dati tocca Crea nuovo, immetti i dettagli per il nuovo elemento dati e tocca Crea per aggiungere il nuovo elemento all&#39;elenco. Il nuovo segnaposto può essere inserito nel testo allo stesso modo dell&#39;elemento dizionario dati. Per modificare un segnaposto, selezionate un segnaposto e toccate Modifica.
+
    ![Elementi Placeholder](assets/placeholder_elements_in_xmldata.png)
 
-   **Figura:** Elementi *segnaposto come specificato nel file di dati di esempio di un dizionario dati*
+   **Figura:** *Elementi segnaposto come specificato nel file di dati di esempio di un dizionario dati*
 
    ![Elementi segnaposto nella lettera](assets/placeholder_elements_in_text.png)
 
-   **Figura:** Valori degli elementi *segnaposto nella visualizzazione CCR compilati dalle variabili del dizionario dati come specificato nel file di dati di esempio*
+   **Figura:** *Valori degli elementi segnaposto nella vista CCR popolati dalle variabili del dizionario dati come specificato nel file di dati di esempio*
 
 1. È possibile utilizzare le condizioni in linea e ripetere per rendere la lettera altamente contestuale e ben strutturata. Per ulteriori informazioni sulle condizioni in linea e sulla ripetizione, vedere Condizioni in [linea e ripetere in lettere](/help/forms/using/cm-inline-condition.md).
 1. Toccate **Salva**.
@@ -395,13 +401,15 @@ Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei
    * **Configurazione per**: Selezionare la tabella da configurare. Il suffisso del nome della tabella nel menu a discesa è (Static) se la tabella è statica o (Dynamic) se la tabella è dinamica. Le tabelle statiche contengono un numero fisso di righe. Le tabelle statiche possono contenere aree e campi di destinazione. Impossibile associare l&#39;area di destinazione e i campi a DDE ripetuti. I dati associati alle celle delle tabelle determinano il numero di righe per le tabelle dinamiche.
    * **Righe**: Selezionare il numero di righe per il layout. Il conteggio delle righe configurato deve essere maggiore o uguale al conteggio delle righe originale.
    * **Colonne**: selezionate il numero di colonne per il layout. Il numero di colonne configurato deve essere maggiore o uguale al numero di colonne originale.
+
    Per ogni colonna sono necessari i seguenti dettagli:
 
    * **Intestazione**: testo da visualizzare per l’intestazione
    * **Piè di pagina**: testo da visualizzare per il piè di pagina
    * **Tipo**: tipo di colonna aggiuntiva. Campo o Area di destinazione. Il tipo è abilitato per le tabelle dei segnaposto statici. Il tipo può essere definito a livello di colonna e non a livello di cella. Tutte le celle di una colonna estesa sarebbero dello stesso tipo. Per una tabella dinamica, tutte le colonne sono di tipo Field. Per le tabelle non segnaposto non è possibile definire il tipo di colonne aggiuntive. In questo caso, il tipo di celle aggiuntive nella colonna estesa è uguale al tipo dell&#39;ultima colonna in quella riga; e il tipo di cella nella riga aggiuntiva è uguale al tipo dell&#39;ultima cella in quella colonna.
    * **Rapporto larghezza:** rapporto tra le larghezze delle colonne della tabella.
-   Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei frammenti di layout, vedere [Esempio con file di esempio: utilizzo di tabelle statiche e dinamiche in una lettera](#main-pars-header-28).
+
+   Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei frammenti di layout, vedere [Esempio con file di esempio: utilizzo di tabelle statiche e dinamiche in una lettera](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 1. Toccate **Salva**.
 
@@ -489,6 +497,7 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
    * Aggiungere un sottomodulo alla colonna della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
    * Aggiungere un sottomodulo alla cella della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
+
    In alternativa, utilizzate gli XDP statici e dinamici associati a questo passaggio.
 
    Per ulteriori informazioni sull&#39;uso dei frammenti di layout, vedere Frammenti [di](#layoutfragments)layout.
