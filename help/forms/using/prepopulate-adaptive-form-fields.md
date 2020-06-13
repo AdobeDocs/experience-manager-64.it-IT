@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
 translation-type: tm+mt
-source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '2032'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Un modulo adattivo può contenere diversi campi associati o non associati. I cam
 È possibile precompilare i campi associati e non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare i campi associati e non associati di un modulo adattivo. La `afBoundData` sezione contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
 * Per i moduli adattivi che utilizzano il modello [di modulo](/help/forms/using/prepopulate-adaptive-form-fields.md)XFA, utilizzare il file XML di precompilazione conforme allo schema dati del modello XFA.
-* Per i moduli adattivi che utilizzano lo schema [](/help/forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3)XML, utilizzare il file XML di precompilazione conforme alla struttura dello schema XML.
+* Per i moduli adattivi che utilizzano lo schema [](#xml-schema-af)XML, utilizzare il file XML di precompilazione conforme alla struttura dello schema XML.
 * Per i moduli adattivi che utilizzano lo schema [](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)JSON, utilizzare il JSON di precompilazione conforme allo schema JSON.
 * Per i moduli adattivi che utilizzano lo schema FDM, utilizzare il JSON di precompilazione conforme allo schema FDM.
 * Per i moduli adattivi [senza modello](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)di modulo, non sono presenti dati associati. Ogni campo è un campo non associato ed è precompilato utilizzando l&#39;XML non associato.
@@ -85,9 +88,9 @@ La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per i moduli
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Get File](assets/prefill-submit-data-contentpackage.zip)Sample contenente dati di precompilazione e dati inviati
+[Ottieni file](assets/prefill-submit-data-contentpackage.zip)esempio contenente dati precompilati e dati inviati
 
-## Moduli adattivi basati sullo schema XML {#xml-schema-af}
+## Moduli adattivi basati sullo schema XML  {#xml-schema-af}
 
 La struttura del file XML precompilato e del file XML inviato per i moduli adattivi basati sullo schema XML è la seguente:
 
@@ -239,7 +242,7 @@ Per abilitare il servizio di precompilazione, specificate la Configurazione pred
 
 1. Immettere la posizione dei dati o un regex (espressione regolare) per i percorsi **[!UICONTROL dei file di]** dati. Alcuni esempi di percorsi validi per i file di dati sono:
 
-   * file:///C:/Users/public/Document/Prefill/. &amp;ast;
+   * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
    >[!NOTE]
    >
@@ -274,13 +277,13 @@ http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///
 
 Il nodo specificato deve avere una proprietà denominata `jcr:data` e contenere i dati.
 
-### Il protocollo file:// {#the-file-protocol-nbsp}
+### Il protocollo file://  {#the-file-protocol-nbsp}
 
 ```xml
 http://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
-Il file di riferimento deve trovarsi sullo stesso server.
+Il file di cui si fa riferimento deve trovarsi sullo stesso server.
 
 ### Il protocollo https:// {#the-http-protocol}
 
@@ -339,7 +342,7 @@ Potete utilizzare il servizio di precompilazione personalizzato per gli scenari,
 
 Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * [Scarica il pacchetto ricorrenti](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Inserire il file di dati (dati di precompilazione) nell&#39;archivio crx. È possibile posizionare il file in qualsiasi posizione nella cartella \contents di crx-repository.
