@@ -9,7 +9,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ Il rapporto Processi con esecuzione prolungata visualizza i processi AEM Forms c
 
 1. Fate clic su **Vai** per eseguire il rapporto.
 
-   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra **Process Reporting** (Generazione rapporti sui processi).
+   Il rapporto viene visualizzato nel pannello **Rapporto** a destra della finestra Reporting **** processo.
 
    ![long_run_process](assets/long_running_processes.png)
 
-   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Report **per eseguire le seguenti operazioni sul report.
+   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Rapporto** per eseguire le seguenti operazioni sul rapporto.
 
    * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
    * **Cambia colore** legenda: Seleziona e modifica il colore della legenda del rapporto
