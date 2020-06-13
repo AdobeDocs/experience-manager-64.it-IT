@@ -1,15 +1,18 @@
 ---
 title: Flusso di lavoro incentrato sui moduli in OSGi
 seo-title: Creazione rapida di processi adattivi basati su moduli, automazione delle operazioni di document services e utilizzo di Adobe Sign con i flussi di lavoro AEM
-description: Utilizzare AEM Forms Workflow per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), per integrare il flusso di lavoro con la firma Adobe Sign e altro ancora.
-seo-description: Utilizzare AEM Forms Workflow per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), per integrare il flusso di lavoro con la firma Adobe Sign e altro ancora.
+description: AEM Forms Workflow consente di automatizzare e creare rapidamente revisioni e approvazioni, di avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), di integrare il flusso di lavoro con la firma Adobe Sign e altro ancora.
+seo-description: AEM Forms Workflow consente di automatizzare e creare rapidamente revisioni e approvazioni, di avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), di integrare il flusso di lavoro con la firma Adobe Sign e altro ancora.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2916'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ Oltre ai flussi di lavoro di revisione e approvazione per il pubblico interno ed
 
 ## Introduzione al flusso di lavoro incentrato su Forms in OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Puoi utilizzare AEM Workflows per creare rapidamente flussi di lavoro basati su moduli adattivi. Questi flussi di lavoro possono essere utilizzati per revisioni e approvazioni, flussi di processi aziendali, per avviare Document Services, per l&#39;integrazione con il flusso di lavoro di firma Adobe Sign e operazioni simili. Ad esempio, l&#39;elaborazione delle applicazioni con carta di credito, i dipendenti, lasciando i flussi di lavoro di approvazione, salvando un modulo come documento PDF. Inoltre, questi flussi di lavoro possono essere utilizzati all&#39;interno di un&#39;organizzazione o attraverso un firewall di rete.
+Puoi utilizzare AEM Workflows per creare rapidamente flussi di lavoro basati su moduli adattivi. Questi flussi di lavoro possono essere utilizzati per revisioni e approvazioni, flussi di processi aziendali, per avviare Document Services, per l&#39;integrazione con il flusso di lavoro di firma di Adobe Sign e operazioni simili. Ad esempio, l&#39;elaborazione delle applicazioni con carta di credito, i dipendenti, lasciando i flussi di lavoro di approvazione, salvando un modulo come documento PDF. Inoltre, questi flussi di lavoro possono essere utilizzati all&#39;interno di un&#39;organizzazione o attraverso un firewall di rete.
 
 Con il flusso di lavoro basato su Forms su OSGi, potete creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi, senza dover installare la funzionalità di Process Management completa nello stack JEE. Lo sviluppo e la gestione dei flussi di lavoro utilizzano le familiari funzionalità AEM Workflow e AEM Inbox. I flussi di lavoro sono la base per automatizzare i processi aziendali reali che si estendono su più sistemi software, reti, reparti e persino organizzazioni.
 
@@ -55,11 +58,11 @@ AEM offre un’interfaccia utente intuitiva per creare un modello di workflow co
 
 ### Creare un modello per un flusso di lavoro di approvazione e revisione {#create-a-model-for-an-approval-and-review-workflow}
 
-Il flusso di lavoro di approvazione e revisione riguarda i compiti che richiedono l&#39;intervento umano per prendere decisioni. Nell&#39;esempio seguente viene creato un modello di flusso di lavoro per un&#39;applicazione mutuo ipotecario da compilare da un agente bancario front-office. Una volta compilata, la domanda viene inviata per l&#39;approvazione. Successivamente, l&#39;applicazione approvata viene inviata al richiedente per la firma elettronica tramite Adobe Sign.
+Il flusso di lavoro di approvazione e revisione riguarda i compiti che richiedono l&#39;intervento umano per prendere decisioni. Nell&#39;esempio seguente viene creato un modello di flusso di lavoro per un&#39;applicazione di mutuo ipotecario da compilare da un agente bancario front-office. Una volta compilata, la domanda viene inviata per l&#39;approvazione. Successivamente, l&#39;applicazione approvata viene inviata al richiedente per la firma elettronica tramite Adobe Sign.
 
 L&#39;esempio è disponibile come pacchetto allegato di seguito. Importate e installate l&#39;esempio utilizzando il gestore pacchetti. Per creare manualmente il modello di flusso di lavoro per l’applicazione, potete inoltre effettuare le seguenti operazioni:
 
-Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicazione mutuo da compilare da un agente bancario front-office. Una volta compilata la domanda viene inviata per l&#39;approvazione. Successivamente, l&#39;applicazione approvata viene inviata al cliente per la firma elettronica tramite Adobe Sign. Potete importare e installare l’esempio utilizzando il gestore pacchetti.
+Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicazione mutuo da compilare da un agente bancario front-office. Una volta compilata la domanda viene inviata per l&#39;approvazione. Successivamente, l&#39;applicazione approvata viene inviata al cliente per richiedere le firme elettroniche tramite Adobe Sign. Potete importare e installare l’esempio utilizzando il gestore pacchetti.
 
 [Ottieni file](assets/example-mortgage-loan-application.zip)
 
@@ -77,7 +80,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
    1. Aprire la configurazione **[!UICONTROL Day CQ Mail Service]** . Specificare un valore per il nome **[!UICONTROL host del server]** SMTP, **[!UICONTROL la porta del server]** SMTP e i campi dell&#39;indirizzo **** &quot;Da&quot;. Fai clic su **[!UICONTROL Salva]**.
    1. Aprite la configurazione **[!UICONTROL Day CQ Link Externalizer]** . Nel campo **[!UICONTROL Domini]** , specificate il nome host/indirizzo IP effettivo e il numero di porta per le istanze locali, di autori e di pubblicazione. Fai clic su **[!UICONTROL Salva]**.
 
-1. Creare le fasi del flusso di lavoro. Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella Casella in entrata AEM e indicano l’avanzamento del flusso di lavoro.
+1. Creare le fasi del flusso di lavoro. Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella Casella in entrata AEM e riportano l’avanzamento del flusso di lavoro.
 
    Per definire un passaggio, toccate l&#39;icona ![info-cerchio](assets/info-circle.png) per aprire le proprietà del modello di workflow, aprite la scheda **[!UICONTROL Staggi]** , aggiungete le fasi per il modello di workflow e toccate **[!UICONTROL Salva e chiudi]**. Per l&#39;applicazione ipoteca di esempio, creare le fasi: richiesta di prestito, stato della richiesta di prestito, documenti da firmare e documento di prestito firmato.
 
@@ -89,7 +92,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    ![editor workflow](assets/workflow-editor.png)
 
-   Per l&#39;esempio dell&#39;applicazione ipotecaria, configurare il passaggio dell&#39;attività di assegnazione in modo che utilizzi un modulo adattivo di sola lettura e visualizzare il documento PDF al termine dell&#39;attività. Inoltre, selezionare il gruppo di utenti autorizzato ad approvare la richiesta di prestito. Nella scheda **[!UICONTROL Azioni]** , disabilitare l&#39;opzione **[!UICONTROL Invia]** . Specificare una variabile **[!UICONTROL di]** route. Ad esempio, actionTaken. Inoltre, aggiungere le route Approva e Rifiuta. Le route vengono visualizzate come azioni (pulsanti) distinte nella Casella in entrata AEM. Il flusso di lavoro seleziona un ramo in base all&#39;azione (pulsante) toccata dall&#39;utente.
+   Per l&#39;esempio dell&#39;applicazione ipotecaria, configurare il passaggio dell&#39;attività di assegnazione in modo che utilizzi un modulo adattivo di sola lettura e visualizzare il documento PDF al termine dell&#39;attività. Inoltre, selezionare il gruppo di utenti autorizzato ad approvare la richiesta di prestito. Nella scheda **[!UICONTROL Azioni]** , disabilitare l&#39;opzione **[!UICONTROL Invia]** . Specificate una variabile **[!UICONTROL di]** route. Ad esempio, actionTaken. Inoltre, aggiungere le route Approva e Rifiuta. Le route vengono visualizzate come azioni (pulsanti) distinte nella Casella in entrata AEM. Il flusso di lavoro seleziona un ramo in base all&#39;azione (pulsante) toccata dall&#39;utente.
 
    È possibile importare il pacchetto di esempio, disponibile per il download all&#39;inizio della sezione, per l&#39;insieme completo di valori di tutti i campi del passaggio dell&#39;attività di assegnazione configurato, ad esempio l&#39;applicazione mutuo.
 
@@ -123,11 +126,11 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
 1. Aggiungi altri passaggi del flusso di lavoro per creare la logica di business.
 
-   Per l&#39;esempio relativo all&#39;ipoteca, aggiungere un documento di generazione del record, due passaggi dell&#39;attività di assegnazione e un passaggio del documento di firma al ramo 1 del modello, come illustrato nell&#39;immagine seguente. Una fase di assegnazione dell&#39;attività consiste nel visualizzare e inviare **al richiedente** i documenti di prestito firmati e un&#39;altra componente dell&#39;attività assegnata consiste **nella visualizzazione dei documenti** firmati. È inoltre possibile aggiungere un componente task assegnato al ramo 2. Viene attivato quando un utente tocca Rifiuta in AEM Inbox.
+   Per l&#39;esempio relativo all&#39;ipoteca, aggiungere un documento di generazione del record, due passaggi dell&#39;attività di assegnazione e un passaggio del documento di firma al ramo 1 del modello, come illustrato nell&#39;immagine seguente. Una fase di assegnazione dell&#39;attività consiste nel visualizzare e inviare **al richiedente** i documenti di prestito firmati e un&#39;altra componente dell&#39;attività assegnata consiste **nella visualizzazione dei documenti** firmati. È inoltre possibile aggiungere un componente attività di assegnazione al ramo 2. Viene attivato quando un utente tocca Rifiuta in AEM Inbox.
 
    Per l&#39;insieme completo di valori di tutti i campi dei passaggi dell&#39;attività di assegnazione, del passaggio del documento del record e del passaggio del documento di firma configurati ad esempio per l&#39;applicazione del mutuo, importare il pacchetto di esempio, disponibile per il download all&#39;inizio di questa sezione.
 
-   Il modello di workflow è pronto. Potete avviare il flusso di lavoro tramite vari metodi. Per informazioni dettagliate, vedere [Avviare un flusso di lavoro incentrato sui moduli in OSGi](/help/forms/using/aem-forms-workflow.md#main-pars-header).
+   Il modello di workflow è pronto. Potete avviare il flusso di lavoro tramite vari metodi. Per informazioni dettagliate, vedere [Avviare un flusso di lavoro incentrato sui moduli in OSGi](#launch).
 
    ![workflow-editor-mutuo](assets/workflow-editor-mortgage.png)
 
@@ -162,7 +165,7 @@ L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&
   </tr> 
   <tr> 
    <td>Modulo adattivo</td> 
-   <td><p>Specificare il percorso di un modulo adattivo. Quando un utente avvia un'applicazione, viene visualizzato il modulo adattivo specificato.</p> <p><strong>Nota</strong>: Le applicazioni per i flussi di lavoro non supportano moduli e documenti PDF con più pagine o che richiedono lo scorrimento sull'iPad Apple. Quando un'applicazione viene aperta sull'iPad e il modulo adattivo o il documento PDF supera una pagina, i campi modulo e il contenuto della seconda pagina vengono persi.</p> </td> 
+   <td><p>Specificare il percorso di un modulo adattivo. Quando un utente avvia un'applicazione, viene visualizzato il modulo adattivo specificato.</p> <p><strong>Nota</strong>: Le applicazioni per i flussi di lavoro non supportano moduli e documenti PDF con più pagine o che richiedono lo scorrimento sull'iPad Apple. Quando un'applicazione viene aperta su Apple iPad e il modulo adattivo o il documento PDF supera una pagina, i campi modulo e il contenuto della seconda pagina vengono persi.</p> </td> 
   </tr> 
   <tr> 
    <td>Gruppo di accesso</td> 
@@ -205,7 +208,7 @@ L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&
 
 ### Invio di un’applicazione da AEM Inbox {#inbox}
 
-L’applicazione del flusso di lavoro creata è disponibile come applicazione in Inbox. Gli utenti membri del gruppo Workflow-users possono compilare e inviare l’applicazione che attiva il flusso di lavoro associato. Per informazioni sull’utilizzo di AEM Inbox per inviare applicazioni e gestire attività, consultate [Gestione di applicazioni e attività per moduli in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+L’applicazione del flusso di lavoro creata è disponibile come applicazione in Posta in arrivo. Gli utenti membri del gruppo Workflow-users possono compilare e inviare l’applicazione che attiva il flusso di lavoro associato. Per informazioni sull’utilizzo di AEM Inbox per inviare applicazioni e gestire attività, consultate [Gestione di applicazioni e attività per moduli in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ### Invio di un’applicazione dall’app AEM Forms {#afa}
 
@@ -213,7 +216,7 @@ L’app AEM Forms si sincronizza con un server AEM Forms e consente di apportare
 
 ### Invio di un modulo adattivo {#af}
 
-È possibile configurare le azioni di invio di un modulo adattivo per avviare un flusso di lavoro dopo l’invio del modulo adattivo. I moduli adattivi forniscono l’azione **[!UICONTROL Richiama un flusso di lavoro]** AEM per avviare un flusso di lavoro dopo l’invio di un modulo adattivo. Per informazioni dettagliate sull&#39;azione di invio, vedere [Configurazione dell&#39;azione](/help/forms/using/configuring-submit-actions.md)di invio. Per inviare un modulo adattivo tramite l’app AEM Forms, abilita Sincronizza con app AEM Forms nelle proprietà del modulo adattivo.
+È possibile configurare le azioni di invio di un modulo adattivo per avviare un flusso di lavoro dopo l’invio del modulo adattivo. I moduli adattivi forniscono l’azione di invio **[!UICONTROL Richiama un flusso di lavoro]** AEM per avviare un flusso di lavoro dopo l’invio di un modulo adattivo. Per informazioni dettagliate sull&#39;azione di invio, vedere [Configurazione dell&#39;azione](/help/forms/using/configuring-submit-actions.md)di invio. Per inviare un modulo adattivo tramite l’app AEM Forms, abilita Sincronizza con l’app AEM Forms nelle proprietà del modulo adattivo.
 
 È possibile configurare un modulo adattivo per la sincronizzazione, l&#39;invio e l&#39;attivazione di un flusso di lavoro dall&#39;app AEM Forms. Per informazioni dettagliate, vedere [Uso di un modulo](/help/forms/using/working-with-form.md).
 
@@ -221,7 +224,7 @@ L’app AEM Forms si sincronizza con un server AEM Forms e consente di apportare
 
 Un amministratore (membro del gruppo di amministratori di fd) può configurare una cartella di rete per eseguire un flusso di lavoro preconfigurato quando un utente inserisce un file (ad esempio un file PDF) nella cartella. Al termine del flusso di lavoro, è possibile salvare il file dei risultati in una cartella di output specificata. Tale cartella è nota come cartella [](/help/forms/using/watched-folder-in-aem-forms.md)esaminata. Per configurare una cartella esaminata e avviare un flusso di lavoro, effettuate le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, andate a ![strumenti](assets/tools.png) **[!UICONTROL Moduli > Configura cartella]** esaminata.  Viene visualizzato un elenco di cartelle esaminate già configurate.
+1. Nell’istanza di creazione di AEM, andate a ![strumenti](assets/tools.png) **[!UICONTROL Moduli > Configura cartella]** esaminata. Viene visualizzato un elenco di cartelle esaminate già configurate.
 1. Toccate **[!UICONTROL Nuovo]**. Viene visualizzato un elenco di campi. Specificate un valore per i seguenti campi per configurare una cartella esaminata per un flusso di lavoro:
 
 <table> 
