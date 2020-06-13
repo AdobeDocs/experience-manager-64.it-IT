@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2759'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espress
 
 ## Procedure ottimali per la scrittura di espressioni {#best-practices-for-writing-expressions}
 
-* Durante la scrittura di espressioni, per accedere a campi e pannelli è possibile utilizzare il nome del campo o del pannello. Per accedere al valore di un campo, utilizzare la proprietà value. Ad esempio: `field1.value`
+* Durante la scrittura di espressioni, per accedere a campi e pannelli è possibile utilizzare il nome del campo o del pannello. Per accedere al valore di un campo, utilizzare la proprietà value. Esempio, `field1.value`
 * Utilizzare nomi univoci per campi e pannelli all&#39;interno del modulo. Consente di evitare possibili conflitti con i nomi dei campi utilizzati durante la scrittura delle espressioni.
 * Durante la scrittura di espressioni con più righe, utilizzate un punto e virgola per terminare un&#39;istruzione.
 
@@ -42,17 +45,17 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse i
 
 ## Tipi di espressione {#expression-types}
 
-Nei moduli adattivi è possibile scrivere espressioni per aggiungere comportamenti quali mostrare/nascondere campi e pannelli dinamici. È inoltre possibile scrivere espressioni per aggiungere campi calcolati, rendere i campi di sola lettura, logica di convalida e molto altro ancora. I moduli adattivi supportano le seguenti espressioni:
+Nei moduli adattivi è possibile scrivere espressioni per aggiungere comportamenti quali mostrare/nascondere campi e pannelli dinamici. È inoltre possibile scrivere espressioni per aggiungere campi calcolati, rendere i campi di sola lettura, la logica di convalida e molto altro ancora. I moduli adattivi supportano le seguenti espressioni:
 
-* **[Espressioni](/help/forms/using/adaptive-form-expressions.md#main-pars-header-4)**di accesso: per attivare/disattivare un campo.
+* **[Espressioni](#access-expression-enablement-expression)**di accesso: per attivare/disattivare un campo.
 * **[Calcola espressioni](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: per calcolare automaticamente il valore di un campo.
 * **[Espressione](/help/forms/using/adaptive-form-expressions.md#p-click-expression-p)**di clic: per gestire le azioni in caso di clic su un pulsante.
-* **[](/help/forms/using/adaptive-form-expressions.md#p-initialization-script-p)Script **di inizializzazione: eseguire un&#39;azione all&#39;inizializzazione di un campo.
+* **[Script](/help/forms/using/adaptive-form-expressions.md#p-initialization-script-p)di inizializzazione:**eseguire un&#39;azione all&#39;inizializzazione di un campo.
 
-* **[Espressione](/help/forms/using/adaptive-form-expressions.md#p-options-expression-p)**Opzioni: per compilare dinamicamente un elenco a discesa.
+* **[Espressione](/help/forms/using/adaptive-form-expressions.md#p-options-expression-p)**Opzioni: per compilare in modo dinamico un elenco a discesa.
 * [**Espressione **](#summary)di riepilogo: per calcolare in modo dinamico il titolo di un pannello a soffietto.
-* **[Convalida espressioni](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: per convalidare un campo.
-* **[](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Script **di conferma del valore: per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **[Convalidare le espressioni](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: per convalidare un campo.
+* **[Script](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)di conferma del valore:**per modificare i componenti di un modulo dopo la modifica del valore di un campo.
 
 * **[Espressione](/help/forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**di visibilità: per controllare la visibilità di un campo e di un pannello.
 * **[Espressione](/help/forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**completamento passaggio: per impedire che un utente passi al passaggio successivo di una procedura guidata.
@@ -69,7 +72,7 @@ Nei moduli adattivi è possibile scrivere espressioni per aggiungere comportamen
 
 ### Calcola espressione {#calculate-expression}
 
-L&#39;espressione calculate viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un&#39;espressione. In genere, tale espressione utilizza la proprietà value di un altro campo. Ad esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`cambia, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L&#39;espressione calculate viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un&#39;espressione. In genere, tale espressione utilizza la proprietà value di un altro campo. Esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`cambia, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Si applica a**: fields
 
@@ -80,7 +83,7 @@ L&#39;espressione calculate viene utilizzata per calcolare automaticamente il va
 
 ### Click Expression {#click-expression}
 
-L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce API che eseguono varie funzioni, come inviare, convalidare e utilizzare l&#39;espressione click. Per un elenco completo delle API, consultate API [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce API che eseguono varie funzioni, ad esempio invia, convalida, utilizzate insieme all&#39;espressione click. Per un elenco completo delle API, consultate API [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Si applica a**: Campi pulsante
 
@@ -96,11 +99,11 @@ Lo script di inizializzazione viene attivato quando viene inizializzato un modul
 * Quando viene eseguito il rendering di un modulo adattivo con una precompilazione dei dati, lo script viene eseguito al termine dell&#39;operazione di precompilazione.
 * Quando viene attivata la riconvalida lato server di un modulo adattivo, viene eseguito lo script di inizializzazione.
 
-**** Si applica a: campi e pannello
+**Si applica a:** campi e pannello
 
-**** Tipo di restituzione: L&#39;espressione script di inizializzazione non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
+**Tipo di restituzione:** L&#39;espressione script di inizializzazione non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
 
-**** Esempio: In uno scenario di pre-compilazione dei dati, per compilare i campi con il valore predefinito `'Adaptive Forms'` quando il relativo valore viene salvato come null, l&#39;espressione script di inizializzazione è:\
+**Esempio:** In uno scenario di pre-compilazione dei dati, per compilare i campi con il valore predefinito `'Adaptive Forms'` quando il relativo valore viene salvato come null, l&#39;espressione script di inizializzazione è:\
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Espressione Opzioni {#options-expression}
@@ -123,11 +126,11 @@ L&#39;espressione Summary calcola dinamicamente il titolo di un pannello seconda
 
 L&#39;espressione Summary viene in genere utilizzata per gli elementi secondari ripetuti di un pannello di layout a soffietto per fornire un titolo significativo a ciascun pannello secondario.
 
-**** Si applica a: Pannelli che sono elementi figlio diretti di un pannello il cui layout è configurato come Accordion.
+**Si applica a:** Pannelli che sono elementi figlio diretti di un pannello il cui layout è configurato come Accordion.
 
-**** Tipo di restituzione: L&#39;espressione restituisce un elemento String che diventa il titolo dell&#39;elemento Accordion.
+**Tipo di restituzione:** L&#39;espressione restituisce un elemento String che diventa il titolo dell&#39;elemento Accordion.
 
-**** Esempio: &quot;Numero account: &quot;+ textbox1.value
+**Esempio:** &quot;Numero account: &quot;+ textbox1.value
 
 ### Convalida espressione {#validate-expression}
 
@@ -145,7 +148,7 @@ Nell&#39;esempio precedente, se il valore non vuoto non corrisponde al pattern, 
 
 >[!NOTE]
 >
->Se si scrive un&#39;espressione di convalida per un campo non obbligatorio o obbligatorio, l&#39;espressione viene valutata indipendentemente dallo stato di visibilità del campo. Per arrestare la convalida dei campi nascosti, impostare su true la proprietà validationsDisabled nello script di inizializzazione o di conferma del valore. Ad esempio: `this.validationsDisabled=true`
+>Se si scrive un&#39;espressione di convalida per un campo non obbligatorio o obbligatorio, l&#39;espressione viene valutata indipendentemente dallo stato di visibilità del campo. Per arrestare la convalida dei campi nascosti, impostare su true la proprietà validationsDisabled nello script di inizializzazione o di conferma del valore. Esempio, `this.validationsDisabled=true`
 
 ### Script per conferma del valore {#value-commit-script}
 
@@ -154,11 +157,11 @@ Lo script Value Commit viene attivato quando:
 * Un utente modifica il valore di un campo dall’interfaccia utente.
 * Il valore di un campo viene modificato a livello di programmazione a causa di una modifica in un altro campo.
 
-**** Si applica a: fields
+**Si applica a:** fields
 
-**** Tipo di restituzione: L&#39;espressione script commit del valore non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
+**Tipo di restituzione:** L&#39;espressione script commit del valore non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
 
-**** Esempio: Per convertire in maiuscolo le lettere maiuscole degli alfabeti immessi nel campo in corrispondenza di commit, l&#39;espressione commit del valore è:\
+**Esempio:** Per convertire in maiuscolo le lettere maiuscole degli alfabeti immessi nel campo in corrispondenza di commit, il valore commit dell&#39;espressione è:\
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -194,7 +197,7 @@ I metodi per aggiungere le convalide a un campo sono:
 
 ### Obbligatorio {#required}
 
-Per rendere obbligatorio un componente, nella finestra di dialogo **[!UICONTROL Modifica]** del componente potete selezionare l’opzione **[!UICONTROL Titolo e testo > Obbligatorio]**. Potete anche aggiungere il messaggio **** richiesto appropriato (facoltativo). .
+Per rendere obbligatorio un componente, nella finestra di dialogo **[!UICONTROL Modifica]** del componente potete selezionare l’opzione **[!UICONTROL Titolo e testo > Obbligatorio]**. È inoltre possibile aggiungere il messaggio **** richiesto appropriato (facoltativo). .
 
 ### Pattern di convalida {#validation-patterns}
 
@@ -226,7 +229,7 @@ GuideBridge è un insieme di API che possono essere utilizzate per interagire co
 
 * Per convalidare un modulo adattivo o i relativi pannelli specifici, utilizzare `guideBridge.validate(errorList, somExpression).`
 
-#### Utilizzo di GuideBridge all’esterno delle espressioni {#using-guidebridge-outside-expressions-nbsp}
+#### Utilizzo di GuideBridge all’esterno delle espressioni  {#using-guidebridge-outside-expressions-nbsp}
 
 Potete anche utilizzare le API GuideBridge al di fuori delle espressioni. Ad esempio, è possibile utilizzare l&#39;API GuideBridge per impostare la comunicazione tra l&#39;HTML della pagina che ospita il modulo adattivo e il modello di modulo. Inoltre, è possibile impostare il valore che proviene dall&#39;elemento padre di Iframe che ospita il modulo.
 
@@ -252,13 +255,13 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->In AEM è buona norma scrivere il codice in una libreria client e includerlo nella pagina (header.jsp o piè di pagina.jsp della pagina)
+>In AEM, è buona norma scrivere il codice in una libreria client e includerlo nella pagina (header.jsp o piè di pagina.jsp della pagina)
 
 Per utilizzare GuideBridge dopo l&#39;inizializzazione del modulo (l&#39; `bridgeInitializeComplete` evento viene inviato), è necessario utilizzare l&#39;istanza GuideBridge `window.guideBridge`. Potete verificare lo stato di inizializzazione di GuideBridge utilizzando l&#39; `guideBride.isConnected` API.
 
 #### Eventi GuideBridge {#guidebridge-events}
 
-GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina host. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente in un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, vedere Riferimento API [JavaScript Library per i moduli](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)adattivi.
+GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina host. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente in un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, vedere Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)adattivi.
 
 Utilizzare il codice seguente per registrare i gestori:
 
@@ -283,5 +286,5 @@ Per creare un pattern personalizzato per un tipo di campo specifico e riutilizza
 1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungete una proprietà con un nome (ad esempio `pattern1`) e impostatene il valore sul pattern da aggiungere. Ad esempio, aggiungere una proprietà `pattern1` con il valore Fax=text{99-999-999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate nei moduli adattivi.
 
    ![Creazione di pattern personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
-   **** Figura: *Creazione di pattern personalizzati*
+   **Figura:** *Creazione di pattern personalizzati*
 
