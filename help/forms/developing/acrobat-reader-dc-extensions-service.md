@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +23,19 @@ Per il servizio Acrobat Reader DC Extensions sono disponibili le seguenti proced
 
 [Avvio rapido (modalità SOAP):applicazione dei diritti di utilizzo tramite l&#39;API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Rimozione dei diritti di utilizzo dai documenti PDF](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Rimozione dei diritti di utilizzo dai documenti PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Recupero delle informazioni sulle credenziali tramite l&#39;API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: Gli avvii rapidi disponibili in Programmazione con AEM Forms sono basati sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili nella sezione Programmazione con AEM Forms sono basati sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP):applicazione dei diritti di utilizzo tramite l&#39;API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono applicati i diritti di utilizzo a un documento PDF denominato *Loan.pdf*. Il documento PDF con diritti viene salvato come file PDF denominato *LoanUsageRights.pdf*. A questo documento PDF vengono applicati i seguenti diritti di utilizzo: `enabledComments`, `enabledFormFillIn`, e `enabledDigitalSignatures`. Consultate [Applicazione dei diritti di utilizzo ai documenti](/help/forms/developing/assigning-usage-rights.md)PDF.
+Nell&#39;esempio di codice Java riportato di seguito vengono applicati i diritti di utilizzo a un documento PDF denominato *Loan.pdf*. Il documento PDF con diritti viene salvato come file PDF denominato *LoanUsageRights.pdf*. A questo documento PDF vengono applicati i seguenti diritti di utilizzo: `enabledComments`, `enabledFormFillIn`e `enabledDigitalSignatures`. Consultate [Applicazione dei diritti di utilizzo ai documenti](/help/forms/developing/assigning-usage-rights.md)PDF.
 
 ```as3
  /* 
