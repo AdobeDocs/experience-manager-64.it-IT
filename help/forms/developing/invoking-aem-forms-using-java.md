@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Il sito Web di Adobe Developer contiene i seguenti articoli che discutono della 
 
 [Inclusione di file libreria Java AEM Forms](#including-aem-forms-java-library-files)
 
-[Richiamo di processi a lunga durata basati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[Richiamo di processi a lunga durata basati sull&#39;uomo](invoking-human-centric-long-lived.md)
 
 [Richiamo di moduli AEM tramite i servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -444,13 +447,18 @@ Per richiamare un servizio AEM Forms, impostate le seguenti proprietà di connes
    * Se si imposta questa proprietà di connessione su `WebLogic`, il `java.naming.factory.initial` valore è impostato su `weblogic.jndi.WLInitialContextFactory`.
    * Analogamente, se si imposta questa proprietà di connessione su `JBoss`, il `java.naming.factory.initial` valore è impostato su `org.jnp.interfaces.NamingContextFactory`.
    * Se non si desidera utilizzare i valori predefiniti, è possibile impostare la `java.naming.factory.initial` proprietà su un valore che soddisfa le proprie esigenze.
-   ***Nota**: Invece di utilizzare una stringa per impostare la proprietà di `DSC_SERVER_TYPE` connessione, è possibile utilizzare un membro statico della `ServiceClientFactoryProperties` classe. È possibile utilizzare i seguenti valori: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`o `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+
+   >[!NOTE]
+   >
+   >Invece di utilizzare una stringa per impostare la proprietà di `DSC_SERVER_TYPE` connessione, è possibile utilizzare un membro statico della `ServiceClientFactoryProperties` classe. È possibile utilizzare i seguenti valori: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`o `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Specifica il nome utente dei moduli AEM. Affinché un utente possa richiamare correttamente un servizio AEM Forms, deve avere il ruolo Utente servizi. Un utente può anche avere un altro ruolo che include l&#39;autorizzazione Richiamo assistenza. In caso contrario, viene generata un&#39;eccezione quando tentano di richiamare un servizio. Se la protezione del servizio è disabilitata, non è necessario specificare questa proprietà di connessione.
 * **DSC_CREDENTIAL_PASSWORD:** Specifica il valore della password corrispondente. Se la protezione del servizio è disabilitata, non è necessario specificare questa proprietà di connessione.
 * **DSC_REQUEST_TIMEOUT:** Il limite di timeout predefinito per la richiesta SOAP è 1200000 millisecondi (20 minuti). A volte, una richiesta può richiedere più tempo per completare l&#39;operazione. Ad esempio, una richiesta SOAP che recupera un insieme di record di grandi dimensioni può richiedere un limite di timeout più lungo. Potete utilizzare il protocollo `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` per aumentare il limite di timeout delle chiamate per le richieste SOAP.
 
-   **Nota**: Solo le chiamate basate su SOAP supportano la proprietà DSC_REQUEST_TIMEOUT.
+   >[!NOTE]
+   >
+   >Solo le chiamate basate su SOAP supportano la proprietà DSC_REQUEST_TIMEOUT.
 
 Per impostare le proprietà di connessione, eseguire le operazioni seguenti:
 
@@ -459,6 +467,7 @@ Per impostare le proprietà di connessione, eseguire le operazioni seguenti:
 
    * Il valore di `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumerazione
    * Una stringa che specifica l&#39;URL del server applicazione J2EE che ospita AEM Forms
+
    >[!NOTE]
    >
    >Se si utilizza la modalità di connessione SOAP, specificare il valore di `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumerazione invece del valore di `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumerazione.
@@ -467,6 +476,7 @@ Per impostare le proprietà di connessione, eseguire le operazioni seguenti:
 
    * Il valore di `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` enumerazione
    * Il valore di `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumerazione
+
    >[!NOTE]
    >
    >Se si utilizza la modalità di connessione SOAP, specificare il valore di `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumerazione invece del valore di `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumerazione.
@@ -984,6 +994,7 @@ Anche se ottenere un `ServiceClientFactory` è in genere veloce, alcuni sovracca
    * Un valore ID univoco specificando `new Id()`.
    * Un valore UUID univoco specificando `new Lid()`.
    * Nome della risorsa. È possibile specificare il nome del file XDP.
+
    Inserite il valore restituito in `Resource`.
 
 1. Creare un `ResourceContent` oggetto richiamando il `RepositoryInfomodelFactoryBean` metodo dell&#39; `newImage` oggetto e proiettando il valore restituito in `ResourceContent`. Questo oggetto rappresenta il contenuto aggiunto alla directory archivio.
