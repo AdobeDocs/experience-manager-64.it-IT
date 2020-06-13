@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1006'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,9 @@ Java API Quick Start(SOAP) è disponibile per il servizio Assembler
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: La sezione Avvio rapido nella programmazione con AEM Forms si basa sul server Forms in fase di implementazione nel server applicazioni JBoss e nel sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>La sezione Avvio rapido nella programmazione con AEM Forms si basa sul server Forms in fase di implementazione nel server applicazioni JBoss e nel sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Assemblare un documento PDF utilizzando l&#39;API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1682,7 +1687,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono assemblati framment
 
 ## Avvio rapido (modalità SOAP): Redazione di un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene copiato un documento PDF utilizzando `PDFUtility`.
+Nell&#39;esempio di codice riportato di seguito viene copiato un documento PDF utilizzando `PDFUtility`.
 
 >[!NOTE]
 >
