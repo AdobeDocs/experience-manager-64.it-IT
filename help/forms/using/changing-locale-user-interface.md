@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Effettuate le seguenti operazioni per aggiungere il supporto per una lingua *Nuo
 
 ## Localizzazione di categorie, code e processi compressi {#localizing-collapsed-categories-queues-and-processes}
 
-L&#39;area di lavoro Moduli AEM utilizza immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+L&#39;area di lavoro Moduli AEM utilizza immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. La larghezza consigliata delle immagini è 19 px.
 
@@ -108,7 +111,7 @@ Per localizzare le immagini, effettuate le seguenti operazioni:
 
 ## Localizzazione del selettore data {#localizing-date-picker}
 
-È necessario un pacchetto di sviluppo per localizzare l&#39;API *datepicker *API. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)dell&#39;area di lavoro Moduli AEM.
+È necessario un pacchetto di sviluppo per localizzare l&#39;API *datepicker *API. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro Moduli AEM.
 
 1. Scaricate ed estraete il pacchetto [dell&#39;interfaccia utente](https://jqueryui.com/download/all/)jQuery, passate a *&lt;pacchetto dell&#39;interfaccia utente jquery estratto>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiate il file jquery.ui.datepicker-nw.js per il codice delle impostazioni internazionali ora in apps/ws/js/libs/jqueryui e apportate modifiche specifiche alle impostazioni internazionali del file.
@@ -123,6 +126,7 @@ Per localizzare le immagini, effettuate le seguenti operazioni:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    Il codice di esempio seguente mostra come aggiungere la voce jquery.ui.datepicker-nw.js:
 
    ```
@@ -164,6 +168,7 @@ Per localizzare le immagini, effettuate le seguenti operazioni:
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    Modificate il codice seguente per aggiungere la nuova impostazione internazionale:
 
    ```
