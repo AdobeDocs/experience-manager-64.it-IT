@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 11%
 
 ---
 
@@ -37,7 +40,7 @@ Ad esempio, supponete di voler presentare immagini di berretti con diverse bolle
 
 Per iniziare subito a lavorare:
 
-1. [Caricate le immagini originali per più viste.](#uploading-assets-in-image-sets)
+1. [Caricate le immagini primarie per più viste.](#uploading-assets-in-image-sets)
 
    Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
@@ -106,6 +109,7 @@ Poiché gli utenti possono eseguire lo zoom delle immagini in set di immagini, a
 >
 >* Una ripresa nera, marrone e verde della stessa giacca.
 >* Miniatura di colore nera, marrone e verde.
+
 >
 
 
@@ -144,6 +148,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    * Nell’angolo in alto a sinistra della pagina Editor **[!UICONTROL set di]** immagini, toccate **[!UICONTROL Aggiungi risorsa]**.
    * Al centro della pagina Editor **[!UICONTROL set di]** immagini, toccate **[!UICONTROL Toccate per aprire il selettore]** delle risorse.
+
    Toccate per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -216,6 +221,7 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
    * Per riordinare le risorse, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordinamento per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, toccate l’intestazione della colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, toccate **[!UICONTROL Aggiungi risorsa]**. Passate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all’angolo superiore destro della pagina.
+
    >[!NOTE]
    >Se eliminate l’immagine utilizzata da AEM per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
 
@@ -223,6 +229,7 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Per aggiungere o modificare una miniatura, selezionate l’icona della miniatura accanto alla parte destra della risorsa. Passate alla nuova miniatura o alla nuova risorsa campione, selezionatela, quindi toccate **[!UICONTROL Seleziona]**.
    * Per eliminare un intero set di immagini, selezionatelo e toccate **[!UICONTROL Elimina]**.
+
    >[!NOTE]
    >
    >Per modificare le immagini di un Set di immagini, tocca il set e, dalla barra a sinistra, seleziona **[!UICONTROL Membri set]**. Per aprire la finestra di modifica, tocca una singola risorsa con l’icona a forma di matita.****
