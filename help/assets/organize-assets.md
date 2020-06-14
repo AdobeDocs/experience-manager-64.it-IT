@@ -3,7 +3,10 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
 
    * **Cartelle** di sviluppo - contiene le risorse digitali su cui state lavorando.
    * **Cartelle** client: contiene risorse digitali basate sui nomi dei client o dei progetti.
-   * **Cartelle** master - contiene risorse digitali originali.
+   * **Cartelle** principali: contiene risorse digitali originali.
    * **Cartelle** di rappresentazione - contiene rappresentazioni e copie delle risorse digitali originali.
    * **Cartelle** Dimensione file: contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
    * **Cartelle** di gestione temporanea: contiene risorse digitali pronte per la pubblicazione sul sito Web.
@@ -63,7 +66,7 @@ Un profilo di elaborazione contiene i comandi di elaborazione delle risorse appl
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui vari profili che puoi creare e gestire per elaborare le risorse, vedi
+Per ulteriori informazioni sui vari profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
