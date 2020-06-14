@@ -3,7 +3,10 @@ title: Integrare AEM Assets con Adobe InDesign Server
 description: Scopri come integrare AEM Assets con InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 5%
 
 ---
 
@@ -15,9 +18,9 @@ Risorse Adobe Experience Manager (AEM) utilizza:
 * Un proxy per distribuire il carico di alcune attività di elaborazione. Un proxy è un&#39;istanza di AEM che comunica con un proxy worker per eseguire un&#39;attività specifica, e altre istanze di AEM per fornire i risultati.
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
 
-Questi possono coprire una vasta gamma di compiti; ad esempio, l&#39;utilizzo di Adobe InDesign Server per elaborare i file.
+Questi possono coprire un&#39;ampia gamma di compiti; ad esempio, l&#39;utilizzo di Adobe InDesign Server per elaborare i file.
 
-Per caricare completamente i file in AEM Assets creati con Adobe InDesign, viene utilizzato un proxy. Questo utilizza un lavoratore proxy per comunicare con Adobe InDesign Server, dove [gli script](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) vengono eseguiti per estrarre i metadati e generare diverse rappresentazioni per Risorse AEM. Il lavoratore proxy abilita la comunicazione bidirezionale tra InDesign Server e le istanze AEM in una configurazione cloud.
+Per caricare completamente i file in Risorse AEM che avete creato con Adobe InDesign, viene utilizzato un proxy. Questo utilizza un lavoratore proxy per comunicare con Adobe InDesign Server, dove [gli script](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) vengono eseguiti per estrarre i metadati e generare diverse rappresentazioni per Risorse AEM. Il lavoratore proxy abilita la comunicazione bidirezionale tra InDesign Server e le istanze AEM in una configurazione cloud.
 
 >[!NOTE]
 >
@@ -58,7 +61,7 @@ Il server InDesign può essere integrato con Risorse AEM in modo che i file crea
    >
    >IDML è un formato basato su XML che esegue il rendering di *tutto* il contenuto del file InDesign. Viene memorizzato come pacchetto compresso utilizzando la compressione [Zip](https://www.techterms.com/definition/zip) .
    >
-   >Per ulteriori informazioni, consultate [Adobe InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8) .
+   >Per ulteriori informazioni, consultate [Adobe InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) .
 
    >[!CAUTION]
    >
@@ -136,9 +139,9 @@ Argomenti di estrazione dei supporti e percorsi di script
 >
 >Non modificare la libreria ExtendScript. La libreria fornisce la funzionalità HTTP necessaria per comunicare con Sling. Questa impostazione specifica la libreria da inviare ad Adobe InDesign Server per l&#39;utilizzo in tale ambiente.
 
-Lo `ThumbnailExport.jsx` script eseguito dal passaggio del flusso di lavoro Estrazione file multimediali genera una rappresentazione in miniatura in formato .jpg. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature processo per generare le rappresentazioni statiche richieste da AEM.
+Lo `ThumbnailExport.jsx` script eseguito dal passaggio del flusso di lavoro Estrazione file multimediali genera una rappresentazione in miniatura in formato .jpg. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da AEM.
 
-Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicurati di non rimuovere i valori predefiniti, perché sono richiesti dall’interfaccia utente di Risorse AEM. Infine, il passaggio del flusso di lavoro Elimina anteprima immagine rimuove la rappresentazione in miniatura .jpg, in quanto non è più necessaria.
+Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicurati di non rimuovere i valori predefiniti, perché sono richiesti dall’interfaccia utente di Risorse AEM. Infine, il passaggio del flusso di lavoro Elimina rappresentazione anteprima immagine rimuove la rappresentazione in miniatura .jpg, in quanto non è più necessaria.
 
 #### Estrazione pagina {#page-extraction}
 
@@ -158,7 +161,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 * **Modello** pagina: Modello da utilizzare per la generazione della pagina risultante.
 
-* **Progettazione** pagina: Struttura della pagina da utilizzare per generare la pagina risultante.
+* **Progettazione** pagina: Struttura della pagina da utilizzare per la generazione della pagina risultante.
 
 ### Configurazione del Proxy Worker per InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -178,7 +181,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 1. Fate clic su **[!UICONTROL OK]** per salvare. 
 
-### Configurazione di Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
+### Configurazione di Day CQ Link Externalizer  {#configuring-day-cq-link-externalizer}
 
 Se il server InDesign e AEM vengono eseguiti su host diversi o entrambe le applicazioni non vengono eseguite sulle porte predefinite, configurate **Day CQ Link Externalizer** per impostare il nome host, la porta e il percorso del contenuto per il server InDesign.
 
@@ -220,27 +223,30 @@ Per configurare il numero di processi IDS paralleli:
 
    >[!NOTE]
    >
-   >È possibile scegliere di abilitare l&#39;inserimento in blacklist dei lavoratori IDS quando si lavora con un pool di lavoratori.
+   >Quando si lavora con un pool di lavoratori, è possibile abilitare l&#39;elenco bloccato di lavoratori IDS.
    >
    >A tale scopo, abilitare la casella di controllo &quot;enable.try.name&quot; nella `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione, che consente di recuperare i processi IDS.
    >
-   >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il parametro max.errors.to.blacklist che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi
+   >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi
    >
-   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera
+   >Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoratore IDS viene riconvalidato. Se il lavoratore viene trovato in linea, viene rimosso dall&#39;elenco bloccato.
+
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
 
 ## Supporto per Adobe InDesign Server 10.0 o versione successiva {#enabling-support-for-indesign-server-or-higher}
 
 Per InDesign Server 10.0 o versione successiva, eseguite i seguenti passaggi per abilitare il supporto per più sessioni.
 
-1. Apri Configuration Manager dall’istanza di Risorse AEM `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Aprire Gestione configurazione dall’ [!DNL Assets] istanza `https://[aem_server]:[port]/system/console/configMgr`.
 1. Modificate la configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
-1. Selezionate l’opzione **[!UICONTROL ids.cc.enable]** e fate clic su **[!UICONTROL Salva]**.
+1. Selezionate **[!UICONTROL ids.cc.enable]** e fate clic su **[!UICONTROL Salva]**.
 
 >[!NOTE]
 >
->Per l’integrazione di InDesign Server con Risorse AEM, utilizzate un processore multi-core perché la funzione di supporto della sessione necessaria per l’integrazione non è supportata nei sistemi single core.
+>Per [!DNL InDesign Server] l&#39;integrazione con [!DNL Assets], utilizzate un processore multi-core perché la funzione di supporto delle sessioni necessaria per l&#39;integrazione non è supportata nei sistemi single core.
 
-## Configurare le credenziali AEM {#configure-aem-credentials}
+## Configurare le credenziali Experience Manager {#configure-aem-credentials}
 
 Potete modificare le credenziali di amministratore predefinite (nome utente e password) per accedere al server InDesign dall’istanza AEM senza interrompere l’integrazione con Adobe InDesign Server.
 
