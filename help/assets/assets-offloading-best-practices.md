@@ -1,12 +1,12 @@
 ---
 title: Tecniche consigliate per l'offload di risorse
 description: Casi d’uso e procedure ottimali consigliati per scaricare i flussi di lavoro di assimilazione e replica delle risorse in AEM Assets.
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
 
 La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Risorse Adobe Experience Manager (AEM) possono richiedere notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’assimilazione delle risorse possono influire sulle prestazioni complessive del sistema. Le operazioni che richiedono più risorse includono flussi di lavoro di assimilazione e replica delle risorse AEM. L’uso intensivo di questi flussi di lavoro su un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
 
-L&#39;offload di queste attività alle istanze di lavoro dedicate può ridurre le spese di CPU, memoria e IO. In generale, l&#39;idea dietro lo scaricamento è quella di distribuire le attività che richiedono risorse CPU/Memoria/IO intensive a istanze di lavoro dedicate. Le sezioni seguenti includono casi di utilizzo consigliati per lo scaricamento delle risorse.
+L&#39;offload di queste attività alle istanze di lavoro dedicate può ridurre le spese di CPU, memoria e IO. In generale, l&#39;idea dietro lo scaricamento è quella di distribuire le attività che richiedono risorse CPU/Memoria/IO intensive a istanze di lavoro dedicate. Le sezioni seguenti includono i casi di utilizzo consigliati per lo scaricamento delle risorse.
 
 ## Offload di AEM Assets {#aem-assets-offloading}
 
@@ -33,11 +33,11 @@ Il diagramma seguente illustra i componenti principali del processo di scarico d
 
 ### DAM Update Asset Offloading workflow {#dam-update-asset-offloading-workflow}
 
-Il flusso di lavoro di offload di risorse di aggiornamento DAM viene eseguito sul master (autore) in cui l&#39;utente carica le risorse. Questo flusso di lavoro viene attivato da un normale avvio del flusso di lavoro. Invece di elaborare la risorsa caricata, questo flusso di lavoro di scaricamento crea un nuovo processo, utilizzando l’argomento *com/adobe/granite/workflow/offload*. Il flusso di lavoro di scaricamento aggiunge il nome del flusso di lavoro di destinazione, ovvero il flusso di lavoro Aggiorna risorsa DAM in questo caso, e il percorso della risorsa al payload del processo. Dopo aver creato il processo di scaricamento, il flusso di lavoro di scarico sul master attende l’esecuzione del processo di scaricamento.
+Il flusso di lavoro di offload di risorse di aggiornamento DAM viene eseguito sul server principale (autore) in cui l&#39;utente carica le risorse. Questo flusso di lavoro viene attivato da un normale avvio del flusso di lavoro. Invece di elaborare la risorsa caricata, questo flusso di lavoro di scaricamento crea un nuovo processo, utilizzando l’argomento *com/adobe/granite/workflow/offload*. Il flusso di lavoro di scaricamento aggiunge il nome del flusso di lavoro di destinazione, ovvero il flusso di lavoro Aggiorna risorsa DAM in questo caso, e il percorso della risorsa al payload del processo. Dopo aver creato il processo di scaricamento, il flusso di lavoro di scarico nell’istanza principale attende l’esecuzione del processo di scaricamento.
 
 ### Job manager {#job-manager}
 
-Il manager del processo distribuisce nuovi processi alle istanze del lavoratore. Nella progettazione del meccanismo di distribuzione è importante tenere conto dell&#39;abilitazione degli argomenti. I processi possono essere assegnati solo alle istanze in cui è attivato l’argomento del processo. Disattivate l’argomento *com/adobe/granite/workflow/offload* sul master e attivatelo sul lavoratore per assicurarvi che il processo sia assegnato al lavoratore.
+Il manager del processo distribuisce nuovi processi alle istanze del lavoratore. Nella progettazione del meccanismo di distribuzione, è importante tenere conto dell&#39;abilitazione degli argomenti. I processi possono essere assegnati solo alle istanze in cui è attivato l’argomento del processo. Disattivate l&#39;argomento `com/adobe/granite/workflow/offloading` principale e attivatelo sul lavoratore per assicurarvi che il processo sia assegnato al lavoratore.
 
 ### Scaricamento di AEM {#aem-offloading}
 
@@ -49,7 +49,7 @@ Una volta scritto un processo sul lavoratore, il manager del lavoro chiama il co
 
 ## Topologia Sling {#sling-topology}
 
-La topologia Sling raggruppa le istanze di AEM e consente loro di essere reciprocamente consapevoli, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling consente di creare topologie per scenari non cluster, cluster e misti. Un&#39;istanza può esporre le proprietà all&#39;intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche nella topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
+La topologia Sling raggruppa le istanze di AEM e consente loro di essere reciprocamente consapevoli, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling consente di creare topologie per scenari non raggruppati, raggruppati e misti. Un&#39;istanza può esporre le proprietà all&#39;intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche nella topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
 
 ### Sling dei processi distribuiti {#sling-distributed-jobs}
 
@@ -100,20 +100,23 @@ Adobe consiglia di disattivare la gestione automatica dell&#39;agente perché no
 
 1. Aprite Configuration Manager dall&#39;URL `http://localhost:4502/system/console/configMgr`.
 1. Aprite la configurazione per `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
-1. Disattivate la gestione automatica degli agenti.
+1. Disattivate la gestione automatica dell&#39;agente.
 
 ### Utilizzo della replica in avanti {#using-forward-replication}
 
-Per impostazione predefinita, lo scarico del trasporto utilizza la replica inversa per il pulling delle risorse scaricate dal lavoro al master. Gli agenti di replica inversa non supportano la replica senza binario. È necessario configurare lo scaricamento per utilizzare la replica in avanti per rimandare le risorse scaricate dal lavoro al master.
+Per impostazione predefinita, lo scarico del trasporto utilizza la replica inversa per il pulling delle risorse scaricate dal lavoro al principale. Gli agenti di replica inversa non supportano la replica senza binario. È necessario configurare lo scaricamento per utilizzare la replica in avanti per rimandare le risorse scaricate dal lavoro al principale.
 
-1. Se state eseguendo la migrazione dalla configurazione predefinita utilizzando la replica inversa, disattivate o eliminate tutti gli agenti denominati &quot; `offloading_outbox`&quot; e &quot; `offloading_reverse_*`&quot; sul master e sul lavoro, dove &amp;ast; rappresenta l’ID Sling dell’istanza di destinazione.
-1. Per ciascun lavoratore, creare un nuovo agente di replica in avanti che indichi il master. La procedura è identica alla creazione di agenti in avanti da master a lavoratore. Per istruzioni su come impostare gli agenti di replica [per lo scaricamento](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) , vedere Creazione di agenti di replica per lo scarico.
+1. Se state eseguendo la migrazione dalla configurazione predefinita utilizzando la replica inversa, disattivate o eliminate tutti gli agenti denominati &quot; `offloading_outbox`&quot; e &quot; `offloading_reverse_*`&quot; sul primario e sul lavoratore, dove &amp;ast; rappresenta l’ID Sling dell’istanza di destinazione.
+1. Per ciascun lavoratore, creare un nuovo agente di replica in avanti che indichi il principale. La procedura è identica alla creazione di agenti in avanti da primario a lavoratore. Per istruzioni su come impostare gli agenti di replica [per lo scaricamento](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) , vedere Creazione di agenti di replica per lo scaricamento.
 1. Apri la configurazione per `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Modificare il valore della proprietà `default.transport.agent-to-master.prefix` da `offloading_reverse` a `offloading`.
 
-### Utilizzo dell&#39;archivio dati condiviso e della replica binaria-less tra autori e lavoratori {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
 
-È consigliabile utilizzare la replica binaria-less per ridurre il sovraccarico di trasporto per lo scarico delle risorse. Per informazioni su come configurare la replica senza binario per un archivio dati condiviso, consulta [Configurazione di store di nodi e di archivi dati in AEM](/help/sites-deploying/data-store-config.md). La procedura non è diversa per lo scaricamento delle risorse, ma riguarda altri agenti di replica. Poiché la replica senza binario funziona solo con gli agenti di replica in avanti, è consigliabile utilizzare anche la replica in avanti per tutti gli agenti di offload.
+### Utilizzo dell&#39;archivio dati condiviso e della replica binaria-less tra autori e lavoratori  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+
+Si consiglia di utilizzare la replica binaria-less per ridurre il sovraccarico di trasporto per lo scarico delle risorse. Per informazioni su come configurare la replica senza binario per un archivio dati condiviso, consulta [Configurazione di store di nodi e di archivi dati in AEM](/help/sites-deploying/data-store-config.md). La procedura non è diversa per lo scaricamento delle risorse, ma riguarda altri agenti di replica. Poiché la replica senza binario funziona solo con gli agenti di replica in avanti, è consigliabile utilizzare anche la replica in avanti per tutti gli agenti di offload.
 
 ### Disattivazione dei pacchetti di trasporto {#turning-off-transport-packages}
 
@@ -131,7 +134,7 @@ Se il modello di flusso di lavoro è disabilitato dal payload del processo, acce
 Per disattivare il trasporto del modello di workflow, modificate il flusso di lavoro DAM Update Asset Offload.
 
 1. Aprite la console del flusso di lavoro da [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
-1. Aprire la scheda Modelli.
+1. Aprite la scheda Modelli.
 1. Aprite il modello di flusso di lavoro DAM Update Asset Offload.
 1. Aprire le proprietà del passaggio per il passaggio di offload del flusso di lavoro DAM.
 1. Aprire la scheda Argomenti e deselezionare le opzioni Aggiungi modello a input e Aggiungi modello a output.
@@ -139,11 +142,11 @@ Per disattivare il trasporto del modello di workflow, modificate il flusso di la
 
 ### Ottimizzazione dell’intervallo di polling {#optimizing-the-polling-interval}
 
-Lo scaricamento del flusso di lavoro è implementato utilizzando un flusso di lavoro esterno sul master, che esegue il polling per il completamento del flusso di lavoro scaricato sul lavoratore. L’intervallo di polling predefinito per i processi del flusso di lavoro esterno è di cinque secondi. Adobe consiglia di aumentare l’intervallo di polling del passaggio di scaricamento delle risorse ad almeno 15 secondi per ridurre il sovraccarico di scarico sul master.
+Lo scaricamento del flusso di lavoro è implementato utilizzando un flusso di lavoro esterno sul flusso di lavoro principale, che esegue il polling per il completamento del flusso di lavoro scaricato sul lavoratore. L’intervallo di polling predefinito per i processi del flusso di lavoro esterno è di cinque secondi. Adobe consiglia di aumentare l’intervallo di polling del passaggio di scaricamento delle risorse ad almeno 15 secondi per ridurre il sovraccarico di scaricamento sul principale.
 
 1. Aprite la console del flusso di lavoro da [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
-1. Aprire la scheda Modelli.
+1. Aprite la scheda Modelli.
 1. Aprite il modello di flusso di lavoro DAM Update Asset Offload.
 1. Aprire le proprietà del passaggio per il passaggio di offload del flusso di lavoro DAM.
 1. Aprite la scheda Commons e regolate il valore della proprietà Period.
