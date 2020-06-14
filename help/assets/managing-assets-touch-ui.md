@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
+source-wordcount: '9812'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
 
    * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, dal menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia. La finestra di dialogo per rinominare il file non viene visualizzata.
+
    ![create_menu](assets/create_menu.png)
 
    Per selezionare più file, premete il tasto Ctrl/Comando e selezionate le risorse nella finestra di dialogo del selettore file. Da un iPad, potete selezionare un solo file alla volta.
@@ -116,6 +117,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
    Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
    * il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    Inoltre, l’interfaccia Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta in tutte le viste (vista **[!UICONTROL a]** schede, vista **** Elenco e vista **** Colonna).
 
    Spesso, durante il caricamento simultaneo di risorse grandi o più risorse, gli indicatori visivi consentono di valutare l’avanzamento. Nella finestra di dialogo **[!UICONTROL Stato]** caricamento vengono visualizzati il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
@@ -192,7 +194,7 @@ Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento sp
 
 Quando caricate dei file immagine, inclusi i file AI, EPS e PSD, potete effettuare le seguenti operazioni di modifica nella finestra di dialogo Opzioni **[!UICONTROL processo di]** caricamento:
 
-* Ritagliare lo spazio bianco dal bordo delle immagini (vedere la descrizione nella tabella precedente).
+* Ritagliare gli spazi bianchi dal bordo delle immagini (vedere la descrizione nella tabella precedente).
 * Ritagliare manualmente dai lati delle immagini (vedere la descrizione nella tabella precedente).
 * Scegliete un profilo colore (consultate la descrizione dell’opzione nella tabella precedente).
 * Create una maschera da un tracciato di ritaglio.
@@ -379,6 +381,7 @@ Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura pe
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata.
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa.
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente.
+
    Per ulteriori dettagli, consulta [Informazioni approfondite](touch-ui-asset-insights.md)sulle risorse.
 
 1. Toccate **[!UICONTROL Salva e chiudi]**.
@@ -432,6 +435,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    * Dopo averlo spostato, specificate il nome della risorsa. Quindi toccate **[!UICONTROL Avanti]** per proseguire.
    * Toccate **[!UICONTROL Annulla]** per interrompere il processo.
+
    >[!NOTE]
    >
    >Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
@@ -456,6 +460,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Nella colonna **[!UICONTROL Regola]** , selezionate o deselezionate i riferimenti alle risorse.
    * Toccate **[!UICONTROL Indietro]** per tornare alla pagina **[!UICONTROL Seleziona destinazione]** .
    * Toccate **[!UICONTROL Annulla]** per interrompere l’operazione di spostamento.
+
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
@@ -535,6 +540,7 @@ Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di e
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **[!UICONTROL Una o più risorse dispongono di riferimenti]**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa.
@@ -667,6 +673,7 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. Per info
    * Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate l&#39;opzione **[!UICONTROL Modifica]** che viene visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, toccate l’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, toccate **[!UICONTROL Ritaglia]**.
@@ -738,6 +745,7 @@ Potete inoltre aggiungere annotazioni a una raccolta. Tuttavia, se una raccolta 
 
    * [Azioni rapide](managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
