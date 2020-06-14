@@ -3,7 +3,10 @@ title: Elabora risorse tramite gestori e flussi di lavoro di contenuti multimedi
 description: Scopri i diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2ab97e4bfb9eca32d343d22d6570dd21885db69
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 5%
 
 ---
 
@@ -27,16 +30,16 @@ I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestisc
 | Nome gestore | Nome servizio (nella console di sistema) | Tipi MIME supportati |
 |---|---|---|
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
-| [!UICONTROL PdfHandler] | com.day.cq.da.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
+| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.da.handler.standard.mp3.Mp3Handler | audio/mpeg |
-| [!UICONTROL ZipHandler] | com.day.cq.da.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
-| [!UICONTROL PictHandler] | com.day.cq.da.handler.standard.pict.PictHandler | immagine/immagine |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
+| [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
+| [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
-| [!UICONTROL MSOfficeHandler] | com.day.cq.da.handler.standard.msoffice.MSOfficeHandler | application/msword |
-| [!UICONTROL MSPwerPointHandler] | com.day.cq.da.handler.standard.msoffice.MSPwerPointHandler | application/vnd.ms-powerpoint |
-| [!UICONTROL OpenOfficeHandler] | com.day.cq.da.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | com.day.cq.da.handler.standard.epub.EPubHandler | application/epub+zip |
+| [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
+| [!UICONTROL MSPwerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
+| [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
+| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback nel caso in cui non sia stato trovato nessun altro gestore per estrarre dati da una risorsa |
 
 Tutti i gestori eseguono le seguenti operazioni:
@@ -44,11 +47,11 @@ Tutti i gestori eseguono le seguenti operazioni:
 * estrazione di tutti i metadati disponibili dalla risorsa.
 * creazione di una miniatura della risorsa.
 
-È possibile visualizzare i gestori di supporti attivi:
+È possibile visualizzare i gestori di contenuti multimediali attivi:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. Fate clic sul collegamento `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
-1. Viene visualizzato un elenco con tutti i gestori di supporti attivi. Ad esempio:
+1. Viene visualizzato un elenco con tutti i gestori di contenuti multimediali attivi. Ad esempio:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
@@ -58,7 +61,7 @@ I gestori di file multimediali sono servizi solitamente utilizzati in combinazio
 
 In AEM sono disponibili alcuni flussi di lavoro predefiniti per l’elaborazione delle risorse. Per visualizzarli, aprite la console Flusso di lavoro e fate clic sulla scheda **[!UICONTROL Modelli]** : i titoli dei flussi di lavoro che iniziano con Risorse AEM sono le risorse specifiche.
 
-È possibile estendere i flussi di lavoro esistenti e crearne di nuovi per elaborare le risorse in base a requisiti specifici.
+I flussi di lavoro esistenti possono essere estesi e possono essere creati nuovi per elaborare le risorse in base a requisiti specifici.
 
 L’esempio seguente mostra come migliorare il flusso di lavoro di **[!UICONTROL Sincronizzazione AEM Assets]** in modo che vengano generate le risorse secondarie di tutte le risorse, eccetto i documenti PDF.
 
@@ -69,9 +72,9 @@ I gestori di contenuti multimediali possono essere disabilitati o abilitati tram
 Per attivare/disattivare un gestore di supporti:
 
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Ad esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Fate clic su **[!UICONTROL Disattiva]** accanto al nome del gestore multimediale. Esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Aggiorna la pagina: accanto al gestore multimediale viene visualizzata un&#39;icona che indica che è disattivato.
-1. Per abilitare il gestore di supporti, fare clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
+1. Per abilitare il gestore di file multimediali, fate clic su **[!UICONTROL Abilita]** accanto al nome del gestore.
 
 ### Creazione di un nuovo gestore multimediale {#creating-a-new-media-handler}
 
@@ -89,13 +92,13 @@ Implementate i seguenti metodi:
 * `getThumbnailImage()`: crea una miniatura della risorsa passata.
 * `getMimeTypes()`: restituisce i tipi MIME della risorsa.
 
-Esempio di modello:
+Di seguito è riportato un modello di esempio:
 
 `package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts } `
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. Per aggiungere un nuovo tipo mime è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. L&#39;aggiunta di un nuovo tipo mime richiede l&#39;implementazione di questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni, oltre a quelle generiche per l’estrazione di risorse secondarie.
@@ -108,15 +111,15 @@ L&#39;interfaccia e le classi includono:
 * `getThumbnailImage()`: questo metodo crea una miniatura della risorsa passata.
 * `getMimeTypes()`: questo metodo restituisce i tipi di mime della risorsa.
 
-Esempio di modello:
+Di seguito è riportato un modello di esempio:
 
 package my.own.things; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ classe pubblica MyMediaHandler estende com.day.cq.dam.core.AbstractAssetHandler { // implementa le parti pertinenti }
 
 L&#39;interfaccia e le classi includono:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. Per aggiungere un nuovo tipo mime è necessario implementare questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaccia: Questa interfaccia descrive il servizio che aggiunge il supporto per tipi mime specifici. L&#39;aggiunta di un nuovo tipo mime richiede l&#39;implementazione di questa interfaccia. L&#39;interfaccia contiene metodi per importare ed esportare i documenti specifici, per creare miniature ed estrarre metadati.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni utilizzate.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class: Questa classe funge da base per tutte le altre implementazioni dei gestori di risorse e fornisce funzionalità comuni più comuni per l’estrazione di risorse secondarie.
 
 #### Esempio: creazione di un gestore di testo specifico {#example-create-a-specific-text-handler}
 
@@ -400,8 +403,8 @@ Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AE
      * * @return the number of words in the string
      * */ 
     private long wordCount(String text) { 
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count 
-     // The starting of the document is always a whitespace 
+     // We need to keep track of the last character, if we have two whitespace in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true; 
      boolean currentWhiteSpace = true; 
      char c; long numwords = 0; 
@@ -414,7 +417,7 @@ Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AE
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; } 
       prevWhiteSpace = currentWhiteSpace; 
      } 
-     // If we do not end with a white space then we need to add one extra word 
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; } 
      return numwords; 
     } 
@@ -450,7 +453,7 @@ Il `CommandLineProcess` processo esegue le seguenti operazioni nell&#39;ordine i
 * Filtra il file in base a tipi mime specifici, se specificati.
 * Crea una directory temporanea sul disco in cui risiede il server AEM.
 * Invia il file originale alla directory temporanea.
-* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito nella directory temporanea con le autorizzazioni dell’utente che esegue AEM.
+* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito all’interno della directory temporanea con le autorizzazioni dell’utente che esegue AEM.
 * Invia di nuovo il risultato nella cartella di rappresentazione del server AEM.
 * Elimina la directory temporanea.
 * Crea le miniature in base a tali rappresentazioni, se specificate. Il numero e le dimensioni delle miniature sono definiti dagli argomenti del passaggio.
@@ -469,7 +472,7 @@ A questo scopo, utilizzare ImageMagick. Installate ImageMagick sul disco che osp
 
    >[!NOTE]
    >
-   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Ad esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In alcune versioni di Windows (ad esempio, Windows SE), il comando convert potrebbe non essere eseguito in quanto è in conflitto con l&#39;utilità di conversione nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick utilizzata per convertire i file immagine in miniature. Esempio, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. Per verificare se lo strumento viene eseguito correttamente, aggiungete un&#39;immagine JPG alla directory di lavoro ed eseguite il comando `convert <image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando.
 
@@ -485,7 +488,7 @@ Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICO
 
 1. Salvare il flusso di lavoro.
 
-Per verificare il flusso di lavoro modificato, aggiungete una risorsa a `/content/dam`.
+Per testare il flusso di lavoro modificato, aggiungete una risorsa a `/content/dam`.
 
 1. Nel file system, ottenere un&#39;immagine TIFF di vostra scelta. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
 1. Passate alla console **[!UICONTROL CQ5 DAM]** , ad esempio `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
