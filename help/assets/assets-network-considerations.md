@@ -3,7 +3,10 @@ title: Considerazioni sulla rete delle risorse
 description: Considerazioni sulla rete durante la progettazione di una distribuzione di Risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ La comprensione della rete è importante quanto la comprensione delle risorse Ad
 
 Assicurati di includere quanto segue nel diagramma della rete:
 
-* Connettività dal dispositivo client (ad esempio, computer, mobile e tablet) alla rete
+* Connettività dal dispositivo client (ad esempio, computer, dispositivi mobili e tablet) alla rete
 * Topologia della rete aziendale
 * Connessione a Internet dalla rete aziendale e dall’ambiente AEM
 * Topologia dell’ambiente AEM
@@ -25,7 +28,7 @@ Assicurati di includere quanto segue nel diagramma della rete:
 
 Iniziate a creare un diagramma della connettività tra i singoli dispositivi client e la rete aziendale. In questa fase, identificate le risorse condivise, come le connessioni WiFi, in cui più utenti accedono allo stesso punto o switch Ethernet per caricare e scaricare le risorse.
 
-![chlimage_1-353](assets/chlimage_1-353.png)
+![chlimage_1-355](assets/chlimage_1-353.png)
 
 I dispositivi client si connettono alla rete aziendale in vari modi, ad esempio WiFi condiviso, Ethernet a uno switch condiviso e VPN. L’identificazione e la comprensione dei punti di collegamento in questa rete è importante per la pianificazione delle risorse e per modificare la rete.
 
@@ -39,7 +42,7 @@ Il computer visualizzato a destra ha un limite a monte della rete aziendale su u
 
 ## Topologia della rete aziendale {#topology-of-the-corporate-network}
 
-![chlimage_1-354](assets/chlimage_1-354.png)
+![chlimage_1-356](assets/chlimage_1-354.png)
 
 Il diagramma mostra velocità di uplink superiori all&#39;interno della rete aziendale rispetto a quelle generalmente utilizzate. Questi tubi sono risorse condivise. Se si prevede che lo switch condiviso gestisca 50 client, potrebbe essere un punto critico. Nel diagramma iniziale, solo due computer condividono la connessione specifica.
 
@@ -55,13 +58,13 @@ I firewall e i proxy Enterprise possono inoltre modellare la larghezza di banda 
 
 In questo esempio, l&#39;azienda dispone di un collegamento di sollevamento a 10 Gbps. Dovrebbe essere sufficientemente grande per diversi clienti. Inoltre, il firewall impone un limite di velocità host di 10 Mbps. Questa limitazione può limitare il traffico a un singolo host a 10 Mbps, anche se il collegamento a Internet è a 10 Gbps.
 
-Questo è il più piccolo nodo orientato al client. Tuttavia, è possibile valutare la possibilità di apportare modifiche o inserire in una whitelist il gruppo di operazioni di rete responsabile di questo firewall.
+Questo è il più piccolo nodo orientato al client. Tuttavia, è possibile valutare la presenza di una modifica o di un elenco consentito utilizzando il gruppo di operazioni di rete responsabile di questo firewall.
 
 Dai diagrammi di esempio, potete concludere che sei dispositivi condividono un canale concettuale a 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, ciò potrebbe risultare inadeguato per soddisfare le aspettative degli utenti.
 
 ## Topologia dell’ambiente AEM {#topology-of-the-aem-environment}
 
-![chlimage_1-356](assets/chlimage_1-356.png)
+![chlimage_1-354](assets/chlimage_1-356.png)
 
 La progettazione della topologia dell’ambiente AEM richiede una conoscenza dettagliata della configurazione del sistema e della modalità di connessione della rete all’interno dell’ambiente dell’utente.
 
@@ -85,7 +88,7 @@ Quando si valuta la topologia interna del flusso di lavoro, è necessario analiz
 * Flussi di lavoro/eventi che si attivano quando la risorsa/i metadati vengono modificati
 * Procedure per la lettura di una risorsa
 
-Alcuni elementi da considerare:
+Di seguito sono riportati alcuni elementi da considerare:
 
 * Metadati XMP letti/scritti
 * Attivazione e replica automatica
@@ -93,7 +96,7 @@ Alcuni elementi da considerare:
 * Caricamento di risorse secondarie/estrazione di pagina
 * Flussi di lavoro sovrapposti.
 
-Esempio di cliente per la definizione di un flusso di lavoro risorse.
+Esempio di cliente per la definizione di un flusso di lavoro di risorse.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
