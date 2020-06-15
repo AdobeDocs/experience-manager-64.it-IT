@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +83,7 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 * **Motore di destinazione:** [AEM](/help/sites-authoring/personalization.md#aem) oppure [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) come motore per il contenuto di destinazione.
 
 * **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
-* **** Tipo di attività: Tipo di attività: test A/B o targeting delle esperienze
+* **Tipo di attività:** Tipo di attività: test A/B o targeting delle esperienze
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
 * **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
@@ -143,7 +146,7 @@ Per aggiungere un’attività:
 
 >[!NOTE]
 >
->Quando si annulla la pubblicazione di un&#39;attività,
+>Quando si annulla la pubblicazione di un&#39;attività, lo stato dell&#39;attività cambia solo se si aggiorna la pagina.
 
 Per pubblicare o annullare la pubblicazione di attività:
 
