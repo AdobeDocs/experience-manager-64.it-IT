@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Questa è una panoramica più dettagliata dell&#39;interazione client-server dur
 
 1. Il modello di pagina aggiornato viene restituito all’editor.
 
-1. L’editor pagina aggiorna il riferimento del modello di pagina dell’API.
+1. L’editor pagina aggiorna il riferimento del modello di pagina dell’area di protezione.
 
 1. L’area SPA aggiorna i suoi componenti in base al nuovo riferimento al modello di pagina.
 
@@ -194,8 +194,8 @@ Per consentire all’autore di utilizzare l’editor pagina per modificare il co
 
 L’SDK per l’editor SPA supporta le seguenti versioni minime:
 
-* Reazione 16.3
-* Angular 6.x
+* 16.x e versioni successive
+* Angular 6.x e superiore
 
 Le versioni precedenti di questi framework potrebbero funzionare con l’SDK AEM SPA Editor, ma non sono supportate.
 
