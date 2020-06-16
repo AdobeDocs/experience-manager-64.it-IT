@@ -1,8 +1,8 @@
 ---
 title: ASRP - Fornitore di risorse di storage Adobe
 seo-title: ASRP - Fornitore di risorse di storage Adobe
-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
 translation-type: tm+mt
-source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 ## Informazioni su ASRP {#about-asrp}
 
-Quando AEM Communities è configurato per utilizzare ASRP come store comune, il contenuto generato dall&#39;utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
+Quando i AEM Communities sono configurati per utilizzare ASRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -27,7 +30,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 Per l’utilizzo di ASRP è necessaria una licenza aggiuntiva.
 
-Per configurare il sito AEM Communities per l&#39;utilizzo di ASRP per UGC, contatta il rappresentante commerciale di riferimento per:
+Per configurare il sito AEM Communities per l&#39;utilizzo di ASRP per UGC, contattate il rappresentante commerciale di riferimento per:
 
 * URL del centro dati (indirizzo dell’endpoint ASRP)
 * Chiave consumer
@@ -40,7 +43,7 @@ Le chiavi consumer e secret sono condivise tra tutte le suite di rapporti per un
 
 ### Seleziona ASRP {#select-asrp}
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 **Per autore**:
 
@@ -71,7 +74,7 @@ La console [Configurazione](srp-config.md) storage consente di selezionare la co
 
 Preparate le istanze di pubblicazione:
 
-* [Replica della chiave di crittografia](#replicate-the-crypto-key)
+* [Replicare la chiave di crittografia](#replicate-the-crypto-key)
 * [Replica della configurazione](#publishing-the-configuration)
 
 Dopo aver inviato la configurazione, verificare la connessione:
@@ -82,7 +85,7 @@ Dopo aver inviato la configurazione, verificare la connessione:
 
 ### Replicare la chiave Crypto {#replicate-the-crypto-key}
 
-La Chiave Consumatore e la Chiave Segreta sono crittografate. Affinché le chiavi siano crittografate/decrittografate correttamente, la chiave Granite Crypto principale deve essere la stessa in tutte le istanze di AEM.
+La Chiave Consumatore e la Chiave Segreta sono crittografate. Affinché le chiavi siano crittografate o decrittografate correttamente, la chiave di crittografia Granite principale deve essere la stessa in tutte le istanze di AEM.
 
 Seguite le istruzioni riportate in [Replica della chiave](deploy-communities.md#replicate-the-crypto-key)di crittografia.
 
@@ -94,7 +97,7 @@ Accertatevi di impostare i domini come URL che possono essere indirizzati dall�
 
 ### Sincronizzazione tempo {#time-synchronization}
 
-Affinché l&#39;autenticazione con l&#39;endpoint ASRP abbia esito positivo, i computer che eseguono le community AEM ospitate devono essere sincronizzati in base al tempo, ad esempio con il protocollo NTP ( [Network Time Protocol)](https://www.ntp.org/).
+Affinché l&#39;autenticazione con l&#39;endpoint ASRP abbia esito positivo, i computer che eseguono i AEM Communities ospitati devono essere sincronizzati in tempo, ad esempio con il protocollo NTP ( [Network Time Protocol)](https://www.ntp.org/).
 
 ### Pubblicazione della configurazione {#publishing-the-configuration}
 
