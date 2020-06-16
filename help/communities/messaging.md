@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Panoramica {#overview}
 
-La funzione di messaggistica di AEM Communities consente ai visitatori del sito che hanno effettuato l&#39;accesso (membri) di inviare messaggi a un altro utente che sono accessibili dopo l&#39;accesso al sito.
+La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta entrati nel sito.
 
 La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](sites-console.md)community.
 
@@ -29,7 +32,7 @@ Per ulteriori informazioni per gli sviluppatori, consulta [Messaging Essentials]
 
 ## Servizio Operazioni di messaggistica {#messaging-operations-service}
 
-Il servizio [Operazioni messaggistica di](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per memorizzare i messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
+Il servizio [Operazioni messaggistica](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica l&#39;endpoint che gestisce le richieste relative ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
 
 Per i siti della community creati tramite la console [Siti](sites-console.md)community esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/community/inbox`.
 
@@ -45,7 +48,7 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Whitelist]** Campi messaggio Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
+* **[!UICONTROL Elenco campi messaggio consentiti]** Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
 
 * **[!UICONTROL Limite]** dimensione casella messaggio Il numero massimo di byte nella finestra di messaggio di ogni utente. Il valore predefinito è *1073741824* (1 GB).
 
@@ -73,20 +76,20 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **[!UICONTROL maxTotalAttachmentSize.name]** Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlacklist.name]** Una blacklist di estensioni di file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in blacklist, l’estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;. Il valore predefinito è *PREDEFINITO*.
+* **[!UICONTROL attachmentTypeAllowlist.name]** Un blocco di estensioni di file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in elenco, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;. Il valore predefinito è *PREDEFINITO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
-   **(*Action Required*)** Una whitelist di estensioni di file, in opposizione alla blacklist. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
+   **(*Action Required*)** Un elenco di estensioni di file consentite, all&#39;opposto dell&#39;elenco di blocco. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
 
 * **[!UICONTROL serviceSelector.name]**(*Obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale viene richiamato il servizio (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi* di esecuzione della configurazione OSGi [ , `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)ad esempio `/bin/`, `/apps/`e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per la funzione `Message List and Compose Message components` (vedere Funzione [](configure-messaging.md)Messaggio). Il valore predefinito è */bin/messaging* .
 
-* **[!UICONTROL fieldWhitelist.name]** Usa whitelist **campi** messaggio.
+* **[!UICONTROL fieldAllowlist.name]** Use **Message Fields Allowlist**.
 
 >[!CAUTION]
 >
 >Ogni volta che una `Messaging Operations Service` configurazione viene aperta per la modifica, se `allowedAttachmentTypes.name` è stata rimossa, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona &quot;**-**&quot; per (di nuovo) rimuovere la singola voce vuota prima di fare clic su **[!UICONTROL Salva]**.
+>Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blocco, utilizzate l&#39;icona **-** per (di nuovo) rimuovere la singola voce vuota prima di fare clic su **[!UICONTROL Salva]**.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
