@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provider di risorse di storage MongoDB
 seo-title: MSRP - Provider di risorse di storage MongoDB
-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ## Informazioni su MSRP {#about-msrp}
 
-Quando AEM Communities è configurato per utilizzare MSRP come store comune, il contenuto generato dall&#39;utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione o la replica.
+Quando i AEM Communities sono configurati per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -39,7 +42,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Nessun servizio necessario
    * Scelta delle modalità di esecuzione:
       * Modalità indipendente
-      * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per ambienti di produzione)
+      * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per gli ambienti di produzione)
    * Scelta della ricerca multilingue (MLS)
       * [Installazione di MLS standard](solr.md#installing-standard-mls)
       * [Installazione di MLS avanzate](solr.md#installing-advanced-mls)
@@ -48,7 +51,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 ### Select MSRP {#select-msrp}
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
@@ -69,7 +72,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
    * **[!UICONTROL Raccolta UGC di mongoDB]**
 
-      *predefinito*:content
+      *predefinito*: content
 
    * **[!UICONTROL Raccolta allegati mongoDB]**
 
@@ -94,13 +97,13 @@ Lasciate vuoto se eseguite in modalità SolrCloud.\
 
 ### Set di replica MongoDB {#mongodb-replica-set}
 
-Per l&#39;ambiente di produzione, si consiglia vivamente di impostare un set di repliche, un cluster di server MongoDB che implementa la replica master-slave e il failover automatizzato.
+Per l&#39;ambiente di produzione, si consiglia vivamente di impostare un set di repliche, un cluster di server MongoDB che implementa la replica primaria secondaria e il failover automatizzato.
 
 Per ulteriori informazioni sui set di repliche, consultare la documentazione [Replica](https://docs.mongodb.org/manual/replication/) di MongoDB.
 
 Per utilizzare i set di repliche e definire le connessioni tra le applicazioni e le istanze MongoDB, consultare la documentazione relativa al formato [URI della stringa di](https://docs.mongodb.org/manual/reference/connection-string/) connessione di MongoDB.
 
-#### Url di esempio per la connessione a un set di replica {#example-url-for-connecting-to-a-replica-set}
+#### Url di esempio per la connessione a un set di replica  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -124,7 +127,7 @@ Per informazioni dettagliate sulla configurazione, consultate Configurazione [So
 
 Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, è necessario
 
-1. Eseguire l&#39; [aggiornamento ad AEM Communities](upgrade.md)
+1. Eseguire l&#39; [aggiornamento ai AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
    * Per MLS [standard](solr.md#installing-standard-mls)
    * Per MLS [avanzati](solr.md#installing-advanced-mls)
@@ -164,7 +167,7 @@ Durante la reindicizzazione, esiste un compromesso tra memoria e prestazioni con
 
 Un valore predefinito ragionevole è 5000:
 
-* Se la memoria è un problema, specificate un numero inferiore
+* Se la memoria è un problema, specificate un numero più piccolo
 * Se la velocità è un problema, specificate un numero maggiore per aumentare la velocità
 
 ### Esecuzione dello strumento di reindicizzazione MSRP tramite il comando cURL {#running-msrp-reindex-tool-using-curl-command}
@@ -221,13 +224,13 @@ Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configur
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
-Se esegui l’aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l’API [SRP](srp.md) dopo l’aggiornamento ad AEM Communities 6.3.
+Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a AEM Communities 6.3.
 
 È disponibile uno strumento open source su GitHub per questo scopo:
 
-* [Strumento di migrazione UGC di AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Strumento di migrazione UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare in AEM Communities 6.1 o versioni successive.
+Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare nei AEM Communities 6.1 o versioni successive.
 
 ### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
 
@@ -256,7 +259,7 @@ Se un tentativo di connessione protetta al server MongoDB non riesce a causa di 
 1. Copiare il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM
 1. Riavvia l’istanza AEM
 
-## Risorse {#resources}
+## Riferimenti {#resources}
 
 * [AEM con MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentazione MongoDB](https://docs.mongodb.org/)
