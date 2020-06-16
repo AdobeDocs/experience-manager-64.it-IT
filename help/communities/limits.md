@@ -1,6 +1,6 @@
 ---
-title: Limiti di contributo
-seo-title: Limiti di contributo
+title: Limiti Di Contributo
+seo-title: Limiti Di Contributo
 description: La funzione Limiti contributi consente di limitare i contributi per la protezione contro lo spam
 seo-description: La funzione Limiti contributi consente di limitare i contributi per la protezione contro lo spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
@@ -10,12 +10,15 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
 
-# Limiti di contributo {#member-contribution-limits}
+# Limiti Di Contributo {#member-contribution-limits}
 
 ## Panoramica {#overview}
 
@@ -27,7 +30,7 @@ I limiti dei contributi possono essere attivati singolarmente dalla console [](m
 
 Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in modo proattivo per un membro da un manager della community in qualsiasi momento, o rimossi in modo reattivo quando un membro invia un messaggio a un manager della community che effettua tale richiesta.
 
-## Configurazione dei limiti di contributo generato dagli utenti di AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configurazione Limiti Di Contributo Generati Dall’Utente AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Questa configurazione OSGi
 
@@ -50,7 +53,7 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Applica automaticamente limiti contributi UGC]**
 
-   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere attivato/disabilitato dalla console [](members.md)dei membri. I nuovi membri con un indirizzo e-mail da un dominio elencato in bianco non sono mai vincolati.
+   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere attivato/disabilitato dalla console [](members.md)dei membri. I nuovi membri con un indirizzo e-mail da un elenco consentito di domini non sono mai vincolati.
 
    Il valore predefinito è deselezionato.
 
@@ -68,11 +71,11 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Domini]**
 
-   Un elenco bianco di uno o più domini e-mail. Selezionate l’icona + per aggiungere altre voci.
+   Elenco dei domini e-mail consentiti. Selezionate l’icona + per aggiungere altre voci.
 
-   Gli utenti con indirizzi e-mail nei domini elencati in bianco non vengono interessati dall’applicazione automatica dei limiti dei contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail non `me@mycompany.com` viene mai imposto il divieto di pubblicazione.
+   Gli utenti con indirizzi e-mail nell’elenco di domini consentito non vengono interessati dall’applicazione automatica dei limiti dei contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail non `me@mycompany.com` viene mai imposto il divieto di pubblicazione.
 
-   Il valore predefinito è un elenco bianco vuoto.
+   Il valore predefinito è un elenco di permessi vuoto.
 
 * **[!UICONTROL Destinatari messaggistica]**
 
