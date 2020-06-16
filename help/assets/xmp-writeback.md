@@ -3,7 +3,7 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 4%
@@ -13,9 +13,9 @@ ht-degree: 4%
 
 # Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
-Questa funzione di Write-back XMP in Risorse Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
+Questa funzione di Write-back XMP in Risorse  Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
 
-Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in Crx-De.
+Quando modificate i metadati di una risorsa dall’interno dei AEM Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in Crx-De.
 
 La funzione Write-back XMP propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
 
@@ -23,11 +23,11 @@ Considerate uno scenario in cui modificate la proprietà [!UICONTROL Titolo] del
 
 ![metadati](assets/metadata.png)
 
-In questo caso, Risorse AEM salva le modifiche alla proprietà **[!UICONTROL Titolo]** nel `dc:title` parametro per i metadati delle risorse memorizzati nella gerarchia delle risorse.
+In questo caso, i AEM Assets salvano le modifiche alla proprietà **[!UICONTROL Titolo]** nel `dc:title` parametro per i metadati della risorsa memorizzati nella gerarchia delle risorse.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-Tuttavia, Risorse AEM non propaga automaticamente le modifiche ai metadati apportate alle rappresentazioni di una risorsa.
+Tuttavia, i AEM Assets non propagano automaticamente le modifiche apportate ai metadati alle rappresentazioni di una risorsa.
 
 La funzione Write-back XMP consente di estendere le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Tuttavia, le modifiche non vengono memorizzate sotto il nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora invece le modifiche apportate ai file binari per le rappresentazioni.
 
@@ -47,7 +47,7 @@ Per consentire alla funzione di WriteBack XMP di estendere le modifiche ai metad
 
 Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319.319.png, effettuate le seguenti operazioni.
 
-1. In Experience Manager, accedi a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. In  Experience Manager, accedi a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina [!UICONTROL Modelli] , aprite il modello di flusso di lavoro **[!UICONTROL DAM Metadata Writeback]** .
 1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
 1. Nella finestra di dialogo **[!UICONTROL Proprietà passaggio]**, tocca/fai clic sulla scheda **[!UICONTROL Processo]**.
@@ -56,7 +56,7 @@ Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319
    ![step_properties](assets/step_properties.png)
 
 1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-Le rappresentazioni PTIFF vengono create e memorizzate localmente solo in modalità Dynamic Media Hybrid. Salvare il flusso di lavoro.
+Le rappresentazioni PTIFF vengono create e memorizzate localmente solo in modalità ibrida Dynamic Media. Salvare il flusso di lavoro.
 
 Le modifiche ai metadati vengono propagate alle rappresentazioni `thumbnail.140.100.png` e `thumbnail.319.319.png` alla risorsa, non agli altri.
 
@@ -90,12 +90,12 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Apri Configuration Manager da `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box. Salva le modifiche.
+1. Per filtrare le proprietà XMP bloccate dopo l&#39;applicazione del filtro tramite l&#39;elenco consentito, specificate quelle nella casella Nomi XML **[!UICONTROL bloccati per il filtro]** XMP. Salva le modifiche.
 
    >[!NOTE]
    >
-   >L&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è attivato per impostazione predefinita. Per disattivare tale filtro, deselezionate l&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP.
+   >L&#39;opzione **[!UICONTROL Applica blocco alle proprietà]** XMP è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è attivato per impostazione predefinita. Per disattivare questo filtro, deselezionate l&#39;opzione **[!UICONTROL Applica blocco alle proprietà]** XMP.
