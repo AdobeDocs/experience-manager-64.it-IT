@@ -1,8 +1,8 @@
 ---
 title: Punteggio e distintivi delle community
 seo-title: Punteggio e distintivi delle community
-description: Il punteggio e i badge di AEM Communities consentono di identificare e premiare i membri della community
-seo-description: Il punteggio e i badge di AEM Communities consentono di identificare e premiare i membri della community
+description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
+seo-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2885'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
 
 ## Panoramica {#overview}
 
-La funzione punteggio e badge di AEM Communities consente di identificare e premiare i membri della community.
+La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
 
 I principali aspetti del punteggio e dei simboli sono:
 
@@ -45,7 +48,7 @@ Per impostazione predefinita, i simboli si trovano nella directory archivio in
 
 Se memorizzati in un percorso diverso, tutti dovrebbero essere accessibili in lettura.
 
-I distintivi sono differenziati in UGC se sono stati assegnati o sono stati guadagnati secondo le regole. Al momento, i simboli assegnati vengono visualizzati come testo e i simboli acquisiti vengono visualizzati come immagine.
+I distintivi sono differenziati in UGC se sono stati assegnati o sono stati guadagnati in base alle regole. Al momento, i simboli assegnati vengono visualizzati come testo e i simboli acquisiti vengono visualizzati come immagine.
 
 ### Interfaccia utente di gestione dei badge {#badge-management-ui}
 
@@ -170,7 +173,7 @@ Le regole di punteggio vengono ereditate ma non aggiunte. Ad esempio:
    * Solo la regola secondaria di rule2 influirà sul punteggio
    * I punteggi di entrambe le regole secondarie non vengono sommati
 
-Se esiste più di una regola di punteggio, i punteggi vengono mantenuti separatamente per ogni regola.
+Se è presente più di una regola di punteggio, i punteggi vengono mantenuti separatamente per ogni regola.
 
 Le regole di punteggio sono nodi di tipo `cq:Page` con proprietà sul relativo `jcr:content`nodo che specificano l&#39;elenco di regole secondarie che lo definiscono.
 
@@ -223,7 +226,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
      <li>deve essere presente almeno una proprietà verbo</li> 
      <li>il verbo deve essere inserito in tutto MAIUSCOLO</li> 
      <li>possono essere presenti più proprietà verbo, ma non sono presenti duplicati</li> 
-     <li>il valore è il punteggio da applicare per questo evento</li> 
+     <li>il valore è il punteggio da applicare per l'evento</li> 
      <li>il valore può essere positivo o negativo</li> 
      <li>un elenco di verbi supportati nella release si trova nella sezione <a href="#topics-and-verbs">Argomenti e verbi</a></li> 
     </ul> </td> 
@@ -307,7 +310,7 @@ Nella release sono incluse due regole di punteggio per la funzione [](functions.
 * `sub-rules` può essere condiviso tra diverse regole di punteggio
 * `rules`devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
 
-   * I nomi delle regole devono essere univoci indipendentemente dalla posizione
+   * I nomi delle regole devono essere univoci, indipendentemente dalla posizione
 
 ### Attivazione delle regole di punteggio personalizzate {#activating-custom-scoring-rules}
 
@@ -338,7 +341,7 @@ Le regole per il contrassegno consistono in una `thresholds`proprietà obbligato
 
 Le regole di Badging sono associate a regole di punteggio, che determinano come si accumulano i punti. Consultate la sezione intitolata [Applica regole al contenuto](#apply-rules-to-content).
 
-La `scoringRules`proprietà di una regola di contrassegno limita semplicemente le regole di punteggio che possono essere associate a tale regola di contrassegno.
+La `scoringRules`proprietà di una regola di contrassegno limita semplicemente le regole di punteggio che possono essere associate a quella regola di contrassegno specifica.
 
 >[!NOTE]
 >
@@ -361,7 +364,7 @@ La `scoringRules`proprietà di una regola di contrassegno limita semplicemente l
      <li>number = score</li> 
      <li>| = il carattere della linea verticale (U+007C)</li> 
      <li>percorso = percorso completo della risorsa immagine del contrassegno</li> 
-    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che tra il numero e il percorso non vengano visualizzati spazi bianchi.<br /><br /> Voce di esempio: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che tra il numero e il percorso non appaia alcuno spazio vuoto.<br /> Voce di esempio:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -389,7 +392,7 @@ Nella release sono incluse due regole di badging corrispondenti alle regole di p
 * `rules` i nodi sono di tipo cq:Page
 * `rules`devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
 
-   * I nomi delle regole devono essere univoci indipendentemente dalla posizione
+   * I nomi delle regole devono essere univoci, indipendentemente dalla posizione
 
 ### Attivazione delle regole di contrassegno personalizzate {#activating-custom-badging-rules}
 
@@ -407,17 +410,17 @@ cURL -i -X POST -H *header* -u *signin * -F *operation * -F *badge * *membro-pro
 intestazione personalizzata da trasmettere al server (richiesta)
 
 *signin* = administrator-id:password\
- ad esempio: admin:admin
+ad esempio: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OPPURE &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = posizione del file di immagine del contrassegno nell&#39;archivio\
- ad esempio: /etc/community/badging/images/moderator/jcr:content/moderator.png
+ad esempio: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
-*Member-profile-url* = endpoint per il profilo del membro al momento della pubblicazione\
- ad esempio: https://&lt;server>:&lt;porta>/home/users/community/riley/profile.social.json
+*Member-profile-url* = l&#39;endpoint per il profilo del membro al momento della pubblicazione\
+ad esempio: https://&lt;server>:&lt;porta>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -445,7 +448,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 >[!NOTE]
 >
->L’utilizzo di cURL per assegnare e revocare i simboli funziona per qualsiasi immagine contrassegno, ma quando viene assegnata invece di guadagnata, vengono contrassegnati come simboli assegnati e gestiti di conseguenza.
+>L’utilizzo di cURL per assegnare e revocare i simboli funziona per qualsiasi immagine contrassegno, ma quando viene assegnata al posto di quella ottenuta, vengono contrassegnati come simboli assegnati e gestiti di conseguenza.
 
 ## Punteggio e Badge per componenti personalizzati {#scoring-and-badges-for-custom-components}
 
@@ -461,7 +464,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 
 >[!NOTE]
 >
->Una nuova proprietà booleana `allowBadges`abilita o disabilita la visualizzazione dei simboli per un’istanza di componente. Sarà configurabile nelle finestre di dialogo di modifica dei [componenti aggiornate](author-communities.md) tramite una casella di controllo con l’etichetta **Display Badges**.
+>Una nuova proprietà booleana `allowBadges`, abilita/disabilita la visualizzazione dei simboli per un’istanza di componente. Sarà configurabile nelle finestre di dialogo di modifica dei [componenti aggiornate](author-communities.md) tramite una casella di controllo con l’etichetta **Display Badges**.
 
 **[Componente](calendar.md)**calendario SocialEvent`topic`= com/adobe/cq/social/calendario
 
@@ -478,7 +481,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 |---|---|
 | POST | crea un commento |
 | AGGIUNGI | risposta del membro al commento |
-| AGGIORNA | commento del membro è modificato |
+| AGGIORNA | commento del membro è stato modificato |
 | ELIMINA | commento del membro è eliminato |
 
 **[Componente](file-library.md)**Libreria file SocialEvent`topic`= com/adobe/cq/social/fileLibrary
@@ -564,7 +567,7 @@ Per supportare il punteggio, SocialEvent deve sovrascrivere il metodo in `getVer
 
 Se al contenuto del sito Web sono state applicate regole di punteggio e contrassegno, ma i simboli non vengono avvertiti per alcuna attività, accertatevi che i simboli siano stati abilitati per l&#39;istanza del componente in questione.
 
-Vedere [Abilitare i simboli per il componente](#enable-badges-for-component).
+Consultate [Abilitare i simboli per il componente](#enable-badges-for-component).
 
 ### La regola di punteggio non ha alcun effetto {#scoring-rule-has-no-effect}
 
@@ -580,7 +583,7 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
 
 ## Test rapido {#quick-test}
 
-È possibile provare rapidamente a utilizzare il punteggio e il contrassegno utilizzando il sito [Esercitazione](getting-started.md) iniziale (coinvolgimento):
+È possibile provare rapidamente a utilizzare il punteggio e il contrassegno utilizzando il sito [Esercitazione](getting-started.md) iniziale (interazione):
 
 * Accesso a CRXDE Lite per l&#39;autore
 * Passa alla pagina di base:
@@ -620,7 +623,7 @@ Assicuratevi quindi che i componenti forum e commenti consentano la visualizzazi
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-* Aggiungi la proprietà booleana allowBadges, se necessario, e verifica che sia vera
+* Aggiungi la proprietà booleana allowBadges, se necessario, e accertati che sia vera
 
    * **Nome**: `allowBadges`
    * **Tipo**: `Boolean`
