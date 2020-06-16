@@ -8,10 +8,13 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Esercitazioni
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-64.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-64.it-IT
 index: y
 translation-type: tm+mt
-source-git-commit: 9b01573286810356a93d7bc632363624523cd48c
+source-git-commit: a58558fe18743e1aee0d65da7a2140561bc97e98
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 12%
 
 ---
 
@@ -22,17 +25,17 @@ Il file metadata.md include metadati a livello di repo che passano ai file TOC.m
 
 | metadata | cosa |
 |--- |--- |
-| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| solution-hub-url | Apre la pagina centrale helpx |
-| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
-| getting-started | Link alla pagina di guida introduttiva |
-| tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o esercitazioni KT |
-| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
-| git-repo | Specifica la posizione del repo principale per uso interno |
+| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
+| solution-hub-url | Apre la pagina Hub Informazioni e supporto. |
+| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
+| getting-started | Link alla pagina iniziale. |
+| tutorials-url | Collegate le esercitazioni video. |
+| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. Il valore predefinito è 2. |
+| git-repo | Specifica la posizione del repo principale per uso interno. |
 
-Nel file TOC.md
+In un file TOC.md
 
 | metadata | cosa |
 |--- |--- |
-| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| user-guide-url | Apre la pagina centrale helpx |
+| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
+| user-guide-url | Apre la pagina Hub Informazioni e supporto. |
