@@ -8,17 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 14%
+source-wordcount: '820'
+ht-degree: 15%
 
 ---
 
 
 # Genera anteprima HTML5 di un modulo XDP {#generate-html-preview-of-an-xdp-form}
 
-Durante la progettazione di un modulo in AEM Forms Designer, oltre alla visualizzazione dell&#39;anteprima del rendering PDF di un modulo, è anche possibile visualizzarne l&#39;anteprima in HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare l&#39;anteprima di un modulo così come apparirebbe in un browser.
+Durante la progettazione di un modulo in AEM Forms Designer, oltre alla visualizzazione in anteprima della rappresentazione PDF di un modulo, è anche possibile visualizzarne l&#39;anteprima in HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare l&#39;anteprima di un modulo così come apparirebbe in un browser.
 
 ## Abilita anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -30,13 +30,13 @@ Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, esegu
 
 ### Configurare il servizio di autenticazione Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Andate a https://[*server*]:[*porta*]/sistema/console/configMgr in AEM Forms in esecuzione su OSGi o
+1. Vai a `https://[server]:[port]/system/console/configMgr` sui AEM Forms in esecuzione su OSGi o
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr in AEM Forms in esecuzione su JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` su AEM Forms in esecuzione su JEE.
 
 1. Individuate e fate clic sulla configurazione **Apache Sling Authentication Service** per aprirla in modalità di modifica.
 
-1. A seconda se AEM Forms è in esecuzione su OSGi o JEE, aggiungi quanto segue nel campo Requisiti **di** autenticazione:
+1. A seconda che siano in esecuzione AEM Forms su OSGi o JEE, aggiungete quanto segue nel campo Requisiti **di** autenticazione:
 
    * AEM Forms su JEE
 
@@ -46,6 +46,7 @@ Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, esegu
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >Non copiate e incollate il valore specificato nel campo Requisiti autenticazione, in quanto potrebbe danneggiare i caratteri speciali presenti nel valore. Digitare invece il valore specificato nel campo.
@@ -59,8 +60,8 @@ Per impostazione predefinita, la modalità [](/help/forms/using/get-xdp-pdf-docu
 
 1. Accedete alla console Web di AEM come amministratore.
 
-   * L’URL per AEM Forms su OSGi è https://[server]:[port]/system/console/configMgr
-   * L’URL per AEM Forms su JEE è https://[*server*]:[*port*]/lc/system/console/configMgr
+   * L’URL per i AEM Forms su OSGi è `https://[server]:[port]/system/console/configMgr`
+   * L&#39;URL per AEM Forms su JEE è `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Aprire le configurazioni dei moduli **[!UICONTROL mobili]** per la modifica.
 1. Deselezionare l’opzione Modalità **** protetta e fare clic su **[!UICONTROL Salva]**.
@@ -74,17 +75,18 @@ Per impostazione predefinita, la modalità [](/help/forms/using/get-xdp-pdf-docu
    * **Numero** porta HTTP: Porta server AEM. Il valore predefinito è 4502.
    * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
+      * `/content/xfaforms/profiles/default.html` (AEM Forms in OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
    * **Contesto Forms Manager:** Percorso di contesto in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
 
-      * `/aem/forms` (AEM Forms su OSGi)
+      * `/aem/forms` (AEM Forms in OSGi)
       * `/lc/forms` (AEM Forms su JEE)
-   **Nota:** *Verifica che il server AEM Forms sia attivato ed in esecuzione. The HTML preview connects to the CRX server to* generate *a preview.*
 
-   ![Opzioni di AEM Forms Designer ](assets/server_options.png)
+   **Nota:** *Verificate che il server AEM Forms sia in esecuzione. The HTML preview connects to the CRX server to* generate *a preview.*
 
-   Opzioni di AEM Forms Designer
+   ![AEM Forms Opzioni di Designer ](assets/server_options.png)
+
+   AEM Forms Opzioni di Designer
 
 1. Per visualizzare l&#39;anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML** .
 
@@ -112,6 +114,6 @@ La verifica del modulo mediante un’origine dati di esempio garantisce la mappa
 
 ## Anteprima dei moduli che si trovano in un archivio {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms è possibile visualizzare l&#39;anteprima di moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
+In AEM Forms, è possibile visualizzare l&#39;anteprima di moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
 
 [**Contattare il supporto **](https://www.adobe.com/account/sign-in.supportportal.html)
