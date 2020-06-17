@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +112,7 @@ Per ulteriori informazioni, consultate Registrazione [AEM e Registrazione](/help
 
 Alcune impostazioni possono influire sulle prestazioni, che dovrebbero essere disattivate ove possibile, in particolare per un&#39;istanza di produzione.
 
-* VM **di** origine e VM **di** destinazione, definire la versione JDK come utilizzata come JVM di runtime
+* VM **** di origine e VM **** Target, definire la versione JDK come utilizzata come JVM di runtime
 
 * per le istanze di produzione:
 
@@ -190,7 +193,7 @@ Il servizio filtro di riferimento è un servizio OSGi che consente di configurar
 
 * quali metodi http devono essere filtrati
 * se è consentita un&#39;intestazione di referente vuota
-* e una white list di server da consentire oltre all&#39;host del server.
+* e un elenco di server da consentire oltre all&#39;host del server.
 
 Per ulteriori informazioni, consultate l&#39;elenco di controllo [della sicurezza - Problemi con la falsificazione](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) delle richieste intersito.
 
@@ -317,7 +320,7 @@ Quando utilizzate gruppi [di utenti](/help/sites-administering/cug.md) chiusi po
 
 **Configurazione della mappatura** radice di CQ Day:
 
-* **Percorso** di destinazione per definire la destinazione di reindirizzamento di una richiesta a &quot; `/`&quot;.
+* **Target Path** per definire la destinazione di reindirizzamento di una richiesta a &quot; `/`&quot;.
 
 In AEM sono disponibili [due interfacce](/help/sites-authoring/select-ui.md) :
 
@@ -326,13 +329,13 @@ In AEM sono disponibili [due interfacce](/help/sites-authoring/select-ui.md) :
 
 Con la mappatura della directory principale di AEM è possibile configurare l’interfaccia utente predefinita per l’istanza:
 
-* Affinché l’interfaccia touch sia l’interfaccia predefinita, **Target Path** deve puntare a:
+* Per utilizzare l’interfaccia touch come interfaccia predefinita, **Target Path** deve puntare a:
 
    ```
       /projects.html
    ```
 
-* Affinché l’interfaccia classica sia l’interfaccia predefinita, il percorso **di** Target deve puntare a:
+* Per avere l’interfaccia classica come interfaccia predefinita, **Target Path** deve puntare a:
 
    ```
       /welcome.html
@@ -348,7 +351,8 @@ Sono disponibili diverse proprietà di configurazione:
 
 * **Percorso** Percorso per il quale il gestore di autenticazione è attivo. Se questo parametro viene lasciato vuoto, il gestore di autenticazione viene disabilitato. Ad esempio, il percorso / causa l&#39;utilizzo del gestore di autenticazione per l&#39;intero repository.
 
-* **Il valore di classificazione del servizio** OSGi Framework Service Ranking viene utilizzato per indicare l&#39;ordine utilizzato per chiamare questo servizio. Si tratta di un `int` valore in cui valori più alti indicano una precedenza maggiore.
+* **Il valore di classificazione del servizio** OSGi Framework Service Ranking viene utilizzato per indicare l&#39;ordine utilizzato per chiamare questo servizio. Questa è una 
+`int` dove i valori più alti indicano una precedenza maggiore.
 
    Il valore predefinito è `0`.
 
@@ -358,7 +362,8 @@ Sono disponibili diverse proprietà di configurazione:
 
 * **Nomi** dei parametri I nomi dei parametri di richiesta che potrebbero fornire l&#39;ID utente.
 
-* **Mappa** utente Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell&#39;oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura verrà ignorata. Tenere presente che il carattere &quot;=&quot; deve essere preceduto da un carattere &quot;\&quot; iniziale.
+* **Mappa** utente Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell&#39;oggetto credenziali. La mappatura è definita qui. Se il nome utente 
+`admin` viene visualizzata su entrambi i lati della mappa. La mappatura verrà ignorata. Tenere presente che il carattere &quot;=&quot; deve essere preceduto da un carattere &quot;\&quot; iniziale.
 
 * **Formato** Indica il formato in cui viene fornito l&#39;ID utente. Utilizzo:
 
