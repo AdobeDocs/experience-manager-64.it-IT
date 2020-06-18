@@ -6,7 +6,10 @@ seo-description: Panoramica delle funzionalità essenziali di AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+source-git-commit: 8aab981849152e6826dd4d0d68867790a85f373a
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 ## AEM Foundation {#aem-foundation}
 
-[Scopri ulteriori informazioni sull’installazione, l’implementazione e l’architettura di Adobe Experience Manager 6.4](/help/sites-deploying/home.md), inclusa la distribuzione cloud Adobe Managed Services.
+[Scopri di più sull&#39;installazione, la distribuzione e l&#39;architettura dell&#39;Adobe Experience Manager 6.4](/help/sites-deploying/home.md), inclusa la distribuzione cloud  Adobi Managed Services.
 
 [Scopri come gestire un progetto](/help/managing/home.md)AEM.
 
@@ -35,7 +38,7 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 ## AEM Screens {#aem-screens}
 
-[Scopri la soluzione di digital signage per pubblicare esperienze dinamiche e interattive.](/help/screens/home.md)
+[Scopri la soluzione di digital signage per pubblicare esperienze dinamiche e interattive.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
