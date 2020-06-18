@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 7%
+source-wordcount: '1843'
+ht-degree: 6%
 
 ---
 
@@ -53,13 +53,13 @@ Dopo aver acquisito familiarità con queste nozioni di base, nelle seguenti sott
 * [Articoli guida alla configurazione](/help/sites-deploying/ht-deploy.md)
 * [Console Web](/help/sites-deploying/web-console.md)
 * [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practice  ](/help/sites-deploying/best-practices.md)
+* [Best practice ](/help/sites-deploying/best-practices.md)
 * [Implementazione di Communities](/help/communities/deploy-communities.md)
-* [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
+* [Introduzione ad AEM Platform](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Aggiorna definizioni veicolo di rilascio](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Cos’è AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [Che cos&#39;è un AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Concetti di base {#basic-concepts}
 
@@ -104,7 +104,7 @@ Le sezioni seguenti descrivono entrambi gli scenari:
 
 * **In sede**: AEM è stato implementato e gestito nell’ambiente aziendale.
 
-* **Servizi gestiti - Cloud Manager per Adobe Experience Manager**: AEM implementato e gestito da Adobe Managed Services.
+* **Servizi gestiti - Cloud Manager per  Adobe Experience Manager**: AEM distribuito e gestito da  Adobi Managed Services.
 
 ### On-premise {#on-premise}
 
@@ -118,15 +118,15 @@ AEM Managed Services è una soluzione completa per la gestione dell&#39;esperien
 
 Con i servizi gestiti AEM i clienti possono trarre i seguenti vantaggi:
 
-**Time to Market più veloce:** Grazie all&#39;infrastruttura cloud flessibile di Adobe Managed Services, le organizzazioni possono pianificare, avviare e ottimizzare rapidamente le esperienze digitali di successo. Adobe gestisce l’architettura cloud senza bisogno di capitale, hardware o software aggiuntivi e di tecnici Adobe per il successo dei clienti, aiuto con l’architettura AEM, il provisioning, la personalizzazione per la connessione alle app back-end e procedure ottimali per la trasmissione live.
+**Time to Market più veloce:** Grazie all&#39;infrastruttura cloud flessibile di Adobi Managed Services , le organizzazioni possono pianificare, avviare e ottimizzare rapidamente le esperienze digitali di successo. Adobe gestisce l’architettura cloud senza bisogno di capitale, hardware o software aggiuntivi e di tecnici Adobe per il successo dei clienti, aiuto con l’architettura AEM, il provisioning, la personalizzazione per la connessione alle app back-end e procedure ottimali per la trasmissione live.
 
 **Prestazioni superiori:** Offre esperienze digitali affidabili per la vostra azienda con quattro opzioni di disponibilità del servizio: 99,5%, 99,9%, 99,95% e 99,99%. Inoltre, consente il backup automatico e modelli di disaster recovery multimodali per garantire affidabilità e gestione degli eventi.
 
-**Costi IT ottimizzati:** La guida e l&#39;esperienza proattiva aiutano le organizzazioni a rimanere aggiornate sull&#39;ultima versione di AEM. Il servizio di manutenzione e supporto Adobe Platinum viene incluso automaticamente nelle nuove installazioni di AMS Enterprise/Basic, offrendo esperienza tecnica ed operativa per aiutare le organizzazioni a mantenere le proprie applicazioni mission critical. Le funzionalità Analytics o Target di base gratuite offrono un valore aggiuntivo, specialmente alle organizzazioni di mercato di fascia media con esigenze limitate di analisi e personalizzazione.
+**Costi IT ottimizzati:** La guida e l&#39;esperienza proattiva aiutano le organizzazioni a rimanere aggiornate sull&#39;ultima versione di AEM. Il servizio di manutenzione e supporto Adobe Platinum viene incluso automaticamente nelle nuove installazioni di AMS Enterprise/Basic, offrendo esperienza tecnica ed operativa per aiutare le organizzazioni a mantenere le proprie applicazioni mission critical. Le funzionalità di base gratuite  Analytics o Target offrono un valore aggiuntivo, specialmente per le organizzazioni di mercato di fascia media con esigenze di analisi e personalizzazione limitate.
 
 **Massima sicurezza:** Garantisce la sicurezza fisica, di rete e dei dati di livello aziendale ospitando le applicazioni dei clienti in una struttura ad accesso limitato, dietro i sistemi firewall o all&#39;interno di un cloud privato virtuale. Include macchine virtuali a tenant singolo con crittografia solida dello storage dei dati, antivirali e isolamento dei dati.
 
-**Cloud Manager**: Cloud Manager, parte dell&#39;offerta Adobe Experience Manager Managed Services è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include un&#39;integrazione continua all&#39;avanguardia e una pipeline di fornitura continua (CI/CD) che consente ai team IT e ai partner di implementazione di velocizzare la fornitura di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per i clienti dei servizi gestiti Adobe.
+**Cloud Manager**: Cloud Manager, parte dell&#39;offerta  Adobe Experience Manager Managed Services è un portale self-service che consente alle organizzazioni di gestire autonomamente  Adobe Experience Manager nel cloud. Include un&#39;integrazione continua all&#39;avanguardia e una pipeline di fornitura continua (CI/CD) che consente ai team IT e ai partner di implementazione di velocizzare la fornitura di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per i clienti dei servizi gestiti Adobe.
 
 Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta la Guida [**utente di **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)Cloud Manager.
 
@@ -134,7 +134,7 @@ Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta l
 
 ### Prerequisiti {#prerequisites}
 
-Anche se le istanze di produzione vengono in genere eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedete Requisiti [](/help/sites-deploying/technical-requirements.md)tecnici), il server Experience Manager viene eseguito su qualsiasi sistema che supporta [**Java Standard Edition 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Mentre le istanze di produzione vengono in genere eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedere Requisiti [](/help/sites-deploying/technical-requirements.md)tecnici), il server Experience Manager  verrà eseguito su qualsiasi sistema che supporta [**Java Standard Edition 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Per scopi di familiarizzazione e per lo sviluppo su AEM è abbastanza comune utilizzare un&#39;istanza installata nel computer locale che esegue Apple OS X o versioni desktop di Microsoft Windows o Linux.
 
@@ -315,11 +315,11 @@ Questa sezione descrive le nozioni di base dell’installazione di AEM. Tuttavia
 * [Articoli guida alla configurazione](/help/sites-deploying/ht-deploy.md)
 * [Console Web](/help/sites-deploying/web-console.md)
 * [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practice  ](/help/sites-deploying/best-practices.md)
+* [Best practice ](/help/sites-deploying/best-practices.md)
 * [Implementazione di Communities](/help/communities/deploy-communities.md)
-* [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
+* [Introduzione ad AEM Platform](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Aggiorna definizioni veicolo di rilascio](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Cos’è AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [Che cos&#39;è un AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
