@@ -4,7 +4,10 @@ seo-title: Guida utente di AEM 6.4 Mobile
 description: Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili.
 seo-description: Descrive come creare e gestire il contenuto per le applicazioni mobili.
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 22%
 
 ---
 
@@ -31,7 +34,7 @@ Questa guida descrive tutte le attività di AEM Mobile, ad esempio come creare e
 | [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti della creazione in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
-| [Guida utente di Screens](/help/screens/home.md) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
+| [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza di AEM. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
@@ -41,10 +44,10 @@ Questa guida descrive tutte le attività di AEM Mobile, ad esempio come creare e
 ## Risorse AEM chiave
 
 * [Esercitazioni AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guida utente del dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guida utente HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guida utente ai componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Guida utente Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+* [Guida utente HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+* [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
