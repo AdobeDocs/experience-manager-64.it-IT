@@ -1,6 +1,6 @@
 ---
-title: Elenco di controllo - Ulteriori riferimenti
-seo-title: Elenco di controllo - Ulteriori riferimenti
+title: Elenco di controllo - Ulteriore riferimento
+seo-title: Elenco di controllo - Ulteriore riferimento
 description: Ulteriori informazioni su dettagli che approfondiscono e/o aumentano i documenti e i principi coperti dall'elenco di controllo Gestione progetti - Best Practices.
 seo-description: Ulteriori informazioni su dettagli che approfondiscono e/o aumentano i documenti e i principi coperti dall'elenco di controllo Gestione progetti - Best Practices.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
@@ -10,12 +10,15 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
-source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '3767'
+ht-degree: 1%
 
 ---
 
 
-# Elenco di controllo - Ulteriori riferimenti{#the-checklist-further-reference}
+# Elenco di controllo - Ulteriore riferimento{#the-checklist-further-reference}
 
 Questa pagina fornisce ulteriori dettagli per approfondire e/o ampliare i documenti e i principi coperti dall&#39;elenco di controllo [Gestione dei progetti - Best Practices](/help/managing/best-practices.md).
 
@@ -27,12 +30,12 @@ Questa pagina fornisce ulteriori dettagli per approfondire e/o ampliare i docume
 
 ### Funzionalità in AEM {#features-within-aem}
 
-Quando implementi AEM (in particolare per la prima volta) dovrai verificare le [funzionalità e i flussi di lavoro di AEM](https://www.adobe.com/marketing/experience-manager.html) per verificare quali aree desideri/hai bisogno.
+Quando implementi AEM (in particolare per la prima volta) dovrai verificare le [funzionalità e i flussi di lavoro di AEM](https://www.adobe.com/it/marketing/experience-manager.html) per verificare quali aree desideri/hai bisogno.
 
 Considerate le funzioni di AEM che verranno utilizzate e l&#39;impatto sulla progettazione; ad esempio:
 
 * [Commerce](/help/sites-administering/ecommerce.md)
-* [Schermi](/help/screens/aem-screens-introduction.md)
+* [Schermi](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tag](/help/sites-administering/tags.md)
 * [Gestione multisito e traduzione](/help/sites-administering/msm-and-translation.md)
@@ -42,7 +45,7 @@ Considerate le funzioni di AEM che verranno utilizzate e l&#39;impatto sulla pro
 
 Inoltre, per le diverse versioni di AEM, consultate le Note sulla [versione](/help/release-notes/release-notes.md)per vedere quando sono state aggiunte nuove funzioni.
 
-### Integrazioni {#integrations}
+### Integrations (Integrazioni){#integrations}
 
 AEM può essere integrato con altri prodotti Adobe e/o servizi di terze parti. Questi possono aumentare la potenza e le funzionalità a vostra disposizione.
 
@@ -66,7 +69,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
 >[!NOTE]
 >
->Questi punti sono generici, l’elenco di controllo [Best Practices](/help/managing/best-practices.md) contiene informazioni specifiche su AEM.
+>Questi punti sono generici, l’elenco di controllo [Best Practices](/help/managing/best-practices.md) contiene informazioni specifiche relative ad AEM.
 
 * **Ruoli**
 
@@ -101,7 +104,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
    Sono disponibili molti strumenti per il tracciamento delle informazioni su bug, attività e altri aspetti del progetto. Per ulteriori informazioni, consulta [Panoramica sugli strumenti](#overview-of-potential-tools) potenziali.
 
-   * Il punto chiave da notare qui è di mantenere una sola copia delle informazioni e condividere le informazioni (e quindi l&#39;accesso allo strumento in uso). Questo faciliterà la manutenzione e aiuterà a prevenire discrepanze.
+   * Il punto chiave da notare qui è di mantenere una sola copia delle informazioni e condividere le informazioni (e quindi l&#39;accesso allo strumento in uso). Questo faciliterà la manutenzione e aiuterà a prevenire le discrepanze.
 
 * **Ambito**
 
@@ -124,13 +127,13 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
    * Definire eventuali ipotesi in corso.
 
-Tali informazioni possono essere definite all&#39;interno di un manuale del progetto; l&#39;utilizzo di un Wiki può anche contribuire a garantire che le modifiche in corso vengano gestite in modo efficiente. In ogni caso, i fattori chiave sono:
+Tali informazioni possono essere definite all&#39;interno di un manuale del progetto; l&#39;utilizzo di un Wiki può anche contribuire a garantire che le modifiche in corso vengano gestite in modo efficiente. In ogni caso, i fattori chiave sono i seguenti:
 
-* Informazioni definite e mantenute
+* Le informazioni sono definite e mantenute
 * Le informazioni sono comunicate chiaramente a tutte le persone interessate. Anche se la prassi standard di gestione dei progetti non può essere ripetuta abbastanza spesso da consentire una chiara definizione del ruolo e una buona comunicazione per realizzare o interrompere un progetto.
 * È mantenuta una sola versione di tutte le informazioni oggetto di monitoraggio; ad esempio, tracciamento dei bug, tracciamento dei problemi, ecc.
 
-## Indicatori prestazioni chiave e metriche di destinazione {#key-performance-indicators-and-target-metrics}
+## Indicatori prestazioni chiave e metriche Target {#key-performance-indicators-and-target-metrics}
 
 Le organizzazioni utilizzano indicatori prestazioni chiave (KPI, Key Performance Indicators) per valutare il loro successo nel raggiungimento dei target. Questi indicatori sono valori misurabili che possono essere utilizzati per dimostrare l&#39;efficacia del conseguimento di obiettivi specifici.
 
@@ -148,7 +151,7 @@ Questi indicatori possono essere:
 
 Alcuni indicatori, ma non tutti, possono essere basati sulle metriche di destinazione identificate e definite.
 
-### Metriche di destinazione {#target-metrics}
+### Metriche Target {#target-metrics}
 
 Le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, ovvero una definizione degli obiettivi prestazionali che si desidera raggiungere e che può essere utilizzata per definire i [KPI (Indicatori prestazioni chiave)](#key-performance-indicators-and-target-metrics).
 
@@ -160,7 +163,7 @@ Le metriche vengono utilizzate per definire le misurazioni quantitative per la q
 * &quot;quando io cerco, il sistema *si ferma* &quot; - quali richieste di ricerca stanno influenzando il sistema?
 * &quot;ci vogliono *delle pagine* per scaricare il file&quot; - quali sono i tempi di download accettabili (in condizioni di rete normali)?
 
-Le metriche di destinazione sono definite all&#39;inizio di un progetto per:
+Le metriche Target sono definite all’inizio di un progetto per:
 
 * indicare le dimensioni previste del sito Web che verrà offerto
 * indicare la qualità minima che si desidera ottenere
@@ -172,7 +175,7 @@ Quando si definiscono le metriche di destinazione, occorre sempre prestare atten
 * se sono troppo alti, possono essere completamente irraggiungibili
 * se impostato su fluttuazioni troppo basse non può essere evidenziato
 * per garantire che possano essere misurati ripetutamente e in modo coerente
-* fornire un saldo tra i diversi fattori misurati
+* per fornire un saldo tra i diversi fattori misurati
 * determinate metriche si riferiscono a un ambiente di test, ma alcune dovrebbero riflettere gli scenari reali, in quanto devono essere misurabili e riproducibili nel sito Web di produzione
 * priorità delle metriche in base alla loro importanza per il sito Web
 * limitare le metriche a un set che può essere monitorato in modo realistico
@@ -258,7 +261,7 @@ I tempi di risposta desiderati saranno diversi negli ambienti di creazione e pub
 
 #### Impostazione dei tempi di risposta di destinazione {#setting-target-response-times}
 
-Come si può decidere sui tempi di risposta raggiungibili (medi)? Questa è spesso una questione di esperienza:
+Come si può decidere sui tempi di risposta raggiungibili (medi)? Spesso si tratta di una questione di esperienza:
 
 * esperienza passata sul sito Web
 * esperienza con AEM
@@ -276,7 +279,7 @@ I numeri sopra riportati si basano sulle seguenti condizioni:
 
 * misurati al momento della pubblicazione (nessun ambiente di authoring e/o sovraccarico CFC)
 * misurati sul server (nessun sovraccarico di rete)
-* non memorizzato nella cache (nessuna cache di output AEM, nessuna cache del dispatcher)
+* non memorizzato nella cache (nessuna cache di output AEM, nessuna cache Dispatcher)
 * solo per elementi complessi con molte dipendenze (HTML, JS, PDF, ...)
 * nessun altro carico sul sistema
 
@@ -316,7 +319,7 @@ Questi devono essere pianificati e integrati fin dall&#39;inizio del progetto. I
 
 * **Monitoraggio dei tempi di risposta delle ricerche con AEM request.log**
 
-   Anche in questo caso, request.log può essere utilizzato per monitorare i tempi di risposta delle richieste di ricerca; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
+   Anche in questo caso, request.log può essere utilizzato per monitorare i tempi di risposta per le richieste di ricerca; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
 
 * **Meccanismi programmati per misurare i tempi di risposta delle ricerche**
 
@@ -334,7 +337,7 @@ Le destinazioni per il numero di utenti simultanei dipendono dal tipo di ambient
 
 * **Ambiente di pubblicazione**
 
-   * Questo è più difficile da prevedere, quindi è necessario selezionare un valore target. Anche in questo caso si dovrebbe basare sull&#39;esperienza del sito Web corrente e sulle aspettative realistiche del nuovo sito Web.
+   * Questo è più difficile da prevedere, quindi è necessario selezionare un valore di destinazione. Anche in questo caso si dovrebbe basare sull&#39;esperienza del sito Web corrente e sulle aspettative realistiche del nuovo sito Web.
    * Eventi speciali (ad esempio quando pubblicate nuovi contenuti molto popolari) possono superare le aspettative - o addirittura le capacità (come talvolta riportato dalla stampa quando i biglietti per alcuni eventi sono messi in vendita).
 
 ### Capacità e volume {#capacity-and-volume}
@@ -356,7 +359,7 @@ Prima di discutere delle metriche correlate, una rapida definizione dei termini:
    |---|---|---|
    | Client | Potenza computazionale del computer dell&#39;utente. | Complessità del layout della pagina. |
    | Rete | Larghezza di banda della rete. | Dimensioni della pagina (codice, immagini e così via). |
-   | Cache del dispatcher | Memoria server del server Web (memoria principale e disco rigido). | Server Web (memoria principale e disco rigido). Numero e dimensione delle pagine memorizzate nella cache. |
+   | Cache Dispatcher | Memoria server del server Web (memoria principale e disco rigido). | Server Web (memoria principale e disco rigido). Numero e dimensione delle pagine memorizzate nella cache. |
    | Cache di output | Memoria server del server AEM (memoria principale e disco rigido). | Numero e dimensione delle pagine nella cache di output, numero di dipendenze per pagina. La cache del dispatcher riduce questo volume. |
    | Server web | Potenza computazionale del server Web. | Quantità di richieste. La cache abbassa questo volume. |
    | Modello | Potenza computazionale del server Web. | Complessità dei modelli. |
@@ -368,7 +371,7 @@ Le sezioni precedenti descrivono le metriche principali da definire.
 
 A seconda dei requisiti specifici, potrebbe essere utile definire metriche aggiuntive, isolatamente o tenendo conto delle classificazioni di cui sopra.
 
-Tuttavia, è preferibile disporre di un set limitato di metriche di base precise che funzionino in modo facile e affidabile, anziché cercare di misurare e definire ogni aspetto del sito Web. Per sua natura, il tuo sito web inizierà a cambiare ed evolvere non appena viene consegnato ai tuoi utenti.
+Tuttavia, è preferibile disporre di un set limitato di metriche di base precise che funzionino in modo facile e affidabile, anziché cercare di misurare e definire ogni aspetto del sito Web. Per sua stessa natura, il tuo sito web inizierà a cambiare ed evolvere non appena viene consegnato ai tuoi utenti.
 
 ## Sicurezza {#security}
 
@@ -383,8 +386,9 @@ La procedura [dell&#39;elenco](/help/sites-administering/security-checklist.md) 
 >Seguono:
 >
 >* Offre una panoramica correlata alla *prima* implementazione di un progetto AEM.
->* è intesa come una panoramica astratta; vedere l&#39;elenco [di controllo del](/help/managing/best-practices.md) progetto per le fasi/fasi/attività specifiche.
+>* è intesa come una panoramica astratta; vedere l&#39;elenco [di controllo del](/help/managing/best-practices.md) progetto per fasi/fasi/fasi/attività specifiche.
 >* Ogni scala temporale è teorica.
+
 >
 
 
@@ -423,7 +427,7 @@ Alcuni punti da sottolineare per ciascuna categoria sono:
       * Il primo risultato di sprint è la prima distribuzione nell&#39;ambiente di test.
       * Ogni sprint ha un risultato scorrevole.
       * Ogni sprint riceve una conclusione da parte del cliente (minimo di test strutturato con feedback).
-   * Pianificate l&#39;eventuale aggiornamento della versione AEM disponibile durante il progetto.
+   * Pianificate l&#39;eventuale aggiornamento della versione disponibile di AEM durante il progetto.
    * Pianificare i test e l&#39;ottimizzazione durante gli spruzzi.
    * Pianificare le fasi di stabilizzazione e ottimizzazione.
    * Crea un registro di elementi da pianificare per ulteriori rilasci.
@@ -465,7 +469,7 @@ Alcuni punti da sottolineare per ciascuna categoria sono:
    * Pianificate la creazione anticipata di prime pagine e contenuti (da utilizzare nei test e nei feedback).
    * Pianificare la migrazione dei contenuti esistenti.
    * Pianificare la &quot;migrazione in-sprint&quot; dopo il refactoring.
-   * Pianificate la &quot;suddivisione del contenuto&quot; (sitemap per contenuti live).
+   * Pianificate la &quot;suddivisione del contenuto&quot; (sitemap per il contenuto live).
 
 ## Stima del tempo e dello sforzo {#estimating-time-and-effort}
 
@@ -491,7 +495,7 @@ Una pianificazione dettagliata può quindi collegare le risorse disponibili o ne
 
 ## Architettura di riferimento {#reference-architecture}
 
-L’architettura di riferimento è stata creata per fornire una soluzione di modello per l’architettura AEM. L&#39;architettura di riferimento risolve i problemi più comuni riscontrati per i sistemi aziendali, inclusi il ridimensionamento, l&#39;affidabilità e la sicurezza.
+L’architettura di riferimento è stata creata per fornire una soluzione modello per l’architettura AEM. L&#39;architettura di riferimento risolve i problemi più comuni riscontrati per i sistemi aziendali, tra cui il ridimensionamento, l&#39;affidabilità e la sicurezza.
 
 È necessario definire le metriche del sito seguenti:
 
@@ -523,7 +527,7 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM offre una serie di meccanismi per monitorare, testare, esaminare ed eseguire il debug dell’applicazione; compresi:</p>
+   <td><p>AEM offre una serie di meccanismi che consentono di monitorare, testare, esaminare ed eseguire il debug dell’applicazione; compresi:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modalità Sviluppatore</a></li>
      <li>Console <a href="/help/sites-developing/hobbes.md">di prova</a></li>
@@ -542,7 +546,7 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>Microsoft Project</td>
-   <td>Uno strumento di gestione del progetto comunemente utilizzato.</td>
+   <td>Uno strumento di gestione del progetto di uso comune.</td>
   </tr>
   <tr>
    <td>Jira</td>
@@ -569,18 +573,18 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
 
 ## Lettura {#further-reading}
 
-Sono inoltre di particolare interesse le seguenti sezioni:
+Inoltre, sono di particolare interesse le seguenti sezioni:
 
 * [Guida introduttiva](/help/sites-deploying/deploy.md#getting-started)
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Monitoraggio e manutenzione dell’istanza](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Best practice {#best-practices}
+### Best practice  {#best-practices}
 
 Adobe offre ulteriori procedure ottimali per tutte le fasi e i tipi di pubblico:
 
 * [Distribuzione](/help/sites-deploying/best-practices.md)
-* [Authoring](/help/sites-authoring/best-practices.md)
+* [Authoring  ](/help/sites-authoring/best-practices.md)
 * [Amministrazione](/help/sites-administering/administer-best-practices.md)
 * [Sviluppo](/help/sites-developing/best-practices.md)
 * [Gestione progetto](/help/managing/best-practices.md)
