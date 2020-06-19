@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '1912'
+ht-degree: 1%
 
 ---
 
@@ -44,24 +47,24 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
    * Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL defaultApp]** nel percorso seguente e seleziona Nodo **** sovrapposizione:
 
-       /libs/fd/cm/config/defaultApp/
+      /libs/fd/cm/config/defaultApp/
 
-      ![Overlay, nodo](assets/1_defaultapp.png)
+      ![Sovrapposizione, nodo](assets/1_defaultapp.png)
 
    * Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/config/defaultApp/
+      **[!UICONTROL Percorso:]** /libs/fd/cm/config/defaultApp/
 
-      **** Posizione overlay: /apps/
+      **[!UICONTROL Posizione overlay:]** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
-      ![Overlay, nodo](assets/2_defaultappoverlaynode.png)
+      ![Sovrapposizione, nodo](assets/2_defaultappoverlaynode.png)
 
-   * Fai clic su **[!UICONTROL OK]**. 
+   * Fai clic su **[!UICONTROL OK]**.
    * Fate clic su **[!UICONTROL Salva tutto]**.
 
-1. Eseguite una copia del file acmExtensionsConfig.xml (esiste nel ramo /libs) nel ramo /apps.
+1. Eseguite una copia del file acmExtensionsConfig.xml (esiste nel ramo /libs) sotto il ramo /apps.
 
    * Vai a &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;
 
@@ -110,7 +113,7 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
    | permissionsName | L&#39;azione corrispondente viene visualizzata solo se l&#39;utente dispone dell&#39;autorizzazione specificata da permissionsName. Quando si specifica permissionsName come `forms-users`, tutti gli utenti possono accedere a questa opzione. |
    | actionHandler | Nome completo della classe ActionHandler che viene chiamata quando l&#39;utente fa clic sul pulsante. |
 
-   Oltre ai parametri indicati sopra, possono essere associate configurazioni aggiuntive a customAction. Queste configurazioni aggiuntive sono rese disponibili al gestore tramite l&#39;oggetto CustomAction.
+   Oltre ai parametri indicati sopra, possono essere associate configurazioni aggiuntive a customAction. Queste configurazioni aggiuntive vengono rese disponibili al gestore tramite l&#39;oggetto CustomAction.
 
    | **Nome** | **Descrizione** |
    |---|---|
@@ -124,19 +127,19 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
 Il file ACMExtensionMessages.properties include etichette e messaggi di descrizione dei vari campi nell&#39;interfaccia utente Crea corrispondenza. Affinché le azioni/i pulsanti personalizzati funzionino, create una copia di questo file nel ramo /apps.
 
-1. Fate clic con il pulsante destro del mouse sulla cartella delle **[!UICONTROL impostazioni]** internazionali nel percorso seguente e selezionate **[!UICONTROL Overlay Node]**:
+1. Fate clic con il pulsante destro del mouse sulla cartella delle **[!UICONTROL impostazioni]** internazionali nel percorso seguente e selezionate Nodo **** sovrapposizione:
 
    /libs/fd/cm/config/defaultApp/locale
 
 1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-   **** Percorso:/libs/fd/cm/config/defaultApp/locale
+   **[!UICONTROL Percorso:]** /libs/fd/cm/config/defaultApp/locale
 
-   **** Posizione overlay: /apps/
+   **[!UICONTROL Posizione overlay:]** /apps/
 
-   **** Corrispondenza tipi di nodo: Selezionato
+   **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
-1. Fai clic su **[!UICONTROL OK]**. 
+1. Fai clic su **[!UICONTROL OK]**.
 1. Fate clic su **[!UICONTROL Salva tutto]**.
 1. Fare clic con il pulsante destro del mouse sul file seguente e selezionare **[!UICONTROL Copia]**:
 
@@ -154,7 +157,7 @@ Il file ACMExtensionMessages.properties include etichette e messaggi di descrizi
 
    `loc.letterInstance.letterreview.label=Revue De Lettre`
 
-   In modo simile, in questo file è possibile aggiungere più proprietà, ad esempio per descrizioni e stili.
+   In modo simile, in questo file è possibile aggiungere più proprietà, ad esempio per la descrizione comandi e lo stile.
 
 1. Fate clic su **[!UICONTROL Salva tutto]**.
 
@@ -202,13 +205,13 @@ La gestione dell&#39;azione o del pulsante quando si fa clic su action/button in
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **[!UICONTROL Percorso:]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Posizione overlay: /apps/
+      **[!UICONTROL Posizione overlay:]** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
-   1. Fai clic su **[!UICONTROL OK]**. 
+   1. Fai clic su **[!UICONTROL OK]**.
    1. Fate clic su **[!UICONTROL Salva tutto]**.
 
 1. Nella cartella js, create un file denominato ccrcustomization.js con il codice per la gestione dell&#39;azione del pulsante utilizzando la procedura seguente:
@@ -347,6 +350,7 @@ Il processo LCA viene eseguito sul server LiveCycle e richiede l&#39;indirizzo d
    * **[!UICONTROL Url]** server: URL del server LC il cui servizio Send For Review viene utilizzato dal codice del gestore di azioni.
    * **[!UICONTROL Nome utente]**: Nome utente amministratore del server LC
    * **[!UICONTROL Password]**: Password del nome utente amministratore
+
    ![Configurazione Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
 #### Installare LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -377,7 +381,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 1. Fai clic su **[!UICONTROL Importa]**.
 
-#### Aggiunta di ServiceName all&#39;elenco WhiteListed Service {#adding-servicename-to-the-whitelisted-service-list}
+#### Aggiunta di ServiceName all&#39;elenco di AllowListed Service {#adding-servicename-to-the-allowlisted-service-list}
 
 Ricorda nel server AEM i servizi LiveCycle a cui vuoi accedere.
 
@@ -398,15 +402,15 @@ In questo scenario, affinché Gestione corrispondenza possa inviare un messaggio
 
 1. Individua e fai clic su **[!UICONTROL EmailService]**.
 
-1. Nell&#39;host **** SMTP configurate il servizio e-mail.
+1. Nell&#39;host **** SMTP, configurare il servizio e-mail.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
 #### Configurare il servizio DSC {#configure-the-dsc-service}
 
-Per utilizzare l&#39;API di gestione della corrispondenza, scaricate il file DSCSample.jar (allegato in questo documento come parte di components.zip) e caricatelo nel server LiveCycle. Dopo il caricamento del file DSCSample.jar nel server LiveCycle, il server AEM utilizza il file DSCSample.jar per accedere all&#39;API renderingLetter.
+Per utilizzare l&#39;API di gestione della corrispondenza, scaricate il file DSCSample.jar (allegato in questo documento come parte di components.zip) e caricatelo nel server di LiveCycle. Dopo il caricamento del file DSCSample.jar nel server LiveCycle, il server AEM utilizza il file DSCSample.jar per accedere all&#39;API renderingLetter.
 
-Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Per ulteriori informazioni, vedere [Collegamento di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Aggiorna l’URL del server AEM in cmsa.properties in DSCSample.jar, che si trova nel seguente percorso:
 
@@ -418,6 +422,7 @@ Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveC
    * **crx.username**= nome utente AEM
    * **crx.password**= password AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Ogni volta che si apportano modifiche sul lato server, riavviare il server LiveCycle. Per informazioni sulla creazione di un componente LiveCycle personalizzato, vedere [Estensione del software LiveCycle ES tramite lo sviluppo](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)DSC personalizzato.
