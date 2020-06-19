@@ -1,16 +1,19 @@
 ---
-title: Utilizzo di risorse Adobe Stock in Risorse AEM
+title: Utilizzare le risorse Adobe Stock nei AEM Assets
 description: Cercare, recuperare, concedere in licenza e gestire risorse Adobe Stock in AEM. Trattate le risorse con licenza come qualsiasi altra risorsa AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 22%
 
 ---
 
 
 # Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
-Le organizzazioni possono integrare il piano aziendale Adobe Stock con Risorse AEM per garantire che le risorse su licenza siano ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
+Le organizzazioni possono integrare il piano aziendale Adobe Stock con AEM Assets per garantire che le risorse su licenza siano ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
 Il servizio Adobe Stock offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo. Gli utenti AEM possono trovare, visualizzare in anteprima e concedere in licenza rapidamente le risorse Adobe Stock salvate in AEM, senza uscire dall’area di lavoro di AEM.
 
@@ -24,7 +27,7 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 
 >[!NOTE]
 >
->L’integrazione può essere eseguita solo dagli amministratori di AEM e di Admin Console per un’organizzazione, in quanto richiede privilegi di amministratore.
+>L’integrazione può essere eseguita solo dagli amministratori AEM e  amministratori Admin Console di un’organizzazione, in quanto richiede privilegi di amministratore.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -34,12 +37,15 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 1. Inserisci i valori appropriati nei campi **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. Per informazioni dettagliate su come recuperare questi valori dall’I/O di Adobe, consulta la sezione [JWT authentication quick start (Avvio rapido di authentication JWT)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 1. Aggiungi la chiave pubblica scaricata al tuo account del servizio Adobe I/O.
 
+<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
+
 ### Creare la configurazione di Adobe Stock in AEM {#create-adobe-stock-configuration-in-aem}
 
 1. In AEM user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Fate clic su **[!UICONTROL Crea]** per creare una configurazione e associarla alla configurazione IMS esistente. Selezionate `PROD` come parametro di ambiente.
 1. Nel campo Percorso **[!UICONTROL risorse]** concesso in licenza, lasciare invariata la posizione. Non cambiare la posizione in cui memorizzare le risorse Adobe Stock.
-1. Completate la creazione aggiungendo tutte le proprietà richieste. Click **[!UICONTROL Save &amp; Close]**.
+1. Completate la creazione aggiungendo tutte le proprietà richieste. Fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Aggiungete utenti o gruppi AEM che possono ottenere la licenza per le risorse.
 
 >[!NOTE]
@@ -48,7 +54,7 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 
 ## Utilizzo e gestione di risorse Adobe Stock in AEM {#use-and-manage-adobe-stock-assets-in-aem}
 
-Grazie a questa funzionalità, le organizzazioni possono consentire ai propri utenti di utilizzare le risorse Adobe Stock in Risorse AEM. Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle risorse Adobe Stock e ottenere la licenza per le risorse richieste.
+Grazie a questa funzionalità, le organizzazioni possono consentire ai propri utenti di utilizzare le risorse Adobe Stock in AEM Assets. Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle risorse Adobe Stock e ottenere la licenza per le risorse richieste.
 
 Una volta ottenuta la licenza di una risorsa Adobe Stock in AEM, questa può essere utilizzata e gestita come una risorsa tipica. In AEM, gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le risorse su Brand Portal; accedere e utilizzare le risorse tramite l’app desktop AEM; e così via.
 
@@ -80,7 +86,7 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 
 Selezionate una risorsa da salvare in AEM. Fate clic su Salva nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
-La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in Risorse AEM.
+La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in AEM Assets.
 
 >[!NOTE]
 >
@@ -88,11 +94,11 @@ La prossima volta che ricercate le risorse, queste vengono evidenziate con un co
 
 ### Risorse di licenza {#licenseassets}
 
-Gli utenti possono concedere in licenza le risorse Adobe Stock utilizzando la quota del piano Adobe Stock Enterprise. Quando si concede la licenza per una risorsa, questa viene salvata senza filigrana ed è disponibile per la ricerca e l’utilizzo in AEM Assets.
+Gli utenti possono concedere in licenza le risorse Adobe Stock utilizzando la quota del piano Adobe Stock Enterprise. Quando si concede la licenza per una risorsa, questa viene salvata senza filigrana ed è disponibile per la ricerca e l’utilizzo nei AEM Assets.
 
-![Finestra di dialogo per ottenere la licenza e salvare risorse Adobe Stock in Risorse AEM](assets/aem-stock_licenseandsave.jpg)
+![Finestra di dialogo per ottenere la licenza e salvare le risorse Adobe Stock in AEM Assets](assets/aem-stock_licenseandsave.jpg)
 
-*Figura: Finestra di dialogo per ottenere la licenza e salvare risorse Adobe Stock in Risorse AEM*
+*Figura: Finestra di dialogo per ottenere la licenza e salvare le risorse Adobe Stock in AEM Assets*
 
 ### Accesso a metadati e proprietà delle risorse {#access-metadata-and-asset-properties}
 
@@ -110,7 +116,7 @@ Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza 
 
 ### L&#39;avviso dell&#39;immagine editoriale non viene visualizzato
 
-Quando si concede la licenza a un’immagine, gli utenti non possono verificare se un’immagine è solo di uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare l’accesso alle risorse editoriali dall’Admin Console.
+Quando si concede la licenza a un’immagine, gli utenti non possono verificare se un’immagine è solo di uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare l’accesso alle risorse editoriali dall’Admin Console .
 
 ### Tipo di licenza errato visualizzato
 
@@ -122,7 +128,7 @@ Quando un utente aggiorna un campo di riferimento della licenza, le informazioni
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con Risorse AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
 >* [Guida al piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
