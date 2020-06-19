@@ -3,7 +3,7 @@ title: Tecniche consigliate per l'offload di risorse
 description: Casi d’uso e procedure ottimali consigliati per scaricare i flussi di lavoro di assimilazione e replica delle risorse in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -17,15 +17,15 @@ ht-degree: 0%
 >
 >A partire da AEM 6.4 questa funzione è obsoleta e viene rimossa in AEM 6.5. Pianificare di conseguenza.
 
-La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Risorse Adobe Experience Manager (AEM) possono richiedere notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’assimilazione delle risorse possono influire sulle prestazioni complessive del sistema. Le operazioni che richiedono più risorse includono flussi di lavoro di assimilazione e replica delle risorse AEM. L’uso intensivo di questi flussi di lavoro su un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
+La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Risorse  Adobe Experience Manager (AEM) possono richiedere notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’assimilazione delle risorse possono influire sulle prestazioni complessive del sistema. Le operazioni che richiedono più risorse includono flussi di lavoro di assimilazione e replica delle risorse AEM. L’uso intensivo di questi flussi di lavoro su un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
 
 L&#39;offload di queste attività alle istanze di lavoro dedicate può ridurre le spese di CPU, memoria e IO. In generale, l&#39;idea dietro lo scaricamento è quella di distribuire le attività che richiedono risorse CPU/Memoria/IO intensive a istanze di lavoro dedicate. Le sezioni seguenti includono i casi di utilizzo consigliati per lo scaricamento delle risorse.
 
-## Offload di AEM Assets {#aem-assets-offloading}
+## Offload AEM Assets {#aem-assets-offloading}
 
-Risorse AEM implementa un’estensione di flusso di lavoro specifica per le risorse native per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di scaricamento, ma include nell’implementazione funzioni aggiuntive specifiche per le risorse. Lo scopo dello scaricamento delle risorse è di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse consente di ottenere un maggiore controllo sui flussi di lavoro di assimilazione.
+I AEM Assets implementano un’estensione di flusso di lavoro specifica per la risorsa nativa per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di scaricamento, ma include nell’implementazione funzioni aggiuntive specifiche per le risorse. Lo scopo dello scaricamento delle risorse è di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse consente di ottenere un maggiore controllo sui flussi di lavoro di assimilazione.
 
-## Componenti di offload di AEM Assets {#aem-assets-offloading-components}
+## AEM Assets componenti di offload {#aem-assets-offloading-components}
 
 Il diagramma seguente illustra i componenti principali del processo di scarico delle risorse:
 
@@ -112,6 +112,7 @@ Per impostazione predefinita, lo scarico del trasporto utilizza la replica inver
 1. Modificare il valore della proprietà `default.transport.agent-to-master.prefix` da `offloading_reverse` a `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### Utilizzo dell&#39;archivio dati condiviso e della replica binaria-less tra autori e lavoratori  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
