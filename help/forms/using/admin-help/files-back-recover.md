@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I file di applicazione e di dati da sottoporre a backup sono descritti più dett
 Considerare i seguenti punti relativi a backup e ripristino:
 
 * Il backup del database deve essere eseguito prima di GDS e dell’archivio AEM.
-* Se è necessario arrestare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi slave vengano chiusi prima del nodo master. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo master deve essere reso attivo prima di qualsiasi nodo slave.
+* Se è necessario disattivare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi secondari vengano chiusi prima del nodo principale. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo primario deve essere reso attivo prima di qualsiasi nodo secondario.
 * Per l&#39;operazione di ripristino di un cluster, il server applicazione deve essere arrestato per ogni nodo del cluster.
 
 ## Directory Global Document Storage {#global-document-storage-directory}
@@ -73,7 +73,7 @@ Una semplice configurazione della soluzione di gestione della corrispondenza inc
 
 gestione moduli semplifica il processo di aggiornamento, gestione e ritiro dei moduli.
 
-### AEM Forms Workspace {#html-workspace}
+### Area di lavoro AEM Forms {#html-workspace}
 
 AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i moduli AEM su JEE) e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
@@ -81,7 +81,7 @@ AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i m
 >
 >Flex Worksapce è obsoleto per la versione dei moduli AEM.
 
-Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Consente la rappresentazione di moduli HTML, oltre ai moduli PDF e ai moduli Flex.
+Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Consente la rappresentazione di moduli HTML, oltre a PDF forms e moduli Flex.
 
 ## Database moduli AEM {#aem-forms-database}
 
