@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 13e1da76d72277687f35d783de6d887ab7c1b52d
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 [La modifica collettiva delle proprietà](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) di pagina consente di modificare le proprietà di più pagine alla volta.
 
-A causa della possibilità di valori diversi, per impostazione predefinita le proprietà della pagina non sono abilitate per la modifica collettiva. Devono essere esplicitamente inseriti nella white list (attivato). Per definire le proprietà della pagina in modo che siano disponibili per la modifica collettiva, è necessario considerare alcune implicazioni, come:
+A causa della possibilità di valori diversi, per impostazione predefinita le proprietà della pagina non sono abilitate per la modifica collettiva. Devono essere esplicitamente consentiti (abilitati). Per definire le proprietà della pagina in modo che siano disponibili per la modifica collettiva, è necessario considerare alcune implicazioni, ad esempio:
 
 * Alcuni campi sono in genere univoci; ad esempio un titolo di pagina. È necessario stabilire se è utile abilitare tali campi per la modifica collettiva, quando verrà applicato un valore.
 * Alcuni campi possono avere più valori; questo richiede una rappresentazione significativa durante il rendering.
@@ -33,6 +36,7 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 >* Non disponibile nell’interfaccia classica.
 >* Non disponibile per le pagine all&#39;interno di una Live Copy.
 >* Disponibile solo per le pagine con lo stesso tipo di risorsa.
+
 >
 
 
@@ -53,19 +57,20 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
-I campi sono abilitati sul componente pagina (*non* sul modello):
+I campi sono attivati sul componente pagina (*non* sul modello):
 
 1. Utilizzando CRXDE Lite (o un metodo equivalente), aprite il componente di pagina.
 
-   Ad esempio: `/apps/core/wcm/components/page/v1/page`
+   Esempio: `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for more information.
+   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) for more information.
 
 1. Andate al campo obbligatorio nella `cq:dialog` definizione.
 1. Definire la seguente proprietà sul nodo campo:
@@ -73,6 +78,7 @@ I campi sono abilitati sul componente pagina (*non* sul modello):
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valore**: `true`
+
    Ad esempio, per il componente [pagina standard](/help/sites-authoring/default-components-foundation.md)foundation:
 
    `/libs/foundation/components/page`
