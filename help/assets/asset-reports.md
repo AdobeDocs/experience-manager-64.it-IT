@@ -3,9 +3,9 @@ title: Rapporti sull’utilizzo e la condivisione delle risorse digitali.
 description: Rapporti sulle risorse [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3caa4ffb4fd1f7c43d3bb1bf5ec59c9ee80a7937
+source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1056'
 ht-degree: 10%
 
 ---
@@ -61,6 +61,10 @@ Per generare i rapporti, accertati che:
    >
    >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse scaricate. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
 
+   >[!NOTE]
+   >
+   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse selezionate singolarmente e scaricate. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
+
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
    ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
@@ -91,7 +95,7 @@ Per generare i rapporti, accertati che:
 
    ![Pagina dei dettagli del rapporto Condivisione collegamenti](assets/link_share.png)
 
-1. Fare clic su **[!UICONTROL Avanti]** dalla barra degli strumenti.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Nella pagina **[!UICONTROL Configura colonne]** , per impostazione predefinita nel rapporto vengono selezionate alcune colonne. È possibile selezionare più colonne. Deselezionate una colonna selezionata per escluderla nel rapporto.
 
@@ -101,7 +105,7 @@ Per generare i rapporti, accertati che:
 
    ![Seleziona o deseleziona le colonne del rapporto](assets/custom_columns.png)
 
-1. Fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
+1. Click **[!UICONTROL Create]** from the toolbar. Un messaggio notifica che è stata avviata la generazione del report.
 1. Nella pagina Rapporti  risorse, lo stato di generazione del rapporto si basa sullo stato corrente del processo del rapporto, ad esempio [!UICONTROL Successo], [!UICONTROL Non riuscito], [!UICONTROL In coda]o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella inbox delle notifiche.Per visualizzare la pagina del rapporto, fai clic sul collegamento del rapporto. In alternativa, selezionate il rapporto e fate clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 
    ![Report generato](assets/report_page.png)
@@ -142,7 +146,7 @@ Per aggiungere colonne personalizzate a questi rapporti, procedere come segue:
 
    Per aggiungere altre colonne personalizzate, fare clic su **[!UICONTROL Aggiungi]** e ripetere i passaggi 5 e 6.
 
-1. Fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
+1. Click **[!UICONTROL Create]** from the toolbar. Un messaggio notifica che è stata avviata la generazione del report.
 
 ## Configurare il servizio di eliminazione {#configure-purging-service}
 
