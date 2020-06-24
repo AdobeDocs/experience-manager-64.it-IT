@@ -3,9 +3,9 @@ title: Rapporti sull’utilizzo e la condivisione delle risorse digitali.
 description: Rapporti sulle risorse [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
+source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1061'
 ht-degree: 10%
 
 ---
@@ -59,11 +59,11 @@ Per generare i rapporti, accertati che:
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse scaricate. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Downloaded report]. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
 
    >[!NOTE]
    >
-   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse selezionate singolarmente e scaricate. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
+   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse che vengono selezionate singolarmente e scaricate o scaricate mediante la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
 
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
