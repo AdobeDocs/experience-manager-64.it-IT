@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 4%
 
 ---
@@ -88,16 +88,16 @@ Per configurare  funzionalità di Analytics per community, è necessario collabo
 
 ## Adobe  Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Utilizzando  Adobe Marketing Cloud  [Report Suite Manager](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html),  suite di rapporti Analytics possono essere configurate in modo che un sito community possa essere abilitato per fornire rapporti per le funzioni Community.
+Utilizzando  Adobe Marketing Cloud  [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html),  suite di rapporti Analytics possono essere configurate in modo che un sito community possa essere abilitato per fornire rapporti per le funzioni Community.
 
-Effettuando l&#39;accesso a [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) con Nome [società e Nome utente](analytics.md#prerequisites), è possibile configurare una suite di rapporti nuova o esistente con:
+Effettuando l&#39;accesso a [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) con Nome [società e Nome utente](analytics.md#prerequisites), è possibile configurare una suite di rapporti nuova o esistente con:
 
-* [11 Variabili](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) di conversione (evar)
+* [11 Variabili](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) di conversione (evar)
 
    * **`evar1`** tramite **`evar11`** abilitato
    * Può riadattare (rinominare) le variabili evar esistenti o crearne di nuove da utilizzare per le funzioni Community
 
-* [7 Eventi](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) di successo (eventi)
+* [7 Eventi](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) di successo (eventi)
 
    * **`event1`** tramite **`event7`** abilitato
    * Tipo **`Counter`**
@@ -106,7 +106,7 @@ Effettuando l&#39;accesso a [Adobe Marketing Cloud](https://marketing.adobe.com/
    * Può riadattare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni Community
 
 
-* [Gestione video](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [Gestione video](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * Video Reporting console
 
@@ -545,11 +545,11 @@ L&#39;argomento forum è attualmente l&#39;unico esempio di questa personalizzaz
 
 ## Gestione dei dati utente in  Analytics {#manage-user-data-in-analytics}
 
-Adobe  Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)di accesso ed eliminazione.
+Adobe  Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)di accesso ed eliminazione.
 
 ## Riferimenti {#resources}
 
-* Adobe Marketing Cloud : [Guida di  Analytics e riferimento](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud : [Guida di  Analytics e riferimento](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics con fornitori esterni](../../help/sites-administering/external-providers.md)
 
