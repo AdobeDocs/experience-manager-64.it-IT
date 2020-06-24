@@ -1,6 +1,6 @@
 ---
-title: Configurazione del tracciamento video per Adobe Analytics
-seo-title: Configurazione del tracciamento video per Adobe Analytics
+title: Configurazione del tracciamento video per Adobe  Analytics
+seo-title: Configurazione del tracciamento video per Adobe  Analytics
 description: Scoprite come configurare il tracciamento video per SiteCatalyst.
 seo-description: Scoprite come configurare il tracciamento video per SiteCatalyst.
 uuid: c72d2d59-915d-4af1-aeb9-821915979571
@@ -10,14 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1776'
+ht-degree: 1%
 
 ---
 
 
-# Configurazione del tracciamento video per Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+# Configurazione del tracciamento video per Adobe  Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Esistono diversi metodi per tenere traccia degli eventi video, due dei quali sono opzioni legacy per le versioni precedenti di Adobe Analytics. Queste opzioni precedenti sono: Precedenti pietre miliari e Secondi legacy.
+Esistono diversi metodi per tenere traccia degli eventi video, due dei quali sono opzioni legacy per le versioni precedenti di Adobe  Analytics. Queste opzioni precedenti sono: Precedenti pietre miliari e Secondi legacy.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Per impostare un framework per il tracciamento video con ciascun metodo, utilizz
 
 1. Per impostare una pagina Web, trascinate un componente **** video dalla barra laterale e aggiungete un **video riproducibile come risorsa** per il componente
 
-1. [Crea una configurazione e un framework](/help/sites-administering/adobeanalytics.md)di Adobe Analytics.
+1. [Create una configurazione e un framework](/help/sites-administering/adobeanalytics.md)Analytics  Adobe.
 
    * Gli esempi nelle sezioni seguenti utilizzano il nome **my-sc-configuration** per la configurazione e il **video** per il framework.
 
@@ -44,17 +47,17 @@ Per impostare un framework per il tracciamento video con ciascun metodo, utilizz
 1. Selezionare un metodo di tracciamento:
 
    * [Pietre miliari](/help/sites-administering/adobeanalytics.md)
-   * [Milestoni non legacy](/help/sites-administering/adobeanalytics.md)
+   * [Pietre miliari non legacy](/help/sites-administering/adobeanalytics.md)
    * [Precedenti pietre miliari](/help/sites-administering/adobeanalytics.md)
    * [Secondi legacy](/help/sites-administering/adobeanalytics.md)
 
-1. Quando selezionate un metodo di tracciamento, l’elenco delle variabili CQ cambia di conseguenza. Utilizzate le sezioni seguenti per informazioni su come configurare ulteriormente il componente e mappare le variabili CQ con le proprietà di Adobe Analytics.
+1. Quando si seleziona un metodo di tracciamento, l’elenco delle variabili CQ cambia di conseguenza. Utilizzate le sezioni seguenti per informazioni su come configurare ulteriormente il componente e mappare le variabili CQ con le proprietà Adobe  Analytics.
 
 ## Milestones {#milestones}
 
 Il metodo Milestones monitora la maggior parte delle informazioni sul video, è altamente personalizzabile e facile da configurare.
 
-Per utilizzare il metodo Milestones, specificate gli offset di traccia basati sul tempo per definire le pietre miliari. Quando la riproduzione di un video supera una fase cardine, la pagina richiama Adobe Analytics per tenere traccia dell’evento. Per ogni pietra miliare definita, il componente crea una variabile CQ che può essere mappata a una proprietà Adobe Analytics. Il nome di queste variabili CQ utilizza il formato seguente:
+Per utilizzare il metodo Milestones, specificate gli offset di traccia basati sul tempo per definire le pietre miliari. Quando la riproduzione di un video supera una fase cardine, la pagina chiama Adobe  Analytics per tenere traccia dell’evento. Per ogni pietra miliare definita, il componente crea una variabile CQ che è possibile mappare a una proprietà Adobe  Analytics. Il nome di queste variabili CQ utilizza il formato seguente:
 
 ```shell
 eventdata.events.milestoneXX
@@ -74,7 +77,7 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
  <tbody> 
   <tr> 
    <th>Variabili CQ</th> 
-   <th>Proprietà di Adobe Analytics</th> 
+   <th>Proprietà Adobe  Analytics</th> 
   </tr> 
   <tr> 
    <td>eventdata.videoName </td> 
@@ -110,7 +113,7 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>Inviato su ogni pietra miliare; viene visualizzato come pev3 nella chiamata di Adobe Analytics, solitamente inviato come "video"<br /> </td> 
+   <td>Inviato su ogni pietra miliare; viene visualizzato come pev3 nella chiamata Adobe  Analytics, solitamente inviato come "video"<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -135,20 +138,20 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
 
    I valori di offset devono essere numeri interi maggiori di 0. Il valore predefinito è `10,25,50,75`.
 
-1. Per mappare le variabili CQ alle proprietà Adobe Analytics, trascinate le proprietà Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
+1. Per mappare le variabili CQ alle proprietà Adobe  Analytics, trascinate le proprietà Adobe  Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, consultate la guida [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) guide.
+   Per informazioni sull’ottimizzazione delle mappature, consultate la guida [Measuring Video in Adobe  Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) guide.
 
 1. [Aggiungete il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
-1. Per verificare la configurazione in modalità **** Anteprima, riproduci il video per attivare le chiamate Adobe Analytics.
+1. Per verificare la configurazione in modalità **** Anteprima, riprodurre il video per attivare le chiamate Adobe  Analytics.
 
-Gli esempi di dati di tracciamento di Adobe Analytics che seguono si applicano al tracciamento delle attività cardine utilizzando gli offset di traccia di 4,8,16,20 e 24, e le mappature seguenti per le variabili CQ:
+Gli esempi di dati di tracciamento di Adobe  Analytics riportati di seguito si applicano al tracciamento delle attività cardine utilizzando gli offset di tracciamento di 4,8,16,20 e 24, e le mappature seguenti per le variabili CQ:
 
 <table> 
  <tbody> 
   <tr> 
    <th>Variabile CQ</th> 
-   <th>Adobe Analytics, proprietà</th> 
+   <th>Adobe , proprietà Analytics</th> 
   </tr> 
   <tr> 
    <td>eventdata.videoName </td> 
@@ -219,13 +222,13 @@ Per questo esempio, il componente Video viene visualizzato come segue nella pagi
 
 >[!NOTE]
 >
->Per visualizzare le chiamate effettuate ad Adobe Analytics utilizza uno strumento appropriato, come DigitalPulse Debugger o Fiddler.
+>Per visualizzare le chiamate effettuate ad Adobe  Analytics utilizzate uno strumento appropriato, come DigitalPulse Debugger o Fiddler.
 
-Le chiamate ad Adobe Analytics con l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
+Le chiamate ad Adobe  Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
-*Questa è la **prima chiamata**effettuata ad Adobe Analytics contenente i valori seguenti:*
+*Si tratta della **prima chiamata**effettuata ad Adobe  Analytics contenente i valori seguenti:*
 
 * *prop1 e eVar1 per eventdata.a.media.name,*
 * *props2-4, insieme a eVar2 ed eVar3 contenente contentType (video) e segmento (1:O:1-4)*
@@ -233,7 +236,7 @@ Le chiamate ad Adobe Analytics con l&#39;esempio fornito dovrebbero essere simil
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-*Questa è la **terza chiamata**effettuata ad Adobe Analytics:*
+*Questa è la **terza chiamata**effettuata ad Adobe  Analytics:*
 
 * *prop1 e eVar1 contengono`a.media.name;`*
 * *event1 perché è stato visualizzato un segmento*
@@ -243,11 +246,11 @@ Le chiamate ad Adobe Analytics con l&#39;esempio fornito dovrebbero essere simil
 
 ## Pietre miliari non legacy {#non-legacy-milestones}
 
-Il metodo Milestones non legacy è simile al metodo Milestones, tranne che per le pietre miliari che vengono definite utilizzando percentuali della lunghezza del binario. I comuni sono i seguenti:
+Il metodo Milestones non legacy è simile al metodo Milestones, tranne che per le pietre miliari, che vengono definite utilizzando percentuali della lunghezza del binario. I comuni sono i seguenti:
 
-* Quando la riproduzione di un video supera una fase cardine, la pagina richiama Adobe Analytics per tenere traccia dell’evento.
-* Set [statico di variabili](#milestones) CQ definite per la mappatura con le proprietà di Adobe Analytics.
-* Per ogni pietra miliare definita, il componente crea una variabile CQ che può essere mappata a una proprietà Adobe Analytics.
+* Quando la riproduzione di un video supera una fase cardine, la pagina chiama Adobe  Analytics per tenere traccia dell’evento.
+* Set [statico di variabili](#milestones) CQ definite per la mappatura con le proprietà Adobe  Analytics.
+* Per ogni pietra miliare definita, il componente crea una variabile CQ che è possibile mappare a una proprietà Adobe  Analytics.
 
 Il nome di queste variabili CQ utilizza il formato seguente:
 
@@ -270,12 +273,12 @@ eventdata.events.milestoneXX
 
    I valori di offset devono essere numeri interi maggiori di 0.
 
-1. Per mappare le variabili CQ alle proprietà Adobe Analytics, trascinate le proprietà Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
+1. Per mappare le variabili CQ alle proprietà Adobe  Analytics, trascinate le proprietà Adobe  Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, consultate la guida [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) guide.
+   Per informazioni sull’ottimizzazione delle mappature, consultate la guida [Measuring Video in Adobe  Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) guide.
 
 1. [Aggiungete il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
-1. Per verificare la configurazione in modalità **** Anteprima, riproduci il video per attivare le chiamate Adobe Analytics.
+1. Per verificare la configurazione in modalità **** Anteprima, riprodurre il video per attivare le chiamate Adobe  Analytics.
 
 ## Precedenti pietre miliari {#legacy-milestones}
 
@@ -287,8 +290,9 @@ Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre
 
 1. Impostare l&#39;offset della traccia.
 
-   * ad esempio 10,50,75,100
-   Inoltre, le informazioni inviate ad Adobe Analytics sono meno personalizzabili; sono disponibili solo 3 variabili per la mappatura:
+   * e.g.10,50,75,100
+
+   Inoltre, le informazioni inviate ad Adobe  Analytics sono meno personalizzabili; sono disponibili solo 3 variabili per la mappatura:
 
 <table> 
  <tbody> 
@@ -315,7 +319,7 @@ Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre
 
    Il **resto delle informazioni** pertinenti nella chiamata sarà inviato concatinato in **una** variabile denominata **pev3**.
 
-   **Le chiamate** di esempio ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
+   **Le chiamate** di esempio ad Adobe  Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -326,11 +330,11 @@ Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre
    * *Nome* lettore - Il lettore video utilizzato per riprodurre il file video (video ** HTML5)
    * *Secondi totali riprodotti* - Il numero totale di secondi di riproduzione del video (*25*)
    * *Timestamp* di inizio - Timestamp che identifica l&#39;avvio della riproduzione video (*1331035567*)
-   * *Riproduci sessione* - I dettagli della sessione di riproduzione. Questo campo indica in che modo l’utente ha interagito con il video. Ciò potrebbe includere dati quali la posizione di inizio della riproduzione del video, l’utilizzo del cursore video per far avanzare il video e la posizione in cui si è interrotta la riproduzione del video (*L10E24S58L58 - video arrestato al secondo. 25 della sezione L10, quindi saltato al secondo. 48*)
+   * *Riproduci sessione* - I dettagli della sessione di riproduzione. Questo campo indica in che modo l’utente ha interagito con il video. Ciò potrebbe includere dati quali dove hanno iniziato a riprodurre il video, se hanno utilizzato il cursore video per far avanzare il video e dove hanno interrotto la riproduzione (*L10E24S58L58 - il video è stato arrestato al secondo. 25 della sezione L10, quindi saltato al secondo. 48*)
 
 ## Secondi precedenti {#legacy-seconds}
 
-Quando si utilizza il metodo** dei secondi* legacy, le chiamate Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo dell&#39;offset del brano.
+Quando si utilizza il metodo** dei secondi* legacy, le chiamate Adobe  Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo dell&#39;offset del brano.
 
 1. Imposta l&#39;offset della traccia su un numero qualsiasi di secondi,
 
@@ -339,7 +343,7 @@ Quando si utilizza il metodo** dei secondi* legacy, le chiamate Adobe Analytics 
    >
    >Il campo Offset tracciamento accetta solo numeri interi superiori a 0
 
-   Le informazioni inviate ad Adobe Analytics sono meno personalizzabili. Sono disponibili solo 3 variabili per la mappatura:
+   Le informazioni inviate ad Adobe  Analytics sono meno personalizzabili. Sono disponibili solo 3 variabili per la mappatura:
 
 <table> 
  <tbody> 
@@ -366,7 +370,7 @@ Quando si utilizza il metodo** dei secondi* legacy, le chiamate Adobe Analytics 
 
    Il **resto delle informazioni** pertinenti nella chiamata sarà inviato concatinato in **una** variabile denominata **pev3**.
 
-   Le chiamate ad Adobe Analytics con l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
+   Le chiamate ad Adobe  Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
 
    ![lsecondi](assets/lseconds.png)
 
@@ -374,4 +378,4 @@ Quando si utilizza il metodo** dei secondi* legacy, le chiamate Adobe Analytics 
 
 **Riferimenti utilizzati in questa esercitazione:**
 
-[0] [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html)
+[0] [https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
