@@ -4,7 +4,7 @@ seo-title: Guida utente di AEM 6.4 Mobile
 description: Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili.
 seo-description: Descrive come creare e gestire il contenuto per le applicazioni mobili.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 22%
@@ -39,7 +39,7 @@ Questa guida descrive tutte le attività di AEM Mobile, ad esempio come creare e
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza di AEM. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Questa guida illustra come condividere con Livefyre i contenuti generati dagli utenti. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Questa guida illustra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 
