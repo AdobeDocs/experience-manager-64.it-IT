@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '5374'
+ht-degree: 80%
 
 ---
 
@@ -294,7 +297,7 @@ Se modificate il contenuto di destinazione, è necessario fare clic o toccare **
 1. Seleziona l’esperienza per cui desideri creare l’offerta.
 1. Creazione dell’offerta:
 
-   * Per esperienza predefinita, trascinate i componenti nell’area di rilascio di destinazione e modificate le proprietà dei componenti come al solito per creare il contenuto dell’offerta.
+   * Per esperienza predefinita, trascinate i componenti nell’area di rilascio di destinazione e modificate le proprietà dei componenti come al solito per creare il contenuto per l’offerta.
    * Per esperienze non predefinite, [aggiungi un’offerta personalizzata](#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Aggiunta di un’offerta personalizzata {#adding-a-custom-offer}
@@ -492,7 +495,7 @@ Utilizza le impostazioni avanzate per determinare che cosa succede **dopo** che 
   </tr> 
   <tr> 
    <td><strong>Incrementa il conteggio e mantieni utente attivo</strong></td> 
-   <td>Specificate come viene incrementato il conteggio: 
+   <td>Specificate in che modo il conteggio viene incrementato: 
     <ul> 
      <li>Una volta per partecipante</li> 
      <li>Su ogni impressione, esclusi gli aggiornamenti di pagina</li> 
@@ -509,17 +512,17 @@ Utilizza le impostazioni avanzate per determinare che cosa succede **dopo** che 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><strong>Incremento Conteggio, Rilascio Utente E Rientro Barre</strong></td> 
+   <td><strong>Incremento Conteggio, Rilascio Utente E Rientro A Barre</strong></td> 
    <td>Determinate cosa vede l'utente invece del contenuto dell'attività: 
     <ul> 
      <li>Stessa esperienza, senza tracciamento</li> 
-     <li>Contenuto predefinito o altro contenuto attività</li> 
+     <li>Contenuto predefinito o altro contenuto dell'attività</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Consulta la [documentazione di Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) per ulteriori informazioni sulle metriche di successo.
+Consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) per ulteriori informazioni sulle metriche di successo.
 
 ### Impostazioni di configurazione (targeting di AEM) {#configuring-settings-aem-targeting}
 
@@ -558,13 +561,13 @@ Per configurare obiettivi e impostazioni con Adobe Target:
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sulle metriche di successo.
 
    Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
    Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   Tutte le metriche hanno anche impostazioni avanzate che è possibile definire. Seleziona **Impostazioni avanzate** per accedere a queste impostazioni. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Devi avere almeno un obiettivo definito.
@@ -655,7 +658,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
   </tr> 
   <tr> 
    <td><strong>Motore</strong></td> 
-   <td>Seleziona tra le regole lato <strong>client (senza tracciamento), Adobe Target, ContextHub </strong>e Adobe Campaign a<strong> </strong>seconda del motore da utilizzare.</td> 
+   <td>Selezionare tra le regole lato <strong>client (senza tracciamento),  Adobe Target, ContextHub </strong>e  Adobe Campaign a<strong> </strong>seconda del motore da utilizzare.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -672,7 +675,7 @@ Se hai selezionato Adobe Target come motore:
   </tr> 
   <tr> 
    <td><strong>Impostazione destinazione precisa</strong></td> 
-   <td><p>L'attivazione di un targeting preciso indica al componente di attendere la disponibilità dei dati contestuali del client o dell'hub di contesto prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong></strong> Nota: L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td> 
+   <td><p>L'attivazione di un targeting accurato indica al componente di attendere che i dati contestuali del client o dell'hub di contesto siano disponibili prima di inviare la richiesta al Adobe Target . Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Nota:</strong> L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Includi segmenti risolti</strong></td> 
@@ -680,15 +683,15 @@ Se hai selezionato Adobe Target come motore:
   </tr> 
   <tr> 
    <td><strong>Parametri di contesto ereditati</strong></td> 
-   <td>Elenca gli eventuali parametri contestuali ereditati dal framework di Adobe Target, associati alla pagina selezionata.</td> 
+   <td>Elenca gli eventuali parametri contestuali ereditati dal framework del Adobe Target , associati alla pagina selezionata.</td> 
   </tr> 
   <tr> 
    <td><strong>Param contesto</strong></td> 
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come avviene per il framework di Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td> 
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come nel caso di ciò che è disponibile nel framework Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td> 
   </tr> 
   <tr> 
    <td><strong>Param statici</strong></td> 
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare altri parametri statici (come avviene per il framework di Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td> 
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri statici aggiuntivi (come avviene per il framework Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td> 
   </tr> 
  </tbody> 
 </table>
