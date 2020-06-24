@@ -1,8 +1,8 @@
 ---
 title: Problemi noti in AEM 6.4
 seo-title: Problemi noti in AEM 6.4
-description: Problemi noti in Adobe Experience Manager 6.4
-seo-description: Problemi noti in Adobe Experience Manager 6.4.
+description: Problemi noti in  Adobe Experience Manager 6.4
+seo-description: Problemi noti  Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,33 +10,36 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 4%
 
 ---
 
 
 # Problemi noti {#known-issues}
 
-Questa pagina contiene un elenco dei problemi noti che Adobe Experience Manager 6.4 ha rilasciato ad aprile 2018. Per ulteriori informazioni sui problemi noti, [contattate il supporto](https://helpx.adobe.com/support/experience-manager.html).
+Questa pagina contiene un elenco dei problemi noti  Adobe Experience Manager 6.4, rilasciato nell’aprile 2018. Per ulteriori informazioni sui problemi noti, [contattate il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
 
 ## Dispositivi ibridi {#hybrid-devices}
 
 I dispositivi ibridi non sono supportati. Durante l&#39;utilizzo di tali dispositivi possono verificarsi diversi problemi. Le procedure suggerite di seguito consentono di risolvere molti problemi:
 
 Se utilizzate Google Chrome come browser:
-* Digitare `chrome://flags/` nella barra degli indirizzi e premere Invio.
+* Digitate `chrome://flags/` la barra degli indirizzi e premete Invio.
 * Fate clic su Attiva eventi di tocco > Disattivato.
 * Riavviate il browser (tutte le schede e le finestre).
 
 Se si utilizza Mozilla Firefox come browser:
-* Digitare `about:config` nella barra degli indirizzi e premere Invio.
+* Digitate `about:config` la barra degli indirizzi e premete Invio.
 * Filtrare le impostazioni su `dom.w3c`.
 * Verificate che le impostazioni siano `0` e `false`.
 * Riavviate il browser.
 
 Se utilizzate Microsoft Edge come browser:
 
-* Digitare `about:flags` nella barra degli indirizzi e premere Invio.
+* Digitate `about:flags` nella barra degli indirizzi e premete Invio.
 * Scorrete fino alle funzioni Sperimentali e quindi **[!UICONTROL toccate]**.
 * Fate clic su **[!UICONTROL Abilita eventi]** di tocco.
 * Selezionare **[!UICONTROL Sempre disattivato]**.
@@ -44,28 +47,28 @@ Se utilizzate Microsoft Edge come browser:
 
 ## Platform {#platform}
 
-* **** Pannello operazioni: La barra di avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
-* **** HTL: Oggetto Java Use con spazi vuoti finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
-* **** Apache Felix/Sling: File di configurazione ancora presente nell&#39;archivio anche dopo configurazione.delete() (GRANITE-20618)
-* **** Impostazioni cloud: Console viene interrotta dopo la modifica del contenitore di configurazione (GRANITE-20726)
-* **** Sicurezza: L&#39;integrazione IMS non riesce con il percorso contestuale personalizzato (GRANITE-20639)
-* **** Sicurezza: Migliorare la classificazione JAAS predefinita dei moduli di login SSO, esterni e predefiniti (GRANITE-20590)
-* **** Tooling - CRX DE Lite: La vista Ridge of properties continua a muoversi verso l&#39;alto (GRANITE-12040)
-* **** Tooling - CRX DE Lite: Non è possibile salvare le modifiche in &quot;Long&quot; Value Types a meno che non si faccia doppio clic su Property Name (GRANITE-12351)
+* **Pannello operazioni:** La barra di avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
+* **HTL:** Oggetto Java Use con spazi vuoti finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling:** File di configurazione ancora presente nell&#39;archivio anche dopo configurazione.delete() (GRANITE-20618)
+* **Impostazioni cloud:** Console viene interrotta dopo la modifica del contenitore di configurazione (GRANITE-20726)
+* **Sicurezza:** L&#39;integrazione IMS non riesce con il percorso contestuale personalizzato (GRANITE-20639)
+* **Sicurezza:** Migliorare la classificazione JAAS predefinita dei moduli di login SSO, esterni e predefiniti (GRANITE-20590)
+* **Tooling - CRX DE Lite:** La vista Ridge of properties continua a muoversi verso l&#39;alto (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Non è possibile salvare le modifiche in &quot;Long&quot; Value Types a meno che non si faccia doppio clic su Property Name (GRANITE-12351)
 
-* **** Tooling - CRX DE Lite: ctrl+F per la ricerca sui file di testo aperti si blocca nella ricerca RegExp (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F per la ricerca sui file di testo aperti si blocca nella ricerca RegExp (GRANITE-5996)
 
-* **** Tooling - CRX DE Lite: La proprietà Node non viene visualizzata dopo aver rinominato il nodo (GRANITE-7160)
-* **** Interfaccia utente: Pulldown &quot;more...&quot; non visualizza tutti gli elementi quando viene aperto in un elemento del puntatore su IE e Firefox (GRANITE-16326)
-* **** Interfaccia utente: La descrizione delle informazioni viene nascosta quando si utilizza il layout delle colonne fisse con 2 colonne affiancate (GRANITE-16869)
-* **** Interfaccia utente: Errore non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione [implementando un gestore](/help/sites-developing/customizing-errorhandler-pages.md) di errori per personalizzare il messaggio di errore.
+* **Tooling - CRX DE Lite:** La proprietà Node non viene visualizzata dopo aver rinominato il nodo (GRANITE-7160)
+* **Interfaccia utente:** Pulldown &quot;more...&quot; non visualizza tutti gli elementi quando viene aperto in un elemento del puntatore su IE e Firefox (GRANITE-16326)
+* **Interfaccia utente:** La descrizione delle informazioni viene nascosta quando si utilizza il layout delle colonne fisse con 2 colonne affiancate (GRANITE-16869)
+* **Interfaccia utente:** Errore non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione [implementando un gestore](/help/sites-developing/customizing-errorhandler-pages.md) di errori per personalizzare il messaggio di errore.
 
-* **** Omnisearch: Ricerche con eccezione di causa barra rovesciata (GRANITE-11769)
-* **** Omnisearch: Aprite &quot;Visualizza impostazioni&quot; nella vista a elenco per cambiare il filtro di ricerca (GRANITE-16524)
-* **** Omnisearch: Elenco errato di configurazioni di colonne visualizzate durante la ricerca di risorse da Siti (GRANITE-16527)
+* **Omnisearch:** Ricerche con eccezione di causa barra rovesciata (GRANITE-11769)
+* **Omnisearch:** Aprite &quot;Visualizza impostazioni&quot; nella vista a elenco per cambiare il filtro di ricerca (GRANITE-16524)
+* **Omnisearch:** Elenco errato di configurazioni di colonne visualizzate durante la ricerca di risorse da Siti (GRANITE-16527)
 
-* **** Omnisearch: I predicati della barra a sinistra vanno di pari passo con la richiesta del server Omnisearch (GRANITE-20524)
-* **** Omnisearch: Omnisearch non supporta i percorsi contestuali (GRANITE-16044)
+* **Omnisearch:** I predicati della barra a sinistra vanno di pari passo con la richiesta del server Omnisearch (GRANITE-20524)
+* **Omnisearch:** Omnisearch non supporta i percorsi contestuali (GRANITE-16044)
 
 ## Assets {#assets}
 
@@ -98,10 +101,11 @@ Se utilizzate Microsoft Edge come browser:
 ### Installazione e implementazione
 
 * (Solo AEM Forms JEE) Quando si esegue l&#39;avvio del server applicazioni JBoss durante l&#39;esecuzione di Configuration Manager, vengono restituiti errori di chiamata EJB e di avvio automatico. Tuttavia, potete ignorarli. (Ref. CQ-4229793)
+* All&#39;avvio dei AEM Forms, viene visualizzato l&#39; `SAX Security Manager could not be setup` avviso. (CQ-4297403)
 
 ### Comunicazioni interattive
 
-* L&#39;interfaccia utente dell&#39;agente impiega un po&#39; a caricare comunicazioni interattive che includono elementi grafici o immagini. (CQ-4236630)
+* L&#39;interfaccia utente dell&#39;agente richiede un po&#39; di tempo per caricare comunicazioni interattive che includono elementi grafici o immagini. (CQ-4236630)
 * Il formato di visualizzazione dei dati nell&#39;anteprima di stampa è gg-mm-aaaa mentre nell&#39;anteprima Web è `dd-mmm-yy` (CQ-4237045)
 * Il canale Web di comunicazione interattiva supporta solo elenchi ordinati e non ordinati. Nei frammenti di documento elenco, l&#39;elenco composto e il rientro non sono supportati per il canale Web della comunicazione interattiva. (CQ-4233672)
 * Quando il canale Web si sincronizza con il canale di stampa si verificano i seguenti problemi:
