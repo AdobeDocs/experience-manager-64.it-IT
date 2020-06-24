@@ -10,14 +10,17 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '5893'
+ht-degree: 1%
 
 ---
 
 
 # Monitoraggio e manutenzione dell’istanza AEM{#monitoring-and-maintaining-your-aem-instance}
 
-Dopo l’implementazione delle istanze AEM, saranno necessarie alcune attività per monitorare e mantenere il funzionamento, le prestazioni e l’integrità.
+Dopo l’implementazione delle istanze AEM, saranno necessarie alcune attività per monitorare e mantenere il funzionamento, le prestazioni e l’integrità di tali istanze.
 
 Un fattore chiave in questo caso è che per riconoscere i potenziali problemi è necessario sapere come si presentano e si comportano i sistemi in condizioni normali. Ciò è meglio monitorando il sistema e raccogliendo informazioni in un determinato periodo di tempo.
 
@@ -38,7 +41,7 @@ Un fattore chiave in questo caso è che per riconoscere i potenziali problemi è
 È buona prassi effettuare backup di:
 
 * Installazione del software - prima/dopo modifiche significative nella configurazione
-* Contenuto custodito nel repository - regolarmente
+* Contenuto custodito all&#39;interno del repository - regolarmente
 
 La vostra azienda avrà probabilmente una politica di backup da seguire, considerazioni aggiuntive su cosa eseguire il backup e quando includere:
 
@@ -104,7 +107,7 @@ Lo strumento **Rimuovi versioni** è disponibile nella console **[](/help/sites-
 
 **Percorso** iniziale Un percorso assoluto sul quale eseguire la rimozione. Per selezionare il Percorso iniziale, fare clic sul Navigator della struttura della directory archivio.
 
-**Ricorsivo** Quando si eliminano i dati è possibile scegliere se eseguire l&#39;operazione su un nodo o su un&#39;intera gerarchia selezionando Ricorsivo. Nell&#39;ultimo caso il percorso specificato definisce il nodo principale della gerarchia.
+**Ricorsivo** Quando si eliminano i dati è possibile scegliere se eseguire l&#39;operazione su un nodo o su un&#39;intera gerarchia selezionando Ricorsivo. Nell&#39;ultimo caso, il percorso specificato definisce il nodo principale della gerarchia.
 
 **Numero massimo di versioni per mantenere** il numero massimo di versioni da mantenere per un nodo. Quando questo numero supera questo valore, vengono eliminate le versioni precedenti.
 
@@ -122,7 +125,7 @@ Per eliminare le versioni di un sito Web, procedere come segue:
 1. Impostate il percorso iniziale del contenuto da rimuovere (ad es. `/content/geometrixx-outdoors`).
 
    * Per eliminare solo il nodo definito dal percorso, deselezionare **Ricorsivo**.
-   * Per eliminare il nodo definito dal percorso e dai relativi discendenti, selezionare **Ricorsivo**.
+   * Se si desidera eliminare il nodo definito dal percorso e dai relativi discendenti, selezionare **Ricorsivo**.
 
 1. Impostate il numero massimo di versioni (per ciascun nodo) che desiderate mantenere. Lasciate vuoto per non utilizzare questa impostazione.
 
@@ -133,7 +136,7 @@ Per eliminare le versioni di un sito Web, procedere come segue:
 
 >[!CAUTION]
 >
->I nodi eliminati non possono essere ripristinati senza ripristinare il repository. Si dovrebbe prendersi cura della configurazione, quindi si consiglia di eseguire sempre una prova a secco prima di rimuovere.
+>I nodi eliminati non possono essere ripristinati senza il ripristino della directory archivio. Si dovrebbe prendersi cura della configurazione, quindi si consiglia di eseguire sempre una prova a secco prima di rimuovere.
 
 ### Analisi della console {#analyzing-the-console}
 
@@ -159,7 +162,7 @@ Nell&#39;esempio seguente:
 
 ## Utilizzo dei record di controllo e dei file di registro {#working-with-audit-records-and-log-files}
 
-I record e i file di registro di controllo relativi ad Adobe Experience Manager (AEM) possono essere trovati in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
+I record di controllo e i file di registro relativi  Adobe Experience Manager (AEM) possono essere trovati in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
 
 ### Utilizzo dei registri {#working-with-logs}
 
@@ -181,63 +184,55 @@ La rotazione del file di registro si riferisce al processo che limita la crescit
 
 ### Ricerca dei file di registro {#finding-the-log-files}
 
-Diversi file di registro sono memorizzati nel file server in cui è stato installato AEM:
+Vari file di registro sono memorizzati nel file server in cui è stato installato AEM:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
    * `access.log`
 
-      
-Tutte le richieste di accesso ad AEM WCM e all&#39;archivio sono registrate qui.
+      Tutte le richieste di accesso ad AEM WCM e all&#39;archivio sono registrate qui.
 
    * `audit.log`
 
-      
-Le azioni di moderazione sono registrate qui.
+      Le azioni di moderazione sono registrate qui.
 
    * `error.log`
 
-      
-I messaggi di errore (con vari livelli di gravità) sono registrati qui.
+      I messaggi di errore (con vari livelli di gravità) sono registrati qui.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Questo registro viene utilizzato solo se è abilitato il supporto dinamico. Fornisce informazioni statistiche e analitiche utilizzate per analizzare il comportamento del processo ImageServer interno.
 
    * `request.log`
 
-      
-Ogni richiesta di accesso è registrata qui insieme alla risposta.
+      Ogni richiesta di accesso è registrata qui insieme alla risposta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Questo registro viene utilizzato solo se è abilitato il supporto dinamico. Il registro s7access registra ogni richiesta effettuata a Dynamic Media tramite `/is/image` e `/is/content`.
+      Questo registro viene utilizzato solo se è abilitato il supporto dinamico. Il registro di accesso s7access registra ogni richiesta inoltrata ad Dynamic Media attraverso `/is/image` e `/is/content`.
 
    * `stderr.log`
 
-      
-Contiene messaggi di errore, di nuovo con diversi livelli di gravità, generati durante l&#39;avvio. Per impostazione predefinita, il livello di registro è impostato su `Warning` ( `WARN`)
+      Contiene i messaggi di errore, di nuovo con diversi livelli di gravità, generati durante l&#39;avvio. Per impostazione predefinita, il livello di registro è impostato su `Warning` ( `WARN`)
 
    * `stdout.log`
 
-      
-Contiene i messaggi di registrazione che indicano gli eventi durante l&#39;avvio.
+      Contiene i messaggi di registrazione che indicano gli eventi durante l&#39;avvio.
 
    * `upgrade.log`
 
-      
-Fornisce un registro di tutte le operazioni di aggiornamento in esecuzione dai `com.day.compat.codeupgrade` pacchetti e `com.adobe.cq.upgradesexecutor` .
+      Fornisce un registro di tutte le operazioni di aggiornamento in esecuzione dai `com.day.compat.codeupgrade` pacchetti e `com.adobe.cq.upgradesexecutor` .
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
 
-      
-Informazioni sulla registrazione delle revisioni.
+      Informazioni sulla registrazione delle revisioni.
 
 >[!NOTE]
 >
->I registri ImageServer e s7access non sono inclusi nel pacchetto **Download Full** generato dalla pagina di elenco dei **sistemi/console/status-Bundlelist** . Per motivi di supporto, in caso di problemi relativi ai file multimediali dinamici aggiungi i registri ImageServer e s7access quando contatta l’Assistenza clienti.
+>I registri ImageServer e s7access non sono inclusi nel pacchetto **Download Full** generato dalla pagina di elenco dei **sistemi/console/status-Bundlelist** . Per assistenza, in caso di problemi con Dynamic Media, aggiungete i registri ImageServer e s7access quando contattate l&#39;Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 
@@ -275,9 +270,10 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
 1. In `/apps/<project-name>/config`, create un nodo per la nuova configurazione [del log di registrazione](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)Apache Sling:
 
    * Nome:
-   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (poiché si tratta di un logger)
 
-   Dove `<identifier>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Ad esempio: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (in quanto si tratta di un logger)
+
+   Dove `<identifier>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Esempio, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
@@ -288,7 +284,7 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
 
    * Nome: `org.apache.sling.commons.log.file`
 
-      Tipo:Stringa
+      Tipo: Stringa
 
       Valore: specifica il file di registro; ad esempio, `logs/myLogFile.log`
 
@@ -303,9 +299,9 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
       * `com.day`
    * Nome: `org.apache.sling.commons.log.level`
 
-      Tipo:Stringa
+      Tipo: Stringa
 
-      Valore: specificare il livello di registro richiesto ( `debug`, `info`, `warn` o `error`);ad esempio `debug`
+      Valore: specificare il livello di registro richiesto ( `debug`, `info`, `warn` o `error`); ad esempio `debug`
 
    * Configurate gli altri parametri come richiesto:
 
@@ -322,8 +318,8 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
    >
    >{0} Il timestamp del tipo `java.util.Date`
    >{1} il marcatore di registro
-   >{2} nome del thread corrente\
-   >{3} nome del logger\
+   >{2} il nome del thread corrente\
+   >{3} il nome del logger\
    >{4} il livello di registro\
    >{5} il messaggio di registro
    >
@@ -363,9 +359,9 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
 
    In `/apps/<project-name>/config`, create un nodo per la nuova configurazione [del writer di registrazione](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)Apache Sling:
 
-   * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (come lo scrittore)
+   * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (in quanto si tratta di uno scrittore)
 
-      Come per il logger, `<identifier>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Ad esempio: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Come con il Logger, `<identifier>` viene sostituito da testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Esempio, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
@@ -401,11 +397,13 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
    >
    >* una dimensione massima del file
    >* una pianificazione di ora/data
+
    >
    >per indicare quando verrà creato un nuovo file (e il file esistente verrà rinominato in base al pattern del nome).
    >
    >* È possibile specificare un limite di dimensioni con un numero. Se non viene fornito alcun indicatore di dimensione, questo viene considerato come il numero di byte, oppure è possibile aggiungere uno degli indicatori di dimensione - `KB`, `MB`o `GB` (il caso viene ignorato).
    >* È possibile specificare come `java.util.SimpleDateFormat` pattern una pianificazione di ora/data. Definisce il periodo di tempo dopo il quale il file verrà ruotato; inoltre il suffisso aggiunto al file ruotato (per l’identificazione).
+
    >
    >  Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
    >
@@ -452,7 +450,7 @@ I record di audit sono tenuti per fornire un record di chi ha fatto cosa e quand
 
 #### Record di AEM WCM Auditing nella directory archivio {#aem-wcm-auditing-records-within-the-repository}
 
-All&#39;interno della `/var/audit` cartella, i record di controllo vengono conservati in base alla risorsa. È possibile approfondire la struttura fino a visualizzare i singoli record e le informazioni che contengono.
+All&#39;interno della `/var/audit` cartella, i record di controllo vengono conservati in base alla risorsa. È possibile eseguire il drill-down fino a visualizzare i singoli record e le informazioni che contengono.
 
 Queste voci contengono le stesse informazioni visualizzate durante la modifica di una pagina.
 
@@ -494,6 +492,7 @@ Per monitorare un agente di replica:
    * **Visualizzare il registro** per accedere al registro di eventuali azioni dell&#39;agente di replica.
    * **Verificare la connessione** all&#39;istanza di destinazione.
    * **Se necessario, forza il tentativo** su qualsiasi elemento della coda.
+
    >[!CAUTION]
    >
    >Non utilizzate il collegamento &quot;Test Connection&quot; per la replica inversa in uscita in un&#39;istanza pubblicata.
@@ -556,7 +555,7 @@ Tutte queste informazioni devono essere ottenute, ordinate e analizzate prima di
    * raccogliere il maggior numero possibile di informazioni da confrontare con la vostra conoscenza del sistema in circostanze normali:
 
 
-### Strumenti per monitorare e analizzare le prestazioni {#tools-for-monitoring-and-analyzing-performance}
+### Strumenti per il monitoraggio e l&#39;analisi delle prestazioni {#tools-for-monitoring-and-analyzing-performance}
 
 Di seguito viene fornita una breve panoramica di alcuni degli strumenti disponibili per monitorare e analizzare le prestazioni.
 
@@ -580,19 +579,19 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
    <td><p>Comandi Unix/Linux per tracciare chiamate di sistema e segnali. Impostare il livello di registro su <code>INFO</code>.</p> <p>Analizzare il numero di caricamenti di pagina per richiesta, quali pagine, ecc.</p> </td> 
   </tr> 
   <tr> 
-   <td>Fanelli di filetto</td> 
+   <td>Fanelli di filettatura</td> 
    <td>Osservare i thread JVM. Identificare i conteggi, le serrature e i corridori lunghi.</td> 
-   <td><p><br /> A seconda del sistema operativo: - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modalità console): Ctrl-Break<br /> </p> <p>Sono disponibili anche strumenti di analisi, come <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>A seconda del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modalità console): Ctrl-Break<br /> </p> <p>Sono disponibili anche strumenti di analisi, ad esempio <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Cassetti heap</td> 
    <td>Problemi di memoria esauriti che provocano prestazioni lente.</td> 
-   <td><p><br /> Aggiungi: opzione <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> per la chiamata Java ad AEM.</p> <p>Consulta la Guida alla <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">risoluzione dei problemi per Java SE 6 con HotSpot VM</a>.</p> </td> 
+   <td><p>Aggiungi:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> nella chiamata Java ad AEM.</p> <p>Consulta la Guida alla <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">risoluzione dei problemi per Java SE 6 con HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Chiamate di sistema</td> 
    <td>Identificare i problemi di temporizzazione.</td> 
-   <td><p>Le chiamate a <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing vengono utilizzate per generare marche temporali dal codice o tramite commenti <a href="#html-comments"></a>HTML.</p> <p><strong></strong> Nota: Tali misure dovrebbero essere attuate in modo che possano essere attivate o disattivate secondo necessità; quando un sistema funziona senza problemi, l'onere della raccolta delle statistiche non sarà necessario.</p> </td> 
+   <td><p>Le chiamate a <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing vengono utilizzate per generare marche temporali dal codice o tramite commenti <a href="#html-comments"></a>HTML.</p> <p><strong>Nota:</strong> Tali misure dovrebbero essere attuate in modo che possano essere attivate o disattivate secondo necessità; quando un sistema funziona senza problemi, l'onere della raccolta delle statistiche non sarà necessario.</p> </td> 
   </tr> 
   <tr> 
    <td>Apache Bench</td> 
@@ -606,7 +605,7 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
   </tr> 
   <tr> 
    <td>JMeter</td> 
-   <td>Carico e prove funzionali.</td> 
+   <td>Test di carico e di funzionamento.</td> 
    <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td> 
   </tr> 
   <tr> 
@@ -617,26 +616,26 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
   <tr> 
    <td>JConsole</td> 
    <td>Osservare le metriche e i thread JVM.</td> 
-   <td><p>Utilizzo: jconsole</p> <p>Consulta <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> e <a href="#monitoring-performance-using-jconsole">Monitoring Performance utilizzando JConsole</a>.</p> <p><strong></strong> Nota: Con JDK 1.6, JConsole è estensibile con i plug-in; ad esempio, Top o TDA (Thread Dump Analyzer).</p> </td> 
+   <td><p>Utilizzo: jconsole</p> <p>Consulta <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> e <a href="#monitoring-performance-using-jconsole">Monitoring Performance utilizzando JConsole</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, JConsole è estensibile con i plug-in; ad esempio, Top o TDA (Thread Dump Analyzer).</p> </td> 
   </tr> 
   <tr> 
    <td>Java VisualVM</td> 
    <td>Osservare le metriche JVM, i thread, la memoria e il profiling.</td> 
-   <td><p>Utilizzo: jvisualvm o visualvm<br /> </p> <p>Vedere <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> e <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance utilizzando (J)VisualVM</a>.</p> <p><strong></strong> Nota: Con JDK 1.6, VisualVM è estensibile con i plug-in.</p> </td> 
+   <td><p>Utilizzo: jvisualvm o visualvm<br /> </p> <p>Vedere <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> e <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance utilizzando (J)VisualVM</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, VisualVM è estensibile con i plug-in.</p> </td> 
   </tr> 
   <tr> 
-   <td>tronco/striscia, elenco</td> 
+   <td>truss/strass, lsof</td> 
    <td>Approfondimenti di chiamata e analisi del processo del kernel (Unix).</td> 
    <td>Comandi Unix/Linux.</td> 
   </tr> 
   <tr> 
-   <td>Statistiche temporali</td> 
+   <td>Statistiche di temporizzazione</td> 
    <td>Consultate le statistiche sui tempi per il rendering della pagina.</td> 
    <td><p>Per visualizzare le statistiche sui tempi di rendering della pagina, potete usare <strong>Ctrl+Maiusc+U</strong> insieme a <code>?debugClientLibs=true</code> un’impostazione nell’URL.</p> </td> 
   </tr> 
   <tr> 
    <td>Strumento di profilazione CPU e memoria<br /> </td> 
-   <td><a href="#interpreting-the-request-log">Utilizzato per analizzare le richieste lente durante lo sviluppo</a>.</td> 
+   <td><a href="#interpreting-the-request-log">Utilizzato per l'analisi di richieste lente durante lo sviluppo</a>.</td> 
    <td>Ad esempio, <a href="https://www.yourkit.com/">YourKit</a>.</td> 
   </tr> 
   <tr> 
@@ -928,7 +927,7 @@ Le seguenti informazioni possono essere utili:
 * [Quante pagine si trovano attualmente nel sistema?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Se utilizzate MSM, qual è il numero medio di rollout al mese?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [Qual è il numero medio di Live Copy al mese?](#what-is-the-average-number-of-live-copies-per-month)
-* [Se usi Risorse AEM, quante risorse attualmente mantieni in Risorse?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [Se utilizzate AEM Assets, quante risorse mantenete attualmente in Risorse?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
 * [Qual è la dimensione media delle risorse?](#what-is-the-average-size-of-the-assets)
 * [Quanti modelli sono attualmente utilizzati?](#how-many-templates-are-currently-used)
 * [Quanti componenti sono attualmente utilizzati?](#how-many-components-are-currently-used)
@@ -958,7 +957,7 @@ Per visualizzare il numero totale di attivazioni di pagina dall&#39;installazion
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Quindi calcolare il numero di giorni trascorsi dall&#39;installazione per calcolare la media.
 
@@ -970,7 +969,7 @@ Per visualizzare il numero di pagine attualmente sul server, utilizzare una quer
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:Page)`
+* **Query** `//element(*, cq:Page)`
 
 #### Se utilizzate MSM, qual è il numero medio di rollout al mese? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -980,7 +979,7 @@ Per determinare il numero totale di rollout dall&#39;installazione utilizzando u
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calcolare il numero di mesi trascorsi dall&#39;installazione per calcolare la media.
 
@@ -992,11 +991,11 @@ Per determinare il numero totale di Live Copy effettuate dall&#39;installazione 
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:LiveSyncConfig)`
+* **Query** `//element(*, cq:LiveSyncConfig)`
 
 Utilizzate di nuovo il numero di mesi trascorsi dall&#39;installazione per calcolare la media.
 
-#### Se usi Risorse AEM, quante risorse attualmente mantieni in Risorse? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Se utilizzate AEM Assets, quante risorse mantenete attualmente in Risorse? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Per verificare il numero di risorse DAM attualmente gestite, utilizzate una query sull&#39;archivio; tramite CRXDE - Strumenti - Query:
 
@@ -1004,7 +1003,7 @@ Per verificare il numero di risorse DAM attualmente gestite, utilizzate una quer
 
 * **Percorso** `/`
 
-* **Query**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Qual è la dimensione media delle risorse? {#what-is-the-average-size-of-the-assets}
 
@@ -1029,7 +1028,7 @@ Per visualizzare il numero di modelli attualmente sul server, utilizzare una que
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:Template)`
+* **Query** `//element(*, cq:Template)`
 
 #### Quanti componenti sono attualmente utilizzati? {#how-many-components-are-currently-used}
 
@@ -1039,11 +1038,11 @@ Per visualizzare il numero di componenti attualmente presenti sul server, utiliz
 
 * **Percorso** `/`
 
-* **Query**`//element(*, cq:Component)`
+* **Query** `//element(*, cq:Component)`
 
 #### Quante richieste all’ora si verificano nel sistema di authoring in fase di picco? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
-Per determinare le richieste per ora nel sistema di creazione in fase di picco:
+Per determinare le richieste per ora nel sistema di authoring in fase di picco:
 
 1. Per determinare il numero totale di richieste dall&#39;installazione, utilizzare la riga di comando:
 
@@ -1073,10 +1072,11 @@ Di seguito è riportato un elenco di suggerimenti su come verificare se si verif
 >
 >Per ulteriori informazioni, consultate anche i seguenti articoli:
 >
->* [Fanelli di filetto](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [Fanelli di filettatura](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
 >* [Analisi dei problemi di memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analisi mediante il profiler incorporato](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Analizzare i processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
 >
 
 
@@ -1087,7 +1087,7 @@ Se la CPU del sistema è in esecuzione costantemente al 100%, vedere:
 
 * La Knowledge Base:
 
-   * [Analisi dei processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+   * [Analizzare i processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### Memoria insufficiente {#out-of-memory}
 
