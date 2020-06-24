@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 72%
 
 ---
 
@@ -88,13 +91,13 @@ Per creare un pubblico di Adobe Target:
 
 | **Attributo** | **Descrizione** | **Per ulteriori informazioni** |
 |---|---|---|
-| **Mobile** | Consente di eseguire il targeting dei dispositivi mobili in base a parametri quali dispositivo mobile, tipo di dispositivo, fornitore del dispositivo, dimensioni dello schermo (in pixel) e altro ancora. | Consulta la documentazione [di](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile in Adobe Target. |
-| **Personalizzata** | I parametri personalizzati sono parametri mbox. Se passi dei parametri mbox alle mbox o se utilizzi la funzione targetPageParams, tali parametri vengono visualizzati qui per poter essere utilizzati nei tipi di pubblico. | Consultate la documentazione [sui parametri](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizzati in Adobe Target. |
+| **Mobile** | Dispositivi mobili Target basati su parametri quali dispositivo mobile, tipo di dispositivo, fornitore del dispositivo, dimensioni dello schermo (in pixel) e altro ancora. | Consulta la documentazione [](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile in  Adobe Target. |
+| **Personalizzata** | I parametri personalizzati sono parametri mbox. Se passi dei parametri mbox alle mbox o se utilizzi la funzione targetPageParams, tali parametri vengono visualizzati qui per poter essere utilizzati nei tipi di pubblico. | Consultate la documentazione [Parametri](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizzati in  Adobe Target. |
 | **Sistema operativo** | Potete eseguire il targeting dei visitatori che utilizzano un determinato sistema operativo. | Individua utenti che usano Linux, Macintosh, o Windows. |
-| **Pagine del sito** | Esegue il targeting dei visitatori che si trovano su una pagina specifica o che dispongono di un parametro mbox specifico. | Consulta la documentazione [Pagine](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) del sito in Adobe Target. |
-| **Browser** | Potete eseguire il targeting degli utenti che utilizzano un browser specifico o opzioni specifiche del browser quando visitano la pagina. | Consultate [Documentazione sulle opzioni](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)del browser in Adobe Target. |
-| **Profilo visitatore** | Esegue il targeting dei visitatori che soddisfano parametri di profilo specifici. | Consulta la documentazione [sul profilo del](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) visitatore in Adobe Target. |
-| **Sorgenti di traffico** | Esegue il targeting dei visitatori in base al motore di ricerca o alla pagina di destinazione che li rimanda al sito. | Consulta la documentazione [Origini di](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) traffico in Adobe Target. |
+| **Pagine del sito** | Visitatori Target che si trovano su una pagina specifica o che dispongono di un parametro mbox specifico. | Consultate la documentazione [Pagine](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) del sito  Adobe Target. |
+| **Browser** | Potete eseguire il targeting degli utenti che utilizzano un browser specifico o opzioni specifiche del browser quando visitano la pagina. | Consultate [Documentazione sulle opzioni](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)del browser in  Adobe Target. |
+| **Profilo visitatore** | Visitatori Target che soddisfano parametri di profilo specifici. | Consulta la documentazione [sul profilo del](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) visitatore  Adobe Target. |
+| **Sorgenti di traffico** | Visitatori Target basati sul motore di ricerca o sulla pagina di destinazione che li rimanda al sito. | Consulta la documentazione [Origini](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) traffico in  Adobe Target. |
 
 ## Modifica di un pubblico nella console Pubblico {#modifying-an-audience-in-the-audiences-console}
 
