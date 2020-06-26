@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '7873'
+source-wordcount: '7833'
 ht-degree: 1%
 
 ---
@@ -277,7 +277,6 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
    * Nel campo Password **[!UICONTROL file]** KeyStore, immettere la password del file KeyStore. Questa _non_ è la password KeyStore creata nel passaggio 5, ma è la password del file KeyStore fornita da Adobe nel messaggio e-mail di benvenuto inviato al momento del provisioning. Se non hai ricevuto una password per il file KeyStore, contatta l’Assistenza clienti Adobe.
    * Nel campo Password **[!UICONTROL chiave]** privata, immettete la password della chiave privata (potrebbe essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto una password per la chiave privata, contatta l’Assistenza clienti Adobe.
    * Nel campo Alias **[!UICONTROL chiave]** privata, immettere l&#39;alias della chiave privata. Esempio, `companyname-alias`. Adobe fornisce l’alias della chiave privata nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti Adobe.
-
    ![edit_settings_fordynamic-media-replica2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Toccate **[!UICONTROL Salva e chiudi]** per salvare le modifiche a questo utente.
@@ -296,16 +295,15 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
    * **[!UICONTROL ID]** tenant: questo valore è il nome della società/tenant che viene pubblicato nel servizio di replica. Questo valore è l&#39;ID tenant fornito da Adobe nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto questa notifica, contatta l’Assistenza clienti Adobe.
    * **[!UICONTROL Alias]** archivio chiavi - Questo valore è uguale al valore** Nuovo alias** impostato durante la generazione della chiave in [Impostazione autenticazione](#setting-up-authentication); ad esempio, `replication`. (vedere il passaggio 7 in [Impostazione dell&#39;autenticazione](#setting-up-authentication).)
    * **[!UICONTROL Password]** archivio chiavi - Si tratta della password KeyStore creata quando hai toccato **[!UICONTROL Create KeyStore]**. Adobe non fornisce questa password. Vedere il passaggio 5 della [configurazione dell&#39;autenticazione](#setting-up-authentication).
-
    L&#39;immagine seguente mostra l&#39;agente di replica con dati di esempio:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
 1. Toccate **[!UICONTROL OK]**.
 
-### Validating the Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
+### Convalida dell&#39;agente di replica per Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
-To validate the replication agent for dynamic media, do the following:
+Per convalidare l&#39;agente di replica per i supporti dinamici, eseguire le operazioni seguenti:
 
 Toccate **[!UICONTROL Test della connessione]**. Esempio di output:
 
@@ -324,16 +322,16 @@ Replication test succeeded
 ```
 
 >[!NOTE]
-You can also check by doing one of the following:
+È inoltre possibile eseguire una delle seguenti operazioni:
 * Controllate i registri di replica per essere certi che la risorsa sia replicata.
-* Publish an image. Tap the image and select **[!UICONTROL Viewers]** in drop-down menu. Selezionate un predefinito per visualizzatori, quindi toccate **[!UICONTROL URL]**, quindi copiate e incollate l’URL nel browser per verificare che sia visibile l’immagine.
+* Pubblicate un’immagine. Toccate l’immagine e selezionate **[!UICONTROL Visualizzatori]** nel menu a discesa. Selezionate un predefinito per visualizzatori, quindi toccate **[!UICONTROL URL]**, quindi copiate e incollate l’URL nel browser per verificare che sia visibile l’immagine.
 
 
 ### Autenticazione risoluzione dei problemi {#troubleshooting-authentication}
 
-When setting up authentication, here are some issues you may run into with their solutions. Before checking these, make sure you have set up replication.
+Durante la configurazione dell&#39;autenticazione, si possono verificare alcuni problemi con le relative soluzioni. Prima di eseguire il controllo, assicurarsi di aver configurato la replica.
 
-#### Problem: HTTP Status Code 401 with Message - Authorization Required {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Codice di stato HTTP 401 con messaggio - Autorizzazione richiesta {#problem-http-status-code-with-message-authorization-required}
 
 Questo problema può essere causato da un errore durante la configurazione di KeyStore per `dynamic-media-replication` l&#39;utente.
 
@@ -356,9 +354,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Solution**: Check that the `KeyStore` is saved to **[!UICONTROL dynamic-media-replication]** user and is provided with the correct password.
+**Soluzione**: Verificate che il file `KeyStore` venga salvato nell’utente di replica **[!UICONTROL multimediale]** dinamica e sia fornito con la password corretta.
 
-#### Problem: Could Not Decrypt Key - Could Not Decrypt Data {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### Problema: Impossibile Decrittografare La Chiave. Impossibile Decrittografare I Dati {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -372,11 +370,11 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Soluzione**: Controllare la password. The password saved in the replication agent is not the same password that was used to create keystore.
+**Soluzione**: Controllare la password. La password salvata nell&#39;agente di replica non è la stessa utilizzata per creare l&#39;archivio chiavi.
 
-#### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### Problema: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-This issue is caused by a configuration error in your AEM Author instance. Il processo Java sull&#39;Autore non ottiene il risultato corretto `javax.net.ssl.trustStore`. Questo errore viene visualizzato nel registro di replica:
+Questo problema è causato da un errore di configurazione nell&#39;istanza AEM Author. Il processo Java sull&#39;Autore non ottiene il risultato corretto `javax.net.ssl.trustStore`. Questo errore viene visualizzato nel registro di replica:
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
@@ -392,7 +390,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Solution**: Make sure the java process on the AEM Author has the system property **-Djavax.net.ssl.trustStore=** set to a valid truststore.
+**Soluzione**: Verificate che la proprietà di sistema **-Djavax.net.ssl.trustStore=** nel processo Java sul AEM Author sia impostata su un trust store valido.
 
 #### Problema: KeyStore non è configurato o non è inizializzato {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -555,7 +553,7 @@ Accertatevi che il pacchetto di [!DNL Video Analytics] predefiniti dal primo nod
 
    * **Controllare il[!DNL Video Analytics]predefinito tramite il server immagini**
 
-      You can validate the [!DNL Video Analytics] preset directly by making an Image Server `req=userdata` request.
+      Potete convalidare il [!DNL Video Analytics] predefinito direttamente effettuando una richiesta Server immagini `req=userdata` .
 
       Ad esempio, per visualizzare il [!DNL Video Analytics] predefinito sul nodo Autore, potete effettuare la seguente richiesta:
 
@@ -606,7 +604,7 @@ Le proprietà del predefinito sono le seguenti:
 
 AEM 6.4 e versioni successive salvano questo predefinito in `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-## Replicating Catalog Settings {#replicating-catalog-settings}
+## Replica delle impostazioni del catalogo {#replicating-catalog-settings}
 
 È necessario pubblicare le impostazioni predefinite del catalogo come parte del processo di configurazione tramite JCR. Per replicare le impostazioni del catalogo:
 
@@ -630,11 +628,11 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 ## Filtrare le risorse per la replica {#filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate _all_ assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
+Nelle distribuzioni non Dynamic Media, potete replicare _tutte_ le risorse (immagini e video) dall’ambiente di authoring di AEM al nodo di pubblicazione di AEM. Questo flusso di lavoro è necessario perché anche i server di pubblicazione AEM forniscono le risorse.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the cloud, there is no need to replicate those same assets to AEM publish nodes. Tale flusso di lavoro &quot;ibrido per la pubblicazione&quot; evita costi di archiviazione aggiuntivi e tempi di elaborazione più lunghi per la replica delle risorse. Altri contenuti, come visualizzatori Dynamic Media, pagine del sito e contenuti statici, continuano a essere distribuiti dai nodi di pubblicazione di AEM.
+Tuttavia, nelle distribuzioni Dynamic Media, poiché le risorse vengono distribuite nel cloud, non è necessario replicare le stesse risorse nei nodi di pubblicazione AEM. Tale flusso di lavoro &quot;ibrido per la pubblicazione&quot; evita costi di archiviazione aggiuntivi e tempi di elaborazione più lunghi per la replica delle risorse. Altri contenuti, come visualizzatori Dynamic Media, pagine del sito e contenuti statici, continuano a essere distribuiti dai nodi di pubblicazione di AEM.
 
-Besides replicating the assets, the following non-assets are also replicated:
+Oltre a replicare le risorse, vengono anche replicate le seguenti risorse non disponibili:
 
 * Configurazione Dynamic Media Delivery: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
 * Predefiniti immagini: `/conf/global/settings/dam/dm/presets/macros`
@@ -658,9 +656,9 @@ Se si utilizza Dynamic Media per 1) immagini in produzione __ o 2) immagini e vi
    <td>Distribuzione delle immagini Dynamic Media</td> 
    <td><p>filter-images</p> <p>set di filtri</p> <p> </p> </td> 
    <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>applicazione/</strong> e termina con <strong>set</strong>.</p> </td> 
-   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will: 
+   <td>Le "immagini filtro" predefinite (applicabili a singole risorse di immagini, comprese le immagini interattive) e i "set di filtri" (applicabili a set 360 gradi, set di immagini, set di file multimediali diversi e set di caroselli) consentono di: 
     <ul> 
-     <li>Include PTIFF images and Metadata for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
+     <li>Includete immagini PTIFF e metadati per la replica (qualsiasi rappresentazione che inizia con <strong>cqdam</strong>).</li> 
      <li>Escludete dalla replica le rappresentazioni originali dell’immagine e dell’immagine statica.</li> 
     </ul> </td> 
   </tr> 
@@ -668,20 +666,20 @@ Se si utilizza Dynamic Media per 1) immagini in produzione __ o 2) immagini e vi
    <td>Distribuzione video Dynamic Media</td> 
    <td>filter-video</td> 
    <td>Inizia con <strong>video/</strong></td> 
-   <td>The out-of-the-box "filter-video" will: 
+   <td>Il "filtro-video" preimpostato: 
     <ul> 
-     <li>Include proxy video renditions, video thumbnail/poster image, metadata (both at parent video and video renditions) for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
-     <li>Escludete dalla replica le rappresentazioni video e le miniature statiche originali.<br /> <br /> <strong>Note:</strong> The proxy video renditions do not contain binaries, but instead are just node properties. Pertanto, non vi è alcun impatto sulle dimensioni del repository dell'editore.</li> 
+     <li>Includete rappresentazioni video proxy, miniature video/immagini poster, metadati (sia nel video principale che nelle rappresentazioni video) per la replica (qualsiasi rappresentazione che inizia con <strong>cqdam</strong>).</li> 
+     <li>Escludete dalla replica le rappresentazioni video e le miniature statiche originali.<br /> <br /> <strong>Nota:</strong> Le rappresentazioni video proxy non contengono file binari, ma sono solo proprietà dei nodi. Pertanto, non vi è alcun impatto sulle dimensioni del repository dell'editore.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic (Scene7) integration</td> 
+   <td>Integrazione con Dynamic Media Classic (Scene7)</td> 
    <td><p>filter-images</p> <p>set di filtri</p> <p>filter-video</p> </td> 
-   <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>applicazione/</strong> e termina con <strong>set</strong>.</p> <p>Starts with <strong>video/</strong></p> </td> 
-   <td><p>Configurate l’URI di trasporto in modo che punti al server di pubblicazione AEM invece dell’URL del servizio di replica di Adobe Dynamic Media Cloud. Setting up this filter will allow Dynamic Media Classic to deliver assets instead of the AEM publish instance.</p> <p>I "filtri-immagini" integrati, i "set-filtri" e i "filtri-video" consentiranno di:</p> 
+   <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>applicazione/</strong> e termina con <strong>set</strong>.</p> <p>Inizia con <strong>video/</strong></p> </td> 
+   <td><p>Configurate l’URI di trasporto in modo che punti al server di pubblicazione AEM invece dell’URL del servizio di replica di Adobe Dynamic Media Cloud. L’impostazione di questo filtro consente ad Dynamic Media Classic di distribuire le risorse invece dell’istanza di pubblicazione AEM.</p> <p>I "filtri-immagini" integrati, i "set-filtri" e i "filtri-video" consentiranno di:</p> 
     <ul> 
-     <li>Includete immagini PTIFF, rappresentazioni video proxy e metadati per la replica. However, because they do not exist in the JCR-for those running AEM - Dynamic Media Classic integration-it effectively does nothing.</li> 
-     <li>Exclude from replication the original image, static image renditions, original video, and static thumbnail renditions. Dynamic Media Classic distribuirà invece risorse per immagini e video.</li> 
+     <li>Includete immagini PTIFF, rappresentazioni video proxy e metadati per la replica. Tuttavia, poiché non esistono nel JCR per coloro che eseguono AEM - l'integrazione Dynamic Media Classic non funziona correttamente.</li> 
+     <li>Escludete dalla replica l’immagine originale, le rappresentazioni statiche delle immagini, il video originale e le rappresentazioni statiche delle miniature. Dynamic Media Classic distribuirà invece risorse per immagini e video.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -723,14 +721,14 @@ Se utilizzate Dynamic Media per l&#39;imaging nelle distribuzioni non di produzi
 
 1. Individuate **[!UICONTROL le immagini]** del filtro, fate clic con il pulsante destro del mouse su di esso e selezionate **[!UICONTROL Copia]**.
 1. Nella struttura di cartelle a sinistra, individuate `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
+1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Crea > Crea nodo]**. Immettere il nome `damRenditionFilters` del tipo `nt:unstructured`.
 1. Individuare [!UICONTROL `damRenditionFilters`], fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Incolla]**.
 
-This sets up the AEM publish instance to deliver the images to your non-production environment. The filter will also exclude from replication the original image and static renditions, which are not needed on the publish instance.
+In questo modo l’istanza di pubblicazione AEM viene impostata per trasmettere le immagini al proprio ambiente non di produzione. Il filtro escluderà dalla replica anche le rappresentazioni statiche e dell’immagine originale, che non sono necessarie nell’istanza di pubblicazione.
 
 >[!NOTE]
-If there are many different filters in an author, each agent needs a different user assigned to it. The granite code enforces one-filter-per-user model. Always have a different user for each filter set up.
-If you are using more than one filter on a server—for example, one filter for replication to publish and a second filter for s7delivery—then you need to ensure that these two filters have a different **userId** assigned to them in the **[!UICONTROL jcr:content]** node. See the image that follows:
+Se in un autore sono presenti molti filtri diversi, a ogni agente deve essere assegnato un utente diverso. Il codice granito applica un solo filtro per utente. Per ogni configurazione del filtro, dovete sempre avere un utente diverso.
+Se utilizzate più filtri su un server, ad esempio un filtro per la pubblicazione della replica e un secondo filtro per la distribuzione s7delivery, dovete verificare che a questi due filtri sia assegnato un **ID** utente **[!UICONTROL diverso nel nodo]** jcr:content. Guardate l’immagine che segue:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -797,7 +795,7 @@ Se si voleva solo replicare l&#39;originale, allora si entrava `+original`.
 La configurazione di Dynamic Media Image Server comporta la modifica del bundle Adobe CQ Scene7 Image Server e del bundle Adobe CQ Scene7 PlatformServer.
 
 >[!NOTE]
-Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media). Tuttavia, potete scegliere di configurare Dynamic Media Image Server in modo che soddisfi determinate specifiche o requisiti.
+Dynamic Media funziona out-of-the-box [dopo che è abilitato](#enabling-dynamic-media). Tuttavia, potete scegliere di configurare Dynamic Media Image Server in modo che soddisfi determinate specifiche o requisiti.
 
 **Prerequisito**: _Prima_ di configurare Dynamic Media Image Server, verificare che la VM di Windows includa un&#39;installazione delle librerie Microsoft Visual C++. Le librerie sono necessarie per eseguire Dynamic Media Image Server. È possibile [scaricare Microsoft Visual C++ 2010 Redistributable Package (x64) qui](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
 
@@ -827,65 +825,65 @@ Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media
   <tr> 
    <td>TcpPort.name</td> 
    <td><code><em>empty</em></code></td> 
-   <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td> 
+   <td>Numero di porta da utilizzare per la comunicazione con il processo ImageServer. Per impostazione predefinita, la porta libera viene rilevata automaticamente.</td> 
   </tr> 
   <tr> 
    <td>AllowRemoteAccess.name</td> 
    <td><code><em>empty</em></code></td> 
-   <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost need to specify the actual domain or IP address of the specific VM instance. Il motivo è che il localhost potrebbe puntare al sistema padre della VM.</p> <p>Domains or IP addresses for the VM may need to have a host file entry so that it can resolve itself.</p> </td> 
+   <td><p>Consenti o disabilita l'accesso remoto al processo ImageServer. Se è false, il server immagini ascolta solo localhost.</p> <p>Le impostazioni esterne predefinite che puntano all'host locale devono specificare il dominio o l'indirizzo IP effettivi dell'istanza VM specifica. Il motivo è che il localhost potrebbe puntare al sistema padre della VM.</p> <p>I domini o gli indirizzi IP per la VM possono avere bisogno di una voce di file host in modo che possa risolvere se stessa.</p> </td> 
   </tr> 
   <tr> 
    <td>MaxRenderRongPixels</td> 
-   <td>16 MPixels</td> 
-   <td>Maximum size in megapixels that is rendered.</td> 
+   <td>16 MPixel</td> 
+   <td>Dimensione massima in megapixel rappresentata.</td> 
   </tr> 
   <tr> 
    <td>MaxMessageSize</td> 
-   <td>16 MBytes</td> 
+   <td>16 MByte</td> 
    <td>Dimensione massima del messaggio in megabyte consegnato.</td> 
   </tr> 
   <tr> 
    <td>RandomAccessUrlTimeout</td> 
    <td>20</td> 
-   <td>Timeout value for how long in seconds the ImageServer will wait for the JCR to respond to a ranged tile request.</td> 
+   <td>Valore di timeout per quanto tempo in secondi ImageServer attenderà che il JCR risponda a una richiesta di sezione intervallo.</td> 
   </tr> 
   <tr> 
-   <td>WorkerThreads</td> 
+   <td>WorkerThread</td> 
    <td>10</td> 
-   <td>Number of worker threads.</td> 
+   <td>Numero di thread di lavoro.</td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Tap **[!UICONTROL Save]**.
-1. In the list of bundles, to the right of **[!UICONTROL Adobe CQ Scene7 PlatformServer]**, tap the **[!UICONTROL Edit]** icon.
-1. In the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** dialog box, set the following default value options:
+1. Toccate **[!UICONTROL Salva]**.
+1. Nell’elenco dei bundle, a destra di **[!UICONTROL Adobe CQ Scene7 PlatformServer]**, toccate l’icona **[!UICONTROL Modifica]** .
+1. Nella finestra di dialogo **[!UICONTROL Adobe CQ Scene7 PlatformServer]** , impostate le seguenti opzioni predefinite:
 
    >[!NOTE]
-   Dynamic Media Image Server uses its own disk cache to cache responses. The AEM HTTP cache and the Dispacher cannot be used to cache responses from Dynamic Media Image Server.
+   Dynamic Media Image Server utilizza una propria cache del disco per memorizzare le risposte nella cache. La cache AEM HTTP e il dispatcher non possono essere utilizzati per memorizzare le risposte nella cache da Dynamic Media Image Server.
 
    | **Proprietà** | **Valore predefinito** | **Descrizione** |
    |---|---|---|
-   | **[!UICONTROL Cache enabled]** | Selezionato | Whether or not the response cache is enabled. |
-   | **[!UICONTROL Cache roots]** | cache | Uno o più percorsi alle cartelle della cache delle risposte. Relative paths are resolved against the internal s7imaging bundle folder. |
+   | **[!UICONTROL Cache abilitata]** | Selezionato | Indica se la cache delle risposte è abilitata o meno. |
+   | **[!UICONTROL Radici cache]** | cache | Uno o più percorsi alle cartelle della cache delle risposte. I percorsi relativi vengono risolti rispetto alla cartella interna del bundle di imaging s7imaging. |
    | **[!UICONTROL Dimensione massima cache]** | 200000000 | Dimensione massima della cache della risposta in byte. |
-   | **[!UICONTROL Cache Max Entries]** | 100000 | Numero massimo di voci consentite nella cache. |
+   | **[!UICONTROL N. max cache]** | 100000 | Numero massimo di voci consentite nella cache. |
 
-### Default Manifest settings {#default-manifest-settings}
+### Impostazioni Manifest predefinite {#default-manifest-settings}
 
-The default manifest lets you configure the defaults that are used to generate the Dynamic Media Delivery responses. You can fine tune quality (JPEG quality, resolution, resampling mode), caching (expiration), and prevent the rendering of images that are too large (defaultpix, defaultthumbpix, maxpix).
+Il manifesto predefinito consente di configurare i valori predefiniti utilizzati per generare le risposte di Dynamic Media Delivery. Potete ottimizzare la qualità (qualità JPEG, risoluzione, modalità di ricampionamento), la memorizzazione nella cache (scadenza) e impedire il rendering di immagini troppo grandi (valori predefiniti, puntini predefiniti, maxpix).
 
-The location of the default manifest configuration is taken from the **[!UICONTROL Catalog root]** default value of the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundle. By default this value is located at the following path within **[!UICONTROL Tools > General > CRXDE Lite]**:
+La posizione della configurazione del manifesto predefinito viene presa dal valore predefinito **[!UICONTROL Catalog root]** del bundle **[!UICONTROL Adobe CQ Scene7 PlatformServer]** . Per impostazione predefinita, questo valore si trova nel percorso seguente in **[!UICONTROL Strumenti > Generale > CRXDE Lite]**:
 
 `/conf/global/settings/dam/dm/imageserver/`
 
 ![configimageservercrxdelite](assets/configimageservercrxdelite.png)
 
-You can change the values of the properties, as described in the table below, by entering new values.
+È possibile modificare i valori delle proprietà, come descritto nella tabella seguente, immettendo nuovi valori.
 
 Dopo aver modificato il manifesto predefinito, toccate **** Salva tutto nell’angolo in alto a sinistra della pagina.
 
-Be sure you tap the **[!UICONTROL Access Control]** tab (to the right of the **[!UICONTROL Properties]** tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
+Toccate la scheda Controllo **** accesso (a destra della scheda **[!UICONTROL Proprietà]** ), quindi impostate i privilegi di controllo di accesso per tutti `jcr:read` gli utenti e per gli utenti di replica per contenuti multimediali dinamici.
 
 ![configimageservercrxdeliteaccesscontroltab](assets/configimageservercrxdeliteaccesscontroltab.png)
 
@@ -901,37 +899,37 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>Default background color. RGB value used to fill in any area of a reply image which does not contain actual image data.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> nell’API Image Serving.</p> </td> 
+   <td><p>Colore di sfondo predefinito. Valore RGB utilizzato per riempire un’area dell’immagine di risposta che non contiene dati immagine effettivi.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> nell’API Image Serving.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultpix</td> 
    <td>300,300</td> 
-   <td><p>Default view size. Il server vincola le immagini di risposta a valori non superiori a tali valori di larghezza e altezza, se la richiesta non specifica esplicitamente la dimensione della visualizzazione utilizzando wid=, hei= o scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. Does not apply to nested/embedded requests.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">DefaultPix</a> in the Image Serving API.</p> <p>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset.</p> </td> 
+   <td><p>Dimensione predefinita della visualizzazione. Il server vincola le immagini di risposta a valori non superiori a tali valori di larghezza e altezza, se la richiesta non specifica esplicitamente la dimensione della visualizzazione utilizzando wid=, hei= o scl=.</p> <p>Specificati come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli non vincolati. Non si applica alle richieste nidificate/incorporate.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">DefaultPix</a> nell’API di Image Server.</p> <p>In genere, tuttavia, per distribuire la risorsa si utilizza un predefinito per visualizzatori o immagini. Il valore predefinito è applicabile solo a una risorsa che non utilizza un predefinito per visualizzatori o immagini.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultthumbnail pix</td> 
    <td>100,100</td> 
-   <td><p>Dimensione predefinita miniatura. Utilizzato al posto di attribute::DefaultPix per le richieste di miniature (req=tmb).</p> <p>The server constrains reply images to be no larger than this width and height, if a thumbnail request (req=tmb) does not specify the size explicitly not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. </p> <p>Does not apply to nested/embedded requests.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> nell’API di Image Server. </p> </td> 
+   <td><p>Dimensione predefinita miniatura. Utilizzato al posto di attribute::DefaultPix per le richieste di miniature (req=tmb).</p> <p>Il server vincola le immagini di risposta a valori non superiori a tali valori di larghezza e altezza, se una richiesta di miniatura (req=tmb) non specifica in modo esplicito la dimensione della visualizzazione utilizzando esplicitamente wid=, hei= o scl=.</p> <p>Specificati come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli non vincolati. </p> <p>Non si applica alle richieste nidificate/incorporate.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> nell’API di Image Server. </p> </td> 
   </tr> 
   <tr> 
    <td>exit</td> 
    <td>36000000</td> 
-   <td><p>Durata predefinita cache client. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in the Image Serving API.</p> </td> 
+   <td><p>Durata predefinita cache client. Fornisce un intervallo di scadenza predefinito nel caso in cui un determinato record di catalogo non contenga un valore di catalogo valido::Expiration.</p> <p>Numero reale, 0 o superiore. Numero di millisecondi fino alla scadenza dalla generazione dei dati di risposta. Impostate su 0 per scadere sempre l'immagine di risposta immediatamente, il che disabilita in modo efficace il caching del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se viene pubblicata una nuova immagine, occorrono 10 ore prima che la vecchia immagine lasci la cache dell'utente. Contatta l’Assistenza clienti se hai bisogno di cancellare la cache prima possibile.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Scadenza</a> nell’API di Image Server.</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>Default JPEG encoding attributes. Specifies the default attributes for JPEG reply images.</p> <p>Integer number and flag, separated by a comma. The first value is in the range 1..100 and defines the quality. The second value may be 0 for normal behavior, or 1 to disable the RGB chromaticity down-sampling usually employed by JPEG encoders.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> in the Image Serving API.</p> </td> 
+   <td><p>Attributi di codifica JPEG predefiniti. Specifica gli attributi predefiniti per le immagini di risposta JPEG.</p> <p>Numero intero e flag, separati da virgola. Il primo valore è compreso nell’intervallo 1.100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale, o 1 per disattivare il downsampling della cromaticità RGB generalmente utilizzato dagli encoder JPEG.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> nell’API Image Serving.</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
    <td>2000,2000</td> 
-   <td><p>Reply image size limit. Maximum reply image width and height that is returned to the client.</p> <p>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">MaxPix</a> in the Image Serving API.</p> </td> 
+   <td><p>Rispondi al limite delle dimensioni dell’immagine. Larghezza e altezza massime dell'immagine di risposta restituite al client.</p> <p>Il server restituisce un errore se una richiesta causa un'immagine di risposta la cui larghezza o altezza è maggiore dell'attributo::MaxPix.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">MaxPix</a> nell’API di Image Server.</p> </td> 
   </tr> 
   <tr> 
    <td>resmode</td> 
    <td>SHARP2</td> 
-   <td><p>Default resampling mode. Specifies the default resampling and interpolation attributes to be used for scaling image data.</p> <p>Utilizzato quando resMode= non è specificato in una richiesta.</p> <p>Allowed values include BILIN, BICUB, or SHARP2.</p> <p>Enum. Set to 2 for bilin, 3 for bicub, or 4 for sharp2 interpolation mode. Use sharp2 for best results.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">ResMode</a> in the Image Serving API.</p> </td> 
+   <td><p>Modalità di ricampionamento predefinita. Specifica gli attributi di ricampionamento e interpolazione predefiniti da usare per il ridimensionamento dei dati immagine.</p> <p>Utilizzato quando resMode= non è specificato in una richiesta.</p> <p>I valori consentiti sono BILIN, BICUB o SHARP2.</p> <p>Enum. Impostare su 2 per bilin, 3 per bicub o 4 per la modalità di interpolazione sharp2. Utilizzate sharp2 per ottenere risultati ottimali.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">ResMode</a> nell’API di Image Serving.</p> </td> 
   </tr> 
   <tr> 
    <td>risoluzione</td> 
@@ -939,7 +937,7 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
    <td><p>Risoluzione predefinita dell'oggetto. Fornisce una risoluzione predefinita dell'oggetto nel caso in cui un determinato record di catalogo non contenga un valore valido per il catalogo::Resolution.</p> <p>Numero reale, maggiore di 0. Generalmente espresso come pixel per pollice, ma può anche essere espresso in altre unità, come i pixel per metro.</p> <p>Consultate anche <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html">Risoluzione</a> nell’API di Image Server.</p> </td> 
   </tr> 
   <tr> 
-   <td>thumbnailtime</td> 
+   <td>thumbnailTime</td> 
    <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td> 
    <td>Questi valori rappresentano un’istantanea del tempo di riproduzione video e vengono passati a <a href="https://encoding.com/">encoding.com</a>. Per ulteriori informazioni, consultate <a href="/help/assets/video.md#about-video-thumbnails">Le miniature</a> video.</td> 
   </tr> 
@@ -963,7 +961,7 @@ Gli scenari d’uso avanzati possono utilizzare un modificatore **[!UICONTROL ic
 * **[!UICONTROL iccEmbed]** - [Incorpora profilo colore.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Il set standard di profili colore di Adobe è disponibile solo se avete installato [Feature Pack 12445 da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) o [Feature Pack 12445 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) . Tutti i pacchetti di funzionalità e i service pack sono disponibili tramite [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) e [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il Feature Pack 12445 fornisce i profili colore di Adobe.
+Il set standard di profili colore Adobe è disponibile solo se è stato installato Feature Pack 12445 [da Distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) software. Tutti i pacchetti di funzioni e i service pack sono disponibili in Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. Il Feature Pack 12445 fornisce i profili colore di Adobe.
 
 ### Installazione del feature pack 12445 {#installing-feature-pack}
 
@@ -971,9 +969,9 @@ Per utilizzare le funzioni di gestione del colore per i supporti dinamici, è ne
 
 **Per installare feature pack 12445**:
 
-1. Andate a Condivisione [](https://www.adobeaemcloud.com/content/packageshare.html) pacchetti o Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software e scaricate `cq-6.3.0-featurepack-12445`.
+1. Andate a Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software e scaricate `cq-6.3.0-featurepack-12445`.
 
-   Consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md) per ulteriori informazioni sull&#39;utilizzo di Package Share e Packages in AEM.
+   Per ulteriori informazioni sull&#39;utilizzo dei pacchetti, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md) in [!DNL Adobe Experience Manager].
 
 1. Installare il feature pack.
 
