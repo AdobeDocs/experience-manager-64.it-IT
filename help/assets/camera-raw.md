@@ -3,9 +3,9 @@ title: Supporto di Camera Raw
 description: Scoprite come abilitare il supporto per Camera Raw in  risorse di Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '404'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Utilizzo di Camera Raw per elaborare le immagini {#camera-raw-support}
 
-Potete abilitare il supporto per Camera Raw per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata in  risorse di Adobe Experience Manager mediante il pacchetto [Camera Raw disponibile tramite Package Share o da](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
+Potete abilitare il supporto per Camera Raw per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata in  risorse di Adobe Experience Manager mediante il pacchetto [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponibile da Distribuzione software.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Potete abilitare il supporto per Camera Raw per elaborare formati di file non el
 
 Per abilitare il supporto per Camera Raw nelle risorse  Adobe Experience Manager, effettuate le seguenti operazioni:
 
-1. Scaricate il pacchetto [Camera Raw da Package Share o da](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
+1. Scaricate il pacchetto [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw dalla distribuzione del software.
 
 1. Accesso `https://[aem_server]:[port]/workflow`. Aprite il flusso di lavoro Aggiorna risorsa **** DAM.
 
@@ -31,6 +31,7 @@ Per abilitare il supporto per Camera Raw nelle risorse  Adobe Experience Manager
 
    * **[!UICONTROL Miniature]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Ignora tipi MIME]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![calce](assets/chlimage_1-334.png)
 
 1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, nel campo Elenco **** salti, specificare `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
@@ -48,6 +49,7 @@ Per abilitare il supporto per Camera Raw nelle risorse  Adobe Experience Manager
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. Fai clic su **[!UICONTROL Salva]**.
