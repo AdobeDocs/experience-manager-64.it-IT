@@ -10,10 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '1845'
-ht-degree: 18%
+source-wordcount: '1762'
+ht-degree: 15%
 
 ---
 
@@ -193,12 +193,13 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
 >
 >L&#39;inglese è disponibile out-of-the-box.
 >
->Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share o Software Distribution:
+>Altre lingue sono disponibili come Pacchetti di modelli di linguaggio da Distribuzione software:
 >
->* [Francese (fr) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francese (fr) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [tedesco (de) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [Italiano (IT) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [Spagnolo (es) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francese (fr) da distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de) dalla distribuzione del software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) da Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es) da Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -216,6 +217,7 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
    * Tutte le frasi da eliminare sono evidenziate in rosso, con lo sciopero.
    * Fate clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
    * Fate clic su una frase non evidenziata per eliminarla.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Selezionate **[!UICONTROL Riepiloga]** per confermare le modifiche.
@@ -277,6 +279,7 @@ Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; �
 
    * passa alla risorsa richiesta in DAM
    * cercare la risorsa in DAM
+
    Una volta individuata la risorsa desiderata, selezionatela facendo clic sulla miniatura.
 
 1. Utilizza **[!UICONTROL Seleziona]** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
@@ -372,6 +375,7 @@ Quando si modifica una variante, è possibile accedere all&#39;azione per sincro
 
    * verde indica il contenuto aggiunto (alla variante)
    * il rosso indica che il contenuto è stato rimosso (dalla variante)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Selezionate **[!UICONTROL Sincronizza]**. La variante verrà aggiornata e visualizzata.
