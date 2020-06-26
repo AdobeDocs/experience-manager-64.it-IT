@@ -3,9 +3,9 @@ title: Imaging Transcoding Library
 description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Per configurare l’elaborazione ITL, create un file di configurazione e aggiorn
 
 Per configurare la libreria, create un file .conf per indicare le librerie utilizzando la procedura seguente. Sono necessarie autorizzazioni di livello amministratore o principale.
 
-1. Scaricate il pacchetto Libreria di transcodifica immagini da [Packase Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) o da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e installatelo utilizzando Package Manager. Il pacchetto è compatibile con AEM 6.5.
+1. Scaricate il pacchetto Imaging Transcoding Library (Libreria transcodifica immagini) da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) (Distribuzionesoftware) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con AEM 6.5.
 
 1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e toccate **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
 
@@ -129,6 +129,7 @@ Ad esempio, se desiderate creare le miniature per un’immagine TIFF utilizzando
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![calce](assets/chlimage_1-199.png)
 
 1. (Facoltativo) Generare miniature da una rappresentazione intermedia utilizzando un singolo comando. La rappresentazione intermedia funge da origine per generare rappresentazioni statiche e Web. Questo metodo è più veloce rispetto al metodo precedente. Tuttavia, questo metodo non consente di applicare parametri personalizzati alle miniature.
