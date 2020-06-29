@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: 770cf9a616b44312e80ee9fbe3cb8924aa5297de
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +55,18 @@ Potete vedere come funziona in una distribuzione geograficamente distribuita con
 
 ## Configurazione del token incapsulato {#configuring-the-encapsulated-token}
 
+>[!NOTE]
+>Tutti i gestori di autenticazione che sincronizzano gli utenti e si basano sull&#39;autenticazione token (come SAML e OAuth) funzioneranno solo con i token incapsulati se:
+>
+>* le sessioni permanenti sono abilitate, oppure
+   >
+   >
+* Gli utenti sono già creati in AEM all’avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui i gestori **creano** utenti durante il processo di sincronizzazione.
+
+
 Per configurare il token incapsulato è necessario tenere in considerazione alcuni aspetti:
 
-1. A causa della crittografia, tutte le istanze devono avere la stessa chiave HMAC. A partire da AEM 6.3, il materiale chiave non è più memorizzato nella directory archivio, ma nel file system effettivo. In questo modo, il modo migliore per replicare le chiavi è copiarle dal file system dell&#39;istanza di origine a quello delle istanze di destinazione a cui si desidera replicare le chiavi. Per ulteriori informazioni, vedere la sezione &quot;Replica del tasto HMAC&quot; di seguito.
+1. A causa della crittografia, tutte le istanze devono avere la stessa chiave HMAC. A partire da AEM 6.3, il materiale chiave non è più memorizzato nella directory archivio, ma nel file system effettivo. Tenendo presente questo, il modo migliore per replicare le chiavi consiste nel copiarle dal file system dell&#39;istanza di origine a quello delle istanze di destinazione a cui si desidera replicare le chiavi. Per ulteriori informazioni, vedere la sezione &quot;Replica del tasto HMAC&quot; di seguito.
 1. Il token incapsulato deve essere abilitato. Questo può essere fatto tramite la console Web.
 
 ### Replica del tasto HMAC {#replicating-the-hmac-key}
