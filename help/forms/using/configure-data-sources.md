@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Scoprite come configurare diversi tipi di origini dati e utilizzare i moduli per
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms Data Integration consente di configurare e connettersi a origini dati diverse. I seguenti tipi sono supportati out-of-the-box. Tuttavia, con poca personalizzazione, è possibile integrare anche altre origini dati.
+L&#39;integrazione dei dati AEM Forms consente di configurare e connettersi a origini dati diverse. I seguenti tipi sono supportati out-of-the-box. Tuttavia, con poca personalizzazione, è possibile integrare anche altre origini dati.
 
 * Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
 * Profilo utente AEM
@@ -30,7 +30,7 @@ AEM Forms Data Integration consente di configurare e connettersi a origini dati 
 * Servizi Web basati su SOAP
 * Servizi OData
 
-L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autenticazione di base e chiave API out-of-the-box e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, SOAP e OData sono configurati in AEM Cloud Services, JDBC per i database relazionali e il connettore per il profilo utente AEM è configurato nella console Web di AEM.
+L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autenticazione di base e chiave API out-of-the-box e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, SOAP e OData sono configurati in AEM cloud services, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console Web di AEM.
 
 ## Configurare il database relazionale {#configure-relational-database}
 
@@ -108,7 +108,7 @@ Per configurare la cartella per le configurazioni del servizio cloud:
 
 ## Configurare i servizi Web RESTful {#configure-restful-web-services}
 
-Il servizio Web RESTful può essere descritto utilizzando le specifiche [](https://swagger.io/specification/) Swagger in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful nei servizi cloud di AEM, accertatevi di disporre del file Swagger nel sistema di file o dell’URL in cui è ospitato il file.
+Il servizio Web RESTful può essere descritto utilizzando le specifiche [](https://swagger.io/specification/) Swagger in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful in AEM cloud services, accertatevi di disporre del file Swagger nel sistema di file o dell&#39;URL in cui è ospitato il file.
 
 Per configurare i servizi RESTful, effettuate le seguenti operazioni:
 
@@ -126,7 +126,7 @@ Per configurare i servizi RESTful, effettuate le seguenti operazioni:
 
 ## Configurare i servizi Web SOAP {#configure-soap-web-services}
 
-I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](https://www.w3.org/TR/wsdl)Web Services Description Language). Per configurare il servizio Web basato su SOAP nei servizi cloud AEM, accertatevi di disporre dell&#39;URL WSDL per il servizio Web ed effettuate le seguenti operazioni:
+I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](https://www.w3.org/TR/wsdl)Web Services Description Language). Per configurare il servizio Web basato su SOAP in AEM cloud services, verificare di disporre dell&#39;URL WSDL per il servizio Web ed effettuare le seguenti operazioni:
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
@@ -136,13 +136,17 @@ I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](h
 1. Specificate quanto segue per il servizio Web SOAP:
 
    * URL WSDL per il servizio Web.
-   * Selezionare il tipo di autenticazione — Nessuno, OAuth2.0, autenticazione di base o autenticazione personalizzata — per accedere al servizio SOAP e fornire di conseguenza i dettagli per l&#39;autenticazione.
+   * Endpoint servizio. Specificate un valore in questo campo per ignorare l&#39;endpoint del servizio indicato in WSDL.
+   * Selezionare il tipo di autenticazione — Nessuno, OAuth2.0, autenticazione di base, autenticazione personalizzata o token X509 — per accedere al servizio SOAP e fornire di conseguenza i dettagli per l&#39;autenticazione.
+
+      Se selezionate Token X509 come tipo di autenticazione, configurate il certificato X509. Per ulteriori informazioni, vedere [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Specificate l&#39;alias KeyStore per il certificato X509 nel campo Alias **** chiave. Specificate il tempo, in secondi, fino a quando la richiesta di autenticazione non rimane valida, nel campo **[!UICONTROL Tempo di vita]** . Facoltativamente, selezionare per firmare il corpo del messaggio, l&#39;intestazione della marca temporale o entrambe.
 
 1. Toccate **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio Web SOAP.
 
 ## Configurare i servizi OData {#config-odata}
 
-Un servizio OData è identificato dall&#39;URL principale del servizio. Per configurare un servizio OData nei servizi cloud AEM, accertatevi di disporre dell’URL principale del servizio per il servizio ed effettuate le seguenti operazioni:
+Un servizio OData è identificato dall&#39;URL principale del servizio. Per configurare un servizio OData in AEM cloud services, accertatevi di disporre dell’URL radice del servizio per il servizio ed effettuate le seguenti operazioni:
 
 >[!NOTE]
 >
