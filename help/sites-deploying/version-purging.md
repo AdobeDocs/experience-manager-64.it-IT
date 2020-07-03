@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ In un’installazione standard AEM crea una nuova versione di una pagina o di un
 
 >[!NOTE]
 >
->Se non vengono apportate modifiche al contenuto, verrà visualizzato il messaggio che indica che la pagina è stata attivata, ma non verrà creata alcuna nuova versione
+>Se non viene apportata alcuna modifica al contenuto, verrà visualizzato il messaggio che indica che la pagina è stata attivata, ma non verrà creata alcuna nuova versione
 
 Potete creare versioni aggiuntive su richiesta utilizzando la scheda **Gestione versioni** della barra laterale. Queste versioni sono memorizzate nella directory archivio e possono essere ripristinate se necessario.
 
@@ -35,11 +38,11 @@ AEM viene fornito con diversi metodi per gestire il repository:
 
 * lo strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
-   Questa funzione è utilizzata per monitorare e gestire il repository.
+   Questa funzione è utilizzata per monitorare e mantenere l&#39;archivio.
 
    Consente di intervenire per rimuovere versioni precedenti di un nodo, o una gerarchia di nodi, in base ai seguenti parametri:
 
-   * Numero massimo di versioni da conservare nella directory archivio.
+   * Il numero massimo di versioni da conservare nella directory archivio.
 
       Quando questo numero viene superato, viene rimossa la versione più vecchia.
 
@@ -55,7 +58,7 @@ AEM viene fornito con diversi metodi per gestire il repository:
 
 ## Version Manager {#version-manager}
 
-Oltre alla rimozione esplicita tramite lo strumento di eliminazione, Version Manager può essere configurato per eliminare le versioni precedenti al momento della creazione di nuove versioni.
+Oltre all&#39;eliminazione esplicita tramite lo strumento di eliminazione, Version Manager può essere configurato per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 Per configurare Gestione versioni, crea una configurazione per:
 
