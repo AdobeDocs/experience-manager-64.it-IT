@@ -10,7 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 19cb3946-32ba-4f0b-89f0-f9272f2373d2
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: f98eccdb0251ff0262017fa42529576ba5feac97
+workflow-type: tm+mt
+source-wordcount: '2152'
+ht-degree: 2%
 
 ---
 
@@ -21,15 +24,14 @@ Questa sezione descrive come sviluppare l’applicazione AEM con CRXDE Lite.
 
 Per ulteriori informazioni sui diversi ambienti di sviluppo disponibili, consulta la documentazione di panoramica.
 
-CRXDE Lite è integrato in AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite, potete creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l&#39;integrazione con SVN.
+CRXDE Lite è integrato in AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite, potete creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
 
 CRXDE Lite è consigliato quando non si dispone dell&#39;accesso diretto al server AEM, quando si sviluppa un&#39;applicazione estendendo o modificando i componenti out-of-the-box e i bundle Java o quando non è necessario un debugger dedicato, completamento del codice e evidenziazione della sintassi.
 
 >[!NOTE]
 >
->Per impostazione predefinita, tutti gli utenti AEM possono accedere a CRXDE Lite. Se lo desiderate, [configurate ACL](/help/sites-administering/security.md#permissions-and-acls) per il seguente nodo in modo che solo gli sviluppatori possano accedere a CRX DE Lite:
->
->`/libs/granite/crxde`
+>A partire da AEM 6.4.8.1, l&#39;accesso anonimo a CRXDE Lite non è più possibile.
+>Gli utenti vengono reindirizzati alla schermata di accesso.
 
 >[!NOTE]
 >
@@ -43,7 +45,7 @@ Per iniziare con CRXDE Lite, procedere come segue:
 1. Nel browser, digitate https://`<host>`:`<port>`/crx/de. Per impostazione predefinita è `http://localhost:4502/crx/de`.
 1. Inserite **nome utente** e **password**. Per impostazione predefinita è `admin` e `admin`.
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
 L&#39;interfaccia utente CRXDE Lite si presenta come segue nel browser:
 
@@ -66,12 +68,12 @@ CRXDE Lite offre le seguenti funzionalità:
    <td><p>Visualizza il percorso del nodo attualmente selezionato.</p> <p>È inoltre possibile utilizzarlo per passare a un nodo, immettendo il percorso a mano, o incollandolo da un'altra posizione, e premendo Invio.</p> <p>Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserite il nome del nodo da trovare e attendete (o toccate il simbolo di ricerca sul lato destro). Potete provare a inserire, ad esempio, la <em>quercia</em> stringa nel widget per vedere come funziona. Se un determinato nodo o nodi viene caricato nel riquadro di esplorazione, verrà visualizzato l'elenco, quindi sarà possibile selezionare il percorso e premere Invio per passare a tale percorso. Si noti che funziona solo per i nodi attualmente caricati nell'applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell'intero repository, utilizzare Strumenti, quindi Query.</p> </td> 
   </tr> 
   <tr> 
-   <td>Riquadro Esplora</td> 
+   <td>Riquadro di Esplora risorse</td> 
    <td><p>Visualizza una struttura ad albero di tutti i nodi della directory archivio.</p> <p>Fare clic su un nodo per visualizzarne le proprietà nella scheda <strong>Proprietà</strong> . Dopo aver fatto clic su un nodo, è possibile selezionare un'azione nella barra degli strumenti. Fare di nuovo clic sul nodo per rinominarlo.</p> <p>Filtro di navigazione albero (icona binoculare): consente di filtrare i nodi della directory archivio per i quali il nome contiene il testo di input. Si applica solo ai nodi caricati localmente.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Riquadro di modifica</td> 
-   <td><p><strong>Scheda Pagina iniziale</strong> : consente di effettuare ricerche nei contenuti e/o nella documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (homepage e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Esplora risorse</strong> per visualizzarne il contenuto; come ad esempio un file .jsp o .java. Potete quindi modificarlo e salvare le modifiche.</p> <p>Una volta modificato un file nel riquadro <strong>Modifica</strong> , nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci ...</strong>: eseguire ricerche o sostituire.<br /> Fate <br /> doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> , in modo da immettere un numero di riga specifico a cui passare.<br /> </td> 
+   <td><p><strong>Scheda Pagina iniziale</strong> : consente di effettuare ricerche nei contenuti e/o nella documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (homepage e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Esplora risorse</strong> per visualizzarne il contenuto; come ad esempio un file .jsp o .java. Potete quindi modificarlo e salvare le modifiche.</p> <p>Una volta modificato un file nel riquadro <strong>Modifica</strong> , nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci ...</strong>: eseguire ricerche o sostituire.<br /> <br /> Fate doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> e immettere un numero di riga specifico a cui passare.<br /> </td> 
   </tr> 
   <tr> 
    <td>scheda Proprietà<br /> </td> 
@@ -95,7 +97,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr> 
   <tr> 
    <td>Aggiorna<br /> </td> 
-   <td>Aggiorna la selezione corrente. Le modifiche apportate da altri utenti vengono aggiornate nella visualizzazione della directory archivio. Le modifiche apportate restano invariate.<br /> </td> 
+   <td>Aggiorna la selezione corrente. Le modifiche apportate da altri utenti vengono aggiornate nella visualizzazione della directory archivio. Le modifiche apportate non vengono alterate.<br /> </td> 
   </tr> 
   <tr> 
    <td>Salva tutto</td> 
@@ -130,68 +132,22 @@ CRXDE Lite offre le seguenti funzionalità:
    <td>Consente di aggiungere tipi di mixin al tipo di nodo. I tipi di mixin vengono utilizzati principalmente per aggiungere al nodo funzioni avanzate quali controllo delle versioni, controllo degli accessi, riferimenti e blocco.</td> 
   </tr> 
   <tr> 
-   <td>Team<br /> </td> 
-   <td><p>Menu a discesa per eseguire le attività di controllo versione standard:</p> <p>- <strong>Aggiornamento</strong> repository da server SVN</p> <p>- <strong>Conferma</strong> modifiche locali al server SVN</p> <p>- Visualizza <strong>stato</strong> del nodo corrente</p> <p>- Visualizza stato <strong></strong> ricorsivo della struttura secondaria del nodo corrente</p> <p>- <strong>Estrazione</strong> di una copia di lavoro dal server SVN</p> <p>- <strong>Esportare</strong> un progetto dal server SVN (senza creare una copia di lavoro)</p> <p>- <strong>Importare</strong> un progetto dall'archivio al server SVN<br /> </p> <p>È necessario effettuare l'accesso come utente con autorizzazioni sufficienti per poter eseguire alcune delle attività (in particolare quelle che scrivono nell'archivio locale).<br /> </p> </td> 
-  </tr> 
-  <tr> 
    <td>Strumenti<br /> </td> 
-   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- Configurazione <strong>server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire la gestione dei privilegi, dove puoi visualizzare e aggiungere privilegi.</p> <p>- Controllo di accesso <strong>alla prova ...</strong>: un luogo in cui è possibile verificare l'autorizzazione per determinati percorsi e/o entità.</p> <p>- Tipo <strong>nodo</strong>esportazione: per esportare i tipi di nodi nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare i tipi di nodo utilizzando la notazione cnd.</p>  <p>- <strong>Installare SiteCatalyst Debugger ...</strong>: istruzioni su come installare Analytics Debugger.</p> </td> 
+   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- Configurazione <strong>server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire la gestione dei privilegi, dove puoi visualizzare e aggiungere privilegi.</p> <p>- Controllo di accesso <strong>alla prova ...</strong>: un luogo in cui è possibile verificare l'autorizzazione per determinati percorsi e/o entità.</p> <p>- Tipo <strong>nodo</strong>esportazione: per esportare i tipi di nodi nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare i tipi di nodo utilizzando la notazione cnd.</p>  <p>- <strong>Installare SiteCatalyst Debugger ...</strong>: istruzioni su come installare  Analytics Debugger.</p> </td> 
   </tr> 
   <tr> 
    <td>widget di accesso<br /> </td> 
-   <td><p>Visualizza gli utenti attualmente connessi e l’area di lavoro in cui sono connessi, ad esempio admin@crx.default.</p> <p>Fate clic su di esso per accedere o effettuare nuovamente l'accesso come utente specifico. Se non specificate un'area di lavoro a cui accedere, dovrete accedere all'area di lavoro predefinita, crx.default.</p> <p>Se desiderate sfogliare l’archivio come utente anonimo, usate <strong>anonimo</strong> come nome di login e password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad es., è scaduta), nel widget di accesso viene visualizzato "<strong>Non autorizzato - Accesso...</strong>". Fate clic su di esso per effettuare nuovamente l'accesso.</p> </td> 
+   <td><p>Visualizza gli utenti attualmente connessi e l’area di lavoro in cui sono connessi, ad esempio admin@crx.default.</p> <p>Fate clic su di esso per accedere o effettuare nuovamente l'accesso come utente specifico. Se non specificate un'area di lavoro a cui accedere, vi verrà eseguito l'accesso all'area di lavoro predefinita, crx.default.</p> <p>Se desiderate sfogliare l’archivio come utente anonimo, usate <strong>anonimo</strong> come nome di login e qualsiasi password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad es., è scaduta), nel widget di accesso viene visualizzato "<strong>Non autorizzato - Accesso...</strong>". Fate clic su di esso per effettuare nuovamente l'accesso.</p> </td> 
   </tr> 
  </tbody> 
 </table>
-
-### Creazione di un progetto {#creating-a-project}
-
-Con CRXDE Lite è possibile creare un progetto di lavoro con tre clic. La procedura guidata del progetto crea un nuovo progetto in `/apps`, alcuni contenuti in `/conten`esso contenuti e un pacchetto che racchiude tutti i contenuti del progetto in `/etc/packages`. Il progetto può essere utilizzato immediatamente per eseguire il rendering di una pagina di esempio in cui viene visualizzato **Hello World**, in base a uno script jsp che esegue il rendering di una proprietà dall&#39;archivio e chiama una classe Java per eseguire il rendering di parte del testo.
-
-Per creare un progetto con CRXDE Lite:
-
-1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse su un nodo, selezionare** Crea ...**, quindi** Crea progetto ... .
-
-   Nota: potete fare clic con il pulsante destro del mouse su qualsiasi nodo nella struttura ad albero, poiché i nuovi nodi di progetto sono, per impostazione predefinita, creati sotto `/apps,` e `/content` `/etc/packages`.
-
-1. Definisci:
-
-   * **Nome** progetto: il nome del progetto viene utilizzato per creare i nuovi nodi e il bundle, ad esempio `myproject`.
-   * **Java Package** - il prefisso del nome del pacchetto Java, ad esempio `com.mycompany`.
-
-1. Fai clic su **Crea**.
-1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
-
-Per accedere alla pagina di esempio in cui è visualizzato **Hello World**, selezionate il browser per:
-
-`http://localhost:4502/content/<project-name>.html`
-
-La pagina **Hello World** si basa su un nodo di contenuto, che richiama uno script jsp tramite la `sling:resourceType` proprietà. Lo script legge la `jcr:title` proprietà dall&#39;archivio e ottiene il contenuto body chiamando un metodo della classe SampleUtil, disponibile nel pacchetto di progetto.
-
-Vengono creati i nodi seguenti:
-
-* `/apps/<project-name>`: il contenitore dell’applicazione.
-* `/apps/<project-name>/components`: il contenitore dei componenti, contenente il file html.jsp di esempio, utilizzato per il rendering di una pagina.
-
-* `/apps/<project-name>/src`: il contenitore dei bundle, contenente un pacchetto di progetto di esempio.
-
-* `/apps/<project-name>/install`: il contenitore dei bundle compilati, contenente il pacchetto di progetto di esempio compilato.
-* `/content/<project-name>`: il contenitore del contenuto.
-* `/etc/packages/<java-suffix>/<project-name>.zip`, un pacchetto che racchiude l&#39;app e il contenuto del progetto. Potete utilizzarlo per ricreare il progetto per un&#39;ulteriore implementazione (ad esempio, in altri ambienti) o per la condivisione tramite Package Share.
-
-La struttura si presenta come segue in CRXDE Lite con un progetto denominato **myproject** e un suffisso di pacchetto Java denominato **mycompany**:
-
-![chlimage_1-239](assets/chlimage_1-239.png)
-
-![chlimage_1-240](assets/chlimage_1-240.png)
 
 ### Creating a Folder {#creating-a-folder}
 
 Per creare una cartella con CRXDE Lite:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella, selezionare** Crea ...**, quindi** Crea cartella ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella, selezionare **Crea ...**, quindi **Crea cartella ...**.
 
 1. Immettete il **nome** della cartella e fate clic su **OK**.
 
@@ -202,7 +158,7 @@ Per creare una cartella con CRXDE Lite:
 Per creare un modello con CRXDE Lite:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il modello, selezionare** Crea ...**, quindi** Crea modello ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il modello, selezionare **Crea ...**, quindi **Crea modello ...**.
 
 1. Immettere **Etichetta**, **Titolo**, **Descrizione**, Tipo **** risorsa e **Classificazione** del modello. Fai clic su **Avanti**.
 
@@ -210,7 +166,7 @@ Per creare un modello con CRXDE Lite:
 
 1. Questo passaggio è facoltativo: impostare i genitori **consentiti**. Fai clic su **Avanti**.
 
-1. Questo passaggio è facoltativo: imposta gli elementi figlio **consentiti**. Fai clic su **OK**. 
+1. Questo passaggio è facoltativo: imposta gli elementi figlio **consentiti**. Fai clic su **OK**.
 
 1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
 
@@ -229,7 +185,7 @@ La funzione qui descritta è disponibile solo se il tipo di nodo `cq:Component` 
 Per creare un componente con CRXDE Lite:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il componente, selezionare** Crea ...**, quindi** Crea componente ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il componente, selezionare **Crea ...**, quindi **Crea componente ...**.
 
 1. Immettere **Etichetta**, **Titolo**, **Descrizione**, **Super Resource Type** e **Gruppo** del componente. Fai clic su **Avanti**.
 
@@ -237,7 +193,7 @@ Per creare un componente con CRXDE Lite:
 
 1. Questo passaggio è facoltativo: impostare la proprietà del componente **Parenti** consentiti. Fai clic su **Avanti**.
 
-1. Questo passaggio è facoltativo: impostare la proprietà del componente **Allowed Children**. Fai clic su **OK**. 
+1. Questo passaggio è facoltativo: impostare la proprietà del componente **Allowed Children**. Fai clic su **OK**.
 
 1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
 
@@ -252,9 +208,9 @@ Crea:
 Per creare una finestra di dialogo con CRXDE Lite:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare la finestra di dialogo, selezionare** Crea ...**, quindi** Crea finestra di dialogo ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare la finestra di dialogo, selezionare **Crea ...**, quindi **Crea finestra di dialogo ...**.
 
-1. Immettete **Etichetta** e **Titolo**. Fai clic su **OK**. 
+1. Immettete l’ **etichetta** e il **titolo**. Fai clic su **OK**.
 
 1. Fate clic su **Salva** tutto per salvare le modifiche sul server.
 
@@ -271,9 +227,9 @@ Viene creata una finestra di dialogo con la struttura seguente:
 Per creare un nodo con CRXDE Lite:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare** Crea ...**, quindi** Crea nodo ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea ...**, quindi **Crea nodo ...**.
 
-1. Immettere il **Nome** e il **Tipo**. Fai clic su **OK**. 
+1. Immettere il **Nome** e il **Tipo**. Fai clic su **OK**.
 
 1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
 
@@ -281,7 +237,7 @@ Per creare un nodo con CRXDE Lite:
 
 >[!NOTE]
 >
->La maggior parte delle operazioni di modifica, incluso Create Node, conserva tutte le modifiche in memoria e le memorizza nella directory archivio solo dopo il salvataggio (tramite il pulsante &quot;Save All&quot;). Tuttavia, alcune operazioni come quella di spostamento vengono automaticamente mantenute.
+>La maggior parte delle operazioni di modifica, incluso Create Node, conserva tutte le modifiche in memoria e le memorizza nella directory archivio solo al momento del salvataggio (tramite il pulsante &quot;Save All&quot;). Tuttavia, alcune operazioni come quella di spostamento vengono automaticamente mantenute.
 >
 >La convalida relativa all&#39;eventuale autorizzazione del nodo appena creato da parte del tipo di nodo padre viene eseguita anche dall&#39;archivio JCR prima del salvataggio delle modifiche. Se durante il salvataggio di un nodo viene visualizzato un messaggio di errore, verificare se la struttura del contenuto è valida (ad es., non è possibile creare un `nt:unstructured` nodo come figlio di un `nt:folder` nodo).
 
@@ -300,173 +256,13 @@ Per creare una proprietà con CRXDE Lite:
 Per creare un nuovo script:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare lo script, selezionare** Crea ...**, quindi** Crea file ... .
+1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare lo script, selezionare **Crea ...**, quindi **Crea file ...**.
 
-1. Immettere il **nome** del file, inclusa l&#39;estensione. Fai clic su **OK**. 
+1. Immettere il **nome** del file, inclusa l&#39;estensione. Fai clic su **OK**.
 
 1. Il nuovo file si apre come scheda nel riquadro Modifica.
 1. Modificate il file.
 1. Click **Save All** to save the changes.
-
-### Gestione di un pacchetto {#managing-a-bundle}
-
-Con CRXDE Lite, è semplice creare un bundle OSGI, aggiungere classi Java e crearlo. Il bundle viene quindi installato automaticamente e avviato nel contenitore OSGI.
-
-Questa sezione descrive come creare un `Test` bundle con una classe `HelloWorld` Java che visualizza **Hello World!** nel browser quando la risorsa viene richiesta.
-
-#### Creazione di un pacchetto {#creating-a-bundle}
-
-Per creare il bundle di prova con CRXDE Lite:
-
-1. In CRXDE Lite create `myapp` un progetto con la procedura guidata [](#creating-a-project)del progetto. Tra gli altri, vengono creati i seguenti nodi:
-
-   * `/apps/myapp/src`
-   * `/apps/myapp/install`
-
-1. `/apps/myapp/src`Fate clic con il pulsante destro del mouse sulla cartella `Test` che conterrà il **bundle, selezionate** Crea ...**, quindi** Crea pacchetto ... .
-
-1. Impostate le proprietà del bundle come segue:
-
-   * Nome bundle simbolico: `com.mycompany.test.TestBundle`
-   * Nome bundle: `Test Bundle`
-   * Descrizione pacchetto: `This is my Test Bundle`
-   * Pacchetto:`com.mycompany.test`
-
-      Fai clic su **OK**. 
-
-1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
-
-La procedura guidata crea i seguenti elementi:
-
-* Il nodo `com.mycompany.test.TestBundle` di tipo `nt:folder.` È il nodo contenitore del bundle.
-
-* Il file `com.mycompany.test.TestBundle.bnd`. Funziona come descrittore di distribuzione per il pacchetto ed è costituito da un set di intestazioni.
-
-* Le strutture delle cartelle:
-
-   * `src/main/java/com/mycompany/test`. Conterrà i pacchetti e le classi Java.
-   * `src/main/resources`. Conterrà le risorse utilizzate nel bundle.
-
-* Il `Activator.java` file. È la classe listener opzionale a cui si desidera notificare gli eventi bundle start e stop.
-
-Nella tabella seguente sono elencate tutte le proprietà del file .bnd, i relativi valori e descrizioni:
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Proprietà</strong></td> 
-   <td><strong>Valore (alla creazione del bundle)<br /> </strong></td> 
-   <td><strong>Descrizione</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Pacchetto di esportazione:</td> 
-   <td><p>*</p> <p>Nota: questo valore deve essere adattato per riflettere la specificità del bundle.</p> </td> 
-   <td>L’intestazione Export-Package definisce i pacchetti esportati dal bundle (elenco di pacchetti separati da virgola). I pacchetti esportati costituiscono la visualizzazione pubblica<br /> del bundle.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Pacchetto importazione:</td> 
-   <td><p>*</p> <p>Nota: questo valore deve essere adattato per riflettere la specificità del bundle.</p> </td> 
-   <td>L’intestazione Import-Package definisce i pacchetti importati per il bundle (elenco di pacchetti separati da virgole)</td> 
-  </tr> 
-  <tr> 
-   <td>Pacchetto privato:</td> 
-   <td><p>*</p> <p>Nota: questo valore deve essere adattato per riflettere la specificità del bundle.</p> </td> 
-   <td>L’intestazione Private-Package definisce i pacchetti privati per il bundle (elenco di pacchetti separati da virgola). I pacchetti privati costituiscono l'implementazione interna.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Bundle-Name:</td> 
-   <td>Test Bundle</td> 
-   <td>Definisce un nome breve e leggibile per il bundle</td> 
-  </tr> 
-  <tr> 
-   <td>Bundle-Description:</td> 
-   <td>Questo è il mio pacchetto di test</td> 
-   <td>Definisce una breve descrizione leggibile per il bundle</td> 
-  </tr> 
-  <tr> 
-   <td>Bundle-SymbolicName:</td> 
-   <td>com.mycompany.test.TestBundle</td> 
-   <td>Specifica un nome univoco non localizzabile per il bundle</td> 
-  </tr> 
-  <tr> 
-   <td>Versione bundle:</td> 
-   <td>1.0.0-SNAPSHOT</td> 
-   <td>Specifica la versione del bundle</td> 
-  </tr> 
-  <tr> 
-   <td>Bundle-Activator:</td> 
-   <td>com.mycompany.test.Activator</td> 
-   <td>Specifica il nome della classe di listener opzionale a cui si desidera notificare gli eventi start e stop del bundle</td> 
-  </tr> 
- </tbody> 
-</table>
-
-Per ulteriori informazioni sul formato della banda, fare riferimento all&#39;utilità [della](https://bndtools.org/) banda utilizzata da CRXDE per creare pacchetti OSGI.
-
-#### Creazione di una classe Java {#creating-a-java-class}
-
-Per creare la classe `HelloWorld` Java all&#39;interno di Test Bundle:
-
-1. Aprite CRXDE Lite nel browser.
-1. `Activator.java`Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul nodo contenente il `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java` file ( **), selezionare** Crea ...**, quindi** Crea file ... .
-
-1. Denominate il file `HelloWorld.java`. Fai clic su **OK**. 
-
-1. Il `HelloWorld.java` file si apre nel riquadro Modifica.
-1. Aggiungi le seguenti righe in `HelloWorld.java`:
-
-   ```
-   package com.mycompany.test;  
-   
-   public class HelloWorld { 
-     public String getString(){ 
-     return "Hello World!"; 
-     } 
-   }
-   ```
-
-1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
-
-#### Creazione di un pacchetto {#building-a-bundle}
-
-Per creare il pacchetto di test:
-
-1. Aprite CRXDE Lite nel browser.
-1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul file .bnd, selezionare **Strumenti,** quindi **Bundle**.
-
-Creazione guidata Bundle:
-
-* Compila le classi Java.
-* Crea il file .jar contenente le classi Java compilate e le risorse e lo inserisce nella `myapp/install` cartella.
-* Installa e avvia il bundle nel contenitore OSGI.
-
-Per visualizzare l’effetto del pacchetto di test, create un componente che utilizza il metodo Java HelloWorld.getString() e una risorsa di cui viene eseguito il rendering da questo componente:
-
-1. Create il componente `mycomp` in `myapp/components`.
-
-1. Modificate `mycomp.jsp` e sostituite il codice con le seguenti righe:
-
-   ```
-   <%@ page import="com.mycompany.test.HelloWorld"%><% 
-   %><%@ include file="/libs/foundation/global.jsp"%><% 
-   %><% HelloWorld hello = new HelloWorld();%><% 
-   %> 
-   <html> 
-   <body> 
-   <b><%= hello.getString() %></b><br> 
-   </body> 
-   </html>
-   ```
-
-1. Create la risorsa `test_node` di tipo `nt:unstructured` in `/content`.
-
-1. Ad `test_node`esempio, creare la seguente proprietà: Nome = `sling:resourceType`, Tipo = `String`, Valore = `myapp/components/mycomp`.
-
-1. Fate clic su **Salva tutto** per salvare le modifiche sul server.
-
-1. Nel browser, richiedete `test_node`: `https://<hostname>:<port>/content/test_node.html`.
-
-1. Viene visualizzata una pagina con **Hello World!** message.
 
 ### Esportazione e importazione di tipi di nodo {#exporting-and-importing-node-types}
 
@@ -483,7 +279,7 @@ Per esportare una definizione di tipo di nodo:
 Per importare una definizione di tipo di nodo:
 
 1. Aprite CRXDE Lite nel browser.
-1. **Selezionare** Strumenti **, quindi** Importa tipo di nodo... .
+1. Selezionare **Strumenti** , quindi **Importa tipo di nodo...**.
 
 1. Immettete la notazione CND per la definizione nella casella di testo.
 1. Se state aggiornando una definizione esistente, selezionate **Consenti aggiornamento** .
@@ -496,9 +292,9 @@ Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova sul fi
 1. Aprite CRXDE Lite nel browser.
 1. Nella scheda **Console** nella parte inferiore della finestra, selezionate Registri **server dal menu a discesa a destra**.
 
-1. Fai clic sull&#39;icona **Interrompi** per visualizzare i messaggi.
+1. Fate clic sull&#39;icona **Interrompi** per visualizzare i messaggi.
 
-Tieni presente quanto segue:
+Operazioni disponibili:
 
 * Per regolare i parametri di registro nella console Felix, fai clic sull’icona **Registrazioni configurazioni** .
 * Cancella i messaggi facendo clic sull’icona **Pennello** .
