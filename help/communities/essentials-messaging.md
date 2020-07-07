@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
@@ -103,17 +106,16 @@ Vedere anche Personalizzazioni lato [client](client-customize.md)
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Ad esempio:
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### Sito community {#community-site}
 
@@ -139,7 +141,7 @@ Per provare lo script di esempio lato server, sarà necessario un ambiente di sv
 
    1. Eliminare la `Activator.java` classe creata automaticamente
    1. Crea classe `MessageEventHandler.java`
-   1. Copia/incolla il codice seguente in `MessageEventHandler.java`
+   1. Copia/incolla il codice riportato di seguito in `MessageEventHandler.java`
 
 1. Fate clic su **[!UICONTROL Salva tutto]**
 1. Individuare `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e aggiungere tutte le istruzioni di importazione come scritte nel `MessageEventHandler.java` codice.
