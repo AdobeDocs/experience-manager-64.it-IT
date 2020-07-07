@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +21,12 @@ source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
 
 CAPTCHA (Test di Turing Pubblico Completamente Automatizzato per dire Computer e Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra gli umani e i programmi o robot automatizzati. Rappresenta una sfida e valuta la risposta degli utenti per determinare se si tratta di un essere umano o un bot che interagisce con il sito. Impedisce all&#39;utente di procedere in caso di esito negativo del test e contribuisce a rendere sicure le transazioni online, impedendo ai bot di inviare spam o scopi dannosi.
 
-AEM Forms supporta il CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
+AEM Forms supporta CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
 
->[!NOTE] {grigioBox=&quot;true&quot;}
+>[!NOTE]
 >
->AEM Forms supporta solo reCaptcha v2. Qualsiasi altra versione non è supportata.
+>I AEM Forms supportano solo reCaptcha v2. Qualsiasi altra versione non è supportata.
+>
 >CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app AEM Forms.
 
 ## Configurare il servizio ReCAPTCHA da Google {#google-recaptcha}
@@ -53,6 +57,7 @@ Per implementare il servizio reCAPTCHA in AEM Forms:
    1. Toccate **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionate il contenitore di configurazione creato nel passaggio precedente e toccate **[!UICONTROL Crea]**.
    1. Specificate Nome, Chiave del sito e Chiave segreta per il servizio reCAPTCHA e toccate **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specificate il sito e le chiavi segrete ottenute al punto 1. Toccate **[!UICONTROL Salva impostazioni]** , quindi toccate **[!UICONTROL OK]** per completare la configurazione.
+
    Una volta configurato, il servizio reCAPTCHA è disponibile per l&#39;uso nei moduli adattivi. Per ulteriori informazioni, vedere [Uso di CAPTCHA nei moduli](#using-captcha)adattivi.
 
 ## Uso del CAPTCHA nei moduli adattivi {#using-captcha}
