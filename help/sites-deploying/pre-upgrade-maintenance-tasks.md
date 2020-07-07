@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Il processo di aggiornamento consente di mantenere e unire i contenuti e le conf
 
 ## Genera il file quickstart.properties {#generate-quickstart-properties}
 
-Quando si avvia AEM dal file JAR, viene generato un `quickstart.properties` file in `crx-quickstart/conf`. Se AEM è stato avviato solo con lo script start in passato, questo file non sarà presente e l&#39;aggiornamento non riuscirà. Accertatevi di verificare l’esistenza di questo file e riavviate AEM dal file JAR se non è presente.
+Quando si avvia AEM dal file JAR, viene generato un `quickstart.properties` file in `crx-quickstart/conf`. Se AEM è stato avviato solo con lo script start in passato, questo file non sarà presente e l&#39;aggiornamento non riuscirà. Accertatevi di verificare l’esistenza di questo file e riavviate AEM dal file JAR, se non è presente.
 
 ## Configurare lo scorrimento del flusso di lavoro e del registro di controllo {#configure-wf-audit-purging}
 
@@ -69,7 +72,7 @@ Le attività di manutenzione pre-aggiornamento sono attualmente distribuite su v
 
 Tutte le attività incluse nel passaggio di ottimizzazione pre-aggiornamento sono compatibili con tutte le versioni a partire da AEM 6.0.
 
-### Come impostare {#how-to-set-it-up}
+### How to Set It Up {#how-to-set-it-up}
 
 In AEM 6.3 e versioni successive, le attività di ottimizzazione per la manutenzione pre-aggiornamento sono incluse nel Jar di avvio rapido. Se state effettuando l’aggiornamento da una versione precedente di AEM 6, questi vengono resi disponibili tramite pacchetti separati che potete scaricare da Gestione pacchetti.
 
@@ -79,7 +82,7 @@ Potete trovare i pacchetti nelle seguenti posizioni:
 
 * [Per l&#39;aggiornamento da AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [Per l&#39;aggiornamento da AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+* [Per effettuare l’aggiornamento da AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
 
 ### How to Use It {#how-to-use-it}
 
@@ -158,7 +161,7 @@ L&#39;elenco è modificabile. È possibile utilizzare i pulsanti più **(+)** e 
 
 È possibile accedere alla funzionalità dei fagioli gestiti tramite la console [](/help/sites-administering/jmx-console.md)JMX.
 
-Per accedere agli MBeans:
+È possibile accedere agli MBeans tramite:
 
 1. Passate alla console JMX all&#39;indirizzo *https://serveraddress:serverport/system/console/jmx*
 1. Cercare **PreUpgradeTasks** e fare clic sul risultato
@@ -187,7 +190,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili `PreUpgradeTasks
   <tr> 
    <td><code>runAllPreUpgradeTasks()</code></td> 
    <td>AZIONE</td> 
-   <td>Esegue tutte le attività di manutenzione pre-aggiornamento elencate.</td> 
+   <td>Esegue tutte le attività di manutenzione pre-aggiornamento nell'elenco.</td> 
   </tr> 
   <tr> 
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
@@ -197,12 +200,12 @@ Di seguito è riportato un elenco di tutti i metodi disponibili `PreUpgradeTasks
   <tr> 
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td> 
    <td>ACTION_INFO</td> 
-   <td>Controlla se l' <code>runAllPreUpgradeTasksmaintenance</code> attività è in esecuzione.</td> 
+   <td>Controlla se l' <code>runAllPreUpgradeTasksmaintenance</code> attività è attualmente in esecuzione.</td> 
   </tr> 
   <tr> 
    <td><code>getAnyPreUpgradeTaskRunning()</code></td> 
    <td>ACTION_INFO</td> 
-   <td>Controlla se sono in esecuzione attività di manutenzione pre-aggiornamento e restituisce<br /> un array contenente i nomi delle attività in esecuzione.</td> 
+   <td>Controlla se è in esecuzione un'attività di manutenzione pre-aggiornamento e restituisce<br /> un array contenente i nomi delle attività in esecuzione.</td> 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
@@ -217,7 +220,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili `PreUpgradeTasks
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
    <td>AZIONE</td> 
-   <td><p>Esegue tutti i controlli di integrità pre-aggiornamento e ne salva lo stato in un file denominato <code>preUpgradeHCStatus.properties</code> che si trova nel percorso principale di sling. Se il <code>shutDownOnSuccess</code> parametro è impostato su <code>true</code>, l’istanza di AEM verrà chiusa, ma solo se tutti i controlli di integrità pre-aggiornamento hanno uno stato OK.</p> <p>Il file delle proprietà verrà utilizzato come prerequisito per qualsiasi aggiornamento<br /> futuro e il processo di aggiornamento verrà interrotto se l'esecuzione del controllo<br /> dello stato di pre-aggiornamento non riesce. Se si desidera ignorare il risultato dei controlli di stato pre-aggiornamento<br /> e avviare comunque l'aggiornamento, è possibile eliminare il file.</p> </td> 
+   <td><p>Esegue tutti i controlli di integrità pre-aggiornamento e ne salva lo stato in un file denominato <code>preUpgradeHCStatus.properties</code> che si trova nel percorso principale di sling. Se il <code>shutDownOnSuccess</code> parametro è impostato su <code>true</code>, l’istanza di AEM verrà chiusa, ma solo se tutti i controlli di integrità pre-aggiornamento hanno uno stato OK.</p> <p>Il file delle proprietà verrà utilizzato come prerequisito per qualsiasi aggiornamento<br /> futuro e il processo di aggiornamento verrà interrotto se l'esecuzione del controllo<br /> dello stato di pre-aggiornamento non riesce. Se si desidera ignorare il risultato dei controlli di integrità pre-aggiornamento<br /> e avviare comunque l'aggiornamento, è possibile eliminare il file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
@@ -234,6 +237,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili `PreUpgradeTasks
 >* Console JMX
 >* Qualsiasi applicazione esterna che si connette a JMX
 >* cURL
+
 >
 
 
@@ -279,7 +283,7 @@ Per disabilitare i moduli personalizzati definiti nella configurazione JAAS di `
 
 >[!NOTE]
 >
->Rimuovere i pacchetti dalla directory crx-quickstart/install solo dopo che l&#39;istanza AEM è stata chiusa. Questo sarà uno degli ultimi passi prima di avviare la procedura di aggiornamento locale.
+>Rimuovere i pacchetti dalla directory crx-quickstart/install solo dopo che l&#39;istanza di AEM è stata chiusa. Questo sarà uno degli ultimi passi prima di avviare la procedura di aggiornamento locale.
 
 Rimuovere tutti i Service Pack, i feature pack o gli hotfix distribuiti tramite la `crx-quickstart/install` directory del file system locale. Questo impedirà l&#39;installazione involontaria di hotfix e Service Pack precedenti sulla nuova versione di AEM dopo il completamento dell&#39;aggiornamento.
 
@@ -297,7 +301,7 @@ Disattiva tutti i processi pianificati OSGi inclusi nel codice dell’applicazio
 >
 >Questo passaggio è necessario solo per le installazioni TarMK
 
-Se si utilizza TarMK, è necessario eseguire la pulizia revisioni offline prima di eseguire l&#39;aggiornamento. In questo modo la fase di migrazione dell&#39;archivio e le successive attività di aggiornamento verranno eseguite molto più rapidamente e sarà possibile garantire la corretta esecuzione della funzione di pulizia delle revisioni online al termine dell&#39;aggiornamento. Per informazioni sull&#39;esecuzione della pulizia revisioni offline, vedere [Esecuzione della pulizia](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup)revisioni offline.
+Se si utilizza TarMK, è necessario eseguire la pulizia revisioni offline prima di eseguire l&#39;aggiornamento. In questo modo la fase di migrazione dell&#39;archivio e le successive attività di aggiornamento verranno eseguite molto più rapidamente e sarà possibile garantire la corretta esecuzione della funzione di pulizia delle revisioni online dopo il completamento dell&#39;aggiornamento. Per informazioni sull&#39;esecuzione della pulizia delle revisioni offline, vedere [Esecuzione della pulizia](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup)delle revisioni offline.
 
 ## Esegui raccolta dati Garbage {#execute-datastore-garbage-collection}
 
@@ -313,8 +317,8 @@ Dopo aver eseguito la pulizia revisioni sulle istanze CRX3, è necessario esegui
 >
 >Questa attività di manutenzione pre-aggiornamento è necessaria solo se:
 >
-> * Stai effettuando l&#39;aggiornamento dalle versioni di AEM precedenti a AEM 6.3
-> * Durante l&#39;aggiornamento si verificano i seguenti errori.
+>* Stai effettuando l&#39;aggiornamento dalle versioni di AEM precedenti a AEM 6.3
+>* Durante l&#39;aggiornamento si verificano gli errori indicati di seguito.
 
 
 In alcuni casi eccezionali, gli utenti del servizio potrebbero finire in una versione precedente di AEM con tag non corretti come utenti normali.
@@ -346,10 +350,10 @@ Tuttavia, potrebbero verificarsi casi in cui lo schema non può essere aggiornat
 
 Per evitare che ciò si verifichi, è necessario aggiornare lo schema seguendo la procedura seguente:
 
-1. Arrestate l’istanza di AEM da aggiornare.
-1. Aggiornare lo schema del database. Consulta la documentazione relativa al tipo di database in uso per vedere quali sono gli strumenti necessari per ottenere questo risultato.
+1. Arrestate l’istanza di AEM che deve essere aggiornata.
+1. Aggiornare lo schema del database. Consulta la documentazione relativa al tipo di database in uso per vedere quali sono gli strumenti da utilizzare per ottenere questo risultato.
 
-   Per ulteriori informazioni su come Oak gestisce gli aggiornamenti dello schema, consultate [questa pagina sul sito Web](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)Apache.
+   Per ulteriori informazioni sulla gestione degli aggiornamenti dello schema da parte di Oak, consultate [questa pagina sul sito Web](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)Apache.
 
 1. Procedete con l’aggiornamento di AEM.
 
