@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Puoi configurare i database relazionali utilizzando la configurazione della cons
    * URI connessione JDBC
    * Nome utente e password per stabilire la connessione con il driver JDBC
 
-   >[!NOTE] {grigioBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Prima di configurare l&#39;origine dati, assicurarsi di crittografare le informazioni riservate come password. Per crittografare:
    >
@@ -79,7 +79,7 @@ Puoi configurare il profilo utente AEM tramite la configurazione del connettore 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
 
-   >[!NOTE] {grigioBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >The **&amp;ast;** nell’esempio precedente indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM nella struttura CRXDE. Ciò significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
 
