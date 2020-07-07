@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Panoramica di esempio {#sample-overview}
 
-Il componente bozze del portale AEM Forms e invii consente agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, in AEM Forms sono disponibili servizi per dati e metadati che consentono di archiviare i dati compilati dall&#39;utente nel modulo, nonché i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l&#39;istanza di pubblicazione AEM, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
+Le bozze del portale AEM Forms e il componente di invio consentono agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, i AEM Forms forniscono servizi per dati e metadati che consentono di memorizzare i dati compilati dall&#39;utente nel modulo, nonché i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l&#39;istanza di pubblicazione AEM, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
 
 L’esempio, discusso in questo documento, è un’implementazione di riferimento di servizi di dati e metadati personalizzati per integrare le bozze e i componenti inviati in un database. Il database utilizzato nell&#39;implementazione di esempio è **MySQL 5.6.24**. Tuttavia, potete integrare il componente bozze e invii con qualsiasi database di vostra scelta.
 
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-> * Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
+>* Verificate di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo sui rilasci di [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) .
+>* Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
 
 
 ## Configurare e configurare l’esempio {#set-up-and-configure-the-sample}
