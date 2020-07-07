@@ -1,13 +1,13 @@
 ---
 title: Installazione e configurazione di document services
 seo-title: Installazione e configurazione di document services
-description: Installate AEM Forms document services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l'accesso ai documenti e decodificare moduli con codice a barre.
-seo-description: Installate AEM Forms document services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l'accesso ai documenti e decodificare moduli con codice a barre.
+description: Installare AEM Forms document services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l'accesso ai documenti e decodificare moduli con codice a barre.
+seo-description: Installare AEM Forms document services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l'accesso ai documenti e decodificare moduli con codice a barre.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 4c99cf4852ea21a85013d8745ade48500110e58a
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '4353'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Installazione e configurazione di document services {#installing-and-configuring-document-services}
 
-AEM Forms offre una serie di servizi OSGi per eseguire diverse operazioni a livello di documento, ad esempio servizi per creare, assemblare, distribuire e archiviare documenti PDF, aggiungere firme digitali per limitare l&#39;accesso ai documenti e decodificare moduli con codice a barre. Questi servizi sono inclusi nel pacchetto del componente aggiuntivo AEM Forms. Collettivamente, questi servizi sono noti come document services. Di seguito è riportato l&#39;elenco delle funzionalità principali e dei servizi documenti disponibili:
+I AEM Forms forniscono una serie di servizi OSGi per eseguire diverse operazioni a livello di documento, ad esempio servizi per creare, assemblare, distribuire e archiviare documenti PDF, aggiungere firme digitali per limitare l&#39;accesso ai documenti e decodificare moduli con codice a barre. Questi servizi sono inclusi nel pacchetto del componente aggiuntivo AEM Forms. Collettivamente, questi servizi sono noti come document services. Di seguito è riportato l&#39;elenco delle funzionalità principali e dei servizi documenti disponibili:
 
-* **Servizio Assembler:** Consente di combinare, ridisporre e ampliare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Consente inoltre di convertire e convalidare i documenti PDF in documenti PDF/A standard, di trasformare moduli PDF, moduli XML e moduli PDF in PDF/A-1b, PDF/A-2b e PDFA/A-3b. Per ulteriori informazioni, consulta [Assembler Service](/help/forms/using/assembler-service.md).
+* **Servizio Assembler:** Consente di combinare, ridisporre e ampliare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Consente inoltre di convertire e convalidare documenti PDF in PDF/A standard, di trasformare PDF forms, moduli XML e PDF forms in PDF/A-1b, PDF/A-2b e PDFA/A-3b. Per ulteriori informazioni, consulta [Assembler Service](/help/forms/using/assembler-service.md).
 
 * **Servizio ConvertPDF:** Consente di convertire i documenti PDF in file PostScript o di immagini (JPEG, JPEG 2000, PNG e TIFF). Per ulteriori informazioni, vedere [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md).
 
@@ -45,21 +45,21 @@ AEM Forms offre una serie di servizi OSGi per eseguire diverse operazioni a live
 
    Il servizio firma accede ai certificati e alle credenziali memorizzate nell&#39;archivio certificati attendibili. Per ulteriori informazioni, vedere [Servizio](/help/forms/using/aem-document-services-programmatically.md)firme.
 
-AEM Forms è una potente piattaforma aziendale e document services è solo una delle funzionalità di AEM Forms. Per un elenco completo delle funzionalità, consultate [Introduzione ai moduli](/help/forms/using/introduction-aem-forms.md)AEM.
+AEM Forms è una potente piattaforma di classe enterprise e document services è solo una delle funzionalità dei AEM Forms. Per l&#39;elenco completo delle funzionalità, consultate [Introduzione ai AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologia di distribuzione {#deployment-topology}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implementata in AEM. In genere, per eseguire AEM Forms document services è necessaria una sola istanza di AEM (creazione o pubblicazione). Per eseguire AEM Forms Document Services è consigliabile utilizzare la seguente topologia. Per informazioni dettagliate sulle topologie, consultate [Architettura e topologie di distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Il pacchetto aggiuntivo AEM Forms è un’applicazione distribuita in AEM. In genere, per eseguire AEM Forms document services è necessaria una sola istanza di AEM (creazione o pubblicazione). Per eseguire AEM Forms document services è consigliabile utilizzare la topologia seguente. Per informazioni dettagliate sulle topologie, consultate Topologie di [architettura e distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![Topologie di architettura e implementazione per AEM Forms](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
->Anche se AEM Forms consente di configurare ed eseguire tutte le funzionalità da un solo server, è necessario pianificare la capacità, bilanciare il carico e configurare server dedicati per capacità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e più moduli adattivi per l&#39;acquisizione dei dati, impostare server AEM Forms separati per il servizio PDF Generator e le funzionalità dei moduli adattivi. Consente di fornire prestazioni ottimali e di ridimensionare i server indipendentemente l&#39;uno dall&#39;altro.
+>Anche se i AEM Forms consentono di configurare ed eseguire tutte le funzionalità da un singolo server, è necessario eseguire la pianificazione della capacità, il bilanciamento del carico e configurare server dedicati per capacità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e più moduli adattivi per l&#39;acquisizione dei dati, impostare server AEM Forms separati per il servizio PDF Generator e le funzionalità dei moduli adattivi. Consente di fornire prestazioni ottimali e di ridimensionare i server indipendentemente l&#39;uno dall&#39;altro.
 
 ## Requisiti di sistema {#system-requirements}
 
-Prima di iniziare a installare e configurare AEM Forms document services, accertati che:
+Prima di iniziare a installare e configurare AEM Forms document services, assicurarsi che:
 
 * L&#39;infrastruttura hardware e software è già in funzione. Per un elenco dettagliato di hardware e software supportati, consultate i requisiti [tecnici](/help/sites-deploying/technical-requirements.md).
 
@@ -197,7 +197,7 @@ Le configurazioni elencate nella sezione delle configurazioni di pre-installazio
 
 ### Installare Adobe Acrobat e applicazioni di terze parti {#install-adobe-acrobat-and-third-party-applications}
 
-Se si utilizza il servizio PDF Generator per convertire in documenti PDF formati di file nativi quali Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 e Adobe Acrobat, verificare che tali applicazioni siano installate nel server AEM Forms.
+Se utilizzate il servizio PDF Generator per convertire in documenti PDF formati di file nativi quali Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 e Adobe Acrobat, accertatevi che tali applicazioni siano installate nel server AEM Forms.
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Se si utilizza il servizio PDF Generator per convertire in documenti PDF formati
 
 
 
-Dopo aver installato Acrobat, aprite Microsoft Word. Nella **scheda** Acrobat, fare clic **su Crea PDF** e convertire un file .doc o .docx disponibile sul computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto per utilizzare Acrobat con il servizio PDF Generator.
+Dopo aver installato Acrobat, aprite Microsoft Word. Nella **scheda** Acrobat, fare clic **su Crea PDF** e convertire un file .doc o .docx disponibile sul computer in un documento PDF. Se la conversione ha esito positivo, i AEM Forms sono pronti per utilizzare Acrobat con il servizio PDF Generator.
 
 ### Impostazione delle variabili di ambiente {#setup-environment-variables}
 
@@ -257,11 +257,11 @@ Impostate le variabili di ambiente per i kit di sviluppo Java a 32 bit e a 64 bi
 >* La variabile di ambiente OpenOffice_PATH è impostata sulla cartella di installazione invece del percorso dell&#39;eseguibile.
 >* Non impostare variabili di ambiente per applicazioni di Microsoft Office quali Word, PowerPoint, Excel e Project o per AutoCAD. Se queste applicazioni sono installate sul server, il servizio Genera PDF avvia automaticamente queste applicazioni.
 >* Sulle piattaforme basate su UNIX, installate OpenOffice come /root. Se OpenOffice non è installato come root, il servizio PDF Generator non riesce a convertire i documenti OpenOffice in documenti PDF. Se è necessario installare ed eseguire OpenOffice come utente non principale, fornire i diritti di sudo all&#39;utente non principale.
->* Se si utilizza OpenOffice su una piattaforma basata su UNIX, eseguire il comando seguente per impostare la variabile del percorso:\
-   >  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Se si utilizza OpenOffice su una piattaforma basata su UNIX, eseguire il comando seguente per impostare la variabile del percorso:
 
 >
-
+>  
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Solo per IBM WebSphere) Configurare il provider socket SSL IBM {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -293,7 +293,7 @@ Per configurare il provider socket SSL IBM, effettuate le seguenti operazioni:
    #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
    ```
 
-1. Per consentire al server AEM Forms di utilizzare il file java.security aggiornato, quando si avvia il server AEM Forms, aggiungere il seguente argomento Java:
+1. Per consentire al server AEM Forms di utilizzare il file java.security aggiornato, mentre si avvia il server AEM Forms, aggiungere il seguente argomento Java:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
@@ -357,8 +357,7 @@ Il servizio PDF Generator fornisce percorsi o metodi WebKit, WebCapture e Phanto
 
 >[!NOTE]
 >
-> Ogni volta che installate i nuovi font nella cartella dei font, riavviate l&#39;istanza AEM Forms.
-
+>Ogni volta che installate i nuovi font nella cartella dei font, riavviate l&#39;istanza AEM Forms.
 
 ### (Solo piattaforme basate su UNIX) Configurazioni aggiuntive per la conversione da HTML a PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -391,19 +390,19 @@ Copiate il font Unicode in una delle seguenti directory, a seconda delle necessi
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implementata in AEM. Il pacchetto contiene AEM Forms Document Services e altre funzionalità di AEM Forms. Per installare il pacchetto, effettuate le seguenti operazioni:
+Il pacchetto aggiuntivo AEM Forms è un’applicazione distribuita in AEM. Il pacchetto contiene AEM Forms Document Services e altre funzionalità AEM Forms. Per installare il pacchetto, effettuate le seguenti operazioni:
 
-1. Accedete al server [](Http://localhost:4502) AEM come amministratore e aprite la condivisione [dei](http://localhost:4502/crx/packageshare)pacchetti. È necessario un Adobe ID per accedere alla condivisione del pacchetto.
+1. Accedete al server [](Http://localhost:4502) AEM come amministratore e aprite la condivisione [dei](http://localhost:4502/crx/packageshare)pacchetti. È necessario un Adobe ID  per accedere alla condivisione del pacchetto.
 
 1. In [AEM Package Share](http://localhost:4502/crx/packageshare/login.html)(Condivisione **[!UICONTROL pacchetti AEM), cerca i pacchetti]** aggiuntivi **[!UICONTROL AEM 6.4 Forms, fai clic sul pacchetto applicabile al sistema operativo in uso e fai clic su]** Scarica. Leggere e accettare il contratto di licenza e fare clic su **[!UICONTROL OK]**. Il download viene avviato. Una volta scaricata, accanto al pacchetto viene visualizzata la parola **[!UICONTROL Download]** .
 
-   Potete anche usare il numero di versione per cercare un pacchetto aggiuntivo. Per il numero di versione dell&#39;ultimo pacchetto, consultate l&#39;articolo sulle versioni [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+   Potete anche usare il numero di versione per cercare un pacchetto aggiuntivo. Per il numero di versione dell&#39;ultimo pacchetto, consultate l&#39;articolo sui [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) .
 
 1. Al termine del download, fate clic su **[!UICONTROL Scaricato]**. Viene reindirizzato a Gestione pacchetti. In Gestione pacchetti, eseguite una ricerca nel pacchetto scaricato e fate clic su **[!UICONTROL Installa]**.
 
-   Se scaricate manualmente il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms, accedete a Gestione pacchetti, fate clic su **[!UICONTROL Carica pacchetto]**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **[!UICONTROL Installa]**.
+   Se scaricate manualmente il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms, accedete a Gestione pacchetti, fate clic su **[!UICONTROL Carica pacchetto]**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **[!UICONTROL Installa]**.
 
-1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il registro sia stabile.
+1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e il registro sia stabile.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
 
@@ -436,13 +435,13 @@ Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implemen
    >[!NOTE]
    >
    >Il diritto dell&#39;utente di utilizzare i font forniti da soggetti diversi da Adobe è disciplinato dai contratti di licenza forniti da tali soggetti con tali font e non è coperto dalla licenza di utilizzo del software Adobe. Adobe consiglia di rivedere e assicurarsi che l&#39;utente sia conforme a tutti i contratti di licenza applicabili non Adobe prima di utilizzare font non Adobe con il software Adobe, in particolare per quanto riguarda l&#39;uso dei font in un ambiente server.
-   > Quando installate i nuovi font nella cartella dei font, riavviate l&#39;istanza AEM Forms.
+   > Quando installate i nuovi font nella cartella dei font, riavviate l&#39;istanza dei AEM Forms.
 
 ### Configurare un account utente locale per eseguire il servizio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
 Per eseguire il servizio PDF Generator è necessario un account utente locale. Per i passaggi necessari per creare un utente locale, consultate [Creare un account utente in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o [creare un account utente nelle piattaforme](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)basate su UNIX.
 
-1. Aprire la pagina Configurazione [PDF Generator di](http://localhost:4502/libs/fd/pdfg/config/ui.html) AEM Forms.
+1. Aprire la pagina [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html) .
 
 1. Nella scheda Account **** utente, immettete le credenziali di un account utente locale e fate clic su **[!UICONTROL Invia]**. Se viene richiesto da Microsoft Windows, consentite l&#39;accesso all&#39;utente. Una volta aggiunto correttamente, l&#39;utente configurato viene visualizzato nella sezione **[!UICONTROL Account]** utente nella scheda Account **** utente.
 
@@ -454,7 +453,7 @@ Per eseguire il servizio PDF Generator è necessario un account utente locale. P
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Accedi all’istanza di creazione di AEM e passa ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Moduli]** > **[!UICONTROL Configura generatore]** PDF. L’URL predefinito è http://localhost:4502/libs/fd/pdfg/config/ui.html.
+1. Accedi all’istanza di creazione di AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Moduli]** > **[!UICONTROL Configura generatore]** PDF. L’URL predefinito è http://localhost:4502/libs/fd/pdfg/config/ui.html.
 
    Aprite la scheda Configurazione **** generale e modificate il valore dei seguenti campi per l’ambiente:
 
@@ -525,7 +524,7 @@ La route principale predefinita per la conversione da HTML a PDF è Webkit. Per 
 
 Utilizzando la funzione Trust Store Management, è possibile importare, modificare ed eliminare i certificati affidabili sul server per la convalida delle firme digitali e l&#39;autenticazione tramite certificato. È possibile importare ed esportare qualsiasi numero di certificati. Dopo l&#39;importazione di un certificato, è possibile modificare le impostazioni di attendibilità e il tipo di archivio attendibili. Per inizializzare uno store attendibile, effettuare le seguenti operazioni:
 
-1. Accedi all’istanza di AEM Forms come amministratore.
+1. Accedete all&#39;istanza AEM Forms come amministratore.
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Trust Store]**.
 1. Fare clic su **[!UICONTROL Crea TrustStore]**. Impostate la password e toccate **[!UICONTROL Salva]**.
 
@@ -546,8 +545,8 @@ Prima di impostare i certificati, assicurarsi di disporre di:
 
 Per configurare i certificati, effettuate le seguenti operazioni:
 
-1. Accedete all&#39;istanza di AEM Author come amministratore. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
-1. Fate clic sul campo del **[!UICONTROL nome]** dell’account utente. Viene visualizzata la pagina **[!UICONTROL Modifica impostazioni]** utente. Nell&#39;istanza di AEM Author, i certificati risiedono in un KeyStore. Se non avete già creato un KeyStore in precedenza, fate clic su **[!UICONTROL Create KeyStore]** e impostate una nuova password per KeyStore. Se il server contiene già un KeyStore, ignora questo passaggio.  Se si utilizza il certificato Adobe Reader Extensions, la password del file Keystore è sempre la stessa della password della chiave privata.
+1. Accedete all&#39;istanza AEM Author come amministratore. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
+1. Fate clic sul campo del **[!UICONTROL nome]** dell’account utente. Viene visualizzata la pagina **[!UICONTROL Modifica impostazioni]** utente. Nell&#39;istanza AEM Author, i certificati risiedono in un KeyStore. Se non avete già creato un KeyStore in precedenza, fate clic su **[!UICONTROL Create KeyStore]** e impostate una nuova password per KeyStore. Se il server contiene già un KeyStore, ignora questo passaggio.  Se si utilizza il certificato Adobe Reader Extensions, la password del file Keystore è sempre la stessa della password della chiave privata.
 1. Nella pagina **[!UICONTROL Modifica impostazioni]** utente, selezionate la scheda **[!UICONTROL KeyStore]** . Espandete l&#39;opzione **[!UICONTROL Aggiungi chiave privata dal file]** archivio chiavi e fornite un alias. L&#39;alias viene utilizzato per eseguire l&#39;operazione Reader Extensions.
 1. Per caricare il file del certificato, fate clic su **[!UICONTROL Seleziona file]** archivio chiavi e caricate un file &lt;nomefile>.pfx.
 
@@ -614,7 +613,7 @@ Il servizio Assembler dipende dal servizio Reader Extensions, dal servizio Signa
 
 ## Passaggi successivi {#next-steps}
 
-È disponibile un ambiente AEM Forms Document Services funzionante. È possibile utilizzare document services tramite:
+È presente un ambiente Document Services AEM Forms funzionante. È possibile utilizzare document services tramite:
 
 * [Flussi di lavoro incentrati sui moduli in OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Cartelle controllate](/help/forms/using/watched-folder-in-aem-forms.md)
