@@ -1,6 +1,6 @@
 ---
-title: Utilizzo delle di versioni di pagina
-seo-title: Utilizzo delle versioni di una pagina
+title: 'Utilizzo delle versioni di una pagina  '
+seo-title: 'Utilizzo delle versioni di una pagina  '
 description: Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento.
 seo-description: Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento.
 uuid: b8412922-3dd5-44e3-a7fa-3e357c89a4ff
@@ -10,12 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 90%
 
 ---
 
 
-# Utilizzo delle versioni di una pagina{#working-with-page-versions}
+# Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
 Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento. La funzione di gestione delle versioni consente di effettuare le seguenti operazioni:
 
@@ -23,7 +26,7 @@ Quando si crea una versione, viene creata un’istantanea di una pagina in un pa
 * Ripristinare una versione precedente di una pagina, ad esempio per annullare una modifica apportata alla pagina.
 * Confrontare la versione corrente di una pagina con una versione precedente, evidenziando le differenze nel testo e nelle immagini.
 
-## Creazione di una nuova versione {#creating-a-new-version}
+## Creazione di una nuova versione   {#creating-a-new-version}
 
 Per creare una nuova versione di una pagina:
 
@@ -95,11 +98,12 @@ Per confrontare la versione corrente della pagina con una versione precedente:
    * Il testo eliminato è barrato in rosso.
    * Il testo aggiunto è evidenziato in verde.
    * Le immagini aggiunte o eliminate sono circondate da una cornice verde.
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. Nella barra laterale seleziona la sottoscheda **Ripristina versione** e fai clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
 
-## Timewarp {#timewarp}
+## Timewarp   {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
@@ -132,7 +136,7 @@ La versione Calendario viene usata per visualizzare uno specifico giorno:
 
    >[!NOTE]
    >
-   >Timewarp funziona correttamente solo se la pagina era effettivamente stata precedentemente pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di creazione.
+   >Timewarp funziona correttamente solo se la pagina era effettivamente stata precedentemente pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
 
    >[!NOTE]
    >
@@ -140,12 +144,13 @@ La versione Calendario viene usata per visualizzare uno specifico giorno:
 
    >[!NOTE]
    >
-   >Non è possibile modificare la versione precedente della pagina, è solo possibile visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick). 
+   >Non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Dopo aver visualizzato la pagina, fai clic su:
 
    * **Esci dal Timewarp** per uscire e tornare alla pagina corrente in modalità di creazione.
    * [Mostra timeline](#using-the-timewarp-timeline) consente di visualizzare la timeline.
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### Utilizzo della timeline Timewarp {#using-the-timewarp-timeline}
@@ -177,16 +182,16 @@ Per visualizzare la timeline di un documento:
    1. **Vai** per mostrare il contenuto della pagina pubblicata al momento selezionato.
    1. Quando tale contenuto è visualizzato, **Esci dal Timewarp** consente di uscire e tornare alla pagina corrente in modalità di authoring.
 
-### Limitazioni Timewarp
+### Limitazioni di Timewarp
 
-Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa della complessità dell’authoring continuo di contenuti in AEM, questo non è sempre possibile. Queste limitazioni devono essere considerate durante l’utilizzo di Timewarp.
+Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo di contenuti in AEM, questo non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
 
-* **Timewarp funziona in base alle pagine** pubblicate. Timewarp funziona correttamente solo se la pagina è stata precedentemente pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di creazione.
-* **Timewarp utilizza le versioni** di pagina: se si passa a una pagina che è stata rimossa o eliminata dalla directory archivio, il rendering verrà eseguito correttamente se nella directory archivio sono ancora disponibili versioni precedenti della pagina.
-* **Le versioni rimosse influiscono su Timewarp** : se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
-* **Timewarp è di sola** lettura; non è possibile modificare la versione precedente della pagina. è solo possibile visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di ripristino. 
-* **Timewarp è basato solo sul contenuto** della pagina: se sono stati modificati elementi (come codice, css, risorse/immagini, ecc.) per il rendering del sito Web, la visualizzazione sarà diversa da come era all’origine, in quanto per tali elementi non vengono conservate precedenti versioni nella directory archivio.
+* **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
+* **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
+* **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di ripristino.
+* **Timewarp si basa solo sul contenuto della pagina**: se sono stati modificati alcuni elementi (come codice, css, risorse/immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
 
 >[!CAUTION]
 >
-> Timewarp è uno strumento che consente agli autori di comprendere e creare i propri contenuti. Non è inteso come registro di audit o a fini giuridici.
+>Timewarp è uno strumento che consente agli autori di comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.
