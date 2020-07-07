@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Riutilizzare le risorse con MSM per le risorse {#reuse-assets-using-msm-for-assets}
 
-La funzionalità Multi Site Manager (MSM) di Adobe Experience Manager (AEM) consente agli utenti di riutilizzare contenuti creati una volta e riutilizzati in più posizioni Web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità Assets. Utilizzando MSM per Assets, puoi:
+La funzionalità Multi Site Manager (MSM) in  Adobe Experience Manager (AEM) consente agli utenti di riutilizzare contenuti creati una volta e riutilizzati in più posizioni Web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità Assets. Utilizzando MSM per Assets, puoi:
 
 * Create una volta e quindi copiate le risorse da riutilizzare in altre aree del sito.
 * Mantenete più copie in sincronizzazione e aggiornate la copia principale originale una volta per inviare le modifiche alle copie figlio.
@@ -69,7 +69,7 @@ Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate l
 
 Potete creare copie dal vivo di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa.
 
-I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
@@ -166,7 +166,7 @@ Dopo che un&#39;origine è stata modificata, le modifiche possono essere propaga
 Potete avviare un’azione di rollout dalla risorsa di origine e aggiornare tutte o alcune copie attive selezionate.
 
 1. Selezionate una risorsa Live Copy o una cartella. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fai clic su **[!UICONTROL Origine Live Copy]**. Fate clic su **[!UICONTROL Rollout]** nella barra degli strumenti.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Click **[!UICONTROL Rollout]** from the toolbar.
 1. Selezionate le Live Copy da aggiornare. Fate clic su **[!UICONTROL Rollout]**.
 1. Per distribuire gli aggiornamenti apportati alle risorse figlio, selezionate Origine **[!UICONTROL rollout e tutti gli elementi figlio]**.
    ![Distribuire le modifiche di origine a alcune o tutte le copie in diretta](assets/lc_rollout_page.png)
@@ -253,9 +253,9 @@ AEM consente di estendere le funzionalità tramite le API Java MSM. Per Assets, 
 
 >[!NOTE]
 >
-> * Blueprint in MSM for Site è denominata origine Live Copy in MSM for Assets.
-> * La rimozione del passaggio dei capitoli nella procedura guidata di creazione del sito non è supportata in MSM for Assets.
-> * La configurazione dei blocchi MSM sulle proprietà della pagina (interfaccia touch) non è supportata in MSM for Assets.
+>* Blueprint in MSM for Site è denominata origine Live Copy in MSM for Assets.
+>* La rimozione del passaggio dei capitoli nella procedura guidata di creazione del sito non è supportata in MSM for Assets.
+>* La configurazione dei blocchi MSM sulle proprietà della pagina (interfaccia touch) non è supportata in MSM for Assets.
 
 
 ## Impatto delle attività di gestione delle risorse sulle copie in diretta {#impact-of-asset-management-tasks-on-live-copies}
@@ -283,4 +283,4 @@ In più scenari, MSM for Assets corrisponde al comportamento di MSM per la funzi
 
 Di seguito sono riportati i limiti con MSM per Assets.
 
-* I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+* I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
