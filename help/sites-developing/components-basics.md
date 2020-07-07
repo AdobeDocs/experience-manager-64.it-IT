@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 Prima di iniziare qualsiasi discussione seria sullo sviluppo di componenti, è necessario conoscere l’interfaccia utente che gli autori utilizzeranno:
 
 * **Interfaccia utente touch**
-   [Interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard introdotta in AEM 5.6.0 come anteprima ed estesa in 6.x. Si basa sull’esperienza utente unificata di Adobe Marketing Cloud, utilizzando le tecnologie sottostanti dell’interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell’interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [Interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard introdotta in AEM 5.6.0 come anteprima ed estesa in 6.x. Si basa sull’esperienza utente unificata per il Adobe Marketing Cloud , utilizzando le tecnologie sottostanti dell’interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell’interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Interfaccia utente** classica basata sulla tecnologia ExtJS introdotta con CQ 5.1.
 
@@ -69,9 +72,10 @@ I componenti possono essere implementati per supportare l’interfaccia touch, l
 Per questo motivo descriveremo le basi di entrambi, e come riconoscerli, in questa pagina.
 
 >[!NOTE]
-> Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Modernination Tools&amp;(moderniatzion-tools.md) può facilitare la migrazione.
+>
+>Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Modernination Tools&amp;(moderniatzion-tools.md) può facilitare la migrazione.
 
-### Logica dei contenuti e marcatura del rendering {#content-logic-and-rendering-markup}
+### Logica dei contenuti e marcatura del rendering  {#content-logic-and-rendering-markup}
 
 È consigliabile mantenere il codice responsabile per la marcatura e il rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
@@ -176,6 +180,7 @@ La definizione di un componente può essere ripartita come segue:
       Definiscono gli elementi statici usati dal componente.
 
    * Script:
+
    Sono utilizzati per implementare il comportamento dell’istanza risultante del componente.
 
 * **Nodo principale**:
@@ -453,6 +458,7 @@ Le definizioni delle finestre di dialogo sono specifiche dell’interfaccia:
 >
 >* Per motivi di compatibilità, l’interfaccia touch può usare la definizione di una finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per l’interfaccia touch.
 >* È inoltre disponibile lo strumento [di conversione della finestra di](/help/sites-developing/dialog-conversion.md) dialogo che consente di estendere o convertire componenti con solo finestre di dialogo definite per l’interfaccia classica.
+
 >
 
 
@@ -469,6 +475,7 @@ Le definizioni delle finestre di dialogo sono specifiche dell’interfaccia:
 
          * Per i componenti out-of-the-box questo fa spesso riferimento a una pagina nella documentazione.
          * Se non `helpPath` viene specificato alcun URL, viene visualizzata la pagina di panoramica della documentazione.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    All’interno della finestra di dialogo, sono definiti i singoli campi:
@@ -487,6 +494,7 @@ Le definizioni delle finestre di dialogo sono specifiche dell’interfaccia:
 
          * Per i componenti out-of-the-box questo fa spesso riferimento a una pagina nella documentazione.
          * Se non `helpPath` viene specificato alcun URL, viene visualizzata la pagina di panoramica della documentazione.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    All’interno della finestra di dialogo, sono definiti i singoli campi:
@@ -577,13 +585,13 @@ I componenti all’interno di AEM sono soggetti a 3 gerarchie diverse:
 
 ## Modifica comportamento {#edit-behavior}
 
-In questa sezione viene illustrato come configurare il comportamento di modifica di un componente. Sono inclusi attributi quali le azioni disponibili per il componente, le caratteristiche dell’editor locale e i listener relativi agli eventi sul componente.
+In questa sezione viene illustrato come configurare il comportamento di modifica di un componente. Questo include attributi come le azioni disponibili per il componente, le caratteristiche dell’editor locale e i listener relativi agli eventi sul componente.
 
 La configurazione è comune sia all’interfaccia touch che all’interfaccia classica, anche se con alcune specifiche differenze.
 
 Il comportamento di modifica di un componente è configurato aggiungendo un `cq:editConfig` nodo di tipo `cq:EditConfig` sotto il nodo del componente (di tipo `cq:Component`) e aggiungendo proprietà specifiche e nodi secondari. Sono disponibili le seguenti proprietà e nodi secondari:
 
-* [ proprietà `cq:editConfig` del](#configuring-with-cq-editconfig-properties)nodo:
+* [ `cq:editConfig` proprietà](#configuring-with-cq-editconfig-properties)nodo:
 
    * `cq:actions` ( `String array`): definisce le azioni che possono essere eseguite sul componente.
    * `cq:layout` ( `String`): : definisce la modalità di modifica del componente nell’interfaccia classica.
@@ -595,7 +603,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
    * `dialogLayout` (String): Definisce la modalità di apertura della finestra di dialogo.
 
 
-* [ nodi `cq:editConfig`](#configuring-with-cq-editconfig-child-nodes)secondari:
+* [ `cq:editConfig` nodi](#configuring-with-cq-editconfig-child-nodes)secondari:
 
    * `cq:dropTargets` (tipo di nodo `nt:unstructured`): Definisce un elenco di destinazioni di rilascio che possono accettare un rilascio da una risorsa di Content Finder
 
@@ -625,7 +633,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
 
 Nella directory archivio sono presenti diverse configurazioni. È possibile cercare facilmente proprietà specifiche o nodi secondari:
 
-* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio È `cq:actions`possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa di query XPath:
+* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa query XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
