@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 9b7bab63c5c0b9a0a86289e895cd35a4df277e1e
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -157,7 +157,7 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 
 * Un carico iniziale di ID è fornito da hybris come feed. Possono essere presenti aggiornamenti a questo feed.
 * hybris fornirà informazioni di aggiornamento tramite un feed (che verrà controllato da AEM).
-* Quando AEM utilizza i dati di prodotto, invia le richieste ai hybris per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
+* Quando AEM utilizza i dati di prodotto, invia le richieste agli ibridi per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
 * In hybris è possibile specificare il contenuto di feed in modo dichiarativo.
 * La mappatura della struttura del feed al modello di contenuto AEM avviene nella scheda del feed sul lato AEM.
 
@@ -226,12 +226,10 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
 >1. `size`
    >
    >
-1. più uno\
-   >   Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
-
+1. più uno
 >
-
-
+>   
+Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati prodotto {#product-references-and-product-data}
 
