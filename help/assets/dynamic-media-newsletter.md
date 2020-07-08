@@ -6,9 +6,9 @@ seo-title: 'Adobe Dynamic Media Newsletter '
 solution: Dynamic Media
 title: Newsletter Dynamic Media
 translation-type: tm+mt
-source-git-commit: 0516bd887799e542ddcda366a71ad2627baed73f
+source-git-commit: 787fcf312eabcb44cfe114b5b3b80341fa295637
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[Aprile 2020, Numero 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+* **[Aprile 2020, Numero 3](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    In questo numero:
 
@@ -56,7 +56,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    >
    >Desideriamo essere certi di inviare la newsletter Dynamic Media solo a chi desidera riceverla. Per continuare a ricevere la newsletter dopo questo problema, registratevi [qui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
 
-* **[Febbraio 2020, Numero 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
+* **[Febbraio 2020, Numero 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    In questo numero:
 
@@ -67,7 +67,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    * Scopri la nuova interfaccia utente di Dynamic Media Classic.
    * Scopri Georgia Myers, responsabile del successo dei clienti per Adobe Experience Cloud.
 
-* **[Gennaio 2020, Numero 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+* **[Gennaio 2020, Numero 1](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    In questo numero:
 
