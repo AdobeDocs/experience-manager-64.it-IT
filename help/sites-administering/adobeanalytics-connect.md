@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1556'
 ht-degree: 7%
 
 ---
@@ -44,11 +44,11 @@ L&#39;account Adobe  Analytics deve:
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-Prima di continuare, accertatevi che le credenziali vi consentano di accedere ad Adobe  Analytics. Tramite:
+Prima di continuare, accertati che le tue credenziali ti consentano di accedere ad Adobe  Analytics utilizzando uno dei seguenti metodi:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Accesso Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe  Analytics Sign](https://sc.omniture.com/login/)
 
 ### Configurazione di AEM per l’utilizzo di Adobe  Analytics Data Center {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
