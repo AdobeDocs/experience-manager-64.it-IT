@@ -8,10 +8,10 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 2%
+source-wordcount: '1836'
+ht-degree: 1%
 
 ---
 
@@ -91,17 +91,19 @@ Prima di iniziare a installare e configurare AEM Forms di funzionalità di acqui
 
 Il pacchetto aggiuntivo AEM Forms è un’applicazione distribuita in AEM. Il pacchetto contiene l&#39;acquisizione dei dati AEM Forms e altre funzionalità. Effettuate le seguenti operazioni per installare il pacchetto del componente aggiuntivo:
 
-1. Accedete al server [](Http://localhost:4502) AEM come amministratore e aprite la condivisione [dei](http://localhost:4502/crx/packageshare)pacchetti. È necessario un Adobe ID  per accedere alla condivisione del pacchetto.
-1. In [AEM Package Share](http://localhost:4502/crx/packageshare/login.html)(Condivisione **[!UICONTROL pacchetti AEM), cerca i pacchetti]** aggiuntivi **[!UICONTROL AEM 6.4 Forms, fai clic sul pacchetto applicabile al sistema operativo in uso e fai clic su]** Scarica. Leggere e accettare il contratto di licenza e fare clic su **[!UICONTROL OK]**. Il download viene avviato. Una volta scaricata, accanto al pacchetto viene visualizzata la parola **[!UICONTROL Download]** .
+1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Nella sezione **[!UICONTROL Filtri]** :
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   Potete anche usare il numero di versione per cercare un pacchetto aggiuntivo. Per il numero di versione dell&#39;ultimo pacchetto, consultate l&#39;articolo sui [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) .
-
-1. Al termine del download, fate clic su **[!UICONTROL Scaricato]**. Viene reindirizzato a Gestione pacchetti. In Gestione pacchetti, eseguite una ricerca nel pacchetto scaricato e fate clic su **[!UICONTROL Installa]**.
-
-   Se scaricate manualmente il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms, accedete a Gestione pacchetti, fate clic su **[!UICONTROL Carica pacchetto]**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **[!UICONTROL Installa]**.
+   Potete anche scaricare il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
 1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e il registro sia stabile.
-1. Ripetete i passaggi da 1 a 4 su tutte le istanze Author e Publish.
+1. Ripetete i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
 
@@ -136,11 +138,11 @@ Per avviare la delega delle librerie, eseguite i seguenti passaggi su tutte le i
 
 #### Configurare l’agente di serializzazione {#configure-the-serialization-agent}
 
-Per aggiungere il pacchetto all’elenco di autorizzazioni, eseguite i seguenti passaggi su tutte le istanze Author e Publish:
+Per aggiungere il pacchetto al inserire nell&#39;elenco Consentiti di , eseguite i seguenti passaggi su tutte le istanze Author e Publish:
 
 1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è `https://[server]:[port]/system/console/configMgr`.
 1. Cerca e apri la configurazione **[!UICONTROL del firewall di]** deserializzazione.
-1. Aggiungete il pacchetto **[!UICONTROL sun.util.calendar]** al campo **[!UICONTROL Allowlist]** . Fai clic su **[!UICONTROL Salva]**.
+1. Aggiungete il pacchetto **[!UICONTROL sun.util.Calendar]** al campo di **[!UICONTROL inserire nell&#39;elenco Consentiti]** . Fai clic su **[!UICONTROL Salva]**.
 1. Ripetete i passaggi da 1 a 3 su tutte le istanze Author e Publish.
 
 ### Configurazioni di post-installazione facoltative {#optional-post-installation-configurations}
@@ -159,7 +161,7 @@ Dispatcher è uno strumento per il caching e il bilanciamento del carico per AEM
 
 1. Configurare il servizio filtro di riferimento:
 
-   Accedete al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **[!UICONTROL Configurazioni]** , selezionate l&#39;opzione Filtro **[!UICONTROL di riferimento]** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **[!UICONTROL Salva]**. Il formato della voce è `https://[server]:[port]`.
+   Accedete al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **[!UICONTROL Configurazioni]** , selezionate l&#39;opzione Filtro **[!UICONTROL di riferimento]** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **[!UICONTROL Salva]**. The format of the entry is `https://[server]:[port]`.
 
 #### Configura cache {#configure-cache}
 
