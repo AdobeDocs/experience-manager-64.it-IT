@@ -1,14 +1,17 @@
 ---
 title: Temi di riferimento
 seo-title: Temi di riferimento
-description: 'In AEM Forms sono disponibili temi per i moduli adattivi che è possibile ottenere dalla condivisione di pacchetti e che è possibile utilizzare per formattare un modulo. '
-seo-description: 'In AEM Forms sono disponibili temi per i moduli adattivi che è possibile ottenere dalla condivisione di pacchetti e che è possibile utilizzare per formattare un modulo. '
+description: 'I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo. '
+seo-description: 'I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
@@ -23,10 +26,10 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 * Libertà
 * Ultramarina
 * Urbane
-* Standard di progettazione Web statunitensi
+* Standard di web design degli Stati Uniti
 * Tranquillo
 
-Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare deliziosi moduli adattivi per gli utenti. Contiene uno stile univoco per selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty consente di ottenere questo look.
+Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare deliziosi moduli adattivi per gli utenti. Contiene uno stile univoco per i selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty consente di ottenere questo look.
 
 ![Temi di riferimento](assets/ref-themes.png)
 
@@ -42,7 +45,7 @@ Il tema Beryl è utilizzato dal modulo [adattivo](/help/forms/using/gov-referenc
 ## Exec {#exec}
 
 Il tema Exec evita riempimenti di sfondo pieni per enfatizzare i componenti del modulo. Selezionando e facendo clic sui componenti, i colori dei font vengono modificati. Rispetto al tema canvas predefinito, il colore del font del testo nella scheda selezionata diventa blu scuro. I pulsanti di navigazione e di invio sono diversi dal tema Beryl.
-![Titolo Exec](assets/exec.png)
+![Exec, tema](assets/exec.png)
 
 [Fare clic per ingrandire](assets/exec-1.png)
 
@@ -79,7 +82,7 @@ Il tema Urbane enfatizza un aspetto minimalista e funzionale per il modulo. Quan
 
 [Fare clic per ingrandire](assets/urbane-1.png)
 
-## Standard di progettazione Web statunitensi {#u-s-web-design-standards}
+## Standard di web design degli Stati Uniti {#u-s-web-design-standards}
 
 Il tema Standard di Progettazione Web degli Stati Uniti, come suggerisce il nome, utilizza i tipi di carattere e gli stili descritti nel sito Web Microsoft Design Standards. Lo standard web è utilizzato dalle organizzazioni federali per creare esperienze Web coerenti tra i siti web delle amministrazioni federali.
 ![Tema statunitense per gli standard di progettazione Web](assets/us-web-standards.png)
