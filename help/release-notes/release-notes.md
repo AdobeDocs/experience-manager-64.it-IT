@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 28%
 
 ---
@@ -230,7 +230,7 @@ Diversi miglioramenti includono la possibilità di importare ed esportare simult
 
 **Rapporti**
 
-In AEM 6.4, il reporting delle risorse è stato sottoposto a una grande revisione con il nuovo framework di reporting, l’esperienza degli utenti e un numero maggiore di report OOTB per gli usi dei clienti. Per informazioni su come generare vari rapporti, consultate Rapporti sulle [risorse](/help/assets/asset-reports.md).
+In AEM 6.4, il reporting delle risorse è stato sottoposto a una grande revisione con il nuovo framework di reporting, l’esperienza degli utenti e più rapporti OOTB per gli usi dei clienti. Per informazioni su come generare vari rapporti, consultate Rapporti sulle [risorse](/help/assets/asset-reports.md).
 
 **Esperienza utente**
 
@@ -290,7 +290,7 @@ Maggiori dettagli sulla pagina delle note sulla versione [AEM Forms](forms.md) .
 
 Puoi integrare Livefyre con l’istanza di AEM 6.4. Le informazioni su come integrare Livefyre con AEM si trovano qui:
 
-* [Integrazione di Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Integrazione di Livefyre](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### Sfruttare lo sviluppo incentrato sul cliente {#leverage-customer-focused-development}
 
