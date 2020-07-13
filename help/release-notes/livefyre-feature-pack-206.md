@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
   </tr>
   <tr>
    <td>Tipo</td> 
-   <td>Versione funzione</td> 
+   <td>Release delle funzioni</td> 
   </tr>
   <tr>
    <td>Data</td> 
@@ -54,28 +57,28 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 Questo pacchetto integra le funzionalità di cura leader di settore di Livefyre con l’istanza AEM, consentendo di pubblicare in pochi minuti contenuti generati dagli utenti (UGC) dai social network al sito. Il pacchetto include tre componenti diversi:
 
-**Importare contenuti UGC in AEM Assets**
+**Importa contenuto UGC negli AEM Assets**
 
-* Importa contenuti generati dagli utenti di Twitter e Instagram (UGC) da Livefyre Studio a Risorse AEM tramite UGC Importer.
+* Importate contenuti generati dagli utenti di Twitter e Instagram (UGC) da Livefyre Studio ai AEM Assets mediante l&#39;Importazione UGC.
 * Accedete alla libreria Livefyre.
 * Effettuate ricerche in tempo reale su Twitter e Instagram tramite Livefyre Social Search.
 * Gestire i diritti sull’UGC.
 
-**Aggiunta di componenti Livefyre a siti o community AEM**
+**Aggiunta di componenti Livefyre ad AEM Sites o community**
 
 * Crea e personalizza all&#39;istante esperienze dinamiche e coinvolgenti utilizzando una suite di componenti Social, tra cui mappe, Gallerie e muri multimediali.
-* Pubblicare UGC in AEM Sites o Communities.
+* Pubblicare UGC in AEM Sites o community.
 
 **Importazione di cataloghi di prodotti in Livefyre con AEM Commerce**
 
 * Integrate perfettamente il catalogo di prodotti esistente in Livefyre per stimolare il coinvolgimento e la conversione degli utenti nei vostri siti, oltre a fornire esperienze UGC acquistabili.
 * Modificate o eliminate elementi nel Catalogo prodotti AEM Commerce e aggiornate automaticamente le modifiche in Livefyre.
 
-Per informazioni sull’installazione, consultate [Integrazione con Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Per informazioni sull’installazione, consultate [Integrazione con Livefyre](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### Ulteriori informazioni sulla versione {#additional-release-information}
 
-A causa di aggiornamenti che influiscono sull&#39;aggregazione di contenuto dagli account utente non business di Instagram, non è più possibile pubblicare commenti per conto dell&#39;utente o verificare automaticamente la presenza di risposte dall&#39;autore. [Fai clic qui per saperne di più](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+A causa di aggiornamenti che influiscono sull&#39;aggregazione di contenuto dagli account utente non business di Instagram, non è più possibile pubblicare commenti per conto dell&#39;utente o controllare automaticamente la presenza di risposte dall&#39;autore. [Fai clic qui per saperne di più](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
 >[!NOTE]
 >
@@ -84,17 +87,17 @@ A causa di aggiornamenti che influiscono sull&#39;aggregazione di contenuto dagl
 #### Nuova funzionalità o miglioramento {#new-feature-or-improvement}
 
 * Aggiunta la possibilità di effettuare ricerche UGC prima di configurare gli account social delle richieste di diritti in Livefyre. Per richiedere i diritti, dovete impostare gli account social o ignorare la richiesta di diritti se siete proprietari del contenuto.
-* Il flusso di lavoro [della richiesta di diritti](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) UGC per Instagram e Twitter è stato aggiornato per conformarsi alle API più recenti.
+* Il flusso di lavoro [della richiesta di diritti](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/livefyre.html) UGC per Instagram e Twitter è stato aggiornato per conformarsi alle API più recenti.
 * Lo stato dei diritti e le azioni appropriate vengono ora visualizzati nella schermata di richiesta dei diritti.
 
 #### Correzioni di bug {#bug-fixes}
 
 * È stato risolto un problema che causava un errore durante il caricamento della libreria UGC in AEM a causa dell&#39;eliminazione di un account social in Livefyre Studio utilizzato per la richiesta di diritti.
 * È stato risolto un problema per cui il conteggio delle risorse nello studio Livefyre non corrispondeva al conteggio delle risorse nella libreria UGC di AEM.
-* È stato risolto un problema nella libreria UGC a causa del quale i risultati filtrati visualizzati dopo la reimpostazione delle opzioni filtro.
+* È stato risolto un problema nella libreria UGC a causa del quale i risultati filtrati venivano visualizzati dopo la reimpostazione delle opzioni filtro.
 * È stato risolto un problema con AEM Commerce a causa del quale i pulsanti call-to-action reindirizzavano gli utenti all&#39;URL errato.
-* È stato risolto un problema in AEM Sites a causa del quale il trascinamento di più componenti nel segnaposto parsys causava la scomparsa di tale componente.
-* È stato corretto un problema a causa del quale gli account social disabilitati erano disponibili per la selezione quando si inviava una richiesta di diritti.
+* È stato risolto un problema in AEM Sites che causava la scomparsa di più componenti trascinandoli nel segnaposto parsys.
+* È stato corretto un problema a causa del quale gli account social disabilitati erano disponibili per la selezione al momento dell&#39;invio di una richiesta di diritti.
 * È stato risolto un problema che causava un errore durante il trascinamento di UGC da Assets a Sites.
 * È stato risolto un problema a causa del quale il trascinamento e il rilascio dei componenti Chat e Liveblog in Sites non creava l&#39;app.
 * È stato risolto un problema che causava un errore nell&#39;app dei commenti quando gli utenti tentavano di aggiungere commenti.
