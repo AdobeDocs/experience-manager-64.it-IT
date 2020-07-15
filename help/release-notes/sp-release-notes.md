@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | Versione | 6.4.8.0 |
 | Tipo | Versione Service Pack |
 | Data | 05 marzo 2020 |
-| URL di download | AEM 6.4.8.0 su [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), distribuzione [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL di download | AEM 6.4.8.0 sulla distribuzione [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Funzionalità incluse in AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -299,7 +299,7 @@ Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nel
 
 ##### Quercia {#oak-6470}
 
-* I file MS Office con estensione .docx e .xlsx contenenti immagini JPEG non possono essere analizzati utilizzando il parser Tika (NPR-31693).
+* I file MS Office con estensione .docx e .xlsx contenenti immagini JPEG non vengono analizzati utilizzando il parser Tika (NPR-31693).
 
 ##### Livefyre {#livefyre-6470}
 
@@ -779,7 +779,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * Quando un file CSV ha un valore separato da virgole in una singola colonna, l’editor CSV AEM non esce dalla virgola e la tratta come una colonna separata. NPR-28801: Hotfix per CQ-4261694
 * Problema con l&#39;Editor schema metadati quando si utilizza il browser percorsi per selezionare i dati. NPR-28674: Hotfix per CQ-4263005
 * Troppe risorse vengono elaborate in Smart Content Service e il processo periodico di assegnazione dei tag viene completato per un periodo di tempo molto lungo. NPR-28640: Hotfix per CQ-4262661, CQ-4262644, CQ-4263234
-* Le azioni desktop non funzionano per i risultati della ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
+* Le azioni desktop non funzionano per i risultati di ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
 * L’API Assets non consente il caricamento di file > 2 GB, causando errori di caricamento. NPR-27629: Hotfix per GRANITE-23590
 * I metadati non vengono salvati nella risorsa scaricata nel primo tentativo nel caso in cui Dynamic Media sia abilitato nell’istanza. NPR-28233: Hotfix per CQ-4260759
 * Il risolutore del servizio non è chiuso nella configurazione SiteCatalyst. NPR-28015: Hotfix per CQ-4259397
@@ -814,7 +814,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * I dati JSON ricevuti da Target presentano una serie di caratteri di escape che causano l&#39;interruzione della pagina dell&#39;applicazione. NPR-28318: Hotfix per CQ-4252043
 * Non è possibile modificare alcun componente dopo l’installazione di AEM 6.4.3. NPR-28125: Hotfix per CQ-4261216
 * L&#39;eliminazione di tutti i tag per un campo tag non è persistente per un frammento di contenuto strutturato. NPR-28133: Hotfix per CQ-4247241
-* Quando si modifica una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
+* Quando modificate una proprietà frammento di contenuto &quot;jcr:lastmodiedby&quot; e &quot;jcr:lastmodified&quot;, i valori vengono aggiornati senza che l’utente apporti modifiche. NPR-27847: Hotfix per CQ-4257138
 * La versione dei frammenti di contenuto confronta diversi miglioramenti per AEM 6.4. NPR-27764
 * Se nel modello di frammento esperienza non è definito alcun cq:allowTemplates su /content/experience-fragments e allowPaths, viene generato un errore quando il frammento esperienza viene spostato/copiato. NPR-27487: Hotfix per CQ-4257489
 * Il pulsante Crea viene visualizzato all’aggiornamento per il nuovo utente. NPR-27335: Hotfix per CQ-4255360
@@ -1246,7 +1246,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 
 **Moduli mobili**
 
-* La notifica di uscita non viene visualizzata quando si esce dal campo data in AEM Forms con rendering HTML in Internet Explorer o Chrome. NPR-26483: Hotfix per CQ-4239352
+* La notifica di uscita non viene visualizzata quando si esce dal campo data in AEM Forms rappresentati come HTML in Internet Explorer o Chrome. NPR-26483: Hotfix per CQ-4239352
 * Le date contenute nel codice XML all&#39;inizio dell&#39;elaborazione causano la visualizzazione di un errore di convalida da parte dei moduli quando l&#39;utente tenta di uscire dal modulo. NPR-26787: Hotfix per CQ-4251211
 
 **Programma di installazione di JEE per Forms**
@@ -2106,8 +2106,8 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.1.0
 >
 >Per i clienti con Feature Pack installati in AEM 6.4. I Feature Pack opzionali forniti da Adobe dipendono dalla versione release e dal service pack. Se avete installato Feature Pack, contattate il team di assistenza clienti di AEM per verificare la compatibilità di questi pacchetti con questo service pack per AEM 6.4.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* Il download del Service Pack è disponibile in Condivisione pacchetti Adobe, a cui puoi accedere direttamente dall’istanza di AEM 6.4.
+* AEM 6.4.8.0 richiede AEM 6.4. Per informazioni dettagliate, consultate la documentazione [di](../sites-deploying/upgrade.md)aggiornamento.
+* Il download di Service Pack è disponibile nel portale [di distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software per il download.
 * In una distribuzione con MongoDB e più istanze, installa AEM 6.4.8.0 in una delle istanze Autore tramite Gestione pacchetti.
 * Prima di installare il Service Pack, assicurati di disporre di uno snapshot o di un nuovo backup dell’istanza AEM.
 * Riavvia l’istanza prima dell’installazione. Anche se ciò è necessario solo quando l&#39;istanza è ancora in modalità di aggiornamento (e questo accade quando l&#39;istanza è stata appena aggiornata da una versione precedente), si consiglia generalmente se l&#39;istanza è in esecuzione per un periodo di tempo più lungo.
@@ -2116,14 +2116,13 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.1.0
 >
 >Adobe sconsiglia la rimozione o la disinstallazione del pacchetto AEM 6.4.8.0.
 
-### Installare il Service Pack tramite Condivisione pacchetti {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Per installare il Service Pack in un’istanza AEM 6.4 esistente, effettua le seguenti operazioni:
 
-1. Accedi a Condivisione pacchetti in AEM o direttamente dal browser e scarica il pacchetto AEM 6.4.8.0.
+1. Scaricate il pacchetto da Distribuzione software.
 
-    Per trovarlo, cerca “AEM-6.4.8.0”.
-1. Installa il pacchetto scaricato utilizzando Gestione pacchetti.
+1. In AEM, accedete a Gestione pacchetti e aggiungete il pacchetto AEM 6.4.8.0 scaricato. Selezionate il pacchetto caricato e fate clic su **[!UICONTROL Installa]**.
 
 >[!NOTE]
 >
