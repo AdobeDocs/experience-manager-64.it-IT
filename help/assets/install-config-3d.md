@@ -10,7 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,7 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
       [https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz](https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz)
 
-1. Installare l’SDK FBX:
+1. Installate l’SDK FBX:
 
    * Windows. Installate nella stessa unità in cui si trova AEM.
    * Mac. Installate nella stessa partizione in cui si trova AEM.
@@ -84,13 +87,11 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
    Consultate Requisiti [di](/help/release-notes/aem3d-release-notes.md#system-requirements)sistema.
 
-1. Utilizzando un browser supportato, accedete ad AEM con privilegi di amministratore.
-1. In AEM, fai clic sul logo AEM per accedere alla console di navigazione globale, quindi fai clic sull’icona **[!UICONTROL Strumenti]** e passa a **[!UICONTROL Amministrazione > Distribuzione > Condivisione]** pacchetti.
-1. Nella pagina Adobe, usate le credenziali Adobe ID per accedere al vostro account Adobe Creative Cloud.
-1. Nella pagina dei pacchetti Adobe, individua la versione 3.0.1 del `AEM-6.4-DynamicMedia-3D` feature pack, quindi scaricala.
+1. Accesso al portale [di distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. Individuare la versione 3.0.1 del `AEM-6.4-DynamicMedia-3D` feature pack e scaricarla.
 
 1. In AEM, fate clic su **[!UICONTROL Strumenti > Amministrazione > Distribuzione > Gestione]** pacchetti.
-1. Individuate il pacchetto di funzionalità scaricato, quindi fate clic su **[!UICONTROL Installa]**.
+
+1. Caricate il pacchetto di funzioni scaricato in AEM. Individuatela e fate clic su **[!UICONTROL Installa]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Installa pacchetto]** , espandete Impostazioni **** avanzate, quindi impostate Gestione controllo **[!UICONTROL accesso]** su **Unisci**.
 1. Fate clic su **[!UICONTROL Installa]** per avviare l&#39;installazione del pacchetto.
@@ -142,7 +143,7 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
 1. Nella vista a schede, osservate i banner dei messaggi visualizzati sulle schede delle risorse 3d.
 
-   Ogni risorsa procede attraverso diverse fasi di elaborazione. **[!UICONTROL Quando si]** crea anteprima... al termine del processo di elaborazione, la scheda viene aggiornata con una miniatura. Al termine dell&#39;elaborazione finale, il banner viene sostituito con l&#39;indicatore **[!UICONTROL NEW]** .
+   Ogni risorsa procede attraverso diverse fasi di elaborazione. Quando si **[!UICONTROL crea anteprima...]** al termine del processo di elaborazione, la scheda viene aggiornata con un&#39;immagine in miniatura. Al termine dell&#39;elaborazione finale, il banner viene sostituito con l&#39;indicatore **[!UICONTROL NEW]** .
 
    >[!NOTE]
    >
@@ -167,11 +168,11 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
 1. Nella pagina test3d, fate clic sulla `logo-sphere.fbx` scheda per aprire il modello in visualizzazione **** Dettagli.
 
-   Nell&#39;angolo superiore destro della pagina logo-space.fbx, fate clic sull&#39;icona Evidenziatore fase per espandere il menu a discesa, quindi selezionate `stage-spotlights.fbx`.
+   Nell&#39;angolo superiore destro della pagina logo-space.fbx, fate clic sull&#39;icona Evidenziatore area di visualizzazione per espandere il menu a discesa, quindi selezionate `stage-spotlights.fbx`.
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
-1. Dall&#39;elenco a discesa **[!UICONTROL Evidenziatore]** fase, selezionate `stage-helipad.fbx`.
+1. Dall&#39;elenco a discesa **[!UICONTROL Evidenziatore]** area di visualizzazione, selezionate `stage-helipad.fbx`.
 
    Utilizzo del pulsante sinistro del mouse per regolare la visualizzazione. Lo sfondo e l’illuminazione del modello cambiano per riflettere la nuova selezione dell’area di visualizzazione.
 
@@ -185,7 +186,7 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
 Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dimension.
 
-È necessario configurare un servizio di conversione esterno per consentire l’assimilazione, l’anteprima e la pubblicazione di risorse Adobe Dimension 3D in AEM. Il servizio converte dal formato proprietario Adobe Dimension (`.dn`) in una variante di glTF (formattata come `.glb` file) che viene salvata con la risorsa Dn come rappresentazione. La `.glb` rappresentazione viene utilizzata per la visualizzazione basata sul Web della risorsa 3D in Risorse AEM, Siti e Schermate ed è disponibile anche per il download e l’utilizzo con applicazioni di terze parti.
+È necessario configurare un servizio di conversione esterno per consentire l’assimilazione, l’anteprima e la pubblicazione di risorse Adobe Dimension 3D in AEM. Il servizio converte dal formato proprietario Adobe Dimension (`.dn`) in una variante di glTF (formattata come `.glb` file) che viene salvata con la risorsa Dn come rappresentazione. La `.glb` rappresentazione viene utilizzata per la visualizzazione basata sul Web della risorsa 3D in AEM Assets, Siti e Schermate ed è disponibile anche per il download e l&#39;utilizzo con applicazioni di terze parti.
 
 >[!NOTE]
 >
@@ -221,7 +222,7 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
    1. Passare a `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
    1. Impostare la `outputFormat` proprietà su `Dn` o `generic`.
 
-      Quando è impostata su `Dn`, la `.glb` conversione include estensioni specifiche di Adobe, come l’illuminazione IBL, per una migliore qualità quando visualizzate le risorse Dn in AEM. Tuttavia, il rendering .glb convertito potrebbe non essere eseguito correttamente nelle applicazioni di terze parti.
+      Quando è impostata su `Dn`, la `.glb` conversione include estensioni specifiche di Adobe, come l’illuminazione IBL, per una migliore qualità quando si visualizzano risorse Dn in AEM. Tuttavia, il rendering .glb convertito potrebbe non essere eseguito correttamente nelle applicazioni di terze parti.
 
       Quando è impostata su `generic`, la `.glb` rappresentazione è generica senza estensioni specifiche di Adobe. Questa impostazione consente di utilizzarla in applicazioni di terze parti, mentre la visualizzazione con il visualizzatore AEM 3D sarà visivamente non ottimale.
 
@@ -232,12 +233,13 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
 
 1. Convalida la configurazione effettuando le seguenti operazioni:
 
-   1. Apri Risorse AEM.
+   1. Apri AEM Assets.
    1. Caricate `logo_sphere.dn` nella `test3d` cartella. Il file si trova in `sample-3D-content/models`.
 
       Nota: `sample-3D-content.zip` in precedenza era stato scaricato per la convalida delle funzionalità 3D di base.
-   1. Tornate alla vista **[!UICONTROL a]** schede e osservate il banner di messaggio mostrato sulla risorsa caricata. **[!UICONTROL Formato]** di conversione... il banner viene visualizzato mentre è in corso il processo di conversione.
+   1. Tornate alla vista **[!UICONTROL a]** schede e osservate il banner di messaggio mostrato sulla risorsa caricata. Formato **[!UICONTROL di conversione...]** il banner viene visualizzato mentre è in corso il processo di conversione.
    1. Al termine dell’elaborazione, aprite la risorsa in visualizzazione **** Dettagli per verificare che la risorsa convertita sia visualizzata correttamente e che i controlli di navigazione del visualizzatore siano utilizzabili.
+
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
    Se sulla risorsa Dn nella vista **[!UICONTROL a]** schede viene visualizzato un &quot;Errore di elaborazione&quot; dopo 10-15 minuti, la conversione non è riuscita.
