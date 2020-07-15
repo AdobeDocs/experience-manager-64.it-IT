@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 28%
+source-wordcount: '2780'
+ht-degree: 26%
 
 ---
 
@@ -320,10 +320,10 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 * Lettori AEM Screens per varie piattaforme di destinazione ([download](https://download.macromedia.com/screens/))
 * Modelli lingua per contenuti avanzati. L’inglese è preinstallato, è possibile scaricare altre lingue
 
-   * [Tedesco](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [Spagnolo](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italiano](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Francese](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [Tedesco](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [Spagnolo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [Francese](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * [Strumento](/help/sites-developing/dialog-conversion.md) di conversione della finestra di dialogo per migrare i componenti dell’interfaccia classica in Coral 3
 
@@ -331,7 +331,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 *  app desktop di Adobe Experience Manager ([per saperne di più](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) e per [scaricare](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
-* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Pacchetto per aggiungere il supporto esteso per le immagini RAW ([ulteriori informazioni](/help/assets/camera-raw.md))
 
