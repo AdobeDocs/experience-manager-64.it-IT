@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione di AEM 6.4 Cumulative Fix Pack
-description: Note sulla versione specifiche dei pacchetti di correzioni cumulativi Adobe Experience Manager 6.4.
+description: Note sulla versione specifiche  Adobe Experience Manager 6.4 Cumulative Fix Pack.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 22%
+source-wordcount: '2119'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 | Tipo | Cumulative Fix Pack |
 | Data | 04 giugno 2020 |
 | Prerequisito | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| URL di download | AEM 6.4.8.1 su [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1), Distribuzione [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| URL di download | AEM 6.4.8.1 sulla distribuzione [del software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## Funzionalità incluse in AEM 6.4.8.1 {#what-s-included-in-aem}
 
@@ -32,14 +32,14 @@ AEM Cumulative Fix Pack 6.4.8.1 dipende da AEM 6.4 Service Pack 8. Pertanto, dop
 
 Alcuni degli elementi di rilievo di AEM 6.4.8.1 sono:
 
-* È stata rimossa l&#39;integrazione di Package Share con Adobe Experience Manager.
+* È stata rimossa l&#39;integrazione di Package Share con  Adobe Experience Manager.
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.8.21.
 
 For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
 
 ## Elenco delle modifiche {#list-of-changes}
 
-Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
+ Adobe Experience Manager 6.4.8.1 contiene le correzioni ai seguenti problemi.
 
 ### Sites {#sites-6481}
 
@@ -49,12 +49,12 @@ Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
 * Quando un componente include un altro componente come risorsa semplice per i dati, il segnaposto del componente contenitore principale viene sostituito con il segnaposto dei componenti interni (NPR-33119).
 * Se si basa un frammento di contenuto su uno schema e questo contiene un&#39;area di testo obbligatoria o un campo percorso, il frammento di contenuto non viene salvato (NPR-33007)
 * Quando create un componente personalizzato utilizzando il componente per frammento esperienza fornito e lo utilizzate nelle pagine AEM Sites, AEM non visualizza riferimenti (utilizzo) per il componente personalizzato (NPR-32852).
-* Quando una pagina AEM Sites fa parte di un set di contenuti di grandi dimensioni con più Live Copy, l&#39;anteprima della cronologia della versione della pagina non viene caricata (NPR-32772).
+* Quando una pagina di AEM Sites fa parte di un set di contenuti di grandi dimensioni con più Live Copy, l&#39;anteprima della cronologia della versione della pagina non viene caricata (NPR-32772).
 * Quando promuovi un lancio, aggiunge il mixin &quot;cq:LiveRelationship&quot; a ogni componente aggiunto al lancio. Influisce su tutti gli avvii, indipendentemente dal fatto che sia stato creato un lancio con o senza selezionare il comando —  Eredita dati dal vivo della pagina di origine —  (NPR-32664).
 * All&#39;avvio dell&#39;impaginazione, il Selettore frammenti esperienza non carica tutti gli elementi (NPR-32605).
-* Impossibile creare un avvio per una pagina AEM Sites. La creazione dell&#39;avvio genera un errore (NPR-32544).
+* Impossibile creare un lancio per una pagina di AEM Sites. La creazione dell&#39;avvio genera un errore (NPR-32544).
 * Manage Publication non include le risorse di riferimento nel flusso di lavoro di attivazione della richiesta (NPR-32463).
-* Il controllo dello stato del dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33630).
+* Il controllo dello stato di Dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33630).
 
 ### Assets {#assets-6481}
 
@@ -106,15 +106,15 @@ Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack non include correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Cumulative Fix Pack non include correzioni per i AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * Gestione corrispondenza: Quando un utente incolla contenuto da un [!DNL Word] documento, il frammento del documento di testo non mantiene la formattazione (NPR-33213).
 * Moduli adattivi: Una nuova riga di una stringa in un dizionario di moduli adattivi aggiunge `&#xa;` caratteri al dizionario (NPR-33265).
 * Moduli adattivi: L&#39;utente non è in grado di salvare un modulo adattivo con più allegati (NPR-33214).
 * Moduli adattivi: `AddInstance` e `RemoveInstance` i metodi per la classe Instance Manager non aggiungono un numero dinamico di istanze per i frammenti di caricamento pigri in [!DNL Internet Explorer 11] (NPR-33201).
-* Moduli adattivi: Le analisi abilitate su un modulo adattivo incorporato in una [!DNL Sites] pagina non registrano i dati per gli eventi Submit e Abandon (NPR-31359).
+* Moduli adattivi:  Analytics abilitato su un modulo adattivo incorporato in una [!DNL Sites] pagina non registra i dati per gli eventi Submit e Abandon (NPR-31359).
 * Moduli adattivi: Quando un utente incolla il contenuto di un [!DNL Word] documento in un modulo adattivo e lo invia, il modulo adattivo inviato include caratteri unicode. Inoltre, la conversione da PDF a PDF/A non riesce a causa dei caratteri unicode (NPR-33348).
-* BackendIntegration: Le richieste del modello dati del modulo non vanno a buon fine perché il token di aggiornamento scade a causa di uno stato inattivo non corretto (NPR-33168).
+* BackendIntegration: Le richieste del modello dati del modulo non riescono a causa dello stato inattivo non corretto del token di aggiornamento (NPR-33168).
 * Document Services: Il servizio Converti PDF non è in grado di convertire i documenti PDF in PostScript a causa di jar Gibson mancanti [!DNL WebLogic] sul [!DNL Linux] server (NPR-33515, CQ-4292239).
 * Document Services: Quando un utente converte un file di testo in un PDF, i caratteri giapponesi non vengono rappresentati correttamente (NPR-33239).
 
@@ -149,11 +149,11 @@ Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
 
 Per installare il Cumulative Fix Pack in un’istanza AEM 6.4.8.0 esistente, effettua le seguenti operazioni:
 
-1. Fate clic sul collegamento [Condivisione](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) pacchetti o Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) software per scaricare il pacchetto.
+1. Fate clic sul collegamento Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) software per scaricare il pacchetto.
 
-1. Aprite [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) e fate clic su **Carica pacchetto** per caricare il pacchetto.
+1. Aprite [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 
-1. Selezionate il nome del pacchetto e fate clic su **Installa**.
+1. Selezionate il nome del pacchetto e fate clic su **[!UICONTROL Installa]**.
 
 >[!NOTE]
 >
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 ### Convalidare l’installazione {#validate-install}
 
-1. La pagina Informazioni sul prodotto (*/system/console/ productinfo *) ora mostra la stringa di versione aggiornata &quot;Adobe Experience Manager, versione 6.4.8.1&quot; in Prodotti installati.
+1. La pagina Informazioni sul prodotto (*/system/console/ productinfo *) deve ora mostrare la stringa di versione aggiornata &quot; Adobe Experience Manager, versione 6.4.8.1&quot; in Prodotti installati.
 1. Tutti i bundle OSGi risultano come ATTIVI o FRAMMENTI nella console OSGi (usa la console Web: /system/console/bundles).
 1. Il bundle OSGI org.apache.jackrabbit.oak-core è sulla versione 1.8.17 o successiva (Usa console Web: /system/console/bundle).
 
-Per determinare la piattaforma certificata da eseguire con questa versione di AEM Sites and Assets, consulta Requisiti [](../sites-deploying/technical-requirements.md)tecnici.
+Per determinare la piattaforma certificata da eseguire con questa versione di AEM Sites e risorse, consulta Requisiti [](../sites-deploying/technical-requirements.md)tecnici.
 
 >[!Note]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
-### Aggiornamento dei visualizzatori per contenuti multimediali dinamici (5.10.1) {#update-dynamic-media-viewers}
+### Aggiornamento dei visualizzatori Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1 contiene la nuova versione dei visualizzatori per contenuti multimediali dinamici (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti di contenuti multimediali dinamici viene consigliato di eseguire il comando seguente per aggiornare i predefiniti per visualizzatori box.
+<p id="Dynamic">AEM 6.4.8.1 contiene la nuova versione dei visualizzatori Dynamic Media (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti Dynamic Media viene consigliato di eseguire il comando seguente per aggiornare i predefiniti per visualizzatori in scatola.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
