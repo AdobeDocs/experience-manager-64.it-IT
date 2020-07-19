@@ -4,14 +4,17 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
+workflow-type: tm+mt
+source-wordcount: '2328'
+ht-degree: 16%
 
 ---
 
 
 # Gestire le raccolte {#managing-collections}
 
-Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o dinamica basata sui risultati di ricerca.
+Una raccolta è un insieme di risorse all&#39;interno  risorse di Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -24,11 +27,11 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 ## Accedere alla console delle raccolte {#navigating-the-collections-console}
 
-Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience Manager . From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Creare una raccolta {#creating-a-collection}
 
-Potete creare una raccolta con riferimenti [](#creating-a-collection-with-static-references) statici o basati su un filtro [basato su criteri di](#creating-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
+Potete creare una raccolta con riferimenti [](#creating-a-collection-with-static-references) statici o in base a un filtro [basato su criteri di](#creating-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
 
 ### Creare una raccolta con riferimenti statici {#creating-a-collection-with-static-references}
 
@@ -48,7 +51,7 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 
    >[!NOTE]
    >
-   >Experience Manager Assets consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   > Risorse Experience Manager consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
 
    Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
@@ -191,7 +194,7 @@ Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;ag
 
 ## Cerca raccolte {#searching-collections}
 
-Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omniture, Risorse AEM cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, i AEM Assets cercano i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
 Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
@@ -250,7 +253,7 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 >
 >Le raccolte avanzate non possono essere nidificate. In altre parole, le raccolte avanzate non possono contenere altre raccolte.
 
-## Saved searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
@@ -258,7 +261,7 @@ Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a d
 
 ### Creare ricerche salvate {#creating-saved-searches}
 
-Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`.
+Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`. Non ci sono limiti alle ricerche che puoi salvare e alle ricerche salvate visualizzate nell&#39;elenco.
 
 >[!NOTE]
 >
@@ -300,6 +303,6 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 
 >[!MORELIKETHIS]
 >
->* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configurare  notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
