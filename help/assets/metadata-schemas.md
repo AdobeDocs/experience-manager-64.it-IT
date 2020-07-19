@@ -3,10 +3,10 @@ title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2528'
-ht-degree: 12%
+source-wordcount: '2536'
+ht-degree: 13%
 
 ---
 
@@ -41,12 +41,13 @@ Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
 |  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio immagine/jpeg, immagine/png e così via. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con sottotipo [!UICONTROL tiff].</li></ul> |
+|  | [!UICONTROL dm_video] | Modulo schema per video Dynamic Media. |
+|  | <ul><li> [!UICONTROL immagine]</li></ul> | Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio immagine/jpeg, immagine/png e così via. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con sottotipo [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME &quot;application&quot;, ad esempio application/ pdf, application/ zip e così via. <br>[!UICONTROL pdf]: Modulo schema per risorse con sottotipo pdf. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse con tipo MIME &quot;video&quot;, ad esempio video/avi, video/mp4 e così via. |
 | [!UICONTROL collection] |  | Modulo schema per le raccolte. |
 | [!UICONTROL contentFragment] |  | Modulo schema per frammenti di contenuto. |
-| [!UICONTROL forms] |  | Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -62,7 +63,7 @@ Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager
 
 1. Nella finestra di dialogo, immettere il titolo del modulo schema e fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Modificare i moduli dello schema di metadati {#editing-metadata-schema-forms}
 
@@ -164,7 +165,7 @@ Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Imp
 
 L’editor dello schema consente di aggiungere o eliminare una scheda. Per impostazione predefinita, il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]**, **[!UICONTROL IPTC]** ed **[!UICONTROL Estensione IPTC]**.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Fare clic `+` per aggiungere una nuova scheda a un modulo schema. Per impostazione predefinita, la nuova scheda ha il nome `Unnamed-1`. Potete modificare il nome dalla scheda **[!UICONTROL Impostazioni]** . Fare clic `X` per eliminare una scheda.
 
@@ -182,11 +183,11 @@ Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona **[!UICONTROL E
 
 >[!NOTE]
 >
->In Risorse AEM non è possibile eliminare i moduli di schema di metadati out-of-the-box.
+>Non è possibile eliminare i moduli di schema di metadati out-of-the-box in AEM Assets.
 
 ## Moduli schema per tipi MIME {#schema-forms-for-mime-types}
 
-Risorse AEM fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
+I AEM Assets forniscono moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
 ### Aggiunta di nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
 
@@ -203,7 +204,7 @@ In questo caso, create un nuovo nodo `/etc/dam/metadataeditor/mimetypemappings` 
 | `exposedmimetype` | Nome del modulo esistente da mappare | `String` | `image/jpeg` |
 | `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39; `exposedmimetype` attributo | `String` | `image/png` |
 
-Risorse AEM esegue la mappatura dei seguenti tipi MIME e moduli di schema:
+I AEM Assets mappano i seguenti tipi MIME e moduli di schema:
 
 | Modulo schema | Tipi MIME |
 |---|---|
@@ -225,7 +226,7 @@ La funzione dello schema di metadati è disponibile solo per gli amministratori.
 
 ## Applicare metadati specifici per le cartelle {#applying-folder-specific-metadata}
 
-Risorse AEM consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
+AEM Assets consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
 
 Ad esempio, potete definire una variante dello schema di metadati predefinito e applicarlo a una cartella. Quando applicate lo schema modificato, questo sostituisce lo schema di metadati predefinito originale applicato alle risorse all&#39;interno della cartella.
 
