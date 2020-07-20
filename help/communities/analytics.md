@@ -128,6 +128,7 @@ Se si utilizza una suite **di rapporti** esistente, potrebbe essere necessario [
 >
 >* Da **`evar1`** a **`evar11`**
 >* Da **`event1`** a **`event7`**
+
 >
 >
 **Prima della pubblicazione del sito della community,** è importante ripristinare la mappatura preesistente spostando le variabili AEM che venivano automaticamente mappate  variabili Analytics quando  Analytics era abilitato per un sito della community.
@@ -456,6 +457,7 @@ Vedere sezioni:
 >
 >* Da **`evar1`** a **`evar11`**
 >* Da **`event1`** a **`event7`**
+
 >
 >
 **Prima della pubblicazione del sito della community,** è importante ripristinare la mappatura preesistente e spostare le variabili AEM di Communities che venivano mappate automaticamente (quando  Analytics era abilitato per il sito della community) su altre variabili Analytics . La nuova mappatura deve essere coerente tra tutti i componenti Community.
