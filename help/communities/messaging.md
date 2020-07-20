@@ -48,7 +48,7 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Elenco campi messaggio consentiti]** Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: 
+* **[!UICONTROL Campi  messaggio Inserì nell&#39;elenco Consentiti]** Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: 
 *oggetto* e *contenuto*.
 
 * **[!UICONTROL Limite]** dimensione casella messaggio Il numero massimo di byte nella finestra di messaggio di ogni utente. Il valore predefinito è 
@@ -89,23 +89,23 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 * **[!UICONTROL maxTotalAttachmentSize.name]** Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è 
 *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlocklist.name]** Un blocco di estensioni di file, con il prefisso &quot;
-**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in elenco, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;. Il valore predefinito è *PREDEFINITO*.
+* **[!UICONTROL attachmentTypeBlocklist.name]** Un  inserire nell&#39;elenco Bloccati di estensioni di file, con il prefisso &#39;
+**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;. Il valore predefinito è *PREDEFINITO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
 
-   **(*Action Required*)** Un elenco di estensioni di file consentite, all&#39;opposto dell&#39;elenco di blocco. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
+   **(*Action Required*)** Un inserire nell&#39;elenco Consentiti  di estensioni di file, l&#39;opposto del inserire nell&#39;elenco Bloccati . Per consentire tutte le estensioni di file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona &quot;**-**&quot; per rimuovere la singola voce vuota.
 
 * **[!UICONTROL serviceSelector.name]**(*Obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale viene richiamato il servizio (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi* di esecuzione della configurazione OSGi [ , `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)ad esempio `/bin/`, `/apps/`e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per la funzione `Message List and Compose Message components` (vedere Funzione [](configure-messaging.md)Messaggio). Il valore predefinito è */bin/messaging* .
 
 * **[!UICONTROL fieldAllowlist.name]** Use 
-**Elenco campi messaggio** consentiti.
+**Campi  messaggio Inserire nell&#39;elenco Consentiti**.
 
 >[!CAUTION]
 >
 >Ogni volta che una `Messaging Operations Service` configurazione viene aperta per la modifica, se `allowedAttachmentTypes.name` è stata rimossa, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blocco, utilizzate l&#39;icona **-** per (di nuovo) rimuovere la singola voce vuota prima di fare clic su **[!UICONTROL Salva]**.
+>Per consentire tutte le estensioni di file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona &quot;**-**&quot; per (di nuovo) rimuovere la singola voce vuota prima di fare clic su **[!UICONTROL Salva]**.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
