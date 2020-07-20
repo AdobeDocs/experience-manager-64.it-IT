@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
 source-wordcount: '2064'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -42,9 +42,9 @@ Per iniziare subito a lavorare:
 
 1. [Caricate le immagini primarie per più viste.](#uploading-assets-in-image-sets)
 
-   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
-   Risorse AEM supporta molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
+   I AEM Assets supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
 
 1. [Creare set di immagini.](#creating-image-sets)
 
@@ -77,7 +77,7 @@ Per iniziare subito a lavorare:
 
 1. [Collegare gli URL all’applicazione](linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](embed-code.md)video o immagini.
 
-   Risorse AEM crea richieste URL per i set di immagini e le attiva dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
+   I AEM Assets creano richieste URL per i set di immagini e le attivano dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
    Seleziona il set di immagini, quindi fai clic su **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
 
@@ -85,7 +85,7 @@ Per iniziare subito a lavorare:
 
 Per modificare i set di immagini, consultate [Modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [dei set di](managing-assets-touch-ui.md#editing-properties)immagini.
 
-In caso di problemi durante la creazione di set, consultate Immagini e set in [Risoluzione di problemi relativi a file multimediali dinamici - modalità](troubleshoot-dms7.md#images-and-sets)Scene7.
+In caso di problemi nella creazione di set, consultate Immagini e set in [Risoluzione dei problemi in modalità](troubleshoot-dms7.md#images-and-sets)Dynamic Media - Scene7.
 
 ## Caricamento delle risorse nei set di immagini {#uploading-assets-in-image-sets}
 
