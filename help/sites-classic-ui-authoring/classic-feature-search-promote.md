@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 57%
 
 ---
 
@@ -92,7 +95,7 @@ You can configure the following component properties in [!UICONTROL Edit] mode t
 
 Puoi consentire agli utenti di filtrare i risultati della ricerca per facet. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Quando si utilizzano questi componenti, è necessario includere anche il componente **[!UICONTROL Breadcrumb]**. Le Breadcrumb indicano i filtri attuali utilizzati.
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
 * **[!UICONTROL Nome]** facet - Il nome del facet utilizzato per i filtri.
 
@@ -131,7 +134,7 @@ The **[!UICONTROL Search]** component enables customers to perform keyword searc
 
 Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
 
-* **[!UICONTROL Percorso]** pagina risultati - Percorso della pagina che visualizza i risultati della ricerca.
+* **[!UICONTROL Percorso]** pagina risultati - Percorso della pagina in cui sono visualizzati i risultati della ricerca.
 * **[!UICONTROL Abilita completamento]** automatico: selezionare questa opzione per fare in modo che le parole chiave di ricerca suggerite vengano visualizzate quando il cliente inizia a digitare nella casella di ricerca.
 
 ![sandpsearch comp](assets/sandpsearchcomp.png)
