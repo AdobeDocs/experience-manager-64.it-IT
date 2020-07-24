@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2671'
 ht-degree: 79%
 
 ---
@@ -187,7 +187,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono i
   </tr> 
   <tr> 
    <td>workflow</td> 
-   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e impiega la Live Copy come payload.</p> <p>Il percorso di destinazione è quello del nodo del modello, ad esempio /etc/workflow/models/request_for_activation/jcr:content/model</p> </td> 
+   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e impiega la Live Copy come payload.</p> <p>Il percorso target è il percorso del nodo del modello.</p> </td> 
    <td>target: (stringa) il percorso del modello di flusso di lavoro.<br /> </td> 
   </tr> 
   <tr> 
@@ -408,11 +408,12 @@ Considera che le pagine secondarie della pagina blueprint ereditano la configura
 
 Specifica una configurazione di rollout da usare come predefinita del sistema. Per specificare il valore predefinito, configura il servizio OSGi:
 
-* **Day CQ WCM Live Relationship Manager**:  il PID del servizio è `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager**:  il PID del servizio è 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
+Configura il servizio utilizzando la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo di archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* Configura il servizio utilizzando la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo di archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
-* Nella console web, il nome della proprietà da configurare è: Default rollout config (Configurazione rollout predefinita).`liverelationshipmgr.relationsconfig.default`
+* Nella console web, il nome della proprietà da configurare è: Default rollout config (Configurazione rollout predefinita).
+* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
+Imposta il valore di questa proprietà sul percorso della configurazione di rollout da utilizzare come impostazione predefinita del sistema. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
