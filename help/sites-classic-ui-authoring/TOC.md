@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Classic UI Authoring User Guide
+user-guide-title: Guida utente per l’authoring con l’interfaccia classica di AEM 6.4
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 91%
 
 ---
 
@@ -31,15 +35,15 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Pubblicazione delle pagine](classic-page-author-publish-pages.md)
    + [Modifica delle proprietà di una pagina](classic-page-author-edit-page-properties.md)
    + [Annotazioni durante la modifica di una pagina](classic-page-author-annotations.md)
-   + [Risoluzione di problemi AEM nell’ambiente di creazione](classic-page-author-troubleshooting.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring ](classic-page-author-troubleshooting.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Authoring di una pagina per dispositivi mobili](classic-feature-mobile.md)
+   + [Authoring di una pagina per dispositivi mobili ](classic-feature-mobile.md)
    + [Componenti per l’authoring delle pagine](classic-page-author-edit-mode.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
    + [Layout dinamico](classic-page-author-responsive-layout.md)
-   + [Utilizzo delle versioni di una pagina](classic-page-author-work-with-versions.md)
+   + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
    + [Utilizzo dei tag](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](classic-page-author-design-mode.md)
