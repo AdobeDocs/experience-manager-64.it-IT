@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: 'forms '
 audience: end-user
 user-guide-title: Guida utente di AEM 6.4 Forms
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 1%
@@ -20,7 +21,7 @@ ht-degree: 1%
    + [Riepilogo delle nuove funzioni](using/whats-new.md)
    + [Funzioni obsolete](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Guida introduttiva {#getting-started}
-   + [Introduzione ad AEM Forms](using/introduction-aem-forms.md)
+   + [Introduzione ai AEM Forms](using/introduction-aem-forms.md)
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
    + [Introduzione alla gestione dei moduli](using/introduction-managing-forms.md)
@@ -37,8 +38,8 @@ ht-degree: 1%
       + [Esercitazione: Creazione di frammenti di documento](using/create-document-fragments.md)
       + [Esercitazione: Creare i modelli](using/create-templates-print-web.md)
       + [Esercitazione: Creazione di comunicazioni interattive](using/create-interactive-communication-tutorial.md)
-   + Materiali di riferimento per i moduli AEM {#aem-forms-reference-collaterals}
-      + [Configurare e configurare i siti di riferimento per i moduli AEM](using/setup-reference-sites.md)
+   + AEM Forms Materiali di riferimento {#aem-forms-reference-collaterals}
+      + [Configurare e configurare i siti di riferimento dei AEM Forms](using/setup-reference-sites.md)
       + [Procedura dettagliata sul sito di riferimento We.Finance](using/finance-reference-site-walkthrough.md)
       + [Procedura dettagliata sul sito di riferimento We.Gov](using/gov-reference-site-walkthrough.md)
       + [Procedura dettagliata sul sito di riferimento self-service dei dipendenti](/help/forms/using/employee-self-service-reference-site.md)
@@ -52,7 +53,7 @@ ht-degree: 1%
 + Installare e configurare AEM Forms {#install-aem-forms}
    + [Topologie di architettura e implementazione per AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Scelta di un tipo di persistenza per un&#39;installazione di AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
-   + Installare AEM Forms su OSGi {#osgi-installation}
+   + Installare AEM Forms in OSGi {#osgi-installation}
       + [Piattaforme supportate per i moduli AEM su OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Installazione e configurazione di document services](using/install-configure-document-services.md)
       + [Installare e configurare le funzionalità di acquisizione dei dati](using/installing-configuring-aem-forms-osgi.md)
@@ -60,17 +61,17 @@ ht-degree: 1%
       + [Installare e configurare le comunicazioni interattive](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + Install AEM Forms on JEE {#jee-installation}
       + [Piattaforme supportate per i moduli AEM su JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Installazione e implementazione di AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+      + [Installare e distribuire AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [Installazione e configurazione solo del server di protezione dei documenti](using/installing-and-configuring-the-document-security-server.md)
-      + [Preparazione all&#39;installazione del server singolo di AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
+      + [Preparazione all&#39;installazione di AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
       + [Installare e distribuire AEM Forms su JEE per JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
-      + [Installazione e implementazione di AEM Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+      + [Installare e distribuire AEM Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
       + [Installare e distribuire AEM Forms su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-      + [Installare AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
+      + [Installazione di AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installare e configurare Designer](using/installing-configuring-designer.md)
       + [Preparazione all&#39;installazione del cluster del server AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
-      + [Configurare AEM Forms su JEE nel cluster JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-      + [Configurare AEM Forms su JEE su cluster WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
+      + [Configurare i AEM Forms su JEE nel cluster JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+      + [Configurare AEM Forms su JEE nel cluster WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
       + [Configurare AEM Forms su JEE nel cluster WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
    + Configura Moduli AEM {#configure-aem-forms}
       + [Ottimizzazione delle prestazioni del server AEM Forms](using/performance-tuning-aem-forms.md)
@@ -78,29 +79,29 @@ ht-degree: 1%
       + [Configurazione delle impostazioni di AEM DS](using/configuring-the-processing-server-url-.md)
       + [Configurazione dell&#39;utilità di pianificazione della sincronizzazione](using/configure-synchronization-scheduler.md)
       + [Configurazione del connettore per Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
-      + [Connessione di AEM Forms con Adobe LiveCycle](using/aem-livecycle-connector.md)
-      + [Configurazione di AEM Forms per l&#39;invio dei dati del modulo a un processo AEM Forms su JEE](using/submit-form-data-livecycle-process.md)
+      + [Collegamento di AEM Forms con Adobe LiveCycle](using/aem-livecycle-connector.md)
+      + [Configurazione dei AEM Forms per l&#39;invio dei dati del modulo a un AEM Forms nel processo JEE](using/submit-form-data-livecycle-process.md)
       + [App desktop AEM per AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Aggiornamento di AEM Forms {#upgrade-aem-forms}
++ Aggiorna AEM Forms {#upgrade-aem-forms}
    + [Percorsi di aggiornamento disponibili](using/upgrade.md)
-   + Aggiornamento di AEM Forms su OSGi {#aem-forms-osgi-upgrade}
+   + Aggiorna AEM Forms in OSGi {#aem-forms-osgi-upgrade}
       + [Aggiornamento ai moduli AEM 6.4 su OSGi](using/upgrade-forms-osgi.md)
       + [Installa pacchetto di compatibilità](using/compatibility-package.md)
       + [Migrazione di risorse e documenti AEM Forms](using/migration-utility.md)
-   + Aggiornamento di AEM Forms su JEE {#aem-forms-jee-upgrade}
-      + [Preparazione all&#39;aggiornamento di AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
+   + Aggiorna AEM Forms in JEE {#aem-forms-jee-upgrade}
+      + [Preparazione all&#39;aggiornamento dei AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
       + [Elenco di controllo dell&#39;aggiornamento e pianificazione](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [Aggiornamento ai moduli AEM 6.4 su JEE](using/upgrade-forms-jee.md)
-      + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
-      + [Aggiornamento da LiveCycle ES4 SP1 ad Adobe Experience Manager Forms su JEE per JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
-      + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
-      + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Aggiornamento da una versione di AEM Forms a AEM 6.4 Forms su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [Aggiornamento da LiveCycle ES4 SP1 ad AEM Forms su JEE per WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
-+ Gestisci moduli AEM {#manage-administer-aem-forms}
-   + [AEM Forms su gruppi OSGi e privilegi](using/forms-groups-privileges-tasks.md)
+      + [Aggiornamento da una versione AEM Forms a AEM 6.4 Forms su JEE per JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
+      + [Aggiornamento da LiveCycle ES4 SP1 a  moduli di Adobe Experience Manager su JEE per JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
+      + [Aggiornamento da una versione AEM Forms a AEM 6.4 Forms su JEE per chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
+      + [Aggiornamento da LiveCycle ES4 SP1 a AEM Forms su JEE per JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [Aggiornamento da una versione AEM Forms a AEM 6.4 Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
+      + [Aggiornamento da LiveCycle ES4 SP1 a AEM Forms su JEE per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [Aggiornamento da una versione AEM Forms a AEM 6.4 Forms su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
+      + [Aggiornamento da LiveCycle ES4 SP1 a AEM Forms su JEE per WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
++ Gestisci AEM Forms {#manage-administer-aem-forms}
+   + [AEM Forms sui gruppi OSGi e sui privilegi](using/forms-groups-privileges-tasks.md)
    + [Creazione di nuove cartelle per classificare i moduli](using/creating-new-folders-categorize-forms.md)
    + [Ricerca di moduli e risorse](using/searching-forms-or-assets.md)
    + [Gestire i metadati dei moduli](using/manage-form-metadata.md)
@@ -117,13 +118,13 @@ ht-degree: 1%
       + [Gestione della corrispondenza](using/correspondence-management-handling-user-data.md)
       + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Sicurezza dei documenti](/help/forms/using/document-security-handling-user-data.md)
-   + Protezione dell&#39;ambiente AEM Forms {#hardening-aem-forms-environment}
+   + Indurimento dell&#39;ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Protezione e protezione dei moduli AEM in ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Considerazioni generali sulla sicurezza per AEM Forms su JEE](using/general-security-considerations.md)
-      + [Ottimizzazione dei moduli AEM in ambiente JEE](using/hardening-aem-forms-jee-environment.md)
-      + [Configurazione delle impostazioni di amministrazione protetta per AEM Forms su JEE](using/configuring-secure-administration-settings-aem.md)
+      + [Indurimento dei AEM Forms in ambiente JEE](using/hardening-aem-forms-jee-environment.md)
+      + [Configurazione delle impostazioni di amministrazione protetta per i AEM Forms in JEE](using/configuring-secure-administration-settings-aem.md)
 + Modello dati modulo {#form-data-model}
-   + [Introduzione all&#39;integrazione dei dati di AEM Forms](using/data-integration.md)
+   + [Introduzione all&#39;integrazione dei dati AEM Forms](using/data-integration.md)
    + [Configurare le origini dati](using/configure-data-sources.md)
    + [Configurazione di Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
    + [Crea modello dati modulo](using/create-form-data-models.md)
@@ -146,12 +147,12 @@ ht-degree: 1%
    + [Stile in linea dei componenti per moduli adattivi](using/inline-style-adaptive-forms.md)
    + [Introduzione a una sequenza di moduli con più fasi](using/introduction-form-sequence.md)
    + [Funzionalità di layout dei moduli adattivi](using/layout-capabilities-adaptive-forms.md)
-   + [Testo segnaposto in AEM Forms](using/placeholder-text-in-aem-forms-.md)
+   + [Testo segnaposto negli AEM Forms](using/placeholder-text-in-aem-forms-.md)
    + [Anteprima di un modulo](using/previewing-forms.md)
    + [Riutilizzo di moduli adattivi](using/reusing-adaptive-forms.md)
    + [Componente separatore nei moduli adattivi](using/separator-component-in-adaptive-forms.md)
    + [Applicazione di firme elettroniche a un modulo tramite firme a script](using/signing-forms-using-scribble.md)
-   + [Scelte rapide da tastiera di AEM Forms](using/keyboard-shortcuts.md)
+   + [Scelte rapide da tastiera AEM Forms](using/keyboard-shortcuts.md)
    + [Associazione di revisori per l&#39;invio a un modulo](using/adding-reviewers-form.md)
    + [Authoring della guida contestuale per i campi del modulo](using/authoring-in-field-help.md)
 + Moduli adattivi - Authoring avanzato {#adaptive-forms-advanced-authoring}
@@ -177,7 +178,7 @@ ht-degree: 1%
    + [Verifica automatica dei moduli adattivi](using/calvin.md)
    + [Stili di costruzione per i moduli adattivi](using/styling-constructs-adaptive-forms.md)
    + [Sincronizzazione di moduli adattivi con modelli di modulo XFA](using/synchronizing-adaptive-forms-xfa.md)
-   + [Integrazione di Adobe Sign con AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [Integrazione di Adobe Sign con i AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Creazione e gestione di revisioni per le risorse nei moduli](using/create-reviews-forms.md)
    + [Messaggi di errore di convalida standard per i moduli adattivi](using/standard-validation-error-messages-adaptive-forms.md)
 + Comunicazioni interattive {#interactive-communications}
@@ -192,13 +193,13 @@ ht-degree: 1%
 + Flussi di lavoro {#workflows}
    + [Flusso di lavoro incentrato sui moduli in OSGi](using/aem-forms-workflow.md)
    + [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento passo](using/aem-forms-workflow-step-reference.md)
-   + [Selezione dinamica di un utente o di un gruppo per i passaggi del flusso di lavoro incentrati sui moduli di AEM](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Selezione dinamica di un utente o di un gruppo per i passaggi di flusso di lavoro AEM Forms-centrico](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
    + [Avviare Document Services API dal flusso di lavoro AEM](using/initiating-document-services-apis-aem.md)
-+ AEM Forms Workspace {#use-aem-forms-workspace}
-   + [Introduzione all&#39;area di lavoro Moduli AEM](using/introduction-html-workspace.md)
-   + [Utilizzo dell’area di lavoro Moduli AEM](using/html-workspace-overview.md)
-   + [AEM Forms Workspace Architecture](using/html-workspace-architecture.md)
++ Area di lavoro AEM Forms {#use-aem-forms-workspace}
+   + [Introduzione all&#39;area di lavoro AEM Forms](using/introduction-html-workspace.md)
+   + [Utilizzo dell’area di lavoro AEM Forms](using/html-workspace-overview.md)
+   + [AEM Forms architettura Workspace](using/html-workspace-architecture.md)
    + [Funzionalità dell&#39;area di lavoro AEM Forms non disponibili nell&#39;area di lavoro Flex](using/features-html-workspace-available-flex.md)
    + [Funzionalità dell&#39;area di lavoro Flex non disponibili nell&#39;area di lavoro AEM Forms](using/features-flex-workspace-available-html.md)
    + [Interazione con il dorso](using/backbone-interaction.md)
@@ -207,10 +208,10 @@ ht-degree: 1%
    + [Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web](using/integrating-html-ws-components-web.md)
    + [Nuovo servizio di rendering e invio](using/new-render-submit-service.md)
    + [Informazioni sulla struttura delle cartelle](using/folder-structure.md)
-   + [Integrazione di applicazioni di terze parti nell&#39;area di lavoro di AEM Forms](using/integrating-correspondence-management-html-workspace.md)
-   + [Descrizione dell&#39;oggetto JSON dell&#39;area di lavoro AEM Forms](using/html-workspace-json-object-description.md)
+   + [Integrazione di applicazioni di terze parti nell’area di lavoro AEM Forms](using/integrating-correspondence-management-html-workspace.md)
+   + [Descrizione oggetto JSON dell&#39;area di lavoro AEM Forms](using/html-workspace-json-object-description.md)
    + [Introduzione alla personalizzazione dell&#39;area di lavoro dei moduli AEM](using/introduction-customizing-html-workspace.md)
-   + [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](using/generic-steps-html-workspace-customization.md)
+   + [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](using/generic-steps-html-workspace-customization.md)
    + [Modifica delle impostazioni internazionali dell&#39;interfaccia utente dell&#39;area di lavoro AEM Forms](using/changing-locale-user-interface.md)
    + [Creazione di una nuova schermata di login](using/creating-new-login-screen.md)
    + [Personalizzazione delle finestre di dialogo degli errori](using/customizing-error-dialogs.md)
@@ -224,16 +225,16 @@ ht-degree: 1%
    + [Riduzione dei file JavaScript](using/minification-javascript-files.md)
    + [Personalizzare le tabelle di tracciamento](using/sorting-tracking-tables-add-columns.md)
    + [Aggiornamento del collegamento alla documentazione](using/updating-link-help-documentation.md)
-   + [Utilizzo dei set di moduli nell’area di lavoro Moduli AEM](using/form-sets-html-workspace.md)
-   + [API utilizzate nell&#39;area di lavoro Moduli AEM](using/apis-used-html-workspace.md)
-   + [Avvio di un nuovo processo con i dati del processo esistenti nell&#39;area di lavoro Moduli AEM](using/initiating-new-process-existing-process.md)
+   + [Utilizzo dei set di moduli nell’area di lavoro AEM Forms](using/form-sets-html-workspace.md)
+   + [API utilizzate nell&#39;area di lavoro AEM Forms](using/apis-used-html-workspace.md)
+   + [Avvio di un nuovo processo con i dati del processo esistenti nell&#39;area di lavoro AEM Forms](using/initiating-new-process-existing-process.md)
    + [Hosting di due istanze dell&#39;area di lavoro AEM Forms su un server](using/two-html-workspace-instances-one.md)
    + [Modifica della combinazione di colori dell’interfaccia](using/changing-color-scheme-interface.md)
    + [Modifica del font nell&#39;interfaccia](using/changing-font-interface.md)
    + [Modifica del logo dell’organizzazione per il branding](using/changing-organization-logo-branding.md)
    + [Visualizzazione delle informazioni nel riquadro Riepilogo attività](using/displaying-information-task-summary-pane.md)
    + [Visualizzazione dell’avatar utente](using/displaying-user-avatar.md)
-   + [Guida introduttiva all&#39;area di lavoro Moduli AEM](using/getting-started-livecycle-html-workspace.md)
+   + [Guida introduttiva all&#39;area di lavoro AEM Forms](using/getting-started-livecycle-html-workspace.md)
    + [Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager](using/tasks-organizational-hierarchy-using-manager.md)
    + [Avvio dei processi](using/starting-processes.md)
    + [Tracciamento dei processi](using/tracking-processes.md)
@@ -241,7 +242,7 @@ ht-degree: 1%
    + [Utilizzo di un modulo adattivo in HTML Workspace](using/using-adaptive-form-html-workspace.md)
    + [Integrazione dell&#39;area di lavoro moduli AEM con Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Uso degli elenchi A-do](using/todo-lists.md)
-   + [Linee guida per la risoluzione dei problemi per l&#39;area di lavoro Moduli AEM](using/troubleshooting-guidelines-html-workspace.md)
+   + [Linee guida per la risoluzione dei problemi per l&#39;area di lavoro AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms app {#aem-forms-app}
    + [Introduzione all&#39;app AEM Forms](using/aem-forms-app.md)
    + [Configurare l&#39;ambiente per l&#39;app AEM Forms](using/setup-environment-mobile-workspace.md)
@@ -249,7 +250,7 @@ ht-degree: 1%
    + [Creazione di un&#39;app AEM Forms protetta per iOS](using/building-secure-mobile-workspace-app.md)
    + [Configurare il progetto Visual Studio e creare l&#39;app Windows](using/setup-visual-studio-project-build-installer.md)
    + [Configurare il progetto Android Studio e creare l&#39;app Android](using/setup-android-studio-project-build-installer.md)
-   + [Creare l&#39;app AEM Forms Android](using/setup-eclipse-project-build-installer.md)
+   + [Creare l&#39;app Android AEM Forms](using/setup-eclipse-project-build-installer.md)
    + [Distribuisci app AEM Forms](using/distribute-mobile-workspace-app.md)
    + [Personalizzazione dei gesti](using/gesture-customization.md)
    + [Personalizzazione branding](using/branding-customization.md)
@@ -266,12 +267,12 @@ ht-degree: 1%
    + [Aggiunta di allegati](using/add-attachments.md)
    + [Utilizzo della modalità offline](using/work-offline-mode.md)
    + [Aggiornamento delle impostazioni generali](using/update-general-settings.md)
-   + [Risoluzione dei problemi relativi all&#39;app AEM Forms](using/issues-aem-forms-app.md)
+   + [Risoluzione dei problemi dell&#39;app AEM Forms](using/issues-aem-forms-app.md)
 + Moduli HTML5 {#html5-forms}
    + [Introduzione ai moduli HTML5](using/introduction.md)
    + [Guida introduttiva ai moduli HTML5](using/get-started.md)
    + [Architettura dei moduli HTML5](using/html5-forms-architecture.md)
-   + [Differenza tra le funzioni dei moduli HTML5 e dei moduli PDF](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [Differenza delle funzioni tra moduli HTML5 e PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [Domande frequenti per moduli HTML5](using/faq.md)
    + [Progettazione di modelli di modulo per moduli HTML5](using/designing-form-template.md)
    + [Procedure ottimali per i moduli HTML5](using/best-practices-for-html5-forms.md)
@@ -320,11 +321,11 @@ ht-degree: 1%
    + [Condizione in linea e ripetizione in Comunicazioni interattive e lettere](using/cm-inline-condition.md)
    + [Frammenti del documento](using/lists.md)
    + [Proprietà di configurazione della gestione della corrispondenza](using/cm-configuration-properties.md)
-+ Integrare AEM Forms con le soluzioni Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
-   + [Creazione di esperienze mirate in AEM Forms](/help/forms/using/experience-targeting-forms.md)
++ Integrare AEM Forms con  soluzioni Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
+   + [Creazione di esperienze con targeting negli AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Misurazione e miglioramento dell&#39;efficacia e della conversione dei moduli](using/measure-improve-performance-forms-documents.md)
    + [Configurazione di analisi e rapporti](using/configure-analytics-forms-documents.md)
-   + [Visualizzazione e comprensione dei rapporti di analisi di AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
+   + [Visualizzare e comprendere i report di analisi AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Creazione e gestione di test A/B per i moduli adattivi](using/ab-testing-adaptive-forms.md)
 + Pubblicare ed elaborare AEM Forms {#publish-process-aem-forms}
    + [Introduzione alla pubblicazione di moduli su un portale](using/introduction-publishing-forms.md)
@@ -371,7 +372,7 @@ ht-degree: 1%
    + [Riferimento script di Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
    + [Designer Riferimento FormCalc](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Uso della firma scorrevole nei moduli HTML5](using/scribble-signature.md)
-+ Personalizzazione di AEM Forms {#customize-aem-forms}
++ Personalizza AEM Forms {#customize-aem-forms}
    + [Struttura di aspetto per moduli adattivi e HTML5](using/introduction-widgets.md)
    + [Creazione di un modello di modulo adattivo personalizzato](using/custom-adaptive-forms-templates.md)
    + [Creazione di componenti di layout personalizzati per i moduli adattivi](using/custom-layout-components-forms.md)
@@ -391,9 +392,9 @@ ht-degree: 1%
    + [Visualizzazione e comprensione dei rapporti sulle transazioni](using/viewing-and-understanding-transaction-reports.md)
    + [API fatturabili report transazioni](using/transaction-reports-billable-apis.md)
    + [Registrazione di una transazione per le implementazioni personalizzate](using/record-transaction-custom-implementation.md)
-+ Guida dell&#39;amministratore per AEM Forms su JEE {#administrator-help}
++ Guida dell&#39;amministratore per i AEM Forms su JEE {#administrator-help}
    + Introduzione {#get-started}
-      + [Impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Impostazioni generali AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Aggiornamento del tipo di licenza per la distribuzione](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configurazione e gestione dei domini {#setup-manage-domains}
       + [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md)
@@ -574,14 +575,14 @@ ht-degree: 1%
    + [HTML Template Language](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
    + [Plug-in AEM per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java per AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
-   + [Guida di riferimento per le API Java di AEM Forms su JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
+   + [AEM Forms in JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API Form Bridge per moduli HTML5](using/form-bridge-apis.md)
    + [Assembler Service e DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Guida di Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + Programmazione con AEM Forms su JEE {#programming-aem-forms-jee}
       + Introduzione alla programmazione con AEM Forms su JEE {#introduction-programming-aem-forms-jee}
          + [Introduzione a Java API QuickStart](developing/introducing-java-api-soap-quick.md)
-         + [Richiamo di moduli AEM tramite API](developing/invoking-aem-forms-using-apis.md)
+         + [Chiamata di AEM Forms tramite API](developing/invoking-aem-forms-using-apis.md)
          + [Informazioni sui processi AEM Forms](developing/aem-forms-processes.md)
          + [Contenitore di servizi](developing/service-container.md)
       + Avvio rapido di Java API - Esempi di codice {#java-api-quick-start-code-examples}
@@ -612,12 +613,12 @@ ht-degree: 1%
          + [Guida rapida API Java di Task Manager Service (SOAP)](developing/task-manager-service-java-api.md)
          + [Avvio rapido di Java API User Manager (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Start(SOAP)](developing/xmp-utilities-service-java-api.md)
-      + Richiamo di moduli AEM su JEE tramite API {#invoking-aem-forms-jee-apis}
-         + [Richiamo di moduli AEM tramite richieste REST](developing/invoking-aem-forms-using-rest.md)
-         + [Richiamo di moduli AEM tramite REMOTO](developing/invoking-aem-forms-using-remoting.md)
-         + [Richiamo di moduli AEM tramite i servizi Web](developing/invoking-aem-forms-using-web.md)
-         + [Richiamo di moduli AEM tramite i servizi Web](developing/invoking-human-centric-long-lived.md)
-         + [Richiamo di moduli AEM tramite JavaAPI](developing/invoking-aem-forms-using-java.md)
+      + Chiamata di AEM Forms su JEE tramite API {#invoking-aem-forms-jee-apis}
+         + [Chiamata di AEM Forms mediante richieste REST](developing/invoking-aem-forms-using-rest.md)
+         + [Chiamata di AEM Forms tramite REMOTO](developing/invoking-aem-forms-using-remoting.md)
+         + [Chiamata di AEM Forms mediante servizi Web](developing/invoking-aem-forms-using-web.md)
+         + [Chiamata di AEM Forms mediante servizi Web](developing/invoking-human-centric-long-lived.md)
+         + [Chiamata di AEM Forms tramite JavaAPI](developing/invoking-aem-forms-using-java.md)
          + [Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO utilizzando token HTTP](developing/creating-flash-builder-applications-perform.md)
       + Esecuzione di operazioni di servizio tramite API {#performing-service-operations-using-apis}
          + [Esecuzione di operazioni di servizio tramite API](developing/performing-service-operations-using-apis.md)
@@ -649,7 +650,7 @@ ht-degree: 1%
          + [Rendering dei moduli nel client](developing/rendering-forms-client.md)
          + [Rendering di moduli HTML con file CSS personalizzati](developing/rendering-html-forms-using-custom.md)
          + [Rendering di moduli HTML con barre degli strumenti personalizzate](developing/rendering-html-forms-custom-toolbars.md)
-         + [Rendering di moduli PDF interattivi](developing/rendering-interactive-pdf-forms.md)
+         + [Rendering di PDF forms interattivi](developing/rendering-interactive-pdf-forms.md)
          + [Rendering di moduli abilitati per i diritti](developing/rendering-rights-enabled-forms.md)
          + [Convalida di documenti DDX](developing/validating-ddx-documents.md)
          + [Conversione di PDF in file PostScript e immagine](developing/converting-pdf-postscript-image-files.md)
@@ -659,13 +660,13 @@ ht-degree: 1%
          + [Cifratura e decrittografia di documenti PDF](developing/encrypting-decrypting-pdf-documents.md)
          + [Importazione ed esportazione di dati](developing/importing-exporting-data.md)
          + [Gestione degli utenti](developing/users.md)
-         + [Utilizzo dell&#39;archivio moduli AEM](developing/aem-forms-repository.md)
+         + [Utilizzo dell&#39;archivio AEM Forms](developing/aem-forms-repository.md)
          + [Uso dei moduli con codice a barre](developing/barcoded-forms.md)
          + [Utilizzo delle credenziali](developing/credentials.md)
          + [Utilizzo dei documenti PDF/A](developing/pdf-a-documents.md)
          + [Utilizzo delle utility PDF](developing/pdf-utilities.md)
          + [Utilizzo delle utility XMP](developing/xmp-utilities.md)
-         + [Preparazione di AEM Forms per il backup](developing/preparing-aem-forms-backup.md)
+         + [Preparazione dei AEM Forms per il backup](developing/preparing-aem-forms-backup.md)
          + [Gestione programmatica degli endpoint](developing/programmatically-endpoints.md)
          + [Gestione programmatica dei nodi delle preferenze](developing/programmatically-preferences-nodes.md)
          + [Protezione dei documenti con i criteri](developing/protecting-documents-policies.md)
