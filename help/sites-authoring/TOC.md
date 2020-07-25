@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: Guida utente per l’authoring in AEM 6.4
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 88%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 # Guida utente per l’authoring in AEM 6.4 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti fondamentali per l’authoring AEM {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring con AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
    + [Concetto di authoring](author.md)
@@ -27,25 +31,25 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Annotazioni durante la modifica di una pagina](annotations.md)
    + [Creazione e organizzazione delle pagine](managing-pages.md)
    + [Modifica del contenuto di una pagina](editing-content.md)
-   + [Utilizzo dell’editor Rich Text per creare contenuto](rich-text-editor.md)
+   + [Utilizzo dell’Editor Rich Text per l’authoring dei contenuti](rich-text-editor.md)
    + [Modifica delle proprietà di una pagina](editing-page-properties.md)
    + [Pubblicazione delle pagine](publishing-pages.md)
    + [Authoring delle pagine con frammenti di contenuto](content-fragments.md)
    + [Frammenti esperienza](experience-fragments.md)
    + [Esportazione in formato CSV](csv-export.md)
    + [Componenti](default-components.md)
-   + [Authoring di una pagina per dispositivi mobili](mobile.md)
-   + [Risoluzione di problemi AEM nell’ambiente di creazione](troubleshooting.md)
+   + [Authoring di una pagina per dispositivi mobili ](mobile.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice](best-practices.md)
+   + [Best practice ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
-   + [Creazione di modelli di pagina](templates.md)
+   + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
-   + [Utilizzo delle versioni di una pagina](working-with-page-versions.md)
+   + [Utilizzo delle versioni di una pagina  ](working-with-page-versions.md)
    + [Differenze tra pagine](page-diff.md)
    + [Console Componenti](default-components-console.md)
-   + [Layout dinamico](responsive-layout.md)
+   + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](creating-accessible-content.md)
    + [Scaffolding](scaffolding.md)
@@ -83,7 +87,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Gestione dei tipi di pubblico](managing-audiences.md)
    + [Creazione e gestione delle offerte](offerlib.md)
    + [Segmentazione](segmentation-overview.md)
-+ AEM e Adobe Campaign {aem-adobe-campaign}
++ AEM e  Adobe Campaign {aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
    + [Targeting con Adobe Campaign](target-adobe-campaign.md)
