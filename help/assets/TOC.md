@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.4 Assets
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 44%
 
 ---
 
@@ -16,12 +20,12 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 + [Informazioni su DAM](assets.md)
 + [Miglioramenti dell&#39;esperienza utente](ux-improvements.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
-+ Utilizzare Risorse AEM {#using}
-   + [Esperienza della home page di AEM Assets](assets-home-page.md)
++ Usa AEM Assets {#using}
+   + [AEM Assets esperienza pagina principale](assets-home-page.md)
    + [Ricerca di risorse in AEM](search-assets.md)
    + [Ricerca full-text GQL](gql-search.md)
    + [Risorse in più lingue](multilingual-assets.md)
-   + [Utilizzo di risorse Adobe Stock in Risorse AEM](aem-assets-adobe-stock.md)
+   + [Utilizzare le risorse Adobe Stock nei AEM Assets](aem-assets-adobe-stock.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Flusso di attività nella timeline](activity-stream.md)
    + [Elabora risorse](assets-workflow.md)
@@ -31,9 +35,9 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Newsletter di Dynamic Media curata da Experience League](dynamic-media-newsletter.md)
    + [Impostazione di Dynamic Media](administering-dynamic-media.md)
    + [Utilizzo di Dynamic Media](dynamic-media.md)
-   + [Configurazione di contenuti multimediali dinamici - Modalità Scene7](config-dms7.md)
+   + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+   + [Risoluzione dei problemi relativi alla modalità Dynamic Media - Scene7](troubleshoot-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -70,12 +74,12 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 + Estendi risorse {#extending}
    + [Personalizzazione ed estensione delle risorse](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori e flussi di lavoro](media-handlers.md)
-   + [Estensione della ricerca delle risorse](searchx.md)
-   + [Installazione e configurazione di ImageMagick per l’utilizzo con Risorse AEM](best-practices-for-imagemagick.md)
-   + [Integrazione delle risorse con il flusso di attività](extending-activity-stream.md)
-   + [Estensione dell’Editor risorse](asseteditorx.md)
+   + [Extending Assets Search](searchx.md)
+   + [Installazione e configurazione di ImageMagick per l’utilizzo dei AEM Assets](best-practices-for-imagemagick.md)
+   + [Integrating Assets with Activity Stream](extending-activity-stream.md)
+   + [Extending Asset Editor](asseteditorx.md)
    + [API HTTP di Assets](mac-api-assets.md)
-   + [Sviluppo proxy risorse](proxy.md)
+   + [Assets Proxy Development](proxy.md)
 + Amministrazione delle risorse {#administer}
    + [Formati supportati per le risorse](assets-formats.md)
    + [Facet di ricerca](search-facets.md)
@@ -83,7 +87,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Write-back XMP per le rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
-   + [Smart tag migliorati](enhanced-smart-tags.md)
+   + [Tag avanzati migliorati](enhanced-smart-tags.md)
    + [Profili per l’elaborazione di metadati, immagini e video](processing-profiles.md)
    + [Metadati a cascata](cascading-metadata.md)
    + [Creare e configurare le pagine Editor risorse](assets-finder-editor.md)
@@ -99,7 +103,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [Utilizzo di PDF rasterizer](aem-pdf-rasterizer.md)
    + [Configurazione delle restrizioni di caricamento delle risorse](configuring-asset-upload-restrictions.md)
    + [Best practice per l&#39;integrazione con AEM e Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integrazione di AEM Assets con il server InDesign](indesign.md)
+   + [Integrazione di AEM Assets con InDesign Server](indesign.md)
    + [Profili metadati](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Utilizzo del pacchetto dimostrativo per approfondimenti sulle risorse](touch-ui-using-demo-package-for-asset-insights.md)
@@ -121,8 +125,8 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 + Brand Portal {#brandportal}
    + [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare risorse su Brand Portal](brand-portal-publish-assets.md)
-   + [Pubblicare raccolte in Brand Portal](brand-portal-publish-collection.md)
-   + [Pubblicare le cartelle su Brand Portal](brand-portal-publish-folder.md)
+   + [Pubblicare raccolte su Brand Portal](brand-portal-publish-collection.md)
+   + [Pubblicare cartelle su Brand Portal](brand-portal-publish-folder.md)
 + Frammenti di contenuto {#fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments.md)
    + [Gestione dei frammenti di contenuto](content-fragments-managing.md)
