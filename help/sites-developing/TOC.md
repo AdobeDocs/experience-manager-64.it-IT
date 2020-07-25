@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Developing User Guide
+user-guide-title: Guida utente per lo sviluppo di AEM 6.4
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 10%
 
 ---
 
@@ -14,7 +18,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
 + [Panoramica sullo sviluppo della Guida utente](home.md)
 + Introduzione per gli sviluppatori{#introduction}
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](getting-started.md)
-   + [Concetti di base AEM](the-basics.md)
+   + [Concetti di base di AEM](the-basics.md)
    + [Struttura dell&#39;interfaccia utente di AEM Touch](touch-ui-structure.md)
    + [Concetti dell’interfaccia utente di AEM Touch](touch-ui-concepts.md)
    + [Sviluppo AEM - Linee guida e best practice](dev-guidelines-bestpractices.md)
@@ -22,15 +26,15 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Sviluppo e Page Diff](pagediff.md)
    + [Limitazioni per l’editor](editor-limitations.md)
    + [Quadro di protezione CSRF](csrf-protection.md)
-   + [Data Modeling - Modello di David Nuescheler](model-data.md)
+   + [Modellazione dei dati - Modello di David Nuescheler](model-data.md)
    + [Contributo ad AEM](contributing-to-cq.md)
    + [Sicurezza](security.md)
    + [Materiali di riferimento](reference-materials.md)
    + [Creare un sito Web completo (interfaccia classica)](website.md)
    + [Progettazione e Designer (interfaccia classica)](designer.md)
 + Platform{#platform}
-   + [Foglio di lavoro Sling](sling-cheatsheet.md)
-   + [Utilizzo delle schede di rete Sling](sling-adapters.md)
+   + [Guida di riferimento rapido per Sling](sling-cheatsheet.md)
+   + [Utilizzo di adattatori Sling](sling-adapters.md)
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
@@ -46,7 +50,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Implementazione di un valutatore predefinito personalizzato per il Generatore di query](implementing-custom-predicate-evaluator.md)
       + [Riferimento predicato Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
-   + Assegnazione di tag{#tagging}
+   + Assegnazione tag{#tagging}
       + [Assegnazione tag](tags.md)
       + [AEM Tagging Framework](framework.md)
       + [Creazione di tag in un’applicazione AEM](building.md)
@@ -66,7 +70,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Sviluppo (generico)](generic.md)
       + [Sviluppo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componenti{#components}
-   + [Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
    + [Sistema di stili](/help/sites-authoring/style-system.md)
    + [Panoramica sui componenti](components.md)
    + [Componenti AEM - Nozioni di base](components-basics.md)
@@ -81,7 +85,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Modalità Sviluppatore](developer-mode.md)
    + [Verifica dell’interfaccia](hobbes.md)
    + [Componenti per frammenti di contenuto](components-content-fragments.md)
-   + [Come ottenere informazioni sulla pagina in formato JSON](pageinfo.md)
+   + [Ottenimento di informazioni sulla pagina in formato JSON](pageinfo.md)
    + Internazionalizzazione{#internationalization}
       + [Internazionalizzazione dei componenti](i18n.md)
       + [Internazionalizzazione delle stringhe di interfaccia](i18n-dev.md)
@@ -108,7 +112,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Componente pagina SPA](spa-page-component.md)
       + [Mappatura da modello dinamico a componente per SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routing modello SPA](spa-routing.md)
-      + [Integrazione di SPA e Adobe Experience Platform Launch](spa-launch.md)
+      + [Integrazione di SPA e lancio di  Adobe Experience Platform](spa-launch.md)
       + [Rendering SPA e lato server](spa-ssr.md)
       + [Riferimenti API SPA Javascript](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
@@ -135,7 +139,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Riferimento API ContextHub Javascript](contexthub-api.md)
    + [Estensione di ContextHub](ch-extend.md)
    + [Aggiunta di ContextHub alle pagine e accesso agli store](ch-adding.md)
-   + [Candidati per l&#39;archivio ContextHub di esempio](ch-samplestores.md)
+   + [Candidati per lo store ContextHub di esempio](ch-samplestores.md)
    + [Tipi di moduli interfaccia utente ContextHub di esempio](ch-samplemodules.md)
    + [Diagnostica ContextHub](ch-diagnostics.md)
    + [Sviluppo per contenuti mirati](target.md)
@@ -155,20 +159,20 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Interazione con flussi di lavoro a livello di programmazione](workflows-program-interaction.md)
       + [Riferimento passo flusso di lavoro](workflows-step-ref.md)
       + [Best practice per i flussi di lavoro](workflows-best-practices.md)
-      + [Riferimento processo di workflow](workflows-process-ref.md)
+      + [Riferimento per il processo di workflow](workflows-process-ref.md)
    + [Estensione di Multi Site Manager](extending-msm.md)
-   + Tracciamento e analisi{#extending-analytics}
+   + Tracciamento e  Analytics{#extending-analytics}
       + [Estensione del tracciamento degli eventi](extending-analytics.md)
-      + [Aggiunta di Adobe Analytics Tracking ai componenti](extending-analytics-components.md)
-      + [Personalizzazione di Adobe Analytics Framework](extending-analytics-framework.md)
-      + [Implementazione della denominazione delle pagine lato server per Analytics](extending-analytics-pa-naming.md)
-   + Servizi cloud{#extending-cloud-services}
-      + [Configurazioni servizi cloud](extending-cloud-config.md)
-      + [Creazione di un servizio Cloud personalizzato](extending-cloud-config-custom-cloud.md)
+      + [Aggiunta di Adobe  Analytics Tracking ai componenti](extending-analytics-components.md)
+      + [Personalizzazione di Adobe  Analytics Framework](extending-analytics-framework.md)
+      + [Implementazione della denominazione delle pagine lato server per  Analytics](extending-analytics-pa-naming.md)
+   + Cloud Services{#extending-cloud-services}
+      + [Configurazioni Cloud Service](extending-cloud-config.md)
+      + [Creazione di un Cloud Service personalizzato](extending-cloud-config-custom-cloud.md)
    + [Creazione di estensioni personalizzate](extending-campaign-extensions.md)
    + Forms{#extending-forms}
       + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
-      + [Creazione di un modello personalizzato di pagina AEM con i componenti modulo di Adobe Campaign](extending-campaign-custom-template.md)
+      + [Creazione di un modello personalizzato di pagina AEM con componenti modulo  Adobe Campaign](extending-campaign-custom-template.md)
       + [Richiedi script di analisi](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](jmx-integration.md)
    + [Sviluppo dell’editor di massa](dev-bulk-editor.md)
@@ -189,7 +193,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Elenchi di controllo](checklists.md)
    + [Giorno Duro](tough-day.md)
    + [Verifica dell’interfaccia](hobbes.md)
-+ Best practice{#bestpractices}
++ Best practice {#bestpractices}
    + [Panoramica sulle best practice](best-practices.md)
    + [Linee guida per lo sviluppo AEM e best practice](dev-guidelines-bestpractices.md)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
