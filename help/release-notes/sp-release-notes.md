@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 24%
 
 ---
@@ -99,7 +99,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### Integrations (Integrazioni){#integrations-6480}
 
-* I menu a discesa **Società** e **Suite di rapporti** vengono nascosti dopo che **Origine** rapporti è stata selezionata durante la configurazione di Adobe  Analytics in  servizi cloud Experience Manager (NPR-31729).
+* I menu a discesa **Società** e **Suite di rapporti** vengono nascosti dopo che **Origine** rapporti è stata selezionata durante la configurazione di Adobe Analytics in  servizi cloud Experience Manager (NPR-31729).
 
 *  proprietà dell’Adobe Campaign non vengono pulite quando viene effettuata la copia per lingua di una newsletter collegata a un Adobe Campaign , mentre la pulizia viene eseguita quando una newsletter collegata a un Adobe Campaign  viene copiata o incollata (NPR-32540).
 
@@ -779,7 +779,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * Quando un file CSV ha un valore separato da virgole in una singola colonna, l’editor CSV AEM non esce dalla virgola e la tratta come una colonna separata. NPR-28801: Hotfix per CQ-4261694
 * Problema con l&#39;Editor schema metadati quando si utilizza il browser percorsi per selezionare i dati. NPR-28674: Hotfix per CQ-4263005
 * Troppe risorse vengono elaborate in Smart Content Service e il processo periodico di assegnazione dei tag viene completato per un periodo di tempo molto lungo. NPR-28640: Hotfix per CQ-4262661, CQ-4262644, CQ-4263234
-* Le azioni desktop non funzionano per i risultati di ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
+* Le azioni desktop non funzionano per i risultati della ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
 * L’API Assets non consente il caricamento di file > 2 GB, causando errori di caricamento. NPR-27629: Hotfix per GRANITE-23590
 * I metadati non vengono salvati nella risorsa scaricata nel primo tentativo nel caso in cui Dynamic Media sia abilitato nell’istanza. NPR-28233: Hotfix per CQ-4260759
 * Il risolutore del servizio non è chiuso nella configurazione SiteCatalyst. NPR-28015: Hotfix per CQ-4259397
@@ -994,10 +994,6 @@ Un bundle rimane nello stato installato dopo l&#39;installazione del pacchetto F
 **Forms - Designer**
 
 * Alcune immagini JPEG in un modello XDP non vengono sottoposte a rendering correttamente.  NPR-26702: Hotfix per LC-3917457
-
-**Moduli - OBSOLETE**
-
-* Il servizio di acquisizione della carta si blocca durante l&#39;elaborazione dei file TIFF. NPR-28079: Hotfix per CQ-4240649
 
 **Forms - Flusso di lavoro**
 
@@ -1255,6 +1251,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 
 * Impossibile visualizzare le impostazioni di Reporting e conformità per PDF Generator. NPR-26715: Hotfix per CQ-4253384
 * file binario convertpdf mancante nel pacchetto del componente aggiuntivo AIX Forms, che causa un errore durante la chiamata del servizio PDFA. Hotfix per CQ-4257873
+* Il servizio di acquisizione della carta si blocca durante l&#39;elaborazione dei file TIFF. NPR-28079: Hotfix per CQ-4240649
 
 **Servizi basati su documenti**
 
