@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,9 @@ Questa pagina consente di estendere le funzionalità di Multi Site Manager:
 
 * Informazioni sui membri principali dell&#39;API Java MSM.
 * Create una nuova azione di sincronizzazione che possa essere utilizzata in una configurazione di rollout.
-* Rimuovete il passaggio &quot;Capitoli&quot; nella procedura guidata Crea sito.
 * Modificare la lingua e i codici paese predefiniti.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
@@ -229,7 +230,7 @@ Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di s
 Il nome deve corrispondere al nome dell’ **azione** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
-1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che il loro ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
+1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che l&#39;ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
 
 1. Fate clic su **Salva tutto**.
 
