@@ -1,6 +1,6 @@
 ---
-title: Integrazione di applicazioni di terze parti nell'area di lavoro di AEM Forms
-seo-title: Integrazione di applicazioni di terze parti nell'area di lavoro di AEM Forms
+title: Integrazione di applicazioni di terze parti nell’area di lavoro AEM Forms
+seo-title: Integrazione di applicazioni di terze parti nell’area di lavoro AEM Forms
 description: Come integrare app di terze parti come Gestione della corrispondenza nell'area di lavoro AEM Forms.
 seo-description: Come integrare app di terze parti come Gestione della corrispondenza nell'area di lavoro AEM Forms.
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
@@ -8,28 +8,31 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 0%
 
 ---
 
 
-# Integrazione di applicazioni di terze parti nell&#39;area di lavoro di AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
+# Integrazione di applicazioni di terze parti nell’area di lavoro AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
 
-L&#39;area di lavoro Moduli AEM supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. Tali moduli e documenti possono essere moduli XDP, Flex® o Guide (obsoleto) per i quali è stato eseguito il rendering in formato XDP, PDF, HTML o Flex.
+L&#39;area di lavoro AEM Forms supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. Tali moduli e documenti possono essere Forms XDP, moduli Flex® o guide (obsoleto) per i quali è stato eseguito il rendering in formato XDP, PDF, HTML o Flex.
 
-Tali capacità sono ulteriormente migliorate. AEM Forms ora supporta la collaborazione con applicazioni di terze parti che supportano funzionalità simili all’area di lavoro Moduli AEM. Una parte comune di questa funzionalità è rappresentata dal flusso di lavoro dell&#39;assegnazione e successiva approvazione di un&#39;attività. AEM Forms offre un&#39;unica esperienza unificata agli utenti enterprise di AEM Forms affinché tutte queste assegnazioni di attività o approvazioni per le applicazioni supportate possano essere gestite tramite l&#39;area di lavoro Moduli AEM.
+Tali capacità sono ulteriormente migliorate. I AEM Forms ora supportano la collaborazione con applicazioni di terze parti che supportano funzionalità simili all&#39;area di lavoro AEM Forms. Una parte comune di questa funzionalità è rappresentata dal flusso di lavoro dell&#39;assegnazione e successiva approvazione di un&#39;attività. I AEM Forms offrono un&#39;unica esperienza unificata agli utenti enterprise di AEM Forms, in modo che tutte le assegnazioni di attività o approvazioni per le applicazioni supportate possano essere gestite tramite l&#39;area di lavoro AEM Forms.
 
-Ad esempio, consideriamo la gestione della corrispondenza come il modello di esempio per l&#39;integrazione con l&#39;area di lavoro AEM Forms. Gestione corrispondenza ha il concetto di &quot;Lettera&quot;, che può essere rappresentata e consente azioni.
+Ad esempio, consideriamo la gestione della corrispondenza come esempio di riferimento per l’integrazione con l’area di lavoro AEM Forms. Gestione corrispondenza ha il concetto di &quot;Lettera&quot;, che può essere rappresentata e consente azioni.
 
 ## Creare le risorse Gestione corrispondenza {#create-correspondence-management-assets}
 
-Per iniziare, create un modello di gestione della corrispondenza di esempio di cui viene eseguito il rendering nell&#39;area di lavoro Moduli AEM. Per ulteriori dettagli, vedere [Creare un modello](/help/forms/using/create-letter.md)di lettera.
+Per iniziare, create un modello di gestione della corrispondenza di esempio di cui viene eseguito il rendering nell&#39;area di lavoro AEM Forms. Per ulteriori dettagli, vedere [Creare un modello](/help/forms/using/create-letter.md)di lettera.
 
 Per verificare se il rendering del modello di gestione della corrispondenza può essere eseguito correttamente, accedete al modello di gestione della corrispondenza nel relativo URL. L&#39;URL ha un pattern simile a `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 dove `encodedLetterId` è l’ID lettera con codifica URL. Quando si definisce il processo di rendering per l&#39;attività dell&#39;area di lavoro in Workbench, specificare lo stesso ID lettera.
 
-## Creazione di un’attività per il rendering e l’invio di una lettera in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Creazione di un’attività per eseguire il rendering e inviare una lettera in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Prima di eseguire questi passaggi, accertatevi di essere membri dei seguenti gruppi:
 
@@ -38,7 +41,7 @@ Prima di eseguire questi passaggi, accertatevi di essere membri dei seguenti gru
 
 Per ulteriori informazioni, consultate [Aggiungere e configurare utenti](/help/forms/using/admin-help/adding-configuring-users.md).
 
-Per creare un’attività di rendering e inviare una lettera in AEM Workspace, effettuate le seguenti operazioni:
+Per creare un’attività di rendering e inviare una lettera in AEM Workspace, effettuare le seguenti operazioni:
 
 1. Avviare Workbench. Accedete a localhost come amministratore.
 1. Fate clic su File > Nuovo > Applicazione. Nel campo Nome applicazione, immettete `CMDemoSample` e fate clic su Fine.
@@ -57,7 +60,7 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
 
 1. Fate clic su Gestisci profili azione. Viene visualizzata la finestra di dialogo Gestisci profilo azione. Assicurarsi che le opzioni Processo di rendering e Processo di invio siano selezionate correttamente.
 1. Per aprire la lettera con un file XML di dati, individuare e selezionare il file di dati appropriato nel processo Prepara dati.
-1. Fate clic su OK.
+1. Fai clic su OK.
 1. Definire le variabili per Output punto iniziale e Allegati attività. Le variabili definite conterranno i dati Output punto iniziale e Allegati attività.
 1. (Facoltativo) Per aggiungere un altro utente al flusso di lavoro, trascinate un selettore attività, configuratelo e assegnatelo a un utente. Scrivere un wrapper personalizzato (esempio riportato di seguito) oppure scaricare e installare il DSC (dato di seguito) per estrarre il modello Lettera, l&#39;Output Punto di Inizio e l&#39;Allegato Attività.
 
@@ -98,12 +101,12 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
    }
    ```
 
-   [Ottieni DSC](assets/dscsample.zip)download file: Un DSC di esempio è disponibile nel file DSCSample.zip allegato qui sopra. Scaricate e decomprimete il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per informazioni, consultate [Configurare il servizio](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
+   [Ottieni DSC](assets/dscsample.zip)download file: Un esempio di DSC è disponibile nel `DSCSample.zip` file allegato qui sopra. Scaricate e decomprimete il `DSCSample.zip` file. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per informazioni, consultate [Configurare il servizio](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
 
    Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata, ad esempio getLetterInstanceInfo, quindi fate clic su **OK**.
 
 1. Implementare l&#39;applicazione. Se richiesto, archiviate e salvate le risorse.
-1. Accedete all&#39;area di lavoro moduli di AEM all&#39;indirizzo `https://[server]:[port]/lc/content/ws`.
+1. Accedere all&#39;area di lavoro moduli AEM all&#39;indirizzo `https://[server]:[port]/lc/content/ws`.
 1. Aprite il compito aggiunto, CMRenderer. Viene visualizzata la lettera Gestione corrispondenza.
 
    ![cminworkspace](assets/cminworkspace.png)
