@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -27,11 +27,13 @@ Questa pagina contiene un elenco dei problemi noti  Adobe Experience Manager 6.4
 I dispositivi ibridi non sono supportati. Durante l&#39;utilizzo di tali dispositivi possono verificarsi diversi problemi. Le procedure suggerite di seguito consentono di risolvere molti problemi:
 
 Se utilizzate Google Chrome come browser:
+
 * Digitate `chrome://flags/` la barra degli indirizzi e premete Invio.
 * Fate clic su Attiva eventi di tocco > Disattivato.
 * Riavviate il browser (tutte le schede e le finestre).
 
 Se si utilizza Mozilla Firefox come browser:
+
 * Digitate `about:config` la barra degli indirizzi e premete Invio.
 * Filtrare le impostazioni su `dom.w3c`.
 * Verificate che le impostazioni siano `0` e `false`.
@@ -132,12 +134,12 @@ Se utilizzate Microsoft Edge come browser:
 
 (CQ-4238462)
 
-### Integrazione con Adobe Sign
+### Integrazione  Adobe Sign
 
-* Il pianificatore Adobe Sign smette di funzionare in modo intermittente, pertanto i moduli in attesa di firma non passano all&#39;invio. Per risolvere il problema, riavviate il bundle **Apache Sling Scheduler Support** dalla console Web di AEM all’indirizzo https://[*server*]:[*porta*]/sistema/console/bundle.
+*  pianificazione Adobe Sign smette di funzionare in modo intermittente e pertanto i moduli in attesa di firma non passano all&#39;invio. Per risolvere il problema, riavviate il bundle **Apache Sling Scheduler Support** dalla console Web AEM https://[*server*]:[*port*]/system/console/bundle.
 
-### Authoring di moduli adattivi
+### Authoring Forms adattivo
 
 * Il componente Grafico nei moduli adattivi occupa più spazio di quanto non lo sia normalmente.
-* Viene restituita un&#39;eccezione durante il salvataggio delle proprietà per moduli adattivi, frammenti di moduli adattivi o comunicazioni interattive nell&#39;interfaccia utente di Forms Manager.
+* Viene restituita un’eccezione quando si salvano le proprietà per moduli adattivi, frammenti di moduli adattivi o comunicazioni interattive nell’interfaccia utente di Forms Manager.
 * Nei dispositivi Samsung con Android 6.0 non viene rispettato il numero massimo di caratteri specificato per una casella di testo di modulo adattivo. (Ref. CQ-4235205)
