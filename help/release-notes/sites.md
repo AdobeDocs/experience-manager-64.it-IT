@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 translation-type: tm+mt
-source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +28,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 
 * Nuova barra ad albero del contenuto per navigare rapidamente nella gerarchia di un sito. In combinazione con la vista a elenco, questo ripristina il modello di interazione Interfaccia classica per la navigazione in un sito.
 * È stato migliorato lo scorrimento nella vista a schede e a elenco delle cartelle di grandi dimensioni.
-* Migliorata l&#39;interazione con i risultati della ricerca: il pulsante Indietro ripristina il risultato della ricerca precedente.
+* È stata migliorata l’interazione con i risultati della ricerca: il pulsante Indietro ripristina il risultato della ricerca precedente.
 * Scelte rapide da tastiera aggiuntive, per la maggior parte delle azioni comuni, ad esempio l’apertura di una determinata barra, la modifica, lo spostamento e l’eliminazione di pagine o l’apertura di proprietà.
 * Possibilità di disabilitare le scelte rapide da tastiera (abilitare/disabilitare in Preferenze).
 * Interrompi la visualizzazione delle marche temporali in tutte le interfacce utente relative dopo 7 giorni (impostazione predefinita nelle Preferenze).
@@ -33,7 +36,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 ### Editor pagina {#page-editor}
 
 * Elenco dei dispositivi aggiornato per l&#39;anteprima reattiva del sito, ora inclusi Apple iPhone 8, 8 Plus e X e Samsung S7
-* È stata spostata la posizione predefinita per le informazioni sulla progettazione del modello lontano da /etc/design per supportare le impostazioni specifiche dei siti in /conf. I clienti che eseguono l’aggiornamento da versioni precedenti di AEM possono continuare a utilizzare /etc/design.
+* È stata spostata la posizione predefinita per le informazioni sulla progettazione del modello lontano da /etc/design per supportare le impostazioni specifiche dei siti in /conf. I clienti che eseguono l&#39;aggiornamento da versioni AEM precedenti possono continuare a utilizzare /etc/design.
 
 ### Sviluppo di componenti e modelli {#component-amp-template-development}
 
@@ -64,13 +67,13 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
    * Interfaccia dell&#39;editor modelli
    * Elementi dati preconfigurati per modelli di frammenti di contenuto (testo su una sola riga, testo su più righe, numero, booleano, data e ora, enumerazione, riferimento contenuto, tag)
 
-* Miglioramento dell&#39;usabilità dell&#39;editor dei frammenti di contenuto AEM
+* Miglioramento dell&#39;usabilità dell&#39;editor AEM frammenti di contenuto
 
    * Panoramica di View-all-elements
    * Modifica a schermo intero per singoli elementi
    * Funzionalità avanzate di modifica di testo RTF (elenchi puntati, elenchi numerati, rientri, collegamenti ipertestuali, tabelle, ricerca e sostituzione, controllo ortografia)
 
-* Sono state aggiunte opzioni di output migliorate per i frammenti di contenuto AEM
+* Sono state aggiunte opzioni di output avanzate per AEM frammenti di contenuto
 
    * Nuovo componente Frammento di contenuto, come parte dei componenti core. [Vedi il codice su GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
    * Supporto di Content Services con output JSON tramite Sling Model Exporter
@@ -79,12 +82,12 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 
 * Sono stati introdotti blocchi predefiniti per frammenti esperienza, per facilitare il riutilizzo dei contenuti tra varianti di frammenti esperienza raggruppando i componenti e consentendo riferimenti semplici all’interno delle varianti.
 * Aggiunta la possibilità di aggiungere frammenti esperienza ai progetti di traduzione tramite la barra laterale di riferimento
-* Possibilità di avviare flussi di lavoro con frammenti esperienza tramite la barra laterale della cronologia
+* Aggiunta la possibilità di avviare flussi di lavoro con frammenti esperienza tramite la barra laterale della cronologia
 * La barra laterale di riferimento ora mostra dove viene utilizzato un frammento esperienza in AEM
 * La configurazione delle posizioni dei modelli ora consente agli autori di definire a livello globale o di cartella quali modelli di frammenti esperienza possono essere utilizzati
-* La ricerca sfaccettata ora supporta i filtri avanzati, come quelli pubblicati/non pubblicati, esportati nei social media e in Adobe Target
-* È stato aggiunto l&#39;accesso a singoli social media durante l&#39;esportazione di frammenti esperienza in Pinterest o Facebook
-* Frammenti esperienza AEM integrati con Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in Adobe Target utilizzabili con Visual Experience Composer (Compositore esperienza visivo) di Target per incorporarle in qualsiasi esperienza abilitata per Target.
+* La ricerca sfaccettata ora supporta i filtri avanzati, come quelli pubblicati/non pubblicati, esportati nei social media e  Adobe Target
+* È stato aggiunto l&#39;accesso a un singolo social media durante l&#39;esportazione di frammenti esperienza in Pinterest o Facebook
+* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target che possono essere utilizzate con Target Visual Experience Composer (Compositore esperienza visivo) per incorporarle in qualsiasi esperienza Target abilitata.
 
 ### Traduzione {#translation}
 
@@ -118,14 +121,14 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 
 ### AEM e Adobe Target  {#aem-amp-adobe-target-nbsp}
 
-* Frammenti esperienza AEM integrati con Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in Adobe Target utilizzabili con Visual Experience Composer (Compositore esperienza visivo) di Target per incorporarle in qualsiasi esperienza abilitata per Target.
-* Adobe Target mbox.js versione 63 ora incluso. Adobe consiglia di passare all&#39;implementazione a at.js.
-* at.js versione 1.2.2 è ora incluso. Adobe consiglia di utilizzare Dynamic Tag Management (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per effettuare il provisioning di at.js nel sito.
+* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target che possono essere utilizzate con Target Visual Experience Composer (Compositore esperienza visivo) per incorporarle in qualsiasi esperienza Target abilitata.
+*  Adobe Target mbox.js versione 63 ora incluso.  Adobe consiglia di passare all&#39;implementazione a at.js.
+* at.js versione 1.2.2 è ora incluso.  Adobe consiglia di utilizzare Dynamic Tag Management (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per effettuare il provisioning di at.js nel sito.
 
 ### AEM e Adobe Analytics {#aem-amp-adobe-analytics}
 
-* s_code.js H.27.5 ora incluso. Adobe consiglia di passare all’implementazione in AppMeasurement.js
-* AppMeasurement.js 1.8.0 ora incluso. Adobe consiglia di utilizzare Dynamic Tag Management (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per effettuare il provisioning di AppMeasurement.js nel sito.
+* s_code.js H.27.5 ora incluso.  Adobe consiglia di passare all’implementazione in AppMeasurement.js
+* AppMeasurement.js 1.8.0 ora incluso.  Adobe consiglia di utilizzare Gestione tag dinamica (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per eseguire il provisioning di AppMeasurement.js nel sito.
 
 ## Add-on Communities {#communities-add-on}
 
@@ -133,11 +136,10 @@ Consulta la [pagina delle note sulla versione di Communities](/help/release-note
 
 ## Add-on Screens {#screens-add-on}
 
-* È stato aggiunto il supporto per la connessione dei lettori di schermo ai server di pubblicazione AEM per i download di comandi e controlli e canali (invece di effettuare il download direttamente all’autore di AEM).
+* È stato aggiunto il supporto per la connessione dei lettori di schermo AEM server di pubblicazione per i download di comandi e controlli e canali (invece di AEM l’autore).
 * Possibilità di raggruppare le assegnazioni dei canali nelle pianificazioni
 * Le assegnazioni dei canali ora dispongono della data di inizio e di fine
 * Pannello dispositivo ora mostra la shell del lettore e la versione del firmware
 * Nell&#39;elenco Dashboard dispositivo viene visualizzato lo stato di connessione del lettore
-* È stato aggiunto il supporto Google Chrome OS per il lettore AEM Screens
-* Aggiunta di Microsoft Windows 10 per AEM Screens Player
-
+* Aggiunto il supporto Google Chrome OS per AEM Screens Player
+* Aggiunta di Microsoft Windows 10 per il lettore AEM Screens
