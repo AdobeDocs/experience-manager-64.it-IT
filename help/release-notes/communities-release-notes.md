@@ -10,14 +10,17 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 translation-type: tm+mt
-source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 12%
 
 ---
 
 
 # AEM Communities Note sulla versione {#aem-communities-release-notes}
 
-Questa sezione contiene informazioni sui miglioramenti apportati a AEM Communities dalla versione 6.3. Per ulteriori informazioni sulle nuove funzioni, consulta [Novità nelle community](/help/communities/whats-new-aem-communities.md)AEM 6.4.
+Questa sezione fornisce informazioni sui miglioramenti apportati agli AEM Communities a partire dalla versione 6.3. Per ulteriori informazioni sulle nuove funzioni, consulta [Novità di AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
 To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
 
@@ -56,9 +59,9 @@ Moderazione:
 * I moderatori della community dispongono di filtri Moderazione aggiuntivi (ad esempio, domande con risposta/senza risposta)
 * I moderatori della community possono creare segnalibri e collegare la moderazione a filtri predefiniti (ad esempio, tutti i post in attesa di approvazione)
 
-Compatibilità con le modifiche di base di AEM 6.4.
+Compatibilità generale con le modifiche fondamentali di AEM 6.4.
 
-Nota: tutte queste funzioni sono disponibili anche per AEM 6.3. Controlla le note sulla versione di AEM Communities per la versione [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Nota: tutte queste funzioni sono disponibili anche per AEM 6.3. Controlla le note di rilascio dei AEM Communities per [6.3](https://helpx.adobe.com/it/experience-manager/6-3/release-notes.html).
 
 ## Problemi noti {#known-issues}
 
@@ -71,4 +74,4 @@ Il punteggio di esperti (*fornito da Sensei*) è utilizzato per abilitare la gam
 
 ## Manifestazioni {#demonstrations}
 
-Tutte queste funzioni possono essere dimostrate utilizzando [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponibile pubblicamente su GitHub.com quando si utilizza lo scenario demo di AEM Communities e anche all&#39;interno della nuova implementazione di riferimento di We.Retail.
+Tutte queste funzioni possono essere dimostrate utilizzando la [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponibile pubblicamente su GitHub.com quando si utilizza lo scenario demo AEM Communities e anche all&#39;interno della nuova implementazione di riferimento We.Retail.
