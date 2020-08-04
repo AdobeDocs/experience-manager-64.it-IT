@@ -4,10 +4,10 @@ description: Note sulla versione specifiche  Adobe Experience Manager 6.4 Cumula
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 21%
+source-wordcount: '2159'
+ht-degree: 20%
 
 ---
 
@@ -55,6 +55,8 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 * Impossibile creare un lancio per una pagina di AEM Sites. La creazione dell&#39;avvio genera un errore (NPR-32544).
 * Manage Publication non include le risorse di riferimento nel flusso di lavoro di attivazione della richiesta (NPR-32463).
 * Il controllo dello stato di Dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33630).
+* L&#39;integrazione di Salesforce è vulnerabile all&#39;SSRF (NPR-32671).
+* XSS riflesso in PreferencesServlet (NPR-33439).
 
 ### Assets {#assets-6481}
 
@@ -74,6 +76,8 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 
 * L&#39;elaborazione delle risorse durante il caricamento in blocco si blocca (CQ-4293916).
 
+* Vulnerabilità SSRF nel Experience Manager  (NPR-33437).
+
 ### Platform {#platform-6481}
 
 * Il [!DNL Sling] filtro non viene chiamato se la voce della `sling:match` mappa è creata in `/etc/maps` (NPR-33308).
@@ -89,12 +93,17 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 
 * Nei registri `NullPointerException` viene visualizzato un errore durante l&#39;esecuzione di un processo di traduzione (NPR-32220).
 
+### Integrations (Integrazioni){#integrations-6481}
+
+* Script tra siti per JSON (NPR-32745).
+
 ### Communities {#communities-6481}
 
 * Gli autori, dopo aver creato un nuovo gruppo, non vengono reindirizzati alla sezione Gruppo  community sulla versione [!DNL Internet Explorer] 11 (NPR-33202).
 * Errore durante l&#39;accesso alla pagina Flusso  attività (NPR-33152).
 * La modifica di un [!DNL Communities] gruppo e la modifica dell&#39;immagine in miniatura non comporta l&#39;aggiornamento della miniatura del gruppo (NPR-32603).
 * Durante la creazione di una versione di notifiche e sottoscrizioni di contenuti generati dall&#39;utente (UGC), viene memorizzato un ID errato della pagina di origine (CQ-4289703).
+* Problema di scripting tra siti (NPR-33212).
 
 ### Flusso di lavoro {#workflow-6481}
 
@@ -117,6 +126,8 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 * BackendIntegration: Le richieste del modello dati del modulo non riescono a causa dello stato inattivo non corretto del token di aggiornamento (NPR-33168).
 * Document Services: Il servizio Converti PDF non è in grado di convertire i documenti PDF in PostScript a causa di jar Gibson mancanti [!DNL WebLogic] sul [!DNL Linux] server (NPR-33515, CQ-4292239).
 * Document Services: Quando un utente converte un file di testo in un PDF, i caratteri giapponesi non vengono rappresentati correttamente (NPR-33239).
+* Memorizzato XSS con GuideSOMProviderServlet (NPR-32701).
+
 
 ## Install 6.4.8.1 {#install}
 
