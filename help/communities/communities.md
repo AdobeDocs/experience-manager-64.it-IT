@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Panoramica {#overview}
 
-AEM Communities semplifica la creazione e la personalizzazione di funzioni per community quali forum, gruppi di utenti, blog, D e R, calendari, commenti, revisioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di inserire nell’ambiente di pubblicazione il contenuto generato dall’utente (UGC).
+ AEM Communities semplifica la creazione e la personalizzazione di funzionalità della community quali forum, gruppi di utenti, blog, D e R, calendari, commenti, revisioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di inserire nell’ambiente di pubblicazione il contenuto generato dall’utente (UGC).
 
-La creazione di un sito [](overview.md#communitiessites) comunitario costituisce il quadro [della componente](scf.md) sociale. La creazione di un sito community inizia con la selezione di un modello [di sito](sites-console.md) community composto da funzioni [](functions.md)community.
+La creazione di un sito [](overview.md#communitiessites) comunitario costituisce il quadro [della componente](scf.md) sociale (SCF). La creazione di un sito community inizia con la selezione di un modello [di sito](sites-console.md) community composto da funzioni [](functions.md)community.
 
 Per una panoramica ed esercitazioni introduttive, visitate:
 
 * [Panoramica di AEM Communities](overview.md)
 * [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+* [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
 
 >[!NOTE]
 >
@@ -48,11 +51,11 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 * [Linee guida](code-guide.md)sulla codifica: linee guida, suggerimenti e trucchi
 * [Guida](components-guide.md)ai componenti community: strumento di sviluppo interattivo
 
-## Componenti, funzioni e funzioni essenziali {#component-function-and-feature-essentials}
+## Componenti, funzioni e funzioni di base {#component-function-and-feature-essentials}
 
-I componenti, le funzioni e le funzioni di AEM Communities sono gli elementi costitutivi dei siti [](sites-console.md)community.
+ componenti, funzioni e funzionalità di AEM Communities costituiscono gli elementi costitutivi dei siti [](sites-console.md)della community.
 
-* [Componenti, funzioni e funzioni essenziali](essentials.md)
+* [Componenti, funzioni e funzioni di base](essentials.md)
 * [Clientlibs per componenti Community](clientlibs.md)
 * [Funzioni per community](functions.md)
 * [Modelli per gruppi community](tools-groups.md)
