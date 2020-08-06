@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +32,7 @@ Queste istruzioni descrivono come connettersi a MySQL Server e stabilire il data
 
    * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versione 5.6 o successiva
 
-      * Può essere eseguito sullo stesso host di AEM o in remoto
+      * Può essere eseguito sullo stesso host AEM o in remoto
    * [Workbench MySQL](https://dev.mysql.com/downloads/tools/workbench/)
 
 
@@ -84,7 +87,7 @@ Al primo avvio di MySQL Workbench, a meno che non sia già in uso per altri scop
 1. Selezionate l’ `+` icona a destra di `MySQL Connections`.
 1. Nella finestra di dialogo `Setup New Connection`, immettete i valori appropriati per la piattaforma
 
-   A scopo dimostrativo, con l’istanza AEM dell’autore e MySQL sullo stesso server:
+   A scopo dimostrativo, con l&#39;istanza AEM autore e MySQL sullo stesso server:
 
    * Nome connessione: `Communities`
    * Metodo di connessione: `Standard (TCP/IP)`
@@ -114,7 +117,7 @@ Per installare il database, aprite la connessione Community.
 
 Lo script SQL viene ottenuto dall&#39;archivio AEM:
 
-1. Passa a CRXDE Lite
+1. Passa al CRXDE Lite
 
    * Ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -163,17 +166,17 @@ Una volta eseguito lo script, è necessario aggiornare la `SCHEMAS`sezione del `
 
 La configurazione OSGi per il pool **di connessioni JDBC** Day Commons configura il driver JDBC MySQL.
 
-Tutte le istanze AEM di pubblicazione e creazione devono puntare allo stesso server MySQL.
+Tutte le istanze di pubblicazione e creazione AEM devono puntare allo stesso server MySQL.
 
 Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server deve essere specificato al posto di &#39;localhost&#39; nel connettore JDBC.
 
-* Per ogni istanza di creazione e pubblicazione di AEM
+* Per ogni istanza di creazione e pubblicazione AEM
 * Accesso con privilegi di amministratore
 * Accedere alla console [Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Individua il `Day Commons JDBC Connections Pool`
+* Individua la variabile `Day Commons JDBC Connections Pool`
 * Selezionate l&#39; `+` icona per creare una nuova configurazione di connessione
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
@@ -183,7 +186,7 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
    * **[!UICONTROL Classe]** driver JDBC: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI]** connessione JDBC: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Specificare il server al posto di localhost se MySQL Server non è lo stesso di AEM Server
+      Specificare il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; AEM server
 
       *community* è il nome predefinito del database (schema)
 
