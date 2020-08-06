@@ -1,8 +1,8 @@
 ---
 title: Funzioni per community
 seo-title: Funzioni per community
-description: Scopri come accedere alla console Funzioni community
-seo-description: Scopri come accedere alla console Funzioni community
+description: Scoprite come accedere alla console Funzioni community
+seo-description: Scoprite come accedere alla console Funzioni community
 uuid: 5cce05f5-1dd7-496d-94c2-8fccc0177d13
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '2542'
+ht-degree: 3%
 
 ---
 
 
 # Funzioni per community {#community-functions}
 
-Il tipo di funzionalità previste da un&#39;esperienza di community è noto. Le funzioni della community sono disponibili come funzioni della community Internet. Essenzialmente, si tratta di una o più pagine precollegate per implementare una funzione community che richiede più di un semplice aggiunta di un componente a una pagina in modalità di creazione. Sono gli elementi costitutivi utilizzati per definire la struttura di un modello [di sito](sites.md) community da cui vengono [creati](sites-console.md)siti community.
+Il tipo di funzionalità previste da un&#39;esperienza di community è noto. Le funzioni della community Internet sono disponibili come funzioni della community Internet. Essenzialmente, si tratta di una o più pagine precollegate per implementare una funzione community che richiede più di un semplice aggiunta di un componente a una pagina in modalità di creazione. Sono gli elementi costitutivi utilizzati per definire la struttura di un modello [di sito](sites.md) community da cui vengono [creati](sites-console.md)siti community.
 
-Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità [di authoring standard di](../../help/sites-authoring/editing-content.md)AEM.
+Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità [di authoring standard](../../help/sites-authoring/editing-content.md)AEM.
 
 Una serie di funzioni della community sono immediatamente disponibili, come mostrato nella console delle funzioni della community. Ulteriori funzioni della community verranno fornite nelle release future e sarà possibile creare funzioni personalizzate.
 
@@ -31,13 +34,13 @@ Una serie di funzioni della community sono immediatamente disponibili, come most
 
 Nell’ambiente di authoring, per accedere alla console delle funzioni per community
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Funzioni community]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Funzioni della community]**
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Funzioni pre-costruite {#pre-built-functions}
 
-Segue una breve descrizione delle funzioni fornite con AEM Communities. Ogni funzione è composta da una o più pagine AEM contenenti componenti Community collegati tra loro in una funzione facilmente incorporata in un modello [di sito](sites.md)community.
+Segue una breve descrizione delle funzioni fornite con  AEM Communities. Ogni funzione è composta da una o più pagine AEM contenenti componenti Community collegati tra loro in una funzione facilmente incorporata in un modello [di sito](sites.md)community.
 
 Un modello di sito community fornisce la struttura di un sito community, inclusi login, profili utente, notifiche, messaggi, menu del sito, ricerca, temi e funzioni di branding.
 
@@ -45,13 +48,15 @@ Un modello di sito community fornisce la struttura di un sito community, inclusi
 
 **Titolo** e **URL** sono proprietà comuni a tutte le funzioni della community.
 
-Quando una funzione community viene aggiunta a un modello di sito community o quando si [modifica](sites-console.md#modifying-site-properties) la struttura di un sito community, si apre la finestra di dialogo della funzione in modo da configurare il Titolo e l&#39;URL.
+Quando una funzione community viene aggiunta a un modello di sito community o quando si [modifica](sites-console.md#modifying-site-properties) la struttura di un sito community, si apre la finestra di dialogo della funzione in modo che sia possibile configurare il Titolo e l&#39;URL.
 
 #### Dettagli funzione di configurazione {#configuration-function-details}
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
-* **[!UICONTROL Titolo]**(*obbligatorio*) Testo visualizzato nel menu delle funzioni per il sito
+* **[!UICONTROL Titolo]**
+(
+*richiesto*) Testo visualizzato nel menu delle funzioni per il sito
 
 * **[!UICONTROL URL]**(*obbligatorio*) Nome utilizzato per generare l’URI. Il nome deve essere conforme alle convenzioni [di](../../help/sites-developing/naming-conventions.md) denominazione imposte da AEM e JCR.
 
@@ -104,7 +109,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 * **[!UICONTROL Consenti risposte]** filettate Se questa opzione non è selezionata, il blog consente di rispondere (commenti) a un articolo, ma non è consentito rispondere ai commenti. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti. Il valore predefinito è selezionato.
+* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti contenuti. Il valore predefinito è selezionato.
 
 ### Funzione Calendario {#calendar-function}
 
@@ -123,7 +128,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 * **[!UICONTROL Consenti risposte]** filettate Se questa opzione non è selezionata, il blog consente di rispondere (commenti) a un articolo, ma non è consentito rispondere ai commenti. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti. Il valore predefinito è selezionato.
+* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti contenuti. Il valore predefinito è selezionato.
 
 ### Funzione Catalogo {#catalog-function}
 
@@ -139,13 +144,13 @@ Quando viene aggiunta a un modello, la configurazione consente di specificare i 
 * **[!UICONTROL Seleziona tutti i namespace]**
 
    * Gli spazi dei nomi dei tag selezionati definiscono quali tag possono essere selezionati dai visitatori per filtrare l’elenco delle risorse di abilitazione elencate nel catalogo.
-   * Se questa opzione è attivata, sono disponibili tutti gli spazi dei nomi dei tag consentiti per il sito community.
-   * Se questa opzione è deselezionata, è possibile selezionare uno o più namespace consentiti per il sito della community.
+   * Se questa opzione è attivata, sono disponibili tutti gli spazi dei nomi dei tag consentiti per il sito della community.
+   * Se questa opzione è deselezionata, è possibile selezionare uno o più spazi di nomi consentiti per il sito community.
    * Il valore predefinito è selezionato.
 
 ### Funzione Contenuto {#featured-content-function}
 
-La funzione contenuto disponibile è una pagina con un componente [Contenuto](featured.md) contenuto configurato per consentire l’aggiunta e l’eliminazione di commenti.
+La funzione di contenuto disponibile è una pagina con un componente [Contenuto](featured.md) contenuto configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
 La capacità di visualizzare il contenuto può essere consentita o disabilitata per componente (vedere Funzione [](#blog-function)Blog, Funzione [](#calendar-function)Calendario, Funzione [](#forum-function)Forum, Funzione [](#ideation-function)Ideazione e Funzione [](#qna-function)QnA).
 
@@ -176,7 +181,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 * **[!UICONTROL Consenti risposte]** filettate Se questa opzione non è selezionata, il forum consente di inserire commenti su un argomento, ma le risposte a tali commenti non sono consentite. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti. Il valore predefinito è selezionato.
+* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti contenuti. Il valore predefinito è selezionato.
 
 ### Funzione Groups {#groups-function}
 
@@ -211,7 +216,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 La funzione ideazione è una pagina con un componente [Ideazione](ideation-feature.md).
 
-Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
+Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
 
 ![chlimage_1-387](assets/chlimage_1-387.png)
 
@@ -222,15 +227,15 @@ Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che
 
 * **[!UICONTROL Consenti risposte]** filettate Se questa opzione non è selezionata, l&#39;idea consente di rispondere (commenti) a un argomento, ma non è possibile rispondere ai commenti. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti. Il valore predefinito è selezionato.
+* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti contenuti. Il valore predefinito è selezionato.
 
 ### Funzione Classifica {#leaderboard-function}
 
 La funzione della classifica è una pagina con un componente [](enabling-leaderboard.md)della classifica.
 
-**NOTA**: il componente Leaderboard dovrà essere configurato ulteriormente *dopo* la creazione di un sito community da un modello community che include la funzione Leaderboard. Le [regole](enabling-leaderboard.md#rules-tab) del componente Leaderboard dovranno essere specificate, a seconda della configurazione del [punteggio e dei simboli](implementing-scoring.md) per il sito community.
+**NOTA**: il componente Leaderboard dovrà essere configurato ulteriormente *dopo* la creazione di un sito community da un modello community che include la funzione Leaderboard. Le [regole](enabling-leaderboard.md#rules-tab) del componente Leaderboard dovranno essere specificate, a seconda della configurazione del [punteggio e dei badge](implementing-scoring.md) per il sito community.
 
-Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
+Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
 
 ![chlimage_1-388](assets/chlimage_1-388.png)
 
@@ -249,7 +254,7 @@ Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che
 
 ### Funzione Pagina {#page-function}
 
-La funzione page aggiunge una pagina vuota al sito della community che viene collegata alle funzioni del sito della community: login, menu, notifiche, messaggi, temi e branding. Il contenuto può essere aggiunto alla pagina utilizzando la modalità [di authoring](../../help/sites-authoring/editing-content.md)standard di AEM.
+La funzione page aggiunge una pagina vuota al sito della community che viene collegata alle funzioni del sito della community: login, menu, notifiche, messaggi, temi e branding. Il contenuto può essere aggiunto alla pagina utilizzando la modalità [AEM authoring](../../help/sites-authoring/editing-content.md)standard.
 
 Quando viene aggiunta a un modello, l’unica configurazione è [Titolo e Impostazioni](#title-and-url-settings)URL.
 
@@ -270,7 +275,7 @@ Quando viene aggiunta a un modello, la configurazione consente restrizioni ai me
 
 * **[!UICONTROL Consenti risposte]** filettate Se non è selezionata, il forum QnA consente di inserire commenti (risposte) a una domanda pubblicata, ma non è consentito rispondere alle risposte. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti. Il valore predefinito è selezionato.
+* **[!UICONTROL Consenti contenuti]** contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come contenuto [](featured.md)contenuticontenuti contenuti. Il valore predefinito è selezionato.
 
 ## Crea funzione community {#create-community-function}
 
@@ -302,7 +307,7 @@ Poiché la funzione community è implementata come [live copy](../../help/sites-
 
 Vedere anche [Multi Site Manager](../../help/sites-administering/msm.md).
 
-### Miniatura {#thumbnail}
+### Miniatura  {#thumbnail}
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -312,7 +317,7 @@ Nel pannello Miniature, è possibile caricare un’immagine da visualizzare nell
 
 ![chlimage_1-394](assets/chlimage_1-394.png)
 
-Selezionate l’ `Open Community Function` icona per passare alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti funzione.
+Selezionate l’ `Open Community Function` icona per passare alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
 
 ### Configurazione dei componenti {#configuring-components}
 
