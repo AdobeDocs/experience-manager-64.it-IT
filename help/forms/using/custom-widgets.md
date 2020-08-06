@@ -1,8 +1,8 @@
 ---
 title: Creazione di un aspetto personalizzato nei moduli HTML5
 seo-title: Creazione di un aspetto personalizzato nei moduli HTML5
-description: È possibile collegare widget personalizzati a moduli mobili. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
-seo-description: È possibile collegare widget personalizzati a moduli mobili. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+description: Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+seo-description: Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 
 # Creazione di un aspetto personalizzato nei moduli HTML5 {#create-custom-appearances-in-html-forms}
 
-È possibile collegare widget personalizzati a moduli mobili. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere Framework [Aspetto per i moduli](/help/forms/using/introduction-widgets.md) adattivi e HTML5.
+Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere Framework [Aspetto per i moduli](/help/forms/using/introduction-widgets.md) adattivi e HTML5.
 
-![Esempio di widget](assets/custom-widgets.jpg)**Figura predefinita e personalizzata:** *Esempio di widget predefinito e personalizzato*
+![Esempio di widget](assets/custom-widgets.jpg)**Figura predefinita e personalizzata:** *Un esempio di widget predefinito e personalizzato*
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Creazione di un profilo {#create-a-profile-nbsp}
+### Creazione di un profilo  {#create-a-profile-nbsp}
 
 Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
 
@@ -51,7 +54,7 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
   </tr> 
   <tr> 
    <td>getCommitValue</td> 
-   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAM (ad esempio, in corrispondenza dell'evento exit di un oggetto textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td> 
+   <td>Il framework di widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAModel (ad esempio, in corrispondenza dell'evento exit di un oggetto textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td> 
   </tr> 
   <tr> 
    <td>showValue</td> 
@@ -70,7 +73,7 @@ Per creare un widget personalizzato, nel profilo creato sopra, includete i rifer
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registrazione di un widget personalizzato con il motore di script XFA {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registrazione di un widget personalizzato con il motore di script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Quando il codice widget personalizzato è pronto, registrate il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). È necessario widgetConfigObject come input.
 
