@@ -12,6 +12,9 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->L’aggiornamento richiederà tempi di inattività per il livello Author, in quanto la maggior parte degli aggiornamenti AEM vengono eseguiti sul posto. Seguendo queste procedure ottimali, i tempi di inattività dei livelli di pubblicazione possono essere ridotti o eliminati.
+>L&#39;aggiornamento richiederà tempi di inattività per il livello Author, in quanto la maggior parte degli aggiornamenti AEM vengono eseguiti sul posto. Seguendo queste procedure ottimali, i tempi di inattività dei livelli di pubblicazione possono essere ridotti o eliminati.
 
-Quando eseguite l’aggiornamento degli ambienti AEM, è necessario considerare le differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione al fine di ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per aggiornare una topologia di AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia a seconda dei livelli di creazione e pubblicazione, nonché delle distribuzioni basate su Mongo e TarMK, ciascun livello e ciascun microkernel è stato elencato in una sezione separata. Quando eseguite la distribuzione, è consigliabile aggiornare prima l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
+Quando eseguite l’aggiornamento degli ambienti AEM, è necessario considerare le differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione, al fine di ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per aggiornare una topologia AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia a seconda dei livelli di creazione e pubblicazione, nonché delle distribuzioni basate su Mongo e TarMK, ciascun livello e ciascun microkernel è stato elencato in una sezione separata. Quando eseguite la distribuzione, è consigliabile aggiornare prima l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
 
 ## Livello autore TarMK {#tarmk-author-tier}
 
@@ -79,10 +82,10 @@ La topologia presunta per questa sezione è costituita da un cluster MongoMK Aut
 
 1. Interruzione dell&#39;authoring dei contenuti
 1. Duplicare l&#39;archivio dati per il backup
-1. Interrompi tutte le istanze di AEM Author tranne una
+1. Interrompi tutte le istanze di AEM Author tranne una, l’autore principale
 1. Rimuovere tutti i nodi MongoDB tranne uno dal set di repliche, l&#39;istanza Mongo principale
-1. Aggiornare il `DocumentNodeStoreService.cfg` file sull&#39;autore principale per riflettere il set di repliche per membro singolo
-1. Riavvia l&#39;autore principale per assicurarne il corretto riavvio
+1. Aggiornare il `DocumentNodeStoreService.cfg` file sull&#39;autore principale in modo che rifletta il set di repliche per membro singolo
+1. Riavviate l&#39;autore principale per assicurarvi che si riavvii correttamente
 1. Disattivazione degli agenti di replica sull&#39;autore principale
 1. Eseguire attività di manutenzione [pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sull&#39;istanza Author principale
 1. Se necessario, aggiornare MongoDB sull&#39;istanza Mongo principale alla versione 3.2 con WiredTiger
@@ -105,17 +108,17 @@ La topologia presunta per questa sezione è costituita da un cluster MongoMK Aut
 1. Riavviate le istanze Author, una per volta
 1. Rimuovere l&#39;archivio dati duplicato.
 
-### Se non riuscito (rollback) {#if-unsuccessful}
+### Se non riuscito (rollback)  {#if-unsuccessful}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Riconfigurare le istanze Autore secondarie per collegarsi all&#39;archivio dati duplicato
+1. Riconfigurare le istanze Autore secondarie per collegarsi all&#39;archivio dati clonato
 1. Arrestare l&#39;istanza principale Author aggiornata
 1. Chiudere l&#39;istanza principale Mongo aggiornata.
 1. Avvia le istanze Mongo secondarie con una di esse come nuova istanza principale
 1. Configurare i `DocumentNodeStoreService.cfg` file sulle istanze Autore secondarie per puntare al set di repliche delle istanze Mongo non ancora aggiornate
 1. Avvio delle istanze Autore secondarie
-1. Pulizia delle istanze di creazione aggiornate, nodo Mongo e archivio dati.
+1. Pulizia delle istanze di creazione aggiornate, del nodo Mongo e dell&#39;archivio dati.
 
 ## TarMK Publish Farm {#tarmk-publish-farm}
 
