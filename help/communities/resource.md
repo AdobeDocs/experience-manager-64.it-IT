@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 Per aggiungere una risorsa di abilitazione al nuovo sito community:
 
 * Nell’istanza di creazione
-   * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
+   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
 * Accesso come amministratore di sistema
 * Dalla navigazione globale, seleziona **Community >[Risorse](resources.md)**   ![chlimage_1-199](assets/chlimage_1-199.png)
    ![chlimage_1-200](assets/chlimage_1-200.png)
@@ -40,7 +43,7 @@ Compila le informazioni di base per la risorsa:
 * **[!UICONTROL Nome]**sito:
 impostato sul nome del sito community selezionato: Esercitazione di abilitazione
 * **[!UICONTROL Nome risorsa&amp;ast;]**: Lezione di sci 1
-* **[!UICONTROL Tag]**:Esercitazione: Sport / Sci
+* **[!UICONTROL Tag]**: Esercitazione: Sport / Sci
 * **[!UICONTROL Mostra nel catalogo]**: Attivato
 * **[!UICONTROL Descrizione]**: Scivolare sulla neve per principianti
 * **[!UICONTROL Aggiungi immagine]**: Aggiungere un&#39;immagine per rappresentare la risorsa al membro nella visualizzazione Assegnazioni
@@ -57,20 +60,24 @@ Selezionare `'+' icon`, nell&#39;angolo superiore destro, per iniziare il proces
 
 Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata da visualizzare prima dell’inizio della riproduzione del video oppure consentite la generazione di una miniatura dal video (potrebbe richiedere alcuni minuti - non è necessario attendere).
 
-![chlimage_1-206](assets/chlimage_1-205.png)
+![chlimage_1-205](assets/chlimage_1-205.png)
 
 * select **[!UICONTROL Next]**
 
 ### Impostazioni {#settings}
 
-* **[!UICONTROL Impostazioni]** social network Lasciate che le impostazioni predefinite consentano agli utenti di aggiungere commenti e valutazioni alle risorse di abilitazione.
+* **[!UICONTROL Impostazioni]** social network Lasciate che le impostazioni predefinite consentano agli utenti di utilizzare commenti e valutazioni delle risorse di abilitazione per gli utenti in formazione.
 * **[!UICONTROL Data di scadenza]**
+
    *(Facoltativo)* È possibile selezionare una data entro la quale completare l&#39;assegnazione.
 * **[!UICONTROL Autore risorse]**
+
    *(Facoltativo)* Lasciate vuoto.
 * **[!UICONTROL Contatto &amp;risorsa;ast;]**
+
    *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro `Quinn Harper`.
 * **[!UICONTROL Esperto risorse]**
+
    *(Facoltativo)* Lasciate vuoto.
    **Nota**: se gli utenti o i gruppi non sono visibili, verificate che siano stati aggiunti al `Community Enable Members` gruppo e *salvati* nell’istanza di pubblicazione.
    ![chlimage_1-206](assets/chlimage_1-206.png)
@@ -86,7 +93,7 @@ Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata 
 
 ![chlimage_1-208](assets/chlimage_1-208.png)
 
-La creazione della risorsa è tornata alla console Risorse con la risorsa appena creata selezionata. Da questa console è possibile pubblicare, aggiungere utenti in formazione e modificare altre impostazioni.
+La creazione della risorsa è riuscita e torna alla console Risorse con la risorsa appena creata selezionata. Da questa console è possibile pubblicare, aggiungere utenti in formazione e modificare altre impostazioni.
 
 Per caricare una nuova versione della risorsa di abilitazione, si consiglia di creare una nuova risorsa, quindi di annullare l’iscrizione dei membri dalla versione precedente e di iscriverli nella nuova versione.
 
@@ -126,7 +133,7 @@ Un percorso di apprendimento è un gruppo logico di risorse di abilitazione che 
 Aggiungete le informazioni **[!UICONTROL di base]**:
 
 * **[!UICONTROL Nome]** percorso di apprendimento: Lezioni di sci
-* **[!UICONTROL Tag]**:Esercitazione: Sci
+* **[!UICONTROL Tag]**: Esercitazione: Sci
 * **[!UICONTROL Mostra nel catalogo]**: lasciate deselezionata
 * **[!UICONTROL Caricare un’immagine]** per rappresentare il percorso di apprendimento nella console Risorse
 
@@ -156,9 +163,11 @@ Nel pannello Aggiungi risorse
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL Aggiungi assegnatari]** Utilizzate il menu a discesa per selezionare il `Community Ski Class` gruppo, che deve includere i membri `Riley Taylor` e `Sidney Croft.`
+* **[!UICONTROL Aggiungi assegnatari]** Utilizzare il menu a discesa per selezionare 
+`Community Ski Class` gruppo, che dovrebbe includere membri `Riley Taylor` e `Sidney Croft.`
 
 * **[!UICONTROL Percorso di apprendimento Contatto&amp;ast;]**
+
    *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro `Quinn Harper`.
 
 * Seleziona **[!UICONTROL Crea]**
