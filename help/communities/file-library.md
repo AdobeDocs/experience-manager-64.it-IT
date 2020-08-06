@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Per aggiungere un `File Library` componente a una pagina in modalità di creazio
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](essentials-file-library.md#essentials-for-client-side) richieste, verrà visualizzato il `File Library` componente:
 
@@ -52,15 +55,16 @@ Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizz
 
 * **[!UICONTROL Consenti commenti sui file]** Se questa opzione è selezionata, consenti commenti sui file caricati. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Commenti per pagina]** Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Default is **10**.
+* **[!UICONTROL Commenti per pagina]** Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è 
+**10**.
 
 * **[!UICONTROL Dimensione]** massima file Questo valore limita le dimensioni del file caricato. Il limite predefinito è 104857600 (10 Mb).
 
 * **[!UICONTROL Lunghezza]** massima messaggio Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
 
-* **[!UICONTROL Tipi]** di file consentiti Elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+* **[!UICONTROL Tipi]** di file consentiti Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
-* **[!UICONTROL Editor]** Rich Text Se questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
+* **[!UICONTROL Editor]** Rich Text Se questa opzione è selezionata, è possibile inserire commenti con la marcatura. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Elimina commenti]** Se questa opzione è selezionata, gli utenti possono eliminare i propri commenti. Il valore predefinito è selezionato.
 
@@ -72,7 +76,7 @@ Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizz
 
 * **[!UICONTROL Consenti votazione]** Se questa opzione è selezionata, la possibilità di votare per un file verrà abilitata. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti]** se questa opzione è selezionata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](notifications.md) per i nuovi post. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti di seguire]** se questa opzione è selezionata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti risposte]** filettate se questa opzione è selezionata, consenti risposte ai commenti inviati. Il valore predefinito è deselezionato.
 
@@ -82,11 +86,11 @@ Nella scheda Moderazione **** utente configurate la moderazione dei commenti, se
 
 * **[!UICONTROL Pre-moderazione]** Se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Elimina commenti]** Se questa opzione è selezionata, il visitatore che ha pubblicato il commento può eliminarlo. Il valore predefinito è selezionato.
+* **[!UICONTROL Elimina commenti]** Se questa opzione è selezionata, al visitatore che ha pubblicato il commento viene fornita la possibilità di eliminarlo. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Rifiuta commenti]** Se questa opzione è selezionata, consente ai moderatori membri attendibili di negare i commenti. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Chiudi/Riapri commenti]** Se questa opzione è selezionata, consente ai moderatori membri attendibili di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
+* **[!UICONTROL Chiudi/Riapri commenti]** Se questa opzione è selezionata, consente ai moderatori di membri attendibili di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Contrassegna commenti]** Se questa opzione è selezionata, i visitatori possono contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
 
@@ -94,9 +98,11 @@ Nella scheda Moderazione **** utente configurate la moderazione dei commenti, se
 
 * **[!UICONTROL Motivo]** contrassegno personalizzato Se questa opzione è selezionata, i visitatori possono immettere il proprio motivo per cui un commento viene contrassegnato come inappropriato. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Soglia]** moderazione Consente di specificare quante volte un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (**1**).
+* **[!UICONTROL Soglia]** moderazione Consente di specificare quante volte un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (
+**1**).
 
-* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalato un commento prima di essere nascosto nella visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **moderazione**. Il valore predefinito è 5.
+* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalato un commento prima di essere nascosto nella visualizzazione pubblica. Questo numero deve essere maggiore o uguale al valore 
+**Soglia moderazione**. Il valore predefinito è 5.
 
 ## Informazioni aggiuntive {#additional-information}
 
