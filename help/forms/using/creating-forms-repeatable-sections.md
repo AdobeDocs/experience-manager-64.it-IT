@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1138'
+ht-degree: 16%
 
 ---
 
@@ -17,11 +20,11 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 Le sezioni ripetibili sono pannelli che possono essere aggiunti o rimossi in modo dinamico da un modulo.
 
-Ad esempio, quando si richiede un lavoro, il job search fornisce i dettagli occupazionali precedenti come nome società, ruolo, progetto e altre informazioni. L&#39;informazione di tutti i datori di lavoro richiede sezioni diverse ma simili. In questo caso, il modulo per l&#39;impiego fornisce una sezione per il datore di lavoro e offre anche la possibilità di aggiungere in modo dinamico altre sezioni di questo tipo. Tali sezioni, aggiunte in modo dinamico, sono dette sezioni ripetibili.
+Ad esempio, quando si richiede un lavoro, il job search fornisce i dettagli occupazionali precedenti come il nome della società, il ruolo, il progetto e altre informazioni. L&#39;informazione di tutti i datori di lavoro richiede sezioni diverse ma simili. In questo caso, il modulo per l&#39;impiego fornisce una sezione per il datore di lavoro e offre anche la possibilità di aggiungere in modo dinamico altre sezioni di questo tipo. Tali sezioni, aggiunte in modo dinamico, sono note come sezioni ripetibili.
 
 Per creare pannelli ripetibili, potete usare uno dei seguenti metodi:
 
-## Utilizzo di Instance Manager tramite script {#using-instance-manager-via-scripts-nbsp}
+## Utilizzo di Instance Manager tramite script  {#using-instance-manager-via-scripts-nbsp}
 
 1. In modalità di modifica, selezionate un pannello, quindi toccate ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, attivate **Rendi pannello ripetibile**. Specificate i valori per i campi **[!UICONTROL Massimo]** e **[!UICONTROL Minimo]** .
 
@@ -45,10 +48,12 @@ Per creare pannelli ripetibili, potete usare uno dei seguenti metodi:
 
          * Per creare un pulsante del pannello di aggiunta, selezionate **Aggiungi istanza** e trascinate il pannello utilizzando il pannello di ![attivazione/disattivazione](assets/toggle-side-panel.png) o selezionatelo con l’oggetto **Drop oppure selezionate qui.**
          * Per creare un pulsante del pannello di eliminazione, selezionate **Rimuovi istanza** e trascinate il pannello utilizzando il pannello ![di](assets/toggle-side-panel.png) attivazione/disattivazione oppure selezionatelo con l’oggetto **Drop oppure selezionate qui.**
+
       Selezionare Editor **di** codice nella riga Oggetti modulo e Funzioni. Fare clic su **Modifica regole** e nell&#39;area codice:
 
       * Per creare un pulsante Aggiungi pannello, specificate `this.panel.instanceManager.addInstance()`
-      * Per creare un pulsante di eliminazione del pannello, specificate `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+      * Per creare un pulsante per il pannello di eliminazione, specificate `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+
       Fate clic su **Fine**.
 
       >[!NOTE]
@@ -83,7 +88,7 @@ Per creare pannelli ripetibili, potete usare uno dei seguenti metodi:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Per ulteriori informazioni, vedi: Classe: InstanceManager#instance in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Per ulteriori informazioni, vedi: Classe: InstanceManager#instance in [riferimento](https://adobe.com/go/learn_aemforms_documentation_63)API Java AEM Forms.
 
       >[!NOTE]
       >
@@ -103,7 +108,7 @@ Per creare pannelli ripetibili, potete usare uno dei seguenti metodi:
 
 
 
-## Utilizzo del layout a soffietto per il pannello principale {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Utilizzo del layout a soffietto per il pannello principale   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Un pannello offre diverse opzioni di layout. L&#39;opzione Layout per la progettazione accordian offre supporto per pannelli ripetibili. Effettuate le seguenti operazioni per visualizzare il pannello ripetibile con l&#39;opzione Layout per la progettazione accordiera:
 
@@ -114,7 +119,7 @@ Un pannello offre diverse opzioni di layout. L&#39;opzione Layout per la progett
 
 ## Utilizzo di sottomoduli ripetuti da Modello modulo (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-Il sottomodulo ripetibile è simile ai pannelli ripetibili nei moduli adattivi. In AEM Forms Designer, effettuare le seguenti operazioni per creare un sottomodulo ripetibile:
+Il sottomodulo ripetibile è simile ai pannelli ripetibili dell&#39;Forms adattivo. In  AEM Forms Designer, effettuare le seguenti operazioni per creare un sottomodulo ripetibile:
 
 1. Nella palette Gerarchia, selezionare il sottomodulo principale del sottomodulo che si desidera ripetere.
 1. Nella palette Oggetto, fare clic sulla scheda Sottomodulo e selezionare Flusso dall’elenco Contenuto.
