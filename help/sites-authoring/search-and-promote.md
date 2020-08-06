@@ -1,6 +1,6 @@
 ---
-title: Aggiunta delle funzionalità Search&Promote alla pagina
-seo-title: Aggiunta delle funzionalità Search&Promote alla pagina
+title: Aggiunta di funzionalità di Search&Promote alla pagina
+seo-title: Aggiunta di funzionalità di Search&Promote alla pagina
 description: Per integrare le funzionalità di Search&Promote nel sito web, utilizza i componenti di Search&Promote per aggiungere alla pagina la funzione di ricerca per parole chiave, una pagina per i risultati della ricerca, funzioni di ricerca ottimizzata e funzioni per banner
 seo-description: Per integrare le funzionalità di Search&Promote nel sito web, utilizza i componenti di Search&Promote per aggiungere alla pagina la funzione di ricerca per parole chiave, una pagina per i risultati della ricerca, funzioni di ricerca ottimizzata e funzioni per banner
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 79%
 
 ---
 
