@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 6%
 
 ---
 
@@ -32,13 +35,13 @@ Questa sezione della documentazione descrive
 
 ## Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un `Comments`componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Comments`componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Comments`
 
 trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione in cui gli utenti possono inserire commenti oppure semplicemente nella parte inferiore della pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments`componente.
 
@@ -132,7 +135,7 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione dei c
 
 * **[!UICONTROL Soglia moderazione]**
 
-   Immettete il numero di volte in cui un commento deve essere contrassegnato dai membri prima che i moderatori vengano informati. Il valore predefinito è una tantum (1).
+   Immettete il numero di volte in cui un commento deve essere contrassegnato dai membri prima che i moderatori ne vengano informati. Il valore predefinito è una tantum (1).
 
 * **[!UICONTROL Limite segnalazione]**
 
@@ -162,13 +165,13 @@ Nella scheda Tipi **[!UICONTROL di]** risorse, specificare il resourceType perso
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Ad esempio: `/apps/social/commons/components/hbs/comments/comment`
+   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
 
    Questa risorsa identificherà resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passa a resourceType di un `voting`componente esteso in /apps. Ad esempio: `/apps/social/components/hbs/voting`
+   Passa a resourceType di un `voting`componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
 
    Questa risorsa identificherà il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
 
