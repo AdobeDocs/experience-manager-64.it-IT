@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    * Da [Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per mostrare le azioni disponibili:
 
       * Seleziona **Modifica lancio**.
+
    Vengono visualizzate le pagine di origine.
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
@@ -87,6 +91,7 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
    * Da [Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per mostrare le azioni disponibili:
 
       * Seleziona **Modifica proprietà**.
+
    Verranno visualizzati i dettagli.
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
