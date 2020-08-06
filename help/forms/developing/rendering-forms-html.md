@@ -1,6 +1,6 @@
 ---
-title: Rendering dei moduli come HTML
-seo-title: Rendering dei moduli come HTML
+title: Rendering di Forms come HTML
+seo-title: Rendering di Forms come HTML
 description: 'null'
 seo-description: 'null'
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
@@ -12,13 +12,16 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
 source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
+workflow-type: tm+mt
+source-wordcount: '4109'
+ht-degree: 1%
 
 ---
 
 
-# Rendering dei moduli come HTML {#rendering-forms-as-html}
+# Rendering di Forms come HTML {#rendering-forms-as-html}
 
-Il servizio Forms esegue il rendering dei moduli come HTML in risposta a una richiesta HTTP inviata da un browser Web. Il rendering di un modulo in formato HTML può risultare vantaggioso se il computer in cui si trova il browser Web del client non richiede Adobe Reader, Acrobat o Flash Player (per le guide dei moduli (obsoleto)).
+Il servizio Forms esegue il rendering dei moduli come HTML in risposta a una richiesta HTTP inviata da un browser Web. Il rendering di un modulo come HTML apporta un vantaggio in quanto il computer in cui si trova il browser Web del client non richiede  Adobe Reader,  Acrobat o Flash Player (per Guide modulo (obsoleto)).
 
 Per eseguire il rendering di un modulo come HTML, la struttura del modulo deve essere salvata come file XDP. Non è possibile eseguire il rendering HTML di una struttura del modulo salvata come file PDF. Durante lo sviluppo di una struttura del modulo in Designer che verrà rappresentata come HTML, tenere in considerazione i seguenti criteri:
 
@@ -56,7 +59,7 @@ Quando si esegue il rendering di un modulo HTML, le dimensioni di pagina (necess
 
 >[!NOTE]
 >
->Il processo di invio di un modulo al servizio Forms e successivo rendering del modulo da parte del servizio Forms sul dispositivo client è definito come ciclo di dati per il passaggio al server.
+>Il processo di invio di un modulo al servizio Forms e successivo rendering del modulo da parte del servizio Forms sul dispositivo client viene definito come ciclo di dati per l&#39;invio al server.
 
 >[!NOTE]
 >
@@ -76,11 +79,11 @@ Quando si esegue il rendering di un modulo HTML, le dimensioni di pagina (necess
 
 ## Esecuzione di script {#running-scripts}
 
-L&#39;autore di un modulo specifica se uno script viene eseguito sul server o sul client. Il servizio Forms crea un ambiente di elaborazione eventi distribuito per l&#39;esecuzione di informazioni sui moduli che possono essere distribuite tra il client e il server utilizzando l&#39; `runAt` attributo . Per informazioni su questo attributo o sulla creazione di script all&#39;interno delle strutture del modulo, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+L&#39;autore di un modulo specifica se uno script viene eseguito sul server o sul client. Il servizio Forms crea un ambiente di elaborazione eventi distribuito per l&#39;esecuzione di informazioni sui moduli che possono essere distribuite tra il client e il server utilizzando l&#39; `runAt` attributo . Per informazioni su questo attributo o sulla creazione di script all&#39;interno delle strutture del modulo, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-Il servizio Forms è in grado di eseguire gli script durante il rendering del modulo. Di conseguenza, è possibile precompilare un modulo con i dati connettendosi a un database o a servizi Web che potrebbero non essere disponibili sul client. Potete anche impostare l&#39; `Click` evento di un pulsante da eseguire sul server in modo che il client esegua il ciclo dei dati sul server. Questo consente al client di eseguire script che possono richiedere risorse server, ad esempio un database aziendale, mentre l&#39;utente interagisce con un modulo. Per i moduli HTML, gli script di formcalc possono essere eseguiti solo sul server. Di conseguenza, è necessario contrassegnare questi script per l&#39;esecuzione in `server` o `both`.
+Il servizio Forms può eseguire script mentre viene eseguito il rendering del modulo. Di conseguenza, è possibile precompilare un modulo con i dati connettendosi a un database o a servizi Web che potrebbero non essere disponibili sul client. Potete anche impostare l&#39; `Click` evento di un pulsante da eseguire sul server in modo che il client esegua il ciclo dei dati sul server. Questo consente al client di eseguire script che possono richiedere risorse server, ad esempio un database aziendale, mentre l&#39;utente interagisce con un modulo. Per i moduli HTML, gli script di formcalc possono essere eseguiti solo sul server. Di conseguenza, è necessario contrassegnare questi script per l&#39;esecuzione in `server` o `both`.
 
-È possibile progettare moduli che si spostano tra le pagine (pannelli) chiamando `xfa.host.pageUp` e `xfa.host.pageDown` utilizzando metodi. Questo script viene posizionato nell&#39; `Click` &#39;evento di un pulsante e l&#39; `runAt` attributo è impostato su `Both`. È quindi `Both` possibile scegliere Adobe Reader o Acrobat (per i moduli di cui viene eseguito il rendering in formato PDF) per modificare le pagine senza passare al server e i moduli HTML possono modificare le pagine arrotondando i dati al server. In altre parole, un modulo viene inviato al servizio Forms e viene riprodotto come HTML con la nuova pagina visualizzata.
+È possibile progettare moduli che si spostano tra le pagine (pannelli) chiamando `xfa.host.pageUp` e `xfa.host.pageDown` utilizzando metodi. Questo script viene posizionato nell&#39; `Click` &#39;evento di un pulsante e l&#39; `runAt` attributo è impostato su `Both`. Il motivo `Both` è che  Adobe Reader o  Acrobat (per i moduli di cui viene eseguito il rendering come PDF) può cambiare pagina senza andare al server e i moduli HTML possono cambiare pagina arrotondando i dati al server. In altre parole, un modulo viene inviato al servizio Forms e viene riprodotto come HTML con la nuova pagina visualizzata.
 
 Si consiglia di non assegnare alle variabili di script e ai campi modulo gli stessi nomi, ad esempio item. Alcuni browser Web, come Internet Explorer, potrebbero non inizializzare una variabile con lo stesso nome di un campo di modulo che genera un errore di script. È buona norma assegnare ai campi del modulo e alle variabili di script nomi diversi.
 
@@ -117,7 +120,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Quando si creano strutture del modulo per il rendering come HTML, è necessario limitare lo script al sottoinsieme XFA per gli script nel linguaggio javascript.
 
-Gli script eseguiti sul client o eseguiti sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e FormCalc. Per informazioni sull&#39;uso di JavaScript, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
+Gli script eseguiti sul client o eseguiti sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e FormCalc. Per informazioni sull&#39;utilizzo di JavaScript, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Quando si eseguono script sul client, è possibile utilizzare script solo il pannello corrente visualizzato; ad esempio, non è possibile eseguire script rispetto ai campi che si trovano nel pannello A quando viene visualizzato il pannello B. Durante l&#39;esecuzione degli script sul server, è possibile accedere a tutti i pannelli.
 
@@ -129,16 +132,16 @@ Il sottoinsieme XFA definisce gli eventi XFA mappati a eventi HTML. Esiste una l
 
 In un browser Web, gli eventi validate vengono eseguiti solo all&#39;uscita da un campo o all&#39;invio di un modulo. È possibile forzare un evento validate utilizzando il `xfa.form.execValidate` metodo .
 
-I moduli visualizzati in un browser Web (a differenza di Adobe Reader o Acrobat) sono conformi al test null (errori o avvisi) XFA per i campi obbligatori.
+Forms visualizzato in un browser Web (a differenza di  Adobe Reader o  Acrobat) è conforme al test nullo XFA (errori o avvisi) per i campi obbligatori.
 
 * Se il test null genera un errore e si esce da un campo senza specificare un valore, dopo aver fatto clic su OK viene visualizzata una finestra di messaggio che consente di riposizionare il campo.
 * Se un test null genera un avviso e si esce da un campo senza specificare un valore, viene richiesto di fare clic su OK o Annulla, consentendo di procedere senza specificare un valore o di tornare al campo per immettere un valore.
 
-Per ulteriori informazioni su un test null, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
+Per ulteriori informazioni su un test null, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Pulsanti Modulo {#form-buttons}
 
-Facendo clic su un pulsante di invio, i dati del modulo vengono inviati al servizio Forms e rappresenta la fine dell&#39;elaborazione del modulo. L&#39; `preSubmit` evento può essere impostato per essere eseguito sul client o sul server. L&#39; `preSubmit` evento viene eseguito prima dell&#39;invio del modulo, se configurato per essere eseguito sul client. In caso contrario, l&#39; `preSubmit` evento viene eseguito sul server durante l&#39;invio del modulo. Per ulteriori informazioni sull&#39; `preSubmit` evento, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
+Facendo clic su un pulsante di invio, i dati del modulo vengono inviati al servizio Forms e rappresenta la fine dell&#39;elaborazione del modulo. L&#39; `preSubmit` evento può essere impostato per essere eseguito sul client o sul server. L&#39; `preSubmit` evento viene eseguito prima dell&#39;invio del modulo, se configurato per essere eseguito sul client. In caso contrario, l&#39; `preSubmit` evento viene eseguito sul server durante l&#39;invio del modulo. Per ulteriori informazioni sull&#39; `preSubmit` evento, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Se a un pulsante non è associato alcuno script sul lato client, i dati vengono inviati al server, i calcoli vengono eseguiti sul server e il modulo HTML viene rigenerato. Se un pulsante contiene uno script sul lato client, i dati non vengono inviati al server e lo script sul lato client viene eseguito nel browser Web.
 
@@ -184,14 +187,14 @@ Per informazioni sulla firma digitale di un documento, vedere Firma [digitale e 
 È consigliabile limitare l&#39;uso delle regole di convalida per i campi modulo durante il rendering del modulo come modulo HTML. Alcune regole di convalida potrebbero non essere supportate per i moduli HTML. Ad esempio, quando un pattern di convalida MM-GG-AAAA viene applicato a un `Date/Time` campo che si trova in una struttura del modulo rappresentata come modulo HTML, non funziona correttamente, anche se la data viene digitata correttamente. Tuttavia, questo pattern di convalida funziona correttamente per i moduli sottoposti a rendering come PDF.
 
 >[!NOTE]
-Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
 Per eseguire il rendering di un modulo HTML, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API client Forms.
+1. Creare un oggetto Forms Client API.
 1. Impostare le opzioni di runtime HTML.
 1. Eseguire il rendering di un modulo HTML.
 1. Scrivere il flusso di dati del modulo nel browser Web del client.
@@ -200,7 +203,7 @@ Per eseguire il rendering di un modulo HTML, effettuare le seguenti operazioni:
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
-**Creare un oggetto API client Forms**
+**Creare un oggetto Forms Client API**
 
 Prima di poter importare i dati in un&#39;API formClient PDF a livello di programmazione, è necessario creare un client del servizio di integrazione dati modulo. Quando create un client di servizi, definite le impostazioni di connessione necessarie per richiamare un servizio.
 
@@ -212,11 +215,11 @@ Prima di poter importare i dati in un&#39;API formClient PDF a livello di progra
 * `Upload`: Fornisce un&#39;interfaccia utente per selezionare i file da allegare al modulo corrente.
 * `Download`: Fornisce un&#39;interfaccia utente per visualizzare i file allegati.
 
-Quando in un modulo HTML viene visualizzata una barra degli strumenti HTML, l&#39;utente può selezionare un massimo di dieci file da inviare insieme ai dati del modulo. Una volta inviati i file, il servizio Forms è in grado di recuperarli.
+Quando in un modulo HTML viene visualizzata una barra degli strumenti HTML, l&#39;utente può selezionare un massimo di dieci file da inviare insieme ai dati del modulo. Una volta inviati i file, il servizio Forms può recuperare i file.
 
 Quando si esegue il rendering di un modulo come HTML, è possibile specificare un valore agente utente. Un valore agente utente fornisce informazioni su browser e sistema. Si tratta di un valore facoltativo e potete trasmettere un valore di stringa vuoto. Il rendering di un modulo HTML tramite l&#39;avvio rapido di Java API mostra come ottenere un valore agente utente e utilizzarlo per eseguire il rendering di un modulo come HTML.
 
-Gli URL HTTP a cui vengono inviati i dati del modulo possono essere specificati impostando l&#39;URL di destinazione mediante l&#39;API client di Forms Service oppure specificati nel pulsante Invia contenuto nella struttura del modulo XDP. Se l&#39;URL di destinazione è specificato nella struttura del modulo, non impostare un valore utilizzando l&#39;API client di Forms Service.
+Gli URL HTTP a cui vengono inviati i dati del modulo possono essere specificati impostando l&#39;URL di destinazione mediante l&#39;API Forms Service Client oppure specificati nel pulsante Invia contenuto nella struttura del modulo XDP. Se l&#39;URL di destinazione è specificato nella struttura del modulo, non impostare un valore utilizzando l&#39;API client Forms Service.
 
 >[!NOTE]
 Il rendering di un modulo HTML con una barra degli strumenti è facoltativo.
@@ -240,17 +243,17 @@ Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un f
 
 [Eseguire il rendering di un modulo come HTML utilizzando l&#39;API del servizio Web](#render-a-form-as-html-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering di moduli HTML con barre degli strumenti personalizzate](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
+[Rendering HTML Forms con barre degli strumenti personalizzate](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
-[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Eseguire il rendering di un modulo come HTML utilizzando l&#39;API Java {#render-a-form-as-html-using-the-java-api}
 
@@ -260,7 +263,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
 
    Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
    * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
@@ -271,8 +274,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
    * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. (Questa è un&#39;impostazione opzionale).
    * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setOutputType` e passare `OutputType.FullHTMLTags`. (Questa è un&#39;impostazione opzionale).
+
    >[!NOTE]
-   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE in cui è installato AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se il server `ApplicationWebRoot`* è un altro da quello in cui è installato AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.*
+   Il rendering Forms non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se il server `ApplicationWebRoot`* è un altro da quello in cui è installato  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.*
 
 1. Eseguire il rendering di un modulo HTML
 
@@ -285,6 +289,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
    * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un `URLSpec` oggetto che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
+
    Il `(Deprecated) renderHTMLForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che può essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
@@ -299,24 +304,24 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
 
 **Consulta anche**
 
-[Rendering dei moduli come HTML](#rendering-forms-as-html)
+[Rendering di Forms come HTML](#rendering-forms-as-html)
 
 [Avvio rapido (modalità SOAP): Rendering di un modulo HTML utilizzando l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Eseguire il rendering di un modulo come HTML utilizzando l&#39;API del servizio Web {#render-a-form-as-html-using-the-web-service-api}
 
-Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio Web):
+Eseguire il rendering di un modulo HTML utilizzando l&#39;API di Forms (servizio Web):
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    Creare un `FormsService` oggetto e impostare i valori di autenticazione.
 
@@ -324,10 +329,11 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
 
    * Creare un `HTMLRenderSpec` oggetto utilizzando il relativo costruttore.
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, consulta [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, consultate [Guida di riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)delle API di AEM Forms.
    * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setOutputType` e passare `OutputType.FullHTMLTags`.
+
    >[!NOTE]
-   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE in cui è installato AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se il server `ApplicationWebRoot`* è un altro da quello in cui è installato AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni. *
+   Il rendering Forms non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se il server `ApplicationWebRoot`* è un altro da quello in cui è installato  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni. *
 
 1. Eseguire il rendering di un modulo HTML
 
@@ -335,7 +341,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
 
    * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un valore `TransformTo` enum che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
-   * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. (Vedere [Precompilazione dei moduli con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)scorrevoli.)
+   * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. Consultate [Precompilazione di Forms con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)scorrevoli.
    * L&#39; `HTMLRenderSpec` oggetto che memorizza le opzioni di runtime HTML.
    * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
    * Un `URLSpec` oggetto che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML. Consultate [Specificare i valori](/help/forms/developing/rendering-interactive-pdf-forms.md)URI.
@@ -346,6 +352,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. Questo argomento memorizzerà il valore delle impostazioni internazionali.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. Questo argomento memorizzerà il valore di rendering HTML utilizzato.
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
+
    Il `(Deprecated) renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
@@ -360,7 +367,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
 
 **Consulta anche**
 
-[Rendering dei moduli come HTML](#rendering-forms-as-html)
+[Rendering di Forms come HTML](#rendering-forms-as-html)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
