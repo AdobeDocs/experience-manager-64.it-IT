@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 83%
 
 ---
 
@@ -26,14 +29,14 @@ Caratteristiche di un Frammento esperienza:
 * Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
 * È composto da uno o più componenti, con layout, in un sistema di paragrafo.
 * Può contenere altri frammenti esperienza.
-* Può essere combinato con altri componenti (inclusi gli altri Frammenti esperienza) per formare una pagina completa (esperienza).
+* Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Può avere diverse varianti, che possono condividere contenuti e/o componenti.
 * Può essere suddiviso in blocchi predefiniti che possono essere utilizzati in più varianti del frammento.
 
-Quando utilizzare un Frammento esperienza:
+Puoi utilizzare Frammenti esperienza:
 
-* Se un autore desidera riutilizzare delle parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare il frammento. Creare e gestire queste esperienze tramite copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. I frammenti esperienza eliminano la necessità di copiare/incollare.
-* Per supportare il caso d’uso headless CMS. Gli autori desiderano utilizzare AEM solo per l’authoring ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
+* Se un autore desidera riutilizzare delle parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare il frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
+* Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
 
 >[!NOTE]
 >
@@ -43,98 +46,98 @@ Quando utilizzare un Frammento esperienza:
 >
 >Per qualsiasi problema riscontrato, contatta l’amministratore del sistema.
 
-## Quando utilizzare i frammenti esperienza? {#when-should-you-use-experience-fragments}
+## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
 I frammenti esperienza devono essere utilizzati:
 
 * Quando desideri riutilizzare le esperienze.
 
-   * Per esperienze che riutilizzerai con contenuti simili o uguali.
+   * Per esperienze che riutilizzerai con contenuti simili o uguali. 
 
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
 
-   * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti.
-   * Per incorporare contenuti nei touchpoint di terze parti.
+   * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. 
+   * Per incorporare contenuti nei punti di contatto di terze parti
 
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
 
-   * Varianti per un canale o per un contesto specifico.
+   * Varianti per un canale o per un contesto specifico. 
    * Per esperienze che è utile raggruppare (ad esempio una campagna con diverse esperienze per i vari canali).
 
 * Quando utilizzi Commerce omnichannel.
 
-   * Per condividere contenuti commerciali sui canali di social media su larga scala.
-   * Per assegnare funzioni transazionali ai touchpoint.
+   * Per condividere contenuti commerciali sui canali di social media su larga scala
+   * Per assegnare funzioni transazionali ai punti di contatto
 
 ## Organizzazione dei frammenti esperienza {#organizing-your-experience-fragments}
 
-Si consiglia di:
-* utilizzare le cartelle per organizzare i frammenti esperienza,
+È consigliabile:
+* organizzare i frammenti esperienza in cartelle;
 
-* [configurate i modelli consentiti in queste cartelle](#configure-allowed-templates-folder).
+* [configurare i modelli consentiti in queste cartelle](#configure-allowed-templates-folder).
 
 La creazione di cartelle consente di:
 
-* creare una struttura significativa per i frammenti esperienza; ad esempio, in base alla classificazione
+* creare una struttura significativa per i frammenti esperienza, ad esempio, in base alla classificazione
 
    >[!NOTE]
    >
-   >Non è necessario allineare la struttura dei frammenti esperienza con la struttura di pagina del sito.
+   >Non è necessario allineare la struttura dei frammenti esperienza alla struttura delle pagine del sito.
 
 * [allocare i modelli consentiti a livello di cartella](#configure-allowed-templates-folder)
 
    >[!NOTE]
    >
-   >Puoi utilizzare l&#39;[Editor modelli](/help/sites-authoring/templates.md) per creare un modello personalizzato.
+   >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-authoring/templates.md).
 
-L’esempio seguente mostra i frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come possono essere utilizzate altre funzioni, come la gestione multisito (incluse le copie della lingua).
+L’esempio seguente mostra i frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 
 >[!CAUTION]
 >
->La schermata seguente è stata ripresa dal sito WKND utilizzando Adobe Experience Manager come servizio Cloud.
+>La schermata seguente è stata ripresa dal sito WKND utilizzando Adobe Experience Manager come Cloud Service.
 
 ![Cartelle per i frammenti esperienza](assets/xf-folders.png)
 
 ## Creazione e configurazione di una cartella per i frammenti esperienza {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
-Per creare e configurare una cartella per i frammenti esperienza, si consiglia di:
+Per creare e configurare una cartella per i frammenti esperienza, è consigliabile:
 
-1. [Create una cartella](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
+1. [Creare una cartella](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
 
-1. [Configura i modelli di frammento esperienza consentiti per la cartella](#configure-allowed-templates-folder).
+1. [Configurare i modelli di frammento esperienza consentiti per la cartella](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->È anche possibile configurare i modelli [consentiti per l’istanza](#configure-allowed-templates-instance), ma questo metodo **non** è consigliato in quanto i valori possono essere sovrascritti al momento dell’aggiornamento.
+>It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
 
 ### Configurare i modelli consentiti per la cartella {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
->Questo è il metodo consigliato per specificare i modelli **** consentiti, poiché i valori non verranno sovrascritti al momento dell&#39;aggiornamento.
+>Si tratta del metodo consigliato per specificare i **[!UICONTROL modelli consentiti]**, poiché i valori non verranno sovrascritti in seguito a un aggiornamento.
 
 1. Individua la cartella **[!UICONTROL Frammenti esperienza]** necessaria.
 
-1. Selezionate la cartella, quindi **[!UICONTROL Proprietà]**.
+1. Seleziona la cartella e quindi **[!UICONTROL Proprietà]**.
 
-1. Specificate l&#39;espressione regolare per recuperare i modelli richiesti nel campo Modelli **** consentiti.
+1. Specifica l’espressione regolare per recuperare i modelli richiesti nel campo **[!UICONTROL Modelli consentiti]**.
 
-   Ad esempio:
+   Esempio:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
-   ![Proprietà frammento esperienza - Modelli consentiti](assets/xf-folders-templates.png)
+   ![Proprietà dei frammenti esperienza - Modelli consentiti](assets/xf-folders-templates.png)
 
-1. Selezionate **[!UICONTROL Salva e chiudi]**.
+1. Seleziona **[!UICONTROL Salva e chiudi]**.
 
-### Configurare i modelli consentiti per la tua istanza {#configure-allowed-templates-instance}
+### Configurare i modelli consentiti per l’istanza {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->Non è consigliabile modificare i modelli **** consentiti con questo metodo, in quanto i modelli specificati potrebbero essere sovrascritti al momento dell&#39;aggiornamento.
+>It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
 >
->Utilizzare questa finestra di dialogo solo a scopo informativo.
+>Utilizza questa finestra di dialogo solo a scopo informativo.
 
-1. Navigate to the required **[!UICONTROL Experience Fragments]** console.
+1. Individua la console **[!UICONTROL Frammenti esperienza]** necessaria.
 
 1. Seleziona le **[!UICONTROL opzioni di configurazione]**:
 
@@ -150,20 +153,20 @@ Per creare e configurare una cartella per i frammenti esperienza, si consiglia d
 
 Per creare un frammento esperienza:
 
-1. Select **[!UICONTROL Experience Fragments]** from the Global Navigation.
+1. Seleziona **[!UICONTROL Frammenti esperienza]** nel pannello di navigazione globale.
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Passate alla cartella desiderata e selezionate **[!UICONTROL Crea]**.
+1. Individua la cartella desiderata e seleziona **[!UICONTROL Crea]**.
 
-1. Selezionate **[!UICONTROL Frammento]** esperienza per aprire la procedura guidata **[!UICONTROL Crea frammento]** esperienza.
+1. Seleziona **[!UICONTROL Frammento esperienza]** per aprire la procedura guidata **[!UICONTROL Crea frammento esperienza]**.
 
-   Seleziona il **[!UICONTROL Modello]** richiesto, quindi fai clic su **[!UICONTROL Avanti]**:
+   Seleziona il **[!UICONTROL modello]** appropriato, quindi **[!UICONTROL Avanti]**:
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
 
-1. Immetti le **[!UICONTROL Proprietà]** per il Frammento di esperienza.
+1. Inserisci le **[!UICONTROL proprietà]** per il frammento esperienza.
 
    Il campo **[!UICONTROL Titolo]** è obbligatorio. Se il campo **[!UICONTROL Nome]** è lasciato vuoto, verrà derivato dal **[!UICONTROL Titolo]**.
 
@@ -212,7 +215,8 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
    * **[!UICONTROL Nome]**; se lasciato vuoto, verrà derivato dal Titolo
    * **[!UICONTROL Descrizione]**
    * **[!UICONTROL Tag varianti]**
-   ![xf-authoring-06](assets/xf-authoring-07.png)
+
+   ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. Conferma con **[!UICONTROL Fine]** (icona di spunta); la nuova variante viene visualizzata nel pannello:
 
@@ -224,7 +228,7 @@ A questo punto puoi utilizzare il frammento esperienza durante l’authoring del
 
 1. Apri la pagina da modificare.
 
-   Ad esempio: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Ad esempio: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/it/products/men.html)
 
 1. Crea un’istanza del componente Frammento esperienza trascinandolo dal browser Componenti al sistema di paragrafi della pagina:
 
@@ -232,8 +236,9 @@ A questo punto puoi utilizzare il frammento esperienza durante l’authoring del
 
 1. Aggiungi il frammento esperienza effettivo all’istanza del componente, eseguendo una delle seguenti operazioni:
 
-   * Trascina il frammento richiesto dal browser Risorse e rilascialo sul componente
+   * Trascina il frammento richiesto dal browser Risorse e rilascialo nel componente
    * Seleziona **[!UICONTROL Configura]** nella barra degli strumenti del componente e specifica il frammento da utilizzare, quindi conferma con **Fine** (spunta)
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -260,7 +265,7 @@ Per creare un nuovo blocco predefinito:
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. Inserisci il nome del **[!UICONTROL Blocco predefinito]** e conferma con **[!UICONTROL Converti]**:
+1. Inserisci il nome del **[!UICONTROL blocco predefinito]** e conferma con **[!UICONTROL Converti]**:
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
@@ -272,7 +277,7 @@ Per creare un nuovo blocco predefinito:
 
 Il blocco predefinito è visibile nella scheda **[!UICONTROL Blocchi predefiniti]**. Per ogni blocco sono disponibili le azioni seguenti:
 
-* Vai a principale: apri la variante principale in una nuova scheda
+* Vai a principale: apre la variante principale in una nuova scheda
 * Rinomina
 * Elimina
 
@@ -280,11 +285,11 @@ Il blocco predefinito è visibile nella scheda **[!UICONTROL Blocchi predefiniti
 
 ### Utilizzo di un blocco predefinito {#using-a-building-block}
 
-Puoi trascinare il blocco predefinito sul sistema di paragrafi di qualsiasi frammento, così come si fa con qualsiasi componente.
+Puoi trascinare il blocco predefinito nel sistema di paragrafi di qualsiasi frammento, come un qualsiasi altro componente.
 
-## La rappresentazione HTML semplice {#the-plain-html-rendition}
+## Rendering HTML semplice {#the-plain-html-rendition}
 
-Utilizzando il `.plain.` selettore nell’URL, potete accedere alla rappresentazione HTML semplice.
+Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
 
 Questo è disponibile dal browser, ma il suo scopo principale è consentire ad altre applicazioni (ad esempio, app Web di terze parti, implementazioni mobili personalizzate) di accedere direttamente al contenuto del frammento esperienza, utilizzando solo l&#39;URL.
 
@@ -292,7 +297,7 @@ La rappresentazione HTML semplice aggiunge protocollo, host e percorso contestua
 
 * del tipo: `src`, `href`oppure `action`
 
-* o terminare con: `-src`, oppure `-href`
+* o terminare con: `-src`oppure `-href`
 
 Ad esempio:
 
@@ -304,9 +309,9 @@ Ad esempio:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Esportazione di frammenti esperienza {#exporting-experience-fragments}
+## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
 Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
 
-Per l&#39;esportazione in Adobe Target, viene utilizzato HTML. Per informazioni complete, consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md).
+Per l’esportazione in  Adobe Target, viene utilizzato HTML. Per informazioni complete, consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md).
 
