@@ -4,13 +4,16 @@ description: Scoprite come estrarre le risorse per la modifica e archiviarle nuo
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
 
 # Archiviazione e estrazione di file in risorse {#check-in-and-check-out-files-in-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di estrarre le risorse per modificarle e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non riaccedi a Risorse AEM. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
+Adobe Experience Manager (AEM) Assets consente di estrarre le risorse per modificarle e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non riaccedete la risorsa a  AEM Assets. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
 Per poter eseguire il check-out o il check-in delle risorse, è necessario disporre dell’accesso in scrittura.
 
@@ -54,13 +57,13 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   La risorsa modificata viene archiviata in Risorse AEM ed è disponibile per la modifica da parte di altri utenti.
+   La risorsa modificata viene archiviata in  AEM Assets ed è disponibile per la modifica da parte di altri utenti.
 
 ## Check-in forzato {#forced-check-in}
 
 Gli amministratori possono archiviare le risorse sottoposte a check-in da parte di altri utenti.
 
-1. Accedi a Risorse AEM come amministratore.
+1. Accedete a  AEM Assets come amministratore.
 1. Nell’interfaccia utente delle risorse, seleziona una o più risorse che sono state sottoposte a check-out da parte di altri utenti.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
