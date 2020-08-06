@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Personalizzazione delle azioni attività {#customizing-task-actions}
 
-L&#39;area di lavoro Moduli AEM consente agli utenti di personalizzare le azioni dell&#39;attività. Prima di personalizzare le azioni dell&#39;attività, accertatevi di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+’area di lavoro di AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell&#39;attività, accertatevi di seguire i passaggi elencati in [Generico per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
 ## Personalizzazione dello stile del testo {#customizing-text-style}
 
@@ -138,7 +138,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
 
 ### Menu a comparsa delle azioni elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. È necessario che il pacchetto di sviluppo personalizzate gli elementi del menu a comparsa Azioni dell&#39;area di lavoro di AEM Forms . Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione  codice dell&#39;area di lavoro AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiate /libs/ws/js/runtime/templates/task.html per `/apps/ws/js/runtime/templates/task.html`sostituire il frammento di codice seguente:
 
