@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Utilizzare i rapporti sulle transazioni per prendere una decisione informata sull&#39;utilizzo del prodotto e sul ribilanciamento degli investimenti in hardware e software.
 
-I rapporti sulle transazioni consentono di acquisire e tenere traccia del numero di moduli inviati, documenti elaborati e documenti sottoposti a rendering. L&#39;obiettivo dietro il monitoraggio di queste transazioni è quello di prendere una decisione informata sull&#39;utilizzo del prodotto e sul ribilanciamento degli investimenti in hardware e software. Per ulteriori informazioni, vedere [AEM Forms Panoramica](/help/forms/using/transaction-reports-overview.md)dei rapporti sulle transazioni.
+I rapporti sulle transazioni consentono di acquisire e tenere traccia del numero di moduli inviati, documenti elaborati e documenti sottoposti a rendering. L&#39;obiettivo dietro il monitoraggio di queste transazioni è quello di prendere una decisione informata sull&#39;utilizzo del prodotto e sul ribilanciamento degli investimenti in hardware e software. Per ulteriori informazioni, vedere [Panoramica](/help/forms/using/transaction-reports-overview.md)dei rapporti sulle transazioni AEM Forms.
 
 ## Impostazione dei rapporti sulle transazioni  {#setting-up-transaction-reports}
 
-La funzione Rapporti sulle transazioni è disponibile come parte del pacchetto del componente aggiuntivo dei moduli AEM. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo su tutte le istanze di creazione e pubblicazione, consultate [Installazione e configurazione di moduli](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)AEM. Dopo aver installato il pacchetto del componente aggiuntivo dei moduli AEM, effettuate le seguenti operazioni:
+La funzione Report transazione è disponibile come parte del pacchetto del componente aggiuntivo AEM moduli. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo in tutte le istanze di creazione e pubblicazione, vedere [Installazione e configurazione AEM moduli](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Dopo aver installato il pacchetto del componente aggiuntivo per i moduli AEM, effettuate le seguenti operazioni:
 
 * Abilita replica inversa su tutte le istanze di pubblicazione
 * Abilita rapporti sulle transazioni
@@ -34,9 +34,10 @@ La funzione Rapporti sulle transazioni è disponibile come parte del pacchetto d
 
 >[!NOTE]
 >
->* I rapporti sulle transazioni AEM Forms non supportano topologie che contengono solo istanze di pubblicazione.
+>*  rapporti sulle transazioni AEM Forms non supportano topologie che contengono solo istanze di pubblicazione.
 >* Prima di utilizzare il reporting delle transazioni, assicurarsi che la replica inversa sia abilitata per tutte le istanze di pubblicazione.
 >* I dati della transazione vengono replicati in modo inverso da un&#39;istanza di pubblicazione solo all&#39;autore o all&#39;istanza di elaborazione corrispondente. L&#39;istanza di creazione o elaborazione non può replicare ulteriormente i dati in un&#39;altra istanza.
+
 >
 
 
@@ -47,9 +48,9 @@ I rapporti sulle transazioni utilizzano la replica inversa per consolidare il co
 
 ### Abilita rapporti sulle transazioni {#enable-transaction-reports}
 
-I rapporti sulle transazioni sono disattivati per impostazione predefinita. Potete abilitare i rapporti dalla console Web di AEM. per abilitare i rapporti sulle transazioni in un ambiente AEM Forms, effettua i seguenti passaggi su tutte le istanze di creazione e pubblicazione:
+I rapporti sulle transazioni sono disattivati per impostazione predefinita. È possibile abilitare i rapporti da AEM console Web. per abilitare i rapporti sulle transazioni in un ambiente AEM Forms , eseguite i seguenti passaggi su tutte le istanze di creazione e pubblicazione:
 
-1. Accedete a un’istanza di AEM come amministratore. Vai a **Strumenti** > **Operazioni** > Console **** Web.
+1. Accedete a un&#39;istanza AEM come amministratore. Vai a **Strumenti** > **Operazioni** > Console **** Web.
 1. Individuare e aprire il servizio **Forms Transaction Reporting** .
 1. Selezionare la casella di controllo Registra transazioni. Fai clic su **Salva**.
 
@@ -57,7 +58,7 @@ I rapporti sulle transazioni sono disattivati per impostazione predefinita. Pote
 
 ### Fornire i diritti necessari per visualizzare un rapporto sulle transazioni {#provide-rights-to-view-a-transaction-report}
 
-Solo i membri del gruppo di amministratori di fd possono visualizzare i rapporti sulle transazioni. Per consentire a un utente di visualizzare i rapporti sulle transazioni, è necessario che gli utenti siano membri del gruppo di amministratori di fd. Per istruzioni su come rendere un utente membro di un gruppo AEM, consultate Amministrazione [di](/help/sites-administering/user-group-ac-admin.md)utenti, gruppi e diritti di accesso.
+Solo i membri del gruppo di amministratori di fd possono visualizzare i rapporti sulle transazioni. Per consentire a un utente di visualizzare i rapporti sulle transazioni, è necessario che gli utenti siano membri del gruppo di amministratori di fd. Per istruzioni su come rendere un utente membro di un gruppo di AEM, consultate Amministrazione [di](/help/sites-administering/user-group-ac-admin.md)utenti, gruppi e diritti di accesso.
 
 ### (Facoltativo) Configurare il periodo di scaricamento delle transazioni e le caselle in uscita {#optional-configure-transaction-flush-period-and-outboxes}
 
@@ -77,22 +78,22 @@ Inverti replica copia i dati delle transazioni nella casella in uscita predefini
 
 Potete visualizzare i rapporti sulle transazioni sulle istanze di creazione o pubblicazione. Il rapporto sulle transazioni nell&#39;istanza di creazione fornisce una somma aggregata di tutte le transazioni che avvengono nelle istanze di creazione e pubblicazione configurate. Il rapporto sulle transazioni nell&#39;istanza di pubblicazione fornisce un conteggio delle transazioni che avvengono solo nell&#39;istanza di pubblicazione sottostante. Per visualizzare il rapporto, effettuate le seguenti operazioni:
 
-1. Accedete al server AEM Forms in `https://[hostname]:[port]`.
-1. Passare a **Strumenti** > **Moduli** > **Visualizza rapporto** transazioni.
+1. Effettuate l&#39;accesso al server AEM Forms  all&#39;indirizzo `https://[hostname]:[port]`.
+1. Passare a **Strumenti** > **Forms** > **Visualizza rapporto** transazioni.
 
 ## Informazioni sul rapporto {#understanding-the-report}
 
-AEM Forms visualizza i rapporti sulle transazioni a partire dalla data configurata, come mostrato in un rapporto di riepilogo seguente:
+ AEM Forms visualizza i rapporti sulle transazioni a partire dalla data configurata, come mostrato in un rapporto di riepilogo seguente:
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
 * Utilizzare le opzioni **Reimposta la data su oggi** per ripristinare i record delle transazioni. Quando reimposti la data odierna, tutti i record di transazione precedenti vengono persi. Quando reimpostate la data su un’istanza di creazione, la modifica non influisce sui rapporti sulle transazioni nelle istanze di pubblicazione e viceversa.
 * Utilizzate le transazioni **Mostra solo le istanze** Pubblica per visualizzare tutte le transazioni che si sono verificate solo nell&#39;istanza di pubblicazione configurata o nella farm di pubblicazione.
-* Utilizzare le categorie: **Documento elaborato**, **documenti sottoposti a rendering** e **moduli inviati** per visualizzare le transazioni corrispondenti. Per il tipo di transazioni contabilizzate in queste categorie, vedere API [Report transazioni](/help/forms/using/transaction-reports-billable-apis.md)fatturabili.
+* Utilizzare le categorie: **Documento elaborato**, **Documenti sottoposti a rendering** e **Forms inviato** per visualizzare le transazioni corrispondenti. Per il tipo di transazioni contabilizzate in queste categorie, vedere API [Report transazioni](/help/forms/using/transaction-reports-billable-apis.md)fatturabili.
 
 ## Visualizza registri di reporting delle transazioni {#view-transaction-reporting-logs}
 
-Il reporting delle transazioni inserisce tutte le informazioni visualizzate nel rapporto e alcune informazioni aggiuntive nei registri. Le informazioni fornite nei registri sono utili per gli utenti avanzati. Ad esempio, i registri dividono le transazioni in più categorie granulari rispetto a tre categorie consolidate visualizzate nel rapporto. I file di registro sono disponibili nel `error.log` file nella `/crx-repository/logs/` directory. I registri sono disponibili anche se non attivi i rapporti sulle transazioni dalla console Web di AEM.
+Il reporting delle transazioni inserisce tutte le informazioni visualizzate nel rapporto e alcune informazioni aggiuntive nei registri. Le informazioni fornite nei registri sono utili per gli utenti avanzati. Ad esempio, i registri dividono le transazioni in più categorie granulari rispetto a tre categorie consolidate visualizzate nel rapporto. I file di registro sono disponibili nel `error.log` file nella `/crx-repository/logs/` directory. I registri sono disponibili anche se non si abilitano i rapporti sulle transazioni da AEM console Web.
 
 ## Related Articles {#related-articles}
 
