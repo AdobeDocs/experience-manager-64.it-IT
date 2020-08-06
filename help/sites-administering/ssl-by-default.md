@@ -11,17 +11,20 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
 # SSL per impostazione predefinita{#ssl-by-default}
 
-Nel tentativo di migliorare costantemente la sicurezza di AEM, Adobe ha introdotto una funzione denominata SSL per impostazione predefinita. Lo scopo è incoraggiare l&#39;uso di HTTPS per connettersi alle istanze AEM.
+Nel tentativo di migliorare continuamente la sicurezza dei AEM,  Adobe ha introdotto una funzione chiamata SSL By Default. Lo scopo è incoraggiare l&#39;uso di HTTPS per connettersi alle istanze AEM.
 
 ## Abilitazione di SSL per impostazione predefinita {#enabling-ssl-by-default}
 
-Per iniziare a configurare SSL per impostazione predefinita, fai clic sul messaggio Inbox corrispondente nella schermata iniziale di AEM. Per raggiungere la casella in entrata, premere l&#39;icona a forma di campana nell&#39;angolo superiore destro dello schermo. Quindi fate clic su **Visualizza tutto**. Verrà visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
+Per iniziare a configurare SSL per impostazione predefinita, fai clic sul messaggio Inbox corrispondente nella schermata iniziale AEM. Per raggiungere la casella in entrata, premere l&#39;icona a forma di campana nell&#39;angolo superiore destro dello schermo. Quindi fate clic su **Visualizza tutto**. Verrà visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
 
 Nell&#39;elenco, selezionare e aprire l&#39;avviso **Configura HTTPS** :
 
@@ -29,7 +32,7 @@ Nell&#39;elenco, selezionare e aprire l&#39;avviso **Configura HTTPS** :
 
 >[NOTA!]
 >
->Se l&#39;avviso **Configura HTTPS** non è presente nella Posta in arrivo, puoi accedere direttamente alla procedura guidata HTTPS andando a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Se l&#39;avviso **Configura HTTPS** non è presente nella Posta in arrivo, è possibile accedere direttamente alla procedura guidata HTTPS andando a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
 Per questa funzione è stato creato un utente di servizio denominato **ssl-service** . Una volta aperto l’avviso, verrà visualizzata la seguente procedura guidata di configurazione:
 
@@ -53,15 +56,15 @@ Per questa funzione è stato creato un utente di servizio denominato **ssl-servi
 
 Sono disponibili tre modi per automatizzare SSL per impostazione predefinita.
 
-### Tramite HTTP POST {#via-http-post}
+### Tramite POST HTTP {#via-http-post}
 
-Il primo metodo prevede l&#39;invio al server SSLSetup utilizzato dalla configurazione guidata:
+Il primo metodo prevede l&#39;invio al server SSLSetup utilizzato dalla procedura guidata di configurazione:
 
 ```shell
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Potete utilizzare il payload seguente nel POST per automatizzare la configurazione:
+Puoi utilizzare il payload seguente nel tuo POST per automatizzare la configurazione:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -90,9 +93,9 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-Il servlet, come qualsiasi servlet POST Sling, risponderà con 200 OK o un codice di stato HTTP di errore. Potete trovare i dettagli sullo stato nel corpo HTML della risposta.
+Il servlet, come qualsiasi servlet POST Sling, risponderà con 200 OK o con un codice di stato HTTP di errore. Potete trovare i dettagli sullo stato nel corpo HTML della risposta.
 
-Di seguito sono riportati alcuni esempi di risposta corretta e di errore.
+Di seguito sono riportati alcuni esempi sia di una risposta corretta che di un errore.
 
 **ESEMPIO** DI SUCCESSO (stato = 200):
 
@@ -207,7 +210,7 @@ Di seguito sono riportati i parametri che potete usare per modificare le varie i
 
 * `-F "truststorePassword=password"` - la password del trust store;
 
-* `-F "truststorePasswordConfirm=password"` - confermare la password del trust store;
+* `-F "truststorePasswordConfirm=password"` - confermare la password dell&#39;archivio attendibili;
 
 * `-F "privatekeyFile=@localhostprivate.der"` - specificare la chiave privata;
 
