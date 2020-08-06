@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ Affinché una risorsa caricata possa essere considerata un’immagine panoramica
 
 * Proporzioni di 2.
 
-   È possibile ignorare l&#39;impostazione predefinita di 2 proporzioni in **[!UICONTROL CRXDE Lite]** nel modo seguente:
+   Potete ignorare l’impostazione predefinita delle proporzioni di 2 in **[!UICONTROL CRXDE Lite]** nel modo seguente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -41,11 +44,11 @@ Per caricare le risorse da usare con il visualizzatore immagini panoramiche, con
 
 ## Configurazione di Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Affinché il visualizzatore di immagini panoramiche funzioni correttamente in AEM, è necessario sincronizzare i predefiniti per visualizzatori di immagini panoramiche con i metadati specifici di Dynamic Media Classic e Dynamic Media Classic, in modo che i predefiniti per visualizzatori vengano aggiornati nel JCR. A questo scopo, configura Dynamic Media Classic nel modo seguente:
+Affinché il visualizzatore di immagini panoramiche funzioni correttamente all’interno AEM, è necessario sincronizzare i predefiniti per visualizzatori di immagini panoramiche con i metadati specifici di Dynamic Media Classic e Dynamic Media Classic, in modo che i predefiniti per visualizzatori vengano aggiornati nel JCR. A questo scopo, configura Dynamic Media Classic nel modo seguente:
 
 1. [Accedi alla tua istanza di Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ogni account della società.
 
-1. Nell’angolo superiore destro della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
+1. Nell’angolo in alto a destra della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
 1. Nella pagina Pubblica **[!UICONTROL su]** Image Server, selezionate Server **[!UICONTROL immagini dal menu a discesa Contesto]** di **** pubblicazione accanto alla parte superiore.
 
 1. Nella stessa pagina Pubblica **[!UICONTROL su]** Image Server, individuate l’intestazione Attributi **** richiesta.
@@ -55,13 +58,14 @@ Affinché il visualizzatore di immagini panoramiche funzioni correttamente in AE
 
    >[!NOTE]
    >
-   >Sono supportate solo le immagini che rientrano nella dimensione massima consentita. Le richieste di immagini che superano il limite di dimensione genereranno una risposta di 403.
+   >Sono supportate solo le immagini che rientrano nella dimensione massima consentita per le immagini. Le richieste di immagini che superano il limite di dimensione genereranno una risposta di 403.
 
 1. Nell&#39;intestazione **Attributi richiesta]** , effettuate le seguenti operazioni:
 
    * Impostate **[!UICONTROL Richiedi modalità]** offuscamento su **[!UICONTROL Disabilitata]**.
    * Impostate **[!UICONTROL Richiedi modalità]** di blocco su **[!UICONTROL Disattivato]**.
-   Queste impostazioni sono necessarie per l’utilizzo del componente **[!UICONTROL Elementi multimediali]** panoramici in AEM.
+
+   Queste impostazioni sono necessarie per utilizzare il componente **[!UICONTROL Panoramic Media]** in AEM.
 
 1. Nella parte inferiore della pagina Pubblica **[!UICONTROL su]** Image Server, toccate **[!UICONTROL Salva]** a sinistra.
 
@@ -71,11 +75,11 @@ Affinché il visualizzatore di immagini panoramiche funzioni correttamente in AE
 
 Se un’immagine viene rilasciata nel componente **[!UICONTROL Panoramic Media]** in WCM e il segnaposto del componente viene compresso, è possibile risolvere i seguenti problemi:
 
-* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Consultate le impostazioni Limite *dimensioni immagine risposta (Reply Image Size Limit) in* Configurazione di Dynamic Media Classic (Scene7) [](#configuring-dynamic-media-classic-scene).
+* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Consultate le impostazioni Limite *dimensioni immagine risposta in* Configurazione di Dynamic Media Classic (Scene7) [](#configuring-dynamic-media-classic-scene).
 
 * Per un blocco ** non valido sulla risorsa o un errore *di* analisi visualizzato sulla pagina, controllate **[!UICONTROL Richiedi modalità]** offuscamento e Modalità **[!UICONTROL blocco]** richiesta per assicurarsi che siano disattivate.
 * Per un errore canvas contaminato, imposta un percorso per il file di definizione del set di **[!UICONTROL regole e Annulla validità CTN]** per le richieste precedenti per la risorsa immagine.
-* Se dopo una richiesta di immagini con dimensioni superiori al limite supportato la qualità dell’immagine risulta molto bassa, verificate che l’impostazione **[!UICONTROL JPEG Encoding Attributes (Attributi di codifica JPEG) > Quality (Qualità]** ) non sia vuota. Un&#39;impostazione tipica per il campo **[!UICONTROL Qualità]** è `95`. L’impostazione è disponibile nella pagina Pubblica **[!UICONTROL su]** Image Server. Per accedere alla pagina, consultate [Configurazione di Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
+* Se dopo una richiesta di immagini con dimensioni superiori al limite supportato, la qualità dell’immagine diventa molto bassa, verificate che l’impostazione **[!UICONTROL JPEG Encoding Attributes (Attributi di codifica JPEG) > Quality (Qualità]** ) non sia vuota. Un&#39;impostazione tipica per il campo **[!UICONTROL Qualità]** è `95`. L’impostazione è disponibile nella pagina Pubblica **[!UICONTROL su]** Image Server. Per accedere alla pagina, consultate [Configurazione di Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 ## Anteprima delle immagini panoramiche {#previewing-panoramic-images}
 
