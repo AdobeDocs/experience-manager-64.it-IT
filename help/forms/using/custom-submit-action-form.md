@@ -1,8 +1,8 @@
 ---
 title: Scrittura di un'azione di invio personalizzata per i moduli adattivi
 seo-title: Scrittura di un'azione di invio personalizzata per i moduli adattivi
-description: AEM Forms consente di creare un'azione di invio personalizzata per i moduli adattivi. Questo articolo descrive la procedura per aggiungere un'azione Invia personalizzata per i moduli adattivi.
-seo-description: AEM Forms consente di creare un'azione di invio personalizzata per i moduli adattivi. Questo articolo descrive la procedura per aggiungere un'azione Invia personalizzata per i moduli adattivi.
+description: ' AEM Forms consente di creare un''azione di invio personalizzata per i moduli adattivi. Questo articolo descrive la procedura per aggiungere un''azione Invia personalizzata per i moduli adattivi.'
+seo-description: ' AEM Forms consente di creare un''azione di invio personalizzata per i moduli adattivi. Questo articolo descrive la procedura per aggiungere un''azione Invia personalizzata per i moduli adattivi.'
 uuid: c98947b1-21db-47d0-8f94-2ab668a477fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +85,7 @@ Se l’azione non fornisce un percorso in avanti, il servlet Invia reindirizzer�
 >
 >Un autore fornisce l’URL di reindirizzamento (utilizzando la configurazione della pagina di ringraziamento). [Le azioni](/help/forms/using/configuring-submit-actions.md) di invio OOTB utilizzano l&#39;URL di reindirizzamento per reindirizzare il browser dalla risorsa a cui fa riferimento il percorso successivo.
 >
->È possibile scrivere un&#39;azione di invio personalizzata per inoltrare una richiesta a una risorsa o a un servlet. Adobe consiglia di reindirizzare la richiesta all&#39;URL di reindirizzamento quando l&#39;elaborazione viene completata con lo script che esegue la gestione delle risorse per il percorso successivo.
+>È possibile scrivere un&#39;azione di invio personalizzata per inoltrare una richiesta a una risorsa o a un servlet.  Adobe consiglia che lo script che esegue la gestione delle risorse per il percorso successivo reindirizzi la richiesta all&#39;URL di reindirizzamento al termine dell&#39;elaborazione.
 
 ## Submit action {#submit-action}
 
@@ -100,7 +103,7 @@ Un’azione Invia è una sling:Folder che include quanto segue:
 
 Effettuare le seguenti operazioni per creare un&#39;azione Invia personalizzata che salva i dati nell&#39;archivio CRX e quindi invia un&#39;e-mail. Il modulo adattivo contiene il contenuto OOTB Submit action Store (obsoleto) che salva i dati nell&#39;archivio CRX. CQ fornisce inoltre un&#39;API [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) che può essere utilizzata per inviare e-mail. Prima di utilizzare l&#39;API Mail, [configurate](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?#Configuring the Mail Service) il servizio Day CQ Mail tramite la console di sistema. È possibile riutilizzare l&#39;azione Archivia contenuto (obsoleto) per memorizzare i dati nella directory archivio. L’azione Contenuto store (obsoleto) è disponibile nel percorso /libs/fd/af/components/guidesubmittype/store dell’archivio CRX.
 
-1. Accedete a CRXDE Lite all&#39;URL https://&lt;server>:&lt;porta>/crx/de/index.jsp. Create un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Create la cartella custom_submit_action se non esiste già.
+1. Accedete al CRXDE Lite all&#39;URL https://&lt;server>:&lt;porta>/crx/de/index.jsp. Create un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Create la cartella custom_submit_action se non esiste già.
 
    ![Screenshot raffigurante la creazione di un nodo con la proprietà sling:Folder](assets/step1.png)
 
@@ -112,7 +115,7 @@ Effettuare le seguenti operazioni per creare un&#39;azione Invia personalizzata 
 
 1. **Immettete i campi di configurazione per richiedere all’autore la configurazione dell’e-mail.**
 
-   Il modulo adattivo fornisce inoltre un&#39;azione E-mail che invia e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Andate a /libs/fd/af/components/guidesubmittype/email/dialog. Copiare i nodi all&#39;interno del nodo cq:dialog nel nodo cq:dialog dell&#39;azione di invio (/apps/custom_submit_action/store_and_email/dialog).
+   Il modulo adattivo fornisce inoltre un&#39;azione E-mail che invia messaggi e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Andate a /libs/fd/af/components/guidesubmittype/email/dialog. Copiare i nodi all&#39;interno del nodo cq:dialog nel nodo cq:dialog dell&#39;azione di invio (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizzazione dell’azione e-mail](assets/step3.png)
 
@@ -136,13 +139,13 @@ Effettuare le seguenti operazioni per creare un&#39;azione Invia personalizzata 
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   Per inviare l&#39;e-mail, il codice legge l&#39;indirizzo e-mail del destinatario dalla configurazione. Per recuperare il valore di configurazione nello script dell&#39;azione, leggere le proprietà della risorsa corrente utilizzando il codice seguente. Allo stesso modo potete leggere gli altri file di configurazione.
+   Per inviare l&#39;e-mail, il codice legge l&#39;indirizzo e-mail del destinatario dalla configurazione. Per recuperare il valore di configurazione nello script dell&#39;azione, leggere le proprietà della risorsa corrente utilizzando il codice seguente. Allo stesso modo, potete leggere gli altri file di configurazione.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
    `String mailTo = properties.get("mailTo");`
 
-   Infine, utilizzate l&#39;API CQ Mail per inviare l&#39;e-mail. Utilizzate la classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) per creare l&#39;oggetto Email come illustrato di seguito:
+   Infine, utilizzate l&#39;API di CQ Mail per inviare l&#39;e-mail. Utilizzate la classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) per creare l&#39;oggetto Email come illustrato di seguito:
 
    >[!NOTE]
    >
