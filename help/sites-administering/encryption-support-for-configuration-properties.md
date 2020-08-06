@@ -11,6 +11,9 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 1%
 
 ---
 
@@ -29,19 +32,19 @@ Questa funzione consente di memorizzare tutte le proprietà di configurazione OS
 
 ## Abilitazione del supporto per la crittografia {#enabling-encryption-support}
 
-Questi passaggi mostrano come crittografare la password SMTP per il servizio Mail. Per una proprietà OSGI che si desidera cifrare, è possibile completare i passaggi seguenti.
+Questi passaggi mostrano come crittografare la password SMTP per il servizio Mail. Per una proprietà OSGI che si desidera cifrare, è possibile completare i passaggi indicati di seguito.
 
-1. Andate alla console Web di AEM all&#39;indirizzo *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Andate alla console Web AEM all&#39;indirizzo *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Nell&#39;angolo in alto a sinistra, andate a **Main - Crypto Support**
 
-   ![chlimage_1-321](assets/chlimage_1-325.png)
+   ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Viene visualizzata la pagina del supporto **** della console Web di Adobe Experience Manager.
+1. Viene visualizzata la pagina **Adobe Experience Manager Web Console Crypto Support** .
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. Nel campo Testo **** normale, immettere il testo dei dati sensibili da proteggere.
-1. Selezionate **Proteggi**. Il testo protetto viene visualizzato come testo crittografato.
+1. Selezionate **Protect**. Il testo protetto viene visualizzato come testo crittografato.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
