@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Se si desidera utilizzare alcune delle proprietà di un modulo adattivo esistent
 
 >[!NOTE]
 >
->Lo stato e i dettagli della revisione non vengono copiati. Ad esempio, se il modulo adattivo viene pubblicato e successivamente copiato, lo stato del modulo adattivo incollato non viene pubblicato. Analogamente, se una risorsa copiata è in fase di revisione, la risorsa incollata non è nella stessa revisione.
+>Lo stato e i dettagli della revisione non vengono copiati. Ad esempio, se il modulo adattivo viene pubblicato e successivamente copiato, lo stato del modulo adattivo incollato non viene pubblicato. Analogamente, se una risorsa copiata è in fase di revisione, la risorsa incollata non si trova nella stessa revisione.
 
 ### Copiare un modulo adattivo {#copy-an-adaptive-form}
 
@@ -49,7 +52,7 @@ Copiate un modulo adattivo utilizzando uno dei seguenti approcci:
 
 Facendo clic sull’azione di copia, la modalità di selezione viene chiusa automaticamente e l’icona Incolla ![aem6forms_paste](assets/aem6forms_paste.png) diventa visibile. Passate ora al percorso della cartella desiderato e fate clic sull&#39;icona Incolla ![aem6forms_paste](assets/aem6forms_paste.png) per incollare il modulo adattivo copiato.
 
-Se si incolla nella stessa cartella o in un altro file con lo stesso nome di nodo (con il quale è memorizzato nell&#39;archivio CRX) esiste in questa cartella di destinazione, 1 viene aggiunto al suffisso (ad esempio, myaf diventa myaf1 e se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
+Se incollate nella stessa cartella o in un altro file con lo stesso nome di nodo (con il quale è memorizzato nell’archivio CRX) già presente nella cartella di destinazione, 1 viene aggiunto al suffisso (ad esempio, myaf diventa myaf1 e se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
 
 Dopo aver fatto clic sull&#39;icona Incolla ![aem6forms_paste](assets/aem6forms_paste.png) , il file viene nuovamente nascosto. È possibile incollare una sola volta. Per creare nuovamente una copia della stessa risorsa, copiatela di nuovo.
 
@@ -61,7 +64,7 @@ Il contenuto di un modulo adattivo incollato può essere modificato utilizzando 
 
    È possibile modificare le proprietà dei metadati del modulo adattivo, ad esempio titolo e descrizione. Per ulteriori dettagli sulle proprietà dei metadati e sulle modalità di modifica, vedere [Gestione dei metadati dei moduli](/help/forms/using/manage-form-metadata.md)
 
-1. **Modificare XFA/XSD per i moduli adattivi basati su XFA/XSD:**
+1. **Modificare XFA/XSD per Forms adattivo basato su XFA/XSD:**
 
    È possibile modificare l&#39;XFA/XSD utilizzato nei moduli adattivi. Per sapere come modificare questi moduli adattivi, vedere [Gestione dei metadati dei moduli](/help/forms/using/manage-form-metadata.md)
 
