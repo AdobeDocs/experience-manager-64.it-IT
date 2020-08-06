@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 94%
 
 ---
 
@@ -34,11 +37,14 @@ In questo documento vengono illustrati i vari elementi che compongono le campagn
 La gestione delle campagne consiste di vari elementi:
 
 * **Marchi**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+In AEM, i marchi sono l&#39;unità di livello principale e costituiscono una raccolta di 
+**Campagne**.
 
-* **Campagne** Una campagna è una raccolta di singole **Esperienze**.
+* **Campagne** Una campagna è un insieme di singoli 
+**Esperienze**.
 
-* **Esperienze** Le esperienze sono composte di contenuti mirati, presentati al visitatore in specifici **punti di contatto**. Sono disponibili diversi tipi di esperienze:
+* **Esperienze** I contenuti mirati formano le varie esperienze, presentate al visitatore in 
+**Punti di contatto**. Sono disponibili diversi tipi di esperienze:
 
    * **Teaser**
       [Le pagine o i paragrafi teaser](#teasers) vengono utilizzati per indirizzare alcuni **segmenti** di visitatori verso contenuti pertinenti in base ai loro interessi.
@@ -47,6 +53,7 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * presentare all’utente diverse opzioni;
       * mostrare un solo paragrafo teaser in base al segmento del visitatore in questione, ad esempio a seconda dell’età del visitatore;
+
       In genere, una pagina teaser è impostata come azione temporanea con una specifica durata di tempo, dopodiché viene sostituita da una successiva pagina teaser.
 
    * **Newsletter**
