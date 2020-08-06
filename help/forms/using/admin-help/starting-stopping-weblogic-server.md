@@ -1,8 +1,8 @@
 ---
 title: Avvio e arresto del server WebLogic
 seo-title: Avvio e arresto del server WebLogic
-description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire i moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
-seo-description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire i moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
+description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
+seo-description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
 
 # Avvio e arresto del server WebLogic {#starting-and-stopping-weblogic-server}
 
-Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di WebLogic Server in cui si desidera distribuire i moduli AEM. Verificare che WebLogic Server sia arrestato o in esecuzione, a seconda dell&#39;attività in esecuzione.
+Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Verificare che WebLogic Server sia arrestato o in esecuzione, a seconda dell&#39;attività in esecuzione.
 
 <table> 
  <thead> 
@@ -40,7 +43,7 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di Web
    <td><p>In esecuzione</p></td> 
   </tr> 
   <tr> 
-   <td><p>Distribuzione di prodotti per moduli AEM</p></td> 
+   <td><p>Distribuzione di prodotti AEM moduli</p></td> 
    <td><p>In esecuzione</p></td> 
   </tr> 
  </tbody> 
@@ -105,7 +108,7 @@ Dopo aver chiuso WebLogic Server, è possibile chiudere il prompt dei comandi da
 1. In Struttura dominio, fare clic su Ambiente > Server.
 1. Nel riquadro a destra, fare clic sulla scheda Controllo.
 1. Selezionare il server gestito da avviare.
-1. Fare clic sul pulsante Start sotto il server gestito da avviare.
+1. Fare clic sul pulsante Start sotto il server gestito che si desidera avviare.
 
 ## Arrestare un server gestito WebLogic {#stop-a-weblogic-managed-server}
 
