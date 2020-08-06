@@ -1,6 +1,6 @@
 ---
-title: Guida rapida di Acrobat Reader DC Extensions ServiceJava API (SOAP)
-seo-title: Guida rapida di Acrobat Reader DC Extensions ServiceJava API (SOAP)
+title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
+seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Acrobat Reader DC Extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Per il servizio Acrobat Reader DC Extensions sono disponibili le seguenti procedure di avvio rapido.
 
@@ -27,11 +27,11 @@ Per il servizio Acrobat Reader DC Extensions sono disponibili le seguenti proced
 
 [Avvio rapido (modalità SOAP): Recupero delle informazioni sulle credenziali tramite l&#39;API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella sezione Programmazione con AEM Forms sono basati sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP):applicazione dei diritti di utilizzo tramite l&#39;API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
