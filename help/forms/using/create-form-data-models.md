@@ -9,6 +9,9 @@ topic-tags: integration
 discoiquuid: 3a3a6ede-52af-4c37-8a51-c2ea721a28dc
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Scoprite come creare modelli di dati dei moduli con o senza origini dati configu
 
 ![](do-not-localize/data-integeration.png)
 
-L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per creare e utilizzare modelli di dati del modulo. Un modello dati modulo si basa su origini dati per lo scambio di dati; tuttavia, è possibile creare un modello dati modulo con o senza un&#39;origine dati. Esistono due approcci per creare un modello dati da un modulo a seconda che siano state configurate origini dati:
+&#39;integrazione dei dati AEM Forms fornisce un&#39;interfaccia utente intuitiva per creare e utilizzare modelli di dati del modulo. Un modello dati modulo si basa su origini dati per lo scambio di dati; tuttavia, è possibile creare un modello dati del modulo con o senza un&#39;origine dati. Esistono due approcci per creare un modello dati da un modulo a seconda che siano state configurate origini dati:
 
 * **Utilizzo di origini** dati preconfigurate: Se sono state configurate le origini dati come descritto in [Configurare le origini](/help/forms/using/configure-data-sources.md)dati, è possibile selezionarle durante la creazione di un modello dati del modulo. Contiene tutti gli oggetti del modello dati, le proprietà e i servizi delle origini dati selezionate disponibili per l&#39;uso nel modello dati del modulo.
 
@@ -27,27 +30,28 @@ L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intu
 
 >[!NOTE]
 >
->È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
+>È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contattate il vostro amministratore AEM per diventare membro dei gruppi.
 
 ## Create form data model {#data-sources}
 
 Assicurarsi di aver configurato le origini dati che si desidera utilizzare nel modello dati del modulo come descritto in [Configura origini](/help/forms/using/configure-data-sources.md)dati. Per creare un modello dati modulo basato su origini dati configurate, effettuare le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, passa a **[!UICONTROL Forms > Integrazioni]** dati.
+1. NellAEMistanza di creazione, passa a **[!UICONTROL Forms > Integrazioni]** dati.
 1. Tap **[!UICONTROL Create > Form Data Model]**.
 1. Nella finestra di dialogo Crea modello dati modulo:
 
    * Specificare un nome per il modello dati del modulo.
    * (**Facoltativo**) Specificare titolo, descrizione e tag per il modello dati del modulo.
-   * (**Facoltativo e applicabile solo se sono configurate** origini dati) Toccate l&#39;icona di spunta accanto al campo Configurazione **[!UICONTROL origine]** dati e selezionate il nodo di configurazione in cui risiedono i servizi cloud per le origini dati da utilizzare. Limita l&#39;elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, qualsiasi database JDBC e origini dati del profilo utente AEM sono elencate per impostazione predefinita. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati provenienti da tutti i nodi di configurazione.
+   * (**Facoltativo e applicabile solo se sono configurate** origini dati) Toccate l&#39;icona di spunta accanto al campo Configurazione **[!UICONTROL origine]** dati e selezionate il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desiderate utilizzare. Limita l&#39;elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, qualsiasi database JDBC e AEM origini dati profilo utente sono elencate per impostazione predefinita. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati provenienti da tutti i nodi di configurazione.
+
    Toccate **[!UICONTROL Avanti]**.
 
 1. (**Applicabile solo se sono configurate** origini dati) Nella schermata **[!UICONTROL Seleziona origine]** dati sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
 1. Toccare **[!UICONTROL Crea]** e nella finestra di dialogo di conferma, toccare **[!UICONTROL Apri]** per aprire l&#39;editor modelli dati del modulo.
 
-Esaminiamo i diversi componenti dell’interfaccia utente dell’editor modelli dati modulo.
+Esaminiamo i diversi componenti dell&#39;interfaccia utente dell&#39;editor modelli dati del modulo.
 
-![Un modello dati modulo con tre origini dati: un servizio RESTful, un profilo utente AEM e un RDBMS](assets/fdm-ui.png)
+![Un modello dati modulo con tre origini dati: un servizio RESTful, AEM profilo utente e un RDBMS](assets/fdm-ui.png)
 
 **A. Origini** dati Elenca le origini dati in un modello dati del modulo. Espandere un&#39;origine dati per visualizzare gli oggetti e i servizi del modello dati.
 
@@ -75,7 +79,8 @@ Per aggiungere o aggiornare le origini dati a un modello dati del modulo esisten
    * Toccate l&#39;icona Sfoglia nel campo Configurazione **[!UICONTROL in base al]** contesto e selezionate un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati da aggiungere. Se non si seleziona un nodo, le configurazioni cloud residenti solo nel `global` nodo vengono elencate quando si tocca **[!UICONTROL Aggiungi origini]**.
    * Per aggiungere una nuova origine dati, toccare **[!UICONTROL Aggiungi origini]** e selezionare le origini dati da aggiungere al modello dati del modulo. Vengono visualizzate tutte le origini dati configurate nel nodo di configurazione `global` e, se presente, anche il nodo selezionato.
    * Per sostituire un&#39;origine dati esistente con un&#39;altra origine dati dello stesso tipo, toccare l&#39;icona **[!UICONTROL Modifica]** per l&#39;origine dati e selezionare dall&#39;elenco delle origini dati disponibili.
-   * Per eliminare un&#39;origine dati esistente, toccate l&#39;icona **[!UICONTROL Elimina]** per l&#39;origine dati. L&#39;icona Elimina è disattivata se un oggetto modello dati nell&#39;origine dati viene aggiunto nel modello dati del modulo.
+   * Per eliminare un&#39;origine dati esistente, toccate l&#39;icona **[!UICONTROL Elimina]** per l&#39;origine dati. L&#39;icona Elimina è disattivata se un oggetto del modello dati nell&#39;origine dati viene aggiunto nel modello dati del modulo.
+
    ![fdm-properties](assets/fdm-properties.png)
 
 1. Toccate **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
