@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 69%
 
 ---
 
@@ -34,7 +37,7 @@ Puoi quindi sincronizzare i contenuti con una consegna in Adobe Campaign. Le ist
 
 Dopo aver configurato AEM e Adobe Campaign, puoi creare contenuti per l’invio di e-mail direttamente in AEM e quindi elaborarli in Adobe Campaign.
 
-Quando crei contenuto Adobe Campaign in AEM, devi impostare un collegamento a un servizio Adobe Campaign prima di modificare il contenuto per accedere a tutte le funzionalità.
+Quando create  contenuto Adobe Campaign in AEM, dovete impostare un collegamento a un servizio  Adobe Campaign prima di modificare il contenuto per accedere a tutte le funzionalità.
 
 Esistono due casi possibili:
 
@@ -54,7 +57,7 @@ Le istruzioni dettagliate sono descritte in questo documento.
 
    >[!NOTE]
    >
-   >[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scaricate un esempio di contenuto Geometrixx da Package Share.
+   >[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scaricate contenuti di Geometrixx di esempio da Package Share.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -63,6 +66,7 @@ Le istruzioni dettagliate sono descritte in questo documento.
 
    * **E-mail di Adobe Campaign (AC 6.1)**: consente di aggiungere contenuti a un pattern predefinito prima di inviarlo ad Adobe Campaign 6.1 per la consegna.
    * **E-mail di Adobe Campaign (ACS)**: consente di aggiungere contenuti a un modello predefinito prima di inviarlo ad Adobe Campaign Standard per la consegna.
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -113,7 +117,7 @@ Inoltre, potrebbe essere necessario selezionare il modello di Adobe Campaign, mo
 Quando modifichi i contenuti, puoi inserire:
 
 * Campi di contesto di Adobe Campaign. Si tratta di campi che è possibile inserire all&#39;interno del testo e che si adattano in base ai dati del destinatario (ad esempio nome, cognome o qualsiasi dato della dimensione di destinazione).
-* Blocchi di personalizzazione per Adobe Campaign. Si tratta di blocchi di contenuto predefinito che non sono correlati ai dati del destinatario, come un logo marchio, o un collegamento a una pagina mirror.
+* Blocchi di personalizzazione per Adobe Campaign. Si tratta di blocchi di contenuto predefinito che non sono correlati ai dati del destinatario, ad esempio un logo marchio, o un collegamento a una pagina mirror.
 
 Per una descrizione dettagliata di ciascun componente, vedi [Componenti di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
@@ -121,6 +125,7 @@ Per una descrizione dettagliata di ciascun componente, vedi [Componenti di Adobe
 >
 >* Vengono presi in considerazione solo i campi della dimensione di destinazione dei **Profili** di Adobe Campaign.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. È possibile accedere a tali informazioni direttamente dall’e-mail durante la modifica.
+
 >
 
 
