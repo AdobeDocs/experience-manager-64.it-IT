@@ -1,8 +1,8 @@
 ---
-title: Console strumenti
-seo-title: Console strumenti
-description: Scopri le diverse console di strumenti in AEM.
-seo-description: Scopri le diverse console di strumenti in AEM.
+title: Console Strumenti
+seo-title: Console Strumenti
+description: Informazioni sulle diverse console Strumenti disponibili in AEM.
+seo-description: Informazioni sulle diverse console Strumenti disponibili in AEM.
 uuid: d01382f8-0c8f-4d76-9271-bed9e34b3b4b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 36%
 
 ---
 
 
-# Console strumenti{#tools-consoles}
+# Console Strumenti{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. A seconda dell’interfaccia in uso, la console **Strumenti** offre due funzioni:
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. A seconda dell’interfaccia in uso, la console **Strumenti** offre due funzioni:
 
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
@@ -44,7 +47,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Configurazioni servizi cloud<br /> </td> 
    <td> </td> 
-   <td>Contiene configurazioni correlate all' <a href="/help/sites-administering/marketing-cloud.md">integrazione con Adobe Marketing Cloud</a>.</td> 
+   <td>Contiene le configurazioni relative all' <a href="/help/sites-administering/marketing-cloud.md">integrazione con l'Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
@@ -62,9 +65,9 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Confronta <code>/var/dam</code> e <code>/content/dam</code> verifica<br /> eventuali incoerenze. È quindi possibile sincronizzare o eliminare tutti i file/cartelle elencati. I tipi di nodo per il confronto delle cartelle sono configurabili nella console Web.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Adobe Indesign<br /> </td> 
+   <td>DAM - Indesign Adobe<br /> </td> 
    <td> </td> 
-   <td>Script da usare insieme ad Adobe Indesign.</td> 
+   <td>Script da utilizzare insieme a  Adobe Indesign.</td> 
   </tr> 
   <tr> 
    <td>DAM - Profili video<br /> </td> 
@@ -94,7 +97,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Importatori - Editor <a href="/help/sites-administering/bulk-editor.md">di massa</a></td> 
    <td> </td> 
-   <td>Consente di cercare e modificare gli elementi in blocco. Potete anche esportare e importare contenuti (in blocco) nella directory archivio.</td> 
+   <td>Consente di cercare gli elementi e modificarli in blocco. Potete anche esportare e importare contenuti (in blocco) nella directory archivio.</td> 
   </tr>
   <tr> 
    <td>Importazione - Feed Importer</td> 
@@ -104,7 +107,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">Verifica collegamenti esterni</a></td> 
    <td> </td> 
-   <td>Esegue l'analisi di tutte le pagine di contenuto all'interno dell'istanza di AEM e verifica eventuali collegamenti esterni. Viene visualizzato un elenco di collegamenti validi e non validi.</td> 
+   <td>Esegue l'analisi di tutte le pagine di contenuto all'interno dell'istanza AEM e verifica eventuali collegamenti esterni. Viene visualizzato un elenco di collegamenti validi e non validi.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">Mobile</a></td> 
@@ -114,7 +117,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
    <td> </td> 
-   <td>Gestisce contenuti multilingue e multinazionali, aiutando a bilanciare il branding centralizzato con contenuti localizzati.</td> 
+   <td>Gestisce contenuti multilingue e multinazionali, aiutandoti a bilanciare il branding centralizzato con contenuti localizzati.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/notification.md">Notifica</a></td> 
@@ -204,7 +207,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <th>Scopo</th> 
   </tr> 
   <tr> 
-   <td>Authoring</td> 
+   <td>Authoring  </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -245,7 +248,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Servizi cloud</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
    <td>Connessione ad Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 
@@ -335,7 +338,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr> 
   <tr> 
    <td> </td> 
-   <td>Risorse per sviluppatori</td> 
+   <td>Riferimenti per sviluppatori</td> 
    <td>Riferimenti e download per sviluppatori.</td> 
   </tr> 
  </tbody> 
@@ -343,5 +346,5 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 >[!NOTE]
 >
->Alcune delle opzioni precedenti sono collegate all’interfaccia classica.
+>Alcune delle opzioni precedenti sono effettivamente collegate all’interfaccia classica.
 
