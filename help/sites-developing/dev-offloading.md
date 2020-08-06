@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 La funzione Apache Sling Discovery fornisce un&#39;API Java che consente di creare processi JobManager e servizi JobConsumer che li utilizzano.
 
-Per informazioni sulla creazione di topologie di offload e sulla configurazione del consumo degli argomenti, vedere [Offload dei processi](/help/sites-deploying/offloading.md).
+Per informazioni sulla creazione di topologie di offload e sulla configurazione del consumo degli argomenti, consultate [Offload Jobs](/help/sites-deploying/offloading.md).
 
 ## Gestione dei payload dei processi {#handling-job-payloads}
 
@@ -97,11 +100,11 @@ Il registro contiene il seguente messaggio quando JobGeneratorImpl.createJob vie
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## Sviluppo di un consumatore del lavoro {#developing-a-job-consumer}
+## Sviluppo di un consumatore di posti di lavoro {#developing-a-job-consumer}
 
 Per utilizzare i processi, sviluppate un servizio OSGi che implementa l&#39; `org.apache.sling.event.jobs.consumer.JobConsumer` interfaccia. Identificarsi con l&#39;argomento da utilizzare con la `JobConsumer.PROPERTY_TOPICS` proprietà.
 
-Nell&#39;esempio seguente l&#39;implementazione JobConsumer si registra con l&#39; `com/adobe/example/offloading` argomento. Il consumatore imposta semplicemente su true la proprietà Consumed del nodo di contenuto del payload.
+Nell&#39;esempio seguente l&#39;implementazione di JobConsumer si registra con l&#39; `com/adobe/example/offloading` argomento. Il consumatore imposta semplicemente su true la proprietà Consumed del nodo di contenuto del payload.
 
 ```java
 package com.adobe.example.offloading;
@@ -174,7 +177,7 @@ La classe MyJobConsumer genera i seguenti messaggi di registro per un payload di
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-La proprietà Consumed può essere osservata utilizzando CRXDE Lite:
+La proprietà Consumed può essere osservata utilizzando il CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
