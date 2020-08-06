@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione delle informazioni nel riquadro Riepilogo attività
 seo-title: Visualizzazione delle informazioni nel riquadro Riepilogo attività
-description: Nell’area di lavoro Moduli AEM, è possibile configurare un riquadro Riepilogo attività per riepilogare l’attività o visualizzare qualsiasi altra pagina Web.
-seo-description: Nell’area di lavoro Moduli AEM, è possibile configurare un riquadro Riepilogo attività per riepilogare l’attività o visualizzare qualsiasi altra pagina Web.
+description: Nell’area di lavoro  AEM Forms, è possibile configurare un riquadro Riepilogo attività per riepilogare l’attività o visualizzare qualsiasi altra pagina Web.
+seo-description: Nell’area di lavoro  AEM Forms, è possibile configurare un riquadro Riepilogo attività per riepilogare l’attività o visualizzare qualsiasi altra pagina Web.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
 
 # Visualizzazione delle informazioni nel riquadro Riepilogo attività {#displaying-information-in-the-task-summary-pane}
 
-Quando si apre un&#39;attività nell&#39;area di lavoro AEM Forms, nel riquadro Riepilogo attività viene visualizzato un riepilogo di tale attività. Queste informazioni aggiuntive e pertinenti relative a un&#39;attività aggiungono più valore all&#39;utente finale dell&#39;area di lavoro AEM Forms.
+Quando si apre un&#39;attività &#39;area di lavoro di AEM Forms, nel riquadro Riepilogo attività viene visualizzato un riepilogo dell&#39;attività. Queste informazioni aggiuntive e rilevanti per un’attività aggiungono maggiore valore all’utente finale dell’area di lavoro di  AEM Forms.
 
-L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostra scelta nel riquadro Riepilogo attività. È possibile creare un processo per visualizzare un riquadro Riepilogo attività utilizzando Workbench.
+&#39;area di lavoro di AEM Forms consente di visualizzare una pagina Web di propria scelta nel riquadro Riepilogo attività. È possibile creare un processo per visualizzare un riquadro Riepilogo attività utilizzando Workbench.
 
 1. Creare un processo Assegna attività in Workbench. Per ulteriori dettagli sull&#39;operazione Assegna task, vedere l&#39;argomento Riferimento servizio nella Guida [di](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)Workbench.
 
@@ -30,7 +33,7 @@ L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostr
 1. Configurare il campo URL riepilogo attività. È possibile specificare un valore letterale, un modello, una variabile o un&#39;espressione XPath.
 1. Di seguito è riportato un esempio di visualizzazione delle informazioni nella pagina Riepilogo attività.
 
-   * Accedete all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://[server]:[port]/lc/crx/de`.
+   * Accedete all&#39;ambiente CRXDE Lite in `https://[server]:[port]/lc/crx/de`.
    * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
    * `Create a folder`**SampleSummary **in`/apps`. Nell’elenco di controllo degli accessi di`/apps/SampleSummary`, aggiungere una voce per l’`PERM_WORKSPACE_USER`autorizzazione`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
@@ -49,4 +52,4 @@ L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostr
    ```
 
    * Impostate il valore dell&#39;URL di riepilogo attività come `/lc/content/SampleSummary.html` nel passaggio Assegna attività.
-   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta nell&#39;area di lavoro Moduli AEM, viene eseguito il rendering `html.esp` in `/apps/SampleSummary` nel riquadro di riepilogo delle attività.
+   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta &#39;area di lavoro di AEM Forms, viene eseguito il rendering `html.esp` in `/apps/SampleSummary` nel riquadro di riepilogo delle attività.
