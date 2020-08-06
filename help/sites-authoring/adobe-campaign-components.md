@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 71%
 
 ---
 
@@ -176,7 +179,7 @@ I seguenti esempi mostrano come viene visualizzato un componente Collegamento (C
 
 ### Modello immagini Scene7 (Campaign) {#scene-image-template-campaign}
 
-[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine di Scene7 sono file immagine con più livelli, con i quali è possibile parametrizzare contenuto e proprietà per la variabilità. Il componente **Modello immagini** consente di utilizzare i modelli di Scene7 all&#39;interno delle newsletter e modificare i valori dei parametri di modello. Inoltre, puoi utilizzare le variabili di metadati Adobe Campaign all&#39;interno dei parametri, in modo che ogni utente possa vedere l&#39;immagine in modo personalizzato.
+[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine di Scene7 sono file immagine a più livelli, con contenuti e proprietà parametrizzabili per la variabilità. Il componente **Modello immagini** consente di utilizzare i modelli di Scene7 all&#39;interno delle newsletter e modificare i valori dei parametri di modello. Inoltre, potete utilizzare  variabili di metadati Adobe Campaign all&#39;interno dei parametri, in modo che ogni utente possa vedere l&#39;immagine in modo personalizzato.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
@@ -271,6 +274,7 @@ Nell’editor interno è possibile aggiungere testo, modificare la giustificazio
 >
 >* I campi disponibili dipendono dal modello di Adobe Campaign a cui la newsletter è collegata.
 >* Dopo aver selezionato una persona da ContextHub, i campi di personalizzazione vengono automaticamente sostituiti dai dati del profilo selezionato.
+
 >
 >
 Consulta [Inserimento di personalizzazioni](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -313,7 +317,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
  <tbody> 
   <tr> 
    <td><p><strong>Componente</strong></p> </td> 
-   <td><p><strong>Tipo di dati del campo Adobe Campaign</strong></p> </td> 
+   <td><p><strong>Tipo di dati  campo Adobe Campaign</strong></p> </td> 
    <td><p><strong>Esempio di campo</strong></p> </td> 
   </tr> 
   <tr> 
@@ -376,7 +380,7 @@ Puoi configurare le seguenti operazioni:
 
 * **Mappatura**
 
-   Se appropriato, seleziona un campo di personalizzazione di Adobe Campaign.
+   Se appropriato, selezionate un campo  personalizzazione Adobe Campaign.
 
 * **Chiave riconciliazione**
 
@@ -425,7 +429,8 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 * **Messaggio vincolo**
 
    Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo toccando o facendo clic sulle icone **+** e **+** oppure immettendo un numero.
+* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo facendo clic o toccando il pulsante 
+**+** e **-** icone oppure immettere un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo data (Campaign) con la larghezza regolata.
 
@@ -442,7 +447,8 @@ Puoi configurare le seguenti opzioni nel componente Chiave principale crittograf
 * **Titolo e testo - Nome elemento**
 
    Il valore predefinito è encryptPK. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
-* **Adobe Campaign: parametro URL** Aggiungi il parametro URL per EPK. Ad esempio, puoi utilizzare il valore **epk**.
+* **Adobe Campaign: parametro URL** Aggiungi il parametro URL per EPK. Ad esempio, puoi utilizzare il valore 
+**epk**.
 
 I seguenti esempi mostrano come viene visualizzato il componente Chiave principale crittografata (Campaign).
 
@@ -484,7 +490,8 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 * **Messaggio vincolo**
 
    Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo toccando o facendo clic sulle icone **+** e **+** oppure immettendo un numero.
+* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo facendo clic o toccando il pulsante 
+**+** e **-** icone oppure immettere un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo numerico (Campaign) con la larghezza configurata.
 
@@ -538,5 +545,5 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 
 I seguenti esempi mostrano viene visualizzato un componente Campo testo (Campaign).
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
