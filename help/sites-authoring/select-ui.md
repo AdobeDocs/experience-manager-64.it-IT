@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
 
 # Selezione dell’interfaccia{#selecting-your-ui}
 
-## Interfaccia utente
+## Informazioni sull’interfaccia
 
 Nell’ambiente Authoring è possibile effettuare le seguenti operazioni:
 
@@ -29,14 +32,16 @@ Sono disponibili due interfacce grafiche, accessibili dalle versioni più recent
 
 1. Interfaccia utente touch
 
-   * Questa è la moderna interfaccia utente predefinita di AEM.
+   * Questa è l’interfaccia AEM moderna e predefinita.
    * È un’interfaccia pulita e lineare, prevalentemente di colore grigio.
    * Progettata per essere utilizzata sia su dispositivi desktop che touch, il suo aspetto generale è uguale su tutti i dispositivi, mentre le operazioni per [visualizzare e selezionare le risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) sono leggermente diverse (tocco o clic). 
 
       * Desktop:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Dispositivi tablet (o desktop con larghezza inferiore a 1024 pixel):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. Interfaccia classica
@@ -45,6 +50,7 @@ Sono disponibili due interfacce grafiche, accessibili dalle versioni più recent
    * Il colore predominante è il verde.
    * È stata progettata per l’uso con i dispositivi desktop.
    * La seguente documentazione si riferisce all’interfaccia utente moderna. Per informazioni sull’authoring nell’interfaccia classica, consulta la [documentazione sull’authoring nell’interfaccia classica](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Passaggio delle interfacce
@@ -167,6 +173,7 @@ Per l’authoring delle pagine, le impostazioni definite da un utente o amminist
 >
 >* NON modificare manualmente l’URL; un URL non standard potrebbe dare luogo a una situazione sconosciuta e alla perdita di funzionalità;
 >* NON tenere entrambi gli editor aperti allo stesso tempo, ad esempio in due diverse finestre.
+
 >
 
 
