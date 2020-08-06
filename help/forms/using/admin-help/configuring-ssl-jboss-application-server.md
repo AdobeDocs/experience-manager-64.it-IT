@@ -26,7 +26,7 @@ Per configurare SSL sul server applicazioni JBoss, è necessaria una credenziale
 
 In questa procedura:
 
-* `[appserver root]` è la directory principale del server applicazioni che esegue i moduli AEM.
+* `[appserver root]` è la directory principale del server applicazioni che esegue AEM moduli.
 * `[type]` è un nome di cartella che varia a seconda del tipo di installazione eseguito.
 
 ## Creare una credenziale SSL {#create-an-ssl-credential}
@@ -136,17 +136,17 @@ In questa procedura:
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-1. Modificate il valore per l’ `keystoreFile` attributo e l’ `keystorePass` attributo nella password dell’archivio di chiavi specificata al momento della creazione dell’archivio di chiavi.
+1. Modificate il valore per l&#39; `keystoreFile` attributo e l&#39; `keystorePass` attributo nella password dell&#39;archivio di chiavi specificata al momento della creazione dell&#39;archivio di chiavi.
 1. Riavviate il server applicazione:
 
    * Per gli impianti chiavi in mano:
 
-      * Dal Pannello di controllo di Windows, fare clic su Strumenti di amministrazione e quindi su Servizi.
-      * Selezionare JBoss per  moduli di Adobe Experience Manager.
+      * Dal Pannello di controllo Campaign Windows, fare clic su Strumenti di amministrazione, quindi fare clic su Servizi.
+      * Selezionare JBoss per i moduli Adobe Experience Manager.
       * Selezionare Azione > Interrompi.
       * Attendere che lo stato del servizio venga visualizzato come interrotto.
       * Selezionare Azione > Avvia.
-   * Per le installazioni JBoss preconfigurate o configurate manualmente:
+   * Per  Adobe installazioni JBoss preconfigurate o configurate manualmente:
 
       * Da un prompt dei comandi, passare a *`[appserver root]`*/bin.
       * Arrestate il server immettendo il seguente comando:
@@ -163,7 +163,7 @@ In questa procedura:
 
 1. Per accedere alla console di amministrazione tramite SSL, digita `https://[host name]:[port]/adminui` in un browser Web:
 
-   La porta SSL predefinita per JBoss è 8443. Da qui in avanti, specificate questa porta per accedere ai moduli AEM.
+   La porta SSL predefinita per JBoss è 8443. Da qui in avanti, specificare questa porta per accedere AEM moduli.
 
 ## Richiesta di una credenziale da una CA {#request-a-credential-from-a-ca}
 
