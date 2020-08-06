@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -28,8 +31,8 @@ Per creare una pagina di destinazione efficace per una newsletter, è necessario
 
 >[!NOTE]
 >
->Adobe non intende migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).\
->È consigliabile sfruttare [Adobe Campaign e la relativa integrazione](/help/sites-administering/campaign.md)AEM.
+> Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).\
+>La raccomandazione è di sfruttare [Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
 
 ## Creazione di un Elenco per la newsletter {#creating-a-list-for-the-newsletter}
 
