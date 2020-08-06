@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 70%
 
 ---
 
@@ -21,7 +24,8 @@ Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambi
 
 Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#user-preferences) consentono di definire le opzioni e le preferenze elencate di seguito:
 
-* **Barra degli strumenti di modifica** Consente di specificare se visualizzare o meno la barra degli strumenti di modifica globale. Tale barra degli strumenti, nella parte superiore della finestra del browser, include i pulsanti **Copia**, **Taglia**, **Incolla** ed **Elimina**, utilizzabili con i componenti paragrafo della pagina:
+* **Barra degli strumenti di modifica** Consente di specificare se visualizzare o meno la barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, fornisce 
+**I pulsanti Copia**, **Taglia**, **Incolla** ed **Elimina** possono essere utilizzati con i componenti paragrafo della pagina:
 
    * Mostra se necessario (predefinito)
    * Mostra sempre
@@ -29,12 +33,12 @@ Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#us
 
 * **Impersona** La funzionalità [Impersona](/help/sites-administering/security.md#impersonating-another-user) permette a un utente di lavorare a nome di un altro utente.
 
-* **Lingua** Lingua da usare nell’interfaccia dell’ambiente Authoring.Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
+* **Lingua** Lingua da usare nell’interfaccia dell’ambiente Authoring. Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
 
 * **Gestione finestre** Seleziona una delle seguenti opzioni:
 
-   * Finestre multiple (predefinito):Le pagine verranno aperte in una nuova finestra.
-   * Finestra singola:Le pagine verranno aperte nella finestra corrente.
+   * Finestre multiple (predefinito): Le pagine verranno aperte in una nuova finestra.
+   * Finestra singola: Le pagine verranno aperte nella finestra corrente.
 
 ## Impostazioni account {#account-settings}
 
