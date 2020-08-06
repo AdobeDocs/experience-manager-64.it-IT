@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 * [fulltext](/help/sites-developing/querybuilder-predicate-reference.md#fulltext)
 * [hasPermission](/help/sites-developing/querybuilder-predicate-reference.md#haspermission)
 * [language](/help/sites-developing/querybuilder-predicate-reference.md#language)
-* [principale](/help/sites-developing/querybuilder-predicate-reference.md#mainasset)
+* [main asset](/help/sites-developing/querybuilder-predicate-reference.md#mainasset)
 * [MemberOf](/help/sites-developing/querybuilder-predicate-reference.md#memberof)
 * [nodename](/help/sites-developing/querybuilder-predicate-reference.md#nodename)
 * [not](/help/sites-developing/querybuilder-predicate-reference.md#notexpired)
@@ -58,9 +61,11 @@ Supporta l&#39;estrazione dei facet. Fornirà bucket per ogni `true` o `false` v
 
 #### Proprietà {#properties}
 
-* **boolproperty** percorso relativo alla proprietà, ad esempio `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
+* **boolproperty** relativo percorso di una proprietà, ad esempio 
+`myFeatureEnabled` o `jcr:content/myFeatureEnabled`
 
-* **value** value to check property for, &quot; `true`&quot; or &quot; `false`&quot;
+* **value** value to check property for, &quot; 
+`true`&quot; o &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -92,7 +97,7 @@ Si tratta di un predicato di solo filtraggio e non può sfruttare un indice di r
 
 * **operation**
 
-   &quot; `=`&quot; per corrispondenza esatta, &quot; `!=`&quot; per confronto di non uguaglianza, &quot; `>`&quot; per proprietà1 maggiore di property2, &quot; `>=`&quot; per proprietà1 maggiore o uguale a property2. Il valore predefinito è &quot; `=`&quot;.
+   &quot; `=`&quot; per corrispondenza esatta, &quot; `!=`&quot; per il confronto di non uguaglianza, &quot; `>`&quot; per la proprietà1 maggiore di property2, &quot; `>=`&quot; per la proprietà1 maggiore o uguale a property2. Il valore predefinito è &quot; `=`&quot;.
 
 ### daterange {#daterange}
 
@@ -238,9 +243,9 @@ Supporta l&#39;estrazione dei facet. Forniranno bucket per ogni codice di lingua
 
    Codice della lingua ISO, ad esempio &quot; `de`&quot;
 
-### principale {#mainasset}
+### main asset {#mainasset}
 
-Controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria. In pratica, si tratta di ogni nodo non incluso in un nodo &quot;subassets&quot;. Si noti che questo non verifica il tipo di `dam:Asset` nodo. Per utilizzare questo predicato, impostare semplicemente &quot; `mainasset=true`&quot; o &quot; `mainasset=false`&quot;, non ci sono ulteriori proprietà.
+Controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria. In pratica, si tratta di ogni nodo che non si trova all&#39;interno di un nodo &quot;subassets&quot;. Si noti che questo non verifica il tipo di `dam:Asset` nodo. Per utilizzare questo predicato, impostare semplicemente &quot; `mainasset=true`&quot; o &quot; `mainasset=false`&quot;, non ci sono ulteriori proprietà.
 
 Si tratta di un predicato di solo filtraggio e non può sfruttare un indice di ricerca.
 
@@ -248,7 +253,7 @@ Supporta l&#39;estrazione dei facet. Fornirà 2 socket per risorse principali e 
 
 #### Proprietà {#properties-9}
 
-* **principale**
+* **main asset**
 
    booleano, &quot; `true`&quot; per le risorse principali, &quot; `false`&quot; per le risorse secondarie
 
@@ -306,7 +311,7 @@ Consente di ordinare il risultato. Se l&#39;ordine è richiesto da più propriet
 
 * **ordina**
 
-   direzione di ordinamento, &quot; `desc`&quot; per discendente o &quot; `asc`&quot; per crescente (predefinita)
+   direzione di ordinamento, &quot; `desc`&quot; per discendente o &quot; `asc`&quot; per crescente (impostazione predefinita)
 
 * **case**
 
@@ -340,7 +345,7 @@ Non supporta l&#39;estrazione facet.
 
 Corrisponde alle proprietà JCR e ai relativi valori.
 
-Supporta l&#39;estrazione dei facet. Fornirà bucket per ogni valore di proprietà univoco nei risultati.
+Supporta l&#39;estrazione dei facet. Fornirà bucket per ogni valore di proprietà univoca nei risultati.
 
 #### Proprietà {#properties-15}
 
@@ -392,7 +397,7 @@ Non supporta l&#39;estrazione facet.
 
 * **UpperBound**
 
-   limite superiore per controllare la proprietà
+   con limite superiore per controllare la proprietà
 
 * **UpperOperation**
 
@@ -428,7 +433,7 @@ Supporta l&#39;estrazione dei facet nello stesso modo del predicato daterange.
 
 * **lowerBound**
 
-   data più bassa in millisecondi o `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni) rispetto all&#39;ora corrente del server, utilizzare &quot;-&quot; per l&#39;offset negativo
+   data più bassa in millisecondi o `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni) rispetto all&#39;ora del server corrente, utilizzare &quot;-&quot; per l&#39;offset negativo
 
 ### root {#root}
 
@@ -446,7 +451,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
    numero che indica le dimensioni della pagina
 
-* **p.impressionTotal**
+* **p.indovinaTotale**
 
    consigliato: evitare di calcolare l&#39;intero risultato complessivo che può essere costoso; un numero che indica il totale massimo da conteggiare fino a (ad esempio 1000, un numero che dà agli utenti un feedback sufficiente sulla dimensione approssimativa e sui numeri esatti per risultati più piccoli) oppure &quot; `true`&quot; per contare solo fino al minimo necessario `p.offset` + `p.limit`
 
@@ -468,7 +473,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
    * **selettivo**:
 
-      solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separati da spazi (utilizzate &quot;+&quot; negli URL); se il percorso relativo ha una profondità > 1 questi saranno rappresentati come oggetti secondari; la speciale proprietà jcr:path include il percorso dell&#39;hit
+      solo le proprietà specificate in `p.properties`, che è un elenco di percorsi relativi separati da spazi (utilizzate &quot;+&quot; negli URL); se il percorso relativo ha una profondità > 1, questi saranno rappresentati come oggetti secondari; la speciale proprietà jcr:path include il percorso dell&#39;hit
 
 ### savedquery {#savedquery}
 
@@ -496,11 +501,12 @@ Non supporta il filtro. Non supporta l&#39;estrazione facet.
 
 * **percorso** assoluto simile al nodo per il quale trovare nodi simili
 
-* **local** un percorso relativo a un nodo discendente o `.` per il nodo corrente (facoltativo, il valore predefinito è &quot; `.`&quot;)
+* **locale** un percorso relativo a un nodo discendente o 
+`.` per il nodo corrente (facoltativo, il valore predefinito è &quot; `.`&quot;)
 
 ### tag {#tag}
 
-Consente di cercare contenuti con tag con uno o più tag, specificando i percorsi del titolo dei tag.
+Consente di cercare il contenuto a cui sono stati assegnati uno o più tag, specificando i percorsi del titolo dei tag.
 
 Supporta l&#39;estrazione dei facet. Fornirà bucket per ciascun tag univoco, utilizzando il percorso del titolo del tag corrente.
 
@@ -516,7 +522,7 @@ Supporta l&#39;estrazione dei facet. Fornirà bucket per ciascun tag univoco, ut
 
 * **proprietà**
 
-   (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
+   proprietà (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
 
 ### tagid {#tagid}
 
@@ -536,11 +542,11 @@ Supporta l&#39;estrazione dei facet. Fornirà bucket per ciascun tag univoco, ut
 
 * **proprietà**
 
-   (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
+   proprietà (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
 
 ### tagsearch {#tagsearch}
 
-Consente di ricercare contenuti ai quali sono assegnati uno o più tag, specificando le parole chiave. In questo modo, i tag che contengono queste parole chiave nei loro titoli verranno prima cercati, quindi il risultato verrà limitato solo agli elementi ai quali è stato assegnato il tag.
+Consente di cercare contenuti ai quali sono stati assegnati tag con uno o più tag, specificando le parole chiave. In questo modo, i tag che contengono queste parole chiave nei loro titoli verranno prima cercati, quindi il risultato verrà limitato solo agli elementi ai quali è stato assegnato il tag.
 
 Non supporta l&#39;estrazione facet.
 
@@ -552,7 +558,7 @@ Non supporta l&#39;estrazione facet.
 
 * **proprietà**
 
-   (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
+   proprietà (o percorso relativo alla proprietà) da esaminare (impostazione predefinita &quot; `cq:tags`&quot;)
 
 * **lang**
 
