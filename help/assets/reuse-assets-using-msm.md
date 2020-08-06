@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Riutilizzare le risorse con MSM per le risorse {#reuse-assets-using-msm-for-assets}
 
-La funzionalità Multi Site Manager (MSM) in  Adobe Experience Manager (AEM) consente agli utenti di riutilizzare contenuti creati una volta e riutilizzati in più posizioni Web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità Assets. Utilizzando MSM per Assets, puoi:
+La funzionalità Multi Site Manager (MSM) di Adobe Experience Manager (AEM) consente agli utenti di riutilizzare il contenuto creato una volta e riutilizzato in più posizioni Web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità Assets. Utilizzando MSM per Assets, puoi:
 
 * Create una volta e quindi copiate le risorse da riutilizzare in altre aree del sito.
 * Mantenete più copie in sincronizzazione e aggiornate la copia principale originale una volta per inviare le modifiche alle copie figlio.
@@ -30,7 +30,7 @@ Per utilizzare MSM per Assets, installa almeno Service Pack 5. Per ulteriori inf
 
 ### Come funziona e vantaggi {#how-it-works-the-benefits}
 
-Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md#possible-scenarios)MSM. AEM gestisce un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie dal vivo. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia principale e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente la flessibilità di aggiornare localmente le risorse che sono state originariamente ereditate da una copia principale.
+Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md#possible-scenarios)MSM. AEM mantiene un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie dal vivo. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia principale e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente la flessibilità di aggiornare localmente le risorse che sono state originariamente ereditate da una copia principale.
 
 MSM mantiene una relazione live tra la risorsa di origine e le sue copie in tempo reale in modo che:
 
@@ -65,24 +65,24 @@ MSM mantiene una relazione live tra la risorsa di origine e le sue copie in temp
 Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate le seguenti operazioni:
 
 * **Metodo 1**: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea > Live Copy]** dalla barra degli strumenti nella parte superiore.
-* **Metodo 2**: Nell’interfaccia utente di AEM, fai clic su **[!UICONTROL Crea > Live Copy]** nell’angolo in alto a destra dell’interfaccia.
+* **Metodo 2**: Nell&#39;interfaccia AEM utente, fate clic su **[!UICONTROL Crea > Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
 
 Potete creare copie dal vivo di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa.
 
-I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
 1. Selezionate le risorse o le cartelle sorgente. Dalla barra degli strumenti, fate clic su **[!UICONTROL Crea > Live Copy]**.
-   ![Creare una live copy dall’interfaccia di AEM](assets/lc_create1.png)
+   ![Crea live copy dall&#39;interfaccia AEM](assets/lc_create1.png)
 1. Selezionate la risorsa o la cartella sorgente. Fai clic su **[!UICONTROL Avanti]**.
 1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere gli elementi figlio.
 1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**.
 
 Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
-1. Nell’interfaccia di AEM, dall’angolo in alto a destra, fate clic su **[!UICONTROL Crea > Live Copy]**.
-   ![Creare una live copy dall’interfaccia di AEM](assets/lc_create2.png)
+1. Nell&#39;interfaccia AEM, nell&#39;angolo superiore destro, fate clic su **[!UICONTROL Crea > Live Copy]**.
+   ![Crea live copy dall&#39;interfaccia AEM](assets/lc_create2.png)
 1. Selezionate la risorsa o la cartella sorgente. Fai clic su **[!UICONTROL Avanti]**.
 1. Selezionate la cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
 1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere gli elementi figlio.
@@ -94,7 +94,7 @@ Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
 ## Visualizzare le varie proprietà e gli stati di origine e live copy {#view-properties-statuses-source-and-lc}
 
-Potete visualizzare le informazioni e gli stati relativi a MSM della Live Copy, ad esempio relazione, sincronizzazione, rollout e molto altro dalle varie aree dell&#39;interfaccia utente di AEM. Per risorse e cartelle funzionano i due metodi seguenti:
+È possibile visualizzare le informazioni e gli stati relativi a MSM di Live Copy, ad esempio relazione, sincronizzazione, rollout e molto altro dalle varie aree dell&#39;interfaccia utente AEM. Per risorse e cartelle funzionano i due metodi seguenti:
 
 * Selezionate la risorsa Live Copy e cercate le informazioni nella relativa pagina **[!UICONTROL Proprietà]** .
 * Seleziona la cartella di origine e trova le informazioni dettagliate di ciascuna Live Copy dalla **[!UICONTROL Live Copy Console]**.
@@ -115,7 +115,7 @@ Per verificare le informazioni e gli stati di una risorsa Live Copy o di una car
 
 ### Informazioni e stati di tutte le copie in diretta di una cartella {#information-status-of-all-lcs-of-folder}
 
-In AEM è disponibile una console per controllare le statue di tutte le copie in diretta di una cartella sorgente. In questa console viene visualizzato lo stato di tutte le risorse figlio.
+AEM una console per controllare le statue di tutte le copie live di una cartella sorgente. In questa console viene visualizzato lo stato di tutte le risorse figlio.
 
 1. Selezionate una cartella sorgente. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
 1. Fai clic su **[!UICONTROL Origine Live Copy]**. Per aprire la console, fai clic su **[!UICONTROL Panoramica Live Copy]**. Questo dashboard offre uno stato di primo livello per tutte le risorse figlie.
@@ -132,7 +132,7 @@ In AEM è disponibile una console per controllare le statue di tutte le copie in
 Per una risorsa o una cartella sorgente, potete visualizzare le informazioni seguenti ed effettuare le seguenti operazioni direttamente dalla barra laterale Riferimenti:
 
 * Visualizzare i percorsi delle copie dal vivo.
-* Aprite o visualizzate una Live Copy specifica nell’interfaccia utente di AEM.
+* Aprite o visualizzate una Live Copy specifica nell&#39;interfaccia AEM utente.
 * Sincronizzate gli aggiornamenti con una Live Copy specifica.
 * Sospendi la relazione o modifica la configurazione di rollout per una Live Copy specifica.
 * Accedete alla console della panoramica Live Copy.
@@ -150,7 +150,7 @@ Per una Live Copy specifica, fate clic su **[!UICONTROL Modifica Live Copy]** pe
 Per una risorsa o una cartella Live Copy, potete visualizzare le informazioni seguenti ed effettuare le seguenti operazioni direttamente dalla barra laterale Riferimenti:
 
 * Visualizzare il percorso della relativa origine.
-* Aprite o visualizzate una Live Copy specifica nell’interfaccia utente di AEM.
+* Aprite o visualizzate una Live Copy specifica nell&#39;interfaccia AEM utente.
 * Implementate gli aggiornamenti.
 
 Seleziona una risorsa o una cartella Live Copy, apri la barra a sinistra e fai clic su **[!UICONTROL Riferimenti]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
@@ -183,7 +183,7 @@ In alternativa, potete avviare un’azione di rollout dalla barra laterale [!UIC
 
 Un&#39;azione di sincronizzazione richiama le modifiche da un&#39;origine solo alla Live Copy selezionata. L’azione di sincronizzazione rispetta e mantiene le modifiche locali apportate dopo l’annullamento dell’ereditarietà. Le modifiche locali non vengono sovrascritte e l&#39;ereditarietà annullata non viene ripristinata. Puoi avviare un&#39;azione di sincronizzazione in tre modi.
 
-| Posizione nell’interfaccia AEM | Quando e perché utilizzare | Come utilizzare |
+| Posizione nell&#39;interfaccia AEM | Quando e perché utilizzare | Come utilizzare |
 |---|---|---|
 | [!UICONTROL Barra dei riferimenti] | Sincronizzazione rapida quando la sorgente è già selezionata. | Consultate Azioni [rapide dalla barra laterale Riferimenti per la sorgente](#quick-actions-from-references-rail-for-source) |
 | Barra degli strumenti nella pagina [!UICONTROL Proprietà] | Avviate una sincronizzazione quando avete già le proprietà Live Copy aperte. | Consultate [Sincronizzazione di una Live Copy](#synchronize-live-copy) |
@@ -221,7 +221,7 @@ Potete annullare tutte le modifiche locali e ripristinare lo stato della risorsa
 
 ## Rimuovi relazione diretta {#remove-live-relationship}
 
-È possibile rimuovere completamente la relazione tra un&#39;origine e una Live Copy utilizzando l&#39;azione Scollega. Una volta scollegata, la live copy diventa una risorsa o una cartella autonoma. Viene visualizzata come nuova risorsa nell’interfaccia di AEM, subito dopo lo scollegamento. Per scollegare una Live Copy dall&#39;origine, attenetevi alla seguente procedura.
+È possibile rimuovere completamente la relazione tra un&#39;origine e una Live Copy utilizzando l&#39;azione Scollega. Una volta scollegata, la live copy diventa una risorsa o una cartella autonoma. Viene visualizzata come una nuova risorsa nell&#39;interfaccia AEM, subito dopo lo scollegamento. Per scollegare una Live Copy dall&#39;origine, attenetevi alla seguente procedura.
 
 1. Selezionate una risorsa o una cartella Live Copy. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera p.
 1. Click **[!UICONTROL Live Copy]**. Fare clic su **[!UICONTROL Scollega]** nella barra degli strumenti. Fate clic su **[!UICONTROL Scollega]** dalla finestra di dialogo visualizzata.
