@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ AEM offre diversi metodi per personalizzare le console (e la funzionalità [di a
 
 * Clientlibs
 
-   Clientlibs consente di estendere l&#39;implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Quando personalizzate, potete creare clientlib personalizzate in `/apps.` Ad esempio, può contenere il codice richiesto per il componente personalizzato.
+   Clientlibs consente di estendere l&#39;implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Quando si personalizzano, è possibile creare clientlib personalizzate in `/apps.` Ad esempio, può contenere il codice richiesto per il componente personalizzato.
 
 * Sovrapposizioni
 
@@ -40,6 +43,7 @@ che possono essere utilizzati in molti modi per estendere le console AEM. Di seg
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [GRANITE](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
 Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalizzazione dell&#39;interfaccia [utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
@@ -56,13 +60,14 @@ Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.
    >
    >
 1. Apportare modifiche all&#39;interno `/apps`
+
 >
 
 
 
 Ad esempio, è possibile sovrapporre le seguenti posizioni all’interno della `/libs` struttura:
 
-* console (qualsiasi console basata sulle pagine dell’interfaccia Granite); ad esempio:
+* console (tutte le console basate sulle pagine dell’interfaccia utente Granite); ad esempio:
 
    * `/libs/wcm/core/content`
 
@@ -93,7 +98,7 @@ Ad esempio, è possibile sovrapporre le seguenti posizioni all’interno della `
 -->
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l’articolo della Knowledge Base [Risoluzione di problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)relativi all’interfaccia utente AEM Touch.
+>Per ulteriori suggerimenti e strumenti, consulta l’articolo della Knowledge Base [Risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)AEM TouchUI.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -388,7 +393,7 @@ Per personalizzare le colonne nella vista a elenco:
 
 1. Facoltativamente:
 
-   * Se si desidera collegare dati aggiuntivi, è necessario scrivere un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)`
+   * Se si desidera collegare dati aggiuntivi, è necessario scrivere un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` con un
 
       `pageInfoProviderType` proprietà.
    Ad esempio, vedete la classe/pacchetto collegato (da GitHub) di seguito.
