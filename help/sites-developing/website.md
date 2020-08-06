@@ -22,14 +22,14 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Questo articolo descrive come creare un sito Web utilizzando JSP e in base all’interfaccia classica. Adobe consiglia di sfruttare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell’articolo AEM Sites [](/help/sites-developing/getting-started.md)Guida introduttiva allo sviluppo.
+>Questo articolo descrive come creare un sito Web utilizzando JSP e in base all’interfaccia classica.  Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Primi passi nello sviluppo  AEM Sites](/help/sites-developing/getting-started.md).
 
-Questa esercitazione consente di creare un sito Web completo con  Adobe Experience Manager (AEM). Il sito web sarà basato su un sito web generico ed è rivolto principalmente agli sviluppatori web. Tutte le attività di sviluppo si svolgeranno in un ambiente di authoring.
+Questa esercitazione consente di creare un sito Web completo con Adobe Experience Manager (AEM). Il sito web sarà basato su un sito web generico ed è rivolto principalmente agli sviluppatori web. Tutte le attività di sviluppo si svolgeranno in un ambiente di authoring.
 
 Questa esercitazione descrive come:
 
 1. Installare AEM.
-1. Accedere a CRXDE Lite (l&#39;ambiente di sviluppo).
+1. Access CRXDE Lite (l&#39;ambiente di sviluppo).
 1. Configurate la struttura del progetto in CRXDE Lite.
 1. Creare il modello, il componente e gli script utilizzati come base per la creazione di pagine di contenuto.
 1. Create la pagina principale per il sito Web e quindi le pagine di contenuto.
@@ -61,21 +61,21 @@ Pacchetto contenuto del sito Web
 
 ## Installing Adobe Experience Manager {#installing-adobe-experience-manager}
 
-Per installare un’istanza di AEM per lo sviluppo del sito Web, seguite le istruzioni per configurare un ambiente di [distribuzione con le istanze](/help/sites-deploying/deploy.md#author-and-publish-installs)di creazione e pubblicazione oppure eseguite un’installazione [](/help/sites-deploying/deploy.md#default-local-install)generica. L&#39;installazione generica prevede il download del file AEM Quickstart JAR, il posizionamento del file license.properties nella stessa directory del file JAR e il doppio clic sul file JAR.
+Per installare un’istanza AEM per lo sviluppo del sito Web, seguite le istruzioni per configurare un ambiente di [distribuzione con le istanze](/help/sites-deploying/deploy.md#author-and-publish-installs)di creazione e pubblicazione oppure eseguite un’installazione [](/help/sites-deploying/deploy.md#default-local-install)generica. L&#39;installazione generica prevede il download del file JAR AEM Quickstart, il posizionamento del file license.properties nella stessa directory del file JAR e il doppio clic sul file JAR.
 
-Dopo aver installato AEM, accedi all’ambiente di sviluppo CRXDE Lite facendo clic sul collegamento CRXDE Lite nella pagina di benvenuto:
+Dopo aver installato AEM, accedete all’ambiente di sviluppo CRXDE Lite facendo clic sul collegamento CRXDE Lite nella pagina di benvenuto:
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
 >[!NOTE]
 >
->L’URL di CRXDE Lite per un’istanza di creazione AEM installata localmente utilizzando la porta predefinita è [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
+>L’URL del CRXDE Lite per un’istanza di creazione AEM installata localmente utilizzando la porta predefinita è [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
 
 ## Impostazione della struttura del progetto in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
-Utilizzate CRXDE Lite per creare la struttura dell&#39;applicazione miosito Web nella directory archivio:
+Utilizzate CRXDE Lite per creare la struttura dell’applicazione miosito Web nella directory archivio:
 
-1. Nella struttura ad albero a sinistra di CRXDE Lite, fare clic con il pulsante destro del mouse sulla **`/apps`** cartella e scegliere **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **Crea cartella** , digitate `mywebsite` il nome della cartella e fate clic su **[!UICONTROL OK**.
+1. Nella struttura ad albero, sul lato sinistro del CRXDE Lite, fate clic con il pulsante destro del mouse sulla **`/apps`** cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **Crea cartella** , digitate `mywebsite` il nome della cartella e fate clic su **[!UICONTROL OK**.
 1. Fate clic con il pulsante destro del mouse sulla `/apps/mywebsite` cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , digitate `components` il nome della cartella e fate clic su **[!UICONTROL OK]**.
 1. Fate clic con il pulsante destro del mouse sulla `/apps/mywebsite` cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , digitate `templates` il nome della cartella e fate clic su **[!UICONTROL OK]**.
 
@@ -97,7 +97,7 @@ Esempio di file static.css e immagini
 
 [Ottieni file](assets/mywebsite.zip)
 
-1. Nella pagina di benvenuto di AEM, fate clic su **[!UICONTROL Strumenti]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
+1. Nella pagina di AEM benvenuto, fate clic su **[!UICONTROL Strumenti]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -123,7 +123,7 @@ Create un modello da usare come base per le pagine Web del sito.
 
 Un modello definisce il contenuto predefinito di una nuova pagina. I siti Web complessi possono utilizzare diversi modelli per la creazione di diversi tipi di pagine nel sito. In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
-1. Nella struttura delle cartelle di CRXDE Lite, fare clic con il pulsante destro del mouse `/apps/mywebsite/templates` e scegliere **[!UICONTROL Crea > Crea modello]**.
+1. Nella struttura delle cartelle del CRXDE Lite, fare clic con il pulsante destro del mouse `/apps/mywebsite/templates` e scegliere **[!UICONTROL Crea > Crea modello]**.
 
 1. Nella finestra di dialogo Crea modello, digitate i seguenti valori e fate clic su **[!UICONTROL Avanti]**:
 
@@ -146,7 +146,7 @@ Un modello definisce il contenuto predefinito di una nuova pagina. I siti Web co
 
    Quando un autore crea una pagina `/content`di seguito, il modello di **[!UICONTROL pagina]** del contenuto viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
-1. Fate clic su **[!UICONTROL Avanti]** nei pannelli Genitori **** consentiti e Figli **** consentiti e fate clic su **[!UICONTROL OK]**. In CRXDE Lite, fare clic su **[!UICONTROL Salva tutto]**.
+1. Fate clic su **[!UICONTROL Avanti]** nei pannelli Genitori **** consentiti e Figli **** consentiti e fate clic su **[!UICONTROL OK]**. In CRXDE Lite, fate clic su **[!UICONTROL Salva tutto]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -167,7 +167,7 @@ Create il *componente* che definisce il contenuto ed esegue il rendering delle p
 
    Questa corrispondenza collega il modello al componente ed è fondamentale per il corretto funzionamento del sito Web.
 
-1. Fate clic su **[!UICONTROL Avanti]** fino a visualizzare il pannello **[!UICONTROL Elementi figlio]** consentiti della finestra di dialogo, quindi fate clic su **[!UICONTROL OK]**. In CRXDE Lite, fare clic su **[!UICONTROL Salva tutto]**.
+1. Fate clic su **[!UICONTROL Avanti]** fino a visualizzare il pannello **[!UICONTROL Elementi figlio]** consentiti della finestra di dialogo, quindi fate clic su **[!UICONTROL OK]**. In CRXDE Lite, fate clic su **[!UICONTROL Salva tutto]**.
 
    La struttura ora si presenta come segue:
 
@@ -177,7 +177,7 @@ Create il *componente* che definisce il contenuto ed esegue il rendering delle p
 
 Aggiungete il codice allo script contentpage.jsp per definire il contenuto della pagina.
 
-1. In CRXDE Lite, aprire il file `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. Per impostazione predefinita, il file contiene il codice seguente:
+1. In CRXDE Lite, aprite il file `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. Per impostazione predefinita, il file contiene il codice seguente:
 
    ```java
    <%--
@@ -218,7 +218,7 @@ Aggiungete il codice allo script contentpage.jsp per definire il contenuto della
 
 In questa sezione vengono create le seguenti pagine che utilizzano tutte il modello di pagina di contenuto: Il mio sito Web, inglese, prodotti, servizi e clienti.
 
-1. Nella pagina di benvenuto di AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), fate clic su Siti Web.
+1. Nella AEM pagina di benvenuto ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), fate clic su Siti Web.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -260,7 +260,7 @@ In questa sezione vengono create le seguenti pagine che utilizzano tutte il mode
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Per collegare le pagine al progetto del mio sito Web, in CRXDE Lite selezionate il `/content/mywebsite/en/jcr:content` nodo. Nella scheda **[!UICONTROL Proprietà]** , digitare i valori seguenti per una nuova proprietà, quindi fare clic su Aggiungi:
+1. Per collegare le pagine al progetto del mio sito Web, in CRXDE Lite, selezionate il `/content/mywebsite/en/jcr:content` nodo. Nella scheda **[!UICONTROL Proprietà]** , digitare i valori seguenti per una nuova proprietà, quindi fare clic su Aggiungi:
 
    * **[!UICONTROL Nome]**: cq:designPath
    * **[!UICONTROL Tipo]**: Stringa
@@ -274,7 +274,7 @@ In questa sezione vengono create le seguenti pagine che utilizzano tutte il mode
 
 ### Ottimizzazione dello script di ContentPage {#enhancing-the-contentpage-script}
 
-Questa sezione descrive come migliorare lo script della pagina di contenuto utilizzando gli script dei componenti di AEM foundation e scrivendo script personalizzati.
+Questa sezione descrive come migliorare lo script della pagina di contenuto utilizzando gli script dei componenti AEM foundation e scrivendo script personalizzati.
 
 La pagina **[!UICONTROL Prodotti]** sarà la seguente:
 
@@ -282,11 +282,11 @@ La pagina **[!UICONTROL Prodotti]** sarà la seguente:
 
 #### Utilizzo degli script di pagina Foundation {#using-the-foundation-page-scripts}
 
-In questo esercizio, potete configurare il componente contenuto pagina in modo che il relativo tipo di sovrapposizione sia il componente Pagina AEM. Poiché i componenti ereditano le funzionalità del relativo tipo di superpagina, il contenuto della pagina eredita gli script e le proprietà del componente Pagina.
+In questo esercizio, è possibile configurare il componente contenuto pagina in modo che il relativo tipo di superficie sia il componente Pagina AEM. Poiché i componenti ereditano le funzionalità del relativo tipo di superpagina, il contenuto della pagina eredita gli script e le proprietà del componente Pagina.
 
 Ad esempio, nel codice JSP del componente, è possibile fare riferimento agli script forniti dal componente supertipo come se fossero inclusi nel componente.
 
-1. In CRXDE Lite, aggiungere una proprietà al `/apps/mywebsite/components/contentpage` nodo.
+1. In CRXDE Lite, aggiungi una proprietà al `/apps/mywebsite/components/contentpage` nodo.
 
    1. Select the `/apps/mywebsite/components/contentpage` node.
    1. Nella parte inferiore della scheda Proprietà, digitare i seguenti valori di proprietà, quindi fare clic su Aggiungi:
@@ -325,7 +325,7 @@ Ad esempio, nel codice JSP del componente, è possibile fare riferimento agli sc
 
 #### Utilizzo di script personalizzati {#using-your-own-scripts}
 
-In questa sezione vengono creati diversi script che generano ciascuno una parte del corpo della pagina. Quindi create il file body.jsp nel componente pageContent per sostituire body.jsp del componente AEM Page. Nel file body.jsp è possibile includere gli script che generano le diverse parti del corpo della pagina.
+In questa sezione vengono creati diversi script che generano ciascuno una parte del corpo della pagina. Quindi create il file body.jsp nel componente PageContent per ignorare il file body.jsp del componente Pagina AEM. Nel file body.jsp è possibile includere gli script che generano le diverse parti del corpo della pagina.
 
 **Suggerimento:** Quando un componente include un file con lo stesso nome e posizione relativa di un file nel supertipo del componente, viene chiamato *sovrapposizione*.
 
@@ -500,7 +500,7 @@ Ad esempio, l’origine del collegamento immagine alla pagina Prodotti potrebbe 
 
 In questo esercizio, Sling corrisponde a questi URL per lo script /apps/mywebsite/components/contentpage/navimage.png.java creato dall&#39;utente.
 
-1. In CRXDE Lite, aprite la `topnav.jsp` sezione `/apps/mywebsite/components/topnav.`Individua il contenuto dell&#39;elemento di ancoraggio (riga 14):
+1. In CRXDE Lite, aprite la `topnav.jsp` sezione `/apps/mywebsite/components/topnav.`Individua il contenuto dell’elemento di ancoraggio (riga 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -667,7 +667,7 @@ Create due pagine sotto la pagina **[!UICONTROL Prodotti]** . Per ogni pagina, c
    * **[!UICONTROL Nome]**: product2
    * Seleziona modello pagina contenuto **[!UICONTROL sito Web personale]**
 
-1. In CRXDE Lite, impostare una descrizione e una data per la pagina Prodotto 1:
+1. In CRXDE Lite, imposta una descrizione e una data per la pagina Prodotto 1:
 
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
    1. Nella scheda **[!UICONTROL Proprietà]** , immettete i seguenti valori:
@@ -686,7 +686,7 @@ Create due pagine sotto la pagina **[!UICONTROL Prodotti]** . Per ogni pagina, c
 
 
 
-1. In CRXDE Lite, impostare una descrizione e una data per la pagina Prodotto 2:
+1. In CRXDE Lite, imposta una descrizione e una data per la pagina Prodotto 2:
 
    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node.
    1. Nella scheda **[!UICONTROL Proprietà]** , immettete i seguenti valori:
@@ -848,13 +848,13 @@ Si presenterà come segue:
 
 >[!NOTE]
 >
-> Adobe Experience Manager fornisce un componente logo più completo ( `/libs/foundation/components/logo`).
+>Adobe Experience Manager offre un componente logo più completo ( `/libs/foundation/components/logo`).
 
 #### Creazione del nodo componente logo {#creating-the-logo-component-node}
 
 Per creare il componente logo, effettuate le seguenti operazioni:
 
-1. In CRXDE Lite, fare clic con il pulsante destro del mouse su /apps/mywebsite/components, selezionare **[!UICONTROL Crea]**, quindi **[!UICONTROL Crea componente]**.
+1. In CRXDE Lite, fate clic con il pulsante destro del mouse su /apps/mywebsite/components, selezionate **[!UICONTROL Crea]**, quindi **[!UICONTROL Crea componente]**.
 1. Nella finestra di dialogo Crea componente, immettete i seguenti valori di proprietà e fate clic su Avanti:
 
    * **[!UICONTROL Etichetta]**: `logo`.
@@ -1044,7 +1044,7 @@ Questa sezione descrive come impostare un’immagine come logo utilizzando la fi
 
 In questa sezione viene incluso il componente breadcrumb (trail), che è uno dei componenti di base.
 
-1. In CRXDE Lite, individuare `/apps/mywebsite/components/contentpage`, aprire il file `center.jsp` e sostituire:
+1. In CRXDE Lite, individuate `/apps/mywebsite/components/contentpage`, aprite il file `center.jsp` e sostituite:
 
    ```java
    <div>trail</div>
@@ -1065,7 +1065,7 @@ In questa sezione viene incluso il componente breadcrumb (trail), che è uno dei
 
 In questa sezione viene incluso il componente titolo, uno dei componenti di base.
 
-1. In CRXDE Lite, individuare `/apps/mywebsite/components/contentpage`, aprire il file `center.jsp` e sostituire:
+1. In CRXDE Lite, individuate `/apps/mywebsite/components/contentpage`, aprite il file `center.jsp` e sostituite:
 
    ```xml
    <div>title</div>
@@ -1113,7 +1113,7 @@ Create un componente per visualizzare un’immagine nel sistema di paragrafi. Pe
 
 >[!NOTE]
 >
-> Adobe Experience Manager fornisce un componente immagine più completo ( `/libs/foundation/components/image`).
+>Adobe Experience Manager offre un componente immagine più completo ( `/libs/foundation/components/image`).
 
 #### Creazione del componente Immagine {#creating-the-image-component-1}
 
@@ -1223,7 +1223,7 @@ In questa sezione viene incluso il componente della barra degli strumenti, che �
 
 Sono disponibili diverse opzioni, sia in modalità di modifica che in modalità di progettazione.
 
-1. In CRXDE Lite, andate a `/apps/mywebsite/components/contentpage`, aprite il `body.jsp` file e individuate il seguente codice:
+1. In CRXDE Lite , andate a `/apps/mywebsite/components/contentpage`, aprite il `body.jsp` file e individuate il seguente codice:
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1235,7 +1235,7 @@ Sono disponibili diverse opzioni, sia in modalità di modifica che in modalità 
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. Nella struttura delle cartelle della pagina Siti Web di AEM, selezionate `Websites/My Website/English`, quindi fate clic su **[!UICONTROL Nuovo > Nuova pagina]**. Specificate i seguenti valori di proprietà e fate clic su Crea:
+1. Nella struttura delle cartelle della pagina AEM Siti Web, selezionate `Websites/My Website/English`, quindi fate clic su **[!UICONTROL Nuovo > Nuova pagina]**. Specificate i seguenti valori di proprietà e fate clic su Crea:
 
    * **[!UICONTROL Titolo]**: Barra degli strumenti
    * Seleziona modello pagina contenuto **[!UICONTROL sito Web personale]**
@@ -1510,7 +1510,7 @@ In questa sezione viene incluso il componente Iparsys (Inheritance Paragraph Sys
 
 Per questo componente potete impostare diversi parametri sia in modalità di modifica che in modalità di progettazione.
 
-1. In CRXDE Lite, individuate `/apps/mywebsite/components/contentpage`, aprite il file `right.jsp` e sostituite:
+1. In CRXDE Lite , andate a `/apps/mywebsite/components/contentpage`, aprite il file `right.jsp` e sostituite:
 
    ```java
    <div>iparsys</div>
