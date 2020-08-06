@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 translation-type: tm+mt
 source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 98%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
 I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md).
 
-Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante la creazione di pagine di contenuto.
+Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
-Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuti strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite i Content Services a canali diversi dalle pagine AEM.
+Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >
@@ -33,13 +36,14 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuti 
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base e spiega come creare e gestire i frammenti.
 
 I frammenti di contenuto si prestano alle seguenti applicazioni:
 
@@ -53,7 +57,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 
 * **Copywriter**
 
-   * Creazione di contenuti nell’Editor frammento di contenuto di AEM.
+   * Creazione di contenuti nell’editor frammento di contenuto di AEM.
    * Creazione di varianti del contenuto.
    * Associazione di contenuti rilevanti ai frammenti di contenuto.
    * Uso delle funzioni di gestione versioni/flusso di lavoro.
@@ -67,21 +71,22 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
    * Garanzia che i contenuti multimediali associati sono sempre vagliati e selezionati in base alla loro rilevanza.
    * Possibilità di creare al volo varianti di contenuto ad hoc, con la garanzia che queste restano comunque gestite a livello centrale nel frammento.
 
-## Aggiunta di un frammento di contenuto alla pagina {#adding-a-content-fragment-to-your-page}
+## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
 
 1. Apri la pagina per la modifica.
 
 1. Aggiungi il componente **[!UICONTROL Frammento di contenuto]** dal browser **[!UICONTROL Componenti]** o mediante il comando **[!UICONTROL Inserisci nuovo componente]**.
 
-1. Puoi:
+1. Puoi effettuare le seguenti operazioni:
 
-   * Open the **[!UICONTROL Assets]** browser and filter for **[!UICONTROL Content Fragments]** (the default is Images). Quindi, trascina il frammento desiderato sull’istanza di componente.
-   * Seleziona il componente del frammento di contenuto, quindi **[!UICONTROL Configura]** dalla barra degli strumenti. Nella finestra di dialogo, apri finestra di dialogo per sfogliare e selezionare il **[!UICONTROL Frammento di contenuto]** necessario.
+   * Apri il browser **[!UICONTROL Risorse]** e applica il filtro **[!UICONTROL Frammenti di contenuto]** (l’impostazione predefinita è Immagini). Quindi, trascina il frammento desiderato sull’istanza di componente.
+   * Seleziona il componente del frammento di contenuto, quindi **[!UICONTROL Configura]** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **[!UICONTROL frammento di contenuto]** richiesto.
+
    >[!NOTE]
    >
-   >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente sulla pagina. In questo modo verrà creato automaticamente il componente associato (frammento di contenuto).
+   >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente nella pagina. In questo modo verrà creato automaticamente il componente associato (Frammento di contenuto).
 
-1. Initially the content from the **[!UICONTROL Main]** Element and **[!UICONTROL Master]** (variation) will be shown. Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), come richiesto.
+1. Inizialmente verrà visualizzato il contenuto dell’**[!UICONTROL elemento principale]** e la **[!UICONTROL pagina mastro]** (variante). Puoi [selezionare altri elementi e/o varianti](#selecting-the-element-or-variation), secondo necessità.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -112,6 +117,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
    * L’elemento predefinito **[!UICONTROL Principale]** è sempre disponibile.
    * Una selezione è disponibile se il frammento è stato creato con un modello appropriato. 
+
    >[!NOTE]
    >
    >Gli elementi disponibili dipendono dal modello utilizzato.
@@ -130,7 +136,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **[!UICONTROL Tratta le intestazioni come paragrafi propri]**
 
-## Collegamento rapido all’Editor frammento di contenuto {#quick-connection-to-fragment-editor}
+## Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **[!UICONTROL Modifica]** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments.md).
 
@@ -138,7 +144,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-## Aggiunta di contenuto intermedio {#adding-in-between-content}
+## Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **[!UICONTROL Trascina qui i componenti]** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -148,7 +154,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 * Aggiungere componenti dal [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
 * Aggiungere risorse dal [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser).
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* Usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]
 >
@@ -164,18 +170,19 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 >[!CAUTION]
 >
->Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’Editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
+>Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
 >
->In questi casi, il contenuto intermedio viene mantenuto inalterato:
+>In questi casi, il contenuto intermedio rimane inalterato:
 >
 >* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.\
-   >  Questo può far apparire il paragrafo come se fosse stato modificato il posizionamento relativo, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (frammento) a cui sono posizionati accanto.
+   >  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
+
 >
 
 
 
-## Uso di contenuti associati {#using-associated-content}
+## Uso di contenuti associati  {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
@@ -187,7 +194,7 @@ Se hai [associato del contenuto](/help/assets/content-fragments-assoc-content.md
 >
 >Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **[!UICONTROL Contenuto associato]** visualizza le risorse appropriate per tutti i frammenti.
 
-Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**[!UICONTROL Contenuto associato]**) . 
+Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**[!UICONTROL Contenuto associato]**).
 
 Da qui puoi trascinare le risorse nella posizione richiesta (su un componente esistente o nella posizione in cui sarà creato il componente appropriato):
 
@@ -197,7 +204,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 Se sono state inserite [risorse (ad es. immagini) nel frammento stesso,](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment) le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.
 
-Ad esempio, per un’immagine è possibile
+Ad esempio, per un’immagine è possibile:
 
 * Ritagliare, ruotare o capovolgere l’immagine.
 * Aggiungere un titolo o testo alternativo.
@@ -208,7 +215,7 @@ Altre modifiche, come spostamento, copia, eliminazione devono essere eseguite ne
 
 ## Pubblicazione {#publishing}
 
-I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle pagine Web pubblicate:
+I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle pagine web pubblicate:
 
 * Un frammento può essere pubblicato dopo che è stato [creato nella console Risorse](/help/assets/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Se in una pagina in corso di pubblicazione viene utilizzato un *frammento non pubblicato*, è possibile pubblicare anche quest’ultimo allo stesso tempo.
