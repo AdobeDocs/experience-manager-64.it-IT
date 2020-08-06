@@ -1,8 +1,8 @@
 ---
 title: Proprietà di configurazione della gestione della corrispondenza
 seo-title: Proprietà di configurazione della gestione della corrispondenza
-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
-seo-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
+description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte dettagliatamente le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
+seo-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte dettagliatamente le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 3%
 
 ---
 
 
 # Proprietà di configurazione della gestione della corrispondenza {#correspondence-management-configuration-properties}
 
-Per configurare queste proprietà, aprite il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionate **Configurazioni** di gestione della corrispondenza.
+Per configurare queste proprietà, aprite il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionate Configurazioni **di gestione della corrispondenza**.
 
 Gestione corrispondenza ha le seguenti proprietà di configurazione:
 
@@ -161,7 +164,7 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
    <td>--<p> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Gestisci istanze lettera su pubblicazione</p> </td> 
+   <td><p>Gestisci istanze di lettere su Pubblica</p> </td> 
    <td><p>Abilitare/disabilitare la funzionalità Gestisci lettere (applicabile solo per Publish Server)</p> </td> 
    <td><p>false</p> </td> 
    <td><p>true / false</p> </td> 
@@ -264,7 +267,7 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   </tr> 
   <tr> 
    <td><p>Ricarica assistenza</p> </td> 
-   <td><p>Attiva/Disattiva il supporto per il ricaricamento in lettere sottoposte a rendering sul lato server.</p> <p>La disabilitazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td> 
+   <td><p>Abilitare/disabilitare il supporto per il ricaricamento in lettere sottoposte a rendering sul lato server.</p> <p>La disabilitazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td> 
    <td><p>false</p> </td> 
    <td><p>true / false</p> <p> </p> </td> 
   </tr> 
@@ -283,7 +286,7 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   <tr> 
    <td>Opzioni di compatibilità</td> 
    <td>Opzioni di compatibilità del formato configname:configvalue separate da virgola.</td> 
-   <td>acm.compatibleOptions</td> 
+   <td>acm.compatibilityOptions</td> 
    <td> </td> 
   </tr> 
   <tr> 
