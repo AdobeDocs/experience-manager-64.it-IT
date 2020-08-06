@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
@@ -17,11 +20,11 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 È possibile definire l&#39;aspetto e lo stile complessivi di un modulo adattivo specificando gli stili mediante l&#39;editor [](/help/forms/using/themes.md)tema. Inoltre, potete applicare stili CSS in linea a singoli componenti di moduli adattivi e visualizzare rapidamente l&#39;anteprima delle modifiche. Gli stili in linea sostituiscono lo stile fornito nel tema.
 
-## Applica proprietà CSS in linea {#apply-inline-css-properties}
+## Applicare proprietà CSS in linea {#apply-inline-css-properties}
 
 Per aggiungere stili in linea a un componente:
 
-1. Aprire il modulo nell&#39;editor del modulo e passare alla modalità stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina toccate ![quadro a discesa](assets/canvas-drop-down.png) > **Stile**.
+1. Aprire il modulo nell&#39;editor del modulo e passare alla modalità di stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina toccate ![quadro a discesa](assets/canvas-drop-down.png) > **Stile**.
 1. Selezionate un componente nella pagina e toccate il pulsante di ![modifica](assets/edit-button.png). Le proprietà di stile vengono aperte nella barra laterale.
 
    È inoltre possibile selezionare componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura gerarchica del modulo è disponibile come oggetti modulo nella barra laterale.
@@ -32,7 +35,7 @@ Per aggiungere stili in linea a un componente:
 
 1. Fate clic su una scheda nella barra laterale per specificare le proprietà CSS. È possibile specificare proprietà quali:
 
-   * Dimensioni e posizione (impostazione visualizzazione, spaziatura, altezza, larghezza, margine, posizione, indice z, float, cancellazione, overflow)
+   * Dimension e posizione (impostazione visualizzazione, spaziatura, altezza, larghezza, margine, posizione, indice z, float, cancellazione, overflow)
    * Testo (famiglia di font, spessore, colore, dimensione, altezza e allineamento)
    * Sfondo (immagine e sfumatura, colore di sfondo)
    * Bordo (larghezza, stile, colore, raggio)
@@ -64,7 +67,7 @@ Osservate la modifica nello stile della casella di testo come illustrato nell&#3
    <td><p>Campo</p> </td> 
    <td><p>border</p> </td> 
    <td><p>Larghezza bordo = 2px</p> <p>Stile bordo=Uniforme</p> <p>Colore del bordo=#1111</p> </td> 
-   <td><p>Crea un bordo largo 2 pixel nero intorno al campo.</p> </td> 
+   <td><p>Crea un bordo largo 2 px nero intorno al campo.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Casella di testo</p> </td> 
@@ -93,7 +96,7 @@ Osservate la modifica nello stile della casella di testo come illustrato nell&#3
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Stile casella di testo dopo l’applicazione **dello stile in linea** Figura: Componente casella *di testo dopo l&#39;applicazione delle proprietà dello stile in linea*
+![Stile casella di testo dopo l’applicazione](assets/applied-style.png)dello stile in linea **Figura:** *Componente casella di testo dopo l&#39;applicazione delle proprietà di stile in linea*
 
 Seguendo i passaggi descritti qui sopra, è possibile selezionare e formattare altri componenti, ad esempio pannelli, pulsanti di invio e pulsanti di scelta.
 
