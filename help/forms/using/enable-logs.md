@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 6%
 
 ---
 
@@ -176,7 +179,7 @@ Ad esempio:
 Se utilizzate Configuration Manager per abilitare la registrazione, vengono generati dei registri per ogni richiesta di rendering finché la registrazione non viene nuovamente disattivata.
 
 1. Accedete a CQ Configuration Manager in `https://[server]:[port]/system/console/configMgr` e accedete con le credenziali di amministratore.
-1. Cercare e fare clic su Configurazioni **di moduli** mobili.
+1. Cercate e fate clic su Configurazioni **Forms** mobili.
 1. Nella casella di testo Opzioni di debug, immettete le configurazioni di registro come descritto nella sezione precedente, ad esempio, **2-a4-b5-c6**
 
    ![Configurazione dei moduli](assets/forms_configuration.png)
