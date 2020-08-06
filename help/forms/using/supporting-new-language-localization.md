@@ -1,8 +1,8 @@
 ---
 title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
 seo-title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
-seo-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
+description: ' AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.'
+seo-description: ' AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.'
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
 source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari di lingua
 
 **Dizionario** specifico per il modulo Contiene le stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi di campi, messaggi di errore, descrizioni della guida e così via. È gestito come un set di file XLIFF per ogni lingua e può essere utilizzato all&#39;indirizzo https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
-**Dizionari** globali Nella libreria client AEM sono presenti due dizionari globali, gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni impostazione internazionale. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
+**Dizionari** globali Esistono due dizionari globali, gestiti come oggetti JSON, AEM libreria client. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni impostazione internazionale. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
 
 ### Funzionamento della localizzazione del modulo adattivo {#how-localization-of-adaptive-form-works}
 
@@ -44,7 +47,7 @@ Se non esiste una libreria client per l&#39;impostazione internazionale richiest
 
 ## Aggiunta del supporto per la localizzazione per le lingue non supportate {#add-localization-support-for-non-supported-locales}
 
-AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR, cinese-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
+ AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR, cinese-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
 Per aggiungere il supporto per una nuova impostazione internazionale in fase di esecuzione dei moduli adattivi:
 
