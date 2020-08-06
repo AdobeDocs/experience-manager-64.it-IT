@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Durante la creazione di un processo, l&#39;utente di Workbench può specificare 
 
    **Ricerca per nome**
 
-   Selezionate l’opzione Cerca per nome. Digitate tutto o parte del nome utente e fate clic su Trova. Se il campo viene lasciato vuoto, il flusso di lavoro di Forms restituisce un elenco di tutti gli utenti
+   Selezionate l’opzione Cerca per nome. Digitate tutto o parte del nome utente e fate clic su Trova. Se lasciate vuoto il campo, il flusso di lavoro di Forms restituisce un elenco di tutti gli utenti
 
    **Cerca per intervallo di date**
 
@@ -64,7 +67,7 @@ Mentre un utente è fuori ufficio, potete assegnare uno o più utenti per esegui
    1. Fate clic sul nome dell’utente che desiderate modificare.
    1. Nell&#39;elenco Attività predefinite utente per fuori ufficio, selezionare un utente dall&#39;elenco. Se non si desidera designare un utente predefinito per ricevere gli elementi riassegnati, selezionare Non assegnare.
 
-      Se il nome utente appropriato non compare nell’elenco, fate clic su Trova utente e utilizzate la finestra di dialogo Trova utente per cercare l’utente. Selezionate l’utente appropriato dall’elenco e fate clic su Seleziona utente. Potete anche fare clic su Visualizza pianificazione utente nella finestra di dialogo Trova utente per visualizzare la pianificazione non in ufficio dell’utente selezionato.
+      Se il nome utente appropriato non viene visualizzato nell’elenco, fate clic su Trova utente e utilizzate la finestra di dialogo Trova utente per cercare l’utente. Selezionate l’utente appropriato dall’elenco e fate clic su Seleziona utente. Potete anche fare clic su Visualizza pianificazione utente nella finestra di dialogo Trova utente per visualizzare la pianificazione non in ufficio dell’utente selezionato.
 
    1. Se sono presenti processi che non devono essere inviati all&#39;utente predefinito, fare clic su Aggiungi un&#39;eccezione, quindi selezionare il processo e selezionare un altro utente dall&#39;elenco. È inoltre possibile selezionare Non assegnare per fare in modo che l&#39;attività rimanga assegnata all&#39;utente fuori ufficio.
    1. Fate clic su Salva.
