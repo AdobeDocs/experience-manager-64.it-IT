@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 28%
 
 ---
 
@@ -27,10 +30,10 @@ Consultate anche Panoramica della [cache in Dynamic Media Classic (Scene7)](http
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
-   Le credenziali e l&#39;accesso sono stati forniti da Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
+   Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
-1. Nella pagina Impostazioni generali applicazione, nella sezione Server del gruppo, individuate la casella di testo Modello **[!UICONTROL di annullamento validità]** CDN.
+1. Nella pagina Impostazioni generali applicazione, nella sezione Server del gruppo, individuare la casella di testo Modello **[!UICONTROL di annullamento validità]** CDN.
 
 1. Specificate il modello utilizzato per invalidare la cache CDN (Content Delivery Network).
 
