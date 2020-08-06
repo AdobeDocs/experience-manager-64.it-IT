@@ -1,6 +1,6 @@
 ---
-title: Data Modeling - Modello di David Nuescheler
-seo-title: Data Modeling - Modello di David Nuescheler
+title: Modellazione dei dati - Modello di David Nuescheler
+seo-title: Modellazione dei dati - Modello di David Nuescheler
 description: Raccomandazioni di David Nuescheler sulla modellazione dei contenuti
 seo-description: Raccomandazioni di David Nuescheler sulla modellazione dei contenuti
 uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 0%
 
 ---
 
 
-# Data Modeling - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
+# Modellazione dei dati - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Origine {#source}
 
 I seguenti dettagli sono idee e commenti espressi da David Nuescheler.
 
-David è stato co-fondatore e CTO of Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura a livello globale, richiesto da Adobe nel 2010. È ora membro e vicepresidente della tecnologia Enterprise di Adobe e guida lo sviluppo di JSR-170, l&#39;API (Application Programming Interface) Java Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
+David è stato co-fondatore e CTO of Day Software AG, uno dei principali fornitori di software globali per la gestione dei contenuti e l&#39;infrastruttura dei contenuti, richiesto  Adobe nel 2010. È ora membro e vicepresidente di Enterprise Technology  Adobe e guida lo sviluppo di JSR-170, l&#39;API (Application Programming Interface) Java Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
 
 Ulteriori aggiornamenti sono disponibili su [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
@@ -73,7 +76,7 @@ Personalmente preferisco le convenzioni gerarchiche rispetto al sistema di digit
 
 >[!CAUTION]
 >
->Anche la struttura di un archivio dei contenuti può influire sulle prestazioni. Per ottenere prestazioni ottimali, il numero di nodi secondari associati a singoli nodi in un archivio dei contenuti non deve in genere superare 1000.
+>Anche la struttura di un archivio dei contenuti può avere un impatto sulle prestazioni. Per ottenere prestazioni ottimali, il numero di nodi secondari associati a singoli nodi in un archivio dei contenuti non deve in genere superare 1000.
 >
 >Vedere [Quanti dati è in grado di gestire il CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) per ulteriori informazioni.
 
@@ -101,7 +104,7 @@ Utilizzando il modello di contenuto sopra riportato, posso facilmente consentire
 
 #### Spiegazione {#explanation-3}
 
-Se non si utilizzano `clone()`, `merge()` o `update()` metodi nell&#39;applicazione è probabile che un&#39;unica area di lavoro sia la strada giusta.
+Se non si utilizzano `clone()`, `merge()` o `update()` metodi nell&#39;applicazione è probabile che un&#39;unica area di lavoro sia la strada da seguire.
 
 &quot;nodi corrispondenti&quot; è un concetto definito nella specifica JCR. Essenzialmente, si riduce a nodi che rappresentano lo stesso contenuto, in diverse aree di lavoro.
 
@@ -178,7 +181,7 @@ Se un modello di contenuto espone qualcosa che ha anche un *odore* remoto come u
 
 Nella mia esperienza molte applicazioni generiche consentono l&#39;interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se sono arricchiti con ulteriori metadati. Ad esempio, un&#39;interazione diretta con le implementazioni del file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
 
-Credo che, come buona regola, si possa usare quanto segue: Se dovete memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una corrispondenza molto buona. Se si possono avere più &quot;file&quot;, un nt:folder è un buon punto in cui memorizzarli.
+Credo che, come buona regola del pollice, si possa usare quanto segue: Se dovete memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una corrispondenza molto buona. Se si possono avere più &quot;file&quot;, un nt:folder è un buon punto in cui memorizzarli.
 
 Se è necessario aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendere `nt:resource` non la `nt:file`. Estendo raramente nt:file e frequentemente `nt:resource`.
 
@@ -206,7 +209,7 @@ Anche se ci sono sicuramente buoni casi d&#39;uso per utilizzare solo una propri
 
 Nei database relazionali gli ID sono un mezzo necessario per esprimere le relazioni, in modo che le persone tendono ad utilizzarli anche nei modelli di contenuto. Principalmente per le ragioni sbagliate.
 
-Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente non state utilizzando correttamente la gerarchia.
+Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente non state sfruttando correttamente la gerarchia.
 
 È vero che alcuni nodi necessitano di un&#39;identificazione stabile durante tutto il loro ciclo di vita. Molto meno di quanto potresti pensare. mix:referenceable fornisce un meccanismo di questo tipo integrato nel repository, quindi non c&#39;è davvero bisogno di trovare un modo aggiuntivo per identificare un nodo in modo stabile.
 
