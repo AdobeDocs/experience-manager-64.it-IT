@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
 source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 13%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](../release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](../release-notes/sp-release-notes.md).
 
 I modelli di frammenti di contenuto definiscono la struttura del contenuto per i frammenti [di](content-fragments.md)contenuto.
 
-## Abilita modelli di frammenti di contenuto {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -43,6 +46,7 @@ Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento d
 
    1. Specificate un **[!UICONTROL titolo]**.
    1. Selezionare Modelli **[!UICONTROL di frammenti di]** contenuto per attivarne l&#39;uso.
+
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selezionate **[!UICONTROL Crea]** per salvare la definizione.
@@ -56,7 +60,7 @@ Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escl
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
 1. Passa a **[!UICONTROL Strumenti]**, **[!UICONTROL Risorse]**, quindi apri Modelli **[!UICONTROL di frammenti di]** contenuto.
-1. Andate alla cartella appropriata per la [configurazione](#enable-content-fragment-models).
+1. Individuate la cartella appropriata per la [configurazione](#enable-content-fragment-models).
 1. Utilizzare **[!UICONTROL Crea]** per aprire la procedura guidata.
 
    >[!CAUTION]
@@ -75,7 +79,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
 >[!CAUTION]
 >
->La modifica di un modello di frammento di contenuto esistente può influenzare i frammenti dipendenti.
+>La modifica di un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti.
 
 1. Passa a **[!UICONTROL Strumenti]**, **[!UICONTROL Risorse]**, quindi apri Modelli **[!UICONTROL di frammenti di]** contenuto.
 
@@ -86,6 +90,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    * left: campi già definiti
    * A destra: **[!UICONTROL Tipi di dati]** disponibili per la creazione di campi, oltre alle **[!UICONTROL Proprietà]** da utilizzare dopo la creazione.
+
    >[!NOTE]
    >
    >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
@@ -95,9 +100,11 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 1. **Aggiunta di un campo**
 
    * Trascinare un tipo di dati richiesto nella posizione desiderata per un campo:
-   ![cfm-6420-12](assets/cfm-6420-11.png)
+
+   ![cfm-6420-11](assets/cfm-6420-11.png)
 
    * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Ad esempio:
+
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
 1. **Rimozione di un campo**
@@ -140,5 +147,5 @@ Per pubblicare un modello di frammento di contenuto:
 
    >[!NOTE]
    >
-   >Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato con il frammento.
+   >Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
 
