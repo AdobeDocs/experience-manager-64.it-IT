@@ -228,13 +228,13 @@ I tag XML per i dati utente inviati per vari campi vengono generati utilizzando 
 
 ## Configurazione del servizio di precompilazione tramite Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Per abilitare il servizio di precompilazione, specificate la Configurazione predefinita del servizio di precompilazione nella configurazione della console Web di AEM. Per configurare il servizio Precompila, effettuate le seguenti operazioni:
+Per abilitare il servizio di precompilazione, specificate la Configurazione predefinita del servizio di precompilazione nella Configurazione AEM console Web. Per configurare il servizio Precompila, effettuate le seguenti operazioni:
 
 >[!NOTE]
 >
 >Precompila configurazione del servizio è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
-1. Apri la configurazione **[!UICONTROL della console Web di]** Adobe Experience Manager utilizzando l&#39;URL:\
+1. Apri Configurazione **[!UICONTROL console Web]** Adobe Experience Manager utilizzando l&#39;URL:\
    https://&lt;server>:&lt;porta>/sistema/console/configMgr
 1. Cercate e aprite la configurazione **** predefinita del servizio di precompilazione.
 
@@ -244,9 +244,10 @@ Per abilitare il servizio di precompilazione, specificate la Configurazione pred
 
    * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
-   >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di moduli adattivi (XSD, XDP, JSON, FDM e nessun modello di modulo). La precompilazione è consentita solo per i file JSON e XML.
+   >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di Forms adattivo (XSD, XDP, JSON, FDM e nessun modello di modulo). La precompilazione è consentita solo per i file JSON e XML.
 
 1. Il servizio di precompilazione è ora configurato per il modulo.
 
@@ -334,22 +335,22 @@ precompila pagina component.zip
 
 [Ottieni file](assets/prefill-page-component.zip)esempio prefill.jsp nel componente pagina
 
-## Servizio di precompilazione personalizzato di AEM Forms {#aem-forms-custom-prefill-service}
+##  servizio di precompilazione personalizzato AEM Forms {#aem-forms-custom-prefill-service}
 
 Potete utilizzare il servizio di precompilazione personalizzato per gli scenari, in cui leggete costantemente i dati da un&#39;origine predefinita. Il servizio di precompilazione legge i dati da origini dati definite e compila i campi del modulo adattivo con il contenuto del file di dati di precompilazione. Consente inoltre di associare in modo permanente i dati precompilati a un modulo adattivo.
 
 ### Creare ed eseguire un servizio di precompilazione {#create-and-run-a-prefill-service}
 
-Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle AEM Forms. Prima di iniziare a creare il bundle:
+Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo  bundle AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+* [Download dell&#39;SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * [Scarica il pacchetto ricorrenti](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Inserire il file di dati (dati di precompilazione) nell&#39;archivio crx. È possibile posizionare il file in qualsiasi posizione nella cartella \contents di crx-repository.
 
 #### Creare un servizio di precompilazione {#create-a-prefill-service}
 
-Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) contiene un esempio di implementazione del servizio di precompilazione AEM Forms. Aprite il pacchetto ricorrenti in un editor di codice. Ad esempio, apri il progetto ricorrenti in Eclipse per la modifica. Dopo aver aperto il pacchetto standard in un editor di codice, eseguite i seguenti passaggi per creare il servizio.
+Il pacchetto ricorrenti (pacchetto del servizio di precompilazione di esempio) contiene un esempio di implementazione  servizio di precompilazione AEM Forms. Aprite il pacchetto ricorrenti in un editor di codice. Ad esempio, apri il progetto ricorrenti in Eclipse per la modifica. Dopo aver aperto il pacchetto standard in un editor di codice, eseguite i seguenti passaggi per creare il servizio.
 
 1. Aprite il file src\main\java\com\adobe\test\Prefill.java per la modifica.
 1. Nel codice, imposta il valore di:
@@ -363,9 +364,9 @@ Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) con
 
 #### Avviare e utilizzare il servizio di precompilazione {#start-and-use-the-prefill-service}
 
-Per avviare il servizio di precompilazione, caricate il file JAR nella console Web di AEM Forms e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
+Per avviare il servizio di precompilazione, caricate il file JAR  AEM Forms Web Console e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
 
-1. Aprire il modulo adattivo in Forms Editor e il pannello Proprietà per il contenitore del modulo.
-1. Nella console Proprietà, andate al contenitore Moduli **[!UICONTROL AEM > Base > Servizio]** di precompilazione.
+1. Aprire il modulo adattivo in Forms Editor e aprire il pannello Proprietà per il contenitore del modulo.
+1. Nella console Proprietà, accedete a **[!UICONTROL contenitore AEM Forms > Base > Precompila servizio]**.
 1. Selezionate il servizio di precompilazione predefinito e fate clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
 
