@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Il pacchetto **com.adobe.cq.social.ugcbase.SocialUtils** è stato dichiarato obs
 
 Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi SocialUtils.
 
-## Pacchetto SocialResourceUtilities {#socialresourceutilities-package}
+## Pacchetto SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Metodi in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -73,7 +76,7 @@ Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi 
 | isResourceOwner(Risorsa risorsa risorsa) booleana |
 | String mapUGCPath(Risorsa risorsa) |
 | String mapUGCPath(String ugcPath, ResourceResolver) |
-| canPost(ResourceResolver, Resource Resource) booleano |
+| canPostBooleano(ResourceResolver, Resource Resource) |
 | String PrepareUserGeneratedContent(ResourceResolver, percorso stringa) |
 
 ## Metodi non più disponibili {#methods-no-longer-available}
