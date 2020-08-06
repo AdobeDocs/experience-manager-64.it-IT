@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Ogni pagina dispone di un set di [proprietà](/help/sites-authoring/editing-page
 
 Lo stato predefinito per ogni proprietà pagina è:
 
-* nascosta nella visualizzazione di creazione (ad esempio, **Creazione guidata pagina** )
+* nascosta nella visualizzazione di creazione (ad esempio, procedura guidata **Crea pagina** )
 
 * disponibile nella visualizzazione di modifica (ad esempio, **Visualizza proprietà**)
 
@@ -58,7 +61,7 @@ Ad esempio, vedere le impostazioni per i campi raggruppati in **Altri titoli e D
 Ad esempio, per impostazione predefinita, la procedura guidata [**Crea pagina **mostra i campi raggruppati in](/help/sites-authoring/managing-pages.md#creating-a-new-page)Altri titoli e Descrizione****. Per nascondere questi elementi è necessario configurare:
 
 1. Create il componente della pagina in `/apps`.
-1. Creare un override (utilizzando la *finestra di dialogo* fornita dalla fusione [risorse](/help/sites-developing/sling-resource-merger.md)Sling) per la `basic` sezione del componente della pagina; ad esempio:
+1. Creare un override (utilizzando la *finestra di dialogo* fornita dalla fusione [di risorse](/help/sites-developing/sling-resource-merger.md)Sling) per la `basic` sezione del componente della pagina; ad esempio:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -100,13 +103,14 @@ Ad esempio, per impostazione predefinita, la procedura guidata [**Crea pagina **
    * **Nome**: `cq:showOnCreate`
    * **Tipo**: `Boolean`
    * **Valore**: `false`
+
    La sezione **Altri titoli e descrizioni** non verrà più visualizzata nella procedura guidata **Crea pagina** .
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [Configurazione dei blocchi MSM sulle proprietà](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) di pagina per l&#39;utilizzo con copie dal vivo.
+>Per ulteriori informazioni, vedere [Configurazione dei blocchi MSM sulle proprietà](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) di pagina per la configurazione delle proprietà di pagina da utilizzare con le copie dal vivo.
 
-## Configurazione di esempio delle proprietà pagina {#sample-configuration-of-page-properties}
+## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 
 Questo esempio illustra la tecnica della finestra di dialogo delle differenze della fusione delle risorse [Sling](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Inoltre illustra l&#39;uso di `cq:showOnCreate` e `cq:hideOnEdit`.
 
