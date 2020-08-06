@@ -1,8 +1,8 @@
 ---
 title: OWASP Top 10
 seo-title: OWASP Top 10
-description: Scopri in che modo AEM gestisce i 10 principali rischi per la sicurezza OWASP.
-seo-description: Scopri in che modo AEM gestisce i 10 principali rischi per la sicurezza OWASP.
+description: Scopri come AEM gestire i 10 principali rischi di protezione OWASP.
+seo-description: Scopri come AEM gestire i 10 principali rischi di protezione OWASP.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -46,13 +46,13 @@ L&#39;accesso agli oggetti dati è gestito dall&#39;archivio e pertanto limitato
 
 ## 5. Modulo di richiesta intersito (CSRF) {#cross-site-request-forgery-csrf}
 
-Il CSRF (Cross-Site Request Forgery) è attenuato dall&#39;inserimento automatico di un token di crittografia in tutti i moduli e le richieste AJAX e dalla verifica del token sul server per ogni POST.
+Il CSRF (Cross-Site Request Forgery) è attenuato dall&#39;invio automatico di un token di crittografia in tutti i moduli e le richieste di AJAX e dalla verifica del token sul server per ogni POST.
 
-Inoltre, AEM viene fornito con un filtro basato sull’intestazione del referente, che può essere configurato per consentire *solo* richieste POST da host specifici (definito in un elenco).
+Inoltre, AEM viene fornito con un filtro basato sull&#39;intestazione del referente, che può essere configurato per consentire *solo* richieste di POST da host specifici (definito in un elenco).
 
 ## 6. Protezione non configurata {#security-misconfiguration}
 
-È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci sforziamo di fornire il maggior numero possibile di indicazioni e rendere la configurazione il più semplice possibile. Inoltre, AEM viene fornito con controlli di sicurezza [integrati](/help/sites-administering/operations-dashboard.md) che consentono di monitorare rapidamente la configurazione di sicurezza.
+È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci sforziamo di fornire il maggior numero possibile di indicazioni e rendere la configurazione il più semplice possibile. Inoltre, AEM navi con controlli di sicurezza [integrati](/help/sites-administering/operations-dashboard.md) che aiutano a monitorare la configurazione di sicurezza in un colpo d&#39;occhio.
 
 Per ulteriori informazioni, consulta l&#39;elenco [di controllo](/help/sites-administering/security-checklist.md) della sicurezza che fornisce istruzioni dettagliate per l&#39;inasprimento delle procedure.
 
