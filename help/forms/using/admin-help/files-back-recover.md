@@ -61,7 +61,7 @@ Se si seleziona l&#39;opzione &quot;Abilita archiviazione documenti nel database
 
 ## AEM repository {#aem-repository}
 
-AEM repository (crx-repository) viene creato se è configurato crx-repository durante l&#39;installazione AEM moduli. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. AEM repository è necessario eseguire il backup e il ripristino, insieme al database e al GDS, per garantire la coerenza dei dati AEM moduli nei moduli AEM. AEM repository contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e l&#39;area di lavoro AEM Forms.
+AEM repository (crx-repository) viene creato se è configurato crx-repository durante l&#39;installazione AEM moduli. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. AEM repository è necessario eseguire il backup e il ripristino, insieme al database e al GDS, per garantire la coerenza dei dati AEM moduli nei moduli AEM. AEM repository contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e  AEM Forms Workspace.
 
 ### Soluzione per la gestione della corrispondenza {#correspondence-management-solution}
 
@@ -73,9 +73,9 @@ Una semplice configurazione della soluzione di gestione della corrispondenza inc
 
 gestione moduli semplifica il processo di aggiornamento, gestione e ritiro dei moduli.
 
-### Area di lavoro AEM Forms {#html-workspace}
+###  AEM Forms Workspace {#html-workspace}
 
-AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i moduli AEM su JEE) e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
+ AEM Forms Workspace combina le funzionalità dei moduli (obsoleti per AEM su JEE) Flex Workspace e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
 >[!NOTE]
 >
@@ -200,6 +200,6 @@ Se sono stati installati font aggiuntivi nell&#39;ambiente AEM moduli, è necess
 
 >[!NOTE]
 >
->Per impostazione predefinita, i font del Adobe  installati con AEM moduli si trovano nella directory principale [/font dei moduli]aem.
+>Per impostazione predefinita, i font  Adobe installati con AEM moduli si trovano nella directory principale [/font dei moduli]aem.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i font del sistema operativo precedente, è necessario eseguire il backup anche del contenuto della directory dei font di sistema. Per istruzioni specifiche, consultate la documentazione del sistema operativo in uso.
