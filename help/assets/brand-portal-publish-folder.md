@@ -1,40 +1,43 @@
 ---
-title: Pubblicare le cartelle su Brand Portal
+title: Pubblicare cartelle su Brand Portal
 description: Scoprite come pubblicare e annullare la pubblicazione delle cartelle in Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 27%
 
 ---
 
 
-# Publish folders to Brand Portal {#publish-folders-to-brand-portal}
+# Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal}
 
-In qualità di amministratore Risorse Adobe Experience Manager (AEM), puoi pubblicare risorse e cartelle nell’istanza del Portale del marchio di AEM Assets (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare AEM Assets con il Portale](configure-aem-assets-with-brand-portal.md)marchio.
+In qualità di amministratore di Adobe Experience Manager (AEM) Assets, puoi pubblicare risorse e cartelle nell’istanza  AEM Assets Brand Portal (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Tuttavia, è prima necessario integrare  AEM Assets con il Portale marchio. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Dopo aver pubblicato una risorsa o una cartella, questa è disponibile per gli utenti in Brand Portal.
 
-Se apportate modifiche successive alla risorsa o alla cartella originale in Risorse AEM, le modifiche non vengono riportate nel Portale marchio fino a quando non ripubblicate la risorsa o la cartella. Questa funzione garantisce che le modifiche in corso non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono disponibili in Brand Portal.
+Se apportate modifiche successive alla risorsa o alla cartella originale in  AEM Assets, le modifiche non verranno applicate al Portale marchio finché non ripubblicate la risorsa o la cartella. Questa funzione garantisce che le modifiche in corso d’opera non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono infatti disponibili in Brand Portal.
 
-## Publish folders to Brand Portal {#publish-folders-to-brand-portal-1}
+## Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Dall’interfaccia di Risorse AEM, passa il mouse sulla cartella desiderata e seleziona l’opzione **[!UICONTROL Pubblica]** dalle azioni rapide.
+1. Dall’interfaccia AEM Assets , passate il mouse sulla cartella desiderata e selezionate l’opzione **[!UICONTROL Pubblica]** dalle azioni rapide.
 
    In alternativa, selezionate la cartella desiderata e seguite i passaggi successivi.
 
    ![publish2bp](assets/publish2bp.png)
 
-2. **Pubblica le cartelle ora**
+2. **Pubblicare subito le cartelle**
 
-   Per pubblicare le cartelle selezionate in Brand Portal, effettuate una delle seguenti operazioni:
+   Per pubblicare le cartelle selezionate su Brand Portal, effettua una delle seguenti operazioni:
 
-   * Dalla barra degli strumenti, selezionate Pubblicazione **** rapida. Dal menu, selezionate **[!UICONTROL Pubblica su Brand Portal]**.
-   * Dalla barra degli strumenti, selezionate **[!UICONTROL Gestisci pubblicazione]**.
+   * Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Dalla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**.
 
 3. Quindi, dall’ **[!UICONTROL azione]** , selezionate **[!UICONTROL Pubblica su Brand Portal]**, quindi, in **[!UICONTROL Pianificazione]** , selezionate **[!UICONTROL Ora]**. Toccate **[!UICONTROL Avanti].**
 4. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Pubblica sul portale]** marchio.
 
-   Viene visualizzato un messaggio che informa che la cartella è stata messa in coda per la pubblicazione sul Brand Portal. Accedete all’interfaccia Brand Portal per visualizzare la cartella pubblicata.
+   Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Accedete all’interfaccia Brand Portal per visualizzare la cartella pubblicata.
 
    **Pubblicare le cartelle in un secondo momento**
 
@@ -45,19 +48,19 @@ Se apportate modifiche successive alla risorsa o alla cartella originale in Riso
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Selezionate una data **[!UICONTROL di]** attivazione e specificate l&#39;ora. Toccate **[!UICONTROL Avanti]**.
-   4. Conferma la selezione nell’ **[!UICONTROL ambito]**. Toccate **[!UICONTROL Avanti]**.
-   5. Specificate un titolo del flusso di lavoro in **[!UICONTROL Flussi di lavoro]**. Toccate **[!UICONTROL Pubblica più tardi]**.
+   3. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccate **[!UICONTROL Avanti]**.
+   4. Conferma la selezione in **[!UICONTROL Ambito]**. Toccate **[!UICONTROL Avanti]**.
+   5. Specifica un titolo del flusso di lavoro in **[!UICONTROL Flussi di lavoro]**. Toccate **[!UICONTROL Pubblica più tardi]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-## Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
+## Annullare la pubblicazione di cartelle su Brand Portal {#unpublish-folders-from-brand-portal}
 
 Potete rimuovere qualsiasi cartella di risorse pubblicata nel Portale marchio annullandone la pubblicazione dall’istanza di AEM Author. Dopo l’annullamento della pubblicazione della cartella originale, la relativa copia non sarà più disponibile per gli utenti di Brand Portal.
 
-Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido oppure pianificarle in un secondo momento. Per annullare la pubblicazione delle cartelle di risorse da Brand Portal:
+Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido oppure pianificarle in un secondo momento. Per annullare la pubblicazione delle cartelle di risorse su Brand Portal:
 
-1. Dall’interfaccia di AEM Assets nell’istanza di AEM Author, selezionate la cartella da annullare la pubblicazione.
+1. Dall&#39;interfaccia AEM Assets  nell&#39;istanza di AEM Author, selezionate la cartella da annullare la pubblicazione.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
@@ -70,6 +73,7 @@ Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido 
    1. Nella pagina **[!UICONTROL Gestisci pubblicazione]** , in **[!UICONTROL Azione]** , selezionate **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Pianificazione]** selezionate **[!UICONTROL Ora]**.
    2. Tap/ click **[!UICONTROL Next].**
    3. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Annulla pubblicazione da Brand Portal]**.
+
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
    **Annulla pubblicazione da Brand Portal in un secondo momento**
@@ -77,11 +81,11 @@ Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido 
    Per pianificare la pubblicazione di una cartella da Brand Portal a una data e un’ora successive:
 
    1. Nella pagina **[!UICONTROL Gestisci pubblicazione]** , in **[!UICONTROL Azione]** , selezionate **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Pianificazione]** selezionate **[!UICONTROL Più tardi].**
-   2. Selezionate una data **[!UICONTROL di]** attivazione e specificate l’ora. Toccate **[!UICONTROL Avanti]**.
+   2. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccate **[!UICONTROL Avanti]**.
    3. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Avanti]**.
-   4. Specificate un titolo **** Flusso di lavoro in **[!UICONTROL Flussi di lavoro]**. Toccate **[!UICONTROL Annulla pubblicazione più tardi].**
+   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Toccate **[!UICONTROL Annulla pubblicazione più tardi].**
 
-      ![flussi di lavoro non pubblicati](assets/unpublishworkflows.png)
+      ![unpublishworkflows](assets/unpublishworkflows.png)
 
 
 >[!NOTE]
