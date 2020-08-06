@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Eseguire un controllo di coerenza {#perform-a-consistency-check}
 
-Per eseguire una verifica di coerenza, andate alla pagina di amministrazione per il file MBeia JMX** com.adobe.granite (Repository)**. Dalla schermata principale di AEM, passate a:
+Per eseguire una verifica di coerenza, andate alla pagina di amministrazione per il file MBeia JMX** com.adobe.granite (Repository)**. Dalla schermata principale AEM, passate a:
 
 **Strumenti > Console Web > Principale (nella barra dei menu) > JMX > com.adobe.granite (Repository)**
 
-**[In un&#39;installazione predefinita, si trova qui:  |Mostra utente|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+In un&#39;installazione predefinita, si trova qui:  **[|Mostra utente|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 Nella sezione **Operazioni** della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fare clic sull&#39;operazione e immettere i parametri desiderati.
 
