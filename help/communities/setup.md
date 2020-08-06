@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 2%
 
 ---
 
@@ -21,12 +24,12 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 A scopo di sviluppo e dimostrazione, sarà necessario eseguire un’istanza di creazione e pubblicazione.
 
-A tal fine, segui le istruzioni di base della [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM e ottieni
+Per farlo, segui le istruzioni di base AEM [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) , che determinano
 
-* Ambiente di authoring su [localhost:4502](http://localhost:4502/)
-* Ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
+* Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
+* Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
-Per AEM Communities,
+Per  AEM Communities,
 
 * L’ambiente di authoring è impostato su
 
@@ -35,7 +38,7 @@ Per AEM Communities,
 
 * L’ambiente di pubblicazione è
 
-   * L&#39;esperienza della comunità nel pubblicare e moderare contenuti
+   * L&#39;esperienza della comunità nella pubblicazione e nella moderazione dei contenuti
    * Creazione di gruppi di community, membri e gruppi di membri
 
 >[!NOTE]
@@ -44,19 +47,19 @@ Per AEM Communities,
 
 ## Installa ultima versione di Communities {#install-latest-communities-release}
 
-Questa esercitazione crea un sito [della community](overview.md#engagement-community) di coinvolgimento e si basa sul feature pack di AEM Communities 6.2 versione 1.10.
+Questa esercitazione crea un sito [community di](overview.md#engagement-community) coinvolgimento e si basa  feature pack AEM Communities 6.2 versione 1.10.
 
 Per verificare che sia installato il pacchetto di funzioni più recente, visita:
 
 * [Ultime versioni](deploy-communities.md#latest-releases)
 
-Per un&#39;esercitazione che crea un sito [community di](overview.md#enablement-community)abilitazione, visitate la [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
+Per un&#39;esercitazione che crea un sito [per](overview.md#enablement-community)la community di abilitazione, visitate la [Guida introduttiva ad  AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
 
 ## Configura Analytics {#configure-analytics}
 
-Quando [Adobe Analytics è configurato per il sito](analytics.md)community, sono disponibili informazioni sull&#39;attività della community che migliorano l&#39;esperienza dei membri della community e forniscono feedback agli amministratori del sito.
+Quando [Adobe Analytics è configurato per il sito](analytics.md)community, sono disponibili informazioni sull&#39;attività della community che migliorano l&#39;esperienza del membro della community e forniscono feedback agli amministratori del sito.
 
-L&#39;integrazione con Adobe Analytics è facoltativa.
+L&#39;integrazione con  Adobe Analytics è facoltativa.
 
 ## Configura e-mail per notifiche {#configure-email-for-notifications}
 
@@ -84,7 +87,7 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
 * Nell’istanza di creazione
 
-   * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
+   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
 
 * Accesso con privilegi di amministratore
 
@@ -97,8 +100,8 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
    * **[!UICONTROL ID&amp;ast;]**: sirius
    * **[!UICONTROL Indirizzo]** e-mail: sirius.nilson@mailinator.com
-   * **[!UICONTROL Password&amp;ast;]**:password
-   * **[!UICONTROL Conferma password&amp;ast;]**:password
+   * **[!UICONTROL Password&amp;ast;]**: password
+   * **[!UICONTROL Conferma password&amp;ast;]**: password
    * **[!UICONTROL Nome]**: Sirio
    * **[!UICONTROL Cognome&amp;ast;]**: Nilson
 
@@ -146,7 +149,7 @@ Quindi segui le istruzioni riportate in
 1. [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
 
-Esempio di pacchetto di tag creati per le esercitazioni introduttive di AEM Communities
+Esempio di pacchetto di tag creati per i Tutorials Guida introduttiva  AEM Communities
 
 [Ottieni file](assets/tutorial_tags-v63.zip)
 
@@ -156,4 +159,4 @@ Si consiglia, ma facoltativo, di impostare [MSRP](msrp.md) (MongoDB) come archiv
 
 Per istruzioni, visitare [How to Setup MongoDB for Demo](demo-mongo.md).
 
-Per impostazione predefinita, l’installazione delle istanze di AEM per l’authoring e la pubblicazione comporta la memorizzazione del contenuto generato dall’utente nell’archivio [](../../help/sites-deploying/platform.md) JCR Tar a cui si accede tramite [JSRP](jsrp.md). JSRP non è uno store comune, il che significa che UGC è visibile solo sull&#39;istanza in cui è stato immesso. In genere, UGC viene immesso in un’istanza di pubblicazione e non sarebbe visibile nell’ambiente di authoring, con la conseguente necessità di utilizzare l’istanza di pubblicazione per tutte le attività di moderazione.
+Per impostazione predefinita, l’installazione delle istanze di creazione e pubblicazione AEM causa la memorizzazione del contenuto generato dall’utente (UGC) nell’archivio [](../../help/sites-deploying/platform.md) JCR Tar a cui si accede tramite [JSRP](jsrp.md). JSRP non è uno store comune, il che significa che UGC è visibile solo sull&#39;istanza in cui è stato immesso. In genere, UGC viene immesso in un’istanza di pubblicazione e non sarebbe visibile nell’ambiente di authoring, con la conseguente necessità di utilizzare l’istanza di pubblicazione per tutte le attività di moderazione.
