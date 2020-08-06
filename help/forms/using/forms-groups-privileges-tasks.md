@@ -1,8 +1,8 @@
 ---
-title: AEM Forms su gruppi OSGi e privilegi
-seo-title: AEM Forms su gruppi OSGi e privilegi
-description: Assegnazione di utenti ai gruppi per gestire AEM Forms su OSGi
-seo-description: Assegnazione di utenti ai gruppi per gestire AEM Forms su OSGi
+title: ' AEM Forms su gruppi e privilegi OSGi'
+seo-title: ' AEM Forms su gruppi e privilegi OSGi'
+description: Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
+seo-description: Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# AEM Forms su gruppi OSGi e privilegi {#aem-forms-on-osgi-groups-and-privileges}
+#  AEM Forms su gruppi e privilegi OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
-Assegnazione di utenti ai gruppi per gestire AEM Forms su OSGi
+Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
 
 Potete [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, i gruppi menzionati in questo articolo, quali form-user e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
+Dopo aver installato [pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms, i gruppi menzionati in questo articolo, quali form-user e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
 
 <table> 
  <tbody>
@@ -38,7 +38,7 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
      <li>Creazione, anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
-     <li>Caricare le risorse in un’istanza di AEM</li> 
+     <li>Caricare le risorse in un’istanza AEM</li> 
      <li>Creazione di temi</li> 
     </ul> </td> 
   </tr>
@@ -95,7 +95,7 @@ Dopo aver installato il pacchetto [aggiuntivo](/help/forms/using/installing-conf
    <td>workflow-user</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni inbox AEM</li> 
+     <li>Utilizzare AEM applicazioni inbox</li> 
      <li>Gestione delle istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
