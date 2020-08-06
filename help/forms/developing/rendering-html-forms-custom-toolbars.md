@@ -1,6 +1,6 @@
 ---
-title: Rendering di moduli HTML con barre degli strumenti personalizzate
-seo-title: Rendering di moduli HTML con barre degli strumenti personalizzate
+title: Rendering HTML Forms con barre degli strumenti personalizzate
+seo-title: Rendering HTML Forms con barre degli strumenti personalizzate
 description: 'null'
 seo-description: 'null'
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
@@ -12,13 +12,16 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 0%
 
 ---
 
 
-# Rendering di moduli HTML con barre degli strumenti personalizzate {#rendering-html-forms-with-customtoolbars}
+# Rendering HTML Forms con barre degli strumenti personalizzate {#rendering-html-forms-with-customtoolbars}
 
-## Rendering di moduli HTML con barre degli strumenti personalizzate {#rendering-html-forms-with-custom-toolbars}
+## Rendering HTML Forms con barre degli strumenti personalizzate {#rendering-html-forms-with-custom-toolbars}
 
 Il servizio Forms consente di personalizzare una barra degli strumenti rappresentata con un modulo HTML. È possibile personalizzare una barra degli strumenti per modificarne l&#39;aspetto sovrascrivendo gli stili CSS predefiniti e per aggiungere un comportamento dinamico sovrascrivendo gli script Java. Una barra degli strumenti è personalizzata utilizzando un file XML denominato fscmenu.xml. Per impostazione predefinita, il servizio Forms recupera il file da una posizione URI specificata internamente.
 
@@ -26,7 +29,7 @@ Il servizio Forms consente di personalizzare una barra degli strumenti rappresen
 >
 >Questa posizione URI si trova nel file adobe-forms-core.jar, che si trova nel file adobe-forms-dsc.jar. Il file adobe-forms-dsc.jar si trova in C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Potete utilizzare uno strumento di estrazione file, ad esempio Win RAR, per aprire l&#39;adobe.
 
-Potete copiare il file fscmenu.xml da questa posizione, modificarlo per soddisfare i requisiti, quindi inserirlo in una posizione URI personalizzata. Quindi, utilizzando l&#39;API Forms Service, impostare le opzioni di esecuzione che determinano l&#39;utilizzo del servizio Forms da parte del file fscmenu.xml dal percorso specificato. Queste azioni consentono al servizio Forms di eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata.
+Potete copiare il file fscmenu.xml da questa posizione, modificarlo per soddisfare i requisiti, quindi inserirlo in una posizione URI personalizzata. Quindi, utilizzando l&#39;API di Forms Service, impostate le opzioni di esecuzione che determinano l&#39;utilizzo del servizio Forms da parte del file fscmenu.xml dal percorso specificato. Queste azioni generano il rendering di un modulo HTML con una barra degli strumenti personalizzata da parte del servizio Forms.
 
 Oltre al file fscmenu.xml, dovete anche ottenere i file seguenti:
 
@@ -41,9 +44,9 @@ fscJS è lo script Java associato a ciascun nodo. È necessario fornire uno per 
 
 fscCSS è un foglio di stile associato a un particolare nodo. Gli stili nei file CSS specificano l&#39;aspetto della barra degli strumenti. *fscVCSS* è un foglio di stile per una barra degli strumenti verticale, che viene visualizzata a sinistra del modulo HTML di cui è stato effettuato il rendering. *fscIECSS* è un foglio di stile utilizzato per i moduli HTML di cui viene eseguito il rendering in Internet Explorer.
 
-Verificate che tutti i file di cui sopra siano citati nel file fscmenu.xml. In altre parole, nel file fscmenu.xml, specificate i percorsi URI in modo che il servizio Forms possa individuarli. Per impostazione predefinita, questi file sono disponibili nelle posizioni URI a partire da parole chiave interne `FSWebRoot` o `ApplicationWebRoot`.
+Verificate che tutti i file di cui sopra siano citati nel file fscmenu.xml. In altre parole, nel file fscmenu.xml, specificate i percorsi URI per puntare a questi file in modo che il servizio Forms possa individuarli. Per impostazione predefinita, questi file sono disponibili nelle posizioni URI a partire da parole chiave interne `FSWebRoot` o `ApplicationWebRoot`.
 
-Per personalizzare la barra degli strumenti, sostituire le parole chiave utilizzando la parola chiave esterna `FSToolBarURI`. Questa parola chiave rappresenta l’URI passato al servizio Forms in fase di esecuzione (questo approccio è illustrato più avanti in questa sezione).
+Per personalizzare la barra degli strumenti, sostituire le parole chiave utilizzando la parola chiave esterna `FSToolBarURI`. Questa parola chiave rappresenta l’URI passato al servizio Forms in fase di esecuzione (questo approccio viene mostrato più avanti in questa sezione).
 
 Potete anche specificare le posizioni assolute di questi file JS e CSS, ad esempio https://www.mycompany.com/scripts/misc/fscmenu.js. In questa situazione, non è necessario utilizzare la `FSToolBarURI` parola chiave.
 
@@ -107,7 +110,7 @@ Come parte della personalizzazione di una barra degli strumenti, è possibile mo
 >
 >Non è possibile creare una barra degli strumenti personalizzata in più lingue. Le barre degli strumenti non possono utilizzare file XML diversi in base alle impostazioni internazionali.
 
-Per modificare il valore delle impostazioni internazionali di una barra degli strumenti, assicurarsi che il file fscmenu.xml contenga la lingua da visualizzare. La sintassi XML seguente mostra il file fscmenu.xml utilizzato per visualizzare una barra degli strumenti francese.
+Per modificare il valore delle impostazioni internazionali di una barra degli strumenti, accertatevi che il file fscmenu.xml contenga la lingua da visualizzare. La sintassi XML seguente mostra il file fscmenu.xml utilizzato per visualizzare una barra degli strumenti francese.
 
 ```as3
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css"> 
@@ -146,20 +149,20 @@ Per modificare il valore delle impostazioni internazionali di una barra degli st
 >
 >Gli avvii rapidi associati a questa sezione utilizzano questo file XML per visualizzare una barra degli strumenti personalizzata francese, come illustrato nell&#39;illustrazione precedente.
 
-Inoltre, specificate un valore di impostazione internazionale valido richiamando il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passando un valore di stringa che specifica il valore di impostazione internazionale. Ad esempio, passare `fr_FR` per specificare il francese. Il servizio Forms è fornito di barre degli strumenti localizzate.
+Inoltre, specificate un valore di impostazione internazionale valido richiamando il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passando un valore di stringa che specifica il valore di impostazione internazionale. Ad esempio, passare `fr_FR` per specificare il francese. Il servizio Forms è fornito con barre degli strumenti localizzate.
 
 >[!NOTE]
 >
->Prima di eseguire il rendering di un modulo HTML che utilizza una barra degli strumenti personalizzata, è necessario conoscere il rendering dei moduli HTML. (Vedere [Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md).)
+>Prima di eseguire il rendering di un modulo HTML che utilizza una barra degli strumenti personalizzata, è necessario conoscere il rendering dei moduli HTML. Consultate [Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md).
 
-Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
 Per eseguire il rendering di un modulo HTML che contiene una barra degli strumenti personalizzata, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API Java di Forms.
+1. Creare un oggetto Forms Java API.
 1. Fate riferimento a un file XML personalizzato del menu di scelta rapida.
 1. Eseguire il rendering di un modulo HTML.
 1. Scrivere il flusso di dati del modulo nel browser Web del client.
@@ -168,7 +171,7 @@ Per eseguire il rendering di un modulo HTML che contiene una barra degli strumen
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, includete i file proxy.
 
-**Creare un oggetto API Java Forms**
+**Creare un oggetto API Forms Java**
 
 Prima di eseguire un&#39;operazione supportata dal servizio Forms a livello di programmazione, è necessario creare un oggetto client Forms.
 
@@ -188,31 +191,31 @@ Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un f
 
 **Consulta anche**
 
-[Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API Java](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata utilizzando l&#39;API Java](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API del servizio Web](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
+### Eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata utilizzando l&#39;API Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-Eseguire il rendering di un modulo HTML contenente una barra degli strumenti personalizzata utilizzando l&#39;API Forms Service (Java):
+Eseguire il rendering di un modulo HTML contenente una barra degli strumenti personalizzata utilizzando l&#39;API di Forms Service (Java):
 
 1. Includi file di progetto
 
    Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API Java Forms
+1. Creare un oggetto API Forms Java
 
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
    * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
@@ -223,6 +226,7 @@ Eseguire il rendering di un modulo HTML contenente una barra degli strumenti per
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
    * Specificare la posizione del file XML fscmenu richiamando il metodo dell&#39; `HTMLRenderSpec` oggetto `setToolbarURI` e passando un valore di stringa che specifica la posizione URI del file XML.
    * Se applicabile, impostare il valore delle impostazioni internazionali richiamando il metodo dell&#39; `HTMLRenderSpec` `setLocale` oggetto e passando un valore di stringa che specifica il valore delle impostazioni internazionali. Il valore predefinito è Inglese.
+
    >[!NOTE]
    >
    >Gli avvii rapidi associati a questa sezione impostano questo valore su `fr_FR`*.*
@@ -236,9 +240,10 @@ Eseguire il rendering di un modulo HTML contenente una barra degli strumenti per
    * Un `com.adobe.idp.Document` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare un `com.adobe.idp.Document` oggetto vuoto.
    * L&#39; `HTMLRenderSpec` oggetto che memorizza le opzioni di runtime HTML.
    * Una stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Un `URLSpec` oggetto che memorizza i valori URI necessari per il rendering di un modulo HTML.
+   * Un `URLSpec` oggetto che memorizza i valori URI necessari per eseguire il rendering di un modulo HTML.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
-   Il `renderHTMLForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+
+   Il `renderHTMLForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -254,7 +259,7 @@ Eseguire il rendering di un modulo HTML contenente una barra degli strumenti per
 
 [Avvio rapido (modalità SOAP): Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -264,10 +269,10 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API Java Forms
+1. Creare un oggetto API Forms Java
 
    Creare un `FormsService` oggetto e impostare i valori di autenticazione.
 
@@ -277,6 +282,7 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
    * Specificare la posizione del file XML fscmenu richiamando il metodo dell&#39; `HTMLRenderSpec` oggetto `setToolbarURI` e passando un valore di stringa che specifica la posizione URI del file XML.
    * Se applicabile, impostare il valore delle impostazioni internazionali richiamando il metodo dell&#39; `HTMLRenderSpec` `setLocale` oggetto e passando un valore di stringa che specifica il valore delle impostazioni internazionali. Il valore predefinito è Inglese.
+
    >[!NOTE]
    >
    >Gli avvii rapidi associati a questa sezione impostano questo valore su `fr_FR`*.*
@@ -289,8 +295,8 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
    * Un valore `TransformTo` enum che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
    * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`.
    * L&#39; `HTMLRenderSpec` oggetto che memorizza le opzioni di runtime HTML.
-   * Una stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
-   * Un `URLSpec` oggetto che memorizza i valori URI necessari per il rendering di un modulo HTML.
+   * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
+   * Un `URLSpec` oggetto che memorizza i valori URI necessari per eseguire il rendering di un modulo HTML.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Questo parametro è facoltativo e si può specificare `null` se non si desidera allegare file al modulo.
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal `renderHTMLForm` metodo. Questo valore del parametro memorizza il modulo di cui è stato effettuato il rendering.
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal `renderHTMLForm` metodo. Questo parametro memorizza i dati XML di output.
@@ -298,7 +304,8 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal `renderHTMLForm` metodo. Questo argomento memorizza il valore delle impostazioni internazionali.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal `renderHTMLForm` metodo. Questo argomento memorizza il valore di rendering HTML utilizzato.
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+
+   Il `renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -312,4 +319,4 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
 
 **Consulta anche**
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
