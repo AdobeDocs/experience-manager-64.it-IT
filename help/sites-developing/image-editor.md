@@ -1,8 +1,8 @@
 ---
 title: Editor immagine
 seo-title: Editor immagine
-description: L’Editor immagini è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
-seo-description: L’Editor immagini è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+description: L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+seo-description: L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 6%
 
 ---
 
 
 # Editor immagine{#image-editor}
 
-L’Editor immagini è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+L’Editor immagine è un elemento fondamentale di AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 
 >[!CAUTION]
 >
@@ -31,7 +34,7 @@ L’Editor immagine persiste nelle aree delle mappe immagine sia come unità ass
 
 Le coordinate della mappa immagine vengono memorizzate in JCR come `imageMap` proprietà dall’Editor immagine. Ha il seguente formato.
 
-Le aree di mappa vengono memorizzate come segue:
+Le aree di mappa vengono memorizzate nel modo seguente:
 
 `[area1][area2][...]`
 
@@ -60,7 +63,7 @@ I plug-in nell’Editor immagine possono essere attivati selettivamente dal tipo
 
 Ad esempio, è possibile ritagliare solo le immagini GIF, JPEG, PNG, WEBP e TIFF.
 
-La `supportedMimeTypes` proprietà deve essere impostata come una stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in sul `cq:editConfig` nodo del componente immagine.
+La `supportedMimeTypes` proprietà deve quindi essere impostata come una stringa dei tipi MIME consentiti sul nodo di configurazione del plug-in sul `cq:editConfig` nodo del componente immagine.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
