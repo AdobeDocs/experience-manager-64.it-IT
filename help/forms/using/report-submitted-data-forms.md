@@ -1,8 +1,8 @@
 ---
 title: API per l'utilizzo dei moduli inviati nel portale dei moduli
 seo-title: API per l'utilizzo dei moduli inviati nel portale dei moduli
-description: 'In AEM Forms sono disponibili API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
-seo-description: 'In AEM Forms sono disponibili API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
+description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
+seo-description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 7%
 
 ---
 
 
 # API per l&#39;utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-In AEM Forms sono disponibili API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
+ AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
@@ -72,7 +75,7 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr> 
   <tr> 
    <td><code>formPath</code></td> 
-   <td>Specifica il percorso dell'archivio CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, restituisce una risposta vuota.<br /> </td> 
+   <td>Specifica il percorso dell'archivio CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, viene restituita una risposta vuota.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>offset</code> (facoltativo)</td> 
@@ -92,7 +95,7 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (facoltativo)</td> 
-   <td>Specifica un elenco separato da virgole di proprietà del modulo da includere nei risultati. <br /> Le proprietà predefinite sono: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
+   <td>Specifica un elenco separato da virgole di proprietà del modulo da includere nei risultati. Le proprietà predefinite sono:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (facoltativo)</td> 
@@ -157,7 +160,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Restituisce tutti i commenti inviati nell&#39;istanza di invio specificata.
 
