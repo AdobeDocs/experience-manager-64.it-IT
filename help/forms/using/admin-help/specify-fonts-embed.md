@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
 
 # Specificare i font da incorporare{#specify-fonts-to-embed}
 
-È possibile specificare i font sempre incorporati o mai incorporati nei moduli utilizzati da Output. L&#39;incorporazione dei font aumenta la dimensione del file dei moduli. Incorporare font insoliti che gli utenti probabilmente non avranno sui loro sistemi e non incorporare i font comuni che avranno installato.
+È possibile specificare quali font vengono sempre incorporati o non vengono mai incorporati nei moduli utilizzati da Output. L&#39;incorporazione dei font aumenta la dimensione del file dei moduli. Incorporare font insoliti che gli utenti probabilmente non avranno sui loro sistemi e non incorporare i font comuni che avranno installato.
 
 >[!NOTE]
 >
