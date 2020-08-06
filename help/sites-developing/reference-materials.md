@@ -1,8 +1,8 @@
 ---
 title: Guide API
 seo-title: Guide API
-description: Documentazione per le API fornite da AEM per lo sviluppo di applicazioni
-seo-description: Documentazione per le API fornite da AEM per lo sviluppo di applicazioni
+description: Documentazione per le API che AEM per lo sviluppo di applicazioni
+seo-description: Documentazione per le API che AEM per lo sviluppo di applicazioni
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,13 +12,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
 
 # Guide API{#api-guides}
 
-AEM fornisce diverse API per lo sviluppo di applicazioni. Il seguente elenco fornisce la documentazione per le API supportate da AEM:
+AEM fornisce diverse API per lo sviluppo di applicazioni. L&#39;elenco seguente fornisce la documentazione per le API supportate da AEM:
 
 * [API Adobe AEM 6.4.0](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
@@ -34,14 +37,14 @@ AEM fornisce diverse API per lo sviluppo di applicazioni. Il seguente elenco for
 
 * [Riferimento API di Editor Core Javascript](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-L’editor di applicazioni per pagina singola (SPA) AEM fornisce riferimenti API JavaScript:
+AEM l&#39;editor dell&#39;applicazione per pagina singola (SPA) framework i riferimenti API JavaScript:
 
 * [Mapping dei componenti](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
 * [Page Model Manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
 * [Reazione di componenti modificabili](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
 * [Componenti modificabili angolari](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-API di distribuzione e gestione dei contenuti AEM:
+AEM API di distribuzione e gestione dei contenuti:
 
 * Componenti core (JSON)
 
@@ -49,9 +52,9 @@ API di distribuzione e gestione dei contenuti AEM:
    * [Abilitazione dell&#39;esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
    * Per ulteriori informazioni, consulta la sezione [Componenti nella guida](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) utente allo sviluppo
 
-* [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
+* [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-Le seguenti risorse esterne sono solo di riferimento:
+Le seguenti risorse esterne sono solo a scopo di riferimento:
 
 * [API Apache Sling 10](https://sling.apache.org/apidocs/sling10/)
 * [API Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
