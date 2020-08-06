@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione dei gesti
 seo-title: Personalizzazione dei gesti
-description: Personalizzare i gesti nell'app AEM Forms
-seo-description: Personalizzare i gesti nell'app AEM Forms
+description: Personalizzare i gesti sull'app  AEM Forms
+seo-description: Personalizzare i gesti sull'app  AEM Forms
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione dei gesti {#gesture-customization}
 
-Potete personalizzare i gesti dell&#39;app AEM Forms per fornire un metodo distinto di interazione con l&#39;app. Ad esempio, è possibile aggiungere nuovi gesti per aprire o chiudere un&#39;attività o un punto iniziale.
+Potete personalizzare i gesti di &#39;app AEM Forms per fornire un metodo distinto di interazione con l&#39;app. Ad esempio, è possibile aggiungere nuovi gesti per aprire o chiudere un&#39;attività o un punto iniziale.
 
-## Personalizzazione dei gesti nell&#39;app AEM Forms {#to-customize-gestures-in-aem-forms-app}
+## Personalizzazione dei gesti nell&#39;app  AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
-Nell&#39;app AEM Forms, lo scorrimento a sinistra apre una nuova attività o un punto iniziale mentre lo scorrimento a destra non esegue alcuna operazione. L&#39;esempio seguente illustra i passaggi necessari per aprire una nuova attività o un punto iniziale durante l&#39;esecuzione dei gesti di scorrimento destro nell&#39;app AEM Forms.
+Nell&#39;app AEM Forms , lo scorrimento a sinistra apre una nuova attività o un punto iniziale mentre lo scorrimento a destra non esegue alcuna operazione. L&#39;esempio seguente illustra i passaggi per aprire una nuova attività o un punto iniziale durante l&#39;esecuzione dei gesti di scorrimento destro nell&#39;app AEM Forms .
 
 1. Apri il progetto.
 
@@ -34,6 +37,7 @@ Nell&#39;app AEM Forms, lo scorrimento a sinistra apre una nuova attività o un 
    * In Xcode, andate alla cartella **Capture > www > wsmobile > js > runtime > views** .
    * In Eclipse, passa alla cartella **assets > www > wsmobile > js > runtime > views** .
    * In Visual Studio, passare alla cartella **MWSWindows > www > wsmobile > js > runtime > views** .
+
    >[!NOTE]
    >
    >Il file task.js contiene la visualizzazione della colonna vertebrale associata a ogni attività o punto di inizio elencato negli elenchi task o punto di inizio.
@@ -67,7 +71,7 @@ Nell&#39;app AEM Forms, lo scorrimento a sinistra apre una nuova attività o un 
 
 
 1. Salvate e chiudete il `task.js` file.
-1. Create ed eseguite l&#39;app AEM Forms. Ora è possibile aprire un’interfaccia con il passaggio del dito verso sinistra e il passaggio del dito verso destra.
+1. Create ed eseguite l&#39;app AEM Forms . Ora è possibile aprire un’interfaccia con il passaggio del dito verso sinistra e il passaggio del dito verso destra.
 
 Allo stesso modo, potete apportare modifiche in altre viste per diverse combinazioni di gesti, elementi HTML e funzioni.
 
