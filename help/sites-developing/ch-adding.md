@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -48,11 +51,11 @@ Tutti i tipi di store sono estensioni della [`ContextHub.Store.Core`](/help/site
 
 Gli store Context Hub utilizzano una delle seguenti modalità di persistenza:
 
-* **** Locale: Utilizza HTML5 localStorage per mantenere i dati. L&#39;archiviazione locale viene mantenuta nel browser tra le sessioni.
-* **** Sessione: Utilizza HTML5 sessionStorage per mantenere i dati. L&#39;archiviazione delle sessioni viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
-* **** Cookie: Utilizza il supporto nativo dei cookie del browser per l&#39;archiviazione dei dati. I dati del cookie vengono inviati a e dal server in richieste HTTP.
-* **** Window.name: Utilizza la proprietà window.name per mantenere i dati.
-* **** Memoria: Utilizza un oggetto Javascript per mantenere i dati.
+* **Locale:** Utilizza HTML5 localStorage per mantenere i dati. L&#39;archiviazione locale viene mantenuta nel browser tra le sessioni.
+* **Sessione:** Utilizza HTML5 sessionStorage per mantenere i dati. L&#39;archiviazione delle sessioni viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
+* **Cookie:** Utilizza il supporto nativo dei cookie del browser per l&#39;archiviazione dei dati. I dati del cookie vengono inviati a e dal server in richieste HTTP.
+* **Window.name:** Utilizza la proprietà window.name per mantenere i dati.
+* **Memoria:** Utilizza un oggetto Javascript per mantenere i dati.
 
 Per impostazione predefinita, Context Hub utilizza la modalità di persistenza locale. Se il browser non supporta o non consente HTML5 localStorage, viene utilizzata la persistenza della sessione. Se il browser non supporta o non consente HTML5 sessionStorage, viene utilizzata la persistenza Window.name.
 
@@ -147,7 +150,7 @@ I segmenti ContextHub sono installati sotto il `/conf/we-retail/settings/wcm/seg
 * estate
 * estiva femminile
 * estate-femminile-over-30
-* estate-femminile-under-30
+* estiva-femminile-under-30
 * estivo-maschio
 * estate-maschio-over-30
 * estivo-maschile-under-30
@@ -173,7 +176,7 @@ Le regole utilizzate per risolvere questi segmenti sono riepilogate come segue:
 
 ## Registrazione dei messaggi di debug per ContextHub {#logging-debug-messages-for-contexthub}
 
-Configurate il servizio Adobe Granite ContextHub OSGi (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) per registrare i messaggi di debug dettagliati utili durante lo sviluppo.
+Configurare il servizio  Adobe Granite ContextHub OSGi (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) per registrare i messaggi di debug dettagliati utili durante lo sviluppo.
 
 Per configurare il servizio è possibile utilizzare la console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web o utilizzare un nodo [JCR nell&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
