@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -24,16 +27,16 @@ Il Modello di David è stato scritto da David Nuescheler anni fa, ma le idee son
 * I dati vengono prima, la struttura dopo. Forse.
 * Guidare la gerarchia dei contenuti, non lasciarla accadere.
 * Le aree di lavoro sono per `clone()`, `merge()`e `update()`.
-* Fai attenzione ai fratelli dello stesso nome.
+* Fai attenzione ai fratelli con lo stesso nome.
 * I riferimenti sono considerati dannosi.
 * I file sono file.
-*  Gli ID sono malvagi.
+* Gli ID sono malvagi.
 
 Il modello di David è disponibile sul wiki Jackrabbit all’indirizzo [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tutto è contenuto {#everything-is-content}
 
-Tutto deve essere memorizzato nell&#39;archivio anziché basarsi su origini dati di terze parti separate, come i database. Questo vale per i contenuti creati, dati binari come immagini, codice, configurazioni, ecc. Questo consente di utilizzare un set di API per gestire tutto il contenuto e per gestire la promozione di tale contenuto tramite la replica. Abbiamo anche un&#39;unica fonte di backup, registrazione, ecc.
+Tutto deve essere memorizzato nell&#39;archivio piuttosto che basarsi su origini dati di terze parti separate, come i database. Questo vale per i contenuti creati, dati binari come immagini, codice, configurazioni, ecc. Questo consente di utilizzare un set di API per gestire tutto il contenuto e per gestire la promozione di tale contenuto tramite la replica. Abbiamo anche un&#39;unica fonte di backup, registrazione, ecc.
 
 ### Utilizzare il principio di progettazione &quot;content model first&quot; {#use-the-content-model-first-design-principle}
 
@@ -49,7 +52,7 @@ I tipi di nodo funzionano a un livello basso nel livello dell&#39;infrastruttura
 
 ### Conformità alle convenzioni di denominazione nel JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Il rispetto delle convenzioni di denominazione darà coerenza alla base di codice, riducendo il tasso di incidenza dei difetti e aumentando la velocità degli sviluppatori che lavorano nel sistema. Nello sviluppo di AEM, Adobe utilizza le seguenti convenzioni:
+Il rispetto delle convenzioni di denominazione darà coerenza alla base di codice, riducendo il tasso di incidenza dei difetti e aumentando la velocità degli sviluppatori che lavorano nel sistema. Il Adobe utilizza le seguenti convenzioni per sviluppare AEM:
 
 * Nomi nodo
 
