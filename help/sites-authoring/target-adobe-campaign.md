@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 74%
 
 ---
 
@@ -33,7 +36,7 @@ L’impostazione della segmentazione comprende la creazione di segmenti, di un m
 
 Per creare i segmenti:
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Open the [segmentation console](Http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
 1. Create a new page and enter a title - for example, **AC Segments**- and select the **Segment (Adobe Campaign)** template.
 1. Seleziona la pagina creata nella struttura ad albero a sinistra.
 1. Crea un segmento, ad esempio per utenti maschili, creando una nuova pagina chiamata Uomo sotto il segmento creato e seleziona il modello **Segmento (Adobe Campaign)**.
@@ -72,7 +75,7 @@ Dopo aver creato i segmenti, un marchio, una campagna e un&#39;esperienza, puoi 
 
 >[!NOTE]
 >
->[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scaricate un esempio di contenuto Geometrixx da Package Share.
+>[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scaricate contenuti di Geometrixx di esempio da Package Share.
 
 Creare una newsletter con contenuti di destinazione:
 
