@@ -12,13 +12,16 @@ discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
 
 # Strumenti Community {#communities-tools}
 
-Per accedere alla console degli strumenti di Communities, all’istanza di authoring:
+Per accedere alla console degli strumenti di Communities, all’autore:
 
 * Dalla navigazione globale: **[!UICONTROL Strumenti > Community]**
 
