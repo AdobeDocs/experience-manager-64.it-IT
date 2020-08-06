@@ -1,8 +1,8 @@
 ---
 title: Amministrazione di diritti di accesso, gruppi e utenti
 seo-title: Amministrazione di diritti di accesso, gruppi e utenti
-description: Scopri ulteriori informazioni sull’amministrazione di diritti di accesso, gruppi e utenti in AEM.
-seo-description: Scopri ulteriori informazioni sull’amministrazione di diritti di accesso, gruppi e utenti in AEM.
+description: Ulteriori informazioni sull'amministrazione di utenti, gruppi e diritti di accesso in AEM.
+seo-description: Ulteriori informazioni sull'amministrazione di utenti, gruppi e diritti di accesso in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3137'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ In CRX ogni account utente è un nodo nell’area di lavoro. Un account utente C
 
    Tuttavia, per semplificare la gestione, consigliamo di assegnare (nella maggior parte dei casi) i diritti di accesso agli account dei gruppi. La gestione dei diritti di accesso per ogni singolo utente diventa molto difficile (le eccezioni sono determinati utenti del sistema quando esistono solo una o due istanze).
 
-**Account** di gruppo Gli account di gruppo sono raccolte di utenti e/o di altri gruppi. Questi vengono utilizzati per semplificare la gestione, in quanto una modifica dei diritti di accesso assegnati a un gruppo viene applicata automaticamente a tutti gli utenti del gruppo. Un utente non deve appartenere ad alcun gruppo, ma spesso appartiene a diversi.
+**Account** di gruppo Gli account di gruppo sono raccolte di utenti e/o di altri gruppi. Questi vengono utilizzati per semplificare la gestione, in quanto una modifica dei diritti di accesso assegnati a un gruppo viene applicata automaticamente a tutti gli utenti del gruppo. Un utente non deve appartenere ad alcun gruppo, ma spesso appartiene a più gruppi.
 
 In CRX un gruppo ha le seguenti proprietà:
 
@@ -104,9 +107,10 @@ L&#39;elenco dei diritti di accesso applicabili all&#39;oggetto è costituito da
 
 >[!NOTE]
 >
->* Quando compila l’elenco, CRX non tiene conto della gerarchia di utenti.
+>* Quando compila l’elenco, CRX non prende in considerazione alcuna gerarchia di utenti.
 >* CRX utilizza una gerarchia di gruppi solo quando si inserisce un gruppo come membro di un altro gruppo. Nessuna ereditarietà automatica delle autorizzazioni del gruppo.
 >* L&#39;ordine in cui specificate i gruppi non influisce sui diritti di accesso.
+
 >
 
 
@@ -169,7 +173,7 @@ In questo caso:
 
 I diritti di accesso da entità di più gruppi vengono valutati in base al loro ordine, sia all&#39;interno della gerarchia che all&#39;interno di un unico elenco di controllo di accesso.
 
-### Best practice {#best-practices}
+### Best practice   {#best-practices}
 
 Nella tabella seguente sono elencate alcune raccomandazioni e best practice:
 
@@ -195,7 +199,7 @@ Nella tabella seguente sono elencate alcune raccomandazioni e best practice:
   </tr> 
   <tr> 
    <td><i>Mantieni semplice</i></td> 
-   <td><p>Investire un po' di tempo e pensare quando si configura una nuova installazione sarà ben ripagato.</p> <p>L'applicazione di una struttura chiara semplificherà la manutenzione e l'amministrazione in corso, garantendo che sia i colleghi attuali che i futuri successori possano capire facilmente cosa viene implementato.</p> </td> 
+   <td><p>Investire un po' di tempo e pensare quando si configura una nuova installazione sarà ben ripagato.</p> <p>L'applicazione di una struttura chiara semplificherà la manutenzione e l'amministrazione in corso, garantendo che sia i colleghi attuali che i futuri successori possano comprendere facilmente ciò che viene implementato.</p> </td> 
   </tr> 
   <tr> 
    <td><i>Prova</i></td> 
@@ -241,7 +245,7 @@ Ciò significa che un account utente può specificare altri account (utente o gr
 
 Questo consente agli account del soggetto di completare le attività come se utilizzassero l&#39;account che stanno impersonando; ad esempio, durante un&#39;assenza o per condividere un carico eccessivo a breve termine.
 
-Se un account ne rappresenta un altro è molto difficile da vedere. I file di registro non contengono informazioni sul fatto che la rappresentazione si è verificata sugli eventi. Quindi se l&#39;utente-B rappresenta l&#39;utente-A, tutti gli eventi avranno l&#39;aspetto di essere eseguiti personalmente dall&#39;utente-A.
+Se un account ne rappresenta un altro è molto difficile da vedere. I file di registro non contengono informazioni sul fatto che la rappresentazione si è verificata sugli eventi. Pertanto, se l&#39;utente-B rappresenta l&#39;utente-A, tutti gli eventi avranno l&#39;aspetto di essere eseguiti personalmente dall&#39;utente-A.
 
 ### Creazione di un account utente {#creating-a-user-account}
 
@@ -265,8 +269,9 @@ Se un account ne rappresenta un altro è molto difficile da vedere. I file di re
 >
 >Talvolta, quando si registrano nuovi utenti in installazioni con un numero elevato di:
 >
->* utenti
->* gruppi con molti membri
+>* users
+>* groups con molti membri
+
 >
 
 
@@ -278,7 +283,7 @@ Se un account ne rappresenta un altro è molto difficile da vedere. I file di re
 1. Navigare nella struttura ad albero.
 1. Fate clic sull’account richiesto per aprire la modifica.
 1. Apportate una modifica e fate clic su Salva (simbolo di spunta verde) per tale voce.
-1. **Fate clic su** Chiudi **per terminare oppure su** Elenco... per tornare all&#39;elenco di tutti gli account utente.
+1. Fate clic su **Chiudi** per terminare oppure su **Elenco...** per tornare all&#39;elenco di tutti gli account utente.
 
 ### Rimozione di un account utente {#removing-a-user-account}
 
@@ -295,7 +300,7 @@ Se un account ne rappresenta un altro è molto difficile da vedere. I file di re
 
 ### Definizione delle proprietà {#defining-properties}
 
-È possibile definire **Proprietà** per account nuovi o esistenti:
+È possibile definire **Proprietà** per gli account nuovi o esistenti:
 
 1. Aprite la finestra di dialogo Amministrazione **** utente per l’account appropriato.
 1. Definire un nome di **proprietà** .
@@ -379,7 +384,7 @@ La colonna **Ereditata** indica l&#39;appartenenza ereditata a seguito dell&#39;
 1. Navigare nella struttura ad albero.
 1. Fate clic sull’account richiesto per aprire la modifica.
 1. Apportate una modifica e fate clic su Salva (simbolo di spunta verde) per tale voce.
-1. **Fate clic su** Chiudi **per terminare oppure su** Elenco... per tornare all&#39;elenco di tutti gli account dei gruppi.
+1. Fate clic su **Chiudi** per terminare oppure su **Elenco...** per tornare all&#39;elenco di tutti gli account dei gruppi.
 
 ### Rimozione di un account di gruppo {#removing-a-group-account}
 
@@ -414,15 +419,15 @@ Le proprietà esistenti possono essere eliminate con il simbolo del cestino.
 1. Effettua una delle seguenti operazioni:
 
    * Immettete il nome del membro richiesto (account utente o gruppo).
-   * **Oppure utilizza** Sfoglia... per cercare e selezionare l&#39;entità (account utente o gruppo) che si desidera aggiungere.
+   * Oppure utilizza **Sfoglia...** per cercare e selezionare l&#39;entità (account utente o gruppo) che si desidera aggiungere.
 
 1. Fate clic su Salva (simbolo di spunta verde) per la nuova proprietà.
 
-Oppure eliminate un membro esistente con il simbolo del cestino.
+In alternativa, eliminate un membro esistente con il simbolo del cestino.
 
 ## Accesso a Right Management {#access-right-management}
 
-Con la scheda Controllo **** accesso di CRXDE Lite è possibile definire i criteri di controllo degli accessi e assegnare i relativi privilegi.
+Con la scheda Controllo **** accesso del CRXDE Lite è possibile definire i criteri di controllo degli accessi e assegnare i relativi privilegi.
 
 Ad esempio, per Percorso **** corrente, selezionate la risorsa richiesta nel riquadro a sinistra, la scheda Controllo accesso nel riquadro in basso a destra:
 
@@ -436,7 +441,7 @@ Le politiche sono classificate in base a:
 
 * **Criteri** di controllo degli accessi locali Si tratta dei criteri di controllo degli accessi applicati. Potete quindi aggiornarli, ordinarli o rimuoverli.
 
-   Un criterio locale ignora i criteri ereditati dall&#39;elemento padre.
+   Un criterio locale ignora tutti i criteri ereditati dall&#39;elemento padre.
 
 * **Criteri** di controllo degli accessi efficaci Sono le regole di controllo degli accessi che vengono applicate a tutte le richieste di accesso. Esse mostrano i criteri aggregati derivati sia dai criteri locali che da quelli ereditati dall&#39;elemento padre.
 
@@ -446,7 +451,8 @@ Le politiche sono classificate in base a:
 
 * **Percorso** corrente Come nell&#39;esempio precedente, selezionare una risorsa all&#39;interno della directory archivio. Verranno visualizzati i criteri per questo &quot;percorso corrente&quot;.
 
-* **Repository** Seleziona il controllo di accesso a livello di repository. Ad esempio, quando si imposta il `jcr:namespaceManagement` privilegio, che è pertinente solo per l&#39;archivio, non un nodo.
+* **Repository** Seleziona il controllo di accesso a livello di repository. Ad esempio, quando si imposta la variabile 
+`jcr:namespaceManagement` privilegio, che è pertinente solo per il repository, non un nodo.
 
 * **Principal** Un&#39;entità registrata nella directory archivio.
 
@@ -485,7 +491,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
    <td>Si tratta di un privilegio di aggregazione che contiene tutti gli altri privilegi predefiniti.</td> 
   </tr> 
   <tr> 
-   <td><strong>Avanzate</strong></td> 
+   <td><strong>Avanzate </strong></td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -550,7 +556,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
   </tr> 
   <tr> 
    <td><code>jcr:write</code></td> 
-   <td><br /> Si tratta di un privilegio di aggregazione che contiene: - jcr:editProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
+   <td>Si tratta di un privilegio di aggregazione che contiene:<br /> - jcr:editProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
   </tr> 
   <tr> 
    <td><code>rep:privilegeManagement</code></td> 
@@ -614,13 +620,13 @@ L&#39;ordine nell&#39;elenco indica l&#39;ordine in cui i criteri vengono applic
 
 ### Rimozione di un criterio di controllo di accesso {#removing-an-access-control-policy}
 
-1. Nella tabella Criteri **controllo accesso** locale fare clic sull&#39;icona rossa (-) a destra della voce.
+1. Nella tabella Criteri **di controllo di accesso** locale fare clic sull&#39;icona rossa (-) a destra della voce.
 
 1. La voce verrà rimossa dalle tabelle per i criteri di controllo degli accessi **locali** e **effettivi**.
 
 ### Verifica di un criterio di controllo degli accessi {#testing-an-access-control-policy}
 
-1. **Dalla barra degli strumenti CRXDE Lite selezionare** Strumenti **, quindi** Controllo accesso di prova... .
+1. Dalla barra degli strumenti CRXDE Lite selezionare **Strumenti**, quindi **Controllo accesso di prova...**.
 
 1. Nel riquadro in alto a destra si apre una nuova finestra di dialogo. Selezionate il **percorso** e/o l’ **entità** da verificare.
 
