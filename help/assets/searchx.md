@@ -1,6 +1,6 @@
 ---
 title: Estensione della ricerca delle risorse
-description: Estendi le funzionalità di ricerca di Risorse AEM oltre le ricerche "out-of-the-box" per le risorse in base alle stringhe.
+description: Estendete le funzionalità di ricerca di  AEM Assets oltre alle ricerche out-of-the-box per le risorse in base alle stringhe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,11 +13,11 @@ ht-degree: 15%
 
 # Estensione della ricerca delle risorse {#extending-assets-search}
 
-Puoi estendere le funzionalità di ricerca di Risorse Adobe Experience Manager (AEM). Risorse AEM cerca automaticamente le risorse in base alle stringhe.
+Puoi estendere le funzionalità di ricerca di Adobe Experience Manager (AEM) Assets. In questo caso,  AEM Assets cerca le risorse in base alle stringhe.
 
 La ricerca viene eseguita tramite l&#39;interfaccia QueryBuilder, in modo da personalizzare la ricerca con diversi predicati. Potete sovrapporre il set predefinito di predicati nella seguente directory: `/apps/dam/content/search/searchpanel/facets`.
 
-Puoi anche aggiungere altre schede al pannello di amministrazione di Risorse AEM.
+Potete anche aggiungere schede aggiuntive al pannello di amministrazione  AEM Assets.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ Per sovrapporre i predicati preconfigurati, copiate il `facets` nodo da `/libs/d
 
 ## Aggiunta di schede {#adding-tabs}
 
-Puoi aggiungere ulteriori schede di ricerca configurandole nell’amministratore di Risorse AEM. Per creare schede aggiuntive:
+Potete aggiungere ulteriori schede di ricerca configurandole nell&#39; AEM Assets Admin. Per creare schede aggiuntive:
 
 1. Create la struttura delle cartelle `/apps/wcm/core/content/damadmin/tabs,`se non esiste già, quindi copiate il `tabs` nodo da `/libs/wcm/core/content/damadmin` e incollatelo.
 1. Create e configurate la seconda scheda, come desiderato.
@@ -47,9 +47,9 @@ Puoi aggiungere ulteriori schede di ricerca configurandole nell’amministratore
 
 ## Creazione di predicati personalizzati {#creating-custom-predicates}
 
-Risorse AEM viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+ AEM Assets viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
 
-Oltre a utilizzare i predicati preesistenti, gli sviluppatori AEM possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
+Oltre a utilizzare i predicati preesistenti, AEM sviluppatori possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
 
 La creazione di predicati personalizzati richiede conoscenze di base sul framework [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)Widget.
 
@@ -303,6 +303,6 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 
 ## Personalizzazione dei risultati di ricerca {#customizing-search-results}
 
-La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato. Risorse AEM include una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato.  AEM Assets viene fornito con una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
 
-Oltre a utilizzare ottiche preesistenti, gli sviluppatori AEM possono anche creare ottiche personalizzate.
+Oltre a utilizzare ottiche preesistenti, AEM sviluppatori possono anche creare ottiche proprie.
