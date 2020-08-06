@@ -1,8 +1,8 @@
 ---
 title: Suggerimenti sulla codifica
 seo-title: Suggerimenti sulla codifica
-description: Suggerimenti per la codifica per AEM
-seo-description: Suggerimenti per la codifica per AEM
+description: Suggerimenti per la codifica dei AEM
+seo-description: Suggerimenti per la codifica dei AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Il codice viene scritto una volta, ma letto più volte. Trascorrere un po &#39;d
 
 Idealmente, un altro programmatore non dovrebbe dover aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di capire cosa fa un metodo senza leggerlo. Meglio possiamo abbonarci a queste idee, più facile sarà leggere il nostro codice e più velocemente saremo in grado di scrivere e cambiare il nostro codice.
 
-Nella base di codice di AEM vengono utilizzate le seguenti convenzioni:
+Nella base di codici AEM sono utilizzate le seguenti convenzioni:
 
 
 * Viene denominata un&#39;unica implementazione di un&#39;interfaccia `<Interface>Impl`, ovvero `ReaderImpl`.
@@ -60,7 +63,7 @@ Idealmente, i nomi dovrebbero rivelare le loro intenzioni. Un test comune del co
  </tbody> 
 </table>
 
-### Non ripeterti {#don-t-repeat-yourself}
+### Non ripeterti  {#don-t-repeat-yourself}
 
 DRY afferma che lo stesso set di codici non deve mai essere duplicato. Questo vale anche per cose come i letterali stringa. La duplicazione del codice apre la porta a difetti ogni volta che qualcosa deve cambiare e deve essere ricercato ed eliminato.
 
@@ -82,11 +85,11 @@ Mentre i percorsi nel JCR non devono contenere spazi, la loro presenza non deve 
 
 ### Utilizzate l&#39;API XSS e/o l&#39;HTL per proteggere dagli attacchi di script tra siti {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM fornisce un’API XSS per cancellare facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti. Inoltre, HTL ha queste protezioni integrate direttamente nel linguaggio di modellazione. Un foglio di supporto API è disponibile per il download in [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM fornisce un&#39;API XSS per pulire facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti. Inoltre, HTL ha queste protezioni integrate direttamente nel linguaggio di modellazione. Un foglio di supporto API è disponibile per il download in [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implementare la registrazione appropriata {#implement-appropriate-logging}
 
-Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per garantire la coerenza dell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere quale livello registrare un messaggio, consigliamo di utilizzare le seguenti linee guida:
+Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e dovrebbe essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per garantire la coerenza dell&#39;amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere quale livello registrare un messaggio, consigliamo di utilizzare le seguenti linee guida:
 
 * ERRORE: Quando un elemento è danneggiato nel codice e l&#39;elaborazione non può continuare. Ciò si verificherà spesso a seguito di un&#39;eccezione imprevista. In genere è utile includere tracce di stack in questi scenari.
 * AVVISO: Quando qualcosa non funziona correttamente, ma l&#39;elaborazione può continuare. Spesso questo è il risultato di un&#39;eccezione prevista, ad esempio un&#39;eccezione *PathNotFoundException*.
