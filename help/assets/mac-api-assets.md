@@ -52,10 +52,10 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 
 ### Assets {#assets}
 
-In Experience Manager una risorsa contiene i seguenti elementi:
+In  Experience Manager una risorsa contiene i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
-* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o Adobe InDesign.
+* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o  Adobe InDesign.
 * Commenti facoltativi.
 
 In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
@@ -85,7 +85,7 @@ L&#39;API HTTP Assets include le seguenti funzionalità:
 **Prerequisiti**
 
 * Accesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Passate al filtro **[!UICONTROL CSRF]** Adobe Granite.
+* Andate a **[!UICONTROL Adobe Filtro]** CSRF Granite.
 * Accertatevi che la proprietà **[!UICONTROL Filter Methods]** includa: `POST`, `PUT`, `DELETE`.
 
 ## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
