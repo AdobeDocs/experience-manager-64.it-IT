@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta entrati nel sito.
+La funzione di messaggistica di  AEM Communities consente ai visitatori del sito che hanno effettuato l’accesso (membri) di inviare messaggi a un altro utente accessibili una volta effettuato l’accesso al sito.
 
 La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](sites-console.md)community.
 
@@ -32,7 +32,7 @@ Per ulteriori informazioni per gli sviluppatori, consulta [Messaging Essentials]
 
 ## Servizio Operazioni di messaggistica {#messaging-operations-service}
 
-Il servizio [Operazioni messaggistica](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica l&#39;endpoint che gestisce le richieste relative ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
+Il [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
 
 Per i siti della community creati tramite la console [Siti](sites-console.md)community esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/community/inbox`.
 
