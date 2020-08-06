@@ -11,13 +11,16 @@ topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 4%
 
 ---
 
 
 # Creare una pagina di esempio {#create-a-sample-page}
 
-A partire da AEM 6.1 Communities, il modo più semplice per creare una pagina di esempio è creare un sito community semplice, composto semplicemente da una funzione Pagina.
+A partire da AEM Community 6.1, il modo più semplice per creare una pagina di esempio è creare un sito community semplice, costituito semplicemente da una funzione Pagina.
 
 Questo includerà un componente parsys in modo da poter [abilitare i componenti per l’authoring](basics.md#accessing-communities-components).
 
@@ -25,7 +28,7 @@ Un&#39;altra opzione per l&#39;esplorazione con componenti campione consiste nel
 
 ## Creazione di un sito community {#create-a-community-site}
 
-È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva ad AEM Communities](getting-started.md).
+È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva  AEM Communities](getting-started.md).
 
 La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo la funzione [](functions.md#page-function) Pagina per creare un sito community semplice privo di altre funzioni (diverse dalle funzioni precablate di base per tutti i siti community).
 
