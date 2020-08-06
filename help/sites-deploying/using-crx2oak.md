@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 0%
 
 ---
 
@@ -23,24 +26,24 @@ CRX2Oak è uno strumento progettato per migrare i dati tra diversi repository.
 
 Può essere utilizzato per migrare i dati dalle versioni precedenti di CQ basate su Apache Jackrabbit 2 a Oak e può essere utilizzato anche per copiare i dati tra i repository Oak.
 
-È possibile scaricare la versione più recente di crx2oak dall&#39;archivio pubblico di Adobe in questa posizione:\
+È possibile scaricare la versione più recente di crx2oak dall&#39;archivio pubblico  Adobe in questa posizione:\
 [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 L’elenco delle modifiche e delle correzioni per la versione più recente è disponibile nelle note [sulla versione di](/help/release-notes/crx2oak.md)CRX2Oak.
 
 >[!NOTE]
 >
->Per ulteriori informazioni su Apache Oak e sui concetti chiave della persistenza di AEM, consultate [Introduzione alla piattaforma](/help/sites-deploying/platform.md)AEM.
+>Per ulteriori informazioni su Apache Oak e sui concetti chiave AEM persistenza, consulta [Introduzione alla piattaforma](/help/sites-deploying/platform.md)AEM.
 
 ## Casi di utilizzo della migrazione {#migration-use-cases}
 
 Lo strumento può essere utilizzato per:
 
-* Migrazione dalle versioni precedenti di CQ 5 ad AEM 6
+* Migrazione dalle versioni precedenti di CQ 5 a AEM 6
 * Copia dei dati tra più repository Oak
 * Conversione di dati tra diverse implementazioni Oak MicroKernel.
 
-Il supporto per la migrazione dei repository tramite store Blob esterni (comunemente noti come Data Store) è fornito in diverse combinazioni. Un possibile percorso di migrazione è da un repository CRX2 che utilizza un repository esterno `FileDataStore` a un repository Oak utilizzando un `S3DataStore`.
+Il supporto per la migrazione dei repository tramite store Blob esterni (comunemente noti come Data Store) è fornito in diverse combinazioni. Un possibile percorso di migrazione è da un repository CRX2 che utilizza un repository esterno `FileDataStore` a un repository Oak che utilizza un `S3DataStore`.
 
 Il diagramma seguente illustra tutte le possibili combinazioni di migrazione supportate da CRX2Oak:
 
@@ -48,17 +51,17 @@ Il diagramma seguente illustra tutte le possibili combinazioni di migrazione sup
 
 ## Funzioni {#features}
 
-CRX2Oak viene chiamato durante gli aggiornamenti di AEM in un modo in cui l&#39;utente può specificare un profilo di migrazione predefinito che automatizza la riconfigurazione delle modalità di persistenza. Questa è chiamata modalità di avvio rapido.
+CRX2Oak viene chiamato durante AEM aggiornamenti in modo che l&#39;utente possa specificare un profilo di migrazione predefinito che automatizza la riconfigurazione delle modalità di persistenza. Questa è chiamata modalità di avvio rapido.
 
-Può anche essere eseguito separatamente nel caso in cui richieda una maggiore personalizzazione. Tuttavia, in questa modalità le modifiche vengono apportate solo all’archivio e ogni ulteriore riconfigurazione di AEM deve essere eseguita manualmente. Questa modalità è detta modalità autonoma.
+Può anche essere eseguito separatamente nel caso in cui richieda una maggiore personalizzazione. Tuttavia, in questa modalità le modifiche vengono apportate solo al repository e ogni ulteriore riconfigurazione di AEM deve essere eseguita manualmente. Questa modalità è detta modalità standalone.
 
 Un&#39;altra cosa da notare è che con le impostazioni predefinite in modalità standalone, verrà migrato solo il Node Store e il nuovo repository riutilizzerà il vecchio archivio binario.
 
 ### Modalità QuickStart Automatizzata {#automated-quickstart-mode}
 
-Da AEM 6.3, CRX2Oak è in grado di gestire i profili di migrazione definiti dall’utente che possono essere configurati con tutte le opzioni di migrazione già disponibili. Ciò consente sia una maggiore flessibilità sia la possibilità di automatizzare la configurazione di AEM, funzioni non disponibili se si utilizza lo strumento in modalità standalone.
+Dalla AEM 6.3, CRX2Oak è in grado di gestire i profili di migrazione definiti dall&#39;utente che possono essere configurati con tutte le opzioni di migrazione già disponibili. Ciò consente sia una maggiore flessibilità, sia la possibilità di automatizzare la configurazione di AEM, funzioni non disponibili se si utilizza lo strumento in modalità standalone.
 
-Per passare da CRX2Oak alla modalità QuickStart è necessario definire il percorso della cartella crx-quickstart nella directory di installazione di AEM tramite questa variabile ambientale del sistema operativo:
+Per passare da CRX2Oak alla modalità QuickStart è necessario definire il percorso della cartella crx-quickstart nella directory di installazione AEM tramite questa variabile ambientale del sistema operativo:
 
 **Per sistemi basati su UNIX e macOS:**
 
@@ -102,9 +105,9 @@ Se i dati devono essere copiati tra due repository e si ha un percorso di conten
 
 #### Supporto per le versioni {#version-support}
 
-Per impostazione predefinita, AEM crea una versione di ogni nodo o pagina che viene modificata e la archivia nella directory archivio. Le versioni possono quindi essere utilizzate per ripristinare lo stato precedente della pagina.
+Per impostazione predefinita, AEM creare una versione di ciascun nodo o pagina che viene modificato e memorizzarla nella directory archivio. Le versioni possono quindi essere utilizzate per ripristinare lo stato precedente della pagina.
 
-Tuttavia, queste versioni non vengono mai eliminate anche se la pagina originale viene eliminata. Quando si utilizzano repository in funzione da molto tempo, la migrazione potrebbe dover elaborare molti dati ridondanti causati dalle versioni orfane.
+Tuttavia, queste versioni non vengono mai eliminate anche se la pagina originale viene eliminata. Quando si gestiscono repository che sono in funzione da molto tempo, la migrazione potrebbe dover elaborare molti dati ridondanti causati dalle versioni orfane.
 
 Una caratteristica utile per questi tipi di situazioni è l&#39;aggiunta del `--copy-versions` parametro. Può essere utilizzato per saltare i nodi di versione durante la migrazione o la copia di un repository.
 
@@ -120,7 +123,7 @@ Una versione open source di CRX2Oak è disponibile sotto forma di aggiornamento 
 
 * Supporto CRX2
 * Supporto profilo di migrazione
-* Supporto per la riconfigurazione automatica di AEM
+* Supporto per la riconfigurazione AEM automatizzata
 
 See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.html) for more information.
 
@@ -130,7 +133,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--cache`: Dimensione cache in MB (impostazione predefinita: `256`)
 
-* `--mmap`: Abilita accesso ai file mappati di memoria per l&#39;archivio segmenti
+* `--mmap`: Abilita l&#39;accesso ai file mappati di memoria per l&#39;archivio segmenti
 * `--src-password:` Password per il database RDB di origine
 
 * `--src-user:` Utente per l&#39;RDB di origine
@@ -143,7 +146,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--early-shutdown`: Chiude l&#39;archivio JCR2 di origine dopo che i nodi vengono copiati e prima che vengano applicati i ganci di commit
 * `--fail-on-error`: Impone un errore di migrazione se i nodi non possono essere letti dall&#39;archivio di origine.
-* `--ldap`: Migra gli utenti LDAP da un’istanza CQ 5.x a una basata su Oak. Affinché questo funzioni, il provider di identità nella configurazione Oak deve essere denominato ldap. For more information, see the [LDAP documentation](/help/sites-administering/ldap-config.md).
+* `--ldap`: Consente di migrare gli utenti LDAP da un’istanza CQ 5.x a una basata su Oak. Affinché questo funzioni, il provider di identità nella configurazione Oak deve essere denominato ldap. For more information, see the [LDAP documentation](/help/sites-administering/ldap-config.md).
 
 * `--ldap-config:` Utilizzate questo insieme al `--ldap` parametro per i repository CQ 5.x che utilizzavano più server LDAP per l’autenticazione. È possibile utilizzarlo per puntare ai file CQ 5.x `ldap_login.conf` o di `jaas.conf` configurazione. Il formato è `--ldapconfig=path/to/ldap_login.conf`.
 
@@ -156,14 +159,14 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 #### Opzioni percorso {#path-options}
 
 * `--include-paths:` Elenco di percorsi separati da virgola da includere durante la copia
-* `--merge-paths`: Elenco di percorsi da unire separati da virgola durante la copia
+* `--merge-paths`: Elenco di percorsi da unire separati da virgole durante la copia
 * `--exclude-paths:` Elenco di percorsi da escludere durante la copia separati da virgole.
 
 ### Opzioni store BLOB di origine {#source-blob-store-options}
 
-* `--src-datastore:` La directory datastore da utilizzare come origine `FileDataStore`
+* `--src-datastore:` La directory del datastore da utilizzare come origine `FileDataStore`
 
-* `--src-fileblobstore`: La directory datastore da utilizzare come origine `FileBlobStore`
+* `--src-fileblobstore`: La directory del datastore da utilizzare come origine `FileBlobStore`
 
 * `--src-s3datastore`: La directory del datastore da utilizzare per l&#39;origine `S3DataStore`
 
@@ -195,11 +198,11 @@ Potete inoltre abilitare le informazioni di debug per il processo di migrazione 
   </tr> 
   <tr> 
    <td>Modalità Quickstart</td> 
-   <td>Quando si esegue CRX2Oak, è possibile aggiungere alla riga di comando le <strong>opzioni DEBUG a livello di</strong> log (TRACE <strong>o </strong>di log) della riga di comando. In questa modalità i registri vengono automaticamente reindirizzati al file <strong>upgrade.log</strong>.</td> 
+   <td>Quando si esegue CRX2Oak, è possibile aggiungere alla riga di comando le <strong>opzioni DEBUG a livello di</strong> log o di TRACE <strong></strong>a livello di log. In questa modalità i registri vengono automaticamente reindirizzati al file <strong>upgrade.log</strong>.</td> 
   </tr> 
   <tr> 
    <td>Modalità indipendente</td> 
-   <td><p>Aggiungete le opzioni <strong>—trace</strong> alla riga di comando CRX2Oak per mostrare gli eventi TRACE sull'output standard (è necessario reindirizzare i log manualmente utilizzando il carattere di reindirizzamento: '&gt;' o 'tee' per un'ispezione successiva).</p> </td> 
+   <td><p>Aggiungete le opzioni <strong>—trace</strong> alla riga di comando CRX2Oak per visualizzare gli eventi TRACE sull'output standard (è necessario reindirizzare i registri manualmente utilizzando il carattere di reindirizzamento: '&gt;' o 'tee' per un'ispezione successiva).</p> </td> 
   </tr> 
  </tbody> 
 </table>
