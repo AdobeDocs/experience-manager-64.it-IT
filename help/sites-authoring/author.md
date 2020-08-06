@@ -1,8 +1,8 @@
 ---
 title: Concetto di authoring
 seo-title: Concetto di authoring
-description: Concetti di authoring in AEM
-seo-description: Concetti di authoring in AEM
+description: Concetti relativi all’authoring in AEM
+seo-description: Concetti relativi all’authoring in AEM
 uuid: 824c8b91-07c7-471b-b3aa-5a73d6d48414
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
 
 AEM offre due ambienti:
 
-* Authoring
+* Autore
 * Pubblicazione
 
 Questi interagiscono tra di loro e consentono di rendere i contenuti disponibili nel sito web e accessibili ai visitatori.
@@ -31,15 +34,15 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-Nell’ambiente di authoring le funzioni di AEM sono accessibili tramite due interfacce utente. Nell’ambiente di pubblicazione si progetta invece l’aspetto e il comportamento dell’interfaccia che si intende presentare ai visitatori.
+Nell’ambiente di authoring le funzioni di AEM sono accessibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
 >[!NOTE]
 >
->AEM e il dispatcher sono utilizzati per pubblicare questa documentazione di AEM.
+>AEM e il dispatcher vengono utilizzati per pubblicare la documentazione AEM.
 
 ## Ambiente di authoring {#author-environment}
 
-The author works in what is known as the **[author environment](/help/sites-authoring/home.md)**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+L’autore utilizza il cosiddetto **[ambiente di authoring](/help/sites-authoring/home.md)**, che fornisce un’interfaccia, grafica o normale, di facile utilizzo per la creazione dei contenuti. In genere si trova dietro un firewall aziendale per la protezione dei dati e l’autore può accedervi mediante un account dotato delle autorizzazioni di accesso appropriate.
 
 >[!NOTE]
 >
@@ -56,7 +59,7 @@ A seconda della configurazione dell’istanza in uso e dei diritti di accesso pe
 * Spostare, copiare ed eliminare contenuti, pagine, ecc.
 * Pubblicare (o annullare la pubblicazione di) pagine, risorse, ecc.
 
-Inoltre è possibile effettuare attività amministrative con cui gestire i contenuti:
+Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
 * Flussi di lavoro che controllano la modalità di gestione dei cambiamenti, ad esempio per imporre la revisione prima della pubblicazione
 * Progetti per la coordinazione di singole attività
@@ -67,7 +70,7 @@ Inoltre è possibile effettuare attività amministrative con cui gestire i conte
 
 ## Ambiente di pubblicazione {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia realizzata.
+When ready, the AEM site&#39;s content is published to the **publish environment**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
 Solitamente, l’ambiente di pubblicazione si trova nella cosiddetta zona demilitarizzata. In altre parole, è accessibile da Internet ma non usufruisce più della protezione completa offerta dalla rete interna.
 
@@ -77,15 +80,15 @@ Quando il sito AEM è di tipo [community](/help/communities/overview.md) o inclu
 >
 >In alcuni casi esiste una sovrapposizione della terminologia utilizzata. Ad esempio:
 >
->* **Pubblicare / Annullare la pubblicazione**
-   >  Termini principali per le azioni che rendono o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>* **Pubblicare/Annullare la pubblicazione**
+   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
    >
    >
-* **Attiva/Disattiva**
+* **Attivare/Disattivare**
    >  Sinonimi di pubblicare/annullare la pubblicazione. Utilizzati più frequentemente nell’interfaccia classica.
    >
    >
-* **Replicare / Replica**
+* **Replicare/Replica**
    >  Si tratta dei termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro; ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
 
@@ -93,4 +96,4 @@ Quando il sito AEM è di tipo [community](/help/communities/overview.md) o inclu
 
 ## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, vengono usati **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)che implementano funzioni di bilanciamento del carico e memorizzazione in cache.**
