@@ -64,7 +64,7 @@ Il frammento di documento Dettagli fatturazione include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
@@ -126,7 +126,7 @@ Il frammento di documento Dettagli cliente include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -187,7 +187,7 @@ Il frammento di documento Riepilogo fatturazione include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -252,7 +252,7 @@ Il frammento di documento Riepilogo spese include i campi seguenti:
 
 Per creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -295,7 +295,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
    1. Select **è minore** dell&#39;operatore.
    1. Selezionate **Numero** e immettete il valore come **60**.
 
-   In base a questa condizione, la riga Added Services Added Cost viene visualizzata solo se il valore per il campo Call Addebiti è inferiore a 60.
+   Based on this condition, Value Added Services Charges row is displayed only if the value for the Call Charges field is less than 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
