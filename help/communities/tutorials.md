@@ -1,8 +1,8 @@
 ---
 title: Esercitazioni
 seo-title: Esercitazioni
-description: Esempi per imparare e utilizzare il framework dei componenti social di AEM Communities (SCF)
-seo-description: Esempi per imparare e utilizzare il framework dei componenti social di AEM Communities (SCF)
+description: Esempi per imparare e lavorare con  AEM Communities social component framework (SCF)
+seo-description: Esempi per imparare e lavorare con  AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 2%
 
 ---
 
 
 # Esercitazioni {#tutorials}
 
-Questi sono esempi per aiutarvi a imparare e lavorare con il framework delle componenti [sociali (SCF)](scf.md)di AEM 6.1 Communities.
+Questi sono esempi per contribuire all&#39;apprendimento e all&#39;utilizzo AEM 6.1 Community [social component framework (SCF)](scf.md).
 
 ## Personalizzazione lato client {#client-side-customization}
 
@@ -33,7 +36,7 @@ Consultate anche personalizzazione [lato client](client-customize.md)SCF.
 
 Vedere anche personalizzazione [lato server](server-customize.md)SCF.
 
-Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.com/Adobe-Marketing-Cloud) Adobe Marketing Cloud:
+Il codice di esempio è disponibile nell’archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) :
 
 * [Personalizza esempio componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -57,7 +60,7 @@ Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.c
 
 ## Demo {#demo-users}
 
-Il pacchetto di esempi Geometrixx include utenti dimostrativi. Spesso esiste una differenza di esperienza tra essere un visitatore (non connesso) o un membro (connesso) e, finché i pacchetti di esempi Geometrixx rimangono installati, potete utilizzare questi utenti per simulare lo stato di accesso quando esplorate con la guida [Componenti](components-guide.md)community.
+Il pacchetto di Geometrixx include utenti dimostrativi. Spesso esiste una differenza di esperienza tra essere un visitatore (non connesso) o un membro (connesso) e, finché i pacchetti di esempi di Geometrixx rimangono installati, potete utilizzare questi utenti per simulare lo stato di accesso quando esplorate con la guida [Componenti](components-guide.md)community.
 
 Per un elenco completo degli utenti demo, passa alla Barra degli **[!UICONTROL strumenti > Operazioni > Protezione > Utenti]**. Oppure utilizzate la console [di](http://localhost:4502/useradmin) sicurezza dell’interfaccia classica per la gestione di utenti e gruppi.
 
