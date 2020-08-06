@@ -1,8 +1,8 @@
 ---
 title: Aggiunta di allegati
 seo-title: Aggiunta di allegati
-description: Aggiungere fotografie e note di script come annotazioni all'attività nell'app AEM Forms
-seo-description: Aggiungere fotografie e note di script come annotazioni all'attività nell'app AEM Forms
+description: Aggiungere fotografie e note di script come annotazioni all'attività nell'app  AEM Forms
+seo-description: Aggiungere fotografie e note di script come annotazioni all'attività nell'app  AEM Forms
 uuid: cf8b54a8-e5bc-49df-90f8-c6a37533c347
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
 source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 0%
 
 ---
 
 
 # Aggiunta di allegati {#adding-attachments}
 
-## Aggiunta di allegati ai moduli sincronizzati con il server AEM Forms Workflow (AEM Forms on JEE) {#adding-annotations}
+## Aggiunta di allegati ai moduli sincronizzati con  server AEM Forms Workflow ( AEM Forms su JEE) {#adding-annotations}
 
-L&#39;app AEM Forms consente di allegare immagini, note con script e note di testo al modulo sincronizzate con il server AEM Forms JEE. Se il modulo viene caricato da un server AEM Forms Workflow, gli allegati vengono aggiunti al modulo. È possibile toccare il pulsante allegato ![allegati-app](assets/attachments-app.png) per visualizzare tutti gli allegati di un modulo insieme. La notifica rossa specifica il numero di allegati nel modulo. Se nel modulo non sono presenti allegati, non è possibile visualizzare il pulsante rosso delle notifiche. Se non sono presenti allegati nel modulo, toccando il pulsante degli allegati ![allegare](assets/attch.png)è possibile allegare foto o script.
+&#39;app AEM Forms consente di allegare immagini, note con script e note di testo al modulo sincronizzate con  server AEM Forms JEE. Se il modulo viene caricato da un server AEM Forms Workflow , gli allegati vengono aggiunti al modulo. È possibile toccare il pulsante allegato ![allegati-app](assets/attachments-app.png) per visualizzare tutti gli allegati di un modulo insieme. La notifica rossa specifica il numero di allegati nel modulo. Se nel modulo non sono presenti allegati, non è possibile visualizzare il pulsante rosso delle notifiche. Se non sono presenti allegati nel modulo, toccando il pulsante degli allegati ![allegare](assets/attch.png)è possibile allegare foto o script.
 
 Le opzioni disponibili sono:
 
@@ -30,7 +33,7 @@ Le opzioni disponibili sono:
 
 >[!NOTE]
 >
->Gli allegati aggiunti da un utente sono visibili agli altri utenti delle app AEM Forms. Altri utenti non possono eliminare gli allegati aggiunti da un utente.
+>Gli allegati aggiunti da un utente sono visibili agli altri utenti  app AEM Forms. Altri utenti non possono eliminare gli allegati aggiunti da un utente.
 
 
 ### Schermata Allegati {#the-attachments-screen}
@@ -68,7 +71,7 @@ L&#39;opzione **Note** consente di aggiungere script a mano libera e allegati di
 1. Nell’interfaccia utente Note che viene avviata, acquisite uno script a mano libera.
 
    ![Interfaccia scarabocchio](assets/scribble-ui.png)
-   **Figura:** *scarabocchio*
+   **Figura:** *Scribble*
 
    Nell&#39;interfaccia Scribble è possibile utilizzare le seguenti opzioni:
 
@@ -76,12 +79,13 @@ L&#39;opzione **Note** consente di aggiungere script a mano libera e allegati di
    * **[!UICONTROL Fatto]**: Associa lo script corrente.
    * **[!UICONTROL Annulla]**: Elimina lo script corrente ed esce dall&#39;interfaccia utente di Scribble.
    * ![tastiera](assets/keyboard.png): Cancella lo script e consente di aggiungere una nota di testo.
-   ![Tastiera nello script dell&#39;app AEM Forms](assets/keyboard-inapp.png)
 
-## Allegati in moduli sincronizzati con i server AEM Forms senza AEM Forms Workflow (AEM Forms su OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+   ![Tastiera in  script app AEM Forms](assets/keyboard-inapp.png)
 
-Gli allegati per i moduli mobili sincronizzati con i server AEM Forms OSGi funzionano in modo simile ai server AEM Forms JEE.
+## Allegati in moduli sincronizzati con i server AEM Forms  senza  Flusso di lavoro AEM Forms ( AEM Forms su OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
-Gli allegati a livello di modulo non sono supportati per i moduli adattivi caricati nell&#39;app da un server AEM Forms OSGi. Per allegare immagini o note di testo, è necessario abilitare gli allegati a livello di campo nel modulo al momento della creazione. Trascinare il componente Allegato dal Browser componenti sul campo.
+Gli allegati per i moduli mobili sincronizzati con  server AEM Forms OSGi funzionano in modo simile ai server AEM Forms JEE .
+
+Gli allegati a livello di modulo non sono supportati per i moduli adattivi caricati nell&#39;app da un server AEM Forms OSGi . Per allegare immagini o note di testo, è necessario abilitare gli allegati a livello di campo nel modulo al momento della creazione. Trascinare il componente Allegato dal Browser componenti sul campo.
 
 Nel caso di moduli adattivi, è possibile visualizzare i file allegati nel documento record (DoR). Vedere [Genera documento record per i moduli](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adattivi non XFA.
