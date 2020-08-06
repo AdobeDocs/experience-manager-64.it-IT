@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 I moduli HTML5 supportano la clausola XFA Picture per la visualizzazione di valori e valori formattati per data, testo e simboli numerici. Sono supportate le seguenti espressioni della clausola illustrazione:
 
-* category(locale){clausola-immagine}| category(locale){clausola illustrazione}| category(locale){clausola illustrazione}
+* category(locale){clausola-immagine} | category(locale){clausola illustrazione} | category(locale){clausola illustrazione}
 * category.subcategory{}
 
 >[!NOTE]
 >
->Al momento, Mobile Forms non supporta la clausola Edit Picture. Inoltre, i simboli delle clausole DateTime e Time Picture non sono supportati.
+>Attualmente, Mobile Forms non supporta la clausola Edit Picture. Inoltre, i simboli delle clausole DateTime e Time Picture non sono supportati.
 
 ## Simboli dei campi data supportati {#supported-date-field-symbols}
 
@@ -92,19 +95,19 @@ Espressione supportata per la clausola Date Picture:
 
 ## Clausola illustrazione numerica {#numeric-picture-clause}
 
-I moduli HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza nel supporto tra moduli PDF e moduli HTML.
+I moduli HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza nel supporto tra PDF forms e Forms HTML.
 
-Nei moduli **** PDF, viene formattato un numero indipendentemente dal numero di simboli presenti nella clausola Immagine
+In **PDF forms**, viene formattato un numero indipendentemente dal numero di simboli della clausola Immagine
 
-In **HTML Forms**, un numero è formattato solo se il numero ha cifre inferiori al numero di simboli nella clausola Immagine.
+In Forms **** HTML, un numero è formattato solo se il numero ha cifre inferiori al numero di simboli nella clausola Immagine.
 
 **Esempio**: Considerare una clausola Picture: num{zzz,zzz,zz9}.
 
-Il numero **10000** è formattato come **10.000** sia nei moduli HTML che PDF.
+Il numero **10000** è formattato come **10.000** sia in HTML che in PDF forms.
 
-Il numero 1000000 è formattato come 1000.000 nei moduli PDF. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
+Il numero 1000000 è formattato come 10000000 in PDF forms. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
 
-Le espressioni supportate per la clausola Immagine numerica in **HTML Forms** sono:
+Le espressioni supportate per la clausola Immagine numerica in Forms **** HTML sono:
 
 * num.integer{}
 * num.decimal{}
