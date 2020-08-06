@@ -1,5 +1,5 @@
 ---
-title: NON PUBBLICARE, MA NON ELIMINARE LA personalizzazione dei tipi di dati per i modelli di frammenti di contenuto
+title: NON PUBBLICARE, MA NON personalizzare i tipi di dati DELETE per i modelli di frammenti di contenuto
 seo-title: Personalizzazione dei tipi di dati per i modelli di frammenti di contenuto
 description: È possibile personalizzare i tipi di dati utilizzati nei modelli di frammenti di contenuto.
 seo-description: È possibile personalizzare i tipi di dati utilizzati nei modelli di frammenti di contenuto.
@@ -10,17 +10,20 @@ discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
 
-# NON PUBBLICARE, MA NON ELIMINARE LA personalizzazione dei tipi di dati per i modelli di frammenti di contenuto{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# NON PUBBLICARE, MA NON personalizzare i tipi di dati DELETE per i modelli di frammenti di contenuto{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
 [I frammenti](/help/assets/content-fragments.md) di contenuto si basano su modelli [di frammenti di](/help/assets/content-fragments-models.md)contenuto. Questi modelli sono composti da [elementi](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) di tipi di dati diversi.
 
-Sono disponibili diversi tipi di dati out-of-the-box, tra cui testo su una sola riga, RTF per più righe, campi numerici, selettori booleani, opzioni di menu a discesa, data e ora e altri. Gli utenti AEM possono selezionare i tipi di dati in base all&#39;intento editoriale dei frammenti corrispondenti. Questo consente di gestire modelli di testo semplici attraverso modelli complessi con diversi tipi di contenuto e l’esperienza di authoring dei frammenti associata.
+Sono disponibili diversi tipi di dati out-of-the-box, tra cui testo su una sola riga, RTF per più righe, campi numerici, selettori booleani, opzioni di menu a discesa, data e ora e altri. AEM utenti possono selezionare i tipi di dati in base all&#39;intento editoriale dei frammenti corrispondenti. Questo consente di gestire modelli di testo semplici attraverso modelli complessi con diversi tipi di contenuto e l’esperienza di authoring dei frammenti associata.
 
-I tipi di dati sono definiti da una [combinazione di proprietà](#properties) nodo detenute in posizioni [specifiche nella directory archivio](#locations-in-the-repository). È inoltre possibile creare tipi [di](#creating-your-data-type) dati personalizzati e proprietà [field](#creating-your-own-fieldproperties-property).
+I tipi di dati sono definiti da una [combinazione di proprietà](#properties) nodo detenute in posizioni [specifiche nella directory archivio](#locations-in-the-repository). È inoltre possibile creare tipi [di](#creating-your-data-type) dati personalizzati e proprietà [fieldProperties](#creating-your-own-fieldproperties-property).
 
 <!-- Please uncomment when files are used>
 >[!NOTE]
@@ -57,7 +60,7 @@ Tutti i tipi di dati sono rappresentati in una struttura di nodi come in:
 
 `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
-Ogni nodo sotto `/items` ha proprietà che definiscono come tale tipo di dati deve essere rappresentato all&#39;interno dell&#39;editor modelli.
+Ogni nodo sotto `/items` ha proprietà che definiscono il modo in cui tale tipo di dati deve essere rappresentato all&#39;interno dell&#39;editor modelli.
 
 Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere presenti tutte le proprietà seguenti:
 
@@ -84,7 +87,7 @@ Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere pr
 
 * `fieldViewResourceType`
 
-   Il tipo di risorsa Sling utilizzato per rappresentare il tipo di dati nell&#39;anteprima, durante la costruzione del modello. Quando l&#39;utente trascina il tipo di dati a sinistra dell&#39;editor modelli, la `fieldViewResourceType` proprietà rappresenta il componente di cui viene eseguito il rendering. Questa opzione è utilizzata per i casi in cui non si desidera eseguire il rendering completo del componente, ma si desidera solo eseguire il rendering di un sostituto che riduce al minimo il sovraccarico per l&#39;editor modelli.
+   Il tipo di risorsa Sling utilizzato per rappresentare il tipo di dati nell&#39;anteprima, durante la costruzione del modello. Quando l&#39;utente trascina il tipo di dati a sinistra dell&#39;editor modelli, la `fieldViewResourceType` proprietà rappresenta il componente di cui viene eseguito il rendering. Questa opzione è utilizzata per i casi in cui non si desidera eseguire il rendering dell’intero componente, ma si desidera solo eseguire il rendering di un sostituto che riduce al minimo il sovraccarico per l’editor modelli.
 
 * `fieldTitle`
 
@@ -192,7 +195,7 @@ Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperti
 
 * `labelfield`
 
-   Componente che aggiunge un `textfield` &#39;etichetta campo per un tipo di dati che può avere etichette di campo.
+   Componente che aggiunge un&#39; `textfield` immissione che aggiunge l&#39;etichetta del campo a un tipo di dati che può avere etichette di campo.
 
 * `maptopropertyfield`
 
@@ -200,7 +203,7 @@ Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperti
 
 * `maxlengthfield`
 
-   Viene utilizzata per aggiungere la `maxLength` proprietà ai tipi di dati che accettano questa proprietà. Ad esempio, con Testo **su riga** singola, **Numero** ecc.
+   Viene utilizzata per aggiungere la `maxLength` proprietà ai tipi di dati che accettano questa proprietà. Ad esempio, con Testo **su riga** singola, **Numero** e così via.
 
 * `multieditorfield`
 
@@ -228,7 +231,7 @@ Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperti
 
 * `requiredfield`
 
-   Questa casella di controllo rappresenta la `required` proprietà di un componente. Poiché la maggior parte dei componenti accetta il `required` campo, questo campo può essere utilizzato per la maggior parte dei tipi di dati.
+   Casella di controllo che rappresenta la `required` proprietà di un componente. Poiché la maggior parte dei componenti accetta il `required` campo, questo campo può essere utilizzato per la maggior parte dei tipi di dati.
 
 * `tagsfields`
 
@@ -292,7 +295,8 @@ Per sovrapporre i tipi di dati, è necessario creare la struttura del nodo `/app
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
-   Questi definiscono il modo in cui verrà eseguito il rendering dei componenti per il tipo di dati. Possono essere un qualsiasi componente; includendo i componenti personalizzati (è necessario un set di ` [fieldProperties](#fieldproperties)`componenti corrispondenti).
+
+   Questi definiscono il modo in cui verrà eseguito il rendering dei componenti per il tipo di dati. Possono essere un qualsiasi componente; includi i tuoi componenti personalizzati (è necessario un set di ` [fieldProperties](#fieldproperties)`componenti corrispondenti).
 
    Definire queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
 
@@ -311,6 +315,7 @@ Per sovrapporre i tipi di dati, è necessario creare la struttura del nodo `/app
    * `renderType`
    * `valueType`
    * `listOrder`
+
    Definire queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
 
 ### Utilizzo del tipo di dati {#using-your-data-type}
@@ -335,7 +340,7 @@ Dopo aver salvato la struttura del nodo, con tutte le proprietà applicate, è p
 
       `sling:include`
 
-   1. Questo componente deve eseguire il rendering di un campo (se l&#39;utente deve inserire dei dati) o di un input nascosto con le proprietà necessarie per il tipo di dati. Ad esempio, un componente multicampo richiede un nodo secondario con il tipo di campo che deve duplicare, pertanto deve essere presente un input in grado di creare (attraverso la meccanica POST sling) un nodo figlio di un tipo specifico.
+   1. Questo componente deve eseguire il rendering di un campo (se l&#39;utente deve inserire dei dati) o di un input nascosto con le proprietà necessarie per il tipo di dati. Ad esempio, un componente multicampo richiede un nodo secondario con il tipo di campo che deve duplicare, pertanto deve essere presente un input in grado di creare (attraverso la meccanica dei POST sling) un nodo secondario di un tipo specifico.
 
 1. È necessario aggiungere il nome di base di questo componente `fieldProperties`.
 1. Ripetere l&#39;operazione per tutte le proprietà necessarie.
