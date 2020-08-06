@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +25,7 @@ Nell’esempio di estensione dei componenti viene utilizzato il sistema di comme
 * Commenti - Il sistema di commenti che include il componente inserito in una pagina
 * Commento: il componente che acquisisce un’istanza di un commento pubblicato
 
-Entrambi i componenti devono essere installati, soprattutto se si personalizzano l’aspetto di un commento pubblicato.
+Entrambi i componenti devono essere implementati, soprattutto se si personalizzano l’aspetto di un commento pubblicato.
 
 >[!NOTE]
 >
@@ -53,8 +56,8 @@ L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizz
    * **[!UICONTROL Crea > Componente...]**
 
       * **Etichetta**: *commenti*
-      * **Titolo**: Commenti *Alt*
-      * **Descrizione**: Stile commenti *alternativo*
+      * **Titolo**: *Commenti Alt*
+      * **Descrizione**: *Stile commento alternativo*
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Gruppo**: *Personalizzato*
    * Seleziona **[!UICONTROL Avanti]**
@@ -83,8 +86,8 @@ L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizz
    * Selezionare **[!UICONTROL Crea > Componente...]**
 
       * **Etichetta**: *commento*
-      * **Titolo**: Commento *Alt*
-      * **Descrizione**: Stile commento *alternativo*
+      * **Titolo**: *Commento Alt*
+      * **Descrizione**: *Stile commento alternativo*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Gruppo**: `*.hidden*`
    * Seleziona **[!UICONTROL Avanti]**
@@ -116,7 +119,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
       * Da `social/commons/components/hbs/comments`
       * A `/apps/custom/components/comments`
-   * Modificare per includere il componente commento personalizzato (~riga 75):
+   * Modificate per includere il componente commento personalizzato (~riga 75):
 
       * Sostituisci `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
@@ -150,8 +153,8 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
    * **Tipo**: `cq:ClientLibraryFolder`
    * Aggiungi alla scheda **[!UICONTROL Proprietà]** :
 
-      * **Nome** `categories` Tipo ****`String` Valore **** `cq.social.author.hbs.comments``Multi`
-      * **Nome** `dependencies` Tipo ****`String` Valore **** `cq.social.scf``Multi`
+      * **Nome** `categories` Tipo **** Valore `String` **Valore** `cq.social.author.hbs.comments` `Multi`
+      * **Nome** `dependencies` Tipo **** Valore `String` **Valore** `cq.social.scf` `Multi`
 
 * Seleziona **[!UICONTROL Salva tutto]**
 * Con `/apps/custom/components/comments/clientlib`il nodo s selezionato, create 3 file:
