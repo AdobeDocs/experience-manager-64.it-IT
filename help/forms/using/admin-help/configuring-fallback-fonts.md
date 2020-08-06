@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
 
 # Configurazione dei font di fallback {#configuring-fallback-fonts}
 
-È possibile configurare manualmente il file FontManagerResources.properties per mappare i font predefiniti dei moduli AEM su fallback (o sostitutivi) se i font predefiniti non sono disponibili sul server. Questo file di proprietà si trova nel file adobe-fontmanager.jar.
+È possibile configurare manualmente il file FontManagerResources.properties per mappare i font AEM modulo predefiniti a fallback (o sostitutivi) se i font predefiniti non sono disponibili sul server. Questo file di proprietà si trova nel file adobe-fontmanager.jar.
 
 >[!NOTE]
 >
@@ -28,7 +31,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. Individuare il file FontManagerResources.properties e aprirlo in un editor di testo.
 1. Modificate le posizioni e i nomi dei font Generici e Fallback come richiesto e salvate il file.
 
-   Le voci dei font nel file FontManagerResources.properties sono relative alla directory root *[/fonts dei moduli]* Aem. Se si specificano font che non sono font di moduli AEM predefiniti, è necessario installare tali font all&#39;interno di questa struttura di directory (all&#39;interno di una directory esistente o in una di nuova creazione).
+   Le voci dei font nel file FontManagerResources.properties sono relative alla directory root *[/fonts dei moduli]* Aem. Se si specificano font che non sono font AEM modulo predefiniti, è necessario installare tali font all&#39;interno di questa struttura di directory (all&#39;interno di una directory esistente o in una nuova directory creata).
 
    >[!NOTE]
    >
@@ -43,5 +46,5 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 >[!NOTE]
 >
->Non utilizzate Configuration Manager per creare nuovamente il pacchetto del file adobe-livecycle-[appserver].ear perché le modifiche apportate con i valori predefiniti dei moduli AEM verranno sovrascritte.
+>Non utilizzare Configuration Manager per creare nuovamente il pacchetto del file adobe-livecycle-[appserver].ear perché le modifiche apportate verranno sovrascritte con i valori predefiniti dei moduli AEM.
 
