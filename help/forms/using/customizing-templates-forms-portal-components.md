@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ Conoscenza di base di HTML e CSS
 
 ## Panoramica {#overview}
 
-L&#39;interfaccia utente di AEM Forms consente di aggiungere metadati a qualsiasi modulo. I metadati personalizzati possono migliorare l&#39;esperienza utente durante l&#39;elencazione e la ricerca di moduli all&#39;interno dell&#39;organizzazione.
+L&#39;interfaccia utente  AEM Forms consente di aggiungere metadati a qualsiasi modulo. I metadati personalizzati possono migliorare l&#39;esperienza utente durante l&#39;elencazione e la ricerca di moduli all&#39;interno dell&#39;organizzazione.
 
-Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e usare metadati personalizzati con il set di stili CSS.
+Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e utilizzare i metadati personalizzati con il set di stili CSS.
 
-Per creare un modello personalizzato per vari componenti di Forms Portal, effettuare le operazioni seguenti.
+Per creare un modello personalizzato per vari componenti di Forms Portal, effettuate le seguenti operazioni.
 
 ## Creating a custom template {#creating-a-nbsp-custom-template}
 
@@ -42,6 +45,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
       * Sezione Bozze: /libs/fd/fp/draftTemplate
       * Sezione Invii: /libs/fd/fp/submitTemplate
    * Collegamento componente: /libs/fd/fp/linkTemplate
+
    Aggiungete un titolo da visualizzare durante la selezione dei modelli di layout.
 
    *Nota: Il titolo può essere diverso dal nome del nodo sling:Folder creato. *
@@ -52,7 +56,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
 
 ## Esempio di lavoro {#working-example}
 
-Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout personalizzato della scheda governativa Geometrixx per il componente Ricerca e verifica.
+Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout scheda Geometrixx personalizzato per il componente Ricerca e verifica.
 
 ```mxml
 <div class="__FP_boxes-container __FP_single-color">
@@ -76,7 +80,7 @@ Di seguito è riportato un esempio di implementazione di un modello personalizza
 
 Un modello personalizzato per qualsiasi componente di Forms Portal include voci ripetibili e non ripetibili. Le voci ripetibili sono entità di base per l&#39;elenco. Alcuni esempi di voci ripetibili sono i componenti Cerca e nascondi, Bozze e invii e Collegamento.
 
-Forms Portal fornisce una sintassi per i segnaposto per la visualizzazione di metadati OOOTB personalizzati. I segnaposto vengono compilati dopo la visualizzazione dei risultati di moduli, bozze o invii.
+Forms Portal fornisce una sintassi per i segnaposto per la visualizzazione di metadati OOTB/personalizzati. I segnaposto vengono compilati dopo la visualizzazione dei risultati di moduli, bozze o invii.
 
 Per includere una voce ripetibile, configurate il valore dell&#39;attributo **ripetibile** su **true**.
 
@@ -84,7 +88,7 @@ Per includere una voce ripetibile, configurate il valore dell&#39;attributo **ri
 
 Ogni segnaposto dispone di un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **** $metadata_prop nella posizione desiderata.
 
-*Nell&#39;esempio, la proprietà metadata viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, e nel modo prescritto, in modo analogo.*
+*Nell&#39;esempio, la proprietà metadata viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, percorso, come prescritto.*
 
 ## Metadati forniti {#out-of-the-box-metadata}
 
@@ -92,7 +96,7 @@ Diversi componenti di Forms Portal forniscono set esclusivi di metadati OOTB uti
 
 ### Ricerca e filtro, componente {#search-amp-lister-component}
 
-* **** Titolo: Titolo del modulo
+* **Titolo:** Titolo del modulo
 * **name**: Nome del modulo (in genere corrisponde al titolo)
 * **descrizione**: Descrizione del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
@@ -118,22 +122,22 @@ Supporto per localizzazione, ordinamento e utilizzo delle proprietà di configur
 
 ### Collegamento, componente {#link-component}
 
-* **** Titolo: Titolo del modulo
+* **Titolo:** Titolo del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
 * **target**: Attributo di destinazione del collegamento. I valori validi sono &quot;_blank&quot; e &quot;_self.&quot;
 * **linkText**: Didascalia collegamento
 
-### Componente Bozze e invii {#drafts-amp-submissions-component}
+### Bozze e invii, componente {#drafts-amp-submissions-component}
 
 * **Percorso**: Percorso del nodo di metadati bozza/invio. Utilizzatelo con l&#39;estensione .HTML come URL per aprire una bozza o per inviarla.
-* **contextPath**: Percorso contestuale dell’istanza AEM
+* **contextPath**: Percorso di contesto dell&#39;istanza AEM
 * **firstLetter**: Prima lettera (maiuscola) del titolo del modulo adattivo, salvata come bozza o inviata.
 * **formName**: Titolo del modulo adattivo, salvato come Bozza o inviato.
 * **draftID**: ID per la bozza elencata (Utilizzate solo nel modello per la sezione Bozza).
 * **submitID**: ID per l&#39;invio elencato (Usa solo nel modello per la sezione Invio).
 * **status**: Stato del modulo inviato. Utilizzate solo nel modello per la sezione Invio.
 * **descrizione**: Descrizione del modulo adattivo associato alla bozza o all&#39;invio.
-* **diffTime**: Differenza tra l&#39;ora corrente e l&#39;ultima azione di salvataggio per la bozza. In alternativa, differenza tra l&#39;ora corrente e l&#39;ultima azione di invio per l&#39;invio.
+* **diffTime**: Differenza tra l&#39;ora corrente e l&#39;ultima azione di salvataggio per la bozza. In alternativa, la differenza tra l&#39;ora corrente e l&#39;ultima azione di invio per l&#39;invio.
 * **iconClass**: Classe CSS utilizzata per visualizzare la prima lettera della bozza/invio. Forms Portal include le classi seguenti, che forniscono sfondi colorati diversi.
 * **proprietario**: Utente che ha creato la bozza/invio.
 * **Oggi**: Data di creazione della bozza o di invio in formato GG:MM:AAAA.
@@ -141,7 +145,7 @@ Supporto per localizzazione, ordinamento e utilizzo delle proprietà di configur
 
 *Nota:*
 
-1. Per l&#39;opzione di eliminazione nella sezione Bozze del componente Bozze e invii, denominate la classe CSS &quot;_FP_deleteDraft&quot;. Inoltre, includete l&#39;attributo &quot;draftID&quot; con il valore **${draftID}**, che è l&#39;ID bozza della bozza corrispondente.
+1. Per l&#39;opzione di eliminazione nella sezione Bozze del componente Bozze e invii, assegnate alla classe CSS il nome &quot;_FP_deleteDraft&quot;. Inoltre, includete l&#39;attributo &quot;draftID&quot; con il valore **${draftID}**, che è l&#39;ID bozza della bozza corrispondente.
 
 1. Quando create collegamenti per aprire bozze e invii, potete specificare **$path.html** come valore dell&#39;attributo **href** per il tag di ancoraggio.
 
@@ -149,22 +153,22 @@ Supporto per localizzazione, ordinamento e utilizzo delle proprietà di configur
 
 **A**. Elemento contenitore
 
-**** B. metadati &quot;percorso&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
+**B.** metadati &quot;percorso&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
 
 **C.** Attributo ripetibile ai dati utilizzato per la sezione del modello per ciascun modulo
 
-**** D. Per localizzare la stringa &quot;Applica&quot;
+**D.** Per localizzare la stringa &quot;Applica&quot;
 
-**** E. Utilizzo della proprietà di configurazione pdfLinkText
+**E.** Utilizzo della proprietà di configurazione pdfLinkText
 
-**** F. Utilizzo dei metadati &quot;pdfUrl&quot;
+**F.** Utilizzo dei metadati &quot;pdfUrl&quot;
 
 ## Suggerimenti, trucchi e problemi noti {#tips-tricks-and-known-issues}
 
 1. Non utilizzate virgolette singole (&#39;) in alcun modello personalizzato.
-1. Per i metadati personalizzati, memorizzate questa proprietà solo nel nodo **jcr:content/metadata** . Se i metadati vengono memorizzati in qualsiasi altra posizione, Forms Portal non è in grado di visualizzarli.
+1. Per i metadati personalizzati, memorizzate questa proprietà solo nel nodo **jcr:content/metadata** . Se li archiviate in qualsiasi altro luogo, Forms Portal non può visualizzare i metadati.
 1. Accertatevi che il nome di eventuali metadati personalizzati o metadati esistenti non contenga due punti (:). In caso contrario, non è possibile visualizzarlo nell&#39;interfaccia utente.
-1. **la ripetizione** dei dati non ha alcun significato per un componente **Link** . Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
+1. **la ripetizione** dei dati non ha alcun significato per un componente **Link** .  Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
 
 ## Articoli correlati
 
