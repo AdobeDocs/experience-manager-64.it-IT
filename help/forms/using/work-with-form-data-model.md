@@ -24,9 +24,9 @@ Integrazione dei dati fornisce l&#39;editor del modello dati del modulo per conf
 
 L&#39;editor dei modelli di dati per i moduli offre un&#39;interfaccia utente intuitiva e strumenti per la modifica e la configurazione di un modello di dati per i moduli. Utilizzando l&#39;editor, è possibile aggiungere e configurare oggetti, proprietà e servizi del modello dati da origini dati associate nel modello dati del modulo. Inoltre, consente di creare oggetti e proprietà del modello dati senza origini dati e di eseguire successivamente un binding con i rispettivi oggetti e proprietà del modello dati. È inoltre possibile generare e modificare dati di esempio per le proprietà degli oggetti del modello dati che è possibile utilizzare per precompilare moduli adattivi e comunicazioni interattive durante la visualizzazione dell&#39;anteprima. È possibile sottoporre a test gli oggetti e i servizi del modello dati configurati in un modello dati del modulo per assicurarsi che sia correttamente integrato con le origini dati.
 
-Se non si è esperti nell&#39;integrazione dei dati di Forms e non si è configurata un&#39;origine dati o non è stato creato un modello di dati del modulo, consultare i seguenti argomenti:
+Se non si è esperti nell&#39;integrazione dei dati Forms e non si è configurata un&#39;origine dati o non è stato creato un modello dati modulo, consultare i seguenti argomenti:
 
-* [Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md)
+* [Integrazione dei dati  AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare le origini dati](/help/forms/using/configure-data-sources.md)
 * [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
 
@@ -34,7 +34,7 @@ Per informazioni dettagliate sulle varie attività e configurazioni che è possi
 
 >[!NOTE]
 >
->È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
+>È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contattate il vostro amministratore AEM per diventare membro dei gruppi.
 
 ## Aggiunta di oggetti e servizi del modello dati {#add-data-model-objects-and-services}
 
@@ -44,7 +44,7 @@ Se si è creato un modello dati modulo con origini dati, è possibile utilizzare
 
 Per aggiungere oggetti e servizi del modello dati:
 
-1. Accedi all’istanza di creazione di AEM, passa a **[!UICONTROL Forms > Integrazioni]** dati e apri il modello dati del modulo in cui desideri aggiungere oggetti del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera aggiungere gli oggetti del modello dati.
 1. Nel riquadro Origini dati espandere le origini dati per visualizzare gli oggetti e i servizi del modello dati disponibili.
 1. Selezionare gli oggetti del modello dati e i servizi che si desidera aggiungere al modello dati del modulo e toccare **[!UICONTROL Aggiungi selezionato]**.
 
@@ -80,7 +80,7 @@ Anche se è possibile aggiungere oggetti modello dati da origini dati configurat
 
 Per creare un oggetto modello dati senza origini dati:
 
-1. Accedi all’istanza di creazione di AEM, passa a **[!UICONTROL Forms > Integrazioni]** dati e apri il modello dati del modulo in cui vuoi creare un oggetto o un’entità del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera creare un oggetto o un&#39;entità del modello dati.
 1. Toccate **[!UICONTROL Crea entità]**.
 1. Nella finestra di dialogo Crea modello dati, specificare un nome per l&#39;oggetto modello dati e toccare **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L&#39;oggetto modello dati appena aggiunto non è associato a un&#39;origine dati e non dispone di proprietà come illustrato nell&#39;immagine seguente.
 
@@ -97,7 +97,7 @@ Per creare una proprietà figlio:
 1. In un modello dati modulo, selezionare un oggetto modello dati e toccare **[!UICONTROL Crea proprietà]** figlio.
 1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]** figlio, specificate un nome e un tipo di dati per la proprietà rispettivamente nei campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** . Facoltativamente è possibile specificare un titolo e una descrizione per la proprietà.
 1. Abilitare Computed se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o un&#39;espressione. Per ulteriori informazioni, vedere [Modificare le proprietà](#edit-properties).
-1. Se l&#39;oggetto del modello dati è associato a un&#39;origine dati, la proprietà figlia aggiunta viene automaticamente associata alla proprietà dell&#39;oggetto modello dati padre con lo stesso nome e tipo di dati.
+1. Se l&#39;oggetto del modello dati è associato a un&#39;origine dati, la proprietà figlia aggiunta viene automaticamente associata alla proprietà dell&#39;oggetto del modello dati padre con lo stesso nome e tipo di dati.
 
    Per eseguire un binding manuale di una proprietà figlia con una proprietà oggetto modello dati, toccare l&#39;icona Sfoglia accanto al campo Riferimento **** binding. Nella finestra di dialogo **[!UICONTROL Seleziona oggetto]** sono elencate tutte le proprietà dell&#39;oggetto modello dati principale. Selezionare una proprietà con cui eseguire il binding e toccare l&#39;icona del segno di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
 
@@ -160,7 +160,7 @@ Per leggere e scrivere i dati per un oggetto modello dati, effettuare le seguent
 
    ![edit-argomento](assets/edit-argument.png)
 
-   Binding dell&#39;argomento id all&#39;attributo empid del profilo utente AEM
+   Binding dell&#39;argomento id all&#39;attributo empid di AEM profilo utente
 
 1. Toccare **[!UICONTROL Fine]** per salvare l&#39;argomento, **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
