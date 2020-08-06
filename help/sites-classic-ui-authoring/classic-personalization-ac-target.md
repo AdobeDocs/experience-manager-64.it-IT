@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 67%
 
 ---
 
@@ -31,7 +34,7 @@ L’impostazione della segmentazione comprende la creazione di segmenti, di un m
 
 Per creare i segmenti:
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Open the [segmentation console](Http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
 1. Create a new page and enter a title - for example, **AC Segments** - and select the **Segment (Adobe Campaign)** template.
 1. Seleziona la pagina creata nella struttura ad albero a sinistra.
 1. Crea un segmento, ad esempio per utenti maschili, creando una nuova pagina chiamata Uomo sotto il segmento creato e seleziona il modello **Segmento (Adobe Campaign)**.
@@ -76,7 +79,7 @@ Creare una newsletter con contenuti di destinazione:
 
    >[!NOTE]
    >
-   >[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scaricate un esempio di contenuto Geometrixx da Package Share.
+   >[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scaricate contenuti di Geometrixx di esempio da Package Share.
 
 1. Nella newsletter, aggiungi un componente Testo e personalizzazione.
 1. Aggiungi il testo al componente Testo e personalizzazione, ad esempio “Questo è il valore predefinito”.
