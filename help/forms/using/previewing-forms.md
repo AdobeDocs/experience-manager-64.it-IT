@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Panoramica {#overview}
 
-In AEM Forms è possibile visualizzare l&#39;anteprima dei moduli e dei documenti presenti nell&#39;archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli quando vengono rilasciati agli utenti finali.
+In  AEM Forms è possibile visualizzare l&#39;anteprima dei moduli e dei documenti presenti nella directory archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli quando vengono rilasciati agli utenti finali.
 
 Durante la visualizzazione dell&#39;anteprima dei moduli, viene eseguito il rendering nell&#39;interfaccia interattiva e l&#39;utente può compilare i moduli con i dati. Durante l&#39;anteprima dei documenti, il rendering viene eseguito in modalità non interattiva e l&#39;utente può visualizzare solo il documento. Per i moduli è disponibile un&#39;ulteriore opzione di Anteprima personalizzata. Utilizzando questa opzione, è possibile visualizzare l&#39;anteprima del modulo utilizzando i dati provenienti da un file XML. I dati riempiono alcuni o tutti i campi del modulo di cui si sta visualizzando l&#39;anteprima.
 
