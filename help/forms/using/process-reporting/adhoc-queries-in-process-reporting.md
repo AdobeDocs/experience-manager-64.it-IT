@@ -1,8 +1,8 @@
 ---
 title: Query ad hoc in Process Reporting
 seo-title: Query ad hoc in Process Reporting
-description: Creazione di query personalizzate per la ricerca di AEM Forms su processi JEE e dettagli sulle attività in Process Reporting
-seo-description: Creazione di query personalizzate per la ricerca di AEM Forms su processi JEE e dettagli sulle attività in Process Reporting
+description: Creare query personalizzate per cercare  AEM Forms sui dettagli del processo e delle attività JEE in Process Reporting
+seo-description: Creare query personalizzate per cercare  AEM Forms sui dettagli del processo e delle attività JEE in Process Reporting
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1690'
+ht-degree: 0%
 
 ---
 
 
 # Query ad hoc in Process Reporting {#ad-hoc-queries-in-process-reporting}
 
-Query ad hoc in Process Reporting (Generazione di rapporti di processo) consentono di creare query personalizzate da utilizzare per cercare i dettagli di processo e attività relativi alle istanze di processo definite in AEM Forms nell&#39;ambiente AEM Forms.
+Le query ad hoc in Process Reporting consentono di creare query personalizzate da utilizzare per cercare i dettagli dei processi e delle attività delle istanze  processo AEM Forms definite nell&#39;ambiente AEM Forms .
 
 È inoltre possibile definire query ad hoc utilizzando i filtri di proprietà processo e attività. Questi filtri possono quindi essere salvati e utilizzati per eseguire i report in un secondo momento.
 
@@ -69,7 +72,7 @@ In questo articolo vengono descritte le sezioni Processo/Ricerca attività e Det
 
       >[!NOTE]
       >
-      >L&#39;elenco dei campi contiene i campi specifici per il processo o l&#39;attività di AEM Forms.
+      >L&#39;elenco dei campi contiene i campi specifici per  processo/attività AEM Forms.
 
    1. Selezionare una condizione.
 
@@ -121,11 +124,12 @@ Utilizzate le opzioni nel pannello **Filtri** personali per **aggiungere** ![lc_
 1. In un risultato di Process Search vengono visualizzati i seguenti campi:
 
    * **ID** processo: ID del processo. Il campo è ipercollegato. Se fate clic su un ID processo in questo campo, verrete reindirizzati al pannello Dettagli **** processo relativo al processo.
-   * **Iniziatore**: Utente di AEM Forms che ha avviato l’istanza di processo
+   * **Iniziatore**: L&#39;utente AEM Forms  che ha avviato l&#39;istanza di processo
    * **Ora** di creazione: Data e ora di inizio dell’istanza di processo
    * **Ora** completamento: Data e ora in cui è stata completata l&#39;istanza del processo
    * **Durata**: Durata dall’inizio al completamento dell’istanza di processo
    * **Stato**: Lo stato corrente dell&#39;istanza di processo.
+
    Per impostazione predefinita, il risultato è ordinato per ID processo. Tuttavia, per ordinare il risultato per uno dei campi, fare clic sul titolo del campo.
 
    Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fate clic su un’intestazione di colonna per ordinare il risultato crescente e fate di nuovo clic su di esso per ordinare il risultato decrescente.
@@ -133,12 +137,13 @@ Utilizzate le opzioni nel pannello **Filtri** personali per **aggiungere** ![lc_
    Analogamente, i campi seguenti vengono visualizzati in un risultato di Ricerca attività:
 
    * **ID** attività: ID dell’attività. Il campo è ipercollegato. Se si fa clic su un ID attività in questo campo, si viene reindirizzati al pannello Dettagli **** attività per l&#39;attività.
-   * **Iniziatore**: Utente di AEM Forms che ha avviato l’istanza di processo
+   * **Iniziatore**: L&#39;utente AEM Forms  che ha avviato l&#39;istanza di processo
    * **Ora** di creazione: Data e ora di inizio dell’istanza di processo
 
    * **Ora** completamento: Data e ora in cui è stata completata l&#39;istanza del processo
    * **Durata**: Durata dall’inizio al completamento dell’istanza di processo
    * **Stato**: Lo stato corrente dell&#39;istanza di processo.
+
    Per impostazione predefinita, il risultato è ordinato per ID attività. Tuttavia, per ordinare il risultato per uno dei campi, fare clic sul titolo del campo. Il risultato è ordinato in base alla colonna indicata da una freccia scura accanto all’intestazione della colonna.
 
    Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fate clic su un’intestazione di campo per ordinare il risultato crescente e fate di nuovo clic su di esso per ordinare il risultato decrescente. L’ordine corrente (crescente/decrescente) è indicato dalla direzione della freccia scura accanto all’intestazione della colonna.
@@ -150,6 +155,7 @@ Utilizzate le opzioni nel pannello **Filtri** personali per **aggiungere** ![lc_
 
    * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
    * **Esporta in CSV**: Esportate i dati del rapporto in un file separato da virgole.
+
    >[!NOTE]
    >
    >Quando esportate un rapporto, l’intero risultato della ricerca viene esportato in un file CSV e non solo nella pagina corrente
@@ -162,7 +168,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
 
 ### Visualizzazione dei dettagli processo/attività {#to-view-process-task-details}
 
-È possibile visualizzare i dettagli di un&#39;attività o di un processo AEM Forms specifico:
+È possibile visualizzare i dettagli di un processo/attività AEM Forms :
 
 * **Da un risultato di ricerca di processi/attività**
 * **Immettendo l’ID processo/attività nel pannello Dettagli processo/attività**
@@ -195,6 +201,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Durata processo
    * Stato processo
    * Iniziatore processo
+
    **Pannello superiore destro:** Visualizza i dettagli seguenti delle attività che compongono il processo selezionato:
 
    * ID attività
@@ -205,6 +212,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Ora completamento attività
    * Durata attività
    * Stato attività
+
    **Pannello inferiore destro:** Visualizza i seguenti dettagli della cronologia del processo selezionato:
 
    * Nome processo
@@ -212,6 +220,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Ora data aggiornamento processo
    * Ora completamento processo
    * Stato processo
+
    **Risultato dettagli attività**
 
    ![task_details](assets/task_details.png)
@@ -226,12 +235,14 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
    * Durata attività
    * Stato attività
    * Ciclo di attività selezionato
+
    **Pannello superiore destro:** Visualizza i dettagli seguenti dei moduli che compongono l&#39;attività selezionata:
 
    * ID modulo
    * Ora data creazione modulo
    * Ora data aggiornamento modulo
    * URL modello modulo
+
    **Pannello inferiore destro:** Visualizza i dettagli seguenti della cronologia del processo dell&#39;attività selezionata:
 
    * Tipo assegnazione task
@@ -260,7 +271,7 @@ Allo stesso modo, potete utilizzare il pannello Dettagli **** attività per visu
 
    ![process_details-1](assets/process_details-1.png)
 
-   I campi del risultato della query Dettagli **** processo/attività sono campi specifici di un processo/attività di AEM Forms.
+   I campi del risultato della query **Processo/Dettagli** attività sono campi specifici di un processo/attività AEM Forms .
 
    Per un processo, il risultato della query visualizza i dettagli delle attività contenute nel processo.
 
