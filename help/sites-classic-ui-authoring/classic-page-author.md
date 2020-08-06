@@ -1,8 +1,8 @@
 ---
 title: Authoring delle pagine
 seo-title: Authoring delle pagine
-description: Esistono due panoramiche sull’authoring con AEM. (1) Primi passi per gli autori - un’introduzione per i nuovi autori e (2) Guida rapida all’authoring delle pagine - una guida rapida (di alto livello) alle azioni principali.
-seo-description: Esistono due panoramiche sull’authoring con AEM. (1) Primi passi per gli autori - un’introduzione per i nuovi autori e (2) Guida rapida all’authoring delle pagine - una guida rapida (di alto livello) alle azioni principali.
+description: Sono disponibili due panoramiche sull’authoring con AEM. (1) Primi passi per gli autori - un’introduzione per i nuovi autori e (2) Guida rapida all’authoring delle pagine - una guida rapida (di alto livello) alle azioni principali.
+seo-description: Sono disponibili due panoramiche sull’authoring con AEM. (1) Primi passi per gli autori - un’introduzione per i nuovi autori e (2) Guida rapida all’authoring delle pagine - una guida rapida (di alto livello) alle azioni principali.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 78%
 
 ---
 
