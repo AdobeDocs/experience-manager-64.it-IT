@@ -1,8 +1,8 @@
 ---
 title: Struttura di aspetto per moduli adattivi e HTML5
 seo-title: Struttura di aspetto per moduli adattivi e HTML5
-description: 'Mobile Forms esegue il rendering dei modelli di modulo come moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l''aspetto e per abilitare gli script. '
-seo-description: 'Mobile Forms esegue il rendering dei modelli di modulo come moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l''aspetto e per abilitare gli script. '
+description: 'I modelli di modulo di rendering per Forms per dispositivi mobili sono moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l''aspetto e per abilitare gli script. '
+seo-description: 'I modelli di modulo di rendering per Forms per dispositivi mobili sono moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l''aspetto e per abilitare gli script. '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 3%
 
 ---
 
 
 # Struttura di aspetto per moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-I moduli (moduli adattivi e moduli HTML5) utilizzano le librerie [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) per aspetto e script. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (come campi e pulsanti) del modulo. Questa architettura consente agli sviluppatori di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. È inoltre possibile implementare una logica specifica per il modulo durante l&#39;acquisizione dei dati da parte di utenti quali le restrizioni leadDigits/trailDigits o l&#39;implementazione di clausole illustrazione. Gli sviluppatori di moduli possono creare e utilizzare apparenze personalizzate per migliorare l&#39;esperienza di acquisizione dei dati e renderla più semplice da utilizzare.
+Forms (moduli adattivi e moduli HTML5) utilizza le librerie [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) per l’aspetto e lo scripting. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (come campi e pulsanti) del modulo. Questa architettura consente agli sviluppatori di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. È inoltre possibile implementare una logica specifica per il modulo durante l&#39;acquisizione dei dati da parte di utenti quali le restrizioni leadDigits/trailDigits o l&#39;implementazione di clausole illustrazione. Gli sviluppatori di moduli possono creare e utilizzare apparenze personalizzate per migliorare l&#39;esperienza di acquisizione dei dati e renderla più semplice da utilizzare.
 
 Questo articolo è destinato agli sviluppatori che dispongono di conoscenze sufficienti sui widget jQuery e jQuery. Fornisce informazioni approfondite sul framework di aspetto e consente agli sviluppatori di creare un aspetto alternativo per un campo modulo.
 
@@ -37,7 +40,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
    <th>Descrizione</th> 
   </tr>
   <tr>
-   <td>nome</td> 
+   <td>name</td> 
    <td>Identificatore utilizzato per specificare questo oggetto o evento nelle espressioni di script. Ad esempio, questa proprietà specifica il nome dell'applicazione host.</td> 
   </tr>
   <tr>
@@ -50,7 +53,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Gli assistenti vocali utilizzano questo valore per fornire informazioni sul campo. Il modulo fornisce il valore ed è possibile sostituire il valore.<br /> </td> 
+   <td>Gli Reader dello schermo utilizzano questo valore per fornire informazioni sul campo. Il modulo fornisce il valore ed è possibile sostituire il valore.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -216,7 +219,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
    <td>Aggiunge una voce all'elenco.</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: indice della voce da rimuovere dall'elenco<br /> </em><br /><br /> </td> 
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: indice della voce da rimuovere dall'elenco<br /> </em><br /> <br /> </td> 
    <td>Elimina un'opzione dall'elenco.</td> 
   </tr>
   <tr>
