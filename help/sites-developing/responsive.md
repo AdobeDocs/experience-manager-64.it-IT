@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad esempio _React_). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad esempio _React_). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 
 Progettate le pagine Web in modo che si adattino alla finestra del client in cui vengono visualizzate. Con la progettazione reattiva, le stesse pagine possono essere visualizzate su più dispositivi in entrambi gli orientamenti. L&#39;immagine seguente illustra alcuni modi in cui una pagina può rispondere alle modifiche nelle dimensioni della finestra:
@@ -36,7 +36,7 @@ Progettate le pagine Web in modo che si adattino alla finestra del client in cui
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Sviluppare applicazioni  Adobe Experience Manager (AEM) che generano pagine HTML5 adattabili a diverse dimensioni e orientamenti di finestre. Ad esempio, i seguenti intervalli di larghezze di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
+Sviluppare applicazioni Adobe Experience Manager (AEM) che generano pagine HTML5 adattabili a diverse dimensioni e orientamenti di finestre. Ad esempio, i seguenti intervalli di larghezze di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
 
 * Larghezza massima di 480 pixel (telefono, verticale)
 * Larghezza massima di 767 pixel (telefono, orizzontale)
@@ -62,7 +62,7 @@ Prima di sviluppare l’applicazione AEM che supporta le pagine Web, è necessar
 
 ### Struttura dell&#39;applicazione {#application-structure}
 
-La tipica struttura di applicazioni AEM supporta tutte le implementazioni di design reattivo:
+La struttura tipica AEM applicazione supporta tutte le implementazioni di design reattivo:
 
 * I componenti della pagina si trovano sotto /apps/*application_name*/components
 * I modelli risiedono sotto /apps/*application_name*/templates
@@ -70,7 +70,7 @@ La tipica struttura di applicazioni AEM supporta tutte le implementazioni di des
 
 ## Utilizzo di media query {#using-media-queries}
 
-Le media query consentono l&#39;uso selettivo di stili CSS per il rendering della pagina. Gli strumenti e le funzioni di sviluppo di AEM consentono di implementare in modo efficace ed efficiente le media query nelle applicazioni.
+Le media query consentono l&#39;uso selettivo di stili CSS per il rendering della pagina. AEM strumenti e funzionalità di sviluppo consentono di implementare in modo efficace ed efficiente le media query nelle applicazioni.
 
 Il gruppo W3C fornisce la raccomandazione [Media Query](https://www.w3.org/TR/css3-mediaqueries/) che descrive questa funzione CSS3 e la sintassi.
 
@@ -101,7 +101,7 @@ Nella tabella seguente sono elencati i file presenti nella cartella figlio css.
   </tr> 
   <tr> 
    <td>bootstrap.css</td> 
-   <td>Stili comuni, definiti da Twitter Bootstrap.</td> 
+   <td>Stili comuni, definiti dall’Bootstrap di Twitter.</td> 
    <td>N/D</td> 
   </tr> 
   <tr> 
@@ -151,7 +151,7 @@ responsive-1200px.css
 
 **Suggerimento**: I nomi dei file descrittivi consentono di identificare facilmente le dimensioni della finestra di destinazione.
 
-### Utilizzo di Media Query con pagine AEM {#using-media-queries-with-aem-pages}
+### Utilizzo di Media Query con AEM pagine {#using-media-queries-with-aem-pages}
 
 Includete la cartella della libreria client nello script JSP del componente della pagina per generare il file CSS che include le media query e per fare riferimento al file.
 
@@ -286,11 +286,11 @@ Quando viene eseguito il rendering della pagina, picturefull.js inserisce un `im
 </div>
 ```
 
-In una pagina AEM, il valore dell’ `data-src` attributo è il percorso di una risorsa nell’archivio.
+In una pagina AEM, il valore dell&#39; `data-src` attributo è il percorso di una risorsa nella directory archivio.
 
 ### Implementazione di immagini adattive in AEM {#implementing-adaptive-images-in-aem}
 
-Per implementare le immagini adattive nell’applicazione AEM, dovete aggiungere le librerie javascript necessarie e includere nelle pagine il codice HTML richiesto.
+Per implementare le immagini adattive nell&#39;applicazione AEM, dovete aggiungere le librerie javascript necessarie e includere nelle pagine il codice HTML richiesto.
 
 **Librerie**
 
@@ -329,9 +329,9 @@ L&#39;esempio seguente HTML seleziona da 2 rappresentazioni DAM della stessa imm
 La sezione successiva fornisce dettagli su questo componente.
 
 
-### Nozioni di base sul rendering delle immagini in AEM {#understanding-image-rendering-in-aem}
+### Rendering delle immagini in AEM {#understanding-image-rendering-in-aem}
 
-Per personalizzare il rendering delle immagini, è necessario comprendere l’implementazione di rendering delle immagini statiche AEM predefinita. AEM fornisce il componente Immagine e un servlet per il rendering delle immagini che funzionano insieme per il rendering delle immagini per la pagina Web. La seguente sequenza di eventi si verifica quando il componente Immagine viene incluso nel sistema paragrafo della pagina:
+Per personalizzare il rendering delle immagini, è necessario comprendere l’implementazione predefinita AEM rendering delle immagini statiche. AEM fornisce il componente Immagine e un servlet per il rendering delle immagini che funzionano insieme per il rendering delle immagini per la pagina Web. La seguente sequenza di eventi si verifica quando il componente Immagine viene incluso nel sistema paragrafo della pagina:
 
 1. Authoring: Gli autori possono modificare il componente Immagine per specificare il file immagine da includere in una pagina HTML. Il percorso del file è memorizzato come valore di proprietà del nodo del componente Immagine.
 1. Richiesta pagina: Il JSP del componente pagina genera il codice HTML. La JSP del componente Immagine genera e aggiunge un elemento img alla pagina.
@@ -377,10 +377,10 @@ Il servlet che elabora la richiesta di immagine deve eseguire le seguenti operaz
 
 **Soluzioni disponibili**
 
-AEM consente di installare le seguenti implementazioni che è possibile utilizzare o estendere.
+AEM le seguenti implementazioni che potete utilizzare o estendere.
 
 * Il componente Immagine adattiva che genera media query e le richieste HTTP al Servlet componente Immagine adattiva che ridimensiona le immagini.
-* Il pacchetto Geometrixx Commons installa i servlet di esempio Servlet di modifica delle immagini che modificano la risoluzione delle immagini.
+* Il pacchetto Geometrixx Commons installa i servlet di esempio Image Reference Modification Servlet che modificano la risoluzione delle immagini.
 
 ### Understanding the Adaptive Image component {#understanding-the-adaptive-image-component}
 
@@ -475,9 +475,9 @@ I valori numerici sono rispettivamente 0,4, 0,82 e 1,0.
 
 **Modifica delle larghezze supportate predefinite**
 
-Utilizzate la console Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate dal servlet di componenti immagine adattivi di Adobe CQ.
+Utilizzate la console Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate dal Servlet  componente immagine adattiva di Adobe CQ.
 
-Per informazioni sulla configurazione dei servizi AEM, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+Per informazioni su come configurare AEM servizi, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table> 
  <tbody> 
@@ -488,7 +488,7 @@ Per informazioni sulla configurazione dei servizi AEM, consultate [Configurazion
   </tr> 
   <tr> 
    <th>Nome servizio o nodo</th> 
-   <td>Il nome del servizio nella scheda Configurazione è il servlet del componente immagine adattivo Adobe CQ</td> 
+   <td>Il nome del servizio nella scheda Configurazione è  Servlet componente immagine adattiva Adobe CQ</td> 
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
   </tr> 
   <tr> 
@@ -552,7 +552,7 @@ La `AdaptiveImageComponentServlet` classe sostituisce il `createLayer` metodo. Q
 
 Anche la classe AdaptiveImageComponentServlet sostituisce il metodo writeLayer. Questo metodo applica la qualità JPEG all’immagine.
 
-### Servlet modifica riferimento immagine (Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
+### Servlet modifica riferimento immagine (Geometrixx comune) {#image-reference-modification-servlet-geometrixx-common}
 
 Il servlet di modifica Riferimento immagine di esempio genera attributi di dimensione per l’elemento img per ridimensionare un’immagine sulla pagina Web.
 
@@ -664,7 +664,7 @@ La `ImageReferenceModificationServlet` classe sostituisce il `createLayer` metod
 
 ## Sviluppo di una griglia fluida {#developing-a-fluid-grid}
 
-AEM consente di implementare in modo efficace ed efficiente le griglie fluide. Questa pagina spiega come integrare la griglia fluida o un’implementazione esistente della griglia (come [Bootstrap](https://twitter.github.com/bootstrap/)) nell’applicazione AEM.
+AEM consente di implementare in modo efficiente ed efficace le griglie fluide. In questa pagina viene illustrato come integrare la griglia fluida o un’implementazione esistente della griglia (ad esempio [Bootstrap](https://twitter.github.com/bootstrap/)) nell’applicazione AEM.
 
 Se non avete familiarità con le griglie fluide, consultate la sezione [Introduzione alle griglie](/help/sites-developing/responsive.md#developing-a-fluid-grid) fluide nella parte inferiore di questa pagina. Questa introduzione fornisce una panoramica delle griglie fluide e indicazioni per la loro progettazione.
 
@@ -715,7 +715,7 @@ Il seguente esempio di CSS è un sottoinsieme di tali stili. Questo sottoinsieme
 
 >[!NOTE]
 >
->L’esempio Geometrixx Media integra il framework [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) javascript nella sua implementazione a griglia fluida. Il framework Bootstrap fornisce il file bootstrap.css.
+>L&#39;esempio Geometrixx Media integra il framework javascript di [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) nella sua implementazione a griglia fluida. Il framework di Bootstrap fornisce il file bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -747,7 +747,7 @@ Il seguente esempio di CSS è un sottoinsieme di tali stili. Questo sottoinsieme
 
 #### Riposizionamento del contenuto nella griglia dei componenti Pagina {#repositioning-content-in-the-page-component-grid}
 
-Le pagine dell’applicazione Geometrixx Media di esempio distribuiscono le righe di blocchi di contenuto orizzontalmente in viste ampie. Nelle finestre più piccole, gli stessi blocchi sono distribuiti in verticale. L&#39;esempio CSS seguente mostra gli stili che implementano questo comportamento per il codice HTML generato dal componente pagina media-home:
+Le pagine dell’applicazione Geometrixx Media di esempio distribuiscono le righe dei blocchi di contenuto orizzontalmente in viste ampie. Nelle finestre più piccole, gli stessi blocchi sono distribuiti in verticale. L&#39;esempio CSS seguente mostra gli stili che implementano questo comportamento per il codice HTML generato dal componente pagina media-home:
 
 * Il CSS predefinito per la pagina di benvenuto del supporto assegna lo `float:left` stile per `span*` le classi che si trovano all&#39;interno di `row-fluid` classi.
 
@@ -981,4 +981,4 @@ Il seguente CSS può implementare questo comportamento:
 
 Per il layout di pagina di ciascuna dimensione di visualizzazione di destinazione, stabilite il numero di colonne su cui si estende ciascun blocco di contenuto. Quindi, stabilite la classe da utilizzare per gli elementi div di tali blocchi di contenuto.
 
-Una volta stabilite le classi div, potete implementare la griglia utilizzando l&#39;applicazione AEM.
+Una volta stabilite le classi div, è possibile implementare la griglia utilizzando l&#39;applicazione AEM.
