@@ -28,11 +28,11 @@ La pagina Impostazioni server consente di accedere alle varie impostazioni del f
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
-È possibile specificare un account e-mail per il server dei moduli tramite il quale inviare messaggi e-mail agli utenti e agli amministratori dei moduli AEM. Questi messaggi e-mail vengono utilizzati per informare e ricordare agli utenti le attività che devono completare, notificare all’utente le attività che hanno raggiunto una scadenza e notificare all’amministratore eventuali errori di processo che si verificano.
+È possibile specificare un account e-mail per il server dei moduli, tramite il quale inviare messaggi e-mail a AEM utenti e amministratori dei moduli. Questi messaggi e-mail vengono utilizzati per informare e ricordare agli utenti le attività che devono completare, notificare all’utente le attività che hanno raggiunto una scadenza e notificare all’amministratore eventuali errori di processo che si verificano.
 
-Per abilitare l&#39;invio di messaggi e-mail tra moduli AEM e utenti, configurate le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L&#39;e-mail in uscita deve utilizzare un server SMTP.
+Per abilitare l&#39;invio di messaggi e-mail tra moduli AEM e utenti, configurare le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L&#39;e-mail in uscita deve utilizzare un server SMTP.
 
-Per consentire ai moduli AEM di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, create un endpoint e-mail per il servizio Attività completa. (vedere [Creare un endpoint e-mail per il servizio](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)Attività completa).
+Per consentire AEM moduli di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (vedere [Creare un endpoint e-mail per il servizio](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)Attività completa).
 
 Se i vostri processi sono progettati e implementati senza richiedere e-mail, non dovete configurare alcuna opzione nella pagina Impostazioni e-mail.
 
@@ -54,13 +54,13 @@ Se i vostri processi sono progettati e implementati senza richiedere e-mail, non
 >
 >Se si immettono informazioni errate, è possibile fare clic su Annulla per tornare alla pagina visualizzata in precedenza.
 
-### Configurazione dei modelli e-mail per l&#39;utilizzo di AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
+### Configurazione dei modelli e-mail per l’utilizzo  AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è diventato obsoleto AEM rilascio dei moduli.
 
-Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. Puoi configurare i moduli AEM per l’invio di e-mail con collegamenti ad AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace su Flex Workspace (obsoleto per i moduli AEM su JEE), consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
+Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per AEM moduli su JEE) Flex Workspace. È possibile configurare AEM moduli per l&#39;invio di e-mail con collegamenti a  AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di  AEM Forms Workspace (obsoleto per i moduli AEM su JEE) Flex Workspace, consultare [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
 
 1. Nella console di amministrazione, fare clic su Home > Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
 1. Aprire il modello di assegnazione delle attività.
@@ -84,13 +84,13 @@ Per generare le notifiche e-mail per un gruppo, specificate un indirizzo e-mail 
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 ### Configurare i promemoria per utenti o gruppi {#configure-reminders-for-users-or-groups}
 
 Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando si avvicina una scadenza per completare un’attività. Le regole per determinare esattamente quando viene inviata una notifica di promemoria sono determinate dallo sviluppatore del processo.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche attività.
 1. In Tipo di notifica, fate clic su Promemoria (per utenti) o su Gruppo - Promemoria (per gruppi).
 1. Selezionate Abilita promemoria o Abilita gruppo - Promemoria.
 1. (Solo notifiche utente) Per includere un allegato del modulo e dei relativi dati con il messaggio e-mail del promemoria, selezionare Includi dati del modulo.
@@ -104,7 +104,7 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 
 È possibile inviare notifiche di assegnazione a un utente o a un gruppo al momento dell&#39;assegnazione di un&#39;attività.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche attività.
 1. In Tipo di notifica, fare clic su Assegnazione task per gli utenti o Gruppo - Assegnazione task per i gruppi.
 1. Selezionare Abilita assegnazione task per gli utenti o Abilita gruppo - Assegnazione task per i gruppi.
 1. (Solo notifiche utente) Per includere un allegato del modulo e dei relativi dati con il messaggio e-mail di assegnazione delle attività, selezionare Includi dati modulo.
@@ -118,7 +118,7 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 
 È possibile inviare notifiche di scadenza a utenti e gruppi al termine della scadenza per l&#39;azione in base a un&#39;attività assegnata. Una notifica di scadenza è in genere informativa perché l&#39;utente non può più agire in base all&#39;attività assegnata.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche attività.
 1. In Tipo di notifica, fate clic su Scadenza (per utenti) o Raggruppa - Scadenza (per gruppi).
 1. Selezionate Abilita scadenza o Abilita gruppo - Scadenza.
 1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
@@ -127,9 +127,9 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
 
-### Nascondi il tag NON ELIMINARE per tutte le e-mail {#hide-the-do-not-delete-tag-for-all-emails}
+### Nascondere il tag NON DELETE per tutte le e-mail {#hide-the-do-not-delete-tag-for-all-emails}
 
-Puoi configurare l’e-mail in modo che venga nascosta al tag di tracciamento NON ELIMINARE in tutte le e-mail inviate in un processo incentrato sull’utente. Per informazioni dettagliate, consultate [Come nascondere il tag &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Puoi configurare l’e-mail in modo che venga nascosta al tag di tracciamento NON DELETE in tutte le e-mail inviate in un processo incentrato sull’utente. Per informazioni dettagliate, consultate [Come nascondere il tag &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Configurazione delle notifiche per gli amministratori {#configuring-notifications-for-administrators}
 
@@ -144,7 +144,7 @@ Potete configurare i seguenti tipi di notifiche per gli amministratori:
 
 Se un ramo si arresta (interrompe deliberatamente o a causa di un errore), puoi avere una notifica e-mail inviata a un amministratore o a un altro utente, che può quindi esaminare il problema.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche per l’amministratore.
+1. Nella console di amministrazione, fate clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche per l’amministratore.
 1. In Tipo di notifica, fare clic su Ramo bloccato.
 1. Selezionare Abilita ramo bloccato.
 1. Nella casella Indirizzo e-mail, digitate gli indirizzi degli utenti a cui inviare una notifica quando un ramo si ferma. Utilizzate il formato user@domain.com e separate ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è destinato a un amministratore.
@@ -158,7 +158,7 @@ Se un ramo si arresta (interrompe deliberatamente o a causa di un errore), puoi 
 
 Se un&#39;operazione si arresta (interrompe deliberatamente o a causa di un errore), potete ricevere una notifica e-mail a un amministratore o a un altro utente, che può indagare sul problema.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche per l’amministratore.
+1. Nella console di amministrazione, fate clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche per l’amministratore.
 1. In Tipo di notifica, fare clic su Operazione bloccata.
 1. Selezionate Abilita operazione bloccata.
 1. Nella casella Indirizzi e-mail, digitate gli indirizzi degli utenti a cui inviare la notifica quando un&#39;operazione si arresta. Utilizzate il formato user@domain.com e separate ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è destinato a un amministratore.
@@ -180,7 +180,7 @@ L’area Modello notifica è un editor Rich Text che consente di generare HTML p
 
 ### Generazione URL {#url-generation}
 
-Solo per le notifiche delle attività, il flusso di lavoro Forms include due configurazioni URL predefinite che è possibile trascinare dall&#39;elenco Generazione URL nella casella Modello di notifica e quindi personalizzare:
+Solo per Notifiche attività, il flusso di lavoro Forms include due configurazioni URL predefinite che potete trascinare dall&#39;elenco Generazione URL nella casella Modello notifica e quindi personalizzare:
 
 * OpenTask è disponibile per i tipi di notifica Promemoria e Assegnazione task. Questo URL fornisce un collegamento all’attività in Workspace, consentendo all’utente di accedere rapidamente all’attività dalla notifica e-mail. Quando trascinate l’URL OpenTask nella casella Modello di notifica, l’URL si presenta nel seguente formato:
 
@@ -192,7 +192,7 @@ Solo per le notifiche delle attività, il flusso di lavoro Forms include due con
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 Se la soluzione viene distribuita in un ambiente cluster, sostituitela `@@notification-host@@` con l&#39;indirizzo del cluster.
 
@@ -208,7 +208,7 @@ Affinché questi URL funzionino correttamente, sostituite `<`*PORT *`>`con il nu
 
 >[!NOTE]
 >
->Se si utilizza un&#39;applicazione Web personalizzata diversa da Forms per fornire agli utenti l&#39;accesso alle attività, è necessario utilizzare un formato URL appropriato per l&#39;applicazione personalizzata.
+>Se per fornire agli utenti l&#39;accesso alle attività si utilizza un&#39;applicazione Web personalizzata diversa da Forms, è necessario utilizzare un formato URL appropriato per l&#39;applicazione personalizzata.
 
 ### Selettore variabile {#variable-picker}
 
@@ -220,7 +220,7 @@ Per promemoria, assegnazioni di attività e scadenze per utenti e gruppi, potete
 
 **istruzioni** Il contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
 
-**notification-host** Il nome host del server applicazione dei moduli AEM.
+**notification-host** Il nome host del server applicazione AEM moduli.
 
 **process-name** Il nome del processo.
 
@@ -244,7 +244,7 @@ Per i rami in stallo, nelle caselle Oggetto e Modello di notifica è possibile u
 
 **process-id** L’identificatore dell’istanza di processo.
 
-**notification-host** Il nome host del server applicazione dei moduli AEM.
+**notification-host** Il nome host del server applicazione AEM moduli.
 
 Per le operazioni in stallo, nelle caselle Oggetto e Modello di notifica è possibile utilizzare le seguenti variabili:
 
@@ -254,7 +254,7 @@ Per le operazioni in stallo, nelle caselle Oggetto e Modello di notifica è poss
 
 **process-id** L’identificatore dell’istanza di processo.
 
-**notification-host** Il nome host del server applicazione dei moduli AEM.
+**notification-host** Il nome host del server applicazione AEM moduli.
 
 ### Utilizzo di una variabile nella casella Oggetto {#using-a-variable-in-the-subject-box}
 
@@ -282,7 +282,7 @@ Business Activity Monitoring, un modulo opzionale, offre una serie di dashboard 
 
 Nella pagina Impostazioni di configurazione BAM, impostare le connessioni al server che esegue BAM in modo che gli eventi relativi al processo possano essere tracciati e trasmessi a tale server.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Impostazioni di configurazione BAM.
+1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Impostazioni di configurazione BAM.
 1. Nella casella Host BAM digitare il nome del server che esegue BAM. Il valore predefinito è localhost.
 1. Nella casella Porta BAM digitare la porta da utilizzare per connettersi al server che esegue BAM. La porta BAM predefinita per JBoss è 8080, WebLogic è 7001 e WebSphere è 9080.
 1. Nella casella Host server digitare il nome o l&#39;indirizzo IP del server dei moduli host. Il valore predefinito è localhost.
