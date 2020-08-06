@@ -1,8 +1,8 @@
 ---
 title: Aggiornamento del collegamento alla documentazione
 seo-title: Aggiornamento del collegamento alla documentazione
-description: Come aggiornare la destinazione del collegamento della guida di Workspace nell’area di lavoro Moduli AEM per fare riferimento al collegamento della documentazione personalizzato.
-seo-description: Come aggiornare la destinazione del collegamento della guida di Workspace nell’area di lavoro Moduli AEM per fare riferimento al collegamento della documentazione personalizzato.
+description: Come aggiornare la destinazione del collegamento della Guida di Workspace nell’area di lavoro  AEM Forms per indirizzare il collegamento alla documentazione personalizzata.
+seo-description: Come aggiornare la destinazione del collegamento della Guida di Workspace nell’area di lavoro  AEM Forms per indirizzare il collegamento alla documentazione personalizzata.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
 
 # Aggiornamento del collegamento alla documentazione {#updating-the-link-to-the-documentation}
 
-Per accedere al contenuto della guida predefinita per l’area di lavoro Moduli AEM, seleziona **Aiuto > Guida** di Workspace. Indica la documentazione online sul sito Web di Adobe. Tuttavia, potete aggiornarlo in modo che punti a qualsiasi altro URL.
+Per accedere al contenuto della guida predefinita per &#39;area di lavoro di AEM Forms, selezionare **Aiuto > Guida** di Workspace. Indica la documentazione online  Adobe  sito Web. Tuttavia, potete aggiornarlo in modo che punti a qualsiasi altro URL.
 
 Considerate i seguenti casi di utilizzo in cui potete modificare l’URL della guida predefinito:
 
