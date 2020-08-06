@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 2%
 
 ---
 
 
 # Copia guidata lingua{#language-copy-wizard}
 
-La procedura guidata Copia lingua è un’esperienza guidata per la creazione e la gestione di una struttura di contenuti multilingue. Ora è molto più semplice e rapido creare una copia per la lingua.
+La procedura guidata Copia lingua è un’esperienza guidata per la creazione e la strumentalizzazione di una struttura di contenuti multilingue. Ora è molto più semplice e rapido creare una copia per la lingua.
 
 >[!NOTE]
 >
