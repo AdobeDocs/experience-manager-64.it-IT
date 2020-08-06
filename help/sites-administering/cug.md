@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Per configurare tale area all’interno del sito Web, effettuate le seguenti ope
 
 Per creare un gruppo di utenti chiuso:
 
-1. Vai a **Strumenti - Sicurezza** dalla schermata iniziale di AEM.
+1. Vai a **Strumenti - Sicurezza** dalla schermata iniziale AEM.
 
    >[!NOTE]
    >
@@ -97,7 +100,7 @@ Per applicare il CUG a una pagina:
 1. Se necessario, assegnate un **realm** (un nome per i gruppi di pagine). Lascia vuoto per usare il titolo della pagina.
 1. Click **OK** to save the specification.
 
-Per informazioni sui profili nell’ambiente di pubblicazione e sui moduli per l’accesso e la disconnessione, consultate [Gestione](/help/sites-administering/identity-management.md) identità.
+Consultate [Identity Management](/help/sites-administering/identity-management.md) per informazioni sui profili nell’ambiente di pubblicazione e per informazioni sui moduli per l’accesso e la disconnessione.
 
 ## Collegamento Al Realm {#linking-to-the-realm}
 
@@ -115,7 +118,7 @@ Se utilizzi Dispatcher, devi definire una farm di Dispatcher con le seguenti pro
 
 ### Configurazione della gestione delle sessioni del dispatcher per i gruppi di lavoro {#configuring-dispatcher-session-management-for-cugs}
 
-Configurare la gestione delle [sessioni nel file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) dispatcher.any per il gruppo di utenti chiuso. Il gestore di autenticazione utilizzato quando l’accesso è richiesto per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
+Configurate la gestione delle [sessioni nel file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) dispatcher.any per il gruppo di utenti chiuso. Il gestore di autenticazione utilizzato quando l’accesso è richiesto per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
 
 ```xml
 /sessionmanagement
