@@ -1,8 +1,8 @@
 ---
 title: User Management
 seo-title: User Management
-description: Gestione utente consente di abilitare SSO tra i moduli AEM e le applicazioni protette da Netegrity SiteMinder utilizzando SAML. Questo documento fornisce ulteriori informazioni sulla gestione degli utenti.
-seo-description: Gestione utente consente di abilitare SSO tra i moduli AEM e le applicazioni protette da Netegrity SiteMinder utilizzando SAML. Questo documento fornisce ulteriori informazioni sulla gestione degli utenti.
+description: Gestione utente consente di abilitare SSO tra moduli AEM e applicazioni protette da Netegrity SiteMinder utilizzando SAML. Questo documento fornisce ulteriori informazioni sulla gestione degli utenti.
+seo-description: Gestione utente consente di abilitare SSO tra moduli AEM e applicazioni protette da Netegrity SiteMinder utilizzando SAML. Questo documento fornisce ulteriori informazioni sulla gestione degli utenti.
 uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
 
 # User Management {#user-management}
 
-Gestione utente consente di abilitare SSO (Single Sign-On) tra i moduli AEM e le applicazioni protette da Netegrity SiteMinder utilizzando SAML (Security Assertion Markup Language). Quando SSO è implementato, le pagine di accesso utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
+Gestione utente consente di abilitare SSO (Single Sign-On) tra moduli AEM e applicazioni protette da Netegrity SiteMinder utilizzando SAML (Security Assertion Markup Language). Quando si implementa SSO, le pagine di login utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
 
 Per informazioni su come migliorare le prestazioni di sincronizzazione del database e delle directory per DB2, vedere il database [IBM DB2: Esecuzione di comandi per la manutenzione](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)regolare.
 
@@ -27,7 +30,7 @@ Se disponete di un server LDAP abilitato per SSL, configurate Gestione utente pe
 
 ## Impostazione dei privilegi utente per l&#39;uso con Document Security {#setting-user-privileges-for-use-with-document-security}
 
-Create un utente amministratore che disponga dei privilegi appropriati per la creazione di utenti e gruppi. Se l&#39;ambiente dei moduli AEM include Document Security, concedere il privilegio di gestire gli utenti invitati e locali a un utente che sarà l&#39;amministratore di tali utenti. Assegnate inoltre il ruolo utente della console di amministrazione per fornire all’utente l’accesso alla console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
+Create un utente amministratore che disponga dei privilegi appropriati per la creazione di utenti e gruppi. Se l&#39;ambiente AEM moduli include Document Security, concedere il privilegio di gestire gli utenti invitati e locali a un utente che sarà l&#39;amministratore di tali utenti. Assegnate inoltre il ruolo utente della console di amministrazione per fornire all’utente l’accesso alla console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
 
 Per visualizzare gli utenti e i gruppi nei domini selezionati durante le ricerche degli utenti tramite criterio, un amministratore superiore o un amministratore di set di criteri deve selezionare e aggiungere i domini (creati in Gestione utente) all&#39;elenco di utenti e gruppi visibile per ciascun set di criteri creato.
 
@@ -35,11 +38,11 @@ L&#39;elenco di utenti e gruppi visibile è visibile al coordinatore del set di 
 
 >[!NOTE]
 >
-> È necessario creare i domini prima di poter creare qualsiasi criterio.
+>È necessario creare i domini prima di poter creare qualsiasi criterio.
 
 ### Impostazione di utenti e gruppi visibili {#set-visible-users-and-groups}
 
-Dopo aver installato e configurato l&#39;ambiente dei moduli AEM con Document Security, configurate tutti i domini appropriati in Gestione utente.
+Dopo aver installato e configurato l&#39;ambiente dei moduli AEM con Document Security, configurare tutti i domini appropriati in Gestione utente.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Criteri, quindi fate clic sulla scheda Set criteri.
 1. Selezionate Set di criteri globale, quindi fate clic sulla scheda Utenti e gruppi visibili.
@@ -53,5 +56,5 @@ Gli utenti con determinati tipi di privilegi di amministratore non possono acced
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
