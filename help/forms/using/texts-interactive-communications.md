@@ -78,7 +78,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 
 ## Personalizzazione di un frammento di documento di testo mediante le proprietà del modello dati del modulo {#formdatamodel}
 
-È possibile personalizzare i frammenti di documento di testo inserendo le proprietà del modello dati del modulo. Inserendo le proprietà del modello dati del modulo nel testo, è possibile recuperare e compilare dati specifici del destinatario dall&#39;origine dati associata durante la visualizzazione dell&#39;anteprima di una comunicazione interattiva. Per ulteriori informazioni sul modello di dati del modulo, consultate Integrazione [dei dati in](/help/forms/using/data-integration.md)AEM Forms.
+È possibile personalizzare i frammenti di documento di testo inserendo le proprietà del modello dati del modulo. Inserendo le proprietà del modello dati del modulo nel testo, è possibile recuperare e compilare dati specifici del destinatario dall&#39;origine dati associata durante la visualizzazione dell&#39;anteprima di una comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dati AEM Forms.
 
 Se durante la creazione di un testo è stato specificato un modello dati modulo, le proprietà del modello dati modulo vengono visualizzate nel riquadro sinistro dell&#39;editor di testo. Il modello dati del modulo specificato deve essere lo stesso per il frammento di documento di testo e per la comunicazione interattiva che lo include.
 
