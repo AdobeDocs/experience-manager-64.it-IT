@@ -1,8 +1,8 @@
 ---
 title: Ricerca di moduli e risorse
 seo-title: Ricerca di moduli e risorse
-description: È possibile cercare moduli e risorse nell’istanza di AEM tramite la ricerca AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
-seo-description: È possibile cercare moduli e risorse nell’istanza di AEM tramite la ricerca AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
+description: È possibile cercare moduli e risorse nell'istanza AEM utilizzando AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
+seo-description: È possibile cercare moduli e risorse nell'istanza AEM utilizzando AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 È possibile cercare i moduli o le risorse dei moduli utilizzando una stringa di testo o una stringa di testo con i caratteri jolly. Potete anche limitare la ricerca utilizzando i criteri disponibili in varie categorie nel pannello Ricerca.
 
-Quando selezionate uno o più criteri e specificate anche una stringa di testo, l’intersezione del testo e dei criteri viene restituita come risultati di ricerca. I risultati della ricerca sono validi quanto i metadati di modulo e risorsa forniti.
+Quando selezionate uno o più criteri e specificate anche una stringa di testo, l’intersezione del testo e dei criteri viene restituita come risultati di ricerca. I risultati della ricerca sono validi quanto i metadati del modulo e delle risorse forniti.
 
 Fare clic su ![aem6forms_search](assets/aem6forms_search.png)per visualizzare o nascondere il pannello di ricerca.
 
 ## Ricerca di base {#basic-search}
 
-Una ricerca di base è la ricerca predefinita, eseguita senza specificare alcun filtro. AEM Forms esegue una ricerca full text sulle proprietà dei metadati.
+Una ricerca di base è la ricerca predefinita, eseguita senza specificare alcun filtro. Una ricerca full-text sulle proprietà dei metadati viene condotta da  AEM Forms.
 
-Per eseguire una ricerca di base, immettere la query di ricerca nel campo di testo e premere Invio. È inoltre possibile immettere il carattere jolly (&amp;ast;) per far corrispondere qualsiasi numero di caratteri.
+Per eseguire una ricerca di base, immettete la query di ricerca nel campo di testo e premete Invio. È inoltre possibile immettere il carattere jolly (&amp;ast;) per far corrispondere qualsiasi numero di caratteri.
 
 Adobe Experience Manager cerca il testo immesso nelle proprietà dei metadati e restituisce i risultati corrispondenti. Se si digitano più parole, l&#39;operazione di ricerca corrisponde al testo completo per la ricerca.
 
@@ -45,11 +48,11 @@ Tenete presenti i seguenti punti sulla ricerca di base:
 
 Nei criteri di ricerca, oltre alla query è possibile specificare alcuni parametri di ricerca per rendere la ricerca di base più efficiente e mirata.
 
-![Campo di ricerca e parametri o filtri per la ricerca di moduli e risorse AEM](assets/search_forms_assets.png)
+![Campo di ricerca e parametri o filtri per AEM ricerca di moduli e risorse](assets/search_forms_assets.png)
 
 ### Percorso risorsa {#asset-path}
 
-Utilizzando il filtro del percorso della risorsa, puoi limitare i risultati della ricerca alla directory corrente. Se l&#39;opzione Cerca nella directory corrente non è selezionata, i risultati della ricerca contengono risorse dalla directory di base. Se la pagina corrente non è una directory e l’opzione &quot;Cerca nella directory corrente&quot; è selezionata, la ricerca restituisce le risorse presenti nella directory principale.
+Utilizzando il filtro del percorso della risorsa, puoi limitare i risultati della ricerca alla directory corrente. Se l&#39;opzione Cerca nella directory corrente non è selezionata, i risultati della ricerca contengono le risorse della directory di base. Se la pagina corrente non è una directory e l’opzione &quot;Cerca nella directory corrente&quot; è selezionata, la ricerca restituisce le risorse presenti nella directory principale.
 
 ### Modifica risorsa {#asset-modification}
 
@@ -68,7 +71,7 @@ Potete cercare le risorse utilizzando uno dei seguenti stati:
 
 * **Pubblicato**: Cercate tutte le risorse pubblicate e non modificate dopo la pubblicazione.
 
-* **Non pubblicato**: Cercate tutte le risorse non pubblicate.
+* **Non pubblicato**: Cercate tutte le risorse che non sono mai state pubblicate.
 
 * **Modificato**: Cercate tutte le risorse modificate o non pubblicate dopo la pubblicazione.
 
@@ -92,7 +95,7 @@ Potete selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisc
   </tr>
   <tr>
    <td>Documento</td> 
-   <td>Eseguire ricerche in tutti i documenti.</td> 
+   <td>Consente di effettuare ricerche in tutti i documenti.</td> 
   </tr>
   <tr>
    <td>Modulo adattivo<br /> </td> 
