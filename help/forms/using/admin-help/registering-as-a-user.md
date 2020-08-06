@@ -10,24 +10,27 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
 
 # Registrazione come utente {#registering-as-a-user}
 
-Potete utilizzare i documenti protetti tramite criterio ricevuti da un utente di protezione dei documenti, anche se siete esterni all&#39;organizzazione dell&#39;utente. Per utilizzare un documento protetto tramite criterio, è necessario registrarsi con Document Security. Se non si è precedentemente invitati a registrarsi, Document Security avvia il processo di registrazione quando si verificano questi eventi:
+Potete utilizzare i documenti protetti tramite criterio che ricevete da un utente di protezione dei documenti, anche se siete esterni all&#39;organizzazione dell&#39;utente. Per utilizzare un documento protetto tramite criterio, è necessario registrarsi con Document Security. Se non si è precedentemente invitati a registrarsi, Document Security avvia il processo di registrazione quando si verificano questi eventi:
 
 * Un utente di Document Security che desidera inviarvi un documento protetto tramite criterio vi aggiunge a un criterio.
 * Un amministratore di Document Security crea un account per voi.
 
    Dopo aver registrato e attivato l&#39;account, potete utilizzare i documenti protetti tramite criterio che siete autorizzati a utilizzare tramite un criterio. Se l&#39;amministratore di Document Security abilita queste funzioni per gli utenti invitati, potete disporre dell&#39;autorizzazione per effettuare le seguenti operazioni:
 
-* Proteggere i documenti utilizzando i criteri di protezione dei documenti.
+* Documenti Protect utilizzando i criteri di protezione dei documenti.
 * Creare criteri utente personalizzati da applicare ai documenti.
 * Invitate altri utenti esterni a utilizzare un documento protetto tramite criterio aggiungendolo al criterio.
 
-   Inoltre, quando vi registrate, non è necessario registrarvi nuovamente per utilizzare altri documenti protetti tramite criterio. L&#39;account rimane attivo fino a quando un amministratore dei criteri non lo disattiva o non lo elimina.
+   Inoltre, al momento della registrazione, non è necessario registrarsi nuovamente per utilizzare altri documenti protetti tramite criterio. L&#39;account rimane attivo fino a quando un amministratore dei criteri non lo disattiva o non lo elimina.
 
 >[!NOTE]
 >
@@ -65,5 +68,5 @@ Per informazioni su come contattare un amministratore di Document Security per o
 1. Accedete a Document Security utilizzando la nuova password temporanea.
 1. Fare clic su Opzioni nell&#39;angolo superiore destro della pagina. Viene visualizzata la pagina Utenti esterni.
 1. Selezionare Modifica password e digitare la password temporanea nella casella Password precedente.
-1. Nella casella Nuova password, digitate una nuova password e digitatela nuovamente nella casella Conferma password.
+1. Nella casella Nuova password, digitate una nuova password e immettetela nuovamente nella casella Conferma password.
 
