@@ -1,8 +1,8 @@
 ---
 title: Tipi di nodo personalizzati
 seo-title: Tipi di nodo personalizzati
-description: AEM è basato su Sling e utilizza un repository JCR con tipi di nodi offerti da entrambi, ma AEM fornisce anche una serie di tipi di nodi personalizzati
-seo-description: AEM è basato su Sling e utilizza un repository JCR con tipi di nodi offerti da entrambi, ma AEM fornisce anche una serie di tipi di nodi personalizzati
+description: AEM è basato su Sling e utilizza un repository JCR con i tipi di nodo offerti da entrambi, ma AEM fornisce anche una serie di tipi di nodi personalizzati
+seo-description: AEM è basato su Sling e utilizza un repository JCR con i tipi di nodo offerti da entrambi, ma AEM fornisce anche una serie di tipi di nodi personalizzati
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,12 +20,12 @@ ht-degree: 9%
 
 # Tipi di nodo personalizzati{#custom-node-types}
 
-Poiché AEM è basato su Sling e utilizza un repository JCR, i tipi di nodi offerti da entrambi sono disponibili per l’uso:
+Poiché AEM è basato su Sling e utilizza un repository JCR, i tipi di nodi offerti da entrambi sono disponibili per l&#39;uso:
 
 * [Tipi di nodo JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Oltre a questi. AEM offre una serie di tipi di nodi personalizzati.
+Oltre a questi. AEM fornisce una serie di tipi di nodi personalizzati.
 
 ## Audit {#audit}
 
@@ -468,11 +468,11 @@ Elenco contenitori.
 
 **Descrizione**
 
-Il tipo di nodo `cq:contentPage` contiene le definizioni di proprietà e nodo secondario per le pagine di contenuto di ContentBus. Solo quando questo tipo di mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
+Il tipo di nodo `cq:contentPage` contiene le definizioni di proprietà e nodo secondario per le pagine di contenuto ContentBus. Solo quando questo tipo di mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
 
 Gli elementi in un `cq:Cq4ContentPage` file sono:
 
-* `@prop cq:csd` - ContentBus CSD della pagina.
+* `@prop cq:csd` - Il CSD ContentBus della pagina.
 * `@node cq:content` - Il contenuto della pagina. Questo nodo figlio non esiste se il nodo pagina è nello stato &quot;Esistente senza contenuto&quot; o &quot;Eliminato&quot;.
 * `@node cq:attributes` - L&#39;elenco degli attributi della pagina, precedentemente noti come tag di versione. Questo nodo è obbligatorio per il tipo cq:contentPage. Al nodo degli attributi viene assegnata una versione, quando la pagina è un nodo con una versione.
 
@@ -493,7 +493,7 @@ Configurazione del sondaggio.
 * `@prop source (String) mandatory` - URI origine dati, obbligatorio e non vuoto
 * `@prop target (String)` - La posizione di destinazione in cui vengono memorizzati i dati recuperati dall&#39;origine dati. Questo è facoltativo e predefinito per il nodo cq:PollConfig.
 * `@prop interval (Long)` - L&#39;intervallo in secondi a cui effettuare il polling per dati nuovi o aggiornati dall&#39;origine dati. Questo è facoltativo e il valore predefinito è 30 minuti (1800 secondi).
-* [Creazione di servizi di importazione dati personalizzati per  Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Creazione di servizi di importazione dati personalizzati per Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definizione**
 
@@ -618,7 +618,7 @@ Configurazione Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Per AEM 5.4 aggiungete alla fine dell’elenco:
+Per AEM 5.4 aggiungere alla fine dell’elenco:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
