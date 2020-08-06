@@ -1,18 +1,21 @@
 ---
 title: Supporto per i metadati IPTC
-description: Scopri in che modo Risorse Adobe Experience Manager (AEM) supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+description: Scoprite come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 7%
 
 ---
 
 
 # Supporto per i metadati IPTC {#support-for-iptc-metadata}
 
-Scopri in che modo Risorse Adobe Experience Manager (AEM) supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+Scoprite come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative.
 
-Risorse Adobe Experience Manager (AEM) supporta lo standard di metadati IPTC ampiamente utilizzato per descrivere le risorse. In questo modo, AEM Assets migliora l&#39;accettazione delle immagini tra vari partecipanti, inclusi fotografi, agenzie creative, biblioteche, musei e così via.
+Adobe Experience Manager (AEM) Assets supporta lo standard di metadati IPTC ampiamente utilizzato per descrivere le risorse. In questo modo,  AEM Assets migliora l&#39;accettazione delle sue immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
 
 Lo schema di metadati predefinito per le risorse ora include gli schemi di metadati IPTC Core e IPTC Extension per definire proprietà complete di metadati che consentono agli utenti di aggiungere dati precisi e affidabili sulle persone, le posizioni e i prodotti visualizzati in un&#39;immagine. Supporta inoltre date, nomi e identificatori relativi alla creazione dell&#39;immagine e un modo flessibile per esprimere le informazioni sui diritti.
 
@@ -31,17 +34,17 @@ La pagina Proprietà delle risorse ora include schede separate per visualizzare 
 
 ## Supporto per valutazione creativa {#creative-rating-support}
 
-Oltre a visualizzare le valutazioni dei singoli utenti e quelle aggregate, nella pagina Proprietà vengono ora visualizzate le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
+Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, nella pagina Proprietà vengono ora visualizzate le valutazioni assegnate alle risorse tramite  Adobe Bridge e altre app Creative
 
 Queste valutazioni sono disponibili nella sezione **[!UICONTROL Valutazione creativa]** della scheda **[!UICONTROL Avanzate]**.
 
-Questa valutazione è una proprietà di sola lettura e varia da 1 a 5. Potete cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
+Questa valutazione è una proprietà di sola lettura e ha un intervallo compreso tra 1 e 5. Potete cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
 
 Tuttavia, questa proprietà non è attualmente indicizzata per evitare conflitti con le modifiche personalizzate apportate dagli utenti.
 
 ## Supporto parole chiave {#keyword-support}
 
-Nella scheda **[!UICONTROL IPTC]** della pagina Proprietà sono inoltre visualizzate le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative. Potete anche modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]** .
+Nella scheda **[!UICONTROL IPTC]** della pagina Proprietà vengono visualizzate anche le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative. Potete anche modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]** .
 
 ![keywords](assets/keywords.png)
 
