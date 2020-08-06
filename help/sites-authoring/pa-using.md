@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 91%
 
 ---
 
@@ -67,7 +70,7 @@ I membri del gruppo utenti amministratori-analytics possono configurare la conso
 
 1. Seleziona le metriche che desideri esporre agli autori nella console Sites, quindi fai clic su **Aggiungi**.
 
-   Le colonne visualizzate vengono recuperate da Adobe Analytics.
+   Le colonne visualizzate vengono recuperate da  Adobe Analytics.
 
    ![a-16](assets/aa-16.png)
 
@@ -86,4 +89,4 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 >
 >In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
