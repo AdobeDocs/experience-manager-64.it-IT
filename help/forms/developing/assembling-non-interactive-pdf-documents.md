@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
 source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 0%
 
 ---
 
@@ -38,15 +41,15 @@ Al contrario, quando si passano due o più documenti PDF di input al servizio As
 
 Questo documento DDX contiene l&#39; `NoXFA` elemento, che indica al servizio Assembler di restituire un documento PDF non interattivo.
 
-Il servizio Assembler può assemblare documenti PDF non interattivi senza che il servizio Output faccia parte dell’installazione di moduli AEM, se il documento PDF di input è basato su un modulo Acrobat o su un modulo XFA statico. Tuttavia, se il documento PDF di input è un modulo XFA dinamico, il servizio Output deve far parte dell&#39;installazione dei moduli AEM. Se il servizio Output non fa parte dell&#39;installazione dei moduli AEM quando viene assemblato un modulo XFA dinamico, viene generata un&#39;eccezione. Vedere [Creazione di flussi](/help/forms/developing/creating-document-output-streams.md)di output dei documenti.
+Il servizio Assembler può assemblare documenti PDF non interattivi senza che il servizio Output faccia parte dell&#39;installazione dei moduli AEM, se il documento PDF di input è basato su un modulo Acrobat  o su un modulo XFA statico. Tuttavia, se il documento PDF di input è un modulo XFA dinamico, il servizio Output deve far parte dell&#39;installazione dei moduli AEM. Se il servizio Output non fa parte dell&#39;installazione dei moduli AEM quando viene assemblato un modulo XFA dinamico, viene generata un&#39;eccezione. Vedere [Creazione di flussi](/help/forms/developing/creating-document-output-streams.md)di output dei documenti.
 
 >[!NOTE]
 >
->Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF tramite il servizio Assembler. In questa sezione non vengono discussi concetti, ad esempio la creazione di un oggetto raccolta contenente documenti di input o l&#39;apprendimento di come estrarre i risultati dall&#39;oggetto raccolta restituito. (Vedere Assemblaggio [di documenti](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF a livello di programmazione.)
+>Prima di leggere questa sezione, è consigliabile avere familiarità con l&#39;assemblaggio di documenti PDF tramite il servizio Assembler. In questa sezione non vengono discussi concetti, ad esempio la creazione di un oggetto raccolta che contiene documenti di input o l&#39;apprendimento di come estrarre i risultati dall&#39;oggetto raccolta restituito. (Vedere Assemblaggio [di documenti](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF a livello di programmazione.)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -73,10 +76,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
-se AEM Forms è implementato su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui è distribuito AEM Forms.
+se  AEM Forms è distribuito su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui  AEM Forms è distribuito.
 
 **Creare un client Assembler**
 
@@ -88,7 +91,7 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 **Riferimento a un documento PDF interattivo**
 
-Per ripristinare un documento PDF non interattivo, è necessario fare riferimento a un documento PDF interattivo e passare al servizio Assembler.
+Per ripristinare un documento PDF non interattivo, è necessario fare riferimento a un documento PDF interattivo e passarlo al servizio Assembler.
 
 **Impostazione delle opzioni di esecuzione**
 
@@ -104,7 +107,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
 
 **Consulta anche**
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,6 +148,7 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX. Assicurarsi che il documento DDX contenga il valore `inDoc` per l&#39;elemento di origine PDF.
    * Un `com.adobe.idp.Document` oggetto che contiene il documento PDF interattivo.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il livello predefinito del font e del registro dei processi.
+
    Il `invokeOneDocument` metodo restituisce un `com.adobe.idp.Document` oggetto che contiene un documento PDF non interattivo.
 
 1. Salvare il documento PDF non interattivo.
@@ -164,17 +168,17 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client Assembler.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -190,7 +194,7 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
 1. Fare riferimento a un documento PDF interattivo.
 
    * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare il documento PDF di input. Questo `BLOB` oggetto viene passato all&#39;oggetto `invokeOneDocument` come argomento.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF di input e la modalità di apertura del file.
+   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF di input e la modalità in cui aprire il file.
    * Creare un array di byte che memorizza il contenuto dell&#39; `System.IO.FileStream` oggetto. È possibile determinare la dimensione dell&#39;array di byte ottenendo la proprietà dell&#39; `System.IO.FileStream` oggetto `Length` .
    * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo dell&#39; `System.IO.FileStream` oggetto `Read` . Passare l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
@@ -198,7 +202,7 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
 1. Impostare le opzioni di esecuzione.
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati appartenente all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
+   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati che appartiene all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
 
 1. Assemblare il documento PDF.
 
@@ -207,6 +211,7 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
    * Un `BLOB` oggetto che rappresenta il documento DDX
    * Un `BLOB` oggetto che rappresenta il documento PDF interattivo
    * Un oggetto `AssemblerOptionSpec` che specifica le opzioni di esecuzione
+
    Il `invokeOneDocument` metodo restituisce un `BLOB` oggetto che contiene un documento PDF non interattivo.
 
 1. Salvare il documento PDF non interattivo.
@@ -220,4 +225,4 @@ Assemblate un documento PDF non interattivo utilizzando l&#39;API del servizio A
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
