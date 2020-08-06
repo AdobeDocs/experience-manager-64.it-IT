@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Questa sezione della documentazione descrive
 
 Per aggiungere un `Ideation` componente a una pagina in modalità di creazione, usate il Browser componenti per individuarlo `Communities / Ideation` e trascinarlo nella posizione desiderata sulla pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](ideation.md#essentials-for-client-side) richieste, viene visualizzato il `Ideation`componente:
 
@@ -51,7 +54,8 @@ Selezionate il `Ideation` componente inserito a cui accedere e selezionate l’ 
 
 Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per idee e commenti:
 
-* **[!UICONTROL Titolo]** idea Titolo visualizzato per l’idea. Default is `Ideation`.
+* **[!UICONTROL Titolo]** ideazione Titolo visualizzato per l’idea. Il valore predefinito è 
+`Ideation`.
 
 * **[!UICONTROL Descrizione]** ideazione Una descrizione da visualizzare come sottotitolo per l’idea. Il valore predefinito non è una descrizione.
 
@@ -67,9 +71,11 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **[!UICONTROL Consenti caricamenti]** file Se questa opzione è selezionata, consenti l&#39;aggiunta di allegati all&#39;idea o al commento. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Dimensione]** massima file pertinente solo se `Allow File Uploads` è selezionata. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+* **[!UICONTROL Dimensione]** massima file rilevante solo se 
+`Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
-* **[!UICONTROL Tipi]** di file consentiti Pertinenti solo se `Allow File Uploads` è selezionata. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+* **[!UICONTROL Tipi]** di file consentiti rilevanti solo se 
+`Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Dimensione]** massima file immagine pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Numero massimo di byte di cui può disporre un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
@@ -79,7 +85,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **[!UICONTROL Consenti di seguire]** Se questa opzione è selezionata, includete la seguente funzione per i post di idee, che consente ai membri di ricevere [notifiche](notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [l’](email.md)e-mail. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti votazione]** Se questa opzione è selezionata, consentire la votazione dei commenti di un&#39;idea. Il valore predefinito è deselezionato.
 
@@ -109,25 +115,30 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione delle
 
 Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Impostazioni]** , sono limitati in base agli spazi dei nomi selezionati.
 
-* **[!UICONTROL Spazi dei nomi consentiti]** Rilevanti se `Allow Tagging` è selezionato nella scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+* **[!UICONTROL Spazi dei nomi consentiti]** rilevanti se 
+`Allow Tagging` è selezionato nella scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore pari a **-** 1 non indica alcun limite. Il valore predefinito è 0.
+* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di 
+**-** 1 significa nessun limite. Il valore predefinito è 0.
 
 ### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
 Nella scheda **[!UICONTROL Impostazioni]** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
-* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Default is `Newest`.
+* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Il valore predefinito è 
+`Newest`.
 
-* **[!UICONTROL Seleziona Opzioni ora per l&#39;ordinamento]** pull in basso di Analytics per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+* **[!UICONTROL Seleziona le opzioni di ora per l&#39;ordinamento]** pull di Analytics per selezionare una delle 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
 ### Creazione di Idea {#creating-idea}
 
-Come per tutte le funzioni di Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti).
+Come per tutte le funzioni Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti/clic).
 
 Una volta effettuato l’accesso, un membro può creare una nuova idea.
 
