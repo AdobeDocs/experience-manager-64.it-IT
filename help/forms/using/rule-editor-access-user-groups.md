@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -18,14 +21,14 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 ## Panoramica {#overview}
 
-È possibile utilizzare diversi tipi di utenti con competenze diverse per l&#39;utilizzo dei moduli adattivi. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
+Potete avere diversi tipi di utenti con competenze diverse che funzionano con Forms adattivo. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
 
-AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione dei moduli adattivi, è possibile specificare i gruppi [di](/help/sites-administering/security.md) utenti che possono visualizzare e accedere all&#39;editor delle regole.
+ AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione Forms adattivo, potete specificare i gruppi [di](/help/sites-administering/security.md) utenti che possono visualizzare e accedere all&#39;editor delle regole.
 
 ## Specificare i gruppi di utenti che possono accedere all&#39;editor delle regole {#specify-user-groups-that-can-access-rule-editor}
 
-1. Accedi ad AEM Forms come amministratore.
-1. Nell’istanza di creazione, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![martello](assets/hammer.png) Strumenti > Operazioni > Console Web. La console Web si apre in una nuova finestra.
+1. Accedete a  AEM Forms come amministratore.
+1. Nell’istanza di authoring, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerExperience Manager  Adobe > ![martello](assets/hammer.png) Strumenti > Operazioni > Console Web. La console Web si apre in una nuova finestra.
 
    ![1](assets/1.png)
 
