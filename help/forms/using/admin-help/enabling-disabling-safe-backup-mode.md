@@ -1,8 +1,8 @@
 ---
 title: Attivazione e disattivazione della modalità di backup sicura
 seo-title: Attivazione e disattivazione della modalità di backup sicura
-description: Nella pagina Impostazioni di backup, è possibile utilizzare i moduli AEM in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage). Scopri come abilitare e disabilitare la modalità di backup sicuro.
-seo-description: Nella pagina Impostazioni di backup, è possibile utilizzare i moduli AEM in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage). Scopri come abilitare e disabilitare la modalità di backup sicuro.
+description: Nella pagina Impostazioni di backup è possibile utilizzare AEM moduli in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage). Scopri come abilitare e disabilitare la modalità di backup sicuro.
+seo-description: Nella pagina Impostazioni di backup è possibile utilizzare AEM moduli in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage). Scopri come abilitare e disabilitare la modalità di backup sicuro.
 uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
 
 # Attivazione e disattivazione della modalità di backup sicura {#enabling-and-disabling-safe-backup-mode}
 
-Nella pagina Impostazioni di backup, è possibile utilizzare i moduli AEM in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage).
+Nella pagina Impostazioni di backup è possibile utilizzare AEM moduli in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage).
 
-Mentre i moduli AEM sono in modalità di backup sicuro, funzionano normalmente, tranne per il fatto che non rimuovono attivamente i file dalla directory GDS.
+AEM moduli è in modalità di backup sicuro, funziona normalmente, ma non rimuove attivamente i file dalla directory GDS.
 
 >[!NOTE]
 >
