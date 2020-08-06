@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurare le impostazioni del servizio {#configure-service-settings}
 
-Potete utilizzare la pagina Gestione servizi per configurare le impostazioni per ciascuno dei servizi che fanno parte dei moduli AEM. Le impostazioni disponibili variano a seconda del servizio configurato.
+È possibile utilizzare la pagina Gestione servizi per configurare le impostazioni per ciascuno dei servizi che fanno parte di AEM moduli. Le impostazioni disponibili variano a seconda del servizio configurato.
 
 1. Nella console di amministrazione, fai clic su Servizi > Applicazioni e servizi > Gestione dei servizi.
 1. Arrestate il servizio prima di modificarlo. (vedere [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
@@ -69,7 +69,7 @@ Per il servizio moduli con codice a barre sono disponibili le seguenti impostazi
 
 ## Impostazioni del servizio Central Migration Bridge (obsoleto) {#central-migration-bridge-service-settings}
 
-Il servizio Central Migration Bridge ( `CentralMigrationBridge`) richiama un sottoinsieme della funzionalità Adobe Central Pro Output Server (Central), che include i comandi JFMERGE, JFTRANS e XMLIMPORT. Le operazioni del servizio Bridge di migrazione centrale consentono di riutilizzare le seguenti risorse Central nei moduli AEM:
+Il servizio Central Migration Bridge ( `CentralMigrationBridge`) richiama un sottoinsieme  funzionalità Adobe Central Pro Output Server (Central), che include i comandi JFMERGE, JFTRANS e XMLIMPORT. Le operazioni del servizio Ponte di migrazione centrale consentono di riutilizzare le risorse Central seguenti nei moduli AEM:
 
 * progettazione di modelli (&amp;ast;.ifd)
 * modelli di output (&amp;ast;.mdf)
@@ -79,7 +79,7 @@ Il servizio Central Migration Bridge ( `CentralMigrationBridge`) richiama un sot
 
 Per il servizio Central Migration Bridge è disponibile la seguente impostazione.
 
-**Directory di installazione centrale:** La directory in cui è installato Adobe Central 5.7.
+**Directory di installazione centrale:** La directory in cui è installato  Adobe Central 5.7.
 
 ## Content Repository Connector per le impostazioni del servizio EMC Documentum {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -87,7 +87,7 @@ Content Repository Connector per il servizio EMC Documentum ( `EMCDocumentumCont
 
 La seguente impostazione è disponibile per il connettore Content Repository per il servizio EMC Documentum.
 
-**Percorso predefinito oggetto collegamento risorsa:** Parte predefinita del percorso nell&#39;archivio di Documentum per la memorizzazione dell&#39;oggetto Asset Link. Il percorso effettivo è costituito dal percorso predefinito e dalla posizione del modello di modulo nell&#39;archivio moduli di AEM.
+**Percorso predefinito oggetto collegamento risorsa:** Parte predefinita del percorso nell&#39;archivio di Documentum per la memorizzazione dell&#39;oggetto Asset Link. Il percorso effettivo è costituito dal percorso predefinito e dalla posizione del modello di modulo nell&#39;archivio moduli AEM.
 
 Ad esempio, se il percorso predefinito è impostato su `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects``/Docbase/forms/`e il modello di modulo è memorizzato in una cartella, l’oggetto Collegamento risorsa viene memorizzato nel percorso seguente:
 
@@ -101,7 +101,7 @@ Content Repository Connector for IBM FileNet consente di creare processi che int
 
 La seguente impostazione è disponibile per Content Repository Connector per il servizio FileNet IBM.
 
-**Percorso predefinito oggetto collegamento risorsa:** La parte predefinita del percorso nell&#39;archivio FileNet di IBM per la memorizzazione dell&#39;oggetto Asset Link. Il percorso effettivo è costituito dal percorso predefinito e dalla posizione del modello di modulo nell&#39;archivio moduli di AEM.
+**Percorso predefinito oggetto collegamento risorsa:** La parte predefinita del percorso nell&#39;archivio FileNet di IBM per la memorizzazione dell&#39;oggetto Asset Link. Il percorso effettivo è costituito dal percorso predefinito e dalla posizione del modello di modulo nell&#39;archivio moduli AEM.
 
 Ad esempio, se il percorso predefinito è impostato su `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects``/Docbase/forms/`e il modello di modulo è memorizzato in una cartella, l’oggetto Collegamento risorsa viene memorizzato nel percorso seguente:
 
@@ -137,10 +137,10 @@ Il servizio Distiller ( `DistillerService`) converte i file PostScript, Encapsul
 
 Le seguenti impostazioni sono disponibili per il servizio Distiller.
 
-**Impostazioni Adobe PDF:** Al PDF generato vengono applicate le seguenti impostazioni preconfigurate:
+**impostazioni Adobe PDF:** Al PDF generato vengono applicate le seguenti impostazioni preconfigurate:
 
 * Stampa di alta qualità
-* Pagine oversize
+* Oversized pages
 * PDFA1b 2005 CMYK
 * PDFA1b 2005 RGB
 * PDFX1a 2001
@@ -149,21 +149,21 @@ Le seguenti impostazioni sono disponibili per il servizio Distiller.
 * Dimensione file minima
 * Standard
 
-È possibile creare nuove impostazioni tramite l&#39;interfaccia utente di PDF Generator.
+New settings can be created through the PDF Generator user interface.
 
 **Impostazioni di protezione:** Impostazioni di protezione preconfigurate applicate ai documenti PDF generati. Il valore predefinito è Nessuna protezione. È necessario creare le impostazioni di protezione utilizzando PDF Generator, quindi immettere l&#39;impostazione qui.
 
-**Dimensione pool:** La dimensione iniziale del pool. Quando il servizio Distiller viene distribuito, questo numero viene utilizzato per determinare il numero di istanze di implementazione del servizio create e allocate al pool gratuito in attesa delle richieste di chiamata. Il contenitore del servizio può quindi rispondere immediatamente alle richieste di chiamata senza dover prima inizializzare un&#39;istanza del servizio.
+**Dimensione pool:** La dimensione iniziale del pool. Quando il servizio Distiller viene distribuito, questo numero viene utilizzato per determinare il numero di istanze di implementazione del servizio che vengono create e allocate al pool gratuito in attesa delle richieste di chiamata. Il contenitore del servizio può quindi rispondere immediatamente alle richieste di chiamata senza dover prima inizializzare un&#39;istanza del servizio.
 
-## Impostazioni del servizio Gestione documenti {#document-management-service-settings}
+## Document Management service settings {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta il documento sul ciclo di vita dei prodotti [Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Per informazioni sulla configurazione di Content Services (obsoleto), consulta [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta [documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)sul ciclo di vita del prodotto di Adobe. To know about configuring Content Services (Deprecated), see [Administering Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-Il servizio di gestione documenti ( `DocumentManagementService`) consente ai processi di utilizzare la funzionalità di gestione dei contenuti fornita da Content Services (obsoleto). Le operazioni di gestione dei documenti forniscono le attività di base necessarie per mantenere spazi e contenuti nel sistema di gestione dei contenuti. Esempi di tali attività sono copiare, eliminare, spostare, recuperare e archiviare contenuti, creare spazi e associazioni e ottenere e impostare gli attributi di contenuto.
+The Document Management service ( `DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Le operazioni di gestione dei documenti forniscono le attività di base necessarie per mantenere spazi e contenuti nel sistema di gestione dei contenuti. Esempi di tali attività sono copiare, eliminare, spostare, recuperare e archiviare contenuti, creare spazi e associazioni e ottenere e impostare gli attributi di contenuto.
 
-Per il servizio Gestione documenti sono disponibili le seguenti impostazioni.
+The following settings are available for the Document Management service.
 
 **Schema store:** Schema dello store in cui si trova il contenuto. Il valore predefinito è workspace.
 
@@ -173,7 +173,7 @@ Per il servizio Gestione documenti sono disponibili le seguenti impostazioni.
 
 Le e-mail vengono comunemente utilizzate per distribuire contenuti o fornire informazioni sullo stato come parte di un processo automatizzato. Il servizio e-mail ( `EmailService`) consente ai processi di ricevere messaggi e-mail da un server POP3 o IMAP e di inviare messaggi e-mail a un server SMTP.
 
-Ad esempio, un processo utilizza il servizio E-mail per inviare un messaggio e-mail contenente un allegato del modulo PDF. Il servizio e-mail si connette a un server SMTP per inviare il messaggio e-mail con l&#39;allegato. Il modulo PDF è progettato per consentire al destinatario di fare clic su Invia dopo aver completato il modulo. Questa azione causa la restituzione del modulo come allegato al server di posta elettronica designato. Il servizio e-mail recupera il messaggio e-mail restituito e memorizza il modulo compilato in una variabile del modulo di dati del processo.
+For example, a process uses the Email service to send an email message with a PDF form attachment. The Email service connects to an SMTP server to send the email message with the attachment. Il modulo PDF è progettato per consentire al destinatario di fare clic su Invia dopo aver completato il modulo. Questa azione causa la restituzione del modulo come allegato al server di posta elettronica designato. Il servizio e-mail recupera il messaggio e-mail restituito e memorizza il modulo compilato in una variabile del modulo di dati del processo.
 
 Per il servizio e-mail sono disponibili le seguenti impostazioni.
 
@@ -181,7 +181,7 @@ Per il servizio e-mail sono disponibili le seguenti impostazioni.
 
 **Numero porta SMTP:** La porta utilizzata per connettersi al server SMTP.
 
-**Autenticazione SMTP:** Selezionare se per connettersi al server SMTP è necessaria l&#39;autenticazione utente.
+**SMTP Authenticate:** Select if user authentication is required to connect to the SMTP server.
 
 **Utente SMTP:** Il nome utente dell&#39;account utente da utilizzare per accedere al server SMTP.
 
@@ -211,7 +211,7 @@ Per il servizio e-mail sono disponibili le seguenti impostazioni.
 
 ## Impostazioni del servizio di cifratura {#encryption-service-settings}
 
-Il servizio di cifratura ( `EncryptionService`) consente di cifrare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decifrare il documento per ottenere l&#39;accesso ai contenuti. Se un documento PDF è crittografato con una password, l&#39;utente deve specificare la password aperta per poter visualizzare il documento in Adobe Reader o Adobe Acrobat. Analogamente, se un documento PDF è crittografato con un certificato, l&#39;utente deve decrittografare il documento PDF con la chiave pubblica che corrisponde al certificato (chiave privata) utilizzato per cifrare il documento PDF.
+Il servizio di cifratura ( `EncryptionService`) consente di cifrare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decifrare il documento per ottenere l&#39;accesso ai contenuti. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
 
 Per il servizio di cifratura sono disponibili le seguenti impostazioni.
 
@@ -229,132 +229,133 @@ Per il servizio di cifratura sono disponibili le seguenti impostazioni.
 
 **Modalità compatibilità:**
 
-## Impostazioni del servizio FTP {#ftp-service-settings}
+## FTP service settings {#ftp-service-settings}
 
-Il servizio FTP ( `FTP`) consente ai processi di interagire con un server FTP. Le operazioni del servizio FTP possono recuperare i file dal server FTP, caricare i file sul server FTP ed eliminare i file dal server FTP. Ad esempio, documenti come i report generati da un processo possono essere memorizzati in un server FTP per la distribuzione. Oppure, un sistema esterno potrebbe generare alcuni file basati sui passaggi precedenti di un processo. In una fase successiva del processo, i file possono essere trasferiti in una posizione remota.
+The FTP service ( `FTP`) enables processes to interact with an FTP server. Le operazioni del servizio FTP possono recuperare i file dal server FTP, caricare i file sul server FTP ed eliminare i file dal server FTP. Ad esempio, documenti come i report generati da un processo possono essere memorizzati in un server FTP per la distribuzione. Or an external system may generate some files based on previous steps in a process. In a subsequent step in the process, the files may be transferred to a remote location.
 
-Le seguenti impostazioni sono disponibili per il servizio FTP.
+The following settings are available for the FTP service.
 
-**Host predefinito:** Indirizzo IP o URL del server FTP.
+**Default host:** The IP address or URL of the FTP server.
 
 **Porta predefinita:** La porta utilizzata per connettersi al server FTP. Il valore predefinito è 21.
 
-**Nome utente predefinito:** Nome dell&#39;account utente che potete utilizzare per accedere al server FTP. L&#39;account utente deve disporre di privilegi sufficienti per eseguire le operazioni FTP richieste dal servizio.
+**Default username:** The name of the user account that you can use to access the FTP server. The user account must have sufficient privileges to perform the FTP operations that this service requires.
 
-**Password predefinita:** La password da utilizzare con il nome utente specificato per l&#39;autenticazione con il server FTP.
+**Default password:** The password to use with the specified user name for authenticating with the FTP server.
 
-## Genera impostazioni del servizio PDF {#generate-pdf-service-settings}
+## Generate PDF service settings {#generate-pdf-service-settings}
 
 Il servizio Genera PDF ( `GeneratePDFService`) converte i file in vari formati nativi in documenti PDF e converte i documenti PDF in diversi formati di file.
 
-Per il servizio Genera PDF sono disponibili le seguenti impostazioni.
+The following settings are available for the Generate PDF service.
 
-**Impostazioni Adobe PDF:** Nome delle impostazioni Adobe PDF preconfigurate da applicare a un processo di conversione, se queste impostazioni non vengono specificate come parte dei parametri di chiamata API. Le impostazioni Adobe PDF sono configurate nella console di amministrazione facendo clic su Servizi > Generatore PDF > Impostazioni Adobe PDF. Queste impostazioni sono applicabili solo alle conversioni basate su PDFMaker.
+**impostazioni Adobe PDF:** Nome delle impostazioni Adobe PDF  preconfigurate da applicare a un processo di conversione, se queste impostazioni non vengono specificate come parte dei parametri di chiamata API. Le  impostazioni Adobe PDF sono configurate nella console di amministrazione, facendo clic su Servizi > PDF Generator >  Impostazioni Adobe PDF. Queste impostazioni sono applicabili solo alle conversioni basate su PDFMaker.
 
 **Impostazioni di protezione:** Nome delle impostazioni di protezione preconfigurate da applicare a un processo di conversione, se queste impostazioni non vengono specificate come parte dei parametri di chiamata API. Le impostazioni di protezione sono configurate nella console di amministrazione, facendo clic su Servizi > PDF Generator > Impostazioni di protezione.
 
 **Tipo di file Impostazioni:** Il nome dell&#39;impostazione del tipo di file preconfigurata da applicare a un processo di conversione, se queste impostazioni non vengono specificate come parte dei parametri di chiamata API. Le impostazioni relative al tipo di file sono configurate nella console di amministrazione facendo clic su Servizi > Generatore PDF > Impostazioni tipo di file.
 
-**Utilizzare Acrobat WebCapture (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza Acrobat X Pro per tutte le conversioni da HTML a PDF. Ciò può migliorare la qualità dei file PDF prodotti da HTML, anche se le prestazioni potrebbero essere leggermente inferiori. Il valore predefinito è false.
+**Utilizzare  Acrobat WebCapture (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza  Acrobat X Pro per tutte le conversioni da HTML a PDF. Ciò può migliorare la qualità dei file PDF prodotti da HTML, anche se le prestazioni potrebbero essere leggermente inferiori. Il valore predefinito è false.
 
-**Usa conversione immagini Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza Acrobat X Pro per tutte le conversioni da immagine a PDF. Questa impostazione è utile solo se il meccanismo predefinito di conversione Java pura non è in grado di convertire correttamente una parte significativa delle immagini di input. Il valore predefinito è false.
+**Usa  conversione immagine Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza  Acrobat X Pro per tutte le conversioni da immagine a PDF. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. Il valore predefinito è false.
 
-**Abilita conversioni AutoCAD basate su Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza Acrobat X Pro per tutte le conversioni da DWG a PDF. Questa impostazione è utile solo se AutoCAD non è installato sul server o se il meccanismo di conversione AutoCAD non è in grado di convertire i file.
+**Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
 
-**Espressioni Regolari Per Trovare Caratteri Speciali Vietati In Nome Utente (Solo Windows):** Specifica i caratteri che interferiscono con le operazioni Esporta PDF e Ottimizza PDF quando i caratteri vengono visualizzati nel nome dell&#39;utente.
+**Regular Expressions For Finding Out Prohibited Special
+Characters In User Name (Windows Only):** Specifies characters that interfere with the Export PDF and Optimize PDF operations when the characters appear in a user’s name.
 
-**Dimensione pool ImageToPDF:** La dimensione del pool del convertitore predefinito da immagine a PDF (Java puro) nel servizio Genera PDF. Questa impostazione controlla il numero massimo simultaneo di conversioni da immagine a PDF eseguibili dal servizio Genera PDF. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può aumentare sui sistemi multiprocessore.
+**Dimensione pool ImageToPDF:** La dimensione del pool del convertitore predefinito da immagine a PDF (Java puro) nel servizio Genera PDF. Questa impostazione controlla il numero massimo simultaneo di conversioni da immagine a PDF eseguibili dal servizio Genera PDF. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems.
 
-**Dimensione pool HTML-PDF:** Dimensione pool del convertitore HTML-PDF nel servizio Genera PDF. Questa impostazione controlla il numero massimo simultaneo di conversioni da HTML a PDF eseguibili dal servizio Genera PDF. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può aumentare sui sistemi multiprocessore.
+**HTML to PDF Pool Size:** The pool size of the HTML-to-PDF converter in the Generate PDF service. This setting controls the maximum simultaneous HTML-to-PDF conversions that the Generate PDF service can perform. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems.
 
-**Dimensione pool OCR:** La dimensione pool del PaperCaptureService utilizzato da PDF Generator per l&#39;OCR. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può aumentare sui sistemi multiprocessore. Questa impostazione è valida solo sui sistemi Windows.
+**OCR Pool Size:** The pool size of the PaperCaptureService that PDF Generator uses for OCR. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems. This setting is valid only on Windows systems.
 
-**Fallback Font Family Per Conversioni Da HTML A PDF:** Il nome della famiglia di font da utilizzare nei documenti PDF quando il font utilizzato nell&#39;HTML originale non è disponibile per il server moduli AEM. Specificate una famiglia di font se intendete convertire le pagine HTML che utilizzano font non disponibili. Ad esempio, le pagine create in lingue regionali potrebbero utilizzare font non disponibili.
+**Fallback Font Family For HTML To PDF Conversions:** The name of the font family to use in PDF documents when the font used in the original HTML is not available to the AEM forms server. Specify a font family if you expect to convert HTML pages that use unavailable fonts. For example, pages authored in regional languages could use unavailable fonts.
 
-**La logica del nuovo tentativo di conversione per le conversioni** native governa i tentativi di generazione PDF se il primo tentativo di conversione non è riuscito:
+**Retry Logic for Native Conversions** Governs PDF generation retries if the first attempt at conversion has failed:
 
 **Nessun tentativo**
 
-Non riprovare la conversione PDF se il primo tentativo di conversione non è riuscito
+Do not retry the PDF conversion if the first conversion attempt has failed
 
 **Riprova**
 
-Riprovare la conversione PDF indipendentemente dal raggiungimento della soglia di timeout. La durata di timeout predefinita per il primo tentativo è 270 s.
+Retry PDF conversion regardless of whether the timeout threshold has been reached. The default timeout duration for the first attempt is 270s.
 
 **Riprova se il tempo a disposizione lo consente**
 
-Riprovare la conversione PDF se il tempo utilizzato per il primo tentativo di conversione è inferiore alla durata di timeout specificata. Ad esempio, se la durata di timeout è 270 e il primo tentativo è stato consumato 200 secondi, PDF Generator tenterà nuovamente di convertire. Se il primo tentativo è stato utilizzato per 270 secondi, la conversione non verrà tentata nuovamente.
+Retry PDF conversion if the time consumed for the first conversion attempt was less than the specified timeout duration. For example, if the timeout duration is 270s and the first attempt consumed 200s, PDF Generator will reattempt the conversion. If the first attempt itself consumed 270s, conversion will not be retried.
 
-## Impostazioni del servizio Guide ES4 Utilities {#guides-es4-utilities-service-settings}
+## Guides ES4 Utilities service settings {#guides-es4-utilities-service-settings}
 
-Quando si crea una Guida, alcune risorse, come la definizione della Guida, vengono incorporate nella Guida. Le risorse possono essere anche utilizzate come riferimenti alle risorse dell&#39;applicazione memorizzate localmente o sul server dei moduli AEM. La Guida non contiene dati e i valori per la posizione di invio e gli input non sono adatti a tutti gli ambienti esterni.
+When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM forms server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
 
-Nella maggior parte dei casi, i servizi di rendering Guide predefiniti sono sufficienti per preparare una Guida da utilizzare in Workspace o in altri ambienti esterni. (Nella visualizzazione Servizi, in Workbench, il servizio predefinito è Guide (sistema)/Processi/Guida di rendering - 1.0.) Il servizio Guide Utilities ( `GuidesUtility`) consente di creare un processo personalizzato per il rendering di una Guida TV, se necessario.
+In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) Il servizio Guide Utilities ( `GuidesUtility`) consente di creare un processo personalizzato per il rendering di una Guida TV, se necessario.
 
-Le operazioni Guide Utilities (Utilità guida) consentono di aggiungere le seguenti attività di rendering Guide a un processo:
+The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
 
-* Determinare se i dati sono disponibili per compilare la Guida con
-* Incorporare i dati della Guida o convertirli in un collegamento
-* Conversione del contenuto di riferimento in URL con accesso esterno
-* Sostituire i valori in un documento HTML o in un altro wrapper, o convertirli in URL con accesso esterno
-* Impostare il percorso di invio
+* Determine whether data is available to populate the Guide with
+* Embed the Guide data or convert it to a link
+* Convert referenced content to URLs that are externally accessible
+* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible
+* Set the submit location
 * Specificare i valori di input
-* Creare un parametro per rappresentare il contenuto a cui si fa riferimento
+* Create a parameter to represent referenced content
 * Se sono disponibili delle variazioni, imposta una variazione
 
-I valori predefiniti per il servizio Guide Utilities supportano la maggior parte dei casi di utilizzo. Tuttavia, se necessario, potete modificare i seguenti valori.
+The default values for the Guide Utilities service support most use cases. However, if necessary, you can change the following values.
 
-**publicPaths:** Questa opzione è stata rimossa. Non utilizzate questa opzione con i moduli AEM.
+**publicPaths:** Questa opzione è stata rimossa. Non utilizzare questa opzione con AEM moduli.
 
 **pathInfoExpiryInSeconds:** Intervallo dopo il quale scade una richiesta di informazioni sul percorso da parte di un client. Il valore predefinito è 1.
 
-**collateraleExpiryInSeconds:** L&#39;intervallo dopo il quale scade una richiesta di garanzia da parte di un cliente. Il valore predefinito è 315576000.
+**collateralExpiryInSeconds:** The interval after which a request for collateral from a client expires. Il valore predefinito è 315576000.
 
 **mismatchExpiryInSeconds:** L&#39;intervallo dopo il quale scade una richiesta di garanzia da parte di un client, quando l&#39;eTag (tag entità) non corrisponde. Un eTag è un’intestazione di risposta HTTP. Il valore predefinito è 1.
 
 **guideContext:** Radice del contesto dell’applicazione Web Guide. Corrisponde al valore impostato utilizzando l&#39;applicazione Web Guide. Il valore predefinito è /Guides/.
 
-**secureRandomAlgorithm:** Algoritmo da utilizzare per la generazione di chiavi e identificatori. Questo valore viene passato al metodo getInstance della classe Java SecureRandom. Il valore predefinito è SHA1PRNG.
+**secureRandomAlgorithm:** Algoritmo da utilizzare per la generazione di chiavi e identificatori. This value is passed to the getInstance method of the SecureRandom Java class. Il valore predefinito è SHA1PRNG.
 
-**idBytes:** Il numero di byte casuali da utilizzare per un identificatore chiave. Il valore predefinito è 6.
+**idBytes:** The number of random bytes to use for a key identifier. Il valore predefinito è 6.
 
-**macAlgorithm:** L&#39;algoritmo MAC (codice di autenticazione del messaggio) da utilizzare per la verifica degli URL collaterali. Questo metodo viene passato al metodo getInstance della classe Mac. Il valore predefinito è HmacSHA1.
+**macAlgorithm:** The MAC (message authentication code) algorithm to use for collateral URL verification. This method is passed to the getInstance method of the Mac class. Default is HmacSHA1.
 
-**macRefreshIntervalInMinutes:** Il tempo di attivazione di una chiave. Quando una chiave è stata attiva per questo intervallo, viene generata una nuova chiave. La nuova chiave diventa la chiave attiva. La chiave precedentemente attiva viene mantenuta per il 10% dell&#39;intervallo di aggiornamento. Questo comportamento consente agli URL generati utilizzando la chiave precedente di continuare a funzionare nello switch chiave. Il valore predefinito è 144000.
+**macRefreshIntervalInMinutes:** The amount of time a key is active. When a key has been active for this interval, a new key is generated. La nuova chiave diventa la chiave attiva. La chiave precedentemente attiva viene mantenuta per il 10% dell&#39;intervallo di aggiornamento. Questo comportamento consente agli URL generati utilizzando la chiave precedente di continuare a funzionare nello switch chiave. Il valore predefinito è 144000.
 
 **macOverlapIntervalInMinutes:** Durata della validità della chiave precedente dopo la generazione di una nuova chiave. Il valore predefinito è 1440 minuti (1 giorno).
 
-**macKeySeed:** Un valore seed per la generazione dell&#39;URL protetto. Quando questa opzione è selezionata, la chiave non viene mai aggiornata. Se si imposta lo stesso valore sui diversi server, i server genereranno URL sicuri compatibili. Ciò può essere utile se dietro un sistema di bilanciamento del carico sono in uso più server di moduli. Immettete una sequenza casuale di caratteri e numeri come valori iniziali.
+**macKeySeed:** A seed value for generating the secure URL. Quando questa opzione è selezionata, la chiave non viene mai aggiornata. Se si imposta lo stesso valore sui diversi server, i server genereranno URL sicuri compatibili. Ciò può essere utile se dietro un sistema di bilanciamento del carico sono in uso più server di moduli. Immettete una sequenza casuale di caratteri e numeri come valori iniziali.
 
 ### Utilizzo delle guide in un cluster di server {#using-guides-in-a-server-cluster}
 
-Il rendering di una Guida in un cluster di server che non utilizza sessioni fisse non riesce con NullPointerException. Una richiesta Guide utilizza gli URL protetti che, per impostazione predefinita, sono univoci per il server in cui sono generati. In un cluster che utilizza sessioni di sticky, dopo che una richiesta ha toccato un nodo del cluster, tutte le richieste successive per tale sessione o utente vengono indirizzate esclusivamente a tale server, e tutto va bene. In un cluster che non utilizza sessioni fisse, le richieste successive possono colpire qualsiasi server del cluster. Se il server a cui hanno risposto le richieste non è il server originale, l&#39;URL protetto non verrà risolto.
+Il rendering di una Guida in un cluster di server che non utilizza sessioni fisse non riesce con NullPointerException. A Guides request leverages secure URLs that, by default, are unique to the server they are generated on. In a cluster that uses sticky sessions, after a request hits a node in the cluster, all subsequent requests for that session or user are routed exclusively to that server, and everything is ok. In a cluster that does not use sticky sessions, subsequent requests can hit any server in the cluster. If the server that the requests hit is not the original server, they fail to resolve the secure URL.
 
-Se si utilizzano le Guide in un cluster di server che non utilizza le sessioni di sticky, impostare il valore macKeySeed per il servizio GuidesUtility, quindi arrestare e avviare il cluster.
+If you are using Guides in a server cluster that does not use sticky sessions, set the macKeySeed value for the GuidesUtility service, and then stop and start the cluster.
 
-Il valore macKeySeed è l’elemento di base per il generatore di numeri casuali utilizzato per generare gli URL protetti. Impostando questo valore, ogni nodo del cluster inizializza il generatore di numeri casuali allo stesso modo e ha accesso agli stessi URL protetti. È possibile utilizzare qualsiasi stringa casuale per questo valore di inizializzazione.
+The macKeySeed value is the seed for the random number generator that is used to generate the secure URLs. Setting this value causes each cluster node to initialize the random number generator in the same manner, and to have access to the same secure URLs. You can use any random string for this seed value.
 
-Modificate il valore macKeySeed quando è necessario aggiornare gli URL protetti. L&#39;aggiornamento degli URL protetti dipende dal criterio di protezione in uso ed è simile al criterio di aggiornamento per la modifica della password principale del server. macSeedValue è simile alla password master per gli URL protetti, in quanto viene utilizzata per generare un nuovo numero casuale univoco da utilizzare per la generazione e il recupero sicuri degli URL.
+Change the macKeySeed value when you need to refresh the secure URLs. Refreshing the secure URLs depends on your security policy, and is similar to the refresh policy for changing the master root password of the server. The macSeedValue is analogous to the master password for the secure URLs, because it is used to generate a new unique random number for use in secure URL generation and retrieval.
 
-È necessario riavviare il cluster perché macSeedValue è di sola lettura all&#39;avvio del sistema. Per leggere il valore è necessario riavviare tutti i nodi, in quanto essi lo utilizzano in modo indipendente per inizializzare i numeri casuali interni con il valore seed.
+You must restart the cluster because the macSeedValue is read only at system startup. All nodes need to restart to read the value, because they use it independently to initialize their internal random numbers with the seed value.
 
-## Impostazioni del servizio JDBC {#jdbc-service-settings}
+## JDBC service settings {#jdbc-service-settings}
 
-Il servizio JDBC ( `JdbcService`) consente ai processi di interagire con i database.
+The JDBC service ( `JdbcService`) enables processes to interact with databases.
 
-Per il servizio JDBC è disponibile la seguente impostazione.
+The following setting is available for the JDBC service.
 
-**datasourceName:** Valore stringa che rappresenta il nome JNDI dell&#39;origine dati da utilizzare per connettersi al server del database. L&#39;origine dati deve essere definita nel server dell&#39;applicazione che ospita il server dei moduli. Il valore predefinito è il nome JNDI dell&#39;origine dati per il database dei moduli AEM.
+**datasourceName:** Valore stringa che rappresenta il nome JNDI dell&#39;origine dati da utilizzare per connettersi al server del database. L&#39;origine dati deve essere definita nel server dell&#39;applicazione che ospita il server dei moduli. The default value is the JNDI name of the data source for the AEM forms database.
 
 ## Impostazioni del servizio JMS {#jms-service-settings}
 
 Il servizio JMS ( `JMS`) consente l&#39;interazione con i provider JMS (Java Messaging System) che implementano sia messaggi point-to-point che messaggi di pubblicazione/sottoscrizione.
 
-Configurate il servizio JMS con le proprietà predefinite in modo che le operazioni del servizio possano connettersi e interagire con un provider JMS e un servizio JNDI associato. I valori delle proprietà del servizio sono impostati su valori predefiniti basati sul server applicazioni JBoss. Modificate questi valori se utilizzate un server applicazione diverso per ospitare moduli AEM.
+Configurate il servizio JMS con le proprietà predefinite in modo che le operazioni del servizio possano connettersi e interagire con un provider JMS e un servizio JNDI associato. I valori delle proprietà del servizio sono impostati su valori predefiniti basati sul server applicazioni JBoss. Modificare questi valori se si utilizza un server applicazione diverso per ospitare AEM moduli.
 
 Le seguenti impostazioni sono disponibili per il servizio JMS.
 
-**URL fornitore:** URL del provider di servizi JNDI. Il valore predefinito si basa sul server applicazioni JBoss. I seguenti URL sono valori predefiniti per i server applicazione supportati dai moduli AEM:
+**Provider URL:** The URL of the JNDI service provider. Il valore predefinito si basa sul server applicazioni JBoss. L&#39;URL seguente è un valore predefinito per i server applicazione supportati AEM moduli:
 
 **JBoss:** `<server name>:1099`
 
@@ -362,41 +363,41 @@ Le seguenti impostazioni sono disponibili per il servizio JMS.
 
 **WebSphere:** `<server name>:2809`
 
-**Nome utente JNDI:** Il nome utente dell&#39;account da utilizzare per l&#39;autenticazione con il provider di servizi JNDI utilizzato per la ricerca dei nomi degli argomenti e delle code. Il valore predefinito è guest.
+**JNDI Username:** The user name of the account to use for authenticating with the JNDI service provider that is used for looking up queue and topic names. Il valore predefinito è guest.
 
 **Password JNDI:** La password associata al nome utente specificato per il nome utente JNDI. Il valore predefinito è guest.
 
-**Context Factory iniziale:** La classe Java da utilizzare come elemento di base del contesto iniziale. Il servizio JMS utilizza questa classe per creare un contesto iniziale, che rappresenta il punto di partenza per la risoluzione dei nomi di argomenti e code. Il valore predefinito è il context factory iniziale per il servizio JMS su JBoss. Le seguenti classi sono le aziende di contesto iniziali per i server applicazione supportati dai moduli AEM:
+**Context Factory iniziale:** La classe Java da utilizzare come elemento di base del contesto iniziale. Il servizio JMS utilizza questa classe per creare un contesto iniziale, che rappresenta il punto di partenza per la risoluzione dei nomi di argomenti e code. The default value is the initial context factory for the JMS service on JBoss. Le classi seguenti sono i context factory iniziali per i server applicazione supportati AEM moduli:
 
-**JBoss:** org.jnp.interface.NamingContextFactory
+**JBoss:** org.jnp.interfaces.NamingContextFactory
 
-**WebLogic:** weblogic.jndi.WLInInitialContextFactory
+**WebLogic:** weblogic.jndi.WLInitialContextFactory
 
-**WebSphere:** com.ibm.web.name.WsnInitialContextFactory
+**WebSphere:** com.ibm.websphere.naming.WsnInitialContextFactory
 
 **Nome utente connessione:** La password associata al nome utente specificato per Nome utente connessione. Il valore predefinito è guest.
 
 **Password connessione:** La password associata al nome utente specificato per Nome utente connessione. Il valore predefinito è guest.
 
-**Altre proprietà:** Coppie nome e valore proprietà che è possibile trasmettere al provider di servizi JNDI. Tali proprietà dipendono dall’implementazione e dalla configurazione del provider in uso.
+**Other Properties:** Property name and value pairs that you can pass to the JNDI service provider. Tali proprietà dipendono dall’implementazione e dalla configurazione del provider in uso.
 
-Le coppie nome/valore delle proprietà sono separate da due punti e virgola **;**. Ad esempio, il testo seguente mostra il valore che verrebbe specificato per due proprietà denominate name1 e name2, rispettivamente con i valori value1 e value2:
+The property name and value pairs are separated by semi-colons **;**. Ad esempio, il testo seguente mostra il valore che verrebbe specificato per due proprietà denominate name1 e name2, rispettivamente con i valori value1 e value2:
 
 `name1=value1;name2=value2`
 
-## Impostazioni del servizio LDAP {#ldap-service-settings}
+## LDAP service settings {#ldap-service-settings}
 
-Il servizio LDAP ( `LDAPService`) fornisce le operazioni necessarie per eseguire query sulle directory LDAP. Le directory LDAP vengono in genere utilizzate per memorizzare informazioni sulle persone, i gruppi e i servizi di un’organizzazione.
+The LDAP service ( `LDAPService`) provides operations for querying LDAP directories. LDAP directories are generally used to store information about the people, groups, and services in an organization.
 
 Per il servizio LDAP sono disponibili le seguenti impostazioni.
 
 **Context Factory iniziale:** La classe Java da utilizzare come context factory. Questa classe viene utilizzata per creare una connessione al server LDAP. Il valore predefinito è com.sun.jndi.ldap.LdapCtxFactory, appropriato per la maggior parte dei server LDAP.
 
-**URL fornitore:** L’URL da usare per la connessione al servizio LDAP. Il formato del valore è `ldap://server name:port`
+**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is `ldap://server name:port`
 
-*nome* server è il nome del computer che ospita il server LDAP
+*server name* is the name of the computer that hosts the LDAP server
 
-*porta* è la porta di comunicazione utilizzata dal servizio LDAP. Il valore predefinito è 389, ovvero la porta standard utilizzata per le connessioni LDAP.
+*porta* è la porta di comunicazione utilizzata dal servizio LDAP. The default value is 389, which is the standard port used for LDAP connections.
 
 **Nome utente:** Il nome utente dell’account utente da utilizzare per accedere al server LDAP. L’account utente deve disporre dell’autorizzazione per connettersi al server e leggere le informazioni presenti nella directory LDAP.
 
@@ -410,20 +411,20 @@ A seconda del server LDAP, il nome utente potrebbe essere un semplice nome utent
 
 ## Impostazioni del servizio di configurazione di Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)`consente di specificare le credenziali per l&#39;utente di moduli AEM che dispone di autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, vedere [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)`consente di specificare le credenziali per l&#39;utente dei moduli AEM che dispone delle autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, vedere [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
-Sono disponibili le seguenti impostazioni per il servizio di configurazione di Microsoft SharePoint:
+The following settings are available for the Microsoft SharePoint configuration service:
 
-* Nome utente per un utente con autorizzazioni di rappresentazione
+* Username for a user with impersonation permissions
 * Password per l’utente sopra indicato
 
-**Abilita SSL (HTTPS):**
+**Enable SSL (HTTPS):**
 
-**Tempo di vita:** Durata, in secondi, del tempo in cui il profilo di provisioning è valido e memorizzato nella cache del client. Il valore predefinito è 86400 (24 ore). Quando un&#39;applicazione client si sincronizza con il server e il tempo specificato è trascorso, l&#39;applicazione client richiede un nuovo profilo di provisioning dal server.
+**Time to Live:** Length of time, in seconds, that this provisioning profile is valid and cached on the client. Il valore predefinito è 86400 (24 ore). When a client application syncs with the server and the specified amount of time has passed, the client application requests a new provisioning profile from the server.
 
-**Cifratura:** Specifica se crittografare i dati memorizzati sul dispositivo mobile.
+**Encryption:** Specifies whether to encrypt data stored on the mobile device.
 
-**Applicazione Forms:** Abilita la funzione Moduli nelle applicazioni client per dispositivi mobili. Quando questa opzione è selezionata, gli utenti possono aprire i moduli e avviare processi dai propri dispositivi mobili.
+**Applicazione Forms:** Abilita la funzione Forms nelle applicazioni client per dispositivi mobili. Quando questa opzione è selezionata, gli utenti possono aprire i moduli e avviare processi dai propri dispositivi mobili.
 
 **Applicazione attività:** Abilita la funzione Attività nelle applicazioni client per dispositivi mobili. Quando questa opzione è selezionata, gli utenti possono accedere agli elenchi delle attività e completare le attività dai propri dispositivi mobili.
 
@@ -439,11 +440,11 @@ Sono disponibili le seguenti impostazioni per il servizio di configurazione di M
 
 **Apple iOS:** Consente a iPhone e iPad di connettersi al server.
 
-**AIR:** Consente ai dispositivi che eseguono app basate su Adobe AIR® di connettersi al server.
+**AIR:** Consente ai dispositivi che eseguono app basate su  Adobe AIR® di connettersi al server.
 
 **BlackBerry:** Consente ai dispositivi BlackBerry di connettersi al server.
 
-**Android Microsoft Exchange ActiveSync richiesto:** Specifica se Microsoft Exchange ActiveSync Policy Manager (EAS) deve essere installato e attivo sui dispositivi Android. Quando questa opzione è selezionata, EAS deve essere applicato al dispositivo Android. Se questa opzione non è selezionata, non viene eseguito alcun controllo, anche se altri requisiti sono ancora applicati.
+**Android Microsoft Exchange ActiveSync richiesto:** Specifica se Microsoft Exchange ActiveSync Policy Manager (EA) deve essere installato e attivo sui dispositivi Android. Quando questa opzione è selezionata, EA deve essere applicata al dispositivo Android. Se questa opzione non è selezionata, non viene eseguito alcun controllo, anche se altri requisiti sono ancora applicati.
 
 **Lunghezza PIN minima Android:** I dispositivi Android devono disporre di un&#39;impostazione globale che ne garantisca almeno la lunghezza. Non è sufficiente avere un PIN della lunghezza specificata. La lunghezza del PIN deve essere applicata dal sistema in modo che gli utenti non possano rimuoverlo o accorciarlo in un secondo momento. Il valore predefinito è 4.
 
@@ -453,10 +454,10 @@ Sono disponibili le seguenti impostazioni per il servizio di configurazione di M
 
 ## Impostazioni del servizio di output {#output-service-settings}
 
-Il servizio Output `(OutputService)`consente di unire i dati del modulo XML a una struttura del modulo creata in AEM Forms Designer per creare un flusso di output del documento in uno dei seguenti formati:
+Il servizio Output `(OutputService)`consente di unire i dati del modulo XML a una struttura del modulo creata in AEM di Designer per creare un flusso di output del documento in uno dei seguenti formati:
 
 * Flusso di output di un documento PDF o PDF/A.
-* Un flusso di output Adobe PostScript.
+* Un flusso di output Adobe PostScript .
 * Flusso di output PCL (Printer Control Language).
 * Flusso di output ZPL (Zebra Programming Language).
 
@@ -478,17 +479,17 @@ Quando si elaborano file di dati di grandi dimensioni o si lavora su un server o
 
 Le seguenti impostazioni sono disponibili per il servizio di configurazione PDFG ( `PDFGConfigService`).
 
-**Directory opzioni processo utente:** Percorso della cartella del file system in cui il servizio c scrive i file delle opzioni di processo accessibili ad Acrobat Pro Extended. Il valore predefinito è [user.home]/Application Data/Adobe/Adobe PDF/Settings.
+**Directory opzioni processo utente:** Il percorso della cartella del file system in cui il servizio c scrive i file delle opzioni di processo accessibili a  Acrobat Pro Extended. Il valore predefinito è [user.home]/Application Data/ Adobe/ Adobe PDF/Settings.
 
-**Directory di avvio di PS:** Percorso della cartella del file system in cui vengono salvati i file di avvio richiesti da Adobe Acrobat Distiller. Il valore predefinito è [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
+**Directory di avvio di PS:** Percorso della cartella del file system in cui vengono salvati i file di avvio richiesti da  Adobe Acrobat Distiller. Il valore predefinito è [user.home]/Application Data/ Adobe/ Adobe PDF/Distiller/Startup.
 
-**File di avvio PS:** Nome del file di avvio richiesto da Adobe Acrobat Distiller. Il valore predefinito è example.ps.
+**File di avvio PS:** Nome del file di avvio richiesto da  Adobe Acrobat Distiller. Il valore predefinito è example.ps.
 
 **Timeout conversione server:** Il timeout massimo di conversione del processo (in secondi) per il servizio Genera PDF e il servizio Distiller. Questa impostazione limita il timeout di conversione massimo che è possibile specificare nel file config.xml e nelle pagine della console di amministrazione per PDF Generator. Il valore predefinito è 270.
 
 **Timeout globale server:** Durante le conversioni PDF, un server moduli tiene conto del limite di timeout. Configurate il valore di timeout per risolvere il problema.
 
-**Prefisso opzioni processo:** Prefisso utilizzato dal servizio Genera PDF per anteporre una stringa breve ai file delle opzioni di processo creati temporaneamente per l’uso da parte di Acrobat Distiller. Il valore predefinito è pdfg.
+**Prefisso opzioni processo:** Prefisso utilizzato dal servizio Genera PDF per anteporre una stringa breve ai file delle opzioni di processo creati temporaneamente per  Acrobat Distiller. Il valore predefinito è pdfg.
 
 **App non Unicode:** Un elenco separato da virgole di nomi di applicazione noti per non poter utilizzare Unicode. Questo elenco è precompilato con i nomi di diverse applicazioni, il cui supporto è preconfigurato in PDF Generator. Se si sceglie di aggiungere il supporto per le conversioni PDF tramite altre applicazioni di terze parti che non supportano Unicode, è necessario aggiungerlo a questo elenco. Il valore predefinito è Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
@@ -508,7 +509,7 @@ Il valore predefinito dei secondi di pulizia PDFG è `43200` (12 ore). Il valore
 
 ## impostazioni del servizio Data Services del flusso di lavoro moduli {#forms-workflow-data-services-service-settings}
 
-I seguenti servizi estendono i servizi Data Services ed espongono i assemblatori utilizzati da Workspace per comunicare con il server. Non modificate le opzioni di configurazione per questi servizi, a meno che il supporto Adobe non vi fornisca istruzioni in tal senso. Tali servizi non sono destinati all&#39;accesso diretto:
+I seguenti servizi estendono i servizi Data Services ed espongono i assemblatori utilizzati da Workspace per comunicare con il server. Non modificate le opzioni di configurazione per questi servizi, a meno che non vi sia stato richiesto di farlo dal supporto  Adobe. Tali servizi non sono destinati all&#39;accesso diretto:
 
 * `ProcessManagementLcdsAttachmentService`
 * `ProcessManagementLcdsPropertyService`
@@ -516,17 +517,17 @@ I seguenti servizi estendono i servizi Data Services ed espongono i assemblatori
 
 ## Impostazioni del servizio remoto {#remoting-service-settings}
 
-La maggior parte dei servizi è configurata in modo da potervi accedere tramite (obsoleto per i moduli AEM) AEM Forms Remoting. Per informazioni su (obsoleto per i moduli AEM) Moduli AEM Remoting, consultate [Programmazione con i moduli](https://adobe.com/go/learn_aemforms_programming_63)AEM.
+La maggior parte dei servizi sono configurati in modo da potervi accedere tramite (obsoleto per AEM moduli) AEM moduli Remoting. Per informazioni su (obsoleto per AEM moduli) AEM moduli Remoting, vedere [Programmazione con AEM moduli](https://adobe.com/go/learn_aemforms_programming_63).
 
 Le seguenti impostazioni sono disponibili per il servizio Remoting.
 
 **Metodo di autenticazione client Flex:** Determina il tipo di risposta che il server invia al client quando il servizio invocato è abilitato per la protezione, l&#39;operazione richiamata non supporta chiamate anonime e il client trasmette credenziali nulle o non valide. Scegliete tra Personalizzato o Base. Il valore predefinito è Base.
 
-**Consenti Serializzazione Di Classi Non Serializzabili:** La maggior parte degli endpoint dei moduli AEM consente l&#39;utilizzo di sole classi serializzabili per la chiamata. Nelle versioni precedenti, l&#39;endpoint remoto consentiva l&#39;utilizzo di classi non serializzabili per la chiamata da client basati su Flex. Per evitare una vulnerabilità di sicurezza descritta in APS11-15, questa è stata modificata. Se si desidera continuare a utilizzare classi non serializzabili con l&#39;endpoint Flex Remoting, selezionare questa casella di controllo.
+**Consenti Serializzazione Di Classi Non Serializzabili:** La maggior parte AEM endpoint dei moduli consente l&#39;utilizzo di classi serializzabili solo per la chiamata. Nelle versioni precedenti, l&#39;endpoint remoto consentiva l&#39;utilizzo di classi non serializzabili per la chiamata dai client basati su Flex. Per evitare una vulnerabilità di sicurezza descritta in APS11-15, questa è stata modificata. Se si desidera continuare a utilizzare classi non serializzabili con l&#39;endpoint di Flex Remoting, selezionare questa casella di controllo.
 
 ## Impostazioni del servizio Repository {#repository-service-settings}
 
-Il servizio Repository ( `RepositoryService`) fornisce servizi di archiviazione e gestione delle risorse ai moduli AEM. Quando gli sviluppatori creano un&#39;applicazione, possono distribuire le risorse nella directory archivio anziché in un file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, inclusi moduli XML, moduli PDF (inclusi moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di prova.
+Il servizio Repository ( `RepositoryService`) fornisce servizi di archiviazione e gestione delle risorse per AEM moduli. Quando gli sviluppatori creano un&#39;applicazione, possono distribuire le risorse nella directory archivio anziché in un file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, inclusi moduli XML, PDF forms (inclusi  moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di prova.
 
 È possibile utilizzare il repository predefinito incluso nei moduli AEM oppure utilizzare un repository di terze parti (EMC Documentum Content Server, IBM FileNet Content Manager o IBM Content Manager).
 
@@ -538,19 +539,19 @@ La seguente impostazione è disponibile per il servizio Repository.
 
 ## Impostazioni del servizio Firma {#signature-service-settings}
 
-Il servizio Firma ( `SignatureService`) consente alla tua organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che i documenti non vengano alterati. La modifica di un documento ne interrompe la firma. Poiché le funzioni di sicurezza sono applicate al documento stesso, il documento rimane protetto e controllato per l&#39;intero ciclo di vita; oltre il firewall, quando viene scaricato offline e quando viene inviato nuovamente all’organizzazione.
+Il servizio Firma ( `SignatureService`) consente alla tua organizzazione di proteggere la sicurezza e la privacy  documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che i documenti non vengano alterati. La modifica di un documento ne interrompe la firma. Poiché le funzioni di sicurezza sono applicate al documento stesso, il documento rimane protetto e controllato per l&#39;intero ciclo di vita; oltre il firewall, quando viene scaricato offline e quando viene inviato nuovamente all’organizzazione.
 
 Per il servizio Signature sono disponibili le seguenti impostazioni.
 
-**Nome Del Servizio SPI HSM Remoto:** Questa opzione è da utilizzare quando l&#39;HSM è installato su un computer remoto. Specificate questa opzione quando i moduli AEM sono installati in un Windows a 64 bit e utilizzate dispositivi HSM per la firma.
+**Nome Del Servizio SPI HSM Remoto:** Questa opzione è da utilizzare quando l&#39;HSM è installato su un computer remoto. Specificare questa opzione quando AEM moduli è installato in un Windows a 64 bit e si utilizzano dispositivi HSM per la firma.
 
-**URL Del Servizio Web HSM Remoto:** Specificate questa opzione quando i moduli AEM sono installati in Windows a 64 bit e utilizzate dispositivi HSM per la firma.
+**URL Del Servizio Web HSM Remoto:** Specificare questa opzione quando AEM moduli è installato in Windows a 64 bit e si utilizzano dispositivi HSM per la firma.
 
 **Certificazione Per Includere Le Modifiche Al Caricamento Del Modulo:** Quando questa opzione è selezionata, lo stato del modulo XFA viene certificato oltre al modello XFA. Tenere presente che l&#39;attivazione di questa opzione potrebbe avere un impatto negativo sulle prestazioni. Il valore predefinito è true.
 
 **Esegui script JavaScript documento:** Specifica se eseguire gli script JavaScript del documento durante le operazioni di firma. Il valore predefinito è false.
 
-**Elaborazione di documenti con compatibilità con Acrobat 9:** Specifica se abilitare la compatibilità con Acrobat 9. Ad esempio, quando questa opzione è selezionata, la certificazione visibile nei PDF dinamici è abilitata. Il valore predefinito è false.
+**Elabora documenti con  compatibilità Acrobat 9:** Specifica se abilitare  compatibilità Acrobat 9. Ad esempio, quando questa opzione è selezionata, la certificazione visibile nei PDF dinamici è abilitata. Il valore predefinito è false.
 
 **Incorpora informazioni di revoca durante la firma:** Specifica se le informazioni sulla revoca vengono incorporate durante la firma del documento PDF. Il valore predefinito è false.
 
@@ -560,9 +561,9 @@ Per il servizio Signature sono disponibili le seguenti impostazioni.
 
 **Ordine controllo revoca:** Specifica l&#39;ordine del controllo di revoca quando il controllo è possibile tramite i meccanismi Elenco revoca certificati (CRL) e Protocollo sullo stato del certificato online (OCSP). Il valore predefinito è OCSPFirst.
 
-**Dimensione Massima Delle Informazioni Di Archiviazione Della Revoca:** La dimensione massima delle informazioni di archiviazione della revoca in kilobyte. I moduli AEM tentano di archiviare il maggior numero possibile di informazioni sulla revoca senza superare il limite. Il valore predefinito è 10 KB.
+**Dimensione Massima Delle Informazioni Di Archiviazione Della Revoca:** La dimensione massima delle informazioni di archiviazione della revoca in kilobyte. AEM moduli tenta di archiviare il maggior numero possibile di informazioni sulla revoca senza superare il limite. Il valore predefinito è 10 KB.
 
-**Firme di supporto create dalle build preRelease dei prodotti Adobe:** Quando questa opzione è selezionata, la firma creata con la versione precedente al rilascio dei prodotti Adobe verrà convalidata correttamente. Il valore predefinito è false.
+**Firme di supporto create dalle build preRelease dei prodotti Adobe:** Quando questa opzione è selezionata, la firma creata con la versione precedente al rilascio dei prodotti  Adobe verrà convalidata correttamente. Il valore predefinito è false.
 
 **Opzione Tempo di verifica:** Specifica l&#39;ora di verifica del certificato di un firmatario. Il valore predefinito è Proteggi ora corrente.
 
@@ -570,7 +571,7 @@ Per il servizio Signature sono disponibili le seguenti impostazioni.
 
 **Utilizzare le informazioni di convalida memorizzate nel documento per la convalida delle firme:** Quando questa opzione è selezionata, per convalidare le firme vengono utilizzate le informazioni di convalida (comprese le informazioni di revoca e marca temporale) incorporate nel documento. Il valore predefinito è true.
 
-**Numero massimo di sessioni di verifica nidificate consentite:** Il numero massimo di sessioni di verifica nidificate consentite. I moduli AEM utilizzano questo valore per impedire un ciclo infinito durante la verifica dei certificati di firma OCSP o CRL quando il certificato OCSP o CRL non è impostato correttamente. Il valore predefinito è 10.
+**Numero massimo di sessioni di verifica nidificate consentite:** Il numero massimo di sessioni di verifica nidificate consentite. AEM moduli utilizza questo valore per evitare un ciclo infinito durante la verifica dei certificati di firma OCSP o CRL quando il certificato OCSP o CRL non è impostato correttamente. Il valore predefinito è 10.
 
 **Inclinazione massima dell&#39;orologio per la verifica:** Il tempo massimo, in minuti, per la firma dopo l&#39;ora di convalida. Se l&#39;inclinazione dell&#39;orologio è maggiore di questo valore, la firma non sarà valida. Il valore predefinito è 65 minuti.
 
@@ -628,7 +629,7 @@ Per il servizio Signature sono disponibili le seguenti impostazioni.
 
 **Dimensioni risposta TSP:** Dimensione stimata, in byte, della risposta TSP. Questo valore deve rappresentare la dimensione massima della risposta di marca temporale che il provider di marca temporale configurato potrebbe restituire. Non cambiate questo a meno che non siate assolutamente sicuri. Il valore minimo è 60B e il valore massimo è 10240B. Il valore predefinito è 4096B.
 
-**Ignora estensione** server TimeStamp: Selezionate l’opzione **Ignora estensione** server TimeStamp per impedire al server AEM Forms di contattare il server di marca temporale specificato. La selezione di questa opzione consente di evitare errori di processo che si verificano a causa del timeout della connessione tra AEM Forms e i server di marca temporale.
+**Ignora estensione** server TimeStamp: Selezionate l’opzione **Ignora estensione** server TimeStamp per arrestare  server AEM Forms dal contattare il server di marca temporale specificato. La selezione di questa opzione consente di evitare errori di processo che si verificano a causa del timeout della connessione tra  server AEM Forms e server di marca temporale.
 
 ### Opzioni elenco di revoca certificati {#certificate-revocation-list-options}
 
@@ -743,7 +744,7 @@ Se il percorso non è assoluto ma relativo, la cartella viene creata all’inter
 
 **Mantieni in caso di errore:** Se true, i file originali vengono conservati nella cartella degli errori in caso di errore.
 
-**Limite:** Quando questa opzione è selezionata, limita il numero di processi di cartelle controllati che AEM Forms elabora in un dato momento. Il valore Dimensione batch determina il numero massimo di processi (vedere Informazioni sulla limitazione).
+**Limite:** Quando questa opzione è selezionata, limita il numero di processi di cartelle controllati che AEM i moduli vengono elaborati in un dato momento. Il valore Dimensione batch determina il numero massimo di processi (vedere Informazioni sulla limitazione).
 
 ## Impostazioni servizio Web {#web-service-service-settings}
 
