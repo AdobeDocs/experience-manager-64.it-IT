@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ In questo documento viene descritto ciò che è necessario sapere per pianificar
 
 Prima di iniziare con l’analisi e la definizione effettive dei test, controllate le informazioni seguenti:
 
-**Architettura** AEM - Consulta Concetti di base per scoprire l’architettura e i principi di base di AEM.
+**AEM Architettura** - Vedere Concetti di base per presentarvi l&#39;architettura e i principi di base di AEM.
 
-**Documentazione** - Per ulteriori informazioni, vedere le sezioni della documentazione o gli articoli How To.
+**Documentazione** - Per ulteriori informazioni, vedere le sezioni della documentazione o gli articoli Come fare per.
 
 **Principi di base dei test** - È necessario essere consapevoli dei principi di base dei test software e della garanzia della qualità. Preferibilmente dovreste avere esperienza nel testing di progetti.
 
@@ -37,7 +40,7 @@ Ci sono molti siti web, libri e corsi che si occupano di tali principi e quindi 
 
 **Ipotesi da evitare** - Il più grande presupposto (fatto regolarmente) è che il vostro sito web avrà bisogno di servire milioni di richieste ogni giorno. In alcune circostanze ciò può essere vero, ma non si può presupporre.
 
-Anche se i numeri futuri non possono essere previsti con una precisione del 100%, osservare il sito esistente e il traffico registrato darà una buona indicazione. È quindi possibile fare delle stime in base al fattore in base al quale si prevede / si spera che il traffico aumenterà.
+Anche se i numeri futuri non possono essere previsti con una precisione del 100%, osservare il sito esistente e il traffico sperimentato darà una buona indicazione. È quindi possibile fare delle stime in base al fattore in base al quale si prevede / si spera che il traffico aumenterà.
 
 **Impegno per la Qualità** - È di fondamentale importanza che chiunque effettui test rimanga neutrale e riferisca semplicemente i risultati dei test effettuati.
 
@@ -69,7 +72,7 @@ Le prove in scatola nera sono prove funzionali di un&#39;unità/componente/modul
 
 La funzionalità viene verificata a livello di scatola nera.
 
-**Test** delle prestazioni - I test delle prestazioni sono fondamentali quando si esegue il test di AEM.
+**Test** delle prestazioni - I test delle prestazioni sono cruciali quando si esegue il test AEM.
 
 Sono utilizzati per illustrare le prestazioni in condizioni diverse:
 
@@ -87,7 +90,7 @@ Sono utilizzati per illustrare le prestazioni in condizioni diverse:
 
    Queste circostanze vengono a volte visualizzate quando i biglietti per eventi specifici sono disponibili, o un sito web molto atteso viene pubblicato per la prima volta.
 
-I risultati vengono quindi utilizzati per ottimizzare l’applicazione.
+I risultati vengono quindi utilizzati per sintonizzare l’applicazione.
 
 **Test** di stress - Vengono eseguiti test di stress per confermare il comportamento di un componente o di un’applicazione in condizioni estreme. In particolare, questi test vengono utilizzati per mostrare il deterioramento del comportamento, quando l&#39;elemento avrà esito negativo e come.
 
