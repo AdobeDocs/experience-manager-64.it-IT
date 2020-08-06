@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +42,7 @@ Gestione corrispondenza espone le API per recuperare le istanze di lettere trami
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L&#39;API seguente trova le istanze della lettera in base all&#39;oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce l&#39;elenco degli oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) , che possono essere utilizzati per estrarre informazioni aggiuntive sull&#39;istanza letter
+L&#39;API seguente trova le istanze della lettera in base all&#39;oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce l&#39;elenco degli oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) , che possono essere utilizzati per l&#39;estrazione di informazioni aggiuntive sull&#39;istanza letter
 
 **Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -75,7 +78,7 @@ query.addStatement(statementForInstanceType);
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-#### Esempio 2: tutte le istanze di lettere inviate da un utente e da un tipo di istanza di lettera sono DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
+#### Esempio 2: recupera tutte le istanze di lettere inviate da un utente e da un tipo di istanza di lettera è DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
 Il codice seguente contiene più istruzioni nella stessa query per filtrare i risultati in base a criteri diversi, come l&#39;istanza di lettera inviata (attributo inviato da) da un utente e il tipo di letterInstanceType è DRAFT.
 
@@ -104,9 +107,9 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 ### Utilizzo di getLetterInstance {#using-nbsp-getletterinstance}
 
-Recupera l&#39;istanza della lettera identificata dall&#39;ID dell&#39;istanza della lettera specificato. Restituisce &quot;null se l&#39;ID istanza non corrisponde.
+Recupera l&#39;istanza della lettera identificata dall&#39;ID dell&#39;istanza della lettera specificato. Restituisce &quot;null se l&#39;ID dell&#39;istanza non corrisponde.
 
-**** Sintassi: `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
+**Sintassi:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
 ```java
 @Reference
@@ -136,10 +139,10 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L&#39;istanza Lettera può essere di tipo Inviato o Bozza. L&#39;apertura di entrambi i tipi di istanza della lettera mostra comportamenti diversi:
 
-* Nel caso di un&#39;istanza di lettera inviata, viene aperto un PDF che rappresenta l&#39;istanza della lettera. L&#39;istanza Letter inviata persistentemente sul server contiene anche dataXML e XDP elaborati, che possono essere utilizzati per eseguire e personalizzare ulteriormente un caso, ad esempio per creare un PDF/A.
+* Nel caso di un&#39;istanza di lettera inviata, viene aperto un PDF che rappresenta l&#39;istanza della lettera. L&#39;istanza Lettera inviata persistentemente sul server contiene anche dataXML e XDP elaborati, che possono essere utilizzati per eseguire e personalizzare ulteriormente un caso, ad esempio per creare un PDF/A.
 * Nel caso di un&#39;istanza di lettera Bozza, l&#39;interfaccia utente per la creazione della corrispondenza viene ricaricata allo stato precedente esatto, così come era nel momento in cui è stata creata la bozza
 
-### Apertura istanza lettera bozza {#opening-draft-letter-instance-nbsp}
+### Apertura istanza lettera bozza  {#opening-draft-letter-instance-nbsp}
 
 L’interfaccia utente CCR supporta il parametro cmLetterInstanceId, che può essere utilizzato per il ricaricamento della lettera.
 
