@@ -1,14 +1,17 @@
 ---
 title: Authoring della guida contestuale per i campi del modulo
 seo-title: Authoring della guida contestuale per i campi del modulo
-description: 'AEM Forms consente di aggiungere aiuto contestuale a campi e pannelli di moduli adattivi, come testo o contenuti multimediali avanzati, compresi i video. '
-seo-description: 'AEM Forms consente di aggiungere aiuto contestuale a campi e pannelli di moduli adattivi, come testo o contenuti multimediali avanzati, compresi i video. '
+description: ' AEM Forms consente di aggiungere aiuto contestuale a campi e pannelli di moduli adattivi, come testo o contenuti multimediali avanzati, compresi i video. '
+seo-description: ' AEM Forms consente di aggiungere aiuto contestuale a campi e pannelli di moduli adattivi, come testo o contenuti multimediali avanzati, compresi i video. '
 uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Introduzione {#introduction}
 
-In alcuni casi, gli utenti finali che compilano un modulo non sono sicuri di come compilare i dettagli in un particolare campo del modulo. Per risolvere tali problemi, i moduli adattivi supportano l&#39;aggiunta di testo o di informazioni dettagliate nel contesto a un campo modulo. Consente di migliorare l&#39;esperienza di compilazione del modulo ed evitare ogni ambiguità per gli utenti finali.
+In alcuni casi, gli utenti finali che compilano un modulo non sono sicuri di come compilare i dettagli in un particolare campo del modulo. Per risolvere tali problemi, i moduli adattivi supportano l&#39;aggiunta di testo o di informazioni dettagliate nel contesto a un campo del modulo. Consente di migliorare l&#39;esperienza di compilazione del modulo ed evita ogni ambiguità per gli utenti finali.
 
-Questo articolo illustra come gli autori dei moduli possono aggiungere la guida contestuale durante la creazione di moduli adattivi.
+In questo articolo viene illustrato in che modo gli autori dei moduli possono aggiungere la guida contestuale durante la creazione di Forms adattivo.
 
 ## Aggiungi aiuto contestuale {#add-in-context-help}
 
@@ -58,7 +61,7 @@ Se si aggiunge una descrizione lunga viene visualizzata una **?** accanto al cam
 
 ### Guida a livello di pannello {#panel-level-help}
 
-Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda Contenuto della Guida della finestra di dialogo di modifica del pannello.
+Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda del contenuto della Guida della finestra di dialogo di modifica del pannello.
 
 ![Aggiunta della guida contestuale a un pannello del modulo](assets/panel-level-help.png)
 
