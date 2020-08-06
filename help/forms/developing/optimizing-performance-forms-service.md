@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 0%
 
 ---
 
@@ -24,14 +27,14 @@ Durante il rendering di un modulo, è possibile impostare opzioni di esecuzione 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
 Per ottimizzare le prestazioni del servizio Forms durante il rendering di un modulo, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API client Forms.
+1. Creare un oggetto Forms Client API.
 1. Impostare le opzioni di esecuzione delle prestazioni.
 1. Eseguire il rendering del modulo.
 1. Scrivere il flusso di dati del modulo nel browser Web del client.
@@ -40,21 +43,21 @@ Per ottimizzare le prestazioni del servizio Forms durante il rendering di un mod
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
-**Creare un oggetto API client Forms**
+**Creare un oggetto Forms Client API**
 
-Prima di eseguire un&#39;operazione API client del servizio Forms a livello di programmazione, è necessario creare un client del servizio Forms. Se utilizzate l&#39;API Java, create un `FormsServiceClient` oggetto. Se si utilizza l&#39;API del servizio Web Forms, creare un `FormsService` oggetto.
+Prima di eseguire un&#39;operazione API client di Forms Service a livello di programmazione, è necessario creare un client di servizi Forms. Se utilizzate l&#39;API Java, create un `FormsServiceClient` oggetto. Se utilizzate l&#39;API del servizio Web di Forms, create un `FormsService` oggetto.
 
 **Impostazione delle opzioni di esecuzione delle prestazioni**
 
-Per migliorare le prestazioni del servizio Forms è possibile impostare le seguenti opzioni di esecuzione delle prestazioni:
+Potete impostare le seguenti opzioni di esecuzione delle prestazioni per migliorare le prestazioni del servizio Forms:
 
-* **Memorizzazione nella cache** del modulo: È possibile memorizzare nella cache del server un modulo rappresentato come PDF. Ciascun modulo viene memorizzato nella cache dopo che è stato generato per la prima volta. In un rendering successivo, se il modulo memorizzato nella cache è più recente della marca temporale della struttura del modulo, il modulo viene recuperato dalla cache. La memorizzazione nella cache dei moduli consente di migliorare le prestazioni del servizio Forms, in quanto non è necessario recuperare la struttura del modulo da un archivio.
+* **Memorizzazione nella cache** del modulo: È possibile memorizzare nella cache del server un modulo rappresentato come PDF. Ciascun modulo viene memorizzato nella cache dopo che è stato generato per la prima volta. In un rendering successivo, se il modulo memorizzato nella cache è più recente della marca temporale della struttura del modulo, il modulo viene recuperato dalla cache. Il caching dei moduli consente di migliorare le prestazioni del servizio Forms, in quanto non è necessario recuperare la struttura del modulo da un archivio.
 * Il rendering delle guide modulo (obsoleto) potrebbe richiedere più tempo rispetto ad altri tipi di trasformazione. È consigliabile memorizzare nella cache le guide dei moduli (non approvato) per migliorare le prestazioni.
-* **Opzione** Standalone: Se non è necessario che il servizio Forms esegua i calcoli sul lato server, è possibile impostare l&#39;opzione Standalone su `true`, che consente di eseguire il rendering dei moduli senza informazioni sullo stato. Le informazioni sullo stato sono necessarie se si desidera eseguire il rendering di un modulo interattivo per un utente finale che immette quindi informazioni nel modulo e lo invia nuovamente al servizio Forms. Il servizio Forms esegue quindi un&#39;operazione di calcolo ed esegue il rendering del modulo per l&#39;utente, con i risultati visualizzati nel modulo. Se un modulo senza informazioni sullo stato viene inviato nuovamente al servizio Forms, sono disponibili solo i dati XML e i calcoli sul lato server non vengono eseguiti.
+* **Opzione** Standalone: Se non è necessario che il servizio Forms esegua i calcoli sul lato server, è possibile impostare l&#39;opzione Standalone su `true`, che consente di eseguire il rendering dei moduli senza informazioni sullo stato. Le informazioni sullo stato sono necessarie se si desidera eseguire il rendering di un modulo interattivo per un utente finale che immette quindi informazioni nel modulo e invia nuovamente il modulo al servizio Forms. Il servizio Forms esegue quindi un&#39;operazione di calcolo ed esegue il rendering del modulo per restituirlo all&#39;utente, con i risultati visualizzati nel modulo. Se un modulo senza informazioni sullo stato viene inviato nuovamente al servizio Forms, sono disponibili solo i dati XML e i calcoli sul lato server non vengono eseguiti.
 * **PDF** lineare: Un file PDF linearizzato è organizzato per consentire un accesso incrementale efficiente in un ambiente di rete. Il file PDF è valido sotto tutti gli aspetti ed è compatibile con tutti i visualizzatori esistenti e con altre applicazioni PDF. In altre parole, un PDF linearizzato può essere visualizzato mentre è ancora in fase di download.
 * Questa opzione non migliora le prestazioni durante il rendering di un modulo PDF sul client.
 * **Opzione** GuideRSL: Abilita la generazione della guida del modulo (obsoleta) tramite librerie condivise in fase di esecuzione. Ciò significa che la prima richiesta scaricherà un file SWF più piccolo, più librerie condivise più grandi memorizzate nella cache del browser. Per ulteriori informazioni, consultate RSL nella documentazione Flex.
-* È inoltre possibile migliorare le prestazioni del servizio Forms eseguendo il rendering di un modulo sul client. (Vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms-client.md).)
+* È inoltre possibile migliorare le prestazioni del servizio Forms eseguendo il rendering di un modulo sul client. Consultate [Rendering di Forms presso il client](/help/forms/developing/rendering-forms-client.md).
 
 **Eseguire il rendering del modulo**
 
@@ -66,17 +69,17 @@ Dopo il rendering di un modulo da parte del servizio Forms, viene restituito un 
 
 **Consulta anche**
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Ottimizzate le prestazioni mediante l&#39;API Java {#optimize-the-performance-using-the-java-api}
 
@@ -86,7 +89,7 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
 
    Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
    * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
@@ -106,7 +109,8 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione per migliorare le prestazioni.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+
+   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -120,20 +124,20 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
 
 [Avvio rapido (modalità SOAP): Ottimizzazione delle prestazioni mediante l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Ottimizzare le prestazioni mediante l&#39;API del servizio Web {#optimize-the-performance-using-the-web-service-api}
 
-Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39;API di Forms (servizio Web):
+Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39;API Forms (servizio Web):
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    Creare un `FormsService` oggetto e impostare i valori di autenticazione.
 
@@ -157,7 +161,8 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. (Questo argomento memorizza il numero di pagine nel modulo).
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali).
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -169,4 +174,4 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
 
 **Consulta anche**
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
