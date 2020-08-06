@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
 source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Questo documento DDX smonta un documento PDF. È consigliabile avere familiarit�
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -45,7 +48,7 @@ Questo documento DDX smonta un documento PDF. È consigliabile avere familiarit�
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
-Per smontare un documento PDF utilizzando un documento DDX creato dinamicamente, eseguire le operazioni seguenti:
+Per smontare un documento PDF utilizzando un documento DDX creato in modo dinamico, eseguire le operazioni seguenti:
 
 1. Includere i file di progetto.
 1. Creare un client Assembler PDF.
@@ -64,8 +67,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
 **Creare un client Assembler PDF**
 
@@ -85,7 +88,7 @@ Per smontare un documento PDF, fare riferimento a un file PDF che rappresenta il
 
 **Impostazione delle opzioni di esecuzione**
 
-È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per impostare le opzioni di esecuzione, utilizzare un `AssemblerOptionSpec` oggetto.
+È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per impostare le opzioni di esecuzione, è necessario utilizzare un `AssemblerOptionSpec` oggetto.
 
 **Smontare il documento PDF**
 
@@ -101,7 +104,7 @@ Tutti i documenti PDF disassemblati vengono restituiti all&#39;interno di un ogg
 
 [Creare in modo dinamico un documento DDX utilizzando l&#39;API del servizio Web](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -128,7 +131,7 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
    * Creare l&#39;elemento principale del documento DDX richiamando il `org.w3c.dom.Document` metodo dell&#39; `createElement` oggetto. Questo metodo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passate al `createElement` metodo un valore di stringa che rappresenta il nome dell&#39;elemento. Inserite il valore restituito in `Element`. Quindi, impostate un valore per l’elemento secondario chiamandone il `setAttribute` metodo. Infine, aggiungete l’elemento all’elemento header chiamando il metodo dell’elemento header e passate l’oggetto element secondario come argomento. `appendChild` Le seguenti righe di codice mostrano questa logica di applicazione:
       ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
-   * Create l&#39; `PDFsFromBookmarks` elemento chiamando il metodo dell&#39; `Document` oggetto `createElement` . Passate al `createElement` metodo un valore di stringa che rappresenta il nome dell&#39;elemento. Inserite il valore restituito in `Element`. Impostate un valore per l&#39; `PDFsFromBookmarks` elemento chiamandone il `setAttribute` metodo. Aggiungete l&#39; `PDFsFromBookmarks` elemento all&#39; `DDX` elemento chiamando il metodo dell&#39;elemento DDX `appendChild` . Passate l&#39;oggetto `PDFsFromBookmarks` element come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Create l&#39; `PDFsFromBookmarks` elemento chiamando il metodo dell&#39; `Document` oggetto `createElement` . Passate al `createElement` metodo un valore di stringa che rappresenta il nome dell&#39;elemento. Inserite il valore restituito in `Element`. Impostate un valore per l&#39; `PDFsFromBookmarks` elemento chiamandone il `setAttribute` metodo. Aggiungete l&#39; `PDFsFromBookmarks` elemento all&#39; `DDX` elemento chiamando il `appendChild` metodo dell&#39;elemento DDX. Passate l&#39;oggetto `PDFsFromBookmarks` element come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
@@ -170,6 +173,7 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX creato dinamicamente
    * Un `java.util.Map` oggetto che contiene il documento PDF da smontare
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il font predefinito e il livello di registro del processo
+
    Il `invokeDDX` metodo restituisce un `com.adobe.livecycle.assembler.client.AssemblerResult` oggetto che contiene i documenti PDF disassemblati ed eventuali eccezioni.
 
 1. Salvare i documenti PDF smontati.
@@ -177,14 +181,14 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
    Per ottenere i documenti PDF disassemblati, effettuare le seguenti operazioni:
 
    * Richiama il metodo dell’ `AssemblerResult` oggetto `getDocuments` . Questo metodo restituisce un `java.util.Map` oggetto.
-   * Iterare l&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante.
+   * Eseguire un&#39;iterazione sull&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per estrarre il documento PDF.
 
 **Consulta anche**
 
 [Avvio rapido (modalità SOAP): Creazione dinamica di un documento DDX utilizzando l&#39;API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -198,17 +202,17 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client Assembler PDF.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -249,15 +253,16 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
 1. Impostare le opzioni di esecuzione.
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati appartenente all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
+   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati che appartiene all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
 
 1. Smontare il documento PDF.
 
    Richiama il metodo dell’ `AssemblerServiceClient` oggetto `invokeDDX` e passa i seguenti valori:
 
    * Un `BLOB` oggetto che rappresenta il documento DDX creato dinamicamente
-   * Matrice `mapItem` contenente il documento PDF di input
+   * L&#39; `mapItem` array che contiene il documento PDF di input
    * Un oggetto `AssemblerOptionSpec` che specifica le opzioni di esecuzione
+
    Il `invokeDDX` metodo restituisce un `AssemblerResult` oggetto che contiene i risultati del processo ed eventuali eccezioni.
 
 1. Salvare i documenti PDF smontati.
@@ -270,6 +275,6 @@ Creare in modo dinamico un documento DDX e smontare un documento PDF utilizzando
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
