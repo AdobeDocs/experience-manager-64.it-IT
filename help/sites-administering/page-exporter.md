@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
@@ -31,10 +34,10 @@ Per esportare una pagina:
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
 1. Aprite la finestra di dialogo delle proprietà della pagina, selezionate la scheda **Avanzate** ed espandete il set di campi **Esporta** .
 
-1. Fate clic sull&#39;icona Lente di ingrandimento e selezionate un modello di configurazione. Selezionate il modello **geometrixx** , in quanto è quello predefinito per il sito Geometrixx. Fai clic su **OK**. 
+1. Fate clic sull&#39;icona Lente di ingrandimento e selezionate un modello di configurazione. Selezionate il modello **geometrixx** , in quanto è quello predefinito per il sito di Geometrixx. Fai clic su **OK**.
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo delle proprietà della pagina.
-1. Richiedete la pagina sostituendo `html` con `export.zip` l’URL.
+1. Richiedete la pagina sostituendola `html` con `export.zip` l’URL.
 
 1. Scaricate il `<page-name>.export.zip` file nel file system.
 
@@ -56,22 +59,22 @@ AEM incorpora alcuni modelli, tra cui:
    * È il modello di fallback quando non viene trovato alcun modello di configurazione nella directory archivio.
    * Può fungere da base per un nuovo modello di configurazione.
 
-* Uno dedicato al sito **Geometrixx** , all’indirizzo `/etc/contentsync/templates/geometrixx`. Questo modello può essere utilizzato come esempio per crearne uno nuovo.
+* Uno dedicato al sito **Geometrixx** , all&#39;indirizzo `/etc/contentsync/templates/geometrixx`. Questo modello può essere utilizzato come esempio per crearne uno nuovo.
 
-Per creare un modello di configurazione di esportazione pagina:
+Per creare un modello di configurazione per l’esportazione di pagine:
 
-1. In **CRXDE Lite**, create un nodo sotto `/etc/contentsync/templates`:
+1. In **CRXDE Lite**, crea un nodo sotto `/etc/contentsync/templates`:
 
-   * Nome:ad esempio `mysite`. Il nome viene visualizzato nella finestra di dialogo delle proprietà della pagina quando si sceglie il modello di esportazione della pagina.
+   * Nome: ad esempio `mysite`. Il nome viene visualizzato nella finestra di dialogo delle proprietà della pagina quando si sceglie il modello di esportazione della pagina.
    * Tipo: `nt:unstructured`
 
 1. Sotto il nodo del modello, chiamato qui `mysite`, create una struttura di nodi utilizzando i nodi di configurazione descritti di seguito.
 
 ### Nodi di configurazione per l&#39;esportazione delle pagine {#page-exporter-configuration-nodes}
 
-Il modello di configurazione è costituito da una struttura di nodi. Ogni nodo ha una `type` proprietà che definisce un&#39;azione specifica nel processo di creazione del file zip. Per ulteriori dettagli sulla proprietà type, consultate la sezione Panoramica dei tipi di configurazione nella pagina Framework Content Sync.
+Il modello di configurazione è costituito da una struttura di nodi. Ogni nodo ha una `type` proprietà che definisce un&#39;azione specifica nel processo di creazione del file zip. Per ulteriori dettagli sulla proprietà type, consultate la sezione Panoramica dei tipi di configurazione nella pagina Framework di sincronizzazione dei contenuti.
 
-Per creare un modello di configurazione di esportazione è possibile utilizzare i nodi seguenti:
+Per creare un modello di configurazione per l’esportazione è possibile utilizzare i nodi seguenti:
 
 **nodo** pagina Il nodo pagina viene utilizzato per copiare il codice HTML della pagina nel file zip. Ha le seguenti caratteristiche:
 
@@ -124,13 +127,13 @@ Ad esempio, il seguente nodo di configurazione copia i file clientlibs .js geome
 }
 ```
 
-Il modello di configurazione per l’esportazione delle pagine **Geometrixx** mostra come è possibile configurare un’esportazione di pagine. Per visualizzare la struttura dei nodi del modello nel browser come formato json, richiedi il seguente URL:
+Il modello di configurazione per l’esportazione delle pagine di **Geometrixx** mostra come è possibile configurare l’esportazione delle pagine. Per visualizzare la struttura dei nodi del modello nel browser come formato json, richiedi il seguente URL:
 
 `http://localhost:4502/etc/contentsync/templates/geometrixx.-1.json`
 
 **Implementazione di una configurazione personalizzata**
 
-Come avrete notato nella struttura del nodo, il modello di configurazione per l’esportazione delle pagine **Geometrixx** include un `logo` nodo con una `type` proprietà impostata su `image`. Si tratta di un tipo di configurazione speciale creato per copiare il logo immagine nel file zip. Per soddisfare alcuni requisiti specifici, potrebbe essere necessario implementare una `type` proprietà personalizzata: a tal fine, fate riferimento alla sezione Implementazione di un gestore di aggiornamenti personalizzato nella pagina Content Sync (Sincronizzazione contenuti).
+Come avrete notato nella struttura del nodo, il modello di configurazione per l’esportazione delle pagine di **Geometrixx** ha un `logo` nodo con una `type` proprietà impostata su `image`. Si tratta di un tipo di configurazione speciale creato per copiare il logo immagine nel file zip. Per soddisfare alcuni requisiti specifici, potrebbe essere necessario implementare una `type` proprietà personalizzata: a tal fine, fate riferimento alla sezione Implementazione di un gestore di aggiornamenti personalizzato nella pagina Content Sync (Sincronizzazione contenuti).
 
 ## Esportazione di una pagina a livello di programmazione {#programmatically-exporting-a-page}
 
