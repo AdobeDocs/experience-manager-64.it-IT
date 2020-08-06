@@ -32,7 +32,7 @@ Questa pagina consente di estendere le funzionalità di Multi Site Manager:
 >
 >Questa pagina deve essere letta insieme a:
 >* [Riutilizzo del contenuto: Multi Site Manager](/help/sites-administering/msm.md).
->* Ristrutturazione del repository dei siti in AEM 6.4:
+>* Ristrutturazione dell&#39;archivio siti nella AEM 6.4:
    >   * [Configurazioni Blueprint Manager multisito](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    >   * [Configurazioni di rollout di Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
@@ -126,7 +126,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Accesso ai nodi Target, ai nodi di origine e alla LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Accesso ai nodi di destinazione, ai nodi di origine e alla LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 I seguenti oggetti sono forniti come parametri del `execute` metodo dell&#39; `LiveAction` oggetto:
 
@@ -168,7 +168,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 Per creare una nuova configurazione di rollout:
 
-1. Aperto CRXDE Lite; ad esempio:
+1. CRXDE Lite aperto; ad esempio:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Accedi a :
@@ -219,7 +219,7 @@ Le configurazioni di rollout sono memorizzate sotto il nodo [di configurazione d
 
 Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di sincronizzazione alla configurazione del rollout. L&#39;ordine dei nodi di azione della sincronizzazione determina l&#39;ordine in cui si verificano le azioni.
 
-1. Sempre in CRXDE Lite, selezionate il nodo [Rollout Configuration](#create-the-rollout-configuration) .
+1. Sempre in CRXDE Lite, seleziona il nodo [Rollout Configuration](#create-the-rollout-configuration) .
 
    Ad esempio:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
@@ -230,7 +230,7 @@ Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di s
 Il nome deve corrispondere al nome dell’ **azione** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
-1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che l&#39;ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
+1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che il loro ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
 
 1. Fate clic su **Salva tutto**.
 
@@ -523,7 +523,7 @@ La `LiveActionFactory` classe seguente implementa un `LiveAction` che registra i
    mvn -PautoInstallPackage clean install
    ```
 
-   Il file AEM `error.log` indica che il bundle è stato avviato.
+   Il `error.log` file AEM deve indicare che il bundle è avviato.
 
    Ad esempio, [http://localhost:4502/system/console/status-slinglogs](http://localhost:4502/system/console/status-slinglogs).
 
@@ -549,7 +549,7 @@ Create la configurazione di rollout MSM che utilizza l&#39; `LiveActionFactory` 
 
 Configurate la configurazione di rollout creata nella procedura precedente in modo che utilizzi la `ExampleLiveActionFactory` classe.
 
-1. Aperto CRXDE Lite; ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. CRXDE Lite aperto; ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 1. Crea il nodo seguente sotto `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nome**: `exampleLiveAction`
@@ -626,7 +626,7 @@ L&#39;elenco delle lingue è memorizzato sotto il `/libs/wcm/core/resources/lang
 
 Per modificare le lingue:
 
-1. Aprite CRXDE Lite nel browser Web; ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Aprite il CRXDE Lite nel browser Web; ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Selezionate la `/apps` cartella e fate clic su **Crea**, quindi su **Crea cartella.**
 
    Denominate la nuova cartella `wcm`.
