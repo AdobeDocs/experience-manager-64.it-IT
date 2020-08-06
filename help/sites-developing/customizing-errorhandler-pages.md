@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione delle pagine mostrate dal gestore errori{#customizing-pages-shown-by-the-error-handler}
 
-AEM viene fornito con un gestore di errori standard per la gestione degli errori HTTP. ad esempio, mostrando:
+AEM viene fornito con un gestore di errori standard per la gestione degli errori HTTP; ad esempio, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -28,7 +31,7 @@ Gli script forniti dal sistema esistono (nella sezione `/libs/sling/servlet/erro
 
 >[!NOTE]
 >
->AEM è basato su Apache Sling, pertanto consultate [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) per informazioni dettagliate sulla gestione degli errori Sling.
+>AEM è basato su Apache Sling, quindi vedete [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) per informazioni dettagliate sulla gestione degli errori Sling.
 
 >[!NOTE]
 >
@@ -46,8 +49,9 @@ Gli script forniti dal sistema esistono (nella sezione `/libs/sling/servlet/erro
 
 1. Nell&#39;archivio, copiare gli script predefiniti:
 
-   * from `/libs/sling/servlet/errorhandler/`
+   * da `/libs/sling/servlet/errorhandler/`
    * a `/apps/sling/servlet/errorhandler/`
+
    Poiché il percorso di destinazione non esiste per impostazione predefinita, sarà necessario crearlo al primo tentativo.
 
 1. Accedi a `/apps/sling/servlet/errorhandler`. Potete effettuare le seguenti operazioni:
@@ -69,13 +73,14 @@ Gli errori HTTP 500 sono causati da eccezioni lato server.
 
 * **[500 Errore](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**interno del server Il server ha rilevato una condizione imprevista che non consentiva all&#39;utente di soddisfare la richiesta.
 
-Quando l’elaborazione delle richieste genera un’eccezione, il framework Apache Sling (sul quale è basato AEM):
+Quando l&#39;elaborazione della richiesta genera un&#39;eccezione, il framework Apache Sling (che AEM è basato su):
 
 * registra l&#39;eccezione
 * return:
 
    * il codice di risposta HTTP 500
    * traccia dello stack di eccezioni
+
    nel corpo della risposta.
 
 Personalizzando [le pagine visualizzate dal gestore](#how-to-customize-pages-shown-by-the-error-handler) di errori è possibile creare uno `500.jsp` script. Tuttavia, è utilizzato solo se `HttpServletResponse.sendError(500)` è eseguito esplicitamente; ovvero da un rilevatore di eccezioni.
