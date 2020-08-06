@@ -96,7 +96,7 @@ Potete creare una copia dal vivo di qualsiasi pagina:
 
 * Pagine alle quali viene fatto riferimento in una configurazione [](#creating-a-blueprint-configuration)blueprint.
 * E pagine senza connessione a una configurazione.
-* AEM supporta anche la creazione di una Live Copy nelle pagine di un’altra Live Copy.
+* AEM anche la creazione di una Live Copy all&#39;interno delle pagine di un&#39;altra Live Copy.
 
 L&#39;unica differenza è che la disponibilità del comando **Rollout** sulle pagine di origine/blueprint dipende dal fatto che all&#39;origine venga fatto riferimento da una configurazione blueprint:
 
