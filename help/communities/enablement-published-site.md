@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +33,7 @@ Per iniziare, andate all’URL visualizzato al momento della creazione del sito,
 * URL autore = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL pubblicazione = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Se è stata impostata [la home page](enablement-create-site.md#changethedefaulthomepage)predefinita, è sufficiente accedere a [http://localhost:4503/](http://localhost:4503/) per avviare il sito.
+Se è stata impostata [la home page](enablement-create-site.md#changethedefaulthomepage)predefinita, è sufficiente accedere a [http://localhost:4503/](Http://localhost:4503/) per avviare il sito.
 
 Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebbe già effettuato l’accesso e sarebbe anonimo.
 
@@ -40,7 +43,7 @@ Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebb
 
 ## Visitatore del sito anonimo {#anonymous-site-visitor}
 
-A un visitatore del sito anonimo viene immediatamente presentata la pagina di login per questo sito community di abilitazione privato. Notate che non è disponibile l&#39;opzione di autoregistrazione né di accesso con Facebook o Twitter.
+A un visitatore del sito anonimo viene immediatamente presentata la pagina di login per questo sito della community di abilitazione privata. Notate che non è disponibile l&#39;opzione di autoregistrazione né di accesso con Facebook o Twitter.
 
 Questa home page include quattro voci di menu: `Assignments, Ski Catalog, What's New` e `Discussions`, ma nessuno può essere raggiunto senza effettuare l&#39;accesso.
 
@@ -70,7 +73,7 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. Aggiungete il percorso della pagina di login. Ad esempio, `/content/......./GetStarted`.
+1. Aggiungete il percorso della pagina di login. Esempio, `/content/......./GetStarted`.
 1. Pubblicate la pagina.
 
 ## Membro iscritto {#enrolled-member}
@@ -90,7 +93,7 @@ Al successivo accesso del membro, viene visualizzata la pagina principale, ident
 
 ### Assegnazioni {#assignments}
 
-Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificamente a tale utente.
+Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificatamente a tale utente.
 
 Ogni assegnazione fornisce informazioni di base su
 
@@ -118,7 +121,7 @@ Le interazioni con la risorsa di abilitazione saranno riportate nella sezione Ra
 
 ### Catalogo sciistico {#ski-catalog}
 
-La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo `Tutorial` spazio nomi. Alle due risorse *di lezioni* di sci viene assegnato il `Skiing` tag , in modo che se sono selezionati tag diversi da `All` o `Tutorial: Sports / Skiing` è selezionato, non verrà visualizzato nulla.
+La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo `Tutorial` spazio dei nomi. Alle due risorse *di lezioni* di sci viene assegnato il `Skiing` tag , in modo che se sono selezionati tag diversi da `All` o `Tutorial: Sports / Skiing` è selezionato, non verrà visualizzato nulla.
 
 Se a un membro non sono state assegnate risorse di abilitazione, direttamente o attraverso un percorso di apprendimento, è possibile interagire con le risorse di abilitazione presenti in un catalogo e fornire feedback attraverso commenti e valutazioni.
 
@@ -163,7 +166,7 @@ La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Qui
 
 Ciò che è, è l&#39;attività dei due studenti, `Riley Taylor` e `Sidney Croft. By s`selezionando il `Administration`collegamento per accedere alla console Moderazione, Quinn è in grado di utilizzare la console [di moderazione](moderation.md) in massa per moderare i loro post.
 
-Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per la ricerca di contenuti della community.
+Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per la ricerca di contenuti per le community.
 
 Passando il puntatore su una scheda di commento vengono visualizzate le azioni di moderazione.
 
@@ -206,7 +209,7 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 * Selezionare l&#39; `Report`icona per un riepilogo di tutte le risorse
 * Selezionare una risorsa e quindi l&#39; `Report`icona relativa a un rapporto sulla risorsa
 
-È probabile che la visualizzazione dei dati di Adobe Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
+Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Analytics, che può richiedere da 1 a 12 ore di visualizzazione. Tuttavia, il reporting SCORM di base è già disponibile.
 
 #### Rapporto sulle risorse sulle lezioni di sci {#ski-lessons-resource-report}
 
@@ -224,7 +227,7 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 
 ### Console Rapporti {#reports-console}
 
-La console Rapporti consente di generare rapporti su
+La console Rapporti consente la generazione di rapporti su
 
 * **Assegnazioni** per qualsiasi sito community di abilitazione
 * **Visualizzazioni** per qualsiasi sito community
