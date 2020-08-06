@@ -1,8 +1,8 @@
 ---
-title: Configurare l'ambiente per l'app AEM Forms
-seo-title: Configurare l'ambiente per l'app AEM Forms
-description: Hardware, software e licenze per creare e distribuire l'app AEM Forms.
-seo-description: Hardware, software e licenze per creare e distribuire l'app AEM Forms.
+title: Configurare l'ambiente per 'app AEM Forms
+seo-title: Configurare l'ambiente per 'app AEM Forms
+description: Hardware, software e licenze per creare e distribuire l'app AEM Forms .
+seo-description: Hardware, software e licenze per creare e distribuire l'app AEM Forms .
 uuid: 0c8f5259-8e9f-45ce-ade4-e14f1a41c0de
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
 
-# Configurare l&#39;ambiente per l&#39;app AEM Forms {#set-up-environment-for-aem-forms-app}
+# Configurare l&#39;ambiente per &#39;app AEM Forms {#set-up-environment-for-aem-forms-app}
 
-Per creare e implementare l’app AEM Forms sono necessari hardware, software e licenze seguenti:
+Per creare e distribuire l&#39;app AEM Forms  sono necessari hardware, software e licenze seguenti:
 
 ## Per dispositivi Windows {#for-windows-devices}
 
