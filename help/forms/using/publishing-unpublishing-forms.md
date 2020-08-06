@@ -11,26 +11,29 @@ content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1436'
+ht-degree: 0%
 
 ---
 
 
 # Pubblicazione e annullamento della pubblicazione di moduli e documenti {#publishing-and-unpublishing-forms-and-documents}
 
-AEM Forms consente di creare, pubblicare e annullare la pubblicazione di moduli in modo semplice. Per ulteriori informazioni su AEM Forms, consultate [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
+ AEM Forms consente di creare, pubblicare e annullare la pubblicazione dei moduli in modo semplice. Per ulteriori informazioni su  AEM Forms, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
 
-Il server AEM Forms offre due istanze: Creazione e pubblicazione. L’istanza Author consente di creare e gestire le risorse e le risorse dei moduli. L’istanza Pubblica serve a mantenere le risorse e le risorse correlate disponibili per gli utenti finali. È possibile importare moduli XDP e PDF in modalità Autore. Per ulteriori informazioni, consultate [Ottenimento di documenti XDP e PDF in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Il server AEM Forms  fornisce due istanze: Creazione e pubblicazione. L’istanza Author consente di creare e gestire le risorse e le risorse dei moduli. L’istanza Pubblica serve a mantenere le risorse e le risorse correlate disponibili per gli utenti finali. Potete importare XDP e PDF forms nella modalità Autore. Per ulteriori informazioni, vedere [Ottenimento di documenti XDP e PDF in  AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
-## Risorse supportate {#supported-assets-nbsp}
+## Risorse supportate   {#supported-assets-nbsp}
 
-AEM Forms supporta i seguenti tipi di risorse:
+ AEM Forms supporta i seguenti tipi di risorse:
 
 * Moduli adattivi
 * Documenti adattivi
 * Frammenti di moduli adattivi
 * Temi
 * Modelli per moduli (moduli XFA)
-* Moduli PDF
+* PDF forms
 * Documento (documenti PDF semplici)
 * Set di moduli
 * Risorsa (immagini, schemi e fogli di stile)
@@ -39,10 +42,10 @@ Inizialmente, tutte le risorse sono disponibili solo nell’istanza Author. Un a
 
 Quando si seleziona un modulo e lo si pubblica, vengono pubblicate anche le relative risorse e risorse. Tuttavia, le risorse dipendenti non vengono pubblicate. In questo contesto, le risorse e le risorse correlate sono risorse utilizzate o a cui fanno riferimento una risorsa pubblicata. Le risorse dipendenti sono risorse che fanno riferimento a una risorsa pubblicata.
 
-I moduli adattivi possono utilizzare configurazioni, impostazioni e personalizzazioni che non vengono pubblicate automaticamente. È consigliabile pubblicare o attivare queste risorse prima di pubblicare un modulo adattivo.
+Il Forms adattivo può utilizzare alcune configurazioni, impostazioni e personalizzazioni che non vengono pubblicate automaticamente. È consigliabile pubblicare o attivare queste risorse prima di pubblicare un modulo adattivo.
 
 * Modelli di modulo adattivo modificabili
-* Configurazioni dei servizi cloud per Adobe Sign, Typekit, reCAPTCHA e modelli di dati per moduli
+* Configurazioni di Cloud Service per  modelli di dati Adobe Sign, Typekit, reCAPTCHA e Form
 * Le altre configurazioni di servizi Cloud sono attivate solo se l&#39;utente dispone delle autorizzazioni di amministratore.
 * Personalizzazioni. Tra questi rientrano, tra l&#39;altro:
 
@@ -50,29 +53,30 @@ I moduli adattivi possono utilizzare configurazioni, impostazioni e personalizza
    * Aspetto personalizzato
    * File CSS - usato come input nella finestra di dialogo delle proprietà del contenitore Modulo adattivo
    * Categoria libreria client - utilizzata come input nella finestra di dialogo delle proprietà del contenitore Modulo adattivo
-   * Qualsiasi altra libreria client che può essere inclusa nel modello di modulo adattivo.
+   * Qualsiasi altra libreria client che può essere stata inclusa nel modello di modulo adattivo.
    * Percorsi di progettazione
 
 ## Stati risorsa {#asset-states}
 
 Una risorsa può presentare i seguenti stati:
 
-* **** Non pubblicato: Una risorsa che non è mai stata pubblicata (lo stato non pubblicato è applicabile solo alle risorse di Forms). Le risorse Gestione corrispondenza non dispongono di uno stato Non pubblicato.
+* **Non pubblicato:** Una risorsa che non è mai stata pubblicata (lo stato non pubblicato è applicabile solo alle risorse Forms). Le risorse Gestione corrispondenza non dispongono di uno stato Non pubblicato.
 * **Pubblicato**: Risorsa pubblicata ed disponibile nell’istanza Pubblica
 * **Modificato**: Risorsa modificata dopo la pubblicazione
 
 ## Pubblicare una risorsa {#publish-an-asset}
 
-1. Effettuate l&#39;accesso al server AEM Forms.
+1. Effettuate l&#39;accesso al server AEM Forms .
 1. Per selezionare e pubblicare una risorsa, effettuate una delle seguenti operazioni.
 
    1. Portate il puntatore su una risorsa e toccate **[!UICONTROL Pubblica]** ![aem6forms_globo](assets/aem6forms_globe.pngasset.png).
    1. Effettuate una delle seguenti operazioni, quindi toccate Pubblica:
 
-      * Se vi trovate nella vista a schede, toccate **[!UICONTROL Enter Selection]** aem6forms_check-cerchio ![](assets/aem6forms_check-circle.png)e toccate la risorsa. La risorsa è selezionata.
-      * Se vi trovate nella vista Elenco, selezionate la casella di controllo di una risorsa. La risorsa è selezionata.
+      * Se vi trovate nella vista a schede, toccate **[!UICONTROL Entra nella selezione]** ![aem6forms_check-cerchio](assets/aem6forms_check-circle.png)e toccate la risorsa. La risorsa è selezionata.
+      * Se vi trovate nella vista a elenco, selezionate la casella di controllo di una risorsa. La risorsa è selezionata.
       * Toccate una risorsa per visualizzarne i dettagli.
       * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![vista](assets/viewproperties.png).
+
       >[!NOTE]
       >
       >Non selezionate più risorse. La pubblicazione simultanea di più risorse non è supportata.
@@ -94,15 +98,15 @@ Una risorsa può presentare i seguenti stati:
 
    Dopo la pubblicazione di una risorsa, le proprietà dei metadati della risorsa vengono copiate nell’istanza Pubblica e lo stato della risorsa viene modificato in Pubblicato. Anche lo stato delle risorse dipendenti pubblicate viene modificato in Pubblicato.
 
-   Dopo aver pubblicato una risorsa, è possibile utilizzare il portale Forms per visualizzare tutte le risorse su una pagina Web. Per ulteriori informazioni, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
+   Dopo aver pubblicato una risorsa, potete utilizzare Forms Portal per visualizzare tutte le risorse su una pagina Web. Per ulteriori informazioni, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
 
 ## Publish all the Correspondence Management Assets {#publish-all-the-correspondence-management-assets}
 
-AEM Forms consente di pubblicare tutte le risorse Gestione corrispondenza su un server contemporaneamente. Le risorse pubblicate includono tutte le risorse Gestione corrispondenza e le relative dipendenze.
+ AEM Forms consente di pubblicare tutte le risorse di gestione della corrispondenza su un server contemporaneamente. Le risorse pubblicate includono tutte le risorse Gestione corrispondenza e le relative dipendenze.
 
 Per pubblicare tutte le risorse di Gestione corrispondenza su un server, effettuate i seguenti passaggi:
 
-1. Effettuate l&#39;accesso al server AEM Forms.
+1. Effettuate l&#39;accesso al server AEM Forms .
 1. Toccate **Adobe Experience Manager** nella barra di navigazione globale.
 1. Toccate ![tools-1](assets/tools-1.png), quindi toccate **Forms**.
 1. Tap **Publish Correspondence Management Assets**.
@@ -121,11 +125,11 @@ Per pubblicare tutte le risorse di Gestione corrispondenza su un server, effettu
    >
    >Il processo di pubblicazione non può essere annullato una volta avviato. Inoltre, mentre è in corso l’operazione di pubblicazione, non create, eliminate, modificate o pubblicate risorse, né avviate l’operazione Esporta tutte le risorse di gestione della corrispondenza.
 
-## Automatizzare la pubblicazione e l&#39;annullamento della pubblicazione per Forms e Documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
+## Automatizzare la pubblicazione e l&#39;annullamento della pubblicazione per Forms e documenti {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-AEM Forms consente di pianificare la pubblicazione e l&#39;annullamento della pubblicazione delle risorse per Forms e Documenti. Potete specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, vedere [Gestione dei metadati del modulo.](/help/forms/using/manage-form-metadata.md)
+ AEM Forms consente di pianificare la pubblicazione e l’annullamento della pubblicazione delle risorse per Forms e documenti. Potete specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, vedere [Gestione dei metadati del modulo.](/help/forms/using/manage-form-metadata.md)
 
-Per pianificare la data e l’ora di pubblicazione e l’annullamento della pubblicazione delle risorse per moduli e documenti, effettuate le seguenti operazioni:
+Per pianificare la data e l’ora di pubblicazione e annullamento della pubblicazione delle risorse per Forms e documenti, effettuate le seguenti operazioni:
 
 1. Selezionate una risorsa e toccate **[!UICONTROL Visualizza proprietà]**. Viene visualizzata la pagina Proprietà metadati.
 1. Nella pagina Proprietà metadati, toccate **[!UICONTROL Avanzate]**, quindi toccate **[!UICONTROL Modifica]** ![illustratorcc_penciltool_try_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
@@ -181,7 +185,7 @@ Ogni volta che pubblicate una risorsa o una lettera dopo averla modificata, vien
 
    >[!NOTE]
    >
-   >Vengono eliminate solo le risorse selezionate, quelle dipendenti e non quelle eliminate. Per controllare i riferimenti di una risorsa, toccate ![i riferimenti](assets/references.png) e selezionate una risorsa.
+   >Vengono eliminate solo le risorse selezionate, le risorse dipendenti e non vengono eliminate. Per controllare i riferimenti di una risorsa, toccate ![i riferimenti](assets/references.png) e selezionate una risorsa.
    >
    >Se la risorsa che state tentando di eliminare è una risorsa figlia di un’altra risorsa, non viene eliminata. Per eliminare una risorsa di questo tipo, rimuovete i riferimenti a tale risorsa da altre risorse e riprovate.
 
@@ -195,7 +199,7 @@ Per abilitare l&#39;autenticazione per i moduli:
 
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Nella configurazione della console Web di Adobe Experience Manager, fai clic su **Apache Sling Authentication Service** per configurarlo.
+1. Nella configurazione della console Web di Adobe Experience Manager, fate clic su **Apache Sling Authentication Service** per configurarlo.
 1. Nella finestra di dialogo Apache Sling Authentication Service visualizzata, utilizzate il pulsante **+** per aggiungere i percorsi.
 
    Quando si aggiunge un percorso, il servizio di autenticazione è abilitato per i moduli in tale percorso.
