@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +27,7 @@ Se siete un amministratore e avete l’esigenza di gestire, creare, ordinare ed 
 Consultate anche Predefiniti per visualizzatori [di pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 
 A seconda della modalità di pubblicazione in uso, potrebbe non essere necessario pubblicare i predefiniti per visualizzatori.
-Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi di contenuti multimediali dinamici - Scene7](troubleshoot-dms7.md#viewers).
+Per eventuali problemi con i predefiniti per visualizzatori, consultate [Risoluzione di problemi relativi a contenuti multimediali dinamici - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Applicazione di un predefinito per visualizzatori per contenuti multimediali dinamici a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
