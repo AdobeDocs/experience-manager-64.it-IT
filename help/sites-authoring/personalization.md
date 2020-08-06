@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione e targeting dei contenuti
 seo-title: Personalizzazione e targeting dei contenuti
-description: Scopri come AEM può creare contenuti personalizzati
-seo-description: Scopri come AEM può creare contenuti personalizzati
+description: Scopri come AEM creare contenuti personalizzati
+seo-description: Scopri come AEM creare contenuti personalizzati
 uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
 translation-type: tm+mt
 source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +52,7 @@ Ad esempio, un&#39;attività definisce le esperienze per due segmenti di pubblic
 
 Un&#39;offerta è un contenuto visualizzato in una certa ubicazione della pagina per una certa esperienza. Utilizza offerte diverse per le diverse esperienze e massimizza l&#39;efficacia dei contenuti per il tuo pubblico.
 
-Ad esempio, la pagina Donne del sito Web di esempio We.Retail può utilizzare offerte come immagine teaser che appare nella parte superiore della pagina. Le offerte utilizzate come teaser sono diverse per l&#39;esperienza Donna Over 30 e per l&#39;esperienza Donna Under 30.
+Ad esempio, la pagina Donne del sito Web di esempio We.Retail può utilizzare le offerte come immagine teaser che appare nella parte superiore della pagina. Le offerte utilizzate come teaser sono diverse per l&#39;esperienza Donna Over 30 e per l&#39;esperienza Donna Under 30.
 
 Usa la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea le offerte per un uso singolo o aggiungi le offerte da una libreria di offerte durante la [creazione di contenuti personalizzati](/help/sites-authoring/content-targeting-touch.md).
 
