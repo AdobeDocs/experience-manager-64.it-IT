@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '4787'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +40,7 @@ In questo esempio, un utente ha toccato o fatto clic su una mappa immagine per a
 
 ## Scoprite come creare i banner carosello {#watch-how-carousel-banners-are-created}
 
-Seguite la procedura dettagliata di 10 e 33 secondi sulla [creazione](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)dei banner carosello. Inoltre verrà illustrato come visualizzare in anteprima, modificare e distribuire i banner carosello.
+Seguite la procedura dettagliata di 10 e 33 secondi sulla [creazione](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)dei banner carosello. Inoltre verrà illustrato come visualizzare in anteprima, modificare e distribuire i banner carosello.
 
 >[!NOTE]
 >
@@ -47,15 +50,15 @@ Seguite la procedura dettagliata di 10 e 33 secondi sulla [creazione](https://s7
 
 Per iniziare subito a lavorare:
 
-1. [Identificare le variabili](#identifying-hotspot-and-image-map-variables) dei punti di attivazione e delle mappe immagine (solo per i clienti che utilizzano AEM Assets + Dynamic Media)
+1. [Identificare le variabili](#identifying-hotspot-and-image-map-variables) dei punti di attivazione e delle mappe immagine (solo per i clienti che utilizzano  AEM Assets + Dynamic Media)
 
-   Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente della visualizzazione rapida in modo da poter inserire correttamente i punti di attivazione e i dati delle mappe immagine durante il processo di creazione dei banner carosello in Risorse AEM.
+   Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente della visualizzazione rapida in modo da poter inserire correttamente i punti di attivazione e i dati delle mappe immagine durante il processo di creazione dei banner carosello in  AEM Assets.
 
    >[!NOTE]
    >
-   >Se siete clienti AEM Sites o e-commerce, potete utilizzare la funzione integrata per passare alle pagine di prodotto e cercare le interfacce esistenti nel catalogo di prodotti. Non è necessario immettere manualmente le variabili per punti attivi o per mappe immagine. Consultate le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md).
+   >Se siete clienti AEM Sites  o e-commerce, potete utilizzare la funzione integrata per passare alle pagine di prodotto e cercare le interfacce esistenti nel catalogo di prodotti. Non è necessario immettere manualmente le variabili per punti attivi o per mappe immagine. Consultate le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md).
    >
-   >I clienti AEM Assets e Dynamic Media immetteranno manualmente i dati per gli hotspot e le mappe immagine, quindi integreranno l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
+   >Se siete clienti AEM Assets  e Dynamic Media, immettete manualmente i dati per i punti di attivazione e le mappe immagine, quindi integrate l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
 
 1. Facoltativo: se necessario, [crea un predefinito visualizzatore per set carosello](managing-viewer-presets.md).
 
@@ -86,24 +89,24 @@ Per iniziare subito a lavorare:
    * [Aggiungete un banner carosello alla pagina](#adding-a-carousel-banner-to-your-website-page) del sito Web Potete aggiungere nella pagina del sito Web l’URL del banner carosello o il codice da incorporare che avete copiato.
 
       * [Integrare il banner del carosello con una visualizzazione rapida](#integrating-the-carousel-banner-with-an-existing-quickview)esistente. Se utilizzate un sistema di gestione dei contenuti Web di terze parti, dovrete integrare il nuovo banner carosello con l’implementazione esistente di Quickview sul sito Web.
-   * [Aggiungi un banner carosello al tuo sito Web in AEM](adding-dynamic-media-assets-to-pages.md) Se sei un cliente AEM Sites puoi aggiungere il set di caroselli direttamente alla pagina in AEM, utilizzando il componente Supporto interattivo.
+   * [Aggiungete un banner carosello al sito Web in AEM](adding-dynamic-media-assets-to-pages.md) Se siete  cliente AEM Sites, potete aggiungere il set di carosello direttamente alla pagina in AEM, utilizzando il componente Supporto interattivo.
 
 
-Per modificare i set di caroselli, consultate [Modifica dei set](#editing-carousel-sets)di caroselli.  Inoltre, potete visualizzare e modificare le proprietà [del set](/help/assets/managing-assets-touch-ui.md#editing-properties)carosello.
+Per modificare i set di caroselli, consultate [Modifica dei set](#editing-carousel-sets)di caroselli. Inoltre, potete visualizzare e modificare le proprietà [del set](/help/assets/managing-assets-touch-ui.md#editing-properties)carosello.
 
 ## Identificazione delle variabili dei punti di attivazione e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
 
-Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente della visualizzazione rapida in modo da poter inserire correttamente i punti di attivazione o i dati delle mappe immagine durante il processo di creazione dei set carosello in AEM Assets.
+Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente della visualizzazione rapida in modo da poter inserire correttamente i punti di attivazione o i dati delle mappe immagine durante il processo di creazione dei set carosello in  AEM Assets.
 
-Quando aggiungi punti di attivazione o mappe immagine a un&#39;immagine del banner in Risorse AEM, devi assegnare uno SKU e altre variabili facoltative a ogni punto di attivazione o mappa immagine. Tali variabili vengono utilizzate in seguito per far corrispondere punti attivi o mappe immagine con contenuto di visualizzazione rapida.
+Quando aggiungete punti di attivazione o mappe immagine a un&#39;immagine del banner in  AEM Assets, dovete assegnare un SKU e variabili aggiuntive facoltative a ogni punto di attivazione o mappa immagine. Tali variabili vengono utilizzate in seguito per far corrispondere punti attivi o mappe immagine con contenuto di visualizzazione rapida.
 
 >[!NOTE]
 >
->Se sei un cliente AEM Sites e/o AEM Ecommerce, salta questo passaggio. Non è necessario identificare manualmente le variabili dei punti di attivazione o delle mappe immagine; potete utilizzare l&#39;integrazione con Ecommerce per l&#39;integrazione dei prodotti. Consultate le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md). Inoltre, potete utilizzare il componente Interattivo e aggiungerlo alla pagina Web.
+>Se sei un cliente AEM Sites  e/o AEM e-commerce, salta questo passaggio. Non è necessario identificare manualmente le variabili dei punti di attivazione o delle mappe immagine; potete utilizzare l&#39;integrazione con Ecommerce per l&#39;integrazione dei prodotti. Consultate le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md). Inoltre, potete utilizzare il componente Interattivo e aggiungerlo alla pagina Web.
 >
->Se siete clienti AEM Assets o Media, pubblicate l’URL o il codice da incorporare, quindi integrate con il sistema di gestione dei contenuti di terze parti e identificate manualmente i punti di attivazione e le mappe immagine.
+>Se siete clienti AEM Assets o Media , pubblicate l’URL o il codice da incorporare e quindi integrate con il sistema di gestione dei contenuti di terze parti, identificando manualmente i punti di attivazione e le mappe immagine.
 
-È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione continua dei punti attivi o delle mappe immagine più soggetta a errori.
+È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione dei punti attivi o delle mappe immagine più soggetta a errori.
 
 Esistono diversi modi per identificare un set di variabili da utilizzare per i dati di aree sensibili o mappe immagine.
 
@@ -114,13 +117,13 @@ La maggior parte delle implementazioni di visualizzazione rapida utilizza il seg
 * L’utente attiva un elemento dell’interfaccia utente sul sito web. For example, clicking a **[!UICONTROL Quick View]** button.
 * Il sito Web invia una richiesta Ajax al back-end per caricare i dati della visualizzazione rapida o il contenuto, se necessario.
 * I dati della visualizzazione rapida vengono convertiti nel contenuto in preparazione del rendering sulla pagina Web.
-* Infine, il codice front-end riproduce visivamente tali contenuti sullo schermo.
+* Infine, il codice front-end esegue visivamente il rendering di tali contenuti sullo schermo.
 
 L’approccio consiste quindi nel visitare diverse aree del sito Web esistente in cui è implementata la funzione di visualizzazione rapida, attivare la visualizzazione rapida e acquisire l’URL Ajax inviato dalla pagina Web per caricare i dati di visualizzazione rapida o il contenuto.
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser Web moderni dispongono di ispettori Web che eseguono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser Web che includono ispettori Web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premere F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello Strumenti per sviluppatori, quindi toccare la scheda **[!UICONTROL Rete]** .
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premete F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello Strumenti per sviluppatori, quindi toccate la scheda **[!UICONTROL Rete]** .
 * In Firefox, è possibile attivare il plug-in Firebug premendo F12 (Windows) o Comando-Opzione-I (Mac) e utilizzare la relativa scheda Net, oppure è possibile utilizzare lo strumento integrato Ispettore e la relativa scheda Rete.
 
 Quando il monitoraggio della rete è attivato nel browser, attiva la visualizzazione rapida sulla pagina.
@@ -154,7 +157,7 @@ Considerate i seguenti esempi di URL di visualizzazione rapida e le relative var
      <li><p><code>https://server/product/6422350843</code></p> </li> 
      <li><p><code>https://server/product/1607745002</code></p> </li> 
      <li><p><code>https://server/product/0086724882</code></p> </li> 
-    </ul> <p>La parte variabile si trova nell’ultima parte del percorso e diventa il valore SKU delle aree sensibili/mappe immagine:<strong><code>6422350843</code>, <code>1607745002,</code></strong><code>0086724882.</code></p> </td> 
+    </ul> <p>La parte variabile si trova nell’ultima parte del percorso e diventa il valore SKU dei punti attivi/mappe immagine:<strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td> 
   </tr> 
   <tr> 
    <td>SKU e ID categoria nella stringa di query.</td> 
@@ -192,8 +195,9 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](managing-
 
    Nella pagina Editor **** carosello banner, effettuate una delle seguenti operazioni:
 
-   * Nell’angolo superiore sinistro della pagina, toccate l’icona **[!UICONTROL Aggiungi diapositiva]** .
+   * Vicino all&#39;angolo superiore sinistro della pagina, toccate l&#39;icona **[!UICONTROL Aggiungi diapositiva]** .
    * Vicino al centro della pagina, toccate **[!UICONTROL Toccate per aprire il selettore]** risorse.
+
    Tocca per selezionare le risorse da includere nel Set carosello. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -206,6 +210,7 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](managing-
    * Se necessario, trascinate le diapositive per riordinare le immagini nell’elenco dei set.
    * Per eliminare un’immagine, selezionatela, quindi toccate **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
    * Per applicare un predefinito, toccate l’elenco a discesa dei predefiniti accanto all’angolo superiore destro della pagina, quindi selezionate un predefinito da applicare al set contemporaneamente.
+
    Per eliminare una diapositiva, toccate la diapositiva e toccate **[!UICONTROL Elimina diapositiva]** nella barra degli strumenti. Per spostare una diapositiva, toccate l’icona del reoreder, quindi tenete premuto e spostatevi nella posizione desiderata.
 
 1. Dopo aver aggiunto le immagini nelle diapositive, potete aggiungere un punto di attivazione, una mappa immagine o entrambi all’immagine. Consultate [Aggiunta di aree sensibili o mappe](#adding-hotspots-or-image-maps-to-an-image-banner)immagine.
@@ -215,9 +220,9 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](managing-
    >
    >Per i banner carosello, potete regolare quanto segue:
    >* Durata della visualizzazione di un’immagine. Per impostazione predefinita, ogni immagine viene visualizzata per 9 secondi.
-   >* Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile modificare la transizione in una diapositiva.
+   >* Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile modificare questa impostazione in una transizione diapositiva.
    >* Stile dei pulsanti. Gli utenti possono ruotare i banner toccando ogni punto o numero. È possibile modificare la posizione in cui appaiono i pulsanti degli indicatori di set (e se si tratta di uno stile numerico o punteggiato) e le loro dimensioni.
-   >* Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per i punti attivi.
+   >* Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per i punti di attivazione.
    >* Prima di modificare un predefinito per visualizzatori, scegliete lo stile su cui basare il predefinito. In caso contrario, quando iniziate a modificare il predefinito per visualizzatori, tutte le modifiche apportate andranno perdute se decidete di passare a un altro predefinito.
 
 
@@ -229,7 +234,7 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](managing-
 
 Potete aggiungere punti attivi o mappe immagine a un banner utilizzando l&#39;editor di set carosello.
 
-Quando aggiungete punti di attivazione o mappe immagine, potete definirli come visualizzazione a comparsa Quickview, come collegamento ipertestuale o come frammento esperienza.
+Quando aggiungete aree sensibili o mappe immagine, potete definirle come una visualizzazione a comparsa Quickview, come un collegamento ipertestuale o un frammento esperienza.
 
 Consulta Frammenti [](/help/sites-authoring/experience-fragments.md)esperienza.
 
@@ -263,6 +268,7 @@ Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-ba
 
    * Per i punti attivi: Sull&#39;immagine, toccate la posizione in cui desiderate visualizzare il punto di attivazione.
    * Per le mappe immagine: Sull’immagine, toccate, quindi trascinate dall’alto a sinistra verso il basso a destra per creare l’area della mappa immagine. Per regolare le dimensioni della mappa immagine, trascinatene gli angoli.
+
    Se necessario, trascinate il punto di attivazione o la mappa immagine in una nuova posizione. Se necessario, potete aggiungere altri punti di attivazione o mappe immagine.
 
    Per eliminare un punto attivo o una mappa immagine, tocca la scheda **[!UICONTROL Azioni]**. Seleziona il nome del punto attivo o della mappa immagine da rimuovere dall’intestazione **[!UICONTROL Mappe e punti attivi]** del menu a discesa **[!UICONTROL Tipo selezionato]**. Tocca l’icona **[!UICONTROL Cestino]** accanto al menu, quindi seleziona **[!UICONTROL Elimina]**.
@@ -272,8 +278,8 @@ Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-ba
 
    * Toccate **[!UICONTROL Visualizzazione rapida]**.
 
-      * Se siete clienti di AEM Sites e di e-commerce, toccate l&#39;icona **[!UICONTROL Product Picker]** (lente di ingrandimento) per aprire la pagina **[!UICONTROL Select Product (Seleziona prodotto]** ). Toccate il prodotto che desiderate utilizzare, quindi toccate il segno di spunta nell’angolo superiore destro della pagina per tornare all’Editor **** carosello banner.
-      * Se non sei un cliente AEM Sites o Ecommerce
+      * Se siete un cliente AEM Sites  ed e-commerce, toccate l&#39;icona **[!UICONTROL Product Picker]** (lente di ingrandimento) per aprire la pagina **[!UICONTROL Select Product]** (Selezione prodotto). Toccate il prodotto che desiderate utilizzare, quindi toccate il segno di spunta nell’angolo superiore destro della pagina per tornare all’Editor **** carosello banner.
+      * Se non siete un cliente AEM Sites o Ecommerce 
 
          * Consultate [Identificazione delle variabili](#identifying-hotspot-and-image-map-variables) dei punti di attivazione in base alle vostre esigenze.
          * Quindi, immettete manualmente il valore SKU. Nel campo di testo Valore **** SKU digitare lo SKU del prodotto (Stock Keeping Unit), che è un identificatore univoco per ciascun prodotto o servizio distinto offerto. Il valore SKU immesso popola automaticamente la porzione variabile del modello di visualizzazione rapida in modo che il sistema sappia associare il punto di attivazione toccato a una particolare visualizzazione rapida dello SKU.
@@ -281,31 +287,32 @@ Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-ba
          * Per ulteriori informazioni, consulta [Uso dei selettori](working-with-selectors.md) .
    * Toccate **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se siete clienti AEM Sites, toccate l&#39;icona **[!UICONTROL Site Selector (Selettore]** sito) (cartella) per passare a un URL.
+      * Se siete clienti AEM Sites , toccate l&#39;icona Selettore **** sito (cartella) per passare a un URL.
 
          >[!NOTE]
-         >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
+         >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 
-      * Se siete clienti indipendenti, nel campo di testo **[!UICONTROL HREF]** specificate l’URL completo di una pagina Web collegata.
+      * Se siete clienti indipendenti, nel campo di testo **[!UICONTROL HREF]** specificate il percorso completo dell’URL di una pagina Web collegata.
 
          Accertatevi di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
 
          Per ulteriori informazioni, consulta [Uso dei selettori](working-with-selectors.md) .
    * Tap **[!UICONTROL Experience Fragment]**.
 
-      * Se siete clienti AEM Sites, toccate l’icona **[!UICONTROL Ricerca]** (lente di ingrandimento) per aprire la pagina Frammento esperienza. Toccate il frammento esperienza che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina per tornare alla pagina di gestione dell’area sensibile.
+      * Se siete un cliente AEM Sites , toccate l’icona **[!UICONTROL Cerca]** (lente di ingrandimento) per aprire la pagina Frammento esperienza. Toccate il frammento esperienza che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina per tornare alla pagina di gestione dell’area sensibile.
 
          Consulta Frammenti [](/help/sites-authoring/experience-fragments.md)esperienza.
 
-         **Nota**:Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+         **Nota**: Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
 
       * Specificate la larghezza e l&#39;altezza del frammento esperienza così come apparirà sul banner.
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Potete anche visualizzare l’anteprima dell’aspetto del banner del carosello. Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-banners)Carosello.
 
 1. Toccate **[!UICONTROL Salva]**.
-1. Pubblicate il set carosello. La pubblicazione crea il codice da incorporare o l’URL che potete utilizzare nella pagina del sito Web. I clienti AEM Sites possono aggiungere il set carosello direttamente alla pagina Web.
+1. Pubblicate il set carosello. La pubblicazione crea il codice da incorporare o l’URL che potete utilizzare nella pagina del sito Web. Se siete clienti AEM Sites , potete aggiungere il set carosello direttamente alla pagina Web.
 
    Consultate [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md).
 
@@ -354,7 +361,7 @@ Potete utilizzare **[!UICONTROL Anteprima]** per vedere l’aspetto del banner c
 Una volta ottenuto il risultato desiderato, potete pubblicarlo.
 
 * See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
-* See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
+* See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 * See [Adding Dynamic Media Assets to pages.](adding-dynamic-media-assets-to-pages.md)
 
 Potete visualizzare in anteprima i banner del carosello dall’Editor carosello (metodo preferito) o dall’elenco **[!UICONTROL Visualizzatori]** .
@@ -391,21 +398,21 @@ Consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md) multime
 
 Dopo aver caricato le immagini dei banner per creare un carosello, aggiunto punti di attivazione e/o mappe immagine al banner e pubblicato il set di caroselli, potete ora aggiungerlo alla pagina del sito Web esistente.
 
-Se siete clienti di AEM Sites, potete aggiungere il banner carosello direttamente alla pagina trascinando il componente Supporto interattivo nella pagina. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+Se siete un cliente AEM Sites , potete aggiungere il banner del carosello direttamente alla pagina trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
-Tuttavia, se siete clienti indipendenti di Risorse AEM, potete aggiungere manualmente il banner carosello alla pagina di destinazione del sito Web, come descritto in questa sezione.
+Tuttavia, se siete clienti indipendenti AEM risorse, potete aggiungere manualmente il banner carosello alla pagina di destinazione del sito Web, come descritto in questa sezione.
 
 1. Copiate il codice da incorporare del set carosello pubblicato.
 
    See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-1. Aggiungi alla pagina Web il codice da incorporare copiato da Risorse AEM.
+1. Aggiungete il codice da incorporare copiato da  AEM Assets alla pagina Web.
 
    Il codice da incorporare copiato è reattivo e dovrebbe quindi adattarsi automaticamente all&#39;area di incorporamento della pagina.
 
 ## Integrazione del banner carosello con una visualizzazione rapida esistente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-Questa attività si applica solo se sei un cliente autonomo di Risorse AEM.
+Questa attività si applica solo se siete clienti  AEM Assets indipendenti.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il banner del carosello con un’implementazione esistente della visualizzazione rapida sul sito Web. Ogni implementazione di Quickview è univoca ed è necessario un approccio specifico che molto probabilmente coinvolga l&#39;assistenza di una persona IT front-end.
 
@@ -419,7 +426,7 @@ L’implementazione della visualizzazione rapida esistente rappresenta in genere
 1. Facoltativamente, il codice front-end converte i dati della visualizzazione rapida caricati in una rappresentazione HTML.
 1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l&#39;utente finale.
 
-Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina Web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
+Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina Web da un passaggio arbitrario. Si tratta, invece, di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
 Contemporaneamente alla sostituzione del passaggio 1 e in parte del passaggio 2 da parte del banner carosello, quando un utente fa clic su un punto di attivazione o una mappa immagine all’interno del banner carosello, tale interazione viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina Web che contiene tutti i dati di aree sensibili o mappe immagine precedentemente aggiunti.
 
@@ -429,15 +436,15 @@ In un tale gestore di eventi, il codice front-end esegue le seguenti operazioni:
 * Crea un URL di visualizzazione rapida basato sui dati del punto di attivazione o della mappa immagine.
 * Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering sullo schermo per la visualizzazione.
 
-Il codice da incorporare restituito da Risorse AEM dispone già di un gestore eventi pronto per l’uso, commentato.
+Il codice da incorporare restituito da  AEM Assets dispone già di un gestore eventi ready-to-use impostato come commento.
 
 Pertanto, è solo necessario rimuovere il commento dal codice e sostituire il corpo fittizio del gestore con il codice specifico per la pagina Web specifica.
 
-Il processo di creazione dell’URL di visualizzazione rapida è sostanzialmente opposto a quello utilizzato per identificare le variabili dei punti di attivazione e delle mappe immagine precedentemente descritte.
+Il processo di creazione dell’URL di visualizzazione rapida è sostanzialmente opposto a quello utilizzato per identificare le variabili dei punti di attivazione e delle mappe immagine trattate in precedenza.
 
 Consultate [Identificazione delle variabili](#identifying-hotspot-and-image-map-variables)dei punti di attivazione e delle mappe immagine.
 
-L’ultimo passaggio per attivare l’URL della visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede probabilmente l’assistenza di un addetto IT front-end del reparto IT. Hanno la capacità di sapere come attivare con precisione l’implementazione della visualizzazione rapida dal passaggio corretto, con un URL di visualizzazione rapida pronto all’uso.
+L’ultimo passaggio per attivare l’URL della visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede probabilmente l’assistenza di un addetto IT front-end del reparto IT. Essi hanno la capacità di sapere come attivare con precisione l’implementazione della visualizzazione rapida dal passaggio corretto, con un URL di visualizzazione rapida pronto all’uso.
 
 ## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
