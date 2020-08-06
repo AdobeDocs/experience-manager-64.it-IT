@@ -1,8 +1,8 @@
 ---
 title: Creazione e gestione dei criteri
 seo-title: Creazione e gestione dei criteri
-description: Un criterio è un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. È possibile creare e gestire diversi tipi di criteri utilizzando i moduli AEM.
-seo-description: Un criterio è un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. È possibile creare e gestire diversi tipi di criteri utilizzando i moduli AEM.
+description: Un criterio è un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. È possibile creare e gestire diversi tipi di criteri utilizzando AEM moduli.
+seo-description: Un criterio è un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. È possibile creare e gestire diversi tipi di criteri utilizzando AEM moduli.
 uuid: 72be06f3-3e90-495e-8425-72380d95704a
 contentOwner: admin
 content-type: reference
@@ -40,11 +40,11 @@ La prima volta che si installa Document Security, questo contiene un criterio co
 
 **Criteri generati automaticamente da Microsoft Outlook**
 
-Con Acrobat è possibile applicare criteri ai documenti inviati come allegati e-mail in Microsoft Outlook. In Outlook, è possibile proteggere un documento utilizzando un criterio esistente o utilizzando un criterio generato automaticamente che Acrobat genera con impostazioni predefinite per la salvaguardia della riservatezza e si applica al documento allegato a un messaggio e-mail. (Vedere * Guida [di](https://help.adobe.com/en_US/acrobat/pro/using/index.html)Acrobat*.)
+Utilizzando  Acrobat, è possibile applicare criteri ai documenti inviati come allegati e-mail in Microsoft Outlook. In Outlook, è possibile proteggere un documento utilizzando un criterio esistente o utilizzando un criterio generato automaticamente che  Acrobat genera con impostazioni predefinite per la salvaguardia della riservatezza e si applica al documento allegato a un messaggio e-mail. (Vedere * [Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
->Affinché un criterio sia disponibile in Outlook, è necessario impostare il criterio come preferito in Acrobat. Tutti gli altri criteri, inclusi quelli in Publisher, non vengono visualizzati in Outlook.
+>Affinché un criterio sia disponibile in Outlook, è necessario impostare il criterio come preferito in  Acrobat. Tutti gli altri criteri, inclusi quelli in Publisher, non vengono visualizzati in Outlook.
 
 ## Chi può creare e gestire criteri e set di criteri {#who-can-create-and-manage-policies-and-policy-sets}
 
@@ -73,7 +73,7 @@ Lo stato del documento determina quando la modifica ha effetto:
 
 >[!NOTE]
 >
->I criteri generati automaticamente da Acrobat per i destinatari dei documenti allegati ai messaggi e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per visualizzare questi criteri è necessario aprire la pagina Dettagli documento relativa al documento associato.
+>I criteri che  Acrobat genera automaticamente per i destinatari dei documenti allegati ai messaggi e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per visualizzare questi criteri è necessario aprire la pagina Dettagli documento relativa al documento associato.
 
 Quando modificate i criteri, si applicano le seguenti limitazioni:
 
@@ -81,7 +81,7 @@ Quando modificate i criteri, si applicano le seguenti limitazioni:
 * I coordinatori di set di criteri possono modificare i criteri all&#39;interno dei set di criteri solo se dispongono delle autorizzazioni corrette. L&#39;amministratore di super utente o set di criteri imposta queste autorizzazioni nell&#39;interfaccia dell&#39;amministratore di Document Security.
 * Se nel criterio è configurata una filigrana che l&#39;amministratore ha eliminato dopo la creazione del criterio, questa filigrana non verrà più applicata ai documenti se modificate e salvate il criterio. Le filigrane eliminate restano valide solo per i criteri esistenti, purché non vengano modificate. Se modificate il criterio, dovete selezionare un&#39;altra filigrana in sostituzione di quella eliminata.
 * Non è possibile concedere l&#39;accesso anonimo a un documento modificando il criterio attualmente applicato. Se modificate il criterio, gli utenti devono comunque accedere al documento. Per applicare l&#39;accesso anonimo a questo documento, rimuovere prima il criterio nell&#39;applicazione client e quindi applicare un altro criterio che consenta l&#39;accesso anonimo.
-* I criteri generati automaticamente da Acrobat per i destinatari di un documento allegato a un messaggio e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per accedere a questo criterio, individuare il documento nella pagina Documenti, aprire la pagina Dettagli documento e fare clic sul nome del criterio nell&#39;elenco dei dettagli del documento.
+* I criteri che  Acrobat genera automaticamente per i destinatari di un documento allegato a un messaggio e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per accedere a questo criterio, individuare il documento nella pagina Documenti, aprire la pagina Dettagli documento e fare clic sul nome del criterio nell&#39;elenco dei dettagli del documento.
 
 **Creare o modificare un criterio**
 
@@ -178,15 +178,15 @@ Queste autorizzazioni del documento sono disponibili nella scheda Autorizzazioni
 
 **Qualsiasi:** L’utente può modificare il PDF.
 
-**Collaborazione:** L’utente può collaborare con altri utenti, utilizzando le opzioni Collabora in Adobe Acrobat. Questa autorizzazione consente all&#39;utente di copiare i dati del modulo anche se l&#39;autorizzazione Copia non è specificata esplicitamente nel criterio.
+**Collaborazione:** L’utente può collaborare con altri utenti, utilizzando le opzioni Collaborazione in  Adobe Acrobat. Questa autorizzazione consente all&#39;utente di copiare i dati del modulo anche se l&#39;autorizzazione Copia non è specificata esplicitamente nel criterio.
 
 **Modifica pagine:** L’utente può aggiungere e rimuovere pagine e modificare contenuti nel PDF.
 
-**Compila e firma:** L&#39;utente può compilare i campi del modulo sul PDF e firmarlo.
+**Fill &amp; Sign:** L&#39;utente può compilare i campi del modulo sul PDF e firmarlo.
 
 **Copia:** Consente all&#39;utente di copiare il testo da un documento protetto tramite questo criterio.
 
-**Lettore dello schermo:** Questa autorizzazione viene visualizzata se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF. Quando questa opzione è selezionata, Adobe Acrobat dispone dell&#39;autorizzazione per aggiungere tag temporanei al PDF per migliorarne la leggibilità con un assistente vocale.
+**Reader schermo:** Questa autorizzazione viene visualizzata se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF. Quando questa opzione è selezionata,  Adobe Acrobat dispone dell&#39;autorizzazione per aggiungere tag temporanei al PDF per migliorarne la leggibilità con un assistente vocale.
 
 Tali autorizzazioni del documento sono disponibili nella scheda Opzioni. Potete applicare queste autorizzazioni ai file PDF, PTC Pro/E e Microsoft Office:
 
@@ -248,7 +248,7 @@ Se sovrascrivete le impostazioni di autenticazione globali, potete scegliere le 
 
 >[!NOTE]
 >
->L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con  versione 11.0.6 e successiva di Adobe Acrobat.
 
 ### Impostazioni avanzate {#advanced-settings}
 
@@ -264,17 +264,17 @@ Se modificate un criterio e l&#39;amministratore ha eliminato una filigrana conf
 >
 >Per i criteri che forniscono l&#39;accesso anonimo agli utenti, il nome utente e l&#39;identificatore di un utente anonimo non vengono visualizzati come filigrane anche se si seleziona questo tipo di filigrana.
 
-**Usa solo plug-in certificati di Acrobat per PDF:** Quando è selezionata per un criterio, questa opzione specifica che Acrobat 8.0 e versioni successive deve essere eseguito in modalità certificata all&#39;apertura di documenti protetti tramite criterio. Se Acrobat viene eseguito in modalità certificata, non verrà caricato alcun plug-in di terze parti.
+**Usa solo plug-in Acrobat  certificati per PDF:** Quando è selezionata per un criterio, questa opzione specifica che  Acrobat 8.0 e versioni successive deve essere eseguito in modalità certificata all&#39;apertura di documenti protetti tramite criterio. Se  Acrobat viene eseguito in modalità certificata, non verrà caricato alcun plug-in di terze parti.
 
-Selezionare questa opzione se si desidera che un destinatario del documento scriva un plug-in che possa aggirare le protezioni del documento in Acrobat 8.0 e versioni successive. Non selezionate questa opzione se i destinatari del documento devono utilizzare plug-in di terze parti in Acrobat per interagire con i documenti.
+Selezionare questa opzione se si desidera che un destinatario del documento scriva un plug-in che possa aggirare le protezioni del documento in  Acrobat 8.0 e versioni successive. Non selezionate questa opzione se i destinatari del documento devono utilizzare plug-in di terze parti in  Acrobat per interagire con i documenti.
 
-Questa opzione attiva solo la modalità certificata in Acrobat 8.0 o versioni successive; l&#39;amministratore deve disattivare l&#39;accesso per Acrobat 7.0.
+Questa opzione attiva solo la modalità certificata in  Acrobat 8.0 o versioni successive; l&#39;amministratore deve disattivare l&#39;accesso per  Acrobat 7.0.
 
 (Vedere [Configurare il server](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server)di protezione dei documenti.)
 
-Questa opzione non si applica ad Adobe Reader.
+Questa opzione non si applica a  Adobe Reader.
 
-**Messaggio di errore accesso negato:** Messaggio che viene visualizzato a chiunque tenti di aprire un documento protetto tramite criterio senza autorizzazione. Questo messaggio viene visualizzato in Acrobat. I client che non possono visualizzare questo messaggio visualizzano un messaggio predefinito per indicare che l&#39;accesso è negato.
+**Messaggio di errore accesso negato:** Messaggio che viene visualizzato a chiunque tenti di aprire un documento protetto tramite criterio senza autorizzazione. Questo messaggio viene visualizzato in  Acrobat. I client che non possono visualizzare questo messaggio visualizzano un messaggio predefinito per indicare che l&#39;accesso è negato.
 
 ### Impostazioni avanzate immutabili {#unchangeable-advanced-settings}
 
@@ -283,12 +283,12 @@ L&#39;area Impostazioni avanzate non modificabili contiene le seguenti impostazi
 **Algoritmo di cifratura e lunghezza chiave:** Utilizzato per proteggere i documenti. Potete scegliere tra le seguenti opzioni:
 
 * AES a 128 bit
-* AES a 256 bit. Questa opzione è supportata solo in Acrobat 9.0 e versioni successive. Per utilizzare la cifratura AES 256 per i file PDF, è necessario ottenere e installare i file JCE (Java Cryptography Extension) Unlimited Strense Jurisdizione Policy. Questi file sostituiscono i file local_policy.jar e US_export_policy.jar nella cartella [JAVE_HOME]/lib/security. Ad esempio, se utilizzate Sun JDK 1.6, copiate i file scaricati nella cartella [root]/Java/jdk1.6.0_26/lib/security. Potete scaricare questi file dai download [di](https://java.sun.com/javase/downloads/index.jsp)Java SE.
-* Nessuna crittografia. Questa opzione è attualmente supportata da Acrobat 9.0 e versioni successive. Se si seleziona questa opzione, le opzioni Limitazioni documento sono disattivate. Questa opzione può essere utile se si desidera utilizzare la protezione dei documenti per il controllo dei documenti o per il controllo delle versioni, ma non per cifrare il documento.
+* AES a 256 bit. Questa opzione è supportata solo  Acrobat 9.0 e versioni successive. Per utilizzare la cifratura AES 256 per i file PDF, è necessario ottenere e installare i file JCE (Java Cryptography Extension) Unlimited Strense Jurisdizione Policy. Questi file sostituiscono i file local_policy.jar e US_export_policy.jar nella cartella [JAVE_HOME]/lib/security. Ad esempio, se utilizzate Sun JDK 1.6, copiate i file scaricati nella cartella [root]/Java/jdk1.6.0_26/lib/security. Potete scaricare questi file dai download [di](https://java.sun.com/javase/downloads/index.jsp)Java SE.
+* Nessuna crittografia.  Acrobat 9.0 e versioni successive supportano attualmente questa opzione. Se si seleziona questa opzione, le opzioni Limitazioni documento sono disattivate. Questa opzione può essere utile se si desidera utilizzare la protezione dei documenti per il controllo dei documenti o per il controllo delle versioni, ma non per cifrare il documento.
 
 **Limitazioni documento:** Selezionare i componenti del documento PDF da cifrare. Altre applicazioni client crittografano l&#39;intero documento ma non i file collegati o incorporati. Potete scegliere tra le seguenti opzioni:
 
-* L’intero documento, inclusi gli allegati e i metadati. *I metadati* sono informazioni sul documento e sul relativo contenuto che è possibile visualizzare tramite la finestra di dialogo Proprietà documento o il menu Avanzate di Acrobat. In Acrobat è possibile allegare file di tipi diversi (ad esempio, file di testo, audio e video) ai documenti PDF.
+* L’intero documento, inclusi gli allegati e i metadati. *I metadati* sono informazioni sul documento e sul relativo contenuto che è possibile visualizzare tramite la finestra di dialogo Proprietà documento o il menu Acrobat Advanced . In  Acrobat, è possibile allegare file di tipi diversi (ad esempio, file di testo, audio e video) ai documenti PDF.
 * Il documento e i relativi allegati, ma non i metadati.
 * Solo allegati del documento. È possibile cifrare gli allegati a un file PDF senza cifrare il contenuto del documento.
 
@@ -326,7 +326,7 @@ Potete visualizzare informazioni più dettagliate su un criterio visualizzato ne
 
 >[!NOTE]
 >
->I criteri generati automaticamente da Acrobat per i destinatari dei documenti allegati ai messaggi e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per visualizzare questi criteri è necessario aprire la pagina Dettagli documento relativa al documento associato.
+>I criteri che  Acrobat genera automaticamente per i destinatari dei documenti allegati ai messaggi e-mail in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. Per visualizzare questi criteri è necessario aprire la pagina Dettagli documento relativa al documento associato.
 
 1. Nella pagina Protezione documento, fare clic su Criteri e quindi sulla scheda Criteri personali.
 1. Compila le informazioni di ricerca per cercare le politiche personali.
@@ -381,7 +381,7 @@ Gli utenti esterni possono copiare i criteri solo se l&#39;amministratore ne abi
    >
    >Potete creare un nome di criterio che contenga caratteri estesi; tuttavia, quando si effettua un confronto tra due stringhe, i caratteri accentati e non accentati come &quot;e&quot; e &quot;é&quot; sono considerati uguali. Quando un utente crea un criterio, viene effettuato un confronto per verificare se esiste già un criterio con lo stesso nome. Il confronto non è in grado di distinguere tra nomi identici tranne che per i caratteri accentati. Si presume che il criterio sia già stato aggiunto al database e che il nuovo non sia stato aggiunto.
 
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Eliminare un criterio {#delete-a-policy}
 
@@ -396,7 +396,7 @@ Gli utenti invitati possono eliminare i criteri solo se l&#39;amministratore lo 
 
 >[!NOTE]
 >
->È necessario utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. (Vedere la Guida di Acrobat o la Guida alle estensioni di Acrobat Reader DC appropriata.)
+>È necessario utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. (vedere  Guida di Acrobat o la Guida delle estensioni Acrobat Reader DC appropriata).
 
 ## Ordinare l&#39;elenco dei criteri {#sort-the-policy-list}
 
