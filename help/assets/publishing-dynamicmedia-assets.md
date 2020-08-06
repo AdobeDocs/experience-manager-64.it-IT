@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 8%
 
 ---
 
@@ -25,9 +28,9 @@ Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visual
 
 >[!NOTE]
 >
->Se una risorsa è già pubblicata, utilizzate AEM per spostare la risorsa in un’altra cartella e ripubblicatela dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in AEM e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
+>Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è &quot;perduta&quot; in AEM e non può essere annullata la pubblicazione. Di conseguenza, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
 
-Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare l’anteprima delle rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
+Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
@@ -37,6 +40,7 @@ Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](em
 >
 >* Per usare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, non sarà possibile copiare e incollare l’URL in un browser Web.
 >* I predefiniti per immagini e per visualizzatori devono essere attivati e pubblicati per la distribuzione live.
+
 >
 
 
