@@ -1,23 +1,26 @@
 ---
 title: Associazione di revisori per l'invio a un modulo
 seo-title: Associazione di revisori per l'invio a un modulo
-description: Scoprite come associare i revisori all'invio di un modulo in AEM Forms. I revisori associati rivedono un modulo inviato tramite il portale dei moduli.
-seo-description: Scoprite come associare i revisori all'invio di un modulo in AEM Forms. I revisori associati rivedono un modulo inviato tramite il portale dei moduli.
+description: Scoprite come associare i revisori per l'invio a un modulo in  AEM Forms. I revisori associati rivedono un modulo inviato tramite il portale dei moduli.
+seo-description: Scoprite come associare i revisori per l'invio a un modulo in  AEM Forms. I revisori associati rivedono un modulo inviato tramite il portale dei moduli.
 uuid: 66834c2b-ae70-4a6e-ae8e-07d0e38de06b
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
 
-# Associazione di revisori per l&#39;invio a un modulo {#associating-submission-reviewers-with-a-form}
+# Associazione di revisori per l&#39;invio a un modulo  {#associating-submission-reviewers-with-a-form}
 
 Quando si crea un modulo, è possibile specificare gli utenti che rivedono gli invii del modulo tramite il portale dei moduli e fornire feedback. L&#39;organizzazione può raccogliere i commenti e rielaborare i moduli inviati.
 
-AEM Forms consente di associare un gruppo di revisori a un modulo. Gli utenti aggiunti a un gruppo di revisione di un modulo possono vedere gli invii del modulo e fornire feedback.
+ AEM Forms consente di associare un gruppo di revisori a un modulo. Gli utenti aggiunti a un gruppo di revisione di un modulo possono vedere gli invii del modulo e fornire feedback.
 
 I gruppi di revisori assegnati a un modulo possono esaminare solo gli invii del modulo specificato.
 
@@ -29,8 +32,8 @@ Per associare un gruppo di revisori a un modulo, modificare lo schema di metadat
 
 Per modificare lo schema di metadati:
 
-1. In modalità di creazione, in Experience Manager, fate clic su **[!UICONTROL Strumenti > Risorse > Schemi]** metadati.
-1. Nella pagina Moduli schema, passa a **[!UICONTROL Moduli > Moduli creati in AEM]**.
+1. In modalità di authoring, in  Experience Manager, fate clic su **[!UICONTROL Strumenti > Risorse > Schemi]** di metadati.
+1. Nella pagina Schema Forms, passare a **[!UICONTROL Forms > Forms Authored in AEM]**.
 
    L’URL della pagina è:
 
@@ -56,13 +59,13 @@ I gruppi di utenti consentono di associare diversi set di revisori per l’invio
 
 Prima di eseguire i seguenti passaggi, vedete [Prerequisito](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
-Per creare un gruppo e aggiungervi dei membri, andate a **[!UICONTROL Strumenti > Operazioni > Protezione > Gruppi]**.\
+Per creare un gruppo e aggiungervi dei membri, accedete a **[!UICONTROL Strumenti > Operazioni > Protezione > Gruppi]**.\
 Per ulteriori informazioni, consulta Amministrazione [utente e servizi](/help/sites-administering/security.md).\
-Assicuratevi di aggiungere il gruppo creato come membro del gruppo di utenti predefinito: **form-submit-reviewers**. Questo gruppo di utenti viene fornito con AEM Forms e garantisce che gli utenti vengano aggiunti come revisori per l&#39;invio.
+Assicuratevi di aggiungere il gruppo creato come membro del gruppo di utenti out-of-the-box: **form-submit-reviewers**. Questo gruppo di utenti viene fornito con  AEM Forms e assicura che gli utenti vengano aggiunti come revisori per l’invio.
 
 Per associare gruppi di utenti a un modulo adattivo:
 
-1. In modalità di creazione, passare a **[!UICONTROL Moduli > Moduli e documenti]**.
+1. In modalità di authoring, passa a **[!UICONTROL Forms > Forms e documenti]**.
 1. Utilizzare l&#39;opzione **[!UICONTROL Seleziona]** per selezionare un modulo adattivo, quindi fare clic su **[!UICONTROL Visualizza proprietà]**.
 1. Nella finestra Proprietà del modulo fare clic su **[!UICONTROL Modifica]**, quindi su **[!UICONTROL AVANZATO]**.
 1. Immettete il gruppo nel campo del gruppo di revisori per l’invio e fate clic su **[!UICONTROL Fine]**.
@@ -71,7 +74,7 @@ Per associare gruppi di utenti a un modulo adattivo:
 
 >[!NOTE]
 >
->Replicare utenti e moduli per garantire la disponibilità di utenti e moduli nell&#39;implementazione remota di AEM Forms.
+>Replicare utenti e moduli per garantire la disponibilità di utenti e moduli nell&#39;implementazione remota di  AEM Forms.
 >
 >Assicurati che tutti gli utenti vengano replicati come membri di revisione dei gruppi di utenti nell&#39;implementazione remota.
 
