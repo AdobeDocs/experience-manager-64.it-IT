@@ -1,8 +1,8 @@
 ---
 title: Sviluppo di componenti AEM - Esempi di codice
 seo-title: Sviluppo di componenti AEM - Esempi di codice
-description: Questa sezione fornisce alcuni esempi su come creare componenti personalizzati per AEM.
-seo-description: Questa sezione fornisce alcuni esempi su come creare componenti personalizzati per AEM.
+description: In questa sezione sono riportati alcuni esempi su come creare componenti personalizzati per AEM.
+seo-description: In questa sezione sono riportati alcuni esempi su come creare componenti personalizzati per AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,27 +12,31 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 2%
 
 ---
 
 
 # Sviluppo di componenti AEM - Esempi di codice{#developing-aem-components-code-samples}
 
-Questa sezione fornisce alcuni esempi su come creare componenti personalizzati per AEM.
+In questa sezione sono riportati alcuni esempi su come creare componenti personalizzati per AEM.
 
 Per i concetti di base, consulta:
 
 * [Componenti AEM - Nozioni di base](/help/sites-developing/components-basics.md)
 * [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md)
 
-Per informazioni sull’interfaccia classica, consulta Componenti [AEM per l’interfaccia](/help/sites-developing/developing-components-classic.md)classica.
+Per informazioni sull’interfaccia classica, consulta [AEM Componenti per l’interfaccia](/help/sites-developing/developing-components-classic.md)classica.
 
 >[!NOTE]
 >
->Per analizzare, testare ed eseguire il debug dei componenti, AEM fornisce:
+>Per facilitare l’analisi, il test e il debug dei componenti, AEM fornisce:
 >
 >* [Modalità Sviluppatore](/help/sites-developing/developer-mode.md)
 >* un [framework per l&#39;automazione dei test, basato sulla libreria Hobbes.js](/help/sites-developing/hobbes.md)
+
 >
 
 
@@ -48,11 +52,11 @@ Puoi trovare il codice di questa pagina su GitHub
 
 >[!NOTE]
 >
->Questo esempio di codice è correlato alla sessione AEM Gems sulla [personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
+>Questo esempio di codice è correlato alla sessione AEM Gems su [Customizing Dialog Fields (Personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo).
 
 ## Risorse correlate {#related-resources}
 
-### Aggiungi nuova azione a una barra degli strumenti di un componente {#add-new-action-to-a-component-toolbar}
+### Aggiunta di una nuova azione a una barra degli strumenti di un componente {#add-new-action-to-a-component-toolbar}
 
 È possibile aggiungere nuove azioni alle barre degli strumenti dei componenti utilizzando il livello di modifica dell’Editor pagina.
 
