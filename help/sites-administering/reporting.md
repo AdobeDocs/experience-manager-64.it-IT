@@ -1,8 +1,8 @@
 ---
 title: Generazione rapporti
 seo-title: Generazione rapporti
-description: Scopri come utilizzare i rapporti in AEM.
-seo-description: Scopri come utilizzare i rapporti in AEM.
+description: Scopri come lavorare con Reporting in AEM.
+seo-description: Scopri come lavorare con Reporting in AEM.
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 5%
 
 ---
 
 
 # Generazione rapporti {#reporting}
 
-Per aiutarti a monitorare e analizzare lo stato dell’istanza, AEM fornisce una selezione di rapporti predefiniti, che possono essere configurati per i tuoi requisiti individuali:
+Per facilitare il monitoraggio e l&#39;analisi dello stato dell&#39;istanza, AEM fornisce una selezione di rapporti predefiniti, che possono essere configurati per i singoli requisiti:
 
 * [Report componente](#component-report)
 * [Utilizzo disco](#disk-usage)
@@ -30,11 +33,11 @@ Per aiutarti a monitorare e analizzare lo stato dell’istanza, AEM fornisce una
 
 È possibile accedere a tutti i rapporti dalla console **Strumenti** . Selezionate **Rapporti** nel riquadro a sinistra, quindi fate doppio clic sul rapporto richiesto nel riquadro a destra per aprirlo e/o per la configurazione.
 
-È inoltre possibile creare nuove istanze di un rapporto dalla console **Strumenti** . **Selezionate** Rapporti **nel riquadro a sinistra, quindi** Nuovo... dalla barra degli strumenti. Definire un **Titolo** e un **Nome**, selezionare il tipo di rapporto desiderato, quindi fare clic su **Crea**. La nuova istanza di report verrà visualizzata nell&#39;elenco. Fate doppio clic su questo per aprire, quindi trascinate un componente dalla barra laterale per creare la prima colonna e avviare la definizione del rapporto.
+È inoltre possibile creare nuove istanze di un rapporto dalla console **Strumenti** . Selezionate **Rapporti** nel riquadro a sinistra, quindi **Nuovo...** dalla barra degli strumenti. Definire un **Titolo** e un **Nome**, selezionare il tipo di rapporto desiderato, quindi fare clic su **Crea**. La nuova istanza di report verrà visualizzata nell&#39;elenco. Fate doppio clic su questo pulsante per aprire, quindi trascinate un componente dalla barra laterale per creare la prima colonna e avviare la definizione del rapporto.
 
 >[!NOTE]
 >
->Oltre ai report standard AEM disponibili ovunque, puoi [sviluppare anche nuovi report](/help/sites-developing/dev-reports.md).
+>Oltre ai report AEM standard disponibili out-of-the-box, puoi [sviluppare report](/help/sites-developing/dev-reports.md)personalizzati (completamente nuovi).
 
 ## Nozioni di base sulla personalizzazione dei report {#the-basics-of-report-customization}
 
@@ -54,6 +57,7 @@ Sono disponibili vari formati di rapporti. I report seguenti utilizzano tutte le
 >* [Il controllo](#health-check) stato utilizza i campi di selezione per specificare i dati sui quali si desidera eseguire il rapporto.
 >* [Uso](#disk-usage) del disco utilizza i collegamenti per espandere la struttura del repository.
 >* [Il rapporto](/help/sites-administering/reporting.md#workflow-report) Workflow offre una panoramica dei flussi di lavoro in esecuzione nell’istanza.
+
 >
 >
 Pertanto, le seguenti procedure per la configurazione delle colonne non sono appropriate. Per informazioni dettagliate, consultate le descrizioni dei singoli rapporti.
@@ -142,13 +146,13 @@ Un grafico delle modifiche apportate ai dati nel tempo è visibile sotto Dati **
 I dati sono:
 
 * Raccolti dalla prima colonna ordinata, se disponibile, altrimenti dalla prima colonna (non raggruppata)
-* Raggruppato dalla colonna appropriata
+* Raggruppato per la colonna appropriata
 
 È possibile generare il rapporto:
 
 1. Impostate **Raggruppamento** sulla colonna richiesta.
 1. **Modificare** la configurazione per definire la frequenza con cui le istantanee devono essere effettuate; ogni ora o ogni giorno.
-1. **** Fine... la definizione per avviare la raccolta di snapshot.
+1. **Fine...** la definizione per avviare la raccolta di snapshot.
 
    Il pulsante del cursore rosso/verde in alto a sinistra indica quando vengono raccolte le istantanee.
 
@@ -177,9 +181,9 @@ Selezionate i requisiti, quindi fate clic su **Vai** per applicarli al rapporto.
 
 Quando vengono raccolte delle istantanee, è possibile:
 
-* **Usa** finitura... per reinizializzare la raccolta.
+* Usa **finitura...** per reinizializzare la raccolta.
 
-   **Fine** &quot;blocca&quot; la struttura del report (ovvero le colonne assegnate al report e raggruppate, ordinate, filtrate ecc.) e inizia a scattare istantanee.
+   **Fine** &quot;blocca&quot; la struttura del report (ovvero le colonne assegnate al report e raggruppate, ordinate, filtrate, ecc.) e inizia a scattare istantanee.
 
 * Aprite la finestra di dialogo **Modifica** per selezionare **Nessuna snapshot** di dati per terminare la raccolta finché non richiesto.
 
@@ -194,7 +198,7 @@ Quando vengono raccolte delle istantanee, è possibile:
 
 >[!NOTE]
 >
->I report preconfigurati non richiedono elevate prestazioni, ma è comunque consigliabile utilizzare istantanee giornaliere in un ambiente di produzione. Se possibile, eseguire queste istantanee giornaliere in un momento in cui non esiste molta attività sul sito Web; questo può essere definito con il `Daily snapshots (repconf.hourofday)` parametro per **Day CQ Reporting Configuration**; per ulteriori informazioni sulla configurazione di [OSGI, consulta Configurazione](/help/sites-deploying/configuring-osgi.md) OSGI.
+>I report preconfigurati non richiedono elevate prestazioni, ma è comunque consigliabile utilizzare istantanee giornaliere in un ambiente di produzione. Se possibile, eseguire queste istantanee giornaliere in un momento in cui non c&#39;è molta attività sul sito Web; questo può essere definito con il `Daily snapshots (repconf.hourofday)` parametro per **Day CQ Reporting Configuration**; per ulteriori informazioni sulla configurazione di [OSGI](/help/sites-deploying/configuring-osgi.md) , consulta ConfigurazioneOSGI.
 
 #### Limiti di visualizzazione {#display-limits}
 
@@ -210,7 +214,7 @@ Per mantenere il grafico pulito per periodi di tempo prolungati, è possibile im
 
 * snapshot aggregate verticali - il valore predefinito è `35` (per serie orizzontali)
 
-Quindi, quando i limiti (appropriati) vengono superati, i seguenti:
+Quindi, quando i limiti (appropriati) sono superati, i seguenti:
 
 * i punti non verranno visualizzati
 * la legenda del grafico dati cronologico potrebbe mostrare un numero diverso di voci rispetto a quello del grafico dati corrente
@@ -267,7 +271,7 @@ Il pulsante **Carica dati** è visibile solo se i dati **di aggiornamento** manu
 
 Fai clic su **Carica dati** per ricaricare i dati e aggiornare il rapporto visualizzato.
 
-Se si seleziona l&#39;aggiornamento manuale dei dati:
+Se si seleziona questa opzione per aggiornare manualmente i dati:
 
 1. Non appena si modifica la configurazione del rapporto, i dati della tabella del rapporto vengono oscurati.
 
@@ -295,7 +299,7 @@ Il rapporto sui componenti fornisce informazioni sull’utilizzo dei componenti 
 
 [Colonne di informazioni](#selecting-and-positioning-the-data-columns) su:
 
-* Authoring
+* Autore
 * Percorso componente
 * Tipo componente
 * Ultima modifica
@@ -314,7 +318,7 @@ Significato che puoi vedere, ad esempio:
 * Identificare parti del sito con modifiche frequenti/meno frequenti.
 * Scopri come si sviluppa il contenuto delle pagine nel tempo.
 
-Tutti i componenti sono inclusi, standard di prodotto e specifici per i progetti. Utilizzando la finestra di dialogo **Modifica** , l&#39;utente può anche impostare un percorso **** radice che definisce il punto di inizio del rapporto. Tutti i componenti al di sotto di tale radice vengono considerati per il rapporto.
+Tutti i componenti sono inclusi, standard di prodotto e specifici per i progetti. Utilizzando la finestra di dialogo **Modifica** , l&#39;utente può anche impostare un percorso **** radice che definisce il punto di inizio del rapporto. Tutti i componenti al di sotto di tale livello principale vengono considerati per il rapporto.
 
 ![report componente](assets/reportcomponent.png) report ![compentall](assets/reportcompentall.png)
 
@@ -331,7 +335,6 @@ Il rapporto inizia nella directory principale ( / ) del repository; facendo clic
 Questo rapporto analizza il registro delle richieste corrente:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`\
-
 per identificare le richieste più costose in un determinato periodo di tempo.
 
 Per generare il rapporto è possibile specificare:
@@ -358,13 +361,13 @@ Per generare il rapporto è possibile specificare:
 
    Invia i risultati a un indirizzo e-mail.
 
-   Facoltativo;Predefinito: blank
+   Facoltativo; Predefinito: blank
 
 * **Esegui ogni giorno alle (hh: mm)**
 
    Specifica l&#39;ora in cui il rapporto deve essere eseguito automaticamente su base giornaliera.
 
-   Facoltativo;Predefinito: blank
+   Facoltativo; Predefinito: blank
 
 ![reportage](assets/reporthealth.png)
 
@@ -458,7 +461,7 @@ From the **Definitions** tab you can define:
 
 * **Proprietà**
 
-   Nome della proprietà memorizzato nella directory archivio, in genere all&#39;interno del profilo dell&#39;utente.
+   Il nome della proprietà memorizzato nella directory archivio, in genere all&#39;interno del profilo dell&#39;utente.
 
 * **Percorso**
 
@@ -480,7 +483,7 @@ Nella scheda **Estese** è inoltre possibile definire gli aggregati e i filtri d
 
 ### Report di istanze flusso di lavoro {#workflow-instance-report}
 
-Questo fornisce una breve panoramica delle singole istanze dei flussi di lavoro, sia in esecuzione che completati.
+Questo offre una breve panoramica, con informazioni sulle singole istanze dei flussi di lavoro, sia in esecuzione che completate.
 
 [Colonne di informazioni](#selecting-and-positioning-the-data-columns) su:
 
@@ -537,7 +540,7 @@ Le autorizzazioni necessarie dipendono dall’azione:
 * I dati del rapporto vengono raccolti utilizzando i privilegi dell&#39;utente corrente.
 * I dati storici vengono raccolti utilizzando i privilegi dell&#39;utente che ha completato il rapporto.
 
-In un’installazione standard di AEM le seguenti autorizzazioni sono predefinite per i rapporti:
+In un’installazione AEM standard, per i rapporti sono preimpostate le seguenti autorizzazioni:
 
 * **Report utente**
 
