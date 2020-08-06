@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione della pagina dei dettagli dell’attività
 seo-title: Personalizzazione della pagina dei dettagli dell’attività
-description: Procedura per personalizzare la pagina dei dettagli dell'attività nell'area di lavoro AEM Forms per modificare le informazioni predefinite visualizzate su un'attività.
-seo-description: Procedura per personalizzare la pagina dei dettagli dell'attività nell'area di lavoro AEM Forms per modificare le informazioni predefinite visualizzate su un'attività.
+description: Come personalizzare la pagina dei dettagli dell’attività nell’area di lavoro  AEM Forms per modificare le informazioni predefinite visualizzate su un’attività.
+seo-description: Come personalizzare la pagina dei dettagli dell’attività nell’area di lavoro  AEM Forms per modificare le informazioni predefinite visualizzate su un’attività.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -23,12 +23,12 @@ La pagina dei dettagli dell&#39;attività contiene informazioni su un&#39;attivi
 
 È possibile aggiungere le seguenti informazioni alla pagina dei dettagli dell&#39;attività:
 
-* Informazioni disponibili nell’oggetto JSON di un’attività (sezione Attività nell’area di lavoro [AEM Forms - Descrizione](/help/forms/using/html-workspace-json-object-description.md)oggetto JSON)
-* Informazioni disponibili nell’oggetto JSON di un’istanza di processo (sezione dell’istanza di processo nell’area di lavoro [AEM Forms - Descrizione](/help/forms/using/html-workspace-json-object-description.md)oggetto JSON)
+* Informazioni disponibili nell&#39;oggetto JSON di un&#39;attività (sezione Attività in [area di lavoro AEM Forms Descrizione](/help/forms/using/html-workspace-json-object-description.md)oggetto JSON)
+* Informazioni disponibili nell&#39;oggetto JSON di un&#39;istanza di processo (sezione dell&#39;istanza di processo in [area di lavoro AEM Forms Descrizione](/help/forms/using/html-workspace-json-object-description.md)oggetto JSON)
 
 Per personalizzare la pagina dei dettagli dell’attività:
 
-1. Seguite i passaggi [Generici per la personalizzazione dell&#39;area di lavoro di AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Seguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. Per visualizzare ulteriori informazioni, aggiungere le coppie chiave-valore corrispondenti al `translation.json` file in `todo`block > `details`block > `app`block > [`required`block].
 
    Il [ blocco `required`] fa riferimento ai blocchi disponibili, ad esempio il blocco attività per le informazioni sulle attività, il blocco di processo per le informazioni sul processo e il blocco attività in corso per le informazioni sulle attività in sospeso.
@@ -85,6 +85,6 @@ Per personalizzare la pagina dei dettagli dell’attività:
 
 >[!NOTE]
 >
->Per personalizzare la pagina dei dettagli dell&#39;attività con le attività create nella scheda **Avvia processo **dell&#39;area di lavoro Moduli AEM, aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Per personalizzare la pagina dei dettagli dell&#39;attività con le attività create nella scheda **Avvia processo ** area di lavoro di AEM Forms, aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modificate il file CSS utilizzando la sezione delle modifiche *all&#39;interfaccia* Utente in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md).
