@@ -37,7 +37,7 @@ Per il componente deve essere definito innanzitutto un modello Sling.
 
 >[!NOTE]
 >
->Per un esempio di utilizzo di Sling Models, consultate l’articolo [Sviluppo di Sling Model Exporter in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Per un esempio di utilizzo di Sling Models, consultate l&#39;articolo [Sviluppo di Sling Model Exporter in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
 La classe di implementazione del modello Sling deve essere annotata con le seguenti annotazioni:
 
