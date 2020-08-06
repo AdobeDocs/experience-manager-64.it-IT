@@ -1,8 +1,8 @@
 ---
 title: Personalizzare le tabelle di tracciamento
 seo-title: Personalizzare le tabelle di tracciamento
-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro Moduli AEM.
-seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro Moduli AEM.
+description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro di  AEM Forms.
+seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro di  AEM Forms.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
 
 # Personalizzare le tabelle di tracciamento{#customize-tracking-tables}
 
-La scheda di tracciamento nell&#39;area di lavoro Moduli AEM viene utilizzata per visualizzare i dettagli delle istanze del processo alle quali l&#39;utente connesso è coinvolto. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è specificato tra parentesi):
+La scheda di tracciamento nell&#39;area di lavoro  AEM Forms viene utilizzata per visualizzare i dettagli delle istanze del processo in cui è coinvolto l&#39;utente che ha effettuato l&#39;accesso. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è specificato tra parentesi):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
@@ -113,7 +116,7 @@ Gli attributi rimanenti nel modello attività disponibili per la visualizzazione
  </tbody> 
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione alla personalizzazione dell’area](/help/forms/using/introduction-customizing-html-workspace.md) di lavoroModuli AEM per informazioni su come apportare modifiche semantiche utilizzando l’SDK dell’area di lavoro e per creare un pacchetto ridotto dall’origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione alla personalizzazione &#39;area di lavoro](/help/forms/using/introduction-customizing-html-workspace.md) AEM Forms per informazioni su come apportare modifiche semantiche utilizzando l&#39;SDK dell&#39;area di lavoro e creare un pacchetto ridotto dall&#39;origine modificata.
 
 ## Modifica delle colonne di tabella e relativo ordine {#changing-table-columns-and-their-order}
 
