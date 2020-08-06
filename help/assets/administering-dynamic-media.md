@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
 
 >[!NOTE]
 >
->Questa documentazione descrive le funzionalità per contenuti multimediali dinamici, integrate direttamente in AEM. Se utilizzate Dynamic Media Classic (precedentemente denominato Scene7) integrato in AEM, consultate la documentazione [sull’integrazione di](/help/sites-administering/scene7.md)Dynamic Media Classic.
+>Questa documentazione descrive le funzionalità per contenuti multimediali dinamici, integrate direttamente in AEM. Se utilizzi Dynamic Media Classic (precedentemente denominato Scene7) integrato in AEM, consulta la documentazione [sull’integrazione di](/help/sites-administering/scene7.md)Dynamic Media Classic.
 >
->Consultate Scenario [](/help/sites-administering/scene7.md#dual-use-scenario) a doppio uso per i casi in cui potrebbe essere utile utilizzare AEM integrato con Dynamic Media Classic insieme a Dynamic Media Media.
+>Consultate Scenario [](/help/sites-administering/scene7.md#dual-use-scenario) a doppio uso per i casi in cui desiderate utilizzare AEM integrato con Dynamic Media Classic insieme a Dynamic Media Media.
 
 Se state amministrando i contenuti multimediali dinamici, i seguenti argomenti sono di interesse:
 
-* [Configurazione della modalità](config-dms7.md) Dynamic Media-Scene7 - Utilizzate questa configurazione se siete un nuovo cliente di Dynamic Media.
-* [Configurazione della modalità](config-dynamic.md) Dynamic Media-Hybrid - Utilizzate questa configurazione se siete già clienti Dynamic Media che eseguono l’aggiornamento di AEM.
+* [Configurazione della modalità](config-dms7.md) Dynamic Media-Scene7 - Utilizzate questa configurazione se siete un nuovo cliente Dynamic Media.
+* [Configurazione della modalità](config-dynamic.md) Dynamic Media-Hybrid - Utilizzate questa configurazione se siete già un AEM di aggiornamento per clienti Dynamic Media.
 * [Gestione dei predefiniti per immagini](managing-image-presets.md)
 * [Gestione dei predefiniti per visualizzatori](managing-viewer-presets.md)
 * [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
@@ -40,4 +43,4 @@ Vedi anche i seguenti argomenti:
 >
 >**Se state effettuando l&#39;aggiornamento:**
 >
->* Dopo aver avviato AEM, tutte le risorse caricate dispongono dell’attivazione automatica di Contenuti multimediali dinamici (a meno che non siano state esplicitamente disattivate dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di AEM e non disponi di elementi multimediali dinamici, potresti dover rielaborare le risorse per renderle abilitate per gli elementi Contenuti multimediali dinamici.
+>* Dopo aver AEM e aver eseguito il caricamento, tutte le risorse caricate dispongono di elementi Contenuti multimediali dinamici attivati automaticamente (a meno che non siano stati esplicitamente disattivati dall’amministratore di sistema). Se usate un’istanza aggiornata di AEM e non avete mai usato gli elementi multimediali dinamici, potrebbe essere necessario rielaborare le risorse per consentirne l’abilitazione.
