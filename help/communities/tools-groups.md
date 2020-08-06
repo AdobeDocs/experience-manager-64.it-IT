@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +60,7 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 * **[!UICONTROL Disattivato/Abilitato]** Un interruttore di attivazione/disattivazione che controlla se il modello è referente o meno
 
-### Miniatura {#thumbnail}
+### Miniatura  {#thumbnail}
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -67,7 +70,7 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 >[!CAUTION]
 >
->Se lavori con AEM 6.1 Communities FP4 o versioni precedenti, non aggiungere una funzione di gruppo a un modello di gruppo.
+>Se lavorate con AEM 6.1 Communities FP4 o versioni precedenti, non aggiungete una funzione di gruppo a un modello di gruppo.
 >
 >La funzione dei gruppi nidificati è disponibile a partire da Community [FP1](communities.md#latestfeaturepack).
 >
@@ -83,12 +86,12 @@ Trascinate e rilasciate tutte le altre funzioni della community desiderate per u
 
 ![dragfunzioni](assets/dragfunctions.png)
 
-Una volta che tutte le funzioni desiderate sono state rilasciate nell&#39;area del generatore di modelli e configurate, selezionate **[!UICONTROL Salva]** nell&#39;angolo superiore destro.
+Una volta che tutte le funzioni desiderate sono state rilasciate nell&#39;area del generatore di modelli e configurate, selezionate **[!UICONTROL Salva]** nell&#39;angolo in alto a destra.
 
 ##  Modifica modello gruppo{#edit-group-template}
 
 Quando visualizzate gruppi di community nella console [Modelli](#group-templates-console)gruppo principale, è possibile selezionare un modello di gruppo esistente da modificare.
 
-La modifica di un modello di gruppo non influisce sui siti community già creati dal modello. È possibile [modificare direttamente la struttura di un sito](sites-console.md#modify-structure)community.
+La modifica di un modello di gruppo non ha effetto sui siti community già creati dal modello. È possibile [modificare direttamente la struttura di un sito](sites-console.md#modify-structure)community.
 
 Questo processo fornisce gli stessi pannelli utilizzati per [creare un modello](#create-goup-template)di gruppo.
