@@ -1,8 +1,8 @@
 ---
 title: Aggiorna definizioni veicolo di rilascio
 seo-title: Aggiorna definizioni veicolo di rilascio
-description: Questo articolo descrive i vari tipi di rilasci di AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
-seo-description: Questo articolo descrive i vari tipi di rilasci di AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
+description: Questo articolo descrive i vari tipi di rilasci AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
+seo-description: Questo articolo descrive i vari tipi di rilasci AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
 uuid: 388fb6f5-0249-41e2-a460-1bb4cd0f8494
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
 source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
+workflow-type: tm+mt
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
 
-# AEM - Definizioni dei veicoli di rilascio degli aggiornamenti {#update-release-vehicle-definitions}
+# AEM Aggiorna le definizioni dei veicoli di rilascio {#update-release-vehicle-definitions}
 
-Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Experience Manager (AEM), inclusi rilasci completi, pacchetti di funzioni e Service Pack che Adobe distribuisce ai propri clienti.
+Questo documento contiene informazioni dettagliate sui diversi tipi di rilasci Adobe Experience Manager (AEM), inclusi rilasci completi, pacchetti di funzioni e Service Pack che   fornisce ai propri clienti.
 
 ## Versione completa {#full-release}
 
@@ -65,7 +68,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul> 
      <li>Fornito come programma di installazione autonomo</li> 
-     <li>Disponibile dal sito Web delle licenze e dal sito Web delle licenze dei servizi gestiti</li> 
+     <li>Disponibile dal sito Web delle licenze e dal sito Web delle licenze Managed Services</li> 
      <li>Può richiedere la migrazione dell'archivio dei contenuti</li> 
     </ul> </td> 
   </tr>
@@ -132,7 +135,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul> 
      <li>Tutte le correzioni QA convalidate</li> 
-     <li>Integrità complessiva del pacchetto con esecuzioni di automazione</li> 
+     <li>Integrità complessiva del pacchetto con le esecuzioni di automazione</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -217,7 +220,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td><strong>Disponibilità e installazione</strong></td> 
    <td>
     <ul> 
-     <li>Il processo di installazione COFP è stato semplificato per migliorare l'esperienza del cliente. (I clienti possono semplicemente installare un singolo pacchetto per tutti i componenti).</li> 
+     <li>Il processo di installazione di COFP è stato semplificato per migliorare l'esperienza del cliente. (I clienti possono semplicemente installare un singolo pacchetto per tutti i componenti).</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -245,7 +248,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
   </tr>
   <tr>
    <td><strong>Documentazione</strong></td> 
-   <td>Le note sulla versione degli hotfix pubblici sono disponibili solo su richiesta del cliente tramite il portale di assistenza AEM.</td> 
+   <td>Le note sulla versione degli hotfix pubblici sono disponibili solo in base alla richiesta del cliente tramite il AEM Support Portal.</td> 
   </tr>
   <tr>
    <td><strong>Cadenza</strong></td> 
@@ -266,7 +269,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul> 
      <li>Convalidato dall'Assistenza clienti</li> 
-     <li>Le correzioni rapide di AEM non beneficiano dello stesso livello di garanzia qualità dei service pack o delle release del prodotto. Pertanto, devono essere convalidati in un ambiente di pre-produzione come parte dei processi di distribuzione di qualità.</li> 
+     <li>AEM hotfix non beneficiano dello stesso livello di garanzia qualità dei service pack o dei rilasci di prodotti. Pertanto, devono essere convalidati in un ambiente di pre-produzione come parte dei processi di distribuzione di qualità.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -300,7 +303,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td><strong>Disponibilità e installazione</strong></td> 
    <td>
     <ul> 
-     <li>Fornito come pacchetto dall'assistenza clienti AEM</li> 
+     <li>Consegnato come pacchetto da AEM Assistenza clienti</li> 
      <li>Non necessariamente incluso nei service pack o nelle versioni complete</li> 
     </ul> </td> 
   </tr>
@@ -319,8 +322,8 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td><strong>Definizione</strong></td> 
    <td>
     <ul> 
-     <li>I Feature Pack sono funzionalità aggiuntive e vengono forniti tramite Service Pack. Se una versione di AEM ha rilasciato l’ultimo service pack, Adobe non invierà alcun feature pack per tale versione in futuro.</li> 
-     <li>I PQ contengono miglioramenti del prodotto, pianificati per una versione successiva del prodotto, ma consegnati in anticipo in base alla decisione di Adobe Product Management.</li> 
+     <li>I Feature Pack sono funzionalità aggiuntive e vengono forniti tramite Service Pack. Se una versione AEM ha rilasciato l'ultimo service pack,  Adobe non fornirà alcun feature pack per esso in futuro.</li> 
+     <li>I PQ contengono miglioramenti del prodotto, pianificati per una versione successiva del prodotto, ma consegnati in anticipo in base alla decisione di  Adobe  Gestione del prodotto.</li> 
      <li>Le funzioni vengono sempre unite con la versione principale successiva e quindi riportate alla versione AEM richiesta dal cliente</li> 
      <li>I pacchetti di funzioni di interesse comune e GA vengono uniti nel service pack successivo</li> 
     </ul> </td> 
@@ -340,7 +343,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
   </tr>
   <tr>
    <td><strong>Documentazione</strong></td> 
-   <td>La documentazione è disponibile su helpx.adobe.com.</td> 
+   <td>La documentazione è disponibile sul sito helpx.adobe.com.</td> 
   </tr>
   <tr>
    <td><strong>Cadenza</strong></td> 
@@ -351,7 +354,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul> 
      <li>Consegnato come pacchetto</li> 
-     <li>Disponibile in Package Share. I clienti accettano i termini e le condizioni di Adobe tramite Package Share.</li> 
+     <li>Disponibile in Package Share. I clienti accettano  Adobe  Termini e Condizioni tramite Package Share.</li> 
     </ul> </td> 
   </tr>
   <tr>
