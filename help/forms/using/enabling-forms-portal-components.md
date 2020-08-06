@@ -10,20 +10,23 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 translation-type: tm+mt
 source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
 # Abilitazione dei componenti del portale moduli {#enabling-forms-portal-components}
 
-I componenti del portale moduli non sono disponibili per l&#39;uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale di AEM, effettuate le seguenti operazioni:
+I componenti del portale moduli non sono disponibili per l&#39;uso. Per visualizzare i componenti nell’elenco dei componenti disponibili AEM barra laterale, effettuate le seguenti operazioni:
 
-1. Accedete all’istanza di creazione del sito Web e aprite una pagina AEM Sites.
+1. Accedete all’istanza di creazione del sito Web e aprite una pagina AEM Sites .
 
 1. Per le pagine che utilizzano un modello statico, effettuare le seguenti operazioni:
 
    1. Nell’intestazione della pagina, toccate ![canvas-menu a discesa](assets/canvas-drop-down.png) > **Progettazione** per aprire la pagina in modalità Progettazione.
-   1. Toccate un componente (con bordo blu), quindi toccate il livello ![del](assets/field-level.png) campo per selezionare il sistema di paragrafi contenente il componente corrente.
+   1. Toccate un componente (con un bordo blu), quindi toccate il livello ![del](assets/field-level.png) campo per selezionare il sistema di paragrafi contenente il componente corrente.
    1. Nel sistema di paragrafi, toccate ![settings_icon](assets/settings_icon.png) per aprire la finestra di dialogo Modifica per il sistema di paragrafi.
    1. Dall&#39;elenco dei componenti **** consentiti, abilitare le caselle di controllo per i componenti di **[!UICONTROL Document Services]** e Predicati di **[!UICONTROL Document Services]** . Toccate **[!UICONTROL OK]**.
 
