@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '2507'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## Introduzione {#introduction}
 
-In AEM Communities, dall&#39;ambiente di pubblicazione (in base alle autorizzazioni configurate), i visitatori *del* sito possono diventare *membri*, creare gruppi *di* utenti e modificare il profilo *del* membro.
+In  AEM Communities, dall’ambiente di pubblicazione (in base alle autorizzazioni configurate), i visitatori *del* sito possono diventare *membri*, creare gruppi *di* utenti e modificare il loro profilo ** membro.
 
 *I dati* utente sono termini utilizzati per fare riferimento a *utenti*, profili ** utente e gruppi *di* utenti.
 
@@ -37,13 +40,13 @@ Quando la [topologia](topologies.md) è una farm [di](../../help/sites-deploying
 
 Quando la sincronizzazione utente è abilitata, i dati utente vengono automaticamente sincronizzati tra le istanze di pubblicazione nella farm.
 
-### Istruzioni per la sincronizzazione degli utenti {#user-sync-setup-instructions}
+### Istruzioni per la configurazione della sincronizzazione degli utenti {#user-sync-setup-instructions}
 
 Per istruzioni dettagliate e dettagliate su come abilitare la sincronizzazione in una farm di pubblicazione, vedete
 
 * [Sincronizzazione utente](../../help/sites-administering/sync.md)
 
-## Sincronizzazione utente in background {#user-sync-in-the-background}
+## Sincronizzazione utente in background  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -65,7 +68,7 @@ Se la topologia è una farm [di](topologies.md) pubblicazione e la sincronizzazi
 
 ### Nuovo gruppo community creato in Pubblica {#new-community-group-is-created-on-publish}
 
-Anche se avviata da un’istanza di pubblicazione, la creazione di gruppi di community, che genera nuove pagine di sito e un nuovo gruppo di utenti, viene in realtà creata nell’istanza di creazione.
+Anche se avviata da un’istanza di pubblicazione, la creazione di gruppi di community, che genera nuove pagine di sito e un nuovo gruppo di utenti, viene effettivamente eseguita nell’istanza di creazione.
 
 Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze di pubblicazione. Il gruppo di utenti della community creato dinamicamente e la relativa appartenenza sono Sling distribuiti a tutte le istanze di pubblicazione.
 
@@ -81,7 +84,7 @@ Per il contenuto generato dall’utente (UGC), i dati immessi in un’istanza di
 
 ## Best practices {#bestpractices}
 
-Per impostazione predefinita, la sincronizzazione utente è **disattivata**. L&#39;abilitazione della sincronizzazione utente comporta la modifica delle configurazioni OSGi *esistenti* . Non è necessario aggiungere nuove configurazioni per abilitare la sincronizzazione utente.
+Per impostazione predefinita, la sincronizzazione utente è **disattivata**. L&#39;abilitazione della sincronizzazione utente comporta la modifica delle configurazioni OSGi *esistenti* . Non è necessario aggiungere nuove configurazioni per abilitare la sincronizzazione degli utenti.
 
 La sincronizzazione utente si basa sull’ambiente di authoring per gestire le distribuzioni dei dati utente, anche se i dati utente non vengono creati in fase di creazione.
 
@@ -93,14 +96,14 @@ La sincronizzazione utente si basa sull’ambiente di authoring per gestire le d
 
 1. Verifica che sia stato installato il codice più recente:
 
-   * [Aggiornamenti della piattaforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
-   * [Aggiornamenti di AEM Communities](deploy-communities.md#latestfeaturepack)
+   * [Aggiornamenti AEM piattaforma](https://helpx.adobe.com/it/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Aggiornamenti  AEM Communities](deploy-communities.md#latestfeaturepack)
 
-Per abilitare la sincronizzazione degli utenti in AEM Communities, sono necessarie le seguenti configurazioni. Verificate che queste configurazioni siano corrette per evitare il malfunzionamento della distribuzione del contenuto.
+Per abilitare la sincronizzazione degli utenti su  AEM Communities, sono necessarie le seguenti configurazioni. Verificate che queste configurazioni siano corrette per evitare il malfunzionamento della distribuzione del contenuto.
 
 ### Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
-Questa configurazione recupera il contenuto da sincronizzare tra gli editori. La configurazione è nell’istanza Author. L&#39;autore deve tenere traccia di tutti gli editori presenti e di dove sincronizzare tutte le informazioni.
+Questa configurazione recupera il contenuto da sincronizzare tra gli editori. La configurazione si trova nell’istanza Author. L&#39;autore deve tenere traccia di tutti gli editori presenti e di dove sincronizzare tutte le informazioni.
 
 I valori predefiniti nella configurazione si riferiscono a una singola istanza di pubblicazione. Poiché la sincronizzazione degli utenti è utile per sincronizzare più istanze di pubblicazione, ad esempio per una farm di pubblicazione, è necessario aggiungere ulteriori istanze di pubblicazione alla configurazione.
 
@@ -112,7 +115,7 @@ L’istanza Author esegue il ping dell’endpoint di esportazione degli editori.
 
 ### Per configurare la configurazione degli agenti di sincronizzazione Apache Sling
 
-Nell’istanza di creazione di AEM:
+Per AEM’istanza di creazione:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)Web.
@@ -129,7 +132,7 @@ Nell’istanza di creazione di AEM:
       Questi endpoint definiscono dove si desidera ottenere il contenuto e dove si desidera inviare il contenuto push. L&#39;autore recupera il contenuto dall&#39;endpoint di esportazione specificato e invia il contenuto agli editori (diversi dall&#39;editore da cui ha recuperato il contenuto).
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribuzione di Adobe Granite - Provider Segreto di trasporto password crittografato {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribuzione Granite  Adobe - Provider Segreto Di Trasporto Password Crittografato {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Consente all’autore di identificare l’utente autorizzato, in quanto dispone dell’autorizzazione per sincronizzare i dati utente dall’autore alla pubblicazione.
 
@@ -141,17 +144,17 @@ Ogni volta che i dati devono essere installati o recuperati dagli editori, l&#39
 
 ### Per collegare l&#39;autore con gli editori tramite un utente autorizzato
 
-Nell’istanza di creazione di AEM:
+Per AEM’istanza di creazione:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web.
 
    Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Individua distribuzione **[!UICONTROL Adobe Granite - Fornitore]** Segreto Di Trasporto Password Crittografato.
+1. Individua **[!UICONTROL Distribuzione Granite Adobe - Provider]** Segreto Di Trasporto Password Crittografato.
 1. Selezionate la configurazione esistente da aprire per la modifica (icona matita).
 
    Verificare la proprietà `name:` \- **`socialpubsync``publishUser`.**
-1. Impostate il nome utente e la password sull’utente [](../../help/sites-administering/sync.md#createauthorizeduser)autorizzato.
+1. Impostate il nome utente e la password per l’utente [](../../help/sites-administering/sync.md#createauthorizeduser)autorizzato.
 
    Ad esempio, **`usersync`\-admin **
 
@@ -165,7 +168,7 @@ Questa configurazione viene utilizzata per configurare i dati da sincronizzare t
 
 ### Configurazione dei dati (percorsi nodo) per la sincronizzazione
 
-Nell’istanza di pubblicazione AEM:
+In AEM’istanza di pubblicazione:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)Web.
@@ -181,7 +184,7 @@ Nell’istanza di pubblicazione AEM:
 
    ![queue-agent-fact](assets/queue-agents-fact.png)
 
-### Distribuzione Adobe Granite - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
+###  Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Questa configurazione sincronizza l&#39;appartenenza al gruppo tra gli editori.\
 Se la modifica dell&#39;appartenenza di un gruppo in un editore non ne aggiorna l&#39;appartenenza ad altri editori, accertatevi che **ref:members** sia aggiunto ai nomi **delle proprietà** analizzate.
@@ -190,16 +193,16 @@ Se la modifica dell&#39;appartenenza di un gruppo in un editore non ne aggiorna 
 
 ### Per garantire la sincronizzazione dei membri
 
-In ogni istanza di pubblicazione AEM:
+Per ogni istanza di pubblicazione AEM:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)Web.
 
    Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr).
-1. Individuare **[!UICONTROL Adobe Granite Distribution - Diff Observer Factory]**.
+1. Individuare **[!UICONTROL distribuzione granite Adobe - Diff Observer Factory]**.
 1. Selezionate la configurazione esistente da aprire per la modifica (icona matita).
 
-   Verifica nome **** agente: `socialpubsync` \-reverse&amp;ast;&amp;ast;.
+   Verifica nome **** agente: `socialpubsync` \&amp;reverse&amp;ast;&amp;ast;.
 1. Selezionare la casella di controllo **[!UICONTROL Abilitato]** .
 1. Specificate **rep`:members`**come`description`per propertyName nei nomi **[!UICONTROL delle proprietà]**cercate e Salva.
 
@@ -215,7 +218,7 @@ L’autore controlla gli editori ogni 30 secondi (impostazione predefinita). Se 
 
 ### Per modificare l&#39;intervallo di polling
 
-Nell’istanza di creazione di AEM:
+Per AEM’istanza di creazione:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web, ad esempio [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
@@ -224,11 +227,12 @@ Nell’istanza di creazione di AEM:
    * Seleziona la configurazione esistente da aprire per la modifica (icona matita)
    * Verifica `Name:` \-trigger pianificato **`socialpubsync`**
    * Impostate l&#39;intervallo in secondi sull&#39;intervallo desiderato e salvate.
+
    ![trigger programmato](assets/scheduled-trigger.png)
 
-### Listener di sincronizzazione utenti di AEM Communities {#aem-communities-user-sync-listener}
+###  AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
-Per problemi nella distribuzione Sling in cui vi è una discrepanza nelle iscrizioni e seguenti, controlla se le seguenti proprietà nelle configurazioni di **[!UICONTROL AEM Communities User Sync Listener]** sono impostate:
+Per problemi nella distribuzione Sling in cui vi è una discrepanza nelle sottoscrizioni e seguenti, controllate se le seguenti proprietà nelle configurazioni di **[!UICONTROL AEM Communities User Sync Listener]** siano impostate:
 
 * NodeTypes
 * IgnorableProperties
@@ -239,14 +243,14 @@ Per problemi nella distribuzione Sling in cui vi è una discrepanza nelle iscriz
 
 ### Per sincronizzare iscrizioni, seguiti e notifiche
 
-In ogni istanza di pubblicazione AEM:
+Per ogni istanza di pubblicazione AEM:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web. Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr).
-1. Individua listener **[!UICONTROL di sincronizzazione utenti di]** AEM Communities.
+1. Individua **[!UICONTROL Listener]** di sincronizzazione utenti AEM Communities.
 1. Selezionate la configurazione esistente da aprire per la modifica (icona matita).
 
-   Nome verifica: **`socialpubsync`\-trigger pianificato **
+   Nome verifica: **`socialpubsync`\-programmate-trigger **
 1. Impostate quanto segue **`NodeTypes`** :
 
    rep:Utente
@@ -262,7 +266,7 @@ In ogni istanza di pubblicazione AEM:
    sling:OrderedFolder
 
    I tipi di nodo specificati in questa proprietà verranno sincronizzati e le informazioni sulle notifiche (blog e configurazioni seguite) vengono sincronizzate tra editori diversi.
-1. Aggiungere tutte le cartelle da sincronizzare in **[!UICONTROL DistributedFolders]**. Ad esempio:
+1. Aggiungere tutte le cartelle da sincronizzare in **[!UICONTROL DistributedFolders]**. Ad esempio,
 
    segmenti/punteggio
 
@@ -278,11 +282,11 @@ In ogni istanza di pubblicazione AEM:
 
    rep `:cache` (poiché utilizziamo sessioni collegate, non è necessario sincronizzare questo nodo con editori diversi)
 
-   ![user-sync-list](assets/user-sync-listner.png)
+   ![user-sync-listner](assets/user-sync-listner.png)
 
 ### ID Sling univoco {#unique-sling-id}
 
-L’istanza di creazione di AEM utilizza l’ID Sling per identificare da dove arrivano i dati e a quali editori deve (o non deve) inviare nuovamente il pacchetto.
+AEM’istanza di authoring utilizza l’ID Sling per identificare da dove arrivano i dati e a quali editori deve (o non deve) restituire il pacchetto.
 
 Accertatevi che tutti gli editori di una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riesce. Poiché l&#39;autore non sa da dove recuperare il pacchetto e dove installarlo.
 
@@ -326,7 +330,7 @@ La sincronizzazione degli utenti può interrompersi se `rep:cache `i nodi sono s
 
 ### Per garantire la corretta sincronizzazione degli aggiornamenti tra gli editori
 
-In ogni istanza di pubblicazione AEM:
+Per ogni istanza di pubblicazione AEM:
 
 1. Accedete alla console [](../../help/sites-deploying/configuring-osgi.md)Web, ad esempio [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr).
 1. Individuate il pacchetto di distribuzione **[!UICONTROL Apache Sling - Nome]** del Generatore di fabbrica Vault Package Builder: socialpubsync-vlt.
@@ -345,7 +349,7 @@ In ogni istanza di pubblicazione AEM:
 
 ![vault-package-builder-factory](assets/vault-package-builder-factory.png)
 
-## Risoluzione dei problemi di distribuzione Sling in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
+## Risoluzione dei problemi di distribuzione Sling in  AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
 Se la distribuzione Sling non riesce, provate i seguenti passaggi di debug:
 
@@ -353,18 +357,18 @@ Se la distribuzione Sling non riesce, provate i seguenti passaggi di debug:
 1. **Controllare le configurazioni**. Assicurati che tutte le [configurazioni](sync.md#bestpractices) siano impostate correttamente nell&#39;istanza di AEM Author, come indicato nelle [Best Practices](sync.md#main-pars-header-863110628).
 1. **Verificate le autorizzazioni** utente autorizzate. Se i pacchetti non sono installati correttamente, verificate che l&#39;utente [](../../help/sites-administering/sync.md#createauthuser) autorizzato creato nella prima istanza di pubblicazione abbia gli ACL corretti.
 
-   Per convalidarlo, invece di [creare l&#39;utente](../../help/sites-administering/sync.md#createauthuser) autorizzato, modificate la configurazione [Adobe Granite Distribution - Encrypted Password Transport Secret Provider (Fornitore](../../help/sites-administering/sync.md#adobegraniteencpasswrd) segreto di trasporto password crittografato) nell&#39;istanza Author per utilizzare le credenziali utente Admin. Tentate nuovamente di installare i pacchetti. Se la sincronizzazione utente funziona correttamente con le credenziali dell&#39;amministratore, significa che l&#39;utente di pubblicazione creato non aveva ACL appropriati.
+   Per convalidarlo, invece di [creare l&#39;utente](../../help/sites-administering/sync.md#createauthuser) autorizzato, modificate la configurazione del provider [segreto di trasporto password crittografato - Distribuzione granite del Adobe](../../help/sites-administering/sync.md#adobegraniteencpasswrd) nell&#39;istanza Author per utilizzare le credenziali utente Amministratore. Tentate nuovamente di installare i pacchetti. Se la sincronizzazione utente funziona correttamente con le credenziali dell&#39;amministratore, significa che l&#39;utente di pubblicazione creato non aveva ACL appropriati.
 
-1. **Controllare la configurazione** Diff Observer Factory. Se solo nodi specifici non vengono sincronizzati nella farm di pubblicazione, ad esempio, i membri del gruppo non sono sincronizzati, accertatevi che la configurazione [Adobe Granite Distribution - Diff Observer Factory](../../help/sites-administering/sync.md#diffobserver) sia abilitata e che **rep:members** sia impostato nei nomi **delle proprietà** analizzate.
-1. **Verificate la configurazione del listener di sincronizzazione utenti di AEM Communities.** Se gli utenti creati sono sincronizzati ma le iscrizioni e i seguenti elementi non funzionano, assicurati che la configurazione del listener di sincronizzazione utenti di AEM Communities disponga di:
+1. **Controllare la configurazione** Diff Observer Factory. Se solo nodi specifici non sono sincronizzati nella farm di pubblicazione, ad esempio, i membri del gruppo non sono sincronizzati, accertatevi che la configurazione [Adobe Granite Distribution - Diff Observer Factory](../../help/sites-administering/sync.md#diffobserver) sia abilitata e che **rep:members** siano impostati nei nomi **delle proprietà** analizzate.
+1. **Verificate  configurazione del listener di sincronizzazione utenti AEM Communities.** Se gli utenti creati sono sincronizzati ma le iscrizioni e i seguenti elementi non funzionano, accertatevi che  configurazione del listener di sincronizzazione utenti AEM Communities abbia:
 
    * Tipi di nodo: impostato su **rep:User, nt:unstructure**, **nt:resource**, **rep:ACL**, **sling:Folder** e **sling:OrderedFolder**
    * Nodi ignorabili: impostati su **.token**, **sistema** e **rep:cache**
-   * Cartelle distribuite: impostate le cartelle da distribuire
+   * Cartelle distribuite: impostate le cartelle che desiderate distribuire
 
 1. **Controllate i registri generati durante la creazione dell’utente nell’istanza** Pubblica. Se le configurazioni di cui sopra sono impostate correttamente ma la sincronizzazione utente non funziona, controllate i registri generati al momento della creazione dell&#39;utente.
 
-   Controllare se l&#39;ordine dei registri è lo stesso, come segue:
+   Verificare se l’ordine dei file di registro è lo stesso, come segue:
 
    ```shell
    15.05.2016 18:33:01.523 *INFO* [sling-oak-observation-7422] com.adobe.cq.social.sync.impl.PublisherSyncServiceImpl Handing these paths to the distribution subsystem: [/home/users/C, /home/users/C/Cw-5avWqilmqsNn5hCvK]
@@ -381,7 +385,7 @@ Se la distribuzione Sling non riesce, provate i seguenti passaggi di debug:
    Per eseguire il debug:
 
    1. Disattiva la sincronizzazione utente:
-   1. Nell’istanza di creazione di AEM, effettuate l’accesso con privilegi di amministratore.
+   1. Per AEM’istanza di creazione, effettuate l’accesso con privilegi di amministratore.
 
       1. Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web. Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
       1. Individuare la configurazione **[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**.
@@ -394,7 +398,7 @@ Se la distribuzione Sling non riesce, provate i seguenti passaggi di debug:
    1. Passate a un editore e create un utente sull&#39;editore. Di conseguenza, gli eventi vengono creati.
    1. Controllate l’ [ordine dei registri](sync.md#troubleshoot-sling-distribution-in-aem-communities)creati al momento della creazione dell’utente.
    1. Verificate la creazione di un pacchetto **[!UICONTROL vlt]** in `/var/sling/distribution/packages/socialpubsync-vlt/data`.
-   1. Ora abilitate la sincronizzazione degli utenti nell’istanza di creazione di AEM.
+   1. A questo punto, abilitate la sincronizzazione degli utenti AEM’istanza di creazione.
    1. Nell&#39;editore, modificate gli endpoint di esportazione o importazione in **[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**.
 
       Possiamo scaricare ed estrarre i dati del pacchetto per verificare quali proprietà vengono inviate ad altri editori e quali dati vengono persi.
