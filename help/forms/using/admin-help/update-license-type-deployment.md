@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -25,24 +28,24 @@ Nella pagina Modifica licenza sono visualizzate le informazioni sulla licenza:
 * Data e ora dell’ultimo aggiornamento della licenza
 * Chi ha eseguito l&#39;ultimo aggiornamento
 * Stato corrente della licenza
-* Data di installazione dei moduli AEM
+* Data di installazione AEM moduli
 * Data di scadenza della licenza corrente
 
 >[!NOTE]
 >
->La modifica della licenza si applica a tutti i moduli distribuiti. Prima di modificare il tipo di licenza, è necessario annullare la distribuzione dei moduli che non dispongono di licenza. Non selezionate il tipo di licenza Produzione se l&#39;elenco dei moduli distribuiti contiene moduli diversi da quelli acquistati da Adobe.
+>La modifica della licenza si applica a tutti i moduli distribuiti. Prima di modificare il tipo di licenza, è necessario annullare la distribuzione dei moduli che non dispongono di licenza. Non selezionare il tipo di licenza Produzione se l&#39;elenco dei moduli distribuiti contiene moduli diversi da quelli acquistati da  Adobe.
 
 ## Aggiornare il tipo di licenza {#update-the-license-type}
 
 1. Nella console di amministrazione, fate clic su Licenze.
-1. Leggi il contratto di licenza con l’utente finale dei moduli AEM, seleziona Accetto se sei d’accordo con i termini del contratto, quindi fai clic su Avanti.
+1. Leggere il contratto di licenza per l&#39;utente finale AEM moduli, selezionare Accetto se si è d&#39;accordo con i termini del contratto, quindi fare clic su Avanti.
 1. Nella pagina Modifica licenza, selezionate un tipo di licenza:
 
-   * **** EVAL: Licenza di valutazione di 60 giorni
-   * **** DEV: Licenza di sviluppo permanente
-   * **** NFR: licenza di valutazione biennale
-   * **** IDEV: Iscrizione di 1 anno al programma Adobe Developer
-   * **** Produzione: Licenza perpetua
+   * **EVAL:** Licenza di valutazione di 60 giorni
+   * **DEV:** Licenza di sviluppo permanente
+   * **NFR:** licenza di valutazione biennale
+   * **IDEV:** Iscrizione di 1 anno al  Adobe Developer Program
+   * **Produzione:** Licenza perpetua
 
 1. Selezionare Sì, La Modifica Della Licenza È Valida Per Tutti I Moduli Distribuiti.
 1. Fate clic su Conferma modifica licenza. Viene visualizzato un messaggio che indica che la licenza è stata aggiornata correttamente.
