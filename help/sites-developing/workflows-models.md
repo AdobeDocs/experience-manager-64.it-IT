@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 >[!CAUTION]
 >
->Per l’utilizzo dell’interfaccia classica, consulta la documentazione [di](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) AEM 6.3 per riferimento.
+>Per l’utilizzo dell’interfaccia classica, consulta la documentazione [di](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) AEM 6.3.
 
 Potete creare un modello [di](/help/sites-developing/workflows.md#model) workflow per definire la serie di passaggi eseguiti quando un utente avvia il flusso di lavoro. Potete inoltre definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
 
 Quando un utente avvia un flusso di lavoro, viene avviata un’istanza; si tratta del modello runtime corrispondente, creato al momento della [sincronizzazione](#sync-your-workflow-generate-a-runtime-model) delle modifiche.
 
-## Creazione di un nuovo flusso di lavoro {#creating-a-new-workflow}
+## Creating a New Workflow {#creating-a-new-workflow}
 
 La prima volta che create un nuovo modello di workflow, questo contiene:
 
@@ -45,7 +48,7 @@ Per creare un nuovo flusso di lavoro con l’editor:
 
 1. Select **[!UICONTROL Create]**, then **[!UICONTROL Create Model]**.
 1. Viene visualizzata la finestra di dialogo **[!UICONTROL Aggiungi modello]** flusso di lavoro. Immettete **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** (facoltativo) prima di selezionare **[!UICONTROL Fine]**.
-1. Il nuovo modello è elencato nella console Modelli **[!UICONTROL di]** workflow.
+1. Il nuovo modello è elencato nella console Modelli **** flusso di lavoro.
 1. Selezionate il nuovo flusso di lavoro, quindi utilizzate [**[!UICONTROL Modifica ]**per aprirlo per la configurazione](#editing-a-workflow):
 
    ![wf-01](assets/wf-01.png)
@@ -56,7 +59,7 @@ Per creare un nuovo flusso di lavoro con l’editor:
 >
 >`/var/workflow/models`
 >
->Ad esempio: `/var/workflow/models/prototypes`
+>Esempio, `/var/workflow/models/prototypes`
 >
 >Questa cartella può quindi essere utilizzata per [gestire l’accesso ai modelli presenti nella cartella](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
@@ -97,7 +100,7 @@ Quando si apre un modello [](/help/sites-developing/workflows.md#workflow-types)
 
 Selezionando **[!UICONTROL Modifica]** :
 
-* acquisire una copia del flusso di lavoro `/conf`
+* acquisire una copia del flusso di lavoro in `/conf`
 * rendere disponibile il browser **[!UICONTROL Passi]**
 * consente di apportare modifiche
 
@@ -109,7 +112,7 @@ Selezionando **[!UICONTROL Modifica]** :
 
 ### Aggiunta di un passaggio a un modello {#adding-a-step-to-a-model}
 
-Sarà necessario aggiungere dei passaggi al modello per rappresentare l&#39;attività da eseguire. Ogni passaggio esegue un&#39;attività specifica. Una selezione di componenti passo è disponibile in un’istanza standard di AEM.
+Sarà necessario aggiungere dei passaggi al modello per rappresentare l&#39;attività da eseguire. Ogni passaggio esegue un&#39;attività specifica. Una selezione di componenti passo è disponibile in un’istanza AEM standard.
 
 Quando modificate un modello, i passaggi disponibili vengono visualizzati nei vari gruppi del browser **[!UICONTROL Passaggi]** . Ad esempio:
 
@@ -117,7 +120,7 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
 
 >[!NOTE]
 >
->Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
+>Per informazioni sui componenti del passaggio principale installati con AEM, vedere Riferimento [ai passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
 
 **Per aggiungere un passaggio a un modello**:
 
@@ -127,6 +130,7 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
    * **[!UICONTROL Filtrare]** per passaggi specifici.
    * Utilizzate il selettore a discesa per limitare la selezione a un gruppo specifico di passaggi.
    * Selezionate l’icona Mostra descrizione ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) per visualizzare ulteriori dettagli sul passaggio appropriato.
+
    ![wf-02](assets/wf-02.png)
 
 1. Trascinate i passaggi appropriati nella posizione desiderata nel modello.
@@ -143,9 +147,9 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
 
    È inoltre possibile copiare, tagliare, incollare, raggruppare o eliminare passaggi esistenti; come con l’editor [pagina.](/help/sites-authoring/editing-content.md)
 
-   È inoltre possibile comprimere o espandere i passaggi suddivisi tramite l’opzione della barra degli strumenti: wf- ![comprimere-espandere-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   È inoltre possibile comprimere o espandere i passaggi suddivisi tramite l’opzione della barra degli strumenti: ![wf-comprimere-espandere-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
-1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello runtime.
+1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
 
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
@@ -157,16 +161,17 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
 
    * Toccate il passaggio nel modello di workflow e selezionate **[!UICONTROL Configura]** dalla barra degli strumenti del componente.
    * Fare doppio clic sul passaggio.
+
    >[!NOTE]
    >
-   >Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
+   >Per informazioni sui componenti del passaggio principale installati con AEM, vedere Riferimento [ai passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
 
 1. Configurare le proprietà **[!UICONTROL del]** passo come necessario; le proprietà disponibili dipendono dal tipo di passaggio. Possono essere disponibili anche diverse schede. Ad esempio, il Passaggio **** partecipante predefinito, presente in un nuovo flusso di lavoro come `Step 1`:
 
    ![wf-11](assets/wf-11.png)
 
 1. Conferma gli aggiornamenti con un segno di spunta.
-1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello runtime.
+1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
 
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
@@ -180,17 +185,17 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
 
    ![wf-07](assets/wf-07.png)
 
-1. Confermare la modifica con **[!UICONTROL Save &amp; Close]**; seguita da **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello runtime.
+1. Confermare la modifica con **[!UICONTROL Save &amp; Close]**; seguita da **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
 
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
 >[!NOTE]
 >
->Quando eseguite un flusso di lavoro in modalità [temporanea](/help/sites-developing/workflows.md#transient-workflows) , AEM non memorizza alcuna cronologia del flusso di lavoro. Pertanto, la [timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro. [](/help/sites-authoring/basic-handling.md#timeline)
+>Quando si esegue un flusso di lavoro in modalità [temporanea](/help/sites-developing/workflows.md#transient-workflows) , AEM non viene memorizzata alcuna cronologia del flusso di lavoro. Pertanto, la [timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ### Rendere disponibili i modelli di workflow nell&#39;interfaccia utente touch {#make-workflow-models-available-in-touchui}
 
-Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma manca nel menu a comparsa di selezione nella barra **[!UICONTROL Timeline]** dell’interfaccia touch, seguite la configurazione per renderlo disponibile. Nei passaggi seguenti viene illustrato l&#39;utilizzo del modello di workflow denominato **[!UICONTROL Richiesta di attivazione]**.
+Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma manca nel menu a comparsa di selezione nella barra **[!UICONTROL Timeline]** dell’interfaccia touch, seguite la configurazione per renderlo disponibile. Nei passaggi seguenti viene illustrato l&#39;utilizzo del modello di flusso di lavoro denominato **[!UICONTROL Richiesta di attivazione]**.
 
 1. Verificate che il modello non sia disponibile nell&#39;interfaccia touch. Accedete a una risorsa utilizzando il `/assets.html/content/dam` percorso. Selezionate una risorsa. Aprite **[!UICONTROL Timeline]** nella parte sinistra. Fare clic su **[!UICONTROL Avvia flusso di lavoro]** e confermare che il modello **[!UICONTROL Richiedi attivazione]** non è presente nell&#39;elenco a comparsa.
 
@@ -212,7 +217,7 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma ma
 
 ### Configurazione di un flusso di lavoro per il supporto di più risorse {#configuring-a-workflow-for-multi-resource-support}
 
-È possibile configurare un modello di flusso di lavoro per il supporto [di risorse](/help/sites-developing/workflows.md#multi-resource-support) multiple quando si crea un nuovo modello, oppure modificando uno esistente:
+È possibile configurare un modello di flusso di lavoro per il supporto [di risorse](/help/sites-developing/workflows.md#multi-resource-support) multiple quando si crea un nuovo modello, oppure modificando un modello esistente:
 
 1. Aprite il modello di workflow per la [modifica](#editing-a-workflow).
 1. Selezionare Proprietà **[!UICONTROL modello]** flusso di lavoro dalla barra degli strumenti.
@@ -221,11 +226,11 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma ma
 
    ![wf-08](assets/wf-08.png)
 
-1. Confermare la modifica con **[!UICONTROL Save &amp; Close]**; seguita da **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello runtime.
+1. Confermare la modifica con **[!UICONTROL Save &amp; Close]**; seguita da **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
 
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
-### Configurazione delle fasi del flusso di lavoro (che mostrano lo stato del flusso di lavoro) {#configuring-workflow-stages-that-show-workflow-progress}
+### Configurazione delle fasi del flusso di lavoro (che mostrano l’avanzamento del flusso di lavoro) {#configuring-workflow-stages-that-show-workflow-progress}
 
 [Le fasi](/help/sites-developing/workflows.md#workflow-stages) del flusso di lavoro consentono di visualizzare l’avanzamento di un flusso di lavoro durante la gestione delle attività.
 
@@ -233,9 +238,9 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma ma
 >
 >Se le fasi del flusso di lavoro sono definite in Proprietà **** pagina, ma non sono utilizzate per i passaggi del flusso di lavoro, la barra di avanzamento non mostrerà alcun avanzamento (indipendentemente dal passaggio del flusso di lavoro corrente).
 
-Le fasi da rendere disponibili sono definite nei modelli di flusso di lavoro; i modelli di flusso di lavoro esistenti possono essere aggiornati per includere le definizioni di fase. Potete definire un numero qualsiasi di fasi per il modello di workflow.
+Le fasi da rendere disponibili sono definite nei modelli di flusso di lavoro; i modelli di flusso di lavoro esistenti possono essere aggiornati per includere le definizioni degli stadi. Potete definire un numero qualsiasi di fasi per il modello di workflow.
 
-Per definire **[!UICONTROL i passaggi]** del flusso di lavoro:
+Per definire **[!UICONTROL i stadi]** del flusso di lavoro:
 
 1. Aprite il modello di workflow per la modifica.
 1. Selezionare Proprietà **[!UICONTROL modello]** flusso di lavoro dalla barra degli strumenti. Quindi aprite la scheda **[!UICONTROL Stadi]** .
@@ -261,7 +266,7 @@ Per definire **[!UICONTROL i passaggi]** del flusso di lavoro:
    | Passaggio 5 | Approva |
    | Passaggio 6 | Completa |
 
-1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello runtime.
+1. Confermate le modifiche con **[!UICONTROL Sincronizzazione]** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
 
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
@@ -272,7 +277,7 @@ Per definire **[!UICONTROL i passaggi]** del flusso di lavoro:
    1. Passa a Gestione pacchetti tramite **[!UICONTROL Strumenti]**, **[!UICONTROL Distribuzione]** e **[!UICONTROL Pacchetti]**.
    1. Fate clic su **[!UICONTROL Crea pacchetto]**.
    1. Specificate il Nome **** pacchetto e tutti gli altri dettagli richiesti.
-   1. Fai clic su **[!UICONTROL OK]**. 
+   1. Fai clic su **[!UICONTROL OK]**.
 
 1. Fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti del nuovo pacchetto.
 
@@ -317,12 +322,12 @@ Per configurare il flusso di lavoro da utilizzare con il modulo:
 Ad esempio, verificate il nuovo flusso di lavoro come segue:
 
 1. [Avviate il modello](/help/sites-administering/workflows-starting.md) di workflow dalla console.
-1. Definire il **[!UICONTROL payload]** e confermare.
+1. Definite il **[!UICONTROL payload]** e confermate.
 
 1. Eseguite le azioni necessarie per continuare il flusso di lavoro.
 1. Monitorare i file di registro mentre il flusso di lavoro è in esecuzione.
 
-Potete anche configurare AEM per visualizzare i messaggi **[!UICONTROL DEBUG]** nei file di registro. Per ulteriori informazioni, consulta [Registrazione](/help/sites-deploying/configure-logging.md) e al termine dello sviluppo, reimpostare il livello **[!UICONTROL di]** registro su **[!UICONTROL Informazioni]**.
+È inoltre possibile configurare AEM per visualizzare i messaggi **[!UICONTROL DEBUG]** nei file di registro. Per ulteriori informazioni, consulta [Registrazione](/help/sites-deploying/configure-logging.md) e al termine dello sviluppo, reimpostare il livello **[!UICONTROL di]** registro su **[!UICONTROL Informazioni]**.
 
 ## Esempi {#examples}
 
@@ -353,11 +358,12 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
 
    * Activate **[!UICONTROL Notify user via email]**.
    * Selezionare `Administrator` ( `admin`) per il campo **[!UICONTROL Utente/Gruppo]** .
+
    >[!NOTE]
    >
-   >Per inviare le e-mail, è necessario configurare [](/help/sites-administering/notification.md)i dettagli del servizio e dell&#39;account utente.
+   >Per poter inviare le e-mail, è necessario configurare [i dettagli](/help/sites-administering/notification.md)del servizio e dell&#39;account utente.
 
-1. Conferma gli aggiornamenti con il segno di spunta.
+1. Confermate gli aggiornamenti con il segno di spunta.
 
    Nella panoramica del modello di workflow, il passaggio partecipante verrà rinominato in `Validate Content`.
 
@@ -376,7 +382,7 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
    * **[!UICONTROL Utente/gruppo]**: ad esempio, `projects-administrators`
    * **[!UICONTROL Notifica agli utenti tramite e-mail]**: Attivate questa opzione per ricevere una notifica tramite e-mail all’utente.
 
-1. Trascinare un passo **** di processo sul ramo a destra, aprire le proprietà, specificare i valori seguenti, quindi confermare le modifiche:
+1. Trascinate un passaggio **[!UICONTROL di]** processo sul ramo a destra, aprite le proprietà, specificate i seguenti valori, quindi confermate le modifiche:
 
    * **[!UICONTROL Titolo]**: `Publish Page as Requested`
    * **[!UICONTROL Processo]**: selezionare `Activate Page`. Questa procedura consente di pubblicare la pagina selezionata nelle istanze dell&#39;editore.
@@ -458,4 +464,4 @@ function check() {
 
 Puoi personalizzare qualsiasi flusso di lavoro predefinito. Per ottenere un comportamento personalizzato, sovrapponete i dettagli del flusso di lavoro appropriato.
 
-Ad esempio, **[!UICONTROL Richiesta di attivazione]**. Questo flusso di lavoro viene utilizzato per la pubblicazione di pagine in **[!UICONTROL Siti]** e viene attivato automaticamente quando un autore di contenuto non dispone dei diritti di replica appropriati. Per ulteriori informazioni, consultate [Personalizzazione dell’authoring delle pagine - Personalizzazione del flusso di lavoro](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) di richiesta di attivazione.
+Ad esempio, **[!UICONTROL Richiesta di attivazione]**. Questo flusso di lavoro viene utilizzato per la pubblicazione di pagine in **[!UICONTROL Siti]** e viene attivato automaticamente quando un autore di contenuto non dispone dei diritti di replica appropriati. Per ulteriori informazioni, consulta [Personalizzazione dell’authoring delle pagine - Personalizzazione del flusso di lavoro](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) di richiesta di attivazione.
