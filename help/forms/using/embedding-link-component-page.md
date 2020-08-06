@@ -1,6 +1,6 @@
 ---
-title: Incorporazione del componente collegamento in una pagina
-seo-title: Incorporazione del componente collegamento in una pagina
+title: Incorporazione di un componente collegamento in una pagina
+seo-title: Incorporazione di un componente collegamento in una pagina
 description: 'Potete utilizzare il componente Collegamento per collegare un documento adattivo o un modulo adattivo da qualsiasi pagina.  '
 seo-description: 'Potete utilizzare il componente Collegamento per collegare un documento adattivo o un modulo adattivo da qualsiasi pagina.  '
 uuid: fde56b5f-634c-406f-a026-875f972f7c8f
@@ -10,15 +10,18 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
 
-# Incorporazione del componente collegamento in una pagina{#embedding-link-component-in-a-page}
+# Incorporazione di un componente collegamento in una pagina{#embedding-link-component-in-a-page}
 
 ## Prerequisiti {#prerequisites}
 
-Il componente Collegamento è membro della categoria Document Services. Assicurati che la categoria Document Services sia visibile nel browser Componenti di AEM. Se la categoria non è elencata, seguire i passaggi elencati in [Abilitazione dei componenti](/help/forms/using/enabling-forms-portal-components.md)del portale moduli.
+Il componente Collegamento è membro della categoria Document Services. Assicurarsi che la categoria Document Services sia visibile nel browser dei componenti AEM. Se la categoria non è elencata, seguire i passaggi elencati in [Abilitazione dei componenti](/help/forms/using/enabling-forms-portal-components.md)del portale moduli.
 
 ## Collegamento componente {#link-component}
 
@@ -40,7 +43,7 @@ Per aggiungere un componente Collegamento alla pagina, effettuate le seguenti op
 
    * **Percorso** risorsa: Percorso del repository in cui è memorizzata la risorsa.
    * **Tipo** di rendering: Il formato di rendering: PDF, HTML o Auto. Il tipo di rendering automatico rileva l&#39;ambiente dell&#39;utente ed esegue di conseguenza il rendering del modulo come HTML o come PDF. Ad esempio, se si accede al modulo da un dispositivo mobile, il tipo di rendering automatico esegue il rendering del modulo in HTML.
-   * **** Invia URL:  URL al servlet in cui vengono inviati i dati del modulo.
+   * **Invia URL:**  URL al servlet in cui vengono inviati i dati del modulo.
    * **Profilo** HTML: Profilo per il rendering del modulo come HTML.
    * **Profilo** PDF: Profilo per il rendering del modulo come documento PDF.
 
@@ -54,6 +57,6 @@ Per aggiungere un componente Collegamento alla pagina, effettuate le seguenti op
 * È possibile specificare l&#39;URL di invio di un modulo in più punti e il relativo ordine di precedenza è il seguente:
 
    1. L&#39;URL di invio incorporato nel modulo (nel pulsante di invio) ha la priorità più alta.
-   1. L&#39;URL di invio indicato in Forms Manager ha la priorità media.
+   1. L’URL di invio indicato in Forms Manager ha la priorità media.
    1. L&#39;URL di invio indicato nel portale dei moduli ha la priorità più bassa.
 
