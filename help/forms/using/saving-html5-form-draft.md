@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 ## Profilo personalizzato per consentire la funzione Salva come bozza {#custom-profile-to-allow-save-as-draft-feature}
 
-I moduli AEM forniscono un profilo **Salva come bozza** . È possibile eseguire il rendering di un modulo con il profilo Salva come bozza per abilitare la funzionalità bozza per un modulo HTML5. È possibile specificare il profilo di rendering HTML per un modulo in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+ AEM Forms fornisce un profilo **Salva come bozza** . È possibile eseguire il rendering di un modulo con il profilo Salva come bozza per abilitare la funzionalità bozza per un modulo HTML5. È possibile specificare il profilo di rendering HTML per un modulo in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
 Per abilitare la funzionalità Salva come bozza per il profilo [](/help/forms/using/custom-profile.md)personalizzato esistente, aggiungi le seguenti proprietà al nodo di profilo personalizzato:
 
@@ -70,4 +73,4 @@ Per abilitare l&#39;elenco dei moduli per il componente Bozza e Invia, aggiunger
  </tbody> 
 </table>
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo /content/forms/fp nell&#39;istanza Pubblica. Per informazioni dettagliate, potete aggiungere il vostro provider di archiviazione personalizzato. Per informazioni, consultate Memorizzazione [personalizzata per il componente](/help/forms/using/adding-custom-storage-provider-forms.md)Bozze e invii.
+Per impostazione predefinita,  AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo /content/forms/fp nell&#39;istanza Pubblica. Per informazioni dettagliate, potete aggiungere il vostro provider di archiviazione personalizzato. Per informazioni, consultate Memorizzazione [personalizzata per il componente](/help/forms/using/adding-custom-storage-provider-forms.md)Bozze e invii.
