@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 15%
 
 ---
 
@@ -97,7 +100,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   <tr>
    <td><p>editPictureClause</p> </td> 
    <td><p>xsdRef</p> </td> 
-   <td><p>nome</p> </td> 
+   <td><p>name</p> </td> 
   </tr>
   <tr>
    <td><p>mandatory</p> </td> 
@@ -225,7 +228,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
    <td><p>getSelectedIndex</p> </td> 
   </tr>
   <tr>
-   <td><p>repeatPanelPath</p> </td> 
+   <td><p>ripetablePanelPath</p> </td> 
    <td><p>getItemIdentifier</p> </td> 
    <td><p>mobileLayout</p> </td> 
   </tr>
