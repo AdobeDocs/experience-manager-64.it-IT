@@ -4,13 +4,16 @@ description: Scoprite come personalizzare ed estendere l’Editor risorse e cond
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione ed estensione delle risorse {#customizing-and-extending-assets}
 
-Asset Editor è il punto di accesso principale che gli utenti di un sito Web Adobe Enterprise Manager (AEM) utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
+Asset Editor è il punto di accesso principale che gli utenti di un sito Web Enterprise Manager (AEM)  Adobe utilizzeranno per trovare, visualizzare e manipolare le risorse digitali presenti nell’archivio.
 
 In qualità di sviluppatore AEM, potete personalizzare ed estendere l’Editor risorse in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
@@ -33,6 +36,6 @@ In qualità di sviluppatore AEM, potete personalizzare ed estendere l’Editor r
 
 ## Personalizzazione delle rappresentazioni {#customizing-renditions}
 
-Nella terminologia di Risorse AEM una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in scala e un’altra in scala di grigio.
+ terminologia di AEM Assets, una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
 
 Le rappresentazioni in cui è disponibile una particolare risorsa possono essere personalizzate e create nuove rappresentazioni.
