@@ -86,7 +86,7 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Nell’area di lavoro AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX e il renderer HTML visualizza il riepilogo.
+Nell’area di lavoro  AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX e il renderer HTML visualizza il riepilogo.
 
 Il layout di riepilogo può essere modificato senza modificare il processo. Il renderer HTML visualizza il riepilogo in modo appropriato.
 
