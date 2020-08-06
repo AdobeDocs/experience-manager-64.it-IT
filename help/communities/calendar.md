@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 7%
 
 ---
 
@@ -21,20 +24,20 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 La funzione di calendario supporta la fornitura di informazioni sull&#39;evento community in formato calendario a tutti i visitatori del sito o solo ai visitatori del sito (membri della community), mentre solo i membri autorizzati possono aggiungere eventi.
 
-Questa sezione della documentazione descrive:
+Questa sezione della documentazione descrive quanto segue:
 
 * Aggiunta della funzione calendario a un sito AEM
 * Impostazioni di configurazione per `Calendar`i componenti
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
 
-Per aggiungere un `Calendar` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Calendar` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Calendar`
 
 e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione che gli utenti potranno rivedere.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](calendar-basics-for-developers.md#essentials-for-client-side) richieste, viene visualizzato così il `Calendar` componente.
 
@@ -84,7 +87,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificare se consentire o meno l&
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Dimensione massima per file immagine allegato]**
 
@@ -112,7 +115,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificare se consentire o meno l&
 
 * **[!UICONTROL Filtro intervallo di date]**
 
-   Definisce il numero di giorni aggiunti alla data corrente per calcolare il valore &quot;A&quot; del filtro della pagina di elenco eventi del calendario. Il numero predefinito è 30.
+   Definisce il numero di giorni aggiunti alla data corrente al fine di calcolare il valore &quot;A&quot; del filtro della pagina di elenco eventi del calendario. Il numero predefinito è 30.
 
 * **[!UICONTROL Consenti contenuto in primo piano]**
 
@@ -156,7 +159,7 @@ Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti n
 
 * **[!UICONTROL Namespace consentiti]**
 
-   Pertinente se `Allow Tagging` è selezionato nella scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **[!UICONTROL Limite di suggerimenti]**
 
@@ -180,7 +183,7 @@ Nell&#39;ambiente di pubblicazione, la funzione calendario visualizzerà un camp
 
 Quando viene selezionato un evento del calendario, vengono visualizzati i dettagli, la descrizione e i commenti dell&#39;evento del calendario.
 
-Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore, un amministratore, un membro della community, un membro privilegiato o un anonimo.
+Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore, un amministratore, un membro della community, un membro privilegiato o un utente anonimo.
 
 ### Moderatori e amministratori {#moderators-and-administrators}
 
@@ -204,7 +207,7 @@ In particolare, possono
 
 ### Anonimo {#anonymous}
 
-I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere gli eventi del calendario postati, tradurli se supportati, ma non aggiungere un evento o un commento né contrassegnare eventi o commenti di altri utenti.
+I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere gli eventi del calendario postati, tradurli se supportati, ma non possono aggiungere un evento o un commento né contrassegnare eventi o commenti di altri utenti.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
