@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 83%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe non intende migliorare ulteriormente il tracciamento dei messaggi e-mail aperti/non pervenuti a destinazione inviati dal servizio SMTP AEM.
+> Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate AEM servizio SMTP.
 >
->È consigliabile [sfruttare Adobe Campaign e la relativa integrazione](/help/sites-administering/campaign.md)AEM.
+>La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
 
 Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione, AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi. La frequenza di rimbalzo è impostata su 3 come impostazione predefinita, ma è possibile modificarla.
 
