@@ -2,7 +2,7 @@
 title: Utilizzo dei grafici in Interactive Communications
 seo-title: Componente grafico in Interactive Communications
 description: 'Utilizzando i grafici in una comunicazione interattiva, è possibile condensare grandi quantità di informazioni in un formato visivo facile da analizzare e comprendere  '
-seo-description: In AEM Forms è disponibile un componente grafico che consente di creare grafici nella comunicazione interattiva. Questo documento descrive le configurazioni di base e agente del componente grafico.
+seo-description: ' AEM Forms fornisce un componente grafico che consente di creare grafici nella comunicazione interattiva. Questo documento descrive le configurazioni di base e di agente del componente grafico.'
 uuid: dedd670c-030b-4497-bbcb-3ad935cebcda
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '2426'
+ht-degree: 0%
 
 ---
 
@@ -35,10 +38,11 @@ Durante la creazione di una comunicazione interattiva, è possibile aggiungere g
 
 Completa i seguenti passaggi per aggiungere un grafico a una comunicazione interattiva:
 
-1. Dalla barra laterale Componenti di AEM, trascina e rilascia il componente Grafico in uno dei canali Web o di stampa seguenti di una comunicazione interattiva:
+1. Dalla barra laterale AEM Componenti, trascinate il componente Grafico in uno dei seguenti canali di stampa o Web di una comunicazione interattiva:
 
    * Canale di stampa: Area di destinazione e campo immagine
    * Canale Web: Area Pannello e Target
+
    Il componente Grafico eliminato crea un segnaposto per un grafico.
 
 1. Toccate il componente grafico nell’editor delle comunicazioni interattive e, dalla barra degli strumenti dei componenti, selezionate **[!UICONTROL Configura (]** configure_icon ![](assets/configure_icon.png)).
@@ -46,21 +50,22 @@ Completa i seguenti passaggi per aggiungere un grafico a una comunicazione inter
    Viene visualizzata la barra laterale Proprietà con le proprietà Base del grafico.
 
    ![Proprietà di base di un grafico del tipo di linea nel canale di stampa](assets/chart_basicproperties.png)
-   **** Figura: Proprietà *di base di un grafico a linee nel canale di stampa*
+   **Figura:** *Proprietà di base di un grafico del tipo di linea nel canale di stampa*
 
    ![Proprietà di base di un grafico del tipo di linea nel canale Web](assets/basicpropertieswebchannel.png)
-   **** Figura: Proprietà *di base di un grafico a linee nel canale Web*
+   **Figura:** *Proprietà di base di un grafico del tipo di linea nel canale Web*
 
 1. Configurare le proprietà di base del grafico per il canale di stampa e il canale Web. A parte le proprietà comuni, esistono proprietà specifiche per la stampa e il canale Web e il tipo di grafico.
 
    * **[!UICONTROL Nome]**: Nome dell&#39;oggetto grafico. Il nome del grafico specificato qui non viene visualizzato nell&#39;output del grafico, ma viene utilizzato nelle regole per fare riferimento al grafico.
    * **[!UICONTROL Tipo]** grafico: Specifica il tipo di grafico: Torta, Colonna, Anello, Linea, Linea e Punto, Punto o Area.
-   * **[!UICONTROL Nascondi oggetto]**:Selezionare per nascondere il grafico nell&#39;output finale.
+   * **[!UICONTROL Nascondi oggetto]**: Selezionare questa opzione per nascondere il grafico nell&#39;output finale.
    * Specificate quanto segue per l’asse **** x e l’asse **** y:
 
       * **[!UICONTROL Titolo]**: Specificate i titoli degli assi X e Y da visualizzare nella comunicazione interattiva.
-      * **[!UICONTROL Oggetto del modello dati *]**: Sfogliare e selezionare gli oggetti modello dati per l&#39;asse X e Y del grafico dal modello dati modulo specificato durante la creazione della comunicazione interattiva. Scegliere due proprietà di tipo raccolta/array dello stesso oggetto modello dati padre che abbiano un significato in relazione l&#39;una all&#39;altra per eseguire il grafico sull&#39;asse X e Y di un grafico.
+      * **[!UICONTROL Oggetto del modello dati *]**: Sfogliare e selezionare gli oggetti del modello dati per l&#39;asse X e Y del grafico dal modello dati del modulo specificato durante la creazione della comunicazione interattiva. Scegliere due proprietà di tipo raccolta/array dello stesso oggetto modello dati padre che abbiano un significato in relazione l&#39;una all&#39;altra per eseguire il grafico sull&#39;asse X e Y di un grafico.
       * **[!UICONTROL Funzione]**: Per utilizzare le funzioni statistiche per calcolare i valori sull&#39;asse, selezionare la funzione per l&#39;asse X/Y. Per ulteriori informazioni sulle funzioni, vedere [Uso delle funzioni nel grafico](#usefunction) e nell&#39; [esempio 2: Applicazione delle funzioni somma e media in un grafico](#applicationsumfrequency)a linee.
+
    >[!NOTE]
    >
    >Per il canale di stampa, sull&#39;asse X, l&#39;oggetto del modello dati associato deve essere di tipo Numero, Stringa o Data. Sull&#39;asse Y l&#39;oggetto del modello dati associato deve essere di tipo Number. Si consiglia di utilizzare la legenda sul lato destro del canale di stampa.
@@ -92,19 +97,19 @@ A tal fine, è necessario specificare:
 
 * **[!UICONTROL Descrizione]** da visualizzare al passaggio del mouse su una spesa (solo canale Web) - in questo esempio `${x}: $ ${y}`, che viene visualizzata come Etichetta [spesa: $ Amount] (Esempio: Visita del parco tematico: $ 315)
 
-![](assets/chartprintchannel.png) Grafico a colonne nell’output di stampa di una comunicazione **interattiva** Figura: Grafico a *colonne nell&#39;output di stampa di una comunicazione interattiva*
+![Grafico a colonne nell’output di stampa di una comunicazione](assets/chartprintchannel.png)interattiva **Figura:** *Grafico a colonne nell&#39;output di stampa di una comunicazione interattiva*
 
-******A. Asse Y - Incremento recuperato dalla proprietà del modello dati del modulo e dalla proprietà Titolo impostata su Importo ($)** B. Direzione etichetta dell&#39;asse X impostata su Inclinazione a sinistra **C.** Asse X - Descrizione spesa recuperata dalla proprietà del modello dati modulo e proprietà Titolo impostata su Spesa
+**A.** Asse Y - Incremento recuperato dalla proprietà del modello dati del modulo e dalla proprietà Titolo impostata su Importo ($) **B.** Direzione etichetta dell&#39;asse X impostata su Inclinazione a sinistra **C.** Asse X - Descrizione spesa recuperata dalla proprietà del modello dati modulo e proprietà Titolo impostata su Spesa
 
-![](assets/chartwebchannel.png) Grafico ad anello nell&#39;output Web di una comunicazione **interattiva** Figura: Grafico *ad anello nell&#39;output Web di una comunicazione interattiva*
+![Grafico ad anello nell&#39;output Web di una comunicazione](assets/chartwebchannel.png)interattiva **Figura:** *Grafico ad anello nell&#39;output Web di una comunicazione interattiva*
 
-******A. La proprietà Raggio interno della ciambella è impostata su** B. Mostra proprietà legenda è selezionata e la proprietà Posizione legenda è impostata su Destra **C.** La descrizione comandi visualizza il dettaglio dell&#39;elemento al passaggio del mouse. La descrizione comandi è impostata su ${x}: $ ${y}
+**A.** La proprietà Raggio interno della ciambella è impostata su **B.** Mostra proprietà legenda è selezionata e la proprietà Posizione legenda è impostata su Destra **C.** La descrizione comandi visualizza il dettaglio dell&#39;elemento al passaggio del mouse. La descrizione comandi è impostata su ${x}: $ ${y}
 
 ## Esempio 2: Applicazione delle funzioni Somma e Frequenza in un grafico a linee {#applicationsumfrequency}
 
 Applicando le funzioni in un grafico, è possibile stampare dati non forniti direttamente dal modello dati del modulo. In questo esempio, utilizziamo un esempio di rendiconto sulla carta di credito per comprendere in che modo le funzioni Somma e Frequenza possono essere applicate al grafico.
 
-![](assets/creditcarddatalinechartcopy.png) Grafico a linee senza funzione con tre transazioni **** Figura &quot;Bed and Breakfast&quot;: Grafico a *linee senza funzione con tre transazioni &quot;Bed and Breakfast&quot;*
+![Grafico a linee senza funzione con tre transazioni](assets/creditcarddatalinechartcopy.png)**Figura &quot;Bed and Breakfast&quot;:** *Grafico a linee senza funzione con tre transazioni &quot;Bed and Breakfast&quot;*
 
 ### Sum, funzione {#sum-function}
 
@@ -128,21 +133,21 @@ Nella scheda Base è possibile configurare le seguenti proprietà:
 
 **Titolo (solo canale di stampa)** Specifica il titolo del grafico.
 
-**Tipo** di grafico Specifica il tipo di grafico da generare. Le opzioni disponibili sono Torta, Colonna, Anello, Barra (solo canale Web), Linea, Linea e Punto, Punto e Area. Per ulteriori informazioni, vedere Esempio 1: Output grafico in stampa e Web.
+**Tipo** di grafico Specifica il tipo di grafico da generare. Le opzioni disponibili sono Torta, Colonna, Anello, Barra (solo canale Web), Linea, Linea e Punto, Punto e Area. Per ulteriori informazioni, vedere l&#39;esempio 1: Output grafico in stampa e Web.
 
 **Asse X > Titolo** Specifica il titolo dell&#39;asse x.
 
-**** Asse X > &amp;amp oggetto modello dati;ast; Specificare il nome dell&#39;elemento di raccolta dati del modello di modulo da tracciare sull&#39;asse x.
+**Asse X > &amp;amp oggetto modello dati;ast;** Specificare il nome dell&#39;elemento di raccolta dati del modello di modulo da tracciare sull&#39;asse x.
 
-**Asse X > Funzione** Specifica la funzione statistica/personalizzata da utilizzare per calcolare i valori sull&#39;asse x. Per ulteriori informazioni sulle funzioni, vedere Uso delle funzioni nel grafico e Esempio 2: Applicazione delle funzioni somma e media in un grafico a linee.
+**Asse X > Funzione** Specifica la funzione statistica/personalizzata da utilizzare per il calcolo dei valori sull&#39;asse x. Per ulteriori informazioni sulle funzioni, vedere Uso delle funzioni nel grafico e Esempio 2: Applicazione delle funzioni somma e media in un grafico a linee.
 
 **Asse X > Direzione** etichetta Direzione dell&#39;etichetta sul grafico nel canale di stampa. Se si sceglie la direzione dell&#39;etichetta come Rotazione personalizzata, viene visualizzato il campo Angolo di rotazione personalizzato (gradi). Nel campo Angolo di rotazione personalizzato (gradi), potete scegliere l’angolo di rotazione in passaggi di 15 gradi.
 
 **Asse Y > Titolo** Specifica il titolo dell’asse y.
 
-**** Asse Y > &amp;amp oggetto modello dati;ast; Specifica l&#39;elemento della raccolta dati del modulo da tracciare sull&#39;asse y. Nel canale Stampa, l&#39;oggetto del modello dati per l&#39;asse Y deve essere di tipo Numero.
+**Asse Y > &amp;amp oggetto modello dati;ast;** Specifica l&#39;elemento della raccolta dati del modulo da tracciare sull&#39;asse y. Nel canale Stampa, l&#39;oggetto del modello dati per l&#39;asse Y deve essere di tipo Numero.
 
-**Asse Y > Funzione** Specifica la funzione statistica/personalizzata da utilizzare per calcolare i valori sull&#39;asse y. Per ulteriori informazioni sulle funzioni, vedere Uso delle funzioni nel grafico e Esempio 2: Applicazione delle funzioni somma e media in un grafico a linee.
+**Asse Y > Funzione** Specifica la funzione statistica/personalizzata da utilizzare per il calcolo dei valori sull&#39;asse y. Per ulteriori informazioni sulle funzioni, vedere Uso delle funzioni nel grafico e Esempio 2: Applicazione delle funzioni somma e media in un grafico a linee.
 
 **Mostra legenda** Mostra una legenda per il grafico a torta o a torta quando è attivato.
 
@@ -154,7 +159,7 @@ Nella scheda Base è possibile configurare le seguenti proprietà:
 
 >[!NOTE]
 >
->Potete controllare la larghezza del grafico nel canale Web utilizzando il livello di stile o applicando un tema.
+>È possibile controllare la larghezza del grafico nel canale Web utilizzando il livello di stile o applicando un tema.
 
 **Descrizione (solo per il canale Web)** Specifica il formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati del grafico nel canale Web. Il valore predefinito è \${x}(\${y}). A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili \${x} e \${y} vengono sostituite dinamicamente con i valori corrispondenti sull&#39;asse x e sull&#39;asse y e visualizzate nella descrizione comandi.
 
