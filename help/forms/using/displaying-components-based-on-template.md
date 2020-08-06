@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 Quando un autore crea un modulo adattivo utilizzando un [modello](/help/forms/using/template-editor.md), l&#39;autore del modulo può visualizzare e utilizzare componenti specifici in base ai criteri per i modelli. È possibile specificare un criterio per il contenuto del modello che consente di scegliere un gruppo di componenti che l&#39;autore del modulo vede al momento della creazione del modulo.
 
-## Modifica dei criteri di contenuto di un modello {#changing-the-content-policy-of-a-template}
+## Modifica dei criteri per il contenuto di un modello {#changing-the-content-policy-of-a-template}
 
 Quando create un modello, questo viene creato `/conf` nell’archivio dei contenuti. In base alle cartelle create nella `/conf` directory, il percorso del modello è: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
-Effettuate le seguenti operazioni per mostrare i componenti nella barra laterale in base ai criteri di contenuto di un modello:
+Per visualizzare i componenti nella barra laterale in base ai criteri di contenuto di un modello, effettuate le seguenti operazioni:
 
 1. Aprire CRXDE lite.
 
@@ -31,7 +34,7 @@ Effettuate le seguenti operazioni per mostrare i componenti nella barra laterale
 
 1. In CRXDE, individuate la cartella in cui viene creato il modello.
 
-   Ad esempio: `/conf/<your-folder>/`
+   Esempio: `/conf/<your-folder>/`
 
 1. In CRXDE, passa a: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
@@ -39,13 +42,13 @@ Effettuate le seguenti operazioni per mostrare i componenti nella barra laterale
 
    Percorso del criterio contenuto predefinito: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   Nella `gridFluidLayout` cartella, copiate e incollate il criterio predefinito, quindi rinominatelo. Ad esempio, `myPolicy`.
+   Nella `gridFluidLayout` cartella, copiate e incollate il criterio predefinito, quindi rinominatelo. Esempio, `myPolicy`.
 
    ![Copia dei criteri predefiniti](assets/crx-default1.png)
 
 1. Selezionate il nuovo criterio creato, quindi selezionate la proprietà **components** nel pannello a destra con il tipo `string[]`.
 
-   Quando si seleziona e si apre la proprietà components, viene visualizzata la finestra di dialogo Modifica componenti. La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti utilizzando i **+** e **** i pulsanti. È possibile aggiungere un gruppo di componenti che include i componenti che gli autori desiderano usare.
+   Quando si seleziona e si apre la proprietà Components (Componenti), viene visualizzata la finestra di dialogo Edit components (Modifica componenti). La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti mediante i **+** e **** i pulsanti di scelta. È possibile aggiungere un gruppo di componenti che include i componenti per il modulo che gli autori desiderano utilizzare.
 
    ![Aggiunta o rimozione di componenti nel criterio](assets/add-components-list1.png)
 
