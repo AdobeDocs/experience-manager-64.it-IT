@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provider di risorse di storage MongoDB
 seo-title: MSRP - Provider di risorse di storage MongoDB
-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Informazioni su MSRP {#about-msrp}
 
-Quando i AEM Communities sono configurati per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
+Quando  AEM Communities è configurato per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -33,7 +33,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Versione 2.6 o successiva
    * Non è necessario configurare i logo o la condivisione
    * Consiglia vivamente l&#39;utilizzo di un set di [replica](#mongoreplicaset)
-   * Può essere eseguito sullo stesso host di AEM o in remoto
+   * Può essere eseguito sullo stesso host AEM o in remoto
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -85,15 +85,17 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
       Se eseguite in modalità [SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, impostate questo valore `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181* Per un Ensemble ZooKeeper, immettete valori separati da virgola, come `HOST:PORT` host1:2181,host2:2181 ** Lasciate vuoto se eseguite Solr in modalità standalone utilizzando ZooKeeper interno.\
       *Predefinito*: *&lt;blank>*
    * **[!UICONTROL URL]**solare L’URL utilizzato per comunicare con Solr in modalità standalone.
-Lasciate vuoto se eseguite in modalità SolrCloud.\
+Lasciate vuoto se eseguite in modalità SolrCloud.
+\
       *Predefinito*: https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Raccolta]** Solr Il nome della raccolta Solr.\
+   * **[!UICONTROL Raccolta]** Solr Il nome della raccolta Solr.
+\
       *Predefinito*: collection1
 * Seleziona **[!UICONTROL Invia]**
 
 >[!NOTE]
 >
->Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Consultate anche Elementi [di archiviazione in AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Vedere anche [Elementi di storage in AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### Set di replica MongoDB {#mongodb-replica-set}
 
@@ -127,7 +129,7 @@ Per informazioni dettagliate sulla configurazione, consultate Configurazione [So
 
 Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, è necessario
 
-1. Eseguire l&#39; [aggiornamento ai AEM Communities](upgrade.md)
+1. Eseguire l&#39; [aggiornamento a  AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
    * Per MLS [standard](solr.md#installing-standard-mls)
    * Per MLS [avanzati](solr.md#installing-advanced-mls)
@@ -215,7 +217,7 @@ Per impostare MSRP per un ambiente di dimostrazione o di sviluppo, vedere [Come 
 
 Verificate che MSRP sia stato configurato come provider predefinito, verificando la configurazione dell&#39;opzione di archiviazione. Per impostazione predefinita, il provider delle risorse di storage è JSRP.
 
-Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configurazione](srp-config.md) archiviazione o verificate l’archivio AEM:
+Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Configurazione](srp-config.md) archiviazione o controllate l&#39;archivio AEM:
 
 * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -224,13 +226,13 @@ Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configur
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
-Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a AEM Communities 6.3.
+Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0  esistente, qualsiasi UGC preesistente deve essere convertito in modo da essere conforme alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a  AEM Communities 6.3.
 
 È disponibile uno strumento open source su GitHub per questo scopo:
 
-* [Strumento di migrazione UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare nei AEM Communities 6.1 o versioni successive.
+Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti di AEM social community da importare in  AEM Communities 6.1 o versioni successive.
 
 ### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
 
@@ -256,8 +258,8 @@ Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39; [installa
 Se un tentativo di connessione protetta al server MongoDB non riesce a causa di una definizione di classe mancante, è necessario aggiornare il bundle del driver MongoDB, `mongo-java-driver`, disponibile dall&#39;archivio pubblico del server.
 
 1. Scaricate il driver da [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versione 2.13.2 o successiva)
-1. Copiare il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM
-1. Riavvia l’istanza AEM
+1. Copiare il bundle nella cartella &quot;crx-quickstart/install&quot; per un&#39;istanza AEM
+1. Riavviare l&#39;istanza AEM
 
 ## Riferimenti {#resources}
 
