@@ -1,8 +1,8 @@
 ---
-title: Configurazione per le app AEM
-seo-title: Configurazione per le app AEM
-description: Scopri come configurare le app AEM.
-seo-description: Scopri come configurare le app AEM.
+title: Configurazione per AEM app
+seo-title: Configurazione per AEM app
+description: Scopri come configurare AEM app.
+seo-description: Scopri come configurare AEM app.
 uuid: ab9acd93-da7f-4bb7-8d26-224044899068
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 0%
 
 ---
 
 
-# Configurazione per le app AEM{#configuring-for-aem-apps}
+# Configurazione per AEM app{#configuring-for-aem-apps}
 
-Le app Adobe Experience Manager consentono di aggiornare i contenuti dell’applicazione in modalità aerea (OTA). Il contenuto aggiornato viene memorizzato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza di pubblicazione e verificare la disponibilità di aggiornamenti, l’istanza di pubblicazione deve essere configurata per consentire un’intestazione del referente vuota.
+Adobe Experience Manager Apps consente di aggiornare il contenuto dell&#39;applicazione in modalità aerea (OTA). Il contenuto aggiornato viene memorizzato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza di pubblicazione e verificare la disponibilità di aggiornamenti, l’istanza di pubblicazione deve essere configurata per consentire un’intestazione del referente vuota.
 
 ## Configurazione dell&#39;intestazione del referente vuota {#configuring-empty-referrer-header}
 
@@ -26,7 +29,7 @@ Per configurare il servizio filtro di riferimento:
 * Aprite la console Apache Felix (**Configurazioni**) in:
 * https://&lt;server>:&lt;numero_porta>/system/console/configMgr
 * Effettuate il login come amministratore.
-* Nel menu **Configurazioni** , selezionare: Filtro di riferimento *Apache Sling*
+* Nel menu **Configurazioni** , selezionare: *Filtro di riferimento Apache Sling*
 * Selezionare il campo Consenti valori vuoti per consentire intestazioni referrer vuote o mancanti.
 * Click **Save** to save your changes.
 
