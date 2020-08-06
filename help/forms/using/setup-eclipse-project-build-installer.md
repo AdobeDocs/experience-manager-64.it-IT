@@ -1,8 +1,8 @@
 ---
-title: Creare l'app Android AEM Forms
-seo-title: Creare l'app Android AEM Forms
-description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l'app AEM Forms per Android
-seo-description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l'app AEM Forms per Android
+title: Creare l'app  AEM Forms Android
+seo-title: Creare l'app  AEM Forms Android
+description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l'app AEM Forms  per Android
+seo-description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l'app AEM Forms  per Android
 uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -17,24 +17,24 @@ ht-degree: 0%
 ---
 
 
-# Creare l&#39;app Android AEM Forms {#build-the-aem-forms-android-app}
+# Creare l&#39;app  AEM Forms Android {#build-the-aem-forms-android-app}
 
-Per creare l&#39;app Android per AEM Forms, eseguite i seguenti passaggi nella sequenza consigliata.
+Effettuate i seguenti passaggi nella sequenza consigliata per creare l&#39;app Android per  AEM Forms.
 
-1. [Scaricate il pacchetto AEM Forms codice sorgente app](#download-android-zip)
+1. [Scarica il pacchetto  codice sorgente dell&#39;app AEM Forms](#download-android-zip)
 1. [Impostare le variabili di ambiente](#set-environment-variable-android)
-1. [Creare app AEM Forms standard](#set-up-the-xcode-project)
+1. [Creare app standard  AEM Forms](#set-up-the-xcode-project)
 
-## Scaricate il pacchetto AEM Forms codice sorgente app {#download-android-zip}
+## Scarica il pacchetto  codice sorgente dell&#39;app AEM Forms {#download-android-zip}
 
-Il pacchetto AEM Forms codice sorgente dell’app fa riferimento all’ `adobe-lc-mobileworkspace-src-<version>.zip` archivio. Questo archivio include il codice sorgente richiesto per creare un&#39;app AEM Forms personalizzata. L&#39;archivio è incluso nel `adobe-aemfd-forms-app-src-pkg-<version>.zip`pacchetto disponibile sul Software Distribution.
+ pacchetto di codice sorgente dell&#39;app AEM Forms fa riferimento all&#39; `adobe-lc-mobileworkspace-src-<version>.zip` archivio. Questo archivio include il codice sorgente richiesto per creare un&#39;app AEM Forms  personalizzata. L&#39;archivio è incluso nel `adobe-aemfd-forms-app-src-pkg-<version>.zip`pacchetto disponibile sul Software Distribution.
 
 Per scaricare il `adobe-aemfd-forms-app-src-pkg-<version>.zip` file, effettuate le seguenti operazioni:
 
 1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
-1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. Nella sezione **[!UICONTROL Filtri]** :
-   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   1. Selezionate **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
    2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
 1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
 1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
@@ -48,22 +48,22 @@ Nell’immagine seguente viene visualizzata la struttura della `adobe-lc-mobilew
 
 ## Impostare le variabili di ambiente {#set-environment-variable-android}
 
-Impostate le seguenti variabili di ambiente prima di avviare il processo di creazione per l&#39;app AEM Forms:
+Impostate le seguenti variabili di ambiente prima di avviare il processo di creazione per l&#39;app AEM Forms :
 
 * Impostare la variabile di ambiente JAVA_HOME sul percorso del software JDK nel file system locale. Ad esempio, C:\Program Files\Java\jdk1.8.0_181
 * Impostate la variabile di ambiente del `ANDROID_SDK_ROOT` sistema sul percorso SDK per Android. Ad esempio, C:\Users\username\AppData\Local\Android\Sdk
 * Impostate la variabile di ambiente del `Path` sistema in modo che includa le posizioni delle cartelle platform-tools e tools per Android. Ad esempio, C:\Users\username\AppData\Local\Android\Sdk\platform-tools and C:\Users\username\AppData\Local\Android\Sdk\tools.
 
-## Creare app AEM Forms standard {#set-up-the-xcode-project}
+## Creare app standard  AEM Forms {#set-up-the-xcode-project}
 
-Dopo aver salvato il file adobe-lc-mobileworkspace-src-&lt;versione>.zip nel file system locale e aver impostato le variabili di ambiente, create l&#39;app Android AEM Forms standard utilizzando una delle seguenti opzioni:
+Dopo aver salvato il file adobe-lc-mobileworkspace-src-&lt;versione>.zip nel file system locale e aver impostato le variabili di ambiente, create l&#39;app standard  AEM Forms Android utilizzando una delle seguenti opzioni:
 
-* [Creare app AEM Forms con Android Studio](#using-android-studio)
+* [Creare  app AEM Forms con Android Studio](#using-android-studio)
 * [Genera file .apk con Android Studio](#generate-apk-android-studio)
 
-### Creare app AEM Forms con Android Studio {#using-android-studio}
+### Creare  app AEM Forms con Android Studio {#using-android-studio}
 
-Per creare app AEM Forms con Android Studio, effettuate le seguenti operazioni:
+Per creare &#39;app AEM Forms utilizzando Android Studio, effettuate le seguenti operazioni:
 
 1. Avviate l&#39;applicazione Android Studio sul computer.
 1. Fate clic su **Apri un progetto** Android Studio esistente. Se la finestra di dialogo per l&#39;apertura di un progetto esistente non viene visualizzata automaticamente, selezionare **File** > **Apri**.
@@ -74,7 +74,7 @@ Per creare app AEM Forms con Android Studio, effettuate le seguenti operazioni:
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. Selezionate **android** dal riquadro a sinistra e fate clic su **Esegui** > **Esegui &#39;android&#39;**.
-1. Selezionate il dispositivo Android dalla sezione Dispositivi collegati della finestra di dialogo Seleziona Target distribuzione e fate clic su OK.
+1. Selezionate il dispositivo Android dalla sezione Dispositivi collegati della finestra di dialogo Seleziona destinazione di distribuzione, quindi fate clic su OK.
 
    Dopo aver creato con successo l&#39;ambiente di sviluppo, ora puoi applicare le personalizzazioni sull&#39;app. Utilizzate i seguenti articoli per personalizzare l&#39;app:
 
