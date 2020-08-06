@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Il file di configurazione contiene le informazioni di conversione di PDF Generat
 
 >[!NOTE]
 >
->Non è possibile modificare l&#39;impostazione del timeout per PDF Generator importando un file nativo2pdfconfig.xml personalizzato. L&#39;impostazione del timeout in tale file è solo a scopo informativo e visualizza l&#39;impostazione corrente in PDF Generator. Per modificare l&#39;impostazione relativa al timeout, vedere &quot;Impostazione dei parametri di prestazioni di PDF Generator&quot; in [Installazione e distribuzione di moduli](https://www.adobe.com/go/learn_aemforms_installJBoss_63)AEM.
+>Non è possibile modificare l&#39;impostazione del timeout per PDF Generator importando un file nativo2pdfconfig.xml personalizzato. L&#39;impostazione del timeout in tale file è solo a scopo informativo e visualizza l&#39;impostazione corrente in PDF Generator. Per modificare l&#39;impostazione del timeout, vedere &quot;Impostazione dei parametri di prestazioni di PDF Generator&quot; in [Installazione e distribuzione di moduli](https://www.adobe.com/go/learn_aemforms_installJBoss_63)AEM.
 
 ## Esporta il file di configurazione corrente {#export-your-current-configuration-file}
 
@@ -29,9 +32,9 @@ Il file di configurazione contiene le informazioni di conversione di PDF Generat
 1. Per esportare le impostazioni, selezionate l’opzione appropriata:
 
    * Per esportare tutte le impostazioni denominate, selezionate Scarica intera configurazione.
-   * Per esportare solo un’impostazione Adobe PDF, un’impostazione di protezione o un tipo di file, selezionare Scarica configurazione minima.
+   * Per esportare solo un&#39;impostazione Adobe PDF , un&#39;impostazione di protezione o un tipo di file, selezionate Scarica configurazione minima.
 
-      Se state esportando una configurazione minima, selezionate le impostazioni Adobe PDF, protezione e tipo di file da esportare.
+      Se state esportando una configurazione minima, selezionate le  impostazioni Adobe PDF, protezione e tipo di file da esportare.
 
 1. Fate clic su Scarica e salvate il file XML nella posizione appropriata.
 
