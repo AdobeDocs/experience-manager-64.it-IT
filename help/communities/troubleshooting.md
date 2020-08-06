@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ L&#39;utilizzo del dispatcher 4.1.6 o versione successiva risolverà il problema
 
 ### Impossibile accedere al post del forum dopo l&#39;aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati e successivamente il sito è stato aggiornato ad AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
+Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati, e quindi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
 
 carattere pattern non valido &#39;a&#39;\
 Impossibile inviare la richiesta a /content/demoforums/forum-test.html su questo server
@@ -62,7 +65,7 @@ Durante l&#39;avvio (non il primo, ma ogni altro dopo) nei registri potrebbe ess
 
 * 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
 
-Questo avviso può essere ignorato in modo sicuro come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito da un helper [](handlebars-helpers.md#i-n)i18n specifico di AEM. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato in modo sicuro come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito con un AEM helper [](handlebars-helpers.md#i-n)i18n specifico. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avvertenza nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -81,7 +84,7 @@ Questi avvisi possono essere ignorati in modo sicuro.
 
 ### Errore nei registri: NoClassDefFoundError per IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-L’aggiornamento di AEM 5.6.1 GA all’ultima versione di cq-socialcommunity-pkg-1.4.x o AEM 6.0 genera errori nel file di registro durante l’avvio, a causa di una condizione che si risolve da sola come evidenziato dall’errore non visualizzato al riavvio.
+L&#39;aggiornamento AEM 5.6.1 GA alla versione più recente di cq-socialcommunity-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
