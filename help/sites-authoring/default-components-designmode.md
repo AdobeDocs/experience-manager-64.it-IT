@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 82%
 
 ---
 
@@ -86,6 +89,7 @@ Per attivare o disattivare un componente:
 
    * Componenti consentiti
    * Impostazioni
+
    **Componenti consentiti**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ Per attivare o disattivare un componente:
    * Se la casella contiene un meno (-) significa che è selezionato almeno un elemento del gruppo, ma non tutti.
    * È disponibile un sistema di ricerca per filtrare i componenti in base al nome.
    * Il numero a destra del nome di un gruppo di componenti indica quanti sono i componenti selezionati in tale gruppo, a prescindere dal filtro.
+
    Definisci la configurazione di ogni componente di pagina. Se le pagine figlie usano lo stesso modello e/o lo stesso componente di pagina (generalmente allineato), la stessa configurazione sarà applicata al sistema di paragrafi corrispondente.
 
    >[!NOTE]
@@ -130,6 +135,7 @@ Per attivare o disattivare un componente:
    * Principale
    * Funzioni
    * Stili
+
    **Proprietà**
 
    La scheda **Proprietà** consente di configurare i parametri di progettazione principali del componente. Ad esempio, per un componente immagine puoi definire la dimensione massima e minima consentita dell’immagine.
