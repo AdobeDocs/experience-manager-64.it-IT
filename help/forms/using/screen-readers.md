@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # assistenti vocali per moduli HTML5 {#screen-readers-for-html-forms}
 
-I componenti per moduli HTML5 eseguono il rendering del modello di modulo XFA in un formato HTML5. Tutti i browser standard che supportano HTML5 possono eseguire il rendering di questi moduli. Per consentire un&#39;esperienza di acquisizione dei dati simile nei moduli PDF e HTML5, il layout dei moduli PDF viene mantenuto nei moduli HTML5.
+I componenti per moduli HTML5 eseguono il rendering del modello di modulo XFA in un formato HTML5. Tutti i browser standard che supportano HTML5 possono eseguire il rendering di questi moduli. Per supportare un&#39;esperienza di acquisizione dei dati simile nei moduli PDF e HTML5, il layout dei PDF forms viene mantenuto nei moduli HTML5.
 
 I moduli HTML5 utilizzano costrutti HTML standard che consentono di utilizzare con tali moduli normali strumenti di accesso facilitato per HTML. Se un modulo è progettato in base alle procedure ottimali per i moduli con accesso facilitato, funziona con qualsiasi assistente vocale supportato. Inoltre, tali moduli sono abilitati per la navigazione tramite tastiera.
 
