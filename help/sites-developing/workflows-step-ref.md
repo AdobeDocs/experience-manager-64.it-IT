@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2833'
+ht-degree: 2%
 
 ---
 
@@ -25,8 +28,9 @@ I modelli di workflow sono composti di una serie di passaggi di vari tipi. In ba
 >
 >Per i passaggi specifici del modulo, vedi anche:
 >
->* [Riferimento al passaggio del flusso di lavoro AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
+>* [AEM Forms Workflow Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Elaborazione delle risorse tramite gestori e flussi di lavoro](/help/assets/media-handlers.md)
+
 >
 
 
@@ -55,7 +59,7 @@ Nella scheda **[!UICONTROL Comune]** della finestra di dialogo delle proprietà 
 
    Il periodo dopo il quale il passaggio verrà &quot;timeout&quot;.
 
-   È possibile selezionare tra: **[!UICONTROL Off]**, **[!UICONTROL Immediato]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]******, 24h.
+   È possibile selezionare tra: **[!UICONTROL Off]**, **[!UICONTROL Immediato]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **** 24h.
 
 * **[!UICONTROL Gestore timeout]**
 
@@ -125,7 +129,7 @@ Il **[!UICONTROL passaggio]** Goto consente di specificare il passaggio successi
 
 * `false`: Il passo **[!UICONTROL Vai]** viene completato e la logica di routing normale determina il passaggio successivo da eseguire.
 
-Il passo **** Vai consente di implementare strutture di routing avanzate nei modelli di workflow. Ad esempio, per implementare un ciclo, è possibile definire **[!UICONTROL Vai passo]** per eseguire un passaggio precedente nel flusso di lavoro, con lo script che valuta una condizione del ciclo.
+Il **[!UICONTROL passaggio]** Goto consente di implementare strutture di routing avanzate nei modelli di workflow. Ad esempio, per implementare un ciclo, è possibile definire **[!UICONTROL Vai passo]** per eseguire un passaggio precedente nel flusso di lavoro, con lo script che valuta una condizione del ciclo.
 
 ### Passaggio Vai - Configurazione {#goto-step-configuration}
 
@@ -140,7 +144,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 
 >[!CAUTION]
 >
->Specificare il percorso **** dello script o **[!UICONTROL lo script]**. Non è possibile utilizzare entrambe le opzioni contemporaneamente. Se si specificano valori per entrambe le proprietà, il passaggio utilizza il Percorso **** script.
+>Specificare il percorso **** dello script o **[!UICONTROL lo script]**. Entrambe le opzioni non possono essere utilizzate allo stesso tempo. Se si specificano valori per entrambe le proprietà, il passaggio utilizza il Percorso **** script.
 
 #### Simulazione di un ciclo for {#simulating-a-for-loop}
 
@@ -197,6 +201,7 @@ La divisione **[!UICONTROL OR (OR Split]** ) crea una divisione nel flusso di la
       * **[!UICONTROL Percorso]** script: Percorso di un file contenente lo script.
       * **[!UICONTROL Script]**: Aggiungere lo script nella casella.
       * **[!UICONTROL Percorso]** predefinito: Il ramo predefinito viene seguito quando più rami corrispondono a true. Per impostazione predefinita è possibile specificare solo un ramo.
+
    >[!NOTE]
    >
    >Per ciascun ramo è disponibile una scheda separata:
@@ -209,7 +214,7 @@ La divisione **[!UICONTROL OR (OR Split]** ) crea una divisione nel flusso di la
 
    >[!CAUTION]
    >
-   >Specificare il percorso **** dello script o **[!UICONTROL lo script]**. Non è possibile utilizzare entrambe le opzioni contemporaneamente. Se si specificano valori per entrambe le proprietà, il passaggio utilizza il Percorso **** script.
+   >Specificare il percorso **** dello script o **[!UICONTROL lo script]**. Entrambe le opzioni non possono essere utilizzate allo stesso tempo. Se si specificano valori per entrambe le proprietà, il passaggio utilizza il Percorso **** script.
 
    >[!NOTE]
    >
@@ -217,7 +222,7 @@ La divisione **[!UICONTROL OR (OR Split]** ) crea una divisione nel flusso di la
 
 * Aggiungi i passaggi del flusso di lavoro ai rami come necessario.
 
-## Passaggi e scelte dei partecipanti {#participant-steps-and-choosers}
+## Passaggi e scelte per i partecipanti {#participant-steps-and-choosers}
 
 ### Passaggio partecipante {#participant-step}
 
@@ -238,6 +243,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 >
 >* Il flusso di lavoro è completato (completato).
 >* Il flusso di lavoro viene interrotto (terminato).
+
 >
 
 
@@ -250,7 +256,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 
 Utilizzare un Passaggio **[!UICONTROL partecipante alla finestra di]** dialogo per raccogliere informazioni dall&#39;utente a cui è assegnato l&#39;elemento di lavoro. Questo passaggio è utile per raccogliere piccole quantità di dati da utilizzare successivamente nel flusso di lavoro.
 
-Al termine del passaggio, la finestra di dialogo **[!UICONTROL Completa elemento]** di lavoro contiene i campi definiti nella finestra di dialogo. I dati raccolti nei campi vengono memorizzati nei nodi del payload del flusso di lavoro. I passaggi successivi del flusso di lavoro possono quindi leggere il valore dalla directory archivio.
+Al termine del passaggio, la finestra di dialogo **[!UICONTROL Completa elemento]** di lavoro contiene i campi definiti nella finestra di dialogo. I dati raccolti nei campi sono memorizzati nei nodi del payload del flusso di lavoro. I passaggi successivi del flusso di lavoro possono quindi leggere il valore dalla directory archivio.
 
 Per configurare il passaggio, specificate il gruppo o l’utente a cui assegnare l’elemento di lavoro e il percorso della finestra di dialogo.
 
@@ -262,7 +268,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 * [**[!UICONTROL Utente/Gruppo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Finestra di dialogo]**
 
-   * **[!UICONTROL Percorso** della finestra di dialogo: Percorso del nodo della finestra di [dialogo creata](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Percorso** della finestra di dialogo: Percorso del nodo del dialogo della [finestra di dialogo creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo{#dialog-participant-step-creating-a-dialog}
 
@@ -273,7 +279,7 @@ Per creare una finestra di dialogo:
 
 #### Passaggio partecipante finestra di dialogo - Memorizzazione dei dati nel payload {#dialog-participant-step-storing-data-in-the-payload}
 
-Potete memorizzare i dati widget nel payload del flusso di lavoro o nei metadati dell’elemento di lavoro. Il formato della `name` proprietà del nodo widget determina la posizione di memorizzazione dei dati.
+Potete memorizzare i dati widget nel payload del flusso di lavoro o nei metadati dell’elemento di lavoro. Il formato della `name` proprietà del nodo del widget determina la posizione di memorizzazione dei dati.
 
 * **[!UICONTROL Archiviare i dati con il payload]**
 
@@ -296,7 +302,7 @@ Potete memorizzare i dati widget nel payload del flusso di lavoro o nei metadati
 
 1. **[!UICONTROL Struttura finestra di dialogo]**
 
-   Le finestre di dialogo per i passi partecipanti alla finestra di dialogo sono simili alle finestre di dialogo create per creare componenti. Sono memorizzati in:
+   Le finestre di dialogo per i passi partecipanti alla finestra di dialogo sono simili alle finestre di dialogo create per la creazione di componenti. Sono memorizzati in:
 
    `/apps/myapp/workflow/dialogs`
 
@@ -371,7 +377,7 @@ Potete memorizzare i dati widget nel payload del flusso di lavoro o nei metadati
 
 Il componente Passaggio **[!UICONTROL partecipante]** dinamico è simile al Passaggio **** partecipante con la differenza che il partecipante viene selezionato automaticamente in fase di esecuzione.
 
-Per configurare il passaggio, selezionate un Selettore **[!UICONTROL partecipanti]** che identifica il partecipante a cui assegnare l’elemento di lavoro, insieme a una finestra di dialogo.
+Per configurare il passaggio, selezionate un Selettore **[!UICONTROL partecipanti]** che identifichi il partecipante a cui assegnare l’elemento di lavoro, insieme a una finestra di dialogo.
 
 #### Passaggio partecipante dinamico - Configurazione {#dynamic-participant-step-configuration}
 
@@ -380,7 +386,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 * [**[!UICONTROL Comune]**](#step-properties-common-tab)
 * **[!UICONTROL Selettore partecipanti]**
 
-   * **[!UICONTROL Selezione]** partecipanti: Nome del selettore [partecipante creato](#dynamic-participant-step-developing-the-participant-chooser).
+   * **[!UICONTROL Selettore]** partecipanti: Nome del selettore [partecipante creato](#dynamic-participant-step-developing-the-participant-chooser).
    * **[!UICONTROL Argomenti]**: Eventuali argomenti richiesti.
    * **[!UICONTROL E-mail]**: Indica se inviare una notifica e-mail all’utente.
 
@@ -398,7 +404,7 @@ Creare un servizio OSGi o un codice ECMAScript che selezioni un utente a cui ass
 
    Gli script devono includere una funzione denominata getParticipant che restituisce un ID utente come `String` valore. Memorizzare gli script personalizzati, ad esempio nella `/apps/myapp/workflow/scripts` cartella o in una sottocartella.
 
-   Uno script di esempio è incluso in un’istanza standard di AEM:
+   Uno script di esempio è incluso in un&#39;istanza AEM standard:
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
@@ -407,7 +413,7 @@ Creare un servizio OSGi o un codice ECMAScript che selezioni un utente a cui ass
    >Non *devi* cambiare nulla nel `/libs` percorso.
    >
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando applicate un hotfix o un pacchetto di funzioni).
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un pacchetto di funzioni).
 
    Questo script seleziona l&#39;iniziatore del flusso di lavoro come partecipante:
 
@@ -427,18 +433,19 @@ Creare un servizio OSGi o un codice ECMAScript che selezioni un utente a cui ass
 
    * `SERVICE_PROPERTY_LABEL` field: Utilizzate questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco dei selettori partecipanti disponibili nelle proprietà Passaggio **[!UICONTROL partecipante]** dinamico.
    * `getParticipant` metodo: Restituisce l&#39;ID Principal risolto dinamicamente come `String` valore.
+
    >[!CAUTION]
    >
-   >Il `getParticipant` metodo restituisce l’ID Principal risolto dinamicamente. Può trattarsi di un ID gruppo o di un ID utente.
+   >Il `getParticipant` metodo restituisce l’ID Principal risolto in modo dinamico. Può trattarsi di un ID gruppo o di un ID utente.
    >
    >
    >Tuttavia, un ID gruppo può essere utilizzato solo per un Passaggio **** partecipante, quando viene restituito un elenco di partecipanti. Per un passo **[!UICONTROL partecipante]** dinamico viene restituito un elenco vuoto che non può essere utilizzato per la delega.
 
-   Per rendere disponibile l’implementazione ai componenti Passo **[!UICONTROL partecipante]** dinamico, aggiungete la classe Java a un bundle OSGi che esporta il servizio e implementate il bundle nel server AEM.
+   Per rendere disponibile l’implementazione ai componenti Passo **[!UICONTROL partecipante]** dinamico, aggiungete la classe Java a un bundle OSGi che esporta il servizio e distribuite il bundle sul server AEM.
 
    >[!NOTE]
    >
-   >**[!UICONTROL Selettore]** casuale partecipanti è un servizio di esempio che seleziona un utente casuale ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). L’esempio di componente Selettore **[!UICONTROL partecipanti]** casuale estende il passo **[!UICONTROL partecipante]** dinamico e utilizza questo servizio come implementazione passo.
+   >**[!UICONTROL Selettore]** casuale partecipanti è un servizio di esempio che seleziona un utente casuale ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). L’esempio di componente Selettore **[!UICONTROL partecipanti]** casuale amplia il passo **[!UICONTROL partecipante]** dinamico e utilizza questo servizio come implementazione passo.
 
 #### Passaggio partecipante dinamico - Esempio di servizio di selezione partecipanti {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -493,11 +500,11 @@ Nella finestra di dialogo Proprietà passo **[!UICONTROL partecipante]** dinamic
 
 Il Passaggio **[!UICONTROL partecipante]** modulo presenta un modulo quando l’elemento di lavoro viene aperto. Quando l&#39;utente compila e invia il modulo, i dati del campo vengono memorizzati nei nodi del payload del flusso di lavoro.
 
-Per configurare il passaggio, specificare il gruppo o l&#39;utente a cui assegnare l&#39;elemento di lavoro e il percorso del modulo.
+Per configurare il passaggio, è necessario specificare il gruppo o l&#39;utente a cui assegnare l&#39;elemento di lavoro e il percorso del modulo.
 
 >[!CAUTION]
 >
->Questa sezione descrive la sezione [Moduli di Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
+>Questa sezione descrive la sezione [Forms dei componenti di base per l’authoring](/help/sites-authoring/default-components-foundation.md#form)delle pagine.
 
 #### Passaggio partecipante modulo - Configurazione {#form-participant-step-configuration}
 
@@ -511,7 +518,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 
 #### Passaggio partecipante modulo - Creazione del modulo {#form-participant-step-creating-the-form}
 
-Creare un modulo da utilizzare normalmente con un passaggio partecipante **[!UICONTROL modulo]** . Tuttavia, i moduli per un Passaggio partecipante modulo devono avere le seguenti configurazioni:
+Creare un modulo da utilizzare normalmente con un passaggio partecipante **[!UICONTROL modulo]** . Tuttavia, i moduli per un passaggio partecipante a un modulo devono avere le seguenti configurazioni:
 
 * Il componente **[!UICONTROL Inizio modulo]** deve avere la proprietà Tipo **** azione impostata su `Edit Workflow Controlled Resource(s)`.
 
@@ -578,7 +585,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
       * I servizi standard ECMAScripts e OSGi, consultate Processi [predefiniti per i passaggi](/help/sites-developing/workflows-process-ref.md)di processo.
       * Creazione di ECMAScripti per un passaggio **[!UICONTROL Processo]** , vedere [Implementazione di un passo Processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creazione di servizi OSGi per un passaggio **[!UICONTROL di processo]** , vedere [Implementazione di un passaggio di processo con una classe](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)Java.
-   * **[!UICONTROL Avanzamento]** gestore:Selezionate questa opzione per avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non è selezionato, lo script di implementazione deve gestire l&#39;avanzamento del flusso di lavoro.
+   * **[!UICONTROL Avanzamento]** gestore: Selezionate questa opzione per avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non è selezionato, lo script di implementazione deve gestire l&#39;avanzamento del flusso di lavoro.
    * **[!UICONTROL Argomenti]**: Argomenti da passare al processo.
 
 
