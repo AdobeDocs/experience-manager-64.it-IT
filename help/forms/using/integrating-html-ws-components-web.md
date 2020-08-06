@@ -1,8 +1,8 @@
 ---
-title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-seo-title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
-seo-description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+title: Integrazione  componenti dell’area di lavoro AEM Forms nelle applicazioni Web
+seo-title: Integrazione  componenti dell’area di lavoro AEM Forms nelle applicazioni Web
+description: Come riutilizzare  componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+seo-description: Come riutilizzare  componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
 
-# Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web {#integrating-aem-forms-workspace-components-in-web-applications}
+# Integrazione  componenti dell’area di lavoro AEM Forms nelle applicazioni Web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-È possibile utilizzare [i componenti](/help/forms/using/description-reusable-components.md) dell&#39;area di lavoro AEM Forms in una propria applicazione Web. L&#39;implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo dell&#39;area di lavoro AEM Forms installato in un&#39;istanza CRX™ per creare un&#39;applicazione Web. Personalizza la soluzione indicata di seguito in base alle tue esigenze specifiche. L’implementazione di esempio riutilizza `UserInfo``FilterList`e `TaskList`componenti all’interno di un portale Web.
+Potete usare  [componenti](/help/forms/using/description-reusable-components.md) dell’area di lavoro AEM Forms nella vostra applicazione Web. L&#39;implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo  area di lavoro AEM Forms installato in un&#39;istanza CRX™ per creare un&#39;applicazione Web. Personalizza la soluzione indicata di seguito in base alle tue esigenze specifiche. L’implementazione di esempio riutilizza `UserInfo``FilterList`e `TaskList`componenti all’interno di un portale Web.
 
-1. Accedere all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://[server]:[port]/lc/crx/de/`. Accertatevi di disporre di un pacchetto di sviluppo del percorso di lavoro AEM Forms installato.
+1. Accedi all&#39;ambiente CRXDE Lite in `https://[server]:[port]/lc/crx/de/`. Accertatevi di disporre di un pacchetto di sviluppo del percorso di lavoro AEM Forms  installato.
 1. Creare un percorso `/apps/sampleApplication/wscomponents`.
 1. Copiate css, immagini, js/libs, js/runtime e js/registry.js
 
@@ -51,11 +54,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <div class="taskListView gcomponent" data-name="tasklist"></div> 
    ```
 
-   Includete anche i file CSS richiesti per i componenti dell&#39;area di lavoro AEM Forms.
+   Includete anche i file CSS richiesti per i componenti dell&#39;area di lavoro di  AEM Forms.
 
    >[!NOTE]
    >
-   >Ciascun componente viene aggiunto al tag del componente (con componente di classe) durante il rendering. Accertatevi che la pagina principale contenga questi tag. Per ulteriori informazioni su questi tag di controllo di base, consultate il `html.jsp` file dell&#39;area di lavoro Moduli AEM.
+   >Ciascun componente viene aggiunto al tag del componente (con componente di classe) durante il rendering. Accertatevi che la pagina principale contenga questi tag. Per ulteriori informazioni su questi tag di controllo di base, vedere il `html.jsp` file  area di lavoro di AEM Forms.
 
 1. Per personalizzare i componenti, potete estendere le viste esistenti per il componente richiesto come segue:
 
