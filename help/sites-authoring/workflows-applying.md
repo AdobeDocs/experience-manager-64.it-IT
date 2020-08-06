@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
@@ -39,6 +42,7 @@ Puoi avviare i flussi di lavoro a partire da:
 >
 >* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md).
 >* [Lavorare con Flussi di lavoro per progetto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -98,6 +102,7 @@ Puoi specificare i dettagli:
    * **titolo flusso di lavoro**.
 
       * Per questa istanza, puoi specificare un titolo che aiuti a identificarla in una fase successiva.
+
    A seconda del modello di flusso di lavoro, sono disponibili anche le seguenti opzioni. Queste consentono di conservare il pacchetto creato come payload, dopo il completamento del flusso di lavoro.
 
    * **Mantieni pacchetto flusso di lavoro**
@@ -124,9 +129,11 @@ Puoi specificare i dettagli:
          * Solo gli elementi figli di primo livello.
          * Solo pagine modificate.
          * Solo pagine già pubblicate.
+
          Tutti gli elementi secondari specificati vengono aggiunti all&#39;elenco di risorse al quale verrà applicato il flusso di lavoro.
 
       * **Rimuovi selezione** per rimuovere una determinata risorsa dal flusso di lavoro.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
