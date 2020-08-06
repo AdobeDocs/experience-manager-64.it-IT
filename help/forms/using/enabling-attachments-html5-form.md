@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,10 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
 1. Nel profilo personalizzato, utilizzate le seguenti configurazioni:
 
    * **multiSelect** -> true o false (true per impostazione predefinita)
-   * **fileSizeLimit** -> value_in_mb (ad esempio 5) (2 MB per impostazione predefinita)
+   * **fileSizeLimit** -> value_in_mb (ad esempio, 5) (2 MB per impostazione predefinita)
    * **buttonText** -> Testo pulsante per la finestra a comparsa (&quot;Allega&quot; per impostazione predefinita)
    * **accettare** -> tipi di file da accettare (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita)
+
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9, gli utenti possono allegare file superiori al limite specificato. È un problema noto.
@@ -50,7 +54,7 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
 
 ## Formato di invio allegato {#attachment-submission-format}
 
-Quando gli allegati sono abilitati, il modulo HTML5 invia dati multiparte. I dati di invio con più parti hanno due **dataXml** e **allegati**.
+Quando gli allegati sono attivati, i moduli HTML5 inviano dati multiparte. I dati di invio con più parti hanno **dataXml** e **allegati** di due parti.
 
 >[!NOTE]
 >
