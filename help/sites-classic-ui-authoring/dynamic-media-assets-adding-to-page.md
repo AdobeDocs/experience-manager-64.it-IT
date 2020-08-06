@@ -22,7 +22,7 @@ ht-degree: 55%
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Elemento multimediale dinamico e File multimediali interattivi sono intelligenti: sanno se aggiungi un&#39;immagine o un video e le opzioni disponibili cambiano di conseguenza.
 
-Se utilizzi AEM come WCM, puoi aggiungere risorse multimediali dinamiche direttamente alla pagina.
+Se utilizzate AEM come WCM, potete aggiungere risorse multimediali dinamiche direttamente alla pagina.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una
 
 ## Componente elementi multimediali dinamici {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] e [!UICONTROL Interactive Media] sono disponibili nella barra [!UICONTROL laterale] in **[!UICONTROL Dynamic Media]**. Puoi utilizzare un componente **[!UICONTROL File multimediali interattivi]** per tutte le risorse interattive, come per esempio video, immagini interattive o inserzioni carosello. Per tutti gli altri componenti dinamici, si consiglia di utilizzare il componente **[!UICONTROL elementi multimediali dinamici]**.
+[!UICONTROL Contenuti multimediali] dinamici e file multimediali  interattivi sono disponibili nella barra [!UICONTROL laterale] in Contenuti multimediali **** dinamici. Puoi utilizzare un componente **[!UICONTROL File multimediali interattivi]** per tutte le risorse interattive, come per esempio video, immagini interattive o inserzioni carosello. Per tutti gli altri componenti dinamici, si consiglia di utilizzare il componente **[!UICONTROL elementi multimediali dinamici]**.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -58,7 +58,7 @@ Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una
 
 ### Componente elementi multimediali dinamici {#dynamic-media-component}
 
-Il componente Dynamic Media è avanzato: a seconda se aggiungete un’immagine o un video, sono disponibili diverse opzioni. Il componente supporta i predefiniti per immagini e i visualizzatori basati su immagini, come set di immagini, set di rotazione, set di file multimediali diversi e video. Inoltre, il visualizzatore è reattivo. In altre parole, le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori basati su HTML5.
+Il componente Contenuti multimediali dinamici è un elemento avanzato, a seconda se aggiungete un’immagine o un video e se disponete di diverse opzioni. Il componente supporta i predefiniti per immagini e i visualizzatori basati su immagini, come set di immagini, set di rotazione, set di file multimediali diversi e video. Inoltre, il visualizzatore è reattivo. In altre parole, le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori basati su HTML5.
 
 >[!NOTE]
 >
