@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 ## Introduzione {#introduction}
 
-Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, classificando i membri in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
 
 Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](implementing-scoring.md).
 
@@ -37,7 +40,7 @@ Per aggiungere un `Leaderboard` componente a una pagina in modalità di creazion
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
@@ -65,7 +68,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le informazioni relativ
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Usa avatar]** Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo membro.
+* **[!UICONTROL Usa avatar]** Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo del membro.
 
    Il valore predefinito è deselezionato.
 
@@ -83,7 +86,7 @@ Nella scheda **[!UICONTROL Regole]** , il sito della community e le relative reg
 
    Il valore predefinito è 10.
 
-## Esempio: Guida dei partecipanti {#example-participants-leaderboard}
+## Esempio: Leaderboard dei partecipanti {#example-participants-leaderboard}
 
 Questo rapporto della classifica deriva dall&#39;applicazione di regole di punteggio di base.
 
