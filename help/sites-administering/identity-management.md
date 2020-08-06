@@ -1,8 +1,8 @@
 ---
 title: Gestione identità
 seo-title: Gestione identità
-description: Informazioni sulla gestione delle identità in AEM.
-seo-description: Informazioni sulla gestione delle identità in AEM.
+description: Ulteriori informazioni sulla gestione dell'identità in AEM.
+seo-description: Ulteriori informazioni sulla gestione dell'identità in AEM.
 uuid: 719601d2-b850-4114-8ece-1b11708a5078
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 I singoli visitatori del sito Web possono essere identificati solo quando è possibile accedervi. Esistono diversi motivi per cui potrebbe essere utile fornire una funzionalità di accesso:
 
-* [I visitatori di AEM](/help/communities/overview.md)CommunitiesSite devono effettuare l&#39;accesso per pubblicare contenuti per la community.
+* [AEM](/help/communities/overview.md)CommunitiesI visitatori del sito devono effettuare l&#39;accesso per inviare contenuti alla community.
 * [Gruppi di utenti chiusi](/help/sites-administering/cug.md)
 
    Potrebbe essere necessario limitare l’accesso al sito Web (o a sezioni di esso) a visitatori specifici.
@@ -49,13 +52,13 @@ Funzionalità aggiuntive possono essere configurate o sviluppate:
 
 >[!NOTE]
 >
->Le informazioni specificate nel profilo possono essere utilizzate anche per fornire all’utente contenuti mirati tramite [Segmenti](/help/sites-administering/campaign-segmentation.md) e [campagne](/help/sites-authoring/personalization.md).
+>Le informazioni specificate nel profilo possono essere utilizzate anche per fornire all’utente contenuti mirati tramite [Segmenti](/help/sites-administering/campaign-segmentation.md) e [Campagne](/help/sites-authoring/personalization.md).
 
-## Moduli di registrazione {#registration-forms}
+## Registrazione Forms {#registration-forms}
 
 Un modulo può essere utilizzato per raccogliere le informazioni di registrazione, quindi generare il nuovo account e il nuovo profilo.
 
-Ad esempio, gli utenti possono richiedere un nuovo profilo utilizzando la pagina Geometrixx\
+Ad esempio, gli utenti possono richiedere un nuovo profilo utilizzando la pagina di Geometrixx\
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![registerform](assets/registerform.png)
@@ -68,7 +71,7 @@ Il nuovo account è visibile anche nella console [](/help/sites-administering/se
 
 ## Accesso {#login}
 
-Il componente login può essere utilizzato per raccogliere le informazioni di login, quindi attivare il processo di login.
+Il componente login può essere usato per raccogliere le informazioni di login, quindi attivare il processo di login.
 
 Questo fornisce al visitatore i campi standard **Nome** utente e **Password**, con un pulsante **Accesso** per attivare il processo di login quando vengono immesse le credenziali.
 
@@ -95,7 +98,7 @@ Per visualizzare i dettagli del tuo profilo fai clic su **Profilo** personale ne
 
 Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-administering/client-context.md) client (nell’ambiente di authoring e con privilegi sufficienti):
 
-1. Aprire una pagina; ad esempio, la pagina Geometrixx:
+1. Aprire una pagina; ad esempio, la pagina di Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -106,7 +109,7 @@ Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-admi
    ![](do-not-localize/loadprofile.png)
 
 1. Selezionate un altro profilo dall’elenco a discesa nella finestra di dialogo; ad esempio, **Alison Parker**.
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 1. Fate di nuovo clic su **Profilo** personale. Il modulo verrà aggiornato con i dettagli di Alison.
 
    ![profilealison](assets/profilealison.png)
@@ -115,9 +118,9 @@ Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-admi
 
 ## Aggiunta di campi alla definizione del profilo {#adding-fields-to-the-profile-definition}
 
-È possibile aggiungere campi alla definizione del profilo. Ad esempio, per aggiungere un campo &quot;Colore preferito&quot; al profilo Geometrixx:
+È possibile aggiungere campi alla definizione del profilo. Ad esempio, per aggiungere un campo &quot;Colore preferito&quot; al profilo di Geometrixx:
 
-1. Dalla console Siti Web andate a Geometrixx Outdoors Site > Inglese > Utente > Profilo personale.
+1. Dalla console Siti Web andate a Geometrixx Outdoors Site > English > User > My Profile (Sito Web).
 
 1. Fate doppio clic sulla pagina **Profilo** personale per aprirla in modalità di modifica.
 
@@ -130,6 +133,7 @@ Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-admi
    * **Nome elemento** - `favoriteColor`
    * **Titolo** - `Favorite Color`
    * **Articoli** - Aggiungi diversi colori come elementi
+
    Fate clic su **OK** per salvare. 
 
 1. Chiudete la pagina e tornate alla console Siti **Web** e attivate la pagina Profilo personale.
@@ -162,7 +166,7 @@ A questo scopo:
 
    Per gestire le azioni relative agli stati.
 
-È possibile definire più stati; ad esempio in Geometrixx questi comprendono:
+È possibile definire più stati; ad esempio, in questi Geometrixx:
 
 * sottoscrizione (o annullamento della sottoscrizione) alle notifiche su newsletter o thread di commenti
 * aggiunta e rimozione di una connessione a un amico
@@ -196,7 +200,7 @@ Tali diritti di accesso sono definiti dal seguente ACL con caratteri jolly:
 
 /home tutti consentono jcr:read rep:dm = &amp;ast;/profile&amp;ast;
 
-Ciò consente:
+Ciò consente di:
 
 * forum, commenti o post di blog per visualizzare informazioni (ad esempio icona o nome completo) dal profilo appropriato
 * collegamenti alle pagine di profilo geometrixx
@@ -209,7 +213,7 @@ Questa operazione può essere eseguita mediante la scheda Controllo **[](/help/s
 
 ## Componenti Profilo {#profile-components}
 
-Sono inoltre disponibili una serie di componenti di profilo per definire i requisiti di profilo del sito.
+Sono inoltre disponibili una serie di componenti di profilo per definire i requisiti di profilo per il sito.
 
 ### Campo per password verificata {#checked-password-field}
 
