@@ -4,6 +4,9 @@ description: Scoprite come aggiungere mappe immagine con collegamento ipertestua
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Toccate l’area sensibile e immettete il testo URL e Alt. Dall&#39;elenco **[!UICONTROL Target]** , specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Destinazione]** per aprire la mappa immagine in una nuova scheda.
+1. Toccate l’area sensibile e immettete il testo URL e Alt. Dall&#39;elenco **[!UICONTROL Target]** , specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Destinazione]** affinché la mappa immagine si apra in una nuova scheda.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
