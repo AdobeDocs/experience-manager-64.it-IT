@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 1%
 
 ---
 
@@ -34,8 +37,8 @@ Semplifica l&#39;elaborazione, consentendo di:
 Fornisce comunicazioni di qualità superiore, consentendo di:
 
 * Gestione delle regole aziendali e del contenuto approvato in un archivio di contenuti centralizzato
-* Utilizzare AEM DAM per gestire le immagini
-* Creare file Adobe PDF per l&#39;archiviazione e il controllo
+* Usare AEM DAM per gestire le immagini
+* Creare  file Adobe PDF per l&#39;archiviazione e il controllo
 * Crea messaggi conformi a livello organizzativo utilizzando contenuto approvato tramite regole aziendali incorporate.
 
 ### Esteso {#extensive}
@@ -43,6 +46,6 @@ Fornisce comunicazioni di qualità superiore, consentendo di:
 Migliora il coinvolgimento dei clienti, consentendo di:
 
 * Aggiunta di tecnologie interattive per abilitare un canale bidirezionale, riducendo gli invii cartacei
-* Protezione delle informazioni riservate grazie alla protezione completa e integrata dei documenti
+* Informazioni riservate Protect con protezione completa e completa dei documenti
 * Inviare la corrispondenza tramite il canale di comunicazione preferito dal cliente, sia elettronico che per posta, mobile o fax.
 
