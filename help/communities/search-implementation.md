@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 ## Panoramica {#overview}
 
-La funzione di ricerca è una funzione essenziale di AEM Communities. Oltre alle funzionalità di ricerca [della piattaforma](../../help/sites-deploying/queries-and-indexing.md) AEM, AEM Communities fornisce l&#39;API [di ricerca](#ugc-search-api) UGC per la ricerca di contenuto generato dall&#39;utente. UGC ha proprietà univoche in quanto viene immesso e memorizzato separatamente da altri contenuti AEM e dai dati utente.
+La funzione di ricerca è una caratteristica essenziale di  AEM Communities. Oltre alle funzionalità di ricerca [della piattaforma](../../help/sites-deploying/queries-and-indexing.md) AEM,  AEM Communities fornisce l&#39;API [di ricerca](#ugc-search-api) UGC per la ricerca di contenuti generati dall&#39;utente (UGC). UGC ha proprietà univoche in quanto viene immesso e memorizzato separatamente da altri contenuti AEM e dati utente.
 
 Per Community, le due operazioni generalmente ricercate sono:
 
@@ -47,7 +50,7 @@ L&#39;archivio [comune](working-with-srp.md) UGC è fornito da uno dei vari prov
 
 ### Ricerche ASRP {#asrp-searches}
 
-Per [ASRP](asrp.md), UGC è memorizzato in Adobe Cloud. Sebbene UGC non sia visibile in CRX, la [moderazione](moderate-ugc.md) è disponibile sia dall’ambiente di creazione che da quello di pubblicazione. L’utilizzo dell’API [di ricerca](#ugc-search-api) UGC funziona per ASRP come per altri SRP.
+Per [ASRP](asrp.md), UGC è memorizzato nel cloud di Adobi . Sebbene UGC non sia visibile in CRX, la [moderazione](moderate-ugc.md) è disponibile sia dall’ambiente di creazione che da quello di pubblicazione. L’utilizzo dell’API [di ricerca](#ugc-search-api) UGC funziona per ASRP come per altri SRP.
 
 Al momento non esistono strumenti per gestire le ricerche ASRP.
 
@@ -59,7 +62,7 @@ Per [MSRP](msrp.md), UGC è memorizzato in MongoDB configurato per utilizzare So
 
 Per quanto riguarda MSRP e Solr:
 
-* Il Solr incorporato per la piattaforma AEM non viene utilizzato per MSRP
+* Il Solr incorporato per la piattaforma AEM non è utilizzato per MSRP
 * Se utilizzate un Solr remoto per la piattaforma AEM, potrebbe essere condiviso con MSRP, ma dovrebbero utilizzare raccolte diverse
 * Solr può essere configurato per la ricerca standard o per la ricerca multilingue (MLS)
 * Per informazioni dettagliate sulla configurazione, consultate Configurazione [](msrp.md#solr-configuration) solr per MSRP
@@ -70,7 +73,7 @@ Quando si creano proprietà personalizzate ricercabili, è necessario rispettare
 
 ### Ricerche JSRP {#jsrp-searches}
 
-Per [JSRP](jsrp.md), UGC è memorizzato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell’archivio dell’istanza di creazione o pubblicazione di AEM in cui è stato immesso.
+Per [JSRP](jsrp.md), UGC è memorizzato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell’archivio dell’istanza di creazione o pubblicazione AEM in cui è stato immesso.
 
 Poiché UGC viene generalmente immesso nell’ambiente di pubblicazione, per i sistemi di produzione con più editori è necessario configurare un cluster [di](topologies.md)pubblicazione, non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
 
@@ -80,13 +83,13 @@ Le funzioni di ricerca personalizzate devono utilizzare l&#39;API [di ricerca](#
 
 #### Indicizzazione quercia {#oak-indexing}
 
-Sebbene gli indici Oak non vengano creati automaticamente per la ricerca della piattaforma AEM, a partire da AEM 6.2 sono stati aggiunti per AEM Communities per migliorare le prestazioni e fornire supporto per l’impaginazione durante la presentazione dei risultati di ricerca UGC.
+Anche se gli indici Oak non vengono creati automaticamente per la ricerca della piattaforma AEM, a partire da AEM 6.2 sono stati aggiunti per  AEM Communities per migliorare le prestazioni e fornire supporto per l&#39;impaginazione durante la presentazione dei risultati di ricerca UGC.
 
 Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare indici aggiuntivi per le proprietà personalizzate per renderle più performanti. Per mantenere la portabilità, attenetevi ai requisiti [di](#naming-of-custom-properties) denominazione quando create proprietà personalizzate ricercabili.
 
-Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [Oak e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
+Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [quercia e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
 
-La [gestione](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) dell&#39;indice Oak è disponibile da ACS AEM Commons. Fornisce:
+La [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) è disponibile da ACS AEM Commons. Fornisce:
 
 * Vista degli indici esistenti
 * Possibilità di avviare un reindicizzazione
@@ -109,7 +112,7 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per le 
 | isSpam | *Booleano* |
 | read | *Booleano* |
 | influenza | *Booleano* |
-|  allegati | *Booleano* |
+| allegati | *Booleano* |
 | sentimento | *Lungo* |
 | contrassegnato | *Booleano* |
 | aggiunto | *Data* |
@@ -125,7 +128,7 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per le 
 | publishDate | *Data* |
 | publishJobId | *Stringa* |
 | ha risposto | *Booleano* |
-| cortese | *Booleano* |
+| discordante | *Booleano* |
 | tag | *Stringa* |
 | cq:Tag | *Stringa* |
 | author_display_name | *Stringa* |
@@ -200,7 +203,7 @@ Gli operatori filtro sono:
 
 Esiste un progetto Adobe Marketing Cloud GitHub che contiene:
 
-[Strumenti SRP di AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
+[AEM Communities SRP Tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Questo archivio contiene strumenti per la gestione dei dati in SRP.
 
@@ -228,7 +231,7 @@ Il valore del `q` parametro è la query. Una volta decodificata la codifica URL,
 
 ## Risorse correlate {#related-resources}
 
-* [Archiviazione](working-with-srp.md) dei contenuti della community - Vengono illustrate le opzioni SRP disponibili per uno store comune UGC
+* [Archiviazione](working-with-srp.md) dei contenuti della community - Descrive le opzioni SRP disponibili per uno store comune UGC
 * [Panoramica](srp.md) del provider di risorse di storage - Introduzione e panoramica sull&#39;utilizzo del repository
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica
 * [SocialUtils Refactoring](socialutils.md) - Metodi di utilità per SRP che sostituiscono SocialUtils
