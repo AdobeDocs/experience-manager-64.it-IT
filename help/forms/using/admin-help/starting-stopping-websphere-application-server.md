@@ -1,8 +1,8 @@
 ---
 title: Avvio e arresto di WebSphere Application Server
 seo-title: Avvio e arresto di WebSphere Application Server
-description: Diverse procedure richiedono di arrestare o avviare l'istanza di WebSphere in cui si desidera distribuire i prodotti dei moduli AEM. Questo documento descrive come avviare e arrestare WebSphere Application Server.
-seo-description: Diverse procedure richiedono di arrestare o avviare l'istanza di WebSphere in cui si desidera distribuire i prodotti dei moduli AEM. Questo documento descrive come avviare e arrestare WebSphere Application Server.
+description: Diverse procedure richiedono l'arresto o l'avvio dell'istanza di WebSphere in cui si desidera distribuire i prodotti AEM moduli. Questo documento descrive come avviare e arrestare WebSphere Application Server.
+seo-description: Diverse procedure richiedono l'arresto o l'avvio dell'istanza di WebSphere in cui si desidera distribuire i prodotti AEM moduli. Questo documento descrive come avviare e arrestare WebSphere Application Server.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
 
 # Avvio e arresto di WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
-Diverse procedure richiedono di arrestare o avviare l&#39;istanza di WebSphere in cui si desidera distribuire i prodotti dei moduli AEM. Se non si è certi che il server applicazioni sia stato avviato, è prima possibile visualizzare lo stato di WebSphere Application Server.
+Diverse procedure richiedono l&#39;arresto o l&#39;avvio dell&#39;istanza di WebSphere in cui si desidera distribuire i prodotti AEM moduli. Se non si è certi che il server applicazioni sia stato avviato, è prima possibile visualizzare lo stato di WebSphere Application Server.
 
 ## Visualizzare lo stato di WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
