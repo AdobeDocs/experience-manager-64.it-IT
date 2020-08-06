@@ -1,8 +1,8 @@
 ---
 title: Supporto token incapsulati
 seo-title: Supporto token incapsulati
-description: Scopri il supporto per token incapsulati in AEM.
-seo-description: Scopri il supporto per token incapsulati in AEM.
+description: Ulteriori informazioni sul supporto per token incapsulati in AEM.
+seo-description: Ulteriori informazioni sul supporto per token incapsulati in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Per impostazione predefinita, AEM usa il gestore autenticazione token per autenticare ogni richiesta. Tuttavia, per soddisfare le richieste di autenticazione, il Gestore autenticazione token richiede l&#39;accesso all&#39;archivio per ogni richiesta. Ciò accade perché i cookie vengono utilizzati per mantenere lo stato di autenticazione. Logicamente, lo stato deve essere mantenuto nella directory archivio per convalidare le richieste successive. In effetti, ciò significa che il meccanismo di autenticazione è statico.
+Per impostazione predefinita, AEM utilizza il gestore autenticazione token per autenticare ogni richiesta. Tuttavia, per soddisfare le richieste di autenticazione, il Gestore autenticazione token richiede l&#39;accesso all&#39;archivio per ogni richiesta. Ciò accade perché i cookie vengono utilizzati per mantenere lo stato di autenticazione. Logicamente, lo stato deve essere mantenuto nella directory archivio per convalidare le richieste successive. In effetti, ciò significa che il meccanismo di autenticazione è statico.
 
 Ciò è di particolare importanza per la scalabilità orizzontale. In una configurazione a più istanze come la farm di pubblicazione descritta di seguito, il bilanciamento del carico non può essere raggiunto in modo ottimale. Con l&#39;autenticazione di stato, lo stato di autenticazione persistente sarà disponibile solo nell&#39;istanza in cui l&#39;utente viene autenticato per la prima volta.
 
@@ -38,9 +38,9 @@ Se un’istanza di pubblicazione non è più disponibile, tutti gli utenti auten
 
 ## Autenticazione senza stato con il token incapsulato {#stateless-authentication-with-the-encapsulated-token}
 
-La soluzione per la scalabilità orizzontale è l&#39;autenticazione senza stato con l&#39;utilizzo del nuovo supporto per token incapsulati in AEM.
+La soluzione per la scalabilità orizzontale è l&#39;autenticazione senza stato con l&#39;utilizzo del nuovo supporto di Token incapsulati in AEM.
 
-Il Token incapsulato è un elemento di crittografia che consente ad AEM di creare e convalidare in modo sicuro le informazioni di autenticazione offline, senza accedere all&#39;archivio. In questo modo, una richiesta di autenticazione può essere eseguita su tutte le istanze di pubblicazione e senza la necessità di connessioni permanenti. Offre inoltre il vantaggio di migliorare le prestazioni di autenticazione, poiché l&#39;archivio non deve essere accessibile per ogni richiesta di autenticazione.
+Il Token incapsulato è un elemento di crittografia che consente AEM creare e convalidare in modo sicuro le informazioni di autenticazione offline, senza accedere all&#39;archivio. In questo modo, una richiesta di autenticazione può essere eseguita su tutte le istanze di pubblicazione e senza la necessità di connessioni permanenti. Offre inoltre il vantaggio di migliorare le prestazioni di autenticazione, poiché l&#39;archivio non deve essere accessibile per ogni richiesta di autenticazione.
 
 Potete vedere come funziona in una distribuzione geograficamente distribuita con autori MongoMK e istanze di pubblicazione TarMK di seguito:
 
@@ -61,12 +61,12 @@ Potete vedere come funziona in una distribuzione geograficamente distribuita con
 >* le sessioni permanenti sono abilitate, oppure
    >
    >
-* Gli utenti sono già creati in AEM all’avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui i gestori **creano** utenti durante il processo di sincronizzazione.
+* Gli utenti sono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui i gestori **creano** utenti durante il processo di sincronizzazione.
 
 
 Per configurare il token incapsulato è necessario tenere in considerazione alcuni aspetti:
 
-1. A causa della crittografia, tutte le istanze devono avere la stessa chiave HMAC. A partire da AEM 6.3, il materiale chiave non è più memorizzato nella directory archivio, ma nel file system effettivo. Tenendo presente questo, il modo migliore per replicare le chiavi consiste nel copiarle dal file system dell&#39;istanza di origine a quello delle istanze di destinazione a cui si desidera replicare le chiavi. Per ulteriori informazioni, vedere la sezione &quot;Replica del tasto HMAC&quot; di seguito.
+1. A causa della crittografia, tutte le istanze devono avere la stessa chiave HMAC. A partire dal AEM 6.3, il materiale chiave non è più memorizzato nella directory archivio, ma nel file system effettivo. Tenendo presente questo, il modo migliore per replicare le chiavi consiste nel copiarle dal file system dell&#39;istanza di origine a quello delle istanze di destinazione a cui si desidera replicare le chiavi. Per ulteriori informazioni, vedere la sezione &quot;Replica del tasto HMAC&quot; di seguito.
 1. Il token incapsulato deve essere abilitato. Questo può essere fatto tramite la console Web.
 
 ### Replica del tasto HMAC {#replicating-the-hmac-key}
@@ -77,10 +77,11 @@ La chiave HMAC è presente come proprietà binaria di `/etc/key` nella directory
 
 Per replicare la chiave tra le istanze, è necessario:
 
-1. Accedete all’istanza di AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare;
+1. accedere all&#39;istanza AEM, in genere un&#39;istanza di creazione, che contiene il materiale chiave da copiare;
 1. Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale. Ad esempio, in questo percorso:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+
    Il `bundle.info` file all’interno di ciascuna cartella identificherà il nome del bundle.
 
 1. Passa alla cartella dei dati. Ad esempio:
