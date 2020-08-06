@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 7b9d3b81-3bb4-4ca6-b6e1-f9adfb455855
 translation-type: tm+mt
 source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 56%
 
 ---
 
@@ -25,4 +28,4 @@ Le aree di visualizzazione sono leggeri file di scena 3D che forniscono un ambie
 
 Il formato di file dell’area di visualizzazione determina quale modulo di rendering puoi usare. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Se prevedi di utilizzare solo il modulo di rendering Rapid Refine™, è accettato qualsiasi formato di file supportato dell’area di visualizzazione.
 
-Tutte le impostazioni di rendering in AEM 3D, tranne il tipo e la dimensione dell’immagine di output, devono essere preconfigurate e salvate nel file dell’area di visualizzazione prima di essere caricate in AEM.
+Tutte le impostazioni di rendering in AEM 3D eccetto il tipo e la dimensione dell’immagine di output devono essere preconfigurate e salvate nel file dell’area di visualizzazione prima di caricare su AEM.
