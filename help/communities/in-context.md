@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Moderazione In-Context {#in-context-moderation}
 
-Per AEM Communities, la moderazione può essere eseguita da amministratori e membri della community trusted direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
+Per  AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community trusted direttamente sulla pagina pubblicata in cui è stato pubblicato il contenuto della community.
 
 Quando si utilizza una console [di](moderation.md)moderazione, le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
 
@@ -37,7 +40,7 @@ L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione 
 
 ## Esempio {#example}
 
-Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare diverse attività di moderazione nell’ambiente di pubblicazione, come illustrato di seguito.
+Utilizzando il sito [Geometrixx](http://localhost:4503/content/sites/engage/en.html) creato quando si [inizia a utilizzare  AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell’ambiente di pubblicazione, come illustrato di seguito.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro di fiducia della comunità aggiungendo lui al gruppo di moderatori-coinvolti nella comunità durante la creazione del sito.
 
@@ -47,7 +50,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
 ### Creare i post del forum {#create-the-forum-posts}
 
-* Accedete come Rebekah Larsen (rebekah.larsen@trashymail.com)
+* Effettuate l&#39;accesso come Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Seleziona forum
    * Seleziona nuovo post
@@ -55,7 +58,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
       Quando cambiare il nettare in Humming Bird Feeder
 
-   * Immettere il testo del corpo
+   * Immettete il testo del corpo
 
       Non ho avuto molto successo quando appendo un mangime per colibrì ogni anno. Sembra che arrivino un giorno o due allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
    * Seleziona post
@@ -64,7 +67,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 * Accedi come Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionate Leggi tutto
+   * Per l&#39;argomento Hummingbird, selezionare Leggi tutto
    * Inserite il commento per Rispondi al post
 
       Cambio il mio una volta alla settimana e li ricevo da maggio a ottobre.
@@ -75,10 +78,10 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 * Accedete come Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionate Leggi tutto
+   * Per l&#39;argomento Hummingbird, selezionare Leggi tutto
    * Inserite il commento per Rispondi al post
 
-      Vendo nettare e alimentatori - visita https://my.viral.url/
+      Vendo nettare e alimentatori - visitare il sito https://my.viral.url/
 
    * Seleziona risposta
    * Seleziona uscita
@@ -87,7 +90,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
 Di seguito è riportata una visualizzazione del forum visualizzato da un visitatore del sito che non ha effettuato l’accesso (5).
 
-Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare contenuti né eseguire azioni di moderazione.
+Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare alcun contenuto né eseguire azioni di moderazione.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -111,7 +114,7 @@ Disconnetti
 
 ### Administrator (#3) {#administrator}
 
-Accedi come amministratore (amministratore) e accedi al thread selezionando Forum, quindi leggi tutto per un post.
+Accedete come amministratore (amministratore) e accedete al thread selezionando Forum, quindi Ulteriori informazioni su un post.
 
 Avviso
 
@@ -122,7 +125,7 @@ Avviso
 
 Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
 
-Tenere presente che, per un amministratore, tutto il contenuto modificabile è visibile, non solo il contenuto del sito della community Geometrixx Engage.
+Tenere presente che, per un amministratore, tutto il contenuto modificabile è visibile, non solo il contenuto del sito della community di Geometrixx Engage.
 
 Il filtro di ricerca è un pannello laterale che attiva o disattiva l’apertura o la chiusura.
 
@@ -145,9 +148,9 @@ Avviso
 
 Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
 
-Per un moderatore della community, è visibile solo il contenuto modificabile del sito della community Geometrixx Engage.
+Per un moderatore della community, è visibile solo il contenuto modificabile presente nel sito della community di Geometrixx Engage.
 
-Il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine è visualizzata con la barra laterale di ricerca disattivata e disattivata), ma non può accedere ad altre console AEM.
+Notate che il moderatore della community dispone delle stesse opzioni dell&#39;amministratore (l&#39;immagine è con la barra laterale di ricerca attivata e disattivata), ma non ha accesso ad altre console AEM.
 
 Disconnetti.
 
