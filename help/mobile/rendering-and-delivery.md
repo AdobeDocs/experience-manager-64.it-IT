@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 8%
 
 ---
 
@@ -18,9 +21,9 @@ source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Il rendering del contenuto AEM può essere facilmente eseguito tramite i servlet [predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+AEM contenuto può essere facilmente rappresentato tramite Servlet [predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 Tali rendering out-of-the-box generalmente passano alla directory archivio e restituiscono il contenuto così com&#39;è.
 
@@ -137,7 +140,7 @@ La tabella seguente mostra le proprietà di Export Configs:
 
 Create un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
-| nome | resourceTypeOverrides |
+| name | resourceTypeOverrides |
 |---|---|
 | jcr:primaryType | nt:unstructured |
 
@@ -222,7 +225,7 @@ Questa configurazione estende l&#39;impostazione predefinita per includere il ra
 
 &lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Consultate le risorse di seguito per ulteriori argomenti in Content Services:
 
