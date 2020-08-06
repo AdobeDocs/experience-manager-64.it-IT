@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe non prevede di migliorare ulteriormente le e-mail aperte/rimbalzate inviate dal servizio SMTP AEM.\
->È consigliabile [sfruttare Adobe Campaign e la relativa integrazione](/help/sites-administering/campaign.md)AEM.
+> Adobe non prevede di migliorare ulteriormente le e-mail aperte/rimbalzate inviate dal servizio SMTP AEM.\
+>La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
 
 Le comunicazioni di e-mail marketing, come le newsletter, sono una parte importante delle campagne marketing, in quanto utili a veicolare i contenuti verso i lead. In AEM è possibile creare newsletter a partire da contenuti AEM esistenti, nonché aggiungere nuovi contenuti specifici per le newsletter.
 
@@ -192,7 +195,8 @@ Per personalizzare le impostazioni della newsletter:
    1. Inserite l’indirizzo e-mail **Da**.
    1. Se necessario, modificate l’**Oggetto** del messaggio e-mail.
    1. Seleziona un **Elenco destinatari predefiniti** dall’elenco a discesa.
-   1. Fai clic su **OK**. 
+   1. Fai clic su **OK**.
+
    Quando si effettua una prova rapida della newsletter o la si invia, i destinatari ricevono un messaggio e-mail con l’indirizzo e-mail e l’oggetto specificati.
 
 ## Prova rapida della newsletter {#flight-testing-newsletters}
