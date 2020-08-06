@@ -1,8 +1,8 @@
 ---
 title: Configurazione dell’ambiente dell’account
 seo-title: Configurazione dell’ambiente dell’account
-description: AEM consente di configurare l’account e alcuni aspetti dell’ambiente di authoring
-seo-description: AEM consente di configurare l’account e alcuni aspetti dell’ambiente di authoring
+description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
+seo-description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -49,13 +52,13 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Lingua**
 
-   Consente di definire la lingua da usare nell’interfaccia utente dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
+   Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
 
    Anche l’interfaccia classica utilizza questa configurazione.
 
 * **Gestione finestre**
 
-   Consente di definire il comportamento o l’apertura delle finestre. Potete selezionare:
+   Consente di definire il comportamento o l’apertura delle finestre. Puoi selezionare:
 
    * **Finestre multiple** (predefinito)
 
@@ -84,7 +87,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
    * **Mostra sempre data esatta**: viene sempre visualizzata la data esatta e non una data relativa.
    * **1 giorno**: viene visualizzata la data relativa per le date entro un giorno; in caso contrario viene visualizzata una data esatta.
-   * **7 giorni (predefinito)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
+   * **7 giorni (impostazione predefinita)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
    * **1 mese**: viene visualizzata la data relativa per le date entro un mese; in caso contrario viene visualizzata una data esatta.
    * **1 anno**: viene visualizzata la data relativa per le date entro un anno; in caso contrario viene visualizzata una data esatta.
    * **Mostra sempre data relativa**: non vengono mai visualizzate date esatte, ma solo date relative.
@@ -95,13 +98,14 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
+
    Questa opzione abilita le scelte rapide da tastiera. Queste sono abilitate per impostazione predefinita, ma possono essere disabilitate se, ad esempio, un utente presenta determinati requisiti di accessibilità.
 
 * **Usa esperienza di authoring classica**
 
    Questa opzione consente di abilitare l’authoring delle pagine basato sull’[interfaccia classica](/help/sites-classic-ui-authoring/home.md). Per impostazione predefinita viene usata l’interfaccia utente standard.
 
-* **Abilita pagina iniziale risorse**
+* **Abilita pagina iniziale di Assets**
 
    Questa opzione è disponibile solo se l’amministratore del sistema ha abilitato l’esperienza Home page di Assets per l’intera organizzazione.
 
