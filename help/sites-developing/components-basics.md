@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Quando si inizia a sviluppare nuovi componenti è necessario comprendere le basi della loro struttura e configurazione.
 
-Questo processo richiede la lettura della teoria e l’analisi dell’ampia gamma di implementazioni di componenti in un’istanza standard di AEM. Quest’ultimo approccio è leggermente complicato dal fatto che, sebbene AEM sia passata a una nuova interfaccia touch standard, moderna, continua a supportare l’interfaccia classica.
+Questo processo richiede la lettura della teoria e l&#39;analisi dell&#39;ampia gamma di implementazioni di componenti in un&#39;istanza AEM standard. Quest’ultimo approccio è leggermente complicato dal fatto che, sebbene AEM sia passata a una nuova interfaccia touch standard, moderna, continua a supportare l’interfaccia classica.
 
 ## Panoramica {#overview}
 
@@ -42,7 +42,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 * È necessario creare un componente da zero o ereditare le nozioni di base da un componente esistente?
 
    * Non c&#39;è bisogno di reinventare la ruota.
-   * AEM offre diversi meccanismi che consentono di ereditare ed estendere i dettagli da un’altra definizione di componente, tra cui override, sovrapposizione e Fusione [risorse](/help/sites-developing/sling-resource-merger.md)Sling.
+   * Esistono diversi meccanismi forniti da AEM per ereditare ed estendere i dettagli da un’altra definizione di componente, tra cui override, overlay e [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
 
 * Il componente richiede logica per selezionare o manipolare il contenuto?
 
@@ -61,11 +61,11 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 Prima di iniziare qualsiasi discussione seria sullo sviluppo di componenti, è necessario conoscere l’interfaccia utente che gli autori utilizzeranno:
 
 * **Interfaccia utente touch**
-   [Interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard introdotta in AEM 5.6.0 come anteprima ed estesa in 6.x. Si basa sull’esperienza utente unificata per il Adobe Marketing Cloud , utilizzando le tecnologie sottostanti dell’interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell’interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [Interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard introdotta in AEM 5.6.0 come anteprima ed estesa in 6.x. È basato sull’esperienza utente unificata per l’Adobe Marketing Cloud, utilizzando le tecnologie sottostanti dell’interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell’interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Interfaccia utente** classica basata sulla tecnologia ExtJS introdotta con CQ 5.1.
 
-Per ulteriori informazioni, consulta Raccomandazioni sull’interfaccia [dell’interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md) .
+Per ulteriori informazioni, consulta [Interfaccia utente Recommendations per clienti](/help/sites-deploying/ui-recommendations.md) .
 
 I componenti possono essere implementati per supportare l’interfaccia touch, l’interfaccia classica o entrambi. Se osservate un’istanza standard, vengono inoltre visualizzati i componenti forniti originariamente per l’interfaccia classica, l’interfaccia touch o entrambi.
 
@@ -73,7 +73,7 @@ Per questo motivo descriveremo le basi di entrambi, e come riconoscerli, in ques
 
 >[!NOTE]
 >
->Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Modernination Tools&amp;(moderniatzion-tools.md) può facilitare la migrazione.
+> Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Strumenti di modernizzazione&amp;(modernation-tools.md) può facilitare la migrazione.
 
 ### Logica dei contenuti e marcatura del rendering  {#content-logic-and-rendering-markup}
 
@@ -85,7 +85,7 @@ Questa filosofia è supportata da [HTL](https://helpx.adobe.com/experience-manag
 
 HTL è un linguaggio HTML basato su modelli introdotto con AEM 6.0.
 
-La discussione sull’utilizzo di [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) o JSP (Java Server Pages) durante lo sviluppo di componenti deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
+La discussione sull&#39;utilizzo di [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) o JSP (Java Server Pages) durante lo sviluppo di componenti deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
 
 HTL e JSP possono essere utilizzati per lo sviluppo di componenti sia per l’interfaccia classica che per quella touch. Anche se può esserci la tendenza a supporre che HTL sia solo per l’interfaccia touch e che sia JSP per l’interfaccia classica, si tratta di un’erronea concezione e più a causa dei tempi. L’interfaccia touch e l’HTL sono stati incorporati in AEM nello stesso periodo. Poiché HTL è ora la lingua consigliata, viene utilizzato per i nuovi componenti, che di solito sono per l’interfaccia touch.
 
@@ -106,11 +106,11 @@ Un modo rapido per iniziare consiste nel copiare un componente esistente e quind
 
 ### Spostamento dei componenti nell’istanza Pubblica {#moving-components-to-the-publish-instance}
 
-I componenti per il rendering del contenuto devono essere distribuiti nella stessa istanza di AEM del contenuto. Pertanto, tutti i componenti utilizzati per l’authoring e il rendering delle pagine nell’istanza di creazione devono essere distribuiti nell’istanza di pubblicazione. Una volta distribuiti, i componenti sono disponibili per il rendering delle pagine attivate.
+I componenti per il rendering del contenuto devono essere distribuiti nella stessa istanza AEM contenuto. Pertanto, tutti i componenti utilizzati per l’authoring e il rendering delle pagine nell’istanza di creazione devono essere distribuiti nell’istanza di pubblicazione. Una volta distribuiti, i componenti sono disponibili per il rendering delle pagine attivate.
 
 Per spostare i componenti nell’istanza di pubblicazione, usate i seguenti strumenti:
 
-* [Usate Gestione](/help/sites-administering/package-manager.md) pacchetti per aggiungere i componenti a un pacchetto e spostarli in un’altra istanza di AEM.
+* [Usate Gestione](/help/sites-administering/package-manager.md) pacchetti per aggiungere i componenti a un pacchetto e spostarli in un&#39;altra istanza AEM.
 * [Utilizzare lo strumento](/help/sites-authoring/publishing-pages.md#manage-publication) di replica Attiva albero per replicare i componenti.
 
 >[!NOTE]
@@ -121,7 +121,7 @@ Per spostare i componenti nell’istanza di pubblicazione, usate i seguenti stru
 
 * Pagina:
 
-   * AEM include il componente *pagina* ( `cq:Page`).
+   * AEM ha il componente *pagina* ( `cq:Page`).
    * Si tratta di un tipo specifico di risorsa importante per la gestione dei contenuti.
       * Una pagina corrisponde a una pagina Web con contenuti per il sito Web.
 
@@ -134,7 +134,7 @@ Per spostare i componenti nell’istanza di pubblicazione, usate i seguenti stru
 
 ## Struttura {#structure}
 
-La struttura di un componente AEM è potente e flessibile, e le considerazioni principali sono:
+La struttura di un componente AEM è potente e flessibile, le considerazioni principali sono:
 
 * Tipo risorsa
 * Definizione componente
@@ -159,8 +159,8 @@ Questa è un&#39;astrazione che aiuta a garantire che anche quando l&#39;aspetto
 
 La definizione di un componente può essere ripartita come segue:
 
-* I componenti AEM si basano su [Sling](https://sling.apache.org/documentation.html).
-* I componenti AEM si trovano (in genere) in:
+* AEM componenti sono basati su [Sling](https://sling.apache.org/documentation.html).
+* AEM componenti si trovano (in genere) in:
 
    * HTL: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -169,7 +169,7 @@ La definizione di un componente può essere ripartita come segue:
 
    * `/apps/<myApp>/components`
 
-* I componenti standard di AEM sono definiti come `cq:Component` e presentano gli elementi chiave:
+* AEM componenti standard sono definiti come `cq:Component` e presentano gli elementi chiave:
 
    * proprietà JCR:
 
@@ -585,7 +585,7 @@ I componenti all’interno di AEM sono soggetti a 3 gerarchie diverse:
 
 ## Modifica comportamento {#edit-behavior}
 
-In questa sezione viene illustrato come configurare il comportamento di modifica di un componente. Questo include attributi come le azioni disponibili per il componente, le caratteristiche dell’editor locale e i listener relativi agli eventi sul componente.
+In questa sezione viene illustrato come configurare il comportamento di modifica di un componente. Sono inclusi attributi quali le azioni disponibili per il componente, le caratteristiche dell’editor locale e i listener relativi agli eventi sul componente.
 
 La configurazione è comune sia all’interfaccia touch che all’interfaccia classica, anche se con alcune specifiche differenze.
 
@@ -633,11 +633,11 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
 
 Nella directory archivio sono presenti diverse configurazioni. È possibile cercare facilmente proprietà specifiche o nodi secondari:
 
-* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa query XPath:
+* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa di query XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Per cercare un nodo figlio di `cq:editConfig`, ad esempio è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** ed effettuare ricerche con la seguente stringa query XPath:
+* Per cercare un nodo figlio di `cq:editConfig`, ad esempio è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** ed effettuare ricerche con la seguente stringa di query XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
