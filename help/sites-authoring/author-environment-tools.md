@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 93%
 
 ---
 
 
 # Ambiente e strumenti di authoring{#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -43,18 +46,18 @@ Puoi modificare una pagina con l’editor di pagina. Ad esempio:
 
 ## Accedere all’Aiuto {#accessing-help}
 
-Durante la modifica di una pagina, l’**Aiuto** è accessibile da:
+Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
 * il selettore [**Informazioni pagina **](/help/sites-authoring/editing-page-properties.md#page-properties), che mostrerà le diapositive introduttive (così come visualizzate al primo accesso all’editor);
 * la finestra di dialogo di [configurazione](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) per i componenti specifici (utilizzando l’icona ? nella barra degli strumenti della finestra di dialogo), che mostrerà le informazioni di aiuto specifiche per il contesto.
 
 Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Browser Componenti {#components-browser}
+## Browser Componenti   {#components-browser}
 
 Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Puoi trascinarli nella posizione desiderata, quindi modificarli per aggiungere i contenuti richiesti.
 
-Il browser componenti è una scheda all’interno del pannello laterale (insieme al [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser) e alla [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree)). Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
+Il browser Componenti è una scheda che si trova nel pannello laterale, insieme al [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser) e alla [struttura dei contenuti](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![](do-not-localize/screen_shot_2018-03-22at141659.png)
 
@@ -90,10 +93,12 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
       * Le icone dei componenti standard sono monocromatiche.
       * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
+
    Dalla barra degli strumenti nella parte superiore del browser Componenti, puoi effettuare le seguenti operazioni:
 
-   * filtrare i componenti per nome.
-   * limitare la visualizzazione a uno specifico gruppo selezionandolo dall&#39;elenco a discesa.
+   * Filtrare i componenti per nome
+   * Limitare la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa
+
    Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser Componenti (se disponibile).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -104,11 +109,11 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
 Il browser Risorse mostra tutte le risorse disponibili per la pagina corrente.
 
-Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e alla [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
+Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e alla [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![](do-not-localize/screen_shot_2018-03-22at141659-1.png)
 
-All&#39;apertura, il pannello laterale scivolerà in posizione da sinistra. Se necessario seleziona la scheda **Risorse**.
+All’apertura, il pannello laterale scivolerà in posizione da sinistra. Se necessario seleziona la scheda **Risorse**.
 
 ![](do-not-localize/screen_shot_2018-03-22at142035.png)
 
@@ -173,7 +178,7 @@ Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai
 
 ![](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Select the **Content Tree** tab if necessary. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa rende più facile passare tra i vari componenti della pagina.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa rende più facile passare tra i vari componenti della pagina.
 
 ![screen_shot_2018-03-22at142526](assets/screen_shot_2018-03-22at142526.png)
 
@@ -195,7 +200,7 @@ Se il componente su cui fai clic nella struttura ad albero è modificabile, a de
 
 >[!NOTE]
 >
->La struttura del contenuto non è disponibile se modificate una pagina su un dispositivo mobile (se la larghezza del browser è inferiore a 1024 px).
+>La struttura del contenuto non è disponibile quando si modifica una pagina su un dispositivo mobile (se la larghezza del browser è inferiore a 1024 px).
 
 ## Frammenti - Browser Contenuto associato {#fragments-associated-content-browser}
 
@@ -212,7 +217,7 @@ I **riferimenti** mostrano i collegamenti alla pagina selezionata:
 * Utilizzo del componente Riferimento
 * Riferimenti alle pagine prodotto (dalla console Commerce - Prodotti)
 
-Open the required console, then navigate to the required resource and open **References** using:
+Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Riferimenti** utilizzando:
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
@@ -225,7 +230,7 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 * Istanze del componente Riferimento (ad esempio navigazione alla pagina sorgente/destinazione del riferimento)
 * [Riferimenti alle pagine prodotto](/help/sites-administering/generic.md#showing-product-references) (disponibili dalla console Commerce - Prodotti)
 * [Lanci](/help/sites-authoring/launches.md)
-* [Live Copy](/help/sites-administering/msm.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
+* [](/help/sites-administering/msm.md)Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Copie per lingua](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) 
 
@@ -237,7 +242,7 @@ Ad esempio, è possibile correggere un riferimento interrotto all’interno di u
 
 Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Risorse**) è possibile [utilizzare la timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-authoring/basic-handling.md#timeline).
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Timeline** utilizzando:
 
 ![screen_shot_2018-03-22at153952](assets/screen_shot_2018-03-22at153952.png)
 
@@ -247,7 +252,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 ## Informazioni sulle pagine {#page-information}
 
-Informazioni pagina (icona equalizzatore) apre un menu che fornisce anche dettagli sull’ultima modifica e sull’ultima pubblicazione. A seconda delle caratteristiche della pagina (e del sito) potrebbero essere disponibili più o meno opzioni:
+Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dettagli sull’ultima operazione di modifica e di pubblicazione. A seconda delle caratteristiche della pagina (e del sito) potrebbero essere disponibili più o meno opzioni:
 
 ![screen_shot_2018-03-22at154210](assets/screen_shot_2018-03-22at154210.png)
 
@@ -270,12 +275,12 @@ Ad esempio, quando appropriato, da **Informazioni pagina** possono essere dispon
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina {#page-modes}
+## Modalità pagina   {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
 * [Modifica](/help/sites-authoring/editing-content.md): modalità da utilizzare per modificare il contenuto della pagina.
-* [Layout](/help/sites-authoring/responsive-layout.md) : consente di creare e modificare il layout reattivo a seconda del dispositivo (se la pagina è basata su un contenitore di layout)
+* [Layout](/help/sites-authoring/responsive-layout.md): consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
 
 * [Scaffolding](/help/sites-authoring/scaffolding.md): consente di creare un insieme costituito da più pagine con la stessa struttura e contenuti diversi.
 * [Sviluppatore](/help/sites-developing/developer-mode.md): consente di eseguire varie azioni (sono richiesti privilegi specifici), compresa l’analisi dei dettagli tecnici di una pagina e dei suoi componenti.
@@ -300,7 +305,8 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* A seconda delle caratteristiche della pagina, alcune modalità possono non essere disponibili.
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
->* È disponibile una [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) per passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via).
+>* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+
 >
 
 
@@ -309,7 +315,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
 
-### Campi percorso {#path-fields}
+### Campi percorso   {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-authoring/default-components.md).
 
