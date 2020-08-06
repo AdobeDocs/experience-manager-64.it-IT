@@ -1,6 +1,6 @@
 ---
 title: Usa rasterizzatore PDF
-description: Generazione di miniature e rappresentazioni di alta qualità tramite la libreria Adobe PDF Rasterizer.
+description: Generazione di miniature e rappresentazioni di alta qualità tramite la libreria  Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Utilizzo di PDF Rasterizer {#using-pdf-rasterizer}
 
-A volte, quando carichi file PDF o AI di grandi dimensioni e che richiedono molto contenuto su  risorse di Adobe Experience Manager (AEM), la libreria predefinita potrebbe non generare un output accurato. In tali casi, la libreria Rasterizer PDF di Adobe può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita.
+A volte, quando carichi file PDF o AI di grandi dimensioni e che richiedono molto contenuto su risorse Adobe Experience Manager (AEM), la libreria predefinita potrebbe non generare un output accurato. In tali casi,  libreria Rasterizer PDF  Adobe può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita.
 
-Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
+ Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
 
 * File AI o PDF pesanti e ricchi di contenuti.
 * File AI o PDF con miniature non generate al di fuori della casella.
 * File AI con colori Pantone Matching System (PMS).
 
-Le miniature e le anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output out-of-the-box e, pertanto, offrono un’esperienza di visualizzazione coerente su tutti i dispositivi. La libreria Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Trasmette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
+Le miniature e le anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output out-of-the-box e, pertanto, offrono un’esperienza di visualizzazione coerente su tutti i dispositivi. La libreria  Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Trasmette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
 
-1. Installate il pacchetto PDF Rasterizer sull’istanza AEM da Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
+1. Installate il pacchetto PDF Rasterizer sull&#39;istanza AEM da Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
    >[!NOTE]
    >
    >La libreria PDF Rasterizer è disponibile solo per Windows e Linux.
 
-1. Accedete alla console del flusso di lavoro AEM Assets da `https://[AEM_server]:[port]/workflow`.
+1. Accedete alla console del flusso di lavoro di  AEM Assets da `https://[AEM_server]:[port]/workflow`.
 1. Aprite la pagina del flusso di lavoro Aggiorna risorsa **** DAM.
 1. Configurate quanto segue per saltare la generazione di miniature e rappresentazioni Web predefinite per i file PDF e AI:
 
@@ -108,4 +108,4 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Salvare il flusso di lavoro.
-1. Caricate un file PDF o un file AI in AEM Assets. PDF Rasterizer genera le miniature e le rappresentazioni Web per il file.
+1. Caricate un file PDF o un file AI in  AEM Assets. PDF Rasterizer genera le miniature e le rappresentazioni Web per il file.
