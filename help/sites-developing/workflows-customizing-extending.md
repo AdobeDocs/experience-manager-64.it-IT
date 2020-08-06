@@ -68,6 +68,7 @@ Il `/libs/cq/workflow/components/model/step` componente è l’antenato comune p
 
    * **Comune**: per modificare il titolo e la descrizione.
    * **Avanzate**: per modificare le proprietà delle notifiche e-mail.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ Utilizzare la procedura seguente per specificare i valori predefiniti per i camp
 >* La finestra di dialogo di modifica del passaggio memorizza il titolo e la descrizione nelle seguenti posizioni: >
 >* `./jcr:title`
 >* `./jcr:description` location
+
 >
 >  
 Questo requisito è soddisfatto quando la finestra di dialogo di modifica utilizza la scheda Comune implementata dal `/libs/cq/flow/components/step/step` componente.
@@ -132,6 +134,7 @@ Questo requisito è soddisfatto quando la finestra di dialogo di modifica utiliz
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    >[!NOTE]
    >
    >Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ Per attivare il componente per l’utilizzo in uno scenario di flusso di lavoro 
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
@@ -203,7 +207,7 @@ Per attivare il componente per l’utilizzo in uno scenario di flusso di lavoro 
 
 1. Per rimuovere la capacità degli sviluppatori di modelli di modificare i valori delle proprietà, ignorare la finestra di dialogo del super type del componente.
 
-### Aggiunta di moduli e finestre di dialogo ai passaggi per i partecipanti {#adding-forms-and-dialogs-to-participant-steps}
+### Aggiunta di Forms e finestre di dialogo ai passi dei partecipanti {#adding-forms-and-dialogs-to-participant-steps}
 
 Personalizzate il componente passo partecipante per fornire le funzioni disponibili nei componenti Passo [partecipante](/help/sites-developing/workflows-step-ref.md#form-participant-step) modulo e Passaggio [partecipante](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) finestra di dialogo:
 
@@ -216,6 +220,7 @@ Per informazioni sul nuovo componente, effettuate le seguenti operazioni (consul
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
       * Progetti
       * Flusso di lavoro WCM
       * Flusso di lavoro
+
    ![wf-35](assets/wf-35.png)
 
 1. È ora possibile aprire un modello di workflow per la modifica. Nel browser dei passaggi è possibile filtrare per visualizzare il **mio passo** personalizzato:
@@ -887,6 +894,7 @@ Dopo aver [creato il passaggio](#creating-the-basic-step)di base, definite la fi
       Imposta il titolo predefinito sulla scheda passo nella mappa del modello e nel campo **Titolo** della finestra di dialogo di configurazione **Personalizzato - Proprietà** passo.
 
    * È inoltre possibile definire proprietà personalizzate.
+
    ![wf-40](assets/wf-40.png)
 
 1. Configurare le proprietà sul nodo `cq:listeners`.
@@ -899,6 +907,7 @@ Dopo aver [creato il passaggio](#creating-the-basic-step)di base, definite la fi
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Questa configurazione è essenziale per il corretto funzionamento dell&#39;editor. Nella maggior parte dei casi questa configurazione non deve essere modificata.
 
    Tuttavia, l&#39;impostazione `cq:inherit` su true (sul `cq:editConfig` nodo, vedi sopra) consente di ereditare questa configurazione, senza dover includerla esplicitamente nella definizione del passaggio. Se non è presente alcuna ereditarietà, è necessario aggiungere il nodo con le proprietà e i valori seguenti.
@@ -1030,7 +1039,7 @@ L&#39; `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >
 >Le finestre di dialogo dell’editor modelli dell’interfaccia classica continueranno a funzionare con l’editor dell’interfaccia touch standard.
 >
->Anche se AEM dispone di uno strumento di conversione [della](/help/sites-developing/dialog-conversion.md) finestra di dialogo se desideri aggiornare le finestre di dialogo classiche dei passaggi dell’interfaccia utente alle finestre di dialogo standard dell’interfaccia utente. Dopo la conversione, per alcuni casi potrebbero essere apportati miglioramenti manuali al dialogo.
+>Anche se AEM dispone di uno strumento di conversione [della](/help/sites-developing/dialog-conversion.md) finestra di dialogo se desiderate aggiornare le finestre di dialogo classico dei passaggi dell’interfaccia utente alle finestre di dialogo standard dell’interfaccia utente. Dopo la conversione, per alcuni casi potrebbero essere apportati miglioramenti manuali al dialogo.
 >
 >* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo con funzionalità simili come esempi `/libs` di come fornire una soluzione. Ad esempio:
    >
@@ -1040,6 +1049,7 @@ L&#39; `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 Non è necessario modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Per sfruttare uno dei passaggi esistenti, copiateli `/apps` e modificateli.
