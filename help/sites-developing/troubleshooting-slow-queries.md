@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2267'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## Classificazioni query lente {#slow-query-classifications}
 
-In AEM sono disponibili 3 principali classificazioni di query lente, elencate per gravità:
+Sono disponibili 3 principali classificazioni di query lente in AEM, elencate per gravità:
 
 1. **Query senza indice**
 
@@ -41,7 +44,7 @@ Poiché ogni potenziale risultato deve essere analizzato, il costo per determina
 
 L&#39;aggiunta di restrizioni di query e indici di ottimizzazione consente di memorizzare i dati di indice in un formato ottimizzato che consenta un rapido recupero dei risultati e riduce o elimina la necessità di un controllo lineare dei set di risultati potenziali.
 
-In AEM 6.3, per impostazione predefinita, quando viene raggiunto un attraversamento di 100.000, la query ha esito negativo e genera un’eccezione. Questo limite non esiste per impostazione predefinita nelle versioni di AEM precedenti alla 6.3, ma può essere impostato tramite la configurazione OSGi delle impostazioni del motore di query Apache Jackrabbit e il fagiolo JMX QueryEngineSettings (Limite proprietà).
+In AEM 6.3, per impostazione predefinita, quando viene raggiunto un attraversamento di 100.000, la query ha esito negativo e genera un&#39;eccezione. Questo limite non esiste per impostazione predefinita nelle versioni AEM precedenti alla AEM 6.3, ma può essere impostato tramite la configurazione OSGi delle impostazioni del motore di query Apache Jackrabbit e il fagiolo JMX QueryEngineSettings (proprietà LimitReads).
 
 ### Rilevamento di query senza indice {#detecting-index-less-queries}
 
@@ -49,7 +52,7 @@ In AEM 6.3, per impostazione predefinita, quando viene raggiunto un attraversame
 
 Spiegare **tutte** le **query e assicurarsi che i relativi piani di query non contengano il/&amp;ast; traversa** la spiegazione. Esempio di piano query di navigazione:
 
-* **** PIANO: `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
+* **PIANO:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
 #### Post-distribuzione {#post-deployment}
 
@@ -58,7 +61,7 @@ Spiegare **tutte** le **query e assicurarsi che i relativi piani di query non co
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Questo messaggio viene registrato solo se non è disponibile alcun indice e se la query attraversa potenzialmente molti nodi. I messaggi non vengono registrati se è disponibile un indice, ma la quantità da scorrere è piccola e quindi veloce.
 
-* Visitate la console delle operazioni di AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) e [spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di spiegazioni sulle query trasversali o prive di spiegazioni sulle query di indice.
+* Visitate la console delle operazioni [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) AEM e [spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di spiegazioni incrociate o senza query indice.
 
 ### Rilevamento Di Query Limitate {#detecting-poorly-restricted-queries}
 
@@ -69,7 +72,7 @@ Spiegare tutte le query e assicurarsi che vengano risolte in un indice sintonizz
 * La copertura del piano query ideale include tutte le restrizioni `indexRules` di proprietà e almeno le restrizioni di proprietà più restrittive nella query.
 * Le query che ordinano i risultati devono essere risolte in un indice delle proprietà Lucene con regole di indice per le proprietà ordinate per quelle impostate `orderable=true.`
 
-#### Ad esempio, il valore predefinito `cqPageLucene` non dispone di una regola di indice per `jcr:content/cq:tags`{#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
+#### Ad esempio, l&#39;impostazione predefinita `cqPageLucene` non dispone di una regola di indice per `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
 Prima di aggiungere la regola di indice cq:tags
 
@@ -80,6 +83,7 @@ Prima di aggiungere la regola di indice cq:tags
 * **Query Builder**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -97,6 +101,7 @@ Dopo l&#39;aggiunta della regola di indice cq:tags
 * **cq:tags, regola di indice**
 
    * 
+
       ```
       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
        @name=jcr:content/cq:tags
@@ -106,6 +111,7 @@ Dopo l&#39;aggiunta della regola di indice cq:tags
 * **Query Builder**
 
    * 
+
       ```
       type=cq:Page
        property=jcr:content/cq:tags
@@ -134,7 +140,7 @@ Un modo utile per identificare se l&#39;indice di Lucene sta restituendo molti r
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Visitate la console delle operazioni di AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) e [spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di piani di query che non risolvono le restrizioni delle proprietà query alle regole delle proprietà di indice.
+* Visitate la console delle operazioni AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) e [Spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di piani di query che non risolvono le restrizioni delle proprietà query alle regole delle proprietà di indice.
 
 ### Rilevamento di query con set di risultati di grandi dimensioni {#detecting-large-result-set-queries}
 
@@ -142,7 +148,7 @@ Un modo utile per identificare se l&#39;indice di Lucene sta restituendo molti r
 
 Impostare soglie basse per oak.queryLimitInMemory (ad esempio 10000) e oak.queryLimitReads (ad esempio 5000) e ottimizzare la query costosa quando si tocca un UnsupportedOperationException che dice &quot;La query ha letto più di x nodi...&quot;
 
-In questo modo si evitano le query che richiedono molte risorse (ad esempio non sostenuto da alcun indice o sostenuto da un indice di copertura inferiore). Ad esempio, una query che legge nodi 1M porterebbe a molti IO e avrebbe un impatto negativo sulle prestazioni complessive dell&#39;applicazione. Pertanto, qualsiasi query che non riesce a causa di limiti superiori deve essere analizzata e ottimizzata.
+In questo modo si evitano le query che richiedono molte risorse (ad es. non sostenuto da alcun indice o sostenuto da un indice di copertura inferiore). Ad esempio, una query che legge nodi 1M porterebbe a molti IO e avrebbe un impatto negativo sulle prestazioni complessive dell&#39;applicazione. Pertanto, qualsiasi query che non riesce a causa di limiti superiori deve essere analizzata e ottimizzata.
 
 #### Post-distribuzione {#post-deployment-2}
 
@@ -156,18 +162,18 @@ In questo modo si evitano le query che richiedono molte risorse (ad esempio non 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Ottimizzare la query per ridurre il consumo di memoria heap
 
-Per le versioni di AEM 6.0 - 6.2, puoi regolare la soglia per l’attraversamento dei nodi tramite i parametri JVM nello script di avvio di AEM per evitare che query di grandi dimensioni sovraccarichino l’ambiente. I valori consigliati sono:
+Per le versioni AEM 6.0 - 6.2, è possibile ottimizzare la soglia per l&#39;attraversamento dei nodi tramite i parametri JVM nello script di avvio AEM per evitare che le query di grandi dimensioni sovraccarichino l&#39;ambiente. I valori consigliati sono:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, i due parametri indicati sopra sono preconfigurati per impostazione predefinita e possono essere modificati tramite OSGi QueryEngineSettings.
+In AEM 6.3, i due parametri di cui sopra sono preconfigurati per impostazione predefinita e possono essere modificati tramite OSGi QueryEngineSettings.
 
-Ulteriori informazioni disponibili in : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
+Ulteriori informazioni disponibili in: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Ottimizzazione delle prestazioni delle query {#query-performance-tuning}
 
-Il motto dell’ottimizzazione delle prestazioni delle query in AEM è:
+Il motto dell&#39;ottimizzazione delle prestazioni della query in AEM è:
 
 **&quot;Più restrizioni, meglio è.&quot;**
 
@@ -181,13 +187,14 @@ AEM supporta le seguenti lingue di query:
 * JCR-SQL2
 * XPath
 
-Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
+Nell&#39;esempio seguente viene utilizzato Query Builder in quanto è il linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
 
 1. Aggiungete una restrizione relativa al tipo di nodo in modo che la query corrisponda a un indice esistente della proprietà Lucene.
 
    * **Query non ottimizzata**
 
       * 
+
          ```
           property=jcr:content/contentType
           property.value=article-page
@@ -195,20 +202,22 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
           type=cq:Page 
           property=jcr:content/contentType 
           property.value=article-page
          ```
-   Le query prive di restrizioni relative ai tipi di nodi forzano AEM ad assumere il `nt:base` tipo di nodo, di cui ogni nodo in AEM è un sottotipo, e di conseguenza non determinano restrizioni relative ai tipi di nodi.
+   Query prive di una forza di restrizione del tipo di nodo AEM assumere il `nt:base` tipo di nodo, di cui ogni nodo in AEM è un sottotipo, che di fatto non determina alcuna limitazione del tipo di nodo.
 
-   L&#39;impostazione `type=cq:Page` limita questa query ai soli `cq:Page` nodi e risolve la query a cqPageLucene di AEM, limitando i risultati a un sottoinsieme di nodi (solo `cq:Page` nodi) in AEM.
+   L&#39;impostazione `type=cq:Page` limita questa query ai soli `cq:Page` nodi e risolve la query a AEM cqPageLucene, limitando i risultati a un sottoinsieme di nodi (solo `cq:Page` nodi) in AEM.
 
 1. Regolare la limitazione del tipo di nodo della query in modo che la query corrisponda a un indice esistente della proprietà Lucene.
 
    * **Query non ottimizzata**
 
       * 
+
          ```
          type=nt:hierarchyNode
          property=jcr:content/contentType
@@ -217,6 +226,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
@@ -225,14 +235,16 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    `nt:hierarchyNode` è il tipo di nodo padre di `cq:Page`, e supponendo `jcr:content/contentType=article-page` sia applicato solo ai `cq:Page` nodi tramite la nostra applicazione personalizzata, questa query restituirà solo `cq:Page` nodi dove `jcr:content/contentType=article-page`. Questa è una restrizione non ottimale, però, perché:
 
    * Un altro nodo eredita da `nt:hierarchyNode` (ad esempio `dam:Asset`) aggiunta non necessaria al set di risultati potenziali.
-   * Nessun indice fornito da AEM esiste `nt:hierarchyNode`, tuttavia, in quanto è presente un indice fornito per `cq:Page`.
-   L’impostazione `type=cq:Page` limita questa query ai soli `cq:Page` nodi e risolve la query a cqPageLucene di AEM, limitando i risultati a un sottoinsieme di nodi (solo nodi cq:Page) in AEM.
+   * Non esiste un indice AEM fornito per `nt:hierarchyNode`, tuttavia, in quanto esiste un indice fornito per `cq:Page`.
+
+   L&#39;impostazione `type=cq:Page` limita questa query ai soli `cq:Page` nodi e risolve la query a AEM cqPageLucene, limitando i risultati a un sottoinsieme di nodi (solo nodi cq:Page) in AEM.
 
 1. In alternativa, regolate le restrizioni delle proprietà in modo che la query corrisponda a un indice delle proprietà esistente.
 
    * **Query non ottimizzata**
 
       * 
+
          ```
          property=jcr:content/contentType
          property.value=article-page
@@ -240,6 +252,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
          property=jcr:content/sling:resourceType
          property.value=my-site/components/structure/article-page
@@ -253,6 +266,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query non ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -262,6 +276,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          path=/content/my-site/us/en
@@ -277,6 +292,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query non ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          property=jcr:content/contentType
@@ -286,6 +302,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          fulltext=article
@@ -293,7 +310,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
          ```
    La condizione LIKE è lenta da valutare perché non è possibile utilizzare alcun indice se il testo inizia con un carattere jolly (&quot;%...&quot;). La condizione jcr:contains consente l&#39;uso di un indice full-text, ed è pertanto preferita. Ciò richiede che l&#39;indice delle proprietà Lucene risolto disponga di indexRule per `jcr:content/contentType` con `analayzed=true`.
 
-   L&#39;utilizzo di funzioni di query come `fn:lowercase(..)` può essere più difficile da ottimizzare, in quanto non esistono equivalenti più veloci (al di fuori di configurazioni di analizzatore indice più complesse e intrusive). È consigliabile identificare altre limitazioni di ambito per migliorare le prestazioni complessive della query, richiedendo che le funzioni operino sulla più piccola serie di risultati potenziali possibili.
+   L&#39;utilizzo di funzioni di query come `fn:lowercase(..)` può essere più difficile da ottimizzare in quanto non esistono equivalenti più veloci (al di fuori di configurazioni di analizzatore indice più complesse e obtrusive). È consigliabile identificare altre limitazioni di ambito per migliorare le prestazioni complessive della query, richiedendo che le funzioni operino sulla più piccola serie di risultati potenziali possibili.
 
 1. ***Questa regolazione è specifica di Query Builder e non si applica a JCR-SQL2 o XPath.***
 
@@ -302,6 +319,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query non ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -309,6 +327,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query ottimizzata**
 
       * 
+
          ```
          type=cq:Page
          path=/content
@@ -318,7 +337,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
 
    `p.guessTotal=100` comunica a Query Builder di raccogliere solo i primi 100 risultati e imposta un flag booleano che indica se esistono almeno un altro risultato (ma non quanti altri risultati, in quanto contando questo numero si verificherebbe un rallentamento). Questa ottimizzazione è eccezionale per l’impaginazione o per infiniti casi di utilizzo del caricamento, in cui solo un sottoinsieme di risultati viene visualizzato in modo incrementale.
 
-## Ottimizzazione indice esistente {#existing-index-tuning}
+## Sintonizzazione indice esistente {#existing-index-tuning}
 
 1. Se la query ottimale viene risolta in un Indice proprietà, non rimane nulla da fare in quanto gli indici delle proprietà sono minimamente sintonizzabili.
 1. In caso contrario, la query deve essere risolta in un indice delle proprietà Lucene. Se non è possibile risolvere alcun indice, passare a Creazione di un nuovo indice.
@@ -327,6 +346,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query Builder**
 
       * 
+
          ```
          query type=cq:Page
          path=/content/my-site/us/en
@@ -338,6 +358,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **XPath generato dalla query Query Builder**
 
       * 
+
          ```
          /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
          ```
@@ -368,7 +389,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
 
    1. Individuate l&#39;indice delle proprietà Lucene esistente che copre cq:Page (utilizzando la funzione di gestione dell&#39;indice). In questo caso, `/oak:index/cqPageLucene`.
    1. Identificare il delta di configurazione tra la definizione dell&#39;indice ottimizzata (Passaggio 4) e l&#39;indice esistente (/oak:index/cqPageLucene), quindi aggiungere le configurazioni mancanti dall&#39;indice ottimizzato alla definizione dell&#39;indice esistente.
-   1. In base alle best practice di reindicizzazione di AEM, è possibile aggiornare o reindicizzare in ordine, in base al fatto che il contenuto esistente verrà influenzato da questa modifica alla configurazione dell&#39;indice.
+   1. Per AEM Best practice di reindicizzazione, è possibile aggiornare o reindicizzare in ordine, in base al fatto che il contenuto esistente verrà influenzato da questa modifica alla configurazione dell&#39;indice.
 
 ## Crea nuovo indice {#create-a-new-index}
 
@@ -378,6 +399,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **Query Builder**
 
       * 
+
          ```
          type=myApp:Author
          property=firstName
@@ -386,6 +408,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
    * **XPath generato dalla query Query Builder**
 
       * 
+
          ```
          //element(*, myApp:Page)[@firstName = 'ira']
          ```
@@ -412,41 +435,41 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
 
    Aggiungete la definizione XML fornita da Oak Index Definition Generator per il nuovo indice al progetto AEM che gestisce le definizioni dell&#39;indice Oak (ricordate, considera le definizioni dell&#39;indice Oak come codice, dal momento che il codice dipende da esse).
 
-   Distribuisci e verifica il nuovo indice in base al normale ciclo di vita del software AEM e verifica che la query sia risolta nell’indice e che la query sia performante.
+   Distribuire e testare il nuovo indice seguendo il normale ciclo di vita AEM sviluppo software e verificare che la query sia risolta nell&#39;indice e che la query sia performante.
 
-   Dopo la distribuzione iniziale di questo indice, AEM inserirà l’indice con i dati richiesti.
+   Dopo la distribuzione iniziale di questo indice, AEM comporrà l&#39;indice con i dati richiesti.
 
 ## Quando sono OK le query senza indice e traversal? {#when-index-less-and-traversal-queries-are-ok}
 
-A causa dell&#39;architettura flessibile dei contenuti di AEM, è difficile prevedere e garantire che l&#39;evoluzione delle strutture dei contenuti non si verifichi nel tempo, per essere inaccettabilmente ampia.
+A causa AEM architettura flessibile dei contenuti, è difficile prevedere e garantire che l&#39;attraversamento delle strutture dei contenuti non evolva nel tempo fino a raggiungere dimensioni inaccettabili.
 
 Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinazione di restrizione percorso e restrizione nodetype garantisca che **meno di 20 nodi vengano mai attraversati.**
 
 ## Strumenti di sviluppo query {#query-development-tools}
 
-### Adobe Supportato {#adobe-supported}
+###  Adobe supportato {#adobe-supported}
 
 * **Debugger Query Builder**
 
    * Interfaccia Web per l&#39;esecuzione di query Query Builder e per generare l&#39;XPath di supporto (da utilizzare in Generatore di definizione di query o indice Oak).
-   * In AEM all’indirizzo [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * AEM all&#39;indirizzo [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Strumento Query**
 
    * Interfaccia Web per l&#39;esecuzione di query XPath e JCR-SQL2.
-   * In AEM, all’indirizzo [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Strumenti > Query...
+   * AEM in [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Strumenti > Query...
 
 * **[Spiega query](/help/sites-administering/operations-dashboard.md#explain-query)**
 
-   * Dashboard delle operazioni AEM che fornisce una spiegazione dettagliata (piano query, tempo query e numero di risultati) per qualsiasi query XPATH o JCR-SQL2 specificata.
+   * Pannello Operazioni AEM che fornisce una spiegazione dettagliata (piano query, tempo query e numero di risultati) per qualsiasi query XPATH o JCR-SQL2 specificata.
 
 * **[Query lente/popolari](/help/sites-administering/operations-dashboard.md#query-performance)**
 
-   * Una dashboard delle operazioni AEM che elenca le recenti query lente e popolari eseguite su AEM.
+   * Una dashboard delle operazioni AEM che elenca le query lente e popolari recenti eseguite su AEM.
 
 * **[Gestione indice](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * Un’interfaccia Web AEM Operations che visualizza gli indici sull’istanza AEM; facilita la comprensione degli indici già esistenti, che possono essere mirati o incrementati.
+   * AEM Operations WebUI che visualizza gli indici sull&#39;istanza AEM; facilita la comprensione degli indici già esistenti, che possono essere mirati o incrementati.
 
 * **[Registrazione](/help/sites-administering/operations-dashboard.md#log-messages)**
 
@@ -461,12 +484,12 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 * **Configurazione OSGi delle impostazioni del motore di query Apache Jackrabbit**
 
    * Configurazione OSGi che configura il comportamento di errore per l’attraversamento delle query.
-   * In AEM all’indirizzo [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * Situato su AEM in [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX**
 
    * MBean JMX utilizzato per stimare il numero di nodi nelle strutture ad albero del contenuto in AEM.
-   * In AEM all&#39;indirizzo [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * Posizionato su AEM in [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Community supportata {#community-supported}
 
@@ -477,5 +500,5 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 * **[Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
 
    * Estensione del browser Web Google Chrome che espone i dati di registro per ogni richiesta, incluse le query eseguite e i relativi piani di query, nella console degli strumenti di sviluppo del browser.
-   * Richiede l&#39;installazione e l&#39;abilitazione di [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) su AEM.
+   * Richiede [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) per essere installato e attivato su AEM.
 
