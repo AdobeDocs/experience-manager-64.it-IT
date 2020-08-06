@@ -24,16 +24,16 @@ Creare modelli di stampa e Web per comunicazioni interattive
 
 Questa esercitazione è un passaggio della serie [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) (Creazione della prima serie di comunicazioni interattive). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
-Per creare una comunicazione interattiva, nel server AEM per la stampa e i canali Web devono essere disponibili dei modelli.
+Per creare una comunicazione interattiva, è necessario disporre di modelli nel server AEM per i canali di stampa e Web.
 
-I modelli per il canale di stampa vengono creati in Adobe Forms Designer e caricati nel server AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
+I modelli per il canale di stampa vengono creati  Adobe Forms Designer e caricati nel server di AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
 
 I modelli per il canale Web vengono creati in AEM. Gli autori e gli amministratori dei modelli possono creare, modificare e abilitare i modelli Web. Una volta creati e abilitati, questi modelli sono disponibili per la creazione di una comunicazione interattiva.
 
 Questa esercitazione illustra i passaggi necessari per creare modelli per i canali Stampa e Web in modo che siano disponibili per l&#39;utilizzo durante la creazione di comunicazioni interattive. Al termine di questa esercitazione, potrete:
 
-* Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
-* Caricare i modelli XDP nel server AEM Forms
+* Creare modelli XDP per il canale di stampa utilizzando  Adobe Forms Designer
+* Caricare i modelli XDP sul  AEM Forms Server
 * Creazione e attivazione di modelli per il canale Web
 
 ## Creare un modello per il canale di stampa {#create-template-for-print-channel}
@@ -41,7 +41,7 @@ Questa esercitazione illustra i passaggi necessari per creare modelli per i cana
 Crea e gestisci un modello per il canale di stampa della comunicazione interattiva utilizzando le seguenti attività:
 
 * [Creare un modello XDP utilizzando Forms Designer](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [Caricare il modello XDP nel server AEM Forms](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Caricare il modello XDP sul server AEM Forms](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
 * [Creare un modello XDP per i frammenti di layout](/help/forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
 ### Creare un modello XDP utilizzando Forms Designer {#create-xdp-template-using-forms-designer}
@@ -111,18 +111,18 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
    1. Toccate **Salva**.
 
-### Caricare il modello XDP nel server AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
+### Caricare il modello XDP sul server AEM Forms  {#upload-xdp-template-to-the-aem-forms-server}
 
-Dopo aver creato un modello XDP utilizzando Designer moduli, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
+Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo  server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Selezionate **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **Crea** > Caricamento **** file.
 
-   Individuate e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
+   Spostatevi e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms .
 
 ### Creare un modello XDP per i frammenti di layout {#create-xdp-template-for-layout-fragments}
 
-Per creare un frammento di layout per il canale di stampa della comunicazione interattiva, creare un file XDP utilizzando Forms Designer e caricarlo nel server AEM Forms.
+Per creare un frammento di layout per il canale di stampa della comunicazione interattiva, creare un file XDP utilizzando Forms Designer e caricarlo sul server AEM Forms .
 
 1. Aprire Forms Designer, selezionare **File** > **Nuovo** > **Usa un modulo vuoto,** toccare **Avanti**, quindi **Fine** per aprire il modulo per la creazione del modello.
 
@@ -160,7 +160,7 @@ Per creare un frammento di layout per il canale di stampa della comunicazione in
    1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
    1. Toccate **Salva**.
 
-   Dopo aver creato un modello XDP per un frammento di layout utilizzando Forms Designer, è necessario [caricarlo](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) nel server AEM Forms in modo che il modello sia disponibile per la creazione di frammenti di layout.
+   Dopo aver creato un modello XDP per un frammento di layout utilizzando Forms Designer, è necessario [caricarlo](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)  server AEM Forms in modo che il modello sia disponibile per la creazione di frammenti di layout.
 
 ## Creare un modello per il canale Web {#create-template-for-web-channel}
 
