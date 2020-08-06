@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 L’editor basato su finestra di dialogo fornisce un’interfaccia grafica per creare e modificare facilmente finestre di dialogo e pagine di scaffolding.
 
-Per vedere come funziona, passare a CRXDE Lite, aprire la struttura ad albero di Esplora risorse per `/libs/foundation/components/chart` fare doppio clic sul nodo `dialog`:
+Per vedere come funziona, andate al CRXDE Lite, aprite la struttura ad albero di Esplora risorse `/libs/foundation/components/chart` e fate doppio clic sul nodo `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -32,7 +35,7 @@ Il nodo della finestra di dialogo si aprirà nell’editor basato su **finestra 
 L’interfaccia dell’editor basato su finestra di dialogo è composta da quattro riquadri:
 
 * La **palette**, nell&#39;angolo superiore sinistro. Questo riquadro contiene i widget disponibili per la creazione di una finestra di dialogo, ad esempio pannelli di schede, campi di testo, elenchi di selezione e pulsanti. Per espandere le diverse categorie all’interno della palette, fare clic sulla barra di divisione desiderata.
-* Riquadro **struttura** , nell&#39;angolo inferiore sinistro. Questo riquadro mostra la struttura gerarchica dei nodi che compongono la definizione della finestra di dialogo. È possibile visualizzare la stessa struttura espandendo il nodo del dialogo in CRXDE Lite o CRX Content Explorer.
+* Il riquadro **della struttura** , nell’angolo in basso a sinistra. Questo riquadro mostra la struttura gerarchica dei nodi che compongono la definizione della finestra di dialogo. È possibile visualizzare la stessa struttura espandendo il nodo di dialogo in Esplora contenuti CRXDE Lite o CRX.
 * Riquadro di **rendering** , al centro della finestra. Questo riquadro mostra come verrà visualizzata la definizione della finestra di dialogo definita nel riquadro della struttura come una finestra di dialogo effettiva.
 * Riquadro **delle proprietà** . Questo riquadro mostra le proprietà del nodo attualmente evidenziato nel riquadro della struttura.
 
@@ -46,9 +49,9 @@ Una volta completata la struttura desiderata, l&#39;utente fa clic su **Salva**,
 >
 >L’editor basato su finestra di dialogo è destinato alla creazione di finestre di dialogo relativamente semplici e potrebbe non essere in grado di modificare definizioni di dialogo più complesse. Se l’editor basato su finestra di dialogo non consente la modifica di una struttura di dialogo, la definizione della finestra di dialogo deve essere creata e/o modificata manualmente modificando direttamente la struttura del nodo utilizzando, ad esempio, CRXDE Lite o CRX Content Explorer.
 
-### Creazione di una nuova finestra di dialogo {#creating-a-new-dialog}
+### Creating a New Dialog {#creating-a-new-dialog}
 
-**** Per creare una nuova finestra di dialogo, selezionate il componente richiesto e fate clic su **Crea... quindi** Crea finestra di dialogo... .
+Per creare una nuova finestra di dialogo, selezionate il componente richiesto e fate clic su **Crea...** quindi **Crea finestra di dialogo...**.
 
 Inserite i dettagli richiesti e fate clic su **Salva tutto** . Ora potete fare doppio clic sulla finestra di dialogo per aprirla con l’editor.
 
