@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +29,11 @@ Il servizio DocConverter può convertire documenti PDF in documenti PDA/A. È po
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio DocConverter, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio DocConverter, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Conversione di documenti in documenti PDF/A {#converting-documents-to-pdf-a-documents}
 
-È possibile utilizzare il servizio DocConverter per convertire un documento PDF in un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font vengono incorporati e il file non viene compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video. Prima di convertire un documento PDF in documento PDF/A, accertarsi che non sia un documento PDF/A.
+È possibile utilizzare il servizio DocConverter per convertire un documento PDF in un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font vengono incorporati e il file non viene compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video. Prima di convertire un documento PDF in un documento PDF/A, accertarsi che il documento PDF non sia un documento PDF/A.
 
 La specifica PDF/A-1 è costituita da due livelli di conformità, ossia A e B. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità B. Indipendentemente dal livello di conformità, PDF/A-1 stabilisce che tutti i font sono incorporati nel documento PDF/A generato. Al momento, è supportato solo PDF/A-1b per la convalida (e la conversione).
 
@@ -38,7 +41,7 @@ PDF/A è lo standard per l&#39;archiviazione di documenti PDF, ma non è obbliga
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio DocConverter, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio DocConverter, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -53,17 +56,17 @@ Per convertire un documento PDF in documento PDF/A, effettuare le seguenti opera
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un client DocConvert**
 
@@ -71,7 +74,7 @@ Prima di eseguire un&#39;operazione DocConverter a livello di programmazione, è
 
 **Riferimento a un documento PDF da convertire in documento PDF/A**
 
-Recuperare un documento PDF da convertire in documento PDF/A. Se si tenta di convertire un documento PDF, ad esempio un modulo Acrobat, in un documento PDF/A, si verificherà un&#39;eccezione.
+Recuperare un documento PDF da convertire in documento PDF/A. Se si tenta di convertire un documento PDF, ad esempio un modulo Acrobat , in un documento PDF/A, si verificherà un&#39;eccezione.
 
 **Impostazione delle informazioni di tracciamento**
 
@@ -91,7 +94,7 @@ Dopo aver creato il client del servizio DocConverter, fare riferimento al docume
 
 [Conversione di documenti in documenti PDF/A tramite l&#39;API del servizio Web](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -118,19 +121,20 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API Java:
 1. Impostazione delle informazioni di tracciamento
 
    * Creare un `PDFAConversionOptionSpec` oggetto utilizzando il relativo costruttore.
-   * Impostare il livello di tracciamento delle informazioni richiamando il metodo dell&#39; `PDFAConversionOptionSpec` oggetto `setLogLevel` e passando un valore di stringa che specifica il livello di tracciamento. For example, pass the value `FINE`. Per informazioni sui diversi valori, consultate il `setLogLevel` metodo nella Guida di riferimento [delle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Impostare il livello di tracciamento delle informazioni richiamando il metodo dell&#39; `PDFAConversionOptionSpec` oggetto `setLogLevel` e passando un valore di stringa che specifica il livello di tracciamento. For example, pass the value `FINE`. Per informazioni sui diversi valori, consultate il `setLogLevel` metodo in [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API di AEM Forms.
 
 1. Conversione del documento
 
    Convertire il documento PDF in un documento PDF/A richiamando il metodo dell&#39; `DocConverterServiceClient` oggetto `toPDFA` e passando i seguenti valori:
 
-   * L&#39; `com.adobe.idp.Document` oggetto contenente il documento PDF da convertire
+   * L&#39; `com.adobe.idp.Document` oggetto che contiene il documento PDF da convertire
    * L&#39; `PDFAConversionOptionSpec` oggetto che specifica le informazioni di tracciamento
+
    Il `toPDFA` metodo restituisce un `PDFAConversionResult` oggetto che contiene il documento PDF/A.
 
 1. Salvare il documento PDF/A
 
-   * Recuperare il documento PDF/A richiamando il `PDFAConversionResult` metodo dell&#39; `getPDFA` . Questo metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il documento PDF/A.
+   * Recuperare il documento PDF/A richiamando il `PDFAConversionResult` metodo `getPDFA` dell&#39;oggetto. Questo metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il documento PDF/A.
    * Creare un `java.io.File` oggetto che rappresenti il file PDF/A. Accertatevi che l’estensione del nome file sia .pdf.
    * Compilare il file con dati PDF/A richiamando il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` e passando l&#39; `java.io.File` oggetto.
 
@@ -140,7 +144,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API Java:
 
 [Avvio rapido (modalità SOAP): Conversione di un documento in un documento PDF/A mediante l&#39;API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -175,8 +179,9 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API DocConve
 
    Convertire il documento PDF in un documento PDF/A richiamando il metodo dell&#39; `DocConverterServiceService` oggetto `toPDFA` e passando i seguenti valori:
 
-   * L&#39; `BLOB` oggetto contenente il documento PDF da convertire
+   * L&#39; `BLOB` oggetto che contiene il documento PDF da convertire
    * L&#39; `PDFAConversionOptionSpec` oggetto che specifica le informazioni di tracciamento
+
    Il `toPDFA` metodo restituisce un `PDFAConversionResult` oggetto che contiene il documento PDF/A.
 
 1. Salvare il documento PDF/A
@@ -191,7 +196,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API DocConve
 
 [Utilizzo dei documenti PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creazione di un assembly client .NET che utilizza la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
@@ -201,7 +206,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API DocConve
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio DocConverter, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio DocConverter, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -215,17 +220,17 @@ Per determinare la conformità PDF/A, effettuare le seguenti operazioni:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un client DocConvert**
 
@@ -249,7 +254,7 @@ Dopo aver creato il client del servizio DocConverter, fare riferimento al docume
 
 [Determinazione della conformità PDF/A tramite l&#39;API del servizio Web](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -275,7 +280,7 @@ Determinare la conformità PDF/A utilizzando l&#39;API Java:
 
    * Creare un `PDFAValidationOptionSpec` oggetto utilizzando il relativo costruttore.
    * Impostare il livello di conformità richiamando il metodo dell&#39; `PDFAValidationOptionSpec` oggetto `setCompliance` e passando `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Impostare il livello di tracciamento delle informazioni richiamando il metodo dell&#39; `PDFAValidationOptionSpec` oggetto `setLogLevel` e passando un valore di stringa che specifica il livello di tracciamento. For example, pass the value `FINE`. Per informazioni sui diversi valori, consultate il `setLogLevel` metodo nella Guida di riferimento [delle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Impostare il livello di tracciamento delle informazioni richiamando il metodo dell&#39; `PDFAValidationOptionSpec` oggetto `setLogLevel` e passando un valore di stringa che specifica il livello di tracciamento. For example, pass the value `FINE`. Per informazioni sui diversi valori, consultate il `setLogLevel` metodo in [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API di AEM Forms.
 
 1. Recupero di informazioni sul documento PDF
 
@@ -283,6 +288,7 @@ Determinare la conformità PDF/A utilizzando l&#39;API Java:
 
    * L&#39; `com.adobe.idp.Document` oggetto che contiene il documento PDF.
    * L&#39; `PDFAValidationOptionSpec` oggetto che specifica le opzioni di esecuzione.
+
    Il `isPDFA` metodo restituisce un `PDFAValidationResult` oggetto che contiene i risultati dell&#39;operazione.
 
 **Consulta anche**
@@ -291,7 +297,7 @@ Determinare la conformità PDF/A utilizzando l&#39;API Java:
 
 [Avvio rapido (modalità SOAP): Determinazione della conformità PDF/A tramite l&#39;API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -329,12 +335,13 @@ Determinare la conformità PDF/A utilizzando l&#39;API del servizio Web:
 
    * L&#39; `BLOB` oggetto che contiene il documento PDF.
    * L&#39; `PDFAValidationOptionSpec` oggetto che contiene le opzioni di esecuzione.
+
    Il `isPDFA` metodo restituisce un `PDFAValidationResult` oggetto che contiene i risultati dell&#39;operazione.
 
 **Consulta anche**
 
 [Utilizzo dei documenti PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creazione di un assembly client .NET che utilizza la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
