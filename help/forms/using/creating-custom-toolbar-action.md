@@ -1,8 +1,8 @@
 ---
 title: Creazione di un’azione personalizzata per la barra degli strumenti
 seo-title: Creazione di un’azione personalizzata per la barra degli strumenti
-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
-seo-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
+description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in  AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
+seo-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in  AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
 uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Prerequisiti {#prerequisite}
 
-Prima di creare un&#39;azione personalizzata per la barra degli strumenti, acquisire familiarità con [l&#39;utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client e lo [sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Prima di creare un&#39;azione personalizzata per la barra degli strumenti, acquisire familiarità con [l&#39;utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client e lo [sviluppo con i CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Azione {#what-is-an-action-br}
 
@@ -43,11 +46,11 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 1. Selezionare `cq:template` il nodo nel `reviewbeforesubmit` nodo. Assicurarsi che il valore della `guideNodeClass` proprietà sia `guideButton` e modificare di conseguenza la `jcr:title` proprietà.
 1. Modificare la proprietà type nel `cq:Template` nodo. Per l&#39;esempio corrente, modificare la proprietà type in button.
 
-   Il valore type viene aggiunto come classe CSS nel codice HTML generato per il componente. Gli utenti possono utilizzare la classe CSS per definire lo stile delle proprie azioni. Lo stile predefinito per dispositivi mobili e desktop è disponibile per i valori di pulsante, invio, ripristino e salvataggio.
+   Il valore type viene aggiunto come classe CSS nel codice HTML generato per il componente. Gli utenti possono utilizzare la classe CSS per definire lo stile delle proprie azioni. Lo stile predefinito per i dispositivi mobili e desktop è disponibile per i valori di pulsante, invio, ripristino e salvataggio.
 
 1. Selezionare l&#39;azione personalizzata dalla finestra di dialogo della barra degli strumenti per la modifica di moduli adattivi. Nella barra degli strumenti del pannello viene visualizzato il pulsante Revisione.
 
-   ![Azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizzazione dell&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
+   ![L&#39;azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizza l&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
 
 1. Per fornire funzionalità al pulsante Review, aggiungete codice JavaScript e CSS e codice lato server nel file init.jsp, presente all&#39;interno del `reviewbeforesubmit` nodo.
 
@@ -173,7 +176,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
    }
    ```
 
-1. Per verificare la funzionalità dell’azione personalizzata, aprire il modulo adattivo in modalità Anteprima e fare clic su Revisione nella barra degli strumenti.
+1. Per verificare la funzionalità dell’azione personalizzata, aprire il modulo adattivo in modalità Anteprima e fare clic su Rivedi nella barra degli strumenti.
 
    >[!NOTE]
    >
@@ -183,6 +186,6 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 
 ## Esempi {#samples}
 
-Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo correlato alla dimostrazione sopra riportata dell’azione personalizzata della barra degli strumenti.
+Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo correlato alla dimostrazione sopra riportata dell’azione personalizzata per la barra degli strumenti.
 
 [Ottieni file](assets/customtoolbaractiondemo.zip)
