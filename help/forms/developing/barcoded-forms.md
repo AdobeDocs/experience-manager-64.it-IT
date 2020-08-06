@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1891'
+ht-degree: 0%
 
 ---
 
@@ -21,17 +24,17 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 Il servizio moduli con codice a barre automatizza l&#39;acquisizione dei dati dai moduli di compilazione e stampa e integra le informazioni acquisite nei sistemi IT di base dell&#39;azienda.
 
-Il servizio moduli con codice a barre consente di aggiungere codici a barre monodimensionali e bidimensionali ai moduli PDF interattivi. È quindi possibile pubblicare i moduli codici a barre in un sito Web o distribuirli per e-mail o CD. Quando un utente compila un modulo con codice a barre utilizzando Adobe Reader, Acrobat Professional o Acrobat Standard, i codici a barre vengono aggiornati automaticamente per codificare i dati del modulo forniti dall&#39;utente. L&#39;utente può inviare il modulo elettronicamente oppure stamparlo e inviarlo per posta, fax o a mano. In un secondo momento potete estrarre i dati forniti dall’utente come parte di un flusso di lavoro automatizzato, indirizzandoli tra i processi di approvazione e i sistemi aziendali.
+Il servizio moduli con codice a barre consente di aggiungere codici a barre monodimensionali e bidimensionali ai PDF forms interattivi. È quindi possibile pubblicare i moduli codici a barre in un sito Web o distribuirli per e-mail o CD. Quando un utente compila un modulo con codice a barre utilizzando  Adobe Reader,  Acrobat Professional o  Acrobat Standard, i codici a barre vengono aggiornati automaticamente per codificare i dati del modulo forniti dall&#39;utente. L&#39;utente può inviare il modulo elettronicamente oppure stamparlo e inviarlo per posta, fax o a mano. In un secondo momento potete estrarre i dati forniti dall’utente come parte di un flusso di lavoro automatizzato, indirizzandoli tra i processi di approvazione e i sistemi aziendali.
 
-Per ulteriori informazioni sul servizio dei moduli con codice a barre, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio moduli con codice a barre, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Decodifica dei dati del modulo con codice a barre {#decoding-barcoded-form-data}
 
-È possibile utilizzare l&#39;API del servizio moduli codici a barre per decodificare i dati da un modulo PDF o da un&#39;immagine che contiene un codice a barre. Per decodifica dei dati del modulo si intende l&#39;estrazione dei dati contenuti nel codice a barre. Prima che i dati possano essere decodificati da un modulo PDF (o da un&#39;immagine), è necessario compilare il modulo con i dati.
+È possibile utilizzare l&#39;API del servizio moduli codici a barre per decodificare i dati da un modulo PDF o da un&#39;immagine che contiene un codice a barre. Per decodifica dei dati del modulo si intende l&#39;estrazione di dati che si trovano nel codice a barre. Prima che i dati possano essere decodificati da un modulo PDF (o da un&#39;immagine), è necessario compilare il modulo con i dati.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio dei moduli con codice a barre, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio moduli con codice a barre, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -53,11 +56,11 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-barcodedforms-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
-* xercesImpl.jar (nella directory &lt;directory di installazione>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* xercesImpl.jar (che si trova in &lt;directory di installazione>/ Adobe/ Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Se AEM Forms è distribuito su un server applicazione J2EE supportato che non è JBOSS, dovrai sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
+Se  AEM Forms è distribuito su un server applicazione J2EE supportato che non è JBOSS, sarà necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui  AEM Forms è distribuito. Per informazioni sulla posizione di tutti  file AEM Forms JAR, consultate [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria AEM Forms Java.
 
 **Creare un oggetto API client per moduli con codice a barre**
 
@@ -69,7 +72,7 @@ Prima di poter eseguire un&#39;operazione del servizio moduli codici a barre a l
 
 **Decodifica dei dati dal modulo PDF**
 
-Dopo aver ottenuto un modulo PDF (o un&#39;immagine) contenente un codice a barre, è possibile decodificare i dati. Il servizio Barcoded Forms supporta i seguenti tipi di codici a barre:
+Dopo aver ottenuto un modulo PDF (o un&#39;immagine) contenente un codice a barre, è possibile decodificare i dati. Il servizio Forms con codice a barre supporta i seguenti tipi di codici a barre:
 
 * codici a barre PDF417.
 * Codici a barre della matrice dati.
@@ -100,7 +103,7 @@ Puoi elaborare i dati convertiti per soddisfare le tue esigenze aziendali. Ad es
 
 [Decodifica dei dati del modulo codici a barre tramite l&#39;API del servizio Web](barcoded-forms.md#decode-barcoded-form-data-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -135,7 +138,8 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli con codice a bar
    * Un `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre EAN-13.
    * Un `java.lang.Boolean` oggetto che specifica se decodificare un codice a barre EAN-8.
    * Un valore di `com.adobe.livecycle.barcodedforms.CharSet` enumerazione che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
-   Il `decode` metodo restituisce un `org.w3c.dom.Document` oggetto contenente dati del modulo decodificati.
+
+   Il `decode` metodo restituisce un `org.w3c.dom.Document` oggetto che contiene dati del modulo decodificati.
 
 1. Conversione dei dati in un&#39;origine dati XML
 
@@ -145,11 +149,12 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli con codice a bar
    * Un valore di `com.adobe.livecycle.barcodedforms.Delimiter` enumerazione che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
    * Un valore di `com.adobe.livecycle.barcodedforms.Delimiter` enumerazione che specifica il delimitatore di campo. Ad esempio, specificate `Delimiter.Tab`.
    * Un valore di `com.adobe.livecycle.barcodedforms.XMLFormat` enumerazione che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Ad esempio, specificare `XMLFormat.XDP` per convertire i dati in dati XDP.
+
    >[!NOTE]
    >
    >Non specificare gli stessi valori per i parametri del delimitatore di riga e del delimitatore di campo.
 
-   Il `extractToXML` metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `org.w3c.dom.Document` oggetto. Esiste un elemento separato per ciascun codice a barre che si trova sul modulo. Se il modulo contiene quattro codici a barre, l&#39; `java.util.List` oggetto restituito contiene quattro elementi.
+   Il `extractToXML` metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `org.w3c.dom.Document` oggetto. Esiste un elemento separato per ciascun codice a barre che si trova sul modulo. Ovvero, se sul modulo sono presenti quattro codici a barre, nell&#39; `java.util.List` oggetto restituito sono presenti quattro elementi.
 
 1. Elaborazione dei dati decodificati
 
@@ -161,7 +166,7 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli con codice a bar
 
 [Avvio rapido (modalità SOAP): Decodifica dei dati del modulo con codice a barre tramite l&#39;API Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -171,8 +176,8 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli codici a barre (
 
 1. Includi file di progetto
 
-   * Creare un assembly client Microsoft .NET che utilizzi il servizio WSDL per moduli con codice a barre. Per informazioni, consultate [Richiamo di moduli AEM con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
-   * Fare riferimento all&#39;assembly client Microsoft .NET. Per informazioni, vedere &quot;Riferimento all&#39;assembly del client .NET&quot; in [Attivazione di moduli AEM con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
+   * Creare un assembly client Microsoft .NET che utilizzi il servizio WSDL per moduli con codice a barre. Per ulteriori informazioni, vedere [Richiamo  AEM Forms con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
+   * Fare riferimento all&#39;assembly client Microsoft .NET. Per informazioni, vedere &quot;Riferimento all&#39;assembly del client .NET&quot; in [Chiamata  AEM Forms con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
 
 1. Creare un oggetto API client per moduli con codice a barre
 
@@ -200,6 +205,7 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli codici a barre (
    * Un `Boolean` oggetto che specifica se decodificare un codice a barre EAN-13.
    * Un `Boolean` oggetto che specifica se decodificare un codice a barre EAN-8.
    * Un valore di `CharSet` enumerazione che specifica il valore di codifica del set di caratteri utilizzato nel codice a barre.
+
    Il `decode` metodo restituisce un valore di stringa contenente dati del modulo decodificati.
 
 1. Conversione dei dati in un&#39;origine dati XML
@@ -210,11 +216,12 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli codici a barre (
    * Un valore di `Delimiter` enumerazione che specifica il delimitatore di riga. È consigliabile specificare `Delimiter.Carriage_Return`.
    * Un valore di `Delimiter` enumerazione che specifica il delimitatore di campo. Ad esempio, specificate `Delimiter.Tab`.
    * Un valore di `XMLFormat` enumerazione che specifica se convertire i dati del codice a barre in dati XML XDP o XFDF. Ad esempio, specificare `XMLFormat.XDP` per convertire i dati in dati XDP.
+
    >[!NOTE]
    >
    >Non specificare gli stessi valori per i parametri del delimitatore di riga e del delimitatore di campo.
 
-   Il `extractToXML` metodo restituisce un `Object` array in cui ogni elemento è un&#39; `BLOB` istanza. Esiste un elemento separato per ciascun codice a barre che si trova sul modulo. Se il modulo contiene quattro codici a barre, nell&#39; `Object` array restituito sono presenti quattro elementi.
+   Il `extractToXML` metodo restituisce un `Object` array in cui ogni elemento è un&#39; `BLOB` istanza. Esiste un elemento separato per ciascun codice a barre che si trova sul modulo. Ovvero, se sul modulo sono presenti quattro codici a barre, nell&#39; `Object` array restituito sono presenti quattro elementi.
 
 1. Elaborazione dei dati decodificati
 
@@ -225,4 +232,4 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli codici a barre (
 
 **Consulta anche**
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
