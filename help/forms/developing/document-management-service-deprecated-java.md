@@ -24,7 +24,7 @@ Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Avvio 
 
 >[!NOTE]
 >
->A partire dal 5 agosto 2011, Adobe sta effettuando la migrazione dei clienti di Content Services ES ad Adobe Digital Enterprise Platform Experience Services. La roadmap di prodotto per i clienti che utilizzano Content Services consiste nel passare alla nuova ADEP Experience Services - Core, che include un repository di contenuti nativo basato sulla moderna architettura CRX modulare, acquisita durante l&#39;acquisizione di Adobe Day Software.
+>A partire dal 5 agosto 2011,  Adobe sta migrando i clienti di Content Services ES in  Adobe Digital Enterprise Platform Experience Services. La roadmap di prodotto per i clienti che utilizzano Content Services consiste nel passare alla nuova ADEP Experience Services - Core, che include un repository di contenuti nativo basato sulla moderna architettura CRX modulare, acquisita durante l&#39;acquisizione  Adobe di Day Software.
 
 [Avvio rapido (modalità SOAP): Creare spazi di Content Services utilizzando l&#39;API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,15 +42,15 @@ Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Avvio 
 
 [Avvio rapido (modalità SOAP): Impostazione delle autorizzazioni di Content Services tramite l&#39;API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sulla distribuzione di Forms Server su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Avvio rapido in Programmazione con moduli AEM basati su Forms Server distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creare spazi di Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazio denominato *Directory di prova *che si trova nella home dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazio denominato *Directory di prova *che si trova nella home dell&#39;azienda. Il valore identificativo del nuovo spazio viene scritto nella console.
 
 ```as3
  /* 
