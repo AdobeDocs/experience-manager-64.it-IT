@@ -1,8 +1,8 @@
 ---
 title: Passaggio All'Insieme Di Statistiche Di Utilizzo Aggregato
 seo-title: Passaggio All'Insieme Di Statistiche Di Utilizzo Aggregato
-description: Scopri come scegliere tra le statistiche di utilizzo aggregate.
-seo-description: Scopri come scegliere tra le statistiche di utilizzo aggregate.
+description: Scoprite come scegliere tra le statistiche di utilizzo aggregate.
+seo-description: Scoprite come scegliere tra le statistiche di utilizzo aggregate.
 uuid: 835fd281-da4f-42ef-bae8-9ca91a29bc65
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## Introduzione {#introduction}
 
-Puoi contribuire a migliorare Adobe Marketing Cloud inviando statistiche Adobe sul modo in cui interagisci con AEM. Queste informazioni non contengono dati sui visitatori del sito della società e sono utilizzate solo per fornire, supportare e migliorare l&#39;esperienza degli utenti da parte di Adobe.
+È possibile migliorare Adobe Marketing Cloud inviando  statistiche di Adobe sulle modalità di interazione con AEM. Queste informazioni non contengono dati sui visitatori del sito della società e vengono utilizzate solo per aiutare  Adobe a fornire, supportare e migliorare l&#39;esperienza utente.
 
 È possibile scegliere di utilizzare la raccolta delle statistiche di utilizzo utilizzando l&#39;interfaccia utente touch o la console Web.
 
 >[!NOTE]
 >
->Esistono varie normative in materia di protezione dei dati e privacy; tra cui, ad esempio, GDPR e CCPA. AEM Sites è pronto per aiutare i clienti a rispettare gli obblighi in materia di protezione dei dati e privacy. Questa pagina illustra ai clienti le procedure per consentire o meno l&#39;accesso alla raccolta delle statistiche di utilizzo aggregato.
+>Esistono varie normative in materia di protezione dei dati e di privacy; tra cui, ad esempio, GDPR e CCPA.  AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi in materia di protezione dei dati e privacy. Questa pagina illustra ai clienti le procedure per consentire o meno l&#39;accesso alla raccolta delle statistiche di utilizzo aggregato.
 >
->Per ulteriori informazioni, vedere anche il Centro [per la privacy di](https://www.adobe.com/privacy.html)Adobe.
+>Per ulteriori informazioni, vedere anche il [Adobe  Centro](https://www.adobe.com/privacy.html)per la privacy.
 
 >[!NOTE]
 >
->Potete inoltre rifiutare in qualsiasi momento utilizzando la console [](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) Web o non selezionando l&#39;opzione di consenso nella schermata di consenso di AEM.
+>Potete inoltre rifiutare in qualsiasi momento utilizzando la console [](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) Web o non selezionando l&#39;opzione di consenso nella schermata di consenso AEM.
 
 ## Consenso mediante l’interfaccia touch {#opt-in-by-using-the-touch-ui}
 
@@ -55,7 +58,7 @@ La prima volta che avviate AEM, potete scegliere di utilizzare l&#39;interfaccia
 
 Potete scegliere (o rifiutare) utilizzando la console Web come segue:
 
-1. Nella schermata Navigazione AEM, fate clic su **Strumenti** e quindi su **Operazioni**.
+1. Nella schermata Navigazione AEM, fare clic su **Strumenti** e quindi su **Operazioni**.
 
    ![usage_statistical_sopsdashboard](assets/usage_statisticsopsdashboard.png)
 
