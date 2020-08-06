@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +49,7 @@ Da MCM è possibile accedere a:
       Quando si seleziona un segmento, si passa alla pagina di definizione dello stesso.
 
    * [Rapporti](/help/sites-administering/reporting.md)\
-      In AEM sono disponibili diversi rapporti che consentono di analizzare e monitorare lo stato dell’istanza. Questo riquadro di MCM elenca i report disponibili.
+      AEM rapporti diversi per consentire di analizzare e monitorare lo stato dell’istanza. Questo riquadro di MCM elenca i report disponibili.
 
       Quando si seleziona un report si passa alla pagina dello stesso.
 
@@ -183,7 +186,7 @@ Per le singole campagne sono disponibili due viste:
 
    In questa sezione è possibile effettuare le seguenti attività:
 
-   * **Crea un** nuovo... esperienza; ad esempio, offerte Adobe Target, teaser e newsletter.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * Seleziona **Modifica** o fai doppio clic per modificare i dettagli di una pagina teaser o newsletter.
    * Seleziona **Proprietà** per definire le proprietà di una pagina teaser o newsletter.
    * Selezionare **Simula** per simulare l’aspetto di un’esperienza (pagina teaser o newsletter).
