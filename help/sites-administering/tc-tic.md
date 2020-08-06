@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Configurazione del framework di integrazione della traduzione{#configuring-the-translation-integration-framework}
 
-Il Framework di integrazione delle traduzioni si integra con servizi di traduzione di terze parti per orchestrare la traduzione dei contenuti AEM.
+Il framework di integrazione della traduzione si integra con servizi di traduzione di terze parti per orchestrare la traduzione dei contenuti AEM.
 
 * Connettiti al provider del servizio di traduzione.
 * Creare una configurazione di Translation Integration Framework.
@@ -30,10 +30,10 @@ Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate
 
 ## Connessione a un provider di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
-Crea una configurazione cloud per la connessione di AEM al provider di servizi di traduzione. AEM include la funzionalità di connessione a Microsoft Translator per impostazione predefinita.
+Crea una configurazione cloud che si connetta AEM al provider del servizio di traduzione. AEM include la capacità di connettersi a Microsoft Translator per impostazione predefinita.
 I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull&#39;integrazione:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) ( Adobe Exchange Premier Partner)
 * [Tecnologie per tablet argilla](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -51,8 +51,9 @@ I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova
 >Per trovare l&#39;ultimo elenco di fornitori di traduzioni umane e automatiche, date un&#39;occhiata a queste pagine:
 >
 >
->* [Traduzione umana AEM](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -185,7 +186,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
  </tbody> 
 </table>
 
-1. Nella barra laterale, fai clic o tocca Strumenti > Operazioni > Cloud > Servizi cloud.
+1. Nella barra laterale, fate clic o toccate Strumenti > Operazioni > Cloud > Cloud Services.
 1. Nell&#39;area Integrazione traduzione, se sono state create configurazioni, il collegamento viene visualizzato:
 
    * Se non è stata creata alcuna configurazione, tocca o fai clic su Configura ora.
@@ -198,7 +199,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
 
 Per configurare la traduzione delle pagine di origine in altre lingue, associa le pagine alle seguenti configurazioni cloud:
 
-* Configurazione cloud per la connessione di AEM al provider di traduzione.
+* Configurazione cloud che si collega AEM al provider di traduzione.
 * Il framework di integrazione della traduzione che configura i dettagli della traduzione.
 
 La configurazione cloud del framework di integrazione della traduzione identifica la configurazione cloud da utilizzare per la connessione al provider di servizi. Quando associate una pagina di origine a una configurazione cloud di framework, la pagina deve essere associata alla configurazione cloud del provider di servizi utilizzata dalla configurazione cloud del framework.
@@ -214,7 +215,7 @@ Inoltre, per qualsiasi comunità di componenti [](/help/communities/scf.md) SCF 
 Associate una pagina al provider di traduzione che utilizzate per tradurre la pagina e le pagine discendenti.
 
 1. Nella console Siti, selezionate la pagina da configurare e toccate o fate clic su Visualizza proprietà.
-1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Servizi cloud.
+1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Cloud Services.
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione traduzione.
 1. Selezionate il provider di traduzione da utilizzare, quindi toccate o fate clic su Fine.
 
@@ -223,7 +224,7 @@ Associate una pagina al provider di traduzione che utilizzate per tradurre la pa
 Associate una pagina al framework di integrazione della traduzione che definisce il modo in cui desiderate eseguire la traduzione della pagina e delle pagine discendenti.
 
 1. Nella console Siti, selezionate la pagina da configurare e toccate o fate clic su Visualizza proprietà.
-1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Servizi cloud.
+1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Cloud Services.
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione traduzione.
-1. Selezionate il framework di integrazione della conversione da utilizzare, quindi fate clic o toccate Fine.
+1. Selezionate il framework di integrazione della conversione da utilizzare, quindi toccate o fate clic su Fine.
 
