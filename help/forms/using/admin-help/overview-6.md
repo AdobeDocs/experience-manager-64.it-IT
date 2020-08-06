@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Potete creare le credenziali SSL (Secure Sockets Layer) e configurare SSL sul server dell’applicazione per migliorare la sicurezza della comunicazione con il server dell’applicazione.
 
-Come prodotto di sicurezza, Rights Management richiede la configurazione di SSL. Quando configurate i certificati SSL, accertatevi di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
+Come prodotto di sicurezza, il Rights Management richiede la configurazione di SSL. Quando configurate i certificati SSL, accertatevi di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
 
-Le informazioni fornite si applicano alle installazioni chiavi in mano, automatiche e manuali. Offre un esempio di metodo per configurare SSL. È inoltre possibile utilizzare altri metodi più adatti alla rete o all&#39;organizzazione.
+Le informazioni fornite si applicano alle installazioni chiavi in mano, automatiche e manuali. Offre un esempio di metodo per la configurazione di SSL. È inoltre possibile utilizzare altri metodi più adatti alla rete o all&#39;organizzazione.
 
 >[!NOTE]
 >
