@@ -1,6 +1,6 @@
 ---
-title: Gestione delle richieste GDPR per AEM Foundation
-seo-title: Gestione delle richieste GDPR per AEM Foundation
+title: Gestione delle richieste GDPR per la AEM Foundation
+seo-title: Gestione delle richieste GDPR per la AEM Foundation
 description: 'null'
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
@@ -8,11 +8,14 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 6%
 
 ---
 
 
-# Gestione delle richieste GDPR per AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste GDPR per la AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -20,7 +23,7 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## Supporto GDPR di AEM Foundation {#aem-foundation-gdpr-support}
 
-A livello di AEM Foundation, i Dati personali memorizzati sono il Profilo utente. Di conseguenza, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e eliminazione del GDPR.
+A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo Utente. Di conseguenza, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e eliminazione del GDPR.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
@@ -40,7 +43,7 @@ A livello di AEM Foundation, i Dati personali memorizzati sono il Profilo utente
 
 ### HTTP API {#http-api}
 
-Come già detto, Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
+Come già detto,  Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
 
 **API UserProperties**
 
@@ -90,7 +93,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Elimina informazioni profilo utente {#delete-user-profile-information}
 
-1. Accedete a CRXDE Lite, quindi cercate `[!UICONTROL userId]`:
+1. Accedete al CRXDE Lite , quindi cercate `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -98,10 +101,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione di AEM:
+1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
 
    1. Il profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.4.
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP API {#http-api-1}
