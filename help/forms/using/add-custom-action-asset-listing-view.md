@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 2%
 
 ---
 
@@ -60,13 +63,13 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL Percorso:]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Posizione: /apps/
+      **[!UICONTROL Posizione:]** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
-      ![Overlay, nodo](assets/2_createnodedownloadflatpdf.png)
+      ![Sovrapposizione, nodo](assets/2_createnodedownloadflatpdf.png)
 
    1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -78,12 +81,13 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **[!UICONTROL OK]**:
 
-      **** Nome: downloadFlatPDF (o il nome che si desidera assegnare a questa proprietà)
+      **[!UICONTROL Nome:]** downloadFlatPDF (o il nome che si desidera assegnare a questa proprietà)
 
-      **** Tipo: nt:non strutturato
+      **[!UICONTROL Tipo:]** nt:non strutturato
 
    1. Fare clic sul nuovo nodo creato (qui downloadFlatPDF). CRX visualizza le proprietà del nodo.
    1. Aggiungi le seguenti proprietà al nodo (qui downloadFlatPDF) e fai clic su **[!UICONTROL Salva tutto]**:
+
    <table> 
     <tbody> 
     <tr> 
@@ -99,7 +103,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Stringa</td> 
-    <td><p>{"target": ".cq-management-asset-admin-pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> può essere uno o più elementi per consentire la selezione di una o più risorse sulle quali viene eseguita l'azione personalizzata.</p> <p><strong>type</strong> può essere una o più voci (virgole separate, voci multiple) tra le seguenti: LETTERA,TESTO,ELENCO,CONDIZIONE,DATADICTIONARIO</p> </td> 
+    <td><p>{"target": ".cq-management-asset-admin-child-pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> può essere uno o più elementi, per consentire la selezione di una o più risorse sulle quali viene eseguita l'azione personalizzata.</p> <p><strong>type</strong> può essere una o più voci (virgole separate, voci multiple) tra le seguenti: LETTERA,TESTO,ELENCO,CONDIZIONE,DATADICTIONARIO</p> </td> 
     </tr> 
     <tr> 
     <td>icon</td> 
@@ -129,7 +133,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
     <tr> 
     <td>titolo</td> 
     <td>Stringa</td> 
-    <td>Scaricare un PDF semplice della lettera selezionata (o qualsiasi altro testo etichetta/Alt)<br /> <br /> Il titolo è il testo alternativo visualizzato quando l'utente passa il puntatore del mouse sul comando personalizzato.</td> 
+    <td>Scaricare un PDF semplice della lettera selezionata (o qualsiasi altro testo etichetta/Alt)<br /> <br /> Il titolo è il testo alternativo che Gestione corrispondenza visualizza quando l'utente passa il puntatore del mouse sul comando personalizzato.</td> 
     </tr> 
     </tbody> 
     </table>
@@ -142,11 +146,11 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL Percorso:]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Posizione: /apps/
+      **[!UICONTROL Posizione:]** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
    1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app. Fate clic su **[!UICONTROL Salva tutto]**.
 
@@ -220,7 +224,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
       '</div>';
       ```
 
-      Il codice aggiunto in questo passaggio ha la priorità sul codice presente nella cartella libs, pertanto copia il codice precedente nel file formaction.js nel ramo /apps. Copiando il codice dal ramo /libs al ramo /apps si garantisce che funzioni anche la funzionalità precedente.
+      Il codice aggiunto in questo passaggio ha la priorità sul codice presente nella cartella libs, quindi copiate il codice precedente nel file formaction.js nel ramo /apps. Copiando il codice dal ramo /libs al ramo /apps si garantisce che funzioni anche la funzionalità precedente.
 
       Il codice riportato sopra è relativo alla gestione dell&#39;azione specifica delle lettere del comando creato in questa procedura. Per la gestione delle azioni di altre risorse, modificate il codice JavaScript.
 
@@ -232,11 +236,11 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Percorso:]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Posizione: /apps/
+      **[!UICONTROL Posizione:]** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **[!UICONTROL Corrispondenza tipi di nodo:]** Selezionato
 
    1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -248,9 +252,9 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **[!UICONTROL OK]**:
 
-      **** Nome: letterpdfdownloader (oppure il nome che si desidera assegnare a questa proprietà) deve essere univoco. Se utilizzate un nome diverso, specificate lo stesso nella variabile ACTION_URL del file formaction.js.)
+      **[!UICONTROL Nome:]** letterpdfdownloader (oppure il nome che si desidera assegnare a questa proprietà) deve essere univoco. Se utilizzate un nome diverso, specificate lo stesso nella variabile ACTION_URL del file formaction.js.)
 
-      **** Tipo: nt:non strutturato
+      **[!UICONTROL Tipo:]** nt:non strutturato
 
    1. Fare clic sul nuovo nodo creato (qui downloadFlatPDF). CRX visualizza le proprietà del nodo.
 
@@ -273,9 +277,9 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
    1. Fate doppio clic sul file **[!UICONTROL POST.jsp]** per aprirlo in CRX.
    1. Aggiungete il codice seguente al file POST.jsp e fate clic su **[!UICONTROL Salva tutto]**:
 
-      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie Java della risorsa al codice. Per ulteriori informazioni sulle API di AEM Forms, consultate API [di](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie Java della risorsa al codice. Per ulteriori informazioni su  API AEM Forms, consultate [API](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-      Per ulteriori informazioni sulle librerie AEM, consultate [Componenti](/help/sites-developing/components.md)AEM.
+      Per ulteriori informazioni sulle librerie AEM, vedere AEM [Componenti](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -344,11 +348,11 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
 ## Download di un PDF semplice di una lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto delle lettere, è possibile utilizzare la procedura seguente per scaricare la versione PDF semplice della lettera selezionata:
+Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto delle lettere, è possibile utilizzare i seguenti passaggi per scaricare la versione PDF semplice della lettera selezionata:
 
 1. Vai a `https://[server]:[port]/[ContextPath]/projects.html` e accedi.
 
-1. Selezionare **[!UICONTROL Moduli > Lettere]**. Gestione corrispondenza elenca le lettere disponibili nel sistema.
+1. Selezionare **[!UICONTROL Forms > Lettere]**. Gestione corrispondenza elenca le lettere disponibili nel sistema.
 1. Fare clic su **[!UICONTROL Seleziona]** , quindi su una lettera per selezionarla.
 1. Selezionate **[!UICONTROL Altro]** > &lt;Scarica PDF semplice> (La funzionalità personalizzata creata seguendo le istruzioni fornite in questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
 
@@ -356,7 +360,7 @@ Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto dell
 
    ![Funzionalità personalizzata: Scarica PDF semplice](assets/5_downloadflatpdf.png)
 
-1. Nella finestra di dialogo Scarica lettera come PDF, selezionare il codice XML appropriato da cui compilare i dati nel PDF.
+1. Nella finestra di dialogo Scarica lettera come PDF, selezionare il codice XML appropriato dal quale si desidera compilare i dati nel PDF.
 
    >[!NOTE]
    >
