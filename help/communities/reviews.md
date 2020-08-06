@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del riepilogo di recensioni (visualizzazione)
-seo-title: Utilizzo del riepilogo di recensioni (visualizzazione)
+title: Utilizzo del riepilogo di recensioni e recensioni (visualizzazione)
+seo-title: Utilizzo del riepilogo di recensioni e recensioni (visualizzazione)
 description: Aggiunta di componenti Riepilogo recensioni e revisioni a una pagina
 seo-description: Aggiunta di componenti Riepilogo recensioni e revisioni a una pagina
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo del riepilogo di recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
+# Utilizzo del riepilogo di recensioni e recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
 
 Il `Reviews`componente è composto da [ componenti `Comments`](comments.md) e [ `Rating`](rating.md) componenti pronti all’uso.
 
@@ -29,7 +32,7 @@ Il `Reviews Summary (Display)` componente fornisce un riepilogo di un’istanza 
 
 Per aggiungere un `Reviews` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Reviews` e trascinarlo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione che gli utenti potranno vedere.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews`componente.
 
@@ -41,7 +44,7 @@ Selezionate il `Reviews` componente inserito a cui accedere e selezionate l’ `
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
-Nella scheda Valutazioni **[!UICONTROL consentite]** , specificate l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale, in quanto è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita dovrebbe essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
+Nella scheda Valutazioni **** consentite, specificate l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale, in quanto è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita dovrebbe essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
 
 ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -55,7 +58,7 @@ Nella scheda Valutazioni **[!UICONTROL consentite]** , specificate l&#39;elenco 
 
 Nella scheda Valutazioni **** richieste, immettere nuovamente gli elementi dall&#39;elenco Valutazioni **** consentite che devono essere valutati. Se un elemento è specificato solo nella scheda Valutazioni consentite, può essere lasciato senza contrassegno quando viene inviato dal membro.
 
-Nel sito Web le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato finché non vengono contrassegnate tutte le valutazioni richieste.
+Nel sito Web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato finché non vengono contrassegnate tutte le valutazioni richieste.
 
 ![chlimage_1-343](assets/chlimage_1-343.png)
 
@@ -73,7 +76,7 @@ Nel sito Web le valutazioni richieste sono contrassegnate da un asterisco. Se un
 
 Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione delle revisioni.
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
 * **[!UICONTROL Consenti risposte]** Se questa opzione è selezionata, consenti risposte alle revisioni. Il valore predefinito è deselezionato.
 
@@ -97,7 +100,7 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione delle
 
 * **[!UICONTROL Pre-moderazione]** Se questa opzione è selezionata, le revisioni devono essere approvate prima che vengano visualizzate su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Elimina revisioni]** Se questa opzione è selezionata, al membro che ha pubblicato la revisione viene fornita la possibilità di eliminarla. Il valore predefinito è deselezionato.
+* **[!UICONTROL Elimina recensioni]** Se questa opzione è selezionata, al membro che ha pubblicato la revisione viene fornita la possibilità di eliminarla. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Rifiuta recensioni]** Se questa opzione è selezionata, consente ai moderatori di rifiutare le revisioni. Il valore predefinito è deselezionato.
 
@@ -111,7 +114,7 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione delle
 
 * **[!UICONTROL Soglia moderazione]** Immettere il numero di volte in cui i membri devono contrassegnare una revisione prima che i moderatori ne ricevano una notifica. Il valore predefinito è una tantum (1).
 
-* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalata una revisione prima di essere nascosta dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **[!UICONTROL moderazione]**. Il valore predefinito è 5.
+* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalata una revisione prima che questa venga nascosta dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **[!UICONTROL moderazione]**. Il valore predefinito è 5.
 
 ### Aggiunta di un riepilogo della revisione (visualizzazione) a una pagina {#adding-a-review-summary-display-to-a-page}
 
@@ -121,7 +124,7 @@ Per aggiungere un `Reviews Summary (Display)` componente a una pagina in modalit
 
 trascinarlo nella posizione desiderata su una pagina in cui deve essere visualizzato il riepilogo di una revisione attiva o chiusa.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews Summary (Display)`componente.
 
@@ -143,7 +146,7 @@ Nella scheda Riepilogo **** revisione
 
 * `Review Path`
 
-   immettere o individuare l&#39;istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunta alla pagina Web del sito [Geometrixx Engage,](getting-started.md) il percorso sarebbe:
+   immettete o individuate l’istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunta alla pagina Web del sito di [Geometrixx,](getting-started.md) il percorso sarà:
 
    /content/sites/interazione/it/page/jcr:content/content/Primary/review
 
@@ -165,13 +168,13 @@ Nella scheda Tipi **[!UICONTROL di]** risorse, specificare il resourceType perso
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Ad esempio: `/apps/social/commons/components/hbs/comments/comment`
+   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
 
    Questa risorsa identificherà resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passa a resourceType di un `voting`componente esteso in /apps. Ad esempio: `/apps/social/components/hbs/voting`
+   Passa a resourceType di un `voting`componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
 
    Questa risorsa identificherà il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
 
