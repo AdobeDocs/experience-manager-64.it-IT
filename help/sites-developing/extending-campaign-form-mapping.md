@@ -1,8 +1,8 @@
 ---
 title: Creazione di mappature di moduli personalizzate
 seo-title: Creazione di mappature di moduli personalizzate
-description: Quando crei una tabella personalizzata in Adobe Campaign, potresti voler creare in AEM un modulo mappato su tale tabella personalizzata
-seo-description: Quando crei una tabella personalizzata in Adobe Campaign, potresti voler creare in AEM un modulo mappato su tale tabella personalizzata
+description: Quando si crea una tabella personalizzata in  Adobe Campaign, potrebbe essere necessario creare un modulo AEM mappato su tale tabella personalizzata
+seo-description: Quando si crea una tabella personalizzata in  Adobe Campaign, potrebbe essere necessario creare un modulo AEM mappato su tale tabella personalizzata
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 5%
 
 ---
 
 
 # Creazione di mappature di moduli personalizzate{#creating-custom-form-mappings}
 
-Quando crei una tabella personalizzata in Adobe Campaign, potresti voler creare in AEM un modulo mappato su tale tabella personalizzata.
+Quando si crea una tabella personalizzata in  Adobe Campaign, potrebbe essere necessario creare un modulo AEM mappato su tale tabella personalizzata.
 
-Questo documento descrive come creare mappature dei moduli personalizzate. Una volta completati i passaggi descritti in questo documento, gli utenti avranno a disposizione una pagina dell&#39;evento in cui potranno registrarsi per un evento imminente. Puoi quindi seguire questi utenti tramite Adobe Campaign.
+Questo documento descrive come creare mappature dei moduli personalizzate. Una volta completati i passaggi descritti in questo documento, gli utenti avranno a disposizione una pagina dell&#39;evento in cui potranno registrarsi per un evento imminente. Potete quindi seguire questi utenti tramite  Adobe Campaign.
 
 ## Prerequisiti {#prerequisites}
 
@@ -38,12 +41,12 @@ Per creare mappature dei moduli personalizzate, è necessario seguire questi pas
 1. Estende la tabella **sementi** .
 1. Creare una mappatura personalizzata.
 1. Crea una consegna basata sulla mappatura personalizzata.
-1. Create il modulo in AEM, che utilizzerà la consegna creata.
+1. Creare il modulo in AEM, che utilizzerà la consegna creata.
 1. Inviare il modulo per verificarlo.
 
-### Creazione di una tabella personalizzata in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
+### Creazione di una tabella personalizzata in  Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Per iniziare, crea una tabella personalizzata in Adobe Campaign. In questo esempio, utilizziamo la seguente definizione per creare una tabella eventi:
+Iniziate creando una tabella personalizzata in  Adobe Campaign. In questo esempio, utilizziamo la seguente definizione per creare una tabella eventi:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -58,7 +61,7 @@ Dopo aver creato la tabella degli eventi, eseguite la procedura guidata **** Agg
 
 ### Estensione della tabella delle sementi {#extending-the-seed-table}
 
-In Adobe Campaign, tocca o fai clic su **Aggiungi** per creare una nuova estensione della tabella degli indirizzi **seed (nms)** .
+In  Adobe Campaign, toccate/fate clic su **Aggiungi** per creare una nuova estensione della tabella **Indirizzi di base (nms)** .
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -89,15 +92,15 @@ In **Amministrazione/** Gestione campagne, andate a Mappature **** Target e aggi
 
 In questo passaggio, state aggiungendo un modello di consegna che utilizza la mappatura **** Target creata.
 
-In **Risorse/Modelli**, passa al Modello di consegna e duplica la consegna AEM esistente. Quando fate clic su **A**, selezionate la creazione della mappatura **di** destinazione dell&#39;evento.
+In **Risorse/Modelli**, andate al Modello di consegna e duplicate la consegna AEM esistente. Quando fate clic su **A**, selezionate la creazione della mappatura **di** destinazione dell&#39;evento.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Creazione del modulo in AEM {#building-the-form-in-aem}
 
-In AEM, accertati di aver configurato un servizio Cloud in Proprietà **** pagina.
+In AEM, accertatevi di aver configurato un Cloud Service in Proprietà **** pagina.
 
-Quindi, nella scheda **Adobe Campaign** , seleziona la consegna creata in [Creazione di un modello](#creating-a-custom-delivery-template)di consegna personalizzato.
+Quindi, nella **scheda Adobe Campaign** , selezionate la consegna creata in [Creazione di un modello](#creating-a-custom-delivery-template)di consegna personalizzato.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -115,7 +118,7 @@ Nella configurazione del modulo, selezionare la casella di controllo per creare 
 
 ### Invio del modulo {#submitting-the-form}
 
-Ora è possibile inviare il modulo e convalidare sul lato Adobe Campaign se i valori vengono salvati.
+È ora possibile inviare il modulo e convalidare sul lato Adobe Campaign  se i valori vengono salvati.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -123,7 +126,7 @@ Ora è possibile inviare il modulo e convalidare sul lato Adobe Campaign se i va
 
 **&quot;Tipo non valido per il valore &#39;02/02/2015&#39; dall&#39;elemento &#39;@eventdate&#39; (documento di tipo &#39;Event ([adb:event])&#39;)&quot;**
 
-Quando si invia il modulo, questo errore viene registrato nel registro **** error.log in AEM.
+Quando si invia il modulo, l&#39;errore viene registrato nel AEM **error.log** .
 
 Formato non valido per il campo data. La soluzione alternativa consiste nel fornire il valore **yyyy-mm-dd** .
 
