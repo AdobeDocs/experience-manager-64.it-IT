@@ -1,7 +1,7 @@
 ---
 title: Catalog Producer
 seo-title: Catalog Producer
-seo-description: Scopri come utilizzare Catalog Producer in Risorse AEM per generare cataloghi di prodotti utilizzando le risorse digitali.
+seo-description: Scoprite come utilizzare Catalog Producer in  AEM Assets per generare cataloghi di prodotti utilizzando le risorse digitali.
 uuid: da822d83-8b99-4089-ae1b-11d897d4044e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,29 +10,32 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 translation-type: tm+mt
 source-git-commit: c777ad6314fb0a83f574e82aa11cb677eb52b7d6
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 0%
 
 ---
 
 
 # Catalog Producer{#catalog-producer}
 
-Scopri come utilizzare Catalog Producer in Risorse AEM per generare cataloghi di prodotti utilizzando le risorse digitali.
+Scoprite come utilizzare Catalog Producer in  AEM Assets per generare cataloghi di prodotti utilizzando le risorse digitali.
 
-Con Adobe Experience Manager (AEM) Assets Catalog Producer, potete creare cataloghi per i prodotti di marca utilizzando i modelli InDesign importati da un’applicazione InDesign. Per importare i modelli di InDesign, integrate prima AEM Assets con un server InDesign.
+Con Adobe Experience Manager (AEM) Assets Catalog Producer, potete creare cataloghi per i prodotti del vostro marchio utilizzando  modelli InDesign importati da un’applicazione  InDesign. Per importare  modelli di InDesign, integrate prima  AEM Assets con un server InDesign .
 
 ## Integrating with InDesign server {#integrating-with-indesign-server}
 
-Come parte del processo di integrazione, configurate il flusso di lavoro **DAM Update Asset** , adatto per l&#39;integrazione con InDesign. Inoltre, configurate un lavoratore proxy per il server InDesign. Per informazioni dettagliate, consultate [Integrazione di AEM Assets con InDesign Server](/help/assets/indesign.md).
+Come parte del processo di integrazione, configurate il flusso di lavoro **DAM Update Asset** , adatto per l&#39;integrazione con  InDesign. Inoltre, configurate un lavoratore proxy per il server InDesign . Per informazioni dettagliate, consultate [Integrazione  AEM Assets con  InDesign Server](/help/assets/indesign.md).
 
 >[!NOTE]
 >
->Potete generare modelli InDesign da file InDesign prima di importarli in Risorse AEM. Per informazioni dettagliate, consultate [Utilizzo di file e modelli](https://helpx.adobe.com/indesign/using/files-templates.html).
+>Potete generare modelli  InDesign da file  InDesign prima di importarli  AEM Assets. Per informazioni dettagliate, consultate [Utilizzo di file e modelli](https://helpx.adobe.com/indesign/using/files-templates.html).
 >
->Potete mappare gli elementi dei modelli InDesign a tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file InDesign, consultate [Assegnazione di tag ai contenuti XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>È possibile mappare gli elementi nei modelli di InDesign  ai tag XML. I tag mappati vengono visualizzati come proprietà quando mappate le proprietà del prodotto con le proprietà del modello in Catalog Producer. Per informazioni sui tag XML nei file  InDesign, consultate [Assegnazione di tag ai contenuti XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
->Solo i file InDesign (.indd) sono utilizzati come modelli. I file con estensione .indt non sono supportati.
+>Solo  file InDesign (.indd) vengono utilizzati come modelli. I file con estensione .indt non sono supportati.
 
 ## Creazione di un catalogo {#creating-a-catalog}
 
@@ -52,10 +55,10 @@ Catalog Producer utilizza i dati PIM (Product Information Management) per mappar
    >Per aprire il catalogo, potete anche toccare o fare clic su **Apri** nella finestra di dialogo di conferma indicata nel passaggio precedente.
 
 1. Per aggiungere delle pagine al catalogo, toccate o fate clic su **Crea** dalla barra degli strumenti, quindi scegliete l’opzione **Nuova pagina** .
-1. Dalla procedura guidata, selezionate un modello InDesign per la pagina. Quindi toccate o fate clic su **Avanti**.
+1. Dalla procedura guidata, selezionate un modello di InDesign  per la pagina. Quindi toccate o fate clic su **Avanti**.
 1. Specificate un nome per la pagina e una descrizione facoltativa. Specificate eventuali tag.
-1. Tap/click the **Create** from the toolbar. Quindi toccate o fate clic su **Apri** nella finestra di dialogo. Le proprietà del prodotto vengono visualizzate nel riquadro a sinistra. Le proprietà predefinite per il modello InDesign vengono visualizzate nel riquadro di destra.
-1. Dal riquadro a sinistra, trascinate le proprietà del prodotto nelle proprietà del modello InDesign e create una mappatura tra di esse.
+1. Tap/click the **Create** from the toolbar. Quindi toccate o fate clic su **Apri** nella finestra di dialogo. Le proprietà del prodotto vengono visualizzate nel riquadro a sinistra. Le proprietà predefinite per il modello di InDesign  vengono visualizzate nel riquadro di destra.
+1. Dal riquadro a sinistra, trascinate le proprietà del prodotto nelle proprietà del modello di InDesign  e create una mappatura tra di esse.
 
    Per visualizzare l’aspetto della pagina in tempo reale, toccate o fate clic sulla scheda **Anteprima** nel riquadro a destra.
 
@@ -72,8 +75,8 @@ Catalog Producer utilizza i dati PIM (Product Information Management) per mappar
    ![select_product](assets/select_product.png)
 
 1. Dalla barra degli strumenti, fate clic o toccate **Crea**. Toccate o fate clic su **Fine** per chiudere la finestra di dialogo. Pagine simili sono incluse nel catalogo.
-1. Per aggiungere un file InDesign esistente al catalogo, toccate o fate clic su **Crea** dalla barra degli strumenti e scegliete l’opzione **Aggiungi alla pagina** esistente.
-1. Selezionate il file InDesign, quindi toccate o fate clic su **Aggiungi** dalla barra degli strumenti. Quindi toccate o fate clic su **OK** per chiudere la finestra di dialogo.
+1. Per aggiungere un file  InDesign esistente al catalogo, toccate o fate clic su **Crea** dalla barra degli strumenti e scegliete l’opzione **Aggiungi alla pagina** esistente.
+1. Selezionate il file InDesign , quindi toccate o fate clic su **Aggiungi** dalla barra degli strumenti. Quindi toccate o fate clic su **OK** per chiudere la finestra di dialogo.
 
    Se i metadati dei prodotti a cui si fa riferimento nelle pagine del catalogo vengono modificati, le modifiche non vengono applicate automaticamente alle pagine del catalogo. Sulle immagini del prodotto presenti nelle pagine del catalogo di riferimento viene visualizzato un banner con etichetta **Stale** , a indicare che i metadati per i prodotti di riferimento non sono aggiornati.
 
@@ -85,14 +88,14 @@ Catalog Producer utilizza i dati PIM (Product Information Management) per mappar
 
    >[!NOTE]
    >
-   >Per modificare i metadati di un prodotto di riferimento, andate alla console Prodotti (Logo **** AEM > **Commerce** > **Products**) e selezionate il prodotto. Quindi, toccate o fate clic sull’icona **Visualizza proprietà** dalla barra degli strumenti e modificate i metadati nella pagina Proprietà della risorsa.
+   >Per modificare i metadati di un prodotto di riferimento, accedete alla console Prodotti (**AEM Logo** > **Commerce** > **Products**) e selezionate il prodotto. Quindi, toccate o fate clic sull’icona **Visualizza proprietà** dalla barra degli strumenti e modificate i metadati nella pagina Proprietà della risorsa.
 
 1. Per ridisporre le pagine nel catalogo, toccate o fate clic sull’icona **Crea** nella barra degli strumenti, quindi scegliete **Unisci** dal menu. Nella procedura guidata, il carosello nella parte superiore consente di riordinare le pagine trascinandole. È inoltre possibile rimuovere delle pagine.
 
-1. Tap/click **Next**. Per aggiungere un file InDesign esistente come copertina, toccate o fate clic su **Sfoglia** accanto alla casella **Scegli pagina** copertina e specificate il percorso per il modello di copertina.
+1. Tap/click **Next**. Per aggiungere un file di InDesign  esistente come pagina di copertina, toccate o fate clic su **Sfoglia** accanto alla casella **Scegli pagina** copertina e specificate il percorso per il modello di copertina.
 1. Tap/click **Save**, and then tap/click **Done** to close the confirmation dialog.
 Selezionando l&#39;opzione **Fine** , si apre una finestra di dialogo per selezionare se si desidera una rappresentazione .pdf.
-   ![esportazione in PDF](assets/CatalogPDF.png)Se è selezionata l’opzione Acrobat(PDF), viene creata una rappresentazione PDF in **/jcr:content/renditions** , oltre alla rappresentazione per indesign. Potete scaricare tutte le rappresentazioni selezionando la casella di controllo &quot;Rappresentazioni&quot; nella finestra di dialogo di download.
+   ![esporta in formato pdf](assets/CatalogPDF.png)Se &#39;opzione Acrobat(PDF) è selezionata, viene creata una rappresentazione PDF in **/jcr:content/renditions** , oltre a una rappresentazione per indesign. Potete scaricare tutte le rappresentazioni selezionando la casella di controllo &quot;Rappresentazioni&quot; nella finestra di dialogo di download.
 
 1. Per generare un’anteprima per il catalogo creato, selezionatelo nella console **Cataloghi** , quindi fate clic sull’icona **Anteprima** nella barra degli strumenti.
 
