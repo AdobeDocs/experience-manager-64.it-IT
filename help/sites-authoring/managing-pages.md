@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 94%
 
 ---
 
@@ -151,7 +154,7 @@ In AEM, un modello specifica un particolare tipo di pagina e funge da base per l
 
 Il modello definisce la struttura di una pagina, inclusa una miniatura e altre proprietà. Ad esempio, potrai disporre di modelli separati per le pagine di prodotto, le sitemap e le informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
-Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito Web. I campi chiave sono i seguenti:
+Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
 
 * **Titolo**
 Il titolo visualizzato nella pagina web risultante.
@@ -198,12 +201,14 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
 
    * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
    * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
    * Utilizza **Indietro** per tornare alla selezione del modello.
+
    I campi chiave sono:
 
    * **Titolo**:
@@ -214,6 +219,7 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
       * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
+
    >[!NOTE]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
@@ -248,6 +254,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#product-navigation) e barra degli strumenti
+
    Quindi seleziona l’icona **Modifica**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -258,7 +265,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 >
 >La navigazione verso altre pagine dall’Editor pagina è possibile solo in modalità Anteprima, in quanto i collegamenti non sono attivi nella modalità di modifica.
 
-### Copiare e incollare una pagina   {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
 
 Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
@@ -267,6 +274,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#product-navigation) e barra degli strumenti
+
    E quindi l’icona **Copia pagina**:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -309,6 +317,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#product-navigation) e barra degli strumenti
+
    Quindi seleziona l’icona **Sposta pagina**:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -319,13 +328,14 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    Il nome pagina può restare lo stesso se si sta solamente spostando la pagina.
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genererà automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 1. Dal passaggio **Seleziona destinazione** della procedura guidata, puoi effettuare le seguenti operazioni:
 
@@ -334,11 +344,12 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
    * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
    >
-   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genererà automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
+   >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
 1. Se in altre risorse esistono collegamenti o riferimenti verso questa pagina, tali riferimenti verranno elencati nel passaggio **Regola/Ripubblica**. Puoi quindi indicare quali riferimenti devono essere regolati e ripubblicati (in base alle necessità):
 
@@ -363,14 +374,14 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    >[!NOTE]
    >
-   >Come precauzione di protezione, **l’icona Elimina pagina** non è disponibile come azione rapida.
+   >Come precauzione di sicurezza, l’icona **Elimina** pagina non è disponibile come azione rapida.
 
-1. Viene visualizzata una finestra di dialogo con richiesta di conferma.
+1. Una finestra di dialogo chiederà una conferma.
 
-   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è attivata, le versioni delle pagine selezionate per l&#39;eliminazione verranno create al momento dell&#39;eliminazione.
-      * [Le versioni possono essere ripristinate in una data successiva.](/help/sites-authoring/working-with-page-versions.md)
+   * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione verranno create versioni delle pagine selezionate da eliminare.
+      * [Le versioni possono essere ripristinate in un momento successivo.](/help/sites-authoring/working-with-page-versions.md)
       * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
-      * Questa opzione è disponibile solo da AEM versione 6.4.7.0.
+      * Questa opzione è disponibile solo AEM versione 6.4.7.0.
    * **Annulla** per interrompere l’azione
    * **Elimina** per confermare l’azione:
 
@@ -400,6 +411,7 @@ Puoi creare cartelle per organizzare file e pagine.
 >* Le cartelle possono essere create direttamente solo in **Sites** o in altre cartelle. Non possono essere create da una pagina.
 >* Le azioni standard Sposta, Copia, Incolla, Elimina, Modifica, Pubblica, Annulla pubblicazione e Visualizza/Modifica proprietà possono essere eseguite in una cartella.
 >* Le cartelle non sono disponibili per la selezione all’interno di una Live Copy.
+
 >
 
 
