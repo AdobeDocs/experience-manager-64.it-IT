@@ -1,8 +1,8 @@
 ---
-title: Come sviluppare progetti AEM con IntelliJ IDEA
-seo-title: Come sviluppare progetti AEM con IntelliJ IDEA
-description: Utilizzo di IDEA IntelliJ per lo sviluppo di progetti AEM
-seo-description: Utilizzo di IDEA IntelliJ per lo sviluppo di progetti AEM
+title: Come sviluppare progetti AEM utilizzando IntelliJ IDEA
+seo-title: Come sviluppare progetti AEM utilizzando IntelliJ IDEA
+description: Utilizzo di IntelliJ IDEA per sviluppare progetti AEM
+seo-description: Utilizzo di IntelliJ IDEA per sviluppare progetti AEM
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
 
-# Come sviluppare progetti AEM con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Come sviluppare progetti AEM utilizzando IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Panoramica {#overview}
 
-Per iniziare a sviluppare AEM su IntelliJ, sono necessari i seguenti passaggi.
+Per iniziare AEM sviluppo su IntelliJ, sono necessari i seguenti passaggi.
 
 Ognuno di essi è spiegato più dettagliatamente nel resto di questo How-To.
 
@@ -40,9 +43,9 @@ Quindi, seguite le istruzioni di installazione presenti nella pagina.
 
 ### Imposta il progetto AEM in base al cielo {#set-up-your-aem-project-based-on-maven}
 
-Configurate quindi il progetto utilizzando Maven, come descritto in [How-To Build AEM Projects using Apache Maven (Creazione di progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)).
+Configurate quindi il progetto utilizzando Maven come descritto in [How-To Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md)(Creazione di progetti con Apache Maven).
 
-Per iniziare a lavorare con i progetti AEM in IntelliJ IDEA, è sufficiente impostare in [Guida introduttiva in 5 minuti](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) .
+Per iniziare a lavorare con AEM progetti in IntelliJ IDEA, è sufficiente impostare in [Guida introduttiva in 5 minuti](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) .
 
 ### Preparazione del supporto JSP per IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -51,7 +54,7 @@ IntelliJ IDEA può anche fornire supporto nell&#39;utilizzo di JSP, ad esempio
 * completamento automatico delle librerie di tag
 * conoscenza degli oggetti definiti da `<cq:defineObjects />` e `<sling:defineObjects />`
 
-Per farlo, segui le istruzioni su [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [How-To Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md)(Come creare progetti AEM con Apache Maven).
+Per farlo funzionare, segui le istruzioni su [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [How-To Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importa progetto Paradiso {#import-the-maven-project}
 
@@ -64,12 +67,12 @@ Per farlo, segui le istruzioni su [Come lavorare con JSP](/help/sites-developing
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. Continuate con le impostazioni predefinite come mostrato nella finestra di dialogo seguente.
+1. Continuate con le impostazioni predefinite, come mostrato nella finestra di dialogo seguente.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Per continuare, fai clic su **Avanti** e **Fine** nelle seguenti finestre di dialogo.
-1. Ora è configurato per lo sviluppo AEM tramite IntelliJ IDEA
+1. Per continuare le seguenti finestre di dialogo, fai clic su **Avanti** e **Fine**.
+1. Ora è impostato per lo sviluppo AEM utilizzando IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -80,7 +83,7 @@ I passaggi seguenti sono necessari per il debug di JSP con IntelliJ IDEA
 * Impostazione di un facet Web nel progetto
 * Installare il plug-in di supporto JSR45
 * Configurare un profilo di debug
-* Configurare AEM per la modalità di debug
+* Configurare AEM per la modalità Debug
 
 #### Impostazione di un facet Web nel progetto {#set-up-a-web-facet-in-the-project}
 
@@ -114,11 +117,11 @@ IntelliJ IDEA deve capire dove trovare i JSP per il debug. Poiché IDEA non è i
 
 ![chlimage_1-50](assets/chlimage_1-50.png) ![chlimage_1-51](assets/chlimage_1-51.png)
 
-#### Configurare AEM per la modalità di debug {#configure-aem-for-debug-mode}
+#### Configurare AEM per la modalità Debug {#configure-aem-for-debug-mode}
 
-L’ultimo passaggio richiesto è avviare AEM con le opzioni JVM proposte da IntelliJ IDEA.
+L&#39;ultimo passo necessario è iniziare AEM con le opzioni JVM proposte da IntelliJ IDEA.
 
-A questo scopo, avviate direttamente il file AEM jar e aggiungete le seguenti opzioni, ad esempio con la seguente riga di comando:
+A questo scopo, avviate direttamente il file JAR AEM e aggiungete le seguenti opzioni, ad esempio con la seguente riga di comando:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart-5.6.1.jar`
 
