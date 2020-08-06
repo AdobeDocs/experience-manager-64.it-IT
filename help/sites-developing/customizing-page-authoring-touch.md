@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +41,7 @@ AEM offre diversi metodi per personalizzare la funzionalità di authoring delle 
 >
 >Per ulteriori informazioni, consulta la documentazione [JS](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
 
-che possono essere utilizzati in molti modi per estendere la funzionalità di authoring delle pagine nell’istanza di AEM. Di seguito è riportata una selezione (ad alto livello).
+che possono essere utilizzati in molti modi per estendere la funzionalità di authoring delle pagine nell’istanza AEM. Di seguito è riportata una selezione (ad alto livello).
 
 >[!NOTE]
 >
@@ -47,7 +50,8 @@ che possono essere utilizzati in molti modi per estendere la funzionalità di au
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [GRANITE](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Struttura dell’interfaccia](/help/sites-developing/touch-ui-structure.md) AEM Touch per informazioni dettagliate sulle aree strutturali utilizzate per l’authoring delle pagine.
+>* [Struttura dell’interfaccia](/help/sites-developing/touch-ui-structure.md) AEM touch per informazioni dettagliate sulle aree strutturali utilizzate per l’authoring delle pagine.
+
 >
 >
 Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalizzazione dell&#39;interfaccia [utente per AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
@@ -68,9 +72,9 @@ Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.
 
 Quando modificate una pagina, sono disponibili diverse [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) . Queste modalità vengono implementate mediante [i livelli](/help/sites-developing/touch-ui-structure.md#layer). che consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. I livelli standard sono: modifica, anteprima, annotazione, sviluppatore e targeting.
 
-### Esempio di livello:Stato Live Copy {#layer-example-live-copy-status}
+### Esempio di livello: Stato Live Copy {#layer-example-live-copy-status}
 
-Un’istanza standard di AEM fornisce il livello MSM. Questo consente di accedere ai dati relativi alla gestione [](/help/sites-administering/msm.md) multisito e li evidenzia nel livello.
+Un&#39;istanza AEM standard fornisce il livello MSM. Questo consente di accedere ai dati relativi alla gestione [](/help/sites-administering/msm.md) multisito e li evidenzia nel livello.
 
 Per visualizzarlo in azione, puoi modificare qualsiasi pagina di copia [in lingua](/help/sites-developing/we-retail-globalized-site-structure.md) We.Retail (o qualsiasi altra pagina di Live Copy) e selezionare la modalità Stato **** Live Copy.
 
@@ -121,7 +125,7 @@ Per ulteriori dettagli sulla creazione di un predicato personalizzato, consultat
 >
 >Consultate [questo articolo](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) della knowledge base per un esempio di implementazione di un predicato personalizzato nell&#39;interfaccia classica.
 
-## Aggiungi nuova azione a una barra degli strumenti di un componente {#add-new-action-to-a-component-toolbar}
+## Aggiunta di una nuova azione a una barra degli strumenti di un componente {#add-new-action-to-a-component-toolbar}
 
 Ogni componente (in genere) dispone di una barra degli strumenti che consente di accedere a una serie di azioni che possono essere eseguite su tale componente.
 
@@ -157,9 +161,9 @@ In un’installazione standard di AEM:
 
          * proprietà: `editorType`
 
-            definisce il tipo di editor in linea che verrà utilizzato quando viene attivata la modifica locale per quel componente;ad esempio `text`, `textimage`, `image`, `title`.
+            Definisce il tipo di editor in linea che verrà utilizzato quando viene attivata la modifica locale per quel componente; ad esempio `text`, `textimage`, `image`, `title`.
 
-1. Ulteriori dettagli di configurazione dell&#39;editor possono essere configurati utilizzando un `config` nodo contenente configurazioni e un altro `plugin` nodo per contenere i necessari dettagli di configurazione del plugin.
+1. Ulteriori dettagli di configurazione dell&#39;editor possono essere configurati utilizzando un `config` nodo contenente configurazioni e un altro `plugin` nodo per contenere i necessari dettagli di configurazione del plug-in.
 
    Di seguito è riportato un esempio di definizione delle proporzioni per il plug-in di ritaglio dell’immagine per il componente immagine. Tenete presente che, a causa del potenziale di dimensioni dello schermo molto limitate, le proporzioni del ritaglio sono state spostate nell’editor a schermo intero e possono essere visualizzate solo in questo caso.
 
@@ -185,7 +189,7 @@ In un’installazione standard di AEM:
 
    >[!CAUTION]
    >
-   >I rapporti di ritaglio di AEM, impostati dalla `ratio` proprietà, sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
+   >Nelle proporzioni AEM ritaglio, impostate dalla `ratio` proprietà, sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
 
 #### Creazione di un nuovo editor locale {#creating-a-new-in-place-editor}
 
