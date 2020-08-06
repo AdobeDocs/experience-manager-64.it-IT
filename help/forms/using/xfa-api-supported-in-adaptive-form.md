@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -154,7 +157,7 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
   </tr>
   <tr>
    <td><p>maxChar<em> (campo di testo)</em></p> </td> 
-   <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti nel modulo adattivo.</p> </td> 
+   <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti in un modulo adattivo.</p> </td> 
   </tr>
   <tr>
    <td><p>multiline<em> (campo di testo)</em></p> </td> 
@@ -162,7 +165,7 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
   </tr>
   <tr>
    <td><p>fracDigit<em> (campo numerico, campo decimale)</em></p> </td> 
-   <td><p>Mappata alla proprietà Frac figures in forma adattiva.</p> </td> 
+   <td><p>Mappata alla proprietà Frac Cifre in modulo adattivo.</p> </td> 
   </tr>
   <tr>
    <td><p>leadDigit<em> (campo numerico, campo decimale)</em></p> </td> 
