@@ -1,8 +1,8 @@
 ---
 title: 'Introduzione alla creazione di moduli adattivi '
 seo-title: 'Introduzione alla creazione di moduli adattivi '
-description: AEM Forms offre un'interfaccia semplice ma potente per la creazione di moduli adattivi. Contiene una serie di componenti e strumenti che è possibile utilizzare per creare moduli.
-seo-description: AEM Forms offre un'interfaccia semplice ma potente per la creazione di moduli adattivi. Contiene una serie di componenti e strumenti che è possibile utilizzare per creare moduli.
+description: ' AEM Forms offre un''interfaccia semplice ma potente per la creazione di moduli adattivi. Contiene una serie di componenti e strumenti che è possibile utilizzare per creare moduli.'
+seo-description: ' AEM Forms offre un''interfaccia semplice ma potente per la creazione di moduli adattivi. Contiene una serie di componenti e strumenti che è possibile utilizzare per creare moduli.'
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Panoramica {#overview}
 
-I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti forniti con il prodotto per creare e utilizzare moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema oppure senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma che amplia gli investimenti infrastrutturali e le risorse esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
+I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi.  AEM Forms offre un&#39;interfaccia utente intuitiva e componenti forniti con i prodotti per la creazione e l&#39;utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema oppure senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma che amplia gli investimenti infrastrutturali e le risorse esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
 
 * **Uso di un modello dati modulo**
    [L&#39;integrazione](/help/forms/using/data-integration.md) dei dati consente di integrare entità e servizi da origini dati diverse in un modello di dati del modulo che è possibile utilizzare per creare moduli adattivi. Scegliere il modello dati del modulo se il modulo adattivo creato prevede il recupero e la scrittura di dati da e verso più origini dati.
@@ -62,7 +62,7 @@ La barra laterale consente di:
 
 * Vedere il contenuto del modulo, ad esempio pannelli, componenti, campi e layout.
 * Modificare le proprietà del componente.
-* Cercare, visualizzare e utilizzare le risorse nel repository di AEM Digital Asset Management (DAM).
+* Cercare, visualizzare e utilizzare le risorse nell&#39;archivio AEM Digital Asset Management (DAM).
 * Aggiungere componenti al modulo.
 
    ![Barra laterale](assets/sidebar-comps-2.png)
@@ -108,7 +108,7 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Blocco Adobe Sign</td> 
-   <td>Aggiunge un blocco di testo con segnaposto per i campi da compilare durante la firma con Adobe Sign.</td> 
+   <td>Aggiunge un blocco di testo con segnaposto per i campi da compilare durante la firma tramite  Adobe Sign.</td> 
   </tr> 
   <tr> 
    <td>Pulsante</td> 
@@ -152,7 +152,7 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Allegato file</td> 
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare i documenti di supporto a un modulo.</p> <p><strong>Nota: </strong>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, vedere Formati <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">di file</a>supportati.</p> </td> 
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare i documenti di supporto a un modulo.</p> <p><strong>Nota: </strong>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per  Adobe Sign. Per ulteriori informazioni, vedere Formati <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">di file</a>supportati.</p> </td> 
   </tr> 
   <tr> 
    <td>Elenco allegati file</td> 
@@ -295,11 +295,11 @@ Di seguito sono riportati alcuni punti chiave e procedure ottimali da tenere pre
 * Specificare i valori per gli elementi Pulsante di scelta e Casella di controllo nel `{value}={text}` formato nelle proprietà del componente.
 * Per impostazione predefinita, il componente File allegato consente a un utente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Si consiglia pertanto di associare un identificatore univoco per ciascun allegato inviato all&#39;invio del modulo. A questo scopo:
 
-   1. Nel server AEM Forms, accedi ad **[!UICONTROL Adobe Experience Manager > Strumenti > Operazioni > Console]** Web.
-   1. Individuare e toccare il servizio **[!UICONTROL di configurazione dei moduli]** adattivi.
-   1. Nella finestra di dialogo Servizio configurazione moduli adattivi, abilitare **[!UICONTROL Rendi univoci]** i nomi dei file. Per impostazione predefinita, è disattivata.
+   1. Nel server AEM Forms , accedi a **[!UICONTROL Adobe Experience Manager > Strumenti > Operazioni > Console]** Web.
+   1. Individuate e toccate **[!UICONTROL Adattivo Forms Configuration Service]**.
+   1. Nella finestra di dialogo Servizio di configurazione Forms adattivo, abilita **[!UICONTROL Rendi univoci]** i nomi dei file. Per impostazione predefinita, è disattivata.
 
-* Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, assicurarsi che **[!UICONTROL application/pdf]** venga aggiunto alla proprietà Tipi di file supportati del componente Allegato file. I moduli adattivi creati con la precedente versione di AEM Forms possono contenere **[!UICONTROL .pdf]** invece di **[!UICONTROL application/pdf]** nella proprietà Tipi di file supportati.
+* Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, assicurarsi che **[!UICONTROL application/pdf]** venga aggiunto alla proprietà Tipi di file supportati del componente Allegato file. I moduli adattivi creati con  versione precedente di AEM Forms possono contenere **[!UICONTROL .pdf]** invece di **[!UICONTROL application/pdf]** nella proprietà Tipi di file supportati.
 
 Per ulteriori procedure ottimali sui moduli adattivi, vedere Procedure [consigliate per l&#39;utilizzo dei moduli](/help/forms/using/adaptive-forms-best-practices.md)adattivi.
 
