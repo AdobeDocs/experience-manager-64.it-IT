@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ In un’area SPA, il componente pagina non fornisce gli elementi HTML dei suoi c
 
 >[!NOTE]
 >
->La funzione Editor applicazione per pagina singola (SPA) richiede AEM 6.4 Service Pack 2 o successivo.
+>La funzione Editor applicazione per pagina singola (SPA) richiede AEM service pack 6.4 2 o successivo.
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
@@ -31,7 +34,7 @@ Il componente di pagina per un&#39;app SPA non fornisce gli elementi HTML dei su
 
 ## Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina è delegata a un [ modulo specificato `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) . L&#39;SPA deve interagire con il `PageModelManager` modulo quando si inizializza per recuperare il modello di pagina iniziale e registrarsi per gli aggiornamenti del modello, prodotto principalmente quando l&#39;autore sta modificando la pagina tramite Editor pagina. Il progetto SPA `PageModelManager` è accessibile come pacchetto npm. Essendo un interprete tra AEM e l’SPA, il `PageModelManager` progetto è inteso ad accompagnare l’SPA.
+La risoluzione e la gestione del modello di pagina è delegata a un [ modulo specificato `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) . L&#39;SPA deve interagire con il `PageModelManager` modulo quando si inizializza per recuperare il modello di pagina iniziale e registrarsi per gli aggiornamenti del modello, prodotto principalmente quando l&#39;autore sta modificando la pagina tramite Editor pagina. Il progetto SPA `PageModelManager` è accessibile come pacchetto npm. Essendo un interprete tra AEM e la SPA, il `PageModelManager` progetto è inteso ad accompagnare la SPA.
 
 Per consentire la creazione della pagina, `cq.authoring.pagemodel.messaging` è necessario aggiungere una libreria client denominata per fornire un canale di comunicazione tra l’API e l’editor pagina. Se il componente della pagina SPA eredita dal componente wcm/core della pagina, sono disponibili le seguenti opzioni per rendere disponibile la categoria della libreria `cq.authoring.pagemodel.messaging` client:
 
@@ -42,7 +45,7 @@ Non dimenticare di limitare l’inclusione della `cq.authoring.pagemodel.messagi
 
 ## Tipo di dati di comunicazione {#communication-data-type}
 
-Il tipo di dati di comunicazione è impostato con l’ `data-cq-datatype` attributo un elemento HTML all’interno del componente Pagina AEM. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET hanno raggiunto gli endpoint del modello Sling di un componente. Quando si verifica un aggiornamento nell’editor di pagina, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello pagina. La libreria Modello pagina invia quindi un avviso all’area SPA degli aggiornamenti.
+Il tipo di dati di comunicazione è impostato come elemento HTML all’interno del componente Pagina AEM utilizzando l’ `data-cq-datatype` attributo . Quando il tipo di dati di comunicazione è impostato su JSON, le richieste di GET hanno raggiunto gli endpoint del modello Sling di un componente. Quando si verifica un aggiornamento nell’editor di pagina, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello pagina. La libreria Modello pagina invia quindi un avviso all’area SPA degli aggiornamenti.
 
 **Componente pagina SPA -`body.html`**
 
@@ -92,7 +95,7 @@ Proprietà delle risorse meta che descrivono il contenuto SPA:
 >
 >Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Qualsiasi progetto AEM deve sfruttare il Project Archetype [di](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html)AEM, che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.Tutti i progetti SPA su AEM devono essere basati sul tipo di archivio di Maven per SPA Starter Kit.
+>Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l&#39;SDK SPA.Tutti i progetti SPA su AEM dovrebbero essere basati sul Maven Archetype for SPA Starter Kit.
 
 ## Sincronizzazione sovrapposizione Editor pagina {#page-editor-overlay-synchronization}
 
@@ -100,7 +103,7 @@ La sincronizzazione delle sovrapposizioni è garantita dallo stesso Mutation Obs
 
 ## Configurazione struttura esportata JSON modello Sling {#sling-model-json-exported-structure-configuration}
 
-Quando le funzionalità di routing sono abilitate, si presuppone che l’esportazione JSON dell’app SPA contenga i diversi percorsi dell’applicazione grazie all’esportazione JSON del componente di navigazione AEM. L&#39;output JSON del componente di navigazione AEM può essere configurato nei criteri di contenuto della pagina principale dell&#39;app tramite le due seguenti proprietà:
+Quando le funzionalità di routing sono abilitate, il presupposto è che l’esportazione JSON dell’app SPA contenga i diversi percorsi dell’applicazione grazie all’esportazione JSON del componente di navigazione AEM. L&#39;output JSON del componente di navigazione AEM può essere configurato nel criterio di contenuto della pagina principale dell&#39;SPA tramite le due seguenti proprietà:
 
 * `structureDepth`: Numero corrispondente alla profondità della struttura esportata
 * `structurePatterns`: Regex di array di regessi corrispondenti alla pagina da esportare
