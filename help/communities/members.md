@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
 source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
 
 ## Panoramica {#overview}
 
-Le funzioni di AEM Communities spesso richiedono la registrazione e l&#39;accesso dei visitatori del sito prima di partecipare a una community nell&#39;ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
+ funzioni AEM Communities spesso richiedono che i visitatori del sito siano registrati e connessi prima di partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
 
 ### Membri (utenti) in Pubblica {#members-users-on-publish}
 
@@ -40,7 +43,7 @@ Per gestire utenti e gruppi registrati nell’ambiente di *authoring* , è neces
 
 Nell’ambiente di authoring, per accedere alla console Membri per la gestione dei membri registrati nell’ambiente di pubblicazione:
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Membri]**
+* Dalla navigazione globale: **[!UICONTROL Navigation > Communities > Members]**
 
 >[!CAUTION]
 >
@@ -58,7 +61,7 @@ Selezionate l’icona di ricerca a sinistra dell’ `Members` intestazione per c
 
 ### Statistiche membri {#member-statistics}
 
-Le colonne che vengono visualizzate `Views`, `Posts`e `Follows`vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con Adobe Analytics `Likes` abilitato [](sites-console.md#analytics).
+Le colonne che vengono visualizzate `Views`, `Posts`e `Follows`vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con  Adobe Analytics `Likes` abilitato [](sites-console.md#analytics).
 
 ### Esporta CSV {#export-csv}
 
@@ -78,20 +81,32 @@ Selezionate questa opzione `Create Member` per creare un utente nell’ambiente 
 
 La maggior parte dei campi sono campi facoltativi che il membro può successivamente compilare nel proprio profilo.
 
-* **[!UICONTROL ID]**(*obbligatorio*) L’ID autorizzabile è l’ID di accesso del membro.
+* **[!UICONTROL ID]**
+(
+*obbligatorio*) L&#39;ID autorizzabile è l&#39;ID di accesso del membro.
 Per impostazione predefinita, l’ID è impostato sul valore dell’indirizzo e-mail richiesto.
    *Una volta creato, l’ID potrebbe non essere modificato.*
 
-* **[!UICONTROL Indirizzo]** e-mail (*obbligatorio*) L&#39;indirizzo e-mail del membro.
+* **[!UICONTROL Indirizzo e-mail]**
+(
+*obbligatorio*) L&#39;indirizzo e-mail del membro.
 Il membro può cambiare il proprio indirizzo e-mail quando aggiorna il proprio profilo. Se l’ID viene impostato automaticamente sull’indirizzo e-mail, l’ID *non* cambia quando l’indirizzo e-mail viene modificato.
 
-* **[!UICONTROL Password]**(*richiesta*) La password di accesso.
+* **[!UICONTROL Password]**
+(
+*obbligatorio*) La password di accesso.
 
-* **[!UICONTROL Digitate nuovamente la password]**(*richiesta*) Immettete nuovamente la password per la verifica.
+* **[!UICONTROL Ripeti password]**
+(
+*obbligatorio*) Reimmettere la password per la verifica.
 
-* **[!UICONTROL Aggiungi membro a siti]**(*facoltativo*) Seleziona uno dei siti community esistenti per aggiungere il membro al gruppo di membri della community.
+* **[!UICONTROL Aggiungi membro ai siti]**
+(
+*(Facoltativo*) Selezionare uno dei siti community esistenti per aggiungere il membro al gruppo di membri del sito community.
 
-* **[!UICONTROL Aggiungi membro a gruppi]**(*facoltativo*) Seleziona uno dei gruppi di membri esistenti per aggiungere il membro a tale gruppo.
+* **[!UICONTROL Aggiungi membro a gruppi]**
+(
+*(facoltativo*) Per aggiungere il membro a tale gruppo, scegliete uno dei gruppi di membri esistenti.
 
 * Seleziona **[!UICONTROL Salva]**
 
@@ -101,14 +116,15 @@ In Impostazioni account è possibile per un amministratore della community di
 
 * **[!UICONTROL Stato]**
    * Vietati\
-      Un membro non è in grado di effettuare l&#39;accesso, impedendo loro di visualizzare le pagine o partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito di community aperto.
+      Un membro non è in grado di effettuare l&#39;accesso, impedendo loro di visualizzare le pagine o di partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito di community aperto.
 
    * Non vietatoUn membro ha accesso completo al sito della community.
+
    Default is `Not Banned`.
 
 * **[!UICONTROL Limiti]**contributi Se questa opzione è selezionata, la capacità del membro di pubblicare contenuti è limitata.
 L’impostazione predefinita dipende dalla configurazione dei limiti dei contributi.
-Consulta Limiti [di contributi](limits.md)membri.
+Consultate Limiti [di contributi](limits.md)dei membri.
 
 * **[!UICONTROL Modifica password]** Collegamento presente durante la modifica di un membro esistente. Consente a un amministratore della community di ripristinare una password per un membro.
 
@@ -145,7 +161,7 @@ La console Gruppi, disponibile nell’ambiente di authoring, consente di creare 
 * Assegnazione delle risorse di [abilitazione in base al gruppo](resources.md)
 
 Per accedere alla console Gruppi:
-* Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Gruppi]**
+* Dalla navigazione globale: **[!UICONTROL Navigation > Communities > Groups]**
 
 >[!CAUTION]
 >
@@ -153,22 +169,30 @@ Per accedere alla console Gruppi:
 
 ### Crea nuovo gruppo {#create-new-group}
 
-Selezionate `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
+Selezionate questa opzione `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 I campi necessari per creare un nuovo gruppo di membri lato pubblicazione sono:
 
-* **[!UICONTROL ID]**(*obbligatorio*) L’ID univoco del gruppo.
+* **[!UICONTROL ID]**
+(
+*obbligatorio*) ID univoco del gruppo.
    *Una volta creato, l’ID potrebbe non essere modificato.*
 
-* **[!UICONTROL Nome]**(*facoltativo*) Il nome visualizzato per il gruppo.
+* **[!UICONTROL Nome]**
+(
+*opzionale*) Il nome visualizzato per il gruppo.
 
    Il valore predefinito è ID.
 
-* **[!UICONTROL Descrizione]**(*facoltativo*) Una descrizione dello scopo e delle autorizzazioni del gruppo.
+* **[!UICONTROL Descrizione]**
+(
+*(facoltativo*) Una descrizione dello scopo e delle autorizzazioni del gruppo.
 
-* **[!UICONTROL Aggiungi membri al gruppo]**(*facoltativo*) Selezionate i membri lato pubblicazione da includere come membri iniziali del gruppo.
+* **[!UICONTROL Aggiungi membri al gruppo]**
+(
+*opzionale*) Selezionate i membri lato pubblicazione da includere come membri iniziali del gruppo.
 
 * Seleziona **[!UICONTROL Salva]**
 
