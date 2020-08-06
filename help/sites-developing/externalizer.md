@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
 
 # Esternalizzazione degli URL{#externalizing-urls}
 
-In AEM, **Externalizer** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse (ad es. `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) anteponendo il percorso a un DNS preconfigurato.
+In AEM, **Externalizer** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse (ad es. `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
 Poiché un’istanza non può conoscere il relativo URL visibile esternamente se è in esecuzione dietro un livello Web e poiché a volte è necessario creare un collegamento all’esterno dell’ambito della richiesta, il servizio fornisce una posizione centrale per configurare tali URL esterni e crearli.
 
-Questa pagina spiega come configurare il servizio **Externalizer** e come utilizzarlo. Per ulteriori dettagli, fare riferimento a [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+In questa pagina viene illustrato come configurare il servizio **Externalizer** e come utilizzarlo. Per ulteriori dettagli, fare riferimento a [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -42,26 +45,28 @@ Per definire un mapping di dominio per il servizio **Externalizer** :
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, dove:
 
-   * **di solito lo schema** è http o https, ma può anche essere ftp ecc; utilizzate https per applicare eventuali collegamenti https;viene utilizzato se il codice client non esclude lo schema quando si richiede l&#39;esternalizzazione di un URL.
+   * **di solito lo schema** è http o https, ma può anche essere ftp ecc; utilizzate https per applicare eventuali collegamenti https; viene utilizzato se il codice client non esclude lo schema quando si richiede l&#39;esternalizzazione di un URL.
    * **server** è il nome host (può essere un nome di dominio o un indirizzo IP).
    * **port** (facoltativo) è il numero della porta.
    * **contextpath** (facoltativo) è impostato solo se AEM è installato come app Web in un percorso contestuale diverso.
-   Ad esempio: `production https://my.production.instance`
 
-   I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati in base a quanto richiesto da AEM:
+   Esempio: `production https://my.production.instance`
+
+   I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati come AEM dipende da essi:
 
    * **local** - the local instance
    * **authoring** - DNS del sistema di authoring
    * **pubblicazione** - DNS del sito Web rivolto al pubblico
+
    >[!NOTE]
    >
-   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio &quot;produzione&quot;, &quot;pre-produzione&quot; o anche sistemi esterni non AEM come &quot;servizio Web interno&quot;, ed è utile per evitare la codifica di tali URL in diverse aree del codebase di un progetto.
+   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio &quot;produzione&quot;, &quot;pre-produzione&quot; o anche sistemi esterni non AEM come &quot;il mio servizio Web interno&quot; ed è utile per evitare che tali URL vengano codificati in diverse aree della base di codice di un progetto.
 
 1. Click **Save** to save your changes.
 
 >[!NOTE]
 >
->Adobe consiglia di [aggiungere la configurazione alla directory archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+> Adobe consiglia di [aggiungere la configurazione alla directory archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Utilizzo del servizio Externalizer {#using-the-externalizer-service}
 
