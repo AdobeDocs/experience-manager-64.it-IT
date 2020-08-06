@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 28%
 
 ---
 
@@ -23,7 +26,7 @@ Dynamic Media fornisce esperienze di visualizzazione interattive, con funzioni q
 
 >[!NOTE]
 >
->È disponibile un articolo della community [Utilizzo di Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>Un articolo della community è disponibile in [Utilizzo di Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
 
 ## Operazioni con gli elementi multimediali dinamici {#what-you-can-do-with-dynamic-media}
 
@@ -48,7 +51,7 @@ Consultate anche [Impostazione di contenuti multimediali](administering-dynamic-
 
 >[!NOTE]
 >
->Per comprendere le differenze tra l’utilizzo di elementi multimediali dinamici e l’integrazione di elementi multimediali dinamici con AEM, consultate Integrazione di elementi multimediali [dinamici e Contenuti multimediali](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)dinamici.
+>Per comprendere le differenze tra l’utilizzo di elementi multimediali dinamici e l’integrazione di elementi multimediali dinamici con AEM, consultate Integrazione di elementi multimediali [dinamici tra i classici e Contenuti multimediali](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)dinamici.
 
 ## Contenuti multimediali dinamici attivati o contenuti multimediali dinamici disattivati {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -74,7 +77,7 @@ I set di immagini, set 360 gradi e set di file multimediali diversi sono disponi
 
 ### Rappresentazioni PTIFF {#ptiff-renditions}
 
-Le risorse multimediali dinamiche includono `pyramid.tiffs`.
+Le risorse abilitate per i contenuti multimediali dinamici includono `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
