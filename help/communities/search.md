@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
 
 La funzione di ricerca funziona con altre funzioni, come i forum, per consentire la ricerca di contenuti.
 
-Quando si aggiunge la possibilità di cercare post inseriti dai membri della community, denominati contenuti generati dall&#39;utente (UGC), sono disponibili due componenti: [ `Search`](#search-features) e [ `Search Results`](#search-results).
+Quando si aggiunge la possibilità di cercare post inseriti dai membri della community, denominati contenuti generati dall&#39;utente (UGC), sono disponibili due componenti: [ `Search`](#search-features) e [`Search Results`](#search-results).
 
 La pagina che include il `Search Results` componente supporta sia la ricerca che la visualizzazione dei risultati.
 
@@ -33,9 +36,9 @@ La funzione di ricerca può essere utilizzata con qualsiasi altra funzione che c
 
 Per aggiungere un `Search` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Search` e trascinarlo nella posizione desiderata sulla pagina. L&#39;utilizzo di `Search` richiede una seconda pagina per `Search Results.`
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
-Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzata così il `Search` componente.
+Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzato in questo modo il `Search` componente.
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
@@ -45,7 +48,7 @@ Selezionate il `Search` componente inserito a cui accedere e selezionate l’ `C
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di ricerca quando un visitatore inserisce una query.
+Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di ricerca quando una query viene inserita da un visitatore.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -53,11 +56,12 @@ Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Pagina]** risultati I risultati verranno visualizzati su una pagina separata specificata dal browser per selezionare una pagina contenente il `Search Results` componente.
+* **[!UICONTROL Pagina]** risultati I risultati verranno visualizzati su una pagina separata specificata dal browser per selezionare una pagina contenente il 
+`Search Results` componente.
 
 ## Risultati di ricerca {#search-results}
 
-### Aggiungere risultati di ricerca a una pagina {#add-search-results-to-a-page}
+### Aggiunta di risultati di ricerca a una pagina {#add-search-results-to-a-page}
 
 Per aggiungere un `Search Results` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
 
@@ -67,7 +71,7 @@ e trascinarlo nella posizione desiderata su una pagina. A differenza del compone
 
 Se si utilizza la funzione di ricerca altrove nel sito Web, `Search Results` è possibile configurare questa pagina in modo che sia la `Result Page` sola o tutte le istanze di `Search`.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzato così il `Search Result` componente:
 
