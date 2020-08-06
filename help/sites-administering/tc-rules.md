@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -31,18 +34,18 @@ Il file si applica a tutti i progetti di traduzione.
 
 >[!NOTE]
 >
->Dopo un aggiornamento a 6.4, si consiglia di spostare il file da /etc. Per ulteriori informazioni, consultate Ristrutturazione [comune dell&#39;archivio in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) .
+>Dopo un aggiornamento a 6.4, si consiglia di spostare il file da /etc. Per ulteriori informazioni, vedere Ristrutturazione [comune dell&#39;archivio in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) .
 
 Le regole includono le seguenti informazioni:
 
 * Percorso del nodo a cui si applica la regola. La regola si applica anche ai discendenti del nodo.
 * Nomi delle proprietà nodo che contengono il contenuto da tradurre. La proprietà può essere specifica per un tipo di risorsa specifico o per tutti i tipi di risorsa.
 
-Ad esempio, potete creare una regola che traduca il contenuto aggiunto dagli autori a tutti i componenti di testo di base di AEM sulle pagine. La regola può identificare il `/content` nodo e la `text` proprietà per il `foundation/components/text` componente.
+Ad esempio, potete creare una regola che traduca il contenuto aggiunto dagli autori a tutti AEM componenti di testo di base sulle pagine. La regola può identificare il `/content` nodo e la `text` proprietà per il `foundation/components/text` componente.
 
 È stata aggiunta una [console](#translation-rules-ui) per la configurazione delle regole di traduzione. Le definizioni nell’interfaccia utente popoleranno il file.
 
- Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
+Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
 
 >[!NOTE]
 >
@@ -82,7 +85,7 @@ La regola di esempio seguente determina la conversione del contenuto di tutte `t
 </node>
 ```
 
-L’esempio seguente traduce il contenuto di tutte `text` le proprietà e anche altre proprietà del componente Immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica ad essi.
+L’esempio seguente traduce il contenuto di tutte `text` le proprietà e anche altre proprietà del componente Immagine di base. Se altri componenti hanno proprietà con lo stesso nome, la regola non si applica a tali componenti.
 
 ```xml
 <node path="/content">
@@ -95,9 +98,9 @@ L’esempio seguente traduce il contenuto di tutte `text` le proprietà e anche 
 </node>
 ```
 
-## Sintassi regola per l&#39;estrazione di risorse dalle pagine {#rule-syntax-for-extracting-assets-from-pages}
+## Sintassi regola per l&#39;estrazione di risorse dalle pagine  {#rule-syntax-for-extracting-assets-from-pages}
 
-Utilizzate la seguente sintassi di regola per includere risorse incorporate nei componenti o a cui fanno riferimento i componenti:
+Utilizzate la seguente sintassi di regola per includere le risorse incorporate nei componenti o a cui fanno riferimento i componenti:
 
 ```xml
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
@@ -116,7 +119,7 @@ L’esempio seguente estrae le immagini dal componente Immagine di base:
 
 ## Regole di sostituzione {#overriding-rules}
 
-Il file translate_rules.xml è costituito da un `nodelist` elemento con diversi `node` elementi figlio. AEM legge l’elenco dei nodi dall’alto verso il basso. Quando più regole hanno come destinazione lo stesso nodo, viene utilizzata la regola che è inferiore nel file. Ad esempio, le regole seguenti determinano la conversione di tutto il contenuto delle `text` proprietà, ad eccezione del `/content/mysite/en` ramo di pagine:
+Il file translate_rules.xml è costituito da un `nodelist` elemento con diversi `node` elementi figlio. AEM legge l&#39;elenco dei nodi dall&#39;alto verso il basso. Quando più regole hanno come destinazione lo stesso nodo, viene utilizzata la regola che è inferiore nel file. Ad esempio, le regole seguenti determinano la conversione di tutto il contenuto delle `text` proprietà, fatta eccezione per il `/content/mysite/en` ramo delle pagine:
 
 ```xml
 <nodelist>
@@ -172,7 +175,7 @@ Selezionate quindi il contesto e fate clic su **Modifica**. Viene aperto l&#39;E
 
 **isDeep** Questo attributo è applicabile ai filtri dei nodi ed è true per impostazione predefinita. Controlla se il nodo (o i suoi predecessori) contiene tale proprietà con il valore della proprietà specificato nel filtro. Se false, controlla solo il nodo corrente.
 
-Ad esempio, i nodi secondari vengono aggiunti a un processo di conversione anche quando il nodo principale ha la proprietà `draftOnly` impostata su true per contrassegnare il contenuto bozza. In questo `isDeep` caso viene riprodotto e verifica se i nodi padre hanno la proprietà `draftOnly` true ed esclude tali nodi figlio.
+Ad esempio, i nodi secondari vengono aggiunti a un processo di conversione anche quando il nodo principale ha la proprietà `draftOnly` impostata su true per contrassegnare il contenuto bozza. In questo `isDeep` caso viene riprodotto e verifica se i nodi padre hanno la proprietà `draftOnly` come true ed esclude tali nodi figlio.
 
 Nell’editor, è possibile selezionare/deselezionare **I`s Deep`**nella scheda** Filtri **.
 
@@ -215,7 +218,7 @@ Il risultato nel file xml sarà simile al seguente:
 
 Il file translate_rules.xml installato con AEM contiene un set predefinito di regole di traduzione. Potete modificare il file per soddisfare i requisiti dei vostri progetti di traduzione. Ad esempio, è possibile aggiungere regole per tradurre il contenuto dei componenti personalizzati.
 
-Se modificate il file translate_rules.xml, mantenete una copia di backup in un pacchetto di contenuto. L&#39;installazione di service pack AEM o la reinstallazione di alcuni pacchetti AEM può sostituire il file Translation_rules.xml corrente con l&#39;originale. Per ripristinare le regole in questa situazione, potete installare il pacchetto che contiene la copia di backup.
+Se modificate il file translate_rules.xml, mantenete una copia di backup in un pacchetto di contenuto. L&#39;installazione AEM service pack o la reinstallazione di alcuni pacchetti AEM può sostituire il file Translation_rules.xml corrente con l&#39;originale. Per ripristinare le regole in questa situazione, potete installare il pacchetto che contiene la copia di backup.
 
 >[!NOTE]
 >
