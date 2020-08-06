@@ -28,25 +28,25 @@ Le differenze di pagina consentono a un utente di confrontare la pagina corrente
 
 ## Dettagli operazione {#operation-details}
 
-Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata in background da AEM per facilitare la modifica. Questo è necessario per poter eseguire il rendering del contenuto [per un confronto](/help/sites-authoring/page-diff.md#presentation-of-differences)affiancato.
+Quando si confrontano le versioni di una pagina, la versione precedente che l&#39;utente desidera confrontare viene ricreata AEM in background per facilitare la diff. Questo è necessario per poter eseguire il rendering del contenuto [per un confronto](/help/sites-authoring/page-diff.md#presentation-of-differences)affiancato.
 
-Questa operazione di ricreazione viene eseguita internamente da AEM, è trasparente per l’utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
+Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
 
-A seconda del livello di patch di AEM, il comportamento è diverso e può essere necessario disporre di determinate autorizzazioni per funzionare correttamente.
+A seconda del livello della patch AEM, il comportamento è diverso e può richiedere determinate autorizzazioni per funzionare correttamente.
 
-### Precedente AEM 6.4.3 {#prior-to-aem}
+### Prima della AEM 6.4.3 {#prior-to-aem}
 
 Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da confrontare viene ricreata nel seguente percorso:
 
 `/content/versionhistory/<userId>/<site structure>`
 
-Poiché quando si utilizza il meccanismo delle differenze di pagina, AEM ricrea la versione precedente della pagina, per poter utilizzare la funzione l’utente deve disporre di determinate autorizzazioni JCR.
+Poiché quando si utilizza il meccanismo delle differenze di pagina, AEM ricreare la versione precedente della pagina, per utilizzare la funzione l&#39;utente deve disporre di determinate autorizzazioni JCR.
 
 >[!CAUTION]
 >
 >Per utilizzare la funzione delle differenze di pagina, l&#39;utente deve disporre dell&#39;autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
 
-### A partire da AEM 6.4.3 {#as-of-aem}
+### A decorrere dal AEM 6.4.3 {#as-of-aem}
 
 Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da confrontare viene ricreata nel seguente percorso:
 
@@ -58,7 +58,7 @@ Un&#39;attività di pulizia viene eseguita automaticamente per ripulire il conte
 
 ## Limitazioni per sviluppatori {#developer-limitations}
 
-Precedentemente, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione di AEM (ad esempio, l’utilizzo di `cq:text` tag lib o l’integrazione personalizzata del servizio `DiffService` OSGi nei componenti). Questo non è più necessario per la nuova funzione diff, poiché la diff si verifica sul lato client tramite il confronto DOM.
+In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la AEM diffusione (ad esempio l’utilizzo di `cq:text` tag lib o l’integrazione personalizzata del servizio `DiffService` OSGi nei componenti). Questo non è più necessario per la nuova funzione diff, poiché la diff si verifica sul lato client tramite il confronto DOM.
 
 Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 
