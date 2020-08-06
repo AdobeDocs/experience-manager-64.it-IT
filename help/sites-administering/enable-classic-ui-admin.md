@@ -1,8 +1,8 @@
 ---
-title: Console di amministrazione
-seo-title: Console di amministrazione
-description: Scopri come utilizzare le console di amministrazione disponibili in AEM.
-seo-description: Scopri come utilizzare le console di amministrazione disponibili in AEM.
+title: 'Admin Console '
+seo-title: 'Admin Console '
+description: Scoprite come utilizzare gli Admin Console  disponibili in AEM.
+seo-description: Scoprite come utilizzare gli Admin Console  disponibili in AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 2%
 
 ---
 
 
-# Console di amministrazione{#admin-consoles}
+# Admin Console{#admin-consoles}
 
 Per impostazione predefinita, è stata disattivata la possibilità di passare all’interfaccia classica tramite le console di amministrazione. Pertanto, le icone a comparsa visualizzate quando si passa il mouse su determinate icone della console e si consente l’accesso all’interfaccia classica, non vengono più visualizzate.
 
@@ -25,7 +28,7 @@ Ogni console con una versione dell’interfaccia classica in `/libs/cq/core/cont
 
 In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
-1. Utilizzando CRXDE Lite, trovate il nodo corrispondente alla console di amministrazione per la quale desiderate riabilitare l’interfaccia classica. Sono disponibili in:
+1. Utilizzando CRXDE Lite, trovate il nodo corrispondente alla console di amministrazione per il quale desiderate riabilitare l’interfaccia classica. Sono disponibili in:
 
    `/libs/cq/core/content/nav`
 
