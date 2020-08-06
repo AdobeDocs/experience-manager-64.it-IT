@@ -1,6 +1,6 @@
 ---
-title: Preparazione di AEM Forms per il backup
-seo-title: Preparazione di AEM Forms per il backup
+title: Preparazione  AEM Forms per il backup
+seo-title: Preparazione  AEM Forms per il backup
 description: 'null'
 seo-description: 'null'
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
@@ -11,15 +11,18 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2484'
+ht-degree: 0%
 
 ---
 
 
-# Preparazione di AEM Forms per il backup {#preparing-aem-forms-for-backup}
+# Preparazione  AEM Forms per il backup {#preparing-aem-forms-for-backup}
 
 ## Informazioni sul servizio di backup e ripristino {#about-the-backup-and-restore-service}
 
-Il servizio Backup e ripristino consente di inserire AEM Forms nella modalità *di* backup, che consente di eseguire backup a caldo. Il servizio Backup e ripristino non esegue effettivamente un backup di AEM Forms né ripristina il sistema. Il server viene invece messo in stato per backup coerenti e affidabili, consentendo al contempo al server di continuare l&#39;esecuzione. È necessario eseguire il backup di Global Document Storage (GDS) e del database connesso al server dei moduli. GDS è una directory utilizzata per memorizzare i file utilizzati in un processo di lunga durata.
+Il servizio di backup e ripristino consente  AEM Forms in modalità *di* backup, che consente di eseguire backup a caldo. Il servizio di backup e ripristino non esegue un backup di  AEM Forms o ripristina il sistema. Il server viene invece messo in stato per backup coerenti e affidabili, consentendo al contempo al server di continuare l&#39;esecuzione. È necessario eseguire il backup di Global Document Storage (GDS) e del database connesso al server dei moduli. GDS è una directory utilizzata per memorizzare i file utilizzati in un processo di lunga durata.
 
 La modalità di backup è uno stato immesso dal server in modo che i file nel GDS non vengano eliminati durante la procedura di backup. Al contrario, le sottodirectory vengono create nella directory GDS per mantenere un record di file da eliminare dopo il termine della modalità di salvataggio del backup. Un file è destinato a sopravvivere al riavvio del sistema e può estendere giorni, o anche anni. Questi file sono una parte fondamentale dello stato generale del server dei moduli e possono includere file PDF, criteri o modelli di modulo. Se uno di questi file viene perso o danneggiato, i processi sul server dei moduli potrebbero diventare instabili e i dati potrebbero andare persi.
 
@@ -31,7 +34,7 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 
 >[!NOTE]
 >
->Come per qualsiasi altro aspetto dell’implementazione di AEM Forms, la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o di pre-produzione prima di essere utilizzata in produzione per garantire che l’intera soluzione funzioni come previsto senza perdita di dati.
+>Come per qualsiasi altro aspetto dell&#39;implementazione di AEM Forms , la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o pre-produzione prima di essere utilizzata in produzione per garantire che l&#39;intera soluzione funzioni come previsto senza perdita di dati.
 
 È possibile eseguire le seguenti operazioni utilizzando il servizio Backup e ripristino:
 
@@ -40,11 +43,11 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 
 >[!NOTE]
 >
->Per ulteriori informazioni su cosa considerare quando si eseguono i backup per AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
+>Per ulteriori informazioni su cosa considerare quando si eseguono i backup per  AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Inserimento della modalità di backup nel server dei moduli {#entering-backup-mode-on-the-forms-server}
 
@@ -54,11 +57,11 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 * Tempo necessario per il completamento della procedura di backup.
 * Flag che indica se la modalità di backup continuo è utile solo se si eseguono backup periodici.
 
-Prima di scrivere le applicazioni per passare alla modalità di backup, è consigliabile comprendere le procedure di backup che verranno utilizzate dopo aver messo il server dei moduli in modalità di backup. Per ulteriori informazioni su cosa considerare quando si eseguono i backup per AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
+Prima di scrivere le applicazioni per passare alla modalità di backup, è consigliabile comprendere le procedure di backup che verranno utilizzate dopo aver messo il server dei moduli in modalità di backup. Per ulteriori informazioni su cosa considerare quando si eseguono i backup per  AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -66,7 +69,7 @@ Per creare un&#39;applicazione che entra in modalità di backup, eseguire le ope
 
 1. Includere i file di progetto.
 1. Creare un oggetto client BackupService.
-1. Determinare un&#39;etichetta univoca, il tempo necessario per eseguire il backup e se eseguire il backup continuo.
+1. Determinare un&#39;etichetta univoca, il tempo necessario per eseguire il backup e se eseguire il backup in modalità continua.
 1. Immettere la modalità di backup.
 1. (Facoltativo) Recuperare informazioni sulla sessione della modalità di backup sul server.
 1. Eseguire il backup del GDS (Global Data Store) e del database.
@@ -75,7 +78,7 @@ Per creare un&#39;applicazione che entra in modalità di backup, eseguire le ope
 
 Includete i file necessari nel progetto di sviluppo. Questi file sono importanti da includere nel progetto per la corretta compilazione del codice e l&#39;utilizzo dell&#39;API del servizio Backup e ripristino.
 
-Per informazioni sulla posizione di questi file, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file, consultate [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria AEM Forms Java.
 
 **Creare un oggetto BackupService Client API**
 
@@ -83,9 +86,9 @@ Per uscire dalla modalità di backup a livello di programmazione, è necessario 
 
 **Scegliere un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se eseguire il backup continuo**
 
-Prima di passare alla modalità di backup, è necessario stabilire un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se il server dei moduli deve rimanere in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (vedere [la guida](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.)
+Prima di passare alla modalità di backup, è necessario stabilire un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se si desidera che il server dei moduli rimanga in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (vedere [la guida](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.)
 
-**Modalità di backup**
+**Accedi alla modalità di backup**
 
 Accedete alla modalità di backup con i parametri coerenti con le procedure di backup dell&#39;organizzazione.
 
@@ -108,8 +111,8 @@ Accedete alla modalità di backup utilizzando l&#39;API del servizio Backup e ri
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-   * jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+   * adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+   * jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 1. Creare un oggetto BackupService Client API
 
@@ -122,7 +125,7 @@ Accedete alla modalità di backup utilizzando l&#39;API del servizio Backup e ri
 
    Stabilire un&#39;etichetta univoca, determinare il tempo che si desidera allocare per eseguire il backup e decidere se si desidera che il server dei moduli rimanga in modalità di backup continuo.
 
-1. Modalità di backup
+1. Accedi alla modalità di backup
 
    Attivate la modalità di backup richiamando il `enterBackupMode` metodo con i seguenti parametri:
 
@@ -138,11 +141,11 @@ Accedete alla modalità di backup utilizzando l&#39;API del servizio Backup e ri
 
 1. Eseguire il backup del GDS e del database
 
-   Eseguire il backup di Global Document Storage (GDS) e del database a cui è connesso il server dei moduli. Le azioni per eseguire il backup non fanno parte dell’SDK di AEM Forms e possono includere anche passaggi manuali specifici per le procedure di backup nell’organizzazione.
+   Eseguire il backup di Global Document Storage (GDS) e del database a cui è connesso il server dei moduli. Le azioni per eseguire il backup non fanno parte dell’SDK AEM Forms  e possono includere anche passaggi manuali specifici per le procedure di backup nell’organizzazione.
 
 ### Accedere alla modalità di backup utilizzando l&#39;API del servizio Web {#enter-backup-mode-using-the-web-service-api}
 
-Accedete alla modalità di backup utilizzando il servizio Web fornito dall&#39;API del servizio Backup e ripristino:
+Accedete alla modalità di backup utilizzando il servizio Web fornito dall&#39;API del servizio di backup e ripristino:
 
 1. Includi file di progetto
 
@@ -157,7 +160,7 @@ Accedete alla modalità di backup utilizzando il servizio Web fornito dall&#39;A
 
    Stabilire un&#39;etichetta univoca, determinare il tempo che si desidera allocare per eseguire il backup e decidere se si desidera che il server dei moduli rimanga in modalità di backup continuo.
 
-1. Modalità di backup
+1. Accedi alla modalità di backup
 
    Per passare alla modalità di backup, richiamare il metodo enterBackupMode e passare i seguenti valori:
 
@@ -173,17 +176,17 @@ Accedete alla modalità di backup utilizzando il servizio Web fornito dall&#39;A
 
 1. Eseguire il backup del GDS e del database
 
-   Eseguire il backup di Global Document Storage (GDS) e del database a cui è connesso il server dei moduli. Le azioni per eseguire il backup non fanno parte dell’SDK di AEM Forms e possono includere anche passaggi manuali specifici per le procedure di backup nell’organizzazione.
+   Eseguire il backup di Global Document Storage (GDS) e del database a cui è connesso il server dei moduli. Le azioni per eseguire il backup non fanno parte dell’SDK AEM Forms  e possono includere anche passaggi manuali specifici per le procedure di backup nell’organizzazione.
 
 ## Uscita dalla modalità di backup sul server dei moduli {#leaving-backup-mode-on-the-forms-server}
 
 È possibile uscire dalla modalità di backup in modo che il server dei moduli riprenda la rimozione dei file da GDS (Global Document Storage) sul server dei moduli.
 
-Prima di scrivere le applicazioni per passare alla modalità di uscita, è consigliabile comprendere le procedure di backup utilizzate con AEM Forms. Per ulteriori informazioni su cosa considerare quando si eseguono i backup per AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
+Prima di scrivere le applicazioni per entrare in modalità di uscita, si consiglia di comprendere le procedure di backup utilizzate con  AEM Forms. Per ulteriori informazioni su cosa considerare quando si eseguono i backup per  AEM Forms, consultate la guida [](https://www.adobe.com/go/learn_aemforms_admin_63)di amministrazione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Backup e ripristino, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Backup e ripristino, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -198,7 +201,7 @@ Per uscire dalla modalità di backup, effettuare le seguenti operazioni:
 
 Includete tutti i file necessari nel progetto di sviluppo. Questi file sono importanti per la corretta compilazione del codice e per l’utilizzo dell’API del servizio Backup e ripristino.
 
-Per informazioni sulla posizione di questi file, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file, consultate [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria AEM Forms Java.
 
 **Creare un oggetto BackupService Client API**
 
@@ -223,8 +226,8 @@ Lasciate la modalità di backup utilizzando l&#39;API del servizio Backup e ripr
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-   * jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+   * adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+   * jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 1. Creare un oggetto BackupService Client API
 
@@ -233,7 +236,7 @@ Lasciate la modalità di backup utilizzando l&#39;API del servizio Backup e ripr
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
    * Creare un `BackupService` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto come parametro.
 
-1. Modalità di backup
+1. Accedi alla modalità di backup
 
    Lasciare la modalità di backup richiamando il `leaveBackupMode` metodo.
 
@@ -256,7 +259,7 @@ Lasciate la modalità di backup utilizzando l&#39;API del servizio Backup e ripr
 
    Utilizzando l&#39;assembly client Microsoft .NET, creare un `BackupServiceService` oggetto richiamando il relativo costruttore predefinito.
 
-1. Modalità di backup
+1. Accedi alla modalità di backup
 
    Uscire dalla modalità di backup richiamando l&#39;operazione del servizio `leaveBackupMode` Web.
 
