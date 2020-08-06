@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 3%
 
 ---
 
@@ -26,14 +29,14 @@ L&#39;interfaccia utente per la creazione di comunicazioni [](/help/forms/using/
 Quando [create una nuova comunicazione interattiva o modificate una comunicazione](/help/forms/using/create-interactive-communication.md)interattiva esistente, utilizzate i seguenti elementi dell&#39;interfaccia utente:
 
 * [Barra laterale](#sidebar)
-* [Barra degli strumenti Pagina](#page-toolbar)
+* [Barra degli strumenti della pagina](#page-toolbar)
 
 * [Barra degli strumenti del componente](#component-toolbar)
 * Area contenuto
 
 ![interfaccia utente per la creazione di comunicazioni interattive](assets/form-editor.png)
 
-******A. Barra laterale** B. Barra degli strumenti Pagina **C.** Area contenuto
+**A.** Barra laterale **B.** Barra degli strumenti Pagina **C.** Area contenuto
 
 ## Barra laterale {#sidebar}
 
@@ -41,7 +44,7 @@ Quando [create una nuova comunicazione interattiva o modificate una comunicazion
 
 [Fare clic per ingrandire](assets/sidebar-comps-1.png)
 
-**************A. Browser canale** B. Browser dei contenuti **C.** Browser delle proprietà **D. Browser risorse** E. Browser componenti **F. Browser Origini dati - Modello dati** G. Browser Origini dati - Contenuto principale
+**A.** Browser canale **B.** Browser dei contenuti **C.** Browser delle proprietà **D.** Browser risorse **E.** Browser componenti **F.** Browser Origini dati - Modello dati **G.** Browser Origini dati - Contenuto principale
 
 La barra laterale include quanto segue:
 
@@ -57,8 +60,7 @@ La barra laterale include quanto segue:
 
    Consente di modificare le proprietà di un componente. Le proprietà cambiano a seconda del componente. Ad esempio, per visualizzare le proprietà del contenitore documenti:
 
-   
-Selezionate un componente, quindi toccate il livello ![del](assets/field-level.png) campo > Contenitore **** documento, quindi toccate ![cmppr](assets/cmppr.png).
+   Selezionate un componente, quindi toccate il livello ![del](assets/field-level.png) campo > Contenitore **** documento, quindi toccate ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 
@@ -74,11 +76,11 @@ Selezionate un componente, quindi toccate il livello ![del](assets/field-level.p
 | Frammento di documento | ✓ | ✓ | Consente di aggiungere a una comunicazione interattiva un componente, un testo, un elenco o una condizione riutilizzabili. Il componente riutilizzabile aggiunto a una comunicazione interattiva potrebbe essere basato su un modello dati del modulo o non su un modello dati del modulo. |
 | Immagine | ✓ | ✓ | Consente di inserire un’immagine. |
 | Pannello | - | ✓ | Il componente Pannello è un segnaposto per raggruppare altri componenti e controlla come un gruppo di componenti viene disposto in una comunicazione interattiva. Un componente pannello consente inoltre di rendere ripetibile un gruppo di componenti per l’utente finale, ad esempio in più voci richieste per compilare le credenziali educative. È inoltre buona norma utilizzare un pannello per ciascuna scheda di una comunicazione interattiva con più schede. |
-| Tabella |  &amp;ast; | ✓ | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
+| Tabella | &amp;ast; | ✓ | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
 | Area di destinazione | &amp;ast;&amp;ast; | ✓ | Inserisce un’area di destinazione in un canale Web per organizzare i componenti specifici del canale Web. |
-| Testo | - | ✓ | Aggiunge testo al canale Web di una comunicazione interattiva. Il testo può utilizzare oggetti del modello dati del modulo per rendere dinamico il contenuto. |
+| Testo | - | ✓ | Aggiunge del testo al canale Web di una comunicazione interattiva. Il testo può utilizzare gli oggetti del modello dati del modulo per rendere dinamico il contenuto. |
 
- &amp;ast; Utilizzare i frammenti di layout nel canale Stampa per aggiungere tabelle.
+&amp;ast; Utilizzare i frammenti di layout nel canale Stampa per aggiungere tabelle.
 
 &amp;ast;&amp;ast; Nel canale di stampa, le aree di destinazione sono predefinite nel modello XDP/print. Non è possibile aggiungere nuove aree di destinazione utilizzando l&#39;interfaccia utente per l&#39;authoring delle comunicazioni interattive.
 
@@ -132,7 +134,7 @@ J. **Altro**: Offre ulteriori opzioni per l’utilizzo del componente selezionat
 * Barra degli strumenti del pannello Aggiungi (solo per i pannelli)
 * Sostituisci (non per i pannelli)
 
-## Page toolbar {#page-toolbar}
+## Barra degli strumenti della pagina {#page-toolbar}
 
 La barra degli strumenti Pagina nella parte superiore contiene opzioni che consentono di visualizzare l’anteprima della comunicazione interattiva e di modificarne le proprietà. Potete visualizzare l’anteprima della comunicazione interattiva al momento della creazione e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili:
 
@@ -146,8 +148,8 @@ La barra degli strumenti Pagina nella parte superiore contiene opzioni che conse
    * Sviluppatore: Consente a uno sviluppatore di:
 
       * Scopri di cosa si compone la comunicazione interattiva.
-      * Eseguire il debug di quanto sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
-   * Target:Consente di abilitare o disabilitare componenti personalizzati, o componenti out-of-the-box non elencati nella barra laterale.
+      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+   * Target: Consente di abilitare o disabilitare componenti personalizzati, o componenti out-of-the-box non elencati nella barra laterale.
 
 
 * Anteprima: Consente di visualizzare un&#39;anteprima dell&#39;aspetto della comunicazione interattiva al momento della pubblicazione.
