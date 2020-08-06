@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Per garantire che il rollout non sia bloccato, le possibili definizioni possono 
 * quali pagine verranno rinominate (e come),
 * come questo influirà su qualsiasi contenuto pubblicato.
 
-   Il comportamento predefinito di AEM (out-of-the-box) consiste nel fatto che il contenuto pubblicato non verrà influenzato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto sarà ancora pubblicato dopo la gestione dei conflitti e l&#39;implementazione.
+   Il comportamento predefinito di AEM (out-of-the-box) è che il contenuto pubblicato non verrà influenzato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto sarà ancora pubblicato dopo la gestione dei conflitti e l&#39;implementazione.
 
 Oltre alla funzionalità standard, è possibile aggiungere gestori di conflitti personalizzati per implementare regole diverse. Possono inoltre consentire la pubblicazione di azioni come un singolo processo.
 
@@ -87,7 +90,7 @@ AEM ha un comportamento [predefinito quando la gestione dei conflitti è stata d
 
 ## Gestori dei conflitti {#conflict-handlers}
 
-AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout di contenuti da un blueprint a una live copy. La ridenominazione delle pagine è uno dei metodi più comuni per risolvere tali conflitti. Possono essere operativi più gestori di conflitti per consentire una selezione di comportamenti diversi.
+AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout del contenuto da una blueprint a una Live Copy. La ridenominazione delle pagine è uno dei metodi più comuni per risolvere tali conflitti. Possono essere operativi più gestori di conflitti per consentire una selezione di comportamenti diversi.
 
 AEM fornisce:
 
@@ -129,8 +132,8 @@ Questo gestore di conflitti ha la precedenza sul modello. La pagina Live Copy `/
    <td><strong>blueprint dopo il rollout</strong></td> 
    <td><strong>live copy after rollout</strong><br /> </td> 
    <td></td>
-   <td><strong>live copy after rollout</strong><br /> <br /><br /> </td> 
-   <td><strong>pubblica dopo il rollout</strong><br /><br /> </td> 
+   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td> 
+   <td><strong>pubblicazione dopo l'implementazione</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
@@ -151,7 +154,7 @@ Questo gestore di conflitti ha la precedenza sul modello. La pagina Live Copy `/
 
 ### Gestori personalizzati {#customized-handlers}
 
-I gestori di conflitti personalizzati consentono di implementare le proprie regole. Il meccanismo di classificazione del servizio consente inoltre di definire il modo in cui interagiscono con altri gestori.
+I gestori di conflitti personalizzati consentono di implementare le proprie regole. Utilizzando il meccanismo di classificazione del servizio è inoltre possibile definire il modo in cui interagiscono con altri gestori.
 
 I gestori di conflitti personalizzati possono:
 
@@ -167,11 +170,11 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se [disattivate manualmente la gestione](#rollout-manager-and-conflict-handling) dei conflitti, AEM non esegue alcuna azione su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
+Se si [disattiva manualmente la gestione](#rollout-manager-and-conflict-handling) dei conflitti, AEM non intervenire su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
 
 >[!CAUTION]
 >
->AEM non fornisce alcuna indicazione del fatto che i conflitti vengono ignorati in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
+>AEM non indica che i conflitti vengono ignorati in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
 
 In questo caso la Live Copy ha la precedenza. La pagina blueprint non `/b` viene copiata e la pagina Live Copy non `/b` viene toccata.
 
@@ -190,8 +193,8 @@ In questo caso la Live Copy ha la precedenza. La pagina blueprint non `/b` viene
  <tbody> 
   <tr> 
    <td><strong>blueprint dopo il rollout</strong></td> 
-   <td><strong>live copy after rollout</strong><br /> <br /><br /> </td> 
-   <td><strong>pubblica dopo il rollout</strong><br /><br /> </td> 
+   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td> 
+   <td><strong>pubblicazione dopo l'implementazione</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
