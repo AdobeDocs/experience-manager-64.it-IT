@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 Conoscenza dei layout, che consente di creare/utilizzare un layout personalizzato. Consultate [Modifica del layout](/help/forms/using/layout-capabilities-adaptive-forms.md)del pannello.
 
-## Componente Layout pannello moduli adattivo {#adaptive-form-panel-layout-component}
+## Componente Layout del pannello dei moduli adattivi {#adaptive-form-panel-layout-component}
 
 Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i componenti per moduli adattivi vengono disposti in un pannello relativo all’interfaccia utente.
 
@@ -28,7 +31,7 @@ Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i
 
 1. Navigate to the location `/crx/de`.
 1. Copiate un layout del pannello dalla posizione `/libs/fd/af/layouts/panel` (ad esempio, `tabbedPanelLayout`) a `/apps` (ad esempio, `/apps/af-custom-layout`).
-1. Rinominate il layout in cui avete copiato `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificateli in `Custom layout - Toggle tabs`.
+1. Rinominare il layout in cui è stato copiato `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificateli in `Custom layout - Toggle tabs`.
 
 ![Layout del pannello personalizzato CRX DE Snapshot](assets/custom.png)
 
