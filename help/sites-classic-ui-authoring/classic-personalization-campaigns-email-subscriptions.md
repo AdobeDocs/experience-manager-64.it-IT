@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 75%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe non intende migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).\
->È consigliabile sfruttare [Adobe Campaign e la relativa integrazione](/help/sites-administering/campaign.md)AEM.
+> Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).\
+>La raccomandazione è di sfruttare [Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. Per preparare una pagina AEM con un modulo per l’iscrizione alle mailing list dei servizi di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina AEM che il potenziale sottoscrittore visiterà.
 
@@ -104,7 +107,7 @@ Per configurare un messaggio e-mail di risposta automatica quando un utente si i
 1. **Seleziona classificazione** (classificazione utilizzata per inviare l’e-mail).
 1. Select the **Thank you** page (the page where users are directed to once they submit the form).
 
-   In the **Form** tab, select the thank you page you want users to go to after they submit the form. (If left blank, the form redisplays upon submission.) Fai clic su **OK**. 
+   In the **Form** tab, select the thank you page you want users to go to after they submit the form. (If left blank, the form redisplays upon submission.) Fai clic su **OK**.
 
 1. Esporta le chiavi dall’istanza di creazione all’istanza di pubblicazione.
 1. Aggiungi il componente per il pulsante **Invia** dalla sezione **Modulo** nella barra laterale.
