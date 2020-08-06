@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: af95c6c7-0475-4f55-88a8-ec5e39a9ddcd
 translation-type: tm+mt
 source-git-commit: c93c1754a44a2f18c27caf4b50888bdd09d26f7c
+workflow-type: tm+mt
+source-wordcount: '2759'
+ht-degree: 1%
 
 ---
 
@@ -50,6 +53,7 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
    * Un frammento fa riferimento al modello; le modifiche apportate al modello possono quindi avere o avranno effetto su eventuali frammenti dipendenti.
    * I modelli sono composti di tipi di dati.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
+
    >[!CAUTION]
    >
    >Qualsiasi modifica apportata a un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti; in questo modo è possibile creare proprietà orfane nei frammenti.
@@ -61,11 +65,11 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
    * Il modello viene copiato nel frammento al momento della creazione; pertanto, ulteriori modifiche al modello non si rifletteranno sui frammenti esistenti.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
    * [I modelli](/help/sites-developing/content-fragment-templates.md) di frammento di contenuto funzionano in modo diverso rispetto ad altri meccanismi di modellazione all’interno dell’ecosistema AEM (ad esempio, modelli di pagina, ecc.). Devono pertanto essere considerati separatamente.
-   * Se basato su un modello, il tipo MIME del contenuto è gestito sul contenuto effettivo; ciò significa che ogni elemento e ogni variante possono avere un tipo MIME diverso.
+   * Quando si basa su un modello, il tipo MIME del contenuto è gestito sul contenuto effettivo; ciò significa che ogni elemento e ogni variante possono avere un tipo MIME diverso.
 
 ## Integrazione con le risorse {#integration-with-assets}
 
-Content Fragment Management (CFM) fa parte di AEM Assets come segue:
+Content Fragment Management (CFM) fa parte di  AEM Assets come:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Risorse esistente.
@@ -89,8 +93,7 @@ I frammenti di contenuto con contenuto strutturato (ovvero basato su un modello 
 
    * I dati di ciascun elemento vengono memorizzati nel rispettivo nodo secondario come proprietà con il nome dell&#39;elemento:
 
-      
-Ad esempio, il contenuto dell&#39;elemento `text` viene memorizzato come proprietà `text` in `jcr:content/data/master`
+      Ad esempio, il contenuto dell&#39;elemento `text` viene memorizzato come proprietà `text` in `jcr:content/data/master`
 
 * I metadati e il contenuto associato sono memorizzati sotto `jcr:content/metadata`
 
@@ -134,7 +137,7 @@ Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/a
 >
 >È ora consigliabile utilizzare il componente [di base del frammento di](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) contenuto. Per ulteriori informazioni, consulta [Sviluppo di componenti](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) di base.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il componente [**di base **Frammento](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)di contenuto, un[componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). È inoltre possibile estendere questo componente di base** Frammento **di contenuto.
+È possibile fare riferimento ai frammenti di contenuto dalle AEM pagine, come qualsiasi altro tipo di risorsa. AEM fornisce il componente [**di base **Frammento](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)di contenuto, un[componente che consente di includere nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)frammenti di contenuto. È inoltre possibile estendere questo componente di base** Frammento **di contenuto.
 
 * Il componente utilizza la `fragmentPath` proprietà per fare riferimento al frammento di contenuto effettivo. La `fragmentPath` proprietà viene gestita allo stesso modo delle proprietà simili di altri tipi di risorse; ad esempio, quando il frammento di contenuto viene spostato in un&#39;altra posizione.
 
@@ -145,7 +148,7 @@ Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/a
    * Qui il componente permette di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui viene fatto riferimento.
       * Per il contenuto intermedio è necessario:
 
-         * essere consapevole della possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha alcuna relazione fissa con il paragrafo a cui è posizionato accanto, inserendo un nuovo paragrafo (nell’editor dei frammenti di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
+         * essere a conoscenza della possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha alcuna relazione fissa con il paragrafo a cui è posizionato accanto, inserendo un nuovo paragrafo (nell’editor dei frammenti di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
             * prendete in considerazione i parametri aggiuntivi (come i filtri di variazione e paragrafo) per evitare falsi positivi nei risultati di ricerca
 
 >[!NOTE]
@@ -174,9 +177,9 @@ I parametri per questo possono essere configurati nella console [](/help/sites-d
 
 >[!NOTE]
 >
->Nessuna mappatura diretta tra proprietà e tipo di componente.
+>Non esiste una mappatura diretta tra proprietà e tipo di componente.
 >
->AEM acquisisce semplicemente la prima proprietà che si trova su un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
+>AEM considera semplicemente la prima proprietà che è possibile trovare su un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
 
 ![osgi-config](assets/osgi-config.png)
 
@@ -193,7 +196,7 @@ Esistono ancora alcune linee guida da seguire per garantire che il componente si
 
 * Se viene eseguito il rendering del frammento per `displayMode` == `singleText` (implicitamente o esplicitamente), vengono visualizzate le seguenti proprietà aggiuntive:
 
-   * `paragraphScope` Definisce se deve essere eseguito il rendering di tutti i paragrafi o solo di un intervallo di paragrafi (valori: `all` rispetto a `range`)
+   * `paragraphScope` Definisce se deve essere eseguito il rendering di tutti i paragrafi, o solo di un intervallo di paragrafi (valori: `all` vs `range`)
    * if `paragraphScope` == `range` la proprietà `paragraphRange` definisce l&#39;intervallo di paragrafi da sottoporre a rendering
 
 ### Integrazione con altri framework {#integration-with-other-frameworks}
@@ -202,7 +205,7 @@ I frammenti di contenuto possono essere integrati con:
 
 * **Traduzioni**
 
-   I frammenti di contenuto sono completamente integrati nel flusso di lavoro [di traduzione di](/help/sites-administering/tc-manage.md)AEM. A livello architettonico, ciò significa:
+   I frammenti di contenuto sono completamente integrati nel flusso di lavoro [di traduzione](/help/sites-administering/tc-manage.md)AEM. A livello architettonico, ciò significa:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
@@ -221,10 +224,10 @@ I frammenti di contenuto possono essere integrati con:
          vs
 
          `/content/dam/<path>/de/<to>/<fragment>`
-   * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l&#39;interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
+   * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
    >[!NOTE]
    >
-   >Il flusso di lavoro di traduzione di AEM funziona con `/content`:
+   >Il flusso di lavoro di traduzione AEM funziona con `/content`:
    >
    >  * Poiché i modelli di frammento di contenuto risiedono in `/conf`, questi non sono inclusi in tali traduzioni. Potete [internazionalizzare le stringhe](/help/sites-developing/i18n-dev.md)dell’interfaccia utente.
    >  * I modelli vengono copiati per creare il frammento in modo che sia implicito.
@@ -237,7 +240,7 @@ I frammenti di contenuto possono essere integrati con:
 
    `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-   può essere esteso se necessario.
+   può essere esteso, se necessario.
 * Il modulo schema corrispondente è integrato con l&#39;editor frammento.
 
 ## API di gestione dei frammenti di contenuto - Lato server {#the-content-fragment-management-api-server-side}
@@ -268,8 +271,9 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    Questa interfaccia rappresenta:
 
-   * modello di frammento di contenuto o modello di frammento di contenuto da cui creare un frammento di contenuto,
+   * un modello di frammento di contenuto o un modello di frammento di contenuto da cui creare un frammento di contenuto,
    * e (dopo la creazione) le informazioni strutturali di tale frammento
+
    Queste informazioni possono includere:
 
    * Accesso ai dati di base (titolo, descrizione)
@@ -284,6 +288,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Ottenere informazioni strutturali per una determinata variazione
       * Accedere al modello di variazione (vedere `VariationTemplate`)
    * Ottenere il contenuto associato iniziale
+
    Interfacce che rappresentano informazioni importanti:
 
    * `ElementTemplate`
@@ -321,12 +326,13 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Dati degli elementi di accesso (vedere `ContentElement`)
    * Elenca le varianti definite per il frammento
    * Creare nuove varianti a livello globale
-   * Gestisci contenuto associato:
+   * Gestire il contenuto associato:
 
       * Elenca raccolte
       * Aggiungere raccolte
       * Rimuovere le raccolte
    * Accesso al modello o al modello del frammento
+
    Le interfacce che rappresentano gli elementi primari di un frammento sono:
 
    * **Elemento contenuto**
@@ -350,6 +356,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Ottenere i dati di base (nome, titolo, descrizione)
       * Ottenere/impostare il contenuto
       * Sincronizzazione semplice, in base alle ultime informazioni modificate
+
    Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`) estendono l&#39; `Versionable` interfaccia, che aggiunge funzionalità di controllo delle versioni, necessarie per i frammenti di contenuto:
 
    * Creare una nuova versione dell&#39;elemento
@@ -364,7 +371,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 ### Adattamento - Utilizzo di adaptTo() {#adapting-using-adaptto}
 
-È possibile modificare:
+È possibile adattare quanto segue:
 
 * `ContentFragment` può essere adattato a:
 
@@ -402,7 +409,7 @@ Va osservato che:
 
 >[!CAUTION]
 >
->Per AEM 6.4 l’API lato client è interna.
+>Per AEM 6.4 l&#39;API lato client è interna.
 
 ### Informazioni aggiuntive {#additional-information}
 
@@ -452,7 +459,7 @@ I processi coinvolti sono:
 * Modifica
 
    * Tutte le modifiche (salvataggio automatico incluso) vengono effettuate sul frammento di contenuto attivo, non in un&#39;area separata e protetta.
-   * Di conseguenza, tali modifiche si riflettono immediatamente sulle pagine AEM che fanno riferimento al rispettivo frammento di contenuto
+   * Di conseguenza, tali modifiche si riflettono immediatamente su AEM pagine che fanno riferimento al rispettivo frammento di contenuto
 
 ### Azioni {#actions}
 
@@ -477,7 +484,7 @@ Le azioni possibili sono:
 
 * Uscire da una pagina
 
-   * Se è presente una sessione di modifica e le modifiche non sono state mantenute, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di restare sulla pagina.
+   * Se è presente una sessione di modifica e le modifiche non sono state persistenti, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di restare sulla pagina.
 
 ## Esempi {#examples}
 
