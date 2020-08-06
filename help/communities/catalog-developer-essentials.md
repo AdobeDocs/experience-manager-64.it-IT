@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 3%
 
 ---
 
@@ -75,9 +78,9 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
 
 * Passate alla risorsa del catalogo nella pagina del catalogo
 
-   * Ad esempio: `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
+   * Esempio, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Aggiungere un nodo di filtri figlio
+* Aggiunta di un nodo di filtri figlio
 
    * Selezionare il `catalog`nodo
    * Seleziona **[!UICONTROL Crea nodo]**
@@ -93,8 +96,8 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
    * Aggiungere una proprietà Multi
 
       * Nome: `se_resource-tags`
-      * Tipo:Stringa
-      * Valore: *&lt;immettere un[TagID](#pre-filter-tagids)>*
+      * Tipo: Stringa
+      * Valore: *&lt;immettere un[ID](#pre-filter-tagids)tag>*
       * Seleziona **[!UICONTROL multipla]**
       * Seleziona **[!UICONTROL Aggiungi]**
 
