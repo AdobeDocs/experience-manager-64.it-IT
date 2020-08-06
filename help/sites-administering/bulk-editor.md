@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 L’editor di massa consente modifiche molto efficaci quando il contesto visivo della pagina non è necessario in quanto consente di:
 
-* cercare (e visualizzare) contenuti da più pagine; viene eseguito utilizzando GQL (Google Query Language)
-* modificare questo contenuto direttamente nell&#39;editor di massa
+* cercare (e visualizzare) contenuti da più pagine; questo viene fatto utilizzando GQL (Google Query Language)
+* modifica di questo contenuto direttamente nell&#39;editor in blocco
 * salvare le modifiche (nelle pagine originarie)
-* esportare il contenuto in un file foglio di calcolo separato da tabulazioni (.tsv)
+* esporta il contenuto in un file foglio di calcolo separato da tabulazioni (.tsv)
 
 >[!NOTE]
 >
@@ -32,16 +35,16 @@ Questa sezione descrive come utilizzare l’editor in blocco nella console **Str
 
 >[!CAUTION]
 >
->Con l’ [eliminazione dell’interfaccia](/help/release-notes/deprecated-removed-features.md) classica in AEM 6.4, anche l’Editor di massa è stato dichiarato obsoleto e pertanto Adobe non intende migliorare ulteriormente l’Editor di massa.
+>Con la [deprecazione dell’interfaccia](/help/release-notes/deprecated-removed-features.md) classica in AEM 6.4, anche l’Editor di massa è stato dichiarato obsoleto e pertanto  Adobe non intende migliorare ulteriormente l’Editor di massa.
 
 ## Esempio di utilizzo per l’editor di massa {#example-use-case-for-the-bulk-editor}
 
 Ad esempio, se avete bisogno di tutti i nomi e gli indirizzi e-mail degli utenti che hanno compilato un sondaggio particolare, l’Editor di massa può fornire tali informazioni ed esportarle in un foglio di calcolo.
 
-Un esempio per illustrare questo caso di utilizzo è incluso nel sito Web Geometrixx:
+Un esempio per illustrare tale caso di utilizzo è incluso nel sito Web di Geometrixx:
 
 1. Andate alla pagina **Assistenza** e quindi al sondaggio Soddisfazione **del servizio** clienti.
-1. **Modificare** il paragrafo **Inizio del modulo** . **Nella finestra di dialogo fate clic sulla scheda** Avanzate **, espandete Configurazione****azione, quindi fate clic su** Visualizza dati... .
+1. **Modificare** il paragrafo **Inizio del modulo** . Nella finestra di dialogo fare clic sulla scheda **Avanzate** , espandere Configurazione **** azione, quindi fare clic su **Visualizza dati...**.
 
    ![customSurvey](assets/custsatsurvey.png)
 
@@ -78,7 +81,7 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
   </tr> 
   <tr> 
    <td>Parametri della ricerca</td> 
-   <td>Utilizzando i parametri GQL, inserire la stringa di ricerca che si desidera cercare nell’archivio dall’editor in blocco; ad esempio, <code>type:Page</code> cerca tutte le pagine del percorso principale, <code>text:professional</code> cerca tutte le pagine che contengono la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine che hanno come titolo "Inglese". È possibile cercare solo le stringhe.</td> 
+   <td>Utilizzando i parametri GQL, inserire la stringa di ricerca che si desidera cercare nell’archivio dall’editor di massa; ad esempio, <code>type:Page</code> cerca tutte le pagine del percorso principale, <code>text:professional</code> cerca tutte le pagine che contengono la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine che hanno come titolo "Inglese". È possibile cercare solo le stringhe.</td> 
   </tr> 
   <tr> 
    <td>Modalità contenuto, casella di controllo</td> 
@@ -90,14 +93,14 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
   </tr> 
   <tr> 
    <td>Proprietà personalizzate/Colonne</td> 
-   <td>Immettere qualsiasi altra proprietà non elencata nel campo <strong>Proprietà/Colonne</strong> . Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. È possibile aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i></i> Nota: Se aggiungete una proprietà personalizzata che non esiste ancora, in AEM WCM viene visualizzata una cella vuota. Quando modificate la cella vuota e la salvate, la proprietà viene aggiunta al nodo. La nuova proprietà creata deve rispettare i vincoli relativi al tipo di nodo e gli spazi dei nomi delle proprietà.</td> 
+   <td>Immettere qualsiasi altra proprietà non elencata nel campo <strong>Proprietà/Colonne</strong> . Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. È possibile aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> Se si aggiunge una proprietà personalizzata che non esiste ancora, AEM WCM visualizza una cella vuota. Quando modificate la cella vuota e la salvate, la proprietà viene aggiunta al nodo. La nuova proprietà creata deve rispettare i vincoli relativi al tipo di nodo e gli spazi dei nomi delle proprietà.</td> 
   </tr> 
  </tbody> 
 </table>
 
 Ad esempio:
 
-![filter](assets/searchfilter.png)
+![search filter](assets/searchfilter.png)
 
 1. Fate clic su **Cerca**. Nell’editor di massa vengono visualizzati i risultati.
 
@@ -113,14 +116,14 @@ Ad esempio:
 
    >[!CAUTION]
    >
-   >Le modifiche apportate qui sono scritte nel contenuto del repository; ad esempio, la pagina cui si fa riferimento in **Path**.
+   >Le modifiche apportate qui sono scritte nel contenuto del repository; ad esempio, la pagina a cui si fa riferimento in **Path**.
 
 #### Parametri query GQL aggiuntivi {#additional-gql-query-parameters}
 
-* **** percorso: solo i nodi di ricerca al di sotto di questo percorso. Se si specifica più di un termine con il prefisso del percorso, verrà considerato solo l&#39;ultimo.
-* **** type: restituisce solo nodi dei tipi di nodo specificati. Ciò include sia i tipi primari che i tipi di mixin. È possibile specificare più tipi di nodi separati da virgola. GQL restituirà nodi di uno qualsiasi dei tipi specificati.
-* **** ordine: ordinare il risultato per le proprietà specificate. È possibile specificare più nomi di proprietà separati da virgola. Per ordinare il risultato in ordine decrescente, premete semplicemente il nome della proprietà con un segno meno. Ad esempio: order:-name. L&#39;utilizzo di un segno più restituirà il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **** limite: limita il numero di risultati utilizzando un intervallo. Ad esempio: limit:10..20 Si prega di notare che l&#39;intervallo è basato su zero, start è incluso e end è esclusivo. Potete anche specificare un intervallo aperto:limit:10. o limite:..20 Se i puntini vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limit:10 (restituirà i primi 10 risultati)
+* **percorso:** solo i nodi di ricerca al di sotto di questo percorso. Se si specifica più di un termine con il prefisso del percorso, verrà considerato solo l&#39;ultimo.
+* **type:** restituisce solo i nodi dei tipi di nodo specificati. Ciò include sia i tipi primari che i tipi di mixin. È possibile specificare più tipi di nodi separati da virgola. GQL restituirà nodi di uno qualsiasi dei tipi specificati.
+* **ordine:** ordinare il risultato per le proprietà specificate. È possibile specificare più nomi di proprietà separati da virgola. Per ordinare il risultato in ordine decrescente, premete semplicemente il nome della proprietà con un segno meno. Ad esempio: order:-name. L&#39;utilizzo di un segno più restituirà il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
+* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio: limit:10..20 Si prega di notare che l&#39;intervallo è basato su zero, start è incluso e end è esclusivo. È inoltre possibile specificare un intervallo aperto:limit:10. o limite:..20 Se i puntini vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limit:10 (restituirà i primi 10 risultati)
 
 ### Esportazione di contenuto {#exporting-content}
 
@@ -129,7 +132,7 @@ Potrebbe essere necessario esportare il contenuto e apportare modifiche in un fo
 Per esportare il contenuto:
 
 1. Cercate il contenuto come descritto in [Ricerca e modifica di contenuto](#searching-and-editing-content).
-1. Fate clic su **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. In AEM WCM viene richiesto dove si desidera scaricare il file.
+1. Fate clic su **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. AEM WCM chiede dove si desidera scaricare il file.
 
    >[!NOTE]
    >
@@ -144,7 +147,7 @@ Per esportare il contenuto:
 
 ### Importazione di contenuto {#importing-content}
 
-Per impostazione predefinita, la funzionalità di importazione è nascosta all’apertura dell’editor di massa. Se si aggiunge semplicemente il parametro `hib=false` all’URL, nella pagina Editor di massa viene visualizzato il pulsante **Importa** . Potete importare contenuto da qualsiasi file separato da tabulazioni ( `.tsv`). Per il corretto funzionamento dell’importazione, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si sta importando.
+Per impostazione predefinita, la funzionalità di importazione è nascosta all’apertura dell’editor di massa. Se si aggiunge semplicemente il parametro `hib=false` all’URL, nella pagina Editor di massa viene visualizzato il pulsante **Importa** . Potete importare il contenuto da qualsiasi file separato da tabulazioni ( `.tsv`). Per il corretto funzionamento dell’importazione, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si sta importando.
 
 >[!NOTE]
 >
