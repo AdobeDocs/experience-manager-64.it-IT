@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -39,21 +42,21 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
 1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata config con percorso/struttura simile alla cartella di configurazione, che si trova in libs/fd/cm/config, utilizzando i seguenti passaggi:
 
-   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate **Overlay Node**:
+   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate Nodo **** sovrapposizione:
 
       `/libs/fd/cm/config`
 
-      ![Overlay, nodo](assets/1-4.png)
+      ![Sovrapposizione, nodo](assets/1-4.png)
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/config
+      **Percorso:** /libs/fd/cm/config
 
-      **** Posizione: /apps/
+      **Posizione:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
-      ![Overlay, nodo](assets/2-2.png)
+      ![Sovrapposizione, nodo](assets/2-2.png)
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -159,10 +162,11 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
 
    1. Apportate le modifiche necessarie nel file per modificare quanto segue nelle impostazioni dei font:
 
-      * Aggiungi o rimuovi famiglia e dimensione font
+      * Aggiungere o rimuovere la famiglia e la dimensione dei font
       * Proprietà quali l&#39;altezza e la spaziatura tra le lettere
       * Valori predefiniti di famiglia e dimensione del font, altezza, spaziatura tra le lettere e formato della data
       * Punti elenco
+
       Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la voce seguente nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client e utilizzato per accedere e utilizzare la personalizzazione dei font. Per ulteriori informazioni, vedere [Aggiunta di font personalizzati al computer](#addcustomfonts)client.
 
       Potete inoltre modificare le impostazioni predefinite per vari aspetti del testo e, rimuovendo le voci, rimuovere i font dall’editor di testo.
@@ -181,7 +185,7 @@ Per ulteriori informazioni sull&#39;installazione dei font, consultate i seguent
 
 ## Accesso alle personalizzazioni dei font {#access-font-customizations}
 
-Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere a AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
+Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere  AEM Forms, le modifiche vengono visualizzate nell&#39;editor di testo.
 
 Ad esempio, il font Sazanami Mincho Medium aggiunto nei font [Customize modificando il file tbxeditor-config.xml nella procedura CRX](#customizefonts) viene visualizzato nell’interfaccia utente dell’editor di testo come segue:
 
