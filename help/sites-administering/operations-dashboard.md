@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il Pannello operazioni di AEM 6 consente agli operatori di sistema di monitorare rapidamente lo stato del sistema AEM. Fornisce inoltre informazioni diagnostiche generate automaticamente su aspetti rilevanti di AEM e consente di configurare ed eseguire l&#39;automazione di manutenzione indipendente per ridurre notevolmente le operazioni di progetto e i casi di supporto. Il Pannello operazioni può essere esteso con controlli dello stato e attività di manutenzione personalizzati. Inoltre, è possibile accedere ai dati del dashboard operativo da strumenti di monitoraggio esterni tramite JMX.
+Il Pannello operazioni nel AEM 6 aiuta gli operatori di sistema a monitorare AEM stato del sistema. Fornisce inoltre informazioni diagnostiche generate automaticamente su aspetti rilevanti della AEM e consente di configurare ed eseguire l&#39;automazione di manutenzione indipendente per ridurre notevolmente le operazioni di progetto e i casi di supporto. Il Pannello operazioni può essere esteso con controlli dello stato e attività di manutenzione personalizzati. Inoltre, è possibile accedere ai dati del dashboard operativo da strumenti di monitoraggio esterni tramite JMX.
 
 **Pannello delle operazioni:**
 
@@ -31,15 +31,15 @@ Il Pannello operazioni di AEM 6 consente agli operatori di sistema di monitorare
 * Riduzione del tempo necessario per individuare, analizzare e risolvere i problemi
 * Offre automazione di manutenzione indipendente che consente di ridurre notevolmente i costi operativi dei progetti
 
-Per accedervi, andate a **Strumenti** - **Operazioni** dalla schermata introduttiva di AEM.
+È possibile accedervi da **Strumenti** - **Operazioni** nella schermata di benvenuto AEM.
 
 >[!NOTE]
 >
->Per poter accedere al Pannello operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Utente, Gruppo e Amministrazione](/help/sites-administering/user-group-ac-admin.md)dei diritti di accesso.
+>Per poter accedere al Pannello operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Utente, Gruppo e Accesso all’amministrazione](/help/sites-administering/user-group-ac-admin.md)dei diritti.
 
 ## Rapporti stato {#health-reports}
 
-Il sistema di rapporti sullo stato fornisce informazioni sullo stato di un’istanza di AEM tramite Sling Health Checks. Questa operazione può essere eseguita tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l&#39;interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, in alcuni casi, fornirà informazioni su come risolvere il problema.
+Il sistema Health Report fornisce informazioni sullo stato di un&#39;istanza AEM tramite Sling Health Checks. Questa operazione può essere eseguita tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l&#39;interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, in alcuni casi, fornirà informazioni su come risolvere il problema.
 
 Presenta diverse funzioni, descritte di seguito.
 
@@ -47,7 +47,7 @@ Presenta diverse funzioni, descritte di seguito.
 
 Le relazioni **sulla** salute sono un sistema di carte che indicano una buona o cattiva salute per una specifica area di prodotto. Queste schede sono visualizzazioni dei Sling Health Checks, che aggregano i dati da JMX e da altre fonti ed espongono di nuovo le informazioni elaborate come MBeans. Questi MBeans possono essere ispezionati anche nella console [Web](/help/sites-administering/jmx-console.md)JMX, nel dominio **org.apache.sling.HealthCheck** .
 
-È possibile accedere all’interfaccia Rapporti stato mediante il menu **Strumenti** - **Operazioni** - Rapporti **** stato nella schermata introduttiva di AEM oppure direttamente tramite il seguente URL:
+Per accedere all’interfaccia dei rapporti sull’integrità, utilizzate il menu **Strumenti** - **Operazioni** - Rapporti sull’ **** integrità nella schermata di benvenuto AEM oppure direttamente tramite il seguente URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -59,7 +59,7 @@ Il sistema di schede espone tre possibili stati: **OK**, **ATTENZIONE** e **CRIT
 
 ### Tipi di controllo integrità {#health-check-types}
 
-In AEM 6 sono disponibili due tipi di controlli dello stato:
+Esistono due tipi di controlli sanitari nella AEM 6:
 
 1. Controlli di integrità individuali
 1. Controlli di integrità compositi
@@ -194,7 +194,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
   </tr> 
   <tr> 
    <td>Prestazioni delle query</td> 
-   <td><p>Questo controllo dello stato è stato semplificato <strong>in AEM 6.4</strong>e ora verifica il <code>Oak QueryStats</code> MBean modificato di recente, più precisamente l’ <code>SlowQueries </code>attributo. Se le statistiche contengono delle query lente, il controllo dello stato restituisce un avviso. In caso contrario, restituisce lo stato OK.<br /> </p> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=queryStatus,type=HealthCheck</a>.</p> </td> 
+   <td><p>Questo controllo dello stato di salute è stato semplificato <strong>in AEM 6.4</strong>, e ora controlla il <code>Oak QueryStats</code> MBean recentemente modificato, più specificamente l' <code>SlowQueries </code>attributo. Se le statistiche contengono delle query lente, il controllo dello stato restituisce un avviso. In caso contrario, restituisce lo stato OK.<br /> </p> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=queryStatus,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Lunghezza coda di osservazione</td> 
@@ -202,7 +202,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
     <ul> 
      <li>restituisce lo stato Critico se il <code>queueSize</code> valore supera il <code>maxQueueSize</code> valore (ovvero quando gli eventi vengono ignorati)</li> 
      <li>restituisce Avvisa se il <code>queueSize</code> valore è superiore al valore <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li> 
-    </ul> <p>La lunghezza massima di ciascuna coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questo controllo di stato. L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td> 
+    </ul> <p>La lunghezza massima di ogni coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questo controllo di stato. L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Limiti di attraversamento per query</td> 
@@ -233,7 +233,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
        <li>restituisce OK status se è inferiore a 45 minuti fa </li> 
       </ul> </li> 
      <li>se nessuna di queste condizioni è soddisfatta, restituisce lo stato OK</li> 
-    </ul> <p>Sono configurabili sia le soglie di stato Critico che Avvisi. Il tag per questa verifica dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=asinccIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo dello stato è disponibile con AEM 6.4 ed è stato riportato in AEM 6.3.0.1.</p> </td> 
+    </ul> <p>Sono configurabili sia le soglie di stato Critico che Avvisi. Il tag per questa verifica dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=asinccIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo dello stato di salute è disponibile con AEM 6.4 ed è stato riportato a AEM 6.3.0.1.</p> </td> 
   </tr> 
   <tr> 
    <td>Indici Lucene di grandi dimensioni</td> 
@@ -241,7 +241,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
     <ul> 
      <li>uno stato di avviso se è presente un indice con più di 1 miliardo di documenti</li> 
      <li>uno stato critico se esiste un indice con più di 1,5 miliardi di documenti</li> 
-    </ul> <p>Le soglie sono configurabili e l'MBean per il controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Questo controllo è disponibile con AEM 6.4 ed è stato riportato in AEM 6.3.2.0.</p> </td> 
+    </ul> <p>Le soglie sono configurabili e l'MBean per il controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Questo controllo è disponibile con AEM 6.4 ed è stato riportato a AEM 6.3.2.0.</p> </td> 
   </tr> 
   <tr> 
    <td>Manutenzione sistema</td> 
@@ -250,8 +250,8 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
      <li>ogni attività di manutenzione è accompagnata da un controllo dello stato</li> 
      <li>se un'attività non viene aggiunta a una finestra di manutenzione, il relativo controllo dello stato restituirà Critico</li> 
      <li>è necessario configurare le attività di manutenzione Registro di controllo e Rimozione flusso di lavoro o rimuoverle dalle finestre di manutenzione. Se non viene configurata, queste attività non riusciranno al primo tentativo di esecuzione, pertanto il controllo di manutenzione del sistema restituirà lo stato Critico.</li> 
-     <li><strong>Con AEM 6.4</strong>, è disponibile anche un controllo per l’attività di manutenzione <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">dei file binari di</a> Lucene</li> 
-     <li>in AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce uno stato di avviso subito dopo l’avvio, in quanto le attività non vengono mai eseguite. A partire da 6.3, torneranno a essere OK se la prima finestra di manutenzione non è ancora stata raggiunta.</li> 
+     <li><strong>Con AEM 6.4</strong>, c'è anche un controllo per l'attività di manutenzione <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">dei binari di</a> Lucene</li> 
+     <li>AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce uno stato di avviso subito dopo l'avvio, in quanto le attività non vengono mai eseguite. A partire da 6.3, torneranno a essere OK se la prima finestra di manutenzione non è ancora stata raggiunta.</li> 
     </ul> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=systemcheck,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -326,7 +326,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
 
 ## Monitoraggio con Nagios {#monitoring-with-nagios}
 
-Il Pannello di controllo dello stato può integrarsi con Nagios tramite i fagioli JMX Granite. L’esempio seguente illustra come aggiungere un controllo che mostra la memoria utilizzata sul server che esegue AEM.
+Il Pannello di controllo dello stato può integrarsi con Nagios tramite i fagioli JMX Granite. L&#39;esempio seguente illustra come aggiungere un controllo che mostra la memoria utilizzata sul server in cui è in esecuzione AEM.
 
 1. Installazione e installazione di Nagios sul server di monitoraggio.
 1. Quindi, installare il plugin remoto Nagios (NRPE).
@@ -335,7 +335,7 @@ Il Pannello di controllo dello stato può integrarsi con Nagios tramite i fagiol
    >
    >Per maggiori informazioni su come installare Nagios e NRPE sul tuo sistema, consulta la Documentazione [di](https://library.nagios.com/library/products/nagioscore/manuals/)Nagios.
 
-1. Aggiungi una definizione host per il server AEM. Questo può essere fatto tramite l&#39;interfaccia Web di Nagios XI, utilizzando Configuration Manager:
+1. Aggiungete una definizione host per il server AEM. Questo può essere fatto tramite l&#39;interfaccia Web di Nagios XI, utilizzando Configuration Manager:
 
    1. Aprite un browser e puntate al server Nagios.
    1. Premere il pulsante **Configura** nel menu principale.
@@ -373,7 +373,7 @@ Il Pannello di controllo dello stato può integrarsi con Nagios tramite i fagiol
    }
    ```
 
-1. Aggiungi un servizio per la memoria utilizzata sul server AEM:
+1. Aggiungete un servizio per la memoria utilizzata sul server AEM:
 
    ```xml
    define service {
@@ -403,7 +403,7 @@ Tra le sue caratteristiche più importanti:
 * La possibilità di accedere ai cespugli di heap e thread
 * Richieste e analisi delle prestazioni delle query
 
-Per accedere alla schermata Strumenti di diagnostica, andate a **Strumenti - Operazioni - Diagnosi** nella schermata introduttiva di AEM. Potete inoltre accedere alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+Per accedere alla schermata Strumenti di diagnostica, andate a **Strumenti - Operazioni - Diagnosi** dalla schermata di benvenuto AEM. Potete inoltre accedere alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-418](assets/chlimage_1-418.png)
 
@@ -438,7 +438,7 @@ Esempi:
 
 >[!NOTE]
 >
->**Con AEM 6.4**, le attività di manutenzione vengono disconnesse in un formato più informativo a livello di INFO. Ciò consente una migliore visibilità dello stato delle attività di manutenzione.
+>**Con AEM 6.4**, le attività di manutenzione vengono disconnesse in un formato più ricco di informazioni a livello di INFO. Ciò consente una migliore visibilità dello stato delle attività di manutenzione.
 >
 >Se si utilizzano strumenti di terze parti (come Splunk) per monitorare e reagire alle attività di manutenzione, è possibile utilizzare le seguenti istruzioni di registro:
 
@@ -483,7 +483,7 @@ Viene visualizzata la pagina:
 
 Per ogni query, Oak tenta di individuare il modo migliore per eseguire in base agli indici Oak definiti nel repository sotto il nodo **oak:index** . A seconda della query, i diversi indici possono essere scelti da Oak. La comprensione dell’esecuzione di una query da parte di Oak è il primo passo per ottimizzare la query.
 
-La query di spiegazione è uno strumento che spiega in che modo Oak sta eseguendo una query. È possibile accedervi da **Strumenti - Operazioni - Diagnosi** dalla schermata introduttiva di AEM, quindi facendo clic su Prestazioni **** query e passando alla scheda **Spiega query** .
+La query di spiegazione è uno strumento che spiega in che modo Oak sta eseguendo una query. È possibile accedervi da **Strumenti - Operazioni - Diagnosi** dalla schermata di benvenuto AEM, quindi facendo clic su Prestazioni **** query e passando alla scheda **Query** di spiegazione.
 
 **Funzioni**
 
@@ -538,7 +538,7 @@ Questo attiverà il download di un file ZIP contenente informazioni sui thread p
 
 La pagina Attività di manutenzione automatizzata è un luogo in cui è possibile visualizzare e tenere traccia delle attività di manutenzione consigliate pianificate per l&#39;esecuzione periodica. I compiti sono integrati con il sistema di controllo dello stato. Le attività possono essere eseguite manualmente dall&#39;interfaccia.
 
-Per accedere alla pagina Manutenzione del Pannello operazioni, è necessario accedere a **Strumenti - Operazioni - Dashboard - Manutenzione** dalla schermata introduttiva di AEM oppure seguire direttamente questo collegamento:
+Per accedere alla pagina Manutenzione del Pannello operazioni, è necessario accedere a **Strumenti - Operazioni - Dashboard - Manutenzione** dalla schermata di benvenuto AEM oppure seguire direttamente questo collegamento:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -564,11 +564,11 @@ Il tempo predefinito per la finestra di manutenzione giornaliera è compreso tra
 
 >[!NOTE]
 >
->A partire da AEM 6.1, le finestre di manutenzione esistenti possono essere configurate per essere eseguite mensilmente.
+>A partire dal AEM 6.1, le finestre di manutenzione esistenti possono essere configurate per essere eseguite mensilmente.
 
 ### Pulizia revisioni {#revision-clean-up}
 
-Per ulteriori informazioni sull’esecuzione di Revision Clean Up per AEM 6.4, [consultate questo articolo](/help/sites-deploying/revision-cleanup.md)dedicato.
+Per ulteriori informazioni sull&#39;esecuzione di Revision Clean Up per AEM 6.4, [consultate questo articolo](/help/sites-deploying/revision-cleanup.md)dedicato.
 
 ### Pulizia binary di Lucene {#lucene-binaries-cleanup}
 
@@ -577,7 +577,7 @@ Utilizzando l&#39;attività Pulizia binarie Lucene è possibile eliminare i file
 Sebbene l&#39;attività di manutenzione sia stata sviluppata per ridurre i rifiuti di revisione relativi a Lucene, durante l&#39;esecuzione dell&#39;attività si ottengono miglioramenti generali in termini di efficienza:
 
 * L&#39;esecuzione settimanale dell&#39;attività di raccolta rifiuti dell&#39;archivio dati verrà completata più rapidamente
-* Può anche migliorare leggermente le prestazioni complessive di AEM
+* Può anche migliorare leggermente le prestazioni complessive AEM
 
 È possibile accedere all&#39;attività Pulizia binarie Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra Manutenzione giornaliera > Pulizia** binario Lucene.
 
@@ -613,7 +613,7 @@ Per la manutenzione del registro di controllo, consultate la pagina della docume
 
    ![version_purge_task configuration](assets/version_purge_taskconfiguration.png)
 
-**Con AEM 6.4**, puoi interrompere l’attività di manutenzione di Version Purge nel modo seguente:
+**Con AEM 6.4**, potete interrompere l&#39;attività di manutenzione di Version Purge come segue:
 
 * Automaticamente - Se la finestra di manutenzione programmata viene chiusa prima del completamento dell&#39;attività, quest&#39;ultima si interrompe automaticamente. Viene ripresa all’apertura della finestra di manutenzione successiva.
 * Manualmente - Per interrompere manualmente l&#39;attività, nella scheda di manutenzione Rimozione versione fare clic sull&#39;icona **Interrompi** . Nella successiva esecuzione, l&#39;attività riprenderà in modo sicuro.
@@ -697,7 +697,7 @@ Verrà aggiunta una risorsa corrispondente in /apps/granite/operations/config/Ma
 
 ## Panoramica sistema {#system-overview}
 
-Il Pannello **Panoramica del** sistema visualizza una panoramica di alto livello della configurazione, dell’hardware e dello stato dell’istanza di AEM. Questo significa che lo stato di integrità del sistema è trasparente e che tutte le informazioni sono aggregate in un&#39;unica dashboard.
+Il Pannello **Panoramica** del sistema visualizza una panoramica di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza AEM. Questo significa che lo stato di integrità del sistema è trasparente e che tutte le informazioni sono aggregate in un&#39;unica dashboard.
 
 >[!NOTE]
 >
