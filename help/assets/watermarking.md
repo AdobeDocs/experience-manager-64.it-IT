@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Filigrana le risorse {#watermarking}
 
-Risorse  Adobe Experience Manager (AEM) consente di aggiungere una filigrana digitale alle immagini per consentire agli utenti di verificare l’autenticità e la proprietà delle risorse in base al copyright. I AEM Assets supportano il testo da usare come filigrana nei file PNG e JPEG.
+Risorse Adobe Experience Manager (AEM) consente di aggiungere una filigrana digitale alle immagini per consentire agli utenti di verificare l’autenticità e la proprietà delle risorse sotto copyright.  AEM Assets supporta il testo da usare come filigrana nei file PNG e JPEG.
 
 Per applicare una filigrana alle risorse, aggiungi il passaggio [!UICONTROL Filigrana] nel flusso di lavoro Aggiorna risorsa  DAM.
 
@@ -34,6 +34,6 @@ Per applicare una filigrana alle risorse, aggiungi il passaggio [!UICONTROL Fili
    ![Fornire gli argomenti nel passaggio Aggiungi filigrana in Risorse](assets/arguments_add_watermark_aem_assets.png)
 
 1. Con il passaggio Filigrana, salva il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
-1. Dall’interfaccia utente di AEM, caricate una risorsa di esempio. La filigrana viene visualizzata con la dimensione del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
+1. Dall’interfaccia utente AEM, caricate una risorsa di esempio. La filigrana viene visualizzata con la dimensione del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
 
-Per applicare filigrane ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [AEM Document Services](/help/forms/using/overview-aem-document-services.md) .
+Per applicare filigrane ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare [AEM&#39;offerta Document Services](/help/forms/using/overview-aem-document-services.md) .
