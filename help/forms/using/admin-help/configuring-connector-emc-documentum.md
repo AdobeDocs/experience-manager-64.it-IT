@@ -1,8 +1,8 @@
 ---
 title: Configurazione del connettore per EMC Documentum
 seo-title: Configurazione del connettore per EMC Documentum
-description: Informazioni su come configurare il connettore per EMC Documentum per consentire la comunicazione tra i moduli AEM e EMC Documentum.
-seo-description: Informazioni su come configurare il connettore per EMC Documentum per consentire la comunicazione tra i moduli AEM e EMC Documentum.
+description: Informazioni su come configurare il connettore per EMC Documentum per consentire la comunicazione tra AEM moduli e EMC Documentum.
+seo-description: Informazioni su come configurare il connettore per EMC Documentum per consentire la comunicazione tra AEM moduli e EMC Documentum.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -26,7 +26,7 @@ La configurazione del connettore per EMC Documentum comporta la configurazione d
 
 >[!NOTE]
 >
->Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. Nella versione corrente, le risorse sono memorizzate nell&#39;archivio nativo dei moduli AEM e i servizi dei fornitori di repository non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consulta la guida all’aggiornamento moduli AEM per il server delle applicazioni.
+>Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. Nella versione corrente, le risorse sono memorizzate nell&#39;archivio nativo dei moduli AEM e i servizi di Provider dell&#39;archivio sono stati dichiarati obsoleti. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene eseguita quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, vedere la guida all&#39;aggiornamento dei moduli AEM per il server delle applicazioni.
 
 ## Configurazione della connessione del server {#configuring-the-server-connection}
 
@@ -108,7 +108,7 @@ Se il connettore Content Repository per il servizio EMC Documentum e/o il serviz
 
 Sono necessari alcuni passaggi manuali per garantire che la funzionalità Richiesta di condivisione della coda di task in Workspace funzioni correttamente con il connettore per EMC Documentum.
 
-1. Dopo l&#39;implementazione dei moduli AEM e l&#39;installazione di Workbench, accedere a Workbench e aprire la visualizzazione Risorse. Il percorso in cui si trova il file QueueSharing.swf da questa visualizzazione verrà determinato.
+1. Dopo aver distribuito AEM moduli e installato Workbench, accedere a Workbench e aprire la visualizzazione Risorse. Il percorso in cui si trova il file QueueSharing.swf da questa visualizzazione verrà determinato.
 1. Trascinate il file QueueSharing.swf dalla vista Risorse al desktop Windows o in una posizione equivalente, a seconda del sistema operativo in uso.
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per EMC Documentum > Impostazioni di configurazione.
 1. In Informazioni sui provider di servizi di repository, modificare il provider di repository configurato in EMC Documentum Repository Provider.
