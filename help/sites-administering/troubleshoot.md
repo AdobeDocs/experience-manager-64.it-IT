@@ -1,8 +1,8 @@
 ---
 title: Risoluzione dei problemi AEM
 seo-title: Risoluzione dei problemi AEM
-description: Scopri come risolvere i problemi con AEM.
-seo-description: Scopri come risolvere i problemi con AEM.
+description: Scoprite come risolvere i problemi con AEM.
+seo-description: Scoprite come risolvere i problemi con AEM.
 uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
 
 # Risoluzione dei problemi AEM{#troubleshooting-aem}
 
-La sezione seguente illustra alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM e suggerisce come risolvere eventuali problemi.
+La sezione seguente illustra alcuni problemi che potrebbero verificarsi durante l&#39;utilizzo di AEM, insieme a suggerimenti su come risolverli.
 
 >[!NOTE]
 >
->Se state risolvendo problemi di authoring in AEM, consultate Risoluzione dei [problemi per gli autori.](/help/sites-authoring/troubleshooting.md)
+>Per risolvere eventuali problemi di authoring in AEM, consulta Risoluzione dei [problemi per gli autori.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Ruoli</strong></td> 
+   <td><strong>Ruolo/i</strong></td> 
    <td><strong>Problema </strong></td> 
   </tr> 
   <tr> 
@@ -47,7 +50,7 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
   </tr> 
   <tr> 
    <td><p>Amministratore di sistema</p> </td> 
-   <td><p>La schermata introduttiva di AEM non viene visualizzata nel browser dopo aver fatto doppio clic su Avvio rapido di AEM CM</p> </td> 
+   <td><p>La schermata di benvenuto AEM non viene visualizzata nel browser dopo aver fatto doppio clic AEM Avvio rapido di CM</p> </td> 
   </tr> 
   <tr> 
    <td><p>Amministratore di sistema</p> <p>admin, utente</p> </td> 
@@ -72,11 +75,11 @@ Consultate Problemi [](/help/sites-deploying/troubleshooting.md#common-installat
 
 ### Creazione di un dump del thread {#making-a-thread-dump}
 
-Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AEM non risponde correttamente, il dump del thread può aiutarti a identificare i punti critici o altri problemi.
+Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AEM non risponde correttamente, il dump del thread può essere utile per identificare i blocchi di blocco di sicurezza o altri problemi.
 
 ### Utilizzo di Sling Thread Dumer {#using-sling-thread-dumper}
 
-1. Aprite la console **Web di** AEM; ad esempio in `http://localhost:4502/system/console/`.
+1. Aprire la **AEM console** Web; ad esempio in `http://localhost:4502/system/console/`.
 
 1. Selezionare i **thread** nella **scheda Stato** .
 
@@ -84,7 +87,7 @@ Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AE
 
 ### Utilizzo di jstack (riga di comando) {#using-jstack-command-line}
 
-1. Individua il PID (ID processo) dell’istanza AEM Java.
+1. Individuate il PID (ID processo) dell&#39;istanza Java AEM.
 
    Ad esempio, potete utilizzare `ps -ef` o `jps`.
 
@@ -104,7 +107,7 @@ Per ulteriori informazioni, consulta [How to take Thread Dumps from a JVM](https
 
 ### Verifica delle sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
-Quando vengono sviluppate funzionalità per AEM WCM, è possibile aprire le sessioni JCR (paragonabili all&#39;apertura di una connessione al database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
+Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (paragonabili all&#39;apertura di una connessione al database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
 
 * Il sistema diventa più lento.
 * È possibile vedere molti CacheManager: ridimensionaTutte le voci nel file di registro; il numero seguente (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
@@ -116,7 +119,7 @@ Per analizzare le sessioni non chiuse e scoprire quale codice non sta chiudendo 
 
 Lo stato dei bundle OSGi può anche fornire un&#39;indicazione tempestiva dei possibili problemi.
 
-1. Aprite la console **Web di** AEM; ad esempio in `http://localhost:4502/system/console/`.
+1. Aprire la **AEM console** Web; ad esempio in `http://localhost:4502/system/console/`.
 
 1. Selezionate **Bundle** nella scheda **OSGI** .
 
