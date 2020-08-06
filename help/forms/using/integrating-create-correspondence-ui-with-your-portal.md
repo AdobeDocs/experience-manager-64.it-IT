@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +38,7 @@ Se il portale contiene già il nome del modello Lettera, l&#39;URL potrebbe esse
 
 >[!NOTE]
 >
->Le chiamate in questo modo non sono sicure poiché i parametri necessari vengono passati come una richiesta GET, esponendo lo stesso (chiaramente visibile) nell&#39;URL.
+>La chiamata in questo modo non è sicura, in quanto i parametri necessari vengono passati come una richiesta di GET, esponendo lo stesso (chiaramente visibile) nell’URL.
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ Se il portale contiene già il nome del modello Lettera, l&#39;URL potrebbe esse
 
 ## Chiamata in linea basata sui dati {#inline-data-based-invocation}
 
-Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe consistere nel colpire semplicemente l’URL a `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nel precedente approccio.
+Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe consistere nel colpire semplicemente l’URL in corrispondenza `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta di POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
 
 ### Parametri per la specifica della lettera {#parameters-for-specifying-letter}
 
