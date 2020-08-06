@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 translation-type: tm+mt
 source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Condizione è un frammento di documento che è possibile includere in una comuni
 
 Esempi:
 
-* In un estratto conto della carta di credito, visualizzare l&#39;immagine della tariffa annuale e della carta di credito sulla base del tipo di carta di credito del cliente.
+* In un estratto conto della carta di credito, visualizzare l&#39;immagine della tariffa annuale e della carta di credito della carta di credito in base al tipo di carta di credito del cliente.
 * In un promemoria di scadenza premio assicurativo, visualizzare i calcoli delle imposte in base alle imposte dello stato del cliente.
 
 Le risorse nelle condizioni di cui viene eseguito il rendering in base alle regole applicate e ai valori passati alla regola. Le regole nelle condizioni possono controllare i valori nei seguenti tipi di dati:
@@ -37,12 +40,12 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 
 ## Create condition {#createcondition}
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Condizione]**.
 1. Specificate le seguenti informazioni:
 
    * **[!UICONTROL Titolo]**: (Facoltativo) Immettere il titolo per la condizione. I titoli non devono essere univoci e possono contenere caratteri speciali e caratteri non inglesi. Le condizioni sono indicate dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà.
-   * **[!UICONTROL Nome]**: Nome univoco della condizione, all’interno di una cartella. In uno stato non possono esistere due frammenti di documento (testo, condizione o elenco) con lo stesso nome all’interno di una cartella. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **[!UICONTROL Nome]**: Nome univoco della condizione, all’interno di una cartella. In uno stato non possono esistere due frammenti di documento (testo, condizione o elenco) con lo stesso nome all’interno di una cartella. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
    * **[!UICONTROL Descrizione]**: Digitare una descrizione del frammento di documento.
    * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare la condizione in base a un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo Modello dati **[!UICONTROL modulo*]** . Individuare e selezionare un modello dati del modulo. Durante la creazione di una condizione per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere Integrazione [](/help/forms/using/data-integration.md)dei dati.
    * **[!UICONTROL Tag]**: Se necessario, per creare un tag personalizzato immettete un valore nel campo di testo e toccate Invio. Quando salvate questa condizione, vengono creati i nuovi tag aggiunti.
@@ -108,7 +111,7 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 
 È possibile modificare una condizione seguendo la procedura seguente. È inoltre possibile scegliere di modificare una condizione da una comunicazione interattiva selezionando Modifica frammento nel menu a comparsa.
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Passate alla condizione e selezionatela.
 1. Toccate **[!UICONTROL Modifica]**.
 1. Apportate le modifiche necessarie alla condizione. Per ulteriori dettagli sulle informazioni che puoi modificare in una condizione, consulta [Creare una condizione](#createcondition).
@@ -133,6 +136,7 @@ Utilizzando l’editor di regole in una condizione, potete creare regole per vis
 
    * Proprietà del modello dati del modulo associato
    * Qualsiasi [variabile](#variables) creata.
+
    ![createruledialog](assets/createruledialog.png)
 
    Selezionare l&#39;opzione appropriata da valutare.
@@ -148,7 +152,7 @@ Utilizzando l’editor di regole in una condizione, potete creare regole per vis
 
    Regola per visualizzare una risorsa quando il tipo di criterio è standard
 
-   * Quando create o modificate una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a finestra intera consente di creare [variabili](#variables) per creare regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a finestra intera consente di creare [variabili](#variables) per creare regole. Toccate di nuovo Ridimensiona per tornare alla finestra di dialogo Crea regola.
    * È inoltre possibile creare più condizioni in una regola.
 
 1. Toccate **[!UICONTROL Chiudi]**.
@@ -170,7 +174,7 @@ Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola
 
    Viene visualizzata la finestra di dialogo Espansa e completa.
 
-   ![expandeditruledialog](assets/expandededitruledialog.png)
+   ![expandeditrulefinestra di dialogo](assets/expandededitruledialog.png)
 
 1. Nel riquadro a sinistra, toccate **[!UICONTROL Variabili]**.
 
