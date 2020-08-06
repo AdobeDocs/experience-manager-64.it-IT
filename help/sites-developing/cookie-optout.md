@@ -29,7 +29,7 @@ Utilizzate questa funzione per assicurarvi che le pagine siano conformi al conse
 
 ## Configurazione dei cookie consentiti {#configuring-allowed-cookies}
 
-Configurate il servizio di rinuncia di Adobe Granite per specificare in che modo i cookie vengono utilizzati nelle pagine Web. La tabella seguente descrive le proprietà che puoi configurare.
+Configurate il  Adobe Granite Opt-Out Service per specificare in che modo i cookie vengono utilizzati nelle pagine Web. La tabella seguente descrive le proprietà che puoi configurare.
 
 Per configurare il servizio, potete utilizzare la console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web o [aggiungere una configurazione OSGi alla directory archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il servizio PID è `com.adobe.granite.optout`.
 
@@ -41,7 +41,7 @@ Per configurare il servizio, potete utilizzare la console [](/help/sites-deployi
 
 ## Convalida dell&#39;utilizzo del cookie {#validating-cookie-usage}
 
-Utilizzate JavaScript lato client per chiamare il servizio di rinuncia Adobe Granite per verificare la possibilità di utilizzare un cookie. Utilizzare l&#39;oggetto javascript Granite.OptOutUtil per eseguire una delle seguenti operazioni:
+Utilizzate JavaScript lato client per chiamare  Adobe Granite Opt-Out Service per verificare che sia possibile utilizzare un cookie. Utilizzare l&#39;oggetto javascript Granite.OptOutUtil per eseguire una delle seguenti operazioni:
 
 * Ottenete un elenco di nomi di cookie che indicano che l&#39;utente non accetta di utilizzare i cookie a scopo di tracciamento.
 * Ottenere un elenco di cookie che possono essere utilizzati.
