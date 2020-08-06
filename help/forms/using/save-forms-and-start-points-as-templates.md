@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ Per creare un modello, effettuate le seguenti operazioni:
 1. Toccate l’icona **Salva come modello** ![save_as_](assets/save_as_template.png)templateicon. Viene visualizzata una finestra di dialogo per specificare il nome del modello.
 1. Specificate il nome del modello e toccate **Salva**. Il modello viene visualizzato nella cartella del modello.
 
-   Se esiste già un modello con lo stesso nome, viene visualizzata una finestra di dialogo per confermare la sovrascrittura del modello esistente. Per sostituire il modello esistente con un nuovo modello, toccate **Continua** o per salvarlo con un altro nome, toccate **Annulla**.
+   Se esiste già un modello con lo stesso nome, viene visualizzata una finestra di dialogo per confermare la sovrascrittura del modello esistente. Per sostituire il modello esistente con un nuovo modello, toccate **Continua** o per salvare il modello con un altro nome, toccate **Annulla**.
 
-Ora potete aprire il modello salvato. Ogni volta che si apre un modello, viene creato un nuovo modulo o un&#39;attività e nel modulo vengono visualizzati i dati e le opzioni salvate. Con i modelli, è possibile modificare i dati precompilati, aggiungere un allegato, salvare come bozza, inviare l&#39;attività o creare un altro modello utilizzando il modello. I modelli sono specifici dei dispositivi mobili e non sono sincronizzati con il server Adobe Experience Manager Forms.
+Ora potete aprire il modello salvato. Ogni volta che si apre un modello, viene creato un nuovo modulo o un&#39;attività e nel modulo vengono visualizzati i dati e le opzioni salvate. Con i modelli, è possibile modificare i dati precompilati, aggiungere un allegato, salvare come bozza, inviare l&#39;attività o creare un altro modello utilizzando il modello. I modelli sono specifici per i dispositivi mobili e non sono sincronizzati con  server Adobe Experience Manager Forms.
 
 Potete anche eliminare un modello se non è più richiesto. Per eliminare un modello, passate alla cartella dei modelli, toccate i puntini di sospensione e quindi toccate **Elimina modello**.
 
