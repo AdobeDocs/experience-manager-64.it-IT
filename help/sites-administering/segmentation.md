@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ AEM consente di personalizzare facilmente l&#39;esperienza degli utenti. Consent
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La console [Audiences](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o Client Context, nonché i tipi di pubblico per l&#39;account Adobe Target. Questa documentazione descrive la gestione dei segmenti per ContextHub. Per i segmenti Contesto [cliente](/help/sites-administering/campaign-segmentation.md) e i segmenti Adobe Target, consulta la documentazione pertinente.
+La console [Audiences](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o Client Context e le audience per l&#39;account Adobe Target . Questa documentazione descrive la gestione dei segmenti per ContextHub. Per i segmenti [](/help/sites-administering/campaign-segmentation.md) ClientContext e  segmenti Adobe Target, consulta la documentazione pertinente.
 
 Per accedere ai tuoi segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Audience**.
 
@@ -125,7 +128,7 @@ I seguenti riferimenti sono disponibili out-of-the-box per il collegamento diret
  </tbody> 
 </table>
 
-## Creazione di un nuovo segmento {#creating-a-new-segment}
+## Creating a New Segment {#creating-a-new-segment}
 
 Per definire il nuovo segmento:
 
@@ -154,7 +157,7 @@ Per definire il nuovo segmento:
 
 ### Utilizzo di AND e OR Containers {#using-and-and-or-containers}
 
-I componenti AND e OR contenitore consentono di creare segmenti complessi in AEM. A tal fine, è importante essere consapevoli di alcuni punti fondamentali:
+I componenti AND e OR del contenitore consentono di creare segmenti complessi in AEM. A tal fine, è importante essere consapevoli di alcuni punti fondamentali:
 
 * Il livello principale della definizione è sempre il contenitore AND creato inizialmente. Questo non può essere modificato, ma non ha un effetto sul resto della definizione del segmento.
 * Verificare che la nidificazione del contenitore abbia senso. I contenitori possono essere visualizzati come parentesi dell&#39;espressione booleana.
@@ -246,9 +249,9 @@ Oppure, se non è stato risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **attività** ed **esperienze** correlate.
 
-Se avete impostato un&#39;attività e un&#39;esperienza utilizzando l&#39;esempio di segmento del gruppo di fascia alta riportato sopra, potete facilmente verificare il segmento con l&#39;attività. Per informazioni dettagliate sulla configurazione di un&#39;attività, consultate la [documentazione correlata sulla creazione di contenuto](/help/sites-authoring/content-targeting-touch.md)mirato.
+Se avete impostato un&#39;attività e un&#39;esperienza utilizzando l&#39;esempio di segmento del gruppo di fascia alta riportato sopra, potete facilmente testare il segmento con l&#39;attività. Per informazioni dettagliate sulla configurazione di un&#39;attività, consultate la [documentazione correlata sulla creazione di contenuto](/help/sites-authoring/content-targeting-touch.md)mirato.
 
-1. In modalità di modifica di una pagina in cui sono stati impostati contenuti mirati, potete vedere che il contenuto è indirizzato tramite l’icona freccia sul contenuto.
+1. In modalità di modifica di una pagina in cui sono stati impostati contenuti mirati, potete vedere che il contenuto è indirizzato tramite l&#39;icona a forma di freccia sul contenuto.
 
    ![chlimage_1-313](assets/chlimage_1-313.png)
 
