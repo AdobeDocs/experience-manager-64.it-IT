@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +60,7 @@ Questa configurazione è ideale per ambienti *non di produzione* , ad esempio pe
    * Il percorso della directory dati definita sarà denominato &lt;percorso-mongo>
 
 
-* MongoDB può essere eseguito sullo stesso host di AEM o in remoto
+* MongoDB può essere eseguito sullo stesso host AEM o eseguito in remoto
 
 ### Avvia MongoDB {#start-mongodb}
 
@@ -69,7 +72,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
 >[!NOTE]
 >
->Se MongoDB viene avviato *dopo* AEM, **riavviate** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
+>Se MongoDB viene avviato *dopo* AEM, **riavviare** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
 
 ### Opzione Produzione Demo: Imposta set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -79,7 +82,7 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
 * bin/mongo
 
    * cfg = {&quot;_id&quot;: &quot;rs0&quot;,&quot;version&quot;: 1,&quot;membri&quot;: [{&quot;_id&quot;: 0,&quot;host&quot;: &quot;127.0.0.1:27017&quot;}]}
-   * rs.start(cfg)
+   * rs.initiate(cfg)
 
 * bin/mondio —porta 27018 —dbpath data1 —replSet rs0&amp;
 * bin/mondio —porta 27019 —dbpath data2 —replSet rs0&amp;
@@ -105,7 +108,7 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
    * Nessun servizio necessario
    * La cartella Solr installata sarà denominata &lt;solr-install>
 
-### Configurare Solr per AEM Communities {#configure-solr-for-aem-communities}
+### Configurare Solr per  AEM Communities {#configure-solr-for-aem-communities}
 
 Per configurare una raccolta Solr per MSRP per la demo, sono necessarie due decisioni (per i dettagli, selezionare i collegamenti alla documentazione principale):
 
@@ -121,7 +124,7 @@ Per semplicità, utilizzando la versione 4.10 come esempio, avviate Solr in moda
 * da CD a &lt;solrinstall>/example
 * java -jar start.jar
 
-Verrà avviato un server Solr HTTP utilizzando la porta predefinita 8983. Per ottenere una console Solr per il test, potete accedere alla console Solr.
+Verrà avviato un server Solr HTTP utilizzando la porta predefinita 8983. Per ottenere una console Solr da testare, è possibile accedere alla console Solr.
 
 * console Solr predefinita: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
@@ -138,11 +141,11 @@ Per eseguire una configurazione solrCloud di base (non di produzione), inizia da
 
 ## Identificare MongoDB come archivio comune {#identify-mongodb-as-common-store}
 
-Avviate le istanze di AEM, se necessario.
+Avviate le istanze di creazione e pubblicazione AEM, se necessario.
 
-Se AEM era in esecuzione prima dell&#39;avvio di MongoDB, le istanze di AEM dovranno essere riavviate.
+Se AEM in esecuzione prima dell&#39;avvio di MongoDB, è necessario riavviare le istanze AEM.
 
-Seguite le istruzioni riportate nella pagina principale della documentazione: MSRP [- Store comune MongoDB](msrp.md)
+Seguite le istruzioni riportate nella pagina principale della documentazione: [MSRP - Store comune MongoDB](msrp.md)
 
 ## Prova {#test}
 
@@ -170,6 +173,7 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
    * Utente `core selector` da selezionare `collection1`
    * Seleziona `Query`
    * Seleziona `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
@@ -180,8 +184,9 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
 1. Verificate che MSRP sia stato configurato come provider predefinito:
 
-   * Per creare e pubblicare tutte le istanze di AEM, rivisitate la console Configurazione [archiviazione](srp-config.md)
-   oppure controllate l&#39;archivio AEM:
+   * Per tutte le istanze di creazione e pubblicazione AEM, rivisitate la console Configurazione [archiviazione](srp-config.md)
+
+   oppure controllare l&#39;archivio AEM:
 
    * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -189,4 +194,4 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
       * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito
 
 
-1. Accertatevi che AEM sia stato riavviato dopo la selezione di MSRP.
+1. Verificare che AEM sia stato riavviato dopo aver selezionato MSRP.
