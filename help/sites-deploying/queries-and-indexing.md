@@ -1,8 +1,8 @@
 ---
 title: Query e indicizzazione Oak
 seo-title: Query e indicizzazione Oak
-description: Scoprite come configurare gli indici in AEM.
-seo-description: Scoprite come configurare gli indici in AEM.
+description: Scopri come configurare gli indici in AEM.
+seo-description: Scopri come configurare gli indici in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Questo articolo riguarda la configurazione degli indici in AEM 6. Per le best practice sull&#39;ottimizzazione delle prestazioni delle query e dell&#39;indicizzazione, consultate [Best practice for Query and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md)(Tecniche consigliate per query e indicizzazione).
+>Questo articolo riguarda la configurazione degli indici nel AEM 6. Per le best practice sull&#39;ottimizzazione delle prestazioni delle query e dell&#39;indicizzazione, consultate [Best practice for Query and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md)(Tecniche consigliate per query e indicizzazione).
 
 ## Introduzione {#introduction}
 
@@ -109,7 +109,7 @@ L&#39;indice ordinato è un&#39;estensione dell&#39;indice Property. Tuttavia, �
 
 ### Indice Lucene Full Text {#the-lucene-full-text-index}
 
-In AEM 6 è disponibile un indicizzatore full text basato su Apache Lucene.
+Un indicizzatore full text basato su Apache Lucene è disponibile in AEM 6.
 
 Se è configurato un indice full-text, tutte le query con una condizione full-text utilizzano l&#39;indice full-text, indipendentemente dal fatto che siano presenti altre condizioni indicizzate e indipendentemente dall&#39;eventuale limitazione del percorso.
 
@@ -270,7 +270,7 @@ Considerate questa struttura di nodi come esempio:
 
 
 
-Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi factory. Pertanto:
+Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi di fabbrica. Pertanto:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` diventa `standard`
 
@@ -286,9 +286,9 @@ Per casi come il caricamento di parole di arresto in cui è necessario caricare 
 
 Lo scopo dell&#39;indice Solr è principalmente la ricerca full-text, ma può anche essere utilizzato per indicizzare la ricerca per percorso, limitazioni delle proprietà e restrizioni del tipo primario. Ciò significa che l&#39;indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
 
-L’integrazione in AEM avviene a livello di repository, pertanto Solr è uno dei possibili indici utilizzabili in Oak, la nuova implementazione dell’archivio fornita con AEM.
+L&#39;integrazione in AEM avviene a livello di repository, in modo che Solr è uno dei possibili indici che possono essere utilizzati in Oak, la nuova implementazione del repository fornito con AEM.
 
-Può essere configurato per funzionare come server incorporato con l’istanza AEM o come server remoto.
+Può essere configurato per funzionare come server incorporato con l&#39;istanza AEM o come server remoto.
 
 ### Configurazione di AEM con un server Solr incorporato {#configuring-aem-with-an-embedded-solr-server}
 
@@ -296,7 +296,7 @@ Può essere configurato per funzionare come server incorporato con l’istanza A
 >
 >Non utilizzate un server Solr incorporato in un ambiente di produzione. Deve essere utilizzato solo in un ambiente di sviluppo.
 
-AEM può essere utilizzato con un server Solr incorporato che può essere configurato tramite la console Web. In questo caso, il server Solr verrà eseguito nella stessa JVM dell’istanza AEM a cui è incorporato.
+AEM può essere utilizzato con un server Solr incorporato che può essere configurato tramite la console Web. In questo caso, il server Solr verrà eseguito nella stessa JVM dell&#39;istanza AEM a cui è incorporato.
 
 È possibile configurare il server Solr incorporato tramite:
 
@@ -308,7 +308,7 @@ AEM può essere utilizzato con un server Solr incorporato che può essere config
 
    >[!NOTE]
    >
-   >La configurazione della directory principale Solr (solr.home.path) cercherà una cartella con lo stesso nome nella cartella di installazione di AEM.
+   >La configurazione della directory principale Solr (solr.home.path) cercherà una cartella con lo stesso nome nella cartella di installazione AEM.
 
 1. Apri CRXDE e accedi come amministratore.
 1. Aggiungete un nodo denominato **solrlndex** di tipo **oak:QueryIndexDefinition** in **oak:index** con le seguenti proprietà:
@@ -319,9 +319,9 @@ AEM può essere utilizzato con un server Solr incorporato che può essere config
 
 1. Salva le modifiche.
 
-### Configurazione di AEM con un singolo server Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
+### Configurazione di AEM con un unico server Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM può anche essere configurato per l’utilizzo con un’istanza del server Solr remoto:
+AEM anche essere configurato per l&#39;utilizzo con un&#39;istanza del server Solr remoto:
 
 1. Scarica ed estrai la versione più recente di Solr. Per ulteriori informazioni su come eseguire questa operazione, consulta la documentazione [di installazione](https://cwiki.apache.org/confluence/display/solr/Installing+Solr)Apache Solr.
 1. Ora, create due truffe Solr. A tale scopo, potete creare delle cartelle per ogni condivisione nella cartella in cui è stato eseguito il upacked del file Solr:
@@ -366,7 +366,7 @@ AEM può anche essere configurato per l’utilizzo con un’istanza del server S
    ```
 
 1. Dopo l&#39;avvio di entrambe le condivisioni, verificare che tutto sia pronto e funzionante collegandosi all&#39;interfaccia Solr in `http://localhost:8983/solr/#/`
-1. Avviate AEM e passate alla console Web all’indirizzo `http://localhost:4502/system/console/configMgr`
+1. Avvia AEM e passa alla console Web all&#39;indirizzo `http://localhost:4502/system/console/configMgr`
 1. Impostate la seguente configurazione in Configurazione **del server remoto** Oak Solr:
 
    * URL HTTP solr: `http://localhost:8983/solr/`
@@ -394,12 +394,12 @@ File di configurazione Solr consigliati
 
 ### Strumenti di indicizzazione AEM {#aem-indexing-tools}
 
-AEM 6.1 integra inoltre due strumenti di indicizzazione presenti in AEM 6.0 come parte del set di strumenti Adobe Consulting Services Commons:
+AEM 6.1 integra inoltre due strumenti di indicizzazione presenti in AEM 6.0 come parte del set di strumenti  Adobe Consulting Services Commons:
 
 1. **Spiega query**, uno strumento progettato per aiutare gli amministratori a capire come vengono eseguite le query;
 1. **Oak Index Manager**, un&#39;interfaccia utente Web per mantenere gli indici esistenti.
 
-È ora possibile raggiungerli tramite **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata introduttiva di AEM.
+È ora possibile raggiungerli andando a **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata di benvenuto AEM.
 
 Per ulteriori informazioni su come utilizzarle, consulta la documentazione [di](/help/sites-administering/operations-dashboard.md)Operations Dashboard.
 
@@ -431,7 +431,7 @@ Per abilitare la registrazione, è necessario abilitare i registri di livello **
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-La categoria **com.day.cq.search** è applicabile solo se utilizzate l&#39;utility QueryBuilder fornita da AEM.
+La categoria **com.day.cq.search** è applicabile solo se si utilizza l&#39;utility QueryBuilder AEM fornita.
 
 >[!NOTE]
 >
