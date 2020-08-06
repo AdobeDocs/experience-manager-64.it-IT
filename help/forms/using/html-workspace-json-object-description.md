@@ -1,8 +1,8 @@
 ---
-title: Descrizione dell'oggetto JSON dell'area di lavoro AEM Forms
-seo-title: Descrizione dell'oggetto JSON dell'area di lavoro AEM Forms
-description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
-seo-description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
+title: Descrizione oggetto JSON dell'area di lavoro di AEM Forms
+seo-title: Descrizione oggetto JSON dell'area di lavoro di AEM Forms
+description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle  AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
+seo-description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle  AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 9%
 
 ---
 
 
-# Descrizione dell&#39;oggetto JSON dell&#39;area di lavoro AEM Forms {#aem-forms-workspace-json-object-description}
+# Descrizione oggetto JSON dell&#39;area di lavoro di AEM Forms {#aem-forms-workspace-json-object-description}
 
-Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti di seguito.
+Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di seguito.
 
 1. Categoria
 
@@ -30,7 +33,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
    <td><strong>Commenti</strong></td> 
   </tr>
   <tr>
-   <td>nome</td> 
+   <td>name</td> 
    <td>F</td> 
    <td>Nome categoria</td> 
   </tr>
@@ -74,7 +77,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
    |---|---|---|
    | categoryId | F | Contiene l&#39;ID della categoria a cui il punto di avvio appartiene. |
    | descrizione | F | Contiene la descrizione di un punto iniziale. |
-   | nome | F | Contiene il nome del punto di partenza. |
+   | name | F | Contiene il nome del punto di partenza. |
    | serializedImageTicket | F | Contiene un biglietto immagine corrispondente al punto di partenza. Questo ticket immagine viene utilizzato nel campo imageUrl di startpoint, per ottenere l&#39;immagine per startpoint dal server. |
    | serviceName | F | Contiene il nome del servizio per startpoint. |
    | startpointId | F | Contiene id of startpoint. |
@@ -399,7 +402,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
    <td>True se la coda è la coda predefinita dell'utente connesso, altrimenti false.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>nome<br type="_moz" /> </td> 
+   <td>name<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Nome del proprietario della coda.<br type="_moz" /> </td> 
   </tr>
@@ -753,12 +756,12 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>formattedDescription<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Descrizione allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nella descrizione dell'allegato nell'area di lavoro di AEM Forms.<br type="_moz" /> </td> 
+   <td>Descrizione allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nella descrizione dell'allegato nell'area di lavoro  AEM Forms.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro Moduli AEM. Questo è solo per le note.<br type="_moz" /> </td> 
+   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro  AEM Forms. Questo è solo per le note.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
