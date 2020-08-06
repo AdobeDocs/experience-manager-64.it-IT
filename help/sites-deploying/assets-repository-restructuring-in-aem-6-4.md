@@ -1,6 +1,6 @@
 ---
-title: Ristrutturazione dell'archivio risorse in AEM 6.4
-seo-title: Ristrutturazione dell'archivio risorse in AEM 6.4
+title: Ristrutturazione del repository delle risorse in AEM 6.4
+seo-title: Ristrutturazione del repository delle risorse in AEM 6.4
 description: Scopri come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Assets.
 seo-description: Scopri come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Assets.
 uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 2%
 
 ---
 
 
-# Ristrutturazione dell&#39;archivio risorse in AEM 6.4{#assets-repository-restructuring-in-aem}
+# Ristrutturazione del repository delle risorse in AEM 6.4{#assets-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Assets. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 **Con aggiornamento 6.4**
 
@@ -30,7 +33,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
 * [Esempi di licenze DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
 
 * [Modello di notifica e-mail condivisione collegamenti](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [Script del flusso di lavoro InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
+* [script di flusso di lavoro InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
 * [Configurazioni di transcodifica video](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
 * [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
 
@@ -50,7 +53,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
   </tr> 
   <tr> 
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Se un codice personalizzato dipende da questa posizione (ad esempio il codice si basa esplicitamente su questo percorso), quindi il codice deve essere aggiornato per utilizzare la nuova posizione prima dell'aggiornamento; Idealmente le API Java vengono utilizzate quando disponibili per ridurre le dipendenze da un percorso specifico nel JCR.</p> <p>Percorso temporaneo per il blocco del file zip per il download del client. Non è necessario effettuare l’aggiornamento da quando il client richiede di scaricare la risorsa. Il file verrà generato nella nuova posizione.</p> </td> 
+   <td><p>Se un codice personalizzato dipende da questa posizione (ad esempio il codice si basa esplicitamente su questo percorso), quindi il codice deve essere aggiornato per utilizzare la nuova posizione prima dell'aggiornamento; Idealmente le API Java vengono utilizzate quando disponibili per ridurre le dipendenze da un percorso specifico nel JCR.</p> <p>Percorso temporaneo per il blocco del file zip per il download del client. Non è necessario effettuare l’aggiornamento dal momento in cui il client richiede di scaricare la risorsa. Il file verrà generato nella nuova posizione.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Note</strong></td> 
@@ -81,9 +84,9 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
       <ol> 
        <li>Poiché la destinazione si trova<strong> <code>/apps</code></strong> in questa modifica, è necessario che sia mantenuta in SCM.</li> 
       </ol> </li> 
-     <li>Rimuovete la cartella: dopo <strong><code>/etc/dam/notification/email/default</code></strong> lo spostamento dei modelli di posta elettronica all’interno.<br /> 
+     <li>Rimuovete la cartella: <strong><code>/etc/dam/notification/email/default</code></strong> dopo lo spostamento dei modelli e-mail al loro interno.<br /> 
       <ol> 
-       <li>Se non sono stati apportati aggiornamenti al modello e-mail in<strong> , è possibile rimuovere la cartella perché il modello e-mail originale esiste in <code>/etc/notification/email/default</code></strong><strong><code>/libs/settings/notification/email/default</code></strong> come parte dell’installazione di AEM 6.4.</li> 
+       <li>Se non sono stati apportati aggiornamenti al modello di posta elettronica in<strong> , è possibile rimuovere la cartella perché il modello di posta elettronica originale esiste in <code>/etc/notification/email/default</code></strong><strong><code>/libs/settings/notification/email/default</code></strong> come parte dell’installazione AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -113,9 +116,9 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
      <li>Copiare le progettazioni dalla posizione precedente alla posizione nuova in <code>/apps</code>.</li> 
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li> 
      <li>Aggiorna i riferimenti alla posizione precedente nella <code>cq:designPath</code> proprietà tramite <strong>AEM &gt; Amministratore DAM &gt; Pagina condivisione risorse &gt; Proprietà pagina &gt; scheda Avanzate &gt; Campo</strong>di progettazione.</li> 
-     <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client. È necessario aggiornare il codice di implementazione della pagina.</li> 
+     <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client. Ciò richiede l’aggiornamento del codice di implementazione della pagina.</li> 
      <li>Aggiornate le regole del dispatcher per consentire la trasmissione delle librerie client tramite il servlet <code>/etc.clientlibs/</code> proxy.</li> 
-    </ol> <p>Per qualsiasi progettazione non gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione, non spostare i progetti modificabili da <code>/etc</code>.</p> </td> 
+    </ol> <p>Per qualsiasi progettazione non gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione, non spostare le progettazioni modificabili da <code>/etc</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Note</strong></td> 
@@ -144,9 +147,9 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
       <ol> 
        <li>Poiché la destinazione si trova<strong> <code>/apps</code></strong> in questa modifica, è necessario che sia mantenuta in SCM.</li> 
       </ol> </li> 
-     <li>Rimuovete la cartella: dopo <code>/etc/dam/workflow/notification/email/downloadasset </code>lo spostamento dei modelli di posta elettronica all’interno.<br /> 
+     <li>Rimuovete la cartella: <code>/etc/dam/workflow/notification/email/downloadasset </code>dopo lo spostamento dei modelli e-mail al loro interno.<br /> 
       <ol> 
-       <li>Se non sono stati apportati aggiornamenti al modello e-mail in<strong> , è possibile rimuovere la cartella perché il modello e-mail originale esiste in <code>/etc</code></strong><strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> come parte dell’installazione di AEM 6.4.</li> 
+       <li>Se non sono stati apportati aggiornamenti al modello di posta elettronica in<strong> , è possibile rimuovere la cartella perché il modello di posta elettronica originale esiste in <code>/etc</code></strong><strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> come parte dell’installazione AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -179,15 +182,15 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
   </tr> 
   <tr> 
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Se il modello e-mail è stato modificato dal cliente, per allineare con la nuova struttura del repository:</p> 
+   <td><p>Se il modello e-mail è stato modificato dal cliente, per allinearlo con la nuova struttura del repository:</p> 
     <ol> 
      <li>Il modello e-mail aggiornato deve essere copiato da <strong><code>/etc/dam/adhocassetshare</code></strong> a <strong><code>/apps/settings/dam/adhocassetshare</code></strong> 
       <ol> 
        <li>Poiché la destinazione si trova<strong> <code>/apps</code></strong> in questa modifica, è necessario che sia mantenuta in SCM.</li> 
       </ol> </li> 
-     <li>Rimuovete la cartella: dopo <strong><code>/etc/dam/adhocassetshare</code></strong> lo spostamento dei modelli di posta elettronica all’interno.<br /> 
+     <li>Rimuovete la cartella: <strong><code>/etc/dam/adhocassetshare</code></strong> dopo lo spostamento dei modelli e-mail al loro interno.<br /> 
       <ol> 
-       <li>Se non sono stati apportati aggiornamenti al modello e-mail in<strong> , è possibile rimuovere la cartella perché il modello e-mail originale esiste in <code>/etc</code></strong><strong><code>/libs/settings/dam/adhocassetshare</code></strong> come parte dell’installazione di AEM 6.4.</li> 
+       <li>Se non sono stati apportati aggiornamenti al modello di posta elettronica in<strong> , è possibile rimuovere la cartella perché il modello di posta elettronica originale esiste in <code>/etc</code></strong><strong><code>/libs/settings/dam/adhocassetshare</code></strong> come parte dell’installazione AEM 6.4.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -198,7 +201,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
  </tbody> 
 </table>
 
-### Script del flusso di lavoro InDesign {#indesign-workflow-scripts}
+###  script di flusso di lavoro InDesign {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -216,9 +219,9 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
     <ol> 
      <li>Copiare tutti gli script personalizzati o modificati da <strong><code>/etc/dam/indesign/scripts</code></strong> a <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
       <ol> 
-       <li>In AEM 6.4 sarà possibile copiare solo script nuovi o modificati come script non modificati forniti da AEM <strong><code>/libs/settings</code></strong></li> 
+       <li>È possibile copiare solo script nuovi o modificati come script non modificati forniti da AEM tramite <strong><code>/libs/settings</code></strong> in AEM 6.4</li> 
       </ol> </li> 
-     <li>Individua tutti i modelli di flussi di lavoro che utilizzano il passaggio WF del processo di estrazione file multimediali e 
+     <li>Individua tutti i modelli di workflow che utilizzano il passaggio WF del processo di estrazione file multimediali e 
       <ol> 
        <li>Per ogni istanza del Passaggio flusso di lavoro, aggiorna i percorsi nella configurazione in modo che puntino esplicitamente agli script appropriati sotto<strong> o <code>/apps/settings/dam/indesign/scripts</code></strong> <strong><code>/libs/settings/dam/indesign/scripts</code></strong> , a seconda delle necessità.</li> 
       </ol> </li> 
@@ -246,7 +249,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
   </tr> 
   <tr> 
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Le personalizzazioni a livello di progetto devono essere tagliate e incollate in percorsi <code>/apps</code> <code>/conf</code> o percorsi equivalenti, a seconda dei casi.</p> <p>Per allineare la struttura del repository di AEM 6.4:</p> 
+   <td><p>Le personalizzazioni a livello di progetto devono essere tagliate e incollate in percorsi <code>/apps</code> <code>/conf</code> o percorsi equivalenti, a seconda dei casi.</p> <p>Per allineare con la struttura del repository di AEM 6.4:</p> 
     <ol> 
      <li>Copiare le configurazioni video modificate da <code>/etc/dam/video</code> a <code>/apps/settings/dam/video</code></li> 
      <li>Rimuovi <code>/etc/dam/video</code></li> 
