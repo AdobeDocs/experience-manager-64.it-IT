@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Per abilitare la filigrana nell&#39;anteprima PDF, selezionare l&#39;opzione **[
 
 ![filigrana predefinita](assets/default-watermark.png)
 
-Per personalizzare il testo e l’aspetto della filigrana è possibile effettuare le seguenti operazioni:
+Per personalizzare il testo e l’aspetto della filigrana è possibile utilizzare i seguenti passaggi:
 
 ## Personalizzare la filigrana nell’anteprima PDF nell’interfaccia utente Crea corrispondenza {#customizewatermark-}
 
@@ -39,11 +42,11 @@ Per personalizzare il testo e l’aspetto della filigrana è possibile effettuar
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/configFiles/previewwatermark
+      **Percorso:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
