@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -56,7 +59,7 @@ Innanzitutto, verifica che la connessione tra le istanze di creazione e pubblica
 
 1. Inizia da siteadmin.
 1. Scorri attraverso la struttura a albero per arrivare al punto in cui puoi creare il modulo nel tuo sito web.
-1. **Selezionare** Nuovo **>** Nuova pagina... .
+1. Select **New** > **New page...**.
 1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
 
    >[!NOTE]
@@ -80,7 +83,7 @@ I moduli dedicati ad Adobe Campaign hanno componenti specifici. Questi component
 Questa sezione contiene solo dettagli sui collegamenti specifici a Adobe Campaign. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Spostati sul modulo che desideri modificare.
-1. **Nella casella degli strumenti, selezionare** Pagina **> Proprietà** pagina. quindi andate alla scheda Servizi **** cloud della finestra a comparsa.
+1. In the toolbox, select **Page** > **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
 1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. Questa configurazione viene mantenuta quando viene impostata la connessione tra le tue istanze. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -94,6 +97,7 @@ Questa sezione contiene solo dettagli sui collegamenti specifici a Adobe Campaig
    * **Adobe Campaign: Salva profilo**: consente di creare o aggiornare un destinatario in Adobe Campaign (valore predefinito).
    * **Adobe Campaign: iscrizione a servizi**: consente di gestire le iscrizioni dei destinatari in Adobe Campaign.
    * **Adobe Campaign: Annulla iscrizione a servizi**: consente di annullare le iscrizioni dei destinatari in Adobe Campaign.
+
    The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
 
 1. Aggiungi i componenti selezionati trascinandoli dalla casella strumenti e rilasciandoli nel modulo. Per ulteriori informazioni sui componenti specifici per Adobe Campaign disponibili, consulta [Componenti Adobe Form](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
@@ -116,7 +120,7 @@ Dopo aver creato un modulo e modificato il suo contenuto, potresti voler verific
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. In Components (Componenti), in modo che solo i social media siano visibili.
+>You must have an **Encryted Primary Key** component on each form. In Componenti  Adobe Campaign, in modo che solo tali componenti siano visibili.
 >
 >Anche se in questa procedura si inserisce il numero EPK manualmente, in pratica gli utenti otterrebbero un collegamento a questa pagina (che sia per annullare l’iscrizione, iscriversi o aggiornare il profilo) all&#39;interno di una newsletter. In base all&#39;utente, l’EPK si aggiorna automaticamente.
 >
