@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -18,19 +21,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 L&#39;operazione di download, come suggerisce il nome, consente di esportare i moduli dall&#39;archivio nel sistema locale. In combinazione con l&#39;operazione di caricamento, questa operazione consente di migrare i moduli da un archivio all&#39;altro.
 
-In AEM Forms, l&#39;operazione di download è supportata per i seguenti tipi di risorse:
+In  AEM Forms, l’operazione di download è supportata per i seguenti tipi di risorse:
 
-* Modelli per moduli (moduli XFA)
-* Moduli PDF
+* Modelli di modulo (XFA Forms)
+* PDF forms
 * Documenti (file PDF semplici)
 
-AEM Forms supporta il download di questi tipi di moduli singolarmente o in una cartella contenente uno o più moduli supportati.
+ AEM Forms supporta il download di questi tipi di moduli singolarmente o in una cartella contenente uno o più moduli supportati.
 
 Oltre a queste risorse, potete scaricare il `Resource` tipo di risorsa, se presente in una cartella. Questa funzionalità consente di scaricare la risorsa a cui fa riferimento un modulo XFA insieme al modulo.
 
 ## Download di uno o più moduli {#download-one-or-more-forms}
 
-1. Accedete all&#39;interfaccia utente di AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Effettuate l&#39;accesso all&#39;interfaccia utente  AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
 
 1. Andate alla posizione della risorsa da scaricare.
 
@@ -42,7 +45,7 @@ Oltre a queste risorse, potete scaricare il `Resource` tipo di risorsa, se prese
 
 1. Nella finestra di dialogo visualizzata, fate clic su **[!UICONTROL Scarica]**.
 
-   AEM Forms genera un file ZIP contenente il file selezionato o la cartella selezionata.
+    AEM Forms genera un file ZIP contenente il file selezionato o la cartella selezionata.
 
    Se scaricate una cartella, le risorse supportate all’interno della cartella vengono scaricate nella gerarchia esistente.
 
