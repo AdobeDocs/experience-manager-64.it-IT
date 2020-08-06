@@ -32,11 +32,11 @@ Per il servizio Utilità PDF sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Rimozione di informazioni riservate sui documenti PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sul sistema operativo Forms Server. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Conversione di un documento PDF in un documento XDP mediante l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -241,7 +241,7 @@ L&#39;esempio di codice seguente converte un documento XDP in un documento PDF. 
 
 ## Avvio rapido (modalità SOAP): Recupero delle proprietà del documento PDF tramite l&#39;API Java {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-L&#39;esempio di codice seguente determina se il documento è un documento PDF e, in tal caso, la prima versione di Acrobat in grado di leggerlo. (Vedere [Recupero delle proprietà](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)del documento PDF.)
+L&#39;esempio di codice seguente determina se il documento è un documento PDF e, in tal caso, la prima versione di Acrobat  in grado di leggerlo. (Vedere [Recupero delle proprietà](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)del documento PDF.)
 
 ```as3
  /* 
