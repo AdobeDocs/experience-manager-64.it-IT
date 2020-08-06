@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 ## Creazione di gruppi sull&#39;autore {#creating-groups-on-author}
 
-Per l&#39;autore, dalla navigazione globale
+Per l&#39;authoring, dalla navigazione globale
 
 * Seleziona **[!UICONTROL Community > Siti]**
 * Selezionate la cartella **** di interazione per aprirla
@@ -37,7 +40,7 @@ La funzione dei gruppi verrà visualizzata come una cartella in cui vengono crea
 
 ## Crea gruppo di arti principali {#create-main-arts-group}
 
-Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include una funzione di gruppi. Per impostazione predefinita, la configurazione della funzione nel sito `Reference Template` consente di selezionare qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo sarà il `Reference Group`.
+Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include una funzione di gruppi. Per impostazione predefinita, la configurazione della funzione nel sito `Reference Template` consente la selezione di qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo sarà il `Reference Group`.
 
 Queste console sono molto simili alla console Siti di Communities.
 
@@ -45,11 +48,12 @@ Queste console sono molto simili alla console Siti di Communities.
 * `1 Community Group Template`:
    * Titolo gruppo community: Arti
    * Descrizione gruppo community: Un gruppo padre per vari gruppi artistici.
-   * Radice gruppo community: *lasciate come predefinito*
+   * Radice gruppo community: *left as default*
    * Lingue aggiuntive per i gruppi di community disponibili:utilizzate il menu a discesa per selezionare le lingue disponibili per i gruppi di community. Nel menu vengono visualizzate tutte le lingue in cui viene creato il sito community principale. Gli utenti possono selezionare una di queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti della community.
    * Nome gruppo community: arte
    * Modello: premuto per selezionare `Reference Group`
    * Seleziona `Next`
+
       ![parent tonestedgroup](assets/parenttonestedgroup.png)
 
 Proseguite attraverso gli altri pannelli con le seguenti impostazioni:
@@ -89,19 +93,20 @@ Il `arts` gruppo deve contenere anche una `groups` cartella, ma vuota e in cui �
    * Titolo: `Visual Arts`
    * Nome: `visual`
    * Modello: `Reference Group`
-   * iscrizione: selezionate `Optional Membership`Un gruppo pubblico, aprite a tutti i membri
+   * Appartenenza: selezionate `Optional Membership`Un gruppo pubblico, aprite a tutti i membri
 1. Auditory
    * Titolo: `Auditory Arts`
    * Nome: `auditory`
    * Modello: `Reference Group`
-   * iscrizione: selezionate `Required Membership`Un gruppo aperto, disponibile per i membri a partecipare
+   * Appartenenza: selezionate `Required Membership`Un gruppo aperto, disponibile per i membri a partecipare
 
 1. Storia
 
    * Titolo: `Art History`
    * Nome: `history`
    * Modello: `Reference Group`
-   * iscrizione: selezionate `Restricted Membership`Un gruppo segreto, visibile solo ai membri invitati come esempio, invitate un utente [](tutorials.md#demo-users) demo `emily.andrews@mailinator.com`
+   * Appartenenza: selezionate `Restricted Membership`Un gruppo segreto, visibile solo ai membri invitati come esempio, invitate 
+[utente dimostrativo](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Aggiornate la pagina per visualizzare tutti e tre i gruppi nidificati (sottocomunità).
 
@@ -138,7 +143,7 @@ Dopo la pubblicazione del sito della community principale, è necessario
    * Può partecipare a gruppi limitati (aperti)
 * Manager gruppo: aaron.mcdonald@mailinator.com/password
    * Può visualizzare i gruppi facoltativi (pubblici)
-   * può partecipare a gruppi limitati (aperti)
+   * può partecipare a gruppi con restrizioni (aperti)
    * Non verranno visualizzati gruppi limitati (segreti)
 
 Accedete alle console [Membri e Gruppi della community](members.md) sull’autore per aggiungere altri utenti a vari gruppi di membri che corrispondono ai gruppi della community.
