@@ -1,8 +1,8 @@
 ---
 title: Mobile con sincronizzazione dei contenuti
 seo-title: Mobile con sincronizzazione dei contenuti
-description: Seguite questa pagina per informazioni sulla sincronizzazione dei contenuti. Le pagine create in AEM possono essere utilizzate come contenuto dell'app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard Web, funzionano su più piattaforme e possono essere incorporate in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
-seo-description: Seguite questa pagina per informazioni sulla sincronizzazione dei contenuti. Le pagine create in AEM possono essere utilizzate come contenuto dell'app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard Web, funzionano su più piattaforme e possono essere incorporate in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
+description: Seguite questa pagina per informazioni sulla sincronizzazione dei contenuti. Le pagine create in AEM possono essere utilizzate come contenuto dell'app, anche quando il dispositivo è offline. Inoltre, poiché AEM pagine sono basate su standard Web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
+seo-description: Seguite questa pagina per informazioni sulla sincronizzazione dei contenuti. Le pagine create in AEM possono essere utilizzate come contenuto dell'app, anche quando il dispositivo è offline. Inoltre, poiché AEM pagine sono basate su standard Web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
 uuid: 11f74cc5-99a5-4186-9b60-b19351305432
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 translation-type: tm+mt
 source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
+workflow-type: tm+mt
+source-wordcount: '3057'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Utilizzate Content Sync (Sincronizzazione contenuti) per creare pacchetti di contenuto in modo che possa essere utilizzato nelle applicazioni mobili native. Le pagine create in AEM possono essere utilizzate come contenuto dell&#39;app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard Web, funzionano su più piattaforme e possono essere incorporate in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
+Utilizzate Content Sync (Sincronizzazione contenuti) per creare pacchetti di contenuto in modo che possa essere utilizzato nelle applicazioni mobili native. Le pagine create in AEM possono essere utilizzate come contenuto dell&#39;app, anche quando il dispositivo è offline. Inoltre, poiché AEM pagine sono basate su standard Web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce il lavoro di sviluppo e consente di aggiornare facilmente il contenuto delle app.
 
 Il framework Content Sync crea un file di archivio che contiene il contenuto Web. Il contenuto può essere costituito da pagine semplici, immagini e file PDF o da intere applicazioni Web. L&#39;API Content Sync consente di accedere al file di archivio dalle app mobili o dai processi di creazione in modo che il contenuto possa essere recuperato e incluso nell&#39;app.
 
@@ -40,7 +43,7 @@ Alcune delle linee guida per lo sviluppo di gestori di sincronizzazione dei cont
 
 * I gestori devono implementare *com.day.cq.contentsync.handler.ContentUpdateHandler* (direttamente o estendendo una classe che lo supporta)
 * I gestori possono estendere *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Il gestore deve segnalare true solo se aggiorna la cache ContentSync. Se si segnala erroneamente come &quot;true&quot;, AEM creerà un aggiornamento quando non si è verificato un aggiornamento.
+* Il gestore deve segnalare true solo se aggiorna la cache ContentSync. Se si segnala erroneamente true, AEM creare un aggiornamento quando non si verifica effettivamente un aggiornamento.
 * Il gestore deve aggiornare la cache solo se il contenuto è effettivamente cambiato. Non scrivere nella cache se non è necessario un bianco. Questo determina la creazione di un aggiornamento non necessario.
 
 >[!NOTE]
@@ -51,7 +54,7 @@ Alcune delle linee guida per lo sviluppo di gestori di sincronizzazione dei cont
 
 Create una configurazione di sincronizzazione dei contenuti per specificare il contenuto del file ZIP consegnato al client. Potete creare un numero qualsiasi di configurazioni di sincronizzazione dei contenuti. Ogni configurazione ha un nome a scopo di identificazione.
 
-Per creare una configurazione di sincronizzazione dei contenuti, aggiungete un `cq:ContentSyncConfig` nodo alla directory archivio, con la `sling:resourceType` proprietà impostata su `contentsync/config`. Il `cq:ContentSyncConfig` nodo può trovarsi ovunque nell&#39;archivio, ma deve essere accessibile agli utenti dell&#39;istanza di pubblicazione AEM. Pertanto, è necessario aggiungere il nodo seguente `/content`.
+Per creare una configurazione di sincronizzazione dei contenuti, aggiungete un `cq:ContentSyncConfig` nodo alla directory archivio, con la `sling:resourceType` proprietà impostata su `contentsync/config`. Il `cq:ContentSyncConfig` nodo può trovarsi in qualsiasi punto della directory archivio, tuttavia il nodo deve essere accessibile agli utenti dell’istanza di pubblicazione AEM. Pertanto, è necessario aggiungere il nodo seguente `/content`.
 
 Per specificare il contenuto del file ZIP Content Sync, aggiungete nodi secondari al nodo cq:ContentSyncConfig. Le seguenti proprietà di ciascun nodo figlio identificano un elemento di contenuto da includere e come viene elaborato al momento dell&#39;aggiunta:
 
@@ -60,7 +63,7 @@ Per specificare il contenuto del file ZIP Content Sync, aggiungete nodi secondar
 
 Per ulteriori informazioni, consulta *Esempio di configurazione* della sincronizzazione dei contenuti.
 
-Dopo aver creato la configurazione di sincronizzazione dei contenuti, questa viene visualizzata nella console di sincronizzazione dei contenuti.
+Dopo aver creato la configurazione Content Sync (Sincronizzazione contenuto), questa viene visualizzata nella console Content Sync (Sincronizzazione contenuto).
 
 >[!NOTE]
 >
@@ -68,9 +71,9 @@ Dopo aver creato la configurazione di sincronizzazione dei contenuti, questa vie
 
 ### Configurazione dell&#39;accesso ai download della sincronizzazione dei contenuti {#configuring-access-to-content-sync-downloads}
 
-Specificate un utente o un gruppo che possa scaricare da Content Sync. Potete configurare l’utente o il gruppo predefinito che può essere scaricato da tutte le cache di sincronizzazione dei contenuti, nonché ignorare i valori predefiniti e configurare l’accesso per una specifica configurazione di sincronizzazione dei contenuti.
+Specificate un utente o un gruppo che possa scaricare da Content Sync (Sincronizzazione contenuto). Potete configurare l’utente o il gruppo predefinito che può essere scaricato da tutte le cache di sincronizzazione dei contenuti, nonché ignorare i valori predefiniti e configurare l’accesso per una specifica configurazione di sincronizzazione dei contenuti.
 
-Quando AEM è installato, i membri del gruppo di amministratori possono scaricare da Content Sync per impostazione predefinita.
+Quando AEM è installato, per impostazione predefinita i membri del gruppo di amministratori possono scaricare da Content Sync (Sincronizzazione contenuto).
 
 #### Impostazione dell&#39;accesso predefinito per i download di sincronizzazione dei contenuti {#setting-the-default-access-for-content-sync-downloads}
 
@@ -88,7 +91,7 @@ Se state [configurando il repository](/help/sites-deploying/configuring-osgi.md#
 Per configurare l&#39;accesso al download per una configurazione specifica di Content Sync, aggiungete la seguente proprietà al `cq:ContentSyncConfig` nodo:
 
 * Nome: autorizzabile
-* Tipo:Stringa
+* Tipo: Stringa
 * Valore: Nome dell’utente o del gruppo che può essere scaricato.
 
 Ad esempio, l&#39;app consente agli utenti di installare gli aggiornamenti direttamente da Content Sync. Per consentire a tutti gli utenti di scaricare l&#39;aggiornamento, impostate il valore della proprietà autorizzabile su `everyone`.
@@ -141,7 +144,7 @@ Raccogliere le rappresentazioni originali delle risorse.
 
 Il tipo di immagine viene utilizzato per includere il logo We Retail nel file zip.
 
-**pagine** Rendering delle pagine AEM e raccolta delle risorse di riferimento.
+**pagine** Rendering AEM pagine e raccolta delle risorse di riferimento.
 
 * **percorso** - Percorso di una pagina.
 * **estensione** - Estensione da utilizzare nella richiesta. Per le pagine questo è quasi sempre *html*, ma altri sono ancora possibili.
@@ -173,7 +176,7 @@ Ogni proprietà può avere uno dei seguenti valori:
 
 Il servizio AEM denominato **PathRewriterTransformerFactory** consente di configurare gli attributi HTML specifici che verranno riscritti. Il servizio può essere configurato nella console Web e dispone di una configurazione per ciascuna proprietà del `rewrite` nodo: `clientlibs`, `images` e `links`.
 
-Questa funzione è stata aggiunta in AEM 5.5.
+Questa funzione è stata aggiunta nella AEM 5.5.
 
 ### Esempio di configurazione della sincronizzazione dei contenuti {#example-content-sync-configuration}
 
@@ -213,9 +216,9 @@ L&#39;elenco seguente mostra una configurazione di esempio per Content Sync.
   + ...
 ```
 
-**etc.designs.default e etc.designs.mobile** Le prime due voci della configurazione dovrebbero essere abbastanza ovvie. Poiché includeremo una serie di pagine mobili, abbiamo bisogno dei relativi file di progettazione qui sotto /etc/designs. E poiché non è richiesta ulteriore elaborazione, la copia è sufficiente.
+**etc.designs.default e etc.designs.mobile** Le prime due voci della configurazione dovrebbero essere abbastanza ovvie. Poiché includeremo un certo numero di pagine mobili, abbiamo bisogno dei relativi file di progettazione qui sotto /etc/designs. E poiché non è richiesta ulteriore elaborazione, la copia è sufficiente.
 
-**events.plist** Questa voce è un po&#39; speciale. Come indicato nell&#39;introduzione, l&#39;applicazione deve fornire una visualizzazione mappa con gli indicatori delle posizioni degli eventi. Forniremo le informazioni di posizione necessarie come file separato in formato PLIST. A tal fine, il componente dell&#39;elenco eventi utilizzato nella pagina di indice ha uno script denominato plist.jsp. Questo script viene eseguito quando la risorsa del componente viene richiesta con l&#39;estensione .plist. Come al solito, il percorso dei componenti viene indicato nella proprietà path e il tipo è impostato su content, perché desideriamo sfruttare l&#39;elaborazione [della richiesta](/help/sites-developing/the-basics.md#sling-request-processing)Sling.
+**events.plist** Questa voce è un po&#39; speciale. Come indicato nell&#39;introduzione, l&#39;applicazione deve fornire una visualizzazione mappa con i marcatori delle posizioni degli eventi. Forniremo le informazioni di posizione necessarie come file separato in formato PLIST. A tal fine, il componente dell&#39;elenco eventi utilizzato nella pagina di indice ha uno script denominato plist.jsp. Questo script viene eseguito quando la risorsa del componente viene richiesta con l&#39;estensione .plist. Come al solito, il percorso dei componenti viene indicato nella proprietà path e il tipo è impostato su content, perché desideriamo sfruttare l&#39;elaborazione [della richiesta](/help/sites-developing/the-basics.md#sling-request-processing)Sling.
 
 **events.touch.html** Verrà visualizzata la pagina effettiva nell&#39;app. La proprietà path è impostata sulla pagina principale dell&#39;evento. Vengono incluse anche tutte le pagine dell&#39;evento al di sotto di tale pagina, poiché per impostazione predefinita la proprietà deep è impostata su true. Utilizziamo le pagine come tipo di configurazione, in modo che vengano incluse tutte le immagini o altri file a cui può fare riferimento un’immagine o un componente per il download in una pagina. Inoltre, l’impostazione del selettore touch offre una versione mobile delle pagine. La configurazione nel pacchetto di caratteristiche contiene più voci di questo tipo, ma qui sono lasciate fuori per semplicità.
 
@@ -234,7 +237,7 @@ La console Content Sync elenca tutte le configurazioni di Content Sync presenti 
 * Aggiornare la cache.
 * Cancellate la cache.
 * Scaricate un file ZIP completo.
-* Scaricate un file ZIP diverso da ora a una data e ora specifiche.
+* Scaricate un file ZIP diverso da ora a una data e un&#39;ora specifiche.
 
 Può essere utile per lo sviluppo e la risoluzione dei problemi.
 
@@ -283,7 +286,7 @@ La definizione *factory* contiene l&#39;interfaccia comune e il tipo personalizz
 
 ### Implementazione di un gestore di aggiornamenti personalizzato {#implementing-a-custom-update-handler}
 
-Ogni pagina Mobile We.Retail contiene un logo nell&#39;angolo in alto a sinistra che vorremmo includere nel file zip, ovviamente. Tuttavia, per l’ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file immagine nell’archivio, il che ci impedisce di utilizzare semplicemente il tipo di configurazione della **copia** . Ciò che dobbiamo fare è fornire il nostro tipo di configurazione del **logo** che renda l’immagine disponibile nella posizione richiesta da AEM. Il seguente elenco di codici mostra l’implementazione completa del gestore di aggiornamenti per il logo:
+Ogni pagina Mobile We.Retail contiene un logo nell&#39;angolo in alto a sinistra che vorremmo includere nel file zip, ovviamente. Tuttavia, per l&#39;ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file immagine nell&#39;archivio, il che ci impedisce di utilizzare semplicemente il tipo di configurazione della **copia** . Ciò che dobbiamo fare è fornire il nostro tipo di configurazione del **logo** che renda l&#39;immagine disponibile nella posizione richiesta da AEM. Il seguente elenco di codici mostra l’implementazione completa del gestore di aggiornamenti per il logo:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -363,26 +366,26 @@ Quindi, verificate che la risorsa sia stata modificata dopo l’ultimo aggiornam
 
 ## Utilizzo del contenuto sul client {#using-the-content-on-the-client}
 
-Per utilizzare il contenuto in un&#39;app mobile fornita da Content Sync, è necessario richiedere il contenuto tramite una connessione HTTP o HTTPS. Di conseguenza, il contenuto recuperato (compresso in un file ZIP) può essere estratto e memorizzato localmente sul dispositivo mobile. Si noti che il contenuto non si riferisce solo ai dati ma anche alla logica, vale a dire alle applicazioni Web complete; in modo da consentire all&#39;utente mobile di eseguire applicazioni Web recuperate e dati corrispondenti anche senza connettività di rete.
+Per utilizzare il contenuto in un&#39;app mobile fornita da Content Sync, è necessario richiedere il contenuto tramite una connessione HTTP o HTTPS. Di conseguenza, il contenuto recuperato (compresso in un file ZIP) può essere estratto e memorizzato localmente sul dispositivo mobile. Si noti che il contenuto non si riferisce solo ai dati ma anche alla logica, vale a dire alle applicazioni Web complete; in modo da consentire all&#39;utente mobile di eseguire le applicazioni Web recuperate e i dati corrispondenti anche senza connettività di rete.
 
-Content Sync distribuisce contenuti in modo intelligente: Vengono distribuite solo le modifiche apportate ai dati dall’ultima sincronizzazione dei dati riuscita, riducendo così il tempo necessario per il trasferimento dei dati. Al primo avvio di un&#39;applicazione le modifiche ai dati sono richieste dal 1° gennaio 1970, mentre successivamente sono richiesti solo i dati modificati dall&#39;ultima sincronizzazione riuscita. AEM utilizza un framework di comunicazione client per iOS per semplificare la comunicazione e il trasferimento dei dati, in modo che sia necessaria una quantità minima di codice nativo per abilitare un&#39;applicazione Web basata su iOS.
+Content Sync distribuisce i contenuti in modo intelligente: Vengono distribuite solo le modifiche apportate ai dati dall’ultima sincronizzazione dei dati riuscita, riducendo così il tempo necessario per il trasferimento dei dati. Alla prima esecuzione di un&#39;applicazione le modifiche ai dati sono richieste dal 1° gennaio 1970, mentre successivamente sono richiesti solo i dati modificati dall&#39;ultima sincronizzazione riuscita. AEM utilizza un framework di comunicazione client per iOS per semplificare la comunicazione e il trasferimento dei dati, in modo che sia necessaria una quantità minima di codice nativo per abilitare un&#39;applicazione Web basata su iOS.
 
 Tutti i dati trasferiti possono essere estratti nella stessa struttura di directory. Durante l&#39;estrazione dei dati non sono necessari passaggi aggiuntivi (ad es. controlli delle dipendenze). Nel caso di iOS, tutti i dati vengono memorizzati in una sottocartella all&#39;interno della cartella Documenti dell&#39;app iOS.
 
-Percorso di esecuzione tipico di un&#39;app AEM Mobile basata su iOS:
+Percorso di esecuzione tipico di un&#39;app AEM Mobile basata su iOS :
 
 * L&#39;utente avvia l&#39;app sul dispositivo iOS.
-* L&#39;app tenta di connettersi al backend AEM e richiede modifiche ai dati dall&#39;ultima esecuzione.
+* L&#39;app tenta di connettersi a AEM backend e richiede modifiche ai dati dall&#39;ultima esecuzione.
 * Il server recupera i dati in questione e li comprime in un file.
 * I dati vengono restituiti al dispositivo client in cui sono estratti nella cartella dei documenti.
 * Il componente UIWebView viene avviato/aggiornato.
 
 Se non è stato possibile stabilire una connessione, verranno visualizzati i dati scaricati in precedenza.
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e di un autore, consulta le risorse seguenti:
 
-* [Creazione di contenuti AEM per i servizi on-demand AEM Mobile](/help/mobile/mobile-apps-ondemand.md)
-* [Amministrazione dei contenuti per l&#39;utilizzo dei servizi on-demand AEM Mobile](/help/mobile/aem-mobile.md)
+* [Creazione AEM contenuto per  AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Amministrazione di contenuti da utilizzare  AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
