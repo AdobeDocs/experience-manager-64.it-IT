@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ Un profilo è un nodo di risorse in [Apache Sling](https://sling.apache.org/). R
 
 Il nodo del profilo ha la proprietà **sling:resourceSuperType** e il valore predefinito è **xfaforms/profile**. Lo script di rendering per il nodo si trova in /libs/xfaforms/profile.
 
-Gli script Sling sono script JSP. Questi script JSP fungono da contenitori per l&#39;assemblaggio dell&#39;HTML per il modulo richiesto e degli artefatti JS / CSS richiesti. Questi script Sling sono denominati anche script di rendering **profilo.** Il renderer di profili richiama il servizio Forms OSGi per eseguire il rendering del modulo richiesto.
+Gli script Sling sono script JSP. Questi script JSP fungono da contenitori per l&#39;assemblaggio dell&#39;HTML per il modulo richiesto e degli artefatti JS / CSS richiesti. Questi script Sling sono denominati anche script di rendering **profilo.** Il renderer del profilo chiama il servizio Forms OSGi per eseguire il rendering del modulo richiesto.
 
-Lo script di profilo è in html.jsp e html.POST.jsp per le richieste GET e POST. Potete copiare e modificare uno o più file per sovrascrivere e aggiungere le personalizzazioni. Non apportate alcuna modifica, l’aggiornamento della patch sovrascrive tali modifiche.
+Lo script di profilo è in html.jsp e html.POST.jsp per le richieste di GET e POST. Potete copiare e modificare uno o più file per sovrascrivere e aggiungere le personalizzazioni. Non apportate alcuna modifica, l’aggiornamento della patch sovrascrive tali modifiche.
 
 Un profilo contiene vari moduli. I moduli sono formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_piè.jsp e piè di pagina.jsp.
 
@@ -56,7 +59,7 @@ Per creare un profilo personalizzato, effettuate le seguenti operazioni:
 
 ### Crea nodo profilo {#create-profile-node}
 
-1. Passate all&#39;interfaccia CRX DE all&#39;URL: ed `https://[server]:[port]/crx/de` effettuate l&#39;accesso all&#39;interfaccia con le credenziali di amministratore.
+1. Passate all&#39;interfaccia CRX DE all&#39;URL: `https://[server]:[port]/crx/de` ed effettuate l&#39;accesso all&#39;interfaccia con le credenziali di amministratore.
 
 1. Nel riquadro a sinistra, passare alla posizione */content/xfaforms/profile*.
 
@@ -80,4 +83,4 @@ Dopo aver creato un profilo personalizzato, aggiungete le informazioni di render
 
 1. Per verificare che il profilo sia stato creato, apri URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in AEM Forms e [visualizzare l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di creazione del server AEM.
+Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in  AEM Forms e [visualizzare l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza AEM server di creazione.
