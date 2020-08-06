@@ -1,8 +1,8 @@
 ---
 title: Scaricamento dei processi
 seo-title: Scaricamento dei processi
-description: Scopri come configurare e utilizzare le istanze di AEM in una topologia per eseguire tipi specifici di elaborazione.
-seo-description: Scopri come configurare e utilizzare le istanze di AEM in una topologia per eseguire tipi specifici di elaborazione.
+description: Scoprite come configurare e utilizzare AEM istanze in una topologia per eseguire tipi specifici di elaborazione.
+seo-description: Scoprite come configurare e utilizzare AEM istanze in una topologia per eseguire tipi specifici di elaborazione.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-L&#39;offload distribuisce le attività di elaborazione  istanze Experience Manager in una topologia. Con lo scaricamento, potete utilizzare istanze Experience Manager  specifiche per eseguire tipi di elaborazione specifici. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
+L&#39;offload distribuisce le attività di elaborazione per la quantità  istanze di Experience Manager in una topologia. Con lo scaricamento, potete utilizzare istanze di Experienci Manager  specifiche per eseguire specifici tipi di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
 
-L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, è possibile aggiungere  cluster Experience Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze Experience Manager , in modo che una singola istanza sia considerata un cluster.
+L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, è possibile aggiungere  cluster di Experienci Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze  Experience Manager, in modo che una singola istanza sia considerata un cluster.
 
 Per informazioni sull&#39;aggiunta di istanze a una topologia, consultate [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -35,7 +35,7 @@ Sling JobManager e JobConsumer consentono la creazione di processi elaborati in 
 * JobManager: Un servizio che crea processi per argomenti specifici.
 * JobConsumer: Un servizio che esegue processi relativi a uno o più argomenti. Più servizi JobConsumer possono essere registrati per lo stesso argomento.
 
-Quando JobManager crea un processo, il framework Offloading seleziona un cluster Experience Manager  nella topologia per eseguire il processo:
+Quando JobManager crea un processo, il framework Offloading seleziona un cluster di Experienci Manager  nella topologia per eseguire il processo:
 
 * Il cluster deve includere una o più istanze che eseguono un JobConsumer registrato per l&#39;argomento del processo.
 * L&#39;argomento deve essere abilitato per almeno un&#39;istanza del cluster.
@@ -54,9 +54,9 @@ Dopo la creazione di un processo, il payload è garantito solo nell’istanza ch
 
 ## Amministrazione delle topologie {#administering-topologies}
 
-Le topologie sono  cluster Experience Manager a accoppiamento approssimativo che partecipano allo scarico. Un cluster è costituito da una o più istanze  server Experience Manager (una singola istanza è considerata un cluster).
+Le topologie sono cluster di Experienci Manager  a accoppiamento approssimativo che partecipano allo scarico. Un cluster è costituito da una o più istanze  server di Experience Manager (una singola istanza è considerata un cluster).
 
-Ogni istanza di Experience Manager  esegue i seguenti servizi relativi allo scaricamento:
+Ogni istanza  Experience Manager esegue i seguenti servizi relativi allo scarico:
 
 * Servizio di individuazione: Invia richieste a un connettore topologia per partecipare alla topologia.
 * Connettore topologia: Riceve le richieste di partecipazione e accetta o rifiuta ogni richiesta.
@@ -69,13 +69,13 @@ Ogni cluster nella topologia contiene un&#39;istanza riconosciuta come leader. I
 
 ### Visualizzazione della topologia {#viewing-the-topology}
 
-Utilizzate il Browser topologia per esplorare lo stato della topologia a cui partecipa l&#39;istanza di Experience Manager . Il Browser topologia mostra i cluster e le istanze della topologia.
+Utilizzate il Browser topologia per esplorare lo stato della topologia a cui partecipa l&#39;istanza del Experience Manager . Il Browser topologia mostra i cluster e le istanze della topologia.
 
 Per ciascun cluster viene visualizzato un elenco di membri del cluster che indica l&#39;ordine in cui ciascun membro è entrato nel cluster e quale membro è il membro iniziale. La proprietà Current (Corrente) indica l&#39;istanza attualmente amministrata.
 
 Per ogni istanza del cluster, potete vedere diverse proprietà relative alla topologia:
 
-* Elenco di argomenti consentiti per il consumer di mansioni dell&#39;istanza.
+* Un elenco consentiti  di argomenti per il consumer di posti di lavoro dell&#39;istanza.
 * I punti finali esposti per la connessione con la topologia.
 * Gli argomenti del processo per cui l’istanza è registrata per lo scaricamento.
 * Gli argomenti del processo elaborati dall’istanza.
@@ -106,12 +106,12 @@ Per aprire la pagina Gestione topologia della console Web, effettuate le seguent
 
 ### Configurazione dell&#39;appartenenza alla topologia {#configuring-topology-membership}
 
-Il servizio di individuazione basata sulle risorse Apache Sling viene eseguito su ogni istanza per controllare in che modo  istanze Experience Manager interagiscono con una topologia.
+Il servizio di individuazione basata sulle risorse Apache Sling viene eseguito su ogni istanza per controllare in che modo  istanze di Experience Manager interagiscono con una topologia.
 
-Il servizio Discovery invia periodicamente richieste POST (heartbeat) ai servizi del connettore Topologia per stabilire e mantenere connessioni con la topologia. Il servizio Connettore topologia mantiene un elenco di indirizzi IP o nomi host consentiti per partecipare alla topologia:
+Il servizio Discovery invia richieste POST periodiche (heartbeat) ai servizi del connettore Topologia per stabilire e gestire le connessioni con la topologia. Il servizio Connettore topologia mantiene un elenco consentiti  di indirizzi IP o nomi host che possono essere aggiunti alla topologia:
 
 * Per unire un&#39;istanza a una topologia, specificate l&#39;URL del servizio Connettore topologia del membro principale.
-* Per abilitare un&#39;istanza a partecipare a una topologia, aggiungere l&#39;istanza all&#39;elenco allow del servizio Connettore topologia del membro principale.
+* Per abilitare un&#39;istanza a partecipare a una topologia, aggiungere l&#39;istanza al elenco consentiti  del servizio Connettore topologia del membro principale.
 
 Utilizzate la console Web o un nodo sling:OsgiConfig per configurare le seguenti proprietà del servizio org.apache.sling.discovery.impt.Config:
 
@@ -148,7 +148,7 @@ Utilizzate la console Web o un nodo sling:OsgiConfig per configurare le seguenti
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Elenco consentiti connettore topologia</td> 
+   <td>elenco consentiti  connettore topologia</td> 
    <td>topologyConnectorWhitelist</td> 
    <td>L'elenco di indirizzi IP o nomi host consentiti dal servizio locale Connettore topologia nella topologia. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -169,16 +169,16 @@ Per collegare un’istanza CQ al membro principale di una topologia, attenersi a
 1. Fate clic su Configura servizio di individuazione.
 1. Aggiungere un elemento alla proprietà URL del connettore topologia e specificare l&#39;URL del servizio Connettore topologia principale del membro topologia. L’URL si trova nel modulo https://rootservername:4502/libs/sling/topology/connector.
 
-Eseguire la procedura seguente sul membro principale della topologia. La procedura aggiunge i nomi degli altri membri della topologia all&#39;elenco Consenti a Discovery Service.
+Eseguire la procedura seguente sul membro principale della topologia. La procedura aggiunge i nomi degli altri membri della topologia al elenco consentiti  Discovery Service.
 
 1. Aprite la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Fate clic su Principale > Gestione topologia.
 1. Fate clic su Configura servizio di individuazione.
-1. Per ciascun membro della topologia, aggiungere una voce alla proprietà list Connector Topology, quindi specificare il nome host o l&#39;indirizzo IP del membro della topologia.
+1. Per ciascun membro della topologia, aggiungete un elemento alla proprietà  elenco consentiti del connettore topologia e specificate il nome host o l&#39;indirizzo IP del membro della topologia.
 
 ## Configurazione del consumo dell&#39;argomento {#configuring-topic-consumption}
 
-Utilizzate il browser offload per configurare il consumo dell&#39;argomento per le istanze Experience Manager  nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
+Utilizzate il browser di scaricamento per configurare il consumo dell&#39;argomento per le istanze del Experience Manager  nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
 
 I processi sono istanze di quantità distribuita con l’argomento associato abilitato mediante la logica round-robin.
 
@@ -215,11 +215,11 @@ Diverse implementazioni JobConsumer sono installate con  Experience Manager. Gli
 
 ### Disattivazione e abilitazione degli argomenti per un&#39;istanza {#disabling-and-enabling-topics-for-an-instance}
 
-Il servizio Apache Sling Job Consumer Manager fornisce le proprietà di elenco e elenco di blocchi per gli argomenti. Configurate queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici su un&#39;istanza di Experience Manager .
+Il servizio Apache Sling Job Consumer Manager fornisce le proprietà dell&#39;argomento  elenco consentiti e  elenco Bloccati. Configurate queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici in un&#39;istanza di Experience Manager .
 
 **Nota:** Se l&#39;istanza appartiene a una topologia, potete anche utilizzare il browser di scaricamento su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
 
-La logica che crea l&#39;elenco di argomenti abilitati prima consente di visualizzare tutti gli argomenti presenti nell&#39;elenco Consenti, quindi rimuove gli argomenti presenti nell&#39;elenco dei blocchi.Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore di elenco Consenti è `*`) e nessun argomento è disabilitato (l&#39;elenco dei blocchi non ha valore).
+La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nel elenco consentiti , quindi rimuove gli argomenti presenti nel elenco Bloccati . Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore elenco consentiti  è `*`) e nessun argomento è disabilitato (il elenco Bloccati  non ha alcun valore).
 
 Utilizzare la console Web o un `sling:OsgiConfig` nodo per configurare le seguenti proprietà. Per `sling:OsgiConfig` i nodi, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -329,11 +329,11 @@ Per impostazione predefinita,  Experience Manager esegue il flusso di lavoro Agg
 
 La procedura seguente assume le seguenti caratteristiche per la topologia di scarico:
 
-* Una o più istanze di Experience Manager  sono istanze di authoring con cui gli utenti interagiscono per aggiungere o aggiornare risorse DAM.
-* Gli utenti non interagiscono direttamente con una o più istanze Experience Manager  che elaborano le risorse DAM. Queste istanze sono dedicate all&#39;elaborazione in background delle risorse DAM.
+* Una o più istanze  Experience Manager sono istanze di authoring con cui gli utenti interagiscono per aggiungere o aggiornare risorse DAM.
+* Gli utenti non interagiscono direttamente con una o più istanze di Experienci Manager  che elaborano le risorse DAM. Queste istanze sono dedicate all&#39;elaborazione in background delle risorse DAM.
 
-1. Su ogni  istanza di Experience Manager, configurate Discovery Service in modo che punti al connettore topografico principale. Consultate [Configurazione dell’appartenenza](#title4)alla topologia.
-1. Configurare il connettore topografico principale in modo che le istanze di connessione siano nell&#39;elenco di autorizzazione.
+1. Su ogni istanza  Experience Manager, configurate il servizio di individuazione in modo che punti al connettore topografico principale. Consultate [Configurazione dell’appartenenza](#title4)alla topologia.
+1. Configurare il connettore topografico principale in modo che le istanze di connessione siano sul elenco consentiti .
 1. Aprite il Browser offload e disattivate l&#39; `com/adobe/granite/workflow/offloading` argomento nelle istanze con cui gli utenti interagiscono per caricare o modificare le risorse DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
