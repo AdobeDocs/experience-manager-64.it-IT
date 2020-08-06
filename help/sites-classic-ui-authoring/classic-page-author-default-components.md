@@ -1,8 +1,8 @@
 ---
 title: Componenti
 seo-title: Componenti
-description: 'AEM viene fornito con diversi componenti, che offrono funzionalità complete per gli autori di siti Web. '
-seo-description: 'AEM viene fornito con diversi componenti, che offrono funzionalità complete per gli autori di siti Web. '
+description: 'AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web. '
+seo-description: 'AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web. '
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 92%
 
 ---
 
