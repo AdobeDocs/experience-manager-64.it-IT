@@ -12,6 +12,9 @@ discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 94%
 
 ---
 
@@ -39,6 +42,7 @@ La seguente procedura consente di creare un lancio.
    * **Escludi sottopagine**: seleziona questa opzione per creare il lancio solo per la pagina sorgente e non per le pagine figlie. Per impostazione predefinita, questa opzione non è selezionata.
    * **Mantieni in sincronia**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine del lancio quando vengono modificate le pagine sorgenti. Ciò avviene creando una [Live Copy](/help/sites-administering/msm.md) del lancio.
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Fai clic su **Crea**. 
