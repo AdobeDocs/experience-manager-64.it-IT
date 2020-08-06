@@ -1,8 +1,8 @@
 ---
 title: Impostazioni di configurazione avanzate
 seo-title: Impostazioni di configurazione avanzate
-description: Informazioni sulle impostazioni di configurazione avanzate applicabili all'integrazione di AEM 3D per le distribuzioni Maya e non Maya.
-seo-description: Informazioni sulle impostazioni di configurazione avanzate applicabili all'integrazione di AEM 3D per le distribuzioni Maya e non Maya.
+description: Scopri le impostazioni di configurazione avanzate che si applicano all'integrazione di AEM 3D per le distribuzioni Maya e non Maya.
+seo-description: Scopri le impostazioni di configurazione avanzate che si applicano all'integrazione di AEM 3D per le distribuzioni Maya e non Maya.
 uuid: 016e7745-e3c3-4d77-b95a-c0e671d719e2
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 Anche se le impostazioni di configurazione predefinite sono adatte a casi di utilizzo tipici, alcune situazioni possono richiedere l’esecuzione di modifiche.
 
-Le seguenti impostazioni di configurazione avanzate si applicano all’integrazione di AEM 3D sia per le distribuzioni Maya che per quelle non Maya.
+Le seguenti impostazioni di configurazione avanzate si applicano all&#39;integrazione di AEM 3D sia per le installazioni Maya che per quelle non Maya.
 
 Tutte le impostazioni sono accessibili tramite **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**).
 
@@ -33,7 +36,7 @@ Tutte le impostazioni sono accessibili tramite **CRXDE Lite** in AEM (**[!UICONT
 
 ## Configurazione dei tipi di risorsa {#asset-types-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 | Percorso | Descrizione |
 |---|---|
@@ -41,11 +44,11 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
 | `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Impostate su true o false per abilitare o disabilitare questa voce nell&#39;elenco **[!UICONTROL assetTypes]** . |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | Specificate uno o più suffissi o estensioni di file separati da virgole da associare a questo tipo di risorsa. |
 | `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Deve essere `native` per i formati di file FBX e OBJ e `maya` per i formati abilitati da Maya. |
-| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Specifica il tipo mime per il tipo di risorsa. Per i formati abilitati da Maya si consiglia di utilizzare `application/x-ext`, dove `ext` è la stringa specificata come `Extension` valore. |
+| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Specifica il tipo mime per il tipo di risorsa. Per i formati attivati da Maya si consiglia di utilizzare `application/x-ext`, dove `ext` è la stringa specificata come `Extension` valore. |
 
 ## Configurazione di inserimento {#ingestion-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 <table> 
  <tbody> 
@@ -55,7 +58,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/addGroundPlaneImageOnIngest</td> 
-   <td>Abilita la generazione di un’ombra esterna di occlusione ambiente quando si visualizza o si esegue il rendering con un’area IBL. Si applica a Anteprima e rendering con RapidRefine</td> 
+   <td>Abilita la generazione di un’ombra esterna di occlusione ambiente quando si visualizza o si esegue il rendering con un’area di visualizzazione IBL. Si applica a Anteprima e rendering con RapidRefine</td> 
   </tr> 
   <tr> 
    <td><p>/libs/settings/dam/v3D/settings/cleanupRenderWorkDir</p> </td> 
@@ -79,20 +82,20 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/MaxCpuPercentage</td> 
-   <td><p>Specifica quante CPU utilizzare al massimo per l'elaborazione dell'assimilazione delle risorse 3D.</p> <p>Valori più elevati velocizzano le operazioni di assimilazione, ma possono causare una minore reattività complessiva di AEM. Questa impostazione è approssimativa. In altre parole, la precisione aumenta con il numero di core CPU disponibili.</p> </td> 
+   <td><p>Specifica quante CPU utilizzare al massimo per l'elaborazione dell'assimilazione delle risorse 3D.</p> <p>Valori più elevati velocizzano le assimilazioni, ma possono causare AEM diventare complessivamente meno reattivi. Questa impostazione è approssimativa. In altre parole, la precisione aumenta con il numero di core CPU disponibili.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Impostazioni di configurazione Servizi cloud {#cloud-services-configuration-settings}
+## Impostazioni di configurazione Cloud Services {#cloud-services-configuration-settings}
 
-I valori per le seguenti impostazioni sono forniti dal vostro account manager Adobe, esperto di provisioning o rappresentante del supporto.
+I valori per le seguenti impostazioni sono forniti dal responsabile commerciale  Adobe, dall&#39;esperto di provisioning o dal rappresentante di supporto.
 
 | **Percorso** | **Descrizione** |
 |---|---|
-| `/libs/settings/dam/v3D/services/aws/accountId` | ID account dell&#39;account Adobe AWS. |
+| `/libs/settings/dam/v3D/services/aws/accountId` | ID account dell&#39;account AWS  Adobe. |
 | `/libs/settings/dam/v3D/services/aws/bucketName` | il nome della benna di trasferimento S3; normalmente `aem3d`. |
-| `/libs/settings/dam/v3D/services/aws/customerId` | L’ID univoco assegnato da Adobe alla vostra organizzazione. Utilizzato come ID utente di AWS Cognito. |
+| `/libs/settings/dam/v3D/services/aws/customerId` | L&#39;ID univoco assegnato da  Adobe all&#39;organizzazione. Utilizzato come ID utente di AWS Cognito. |
 | `/libs/settings/dam/v3D/services/aws/encryptedPassword` | La password associata a questo customerId. Utilizzata come password AWS Cognito. |
 | `/libs/settings/dam/v3D/services/aws/region` | Area AWS in cui vengono distribuiti i servizi cloud. |
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | L&#39;ID del pool di utenti AWS Cognito applicabile. |
@@ -100,7 +103,7 @@ I valori per le seguenti impostazioni sono forniti dal vostro account manager Ad
 
 ## Impostazioni di elaborazione comuni {#common-processing-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 | **Percorso** | **Descrizione** |
 |---|---|
@@ -110,18 +113,18 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
 
 ## Configurazione rendering {#renderer-configuration}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 | **Percorso** | **Descrizione** |
 |---|---|
 | `/libs/settings/dam/v3D/settings/dynamicIBL` | Se impostato su **[!UICONTROL true]** e le mappe di luce pre-generate non sono disponibili (vale a dire invokeLightMapsOnIngest=false), il renderer di definizione rapida crea mappe di luce durante il rendering per migliorare la qualità di rendering. Questa impostazione può aumentare notevolmente il tempo di rendering. L’impostazione su **[!UICONTROL false]** riduce al minimo l’utilizzo della CPU in tali situazioni, ma può ridurre la qualità di rendering. |
 | `/libs/settings/dam/v3D/renderers/*/Enabled` | Impostare su **[!UICONTROL true]** o **[!UICONTROL false]** per attivare o disattivare rispettivamente un renderer. |
 | `/libs/settings/dam/v3D/renderers/*/Display` | Consente di modificare la stringa visualizzata per un renderer abilitato nel selettore del renderer nel pannello Rendering. |
-| `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | Specifica quante CPU vengono utilizzate al massimo per il rendering delle scene 3D. Valori più elevati velocizzano il rendering, ma potrebbero causare una minore reattività complessiva di AEM. Questa impostazione è approssimativa. In altre parole, la precisione aumenta con il numero di core CPU disponibili. |
+| `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | Specifica quante CPU vengono utilizzate al massimo per il rendering delle scene 3D. Valori più elevati velocizzano il rendering, ma possono causare AEM meno reattivi nel complesso. Questa impostazione è approssimativa. In altre parole, la precisione aumenta con il numero di core CPU disponibili. |
 
 ## Impostazioni di anteprima delle risorse 3D {#d-asset-preview-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 | Percorso | Descrizione |
 |---|---|
@@ -132,11 +135,11 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
 | `/libs/settings/dam/v3D/WebGL/curtainColor` | Specifica il colore della tenda di carico che può eventualmente coprire la finestra di anteprima della risorsa 3D durante il caricamento e l&#39;inizializzazione. Valore R,G,B, con ciascun componente colore compreso tra 0 e 255. |
 | `/libs/settings/dam/v3D/WebGL/fadeCurtains` | Quando è impostata su **[!UICONTROL true]**, la tenda di carico si dissolve gradualmente durante le ultime parti dell&#39;inizializzazione del visualizzatore. Se impostata su **[!UICONTROL false]**, la tenda rimane opaca fino al completamento del caricamento e dell&#39;inizializzazione. |
 | `/libs/settings/dam/v3D/WebGL/showCurtains` | Impostate **[!UICONTROL true]** o **[!UICONTROL false]** per attivare o disattivare la tenda di caricamento per l&#39;anteprima delle risorse 3D. |
-| `/libs/settings/dam/v3D/WebGL/spinHeight` | Quando la rotazione automatica è attivata e attiva, la posizione verticale della telecamera viene regolata automaticamente in relazione all&#39;altezza dell&#39;oggetto 3D. Se impostata su 0,5, la telecamera posiziona verticalmente a 1/2 l&#39;altezza dell&#39;oggetto, il che fa sì che l&#39;orizzonte sia centrato verticalmente nella finestra del visualizzatore. Valori maggiori fanno sì che la telecamera guardi verso il basso l&#39;oggetto e alzi l&#39;altezza dell&#39;orizzonte di cui è stato effettuato il rendering, mentre valori più bassi fanno sì che la telecamera guardi l&#39;oggetto e riduca l&#39;orizzonte. |
+| `/libs/settings/dam/v3D/WebGL/spinHeight` | Quando la rotazione automatica è attivata e attiva, la posizione verticale della telecamera viene regolata automaticamente in relazione all&#39;altezza dell&#39;oggetto 3D. Se impostata su 0,5, la telecamera posiziona verticalmente a 1/2 l&#39;altezza dell&#39;oggetto, il che fa sì che l&#39;orizzonte sia centrato verticalmente nella finestra del visualizzatore. Valori maggiori fanno sì che la telecamera guardi verso il basso l&#39;oggetto e alzi l&#39;altezza dell&#39;orizzonte di cui è stato effettuato il rendering, mentre valori più bassi fanno sì che la telecamera guardi verso l&#39;alto l&#39;oggetto e riduca l&#39;orizzonte. |
 
 ## Impostazioni dei componenti di Siti 3D {#d-sites-component-settings}
 
-In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), puoi accedere alle seguenti configurazioni:
+In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), accedi alle seguenti configurazioni:
 
 | Percorso | Descrizione |
 |---|---|
@@ -145,5 +148,5 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Strumenti > Generale > CRXDE Lite]**), p
 | `/libs/settings/dam/v3D/WebGLSites/curtainColor` | Specifica il colore della tenda di carico che può eventualmente coprire la finestra del componente Siti 3D durante il caricamento. Valore R,G,B, con ciascun componente colore compreso tra 0 e 255. |
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Se impostata su **[!UICONTROL true]**, la tenda di carico si dissolve gradualmente durante le ultime parti di caricamento e inizializzazione. Se impostata su **[!UICONTROL false]**, la tenda rimane opaca fino al completamento del caricamento e dell&#39;inizializzazione. |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Impostare su **[!UICONTROL true]** o **[!UICONTROL false]** per attivare o disattivare la tenda di caricamento per il componente Siti 3D. |
-| `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Quando la rotazione automatica è attivata e attiva, la posizione verticale della telecamera viene regolata automaticamente in relazione all&#39;altezza dell&#39;oggetto 3D. Se impostata su 0,5, la telecamera posiziona verticalmente a 1/2 l&#39;altezza dell&#39;oggetto, il che fa sì che l&#39;orizzonte sia centrato verticalmente nella finestra del visualizzatore. Valori maggiori fanno sì che la telecamera guardi verso il basso l&#39;oggetto e alzi l&#39;altezza dell&#39;orizzonte di cui è stato effettuato il rendering, mentre valori più bassi fanno sì che la telecamera guardi l&#39;oggetto e riduca l&#39;orizzonte. |
+| `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Quando la rotazione automatica è attivata e attiva, la posizione verticale della telecamera viene regolata automaticamente in relazione all&#39;altezza dell&#39;oggetto 3D. Se impostata su 0,5, la telecamera posiziona verticalmente a 1/2 l&#39;altezza dell&#39;oggetto, il che fa sì che l&#39;orizzonte sia centrato verticalmente nella finestra del visualizzatore. Valori maggiori fanno sì che la telecamera guardi verso il basso l&#39;oggetto e alzi l&#39;altezza dell&#39;orizzonte di cui è stato effettuato il rendering, mentre valori più bassi fanno sì che la telecamera guardi verso l&#39;alto l&#39;oggetto e riduca l&#39;orizzonte. |
 
