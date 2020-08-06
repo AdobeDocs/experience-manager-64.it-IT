@@ -1,8 +1,8 @@
 ---
-title: Come utilizzare i pacchetti
-seo-title: Come utilizzare i pacchetti
-description: Scopri le basi dell’utilizzo dei pacchetti in AEM.
-seo-description: Scopri le basi dell’utilizzo dei pacchetti in AEM.
+title: Come lavorare con i pacchetti
+seo-title: Come lavorare con i pacchetti
+description: Scopri le basi dell'utilizzo dei pacchetti in AEM.
+seo-description: Scopri le basi dell'utilizzo dei pacchetti in AEM.
 uuid: e9eb4f88-9df6-4019-92e0-2aafcffe1aab
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ I pacchetti consentono di importare ed esportare il contenuto del repository. Ad
 
 È possibile accedere ai pacchetti e/o mantenerli nelle pagine seguenti:
 
-* [Package Manager](#package-manager), che consente di gestire i pacchetti nell’istanza locale di AEM.
+* [Gestione](#package-manager)pacchetti, che consente di gestire i pacchetti nell&#39;istanza AEM locale.
 
-* [Package Share](#package-share), un server centralizzato che contiene sia i pacchetti disponibili pubblicamente che quelli privati per la società. I pacchetti pubblici possono contenere hotfix, nuove funzionalità, documentazione, ecc.
+* [Package Share](#package-share), un server centralizzato che contiene sia i pacchetti disponibili al pubblico che quelli privati per la società. I pacchetti pubblici possono contenere hotfix, nuove funzionalità, documentazione, ecc.
 
 Potete trasferire i pacchetti tra Package Manager, Package Share e il file system.
 
@@ -33,11 +36,11 @@ Un pacchetto è un file zip che contiene il contenuto del repository sotto forma
 
 I pacchetti includono il contenuto, sia contenuto della pagina che contenuto relativo al progetto, selezionato utilizzando i filtri.
 
-Un pacchetto contiene anche metadati di archivio, comprese le definizioni dei filtri e le informazioni sulla configurazione di importazione. Nel pacchetto possono essere incluse ulteriori proprietà di contenuto (non utilizzate per l&#39;estrazione del pacchetto), come una descrizione, un&#39;immagine visiva o un&#39;icona; queste proprietà sono riservate al consumatore del pacchetto di contenuti e sono riservate solo a scopo informativo.
+Un pacchetto contiene anche metadati di archivio, comprese le definizioni dei filtri e le informazioni sulla configurazione dell&#39;importazione. Nel pacchetto possono essere incluse ulteriori proprietà di contenuto (non utilizzate per l&#39;estrazione del pacchetto), ad esempio una descrizione, un&#39;immagine visiva o un&#39;icona; queste proprietà sono riservate al consumatore del pacchetto di contenuti e sono riservate solo a scopo informativo.
 
 >[!NOTE]
 >
->I pacchetti rappresentano la versione corrente del contenuto al momento della creazione del pacchetto. Non includono versioni precedenti del contenuto memorizzato nella directory archivio da AEM.
+>I pacchetti rappresentano la versione corrente del contenuto al momento della creazione del pacchetto. Non includono versioni precedenti del contenuto che AEM conservato nella directory archivio.
 
 Potete eseguire le azioni seguenti su o con i pacchetti:
 
@@ -81,9 +84,9 @@ La finestra di dialogo Impostazioni **** pacchetto è disponibile tramite il pul
 | Gruppo | Nome del gruppo a cui aggiungere il pacchetto per organizzare i pacchetti. Digitate il nome di un nuovo gruppo o selezionate un gruppo esistente. |
 | Versione | Testo da utilizzare per la versione personalizzata. |
 | Descrizione | Breve descrizione del pacchetto. È possibile utilizzare i tag HTML per la formattazione. |
-| Miniatura | Icona visualizzata con l&#39;elenco dei pacchetti. Fate clic su Sfoglia per selezionare un file locale. |
+| Miniatura  | Icona visualizzata con l&#39;elenco dei pacchetti. Fate clic su Sfoglia per selezionare un file locale. |
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
 <table> 
  <tbody> 
@@ -95,7 +98,7 @@ La finestra di dialogo Impostazioni **** pacchetto è disponibile tramite il pul
   <tr> 
    <td>Nome</td> 
    <td>Nome del provider.</td> 
-   <td><em>AEM Geometrixx<br /> </em></td> 
+   <td><em>Geometrixx AEM<br /> </em></td> 
   </tr> 
   <tr> 
    <td>URL</td> 
@@ -218,7 +221,7 @@ Pacchetti di funzioni ufficiali:
 
 ## Gestione pacchetti {#package-manager}
 
-Package Manager gestisce i pacchetti nell’installazione locale di AEM. Dopo aver [assegnato le autorizzazioni](#permissions-needed-for-using-the-package-manager) necessarie potete utilizzare Gestione pacchetti per diverse azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti. Gli elementi chiave da configurare sono:
+Gestione pacchetti gestisce i pacchetti nell&#39;installazione AEM locale. Dopo aver [assegnato le autorizzazioni](#permissions-needed-for-using-the-package-manager) necessarie potete utilizzare Gestione pacchetti per diverse azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti. Gli elementi chiave da configurare sono:
 
 * [Impostazioni pacchetto](#package-settings)
 * [Filtri pacchetto](#package-filters)
@@ -232,18 +235,18 @@ Per concedere agli utenti il diritto di creare, modificare, caricare e installar
 
 Consultate [Impostazione delle autorizzazioni](/help/sites-administering/security.md) per le istruzioni sulla modifica delle autorizzazioni.
 
-### Creazione di un nuovo pacchetto {#creating-a-new-package}
+### Creating a New Package {#creating-a-new-package}
 
 Per creare una nuova definizione di pacchetto:
 
-1. Nella schermata introduttiva di AEM, fate clic su **Pacchetti** (oppure, nella console **Strumenti** , fate doppio clic su **Pacchetti**).
+1. Nella schermata di benvenuto AEM, fate clic su **Pacchetti** (oppure, nella console **Strumenti** , fate doppio clic su **Pacchetti**).
 
 1. Selezionate quindi Gestione **** pacchetti.
 1. Fate clic su **Crea pacchetto**.
 
    >[!NOTE]
    >
-   >Se l’istanza include molti pacchetti, potrebbe essere presente una struttura di cartelle, per cui potete passare alla cartella di destinazione richiesta prima di creare il nuovo pacchetto.
+   >Se l’istanza include molti pacchetti, potrebbe essere presente una struttura di cartelle, in modo da poter passare alla cartella di destinazione richiesta prima di creare il nuovo pacchetto.
 
 1. Nella finestra di dialogo:
 
@@ -286,15 +289,15 @@ Per creare una nuova definizione di pacchetto:
 
 1. Aggiungete **[schermate](#package-screenshots)**al pacchetto come necessario. Quando viene creato il pacchetto, è disponibile un&#39;istanza; se necessario, aggiungete altro utilizzando **Package Screenshot**dalla barra laterale.
 
-   Aggiungete l’immagine effettiva facendo doppio clic sul componente immagine nell’area **Screenshots** , aggiungendo un’immagine e facendo clic su **OK**.
+   Per aggiungere l’immagine effettiva, fai doppio clic sul componente immagine nell’area **Screenshots** , aggiungi un’immagine e fai clic su **OK**.
 
 1. Per definire i filtri **[](#package-filters)**pacchetto, trascinate le istanze della definizione **del**filtro dalla barra laterale, quindi fate doppio clic per aprire la finestra di modifica:
 
    ![packagesfilter](assets/packagesfilter.png)
 
-   Specificate:
+   Specifica:
 
-   * **Percorso** radice Il contenuto da includere nel pacchetto; può essere la radice di un sottoalbero.
+   * **Percorso** directory principale Il contenuto da includere nel pacchetto; può essere la radice di un sottoalbero.
    * **Le regole** sono facoltative; per le definizioni di pacchetti semplici, non è necessario specificare regole di inclusione o esclusione.
 
       Se necessario, potete definire regole [****Includi** o **Escludi](#package-filters)per definire esattamente il contenuto del pacchetto.
@@ -329,15 +332,15 @@ Spesso un pacchetto viene creato contemporaneamente alla [creazione della defini
    >
    >Questo è particolarmente importante quando si sta ricreando un pacchetto in quanto il contenuto del pacchetto verrà sovrascritto.
 
-1. Fai clic su **OK**. AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come lo fa. Quando AEM è completo, viene visualizzata una conferma che il pacchetto è stato creato e (quando si chiude la finestra di dialogo) vengono aggiornate le informazioni dell&#39;elenco dei pacchetti.
+1. Fai clic su **OK**. AEM creare il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come lo è. Al termine del AEM viene visualizzata una conferma che il pacchetto è stato creato e (quando chiudete la finestra di dialogo) aggiorna le informazioni dell’elenco dei pacchetti.
 
 ### Rewrapping di un pacchetto {#rewrapping-a-package}
 
 Una volta creato, un pacchetto può essere reinserito, se necessario.
 
-Il rewrapping modifica le informazioni sul pacchetto *senza* modificarne il contenuto. Le informazioni sul pacchetto sono la miniatura, la descrizione e così via, ovvero tutto ciò che è possibile modificare con la finestra di dialogo Impostazioni **** pacchetto (per aprire questo clic su **Modifica**).
+Il rewrapping modifica le informazioni sul pacchetto *senza* modificarne il contenuto. Le informazioni sul pacchetto sono la miniatura, la descrizione, ecc., in altre parole tutto ciò che è possibile modificare con la finestra di dialogo Impostazioni **** pacchetto (per aprire questo clic su **Modifica**).
 
-Un caso di utilizzo principale per il rewrapping è la preparazione di un pacchetto per la condivisione del pacchetto. Ad esempio, potreste avere un pacchetto esistente e decidere di condividerlo con altri. Per aggiungere una miniatura, aggiungere una descrizione. Invece di ricreare l&#39;intero pacchetto con tutte le sue funzionalità (che potrebbero richiedere un po&#39; di tempo e comporta il rischio che il pacchetto non sia più identico all&#39;originale) potete reinserirlo e aggiungere semplicemente la miniatura e la descrizione.
+Un caso di utilizzo principale per il rewrapping è la preparazione di un pacchetto per la condivisione del pacchetto. Ad esempio, potreste avere un pacchetto esistente e decidere di condividerlo con altri utenti. Per aggiungere una miniatura, aggiungere una descrizione. Invece di ricreare l&#39;intero pacchetto con tutte le sue funzionalità (che potrebbero richiedere un po&#39; di tempo e comporta il rischio che il pacchetto non sia più identico all&#39;originale) potete reinserirlo e aggiungere semplicemente la miniatura e la descrizione.
 
 1. Aprite la definizione del pacchetto da Gestione **** pacchetti (fate clic sull&#39;icona o sul nome del pacchetto).
 
@@ -350,7 +353,7 @@ Un caso di utilizzo principale per il rewrapping è la preparazione di un pacche
 Per visualizzare o modificare le informazioni sulla definizione di un pacchetto:
 
 1. In Gestione pacchetti, andate al pacchetto da visualizzare.
-1. Fate clic sull&#39;icona del pacchetto da visualizzare. Viene aperta la pagina del pacchetto con le informazioni sulla definizione del pacchetto:
+1. Fate clic sull&#39;icona del pacchetto da visualizzare. Viene aperta la pagina del pacchetto in cui sono elencate le informazioni sulla definizione del pacchetto:
 
    ![packagesitemclicked-1](assets/packagesitemclicked-1.png)
 
@@ -387,23 +390,24 @@ Questa sezione descrive come scaricare un pacchetto da AEM al file system utiliz
 >
 >Da Condivisione pacchetti potete:
 >
->* scarica i pacchetti da [Package Share direttamente nella tua istanza](#downloading-and-installing-packages-from-package-share)AEM locale.\
+>* scaricate i pacchetti da [Package Share direttamente nell&#39;istanza](#downloading-and-installing-packages-from-package-share)AEM locale.\
    >  Al momento del download, il pacchetto viene importato nella directory archivio, dopodiché potete installarlo immediatamente nell&#39;istanza locale tramite **Gestione** pacchetti. Questi pacchetti includono hotfix e altri pacchetti condivisi.
    >
    >
-* scaricare pacchetti da [Package Share nel file system](#downloading-packages-to-your-file-system-from-package-share).
+* scaricate i pacchetti da [Package Share nel file system](#downloading-packages-to-your-file-system-from-package-share).
+
 >
 
 
 
-1. Nella schermata introduttiva di AEM, fate clic su **Pacchetti**, quindi selezionate Gestione **** pacchetti.
+1. Nella schermata di benvenuto AEM, fate clic su **Pacchetti**, quindi selezionate Gestione **** pacchetti.
 1. Passate al pacchetto da scaricare.
 
    ![packagesdownload](assets/packagesdownload.png)
 
 1. Fate clic sul collegamento formato dal nome del file ZIP (sottolineato) per il pacchetto da scaricare; ad esempio `export-for-offline.zip`.
 
-   AEM scarica il pacchetto nel computer (utilizzando una finestra di dialogo di download standard del browser).
+   AEM scarica il pacchetto sul computer (utilizzando una finestra di dialogo di download standard del browser).
 
 ### Caricamento di pacchetti dal file system {#uploading-packages-from-your-file-system}
 
@@ -425,7 +429,7 @@ Per caricare un pacchetto:
 
    * **File**
 
-      **È possibile digitare direttamente il nome del file oppure utilizzare** Sfoglia. per selezionare il pacchetto desiderato dal file system locale (dopo aver selezionato, fare clic su **OK**).
+      È possibile digitare direttamente il nome del file oppure utilizzare **Sfoglia.** per selezionare il pacchetto desiderato dal file system locale (dopo aver selezionato, fare clic su **OK**).
 
    * **Forza caricamento**
 
@@ -434,7 +438,7 @@ Per caricare un pacchetto:
 
    >[!NOTE]
    >
-   >Per rendere il contenuto disponibile ad AEM, accertatevi di [installare il pacchetto](#installing-packages).
+   >Per rendere il contenuto disponibile a AEM, accertatevi di [installare il pacchetto](#installing-packages).
 
 ### Convalida dei pacchetti {#validating-packages}
 
@@ -454,7 +458,7 @@ Queste opzioni sono descritte di seguito.
 
    **Elementi controllati**
 
-   Questa convalida esamina il pacchetto per tutti i file JAR (bundle OSGi), ne estrae `manifest.xml` (che contiene le dipendenze con le versioni da cui dipende il bundle OSGi) e verifica che l’istanza AEM esporti tali dipendenze con le versioni corrette.
+   Questa convalida esamina il pacchetto per tutti i file JAR (bundle OSGi), ne estrae `manifest.xml` (che contiene le dipendenze con le versioni da cui dipende il bundle OSGi) e verifica che l&#39;istanza AEM esporta tali dipendenze con le versioni corrette.
 
    **Come viene segnalato**
 
@@ -472,7 +476,7 @@ Queste opzioni sono descritte di seguito.
 
    **Elementi controllati**
 
-   Questa convalida determina se il pacchetto installato contiene un file già sovrapposto nell’istanza AEM di destinazione.
+   Questa convalida determina se il pacchetto installato contiene un file già sovrapposto nell&#39;istanza AEM di destinazione.
 
    Ad esempio, a partire da una sovrapposizione esistente in `/apps/sling/servlet/errorhandler/404.jsp`, un pacchetto che contiene `/libs/sling/servlet/errorhandler/404.jsp`, in modo da modificare il file esistente in `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -490,7 +494,7 @@ Queste opzioni sono descritte di seguito.
 
    >[!NOTE]
    >
-   >Il meccanismo di convalida non può essere conciliato se il contenuto sovrapposto è stato correttamente incorporato nel file della sovrapposizione. Pertanto, tale convalida continuerà a segnalare i conflitti anche dopo che saranno state apportate le modifiche necessarie.
+   >Il meccanismo di convalida non può essere conciliato se il contenuto sovrapposto è stato correttamente incorporato nel file della sovrapposizione. Pertanto, tale convalida continuerà a segnalare i conflitti anche dopo che saranno state apportate le necessarie modifiche.
 
 * **Convalida ACL**
 
@@ -504,7 +508,7 @@ Queste opzioni sono descritte di seguito.
 
    **Stati di errore**
 
-   Non è possibile fornire errori espliciti. La convalida indica semplicemente se le nuove autorizzazioni ACL verranno aggiunte o influenzate installando il pacchetto.
+   Non è possibile fornire errori espliciti. La convalida indica semplicemente se le nuove autorizzazioni ACL verranno aggiunte o influenzate dall&#39;installazione del pacchetto.
 
    **Risoluzione errori**
 
@@ -512,14 +516,14 @@ Queste opzioni sono descritte di seguito.
 
    >[!CAUTION]
    >
-   >Come procedura ottimale, si consiglia di evitare che i pacchetti influenzino gli ACL forniti da AEM, in quanto ciò potrebbe causare un comportamento imprevisto del prodotto.
+   >Come procedura ottimale, si consiglia di evitare che i pacchetti influenzino gli ACL forniti AEM, in quanto ciò potrebbe causare un comportamento inatteso del prodotto.
 
 #### Esecuzione della convalida {#performing-validation}
 
 La convalida dei pacchetti può essere eseguita in due modi diversi:
 
 * Tramite l’interfaccia utente di Gestione pacchetti
-* Tramite richiesta HTTP POST, ad esempio con cURL
+* Tramite richiesta POST HTTP, ad esempio con cURL
 
 >[!NOTE]
 >
@@ -538,9 +542,9 @@ La convalida dei pacchetti può essere eseguita in due modi diversi:
 
 1. Le convalida scelte vengono quindi eseguite. I risultati vengono visualizzati nel registro attività di Gestione pacchetti.
 
-**Convalida del pacchetto tramite richiesta HTTP POST**
+**Convalida del pacchetto tramite richiesta POST HTTP**
 
-La richiesta POST ha la seguente forma.
+La richiesta POST è costituita dal seguente modulo.
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 Il valore di `type` default è impostato su `osgiPackageImports` se non viene passato.
@@ -569,7 +574,7 @@ Di seguito è riportato un esempio di utilizzo di cURL per eseguire la convalida
 
 >[!NOTE]
 >
->La risposta a una richiesta HTTP POST di convalida sarà un oggetto JSON con i risultati della convalida.
+>La risposta a una richiesta di POST HTTP di convalida sarà un oggetto JSON con i risultati della convalida.
 
 ### Installazione dei pacchetti {#installing-packages}
 
@@ -583,14 +588,15 @@ Dopo aver caricato un pacchetto, dovete installare il contenuto. Per avere insta
 >
 >L&#39;installazione di un pacchetto può sovrascrivere o eliminare il contenuto esistente. Caricate un pacchetto solo se siete certi che non eliminerà o sovrascriverà il contenuto necessario.
 >
->Per visualizzare il contenuto o l’impatto di un pacchetto, potete:
+>Per visualizzare il contenuto o l’impatto di un pacchetto, potete effettuare le seguenti operazioni:
 >
 >* Eseguite un&#39;installazione di prova del pacchetto senza modificare il contenuto:\
    >  Aprite il pacchetto (fate clic sull&#39;icona o sul nome del pacchetto) e fate clic su **Test Install**(Prova installazione).
    >
    >
 * Consultate un elenco dei contenuti del pacchetto:\
-   >  Aprite il pacchetto e fate clic su **Contenuto**.
+   >  Aprite il pacchetto e fate clic su **Sommario**.
+
 >
 
 
@@ -622,7 +628,7 @@ La disattivazione di WorkflowLauncher assicura che il framework di Importazione 
    >
    >In alternativa, potete aprire il pacchetto facendo clic sulla relativa icona per accedere al pulsante **Installa** .
 
-1. Fate clic su **Installa** per avviare l&#39;installazione. Viene visualizzata una finestra di dialogo con richiesta di conferma ed elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
+1. Fate clic su **Installa** per avviare l&#39;installazione. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
 
    La parola **Installato** viene visualizzata accanto al pacchetto dopo che è stato installato.
 
@@ -650,7 +656,7 @@ AEM consente di disinstallare i pacchetti. Questa azione consente di ripristinar
 
 1. In Gestione pacchetti, andate al pacchetto da disinstallare.
 1. Fate clic sull&#39;icona del pacchetto da disinstallare.
-1. Fate clic su **Disinstalla** per rimuovere il contenuto del pacchetto dall&#39;archivio. Viene visualizzata una finestra di dialogo con richiesta di conferma ed elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
+1. Fate clic su **Disinstalla** per rimuovere il contenuto del pacchetto dall&#39;archivio. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
 
 ### Eliminazione di pacchetti {#deleting-packages}
 
@@ -666,6 +672,7 @@ Per eliminare un pacchetto dagli elenchi Gestione pacchetti:
 
    * Fare clic su **Elimina** nel menu della barra degli strumenti.
    * Fare clic con il pulsante destro del mouse e selezionare **Elimina**.
+
    ![packagesdelete](assets/packagesdelete.png)
 
 1. AEM richiede la conferma dell’eliminazione del pacchetto. Click **OK** to confirm the deletion.
@@ -702,7 +709,7 @@ Per accedere a Package Share:
 * Utilizzare la pagina [Accedi](#signing-in-to-package-share)
 * La prima volta che utilizzate la pagina di accesso dovrete:
 
-   * [Registrati per ottenere un ID](#registering-for-package-share) Adobe e/o per [convalidare l’ID Adobe esistente](#validating-your-adobe-id)
+   * [Registratevi per un Adobe ID](#registering-for-package-share)  e/o [convalidate il vostro Adobe ID  esistente](#validating-your-adobe-id)
    * in modo che sia possibile creare l&#39;account [di](#package-share-account) Package Share
 
 >[!NOTE]
@@ -711,22 +718,23 @@ Per accedere a Package Share:
 
 #### Accesso a Package Share {#signing-in-to-package-share}
 
-1. Nella schermata introduttiva di AEM, fate clic su **Strumenti** -> **Distribuzione**
+1. Nella schermata di benvenuto AEM, fate clic su **Strumenti** -> **Distribuzione**
 1. Quindi selezionate **Condivisione** pacchetti. Sarà necessario:
 
-   * accedere con il tuo Adobe ID
+   * accedere con il proprio Adobe ID 
    * [Creare un Adobe ID](#registering-for-package-share)
+
    >[!NOTE]
    >
-   >La prima volta che accedete con il vostro Adobe ID, dovete completare la [convalida del vostro indirizzo](#validating-your-adobe-id)e-mail.
+   >La prima volta che accedete con il vostro Adobe ID , dovete completare la [convalida del vostro indirizzo](#validating-your-adobe-id)e-mail.
 
    >[!NOTE]
    >
    >Se avete dimenticato la password, utilizzate i **problemi di accesso?** nella finestra di dialogo di accesso.
 
-#### Convalida dell’Adobe ID {#validating-your-adobe-id}
+#### Convalida dell&#39;Adobe ID  {#validating-your-adobe-id}
 
-La prima volta che accedete a Package Share con il vostro Adobe ID, l&#39;indirizzo e-mail verrà convalidato.
+La prima volta che accedete a Package Share con il vostro  Adobe ID, il vostro indirizzo e-mail verrà convalidato.
 
 1. Riceverai un messaggio e-mail contenente un collegamento.
 1. Fai clic su questo collegamento.
@@ -743,17 +751,17 @@ La prima volta che accedete a Package Share con il vostro Adobe ID, l&#39;indiri
 
 #### Registrazione per Package Share {#registering-for-package-share}
 
-Se avete bisogno di accedere a Package Share, dovrete registrarvi per un Adobe ID:
+Se avete bisogno di accedere a Package Share, dovrete registrarvi per un Adobe ID :
 
-* La pagina [di accesso di](#signing-in-to-package-share) Package Share offre un collegamento per la registrazione di un ID Adobe.
-* È possibile registrarsi per un Adobe ID da determinati software desktop Adobe.
-* In alternativa, potete effettuare la registrazione online nella pagina [di accesso di](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1)Adobe.
+* La pagina [di accesso di](#signing-in-to-package-share) Package Share offre un collegamento per la registrazione di un Adobe ID .
+* È possibile registrarsi per un Adobe ID  da determinati software desktop  Adobe.
+* In alternativa, è possibile registrarsi online sulla [pagina](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1)Adobe Sign In.
 
-Un ID Adobe può essere creato fornendo:
+È possibile creare un Adobe ID  fornendo:
 
 * il tuo indirizzo e-mail
 * una password a scelta
-* alcune informazioni aggiuntive come il vostro nome e il paese di residenza
+* alcune informazioni aggiuntive, come il vostro nome e il paese di residenza
 
 #### Account di condivisione del pacchetto {#package-share-account}
 
@@ -786,8 +794,8 @@ Package Share è disponibile solo quando il server AEM ha accesso a Internet sen
 
 I pacchetti di Package Share sono disposti in sottostrutture ad albero:
 
-* Pacchetti Adobe forniti da Adobe.
-* Pacchetti condivisi forniti da altre aziende e resi pubblici da Adobe.
+*  pacchetti di Adobe forniti dal Adobe .
+* Pacchetti condivisi forniti da altre aziende e resi pubblici dal Adobe .
 * I pacchetti aziendali privati.
 
 ![chlimage_1-346](assets/chlimage_1-346.png)
@@ -803,10 +811,10 @@ Potete anche modificare l&#39;operatore condizionale da OR a AND sul lato destro
 
 ### Download E Installazione Di Pacchetti Da Package Share {#downloading-and-installing-packages-from-package-share}
 
-Per scaricare pacchetti da Package Share e installarli nell&#39;istanza locale, è più semplice accedere a Package Share dalla propria istanza di AEM. Il pacchetto verrà scaricato e registrato immediatamente in Package Manager, da dove può essere installato.
+Per scaricare i pacchetti da Package Share e installarli nell&#39;istanza locale, è più semplice accedere a Package Share dall&#39;istanza AEM. Il pacchetto verrà scaricato e registrato immediatamente in Package Manager, da dove può essere installato.
 
-1. Nella schermata introduttiva di AEM, fate clic su **Strumenti**, quindi selezionate Condivisione **** pacchetti per aprire la pagina Condivisione pacchetti.
-1. Utilizzando i dettagli dell&#39;account, accedete a Package Share. Viene visualizzata la pagina di destinazione in cui sono elencati la cartella Adobe, la cartella condivisa e uno specifico per la società.
+1. Nella schermata di benvenuto AEM fate clic su **Strumenti**, quindi selezionate Condivisione **** pacchetti per aprire la pagina Condivisione pacchetti.
+1. Utilizzando i dettagli dell&#39;account, accedete a Package Share. Viene visualizzata la pagina di destinazione, in cui sono elencate la cartella  Adobe, la cartella condivisa e una specifica per la società.
 
    >[!NOTE]
    >
@@ -814,7 +822,7 @@ Per scaricare pacchetti da Package Share e installarli nell&#39;istanza locale, 
 
 1. Individuate il pacchetto da scaricare e fate clic su **Scarica**.
 
-1. Torna all’istanza di AEM o passa a Gestione **** pacchetti. Individuate il pacchetto appena scaricato.
+1. Tornate indietro o passate a Gestione **** pacchetti nell&#39;istanza AEM. Individuate il pacchetto appena scaricato.
 
    >[!NOTE]
    >
@@ -824,13 +832,13 @@ Per scaricare pacchetti da Package Share e installarli nell&#39;istanza locale, 
    Quindi in Gestione pacchetti nell’istanza locale il pacchetto verrà visualizzato anche in:
    **Pacchetti** > **Pubblico** > **Hotfix**
 
-1. Fate clic su **Installa** per installare il pacchetto nell&#39;installazione locale di AEM.
+1. Fate clic su **Installa** per installare il pacchetto nell&#39;installazione AEM locale.
 
    >[!NOTE]
    Se il pacchetto è già stato installato nell&#39;istanza, l&#39;indicatore **Installato** viene visualizzato accanto al pacchetto invece del pulsante **Installa** .
 
    >[!CAUTION]
-   L&#39;installazione di un pacchetto può sovrascrivere il contenuto esistente nella directory archivio. Pertanto, è consigliabile eseguire prima un&#39;installazione **di** prova. Questo consente di verificare se il contenuto del pacchetto contiene conflitti con il contenuto esistente.
+   L&#39;installazione di un pacchetto può sovrascrivere il contenuto esistente nella directory archivio. Pertanto, è consigliabile eseguire prima un&#39;installazione **di** prova. Questo consente di verificare se il contenuto del pacchetto contiene dei conflitti con il contenuto esistente.
 
 ### Download dei pacchetti nel file system da Package Share {#downloading-packages-to-your-file-system-from-package-share}
 
@@ -844,7 +852,7 @@ Per scaricare pacchetti da Package Share e installarli nell&#39;istanza locale, 
 
 Con Package Share (Condivisione pacchetti), potete caricare i pacchetti nell’area interna della società di condivisione dei pacchetti. Questo li rende disponibili per la condivisione all’interno della società.
 
-Questi pacchetti *non* sono disponibili per la community AEM generale, ma sono disponibili per tutti gli utenti registrati nella società.
+Questi pacchetti *non* sono disponibili per la comunità AEM generale, ma sono disponibili per tutti gli utenti registrati presso la tua azienda.
 
 Per caricare i pacchetti per la condivisione di pacchetti interna della società:
 
@@ -858,13 +866,13 @@ Non è possibile condividere i pacchetti nell&#39;elenco principale di Gestione 
 1. Fate clic su **Condividi** per aprire la finestra di dialogo per il caricamento del pacchetto in Package Share (Condivisione pacchetto).
 1. Se non avete già eseguito l&#39;accesso a Package Share, dovrete immettere le credenziali di accesso.
 
-   Una volta effettuato l’accesso, in AEM verranno visualizzati i dettagli sul pacchetto da caricare:
+   Una volta effettuato l’accesso, AEM visualizzare i dettagli sul pacchetto da caricare:
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
 1. Fate clic su **Condividi** per caricare il pacchetto nella condivisione pacchetti interna della società.
 
-   AEM visualizza lo stato e indica quando il pacchetto ha completato il caricamento. Dopo di che potete fare clic sulla **x** (angolo in alto a destra) per uscire dalla finestra Pacchetto **** condivisione.
+   AEM visualizza lo stato e indica quando il pacchetto ha completato il caricamento, dopodiché potete fare clic sulla **x** (angolo in alto a destra) per uscire dalla finestra Pacchetto **** condivisione.
 
 1. Al termine del caricamento, potete spostarvi nella cartella interna della società per visualizzare il pacchetto appena condiviso.
 
@@ -885,5 +893,5 @@ Potete eliminare solo i pacchetti che avete caricato procedendo come segue:
 
 ### Creazione di pacchetti semi-privati {#making-packages-semi-private}
 
-Potete condividere i pacchetti all&#39;esterno dell&#39;organizzazione, ma non pubblicamente. Questi pacchetti sarebbero considerati semi-privati. Per condividere questi pacchetti semi-privati, sarà necessario ricevere aiuto dal supporto Adobe. A questo scopo, aprite un ticket con il supporto Adobe per richiedere che il pacchetto sia disponibile all’esterno dell’organizzazione. Vi chiederà un elenco degli Adobe ID che desiderate concedere per l&#39;accesso ai pacchetti.
+Potete condividere i pacchetti all&#39;esterno dell&#39;organizzazione, ma non pubblicamente. Questi pacchetti sarebbero considerati semi-privati. Per condividere questi pacchetti semi-privati, è necessario ricevere assistenza  supporto del Adobe. A questo scopo, aprite un ticket con  Adobe Support che richiede di rendere disponibile un pacchetto all’esterno dell’organizzazione. Vi verrà chiesto un elenco di  Adobe ID che desiderate concedere l&#39;accesso ai pacchetti.
 
