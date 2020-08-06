@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
 Durante la [creazione](content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza la sintassi di *marketing* per consentire di scrivere facilmente i contenuti:
 
@@ -39,7 +42,7 @@ Durante la [creazione](content-fragments-variations.md#authoring-your-content), 
 
 ## Notazione titolo {#heading-notation}
 
-Per creare un&#39;intestazione, posizionate un tag hash (#) davanti all&#39;intestazione. Un tag hash (#) viene usato per un H1, due tag hash (##) per un H2 e così via È possibile utilizzare fino a 6 hashtag. Ad esempio:
+Per creare un&#39;intestazione, posizionate un tag hash (#) davanti all&#39;intestazione. Un tag hash (#) viene usato per un H1, due tag hash (##) per un H2 e così via. È possibile utilizzare fino a 6 hashtag. Ad esempio:
 
     `## This is an H2`
 
@@ -107,7 +110,7 @@ Un’immagine in stile Riferimento ha la sintassi seguente:
 
     `![Alt text][id]`
 
-Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferimenti immagine sono definiti utilizzando una sintassi identica ai riferimenti di collegamento:
+Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferimenti alle immagini sono definiti utilizzando una sintassi identica ai riferimenti ai collegamenti:
 
     `[id]: url/to/image "Optional title attribute"`
 
