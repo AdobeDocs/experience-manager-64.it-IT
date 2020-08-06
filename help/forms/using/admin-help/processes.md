@@ -22,7 +22,7 @@ ht-degree: 0%
 
 La pagina Elenco processi mostra i processi avviati da un utente o avviati automaticamente.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Flusso di lavoro Moduli. L&#39;elenco dei processi contiene le informazioni seguenti:
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Flusso di lavoro Forms. L&#39;elenco dei processi contiene le informazioni seguenti:
 
    **Nome processo - Versione:** Nome del processo, come definito in Workbench.
 
@@ -96,7 +96,7 @@ Quando si annulla la sospensione di un&#39;istanza di processo, il suo stato cam
 
 Quando si sospende un&#39;istanza di processo che ha richiamato altri processi (processi secondari) utilizzando l&#39;operazione di richiamo, anche i processi secondari vengono sospesi.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Flusso di lavoro Moduli.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Flusso di lavoro Forms.
 1. Nella pagina Istanza di processo, selezionate il processo e fate clic su Sospendi o Annulla sospensione.
 
 ### Terminare le istanze di un processo {#terminate-a-process-instances}
@@ -107,7 +107,7 @@ Se un&#39;operazione di un&#39;istanza di processo è stata bloccata o ha rileva
 
 Quando si interrompe un&#39;istanza di processo, il suo stato cambia in TERMINAZIONE, TERMINATA, e il processo si arresta al suo funzionamento corrente. Non vengono eseguite altre operazioni e tutte le operazioni e le attività associate vengono terminate.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Flusso di lavoro Moduli.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Flusso di lavoro Forms.
 1. Nella pagina Istanza processo, selezionate il processo e fate clic su Termina.
 
 ## Utilizzo dei dettagli dell’istanza di processo {#working-with-process-instance-details}
@@ -188,7 +188,7 @@ Quando si ripete un&#39;operazione, al flusso di lavoro Forms viene inviata una 
 
 La pagina Dettagli operazione mostra un riepilogo di un’operazione in un processo e delle assegnazioni utente correnti.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Flusso di lavoro Moduli.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Flusso di lavoro Forms.
 1. Fate clic sul nome di un processo per visualizzarne le istanze. Fate clic su un&#39;istanza di processo per visualizzare la pagina Dettagli istanza processo, quindi selezionate un&#39;operazione per visualizzare la pagina Dettagli operazione.
 
    Per ogni attività, l&#39;elenco mostra le informazioni seguenti:
