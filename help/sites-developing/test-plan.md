@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Se il progetto utilizza una qualsiasi forma di iterazione di sviluppo (che inclu
 
 * quali test saranno coperti in quale iterazione.
 * i risultati visualizzati per i test ripetuti in varie fasi.
-* che i test e i test prioritari sulle caratteristiche di base siano ripetuti a intervalli regolari.
+* che i test e i test di priorità sulle caratteristiche di base siano ripetuti a intervalli regolari.
 
 ## Tester
 
