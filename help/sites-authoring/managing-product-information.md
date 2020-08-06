@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
 source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 68%
 
 ---
 
@@ -153,6 +156,7 @@ Per configurare il flusso di lavoro **Servizio fotografico per prodotto**:
    * Ritocca servizio fotografico
    * Revisiona servizio fotografico
    * Sposta a produzione
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 Questa sezione descrive come integrare la gestione delle informazioni sul prodotto con il progetto creativo.
@@ -219,6 +223,7 @@ L’attività **Crea elenco di foto** consente al proprietario del progetto di s
    * Le risorse corrispondenti alla gerarchia del prodotto vengono create in una cartella con lo stesso nome del titolo del flusso di lavoro.
    * I metadati per le risorse diventano modificabili mediante la console delle risorse, anche prima che il fotografo inserisca le immagini.
    * Viene creata una cartella Servizio fotografico dove vengono memorizzate le immagini che fornisce il fotografo. La cartella Servizio fotografico contiene delle sottocartelle per ogni voce di prodotto nell’Elenco di foto.
+
    Per il flusso di lavoro del Servizio fotografico per prodotto (senza l’integrazione Commerce), la prima attività è Carica elenco di foto. Tocca o fai clic su **Carica elenco di foto** per caricare un file **shotlist.csv**. Il file CSV deve contenere l’ID del prodotto. Gli altri campi sono facoltativi. Puoi utilizzarli per associare le risorse ai prodotti.
 
 ### Carica attività elenco di foto {#upload-shot-list-task}
@@ -316,7 +321,7 @@ Puoi accedere alle risorse del progetto tramite l’interfaccia utente di Assets
 
 Tocca o fai clic sul livello successivo per visualizzare i prodotti in base alla gerarchia di dati di prodotto.
 
-I collaboratori del progetto creativo approvano le risorse con il prodotto a cui si fa riferimento. I metadati della risorsa vengono aggiornati con il riferimento al prodotto e le informazioni di base nella scheda **Product Data **, nelle proprietà della risorsa, che vengono visualizzate nella sezione Metadati risorsa AEM.
+I collaboratori del progetto creativo approvano le risorse con il prodotto a cui si fa riferimento. I metadati della risorsa vengono aggiornati con il riferimento al prodotto e le informazioni di base nella scheda **Product Data **AEM nelle proprietà della risorsa che vengono visualizzate nella sezione Metadati risorsa.
 
 >[!NOTE]
 Nel flusso di lavoro per il servizio fotografico per prodotto (senza l’integrazione Commerce), le immagini non approvate non sono associate ai prodotti.
