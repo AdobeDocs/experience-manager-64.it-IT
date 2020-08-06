@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 1fb11e02-d8f1-41a0-8e23-cb890b4e2244
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '593'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Conteggio di tutti i moduli inviati, di tutte le comunicazioni interattive, di d
 
 ## Introduzione {#introduction}
 
-I rapporti sulle transazioni in AEM Forms consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nella distribuzione di AEM Forms. L&#39;obiettivo è quello di fornire informazioni sull&#39;utilizzo dei prodotti e aiutare gli operatori aziendali a comprendere i volumi di elaborazione digitale. Esempi di una transazione:
+I rapporti sulle transazioni in  AEM Forms consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nella distribuzione  AEM Forms. L&#39;obiettivo è quello di fornire informazioni sull&#39;utilizzo dei prodotti e aiutare gli operatori aziendali a comprendere i volumi di elaborazione digitale. Esempi di una transazione:
 
 * Invio di un modulo adattivo, un modulo HTML5 o un set di moduli
 * Rendering di una versione cartacea o Web di una comunicazione interattiva
@@ -28,27 +31,27 @@ I rapporti sulle transazioni in AEM Forms consentono di tenere un conteggio di t
 
 Per ulteriori informazioni su ciò che viene considerato una transazione, vedi API [fatturabili](/help/forms/using/transaction-reports-billable-apis.md).
 
-La registrazione della transazione è disabilitata per impostazione predefinita. Puoi [abilitare la registrazione](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) delle transazioni dalla console Web di AEM. Potete visualizzare i rapporti sulle transazioni sulle istanze di creazione, elaborazione o pubblicazione. Visualizza rapporti sulle transazioni sulle istanze di creazione o elaborazione per una somma aggregata di tutte le transazioni. Visualizzare i rapporti sulle transazioni nelle istanze pubblicate per un conteggio di tutte le transazioni che si verificano solo sull&#39;istanza di pubblicazione da cui viene eseguito il rapporto.
+La registrazione della transazione è disabilitata per impostazione predefinita. È possibile [abilitare la registrazione](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) delle transazioni da AEM console Web. Potete visualizzare i rapporti sulle transazioni sulle istanze di creazione, elaborazione o pubblicazione. Visualizza rapporti sulle transazioni sulle istanze di creazione o elaborazione per una somma aggregata di tutte le transazioni. Visualizzare i rapporti sulle transazioni nelle istanze pubblicate per un conteggio di tutte le transazioni che si verificano solo sull&#39;istanza di pubblicazione da cui viene eseguito il rapporto.
 
-Non creare contenuti (moduli adattivi, comunicazioni interattive, temi e altre attività di authoring) e documenti di processo (flussi di lavoro, servizi documenti e altre attività di elaborazione) sulla stessa istanza di AEM. Tenere disattivata la registrazione delle transazioni per i server AEM Forms utilizzati per creare contenuto. Tenere attivata la registrazione delle transazioni per i server AEM Forms utilizzati per elaborare i documenti.
+Non creare contenuti (moduli adattivi, comunicazioni interattive, temi e altre attività di authoring) e documenti di processo (flussi di lavoro, servizi documenti e altre attività di elaborazione) nella stessa istanza di AEM. Tenere disattivata la registrazione della transazione per  server AEM Forms utilizzati per creare contenuto. Tenere attivata la registrazione delle transazioni per  server AEM Forms utilizzati per elaborare i documenti.
 
 ![sample-transaction-report-author-1](assets/sample-transaction-report-author-1.png)
 
 Una transazione rimane nel buffer per un periodo specificato (tempo buffer di scaricamento + tempo di replica inversa). Per impostazione predefinita, il conteggio delle transazioni impiega circa 90 secondi per riflettere nel rapporto delle transazioni.
 
-Azioni come l&#39;invio di un modulo PDF, l&#39;utilizzo dell&#39;interfaccia utente dell&#39;agente per visualizzare l&#39;anteprima di una comunicazione interattiva o l&#39;utilizzo di metodi di invio di moduli non standard non vengono considerate come transazioni. AEM Forms fornisce un&#39;API per registrare tali transazioni. Chiama l&#39;API dalle tue implementazioni personalizzate per registrare una transazione.
+Azioni come l&#39;invio di un modulo PDF, l&#39;utilizzo dell&#39;interfaccia utente dell&#39;agente per visualizzare l&#39;anteprima di una comunicazione interattiva o l&#39;utilizzo di metodi di invio di moduli non standard non vengono considerate come transazioni.  AEM Forms fornisce un&#39;API per registrare tali transazioni. Chiama l&#39;API dalle tue implementazioni personalizzate per registrare una transazione.
 
 ## Topologia supportata {#supported-topology}
 
-I rapporti sulle transazioni sono disponibili solo in AEM Forms nell&#39;ambiente OSGi. Supporta solo le topologie di creazione e pubblicazione, di elaborazione e di elaborazione. Ad esempio, topologie, consultate [Architettura e topologie di distribuzione per AEM Forms](/help/forms/using/transaction-reports-overview.md).
+I rapporti sulle transazioni sono disponibili solo su  AEM Forms nell&#39;ambiente OSGi. Supporta solo le topologie di creazione e pubblicazione, di elaborazione e di elaborazione. Ad esempio, topologie, vedere [Architettura e topologie di distribuzione per  AEM Forms](/help/forms/using/transaction-reports-overview.md).
 
 Il conteggio delle transazioni viene replicato in modo inverso dalle istanze di pubblicazione alle istanze di creazione o elaborazione. Di seguito è riportata una topologia indicativa per la pubblicazione dell’autore:
 
-![semplice autore-pubblicazione-topologia](assets/simple-author-publish-topology.png)
+![simple-author-publish-topology](assets/simple-author-publish-topology.png)
 
 >[!NOTE]
 >
->I rapporti sulle transazioni di AEM Forms non supportano topologie che contengono solo istanze di pubblicazione.
+> rapporti sulle transazioni AEM Forms non supporta topologie che contengono solo istanze di pubblicazione.
 
 ### Linee guida per l&#39;utilizzo dei rapporti sulle transazioni {#guidelines-for-using-transaction-reports}
 
