@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 5%
 
 ---
 
@@ -106,7 +109,7 @@ La comunicazione interattiva è l&#39;approccio predefinito e consigliato per cr
    <td>Nessuna interfaccia utente per la creazione dell'espressione condizionale</td> 
   </tr>
   <tr>
-   <td>Authoring</td> 
+   <td>Authoring  </td> 
    <td>Interfaccia di trascinamento per la creazione di canali Web e di stampa</td> 
    <td>Nessun meccanismo di trascinamento </td> 
   </tr>
