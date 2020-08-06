@@ -1,8 +1,8 @@
 ---
 title: Personalizzare le immagini utilizzate nelle azioni di route
 seo-title: Personalizzare le immagini utilizzate nelle azioni di route
-description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro LiveCycle AEM Forms.
-seo-description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro LiveCycle AEM Forms.
+description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro  LiveCycle AEM Forms.
+seo-description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro  LiveCycle AEM Forms.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -47,7 +47,7 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguite i pass
 
 ## Menu a comparsa azioni attività Elenco attività {#task-list-task-action-popup}
 
-1. Crea una finestra a comparsa di azioni elenco attività. Consulta [Creazione del codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro Moduli AEM. Richiede l&#39;utilizzo del pacchetto dev.
+1. Creare un elenco di attività a comparsa azioni, vedere [Creazione  codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro AEM Forms. Richiede l&#39;utilizzo del pacchetto dev.
 
 1. Copia `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
 
