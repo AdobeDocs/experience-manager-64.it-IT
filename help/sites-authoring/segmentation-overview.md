@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 translation-type: tm+mt
 source-git-commit: 9a1fe3265f1cd7907dfe576666a694b3c5b78d76
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 67%
 
 ---
 
@@ -71,7 +74,7 @@ Ad esempio, la combinazione dell’URL di riferimento (come tratto comportamenta
 
 **Campagna** Una campagna è una raccolta di pagine teaser e pagine di marketing e-mail, come newsletter o inviti. In genere una campagna ha una durata limitata e alla sua scadenza viene sostituita da un’altra campagna.
 
-**Paragrafo** teaser Questo è un paragrafo che estrae il contenuto da un’altra pagina a seconda di una strategia di selezione. Tale strategia di selezione può basarsi su segmenti e campagne.
+**Paragrafo** teaser Si tratta di un paragrafo che estrae il contenuto da un’altra pagina a seconda di una strategia di selezione. Tale strategia di selezione può basarsi su segmenti e campagne.
 
 **Elenco** Un elenco viene estratto da un segmento di utenti registrati. Ad esempio, la località da cui dipende il contenuto del paragrafo teaser.
 
