@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +42,7 @@ L&#39;invio anonimo di una revisione non è supportato. I visitatori del sito de
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.recensioni</td> 
+   <td>cq.social.hbs.reviews</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -61,7 +64,7 @@ L&#39;invio anonimo di una revisione non è supportato. I visitatori del sito de
 | **resourceType** | social/review/components/hbs/summary |
 |---|---|
 | [**inclusa **](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel *design *mode |
-| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.recensioni |
+| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **proprietà** | Vedere [Utilizzo delle revisioni](reviews.md) |
@@ -76,16 +79,16 @@ L&#39;invio anonimo di una revisione non è supportato. I visitatori del sito de
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso a revisioni registrate (UGC) {#accessing-posted-reviews-ugc}
+### Accesso a Recensioni registrate (UGC) {#accessing-posted-reviews-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.\
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;uso di uno store [](working-with-srp.md) comune per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
 * [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
