@@ -50,7 +50,7 @@ Di seguito sono elencate le risorse già create in questa esercitazione e necess
 
 **Immagini:** PayNow e ValueAddedServices
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione AEM e passate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -111,7 +111,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
 **Immagini:** PayNowWeb e ValueAddedServicesWeb
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione AEM e passate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -171,7 +171,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
    1. Toccate il componente di testo e selezionate ![Modifica](assets/edit.png) (Modifica).
    1. Nella sezione **Bordo** , specificate **1,5px** come Larghezza **** bordo, selezionate **Uniforme** come Stile ******** **** bordo e specificate46pxcome raggio di bordo fisso.
    1. Selezionate Rosso come colore di sfondo per il pulsante dalla sezione **Sfondo** .
-   1. Nel campo **Margine** per **Dimensioni e posizione** , toccate l’icona **Modifica simultaneamente** e impostate il margine **destro** su **450 pixel**. I campi In alto, In basso e A sinistra sono impostati come vuoti.
+   1. Nel campo **Margine** per **Dimension e posizione** , toccate l’icona **Modifica simultaneamente** e impostate il margine **destro** su **450 pixel**. I campi In alto, In basso e A sinistra sono impostati come vuoti.
 
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
@@ -192,7 +192,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
 Per derivare il contenuto del canale Web utilizzando il canale di stampa, eseguire la procedura seguente:
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione AEM e passate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
