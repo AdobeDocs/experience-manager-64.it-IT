@@ -1,6 +1,6 @@
 ---
-title: Flussi di lavoro JEE Forms | Gestione dei dati utente
-seo-title: Flussi di lavoro JEE Forms | Gestione dei dati utente
+title: Flussi di lavoro Forms JEE | Gestione dei dati utente
+seo-title: Flussi di lavoro Forms JEE | Gestione dei dati utente
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -16,21 +16,21 @@ ht-degree: 0%
 ---
 
 
-# Flussi di lavoro JEE Forms | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
+# Flussi di lavoro Forms JEE | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
 
-I flussi di lavoro AEM Forms JEE forniscono strumenti per progettare, creare e gestire i processi aziendali. Un processo di workflow consiste in una serie di passaggi eseguiti in un ordine specificato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. Un processo può interagire con risorse, account utente e servizi e può essere attivato utilizzando uno dei seguenti metodi:
+ flussi di lavoro AEM Forms JEE forniscono strumenti per progettare, creare e gestire i processi aziendali. Un processo di workflow consiste in una serie di passaggi eseguiti in un ordine specificato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. Un processo può interagire con risorse, account utente e servizi e può essere attivato utilizzando uno dei seguenti metodi:
 
-* Avvio di un processo da AEM Forms Workspace
+* Avvio di un processo da  AEM Forms Workspace
 * Utilizzo del servizio SOAP o RESTful
 * Invio di un modulo adattivo
 * Utilizzo della cartella esaminata
 * Utilizzo di e-mail
 
-Per ulteriori informazioni sulla creazione del processo di flusso di lavoro AEM Forms JEE, consultate la Guida [di](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)Workbench.
+Per ulteriori informazioni sulla creazione  processo del flusso di lavoro AEM Forms JEE, vedere la Guida [di](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)Workbench.
 
 ## Archivio dati utente e data {#user-data-and-data-stores}
 
-Quando un processo viene avviato e in corso, acquisisce i dati sui partecipanti al processo, i dati immessi dai partecipanti nel modulo associato al processo e gli allegati aggiunti al modulo. I dati vengono memorizzati nel database del server AEM Forms JEE e, se configurato, alcuni dati come gli allegati vengono memorizzati nella directory Global Document Storage (GDS). La directory GDS può essere configurata su un file system condiviso o su un database.
+Quando un processo viene avviato e in corso, acquisisce i dati sui partecipanti al processo, i dati immessi dai partecipanti nel modulo associato al processo e gli allegati aggiunti al modulo. I dati vengono memorizzati  database del server AEM Forms JEE e, se configurato, alcuni dati come gli allegati vengono memorizzati nella directory Global Document Storage (GDS). La directory GDS può essere configurata su un file system condiviso o su un database.
 
 ## Accesso ed eliminazione dei dati utente {#access-and-delete-user-data}
 
@@ -39,14 +39,14 @@ Quando viene attivato un processo, un ID univoco dell’istanza di processo e un
 Tuttavia, non potete identificare l’ID dell’istanza di processo per un iniziatore nei seguenti scenari:
 
 * **Processo avviato tramite una cartella** controllata: Un&#39;istanza di processo non può essere identificata utilizzando il relativo iniziatore se il processo viene avviato da una cartella esaminata. In questo caso, le informazioni utente sono codificate nei dati memorizzati.
-* **Processo avviato dall’istanza** AEM di pubblicazione: Tutte le istanze del processo attivate dall’istanza di pubblicazione AEM non acquisiscono informazioni sul iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
+* **Processo avviato dall’istanza** pubblica AEM: Tutte le istanze di processo attivate AEM&#39;istanza di pubblicazione non acquisiscono informazioni sull&#39;iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
 * **Processo avviato tramite e-mail**: L&#39;ID e-mail del mittente viene acquisito come proprietà in una colonna BLOB opaca della tabella del `tb_job_instance` database, che non può essere interrogata direttamente.
 
 ### Identificare gli ID dell’istanza del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
 
 Effettuate le seguenti operazioni per identificare gli ID dell’istanza di processo per un iniziatore di flusso di lavoro o un partecipante:
 
-1. Eseguite il comando seguente nel database del server AEM Forms per recuperare l’ID principale per l’iniziatore di workflow o il partecipante dalla tabella del `edcprincipalentity` database.
+1. Eseguite il seguente comando  database del server AEM Forms per recuperare l&#39;ID principale per l&#39;iniziatore di workflow o il partecipante dalla tabella del `edcprincipalentity` database.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -147,7 +147,7 @@ Le attività orfane sono le attività il cui processo di contenimento è stato a
 
 Dopo aver ottenuto gli ID attività, effettuate le seguenti operazioni per eliminare i file e i dati associati con un&#39;attività orfana da GDS e database.
 
-1. Per recuperare gli ID per gli ID attività identificati, eseguite il comando seguente nel database del server AEM Forms.
+1. Esegui il seguente comando  database del server AEM Forms per recuperare gli ID per gli ID attività identificati.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -187,7 +187,7 @@ Dopo aver ottenuto gli ID attività, effettuate le seguenti operazioni per elimi
 
 
 
-1. Per eliminare i dati per gli ID attività dal database del server AEM Forms, eseguite i seguenti comandi:
+1. Per eliminare i dati per gli ID attività dal database del server AEM Forms , eseguite i seguenti comandi:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>
