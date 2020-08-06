@@ -12,13 +12,16 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 1%
 
 ---
 
 
 # Modelli{#templates}
 
-I modelli vengono utilizzati in vari punti di AEM:
+I modelli vengono utilizzati in vari punti della AEM:
 
 * When [creating a page you need to select a template](#templates-pages); this will be used as the base for the new page. The template defines the structure of the resultant page, any initial content and the [components](/help/sites-authoring/default-components.md) that can be used (design properties).
 
@@ -33,7 +36,7 @@ Vengono descritti in dettaglio i seguenti modelli:
 
 ## Modelli - Pagine {#templates-pages}
 
-AEM offre ora due tipi di modelli di base per la creazione di pagine:
+AEM ora offre due tipi di modelli di base per la creazione di pagine:
 
 >[!NOTE]
 >
@@ -60,14 +63,14 @@ I vantaggi dei modelli modificabili:
 
 >[!NOTE]
 >
->È disponibile un articolo della community AEM che spiega come sviluppare un sito Experience Manager con Modelli modificabili. Consultate [Creazione di un sito Web Adobe Experience Manager 6.4 tramite Modelli](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)modificabili.
+>È disponibile un articolo AEM comunità che spiega come sviluppare un sito di Experience Manager  con Modelli modificabili. Consultate [Creazione di un sito Web Adobe Experience Manager 6.4 tramite Modelli](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)modificabili.
 
 ### Modelli statici {#static-templates}
 
 Modelli statici:
 
 * Devono essere definiti e configurati dai tuoi sviluppatori.
-* Questo era il sistema di modelli originale di AEM ed è disponibile per molte versioni.
+* Questo era il modello originale di AEM ed è stato disponibile per molte versioni.
 * Un modello statico è una gerarchia di nodi con la stessa struttura della pagina da creare, ma senza alcun contenuto effettivo.
 * Vengono copiate per creare la nuova pagina, dopo di essa non esiste alcuna connessione dinamica.
 * Uses [Design Mode](/help/sites-authoring/default-components-designmode.md) to persist design properties.
@@ -76,9 +79,9 @@ Modelli statici:
 
 >[!NOTE]
 >
->A partire da AEM 6.4, l’utilizzo di Modelli statici non è considerato una best practice. Utilizzate invece Modelli modificabili.
+>A partire dal AEM 6.4, l’uso di Modelli statici non è considerato una procedura ottimale. Utilizzate invece Modelli modificabili.
 >
->[Gli strumenti di modernizzazione](modernization-tools.md) AEM consentono di migrare da modelli statici a modelli modificabili.
+>[AEM gli strumenti di modernizzazione](modernization-tools.md) consentono di migrare da modelli statici a modelli modificabili.
 
 ### Disponibilità del modello {#template-availability}
 
@@ -86,7 +89,7 @@ Modelli statici:
 >
 >AEM offre più proprietà per controllare i modelli consentiti in **Siti**. Tuttavia, combinarle può portare a regole molto complesse che sono difficili da monitorare e gestire.
 >
->Adobe consiglia pertanto di iniziare in modo semplice definendo:
+>Pertanto,  Adobe consiglia di iniziare in modo semplice, definendo:
 >
 >* solo la `cq:allowedTemplates` proprietà
    >
@@ -102,7 +105,7 @@ Ad esempio, consulta We.Retail: `/content/we-retail/jcr:content`
 
 Quando si crea una nuova pagina nell’interfaccia di amministrazione del sito, l’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle limitazioni alla posizione specificate in ciascun modello.
 
-Le proprietà seguenti determinano se un modello `T` può essere utilizzato per inserire una nuova pagina come figlio di una pagina `P`. Ciascuna di queste proprietà è una stringa con più valori contenente zero o più espressioni regolari utilizzate per la corrispondenza con i percorsi:
+Le proprietà seguenti determinano se un modello `T` può essere utilizzato per inserire una nuova pagina come figlio di una pagina `P`. Ciascuna di queste proprietà è una stringa con più valori che contiene zero o più espressioni regolari utilizzate per la corrispondenza con i percorsi:
 
 * La `cq:allowedTemplates` proprietà del `jcr:content` nodo secondario di `P` o di un predecessore di `P`.
 
@@ -120,7 +123,7 @@ La valutazione funziona come segue:
 
 * Se entrambe le proprietà di cui sopra sono vuote o inesistenti, `T` viene rifiutato a meno che non appartengano alla stessa applicazione di `P`. `T` appartiene alla stessa applicazione come `P` if e solo se il nome del secondo livello del percorso `T` è uguale al nome del secondo livello del percorso di `P`. Ad esempio, il modello `/apps/geometrixx/templates/foo` appartiene alla stessa applicazione della pagina `/content/geometrixx`.
 
-* Se `T` esiste una `allowedParents` proprietà non vuota, ma nessuno dei valori corrisponde al percorso di `P`, `T` viene rifiutato.
+* Se `T` è presente una `allowedParents` proprietà non vuota, ma nessuno dei valori corrisponde al percorso di `P`, `T` viene rifiutato.
 
 * Se il modello di `P` dispone di una `allowedChildren` proprietà non vuota, ma nessuno dei valori corrisponde al percorso di `T`, `T` viene rifiutato.
 
