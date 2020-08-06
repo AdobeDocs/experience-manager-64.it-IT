@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Linee guida, suggerimenti e trucchi {#guidelines-tips-and-tricks}
 
-L&#39;utilizzo di AEM Communities si è evoluto passando dall&#39;essere fortemente dipendenti dalle pagine Java Server alla flessibilità nella scelta di modelli di linguaggi di script in cui logica aziendale, stile e contenuto delle pagine sono diversi l&#39;uno dall&#39;altro.
+L&#39;utilizzo di  AEM Communities è passato dall&#39;essere fortemente dipendente dalle pagine Java Server alla flessibilità nella scelta di modelli di linguaggi di script in cui logica aziendale, stile e contenuto delle pagine sono diversi l&#39;uno dall&#39;altro.
 
 Un&#39;ulteriore flessibilità nell&#39;utilizzo dei contenuti generati dall&#39;utente (UGC) è garantita dall&#39;API SocialResourceProvider, che elimina la necessità di conoscere quale opzione [SRP](srp.md) è stata scelta per la distribuzione.
 
-Di seguito sono riportate diverse linee guida e procedure ottimali per gli sviluppatori di AEM Communities:
+Di seguito sono riportate diverse linee guida e procedure ottimali per  sviluppatori AEM Communities:
 
 ### Codice {#code}
 
