@@ -1,6 +1,6 @@
 ---
 title: Configurare AEM Assets con Brand Portal
-description: 'Scopri come configurare Risorse AEM con il Portale del marchio per la pubblicazione di risorse e raccolte nel Portale del marchio. '
+description: 'Scoprite come configurare  AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) Assets è configurato con Brand Portal tramite Ad
 
 >[!NOTE]
 >
->La configurazione di AEM Assets con il Portale del marchio tramite Adobe I/O è supportata in AEM 6.4.8.0 e versioni successive.
+>La configurazione  AEM Assets con Portale marchio tramite  I/O Adobe è supportata in AEM 6.4.8.0 e versioni successive.
 >
 >Precedentemente, Brand Portal era stato configurato nell’interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione.
 
@@ -26,12 +26,12 @@ Adobe Experience Manager (AEM) Assets è configurato con Brand Portal tramite Ad
 >
 >***Solo per i clienti esistenti***
 >
->Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth precedente, eliminate la configurazione esistente e create una nuova configurazione tramite Adobe I/O.
+>Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth legacy, eliminare la configurazione esistente e creare una nuova configurazione tramite  I/O Adobe.
 
 
 Questa guida descrive i due casi d’uso seguenti:
-* [Nuova configurazione](#configure-new-integration-64): Se sei un nuovo utente del Brand Portal e vuoi configurare l’istanza di creazione di Risorse AEM con Brand Portal, puoi creare una nuova configurazione in Adobe I/O.
-* [Configurazione](#upgrade-integration-64)aggiornamento: Se sei un utente esistente di Brand Portal con l’istanza di creazione di Risorse AEM configurata con Brand Portal su gateway OAuth, è consigliabile eliminare le configurazioni esistenti e creare una nuova configurazione su Adobe I/O.
+* [Nuova configurazione](#configure-new-integration-64): Se siete un nuovo utente di Brand Portal e desiderate configurare ’istanza di creazione AEM Assets con Brand Portal, potete creare una nuova configurazione  I/O Adobe.
+* [Configurazione](#upgrade-integration-64)aggiornamento: Se siete già utenti di Brand Portal con l’istanza di creazione  AEM Assets configurata con Brand Portal su OAuth Gateway legacy, è consigliabile eliminare le configurazioni esistenti e creare una nuova configurazione  I/O Adobe.
 
 Le informazioni fornite si basano sul presupposto che chiunque legga la presente Guida abbia familiarità con le seguenti tecnologie:
 
@@ -43,36 +43,36 @@ Le informazioni fornite si basano sul presupposto che chiunque legga la presente
 
 Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 
-* Un’istanza di creazione di AEM Assets con l’ultimo Service Pack.
+* Un’istanza di creazione di  AEM Assets con l’ultimo Service Pack.
 * URL del tenant di Brand Portal.
 * Un utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant di Brand Portal.
 
 
-[Scaricare e installare AEM 6.4](#aemquickstart)
+[Download e installazione AEM 6.4](#aemquickstart)
 
-[Scarica e installa la versione più recente di AEM Service Pack](#servicepack)
+[Download e installazione della versione più recente di AEM Service Pack](#servicepack)
 
-### Scaricare e installare AEM 6.4 {#aemquickstart}
+### Download e installazione AEM 6.4 {#aemquickstart}
 
-È consigliabile disporre di AEM 6.4 per configurare un’istanza di creazione AEM. Se AEM non è già operativo, scaricatelo dai seguenti percorsi:
+Si consiglia di AEM 6.4 per impostare un’istanza AEM di creazione. Se non disponete di AEM pronti, scaricatelo dalle seguenti posizioni:
 
-* Se siete già clienti AEM, scaricate AEM 6.4 dal sito Web [delle licenze](http://licensing.adobe.com)Adobe.
+* Se siete già clienti AEM, scaricate AEM 6.4 dal sito Web [delle licenze di](http://licensing.adobe.com)Adobe.
 
-* Se sei un partner Adobe, utilizza [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) per richiedere AEM 6.4.
+* Se siete un partner  Adobe, utilizzate [programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) di formazione per i partner del Adobe per richiedere AEM 6.4.
 
-Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza di creazione AEM, consultate [Implementazione e manutenzione](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
+Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza AEM di creazione, consultate [Implementazione e manutenzione](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
-### Download e installazione dell&#39;ultimo Service Pack di AEM {#servicepack}
+### Download e installazione AEM Service Pack più recente {#servicepack}
 
 Per istruzioni dettagliate, vedete
 
 * [Note sulla versione di AEM 6.4 Service Pack](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Contatta l’Assistenza** clienti se non riesci a trovare il pacchetto AEM o il Service Pack più recente.
+**Se non riesci a trovare il pacchetto di AEM o il Service Pack più recente, contatta l’Assistenza** clienti.
 
 ## Creare la configurazione {#configure-new-integration-64}
 
-Se stai configurando Risorse AEM con Brand Portal per la prima volta, effettua i seguenti passaggi nella sequenza elencata:
+Effettuate i seguenti passaggi nella sequenza elencata se state configurando  AEM Assets con Brand Portal per la prima volta:
 1. [Recuperare il certificato pubblico](#public-certificate)
 1. [Creare l’integrazione di Adobe I/O](#createnewintegration)
 1. [Creare la configurazione dell’account IMS](#create-ims-account-configuration)
@@ -92,7 +92,7 @@ La configurazione IMS prevede due passaggi:
 
 Il certificato pubblico consente di autenticare il profilo su Adobe I/O.
 
-1. Accedi all’istanza di creazione di Risorse AEMURL predefinito: http:// localhost:4502/aem/start.html
+1. Effettuate il login all’istanza di creazione  AEM AssetsURL predefinito: http:// localhost:4502/aem/start.html
 1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png), passa a **[!UICONTROL Protezione]** >> **[!UICONTROL Configurazioni Adobe IMS]**.
 
    ![Interfaccia utente di configurazione dell’account Adobe IMS](assets/ims-config1.png)
@@ -206,7 +206,7 @@ Verifica di aver eseguito i seguenti passaggi:
 
 Per creare la configurazione del servizio cloud di Brand Portal, effettua le seguenti operazioni:
 
-1. Accedi all’istanza di creazione di Risorse AEM
+1. Effettuate il login all’istanza di creazione  AEM Assets
 
    URL predefinito: http:// localhost:4502/aem/start.html
 1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png), passa a **[!UICONTROL Cloud Services >> AEM Brand Portal]**.
@@ -223,11 +223,11 @@ Per creare la configurazione del servizio cloud di Brand Portal, effettua le seg
 
    ![](assets/create-cloud-service.png)
 
-1. Fai clic su **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud. L’istanza di creazione di AEM Assets ora è integrata con il tenant del Brand Portal.
+1. Fai clic su **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud. L’istanza di creazione  AEM Assets ora è integrata con il tenant del Brand Portal.
 
 ### Verificare la configurazione {#test-integration}
 
-1. Accedi all’istanza di creazione di Risorse AEM
+1. Effettuate il login all’istanza di creazione  AEM Assets
 
    URL predefinito: http:// localhost:4502/aem/start.html
 
@@ -277,12 +277,12 @@ Per creare la configurazione del servizio cloud di Brand Portal, effettua le seg
    >
    >Evitare di disattivare gli agenti di replica, in quanto potrebbe causare errori di replica di alcune risorse.
 
-Brand Portal è stato configurato correttamente con l’istanza di creazione di Risorse AEM. Ora puoi:
+Brand Portal è stato configurato correttamente con l’istanza di creazione  AEM Assets. Ora puoi:
 
 * [Pubblicare risorse da AEM Assets su Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Pubblicare cartelle da AEM Assets su Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Pubblicare raccolte da AEM Assets su Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configurare l’origine](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse in Risorse AEM.
+* [Configurare l’origine](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse per  AEM Assets.
 
 ## Aggiornamento della configurazione {#upgrade-integration-64}
 
@@ -293,9 +293,9 @@ Per aggiornare le configurazioni esistenti, eseguite i seguenti passaggi nella s
 
 ### Verificare i processi in esecuzione {#verify-jobs}
 
-Prima di apportare eventuali modifiche, accertati che nell’istanza di creazione di Risorse AEM non sia in esecuzione alcun processo di pubblicazione. A tal fine, è possibile verificare tutti e quattro gli agenti di replica e assicurarsi che la coda sia ideale/vuota.
+Prima di apportare eventuali modifiche, verificate che nessun processo di pubblicazione sia in esecuzione nell’istanza di authoring  AEM Assets. A tal fine, è possibile verificare tutti e quattro gli agenti di replica e assicurarsi che la coda sia ideale/vuota.
 
-1. Accedi all’istanza di creazione di Risorse AEM
+1. Effettuate il login all’istanza di creazione  AEM Assets
 
    URL predefinito: http:// localhost:4502/aem/start.html
 
@@ -322,7 +322,7 @@ Prima di apportare eventuali modifiche, accertati che nell’istanza di creazion
 
 Per eliminare la configurazione esistente, effettuate le seguenti operazioni:
 
-1. Accedi all’istanza di creazione di Risorse AEM e apri CRX Lite come amministratore.
+1. Accedete all’istanza di creazione di  AEM Assets e aprite CRX Lite come amministratore.
 
    URL predefinito: http:// localhost:4502/crx/de/index.jsp
 
@@ -330,7 +330,7 @@ Per eliminare la configurazione esistente, effettuate le seguenti operazioni:
 
    ![](assets/delete-replication-agent.png)
 
-1. Andate a `/etc/cloudservices/mediaportal` ed eliminate la configurazione **del servizio** Cloud.
+1. Individuate `/etc/cloudservices/mediaportal` ed eliminate la configurazione **del** Cloud Service.
 
    ![](assets/delete-cloud-service.png)
 
@@ -339,7 +339,7 @@ Per eliminare la configurazione esistente, effettuate le seguenti operazioni:
    ![](assets/delete-mac-user.png)
 
 
-Ora puoi [creare la configurazione](#configure-new-integration-64) sull’istanza di creazione di AEM 6.4 su Adobe I/O.
+Ora potete [creare la configurazione](#configure-new-integration-64) nell’istanza di authoring AEM 6.4 sull’I/O  Adobe.
 
 
 
