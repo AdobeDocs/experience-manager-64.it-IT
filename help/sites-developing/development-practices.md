@@ -1,8 +1,8 @@
 ---
 title: Pratiche di sviluppo
 seo-title: Pratiche di sviluppo
-description: Best practice per lo sviluppo su AEM
-seo-description: Best practice per lo sviluppo su AEM
+description: Best practice per lo sviluppo di AEM
+seo-description: Best practice per lo sviluppo di AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +39,9 @@ Senza un DoD ben definito, è facile finire in una situazione in cui molte cose 
 
 Cose come i livelli di rientro e lo spazio vuoto possono non sembrare importanti, ma avere un codice formattato correttamente va molto lontano verso la leggibilità e la manutenzione. Le convenzioni dovrebbero essere discusse e concordate come squadra e seguite nel codice.
 
-### Obiettivo per una copertura di prova elevata {#aim-for-high-test-coverage}
+### Obiettivo per una copertura di prova elevata  {#aim-for-high-test-coverage}
 
-Con l&#39;aumento delle dimensioni dell&#39;implementazione di un progetto, il tempo necessario per eseguire il test sarà pari a quello necessario. Senza una buona copertura di test, il team di test non sarà in grado di scalare e gli sviluppatori alla fine saranno sepolti in bug.
+Con l&#39;aumento delle dimensioni dell&#39;implementazione di un progetto, il tempo necessario per eseguire il test sarà pari a quello necessario. Senza una buona copertura di test, il team di test non sarà in grado di scalare e gli sviluppatori finiranno per essere sepolti in bug.
 
 Gli sviluppatori devono praticare il TDD, scrivendo test di unità non riusciti prima del codice di produzione che soddisferà i loro requisiti. Il QA dovrebbe creare un insieme automatizzato di test di accettazione per garantire che il sistema funzioni come previsto da un livello elevato.
 
@@ -60,9 +63,9 @@ Se l&#39;esecuzione dei test di unità richiede molto tempo, gli sviluppatori no
 
 Gli strumenti di analisi del codice possono essere utili, ma solo se i loro rapporti portano all’azione del team di sviluppo. Senza l&#39;ottimizzazione dell&#39;analisi fornita da questi strumenti, le raccomandazioni generate non saranno rilevanti e perderanno il loro valore.
 
-### Segui la regola del boy scout {#follow-the-boy-scout-rule}
+### Segui la regola di Scout  ragazzo {#follow-the-boy-scout-rule}
 
-I boy scout hanno una regola: &quot;Lascialo meglio di quanto lo trovi.&quot; Finché tutti i membri del team di sviluppo aderiranno a questa regola e ripuliranno qualcosa quando incontreranno un casino, il codice migliorerà costantemente.
+I Scout  Ragazzo hanno una regola: &quot;Lascialo meglio di quanto lo trovi.&quot; Finché tutti i membri del team di sviluppo aderiranno a questa regola e ripuliranno qualcosa quando incontreranno un casino, il codice migliorerà costantemente.
 
 ### Evitare di implementare le funzioni YAGNI {#avoid-implementing-yagni-features}
 
