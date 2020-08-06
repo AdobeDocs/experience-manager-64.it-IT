@@ -13,7 +13,7 @@ ht-degree: 13%
 
 # Schemi metadati {#metadata-schemas}
 
-In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via. È possibile utilizzare l&#39;editor Moduli schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
+In [!DNL Experience Manager Assets]uno schema di metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse che utilizzano lo schema specifico. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e così via. Potete usare l’editor Forms Schema metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
 Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
@@ -29,7 +29,7 @@ Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettu
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, vedere [Modifica dei moduli](metadata-schemas.md#editing-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno `jpeg` schema in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `IMAGE/JPEG`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
+   Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modifica dello schema di metadati Forms](metadata-schemas.md#editing-metadata-schema-forms) . Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno `jpeg` schema in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `IMAGE/JPEG`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
 ## Moduli schema metadati {#default-metadata-schema-forms}
 
@@ -41,7 +41,7 @@ Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
 |  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Modulo schema per video Dynamic Media. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Modulo di schema per video Contenuti multimediali dinamici. |
 |  | <ul><li> [!UICONTROL immagine]</li></ul> | Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio immagine/jpeg, immagine/png e così via. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con sottotipo [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME &quot;application&quot;, ad esempio application/ pdf, application/ zip e così via. <br>[!UICONTROL pdf]: Modulo schema per risorse con sottotipo pdf. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse con tipo MIME &quot;video&quot;, ad esempio video/avi, video/mp4 e così via. |
@@ -183,11 +183,11 @@ Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona **[!UICONTROL E
 
 >[!NOTE]
 >
->Non è possibile eliminare i moduli di schema di metadati out-of-the-box in AEM Assets.
+>Non è possibile eliminare i moduli di schema di metadati out-of-the-box in  AEM Assets.
 
 ## Moduli schema per tipi MIME {#schema-forms-for-mime-types}
 
-I AEM Assets forniscono moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
+ AEM Assets fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
 ### Aggiunta di nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
 
@@ -204,7 +204,7 @@ In questo caso, create un nuovo nodo `/etc/dam/metadataeditor/mimetypemappings` 
 | `exposedmimetype` | Nome del modulo esistente da mappare | `String` | `image/jpeg` |
 | `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39; `exposedmimetype` attributo | `String` | `image/png` |
 
-I AEM Assets mappano i seguenti tipi MIME e moduli di schema:
+ AEM Assets mappa i seguenti tipi MIME e moduli di schema:
 
 | Modulo schema | Tipi MIME |
 |---|---|
@@ -226,7 +226,7 @@ La funzione dello schema di metadati è disponibile solo per gli amministratori.
 
 ## Applicare metadati specifici per le cartelle {#applying-folder-specific-metadata}
 
-AEM Assets consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
+ AEM Assets consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
 
 Ad esempio, potete definire una variante dello schema di metadati predefinito e applicarlo a una cartella. Quando applicate lo schema modificato, questo sostituisce lo schema di metadati predefinito originale applicato alle risorse all&#39;interno della cartella.
 
@@ -243,13 +243,13 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. Nella pagina Moduli **[!UICONTROL schema]** metadati, selezionare il `my_default` modulo, quindi fare clic su **[!UICONTROL Modifica]**.
+1. Nella pagina Forms **[!UICONTROL Schema]** metadati, selezionate il `my_default` modulo, quindi fate clic su **[!UICONTROL Modifica]**.
 
 1. Nella pagina Editor **[!UICONTROL schema]** metadati, aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** .
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati.
 1. Toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -279,14 +279,14 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** . Per applicare i metadati personalizzati a una cartella, selezionate il modulo e toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati. Per applicare i metadati personalizzati a una cartella, selezionate il modulo e toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti.
 
 1. Individuate la cartella e caricate alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede delle risorse viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. (Facoltativo) Accesso `http://[server]:[port]/system/console/components/`. Configura e abilita `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` il componente disabilitato per impostazione predefinita. Impostate la frequenza con cui AEM verifica la validità dei metadati sulle risorse.
-Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content delle risorse. Con questa proprietà, AEM può filtrare i risultati in una ricerca.
+Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content delle risorse. Utilizzando questa proprietà, AEM filtrare i risultati in una ricerca.
 
 >[!NOTE]
 >
