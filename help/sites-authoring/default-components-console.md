@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 95%
 
 ---
 
@@ -25,15 +28,15 @@ It can be accessed from **Tools** -> **General** -> **Components**. Nella consol
 
 >[!NOTE]
 >
->La console dei componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili agli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
+>La console dei componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili per gli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
 
 ## Ricerca {#search-features}
 
-Dall’icona **Solo contenuto** (in alto a sinistra) puoi aprire il pannello **Ricerca** per cercare e/o filtrare i componenti:
+L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello **Ricerca** per cercare e/o filtrare i componenti:
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-## Dettagli componente {#component-details}
+## Dettagli dei componenti {#component-details}
 
 Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic sulla risorsa desiderata. Sono disponibili tre schede:
 
@@ -52,7 +55,7 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
       * Facendo clic su Super Type della risorsa passerai al relativo componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
 
 * **Criteri**
 
@@ -68,7 +71,7 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
 
 * **Documentazione**
 
-   Se lo sviluppatore ha fornito la [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa viene visualizzata nella scheda **Documentazione**. Se non è presente documentazione, la scheda **Documentazione** non verrà visualizzata.
+   Se lo sviluppatore ha fornito la [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa viene visualizzata nella scheda **Documentazione**. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
 
