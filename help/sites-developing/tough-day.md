@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 1%
 
 ---
 
 
 # Giorno Duro{#tough-day}
 
-## Che cosa è difficile giorno 2 {#what-is-tough-day}
+## Che cosa è difficile il giorno 2 {#what-is-tough-day}
 
-Il Giorno 2 è un’applicazione che consente di sottoporre a stress test i limiti dell’istanza AEM. Può essere eseguito con la suite di test predefinita oppure può essere configurato in base alle esigenze di test. Potete guardare [questa registrazione](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
+Tough Day 2 è un&#39;applicazione che consente di stress test dei limiti dell&#39;istanza AEM. Può essere eseguito con la suite di test predefinita oppure può essere configurato in base alle esigenze di test. Potete guardare [questa registrazione](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
 
 ## Come eseguire il giorno difficile 2 {#how-to-run-tough-day}
 
-Scaricate l&#39;ultima versione di Tough Day 2 dall&#39;archivio [](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)Adobe. Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fornendo il `host` parametro. Nell’esempio seguente, l’istanza di AEM viene eseguita localmente, quindi viene utilizzato il `localhost` valore:
+Scaricate l&#39;ultima versione di Tough Day 2 dall&#39;archivio [](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)Adobe. Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fornendo il `host` parametro. Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente, in modo che venga utilizzato il `localhost` valore:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -124,7 +127,7 @@ I parametri pertinenti sono elencati di seguito:
 
 | **Parametro** | **Descrizione** | **Valore predefinito** | **Valori possibili** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Installate o saltate il pacchetto di contenuto predefinito &quot;Giorno difficile 2&quot;. | vero |  true o false |
+| `--installsamplecontent=<Val>` | Installate o saltate il pacchetto di contenuto predefinito &quot;Giorno difficile 2&quot;. | vero | true o false |
 | `--protocol=<Val>` | Il protocollo utilizzato per l&#39;host. | Http | http o https |
 | `--host=<Val>` | Il nome host o l&#39;IP di destinazione. |  |  |
 | `--port=<Val>` | La porta dell&#39;host. | 4502 |  |
@@ -136,7 +139,7 @@ I parametri pertinenti sono elencati di seguito:
 | `--configfile=<Val>` | Il file di configurazione dello yaml di destinazione. |  |  |
 | `--contextpath=<Val>` | Percorso del contesto dell&#39;istanza. |  |  |
 | `--loglevel=<Val>` | Livello di registro per il motore Tough Day 2. | INFO | ALL, DEBUG, INFO, AVVERTENZA, ERRORE, FATTO, OFF |
-| `--dryrun=<Val>` | Se true, stampa la configurazione risultante e non esegue alcun test. | false |  true o false |
+| `--dryrun=<Val>` | Se true, stampa la configurazione risultante e non esegue alcun test. | false | true o false |
 
 ## Personalizzazione {#customizing}
 
@@ -146,7 +149,7 @@ L&#39;unico modo per salvare una configurazione di prova è copiarla in formato 
 
 ### Aggiunta di un nuovo test {#adding-a-new-test}
 
-Se non desiderate utilizzare la `toughday` suite predefinita potete aggiungere un test di vostra scelta utilizzando il `add` parametro. Gli esempi seguenti mostrano come aggiungere il `CreateAssetTreeTest` test utilizzando i parametri della riga di comando o un file di configurazione del modello.
+Se non desiderate utilizzare la `toughday` suite predefinita, potete aggiungere un test di vostra scelta utilizzando il `add` parametro. Gli esempi seguenti mostrano come aggiungere il `CreateAssetTreeTest` test utilizzando i parametri della riga di comando o un file di configurazione del modello.
 
 Utilizzando i parametri della riga di comando:
 
@@ -163,7 +166,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Aggiunta di più istanze dello stesso test {#adding-multiple-instances-of-the-same-test}
+### Aggiunta di più istanze dello stesso test  {#adding-multiple-instances-of-the-same-test}
 
 Potete anche aggiungere ed eseguire più istanze dello stesso test, ma ciascuna di esse deve avere un nome univoco. Gli esempi seguenti mostrano come aggiungere due istanze dello stesso test utilizzando i parametri della riga di comando o un file di configurazione del modello.
 
@@ -195,7 +198,7 @@ Se è necessario modificare una o più proprietà di test, è possibile aggiunge
 java -jar toughday2.jar --help CreatePageTreeTest
 ```
 
-Tenete presente che i file di configurazione dello yaml sovrascriveranno i parametri predefiniti di Tough Day 2 e i parametri della riga di comando sovrascriveranno sia i file di configurazione che i valori predefiniti.
+Tenete presente che i file di configurazione dello yaml sovrascriveranno i parametri predefiniti di Tough Day 2 e che i parametri della riga di comando sovrascriveranno sia i file di configurazione che i valori predefiniti.
 
 Gli esempi seguenti mostrano come modificare la `template` proprietà del `CreatePageTreeTest` test utilizzando i parametri della riga di comando o un file di configurazione del modello.
 
@@ -280,7 +283,7 @@ tests:
 
 ### Modalità di esecuzione {#run-modes}
 
-Il Giorno 2 duro può essere eseguito in una delle seguenti modalità: carico **normale** e **costante**.
+Il Giorno 2 duro può essere eseguito in una delle seguenti modalità: **carico** normale e **costante**.
 
 La modalità di esecuzione **normale** ha due parametri:
 
@@ -307,7 +310,7 @@ La modalità di esecuzione del carico **** costante è diversa dalla modalità d
 
 ### Selezione test {#test-selection}
 
-Il processo di selezione del test è lo stesso per entrambe le modalità di esecuzione ed è il seguente: tutti i test dispongono di una `weight` proprietà che determina la probabilità di esecuzione in un thread. Ad esempio, se abbiamo due test, uno con un peso di 5 e l&#39;altro con un peso di 10, è probabile che vengano eseguiti due volte di più rispetto al primo.
+Il processo di selezione del test è lo stesso per entrambe le modalità di esecuzione ed è il seguente: tutti i test dispongono di una `weight` proprietà, che determina la probabilità di esecuzione in un thread. Ad esempio, se abbiamo due test, uno con un peso di 5 e l&#39;altro con un peso di 10, è probabile che vengano eseguiti due volte di più rispetto al primo.
 
 Inoltre, i test possono avere una `count` proprietà, che limita il numero di esecuzioni a un dato numero. Dopo il superamento di questo numero, non si verificheranno ulteriori esecuzioni del test. Tutte le istanze di test già in esecuzione termineranno l&#39;esecuzione come configurata. L&#39;esempio seguente mostra come aggiungere questi parametri alla riga di comando o utilizzando un file di configurazione del modello.
 
@@ -346,7 +349,7 @@ Il Giorno 2 difficile produce sia metriche di test che registri. Per ulteriori d
 
 ### Metriche di test {#test-metrics}
 
-Il Giorno 2 intensivo attualmente segnala 9 metriche di test misurabili. **Metriche con**&amp;ast; i simboli vengono segnalati solo dopo l’esecuzione corretta:
+Il Giorno 2 intensivo attualmente segnala 9 metriche di test misurabili. Metriche con **&amp;ast;** i simboli vengono segnalati solo dopo l’esecuzione corretta:
 
 | **Nome** | **Descrizione** |
 |---|---|
