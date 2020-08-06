@@ -37,7 +37,7 @@ Di seguito sono riportate alcune raccomandazioni generali su quando includere l&
 
 Le proprietà e i nodi seguenti possono essere applicati ai componenti per controllare il comportamento del relativo tag di decorazione:
 
-* **`cq:noDecoration {boolean}`:**Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM a non generare alcun elemento wrapper sul componente.
+* **`cq:noDecoration {boolean}`:**Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM non generare alcun elemento wrapper sul componente.
 * **`cq:htmlTag`node:**Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
    * **`cq:tagName {String}`:**Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per racchiudere i componenti al posto dell&#39;elemento DIV predefinito.
    * **`class {String}`:**Può essere utilizzato per specificare i nomi delle classi css da aggiungere al wrapper.
@@ -138,9 +138,9 @@ Output risultante `/content/test.html`:
 
 ## JSP {#jsp}
 
-Quando includete un componente che utilizza `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell’utilizzare un DIV per racchiudere l’elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
+Quando includete un componente utilizzando `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell’utilizzare un DIV per racchiudere l’elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
 
-* Comunicate esplicitamente ad AEM di non mandare a capo il componente utilizzando `cq:noDecoration`.
+* Dire esplicitamente AEM di non mandare a capo il componente utilizzando `cq:noDecoration`.
 * Usate un tag HTML personalizzato per racchiudere il componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Albero decisionale {#decision-tree-1}
