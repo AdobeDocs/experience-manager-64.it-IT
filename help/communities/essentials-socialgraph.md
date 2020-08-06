@@ -1,8 +1,8 @@
 ---
 title: Social Graph Essentials
 seo-title: Social Graph Essentials
-description: seguire la panoramica dei componenti
-seo-description: seguire la panoramica dei componenti
+description: seguire la panoramica del componente e del componente seguente
+seo-description: seguire la panoramica del componente e del componente seguente
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 3%
 
 ---
 
@@ -62,9 +65,9 @@ Il `following`componente elenca i membri che seguono il membro corrente o che so
      <li>Valore:<br /> 
       <ul> 
        <li><i>true </i>- il <code>following</code> componente elenca i membri che hanno effettuato l’accesso <code>follows</code></li> 
-       <li><i>false </i>- il <code>following</code> componente elenca i membri <code>follow </code>del membro attualmente connesso</li> 
+       <li><i>false </i>- il <code>following</code> componente elenca i membri <code>follow </code>del membro che ha effettuato l’accesso</li> 
       </ul> </li> 
-    </ul> <p>Se manca la proprietà, il valore predefinito è <i>true</i> . Al momento non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del <code>following </code>nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
+    </ul> <p>Se manca la proprietà, il valore predefinito è <i>true</i> . Al momento, non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del <code>following </code>nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
   </tr>
  </tbody>
 </table>
