@@ -1,6 +1,6 @@
 ---
-title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+title: Commerce Cloud SAP
+seo-title: Commerce Cloud SAP
 description: Scopri come utilizzare AEM con SAP Commerce Cloud.
 seo-description: Scopri come utilizzare AEM con SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
@@ -12,23 +12,26 @@ discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 translation-type: tm+mt
 source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+workflow-type: tm+mt
+source-wordcount: '1726'
+ht-degree: 2%
 
 ---
 
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# Commerce Cloud SAP{#sap-commerce-cloud}
 
 Dopo l’installazione potete configurare l’istanza:
 
-1. [Configurate la ricerca su facet per Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [Configurate la ricerca di Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors)in facet.
 1. [Configurare la versione](#configure-the-catalog-version)del catalogo.
 1. [Configurare la struttura](#configure-the-import-structure)di importazione.
 1. [Configurare gli attributi del prodotto da caricare](#configure-the-product-attributes-to-load).
 1. [Importazione dei dati](#importing-the-product-data)del prodotto.
 1. [Configurare Catalog Importer](#configure-the-catalog-importer).
-1. Utilizzate [Importa per importare il catalogo](#catalog-import) in un percorso specifico in AEM.
+1. Utilizzate [Importazione per importare il catalogo](#catalog-import) in una posizione specifica in AEM.
 
-## Configurare la ricerca su facet per Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configurare la ricerca con facet per i Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -42,7 +45,7 @@ Dopo l’installazione potete configurare l’istanza:
 1. **Aprite Editor** per Configurazione Solr **di esempio per clothescatalog**.
 
 1. Nelle versioni **** catalogo, usate la versione **** Aggiungi catalogo per aggiungere `outdoors-Staged` e `outdoors-Online` aggiungere all’elenco.
-1. **** Salva la configurazione.
+1. **Salva la configurazione.**
 1. Aprite i tipi **di elementi** SOLR per aggiungere **gli ordinamenti** SOLR a `ClothesVariantProduct`:
 
    * rilevanza (&quot;Pertinenza&quot;, punteggio)
@@ -50,6 +53,7 @@ Dopo l’installazione potete configurare l’istanza:
    * name-desc (&quot;Name (descending)&quot;, name)
    * price-asc (&quot;Price (crescente)&quot;, priceValue)
    * price-desc (&quot;Price (descending)&quot;, priceValue)
+
    >[!NOTE]
    >
    >Utilizzate il menu di scelta rapida (in genere fate clic con il pulsante destro del mouse) per selezionare `Create Solr sort`.
@@ -62,13 +66,13 @@ Dopo l’installazione potete configurare l’istanza:
 
    `Product - Product`
 
-1. Nella scheda Tipi **** indicizzati regolare le query **** Indicizzatore per `full`:
+1. Nella scheda Tipi **** indicizzati, regolare le query **** Indicizzatore per `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. Nella scheda Tipi **** indicizzati regolare le query **** Indicizzatore per `incremental`:
+1. Nella scheda Tipi **** indicizzati, regolare le query **** Indicizzatore per `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
@@ -78,7 +82,7 @@ Dopo l’installazione potete configurare l’istanza:
 
    >[!NOTE]
    >
-   >Per hybris 5.2, accertatevi che l&#39; `Facet` attributo nella tabella Properties sia selezionato in base alla schermata seguente:
+   >Per hybris 5.2, accertatevi che l&#39; `Facet` attributo nella tabella Properties (Proprietà) sia selezionato in base alla schermata seguente:
 
    ![chlimage_1-37](assets/chlimage_1-37.png) ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -204,7 +208,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
 ### Importazione completa {#full-import}
 
-1. Se necessario, eliminare tutti i dati di prodotto esistenti utilizzando CRXDE Lite.
+1. Se necessario, eliminate tutti i dati di prodotto esistenti utilizzando CRXDE Lite.
 
    1. Andate alla sottostruttura che contiene i dati del prodotto:
 
@@ -217,7 +221,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
    1. Eliminare il nodo che contiene i dati del prodotto; ad esempio, `outdoors`.
    1. **Salva tutto** per mantenere la modifica.
 
-1. Aprite Importazione ibridi in AEM:
+1. Aprite hybris importer in AEM:
 
    `/etc/importers/hybris.html`
 
@@ -243,7 +247,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
 ### Importazione incrementale {#incremental-import}
 
-1. Controlla le informazioni in AEM relative ai prodotti rilevanti, nella sottostruttura appropriata sotto:
+1. Controllare le informazioni detenute in AEM per i prodotti interessati, nella sottostruttura appropriata, sotto:
 
    `/etc/commerce/products`
 
@@ -253,7 +257,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
 1. In hybris, aggiornare le informazioni detenute sui prodotti rivelatori.
 
-1. Aprite Importazione ibridi in AEM:
+1. Aprite hybris importer in AEM:
 
    `/etc/importers/hybris.html`
 
@@ -264,7 +268,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 1. Selezionate la casella di controllo **Importazione** incrementale.
 1. Fate clic su **Importa catalogo** per avviare l’importazione.
 
-   Al termine, puoi verificare i dati aggiornati in AEM nei seguenti modi:
+   Una volta completati, puoi verificare i dati aggiornati in AEM sotto:
 
    ```
        /etc/commerce/products
@@ -275,7 +279,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
 Il processo di importazione può richiedere molto tempo, pertanto un’estensione alla sincronizzazione dei prodotti consente di selezionare aree specifiche del catalogo per un aggiornamento rapido attivato manualmente. Questo utilizza il feed di esportazione insieme alla configurazione degli attributi standard.
 
-1. Controlla le informazioni in AEM relative ai prodotti rilevanti, nella sottostruttura appropriata sotto:
+1. Controllare le informazioni detenute in AEM per i prodotti interessati, nella sottostruttura appropriata, sotto:
 
    `/etc/commerce/products`
 
@@ -289,7 +293,7 @@ Il processo di importazione può richiedere molto tempo, pertanto un’estension
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
-1. Aprite Importazione ibridi in AEM:
+1. Aprite hybris importer in AEM:
 
    `/etc/importers/hybris.html`
 
@@ -300,7 +304,7 @@ Il processo di importazione può richiedere molto tempo, pertanto un’estension
 1. Selezionate clickbox **Express Update**.
 1. Fate clic su **Importa catalogo** per avviare l’importazione.
 
-   Al termine, puoi verificare i dati aggiornati in AEM nei seguenti modi:
+   Una volta completati, puoi verificare i dati aggiornati in AEM sotto:
 
    ```
        /etc/commerce/products
@@ -310,7 +314,7 @@ Il processo di importazione può richiedere molto tempo, pertanto un’estension
 
 ## Configurare l’Importatore catalogo {#configure-the-catalog-importer}
 
-Il catalogo ibridi può essere importato in AEM tramite Importazione batch per cataloghi, categorie e prodotti ibridi.
+Il catalogo hybris può essere importato in AEM, utilizzando Importazione batch per cataloghi, categorie e prodotti ibridi.
 
 I parametri utilizzati dall&#39;importatore possono essere configurati per:
 
@@ -346,6 +350,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 
    * **Abilita rimozione prodotto**
    * **Abilita rimozione risorse di prodotto**
+
    >[!NOTE]
    >
    >When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Consultare anche la console per un elenco completo dei parametri configurabili e delle relative impostazioni predefinite.
@@ -354,6 +359,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 
    * Il primo risultato di esecuzione consiste in un set di prodotti modificati, indicato nell&#39;elenco di registro.
    * Per la seconda volta nessun prodotto deve essere aggiornato.
+
    >[!NOTE]
    >
    >La prima importazione consiste nell&#39;inizializzare le informazioni sul prodotto. La seconda importazione verifica che tutto è stato lavorato e il set di prodotti è pronto.
@@ -374,7 +380,7 @@ Per rimuovere uno o più prodotti dal catalogo:
    * Selezionate questo prodotto e modificate lo stato di approvazione in `unapproved`
 
 1. Effettuate un altro aggiornamento incrementale (consultate Importazione [](#catalog-import)catalogo). Il registro elenca il prodotto eliminato.
-1. [Eseguire il rollout](/help/sites-administering/generic.md#rolling-out-a-catalog) del catalogo appropriato. La pagina prodotto e prodotto sarà stata rimossa da AEM.
+1. [Eseguire il rollout](/help/sites-administering/generic.md#rolling-out-a-catalog) del catalogo appropriato. La pagina prodotto e prodotto sarà stata rimossa dall&#39;interno AEM.
 
    Ad esempio:
 
@@ -404,7 +410,7 @@ Per aggiungere la cronologia degli ordini al contesto [](/help/sites-developing/
 
 1. Aprite la pagina [di progettazione del contesto del](/help/sites-administering/client-context.md)client:
 
-   * Aprite una pagina per la modifica, quindi aprite il contesto client utilizzando **Ctrl+Alt+C** (finestre) o **Ctrl+Opzione+C** (Mac). Utilizzate l&#39;icona matita nell&#39;angolo superiore sinistro del contesto client per **aprire la pagina** di progettazione ClientContext.
+   * Aprite una pagina per la modifica, quindi aprite il contesto client utilizzando **Ctrl+Alt+C** (finestre) o **Ctrl+Opzione+C** (Mac). Utilizzate l&#39;icona matita nell&#39;angolo superiore sinistro del contesto client per **aprire la pagina** di progettazione del ClientContext.
    * Andate direttamente a [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Aggiungete il componente Cronologia **** ordine](/help/sites-administering/client-context.md#adding-a-property-component) al componente **Carrello** acquisti del contesto client.
@@ -419,6 +425,7 @@ Per aggiungere la cronologia degli ordini al contesto [](/help/sites-developing/
 
       * Il contesto client mostra un riepilogo della cronologia dell&#39;ordine.
       * Viene visualizzato il messaggio &quot;Sei un cliente di ritorno&quot;.
+
    >[!NOTE]
    >
    >Il messaggio è realizzato da:
