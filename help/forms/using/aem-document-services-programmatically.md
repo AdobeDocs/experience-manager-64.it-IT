@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Utilizzo di AEM Document Services a livello di programmazione {#using-aem-document-services-programmatically}
 
-Le classi client necessarie per creare progetti più profondi con AEM Document Services sono disponibili nel Jar SDK [client](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms. Per informazioni sui progetti relativi al cielo, consulta [come creare il progetto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
+Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili nel [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) Jar. Per informazioni sui progetti per il cielo, vedi [come costruire il tuo progetto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 * Servizio Firma
 * Servizio di crittografia
-* Reader Extension, servizio
+* Servizio estensione Reader
 
 È possibile eseguire le operazioni seguenti utilizzando il servizio DocAssurance:
 
@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 È possibile proteggere un documento PDF certificandolo con un particolare tipo di firma denominato firma certificata. Una firma certificata si distingue da una firma digitale nei seguenti modi:
 
 * Deve essere la prima firma applicata al documento PDF. In altre parole, quando viene applicata la firma certificata, gli altri campi firma nel documento devono essere defirmati. In un documento PDF è consentita una sola firma certificata. Per firmare e certificare un documento PDF, certificarlo prima di firmarlo. Dopo aver certificato un documento PDF, è possibile apporre una firma digitale ad altri campi firma.
-* L&#39;autore o l&#39;autore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata. Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica, Acrobat impedisce agli utenti di modificare il documento in questo modo. Se vengono apportate tali modifiche, la firma certificata non è valida. Inoltre, Acrobat visualizza un avviso quando un utente apre il documento. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
+* L&#39;autore o l&#39;autore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata. Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica,  Acrobat impedisce agli utenti di modificare il documento in questo modo. Se vengono apportate tali modifiche, la firma certificata non è valida. Inoltre,  Acrobat visualizza un avviso quando un utente apre il documento. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
 * Al momento della firma, il documento viene analizzato per individuare specifici tipi di contenuto che potrebbero rendere il contenuto di un documento ambiguo o fuorviante. Ad esempio, un’annotazione potrebbe oscurare del testo in una pagina importante per comprendere cosa viene certificato. Una spiegazione (attestato legale) può essere fornita su tale contenuto.
 
 **Sintassi**:
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Include le opzioni necessarie per Reader Estensione di un documento PDF</td> 
+   <td>Include le opzioni richieste ad Reader Estensione di un documento PDF</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1341,7 +1341,7 @@ secureDocument consente di cifrare, firmare/certificare e leggere un documento P
 
 **Cifratura di documenti PDF con password**
 
-Quando si esegue la cifratura di un documento PDF con una password, l&#39;utente deve specificare la password per aprire il documento PDF in Adobe Reader o Acrobat. Inoltre, prima che il documento venga utilizzato da un&#39;altra operazione di AEM Forms Document Services, è necessario sbloccare un documento PDF crittografato con password.
+Quando si esegue la cifratura di un documento PDF con una password, l&#39;utente deve specificare la password per aprire il documento PDF in  Adobe Reader o  Acrobat. Inoltre, prima che un&#39;altra operazione di AEM Forms Document Services utilizzi il documento, è necessario sbloccare un documento PDF crittografato con password.
 
 **Cifratura di documenti PDF con certificati**
 
@@ -1362,13 +1362,13 @@ Inoltre, gli elenchi di revoche di certificati (CRL) forniscono informazioni sui
 
 >[!NOTE]
 >
->Prima di poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio certificati attendibili di AEM.
+>Prima di poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato AEM Trust Store.
 
 **Applicazione dei diritti di utilizzo ai documenti PDF**
 
-È possibile applicare diritti di utilizzo ai documenti PDF utilizzando l&#39;API Java Client e il servizio Web di Reader Extensions. I diritti di utilizzo si riferiscono a funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono stati applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. L&#39;utente che apre un documento con diritti in Adobe Reader può eseguire operazioni abilitate per tale documento specifico.
+Potete applicare i diritti di utilizzo ai documenti PDF utilizzando l&#39;API Java Client e il servizio Web delle estensioni di Reader. I diritti di utilizzo si riferiscono a funzionalità disponibili per impostazione predefinita in  Acrobat ma non in  Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono stati applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. Un utente che apre un documento con diritti in  Adobe Reader può eseguire operazioni abilitate per tale documento specifico.
 
-Prima di poter utilizzare Reader per estendere un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio chiavi di AEM.
+Prima di poter Reader Estendi un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato AEM Keystore.
 
 **Firma digitale di documenti PDF**
 
@@ -1386,7 +1386,7 @@ La chiave pubblica è memorizzata nel certificato dell&#39;utente e deve essere 
 
 >[!NOTE]
 >
->AEM Forms supporta inoltre le specifiche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*per la firma digitale dei documenti PDF.
+> AEM Forms supporta anche le specifiche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*per la firma digitale dei documenti PDF.
 
 **Certificazione di documenti PDF**
 
@@ -1402,7 +1402,7 @@ L&#39;autore o l&#39;autore del documento può specificare che il documento può
 
 Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica,
 
-Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e Acrobat visualizza un avviso all&#39;apertura del documento da parte dell&#39;utente. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
+ Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e  Acrobat visualizza un avviso all&#39;apertura del documento da parte dell&#39;utente. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
 
 Al momento della firma, il documento viene analizzato per individuare specifici tipi di contenuto che potrebbero rendere il contenuto di un documento ambiguo o fuorviante.
 
@@ -1445,7 +1445,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Include le opzioni necessarie per Reader Estensione di un documento PDF</td> 
+   <td>Include le opzioni richieste per Reader Estensione di un documento PDF</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1454,7 +1454,7 @@ secureDocument(Document inDoc,
  </tbody> 
 </table>
 
-**Esempio 1**: Questo esempio viene utilizzato per eseguire la cifratura della password, certificare un campo firma e Reader per l&#39;estensione del documento PDF.
+**Esempio 1**: Questo esempio viene utilizzato per eseguire la cifratura della password, certificare un campo firma e un Reader Estensione del documento PDF.
 
 ```
 /*************************************************************************
@@ -1756,7 +1756,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Esempio 2**: Questo esempio viene utilizzato per eseguire la cifratura PKI, firmare un campo firma e Reader per espandere il documento PDF.
+**Esempio 2**: Questo esempio è utilizzato per eseguire la cifratura PKI, firmare un campo firma e Reader Estendere il documento PDF.
 
 ```java
 /*************************************************************************
@@ -2735,7 +2735,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è sottoposto a un processo aziendale che richiede la firma di più firmatari. Ad esempio, una transazione finanziaria richiede la firma sia del funzionario che del manager. È possibile utilizzare l&#39;API del servizio Firma per verificare tutte le firme presenti nel documento PDF. Durante la verifica di più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale, Adobe consiglia di verificarla.
+AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è sottoposto a un processo aziendale che richiede la firma di più firmatari. Ad esempio, una transazione finanziaria richiede la firma sia del funzionario che del manager. È possibile utilizzare l&#39;API del servizio Firma per verificare tutte le firme presenti nel documento PDF. Durante la verifica di più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale,  Adobe consiglia di verificarla.
 
 **Sintassi**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -3389,7 +3389,7 @@ public class GetPDFEncryption {
 
 ### Rimozione della cifratura della password dal PDF {#removing-password-encryption-from-pdf}
 
-Rimuovere la cifratura basata su password da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat senza dover specificare una password. Dopo aver rimosso la cifratura basata su password da un documento PDF, il documento non è più protetto.
+Rimuovere la cifratura basata su password da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat senza dover specificare una password. Dopo aver rimosso la cifratura basata su password da un documento PDF, il documento non è più protetto.
 
 **Sintassi**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3488,7 +3488,7 @@ public class RemovePasswordEncryption {
 
 ### Rimozione della crittografia del certificato {#removing-certificate-encryption}
 
-È possibile rimuovere la cifratura basata su certificato da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat. Per rimuovere la cifratura da un documento PDF cifrato con un certificato, fare riferimento a una chiave privata. Dopo aver rimosso la cifratura da un documento PDF, non è più protetta.
+È possibile rimuovere la cifratura basata su certificato da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat. Per rimuovere la cifratura da un documento PDF cifrato con un certificato, fare riferimento a una chiave privata. Dopo aver rimosso la cifratura da un documento PDF, non è più protetta.
 
 **Sintassi**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -4449,7 +4449,7 @@ Il servizio GeneratePDFService fornisce API per la conversione di vari formati d
 
 >[!NOTE]
 >
->L&#39;API HTMLtoPDF è obsoleta per il server AEM Forms in esecuzione nel sistema operativo AIX.
+>L&#39;API HTMLtoPDF è obsoleta per  server AEM Forms in esecuzione nel sistema operativo AIX.
 
 #### API Generatore PDF disponibile su Microsoft Windows e Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
@@ -4546,7 +4546,7 @@ Il servizio createPDF genera le seguenti eccezioni:
      <li>Nessuna protezione</li> 
      <li>Protezione password<br /> </li> 
      <li>Protezione dei certificati<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li> Adobe Policy Server</li> 
     </ul> <p>È un parametro facoltativo.</p> </td> 
   </tr> 
   <tr> 
@@ -4959,7 +4959,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Nessuna protezione</li> 
      <li>Protezione password<br /> </li> 
      <li>Protezione dei certificati<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li> Adobe Policy Server</li> 
     </ul> <p>È un parametro facoltativo.</p> </td> 
   </tr> 
   <tr> 
