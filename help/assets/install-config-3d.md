@@ -1,6 +1,6 @@
 ---
-title: Installazione e configurazione di AEM 3D
-seo-title: Installazione e configurazione di AEM 3D
+title: Installazione e configurazione AEM 3D
+seo-title: Installazione e configurazione AEM 3D
 description: Scopri come installare e configurare AEM 3D
 seo-description: Scopri come installare e configurare AEM 3D
 uuid: a60732ff-fd66-4f29-b901-42a3cfd58b65
@@ -18,32 +18,32 @@ ht-degree: 1%
 ---
 
 
-# Installazione e configurazione di AEM 3D {#installing-and-configuring-aem-d}
+# Installazione e configurazione AEM 3D {#installing-and-configuring-aem-d}
 
-L’installazione e la configurazione di AEM 3D (versione 3.0) prevede quanto segue:
+L&#39;installazione e la configurazione di AEM 3D (versione 3.0) prevede quanto segue:
 
 1. Installazione della libreria Autodesk® FBX® SDK.
 1. Download e installazione del pacchetto di codice 3D nativo.
-1. Configurazione del flusso di lavoro di assimilazione delle risorse 3D e riavvio di AEM.
+1. Configurazione del flusso di lavoro di assimilazione delle risorse 3D e riavvio del AEM.
 1. Convalida della configurazione di AEM 3D.
 
 Consultate anche [Utilizzo di risorse](assets-3d.md)3D.
 
-Per informazioni su prerequisiti, browser supportati e altre importanti informazioni sulla versione, consulta anche le note [sulla versione di Risorse](/help/release-notes/aem3d-release-notes.md) AEM 3D.
+Per informazioni su prerequisiti, browser supportati e altre importanti informazioni sulla versione, consulta anche [AEM note](/help/release-notes/aem3d-release-notes.md) sulla versione di 3D Assets.
 
 Vedere anche [Utilizzo del componente](using-the-3d-sites-component.md)Siti 3D.
 
 >[!NOTE]
 >
->Prima di scaricare e installare il pacchetto 3D, accertatevi di aver installato correttamente tutti i pacchetti AEM preliminari. See the [AEM 3D Release Notes.](install-config-3d.md)
+>Prima di scaricare e installare il pacchetto 3D, accertatevi di aver installato correttamente tutti i pacchetti AEM prerequisiti. See the [AEM 3D Release Notes.](install-config-3d.md)
 
 ## Installazione della libreria Autodesk FBX SDK {#installing-the-autodesk-fbx-sdk-library}
 
-Il codice AEM 3D nativo richiede la libreria Autodesk FBX per supportare il formato di file FBX. Al momento Adobe non è in grado di ridistribuire la libreria.
+Il codice AEM 3D nativo richiede la libreria Autodesk FBX per supportare il formato di file FBX. ( Adobe non è attualmente in grado di ridistribuire la libreria.)
 
 Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate.
 
-1. Accedete all’host in cui è installato AEM.
+1. Accedere all&#39;host in cui è installato AEM.
 
    * Se si tratta di una distribuzione di Windows Server, accedete al server come Amministratore.
    * Se si tratta di un desktop MAC o Windows, accertatevi di disporre dei privilegi di amministratore.
@@ -65,14 +65,14 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 1. Installate l’SDK FBX:
 
    * Windows. Installate nella stessa unità in cui si trova AEM.
-   * Mac. Installate nella stessa partizione in cui si trova AEM.
+   * Mac. Installare nella stessa partizione in cui si trova AEM.
    * Linux. Estraete il pacchetto scaricato e seguite le istruzioni riportate in `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Installa l’SDK in `/usr`.
 
 ## Download e installazione del pacchetto di codice 3D nativo {#downloading-and-installing-the-native-d-code-package}
 
 >[!NOTE]
 >
->Prima di procedere con l’installazione e la configurazione di AEM 3D, Adobe consiglia di implementare eventuali service pack applicabili e altri pacchetti di funzioni correlati. See [AEM 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
+>Prima di procedere con l&#39;installazione e la configurazione di AEM 3D,  Adobe consiglia di distribuire eventuali service pack applicabili e altri feature pack correlati. See [AEM 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
 
 Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate.
 
@@ -83,7 +83,7 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
    * Se si tratta di una distribuzione di Windows Server, accedete al server come amministratore.
    * Se si tratta di un desktop Mac o Windows, accertatevi di disporre dei privilegi di amministratore.
 
-1. Assicurati di disporre di un browser supportato per accedere ad AEM.
+1. Verificate di disporre di un browser supportato per accedere alle AEM.
 
    Consultate Requisiti [di](/help/release-notes/aem3d-release-notes.md#system-requirements)sistema.
 
@@ -98,11 +98,11 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
    Il file `sample-3D-content.zip` viene memorizzato nella cartella principale **[!UICONTROL Risorse]** . Per ulteriori informazioni, consultate [Convalida dell&#39;impostazione di AEM 3D](#validating-the-setup-of-aem-d) .
 
-## Configurazione del flusso di lavoro di assimilazione delle risorse 3D e riavvio di AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
+## Configurazione del flusso di lavoro di assimilazione delle risorse 3D e riavvio AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
 
 **Per configurare il flusso di lavoro** di assimilazione delle risorse 3D:
 
-1. In AEM, fai clic sul logo AEM per accedere alla console di navigazione globale, quindi fai clic sull’icona **[!UICONTROL Strumenti]** e passa a **[!UICONTROL Flusso di lavoro > Modelli]**.
+1. In AEM, fare clic sul logo AEM per accedere alla console di navigazione globale, quindi fare clic sull&#39;icona **[!UICONTROL Strumenti]** e passare a **[!UICONTROL Flusso di lavoro > Modelli]**.
 1. Nella pagina Modelli **[!UICONTROL di]** flusso di lavoro, passa il mouse sul flusso di lavoro **[!UICONTROL DAM Update Asset]** e, quando viene visualizzato il segno di spunta, selezionalo.
 
 1. Sulla barra degli strumenti, fare clic su **[!UICONTROL Modifica]**.
@@ -123,13 +123,13 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 1. Nell’angolo in alto a destra della pagina Aggiorna risorsa **** DAM, fate clic su **[!UICONTROL Sincronizza]** per salvare il modello di flusso di lavoro modificato.
 1. Riavviate AEM.
 
-   Dopo il riavvio, è possibile caricare il contenuto 3D e farlo elaborare da AEM.
+   Dopo il riavvio, è possibile caricare il contenuto 3D e AEM elaborarlo.
 
-   Continua con la [convalida dell’impostazione di AEM 3D](#validating-the-setup-of-aem-d).
+   Continuate con [Convalida della configurazione di AEM 3D](#validating-the-setup-of-aem-d).
 
 ## Convalida della configurazione di AEM 3D {#validating-the-setup-of-aem-d}
 
-1. In AEM, fai clic su **[!UICONTROL Strumenti > Risorse]**, quindi scarica `sample-3D-content.zip`ed espandi il file scaricato. (È ora possibile eliminare `sample-3D-content.zip` in AEM.)
+1. In AEM, fate clic su **[!UICONTROL Strumenti > Risorse]**, quindi scaricate `sample-3D-content.zip`ed espandete il file scaricato. (È ora possibile eliminare `sample-3D-content.zip` in AEM.)
 
    Accertatevi di essere nella vista **[!UICONTROL a]** schede per visualizzare i commenti di caricamento ed elaborazione nei passaggi successivi.
 
@@ -178,23 +178,23 @@ Consultate anche Impostazioni [di configurazione](advanced-config-3d.md)avanzate
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-## Configurazione del supporto per le risorse Adobe Dimension {#configuring-support-for-adobe-dimension-assets}
+## Configurazione del supporto per  risorse Adobe Dimension {#configuring-support-for-adobe-dimension-assets}
 
 >[!NOTE]
 >
 >Questa attività di configurazione è facoltativa.
 
-Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dimension.
+Facoltativamente potete configurare il supporto in AEM 3D per  risorse Adobe Dimension.
 
-È necessario configurare un servizio di conversione esterno per consentire l’assimilazione, l’anteprima e la pubblicazione di risorse Adobe Dimension 3D in AEM. Il servizio converte dal formato proprietario Adobe Dimension (`.dn`) in una variante di glTF (formattata come `.glb` file) che viene salvata con la risorsa Dn come rappresentazione. La `.glb` rappresentazione viene utilizzata per la visualizzazione basata sul Web della risorsa 3D in AEM Assets, Siti e Schermate ed è disponibile anche per il download e l&#39;utilizzo con applicazioni di terze parti.
+È necessario configurare un servizio di conversione esterno per consentire l’assimilazione, l’anteprima e la pubblicazione  risorse Adobe Dimension 3D in AEM. Il servizio converte dal formato proprietario  Adobe Dimension (`.dn`) in una variante di glTF (formattata come `.glb` file) che viene salvata con la risorsa Dn come rappresentazione. La `.glb` rappresentazione viene utilizzata per la visualizzazione basata sul Web della risorsa 3D in  AEM Assets, Siti e Schermi ed è disponibile anche per il download per l’utilizzo con applicazioni di terze parti.
 
 >[!NOTE]
 >
->Il servizio di conversione è ospitato da Adobe in Amazon AWS. Dopo aver configurato correttamente il servizio, `.dn` i file caricati in AEM vengono quindi copiati in modo sicuro nel servizio di conversione tramite memorizzazione temporanea in Amazon S3. Il risultato della conversione viene trasferito nuovamente ad AEM tramite l’archiviazione temporanea S3. Tutti i trasferimenti e lo storage sono protetti. Inoltre, il contenuto persiste in S3 e il servizio di conversione solo brevemente (generalmente non più di pochi minuti).
+>Il servizio di conversione è ospitato da  Adobe in  Amazon AWS. Dopo aver configurato correttamente il servizio, `.dn` i file caricati in AEM vengono quindi copiati in modo sicuro nel servizio di conversione tramite memorizzazione temporanea in  Amazon S3. Il risultato della conversione viene ritrasferito a AEM tramite l&#39;archiviazione temporanea S3. Tutti i trasferimenti e lo storage sono protetti. Inoltre, il contenuto persiste in S3 e il servizio di conversione solo brevemente (generalmente non più di pochi minuti).
 
-**Per configurare il supporto per le risorse** Adobe Dimension:
+**Per configurare il supporto per  risorse** Adobe Dimension:
 
-1. Contatta il tuo account manager Adobe AEM, un esperto di provisioning o un rappresentante di supporto per richiedere le credenziali per i servizi **** AEM3D.
+1. Contatta il tuo  Adobe AEM account manager, esperto di provisioning o rappresentante di supporto per richiedere le credenziali per i servizi **** AEM3D.
 
    >[!NOTE]
    >
@@ -209,8 +209,8 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
    * userPoolId
    * clientId
 
-1. In qualità di amministratore, accedete all’istanza di creazione di AEM in cui desiderate installare le credenziali, quindi aprite **[!UICONTROL CRXDE Lite]**.
-1. Configurare le nuove informazioni sulle credenziali effettuando le seguenti operazioni in CRXDE Lite:
+1. In qualità di amministratore, accedete all’istanza di AEM autore in cui desiderate installare le credenziali, quindi aprite il **[!UICONTROL CRXDE Lite]**.
+1. Configura le nuove informazioni sulle credenziali effettuando le seguenti operazioni in CRXDE Lite:
 
    1. Individuare `/libs/settings/dam/v3D/services/dncr` e impostare la `clientId` proprietà sul nuovo valore.
    1. Individuate `/libs/settings/dam/v3D/services/aws` e impostate le `accountId`, `customerId`, `identityPoolId`e `userPoolId` le proprietà sui nuovi valori.
@@ -219,12 +219,12 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
 
 1. Specificate il formato della rappresentazione di `.glb` conversione effettuando le seguenti operazioni in **[!UICONTROL CRXDE Lite]**:
 
-   1. Passare a `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
+   1. Passa a `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
    1. Impostare la `outputFormat` proprietà su `Dn` o `generic`.
 
-      Quando è impostata su `Dn`, la `.glb` conversione include estensioni specifiche di Adobe, come l’illuminazione IBL, per una migliore qualità quando si visualizzano risorse Dn in AEM. Tuttavia, il rendering .glb convertito potrebbe non essere eseguito correttamente nelle applicazioni di terze parti.
+      Quando è impostata su `Dn`, la `.glb` conversione include estensioni specifiche per  Adobe, come l&#39;illuminazione IBL, per una migliore qualità quando si visualizzano le risorse Dn in AEM. Tuttavia, il rendering .glb convertito potrebbe non essere eseguito correttamente nelle applicazioni di terze parti.
 
-      Quando è impostata su `generic`, la `.glb` rappresentazione è generica senza estensioni specifiche di Adobe. Questa impostazione consente di utilizzarla in applicazioni di terze parti, mentre la visualizzazione con il visualizzatore AEM 3D sarà visivamente non ottimale.
+      Quando è impostata su `generic`, la `.glb` rappresentazione è generica senza estensioni specifiche per  Adobe. Questa impostazione consente di utilizzarla in applicazioni di terze parti, mentre la visualizzazione con il visualizzatore AEM 3D sarà visivamente non ottimale.
 
 1. Attivate il formato di file Dn effettuando le seguenti operazioni in **[!UICONTROL CRXDE Lite]**:
 
@@ -233,7 +233,7 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
 
 1. Convalida la configurazione effettuando le seguenti operazioni:
 
-   1. Apri AEM Assets.
+   1. Aprite  AEM Assets.
    1. Caricate `logo_sphere.dn` nella `test3d` cartella. Il file si trova in `sample-3D-content/models`.
 
       Nota: `sample-3D-content.zip` in precedenza era stato scaricato per la convalida delle funzionalità 3D di base.
@@ -247,5 +247,5 @@ Facoltativamente puoi configurare il supporto in AEM 3D per le risorse Adobe Dim
    In tal caso, potete risolvere i problemi di conversione effettuando le seguenti operazioni:
 
    * Eliminate la risorsa, quindi caricatela di nuovo.
-   * Assicurarsi di aver impostato correttamente tutti i parametri di configurazione in **[!UICONTROL CRXDE Lite]**.
+   * Accertatevi di aver impostato correttamente tutti i parametri di configurazione in **[!UICONTROL CRXDE Lite]**.
    * Verificate che nessun firewall stia bloccando l&#39;accesso al servizio di conversione e agli endpoint AWS.
