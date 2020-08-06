@@ -1,8 +1,8 @@
 ---
 title: Aggiunta di font per il rendering grafico
 seo-title: Aggiunta di font per il rendering grafico
-description: AEM consente di generare elementi grafici con testo ripreso in modo dinamico dai contenuti
-seo-description: AEM consente di generare elementi grafici con testo ripreso in modo dinamico dai contenuti
+description: AEM consente di generare elementi grafici che incorporano testo tratto in modo dinamico dal contenuto
+seo-description: AEM consente di generare elementi grafici che incorporano testo tratto in modo dinamico dal contenuto
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 1%
 
 ---
 
 
 # Aggiunta di font per il rendering grafico{#adding-fonts-for-graphic-rendering}
 
-AEM consente di generare elementi grafici con testo tratto dai contenuti in modo dinamico.
+AEM consente di generare elementi grafici che incorporano testo tratto dai contenuti in modo dinamico.
 
 A questo scopo è anche possibile caricare e utilizzare i propri font.
 
 Attualmente tutte le implementazioni della piattaforma Java supportano i font [TrueType](https://en.wikipedia.org/wiki/Truetype) .
 
-1. Apri CRXDE Lite e passa alla cartella dell&#39;applicazione di progetto:
+1. Aprite il CRXDE Lite e andate alla cartella dell&#39;applicazione di progetto:
 
    `/apps/<your-project>/`
 
@@ -31,6 +34,7 @@ Attualmente tutte le implementazioni della piattaforma Java supportano i font [T
 
    * **Nome**: `fonts`
    * **Tipo**: `sling:Folder`
+
    Salvate tutte le modifiche.
 
 1. Copiare i file dei font in questa cartella; ad esempio, utilizzando WebDAV.
@@ -41,7 +45,7 @@ Attualmente tutte le implementazioni della piattaforma Java supportano i font [T
 
 1. Aggiornate la configurazione [](/help/sites-deploying/configuring-osgi.md) OSGi di [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Aggiungete il percorso alla cartella dei font; ovvero `/apps/<your-project>/fonts`.
 
-1. Tornate a CRXDE Lite. È ora necessario visualizzare un `.fontlist` nodo nella cartella contenente il nome dei font importati.
+1. Tornate all&#39;CRXDE Lite. È ora necessario visualizzare un `.fontlist` nodo nella cartella contenente il nome dei font importati.
 
    Questi font sono ora pronti per essere utilizzati nell&#39;API Java.
 
