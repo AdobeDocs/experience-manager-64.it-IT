@@ -42,9 +42,9 @@ Per iniziare subito a lavorare:
 
 1. [Caricate le immagini primarie per più viste.](#uploading-assets-in-image-sets)
 
-   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+   Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Accertatevi che la dimensione massima delle immagini sia di almeno 2000 pixel per garantire dettagli di zoom ottimali. Dynamic Media consente di eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, potete usare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
-   I AEM Assets supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
+    AEM Assets supporta molti formati di file immagine, ma si consigliano immagini senza perdita di dati TIFF, PNG ed EPS.
 
 1. [Creare set di immagini.](#creating-image-sets)
 
@@ -77,7 +77,7 @@ Per iniziare subito a lavorare:
 
 1. [Collegare gli URL all’applicazione](linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](embed-code.md)video o immagini.
 
-   I AEM Assets creano richieste URL per i set di immagini e le attivano dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
+    AEM Assets crea richieste URL per i set di immagini e le attiva dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
    Seleziona il set di immagini, quindi fai clic su **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
 
@@ -85,7 +85,7 @@ Per iniziare subito a lavorare:
 
 Per modificare i set di immagini, consultate [Modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [dei set di](managing-assets-touch-ui.md#editing-properties)immagini.
 
-In caso di problemi nella creazione di set, consultate Immagini e set in [Risoluzione dei problemi in modalità](troubleshoot-dms7.md#images-and-sets)Dynamic Media - Scene7.
+In caso di problemi durante la creazione di set, consulta Immagini e set in [Risoluzione di problemi relativi a file multimediali dinamici - modalità](troubleshoot-dms7.md#images-and-sets)Scene7.
 
 ## Caricamento delle risorse nei set di immagini {#uploading-assets-in-image-sets}
 
@@ -176,7 +176,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti [per set di](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)batch.
 
-**Importante** — I set di batch vengono creati da IPS [Image Production System] come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+**Importante** — I set di batch vengono creati da IPS [Image Production System] come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.)
 
 Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente. Potete visualizzare questi set in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set di immagini nell’interfaccia utente).
 
@@ -223,7 +223,7 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, toccate **[!UICONTROL Aggiungi risorsa]**. Passate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all’angolo superiore destro della pagina.
 
    >[!NOTE]
-   >Se eliminate l’immagine utilizzata da AEM per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
+   >Se eliminate l’immagine che AEM usata per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
 
    * Per eliminare una risorsa, selezionatela, quindi toccate **[!UICONTROL Elimina risorsa]**.
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
