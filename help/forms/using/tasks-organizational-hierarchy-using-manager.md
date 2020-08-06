@@ -1,8 +1,8 @@
 ---
 title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager
 seo-title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager
-description: Informazioni su come i manager e gli amministratori dell’organizzazione possono accedere e lavorare alle attività dei rapporti diretti e indiretti nella scheda Da fare nell’area di lavoro Moduli AEM.
-seo-description: Informazioni su come i manager e gli amministratori dell’organizzazione possono accedere e lavorare alle attività dei rapporti diretti e indiretti nella scheda Da fare nell’area di lavoro Moduli AEM.
+description: In che modo i manager e gli amministratori dell'organizzazione possono accedere e lavorare alle attività dei propri rapporti diretti e indiretti nella scheda Da fare dell'area di lavoro  AEM Forms.
+seo-description: In che modo i manager e gli amministratori dell'organizzazione possono accedere e lavorare alle attività dei propri rapporti diretti e indiretti nella scheda Da fare dell'area di lavoro  AEM Forms.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
 
 # Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-Nell&#39;area di lavoro Moduli AEM, i manager possono ora accedere alle attività assegnate a chiunque all&#39;interno della propria gerarchia, sia direttamente che indirettamente, ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Operazioni nell&#39;area di lavoro Moduli AEM. Le azioni supportate per le attività dei rapporti diretti sono:
+&#39;area di lavoro di AEM Forms, i manager possono ora accedere alle attività assegnate a chiunque all&#39;interno della propria gerarchia, sia direttamente che indirettamente, ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Operazioni nell&#39;area di lavoro di  AEM Forms. Le azioni supportate per le attività dei rapporti diretti sono:
 
 **Inoltra** un&#39;attività dal rapporto diretto a qualsiasi utente.
 
@@ -27,10 +30,10 @@ Nell&#39;area di lavoro Moduli AEM, i manager possono ora accedere alle attivit�
 
 **Rifiuta** un&#39;attività inoltrata a un rapporto diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un rapporto diretto.
 
-AEM Forms limita l&#39;accesso di un utente solo alle attività per le quali l&#39;utente dispone del controllo di accesso (ACL, Access Control). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l&#39;utente dispone delle autorizzazioni di accesso. Utilizzando servizi Web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
+ AEM Forms limita l&#39;accesso di un utente solo alle attività per le quali l&#39;utente dispone del controllo di accesso (ACL). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l&#39;utente dispone delle autorizzazioni di accesso. Utilizzando servizi Web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
 
-1. Creare un DSC. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
-1. In DSC, definire un nuovo SPI per la gestione gerarchica per definire i rapporti diretti e la gerarchia all’interno degli utenti di AEM Forms. Segue un esempio di snippet di codice Java™.
+1. Creare un DSC. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con  AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Nel DSC, definite un nuovo SPI per la gestione gerarchica per definire rapporti diretti e la gerarchia all&#39;interno degli utenti AEM Forms . Segue un esempio di snippet di codice Java™.
 
    ```as3
    public class MyHierarchyMgmtService 
