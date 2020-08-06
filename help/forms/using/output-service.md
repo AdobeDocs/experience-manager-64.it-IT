@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 ## Panoramica {#overview}
 
-Il servizio di output è un servizio OSGi che fa parte di AEM Document Services. Il servizio di output supporta vari formati di output e le funzioni di progettazione dell&#39;output di AEM Forms Designer. Il servizio di output può convertire i modelli XFA e i dati XML per generare documenti di stampa in vari formati.
+Il servizio di output è un servizio OSGi che fa parte di AEM Document Services. Il servizio Output supporta vari formati di output e le funzionalità di progettazione dell&#39;output di  AEM Forms Designer. Il servizio di output può convertire i modelli XFA e i dati XML per generare documenti di stampa in vari formati.
 
 Il servizio di output consente di creare applicazioni che consentono di:
 
@@ -29,13 +32,13 @@ Il servizio di output consente di creare applicazioni che consentono di:
 
 >[!NOTE]
 >
->Il servizio di output è un&#39;applicazione a 32 bit. In Microsoft Windows, un&#39;applicazione a 32 bit può utilizzare al massimo 2 GB di memoria. Il limite si applica anche al servizio di output.
+>Il servizio di output è un&#39;applicazione a 32 bit. In Microsoft Windows, un&#39;applicazione a 32 bit può utilizzare un massimo di 2 GB di memoria. Il limite si applica anche al servizio di output.
 
 ## Creazione di documenti modulo non interattivi {#creating-non-interactive-form-documents}
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-In genere, i modelli vengono creati utilizzando AEM Forms Designer. Le `generatePDFOutput` e `generatePrintedOutput` le API del servizio Output consentono di convertire direttamente questi modelli in vari formati, inclusi PDF, PostScript, ZPL e PCL.
+In genere, i modelli vengono creati utilizzando  AEM Forms Designer. Le `generatePDFOutput` e `generatePrintedOutput` le API del servizio Output consentono di convertire direttamente questi modelli in vari formati, inclusi PDF, PostScript, ZPL e PCL.
 
 L&#39; `generatePDFOutput` operazione genera PDF, mentre l&#39; `generatePrintedOutput` operazione genera formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio `ExpenseClaim.xdp`) o un oggetto Document che contiene il modello. Quando specificate il nome del file modello, specificate anche la directory principale del contenuto come percorso della cartella che contiene il modello. Potete specificare la radice del contenuto utilizzando il `PDFOutputOptions` parametro o `PrintedOutputOptions` . Per informazioni dettagliate sulle altre opzioni che potete specificare utilizzando questi parametri, consultate Javadoc.
 
@@ -61,4 +64,4 @@ I tipi di parametri sono gli stessi tipi dei parametri per le operazioni `genera
 
 Il quarto parametro è di tipo `BatchOptions`, che consente di specificare se è possibile generare un file separato per ciascun record. Il valore predefinito di questo parametro è false.
 
-Sia `generatePrintedOutputBatch` che `generatePDFOutputBatch` restituisce un valore di tipo `BatchResult`. Il valore contiene un elenco di documenti generati. Contiene inoltre un documento di metadati in formato XML che contiene informazioni relative a ciascun documento generato.
+Sia `generatePrintedOutputBatch` che `generatePDFOutputBatch` restituiscono un valore di tipo `BatchResult`. Il valore contiene un elenco di documenti generati. Contiene inoltre un documento di metadati in formato XML che contiene informazioni relative a ciascun documento generato.
