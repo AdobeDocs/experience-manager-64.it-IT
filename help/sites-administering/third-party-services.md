@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 translation-type: tm+mt
 source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 11%
 
 ---
 
 
 # Integrazione con i servizi di terze parti{#integrating-with-third-party-services}
 
-Con AEM, puoi integrare i seguenti prodotti non Adobe:
+Con AEM, è possibile integrare i seguenti prodotti di Adobe non :
 
-* Connessione Amazon SNS - Servizi Web Amazon
+*  connessione Amazon SNS -  servizi Web Amazon
 * BrightEdge Content Optimizer - contenuto ottimizzato per la ricerca
 * ExactTarget - Marketing e-mail
 * Facebook Connect - social network
@@ -31,23 +34,23 @@ Con AEM, puoi integrare i seguenti prodotti non Adobe:
 * Twitter - social network
 * YouTube - condivisione di video
 
-Inoltre, puoi integrare AEM con [Marketing Cloud](/help/sites-administering/marketing-cloud.md) e con [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Inoltre, è possibile integrare AEM con il [Marketing Cloud](/help/sites-administering/marketing-cloud.md) e con la [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integrazione con Salesforce {#integrating-with-salesforce}
 
 Salesforce.com è l&#39;azienda per l&#39;elaborazione cloud di livello Enterprise leader nel passaggio a Social Enterprise.
 
-Per informazioni sull’integrazione del sito AEM e di Salesforce, consultate [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
+Per informazioni sull’integrazione del sito AEM e di Salesforce, consulta [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
 
 ## Integrazione con Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
->Integrazione di Silverpop Engage non disponibile. Per integrare AEM con Silverpop Engage, [scaricate il pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) da Package Share.
+>L&#39;integrazione di Silverpop Engage non è disponibile. Per integrare AEM con Silverpop Engage, [scaricate il pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) da Package Share.
 
 Silverpop Engage offre automazione marketing, e-mail, dispositivi mobili e social network.
 
-Per informazioni sull’integrazione del sito AEM e di ExactTarget, consultate [Integrazione con Silverpop Engage](/help/sites-administering/silverpop.md).
+Per informazioni sull’integrazione del sito AEM con ExactTarget, consultate [Integrazione con Silverpop Engage](/help/sites-administering/silverpop.md).
 
 ## Integrazione con ExactTarget {#integrating-with-exacttarget}
 
@@ -57,7 +60,7 @@ Per informazioni sull’integrazione del sito AEM e di ExactTarget, consultate [
 
 ## Integrazione con Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook e Twitter sono popolari servizi di social network. L&#39;integrazione di AEM con Facebook e Twitter consente alle organizzazioni di fornire un&#39;opzione di accesso a Facebook o Twitter sulle proprietà digitali di proprietà, e quindi di personalizzare l&#39;esperienza utente in base alle informazioni sul profilo. Gli addetti al marketing possono inoltre combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, come un sistema di gestione delle relazioni con i clienti o un profilo del sito Web, per creare una visualizzazione unificata del cliente.
+Facebook e Twitter sono popolari servizi di social network. AEM&#39;integrazione con Facebook e Twitter consente alle organizzazioni di fornire un&#39;opzione di accesso a Facebook o Twitter sulle proprietà digitali possedute, e quindi personalizzare l&#39;esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono inoltre combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, come un sistema di gestione delle relazioni con i clienti o un profilo del sito Web, per creare una visualizzazione unificata del cliente.
 
 Per ulteriori informazioni, consultate Accesso [tramite](/help/communities/social-login.md) social network.
 
