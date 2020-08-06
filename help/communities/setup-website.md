@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
 source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -37,6 +40,7 @@ Il codice riportato in questa esercitazione si basa sul fatto che il nome della 
 >* I nomi visualizzati in CRXDE sono nomi di nodi che formano il percorso del contenuto indirizzabile
 >* I nomi dei nodi possono contenere spazi, ma se utilizzati in un URI, lo spazio deve essere codificato come &#39;%20&#39; o &#39;+&#39;
 >* I nomi dei nodi possono contenere trattini e caratteri di sottolineatura, ma devono essere codificati se vi viene fatto riferimento come nome di pacchetto all&#39;interno di un file Java. Sia i trattini che i caratteri di sottolineatura sono preceduti dal relativo valore Unicode:
+
    >
    >   
    * hyphen diventa &#39;_002d&#39;
@@ -74,9 +78,10 @@ La directory /apps è protetta e non accessibile al pubblico così come le direc
    1. Fai clic su **[!UICONTROL OK]**
    1. Ri-seleziona `/apps/an-scf-sandbox`
    1. Seleziona **[!UICONTROL Salva tutto]**
+
    Come per qualsiasi processo di modifica, salvate spesso. Se si verificano problemi durante l’immissione dei dati, è possibile che l’accesso sia scaduto o che sia necessario salvare le modifiche precedenti.
 
-1. La struttura nel riquadro di esplorazione di CRXDE Lite dovrebbe ora essere simile a questa:
+1. La struttura nel riquadro di esplorazione del CRXDE Lite deve ora essere simile alla seguente:
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -86,22 +91,23 @@ La directory /etc/designs contiene le immagini, gli script e i fogli di stile da
 
 1. Per utilizzare lo strumento Designer nell&#39;interfaccia classica, accedere a [https://&lt;server>:&lt;porta>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, i controlli di accesso e la replica non verranno impostati sulle impostazioni predefinite per una pagina.
+   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, i controlli di accesso e la replica non vengono impostati sulle impostazioni predefinite per una pagina.
 
 1. Nel riquadro di esplorazione, selezionate la cartella **[!UICONTROL Progettazione]** e fate clic su **[!UICONTROL Nuovo > Nuova pagina]**.
 
    Invio:
 
-   * Titolo: Sandbox **SCF**
-   * Nome: sandbox **an-scf**
+   * Titolo: **Un sandbox SCF**
+   * Nome: **an-scf-sandbox**
    * Seleziona modello pagina **di progettazione**
+
    Fai clic su **[!UICONTROL Crea]**
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
 1. Aggiornate il riquadro di esplorazione se la cartella &quot;Una sandbox SCF&quot; non viene visualizzata.
 
-1. Tornate a CRXDE Lite (http:// localhost:4502/crx/de) ed espandete /etc/designs per visualizzare il nodo denominato &quot;an-scf-sandbox&quot;.
+1. Tornate al CRXDE Lite (http:// localhost:4502/crx/de) ed espandete /etc/designs per visualizzare il nodo denominato &quot;an-scf-sandbox&quot;.
 
    Nel riquadro inferiore destro di CRXDE, è possibile visualizzare la scheda Proprietà, la scheda Controllo accesso e la scheda Replica per vedere cosa è stato definito utilizzando il modello di pagina di progettazione.
 
