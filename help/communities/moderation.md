@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 4%
 
 ---
 
 
 # Console di moderazione {#moderation-console}
 
-Nelle community AEM, la [moderazione collettiva dei contenuti](moderate-ugc.md) della community è possibile sia dall’ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della community (membri attendibili della community assegnati come moderatori).
+In  AEM Communities, la [moderazione di contenuti](moderate-ugc.md) della community è possibile sia dall&#39;ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della comunità (membri della comunità attendibili assegnati come moderatori).
 
 Gli amministratori e i moderatori della community possono eseguire anche la moderazione [contestuale](in-context.md) nell’ambiente di pubblicazione.
 
@@ -51,7 +54,7 @@ Nell’ambiente di authoring, per accedere alla console Moderazione
 
 * Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Moderazione]**
 
-È possibile eseguire le attività di moderazione solo se l&#39;accesso è stato effettuato come amministratore o come membro ` [moderator permissions](in-context.md#identifyingtrustedmembers)`. L&#39;unico contenuto della community visualizzato è quello consentito al membro che ha effettuato l&#39;accesso.
+È possibile eseguire le attività di moderazione solo se l&#39;accesso è stato effettuato come amministratore o come membro ` [moderator permissions](in-context.md#identifyingtrustedmembers)`. L&#39;unico contenuto della community visualizzato è quello che il membro che ha effettuato l&#39;accesso può moderare.
 
 >[!NOTE]
 >
@@ -73,18 +76,18 @@ La barra di navigazione superiore è costante per tutte le console. Per ulterior
 
 ### Barra degli strumenti {#toolbar}
 
-La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore a sinistra:
+La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore di attivazione/disattivazione sul lato sinistro:
 
 * [La barra laterale](moderation.md#filter-rail) Filtro consente di aprire una barra laterale che consente di scegliere le proprietà su cui filtrare il contenuto.
 
-La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore a sinistra:
+La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore di attivazione/disattivazione sul lato sinistro:
 
 ![toggleswitch](assets/toggleswitch.png)
 
 [Barra dei filtri](moderation.md#filter-rail)\
 Consente di aprire una barra laterale, selezionando Cerca, che consente di scegliere le proprietà su cui filtrare il contenuto.
 
-![filterrana](assets/filterrail.png)
+![filterroide](assets/filterrail.png)
 
 ### Area contenuto {#content-area}
 
@@ -114,7 +117,7 @@ I filtri all&#39;interno di ciascuna categoria vengono **** suddivisi in OR e i 
 
 Ad esempio, se selezionate **Domanda** e **Risposta**, il contenuto visualizzato sarà una **domanda** *o* una **risposta**.
 
-Se invece selezionate **Domanda** e **In sospeso**, verrà visualizzato solo il contenuto **Domanda** ed **In sospeso**.
+Tuttavia, se selezionate **Domanda** e **In sospeso**, verrà visualizzato solo il contenuto che è una **Domanda** ed è **In sospeso**.
 
 >[!NOTE]
 >
@@ -144,7 +147,7 @@ Il sito limita l&#39;UGC di riferimento visualizzato ai post a siti community se
 
 >[!NOTE]
 >
->Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, compresi i siti non creati con la procedura guidata [di creazione del](sites-console.md)sito, ad esempio gli esempi Geometrixx.
+>Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, compresi i siti non creati con la procedura guidata [di creazione del](sites-console.md)sito, ad esempio gli esempi di Geometrixx.
 >
 >Quando l&#39;accesso alla console di moderazione in blocco viene eseguito in seguito alla pubblicazione da parte di un membro della community affidabile, vengono visualizzati solo i riferimenti a UGC creati per i siti della community in cui il membro è autorizzato a moderare e possono essere filtrati con il filtro Sito.
 
@@ -178,7 +181,7 @@ Per aggiungere ulteriori risorse da filtrare:
 * Individua `AEM Communities Moderation Dashboard Filters`
 * Selezionare la configurazione da aprire in modalità di modifica
 * Immettere ResourceType di un componente su cui filtrare
-   * Ad esempio, per filtrare i componenti di voto inclusi, immettere:\
+   * Ad esempio, per filtrare i componenti per il voto inclusi, immettere:\
       `Voting=social/tally/components/hbs/voting`
 
 ![chlimage_1-475](assets/chlimage_1-475.png)
@@ -188,7 +191,7 @@ Per aggiungere ulteriori risorse da filtrare:
 
 Il risultato è un nuovo filtro selezionabile per `Voting`il gruppo di `Content Type` filtri.
 
-Quando il filtro viene selezionato, il contenuto del dashboard mostrerà UGC corrispondente a qualsiasi tipo di risorsa immesso.
+Quando il filtro viene selezionato, il contenuto del dashboard mostrerà UGC che corrisponde a qualsiasi tipo di risorsa immesso.
 
 #### Stato {#status}
 
@@ -230,7 +233,7 @@ Pubblicato nell’ultimo limita la visualizzazione dell’UGC di riferimento ai 
 
 [Le azioni](moderate-ugc.md#moderation-actions) di moderazione possono essere eseguite su una o più selezioni effettuate nell&#39;area contenuto o durante la visualizzazione dei dettagli del contenuto.
 
-Per moderare in massa i post, nell&#39;area del contenuto fate clic sull&#39;icona Seleziona ( ![selezione](assets/selecticon.png)) su un post, che viene visualizzata quando passate il puntatore del mouse (desktop) o tenendo premuto un dito sul post (mobile). A questo scopo, potete passare alla modalità multi-selezione e ora selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno conferma.
+Per moderare in massa i post, nell&#39;area del contenuto fate clic sull&#39;icona Seleziona ( ![selezione](assets/selecticon.png)) su un post, che viene visualizzata quando passate il puntatore del mouse (desktop) o tenendo premuto un dito sul post (mobile). A questo scopo, potete passare alla modalità multi-selezione e ora selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno la conferma.
 
 Per moderare un singolo post nell&#39;area contenuto, posizionate il puntatore del mouse (desktop) o tenete premuto un dito sul post (mobile) in modo che sul post figurino dei pulsanti. Quando si utilizza un singolo dettaglio di contenuto, viene richiesta la conferma solo per un&#39;azione di eliminazione.
 
@@ -303,7 +306,7 @@ Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in 
 
 ![chlimage_1-483](assets/chlimage_1-483.png)
 
-In modalità di selezione singola o di massa, potete selezionare gli elementi ed eliminarli. L’azione di eliminazione crea una finestra di dialogo di conferma. Una volta eliminati, tali elementi scompaiono immediatamente dall&#39;area contenuto. **Una volta eliminato, l’UGC viene rimosso in modo permanente dall’archivio e non può essere recuperato in seguito.**
+In modalità di selezione singola o in blocco, potete selezionare gli elementi ed eliminarli. L’azione di eliminazione crea una finestra di dialogo di conferma. Una volta eliminati, questi elementi scompaiono immediatamente dall&#39;area contenuto. **Una volta eliminato, l’UGC viene rimosso in modo permanente dall’archivio e non può essere recuperato in seguito.**
 
 #### Chiudi {#close}
 
