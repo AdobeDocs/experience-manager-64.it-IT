@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 80%
 
 ---
 
@@ -21,14 +24,14 @@ Utilizza i meccanismi standard di caricamento o sincronizzazione per portare le 
 
 Consulta [Caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D principale. Tuttavia, questo non è un requisito.
+ Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D principale. Tuttavia, questo non è un requisito.
 
 Una volta completato il caricamento, i file 3D vengono convertiti e viene applicata un&#39;elaborazione aggiuntiva per preparare la risorsa per la visualizzazione e il rendering.
 
 ## Buone pratiche per il caricamento di risorse 3D {#best-practices-for-uploading-d-assets}
 
 * Generalmente, non ci sono restrizioni sulla posizione in cui si carica il contenuto 3D nella gerarchia delle cartelle AEM Assets. La risoluzione automatizzata delle dipendenze dei file di AEM 3D, tuttavia, ha limitazioni di intervallo per controllare il tempo necessario alla ricerca di repository di risorse grandi. Pertanto, Adobe consiglia di caricare le risorse 3D e i relativi file dipendenti entro una distanza ragionevole da ciascun file (cartella sopra la cartella genitore in comune). Una volta risolte le dipendenze dei file, è possibile spostare liberamente sia la risorsa 3D che i suoi dipendenti in qualsiasi punto dell&#39;archivio senza perdere le relazioni stabilite.
-* Adobe consiglia di scegliere una struttura di cartelle coerente per il contenuto 3D *prima di *caricare. I seguenti suggerimenti sono alcuni degli approcci suggeriti che puoi adottare:
+*  Adobe consiglia di scegliere una struttura di cartelle coerente per il contenuto 3D *prima di *caricare. I seguenti suggerimenti sono alcuni degli approcci suggeriti che puoi adottare:
 
    * **Mantenere una cartella separata per ogni risorsa 3D caricata**.
 
