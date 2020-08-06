@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione tema
 seo-title: Personalizzazione tema
-description: Come personalizzare il tema dell'app AEM Forms.
-seo-description: Come personalizzare il tema dell'app AEM Forms.
+description: Come personalizzare il tema dell'app  AEM Forms.
+seo-description: Come personalizzare il tema dell'app  AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione tema {#theme-customization}
 
-Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un aspetto distinti specifici dell&#39;organizzazione all&#39;app AEM Forms. Ad esempio, è possibile modificare il colore e l&#39;altezza di sfondo delle attività o dei punti di inizio. L&#39;esempio seguente fornisce le istruzioni per la modifica:
+Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un aspetto specifici dell&#39;organizzazione per  l&#39;app AEM Forms. Ad esempio, è possibile modificare il colore e l&#39;altezza di sfondo delle attività o dei punti di inizio. L&#39;esempio seguente fornisce le istruzioni per la modifica:
 
 * visualizzare le istruzioni al posto della descrizione
 * numero di percorsi di visualizzazione
@@ -79,7 +82,7 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 1. Open the `_style.css` file for editing.
 1. Per Immagine di sfondo, passate `#323232` a `#fff`.
 1. Salvare le modifiche e chiudere il `_style.css` file.
-1. Aprite l&#39;app AEM Forms.
+1. Aprite l&#39;app  AEM Forms.
 
-   L&#39;app AEM Forms ora visualizza istruzioni invece della descrizione.
+   L&#39;app AEM Forms  ora visualizza le istruzioni invece della descrizione.
 
