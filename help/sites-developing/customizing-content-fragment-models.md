@@ -1,5 +1,5 @@
 ---
-title: NON PUBBLICARE, MA NON ELIMINARE LA personalizzazione dei modelli di frammenti di contenuto
+title: NON PUBBLICARE, MA NON DELETE Personalizzare I Modelli Di Frammenti Di Contenuto
 seo-title: Personalizzazione dei modelli di frammenti di contenuto
 description: I modelli di frammenti di contenuto possono essere personalizzati ed estesi.
 seo-description: I modelli di frammenti di contenuto possono essere personalizzati ed estesi.
@@ -10,11 +10,14 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
-# NON PUBBLICARE, MA NON ELIMINARE LA personalizzazione dei modelli di frammenti di contenuto{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NON PUBBLICARE, MA NON DELETE Personalizzare I Modelli Di Frammenti Di Contenuto{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
 L&#39;Editor modello di frammenti di contenuto è una procedura guidata basata su `Formbuilder`, ereditata da:
 
@@ -26,7 +29,8 @@ Questo componente dispone degli strumenti necessari per eseguire il rendering de
 
 I modelli vengono salvati e creati in `/conf`, in una cartella in cui è abilitata la proprietà [Modelli di frammenti di](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenuto. Questa impostazione è visibile anche nelle proprietà **di** configurazione, accessibili dal browser **di** configurazione.
 
-1. Passare al browser tramite **Strumenti**, **Generali**, **Configuration Browser** Ad esempio, `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Passare al browser tramite **Strumenti**, **Generali**, **Configuration Browser** Ad esempio, 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. Dal browser, selezionate la configurazione appropriata, quindi **Proprietà** dalla barra degli strumenti.
 
@@ -40,7 +44,7 @@ Un utente può [creare un modello](/help/assets/content-fragments-models.md#crea
 >
 >Non ***devi*** cambiare nulla nel `/libs` percorso.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando applicate un hotfix o un pacchetto di funzioni).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un pacchetto di funzioni).
 
 ## Struttura di un modello {#structure-of-a-model}
 
@@ -57,9 +61,9 @@ Verrà creata una voce con la struttura seguente:
    Ogni modello contiene un `jcr:content` nodo che:
 
    * contiene proprietà di informazioni sul modello, ad esempio `jcr:title`, `lastModified`, `lastModifiedBy`
-   * di solito ha `sling:ResourceType` `dam/cfm/models/console/components/data/entity/default`il
+   * di solito ha il `sling:ResourceType` di `dam/cfm/models/console/components/data/entity/default`,
 
-      con `sling:ResourceSuperType``dam/cfm/models/console/components/data/entity`
+      con `sling:ResourceSuperType` `dam/cfm/models/console/components/data/entity`
 
 * `model`
 
@@ -73,18 +77,18 @@ Verrà creata una voce con la struttura seguente:
 >
 >Tutti i tipi di dati trascinati e rilasciati in un editor modelli, e come tale creata, **devono** avere la `name` proprietà immessa dall&#39;utente.
 >
->**Viene visualizzato come Nome** proprietà &amp;ast; nella scheda **Proprietà** dell&#39;editor modelli.
+>Viene visualizzato come Nome **proprietà &amp;ast;** nella scheda **Proprietà** dell&#39;editor modelli.
 
 ## Struttura dell&#39;Editor modello {#structure-of-the-model-editor}
 
 L&#39;Editor **modello di frammento di** contenuto ha due parti:
 
-* Il pannello di anteprima o di visualizzazione a sinistra, in cui è possibile rilasciare gli elementi. Questo:
+* Il pannello di anteprima, o visualizzazione, a sinistra, in cui è possibile rilasciare gli elementi. Tale comportamento:
 
-   * Visualizza un&#39;anteprima del tipo **di** dati di cui viene creata un&#39;istanza.
+   * Visualizza un&#39;anteprima del tipo **di** dati creato.
    * Consente l&#39;ordinamento all&#39;interno dell&#39;Editor modello.
 
-* Le schede **Tipi** di dati/**Proprietà** nel pannello a destra. Questo:
+* Le schede **Tipi** di dati/**Proprietà** nel pannello a destra. Tale comportamento:
 
    * Visualizza un elenco di tipi di dati che possono essere trascinati e istanziati.
    * Per l&#39;editor modelli out-of-the-box l&#39;elenco è presente in:
@@ -101,7 +105,7 @@ L&#39;Editor **modello di frammento di** contenuto ha due parti:
 >
 >Non ***devi*** cambiare nulla nel `/libs` percorso.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando applicate un hotfix o un pacchetto di funzioni).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un pacchetto di funzioni).
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 Quando viene creata un&#39;istanza di un tipo di dati, gli input HTML vengono creati per ogni proprietà di cui il componente deve essere rappresentato in un frammento di contenuto. Ad esempio:
 
-* **** Nome proprietà &amp;ast; ( `name`) - funge da identificatore per i componenti
+* **Nome proprietà &amp;ast;** ( `name`) - funge da identificatore per i componenti
 
 * **Rendering come** ( `metaType`) - il componente deve essere rappresentato come
 
