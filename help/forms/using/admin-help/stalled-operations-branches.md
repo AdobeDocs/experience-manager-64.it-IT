@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -26,17 +29,17 @@ Quando un processo si arresta, non vengono eseguite ulteriori operazioni finché
 
 Per ogni elemento in stallo, l&#39;elenco mostra le seguenti informazioni:
 
-**** Nome operazione o Nome ramo: Nome dell&#39;operazione o del ramo.
+**Nome operazione o Nome ramo:** Nome dell&#39;operazione o del ramo.
 
-**** Stato: Sempre STALLED per gli elementi in stallo.
+**Stato:** Sempre STALLED per gli elementi in stallo.
 
-**** Errore: Breve descrizione del problema.
+**Errore:** Breve descrizione del problema.
 
-**** ID processo: Numero intero positivo assegnato dal flusso di lavoro del modulo quando viene creata un&#39;istanza del processo (ovvero quando un utente o un passaggio automatico avvia un processo). Potete utilizzare questo identificatore per tenere traccia dell’istanza di processo nel corso del suo ciclo di vita.
+**ID processo:** Numero intero positivo assegnato dal flusso di lavoro del modulo quando viene creata un&#39;istanza del processo (ovvero quando un utente o un passaggio automatico avvia un processo). Potete utilizzare questo identificatore per tenere traccia dell’istanza di processo nel corso del suo ciclo di vita.
 
-**** Nome processo - Versione: Nome del processo assegnato in Workbench.
+**Nome processo - Versione:** Nome del processo assegnato in Workbench.
 
-**** Data di arresto: La data e l&#39;ora in cui l&#39;operazione o il ramo si è bloccata.
+**Data di arresto:** La data e l&#39;ora in cui l&#39;operazione o il ramo si è bloccata.
 
 Nella pagina Operazioni bloccate o Brani bloccati potete effettuare le seguenti operazioni:
 
@@ -73,9 +76,9 @@ Dalla pagina Dettagli errore è inoltre possibile terminare o riprovare le opera
 
 ## Il processo non si arresta quando l&#39;utente di inoltro non esiste {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Gli errori si verificano quando l’operazione Assegna attività nei moduli AEM è configurata per inoltrare l’attività a un altro utente dopo un determinato periodo di tempo e l’utente dell’inoltro viene eliminato dopo l’esecuzione dell’operazione Assegna attività ma prima che si verifichi l’escalation.
+Gli errori si verificano quando l&#39;operazione Assegna attività nei moduli AEM Il servizio Utente è configurato per inoltrare l&#39;attività a un altro utente dopo un determinato periodo di tempo e l&#39;utente dell&#39;inoltro viene eliminato dopo l&#39;esecuzione dell&#39;operazione Assegna attività ma prima che l&#39;inoltro venga eseguito.
 
-Quando si verifica questa situazione, lo stato del processo e dell&#39;attività non cambia al momento dell&#39;inoltro configurato e l&#39;inoltro non si verifica ma il processo non si arresta. Nel registro server viene visualizzato il seguente messaggio:
+Quando si verifica questa situazione, lo stato del processo e dell&#39;attività non cambia al momento dell&#39;inoltro configurato e l&#39;inoltro non si verifica ma il processo non si arresta. Nel registro del server viene visualizzato il seguente messaggio:
 
 &quot;L&#39;entità specificata per l&#39;inoltro non è valida, per taskID: *numero*, coda specificata: *numero*.&quot;
 
