@@ -1,6 +1,6 @@
 ---
-title: Best practice
-seo-title: Best practice
+title: 'Best practice  '
+seo-title: 'Best practice  '
 description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 seo-description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
 
-# Best practice{#best-practices}
+# Best practice  {#best-practices}
 
 Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
@@ -23,7 +26,7 @@ La documentazione relativa alle best practice disponibile per le aree seguenti:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Moduli](#forms)
+* [Forms](#forms)
 
 Per le best practice relative ad amministrazione, distribuzione e manutenzione o sviluppo, consulta uno dei documenti elencati di seguito:
 
@@ -66,10 +69,10 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
 
 Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
 
-Authoring: Ambiente e strumenti [di](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) authoring - Fornisce una panoramica su come creare le pagine.
+Authoring: [Ambiente e strumenti](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) di authoring - Fornisce una panoramica su come creare le pagine.
 
 ## Forms {#forms}
 
-Moduli adattivi: Procedure [ottimali per l&#39;utilizzo dei moduli](/help/forms/using/adaptive-forms-best-practices.md) adattivi - Illustra le procedure ottimali per l&#39;impostazione, la creazione e la personalizzazione dei moduli adattivi.
+Moduli adattivi: [Procedure ottimali per l&#39;utilizzo dei moduli](/help/forms/using/adaptive-forms-best-practices.md) adattivi - Illustra le procedure ottimali per l&#39;impostazione, la creazione e la personalizzazione dei moduli adattivi.
 
-Moduli HTML5: Procedure [ottimali per la progettazione di moduli](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - Illustra le procedure ottimali per l’elaborazione del layout e della progettazione dei moduli HTML5.
+Moduli HTML5: [Procedure ottimali per la progettazione di moduli](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - Illustra le procedure ottimali per l’elaborazione del layout e della progettazione dei moduli HTML5.
