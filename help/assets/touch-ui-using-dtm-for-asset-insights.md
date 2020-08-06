@@ -1,34 +1,35 @@
 ---
 title: Abilitazione di approfondimenti sulle risorse tramite DTM
-description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
+description: Scopri come utilizzare  Gestione dinamica dei tag (DTM, Dynamic Tag Management) di Adobe per abilitare le informazioni sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Abilitazione di approfondimenti sulle risorse tramite DTM {#enabling-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. Viene fornito gratuitamente ai clienti di Adobe Analytics.
+ Gestione tag dinamica dei Adobi è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per  clienti Adobe Analytics.
 
-Sebbene sia possibile personalizzare il codice di tracciamento per consentire a soluzioni CMS di terze parti di utilizzare Asset Insights, Adobe consiglia di utilizzare DTM per inserire i tag Asset Insights.
+Sebbene sia possibile personalizzare il codice di tracciamento per consentire a soluzioni CMS di terze parti di utilizzare Asset Insights,  Adobe consiglia di utilizzare DTM per inserire i tag Asset Insights.
 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, effettuate le seguenti operazioni:
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Insights Configuration]**.
-1. [Configurare l&#39;istanza di AEM con il servizio cloud DTM](../sites-administering/dtm.md)
+1. [Configurare AEM&#39;istanza con il Cloud Service DTM](../sites-administering/dtm.md)
 
-   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account dall&#39;icona Profilo. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l’integrazione di AEM Sites con Asset Insights è ancora in corso.
+   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account dall&#39;icona Profilo. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l&#39;integrazione di  AEM Sites con Asset Insights è ancora in corso.
 
 1. Accedete a [https://dtm.adobe.com](https://dtm.adobe.com/)e selezionate una Società, a seconda delle necessità.
 1. Creare/aprire una proprietà Web esistente
 
    * Selezionate la scheda Proprietà **** Web, quindi toccate o fate clic su **[!UICONTROL Aggiungi proprietà]**.
    * Aggiornate i campi come appropriato, quindi toccate o fate clic su **[!UICONTROL Crea proprietà]** (consultate la [documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e toccare o fare clic su **[!UICONTROL Crea nuova regola]**.
@@ -44,14 +45,14 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, effettuate le se
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` è stato rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics di DTM.
-   >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione verrà chiamata al termine del caricamento dello strumento Adobe Analytics di DTM.
-   >* A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio AEM, CDN e così via), l’origine della sorgente dello script potrebbe richiedere delle modifiche.
-   >* Per il Tracciatore pagina ospitato in AEM, l’origine deve puntare a un’istanza di pubblicazione utilizzando il nome host dell’istanza del dispatcher.
+   >* `AppMeasurement.js` è stato rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics  di Gestione dinamica dei tag.
+   >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione verrà chiamata una volta terminato il caricamento dello strumento Adobe Analytics  DTM.
+   >* A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio AEM, CDN e così via), l&#39;origine della sorgente dello script potrebbe richiedere delle modifiche.
+   >* Per il Tracker di pagina ospitato AEM, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza del dispatcher.
 
 
 
-1. Aprite [https://dtm.adobe.com](https://dtm.adobe.com). Fai clic su Panoramica nella proprietà Web e fai clic su Aggiungi strumento o apri uno strumento Adobe Analytics esistente. Durante la creazione dello strumento, potete impostare il metodo di configurazione su Automatico.
+1. Aprite [https://dtm.adobe.com](https://dtm.adobe.com). Fare clic su Panoramica nella proprietà Web e quindi su Aggiungi strumento o aprire uno strumento Adobe Analytics  esistente. Durante la creazione dello strumento, potete impostare il metodo di configurazione su Automatico.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -109,7 +110,7 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, effettuate le se
 
       Gli argomenti rimanenti corrispondono a ciò che è configurato nella pagina Insights Configuration (**[!UICONTROL Strumenti > Risorse > Insights Configuration]**).
 
-   * L&#39;oggetto AppMeasurement viene recuperato eseguendo query `satelliteLib` per tutti i motori SiteCatalyst disponibili. Se sono configurati più tag, modificate l&#39;indice del selettore di array in modo appropriato. Le voci dell&#39;array sono ordinate in base agli strumenti SiteCatalyst disponibili nell&#39;interfaccia DTM.
+   * L&#39;oggetto AppMeasurement viene recuperato eseguendo query `satelliteLib` per tutti i motori di SiteCatalyst disponibili. Se sono configurati più tag, modificate l&#39;indice del selettore di array in modo appropriato. Le voci dell&#39;array sono ordinate in base agli strumenti di SiteCatalyst disponibili nell&#39;interfaccia DTM.
 
 1. Salvare e chiudere la finestra Editor di codice, quindi salvare le modifiche nella configurazione dello strumento.
 1. Nella scheda **[!UICONTROL Approvazioni]** , approvare entrambe le approvazioni in sospeso. Il tag DTM è pronto per essere inserito nella pagina Web. Per informazioni dettagliate su come inserire tag DTM nelle pagine Web, consultate [Integrazione di DTM nei modelli](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)di pagina personalizzati.
