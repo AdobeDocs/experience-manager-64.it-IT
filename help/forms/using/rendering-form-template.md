@@ -1,8 +1,8 @@
 ---
 title: Rendering del modello di modulo per i moduli HTML5
 seo-title: Rendering del modello di modulo per i moduli HTML5
-description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante la chiamata al servizio Forms OSGi.
-seo-description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante la chiamata al servizio Forms OSGi.
+description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante il servizio Forms OSGi.
+seo-description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante il servizio Forms OSGi.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Per un profilo personalizzato, l&#39;endpoint cambia di conseguenza. Ad esempio,
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Se il modello risiede nell’archivio AEM in un’applicazione denominata FormSubmission, l’URI è:
+Se il modello risiede nell&#39;archivio AEM in un&#39;applicazione denominata FormSubmission, l&#39;URI è:
 
 ```
 http://localhost:4502/content/xfaforms/profiles/default.html?
@@ -80,4 +83,4 @@ I moduli HTML5 supportano tre metodi per passare i parametri di rendering. Puoi 
 
 ### Invia parametri {#submit-parameters}
 
-I moduli HTML5 inviano dati; eseguire script sul lato server e servizi Web sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script sul lato server e servizi Web sui server AEM, consultate Proxy [di servizio moduli](/help/forms/using/service-proxy.md)HTML5.
+I moduli HTML5 inviano dati; eseguire script sul lato server e servizi Web sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script sul lato server e servizi Web sui server AEM, vedere [HTML5 forms Service Proxy](/help/forms/using/service-proxy.md).
