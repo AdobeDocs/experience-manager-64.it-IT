@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 2%
 
 ---
 
 
 # Offloader flusso di lavoro risorse{#assets-workflow-offloader}
 
-Lo scaricatore del flusso di lavoro Assets consente di abilitare più istanze di Risorse Adobe Experience Manager (AEM) per ridurre il carico di elaborazione sull’istanza principale (intestazione). Il carico di elaborazione viene distribuito tra l&#39;istanza di riempimento iniziale e le varie istanze offload (Worker) ad essa aggiunte. La distribuzione del carico di elaborazione delle risorse aumenta l’efficienza e la velocità con cui AEM Assets elabora le risorse. Inoltre, consente di allocare risorse dedicate per elaborare risorse di un particolare tipo MIME. Ad esempio, potete allocare un nodo specifico nella topologia per elaborare solo risorse InDesign.
+Lo scaricatore del flusso di lavoro di Assets consente di abilitare più istanze di Adobe Experience Manager (AEM) Assets per ridurre il carico di elaborazione sull’istanza principale (riempimento iniziale). Il carico di elaborazione viene distribuito tra l&#39;istanza di riempimento iniziale e le varie istanze offload (Worker) ad essa aggiunte. La distribuzione del carico di elaborazione delle risorse aumenta l’efficienza e la velocità con cui  AEM Assets elabora le risorse. Inoltre, consente di allocare risorse dedicate per elaborare risorse di un particolare tipo MIME. Ad esempio, potete allocare un nodo specifico nella topologia per elaborare solo risorse  InDesign.
 
 ## Configurare la topologia offloader {#configure-offloader-topology}
 
-Utilizzare Configuration Manager per aggiungere l&#39;URL per l&#39;istanza leader e i nomi host delle istanze offloader per le richieste di connessione nell&#39;istanza leader.
+Utilizzate Configuration Manager per aggiungere l&#39;URL per l&#39;istanza leader e i nomi host delle istanze offloader per le richieste di connessione nell&#39;istanza leader.
 
 1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Operazioni** > Console **** Web per aprire Gestione configurazione.
 1. Dalla console Web, selezionate **Sling** (Sling) > **Topology Management (Gestione** topologia).
@@ -48,7 +51,7 @@ Utilizzare Configuration Manager per aggiungere l&#39;URL per l&#39;istanza lead
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Disattiva l’argomento *com/adobe/granite/workflow/offload* sulle istanze iniziali con cui gli utenti interagiscono per caricare o modificare le risorse AEM.
+1. Disattiva l’argomento *com/adobe/granite/workflow/offload* sulle istanze iniziali con cui gli utenti interagiscono per caricare o modificare AEM risorse.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -56,7 +59,7 @@ Utilizzare Configuration Manager per aggiungere l&#39;URL per l&#39;istanza lead
 
 Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavoro **DAM Update Asset Offload** (Aggiorna risorsa) sull&#39;istanza principale invece del flusso di lavoro **Dam Update Asset** (Aggiorna risorsa Dam).
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Workflow Launcher** .
+1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Avviatori** flusso di lavoro.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -69,7 +72,7 @@ Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavor
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Modelli** per aprire la pagina Modelli **di** workflow.
+1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Modelli** per aprire la pagina Modelli **** di workflow.
 1. Selezionate il flusso di lavoro **DAM Update Asset Offload** , quindi toccate o fate clic su **Modifica** nella barra degli strumenti per visualizzarne i dettagli.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
@@ -82,7 +85,7 @@ Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavor
 
 Disattivate i avviatori del flusso di lavoro che eseguono il flusso di lavoro **DAM Update Asset** nell&#39;istanza iniziale.
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Workflow Launcher** .
+1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Avviatori** flusso di lavoro.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
