@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 È possibile impostare un messaggio da visualizzare nella pagina di benvenuto nell’interfaccia utente di Workspace.
 
-Se necessario, potete utilizzare i tag HTML supportati da Adobe Flash® Player per formattare l&#39;aspetto del testo:
+Se necessario, potete utilizzare i tag HTML supportati da  Adobe Flash® Player per formattare l&#39;aspetto del testo:
 
 * &lt;a> Tag ancoraggio
 * &lt;b> Grassetto
@@ -33,7 +36,7 @@ Se necessario, potete utilizzare i tag HTML supportati da Adobe Flash® Player p
 * &lt;textformat> Tag del formato di testo
 * Tag &lt;u> sottolineato
 
-Per ulteriori informazioni sui tag supportati, vedere la definizione della `htmlText` proprietà per la classe TextField nella Guida di riferimento [del linguaggio](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Per ulteriori informazioni sui tag supportati, vedere la definizione della `htmlText` proprietà per la classe TextField nella Guida di riferimento [del linguaggio di](https://www.adobe.com/support/documentation/en/flex/)Flex.
 
 ## Imposta il messaggio del giorno {#set-the-message-of-the-day}
 
@@ -43,5 +46,5 @@ Per ulteriori informazioni sui tag supportati, vedere la definizione della `html
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
