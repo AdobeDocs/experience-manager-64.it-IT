@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * Luci direzionali
    * Faretti
    * Luci puntiformi
+
    Altri tipi di luce vengono ignorati o convertiti in uno dei tipi supportati sopra quando l’area di visualizzazione viene caricata in AEM 3D. I tipi convertiti vengono utilizzati quando visualizzi la risorsa e quando esegui il rendering utilizzando il modulo di rendering Rapid Refine integrato. I tipi di luce originali vengono utilizzati durante il rendering con Maya.
 
 1. Se necessario, crea un piano base e applica un materiale adatto.
