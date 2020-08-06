@@ -1,6 +1,6 @@
 ---
-title: JSRP - Provider risorse di storage JCR
-seo-title: JSRP - Provider risorse di storage JCR
+title: JSRP - Provider di risorse di storage JCR
+seo-title: JSRP - Provider di risorse di storage JCR
 description: JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di authoring
 seo-description: JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di authoring
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
 source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 
 
-# JSRP - Provider risorse di storage JCR {#jsrp-jcr-storage-resource-provider}
+# JSRP - Provider di risorse di storage JCR {#jsrp-jcr-storage-resource-provider}
 
 ## Informazioni su JSRP {#about-jsrp}
 
-Quando AEM Communities utilizza JSRP come opzione di archiviazione (impostazione predefinita), il contenuto della community viene memorizzato in JCR e il contenuto generato dall&#39;utente (UGC) è accessibile solo dall&#39;istanza di creazione o pubblicazione a cui è stato pubblicato.
+Quando  AEM Communities utilizza JSRP come opzione di archiviazione (impostazione predefinita), il contenuto della community viene memorizzato in JCR e il contenuto generato dall&#39;utente (UGC) è accessibile solo dall&#39;istanza di creazione o pubblicazione a cui è stato pubblicato.
 
 Grazie alla semplicità di implementazione, JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di autore.
 
@@ -31,7 +34,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 Per impostazione predefinita, JSRP è l’opzione di memorizzazione per UGC.
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 Nell’ambiente di authoring, per accedere alla console Configurazione archiviazione
 
@@ -69,7 +72,7 @@ Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spe
 
 Verificate che JSRP sia stato configurato come fornitore predefinito, verificando la configurazione dell&#39;opzione di memorizzazione. Per impostazione predefinita, il provider delle risorse di storage è JSRP.
 
-Per creare e pubblicare tutte le istanze di AEM, rivisitate la console Configurazione archiviazione o verificate l’archivio AEM:
+Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console Configurazione archiviazione o verificate l&#39;archivio AEM:
 
 * in JCR, se [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
