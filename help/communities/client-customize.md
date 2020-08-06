@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione lato client
 seo-title: Personalizzazione lato client
-description: Personalizzazione del comportamento o dell'aspetto lato client in AEM Communities
-seo-description: Personalizzazione del comportamento o dell'aspetto lato client in AEM Communities
+description: Personalizzazione del comportamento o dell'aspetto sul lato client in  AEM Communities
+seo-description: Personalizzazione del comportamento o dell'aspetto sul lato client in  AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 |---|---|
 |  | **[Helper manubrio SCF](handlebars-helpers.md)** |
 
-Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities sul lato client, sono disponibili diversi approcci.
+Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities  lato client, sono disponibili diversi approcci.
 
 Due approcci principali consistono nel sovrapporre o estendere un componente.
 
@@ -39,9 +42,9 @@ La directory /apps è il primo posto in cui è stata eseguita la ricerca per ris
 
 Il componente predefinito nella directory /libs non deve mai essere modificato in quanto le patch e gli aggiornamenti futuri sono liberi di modificare la directory /libs in qualsiasi modo necessario pur mantenendo le interfacce pubbliche.
 
-Ciò è diverso dall’ [estensione](#extensions) di un componente predefinito in cui si desidera apportare modifiche per un uso specifico, la creazione di un percorso univoco per il componente e l’utilizzo del riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
+Ciò è diverso dall’ [estensione](#extensions) di un componente predefinito in cui si desidera apportare modifiche per un uso specifico, la creazione di un percorso univoco per il componente e l’utilizzo di un riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
 
-Per un rapido esempio di sovrapposizione del componente Commenti, provate l’esercitazione [sul componente](overlay-comments.md)Sovrapponi commenti.
+Per un rapido esempio di sovrapposizione del componente commenti, provate l’esercitazione [sul componente](overlay-comments.md)Overlay Comments (Commenti sovrapposizione).
 
 ## Estensioni {#extensions}
 
@@ -102,7 +105,7 @@ Gli stili personalizzati sostituiranno gli stili framework predefiniti e il comp
 
 >[!CAUTION]
 >
->**Qualsiasi nome di classe CSS con il prefisso** scf-js-&amp;ast; ha un uso specifico nel codice JavaScript. Queste classi influiscono sullo stato di un componente (ad esempio, passare da nascosto a visibile) e non devono essere né ignorate né rimosse.
+>Qualsiasi nome di classe CSS con il prefisso **scf-js-&amp;ast;** ha un uso specifico nel codice JavaScript. Queste classi influiscono sullo stato di un componente (ad esempio, per passare da nascosto a visibile) e non devono essere né ignorate né rimosse.
 >
 >Mentre scf-js-amp;ast; le classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati in fogli di stile con la conferma che, controllando gli stati degli elementi, possono verificarsi effetti collaterali.
 
@@ -116,7 +119,7 @@ Per estendere un’implementazione Javascript dei componenti, è necessario solo
 1. Estendi il metodo
 1. Utilizzate SCF.registerComponent() per registrare tutti i metodi con le impostazioni predefinite o con gli oggetti e le viste personalizzati.
 
-### forum.js: Esempio di estensione del forum - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Esempio di estensione del forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -151,9 +154,9 @@ I tag script negli script SCF non devono essere rimossi quando si sovrappongono 
 
 L&#39;utilizzo di librerie [lato](../../help/sites-developing/clientlibs.md) client (clientlibs) consente di organizzare e ottimizzare i file Javascript e CSS utilizzati per il rendering del contenuto sul client.
 
-I clientlibs per SCF seguono un pattern di denominazione molto specifico per due varianti, che varia solo dalla presenza di &quot;author&quot; nel nome della categoria:
+I clientlibs per SCF seguono un pattern di denominazione molto specifico per due varianti, che varia solo in base alla presenza di &quot;author&quot; nel nome della categoria:
 
-| Clientlib | Pattern per la proprietà Categories |
+| Clientlib Variant | Pattern per la proprietà Categories |
 |--- |--- |
 | clientlib complete | cq.social.hbs.&lt;nome componente> |
 | clientlib autore | cq.social.author.hbs.&lt;nome componente> |
