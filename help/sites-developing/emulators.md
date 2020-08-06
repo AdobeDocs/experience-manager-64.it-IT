@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) consente agli autori di visualizzare una pagina in un emulatore che simula l’ambiente in cui l’utente finale visualizzerà la pagina, ad esempio su un dispositivo mobile o in un client di posta elettronica.
 
@@ -150,5 +153,6 @@ Per creare un emulatore mobile personalizzato:
    * Nome = `canRotate`, Tipo = `Boolean`, Valore = `true`: per includere la funzionalità di rotazione.
 
    * Nome = `touchScrolling`, Tipo = `Boolean`, Valore = `true`: per includere la funzionalità di scorrimento touch.
+
    È possibile aggiungere ulteriori funzionalità definendo i propri plug-in.
 
