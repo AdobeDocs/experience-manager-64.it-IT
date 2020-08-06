@@ -29,7 +29,7 @@ Per scaricare le risorse, effettuate le seguenti operazioni:
 1. Selezionate la cartella o selezionate una o più risorse all’interno della cartella.
 1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica.]**
 
-   ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset_download_dialog.png)
+   ![Opzioni disponibili durante il download delle risorse da  risorse Experience Manager](/help/assets/assets/asset_download_dialog.png)
 
    *Figura: Opzioni della finestra di dialogo Download.*
 
@@ -51,7 +51,7 @@ Quando selezionate una cartella da scaricare, viene scaricata l’intera gerarch
 
 Il servlet predefinito [!DNL Experience Manager] consente agli utenti autenticati di emettere richieste di download simultanee di grandi dimensioni per la creazione di file ZIP di risorse visibili agli utenti che possono sovraccaricare il server e la rete. Per attenuare i potenziali rischi DoS causati da questa funzione, il componente `AssetDownloadServlet` OSGi è disabilitato per impostazione predefinita per le istanze di pubblicazione.
 
-Per consentire il download delle risorse da DAM, ad esempio quando si utilizza un sistema simile a Asset Share Commons o ad altre implementazioni di tipo portale, è necessario abilitare manualmente il servlet tramite una configurazione OSGi. Adobe consiglia di impostare la dimensione di download consentita il più bassa possibile senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
+Per consentire il download delle risorse da DAM, ad esempio quando si utilizza un sistema simile a Asset Share Commons o ad altre implementazioni di tipo portale, è necessario abilitare manualmente il servlet tramite una configurazione OSGi.  Adobe consiglia di impostare la dimensione di download consentita il più bassa possibile senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
 
 1. Create una cartella con una convenzione di denominazione per la modalità di esecuzione della pubblicazione (`config.publish`): `/apps/<your-app-name>/config.publish`. Per definire le proprietà di configurazione per una modalità di esecuzione, vedere Modalità di [esecuzione](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Nella cartella di configurazione, create un file di tipo `nt:file` denominato `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
@@ -73,6 +73,6 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 >[!MORELIKETHIS]
 >
 >* [Scaricate le risorse](drm.md)protette da DRM.
->* [Scaricate le risorse tramite  app desktop Experience Manager su Windows o Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
->* [Scaricate le risorse tramite Adobe Assets Link dall&#39;interno delle app](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud supportate.
+>* [Scaricate le risorse tramite &#39;app desktop Experience Manager su Windows o Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Scaricate le risorse tramite  collegamento Risorse Adobe dalle app](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud supportate.
 
