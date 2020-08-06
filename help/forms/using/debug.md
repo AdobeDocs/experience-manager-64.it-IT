@@ -71,11 +71,11 @@ Controllate i seguenti parametri:
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Modulo di rendering Adobe XFA
+   *  Modulo di rendering Forms XFA Adobe
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   *  Adobe XFA Forms LC Connector
 
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
@@ -117,7 +117,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile inviare il modulo {#problem-unable-to-submit-the-form}
 
-1. Verifica di disporre dei diritti di accesso al server AEM e di essere connesso al server.
+1. Verificate di disporre dei diritti di accesso al server AEM e di essere connessi al server.
 1. Verificate che il parametro submitUrl sia corretto.
 1. Abilitare i registri lato client come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md) HTML5 utilizzando l&#39;opzione di debug come **1-a5-b5-c5**. Quindi, eseguite il rendering del modulo e fate clic su Invia. Aprite la console di debug del browser e verificate se si è verificato un errore.
 1. Individuare i registri del server come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md)HTML5. Verificare se si è verificato un errore nei registri del server durante l&#39;invio.
