@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
 
 Quando si aggiunge del contenuto alle pagine di un sito web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, dei componenti per il layout) supportano l’inserimento di annotazioni.
 
-Un’annotazione si presenta come una nota colorata applicata alla pagina. Può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
+Un’annotazione si presenta come una nota colorata applicata alla pagina. può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
 
 >[!NOTE]
 >
@@ -77,6 +80,7 @@ Le tre icone in alto a sinistra consentono di ridurre l’annotazione (ed eventu
 >
 >* l’icona non è disponibile;
 >* eventuali schizzi esistenti creati in altri browser non vengono mostrati.
+
 >
 
 
@@ -85,7 +89,7 @@ Gli schizzi sono una funzione di annotazione per la creazione di grafica semplic
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* In modalità schizzo, il cursore diventa una crocetta. È possibile disegnare più linee distinte.
+* In modalità schizzo, il cursore diventa una crocetta. Puoi disegnare più linee distinte.
 * La linea dello schizzo ha lo stesso colore dell’annotazione e può essere:
 
    * a mano libera
