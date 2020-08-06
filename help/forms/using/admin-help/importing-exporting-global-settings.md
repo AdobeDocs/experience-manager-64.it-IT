@@ -24,7 +24,7 @@ Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazi
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 Ad esempio, potete passare da un ambiente di sviluppo a un ambiente di produzione esportando le definizioni dei modelli di ricerca e le impostazioni globali da un ambiente e importandole nell&#39;altro.
 
@@ -67,7 +67,7 @@ Dopo aver esportato il file delle impostazioni globali, potete modificare le imp
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 Il file delle impostazioni globali di Workspace include le seguenti impostazioni:
 
@@ -87,7 +87,7 @@ Le impostazioni *specialRoutes* specificano le proprietà delle route speciali, 
 
 ### Impostazioni JGroup {#jgroup-settings}
 
-Queste impostazioni vengono visualizzate solo se l&#39;utente ha effettuato l&#39;aggiornamento da Adobe LiveCycle ES 2.5 o versioni precedenti.
+Queste impostazioni vengono visualizzate solo se sono stati aggiornati dall&#39;LiveCycle  Adobe ES 2.5 o versioni precedenti.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** Tempo massimo di attesa dei messaggi dell&#39;evento da parte del gruppo JG. Questa impostazione non deve essere modificata.
 
@@ -105,7 +105,7 @@ Le proprietà rimanenti in questa impostazione non devono essere modificate.
 
 **server_remoteevents_JGroupName:** Il nome del gruppo JG utilizzato per la comunicazione degli eventi remoti. Questo valore viene generato in modo casuale per evitare conflitti nei cluster. Questo valore non deve essere modificato.
 
-Per ulteriori informazioni su gruppi JG e Workspace, consulta Area di lavoro [JGroups e moduli AEM - Spiegazione](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Per ulteriori informazioni sui gruppi di lavoro e su gruppi di lavoro, vedere Area di lavoro [JGroups e moduli AEM - Spiegazione](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### impostazioni di formView {#formview-settings}
 
@@ -125,9 +125,9 @@ Per ulteriori informazioni su gruppi JG e Workspace, consulta Area di lavoro [JG
 
 **server_debugLevel:** Non modificate questa impostazione.
 
-**client_pollingInterval:** Imposta l&#39;intervallo di polling (in secondi) utilizzato nell&#39;area di lavoro Flex (obsoleto per i moduli AEM su JEE) per rilevare le attività nuove e modificate. Il valore predefinito è 3 secondi. Ciò non funziona per AEM Forms Workspace.
+**client_pollingInterval:** Imposta l&#39;intervallo di polling (in secondi) utilizzato nell&#39;area di lavoro Flex (obsoleto per i moduli AEM su JEE) per rilevare le attività nuove e modificate. Il valore predefinito è 3 secondi. Questo non funziona per  AEM Forms Workspace.
 
-**client_systemContext_name:** Specificate un nome personalizzato (ad esempio, Cittadino) da visualizzare nel campo Aggiunto da (nella scheda Allegati) per gli allegati di un’attività in AEM Forms Workspace.
+**client_systemContext_name:** Specificare un nome personalizzato (ad esempio, Cittadino) da visualizzare nel campo Aggiunto da (nella scheda Allegati) per gli allegati di un’attività in  AEM Forms Workspace.
 
 Per definire il nome personalizzato:
 
