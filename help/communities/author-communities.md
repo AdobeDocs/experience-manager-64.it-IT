@@ -1,8 +1,8 @@
 ---
 title: Componenti di Communities
 seo-title: Componenti di Communities
-description: 'Aggiunta di funzioni per community Internet a qualsiasi sito AEM '
-seo-description: 'Aggiunta di funzioni per community Internet a qualsiasi sito AEM '
+description: 'Aggiunta di funzioni per la community a qualsiasi sito AEM '
+seo-description: 'Aggiunta di funzioni per la community a qualsiasi sito AEM '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -21,15 +24,15 @@ source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
 
 Con una licenza di AEM Communities, oltre a creare siti di community, è possibile aggiungere funzionalità di community a qualsiasi sito AEM con gli strumenti standard di authoring AEM.
 
-Per ulteriori informazioni sulla creazione di un sito community, visitare:
+Per ulteriori informazioni sulla creazione di un sito community, visitate:
 
 * [Panoramica di AEM Communities](overview.md)
 * [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+* [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
 
 >[!NOTE]
 >
->Se non avete familiarità con l’ambiente Authoring, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
+>Se non avete familiarità con l’ambiente di authoring, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Componenti community disponibili {#available-communities-components}
 
@@ -41,7 +44,7 @@ Vedere anche la guida [interattiva sui componenti](components-guide.md)community
 >
 >Leggi [Community Components Basics (Nozioni di base sui](basics.md) componenti di Community) in quanto contiene le informazioni necessarie per la creazione con i componenti Community.
 
-| **Titolo componente** | **Funzione** |
+| **Titolo componente** | **Funzione rimossa** |
 |---|---|
 | Flussi attività | [Flussi attività](activities.md) |
 | Blog | [Blog](blog-feature.md) |
@@ -76,7 +79,7 @@ Vedere anche la guida [interattiva sui componenti](components-guide.md)community
 
 >[!NOTE]
 >
->Il componente sondaggio non è più disponibile e supportato in Experience Manager Communities.
+>Il componente del sondaggio non è più disponibile e supportato in  Community Experience Manager.
 
 ## Documentazione di Community correlate {#related-communities-documentation}
 
