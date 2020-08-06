@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 5%
 
 ---
 
@@ -44,13 +47,13 @@ Per aggiungere un `Featured Content` componente a una pagina in modalità di cre
 
 trascinatelo nella posizione desiderata su una pagina in cui deve comparire il contenuto in primo piano.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](essentials-featured.md#essentials-for-client-side) richieste, viene visualizzato il `Featured Content`componente:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-## Configurazione del contenuto {#configuring-featured-content}
+## Configurazione di contenuti contenuti {#configuring-featured-content}
 
 Selezionate il `Featured Content` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
@@ -60,10 +63,12 @@ Selezionate il `Featured Content` componente inserito a cui accedere e seleziona
 
 Nella scheda **[!UICONTROL Impostazioni]** , identificate il contenuto da includere:
 
-* **[!UICONTROL Nome]** visualizzato Titolo per l&#39;elenco del contenuto disponibile. For example `Featured Questions` or `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+* **[!UICONTROL Nome]** visualizzato Titolo per l&#39;elenco del contenuto disponibile. Ad esempio 
+`Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
-   *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Ad esempio: `/content/sites/engage/en/forum`
+
+   *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`
 
 * **[!UICONTROL Limite]** visualizzazione Il numero massimo di contenuti contenuti da visualizzare. Il valore predefinito è 5.
 
