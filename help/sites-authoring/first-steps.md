@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -54,7 +57,7 @@ Se l’istanza in uso include già una o più pagine, oppure hai appena creato u
 * [Modifica (contenuto)](/help/sites-authoring/editing-content.md#edit-content)
 * [Modifica (contenuto) - Modalità a schermo intero](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-* [Annullamento e ripristino delle modifiche apportate alle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
+* [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Uso della modalità di anteprima](/help/sites-authoring/editing-content.md#preview-mode) (per visualizzare l’aspetto della pagina quando verrà pubblicata)
 * [Blocco di una pagina](/help/sites-authoring/editing-content.md#locking-a-page)
 
