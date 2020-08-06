@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
+ AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
 
 Questo documento è incentrato sulla scrittura di JavaScript tramite l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
 
