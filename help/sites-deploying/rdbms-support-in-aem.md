@@ -1,8 +1,8 @@
 ---
 title: Supporto RDBMS in AEM 6.4
 seo-title: Supporto RDBMS in AEM 6.4
-description: Informazioni sul supporto della persistenza del database relazionale in AEM 6.4 e sulle opzioni di configurazione disponibili.
-seo-description: Informazioni sul supporto della persistenza del database relazionale in AEM 6.4 e sulle opzioni di configurazione disponibili.
+description: Ulteriori informazioni sul supporto della persistenza del database relazionale in AEM 6.4 e sulle opzioni di configurazione disponibili.
+seo-description: Ulteriori informazioni sul supporto della persistenza del database relazionale in AEM 6.4 e sulle opzioni di configurazione disponibili.
 uuid: 599d3e61-99eb-4a1c-868b-52b20a615500
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
 
 ## Panoramica {#overview}
 
-Il supporto per la persistenza relazionale del database in AEM è implementato tramite Document Microkernel. Document Microkernel è la base utilizzata anche per implementare la persistenza MongoDB.
+Il supporto per la persistenza relazionale del database in AEM viene implementato utilizzando il Document Microkernel. Document Microkernel è la base utilizzata anche per implementare la persistenza MongoDB.
 
 È costituita da un&#39;API Java basata sull&#39;API Java di Mongo. Viene inoltre fornita un&#39;implementazione di un&#39;API BlobStore. Per impostazione predefinita, i BLOB sono memorizzati nel database.
 
@@ -31,13 +34,13 @@ Per ulteriori informazioni sull&#39;implementazione, consulta la documentazione 
 
 ## Database supportati {#supported-databases}
 
-Per ulteriori informazioni sul livello di supporto del database relazionale in AEM, consultate la pagina [Requisiti](/help/sites-deploying/technical-requirements.md)tecnici.
+Per ulteriori informazioni sul livello di supporto del database relazionale in AEM, vedere la pagina [Requisiti](/help/sites-deploying/technical-requirements.md)tecnici.
 
 ## Passaggi di configurazione {#configuration-steps}
 
 Il repository viene creato configurando il servizio `DocumentNodeStoreService` OSGi. È stato esteso per supportare la persistenza relazionale del database oltre a MongoDB.
 
-Affinché funzioni, un’origine dati deve essere configurata con AEM. Questa operazione viene eseguita tramite il `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come pacchetti OSGi all&#39;interno della configurazione locale.
+Per consentirne il funzionamento, è necessario configurare un&#39;origine dati con AEM. Questa operazione viene eseguita tramite il `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all&#39;interno della configurazione locale.
 
 Per informazioni sulla creazione di pacchetti OSGi per i driver JDBC, consultate questa [documentazione](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) sul sito Web Apache Sling.
 
@@ -47,10 +50,10 @@ Per informazioni sulla creazione di pacchetti OSGi per i driver JDBC, consultate
 >
 >In questo caso, copiate il file jar su install-path/crx-quickstart/install/9.
 
-Una volta installati i bundle, segui i passaggi seguenti per configurare AEM con la persistenza RDB:
+Una volta installati i bundle, attenetevi alla seguente procedura per configurare AEM con la persistenza RDB:
 
 1. Accertatevi che il demone del database sia avviato e che sia presente un database attivo da utilizzare con AEM.
-1. Copiate il JAR di AEM 6.3 nella directory di installazione.
+1. Copiate il AEM 6.3 jar nella directory di installazione.
 1. Create una cartella chiamata `crx-quickstart\install` nella directory di installazione.
 1. Configurare l&#39;archivio dei nodi del documento creando un file di configurazione con il seguente nome nella `crx-quickstart\install` directory:
 
@@ -74,7 +77,7 @@ Una volta installati i bundle, segui i passaggi seguenti per configurare AEM con
       * Individua il pacchetto estratto dall&#39;archivio ZIP scaricato
       * Verificare che il driver JDBC di **Oracle Corporation per MySQLcom.mysql.jdbc** sia attivo e avviarlo.
 
-1. Infine, avviate AEM con `crx3` e `crx3rdb` le modalità di esecuzione:
+1. Infine, iniziare AEM con `crx3` e `crx3rdb` modalità di esecuzione:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -104,7 +107,7 @@ Sono disponibili le seguenti opzioni di configurazione:
 
 ### Formati stringa URL {#url-string-formats}
 
-Nella configurazione dell&#39;origine dati viene utilizzato un formato di stringa URL diverso a seconda del tipo di database da utilizzare. Di seguito è riportato un elenco dei formati per i database attualmente supportati da AEM:
+Nella configurazione dell&#39;origine dati viene utilizzato un formato di stringa URL diverso a seconda del tipo di database da utilizzare. Di seguito è riportato un elenco di formati per i database che AEM attualmente supportano:
 
 * `jdbc:postgresql:databasename` per PostgreSQL;
 
@@ -116,7 +119,7 @@ Nella configurazione dell&#39;origine dati viene utilizzato un formato di string
 
 ## Limitazioni note {#known-limitations}
 
-Anche se l’utilizzo simultaneo di più istanze AEM con un singolo database è supportato dalla persistenza RDBMS, le installazioni simultanee non lo sono.
+Anche se l&#39;uso simultaneo di più istanze AEM con un singolo database è supportato dalla persistenza RDBMS, le installazioni simultanee non lo sono.
 
 Per risolvere il problema, accertatevi di eseguire prima l&#39;installazione con un singolo membro e di aggiungere gli altri al termine della prima installazione.
 
