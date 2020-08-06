@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 3%
 
 ---
 
 
 # Applicazione sandbox iniziale {#initial-sandbox-application}
 
-In questa sezione, creerete quanto segue:
+In questa sezione, creerete i seguenti elementi:
 
 * Il **[modello](#createthepagetemplate)**che verrà utilizzato per creare pagine di contenuto nel sito Web di esempio
 * Il **[componente e lo script](#create-the-template-s-rendering-component)**da utilizzare per il rendering delle pagine del sito Web
 
 ## Creare il modello di contenuto {#create-the-content-template}
 
-Un modello definisce il contenuto predefinito di una nuova pagina. I siti Web complessi possono utilizzare diversi modelli per creare i diversi tipi di pagine nel sito. Inoltre, il set di modelli potrebbe diventare un blueprint utilizzato per il rollout delle modifiche a un cluster di server.
+Un modello definisce il contenuto predefinito di una nuova pagina. I siti Web complessi possono utilizzare diversi modelli per la creazione di diversi tipi di pagine nel sito. Inoltre, il set di modelli potrebbe diventare un blueprint utilizzato per il rollout delle modifiche a un cluster di server.
 
 In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
-1. Nel riquadro di esplorazione di CRXDE Lite
+1. Nel riquadro Explorer del CRXDE Lite
 
    * select `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crea > Crea modello]**
@@ -40,6 +43,7 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
    * Descrizione: `An SCF Sandbox template for play pages`
    * Tipo risorsa: `an-scf-sandbox/components/playpage`
    * Classificazione: &lt;lasciare come predefinito>
+
    Etichetta utilizzata per il nome del nodo.
 
    Il tipo di risorsa viene visualizzato sul nodo jcr:content `playpage`come proprietà `sling:resourceType`. Identifica il componente (risorsa) che esegue il rendering del contenuto quando richiesto da un browser.
@@ -56,7 +60,7 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
    Per aggiungere un tracciato, fate clic sul pulsante più `+` e digitate `/content(/.&ast;)?` nella casella di testo visualizzata. Se usate Copia/Incolla, accertatevi che non vi siano spazi iniziali o finali.
 
-   Nota:Il valore della proprietà path consentita è un&#39;espressione *regolare.* Le pagine di contenuto con un percorso che corrisponde all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le relative sottopagine.
+   Nota: Il valore della proprietà path consentita è un&#39;espressione *regolare.* Le pagine di contenuto con un percorso che corrisponde all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le relative sottopagine.
 
    Quando un autore crea una pagina sotto `/content`, il `playpage`modello denominato &quot;An SCF Sandbox Page Template&quot; viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
@@ -72,7 +76,7 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
    Fate clic su **[!UICONTROL Avanti]** nei pannelli Figli **** consentiti.
 
-   Fai clic su **[!UICONTROL OK]**. 
+   Fai clic su **[!UICONTROL OK]**.
 
 1. Dopo aver fatto clic su OK e aver completato la creazione del modello, agli angoli dei valori della scheda Proprietà per il nuovo `playpage`modello vengono visualizzati triangoli rossi. Questi triangoli rossi indicano le modifiche che non sono state salvate.
 
@@ -94,10 +98,11 @@ Create il *componente* che definisce il contenuto ed esegue il rendering di tutt
    Nella finestra di dialogo **[!UICONTROL Crea componente]** , digitare i seguenti valori di proprietà:
 
    * Etichetta: **playpage**
-   * Titolo: Componente **di riproduzione sandbox SCF**
-   * Descrizione: È **il componente che esegue il rendering del contenuto per una pagina sandbox SCF.**
-   * Super Type: *&lt;blank>*
+   * Titolo: **Componente di riproduzione sandbox SCF**
+   * Descrizione: **È il componente che esegue il rendering del contenuto per una pagina sandbox SCF.**
+   * Super Type: *&lt;lasciare vuoto>*
    * Gruppo:
+
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Fate clic su **[!UICONTROL Avanti]** fino a visualizzare il pannello **[!UICONTROL Elementi figlio]** consentiti nella finestra di dialogo
