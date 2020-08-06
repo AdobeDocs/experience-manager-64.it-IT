@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 86%
 
 ---
 
@@ -42,11 +45,13 @@ Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del si
 >
 >* [Caratteri jolly](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operatori booleani](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Espressioni regolari](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Gruppi di campi](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Incremento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -75,6 +80,7 @@ Nella console **Siti web**, l’opzione di menu **Trova e sostituisci** consente
    * Definire il termine sostitutivo
    * Specificare se nella ricerca è necessario distinguere tra maiuscole e minuscole
    * Specificare se cercare solo parole intere (in caso contrario vengono trovate anche le sottostringhe)
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
