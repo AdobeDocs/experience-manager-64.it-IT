@@ -36,7 +36,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 ## Avvio rapido: Immagini interattive {#quick-start-interactive-images}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente le immagini interattive negli AEM Assets.
+La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente le immagini interattive in  AEM Assets.
 
 Cercare l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di Avvio rapido. Contiene una breve esercitazione basata sul seguente esempio di pagina Web in cui non sono ancora state aggiunte immagini interattive:
 
@@ -46,11 +46,11 @@ Questa esercitazione illustra i passaggi necessari per integrare le immagini int
 
 **Flusso** di lavoro Immagini interattive:
 
-1. **(Facoltativo) Identificazione delle variabili** dei punti di attivazione - Se utilizzate AEM Assets e Dynamic Media standalone, iniziate identificando le variabili dinamiche utilizzate nell’implementazione esistente di Quickview in modo da poter inserire i dati dei punti di attivazione al momento della creazione dell’immagine interattiva. Consultate [(Facoltativo) Identificazione delle variabili](#optional-identifying-hotspot-variables)dei punti di attivazione.
+1. **(Facoltativo) Identificazione delle variabili** dei punti di attivazione - Se utilizzate  file multimediali indipendenti AEM Assets e Dynamic Media, iniziate identificando le variabili dinamiche utilizzate nell’implementazione esistente di Quickview in modo da poter inserire i dati dei punti di attivazione al momento della creazione dell’immagine interattiva. Consultate [(Facoltativo) Identificazione delle variabili](#optional-identifying-hotspot-variables)dei punti di attivazione.
 
-   Tuttavia, se utilizzi AEM Sites, AEM eCommerce o entrambi, questo passaggio non è necessario.
+   Tuttavia, se utilizzi  AEM Sites, AEM eCommerce o entrambi, questo passaggio non è necessario.
 
-   Consulta Concetti [di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+   Consulta [Concetti di eCommerce in  AEM Assets](/help/sites-administering/concepts.md).
 
 1. **(Facoltativo) Creazione di un predefinito** per visualizzatori di immagini interattive - Personalizzare l’immagine grafica utilizzata per rappresentare i punti attivi. La creazione di un predefinito per visualizzatori di immagini interattive non è necessaria se intendete usare il predefinito per visualizzatori di immagini interattive fornito con il nome `Shoppable_Banner` .
 
@@ -68,8 +68,8 @@ Questa esercitazione illustra i passaggi necessari per integrare le immagini int
 
 1. **Aggiunta di un’immagine interattiva al sito Web o al sito Web in AEM**
 
-   * Se utilizzate AEM Sites, AEM eCommerce o entrambi, potete aggiungere l’immagine interattiva direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
-   * Se utilizzate AEM Assets e Dynamic Media standalone, dovete copiare il codice da incorporare sul vostro sito Web e quindi integrarlo con la visualizzazione rapida esistente. Consultate [Integrazione di un’immagine interattiva con il sito Web](#integrating-an-interactive-image-with-your-website).
+   * Se utilizzate  AEM Sites, AEM eCommerce o entrambi, potete aggiungere l’immagine interattiva direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
+   * Se utilizzate  AEM Assets e Dynamic Media standalone, dovete copiare il codice da incorporare sul sito Web e quindi integrarlo con la visualizzazione Quickview esistente. Consultate [Integrazione di un’immagine interattiva con il sito Web](#integrating-an-interactive-image-with-your-website).
    * Se utilizzate un WCM di terze parti (Web Content Manager), dovete integrare il nuovo video interattivo con l’implementazione esistente di Quickview utilizzata sul vostro sito Web. Consultate [Integrazione di un’immagine interattiva con una visualizzazione rapida](#integrating-an-interactive-image-with-an-existing-quickview)esistente.
 
 ## (Facoltativo) Identificazione delle variabili dei punti di attivazione {#optional-identifying-hotspot-variables}
@@ -79,15 +79,15 @@ Questa esercitazione illustra i passaggi necessari per integrare le immagini int
 >Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
 >
 >* Per aggiungere interattività all’immagine, attivate l’opzione Visualizzazioni rapide.
->* L’implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati di prodotto in AEM da soluzioni di eCommerce come IBM Websfera Commerce, Elastic Path, hybris o Intershop. Consulta Concetti [di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+>* L&#39;implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione di eCommerce di IBM, Elastic Path, hybris o Intershop. Consulta [Concetti di eCommerce in  AEM Assets](/help/sites-administering/concepts.md).
 
 >
 >
-Se l’implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
+Se l&#39;implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all&#39;attività successiva.
 
 Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente di Quickview in modo da poter inserire i dati dei punti di attivazione per creare l’immagine interattiva.
 
-Quando aggiungete punti di attivazione a un&#39;immagine del banner in AEM Assets, dovete assegnare un SKU (Stock Keeping Unit); un identificatore univoco per ciascun prodotto o servizio distinto offerto) e variabili aggiuntive facoltative per ciascun punto di attivazione. Tali variabili per i punti di attivazione vengono successivamente utilizzate per far corrispondere i punti di attivazione con il contenuto della visualizzazione rapida.
+Quando aggiungete punti di attivazione a un&#39;immagine del banner in  AEM Assets, dovete assegnare un SKU (Stock Keeping Unit); un identificatore univoco per ciascun prodotto o servizio distinto offerto) e variabili aggiuntive facoltative per ciascun punto di attivazione. Tali variabili per i punti di attivazione vengono successivamente utilizzate per far corrispondere i punti di attivazione con il contenuto della visualizzazione rapida.
 
 È importante identificare correttamente il numero e il tipo di variabili da associare ai dati dei punti di attivazione. Ogni punto di attivazione aggiunto a un&#39;immagine del banner deve contenere informazioni sufficienti per identificare in modo univoco il prodotto nel sistema di back-end esistente.
 
@@ -122,7 +122,7 @@ Durante questo processo è importante visitare diverse aree del sito Web, con di
 
 Nel caso più semplice, l’unica parte variabile dell’URL di visualizzazione rapida è lo SKU del prodotto. In questo caso, il valore SKU è l’unico dato necessario per aggiungere aree sensibili all’immagine del banner.
 
-Tuttavia, in casi complessi, l’URL Quickview presenta elementi diversi oltre allo SKU, come ID categoria, codice colore, codice dimensione e così via. In tali casi, ogni elemento è una variabile separata nella definizione dei dati del punto di attivazione nella funzione immagine interattiva acquistabile, presente in AEM Assets.
+Tuttavia, in casi complessi, l’URL Quickview presenta elementi diversi oltre allo SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto di attivazione nella funzione di immagine interattiva acquistabile in  AEM Assets.
 
 Considerate i seguenti esempi di URL di visualizzazione rapida e le relative variabili di punti di attivazione:
 
@@ -180,15 +180,15 @@ Considerate queste informazioni, l’intero URL di Quickview presenta il seguent
 
 In base a tale analisi, si utilizzerebbero `categoryId` e `SKU` per i punti di attivazione.
 
-È ora possibile caricare un banner immagine e aggiungervi degli hotspot tramite la funzione per immagini interattive acquistabile in AEM Assets.
+È ora possibile caricare un banner immagine e aggiungervi degli hotspot tramite la funzione per immagini interattive acquistabile in  AEM Assets.
 
 ## (Facoltativo) Creazione di un predefinito per visualizzatori immagini interattivi {#optional-creating-an-interactive-image-viewer-preset}
 
-Potete scegliere di utilizzare il predefinito per visualizzatori di immagini interattive predefinito, denominato **[!UICONTROL Shoppable_Banner]** , fornito con AEM Assets. Oppure potete creare un predefinito per visualizzatori personalizzato da usare con immagini interattive.
+Potete scegliere di utilizzare il predefinito per visualizzatori di immagini interattive predefinito, denominato **[!UICONTROL Shoppable_Banner]** , fornito con  AEM Assets. Oppure potete creare un predefinito per visualizzatori personalizzato da usare con immagini interattive.
 
 Quando create un predefinito per visualizzatori di immagini interattive personalizzato, potete determinare l’aspetto dei punti attivi nel banner immagine. Come parte della creazione del predefinito per visualizzatori, potete scegliere di usare un elemento grafico per punti di attivazione da una raccolta di immagini predefinite.
 
-Dopo aver salvato il predefinito per visualizzatori, questo viene attivato automaticamente (attivato) nella pagina dell’elenco Predefiniti **** visualizzatore, in AEM Assets. Questa funzionalità significa che è visibile nel componente Contenuti multimediali interattivi e ogni volta che visualizzate una risorsa. Tuttavia, per *distribuire* un banner interattivo con questo predefinito per visualizzatori, dovete *pubblicare* anche il predefinito per visualizzatori (vale per i predefiniti per visualizzatori personalizzati o forniti con Scene7).
+Dopo aver salvato il predefinito per visualizzatori, questo viene attivato automaticamente (attivato) nella pagina dell’elenco Predefiniti **** visualizzatore  AEM Assets. Questa funzionalità significa che è visibile nel componente Contenuti multimediali interattivi e ogni volta che visualizzate una risorsa. Tuttavia, per *distribuire* un banner interattivo con questo predefinito per visualizzatori, dovete *pubblicare* anche il predefinito per visualizzatori (vale per i predefiniti per visualizzatori personalizzati o forniti con Scene7).
 
 **Per creare un predefinito** per visualizzatori immagini interattivi:
 
@@ -276,15 +276,15 @@ d. (Facoltativo) Per eliminare un punto di attivazione, selezionatelo sull&#39;i
 
    * Toccate **[!UICONTROL Visualizzazione rapida]**.
 
-      * Se siete AEM Sites o clienti di eCommerce, toccate l’icona **[!UICONTROL Product Picker]** (lente di ingrandimento) per aprire la pagina **[!UICONTROL Select Product (Seleziona prodotto]** ). Toccate il prodotto che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione **[!UICONTROL dei punti]** attivi.
-      * Se *non* sei un cliente di eCommerce o AEM Sites
+      * Se siete un cliente  AEM Sites o eCommerce, toccate l’icona **[!UICONTROL Product Picker]** (lente di ingrandimento) per aprire la pagina **[!UICONTROL Select Product (Seleziona prodotto]** ). Toccate il prodotto che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione **[!UICONTROL dei punti]** attivi.
+      * Se *non* sei un cliente AEM Sites o eCommerce 
 
          * Consultate [Identificazione delle variabili](#optional-identifying-hotspot-variables)dei punti di attivazione; sarà necessario definire queste variabili.
          * Quindi, immettete manualmente il valore SKU. Nel campo di testo Valore **** SKU digitare lo SKU del prodotto (Stock Keeping Unit), che è un identificatore univoco per ciascun prodotto o servizio distinto offerto. Il valore SKU immesso popola automaticamente la porzione variabile del modello Quickview, in modo che il sistema sia in grado di associare il punto attivo toccato a una particolare visualizzazione Quickview dello SKU.
          * (Facoltativo) Se all’interno della visualizzazione rapida sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccate **[!UICONTROL Aggiungi variabile]** generica. Nel campo di testo, specificate una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
    * Toccate **Collegamento ipertestuale**.
 
-      * Se siete AEM Sites, toccate l&#39;icona Selettore **** sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine di AEM Sites.
+      * Se siete clienti AEM Sites , toccate l&#39;icona Selettore **** sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
       * Se siete clienti indipendenti, nel campo di testo **[!UICONTROL HREF]** specificate il percorso completo dell’URL di una pagina Web collegata.
 
       Accertatevi di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
@@ -293,7 +293,7 @@ d. (Facoltativo) Per eliminare un punto di attivazione, selezionatelo sull&#39;i
 
    * Tap **Experience Fragment**.
 
-      * Se siete un cliente AEM Sites, toccate l’icona **[!UICONTROL Cerca]** (lente di ingrandimento) per aprire la pagina Frammento **** esperienza. Toccate il frammento esperienza che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina per tornare alla pagina di gestione dell’area sensibile.
+      * Se siete un cliente AEM Sites , toccate l’icona **[!UICONTROL Cerca]** (lente di ingrandimento) per aprire la pagina Frammento **** esperienza. Toccate il frammento esperienza che desiderate utilizzare, quindi toccate **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina per tornare alla pagina di gestione dell’area sensibile.
 
          Consulta Frammenti [](/help/sites-authoring/experience-fragments.md)esperienza.
          >[!NOTE]
@@ -322,7 +322,7 @@ Potete usare Anteprima per vedere l’aspetto dell’immagine interattiva per i 
 
 Una volta ottenuta l’immagine interattiva, potete pubblicarla.\
 See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).\
-See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine di AEM Sites.\
+See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.\
 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
 **Per visualizzare in anteprima le immagini** interattive:
@@ -340,9 +340,9 @@ Consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md) per inf
 
 Dopo aver caricato un&#39;immagine del banner, aggiunto dei punti di attivazione all&#39;immagine e pubblicato l&#39;immagine interattiva, potete ora aggiungerla alla pagina del sito Web.
 
-Se siete AEM Sites, potete aggiungere l’immagine interattiva trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+Se siete un cliente AEM Sites , potete aggiungere l’immagine interattiva trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
-Se siete clienti AEM Assets indipendenti, potete aggiungere manualmente l’immagine interattiva al sito Web come descritto in questa sezione.
+Se siete clienti indipendenti  AEM Assets, potete aggiungere manualmente l’immagine interattiva al sito Web come descritto in questa sezione.
 
 1. Copiate il codice da incorporare dell’immagine interattiva pubblicata.
 
@@ -364,7 +364,7 @@ Notate che l&#39;immagine dei tre uomini è un `IMG` tag statico:
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L&#39;integrazione è semplice come rimuovere il `IMG` tag e sostituirlo con il codice da incorporare copiato dai AEM Assets. Potete visualizzare il risultato nel seguente URL che mostra l’immagine interattiva acquistabile sulla pagina con tre punti di attivazione cerchio:
+L&#39;integrazione è semplice come rimuovere il `IMG` tag e sostituirlo con il codice da incorporare copiato da  AEM Assets. Potete visualizzare il risultato nel seguente URL che mostra l’immagine interattiva acquistabile sulla pagina con tre punti di attivazione cerchio:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
 
@@ -384,7 +384,7 @@ Consultate [Ritagliare](https://docs.adobe.com/content/help/en/dynamic-media-dev
 
 >[!NOTE]
 >
->Questa attività si applica solo se siete clienti AEM Assets indipendenti.
+>Questa attività si applica solo se siete clienti  AEM Assets indipendenti.
 
 L’ultimo passaggio di questo processo consiste nell’integrare l’immagine interattiva con un’implementazione esistente di Quickview sul sito Web. Non esiste una soluzione all&#39;integrazione che funzioni per tutti i casi. Ogni implementazione di Quickview è univoca ed è necessario un approccio specifico che molto probabilmente coinvolga l&#39;assistenza di una persona IT front-end.
 
@@ -400,7 +400,7 @@ L’implementazione esistente di Quickview rappresenta in genere una catena di a
 
 Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina Web da un passaggio arbitrario. Si tratta, invece, di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
-Contemporaneamente alla sostituzione dell’immagine interattiva acquistabile con il passaggio 1 e in parte il passaggio 2, quando un utente fa clic su un punto di attivazione all’interno dell’immagine acquistabile, tale interazione viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina Web che contiene tutti i dati del punto attivo precedentemente aggiunti ai AEM Assets.
+Contemporaneamente alla sostituzione dell’immagine interattiva acquistabile con il passaggio 1 e in parte il passaggio 2, quando un utente fa clic su un punto di attivazione all’interno dell’immagine acquistabile, tale interazione viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina Web che contiene tutti i dati del punto attivo precedentemente aggiunti a  AEM Assets.
 
 In un tale gestore di eventi, il codice front-end esegue le seguenti operazioni:
 
@@ -408,7 +408,7 @@ In un tale gestore di eventi, il codice front-end esegue le seguenti operazioni:
 * Crea un URL di visualizzazione rapida basato sui dati del punto di attivazione.
 * Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering della visualizzazione sullo schermo.
 
-Il codice da incorporare restituito dai AEM Assets ha già un gestore eventi ready-to-use in posizione commentato, come mostrato nel frammento di codice evidenziato seguente:
+Il codice da incorporare restituito da  AEM Assets dispone già di un gestore eventi ready-to-use impostato come commento, come illustrato nel frammento di codice evidenziato seguente:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
