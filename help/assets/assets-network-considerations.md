@@ -1,6 +1,6 @@
 ---
 title: Considerazioni sulla rete delle risorse
-description: Considerazioni sulla rete durante la progettazione di una distribuzione di Risorse AEM.
+description: Considerazioni sulla rete durante la progettazione di una distribuzione AEM Assets .
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
@@ -19,16 +19,16 @@ Assicurati di includere quanto segue nel diagramma della rete:
 
 * Connettività dal dispositivo client (ad esempio, computer, dispositivi mobili e tablet) alla rete
 * Topologia della rete aziendale
-* Connessione a Internet dalla rete aziendale e dall’ambiente AEM
-* Topologia dell’ambiente AEM
-* Definizione simultanea di utenti dell’interfaccia di rete di AEM
-* Flussi di lavoro definiti per l’istanza AEM
+* Connessione a Internet dalla rete aziendale e dall&#39;ambiente AEM
+* Topologia dell&#39;ambiente AEM
+* Definizione simultanea di utenti dell&#39;interfaccia di rete AEM
+* Flussi di lavoro definiti dell&#39;istanza AEM
 
 ## Connettività dal dispositivo client alla rete aziendale {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Iniziate a creare un diagramma della connettività tra i singoli dispositivi client e la rete aziendale. In questa fase, identificate le risorse condivise, come le connessioni WiFi, in cui più utenti accedono allo stesso punto o switch Ethernet per caricare e scaricare le risorse.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 I dispositivi client si connettono alla rete aziendale in vari modi, ad esempio WiFi condiviso, Ethernet a uno switch condiviso e VPN. L’identificazione e la comprensione dei punti di collegamento in questa rete è importante per la pianificazione delle risorse e per modificare la rete.
 
@@ -42,41 +42,41 @@ Il computer visualizzato a destra ha un limite a monte della rete aziendale su u
 
 ## Topologia della rete aziendale {#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 Il diagramma mostra velocità di uplink superiori all&#39;interno della rete aziendale rispetto a quelle generalmente utilizzate. Questi tubi sono risorse condivise. Se si prevede che lo switch condiviso gestisca 50 client, potrebbe essere un punto critico. Nel diagramma iniziale, solo due computer condividono la connessione specifica.
 
-## Connessione a Internet dalla rete aziendale e dall’ambiente AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Connessione a Internet dalla rete aziendale e dall&#39;ambiente AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 È importante considerare fattori sconosciuti su Internet e la connessione VPC, perché la larghezza di banda su Internet può essere compromessa a causa del picco di carico o delle interruzioni del fornitore su larga scala. In generale, la connettività Internet è affidabile. Tuttavia, a volte può introdurre dei punti di interruzione.
 
-Dall&#39;uplink di una rete aziendale a Internet, possono esserci altri servizi che utilizzano la larghezza di banda. È importante comprendere quanto della larghezza di banda può essere dedicata o impostata come priorità per Risorse AEM. Ad esempio, se un collegamento da 1 Gbps è già utilizzato all’80%, per le risorse AEM è possibile allocare solo un massimo del 20% della larghezza di banda.
+Dall&#39;uplink di una rete aziendale a Internet, possono esserci altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o impostata come priorità per  AEM Assets. Ad esempio, se un collegamento da 1 Gbps è già utilizzato all’80%, potete allocare solo un massimo del 20% della larghezza di banda per AEM risorse.
 
 I firewall e i proxy Enterprise possono inoltre modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può dare priorità alla larghezza di banda utilizzando qualità del servizio, limitazioni di larghezza di banda per utente o limiti di bitrate per host. Si tratta di punti di interruzione importanti da esaminare in quanto possono avere un impatto significativo sull’esperienza utente di Assets.
 
 In questo esempio, l&#39;azienda dispone di un collegamento di sollevamento a 10 Gbps. Dovrebbe essere sufficientemente grande per diversi clienti. Inoltre, il firewall impone un limite di velocità host di 10 Mbps. Questa limitazione può limitare il traffico a un singolo host a 10 Mbps, anche se il collegamento a Internet è a 10 Gbps.
 
-Questo è il più piccolo nodo orientato al client. Tuttavia, è possibile valutare la presenza di una modifica o di un elenco consentito utilizzando il gruppo di operazioni di rete responsabile di questo firewall.
+Questo è il più piccolo nodo orientato al client. Tuttavia, è possibile valutare la presenza di una modifica o di un elenco Consentiti  con il gruppo di operazioni di rete responsabile di questo firewall.
 
 Dai diagrammi di esempio, potete concludere che sei dispositivi condividono un canale concettuale a 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, ciò potrebbe risultare inadeguato per soddisfare le aspettative degli utenti.
 
-## Topologia dell’ambiente AEM {#topology-of-the-aem-environment}
+## Topologia dell&#39;ambiente AEM {#topology-of-the-aem-environment}
 
-![chlimage_1-354](assets/chlimage_1-356.png)
+![chlimage_1-356](assets/chlimage_1-356.png)
 
-La progettazione della topologia dell’ambiente AEM richiede una conoscenza dettagliata della configurazione del sistema e della modalità di connessione della rete all’interno dell’ambiente dell’utente.
+La progettazione della topologia dell&#39;ambiente AEM richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete è connessa all&#39;interno dell&#39;ambiente dell&#39;utente.
 
 Lo scenario di esempio include una farm di pubblicazione con cinque server, uno store binario S3 e un supporto dinamico configurati.
 
-Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo esterno e l’istanza di AEM. Per le operazioni di caricamento e scaricamento simultanee, dividete questo numero per due. L&#39;archivio esterno collegato utilizza una connessione separata.
+Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo esterno e l&#39;istanza AEM. Per le operazioni di caricamento e scaricamento simultanee, dividete questo numero per due. L&#39;archivio esterno collegato utilizza una connessione separata.
 
-L’istanza AEM condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con diversi servizi.
+L&#39;istanza AEM condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con diversi servizi.
 
-Se si esamina la rete dal dispositivo client all’istanza di AEM, il più piccolo blocco appare come il firewall enterprise da 10 Mbit. Per determinare l’esperienza dell’utente potete usare questi valori nel calcolatore del ridimensionamento nella Guida [al ridimensionamento delle](assets-sizing-guide.md) risorse.
+Se si esamina la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere il firewall enterprise da 10 Mbit. Per determinare l’esperienza dell’utente potete usare questi valori nel calcolatore del ridimensionamento nella Guida [al ridimensionamento delle](assets-sizing-guide.md) risorse.
 
-## Flussi di lavoro definiti per l’istanza AEM {#defined-workflows-of-the-aem-instance}
+## Flussi di lavoro definiti dell&#39;istanza AEM {#defined-workflows-of-the-aem-instance}
 
 Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, lo storage collegato in rete S3 o di altro tipo utilizzato e le richieste di I/O utilizzano la larghezza di banda della rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
@@ -90,7 +90,7 @@ Quando si valuta la topologia interna del flusso di lavoro, è necessario analiz
 
 Di seguito sono riportati alcuni elementi da considerare:
 
-* Metadati XMP letti/scritti
+* XMP metadati letti/scritti
 * Attivazione e replica automatica
 * Inserimento di filigrane
 * Caricamento di risorse secondarie/estrazione di pagina
