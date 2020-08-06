@@ -1,8 +1,8 @@
 ---
 title: Configurare il progetto Visual Studio e creare l'app Windows
 seo-title: Configurare il progetto Visual Studio e creare l'app Windows
-description: Come impostare un progetto di Visual Studio per creare l'app per dispositivi mobili Windows AEM Forms.
-seo-description: Come impostare un progetto di Visual Studio per creare l'app per dispositivi mobili Windows AEM Forms.
+description: Scoprite come impostare un progetto di Visual Studio per creare l'app dispositivo mobile  AEM Forms Windows.
+seo-description: Scoprite come impostare un progetto di Visual Studio per creare l'app dispositivo mobile  AEM Forms Windows.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Configurare il progetto Visual Studio e creare l&#39;app Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;applicazione area di lavoro personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip`è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
+ AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms . L&#39;origine contiene tutti i componenti per creare un&#39;applicazione area di lavoro personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip`è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
 
-Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua le seguenti operazioni:
+Per ottenere l&#39;origine dell&#39;app AEM Forms , effettuate le seguenti operazioni:
 
 1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
-1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. Nella sezione **[!UICONTROL Filtri]** :
-   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   1. Selezionate **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
    2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
 1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
 1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
@@ -52,22 +52,22 @@ Per i dispositivi Windows, è necessario:
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio Tools per Apache Cordova
 
-## Configurazione di Visual Studio Project per l&#39;app AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
+## Configurazione di Visual Studio Project per  app AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
 
-Effettuare le seguenti operazioni per configurare il progetto dell&#39;app AEM Forms in Visual Studio.
+Per impostare il progetto dell&#39;app AEM Forms  in Visual Studio, eseguite i seguenti passaggi.
 
 1. Copiare l&#39; `adobe-lc-mobileworkspace-src-<version>.zip` archivio nella `%HOMEPATH%\Projects` cartella del dispositivo Windows 8.1 o Windows 10 con Visual Studio 2015 installato e configurato.
 1. Estrarre l&#39;archivio nella `%HOMEPATH%\Projects\MobileWorkspace` directory.
 1. Andate alla `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
-1. Aprire il `CordovaApp.sln` file utilizzando Visual Studio 2015 e procedere alla creazione dell&#39;app AEM Forms.
+1. Aprire il `CordovaApp.sln` file utilizzando Visual Studio 2015 e procedere alla creazione dell&#39;app AEM Forms .
 
-## Crea app AEM Forms {#build-aem-forms-app}
+## Creare  app AEM Forms {#build-aem-forms-app}
 
-Effettuate le seguenti operazioni per creare e distribuire l&#39;app AEM Forms.
+Effettuate le seguenti operazioni per creare e distribuire  app AEM Forms.
 
 >[!NOTE]
 >
->I dati memorizzati nel file system Windows per l&#39;app AEM Forms non sono crittografati. Si consiglia di utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
+>I dati memorizzati nel file system Windows per  app AEM Forms non sono crittografati. Si consiglia di utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
 
 1. Nella barra degli strumenti di Visual Studio Standard, selezionare **Rilascia** dall&#39;elenco a discesa per la modalità di creazione.
 
