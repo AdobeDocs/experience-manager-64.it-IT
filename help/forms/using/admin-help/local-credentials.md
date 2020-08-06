@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +26,20 @@ I moduli AEM supportano le credenziali RSA e DSA fino a 4096 bit nel formato PKC
 
 Potete importare ed esportare qualsiasi numero di credenziali. Per sostituire una credenziale scaduta con lo stesso alias, eliminare la credenziale e importare la nuova credenziale con lo stesso alias.
 
-Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, vedere [Configurazione delle credenziali per l’uso con le estensioni](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)Acrobat Reader DC.
+Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, consultate [Configurazione delle credenziali per l&#39;uso con le estensioni](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)Acrobat Reader DC.
 
 ## Importare una credenziale {#import-a-credential}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio attendibili > Credenziali locali.
 1. Fai clic su Importa. In Tipo archivio attendibili, selezionare una delle seguenti opzioni:
 
-   * **** Credenziali firma documento: Credenziale utilizzata per emettere una firma digitale su un documento.
-   * **** Acrobat Reader DC Extensions Credential: Certificato digitale specifico per le estensioni Acrobat Reader DC che consente di attivare i diritti di utilizzo di Adobe Reader nei documenti PDF prodotti.
-   * **** Predefinito: Indica che si tratta della credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC.
-   Per informazioni su come ottenere una credenziale, consultate [Preparazione all&#39;installazione di moduli](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)AEM.
+   * **Credenziali firma documento:** Credenziale utilizzata per emettere una firma digitale su un documento.
+   * **Credenziali estensioni Acrobat Reader DC:** Certificato digitale specifico per le estensioni Acrobat Reader DC che consente  diritti di utilizzo di Adobe Reader da attivare nei documenti PDF prodotti.
+   * **Predefinito:** Indica che si tratta della credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC.
 
-1. Nella casella Alias, digitare un identificatore per la credenziale. Questo identificatore viene utilizzato come nome visualizzato per la credenziale nelle estensioni Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione tramite AEM Forms SDK.
+   Per informazioni su come ottenere una credenziale, vedere [Preparazione all&#39;installazione dei moduli](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)AEM.
+
+1. Nella casella Alias, digitare un identificatore per la credenziale. Questo identificatore viene utilizzato come nome visualizzato per la credenziale nelle estensioni Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alla credenziale a livello di programmazione tramite l&#39;SDK dei moduli AEM.
 
    >[!NOTE]
    >
