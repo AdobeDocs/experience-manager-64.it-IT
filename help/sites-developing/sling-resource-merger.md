@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzo di Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
+# Using the Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Scopo {#purpose}
 
@@ -25,7 +28,7 @@ Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce
 
 * **Ignora** le finestre di dialogo dei componenti per l’interfaccia touch (`cq:dialog`), utilizzando la gerarchia dei tipi di risorse (tramite la proprietà `sling:resourceSuperType`).
 
-Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclusione vengono unite alle risorse/proprietà originali:
+Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclusione vengono unite con le risorse/proprietà originali:
 
 * Il contenuto della definizione personalizzata ha una priorità maggiore rispetto a quello dell&#39;originale (ovvero *sovrapposizioni* o *sostituzioni* ).
 
@@ -37,20 +40,20 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclu
 >
 >Le sovrapposizioni/sostituzioni per altre aree (compresi altri aspetti di un componente touch o dell’interfaccia classica) richiedono la copia del nodo e della struttura appropriati dall’originale alla posizione in cui verrà definita la personalizzazione.
 
-### Obiettivi di AEM {#goals-for-aem}
+### Obiettivi per AEM {#goals-for-aem}
 
-Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
+Gli obiettivi per l&#39;utilizzo di Sling Resource Merger in AEM sono:
 
 * accertatevi che le modifiche alla personalizzazione non vengano effettuate in `/libs`.
-* ridurre la struttura replicata da `/libs`.
+* ridurre la struttura da cui viene replicata `/libs`.
 
    Quando si utilizza la Fusione risorse Sling si consiglia di non copiare l&#39;intera struttura da `/libs` perché ciò comporterebbe la conservazione di troppe informazioni nella personalizzazione (in genere `/apps`). Duplicare le informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
 
 >[!NOTE]
 >
->Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per creare la connessione.
+>Le sostituzioni non dipendono dai percorsi di ricerca, bensì usano la proprietà `sling:resourceSuperType` per creare la connessione.
 >
->Tuttavia, le sostituzioni sono spesso definite in `/apps`, in quanto la best practice in AEM consiste nel definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
+>Tuttavia, le sostituzioni sono spesso definite in `/apps`, come procedura ottimale in AEM consiste nel definire le personalizzazioni in base a `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
 
 >[!CAUTION]
 >
@@ -64,6 +67,7 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
    >
    >
 1. Apportare modifiche all&#39;interno `/apps`
+
 >
 
 
@@ -74,7 +78,7 @@ La fusione delle risorse fornisce le seguenti proprietà:
 
 * `sling:hideProperties` ( `String` o `String[]`)
 
-   Specifica la proprietà o l&#39;elenco di proprietà da nascondere.
+   Specifica la proprietà, o l&#39;elenco di proprietà, da nascondere.
 
    Il carattere jolly `*` nasconde tutto.
 
@@ -139,7 +143,7 @@ Nell&#39;esempio di sovrapposizione riportato sopra, sono necessari i seguenti n
 
 ### Use Cases {#use-cases}
 
-Oltre alle funzionalità standard, queste consentono di:
+Questi, insieme alle funzionalità standard, consentono di:
 
 * **Aggiunta di una proprietà**
 
@@ -179,7 +183,7 @@ Oltre alle funzionalità standard, queste consentono di:
    1. Combinare le azioni di:
 
       1. Nascondere gli elementi secondari di un nodo (mantenendo le proprietà del nodo)
-      1. Ridefinire le proprietà
+      1. Ridefinire proprietà/proprietà
 
 * **Nascondere una proprietà**
 
@@ -212,6 +216,7 @@ Oltre alle funzionalità standard, queste consentono di:
 
       * tipo: `String[]`
       * value: un elenco dei nodi secondari (come definito in `/libs`) da nascondere/ignorare
+
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 
@@ -235,7 +240,7 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
 
 >[!NOTE]
 >
->Per accedere alla risorsa, si consiglia di utilizzare il punto di montaggio appropriato.
+>Quando accedete alla risorsa, si consiglia di utilizzare il punto di montaggio appropriato.
 >
 >In questo modo viene richiamato Sling Resource Merger e viene restituita la risorsa completamente unita (riducendo la struttura da cui replicare `/libs`).
 
@@ -244,7 +249,7 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
    * finalità: unire risorse in base al percorso di ricerca
    * punto di montaggio: `/mnt/overlay`
    * usage: `mount point + relative path`
-   *  esempio:
+   * esempio:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
@@ -253,7 +258,7 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
    * finalità: unire le risorse in base al relativo super-type
    * punto di montaggio: `/mnt/overide`
    * usage: `mount point + absolute path`
-   *  esempio:
+   * esempio:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
