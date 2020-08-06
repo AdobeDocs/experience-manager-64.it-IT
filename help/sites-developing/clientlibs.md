@@ -1,8 +1,8 @@
 ---
 title: Utilizzo delle librerie lato client
 seo-title: Utilizzo delle librerie lato client
-description: In AEM sono disponibili cartelle libreria lato client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come distribuire ogni categoria di codice al client
-seo-description: In AEM sono disponibili cartelle libreria lato client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come distribuire ogni categoria di codice al client
+description: AEM fornisce Cartelle libreria lato client che consentono di memorizzare il codice lato client nell'archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client
+seo-description: AEM fornisce Cartelle libreria lato client che consentono di memorizzare il codice lato client nell'archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client
 uuid: c022992d-a6db-4abb-8c53-4c91d6eed225
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 I siti Web moderni si affidano in larga misura all&#39;elaborazione sul lato client basata su codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato.
 
-Per risolvere questo problema, AEM offre cartelle **libreria lato** client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto.
+Per risolvere il problema, AEM fornisce Cartelle **libreria lato** client che consentono di memorizzare il codice lato client nell&#39;archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto.
 
 ## Funzionamento delle librerie lato client in AEM {#how-client-side-libraries-work-in-aem}
 
@@ -38,7 +38,7 @@ Il modo standard per includere una libreria lato client (ovvero un file JS o CSS
 ...
 ```
 
-Anche se questo approccio funziona in AEM, può causare problemi quando pagine e componenti diventano complessi. In tali casi esiste il rischio che più copie della stessa libreria JS possano essere incluse nell’output HTML finale. Per evitare questa situazione e consentire l’organizzazione logica delle librerie lato client, AEM utilizza le cartelle **libreria lato** client.
+Anche se questo approccio funziona in AEM, può causare problemi quando le pagine e i loro componenti diventano complessi. In tali casi esiste il rischio che più copie della stessa libreria JS possano essere incluse nell’output HTML finale. Per evitare questo problema e consentire l&#39;organizzazione logica delle librerie lato client AEM utilizzare le cartelle **libreria lato** client.
 
 Una cartella libreria lato client è un nodo di tipo repository `cq:ClientLibraryFolder`. La definizione nella notazione [](https://jackrabbit.apache.org/node-type-notation.html) CND è
 
@@ -50,7 +50,7 @@ Una cartella libreria lato client è un nodo di tipo repository `cq:ClientLibrar
   - channels (string) multiple
 ```
 
-Per impostazione predefinita, `cq:ClientLibraryFolder` i nodi possono essere posizionati ovunque all’interno `/apps`, `/libs` e `/etc` delle sottostrutture dell’archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite il pannello **Adobe Granite HTML Library Manager** della console [di](http://localhost:4502/system/console/configMgr)sistema).
+Per impostazione predefinita, `cq:ClientLibraryFolder` i nodi possono essere posizionati ovunque all&#39;interno delle `/apps`strutture `/libs` e `/etc` sottostrutture dell&#39;archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite il pannello **Adobe Granite HTML Library Manager** della console [di](http://localhost:4502/system/console/configMgr)sistema).
 
 Ogni file `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedete di seguito). Le proprietà `cq:ClientLibraryFolder` sono configurate come segue:
 
@@ -67,7 +67,7 @@ Poiché HTL è la tecnologia preferita per lo sviluppo di siti AEM, HTL dovrebbe
 
 ### Utilizzo di HTL {#using-htl}
 
-In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, accessibile tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carica solo i file CSS delle librerie client di riferimento.
 * **js** - Carica solo i file JavaScript delle librerie client di riferimento.
@@ -102,7 +102,7 @@ Per informazioni complete, inclusi gli attributi per filtrare le librerie JS, CS
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, che in passato era comunemente usato per includere le librerie client, è stato dichiarato obsoleto a partire da AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) devono essere utilizzati come descritto sopra.
+>`<cq:includeClientLib>`, che in passato veniva comunemente usato per includere le librerie client, è stato dichiarato obsoleto a partire dal AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) devono essere utilizzati come descritto sopra.
 
 ## Creazione di cartelle libreria client {#creating-client-library-folders}
 
@@ -156,15 +156,15 @@ Quindi si imposta la `allowProxy` proprietà `foo` su true.
 
 >[!CAUTION]
 >
->Quando si utilizzano librerie client proxy, la configurazione di AEM Dispatcher potrebbe richiedere un aggiornamento per garantire che gli URI con i clientlibs di estensione siano consentiti.
+>Quando si utilizzano librerie client proxy, la configurazione del dispatcher AEM potrebbe richiedere un aggiornamento per garantire che gli URI con i clientlibs di estensione siano consentiti.
 
 >[!CAUTION]
 >
->Adobe consiglia di individuare le librerie client in `/apps` e renderle disponibili tramite il servlet proxy. Tuttavia, tenete presente che la best practice richiede ancora che i siti pubblici non includano mai nulla servito direttamente su un `/apps` percorso o `/libs` percorso.
+> Adobe consiglia di individuare le librerie client in `/apps` e renderle disponibili tramite il servlet proxy. Tuttavia, tenete presente che la best practice richiede ancora che i siti pubblici non includano mai nulla servito direttamente su un `/apps` percorso o `/libs` percorso.
 
 ### Creare una cartella libreria client {#create-a-client-library-folder}
 
-1. Aprite CRXDE Lite in un browser Web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Aprite il CRXDE Lite in un browser Web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Selezionate la cartella in cui desiderate individuare la cartella della libreria client e fate clic su **Crea > Crea nodo**.
 1. Immettete un nome per il file libreria e selezionate `cq:ClientLibraryFolder`. Fate clic su **OK** , quindi su **Salva tutto**.
 1. Per specificare la categoria o le categorie a cui appartiene la libreria, selezionate il `cq:ClientLibraryFolder` nodo, aggiungete la seguente proprietà, quindi fate clic su **Salva tutto**:
@@ -248,7 +248,7 @@ In alcuni casi, l’HTML finale generato per la pagina tipica dall’istanza di 
 
 In tali casi, può essere utile combinare tutti i codici libreria client richiesti in un singolo file in modo da ridurre il numero di richieste di andata e ritorno al caricamento della pagina. A questo scopo, potete inserire `embed` le librerie necessarie nella libreria client specifica per l&#39;app utilizzando la proprietà embed del `cq:ClientLibraryFolder` nodo.
 
-Con AEM sono incluse le seguenti categorie di libreria client. È consigliabile incorporare solo quelli necessari per il funzionamento del sito specifico. Tuttavia, **è necessario mantenere l&#39;ordine elencato qui**:
+Le seguenti categorie di libreria client sono incluse con AEM. È consigliabile incorporare solo quelli necessari per il funzionamento del sito specifico. Tuttavia, **è necessario mantenere l&#39;ordine elencato qui**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -323,7 +323,7 @@ Nella tabella seguente, ad esempio, è riportato il valore della `channels` prop
 
 ## Utilizzo dei preprocessori {#using-preprocessors}
 
-AEM consente preprocessori plug-in e unità con supporto per [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) per CSS e JavaScript e [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) per JavaScript con YUI impostato come preprocessore predefinito di AEM.
+AEM consente preprocessori plug-in e navi con supporto per [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) per CSS e JavaScript e [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) per JavaScript con YUI impostato AEM preprocessore predefinito.
 
 I preprocessori collegabili consentono un utilizzo flessibile, tra cui:
 
@@ -395,7 +395,7 @@ Per ulteriori dettagli sulle opzioni GCC, consulta la documentazione [](https://
 YUI è impostato come minificatore predefinito in AEM. Per modificare questa impostazione in GCC, attenetevi alla procedura seguente.
 
 1. Andate a Apache Felix Config Manager all&#39;indirizzo [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-1. Trovate e modificate **Adobe Granite HTML Library Manager**.
+1. Trovate e modificate il **Adobe Granite HTML Library Manager**.
 1. Abilitate l&#39;opzione **Miniatura** (se non è già attivata).
 1. Impostate il valore **JS Processor Default Configs** su `min:gcc`.
 
@@ -405,7 +405,7 @@ YUI è impostato come minificatore predefinito in AEM. Per modificare questa imp
 
 ## Strumenti di debug {#debugging-tools}
 
-AEM offre diversi strumenti per il debug e il test delle cartelle della libreria client.
+AEM fornisce diversi strumenti per il debug e il test delle cartelle della libreria client.
 
 ### Vedere File incorporati {#see-embedded-files}
 
@@ -447,6 +447,7 @@ Il `dumplibs` componente include un selettore di test che visualizza il codice s
    * Aprite il seguente URL nel browser Web (utilizzate un host e una porta diversi come richiesto):
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    La pagina predefinita mostra l&#39;output per i tag senza valore per l&#39;attributo category.
 
 1. Per visualizzare l&#39;output di una categoria, digitare il valore della `categories` proprietà della libreria client e fare clic su **Invia query**.
@@ -459,4 +460,4 @@ Il servizio HTML Library Manager elabora `cq:ClientLibraryFolder` i tag e genera
 * Prestazioni migliorate: Rimuovete gli spazi bianchi e comprimete le librerie.
 * Maggiore leggibilità: Includete gli spazi bianchi e non comprimete.
 
-Per informazioni sulla configurazione del servizio, consultate [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md).
+Per informazioni sulla configurazione del servizio, vedere [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md).
