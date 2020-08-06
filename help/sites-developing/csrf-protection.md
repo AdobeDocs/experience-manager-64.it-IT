@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Quadro di protezione CSRF{#the-csrf-protection-framework}
 
-Oltre al filtro Apache Sling Referrer, Adobe fornisce un nuovo quadro di protezione CSRF per la protezione contro questo tipo di attacchi.
+Oltre al filtro di riferimento Apache Sling,  Adobe fornisce anche un nuovo quadro di protezione CSRF per proteggere contro questo tipo di attacchi.
 
 Il framework utilizza i token per garantire che la richiesta del cliente sia legittima. I token vengono generati quando il modulo viene inviato al client e convalidato al momento del ritorno del modulo al server.
 
