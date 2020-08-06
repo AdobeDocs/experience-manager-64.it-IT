@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Risorse Adobe Experience Manager (AEM), le risorse in più lingue sono incluse nelle cartelle, dove ciascuna cartella contiene le risorse in un’altra lingua.
+In Risorse Adobe Experience Manager (AEM), le risorse in più lingue sono incluse nelle cartelle, in cui ciascuna cartella contiene le risorse in un’altra lingua.
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, */content/dam/it* è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](preparing-assets-for-translation.md#creating-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
@@ -60,7 +60,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 ## Visualizzazione delle origini delle lingue {#viewing-language-roots}
 
-L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle origini delle lingue create in AEM Assets.
+L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle origini delle lingue create all’interno  AEM Assets.
 
 1. Nella console Risorse, selezionate la lingua principale per la quale desiderate creare delle copie in lingua.
 1. Tocca o fai clic sull’icona GlobalNav, quindi scegli **[!UICONTROL Riferimenti]** per aprire il riquadro Riferimento.
