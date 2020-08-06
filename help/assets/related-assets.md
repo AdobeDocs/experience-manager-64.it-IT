@@ -4,6 +4,9 @@ description: Scoprite come collegare risorse che condividono alcuni attributi co
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 3%
 
 ---
 
@@ -37,6 +40,7 @@ In questo modo, potete condividere un file a bassa risoluzione (ad esempio PDF/J
    * Per correlare il file di origine della risorsa, selezionate **[!UICONTROL Origine]** dall’elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
    * Per creare una relazione bidirezionale tra le risorse, selezionate **[!UICONTROL Altre]** dall’elenco.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individuate la posizione della risorsa da correlare e selezionatela.
@@ -60,11 +64,11 @@ In questo modo, potete condividere un file a bassa risoluzione (ad esempio PDF/J
 
 ## Conversione di risorse correlate {#translating-related-assets}
 
-La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata, Risorse AEM recupera automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
+La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata,  AEM Assets recupera automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se il file sorgente è correlato a un’altra risorsa, Risorse AEM recupera la risorsa di riferimento e la include per la conversione.
+Se il file di origine è correlato a un’altra risorsa,  AEM Assets recupera la risorsa di riferimento e la include per la conversione.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -89,6 +93,6 @@ Se il file sorgente è correlato a un’altra risorsa, Risorse AEM recupera la r
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selezionate la risorsa correlata all’origine, quindi toccate o fate clic su **[!UICONTROL Mostra in risorse]**. Viene visualizzata la risorsa correlata convertita.
+1. Selezionate la risorsa correlata all’origine, quindi toccate o fate clic su **[!UICONTROL Rivela in risorse]**. Viene visualizzata la risorsa correlata convertita.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
