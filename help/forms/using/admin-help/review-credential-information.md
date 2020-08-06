@@ -1,6 +1,6 @@
 ---
-title: Verifica informazioni sull'uso delle credenziali
-seo-title: Verifica informazioni sull'uso delle credenziali
+title: Rivedere le informazioni sull'uso delle credenziali
+seo-title: Rivedere le informazioni sull'uso delle credenziali
 description: Scoprite come esaminare le informazioni sull'uso delle credenziali.
 seo-description: Scoprite come esaminare le informazioni sull'uso delle credenziali.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 0%
 
 ---
 
 
-# Verifica informazioni sull&#39;uso delle credenziali {#review-credential-use-information}
+# Rivedere le informazioni sull&#39;uso delle credenziali {#review-credential-use-information}
 
-La credenziale contiene informazioni che ne descrivono l’uso previsto, accessibili tramite l’applicazione Web per l’utente finale delle estensioni Acrobat Reader DC. È possibile utilizzare queste informazioni per determinare il tipo di credenziale installata (valutazione o produzione) e le relative date di validità.
+La credenziale contiene informazioni che ne descrivono l&#39;uso previsto, accessibili tramite l&#39;applicazione Web per l&#39;utente finale delle estensioni Acrobat Reader DC. È possibile utilizzare queste informazioni per determinare il tipo di credenziale installata (valutazione o produzione) e le relative date di validità.
 
 1. Aprite un browser Web e immettete il seguente URL:
 
@@ -27,11 +30,11 @@ La credenziale contiene informazioni che ne descrivono l’uso previsto, accessi
 
    Nome utente: administrator
 
-   Password:password
+   Password: password
 
    >[!NOTE]
    >
-   >Per effettuare l’accesso con il nome utente e la password predefiniti, è necessario disporre dei privilegi di amministratore o utente avanzato. Per consentire ad altri utenti di accedere alle estensioni di Acrobat Reader DC, creare gli account utente in Gestione utente e assegnare agli utenti il ruolo Applicazione Web estensione Acrobat Reader DC.
+   >Per effettuare l’accesso con il nome utente e la password predefiniti, è necessario disporre dei privilegi di amministratore o utente avanzato. Per consentire ad altri utenti di accedere alle estensioni Acrobat Reader DC, create gli account utente in Gestione utente e assegnate agli utenti il ruolo Applicazione Web con le estensioni Acrobat Reader DC.
 
 1. Selezionare l&#39;alias delle credenziali dall&#39;elenco Seleziona credenziali e rivedere le informazioni incluse nella Data di scadenza e nell&#39;avviso di utilizzo previsto.
 
