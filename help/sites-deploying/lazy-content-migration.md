@@ -11,13 +11,16 @@ topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
 translation-type: tm+mt
 source-git-commit: ba16a6870bc621a585b2b2d7c7536baef05adc72
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 6%
 
 ---
 
 
 # Lazy Content Migration{#lazy-content-migration}
 
-Per motivi di compatibilità con le versioni precedenti, il contenuto e la configurazione in **/etc** e **/content** a partire da AEM 6.3 non saranno toccati o trasformati immediatamente con l’aggiornamento. Ciò è fatto per garantire che le dipendenze delle applicazioni dei clienti su tali strutture rimangano intatte. La funzionalità relativa a queste strutture di contenuto è ancora la stessa anche se il contenuto in un&#39;area out-of-box AEM 6.4 sarebbe ospitato in un&#39;altra posizione.
+Per motivi di compatibilità con le versioni precedenti, il contenuto e la configurazione in **/etc** e **/content** a partire da AEM 6.3 non saranno toccati o trasformati immediatamente con l&#39;aggiornamento. Ciò è fatto per garantire che le dipendenze delle applicazioni dei clienti su tali strutture rimangano intatte. La funzionalità relativa a queste strutture di contenuto è ancora la stessa anche se il contenuto presente in una versione standard AEM 6.4 sarebbe ospitato in un&#39;altra posizione.
 
 Anche se non tutte queste posizioni possono essere trasformate automaticamente, ci sono alcuni ritardi `CodeUpgradeTasks` anche riferito come Lazy Content Migration. Questo consente ai clienti di attivare tali trasformazioni automatiche riavviando l&#39;istanza con la seguente proprietà di sistema:
 
@@ -33,11 +36,11 @@ Poiché in genere questo richiede anche la regolazione dell&#39;applicazione, qu
 
 Di seguito è riportato l&#39;elenco completo delle `CodeUpgradeTasks` modifiche introdotte al punto 6.4:
 
-| **Nome** | **Pertinente per le versioni di AEM precedenti a** | **Tipo di migrazione** | **Dettagli** |
+| **Nome** | **Pertinente per le versioni AEM** | **Tipo di migrazione** | **Dettagli** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Immediato |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Immediato | Rileva tutti `LiveRelationShips` quelli `VersionStorage` che sono stati eliminati e aggiunge la proprietà di esclusione all&#39;elemento padre |
-| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immediato | Ristrutturazione dei servizi cloud per impostazione predefinita sicura |
+| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immediato | Ristrutturazione dei servizi cloud per impostazione sicura per impostazione predefinita |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | Immediato | Rimuove il collegamento basato su proprietà da **/content** a **/conf** (sostituito dal meccanismo OSGi), genera la configurazione OSGi corrispondente |
 | `Cq62FormsContentUpgrade` | &lt; 6.2 | Immediato | A causa di merge_preserve la gestione sicura per impostazione predefinita delle sostituzioni delle regole di negazione in base alle autorizzazioni che determinano la necessità di riordinare l&#39;aggiornamento |
 | `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Immediato | Rileva i componenti che utilizzano il widget Html5SmartFile, cerca gli usi del componente nel contenuto e ristruttura la persistenza, spostando efficacemente il binario verso il basso e non lo archivia a livello di componente. |
@@ -52,7 +55,7 @@ Di seguito è riportato l&#39;elenco completo delle `CodeUpgradeTasks` modifiche
 | `CQ63MobileAppsNavUpgrade` | &lt; 6.3 | Immediato | Regolazione della struttura di navigazione |
 | `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6.3 | Immediato | Sposta le configurazioni personalizzate per i dashboard di monitoraggio da **/libs** e **/apps** |
 | `CQ63ProcessingProfileConfigUpdate` | &lt; 6.3 | Immediato | Converte la proprietà processingProfile (utilizzata fino alla versione 6.1) in Assets in modo che corrisponda alla struttura 6.3 e successiva. Regola inoltre i percorsi relativi del profilo in **/conf** al posto di **/apps**. |
-| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6.3 | Immediato | Attività di aggiornamento che rimuove le voci di menu CRXDE Lite e Console Web obsolete in caso di aggiornamento. |
+| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6.3 | Immediato | Attività di aggiornamento che rimuove le voci di menu di CRXDE Lite e console Web obsolete in caso di aggiornamento. |
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6.3 | Ritardato | Spostare le configurazioni cloud SRP, le configurazioni di orologi community, pulire **/etc/social** e **/etc/enablement** (eventuali riferimenti e dati devono essere regolati quando viene eseguita la migrazione pigra - nessuna parte dell&#39;applicazione dovrebbe più dipendere da questa struttura). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Ritardato | Elimina le impostazioni **del cloud** /ecc. (contenente la configurazione ContextHub). La configurazione viene migrata automaticamente al primo accesso. Se la migrazione dei contenuti Lazy viene avviata insieme all&#39;aggiornamento di questo contenuto in **/etc/cloud settings** deve essere mantenuto tramite pacchetto prima dell&#39;aggiornamento e reinstallato per l&#39;avvio della trasformazione implicita, insieme a una successiva disinstallazione del pacchetto dopo il completamento. |
 | `CQ64UsersTitleFixTask` | &lt; 6.4 | Ritardato | Regola la struttura del titolo legacy in base al titolo nel nodo del profilo utente. |
