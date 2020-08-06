@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
 source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
    >
 * Alcune funzionalità non sono disponibili su tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -44,7 +48,7 @@ Facendo clic su una delle opzioni si apre la rispettiva console. Per illustrare 
 
 Tocca o fai clic su **Sites** per iniziare.
 
-### Navigazione nel prodotto   {#product-navigation}
+### Navigazione nel prodotto  {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviata un’esercitazione relativa alla navigazione nel prodotto. Dedica alcuni minuti all’esercitazione per ottenere una buona panoramica dell’utilizzo di base di AEM.
 
@@ -68,7 +72,7 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **Navigazione**: rappresentata da una bussola  
+* **Navigazione**: rappresentata da una bussola 
 * **Strumenti**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
@@ -102,7 +106,7 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
    <td>Un frammento di esperienza<a href="/help/sites-authoring/experience-fragments.md"> è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse.</a></td> 
   </tr>
   <tr>
-   <td>Moduli</td> 
+   <td>Forms</td> 
    <td>Questa console permette di creare, gestire ed elaborare <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>&gt;.</td> 
   </tr>
   <tr>
@@ -243,7 +247,7 @@ Sono disponibili diverse risorse di Aiuto:
    >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni   {#actions-toolbar}
+## Barra delle azioni  {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -263,7 +267,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide   {#quick-actions}
+## Azioni rapide  {#quick-actions}
 
 Nella [Vista a schede](#quick-actions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -280,13 +284,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco  ](#list-view)
+* [Vista a elenco](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse   {#selecting-resources}
+### Selezionare le risorse  {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -324,7 +328,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
     </ul> </td> 
   </tr>
   <tr>
-   <td>Vista a elenco  </td> 
+   <td>Vista a elenco </td> 
    <td>
     <ul> 
      <li>Desktop: <br /> Fate clic sulla miniatura</li> 
@@ -370,6 +374,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Per spostarti in alto e in basso nella struttura ad albero, tocca o fai clic sul nome di una risorsa o sulla freccia a destra del nome.
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
+
    ![chlimage_1-361](assets/chlimage_1-361.png)
 
    * Gli elementi figlio della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
@@ -380,6 +385,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Quando una risorsa è selezionata, compare un segno di spunta sulla miniatura e il nome della risorsa viene evidenziato.
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
+
    ![chlimage_1-362](assets/chlimage_1-362.png)
 
    Quando una pagina viene selezionata nella vista a colonne, viene visualizzata nella colonna finale con i seguenti dettagli:
@@ -413,7 +419,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco   {#list-view}
+### Vista a elenco  {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
@@ -442,6 +448,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Dati analitici pagina**
    * **Visitatori univoci**
    * **Tempo sulla pagina**
+
    ![screen_shot_2018-03-23at105952](assets/screen_shot_2018-03-23at105952.png)
 
    Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
@@ -492,7 +499,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline   {#timeline}
+### Timeline  {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
