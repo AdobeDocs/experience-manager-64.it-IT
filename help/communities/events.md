@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ Per i componenti Community consegnati nella release, le tabelle seguenti descriv
 |---|---|
 | POST | crea un commento |
 | AGGIUNGI | risposta del membro al commento |
-| AGGIORNA | commento del membro è modificato |
+| AGGIORNA | commento del membro è stato modificato |
 | ELIMINA | commento del membro è eliminato |
 
 [Componente](essentials-file-library.md)Libreria file SocialEvent `topic`= com/adobe/cq/social/fileLibrary
