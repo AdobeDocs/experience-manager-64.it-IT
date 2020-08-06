@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Poiché Granite incorpora l&#39;implementazione del repository CRX della specifica API JCR, ha una propria amministrazione utente e di gruppo.
 
-Questi account sono alla base degli account [](/help/sites-administering/security.md) AEM e tutte le modifiche apportate agli account con l&#39;amministrazione Granite si rifletteranno se/quando gli account sono accessibili dalla console [Utenti di](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (ad esempio `http://localhost:4502/useradmin`). Dalla console Utenti di AEM è inoltre possibile gestire i privilegi e altre specifiche di AEM.
+Questi account sono la base di partenza dei conti [](/help/sites-administering/security.md) AEM e qualsiasi modifica di account apportata con l&#39;amministrazione Granite si rifletterà se/quando gli account sono accessibili dalla console [Utenti](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (ad es. `http://localhost:4502/useradmin`). Dalla console Utenti AEM potete anche gestire i privilegi e altre specifiche AEM.
 
 Le console di amministrazione Granite per utenti e gruppi sono disponibili nella console **[Strumenti](/help/sites-administering/tools-consoles.md)**dell’interfaccia touch:
 
@@ -89,7 +92,8 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
    * **Informazioni su**
    * **Impostazioni account**
 
-      * **Stato**&#x200B;È possibile contrassegnare l&#39;account come **attivo** o **inattivo**.
+      * **Stato**&#x200B;È possibile contrassegnare l&#39;account come 
+**attivo** o **inattivo**.
    * **Foto**
 
       Qui puoi caricare una foto da usare come avatar.
@@ -104,7 +108,7 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    * **Gruppi**
 
-      Elenco di gruppi di cui l&#39;utente è attualmente membro. Per deselezionare la **X** in base al nome, prima di salvare.
+      Un elenco di gruppi di cui l&#39;utente è attualmente membro. Prima di salvare, usate la **X** con il nome per deselezionare la casella di controllo.
 
 
 1. Una volta definito l&#39;account utente, utilizzate:
@@ -130,7 +134,7 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Viene visualizzata la finestra di dialogo **Cambia password** . Immettete e digitate nuovamente la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
+1. Viene visualizzata la finestra di dialogo **Cambia password** . Immettete e digitate di nuovo la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -161,7 +165,7 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Vi verrà chiesto di confermare l&#39;eliminazione, quindi un messaggio confermerà che l&#39;eliminazione effettiva è avvenuta.
+1. Vi verrà chiesto di confermare l&#39;eliminazione, quindi un messaggio confermerà che l&#39;eliminazione effettiva ha avuto luogo.
 
 ## Amministrazione gruppo {#group-administration}
 
@@ -187,7 +191,7 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    * **Descrizione**
 
-       Descrizione del gruppo.
+      Descrizione del gruppo.
 
    * **Aggiungi membri al gruppo**
 
@@ -195,7 +199,7 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    * **Membri del gruppo**
 
-      Elenco di utenti nel gruppo. Per deselezionare la **X** in base al nome, prima di salvare.
+      Elenco di utenti nel gruppo. Prima di salvare, usate la **X** con il nome per deselezionare la casella di controllo.
 
 1. Una volta definito il gruppo, utilizzate:
 
@@ -228,5 +232,5 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti si aprirà la console
 
    ![](do-not-localize/chlimage_1-6.png)
 
-1. Vi verrà chiesto di confermare l&#39;eliminazione, quindi un messaggio confermerà che l&#39;eliminazione effettiva è avvenuta.
+1. Vi verrà chiesto di confermare l&#39;eliminazione, quindi un messaggio confermerà che l&#39;eliminazione effettiva ha avuto luogo.
 
