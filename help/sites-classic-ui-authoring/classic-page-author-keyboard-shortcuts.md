@@ -1,8 +1,8 @@
 ---
 title: Scelte rapide da tastiera durante la modifica di pagine
 seo-title: Scelte rapide da tastiera per la modifica delle pagine
-description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
-seo-description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
+description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
+seo-description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
 >* Mac: Comando+clic sui componenti richiesti.
+
 >
 
 
@@ -165,7 +169,7 @@ Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponi
   </tr> 
   <tr> 
    <td>Modalità Modifica</td> 
-   <td><br /> Impostate il seguente suffisso nell’URL: Quindi <code>?debugClientLibs=true</code><br /> utilizzate:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Visualizza le statistiche sui tempi di caricamento della pagina.</td> 
   </tr> 
  </tbody> 
