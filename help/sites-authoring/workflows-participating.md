@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 77%
 
 ---
 
@@ -42,10 +45,11 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
    * Il nome dei flussi di lavoro applicati alla pagina, come ad esempio Richiedi attivazione.
    * Qualsiasi azione disponibile per l&#39;utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
-   * Il numero di flussi di lavoro a cui è soggetta la pagina. È possibile:
+   * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
 
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
       * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -72,7 +76,7 @@ Per questa azione è possibile indicare:
 
 * [Casella in entrata](#completing-a-participant-step-inbox)
 * [Editor pagina](#completing-a-participant-step-page-editor)
-* [Timeline](#completing-a-participant-step-timeline)
+* [Timeline ](#completing-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Completare un Passaggio partecipante: Casella in entrata {#completing-a-participant-step-inbox}
@@ -131,7 +135,7 @@ Per questa azione è possibile indicare:
 
 * [Casella in entrata](#delegating-a-participant-step-inbox)
 * [Editor pagina](#delegating-a-participant-step-page-editor)
-* [Timeline](#delegating-a-participant-step-timeline)
+* [Timeline ](#delegating-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Delegare un Passaggio partecipante: Casella in entrata {#delegating-a-participant-step-inbox}
@@ -181,7 +185,7 @@ Per questa azione è possibile indicare:
 
 * [Casella in entrata](#performing-step-back-on-a-participant-step-inbox)
 * [Editor pagina](#performing-step-back-on-a-participant-step-page-editor)
-* [Timeline](#performing-step-back-on-a-participant-step-timeline)
+* [Timeline ](#performing-step-back-on-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Eseguire un passo indietro su un Passaggio partecipante: Casella in entrata {#performing-step-back-on-a-participant-step-inbox}
