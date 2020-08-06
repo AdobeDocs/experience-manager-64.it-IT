@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '1595'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ La creazione di gruppi di utenti consente di assegnare i ruoli al gruppo anzich�
 
 Sono disponibili due diversi tipi di gruppi. Potete creare manualmente un gruppo e aggiungervi utenti e altri gruppi. Potete anche creare gruppi dinamici che includono automaticamente tutti gli utenti che soddisfano un set specifico di regole.
 
-Gli utenti potrebbero riscontrare un tempo di risposta più lento se appartengono a molti gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). In caso di problemi, puoi configurare i moduli AEM per preacquisire informazioni da alcuni domini. (consultate [Configurare i moduli AEM per la preacquisizione delle informazioni](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)sul dominio.)
+Gli utenti potrebbero riscontrare un tempo di risposta più lento se appartengono a molti gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). Se si verifica questo problema, è possibile configurare AEM moduli per preacquisire informazioni da alcuni domini. (Vedere [Configurazione di moduli AEM per la preacquisizione delle informazioni](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)sul dominio.)
 
 ## Creare manualmente un gruppo {#create-a-group-manually}
 
@@ -34,7 +37,7 @@ Se si utilizza Content Services (obsoleto), è possibile selezionare l&#39;opzio
 
    Il Nome canonico è un identificatore univoco per il gruppo. Ogni gruppo e utente in un dominio deve avere un nome canonico univoco. Selezionate la casella di controllo Sistema generato per consentire a Gestione utente di assegnare un valore univoco, oppure deselezionate la casella di controllo e specificate un valore personalizzato per il Nome canonico.
 
-   Evitare di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esempio `sample_group`. Quando cercate dei gruppi basati sul nome canonico, quelli contenenti caratteri di sottolineatura non vengono restituiti.
+   Evitare di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esempio `sample_group`. Quando cercate dei gruppi in base al nome canonico, quelli che contengono caratteri di sottolineatura non vengono restituiti.
 
 1. Per aggiungere utenti e gruppi a questo nuovo gruppo, fate clic su Trova utenti/gruppi ed effettuate le seguenti operazioni:
 
@@ -42,13 +45,13 @@ Se si utilizza Content Services (obsoleto), è possibile selezionare l&#39;opzio
    * Nell&#39;elenco In, selezionare Utenti, Gruppi o Utenti e Gruppi.
    * Nell&#39;elenco Utilizzo, selezionare Nome, E-mail o ID utente.
    * Selezionate il dominio, selezionate il numero di elementi da visualizzare e fate clic su Trova.
-   * Nei risultati della ricerca, selezionate le caselle di controllo per gli utenti e i gruppi da aggiungere al nuovo gruppo e fate clic su OK.
+   * Nei risultati della ricerca, selezionate le caselle di controllo per gli utenti e i gruppi da aggiungere a questo nuovo gruppo e fate clic su OK.
 
 1. Fai clic su Avanti.
 1. Per aggiungere il nuovo gruppo ad altri gruppi esistenti, fate clic su Trova gruppi ed effettuate le seguenti operazioni:
 
    * Nella casella Trova, digitate i criteri di ricerca.
-   * Selezionate il dominio, selezionate il numero di elementi da visualizzare e fate clic su Trova.
+   * Select the domain, select the number of items to display, and click Find.
    * Nei risultati della ricerca, selezionate le caselle di controllo relative ai gruppi a cui appartiene il nuovo gruppo e fate clic su OK.
 
 1. Fai clic su Avanti.
@@ -57,16 +60,16 @@ Se si utilizza Content Services (obsoleto), è possibile selezionare l&#39;opzio
 
 ## Creare un gruppo dinamico {#create-a-dynamic-group}
 
-In un gruppo dinamico, non selezionate singolarmente gli utenti che appartengono al gruppo. Al contrario, specificate un set di regole e tutti gli utenti che soddisfano tali regole vengono automaticamente aggiunti al gruppo dinamico.
+In a dynamic group, you do not individually select the users who belong to the group. Instead, you specify a set of rules and all users who meet those rules are automatically added to the dynamic group.
 
 Utilizzate uno dei due modi seguenti per creare gruppi dinamici:
 
-* Abilita la creazione automatica di gruppi dinamici basati su domini e-mail, ad esempio @adobe.com. Quando si abilita questa funzione, Gestione utente crea un gruppo dinamico per ciascun dominio e-mail univoco nel database dei moduli AEM. Utilizzare un&#39;espressione cron per specificare la frequenza con cui la Gestione utente cerca nel database dei moduli AEM i nuovi domini e-mail. Questi gruppi dinamici vengono aggiunti al dominio locale DefaultDom e sono denominati &quot;Tutti gli utenti con un *dominio[] email *ID mail.&quot;
-* Create un gruppo dinamico basato su criteri specifici, inclusi il dominio e-mail dell&#39;utente, la descrizione, il nome canonico e il nome di dominio. Per appartenere al gruppo dinamico, un utente deve soddisfare tutti i criteri specificati. Per impostare una condizione &quot;OR&quot;, create due gruppi dinamici distinti e aggiungeteli entrambi a un gruppo locale. Ad esempio, utilizzate questo approccio per creare un gruppo di utenti che appartengono al dominio e-mail @adobe.com o il cui nome canonico contiene ou=adobe.com. Tuttavia, gli utenti non devono necessariamente soddisfare entrambe le condizioni.
+* Abilita la creazione automatica di gruppi dinamici basati su domini e-mail, ad esempio @adobe.com. Quando si attiva questa funzione, Gestione utente crea un gruppo dinamico per ciascun dominio e-mail univoco nel database dei moduli AEM. Utilizzare un&#39;espressione cron per specificare la frequenza con cui la Gestione utente cerca nel database dei moduli AEM nuovi domini e-mail. These dynamic groups are added to the DefaultDom local domain and are named &quot;All users with an *[email domain] *mail ID.&quot;
+* Create a dynamic group based on specified criteria, including the user’s email domain, description, canonical name, and domain name. Per appartenere al gruppo dinamico, un utente deve soddisfare tutti i criteri specificati. Per impostare una condizione &quot;OR&quot;, create due gruppi dinamici distinti e aggiungeteli entrambi a un gruppo locale. Ad esempio, utilizzate questo approccio per creare un gruppo di utenti che appartengono al dominio e-mail @adobe.com o il cui nome canonico contiene ou=adobe.com. Tuttavia, gli utenti non devono necessariamente soddisfare entrambe le condizioni.
 
-Un gruppo dinamico contiene solo utenti. Non può contenere altri gruppi. Tuttavia, un gruppo dinamico può appartenere a un gruppo principale.
+A dynamic group contains only users. Non può contenere altri gruppi. Tuttavia, un gruppo dinamico può appartenere a un gruppo principale.
 
-### Crea automaticamente gruppi dinamici basati su domini e-mail {#automatically-create-dynamic-groups-based-on-email-domains}
+### Automatically create dynamic groups based on email domains {#automatically-create-dynamic-groups-based-on-email-domains}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
 1. In Creazione automatica del gruppo dinamico, selezionate la casella di controllo.
@@ -90,13 +93,13 @@ Un gruppo dinamico contiene solo utenti. Non può contenere altri gruppi. Tuttav
    >
    >Gli attributi E-mail, Descrizione e Nome canonico fanno distinzione tra maiuscole e minuscole quando si utilizza l&#39;operatore Uguale a. Non viene fatta distinzione tra maiuscole e minuscole con gli operatori Inizia con, Termina con o Contiene.
 
-   **** E-mail: Dominio e-mail dell’utente, ad esempio `@adobe.com`.
+   **E-mail:** Dominio e-mail dell’utente, ad esempio `@adobe.com`.
 
-   **** Descrizione: Descrizione dell’utente, ad esempio &quot;Informatica Scientista&quot;
+   **Descrizione:** Descrizione dell’utente, ad esempio &quot;Informatica Scientista&quot;
 
-   **** Nome canonico: Nome canonico dell’utente, ad esempio `ou=adobe.com`
+   **Nome canonico:** Nome canonico dell’utente, ad esempio `ou=adobe.com`
 
-   **** Nome dominio: Nome del dominio a cui appartiene l&#39;utente, ad esempio `DefaultDom`. L&#39;attributo Nome dominio distingue tra maiuscole e minuscole quando si utilizza l&#39;operatore Contiene. Non fa distinzione tra maiuscole e minuscole con gli operatori Inizia con, Termina con o È uguale a.
+   **Nome dominio:** Il nome del dominio a cui appartiene l&#39;utente, ad esempio `DefaultDom`. L&#39;attributo Nome dominio distingue tra maiuscole e minuscole quando si utilizza l&#39;operatore Contiene. Non fa distinzione tra maiuscole e minuscole con gli operatori Inizia con, Termina con o È uguale a.
 
 1. Fate clic su Test. Una pagina di test mostra i primi 200 utenti che soddisfano i criteri definiti. Fai clic su Chiudi.
 1. Se il test ha restituito i risultati previsti, fare clic su Avanti. In caso contrario, modificate i criteri del gruppo dinamico e ripetete il test.
