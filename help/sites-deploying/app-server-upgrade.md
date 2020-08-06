@@ -1,8 +1,8 @@
 ---
 title: Passaggi di aggiornamento per le installazioni di Application Server
 seo-title: Passaggi di aggiornamento per le installazioni di Application Server
-description: Scoprite come aggiornare le istanze di AEM distribuite tramite i server applicazioni.
-seo-description: Scoprite come aggiornare le istanze di AEM distribuite tramite i server applicazioni.
+description: Scoprite come aggiornare le istanze di AEM distribuite tramite Application Server.
+seo-description: Scoprite come aggiornare le istanze di AEM distribuite tramite Application Server.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
 
 # Passaggi di aggiornamento per le installazioni di Application Server{#upgrade-steps-for-application-server-installations}
 
-Questa sezione descrive la procedura da seguire per aggiornare le installazioni di AEM per Application Server.
+In questa sezione viene descritta la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
 
-Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già implementata. La procedura è destinata a documentare gli aggiornamenti eseguiti da **AEM versione 5.6 a 6.3**.
+Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già distribuita. La procedura è destinata a documentare gli aggiornamenti eseguiti dalla **AEM versione 5.6 alla 6.3**.
 
 1. Innanzitutto, avviate JBoss. Nella maggior parte dei casi, è possibile eseguire lo script di `standalone.sh` avvio, eseguendo questo comando dal terminale:
 
@@ -27,13 +30,13 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. Se AEM 5.6 è già implementato, verificate che i bundle funzionino correttamente eseguendo:
+1. Se AEM 5.6 è già distribuito, verificare che i bundle funzionino correttamente eseguendo:
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Quindi, annulla la distribuzione di AEM 5.6:
+1. Quindi, annullate la distribuzione AEM 5.6:
 
    ```shell
    rm jboss-install-folder/standalone/deployments/cq.war
@@ -85,14 +88,15 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
 
 1. Quindi, dovete creare la cartella che conterrà le configurazioni OSGi che verranno utilizzate con la nuova istanza aggiornata. Più precisamente, una cartella denominata install deve essere creata in **crx-quickstart**.
 
-1. A questo punto, crea l’archivio nodi e i data store che verranno utilizzati con AEM 6.3. A questo scopo, create due file con i seguenti nomi in **crx-quickstart\install**:
+1. A questo punto, creare l&#39;archivio nodi e l&#39;archivio dati che verrà utilizzato con AEM 6.3. A questo scopo, create due file con i seguenti nomi in **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-   Questi due file configureranno AEM per l’utilizzo di un archivio nodi TarMK e di un archivio dati File.
 
-1. Modificate i file di configurazione per renderli pronti all’uso. Più precisamente:
+   Questi due file configureranno AEM per utilizzare uno store di nodi TarMK e uno store di dati File.
+
+1. Modificate i file di configurazione per renderli pronti per l’uso. Più precisamente:
 
    * Aggiungi la riga seguente a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
@@ -111,7 +115,7 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. È ora necessario modificare le modalità di esecuzione nel file di guerra di AEM 6.3. Per fare ciò, create innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.3. Il nome della cartella in questo esempio sarà **temporaneo**. Una volta copiato il file di guerra, estrarne il contenuto dall&#39;interno della cartella temp:
+1. È ora necessario modificare le modalità di esecuzione nel file di guerra AEM 6.3. Per fare ciò, create innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.3. Il nome della cartella in questo esempio sarà **temporaneo**. Una volta copiato il file di guerra, estrarne il contenuto dall&#39;interno della cartella temp:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
