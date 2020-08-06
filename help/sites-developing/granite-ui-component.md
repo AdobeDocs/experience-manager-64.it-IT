@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ L&#39;interfaccia utente Granite offre una serie di componenti progettati per es
 
 >[!NOTE]
 >
->Per informazioni dettagliate sui campi, consulta la documentazione [sull’interfaccia utente](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)Granite.
+>Per informazioni dettagliate sui campi, consulta la documentazione [relativa all’interfaccia utente](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)Granite.
 
 Utilizzate il framework Granite UI Foundation per sviluppare e/o estendere i componenti Granite. Sono disponibili due elementi:
 
