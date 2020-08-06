@@ -1,8 +1,8 @@
 ---
 title: Configurare il progetto Android Studio e creare l'app Android
 seo-title: Configurare il progetto Android Studio e creare l'app Android
-description: Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
-seo-description: Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
+description: 'Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l''app AEM Forms '
+seo-description: 'Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l''app AEM Forms '
 uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Configurare il progetto Android Studio e creare l&#39;app Android {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Questo articolo è destinato alla creazione di AEM Forms App 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente del codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
+Questo articolo è destinato alla creazione di  AEM Forms App 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente del codice sorgente dell&#39; AEM Forms App 6.3, vedete [Configurare il progetto Eclipse e creare l&#39;app](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
 
-AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
+ AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms . L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms  personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
 
-Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua le seguenti operazioni:
+Per ottenere l&#39;origine dell&#39;app AEM Forms , effettuate le seguenti operazioni:
 
 1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
-1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. Nella sezione **[!UICONTROL Filtri]** :
-   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   1. Selezionate **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
    2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
 1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
 1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
@@ -42,7 +42,7 @@ L’immagine seguente mostra la struttura di directory della `android`cartella n
 
 ![Struttura delle directory della cartella android in src](assets/android-folder.png)
 
-## Creare app AEM Forms standard {#set-up-the-xcode-project}
+## Creare app standard  AEM Forms {#set-up-the-xcode-project}
 
 1. Per configurare un progetto in Android™ Studio e fornire un&#39;identità di firma, effettuate le seguenti operazioni:
 
