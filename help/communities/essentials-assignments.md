@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 13%
 
 ---
 
@@ -47,7 +50,7 @@ La funzione di assegnazione consente di assegnare risorse di abilitazione e perc
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>Vedere Funzione <a href="assignments.md">Assegnazioni</a></td> 
+   <td>Consulta Funzione <a href="assignments.md">Assegnazioni</a></td> 
   </tr>
  </tbody>
 </table>
