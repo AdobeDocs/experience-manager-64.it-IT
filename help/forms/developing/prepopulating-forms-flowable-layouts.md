@@ -1,6 +1,6 @@
 ---
-title: Precompilazione dei moduli con layout scorrevoli
-seo-title: Precompilazione dei moduli con layout scorrevoli
+title: Precompilazione di Forms con layout scorrevoli
+seo-title: Precompilazione di Forms con layout scorrevoli
 description: 'null'
 seo-description: 'null'
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
@@ -11,13 +11,16 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
 source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 0%
 
 ---
 
 
-# Precompilazione dei moduli con layout scorrevoli {#prepopulating-forms-with-flowable-layouts1}
+# Precompilazione di Forms con layout scorrevoli {#prepopulating-forms-with-flowable-layouts1}
 
-## Precompilazione dei moduli con layout scorrevoli {#prepopulating-forms-with-flowable-layouts2}
+## Precompilazione di Forms con layout scorrevoli {#prepopulating-forms-with-flowable-layouts2}
 
 La precompilazione dei moduli consente di visualizzare i dati agli utenti all&#39;interno di un modulo di cui è stato effettuato il rendering. Ad esempio, supponiamo che un utente acceda a un sito Web con un nome utente e una password. Se l&#39;autenticazione ha esito positivo, l&#39;applicazione client esegue una query a un database per ottenere informazioni sugli utenti. I dati vengono uniti nel modulo, quindi viene eseguito il rendering del modulo per l&#39;utente. Di conseguenza, l&#39;utente può visualizzare dati personalizzati all&#39;interno del modulo.
 
@@ -29,16 +32,16 @@ La precompilazione di un modulo presenta i seguenti vantaggi:
 
 È possibile precompilare un modulo con le due origini dati XML seguenti:
 
-* Un&#39;origine dati XDP, XML conforme alla sintassi XFA (o dati XFDF per precompilare un modulo creato con Acrobat).
+* Un&#39;origine dati XDP, XML conforme alla sintassi XFA (o dati XFDF per precompilare un modulo creato con  Acrobat).
 * Un&#39;origine dati XML arbitraria che contiene coppie nome/valore corrispondenti ai nomi dei campi del modulo (gli esempi in questa sezione utilizzano un&#39;origine dati XML arbitraria).
 
 Per ogni campo del modulo che si desidera precompilare è necessario che esista un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML, purché siano specificati tutti gli elementi XML.
 
 Quando si precompila un modulo che contiene già dei dati, è necessario specificare i dati già visualizzati nell&#39;origine dati XML. Si supponga che un modulo contenente 10 campi contenga dati in quattro campi. Quindi, si supponga di voler precompilare i sei campi rimanenti. In questa situazione, è necessario specificare 10 elementi XML nell&#39;origine dati XML utilizzata per precompilare il modulo. Se specificate solo sei elementi, i quattro campi originali sono vuoti.
 
-Ad esempio, è possibile precompilare un modulo, ad esempio il modulo di conferma di esempio. Vedere &quot;Modulo di conferma&quot; nel [rendering di moduli](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interattivi.
+Ad esempio, è possibile precompilare un modulo, ad esempio il modulo di conferma di esempio. Consultate &quot;Modulo di conferma&quot; in [Rendering di PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interattivi.
 
-Per precompilare il modulo di conferma di esempio, è necessario creare un&#39;origine dati XML contenente tre elementi XML che corrispondono ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName`, e `Amount`. Il primo passaggio consiste nel creare un&#39;origine dati XML contenente elementi XML che corrispondono ai campi situati nella struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come illustrato nel seguente codice XML.
+Per precompilare il modulo di conferma di esempio, è necessario creare un&#39;origine dati XML contenente tre elementi XML che corrispondono ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName`e `Amount`. Il primo passaggio consiste nel creare un&#39;origine dati XML contenente elementi XML che corrispondono ai campi situati nella struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come illustrato nel seguente codice XML.
 
 ```as3
      <Untitled> 
@@ -54,7 +57,7 @@ Dopo aver precompilato il modulo di conferma con questa origine dati XML ed eseg
 
 ### Precompilazione dei moduli con layout scorrevoli {#prepopulating_forms_with_flowable_layouts-1}
 
-I moduli con layout scorrevole sono utili per visualizzare agli utenti una quantità indeterminata di dati. Poiché il layout del modulo si adatta automaticamente alla quantità di dati che vengono uniti, non è necessario predeterminare un layout fisso o un numero di pagine per il modulo, come è necessario fare con un modulo con layout fisso.
+Forms con layout scorrevoli è utile per visualizzare agli utenti una quantità indeterminata di dati. Poiché il layout del modulo si adatta automaticamente alla quantità di dati che vengono uniti, non è necessario predeterminare un layout fisso o un numero di pagine per il modulo, come è necessario fare con un modulo con layout fisso.
 
 Un modulo viene in genere compilato con i dati ottenuti durante l&#39;esecuzione. Di conseguenza, è possibile precompilare un modulo creando un&#39;origine dati XML in memoria e inserendo i dati direttamente nell&#39;origine dati XML in memoria.
 
@@ -101,7 +104,7 @@ Nel diagramma seguente è riportato un esempio di modulo di ordine di acquisto. 
 
 ### Considerazioni sulla struttura del modulo {#form-design-considerations}
 
-I moduli con layout scorrevole si basano sulle strutture del modulo create in Designer. Una struttura del modulo specifica un insieme di regole di layout, presentazione e acquisizione dei dati, compreso il calcolo dei valori in base all&#39;input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomoduli che si trovano all&#39;interno della struttura del modulo. Ad esempio, nel modulo dell&#39;ordine di acquisto visualizzato nel diagramma precedente, ogni riga è un sottomodulo. Per informazioni sulla creazione di una struttura del modulo contenente sottomoduli, vedere [Creazione di un modulo di ordine di acquisto con layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)scorrevole.
+Forms con layout scorrevole si basa sulle strutture del modulo create in Designer. Una struttura del modulo specifica un insieme di regole di layout, presentazione e acquisizione dei dati, compreso il calcolo dei valori in base all&#39;input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomoduli che si trovano all&#39;interno della struttura del modulo. Ad esempio, nel modulo dell&#39;ordine di acquisto visualizzato nel diagramma precedente, ogni riga è un sottomodulo. Per informazioni sulla creazione di una struttura del modulo contenente sottomoduli, vedere [Creazione di un modulo di ordine di acquisto con layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)scorrevole.
 
 ### Informazioni sui sottogruppi di dati {#understanding-data-subgroups}
 
@@ -184,11 +187,11 @@ Ciascun sottogruppo di dati deve contenere elementi XML che corrispondono ai nom
 
 >[!NOTE]
 >
->Se si tenta di precompilare un modulo con un&#39;origine dati che contiene elementi XML ripetuti e si imposta l&#39; `RenderAtClient` opzione su `No`, nel modulo viene unito solo il primo record di dati. Per fare in modo che tutti i record di dati siano uniti nel modulo, impostare `RenderAtClient` su `Yes`. Per informazioni sull&#39; `RenderAtClient` opzione, vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms-client.md).
+>Se si tenta di precompilare un modulo con un&#39;origine dati che contiene elementi XML ripetuti e si imposta l&#39; `RenderAtClient` opzione su `No`, nel modulo viene unito solo il primo record di dati. Per fare in modo che tutti i record di dati siano uniti nel modulo, impostare `RenderAtClient` su `Yes`. Per informazioni sull&#39; `RenderAtClient` opzione, consultate [Rendering di Forms in Client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -225,15 +228,15 @@ Il rendering di un modulo precompilato è simile a quello di un altro. L&#39;uni
 
 **Consulta anche**
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Precompilazione dei moduli tramite l&#39;API Java {#prepopulating-forms-using-the-java-api}
 
@@ -241,7 +244,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
 1. Includi file di progetto
 
-   Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+   Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, consultate [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria AEM Forms Java.
 
 1. Creazione di un&#39;origine dati XML in memoria
 
@@ -270,7 +273,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Ripetere l&#39;ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all&#39;elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo di ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`, e `numUnitPrice`.
+   * Ripetere l&#39;ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all&#39;elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo di ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`e `numUnitPrice`.
    * Ripetere gli ultimi due passaggi secondari per tutti gli elementi dati utilizzati per precompilare il modulo.
 
 1. Conversione dell&#39;origine dati XML
@@ -294,6 +297,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
+
    Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati del modulo al browser Web del client.
@@ -305,9 +309,9 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
 **Consulta anche**
 
-[Avvio rapido (modalità SOAP): Precompilazione di moduli con layout scorrevoli tramite l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Avvio rapido (modalità SOAP): Precompilazione di Forms con layout fluidi tramite l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -317,7 +321,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms. Consultate [Creazione di classi proxy Java tramite Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms. Consultate [Creazione di classi proxy Java tramite Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).
    * Includete le classi proxy Java nel percorso della classe.
 
 1. Creazione di un&#39;origine dati XML in memoria
@@ -346,7 +350,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Ripetere l&#39;ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all&#39;elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo di ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`, e `numUnitPrice`.
+   * Ripetere l&#39;ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all&#39;elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo di ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`e `numUnitPrice`.
    * Ripetere gli ultimi due passaggi secondari per tutti gli elementi dati utilizzati per precompilare il modulo.
 
 1. Conversione dell&#39;origine dati XML
@@ -367,13 +371,14 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
 
    * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
    * Un `BLOB` oggetto che contiene i dati da unire al modulo. Assicurarsi di utilizzare l&#39; `BLOB` oggetto creato nei passaggi 1 e 2.
-   * Un `PDFFormRenderSpecc` oggetto che memorizza le opzioni di esecuzione. Per ulteriori informazioni, consulta [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
+   * Un `PDFFormRenderSpecc` oggetto che memorizza le opzioni di esecuzione. Per ulteriori informazioni, consultate [Guida di riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)delle API di AEM Forms.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato effettuato il rendering.
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. (Questo argomento memorizza il numero di pagine nel modulo).
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali).
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
+
    Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
    * Creare un `FormResult` oggetto ottenendo il valore del membro `com.adobe.idp.services.holders.FormsResultHolder` dati dell&#39; `value` oggetto.
@@ -383,11 +388,12 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il `javax.servlet.http.HttpServletResponse` metodo dell&#39; `getOutputStream` oggetto.
    * Creare un array di byte e compilarlo richiamando il metodo dell&#39; `BLOB` oggetto `getBinaryData` . Questa attività assegna il contenuto dell&#39; `FormsResult` oggetto all&#39;array di byte.
    * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+
    >[!NOTE]
    >
    >Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 **Consulta anche**
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
