@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +48,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
       1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
       1. Da qui seleziona **Crea lancio** per aprire la procedura guidata.
+
    >[!NOTE]
    >
    >Nella console **Sites** è inoltre possibile utilizzare la [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per scegliere una pagina prima di fare clic su **Crea**.
@@ -55,6 +59,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    * Passa alla posizione desiderata.
    * Seleziona le pagine sorgente e conferma (segno di spunta).
+
    Ripeti in base alle esigenze.  
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Includi le pagine secondarie**:
 
       * Specifica se creare il lancio con o senza pagine figlie.  Per impostazione predefinita, le pagine secondarie sono incluse.
+
    Procedi con **Successivo**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
       Per impostazione predefinita, questa opzione è selezionata.
 
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
