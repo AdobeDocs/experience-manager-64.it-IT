@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione di dati aggiuntivi nell'elenco Attività
 seo-title: Visualizzazione di dati aggiuntivi nell'elenco Attività
-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro di LiveCycle AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
-seo-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro di LiveCycle AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
+description: Procedura per personalizzare la visualizzazione dell'elenco A dell'LiveCycle  dell'area di lavoro AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
+seo-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'LiveCycle  dell'area di lavoro AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Visualizzazione di dati aggiuntivi nell&#39;elenco Attività {#displaying-additional-data-in-todo-list}
 
-Per impostazione predefinita, nell&#39;elenco A-do dell&#39;area di lavoro AEM Forms sono visualizzati il nome visualizzato e la descrizione dell&#39;attività. Tuttavia, potete aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
+Per impostazione predefinita, nell&#39;elenco  attività dell&#39;area di lavoro di AEM Forms vengono visualizzati il nome e la descrizione dell&#39;attività. Tuttavia, potete aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
 
 ![Vedere la scheda Attività di HTML Workspace che mostra la configurazione predefinita](assets/html-todo-list.png)
 
@@ -30,7 +33,7 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 ## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+1. Seguite i passaggi [Generico per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
 1. Per visualizzare informazioni aggiuntive su un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti all&#39;interno del blocco attività di `translation.json`.
 
    Ad esempio, change `/apps/ws/locales/en-US/translation.json` for English:
@@ -134,7 +137,7 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 ## Aggiunta di voci nel modello HTML {#adding-entry-in-the-html-template}
 
-Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, fare riferimento al codice dell&#39;area di lavoro Creazione di moduli AEM.
+Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, fare riferimento a Creazione  codice dell&#39;area di lavoro AEM Forms.
 
 1. Copia `task.html`:
 
