@@ -20,24 +20,24 @@ ht-degree: 2%
 
 # Sviluppo con CRXDE Lite {#developing-with-crxde-lite}
 
-Questa sezione descrive come sviluppare l’applicazione AEM con CRXDE Lite.
+Questa sezione descrive come sviluppare l&#39;applicazione AEM utilizzando CRXDE Lite.
 
 Per ulteriori informazioni sui diversi ambienti di sviluppo disponibili, consulta la documentazione di panoramica.
 
-CRXDE Lite è integrato in AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite, potete creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
+CRXDE Lite è integrato in AEM e consente di eseguire attività di sviluppo standard nel browser. Con i CRXDE Lite, potete creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
 
 CRXDE Lite è consigliato quando non si dispone dell&#39;accesso diretto al server AEM, quando si sviluppa un&#39;applicazione estendendo o modificando i componenti out-of-the-box e i bundle Java o quando non è necessario un debugger dedicato, completamento del codice e evidenziazione della sintassi.
 
 >[!NOTE]
 >
->A partire da AEM 6.4.8.1, l&#39;accesso anonimo a CRXDE Lite non è più possibile.
+>A partire dal AEM 6.4.8.1, l&#39;accesso anonimo di CRXDE Lite non è più possibile.
 >Gli utenti vengono reindirizzati alla schermata di accesso.
 
 >[!NOTE]
 >
->È consigliabile utilizzare [AEM Developer Tools per Eclipse](/help/sites-developing/aem-eclipse.md) e [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) durante lo sviluppo del progetto.
+>Si consiglia di utilizzare [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) e l&#39;estensione [](/help/sites-developing/aem-brackets.md) AEM HTL Brackets durante lo sviluppo del progetto.
 
-## Guida introduttiva a CRXDE Lite {#getting-started-with-crxde-lite}
+## Guida introduttiva ai CRXDE Lite {#getting-started-with-crxde-lite}
 
 Per iniziare con CRXDE Lite, procedere come segue:
 
@@ -47,7 +47,7 @@ Per iniziare con CRXDE Lite, procedere come segue:
 
 1. Fai clic su **OK**.
 
-L&#39;interfaccia utente CRXDE Lite si presenta come segue nel browser:
+L’interfaccia utente CRXDE Lite si presenta come segue nel browser:
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -73,7 +73,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr> 
   <tr> 
    <td>Riquadro di modifica</td> 
-   <td><p><strong>Scheda Pagina iniziale</strong> : consente di effettuare ricerche nei contenuti e/o nella documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (homepage e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Esplora risorse</strong> per visualizzarne il contenuto; come ad esempio un file .jsp o .java. Potete quindi modificarlo e salvare le modifiche.</p> <p>Una volta modificato un file nel riquadro <strong>Modifica</strong> , nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci ...</strong>: eseguire ricerche o sostituire.<br /> <br /> Fate doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> e immettere un numero di riga specifico a cui passare.<br /> </td> 
+   <td><p><strong>Scheda Pagina iniziale</strong> : consente di effettuare ricerche nei contenuti e/o nella documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto ( pagina iniziale e centro di assistenza).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Esplora risorse</strong> per visualizzarne il contenuto; come ad esempio un file .jsp o .java. Potete quindi modificarlo e salvare le modifiche.</p> <p>Una volta modificato un file nel riquadro <strong>Modifica</strong> , nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci ...</strong>: eseguire ricerche o sostituire.<br /> <br /> Fate doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> e immettere un numero di riga specifico a cui passare.<br /> </td> 
   </tr> 
   <tr> 
    <td>scheda Proprietà<br /> </td> 
@@ -81,7 +81,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr> 
   <tr> 
    <td>Scheda Controllo accesso</td> 
-   <td><p>Visualizza le autorizzazioni in base al percorso, al livello del repository o all'entità corrente.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio</strong>di controllo degli accessi applicabile: Criteri che possono essere applicati alla selezione corrente.</p> <p>- Criteri per il controllo degli accessi <strong>locali</strong>: Criteri correnti applicati localmente alla selezione corrente.</p> <p>- Politiche <strong>Efficaci Di Controllo Dell'Accesso</strong>: I criteri correnti applicati alla selezione corrente possono essere impostati localmente o ereditati dai nodi padre.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente che ha eseguito l'accesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL. L'utente anonimo non può visualizzare queste informazioni per impostazione predefinita. Per visualizzare le informazioni, effettuate l'accesso, ad esempio, come amministratore.</p> </td> 
+   <td><p>Visualizza le autorizzazioni in base al percorso, al livello del repository o all'entità corrente.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio</strong>di controllo degli accessi applicabile: Criteri che possono essere applicati alla selezione corrente.</p> <p>- Criteri per il controllo degli accessi <strong>locali</strong>: Criteri correnti applicati localmente alla selezione corrente.</p> <p>- Politiche <strong>Efficaci Di Controllo Dell'Accesso</strong>: I criteri correnti applicati alla selezione corrente possono essere impostati localmente o ereditati dai nodi padre.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente che ha eseguito l'accesso al CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL. L'utente anonimo non può visualizzare queste informazioni per impostazione predefinita. Per visualizzare le informazioni, effettuate l'accesso, ad esempio, come amministratore.</p> </td> 
   </tr> 
   <tr> 
    <td>Scheda Replica</td> 
@@ -105,7 +105,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr> 
   <tr> 
    <td>Crea ...<br /> </td> 
-   <td><p>Menu a discesa per creare quanto segue sotto il nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nt:nodo file e relativo nodo secondario nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder, nodo</p> <p>- <strong>Modello</strong>: Modello AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Dialogo</strong>: Finestra di dialogo AEM</p> </td> 
+   <td><p>Menu a discesa per creare quanto segue sotto il nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nt:nodo file e relativo nodo secondario nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder, nodo</p> <p>- <strong>Modello</strong>: modello AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Dialogo</strong>: AEM, finestra di dialogo</p> </td> 
   </tr> 
   <tr> 
    <td>Elimina<br /> </td> 
@@ -133,7 +133,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr> 
   <tr> 
    <td>Strumenti<br /> </td> 
-   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- Configurazione <strong>server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire la gestione dei privilegi, dove puoi visualizzare e aggiungere privilegi.</p> <p>- Controllo di accesso <strong>alla prova ...</strong>: un luogo in cui è possibile verificare l'autorizzazione per determinati percorsi e/o entità.</p> <p>- Tipo <strong>nodo</strong>esportazione: per esportare i tipi di nodi nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare i tipi di nodo utilizzando la notazione cnd.</p>  <p>- <strong>Installare SiteCatalyst Debugger ...</strong>: istruzioni su come installare  Analytics Debugger.</p> </td> 
+   <td><p>Menu a discesa con i seguenti strumenti:</p> <p>- Configurazione <strong>server ...</strong>: per accedere alla console Felix.</p> <p>- <strong>Query ...</strong>: per eseguire una query nell'archivio.</p> <p>- <strong>Privilegi ...</strong>: per aprire la gestione dei privilegi, dove puoi visualizzare e aggiungere privilegi.</p> <p>- Controllo di accesso <strong>alla prova ...</strong>: un luogo in cui è possibile verificare l'autorizzazione per determinati percorsi e/o entità.</p> <p>- Tipo <strong>nodo</strong>esportazione: per esportare i tipi di nodi nel sistema come notazione cnd.</p> <p>- <strong>Importa tipo di nodo ...</strong>: per importare i tipi di nodo utilizzando la notazione cnd.</p>  <p>- <strong>Installa debugger SiteCatalyst ...</strong>: istruzioni su come installare Analytics Debugger.</p> </td> 
   </tr> 
   <tr> 
    <td>widget di accesso<br /> </td> 
@@ -144,9 +144,9 @@ CRXDE Lite offre le seguenti funzionalità:
 
 ### Creating a Folder {#creating-a-folder}
 
-Per creare una cartella con CRXDE Lite:
+Per creare una cartella con un CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella, selezionare **Crea ...**, quindi **Crea cartella ...**.
 
 1. Immettete il **nome** della cartella e fate clic su **OK**.
@@ -155,9 +155,9 @@ Per creare una cartella con CRXDE Lite:
 
 ### Creating a Template {#creating-a-template}
 
-Per creare un modello con CRXDE Lite:
+Per creare un modello con un CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il modello, selezionare **Crea ...**, quindi **Crea modello ...**.
 
 1. Immettere **Etichetta**, **Titolo**, **Descrizione**, Tipo **** risorsa e **Classificazione** del modello. Fai clic su **Avanti**.
@@ -184,7 +184,7 @@ La funzione qui descritta è disponibile solo se il tipo di nodo `cq:Component` 
 
 Per creare un componente con CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il componente, selezionare **Crea ...**, quindi **Crea componente ...**.
 
 1. Immettere **Etichetta**, **Titolo**, **Descrizione**, **Super Resource Type** e **Gruppo** del componente. Fai clic su **Avanti**.
@@ -205,9 +205,9 @@ Crea:
 
 ### Creazione di una finestra di dialogo {#creating-a-dialog}
 
-Per creare una finestra di dialogo con CRXDE Lite:
+Per creare una finestra di dialogo con un CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare la finestra di dialogo, selezionare **Crea ...**, quindi **Crea finestra di dialogo ...**.
 
 1. Immettete l’ **etichetta** e il **titolo**. Fai clic su **OK**.
@@ -220,13 +220,13 @@ Viene creata una finestra di dialogo con la struttura seguente:
 
 È ora possibile adattare la finestra di dialogo alle proprie esigenze modificando le proprietà o creando nuovi nodi.
 
-È inoltre possibile utilizzare l&#39;Editor finestre di dialogo per modificare una finestra di dialogo. Facendo doppio clic sul nodo della finestra di dialogo in CRXDE Lite verrà visualizzato l&#39;editor. Per ulteriori informazioni sull’editor finestra di dialogo, consultate [questa](/help/sites-developing/dialog-editor.md)pagina.
+È inoltre possibile utilizzare l&#39;Editor finestre di dialogo per modificare una finestra di dialogo. Facendo doppio clic sul nodo della finestra di dialogo nel CRXDE Lite, verrà visualizzato l&#39;editor. Per ulteriori informazioni sull’editor finestra di dialogo, consultate [questa](/help/sites-developing/dialog-editor.md)pagina.
 
 ### Creazione di un nodo {#creating-a-node}
 
 Per creare un nodo con CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea ...**, quindi **Crea nodo ...**.
 
 1. Immettere il **Nome** e il **Tipo**. Fai clic su **OK**.
@@ -237,15 +237,15 @@ Per creare un nodo con CRXDE Lite:
 
 >[!NOTE]
 >
->La maggior parte delle operazioni di modifica, incluso Create Node, conserva tutte le modifiche in memoria e le memorizza nella directory archivio solo al momento del salvataggio (tramite il pulsante &quot;Save All&quot;). Tuttavia, alcune operazioni come quella di spostamento vengono automaticamente mantenute.
+>La maggior parte delle operazioni di modifica, incluso Create Node, conserva tutte le modifiche in memoria e le memorizza nella directory archivio solo dopo il salvataggio (tramite il pulsante &quot;Save All&quot;). Tuttavia, alcune operazioni come quella di spostamento vengono automaticamente mantenute.
 >
 >La convalida relativa all&#39;eventuale autorizzazione del nodo appena creato da parte del tipo di nodo padre viene eseguita anche dall&#39;archivio JCR prima del salvataggio delle modifiche. Se durante il salvataggio di un nodo viene visualizzato un messaggio di errore, verificare se la struttura del contenuto è valida (ad es., non è possibile creare un `nt:unstructured` nodo come figlio di un `nt:folder` nodo).
 
 ### Creazione di una proprietà {#creating-a-property}
 
-Per creare una proprietà con CRXDE Lite:
+Per creare una proprietà con un CRXDE Lite:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
 1. Nella scheda **Proprietà** del riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**. Fate clic su **Aggiungi**.
 
@@ -255,7 +255,7 @@ Per creare una proprietà con CRXDE Lite:
 
 Per creare un nuovo script:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nel riquadro di navigazione, fare clic con il pulsante destro del mouse sul componente in cui si desidera creare lo script, selezionare **Crea ...**, quindi **Crea file ...**.
 
 1. Immettere il **nome** del file, inclusa l&#39;estensione. Fai clic su **OK**.
@@ -270,7 +270,7 @@ Con CRXDE Lite è possibile importare e/o esportare le definizioni dei tipi di n
 
 Per esportare una definizione di tipo di nodo:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Selezionare il nodo desiderato.
 1. Selezionare **Strumenti** , quindi **Esporta tipo** nodo.
 
@@ -278,7 +278,7 @@ Per esportare una definizione di tipo di nodo:
 
 Per importare una definizione di tipo di nodo:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Selezionare **Strumenti** , quindi **Importa tipo di nodo...**.
 
 1. Immettete la notazione CND per la definizione nella casella di testo.
@@ -287,9 +287,9 @@ Per importare una definizione di tipo di nodo:
 
 ### Registrazione {#logging}
 
-Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova sul file system in `<crx-install-dir>/crx-quickstart/server/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
+Con CRXDE Lite è possibile visualizzare il file `error.log` che si trova nel file system in `<crx-install-dir>/crx-quickstart/server/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
 
-1. Aprite CRXDE Lite nel browser.
+1. Aprite il CRXDE Lite nel browser.
 1. Nella scheda **Console** nella parte inferiore della finestra, selezionate Registri **server dal menu a discesa a destra**.
 
 1. Fate clic sull&#39;icona **Interrompi** per visualizzare i messaggi.
