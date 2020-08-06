@@ -1,8 +1,8 @@
 ---
 title: Installazione e configurazione di Designer
 seo-title: Installazione e configurazione di Designer
-description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Come installare Designer autonomo.  '
-seo-description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Come installare Designer autonomo.  '
+description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Scoprite come installare Designer autonomo.  '
+seo-description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Scoprite come installare Designer autonomo.  '
 uuid: 46f4a640-092c-46db-a0b2-8e25501a00b9
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,6 +12,9 @@ discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 Designer è disponibile come programma di installazione autonomo ed è inoltre fornito con Workbench. Se si utilizza un programma di installazione autonomo per Designer, procedere come segue:
 
-1. Per scaricare il programma di installazione di Designer, contattare il supporto Adobe.
+1. Per scaricare il programma di installazione di Designer, contattare  Adobe di supporto.
 
    >[!NOTE]
    >
