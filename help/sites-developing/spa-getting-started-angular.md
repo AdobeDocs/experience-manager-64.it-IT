@@ -10,22 +10,25 @@ content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 1%
 
 ---
 
 
 # Guida introduttiva alle app SPA in AEM - Angular {#getting-started-with-spas-in-aem-angular}
 
-Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti in AEM per un sito creato utilizzando i framework SPA.
+Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti all&#39;interno AEM per un sito creato utilizzando i framework SPA.
 
-La funzione di authoring SPA offre una soluzione completa per il supporto degli SPA in AEM. Questo articolo presenta un&#39;applicazione SPA semplificata sul framework Angular, spiega come viene assemblato, consentendo di iniziare rapidamente a utilizzare la propria SPA.
+La funzione di authoring SPA offre una soluzione completa per supportare gli SPA in AEM. Questo articolo presenta un&#39;applicazione SPA semplificata sul framework Angular, spiega come viene assemblato, consentendo di iniziare rapidamente a utilizzare la propria SPA.
 
 >[!NOTE]
 >
->Questo articolo si basa sulla cornice angolare. Per il documento corrispondente per il framework React, consultate [Guida introduttiva alle app SPA in AEM - React (Reazione](/help/sites-developing/spa-getting-started-react.md)).
+>Questo articolo si basa sulla cornice angolare. Per il documento corrispondente per il framework React, consulta [Guida introduttiva alle app AEM - React](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
->La funzione Editor applicazione per pagina singola (SPA) richiede AEM 6.4 Service Pack 2 o successivo.
+>La funzione Editor applicazione per pagina singola (SPA) richiede AEM service pack 6.4 2 o successivo.
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
@@ -33,7 +36,7 @@ La funzione di authoring SPA offre una soluzione completa per il supporto degli 
 
 Questo articolo riassume il funzionamento di base di una semplice SPA e il minimo che devi sapere per far funzionare il tuo.
 
-Per ulteriori informazioni sul funzionamento degli SPA in AEM, consulta i seguenti documenti:
+Per maggiori dettagli sul funzionamento degli SPA in AEM, consulta i documenti seguenti:
 
 * [Introduzione e introduzione SPA](/help/sites-developing/spa-walkthrough.md)
 
@@ -45,7 +48,7 @@ Per ulteriori informazioni sul funzionamento degli SPA in AEM, consulta i seguen
 >
 >Per poter creare contenuti all’interno di un’app SPA, questi devono essere memorizzati in AEM ed essere esposti dal modello di contenuto.
 >
->Un&#39;app sviluppata al di fuori di AEM non sarà autorizzabile se non rispetta il contratto per i modelli di contenuto.
+>Una SPA sviluppata al di fuori di AEM non sarà autorizzata se non rispetta il contratto per i modelli di contenuto.
 
 Questo documento illustra la struttura di un&#39;app SPA semplificata e illustra il suo funzionamento, in modo da poter applicare questa comprensione all&#39;app SPA.
 
@@ -110,17 +113,17 @@ In realtà, la creazione dell&#39;app si basa su [Webpack](https://webpack.js.or
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-Una volta creato, il pacchetto può essere caricato in un’istanza AEM.
+Una volta creato, il pacchetto può essere caricato in un&#39;istanza AEM.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
+Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 
-L’inclusione delle dipendenze e la creazione dell’app come descritto in precedenza vi lasceranno con un pacchetto SPA funzionante che potete caricare nell’istanza di AEM.
+L&#39;inclusione delle dipendenze e la creazione dell&#39;app come descritto in precedenza vi lasceranno con un pacchetto SPA funzionante che potete caricare nell&#39;istanza AEM.
 
-La sezione successiva di questo documento illustra la struttura di un&#39;app SPA in AEM, i file importanti che guidano l&#39;applicazione e la modalità di collaborazione.
+La sezione successiva di questo documento illustra la struttura di un&#39;app in AEM, i file importanti che guidano l&#39;applicazione e il modo in cui lavorano insieme.
 
 Un componente immagine semplificato viene utilizzato come esempio, ma tutti i componenti dell’applicazione si basano sullo stesso concetto.
 
@@ -255,7 +258,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-L’idea centrale degli SPA in AEM è la mappatura dei componenti SPA ai componenti AEM e l’aggiornamento del componente quando il contenuto viene modificato (e viceversa). Per un riepilogo di questo modello di comunicazione, consulta Panoramica [sull’editor](/help/sites-developing/spa-overview.md) SPA.
+L&#39;idea centrale di SPA in AEM è la mappatura dei componenti SPA ai componenti AEM e l&#39;aggiornamento del componente quando il contenuto viene modificato (e viceversa). Per un riepilogo di questo modello di comunicazione, consulta Panoramica [sull’editor](/help/sites-developing/spa-overview.md) SPA.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -288,10 +291,10 @@ Infine, l’immagine può essere riprodotta in `image.component.html`.
 
 ## Passaggi successivi {#next-steps}
 
-Per una guida passo-passo alla creazione di un vostro SPA, consultate la [Guida introduttiva all’Editor AEM SPA - Esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)sugli eventi WKND.
+Per una guida passo-passo alla creazione di un vostro SPA, consultate la [Guida introduttiva all’editor SPA AEM - Esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)sugli eventi WKND.
 
-Per ulteriori informazioni su come organizzarsi per sviluppare app SPA per AEM consultate l’articolo [Sviluppo di app SPA per AEM](/help/sites-developing/spa-architecture.md).
+Per ulteriori informazioni su come organizzarsi per sviluppare SPA per AEM vedere l&#39;articolo [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md).
 
-Per ulteriori dettagli sulla mappatura del modello dinamico a componente e sul suo funzionamento all’interno degli SPA in AEM, consultate l’articolo Mappatura [dinamica da modello a componente per gli SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Per ulteriori dettagli sulla mappatura del modello dinamico a componente e sul suo funzionamento all&#39;interno degli SPA in AEM, consultate l&#39;articolo Mappatura [dinamica da modello a componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 Se desideri implementare gli SPA in AEM per un framework diverso da React o Angular o vuoi semplicemente approfondire il funzionamento dell’SDK SPA per AEM, consulta l’articolo [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
