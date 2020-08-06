@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +45,8 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
          Potete avere il Contenitore di layout come standard per la pagina, consentendo all&#39;utente di aggiungere altri contenitori di layout all&#39;interno di questo; ad esempio, per ottenere il controllo delle colonne.
 
-* **[Modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Layout Una volta che il Contenitore di layout è posizionato sulla pagina, è possibile utilizzare la modalità&#x200B;**Layout**per posizionare il contenuto all&#39;interno della griglia reattiva.
+* **[Modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Layout Una volta che il Contenitore di layout è collocato sulla pagina, è possibile utilizzare la
+**Modalità Layout** per posizionare il contenuto all&#39;interno della griglia reattiva.
 
 * [**Emulatore **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Consente di creare e modificare siti Web reattivi il cui layout si riorganizza in base alle dimensioni del dispositivo/finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
 
@@ -114,13 +118,14 @@ Se state eseguendo la migrazione di un progetto esistente (con contenuto esisten
 >* aggiungere punti di interruzione ai modelli
 >* aggiungere gli stessi punti di interruzione alle pagine esistenti\
    >  Poiché l’ereditarietà è attiva, potete limitare questa opzione alla pagina principale del contenuto.
+
 >
 
 
 
-#### Configurazione dei punti di interruzione con CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Configurazione dei punti di interruzione tramite CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Utilizzando CRXDE Lite (o equivalente), passate a:
+1. Utilizzando CRXDE Lite (o equivalente), andate a:
 
    * Definizione del modello.
    * Il `jcr:content` nodo della pagina.
@@ -200,7 +205,7 @@ I due esempi seguenti illustrano la definizione:
 
 #### CSS per punti di interruzione con LESS {#css-for-breakpoints-using-less}
 
-AEM utilizza il valore LESS per generare parti del CSS necessario, che devono essere incluse nei progetti.
+AEM utilizza LESS per generare parti del CSS necessario, che devono essere incluse nei progetti.
 
 Sarà inoltre necessario creare una libreria [](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) client per fornire ulteriori chiamate di configurazione e di funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
@@ -238,7 +243,7 @@ La definizione della griglia di base si trova in:
 
 I componenti contenuti in un contenitore reattivo verranno ridimensionati (insieme ai rispettivi elementi DOM HTML) in base alle dimensioni della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni di elementi DOM a larghezza fissa (contenuti).
 
-Esempio:
+Ad esempio:
 
 * Prima:
 
@@ -260,7 +265,7 @@ Qualsiasi ridimensionamento di un componente all&#39;interno della griglia attiv
 
 Per ridimensionare e aggiornare correttamente il contenuto di un’immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere un `afterEdit` set di `REFRESH_PAGE` listener nel file di ogni `EditConfig` componente contenuto.
 
-Esempio:
+Ad esempio:
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
