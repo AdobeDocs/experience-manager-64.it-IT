@@ -64,7 +64,7 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 
 I campi sono attivati sul componente pagina (*non* sul modello):
 
-1. Utilizzando CRXDE Lite (o un metodo equivalente), aprite il componente di pagina.
+1. Utilizzando un CRXDE Lite (o un metodo equivalente) potete aprire il componente della pagina.
 
    Esempio: `/apps/core/wcm/components/page/v1/page`
 
