@@ -10,11 +10,14 @@ topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 translation-type: tm+mt
 source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
-# Compilazione dinamica di elenchi a discesa {#dynamically-populating-drop-down-lists}
+# Compilazione dinamica di elenchi a discesa  {#dynamically-populating-drop-down-lists}
 
 ## Prerequisiti {#prerequisites}
 
