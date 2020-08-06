@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -74,6 +77,7 @@ Per inserire un nuovo componente:
    * Fai doppio clic sull’area con l’etichetta **Trascina qui i componenti o le risorse**: viene visualizzata la barra degli strumenti **Inserisci nuovo componente**. Seleziona un componente e fai clic su **OK**.
    * Trascinate un componente dalla barra degli strumenti mobile (o barra laterale) per inserire un nuovo paragrafo.
    * Fai clic con il pulsante destro del mouse su un paragrafo esistente e seleziona **Nuovo**: si apre la barra degli strumenti Inserisci nuovo componente. Seleziona un componente e fai clic su **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Sia nella barra laterale che nella barra degli strumenti **Inserisci nuovo componente** viene visualizzato un elenco dei tipi di componenti (o paragrafi) disponibili. Questi ultimi sono suddivisi in varie categorie (ad esempio Generale, Colonne e così via), che possono essere espanse.
@@ -132,7 +136,7 @@ Per spostare un paragrafo:
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Trascina il paragrafo nella nuova posizione. In AEM le posizioni in cui è possibile spostare il paragrafo sono indicate da una spunta verde. Rilascia il paragrafo nella posizione desiderata.
-1. Il paragrafo viene spostato.
+1. Il paragrafo è stato spostato:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -182,9 +186,11 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
    Un’icona a forma di lucchetto identifica i componenti che fanno parte di una Live Copy o di un lancio. È possibile fare clic sul lucchetto per annullare l’ereditarietà.
 
    * L’icona a forma di lucchetto viene visualizzata quando il componente è selezionato, ad esempio:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * L’icona a forma di lucchetto viene visualizzata anche nella finestra di dialogo dei componenti, ad esempio:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **Un sistema paragrafo ereditato**
@@ -197,7 +203,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Le [annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consentono agli autori di fornire feedback sui contenuti. Spesso vengono utilizzate a scopo di revisione e convalida.
 
-## Anteprima delle pagine {#previewing-pages}
+## Anteprima delle pagine   {#previewing-pages}
 
 Lungo il lato inferiore della barra laterale sono disponibili due icone importanti per visualizzare le pagine in anteprima:
 
@@ -247,7 +253,7 @@ Per sbloccare una pagina:
 1. Fai doppio clic sulla pagina per aprirla.
 1. Nella scheda **Pagina** della barra laterale seleziona **Sblocca pagina**.
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Annullamento e ripristino di operazioni di modifica delle pagine {#undoing-and-redoing-page-edits}
 
 Con il frame del contenuto della pagina attivo, usa le seguenti scelte rapide da tastiera:
 
@@ -274,11 +280,12 @@ Il comportamento dei comandi di annullamento e ripristino è simile a quello del
 
 >[!NOTE]
 >
->Tieni presente quanto segue:
+>Operazioni disponibili:
 >
 >* Le azioni annullate possono essere ripristinate solo se dopo l’annullamento non sono state apportate altre modifiche alla pagina.
 >* Per impostazione predefinita, è possibile annullare fino a 20 azioni di modifica.
 >* Puoi eseguire le operazioni Annulla e Ripristina anche con le relative [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
