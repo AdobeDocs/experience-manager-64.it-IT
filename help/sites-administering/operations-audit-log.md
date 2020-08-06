@@ -1,6 +1,6 @@
 ---
-title: Manutenzione del registro di controllo in AEM 6
-seo-title: Manutenzione del registro di controllo in AEM 6
+title: Gestione log di controllo in AEM 6
+seo-title: Gestione log di controllo in AEM 6
 description: Informazioni sulla manutenzione del registro di controllo in AEM.
 seo-description: Informazioni sulla manutenzione del registro di controllo in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 0%
 
 ---
 
 
-# Manutenzione del registro di controllo in AEM 6{#audit-log-maintenance-in-aem}
+# Gestione log di controllo in AEM 6{#audit-log-maintenance-in-aem}
 
-Gli eventi AEM idonei per la registrazione del controllo generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
+AEM eventi idonei per la registrazione del controllo generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 
 La manutenzione del registro di controllo include diverse parti di funzionalità che consentono di automatizzare la manutenzione del registro di controllo in base a criteri specifici.
 
@@ -31,7 +34,7 @@ Sono disponibili tre tipi di opzioni di rimozione log di controllo:
 1. [Pulizia log di controllo DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Rimozione del registro di controllo della replica](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-Ciascuna di esse può essere configurata mediante la creazione di regole nella console Web di AEM. Una volta configurate, è possibile attivarle dalla finestra **Strumenti - Operazioni - Manutenzione - Manutenzione settimanale e dall&#39;esecuzione dell&#39;attività** di manutenzione **** AuditLog.
+Ciascuna di esse può essere configurata mediante la creazione di regole nella AEM console Web. Una volta configurate, è possibile attivarle dalla finestra **Strumenti - Operazioni - Manutenzione - Manutenzione settimanale e dall&#39;esecuzione dell&#39;attività** di manutenzione **** AuditLog.
 
 ## Configurare lo scorrimento del registro di controllo delle pagine {#configure-page-audit-log-purging}
 
@@ -45,16 +48,17 @@ Per configurare lo scorrimento del registro di controllo, effettuate le seguenti
 
 1. Quindi, configura il programma di eliminazione in base alle tue esigenze. Le opzioni disponibili sono:
 
-   * **** Nome regola: il nome della regola della politica di audit;
-   * **** Percorso contenuto: il percorso del contenuto a cui si applicherà la regola;
-   * **** Età minima: l&#39;ora in giorni in cui i registri di controllo devono essere conservati;
-   * **** Tipo registro di controllo: il tipo di registro di controllo da eliminare.
+   * **Nome regola:** il nome della regola della politica di audit;
+   * **Percorso contenuto:** il percorso del contenuto a cui si applicherà la regola;
+   * **Età minima:** l&#39;ora in giorni in cui i registri di controllo devono essere conservati;
+   * **Tipo registro di controllo:** il tipo di registro di controllo da eliminare.
+
    >[!NOTE]
    >
    >Il percorso del contenuto si applica solo agli elementi secondari del `/var/audit/com.day.cq.wcm.core.page` nodo nella directory archivio.
 
-1. Salva la regola.
-1. La regola appena creata deve essere esposta nel Pannello operazioni per poterla eseguire. A questo scopo, andate **Strumenti - Operazioni - Manutenzione** dalla schermata introduttiva di AEM.
+1. Salvate la regola.
+1. La regola appena creata deve essere esposta nel Pannello operazioni per poterla eseguire. A tale scopo, nella schermata di benvenuto AEM, selezionate **Strumenti - Operazioni - Manutenzione** .
 
 1. Premere la scheda Finestra **manutenzione** settimanale.
 
@@ -64,9 +68,9 @@ Per configurare lo scorrimento del registro di controllo, effettuate le seguenti
 
 1. È possibile controllare la data dell&#39;esecuzione successiva, configurarla o eseguirla manualmente premendo il pulsante di riproduzione.
 
-In AEM 6.3, se la finestra di manutenzione pianificata viene chiusa prima del completamento dell’attività di rimozione del registro di controllo, l’attività viene arrestata automaticamente. Viene ripresa all’apertura della finestra di manutenzione successiva.
+In AEM 6.3, se la finestra di manutenzione pianificata viene chiusa prima del completamento dell&#39;attività di rimozione del registro di controllo, l&#39;attività si interrompe automaticamente. Viene ripresa all’apertura della finestra di manutenzione successiva.
 
-**Con AEM 6.4**, puoi arrestare manualmente un&#39;attività di rimozione log di controllo in esecuzione facendo clic sull&#39;icona **Interrompi** . Nella successiva esecuzione l&#39;attività riprenderà in modo sicuro.
+**Con AEM 6.4**, è possibile arrestare manualmente un&#39;attività di rimozione log di controllo in esecuzione facendo clic sull&#39;icona **Interrompi** . Nella successiva esecuzione l&#39;attività riprenderà in modo sicuro.
 
 >[!NOTE]
 >
@@ -78,23 +82,23 @@ In AEM 6.3, se la finestra di manutenzione pianificata viene chiusa prima del co
 1. Cercare la regola **DAM Audit Log Purge** e fare clic sul risultato.
 1. Nella finestra successiva, configurate la regola di conseguenza. Le opzioni sono:
 
-   * **** Nome regola: il nome della regola della politica di audit;
-   * **** Percorso contenuto: percorso del contenuto a cui si applicherà la regola
-   * **** Età minima: l&#39;ora in giorni i registri di controllo devono essere conservati
-   * **** Tipi di evento Dam log di controllo: i tipi di eventi di controllo DAM da eliminare.
+   * **Nome regola:** il nome della regola della politica di audit;
+   * **Percorso contenuto:** percorso del contenuto a cui si applicherà la regola
+   * **Età minima:** l&#39;ora in giorni i registri di controllo devono essere conservati
+   * **Tipi di evento Dam log di controllo:** i tipi di eventi di controllo DAM da eliminare.
 
 1. Fate clic su **Salva** per salvare la configurazione
 
-## Configurare lo scorrimento del registro di controllo della replica {#configure-replication-audit-log-purging}
+## Configurare lo scorrimento del registro di controllo della replica  {#configure-replication-audit-log-purging}
 
 1. Andate alla console di sistema all&#39;indirizzo *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Cercare **Replication Audit Log Purge Scheduler** e fare clic sul risultato
 1. Nella finestra successiva, configurate la regola di conseguenza. Le opzioni sono:
 
-   * **** Nome regola: nome della regola del criterio di controllo
-   * **** Percorso contenuto: percorso del contenuto a cui si applicherà la regola
-   * **** Età minima: l&#39;ora in giorni i registri di controllo devono essere conservati
-   * **** Tipi di eventi di replica del registro di controllo: i tipi di eventi di controllo della replica che devono essere eliminati
+   * **Nome regola:** nome della regola del criterio di controllo
+   * **Percorso contenuto:** percorso del contenuto a cui si applicherà la regola
+   * **Età minima:** l&#39;ora in giorni i registri di controllo devono essere conservati
+   * **Tipi di eventi di replica del registro di controllo:** i tipi di eventi di controllo della replica che devono essere eliminati
 
 1. Fate clic su **Salva** per salvare la configurazione.
 
