@@ -1,6 +1,6 @@
 ---
-title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+title: Commerce Cloud SAP
+seo-title: Commerce Cloud SAP
 description: Scopri come distribuire eCommerce con SAP Commerce Cloud.
 seo-description: Scopri come distribuire eCommerce con SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
@@ -12,17 +12,20 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 0%
 
 ---
 
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# Commerce Cloud SAP{#sap-commerce-cloud}
 
 >[!NOTE]
 >
 >Questa pagina contiene collegamenti al sito Web hybris. Per alcune pagine sarà necessario un account per accedere.
 
-## Distribuzione di eCommerce con SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## Distribuzione di eCommerce con SAP - Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Questo è disponibile nella sezione inglese (US) del sito Geometrixx Outdoors `/
 * [Informazioni](#productinformationwithcolorvariants) sul prodotto (con eventuali varianti di colore)
 
 * [Sovrapposizioni di contenuti del carrello](#shoppingcartcontentoverview)
-* [Iscrizione](#customersignup) cliente e accesso [cliente](#customersignin)
+* [Iscrizione](#customersignup) del cliente e accesso [del cliente](#customersignin)
 
 * [Accesso alla console di gestione ibrida](#accesstothehybrismanagementconsole)
 
@@ -49,7 +52,8 @@ L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata p
 >
 >* Supporta fino a hybris 6.4 con OCC versione 2.
 >* Sarà necessario Java 7 per eseguire il server [hybris 5.](https://www.hybris.com/en/architecture-technology)
->* Il componente aggiuntivo hybris, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), non è supportato dall’estensione AEM.
+>* Il componente aggiuntivo hybris, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), non è supportato dall&#39;estensione AEM.
+
 >
 
 
@@ -59,15 +63,15 @@ L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata p
 Per installare la funzionalità eCommerce è necessario disporre di:
 
 * Il server hybris
-* Framework AEM eCommerce:
+* AEM eCommerce framework:
 
-   * fa parte di un’installazione standard di AEM
+   * fa parte di un&#39;installazione standard AEM
 
-* Pacchetto AEM Geometrixx-all:
+* AEM pacchetto di Geometrixx:
 
    * `cq-geometrixx-all-pkg`
 
-* Pacchetti di contenuti ibridi AEM:
+* AEM pacchetti di contenuti ibridi:
 
    * `cq-hybris-content-6.3.2`
    * implementazione API specifica per hybris
@@ -76,10 +80,10 @@ Per installare la funzionalità eCommerce è necessario disporre di:
 
 ### Installazione di eCommerce con hybris {#installation-of-ecommerce-with-hybris}
 
-Per installare una configurazione completa (utilizzando il catalogo dimostrativo Geometrixx Outdoors), i passaggi di base sono:
+Per installare una configurazione completa (utilizzando il catalogo dimostrativo, Geometrixx Outdoors), i passaggi di base sono:
 
 1. [Installare AEM](/help/sites-deploying/deploy.md).
-1. Installare il pacchetto Geometrixx-all
+1. Installare il pacchetto di Geometrixx
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
@@ -91,9 +95,9 @@ Per installare una configurazione completa (utilizzando il catalogo dimostrativo
 1. [Scaricate e create il server](#download-and-build-your-hybris-server)hybris.
 1. Crea il catalogo nel tuo motore eCommerce:
 
-   1. [Impostare Geometrixx Outdoor Store](#setup-the-geometrixx-outdoors-store).
+   1. [Installare il Geometrixx per esterni](#setup-the-geometrixx-outdoors-store).
 
-1. [Create](/help/sites-authoring/qg-page-authoring.md) tutte le pagine supplementari necessarie in AEM.
+1. [Crea](/help/sites-authoring/qg-page-authoring.md) tutte le pagine supplementari necessarie in AEM.
 
 >[!CAUTION]
 >
@@ -121,7 +125,7 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
    >
    >Sarà necessario un account (da hybris) per accedere a questo.
 
-1. Decomprimete il file di distribuzione nel percorso richiesto (denominato &lt;directory-radice>).
+1. Decomprimete il file di distribuzione nel percorso richiesto (denominato &lt;directory-radice-hybris>).
 1. Dalla riga di comando, eseguire le operazioni seguenti:
 
    ```shell
@@ -171,11 +175,11 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
 
    >[!NOTE]
    >
-   >A seconda del sistema, il completamento di diversi passaggi potrebbe richiedere alcuni minuti.
+   >A seconda del sistema in uso, il completamento di diversi passaggi potrebbe richiedere alcuni minuti.
 
 1. Nel browser, accedete alla console **di amministrazione** ibrida all’indirizzo:
 
-   [Http://localhost:9002](http://localhost:9002)
+   [Http://localhost:9002](Http://localhost:9002)
 
 1. Fare clic su **Inizializza** , quindi confermare l&#39;azione di inizializzazione (in quanto eliminerà i dati esistenti).
 
@@ -185,9 +189,9 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
    >
    >A seconda del sistema, il completamento dell&#39;operazione potrebbe richiedere alcuni minuti.
 
-### Impostazione di Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
+### Configurazione dello store Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 
-Questa procedura consente di caricare e configurare lo store dimostrativo Geometrixx Online.
+Questa procedura consente di caricare e configurare il negozio dimostrativo - Geometrixx online.
 
 1. Avviate l’istanza hybris. Dalla riga di comando, eseguire le operazioni seguenti:
 
@@ -205,7 +209,7 @@ Questa procedura consente di caricare e configurare lo store dimostrativo Geomet
 
    [Ottieni file](assets/geometrixx-outdoors-export.csv)
 
-1. Impostare l&#39;impostazione **delle impostazioni** internazionali su:
+1. Impostate l&#39;impostazione **delle impostazioni** internazionali su:
 
    `en_US - English (United States)`
 
@@ -228,7 +232,7 @@ Questa procedura consente di caricare e configurare lo store dimostrativo Geomet
 
    [Ottieni file](assets/base-store-5_7.csv)
 
-1. Impostare l&#39;impostazione **delle impostazioni** internazionali su:
+1. Impostate l&#39;impostazione **delle impostazioni** internazionali su:
 
    `en_US - English (United States)`
 
