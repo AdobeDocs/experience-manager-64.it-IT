@@ -1,6 +1,6 @@
 ---
 title: Tecniche consigliate per l'offload di risorse
-description: Casi d’uso e procedure ottimali consigliati per scaricare i flussi di lavoro di assimilazione e replica delle risorse in AEM Assets.
+description: Casi d’uso e procedure ottimali consigliati per scaricare i flussi di lavoro di assimilazione e replica delle risorse in  AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->A partire da AEM 6.4 questa funzione è obsoleta e viene rimossa in AEM 6.5. Pianificare di conseguenza.
+>Questa funzione è obsoleta a partire AEM 6.4 e viene rimossa in AEM 6.5. Pianificare di conseguenza.
 
-La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Risorse  Adobe Experience Manager (AEM) possono richiedere notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’assimilazione delle risorse possono influire sulle prestazioni complessive del sistema. Le operazioni che richiedono più risorse includono flussi di lavoro di assimilazione e replica delle risorse AEM. L’uso intensivo di questi flussi di lavoro su un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
+La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Adobe Experience Manager (AEM) Assets può richiedere notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’assimilazione delle risorse possono influire sulle prestazioni complessive del sistema. Le operazioni che richiedono più risorse comprendono AEM flussi di lavoro di assimilazione e replica delle risorse. L’uso intensivo di questi flussi di lavoro su un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
 
 L&#39;offload di queste attività alle istanze di lavoro dedicate può ridurre le spese di CPU, memoria e IO. In generale, l&#39;idea dietro lo scaricamento è quella di distribuire le attività che richiedono risorse CPU/Memoria/IO intensive a istanze di lavoro dedicate. Le sezioni seguenti includono i casi di utilizzo consigliati per lo scaricamento delle risorse.
 
-## Offload AEM Assets {#aem-assets-offloading}
+##  AEM Assets Offload {#aem-assets-offloading}
 
-I AEM Assets implementano un’estensione di flusso di lavoro specifica per la risorsa nativa per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di scaricamento, ma include nell’implementazione funzioni aggiuntive specifiche per le risorse. Lo scopo dello scaricamento delle risorse è di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse consente di ottenere un maggiore controllo sui flussi di lavoro di assimilazione.
+ AEM Assets implementa un’estensione di flusso di lavoro specifica per la risorsa nativa per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di scaricamento, ma include nell’implementazione funzioni aggiuntive specifiche per le risorse. Lo scopo dello scaricamento delle risorse è di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse consente di ottenere un maggiore controllo sui flussi di lavoro di assimilazione.
 
-## AEM Assets componenti di offload {#aem-assets-offloading-components}
+##  AEM Assets Offload Components {#aem-assets-offloading-components}
 
 Il diagramma seguente illustra i componenti principali del processo di scarico delle risorse:
 
@@ -39,7 +39,7 @@ Il flusso di lavoro di offload di risorse di aggiornamento DAM viene eseguito su
 
 Il manager del processo distribuisce nuovi processi alle istanze del lavoratore. Nella progettazione del meccanismo di distribuzione, è importante tenere conto dell&#39;abilitazione degli argomenti. I processi possono essere assegnati solo alle istanze in cui è attivato l’argomento del processo. Disattivate l&#39;argomento `com/adobe/granite/workflow/offloading` principale e attivatelo sul lavoratore per assicurarvi che il processo sia assegnato al lavoratore.
 
-### Scaricamento di AEM {#aem-offloading}
+### scarico AEM {#aem-offloading}
 
 Il framework di offload identifica i processi di scarico del flusso di lavoro assegnati alle istanze del lavoratore e utilizza la replica per trasportarli fisicamente, incluso il relativo payload (ad esempio, immagini da assimilare), ai lavoratori.
 
@@ -49,7 +49,7 @@ Una volta scritto un processo sul lavoratore, il manager del lavoro chiama il co
 
 ## Topologia Sling {#sling-topology}
 
-La topologia Sling raggruppa le istanze di AEM e consente loro di essere reciprocamente consapevoli, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling consente di creare topologie per scenari non raggruppati, raggruppati e misti. Un&#39;istanza può esporre le proprietà all&#39;intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche nella topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
+I gruppi di topologia Sling AEM le istanze e consentono loro di essere consapevoli l&#39;uno dell&#39;altro, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling consente di creare topologie per scenari non raggruppati, raggruppati e misti. Un&#39;istanza può esporre le proprietà all&#39;intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche nella topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
 
 ### Sling dei processi distribuiti {#sling-distributed-jobs}
 
@@ -73,14 +73,14 @@ Il framework di scaricamento include anche un&#39;interfaccia utente per visuali
 
 Ogni implementazione è univoca e, di conseguenza, non esiste una configurazione di scarico unica per tutti. Le sezioni seguenti forniscono indicazioni e procedure ottimali per il caricamento delle risorse.
 
-Lo scarico delle risorse impone anche costi generali sul sistema, comprese le spese generali di funzionamento. In caso di problemi con il caricamento delle risorse, Adobe consiglia di migliorare prima la configurazione senza effettuare il caricamento. Prima di passare allo scarico delle risorse, considerate le seguenti opzioni:
+Lo scarico delle risorse impone anche costi generali sul sistema, comprese le spese generali di funzionamento. In caso di problemi con il caricamento della risorsa,  Adobe consiglia di migliorare la configurazione senza effettuare il caricamento. Prima di passare allo scarico delle risorse, considerate le seguenti opzioni:
 
 * Adatta hardware
 * Ottimizzare i flussi di lavoro
 * Utilizzare flussi di lavoro transitori
 * Limitare il numero di core utilizzati per i flussi di lavoro
 
-Se ritenete che lo scaricamento delle risorse sia un approccio appropriato, Adobe fornisce le seguenti indicazioni:
+Se si conclude che lo scaricamento delle risorse è un approccio appropriato,  Adobe fornisce le seguenti indicazioni:
 
 * Si consiglia una distribuzione basata su TarMK
 * Lo scarico delle risorse basate su TarMK non è progettato per il ridimensionamento orizzontale esteso
@@ -88,15 +88,15 @@ Se ritenete che lo scaricamento delle risorse sia un approccio appropriato, Adob
 
 ### Risorse consigliate per scaricare la distribuzione {#recommended-assets-offloading-deployment}
 
-Con AEM e Oak, sono possibili diversi scenari di implementazione. Per lo scaricamento delle risorse, è consigliabile una distribuzione basata su TarMK con un datastore condiviso. Il diagramma seguente delinea la distribuzione consigliata:
+Con AEM e Oak, ci sono diversi scenari di implementazione possibili. Per lo scaricamento delle risorse, è consigliabile una distribuzione basata su TarMK con un datastore condiviso. Il diagramma seguente delinea la distribuzione consigliata:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-Per informazioni dettagliate sulla configurazione di un datastore, consultate [Configurazione degli archivi di nodi e degli archivi di dati in AEM](../sites-deploying/data-store-config.md).
+Per informazioni dettagliate sulla configurazione di un archivio dati, vedere [Configurazione di archivi di nodi e di archivi di dati in AEM](../sites-deploying/data-store-config.md).
 
 ### Disattivazione della gestione automatica degli agenti {#turning-off-automatic-agent-management}
 
-Adobe consiglia di disattivare la gestione automatica dell&#39;agente perché non supporta la replica priva di binario e può creare confusione durante la configurazione di una nuova topologia di scaricamento. Inoltre, non supporta automaticamente il flusso di replica in avanti richiesto dalla replica senza binario.
+ Adobe consiglia di disattivare la gestione automatica dell&#39;agente perché non supporta la replica senza binario e può creare confusione durante la configurazione di una nuova topologia di scaricamento. Inoltre, non supporta automaticamente il flusso di replica in avanti richiesto dalla replica senza binario.
 
 1. Aprite Configuration Manager dall&#39;URL `http://localhost:4502/system/console/configMgr`.
 1. Aprite la configurazione per `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
@@ -117,7 +117,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### Utilizzo dell&#39;archivio dati condiviso e della replica binaria-less tra autori e lavoratori  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-Si consiglia di utilizzare la replica binaria-less per ridurre il sovraccarico di trasporto per lo scarico delle risorse. Per informazioni su come configurare la replica senza binario per un archivio dati condiviso, consulta [Configurazione di store di nodi e di archivi dati in AEM](/help/sites-deploying/data-store-config.md). La procedura non è diversa per lo scaricamento delle risorse, ma riguarda altri agenti di replica. Poiché la replica senza binario funziona solo con gli agenti di replica in avanti, è consigliabile utilizzare anche la replica in avanti per tutti gli agenti di offload.
+Si consiglia di utilizzare la replica binaria-less per ridurre il sovraccarico di trasporto per lo scarico delle risorse. Per informazioni su come impostare la replica senza binario per un archivio dati condiviso, vedere [Configurazione di store di nodi e di archivi dati in AEM](/help/sites-deploying/data-store-config.md). La procedura non è diversa per lo scaricamento delle risorse, ma riguarda altri agenti di replica. Poiché la replica senza binario funziona solo con gli agenti di replica in avanti, è consigliabile utilizzare anche la replica in avanti per tutti gli agenti di offload.
 
 ### Disattivazione dei pacchetti di trasporto {#turning-off-transport-packages}
 
@@ -143,7 +143,7 @@ Per disattivare il trasporto del modello di workflow, modificate il flusso di la
 
 ### Ottimizzazione dell’intervallo di polling {#optimizing-the-polling-interval}
 
-Lo scaricamento del flusso di lavoro è implementato utilizzando un flusso di lavoro esterno sul flusso di lavoro principale, che esegue il polling per il completamento del flusso di lavoro scaricato sul lavoratore. L’intervallo di polling predefinito per i processi del flusso di lavoro esterno è di cinque secondi. Adobe consiglia di aumentare l’intervallo di polling del passaggio di scaricamento delle risorse ad almeno 15 secondi per ridurre il sovraccarico di scaricamento sul principale.
+Lo scaricamento del flusso di lavoro è implementato utilizzando un flusso di lavoro esterno sul flusso di lavoro principale, che esegue il polling per il completamento del flusso di lavoro scaricato sul lavoratore. L’intervallo di polling predefinito per i processi del flusso di lavoro esterno è di cinque secondi.  Adobe consiglia di aumentare l’intervallo di polling del passaggio di scarico Risorse ad almeno 15 secondi per ridurre il sovraccarico di scarico sul primario.
 
 1. Aprite la console del flusso di lavoro da [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
