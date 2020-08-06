@@ -1,8 +1,8 @@
 ---
 title: Gestione dei progetti di traduzione
 seo-title: Gestione dei progetti di traduzione
-description: Scoprite come gestire i progetti di traduzione in AEM.
-seo-description: Scoprite come gestire i progetti di traduzione in AEM.
+description: Scopri come gestire i progetti di traduzione in AEM.
+seo-description: Scopri come gestire i progetti di traduzione in AEM.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 2%
 
 ---
 
@@ -43,13 +46,13 @@ I progetti e i processi di traduzione vengono creati con flussi di lavoro di pre
 
 AEM rileva se viene creato un progetto di traduzione per la traduzione iniziale del contenuto o per aggiornare le copie già tradotte. Quando create un progetto di traduzione per una pagina e indicate le copie della lingua per cui state traducendo, AEM rileva se la pagina di origine esiste già nelle copie della lingua di destinazione:
 
-* **** La copia della lingua non include la pagina: AEM considera questa situazione come traduzione iniziale. La pagina viene immediatamente copiata nella copia della lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la copia direttamente nella copia della lingua.
-* **** La copia della lingua include già la pagina: AEM considera questa situazione come una traduzione aggiornata. Viene creato un lancio e al lancio viene aggiunta una copia della pagina, che viene inclusa nel progetto. Gli avvii consentono di rivedere le traduzioni aggiornate prima di eseguire il commit nella copia della lingua:
+* **La copia della lingua non include la pagina:** AEM questa situazione come la traduzione iniziale. La pagina viene immediatamente copiata nella copia della lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la copia direttamente nella copia della lingua.
+* **La copia della lingua include già la pagina:** AEM questa situazione come una traduzione aggiornata. Viene creato un lancio e al lancio viene aggiunta una copia della pagina, che viene inclusa nel progetto. Gli avvii consentono di rivedere le traduzioni aggiornate prima di eseguire il commit nella copia della lingua:
 
-   * Quando la pagina tradotta viene importata in AEM, sovrascrive quella del lancio.
+   * Quando la pagina tradotta viene importata in AEM, sovrascrive la pagina nel lancio.
    * La pagina tradotta sovrascrive la copia della lingua solo quando il lancio viene promosso.
 
-Ad esempio, per la traduzione in francese della lingua master /content/geometrixx/en viene creato il file principale /content/geometrixx/en. Non ci sono altre pagine nella copia in lingua francese.
+Ad esempio, per la traduzione in francese della lingua master /content/geometrixx/en viene creata la radice del linguaggio /content/geometrixx/en. Non ci sono altre pagine nella copia in lingua francese.
 
 * Viene creato un progetto di traduzione per la pagina /content/geometrixx/en/products e per tutte le pagine figlie, per la copia in lingua francese. Poiché la copia della lingua non include la pagina /content/geometrixx/fr/products, AEM copia immediatamente la pagina /content/geometrixx/en/products e tutte le pagine figlie nella copia in lingua francese. Le copie sono incluse anche nel progetto di traduzione.
 * Viene creato un progetto di traduzione per la pagina /content/geometrixx/en e per tutte le pagine figlie, per la copia in lingua francese. Poiché la copia della lingua include la pagina che corrisponde alla pagina /content/geometrixx/en (la lingua principale), AEM copia la pagina /content/geometrixx/en e tutte le pagine figlie e le aggiunge a un lancio. Le copie sono incluse anche nel progetto di traduzione.
@@ -62,13 +65,13 @@ Create progetti di traduzione in modo da poter eseguire e gestire il flusso di l
 * Viene creato un progetto per ogni copia della lingua selezionata.
 * Una copia della pagina selezionata e delle risorse associate viene creata e aggiunta a ciascun progetto. Queste copie vengono successivamente inviate al provider di traduzione per la traduzione.
 
-È possibile specificare che sono selezionate anche le pagine figlie della pagina selezionata. In questo caso, a ciascun progetto vengono aggiunte anche copie delle pagine figlie, in modo che vengano tradotte. Quando pagine figlie vengono associate a diverse configurazioni del framework di integrazione della traduzione, AEM crea altri progetti.
+È possibile specificare che sono selezionate anche le pagine figlie della pagina selezionata. In questo caso, a ciascun progetto vengono aggiunte anche copie delle pagine figlie, in modo che vengano tradotte. Quando delle pagine figlie sono associate a diverse configurazioni del framework di integrazione della traduzione, AEM crea altri progetti.
 
 Potete anche creare [manualmente progetti](#creating-a-translation-project-using-the-projects-console)di traduzione.
 
 **Traduzioni iniziali e aggiornamento traduzioni**
 
-Il pannello Riferimenti indica se state aggiornando le copie della lingua esistenti o se state creando la prima versione delle copie della lingua. Quando esiste una copia della lingua per la pagina selezionata, viene visualizzata la scheda Aggiorna copie lingua per consentire l&#39;accesso ai comandi relativi al progetto.
+Il pannello Riferimenti indica se si stanno aggiornando le copie della lingua esistenti o se si sta creando la prima versione delle copie della lingua. Quando esiste una copia della lingua per la pagina selezionata, viene visualizzata la scheda Aggiorna copie lingua per consentire l&#39;accesso ai comandi relativi al progetto.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -80,7 +83,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo ai progetti di traduzione.
 
-   Ad esempio, per tradurre le pagine inglesi di Geometrixx Demo Site, selezionare Geometrixx Demo Site > English.
+   Ad esempio, per tradurre le pagine inglesi di Demo Site, selezionare Geometrixx Demo Site > English.
 
 1. Sulla barra degli strumenti, fare clic o toccare Riferimenti.
 
@@ -93,6 +96,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
    * Per tradurre la pagina selezionata e tutte le pagine figlie, selezionare Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deselezionare l’opzione.
    * Per Progetto, selezionate Crea nuovo progetto di traduzione.
    * Digitate un nome per il progetto.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
 1. Tocca o fai clic su Crea.
@@ -101,7 +105,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo ai progetti di traduzione.
 
-   Ad esempio, per tradurre le pagine inglesi di Geometrixx Demo Site, selezionare Geometrixx Demo Site > English.
+   Ad esempio, per tradurre le pagine inglesi di Demo Site, selezionare Geometrixx Demo Site > English.
 
 1. Sulla barra degli strumenti, fare clic o toccare Riferimenti.
 
@@ -113,6 +117,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
    * Per tradurre la pagina selezionata e tutte le pagine figlie, selezionare Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deselezionare l’opzione.
    * Per Progetto, selezionate Crea nuovo progetto di traduzione.
    * Digitate un nome per il progetto.
+
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
 1. Tocca o fai clic su Avvia.
@@ -127,7 +132,7 @@ Come per la creazione di un nuovo progetto, quando si aggiungono pagine, le copi
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo al progetto di traduzione.
 
-   Ad esempio, per tradurre le pagine inglesi di Geometrixx Demo Site, selezionare Geometrixx Demo Site > English.
+   Ad esempio, per tradurre le pagine inglesi di Demo Site, selezionare Geometrixx Demo Site > English.
 
 1. Sulla barra degli strumenti, fare clic o toccare Riferimenti.
 
@@ -142,6 +147,7 @@ Come per la creazione di un nuovo progetto, quando si aggiungono pagine, le copi
    * Per tradurre la pagina selezionata e tutte le pagine figlie, selezionare Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deselezionare l’opzione.
    * Per Progetto, selezionare Aggiungi a progetto di traduzione esistente.
    * Selezionate il progetto.
+
    >[!NOTE]
    >
    >La lingua di destinazione impostata nel progetto di traduzione deve corrispondere al percorso della copia della lingua, come mostrato nel pannello Riferimenti.
@@ -251,7 +257,7 @@ La tabella seguente descrive ogni stato che un processo o un elemento del proces
 | Pronto per la revisione | L’elemento nel processo viene convertito e il file è stato importato in AEM. |
 | Completa | Il proprietario del progetto ha indicato che il contratto di traduzione è completo. |
 | Annulla | Indica che il fornitore della traduzione deve smettere di lavorare su un processo di traduzione. |
-| Aggiornamento errore | Si è verificato un errore durante il trasferimento di file tra AEM e il servizio di traduzione. |
+| Aggiornamento errore | Si è verificato un errore durante il trasferimento dei file tra AEM e il servizio di traduzione. |
 | Stato sconosciuto | Errore sconosciuto. |
 
 Per visualizzare lo stato di ciascun file nel processo, toccate o fate clic sui puntini di sospensione nella parte inferiore della sezione.
@@ -260,8 +266,8 @@ Per visualizzare lo stato di ciascun file nel processo, toccate o fate clic sui 
 
 Specificare la data prima della quale il fornitore della traduzione deve restituire i file convertiti. Potete impostare la data di scadenza per il progetto o per un processo specifico:
 
-* **** Progetto: I processi di conversione nel progetto ereditano la data di scadenza.
-* **** Processo: La data di scadenza impostata per il processo ha la priorità sulla data di scadenza impostata per il progetto.
+* **Progetto:** I processi di conversione nel progetto ereditano la data di scadenza.
+* **Processo:** La data di scadenza impostata per il processo ha la priorità sulla data di scadenza impostata per il progetto.
 
 L&#39;impostazione della data di scadenza funziona correttamente solo quando il fornitore di traduzione utilizzato supporta questa funzione.
 
@@ -325,11 +331,11 @@ Dopo aver avviato il processo di traduzione, il riquadro Processo di traduzione 
 
 ## Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
-Annullare un processo di traduzione per interrompere il processo di traduzione e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. Potete annullare un processo quando il processo ha lo stato `Committed For Translation` o `Translation In Progress` .
+Annullate un processo di traduzione per arrestare il processo di traduzione e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. Potete annullare un processo quando il processo ha lo stato `Committed For Translation` o `Translation In Progress` .
 
 1. Nella console Progetti, aprite il progetto di traduzione.
 1. Nella sezione Processo di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Annulla.
-1. Nella finestra di dialogo Azione che conferma l’annullamento della traduzione, fare clic o toccare OK.
+1. Nella finestra di dialogo Azione che conferma l’annullamento della traduzione, fate clic o toccate OK.
 
 ## Accetta/Rifiuta flusso di lavoro {#accept-reject-workflow}
 
@@ -391,7 +397,7 @@ Dopo il completamento, archiviate un processo di traduzione e non dovrete più v
 
 Compilate la copia per lingua in modo che contenga il contenuto della lingua principale che state traducendo. Prima di compilare la copia per lingua, è necessario aver [creato la lingua principale](/help/sites-administering/tc-prep.md#creating-a-language-root) della copia per lingua.
 
-1. Utilizzare la console Siti per selezionare la lingua principale della lingua principale utilizzata come origine. Ad esempio, per tradurre le pagine inglesi del sito dimostrativo Geometrixx, selezionare Contenuto > Geometrixx Demo Site > English.
+1. Utilizzare la console Siti per selezionare la lingua principale della lingua principale utilizzata come origine. Ad esempio, per tradurre le pagine inglesi del Sito Demo di Geometrixx, selezionare Contenuto > Sito Demo di Geometrixx > Inglese.
 1. Sulla barra degli strumenti, fare clic o toccare Riferimenti.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
@@ -404,20 +410,21 @@ Compilate la copia per lingua in modo che contenga il contenuto della lingua pri
 
    * Selezionare l&#39;opzione Seleziona tutte le sottopagine.
    * Per Progetto, selezionate Crea solo struttura.
+
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Tocca o fai clic su Avvia.
 
 ## Creazione di un progetto di traduzione tramite la console Progetti {#creating-a-translation-project-using-the-projects-console}
 
-Potete creare manualmente un progetto di traduzione se preferite utilizzare la console Progetti.
+Se preferite usare la console Progetti, potete creare manualmente un progetto di traduzione.
 
 Quando create manualmente un progetto di traduzione, dovete fornire valori per le seguenti proprietà relative alla conversione oltre alle proprietà [](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)di base:
 
-* **** Nome: Nome progetto.
-* **** Lingua di origine: Lingua del contenuto di origine.
-* **** Lingua di destinazione: Lingua in cui viene tradotto il contenuto.
-* **** Metodo di traduzione: Selezionare Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
+* **Nome:** Nome progetto.
+* **Lingua di origine:** Lingua del contenuto di origine.
+* **Lingua di destinazione:** Lingua in cui viene tradotto il contenuto.
+* **Metodo di traduzione:** Selezionare Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
 
 1. Nella barra degli strumenti della console Progetti, fate clic o toccate Crea.
 1. Selezionate il modello Progetto di traduzione e quindi fate clic o toccate Avanti.
@@ -427,7 +434,7 @@ Quando create manualmente un progetto di traduzione, dovete fornire valori per l
 
 ## Esportazione di un processo di conversione {#exporting-a-translation-job}
 
-Potete scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un provider di traduzione che non è integrato con AEM tramite un connettore, o per revisionare il contenuto.
+È possibile scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un provider di traduzione che non è integrato con AEM tramite un connettore, o per revisionare il contenuto.
 
 1. Dal menu a discesa della sezione Processo di traduzione, fate clic o toccate Esporta.
 1. Nella finestra di dialogo Esporta, fate clic su o toccate Scarica file esportato e, se necessario, usate la finestra di dialogo del browser Web per salvare il file.
@@ -435,7 +442,7 @@ Potete scaricare il contenuto di un processo di traduzione, ad esempio per invia
 
 ## Importazione di un processo di conversione {#importing-a-translation-job}
 
-Potete importare contenuti tradotti in AEM, ad esempio quando il vostro provider di traduzione ve li invia perché non sono integrati con AEM tramite un connettore.
+È possibile importare contenuti tradotti in AEM, ad esempio quando il provider di traduzioni li invia a voi perché non sono integrati con AEM tramite un connettore.
 
 1. Dal menu a discesa della sezione Processo di traduzione, fate clic o toccate Importa.
 1. Utilizzate la finestra di dialogo del browser Web per selezionare il file da importare.
