@@ -1,8 +1,8 @@
 ---
 title: Come utilizzare lo strumento VLT
 seo-title: Come utilizzare lo strumento VLT
-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM nel file system
-seo-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM nel file system
+description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM al file system
+seo-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM al file system
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 2%
 
 ---
 
 
 # Come utilizzare lo strumento VLT {#how-to-use-the-vlt-tool}
 
-Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un&#39;istanza Jackrabbit/AEM nel file system. Lo strumento VLT ha funzioni simili a quelle del client del sistema di controllo del codice sorgente (come un client Subversion (SVN)), che fornisce le normali operazioni di check-in, check-out e gestione, nonché opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
+Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un&#39;istanza Jackrabbit/AEM al file system. Lo strumento VLT ha funzioni simili a quelle del client del sistema di controllo del codice sorgente (come un client Subversion (SVN)), che fornisce le normali operazioni di check-in, check-out e gestione, nonché opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
 
 Lo strumento VLT viene eseguito dalla riga di comando. Questo documento descrive come utilizzare lo strumento, incluso come iniziare e ricevere assistenza, nonché un elenco di tutti i [comandi](#vlt-commands) e [le opzioni](#vlt-global-options)disponibili.
 
@@ -30,8 +33,8 @@ Consulta la pagina [Filevault Overview](https://jackrabbit.apache.org/filevault/
 Per iniziare a utilizzare VLT, è necessario effettuare le seguenti operazioni:
 
 1. Installate VLT, aggiornate le variabili di ambiente e aggiornate i file di sovversione ignorati globali.
-1. Configurate l’archivio AEM (se non lo avete già fatto).
-1. Controllate l&#39;archivio AEM.
+1. Configurate l&#39;archivio AEM (se non lo avete già fatto).
+1. Controllare il repository AEM.
 1. Sincronizzare con la directory archivio.
 1. Verificare il funzionamento della sincronizzazione.
 
@@ -44,7 +47,7 @@ Per utilizzare lo strumento VLT, è prima necessario installarlo. Per impostazio
    >
    >L&#39;origine dello strumento VLT è [disponibile su GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Estrarre l&#39;archivio.
-1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Esempio:
+1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Ad esempio:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -190,7 +193,7 @@ Commands:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Esempio:
+Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Ad esempio:
 
 ```shell
 vlt --help export
@@ -738,7 +741,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Esempio:
+>Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Ad esempio:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
