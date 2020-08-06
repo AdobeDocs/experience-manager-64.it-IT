@@ -36,7 +36,7 @@ Dopo aver configurato il servizio Cartelle esaminate, aggiungete un endpoint Car
 Potete creare una cartella esaminata in due modi:
 
 * Quando si configurano le impostazioni per un endpoint di cartella controllato, digitare il percorso completo della directory principale nella casella Percorso e aggiungere il nome della cartella esaminata da creare, come illustrato in questo esempio:
-   `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, i moduli AEM tentano di crearla in tale posizione.
+   `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, AEM moduli tenta di crearla in tale posizione.
 
 * Creare una cartella nel file system prima di configurare un endpoint di cartella controllato, quindi digitare il percorso completo nella casella Percorso.
 
@@ -49,7 +49,7 @@ In Windows, se il server applicazioni è in esecuzione come servizio, deve esser
 
 ## Concatenamento delle cartelle esaminate {#chaining-together-watched-folders}
 
-Le cartelle esaminate possono essere concatenate insieme in modo che un documento di risultato di una cartella esaminata sia il documento di input della cartella esaminata successiva. Ogni cartella esaminata può richiamare un servizio diverso. Configurando le cartelle esaminate in questo modo, è possibile richiamare più servizi. Ad esempio, una cartella esaminata potrebbe convertire i file PDF in Adobe PostScript® e una seconda cartella esaminata potrebbe convertire i file PostScript in formato PDF/A. A questo scopo, impostate semplicemente la cartella *dei risultati* della cartella esaminata definita dal primo endpoint in modo che punti alla cartella di *input* della cartella esaminata definita dal secondo endpoint.
+Le cartelle esaminate possono essere concatenate insieme in modo che un documento di risultato di una cartella esaminata sia il documento di input della cartella esaminata successiva. Ogni cartella esaminata può richiamare un servizio diverso. Configurando le cartelle esaminate in questo modo, è possibile richiamare più servizi. Ad esempio, una cartella esaminata potrebbe convertire i file PDF in  Adobe PostScript® e una seconda cartella esaminata potrebbe convertire i file PostScript in formato PDF/A. A questo scopo, impostate semplicemente la cartella *dei risultati* della cartella esaminata definita dal primo endpoint in modo che punti alla cartella di *input* della cartella esaminata definita dal secondo endpoint.
 
 L&#39;output della prima conversione passa a \path\result. L&#39;input per la seconda conversione è \path\result, e l&#39;output dalla seconda conversione va a \path\result\result  (o la directory definita nella casella Cartella risultati per la seconda conversione).
 
@@ -63,13 +63,13 @@ Se il processo contiene più di un file di input, l’utente deve creare una car
 
 >[!NOTE]
 >
->Verificate che il server applicazioni abbia eliminato l’accesso ai file nella cartella esaminata. Se i moduli AEM non sono in grado di eliminare i file dalla cartella di input dopo la scansione, il processo associato verrà richiamato a tempo indeterminato.
+>Verificate che il server applicazioni abbia eliminato l’accesso ai file nella cartella esaminata. Se AEM moduli non possono eliminare i file dalla cartella di input dopo la scansione, il processo associato verrà richiamato a tempo indeterminato.
 
 ## Output cartella esaminata {#watched-folder-output}
 
-Quando l&#39;input è una cartella e l&#39;output è costituito da più file, i moduli AEM creano una cartella di output con lo stesso nome della cartella di input e copia i file di output in tale cartella. Quando l&#39;output è costituito da una mappa del documento contenente una coppia chiave-valore, ad esempio l&#39;output da un processo Output, la chiave verrà utilizzata come nome del file di output.
+Se l&#39;input è una cartella e l&#39;output è costituito da più file, AEM moduli crea una cartella di output con lo stesso nome della cartella di input e copia i file di output in tale cartella. Quando l&#39;output è costituito da una mappa del documento contenente una coppia chiave-valore, ad esempio l&#39;output da un processo Output, la chiave verrà utilizzata come nome del file di output.
 
-I nomi dei file di output risultanti da un processo endpoint non possono contenere caratteri diversi da lettere, numeri e un punto (.) prima dell&#39;estensione del file. I moduli AEM convertono gli altri caratteri in valori esadecimali.
+I nomi dei file di output risultanti da un processo endpoint non possono contenere caratteri diversi da lettere, numeri e un punto (.) prima dell&#39;estensione del file. AEM moduli converte altri caratteri nei relativi valori esadecimali.
 
 Le applicazioni client raccolgono i documenti risultanti dalla cartella dei risultati della cartella esaminata. Gli errori di processo vengono registrati nella cartella degli errori della cartella esaminata.
 
@@ -129,7 +129,7 @@ Utilizzate le seguenti impostazioni per configurare un endpoint di cartella cont
 
 **Conteggio ripetizioni:** Numero di volte in cui la cartella controllata esegue la scansione della cartella o della directory. Il valore -1 indica una scansione indefinita. Il valore predefinito è -1.
 
-**Limite:** Quando questa opzione è selezionata, limita il numero di processi di cartelle controllati che AEM Forms elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. (Vedere Informazioni sulla limitazione.)
+**Limite:** Quando questa opzione è selezionata, limita il numero di processi di cartelle controllati che AEM i moduli vengono elaborati in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. (Vedere Informazioni sulla limitazione.)
 
 **Nome utente:** (Obbligatorio) Il nome utente utilizzato quando si richiama un servizio di destinazione dalla cartella esaminata. Il valore predefinito è SuperAdmin.
 
@@ -326,7 +326,7 @@ Per le chiamate asincrone, quando un nodo non riesce, il pianificatore quarzo in
 
 ## Punti di errore e ripristino {#failure-points-and-recovery}
 
-In ogni evento del sondaggio, Cartella osservata blocca la cartella di input, sposta i file che corrispondono al pattern di file include nella cartella dell’area di visualizzazione, quindi sblocca la cartella di input. Il blocco è necessario in modo che due thread non raccolgano lo stesso set di file ed elaborino due volte. Le possibilità che ciò accada aumentano con un piccolo intervallo di ripetizione e una grande dimensione batch. Dopo aver spostato i file nella cartella dell’area di visualizzazione, la cartella di input viene sbloccata in modo che altri thread possano eseguire la scansione della cartella. Questo passaggio consente di ottenere un throughput elevato perché altri thread possono eseguire la scansione mentre un thread elabora i file.
+In ogni evento del sondaggio, Cartella osservata blocca la cartella di input, sposta i file che corrispondono al pattern di file include nella cartella dell’area di visualizzazione, quindi sblocca la cartella di input. Il blocco è necessario in modo che due thread non raccolgano lo stesso set di file ed elaborino due volte. Le possibilità che ciò accada aumentano con un piccolo intervallo di ripetizione e una grande dimensione del batch. Dopo aver spostato i file nella cartella dell’area di visualizzazione, la cartella di input viene sbloccata in modo che altri thread possano eseguire la scansione della cartella. Questo passaggio consente di ottenere un throughput elevato perché altri thread possono eseguire la scansione mentre un thread elabora i file.
 
 Dopo aver spostato i file nella cartella dell’area di visualizzazione, vengono create richieste di chiamata per ciascun file e viene richiamato il servizio di destinazione. In alcuni casi la cartella esaminata non è in grado di recuperare i file nella cartella dell’area di visualizzazione:
 
@@ -347,7 +347,7 @@ Se la cartella esaminata non è in grado di elaborare i file sorgente nella cart
    * In Applicazioni e servizi, modificare il parametro Includi pattern file per l&#39;endpoint della cartella esaminata in modo che non corrisponda ad alcun nuovo file di input (ad esempio, immettere `NOMATCH`).
    * Sospendere il processo di creazione di nuovi file di input.
 
-   Attendete che i moduli AEM recuperino ed elaborino tutti i file. La maggior parte dei file dovrebbe essere recuperato e tutti i nuovi file di input elaborati correttamente. Il tempo di attesa per la cartella esaminata per recuperare ed elaborare i file dipenderà dalla lunghezza dell&#39;operazione da richiamare e il numero di file da recuperare.
+   Attendere che AEM moduli recuperi ed elabori tutti i file. La maggior parte dei file dovrebbe essere recuperato e tutti i nuovi file di input elaborati correttamente. Il tempo di attesa per la cartella esaminata per recuperare ed elaborare i file dipenderà dalla lunghezza dell&#39;operazione da richiamare e il numero di file da recuperare.
 
 1. Determinare quali file non possono essere elaborati. Se avete atteso un periodo di tempo adeguato e avete completato il passaggio precedente e se nella cartella dell’area di visualizzazione sono ancora presenti file non elaborati, passate al passaggio successivo.
 
@@ -410,7 +410,7 @@ Per tutti i servizi, è necessario regolare la dimensione batch e l&#39;interval
 
 ### Genera raccomandazioni di servizio PDF {#generate-pdf-service-recommendations}
 
-* Il servizio Genera PDF può convertire un solo file alla volta per i seguenti tipi di file: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® e Adobe PageMaker®. Si tratta di lavori a lungo termine; pertanto, accertatevi di mantenere le dimensioni del batch su un valore basso. Se nel cluster sono presenti più nodi, aumentate anche l’intervallo di ripetizione.
+* Il servizio Genera PDF può convertire un solo file alla volta per i seguenti tipi di file: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD,  Adobe Photoshop®,  Adobe FrameMaker® e  Adobe PageMaker®. Si tratta di lavori a lungo termine; pertanto, accertatevi di mantenere le dimensioni del batch su un valore basso. Se nel cluster sono presenti più nodi, aumentate anche l’intervallo di ripetizione.
 * Per i tipi di file PostScript (PS), Encapsulated PostScript (EPS) e di immagini, il servizio Genera PDF può elaborare diversi file in parallelo. È necessario ottimizzare attentamente la dimensione del pool di fagioli di sessione (che regola il numero di conversioni che verranno eseguite in parallelo) in base alla capacità del server e al numero di nodi nel cluster. Quindi aumentate la dimensione del batch in un numero uguale alla dimensione del pool di fagioli di sessione per i tipi di file che si sta tentando di convertire. La frequenza di polling deve essere determinata dal numero di nodi nel cluster; tuttavia, poiché il servizio Genera PDF elabora questi tipi di processi abbastanza velocemente, è possibile configurare l&#39;intervallo di ripetizione su un valore basso come 5 o 10.
 * Anche se il servizio Genera PDF può convertire un solo file OpenOffice alla volta, la conversione è abbastanza veloce. La logica precedente per le conversioni di PS, EPS e immagini si applica anche alle conversioni di OpenOffice.
 * Per abilitare la distribuzione uniforme del carico nel cluster, mantenere bassa la dimensione del batch e aumentare l&#39;intervallo di ripetizione.
@@ -419,7 +419,7 @@ Per tutti i servizi, è necessario regolare la dimensione batch e l&#39;interval
 
 * Per ottenere prestazioni ottimali durante l&#39;elaborazione di moduli con codice a barre (file di piccole dimensioni), immettere `10` per Dimensione batch e `2` Intervallo di ripetizione.
 * Quando molti file vengono inseriti nella cartella di input, possono verificarsi errori con i file nascosti denominati *thumbs.db* . Si consiglia pertanto di impostare il pattern di file Includi per i file di inclusione sullo stesso valore specificato per la variabile di input (ad esempio, `*.tiff`). Ciò impedisce l&#39;elaborazione dei file DB da parte della cartella esaminata.
-* Il valore Dimensione batch `5` e Intervallo ripetizione di `2` è normalmente sufficiente perché il servizio Moduli codici a barre in genere richiede circa 0,5 secondi per elaborare un codice a barre.
+* Il valore Dimensione batch `5` e Intervallo di ripetizione di `2` è normalmente sufficiente perché il servizio Forms con codice a barre in genere richiede circa 0,5 secondi per elaborare un codice a barre.
 * La cartella esaminata non attende che il motore di elaborazione finisca il processo prima che recuperi nuovi file o cartelle. Continua a eseguire la scansione della cartella esaminata e a richiamare il servizio di destinazione. Questo comportamento può sovraccaricare il motore, causando problemi di risorse e timeout. Assicurarsi di utilizzare l&#39;intervallo di ripetizione e le dimensioni batch per limitare l&#39;input della cartella esaminata. È possibile aumentare l&#39;intervallo di ripetizione e ridurre la dimensione del batch se esistono più cartelle esaminate o abilitare la limitazione sull&#39;endpoint. Per informazioni sulla limitazione, vedere [Informazioni sulla limitazione](configuring-watched-folder-endpoints.md#about-throttling).
 * Cartella esaminata rappresenta l’utente specificato nel nome utente e nel nome di dominio. La cartella esaminata richiama il servizio come utente se richiamato direttamente o se il processo ha una durata limitata. Per un processo di lunga durata, il processo viene richiamato con il contesto di sistema. Gli amministratori possono impostare i criteri del sistema operativo per Cartella esaminata per determinare a quale utente consentire o negare l&#39;accesso.
 * Utilizzare i pattern di file per organizzare risultati, errori e mantenere le cartelle. (Vedere [Informazioni sui pattern](configuring-watched-folder-endpoints.md#about-file-patterns)di file.)
