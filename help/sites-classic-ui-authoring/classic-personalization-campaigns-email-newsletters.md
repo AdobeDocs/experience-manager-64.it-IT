@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 68%
 
 ---
 
@@ -74,7 +77,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
   </tr> 
   <tr> 
    <td>Visualizza e-mail come pagina Web</td> 
-   <td>Questo componente consente agli utenti di visualizzare il messaggio e-mail sotto forma di pagina Web, "merge_preserve".</td> 
+   <td>Questo componente consente agli utenti di visualizzare il messaggio e-mail sotto forma di pagina Web,.</td> 
   </tr> 
   <tr> 
    <td>Informativa sulla privacy</td> 
@@ -82,7 +85,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
   </tr> 
   <tr> 
    <td>Centro per annullamento sottoscrizioni</td> 
-   <td>Offre all’utente la possibilità di annullare l’iscrizione e rimuovere il proprio nome dalla mailing list. "merge_preserve".</td> 
+   <td>Offre all’utente la possibilità di annullare l’iscrizione e rimuovere il proprio nome dalla mailing list..</td> 
   </tr> 
   <tr> 
    <td>Centro sottoscrizioni</td> 
@@ -109,6 +112,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
    >
    >
 * Sono necessari due degli strumenti e-mail: **Indirizzo postale (obbligatorio)** e **Centro profili (obbligatorio)**. Quando l&#39;e-mail viene pubblicata su ExactTarget, questi due strumenti e-mail vengono aggiunti in fondo a ogni e-mail per impostazione predefinita.
+
 >
 
 
@@ -137,7 +141,7 @@ Per applicare la configurazione del servizio e-mail a una newsletter:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
 ## Pubblicazione di e-mail sul servizio e-mail {#publishing-emails-to-email-service}
 
