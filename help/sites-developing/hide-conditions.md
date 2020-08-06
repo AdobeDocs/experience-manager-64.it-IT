@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 2%
 
 ---
 
@@ -55,7 +58,7 @@ Quando definite l’espressione Nascondi, tenete presente:
 
 ## Esempio {#example}
 
-In AEM e nei componenti [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) core in particolare sono disponibili alcuni esempi di condizioni di disattivazione. Ad esempio, si consideri il componente [di base](https://helpx.adobe.com/experience-manager/core-components/using/list.html)elenco.
+Esempi di condizioni di nascondimento si trovano in tutta AEM e in particolare nei componenti [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core. Ad esempio, si consideri il componente [di base dell’](https://helpx.adobe.com/experience-manager/core-components/using/list.html)elenco.
 
 [Utilizzando l’editor](/help/sites-authoring/templates.md)modelli, l’autore del modello può definire nella finestra di dialogo della progettazione quali opzioni del componente elenco sono disponibili per l’autore della pagina. Opzioni quali se consentire all’elenco di essere un elenco statico, un elenco di pagine figlie, un elenco di pagine con tag e così via. può essere attivato o disabilitato.
 
