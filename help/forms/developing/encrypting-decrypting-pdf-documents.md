@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Informazioni sul servizio di cifratura**
 
-Il servizio di cifratura consente di cifrare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decifrare il documento per ottenere l&#39;accesso ai contenuti. Se un documento PDF è crittografato con una password, l&#39;utente deve specificare la password aperta per poter visualizzare il documento in Adobe Reader o Adobe Acrobat. Analogamente, se un documento PDF è crittografato con un certificato, l&#39;utente deve decrittografare il documento PDF con la chiave pubblica che corrisponde al certificato (chiave privata) utilizzato per cifrare il documento PDF.
+Il servizio di cifratura consente di cifrare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decifrare il documento per ottenere l&#39;accesso ai contenuti. Se un documento PDF è crittografato con una password, l&#39;utente deve specificare la password aperta per poter visualizzare il documento in  Adobe Reader o  Adobe Acrobat. Analogamente, se un documento PDF è crittografato con un certificato, l&#39;utente deve decrittografare il documento PDF con la chiave pubblica che corrisponde al certificato (chiave privata) utilizzato per cifrare il documento PDF.
 
 Il servizio di cifratura consente di effettuare le seguenti operazioni:
 
@@ -35,19 +35,19 @@ Il servizio di cifratura consente di effettuare le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   >Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Cifratura di documenti PDF con una password {#encrypting-pdf-documents-with-a-password}
 
-Quando si esegue la cifratura di un documento PDF con una password, l&#39;utente deve specificare la password per aprire il documento PDF in Adobe Reader o Acrobat. Inoltre, prima di poter eseguire un&#39;altra operazione AEM Forms, ad esempio la firma digitale del documento PDF, è necessario sbloccare un documento PDF crittografato con password.
+Quando si esegue la cifratura di un documento PDF con una password, l&#39;utente deve specificare la password per aprire il documento PDF in  Adobe Reader o  Acrobat. Inoltre, prima di poter eseguire un&#39;altra operazione AEM Forms , ad esempio la firma digitale del documento PDF, è necessario sbloccare un documento PDF crittografato con password.
 
 >[!NOTE]
 >
->Se si carica un documento PDF crittografato nell&#39;archivio di AEM Forms, non sarà possibile decifrare il documento PDF ed estrarre il contenuto XDP. È consigliabile non crittografare un documento prima di caricarlo nell&#39;archivio di AEM Forms. (Vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources)).
+>Se si carica un documento PDF crittografato nell&#39;archivio di AEM Forms , non sarà possibile decifrare il documento PDF ed estrarre il contenuto XDP. È consigliabile non crittografare un documento prima di caricarlo nell&#39;archivio AEM Forms . (Vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources)).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -69,8 +69,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
 **Creare un oggetto API client di cifratura**
 
@@ -109,7 +109,7 @@ Dopo aver recuperato un documento PDF non protetto e impostato i valori di esecu
 
 [Cifratura di un documento PDF tramite l&#39;API del servizio Web](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -141,7 +141,7 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
    * Specificare le risorse del documento PDF da cifrare richiamando il metodo dell&#39; `PasswordEncryptionOptionSpec` oggetto `setEncryptOption` e passando un valore di `PasswordEncryptionOption` enumerazione che specifica le risorse del documento da cifrare. Ad esempio, per cifrare l’intero documento PDF, inclusi i metadati e gli allegati, specificare `PasswordEncryptionOption.ALL`.
    * Creare un `java.util.List` oggetto che memorizza le autorizzazioni di cifratura utilizzando il `ArrayList` costruttore.
    * Specificate un&#39;autorizzazione richiamando il metodo `java.util.List` ‘s `add` dell&#39;oggetto e passando un valore di enumerazione che corrisponde all&#39;autorizzazione che desiderate impostare. Ad esempio, per impostare l&#39;autorizzazione che consente a un utente di copiare i dati presenti nel documento PDF, specificare `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. Ripetete questo passaggio per ogni autorizzazione da impostare.
-   * Specificare l&#39;opzione di compatibilità Acrobat richiamando il metodo dell&#39; `PasswordEncryptionOptionSpec` oggetto `setCompatability` e passando un valore di enumerazione che specifica il livello di compatibilità di Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Specificate l&#39;opzione di compatibilità  Acrobat richiamando il metodo dell&#39; `PasswordEncryptionOptionSpec` oggetto `setCompatability` e passando un valore di enumerazione che specifica il livello di compatibilità  Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * Specificare il valore della password che consente a un utente di aprire il documento PDF crittografato richiamando il metodo dell&#39; `PasswordEncryptionOptionSpec` `setDocumentOpenPassword` oggetto e passando un valore di stringa che rappresenta la password aperta.
    * Specificare il valore della password master che consente a un utente di rimuovere la cifratura dal documento PDF richiamando il metodo dell&#39; `PasswordEncryptionOptionSpec` oggetto `setPermissionPassword` e passando un valore di stringa che rappresenta la password master.
 
@@ -165,7 +165,7 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
 
 [Avvio rapido (modalità SOAP): Cifratura di un documento PDF tramite l&#39;API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -179,17 +179,17 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un oggetto API client di cifratura.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -206,7 +206,7 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
 
    * Creare un `PasswordEncryptionOptionSpec` oggetto utilizzando il relativo costruttore.
    * Specificare le risorse del documento PDF da cifrare assegnando un valore di `PasswordEncryptionOption` enumerazione al membro `PasswordEncryptionOptionSpec` dati dell&#39; `encryptOption` oggetto. Per cifrare l’intero PDF, inclusi i metadati e gli allegati, assegnare `PasswordEncryptionOption.ALL` a tale membro dati.
-   * Specificare l&#39;opzione di compatibilità Acrobat assegnando un valore di `PasswordEncryptionCompatability` enumerazione al membro dati dell&#39; `PasswordEncryptionOptionSpec` oggetto `compatability` . Ad esempio, assegna `PasswordEncryptionCompatability.ACRO_7` a questo membro dati.
+   * Specificate l&#39;opzione di compatibilità Acrobat  assegnando un valore di `PasswordEncryptionCompatability` enumerazione al membro `PasswordEncryptionOptionSpec` dati dell&#39; `compatability` oggetto. Ad esempio, assegna `PasswordEncryptionCompatability.ACRO_7` a questo membro dati.
    * Specificare il valore della password che consente all&#39;utente di aprire il documento PDF crittografato assegnando un valore di stringa che rappresenta la password aperta al membro `PasswordEncryptionOptionSpec` dati `documentOpenPassword` dell&#39;oggetto.
    * Specificare il valore della password che consente a un utente di rimuovere la cifratura dal documento PDF assegnando al membro dati dell&#39; `PasswordEncryptionOptionSpec` oggetto un valore di stringa che rappresenta la password master `permissionPassword` .
 
@@ -230,9 +230,9 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
 
 [Riepilogo dei passaggi](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Cifratura di documenti PDF con certificati {#encrypting-pdf-documents-with-certificates}
 
@@ -247,15 +247,15 @@ Un certificato a chiave pubblica contiene la chiave pubblica di un utente e le i
 
 >[!NOTE]
 >
->Se si carica un documento PDF crittografato nell&#39;archivio di AEM Forms, non sarà possibile decifrare il documento PDF ed estrarre il contenuto XDP. È consigliabile non crittografare un documento prima di caricarlo nell&#39;archivio di AEM Forms. (Vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources)).
+>Se si carica un documento PDF crittografato nell&#39;archivio di AEM Forms , non sarà possibile decifrare il documento PDF ed estrarre il contenuto XDP. È consigliabile non crittografare un documento prima di caricarlo nell&#39;archivio AEM Forms . (Vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources)).
 
 >[!NOTE]
 >
->Prima di poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato ad AEM Forms. Un certificato viene aggiunto utilizzando la console di amministrazione o a livello di programmazione tramite l&#39;API di Trust Manager. (vedere [Importazione di credenziali tramite l&#39;API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)di Trust Manager).
+>Prima di poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato  AEM Forms. Un certificato viene aggiunto utilizzando la console di amministrazione o a livello di programmazione tramite l&#39;API di Trust Manager. (vedere [Importazione di credenziali tramite l&#39;API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)di Trust Manager).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -278,8 +278,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 **Creare un oggetto API client di cifratura**
 
@@ -313,7 +313,7 @@ Dopo aver recuperato un documento PDF non protetto, fatto riferimento al certifi
 
 [Cifratura di un documento PDF con un certificato tramite l&#39;API del servizio Web](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -357,7 +357,7 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 
    * Creare un `CertificateEncryptionOptionSpec` oggetto richiamandone il costruttore.
    * Specificare le risorse del documento PDF da cifrare richiamando il metodo dell&#39; `CertificateEncryptionOptionSpec` oggetto `setOption` e passando un valore di `CertificateEncryptionOption` enumerazione che specifica le risorse del documento da cifrare. Ad esempio, per cifrare l’intero documento PDF, inclusi i metadati e gli allegati, specificare `CertificateEncryptionOption.ALL`.
-   * Specificare l&#39;opzione di compatibilità Acrobat richiamando il metodo dell&#39; `CertificateEncryptionOptionSpec` oggetto `setCompat` e passando un valore di `CertificateEncryptionCompatibility` enumerazione che specifica il livello di compatibilità di Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
+   * Specificate l&#39;opzione di compatibilità Acrobat  richiamando il metodo dell&#39; `CertificateEncryptionOptionSpec` oggetto `setCompat` e passando un valore di `CertificateEncryptionCompatibility` enumerazione che specifica il livello di compatibilità  Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Creare un documento PDF cifrato da certificato.
 
@@ -380,7 +380,7 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 
 [Avvio rapido (modalità SOAP): Cifratura di un documento PDF con un certificato tramite l&#39;API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -394,17 +394,17 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un oggetto API client di cifratura.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -434,7 +434,7 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 
    * Creare un `CertificateEncryptionOptionSpec` oggetto utilizzando il relativo costruttore.
    * Specificare le risorse del documento PDF da cifrare assegnando un valore di `CertificateEncryptionOption` enumerazione al membro `CertificateEncryptionOptionSpec` dati dell&#39; `option` oggetto. Per cifrare l&#39;intero documento PDF, inclusi i metadati e gli allegati, assegnare `CertificateEncryptionOption.ALL` a tale membro dati.
-   * Specificare l&#39;opzione di compatibilità Acrobat assegnando un valore di `CertificateEncryptionCompatibility` enumerazione al membro dati dell&#39; `CertificateEncryptionOptionSpec` oggetto `compat` . Ad esempio, assegna `CertificateEncryptionCompatibility.ACRO_7` a questo membro dati.
+   * Specificate l&#39;opzione di compatibilità Acrobat  assegnando un valore di `CertificateEncryptionCompatibility` enumerazione al membro `CertificateEncryptionOptionSpec` dati dell&#39; `compat` oggetto. Ad esempio, assegna `CertificateEncryptionCompatibility.ACRO_7` a questo membro dati.
 
 1. Creare un documento PDF cifrato da certificato.
 
@@ -457,17 +457,17 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 
 [Riepilogo dei passaggi](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Rimozione della crittografia basata su certificato {#removing-certificate-based-encryption}
 
-È possibile rimuovere la cifratura basata su certificato da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat. Per rimuovere la cifratura da un documento PDF cifrato con un certificato, è necessario fare riferimento a una chiave pubblica. Dopo la rimozione della cifratura da un documento PDF, la cifratura non è più protetta.
+È possibile rimuovere la cifratura basata su certificato da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat. Per rimuovere la cifratura da un documento PDF cifrato con un certificato, è necessario fare riferimento a una chiave pubblica. Dopo la rimozione della cifratura da un documento PDF, la cifratura non è più protetta.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
@@ -488,8 +488,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 **Creare un client del servizio di crittografia**
 
@@ -505,11 +505,11 @@ Per rimuovere la cifratura basata su certificato da un documento PDF cifrato, è
 
 >[!NOTE]
 >
->Una chiave privata viene memorizzata nell&#39;archivio certificati attendibili di AEM Forms. Quando un certificato è posizionato in tale posizione, viene specificato un valore alias.
+>Una chiave privata viene memorizzata nell&#39; AEM Forms Trust Store. Quando un certificato è posizionato in tale posizione, viene specificato un valore alias.
 
 **Salvare il documento PDF**
 
-Dopo aver rimosso la cifratura basata su certificato da un documento PDF cifrato, è possibile salvare il documento PDF come file PDF. Gli utenti possono aprire il documento PDF in Adobe Reader o Acrobat.
+Dopo aver rimosso la cifratura basata su certificato da un documento PDF cifrato, è possibile salvare il documento PDF come file PDF. Gli utenti possono aprire il documento PDF in  Adobe Reader o  Acrobat.
 
 **Consulta anche**
 
@@ -517,7 +517,7 @@ Dopo aver rimosso la cifratura basata su certificato da un documento PDF cifrato
 
 [Rimozione della crittografia basata su certificato tramite l&#39;API del servizio Web](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -561,7 +561,7 @@ Rimuovere la cifratura basata su certificato da un documento PDF utilizzando l&#
 
 [Avvio rapido (modalità SOAP): Rimozione della crittografia basata su certificato tramite l&#39;API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -575,17 +575,17 @@ Rimuovete la cifratura basata su certificato utilizzando l&#39;API di cifratura 
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client del servizio di cifratura.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -618,17 +618,17 @@ Rimuovete la cifratura basata su certificato utilizzando l&#39;API di cifratura 
 
 [Riepilogo dei passaggi](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Rimozione crittografia password {#removing-password-encryption}
 
-La cifratura basata su password può essere rimossa da un documento PDF per consentire agli utenti di aprire il documento PDF in Adobe Reader o Acrobat senza dover specificare una password. Una volta rimossa la cifratura basata su password da un documento PDF, il documento non è più protetto.
+La cifratura basata su password può essere rimossa da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat senza dover specificare una password. Una volta rimossa la cifratura basata su password da un documento PDF, il documento non è più protetto.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-3}
 
@@ -649,8 +649,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
 **Creare un client del servizio di crittografia**
 
@@ -666,11 +666,11 @@ Per rimuovere la cifratura basata su password da un documento PDF cifrato, è ne
 
 **Salvare il documento PDF**
 
-Dopo che il servizio di cifratura ha rimosso la cifratura basata su password da un documento PDF, è possibile salvare il documento PDF come file PDF. Gli utenti possono aprire il documento PDF in Adobe Reader o Acrobat senza specificare una password.
+Dopo che il servizio di cifratura ha rimosso la cifratura basata su password da un documento PDF, è possibile salvare il documento PDF come file PDF. Gli utenti possono aprire il documento PDF in  Adobe Reader o  Acrobat senza specificare una password.
 
 **Consulta anche**
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -724,17 +724,17 @@ Rimuovere la cifratura basata su password utilizzando l&#39;API di cifratura (se
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client del servizio di cifratura.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -765,17 +765,17 @@ Rimuovere la cifratura basata su password utilizzando l&#39;API di cifratura (se
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Sblocco di documenti PDF crittografati {#unlocking-encrypted-pdf-documents}
 
-Prima di poter eseguire un&#39;altra operazione AEM Forms, è necessario sbloccare un documento PDF crittografato con password o con certificato. Se si tenta di eseguire un&#39;operazione su un documento PDF crittografato, verrà generata un&#39;eccezione. Dopo aver sbloccato un documento PDF crittografato, è possibile eseguire una o più operazioni su di esso. Queste operazioni possono appartenere ad altri servizi, ad esempio Acrobat Reader DC Extensions Service.
+È necessario sbloccare un documento PDF crittografato con password o con certificato prima di poter eseguire un&#39;altra operazione AEM Forms . Se si tenta di eseguire un&#39;operazione su un documento PDF crittografato, verrà generata un&#39;eccezione. Dopo aver sbloccato un documento PDF crittografato, è possibile eseguire una o più operazioni su di esso. Queste operazioni possono appartenere ad altri servizi, ad esempio Acrobat Reader DC Extensions Service.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-4}
 
@@ -785,7 +785,7 @@ Per sbloccare un documento PDF crittografato, effettuare le seguenti operazioni:
 1. Creare un client del servizio di cifratura.
 1. Ottenere il documento PDF crittografato.
 1. Sblocca il documento.
-1. Eseguire un&#39;operazione AEM Forms.
+1. Eseguire un&#39;operazione AEM Forms .
 
 **Includi file di progetto**
 
@@ -796,8 +796,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 **Creare un client del servizio di crittografia**
 
@@ -813,7 +813,7 @@ Per sbloccare un documento PDF crittografato con password, è necessario un docu
 
 Per sbloccare un documento PDF crittografato con certificato, è necessario un documento PDF crittografato e il valore alias della chiave pubblica che corrisponde alla chiave privata utilizzata per cifrare il documento PDF.
 
-**Esecuzione di un&#39;operazione AEM Forms**
+**Eseguire un&#39;operazione AEM Forms**
 
 Dopo aver sbloccato un documento PDF crittografato, è possibile eseguire un&#39;altra operazione del servizio, ad esempio l&#39;applicazione dei diritti di utilizzo. Questa operazione appartiene al servizio Acrobat Reader DC Extensions.
 
@@ -823,7 +823,7 @@ Dopo aver sbloccato un documento PDF crittografato, è possibile eseguire un&#39
 
 [Sblocco di un documento PDF crittografato tramite l&#39;API del servizio Web](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -861,11 +861,11 @@ Sbloccare un documento PDF crittografato utilizzando l&#39;API di cifratura (Jav
    * Un `com.adobe.idp.Document` oggetto che contiene il documento PDF crittografato con certificato.
    * Una stringa che specifica il nome alias della chiave pubblica corrispondente alla chiave privata utilizzata per cifrare il documento PDF.
 
-   Entrambi i metodi `unlockPDFUsingPassword` e `unlockPDFUsingCredential` restituiscono un `com.adobe.idp.Document` oggetto passato a un altro metodo Java AEM Forms per eseguire un’operazione.
+   I metodi `unlockPDFUsingPassword` e `unlockPDFUsingCredential` restituiscono entrambi un `com.adobe.idp.Document` oggetto passato a un altro metodo Java di AEM Forms  per eseguire un&#39;operazione.
 
-1. Eseguire un&#39;operazione AEM Forms.
+1. Eseguire un&#39;operazione AEM Forms .
 
-   Eseguite un&#39;operazione AEM Forms sul documento PDF sbloccato per soddisfare i requisiti aziendali. Ad esempio, se si desidera applicare diritti di utilizzo a un documento PDF non bloccato, passare l&#39; `com.adobe.idp.Document` oggetto restituito dai `unlockPDFUsingPassword` metodi o `unlockPDFUsingCredential` al `ReaderExtensionsServiceClient` metodo dell&#39; `applyUsageRights` oggetto.
+   Eseguire un&#39;operazione AEM Forms  sul documento PDF sbloccato per soddisfare i requisiti aziendali. Ad esempio, se si desidera applicare diritti di utilizzo a un documento PDF non bloccato, passare l&#39; `com.adobe.idp.Document` oggetto restituito dai `unlockPDFUsingPassword` metodi o `unlockPDFUsingCredential` al `ReaderExtensionsServiceClient` metodo dell&#39; `applyUsageRights` oggetto.
 
 **Consulta anche**
 
@@ -875,7 +875,7 @@ Sbloccare un documento PDF crittografato utilizzando l&#39;API di cifratura (Jav
 
 [Applicazione dei diritti di utilizzo ai documenti PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -889,17 +889,17 @@ Sbloccare un documento PDF crittografato utilizzando l&#39;API di cifratura (ser
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client del servizio di cifratura.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -926,23 +926,23 @@ Sbloccare un documento PDF crittografato utilizzando l&#39;API di cifratura (ser
    * Un `BLOB` oggetto che contiene il documento PDF crittografato con certificato.
    * Un valore di stringa che specifica il nome alias della chiave pubblica che corrisponde alla chiave privata utilizzata per cifrare il documento PDF.
 
-   Entrambi i metodi `unlockPDFUsingPassword` e `unlockPDFUsingCredential` restituiscono un `com.adobe.idp.Document` oggetto passato a un altro metodo AEM Forms per eseguire un’operazione.
+   I metodi `unlockPDFUsingPassword` e `unlockPDFUsingCredential` restituiscono entrambi un `com.adobe.idp.Document` oggetto passato a un altro metodo AEM Forms  per eseguire un&#39;operazione.
 
-1. Eseguire un&#39;operazione AEM Forms.
+1. Eseguire un&#39;operazione AEM Forms .
 
-   Eseguite un&#39;operazione AEM Forms sul documento PDF sbloccato per soddisfare i requisiti aziendali. Ad esempio, se si desidera applicare diritti di utilizzo al documento PDF non bloccato, passare l&#39; `BLOB` oggetto restituito dai `unlockPDFUsingPassword` metodi o `unlockPDFUsingCredential` al `ReaderExtensionsServiceClient` metodo dell&#39; `applyUsageRights` oggetto.
+   Eseguire un&#39;operazione AEM Forms  sul documento PDF sbloccato per soddisfare i requisiti aziendali. Ad esempio, se si desidera applicare diritti di utilizzo al documento PDF non bloccato, passare l&#39; `BLOB` oggetto restituito dai `unlockPDFUsingPassword` metodi o `unlockPDFUsingCredential` al `ReaderExtensionsServiceClient` metodo dell&#39; `applyUsageRights` oggetto.
 
 **Consulta anche**
 
 [Riepilogo dei passaggi](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Determinazione del tipo di cifratura {#determining-encryption-type}
 
-È possibile determinare a livello di programmazione il tipo di cifratura che protegge un documento PDF utilizzando l&#39;API Java Encryption Service o l&#39;API del servizio Web Encryption Service. A volte è necessario determinare in modo dinamico se un documento PDF è crittografato e, in tal caso, il tipo di cifratura. Ad esempio, potete stabilire se un documento PDF è protetto tramite cifratura basata su password o criteri Rights Management.
+È possibile determinare a livello di programmazione il tipo di cifratura che protegge un documento PDF utilizzando l&#39;API Java Encryption Service o l&#39;API del servizio Web Encryption Service. A volte è necessario determinare in modo dinamico se un documento PDF è crittografato e, in tal caso, il tipo di cifratura. Ad esempio, è possibile determinare se un documento PDF è protetto tramite cifratura basata su password o criteri di Rights Management.
 
 Un documento PDF può essere protetto tramite i seguenti tipi di cifratura:
 
@@ -953,7 +953,7 @@ Un documento PDF può essere protetto tramite i seguenti tipi di cifratura:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di cifratura, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di cifratura, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-5}
 
@@ -973,8 +973,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito sul server applicazioni JBoss)
 
 **Creare un client di servizio**
 
@@ -994,7 +994,7 @@ Per eseguire un&#39;operazione del servizio di cifratura a livello di programmaz
 
 [Determinare il tipo di crittografia utilizzando l&#39;API del servizio Web](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1031,7 +1031,7 @@ Determinare il tipo di cifratura che protegge un documento PDF utilizzando l&#39
 
 [Avvio rapido (modalità SOAP): Determinazione del tipo di crittografia tramite l&#39;API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1045,17 +1045,17 @@ Determinare il tipo di cifratura che protegge un documento PDF utilizzando l&#39
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client di servizi.
 
    * Creare un `EncryptionServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `EncryptionServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `EncryptionServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -1077,6 +1077,6 @@ Determinare il tipo di cifratura che protegge un documento PDF utilizzando l&#39
 
 [Riepilogo dei passaggi](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
