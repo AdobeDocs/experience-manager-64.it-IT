@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 84%
 
 ---
 
@@ -222,7 +225,7 @@ Nella sezione di seguito vengono descritti i componenti disponibili per i Moduli
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Campo** indirizzo Consente agli utenti di inserire le informazioni sull&#39;indirizzo. Quando si configura questo componente, è necessario inserire il Nome elemento nella finestra di dialogo. Il Nome elemento è il nome assegnato all’elemento modulo. Indica dove vengono registrati i dati nella directory archivio.
+**Campo** indirizzo Consente agli utenti di inserire le informazioni relative all&#39;indirizzo. Quando si configura questo componente, è necessario inserire il Nome elemento nella finestra di dialogo. Il Nome elemento è il nome assegnato all’elemento modulo. Indica dove vengono registrati i dati nella directory archivio.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -238,7 +241,7 @@ Nella sezione di seguito vengono descritti i componenti disponibili per i Moduli
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-**Utenti di genere** possono selezionare il genere da un elenco a discesa.
+**Gli utenti di genere** possono selezionare il genere da un elenco a discesa.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -280,7 +283,7 @@ Sono disponibili due schede di configurazione, **Modulo** e **Avanzato**:
 
 Si tratta di un campo facoltativo, per specificare il percorso di un nodo nella directory archivio. Quando alcune proprietà di questo nodo corrispondono ai nomi dei campi, i relativi campi del modulo vengono precompilati con il valore della proprietà corrispondente. In assenza di proprietà corrispondenti, il campo contiene il valore predefinito.
 
-**Convalida** client Indica se per il modulo è richiesta la convalida client (la convalida server si verifica sempre). Questo può essere ottenuto con il componente Captcha moduli.
+**Convalida** client Indica se per il modulo è richiesta la convalida client (la convalida server si verifica sempre). Questo può essere ottenuto in combinazione con il componente Forms Captcha.
 
 **Tipo** risorsa validazione Definisce il tipo di risorsa per la convalida del modulo se si desidera convalidare l’intero modulo lead (anziché i singoli campi).
 
