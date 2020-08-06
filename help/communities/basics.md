@@ -1,8 +1,8 @@
 ---
 title: Nozioni di base sui componenti per community
 seo-title: Nozioni di base sui componenti per community
-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione di componenti
-seo-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione di componenti
+description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione dei componenti
+seo-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione dei componenti
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Panoramica {#overview}
 
-La sezione relativa all’authoring della documentazione descrive l’aggiunta delle funzioni di Communities ai siti AEM in modalità di modifica dell’autore e descrive le configurazioni dei componenti.
+La sezione relativa all’authoring della documentazione descrive l’aggiunta delle funzioni di Communities ai siti AEM in modalità di modifica dell’autore, nonché la descrizione delle configurazioni dei componenti.
 
-I componenti possono essere esplorati utilizzando un’istanza di AEM e la guida [interattiva sui componenti](components-guide.md)community.
+I componenti possono essere esplorati utilizzando un&#39;istanza AEM e la guida [interattiva sui componenti](components-guide.md)community.
 
 ## Accesso ai componenti Community {#accessing-communities-components}
 
@@ -33,7 +36,7 @@ I componenti Community disponibili sono elencati [qui](author-communities.md#ava
 >
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
+>Se non avete familiarità con AEM, consultate la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
 
 ### Accesso alla modalità Progettazione {#entering-design-mode}
 
@@ -49,7 +52,7 @@ I componenti selezionati sono ora disponibili nel browser Componenti:
 
 ![chlimage_1-425](assets/chlimage_1-425.png)
 
-## ClientLibs richiesti {#required-clientlibs}
+## Clientlibs richiesti {#required-clientlibs}
 
 [Le librerie](../../help/sites-developing/clientlibs.md) lato client (clientlibs) sono necessarie per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente.
 
@@ -63,13 +66,13 @@ Quando si aggiunge un componente Community a una pagina, se il risultato è un e
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Assegnazione di tag {#tagging}
+## Assegnazione tag {#tagging}
 
-Molte funzioni Community possono essere configurate per consentire ai membri di assegnare tag ai contenuti immessi (pubblicati) nell&#39;ambiente di pubblicazione.
+Molte funzioni di Communities possono essere configurate per consentire ai membri di assegnare tag ai contenuti immessi (pubblicati) nell&#39;ambiente di pubblicazione.
 
 Se l&#39;assegnazione di tag è consentita, la configurazione del sito community può essere impostata in modo da limitare gli spazi dei nomi presentati ai membri nell&#39;ambiente di pubblicazione. Consultate la console [Siti](sites-console.md#tagging)community.
 
-Funzioni che consentono l’aggiunta di tag: [blog](blog-feature.md), [calendario](calendar.md), libreria [](file-library.md)file, [forum](forum.md)
+Funzioni che consentono l’aggiunta di tag: [blog](blog-feature.md), [calendario](calendar.md), libreria [di](file-library.md)file, [forum](forum.md)
 
 Funzioni che utilizzano i tag: [catalogo](catalog.md), [ricerca](search.md), tag cloud [social](tagcloud.md)
 
@@ -79,7 +82,7 @@ Per informazioni sull’authoring:
 
 Per informazioni amministrative:
 
-* Creazione di spazi dei nomi dei tag (tassonomia): Amministrazione [dei tag](../../help/sites-administering/tags.md)
+* Creazione di spazi dei nomi dei tag (tassonomia): [Amministrazione dei tag](../../help/sites-administering/tags.md)
 * Configurazione sito community: vedere [TAG](sites-console.md#tagging)
 * [Assegnazione di tag ai contenuti generati dall&#39;utente](../../help/sites-authoring/tags.md)
 * [Assegnazione tag alle risorse di abilitazione](tag-resources.md)
