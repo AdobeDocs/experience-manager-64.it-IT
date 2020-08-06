@@ -1,27 +1,30 @@
 ---
 title: Guida alla dimensionamento delle risorse
-description: 'Procedure ottimali per determinare metriche efficienti per la stima dell’infrastruttura e delle risorse necessarie per la distribuzione di Risorse AEM. '
+description: 'Procedure ottimali per determinare metriche efficienti per la stima dell''infrastruttura e delle risorse necessarie per la distribuzione  AEM Assets. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
 source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 0%
 
 ---
 
 
 # Guida alla dimensionamento delle risorse {#assets-sizing-guide}
 
-Quando si esegue il ridimensionamento dell’ambiente per un’implementazione di Risorse Adobe Experience Manager (AEM), è importante assicurarsi che siano disponibili risorse sufficienti in termini di disco, CPU, memoria, IO e throughput di rete. Per ridimensionare molte di queste risorse è necessario conoscere il numero di risorse caricate nel sistema. Se una metrica migliore non è disponibile, potete dividere la dimensione della libreria esistente per l’età della libreria per individuare la frequenza con cui vengono create le risorse.
+Quando si esegue il ridimensionamento dell&#39;ambiente per un&#39;implementazione di Adobe Experience Manager (AEM) Assets, è importante assicurarsi che siano disponibili risorse sufficienti in termini di disco, CPU, memoria, IO e throughput di rete. Per ridimensionare molte di queste risorse è necessario conoscere il numero di risorse caricate nel sistema. Se una metrica migliore non è disponibile, potete dividere la dimensione della libreria esistente per l’età della libreria per individuare la frequenza con cui vengono create le risorse.
 
 ## Disco {#disk}
 
 ### DataStore {#datastore}
 
-Quando si ridimensiona lo spazio su disco necessario per l’implementazione di Risorse, si commette un errore comune: basare i calcoli sulla dimensione delle immagini non elaborate da assimilare nel sistema. Per impostazione predefinita, AEM crea tre rappresentazioni oltre all’immagine originale da usare per il rendering degli elementi dell’interfaccia utente di AEM. Nelle implementazioni precedenti, queste rappresentazioni erano state osservate in modo da assumere il doppio delle dimensioni delle risorse assimilate.
+Quando si ridimensiona lo spazio su disco necessario per l’implementazione di Risorse, si commette un errore comune: basare i calcoli sulla dimensione delle immagini non elaborate da assimilare nel sistema. Per impostazione predefinita, AEM crea tre rappresentazioni oltre all’immagine originale da usare per il rendering degli elementi dell’interfaccia AEM. Nelle implementazioni precedenti, queste rappresentazioni erano state osservate in modo da assumere il doppio delle dimensioni delle risorse assimilate.
 
-La maggior parte degli utenti definisce rappresentazioni personalizzate oltre alle rappresentazioni pronte all&#39;uso. Oltre alle rappresentazioni, Risorse AEM consente di estrarre risorse secondarie da tipi di file comuni, come InDesign e Illustrator.
+La maggior parte degli utenti definisce rappresentazioni personalizzate oltre alle rappresentazioni pronte all&#39;uso. Oltre alle rappresentazioni,  AEM Assets consente di estrarre risorse secondarie da tipi di file comuni, ad esempio  InDesign e  Illustrator.
 
 Infine, le funzionalità di controllo delle versioni di AEM memorizzano duplicati delle risorse nella cronologia delle versioni. Potete configurare le versioni da eliminare spesso. Tuttavia, molti utenti scelgono di mantenere le versioni nel sistema per un lungo periodo di tempo, che consuma ulteriore spazio di archiviazione.
 
@@ -30,8 +33,8 @@ Considerati questi fattori, è necessaria una metodologia per calcolare uno spaz
 1. Consente di determinare la dimensione e il numero di risorse che verranno caricate nel sistema.
 1. Ottenete un esempio rappresentativo delle risorse da caricare in AEM. Ad esempio, se intendete caricare nel sistema file PSD, JPG, AI e PDF, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi esempi devono essere rappresentativi delle diverse dimensioni di file e complessità delle immagini.
 1. Definire le rappresentazioni da utilizzare.
-1. Create le rappresentazioni in AEM utilizzando ImageMagick o le applicazioni Creative Cloud di Adobe. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Scene7, potete usare il binario IC per generare le rappresentazioni PTIFF da memorizzare in AEM.
-1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati. Consultate la documentazione online su come generare pagine di risorse secondarie da file InDesign o file PNG/PDF da livelli Illustrator.
+1. Create le rappresentazioni in AEM utilizzando le applicazioni di Creative Cloud di ImageMagick o  Adobe. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Scene7, potete utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in AEM.
+1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati. Consultate la documentazione online su come generare pagine di risorse secondarie da file InDesign  o file PNG/PDF  livelli Illustrator.
 1. Confrontate le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generate rappresentazioni e risorse secondarie con una dimensione combinata di 3 GB dopo aver elaborato 1 GB di risorse, il fattore di crescita della rappresentazione è 3.
 1. Determinate il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.
 1. Determinate con quale frequenza vengono modificate le risorse esistenti nel sistema. Se AEM viene utilizzato come hub di collaborazione nei flussi di lavoro creativi, la quantità di modifiche è elevata. Se nel sistema vengono caricate solo le risorse finite, questo numero è molto inferiore.
@@ -59,7 +62,7 @@ Per i grandi archivi dati, puoi implementare un archivio dati condiviso tramite 
 
 #### Use Cases {#use-cases}
 
-Il datastore può essere condiviso tra un’istanza di creazione primaria e standby per ridurre al minimo il tempo necessario per aggiornare l’istanza standby con le modifiche apportate nell’istanza principale. Adobe consiglia di condividere il datastore tra un’istanza di creazione principale e di scaricare le istanze di autori per ridurre i costi comuni durante lo scaricamento del flusso di lavoro. Potete anche condividere il datastore tra le istanze di creazione e pubblicazione per ridurre il traffico durante la replica.
+Il datastore può essere condiviso tra un’istanza di creazione primaria e standby per ridurre al minimo il tempo necessario per aggiornare l’istanza standby con le modifiche apportate nell’istanza principale.  Adobe consiglia di condividere il datastore tra un’istanza di creazione primaria e di scaricare le istanze di autori per ridurre i costi comuni durante lo scaricamento del flusso di lavoro. Potete anche condividere il datastore tra le istanze di creazione e pubblicazione per ridurre il traffico durante la replica.
 
 #### Svantaggi {#drawbacks}
 
@@ -102,13 +105,13 @@ Per l&#39;archivio, utilizzare SSD o dischi con un livello IOPS superiore a 3000
 
 ## Rete {#network}
 
-Risorse AEM offre una serie di casi d’uso che rendono le prestazioni di rete più importanti rispetto a molti dei nostri progetti AEM. Un cliente può disporre di un server veloce, ma se la connessione di rete non è sufficientemente grande per supportare il carico degli utenti che caricano e scaricano risorse dal sistema, la connessione continuerà a risultare lenta. Esiste una buona metodologia per determinare il punto di interruzione nella connessione di rete di un utente ad AEM in base a considerazioni di Risorse [AEM per l’esperienza utente, il ridimensionamento delle istanze, la valutazione del flusso di lavoro e la topologia](assets-network-considerations.md)di rete.
+ AEM Assets ha una serie di casi di utilizzo che rendono le prestazioni di rete più importanti rispetto a molti dei nostri AEM progetti. Un cliente può disporre di un server veloce, ma se la connessione di rete non è sufficientemente grande per supportare il carico degli utenti che caricano e scaricano risorse dal sistema, la connessione continuerà a risultare lenta. È disponibile una buona metodologia per determinare il punto di interruzione nella connessione di rete di un utente da AEM a [AEM considerazioni delle risorse per l’esperienza dell’utente, il ridimensionamento delle istanze, la valutazione del flusso di lavoro e la topologia](assets-network-considerations.md)di rete.
 
 ## WebDAV {#webdav}
 
-Se aggiungete l&#39;app desktop AEM al mix, i problemi di rete si aggravano a causa delle inefficienze nel protocollo WebDAV.
+Se aggiungete l&#39;app desktop AEM al mix, i problemi di rete diventano più gravi a causa di inefficienze nel protocollo WebDAV.
 
-Per illustrare queste inefficienze, Adobe ha testato le prestazioni del sistema utilizzando WebDAV su OS X. Un file InDesign da 3,5 MB è stato aperto, modificato e le modifiche sono state salvate. Sono state formulate le seguenti osservazioni:
+Per illustrare queste inefficienze,  Adobe ha verificato le prestazioni del sistema utilizzando WebDAV su OS X. È stato aperto, modificato un file InDesign  da 3,5 MB e le modifiche sono state salvate. Sono state formulate le seguenti osservazioni:
 
 * Totale di circa 100 richieste HTTP generate per completare l&#39;operazione
 * Il file è stato caricato quattro volte tramite HTTP
@@ -116,15 +119,15 @@ Per illustrare queste inefficienze, Adobe ha testato le prestazioni del sistema 
 * L&#39;intera operazione ha richiesto 42 secondi per essere completata
 * Sono stati trasferiti complessivamente 18 MB di dati
 
-Analizzando il tempo di risparmio medio per i file su WebDAV, è stato rilevato che le prestazioni aumentano notevolmente man mano che la larghezza di banda aumenta fino al livello di 5-10 Mbps. Adobe consiglia pertanto a ogni utente che accede simultaneamente al sistema di avere almeno 10 Mbps di velocità di caricamento e 5-10 Mbps di larghezza di banda.
+Analizzando il tempo di risparmio medio per i file su WebDAV, è stato rilevato che le prestazioni aumentano notevolmente man mano che la larghezza di banda aumenta fino al livello di 5-10 Mbps. Pertanto,  Adobe consiglia a ogni utente che accede contemporaneamente al sistema di avere almeno 10 Mbps di velocità di caricamento e 5-10 Mbps di larghezza di banda.
 
-Per ulteriori informazioni, consultate [Risoluzione di problemi relativi all&#39;app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)desktop AEM.
+Per ulteriori informazioni, consultate [Risoluzione dei problemi AEM&#39;app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)desktop.
 
 ## Limitazioni  {#limitations}
 
 Quando si esegue il ridimensionamento di un&#39;implementazione, è importante tenere presenti i limiti del sistema. Se l’implementazione proposta supera questi limiti, utilizza strategie creative, come il partizionamento delle risorse tra più implementazioni di Assets.
 
-La dimensione del file non è l&#39;unico fattore che contribuisce a problemi di memoria insufficiente (OOM, Out of Memory). Dipende anche dalle dimensioni dell’immagine. Per evitare problemi di OOM, all’avvio di AEM specificate una dimensione di heap maggiore.
+La dimensione del file non è l&#39;unico fattore che contribuisce a problemi di memoria insufficiente (OOM, Out of Memory). Dipende anche dalle dimensioni dell’immagine. Potete evitare problemi di OOM fornendo una dimensione di heap maggiore all’avvio AEM.
 
 Inoltre, potete modificare la proprietà della dimensione della soglia del `com.day.cq.dam.commons.handler.StandardImageHandler` componente in Configuration Manager per utilizzare un file temporaneo intermedio maggiore di zero.
 
@@ -138,8 +141,8 @@ Il limite al numero di file che possono esistere in un datastore può essere di 
 
 Se le rappresentazioni non vengono generate correttamente, utilizzate la libreria Camera Raw. Tuttavia, in questo caso, il lato più lungo dell’immagine non deve essere maggiore di 65000 pixel. Inoltre, l&#39;immagine non deve contenere più di 512 MP (512 &amp;ast; 1024 &amp;ast; 1024 pixel)&#39;. *La dimensione della risorsa è irrilevante*.
 
-È difficile stimare con precisione la dimensione del file TIFF supportato out-of-the-box (OOTB) con un heap specifico per AEM, perché fattori aggiuntivi, come l’elaborazione dell’influenza delle dimensioni dei pixel. È possibile che AEM sia in grado di elaborare un file di dimensioni pari a 255 MB di OOTB, ma non sia in grado di elaborare un file di dimensioni pari a 18 MB, poiché quest’ultimo comprende un numero di pixel insolitamente più elevato rispetto al primo.
+È difficile stimare accuratamente la dimensione del file TIFF supportato out-of-the-box (OOTB) con un heap specifico per AEM, perché fattori aggiuntivi, come l&#39;elaborazione dell&#39;influenza delle dimensioni dei pixel. È possibile che AEM elaborare un file di dimensioni pari a 255 MB di OOTB, ma non sia in grado di elaborare un file di dimensioni pari a 18 MB, poiché quest&#39;ultimo comprende un numero di pixel insolitamente più elevato rispetto al primo.
 
 ## Dimensione delle risorse {#size-of-assets}
 
-Per impostazione predefinita, AEM consente di caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse molto grandi in AEM, consultate [Configurazione per caricare risorse](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)molto grandi.
+Per impostazione predefinita, AEM è possibile caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse molto grandi in AEM, consultate [Configurazione per caricare risorse](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)molto grandi.
