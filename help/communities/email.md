@@ -12,13 +12,16 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 0%
 
 ---
 
 
 # Configurazione e-mail {#configuring-email}
 
-AEM Communities utilizza l&#39;e-mail per
+ AEM Communities utilizza l&#39;e-mail per
 
 * [Notifiche community](notifications.md)
 * [Iscrizioni community](subscriptions.md)
@@ -39,7 +42,7 @@ Il servizio e-mail predefinito è richiesto sia per le notifiche che per le iscr
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Individua il `Day CQ Mail Service`
+* Individua la variabile `Day CQ Mail Service`
 * Selezionate l’icona di modifica
 
 Questo si basa sulla documentazione per la [configurazione delle notifiche](../../help/sites-administering/notification.md)e-mail, ma con una differenza in quanto il campo `"From" address`*non* è obbligatorio e deve essere lasciato vuoto.
@@ -60,7 +63,7 @@ Ad esempio (con valori solo a scopo illustrativo):
 * **[!UICONTROL SMTP usa SSL]**: Se questa opzione è selezionata, verrà inviata un&#39;e-mail protetta. Verificare che la porta sia impostata su 465 o come richiesto per il server SMTP.
 * **[!UICONTROL Esegui debug e-mail]**: Se questa opzione è selezionata, consente la registrazione delle interazioni del server SMTP.
 
-## Configurazione e-mail AEM Communities {#aem-communities-email-configuration}
+## Configurazione e-mail AEM Communities  {#aem-communities-email-configuration}
 
 Una volta configurato il servizio [di posta](#default-mail-service-configuration) predefinito, le due istanze esistenti della configurazione `AEM Communities Email Reply Configuration` OSGi, incluse nella release, diventano operative.
 
@@ -92,11 +95,11 @@ L’istanza della configurazione `AEM Communities Email Reply Configuration` OSG
 
 Questa configurazione non deve essere modificata.
 
-* Individua il `AEM Communities Email Reply Configuration`
+* Individua la variabile `AEM Communities Email Reply Configuration`
 * Selezionate l’icona di modifica
 * Verifica che il **nome** sia `email`
 
-* Verifica **Crea post dal messaggio e-mail** di risposta `unchecked`
+* Verifica che **Crea post dal messaggio e-mail** di risposta sia `unchecked`
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -104,19 +107,19 @@ Questa configurazione non deve essere modificata.
 
 Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilità per un membro di pubblicare contenuto rispondendo a un&#39;e-mail.
 
-* Individua il `AEM Communities Email Reply Configuration`
+* Individua la variabile `AEM Communities Email Reply Configuration`
 * Selezionate l’icona di modifica
 * Verifica che il **nome** sia `subscriptions-email`
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-* **[!UICONTROL Nome]** : *(obbligatorio)* `subscriptions-email`. Non Modificate.
+* **[!UICONTROL Nome]** : *(obbligatorio)*`subscriptions-email`. Non Modificate.
 
 * **[!UICONTROL Crea post dal messaggio e-mail]** di risposta: Se questa opzione è attivata, il destinatario dell&#39;e-mail di iscrizione può inviare contenuti inviando una risposta. Il valore predefinito è selezionato.
-* **[!UICONTROL Aggiungi ID tracciato all’intestazione]**:Il valore predefinito è `Reply-To`.
+* **[!UICONTROL Aggiungi ID tracciato all’intestazione]**: Il valore predefinito è `Reply-To`.
 
 * **[!UICONTROL Lunghezza massima del soggetto]**: Se l’ID tracciatore viene aggiunto all’oggetto, si tratta della lunghezza massima dell’oggetto, escluso l’ID tracciato, dopo di che verrà tagliato. Tieni presente che questo deve essere il più piccolo possibile per evitare che le informazioni ID tracciate vadano perdute. Il valore predefinito è 200.
-* **[!UICONTROL Indirizzo]**&quot;Da&quot; e-mail: *(obbligatorio)* Indirizzo da cui verrà inviato il messaggio e-mail di notifica. Probabilmente lo stesso utente **** SMTP specificato per il servizio [di posta](#configuredefaultmailservice)predefinito. Default is `no-reply@example.com`.
+* **[!UICONTROL Indirizzo]**&quot;Da&quot; e-mail: *(obbligatorio)* Indirizzo dal quale verrà recapitato il messaggio e-mail di notifica. Probabilmente lo stesso utente **** SMTP specificato per il servizio [di posta](#configuredefaultmailservice)predefinito. Default is `no-reply@example.com`.
 
 * **[!UICONTROL Risposta al carattere di delimitazione]**: Se viene aggiunto l’ID tracciatore all’intestazione Rispondi a, verrà utilizzato questo delimitatore. Il valore predefinito è `+` (segno più).
 
@@ -138,18 +141,19 @@ Affinché l’e-mail possa essere inserita nella directory archivio, è necessar
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Passare alla console di importazione pollingAd esempio, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+* Passate alla console di importazione pollingAd esempio, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 * Seleziona **[!UICONTROL Aggiungi]**
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-* **[!UICONTROL Tipo]**: *(richiesto)* Per selezionare `POP3 (over SSL).`
+* **[!UICONTROL Tipo]**: *(richiesto)* Per selezionare il pulsante `POP3 (over SSL).`
 
-* **[!UICONTROL URL]**: *(obbligatorio)* Il server di posta in uscita. Ad esempio: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
+* **[!UICONTROL URL]**: *(obbligatorio)* Il server di posta in uscita. Esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL Importa in percorso]**&amp;ast;: *(richiesto)* Impostate su `/content/usergenerated/mailFolder/postEmails`visitando la `postEmails`cartella e selezionando **OK**
+* **[!UICONTROL Importa in percorso]**&amp;ast;: *(richiesto)* Impostate questa opzione `/content/usergenerated/mailFolder/postEmails`visitando il pannello 
+`postEmails`e selezionate **OK**
 
-* **[!UICONTROL Intervallo di aggiornamento in secondi]**: *(facoltativo)* Il server di posta configurato per il servizio di posta elettronica predefinito può presentare requisiti relativi al valore dell&#39;intervallo di aggiornamento. Ad esempio, Gmail potrebbe richiedere un intervallo di `300`.
+* **[!UICONTROL Intervallo di aggiornamento in secondi]**: *(facoltativo)* Il server di posta configurato per il servizio di posta elettronica predefinito potrebbe presentare requisiti per il valore dell&#39;intervallo di aggiornamento. Ad esempio, Gmail potrebbe richiedere un intervallo di `300`.
 
 * **[!UICONTROL Login]**: *(facoltativo)*
 
