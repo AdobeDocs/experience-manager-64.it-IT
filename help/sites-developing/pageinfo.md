@@ -1,6 +1,6 @@
 ---
-title: Come ottenere informazioni sulla pagina in formato JSON
-seo-title: Come ottenere informazioni sulla pagina in formato JSON
+title: Ottenimento di informazioni sulla pagina in formato JSON
+seo-title: Ottenimento di informazioni sulla pagina in formato JSON
 description: Per ottenere le informazioni sulla pagina, inviate una richiesta al servlet PageInfo per ottenere i metadati della pagina in formato JSON
 seo-description: Per ottenere le informazioni sulla pagina, inviate una richiesta al servlet PageInfo per ottenere i metadati della pagina in formato JSON
 uuid: fb4f56b9-55e2-4622-a0d1-a86d6f2cce86
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
 
-# Come ottenere informazioni sulla pagina in formato JSON{#obtaining-page-information-in-json-format}
+# Ottenimento di informazioni sulla pagina in formato JSON{#obtaining-page-information-in-json-format}
 
 Per ottenere le informazioni sulla pagina, inviate una richiesta al servlet PageInfo per ottenere i metadati della pagina in formato JSON.
 
@@ -27,11 +30,12 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Se avete bisogno di informazioni di pagina in formato JSON per fornire contenuto ai canali che non sono pagine Web AEM tradizionali, ad esempio:
+>Se avete bisogno di informazioni di pagina in formato JSON per fornire contenuto ai canali che non sono pagine AEM Web tradizionali, come:
 >
 >* Applicazioni a pagina singola
 >* Applicazioni mobili native
->* Altri canali e punti di contatto esterni ad AEM
+>* Altri canali e punti di contatto esterni a AEM
+
 >
 >
 Consulta il documento [JSON Exporter per Content Services](/help/sites-developing/json-exporter.md).
@@ -55,13 +59,13 @@ I componenti pagina possono essere associati a uno o più `com.day.cq.wcm.api.Pa
 
 Il `/libs/foundation/components/page` componente è associato ai seguenti servizi PageInfoProvider:
 
-* **** Provider stato pagina predefinito: Informazioni sullo stato della pagina, ad esempio se è bloccata, se la pagina è il payload di un flusso di lavoro attivo e quali flussi di lavoro sono disponibili per la pagina.
-* **** Fornitore di informazioni sulla relazione dal vivo: Informazioni su Gestione multisito (MSM), ad esempio se la pagina fa parte di una Stampa blu e se si tratta di una Live Copy.
-* **** Servlet lingua contenuto: Lingua della pagina corrente e informazioni su ciascuna lingua in cui è disponibile la pagina.
-* **** Provider stato flusso di lavoro: Informazioni sullo stato del flusso di lavoro in esecuzione con la pagina come payload.
-* **** Fornitore informazioni pacchetto flusso di lavoro: Informazioni su ciascun pacchetto di workflow memorizzato nella directory archivio e se contiene la risorsa corrente.
-* **** Provider informazioni emulatore: Informazioni sugli emulatori del dispositivo mobile disponibili per questa risorsa. Se il componente pagina non esegue il rendering delle pagine mobili, non sono disponibili emulatori.
-* **** Provider informazioni annotazioni: Informazioni sulle annotazioni presenti sulla pagina.
+* **Provider stato pagina predefinito:** Informazioni sullo stato della pagina, ad esempio se è bloccata, se la pagina è il payload di un flusso di lavoro attivo e quali flussi di lavoro sono disponibili per la pagina.
+* **Fornitore di informazioni sulla relazione dal vivo:** Informazioni su Gestione multisito (MSM), ad esempio se la pagina fa parte di una Stampa blu e se si tratta di una Live Copy.
+* **Servlet lingua contenuto:** Lingua della pagina corrente e informazioni su ciascuna lingua in cui è disponibile la pagina.
+* **Provider stato flusso di lavoro:** Informazioni sullo stato del flusso di lavoro in esecuzione con la pagina come payload.
+* **Fornitore informazioni pacchetto flusso di lavoro:** Informazioni su ciascun pacchetto di workflow memorizzato nella directory archivio e se contiene la risorsa corrente.
+* **Fornitore informazioni emulatore:** Informazioni sugli emulatori del dispositivo mobile disponibili per questa risorsa. Se il componente pagina non esegue il rendering delle pagine mobili, non sono disponibili emulatori.
+* **Provider informazioni annotazioni:** Informazioni sulle annotazioni presenti sulla pagina.
 
 Ad esempio, il servlet PageInfo restituisce la seguente risposta JSON per il `/content/we-retail/us/en` nodo:
 
@@ -494,11 +498,11 @@ Il servizio applica il risultato cumulativo di tutti i filtri. Ad esempio, i seg
 
 >[!NOTE]
 >
->Quando lavori con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi. Per informazioni dettagliate, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
+>Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi. Per informazioni dettagliate, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
 
 Ad esempio, per configurare il servizio utilizzando CRXDE Lite:
 
-1. Aprite CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella cartella di configurazione dell’applicazione, create un nodo:
 
    * Nome: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -514,7 +518,7 @@ Ad esempio, per configurare il servizio utilizzando CRXDE Lite:
 
 Per configurare il servizio nell’origine del progetto:
 
-1. Individuate o create la cartella di configurazione per l’applicazione AEM nell’origine del progetto.
+1. Individuate o create la cartella di configurazione per l&#39;applicazione AEM nell&#39;origine del progetto.
 
    Ad esempio, se per creare il progetto avete usato l’archetipo multimodulo del plug-in Content Package Maven, il percorso della cartella è `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Nella cartella di configurazione, create un file di testo denominato com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
@@ -547,7 +551,7 @@ Create un servizio personalizzato Fornitore informazioni pagina per aggiungere m
 1. Aggiungi la seguente proprietà al nodo PageInfoProvider:
 
    * Nome: className
-   * Tipo:Stringa
+   * Tipo: Stringa
    * Valore: Il PID del servizio PageInfoProvider.
 
 Per le risorse che utilizzano il componente pagina dell’applicazione come `sling:resourceType`, il servlet PageInfo restituisce i metadati PageInfoProvider personalizzati oltre ai metadati PageInfoProvider predefiniti.
