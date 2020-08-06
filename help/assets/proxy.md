@@ -1,6 +1,6 @@
 ---
 title: Sviluppo proxy risorse
-description: 'Un proxy è un’istanza di AEM che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy AEM, le operazioni supportate, i componenti proxy e come sviluppare un lavoratore proxy personalizzato. '
+description: 'Un proxy è un''istanza AEM che utilizza i proxy worker per elaborare i processi. Scoprite come configurare un AEM proxy, le operazioni supportate, i componenti proxy e come sviluppare un lavoratore proxy personalizzato. '
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Sviluppo proxy risorse {#assets-proxy-development}
 
-Risorse Adobe Experience Manager (AEM) utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
+Adobe Experience Manager (AEM) Assets utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
-Un proxy è un’istanza AEM specifica (e talvolta separata) che utilizza i proxy worker come processori incaricati di gestire un processo e di creare un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy di Risorse AEM, questo può essere utilizzato per caricare risorse per il rendering in AEM Assets. Ad esempio, il lavoratore [proxy](indesign.md) IDS utilizza un server InDesign per elaborare i file da utilizzare in AEM Assets.
+Un proxy è un&#39;istanza AEM specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy AEM Assets  può essere utilizzato per caricare le risorse per il rendering all&#39;interno  AEM Assets. Ad esempio, il lavoratore [proxy](indesign.md) IDS utilizza un InDesign Server  per elaborare i file da utilizzare in  AEM Assets.
 
-Se il proxy è un’istanza AEM separata, questo consente di ridurre il carico sulle istanze di authoring di AEM. Per impostazione predefinita, AEM Assets esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite proxy) per ridurre il carico sull’istanza di creazione di AEM.
+Se il proxy è un’istanza AEM separata, questo consente di ridurre il carico sulle istanze di authoring AEM. Per impostazione predefinita,  AEM Assets esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite proxy) per ridurre il carico sull’istanza di creazione AEM.
 
 ## Proxy (accesso HTTP) {#proxy-http-access}
 
@@ -109,11 +109,11 @@ Esempio di utilizzo delle API:
 >
 >La documentazione di riferimento per l&#39;API proxy è disponibile in [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Sia le configurazioni di proxy che quelle di proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console **Strumenti** di AEM Assets o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
+Sia le configurazioni di proxy che quelle di proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console  AEM Assets **Tools** o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta Configurazione [del Proxy Worker di](indesign.md#configuring-the-proxy-worker-for-indesign-server) Indesign Server e configurazione [dei servizi](../sites-developing/extending-cloud-config.md) Cloud.
+>Per ulteriori informazioni, consulta Configurazione [e configurazione](indesign.md#configuring-the-proxy-worker-for-indesign-server) dei [](../sites-developing/extending-cloud-config.md) Cloud Services del Proxy Worker di Indesign Server.
 
 Esempio di utilizzo delle API:
 
@@ -132,9 +132,9 @@ Esempio di utilizzo delle API:
 
 ### Sviluppo di un Proxy Worker personalizzato {#developing-a-customized-proxy-worker}
 
-Il lavoratore [proxy](indesign.md) IDS è un esempio di un lavoratore proxy AEM Assets già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse Indesign.
+Il lavoratore [proxy](indesign.md) IDS è un esempio di un lavoratore proxy AEM Assets  già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse Indesign.
 
-Puoi anche sviluppare e configurare un lavoratore proxy AEM Assets personale per creare un lavoratore specializzato per l’invio e l’outsourcing delle attività di elaborazione di Risorse AEM.
+È inoltre possibile sviluppare e configurare un proprio  AEM Assets proxy Worker per creare un lavoratore specializzato per l&#39;invio e l&#39;outsourcing  attività di elaborazione AEM Assets.
 
 Per impostare un lavoratore proxy personalizzato è necessario:
 
@@ -176,9 +176,9 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 
 >[!NOTE]
 >
->Ciò che il framework proxy di AEM Assets non fornisce è il meccanismo del pool.
+>Ciò che il framework proxy AEM Assets  non fornisce è il meccanismo del pool.
 >
->L&#39;integrazione di InDesign consente l&#39;accesso a un pool di server indesign (IDSPool). Questo pool è specifico per l’integrazione Indesign e non fa parte del framework proxy di AEM Assets.
+>L&#39;integrazione  InDesign consente l&#39;accesso a un pool di server indesign (IDSPool). Questo pool è specifico per l&#39;integrazione Indesign e non fa parte del framework proxy AEM Assets .
 
 >[!NOTE]
 >
