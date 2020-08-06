@@ -1,8 +1,8 @@
 ---
 title: Sviluppo di componenti AEM
 seo-title: Sviluppo di componenti AEM
-description: I componenti AEM sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
-seo-description: I componenti AEM sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
+description: AEM componenti sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
+seo-description: AEM componenti sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
 uuid: bf789fb8-0bb8-406c-b4d6-c360b02a46d8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,13 +12,16 @@ discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '3444'
+ht-degree: 1%
 
 ---
 
 
 # Sviluppo di componenti AEM{#developing-aem-components}
 
-I componenti AEM sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
+AEM componenti sono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine Web.
 
 * Durante la [creazione di pagine](/help/sites-authoring/default-components.md), i componenti consentono agli autori di modificare e configurare il contenuto.
 
@@ -34,7 +37,7 @@ I componenti AEM sono utilizzati per conservare, formattare ed eseguire il rende
 
 >[!NOTE]
 >
->Questa pagina è una continuazione del documento [AEM Components - The Basics](/help/sites-developing/components-basics.md).
+>Questa pagina è una continuazione del documento [AEM Componenti - The Basics](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
@@ -42,11 +45,11 @@ I componenti AEM sono utilizzati per conservare, formattare ed eseguire il rende
 
 ## Esempi di codice {#code-samples}
 
-Questa pagina fornisce la documentazione di riferimento (o i collegamenti alla documentazione di riferimento) necessaria per sviluppare nuovi componenti per AEM. Per alcuni esempi pratici, consultate [Sviluppo di componenti AEM - Esempi](/help/sites-developing/developing-components-samples.md) di codice.
+Questa pagina contiene la documentazione di riferimento (o i collegamenti alla documentazione di riferimento) necessaria per sviluppare nuovi componenti per AEM. Per alcuni esempi pratici, consulta [Sviluppo di componenti AEM - Esempi](/help/sites-developing/developing-components-samples.md) di codice.
 
 ## Struttura {#structure}
 
-La struttura di base di un componente è riportata nella pagina Componenti di [AEM - Nozioni di base](/help/sites-developing/components-basics.md#structure). Questo documento copre sia l’interfaccia touch che quella classica. Anche se non è necessario utilizzare le impostazioni classiche nel nuovo componente, può essere utile conoscerle quando si eredita da componenti esistenti.
+La struttura di base di un componente è coperta sulla pagina [AEM Componenti - Concetti di base](/help/sites-developing/components-basics.md#structure). Questo documento copre sia l’interfaccia touch che quella classica. Anche se non è necessario utilizzare le impostazioni classiche nel nuovo componente, può essere utile conoscerle quando si eredita da componenti esistenti.
 
 ## Estensione di componenti e finestre di dialogo esistenti {#extending-existing-components-and-dialogs}
 
@@ -98,13 +101,13 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 ### Uso di JavaScript {#using-javascript}
 
-[L&#39;API Use-API JavaScript HTL consente a un file HTL di accedere al codice helper scritto in JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Questo consente di utilizzare il codice JavaScript per implementare la logica di selezione e configurazione del contenuto del componente.
+[L&#39;API Use-API JavaScript HTL consente a un file HTL di accedere al codice helper scritto in JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 
 ### Utilizzo di librerie HTML lato client {#using-client-side-html-libraries}
 
 I siti Web moderni si affidano in larga misura all&#39;elaborazione sul lato client basata su codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato.
 
-Per risolvere questo problema, AEM offre cartelle **libreria lato** client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto.
+Per risolvere il problema, AEM fornisce Cartelle **libreria lato** client che consentono di memorizzare il codice lato client nell&#39;archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto.
 
 Per ulteriori informazioni, consultate [Utilizzo delle librerie](/help/sites-developing/clientlibs.md) HTML lato client.
 
@@ -130,31 +133,31 @@ Le finestre di dialogo consentono all’autore di interagire con il componente. 
 
 ### Interfaccia utente Coral e interfaccia Granite {#coral-ui-and-granite-ui}
 
-[L’interfaccia utente](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) Coral e l’interfaccia utente [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite definiscono l’aspetto e il comportamento moderni di AEM.
+[L’interfaccia](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) Coral e l’interfaccia [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) definiscono l’aspetto e il comportamento moderni delle AEM.
 
 [L’interfaccia utente Granite offre una vasta gamma di componenti di base (widget)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) necessari per creare una finestra di dialogo nell’ambiente di authoring. Se necessario potete estendere questa selezione e creare un widget personalizzato.
 
-Per ulteriori informazioni sullo sviluppo di componenti con tipi di risorse Corallo e Granite, vedi: Creazione di componenti [Experience Manager con tipi](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)di risorse Coral/Granite.
+Per ulteriori informazioni sullo sviluppo di componenti con tipi di risorse Corallo e Granite, vedi: [Creazione  componenti di Experience Manager utilizzando i tipi](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)di risorse Corallo/Granite.
 
 Per maggiori dettagli, consulta:
 
 * Interfaccia utente Coral
 
    * Fornisce un&#39;interfaccia utente coerente in tutte le soluzioni cloud
-   * [Concetti dell’interfaccia utente di AEM Touch - Interfaccia Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concetti dell’interfaccia AEM touch - Interfaccia Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interfaccia Granite
 
    * Fornisce il codice Coral UI racchiuso nei componenti Sling per la creazione di console e finestre di dialogo dell&#39;interfaccia utente
-   * [Concetti dell’interfaccia utente AEM Touch - Interfaccia Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concetti dell’interfaccia AEM touch - Interfaccia Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Documentazione di Granite UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
 >A causa della natura dei componenti dell’interfaccia Granite (e delle differenze con i widget ExtJS), esistono delle differenze tra il modo in cui i componenti interagiscono con l’interfaccia touch e l’interfaccia [classica](/help/sites-developing/developing-components-classic.md).
 
-### Creazione di una nuova finestra di dialogo {#creating-a-new-dialog}
+### Creating a New Dialog {#creating-a-new-dialog}
 
 Finestre di dialogo per l’interfaccia touch:
 
@@ -191,21 +194,22 @@ Per esempi, vedete:
 
 >[!NOTE]
 >
->Se per un componente non è definita alcuna finestra di dialogo per l’interfaccia touch, la finestra di dialogo dell’interfaccia classica viene utilizzata come fallback all’interno di un livello di compatibilità. Per personalizzare tale finestra di dialogo è necessario personalizzare la finestra di dialogo dell’interfaccia classica. Consultate Componenti [AEM per l’interfaccia](/help/sites-developing/developing-components-classic.md)classica.
+>Se per un componente non è definita alcuna finestra di dialogo per l’interfaccia touch, la finestra di dialogo dell’interfaccia classica viene utilizzata come fallback all’interno di un livello di compatibilità. Per personalizzare tale finestra di dialogo è necessario personalizzare la finestra di dialogo dell’interfaccia classica. Consultate [AEM componenti per l’interfaccia](/help/sites-developing/developing-components-classic.md)classica.
 
 ### Personalizzazione dei campi di dialogo {#customizing-dialog-fields}
 
 >[!NOTE]
 >
->Vedi:
+>Consulta:
 >
->* la sessione AEM Gems sulla [personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
+>* la sessione AEM Gems su [Personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
 >* il codice di esempio correlato riportato in Esempio di [codice - Come personalizzare i campi](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)di dialogo.
+
 >
 
 
 
-#### Creazione di un nuovo campo {#creating-a-new-field}
+#### Creating a New Field {#creating-a-new-field}
 
 I widget per l’interfaccia touch sono implementati come componenti dell’interfaccia Granite.
 
@@ -215,7 +219,7 @@ Per creare un nuovo widget da usare in una finestra di dialogo dei componenti pe
 >
 >Per informazioni dettagliate sull’interfaccia utente Granite, consulta la documentazione [sull’interfaccia](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)Granite.
 
-Se si considera la finestra di dialogo come un semplice contenitore per un elemento modulo, è anche possibile visualizzare il contenuto principale del contenuto della finestra di dialogo come campi modulo. Per creare un nuovo campo modulo è necessario creare un tipo di risorsa. equivale a creare un nuovo componente. Per facilitare l’attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (tramite `sling:resourceSuperType`):
+Se si considera la finestra di dialogo come un semplice contenitore per un elemento modulo, è anche possibile visualizzare il contenuto principale del contenuto della finestra di dialogo come campi modulo. La creazione di un nuovo campo modulo richiede la creazione di un tipo di risorsa; equivale a creare un nuovo componente. Per facilitare l’esecuzione di tale attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (tramite `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -223,7 +227,7 @@ Più precisamente, l’interfaccia utente Granite offre una serie di componenti 
 
 >[!NOTE]
 >
->Ciò è diverso dall’interfaccia classica, in cui i widget sono rappresentati da `cq:Widgets` nodi, ciascuno con un particolare `xtype` per stabilire la relazione con il widget ExtJS corrispondente. Dal punto di vista dell’implementazione, questi widget sono stati rappresentati sul lato client dal framework ExtJS.
+>Ciò è diverso dall’interfaccia classica, in cui i widget sono rappresentati da `cq:Widgets` nodi, ciascuno con un particolare `xtype` per stabilire la relazione con il widget ExtJS corrispondente. Dal punto di vista dell’implementazione, questi widget sono stati sottoposti a rendering sul lato client dal framework ExtJS.
 
 Dopo aver creato il tipo di risorsa, è possibile creare un&#39;istanza del campo aggiungendo un nuovo nodo nella finestra di dialogo, con la proprietà `sling:resourceType` che fa riferimento al tipo di risorsa appena introdotto.
 
@@ -233,7 +237,7 @@ Se desiderate definire lo stile e il comportamento del componente, potete creare
 
 Per fare in modo che la libreria client venga caricata solo per la finestra di dialogo del componente (ovvero, non verrà caricata per un altro componente), è necessario impostare la proprietà `extraClientlibs` della finestra di dialogo sul nome della categoria della libreria client appena creata. Questo è consigliabile se la libreria client è abbastanza grande e/o se il campo è specifico per tale finestra di dialogo e non sarà necessario in altre finestre di dialogo.
 
-Per fare in modo che la libreria client venga caricata per tutte le finestre di dialogo, impostate la proprietà category della libreria client su `cq.authoring.dialog`. Questo è il nome della categoria della libreria client che è inclusa per impostazione predefinita durante il rendering di tutte le finestre di dialogo. Se la libreria client è piccola e/o il campo è generico e può essere riutilizzato in altre finestre di dialogo,
+Per fare in modo che la libreria client venga caricata per tutte le finestre di dialogo, impostate la proprietà category della libreria client su `cq.authoring.dialog`. Questo è il nome della categoria della libreria client che è inclusa per impostazione predefinita quando si esegue il rendering di tutte le finestre di dialogo. Se la libreria client è piccola e/o il campo è generico e può essere riutilizzato in altre finestre di dialogo,
 
 Ad esempio, vedete:
 
@@ -283,13 +287,13 @@ Ad esempio, vedete:
 
 Nell’interfaccia classica con ExtJS, nella struttura del contenuto era solito inserire i listener per un determinato widget. La stessa procedura nell’interfaccia touch è diversa, in quanto il codice listener JS (o qualsiasi altro codice) non è più definito nel contenuto.
 
-La struttura del contenuto descrive la struttura semantica; non deve implicare la natura del widget sottostante. Non avendo il codice JS nella struttura del contenuto, potete modificare i dettagli di implementazione senza dover modificare la struttura del contenuto. In altre parole, potete modificare la libreria dei widget senza dover toccare la struttura del contenuto.
+La struttura del contenuto descrive la struttura semantica; non deve implicare la natura del widget sottostante. Se il codice JS non è presente nella struttura del contenuto, potete modificare i dettagli di implementazione senza dover modificare la struttura del contenuto. In altre parole, potete modificare la libreria dei widget senza dover toccare la struttura del contenuto.
 
 ### Convalida del campo {#field-validation}
 
 #### Campo obbligatorio {#mandatory-field}
 
-Per contrassegnare un dato campo come obbligatorio, impostare la seguente proprietà sul nodo contenuto del campo:
+Per contrassegnare un dato campo come obbligatorio, impostare la seguente proprietà sul nodo di contenuto del campo:
 
 * Nome: `required`
 * Tipo: `Boolean`
@@ -335,11 +339,11 @@ La barra degli strumenti [del](/help/sites-developing/touch-ui-structure.md#comp
 
 Per ulteriori informazioni, consulta [Estensione dell’authoring delle pagine - Aggiunta di nuove azioni alla barra degli strumenti](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) di un componente.
 
-## Configurazione di un componente per la barra laterale Riferimenti (Presa in prestito/Lent) {#configuring-a-component-for-the-references-rail-borrowed-lent}
+## Configurazione di un componente per la barra laterale Riferimenti (Presa in prestito/Presa in prestito) {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
-Se il nuovo componente fa riferimento a contenuti provenienti da altre pagine, potete valutare se la modifica avrà effetto sulle sezioni Contenuto **** in prestito e Contenuto **** prestato [**della Barra **](/help/sites-authoring/basic-handling.md#references)riferimenti.
+Se il nuovo componente fa riferimento a contenuti provenienti da altre pagine, potete valutare se la modifica avrà un impatto sulle sezioni Contenuto **** in prestito e Contenuto **** prestato [**della Barra **](/help/sites-authoring/basic-handling.md#references)riferimenti.
 
-AEM supporta solo il componente Riferimento. Per aggiungere il componente è necessario configurare il bundle OSGi Configurazione **di riferimento per l’authoring di contenuti WCM** in un bundle.
+Il componente Riferimento viene AEM solo dal componente Out-of-the-box. Per aggiungere il componente è necessario configurare il bundle OSGi Configurazione **di riferimento per l’authoring di contenuti WCM** in un bundle.
 
 Create una nuova voce nella definizione, specificando il componente e la proprietà da controllare. Ad esempio:
 
@@ -367,6 +371,7 @@ Questo comportamento e la relazione tra risorse e componenti richiesta possono e
 1. Nella definizione di paragrafo della struttura della pagina. Ad esempio:
 
    * `/etc/designs/<myApp>/page/par`
+
    Crea un nuovo nodo:
 
    * Nome: `cq:authoring`
@@ -382,6 +387,7 @@ Questo comportamento e la relazione tra risorse e componenti richiesta possono e
 
    * Nome: text; si raccomanda che il nome indichi la risorsa e il tipo di componente correlato; ad esempio, image
    * Tipo: `nt:unstructured`
+
    Ciascuno con le seguenti proprietà:
 
    * `assetGroup`:
@@ -391,7 +397,7 @@ Questo comportamento e la relazione tra risorse e componenti richiesta possono e
    * `assetMimetype`:
 
       * Tipo: `String`
-      * Valore: il tipo mime dell’attività correlata;ad esempio `image/*`
+      * Valore: il tipo mime dell’attività correlata; ad esempio `image/*`
    * `droptarget`:
 
       * Tipo: `String`
@@ -425,20 +431,20 @@ Puoi trovare il codice di questa pagina su GitHub
 
 >[!NOTE]
 >
->La creazione automatica di istanze di componenti ora può essere facilmente configurata nell’interfaccia utente quando si utilizzano i componenti [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) core e i modelli modificabili. Consultate [Creazione di modelli](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) di pagina per ulteriori informazioni sulla definizione dei componenti associati automaticamente a determinati tipi di supporti.
+>La creazione automatica di istanze di componenti ora può essere facilmente configurata all’interno dell’interfaccia utente quando si utilizzano i componenti [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core e i modelli modificabili. Consultate [Creazione di modelli](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) di pagina per ulteriori informazioni sulla definizione dei componenti associati automaticamente a determinati tipi di supporti.
 
-## Utilizzo dell’estensione AEM Brackets {#using-the-aem-brackets-extension}
+## Utilizzo dell’estensione AEM parentesi {#using-the-aem-brackets-extension}
 
-L’estensione [AEM Brackets](/help/sites-developing/aem-brackets.md) offre un flusso di lavoro fluido per la modifica di componenti AEM e librerie di client. Si basa sull&#39;editor del codice [Brackets](https://brackets.io/) .
+L’estensione [AEM parentesi](/help/sites-developing/aem-brackets.md) offre un flusso di lavoro uniforme per la modifica AEM componenti e librerie client. Si basa sull&#39;editor del codice [Brackets](https://brackets.io/) .
 
 L&#39;estensione:
 
-* Semplifica la sincronizzazione (non è richiesto Maven o File Vault) per migliorare l&#39;efficienza degli sviluppatori e aiuta gli sviluppatori front-end con scarsa conoscenza di AEM a partecipare ai progetti.
+* Semplifica la sincronizzazione (non sono necessari Maven o File Vault) per migliorare l&#39;efficienza degli sviluppatori e aiuta gli sviluppatori front-end con AEM limitata conoscenza a partecipare ai progetti.
 * Fornisce supporto [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) , il linguaggio di modello progettato per semplificare lo sviluppo dei componenti e aumentare la sicurezza.
 
 >[!NOTE]
 >
->Le parentesi sono il meccanismo consigliato per la creazione di componenti. Sostituisce la funzionalità CRXDE Lite - Create Component, progettata per l’interfaccia classica.
+>Le parentesi sono il meccanismo consigliato per la creazione di componenti. Sostituisce la funzionalità CRXDE Lite - Crea componente, progettata per l’interfaccia classica.
 
 ## Migrazione da un componente classico {#migrating-from-a-classic-component}
 
@@ -456,12 +462,12 @@ Durante la migrazione di un componente progettato per l’uso con l’interfacci
 
 * Finestre di dialogo
 
-   * Sarà necessario creare una nuova finestra di dialogo da usare nell’interfaccia touch. Tuttavia, a fini di compatibilità, l’interfaccia touch può usare la definizione di una finestra di dialogo dell’interfaccia classica, quando non è stata definita alcuna finestra di dialogo per l’interfaccia touch.
+   * Sarà necessario creare una nuova finestra di dialogo da usare nell’interfaccia touch. Tuttavia, a fini di compatibilità, l’interfaccia touch può usare la definizione di una finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per l’interfaccia touch.
    * Lo strumento [di conversione finestra di](/help/sites-developing/dialog-conversion.md) dialogo consente di estendere i componenti esistenti.
    * [La mappatura di ExtJS su Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) offre una comoda panoramica dei tipi di xtype e di nodi ExtJS e dei tipi con i tipi di risorse equivalenti dell&#39;interfaccia Granite.
-   * Per ulteriori informazioni, consultate la sessione AEM Gems sulla [personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
+   * Per ulteriori informazioni, consulta la sessione AEM Gems su [Customizing Dialog Fields (Personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo).
    * Migrazione dai tipi alla convalida [Granite UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilizzando i listener JS, per ulteriori informazioni consultate [Gestione degli eventi](#handling-field-events) dei campi e la sessione AEM Gems sulla [personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
+   * Utilizzando i listener JS, per ulteriori informazioni vedere [Gestione degli eventi](#handling-field-events) dei campi e la sessione AEM Gems su [Personalizzazione dei campi](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)di dialogo.
 
 ### Migrazione del codice cq:listener {#migrating-cq-listener-code}
 
