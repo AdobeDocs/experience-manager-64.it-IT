@@ -1,8 +1,8 @@
 ---
 title: Creazione di una nuova schermata di login
 seo-title: Creazione di una nuova schermata di login
-description: Procedura per modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro di AEM Forms o Forms Manager.
-seo-description: Procedura per modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro di AEM Forms o Forms Manager.
+description: Come modificare la pagina di accesso dei moduli di LiveCycle, ad esempio 'area di lavoro AEM Forms o Forms Manager.
+seo-description: Come modificare la pagina di accesso dei moduli di LiveCycle, ad esempio 'area di lavoro AEM Forms o Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
 
 # Creazione di una nuova schermata di login {#creating-a-new-login-screen}
 
-È possibile modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
+È possibile modificare la schermata di accesso di tutti  moduli AEM Forms che utilizzano la schermata di login  AEM Forms. Ad esempio, le modifiche influiscono sulla schermata di accesso dell’area di lavoro di Forms Manager e  AEM Forms.
 
 ## Prerequisito {#prerequisite}
 
@@ -45,6 +48,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
    1. Rinominare la cartella con il nome delle impostazioni internazionali da supportare. Esempio, `ar`.
    1. Modificate il valore della proprietà `jcr:language` in `ar`(per la `ar` cartella).
+
    >[!NOTE]
    >
    >Se l&#39;impostazione internazionale è una combinazione di codice paese lingua, ad esempio `ar-DZ`, modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
@@ -192,6 +196,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
       * da `/libs/livecycle/core/components/login`
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
+
    ![capture](assets/capture.png)
 
    ```
