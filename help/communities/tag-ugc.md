@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +30,7 @@ Gli spazi dei nomi e le tassonomie dei tag sono gli stessi per entrambe le appli
 
 ## Funzioni di Communities {#communities-features}
 
-Le funzioni di AEM Communities che possono essere configurate per consentire l&#39;assegnazione di tag sono
+Le  funzioni AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -37,7 +40,7 @@ Le funzioni di AEM Communities che possono essere configurate per consentire l&#
 
 ## Amministrazione dei tag {#administering-tags}
 
-Consultate [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per creare e gestire namespace tag e tassonomie.
+Consultate [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per la creazione e la gestione di spazi dei nomi e tassonomie dei tag.
 
 Per informazioni sugli sviluppatori, consulta [Tag Essentials](tag.md) .
 
