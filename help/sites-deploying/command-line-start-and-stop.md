@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 Lo `start` script è disponibile *nella directory &lt;cq-install>/bin* . Sono disponibili entrambe le versioni Unix e Windows. Lo script avvia l&#39;istanza installata nella directory *&lt;cq-install>* .
 
-Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e sintonizzare l’istanza di AEM.
+Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e ottimizzare l&#39;istanza AEM.
 
 <table> 
  <tbody> 
@@ -66,7 +69,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
 
 >[!CAUTION]
 >
->Alcune modalità di esecuzione, tra cui l’authoring e la pubblicazione, devono essere impostate prima di avviare AEM e non possono essere successivamente modificate. Prima di configurare un’istanza di AEM che dovrebbe essere utilizzata per la produzione, consulta la documentazione [sulle modalità di](/help/sites-deploying/configure-runmodes.md) esecuzione per ulteriori informazioni.
+>Alcune modalità di esecuzione, tra cui l’autore e la pubblicazione, devono essere impostate prima del primo AEM di avvio e non possono essere modificate successivamente. Prima di impostare un&#39;istanza AEM che dovrebbe essere utilizzata in produzione, consultate la documentazione [sui metodi di](/help/sites-deploying/configure-runmodes.md) esecuzione per ulteriori dettagli.
 
 ### Esempio di script start.bat della piattaforma Windows {#windows-platform-start-bat-script-example}
 
@@ -82,7 +85,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Lo script di avvio avvia l&#39;avvio rapido di AEM installato *nella cartella &lt;cq-install>/app* .
+>Lo script di avvio avvia il AEM Quickstart installato *nella cartella &lt;cq-install>/app* .
 
 ## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -90,10 +93,10 @@ Per arrestare AEM, effettuate una delle seguenti operazioni:
 
 * A seconda della piattaforma in uso:
 
-   * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
+   * Se è stato avviato AEM da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
    * Se è stato utilizzato lo script start in UNIX, è necessario utilizzare lo script stop per arrestare AEM.
 
-* Se AEM è stato avviato facendo doppio clic sul file JAR, fate clic sul pulsante **Attivato** nella finestra di avvio (il pulsante diventa **Disattivato**) per arrestare il server.
+* Se avete avviato AEM facendo doppio clic sul file Jar, fate clic sul pulsante **Attivato** nella finestra di avvio (il pulsante quindi cambia in **Disattivato**) per arrestare il server.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
