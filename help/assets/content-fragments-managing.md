@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
 source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+workflow-type: tm+mt
+source-wordcount: '1509'
+ht-degree: 11%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
 I frammenti di contenuto sono memorizzati come **[!UICONTROL risorse]** e sono gestiti principalmente dalla console **[!UICONTROL Risorse]** .
 
 >[!NOTE]
 >
->I frammenti di contenuto vengono quindi utilizzati con le pagine di creazione; consultate Authoring delle [pagine con frammenti](/help/sites-authoring/content-fragments.md)di contenuto.
+>I frammenti di contenuto vengono quindi utilizzati con le pagine di authoring; consultate Authoring delle [pagine con frammenti](/help/sites-authoring/content-fragments.md)di contenuto.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-[È possibile abilitare e creare modelli](content-fragments-models.md) di frammento di contenuto prima di creare frammenti di contenuto con contenuto strutturato.
+[I modelli](content-fragments-models.md) di frammento di contenuto possono essere attivati e creati prima di creare frammenti di contenuto con contenuto strutturato.
 
 >[!NOTE]
 >
@@ -50,6 +53,7 @@ Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso
       * [Modello](/help/sites-developing/content-fragment-templates.md) , ad esempio **[!UICONTROL Frammento semplice]**
       * [Modello](content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio, il modello **Aeroporto**
    * Vengono visualizzati tutti i modelli disponibili.
+
    Dopo la selezione, utilizzate **[!UICONTROL Avanti]** per proseguire.
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
@@ -81,7 +85,7 @@ Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso
 
 Nella console **[!UICONTROL Risorse]** sono disponibili diverse azioni per i frammenti di contenuto:
 
-* Dalla barra degli strumenti; dopo la selezione del frammento sono disponibili tutte le azioni appropriate.
+* Dalla barra degli strumenti; dopo aver selezionato il frammento, sono disponibili tutte le azioni appropriate.
 * Come azioni [rapide](/help/sites-authoring/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibili per le singole schede frammento.
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
@@ -131,6 +135,7 @@ Per aprire il frammento per la modifica:
 
    * Toccando o facendo clic sul collegamento del frammento o del frammento (a seconda della vista della console).
    * Selezionare il frammento, quindi **[!UICONTROL Modifica]** dalla barra degli strumenti.
+
    Viene aperto l’editor frammento:
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
@@ -149,6 +154,7 @@ Per aprire il frammento per la modifica:
    * [Annotazioni](content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenuto associato](#associating-content-with-your-fragment)
    * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![cfm-10](assets/cfm-10.png)
 
 1. Dopo aver apportato le modifiche, usate **[!UICONTROL Salva]** o **[!UICONTROL Annulla]** come necessario.
@@ -163,7 +169,7 @@ Per aprire il frammento per la modifica:
 >
 >È inoltre possibile [creare, confrontare e ripristinare le versioni dalla Timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
-L&#39;editor ha due opzioni:
+L&#39;editor dispone di due opzioni:
 
 * **[!UICONTROL Salva]**
 
@@ -188,9 +194,9 @@ L&#39;editor ha due opzioni:
 
    Uscirà dall’editor senza salvare le modifiche più recenti.
 
-Durante la modifica di un frammento di contenuto, AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **[!UICONTROL annullamento]** delle modifiche:
+Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **[!UICONTROL annullamento]** delle modifiche:
 
-1. Quando un frammento di contenuto viene aperto per la modifica in AEM, verifica l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
+1. Quando un frammento di contenuto viene aperto per la modifica AEM verifica l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
 
    1. Se il token viene trovato, il frammento viene considerato parte della sessione di modifica esistente.
    1. Se il token *non* è disponibile e l&#39;utente avvia la modifica del contenuto, viene creata una versione e viene inviato un token per questa nuova sessione di modifica al client, dove viene salvato in un cookie.
@@ -247,6 +253,7 @@ Oltre alle opzioni standard, [Timeline](managing-assets-touch-ui.md#timeline) fo
 >* Funzionalità standard per tutte le risorse
 >* Realizzato nella timeline
 >* Relativa alla risorsa frammento
+
 >
 >
 Le annotazioni (per i frammenti di contenuto) sono:
@@ -277,7 +284,7 @@ Vengono visualizzati affiancati, dove:
    * Testo inserito - verde
    * Testo sostituito - blu
 
-* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi tornare alla visualizzazione parallela
+* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi tornate alla visualizzazione parallela
 * È possibile **[!UICONTROL ripristinare]** la versione specifica
 * **[!UICONTROL Fatto]** , tornerai alla console
 
@@ -303,7 +310,7 @@ Vengono visualizzati affiancati, dove:
 >
 >Se il frammento è basato su un modello, verificare che il [modello sia stato pubblicato](content-fragments-models.md#publishing-a-content-fragment-model).
 >
->Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato con il frammento.
+>Se si pubblica un frammento di contenuto per il quale il modello non è ancora stato pubblicato, verrà visualizzato un elenco di selezione e il modello verrà pubblicato insieme al frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
@@ -312,7 +319,7 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 
 >[!CAUTION]
 >
->Dopo aver pubblicato e/o fatto riferimento a un frammento, quando un autore riapre il frammento per la modifica in AEM verrà visualizzato un avviso. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
+>Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
