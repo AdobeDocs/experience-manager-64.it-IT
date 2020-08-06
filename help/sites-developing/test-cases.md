@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ I casi di test devono essere basati su:
 
 Le prove devono definire chiaramente:
 
-* Prerequisiti; possono riguardare sistemi, configurazioni o esperienza tester specifici.
+* Prerequisiti; questi possono riguardare sistemi, configurazioni o esperienza tester specifici.
 * Le misure da seguire; ad un livello di dettaglio adeguato.
 * Risultati previsti.
 * Cancella criteri per superato o non superato.
@@ -42,17 +45,17 @@ La prospettiva di automatizzare i test case è ovviamente attraente in quanto pu
 Tuttavia, l&#39;automazione dei test case è un investimento significativo, pertanto occorre considerare alcuni aspetti:
 
 * Richiedi tempo, fatica ed esperienza per la configurazione.
-* Se basato su browser, esiste un rischio maggiore di problemi quando vengono installati gli aggiornamenti del browser; che richiedono ulteriore tempo per correggere.
+* Se basato su browser, esiste un rischio maggiore di problemi quando vengono installati gli aggiornamenti del browser; che richiedono ulteriore tempo per la correzione.
 * Solo realizzabili per grandi progetti.
 * Ideale quando vengono generate più versioni per il test o nel piano di rilascio a lungo termine.
 
 ## Verificare gli aspetti specifici {#testing-specific-aspects}
 
-Durante il test di AEM, alcuni dettagli specifici sono di particolare interesse:
+Durante il test AEM alcuni dettagli specifici sono di particolare interesse:
 
 Ambienti di authoring e pubblicazione
 
-Anche se, in [Ambienti](/help/sites-developing/the-basics.md#environments) , vale la pena evidenziare un fattore determinante di AEM per quanto riguarda i test.
+Anche se, coperto in [Ambienti](/help/sites-developing/the-basics.md#environments) , vale la pena evidenziare un fattore determinante di AEM per quanto riguarda i test.
 
 È necessario considerare AEM come due applicazioni:
 
@@ -73,7 +76,7 @@ In altre parole devono essere testati separatamente e con diversi casi di prova.
 
 **Personalizzazione**
 
-Durante il test della personalizzazione ogni singolo caso di utilizzo deve essere ripetuto utilizzando più account utente per dimostrare il comportamento.
+Quando si esegue il test della personalizzazione, ogni singolo caso di utilizzo deve essere ripetuto utilizzando più account utente per dimostrare il comportamento.
 
 È inoltre necessario verificare che la memorizzazione nella cache sia corretta.
 
@@ -86,13 +89,13 @@ Il test è difficile (il caching si verifica a vari livelli e in diverse posizio
 * **Precisione**; accertatevi che gli aggiornamenti di contenuto siano visibili al visitatore del sito Web.
 * **Continuità**; accertatevi che il sito Web sia ancora disponibile quando un server viene spento.
 * **I cluster** sono utilizzati per fornire:
-   * **Failover** Se un server ha esito negativo, gli altri server del cluster subiranno l&#39;elaborazione.
+   * **Failover** Se un server non riesce, gli altri server del cluster subiranno l&#39;elaborazione.
    * **Il bilanciamento del** carico di prestazioni con failover completo aumenta le prestazioni di un cluster.
 
 Se utilizzato per un progetto cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
 
 ## Verifica del software di terze parti {#testing-third-party-software}
 
-Qualsiasi software di terze parti interfacciato con AEM sarà riportato nelle Specifiche dettagliate dei requisiti.
+Qualsiasi software di terze parti interfacciato a AEM verrà fatto riferimento nelle Specifiche dettagliate dei requisiti.
 
 Eventuali prove richieste (in funzione dell&#39;ambito di applicazione definito) devono essere analizzate e si deve ottenere una prova pulita.
