@@ -4,6 +4,9 @@ description: Scoprite come creare pagine Editor risorse personalizzate e modific
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '3314'
+ht-degree: 2%
 
 ---
 
@@ -18,23 +21,23 @@ Il presente documento descrive quanto segue:
 
 >[!NOTE]
 >
->Condivisione risorse è disponibile come implementazione di riferimento open source. Consultate [Contenuti comuni](https://adobe-marketing-cloud.github.io/asset-share-commons/) di condivisione risorse. Non è supportato ufficialmente.
+>Condivisione risorse è disponibile come implementazione di riferimento open source. Consultate [Contenuti comuni](https://adobe-marketing-cloud.github.io/asset-share-commons/) per la condivisione di risorse. Non è supportato ufficialmente.
 
 ## Perché creare e configurare le pagine dell’Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-Gestione delle risorse digitali viene utilizzata in sempre più scenari. Per passare da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che sono rilevanti per loro.
+Gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
 
-Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare foto da visite a fiere o da un centro stampa in un sito Web rivolto al pubblico, ad esempio l’esempio fornito con Geometrixx. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
+Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare le foto dalle visite alle fiere o da un centro stampa in un sito Web rivolto al pubblico, come l&#39;esempio fornito con Geometrixx. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
 
-La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con AEM Assets sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
+La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con  AEM Assets sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in AEM consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in AEM è costituita da una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 ## Creare e configurare una pagina Condivisione risorse {#creating-and-configuring-an-asset-share-page}
 
 Potete personalizzare la funzionalità del Finder di DAM e creare pagine con tutte le funzionalità necessarie, denominate pagine di condivisione risorse. Per creare una nuova pagina Condivisione risorse, aggiungete la pagina utilizzando il modello Condivisione risorse di Geometrixx, quindi personalizzate le azioni che gli utenti possono eseguire su tale pagina, stabilite in che modo gli utenti vedranno le risorse e decideranno in che modo gli utenti possono creare le loro query.
 
-Di seguito sono riportati alcuni esempi di utilizzo per la creazione di una pagina Condivisione risorse personalizzata:
+Di seguito sono riportati alcuni esempi d’uso per la creazione di una pagina Condivisione risorse personalizzata:
 
 * Centro Stampa per i Giornalisti
 * Motore di ricerca immagini per utenti interni
@@ -57,11 +60,11 @@ Per creare una nuova pagina Condivisione risorse nella console Siti **Web** :
 
 ![dam8](assets/dam8.png)
 
-La pagina di base creata con il modello Geometrixx DAM Asset Share si presenta come segue:
+La pagina di base creata con il modello di condivisione risorse DAM di Geometrixx si presenta come segue:
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Per personalizzare la pagina Condivisione risorse, potete usare elementi dalla barra laterale e modificare le proprietà del generatore di query. La pagina **[!UICONTROL Geometrixx Press Center]** è una versione personalizzata di una pagina basata su questo modello:
+Per personalizzare la pagina Condivisione risorse, potete usare elementi dalla barra laterale e modificare le proprietà del generatore di query. La pagina **[!UICONTROL Geometrixx Centro]** stampa è una versione personalizzata di una pagina basata su questo modello:
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
@@ -102,13 +105,13 @@ Per aggiungere azioni alla pagina Condivisione risorse:
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-#### Determinare come vengono presentati i risultati della ricerca {#determining-how-search-results-are-presented}
+#### Determinare la modalità di presentazione dei risultati di ricerca {#determining-how-search-results-are-presented}
 
 È possibile determinare in che modo i risultati vengono visualizzati da un elenco predefinito di obiettivi.
 
 Per modificare la modalità di visualizzazione dei risultati della ricerca:
 
-1. Nella pagina Condivisione risorse da personalizzare, fate clic su **[!UICONTROL Cerca]**.
+1. Nella pagina Condivisione risorse che desiderate personalizzare, fate clic su **[!UICONTROL Cerca]**.
 
    ![chlimage_1](assets/chlimage_1.bmp)
 
@@ -129,13 +132,13 @@ Sono disponibili le seguenti ottiche:
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-#### Personalizzazione di Query Builder {#customizing-the-query-builder}
+#### Personalizzare il Generatore di query {#customizing-the-query-builder}
 
 Il generatore di query consente di inserire i termini di ricerca e creare il contenuto per la pagina Condivisione risorse. Quando modificate il generatore di query, potete anche determinare quanti risultati di ricerca vengono visualizzati per pagina, quale editor di risorse si apre quando fate doppio clic su una risorsa, il percorso di ricerca e personalizzate i tipi di nodi.
 
 Per personalizzare il generatore di query:
 
-1. Nella pagina Condivisione risorse da personalizzare, fate clic su **[!UICONTROL Modifica]** in Query Builder. Per impostazione predefinita, viene visualizzata la scheda **[!UICONTROL Generale]** .
+1. Nella pagina Condivisione risorse che desiderate personalizzare, fate clic su **[!UICONTROL Modifica]** in Query Builder. Per impostazione predefinita, viene visualizzata la scheda **[!UICONTROL Generale]** .
 
 1. Selezionate il numero di risultati per pagina, il percorso dell’editor risorse (se disponete di un editor risorse personalizzato) e il titolo Azioni.
 
@@ -157,11 +160,11 @@ Per personalizzare il generatore di query:
 
 #### Aggiunta di predicati {#adding-predicates}
 
-Risorse AEM include diversi predicati che puoi aggiungere alla pagina Condivisione risorse. che consentono agli utenti di limitare ulteriormente le ricerche. In alcuni casi, possono ignorare un parametro del generatore di query (ad esempio, il parametro Path).
+ AEM Assets include diversi predicati che potete aggiungere alla pagina Condivisione risorse. che consentono agli utenti di limitare ulteriormente le ricerche. In alcuni casi, possono ignorare un parametro del generatore di query (ad esempio, il parametro Path).
 
 Per aggiungere i predicati:
 
-1. Nella pagina Condivisione risorse da personalizzare, fate clic su **[!UICONTROL Cerca]**.
+1. Nella pagina Condivisione risorse che desiderate personalizzare, fate clic su **[!UICONTROL Cerca]**.
 
    ![assetshare3](assets/assetshare3.bmp)
 
@@ -173,7 +176,7 @@ Per aggiungere i predicati:
 
 | Predicato | Descrizione |
 |---|---|
-| **[!UICONTROL Predicato data]** | Consente agli utenti di cercare le risorse modificate prima e dopo determinate date. |
+| **[!UICONTROL Predicato data]** | Consente agli utenti di cercare le risorse che sono state modificate prima e dopo determinate date. |
 | **[!UICONTROL Predicato opzioni]** | Il proprietario del sito può specificare una proprietà da cercare (come nel predicato delle proprietà, ad esempio cq:tags) e una struttura del contenuto per popolare le opzioni da (ad esempio la struttura ad albero tag). In questo modo si genera un elenco di opzioni in cui gli utenti possono selezionare i valori (tag) che la proprietà selezionata (proprietà tag) deve avere. Questo predicato consente di creare controlli elenco come l&#39;elenco di tag, tipi di file, orientamenti immagine e così via. È ideale per un set fisso di opzioni. |
 | **[!UICONTROL Predicato percorso]** | Consente agli utenti di definire il percorso e le sottocartelle, se necessario. |
 | **[!UICONTROL Predicato proprietà]** | Il proprietario del sito specifica una proprietà da cercare, ad esempio tiff:ImageLength e l’utente può quindi immettere un valore, ad esempio 800. Questo restituisce tutte le immagini con un&#39;altezza di 800 pixel. Predefinito utile se la proprietà può avere valori arbitrari. |
@@ -200,15 +203,15 @@ Per creare una pagina Editor risorse:
 
 1. Nella scheda **[!UICONTROL Siti]** Web individuate il punto in cui desiderate creare la pagina dell’editor risorse e fate clic su **[!UICONTROL Nuovo]**.
 
-1. Selezionate Editor **[!UICONTROL risorse]** Geometrixx e fate clic su **[!UICONTROL Crea]**. La nuova pagina viene creata e la pagina viene elencata nella scheda **[!UICONTROL Siti Web]** .
+1. Selezionate **[!UICONTROL Geometrixx editor]** risorse e fate clic su **[!UICONTROL Crea]**. La nuova pagina viene creata e la pagina viene elencata nella scheda **[!UICONTROL Siti Web]** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-La pagina di base creata con il modello Geometrixx Asset Editor si presenta come segue:
+La pagina di base creata con il modello di Editor risorse di Geometrixx si presenta come segue:
 
 ![assetshare5](assets/assetshare5.bmp)
 
-Per personalizzare la pagina Editor risorse, usate gli elementi della barra laterale. La pagina Editor risorse a cui si accede da **[!UICONTROL Geometrixx Press Center]** è una versione personalizzata di una pagina basata su questo modello:
+Per personalizzare la pagina Editor risorse, usate gli elementi della barra laterale. La pagina Editor risorse a cui si accede dal Centro **** stampa è una versione personalizzata di una pagina basata su questo modello:
 
 ![assetshare6](assets/assetshare6.bmp)
 
@@ -258,7 +261,7 @@ Per aggiungere componenti dell’editor di risorse:
 
 #### Modulo metadati e campo di testo - Configurazione del componente Visualizza metadati {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra questi due campi è possibile immettere i campi **[!UICONTROL Testo]** . Per ulteriori informazioni sull&#39;uso dei moduli, vedere [Moduli](../sites-authoring/default-components.md) .
+Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra questi due campi è possibile immettere i campi **[!UICONTROL Testo]** . Per ulteriori informazioni sull&#39;uso dei moduli, vedere [Forms](../sites-authoring/default-components.md) .
 
 1. Per creare un&#39;azione iniziale, fare clic su **[!UICONTROL Modifica]** nell&#39;area Inizio del modulo. Se necessario, potete immettere un titolo Casella. Per impostazione predefinita, il titolo Casella è **[!UICONTROL Metadati]**. Selezionare la casella di controllo Convalida client se si desidera generare il codice client Java-script per la convalida.
 
@@ -275,7 +278,7 @@ Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra q
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Consulta [Personalizzazione ed estensione di Risorse](extending-assets.md) AEM per informazioni sulla modifica degli spazi dei nomi disponibili nel modulo di metadati.
+   Consultate [Personalizzazione ed estensione  AEM Assets](extending-assets.md) per informazioni sulla modifica degli spazi dei nomi disponibili nel modulo di metadati.
 
 1. Click the **[!UICONTROL Constraints]** tab. Qui è possibile selezionare se un campo è obbligatorio e, se necessario, aggiungere eventuali vincoli.
 
@@ -327,9 +330,9 @@ Di seguito è riportato un componente Tag popolato:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura {#thumbnail}
+#### Miniatura  {#thumbnail}
 
-Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che è possibile modificare](assets-finder-editor.md#adding-asset-editor-actions).
+Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che è possibile modificare](assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
@@ -368,6 +371,7 @@ Potete determinare quali azioni possono essere eseguite dagli utenti sulle risor
 Per aggiungere azioni alla pagina Editor risorse:
 
 1. Nella pagina Editor risorse che desiderate personalizzare, fate clic su Editor **** risorse nella barra laterale.<br>
+
    ![seleziona editor risorse nella barra laterale](assets/screen_shot_2012-04-23at35515pm.png)
 
    Sono disponibili le azioni seguenti:
@@ -387,7 +391,7 @@ Per aggiungere azioni alla pagina Editor risorse:
 
 ## Modificare più risorse con la pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Risorse AEM consente di apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
+Con  AEM Assets potete apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
 
 * Tag
 * Metadati
@@ -399,11 +403,12 @@ Per modificare più risorse con la pagina Editor risorse:
 
    * in Windows: `Ctrl + click` ciascuna risorsa.
    * in Mac: `Cmd + click` ciascuna risorsa.
+
    Per selezionare un intervallo di risorse: fate clic sulla prima risorsa e quindi `Shift + click` sull’ultima.
 
 1. Fate clic su **[!UICONTROL Modifica metadati]** nel campo **Azioni** (parte sinistra della pagina).
 
-1. La pagina Editor **[!UICONTROL risorse]** per centro stampa Geometrixx si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
+1. La pagina Editor **[!UICONTROL risorse del centro]** stampa si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
 
    * Un tag, che non si applica a tutte le risorse ma solo ad alcune, viene visualizzato in corsivo.
    * Un tag applicato a tutte le risorse viene visualizzato con un font normale.
@@ -414,18 +419,20 @@ Per modificare più risorse con la pagina Editor risorse:
 
    * Un tag che non si applica a tutte le risorse, ma solo ad alcune ha uno sfondo grigio.
    * Un tag applicato a tutte le risorse ha uno sfondo bianco.
-   Tieni presente quanto segue:
+
+   Operazioni disponibili:
 
    * Fate clic sull’ `x` icona per rimuovere il tag per tutte le risorse.
    * Fate clic sull’ `+` icona per aggiungere il tag a tutte le risorse.
    * Fate clic su di esso `arrow` e selezionate un tag per aggiungere un nuovo tag a tutte le risorse.
+
    Fare clic su **[!UICONTROL OK]** per scrivere le modifiche al modulo. La casella accanto al campo **Tag** viene selezionata automaticamente.
 
-1. Modificare il campo Descrizione. Ad esempio, impostatelo su: `This is a common description`. Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate quando il modulo viene inviato. La casella accanto al campo viene selezionata automaticamente quando il campo viene modificato.
+1. Modificare il campo Descrizione. Ad esempio, impostatelo su: `This is a common description`. Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate al momento dell&#39;invio del modulo. La casella accanto al campo viene selezionata automaticamente quando il campo viene modificato.
 
    `This is a common description`
 
-   Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate quando il modulo viene inviato.
+   Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate al momento dell&#39;invio del modulo.
 
    Nota: la casella accanto al campo viene selezionata automaticamente quando il campo viene modificato.
 
