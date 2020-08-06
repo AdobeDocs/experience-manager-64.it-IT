@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente per l’authoring in AEM 6.4
+user-guide-title: Guida utente per l'authoring di AEM 6.4
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
 source-git-commit: e0b25517821971098978db078b2f205a8a380459
@@ -13,10 +13,10 @@ ht-degree: 89%
 ---
 
 
-# Guida utente per l’authoring in AEM 6.4 {#authoring}
+# Guida utente per l&#39;authoring di AEM 6.4 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per l’authoring con AEM {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
    + [Concetto di authoring](author.md)
@@ -41,7 +41,7 @@ ht-degree: 89%
    + [Authoring di una pagina per dispositivi mobili ](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice ](best-practices.md)
+   + [Best practice  ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
