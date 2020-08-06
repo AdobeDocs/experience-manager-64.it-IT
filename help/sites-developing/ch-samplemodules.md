@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +34,11 @@ Il tipo di modulo dell’interfaccia utente contexthub.base è il tipo di base p
 
 Sono disponibili le seguenti funzioni:
 
-* **** Titolo e icona: Specificate un titolo per il modulo dell’interfaccia utente e un’icona. È possibile fare riferimento all&#39;icona utilizzando un URL o dalla libreria delle icone dell&#39;interfaccia utente Coral.
-* **** Archivia dati: Identificare uno o più store da cui recuperare i dati.
-* **** Contenuto: Specificate il contenuto che viene visualizzato nel modulo dell&#39;interfaccia utente così come appare nella barra degli strumenti ContextHub.
-* **** Contenuto poster: Specificate il contenuto che viene visualizzato in un contenitore quando si fa clic o si tocca il modulo dell&#39;interfaccia utente.
-* **** Modalità a schermo intero: Controllare se la modalità a schermo intero è consentita.
+* **Titolo e icona:** Specificate un titolo per il modulo dell’interfaccia utente e un’icona. È possibile fare riferimento all&#39;icona utilizzando un URL o dalla libreria delle icone dell&#39;interfaccia utente Coral.
+* **Archivia dati:** Identificare uno o più store da cui recuperare i dati.
+* **Contenuto:** Specificate il contenuto che viene visualizzato nel modulo dell&#39;interfaccia utente così come viene visualizzato nella barra degli strumenti ContextHub.
+* **Contenuto poster:** Specificate il contenuto che viene visualizzato in un contenitore quando si fa clic o si tocca il modulo dell&#39;interfaccia utente.
+* **Modalità a schermo intero:** Controllare se la modalità a schermo intero è consentita.
 
 Il codice sorgente si trova in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
@@ -43,29 +46,29 @@ Il codice sorgente si trova in /libs/granite/contexthub/code/ui/container/js/Con
 
 Configurate il modulo dell&#39;interfaccia utente contexthub.base utilizzando un oggetto Javascript in formato JSON. Per configurare le funzioni del modulo dell’interfaccia utente, includete una delle seguenti proprietà:
 
-* **** image: URL di un&#39;immagine da visualizzare come icona.
-* **** icona: Il nome di una classe di icone [dell&#39;interfaccia utente](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Se specificate un valore per le proprietà dell&#39;icona e dell&#39;immagine, l&#39;immagine viene utilizzata.
+* **image:** URL di un&#39;immagine da visualizzare come icona.
+* **icona:** Il nome di una classe di icone [dell&#39;interfaccia utente](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Se specificate un valore per le proprietà dell&#39;icona e dell&#39;immagine, l&#39;immagine viene utilizzata.
 
-* **** title: Titolo per il modulo dell’interfaccia utente. Il titolo viene visualizzato quando il puntatore viene messo in pausa sull&#39;icona del modulo dell&#39;interfaccia utente.
-* **** fullscreen: Valore booleano che indica se il modulo dell&#39;interfaccia utente supporta la modalità a schermo intero. Utilizzare `true` per supportare la modalità a schermo intero e `false` per impedire la modalità a schermo intero.
+* **title:** Titolo per il modulo dell’interfaccia utente. Il titolo viene visualizzato quando il puntatore viene messo in pausa sull&#39;icona del modulo dell&#39;interfaccia utente.
+* **fullscreen:** Valore booleano che indica se il modulo dell&#39;interfaccia utente supporta la modalità a schermo intero. Utilizzare `true` per supportare la modalità a schermo intero e `false` per impedire la modalità a schermo intero.
 
-* **** modello: Modello [Handlebars](https://handlebarsjs.com/) che specifica il contenuto da eseguire il rendering nella barra degli strumenti ContextHub. Utilizzate al massimo due `<p>` tag.
+* **modello:** Modello [Handlebars](https://handlebarsjs.com/) che specifica il contenuto da eseguire il rendering nella barra degli strumenti ContextHub. Utilizzate al massimo due `<p>` tag.
 
-* **** storeMapping: Mappatura chiave/store. Utilizzate la chiave nei modelli Handlebar per accedere ai dati dell&#39;archivio ContextHub associati.
-* **** elenco: Un array di elementi da visualizzare come elenco in un puntatore quando si fa clic sul modulo dell&#39;interfaccia utente. Se includete questo elemento, non includete possverTemplate. Il valore è un array di oggetti con le seguenti chiavi:
+* **storeMapping:** Mappatura chiave/store. Utilizzate la chiave nei modelli Handlebar per accedere ai dati dell&#39;archivio ContextHub associati.
+* **elenco:** Un array di elementi da visualizzare come elenco in un puntatore quando si fa clic sul modulo dell&#39;interfaccia utente. Se includete questo elemento, non includete possverTemplate. Il valore è un array di oggetti con le seguenti chiavi:
 
    * title: Testo da visualizzare per l&#39;elemento
    * image: (Facoltativo) URL di un&#39;immagine che deve essere visualizzata a sinistra
    * icona: (Facoltativo) Una classe di icone CUI da visualizzare a sinistra; ignorato se viene specificata un&#39;immagine
    * selezionato: (Facoltativo) Un valore booleano che specifica se l&#39;elemento deve essere visualizzato come selezionato (true=selezionato). Per impostazione predefinita, gli elementi selezionati vengono visualizzati in grassetto. Utilizzare una `listType` proprietà per configurare altri aspetti (vedere di seguito).
 
-* **** listType: Stile da utilizzare per le voci dell&#39;elenco di contenitori. Utilizzate uno dei seguenti valori:
+* **listType:** Stile da utilizzare per le voci dell&#39;elenco di contenitori. Utilizzate uno dei seguenti valori:
 
    * segno di spunta
-   *  Casella
+   * Casella
    * radio
 
-* **** poverTemplate: Un modello Handlebars che specifica il contenuto da eseguire nel puntatore quando si fa clic sul modulo dell&#39;interfaccia utente. Se includete questo elemento, non includete l&#39; `list` elemento.
+* **poverTemplate:** Un modello Handlebars che specifica il contenuto da eseguire nel puntatore quando si fa clic sul modulo dell&#39;interfaccia utente. Se includete questo elemento, non includete l&#39; `list` elemento.
 
 ### Esempio {#example}
 
