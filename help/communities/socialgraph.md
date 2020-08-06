@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 2%
 
 ---
 
@@ -29,15 +32,15 @@ Il `Following`componente elenca semplicemente i membri che seguono il membro cor
 
 Se desiderate aggiungere un `Following`componente a una pagina in modalità di creazione, individuate il componente `Communities / Following` e trascinatelo nella posizione desiderata su una pagina in cui dovrebbe comparire il grafico social.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](essentials-socialgraph.md#essentials-for-client-side) richieste, verrà visualizzato il `Following` componente:
 
 ![chlimage_1-447](assets/chlimage_1-447.png)
 
-## Configurazione {#configuring-following}
+## Configurazione di quanto segue {#configuring-following}
 
-Attualmente è necessario impostare la proprietà per determinare se il componente visualizza la `follows`relazione o la `following`relazione.
+Al momento è necessario impostare la proprietà per determinare se il componente visualizza la `follows`relazione o la `following`relazione.
 
 ## Informazioni aggiuntive {#additional-information}
 
