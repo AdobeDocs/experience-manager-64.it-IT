@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -26,11 +29,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >È soggetto a modifiche con il rilascio di 6.3 GA Service Pack 1.
 
-AEM Mobile Content Services è una funzione leggera per richiedere contenuti gestiti da AEM. Questo offre a tutti gli sviluppatori di app un modo altamente performante per recuperare contenuti senza dover conoscere a fondo l&#39;archivio dei contenuti (JCR) di AEM e il framework Web (Sling). Consente di scollegare le applicazioni richieste dall&#39;archivio dei contenuti.
+ AEM Mobile Content Services è una funzionalità leggera per la richiesta di contenuti gestiti da AEM. Questo fornisce a tutti gli sviluppatori di app un modo altamente performante per recuperare il contenuto senza dover conoscere a fondo AEM repository dei contenuti (JCR) e il framework Web (Sling). Consente di scollegare le applicazioni richieste dall&#39;archivio dei contenuti.
 
-Content Services introduce diversi nuovi costrutti AEM che consentono a uno sviluppatore di accedere al contenuto gestito da AEM senza conoscere la struttura del repository di tale contenuto.
+Content Services introduce diversi nuovi costrutti AEM che consentono a uno sviluppatore di accedere AEM contenuto gestito senza conoscere la struttura del repository di tale contenuto.
 
-Questi costrutti sono necessari per mantenere la flessibilità e consentire un&#39;espansione futura fornendo un livello di astrazione tra il contenuto gestito da AEM e le app mobili che consumano il contenuto. In questo modo AEM Content Services può fungere da livello di astrazione tra i requisiti di contenuto dell’applicazione nativa e l’archivio dei contenuti di AEM.
+Questi costrutti sono necessari per mantenere la flessibilità e consentire l&#39;espansione futura fornendo un livello di astrazione tra il contenuto gestito AEM e le app mobili che consumano il contenuto. In questo modo AEM Content Services può fungere da livello di astrazione tra i requisiti di contenuto dell&#39;applicazione nativa e l&#39;archivio dei contenuti AEM.
 
 Content Services può distribuire i contenuti come risorse, pacchetti HTML (HTML/CSS/JS) o come contenuti indipendenti dai canali.
 
@@ -44,8 +47,8 @@ Content Services può distribuire i contenuti come risorse, pacchetti HTML (HTML
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-Dopo aver impostato il flag Content Services e i modelli di dati attivati nel browser di configurazione, consulta le risorse riportate di seguito per iniziare a utilizzare AEM Mobile Content Services, acquisisci familiarità con i concetti di Content Services come la gestione dei modelli, la gestione delle entità e la distribuzione/rendering dei contenuti per AEM Mobile Content Services.
+Dopo aver impostato il flag Content Services e i modelli di dati abilitati nel browser di configurazione, consulta le risorse riportate di seguito per iniziare a utilizzare  AEM Mobile Content Services, per acquisire familiarità con i concetti di Content Services come la gestione dei modelli, la gestione delle entità e la distribuzione/rendering dei contenuti per  AEM Mobile Content Services.
 
-* Modelli in repository
+* Modelli nell&#39;archivio
 * Rendering e distribuzione
 
