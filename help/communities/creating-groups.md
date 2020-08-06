@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 2%
 
 ---
 
@@ -25,11 +28,11 @@ Un modello [di gruppo](tools-groups.md) community fornisce la progettazione dell
 
 Uno o più modelli di gruppo vengono selezionati per la funzione dei gruppi quando la funzione viene aggiunta alla struttura di un sito community o a un modello di sito community. Questo elenco di modelli di gruppo viene presentato al membro o all&#39;autore che crea in modo dinamico un nuovo gruppo dall&#39;interno del sito della community.
 
-## Creazione di un nuovo gruppo {#creating-a-new-group}
+## Creating a New Group {#creating-a-new-group}
 
 La capacità di creare un nuovo gruppo di community si basa sull&#39;esistenza di un sito community che include la funzione dei gruppi, come quella creata dal ` [Reference Site Template](sites.md)`.
 
-Gli esempi che seguono utilizzano il sito della community creato a partire dal `Reference Site Template` sito come descritto nell&#39;esercitazione [Guida introduttiva ad AEM Communities](getting-started.md) .
+Gli esempi seguenti utilizzano il sito della community creato a partire da `Reference Site Template` come descritto in [Guida introduttiva  esercitazione AEM Communities](getting-started.md) .
 
 Pagina che viene caricata al momento della pubblicazione quando è selezionata la voce di menu **[!UICONTROL Gruppi]** :
 
@@ -41,17 +44,19 @@ Nella scheda **[!UICONTROL Impostazioni]** , sono disponibili le funzioni di bas
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-* **[!UICONTROL Nome]** gruppo Titolo del gruppo da visualizzare sul sito della community.
+* **[!UICONTROL Nome]** gruppo Il titolo del gruppo da visualizzare sul sito della community.
 
 * **[!UICONTROL Descrizione]** Una descrizione del gruppo da visualizzare sul sito della community.
 
-* **[!UICONTROL Invita]** Un elenco di membri da invitare a far parte del gruppo. La ricerca con tipo di programma fornirà suggerimenti da invitare ai membri della community.
+* **[!UICONTROL Invita]** Un elenco di membri da invitare a far parte del gruppo. La ricerca di tipo &quot;Type-ahead&quot; fornirà suggerimenti da invitare da parte dei membri della community.
 
 * **[!UICONTROL Nome]** URL gruppo Il nome della pagina del gruppo che diventa parte dell’URL.
 
-* **[!UICONTROL Apri gruppo]** Selezionando `Open Group` , qualsiasi visitatore anonimo del sito potrebbe visualizzare il contenuto e verrà deselezionato `Member Only Group`.
+* **[!UICONTROL Apri gruppo]** selezione 
+`Open Group` indica che qualsiasi visitatore anonimo del sito può visualizzare il contenuto e deseleziona `Member Only Group`.
 
-* **[!UICONTROL Gruppo]** Solo membriSelezionando `Member Only Group` solo i membri del gruppo possono visualizzare il contenuto e deselezionare `Open Group`.
+* **[!UICONTROL Selezione Solo Gruppo]** Membri 
+`Member Only Group` indica che solo i membri del gruppo possono visualizzare il contenuto e ne deseleziona `Open Group`.
 
 Nella scheda **[!UICONTROL Modello]** è possibile selezionare dall&#39;elenco dei modelli di gruppo community specificati quando la funzione dei gruppi è stata inclusa nella struttura del sito community o in un modello di sito community.
 
