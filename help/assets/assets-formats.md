@@ -1,6 +1,6 @@
 ---
-title: Formati di file supportati nei AEM Assets
-description: Elenco dei formati di file e dei tipi MIME supportati dai AEM Assets e delle funzioni supportate per ciascun formato.
+title: Formati di file supportati in  AEM Assets
+description: Elenco dei formati di file e dei tipi MIME supportati da  AEM Assets e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -11,11 +11,11 @@ ht-degree: 9%
 ---
 
 
-# Formati di file supportati nei AEM Assets {#assets-supported-formats}
+# Formati di file supportati in  AEM Assets {#assets-supported-formats}
 
-I AEM Assets supportano un&#39;ampia gamma di formati di file e ogni funzionalità supporta vari tipi MIME.
+ AEM Assets supporta un&#39;ampia gamma di formati di file e ogni funzionalità supporta vari tipi MIME.
 
-Per integrare AEM Assets con altre soluzioni DAM (Digital Asset Management) conformi agli standard e software desktop, utilizzate l&#39;Extensible Metadata Platform (XMP) di Adobe.
+Per integrare  AEM Assets con altre soluzioni di gestione delle risorse digitali (DAM) conformi agli standard e software desktop, utilizzate  Adobe  Extensible Metadata Platform (XMP).
 
 Utilizzate la legenda per comprendere il livello di supporto.
 
@@ -45,9 +45,9 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da  Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
-I formati immagine raster supportati dalle funzioni Dynamic Media sono i seguenti:
+I formati immagine raster supportati per le funzioni di Dynamic Media sono i seguenti:
 
 | Formato | Carica<br> (formato di input) | Creare<br> un predefinito<br> per immagini<br> (formato di output) | Anteprima<br> rappresentazione dinamica<br> | Distribuzione<br> di rappresentazioni dinamiche<br> | Download<br> della rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -65,7 +65,7 @@ I formati immagine raster supportati dalle funzioni Dynamic Media sono i seguent
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da  Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 Oltre alle informazioni di cui sopra, considerate quanto segue:
 
@@ -73,15 +73,15 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 * La funzione di reimpostazione dei metadati funziona per il formato di file PSB quando viene aggiunta al `NComm` gestore.
 
-* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, consultate Formati di file [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per i file EPS, la funzione di writeback dei metadati è supportata in PostScript Document Structuring Convention (PS-Adobe) versione 3.0 o successiva.
+* Per i file EPS, la funzione di writeback dei metadati è supportata in PostScript Document Structuring Convention (Adobe PS-) versione 3.0 o successiva.
 
 ## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Dynamic Media.
+Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Contenuti multimediali dinamici.
 
-Consultate anche [Rilevamento di formati di file non supportati per Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Consultate anche [Rilevamento di formati di file non supportati per gli elementi multimediali](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dinamici.
 
 * File PNG con dimensioni blocco IDAT superiori a 100 MB.
 * File PSB.
@@ -92,7 +92,7 @@ Consultate anche [Rilevamento di formati di file non supportati per Dynamic Medi
 
 ## Libreria Rasterizer PDF {#supported-pdf-rasterizer-library}
 
-La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF di grandi dimensioni e ricchi di contenuti. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
+La libreria  Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF  grandi e ricchi di contenuti.  Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
 
 * I file AI/PDF ad alta intensità di contenuto che richiedono molte risorse per l&#39;elaborazione.
 * File AI/PDF, per i quali le miniature non vengono generate per impostazione predefinita.
@@ -102,7 +102,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Libreria di transcodifica immagini {#supported-image-transcoding-library}
 
-La libreria Adobe Imaging Transcoding è una soluzione di elaborazione delle immagini che esegue funzioni fondamentali per la gestione delle immagini, come la codifica, la transcodifica, il ricampionamento e il ridimensionamento.
+La libreria  Adobe Imaging Transcoding è una soluzione di elaborazione delle immagini che esegue funzioni fondamentali per la gestione delle immagini, come codifica, transcodifica, ricampionamento e ridimensionamento.
 
 La libreria di transcodifica delle immagini supporta i tipi JPG/JPEG, PNG (8 bit e 16 bit), GIF, BMP, TIFF/Compresso TIFF (a parte file TIFF a 32 bit e PTIFF), ICO e ICN MIME.
 
@@ -110,7 +110,7 @@ Consultate Libreria [transcodifica](imaging-transcoding-library.md)Imaging.
 
 ## Camera Raw {#supported-camera-raw}
 
-La libreria Adobe Camera Raw consente agli AEM Assets di acquisire immagini crude. See [Camera Raw Support](camera-raw.md).
+La  libreria Adobe Camera Raw consente  AEM Assets di acquisire immagini crude. See [Camera Raw Support](camera-raw.md).
 
 ## Formati documento {#supported-document-formats}
 
@@ -137,7 +137,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-I formati dei documenti supportati per le funzioni Dynamic Media sono i seguenti:
+I formati dei documenti supportati per le funzioni per elementi multimediali dinamici sono i seguenti:
 
 | Formato | Carica<br> (formato di input) | Creare<br> un predefinito<br> per immagini<br> (formato di output) | Anteprima<br> rappresentazione dinamica<br> | Distribuzione<br> di rappresentazioni dinamiche<br> | Download<br> della rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -162,11 +162,11 @@ I formati dei documenti supportati per le funzioni Dynamic Media sono i seguenti
 
 Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file PDF, consultate Formati di file [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare gli elementi multimediali dinamici per generare rappresentazioni dinamiche per i file PDF, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, consultate Formati di file [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file INDD, consultate Formato [di file](../assets/managing-image-presets.md#indesign-indd-file-format)InDesign (INDD).
+* Per utilizzare gli elementi multimediali dinamici per generare rappresentazioni dinamiche per i file INDD, consultate [formato](../assets/managing-image-presets.md#indesign-indd-file-format)di file InDesign (INDD).
 
 ## Formati multimediali {#supported-multimedia-formats}
 
@@ -191,13 +191,13 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Formati video di input per Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formati video di input per la transcodifica di contenuti multimediali dinamici {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Estensione dei file video | Contenitore | Codec video consigliati | Codec video non supportati |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| FLV, F4V | Flash Adobe  | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
@@ -216,7 +216,7 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
 I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Distribuzione Dynamic Media |
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -224,13 +224,13 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno. Gli archivi ZIP creati con `Deflate64` l’algoritmo dispongono di un supporto limitato in AEM. Le operazioni di archiviazione e annullamento dell&#39;archiviazione non sono supportate. Tuttavia, sono supportate operazioni quali il caricamento, la navigazione e il download.
+**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da  Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno. Gli archivi ZIP creati con `Deflate64` l&#39;algoritmo dispongono di un supporto limitato in AEM. Le operazioni di archiviazione e annullamento dell&#39;archiviazione non sono supportate. Tuttavia, sono supportate operazioni quali il caricamento, la navigazione e il download.
 
 ## Altri formati supportati {#other-supported-formats}
 
 L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente.
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Distribuzione Dynamic Media |
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -243,9 +243,9 @@ L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di 
 
 ## Supported MIME types {#supported-mime-types}
 
-Per impostazione predefinita, AEM rileva il tipo di file utilizzando l’estensione file. AEM è in grado di rilevarlo dal contenuto dei file. In quest’ultimo caso, selezionate l’opzione [!UICONTROL Rileva MIME dal contenuto] in Servizio  Day CQ DAM Mime Type nella console Web di AEM.
+Per impostazione predefinita, AEM rileva il tipo di file utilizzando l&#39;estensione del file. AEM rilevarlo dal contenuto dei file. In quest’ultimo caso, selezionate [!UICONTROL l’opzione Rileva MIME dal contenuto] in Servizio  Day CQ DAM Mime Type nella AEM console Web.
 
-Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite all&#39;indirizzo `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Estensione file | Tipo MIME/ Tipo di supporto Internet | Valore jobParam predefinito | Valore jobParam consentito |
 |---|---|---|---|
@@ -307,6 +307,6 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite all&#39;indirizz
 
 >[!MORELIKETHIS]
 >
->* [Supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento di risorse/Scene7 basati su tipi MIME.
+>* [Abilita il supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di processo di caricamento risorse/Scene7 basati su tipi MIME.
 >* [Configurare il supporto](config-dynamic.md)dei parametri di processo di caricamento in base al tipo MIME.
 
