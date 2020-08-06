@@ -13,6 +13,9 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
 source-git-commit: dbb6156b375382a23b9a3faece2dcdf47fd7cd82
+workflow-type: tm+mt
+source-wordcount: '2350'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +34,15 @@ L&#39;API REST fornisce l&#39;accesso esattamente alle stesse funzionalità tram
 
 >[!NOTE]
 >
->L&#39;API QueryBuilder viene creata utilizzando l&#39;API JCR. Potete anche eseguire una query sul JCR di Adobe Experience Manager utilizzando l&#39;API JCR dall&#39;interno di un bundle OSGi. Per informazioni, consultate [Query sui dati di Adobe Experience Manager tramite l&#39;API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
+>L&#39;API QueryBuilder viene creata utilizzando l&#39;API JCR. Potete anche eseguire una query su Adobe Experience Manager JCR utilizzando l&#39;API JCR da un bundle OSGi. Per informazioni, consultate [Query sui dati Adobe Experience Manager tramite l&#39;API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
 
 ## Sessione Gem {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici di Adobe Experience Manager forniti dagli esperti Adobe. Questa sessione dedicata al generatore di query è molto utile per una panoramica e l&#39;utilizzo dello strumento.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici in Adobe Experience Manager forniti da  esperti Adobe. Questa sessione dedicata al generatore di query è molto utile per una panoramica e l&#39;utilizzo dello strumento.
 
 >[!NOTE]
 >
->Consulta i moduli di [ricerca della sessione AEM Gem semplificati con il querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) AEM per una panoramica dettagliata del generatore di query.
+>Consulta i moduli di [ricerca AEM Gem semplificati con il querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) AEM per una panoramica dettagliata del generatore di query.
 
 ## Query di esempio {#sample-queries}
 
@@ -115,7 +118,7 @@ La query restituirà il `p.limit` valore predefinito dei `10` risultati con un `
 "offset": 0,
 ```
 
-A partire da AEM 6.0 SP2, potete anche utilizzare un valore numerico per conteggiare fino a un numero personalizzato di risultati massimi. Utilizzate la stessa query di cui sopra, ma modificate il valore di `p.guessTotal` in `50`:
+A partire da AEM 6.0 SP2, è anche possibile utilizzare un valore numerico per contare fino a un numero personalizzato di risultati massimi. Utilizzate la stessa query di cui sopra, ma modificate il valore di `p.guessTotal` in `50`:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -323,7 +326,7 @@ separati da uno spazio:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) p.hits=Selective&amp; [](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3article&amp;property.value=Triangle
+[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=Selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3article&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -423,7 +426,7 @@ Per tali proprietà principali, è possibile ridurre la query e utilizzare &quot
 
 >[!NOTE]
 >
->Per informazioni su come creare un bundle OSGi che utilizza l’API QueryBuilder e utilizzare il bundle OSGi all’interno di un’applicazione Adobe Experience Manager, consultate [Creazione di bundle Adobe CQ OSGi che utilizzano l’](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API Query Builder.
+>Per informazioni su come creare un bundle OSGi che utilizza l’API QueryBuilder e utilizzare il bundle OSGi all’interno di un’applicazione Adobe Experience Manager, consultate [Creazione  bundle Adobe CQ OSGi che utilizzano l’](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API Query Builder.
 
 La stessa query eseguita su HTTP tramite il servlet Query Builder (JSON):
 
@@ -467,7 +470,7 @@ oppure, in alternativa, il servlet json querybuilder su
 
 ( `path=/tmp` è solo un esempio).
 
-### Raccomandazioni generali per il debug {#general-debugging-recommendations}
+### Debug generale di Recommendations {#general-debugging-recommendations}
 
 ### Ottenete XPath spiegabile tramite la registrazione {#obtain-explain-able-xpath-via-logging}
 
@@ -478,7 +481,7 @@ Spiegare **tutte** le query durante il ciclo di sviluppo rispetto all&#39;indice
    * Andate a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Create un nuovo logger per `com.day.cq.search.impl.builder.QueryImpl` in **DEBUG**.
 
 * Una volta attivato DEBUG per la classe sopra riportata, i registri visualizzeranno l&#39;XPath generato da Query Builder.
-* Copiate la query XPath dalla voce di registro per la query QueryBuilder associata, ad esempio:
+* Copiare la query XPath dalla voce di registro per la query QueryBuilder associata, ad esempio:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
@@ -486,7 +489,7 @@ Spiegare **tutte** le query durante il ciclo di sviluppo rispetto all&#39;indice
 
 ### Ottenete XPath spiegabile tramite il debugger di Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Utilizzate il debugger di AEM QueryBuilder per generare una query XPath spiegabile:
+* Utilizzate il debugger AEM QueryBuilder per generare una query XPath spiegabile:
 
 Spiegare **tutte** le query durante il ciclo di sviluppo rispetto all&#39;indice di destinazione impostato.
 
@@ -505,7 +508,7 @@ Spiegare **tutte** le query durante il ciclo di sviluppo rispetto all&#39;indice
 
 **Ottenete XPath spiegabile tramite il debugger di Query Builder**
 
-* Utilizzate il debugger di AEM QueryBuilder per generare una query XPath spiegabile:
+* Utilizzate il debugger AEM QueryBuilder per generare una query XPath spiegabile:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
