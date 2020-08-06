@@ -1,8 +1,8 @@
 ---
 title: Routing modello SPA
 seo-title: Routing modello SPA
-description: Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
-seo-description: Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
+description: Per le applicazioni a pagina singola in AEM, l'app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
+seo-description: Per le applicazioni a pagina singola in AEM, l'app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Routing modello SPA{#spa-model-routing}
 
-Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
+Per le applicazioni a pagina singola in AEM, l&#39;app è responsabile del routing. Questo documento descrive il meccanismo di routing, il contratto e le opzioni disponibili.
 
 >[!NOTE]
 >
->La funzione Editor applicazione per pagina singola (SPA) richiede AEM 6.4 Service Pack 2 o successivo.
+>La funzione Editor applicazione per pagina singola (SPA) richiede AEM service pack 6.4 2 o successivo.
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
@@ -66,7 +66,7 @@ Per impostazione predefinita, questo comportamento è attivato automaticamente. 
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Tenere presente che ogni route dell&#39;SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`), dal momento che `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente una volta che la route è selezionata. Anche se, se necessario, l&#39;SPA può anche definire un &quot;elenco di blocchi&quot; di rotte che devono essere ignorate da `PageModelManager`:
+Tenere presente che ogni ciclo di lavorazione dell&#39;SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`), dal momento che l&#39;utente `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente dopo aver selezionato il percorso. Anche se, se necessario, l&#39;SPA può anche definire un &quot;elenco Bloccati &quot; di rotte che deve essere ignorato dai `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
