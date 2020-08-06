@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
 translation-type: tm+mt
 source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -55,11 +58,11 @@ Affinché il commento venga visualizzato e funzioni correttamente, è necessario
 
 ### Pubblica pagina di esempio {#publish-sample-page}
 
-Dopo che il componente personalizzato è stato aggiunto alla pagina, è necessario anche (ri) [pubblicare la pagina](sites-console.md#publishing-the-site).
+Dopo che il componente personalizzato è stato aggiunto alla pagina, è inoltre necessario (ri) [pubblicare la pagina](sites-console.md#publishing-the-site).
 
 ### Pubblica: Commento Alt sulla pagina di esempio {#publish-alt-comment-on-sample-page}
 
-Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, dovrebbe essere possibile inserire un commento. Una volta effettuato l’accesso, con un utente [](tutorials.md#demo-users) dimostrativo o un amministratore, dovrebbe essere possibile pubblicare un commento.
+Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, dovrebbe essere possibile inserire un commento. Una volta effettuato l’accesso, con un utente [o un amministratore](tutorials.md#demo-users) demo, dovrebbe essere possibile pubblicare un commento.
 
 Di seguito è riportato aaron.mcdonald@mailinator.com di un commento:
 
