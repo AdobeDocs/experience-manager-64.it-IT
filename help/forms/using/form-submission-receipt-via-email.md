@@ -1,8 +1,8 @@
 ---
 title: Invio di un avviso di invio del modulo tramite e-mail
 seo-title: Invio di un avviso di invio del modulo tramite e-mail
-description: AEM Forms consente di configurare l’azione di invio tramite e-mail che invia un messaggio di conferma all’utente al momento dell’invio del modulo.
-seo-description: AEM Forms consente di configurare l’azione di invio tramite e-mail che invia un messaggio di conferma all’utente al momento dell’invio del modulo.
+description: ' AEM Forms consente di configurare l''azione di invio tramite e-mail che invia un messaggio di conferma all''utente al momento dell''invio del modulo.'
+seo-description: ' AEM Forms consente di configurare l''azione di invio tramite e-mail che invia un messaggio di conferma all''utente al momento dell''invio del modulo.'
 uuid: 77b3c836-6011-48bd-831c-ebc214218efb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ I moduli adattivi forniscono diversi flussi di lavoro per l&#39; [invio di azion
 
 Ad esempio, l’azione **Invia azione** e-mail invia un messaggio e-mail all’invio corretto di un modulo adattivo. È inoltre possibile configurare l&#39;invio tramite e-mail dei dati del modulo e del PDF.
 
-Questo articolo descrive i passaggi per attivare l’azione E-mail su un modulo adattivo e le diverse configurazioni che fornisce.
+Questo articolo descrive in dettaglio i passaggi per attivare l’azione E-mail su un modulo adattivo e le diverse configurazioni che fornisce.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ L’azione E-mail consente all’autore di inviare automaticamente e-mail a uno 
 
 >[!NOTE]
 >
->Per usare l’azione E-mail, dovete configurare il servizio e-mail AEM come descritto in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)e-mail.
+>Per utilizzare l&#39;azione E-mail, è necessario configurare il servizio di posta AEM come descritto in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)di posta elettronica.
 
 ### Attivazione dell&#39;azione e-mail in un modulo adattivo {#enabling-email-action-on-an-adaptive-form}
 
