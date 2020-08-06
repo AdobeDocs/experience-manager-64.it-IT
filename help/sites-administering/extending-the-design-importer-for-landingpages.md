@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 63%
 
 ---
 
@@ -104,7 +107,7 @@ Di seguito viene descritto come modificare il file HTML al fine di convertire al
 >
 >La marcatura HTML per convertire parti della pagina di destinazione in componenti AEM dispone di una forma estesa e di una dichiarazione di tag con abbreviazioni. Per ciascun componente vengono descritte entrambe queste forme.
 
-### Limiti {#limitations}
+### Limitazioni  {#limitations}
 
 Prima di procedere all’importazione, considerate i seguenti limiti:
 
@@ -126,7 +129,7 @@ I browser che supportano il &quot;trascinamento&quot; del file ZIP della progett
 
 Eventuali proprietà pagina (ad esempio Dominio personalizzato, Applicazione HTTPS ecc.) impostate per una pagina (che utilizza il modello Pagina di destinazione vuota) prima dell’importazione del pacchetto di progettazione vengono perdute dopo l’importazione. Si consiglia quindi di impostare le proprietà pagina dopo l’importazione del pacchetto di progettazione.
 
-### Marcatura solo HTML presunta {#html-only-markup-assumed}
+### Marcatura solo HTML supposta {#html-only-markup-assumed}
 
 Durante l’importazione il codice viene bonificato per motivi di sicurezza e per evitare di importare e pubblicare un codice non valido. Ciò presuppone che solo il codice HTML e tutte le altre forme di elementi, ad esempio i componenti web o SVG in linea, saranno esclusi dal filtro.
 
@@ -318,7 +321,7 @@ I moduli lead vengono utilizzati per raccogliere le informazioni profilo di un v
 
 * Campi per lead predefiniti: nome, cognome, indirizzo, data di nascita, genere, informazioni, ID utente, ID e-mail, pulsante Invia sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo per lead.
 * Inserendo questi componenti è possibile creare moduli per lead indipendenti, con campi per moduli lead. In applicazioni ZIP indipendenti o importate, gli utenti possono aggiungere altri campi utilizzando i campi per modulo cq:form o di invito all’azione, assegnare loro un nome e progettarli in base alle proprie esigenze.
-* Mappare i campi per i moduli lead utilizzando nomi predefiniti specifici per i moduli lead CTA, ad esempio firstName per il nome e così via.
+* Mappare i campi per i moduli lead utilizzando nomi predefiniti specifici per i moduli lead CTA, ad esempio firstName per il nome nel modulo lead e così via.
 * I campi che non vengono mappati sul modulo lead vengono mappati su componenti cq:form: testo, pulsante di scelta, casella di selezione, menu a comparsa, nascosto e password.
 * L’utente può fornire il titolo con il tag “label” e la formattazione con l’attributo di stile “class” (disponibile solo per i componenti per modulo lead CTA).
 * La pagina di ringraziamento e l’elenco di iscrizione possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti o modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
@@ -447,7 +450,7 @@ Supponiamo che vogliate fare riferimento a un componente nell’HTML utilizzando
 
 Il percorso in data-cq-component deve corrispondere al resourceType del componente.
 
-### Best practice {#best-practices}
+### Best practice   {#best-practices}
 
 Non è consigliato usare selettori CSS simili ai seguenti con elementi contrassegnati per la conversione del componente durante l’importazione.
 
@@ -568,7 +571,7 @@ Suppose the landing page is created under the campaign We.Retail and the name of
 
 Quando create il CSS, tenete presenti i seguenti limiti:
 
-Se un testo e un’immagine (modificabile) sono come segue:
+Se un testo e un’immagine (modificabile) sono simili ai seguenti:
 
 ```xml
 <div class="box">
