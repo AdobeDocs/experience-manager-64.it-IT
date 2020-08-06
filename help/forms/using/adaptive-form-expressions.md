@@ -89,7 +89,7 @@ L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un 
 
 **Tipo** di restituzione: L&#39;espressione click non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
 
-**Esempio**: Per compilare una casella di testo **textbox1** in corrispondenza dell&#39;azione clic di un pulsante con valore **AEM Forms**, fare clic con l&#39;espressione del pulsante `textbox1.value="AEM Forms"` &quot;
+**Esempio**: Per compilare una casella di testo **textbox1** in corrispondenza dell&#39;azione clic di un pulsante con valore **AEM Forms**, l&#39;espressione click del pulsante è `textbox1.value="AEM Forms"` &quot;
 
 ### Script di inizializzazione {#initialization-script}
 
@@ -166,7 +166,7 @@ Lo script Value Commit viene attivato quando:
 
 >[!NOTE]
 >
->È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, andate alla versione `https://[server]:[port]/system/console/configMgr and change` dei moduli **adattivi per compatibilità** con **AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
+>È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, passate alla versione `https://[server]:[port]/system/console/configMgr and change` Forms **adattiva per compatibilità** con **AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
 
 ### Espressione di visibilità {#visibility-expression}
 
@@ -279,11 +279,11 @@ Come già detto, i moduli adattivi consentono all&#39;autore di fornire pattern 
 
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, procedere come segue:
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa al CRXDE Lite nell’istanza di authoring.
 1. Create una cartella per mantenere i pattern personalizzati. Nella directory /apps, create un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. Sotto questo nodo, creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari pattern personalizzati che si desidera aggiungere.
 1. Aprire la scheda Proprietà del nodo creato. Ad esempio, aprire la scheda Proprietà di `textboxpatterns`. Aggiungete la `guideComponentType` proprietà a questo nodo e impostatene il valore su *fd/af/components/formatter/guideTextBox*.
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i pattern. Per i campi numerici, il valore della `guideComponentType` proprietà è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*.
-1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungete una proprietà con un nome (ad esempio `pattern1`) e impostatene il valore sul pattern da aggiungere. Ad esempio, aggiungere una proprietà `pattern1` con il valore Fax=text{99-999-999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate nei moduli adattivi.
+1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungete una proprietà con un nome (ad esempio `pattern1`) e impostatene il valore sul pattern da aggiungere. Ad esempio, aggiungere una proprietà `pattern1` con il valore Fax=text{99-999-999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Forms adattivo.
 
    ![Creazione di pattern personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
    **Figura:** *Creazione di pattern personalizzati*
