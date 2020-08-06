@@ -1,8 +1,8 @@
 ---
 title: AEM Tagging Framework
 seo-title: AEM Tagging Framework
-description: Assegnare tag ai contenuti e sfruttare l’infrastruttura di gestione dei tag AEM
-seo-description: Assegnare tag ai contenuti e sfruttare l’infrastruttura di gestione dei tag AEM
+description: Assegnare tag ai contenuti e sfruttare l’infrastruttura di tag AEM
+seo-description: Assegnare tag ai contenuti e sfruttare l’infrastruttura di tag AEM
 uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Tagging Framework{#aem-tagging-framework}
 
-Per assegnare tag ai contenuti e sfruttare l’infrastruttura di assegnazione tag AEM:
+Per assegnare tag ai contenuti e sfruttare l&#39;infrastruttura di tag AEM:
 
 * Il tag deve esistere come nodo di tipo [`cq:Tag`](#tags-cq-tag-node-type) sotto il nodo radice della [tassonomia](#taxonomy-root-node)
 
@@ -174,7 +174,7 @@ Una pratica tipica include:
 
 Affinché gli sviluppatori di applicazioni possano allegare tag a un tipo di contenuto, la registrazione del nodo ([CND](https://jackrabbit.apache.org/node-type-notation.html)) deve includere il `cq:Taggable` mixin o il `cq:OwnerTaggable` mixin.
 
-Il `cq:OwnerTaggable` mixin, che eredita da `cq:Taggable`, ha lo scopo di indicare che il contenuto può essere classificato dal proprietario/autore. In AEM è solo un attributo del `cq:PageContent` nodo. Il `cq:OwnerTaggable` mixin non è richiesto dal framework di assegnazione tag.
+Il `cq:OwnerTaggable` mixin, che eredita da `cq:Taggable`, ha lo scopo di indicare che il contenuto può essere classificato dal proprietario/autore. In AEM, è solo un attributo del `cq:PageContent` nodo. Il `cq:OwnerTaggable` mixin non è richiesto dal framework di assegnazione tag.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ La `cq:tags` proprietà è un array String utilizzato per memorizzare uno o più
 
 >[!NOTE]
 >
->Per sfruttare la funzionalità di assegnazione tag di AEM, le applicazioni sviluppate personalizzate non devono definire proprietà di tag diverse da `cq:tags`.
+>Per utilizzare AEM funzionalità di assegnazione tag, le applicazioni sviluppate personalizzate non devono definire proprietà di tag diverse da `cq:tags`.
 
 ## Spostamento e unione dei tag {#moving-and-merging-tags}
 
@@ -260,7 +260,7 @@ Di seguito è riportata una descrizione degli effetti presenti nell’archivio d
 
 ## Migrazione dei tag {#tags-migration}
 
- a partire da Experience Manager 6.4, i tag sono memorizzati in `/content/cq:tags`, precedentemente memorizzati in `/etc/tags`. Tuttavia, negli scenari in cui  Adobe Experience Manager è stato aggiornato dalla versione precedente, i tag sono ancora presenti nella vecchia posizione `/etc/tags`. Nei sistemi aggiornati i tag devono essere migrati in `/content/cq:tags`.
+ Experience Manager 6.4 in poi i tag sono memorizzati in `/content/cq:tags`, precedentemente memorizzati in `/etc/tags`. Tuttavia, negli scenari in cui Adobe Experience Manager è stato aggiornato dalla versione precedente, i tag sono ancora presenti nella vecchia posizione `/etc/tags`. Nei sistemi aggiornati i tag devono essere migrati in `/content/cq:tags`.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Di seguito è riportata una descrizione degli effetti presenti nell’archivio d
 >
 >Si consiglia di utilizzare l&#39;API di gestione tag come risorsa.
 
-**Se l’istanza di AEM aggiornata supporta l’API TagManager**
+**Se AEM&#39;istanza aggiornata supporta l&#39;API TagManager**
 
 1. All’inizio del componente, l’API TagManager rileva se si tratta di un’istanza AEM aggiornata. Nel sistema aggiornato, i tag sono memorizzati in `/etc/tags`.
 
@@ -334,13 +334,13 @@ println "---------------------------------Success-------------------------------
 
 Lo script raccoglie tutti i tag presenti `/etc/tags` nel valore della `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione sul set di risultati recuperato e risolve i valori `cq:movedTo` e `cq:backlinks` proprietà ai `/content/cq:tags` percorsi (nel caso in cui `/etc/tags` venga rilevato nel valore).
 
-**Se l’istanza AEM aggiornata viene eseguita sull’interfaccia utente classica**
+**Se l&#39;istanza AEM aggiornata viene eseguita sull&#39;interfaccia utente classica**
 
 >[!NOTE]
 >
 >L&#39;interfaccia classica non è conforme allo zero tempi di inattività e non supporta il nuovo percorso della base tag. Per utilizzare l’interfaccia classica, è necessario `/etc/tags` evitare di creare e riavviare il `cq-tagging` componente.
 
-In caso di istanze AEM aggiornate supportate dall’API TagManager e in esecuzione nell’interfaccia classica:
+In caso di istanze AEM aggiornate supportate dall&#39;API TagManager e in esecuzione nell&#39;interfaccia classica:
 
 1. Una volta che i riferimenti al vecchio percorso di base dei tag `/etc/tags` vengono sostituiti utilizzando tagId o una nuova posizione di tag `/content/cq:tags`, potete migrare i tag nella nuova posizione `/content/cq:tags` in CRX seguita dal riavvio del componente.
 
