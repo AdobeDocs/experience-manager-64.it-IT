@@ -1,8 +1,8 @@
 ---
-title: Aggiunta di funzionalità di Dynamic Media Classic alla pagina
-seo-title: Aggiunta di funzionalità di Dynamic Media Classic alla pagina
-description: Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l'ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali per la stampa e la visualizzazione Web, per dispositivi mobili, e-mail e per dispositivi di visualizzazione connessi a Internet.
-seo-description: Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l'ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali per la stampa e la visualizzazione Web, per dispositivi mobili, e-mail e per dispositivi di visualizzazione connessi a Internet.
+title: Aggiunta di funzioni Dynamic Media Classic alla pagina
+seo-title: Aggiunta di funzioni Dynamic Media Classic alla pagina
+description: ' Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, il miglioramento, la pubblicazione e la distribuzione di risorse multimediali su schermi e stampe Web, mobili, e-mail e connessi a Internet.'
+seo-description: ' Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, il miglioramento, la pubblicazione e la distribuzione di risorse multimediali su schermi e stampe Web, mobili, e-mail e connessi a Internet.'
 uuid: 66b9c150-c482-4a41-9772-fa39c135802c
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -18,11 +18,11 @@ ht-degree: 31%
 ---
 
 
-# Aggiunta di funzionalità di Dynamic Media Classic alla pagina{#adding-scene-features-to-your-page}
+# Aggiunta di funzioni Dynamic Media Classic alla pagina{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) è una soluzione in hosting per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali per schermi e stampe Web, mobili, e-mail e connessi a Internet.
+[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) è una soluzione in hosting per la gestione, il miglioramento, la pubblicazione e la distribuzione di risorse multimediali su schermi e stampe Web, mobili, e-mail e connessi a Internet.
 
-Potete visualizzare le risorse AEM pubblicate in Dynamic Media Classic in diversi visualizzatori:
+Potete visualizzare AEM risorse pubblicate in Dynamic Media Classic in diversi visualizzatori:
 
 * Zoom
 * A comparsa
@@ -30,9 +30,9 @@ Potete visualizzare le risorse AEM pubblicate in Dynamic Media Classic in divers
 * Modello immagini
 * Immagine
 
-Potete pubblicare risorse digitali direttamente da AEM ad Dynamic Media Classic e pubblicare risorse digitali da Dynamic Media Classic ad AEM.
+Potete pubblicare le risorse digitali direttamente da AEM a Dynamic Media Classic e pubblicare le risorse digitali da Dynamic Media Classic a AEM.
 
-Questa sezione descrive come pubblicare risorse digitali da AEM ad Dynamic Media Classic e viceversa. Sono inoltre descritti nel dettaglio i visualizzatori. Per informazioni sulla configurazione di AEM per Dynamic Media Classic, consultate [Integrazione di Dynamic Media Classic con AEM](/help/sites-administering/scene7.md).
+Questa sezione descrive come pubblicare risorse digitali da AEM a Dynamic Media Classic e viceversa. Sono inoltre descritti nel dettaglio i visualizzatori. Per informazioni sulla configurazione di AEM per Dynamic Media Classic, consultate [Integrazione di Dynamic Media Classic con AEM](/help/sites-administering/scene7.md).
 
 Consulta anche [Aggiunta di mappe immagine](/help/assets/image-maps.md).
 
@@ -44,13 +44,13 @@ Per ulteriori informazioni sull’uso dei componenti video con AEM, consulta i s
 >
 >If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
 
-## Pubblicazione manuale in Dynamic Media Classic da risorse {#manually-publishing-to-scene-from-assets}
+## Pubblicazione manuale su Dynamic Media Classic da risorse {#manually-publishing-to-scene-from-assets}
 
-Puoi pubblicare risorse digitali in Dynamic Media Classic dalla console Risorse nell’interfaccia classica o direttamente dalla risorsa.
+Potete pubblicare le risorse digitali su Dynamic Media Classic sia dalla console Risorse nell’interfaccia classica, sia direttamente dalla risorsa.
 
 >[!NOTE]
 >
->AEM viene pubblicato in Dynamic Media Classic in modo asincrono. After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
+>AEM viene pubblicato in modo asincrono su Dynamic Media Classic. After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
 
 
 ### Pubblicazione dalla console Assets {#publishing-from-the-assets-console}
@@ -59,11 +59,11 @@ Per pubblicare contenuti da Dynamic Media Classic dalla console Risorse se le ri
 
 1. In the AEM classic UI, click **[!UICONTROL Digital Assets]** to access the digital asset manager.
 
-1. Select the asset (or assets) or folder from within the target folder you want to publish to Dynamic Media Classic and right-click and select **[!UICONTROL Publish to Dynamic Media Classic]**. In alternativa, puoi selezionare **[!UICONTROL Pubblica in Dynamic Media Classic]** dal menu **[!UICONTROL Strumenti] .
+1. Select the asset (or assets) or folder from within the target folder you want to publish to Dynamic Media Classic and right-click and select **[!UICONTROL Publish to Dynamic Media Classic]**. In alternativa, puoi selezionare **[!UICONTROL Pubblica su elemento multimediale dinamico Classic]** dal menu **[!UICONTROL Strumenti] .
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Passate ad Dynamic Media Classic e verificate che le risorse siano disponibili.
+1. Passate a Dynamic Media Classic e verificate che le risorse siano disponibili.
 
    >[!NOTE]
    >
@@ -71,23 +71,23 @@ Per pubblicare contenuti da Dynamic Media Classic dalla console Risorse se le ri
 
 ### Pubblicazione da una risorsa {#publishing-from-an-asset}
 
-Potete pubblicare manualmente una risorsa purché sia ubicata all’interno della cartella sincronizzata di Dynamic Media Classic.
+Potete pubblicare manualmente una risorsa finché questa si trova nella cartella Dynamic Media Classic sincronizzata.
 
 >[!NOTE]
 >
->Se la risorsa non si trova nella cartella sincronizzata Dynamic Media Classic, il collegamento **[!UICONTROL Pubblica in Dynamic Media Classic]** non è disponibile.
+>Se la risorsa non si trova nella cartella sincronizzata Dynamic Media Classic, il collegamento **[!UICONTROL Pubblica su Dynamic Media Classic]** non è disponibile.
 
-**Per pubblicare contenuti in Dynamic Media Classic direttamente da una risorsa** digitale:
+**Per pubblicare contenuti su Dynamic Media Classic direttamente da una risorsa** digitale:
 
 1. In AEM, fai clic su **[!UICONTROL Risorse digitali]** per accedere al manager di risorse digitali.
 
 1. Fai doppio clic per aprire una risorsa.
 
-1. Nel riquadro dei dettagli delle risorse, selezionate **[!UICONTROL Pubblica in Dynamic Media Classic]**.
+1. Nel riquadro dei dettagli delle risorse, selezionate **[!UICONTROL Pubblica su elemento multimediale dinamico Classic]**.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. Il collegamento diventa **[!UICONTROL Pubblicazione...]** e quindi **[!UICONTROL Pubblicato]**. Andate ad Dynamic Media Classic e confermate che la risorsa sia disponibile.
+1. Il collegamento diventa **[!UICONTROL Pubblicazione...]** e quindi **[!UICONTROL Pubblicato]**. Passate a Dynamic Media Classic e verificate che la risorsa sia disponibile.
 
    >[!NOTE]
    >
@@ -95,7 +95,7 @@ Potete pubblicare manualmente una risorsa purché sia ubicata all’interno dell
 
 ### Publishing assets from outside the CQ target folder {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe consiglia di pubblicare le risorse in Dynamic Media Classic solo dalle risorse presenti nella cartella di destinazione di Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
+ Adobe consiglia di pubblicare le risorse su Dynamic Media Classic solo dalle risorse all’interno della cartella di destinazione Dynamic Media Classic. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an *ad-hoc* folder on Dynamic Media Classic.
 
 A tale scopo, configura la configurazione Cloud per la pagina in cui apparirà la risorsa. Quindi aggiungete un componente Dynamic Media Classic alla pagina e trascinate e rilasciate una risorsa sul componente. After the page properties are set for that page, a **[!UICONTROL Publish to Dynamic Media Classic]** link appears that when selected triggers uploading to Dynamic Media Classic.
 
@@ -110,7 +110,7 @@ A tale scopo, configura la configurazione Cloud per la pagina in cui apparirà l
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
 1. Fate clic su **[!UICONTROL Cloud Services > Aggiungi servizi > Dynamic Media Classic (Scene7)**.
-1. Nell’elenco a discesa Adobe Dynamic Media Classic, selezionate la configurazione desiderata, quindi fate clic su **[!UICONTROL OK]**.
+1. Nell’elenco a discesa  Adobe Dynamic Media Classic, selezionate la configurazione desiderata, quindi fate clic su **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -123,7 +123,7 @@ A tale scopo, configura la configurazione Cloud per la pagina in cui apparirà l
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Fate clic su **[!UICONTROL Controlla stato]** pubblicazione Dynamic Media Classic. Se la risorsa non è pubblicata, AEM la pubblica in Dynamic Media Classic. Dopo il caricamento, la risorsa si trova nella cartella ad-hoc. Per impostazione predefinita, la cartella ad hoc si trova nella cartella `name_of_the_company/CQ5_adhoc`. Se necessario, [è possibile configurarla](#configuringtheadhocfolder).
+1. Fate clic su **[!UICONTROL Controlla stato]** pubblicazione Dynamic Media Classic. Se la risorsa non è pubblicata, AEM pubblica la risorsa in Dynamic Media Classic. Dopo il caricamento, la risorsa si trova nella cartella ad-hoc. Per impostazione predefinita, la cartella ad hoc si trova nella cartella `name_of_the_company/CQ5_adhoc`. Se necessario, [è possibile configurarla](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -131,7 +131,7 @@ A tale scopo, configura la configurazione Cloud per la pagina in cui apparirà l
 
 ## Componenti Dynamic Media Classic (Scene7) {#scene-components}
 
-In AEM sono disponibili i seguenti componenti Dynamic Media Classic:
+I seguenti componenti Dynamic Media Classic sono disponibili in AEM:
 
 * Zoom
 * Zoom a comparsa
@@ -147,13 +147,13 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 ### Flash viewers end-of-life notice {#flash-viewers-end-of-life-notice}
 
-A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic ha dichiarato ufficialmente terminato il supporto per la piattaforma di visualizzatori Flash.
+A partire dal 31 gennaio 2017,  Adobe Dynamic Media Classic ha dichiarato ufficialmente terminato il supporto per la piattaforma di visualizzatori di Flash.
 
 For more information about this important change, see [Flash viewer end-of-life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
 ### Adding a Dynamic Media Classic component to a page {#adding-a-scene-component-to-a-page}
 
-L’aggiunta di un componente Dynamic Media Classic a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti di Dynamic Media Classic sono descritti dettagliatamente nelle sezioni seguenti.
+L’aggiunta di un componente Dynamic Media Classic a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti Dynamic Media Classic sono descritti dettagliatamente nelle sezioni seguenti.
 
 **Per aggiungere un componente/visualizzatore Dynamic Media Classic a una pagina nell’interfaccia** classica:
 
@@ -190,9 +190,9 @@ Una progettazione reattiva per le risorse significa che queste si adattano a sec
 
 ### Impostazioni comuni a tutti i componenti Dynamic Media Classic {#settings-common-to-all-scene-components}
 
-Anche se le opzioni di configurazione variano, quanto segue è comune a tutti i componenti di Dynamic Media Classic:
+Anche se le opzioni di configurazione variano, quanto segue è comune a tutti i componenti Dynamic Media Classic:
 
-* **[!UICONTROL File di riferimento]**: consente di individuare un file a cui fare riferimento. Il riferimento al file mostra l’URL della risorsa e non necessariamente l’URL completo di Dynamic Media Classic, inclusi i comandi e i parametri dell’URL. In questo campo non è possibile aggiungere parametri e comandi URL di Dynamic Media Classic. che devono essere aggiunti attraverso la funzionalità corrispondente nel componente.
+* **[!UICONTROL File di riferimento]**: consente di individuare un file a cui fare riferimento. Il riferimento al file mostra l’URL della risorsa e non necessariamente l’URL completo di Dynamic Media Classic, inclusi i comandi e i parametri dell’URL. In questo campo non è possibile aggiungere parametri e comandi URL Dynamic Media Classic. che devono essere aggiunti attraverso la funzionalità corrispondente nel componente.
 * **[!UICONTROL Larghezza]**: consente di impostare la larghezza.
 * **[!UICONTROL Altezza]**: consente di impostare l’altezza.
 
@@ -222,7 +222,7 @@ Nel componente A comparsa HTML5, la risorsa viene visualizzata come schermo divi
 
 ### Immagine {#image}
 
-Il componente Immagine classica di Dynamic Media consente di aggiungere alle immagini funzionalità di Dynamic Media Classic, ad esempio modificatori Dynamic Media Classic, predefiniti per immagini o visualizzatori e nitidezza. Il componente immagine Dynamic Media Classic è simile ad altri componenti immagine in AEM con funzionalità speciali di Dynamic Media Classic. In questo esempio, all’immagine è `&op_invert=1` applicato il modificatore URL Dynamic Media Classic.
+Il componente Immagine Dynamic Media Classic consente di aggiungere alle immagini funzionalità Dynamic Media Classic, ad esempio modificatori Dynamic Media Classic, predefiniti per immagini o visualizzatori e nitidezza. Il componente Immagine Dynamic Media Classic è simile ad altri componenti immagine in AEM con la speciale funzionalità Dynamic Media Classic. In questo esempio, all’immagine è `&op_invert=1` applicato il modificatore URL Dynamic Media Classic.
 
 ![](do-not-localize/chlimage_1-6.png)
 
@@ -240,7 +240,7 @@ Il componente Immagine classica di Dynamic Media consente di aggiungere alle imm
 
 **[!UICONTROL Formato]** di output - Selezionare il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, è possibile che siano disponibili ulteriori opzioni di configurazione. Consulta [Gestione dei predefiniti per immagini](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Nitidezza]** - Selezionate la modalità di nitidezza dell’immagine. La nitidezza viene spiegata dettagliatamente in [*Adobe Dynamic Media Classic Image Quality e nelle procedure *](/help/assets/assets/s7_sharpening_images.pdf)consigliate per la nitidezza.
+**[!UICONTROL Nitidezza]** - Selezionate la modalità di nitidezza dell’immagine. La nitidezza viene spiegata nel dettaglio in [*Adobe Qualità immagine di Dynamic Media Classic e Best practice *](/help/assets/assets/s7_sharpening_images.pdf)per la nitidezza.
 
 **[!UICONTROL Modificatori]** URL - Potete modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
@@ -248,19 +248,19 @@ Il componente Immagine classica di Dynamic Media consente di aggiungere alle imm
 
 ### Modello immagini {#image-template}
 
-[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine classici di Dynamic Media sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, dove il contenuto e le proprietà erano parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagini]** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
+[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) per immagini Dynamic Media Classic sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, con contenuti e proprietà parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagini]** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
 
 Fai clic su **[!UICONTROL Modifica]** per configurare il componente. You can configure [settings common to all Dynamic Media Classic components](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents) as well as other settings described in this section.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-**[!UICONTROL Riferimento file, Larghezza, Altezza]** - Vedere le impostazioni comuni a tutti i componenti Dynamic Media Classic.
+**[!UICONTROL Riferimento file, Larghezza, Altezza]** - Consultate le impostazioni comuni a tutti i componenti Dynamic Media Classic.
 
 >[!NOTE]
 >
->I comandi e i parametri URL di Dynamic Media Classic non possono essere aggiunti direttamente all’URL di riferimento del file. Possono essere definiti solo nell’interfaccia utente del componente del pannello **[!UICONTROL Parametri]**.
+>I comandi e i parametri dell’URL di Dynamic Media Classic non possono essere aggiunti direttamente all’URL di riferimento del file. Possono essere definiti solo nell’interfaccia utente del componente del pannello **[!UICONTROL Parametri]**.
 
-**[!UICONTROL Titolo, Testo]** Alt Nella scheda Modello [!UICONTROL immagine] Dynamic Media Classic aggiungere un titolo all’immagine e testo alternativo per gli utenti che hanno disattivato la grafica.
+**[!UICONTROL Titolo, Testo]** Alt Nella scheda Modello [!UICONTROL per immagini] Dynamic Media Classic aggiungere un titolo all’immagine e testo alt per gli utenti che hanno disattivato la grafica.
 
 **[!UICONTROL URL, Apri in]** È possibile impostare una risorsa da cui aprire un collegamento. Imposta l’**[!UICONTROL URL]** e in **[!UICONTROL Apri in]** indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 
@@ -292,7 +292,7 @@ Il testo si aggiorna con il nome dell’utente attualmente connesso. Per riprist
 
 #### Come rendere il modello di immagine Dynamic Media Classic un collegamento {#making-the-scene-image-template-a-link}
 
-**Per rendere il modello di immagine Dynamic Media Classic un collegamento**:
+**Per fare in modo che il modello di immagine Dynamic Media Classic sia un collegamento**:
 
 1. On the page with the Dynamic Media Classic image template component, click **[!UICONTROL Edit]**.
 1. Nel campo **[!UICONTROL URL]**, immetti l’URL a cui gli utenti verranno indirizzati quando fanno clic sull’immagine. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
@@ -315,26 +315,26 @@ See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 
 Adobe DAM e WCM mostrano se è stato caricato un video principale. Non mostrano queste risorse proxy:
 
-* Rappresentazioni codificate di Dynamic Media Classic
+* Rappresentazioni codificate Dynamic Media Classic
 * Set video adattivi Dynamic Media Classic
 
 Quando usate un set video adattivo con il componente video Dynamic Media Classic, dovete ridimensionare il componente per adattarlo alle dimensioni del video.
 
-## Browser dei contenuti Dynamic Media Classic {#scene-content-browser}
+## Browser contenuti Dynamic Media Classic {#scene-content-browser}
 
-Il browser Dynamic Media Classic consente di visualizzare i contenuti da Dynamic Media Classic direttamente in AEM. To access the content browser, in the Content Finder, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. La funzionalità è identica nelle due interfacce utente.
+Il browser Contenuti di Dynamic Media Classic consente di visualizzare i contenuti di Dynamic Media Classic direttamente in AEM. To access the content browser, in the Content Finder, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. La funzionalità è identica nelle due interfacce utente.
 
-Se si dispone di più configurazioni, per impostazione predefinita AEM visualizza la [configurazione predefinita](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puoi selezionare diverse configurazioni direttamente nel browser del contenuto di Dynamic Media Classic nel menu a discesa.
+Se si dispone di più configurazioni, per impostazione predefinita AEM visualizza la [configurazione predefinita](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puoi selezionare diverse configurazioni direttamente nel browser Contenuti di Dynamic Media Classic nel menu a discesa.
 
 >[!NOTE]
 >
 >* Le risorse che si trovano nella cartella ad hoc non vengono visualizzate nel browser del contenuto di Dynamic Media Classic.
->* Quando Anteprima [protetta è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate in Dynamic Media Classic vengono visualizzate nel browser dei contenuti di Dynamic Media Classic.
+>* Quando Anteprima [protetta è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate su Dynamic Media Classic vengono visualizzate nel browser dei contenuti di Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 
    >
    >
-* Per i video, il browser del contenuto Dynamic Media Classic supporta:
+* Per i video, il browser di contenuti Dynamic Media Classic supporta:
    >
    >
 * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
@@ -368,7 +368,7 @@ Per impostazione predefinita, le risorse vengono visualizzate per nome di file. 
 
 ### Ricerca di risorse Dynamic Media Classic con il browser dei contenuti {#searching-for-scene-assets-with-the-content-browser}
 
-La ricerca di risorse Dynamic Media Classic è simile alla ricerca di risorse AEM, ma quando effettuate una ricerca viene visualizzata una visualizzazione remota delle risorse nel sistema Dynamic Media Classic, anziché importarle direttamente in AEM.
+La ricerca di risorse Dynamic Media Classic è simile alla ricerca AEM risorse, ma quando effettuate una ricerca viene visualizzata una visualizzazione remota delle risorse nel sistema Dynamic Media Classic, anziché importarle direttamente in AEM.
 
 Per visualizzare e cercare le risorse è possibile utilizzare l’interfaccia touch o classica. A seconda dell’interfaccia, la modalità di ricerca è leggermente diversa.
 
@@ -386,7 +386,7 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-**[!UICONTROL Tipo di risorsa]** Selezionate Dynamic Media Classic per sfogliare il contenuto di Dynamic Media Classic. Questa opzione è disponibile solo se avete già configurato Dynamic Media Classic.
+**[!UICONTROL Tipo di risorsa]** Selezionate Dynamic Media Classic per sfogliare il contenuto Dynamic Media Classic. Questa opzione è disponibile solo se avete già configurato Dynamic Media Classic.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -394,7 +394,7 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-**[!UICONTROL Tipo]** di risorsa Nel browser Dynamic Media Classic potete filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
+**[!UICONTROL Tipo]** di risorsa Nel browser Dynamic Media Classic potete filtrare i risultati in modo da includere: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
