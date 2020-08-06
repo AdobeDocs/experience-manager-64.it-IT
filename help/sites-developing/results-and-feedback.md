@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 Come e dove vengono definiti i casi di test e il piano di test che ne risulta sono a vostra discrezione; sono disponibili molti strumenti.
 
-Tuttavia, indipendentemente dal metodo o dallo strumento scelto, le informazioni memorizzate sono:
+Tuttavia, indipendentemente dal metodo o dallo strumento scelto, le informazioni memorizzate sono le seguenti:
 
 * Deve essere:
 
