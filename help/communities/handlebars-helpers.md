@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '1540'
+ht-degree: 2%
 
 ---
 
@@ -25,13 +28,13 @@ Gli Helpers (helper) sono metodi richiamabili dagli script Handlebars per facili
 
 L&#39;implementazione include una definizione lato client e lato server. È inoltre possibile per gli sviluppatori creare helper personalizzati.
 
-Gli assistenti SCF personalizzati forniti con AEM Communities sono definiti nella libreria [client](../../help/sites-developing/clientlibs.md):
+Gli assistenti SCF personalizzati forniti con  AEM Communities sono definiti nella libreria [client](../../help/sites-developing/clientlibs.md):
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
 >[!NOTE]
 >
->Accertatevi di installare il pacchetto di funzioni Community [più recente](deploy-communities.md#latestfeaturepack).
+>Accertatevi di installare il pacchetto [di funzioni Community](deploy-communities.md#latestfeaturepack)più recente.
 
 ## Abbreviate {#abbreviate}
 
@@ -45,7 +48,7 @@ Se safeString è impostato su true, la stringa restituita è una SafeString.
 
 ### Parametri {#parameters}
 
-* **contesto**:Stringa
+* **contesto**: Stringa
 
    (facoltativo) Il valore predefinito è la stringa vuota
 
@@ -57,7 +60,7 @@ Se safeString è impostato su true, la stringa restituita è una SafeString.
 
    (facoltativo) Il valore predefinito corrisponde al numero di parole nella stringa tagliata.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (facoltativo) Restituisce un Handlebars.SafeString() se true. Il valore predefinito è false.
 
@@ -93,7 +96,7 @@ Un helper per per aggiungere due estensioni sotto un div, una per il testo compl
 
 ### Parametri {#parameters-1}
 
-* **contesto**:Stringa
+* **contesto**: Stringa
 
    (facoltativo) Il valore predefinito è la stringa vuota.
 
@@ -101,15 +104,15 @@ Un helper per per aggiungere due estensioni sotto un div, una per il testo compl
 
    (Facoltativo) Il numero di caratteri da visualizzare quando non viene visualizzato il testo completo. Il valore predefinito è 100.
 
-* **moreText**:Stringa
+* **moreText**: Stringa
 
    (Facoltativo) Il testo da visualizzare che indica che vi è più testo da visualizzare. Il valore predefinito è &quot;more&quot;.
 
-* **ellipsesText**:Stringa
+* **ellipsesText**: Stringa
 
    (Facoltativo) Il testo da visualizzare che indica che è presente del testo nascosto. Il valore predefinito è &quot;..&quot;.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (facoltativo) Valore booleano che indica se applicare o meno Handlebars.SafeString() prima di restituire il risultato. Il valore predefinito è false.
 
@@ -137,9 +140,9 @@ Assistenza per restituire una stringa data formattata.
 
    (facoltativo) valore di scostamento millisecondi dal 1 gennaio 1970 (epoch). Il valore predefinito è la data corrente.
 
-* **formato**:Stringa
+* **formato**: Stringa
 
-   (facoltativo) Formato della data da applicare. Il valore predefinito è &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; e il risultato appare come &quot;2015-03-18T18:17:13-07:00&quot;
+   (facoltativo) Formato della data da applicare. Il valore predefinito è &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; e il risultato viene visualizzato come &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Esempi {#examples-1}
 
@@ -161,11 +164,11 @@ Un helper per restituire il contenuto in base a una condizione di uguaglianza.
 
 ### Parametri {#parameters-3}
 
-* **lvalue**:Stringa
+* **lvalue**: Stringa
 
    Il valore a sinistra da confrontare
 
-* **rvalue**:Stringa
+* **rvalue**: Stringa
 
    Il valore a destra da confrontare
 
@@ -179,17 +182,17 @@ Un helper per restituire il contenuto in base a una condizione di uguaglianza.
 {{/equals}}
 ```
 
-## Modalità If-wcm {#if-wcm-mode}
+## If-wcm-mode {#if-wcm-mode}
 
 Supporto per blocchi che verifica il valore corrente della modalità [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM rispetto a un elenco di modalità separate da stringhe.
 
 ### Parametri {#parameters-4}
 
-* **contesto**:Stringa
+* **contesto**: Stringa
 
    (facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
 
-* **modalità**:Stringa
+* **modalità**: Stringa
 
    (facoltativo) Elenco separato da virgole delle modalità [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM da verificare se impostato.
 
@@ -211,15 +214,15 @@ Vedere anche [Internazionalizzazione delle stringhe nel codice](../../help/sites
 
 ### Parametri {#parameters-5}
 
-* **contesto**:Stringa
+* **contesto**: Stringa
 
    (facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
 
-* **predefinito**:Stringa
+* **predefinito**: Stringa
 
    (facoltativo) Stringa predefinita da tradurre. Obbligatorio se non viene fornito alcun contesto.
 
-* **commento**:Stringa
+* **commento**: Stringa
 
    (facoltativo) Suggerimento per la traduzione
 
@@ -236,7 +239,7 @@ Supporto per includere un componente come risorsa non esistente in un modello.
 
 Questo consente di personalizzare la risorsa in modo programmatico più facilmente di quanto sia possibile per una risorsa aggiunta come nodo JCR. Consultate [Aggiungere o includere un componente](scf.md#add-or-include-a-communities-component)Community.
 
-Sono inclusi solo alcuni componenti Community. Per AEM 6.1, sono inclusi [commenti](essentials-comments.md), [valutazioni](rating-basics.md), [revisioni](reviews-basics.md)e [votazioni](essentials-voting.md).
+Sono inclusi solo alcuni componenti Community. Per AEM 6.1, quelli che possono essere inclusi sono [commenti](essentials-comments.md), [valutazioni](rating-basics.md), [revisioni](reviews-basics.md)e [votazioni](essentials-voting.md).
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [cq:include](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -250,19 +253,19 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 
    utilizzare `this.id` per ottenere la risorsa in corrispondenza `id` del quale eseguire il rendering del resourceType richiesto
 
-* **resourceType**:Stringa
+* **resourceType**: Stringa
 
    (facoltativo) il tipo di risorsa verrà impostato come predefinito sul tipo di risorsa dal contesto
 
-* **modello**:Stringa
+* **modello**: Stringa
 
    percorso dello script di componente
 
-* **percorso**:Stringa
+* **percorso**: Stringa
 
    (obbligatorio) Percorso della risorsa. Se il percorso è relativo, è necessario fornire un contesto, altrimenti viene restituita la stringa vuota.
 
-* **authoringDisabled**:Booleano
+* **authoringDisabled**: Booleano
 
    (facoltativo) Il valore predefinito è false. Solo per uso interno.
 
@@ -272,29 +275,29 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Questo include un nuovo componente Commenti in `this.id` + /comments
+Questo includerà un nuovo componente Commenti in `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
-Un helper che include una libreria client AEM html, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
+Un helper che include una libreria client HTML AEM, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [ui:includeClientLib](../../help/sites-developing/taglib.md) per gli script JSP.
 
 ### Parametri {#parameters-7}
 
-* **categorie**:Stringa
+* **categorie**: Stringa
 
    (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie Javascript e CSS per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
 
-* **tema**:Stringa
+* **tema**: Stringa
 
-   (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (CSS e JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
+   (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (sia CSS che JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
 
-* **js**:Stringa
+* **js**: Stringa
 
-   (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie JavaScript per le categorie indicate.
+   (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie Javascript per le categorie indicate.
 
-* **css**:Stringa
+* **css**: Stringa
 
    (facoltativo) Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie CSS per le categorie specificate.
 
@@ -457,7 +460,7 @@ Panoramica rapida delle funzioni di supporto dalla documentazione [](https://han
 * Il contesto può essere un oggetto dati String, number, boolean o JSON.
 * È possibile trasmettere un oggetto nidificato nel contesto corrente come contesto, ad esempio `this.url` o `this.id` (vedere gli esempi seguenti di assistenti di blocco e semplici).
 
-* I blocchetti helper sono funzioni che possono essere chiamate da qualsiasi punto del modello. Possono richiamare un blocco del modello zero o più volte con un contesto diverso ogni volta. Contengono un contesto tra {{#*name*}} e {{/*name*}}.
+* I blocchetti helper sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare un blocco del modello zero o più volte con un contesto diverso ogni volta. Contengono un contesto tra {{#*name*}} e {{/*name*}}.
 
 * Handlebars fornisce un parametro finale agli helper denominati &#39;options&#39;. L&#39;oggetto speciale &quot;options&quot; include
 
