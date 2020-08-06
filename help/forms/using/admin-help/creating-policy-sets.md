@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 I set di criteri vengono utilizzati per raggruppare i criteri con uno scopo aziendale comune. I set di criteri possono essere resi disponibili a un sottoinsieme di utenti nel sistema.
 
-A ciascun set di criteri è associato almeno un coordinatore set di criteri. Il coordinatore *del set di* criteri è un amministratore o un utente con autorizzazioni aggiuntive. Il coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un determinato set di criteri.
+A ciascun set di criteri è associato almeno un coordinatore set di criteri. Il coordinatore *del set di* criteri è un amministratore o un utente che dispone di autorizzazioni aggiuntive. Il coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un determinato set di criteri.
 
 I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
@@ -33,9 +36,9 @@ I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
 I set di criteri vengono creati ed eliminati nell&#39;interfaccia dell&#39;amministratore di Document Security da super utenti e coordinatori di set di criteri che dispongono dell&#39;autorizzazione necessaria.
 
-Quando eliminate un set di criteri, i criteri che facevano parte del set non possono essere applicati ai nuovi documenti. Tuttavia, potete visualizzare le informazioni sui criteri sia nella console di amministrazione che nelle pagine Web dell&#39;utente finale per i criteri ancora in uso. Potete visualizzare le informazioni sui criteri dalla pagina dei dettagli del documento per qualsiasi documento protetto dal criterio. È possibile modificare i criteri ancora in uso.
+Quando eliminate un set di criteri, i criteri che facevano parte del set non possono essere applicati ai nuovi documenti. Tuttavia, potete visualizzare le informazioni sui criteri sia nella console di amministrazione che nelle pagine Web dell&#39;utente finale per i criteri ancora in uso. È possibile visualizzare le informazioni sui criteri dalla pagina dei dettagli del documento per qualsiasi documento protetto dal criterio. È possibile modificare i criteri ancora in uso.
 
-Il super utente o il coordinatore del set di criteri aggiunge i domini creati in Gestione utente all&#39;utente e al gruppo visibili per ciascun set di criteri. Questo elenco è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini che il coordinatore del set di criteri può esplorare quando sceglie gli utenti da aggiungere ai criteri.
+Il super utente o il coordinatore del set di criteri aggiunge i domini creati in Gestione utente all&#39;utente e al gruppo visibili per ciascun set di criteri. Questo elenco è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini a cui il coordinatore del set di criteri può accedere quando sceglie gli utenti da aggiungere ai criteri.
 
 Quando create dei set di criteri, assegnate agli utenti il ruolo di autore del documento. L&#39;autore *del* documento è l&#39;utente che protegge il documento con un criterio. Per impostazione predefinita, questo utente è sempre incluso in un criterio con diritti di accesso completi, incluse le funzionalità di revoca e di cambio di criteri. Tuttavia, gli amministratori possono modificare i diritti di accesso dell&#39;editore del documento per i criteri condivisi. Ad esempio, l&#39;amministratore può disattivare il diritto dell&#39;autore del documento di revocare l&#39;accesso al documento o cambiare il criterio. Se un amministratore cambia il criterio associato al documento, il nome dell&#39;editore verrà aggiornato al nome del proprietario del criterio applicato per l&#39;ultima volta al documento.
 
@@ -91,11 +94,11 @@ Durante la creazione del set di criteri, potete utilizzare il pulsante Indietro 
 1. Nella pagina Protezione documento, fare clic su Criteri, fare clic sulla scheda Set criteri e quindi sul set di criteri da modificare.
 1. Fate clic sulla scheda appropriata e modificate come necessario:
 
-   * **** Dettaglio: Modificate il nome e la descrizione del set di criteri.
-   * **** Criteri: Creare, abilitare, modificare ed eliminare i criteri all&#39;interno del set di criteri.
-   * **** Utenti e gruppi visibili: Aggiungete e rimuovete utenti e gruppi visibili che possono essere inclusi in un criterio.
-   * **** Coordinatori set di criteri: Aggiungere, rimuovere e modificare le autorizzazioni per i coordinatori.
-   * **** Editori di documenti: Aggiungete e rimuovete utenti che possono pubblicare i documenti utilizzando i criteri inclusi nel set.
+   * **Dettaglio:** Modificate il nome e la descrizione del set di criteri.
+   * **Criteri:** Creare, abilitare, modificare ed eliminare i criteri all&#39;interno del set di criteri.
+   * **Utenti e gruppi visibili:** Aggiungete e rimuovete utenti e gruppi visibili che possono essere inclusi in un criterio.
+   * **Coordinatori set di criteri:** Aggiungere, rimuovere e modificare le autorizzazioni per i coordinatori.
+   * **Editori di documenti:** Aggiungete e rimuovete utenti che possono pubblicare i documenti utilizzando i criteri inclusi nel set.
 
 1. Per eliminare un utente o un gruppo visibile, Coordinatore set di criteri o Editore documenti, fare clic sulla scheda appropriata, selezionare la casella di controllo relativa alla voce, fare clic su Elimina, quindi su OK.
 1. Per aggiungere utenti o gruppi visibili, un coordinatore di set di criteri o editori di documenti, fare clic sulla scheda appropriata, fare clic su Aggiungi utenti o gruppi, cercare l&#39;utente o il gruppo da aggiungere, selezionare la voce, fare clic su Aggiungi, quindi su OK.
@@ -106,7 +109,7 @@ Durante la creazione del set di criteri, potete utilizzare il pulsante Indietro 
 
 ## Eliminare un set di criteri {#delete-a-policy-set}
 
-Quando eliminate un set di criteri, i criteri che facevano parte del set non possono essere applicati ai nuovi documenti. Tuttavia, potete visualizzare le informazioni sui criteri sia nella console di amministrazione che nelle pagine Web dell&#39;utente finale per i criteri ancora in uso. Potete visualizzare le informazioni sui criteri dalla pagina dei dettagli del documento per qualsiasi documento protetto dal criterio. È possibile modificare i criteri ancora in uso.
+Quando eliminate un set di criteri, i criteri che facevano parte del set non possono essere applicati ai nuovi documenti. Tuttavia, potete visualizzare le informazioni sui criteri sia nella console di amministrazione che nelle pagine Web dell&#39;utente finale per i criteri ancora in uso. È possibile visualizzare le informazioni sui criteri dalla pagina dei dettagli del documento per qualsiasi documento protetto dal criterio. È possibile modificare i criteri ancora in uso.
 
 1. Fate clic su Criteri e quindi sulla scheda Set criteri.
 1. Selezionare la casella di controllo per il set di criteri da eliminare.
