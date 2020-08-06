@@ -1,6 +1,6 @@
 ---
 title: Organizzazione delle risorse digitali
-description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
+description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando  Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta pienamente le autorizzazioni corrette. I metadati sono descritti dettagliatamente nei metadati in Digital Asset Management.
 
-Risorse AEM supporta diversi modi di organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
+ AEM Assets supporta diversi metodi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
@@ -35,13 +35,13 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
    * **Cartelle** basate su data: contiene risorse digitali basate su una data di creazione o un’ultima modifica.
 
 * Create una directory di cartelle che probabilmente non verrà modificata in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già pubblicata, utilizzate AEM per spostare la risorsa in un’altra cartella e ripubblicatela dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *persa* in AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
+* Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *perduta* AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
 
 ## Organizzare le risorse tramite i tag {#use-tags-to-organize-assets}
 
-Utilizzando i tag come metadati potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classificazione di alcune risorse e sfruttare gli algoritmi AI di Adobe Sensei per l&#39;individuazione delle risorse.
+Utilizzando i tag, come metadati, potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classificazione delle ricerche per alcune risorse e sfruttare  algoritmi AI di Adobe Sensei per l&#39;individuazione delle risorse.
 
-Risorse Adobe Experience Manager utilizza un algoritmo di autoapprendimento per creare tag altamente descrittivi che consentono di trovare la risorsa giusta in pochi clic. I tag avanzati utilizzano Adobe Sensei, il nostro framework di machine learning e intelligenza artificiale, che può essere addestrato a riconoscere e applicare sia tag standard che tag aziendali specifici alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
+Adobe Experience Manager Assets utilizza un algoritmo di autoapprendimento per creare tag altamente descrittivi che consentono di trovare la risorsa giusta con pochi clic. I tag intelligenti utilizzano  Adobe Sensei, il nostro framework di machine learning e intelligenza artificiale, che può essere addestrato a riconoscere e applicare sia tag standard che specifici per il business alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
 
 Per ulteriori informazioni, consultate i seguenti articoli:
 
@@ -51,7 +51,7 @@ Per ulteriori informazioni, consultate i seguenti articoli:
 
 ## Organizzare come raccolte {#organize-as-collections}
 
-Con le raccolte di risorse in Experience Manager Assets puoi semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Create diversi tipi di raccolte in base al modo in cui le utilizzate, comprese le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano risorse in base ai criteri di ricerca.  Potete anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
+Con le raccolte di risorse in  risorse di Experience Manager, potete semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Create diversi tipi di raccolte in base al modo in cui le utilizzate, comprese le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano risorse in base ai criteri di ricerca.  Potete anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
 
 Per ulteriori informazioni, vedete [Gestione delle raccolte](managing-collections-touch-ui.md)
 
