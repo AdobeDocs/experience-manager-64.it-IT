@@ -1,8 +1,8 @@
 ---
-title: Passaggi generici per la personalizzazione dell'area di lavoro di AEM Forms
-seo-title: Passaggi generici per la personalizzazione dell'area di lavoro di AEM Forms
-description: Come iniziare a personalizzare l’interfaccia utente dell’area di lavoro Moduli AEM.
-seo-description: Come iniziare a personalizzare l’interfaccia utente dell’area di lavoro Moduli AEM.
+title: Passaggi generici per  personalizzazione dell'area di lavoro AEM Forms
+seo-title: Passaggi generici per  personalizzazione dell'area di lavoro AEM Forms
+description: Come iniziare a personalizzare 'interfaccia utente dell'area di lavoro di AEM Forms.
+seo-description: Come iniziare a personalizzare 'interfaccia utente dell'area di lavoro di AEM Forms.
 uuid: 555b5039-cd68-4090-8a8f-30b654474f55
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
 
-# Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
+# Passaggi generici per  personalizzazione dell&#39;area di lavoro AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 I passaggi generici per eseguire eventuali personalizzazioni sono:
 
-1. Accedete a CRXDE Lite accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Accedete al CRXDE Lite accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Create una cartella denominata `ws`in `/apps`, se non esiste. Fate clic su **[!UICONTROL Salva tutto]**.
 1. Individuare `/apps/ws`e passare alla scheda Controllo **** accesso.
 1. Nell&#39;elenco Controllo **** accesso, fare clic su **[!UICONTROL +]** per aggiungere una nuova voce. Fate di nuovo clic **[!UICONTROL +]** .
@@ -86,7 +89,7 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
    1. Copia `/libs/ws/js/main.js` in `/apps/ws/js/main.js`.
    1. Copiate /libs/ws/js/registry.js in `/apps/ws/js/registry.js`.
 
-1. Fai clic su **[!UICONTROL Salva tutto]**, cancella la cache e aggiorna l&#39;area di lavoro di AEM Forms.
+1. Fate clic su **[!UICONTROL Salva tutto]**, svuotate la cache e aggiornate &#39;area di lavoro AEM Forms.
 
    Accedete all’URL `https://[server]:[port]/lc/ws` ed effettuate l’accesso con le credenziali di amministratore/password. Il browser si reindirizzerà a `https://[server]:[port]/lc/apps/ws/index.html`.
 
