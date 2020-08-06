@@ -1,6 +1,6 @@
 ---
-title: Sviluppo di moduli (interfaccia classica)
-seo-title: Sviluppo di moduli (interfaccia classica)
+title: Sviluppo di Forms (interfaccia classica)
+seo-title: Sviluppo di Forms (interfaccia classica)
 description: Scopri come sviluppare moduli
 seo-description: Scopri come sviluppare moduli
 uuid: 124e63ba-8d87-4173-aa35-7809b39811d7
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 18%
 
 ---
 
 
-# Sviluppo di moduli (interfaccia classica){#developing-forms-classic-ui}
+# Sviluppo di Forms (interfaccia classica){#developing-forms-classic-ui}
 
 La struttura di base di un modulo è la seguente:
 
@@ -23,7 +26,7 @@ La struttura di base di un modulo è la seguente:
 * Elementi modulo
 * Fine modulo
 
-Tutti questi componenti sono realizzati con una serie di componenti [predefiniti per](/help/sites-authoring/default-components.md)moduli, disponibili in un’installazione standard di AEM.
+Tutti questi componenti sono realizzati con una serie di componenti [](/help/sites-authoring/default-components.md)Modulo predefiniti, disponibili in un&#39;installazione AEM standard.
 
 Oltre a [sviluppare nuovi componenti](/help/sites-developing/developing-components-samples.md) da utilizzare nei moduli, è anche possibile:
 
@@ -37,7 +40,7 @@ Oltre a [sviluppare nuovi componenti](/help/sites-developing/developing-componen
 
 >[!NOTE]
 >
->Questo documento si concentra sullo sviluppo di moduli utilizzando i componenti [](/help/sites-authoring/default-components-foundation.md) Foundation nell&#39;interfaccia classica. Adobe consiglia di utilizzare i nuovi componenti [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) core e di [nascondere le condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell’interfaccia touch.
+>Questo documento si concentra sullo sviluppo di moduli utilizzando i componenti [](/help/sites-authoring/default-components-foundation.md) Foundation nell&#39;interfaccia classica.  Adobe consiglia di utilizzare i nuovi componenti [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core e le condizioni di [](/help/sites-developing/hide-conditions.md) protezione per lo sviluppo di moduli nell’interfaccia touch.
 
 ## Precaricamento dei valori del modulo {#preloading-form-values}
 
@@ -57,7 +60,7 @@ Si tratta di un campo facoltativo, per specificare il percorso di un nodo nella 
 
 Vari campi modulo dispongono anche di Percorso **di caricamento** elementi, anch&#39;esso un percorso facoltativo che punta a un nodo nella directory archivio.
 
-Percorso **di caricamento** elementi è il percorso delle proprietà nodo utilizzato per caricare valori predefiniti in quel campo specifico del modulo, ad esempio un elenco [a](/help/sites-authoring/default-components-foundation.md#dropdown-list)discesa, un gruppo [di](/help/sites-authoring/default-components-foundation.md#checkbox-group) caselle di controllo o un gruppo [di](/help/sites-authoring/default-components-foundation.md#radio-group)pulsanti di scelta.
+Percorso **di caricamento** elementi è il percorso delle proprietà del nodo utilizzato per caricare valori predefiniti in quel campo specifico del modulo, ad esempio un elenco [a](/help/sites-authoring/default-components-foundation.md#dropdown-list)discesa, un gruppo [di](/help/sites-authoring/default-components-foundation.md#checkbox-group) caselle di controllo o un gruppo [di](/help/sites-authoring/default-components-foundation.md#radio-group)pulsanti di scelta.
 
 ### Esempio: precaricamento di un elenco a discesa con più valori {#example-preloading-a-dropdown-list-with-multiple-values}
 
@@ -81,7 +84,7 @@ Se i valori in `String[]` sono formattati come segue:
 * `AK=Alaska`
 * *etc.*
 
-AEM genererà l’elenco come:
+AEM quindi generare l’elenco come:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
@@ -92,7 +95,7 @@ Questa funzione può, ad esempio, essere utilizzata in un ambiente multilingue.
 
 Un modulo richiede un’azione Un&#39;azione definisce l&#39;operazione che viene eseguita quando il modulo viene inviato con i dati utente.
 
-Con un’installazione standard di AEM sono disponibili diverse azioni, descritte di seguito:
+Una serie di azioni vengono fornite con un&#39;installazione standard AEM, che è possibile vedere in:
 
 `/libs/foundation/components/form/actions`
 
@@ -136,7 +139,7 @@ Puoi aggiungere la tua azione in `/apps` quanto segue:
       Il nome dello script è `forward.<extension`>, ad esempio `forward.jsp`
 
       Questo script può definire un percorso. La richiesta corrente viene quindi inoltrata al percorso specificato.
-   La chiamata necessaria è `FormsHelper#setForwardPath` (2 varianti). Un caso tipico consiste nell&#39;eseguire alcune operazioni di convalida o logica per individuare il percorso di destinazione e quindi inoltrarlo a tale percorso, consentendo al servlet Sling POST predefinito di eseguire l&#39;effettiva memorizzazione in JCR.
+   La chiamata necessaria è `FormsHelper#setForwardPath` (2 varianti). Un caso tipico consiste nell&#39;eseguire alcune operazioni di convalida, o logica, per individuare il percorso di destinazione e quindi inoltrarlo a tale percorso, consentendo al servlet Sling POST predefinito di eseguire la memorizzazione effettiva in JCR.
 
    Potrebbe anche esserci un altro servlet che esegue l&#39;effettiva elaborazione, in tal caso l&#39;azione del modulo e il `forward.jsp` quale agisce solo come il codice &quot;colla&quot;. Un esempio di questo è l&#39;azione di posta in `/libs/foundation/components/form/actions/mail`, che inoltra i dettagli a `<currentpath>.mail.html`dove si trova un servlet di posta.
 
@@ -144,6 +147,7 @@ Puoi aggiungere la tua azione in `/apps` quanto segue:
 
    * a `post.POST.jsp` è utile per le operazioni di piccole dimensioni che sono completamente eseguite dall&#39;azione stessa
    * mentre `forward.jsp` è utile quando è richiesta solo la delega.
+
    L&#39;ordine di esecuzione degli script è il seguente:
 
    * Al momento del rendering del modulo ( `GET`):
@@ -185,7 +189,7 @@ Puoi aggiungere la tua azione in `/apps` quanto segue:
 
       Questo script può essere utilizzato per eseguire la pulizia.
 
-1. Utilizzare il componente **Moduli** in un parsys. Il menu a discesa Tipo **** azione ora include la nuova azione.
+1. Utilizzate il componente **Forms** in un parsys. Il menu a discesa Tipo **** azione ora include la nuova azione.
 
    >[!NOTE]
    >
@@ -283,7 +287,7 @@ In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato 
 
 1. Modificare il componente modulo specifico.
 
-1. Selezionate **Mostra/Nascondi** per aprire la finestra di dialogo **Modifica Mostra/Nascondi regole** :
+1. Selezionare **Mostra/Nascondi** per aprire la finestra di dialogo **Modifica Mostra/Nascondi regole** :
 
    * Nel primo elenco a discesa, selezionare **Mostra** o **Nascondi** per specificare se le condizioni determinano se mostrare o nascondere il componente.
    * Nell&#39;elenco a discesa alla fine della riga superiore, seleziona:
@@ -292,6 +296,7 @@ In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato 
       * **qualsiasi** - se solo una o più condizioni devono essere soddisfatte per mostrare o nascondere il componente
    * Nella riga condizione (una è presentata come impostazione predefinita), selezionate un componente, un operatore e specificate un valore.
    * Se necessario, aggiungere altre condizioni facendo clic su **Aggiungi condizione**.
+
    Ad esempio:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
@@ -314,7 +319,7 @@ In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato 
 
 #### Handling Broken Component References {#handling-broken-component-references}
 
-Per le condizioni mostra/nascondi viene utilizzato il valore della proprietà Nome elemento per fare riferimento ad altri componenti del modulo. La configurazione Mostra/Nascondi non è valida se una delle condizioni fa riferimento a un componente eliminato o la cui proprietà Nome elemento è stata modificata. Se si verifica questa situazione, è necessario aggiornare manualmente le condizioni; in caso contrario si verificherà un errore durante il caricamento del modulo.
+Per le condizioni mostra/nascondi viene utilizzato il valore della proprietà Nome elemento per fare riferimento ad altri componenti del modulo. La configurazione Mostra/Nascondi non è valida se una delle condizioni fa riferimento a un componente eliminato o per il quale è stata modificata la proprietà Nome elemento. Se si verifica questa situazione, è necessario aggiornare manualmente le condizioni; in caso contrario si verificherà un errore durante il caricamento del modulo.
 
 Se la configurazione Mostra/Nascondi non è valida, la configurazione viene fornita solo come codice JavaScript. Modificate il codice per correggere i problemi. Nel codice viene usata la proprietà Nome elemento impostata originariamente per fare riferimento ai componenti.
 
