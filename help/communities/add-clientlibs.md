@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +26,7 @@ Create una ClientLibraryFolder denominata `clientlibs`che conterrà i file JS e 
 
 Il valore della `categories`proprietà dato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
 
-1. Utilizzando **[!UICONTROL CRXDE Lite]**, espandete `/etc/designs`
+1. Utilizzando **[!UICONTROL CRXDE Lite]**, espandi `/etc/designs`
 
 1. Fare clic con il pulsante destro del mouse `an-scf-sandbox` e selezionare `Create Node`
 
@@ -36,13 +39,13 @@ Il valore della `categories`proprietà dato a questa libreria client è l&#39;id
 
 Nella scheda **[!UICONTROL Proprietà]** del nuovo `clientlibs` nodo, immettere la **`categories`** proprietà:
 
-* Nome: **[!UICONTROL categorie]**
+* Nome: **[!UICONTROL category]**
 * Tipo: **[!UICONTROL Stringa]**
 * Valore: **[!UICONTROL apps.an-scf-sandbox]**
 * Fate clic su **[!UICONTROL Aggiungi]**
 * Fate clic su **[!UICONTROL Salva tutto]**
 
-Nota: anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungere segnaposto `js.txt` e `css.txt` file. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
+Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungere segnaposto `js.txt` e `css.txt` file. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
 
 
 1. Clic destro **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -79,7 +82,7 @@ Nella scheda **[!UICONTROL Proprietà]** del `clientlibs` nodo, immettere la pro
 
 **Notate** che questo potrebbe essere l&#39;approccio desiderato per un sito di produzione, in quanto vi sono considerazioni di convenienza rispetto alla dimensione/velocità dei clientlibs scaricati per ogni pagina.
 
-Se si utilizza una sola funzione su una pagina, è possibile includere direttamente sulla pagina la clientlib completa della funzionalità, ad esempio &lt;% ui:includeClientLib category=cq.social.hbs.forum&quot; %>
+Se si utilizza una sola funzione su una pagina, è possibile includere direttamente sulla pagina la clientlib completa di tale funzione, ad esempio, &lt;% ui:includeClientLib category=cq.social.hbs.forum&quot; %>
 
 In questo caso, li includiamo tutti, e quindi preferiremmo i più basilari clientlibs SCF che sono gli autori clientlibs:
 
@@ -162,7 +165,7 @@ Questo pacchetto è disponibile nell’esercitazione [Crea una pagina](create-sa
 Per creare un pacchetto:
 
 
-* Da **[!UICONTROL CRXDE Lite]**, fate clic sull&#39;icona [Pacchetto](http://localhost:4502/crx/packmgr/)
+* In **[!UICONTROL CRXDE Lite]**, fate clic sull&#39;icona [Pacchetto](http://localhost:4502/crx/packmgr/)
 * Fate clic su **[!UICONTROL Crea pacchetto]**
 
    * Nome pacchetto: `an-scf-sandbox-minimal-pkg`
@@ -188,4 +191,4 @@ Per creare un pacchetto:
 
 * Fate clic su **[!UICONTROL Genera]**
 
-Ora potete selezionare **[!UICONTROL Scarica]** per salvarlo su disco e **[!UICONTROL caricare il pacchetto]** altrove, nonché **[!UICONTROL Altro > Replica]** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere il realm della sandbox.
+Ora potete selezionare **[!UICONTROL Scarica]** per salvarlo su disco e **[!UICONTROL caricare il pacchetto]** altrove, nonché **[!UICONTROL Altro > Replica]** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere l&#39;area di autenticazione della sandbox.
