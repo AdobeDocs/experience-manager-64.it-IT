@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +28,13 @@ In questo modo è possibile gestire facilmente i bundle in quanto possono essere
 
 Potete gestire le impostazioni di configurazione per tali bundle tramite:
 
-* utilizzo della console Web di [Adobe CQ](#osgi-configuration-with-the-web-console)
+* utilizzo della console Web [Adobe CQ](#osgi-configuration-with-the-web-console)
 * utilizzo di file [di configurazione](#osgi-configuration-with-configuration-files)
 * configurazione dei nodi [di contenuto ( `sling:OsgiConfig`) nell&#39;archivio](#osgi-configuration-in-the-repository)
 
 Entrambi i metodi possono essere utilizzati anche se esistono sottili differenze, principalmente in relazione ai [modi](/help/sites-deploying/configure-runmodes.md)di esecuzione:
 
-* [Adobe CQ Web Console](#osgi-configuration-with-the-web-console)
+* [della console Web di Adobe CQ](#osgi-configuration-with-the-web-console)
 
    * La console Web è l’interfaccia standard per la configurazione OSGi. Offre un’interfaccia utente per la modifica delle varie proprietà, dove è possibile selezionare i possibili valori da elenchi predefiniti.
 
@@ -63,7 +66,7 @@ A prescindere dal metodo utilizzato, tutti i seguenti metodi di configurazione:
 
 ## Configurazione OSGi con la console Web {#osgi-configuration-with-the-web-console}
 
-La console [](/help/sites-deploying/web-console.md) Web di AEM offre un’interfaccia standard per la configurazione dei bundle. La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare i parametri di sistema AEM.
+La console [](/help/sites-deploying/web-console.md) Web in AEM fornisce un&#39;interfaccia standard per la configurazione dei bundle. La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare AEM parametri di sistema.
 
 Eventuali modifiche apportate vengono applicate immediatamente alla configurazione OSGi interessata, senza necessità di riavvio.
 
@@ -75,7 +78,7 @@ Eventuali modifiche apportate vengono applicate immediatamente alla configurazio
 >
 >Nella console Web tutte le descrizioni che fanno riferimento alle impostazioni predefinite si riferiscono alle impostazioni predefinite di Sling.
 >
->Adobe Experience Manager dispone di impostazioni predefinite specifiche, pertanto i valori predefiniti impostati possono essere diversi da quelli documentati nella console.
+>Adobe Experience Manager ha le proprie impostazioni predefinite, pertanto le impostazioni predefinite potrebbero essere diverse da quelle documentate nella console.
 
 Per aggiornare una configurazione con la console Web:
 
@@ -121,15 +124,15 @@ Questi possono essere inclusi nei pacchetti di contenuto e riutilizzati in altre
 
 >[!NOTE]
 >
->Il formato dei file di configurazione è molto specifico. Per maggiori informazioni, consulta la documentazione [](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) Sling Apache.
+>Il formato dei file di configurazione è molto specifico. Per maggiori informazioni, consulta la documentazione [di](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) Sling Apache.
 >
 >Per questo motivo si consiglia di creare e mantenere il file di configurazione apportando modifiche effettive nella console Web.
 
 La console Web non mostra alcuna indicazione della posizione in cui sono state salvate le modifiche, ma può essere facilmente individuata:
 
 1. Create il file di configurazione [apportando una modifica iniziale nella console](#osgi-configuration-with-the-web-console)Web.
-1. Aprite CRXDE Lite.
-1. **Nel menu** Strumenti **selezionare** Query ... .
+1. Apri CRXDE Lite.
+1. Nel menu **Strumenti** selezionare **Query ...** .
 1. Invia una query di **tipo** `SQL` per cercare il PID della configurazione aggiornata.
 
    Ad esempio, **Apache Felix OSGi Management Console** ha l’identità persistente (PID) di:
@@ -182,7 +185,7 @@ Per aggiungere una nuova configurazione al repository è necessario conoscere qu
 
    Fare riferimento al campo **Configurazioni** nella console Web. Il nome viene visualizzato tra parentesi dopo il nome del bundle (o in Informazioni **di** configurazione verso il fondo della pagina).
 
-   Ad esempio, create un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` per configurare **AEM WCM Version Manager**.
+   Ad esempio, creare un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` per configurare **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -213,7 +216,7 @@ Per aggiungere una nuova configurazione al repository è necessario conoscere qu
 
 Per aggiungere la nuova configurazione alla directory archivio:
 
-1. Utilizzate CRXDE Lite per passare a:
+1. Utilizzate il CRXDE Lite per passare a:
 
    ` /apps/<yourProject>`
 
@@ -227,7 +230,7 @@ Per aggiungere la nuova configurazione alla directory archivio:
    * Tipo: `sling:OsgiConfig`
    * Nome: l’identità persistente (PID);
 
-      ad esempio, per AEM WCM Version Manager utilizzare `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      ad esempio per AEM utilizzo di WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >Quando si crea una configurazione di fabbrica aggiungere `-<identifier>` al nome.
@@ -243,7 +246,8 @@ Per aggiungere la nuova configurazione alla directory archivio:
    * Nome: il nome del parametro come mostrato nella console Web; il nome viene visualizzato tra parentesi alla fine della descrizione del campo. Ad esempio, per `Create Version on Activation` l&#39;utilizzo `versionmanager.createVersionOnActivation`
    * Tipo: se del caso.
    * Valore: come necessario.
-   Dovete solo creare proprietà per i parametri che desiderate configurare, mentre altri continueranno a utilizzare i valori predefiniti impostati da AEM.
+
+   È necessario creare solo proprietà per i parametri che si desidera configurare, mentre altri continueranno a utilizzare i valori predefiniti come impostato da AEM.
 
 1. Salvate tutte le modifiche.
 
@@ -273,7 +277,7 @@ Ciò significa che una configurazione generica in `/libs` può essere mascherata
 
 ### Ordine di risoluzione in fase di esecuzione {#resolution-order-at-runtime}
 
-Le modifiche alla configurazione apportate durante l&#39;esecuzione del sistema attivano un ricarico con la configurazione modificata.
+Le modifiche alla configurazione apportate durante l&#39;esecuzione del sistema attivano un ricaricamento con la configurazione modificata.
 
 Viene quindi applicato il seguente ordine di precedenza:
 
@@ -283,7 +287,7 @@ Viene quindi applicato il seguente ordine di precedenza:
 
 ### Risoluzione di più modalità di esecuzione {#resolution-of-multiple-run-modes}
 
-Per configurazioni specifiche della modalità di esecuzione, è possibile combinare più modalità di esecuzione. Ad esempio, potete creare cartelle di configurazione nel seguente stile:
+Per configurazioni specifiche della modalità di esecuzione, è possibile combinare più modalità di esecuzione. Ad esempio, potete creare le cartelle di configurazione nel seguente stile:
 
 `/apps/*/config.<runmode1>.<runmode2>/`
 
@@ -304,15 +308,15 @@ La configurazione con il maggior numero di modalità di esecuzione corrispondent
 
 L&#39;elenco seguente mostra una piccola selezione delle configurazioni disponibili (in un&#39;installazione standard) nell&#39;archivio:
 
-* Autore - Filtro AEM WCM:
+* Autore - AEM filtro WCM:
 
    `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Pubblica - Filtro AEM WCM:
+* Pubblica - AEM filtro WCM:
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Pubblica - Statistiche pagina WCM AEM:
+* Pubblica - AEM statistiche pagina WCM:
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
