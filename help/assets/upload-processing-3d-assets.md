@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 71%
 
 ---
 
@@ -21,7 +24,7 @@ Utilizza i meccanismi standard di caricamento o sincronizzazione per portare le 
 
 Consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
 
-Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D principale. Tuttavia, questo non è un requisito.
+ Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D principale. Tuttavia, questo non è un requisito.
 
 Una volta completato il caricamento, i file 3D vengono convertiti e viene applicata un&#39;elaborazione aggiuntiva per preparare la risorsa per la visualizzazione e il rendering.
 
@@ -52,7 +55,7 @@ La conversione e l&#39;elaborazione di file 3D in genere consumano notevoli riso
 
 I lavori di conversione, elaborazione e rendering vengono messi in coda in base alle necessità per evitare di rallentare troppo il server. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Questo stato indica che altri lavori di elaborazione o rendering devono terminare prima che l&#39;attività corrente venga elaborata.
 
-Sono disponibili meccanismi per limitare l’utilizzo della CPU per l’assimilazione e per il rendering. Consultate Impostazioni [di configurazione](advanced-config-3d.md) avanzate per informazioni su come configurare i limiti della CPU.
+Sono disponibili meccanismi per limitare l’utilizzo della CPU per l’elaborazione dell’assimilazione e per il rendering. Consultate Impostazioni [di configurazione](advanced-config-3d.md) avanzate per informazioni su come configurare i limiti della CPU.
 
 ## Monitoraggio dello stato di elaborazione dei file 3D caricati {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
