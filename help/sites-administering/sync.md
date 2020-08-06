@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ La maggior parte dei dati utente creati nell’ambiente di authoring deve restar
 
 Per poter accedere agli stessi dati utente, le registrazioni e le modifiche effettuate su un’istanza di pubblicazione devono essere sincronizzate con altre istanze di pubblicazione.
 
-A partire da AEM 6.1, quando la sincronizzazione degli utenti è abilitata, i dati utente vengono automaticamente sincronizzati tra le istanze pubblicate nella farm e non vengono creati in fase di creazione.
+A partire AEM 6.1, quando la sincronizzazione degli utenti è abilitata, i dati utente vengono automaticamente sincronizzati tra le istanze di pubblicazione nella farm e non vengono creati in fase di creazione.
 
 ## Distribuzione Sling {#sling-distribution}
 
@@ -73,8 +76,8 @@ Di seguito sono riportati i passaggi necessari per abilitare la sincronizzazione
 
 1. Verifica che sia stato installato il codice più recente:
 
-* [Aggiornamenti della piattaforma AEM](https://helpx.adobe.com/it/experience-manager/kb/aem62-available-hotfixes.html)
-* [Aggiornamenti di AEM Communities](/help/communities/deploy-communities.md#latest-releases)
+* [Aggiornamenti AEM piattaforma](https://helpx.adobe.com/it/experience-manager/kb/aem62-available-hotfixes.html)
+* [Aggiornamenti  AEM Communities](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -125,13 +128,14 @@ Di seguito sono riportati i passaggi necessari per abilitare la sincronizzazione
 >
 >* L&#39;utente predefinito assegnato è **`admin`**.
 >* Non utilizzare `*communities-user-admin *user*.*`
+
 >
 
 
 
 #### Come aggiungere ACL {#addacls}
 
-* access CRXDE Lite
+* CRXDE Lite di accesso
 
    * ad esempio, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -139,7 +143,7 @@ Di seguito sono riportati i passaggi necessari per abilitare la sincronizzazione
 * nel riquadro a destra, selezionare la `Access Control` scheda
 * selezionare il `+` pulsante per aggiungere una voce ACL
 
-   * **Principal**: *ricerca di utenti creati per la sincronizzazione degli utenti*
+   * **Principal**: *cercare gli utenti creati per la sincronizzazione degli utenti*
    * **Tipo**: `Allow`
    * **Privilegi**: `jcr:all`
    * **Limitazioni** rep:idspn: `*/activities/*`
@@ -154,7 +158,7 @@ Consulta anche
 * [Accesso a Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sezione Risoluzione dei problemi [Modifica eccezione operazione durante l&#39;elaborazione](#modify-operation-exception-during-response-processing)delle risposte.
 
-### 3. Distribuzione di Adobe Granite - Provider Segreto di trasporto password crittografato {#adobegraniteencpasswrd}
+### 3. Distribuzione Granite  Adobe - Provider Segreto Di Trasporto Password Crittografato {#adobegraniteencpasswrd}
 
 **Configurare le autorizzazioni**
 
@@ -202,7 +206,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5. Distribuzione Adobe Granite - Diff Observer Factory {#diffobserver}
+### 5.  Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
 
 **Abilita sincronizzazione gruppo**
 
@@ -283,7 +287,7 @@ La configurazione predefinita è per una singola istanza di pubblicazione. Poich
 
 * select `Save`
 
-### 8. Listener di sincronizzazione utenti di AEM Communities {#aem-communities-user-sync-listener}
+### 8.  AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
 **(Facoltativo) Sincronizzare nodi JCR aggiuntivi**
 
@@ -382,7 +386,7 @@ Ripetete questi passaggi finché tutte le istanze di pubblicazione non dispongon
 
 Per sincronizzare correttamente gli aggiornamenti, è necessario modificare il generatore di pacchetti vault per la sincronizzazione utente:
 
-* in ogni istanza di pubblicazione AEM
+* su ogni istanza di pubblicazione AEM
 * accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
    * ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -433,7 +437,7 @@ Per verificare lo stato della coda di distribuzione:
 
 * autore:
 
-   * utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * cerca le voci in `/var/sling/distribution/packages`
 
@@ -490,7 +494,7 @@ Di seguito sono riportate le visualizzazioni di come dovrebbero essere visualizz
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-#### (autore) Una distribuzione Adobe Granite - Provider Segreto di trasporto con password crittografata {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
+#### (autore) Distribuzione granita di un  Adobe - Provider Segreto di trasporto password crittografato {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
@@ -498,7 +502,7 @@ Di seguito sono riportate le visualizzazioni di come dovrebbero essere visualizz
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### (pubblicare) Una distribuzione Adobe Granite - Diff Observer Factory {#publish-one-adobe-granite-distribution-diff-observer-factory}
+#### (pubblicare) Un Adobe  Distribuzione Granite - Diff Observer Factory {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
@@ -562,7 +566,7 @@ Cfr. sezione [9. ID Sling univoco](#unique-sling-id)
 
    * [importare il pacchetto](/help/sites-administering/package-manager.md#installing-packages)
 
-Per configurare o abilitare la sincronizzazione degli utenti, andate al punto 1: Agente di distribuzione [Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
+Per configurare o abilitare la sincronizzazione degli utenti, andate al punto 1: [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Quando un editore diventa non disponibile {#when-a-publisher-becomes-unavailable}
 
