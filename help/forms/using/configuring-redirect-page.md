@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +27,15 @@ Gli autori dei moduli possono configurare una pagina per ciascun modulo, alla qu
 1. Fornite l’URL della pagina di reindirizzamento nella sezione Pagina di ringraziamento della sezione Invio.
 1. Facoltativamente, in Invia azione, per l’azione Invia a endpoint REST è possibile configurare il parametro da passare alla pagina di reindirizzamento.
 
-![](assets/thank-you-setting-1.png) Reindirizza configurazione **** pagina Figura: Configurazione *di reindirizzamento della pagina*
+![Reindirizza la configurazione](assets/thank-you-setting-1.png)**della pagina Figura:** *Reindirizza configurazione pagina*
 
 Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili `status` e per `owner` i parametri vengono passati. Oltre a questi due parametri, alcuni parametri aggiuntivi vengono passati per le seguenti azioni di invio:
 
-* **Azione** contenuto store (obsoleto): `contentPath`(percorso del nodo nell&#39;archivio in cui sono memorizzati i dati inviati) viene passato.
+* **Azione** contenuto store (obsoleto): `contentPath`— il percorso del nodo nell&#39;archivio in cui sono memorizzati i dati inviati.
 
-* **Azione** Store PDF (obsoleto): Viene passato `contentPath`—dei dati inviati e del percorso al nodo in cui è memorizzato il file PDF nella directory archivio—.
+* **Azione** Store PDF (obsoleto): `contentPath`—dei dati inviati e del percorso del nodo in cui è memorizzato il file PDF nella directory archivio—viene passato.
 
-* **Flusso di lavoro** di invio a Forms: I parametri di output restituiti dal flusso di lavoro dei moduli vengono passati.
+* **Invia al flusso di lavoro** Forms: I parametri di output restituiti dal flusso di lavoro dei moduli vengono passati.
 
 * **Invia a endpoint** REST: I parametri aggiunti per la mappatura in-field ai parametri vengono passati. `status` e `owner` i parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione](/help/forms/using/configuring-submit-actions.md)di invio dell&#39;endpoint Invia a REST.
 
