@@ -9,6 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
 source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+workflow-type: tm+mt
+source-wordcount: '3866'
+ht-degree: 1%
 
 ---
 
@@ -36,17 +39,17 @@ In genere, gli utenti aziendali non necessitano di conoscenze sulle rappresentaz
 
 ## Prerequisito {#prerequisite}
 
-Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilità per visualizzare l&#39;opzione **Dizionari** dati nella pagina **Moduli** .
+Installate il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilità per visualizzare l&#39;opzione **Dizionari** dati nella pagina **Forms** .
 
 ## Creare un dizionario dati {#createdatadictionary}
 
-È possibile utilizzare l&#39;Editor dizionario dati per creare un dizionario dati oppure caricare un file di schema XSD per creare un dizionario dati basato su di esso. È quindi possibile estendere il dizionario dati aggiungendo ulteriori informazioni, compresi i campi. Indipendentemente da come è stato creato il dizionario dati, il proprietario del processo aziendale non ha bisogno di conoscere i sistemi back-end. Il proprietario del processo aziendale ha bisogno solo di conoscere gli oggetti del dominio e le relative definizioni per il loro processo.
+È possibile utilizzare l&#39;Editor dizionario dati per creare un dizionario dati o caricare un file di schema XSD per creare un dizionario dati basato su di esso. È quindi possibile estendere il dizionario dati aggiungendo ulteriori informazioni, compresi i campi. Indipendentemente da come è stato creato il dizionario dati, il proprietario del processo aziendale non ha bisogno di conoscere i sistemi back-end. Il proprietario del processo aziendale ha bisogno solo di conoscere gli oggetti del dominio e le relative definizioni per il loro processo.
 
 >[!NOTE]
 >
 >Per più lettere che richiedono elementi simili, è possibile creare un dizionario dati comune. Un dizionario dati di grandi dimensioni con un gran numero di elementi, tuttavia, potrebbe causare problemi di prestazioni durante l&#39;utilizzo del dizionario dati e il caricamento degli elementi, ad esempio in lettere e frammenti di documento. Se si verificano problemi di prestazioni, provare a creare dizionari dati separati per lettere diverse.
 
-1. Selezionare **Moduli** > **Dizionari** dati.
+1. Selezionare **Forms** > **Data Dictionaries**.
 1. Toccare **Crea dizionario** dati.
 1. Nella schermata Proprietà, aggiungete quanto segue:
 
@@ -56,6 +59,7 @@ Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/f
    * **Descrizione**: (Facoltativo) Descrizione del dizionario dati.
    * **Tag:** (Facoltativo) Per creare un tag personalizzato, immettete un valore nel campo di testo e premete Invio. Potete visualizzare il tag sotto il campo di testo dei tag. Quando salvate questo testo, vengono creati anche i nuovi tag aggiunti.
    * **Proprietà** estese: (Facoltativo) Toccate **Aggiungi campo** per specificare gli attributi di metadati per il dizionario dati. Nella colonna Nome proprietà, inserite un nome di proprietà univoco. Nella colonna Valore, immettere un valore da associare alla proprietà.
+
    ![Proprietà del dizionario dati specificate in tedesco](do-not-localize/1_ddproperties.png)
 
 1. (Facoltativo) Per caricare una definizione dello schema XSD per il dizionario dati, nel riquadro Struttura dizionario dati toccare **Carica schema** XML. Individuate il file XSD, selezionatelo e toccate **Apri**. Viene creato un dizionario dati basato sullo schema XML caricato. È necessario modificare i nomi visualizzati e le descrizioni degli elementi nel dizionario dati. A questo scopo, selezionate i nomi degli elementi toccandogli e modificatene le descrizioni, i nomi visualizzati e altri dettagli nei campi nel riquadro a destra.
@@ -78,6 +82,7 @@ Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/f
    * Un DDE composito contiene altri DDE, che possono essere di tipo primitivo, composito o raccolta. Ad esempio, un indirizzo, che consiste in un indirizzo, una città, una provincia, un paese e un codice postale.
    * I DDE primitivi sono elementi quali stringhe, numeri, date e valori booleani che contengono informazioni quali il nome di una città.
    * Una raccolta è un elenco di DDE semplici o composite simili. Ad esempio, un cliente con più posizioni o diversi indirizzi di fatturazione e spedizione.
+
    Di seguito sono riportate alcune regole per la creazione di un dizionario dati:
 
    * Solo il tipo composito è consentito come DDE di livello principale in un dizionario dati.
@@ -85,6 +90,7 @@ Installare il pacchetto [di](https://helpx.adobe.com/in/experience-manager/6-4/f
    * Il nome di riferimento deve essere univoco.
    * Un DDE padre (composito) non può avere due figli con lo stesso nome.
    * Gli enumerazioni contengono solo tipi di stringa primitivi.
+
    Per ulteriori informazioni sugli elementi Composite, Collection e Primitive e sull&#39;utilizzo degli elementi del dizionario dati, vedere [Mapping di elementi del dizionario dati a uno schema](#mappingddetoschema)XML.
 
    Per informazioni sulle convalide nel dizionario dati, vedere Convalide [dell&#39;Editor dizionario](#ddvalidations)dati.
@@ -125,6 +131,7 @@ Durante la modifica o la visualizzazione di un dizionario dati, puoi vedere qual
    * Passa il puntatore del mouse su un dizionario dati e tocca Modifica.
    * Selezionate un dizionario dati e toccate Modifica nell’intestazione.
    * Passa il cursore del mouse su un dizionario dati e tocca Seleziona. Quindi toccate Modifica nell’intestazione.
+
    Oppure toccate un dizionario dati per visualizzarlo.
 
 1. Nel dizionario dati, toccate un elemento semplice per selezionarlo. Gli elementi compositi e di raccolta non hanno riferimenti.
@@ -357,7 +364,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, dettagl
   </tr> 
   <tr> 
    <td><p>xs:element where maxOccurs &gt; 1<br /> </p> </td> 
-   <td><p>DDE di tipo - COLLECTION-<br /> Un nodo DDE viene creato accanto al DDE DI RACCOLTA che acquisisce le informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici o compositi. Ogni volta che si dispone di una RACCOLTA di tipo composito, la struttura del Dizionario dati acquisisce i campi costitutivi negli elementi secondari del DDE creato per l'acquisizione delle informazioni sul tipo.<br /> - DDE (RACCOLTA)<br /> - DDE(COMPOSITE per informazioni di tipo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /><br /> </p> </td> 
+   <td><p>DDE di tipo - COLLECTION-<br /> Un nodo DDE viene creato accanto al DDE DI RACCOLTA che acquisisce le informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici o compositi. Ogni volta che si dispone di una RACCOLTA di tipo composito, la struttura del Dizionario dati acquisisce i campi costitutivi negli elementi secondari del DDE creato per l'acquisizione delle informazioni sul tipo.<br /> - DDE (RACCOLTA)<br /> - DDE(COMPOSITE per informazioni di tipo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td> 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
@@ -559,7 +566,7 @@ L&#39;esempio seguente mostra lo schema di una nota.
    <td>/note/to</td> 
   </tr> 
   <tr> 
-   <td>from</td> 
+   <td>da</td> 
    <td>/note/from</td> 
   </tr> 
   <tr> 
