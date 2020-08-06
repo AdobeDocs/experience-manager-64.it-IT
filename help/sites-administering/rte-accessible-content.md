@@ -1,8 +1,8 @@
 ---
 title: Configurazione dell’editor Rich Text per la produzione di siti accessibili
 seo-title: Configurazione dell’editor Rich Text per la produzione di siti accessibili
-description: Scoprite come configurare AEM Rich Text Editor per la produzione di siti con accesso facilitato.
-seo-description: Scoprite come configurare AEM Rich Text Editor per la produzione di siti con accesso facilitato.
+description: Scoprite come configurare l'Editor AEM Rich Text per la produzione di siti con accesso facilitato.
+seo-description: Scoprite come configurare l'Editor AEM Rich Text per la produzione di siti con accesso facilitato.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,7 @@ Il componente **Testo** in AEM è disponibile sia per le interfacce touch che pe
 >
 >* [Plugin e relative funzioni](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Plugin e relative funzioni - Interfaccia touch](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -63,7 +67,7 @@ Le istruzioni complete sulla configurazione dell’editor Rich Text sono disponi
 * [Attivare un plug-in e configurare la proprietà delle funzioni](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurazione di altre funzionalità dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Configurando un plug-in all&#39;interno del `rtePlugins` sottoramo appropriato in CRXDE Lite (vedere l&#39;immagine seguente), è possibile attivare tutte le funzioni o specifiche per quel plug-in.
+Configurando un plug-in all&#39;interno del `rtePlugins` ramo secondario appropriato nel CRXDE Lite (vedere l&#39;immagine seguente), potete attivare tutte le funzioni o specifiche per quel plug-in.
 
 ![CRXDE Lite che mostra un esempio rtePlugin.](assets/chlimage_1-208.png)
 
@@ -77,12 +81,13 @@ Nuovi formati di blocco semantico possono essere resi disponibili per la selezio
 1. I formati di paragrafo sono quindi disponibili per l’autore del contenuto dai campi di selezione nell’editor Rich Text. È possibile accedervi:
 
    * Utilizzo dell’icona paragrafo ([cuscino](https://en.wikipedia.org/wiki/Pilcrow)) nell’interfaccia touch:
+
    ![Icona Paragrafo (cuscino).](do-not-localize/chlimage_1-7.png)
 
    * Utilizzo del campo **Formato** (selettore a discesa) nell’interfaccia classica.
 
 
-Con gli elementi strutturali disponibili nell’editor Rich Text tramite le opzioni del formato di paragrafo, AEM offre una buona base per lo sviluppo di contenuti accessibili. Gli autori dei contenuti non possono utilizzare l’editor Rich Text per formattare la dimensione del font o i colori o altri attributi correlati, impedendo la creazione di formattazione in linea. Devono invece selezionare gli elementi strutturali appropriati, ad esempio le intestazioni, e utilizzare gli stili globali scelti dall&#39;opzione Stili. In questo modo, gli utenti che sfogliano con i propri fogli di stile e con contenuti strutturati correttamente possono usufruire di una marcatura pulita e di opzioni maggiori.
+Con gli elementi strutturali disponibili nell’editor Rich Text tramite le opzioni di formato del paragrafo, AEM fornisce una buona base per lo sviluppo di contenuto accessibile. Gli autori dei contenuti non possono utilizzare l’editor Rich Text per formattare la dimensione del font o i colori o altri attributi correlati, impedendo la creazione di formattazione in linea. Devono invece selezionare gli elementi strutturali appropriati, ad esempio le intestazioni, e utilizzare gli stili globali scelti dall&#39;opzione Stili. In questo modo, gli utenti che sfogliano con i propri fogli di stile e con contenuti strutturati correttamente possono usufruire di una marcatura pulita e di opzioni maggiori.
 
 ## Utilizzo della funzione di modifica sorgente {#use-of-the-source-edit-feature}
 
@@ -110,7 +115,7 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
 
 ### Istruzioni dettagliate {#step-by-step-instructions}
 
-1. Avviare CRXDE Lite. Ad esempio: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Inizia CRXDE Lite. Ad esempio: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copia:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
