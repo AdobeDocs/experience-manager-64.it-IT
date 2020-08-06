@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 7%
 
 ---
 
@@ -53,6 +56,7 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
    * Nome: `an-scf-sandbox`
    * Selezionare **[!UICONTROL un modello di riproduzione sandbox SCF]**
    * Fai clic su **[!UICONTROL Crea]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site`e fate clic su **[!UICONTROL Nuova > Nuova pagina]**:
