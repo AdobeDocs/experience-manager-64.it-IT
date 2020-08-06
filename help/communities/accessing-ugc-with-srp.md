@@ -1,8 +1,8 @@
 ---
 title: Accesso a UGC con SRP
 seo-title: Accesso a UGC con SRP
-description: Quando un sito è configurato per utilizzare ASRP o MSRP, l'UGC effettivo non viene memorizzato nell'archivio nodi di AEM (JCR)
-seo-description: Quando un sito è configurato per utilizzare ASRP o MSRP, l'UGC effettivo non viene memorizzato nell'archivio nodi di AEM (JCR)
+description: Quando un sito è configurato per l'utilizzo di ASRP o MSRP, l'UGC effettivo non viene memorizzato in AEM archivio nodi (JCR)
+seo-description: Quando un sito è configurato per l'utilizzo di ASRP o MSRP, l'UGC effettivo non viene memorizzato in AEM archivio nodi (JCR)
 uuid: 5f9f8c9b-4c6a-45b0-96ff-14934380eba7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee786a5c-b985-4d78-9063-6c79ae5e13e6
 translation-type: tm+mt
 source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 ## Informazioni su SRP {#about-srp}
 
-Tutti i componenti e le funzionalità di AEM Communities sono basati sul framework di componenti [social network (SCF)](scf.md), che richiama l&#39;API SocialResourceProvider per accedere a tutto il contenuto generato dall&#39;utente (UGC).
+Tutti  componenti e funzionalità AEM Communities sono basati sul framework di componenti [social network (SCF)](scf.md), che richiama l&#39;API SocialResourceProvider per accedere a tutto il contenuto generato dall&#39;utente (UGC).
 
 Prima di creare un sito community, è necessario configurare il provider di risorse di [storage (SRP)](working-with-srp.md) per selezionare un&#39;implementazione coerente con la [topologia](topologies.md)sottostante. Le implementazioni SRP si basano su tre opzioni di storage:
 
-1. [ASRP](asrp.md) - Archiviazione su richiesta Adobe
+1. [ASRP](asrp.md) -  Adobe di storage su richiesta
 2. [MSRP](msrp.md) - MongoDB
 3. [JSRP](jsrp.md) - JCR
 
 ## Archiviazione UGC {#about-ugc-storage}
 
-Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per utilizzare ASRP o MSRP, l&#39;UGC effettivo non viene memorizzato nello store [](../../help/sites-deploying/data-store-config.md) nodi di AEM (JCR).
+Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per utilizzare ASRP o MSRP, l&#39;UGC effettivo non è memorizzato in AEM archivio [](../../help/sites-deploying/data-store-config.md) nodi (JCR).
 
 Anche se in JCR possono essere presenti nodi che oscurano l&#39;UGC per fornire metadati utili, questi nodi non devono essere confusi con l&#39;UGC effettivo.
 
@@ -66,7 +69,7 @@ Diversi SRP possono avere lingue di query native diverse. È consigliabile utili
 
 Per ulteriori informazioni, consulta [Ricerca in Essentials](search-implementation.md).
 
-## Risorse {#resources}
+## Riferimenti {#resources}
 
 * [Archiviazione](working-with-srp.md) dei contenuti della community - illustra le opzioni SRP disponibili per uno store comune UGC
 * [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
