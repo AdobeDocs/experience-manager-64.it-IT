@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 4%
 
 ---
 
@@ -40,9 +43,9 @@ Per utilizzare il plug-in Content Package Maven, aggiungete il seguente elemento
 </plugin>
 ```
 
-Per consentire a Maven di scaricare il plug-in, utilizzate il profilo fornito nella sezione [Acquisizione del plug-in](#obtaining-the-content-package-maven-plugin) di Content Package Maven in questa pagina.
+Per consentire a Maven di scaricare il plug-in, utilizzate il profilo fornito nella sezione [Acquisizione del plug-in](#obtaining-the-content-package-maven-plugin) Maven pacchetto contenuto in questa pagina.
 
-## Obiettivi del plug-in Content Package Maven {#goals-of-the-content-package-maven-plugin}
+## Obiettivi del plugin di Content Package Maven {#goals-of-the-content-package-maven-plugin}
 
 Gli obiettivi e i parametri dell&#39;obiettivo forniti dal plug-in Content Package sono descritti nelle sezioni che seguono. I parametri descritti nella sezione Parametri comuni possono essere utilizzati per la maggior parte degli obiettivi. I parametri che si applicano a un obiettivo sono descritti nella sezione relativa a tale obiettivo.
 
@@ -89,9 +92,9 @@ I parametri riportati nella tabella seguente sono comuni a tutti gli obiettivi, 
    <td>Tutti gli obiettivi tranne il pacchetto.</td> 
   </tr> 
   <tr> 
-   <td>nome</td> 
+   <td>name</td> 
    <td>Stringa</td> 
-   <td>build: Sì<br /> , installazione: No<br /> rm:Yes</td> 
+   <td>build: Sì<br /> , installazione: No<br /> rm: Yes</td> 
    <td>Build: Nessuna impostazione predefinita.<br /> install: Il valore della proprietà artifactId del progetto Maven.</td> 
    <td>Nome del pacchetto su cui agire.</td> 
    <td>Tutti gli obiettivi tranne ls.</td> 
@@ -109,7 +112,7 @@ I parametri riportati nella tabella seguente sono comuni a tutti gli obiettivi, 
    <td>Stringa</td> 
    <td>No</td> 
    <td></td> 
-   <td>L'ID server da cui recuperare il nome utente e la password per l'autenticazione.</td> 
+   <td>L'ID del server da cui recuperare il nome utente e la password per l'autenticazione.</td> 
    <td>Tutti gli obiettivi tranne il pacchetto.</td> 
   </tr> 
   <tr> 
@@ -157,7 +160,7 @@ I parametri riportati nella tabella seguente sono comuni a tutti gli obiettivi, 
 
 ### build {#build}
 
-Crea un pacchetto di contenuti già definito in un’istanza di AEM.
+Crea un pacchetto di contenuti già definito in un&#39;istanza AEM.
 
 >[!NOTE]
 >
@@ -169,7 +172,7 @@ Tutti i parametri per l&#39;obiettivo di compilazione sono descritti nella sezio
 
 #### Esempio {#example}
 
-Nell’esempio seguente viene creato il pacchetto workflow-fagioli installato nell’istanza AEM con l’indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
+Nell&#39;esempio seguente viene creato il pacchetto workflow-fagioli che viene installato nell&#39;istanza AEM con l&#39;indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
 
 ```shell
 mvn content-package:build
@@ -223,7 +226,7 @@ Oltre ai seguenti parametri, vedete le descrizioni nella sezione Parametri [comu
    <td>manufatto</td> 
    <td>Stringa</td> 
    <td>No</td> 
-   <td> Il valore della proprietà artifactId del progetto Maven.</td> 
+   <td>Il valore della proprietà artifactId del progetto Maven.</td> 
    <td>Una stringa del modulo groupId:artifactId:version[:package].</td> 
   </tr> 
   <tr> 
@@ -357,7 +360,7 @@ Tutti i parametri dell&#39;obiettivo ls sono descritti nella sezione Parametri [
 
 #### Esempio {#example-2}
 
-Nell’esempio seguente sono elencati i pacchetti installati nell’istanza di AEM con l’indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
+Nell&#39;esempio seguente sono elencati i pacchetti installati nell&#39;istanza AEM con l&#39;indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
 
 ```shell
 mvn content-package:ls
@@ -398,7 +401,7 @@ Tutti i parametri dell&#39;obiettivo rm sono descritti nella sezione Parametri [
 
 #### Esempio {#example-3}
 
-Nell’esempio seguente viene rimosso il pacchetto workfow-mia installato nell’istanza AEM con l’indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
+Nell&#39;esempio seguente viene rimosso il pacchetto workfow-mia installato nell&#39;istanza AEM con l&#39;indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
 
 ```shell
 mvn content-package:rm
@@ -440,7 +443,7 @@ Tutti i parametri dell&#39;obiettivo di disinstallazione sono descritti nella se
 
 #### Esempio {#example-4}
 
-L’esempio seguente disinstalla il pacchetto workflow-fagioli installato nell’istanza AEM con l’indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
+Nell&#39;esempio seguente viene disinstallato il pacchetto workflow-fagioli installato nell&#39;istanza AEM con l&#39;indirizzo IP 10.36.79.223. L&#39;obiettivo viene eseguito utilizzando il seguente comando:
 
 ```shell
 mvn content-package:uninstall
@@ -505,7 +508,7 @@ Oltre ai seguenti parametri, vedete la descrizione del `name` parametro nella se
    <td>La directory che contiene il contenuto da includere nel pacchetto.</td> 
   </tr> 
   <tr> 
-   <td> dipendenze</td> 
+   <td>dipendenze</td> 
    <td>java.util.List</td> 
    <td>No</td> 
    <td></td> 
@@ -537,7 +540,7 @@ Oltre ai seguenti parametri, vedete la descrizione del `name` parametro nella se
    <td>java.io.File</td> 
    <td>No</td> 
    <td></td> 
-   <td>Un file che specifica l'origine del filtro dell'area di lavoro. I filtri specificati nella configurazione e iniettati tramite incorporamenti o pacchetti secondari vengono uniti al contenuto del file.</td> 
+   <td>Un file che specifica l'origine del filtro dell'area di lavoro. I filtri specificati nella configurazione e iniettati tramite incorporamenti o pacchetti secondari vengono uniti con il contenuto del file.</td> 
   </tr> 
   <tr> 
    <td>filter</td> 
@@ -654,11 +657,11 @@ L&#39;esempio di filtro seguente mostra la struttura XML da utilizzare:
 
 **Modalità di importazione**
 
-L&#39; `mode` elemento definisce in che modo il contenuto del repository viene interessato quando il pacchetto viene importato. È possibile utilizzare i seguenti valori:
+L&#39; `mode` elemento definisce in che modo il contenuto del repository viene influenzato quando il pacchetto viene importato. È possibile utilizzare i seguenti valori:
 
-* **** Unisci: Viene aggiunto il contenuto del pacchetto che non è già presente nella directory archivio. Il contenuto presente nel pacchetto e nell&#39;archivio rimane invariato. Nessun contenuto viene rimosso dalla directory archivio.
-* **** Sostituisci: Il contenuto del pacchetto che non si trova nella directory archivio viene aggiunto alla directory archivio. Il contenuto del repository viene sostituito con il contenuto corrispondente nel pacchetto. Il contenuto viene rimosso dalla directory archivio quando non esiste nel pacchetto.
-* **** Aggiorna: Il contenuto del pacchetto che non si trova nella directory archivio viene aggiunto alla directory archivio. Il contenuto del repository viene sostituito con il contenuto corrispondente nel pacchetto. Il contenuto esistente viene rimosso dalla directory archivio.
+* **Unisci:** Viene aggiunto il contenuto del pacchetto che non è già presente nella directory archivio. Il contenuto presente sia nel pacchetto che nell&#39;archivio rimane invariato. Nessun contenuto viene rimosso dalla directory archivio.
+* **Sostituisci:** Il contenuto del pacchetto che non si trova nella directory archivio viene aggiunto alla directory archivio. Il contenuto del repository viene sostituito con il contenuto corrispondente presente nel pacchetto. Il contenuto viene rimosso dalla directory archivio quando non esiste nel pacchetto.
+* **Aggiorna:** Il contenuto del pacchetto che non si trova nella directory archivio viene aggiunto alla directory archivio. Il contenuto del repository viene sostituito con il contenuto corrispondente presente nel pacchetto. Il contenuto esistente viene rimosso dalla directory archivio.
 
 Se il filtro non contiene `mode` elementi, viene utilizzato il valore predefinito di `replace` .
 
@@ -746,11 +749,11 @@ Invece di esprimere l&#39;obiettivo nella `package` sezione del plug-in `executi
 
 ## Come ottenere il plug-in Contenuti Package Maven {#obtaining-the-content-package-maven-plugin}
 
-Il plug-in è disponibile nell&#39;archivio pubblico di Adobe. Per scaricare il plugin, aggiungete il seguente profilo Maven al file delle impostazioni Maven e attivatelo. Quando si utilizza un comando Maven, il plug-in viene scaricato nel repository locale, se necessario.
+Il plug-in è disponibile dal repository pubblico  Adobe. Per scaricare il plugin, aggiungete il seguente profilo Maven al file delle impostazioni Maven e attivatelo. Quando si utilizza un comando Maven, il plug-in viene scaricato nel repository locale, se necessario.
 
 >[!NOTE]
 >
->L’archivio delle versioni pubbliche di Adobe non è accessibile da browser, pertanto la navigazione all’URL dell’archivio tramite il browser Web genera un errore Non trovato. Tuttavia, Maven è in grado di accedere alle directory del repository.
+>L&#39;archivio delle release pubbliche del  Adobe non è selezionabile, pertanto la navigazione all&#39;URL dell&#39;archivio tramite il browser Web genera un errore Non trovato. Tuttavia, Maven è in grado di accedere alle directory del repository.
 
 ```xml
 <profile>
@@ -883,17 +886,17 @@ Il seguente codice POM aggiunge al pacchetto solo una miniatura. L’immagine in
 </build>
 ```
 
-## Utilizzo Dei Tipi Di Archivi Per Generare Progetti AEM {#using-archetypes-to-generate-aem-projects}
+## Utilizzo Di Archetyst Per Generare Progetti AEM {#using-archetypes-to-generate-aem-projects}
 
-Numerosi archetipi Maven sono disponibili per la generazione di progetti AEM. Utilizzate l&#39;archetipo corrispondente ai vostri obiettivi di sviluppo:
+Diversi archetipi Maven sono disponibili per generare progetti AEM. Utilizzate l&#39;archetipo corrispondente ai vostri obiettivi di sviluppo:
 
-* Un pacchetto di contenuti che installa le risorse per un’applicazione AEM: [simple-content-package-archetype](#simple-content-package-archetype)
+* Un pacchetto di contenuti che installa le risorse per un&#39;applicazione AEM: [simple-content-package-archetype](#simple-content-package-archetype)
 * Un pacchetto di contenuti che include artefatti di terze parti: [simple-content-package-with-embedded-archetype](#simple-content-package-with-embedded-archetype).
 * Applicazione multi-modulo che accompagna lo sviluppo di classi Java e unit test: [multimodulo-content-package-archetype](#multimodule-content-package-archetype).
 
 >[!NOTE]
 >
->Il progetto Apache Sling offre anche archetipi utili nello sviluppo di AEM. Questi sono documentati all&#39;indirizzo [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
+>Il progetto Apache Sling offre anche archetipi utili nello sviluppo AEM. Questi sono documentati all&#39;indirizzo [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
 
 Ogni tipo di archetipo genera i seguenti elementi:
 
@@ -901,7 +904,7 @@ Ogni tipo di archetipo genera i seguenti elementi:
 * File POM.
 * FileVault di configurazione.
 
-Gli artefatti Archetype sono disponibili nell&#39;archivio pubblico di Adobe Maven. Per scaricare ed eseguire un archetype, identificare l&#39;archetype e l&#39;archivio Adobe utilizzando i parametri del archetype Maven:generate command:
+Gli artefatti Archetype sono disponibili nel repository Maven pubblico  Adobe. Per scaricare ed eseguire un archetype, identificare l&#39;archetype e il repository del Adobe  utilizzando i parametri del archetype Maven:generate comando:
 
 ```shell
 mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
@@ -913,7 +916,7 @@ Il plugin Maven archetype utilizza la modalità interattiva nella shell o nella 
 
 **File POM**
 
-I file POM generati includono comandi per la compilazione del codice, la creazione dei bundle e la distribuzione in AEM nei pacchetti. Le `groupID`proprietà `artifactId`, `version`e `name` le proprietà del progetto Maven vengono popolate automaticamente utilizzando i valori forniti al prompt `archetype:generate` interattivo Maven.
+I file POM generati includono comandi per la compilazione del codice, la creazione dei bundle e la distribuzione degli stessi in AEM nei pacchetti. Le `groupID`proprietà `artifactId`, `version`e `name` le proprietà del progetto Maven vengono popolate automaticamente utilizzando i valori forniti al prompt `archetype:generate` interattivo Maven.
 
 Potreste voler modificare i seguenti valori predefiniti nel file pom.xml generato:
 
@@ -935,7 +938,7 @@ Potreste voler modificare i seguenti valori predefiniti nel file pom.xml generat
 
 ### simple-content-package-archetype {#simple-content-package-archetype}
 
-Crea un progetto maven adatto all’installazione di risorse per una semplice applicazione AEM. La struttura delle cartelle è quella utilizzata sotto la `/apps` cartella dell’archivio AEM. Il POM definisce i comandi per creare pacchetti delle risorse inserite nelle cartelle e installare i pacchetti nell’istanza di AEM.
+Crea un progetto maven adatto all&#39;installazione di risorse per una semplice applicazione AEM. La struttura delle cartelle è quella utilizzata sotto la `/apps` cartella dell’archivio AEM. Il POM definisce i comandi per creare pacchetti delle risorse inserite nelle cartelle e installare i pacchetti nell’istanza AEM.
 
 **Proprietà artefatto Archetype:**
 
@@ -955,11 +958,11 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **Parametri Archetype:**
 
-* groupId: GroupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
+* groupId: Il groupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
 * artifactId: Nome del pacchetto di contenuti. Il valore viene utilizzato anche come nome della cartella del progetto.
-* version:Versione del pacchetto di contenuto.
+* version: Versione del pacchetto di contenuto.
 * pacchetto: Questo valore non viene utilizzato per il tipo semplice-content-package-archetype.
-* appsFolderName: Nome della cartella sotto /apps.
+* appsFolderName: Il nome della cartella sotto /apps.
 * artifactName: Descrizione del pacchetto di contenuti.
 * packageGroup: Nome del gruppo di pacchetti di contenuto. Questo valore configura il parametro del gruppo per l&#39;obiettivo Package del plug-in Content Package Maven.
 
@@ -1011,11 +1014,11 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **Parametri Archetype:**
 
-* groupId: GroupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
+* groupId: Il groupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
 * artifactId: Nome del pacchetto di contenuti. Il valore viene utilizzato anche come nome della cartella del progetto.
-* version:Versione del pacchetto di contenuto.
+* version: Versione del pacchetto di contenuto.
 * pacchetto: Parametro non utilizzato.
-* appsFolderName: Nome della cartella sotto /apps.
+* appsFolderName: Il nome della cartella sotto /apps.
 * artifactName: Descrizione del pacchetto di contenuti.
 * embeddedArtifactId: L&#39;ID dell&#39;artifact da incorporare nel pacchetto di contenuto.
 * embeddedGroupId: L&#39;ID gruppo dell&#39;artifact da incorporare.
@@ -1048,7 +1051,7 @@ ${artifactId}
 
 ### multimodulo-content-package-archetype {#multimodule-content-package-archetype}
 
-Crea un progetto maven che include la struttura di cartelle per lo sviluppo di un’applicazione AEM e l’installazione di risorse sul server.
+Crea un progetto maven che include la struttura di cartelle per lo sviluppo di un&#39;applicazione AEM e l&#39;installazione delle risorse sul server.
 
 La `bundle` cartella contiene la struttura di cartelle in cui sono memorizzati i file sorgente Java e JUnit che vengono sviluppati. Il file pom.xml in questa cartella crea il bundle OSGi. I seguenti valori nel POM identificano l’artefatto e il bundle:
 
@@ -1079,11 +1082,11 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **Parametri Archetype:**
 
-* groupId: GroupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
+* groupId: Il groupId del pacchetto di contenuto generato da Maven. Il valore viene utilizzato automaticamente nel file POM.
 * artifactId: Nome del pacchetto di contenuti. Il valore viene utilizzato anche come nome della cartella del progetto.
-* version:Versione del pacchetto di contenuto.
+* version: Versione del pacchetto di contenuto.
 * pacchetto: Questo valore non viene utilizzato per multimodulo-content-package-archetype.
-* appsFolderName: Nome della cartella sotto /apps.
+* appsFolderName: Il nome della cartella sotto /apps.
 * artifactName: Descrizione del pacchetto di contenuti.
 * packageGroup: Nome del gruppo di pacchetti di contenuto. Questo valore configura il parametro del gruppo per l&#39;obiettivo Package del plug-in Content Package Maven.
 
