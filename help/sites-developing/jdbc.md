@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Il plug-in determina automaticamente quali pacchetti importare ed elenca tali pa
 * Indicare nel POM che i pacchetti sono facoltativi. Utilizzate questa soluzione quando la connessione JDBC non richiede effettivamente i membri del pacchetto. Utilizzate l&#39;elemento Import-Package per indicare i pacchetti facoltativi come nell&#39;esempio seguente:
 
    `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
-* Racchiudete i file JAR che contengono i pacchetti in un bundle OSGi che esporta i pacchetti e distribuiteli. Utilizzate questa soluzione quando i membri del pacchetto sono richiesti durante l&#39;esecuzione del codice.
+* Racchiudete i file JAR che contengono i pacchetti in un bundle OSGi che esporta i pacchetti e distribuite il bundle. Utilizzate questa soluzione quando i membri del pacchetto sono richiesti durante l&#39;esecuzione del codice.
 
 La conoscenza del codice sorgente consente di decidere quale soluzione utilizzare. È inoltre possibile provare entrambe le soluzioni ed eseguire test per convalidare la soluzione.
 
@@ -84,7 +87,7 @@ La conoscenza del codice sorgente consente di decidere quale soluzione utilizzar
 
 I seguenti collegamenti aprono le pagine di download per alcuni prodotti di database più diffusi:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
@@ -92,7 +95,7 @@ I seguenti collegamenti aprono le pagine di download per alcuni prodotti di data
 
 Aggiungete una configurazione per il servizio JDBC Connections Pool che utilizza il driver JDBC per creare oggetti origine dati. Il codice dell&#39;applicazione utilizza questo servizio per ottenere l&#39;oggetto e connettersi al database.
 
-Il pool di connessioni JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) è un servizio di fabbrica. Se sono necessarie connessioni che utilizzano proprietà diverse, ad esempio accesso in sola lettura o in lettura/scrittura, creare più configurazioni.
+Il pool di connessioni JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) è un servizio di fabbrica. Se sono necessarie connessioni che utilizzano proprietà diverse, ad esempio l&#39;accesso in sola lettura o in lettura/scrittura, creare più configurazioni.
 
 When working with CQ there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
@@ -172,5 +175,5 @@ L&#39;esempio seguente codice JSP ottiene un&#39;istanza dell&#39;origine dati h
 
 >[!NOTE]
 >
->Per informazioni su come inserire un DataSourcePool in un bundle OSGi, consulta [Injection a DataSourcePool Service into a Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>Per informazioni su come inserire un DataSourcePool in un bundle OSGi, vedere [Injection a DataSourcePool Service into a Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
 
