@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 0%
 
 ---
 
@@ -41,9 +44,9 @@ Per aggiungere un elemento nei metadati, effettuate le seguenti operazioni:
    `(agebox.value >= 21) ? true : false`
 
    ![Script metadati](assets/add-element-metadata.png)
-   **** Figura: Script *immesso nella scheda Metadati*
+   **Figura:** *Script immesso nella scheda Metadati*
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
 Dopo che un utente ha immesso i dati nell&#39;elemento selezionato come campo di metadati, le informazioni calcolate vengono registrate nei metadati. Potete visualizzare i metadati nella directory archivio configurata per la memorizzazione dei metadati.
 
@@ -63,5 +66,5 @@ Se aggiungete un elemento casella di controllo nei metadati, i valori selezionat
 
 >[!NOTE]
 >
->L&#39;esempio precedente è solo a scopo di apprendimento. Accertatevi di cercare i metadati nella posizione corretta, come configurato nell’implementazione di AEM Forms.
+>L&#39;esempio precedente è solo a scopo di apprendimento. Accertatevi di cercare i metadati nella posizione corretta, come configurato nell’implementazione AEM Forms .
 
