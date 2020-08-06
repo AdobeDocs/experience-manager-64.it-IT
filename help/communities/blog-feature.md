@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Introduzione {#introduction}
 
-La funzione blog di AEM Communities si è trasformata da attività di authoring a una vera e propria attività della community che si svolge nell’ambiente di pubblicazione.
+La funzione blog di  AEM Communities è stata trasformata da attività di authoring a vera e propria attività della community che si svolge nell’ambiente di pubblicazione.
 
 La funzione blog supporta la fornitura di informazioni sulla community in un formato di pubblicazione. Le voci di blog vengono inserite nell’ambiente di pubblicazione da membri autorizzati (utenti registrati e con accesso).
 
@@ -43,7 +46,7 @@ Questa sezione della documentazione descrive
 >
 >I componenti `Journal`e `Journal Sidebar` sono denominati `Blog` e `Blog Sidebar`.
 >
->La funzione blog disponibile in AEM 6.0 e nelle versioni precedenti è stata rimossa. Era basato su un modello e consentiva solo agli autori di creare contenuti nell’ambiente di authoring.
+>La funzione blog di AEM 6.0 e versioni precedenti è stata rimossa. Era basato su un modello e consentiva solo agli autori di creare contenuti nell’ambiente di authoring.
 
 ## Aggiunta di componenti blog a una pagina {#adding-blog-components-to-a-page}
 
@@ -54,7 +57,7 @@ Se desiderate aggiungere un blog a una pagina in modalità di creazione, usate i
 
 Trascinateli quindi nella posizione desiderata su una pagina in cui dovrebbe comparire il blog.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](blog-developer-basics.md#essentials-for-client-side) richieste, viene visualizzato il `Blog`componente:
 
@@ -80,7 +83,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le funzioni di base del
 
 * **[!UICONTROL Dimensione minima immagine per miniatura]** Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 kb).
 
-* **[!UICONTROL Dimensione]** massima miniatura DimensioneMassima (in pixel) della miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
+* **[!UICONTROL Dimensione]** massima miniatura DimensioneMassima (in pixel) della miniatura dell’immagine per l’immagine in linea. Il valore predefinito è 800 x 800.
 
 * **[!UICONTROL Consenti membri]** privilegiati Se questa opzione è selezionata, solo i membri privilegiati possono creare contenuto.
 
@@ -124,7 +127,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le funzioni di base del
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Dimensione massima per file immagine allegato]**
 
@@ -144,7 +147,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le funzioni di base del
 
 * **[!UICONTROL Consenti iscrizioni e-mail]**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [l’](email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti votazione]**
 
@@ -196,7 +199,7 @@ Nella scheda Campo **** tag, specificate i tag che possono essere applicati se n
 
 * **[!UICONTROL Namespace consentiti]**
 
-   Pertinente se `Allow Tagging` è selezionato nella scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **[!UICONTROL Limite di suggerimenti]**
 
@@ -219,6 +222,7 @@ Nella scheda Impostazioni **[!UICONTROL barra laterale]** giornale, specificare 
    * MMMMM: mese intero, come giugno
    * MMM: mese breve, come Jun
    * MM: numero del mese, come 06
+
    Il valore predefinito è &quot;yyyy MMMMM&quot; che mostrerebbe, ad esempio, &quot;2015 June&quot;
 
 * **[!UICONTROL Tipo di visualizzazione]**
@@ -233,7 +237,7 @@ Nella scheda Impostazioni **[!UICONTROL barra laterale]** giornale, specificare 
 
    *(Facoltativo)* Il percorso della risorsa del blog da cui devono essere elencati gli articoli del blog. Se lasciato vuoto, verrà utilizzato il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
 
-   * Ad esempio: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+   * Esempio, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **[!UICONTROL Limite di suggerimenti]**
 
@@ -247,7 +251,7 @@ L&#39;articolo del blog è seguito da un collegamento per pubblicare o visualizz
 
 Quando è selezionato un articolo di blog, vengono visualizzati l&#39;articolo e i commenti del blog (se abilitati).
 
-Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore, un amministratore, un membro della community, un membro privilegiato o un anonimo.
+Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore, un amministratore, un membro della community, un membro privilegiato o un utente anonimo.
 
 ### Utilizzo degli articoli {#working-with-articles}
 
@@ -269,7 +273,7 @@ Quando l&#39;utente che ha effettuato l&#39;accesso dispone di privilegi di mode
 
 Quando l&#39;utente che ha effettuato l&#39;accesso è un membro della community o un membro [](users.md#privileged-members-group) privilegiato (a seconda della configurazione), può selezionare `New Article` di creare e pubblicare un nuovo articolo del blog.
 
-In particolare, possono:
+In particolare, essi possono:
 
 * Creare un nuovo articolo di blog
 * Pubblica un nuovo articolo di blog per conto di un altro membro
