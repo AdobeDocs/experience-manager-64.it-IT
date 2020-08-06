@@ -1,16 +1,19 @@
 ---
 title: Configurare le restrizioni di caricamento delle risorse
-description: Scopri come configurare le risorse Adobe Experience Manager (AEM) per limitare il tipo di risorse (file) che gli utenti possono caricare.
+description: Scoprite come configurare Risorse Adobe Experience Manager (AEM) per limitare il tipo di risorse (file) che gli utenti possono caricare.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 31%
 
 ---
 
 
 # Configurare le restrizioni di caricamento delle risorse {#configuring-asset-upload-restrictions}
 
-Puoi configurare Risorse Adobe Experience Manager (AEM) per limitare il tipo di risorse (file) che gli utenti possono caricare. Questa funzione consente di eliminare la possibilità per gli utenti di caricare risorse in un formato indesiderato o qualsiasi file dannoso. Il `Day CQ DAM Asset Upload Restriction` servizio consente di controllare il tipo di file che gli utenti possono caricare. Per impostazione predefinita, AEM Assets consente agli utenti di caricare risorse di tutti i tipi MIME. Tuttavia, potete configurare il servizio per limitare gli utenti al caricamento di file di tipi MIME specifici.
+Potete configurare Risorse Adobe Experience Manager (AEM) per limitare il tipo di risorse (file) che gli utenti possono caricare. Questa funzione consente di eliminare la possibilità per gli utenti di caricare risorse in un formato indesiderato o qualsiasi file dannoso. Il `Day CQ DAM Asset Upload Restriction` servizio consente di controllare il tipo di file che gli utenti possono caricare. Per impostazione predefinita,  AEM Assets consente agli utenti di caricare risorse di tutti i tipi MIME. Tuttavia, potete configurare il servizio per limitare gli utenti al caricamento di file di tipi MIME specifici.
 
 1. Per aprire la console Web di Configuration Manager, accedere `https://[AEM_server]:[port]/system/console/configMgr`.
 1. Aprite il servizio Limitazione **[!UICONTROL caricamento risorse CQ DAM]** Day in modalità Modifica. Per impostazione predefinita, è selezionata l&#39;opzione **Consenti tutto MIME** , che consente agli utenti di caricare file di tutti i tipi MIME.
