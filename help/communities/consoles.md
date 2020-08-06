@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
 
 # Console community {#communities-consoles}
 
-Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere alle attività amministrative come
+Le console AEM Communities , disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere alle attività amministrative come
 
 * [Creazione di un sito community](sites-console.md)
 * Aggiunta di [gruppi](groups.md) nidificati nel sito
@@ -64,9 +67,9 @@ Per accedere alle varie console Community, dalla navigazione globale selezionate
 
 * [Rapporti](reports.md)
 
-   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
+   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato  Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
 
-* [Risorse](resources.md)
+* [Riferimenti](resources.md)
 
    La console Risorse è il luogo in cui [i manager](enablement.md#communitymanagers) di abilitazione creano, gestiscono e assegnano le risorse ai membri di un sito [della community di](overview.md#enablement-community)abilitazione. La console è disponibile solo nell’ambiente di authoring.
 
