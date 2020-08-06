@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
 source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
 
 # Guida ai componenti community {#community-components-guide}
 
-La guida Componenti comunitari è uno strumento di sviluppo interattivo per il quadro della componente [sociale (SCF)](scf.md). Contiene un elenco dei componenti AEM Communities disponibili o le funzioni più complesse create da più componenti.
+La guida Componenti comunitari è uno strumento di sviluppo interattivo per il quadro della componente [sociale (SCF)](scf.md). Fornisce un elenco dei componenti disponibili  AEM Communities o delle funzioni più complesse create da più componenti.
 
 Oltre alle informazioni di base per ciascun componente, la guida consente di sperimentare il funzionamento dei componenti e delle funzioni SCF e le modalità di configurazione o personalizzazione.
 
@@ -27,7 +30,7 @@ Per informazioni relative alle informazioni di sviluppo essenziali relative a ci
 
 La guida è destinata alle installazioni di sviluppo di istanze di creazione (localhost:4502) e pubblicazione (localhost:4503).
 
-Per accedere al sito Community Components, visita
+Per accedere al sito Community Components, consulta
 
 * [https://&lt;server>:&lt;porta>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
@@ -58,7 +61,7 @@ Per attivare la modalità di modifica, al momento dell&#39;authoring, inserire `
 >
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
+>Se non avete familiarità con AEM, consultate la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
 
 ### Home page {#home-page}
 
@@ -107,9 +110,11 @@ Nella scheda **Modelli** :
    Se questa opzione è deselezionata, la Guida ai componenti utilizzerà la risorsa esistente nell&#39;archivio (un nodo jcr secondario di un nodo par).
 
    * il testo visualizzato è: &quot;Questo componente è incluso tramite il relativo nodo par.&quot;
+
    Se questa opzione è selezionata, la Guida ai componenti utilizzerà la funzione sling per includere dinamicamente un componente del resourceType del nodo secondario (risorsa non esistente).
 
    * il testo visualizzato è: &quot;Questo componente è incluso dinamicamente.&quot;
+
    Il valore predefinito è deselezionato.
 
 ### Pubblicare le interazioni {#publish-interactions}
@@ -144,21 +149,21 @@ Quando attivato, ciascun componente SCF è disponibile per la creazione di proto
 
 Per sperimentare rapidamente le personalizzazioni, la `scg:showIde`proprietà deve essere aggiunta al nodo JCR del contenuto della pagina del componente e impostata su true.
 
-Utilizzando il componente commenti come esempio, nell’istanza di creazione o di pubblicazione, con diritti di amministratore:
+Utilizzando il componente commenti come esempio, nell’istanza di creazione o di pubblicazione, è stato effettuato l’accesso con privilegi di amministratore:
 
-1. Passa a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Passa al [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Ad esempio, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
 1. Seleziona il nodo del `jcr:content` componente
 
-   Ad esempio: `/content/community-components/en/comments/jcr:content`
+   Esempio, `/content/community-components/en/comments/jcr:content`
 
 1. Aggiunta di una proprietà
 
    * **Nome** `scg:showIde`
    * **Tipo** `String`
-   * **Valore**`true`
+   * **Valore** `true`
 
 1. Seleziona **[!UICONTROL Salva tutto]**
 1. Ricaricare la pagina Commenti nella guida
