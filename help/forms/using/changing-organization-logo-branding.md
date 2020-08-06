@@ -1,8 +1,8 @@
 ---
 title: Modifica del logo dell’organizzazione per il branding
 seo-title: Modifica del logo dell’organizzazione per il branding
-description: Per assegnare un marchio all’area di lavoro AEM Forms, personalizzare il logo predefinito dell’organizzazione.
-seo-description: Per assegnare un marchio all’area di lavoro AEM Forms, personalizzare il logo predefinito dell’organizzazione.
+description: Per personalizzare  area di lavoro AEM Forms, fornite il logo della vostra organizzazione personalizzando il logo predefinito.
+seo-description: Per personalizzare  area di lavoro AEM Forms, fornite il logo della vostra organizzazione personalizzando il logo predefinito.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
 # Modifica del logo dell’organizzazione per il branding {#changing-the-organization-logo-for-branding}
 
-Il logo dell&#39;organizzazione viene visualizzato nell&#39;angolo superiore sinistro dell&#39;area di lavoro AEM Forms. Per aggiornare il logo, segui i passaggi [Generici della personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) dell’area di lavoro AEM Forms e quindi i passaggi seguenti.
+Il logo dell&#39;organizzazione viene visualizzato nell&#39;angolo superiore sinistro &#39;area di lavoro di AEM Forms. Per aggiornare il logo, segui i passaggi [Generici  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) dell’area di lavoro AEM Forms e quindi i passaggi seguenti.
 
 1. Create un logo e denominate il file come `NewWorkspace.png`. Inserite il file di immagine nella cartella /apps/ws/images utilizzando un client WebDAV.
 
