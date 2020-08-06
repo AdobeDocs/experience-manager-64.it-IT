@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 79%
 
 ---
 
@@ -27,15 +30,15 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >Alcuni termini correlati alla pubblicazione possono creare confusione:
 >
->* **Pubblicare / Annullare la pubblicazione**
-   >  Termini principali per le azioni che rendono o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>* **Pubblicare/Annullare la pubblicazione**
+   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
    >
    >
-* **Attiva/Disattiva**
+* **Attivare/Disattivare**
    >  Sinonimi di pubblicare/annullare la pubblicazione.
    >
    >
-* **Replicare / Replica**
+* **Replicare/Replica**
    >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
 
@@ -47,6 +50,7 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Viene visualizzato brevemente un messaggio di notifica al riguardo.
+
 >
 
 
