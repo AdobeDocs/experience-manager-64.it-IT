@@ -1,8 +1,8 @@
 ---
-title: Creazione di tag in un’applicazione AEM
-seo-title: Creazione di tag in un’applicazione AEM
-description: Gestione programmatica dei tag o estensione dei tag all'interno di un'applicazione AEM personalizzata
-seo-description: Gestione programmatica dei tag o estensione dei tag all'interno di un'applicazione AEM personalizzata
+title: Creazione di tag in un'applicazione AEM
+seo-title: Creazione di tag in un'applicazione AEM
+description: Operazioni a livello di programmazione con i tag o l'estensione di tag all'interno di un'applicazione AEM personalizzata
+seo-description: Operazioni a livello di programmazione con i tag o l'estensione di tag all'interno di un'applicazione AEM personalizzata
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Creazione di tag in un’applicazione AEM{#building-tagging-into-an-aem-application}
+# Creazione di tag in un&#39;applicazione AEM{#building-tagging-into-an-aem-application}
 
-Per utilizzare in modo programmatico i tag o estenderli all’interno di un’applicazione AEM personalizzata, questa pagina descrive l’utilizzo del
+Per utilizzare in modo programmatico i tag o estenderli all&#39;interno di un&#39;applicazione AEM personalizzata, in questa pagina viene descritto l&#39;utilizzo del
 
 * [API di tag](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni sui tag, vedere:
 
 ## Panoramica dell’API Tagging {#overview-of-the-tagging-api}
 
-L’implementazione del framework [di](/help/sites-developing/framework.md) tag in AEM consente di gestire tag e contenuti tag mediante l’API JCR. TagManager assicura che i tag immessi come valori nella proprietà dell&#39;array di `cq:tags` stringhe non vengano duplicati, rimuove gli ID di tag che puntano a tag non esistenti e aggiorna gli ID di tag per i tag spostati o uniti. TagManager utilizza un listener di osservazione JCR che ripristina le modifiche non corrette. Le classi principali si trovano nel pacchetto [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implementazione del framework [di](/help/sites-developing/framework.md) tag in AEM consente di gestire tag e contenuti tag utilizzando l’API JCR. TagManager assicura che i tag immessi come valori nella proprietà dell&#39;array di `cq:tags` stringhe non vengano duplicati, rimuove gli ID di tag che puntano a tag non esistenti e aggiorna gli ID di tag per i tag spostati o uniti. TagManager utilizza un listener di osservazione JCR che ripristina le modifiche non corrette. Le classi principali si trovano nel pacchetto [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - restituisce un&#39;implementazione JCR di un `TagManager`. È l’implementazione di riferimento dell’API Tagging.
 * `TagManager` - consente di risolvere e creare tag in base a percorsi e nomi.
@@ -198,5 +198,5 @@ La nuova lingua (finlandese) è ora disponibile nella finestra di dialogo dei ta
 
 >[!NOTE]
 >
->La nuova lingua deve essere una delle lingue riconosciute da AEM, ovvero deve essere disponibile come nodo sottostante `/libs/wcm/core/resources/languages`.
+>La nuova lingua deve essere una delle AEM lingue riconosciute, cioè deve essere disponibile come nodo sottostante `/libs/wcm/core/resources/languages`.
 
