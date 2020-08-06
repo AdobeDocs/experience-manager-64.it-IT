@@ -1,6 +1,6 @@
 ---
-title: Esportazione in formato CSV
-seo-title: Esportazione in formato CSV
+title: 'Esportazione in formato CSV  '
+seo-title: 'Esportazione in formato CSV  '
 description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
 seo-description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 79%
 
 ---
 
 
-# Esportazione in formato CSV{#export-to-csv}
+# Esportazione in formato CSV  {#export-to-csv}
 
 L’opzione **Crea esportazione CSV** consente di esportare le informazioni sulle pagine in un file CSV nel sistema locale.
 
 * Il nome del file scaricato è `export.csv`
-* Il contenuto dipende dalle proprietà che erano state selezionate.
+* Il contenuto dipende dalle proprietà selezionate.
 * Puoi definire il percorso e il livello di profondità dell’esportazione.
 
 >[!NOTE]
 >
->Viene usata la funzione di download e la destinazione predefinita del browser in uso.
+>Vengono utilizzate la funzione di download e la destinazione predefinita del browser in uso.
 
-La procedura guidata Crea esportazione CSV consente di selezionare:
+La procedura guidata Crea esportazione CSV permette di selezionare:
 
 * Proprietà da esportare
 
