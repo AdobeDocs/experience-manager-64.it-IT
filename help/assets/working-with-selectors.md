@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 22%
 
 ---
 
@@ -27,7 +30,7 @@ Ad esempio, in questo banner carosello, utilizzate il selettore Prodotto se stat
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Quando selezionate (anziché immettere manualmente) i punti attivi o le mappe immagine a cui si trovano, state utilizzando il selettore. Il selettore Sito funziona solo se siete clienti di AEM Sites. Il selettore di prodotti richiede anche AEM Commerce.
+Quando selezionate (anziché immettere manualmente) i punti attivi o le mappe immagine a cui si trovano, state utilizzando il selettore. Il selettore del sito funziona solo se siete un cliente AEM Sites . Il selettore del prodotto richiede anche AEM Commerce.
 
 ## Selezione di prodotti {#selecting-products}
 
@@ -47,11 +50,11 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Per cambiare la posizione in cui AEM ricerca i dati del prodotto, tocca **[!UICONTROL Sfoglia]** e passa a un&#39;altra cartella.
+   Per cambiare la posizione AEM ricerca dei dati del prodotto, toccate **[!UICONTROL Sfoglia]** e passate a un’altra cartella.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toccate **[!UICONTROL Ordina]** per per cambiare l’ordinamento di AEM da più recente a meno recente o dal meno recente a meno recente.
+   Toccate **[!UICONTROL Ordina]** per per cambiare l’ordinamento AEM più recente a meno recente o dal meno recente a meno recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -69,7 +72,7 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
 ## Selezione dei siti {#selecting-sites}
 
-Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate che un punto di attivazione o una mappa immagine rimangano collegati a una pagina Web gestita all’interno dei siti AEM.
+Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate che un punto di attivazione o una mappa immagine rimangano collegati a una pagina Web gestita all’interno AEM siti.
 
 1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
 
@@ -85,7 +88,7 @@ Utilizzate il selettore del sito per scegliere una pagina Web quando desiderate 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. In modalità **[!UICONTROL Anteprima]** , toccando il punto di attivazione o la mappa immagine si passa alla pagina del sito AEM specificata.
+1. In modalità **[!UICONTROL Anteprima]** , toccando il punto di attivazione o la mappa immagine, passate alla pagina del sito AEM specificata.
 
 ## Selezione delle risorse {#selecting-assets}
 
@@ -102,7 +105,7 @@ Per ulteriori informazioni, consultate anche [Selezione](asset-selector.md) riso
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Per cambiare la posizione in cui AEM ricerca le risorse, passa a un’altra cartella nel campo **[!UICONTROL Percorso]** .
+   Per cambiare la posizione AEM ricerca delle risorse, passate a un’altra cartella nel campo **[!UICONTROL Percorso]** .
 
    Toccate **[!UICONTROL Raccolta]** per cercare solo le risorse all&#39;interno delle raccolte.
 
