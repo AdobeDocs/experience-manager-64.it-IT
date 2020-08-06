@@ -44,7 +44,7 @@ Per ciascun dominio Enterprise configurato, specificate le directory richieste d
 
 ### Aggiungere un&#39;API personalizzata {#add-a-custom-spi}
 
-Per informazioni sulla creazione di un&#39;API personalizzata, consultate &quot;Developing SPIs for AEM forms&quot; (Sviluppo di SPI per moduli AEM) in [Programmazione con i moduli](https://www.adobe.com/go/learn_aemforms_programming_63)AEM. Per rendere disponibile un nuovo SPI personalizzato distribuito per l&#39;associazione con il dominio, riavviare il server.
+Per informazioni sulla creazione di un&#39;API personalizzata, vedere &quot;Sviluppo di SPI per moduli AEM&quot; nella [programmazione con moduli](https://www.adobe.com/go/learn_aemforms_programming_63)AEM. Per rendere disponibile un nuovo SPI personalizzato distribuito per l&#39;associazione con il dominio, riavviare il server.
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fate clic su Nuovo dominio Enterprise o selezionate un dominio enterprise esistente.
@@ -60,7 +60,7 @@ Potete modificare i dettagli di una directory precedentemente configurata.
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul dominio appropriato nell&#39;elenco e, sulla pagina visualizzata, selezionare la directory appropriata dall&#39;elenco.
 1. Configurate le impostazioni di directory, utenti e gruppi come necessario. Consultate Impostazioni [](configuring-directories.md#directory-settings)della directory.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Eliminare una directory {#delete-a-directory}
 
@@ -137,7 +137,7 @@ Sebbene il DN di base sia un&#39;impostazione obbligatoria nella console di ammi
 
 **Iniziali:** Attributo schema per le iniziali dell&#39;utente
 
-**Calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione (la chiave del calendario aziendale). I calendari aziendali definiscono i giorni lavorativi e non lavorativi. I moduli AEM possono utilizzare i calendari aziendali per calcolare le date e le ore future per eventi quali promemoria, scadenze e inoltro per moderazione. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. Consultate Configurazione dei calendari aziendali.
+**Calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione (la chiave del calendario aziendale). I calendari aziendali definiscono i giorni lavorativi e non lavorativi. AEM moduli possono utilizzare calendari aziendali per calcolare date e ore future per eventi quali promemoria, scadenze ed escalation. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. Consultate Configurazione dei calendari aziendali.
 
 Se utilizzate un dominio Enterprise, potete mappare l’impostazione Calendario aziendale su un campo presente nella directory LDAP. Ad esempio, se ogni record utente nella directory contiene un campo del *paese* e si desidera assegnare calendari aziendali in base al paese in cui si trova l&#39;utente, specificare il nome del campo del *paese* come valore per l&#39;impostazione Calendario aziendale. È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo del *paese* nella directory LDAP) ai calendari aziendali nel flusso di lavoro dei moduli.
 
@@ -159,7 +159,7 @@ Lo spazio utilizzato per visualizzare il nome della chiave del calendario aziend
 
 **Fuso orario:** Attributo dello schema che contiene il fuso orario in cui si trova l&#39;utente. Il valore è una stringa come Città/Paese.
 
-**Abilita controllo VLV (Virtual List View):** Un controllo LDAP che consente ai moduli AEM di recuperare i dati in batch dal server di directory. Se utilizzate Sun One come directory LDAP e la directory contiene molti utenti, l’attivazione di VLV crea un indice che Gestione utente può utilizzare per la ricerca degli utenti. Questa funzione è utile quando si utilizza un account utente normale in grado di sincronizzare solo una quantità limitata di dati. Potete inoltre abilitare VLV per i gruppi. Se selezionate Abilita controllo visualizzazione elenco virtuale (VLV), specificate un nome nella casella Campo ordinamento.
+**Abilita controllo VLV (Virtual List View):** Un controllo LDAP che consente AEM moduli di recuperare i dati in batch dal server di directory. Se utilizzate Sun One come directory LDAP e la directory contiene molti utenti, l’attivazione di VLV crea un indice che Gestione utente può utilizzare per la ricerca degli utenti. Questa funzione è utile quando si utilizza un account utente normale in grado di sincronizzare solo una quantità limitata di dati. Potete inoltre abilitare VLV per i gruppi. Se selezionate Abilita controllo visualizzazione elenco virtuale (VLV), specificate un nome nella casella Campo ordinamento.
 
 >[!NOTE]
 >
@@ -201,13 +201,13 @@ Se DN è specificato come identificatore univoco, non è necessario configurare 
 
 **Modifica timestamp:** Per abilitare la sincronizzazione della directory delta, imposta questo valore per modificare TimeStamp. Consultate Attivare la sincronizzazione della directory delta.
 
-**Abilita controllo VLV (Virtual List View):** Un controllo LDAP che consente ai moduli AEM di recuperare i dati in batch dal server di directory. Se utilizzate Sun One come directory LDAP e la directory contiene molti gruppi, l’attivazione di VLV crea un indice che User Management può utilizzare per la ricerca dei gruppi. Questa funzione è utile quando si utilizza un account utente normale in grado di sincronizzare solo una quantità limitata di dati. Potete inoltre abilitare VLV per gli utenti. Se selezionate Abilita controllo visualizzazione elenco virtuale, specificate un nome per il campo di ordinamento.
+**Abilita controllo VLV (Virtual List View):** Un controllo LDAP che consente AEM moduli di recuperare i dati in batch dal server di directory. Se utilizzate Sun One come directory LDAP e la directory contiene molti gruppi, l’attivazione di VLV crea un indice che User Management può utilizzare per la ricerca dei gruppi. Questa funzione è utile quando si utilizza un account utente normale in grado di sincronizzare solo una quantità limitata di dati. Potete inoltre abilitare VLV per gli utenti. Se selezionate Abilita controllo visualizzazione elenco virtuale, specificate un nome per il campo di ordinamento.
 
 >[!NOTE]
 >
 >Per abilitare VLV, configurare Sun One. Consultate [Configurare la gestione utente per l’utilizzo della visualizzazione a elenco virtuale (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Nome campo ordinamento:** Se avete selezionato Abilita controllo VLV (Virtual List View Control), specificate il nome attributo utilizzato per ordinare l&#39;indice. Questo nome attributo è quello specificato al momento della creazione di un indice per VLV sul server di directory.
+**Nome campo ordinamento:** Se avete selezionato Abilita controllo VLV (Virtual List View Control), specificate il nome attributo utilizzato per ordinare l&#39;indice. Questo nome attributo è quello specificato al momento della creazione di un indice per VLV nel server di directory.
 
 >[!NOTE]
 >
@@ -219,9 +219,9 @@ Se DN è specificato come identificatore univoco, non è necessario configurare 
 
 ## Configurare Gestione utente per l’utilizzo della visualizzazione a elenco virtuale (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
-La sincronizzazione delle directory è un requisito importante per la gestione degli utenti. Gli utenti e i gruppi vengono sincronizzati da una directory aziendale al database dei moduli AEM per assegnare ruoli e autorizzazioni. Il numero di utenti varia da 100 a 100000+ a seconda dei requisiti e rappresenta una sfida tecnica per la sincronizzazione dei dati in modo efficiente.
+La sincronizzazione delle directory è un requisito importante per la gestione degli utenti. Gli utenti e i gruppi vengono sincronizzati da una directory enterprise al database dei moduli AEM per assegnare ruoli e autorizzazioni. Il numero di utenti varia da 100 a 100000+ a seconda dei requisiti e rappresenta una sfida tecnica per la sincronizzazione dei dati in modo efficiente.
 
-Il protocollo LDAP fornisce un meccanismo per eseguire query su set di dati di grandi dimensioni in modo impaginato utilizzando i controlli di richiesta. Quando si utilizza Microsoft Active Directory, la sincronizzazione del database da LDAP a AEM moduli utilizza PagedResultsControl per il recupero dei dati in batch di dimensioni particolari. Il server di directory Sun ONE non supporta questo controllo. Per completare una query impaginata sul server di directory Sun ONE, utilizzare il controllo VLV (Virtual List View). Questo controllo include sia la configurazione lato server della directory che l&#39;implementazione lato client.
+Il protocollo LDAP fornisce un meccanismo per eseguire query su set di dati di grandi dimensioni in modo impaginato utilizzando i controlli di richiesta. Quando si utilizza Microsoft Active Directory, LDAP per AEM la sincronizzazione del database dei moduli utilizza PagedResultsControl per recuperare i dati in batch di dimensioni particolari. Il server di directory Sun ONE non supporta questo controllo. Per completare una query impaginata sul server di directory Sun ONE, utilizzare il controllo VLV (Virtual List View). Questo controllo include sia la configurazione lato server della directory che l&#39;implementazione lato client.
 
 >[!NOTE]
 >
