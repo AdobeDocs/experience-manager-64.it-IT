@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 82%
 
 ---
 
@@ -180,7 +183,7 @@ Sono disponibili in due schede:
 
          * **Pagine**
 
-            Selezionare un elenco di pagine.  Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
+            Selezionare un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
       * **Opzioni per la ricerca**
 
          * **Inizia in**
@@ -255,7 +258,7 @@ L’esempio seguente mostra un esempio di dati del grafico, seguiti dal grafico 
 >
 >Il componente Frammento di contenuto è visibile anche nella barra laterale dell’interfaccia classica, ma senza ulteriori funzioni.
 
-I [frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante la creazione di pagine di contenuto.
+I [frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 ### Importazione progettazione {#design-importer}
 
@@ -438,13 +441,13 @@ Il componente Elenco permette di configurare criteri di ricerca per la creazione
             Specificate un percorso manualmente o utilizzando il selettore. Lasciate vuoto per utilizzare la pagina corrente come elemento padre.
       * **Opzioni per elenco fisso**
 
-         * **Pagine** - Selezionare un elenco di pagine.Utilizza + per aggiungere altre voci e i pulsanti su/giù per regolare l’ordine.
+         * **Pagine** - Selezionare un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti su/giù per regolare l’ordine.
       * **Opzioni per la ricerca**
 
          * **Inizia in** - Immettete un percorso iniziale, manualmente o utilizzando il selettore. Query di ricerca Consente di inserire una query di ricerca sotto forma di testo normale.
       * **Opzioni di ricerca avanzata**
 
-         * **Notazione** predicato QueryBuilder - È possibile inserire una query di ricerca utilizzando la notazione predicato Querybuilder.Ad esempio, potete immettere &quot;fulltext=Marketing&quot; per visualizzare nel carosello tutte le pagine con &quot;Marketing&quot; nel contenuto.Per informazioni complete sulle espressioni di query e per ulteriori esempi, consultate API [](/help/sites-developing/querybuilder-api.md) QueryBuilder.
+         * **Notazione** predicato QueryBuilder - È possibile inserire una query di ricerca utilizzando la notazione predicato Querybuilder. Ad esempio, potete immettere &quot;fulltext=Marketing&quot; per visualizzare nel carosello tutte le pagine con &quot;Marketing&quot; nel contenuto. Per informazioni complete sulle espressioni di query e per ulteriori esempi, consultate API [](/help/sites-developing/querybuilder-api.md) QueryBuilder.
       * **Tag** - Specificate la pagina **** padre, **tag/parole chiave** e i criteri di corrispondenza richiesti.
    * **Visualizza come**
 
@@ -525,7 +528,7 @@ Puoi configurare i parametri seguenti:
 
    * **Tipo/Dimensione**
 
-      Selezionare dalla selezione fornita.
+      Selezionare tra le opzioni disponibili.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -811,7 +814,7 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
 * Video
 
    * **Risorsa** video - Caricate o rilasciate la risorsa video.
-   * **Dimensioni** - Le dimensioni native del video (larghezza x altezza in pixel) vengono visualizzate nelle caselle accanto a Dimensioni (vedere sopra). Immettete manualmente le dimensioni in larghezza e altezza per sovrascrivere le dimensioni native del video.Fate clic su **OK** per chiudere la finestra di dialogo.
+   * **Dimensioni** - Le dimensioni native del video (larghezza x altezza in pixel) vengono visualizzate nelle caselle accanto a Dimensioni (vedere sopra). Immettete manualmente le dimensioni in larghezza e altezza per sovrascrivere le dimensioni native del video. Fate clic su **OK** per chiudere la finestra di dialogo.
 
 >[!NOTE]
 >
@@ -820,6 +823,7 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (video Flash)
+
 >
 
 
@@ -982,7 +986,7 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
 
       Un modulo richiede un’azione che definisca l’operazione da avviare con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una configurazione **** azione corrispondente.
 
-      Una selezione di tipi di azione è inclusa in un’installazione standard di AEM:
+      Una selezione di tipi di azione è inclusa in un&#39;installazione standard AEM:
 
       * **Richiesta account**
       * **Crea contenuto**
@@ -1230,7 +1234,7 @@ Puoi specificare un titolo e le voci incluse nell’elenco. Utilizza i pulsanti 
 >
 >Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento file {#file-upload}
+### Caricamento di file {#file-upload}
 
 Il componente Caricamento file offre all’utente la possibilità di selezionare e caricare un file.
 
