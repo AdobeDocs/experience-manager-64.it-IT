@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Utilizzate la pagina Utenti invitati e locali per gestire gli utenti invitati e locali. Questa pagina viene visualizzata solo se sono soddisfatti i seguenti requisiti:
 
-* Siete un amministratore a cui vengono assegnati il ruolo Gestisci utenti invitati e locali sulla protezione del documento e il ruolo Utente nella console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
+* Siete un amministratore a cui vengono assegnati il ruolo Gestisci utenti invitati e locali per la protezione dei documenti e il ruolo Utente della console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
 * La registrazione degli utenti invitati è abilitata. Consultate [Configurazione della registrazione](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)degli utenti invitati.
 
 La pagina Utenti invitati e locali contiene due schede che potete utilizzare per cercare, visualizzare, modificare, bloccare, sbloccare ed eliminare gli account utente invitati e locali.
@@ -32,14 +35,14 @@ Potete inoltre inviare manualmente e-mail di registrazione agli utenti invitati.
 
 ## Aggiunta di un utente invitato {#add-an-invited-user}
 
-Potete aggiungere uno o più account utente invitati alla volta per la protezione dei documenti. Per aggiungere un account utente invitato, è necessario l’indirizzo e-mail dell’utente. Quando aggiungete un utente, Document Security invia un messaggio e-mail di registrazione che invita l&#39;utente a registrarsi.
+Potete aggiungere uno o più account utente invitati alla volta per la protezione dei documenti. Per aggiungere un account utente invitato, è necessario l’indirizzo e-mail dell’utente. Quando aggiungete un utente, Document Security invia un messaggio e-mail di registrazione in cui invita l&#39;utente a registrarsi.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali, quindi fate clic su Invita nuovo utente.
 1. Digitate gli indirizzi e-mail degli utenti che desiderate invitare. Inserite più indirizzi su una riga, separati da una virgola.
 
    Il messaggio creato quando si abilita la registrazione degli utenti invitati viene inviato agli utenti. Consultate [Configurazione della registrazione](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)degli utenti invitati.
 
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Visualizzazione delle informazioni su un utente locale {#view-information-about-a-local-user}
 
@@ -88,13 +91,13 @@ Quando avete attivato il processo di registrazione degli utenti invitati, avete 
 
 ## Rimozione di un account utente invitato {#remove-an-invited-user-account}
 
-Potete eliminare gli account utente invitati dalla protezione del documento. Potrebbe essere utile eliminare un account, ad esempio, quando un utente modifica le informazioni personali del proprio account e-mail.
+Potete eliminare gli account utente invitati dalla protezione del documento. Potreste desiderare di eliminare un account, ad esempio, quando un utente modifica le informazioni personali del proprio account e-mail.
 
 Se eliminate un account utente, solo voi o un altro amministratore potete ripristinare l’account selezionando l’opzione Aggiungi utente invitato nella pagina Utenti invitati. Gli utenti non possono aggiungere l&#39;account utente eliminato a un criterio e tale metodo non consente di avviare alcun processo di invito.
 
 >[!NOTE]
 >
->Gli utenti invitati che sono stati eliminati tramite l&#39;interfaccia di gestione utenti di AEM non possono essere nuovamente invitati finché non sono stati eliminati di nuovo utilizzando la procedura seguente.
+>Gli utenti invitati che sono stati eliminati tramite l&#39;interfaccia di gestione utenti dei moduli AEM non possono essere nuovamente invitati fino a quando non sono stati nuovamente eliminati utilizzando la procedura seguente.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali e fate clic sulla scheda Utenti invitati.
 1. Selezionate la casella di controllo accanto a uno o più utenti, fate clic su Elimina, quindi su OK.
@@ -115,7 +118,7 @@ Potete cercare un utente locale utilizzando l&#39;indirizzo e-mail o il nome e i
 
 ## Rimozione di un account utente locale {#remove-a-local-user-account}
 
-È possibile eliminare account utente locali dalla protezione dei documenti. Potreste desiderare di eliminare account, ad esempio, quando gli utenti modificano le informazioni personali del loro account e-mail.
+È possibile eliminare gli account utente locali dalla protezione dei documenti. Potreste desiderare di eliminare account, ad esempio, quando gli utenti modificano le informazioni personali del loro account e-mail.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali e fate clic sulla scheda Utenti locali.
 1. Selezionate la casella di controllo accanto a uno o più utenti, fate clic su Elimina, quindi su OK.
