@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +28,7 @@ Questa sezione illustra come creare e gestire pagine in Adobe Experience Manager
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
-## Organizzazione del sito Web {#organizing-your-website}
+## Organizzazione del sito web {#organizing-your-website}
 
 In qualità di autore dovrai organizzare il sito Web in AEM. Questo richiede che vengano create e denominate delle pagine di contenuto affinché:
 
@@ -72,13 +75,13 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Convenzioni di denominazione delle pagine {#page-naming-conventions}
 
 Durante la creazione di una nuova pagina sono disponibili due campi chiave:
 
 * **[Titolo](#title)**:
 
-   * È visualizzato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica. 
+   * Viene mostrato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica.
    * Questo campo è obbligatorio.
 
 * **[Nome](#name)**:
@@ -100,7 +103,7 @@ Utilizza esclusivamente questi caratteri se vuoi essere sicuro che vengano accet
 
 #### Titolo {#title}
 
-Se specifichi solo un **Titolo** pagina al momento della creazione di una nuova pagina, AEM prende il **Nome**[ pagina da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) In entrambe le interfacce, un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome**[ da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) In entrambe le interfacce, un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -109,7 +112,7 @@ Se specifichi solo un **Titolo** pagina al momento della creazione di una nuova 
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+Se specifichi il **nome**[ della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/sites-developing/naming-conventions.md)
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -130,15 +133,18 @@ Il modello definisce la struttura di una pagina, inclusa un’immagine miniatura
 
 Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito Web e le informazioni da fornire (per la creazione di nuove pagine) dipendono dall’interfaccia in uso. I campi chiave sono i seguenti:
 
-* **Titolo** Il titolo visualizzato nella pagina Web risultante.
+* **Titolo**
+Il titolo visualizzato nella pagina web risultante.
 
-* **Nome** Utilizzato per la denominazione della pagina.
+* **Nome**
+Utilizzato per la denominazione della pagina.
 
-* **Modello** Elenco di modelli disponibili per la generazione della nuova pagina.
+* **Modello**
+Elenco di modelli disponibili per la generazione della nuova pagina.
 
 ### Componenti {#components}
 
-I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. AEM include una serie di componenti out-of-the-box che offrono funzionalità complete; tra cui:
+I componenti sono gli elementi forniti da AEM che consentono di aggiungere specifici tipi di contenuto. AEM con una serie di componenti out-of-the-box che offrono funzionalità complete; tra cui:
 
 * Testo
 * Immagine
@@ -204,7 +210,7 @@ Per aprire la pagina [da modificare](/help/sites-classic-ui-authoring/classic-pa
 
 * Dopo avere aperto una pagina, fai clic sui collegamenti ipertestuali per accedere ad altre pagine del sito e modificarle.
 
-### Copiare e incollare una pagina {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
 
 La funzione di copia consente di copiare:
 
@@ -223,6 +229,7 @@ La funzione di copia consente di copiare:
 
    * **Incolla**, per incollare la pagina con tutte le relative sottopagine
    * **Maiusc+Incolla**, per incollare solo la pagina selezionata
+
    La pagina o le pagine vengono incollate nella nuova posizione.
 
    >[!NOTE]
@@ -325,7 +332,7 @@ Per spostare o rinominare una pagina:
 >Anche quando si rinomina una cartella occorre rispettare le [convenzioni di denominazione delle pagine](#page-naming-conventions).
 
 1. Apri la console **Siti Web** e passa alla posizione desiderata.
-1. **** Nel **Nuovo... (fate clic sulla freccia accanto a** Nuovo...**), selezionate** Nuova cartella... .
+1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
 1. Verrà visualizzata la finestra di dialogo **Crea cartella**. Qui è possibile specificare il **Nome** e il **Titolo**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
