@@ -343,12 +343,15 @@ Non puoi aggiungere offerte dalla libreria all’esperienza predefinita.
    Il selettore delle offerte consente di individuare o filtrare le offerte. Durante la navigazione o il filtraggio, è anche possibile ordinare le offerte e modificarne la modalità di visualizzazione. Il numero in alto a destra indica il numero di offerte disponibili nella libreria corrente.
 
    * Click or tap **Browse** to navigate to another folder. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Click or tap **Browse** again to close the navigation pane.
+
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
    * Tocca o fai clic su **Filtra** per filtrare le offerte in base a parole chiave o tag. Le parole chiave devono essere digitate, mentre i tag possono essere selezionati dal menu a comparsa. Tocca o fai clic di nuovo su **Filtra** per chiudere il pannello di filtraggio.
+
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
    * Puoi modificare l’ordine delle offerte toccando o facendo clic sulla freccia accanto a **Dal più recente al meno recente**. Le offerte possono essere ordinate dalla più recente alla meno recente o dalla meno recente alla più recente.
+
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
    Tocca o fai clic sull’icona accanto a **Visualizza** per visualizzare le offerte come miniature o come elenco.
@@ -658,7 +661,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
   </tr> 
   <tr> 
    <td><strong>Motore</strong></td> 
-   <td>Selezionare tra le regole lato <strong>client (senza tracciamento),  Adobe Target, ContextHub </strong>e  Adobe Campaign a<strong> </strong>seconda del motore da utilizzare.</td> 
+   <td>Selezionate tra le regole lato <strong>client (senza tracciamento),  Adobe Target, ContextHub </strong>e  Adobe Campaign a<strong> </strong>seconda del motore da utilizzare.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -675,7 +678,7 @@ Se hai selezionato Adobe Target come motore:
   </tr> 
   <tr> 
    <td><strong>Impostazione destinazione precisa</strong></td> 
-   <td><p>L'attivazione di un targeting accurato indica al componente di attendere che i dati contestuali del client o dell'hub di contesto siano disponibili prima di inviare la richiesta al Adobe Target . Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Nota:</strong> L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td> 
+   <td><p>L'attivazione di un targeting preciso indica al componente di attendere la disponibilità dei dati contestuali del client o dell'hub di contesto prima di inviare la richiesta a  Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Nota:</strong> L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Includi segmenti risolti</strong></td> 
@@ -683,15 +686,15 @@ Se hai selezionato Adobe Target come motore:
   </tr> 
   <tr> 
    <td><strong>Parametri di contesto ereditati</strong></td> 
-   <td>Elenca gli eventuali parametri contestuali ereditati dal framework del Adobe Target , associati alla pagina selezionata.</td> 
+   <td>Elenca gli eventuali parametri contestuali ereditati dal framework Adobe Target  associato alla pagina selezionata.</td> 
   </tr> 
   <tr> 
    <td><strong>Param contesto</strong></td> 
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come nel caso di ciò che è disponibile nel framework Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td> 
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come avviene per il framework di Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td> 
   </tr> 
   <tr> 
    <td><strong>Param statici</strong></td> 
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri statici aggiuntivi (come avviene per il framework Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td> 
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare ulteriori parametri statici (come avviene per ciò che è disponibile nel framework di Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td> 
   </tr> 
  </tbody> 
 </table>
