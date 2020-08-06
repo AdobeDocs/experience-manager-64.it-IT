@@ -1,6 +1,6 @@
 ---
-title: Scelte rapide da tastiera per le console
-seo-title: Scelte rapide da tastiera per le console
+title: 'Scelte rapide da tastiera per le console  '
+seo-title: 'Scelte rapide da tastiera per le console  '
 description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la modifica delle pagine.
 seo-description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la modifica delle pagine.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
 
@@ -27,6 +30,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
    >
    >
 * Mac: **Comando**+**clic** sui componenti richiesti.
+
 >
 
 
