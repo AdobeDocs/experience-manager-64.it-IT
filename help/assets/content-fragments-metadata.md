@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 10%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
 ## Proprietà di modifica / Metadati {#editing-properties-meta-data}
 
@@ -30,6 +33,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
    * Selezionate [Visualizza proprietà per aprire le finestre di dialogo](managing-assets-touch-ui.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
    * Aprite il frammento di [contenuto per Modifica](content-fragments-managing.md#opening-the-fragment-editor), quindi selezionate **[!UICONTROL Metadati]** dal pannello laterale.
+
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. La scheda **[!UICONTROL Base]** contiene le opzioni che è possibile visualizzare o modificare:
@@ -39,5 +43,6 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
    * **Descrizione**
    * **Tag**
    * Creato (solo visualizzazione)
+
    ![cfm-6420-07](assets/cfm-6420-07.png)
 
