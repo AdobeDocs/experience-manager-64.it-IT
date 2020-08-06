@@ -4,6 +4,9 @@ description: Scoprite come modificare simultaneamente i metadati di molte risors
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 12%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 Scoprite come modificare i metadati di più risorse e raccolte contemporaneamente per diffondere rapidamente le comuni modifiche ai metadati.
 
-Risorse Adobe Enterprise Manager (AEM) consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in blocco. Potete anche modificare i metadati per più raccolte in blocco.
+ risorse Enterprise Manager (AEM) di Adobe consente di modificare i metadati di più risorse contemporaneamente, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in blocco. Potete anche modificare i metadati per più raccolte in blocco.
 
 Utilizzate la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
