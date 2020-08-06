@@ -1,22 +1,25 @@
 ---
 title: Ricerca full-text GQL
-description: Esplora la funzione di ricerca full-text GQL in Risorse AEM. Potete usarlo per cercare risorse basate su metadati specifici, quali titolo, descrizione e nome dell’autore.
+description: Esplora la funzione di ricerca full-text GQL in  AEM Assets. Potete usarlo per cercare risorse basate su metadati specifici, quali titolo, descrizione e nome dell’autore.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 2%
 
 ---
 
 
 # Ricerca full-text GQL {#gql-full-text-search}
 
-Esplora la funzione di ricerca full-text GQL in Risorse AEM. Potete usarlo per cercare risorse basate su metadati specifici, quali titolo, descrizione e nome dell’autore.
+Esplora la funzione di ricerca full-text GQL in  AEM Assets. Potete usarlo per cercare risorse basate su metadati specifici, quali titolo, descrizione e nome dell’autore.
 
 La funzione di ricerca full-text GQL consente di cercare risorse in base a metadati specifici, quali titolo, descrizione, autore e così via.
 
-Per cercare una risorsa basata sui relativi metadati, ad esempio il titolo, specificate la parola chiave di metadati seguita dal relativo valore nel pannello di ricerca. La funzione di ricerca full-text GQL recupererà solo le risorse i cui metadati corrispondono esattamente al valore corrispondente immesso.
+Per cercare una risorsa in base ai relativi metadati, ad esempio il titolo, specificate la parola chiave di metadati seguita dal relativo valore nel pannello di ricerca. La funzione di ricerca full-text GQL recupererà solo le risorse i cui metadati corrispondono esattamente al valore corrispondente immesso.
 
-Ad esempio, per cercare risorse con il titolo &quot;Target&quot;, effettuate le seguenti operazioni:
+Ad esempio, per cercare le risorse con il titolo &quot;Target&quot;, effettuate le seguenti operazioni:
 
 ## Ricerca delle risorse {#searching-assets}
 
@@ -34,7 +37,7 @@ Ad esempio, per cercare risorse con il titolo &quot;Target&quot;, effettuate le 
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. L’interfaccia utente di AEM Assets visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
+1. Press **[!UICONTROL Enter]**. L&#39;interfaccia utente  AEM Assets visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
 
 La funzione di ricerca full-text GQL consente di effettuare ricerche di risorse basate sui seguenti elementi:
 
@@ -55,8 +58,8 @@ La funzione di ricerca full-text di GQL consente di cercare le risorse in base a
 | [!UICONTROL Collaboratore] | collaboratore:John |
 | [!UICONTROL Posizione] | posizione:India |
 | [!UICONTROL Descrizione] | descrizione:&quot;Immagine campione&quot; |
-| [!UICONTROL Strumento di creazione] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
-| [!UICONTROL Proprietario copyright] | copyrightowner: &quot;Adobe Systems&quot; |
+| [!UICONTROL Strumento di creazione] | creatortool:&quot; Adobe Photoshop 7.0&quot; |
+| [!UICONTROL Proprietario copyright] | copyrightowner:&quot; Adobe Systems&quot; |
 | [!UICONTROL Collaboratore] | collaboratore:John |
 | [!UICONTROL Condizioni d&#39;uso] | usageterms:&quot;CopyRights Reserved&quot; |
 | [!UICONTROL Creato] | create:AAAA-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
@@ -65,7 +68,7 @@ La funzione di ricerca full-text di GQL consente di cercare le risorse in base a
 | [!UICONTROL Ora di disattivazione] | offtime:AAAA-MM-DTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Intervallo di tempo] (data di scadenza, ora di disattivazione) | campo facet: in basso..upperbound |
 | [!UICONTROL Percorso] | /content/dam/&lt;nome cartella> |
-| [!UICONTROL Titolo PDF] | pdftitle:&quot;Documento Adobe&quot; |
+| [!UICONTROL Titolo PDF] | pdftitle:&quot;Documento  Adobe&quot; |
 | [!UICONTROL Oggetto] | oggetto: &quot;Formazione&quot; |
 | [!UICONTROL Tag] | tags:&quot;Location And Travel&quot; |
 | [!UICONTROL Tipo] | type:&quot;image\png&quot; |
@@ -75,11 +78,11 @@ La funzione di ricerca full-text di GQL consente di cercare le risorse in base a
 
 Di seguito sono riportati alcuni esempi di formati di ricerca per query complesse:
 
-* Per visualizzare tutte le risorse con più campi facet (ad esempio: title=John Doe e strumento di creazione = Adobe Photoshop):
+* Per visualizzare tutte le risorse con più campi facet (ad esempio: title=John Doe e strumento di creazione =  Adobe Photoshop):
 
-tiltle: &quot;John Doe&quot; creatortool : Adobe&amp;ast;
+tiltle: &quot;John Doe&quot; creatortool :  Adobe&amp;ast;
 
-* Per visualizzare tutte le risorse quando il valore facet non è una singola parola ma una frase (ad esempio: title=Scott Reynolds)
+* Per visualizzare tutte le risorse quando il valore dei facet non è una singola parola ma una frase (ad esempio: title=Scott Reynolds)
 
 title: &quot;Scott Reynolds&quot;
 
@@ -99,9 +102,9 @@ title: &quot;Reynolds&quot;
 
 title: &quot;Riunione&quot;;
 
-* Per visualizzare le risorse che contengono una stringa particolare e hanno un valore di proprietà specifico (ad esempio: cercare una stringa Adobe nelle risorse con titolo=John Doe)
+* Per visualizzare le risorse che contengono una stringa particolare e hanno un valore di proprietà specifico (ad esempio: cercare una stringa  Adobe nelle risorse con titolo=John Doe)
 
-&amp;ast;Adobe&amp;ast; title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast; Adobe&amp;ast; titolo: &quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast; Adobe&amp;ast;
 
 >[!NOTE]
 >
@@ -129,5 +132,5 @@ Potete migliorare la rilevanza delle parole chiave per risorse particolari per m
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Click/tap **[!UICONTROL Save &amp; Close]**.
 1. Cercate la parola chiave utilizzando la casella di ricerca Omnico. La risorsa per la quale hai promosso questa parola chiave viene visualizzata tra i primi risultati della ricerca.
