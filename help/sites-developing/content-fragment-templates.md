@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 translation-type: tm+mt
 source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 5%
 
 ---
 
@@ -37,13 +40,11 @@ I modelli predefiniti sono disponibili in:
 
 * `/apps/settings/dam/cfm/templates`
 
-   
-Posizione per sovrapporre i modelli out-of-the-box o fornire modelli specifici per i clienti a livello di applicazione che non devono essere estesi o modificati in fase di esecuzione.
+   Posizione per sovrapporre i modelli out-of-the-box o fornire modelli specifici per i clienti a livello di applicazione che non devono essere estesi o modificati in fase di esecuzione.
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   
-Il percorso per i modelli specifici per i clienti dell&#39;istanza che devono essere modificati in fase di esecuzione.
+   Il percorso per i modelli specifici per i clienti dell&#39;istanza che devono essere modificati in fase di esecuzione.
 
 L&#39;ordine di precedenza è (in ordine decrescente) `/conf`, `/apps`, `/libs`.
 
@@ -59,6 +60,7 @@ L&#39;ordine di precedenza è (in ordine decrescente) `/conf`, `/apps`, `/libs`.
    >
    >
 1. Apportare modifiche all&#39;interno `/apps`
+
 >
 
 
@@ -161,7 +163,7 @@ Ulteriori dettagli sui nodi e le relative proprietà sono:
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>required</p> </td> 
-   <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo secondario per l'elemento <strong>Principale</strong> , ma può contenere [1.n] nodi secondari.</p> <p>Quando il modello viene utilizzato, il ramo secondario degli elementi viene copiato nel ramo del modello del frammento.</p> <p>Il primo elemento (come visualizzato in CRXDE Lite) è automaticamente considerato l'elemento <i>principale</i> ; il nome del nodo è irrilevante e il nodo stesso non ha un significato speciale, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come risorse secondarie.</p> </td> 
+   <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo secondario per l'elemento <strong>Principale</strong> , ma può contenere [1.n] nodi secondari.</p> <p>Quando il modello viene utilizzato, il ramo secondario degli elementi viene copiato nel ramo del modello del frammento.</p> <p>Il primo elemento (visualizzato in CRXDE Lite) viene automaticamente considerato l’elemento <i>principale</i> ; il nome del nodo è irrilevante e il nodo stesso non ha un significato speciale, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come risorse secondarie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -183,7 +185,7 @@ Ulteriori dettagli sui nodi e le relative proprietà sono:
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>required</p> </td> 
-   <td>Titolo dell’elemento (visualizzato nel selettore di elementi dell’editor frammento).</td> 
+   <td>Titolo dell’elemento (visualizzato nel selettore di elementi dell’editor di frammenti).</td> 
   </tr> 
   <tr> 
    <td><code>defaultContent</code></td> 
