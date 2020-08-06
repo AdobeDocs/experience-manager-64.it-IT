@@ -1,6 +1,6 @@
 ---
-title: Utilizzo delle schede di rete Sling
-seo-title: Utilizzo delle schede di rete Sling
+title: Utilizzo di adattatori Sling
+seo-title: Utilizzo di adattatori Sling
 description: Sling offre un pattern di adattatore per tradurre facilmente gli oggetti che implementano l'interfaccia Adattabile
 seo-description: Sling offre un pattern di adattatore per tradurre facilmente gli oggetti che implementano l'interfaccia Adattabile
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
 source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+workflow-type: tm+mt
+source-wordcount: '1747'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzo delle schede di rete Sling{#using-sling-adapters}
+# Utilizzo di adattatori Sling{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) offre un pattern [](https://sling.apache.org/site/adapters.html) Adapter per tradurre facilmente gli oggetti che implementano l&#39;interfaccia [Adattabile](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . Questa interfaccia fornisce un metodo [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) generico che converte l&#39;oggetto nel tipo di classe passato come argomento.
 
@@ -52,9 +55,9 @@ I motivi di tale scelta sono diversi, tra cui:
 * condizione interna non riuscita
 * il servizio non è disponibile
 
-È importante gestire il caso nullo in modo corretto. Per i rendering jsp potrebbe essere accettabile che il jsp non riesca se questo restituisce un contenuto vuoto.
+È importante gestire il caso nullo in modo corretto. Per i rendering jsp potrebbe essere accettabile che il jsp non riesca se si traduce in una parte vuota del contenuto.
 
-### Cache {#caching}
+### Caching {#caching}
 
 Per migliorare le prestazioni, le implementazioni possono memorizzare nella cache l’oggetto restituito da una `obj.adaptTo()` chiamata. Se `obj` è lo stesso, l&#39;oggetto restituito è lo stesso.
 
@@ -111,7 +114,7 @@ Per il primo caso, i javadocs possono specificare quali `adaptTo-targets` sono p
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td> 
-   <td>Se si tratta di una risorsa basata su nodo JCR e l'utente dispone delle autorizzazioni necessarie per modificare le proprietà del nodo.<br /> Nota: più mappe persistenti non condividono i loro valori.</td> 
+   <td>Se si tratta di una risorsa basata su nodo JCR e l'utente dispone delle autorizzazioni necessarie per modificare le proprietà su tale nodo.<br /> Nota: più mappe persistenti non condividono i loro valori.</td> 
   </tr> 
   <tr> 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
@@ -237,7 +240,7 @@ Nessuna destinazione ancora, ma implementa Adattabile e potrebbe essere utilizza
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Risorsa</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /></a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Risorsa</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>Risorsa del modello.</td> 
   </tr> 
   <tr> 
@@ -272,9 +275,9 @@ Nessuna destinazione ancora, ma implementa Adattabile e potrebbe essere utilizza
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nodo della risorsa. |
 | ... | Tutto ciò a cui la risorsa della risorsa può essere adattata. |
 
-#### Assegnazione di tag {#tagging}
+#### Assegnazione tag {#tagging}
 
-[**Tag **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)si adatta a:
+[**Il tag **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)si adatta a:
 
 | [Risorsa](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Risorsa del tag. |
 |---|---|
