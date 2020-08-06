@@ -1,8 +1,8 @@
 ---
 title: Come funziona Reporting dei processi
 seo-title: Come funziona Reporting dei processi
-description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting.
-seo-description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting.
+description: Descrizione dei servizi che compongono l'AEM Forms  su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting
+seo-description: Descrizione dei servizi che compongono l'AEM Forms  su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting
 uuid: 00a2dd6d-8a6f-4c7b-b03e-81cfd4bcf50d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: process-reporting
 discoiquuid: 4afc68fc-6b39-4c31-95fa-2ef3111c57da
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
 
 # Come funziona Reporting dei processi {#how-process-reporting-works}
 
-Process Reporting è il modulo di reporting di AEM Forms su JEE.
+Process Reporting è il modulo di reporting dell&#39;AEM Forms  su JEE.
 
-Process Reporting (Generazione di rapporti sui processi) consente di eseguire rapporti sui processi e sulle attività di AEM Forms.
+Process Reporting (Generazione rapporti di processo) consente di eseguire rapporti  processi e attività AEM Forms.
 
-Process Reporting utilizza l&#39;archivio di Process Reporting incorporato per pubblicare i dati di Forms. Quindi utilizza quei dati per eseguire i report.
+Process Reporting utilizza l&#39;archivio di Process Reporting incorporato per pubblicare i dati Forms. Quindi utilizza quei dati per eseguire i report.
 
 Process Reporting è costituito dai seguenti moduli:
 
@@ -38,7 +41,7 @@ Process Reporting è costituito dai seguenti moduli:
 
 ### Servizio ProcessDataPublisher {#processdatapublisher-service-br}
 
-Il server ProcessDataPublisher viene eseguito periodicamente nel database AEM Forms ed estrae i dati modificati dall&#39;ultima esecuzione del servizio. Quindi pubblica i dati nel servizio Process Data Storage.
+Il server ProcessDataPublisher viene eseguito periodicamente sul database AEM Forms  ed estrae i dati modificati dall&#39;ultima esecuzione del servizio. Quindi pubblica i dati nel servizio Process Data Storage.
 
 Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)ProcessDataPublisher.
 
@@ -60,7 +63,7 @@ Il servizio utilizza quindi i servizi OSGi per ottenere i dati di reporting rile
 
 ### Interfaccia utente di Process Reporting {#process-reporting-user-interface-br}
 
-L&#39;interfaccia utente di Process Reporting è basata su browser Web. Questa interfaccia consente di visualizzare le informazioni su processi e attività pubblicate dal database AEM Forms.
+L&#39;interfaccia utente di Process Reporting è basata su browser Web. È possibile utilizzare questa interfaccia per visualizzare le informazioni su processi e attività pubblicate dal database AEM Forms .
 
 ### Servizio QueryDataServlet {#querydataservlet-service-br-1}
 
