@@ -1,8 +1,8 @@
 ---
 title: Amministrazione dei tag
 seo-title: Amministrazione dei tag
-description: Scoprite come amministrare i tag in AEM.
-seo-description: Scoprite come amministrare i tag in AEM.
+description: Scopri come amministrare i tag in AEM.
+seo-description: Scopri come amministrare i tag in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1764'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +28,7 @@ In Adobe Experience Manager (AEM), un tag può essere una proprietà di
 
 * un nodo di metadati per una risorsa (consultate [Gestione dei metadati per le risorse](/help/assets/metadata.md)digitali)
 
-Oltre alle pagine e alle risorse, i tag vengono utilizzati per le funzioni di AEM Communities
+Oltre alle pagine e alle risorse, i tag vengono utilizzati per  funzioni di AEM Communities
 
 * contenuto generato dall’utente (consultate [Assegnazione di tag a UGC)](/help/communities/tag-ugc.md)
 
@@ -33,9 +36,9 @@ Oltre alle pagine e alle risorse, i tag vengono utilizzati per le funzioni di AE
 
 ## Funzioni tag {#tag-features}
 
-Alcune delle funzioni dei tag in AEM includono:
+Alcune delle caratteristiche dei tag in AEM includono:
 
-* I tag possono essere raggruppati in vari spazi dei nomi. Tali gerarchie consentono di creare tassonomie Queste tassonomie sono globali in AEM.
+* I tag possono essere raggruppati in vari spazi dei nomi. Tali gerarchie consentono di creare tassonomie Queste tassonomie sono globali in tutta AEM.
 * La limitazione principale per i nuovi tag creati è che devono essere univoci all&#39;interno di uno specifico namespace.
 * Il titolo di un tag non deve includere caratteri di separazione dei percorsi dei tag (né saranno visualizzati se presenti)
 
@@ -58,7 +61,7 @@ Alcune delle funzioni dei tag in AEM includono:
 
 ## Console per tag {#tagging-console}
 
-La console Tagging consente di creare e gestire i tag e le rispettive tassonomie. Un obiettivo è quello di evitare di avere molti tag simili relativi sostanzialmente la stessa cosa: ad esempio pagina e pagine o calzature e scarpe.
+La console Tagging consente di creare e gestire i tag e le rispettive tassonomie. Un obiettivo è quello di evitare di avere molti tag simili relativi sostanzialmente la stessa cosa: ad esempio, pagina e pagine o calzature e scarpe.
 
 I tag vengono gestiti raggruppandoli in spazi di nomi, controllando l’utilizzo dei tag esistenti prima di crearne di nuovi e riorganizzandoli senza scollegare il tag dal contenuto attualmente a cui si fa riferimento.
 
@@ -72,7 +75,7 @@ Per accedere alla console Tagging:
    * select **`General`**
    * select **`Tagging`**
 
-![managing_tags_usingetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
+![managing_tags_using_thetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ### Creazione di uno spazio dei nomi {#creating-a-namespace}
 
@@ -166,7 +169,7 @@ Una volta inserite le informazioni richieste
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-Quando è selezionato uno spazio nomi o un altro tag, è possibile modificare il Titolo, la Descrizione e fornire le localizzazioni del Titolo selezionando l&#39;icona **`Edit`**.
+Quando è selezionato uno spazio dei nomi o un altro tag, è possibile modificare il Titolo, la Descrizione e fornire le localizzazioni del Titolo selezionando l&#39;icona **`Edit`**.
 
 Dopo aver apportato le modifiche, selezionate **Salva**.
 
@@ -187,11 +190,13 @@ Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l’ **`M
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Percorso**
+
    *(sola lettura)* Il percorso corrente del tag selezionato.
 
 * **Passa a** Sfoglia per individuare il nuovo percorso in cui spostare il tag.
 
-* **Rinomina in** Iniziale visualizza la corrente `name`del tag. È `name`possibile inserire una nuova voce.
+* **Rinomina in** Iniziale visualizza la variabile corrente 
+`name`del tag . È `name`possibile inserire una nuova voce.
 
 * 
 * select **Save**
@@ -207,6 +212,7 @@ Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l&#39;ico
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Percorso**
+
    *(sola lettura)* Percorso del tag selezionato per l&#39;unione in un altro tag.
 
 * **Unisci in** Sfoglia per selezionare il percorso del tag in cui unire.
@@ -247,7 +253,7 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)](/h
    * accedere alla console [di](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)sicurezza,
 
       * ad esempio, individuare http://localhost:4502/useradmin
-   * nel riquadro a sinistra, selezionare il gruppo (o utente) per il quale concedere l&#39;autorizzazione [di](/help/sites-administering/security.md#permissions) lettura
+   * nel riquadro a sinistra, selezionare il gruppo (o l&#39;utente) per il quale concedere l&#39;autorizzazione [di](/help/sites-administering/security.md#permissions) lettura
    * nel riquadro di destra, individuare il **Path **to Tag Namespace
 
       * for example, `/content/cq:tags/mycommunity`
@@ -270,7 +276,7 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)](/h
 
 ## Gestione dei tag in diverse lingue {#managing-tags-in-different-languages}
 
-La `title`proprietà di un tag può essere tradotta in più lingue. Una volta tradotta, il tag appropriato `title`può essere visualizzato in base alla lingua dell’utente o alla lingua della pagina.
+La `title`proprietà di un tag può essere tradotta in più lingue. Una volta tradotto, il tag appropriato `title`può essere visualizzato in base alla lingua dell’utente o alla lingua della pagina.
 
 ### Definizione dei titoli dei tag in diverse lingue {#defining-tag-titles-in-multiple-languages}
 
@@ -280,11 +286,11 @@ Per iniziare, seleziona il tag sotto lo spazio dei nomi **Stock Photography** e 
 
 Il pannello Modifica tag consente di scegliere le lingue in cui il titolo del tag deve essere localizzato.
 
-Quando viene selezionata ogni lingua, viene visualizzata una casella di immissione testo in cui è possibile inserire il titolo convertito.
+Quando viene selezionata ogni lingua, viene visualizzata una casella di immissione testo in cui è possibile inserire il titolo tradotto.
 
 Una volta immesse tutte le traduzioni, selezionare **Save **per uscire dalla modalità di modifica.
 
-![chlimage_1-206](assets/chlimage_1-205.png)
+![chlimage_1-205](assets/chlimage_1-205.png)
 
 In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, se disponibile. Quando si utilizza il widget [`tag` in altre situazioni (ad esempio nei moduli o nelle finestre di dialogo) la lingua del tag dipende dal contesto.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
@@ -296,7 +302,7 @@ Per aggiungere una nuova lingua alla finestra di dialogo, consultate [Aggiunta d
 >
 >The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
 
-## Risorse {#resources}
+## Riferimenti {#resources}
 
 * [Assegnazione di tag agli sviluppatori](/help/sites-developing/tags.md)
 
