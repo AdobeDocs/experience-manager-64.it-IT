@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 translation-type: tm+mt
 source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Le code condivise consentono di configurare e gestire le code degli utenti in mo
 
 **Gestire L&#39;Accesso A Un Utente**
 
-Questa opzione consente di gestire l&#39;accesso a una coda utente selezionata.
+Questa opzione consente di gestire l&#39;accesso a una coda di utenti selezionata.
 
 **Gestire L&#39;Accesso Da Un Utente**
 
@@ -35,7 +38,7 @@ Una volta condivise, queste attività possono essere completate dall&#39;utente,
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 ### Configurazione dell&#39;accesso a una coda utente selezionata {#configuring-access-to-a-selected-user-queue}
 
@@ -63,7 +66,7 @@ Una volta assegnati, questi task possono essere completati dall&#39;utente trami
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 ### Concessione dell&#39;accesso a una coda utente selezionata {#granting-access-to-a-selected-user-queue}
 
