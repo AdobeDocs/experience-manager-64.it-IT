@@ -1,8 +1,8 @@
 ---
 title: Interazione con il dorso
 seo-title: Interazione con il dorso
-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di base nell'area di lavoro di AEM Forms.
-seo-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di base nell'area di lavoro di AEM Forms.
+description: Informazioni concettuali sull'utilizzo di modelli JavaScript di backbone nell'area di lavoro  AEM Forms.
+seo-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di backbone nell'area di lavoro  AEM Forms.
 uuid: c70da848-e514-42bc-a59b-44a7c00aa529
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Alcuni concetti chiave sono i seguenti:
 
 **Modello** HTML Un modello di wrapper con segnaposto popolati dal modello.
 
-**Area di lavoro** Moduli AEM Contiene diversi componenti singoli. Ciascun componente:
+**area di lavoro** AEM Forms Contiene diversi componenti singoli. Ciascun componente:
 
 * Rappresenta un singolo elemento di interfaccia utente logico.
 * Può essere un insieme di componenti simili.
@@ -50,8 +53,8 @@ Esempio:
 
 1. L&#39;utente fa clic su un modello di attività nell&#39;elenco delle attività.
 1. La visualizzazione Attività ascolta il clic e richiama la funzione di rendering sul modello attività.
-1. Il modello di attività richiama in seguito il servizio, che rappresenta un punto comune per tutte le comunicazioni con il server AEM Forms.
-1. La classe di servizio chiama l’endpoint REST di AEM Forms per il metodo di rendering tramite ajax.
+1. Il modello di task chiama in seguito il servizio che è un punto comune per tutte le comunicazioni con  server AEM Forms.
+1. Chiamate della classe di servizio  endpoint REST di AEM Forms per il metodo di rendering tramite ajax.
 1. Il callback di riuscita per questa chiamata Ajax è definito nel modello attività.
 1. Il modello di task genera un evento dorsale come notifica del completamento della chiamata di rendering.
 1. Un&#39;altra visualizzazione, la visualizzazione dei dettagli dell&#39;attività, ascolta l&#39;evento dal modello dell&#39;attività.
