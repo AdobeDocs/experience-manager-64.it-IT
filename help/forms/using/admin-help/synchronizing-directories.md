@@ -11,23 +11,26 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 0%
 
 ---
 
 
 # Sincronizzazione delle directory {#synchronizing-directories}
 
-Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. Sincronizzazione ** manuale degli eventuali domini selezionati. Una sincronizzazione ** pianificata consente di sincronizzare tutti i domini.
+Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. La sincronizzazione ** manuale consente di sincronizzare tutti i domini selezionati. Una sincronizzazione ** pianificatasincronizza tutti i domini.
 
 La sincronizzazione della directory viene utilizzata per estrarre i dettagli dai server di directory specificati nelle impostazioni della directory nel database Gestione utente. In seguito, è inoltre possibile eseguire una sincronizzazione manuale in caso di modifiche o aggiornamenti sui server di directory. Ad esempio, potete eseguire una sincronizzazione manuale se vengono aggiunti utenti e gruppi o se vengono apportate modifiche all’account di un utente.
 
 È inoltre possibile impostare una pianificazione di sincronizzazione giornaliera per sincronizzare automaticamente il database Gestione utente con le modifiche o gli aggiornamenti ai server di directory di origine. Tuttavia, tenete presente che questo processo utilizza risorse di rete e server. Scegliete periodi di tempo ridotti ed evitate di pianificare sincronizzazioni non necessarie che colleghino le risorse di rete e di sistema. Per ridurre al minimo le sincronizzazioni non necessarie, utilizzate invece l&#39;opzione di sincronizzazione immediata.
 
-È inoltre possibile specificare se inviare le informazioni di utenti e gruppi in Adobe LiveCycle Content Services 9 (obsoleto) al momento della sincronizzazione dei domini.
+È inoltre possibile specificare se inviare le informazioni di utenti e gruppi  Adobe a Content Services 9 (obsoleto) durante la sincronizzazione dei domini.
 
 >[!NOTE]
 >
->Non create più utenti e gruppi locali mentre è in corso la sincronizzazione di una directory LDAP. Il tentativo di questo processo potrebbe causare errori.
+>Non create più utenti e gruppi locali mentre è in corso la sincronizzazione di una directory LDAP. Il tentativo di eseguire questo processo potrebbe causare errori.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ La sincronizzazione della directory viene utilizzata per estrarre i dettagli dai
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta il documento sul ciclo di vita dei prodotti [Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Per informazioni sulla configurazione di Content Services (obsoleto), consulta [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+> Adobe® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle LiveCycle®. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta [documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)sul ciclo di vita del prodotto di Adobe. Per informazioni sulla configurazione di Content Services (obsoleto), consulta [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ## Abilita sincronizzazione directory delta {#enable-delta-directory-synchronization}
 
@@ -52,7 +55,7 @@ Gestione utente esegue i seguenti passaggi quando la sincronizzazione della dire
 >Gli utenti e i gruppi che sono stati rimossi dalla directory non vengono eliminati dal database Gestione utenti fino a quando non viene eseguita la sincronizzazione completa della directory.
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
-1. In Sincronizzazione delta, selezionate la casella di controllo e fate clic su Salva.
+1. In Delta Synch (Sincronizzazione delta), selezionate la casella di controllo e fate clic su Save (Salva).
 1. Modificate le impostazioni di directory per ciascuno dei domini aziendali che utilizzeranno la funzione di sincronizzazione della directory delta. Nelle pagine Impostazioni utente e Impostazioni gruppo, individuate l’impostazione Modifica marca temporale e immettete `modify TimeStamp` il valore. Per informazioni dettagliate sulla modifica dei domini enterprise, vedere [Modifica e conversione dei domini](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)esistenti.
 
 ## Attivare o disattivare la registrazione dettagliata durante la sincronizzazione {#enable-or-disable-detailed-logging-during-synchronization}
@@ -67,9 +70,9 @@ Per impostazione predefinita, Gestione utenti registra statistiche dettagliate d
 È possibile configurare Gestione utente per controllare periodicamente la presenza di eventuali tentativi di sincronizzazione delle directory non riusciti. Gestione utente tenta quindi di completare le sincronizzazioni non riuscite.
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
-1. In Espressione cron Synch Finisher, immettere un&#39;espressione cron che rappresenta l&#39;intervallo in cui i tentativi di gestione utente non hanno eseguito la sincronizzazione. L&#39;utilizzo dell&#39;espressione cron si basa sul sistema di programmazione dei processi open source Quartz, versione 1.4.0.
+1. In Espressione cron Synch Finisher, immettere un&#39;espressione cron che rappresenta l&#39;intervallo in cui i tentativi di gestione utente non sono riusciti a eseguire la sincronizzazione. L&#39;utilizzo dell&#39;espressione cron si basa sul sistema di programmazione dei processi open source Quartz, versione 1.4.0.
 
-   Il valore predefinito è 0/13 &amp;ast; ?  &amp;ast; , che significa che il controllo viene effettuato ogni 13 minuti.
+   Il valore predefinito è 0/13 &amp;ast; ? &amp;ast; , che significa che il controllo viene effettuato ogni 13 minuti.
 
 ## Sincronizzazione manuale delle directory {#manually-synchronize-directories}
 
