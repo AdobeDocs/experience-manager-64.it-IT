@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Prerequisiti {#prerequisites}
 
-* Informazioni sul modello [di](/help/sites-authoring/templates.md) pagina AEM e sull’authoring dei moduli [adattivi](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Informazioni su AEM modello [di](/help/sites-authoring/templates.md) pagina e creazione di moduli [adattivi](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Informazioni sulle librerie lato [client AEM](/help/sites-developing/clientlibs.md)
 
 ## Adaptive form template {#adaptive-form-template}
 
-Un modello di modulo adattivo è un modello di pagina AEM specializzato, con determinate proprietà e struttura del contenuto utilizzata per creare il modulo adattivo. Il modello include layout, stili e struttura di contenuto iniziale preconfigurata.
+Un modello di modulo adattivo è un modello AEM pagina specializzato, con determinate proprietà e struttura del contenuto utilizzata per creare il modulo adattivo. Il modello dispone di layout, stili e struttura di contenuto iniziale preconfigurata.
 
 Una volta creato il modulo, le modifiche apportate alla struttura del contenuto del modello originale non vengono applicate al modulo.
 
@@ -33,8 +36,8 @@ Una volta creato il modulo, le modifiche apportate alla struttura del contenuto 
 AEM QuickStart offre i seguenti modelli di modulo adattivo:
 
 * Base: Consente di creare un modulo adattivo con più schede utilizzando un layout tabulazioni a sinistra, in cui è possibile consultare le schede in qualsiasi ordine casuale.
-* Base con Adobe Sign: Consente di creare un modulo con più schede e procedure guidate. Utilizza un layout tabulazioni a sinistra che consente di visitare le schede in qualsiasi ordine. Utilizza i servizi di progettazione di Adobe Document Cloud per la firma e la verifica.
-* Modello vuoto: Consente di creare un modulo senza intestazione, piè di pagina e contenuto iniziale. È possibile aggiungere componenti quali caselle di testo, pulsanti e immagini. Il modello vuoto consente di creare un modulo da [incorporare nelle pagine](/help/forms/using/embed-adaptive-form-aem-sites.md)del sito AEM.
+* Base con  Adobe Sign: Consente di creare un modulo con più schede e procedure guidate. Utilizza un layout tabulazioni a sinistra che consente di visitare le schede in qualsiasi ordine. Utilizza i servizi di progettazione Adobe Document Cloud per la firma e la verifica.
+* Modello vuoto: Consente di creare un modulo senza intestazione, piè di pagina e contenuto iniziale. È possibile aggiungere componenti quali caselle di testo, pulsanti e immagini. Il modello vuoto consente di creare un modulo da [incorporare AEM pagine](/help/forms/using/embed-adaptive-form-aem-sites.md)del sito.
 
 Questi modelli hanno la `sling:resourceType` proprietà impostata sul componente pagina corrispondente. Il componente Pagina esegue il rendering della pagina CQ, contenente un contenitore di moduli adattivi, che a sua volta esegue il rendering del modulo adattivo.
 
@@ -67,7 +70,7 @@ La tabella seguente elenca l&#39;associazione tra i modelli e il componente pagi
 
 ## Creazione di un modello di modulo adattivo mediante l&#39;editor modelli {#creating-an-adaptive-form-template-using-template-editor}
 
-È possibile specificare la struttura e il contenuto iniziale di un modulo adattivo utilizzando l&#39;Editor modelli. Ad esempio, si desidera che tutti gli autori dei moduli dispongano di alcune caselle di testo, di pulsanti di navigazione e di un pulsante di invio in un modulo di iscrizione. È possibile creare un modello che gli autori possano utilizzare per creare un modulo coerente con altri moduli di iscrizione. AEM Template Editor consente di:
+È possibile specificare la struttura e il contenuto iniziale di un modulo adattivo utilizzando l&#39;Editor modelli. Ad esempio, si desidera che tutti gli autori dei moduli dispongano di alcune caselle di testo, di pulsanti di navigazione e di un pulsante di invio in un modulo di iscrizione. È possibile creare un modello che gli autori possano utilizzare per creare un modulo coerente con altri moduli di iscrizione. AEM Editor modelli consente di:
 
 * Aggiungere componenti di intestazione e piè di pagina di un modulo nel livello struttura
 * Fornire il contenuto iniziale per il modulo.
@@ -80,17 +83,17 @@ Per ulteriori informazioni, vedere Editor [](/help/forms/using/template-editor.m
 
 Invece di utilizzare i modelli disponibili, è possibile creare un modello e utilizzarlo per creare moduli adattivi. I modelli personalizzati si basano su vari componenti di pagina che fanno riferimento ai contenitori di moduli adattivi e agli elementi di pagina, come intestazione e piè di pagina.
 
-Potete creare questi componenti utilizzando il componente Pagina di base per il sito Web. In alternativa, è possibile estendere il componente pagina del modulo adattivo utilizzato dai modelli predefiniti.
+Per creare questi componenti, usate il componente Pagina di base per il sito Web. In alternativa, è possibile estendere il componente pagina del modulo adattivo utilizzato dai modelli predefiniti.
 
 Per creare un modello personalizzato, ad esempio simpleEnrollmentTemplate, effettuate le seguenti operazioni.
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa al CRXDE Lite nell’istanza di authoring.
 
 1. Nella directory /apps, create la struttura di cartelle per l’applicazione. Ad esempio, se il nome dell’applicazione è una mia società, create una cartella con questo nome. In genere, la cartella dell&#39;applicazione contiene componenti, configurazione, modelli, src e directory di installazione. Per questo esempio, create le cartelle componenti, configurazione e modelli.
 
 1. Andate alla cartella /libs/fd/af/templates.
 1. Copiare il `simpleEnrollmentTemplate` nodo.
-1. Andate alla cartella /apps/mycompany/templates. Fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Incolla]**.
+1. Andate alla cartella /apps/mycompany/templates. Fare clic con il pulsante destro del mouse su di esso e selezionare **[!UICONTROL Incolla]**.
 1. Se necessario, rinominare il nodo del modello copiato. Ad esempio, rinominatelo come modello di iscrizione.
 
 1. Andate alla posizione /apps/mycompany/templates/enrollment-template.
@@ -118,7 +121,7 @@ Il modello personalizzato ha lo stesso stile del modello predefinito, in quanto 
 
 1. **(Solo se disponete già di una pagina di contenuto)** Effettuate i seguenti passaggi (a-d), se disponete di un `contentpage`componente esistente per il sito Web. Se non disponete di un `contentpage`componente esistente per il sito Web, potete lasciare la `resourceSuperType`proprietà in modo che punti alla pagina di base OOTB.
 
-   1. Per il `enrollmentpage` nodo, impostate il valore della proprietà `sling:resourceSuperType` su miosocietà/componenti/pagina/contenuto. Il `contentpage` componente è il componente della pagina di base per il sito. È possibile estendere anche altri componenti della pagina. Rimuovete i file di script in `enrollmentpage`, tranne `head.jsp`, `content.jsp`e `library.jsp`. Il `sling:resourceSuperType` componente, che in questo caso `contentpage` include tutti questi script. Le intestazioni, inclusa la barra di navigazione e il piè di pagina, vengono ereditate dal `contentpage` componente.
+   1. Per il `enrollmentpage` nodo, impostate il valore della proprietà `sling:resourceSuperType` su miosocietà/componenti/pagina/pagina di contenuto. Il `contentpage` componente è il componente della pagina di base per il sito. È possibile estendere anche altri componenti della pagina. Rimuovete i file di script in `enrollmentpage`, tranne `head.jsp`, `content.jsp`e `library.jsp`. Il `sling:resourceSuperType` componente, che in questo caso `contentpage` include tutti questi script. Le intestazioni, inclusa la barra di navigazione e il piè di pagina, vengono ereditate dal `contentpage` componente.
 
    1. Aprire il file `head.jsp`.
 
@@ -144,5 +147,5 @@ Il `head.jsp` file del `enrollmentpage` componente per il nuovo modello include 
 
 >[!NOTE]
 >
->Il tema si riferisce a una libreria client inclusa nel componente della pagina utilizzato per il rendering di un modulo adattivo. La libreria del client regola principalmente l&#39;aspetto di un modulo adattivo.
+>Il tema si riferisce a una libreria client inclusa nel componente della pagina utilizzato per eseguire il rendering di un modulo adattivo. La libreria del client regola principalmente l&#39;aspetto di un modulo adattivo.
 
