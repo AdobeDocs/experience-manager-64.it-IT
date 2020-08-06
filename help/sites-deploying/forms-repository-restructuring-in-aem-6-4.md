@@ -1,8 +1,8 @@
 ---
-title: Ristrutturazione dell'archivio moduli in AEM 6.4
-seo-title: Ristrutturazione dell'archivio moduli in AEM 6.4
-description: Scopri come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Forms.
-seo-description: Scopri come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Forms.
+title: Ristrutturazione dell'archivio Forms in AEM 6.4
+seo-title: Ristrutturazione dell'archivio Forms in AEM 6.4
+description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Forms.
+seo-description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 7%
 
 ---
 
 
-# Ristrutturazione dell&#39;archivio moduli in AEM 6.4{#forms-repository-restructuring-in-aem}
+# Ristrutturazione dell&#39;archivio Forms in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione AEM Forms. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Forms. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 **Con aggiornamento 6.4**
 
@@ -24,9 +27,9 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
 
 **Aggiornamento precedente a 6.5**
 
-* [Configurazione del servizio Echosign Cloud](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
-* [Configurazioni dei servizi Recaptcha Cloud](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
-* [Configurazioni del servizio Typekit Cloud](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
+* [Configurazione Cloud Service Echosign](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
+* [Configurazioni Cloud Service Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
+* [Configurazioni Cloud Service Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 ## Con aggiornamento 6.4 {#with-upgrade}
@@ -78,18 +81,18 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
 | **Posizione precedente** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Nuove posizioni** | `/libs/fd/fmaddon` |
-| **Orientamenti per la ristrutturazione** | La modifica di questi clientlibs non è mai stata consigliata o supportata. Se sono state apportate modifiche a questi clientlibs, è necessario ripristinarli per utilizzare il codice fornito da AEM. |
+| **Orientamenti per la ristrutturazione** | La modifica di questi clientlibs non è mai stata consigliata o supportata. Se sono state apportate modifiche a questi clientlibs, è necessario ripristinarli per utilizzare il codice AEM fornito. |
 | **Note** | N/D |
 
 | **Posizione precedente** | `/etc/aep` |
 |---|---|
 | **Nuove posizioni** | `/var/fd/content/annotations` |
-| **Orientamenti per la ristrutturazione** | La modifica di questi clientlibs non è mai stata consigliata o supportata. Se sono state apportate modifiche a questi clientlibs, è necessario ripristinarli per utilizzare il codice fornito da AEM. |
+| **Orientamenti per la ristrutturazione** | La modifica di questi clientlibs non è mai stata consigliata o supportata. Se sono state apportate modifiche a questi clientlibs, è necessario ripristinarli per utilizzare il codice AEM fornito. |
 | **Note** | N/D |
 
 ## Aggiornamento precedente a 6.5 {#prior-to-upgrade}
 
-### Configurazione del servizio Echosign Cloud {#echosign-cloud-service-configuration}
+### Configurazione Cloud Service Echosign {#echosign-cloud-service-configuration}
 
 | **Posizione precedente** | `/etc/cloudservices/echosign` |
 |---|---|
@@ -97,7 +100,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
 | **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
-### Configurazioni dei servizi Recaptcha Cloud {#recaptcha-cloud-service-configurations}
+### Configurazioni Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Posizione precedente** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -105,7 +108,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
 | **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
-### Configurazioni del servizio Typekit Cloud {#typekit-cloud-service-configurations}
+### Configurazioni Cloud Service Typekit {#typekit-cloud-service-configurations}
 
 | **Posizione precedente** | `/etc/cloudservices/typekit` |
 |---|---|
