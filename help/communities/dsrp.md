@@ -1,8 +1,8 @@
 ---
 title: DSRP - Provider di risorse di archiviazione del database relazionale
 seo-title: DSRP - Provider di risorse di archiviazione del database relazionale
-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
 source-git-commit: ad744e91e8f94d7fefb939209ba186e3b18496b7
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ad744e91e8f94d7fefb939209ba186e3b18496b7
 
 ## Informazioni su DSRP {#about-dsrp}
 
-Quando AEM Communities è configurata per l&#39;utilizzo di un database relazionale come store comune, il contenuto generato dall&#39;utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione o la replica.
+Se  AEM Communities è configurato per utilizzare un database relazionale come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione o la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -53,7 +56,7 @@ Per i dettagli di installazione e configurazione, consultate Configurazione [sol
 
 ### Seleziona DSRP {#select-dsrp}
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore
 
@@ -108,7 +111,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore
 
 Per assicurarsi che la pagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) predefinita funzioni come previsto, effettuate le seguenti operazioni:
 
-1. Rinominare il percorso `/etc/socialconfig` in in `/etc/socialconfig_old`, in modo che la configurazione del sistema ricada su jsrp (predefinito).
+1. Rinominare il percorso `/etc/socialconfig` in in `/etc/socialconfig_old`, in modo che la configurazione del sistema ricada su jsrp (impostazione predefinita).
 1. Passate alla pagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)predefinita, in cui è configurato jsrp. Fare clic sul pulsante **[!UICONTROL Invia]** per creare il nuovo nodo di configurazione predefinito in `/conf/global/settings/community/srpc`.
 1. Eliminate la configurazione predefinita creata `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copiate la vecchia configurazione `/etc/socialconfig_old/srpc/defaultconfiguration` al posto del nodo eliminato (`/conf/global/settings/community/srpc/defaultconfiguration`) nel passaggio precedente.
@@ -140,7 +143,7 @@ Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spe
 
 ## Solr di reindicizzazione per DSRP {#reindexing-solr-for-dsrp}
 
-Per reindicizzare DSRP Solr, seguite la documentazione per la [reindicizzazione MSRP](msrp.md#msrp-reindex-tool), ma quando effettuate la reindicizzazione per DSRP, utilizzate invece questo URL: **/services/social/datastore/rdb/reindex**
+Per reindicizzare DSRP Solr, seguite la documentazione relativa alla [reindicizzazione MSRP](msrp.md#msrp-reindex-tool), ma quando effettuate la reindicizzazione per DSRP, utilizzate invece questo URL: **/services/social/datastore/rdb/reindex**
 
 Ad esempio, un comando curl per reindicizzare DSRP sarà simile al seguente:
 
