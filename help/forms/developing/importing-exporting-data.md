@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2742'
+ht-degree: 0%
 
 ---
 
@@ -19,28 +22,28 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Informazioni su Form Data Integration Service {#about-the-form-data-integration-service}
 
-Il servizio di integrazione dei dati modulo può importare dati in un modulo PDF ed esportare dati da un modulo PDF. Le operazioni di importazione ed esportazione supportano due tipi di moduli PDF:
+Il servizio di integrazione dei dati modulo può importare dati in un modulo PDF ed esportare dati da un modulo PDF. Le operazioni di importazione ed esportazione supportano due tipi di PDF forms:
 
-* Un modulo Acrobat (creato in Acrobat) è un documento PDF che contiene campi modulo.
-* Un modulo Adobe XML (creato in Designer) è un documento PDF conforme allo standard XML Adobe XML Forms Architecture (XFA).
+* Un modulo Acrobat  (creato in  Acrobat) è un documento PDF che contiene campi modulo.
+* Un modulo XML di  Adobe (creato in Designer) è un documento PDF conforme a XML  Adobe XML Forms Architecture (XFA).
 
 I dati del modulo possono essere presenti in uno dei formati seguenti, a seconda del tipo di modulo PDF:
 
-* Un file XFDF, che è una versione XML del formato dati del modulo Acrobat.
+* Un file XFDF, che è una versione XML del formato dati  modulo Acrobat.
 * Un file XDP, che è un file XML che contiene le definizioni dei campi del modulo. Può anche contenere dati del campo modulo e un file PDF incorporato. È possibile utilizzare un file XDP generato da Designer solo se contiene un documento PDF incorporato con codifica base 64.
 
 È possibile eseguire le seguenti attività utilizzando il servizio di integrazione dei dati modulo:
 
-* Importare dati nei moduli PDF. Per ulteriori informazioni, vedere [Importazione di dati](importing-exporting-data.md#importing-form-data)del modulo.
-* Esportare dati dai moduli PDF. Per ulteriori informazioni, vedere [Esportazione dei dati](importing-exporting-data.md#exporting-form-data)del modulo.
+* Importa dati in PDF forms. Per ulteriori informazioni, vedere [Importazione di dati](importing-exporting-data.md#importing-form-data)del modulo.
+* Esportare dati dai PDF forms. Per ulteriori informazioni, vedere [Esportazione dei dati](importing-exporting-data.md#exporting-form-data)del modulo.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di integrazione dei dati del modulo, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di integrazione dei dati modulo, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Importazione di dati modulo {#importing-form-data}
 
-È possibile importare i dati del modulo in moduli PDF interattivi utilizzando il servizio di integrazione dei dati del modulo. Un modulo PDF interattivo è un documento PDF contenente uno o più campi per la raccolta di informazioni da parte di un utente o per la visualizzazione di informazioni personalizzate. Il servizio di integrazione dei dati del modulo non supporta calcoli, convalida o script del modulo.
+È possibile importare i dati del modulo in PDF forms interattivi utilizzando il servizio di integrazione dei dati del modulo. Un modulo PDF interattivo è un documento PDF contenente uno o più campi per la raccolta di informazioni da parte di un utente o per la visualizzazione di informazioni personalizzate. Il servizio di integrazione dei dati del modulo non supporta i calcoli del modulo, la convalida o gli script.
 
 Per importare dati in un modulo creato in Designer, è necessario fare riferimento a un&#39;origine dati XML XDP valida. Esaminare il seguente modulo di richiesta di ipoteca.
 
@@ -81,7 +84,7 @@ Per importare i valori dei dati in questo modulo, è necessario disporre di un&#
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di integrazione dei dati del modulo, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di integrazione dei dati modulo, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -91,7 +94,7 @@ Per importare i dati del modulo in un modulo PDF, procedere come segue:
 1. Creare un client del servizio di integrazione dati modulo.
 1. Fare riferimento a un modulo PDF.
 1. Fare riferimento a un&#39;origine dati XML.
-1. Importare dati nel modulo PDF.
+1. Importare i dati nel modulo PDF.
 1. Salvare il modulo PDF come file PDF.
 
 **Includi file di progetto**
@@ -103,10 +106,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione  file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un client del servizio di integrazione dei dati modulo**
 
@@ -114,11 +117,11 @@ Prima di poter importare i dati in un modulo PDF API client a livello di program
 
 **Riferimento a un modulo PDF**
 
-Per importare dati in un modulo PDF, è necessario fare riferimento a un modulo XML creato in Designer o a un modulo Acrobat creato in Acrobat.
+Per importare dati in un modulo PDF, è necessario fare riferimento a un modulo XML creato in Designer o a un modulo Acrobat  creato in  Acrobat.
 
 **Riferimento a un&#39;origine dati XML**
 
-Per importare i dati del modulo, è necessario fare riferimento a un&#39;origine dati valida. Per importare dati in un modulo XML XFA creato in Designer, è necessario utilizzare un&#39;origine dati XML XDP. Se si fa riferimento a un modulo Acrobat, è necessario utilizzare un&#39;origine dati XFDF. Per ogni campo in cui si desidera importare i dati, è necessario specificare un valore. Se un elemento posizionato nell&#39;origine dati XML non corrisponde a un campo del modulo, l&#39;elemento viene ignorato.
+Per importare i dati del modulo, è necessario fare riferimento a un&#39;origine dati valida. Per importare dati in un modulo XML XFA creato in Designer, è necessario utilizzare un&#39;origine dati XML XDP. Se si fa riferimento a un modulo Acrobat , è necessario utilizzare un&#39;origine dati XFDF. Per ogni campo in cui si desidera importare i dati, è necessario specificare un valore. Se un elemento posizionato nell&#39;origine dati XML non corrisponde a un campo del modulo, l&#39;elemento viene ignorato.
 
 **Importazione di dati nel modulo PDF**
 
@@ -126,7 +129,7 @@ Dopo aver fatto riferimento a un modulo PDF e a un&#39;origine dati XML valida, 
 
 **Salvare il modulo PDF come file PDF**
 
-Dopo aver importato i dati in un modulo, è possibile salvarlo come file PDF. Una volta salvato il file come PDF, l&#39;utente può aprire il modulo in Adobe Reader o Acrobat e visualizzarlo insieme ai dati importati.
+Dopo aver importato i dati in un modulo, è possibile salvare il modulo come file PDF. Una volta salvato il file come PDF, l&#39;utente può aprire il modulo in  Adobe Reader o  Acrobat e visualizzarlo insieme ai dati importati.
 
 **Consulta anche**
 
@@ -134,7 +137,7 @@ Dopo aver importato i dati in un modulo, è possibile salvarlo come file PDF. Un
 
 [Importare i dati del modulo utilizzando l&#39;API del servizio Web](importing-exporting-data.md#import-form-data-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -165,18 +168,19 @@ Importare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
    * Creare un `java.io.FileInputStream` oggetto utilizzando il relativo costruttore e passare un valore di stringa che specifica la posizione del file XML contenente i dati da importare nel modulo.
    * Creare un `com.adobe.idp.Document` oggetto che memorizza i dati del modulo utilizzando il `com.adobe.idp.Document` costruttore. Trasmettere l&#39;oggetto `java.io.FileInputStream` che contiene i dati del modulo al costruttore.
 
-1. Importare dati nel modulo PDF.
+1. Importare i dati nel modulo PDF.
 
    Importare dati nel modulo PDF richiamando il metodo dell&#39; `FormDataIntegrationClient` oggetto `importData` e passando i valori seguenti:
 
    * L&#39; `com.adobe.idp.Document` oggetto che memorizza il modulo PDF.
    * L&#39; `com.adobe.idp.Document` oggetto che memorizza i dati del modulo.
+
    Il `importData` metodo restituisce un `com.adobe.idp.Document` oggetto che memorizza un modulo PDF contenente i dati contenuti nell&#39;origine dati XML.
 
 1. Salvare il modulo PDF come file PDF.
 
    * Creare un `java.io.File` oggetto e assicurarsi che l&#39;estensione del file sia &quot;.PDF&quot;.
-   * Richiamare il metodo dell&#39; `Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `importData` metodo).
+   * Richiamare il metodo `Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `importData` metodo).
 
 **Consulta anche**
 
@@ -184,7 +188,7 @@ Importare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 [Avvio rapido (modalità SOAP): Importazione di dati del modulo tramite l&#39;API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -198,17 +202,17 @@ Importare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client del servizio di integrazione dati modulo.
 
    * Creare un `FormDataIntegrationClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `FormDataIntegrationClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio. Tuttavia, specificate `?blob=mtom` per utilizzare MTOM.
+   * Creare un `FormDataIntegrationClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio. Tuttavia, specificate `?blob=mtom` per utilizzare MTOM.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `FormDataIntegrationClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -229,12 +233,13 @@ Importare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
    * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo dell&#39; `System.IO.FileStream` oggetto `Read` . Passare l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
 
-1. Importare dati nel modulo PDF.
+1. Importare i dati nel modulo PDF.
 
    Importare dati nel modulo PDF richiamando il metodo dell&#39; `FormDataIntegrationClient` oggetto `importData` e passando i valori seguenti:
 
    * L&#39; `BLOB` oggetto che memorizza il modulo PDF.
    * L&#39; `BLOB` oggetto che memorizza i dati del modulo.
+
    Il `importData` metodo restituisce un `BLOB` oggetto che memorizza un modulo PDF contenente i dati contenuti nell&#39;origine dati XML.
 
 1. Salvare il modulo PDF come file PDF.
@@ -248,15 +253,15 @@ Importare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 [Riepilogo dei passaggi](importing-exporting-data.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Esportazione dei dati del modulo {#exporting-form-data}
 
-È possibile esportare i dati del modulo da un modulo PDF interattivo utilizzando il servizio di integrazione dei dati del modulo. Il formato dei dati esportati dipende dal tipo di modulo. Se il tipo di modulo è un modulo Acrobat creato in Acrobat, i dati esportati sono XFDF. Se il tipo di modulo è un modulo XML creato in Designer, i dati esportati sono XDP.
+È possibile esportare i dati del modulo da un modulo PDF interattivo utilizzando il servizio di integrazione dei dati del modulo. Il formato dei dati esportati dipende dal tipo di modulo. Se il tipo di modulo è un modulo Acrobat  creato in  Acrobat, i dati esportati sono XFDF. Se il tipo di modulo è un modulo XML creato in Designer, i dati esportati sono XDP.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio di integrazione dei dati del modulo, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio di integrazione dei dati modulo, vedere [Riferimento servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -277,8 +282,8 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
 **Creare un client del servizio di integrazione dei dati modulo**
 
@@ -286,7 +291,7 @@ Prima di poter importare i dati in un&#39;API formClient PDF a livello di progra
 
 **Riferimento a un modulo PDF**
 
-Per esportare dati da un modulo PDF, è necessario fare riferimento a un modulo PDF creato in Designer o Acrobat e contenente i dati del modulo. Se si tenta di esportare i dati da un modulo PDF vuoto, verrà visualizzato uno schema XML vuoto.
+Per esportare dati da un modulo PDF, è necessario fare riferimento a un modulo PDF creato in Designer o  Acrobat e contenente i dati del modulo. Se si tenta di esportare i dati da un modulo PDF vuoto, verrà visualizzato uno schema XML vuoto.
 
 **Esportazione di dati dal modulo PDF**
 
@@ -294,7 +299,7 @@ Dopo aver fatto riferimento a un modulo PDF contenente dati del modulo, è possi
 
 **Salvare i dati del modulo come file XML**
 
-Dopo aver esportato i dati del modulo, è possibile salvarli come file XML. Una volta salvato il file come file XML, è possibile aprire il file XML in un visualizzatore XML per visualizzare i dati del modulo.
+Dopo aver esportato i dati del modulo, è possibile salvarli come file XML. Una volta salvato il file come file XML, è possibile aprire il file XML all&#39;interno di un visualizzatore XML per visualizzare i dati del modulo.
 
 **Consulta anche**
 
@@ -302,7 +307,7 @@ Dopo aver esportato i dati del modulo, è possibile salvarli come file XML. Una 
 
 [Esportare i dati del modulo utilizzando l&#39;API del servizio Web](importing-exporting-data.md#export-form-data-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -335,7 +340,7 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 1. Salvare il modulo PDF come file PDF.
 
    * Creare un `java.io.File` oggetto e assicurarsi che l&#39;estensione del file sia XML.
-   * Richiamare il metodo dell&#39; `Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `exportData` metodo).
+   * Richiamare il metodo `Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `exportData` metodo).
 
 **Consulta anche**
 
@@ -343,7 +348,7 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 [Avvio rapido (modalità SOAP): Esportazione dei dati del modulo tramite l&#39;API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -355,17 +360,17 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
    Creare un progetto Microsoft .NET che utilizza MTOM. Assicurarsi di utilizzare la seguente definizione WSDL: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
 
-   * Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   * Sostituire `localhost` con l&#39;indirizzo IP del server che ospita  AEM Forms.
 
 1. Creare un client del servizio di integrazione dati modulo.
 
    * Creare un `FormDataIntegrationClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `FormDataIntegrationClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio. Tuttavia, specificate `?blob=mtom` per utilizzare MTOM.
+   * Creare un `FormDataIntegrationClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio. Tuttavia, specificate `?blob=mtom` per utilizzare MTOM.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `FormDataIntegrationClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -393,6 +398,6 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 [Riepilogo dei passaggi](importing-exporting-data.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
