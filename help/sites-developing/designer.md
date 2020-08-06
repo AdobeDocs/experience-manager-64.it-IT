@@ -1,8 +1,8 @@
 ---
 title: Progettazione e Designer
 seo-title: Progettazione e Designer
-description: Sarà necessario creare una progettazione per il sito Web e in AEM sarà possibile utilizzando Designer
-seo-description: Sarà necessario creare una progettazione per il sito Web e in AEM sarà possibile utilizzando Designer
+description: Sarà necessario creare una progettazione per il sito Web e, in AEM, utilizzare Designer
+seo-description: Sarà necessario creare una progettazione per il sito Web e, in AEM, utilizzare Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
 >[!CAUTION]
 >
->Questo articolo descrive come creare un sito Web basato sull’interfaccia classica. Adobe consiglia di sfruttare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell’articolo [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md).
+>Questo articolo descrive come creare un sito Web basato sull’interfaccia classica.  Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Primi passi nello sviluppo  AEM Sites](/help/sites-developing/getting-started.md).
 
-Sarà necessario creare una progettazione per il sito Web e in AEM sarà necessario utilizzare Designer.
+Sarà necessario creare una progettazione per il sito Web e, in AEM, utilizzare Designer.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;accessibilità Web, consultate [AEM e le Linee guida](/help/managing/web-accessibility.md)per l&#39;accessibilità del Web.
+>Per ulteriori informazioni sull&#39;accessibilità del Web, vedere [AEM e Linee guida](/help/managing/web-accessibility.md)per l&#39;accessibilità del Web.
 
 ## Utilizzo di Designer {#using-the-designer}
 
