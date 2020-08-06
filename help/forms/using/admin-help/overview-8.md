@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Output consente di unire i dati del modulo XML a una struttura del modulo creata in Designer per creare un flusso di output del documento in vari formati. Il flusso di output può essere inviato a una stampante di rete, a una stampante locale o a un file su disco
 
-È possibile utilizzare la pagina Output nella console di amministrazione per amministrare il servizio Output. Le impostazioni configurate vengono utilizzate in fase di esecuzione quando le impostazioni equivalenti non sono state specificate tramite l&#39;API dei moduli AEM. La configurazione eseguita tramite l’SDK dei moduli AEM ha la priorità sulle impostazioni configurate tramite la console di amministrazione.
+È possibile utilizzare la pagina Output nella console di amministrazione per amministrare il servizio Output. Le impostazioni configurate vengono utilizzate in fase di esecuzione quando le impostazioni equivalenti non sono state specificate tramite l&#39;API dei moduli AEM. La configurazione eseguita tramite l&#39;SDK dei moduli AEM ha la priorità sulle impostazioni configurate tramite la console di amministrazione.
 
 Per ulteriori informazioni sul servizio Output, vedere [Servizi di riferimento](https://www.adobe.com/go/learn_aemforms_services_61).
 
