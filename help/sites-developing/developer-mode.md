@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 1%
 
 ---
 
@@ -47,6 +50,7 @@ che aiutano uno sviluppatore a:
 >
 >* in un’istanza di authoring che utilizza la modalità di esecuzione nosamplecontent
 >* un’istanza di pubblicazione
+
 >
 >
 Deve essere nuovamente disattivato dopo l&#39;uso.
@@ -55,8 +59,8 @@ Deve essere nuovamente disattivato dopo l&#39;uso.
 >
 >Consulta:
 >
->* Articolo della Knowledge Base, [Risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)dell&#39;interfaccia utente AEM Touch per ulteriori suggerimenti e strumenti.
->* Sessione AEM Gems sulla modalità [Sviluppatore di](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+>* Articolo della Knowledge Base, [Risoluzione dei problemi AEM problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)di TouchUI, per ulteriori suggerimenti e strumenti.
+>* AEM sessione Gems su [AEM modalità](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)Sviluppatore 6.0.
 
 
 ## Apertura della modalità Sviluppatore {#opening-developer-mode}
@@ -82,7 +86,7 @@ Viene visualizzata una struttura di componenti che:
 * Consente di espandere la struttura ad albero e selezionare componenti specifici all’interno della struttura. La selezione permette di accedere ai dettagli dei componenti; quali:
 
    * Percorso archivio
-   * Collegamenti agli script (a cui si accede in CRXDE Lite)
+   * Collegamenti agli script (accesso in CRXDE Lite)
 
 * I componenti selezionati (nel flusso del contenuto, indicati da un bordo blu) saranno evidenziati nella struttura del contenuto (e viceversa).
 
@@ -100,6 +104,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
    * tutti gli script di componente utilizzati per il rendering del componente.
    * percorso del contenuto dell&#39;archivio per questo componente specifico.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Modifica script**: un collegamento che:
@@ -110,6 +115,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
    * La gerarchia all&#39;interno del componente selezionato.
    * Tempi di rendering del componente selezionato in modo isolato, dei singoli componenti nidificati al suo interno e del totale combinato.
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
@@ -122,7 +128,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
 Si spera che la scheda **Errori** sia sempre vuota (come sopra), ma quando si verificano dei problemi vengono visualizzati i seguenti dettagli per ciascun componente:
 
-* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli sull’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
+* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli sull’errore e collegamenti diretti al codice appropriato all’interno del CRXDE Lite.
 * Un avviso se il componente apre una sessione di amministrazione.
 
 Ad esempio, in una situazione in cui viene chiamato un metodo non definito, l&#39;errore risultante verrà visualizzato nella scheda **Errori** :
