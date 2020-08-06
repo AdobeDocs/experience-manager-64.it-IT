@@ -1,6 +1,6 @@
 ---
-title: Modelli in repository
-seo-title: Modelli in repository
+title: Modelli nell'archivio
+seo-title: Modelli nell'archivio
 description: 'null'
 seo-description: 'null'
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
@@ -11,15 +11,18 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
 translation-type: tm+mt
 source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+workflow-type: tm+mt
+source-wordcount: '1332'
+ht-degree: 1%
 
 ---
 
 
-# Modelli in repository{#models-in-repository}
+# Modelli nell&#39;archivio{#models-in-repository}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Un modello contiene un set di tipi di dati che definiscono le proprietà che verranno sottoposte a rendering dai servizi di contenuto. Un modello definisce anche le relazioni tra altri modelli al fine di applicare l&#39;integrità dei dati.
 
@@ -58,11 +61,11 @@ Il nodo di configurazione dei tipi di dati contiene un elenco di elementi dei ti
 
 La proprietà &#39;dataTypesConfig&#39; supporta l&#39;unione delle risorse Sling. Ciò significa che i tipi di dati utilizzati dai tipi di modelli di sistema (o anche dai tipi di modelli personalizzati) possono essere personalizzati utilizzando i nodi di sovrapposizione.
 
-Sarà necessario creare e personalizzare una sovrapposizione di tipo */libs/settings/mobileapps/models/formbuilderconfig/datatypes* .
+Sarà necessario creare e personalizzare una sovrapposizione di tipo */libs/settings/mobileapps/models/formbuilderconfig/data* .
 
 Ad esempio, è possibile aggiungere una sovrapposizione per il tipo di dati String per modificare fieldResourceType in un componente personalizzato.
 
-Per ulteriori informazioni sull’unione delle risorse Sling, consultate [Utilizzo dell’unione delle risorse Sling in AEM](/help/sites-developing/sling-resource-merger.md).
+Per ulteriori informazioni sull&#39;unione delle risorse Sling, vedere [Utilizzo della fusione delle risorse Sling in AEM](/help/sites-developing/sling-resource-merger.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -92,7 +95,7 @@ La tabella seguente mostra le proprietà definite per un modello:
 |---|---|
 | Titolo modello | nome del modello |
 | Descrizione | descrizione del modello |
-| Miniatura | miniatura del modello |
+| Miniatura  | miniatura del modello |
 | Tipo di modello | tipo del modello (può essere una semplice stringa o un percorso di un componente effettivo) |
 | Elementi figlio consentiti | percorso di un modello che può essere un elemento secondario di questo modello |
 | Elementi padre consentiti | percorso di un modello che può essere un elemento padre del modello |
@@ -105,13 +108,13 @@ La tabella seguente mostra le proprietà definite per un modello:
 
 ### Modifica di un modello {#editing-a-model}
 
-La modifica di un modello comporta l&#39;apertura del modulo della finestra di dialogo di scaffolding associato a un modello per la modifica. In genere, lo scaffolding è un nodo secondario del modello, ma può essere posizionato all&#39;esterno del modello, se lo desidera, specificandone il percorso tramite la proprietà &#39;cq:scaffolding&#39;. Questo è utile se desiderate condividere lo stesso scaffolding tra più modelli che necessitano di proprietà diverse.
+La modifica di un modello prevede l&#39;apertura della finestra di dialogo di scaffolding associata a un modello per la modifica. In genere, lo scaffolding è un nodo secondario del modello, ma può essere posizionato all&#39;esterno del modello, se lo desidera, specificandone il percorso tramite la proprietà &#39;cq:scaffolding&#39;. Questo è utile se desiderate condividere lo stesso scaffolding tra più modelli che necessitano di proprietà diverse.
 
-Quando si trova la pagina di scaffolding del modello, l&#39;editor modelli eseguirà il rendering di tutto ciò che si trova in &#39;jcr:content/cq:dialog/content&#39;. Attualmente solo un layout fisso a 3 colonne è supportato dal motore di generazione dei moduli lato client. A destra della finestra di dialogo del modulo di cui è stato effettuato il rendering verrà visualizzato un elenco di tutti i tipi di dati specificati nella configurazione dei tipi di dati. Per modificare i tipi di dati, fai clic su di essi. La barra a destra passerà quindi alla scheda delle proprietà per il tipo di dati selezionato. È possibile aggiungere nuovi tipi di dati trascinandoli nell&#39;area di visualizzazione dell&#39;anteprima. Facendo clic su Salva le modifiche vengono propagate al server. Facendo clic su Annulla l&#39;editor modelli viene chiuso.
+Quando si trova la pagina di scaffolding del modello, l&#39;editor modelli eseguirà il rendering di tutto ciò che si trova in &#39;jcr:content/cq:dialog/content&#39;. Attualmente solo un layout fisso a 3 colonne è supportato dal motore di generazione dei moduli lato client. A destra della finestra di dialogo del modulo di cui è stato effettuato il rendering verrà visualizzato un elenco di tutti i tipi di dati specificati nella configurazione dei tipi di dati. Per modificare i tipi di dati, fai clic su di essi. La barra a destra passerà quindi alla scheda delle proprietà per il tipo di dati selezionato. È possibile aggiungere nuovi tipi di dati trascinandoli nell&#39;area di visualizzazione dell&#39;anteprima. Facendo clic su Salva, le modifiche vengono propagate al server. Facendo clic su Annulla l&#39;editor modelli viene chiuso.
 
 >[!NOTE]
 >
->Tutti i modelli sono Modelli, quindi seguono tutte le regole di modello AEM. Questo consente l&#39;utilizzo di proprietà quali ** allowParentes e *allowChildren* . Sono efficaci durante la creazione di nuove Entità basate su un modello. Le regole del modello garantiscono che le entità possano essere basate solo su determinati modelli a seconda della loro gerarchia.
+>Tutti i modelli sono Modelli, quindi seguono tutte AEM regole di modello. Questo consente l&#39;utilizzo di proprietà quali ** allowParentes e *allowChildren* . Sono efficaci durante la creazione di nuove Entità basate su un modello. Le regole del modello garantiscono che le entità possano essere basate solo su determinati modelli a seconda della loro gerarchia.
 >
 >Per informazioni sulla modifica di un modello dal dashboard, consulta [Creazione di un modello](/help/mobile/administer-mobile-apps.md) nella sezione relativa all&#39;authoring per le app mobili.
 
