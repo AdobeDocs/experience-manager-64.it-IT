@@ -1,6 +1,6 @@
 ---
-title: Sincronizzazione di moduli adattivi con modelli di modulo XFA
-seo-title: Sincronizzazione di moduli adattivi con modelli di modulo XFA
+title: Sincronizzazione di Forms adattivo con i modelli di modulo XFA
+seo-title: Sincronizzazione di Forms adattivo con i modelli di modulo XFA
 description: Sincronizzazione di moduli adattivi con file XFA/XDP.
 seo-description: Sincronizzazione di moduli adattivi con file XFA/XDP.
 uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
@@ -9,11 +9,14 @@ topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
 
-# Sincronizzazione di moduli adattivi con modelli di modulo XFA {#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Sincronizzazione di Forms adattivo con i modelli di modulo XFA {#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introduzione {#introduction}
 
@@ -21,15 +24,15 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 È possibile riutilizzare i campi del file XDP nel modulo adattivo. Questi campi sono denominati campi associati. Le proprietà dei campi associati (come script, etichette e formato di visualizzazione) vengono copiate dal file XDP. È inoltre possibile scegliere di ignorare il valore di alcune di queste proprietà.
 
-AEM Forms consente di mantenere sincronizzati i campi dei moduli adattivi con eventuali modifiche apportate successivamente ai campi corrispondenti nel file XDP. Questo articolo spiega come abilitare la sincronizzazione.
+ AEM Forms consente di mantenere sincronizzati i campi dei moduli adattivi con eventuali modifiche apportate successivamente ai campi corrispondenti nel file XDP. Questo articolo spiega come abilitare la sincronizzazione.
 
 ![È possibile trascinare i campi da un modulo XFA a un modulo adattivo](assets/drag-drop-xfa.gif.gif)
 
-Nell’ambiente di creazione di AEM Forms, è possibile trascinare i campi da un modulo XFA (a sinistra) a un modulo adattivo (a destra)
+Nell’ambiente di authoring  AEM Forms, è possibile trascinare i campi da un modulo XFA (a sinistra) a un modulo adattivo (a destra)
 
 ## Prerequisiti {#prerequisites}
 
-Per utilizzare le informazioni in questo articolo, si consiglia di acquisire familiarità con le aree seguenti:
+Per utilizzare le informazioni contenute in questo articolo, si consiglia di acquisire familiarità con le aree seguenti:
 
 * [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md)
 
@@ -41,7 +44,7 @@ Per usare le risorse, come per l’esempio riportato nell’articolo, scaricate 
 
 L&#39;articolo utilizza un esempio per dimostrare come sincronizzare il modulo adattivo con un modello di modulo XFA aggiornato. Le risorse utilizzate nell&#39;esempio sono disponibili in un pacchetto, che può essere scaricato dalla sezione [Download](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) di questo articolo.
 
-Dopo aver caricato il pacchetto, potete visualizzare queste risorse nell’interfaccia utente di AEM Forms.
+Dopo aver caricato il pacchetto, potete visualizzare queste risorse nell’interfaccia  di AEM Forms.
 
 Installate il pacchetto utilizzando il gestore pacchetti: `https://<server>:<port>/crx/packmgr/index.jsp`
 
@@ -60,31 +63,32 @@ Il pacchetto contiene le risorse seguenti:
 
 >[!NOTE]
 >
->Nei passaggi precedenti, veniva sovrascritta una proprietà di un campo nel file XDP. Questa proprietà, pertanto, non verrà sincronizzata se la proprietà corrispondente nel file XDP viene modificata in seguito.
+>Nei passaggi precedenti, veniva sovrascritta una proprietà di un campo nel file XDP. Questa proprietà, pertanto, non verrà sincronizzata se la proprietà corrispondente nel file XDP viene modificata in un secondo momento.
 
 ## Rilevamento delle modifiche nel file XDP {#detecting-changes-in-xdp-file}
 
-Ogni volta che si verificano modifiche in un file XDP o in un frammento, l&#39;interfaccia utente di AEM Forms contrassegna tutti i moduli adattivi basati sul file XDP o sul frammento.
+Ogni volta che si verificano modifiche in un file XDP o in un frammento, l&#39;interfaccia  di AEM Forms contrassegna tutti i moduli adattivi basati sul file XDP o sul frammento.
 
-Dopo aver aggiornato un file XDP, è necessario caricarlo nuovamente nell&#39;interfaccia utente di AEM Forms per contrassegnare le modifiche.
+Dopo aver aggiornato un file XDP, è necessario caricarlo nuovamente nell&#39;interfaccia  AEM Forms per contrassegnare le modifiche.
 
 Ad esempio, è possibile aggiornare il `sample-form.xdp` file seguendo la procedura seguente:
 
-1. Passa a `https://<server>:<port>/projects.html.` Immettere le credenziali se richiesto.
-1. Fare clic sulla scheda Moduli a sinistra.
+1. Passa a `https://<server>:<port>/projects.html.` Immettere le credenziali, se richiesto.
+1. Fate clic sulla scheda Forms a sinistra.
 1. Scaricate il `sample-form.xdp` file sul computer locale. Il file XDP viene scaricato come `.zip` file, che può essere estratto utilizzando qualsiasi utilità di decompressione file.
 
 1. Aprire il `sample-form.xdp` file e modificare il titolo del campo TextField1 da Campo **di** testo a Campo **di testo** personale.
 
-1. Caricate nuovamente il `sample-form.xdp` file nell&#39;interfaccia utente di AEM Forms.
+1. Caricate nuovamente il `sample-form.xdp` file nell’interfaccia  di AEM Forms.
 
-Se un file XDP viene aggiornato, viene visualizzata un&#39;icona nell&#39;editor quando si modificano i moduli adattivi basati sul file XDP. Questa icona indica che il modulo adattivo non è sincronizzato con il file XDP. Nell’immagine seguente, vedete l’icona accanto alla barra laterale.
+Se un file XDP viene aggiornato, viene visualizzata un&#39;icona nell&#39;editor quando si modificano i moduli adattivi in base al file XDP. Questa icona indica che il modulo adattivo non è sincronizzato con il file XDP. Nell’immagine seguente, vedete l’icona accanto alla barra laterale.
 
 ![Icona per visualizzare che il modulo adattivo non è sincronizzato con il file XDP](assets/sync-af-xfa.png)
 
 ## Sincronizzazione di moduli adattivi con l’ultimo file XDP {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Quando un modulo adattivo non sincronizzato con il file XDP viene aperto per la creazione successiva, viene visualizzato il seguente messaggio: Lo **schema/modello di modulo per il modulo adattivo è stato aggiornato.`Click Here`per riutilizzarla con la nuova versione.**
+Quando un modulo adattivo non sincronizzato con il file XDP viene aperto per la creazione successiva, viene visualizzato il seguente messaggio:
+**Schema/modello di modulo per il modulo adattivo è stato aggiornato.`Click Here`per riavviarlo con la nuova versione.**
 
 Facendo clic sul messaggio, i campi del modulo adattivo vengono sincronizzati con i campi corrispondenti nel file XDP.
 
@@ -104,7 +108,7 @@ Per aggiornare le proprietà nel modulo adattivo di esempio, fare clic sul colle
 >
 >L’etichetta Campo numerico AF non è stata modificata perché questa proprietà era stata ignorata dalla finestra di dialogo delle proprietà del componente, come descritto in [Aggiungi contenuto ai moduli](#p-add-content-to-adaptive-form-br-p)adattivi.
 
-### Aggiunta di nuovi campi dal file XDP al modulo adattivo {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Aggiunta di nuovi campi dal file XDP al modulo adattivo   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Tutti i campi aggiunti successivamente al file XDP originale vengono visualizzati nella scheda Gerarchia modulo ed è possibile trascinare i nuovi campi nel modulo adattivo.
 
@@ -117,12 +121,12 @@ Se un campo precedentemente copiato in un modulo adattivo viene eliminato da un 
 I passaggi seguenti illustrano questo flusso di utilizzo per le risorse nell’esempio utilizzato in questo articolo:
 
 1. Aggiornare il `sample-form.xdp` file ed eliminare NumericField1.
-1. Caricare il `sample-form.xdp` file nell’interfaccia utente di AEM Forms
-1. Aprire il modulo `sample-xfa-af` adattivo per la creazione. Viene visualizzato il seguente messaggio di errore: Schema/modello di modulo per il modulo adattivo è stato aggiornato. `Click Here` per riutilizzarla con la nuova versione.
+1. Caricare il `sample-form.xdp` file nell’interfaccia  di AEM Forms
+1. Aprire il modulo `sample-xfa-af` adattivo per la creazione. Viene visualizzato il seguente messaggio di errore: Schema/modello di modulo per il modulo adattivo è stato aggiornato. `Click Here` per riavviarlo con la nuova versione.
 
 1. Fai clic sul collegamento (&quot; `Click Here`&quot;) nel messaggio. Viene visualizzato un messaggio di errore che segnala che il campo non esiste più nel file XDP.
 
-![Errore visualizzato quando si elimina un elemento nel file XDP](assets/no-element-xdp.png)
+![Errore visualizzato durante l&#39;eliminazione di un elemento nel file XDP](assets/no-element-xdp.png)
 
 Anche il campo eliminato è contrassegnato da un’icona che indica un errore nel campo.
 
