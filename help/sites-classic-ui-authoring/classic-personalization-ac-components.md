@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 77%
 
 ---
 
@@ -125,7 +128,8 @@ Puoi configurare le seguenti operazioni nelle schede **Visualizzazione**, **Info
 
 * **Descrizione collegamento** Ulteriori informazioni su come utilizzare il collegamento.
 
-* **Tipo di collegamento** Nell&#39;elenco a discesa, seleziona **URL personalizzato** o **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+* **LinkType** Nell&#39;elenco a discesa, seleziona tra 
+**URL** personalizzato e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo** Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere altri elementi.
 
@@ -239,7 +243,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
  <tbody> 
   <tr> 
    <td><p><strong>Componente</strong></p> </td> 
-   <td><p><strong>Tipo di dati del campo Adobe Campaign</strong></p> </td> 
+   <td><p><strong>Tipo di dati  campo Adobe Campaign</strong></p> </td> 
    <td><p><strong>Esempio di campo</strong></p> </td> 
   </tr> 
   <tr> 
@@ -300,7 +304,7 @@ Puoi configurare le seguenti operazioni:
 
 * **Mappatura**
 
-   Se appropriato, seleziona un campo di personalizzazione di Adobe Campaign.
+   Se appropriato, selezionate un campo  personalizzazione Adobe Campaign.
 
 * **Chiave riconciliazione**
 
@@ -410,7 +414,8 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 * **Messaggio vincolo**
 
    Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo toccando o facendo clic sulle icone **+** e **+** oppure immettendo un numero.
+* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo facendo clic o toccando il pulsante 
+**+** e **-** icone oppure immettere un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo numerico (Campaign) con la larghezza configurata.
 
