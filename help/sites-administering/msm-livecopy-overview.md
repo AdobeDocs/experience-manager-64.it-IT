@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +55,7 @@ La panoramica **** Live Copy può essere aperta dal pannello laterale **Riferime
 
 ### Apertura di una panoramica Live Copy - Proprietà di una pagina Blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-La panoramica **** Live Copy può essere aperta quando si visualizzano le proprietà di una pagina blueprint:
+La panoramica **di** Live Copy può essere aperta quando si visualizzano le proprietà di una pagina di blueprint:
 
 1. Aprite **Proprietà** per la pagina di blueprint appropriata.
 1. Aprite la scheda **Blueprint** ; l&#39;opzione Panoramica **** Live Copy verrà visualizzata nella barra degli strumenti superiore:
