@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-L&#39;integrazione dei dati AEM Forms consente di utilizzare origini dati back-end diverse per creare un modello dati del modulo da utilizzare come schema in vari moduli adattivi e flussi di lavoro di comunicazione interattiva. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, consulta gli argomenti di seguito:
+&#39;integrazione dei dati AEM Forms consente di utilizzare origini dati back-end diverse per creare un modello dati del modulo da utilizzare come schema in vari moduli adattivi e flussi di lavoro di comunicazione interattiva. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi del modello dati disponibili nelle origini dati. Per ulteriori informazioni, consulta gli argomenti di seguito:
 
-* [Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md)
+* [Integrazione dei dati  AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare le origini dati](/help/forms/using/configure-data-sources.md)
 * [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
 * [Uso del modello dati del modulo](/help/forms/using/work-with-form-data-model.md)
@@ -90,7 +90,7 @@ L&#39;editor dei modelli di dati per moduli consente di generare e modificare da
 
 Per visualizzare in anteprima una comunicazione interattiva con dati del modello dati del modulo di esempio:
 
-1. Nell’istanza di creazione di AEM, andate a **[!UICONTROL Moduli > Moduli e documenti]**.
+1. AEM’istanza di creazione, accedete a **[!UICONTROL Forms > Forms e documenti]**.
 1. Selezionate una comunicazione interattiva e toccate **[!UICONTROL Anteprima]** nella barra degli strumenti per selezionare Canale **** Web, Canale **** di stampa o **[!UICONTROL Entrambi i canali]** per visualizzare l&#39;anteprima della comunicazione interattiva.
 1. Nella finestra di dialogo del [*canale*] di anteprima, assicurarsi che l&#39;opzione **[!UICONTROL Test Data of Form Data Model]** sia selezionata e toccare **[!UICONTROL Anteprima]**.
 
@@ -102,7 +102,7 @@ Allo stesso modo, per visualizzare l&#39;anteprima di un modulo adattivo con dat
 
 ## Precompilazione tramite il servizio del modello dati del modulo {#prefill}
 
-Il servizio di precompilazione dei modelli di dati modulo fornito dai AEM Forms consente di abilitare i moduli adattivi e le comunicazioni interattive basate sul modello di dati del modulo. Il servizio precompila le origini dati per gli oggetti del modello dati nel modulo adattivo e nella comunicazione interattiva e precompila quindi i dati durante il rendering del modulo o della comunicazione.
+ AEM Forms fornisce un servizio di precompilazione per i modelli di dati modulo integrato che è possibile abilitare per i moduli adattivi e le comunicazioni interattive basate sul modello di dati del modulo. Il servizio precompila le origini dati per gli oggetti del modello dati nel modulo adattivo e nella comunicazione interattiva e precompila quindi i dati durante il rendering del modulo o della comunicazione.
 
 Per abilitare il servizio Precompila modello dati modulo per un modulo adattivo, aprire le proprietà Contenitore modulo adattivo e selezionare il servizio **[!UICONTROL Precompilazione modello dati]** modulo dal menu a discesa **[!UICONTROL Precompila servizio]** nel pannello di navigazione Base. Quindi, salvate le proprietà.
 
@@ -116,7 +116,7 @@ Finestra di dialogo Modifica proprietà per una comunicazione interattiva
 
 ## Inserimento di dati modulo adattivo inviati in origini dati {#write-af}
 
-Quando un utente invia un modulo basato su un modello dati modulo, è possibile configurare il modulo in modo che scriva i dati inviati per un oggetto modello dati alle relative origini dati. Per questo caso d’uso, i AEM Forms forniscono l’azione [di invio per il modello dati](/help/forms/using/configuring-submit-actions.md)modulo, disponibile solo per i moduli adattivi basati su un modello dati del modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
+Quando un utente invia un modulo basato su un modello dati modulo, è possibile configurare il modulo in modo che scriva i dati inviati per un oggetto modello dati alle relative origini dati. Per questo caso di utilizzo,  AEM Forms fornisce un&#39;azione [di invio per il modello dati](/help/forms/using/configuring-submit-actions.md)modulo, disponibile solo per i moduli adattivi basati su un modello dati del modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
 
 Per configurare l&#39;azione di invio del modello dati modulo, aprire le proprietà del contenitore del modulo adattivo e selezionare **[!UICONTROL Invia utilizzando il modello]** dati modulo dal menu a discesa Invia azione, sotto la struttura di invio. Quindi, individuare e selezionare un oggetto modello dati dal **[!UICONTROL nome dell&#39;oggetto modello dati da inviare]** a discesa. Salvare le proprietà.
 
