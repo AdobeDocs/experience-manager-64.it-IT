@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Per applicare un layout personalizzato a un singolo campo, effettuate le seguent
 
 ### Personalizzare il layout di tutti i campi di un modulo {#customize-layout-of-all-the-fields-of-a-form}
 
-Con AEM Forms, ora puoi creare un tema e applicarlo al modulo. L’editor di temi consente di specificare lo stile dei componenti modulo in un’unica posizione. Quando create un tema, specificate lo stile a livello di componente. Per ulteriori informazioni sui temi, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
+Con  AEM Forms è ora possibile creare un tema e applicarlo al modulo. L’editor di temi consente di specificare lo stile dei componenti modulo in un’unica posizione. Quando create un tema, specificate lo stile a livello di componente. Per ulteriori informazioni sui temi, consulta [Temi in  AEM Forms](/help/forms/using/themes.md).
 
 Creare un tema utilizzando l&#39;Editor tema per personalizzare il layout di tutti i campi del modulo. Dopo aver creato un tema, effettuare le seguenti operazioni per applicarlo a un modulo:
 
