@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 translation-type: tm+mt
 source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+workflow-type: tm+mt
+source-wordcount: '1887'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
 
 ## Post Upgrade Checks {#post-upgrade-checks}
 
-Dopo l&#39;aggiornamento [locale](/help/sites-deploying/in-place-upgrade.md) , per finalizzare l&#39;aggiornamento è necessario eseguire le attività seguenti. Si presume che AEM sia stato avviato con il JAR 6.4 e che la base di codice aggiornata sia stata implementata.
+Dopo l&#39;aggiornamento [locale](/help/sites-deploying/in-place-upgrade.md) , per finalizzare l&#39;aggiornamento è necessario eseguire le attività seguenti. Si presume AEM sia stato avviato con il JAR 6.4 e che la base di codice aggiornata sia stata distribuita.
 
 * [Verificare i registri per il successo dell&#39;aggiornamento](#verify-logs-for-upgrade-success)
 
@@ -27,12 +30,12 @@ Dopo l&#39;aggiornamento [locale](/help/sites-deploying/in-place-upgrade.md) , p
 
 * [Verifica versione Oak](#verify-oak-version)
 
-* [Esaminare la cartella PreUpgradeBackup](#inspect-preupgradebackup-folder)
+* [Inspect la cartella PreUpgradeBackup](#inspect-preupgradebackup-folder)
 
 * [Convalida iniziale delle pagine](#initial-validation-of-pages)
-* [Applicare i Service Pack di AEM](#apply-aem-service-packs)
+* [Applica AEM Service Pack](#apply-aem-service-packs)
 
-* [Migrazione delle funzioni di AEM](#migrate-aem-features)
+* [Migrazione AEM funzionalità](#migrate-aem-features)
 
 * [Verifica configurazioni di manutenzione pianificate](#verify-scheduled-maintenance-configurations)
 
@@ -67,7 +70,7 @@ Di seguito è riportato un esempio di rapporto che mostra un bundle non installa
 
 **error.log**
 
-Il file error.log deve essere attentamente rivisto durante e dopo l’avvio di AEM tramite il file JAR della versione di destinazione. Eventuali avvertenze o errori devono essere rivisti. In generale è meglio cercare problemi all’inizio del registro. Gli errori che si verificano successivamente nel registro possono in realtà essere effetti collaterali di una causa principale che viene richiamata in anticipo nel file. Se si verificano errori e avvisi ripetuti, consultate la sezione riportata di seguito per l&#39; [analisi dei problemi relativi all&#39;aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-upgrade).
+Il file error.log deve essere attentamente rivisto durante e dopo l&#39;avvio di AEM utilizzando il file jar della versione di destinazione. Eventuali avvertenze o errori devono essere rivisti. In generale è meglio cercare problemi all’inizio del registro. Gli errori che si verificano successivamente nel registro possono in realtà essere effetti collaterali di una causa principale che viene richiamata in anticipo nel file. Se si verificano errori e avvisi ripetuti, consultate la sezione riportata di seguito per l&#39; [analisi dei problemi relativi all&#39;aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-upgrade).
 
 ### Verificare i pacchetti OSGi {#verify-osgi-bundles}
 
@@ -77,31 +80,31 @@ Passate alla console OSGi `/system/console/bundles` e verificate se non sono sta
 
 Dopo l&#39;aggiornamento, noterete che la versione di Oak è stata aggiornata alla **1.8.2**. Per verificare la versione Oak, andate alla console OSGi e osservate la versione associata ai bundle Oak: Oak Core, Oak Commons, Oak Segment Tar.
 
-### Controlla cartella PreUpgradeBackup {#inspect-preupgradebackup-folder}
+###  cartella Inspect PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
-Durante l&#39;aggiornamento, AEM tenterà di eseguire il backup delle personalizzazioni e di archiviarle al di sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite potrebbe essere necessario attivare [temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Durante l&#39;aggiornamento AEM tenterà di eseguire il backup delle personalizzazioni e di archiviarle al di sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite, potrebbe essere necessario abilitare [temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La cartella con la marca temporale deve avere una proprietà denominata `mergeStatus` con un valore di `COMPLETED`. La cartella **da elaborare** deve essere vuota e il nodo **sovrascritto** indica quali nodi sono stati sovrascritti durante l&#39;aggiornamento. Il contenuto sotto il nodo **residuo** indica il contenuto che non è stato possibile unire in modo sicuro durante l&#39;aggiornamento. Se l’implementazione dipende da uno dei nodi figlio (e non è già installata dal pacchetto di codice aggiornato), dovrà essere unita manualmente.
 
-Disabilitare CRXDE Lite dopo questo esercizio se in un ambiente Stage o Production.
+Disattivate CRXDE Lite dopo questo esercizio se in un ambiente Stage o Produzione.
 
 ### Convalida iniziale delle pagine {#initial-validation-of-pages}
 
-Eseguire una convalida iniziale rispetto a più pagine in AEM. Se si aggiorna un ambiente Authoring, aprire la pagina iniziale e la pagina di benvenuto ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Sia nell’ambiente Authoring che in quello Publish aprite alcune pagine dell’applicazione e verificate che il rendering sia corretto. Se si verificano dei problemi, consulta `error.log` la sezione per la risoluzione dei problemi.
+Eseguire una convalida iniziale rispetto a più pagine in AEM. Se si aggiorna un ambiente Authoring, aprire la pagina iniziale e la pagina di benvenuto ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Sia nell’ambiente Authoring che in quello Publish, aprite alcune pagine dell’applicazione e verificate che il rendering sia corretto. Se si verificano dei problemi, consulta `error.log` la sezione per la risoluzione dei problemi.
 
-### Applicare i Service Pack di AEM {#apply-aem-service-packs}
+### Applica AEM Service Pack {#apply-aem-service-packs}
 
-Applica eventuali Service Pack AEM 6.4 rilevanti, se rilasciati.
+Applicare eventuali Service Pack AEM 6.4 pertinenti se sono stati rilasciati.
 
-### Migrazione delle funzioni di AEM {#migrate-aem-features}
+### Migrazione AEM funzionalità {#migrate-aem-features}
 
-Diverse funzioni di AEM richiedono passaggi aggiuntivi dopo l’aggiornamento. Un elenco completo di queste funzioni e dei passaggi per la migrazione in AEM 6.4 è disponibile nella pagina [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) .
+Diverse funzionalità in AEM richiedono passaggi aggiuntivi dopo l&#39;aggiornamento. Un elenco completo di queste funzionalità e dei passaggi per la migrazione in AEM 6.4 è disponibile nella pagina [Aggiornamento codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) .
 
 ### Verifica configurazioni di manutenzione pianificate {#verify-scheduled-maintenance-configurations}
 
 #### Enable Data Store Garbage Collection {#enable-data-store-garbage-collection}
 
-Se si utilizza un archivio dati file, verificare che l&#39;attività di raccolta dei dati nell&#39;archivio sia abilitata e aggiunta all&#39;elenco Manutenzione settimanale. Le istruzioni sono descritte [qui](/help/sites-administering/data-store-garbage-collection.md).
+Se si utilizza un archivio dati file, verificare che l&#39;attività di raccolta dei dati nell&#39;archivio dati sia abilitata e aggiunta all&#39;elenco Manutenzione settimanale. Le istruzioni sono descritte [qui](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -125,15 +128,15 @@ Tutti i processi pianificati come parte della base di codice possono essere atti
 
 ## Analisi Dei Problemi Relativi All&#39;Aggiornamento {#analyzing-issues-with-upgrade}
 
-Questa sezione contiene alcuni scenari di problemi che potrebbero verificarsi durante la procedura di aggiornamento ad AEM 6.4.
+Questa sezione contiene alcuni scenari di problema che potrebbero verificarsi durante la procedura di aggiornamento a AEM 6.4.
 
 Questi scenari dovrebbero aiutare a individuare la causa principale dei problemi correlati all&#39;aggiornamento e dovrebbero aiutare a identificare i problemi specifici di progetto o prodotto.
 
 ### Ricreazione della configurazione di Dynamic Media Cloud dopo l’aggiornamento {#dynamic-media-cloud-configuration}
 
-Dopo l’aggiornamento ad AEM 6.4 da una versione precedente, la configurazione di Dynamic Media Cloud dalle impostazioni precedenti potrebbe non essere accessibile dall’interfaccia utente touch di AEM 6.4. Per risolvere questo problema, utilizzate CRXDE Lite per rimuovere le impostazioni precedenti, quindi create una nuova configurazione Dynamic Media Cloud. Consultate anche Ristrutturazione dell’archivio di contenuti multimediali [dinamici in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
+Dopo aver effettuato l’aggiornamento a AEM 6.4 da una versione precedente, la configurazione di Dynamic Media Cloud dalle impostazioni precedenti potrebbe non essere più accessibile dall’AEM 6.4 TouchUI. Per risolvere questo problema, utilizzate CRXDE Lite per rimuovere le impostazioni precedenti, quindi create una nuova configurazione di Dynamic Media Cloud. Vedere anche ristrutturazione del repository [Dynamic Media in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
-### Migrazione archivio non riuscita {#repository-migration-failing-}
+### Migrazione archivio non riuscita  {#repository-migration-failing-}
 
 La migrazione dei dati da CRX2 a Oak dovrebbe essere fattibile per qualsiasi scenario che inizia con Istanze sorgente in base a CQ 5.4. Accertatevi di seguire esattamente le istruzioni di aggiornamento contenute in questo documento, che includono la preparazione dell&#39;autenticazione `repository.xml`, assicurandovi che non venga avviato alcun autenticatore personalizzato tramite JAAS e che l&#39;istanza sia stata controllata per individuare eventuali incoerenze prima di avviare la migrazione.
 
@@ -141,25 +144,25 @@ Se la migrazione continua a non riuscire, è possibile individuare la causa prin
 
 ### L&#39;Aggiornamento Non È Stato Eseguito {#the-upgrade-did-not-run}
 
-Prima di avviare i passaggi di preparazione, assicurarsi di eseguire prima l&#39;istanza **sorgente** eseguendola con il comando java -jar aem-quickstart.jar. Questo è necessario per essere sicuri che il file quickstart.properties sia generato correttamente. Se manca, l&#39;aggiornamento non funzionerà. In alternativa, potete verificare la presenza del file cercando `crx-quickstart/conf` nella cartella di installazione dell’istanza di origine. Inoltre, quando si avvia AEM per avviare l&#39;aggiornamento, questo deve essere eseguito con il comando java -jar aem-quickstart.jar. L&#39;avvio da uno script iniziale non avvia AEM in modalità di aggiornamento.
+Prima di avviare i passaggi di preparazione, assicurarsi di eseguire prima l&#39;istanza **sorgente** eseguendola con il comando java -jar aem-quickstart.jar. Questo è necessario per essere sicuri che il file quickstart.properties sia generato correttamente. Se manca, l&#39;aggiornamento non funzionerà. In alternativa, potete verificare la presenza del file cercando `crx-quickstart/conf` nella cartella di installazione dell’istanza di origine. Inoltre, quando si avvia AEM per avviare l&#39;aggiornamento, questo deve essere eseguito con il comando java -jar aem-quickstart.jar. L&#39;avvio da uno script iniziale non verrà avviato AEM in modalità di aggiornamento.
 
-### Pacchetti e pacchetti non aggiornati {#packages-and-bundles-fail-to-update-}
+### Pacchetti e pacchetti non aggiornati  {#packages-and-bundles-fail-to-update-}
 
 Nel caso in cui i pacchetti non vengano installati durante l&#39;aggiornamento, nemmeno i pacchetti che contengono verranno aggiornati. Questa categoria di problemi è in genere causata da configurazione errata dell&#39;archivio dati. Vengono visualizzati anche come messaggi **ERROR** e **WARN** nel log error.log. Poiché nella maggior parte di questi casi l&#39;accesso predefinito potrebbe non funzionare, è possibile utilizzare CRXDE direttamente per ispezionare e individuare i problemi di configurazione.
 
-### Alcuni pacchetti AEM non passano allo stato Attivo {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Alcuni AEM Bundle non passano allo stato Attivo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 In caso di pacchetti che non si avviano, è necessario verificare la presenza di eventuali dipendenze non soddisfatte.
 
 Nel caso in cui il problema sia presente ma si basa su un&#39;installazione del pacchetto non riuscita che ha portato all&#39;assenza dell&#39;aggiornamento, i bundle verranno considerati incompatibili per la nuova versione. Per ulteriori informazioni su come risolvere questo problema, vedi **Pacchetti e pacchetti non aggiornati** sopra.
 
-È inoltre consigliabile confrontare l’elenco dei bundle di una nuova istanza di AEM 6.4 con quella aggiornata per rilevare i bundle in cui non è stato effettuato l’aggiornamento. In questo modo sarà possibile trovare più facilmente gli elementi da cercare nel `error.log`.
+Si consiglia inoltre di confrontare l&#39;elenco dei bundle di una nuova istanza AEM 6.4 con quella aggiornata per rilevare i bundle che non sono stati aggiornati. In questo modo sarà possibile trovare più facilmente gli elementi da cercare nel `error.log`.
 
 ### Pacchetti personalizzati che non passano allo stato attivo {#custom-bundles-not-switching-to-the-active-state}
 
-Nel caso in cui i bundle personalizzati non passino allo stato attivo, è molto probabile che ci sia codice che non importa l&#39;API di modifica. Ciò porterà spesso a dipendenze insoddisfatte.
+Nel caso in cui i bundle personalizzati non passino allo stato attivo, è molto probabile che ci sia codice che non importa l&#39;API di modifica. Questo porterà più spesso a dipendenze insoddisfatte.
 
-Le API rimosse devono essere contrassegnate come obsolete in una delle precedenti versioni. In questo avviso di obsolescenza è possibile trovare istruzioni su una migrazione diretta del codice. Adobe intende controllare le versioni semantiche laddove possibile, in modo che le versioni possano indicare eventuali modifiche interrotte.
+Le API rimosse devono essere contrassegnate come obsolete in una delle precedenti versioni. In questo avviso di obsolescenza è possibile trovare istruzioni su una migrazione diretta del codice.  Adobe mira al controllo delle versioni semantiche laddove possibile, in modo che le versioni possano indicare eventuali modifiche interrotte.
 
 È inoltre meglio verificare se la modifica che ha causato il problema fosse assolutamente necessaria e ripristinarla se non lo è. Verificate inoltre se l&#39;aumento di versione dell&#39;esportazione del pacchetto è stato aumentato più del necessario, in seguito a rigorose versioni semantiche.
 
@@ -167,13 +170,13 @@ Le API rimosse devono essere contrassegnate come obsolete in una delle precedent
 
 In caso di alcune funzionalità dell&#39;interfaccia utente che non funzionano correttamente dopo l&#39;aggiornamento, è innanzitutto necessario verificare la presenza di sovrapposizioni personalizzate dell&#39;interfaccia. Alcune strutture potrebbero essere cambiate e la sovrapposizione potrebbe richiedere un aggiornamento o essere obsoleta.
 
-Quindi, verificate la presenza di eventuali errori Javascript che possono essere tracciati fino alle estensioni aggiunte personalizzate collegate alle librerie client. Lo stesso può valere per CSS personalizzato che potrebbe causare problemi al layout di AEM.
+Quindi, verificate la presenza di eventuali errori Javascript che possono essere tracciati fino alle estensioni aggiunte personalizzate collegate alle librerie client. Lo stesso può valere per CSS personalizzato che potrebbe causare problemi al layout AEM.
 
 Infine, verificate la presenza di errori di configurazione che Javascript potrebbe non essere in grado di gestire. Questo è in genere il caso con estensioni disattivate in modo improprio.
 
 ### Malfunzionamento di componenti personalizzati, modelli o estensioni di interfaccia utente {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-Nella maggior parte dei casi, le cause principali di questi problemi sono le stesse che si verificano per i bundle che non vengono avviati o per i pacchetti che non vengono installati con l&#39;unica differenza che i problemi iniziano quando si utilizzano i componenti.
+Nella maggior parte dei casi, le cause principali di questi problemi sono le stesse che si verificano per i bundle che non vengono avviati o per i pacchetti che non vengono installati con l&#39;unica differenza che i problemi iniziano quando si utilizzano i componenti per la prima volta.
 
 Il modo per affrontare il codice personalizzato errato è di eseguire prima prove di fumo per identificare la causa. Una volta trovata, consultate le raccomandazioni in questa sezione di [collegamento] dell&#39;articolo per trovare i modi per risolverle.
 
@@ -201,6 +204,6 @@ o
 
 In alcuni casi si possono trovare errori anche i messaggi di AVVISO in quanto ci possono essere casi validi che portano a questo stato e l&#39;applicazione non è sempre in grado di decidere se si tratta di un errore reale. Controlla anche questi messaggi.
 
-### Contattare il supporto Adobe {#contacting-adobe-support}
+### Contattare  supporto del Adobe {#contacting-adobe-support}
 
-Se avete letto i consigli presenti in questa pagina e riscontri ancora dei problemi, contattate il supporto Adobe. Per fornire il maggior numero possibile di informazioni al tecnico del supporto che lavora sul vostro caso, accertatevi di includere il file upgrade.log dall&#39;aggiornamento.
+Se avete letto i consigli presenti in questa pagina e state ancora riscontrando dei problemi, contattate  supporto del Adobe. Per fornire il maggior numero possibile di informazioni al tecnico del supporto che lavora sul vostro caso, accertatevi di includere il file upgrade.log dall&#39;aggiornamento.
