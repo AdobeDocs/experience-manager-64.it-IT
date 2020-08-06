@@ -1,6 +1,6 @@
 ---
-title: Casella in entrata
-seo-title: Casella in entrata
+title: 'Casella in entrata  '
+seo-title: 'Casella in entrata  '
 description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 seo-description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 94%
 
 ---
 
 
-# Casella in entrata{#your-inbox}
+# Casella in entrata  {#your-inbox}
 
 Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 
@@ -42,6 +45,7 @@ Per visualizzare le notifiche:
 
    * [Iscrizione alle notifiche](#subscribing-to-notifications)
    * [Elaborazione delle notifiche](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## Iscrizione alle notifiche {#subscribing-to-notifications}
@@ -66,6 +70,7 @@ Per effettuare la sottoscrizione alle notifiche:
 
    * **Casella in entrata notifica**: le notifiche vengono visualizzate nella casella in entrata AEM dell’utente.
    * **E-mail**: le notifiche vengono inviate all’indirizzo e-mail definito nel profilo dell’utente.
+
    >[!NOTE]
    >
    >Per ricevere la notifica tramite e-mail è necessario configurare alcune impostazioni. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Per configurare la notifica tramite e-mail in AEM, consulta [Configurazione notifica e-mail](/help/sites-administering/notification.md#configuringemailnotification).
@@ -92,6 +97,7 @@ Per effettuare la sottoscrizione alle notifiche:
       Per ricevere le notifiche solo per la pagina definita dal percorso, impostate **Esatto?** su **Sì**.
 
    * Per abilitare la regola, imposta **Regola** su **Consenti**. Se specifichi **Rifiuta**, la regola viene disabilitata ma non viene rimossa e può essere abilitata in seguito.
+
    Per rimuovere una definizione, seleziona la riga facendo clic su una cella della tabella e quindi fai clic su **Elimina**.
 
 1. Fai clic su **OK** per salvare la configurazione.
