@@ -1,6 +1,6 @@
 ---
-title: Funzioni di base del flusso di attività
-seo-title: Funzioni di base del flusso di attività
+title: Nozioni di base sul flusso di attività
+seo-title: Nozioni di base sul flusso di attività
 description: Elenco delle attività recenti eseguite da un membro o elenco delle attività recenti su un singolo thread di contenuto
 seo-description: Elenco delle attività recenti eseguite da un membro o elenco delle attività recenti su un singolo thread di contenuto
 uuid: 6e4734bb-52a8-4670-b665-e640108b036e
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 8cc04993-4021-4cb7-b973-5afc4da1ed11
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
 
 
-# Funzioni di base del flusso di attività {#activity-stream-essentials}
+# Nozioni di base sul flusso di attività {#activity-stream-essentials}
 
 Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del componente Flussi di attività.
 
@@ -23,7 +26,7 @@ La possibilità di seguire aggiunge un altro gruppo di attività quando i membri
 
 Tutti i siti [](overview.md#communitiessites) della community includono una pagina del profilo utente per il membro che ha effettuato l&#39;accesso, che mostrerà le attività dei membri allo stesso modo.
 
-##  Concetti {#concepts}
+## Concetti {#concepts}
 
 Un flusso *di* attività è l&#39;elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti su un singolo thread di contenuto, ad esempio un argomento del forum o un blog.
 
