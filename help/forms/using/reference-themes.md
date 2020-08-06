@@ -1,8 +1,8 @@
 ---
 title: Temi di riferimento
 seo-title: Temi di riferimento
-description: 'I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo. '
-seo-description: 'I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo. '
+description: ' AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere da Distribuzione software e utilizzare per lo stile di un modulo. '
+seo-description: ' AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere da Distribuzione software e utilizzare per lo stile di un modulo. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Temi di riferimento {#reference-themes}
 
-[I temi](/help/forms/using/themes.md) consentono di formattare i moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il pacchetto [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[I temi](/help/forms/using/themes.md) consentono di formattare i moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, potete ottenere i seguenti temi installando il pacchetto [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * Berile
 * Exec
