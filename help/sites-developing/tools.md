@@ -1,8 +1,8 @@
 ---
 title: Strumenti di verifica e tracciamento
 seo-title: Strumenti di verifica e tracciamento
-description: AEM offre un framework per il test dell’interfaccia utente dei componenti e un meccanismo per il test e il debug dei componenti
-seo-description: AEM offre un framework per il test dell’interfaccia utente dei componenti e un meccanismo per il test e il debug dei componenti
+description: AEM fornisce un framework per il test dell’interfaccia utente dei componenti e un meccanismo per il test e il debug dei componenti
+seo-description: AEM fornisce un framework per il test dell’interfaccia utente dei componenti e un meccanismo per il test e il debug dei componenti
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 translation-type: tm+mt
 source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
 
 AEM fornisce:
 
-* [un framework per il test dell’interfaccia](/help/sites-developing/hobbes.md)del componente.
+* [un framework per il test dell’interfaccia](/help/sites-developing/hobbes.md)utente dei componenti.
 * [un meccanismo di verifica e debug dei componenti](/help/sites-developing/developer-mode.md).
 
 Di seguito sono riportati due strumenti Open Source Testing:
@@ -52,7 +55,7 @@ Un sistema di monitoraggio dei bug che può essere configurato in base alle prop
 
 Anche se non specificamente uno strumento di tracciamento dei bug, i fogli di calcolo vengono spesso utilizzati in modo improprio a questo scopo, in quanto sono facili da capire e la maggior parte degli utenti ha esperienza della loro funzionalità.
 
-Se vengono utilizzati per il tracciamento,
+Se vengono utilizzati per il tracciamento, effettuate le seguenti operazioni:
 
 * dovrebbero essere tenuti semplici.
 * il numero dei singoli fogli di calcolo dovrebbe essere limitato al minimo.
