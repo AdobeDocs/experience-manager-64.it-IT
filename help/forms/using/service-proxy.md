@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 1%
 
 ---
 
@@ -22,23 +25,23 @@ Il proxy di servizio moduli HTML5 è una configurazione per registrare un proxy 
 
 Il proxy di servizio elimina quanto segue:
 
-* Il flusso di lavoro dei moduli HTML5 richiede l’apertura del servizio di invio &quot;/content/xfaforms/submit/default&quot; per gli utenti dei moduli HTML5. Consente di esporre i server AEM a un pubblico più vasto e non intenzionale.
+* Il flusso di lavoro dei moduli HTML5 richiede l’apertura del servizio di invio &quot;/content/xfaforms/submit/default&quot; per gli utenti dei moduli HTML5. Espone AEM server a un pubblico più vasto e non intenzionale.
 * L&#39;URL del servizio è incorporato nel modello runtime del modulo. Non è possibile modificare il percorso dell&#39;URL del servizio.
 * L&#39;invio è un processo in due fasi. Per inviare i dati del modulo, l&#39;invio richiede almeno due viaggi al server. Aumenta quindi il carico sul server.
-* I moduli HTML5 inviano i dati nella richiesta POST invece che nella richiesta PDF. Per i flussi di lavoro che coinvolgono moduli PDF e HTML5, sono necessari due metodi diversi per elaborare gli invii.
+* I moduli HTML5 inviano dati nella richiesta POST invece che nella richiesta PDF. Per i flussi di lavoro che coinvolgono moduli PDF e HTML5, sono necessari due metodi diversi per elaborare gli invii.
 
 ## Topologie {#topologies-br}
 
 I moduli HTML5 possono utilizzare le seguenti topologie per connettersi ai server AEM.
 
-* Topologia in cui i moduli AEM Server o HTML5 inviano dati tramite POST al server.
-* Topologia in cui il server proxy invia i dati POST al server.
+* Topologia in cui AEM moduli Server o HTML5 inviano dati al server tramite POST.
+* Topologia in cui il server proxy invia dati POST al server.
 
 ![Topologie proxy del servizio moduli HTML5](assets/topology.png)
 
 Topologie proxy del servizio moduli HTML5
 
-I moduli HTML5 si connettono ai server AEM per eseguire script sul lato server, servizi Web e invii. Il runtime XFA dei moduli HTML5 utilizza chiamate Ajax al punto finale &quot;/bin/xfaforms/submitaction&quot; con vari parametri per la connessione ai server AEM. I moduli HTML5 collegano i server AEM per eseguire le operazioni seguenti:
+I moduli HTML5 si connettono ai server AEM per eseguire script, servizi Web e invii sul lato server. Il runtime XFA dei moduli HTML5 utilizza chiamate Ajax al punto finale &quot;/bin/xfaforms/submitaction&quot; con vari parametri per connettersi ai server AEM. I moduli HTML5 collegano AEM server per eseguire le operazioni seguenti:
 
 ### Esecuzione di script sul lato server e servizi Web {#execute-server-sided-scripts-and-web-services}
 
@@ -128,8 +131,8 @@ Il proxy del servizio di invio funge da pass-through se l’URL di invio non è 
 
 Il proxy del servizio di invio seleziona una topologia se l’URL di invio è presente nel parametro della richiesta.
 
-* Se i server AEM inviano i dati, il servizio proxy funge da pass-through. Invia la richiesta al punto finale /bin/xfaforms/submitaction e invia la risposta al runtime XFA.
+* Se AEM server inviano i dati, il servizio proxy agisce come un pass-through. Invia la richiesta al punto finale /bin/xfaforms/submitaction e invia la risposta al runtime XFA.
 * Se il proxy pubblica i dati, il servizio proxy trasmette tutti i parametri eccetto submitUrl al punto finale */bin/xfaforms/submitaction* e riceve i byte xml nel flusso di risposte. Quindi, il servizio proxy invia i byte del codice xml dei dati a submitUrl per l&#39;elaborazione.
 
-* Prima di inviare i dati (richiesta POST) a un server, i moduli HTML5 verificano la connettività e la disponibilità del server. Per verificare la connettività e la disponibilità, i moduli HTML inviano al server una richiesta head vuota. Se il server è disponibile, il modulo HTML5 invia dati (richiesta POST) al server. Se il server non è disponibile, viene visualizzato un messaggio di errore *Impossibile connettersi al server,* Il rilevamento anticipato impedisce agli utenti di compilare il modulo in modo semplice. Il servlet proxy gestisce la richiesta dell&#39;intestazione e non genera eccezioni.
+* Prima di inviare dati (richiesta POST) a un server, i moduli HTML5 verificano la connettività e la disponibilità del server. Per verificare la connettività e la disponibilità, i moduli HTML inviano al server una richiesta head vuota. Se il server è disponibile, il modulo HTML5 invia dati (richiesta POST) al server. Se il server non è disponibile, viene visualizzato un messaggio di errore *Impossibile connettersi al server,* Il rilevamento anticipato impedisce agli utenti di compilare il modulo in modo semplice. Il servlet proxy gestisce la richiesta dell&#39;intestazione e non genera eccezioni.
 
