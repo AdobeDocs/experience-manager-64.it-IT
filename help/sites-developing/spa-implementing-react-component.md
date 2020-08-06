@@ -1,8 +1,8 @@
 ---
 title: Implementazione di un componente React per SPA
 seo-title: Implementazione di un componente React per SPA
-description: Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con AEM SPA Editor.
-seo-description: Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con AEM SPA Editor.
+description: In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
+seo-description: In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 2%
 
 ---
 
 
 # Implementazione di un componente React per SPA{#implementing-a-react-component-for-spa}
 
-Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti in AEM per un sito creato utilizzando i framework SPA.
+Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti all&#39;interno AEM per un sito creato utilizzando i framework SPA.
 
-La funzione di authoring SPA offre una soluzione completa per il supporto degli SPA in AEM. Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con AEM SPA Editor.
+La funzione di authoring SPA offre una soluzione completa per supportare gli SPA in AEM. In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
 
 >[!NOTE]
->La funzione Editor applicazione per pagina singola (SPA) richiede AEM 6.4 Service Pack 2 o successivo.
+>La funzione Editor applicazione per pagina singola (SPA) richiede AEM service pack 6.4 2 o successivo.
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
 ## Introduzione {#introduction}
 
-Grazie al contratto semplice e leggero richiesto da AEM e stabilito tra SPA e SPA Editor, prendere un&#39;applicazione Javascript esistente e adattarla per l&#39;utilizzo con SPA in AEM è una questione semplice.
+Grazie al contratto semplice e leggero richiesto da AEM e stabilito tra SPA e SPA Editor, prendere un&#39;applicazione Javascript esistente e adattarla per l&#39;utilizzo con un SPA in AEM è una questione semplice.
 
 Questo articolo illustra l’esempio del componente meteo presente nell’esempio di SPA di We.Retail Journal.
 
@@ -37,7 +40,7 @@ Prima di leggere questo articolo, è necessario avere familiarità con la [strut
 >[!CAUTION]
 >Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
+>Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
 
 ## Componente Meteo {#the-weather-component}
 
@@ -47,7 +50,7 @@ Il componente meteo si trova in alto a sinistra nell&#39;app We.Retail Journal. 
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Quando si creano contenuti dello SPA in SPA Editor, il componente meteo viene visualizzato come qualsiasi altro componente AEM, completo di una barra degli strumenti, ed è modificabile.
+Quando si creano contenuti dell&#39;SPA nell&#39;editor SPA, il componente meteo viene visualizzato come qualsiasi altro componente AEM, completo di una barra degli strumenti ed è modificabile.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
@@ -61,7 +64,7 @@ Il cambiamento è persistente e il componente si aggiorna automaticamente con i 
 
 ### Implementazione dei componenti del tempo {#weather-component-implementation}
 
-La componente meteo è in realtà basata su un componente React disponibile al pubblico, chiamato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
+La componente meteo è in realtà basata su un componente React disponibile al pubblico, denominato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal.
 
 Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’utilizzo del componente React Open Weather.
 
@@ -70,7 +73,7 @@ Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’
 Revisione del codice del componente meteo personalizzato ( `Weather.js`) nell&#39;applicazione We.Retail Journal:
 
 * **Linea 16**: Il widget React Open Weather viene caricato come necessario.
-* **Linea 46**: La `MapTo` funzione collega questo componente React a un componente AEM corrispondente, in modo che possa essere modificato nell’editor SPA.
+* **Linea 46**: La `MapTo` funzione collega questo componente React a un componente AEM corrispondente, in modo che possa essere modificato nell&#39;editor SPA.
 
 * **Linee 22-29**: Il valore `EditConfig` è definito, controllando se la città è stata popolata e definendo il valore se vuoto.
 
