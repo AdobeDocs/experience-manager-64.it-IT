@@ -22,17 +22,17 @@ ht-degree: 1%
 
 Questa pagina fornisce ulteriori dettagli per approfondire e/o ampliare i documenti e i principi coperti dall&#39;elenco di controllo [Gestione dei progetti - Best Practices](/help/managing/best-practices.md).
 
-## AEM - Cosa utilizzerete? {#aem-what-will-you-be-using}
+## AEM - Cosa userete? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
 >Gli elenchi di cui alla presente sottosezione non sono esaustivi, ma sono intesi come introduzione.
 
-### Funzionalità in AEM {#features-within-aem}
+### Funzioni in AEM {#features-within-aem}
 
-Quando implementi AEM (in particolare per la prima volta) dovrai verificare le [funzionalità e i flussi di lavoro di AEM](https://www.adobe.com/it/marketing/experience-manager.html) per verificare quali aree desideri/hai bisogno.
+Durante l&#39;implementazione di AEM (in particolare per la prima volta) dovrete rivedere le [funzionalità e i flussi di lavoro di AEM](https://www.adobe.com/it/marketing/experience-manager.html) per essere certi di quali aree desiderate o necessarie.
 
-Considerate le funzioni di AEM che verranno utilizzate e l&#39;impatto sulla progettazione; ad esempio:
+Considerare le caratteristiche di AEM che si intende utilizzare e l&#39;impatto sulla progettazione; ad esempio:
 
 * [Commerce](/help/sites-administering/ecommerce.md)
 * [Schermi](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
@@ -43,11 +43,11 @@ Considerate le funzioni di AEM che verranno utilizzate e l&#39;impatto sulla pro
 * [Community](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Inoltre, per le diverse versioni di AEM, consultate le Note sulla [versione](/help/release-notes/release-notes.md)per vedere quando sono state aggiunte nuove funzioni.
+Inoltre, per le diverse versioni di AEM, controllate le Note [sulla](/help/release-notes/release-notes.md)versione per vedere quando sono state aggiunte nuove funzioni.
 
 ### Integrations (Integrazioni){#integrations}
 
-AEM può essere integrato con altri prodotti Adobe e/o servizi di terze parti. Questi possono aumentare la potenza e le funzionalità a vostra disposizione.
+AEM può essere integrato con altri prodotti  Adobe e/o servizi di terze parti. Questi possono aumentare la potenza e le funzionalità a vostra disposizione.
 
 Consulta Integrazione [delle](/help/sites-administering/integration.md) soluzioni per ulteriori informazioni.
 
@@ -69,7 +69,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
 >[!NOTE]
 >
->Questi punti sono generici, l’elenco di controllo [Best Practices](/help/managing/best-practices.md) contiene informazioni specifiche relative ad AEM.
+>Questi punti sono generici, l&#39;elenco di controllo [Best Practices](/help/managing/best-practices.md) contiene informazioni specifiche relative alle AEM.
 
 * **Ruoli**
 
@@ -133,7 +133,7 @@ Tali informazioni possono essere definite all&#39;interno di un manuale del prog
 * Le informazioni sono comunicate chiaramente a tutte le persone interessate. Anche se la prassi standard di gestione dei progetti non può essere ripetuta abbastanza spesso da consentire una chiara definizione del ruolo e una buona comunicazione per realizzare o interrompere un progetto.
 * È mantenuta una sola versione di tutte le informazioni oggetto di monitoraggio; ad esempio, tracciamento dei bug, tracciamento dei problemi, ecc.
 
-## Indicatori prestazioni chiave e metriche Target {#key-performance-indicators-and-target-metrics}
+## Indicatori prestazioni chiave e metriche di destinazione {#key-performance-indicators-and-target-metrics}
 
 Le organizzazioni utilizzano indicatori prestazioni chiave (KPI, Key Performance Indicators) per valutare il loro successo nel raggiungimento dei target. Questi indicatori sono valori misurabili che possono essere utilizzati per dimostrare l&#39;efficacia del conseguimento di obiettivi specifici.
 
@@ -151,7 +151,7 @@ Questi indicatori possono essere:
 
 Alcuni indicatori, ma non tutti, possono essere basati sulle metriche di destinazione identificate e definite.
 
-### Metriche Target {#target-metrics}
+### Metriche di destinazione {#target-metrics}
 
 Le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, ovvero una definizione degli obiettivi prestazionali che si desidera raggiungere e che può essere utilizzata per definire i [KPI (Indicatori prestazioni chiave)](#key-performance-indicators-and-target-metrics).
 
@@ -163,7 +163,7 @@ Le metriche vengono utilizzate per definire le misurazioni quantitative per la q
 * &quot;quando io cerco, il sistema *si ferma* &quot; - quali richieste di ricerca stanno influenzando il sistema?
 * &quot;ci vogliono *delle pagine* per scaricare il file&quot; - quali sono i tempi di download accettabili (in condizioni di rete normali)?
 
-Le metriche Target sono definite all’inizio di un progetto per:
+Le metriche di destinazione sono definite all&#39;inizio di un progetto per:
 
 * indicare le dimensioni previste del sito Web che verrà offerto
 * indicare la qualità minima che si desidera ottenere
@@ -194,7 +194,7 @@ Tutte le metriche da misurare saranno in qualche modo influenzate dalla progetta
 
 Pertanto, è necessario definire le metriche di destinazione *prima* di decidere sulla progettazione. Questo consente di ottimizzare la progettazione in base a questi fattori. Una volta sviluppato il progetto, sarà difficile apportare modifiche ai principi di progettazione di base.
 
-Quando create la struttura per il sito Web, seguite la struttura consigliata per i siti Web AEM. Assicuratevi di comprendere i seguenti problemi e/o principi:
+Quando create la struttura per il sito Web, seguite la struttura consigliata per AEM siti Web. Assicuratevi di comprendere i seguenti problemi e/o principi:
 
 * Come strutturare il contenuto del sito Web.
 * Funzionamento di modelli e componenti.
@@ -217,7 +217,7 @@ Per definire o valutare l&#39;infrastruttura, sarà utile definire valori target
 A seconda della situazione e del significato strategico del sito Web, questo vi aiuterà a valutare e scegliere l&#39;infrastruttura:
 
 * numero di server
-* numero di istanze AEM (creazione e pubblicazione)
+* numero di istanze AEM (autore e pubblicazione)
 
 ### Spettacolo {#performance}
 
@@ -279,7 +279,7 @@ I numeri sopra riportati si basano sulle seguenti condizioni:
 
 * misurati al momento della pubblicazione (nessun ambiente di authoring e/o sovraccarico CFC)
 * misurati sul server (nessun sovraccarico di rete)
-* non memorizzato nella cache (nessuna cache di output AEM, nessuna cache Dispatcher)
+* non memorizzato nella cache (nessuna cache di output AEM, nessuna cache del dispatcher)
 * solo per elementi complessi con molte dipendenze (HTML, JS, PDF, ...)
 * nessun altro carico sul sistema
 
@@ -317,7 +317,7 @@ L&#39;impostazione dei target per le richieste di ricerca è, ancora una volta, 
 
 Questi devono essere pianificati e integrati fin dall&#39;inizio del progetto. I meccanismi disponibili per il monitoraggio comprendono:
 
-* **Monitoraggio dei tempi di risposta delle ricerche con AEM request.log**
+* **Monitoraggio dei tempi di risposta della ricerca con AEM request.log**
 
    Anche in questo caso, request.log può essere utilizzato per monitorare i tempi di risposta per le richieste di ricerca; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
 
@@ -359,7 +359,7 @@ Prima di discutere delle metriche correlate, una rapida definizione dei termini:
    |---|---|---|
    | Client | Potenza computazionale del computer dell&#39;utente. | Complessità del layout della pagina. |
    | Rete | Larghezza di banda della rete. | Dimensioni della pagina (codice, immagini e così via). |
-   | Cache Dispatcher | Memoria server del server Web (memoria principale e disco rigido). | Server Web (memoria principale e disco rigido). Numero e dimensione delle pagine memorizzate nella cache. |
+   | Cache del dispatcher | Memoria server del server Web (memoria principale e disco rigido). | Server Web (memoria principale e disco rigido). Numero e dimensione delle pagine memorizzate nella cache. |
    | Cache di output | Memoria server del server AEM (memoria principale e disco rigido). | Numero e dimensione delle pagine nella cache di output, numero di dipendenze per pagina. La cache del dispatcher riduce questo volume. |
    | Server web | Potenza computazionale del server Web. | Quantità di richieste. La cache abbassa questo volume. |
    | Modello | Potenza computazionale del server Web. | Complessità dei modelli. |
@@ -377,7 +377,7 @@ Tuttavia, è preferibile disporre di un set limitato di metriche di base precise
 
 La sicurezza è fondamentale e una sfida in continua crescita. Essa ***deve*** essere considerata e pianificata fin dalle prime fasi del progetto.
 
-La procedura [dell&#39;elenco](/help/sites-administering/security-checklist.md) di controllo della sicurezza dettagliata da seguire per garantire che l&#39;installazione di AEM sia sicura quando distribuita. Altri aspetti di sicurezza sono trattati in [Sicurezza (durante lo sviluppo)](/help/sites-developing/security.md) e Amministrazione [utente e sicurezza](/help/sites-administering/security.md).
+La procedura [di elenco](/help/sites-administering/security-checklist.md) di controllo di sicurezza dettagliata da eseguire per garantire che l&#39;installazione AEM sia sicura al momento della distribuzione. Altri aspetti di sicurezza sono trattati in [Sicurezza (durante lo sviluppo)](/help/sites-developing/security.md) e Amministrazione [utente e sicurezza](/help/sites-administering/security.md).
 
 ## Attività parallele e iterative {#parallel-and-iterative-tasks}
 
@@ -393,7 +393,7 @@ La procedura [dell&#39;elenco](/help/sites-administering/security-checklist.md) 
 
 
 
-Per una nuova implementazione di un progetto AEM standard dovrete considerare attività quali:
+Per una nuova implementazione di un progetto AEM standard è necessario considerare attività quali:
 
 * Consegna dal processo di vendita.
 * Implementazione dell&#39;applicazione del cliente (**Sviluppo**).
@@ -427,7 +427,7 @@ Alcuni punti da sottolineare per ciascuna categoria sono:
       * Il primo risultato di sprint è la prima distribuzione nell&#39;ambiente di test.
       * Ogni sprint ha un risultato scorrevole.
       * Ogni sprint riceve una conclusione da parte del cliente (minimo di test strutturato con feedback).
-   * Pianificate l&#39;eventuale aggiornamento della versione disponibile di AEM durante il progetto.
+   * Pianificare l&#39;eventuale aggiornamento della versione AEM disponibile durante il progetto.
    * Pianificare i test e l&#39;ottimizzazione durante gli spruzzi.
    * Pianificare le fasi di stabilizzazione e ottimizzazione.
    * Crea un registro di elementi da pianificare per ulteriori rilasci.
@@ -479,7 +479,7 @@ L&#39;elenco seguente mostra approssimazioni standard e interrelazioni di sforzo
 
 >[!CAUTION]
 >
->Tali cifre possono essere utilizzate solo per le stime iniziali. Uno sviluppatore esperto di AEM deve eseguire un’analisi dettagliata.
+>Tali cifre possono essere utilizzate solo per le stime iniziali. Uno sviluppatore AEM esperto deve eseguire un&#39;analisi dettagliata.
 
 | Fase | Sforzo |
 |---|---|
@@ -495,7 +495,7 @@ Una pianificazione dettagliata può quindi collegare le risorse disponibili o ne
 
 ## Architettura di riferimento {#reference-architecture}
 
-L’architettura di riferimento è stata creata per fornire una soluzione modello per l’architettura AEM. L&#39;architettura di riferimento risolve i problemi più comuni riscontrati per i sistemi aziendali, tra cui il ridimensionamento, l&#39;affidabilità e la sicurezza.
+L&#39;architettura di riferimento è data per fornire una soluzione modello per l&#39;architettura AEM. L&#39;architettura di riferimento risolve i problemi più comuni riscontrati per i sistemi aziendali, tra cui il ridimensionamento, l&#39;affidabilità e la sicurezza.
 
 È necessario definire le metriche del sito seguenti:
 
@@ -527,7 +527,7 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM offre una serie di meccanismi che consentono di monitorare, testare, esaminare ed eseguire il debug dell’applicazione; compresi:</p>
+   <td><p>AEM fornisce una serie di meccanismi che consentono di monitorare, testare, esaminare ed eseguire il debug dell'applicazione; compresi:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modalità Sviluppatore</a></li>
      <li>Console <a href="/help/sites-developing/hobbes.md">di prova</a></li>
@@ -558,11 +558,11 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse è un IDE open source, composto da vari progetti. Si tratta della creazione di una piattaforma di sviluppo aperta, composta da framework estensibili, strumenti e tempi di esecuzione per la creazione, l'implementazione e la gestione del software nel corso del ciclo di vita.</p> <p>Per ulteriori informazioni, consultate <a href="/help/sites-developing/howto-projects-eclipse.md">Come sviluppare progetti AEM con Eclipse</a> .</p> </td>
+   <td><p>Eclipse è un IDE open source, composto da vari progetti. Si tratta della creazione di una piattaforma di sviluppo aperta, composta da framework estensibili, strumenti e tempi di esecuzione per la creazione, l'implementazione e la gestione del software nel corso del ciclo di vita.</p> <p>Per ulteriori informazioni, vedere <a href="/help/sites-developing/howto-projects-eclipse.md">Come sviluppare progetti AEM utilizzando Eclipse</a> .</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionale (e quindi soggetto a costi di licenza) che offre una vasta gamma di funzioni. </p> <p>Per ulteriori informazioni, consultate <a href="/help/sites-developing/ht-intellij.md">Come sviluppare progetti AEM con IntelliJ IDEA</a> .</p> </td>
+   <td><p>Un IDE professionale (e quindi soggetto a costi di licenza) che offre una vasta gamma di funzioni. </p> <p>Per ulteriori informazioni, consulta <a href="/help/sites-developing/ht-intellij.md">Come sviluppare progetti AEM utilizzando IntelliJ IDEA</a> .</p> </td>
   </tr>
   <tr>
    <td>Paradiso</td>
@@ -579,9 +579,9 @@ Inoltre, sono di particolare interesse le seguenti sezioni:
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Monitoraggio e manutenzione dell’istanza](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Best practice  {#best-practices}
+### Best practice   {#best-practices}
 
-Adobe offre ulteriori procedure ottimali per tutte le fasi e i tipi di pubblico:
+ Adobe offre ulteriori Best practice per tutte le fasi e per il pubblico:
 
 * [Distribuzione](/help/sites-deploying/best-practices.md)
 * [Authoring  ](/help/sites-authoring/best-practices.md)
