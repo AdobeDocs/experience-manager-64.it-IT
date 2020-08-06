@@ -1,8 +1,8 @@
 ---
 title: Modelli di pagina - Statici
 seo-title: Modelli di pagina - Statici
-description: Un modello viene utilizzato per creare una pagina e definisce i componenti che possono essere utilizzati nell’ambito selezionato
-seo-description: Un modello viene utilizzato per creare una pagina e definisce i componenti che possono essere utilizzati nell’ambito selezionato
+description: Un modello viene utilizzato per creare una pagina e definisce i componenti che possono essere utilizzati all’interno dell’ambito selezionato
+seo-description: Un modello viene utilizzato per creare una pagina e definisce i componenti che possono essere utilizzati all’interno dell’ambito selezionato
 uuid: 86a8ecf8-e0c5-422e-9227-7a24bb5774e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +25,7 @@ Un modello viene utilizzato per creare una pagina e definisce quali componenti p
 Ogni modello vi presenta una selezione di componenti disponibili per l’uso.
 
 * i modelli sono composti di [componenti](/help/sites-developing/components.md);
-* I componenti utilizzano e consentono l’accesso ai widget e questi vengono utilizzati per il rendering del contenuto.
+* I componenti utilizzano e consentono l&#39;accesso ai Widget e questi vengono utilizzati per il rendering del contenuto.
 
 >[!NOTE]
 >
@@ -99,7 +102,7 @@ Un modello è un nodo di tipo cq:Template con le seguenti proprietà e nodi seco
 
 Un modello è la base di una pagina.
 
-Per creare una pagina, il modello deve essere copiato (struttura ad albero nodo) nella posizione corrispondente nella struttura ad albero del sito: `/apps/<myapp>/template/<mytemplate>`questo accade se una pagina viene creata utilizzando la scheda **Siti** Web.
+Per creare una pagina, il modello deve essere copiato (struttura ad albero nodo) nella posizione corrispondente nella struttura ad albero del sito: `/apps/<myapp>/template/<mytemplate>`questo è ciò che accade se una pagina viene creata utilizzando la scheda **Siti Web** .
 
 Questa azione di copia assegna alla pagina anche il contenuto iniziale (in genere Contenuto di livello principale) e la proprietà sling:resourceType, il percorso del componente della pagina utilizzato per eseguire il rendering della pagina (tutto nel nodo figlio jcr:content).
 
@@ -131,7 +134,7 @@ Questo componente viene utilizzato per definire la struttura e la progettazione 
 
 ### Contenuto prodotto da un modello {#the-content-produced-by-a-template}
 
-I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato in precedenza, una pagina è un tipo speciale di componente). Ogni pagina AEM ha un nodo strutturato `jcr:content`. Questo:
+I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato in precedenza, una pagina è un tipo speciale di componente). Ogni pagina AEM ha un nodo strutturato `jcr:content`. Tale comportamento:
 
 * è di tipo cq:PageContent
 * è un tipo di nodo strutturato che contiene una definizione del contenuto definita
@@ -139,9 +142,9 @@ I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato 
 
 ### Modelli predefiniti {#default-templates}
 
-In AEM sono disponibili diversi modelli predefiniti. In alcuni casi, potrebbe essere utile utilizzare i modelli così come sono. In tal caso, è necessario assicurarsi che il modello sia disponibile per il sito Web.
+AEM viene fornito con una serie di modelli predefiniti disponibili. In alcuni casi, potrebbe essere utile utilizzare i modelli così come sono. In tal caso, è necessario assicurarsi che il modello sia disponibile per il sito Web.
 
-Ad esempio, AEM viene fornito con diversi modelli, tra cui una pagina di contenuto e una home page.
+Ad esempio, AEM sono disponibili diversi modelli, tra cui una pagina di contenuto e una home page.
 
 | **Titolo** | **Componente** | **Posizione** | **Scopo** |
 |---|---|---|---|
@@ -172,7 +175,7 @@ Quando gli stili vengono definiti nell’interfaccia utente in modalità [](/hel
 
 >[!CAUTION]
 >
->Adobe consiglia di applicare le progettazioni solo tramite la modalità [](/help/sites-authoring/default-components-designmode.md)Progettazione.
+> Adobe consiglia di applicare le progettazioni solo tramite la modalità [](/help/sites-authoring/default-components-designmode.md)Progettazione.
 >
 >Ad esempio, la modifica dei progetti in CRX DE non è consigliata e l’applicazione di tali progetti può variare da un comportamento all’altro.
 
@@ -180,13 +183,13 @@ Se le progettazioni vengono applicate solo in modalità Progettazione, non sono 
 
 >[!NOTE]
 >
->Questa sezione descrive il comportamento per la risoluzione dei percorsi di progettazione a partire da AEM 6.4.2.0.
+>In questa sezione viene descritto il comportamento per la risoluzione dei percorsi di progettazione AEM 6.4.2.0.
 
 ### Risoluzione percorso di progettazione {#design-path-resolution}
 
-Quando si esegue il rendering del contenuto basato su un modello statico, AEM tenterà di applicare al contenuto gli stili e la struttura più rilevanti in base a un passaggio della gerarchia dei contenuti.
+Quando eseguite il rendering del contenuto basato su un modello statico, AEM tenterà di applicare al contenuto gli stili e la struttura più rilevanti in base a un passaggio della gerarchia dei contenuti.
 
-AEM determina lo stile più rilevante per un nodo di contenuto nel seguente ordine:
+AEM determina lo stile più rilevante per un nodo di contenuto nell&#39;ordine seguente:
 
 * Se è presente una progettazione per il percorso completo ed esatto del nodo di contenuto (come quando la progettazione viene definita in modalità Progettazione), utilizzate tale progettazione.
 * Se è presente una progettazione per il nodo di contenuto dell&#39;elemento padre, utilizzatela.
@@ -206,7 +209,7 @@ Considerate la struttura di contenuto semplice come segue, in cui una progettazi
 
 `/root/branch/leaf`
 
-Nella tabella seguente è illustrato come AEM sceglierà una progettazione.
+Nella tabella seguente viene descritto come AEM scegliere una progettazione.
 
 <table> 
  <tbody> 
@@ -267,11 +270,11 @@ Nella tabella seguente è illustrato come AEM sceglierà una progettazione.
 
 ## Sviluppo di modelli di pagina {#developing-page-templates}
 
-I modelli di pagina AEM sono semplicemente modelli utilizzati per creare nuove pagine. Possono contenere il contenuto iniziale, o il numero di contenuto, necessario, il cui ruolo consiste nel creare le strutture di nodi iniziali corrette, con le proprietà richieste (principalmente sling:resourceType) impostate per consentire la modifica e il rendering.
+AEM modelli di pagina sono semplicemente modelli utilizzati per creare nuove pagine. Possono contenere il contenuto iniziale, o il numero di contenuto, necessario, il cui ruolo consiste nel creare le strutture di nodi iniziali corrette, con le proprietà richieste (principalmente sling:resourceType) impostate per consentire la modifica e il rendering.
 
 ### Creazione di un nuovo modello (basato su un modello esistente) {#creating-a-new-template-based-on-an-existing-template}
 
-È inutile dire che un nuovo modello può essere creato completamente da zero, ma spesso un modello esistente verrà copiato e aggiornato per risparmiare tempo e fatica. Ad esempio, i modelli all’interno di Geometrixx possono essere utilizzati per iniziare.
+È inutile dire che un nuovo modello può essere creato completamente da zero, ma spesso un modello esistente verrà copiato e aggiornato per risparmiare tempo e fatica. Ad esempio, i modelli all&#39;interno di Geometrixx possono essere utilizzati per iniziare a utilizzarli.
 
 Per creare un nuovo modello basato su un modello esistente:
 
@@ -309,15 +312,15 @@ Per creare un nuovo modello basato su un modello esistente:
 
 >[!NOTE]
 La libreria client dell&#39;editor presuppone la presenza dello `cq.shared` spazio dei nomi nelle pagine di contenuto, e se è assente, `Uncaught TypeError: Cannot read property 'shared' of undefined` si verificherà l&#39;errore JavaScript.
-Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio nomi.
+Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio dei nomi.
 Per ulteriori informazioni, consultate [Utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client.
 
 ## Come rendere disponibile un modello esistente {#making-an-existing-template-available}
 
 Questo esempio illustra come consentire l&#39;utilizzo di un modello per determinati percorsi di contenuto. I modelli disponibili per l’autore della pagina durante la creazione di nuove pagine sono determinati dalla logica definita in Disponibilità [](/help/sites-developing/templates.md#template-availability)modello.
 
-1. In CRXDE Lite, passate al modello da usare per la pagina, ad esempio il modello Newsletter.
-1. Modificate la `allowedPaths` proprietà e altre proprietà utilizzate per la disponibilità del [modello](/help/sites-developing/templates.md#template-availability). Ad esempio, `allowedPaths`: Questo modello `/content/geometrixx-outdoors/[^/]+(/.*)?` è consentito in qualsiasi percorso in `/content/geometrixx-outdoors`.
+1. In CRXDE Lite , andate al modello da usare per la pagina, ad esempio il modello Newsletter.
+1. Modificate la `allowedPaths` proprietà e altre proprietà utilizzate per la disponibilità del [modello](/help/sites-developing/templates.md#template-availability). Ad esempio, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa che questo modello è consentito in qualsiasi percorso in `/content/geometrixx-outdoors`.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
