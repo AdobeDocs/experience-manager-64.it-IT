@@ -24,22 +24,22 @@ Come parte dell&#39; [integrazione di AEM e  Adobe Target](/help/sites-administe
 
 ## Registrazione con  Adobe Target {#registering-with-adobe-target}
 
-Per integrare AEM con  Adobe Target, è necessario disporre di un account  Adobe Target valido. Questo account deve avere un **approver **autorizzazioni di livello minimo. Quando vi registrate con  Adobe Target, ricevete un codice cliente. Per collegare AEM a  Adobe Target, è necessario disporre del codice client e del nome di login e della password  Adobe Target.
+Per integrare AEM con  Adobe Target, è necessario disporre di un account  Adobe Target valido. Questo account deve avere un **approver **autorizzazioni di livello minimo. Quando vi registrate  Adobe Target, ricevete un codice cliente. Per connettersi AEM a  Adobe Target, è necessario disporre del codice client e del nome di accesso e della password  Adobe Target.
 
-Il Codice client identifica l&#39;account cliente del Adobe Target  quando si chiama il server del Adobe Target .
+Il Codice client identifica l&#39;account cliente Adobe Target  quando si chiama il server Adobe Target .
 
 >[!NOTE]
 >
->Per poter utilizzare l&#39;integrazione, l&#39;account deve essere abilitato anche dal team Target.
+>Per poter utilizzare l&#39;integrazione, l&#39;account deve essere abilitato anche dal team di Target.
 >
 >
->In caso contrario, contatta [Adobe Target dell&#39;Assistenza](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html)clienti.
+>In caso contrario, contatta [&#39;Assistenza](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html)clienti Adobe Target.
 
-## Abilitazione di Target Replication Agent {#enabling-the-target-replication-agent}
+## Abilitazione dell&#39;agente di replica di Target {#enabling-the-target-replication-agent}
 
-L&#39;agente [di](/help/sites-deploying/replication.md) replica Test e Target deve essere abilitato nell&#39;istanza di creazione. L&#39;agente di replica non è abilitato per impostazione predefinita se per l&#39;installazione di AEM è stata utilizzata la modalità di esecuzione [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) . Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, vedere l&#39; [elenco](/help/sites-administering/security-checklist.md)di controllo della sicurezza.
+L&#39;agente [di](/help/sites-deploying/replication.md) replica Test e Target deve essere abilitato nell&#39;istanza di creazione. Questo agente di replica non è abilitato per impostazione predefinita se per l&#39;installazione dei AEM è stata utilizzata la modalità di esecuzione [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) . Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, vedere l&#39; [elenco](/help/sites-administering/security-checklist.md)di controllo della sicurezza.
 
-1. Nella home page di AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Replica**.
+1. Nella home page AEM, fare clic o toccare **Strumenti** > **Distribuzione** > **Replica**.
 1. Tocca o fai clic su **Agenti sull&#39;autore**.
 1. Tocca o fai clic sull&#39;agente di replica **Test e Target (test e target)** , quindi tocca o fai clic su **Modifica**.
 1. Selezionate l&#39;opzione Attivato, quindi fate clic o toccate **OK**.
@@ -64,11 +64,11 @@ Il nodo **cq:ActivitySettings** in jcr:content dell&#39;attività è protetto da
 
 Queste impostazioni assicurano che gli utenti normali non abbiano accesso alle proprietà del nodo. Utilizzate gli stessi ACL per l&#39;autore e la pubblicazione. Per ulteriori informazioni, consulta Amministrazione [utente e sicurezza](/help/sites-administering/security.md) .
 
-## Configurazione di AEM externalizer {#configuring-the-aem-externalizer}
+## Configurazione dell&#39;esternalizzatore AEM {#configuring-the-aem-externalizer}
 
-Quando modificate un&#39;attività in  Adobe Target, l&#39;URL punta a **localhost** a meno che non cambiate l&#39;URL nel nodo di creazione di AEM.
+Quando modificate un&#39;attività in  Adobe Target, l&#39;URL punta a **localhost** a meno che non cambiate l&#39;URL sul nodo di creazione AEM.
 
-Per configurare l’esternalizzatore AEM:
+Per configurare l&#39;esternalizzatore AEM:
 
 1. Andate alla console Web OSGi all&#39;indirizzo **https://&lt;server>:&lt;porta>/system/console/configMgr.**
 1. Trova l’Externalizer di collegamento CQ **** Day e immetti il dominio per il nodo dell’autore.
