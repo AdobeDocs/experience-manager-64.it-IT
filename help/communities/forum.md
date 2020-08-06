@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1056'
+ht-degree: 0%
 
 ---
 
@@ -35,13 +38,13 @@ Questa sezione della documentazione descrive
 
 ## Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
-Per aggiungere un `Forum` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Forum` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Forum`
 
 Trascinala nella stessa posizione di una pagina in cui dovrebbe essere visualizzato il forum.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](essentials-forum.md#essentials-for-client-side) richieste, viene visualizzato il `Forum`componente:
 
@@ -61,7 +64,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per gli
 
 * **[!UICONTROL Moderato]** Se selezionato, la pubblicazione di argomenti e commenti deve essere approvata prima che vengano visualizzati in un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Chiuso]** Se selezionato, il forum è chiuso ai nuovi argomenti e commenti. Il valore predefinito è deselezionato.
+* **[!UICONTROL Chiuso]** Se questa opzione è attivata, il forum è chiuso ai nuovi argomenti e commenti. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Editor]** Rich Text Se questa opzione è selezionata, è possibile immettere commenti e argomenti con la marcatura. Il valore predefinito è deselezionato.
 
@@ -75,11 +78,13 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per gli
 
 * **[!UICONTROL Consenti contenuti]** contenuti contenuti contenuti [contenuti se questa opzione è selezionata, l’idea può essere identificata come contenuto](featured.md)disponibile. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [l’](email.md)e-mail. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](email.md)e-mail. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Dimensione]** massima file pertinente solo se `Allow File Uploads` è selezionata. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+* **[!UICONTROL Dimensione]** massima file rilevante solo se 
+`Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
-* **[!UICONTROL Tipi]** di file consentiti Pertinenti solo se `Allow File Uploads` è selezionata. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+* **[!UICONTROL Tipi]** di file consentiti rilevanti solo se 
+`Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Dimensione]** massima file immagine pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Numero massimo di byte di cui può disporre un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
@@ -121,13 +126,14 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Impostazioni]** , sono limitati in base agli spazi dei nomi selezionati.
 
-* **[!UICONTROL Spazi dei nomi consentiti]** Rilevanti se `Allow Tagging` è selezionato nella scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+* **[!UICONTROL Spazi dei nomi consentiti]** Rilevanti se `Allow Tagging` è selezionato nella scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Il valore predefinito è **-** 1 (nessun limite).
+* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Il valore predefinito è 
+**-** 1 (nessun limite).
 
 ### Scheda Traduzione {#translation-tab}
 
-Nella scheda **[!UICONTROL Traduzione]** , se la traduzione è abilitata per il sito community, la traduzione può essere impostata per tradurre l&#39;intero argomento o i post selezionati.
+Nella scheda **[!UICONTROL Traduzione]** , se la traduzione è abilitata per il sito della community, la traduzione può essere impostata per tradurre l&#39;intero argomento o i post selezionati.
 
 * **[!UICONTROL Traduci tutto]** Se questa opzione è selezionata, il thread del forum viene tradotto nella lingua preferita dell&#39;utente. Il valore predefinito è deselezionato.
 
@@ -135,11 +141,14 @@ Nella scheda **[!UICONTROL Traduzione]** , se la traduzione è abilitata per il 
 
 Nella scheda **[!UICONTROL Impostazioni]** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
-* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Default is `Newest`.
+* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Il valore predefinito è 
+`Newest`.
 
-* **[!UICONTROL Seleziona Opzioni ora per l&#39;ordinamento]** pull in basso di Analytics per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+* **[!UICONTROL Seleziona le opzioni di ora per l&#39;ordinamento]** pull di Analytics per selezionare una delle 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
 
 ## Informazioni aggiuntive {#additional-information}
 
