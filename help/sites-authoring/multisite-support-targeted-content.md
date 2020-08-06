@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +57,7 @@ Un sito o una Live Copy collegano a un’area che contiene le attività che devo
 >
 >* Quando utilizzi il rollout o le Live Copy è richiesta una licenza MSM.
 >* Quando utilizzi la sincronizzazione con Adobe Target è richiesta la licenza per Adobe Target.
+
 >
 
 
@@ -246,6 +250,7 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >
 >* Puoi sospendere o scollegare solo le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuove** esperienze e offerte locali per l’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
+
 >
 
 
@@ -260,6 +265,7 @@ Sospendere o scollegare ereditarietà di contenuti di destinazione in un’attiv
 
    1. Seleziona un elemento dell’attività, come il pubblico. AEM mostra automaticamente la casella di conferma Sospendi la Live Copy. (Puoi sospendere la Live Copy toccando o facendo clic su un elemento in tutto il processo di Targeting.)
    1. Seleziona **Stacca la Live Copy** dal menu a discesa nella barra degli strumenti.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
 1. Tap or click **Suspend** to suspend the activity. Le attività sospese sono contrassegnate in rosso.
