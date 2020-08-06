@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Il globale dichiara anche la libreria [](/help/sites-developing/taglib.md#sling-
 
 ### <ui:includeClientLib> {#ui-includeclientlib}
 
-Il `<ui:includeClientLib>` tag Include una libreria client AEM html, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nel jsp. Questo tag è un wrapper per comodità intorno all&#39;interfaccia ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` del servizio.
+Il `<ui:includeClientLib>` tag Include una libreria client HTML AEM, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nel jsp. Questo tag è un wrapper per comodità intorno all&#39;interfaccia ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` del servizio.
 
 Ha i seguenti attributi:
 
@@ -45,11 +48,11 @@ Ha i seguenti attributi:
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**tema** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (CSS e JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
+**tema** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (sia CSS che JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie JavaScript per le categorie indicate.
+**js** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie Javascript per le categorie indicate.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
@@ -57,7 +60,7 @@ Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclud
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**temed** - È necessario includere un flag che indica solo le librerie a tema o non a tema. Se omesso, entrambi i set saranno inclusi. Applicabile solo a JS o CSS puri (non per categorie o temi inclusi).
+**temed** - È necessario includere un flag che indica solo le librerie a tema o non a tema. Se omesso, entrambi i set saranno inclusi. Applicabile solo a JS o CSS puri (non per le categorie o i temi inclusi).
 
 Il `<ui:includeClientLib>` tag può essere usato come segue in un jsp:
 
@@ -89,7 +92,7 @@ Per utilizzare la libreria di tag CQ nello script, lo script deve iniziare con i
 >
 >Quando il `/libs/foundation/global.jsp` file viene incluso nello script, la funzione taglib viene dichiarata automaticamente.
 
-Quando sviluppate lo script jsp di un componente AEM, si consiglia di includere il seguente codice nella parte superiore dello script:
+Quando si sviluppa lo script jsp di un componente AEM, si consiglia di includere il seguente codice nella parte superiore dello script:
 
 ```xml
 <%@include file="/libs/foundation/global.jsp"%>
@@ -169,9 +172,9 @@ Ha i seguenti attributi:
 
 * **pagina** - le impostazioni internazionali sono estratte dalla lingua della pagina o della risorsa corrente, se disponibile, altrimenti dall&#39; `language` attributo, se disponibile, altrimenti dalle impostazioni internazionali predefinite del server.
 
-* **request** - l&#39;impostazione internazionale viene presa dalla lingua richiesta ( `request.getLocale()`).
+* **request** - l&#39;impostazione internazionale viene presa dalle impostazioni internazionali della richiesta ( `request.getLocale()`).
 
-* **auto** - le impostazioni internazionali sono estratte dall&#39; `language` attributo, se disponibile, altrimenti dalla lingua della pagina o risorsa corrente, se disponibile, altrimenti dalla richiesta.
+* **auto** - le impostazioni internazionali sono estratte dall&#39; `language` attributo, se disponibile, altrimenti dalla lingua della pagina o della risorsa corrente, se disponibile, altrimenti dalla richiesta.
 
 Se l&#39; `source` attributo non è impostato:
 
@@ -249,16 +252,16 @@ Utilizzare `<%@ include file="myScript.jsp" %>` o `<cq:include script="myScript.
 
 Dovrebbe usare `<cq:include>` o `<sling:include>`?
 
-* Nello sviluppo di componenti AEM, Adobe consiglia di utilizzare `<cq:include>`.
+* Durante lo sviluppo AEM componenti,  Adobe consiglia di utilizzare `<cq:include>`.
 * `<cq:include>` consente di includere direttamente i file di script in base al nome quando si utilizza l&#39;attributo di script. Questo prende in considerazione l&#39;ereditarietà di componenti e tipi di risorse ed è spesso più semplice rispetto alla rigorosa conformità alla risoluzione dello script di Sling utilizzando selettori ed estensioni.
 
 ### <cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` è stato dichiarato obsoleto a partire da AEM 5.6. [ Utilizzare `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) invece.
+>`<cq:includeClientLib>` è stato dichiarato obsoleto a partire dal AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) dovrebbe essere utilizzato al posto.
 
-Il `<cq:includeClientLib>` tag Include una libreria client AEM html, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nel jsp. Questo tag è un wrapper per comodità intorno all&#39;interfaccia `com.day.cq.widget.HtmlLibraryManager` del servizio.
+Il `<cq:includeClientLib>` tag Include una libreria client HTML AEM, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nel jsp. Questo tag è un wrapper per comodità intorno all&#39;interfaccia `com.day.cq.widget.HtmlLibraryManager` del servizio.
 
 Ha i seguenti attributi:
 
@@ -266,11 +269,11 @@ Ha i seguenti attributi:
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**tema** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (CSS e JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
+**tema** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie correlate ai temi (sia CSS che JS) per le categorie indicate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie JavaScript per le categorie indicate.
+**js** - Elenco di categorie di lib client separate da virgole. Questo includerà tutte le librerie Javascript per le categorie indicate.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
@@ -278,7 +281,7 @@ Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**temed** - È necessario includere un flag che indica solo le librerie a tema o non a tema. Se omesso, entrambi i set saranno inclusi. Applicabile solo a JS o CSS puri (non per categorie o temi inclusi).
+**temed** - È necessario includere un flag che indica solo le librerie a tema o non a tema. Se omesso, entrambi i set saranno inclusi. Applicabile solo a JS o CSS puri (non per le categorie o i temi inclusi).
 
 Il `<cq:includeClientLib>` tag può essere usato come segue in un jsp:
 
@@ -326,7 +329,7 @@ Il `<cq:defineObjects>` tag espone i seguenti oggetti di script, utilizzati rego
 
 **editContext**
 
-* l’oggetto edit context del componente AEM (com.day.cq.wcm.api.components.EditContext interface).
+* l’oggetto contesto di modifica del componente AEM (interfaccia com.day.cq.wcm.api.components.EditContext).
 
 **pageManager**
 
@@ -496,7 +499,7 @@ Esempio:
 <a href="<cq:requestURL><cq:removeParam name="language"/></cq:requestURL>">remove filter</a>
 ```
 
-## Libreria tag Sling {#sling-tag-library}
+## Libreria di tag Sling {#sling-tag-library}
 
 La libreria di tag Sling contiene utili funzioni Sling.
 
@@ -593,7 +596,7 @@ Il `<sling:defineObjects>` tag espone i seguenti oggetti di script, utilizzati r
 
 * L&#39;oggetto ResourceResolver corrente. È lo stesso di slingRequest.getResourceResolver()
 
- &quot;merge_preserve&quot;.**sling**
+.**sling**
 
 * Un oggetto SlingScriptHelper contenente metodi comodi per gli script, principalmente sling.include(&#39;/some/other/resource&#39;) per includere le risposte di altre risorse all&#39;interno di questa risposta (ad esempio per recuperare i servizi OSGi disponibili in Sling (notazione classe a seconda del linguaggio di script) e sling.getService(foo.bar.Service.class).
 
