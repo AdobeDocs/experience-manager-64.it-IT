@@ -1,8 +1,8 @@
 ---
 title: Modelli per lettere di riferimento
 seo-title: Modelli per lettere di riferimento
-description: 'In AEM Forms sono disponibili modelli per il layout delle lettere per la gestione della corrispondenza da utilizzare per creare rapidamente le lettere. '
-seo-description: 'In AEM Forms sono disponibili modelli per il layout delle lettere per la gestione della corrispondenza da utilizzare per creare rapidamente le lettere. '
+description: ' AEM Forms offre modelli di layout per lettere per la gestione della corrispondenza che consentono di creare rapidamente le lettere. '
+seo-description: ' AEM Forms offre modelli di layout per lettere per la gestione della corrispondenza che consentono di creare rapidamente le lettere. '
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree target&quot; vuote per il posizionamento del contenuto.
 
-La gestione della corrispondenza fornisce modelli di lettera nel pacchetto AEM Forms [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Per installare un pacchetto, consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md). È possibile personalizzare i modelli in Designer in base alle esigenze aziendali e di branding. Il pacchetto include i seguenti modelli:
+La gestione della corrispondenza fornisce modelli di lettera nel  pacchetto AEM Forms [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Per installare un pacchetto, consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md). È possibile personalizzare i modelli in Designer in base alle esigenze aziendali e di branding. Il pacchetto include i seguenti modelli:
 
 * Classica
 * Classic Simple
@@ -69,7 +72,7 @@ Anteprima PDF di una lettera creata utilizzando il modello Bilanciato a sinistra
 
 ## Equilibrato a destra {#balanced-right}
 
-Il modello Destra bilanciata contiene il logo della società a sinistra e consente di inserire l&#39;indirizzo del destinatario sulla lettera stessa. Il modello Destra bilanciata include anche un piè di pagina che si ripete quando la lettera contiene più pagine.
+Il modello Destra bilanciata include il logo della società a sinistra e lo spazio per l&#39;immissione dell&#39;indirizzo del destinatario sulla lettera stessa. Il modello Destra bilanciata include anche un piè di pagina che si ripete quando la lettera contiene più pagine.
 
 ![bilanciato](assets/balancedright.png)
 
@@ -93,7 +96,7 @@ Anteprima PDF di una lettera creata utilizzando il modello Visual Top
 
 ## Visual Top - Classic {#visual-top-classic}
 
-Il modello Visual Top - Classic ha un&#39;intestazione sulla pagina con il logo della società. Il modello Visual Top - Classic dispone di un campo per l&#39;immissione di un oggetto ma nessun piè di pagina.
+Il modello Visual Top - Classic ha un&#39;intestazione nella parte superiore della pagina con il logo della società. Il modello Visual Top - Classic dispone di un campo per l&#39;immissione di un oggetto ma nessun piè di pagina.
 
 ![visaltopclassico](assets/visualtopclassic.png)
 
