@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 0%
 
 ---
 
@@ -26,10 +29,10 @@ ClientContext rappresenta una raccolta di dati utente assemblata in modo dinamic
 ClientContext è costituito principalmente dai seguenti aspetti:
 
 * L&#39;archivio delle sessioni, che contiene i dati utente.
-* Interfaccia utente che visualizza i dati utente e fornisce strumenti per simulare l’esperienza utente.
+* Interfaccia utente che visualizza i dati utente e fornisce gli strumenti per simulare l&#39;esperienza utente.
 * Un&#39;API [](/help/sites-developing/ccjsapi.md) javascript per interagire con gli store di sessioni.
 
-Per creare un archivio di sessioni standalone e aggiungerlo a ClientContext oppure creare uno store di sessioni associato a un componente Context Store. AEM consente di installare diversi componenti Context Store che potete utilizzare immediatamente. Potete utilizzare questi componenti come base per i componenti.
+Per creare un archivio di sessioni standalone e aggiungerlo a ClientContext oppure creare uno store di sessioni associato a un componente Context Store. AEM installa diversi componenti Context Store che puoi utilizzare immediatamente. Potete utilizzare questi componenti come base per i componenti.
 
 Per informazioni sull&#39;apertura di ClientContext, sulla configurazione delle informazioni visualizzate e sulla simulazione dell&#39;esperienza utente, vedete ClientContext [](/help/sites-administering/client-context.md).
 
@@ -68,7 +71,7 @@ Un archivio delle sessioni può essere mantenuto nelle sessioni del browser, opp
 
 ### Componenti Context Store {#context-store-components}
 
-Un componente per l’archivio di contesto è un componente AEM che può essere aggiunto a ClientContext. In genere, i componenti dell&#39;archivio di contesto visualizzano i dati provenienti da uno store di sessioni a cui sono associati. Tuttavia, le informazioni visualizzate dai componenti dell&#39;archivio di contesto non sono limitate ai dati dell&#39;archivio di sessione.
+Un componente dell&#39;archivio di contesto è un componente AEM che può essere aggiunto a ClientContext. In genere, i componenti dell&#39;archivio di contesto visualizzano i dati provenienti da uno store di sessioni a cui sono associati. Tuttavia, le informazioni visualizzate dai componenti dell&#39;archivio di contesto non sono limitate ai dati dell&#39;archivio di sessione.
 
 I componenti dell&#39;archivio di contesto possono includere i seguenti elementi:
 
@@ -132,7 +135,7 @@ L&#39;inclusione di javascript nella libreria client personalization.stores.kern
 
 >[!NOTE]
 >
->Se create un archivio sessioni come parte di un componente per l’archivio di contesto, potete in alternativa inserire il codice JavaScript nel file init.js.jsp del componente. In questo caso, lo store di sessione viene creato solo se il componente viene aggiunto a ClientContext.
+>Se create uno store di sessione come parte di un componente per l’archivio di contesto, potete in alternativa inserire lo javascript nel file init.js.jsp del componente. In questo caso, lo store di sessione viene creato solo se il componente viene aggiunto a ClientContext.
 
 #### Tipi di store di sessioni {#types-of-session-stores}
 
@@ -178,13 +181,13 @@ if (!CQ_Analytics.myJSONStore) {
 Create un componente dell&#39;archivio di contesto per eseguire il rendering dei dati dell&#39;archivio di sessione in ClientContext. Una volta creato, potete trascinare il componente dell&#39;archivio di contesto in ClientContext per eseguire il rendering dei dati da uno store di sessione. I componenti dell’archivio di contesto sono costituiti dai seguenti elementi:
 
 * Script JSP per il rendering dei dati.
-* Finestra di dialogo di modifica.
+* Una finestra di dialogo di modifica.
 * Uno script JSP per l&#39;inizializzazione dello store di sessioni.
 * (Facoltativo) Una cartella libreria client che crea lo store sessione. Non è necessario includere la cartella della libreria client se il componente utilizza uno store di sessione esistente.
 
 #### Estensione dei componenti Context Store forniti {#extending-the-provided-context-store-components}
 
-AEM fornisce i componenti per archivio di contesto di genericstore e di genericstoreproperties che potete estendere. La struttura dei dati dello store determina il componente che si estende:
+AEM fornisce i componenti di archivio contestuale di genericstore e di genericstoreproperties che è possibile estendere. La struttura dei dati dello store determina il componente che si estende:
 
 * Coppie proprietà-valore: Estende il `GenericStoreProperties` componente. Questo componente esegue automaticamente il rendering degli archivi di coppie proprietà-valore. Sono forniti diversi punti di interazione:
 
@@ -194,17 +197,15 @@ AEM fornisce i componenti per archivio di contesto di genericstore e di generics
 
    * `@param {String} store`
 
-      
-Lo store da eseguire
+      Lo store da eseguire
 
    * `@param {String} divId`
 
-      
-Id del div in cui deve essere eseguito il rendering dello store.
+      Id del div in cui deve essere eseguito il rendering dello store.
 
 >[!NOTE]
 >
->Tutti i componenti ClientContext sono estensioni dei componenti Generic Store o Generic Store Properties. Nella `/libs/cq/personalization/components/contextstores` cartella sono installati diversi esempi.
+>Tutti i componenti ClientContext sono estensioni dei componenti Store generici o Proprietà store generiche. Diversi esempi sono installati nella `/libs/cq/personalization/components/contextstores` cartella.
 
 #### Configurazione dell’aspetto nella barra laterale {#configuring-the-appearance-in-sidekick}
 
@@ -327,13 +328,11 @@ Sarà quindi necessario un metodo &quot;renderer&quot; per lo store di sessioni,
 
 * `@param {String} store`
 
-   
-Lo store da eseguire
+   Lo store da eseguire
 
 * `@param {String} divId`
 
-   
-Id del div in cui deve essere eseguito il rendering dello store.
+   Id del div in cui deve essere eseguito il rendering dello store.
 
 ## Interazione con gli store di sessioni {#interacting-with-session-stores}
 
@@ -362,7 +361,7 @@ La sessione memorizza gli eventi di attivazione, pertanto è possibile aggiunger
 
 Gli archivi di sessione sono basati sul `Observable` pattern. Si estendono [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) che forniscono il [`addListener`](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope) metodo.
 
-L&#39;esempio seguente aggiunge un listener all&#39; `update` evento dell&#39;archivio `profile` sessioni.
+Nell&#39;esempio seguente viene aggiunto un listener all&#39; `update` evento dell&#39;archivio `profile` sessioni.
 
 ```
 var profileStore = ClientContextMgr.getRegisteredStore("profile");
@@ -426,7 +425,7 @@ function getName(){
 
 Per evitare che una proprietà di una `PersistedSessionStore` venga mantenuta (ovvero escluderla dal `sessionpersistence` cookie), aggiungete la proprietà all’elenco delle proprietà non persistenti dell’archivio delle sessioni persistenti.
 
-Vedi [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name)
+Consulta [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name)
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -441,14 +440,14 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 ### Condizioni {#conditions}
 
-La pagina corrente deve avere una pagina mobile corrispondente; questo è determinato solo se per la pagina è configurato LiveCopy con una configurazione di rollout mobile ( `rolloutconfig.path.toLowerCase` `mobile`contiene).
+La pagina corrente deve avere una pagina mobile corrispondente; questo è determinato solo se la pagina dispone di una LiveCopy configurata con una configurazione di rollout mobile ( `rolloutconfig.path.toLowerCase` `mobile`contiene).
 
 #### Configurazione {#configuration}
 
 Quando si passa dalla pagina desktop a quella mobile equivalente:
 
 * Viene caricato il DOM della pagina mobile.
-* Il contenuto principale `div` (obbligatorio), estratto e inserito nella pagina desktop corrente.
+* La pagina principale `div` (richiesta) che contiene il contenuto, viene estratta e iniettata nella pagina desktop corrente.
 
 * Le classi CSS e body da caricare devono essere configurate manualmente.
 
@@ -491,28 +490,28 @@ In questo esempio, potete creare un componente per l’archivio di contesto che 
 * Estende il componente genericstoreproperties.
 * Inizializza uno store utilizzando un oggetto `CQ_Analytics.JSONPStore` javascript.
 * Chiama un servizio JSONP per recuperare i dati e aggiungerli allo store.
-* Rendering dei dati in ClientContext.
+* Consente di renderizzare i dati in ClientContext.
 
 ### Aggiungere il componente geoloc {#add-the-geoloc-component}
 
 Create un’applicazione CQ e aggiungete il componente geoloc.
 
-1. Aprite CRXDE Lite nel browser Web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Aprite il CRXDE Lite nel browser Web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Fate clic con il pulsante destro del mouse sulla `/apps` cartella e scegliete Crea > Crea cartella. Specificate un nome di `myapp` e fate clic su OK.
 1. Analogamente, di seguito `myapp`create una cartella denominata `contextstores`. &quot;
 1. Fare clic con il pulsante destro del mouse sulla `/apps/myapp/contextstores` cartella e scegliere Crea > Crea componente. Specificate i seguenti valori di proprietà e fate clic su Avanti:
 
    * Etichetta: **geoloc**
-   * Titolo: Archivio **posizione**
+   * Titolo: **Store posizione**
    * Super Type: **`cq/personalization/components/contextstores/genericstoreproperties`**
-   * Gruppo: Contesto **client**
+   * Gruppo: **ClientContext**
 
 1. Nella finestra di dialogo Crea componente, fare clic su Avanti su ciascuna pagina fino a quando il pulsante OK non è abilitato, quindi fare clic su OK.
 1. Fate clic su Salva tutto.
 
 ### Crea finestra di dialogo Modifica geoloc {#create-the-geoloc-edit-dialog}
 
-Il componente per l’archivio contesti richiede una finestra di dialogo di modifica. La finestra di dialogo di modifica geoloc conterrà un messaggio statico che indica che non sono presenti proprietà da configurare.
+Il componente per l’archivio di contesto richiede una finestra di dialogo di modifica. La finestra di dialogo di modifica geoloc conterrà un messaggio statico che indica che non sono presenti proprietà da configurare.
 
 1. Fare clic con il pulsante destro del mouse sul `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` nodo e scegliere Copia.
 1. Fare clic con il pulsante destro del mouse sul `/apps/myapp/contextstores/geoloc` nodo e scegliere Incolla.
@@ -546,7 +545,7 @@ Aggiungete un file init.js.jsp al componente geoloc e utilizzatelo per creare lo
 Il file init.js.jsp viene eseguito quando ClientContext viene caricato dalla pagina. A questo punto, l&#39;API JavaScript ClientContext viene caricata e disponibile per lo script.
 
 1. Fare clic con il pulsante destro del mouse sul `/apps/myapp/contextstores/geoloc` nodo e scegliere **Crea -> Crea file**. Specificate il Nome di init.js.jsp e fate clic su OK.
-1. Aggiungete il codice seguente nella parte superiore della pagina e fate clic su Salva tutto.
+1. Aggiungete il codice seguente nella parte superiore della pagina, quindi fate clic su Salva tutto.
 
    ```java
    <%@page contentType="text/javascript;charset=utf-8" %><%
@@ -569,7 +568,7 @@ Aggiungete il codice al file JSP del componente geoloc per eseguire il rendering
 
 ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. In CRXDE Lite, aprire il `/apps/myapp/contextstores/geoloc/geoloc.jsp` file.
+1. In CRXDE Lite , aprire il `/apps/myapp/contextstores/geoloc/geoloc.jsp` file.
 1. Aggiungete il seguente codice HTML sotto il codice stub:
 
    ```xml
@@ -602,7 +601,7 @@ Aggiungete il codice al file JSP del componente geoloc per eseguire il rendering
 
 Aggiungete il componente Location Store al ClientContext in modo che venga inizializzato al caricamento della pagina.
 
-1. Aprite la home page di Geometrixx Outdoors sull’istanza di creazione ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Aprite la home page dei Geometrixx Outdoors nell’istanza di creazione ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Fate clic su Ctrl+Alt+C (Windows) o Ctrl+Opzione+C (Mac) per aprire Client Context.
 1. Fate clic sull&#39;icona di modifica nella parte superiore di ClientContext per aprire ClientContext Designer.
 
@@ -612,7 +611,7 @@ Aggiungete il componente Location Store al ClientContext in modo che venga inizi
 
 ### Consultate Informazioni sulla posizione in ClientContext {#see-the-location-information-in-client-context}
 
-Aprite la home page di Geometrixx Outdoors in modalità di modifica, quindi aprite ClientContext per visualizzare i dati dal componente Location Store.
+Aprite la home page dei Geometrixx Outdoors in modalità di modifica, quindi aprite ClientContext per visualizzare i dati dal componente Location Store.
 
 1. Aprite la pagina inglese del sito Geometrixx Outdoors. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Per aprire ClientContext, premete Ctrl+Alt+C (Windows) o Ctrl+Opzione+C (Mac).
@@ -627,15 +626,13 @@ Per creare un secondo contesto client è necessario duplicare il ramo:
 
    `/content`
 
-   
-conterrà il contenuto del contesto client personalizzato.
+   conterrà il contenuto del contesto client personalizzato.
 
 * La cartella:
 
    `/contextstores`
 
-   
-consente di definire configurazioni diverse per gli store contestuali.
+   consente di definire configurazioni diverse per gli store contestuali.
 
 Per utilizzare il contesto personalizzato del cliente, modificare la proprietà\
 `path`\
