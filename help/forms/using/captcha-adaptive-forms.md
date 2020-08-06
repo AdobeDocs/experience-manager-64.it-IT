@@ -1,8 +1,8 @@
 ---
 title: Uso del CAPTCHA nei moduli adattivi
 seo-title: Uso del CAPTCHA nei moduli adattivi
-description: Scoprite come configurare il servizio AEM CAPTCHA o Google reCAPTCHA nei moduli adattivi.
-seo-description: Scoprite come configurare il servizio AEM CAPTCHA o Google reCAPTCHA nei moduli adattivi.
+description: Scoprite come configurare AEM servizio CAPTCHA o Google reCAPTCHA nei moduli adattivi.
+seo-description: Scoprite come configurare AEM servizio CAPTCHA o Google reCAPTCHA nei moduli adattivi.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 CAPTCHA (Test di Turing Pubblico Completamente Automatizzato per dire Computer e Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra gli umani e i programmi o robot automatizzati. Rappresenta una sfida e valuta la risposta degli utenti per determinare se si tratta di un essere umano o un bot che interagisce con il sito. Impedisce all&#39;utente di procedere in caso di esito negativo del test e contribuisce a rendere sicure le transazioni online, impedendo ai bot di inviare spam o scopi dannosi.
 
-AEM Forms supporta CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
+ AEM Forms supporta il CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
 
 >[!NOTE]
 >
->I AEM Forms supportano solo reCaptcha v2. Qualsiasi altra versione non è supportata.
+> AEM Forms supporta solo reCaptcha v2. Qualsiasi altra versione non è supportata.
 >
->CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app AEM Forms.
+>CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app  AEM Forms.
 
 ## Configurare il servizio ReCAPTCHA da Google {#google-recaptcha}
 
@@ -35,7 +35,7 @@ Gli autori dei moduli possono utilizzare il servizio reCAPTCHA di Google per imp
 
 ![ricontcha](assets/recaptcha.png)
 
-Per implementare il servizio reCAPTCHA in AEM Forms:
+Per implementare il servizio reCAPTCHA in  AEM Forms:
 
 1. Ottenete una coppia [di chiavi API](https://www.google.com/recaptcha/admin) reCAPTCHA da Google. Include una chiave del sito e un segreto.
 1. Creare un contenitore di configurazione per i servizi cloud.
@@ -53,7 +53,7 @@ Per implementare il servizio reCAPTCHA in AEM Forms:
 
 1. Configurare il servizio cloud per reCAPTCHA.
 
-   1. Nell’istanza di creazione di AEM, andate a ![strumenti](assets/tools.png) > Servizi **** cloud.
+   1. Nell’istanza di AEM authoring, andate a ![strumenti](assets/tools.png) > **Cloud Services**.
    1. Toccate **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionate il contenitore di configurazione creato nel passaggio precedente e toccate **[!UICONTROL Crea]**.
    1. Specificate Nome, Chiave del sito e Chiave segreta per il servizio reCAPTCHA e toccate **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specificate il sito e le chiavi segrete ottenute al punto 1. Toccate **[!UICONTROL Salva impostazioni]** , quindi toccate **[!UICONTROL OK]** per completare la configurazione.
