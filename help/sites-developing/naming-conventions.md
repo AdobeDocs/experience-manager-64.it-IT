@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 10%
 
 ---
 
 
 # Naming Conventions{#naming-conventions}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, AEM impone ulteriori convenzioni per il nome dei nodi di pagina.
+Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia AEM ulteriori convenzioni per il nome dei nodi di pagina.
 
 ## Convenzioni di denominazione per le pagine {#naming-conventions-for-pages}
 
 Queste convenzioni di denominazione sono implementate a vari livelli:
 
-* JcrUtil: l’implementazione AEM delle utility [JCR](#jcr-utilities).
+* JcrUtil: l&#39;AEM implementazione delle utility [JCR](#jcr-utilities).
 * PageManager: il gestore [](#page-manager) pagina fornisce metodi per le operazioni a livello di pagina.
 * In base all’interfaccia in uso:
 
@@ -32,7 +35,7 @@ Queste convenzioni di denominazione sono implementate a vari livelli:
 
 ### Utilità JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) è l’implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) è l&#39;implementazione AEM delle utility JCR. Di particolare interesse per la convalida dei nomi sono le mappature dei caratteri che controlla e le seguenti convalide:
 
 * `isValidName`
 
