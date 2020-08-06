@@ -12,6 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 2%
 
 ---
 
@@ -75,7 +78,7 @@ Da questa console Gruppi è possibile creare nuovi gruppi.
    Il titolo viene visualizzato sul sito pubblicato per il gruppo.
 
 * **[!UICONTROL Descrizione]** gruppo community: Descrizione del gruppo.
-* **[!UICONTROL Radice]** gruppo community: Percorso principale del gruppo.
+* **[!UICONTROL Radice]** gruppo community: Il percorso principale del gruppo.
 
    La radice predefinita è il sito principale principale, ma può essere spostata in qualsiasi posizione all&#39;interno del sito Web. Non è consigliato modificarlo.
 
@@ -97,7 +100,7 @@ Da questa console Gruppi è possibile creare nuovi gruppi.
 
 ![communityGroup](assets/communitygrouptheme.png)
 
-Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi Bootstrap precaricati per definire lo stile del modello di gruppo di community selezionato oppure caricare un tema Bootstrap.
+Il framework utilizza l’Bootstrap [](https://twitterbootstrap.org/) Twitter per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi di Bootstrap precaricati per definire lo stile del modello di gruppo di community selezionato, oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema verrà sovrapposto con un segno di spunta blu opaco.
 
@@ -117,12 +120,12 @@ Quando create o selezionate un’immagine, tenete presente:
 
 * L’altezza dell’immagine viene ritagliata a 120 pixel, misurati dal bordo superiore dell’immagine
 * L&#39;immagine viene bloccata sul bordo sinistro della finestra del browser
-* L&#39;immagine non viene ridimensionata, pertanto quando la larghezza dell&#39;immagine è impostata su ...
+* Non è disponibile alcun ridimensionamento dell&#39;immagine, ad esempio quando la larghezza dell&#39;immagine è...
 
    * Con una larghezza inferiore a quella del browser, l&#39;immagine si ripeterà in orizzontale
-   * Maggiore della larghezza del browser, l&#39;immagine apparirà ritagliata
+   * Maggiore della larghezza del browser, l&#39;immagine apparentemente verrà ritagliata
 
-### Passaggio 3:Impostazioni {#step-settings}
+### Passaggio 3: Impostazioni {#step-settings}
 
 #### MODERATION {#moderation}
 
@@ -183,7 +186,7 @@ Al termine del processo, la scheda per il nuovo sito della community secondaria 
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-Il contenuto di una pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina AEM. Per aprire il gruppo per la creazione, selezionate l&#39;icona Apri sito che viene visualizzata quando passate il puntatore del mouse sulla scheda del gruppo.
+Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina AEM. Per aprire il gruppo per la creazione, selezionate l&#39;icona Apri sito che viene visualizzata quando passate il puntatore del mouse sulla scheda del gruppo.
 
 ## Modifica delle proprietà del gruppo {#modifying-group-properties}
 
@@ -229,7 +232,7 @@ Il pannello STRUTTURA consente di modificare la struttura creata inizialmente da
 
 >[!CAUTION]
 >
->Anche se il titolo visualizzato può essere modificato senza effetti collaterali, non è consigliabile modificare il nome URL di una funzione community appartenente a un sito community.
+>Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si consiglia di non modificare il nome URL di una funzione community appartenente a un sito community.
 >
 >Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’UGC esistente, con l’effetto di perdere l’UGC.
 
