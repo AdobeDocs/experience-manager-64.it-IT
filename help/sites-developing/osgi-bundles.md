@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
 
@@ -35,10 +38,10 @@ Non appena un pacchetto è stato esportato, abbiamo creato un&#39;API da cui gli
 
 Le implementazioni devono sempre essere inserite in un pacchetto *completo* separato. Per impostazione predefinita, il plug-in ** maven-bundle esporta qualsiasi elemento del progetto che non abbia un *impl* nel nome.
 
-## Definire sempre esplicitamente una versione semantica per ciascun pacchetto esportato {#always-explicitly-define-a-semantic-version-for-each-package-exported}
+## Definire sempre in modo esplicito una versione semantica per ciascun pacchetto esportato {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
 In questo modo i consumatori delle API potranno evolvere insieme a voi. In questo modo, segui sempre le best practice relative alle versioni semantiche. In questo modo gli utenti dell&#39;API potranno sapere quali tipi di modifiche sono previste in una nuova versione.
 
 ## Includi informazioni sul tipo di dati se esposte {#include-metatype-information-where-exposed}
 
-Specificando informazioni significative per il tipo di dati, i vostri servizi e componenti saranno più facili da comprendere nella console Felix. Un elenco di annotazioni e attributi SCR è disponibile all&#39;indirizzo: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Specificando informazioni significative per il tipo di dati, i vostri servizi e componenti saranno più facili da comprendere nella console Felix. Un elenco delle annotazioni e degli attributi SCR è disponibile all&#39;indirizzo: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
