@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Rimozione delle versioni{#version-purging}
 
-In un’installazione standard AEM crea una nuova versione di una pagina o di un nodo quando si attiva una pagina dopo l’aggiornamento del contenuto.
+In un’installazione standard AEM creare una nuova versione di una pagina o di un nodo quando si attiva una pagina dopo l’aggiornamento del contenuto.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Potete creare versioni aggiuntive su richiesta utilizzando la scheda **Gestione 
 
 Queste versioni non vengono mai eliminate, pertanto la dimensione del repository aumenterà nel tempo e dovrà essere gestita.
 
-AEM viene fornito con diversi metodi per gestire il repository:
+AEM viene fornito con diversi meccanismi per la gestione del repository:
 
 * Gestione [versioni](#version-manager)
 
@@ -100,7 +100,7 @@ Sono disponibili le seguenti opzioni:
 
 >[!NOTE]
 >
->Non è consigliabile mantenere un numero elevato di versioni nella directory archivio. Pertanto, durante la configurazione dell&#39;operazione di eliminazione della versione, non escludere troppe versioni dalla rimozione, altrimenti la dimensione del repository non verrà ottimizzata correttamente. Se disponete di un numero elevato di versioni a causa di un requisito aziendale, contattate il supporto Adobe per trovare modi alternativi per ottimizzare le dimensioni del repository.
+>Non è consigliabile mantenere un numero elevato di versioni nella directory archivio. Pertanto, durante la configurazione dell&#39;operazione di eliminazione della versione, non escludere troppe versioni dalla rimozione, altrimenti la dimensione del repository non verrà ottimizzata correttamente. Se si conservano numerose versioni a causa di un requisito aziendale, contattare  supporto di Adobe per trovare modi alternativi per ottimizzare le dimensioni del repository.
 
 ### Combinazione di opzioni di conservazione {#combining-retention-options}
 
