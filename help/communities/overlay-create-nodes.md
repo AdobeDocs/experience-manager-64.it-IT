@@ -1,8 +1,8 @@
 ---
 title: Crea nodi
 seo-title: Crea nodi
-description: 'Sovrapporre il sistema commenti '
-seo-description: 'Sovrapporre il sistema commenti '
+description: 'Sovrapporre il sistema dei commenti '
+seo-description: 'Sovrapporre il sistema dei commenti '
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ Sovrapponete il sistema dei commenti a una versione personalizzata copiando il n
 >
 >Il contenuto della cartella /libs non viene mai modificato perché qualsiasi reinstallazione o aggiornamento potrebbe eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps non viene toccato.
 
-Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) su un’istanza di creazione, iniziate creando un percorso nella cartella /apps che è identico al percorso dei componenti sovrapposti nella cartella /libs.
+L’utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza di authoring inizia con la creazione di un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
 
 Il percorso da duplicare è
 
@@ -78,6 +81,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
