@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +21,9 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Panoramica {#overview}
 
-AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo di lavoro in corso, che può essere completato e inviato in un secondo momento da qualsiasi dispositivo.
+ AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo di lavoro in corso, che può essere completato e inviato in un secondo momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel `/content/forms/fp` nodo dell&#39;istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che potete utilizzare per personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita,  AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel `/content/forms/fp` nodo dell&#39;istanza Pubblica. Inoltre, i componenti del  portale AEM Forms forniscono servizi dati che consentono di personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
