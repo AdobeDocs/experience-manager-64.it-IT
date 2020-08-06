@@ -1,6 +1,6 @@
 ---
-title: Utilizzo dell'archivio moduli AEM
-seo-title: Utilizzo dell'archivio moduli AEM
+title: Utilizzo di  archivio AEM Forms
+seo-title: Utilizzo di  archivio AEM Forms
 description: 'null'
 seo-description: 'null'
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '9082'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 **Informazioni su Repository Service**
 
-Il servizio Repository fornisce servizi di archiviazione e gestione delle risorse ad AEM Forms. Quando gli sviluppatori creano un&#39;applicazione *AEM Forms* , possono distribuire le risorse nell&#39;archivio invece che nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, inclusi moduli XML, moduli PDF (inclusi moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di prova.
+Il servizio Repository fornisce servizi di archiviazione e gestione delle risorse per  AEM Forms. Quando gli sviluppatori creano un&#39;applicazione AEM Forms ** , possono distribuire le risorse nella directory archivio invece che nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, inclusi moduli XML, PDF forms (inclusi  moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di prova.
 
-Ad esempio, consultare la seguente applicazione Forms denominata *Applications/FormsApplication*:
+Ad esempio, prendere in considerazione la seguente applicazione Forms denominata *Applications/FormsApplication*:
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Tenere presente che nella cartella FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa struttura del modulo, specificare il percorso completo (inclusa la versione): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Tenere presente che nella cartella FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa struttura del modulo, è necessario specificare il percorso completo (inclusa la versione): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms utilizzando Workbench, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
 
-Il percorso di una risorsa situata nell&#39;archivio di AEM Forms è:
+Il percorso di una risorsa che si trova nell&#39;archivio di AEM Forms  è:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -43,7 +46,7 @@ I seguenti valori mostrano alcuni esempi di valori URI:
 
 >[!NOTE]
 >
->È possibile esplorare l&#39;archivio moduli AEM utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web https://[server name]:[server port]/repository. È possibile verificare i risultati di avvio rapido associati alla sezione Utilizzo di AEM Forms Repository utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio moduli di AEM, potete visualizzarne il contenuto in un browser Web. (Vedere Avvio [rapido (modalità SOAP): Scrivere una risorsa utilizzando l&#39;API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)Java.
+>È possibile esplorare  archivio AEM Forms utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web https://[server name]:[server port]/repository. È possibile verificare i risultati di avvio rapido associati alla sezione Utilizzo  repository di AEM Forms utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio AEM Forms , potete visualizzarne il contenuto in un browser Web. (Vedere Avvio [rapido (modalità SOAP): Scrivere una risorsa utilizzando l&#39;API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)Java.
 
 L&#39;API del repository fornisce una serie di operazioni che è possibile utilizzare per memorizzare e recuperare informazioni dal repository. Ad esempio, è possibile ottenere un elenco di risorse o recuperare risorse specifiche memorizzate nella directory archivio quando una risorsa è necessaria durante l&#39;elaborazione di un&#39;applicazione.
 
@@ -54,7 +57,7 @@ L&#39;API del repository fornisce una serie di operazioni che è possibile utili
 Utilizzando l&#39;API del servizio Repository, potete eseguire le seguenti operazioni:
 
 * Creare cartelle. Consultate [Creazione di cartelle](aem-forms-repository.md#creating-folders).
-* Scrivere risorse e relative proprietà. Consulta [Creazione di risorse](aem-forms-repository.md#writing-resources).
+* Scrivere le risorse e le relative proprietà. Consulta [Creazione di risorse](aem-forms-repository.md#writing-resources).
 * Elenca le risorse in una raccolta specifica o correlate ad altre risorse. Consulta [Elenco delle risorse](aem-forms-repository.md#listing-resources).
 * Leggere le risorse e le relative proprietà. Vedere Risorse [di](aem-forms-repository.md#reading-resources)lettura.
 * Aggiornare le risorse e le relative proprietà. Consulta [Aggiornamento delle risorse](aem-forms-repository.md#updating-resources).
@@ -73,7 +76,7 @@ Utilizzando l&#39;API del servizio Repository, potete eseguire le seguenti opera
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Creazione di cartelle {#creating-folders}
 
@@ -83,7 +86,7 @@ I file ereditano gli elenchi di controllo di accesso (ACL, Access Control List) 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -104,7 +107,7 @@ Prima di poter creare una raccolta di risorse a livello di programmazione, è ne
 
 **Creare la cartella**
 
-Richiamare il metodo del servizio Repository per creare la raccolta di risorse e compilare la raccolta di risorse con informazioni di identificazione, incluso il relativo UUID, il nome della cartella e la descrizione.
+Richiamare il metodo del servizio Repository per creare la raccolta di risorse e compilare la raccolta di risorse con le informazioni di identificazione, incluso il relativo UUID, il nome della cartella e la descrizione.
 
 **Scrivere la cartella nella directory archivio**
 
@@ -116,7 +119,7 @@ Richiamare il metodo del servizio Repository per scrivere la raccolta di risorse
 
 [Creazione di cartelle tramite l&#39;API del servizio Web](aem-forms-repository.md#create-folders-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -142,7 +145,8 @@ Create una cartella utilizzando l&#39;API del servizio Repository (Java):
 
    * Identificatore `com.adobe.repository.infomodel.Id` UUID da assegnare alla risorsa.
    * Identificatore `com.adobe.repository.infomodel.Lid` UUID da assegnare alla risorsa.
-   * Un `java.lang.String` contenente il nome della raccolta di risorse. Ad esempio, `FormsFolder`.
+   * Un `java.lang.String` contenente il nome della raccolta di risorse. Esempio, `FormsFolder`.
+
    Il metodo restituisce un `com.adobe.repository.infomodel.bean.ResourceCollection` oggetto che rappresenta la nuova cartella.
 
    Impostate la descrizione della cartella utilizzando il `setDescription` metodo e passate il seguente parametro:
@@ -154,7 +158,7 @@ Create una cartella utilizzando l&#39;API del servizio Repository (Java):
 
    Richiamate il metodo dell’ `ResourceRepositoryClient` oggetto `writeResource` e passate l’URI della cartella e dell’ `ResourceCollection` oggetto. Ad esempio, l’URI della cartella può essere il valore seguente `/Applications/FormsApplication/1.0/`.
 
-   Il metodo restituisce un&#39;istanza dell&#39;oggetto appena creato `com.adobe.repository.infomodel.bean.Resource` . È possibile, ad esempio, recuperare il valore identificatore della nuova risorsa richiamando il `com.adobe.repository.infomodel.bean.Resource` metodo dell&#39; `getId` oggetto.
+   Il metodo restituisce un&#39;istanza dell&#39; `com.adobe.repository.infomodel.bean.Resource` oggetto appena creato. È possibile, ad esempio, recuperare il valore identificatore della nuova risorsa richiamando il `com.adobe.repository.infomodel.bean.Resource` metodo dell&#39; `getId` oggetto.
 
 **Consulta anche**
 
@@ -162,7 +166,7 @@ Create una cartella utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Creazione di una cartella mediante l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -200,7 +204,7 @@ Create una cartella utilizzando l&#39;API del servizio Repository (servizio Web)
 
 [Creazione di cartelle](aem-forms-repository.md#creating-folders)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Scrittura delle risorse {#writing-resources}
 
@@ -214,7 +218,7 @@ Potete scrivere le risorse a livello di programmazione utilizzando l&#39;API Jav
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -222,7 +226,7 @@ Per scrivere una risorsa, effettuate le seguenti operazioni:
 
 1. Includere i file di progetto.
 1. Creare un client del servizio Repository.
-1. Specificare l&#39;URI della risorsa da leggere.
+1. Specificate l’URI della risorsa da leggere.
 1. Leggete la risorsa.
 
 **Includi file di progetto**
@@ -255,7 +259,7 @@ Richiamate il metodo del servizio Repository per scrivere la risorsa, specifican
 
 [Creazione di risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#write-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -286,6 +290,7 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (Java):
    * Un `com.adobe.repository.infomodel.Id` oggetto, creato richiamando il costruttore predefinito per la `Id` classe.
    * Un `com.adobe.repository.infomodel.Lid` oggetto, creato richiamando il costruttore predefinito per la `Lid` classe.
    * Un file `java.lang.String` contenente il nome file della risorsa.
+
    Per specificare la descrizione della risorsa, richiamare il metodo dell&#39; `Resource` oggetto `setDescription` e passare una stringa contenente la descrizione. In questo esempio, la descrizione è `"test resource"`.
 
 1. Specificare il contenuto della risorsa
@@ -294,7 +299,8 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
    * Richiamo del metodo dell&#39; `ResourceContent` oggetto `setDataDocument` e passaggio di un `com.adobe.idp.Document` oggetto
    * Richiamo del metodo dell&#39; `ResourceContent` oggetto `setSize` e trasmissione delle dimensioni in byte dell&#39; `Document` oggetto
-   Aggiungete il contenuto alla risorsa richiamando il metodo dell&#39; `Resource` oggetto `setContent` e passando l&#39; `ResourceContent` oggetto. Per ulteriori informazioni, consulta [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
+
+   Aggiungete il contenuto alla risorsa richiamando il metodo dell&#39; `Resource` oggetto `setContent` e passando l&#39; `ResourceContent` oggetto. Per ulteriori informazioni, consultate [Guida di riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)delle API di AEM Forms.
 
 1. Scrivere la risorsa nella cartella di destinazione
 
@@ -306,7 +312,7 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Creazione di una risorsa tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -338,10 +344,11 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (servizio Web
 
 1. Specificare il contenuto della risorsa
 
-   Per creare contenuto per la risorsa, richiamare il costruttore predefinito per la `ResourceContent` classe. Quindi aggiungere il contenuto all&#39; `ResourceContent` oggetto. In questo esempio, questo si ottiene eseguendo le seguenti operazioni:
+   Per creare contenuto per la risorsa, richiamate il costruttore predefinito per la `ResourceContent` classe. Quindi aggiungere il contenuto all&#39; `ResourceContent` oggetto. In questo esempio, questo si ottiene eseguendo le seguenti operazioni:
 
    * Assegnazione di un `BLOB` oggetto contenente un documento al `ResourceContent` campo dell&#39; `dataDocument` oggetto.
    * Assegnazione delle dimensioni in byte dell&#39; `BLOB` oggetto al campo dell&#39; `ResourceContent` oggetto `size` .
+
    Aggiungete il contenuto alla risorsa assegnando l&#39; `ResourceContent` oggetto al campo dell&#39; `Resource` oggetto `content` .
 
 1. Scrivere la risorsa nella cartella di destinazione
@@ -352,7 +359,7 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (servizio Web
 
 [Scrittura delle risorse](aem-forms-repository.md#writing-resources)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Risorse elenco {#listing-resources}
 
@@ -364,7 +371,7 @@ Le risorse di elenco operano per relazione: le risorse sono membri di cartelle. 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
@@ -397,7 +404,7 @@ Richiamare il metodo del servizio Repository per recuperare l’elenco delle ris
 
 [Elenca le risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#list-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -431,7 +438,7 @@ Elenca le risorse utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Elencare le risorse tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -462,7 +469,7 @@ Elenca le risorse utilizzando l&#39;API del servizio Repository (servizio Web):
 
 [Risorse](aem-forms-repository.md#listing-resources)di elenco.
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Lettura delle risorse {#reading-resources}
 
@@ -481,7 +488,7 @@ Potete leggere le risorse a livello di programmazione utilizzando l&#39;API Java
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-3}
 
@@ -489,7 +496,7 @@ Per leggere una risorsa, effettuate le seguenti operazioni:
 
 1. Includere i file di progetto.
 1. Creare un client del servizio Repository.
-1. Specificare l&#39;URI della risorsa da leggere.
+1. Specificate l’URI della risorsa da leggere.
 1. Leggete la risorsa.
 
 **Includi file di progetto**
@@ -514,7 +521,7 @@ Richiamare il metodo del servizio Repository per leggere la risorsa, specificand
 
 [Lettura delle risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#reading-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -546,7 +553,7 @@ Leggere una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Lettura di una risorsa tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -575,7 +582,7 @@ Leggere una risorsa utilizzando l&#39;API del servizio Repository (servizio Web)
 
 [Lettura delle risorse](aem-forms-repository.md#reading-resources)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Aggiornamento delle risorse {#updating-resources}
 
@@ -591,7 +598,7 @@ Potete aggiornare le risorse a livello di programmazione utilizzando l&#39;API J
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-4}
 
@@ -624,7 +631,7 @@ Impostate le nuove informazioni nella risorsa e richiamate il metodo del servizi
 
 [Aggiornare le risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#update-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -662,7 +669,7 @@ Aggiornare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Aggiornamento di una risorsa tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -698,7 +705,7 @@ Aggiornare una risorsa utilizzando l&#39;API Repository (servizio Web):
 
 [Aggiornamento delle risorse](aem-forms-repository.md#updating-resources)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Ricerca di risorse {#searching-for-resources}
 
@@ -708,7 +715,7 @@ Aggiornare una risorsa utilizzando l&#39;API Repository (servizio Web):
 
 **Istruzioni query**
 
-Una *query* contiene una o più istruzioni collegate logicamente con le condizioni. Un&#39; *istruzione* è costituita da un operando sinistro, un operatore e un operando destro. Inoltre, potete specificare l&#39;ordinamento da utilizzare per i risultati della ricerca. L&#39; *ordinamento* contiene informazioni equivalenti a una `ORDER BY` clausola SQL ed è composto da elementi che contengono gli attributi su cui è stata basata la ricerca, nonché un valore che indica se utilizzare l&#39;ordine crescente o decrescente.
+Una *query* contiene una o più istruzioni collegate logicamente con le condizioni. Un&#39; *istruzione* è costituita da un operando a sinistra, un operatore e un operando a destra. Inoltre, potete specificare l&#39;ordinamento da utilizzare per i risultati della ricerca. L&#39; *ordinamento* contiene informazioni equivalenti a una `ORDER BY` clausola SQL ed è composto da elementi che contengono gli attributi su cui è stata basata la ricerca, nonché un valore che indica se utilizzare l&#39;ordine crescente o decrescente.
 
 È possibile cercare le risorse a livello di programmazione utilizzando l&#39;API Java del servizio Repository. Al momento, non è possibile utilizzare l&#39;API del servizio Web per cercare le risorse.
 
@@ -716,11 +723,11 @@ Una *query* contiene una o più istruzioni collegate logicamente con le condizio
 
 L&#39;ordinamento non viene rispettato quando si richiama il metodo dell&#39; `ResourceRepositoryClient` oggetto `searchProperties` e si specifica un ordinamento. Ad esempio, si supponga di creare una risorsa con tre proprietà personalizzate, in cui i nomi degli attributi sono `name`, `secondName`e `asecondName`. Quindi create un elemento di ordinamento sul nome dell&#39;attributo e impostate il `ascending` valore su `true`.
 
-Quindi, richiamare il metodo dell’ `ResourceRepositoryClient` oggetto `searchProperties` e trasmettere l’ordine. La ricerca restituisce la risorsa giusta, con le tre proprietà. Tuttavia, le proprietà non sono ordinate per nome di attributo. Vengono restituiti nell&#39;ordine in cui sono stati aggiunti: `name`, `secondName`, e `asecondName`.
+Quindi, richiamare il metodo dell’ `ResourceRepositoryClient` oggetto `searchProperties` e trasmettere l’ordine. La ricerca restituisce la risorsa giusta, con le tre proprietà. Tuttavia, le proprietà non sono ordinate in base al nome dell&#39;attributo. Vengono restituiti nell&#39;ordine in cui sono stati aggiunti: `name`, `secondName`e `asecondName`.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-5}
 
@@ -771,7 +778,7 @@ Scorrete l&#39;elenco di risorse restituito ed estraete le informazioni per un&#
 
 [Cercare risorse tramite l&#39;API Java](aem-forms-repository.md#search-for-resources-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -806,6 +813,7 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
    * Un operando a sinistra contenente la costante attributo risorsa. In questo esempio, poiché il nome della risorsa è utilizzato come base per la ricerca, `Resource.ATTRIBUTE_NAME` viene utilizzato il valore statico.
    * Operatore che contiene la condizione utilizzata nella ricerca dell&#39;attributo. L&#39;operatore deve essere una delle costanti statiche della `Query.Statement` classe. In questo esempio viene utilizzato il valore statico `Query.Statement.OPERATOR_BEGINS_WITH` .
    * Un operando a destra contenente il valore dell&#39;attributo su cui eseguire la ricerca. In questo esempio, viene utilizzato l&#39;attributo name, un `String` contenente il valore `"testResource"`.
+
    Specificare lo spazio dei nomi dell&#39;operando a sinistra richiamando il `Query.Statement` metodo dell&#39;oggetto e passando uno dei valori statici contenuti nella `setNamespace` `com.adobe.repository.infomodel.bean.ResourceProperty` classe. In questo esempio `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` viene utilizzato.
 
    Aggiungete ogni istruzione alla query richiamando il metodo dell&#39; `Query` oggetto `addStatement` e passando l&#39; `Query.Statement` oggetto.
@@ -814,7 +822,7 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
    Per specificare l&#39;ordinamento utilizzato nei risultati della ricerca, create un `com.adobe.repository.query.sort.SortOrder` oggetto richiamando il costruttore predefinito per la `SortOrder` classe e aggiungendo elementi all&#39;ordinamento.
 
-   Per creare un elemento per l&#39;ordinamento, richiamare uno dei costruttori della `com.adobe.repository.query.sort.SortOrder.Element` classe. In questo esempio, poiché il nome della risorsa viene utilizzato come base per la ricerca, il valore statico `Resource.ATTRIBUTE_NAME` viene utilizzato come primo parametro, e l&#39;ordine crescente (un `boolean` valore di `true`) viene specificato come secondo parametro.
+   Per creare un elemento per l&#39;ordinamento, richiamare uno dei costruttori per la `com.adobe.repository.query.sort.SortOrder.Element` classe. In questo esempio, poiché il nome della risorsa viene utilizzato come base per la ricerca, il valore statico `Resource.ATTRIBUTE_NAME` viene utilizzato come primo parametro, e l&#39;ordine crescente (un `boolean` valore di `true`) viene specificato come secondo parametro.
 
    Aggiungete ciascun elemento all&#39;ordinamento richiamando il metodo dell&#39; `SortOrder` oggetto `addSortElement` e passando l&#39; `SortOrder.Element` oggetto.
 
@@ -822,12 +830,13 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
    Per eseguire una ricerca `resources` basata sulle proprietà dell&#39;attributo, richiamare il metodo dell&#39; `ResourceRepositoryClient` oggetto `searchProperties` e trasmettere i seguenti parametri:
 
-   * Un `String` contenente il percorso di base da cui eseguire la ricerca. In questo caso `"/testFolder"` viene utilizzato.
+   * Un `String` contenente il percorso di base da cui eseguire la ricerca. In questo caso, `"/testFolder"` viene utilizzato.
    * Query utilizzata nella ricerca.
    * Profondità della ricerca. In questo caso, `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` viene utilizzato per indicare che deve essere utilizzato il percorso di base e tutte le relative cartelle.
    * Un `int` valore che indica la prima riga da cui selezionare il set di risultati non di paging. In questo esempio `0` è specificato.
    * Un `int` valore che indica il numero massimo di risultati da restituire. In questo esempio `10` è specificato.
    * Ordine utilizzato nella ricerca.
+
    Il metodo restituisce un insieme `java.util.List` di `Resource` oggetti nell&#39;ordinamento specificato.
 
 1. Recuperare le risorse dal risultato della ricerca
@@ -840,7 +849,7 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Ricerca di risorse tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -858,7 +867,7 @@ Potete specificare a livello di programmazione le relazioni tra le risorse utili
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-6}
 
@@ -891,7 +900,7 @@ Richiamare il metodo del servizio Repository per creare e specificare il tipo di
 
 [Creazione di risorse sulle relazioni mediante l&#39;API del servizio Web](aem-forms-repository.md#create-relationship-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -921,20 +930,22 @@ Create le risorse delle relazioni utilizzando l&#39;API Java del servizio Reposi
    * URI della risorsa di destinazione.
    * Il tipo di relazione, che è una delle costanti statiche della `com.adobe.repository.infomodel.bean.Relation` classe. In questo esempio, una relazione di dipendenza viene stabilita specificando il valore `Relation.TYPE_DEPENDANT_OF`.
    * Un `boolean` valore che indica se la risorsa di destinazione viene aggiornata automaticamente all&#39;identificatore `com.adobe.repository.infomodel.Id`basato sulla nuova risorsa principale. In questo esempio, a causa della relazione di dipendenza, il valore `true` è specificato.
+
    È inoltre possibile recuperare un elenco delle risorse correlate per una determinata risorsa richiamando il metodo dell’ `ResourceRepositoryClient` oggetto `getRelated` e passando i seguenti parametri:
 
    * URI della risorsa per la quale recuperare le risorse correlate. In questo esempio viene specificata la risorsa di origine ( `"/testFolder/testResource1"`).
    * Un `boolean` valore che indica se la risorsa specificata è la risorsa di origine nella relazione. In questo esempio, il valore `true` è specificato perché è il caso.
    * Il tipo di relazione, che è una delle costanti statiche della `Relation` classe. In questo esempio, una relazione di dipendenza viene specificata utilizzando lo stesso valore utilizzato in precedenza: `Relation.TYPE_DEPENDANT_OF`.
-   Il `getRelated` metodo restituisce un `java.util.List` insieme di `Resource` oggetti attraverso i quali è possibile iterare per recuperare ciascuna delle risorse correlate, raggruppando gli oggetti contenuti `List` in `Resource` . In questo esempio `testResource2` è previsto che si trovi nell&#39;elenco delle risorse restituite.
+
+   Il `getRelated` metodo restituisce un `java.util.List` insieme di `Resource` oggetti attraverso i quali è possibile iterare per recuperare ciascuna delle risorse correlate, raggruppando gli oggetti contenuti `List` in `Resource` . In questo esempio, `testResource2` è previsto che si trovi nell&#39;elenco delle risorse restituite.
 
 **Consulta anche**
 
 [Creazione di relazioni tra risorse](aem-forms-repository.md#creating-resource-relationships)
 
-[Avvio rapido (modalità SOAP): Creazione di relazioni tra risorse tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Avvio rapido (modalità SOAP): Creazione di relazioni tra le risorse tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -966,6 +977,7 @@ Creare risorse sulle relazioni utilizzando l&#39;API Repository (servizio Web):
    * Un `boolean` valore che indica se la risorsa di destinazione viene aggiornata automaticamente all&#39;identificatore `Id`basato sulla nuova risorsa principale. In questo esempio, a causa della relazione di dipendenza, il valore `true` è specificato.
    * Un `boolean` valore che indica se è stata specificata l&#39;intestazione di destinazione. In questo esempio, il valore `true` è specificato.
    * Passa `null` per l&#39;ultimo parametro.
+
    È inoltre possibile recuperare un elenco delle risorse correlate per una determinata risorsa richiamando il metodo dell’ `RepositoryServiceService` oggetto `getRelated` e passando i seguenti parametri:
 
    * URI della risorsa per la quale recuperare le risorse correlate. In questo esempio viene specificata la risorsa di origine ( `"/testFolder/testResource1"`).
@@ -973,17 +985,18 @@ Creare risorse sulle relazioni utilizzando l&#39;API Repository (servizio Web):
    * Un `boolean` valore che indica se è stata specificata la risorsa di origine. In questo esempio, il valore `true` viene fornito.
    * Un array di numeri interi contenente i tipi di relazione. In questo esempio, una relazione di dipendenza viene specificata utilizzando lo stesso valore nell&#39;array utilizzato in precedenza: `3`.
    * Passa `null` per i due parametri rimanenti.
-   Il `getRelated` metodo restituisce un array di oggetti che possono essere inseriti in `Resource` oggetti attraverso i quali è possibile iterare per recuperare ciascuna delle risorse correlate. In questo esempio `testResource2` è previsto che si trovi nell&#39;elenco delle risorse restituite.
+
+   Il `getRelated` metodo restituisce un array di oggetti che possono essere inseriti in `Resource` oggetti attraverso i quali è possibile iterare per recuperare ciascuna delle risorse correlate. In questo esempio, `testResource2` è previsto che si trovi nell&#39;elenco delle risorse restituite.
 
 **Consulta anche**
 
 [Creazione di relazioni tra risorse](aem-forms-repository.md#creating-resource-relationships)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Blocco delle risorse {#locking-resources}
 
-È possibile bloccare una risorsa o un set di risorse da utilizzare esclusivamente da un particolare utente o da un uso condiviso tra più utenti. Un blocco condiviso è un&#39;indicazione che qualcosa accadrà con la risorsa, ma non impedisce ad altri di intraprendere azioni con quella risorsa. Un blocco condiviso dovrebbe essere considerato un meccanismo di segnalazione. Un blocco esclusivo indica che l&#39;utente che ha bloccato la risorsa cambierà la risorsa e il blocco assicura che nessun altro possa farlo finché l&#39;utente non avrà più bisogno dell&#39;accesso alla risorsa e non avrà rilasciato il blocco. Se un amministratore del repository sblocca una risorsa, tutti i blocchi esclusivi e condivisi presenti sulla risorsa verranno automaticamente rimossi. Questo tipo di azione è destinato alle situazioni in cui un utente non è più disponibile e non ha sbloccato la risorsa.
+È possibile bloccare una risorsa o un set di risorse da utilizzare esclusivamente da un particolare utente o da un uso condiviso tra più utenti. Un blocco condiviso è un&#39;indicazione che qualcosa accadrà con la risorsa, ma non impedisce a nessun altro di intraprendere azioni con quella risorsa. Un blocco condiviso dovrebbe essere considerato un meccanismo di segnalazione. Un blocco esclusivo indica che l&#39;utente che ha bloccato la risorsa cambierà la risorsa e il blocco assicura che nessun altro possa farlo finché l&#39;utente non avrà più bisogno dell&#39;accesso alla risorsa e non avrà rilasciato il blocco. Se un amministratore del repository sblocca una risorsa, tutti i blocchi esclusivi e condivisi presenti sulla risorsa verranno automaticamente rimossi. Questo tipo di azione è destinato alle situazioni in cui un utente non è più disponibile e non ha sbloccato la risorsa.
 
 Quando una risorsa è bloccata, quando si visualizza la scheda Risorse in Workbench viene visualizzata un&#39;icona a forma di lucchetto, come illustrato nella figura riportata di seguito.
 
@@ -993,7 +1006,7 @@ Potete controllare l&#39;accesso alle risorse a livello di programmazione utiliz
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-7}
 
@@ -1036,7 +1049,7 @@ Richiamare il metodo del servizio Repository per sbloccare la risorsa, specifica
 
 [Blocco delle risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#lock-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1065,6 +1078,7 @@ Bloccare le risorse utilizzando l&#39;API del servizio Repository (Java):
    * URI della risorsa.
    * L&#39;ambito di blocco. In questo esempio, poiché la risorsa verrà bloccata per l&#39;uso esclusivo, l&#39;ambito del blocco viene specificato come `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
    * La profondità di blocco. In questo esempio, poiché il blocco viene applicato solo alla risorsa specifica e nessuno dei relativi membri o elementi secondari, la profondità di blocco viene specificata come `Lock.DEPTH_ZERO`.
+
    >[!NOTE]
    >
    >La versione sovraccaricata del `lockResource` metodo che richiede quattro parametri genera un&#39;eccezione. Assicurarsi di utilizzare il `lockResource` metodo che richiede tre parametri, come illustrato in questa procedura dettagliata.
@@ -1075,7 +1089,7 @@ Bloccare le risorse utilizzando l&#39;API del servizio Repository (Java):
 
 1. Sblocca risorsa
 
-   Richiamate il metodo dell’ `ResourceRepositoryClient` oggetto `unlockResource` e passate l’URI della risorsa come parametro. Per ulteriori informazioni, consulta la Guida di riferimento [alle API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   Richiamate il metodo dell’ `ResourceRepositoryClient` oggetto `unlockResource` e passate l’URI della risorsa come parametro. Per ulteriori informazioni, consultate la [Guida di riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)delle API di AEM Forms.
 
 **Consulta anche**
 
@@ -1083,7 +1097,7 @@ Bloccare le risorse utilizzando l&#39;API del servizio Repository (Java):
 
 [Avvio rapido (modalità SOAP): Blocco di una risorsa tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1126,7 +1140,7 @@ Bloccare le risorse utilizzando l&#39;API del servizio Repository (servizio Web)
 
 [Blocco delle risorse](aem-forms-repository.md#locking-resources)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Eliminazione delle risorse {#deleting-resources}
 
@@ -1134,7 +1148,7 @@ Bloccare le risorse utilizzando l&#39;API del servizio Repository (servizio Web)
 
 Quando si elimina una risorsa, l&#39;eliminazione è in genere permanente, anche se in alcuni casi i repository ECM possono memorizzare le versioni della risorsa in base ai meccanismi della cronologia. Pertanto, quando si elimina una risorsa, è importante essere certi di non averne più bisogno. I motivi comuni per eliminare una risorsa includono la necessità di aumentare lo spazio disponibile nel database. È possibile eliminare una versione di una risorsa, ma in questo caso è necessario specificare l&#39;identificatore della risorsa e non il relativo identificatore logico (LID) o percorso. Se eliminate una cartella, tutti gli elementi in essa contenuti, comprese le sottocartelle e le risorse, verranno eliminati automaticamente.
 
-Le risorse correlate non vengono eliminate. Ad esempio, se si dispone di un modulo che utilizza il file logo.gif ed eliminate logo.gif, nella tabella delle relazioni in sospeso verrà memorizzata una relazione. In alternativa, per la versione obsoleta imposta lo stato dell’oggetto dell’ultima versione su obsoleto.
+Le risorse correlate non vengono eliminate. Ad esempio, se si dispone di un modulo che utilizza il file logo.gif ed eliminate logo.gif, nella tabella delle relazioni in sospeso verrà memorizzata una relazione. In alternativa, per l&#39;eliminazione della versione, imposta lo stato dell&#39;oggetto dell&#39;ultima versione su obsoleto.
 
 Un&#39;operazione di eliminazione non è sicura per le transazioni nei sistemi ECM. Ad esempio, se tentate di eliminare 100 risorse e l&#39;operazione ha esito negativo sulla 50° risorsa, le prime 49 istanze verranno eliminate ma il resto non verrà eliminato. In caso contrario, il comportamento predefinito è rollback (non impegno).
 
@@ -1144,7 +1158,7 @@ Un&#39;operazione di eliminazione non è sicura per le transazioni nei sistemi E
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Repository, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Repository, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -1177,7 +1191,7 @@ Richiamare il metodo del servizio Repository per eliminare la risorsa, specifica
 
 [Eliminare le risorse tramite l&#39;API del servizio Web](aem-forms-repository.md#delete-resources-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1209,7 +1223,7 @@ Eliminate una risorsa utilizzando l&#39;API Repository (Java):
 
 [Avvio rapido (modalità SOAP): Ricerca di risorse tramite l&#39;API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1238,4 +1252,4 @@ Eliminate una risorsa utilizzando l&#39;API Repository (servizio Web):
 
 [Eliminazione delle risorse](aem-forms-repository.md#deleting-resources)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
