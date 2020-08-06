@@ -1,8 +1,8 @@
 ---
 title: Esportatore JSON per Content Services
 seo-title: Esportatore JSON per Content Services
-description: 'AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web. Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. '
-seo-description: 'AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web. Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. '
+description: 'AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM oltre l''attenzione sulle pagine Web. Forniscono contenuti a canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. '
+seo-description: 'AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM oltre l''attenzione sulle pagine Web. Forniscono contenuti a canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. '
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # Esportatore JSON per Content Services{#json-exporter-for-content-services}
 
-AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web.
+AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM oltre l&#39;attenzione sulle pagine Web.
 
-Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
+Forniscono contenuti a canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
 
 * [Applicazioni a pagina singola](spa-walkthrough.md)
 * Applicazioni mobili native
-* altri canali e punti di contatto esterni ad AEM
+* altri canali e punti di contatto esterni a AEM
 
-Con frammenti di contenuto che utilizzano contenuto strutturato, potete fornire servizi di contenuto utilizzando JSON Export per distribuire il contenuto di una pagina AEM(y) nel formato modello dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
+Con frammenti di contenuto che utilizzano contenuto strutturato, puoi fornire servizi di contenuto utilizzando JSON Export per distribuire il contenuto di una pagina AEM (y) nel formato modello dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
 
 >[!NOTE]
 >
@@ -36,9 +36,9 @@ Con frammenti di contenuto che utilizzano contenuto strutturato, potete fornire 
 
 ## Esportatore JSON con componenti di base frammento di contenuto {#json-exporter-with-content-fragment-core-components}
 
-Utilizzando AEM JSON Export è possibile distribuire il contenuto di una pagina AEM (y) nel formato del modello di dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
+Utilizzando il modulo di esportazione JSON AEM potete distribuire il contenuto di una pagina AEM (y) nel formato del modello di dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
 
-In AEM la distribuzione viene ottenuta utilizzando il selettore `model` e l’ `.json` estensione.
+All&#39;interno AEM la consegna viene ottenuta utilizzando il selettore `model` e l&#39; `.json` estensione.
 
 `.model.json`
 
