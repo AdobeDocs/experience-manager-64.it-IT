@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ See [Administering Tags](../../help/sites-administering/tags.md) for information
 
 Per aggiungere un `Social Tag Cloud` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Social Tag Cloud` e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il tag cloud.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](tag.md#essentials-for-client-side) richieste, verrà visualizzato il `Social Tag Cloud` componente:
 
@@ -49,17 +52,20 @@ Nella scheda **[!UICONTROL Social Tag Cloud]** , specificate i tag da visualizza
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Tag per social network per visualizzare]** Identificare i tag UGC da visualizzare. Le opzioni a discesa sono
+* **[!UICONTROL Tag per social network da visualizzare]** Identificare i tag UGC da visualizzare. Le opzioni a discesa sono
 
    * `From page and child pages`
    * `All tags`
+
    Il valore predefinito è `From page and child pages`, dove &quot;page&quot; fa riferimento all’impostazione **Pagina** riportata di seguito.
 
-* **[!UICONTROL Page]**(obbligatorio se non `All tags)` il percorso dell&#39;UGC per una pagina. Il valore predefinito è la pagina corrente se lasciato vuoto.
+* **[!UICONTROL Page]**(obbligatorio se non 
+`All tags)` Percorso dell’UGC per una pagina. Il valore predefinito è la pagina corrente, se lasciata vuota.
 
 * **[!UICONTROL Nessun collegamento sui tag]** Se questa opzione è selezionata, i tag vengono visualizzati nel tag cloud come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi per la ricerca di tutto il contenuto a cui è applicato il tag. Il valore predefinito è deselezionato e richiede l&#39;impostazione del percorso **[!UICONTROL dei risultati di]** ricerca.
 
-* **[!UICONTROL Percorso]** risultato ricerca Il percorso di una pagina in cui è stato inserito un `Search Result` componente, configurato per fare riferimento a UGC che include il percorso UGC specificato dall’impostazione **Pagina** .
+* **[!UICONTROL Percorso]** risultato ricerca Il percorso di una pagina in cui un 
+`Search Result` è stato posizionato, configurato per fare riferimento a UGC che include il percorso UGC specificato dall’impostazione **Pagina** .
 
 ## Modifica visualizzazione di Social Tag Cloud {#change-display-of-social-tag-cloud}
 
@@ -75,6 +81,7 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
 
    * Selezionato: `Geometrixx Media: Gadgets / Cars`
    * Deselezionato: `Cars`
+
    Non c&#39;è differenza per un tag semplice.
 
    Il valore predefinito è deselezionato.
@@ -88,7 +95,8 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
    È possibile applicare 3 tag: `Geometrixx Media (the namespace)`, `Gadgets`e `Cars`
 
    * Selezionato: viene `Cars` visualizzato solo se applicato
-   * Non selezionato: `Geometrixx Media` e `Gadgets`così come `Cars` verrà visualizzata, se applicata
+   * Non selezionato: `Geometrixx Media` e `Gadgets`così come `Cars` verrà visualizzato, se applicato
+
    Un tag semplice è un tag foglia.
 
    Il valore predefinito è deselezionato.
