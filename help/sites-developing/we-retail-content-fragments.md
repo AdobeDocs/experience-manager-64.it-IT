@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
 
 # Prova di frammenti di contenuto in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-I frammenti di contenuto consentono di creare contenuti versatili per i canali e varianti (eventualmente specifiche per i canali). **We.Retail** (come disponibile in un’istanza out-of-the-box di AEM) fornisce come esempio di base il frammento Surf **Artico in Lofoten** . Questo dimostra che:
+I frammenti di contenuto consentono di creare contenuti versatili per i canali e varianti (eventualmente specifiche per i canali). **We.Retail** (come disponibile in un&#39;istanza out-of-the-box di AEM) fornisce il frammento **Arctic Surfing in Lofoten** come esempio di base. Questo dimostra che:
 
 * I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici.
 
@@ -37,6 +40,7 @@ Per la documentazione completa sulla creazione, la gestione, l’utilizzo e lo s
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
