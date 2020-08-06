@@ -1,8 +1,8 @@
 ---
 title: Punteggio e distintivi delle community
 seo-title: Punteggio e distintivi delle community
-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
-seo-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
+description: ' punteggio e simboli AEM Communities consente di identificare e premiare i membri della community'
+seo-description: ' punteggio e simboli AEM Communities consente di identificare e premiare i membri della community'
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
+La funzione  punteggio e distintivi AEM Communities consente di identificare e premiare i membri della community.
 
 I principali aspetti del punteggio e dei simboli sono:
 
@@ -36,7 +36,7 @@ I principali aspetti del punteggio e dei simboli sono:
 
 >[!CAUTION]
 >
->La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l&#39;interfaccia utente diventa disponibile.
+>La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
 
 ## Badge {#badges}
 
@@ -222,7 +222,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
    <td>Lungo</td> 
    <td> 
     <ul> 
-     <li>obbligatorio; il verbo corrisponde a un'azione evento</li> 
+     <li>obbligatorio; il verbo corrisponde a un'azione di evento</li> 
      <li>deve essere presente almeno una proprietà verbo</li> 
      <li>il verbo deve essere inserito in tutto MAIUSCOLO</li> 
      <li>possono essere presenti più proprietà verbo, ma non sono presenti duplicati</li> 
@@ -345,7 +345,7 @@ La `scoringRules`proprietà di una regola di contrassegno limita semplicemente l
 
 >[!NOTE]
 >
->Procedura consigliata: create immagini del badge univoche per ciascun sito AEM.
+>Procedura consigliata: create immagini di contrassegno univoche per ciascun sito AEM.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -428,6 +428,7 @@ ad esempio: https://&lt;server>:&lt;porta>/home/users/community/riley/profile.so
 >
 >* Può fare riferimento a un&#39;istanza di autore se il servizio [](users.md#tunnel-service) Tunnel è abilitato
 >* Può trattarsi di un nome casuale oscuro; consultate Elenco di controllo [di sicurezza](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) per informazioni sull&#39;ID autorizzabile
+
 >
 
 
@@ -585,7 +586,7 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
 
 È possibile provare rapidamente a utilizzare il punteggio e il contrassegno utilizzando il sito [Esercitazione](getting-started.md) iniziale (interazione):
 
-* Accesso a CRXDE Lite per l&#39;autore
+* Accesso CRXDE Lite all&#39;autore
 * Passa alla pagina di base:
 
    * /content/sites/interazione/it/jcr:content
