@@ -1,8 +1,8 @@
 ---
-title: Configurare i moduli AEM per le informazioni di preacquisizione del dominio
-seo-title: Configurare i moduli AEM per le informazioni di preacquisizione del dominio
-description: 'Configurate i moduli AEM per la preacquisizione delle informazioni sul dominio in caso di tempi di risposta più lenti a causa di gruppi nidificati o di membri di molti gruppi. '
-seo-description: 'Configurate i moduli AEM per la preacquisizione delle informazioni sul dominio in caso di tempi di risposta più lenti a causa di gruppi nidificati o di membri di molti gruppi. '
+title: Configurare AEM moduli per le informazioni di preacquisizione del dominio
+seo-title: Configurare AEM moduli per le informazioni di preacquisizione del dominio
+description: 'Configurate AEM moduli per la preacquisizione delle informazioni sul dominio in caso di tempi di risposta più lenti a causa di gruppi nidificati o di membri di molti gruppi. '
+seo-description: 'Configurate AEM moduli per la preacquisizione delle informazioni sul dominio in caso di tempi di risposta più lenti a causa di gruppi nidificati o di membri di molti gruppi. '
 uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
 
-# Configurare i moduli AEM per le informazioni di preacquisizione del dominio {#configure-aem-forms-to-prefetchdomain-information}
+# Configurare AEM moduli per le informazioni di preacquisizione del dominio {#configure-aem-forms-to-prefetchdomain-information}
 
-Gli utenti potrebbero riscontrare un tempo di risposta più lento se appartengono a molti gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). In caso di problemi, puoi configurare i moduli AEM per preacquisire informazioni da alcuni domini.
+Gli utenti potrebbero riscontrare un tempo di risposta più lento se appartengono a molti gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). Se si verifica questo problema, è possibile configurare AEM moduli per preacquisire informazioni da alcuni domini.
 
 1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Importa ed esporta file]** di configurazione.
 1. Per esportare l’impostazione di configurazione corrente in un file, fate clic su **[!UICONTROL Esporta]** e salvate il file di configurazione in un’altra posizione.
