@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 38%
 
 ---
 
@@ -45,12 +48,15 @@ Per accedere alla console Tag dell’interfaccia classica:
 
 1. In entrambi i casi, immettere
 
-   * **Titolo**(*obbligatorio*) Titolo visualizzato per il tag . È possibile inserire qualsiasi carattere,
+   * **Titolo**
+(
+*Obbligatorio*) Titolo visualizzato per il tag . È possibile inserire qualsiasi carattere,
 
       si consiglia di non utilizzare i seguenti caratteri speciali:
 
       * `colon (:)` - delimitatore dello spazio nomi
       * `forward slash (/)` - delimitatore di tag secondari
+
       Questi caratteri non verranno visualizzati se immessi.
 
    * **Nome**
