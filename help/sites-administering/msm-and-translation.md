@@ -1,8 +1,8 @@
 ---
 title: Amministrazione di siti Web
 seo-title: Amministrazione di siti Web
-description: Scoprite come gestire siti Web multilingue in AEM.
-seo-description: Scoprite come gestire siti Web multilingue in AEM.
+description: Scopri come gestire siti Web multilingue in AEM.
+seo-description: Scopri come gestire siti Web multilingue in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +53,8 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 >In questo e in altri scenari, MSM non gestisce le diverse versioni in quanto tale.
 >
 >* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione di contenuti tradotti da un blueprint (ad esempio, un master globale) alle Live Copy (ad esempio i siti locali), entro i limiti di una lingua.
->* Le funzionalità di integrazione della [traduzione](/help/sites-administering/translation.md) di AEM, insieme ai servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
+>* Le capacità di integrazione della [traduzione](/help/sites-administering/translation.md) di AEM, insieme ai servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
+
 >
 >
 Per casi d&#39;uso più avanzati, MSM può essere utilizzato anche nelle lingue master.
