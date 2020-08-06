@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ## Crea sito community {#create-community-site}
 
-[La creazione](sites-console.md) di siti community utilizza una procedura guidata che guida l&#39;utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next`passo precedente o `Back`al passo precedente prima di impegnare il sito nel passaggio finale.
+[La creazione](sites-console.md) di siti community utilizza una procedura guidata che guida l&#39;utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next`passo precedente o `Back`al passo precedente prima di eseguire il commit del sito nel passaggio finale.
 
 Per iniziare a creare un nuovo sito community:
 
-Utilizzo dell’istanza di [creazione](http://localhost:4502/)
+Utilizzo dell’istanza di [creazione](Http://localhost:4502/)
 
 * Accesso con privilegi di amministratore
 * Vai a **[!UICONTROL Community > Siti]**
@@ -43,7 +46,7 @@ Nel passaggio Modello **** sito, immettete un titolo, una descrizione, il nome d
 * **Radice** sito community: (lasciare vuoto per la radice predefinita `/content/sites`)
 
 * **Configurazioni** cloud: (lasciate vuoto se non sono specificate configurazioni cloud) fornite il percorso alle configurazioni cloud specificate.
-* **Lingua** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzate il menu a discesa per scegliere una *o più* lingue di base tra quelle disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese tradizionale e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](../../help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
+* **Lingua** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzate il menu a discesa per scegliere una *o più* lingue di base tra quelle disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese (tradizionale) e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](../../help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
 
 * **[!UICONTROL Nome sito community]**: `enable`
 
@@ -74,7 +77,7 @@ Selezionate lo stile da applicare al modello. Quando è selezionato, il tema sar
 
 Seleziona **[!UICONTROL Avanti]**.
 
-### Passaggio 3:Impostazioni {#step-settings}
+### Passaggio 3: Impostazioni {#step-settings}
 
 Nella fase Settings (Impostazioni), prima di selezionare `Next`, sono presenti sette sezioni che forniscono l&#39;accesso alle configurazioni che includono gestione utente, tag, ruoli, moderazione, analisi, traduzione e abilitazione.
 
@@ -96,11 +99,11 @@ Verificare che la maggior parte delle caselle di controllo non sia selezionata p
 
 #### TAGGING {#tagging}
 
-I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM precedentemente definiti tramite la console [](../../help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](enablement-setup.md#create-tutorial-tags)esercitazioni).
+I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM definiti in precedenza tramite la console [](../../help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](enablement-setup.md#create-tutorial-tags)esercitazioni).
 
 Inoltre, selezionando Tag namespace per il sito della community, la selezione presentata nella definizione di cataloghi e risorse di abilitazione viene limitata. Per informazioni importanti, consulta [Assegnazione di tag alle risorse](tag-resources.md) di abilitazione.
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio:
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
 
 * Tipo &#39;tut&#39;
 * Seleziona `Tutorial`
@@ -111,9 +114,9 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esem
 
 [I ruoli](users.md) dei membri della community vengono assegnati tramite le impostazioni nella sezione Ruoli.
 
-Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
+Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Ad esempio:
+Ad esempio,
 
 * Tipo &quot;q&quot;
 * Seleziona [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
@@ -151,12 +154,13 @@ Le impostazioni [di](sites-console.md#translation) traduzione specificano se è 
 
 Per una comunità di abilitazione, è necessario identificare uno o più manager di abilitazione della community.
 
-* **[!UICONTROL Manager]** abilitazione (obbligatorio) I membri del `Community Enablement Managers` gruppo possono essere selezionati per gestire il sito community.
+* **[!UICONTROL Manager]** abilitazione (obbligatorio) Membri del gruppo 
+`Community Enablement Managers` sono disponibili per essere selezionati per gestire questo sito community.
 
    * Tipo &quot;s&quot;
    * Seleziona `Sirius Nilson`
 
-* **[!UICONTROL ID]** organizzazione Marketing Cloud (facoltativo) L&#39;ID per un account Adobe Analytics, necessario per l&#39;inclusione di [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) nella generazione dei rapporti di abilitazione.
+* **[!UICONTROL ID]** organizzazione Marketing Cloud (facoltativo) ID per un account Adobe Analytics , necessario per l’inclusione di [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) nella generazione dei rapporti di abilitazione.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -192,7 +196,7 @@ Da sinistra a destra sono:
 
 * **Pubblica sito** Selezionate l&#39;icona del mondo per pubblicare il sito della community (per impostazione predefinita, localhost:4503)
 
-* **Esporta sito** Selezionate l&#39;icona di esportazione per creare un pacchetto del sito della community che viene memorizzato e scaricato in [Package Manager](../../help/sites-administering/package-manager.md) .
+* **Esporta sito** Selezionate l&#39;icona di esportazione per creare un pacchetto del sito della community che viene memorizzato e scaricato in [Gestione](../../help/sites-administering/package-manager.md) pacchetti.
 
    UGC non è incluso nel pacchetto del sito.
 
@@ -214,7 +218,7 @@ Ci sarà un&#39;indicazione che il sito è stato pubblicato.
 
 ### Notifica nuovi gruppi di utenti community {#notice-new-community-user-groups}
 
-Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti con le autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, consultate Gruppi di [utenti per i siti](users.md#usergroupsforcommunitysites)della community.
+Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti che dispongono delle autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, visitate Gruppi di [utenti per i siti](users.md#usergroupsforcommunitysites)della community.
 
 Per questo nuovo sito community, dato il nome del sito &quot;enable&quot; nel passaggio 1, i nuovi gruppi di utenti presenti nell&#39;ambiente di pubblicazione possono essere visualizzati dalla console [Membri e gruppi di](members.md#groups-console)Communities:
 
@@ -263,7 +267,7 @@ Per iniziare
 
 1. Al momento della pubblicazione, accedete a CRXDE ed effettuate l&#39;accesso con privilegi di amministratore
 
-   * Ad esempio, [http://localhost:4503/crx/de](http://localhost:4503/crx/de) e accedere con `admin/admin`
+   * Ad esempio, accedete a [http://localhost:4503/crx/de](http://localhost:4503/crx/de) e accedete con `admin/admin`
 
 1. Nel browser del progetto, espandi `/etc/map`
 1. Selezionare il `http` nodo
@@ -316,7 +320,7 @@ Il valore &#39;**$**&#39; alla fine della `sling:match`stringa di espressione re
 
 ## Modifica del sito community {#modifying-the-community-site}
 
-Dopo la creazione iniziale del sito, gli autori possono utilizzare l’icona [](sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring di AEM.
+Dopo la creazione iniziale del sito, gli autori possono utilizzare l&#39;icona [](sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring AEM.
 
 Inoltre, gli amministratori possono utilizzare l’icona [](sites-console.md#modifying-site-properties) Modifica sito per modificare le proprietà del sito, ad esempio il titolo.
 
@@ -347,10 +351,10 @@ Selezionate il pannello STRUTTURA per aggiungere un catalogo o modificarne uno e
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
 
-Utilizzare l&#39;icona Posizione per spostare la funzione Catalogo nella seconda posizione, dopo Assegnazioni.
+Utilizzate l&#39;icona Posizione per spostare la funzione Catalogo nella seconda posizione, dopo Assegnazioni.
 
 ![chlimage_1-300](assets/chlimage_1-300.png)
 
-Selezionate **[!UICONTROL Salva]** nell&#39;angolo superiore destro per salvare le modifiche apportate al sito della community.
+Selezionate **[!UICONTROL Salva]** nell&#39;angolo in alto a destra per salvare le modifiche apportate al sito della community.
 
 Quindi **pubblicate nuovamente** il sito.
