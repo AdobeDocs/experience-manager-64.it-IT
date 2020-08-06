@@ -13,19 +13,19 @@ ht-degree: 5%
 
 # Elabora risorse tramite gestori e flussi di lavoro {#processing-assets-using-media-handlers-and-workflows}
 
-Risorse Adobe Experience Manager offre una serie di flussi di lavoro e gestori di contenuti multimediali predefiniti per l’elaborazione delle risorse. Un flusso di lavoro definisce una tipica attività di gestione ed elaborazione delle risorse, quindi delega le attività specifiche ai gestori dei contenuti multimediali, ad esempio generazione di miniature o estrazione di metadati.
+Adobe Experience Manager Assets offre una serie di flussi di lavoro e gestori di contenuti multimediali predefiniti per l’elaborazione delle risorse. Un flusso di lavoro definisce una tipica attività di gestione ed elaborazione delle risorse, quindi delega le attività specifiche ai gestori dei contenuti multimediali, ad esempio generazione di miniature o estrazione di metadati.
 
-Potete definire un flusso di lavoro che viene eseguito automaticamente quando una risorsa di un particolare tipo o formato viene caricata sul server. I passaggi di elaborazione sono definiti come una serie di gestori di contenuti multimediali di AEM Assets. AEM offre alcuni gestori [integrati,](#default-media-handlers) e altri possono essere sviluppati [o definiti](#creating-a-new-media-handler) personalizzati delegando il processo a uno strumento [della riga di](#command-line-based-media-handler)comando.
+Potete definire un flusso di lavoro che viene eseguito automaticamente quando una risorsa di un particolare tipo o formato viene caricata sul server. I passaggi di elaborazione sono definiti come una serie di gestori  supporti AEM Assets. AEM fornisce alcuni gestori [integrati,](#default-media-handlers) e altri possono essere sviluppati [](#creating-a-new-media-handler) personalizzati o definiti delegando il processo a uno strumento [della riga di](#command-line-based-media-handler)comando.
 
-I gestori di file multimediali sono servizi all’interno di Risorse AEM che eseguono azioni specifiche sulle risorse. Ad esempio, quando un file audio MP3 viene caricato in AEM, un flusso di lavoro attiva un gestore MP3 che estrae i metadati e genera una miniatura. I gestori di file multimediali vengono generalmente utilizzati in combinazione con i flussi di lavoro. La maggior parte dei tipi MIME comuni è supportata in AEM. Per eseguire specifiche attività sulle risorse è possibile estendere/creare flussi di lavoro, estendere/creare gestori di contenuti multimediali o disattivare/abilitare i gestori di contenuti multimediali.
+I gestori di file multimediali sono servizi all’interno  AEM Assets che eseguono azioni specifiche sulle risorse. Ad esempio, quando un file audio MP3 viene caricato in AEM, un flusso di lavoro attiva un gestore MP3 che estrae i metadati e genera una miniatura. I gestori di file multimediali vengono generalmente utilizzati in combinazione con i flussi di lavoro. La maggior parte dei tipi MIME comuni è supportata in AEM. Per eseguire specifiche attività sulle risorse è possibile estendere/creare flussi di lavoro, estendere/creare gestori di contenuti multimediali o disattivare/abilitare i gestori di contenuti multimediali.
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da Risorse AEM e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati [supportati da](assets-formats.md) Risorse.
+>Per una descrizione di tutti i formati supportati da  AEM Assets e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati [supportati da](assets-formats.md) Risorse.
 
 ## Gestori multimediali predefiniti {#default-media-handlers}
 
-I seguenti gestori di file multimediali sono disponibili in AEM Assets e gestiscono i tipi MIME più comuni:
+I seguenti gestori di supporti sono disponibili in  AEM Assets e gestiscono i tipi MIME più comuni:
 
 | Nome gestore | Nome servizio (nella console di sistema) | Tipi MIME supportati |
 |---|---|---|
@@ -59,7 +59,7 @@ Tutti i gestori eseguono le seguenti operazioni:
 
 I gestori di file multimediali sono servizi solitamente utilizzati in combinazione con i flussi di lavoro.
 
-In AEM sono disponibili alcuni flussi di lavoro predefiniti per l’elaborazione delle risorse. Per visualizzarli, aprite la console Flusso di lavoro e fate clic sulla scheda **[!UICONTROL Modelli]** : i titoli dei flussi di lavoro che iniziano con Risorse AEM sono le risorse specifiche.
+AEM dispone di alcuni flussi di lavoro predefiniti per l’elaborazione delle risorse. Per visualizzarli, aprite la console Flusso di lavoro e fate clic sulla scheda **[!UICONTROL Modelli]** : i titoli dei flussi di lavoro che iniziano con  AEM Assets sono quelli specifici delle risorse.
 
 I flussi di lavoro esistenti possono essere estesi e possono essere creati nuovi per elaborare le risorse in base a requisiti specifici.
 
@@ -129,7 +129,7 @@ Procedere come segue:
 
 Fare riferimento a Strumenti [di](../sites-developing/dev-tools.md) sviluppo per installare e configurare Eclipse con un plugin Maven e per impostare le dipendenze necessarie per il progetto Maven.
 
-Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AEM, vengono estratti i metadati del file e vengono generate due miniature con una filigrana.
+Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AEM, i metadati del file vengono estratti e vengono generate due miniature con una filigrana.
 
 1. In Eclipse, crea progetto `myBundle` Maven:
 
@@ -140,8 +140,8 @@ Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AE
 
       * ID gruppo: com.day.cq5.myhandler
       * Id Artifact: myBundle
-      * Nome: Pacchetto AEM personale
-      * Descrizione: Questo è il mio bundle AEM
+      * Nome: Il mio AEM bundle
+      * Descrizione: Questo è il mio AEM bundle
    1. Click **[!UICONTROL Finish]**.
 
 
@@ -435,9 +435,9 @@ Dopo aver eseguito la procedura seguente, quando caricate un file di testo in AE
 
 ## Gestore multimediale basato su riga di comando {#command-line-based-media-handler}
 
-AEM consente di eseguire qualsiasi strumento della riga di comando all’interno di un flusso di lavoro per convertire le risorse (ad esempio ImageMagick) e aggiungere la nuova rappresentazione alla risorsa. È sufficiente installare lo strumento della riga di comando sul disco in cui risiede il server AEM e aggiungere e configurare un passaggio del processo al flusso di lavoro. Il processo invocato, denominato `CommandLineProcess`, consente inoltre di filtrare in base a tipi MIME specifici e di creare più miniature in base alla nuova rappresentazione.
+AEM consente di eseguire qualsiasi strumento della riga di comando all’interno di un flusso di lavoro per convertire le risorse (ad esempio ImageMagick) e aggiungere alla risorsa la nuova rappresentazione. È sufficiente installare lo strumento della riga di comando sul disco in cui è installato il server AEM e aggiungere e configurare un passaggio del processo al flusso di lavoro. Il processo invocato, denominato `CommandLineProcess`, consente inoltre di filtrare in base a tipi MIME specifici e di creare più miniature in base alla nuova rappresentazione.
 
-Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in Risorse AEM:
+Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in  AEM Assets:
 
 * Trasformazione EPS e AI tramite [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/)
 * Transcodifica video FLV tramite [FFmpeg](https://ffmpeg.org/)
@@ -451,16 +451,16 @@ Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in
 Il `CommandLineProcess` processo esegue le seguenti operazioni nell&#39;ordine in cui sono elencate:
 
 * Filtra il file in base a tipi mime specifici, se specificati.
-* Crea una directory temporanea sul disco in cui risiede il server AEM.
+* Crea una directory temporanea sul disco che ospita il server AEM.
 * Invia il file originale alla directory temporanea.
-* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito all’interno della directory temporanea con le autorizzazioni dell’utente che esegue AEM.
+* Esegue il comando definito dagli argomenti del passaggio. Il comando viene eseguito all&#39;interno della directory temporanea con le autorizzazioni dell&#39;utente che esegue AEM.
 * Invia di nuovo il risultato nella cartella di rappresentazione del server AEM.
 * Elimina la directory temporanea.
 * Crea le miniature in base a tali rappresentazioni, se specificate. Il numero e le dimensioni delle miniature sono definiti dagli argomenti del passaggio.
 
 ### Esempio di utilizzo di ImageMagick {#an-example-using-imagemagick}
 
-L’esempio seguente mostra come impostare il passaggio del processo della riga di comando in modo che ogni volta che una risorsa con gif o tiff mime viene aggiunta a /content/dam sul server AEM, un’immagine capovolta dell’originale viene creata insieme a tre miniature aggiuntive (140x100, 48x48 e 10x250).
+L’esempio seguente mostra come impostare il passaggio del processo della riga di comando in modo che ogni volta che una risorsa con gif o tiff mime viene aggiunta a /content/dam sul server AEM, venga creata un’immagine capovolta dell’originale insieme a tre miniature aggiuntive (140x100, 48x48 e 10x250).
 
 A questo scopo, utilizzare ImageMagick. Installate ImageMagick sul disco che ospita il server AEM:
 
@@ -504,7 +504,7 @@ Questa sezione descrive come impostare **[!UICONTROL Argomenti processo]** di `C
 | tn:&lt;larghezza>:&lt;altezza> | Argomento facoltativo. Viene creata una miniatura con le dimensioni definite nell’argomento. <br>È possibile definire diverse miniature. |
 | cmd: &lt;comando> | Definisce il comando che verrà eseguito. La sintassi dipende dallo strumento della riga di comando. È possibile definire un solo comando. <br>Per creare il comando è possibile utilizzare le seguenti variabili:<br>`${filename}`: nome del file di input, ad esempio Original.jpg <br> `${file}`: nome percorso completo del file di input, ad esempio /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory del file di input, ad esempio /tmp/cqdam0816.tmp <br>`${basename}`: nome del file di input senza estensione, ad esempio originale <br>`${extension}`: estensione del file di input, ad esempio jpg |
 
-Ad esempio, se ImageMagick è installato sul disco che ospita il server AEM e se create un passaggio di processo utilizzando **CommandLineProcess** come implementazione e i seguenti valori come Argomenti **di** processo:
+Ad esempio, se ImageMagick è installato sul disco che ospita il server di AEM e se si crea una fase di processo utilizzando **CommandLineProcess** come implementazione e i seguenti valori come Argomenti **di** processo:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
