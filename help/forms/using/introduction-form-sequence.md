@@ -1,8 +1,8 @@
 ---
 title: Introduzione a una sequenza di moduli con più fasi
 seo-title: Introduzione a una sequenza di moduli con più fasi
-description: Con AEM Forms è possibile definire una sequenza di pannelli di moduli in cui gli utenti possono navigare e compilare un modulo adattivo.
-seo-description: Con AEM Forms è possibile definire una sequenza di pannelli di moduli in cui gli utenti possono navigare e compilare un modulo adattivo.
+description: Con  AEM Forms, è possibile definire una sequenza di pannelli di moduli in cui gli utenti possono navigare e compilare un modulo adattivo.
+seo-description: Con  AEM Forms, è possibile definire una sequenza di pannelli di moduli in cui gli utenti possono navigare e compilare un modulo adattivo.
 uuid: b2b94e4c-0c28-47ba-8e23-fd8742baf71c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +21,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 I moduli adattivi consentono agli autori dei moduli di creare esperienze di acquisizione dei dati con più passaggi con grande facilità. Viene fornito con un supporto integrato per la creazione di più pannelli e l’associazione di ciascun pannello a diversi pattern di navigazione. Gli autori dei moduli possono raggruppare i campi modulo in sezioni logiche e rappresentare un gruppo come pannello. La navigazione tra i pannelli è controllata mediante il layout del pannello. Gli autori possono scegliere di disporre i pannelli in layout diversi, ad esempio per inserirli in sequenza con il layout Procedura guidata o in modo ad hoc utilizzando il layout a schede. Per informazioni sui layout dei pannelli, vedere Capacità di [layout dei moduli](/help/forms/using/layout-capabilities-adaptive-forms.md)adattivi.
 
-In una tipica esperienza di compilazione dei moduli, sono necessari più passaggi rispetto all&#39;acquisizione dei dati. L&#39;invio completo del modulo può comprendere altri passaggi, quali la firma digitale del modulo, la verifica delle informazioni compilate nel modulo, l&#39;elaborazione dei pagamenti e così via. È diverso da caso a caso.
+In una tipica esperienza di compilazione dei moduli, sono necessari più passaggi rispetto all&#39;acquisizione dei dati. L&#39;invio completo del modulo può comprendere altri passaggi, ad esempio la firma digitale del modulo, la verifica delle informazioni compilate nel modulo, l&#39;elaborazione dei pagamenti e così via. È diverso da caso a caso.
 
-Se il caso d’uso richiede una serie di passaggi per l’acquisizione dei dati o se sono necessarie determinate procedure, in AEM Forms è possibile applicare tale struttura comune a più moduli. L&#39;implementazione premeditata della struttura del modulo definisce la sequenza di passaggi per un modulo. ![Esempio di una sequenza di moduli con più fasi](assets/formpipeline.png)
+Se il caso d&#39;uso richiede una serie di passaggi per l&#39;acquisizione dei dati o se è necessario seguire alcuni passaggi,  AEM Forms fornisce un modo per applicare tale struttura comune a tutti i moduli. L&#39;implementazione premeditata della struttura del modulo definisce la sequenza di passaggi per un modulo. ![Esempio di una sequenza di moduli con più fasi](assets/formpipeline.png)
 
 Si consideri un caso d’uso in cui è necessario creare una sequenza per la compilazione, la verifica, la firma e i passaggi di conferma di un modulo. Per creare una sequenza di questo tipo, effettuate le seguenti operazioni:
 
