@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1216'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Questa sezione della documentazione descrive
 
 Per aggiungere un `QnA` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / QnA` e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il forum QnA.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](qna-essentials.md#essentials-for-client-side) richieste, verrà visualizzato il `QnA` componente:
 
@@ -66,9 +69,11 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per gli
 
 * **[!UICONTROL Consenti caricamenti]** file Se questa opzione è selezionata, consenti l’aggiunta di allegati alla domanda o al commento. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Dimensione]** massima file pertinente solo se `Allow File Uploads` è selezionata. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+* **[!UICONTROL Dimensione]** massima file rilevante solo se 
+`Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
-* **[!UICONTROL Tipi]** di file consentiti Pertinenti solo se `Allow File Uploads` è selezionata. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+* **[!UICONTROL Tipi]** di file consentiti rilevanti solo se 
+`Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Dimensione]** massima file immagine pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Numero massimo di byte di cui può disporre un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
@@ -76,7 +81,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per gli
 
 * **[!UICONTROL Consenti blocco]** Se questa opzione è selezionata, gli argomenti del forum possono essere bloccati in cima all’elenco di argomenti. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [l’](email.md)e-mail. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti iscrizioni]** e-mail Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post tramite e-mail ([iscrizione](subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti risposte]** Se questa opzione è selezionata, consenti risposte ai commenti inviati alla domanda. Il valore predefinito è deselezionato.
 
@@ -106,7 +111,7 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 * **[!UICONTROL Motivo]** contrassegno personalizzato Se questa opzione è selezionata, consentire ai membri di inserire il proprio motivo per cui la domanda o la risposta è contrassegnata come non appropriata. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Soglia moderazione]** Immettere il numero di volte in cui i membri devono contrassegnare una domanda o una risposta prima che i moderatori ne vengano informati. Il valore predefinito è 1 (una volta).
+* **[!UICONTROL Soglia moderazione]** Immettere il numero di volte in cui i membri devono contrassegnare una domanda o una risposta prima che i moderatori ne ricevano una notifica. Il valore predefinito è 1 (una volta).
 
 * **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte è necessario contrassegnare una domanda o una risposta prima di nasconderla dalla visualizzazione pubblica. Se è impostato su -1, la domanda o la risposta contrassegnata non viene mai nascosta dalla visualizzazione pubblica. In caso contrario, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
@@ -114,19 +119,24 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Impostazioni]** , sono limitati in base agli spazi dei nomi selezionati.
 
-* **[!UICONTROL Spazi dei nomi consentiti]** Rilevanti se `Allow Tagging` è selezionato nella scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+* **[!UICONTROL Spazi dei nomi consentiti]** rilevanti se 
+`Allow Tagging` è selezionato nella scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di `-1` significa nessun limite. Il valore predefinito è 0.
+* **[!UICONTROL Limite]** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di 
+`-1` significa nessun limite. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
 Nella scheda **[!UICONTROL Impostazioni]** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
-* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Ordina per]** selezionare tutte le selezioni di ordinamento consentite: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Default is `Newest`.
+* **[!UICONTROL Imposta come Predefinito]** pull verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Il valore predefinito è 
+`Newest`.
 
-* **[!UICONTROL Seleziona Opzioni ora per l&#39;ordinamento]** pull in basso di Analytics per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+* **[!UICONTROL Seleziona le opzioni di ora per l&#39;ordinamento]** pull di Analytics per selezionare una delle 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
