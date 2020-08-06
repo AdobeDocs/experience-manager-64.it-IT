@@ -13,6 +13,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '6592'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->Questa sezione descrive i componenti di base, che sono disponibili in AEM da numerose versioni e vengono forniti con l’installazione standard di AEM. Tuttavia, alcuni dei componenti di base sono stati ritirati da AEM 6.4.
+>Questa sezione descrive i componenti di base, che sono disponibili in AEM da numerose versioni e vengono forniti con l’installazione standard di AEM. Tuttavia, alcuni dei componenti di base sono stati dichiarati obsoleti con AEM 6.4.
 >
 >Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
 
@@ -43,7 +46,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 
 * [Configura proprietà](/help/sites-authoring/editing-page-properties.md)
 * [Modifica contenuto](/help/sites-authoring/editing-content.md)
-* [Modifica contenuto - Modalità a schermo intero](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [Modifica contenuto - Modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 I componenti sono ordinati in base alle varie categorie, o gruppi di componenti, che comprendono:
 
@@ -58,7 +61,7 @@ I componenti del gruppo Generale sono i componenti di base utilizzati per creare
 ### Elemento account {#account-item}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 È possibile definire un collegamento con titolo e descrizione.
 
@@ -67,7 +70,7 @@ I componenti del gruppo Generale sono i componenti di base utilizzati per creare
 ### Immagine adattiva {#adaptive-image}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>Questo componente di base è stato dichiarato obsoleto. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) instead.
 
 Il componente Immagine adattiva genera immagini che vengono ridimensionate in base alla finestra nella quale viene aperta la pagina web. Per utilizzare questo componente, occorre fornire una risorsa immagine dal file system o DAM. Quando la pagina web viene aperta, il browser scarica una copia dell’immagine ridimensionata, adatta per la finestra corrente.
 
@@ -200,7 +203,8 @@ Sono disponibili in due schede:
          * **Pagina padre** Consente di specificare il percorso manualmente o utilizzando il selettore. Non specificare nulla per utilizzare la pagina corrente come pagina padre.
       * **Opzioni per elenco fisso**
 
-         * **Pagine** Selezionare un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
+         * **Pagine** Selezionare un elenco di pagine. Use 
+`+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
       * **Opzioni per la ricerca**
 
          * **Inizia in**
@@ -271,7 +275,7 @@ L’esempio seguente mostra un esempio di dati del grafico, seguiti dal grafico 
 
 ### Frammento di contenuto {#content-fragment}
 
-I [frammenti di contenuto](/help/sites-authoring/content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante la creazione di pagine di contenuto.
+I [frammenti di contenuto](/help/sites-authoring/content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 ### Importazione progettazione {#design-importer}
 
@@ -328,7 +332,7 @@ L’applicazione esterna viene integrata nel sistema paragrafo della pagina AEM,
 ### Flash {#flash}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Flash permette di caricare un filmato Flash. Puoi trascinare una risorsa Flash da Content Finder sul componente oppure usare la finestra di dialogo:
 
@@ -529,7 +533,7 @@ Nell’esempio seguente, un componente **Elenco** visualizza una serie di pagine
 ### Accesso {#login}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Forniscono i campi nome utente e password.
 
@@ -579,7 +583,7 @@ Puoi configurare i parametri seguenti:
 
    * **Tipo/Dimensione**
 
-      Selezionare dalla selezione fornita.
+      Selezionare tra le opzioni disponibili.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -879,6 +883,7 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
 * Video
 
    * **Risorsa video**
+
    Caricate o rilasciate la risorsa video.
 
    * **Dimensione**
@@ -893,6 +898,7 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (video Flash)
+
 >
 
 
@@ -1050,7 +1056,7 @@ Tra l’inizio e la fine di un modulo puoi aggiungere componenti modulo che defi
 
 >[!NOTE]
 >
->Il componente modulo dei componenti di base supporta solo l’uso di altri componenti modulo dei componenti di base (pulsante, testo, nascosto, ecc.). Non è possibile utilizzare dei componenti modulo dei nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”) all’interno di un modulo creato con un precedente componente di base (“foundation”), e viceversa.
+>Il componente modulo dei componenti di base supporta solo l’uso di altri componenti modulo dei componenti di base (pulsante, testo, nascosto, ecc.). Non è possibile utilizzare dei componenti modulo dei nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”) all’interno di un modulo creato con un precedente componente di base (“foundation”), e viceversa.
 
 #### Inizio del modulo {#start-of-form}
 
@@ -1066,9 +1072,10 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
 
 * **Avanzate**
 
-   * **Tipo** azione Un modulo richiede un’azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una configurazione **** azione corrispondente.
+   * **Tipo** azione Un modulo richiede un’azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono un 
+**Configurazione azione**.
 
-      Una selezione di tipi di azione è inclusa in un’installazione standard di AEM:
+      Una selezione di tipi di azione è inclusa in un&#39;installazione standard AEM:
 
       * **Richiesta account**
       * **Crea contenuto**
@@ -1279,7 +1286,7 @@ Il componente è configurato per l’utilizzo immediato, ma puoi modificare la c
 ### Captcha {#captcha}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Captcha richiede all’utente di inserire la stringa alfanumerica visualizzata sullo schermo. Con ogni aggiornamento della schermata viene visualizzata una stringa diversa.
 
@@ -1304,7 +1311,7 @@ Puoi specificare vari parametri, inclusi un titolo, una descrizione e il nome de
 ### Dati carta di credito {#credit-card-details}
 
 >[!CAUTION]
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Questo consente di includere i campi necessari per inserire i dati della carta di credito. Puoi configurarlo per specificare i tipi di carte accettate e le informazioni richieste (ad esempio, il codice protezione).
 
@@ -1324,7 +1331,7 @@ Puoi specificare un titolo e le voci incluse nell’elenco. Utilizza i pulsanti 
 >
 >Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento file {#file-upload}
+### Caricamento di file {#file-upload}
 
 Il componente Caricamento file offre all’utente la possibilità di selezionare e caricare un file.
 
