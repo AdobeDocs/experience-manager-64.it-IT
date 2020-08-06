@@ -1,14 +1,17 @@
 ---
 title: Creare un modulo adattivo utilizzando un set di moduli adattivi
 seo-title: Creare un modulo adattivo utilizzando un set di moduli adattivi
-description: 'Con AEM Forms, è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
-seo-description: 'Con AEM Forms, è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
+description: 'Con  AEM Forms è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
+seo-description: 'Con  AEM Forms è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 0%
 
 ---
 
@@ -139,6 +142,6 @@ Per aggiungere un modulo adattivo come modulo secondario mediante il browser del
 1. Nella barra laterale, fate clic su **Risorse** ![nel browser](assets/assets-browser.png)Risorse. In Risorse, seleziona Modulo **** adattivo dall’elenco a discesa.
    [ ![Selezione del modulo adattivo in Risorse](assets/asset.png)](assets/asset-1.png)
 
-1. Trascinare il modulo adattivo da aggiungere come modulo secondario.
-   [ Trascinare ![il modulo adattivo nel](assets/drag-drop.png)](assets/drag-drop-1.png)sitoIl modulo adattivo rilasciato viene aggiunto come modulo secondario.
+1. Trascinare il modulo adattivo che si desidera aggiungere come modulo secondario.
+   [ ![Trascinare il modulo adattivo nel](assets/drag-drop.png)](assets/drag-drop-1.png)sitoIl modulo adattivo rilasciato viene aggiunto come modulo secondario.
 
