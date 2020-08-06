@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 0%
 
 ---
 
@@ -55,8 +58,8 @@ Quando scegli un nome di dominio e un ID, tieni presente le considerazioni segue
 
 ### Considerazioni generali {#general-considerations}
 
-* Se si utilizza un provider di database diverso da DB2, l&#39;ID di dominio può contenere fino a 50 byte. Se si utilizzano caratteri ASCII a byte singolo, il limite è di 50 caratteri. Se l’identificatore di dominio contiene caratteri multibyte, questo limite viene ridotto. Ad esempio, se create un dominio il cui identificatore contiene 3 caratteri byte, il limite è di 16 caratteri. Inoltre, non è possibile creare domini che contengono caratteri a 4 byte. Se crei un ID di dominio che supera questo limite, i moduli AEM si troveranno in uno stato instabile. Per recuperare da questo stato instabile, vedere la sezione &quot; [Rimuovere un dominio che contiene caratteri](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estesa o multibyte&quot; in questa pagina.
-* Il numero di domini enterprise e di domini locali che possono essere creati all’interno dei moduli AEM dipende dalla lunghezza di ciascun ID di dominio. Quando si aggiunge un dominio Enterprise o ibrido, Gestione utente aggiorna la stringa configInstance nel nodo AuthProviders del file di configurazione dei moduli AEM (config.xml). La stringa configInstance contiene un elenco separato da due punti dei percorsi assoluti di tutti i domini associati al provider di autorizzazione. Questa stringa ha un limite di dimensione di 8192 caratteri. Una volta raggiunto tale limite, non è possibile creare altri domini.
+* Se si utilizza un provider di database diverso da DB2, l&#39;ID di dominio può contenere fino a 50 byte. Se si utilizzano caratteri ASCII a byte singolo, il limite è di 50 caratteri. Se l’identificatore di dominio contiene caratteri multibyte, questo limite viene ridotto. Ad esempio, se create un dominio il cui identificatore contiene 3 caratteri byte, il limite è di 16 caratteri. Inoltre, non è possibile creare domini che contengono caratteri a 4 byte. Se si crea un ID di dominio che supera questo limite, AEM moduli si troveranno in uno stato instabile. Per recuperare da questo stato instabile, vedere la sezione &quot; [Rimuovere un dominio che contiene caratteri](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estesi o multibyte&quot; in questa pagina.
+* Il numero di domini enterprise e di domini locali che è possibile creare all&#39;interno AEM moduli dipende dalla lunghezza di ciascun ID di dominio. Quando si aggiunge un dominio Enterprise o ibrido, Gestione utente aggiorna la stringa configInstance nel nodo AuthProviders del file di configurazione dei moduli AEM (config.xml). La stringa configInstance contiene un elenco separato da due punti dei percorsi assoluti di tutti i domini associati al provider di autorizzazione. Questa stringa ha un limite di dimensione di 8192 caratteri. Una volta raggiunto tale limite, non è possibile creare altri domini.
 
 ### Considerazioni sull&#39;utilizzo di DB2 {#considerations-when-using-db2}
 
@@ -70,8 +73,8 @@ Quando si utilizza DB2 per il database dei moduli AEM, la lunghezza massima cons
 
 Quando si utilizza MySQL come database di moduli AEM, si applicano le seguenti limitazioni:
 
-* Utilizzate solo caratteri a byte singolo (ASCII) per l&#39;ID di dominio e il nome di dominio. Se utilizzate caratteri ASCII estesi, i moduli AEM si troveranno in uno stato instabile e se tentate di eliminare il dominio potrebbe generare un’eccezione. Per recuperare da questo stato instabile, vedere l&#39;argomento &quot; [Rimuovere un dominio che contiene caratteri](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estesa o multibyte&quot; in questa pagina.
-* Non potete creare due domini con lo stesso nome ma con maiuscole e minuscole diverse. Ad esempio, se si tenta di creare un dominio denominato *Adobe* quando esiste già un dominio denominato *adobe* , si verifica un errore.
+* Utilizzate solo caratteri a byte singolo (ASCII) per l&#39;ID di dominio e il nome di dominio. Se si utilizzano caratteri ASCII estesi, AEM moduli si troveranno in uno stato instabile e potrebbe generare un&#39;eccezione se si tenta di eliminare il dominio. Per recuperare da questo stato instabile, vedere l&#39;argomento &quot; [Rimuovere un dominio che contiene caratteri](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)estesa o multibyte&quot; in questa pagina.
+* Non è possibile creare due domini con lo stesso nome ma con maiuscole e minuscole diverse. Ad esempio, se si tenta di creare un dominio denominato *Adobe* quando esiste già un dominio denominato *adobe* , si verifica un errore.
 * Gestione utente non può distinguere tra due nomi di dominio che differiscono solo per l&#39;uso di caratteri estesi. Ad esempio, se si crea un dominio denominato *abcde* e un dominio denominato *âbcdè *, vengono considerati uguali.
 
 ### Rimuovere un dominio che contiene caratteri estesi o multibyte {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
