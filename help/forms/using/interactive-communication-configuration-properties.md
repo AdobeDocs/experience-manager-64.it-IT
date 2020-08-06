@@ -11,6 +11,9 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
 
-Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto del componente aggiuntivo [](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms. Gli autori delle comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina Configurazione **console Web di** Adobe Experience Manager.
+Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto [componente aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms. Gli autori delle comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina Configurazione **console Web di** Adobe Experience Manager.
 
 Aprite la pagina Configurazione **console Web di** Adobe Experience Manager utilizzando il seguente URL:
 
@@ -89,17 +92,17 @@ Toccate **Crea configurazione** corrispondenza nella pagina Configurazione **con
 
 ## Configurazione canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toccate Configurazione **canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per il canale Web Moduli adattivi e Comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
+Toccate Configurazione **canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per il canale Web per Forms adattivo e per le comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
 | Mostra segnaposto | Selezionate la casella di controllo per attivare la visualizzazione dei segnaposto per i campi inclusi nei moduli adattivi e nelle comunicazioni interattive. | Selezionato | Non applicabile |
 | Numero massimo di voci della cache | Impostare il numero massimo di moduli adattivi e comunicazioni interattive che è possibile recuperare utilizzando la memoria cache. | 100 | Numero |
-| Imposta nome file univoco | Selezionate la casella di controllo per avere nomi univoci per i file inclusi come allegati nei moduli adattivi e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
+| Rendi univoco il nome del file | Selezionate la casella di controllo per avere nomi univoci per i file inclusi come allegati in Forms adattivo e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
 
 ## Configurazione del tema del canale del canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toccate Configurazione **tema canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per i temi dei canali Web per moduli adattivi e comunicazioni interattive.
+Toccate Configurazione **tema canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per i temi canale Web per Forms adattivo e per le comunicazioni interattive.
 
 <table> 
  <tbody> 
@@ -111,9 +114,9 @@ Toccate Configurazione **tema canale Web per moduli** adattivi e comunicazioni i
   </tr> 
   <tr> 
    <td>Nome elenco font</td> 
-   <td>Elenco di font disponibili per la creazione di moduli adattivi e comunicazioni interattive.</td> 
+   <td>Elenco dei font disponibili per la creazione di Forms adattivo e comunicazioni interattive.</td> 
    <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impatto</p> <p>Palatino Linotype</p> </td> 
-   <td>Tutti i font del server Adobe validi</td> 
+   <td>Tutti i font del server di  validi</td> 
   </tr> 
  </tbody> 
 </table>
