@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 2%
 
 ---
 
@@ -68,7 +71,7 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
    ![page-properties](assets/page-properties.png)
 
 1. Enable **[!UICONTROL Authentication Requirement]**.
-1. Aggiungete il percorso della pagina di login. Ad esempio, `/content/......./GetStarted`.
+1. Aggiungete il percorso della pagina di login. Esempio, `/content/......./GetStarted`.
 1. Pubblicate la pagina.
 
 ## Membro della comunità di fiducia {#trusted-community-member}
@@ -93,6 +96,7 @@ Notate che la pagina Calendario è la home page perché il modello di sito di ri
 >
 >* [Componenti](author-communities.md) Community (per autori)
 >* [Componenti, funzioni e funzionalità Essentials](essentials.md) (per sviluppatori)
+
 >
 
 
@@ -150,9 +154,10 @@ Ad esempio, aggiungere due n `ew groups.`
 
 * Prima di visualizzare entrambi i gruppi potrebbe essere necessario aggiornare la pagina
 * Questo modello *non *include la funzione dei gruppi, per cui non sarà possibile effettuare un&#39;ulteriore nidificazione dei gruppi
-* Per l’autore, la console [](groups.md) Gruppi offre una terza scelta, un’iscrizione `Public Group` (facoltativa)
+* All’autore, la console [](groups.md) Gruppi offre una terza scelta, un’iscrizione `Public Group` (facoltativa)
 
-Una volta creati entrambi i gruppi, selezionate il gruppo Baseball, un gruppo aperto e notate i relativi collegamenti: `Discussions` I collegamenti `What's New` `Members`del gruppo sono visualizzati sotto i collegamenti del sito principale e i risultati sono la seguente visualizzazione:
+Una volta creati entrambi i gruppi, selezionate il gruppo Baseball, un gruppo aperto e notate i relativi collegamenti: `Discussions` `What's New` `Members`
+I collegamenti del gruppo sono visualizzati sotto i collegamenti del sito principale e i risultati sono la seguente visualizzazione:
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
@@ -173,13 +178,13 @@ Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password
 
 ## Collegamento pagina Web {#web-page-link}
 
-Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Gli strumenti di authoring standard di AEM possono essere utilizzati per aggiungere contenuti a questa pagina nell’ambiente di authoring.
+Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring è possibile utilizzare gli strumenti AEM di authoring standard.
 
 Ad esempio, passate all’istanza di **creazione** , aprite la `engage` cartella nella console [Siti](sites-console.md)community, selezionate l’icona **Apri sito** per passare alla modalità di modifica dell’autore. Selezionate quindi la modalità di anteprima per selezionare il `Web Page`collegamento, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
 
 ![chlimage_1-321](assets/chlimage_1-321.png)
 
-## Collegamento amministrazione {#administration-link}
+## Collegamento di amministrazione {#administration-link}
 
 Quando il membro della community dispone di privilegi di moderazione, il collegamento Amministrazione sarà visibile e la selezione di tale collegamento consente di visualizzare il contenuto della community pubblicato e di [moderarlo](moderate-ugc.md) in modo simile alla console [di](moderation.md) moderazione nell&#39;ambiente di authoring.
 
@@ -202,7 +207,7 @@ Dopo aver specificato il nome utente, l&#39;e-mail e la password, selezionando q
 
 Una volta effettuato l’accesso, la prima pagina presentata è la `Profile`pagina corrispondente, che possono personalizzare.
 
-![chlimage_1-321](assets/chlimage_1-325.png)
+![chlimage_1-325](assets/chlimage_1-325.png)
 
 Se il membro dimentica il suo ID di accesso, è possibile recuperare utilizzando il suo indirizzo e-mail.
 
