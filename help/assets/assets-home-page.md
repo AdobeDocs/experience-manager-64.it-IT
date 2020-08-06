@@ -1,22 +1,25 @@
 ---
-title: Esperienza della home page di AEM Assets
-description: Personalizza la home page di Risorse AEM per un’esperienza sulla schermata di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+title: ' esperienza della home page di AEM Assets'
+description: Personalizzate la home page di  AEM Assets per un'esperienza ricca di schermata di benvenuto, con un'istantanea delle attività recenti intorno alle risorse.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 1%
 
 ---
 
 
-# Esperienza della home page di AEM Assets {#aem-assets-home-page-experience}
+#  esperienza della home page di AEM Assets {#aem-assets-home-page-experience}
 
-Personalizza la home page di Risorse AEM per un’esperienza sulla schermata di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+Personalizzate la home page di  AEM Assets per un&#39;esperienza ricca di schermata di benvenuto, con un&#39;istantanea delle attività recenti intorno alle risorse.
 
-La home page di Risorse Adobe Experience Manager (AEM) offre una schermata di benvenuto ricca e personalizzata, che include un&#39;istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
+La home page di Adobe Experience Manager (AEM) Assets offre un’esperienza sulla schermata di benvenuto ricca e personalizzata, che include un’istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
 
 Per impostazione predefinita, la home page delle risorse è disattivata. Per attivarla, effettuare le seguenti operazioni:
 
-1. Per accedere a Gestione configurazione AEM, fai clic su **[!UICONTROL Strumenti > Operazione > Console]** Web.
+1. Per accedere AEM Gestione configurazione, fate clic su **[!UICONTROL Strumenti > Operazione > Console]** Web.
 1. Aprite il servizio **Day CQ DAM Event Recorder** .
 1. Selezionate **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell&#39;attività.
 
@@ -66,7 +69,7 @@ Questa sezione viene visualizzata sotto la sezione Benvenuti e presenta i widget
 
 **Recente**: Il widget **Visualizzato** di recente in questa sezione visualizza le entità a cui l&#39;utente ha effettuato l&#39;accesso di recente, comprese cartelle, raccolte e progetti.
 
-**Scopri**: Il **nuovo** widget in questa sezione presenta le risorse e le rappresentazioni caricate di recente nell’istanza di AEM Assets.
+**Scopri**: Il **nuovo** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nell’istanza AEM Assets .
 
 Per abilitare la rimozione dei dati dell&#39;attività utente, abilita il servizio **di rimozione eventi** DAM da Configuration Manager. Dopo aver attivato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
@@ -80,6 +83,6 @@ La schermata introduttiva fornisce strumenti di navigazione semplici, ad esempio
 >
 >L’acquisizione, il filtro e l’eliminazione delle attività utente richieste per la pagina iniziale della risorsa comportano un sovraccarico delle prestazioni. Pertanto, gli amministratori devono configurare la pagina principale in modo efficace per gli utenti target.
 >
->Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorsa per impedire l’aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando **Day CQ DAM Event Recorder** da Configuration Manager.
+> Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorsa per impedire l’aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando **Day CQ DAM Event Recorder** da Configuration Manager.
 >
->Se utilizzate questa funzione, Adobe consiglia di pianificare la frequenza di eliminazione in base al carico del server.
+>Se utilizzate la funzione,  Adobe consiglia di pianificare la frequenza di eliminazione in base al carico del server.
