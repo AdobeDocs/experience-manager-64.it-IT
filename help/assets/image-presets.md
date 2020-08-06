@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +28,7 @@ Questa sezione descrive come usare i predefiniti per immagini. [Gli amministrato
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consultate [Smart Imaging](imaging-faq.md) .
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consulta [Smart Imaging](imaging-faq.md) .
 
 Potete applicare un predefinito per immagini a un’immagine ogni volta che la visualizzate in anteprima.
 
@@ -47,6 +50,7 @@ Potete applicare un predefinito per immagini a un’immagine ogni volta che la v
 
    * Selezionate una rappresentazione dinamica per visualizzare l’anteprima del predefinito per immagini.
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >Se la risorsa *e* il predefinito immagine non sono ancora stati pubblicati, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se presente) non è disponibile.
