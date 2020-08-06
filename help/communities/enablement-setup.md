@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 2%
 
 ---
 
@@ -21,12 +24,12 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 A scopo di sviluppo e dimostrazione, sarà necessario eseguire un&#39;istanza di creazione e pubblicazione.
 
-Seguite le istruzioni di base della [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM per
+Seguite le istruzioni di base AEM [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) per ottenere
 
-* ambiente di authoring su [localhost:4502](http://localhost:4502/)
-* ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
+* ambiente di authoring su [localhost:4502](Http://localhost:4502/)
+* ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
-Per AEM Communities,
+Per  AEM Communities,
 
 * L’ambiente di authoring è impostato su
 
@@ -51,7 +54,7 @@ Questa esercitazione crea un sito community di [abilitazione](overview.md#enable
 
 * [Ultime versioni](deploy-communities.md#latest-releases)
 
-Per un&#39;esercitazione che crea un sito [per la community di](overview.md#engagement-community)coinvolgimento, visita la [Guida introduttiva ad AEM Communities](getting-started.md).
+Per un&#39;esercitazione che crea un sito [per la community di](overview.md#engagement-community)coinvolgimento, visita la [Guida introduttiva ad  AEM Communities](getting-started.md).
 
 ## Configurare le funzioni di abilitazione {#configure-enablement-features}
 
@@ -59,7 +62,7 @@ Per seguire questa esercitazione, è necessario installare e [configurare corret
 
 ## Configura Analytics {#configure-analytics}
 
-Quando [Adobe Analytics è configurato per il sito](analytics.md)community, sono disponibili ulteriori informazioni nei [report](reports.md) generati sulle risorse di abilitazione e sui percorsi di apprendimento assegnati ai membri della community (utenti in formazione).
+Quando [Adobe Analytics è configurato per il sito](analytics.md)community, sono disponibili ulteriori informazioni nei [rapporti](reports.md) generati sulle risorse di abilitazione e sui percorsi di apprendimento assegnati ai membri della community (utenti in formazione).
 
 ## Configura e-mail per notifiche {#configure-email-for-notifications}
 
@@ -97,13 +100,13 @@ Quindi segui le istruzioni riportate in
 1. [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
 
-Esempio di pacchetto di tag creati per le esercitazioni introduttive di AEM Communities
+Esempio di pacchetto di tag creati per i Tutorials Guida introduttiva  AEM Communities
 
 [Ottieni file](assets/communities_tutorialtags-10.zip)
 
 ## Creazione di membri e gruppi di abilitazione {#create-enablement-members-and-groups}
 
-Per un sito community di abilitazione, i visitatori del sito non devono poter registrarsi [autonomamente né utilizzare il login](sites-console.md#user-management)social.
+Per un sito di abilitazione per community, i visitatori del sito non devono poter registrarsi [autonomamente né utilizzare il login](sites-console.md#user-management)per social network.
 
 Con il servizio [](#enable-the-tunnel-service) tunnel attivato, la console [](members.md) Membri viene utilizzata per registrare nuovi membri nell’ambiente di pubblicazione.
 
@@ -125,8 +128,8 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 * **ID**: riley
 * **E-mail**: riley.taylor@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Riley
 * **Cognome**: Taylor
 
@@ -134,10 +137,10 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 [Crea un secondo membro](members.md#create-new-member) che verrà aggiunto al gruppo Community Ski Class.
 
-* **ID**:sidney
+* **ID**: sidney
 * **E-mail**: sidney.croft@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Sidney
 * **Cognome**: Croft
 
@@ -147,8 +150,8 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 * **ID**: quinn
 * **E-mail**: quinn.harper@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Quinn
 * **Cognome**: Harper
 
@@ -161,7 +164,7 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 * **Descrizione**: un gruppo di esempio per assegnare le risorse di abilitazione
 * **Aggiungi membri al gruppo** &#39;aggiungi&#39;:
 
-   *  riley
+   * riley
    * sidney
 
 * Seleziona **[!UICONTROL Salva]**
@@ -184,7 +187,7 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
 * Nell’istanza di creazione
 
-   * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
+   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
 
 * Accesso con privilegi di amministratore
 
@@ -197,8 +200,8 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
    * **ID&amp;ast;**: sirius
    * **Indirizzo** e-mail: sirius.nilson@mailinator.com
-   * **Password&amp;ast;**:password
-   * **Conferma password&amp;ast;**:password
+   * **Password&amp;ast;**: password
+   * **Conferma password&amp;ast;**: password
    * **Nome**: Sirio
    * **Cognome&amp;ast;**: Nilson
 
