@@ -1,8 +1,8 @@
 ---
-title: Utilizzo del flusso di lavoro di traduzione AEM per localizzare moduli adattivi e documenti di registrazione
-seo-title: Utilizzo del flusso di lavoro di traduzione AEM per localizzare moduli adattivi e documenti di registrazione
-description: Scopri come utilizzare i flussi di lavoro di traduzione AEM per localizzare moduli adattivi e documenti di registrazione.
-seo-description: Scopri come utilizzare i flussi di lavoro di traduzione AEM per localizzare moduli adattivi e documenti di registrazione.
+title: Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione
+seo-title: Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione
+description: Scoprite come utilizzare AEM flussi di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione.
+seo-description: Scoprite come utilizzare AEM flussi di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
@@ -10,24 +10,27 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 0%
 
 ---
 
 
-# Utilizzo del flusso di lavoro di traduzione AEM per localizzare moduli adattivi e documenti di registrazione {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-I moduli localizzati consentono di distribuire un pubblico più ampio su più aree geografiche. Il flusso di lavoro di traduzione di Adobe Experience Manager consente di localizzare i moduli adattivi e i relativi documenti record. Per localizzare un modulo adattivo è possibile utilizzare traduttori **** automatici o traduttori **** umani.
+I moduli localizzati consentono di distribuire un pubblico più ampio su più aree geografiche. Il flusso di lavoro di traduzione di Adobe Experience Manager consente di localizzare i moduli adattivi e i relativi documenti da record. Per localizzare un modulo adattivo è possibile utilizzare traduttori **** automatici o traduttori **** umani.
 
-In questo articolo viene illustrato il processo di utilizzo del flusso di lavoro di traduzione AEM con moduli adattivi e documenti di record.
+In questo articolo viene illustrato come utilizzare AEM flusso di lavoro di traduzione con moduli adattivi e documenti di registrazione.
 
 ## Localizzazione di un modulo adattivo e di un documento di registrazione mediante traduzione automatica {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Il servizio di traduzione automatica traduce immediatamente il contenuto in forma adattiva e nel documento di registrazione. AEM Forms è preconfigurato per l’utilizzo di una versione di prova di Microsoft Translator per la traduzione automatica. Per abilitare la traduzione automatica per i moduli adattivi e il documento di record, procedere come segue:
+Il servizio di traduzione automatica traduce immediatamente il contenuto in forma adattiva e nel documento di registrazione.  AEM Forms è preconfigurato per utilizzare una versione di prova di Microsoft Translator per la traduzione automatica. Per abilitare la traduzione automatica per i moduli adattivi e il documento di record, procedere come segue:
 
-1. Nell’interfaccia utente di AEM Forms, selezionare un modulo e toccare l’opzione **Aggiungi dizionario** .
+1. Nell&#39;interfaccia  AEM Forms, selezionare un modulo e toccare l&#39;opzione **Aggiungi dizionario** .
 1. Nella schermata **Aggiungi dizionario al progetto** di traduzione, selezionate l&#39;opzione **Crea un nuovo progetto** di traduzione o **Aggiungi a un progetto** di traduzione esistente.
-1. Nel campo Titolo **** progetto, specificate il titolo. Ad esempio: `Government Reference Site - German locale.`
-1. Nel campo Lingue **** di destinazione, specificate le impostazioni internazionali (ad esempio, `German(de)`) e fate clic su **Fine**. Potete specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate nel campo Lingue **di** destinazione.
+1. Nel campo Titolo **** progetto, specificate il titolo. Esempio, `Government Reference Site - German locale.`
+1. Nel campo Lingue **** di destinazione, specificate le impostazioni internazionali (ad esempio, `German(de)`) e fate clic su **Fine**. Potete specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le impostazioni internazionali specificate nel campo Lingue **di** destinazione.
 1. Nella finestra di dialogo Dizionario aggiunto, fare clic su **Apri progetti**. Nella schermata Progetti, aprite il progetto appena creato.
 1. Fate clic sulle **ellissi** nella parte inferiore della sezione Riepilogo **** traduzione. Viene visualizzata la schermata Riepilogo conversione.
 1. Fate clic sull’icona **Modifica** nella parte superiore della schermata Riepilogo **** traduzione. Aprire la scheda **Traduzione** e selezionare Traduzione automatica nella schermata Metodo **di** traduzione. Selezionate il provider **di** traduzione e la configurazione **** cloud appropriati. Click the **Done** icon at the top of the screen.
@@ -53,11 +56,11 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in form
 
 ## Localizzazione di un modulo adattivo e del relativo documento di registrazione mediante la traduzione umana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
-In Traduzione Umana il contenuto viene inviato a un fornitore di traduzioni e tradotto da traduttori professionisti. Al termine, il contenuto convertito viene restituito e importato in AEM. Quando il fornitore di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il fornitore di traduzione.
+In Traduzione Umana il contenuto viene inviato a un fornitore di traduzioni e tradotto da traduttori professionisti. Al termine, il contenuto convertito viene restituito e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
 
 Per la traduzione, un dizionario contenente file in formato XLIFF è condiviso con i traduttori professionisti. Il dizionario include un file XLIFF separato per ciascuna lingua. Ciascun file XLIFF contiene testo che verrà visualizzato agli utenti finali e ai segnaposto per il testo localizzato corrispondente.
 
-Effettuare le seguenti operazioni per localizzare un modulo e il relativo documento di registrazione utilizzando i traduttori umani:
+Effettuare le seguenti operazioni per localizzare un modulo e il relativo documento di registrazione utilizzando l&#39;espressione Traduttori umani:
 
 1. [Connetti AEM con il tuo provider](/help/sites-administering/tc-tic.md) di servizi di traduzione e [crea configurazioni](/help/sites-administering/tc-tic.md)del framework di integrazione della traduzione.
 
@@ -74,6 +77,7 @@ Effettuare le seguenti operazioni per localizzare un modulo e il relativo docume
 >[!NOTE]
 >
 >* I componenti per moduli adattivi non supportano i linguaggi RTL (Right to Left). Ad esempio, ebraico.
+
 >
 
 
