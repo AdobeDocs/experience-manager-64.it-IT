@@ -1,8 +1,8 @@
 ---
 title: Authoring di una pagina per dispositivi mobili
 seo-title: Authoring di una pagina per dispositivi mobili
-description: Quando si effettua l'authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vede l'utente finale
-seo-description: Quando si effettua l'authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vede l'utente finale
+description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
+seo-description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 89%
 
 ---
 
 
-# Authoring di una pagina per dispositivi mobili{#authoring-a-page-for-mobile-devices}
+# Authoring di una pagina per dispositivi mobili {#authoring-a-page-for-mobile-devices}
 
 Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Quando crei la pagina, puoi scegliere tra diversi emulatori per verificare come la pagina verrà effettivamente vista dal visitatore.
 
@@ -29,7 +32,7 @@ I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda
 
 Segui la procedura seguente per creare una pagina mobile:
 
-1. From global navigation open the **Sites** console.
+1. Dalla navigazione globale apri la console **Sites**.
 1. Open the page **We.Retail** -> **United States** -> **English**.
 
 1. Switch to **Preview** mode.
