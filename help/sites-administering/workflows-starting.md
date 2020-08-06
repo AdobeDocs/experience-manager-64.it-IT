@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 5%
 
 ---
 
@@ -36,6 +39,7 @@ Quando amministri flussi di lavoro puoi avviarli utilizzando diversi metodi:
 >* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Progetti traduzione](/help/sites-administering/tc-manage.md)
+
 >
 
 
@@ -113,7 +117,7 @@ Un pacchetto di workflow:
 
 ## Creazione di una configurazione di avvio {#creating-a-launcher-configuration}
 
-1. Passa alla console **Workflow Launcher** utilizzando **Strumenti**, **Flusso** di lavoro e **Lanci**.
+1. Passa alla console **Workflow Launcher** utilizzando **Strumenti**, **Flusso** di lavoro **, quindi** Lanci.
 1. Selezionate **Crea**, quindi **Aggiungi avviatore** per aprire la finestra di dialogo:
 
    ![wf-105](assets/wf-105.png)
@@ -139,7 +143,7 @@ Un pacchetto di workflow:
 
    * **Condizioni**
 
-      Elenco di condizioni per i valori dei nodi che, se valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la condizione seguente determina l&#39;avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
+      Un elenco di condizioni per i valori dei nodi che, se valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la condizione seguente determina l&#39;avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
 
       name==Utente
 
@@ -148,6 +152,7 @@ Un pacchetto di workflow:
       Elenco delle funzioni da abilitare. Selezionate le feature desiderate utilizzando il selettore a discesa.
 
    * **Funzioni disabilitate**
+
    Elenco delle funzioni da disattivare. Selezionate le feature desiderate utilizzando il selettore a discesa.
 
    * **Modello flusso di lavoro**
@@ -172,6 +177,7 @@ Un pacchetto di workflow:
 
       * `property-name` ignora qualsiasi `jcr` evento attivato sul nome della proprietà specificata. &quot;
       * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene il `*<someValue*`> `user-data` impostato tramite l&#39; [ `ObservationManager` API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Ad esempio:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
