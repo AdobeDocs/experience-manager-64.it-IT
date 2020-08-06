@@ -28,21 +28,21 @@ La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Appl
 
 [Avvio rapido (modalità SOAP): Importazione di applicazioni tramite l&#39;API Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Ottenimento di un&#39;applicazione AEM Forms tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Avvio rapido (modalità SOAP): Ottenimento di un&#39;applicazione AEM Forms  tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Ottenimento dello stato delle applicazioni tramite Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Avvio rapido (modalità SOAP):anteprima dei moduli AEM e dell&#39;archivio delle applicazioni successivo tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Avvio rapido (modalità SOAP):anteprima dell&#39;archivio  delle applicazioni AEM Forms e versioni successive tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Avvio rapido (modalità SOAP):eliminazione dell&#39;archivio dell&#39;applicazione AEM Forms tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Avvio rapido (modalità SOAP):eliminazione dell&#39;archivio dell&#39;applicazione AEM Forms  tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Avvio rapido nella programmazione con AEM Forms è basato su Forms Server implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Avvio rapido disponibile in Programmazione con  AEM Forms si basa sul server Forms implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di una versione dell&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -444,7 +444,7 @@ public class GetApplication_SOAP {
 
 L&#39;esempio di codice Java seguente ottiene le applicazioni utilizzando l&#39;API Java.
 
-***Nota**: Ottenendo l&#39;API dell&#39;applicazione AEM Forms, getApplications(), vengono restituite solo le applicazioni distribuite. *
+***Nota**: Ottenendo  AEM Forms Application API, getApplications(), restituisce solo le applicazioni distribuite. *
 
 ```as3
 /* 
@@ -644,9 +644,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP):anteprima dell&#39;archivio delle applicazioni LiveCycle ES2 e versioni successive tramite l&#39;API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Avvio rapido (modalità SOAP):anteprima dell&#39;LiveCycle ES2 e dell&#39;archivio delle applicazioni successivo mediante l&#39;API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Il seguente esempio di codice Java è destinato all’anteprima di AEM Forms e di un successivo archivio di applicazioni tramite l’API Java.
+L&#39;esempio di codice Java riportato di seguito è destinato  anteprima dell&#39;archivio di applicazioni AEM Forms e versioni successive tramite l&#39;API Java.
 
 ```as3
 /* 
