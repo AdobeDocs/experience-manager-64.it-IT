@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1993'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Ad esempio, si desidera che tutti gli autori dei moduli dispongano di determinat
 
 ## Utilizzo dei modelli {#working-with-templates}
 
-Per accedere all’editor modelli dal menu Strumenti, passa ad **[!UICONTROL Adobe Experience Manager > Strumenti > Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, per impostazione predefinita non è attivato. Potete richiedere all’amministratore di abilitare la cartella globale o di creare una nuova cartella per i modelli. Per ulteriori informazioni sulla creazione di cartelle, consultate Cartelle [](/help/sites-developing/page-templates-editable.md)modello.
+Per accedere all’editor modelli dal menu Strumenti, accedi a **[!UICONTROL Adobe Experience Manager > Strumenti > Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. AEM una cartella globale per organizzare i modelli. Tuttavia, per impostazione predefinita non è attivato. Potete richiedere all’amministratore di abilitare la cartella globale o di creare una nuova cartella per i modelli. Per ulteriori informazioni sulla creazione di cartelle, consultate Cartelle [](/help/sites-developing/page-templates-editable.md)modello.
 
 Toccando per aprire una cartella, è disponibile un pulsante Crea che consente di creare un nuovo modello per i moduli adattivi.
 
@@ -44,21 +47,21 @@ Dopo aver creato una cartella, aprite la cartella ed eseguite i seguenti passagg
 
 ### Interfaccia dell’editor modelli {#template-editor-ui}
 
-Quando apri un modello per la modifica, puoi vedere i seguenti componenti di AEM Editor:
+Quando aprite un modello per la modifica, potete vedere i seguenti componenti dell’editor AEM:
 
-* **Barra degli strumenti** Pagina Contiene le seguenti opzioni:
+* **Barra degli strumenti** della pagina Contiene le seguenti opzioni:
 
    * **Attiva/Disattiva pannello** laterale: Consente di mostrare o nascondere la barra laterale.
    * **Informazioni** pagina: Consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri pagina e la libreria lato client della progettazione della pagina.
    * **Emulatore**: Consente di simulare e personalizzare l’aspetto di diversi dispositivi.
-   * **** Selettore livello: Consente di modificare il livello.
+   * **Selettore livello:** Consente di modificare il livello.
 
       Potete scegliere il livello **Struttura** o Contenuto **** iniziale. Il livello Struttura consente di aggiungere e personalizzare l’intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
 
-   * **** Anteprima: Consente di visualizzare un’anteprima dell’aspetto del modello al momento della pubblicazione. Potete usare Selettore livello e Anteprima per alternare le modalità di modifica e anteprima.
+   * **Anteprima:** Consente di visualizzare un’anteprima dell’aspetto del modello al momento della pubblicazione. Potete usare Selettore livello e Anteprima per alternare le modalità di modifica e anteprima.
 
-* **** Barra laterale: Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
-* **** Barra degli strumenti del componente: Quando selezionate un componente, compare una barra degli strumenti che consente di personalizzare il componente.
+* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
+* **Barra degli strumenti del componente:** Quando selezionate un componente, compare una barra degli strumenti che consente di personalizzare il componente.
 * **Pagina**: Area in cui aggiungere il contenuto per creare il modello.
 
 Vedere [Introduzione alla creazione di moduli](/help/forms/using/introduction-forms-authoring.md) adattivi per comprendere meglio l&#39;editor dell&#39;interfaccia utente touch.
@@ -78,9 +81,9 @@ Quando si seleziona il livello struttura nell&#39;Editor modelli, è possibile v
 
 ![Contenitore di layout nel livello struttura](assets/header-layer-selector.png)
 
-**** Figura: Contenitori di *layout nel livello struttura*
+**Figura:** *Contenitori di layout nel livello struttura*
 
-******A. Contenitore di layout per il componente Intestazione** B. Contenitore di layout per il componente Piè di pagina
+**A.** Contenitore di layout per il componente Intestazione **B.** Contenitore di layout per il componente Piè di pagina
 
 Trascinare il componente Intestazione modulo adattiva nel contenitore di layout sopra il contenitore Modulo adattivo. Dopo aver aggiunto il componente, potete specificarne le proprietà che consentono di aggiungere un logo e il relativo titolo.
 
@@ -88,7 +91,7 @@ Allo stesso modo, quando trascinate il componente piè di pagina nel contenitore
 
 ![Intestazione e piè di pagina aggiunti nel livello Struttura](assets/header-and-footer.png)
 
-**** Figura: Intestazione e *piè di pagina aggiunti nel livello Struttura*
+**Figura:** *Intestazione e piè di pagina aggiunti nel livello Struttura*
 
 #### Blocco/sblocco dei componenti nel livello struttura {#locking-unlocking-components-in-the-structure-layer}
 
@@ -116,16 +119,16 @@ Consultate [Barra laterale](/help/forms/using/introduction-forms-authoring.md#si
 
 >[!NOTE]
 >
->Quando si seleziona Memorizza contenuto o Memorizza PDF come azione di invio, è possibile specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di memorizzazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per evitare che i dati di ogni modulo vengano memorizzati nella stessa posizione.
+>Quando si seleziona Archivia contenuto o Memorizza PDF come azione di invio, è possibile specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di memorizzazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per evitare che i dati di ogni modulo vengano memorizzati nella stessa posizione.
 
-#### Creazione di un modello di modulo adattivo con schede e pannelli {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Creazione di un modello di modulo adattivo con schede e pannelli  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Ad esempio, potete creare un modello con le seguenti schede:
 
 * Informazioni generali
 * Informazioni professionali
 
-Avete aggiunto un logo, un titolo e un piè di pagina nel livello struttura. Bloccare l&#39;intestazione e il piè di pagina per impedire agli autori di modificarli quando utilizzano il modello per creare moduli.
+È stato aggiunto un logo, un titolo e un piè di pagina al livello struttura. Bloccare l&#39;intestazione e il piè di pagina per impedire agli autori di modificarli quando utilizzano il modello per creare moduli.
 
 Modificate il livello da Struttura a Contenuto iniziale e iniziate ad aggiungere contenuto al modulo. Per creare una struttura a schede, aggiungere un pannello secondario nel pannello guideRoot del contenitore Modulo adattivo. Per aggiungere un pannello:
 
@@ -154,7 +157,7 @@ Dopo aver aggiunto i campi, potete aggiungere pulsanti quali Invia e Ripristina.
 
 Quando create un modello, questo viene aggiunto come bozza. Abilitare il modello a utilizzarlo per la creazione di moduli adattivi. Per abilitare un modello:
 
-1. Accedete ad **[!UICONTROL Adobe Experience Manager > Strumenti > Modelli]** e aprite la cartella in cui avete creato il modello.
+1. Andate su **[!UICONTROL Adobe Experience Manager > Strumenti > Modelli]** e aprite la cartella in cui avete creato il modello.
 
 1. Il modello creato è contrassegnato come Bozza.
 1. Selezionate il modello e toccate **[!UICONTROL Abilita]** nella barra degli strumenti.
@@ -163,35 +166,35 @@ Quando create un modello, questo viene aggiunto come bozza. Abilitare il modello
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importate il modulo in un’altra istanza di AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. Potete creare un pacchetto del modello personalizzato da un `/conf` nodo all&#39;interno di `https://<server>:<port>/crx/packmgr`e portarlo nell&#39;istanza AEM Forms in cui desiderate caricare il modulo.
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;altra istanza  AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. È possibile creare un pacchetto del modello personalizzato dal `/conf` `https://<server>:<port>/crx/packmgr`nodo in e portarlo nell&#39;istanza di AEM Forms  in cui si desidera caricare il modulo.
 
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
 Dopo aver creato e attivato un modello, questo sarà disponibile in Forms Manager quando si crea un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, vedere [Creazione di un modulo](/help/forms/using/creating-adaptive-form.md)adattivo.
 
-## Modificare l&#39;opzione di visualizzazione dei modelli predefiniti {#change-display-option-of-out-of-the-box-templates}
+## Modificare l&#39;opzione di visualizzazione dei modelli predefiniti  {#change-display-option-of-out-of-the-box-templates}
 
-È possibile creare modelli personalizzati per i moduli adattivi per definire la struttura di base e il contenuto iniziale. In AEM Forms è inoltre disponibile un set di modelli predefiniti per i moduli adattivi. Potete scegliere di mostrare o nascondere i modelli.
+È possibile creare modelli personalizzati per i moduli adattivi per definire la struttura di base e il contenuto iniziale.  AEM Forms fornisce inoltre un set di modelli predefiniti per i moduli adattivi. Potete scegliere di mostrare o nascondere i modelli.
 
 Per visualizzare e nascondere i modelli, effettuate le seguenti operazioni:
 
-1. Accedi all’istanza di creazione di AEM Forms e passa a **[!UICONTROL Strumenti > Operazioni > Console]** Web.
+1. Accedete ’istanza di creazione AEM Forms e selezionate **[!UICONTROL Strumenti > Operazioni > Console]** Web.
 
    >[!NOTE]
    >
-   >L’URL della console Web di AEM è `https://[server]:[port]/system/console/configMgr`
+   >L’URL di AEM console Web è `https://[server]:[port]/system/console/configMgr`
 
 1. Individuare e aprire le impostazioni di configurazione **[!UICONTROL di]** FormsManager:
 
    * Per visualizzare o nascondere il modello di moduli adattivi nella casella, selezionare o deselezionare l&#39;opzione **Includi modelli** AF e AD.
-   * Per visualizzare o nascondere i modelli di modulo adattivo inclusi nelle versioni di AEM 6.0 Forms o AEM 6.1 Forms ma ora non più disponibili, seleziona o deseleziona l’opzione **Includi modelli** AEM 6.0 AF. Se questa opzione è selezionata, per avere effetto è necessario abilitare la configurazione **[!UICONTROL Includi modelli]** AF e AD.
+   * Per visualizzare o nascondere i modelli di modulo adattivo che sono stati aggiunti nelle versioni di Forms AEM 6.0 Forms o AEM 6.1 ma che sono ora obsoleti, selezionare o deselezionare l&#39;opzione **Includi AEM 6.0 Modelli** AF. Se questa opzione è selezionata, per avere effetto è necessario abilitare la configurazione **[!UICONTROL Includi modelli]** AF e AD.
 
 1. Fai clic su **[!UICONTROL Salva]**. Le opzioni di visualizzazione per i modelli forniti vengono modificate.
 
 ## Consigli {#recommendations}
 
 * Quando si modificano le proprietà del modulo nell&#39;editor modelli, non utilizzare la proprietà BindReference.
-* Per aggiungere un punto di interruzione, crearlo al momento della creazione di un modello di modulo adattivo.
+* Se si desidera aggiungere un punto di interruzione, crearlo al momento della creazione di un modello di modulo adattivo.
 
    Per ulteriori informazioni sui punti di interruzione, consultate Layout [](/help/sites-authoring/responsive-layout.md)reattivo.
 
