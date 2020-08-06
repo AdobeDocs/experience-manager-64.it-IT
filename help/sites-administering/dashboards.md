@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 59%
 
 ---
 
@@ -72,11 +75,11 @@ Può essere utile disporre di più dashboard per vedere rapidamente le informazi
 
 ### Panoramica {#overview}
 
-I componenti dashboard non sono altro che normali componenti [](/help/sites-developing/developing-components-samples.md)AEM. Questa sezione descrive i componenti per report forniti con AEM.
+I componenti dashboard non sono altro che normali componenti [AEM](/help/sites-developing/developing-components-samples.md). Questa sezione descrive i componenti per report forniti con AEM.
 
 ### Componenti per report per analisi Web {#web-analytics-reporting-components}
 
-AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Tali componenti sono elencati nella barra laterale sotto la sezione **Dashboard**.
+AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati del [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Tali componenti sono elencati nella barra laterale sotto la sezione **Dashboard**.
 
 Ciascun componente per report dispone di almeno tre schede:
 
@@ -95,9 +98,9 @@ La scheda **Base** permette di accedere alle seguenti voci di configurazione:
 
 **Tipo** di richiesta Modalità di richiesta dei dati.
 
-**Configurazione SiteCatalyst (facoltativo)** Configurazione da usare per la connessione a SiteCatalyst. Se non viene fornita, viene considerata la configurazione sulla pagina Dashboard (tramite le proprietà pagina).
+**Configurazione SiteCatalyst (facoltativo)** Configurazione da utilizzare per la connessione al SiteCatalyst. Se non viene fornita, viene considerata la configurazione sulla pagina Dashboard (tramite le proprietà pagina).
 
-**ID suite di rapporti (facoltativo)** La suite di rapporti SiteCatalyst da usare per generare il grafico.
+**ID suite di rapporti (facoltativo)** La suite di rapporti per SiteCatalyst da usare per generare il grafico.
 
 #### Configurazione del report {#report-configuration}
 
@@ -107,7 +110,7 @@ Per visualizzare le statistiche Web, occorre definire l’intervallo di date che
 >
 >Se si imposta un intervallo di date ampio, il dashboard potrebbe risultare lento.
 
-**Data Da** data assoluta o relativa dalla quale vengono estratti i dati.
+**Data Da** data assoluta o relativa a partire dalla quale vengono estratti i dati.
 
 **Data A** data assoluta o relativa alla quale vengono estratti i dati.
 
