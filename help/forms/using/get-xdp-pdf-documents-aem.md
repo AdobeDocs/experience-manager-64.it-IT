@@ -1,8 +1,8 @@
 ---
-title: Ottenimento di documenti XDP e PDF in AEM Forms
-seo-title: Ottenimento di documenti XDP e PDF in AEM Forms
-description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. È inoltre possibile caricare in massa moduli e risorse correlate come file ZIP.
-seo-description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. È inoltre possibile caricare in massa moduli e risorse correlate come file ZIP.
+title: Ottenimento di documenti XDP e PDF in  AEM Forms
+seo-title: Ottenimento di documenti XDP e PDF in  AEM Forms
+description: ' AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. È inoltre possibile caricare in massa moduli e risorse correlate come file ZIP.'
+seo-description: ' AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. È inoltre possibile caricare in massa moduli e risorse correlate come file ZIP.'
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,18 +10,21 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
 
-# Ottenimento di documenti XDP e PDF in AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
+# Ottenimento di documenti XDP e PDF in  AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Panoramica {#overview}
 
-È possibile importare i moduli dal file system locale nell&#39;archivio CRX, caricandoli in AEM Forms. L’operazione di caricamento è supportata per i seguenti tipi di risorse:
+È possibile importare i moduli dal file system locale nell&#39;archivio CRX, caricandoli in  AEM Forms. L’operazione di caricamento è supportata per i seguenti tipi di risorse:
 
 * Modelli per moduli (moduli XFA)
-* Moduli PDF
+* PDF forms
 * Documento (documenti PDF semplici)
 
 Potete caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Potete caricare una risorsa di tipo `Resource`, solo accanto a un modulo XFA in un archivio ZIP.
@@ -32,7 +35,7 @@ Potete caricare i tipi di risorse supportati singolarmente o come archivio ZIP. 
 
 ## Caricamento di moduli {#uploading-forms}
 
-1. Accedi all’interfaccia utente di AEM Forms effettuando l’accesso `https://[server]:[port]/aem/forms.html`.
+1. Accedete all&#39;interfaccia utente  AEM Forms accedendo `https://[server]:[port]/aem/forms.html`.
 1. Passare alla cartella in cui si desidera caricare il modulo o la cartella che contiene i moduli.
 1. Nella barra degli strumenti delle azioni, toccate **Crea > Caricamento** file.
 
@@ -60,21 +63,21 @@ Al termine del caricamento, un flusso di lavoro in background genera le miniatur
 
 ### Modalità protetta {#protected-mode}
 
-Il server AEM Forms consente di eseguire il codice JavaScript. Un codice JavaScript dannoso può danneggiare l’ambiente AEM Forms. La modalità protetta limita AEM Forms all&#39;esecuzione di file XDP solo da risorse e percorsi attendibili. Tutti i file XDP disponibili nell&#39;interfaccia utente di AEM Forms sono considerati risorse affidabili.
+ server AEM Forms consente di eseguire il codice JavaScript. Un codice JavaScript dannoso può danneggiare un ambiente AEM Forms . La modalità protetta limita  AEM Forms all&#39;esecuzione di file XDP solo da risorse e posizioni affidabili. Tutti i file XDP disponibili nell’interfaccia  AEM Forms sono considerati risorse affidabili.
 
 Per impostazione predefinita, la modalità protetta è attivata. Se necessario, potete disattivare la modalità protetta:
 
-1. Accedete alla console Web di AEM come amministratore. L&#39;URL è `https://[server]:[port]/system/console/configMgr`
-1. Aprire le configurazioni dei moduli mobili per la modifica.
+1. Accedete AEM console Web come amministratore. L&#39;URL è `https://[server]:[port]/system/console/configMgr`
+1. Aprire le configurazioni Forms per dispositivi mobili per la modifica.
 1. Deselezionare l’opzione Modalità protetta e fare clic su **Salva**. La modalità protetta è disabilitata.
 
 ## Aggiornamento dei moduli XFA di riferimento {#updating-referenced-xfa-forms}
 
-In AEM Forms, è possibile fare riferimento a un modello di modulo XFA in un modulo adattivo o in un altro modello di modulo XFA. Inoltre, un modello può fare riferimento a una risorsa o a un altro modello XFA.
+In  AEM Forms, è possibile fare riferimento a un modello di modulo XFA in un modulo adattivo o in un altro modello di modulo XFA. Inoltre, un modello può fare riferimento a una risorsa o a un altro modello XFA.
 
 I campi di un modulo adattivo che fa riferimento a un XFA sono associati ai campi disponibili in XFA. Quando si aggiorna un modello di modulo, il modulo adattivo associato tenta di eseguire la sincronizzazione con XFA. Per ulteriori dettagli, vedere [Sincronizzazione dei moduli adattivi con l&#39;XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)associato.
 
-La rimozione di un modello di modulo danneggia il modulo adattivo o il modello di modulo dipendente. Tale modulo adattivo viene talvolta definito informalmente come un modulo non corretto. Nell’interfaccia utente di AEM Forms è possibile individuare i moduli sporchi in due modi.
+La rimozione di un modello di modulo danneggia il modulo adattivo o il modello di modulo dipendente. Tale modulo adattivo viene talvolta definito informalmente come un modulo non corretto.  interfaccia utente di AEM Forms, è possibile individuare i moduli sporchi in due modi.
 
 * Quando si posiziona il puntatore sull’icona di avviso, viene visualizzata un’icona di avviso sulla miniatura del modulo adattivo nell’elenco delle risorse.
 
