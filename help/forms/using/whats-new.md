@@ -1,6 +1,6 @@
 ---
-title: Riepilogo delle nuove funzioni| Moduli AEM 6.4
-seo-title: Riepilogo delle nuove funzioni| Moduli AEM 6.4
+title: Riepilogo delle nuove funzioni | AEM 6.4 Forms
+seo-title: Riepilogo delle nuove funzioni | AEM 6.4 Forms
 description: Riepilogo delle nuove funzioni e dei miglioramenti in AEM 6.4 Forms.
 seo-description: Riepilogo delle nuove funzioni e dei miglioramenti in AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
@@ -10,17 +10,20 @@ topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '2017'
+ht-degree: 0%
 
 ---
 
 
-# Riepilogo delle nuove funzioni| Moduli AEM 6.4 {#new-features-summary-aem-forms}
+# Riepilogo delle nuove funzioni | AEM 6.4 Forms {#new-features-summary-aem-forms}
 
 Riepilogo delle nuove funzioni e dei miglioramenti in AEM 6.4 Forms.
 
-AEM Forms include diverse nuove funzioni e miglioramenti che semplificano ulteriormente la creazione, la gestione e l&#39;esperienza utente con moduli adattivi e comunicazioni interattive.
+ AEM Forms include diverse nuove funzioni e miglioramenti che semplificano ulteriormente la creazione, la gestione e l&#39;esperienza utente con moduli adattivi e comunicazioni interattive.
 
-Continua a leggere per una breve introduzione a nuove funzioni e miglioramenti. Per informazioni dettagliate sulle risorse, consultate la documentazione. Inoltre, consultate [Note](/help/release-notes/forms.md)sulla versione per moduli AEM 6.4. Per la documentazione completa sui moduli di AEM 6.4, consultare la guida [utente ai moduli di](/help/forms/home.md)AEM 6.4.
+Continua a leggere per una breve introduzione a nuove funzioni e miglioramenti. Per informazioni dettagliate sulle risorse, consultate la documentazione. Inoltre, consultate AEM 6.4 Note sulla [versione di Forms](/help/release-notes/forms.md). Per la documentazione completa AEM 6.4 Forms, visitate [AEM Guida](/help/forms/home.md)utente Forms 6.4.
 
 ## Comunicazioni interattive {#interactive-communications}
 
@@ -34,7 +37,7 @@ La comunicazione interattiva offre vantaggi significativi:
 
 * Fornisce l&#39;integrazione OOTB con il modello dati del modulo per consentire un accesso semplice e semplificato ai database back-end e ad altri sistemi CRM come MS Dynamics
 * Offre un&#39;interfaccia di authoring integrata per canali Web e di stampa
-* Offre un’interfaccia di creazione basata su trascinamento, simile all’authoring di moduli adattivi, per canali Web e per la stampa.
+* Offre un’interfaccia di authoring basata su trascinamento, simile all’authoring Forms adattivo, per canali Web e di stampa.
 
 La comunicazione interattiva è l&#39;approccio predefinito e consigliato per creare comunicazioni con i clienti. Per continuare a utilizzare le lettere in AEM 6.3 Forms e AEM 6.2 Forms, è necessario installare un pacchetto di compatibilità.
 
@@ -55,7 +58,7 @@ Per creare una comunicazione interattiva o modificare una comunicazione esistent
 
 Per ulteriori informazioni, consulta [Introduzione alla creazione di comunicazioni](/help/forms/using/introduction-interactive-communication-authoring.md)interattive.
 
-### Generazione automatica della versione Web dal contenuto stampato nelle comunicazioni interattive {#auto-generate-web-version-from-print-content-in-interactive-communication}
+### Generazione automatica della versione Web dal contenuto cartaceo nelle comunicazioni interattive {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
 Gli autori possono generare automaticamente contenuti di documenti Web dai documenti stampati per creare, visualizzare in anteprima e modificare documenti sia per la stampa che per il Web nello stesso editor. Gli autori delle comunicazioni interattive possono creare una volta e pubblicare contenuti su tutti i canali. Gli autori delle comunicazioni interattive possono utilizzare gli stessi frammenti di documento nei canali Web e per la stampa per evitare duplicazioni.
 
@@ -65,9 +68,9 @@ Per ulteriori informazioni, vedere Canale di [stampa e canale](/help/forms/using
 
 La comunicazione interattiva supporta i temi. Potete creare temi e applicarli alla comunicazione interattiva. Un tema contiene dettagli di stile per componenti e pannelli. Potete riutilizzare un tema su diverse comunicazioni interattive per conferire loro un aspetto e un marchio comuni e coerenti.
 
-AEM Forms include un tema preconfigurato per le comunicazioni interattive. Utilizzando un tema, potete anche personalizzare l&#39;aspetto di una comunicazione interattiva su un dispositivo.
+ AEM Forms include un tema predefinito per le comunicazioni interattive. Utilizzando un tema, potete anche personalizzare l&#39;aspetto di una comunicazione interattiva su un dispositivo.
 
-Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
+Per ulteriori informazioni, vedere [Temi in  AEM Forms](/help/forms/using/themes.md).
 
 ### Interfaccia agente avanzata {#enhanced-agent-interface}
 
@@ -98,7 +101,7 @@ Per ulteriori informazioni, vedere [Uso del modello](/help/forms/using/using-for
 * Supporto per gli elementi del modello dati del modulo
 * Mostrare o nascondere una risorsa/un frammento di testo utilizzando le regole
 * Convalida del valore di un elemento/variabile
-* Eseguire funzioni per calcolare il valore di un&#39;espressione matematica
+* Esecuzione di funzioni per calcolare il valore di un&#39;espressione matematica
 
 Per ulteriori informazioni, vedere:
 
@@ -107,15 +110,15 @@ Per ulteriori informazioni, vedere:
 
 ### Pacchetto di compatibilità per le risorse esistenti {#compatibility-package-for-existing-assets}
 
-Per impostazione predefinita, le risorse Lettera dalle versioni precedenti di AEM Forms non sono supportate in questa versione. Se si intende continuare a utilizzare le lettere da AEM 6.3 Forms e AEM 6.2 Forms, è necessario installare il pacchetto Compatibilità.
+Per impostazione predefinita, le risorse Lettera dalle versioni precedenti di  AEM Forms non sono supportate in questa versione. Se intendete continuare a utilizzare le lettere di AEM 6.3 Forms e AEM 6.2 Forms, dovete installare il pacchetto Compatibilità.
 
 ## Integrazione dei dati {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
-[L&#39;integrazione](/help/forms/using/data-integration.md) dei dati di AEM Forms consente di configurare origini dati diverse; come i database, i servizi Web basati su RESTful o SOAP e i servizi OData; per creare un modello dati modulo da utilizzare per eseguire il binding dei dati, precompilare e richiamare i servizi nei moduli e nei documenti adattivi.
+[integrazione](/help/forms/using/data-integration.md) dei dati AEM Forms consente di configurare origini dati diverse; come i database, i servizi Web basati su RESTful o SOAP e i servizi OData; per creare un modello dati modulo da utilizzare per eseguire il binding dei dati, per precompilare e richiamare i servizi nei moduli e nei documenti adattivi.
 
-Questa versione offre diverse nuove funzioni e miglioramenti nell&#39;integrazione dei dati.
+In questa versione sono disponibili diverse nuove funzioni e miglioramenti nell&#39;integrazione dei dati.
 
 ### Crea modello dati modulo senza origine dati {#create-form-data-model-without-data-source}
 
@@ -127,7 +130,7 @@ Per ulteriori informazioni, vedere [Creazione di un modello](/help/forms/using/c
 
 ### Creare proprietà calcolate {#create-computed-properties}
 
-Gli autori e gli sviluppatori di moduli possono creare proprietà calcolate nel modello dati del modulo. Consentono di calcolare un valore per la proprietà creando regole o logiche sui dati disponibili nelle origini dati configurate. Una regola è un&#39;espressione che viene valutata quando i dati vengono caricati nel modello dati del modulo o i valori delle proprietà nell&#39;espressione cambiano. Ad esempio, una proprietà calcolata denominata Installazioni calcola l&#39;importo mensile da pagare per un prestito in base al tasso di interesse specificato nell&#39;origine dati e all&#39;importo e alla durata del prestito specificati dall&#39;utente nel modulo.
+Gli autori e gli sviluppatori Forms possono creare proprietà calcolate nel modello dati del modulo. Consentono di calcolare un valore per la proprietà creando regole o logiche sui dati disponibili nelle origini dati configurate. Una regola è un&#39;espressione che viene valutata quando i dati vengono caricati nel modello dati del modulo o i valori delle proprietà nell&#39;espressione cambiano. Ad esempio, una proprietà calcolata denominata Installazioni calcola l&#39;importo mensile da pagare per un prestito in base al tasso di interesse specificato nell&#39;origine dati e all&#39;importo e alla durata del prestito specificati dall&#39;utente nel modulo.
 
 Una proprietà calcolata risiede localmente in un modello dati modulo e non esiste in un&#39;origine dati. È possibile utilizzare le proprietà calcolate nei moduli adattivi e nelle comunicazioni interattive.
 
@@ -147,7 +150,7 @@ Qualsiasi aggiornamento nelle entità o proprietà dell&#39;origine dati non si 
 
 ### Configurare le origini dati utilizzando l&#39;interfaccia Touch {#configure-data-sources-using-touch-user-interface}
 
-Con questa versione, la configurazione dei servizi cloud per le origini dati è disponibile nell&#39;interfaccia Touch. Inoltre, la posizione in cui configurare i servizi cloud è stata modificata in **[!UICONTROL Strumenti > Servizi cloud > Origini]** dati. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+Con questa versione, la configurazione dei servizi cloud per le origini dati è disponibile nell&#39;interfaccia Touch. Inoltre, la posizione in cui configurare i servizi cloud è stata modificata in **[!UICONTROL Strumenti > Cloud Services > Origini]** dati. See [Configure data sources](/help/forms/using/configure-data-sources.md).
 
 ## Moduli adattivi {#adaptive-forms}
 
@@ -161,30 +164,30 @@ In questa versione sono stati introdotti diversi miglioramenti alla funzione di 
 
 * I componenti allegati e termini e condizioni del file sono supportati nei frammenti di modulo con caricamento pigro abilitato.
 * I frammenti di modulo adattivi con caricamento pigro abilitato sono supportati nei pannelli ripetibili.
-* I moduli adattivi con frammenti abilitati per il caricamento pigro sono supportati nell&#39;app AEM Forms.
+* I moduli adattivi con frammenti abilitati per il caricamento pigro sono supportati &#39;app AEM Forms.
 
-## Flussi di lavoro AEM incentrati sui moduli {#forms-centric-aem-workflows}
+## Flussi di lavoro AEM basati su Forms {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Grazie alla funzionalità Flussi di lavoro AEM incentrati sui moduli, puoi creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi. Non è più necessario installare la funzionalità Process Management disponibile nello stack JEE, semplificando la distribuzione ed eliminando i costi del server delle applicazioni e dell&#39;infrastruttura. Per ulteriori informazioni, vedere Flussi di lavoro incentrati sui [moduli in OSGi](/help/forms/using/aem-forms-workflow.md).
+Grazie alla funzionalità Forms-Centric AEM Workflows, puoi creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi. Non è più necessario installare la funzionalità Process Management disponibile nello stack JEE, semplificando la distribuzione ed eliminando i costi del server delle applicazioni e dell&#39;infrastruttura. Per ulteriori informazioni, consultate Flussi di lavoro [Forms su OSGi](/help/forms/using/aem-forms-workflow.md).
 
-Di seguito sono riportati i miglioramenti apportati ai flussi di lavoro AEM incentrati sui moduli: ・
+Di seguito sono riportati i miglioramenti nei flussi di lavoro AEM basati su Forms: ・
 
-* L&#39;editor del modello di workflow è disponibile nell&#39;interfaccia Touch. Questo consente di ridurre il tempo necessario per creare flussi di lavoro AEM incentrati sui moduli.
+* L&#39;editor del modello di workflow è disponibile nell&#39;interfaccia Touch. Consente di ridurre il tempo necessario per creare flussi di lavoro AEM incentrati sui moduli.
 * Passaggio del flusso di lavoro per l&#39;invio di e-mail. Ad esempio, potete utilizzare il passaggio e-mail per inviare un documento di record al completamento di un flusso di lavoro.
-* Passaggio del flusso di lavoro per utilizzare i servizi del modello dati del modulo in un modello di workflow. Questo passaggio consente di richiamare i servizi di integrazione dei dati senza scrivere codice personalizzato. Ad esempio, potete richiamare un servizio GET per ottenere i dettagli dei dipendenti da un archivio di database senza scrivere codice personalizzato.
+* Passaggio del flusso di lavoro per utilizzare i servizi del modello dati del modulo in un modello di workflow. Questo passaggio consente di richiamare i servizi di integrazione dei dati senza scrivere codice personalizzato. Ad esempio, potete richiamare un servizio di GET per ottenere i dettagli dei dipendenti da un archivio di database senza scrivere codice personalizzato.
 
 ## App AEM Forms {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-L&#39;app AEM Forms consente ai lavoratori del campo di sincronizzare i dispositivi mobili con un server AEM Forms e di lavorare sui moduli. L&#39;applicazione funziona perfettamente quando il dispositivo è offline, salvando i dati localmente sul dispositivo e sincronizzando i dati con il server quando il dispositivo è nuovamente online. Per ulteriori informazioni, consultate App [](/help/forms/using/aem-forms-app.md)AEM Forms.
+&#39;app AEM Forms consente ai lavoratori del campo di sincronizzare i dispositivi mobili con un server AEM Forms  e di lavorare sui moduli. L&#39;applicazione funziona perfettamente quando il dispositivo è offline, salvando i dati localmente sul dispositivo e sincronizzando i dati con il server quando il dispositivo è nuovamente online. Per ulteriori informazioni, consultate [app](/help/forms/using/aem-forms-app.md)AEM Forms.
 
-Seguono i miglioramenti nell&#39;app AEM Forms:
+Di seguito sono riportati i miglioramenti in  app AEM Forms:
 
-* I moduli adattivi con frammenti abilitati per il caricamento pigro sono supportati nell&#39;app AEM Forms.
-* I moduli adattivi con il modello dati del modulo sono supportati nell&#39;app AEM Forms.
+* I moduli adattivi con frammenti abilitati per il caricamento pigro sono supportati &#39;app AEM Forms.
+* I moduli adattivi con modello dati modulo sono supportati &#39;app AEM Forms.
 
 ## Sicurezza dei documenti {#document-security}
 
@@ -192,12 +195,12 @@ Seguono i miglioramenti nell&#39;app AEM Forms:
 
 La protezione dei documenti consente di distribuire in modo sicuro tutte le informazioni salvate in un formato supportato. La protezione dei documenti garantisce che solo gli utenti autorizzati possano utilizzare i documenti. Di seguito sono riportate le principali modifiche alla protezione dei documenti:
 
-* Document Security fornisce una [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) per proteggere localmente un documento, senza inviarlo al server AEM Forms. Solo le credenziali di protezione e i dettagli dei criteri vengono trasferiti sulla rete al server AEM Forms. AEM 6.4 Forms ha introdotto la Portable Protection Library (PPL) in un formato bundle OSGi. Ora puoi installare direttamente la libreria PPL su un server AEM Forms e utilizzare le funzionalità di AEM e PPL in combinazione tra loro.
+* Document Security fornisce una [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) per proteggere un documento localmente, senza inviare il documento a  server AEM Forms. Solo le credenziali di protezione e i dettagli dei criteri passano attraverso la rete al server AEM Forms . AEM 6.4 Forms ha introdotto la Portable Protection Library (PPL) in un formato bundle OSGi. Ora è possibile installare direttamente la libreria PPL su un server AEM Forms  e utilizzare le funzionalità di AEM e PPL in combinazione tra loro.
 * È possibile compilare la libreria SDK C++ e PPL C++ con Microsoft Visual Studio 2013. La versione precedentemente supportata era Microsoft Visual Studio 2010.
 
 ## Piattaforme supportate {#supported-platforms}
 
-I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di sistemi operativi, server applicazione, database, driver di database, JDK, server LDAP e server e-mail supportati. Di seguito sono riportate le principali modifiche apportate alle piattaforme supportate:
+ AEM Forms può essere configurato utilizzando qualsiasi combinazione di sistemi operativi, server applicazioni, database, driver di database, JDK, server LDAP e server di posta elettronica supportati. Di seguito sono riportate le principali modifiche apportate alle piattaforme supportate:
 
 <table> 
  <tbody> 
