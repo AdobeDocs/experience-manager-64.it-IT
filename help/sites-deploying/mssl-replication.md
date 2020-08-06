@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +28,7 @@ La configurazione di MSSL per la replica prevede l&#39;esecuzione dei seguenti p
 1. Installate le chiavi e i certificati nelle istanze di creazione e pubblicazione:
 
    * Autore: Chiave privata dell&#39;autore e certificato di pubblicazione.
-   * Pubblica: Chiave privata di Publish e certificato di Autore. Il certificato è associato all&#39;account utente autenticato con l&#39;agente di replica.
+   * Pubblicato: Chiave privata di Publish e certificato di Autore. Il certificato è associato all&#39;account utente autenticato con l&#39;agente di replica.
 
 1. Configurare il servizio HTTP basato su Jetty sull’istanza Pubblica.
 1. Configurare le proprietà di trasporto e SSL dell&#39;agente di replica.
@@ -46,7 +49,7 @@ La configurazione di MSSL per la replica prevede l&#39;esecuzione dei seguenti p
 
 Generate una chiave privata e un certificato in formato JKS. La chiave privata è memorizzata in un file KeyStore e il certificato è memorizzato in un file TrustStore. Utilizzate [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) per creare entrambi.
 
-Per creare la chiave privata e la credenziale, effettuate le seguenti operazioni tramite Java: `keytool`
+Per creare la chiave privata e la credenziale, eseguite i seguenti passaggi tramite Java `keytool` :
 
 1. Generare una coppia di chiavi pubblica-privata in un KeyStore.
 1. Create o ottenete il certificato:
@@ -64,7 +67,7 @@ Per creare una chiave privata e un certificato autofirmato per entrambe le istan
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -alias | author | pubblicazione |
    | -keystore | author.keystore | publish.keystore |
@@ -75,7 +78,7 @@ Per creare una chiave privata e un certificato autofirmato per entrambe le istan
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -alias | author | pubblicazione |
    | -file | author.cer | publish.cer |
@@ -91,30 +94,30 @@ Generate una chiave privata e un certificato in formato pkcs#12. Utilizzate [ope
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -out | author.key | publish.key |
 
-1. Per generare una richiesta di certificato, immettete il comando seguente utilizzando i valori delle opzioni della tabella seguente:
+1. Per generare una richiesta di certificato, immettete il comando seguente, utilizzando i valori delle opzioni della tabella seguente:
 
    ```shell
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
 
    Firmare la richiesta del certificato o inviare la richiesta a una CA.
 
-1. Per firmare la richiesta del certificato, immettete il comando seguente utilizzando i valori delle opzioni della tabella seguente:
+1. Per firmare la richiesta del certificato, immettete il comando seguente, utilizzando i valori delle opzioni della tabella seguente:
 
    ```shell
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -126,18 +129,18 @@ Generate una chiave privata e un certificato in formato pkcs#12. Utilizzate [ope
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Opzione | Authoring | Pubblicazione |
+   | Opzione | Autore | Pubblicazione |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -nome | author | pubblicazione |
+   | -name | author | pubblicazione |
 
 ## Installare la chiave privata e TrustStore sull&#39;autore {#install-the-private-key-and-truststore-on-author}
 
 Installate i seguenti elementi nell’istanza di creazione:
 
-* Chiave privata dell’istanza di creazione.
+* La chiave privata dell’istanza di creazione.
 * Il certificato dell’istanza di pubblicazione.
 
 Per eseguire la procedura seguente, è necessario aver effettuato l’accesso come amministratore dell’istanza di creazione.
@@ -156,7 +159,7 @@ Per eseguire la procedura seguente, è necessario aver effettuato l’accesso co
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
 1. Fate clic su Seleziona file archivio chiavi, quindi individuate e selezionate il file author.keystore o il file author.pfx se utilizzate pkcs#12, quindi fate clic su Apri.
-1. Immettere un alias e la password per l&#39;archivio chiavi. Immettete l’alias e la password della chiave privata, quindi fate clic su Invia.
+1. Immettere un alias e la password per l&#39;archivio chiavi. Immettete l’alias e la password per la chiave privata, quindi fate clic su Invia.
 1. Chiudere la finestra di dialogo Gestione archivio chiavi.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
@@ -171,7 +174,7 @@ Per eseguire la procedura seguente, è necessario aver effettuato l’accesso co
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Deselezionate l’opzione Mappa certificato su utente. Fate clic su Seleziona file certificato, selezionate publish.cer e fate clic su Apri.
+1. Deselezionate l’opzione Mappa certificato all’utente. Fate clic su Seleziona file certificato, selezionate publish.cer e fate clic su Apri.
 1. Chiudere la finestra di dialogo Gestione TrustStore.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
@@ -193,7 +196,7 @@ Per eseguire la procedura seguente, è necessario aver eseguito l’accesso come
 1. Nell&#39;area Impostazioni account, fate clic su Gestisci archivio chiavi.
 1. Fare Clic Su Aggiungi Chiave Privata Dal File Dell&#39;Archivio Chiave.
 1. Fate clic su Seleziona file archivio chiavi, quindi individuate e selezionate il file publish.keystore o il file publish.pfx se utilizzate pkcs#12, quindi fate clic su Apri.
-1. Immettere un alias e la password per l&#39;archivio chiavi. Immettete l’alias e la password della chiave privata, quindi fate clic su Invia.
+1. Immettere un alias e la password per l&#39;archivio chiavi. Immettete l’alias e la password per la chiave privata, quindi fate clic su Invia.
 1. Chiudere la finestra di dialogo Gestione archivio chiavi.
 
 ### Installare il certificato di authoring {#install-the-author-certificate}
