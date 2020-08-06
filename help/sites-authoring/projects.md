@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 85%
 
 ---
 
@@ -176,7 +179,7 @@ Le attività consentono di controllare lo stato di tutte le attività relative a
 
 ## Modelli di progetto {#project-templates}
 
-AEM viene fornito con tre modelli diversi:
+AEM navi con tre diversi modelli:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
 * Un progetto multimediale - Un progetto di esempio di riferimento per le attività relative ai supporti. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
@@ -199,7 +202,7 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
   <tr> 
    <td><p><strong>Ruolo</strong></p> </td> 
    <td><p><strong>Descrizione</strong></p> </td> 
-   <td><p><strong>Autorizzazioni</strong></p> </td> 
+   <td><p><strong>Autorizzazioni </strong></p> </td> 
    <td><p><strong>Iscrizione al gruppo</strong></p> </td> 
   </tr> 
   <tr> 
