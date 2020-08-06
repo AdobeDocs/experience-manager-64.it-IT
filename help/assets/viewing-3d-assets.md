@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione di risorse 3D
 seo-title: Visualizzazione di risorse 3D
-description: Scopri ulteriori informazioni sul visualizzatore 3D interattivo disponibile nella pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
-seo-description: Scopri ulteriori informazioni sul visualizzatore 3D interattivo disponibile nella pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
+description: Scoprite il visualizzatore 3D interattivo disponibile dalla pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
+seo-description: Scoprite il visualizzatore 3D interattivo disponibile dalla pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
 uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 33%
 
 ---
 
 
 # Visualizzazione di risorse 3D {#viewing-d-assets}
 
-Questo documento descrive sia come visualizzare le risorse 3D nei dettagli delle risorse, sia come visualizzare le risorse presenti nel componente 3D nei siti.
+Questo documento descrive sia come visualizzare le risorse 3D nei dettagli delle risorse, sia come visualizzare le risorse che si trovano nel componente 3D nei siti.
 
 ## Visualizzazione delle risorse 3D nella pagina Dettagli risorsa {#viewing-d-assets-in-the-asset-details-page}
 
@@ -31,7 +34,7 @@ Vedi [Utilizzo delle aree di visualizzazione in AEM 3D](about-the-use-of-stages-
 
 >[!NOTE]
 >
->Per visualizzare una risorsa 3D, il browser desktop o del dispositivo deve essere abilitato per WebGL. Inoltre, l&#39;hardware grafico sottostante deve avere capacità e memoria sufficienti per eseguire il rendering dei modelli delle dimensioni e della complessità desiderate. Alcune funzioni di anteprima, come l’ombra proiettata, non sono disponibili su tutti i browser.
+>Per visualizzare una risorsa 3D, il browser desktop o del dispositivo deve essere abilitato per WebGL. Inoltre, l&#39;hardware grafico sottostante deve disporre di capacità e memoria sufficienti per eseguire il rendering dei modelli delle dimensioni e della complessità desiderate. Alcune funzioni di anteprima, come l’ombra proiettata, non sono disponibili su tutti i browser.
 
 ### Considerazioni sulle prestazioni per la visualizzazione di risorse 3D {#performance-considerations-when-you-view-d-assets}
 
@@ -99,6 +102,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
     </table>
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Seleziona il nome di un’area di visualizzazione con lo sfondo e l’illuminazione che desideri applicare alla risorsa 3D.
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    Le fasi forniscono l&#39;ambiente-sfondo, il piano terra e l&#39;illuminazione in cui viene visualizzato il modello 3D.
@@ -106,6 +110,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
    Vedi [Utilizzo delle aree di visualizzazione in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    Le aree di visualizzazione spesso forniscono videocamere predefinite. Puoi selezionare di nuovo la videocamera corrente per tornare alle impostazioni predefinite.
@@ -125,9 +130,9 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 >[!NOTE]
 >
->Questa sezione è valida solo per il visualizzatore WebGL classico utilizzato per tipi di risorse 3D diversi da Adobe Dimension.
+>Questa sezione è valida solo per il visualizzatore WebGL classico utilizzato per tipi di risorse 3D diversi da  Adobe Dimension.
 
-A seconda del tipo di dispositivo, potete accedere alle funzioni dei componenti 3D in diversi modi.
+A seconda del tipo di dispositivo, è possibile accedere alle funzioni dei componenti 3D in diversi modi.
 
 Per ulteriori informazioni, consulta gli argomenti di seguito:
 
