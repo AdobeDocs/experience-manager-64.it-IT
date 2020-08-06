@@ -1,8 +1,8 @@
 ---
 title: Mapping delle risorse
 seo-title: Mapping delle risorse
-description: Scoprite come definire reindirizzamenti, URL personalizzati e host virtuali per AEM tramite la mappatura delle risorse.
-seo-description: Scoprite come definire reindirizzamenti, URL personalizzati e host virtuali per AEM tramite la mappatura delle risorse.
+description: Scoprite come definire reindirizzamenti, URL personalizzati e host virtuali per AEM utilizzando la mappatura delle risorse.
+seo-description: Scoprite come definire reindirizzamenti, URL personalizzati e host virtuali per AEM utilizzando la mappatura delle risorse.
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 1%
 
 ---
 
@@ -62,11 +65,11 @@ Questi elenchi possono essere visualizzati (insieme alle informazioni di configu
 
 I due elenchi mostrano varie voci, comprese quelle definite come predefinite dalle applicazioni. Spesso con lo scopo di semplificare gli URL per l’utente.
 
-Gli elenchi associano un **pattern**, un&#39;espressione regolare associata alla richiesta, con una **sostituzione** che definisce il reindirizzamento da imporre.
+Gli elenchi associano un **pattern**, un&#39;espressione regolare associata alla richiesta, con una **Sostituzione** che definisce il reindirizzamento da imporre.
 
 Ad esempio:
 
-**Pattern**`^[^/]+/[^/]+/welcome$`
+**Pattern** `^[^/]+/[^/]+/welcome$`
 
 attiverà:
 
@@ -86,9 +89,9 @@ All&#39;interno dell&#39;archivio vengono create nuove definizioni di mapping.
 >
 >Sono disponibili numerose risorse che spiegano come definire le espressioni regolari; ad esempio [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-## Creazione di definizioni di mappatura in AEM {#creating-mapping-definitions-in-aem}
+## Creazione di definizioni di mapping in AEM {#creating-mapping-definitions-in-aem}
 
-In un’installazione standard di AEM è possibile trovare la cartella:
+In un’installazione standard di AEM potete trovare la cartella:
 
 `/etc/map/http`
 
@@ -98,7 +101,7 @@ Questa è la struttura utilizzata per definire le mappature per il protocollo HT
 
 Per creare la mappatura che prefissa qualsiasi richiesta a http://localhost:4503/ con `/content`:
 
-1. Utilizzando CRXDE navigare a `/etc/map/http`.
+1. Utilizzando CRXDE navigate fino a `/etc/map/http`.
 
 1. Crea un nuovo nodo:
 
@@ -114,11 +117,11 @@ Per creare la mappatura che prefissa qualsiasi richiesta a http://localhost:4503
    * **Nome** `sling:match`
 
       * **Tipo** `String`
-      * **Valore**`localhost.4503/`
+      * **Valore** `localhost.4503/`
    * **Nome** `sling:internalRedirect`
 
       * **Tipo** `String`
-      * **Valore**`/content/`
+      * **Valore** `/content/`
 
 
 1. Fate clic su **Salva tutto**.
