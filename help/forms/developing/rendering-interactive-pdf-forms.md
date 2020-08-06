@@ -1,6 +1,6 @@
 ---
-title: Rendering di moduli PDF interattivi
-seo-title: Rendering di moduli PDF interattivi
+title: Rendering di PDF forms interattivi
+seo-title: Rendering di PDF forms interattivi
 description: 'null'
 seo-description: 'null'
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
@@ -12,17 +12,20 @@ topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
 source-git-commit: d52f9f91f70410e6b09e26967b90fd8c47c4f1d4
+workflow-type: tm+mt
+source-wordcount: '2442'
+ht-degree: 0%
 
 ---
 
 
-# Rendering di moduli PDF interattivi {#rendering-interactive-pdf-forms}
+# Rendering di PDF forms interattivi {#rendering-interactive-pdf-forms}
 
-Il servizio Forms esegue il rendering dei moduli PDF interattivi su dispositivi client, in genere browser Web, per raccogliere informazioni dagli utenti. Dopo aver eseguito il rendering di un modulo interattivo, l&#39;utente può immettere i dati nei campi del modulo e fare clic su un pulsante di invio situato nel modulo per inviare le informazioni al servizio Forms. Per rendere visibile un modulo PDF interattivo, è necessario installare Adobe Reader o Acrobat nel computer in cui è installato il browser Web del client.
+Il servizio Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere sui browser Web, per raccogliere informazioni dagli utenti. Dopo aver eseguito il rendering di un modulo interattivo, l&#39;utente può immettere i dati nei campi del modulo e fare clic su un pulsante di invio situato sul modulo per inviare le informazioni al servizio Forms.  Adobe Reader o  Acrobat deve essere installato sul computer in cui è installato il browser Web client per rendere visibile un modulo PDF interattivo.
 
 >[!NOTE]
 >
->Prima di eseguire il rendering di un modulo con il servizio Forms, creare una struttura del modulo. In genere, una struttura del modulo viene creata in Designer e salvata come file XDP. Per informazioni sulla creazione di una struttura del modulo, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
+>Prima di eseguire il rendering di un modulo con il servizio Forms, creare una struttura del modulo. In genere, una struttura del modulo viene creata in Designer e salvata come file XDP. Per informazioni sulla creazione di una struttura del modulo, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Esempio di domanda di prestito**
 
@@ -46,7 +49,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
   </tr> 
   <tr> 
    <td><p>2</p></td> 
-   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo di prestito nel browser Web del client. (Vedere <a href="#render-an-interactive-pdf-form-using-the-java-api">Rendering di un modulo PDF interattivo mediante l'API</a>Java.)</p></td> 
+   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo del prestito nel browser Web del client. (Vedere <a href="#render-an-interactive-pdf-form-using-the-java-api">Rendering di un modulo PDF interattivo mediante l'API</a>Java.)</p></td> 
   </tr> 
   <tr> 
    <td><p>3</p></td> 
@@ -54,11 +57,11 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
   </tr> 
   <tr> 
    <td><p>4</p></td> 
-   <td><p>Il servlet <code>HandleData</code> Java utilizza l'API client del servizio Forms per elaborare l'invio e il recupero dei dati del modulo. I dati vengono quindi memorizzati in un database aziendale. (Vedere <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestione Dei Moduli</a>Inviati.)</p></td> 
+   <td><p>Il Servlet <code>HandleData</code> Java utilizza l'API client del servizio Forms per elaborare l'invio e il recupero dei dati del modulo. I dati vengono quindi memorizzati in un database aziendale. Consultate <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestione dell’Forms</a>inviato.</p></td> 
   </tr> 
   <tr> 
    <td><p>5</p></td> 
-   <td><p>Viene eseguito il rendering di un modulo di conferma nel browser Web. I dati, come il nome e il cognome dell'utente, vengono uniti al modulo prima del rendering. (Vedere <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Precompilazione dei moduli con layout</a>scorrevoli.)</p></td> 
+   <td><p>Viene eseguito il rendering di un modulo di conferma nel browser Web. I dati, come il nome e il cognome dell'utente, vengono uniti al modulo prima del rendering. Consultate <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Precompilazione di Forms con layout</a>scorrevoli.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -75,7 +78,7 @@ Questo modulo viene rappresentato dal servlet `HandleData` Java dell&#39;applica
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-Il Servlet `HandleData` Java precompila il modulo con il nome e il cognome dell&#39;utente e con l&#39;importo. Una volta precompilato, il modulo viene inviato al browser Web del client. (Vedere [Precompilazione dei moduli con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md)scorrevoli)
+Il Servlet `HandleData` Java precompila il modulo con il nome e il cognome dell&#39;utente e con l&#39;importo. Una volta precompilato, il modulo viene inviato al browser Web del client. (consultate [Precompilazione di Forms con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md)scorrevoli)
 
 **Servlet Java**
 
@@ -95,18 +98,18 @@ Il codice seguente mostra la sintassi di un Servlet Java denominato GetLoanForm:
              }
 ```
 
-Normalmente, non posizionare il codice API client del servizio Forms all&#39;interno di un `doGet` `doPost` metodo o di un servlet Java. È consigliabile posizionare il codice all&#39;interno di una classe separata, creare un&#39;istanza della classe dall&#39;interno del `doPost` metodo (o `doGet` metodo) e chiamare i metodi appropriati. Tuttavia, per la brevità del codice, gli esempi di codice riportati in questa sezione sono limitati al minimo e gli esempi di codice sono inseriti nel `doPost` metodo.
+Normalmente, non si inserisce il codice API client del servizio Forms all&#39;interno di un `doGet` `doPost` metodo o di un servlet Java. È consigliabile posizionare il codice all&#39;interno di una classe separata, creare un&#39;istanza della classe dall&#39;interno del `doPost` metodo (o `doGet` metodo) e chiamare i metodi appropriati. Tuttavia, per la brevità del codice, gli esempi di codice riportati in questa sezione sono limitati al minimo e gli esempi di codice sono inseriti nel `doPost` metodo.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Riepilogo dei passaggi**
 
 Per eseguire il rendering di un modulo PDF interattivo, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API client Forms.
+1. Creare un oggetto Forms Client API.
 1. Specificate i valori URI.
 1. Allegare file al modulo (facoltativo).
 1. Eseguire il rendering di un modulo PDF interattivo.
@@ -116,13 +119,13 @@ Per eseguire il rendering di un modulo PDF interattivo, effettuare le seguenti o
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
-**Creare un oggetto API client Forms**
+**Creare un oggetto Forms Client API**
 
-Prima di eseguire un&#39;operazione API client del servizio Forms a livello di programmazione, è necessario creare un oggetto API client Forms. Se utilizzate l&#39;API Java, create un `FormsServiceClient` oggetto. Se si utilizza l&#39;API del servizio Web Forms, creare un `FormsService` oggetto.
+Prima di eseguire un&#39;operazione API client di Forms Service a livello di programmazione, è necessario creare un oggetto API client Forms. Se utilizzate l&#39;API Java, create un `FormsServiceClient` oggetto. Se utilizzate l&#39;API del servizio Web di Forms, create un `FormsService` oggetto.
 
 **Specificare i valori URI**
 
-È possibile specificare i valori URI richiesti dal servizio Forms per eseguire il rendering di un modulo. Una struttura del modulo salvata come parte di un&#39;applicazione Forms può essere utilizzata come riferimento utilizzando il valore URI della directory principale del contenuto `repository:///`. Ad esempio, tenere in considerazione la seguente struttura del modulo denominata *Loan.xdp* , che si trova all&#39;interno di un&#39;applicazione Forms denominata *FormsApplication*:
+È possibile specificare i valori URI richiesti dal servizio Forms per eseguire il rendering di un modulo. Una struttura del modulo salvata come parte di un&#39;applicazione Forms può essere utilizzata come riferimento utilizzando il valore URI della directory principale del contenuto `repository:///`. Ad esempio, si consideri la seguente struttura del modulo denominata *Loan.xdp* che si trova all&#39;interno di un&#39;applicazione Forms denominata *FormsApplication*:
 
 ![ri_ri_formrepository](assets/ri_ri_formrepository.png)
 
@@ -130,9 +133,9 @@ Per accedere a questa struttura del modulo, specificare `Applications/FormsAppli
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms utilizzando Workbench, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
 
-Il percorso di una risorsa situata in un&#39;applicazione Forms è:
+Il percorso di una risorsa che si trova in un&#39;applicazione Forms è:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -147,17 +150,17 @@ Quando si esegue il rendering di un modulo interattivo, è possibile definire va
 * Sul pulsante Invia durante la progettazione della struttura del modulo in Designer
 * Utilizzando l&#39;API client del servizio Forms
 
-Se l&#39;URL di destinazione è definito nella struttura del modulo, non ignorarlo con l&#39;API client del servizio Forms. In altre parole, l&#39;impostazione dell&#39;URL di destinazione tramite l&#39;API Forms consente di ripristinare l&#39;URL specificato nella struttura del modulo a quello specificato tramite l&#39;API. Se si desidera inviare il modulo PDF all&#39;URL di destinazione specificato nella struttura del modulo, impostare l&#39;URL di destinazione a livello di programmazione su una stringa vuota.
+Se l&#39;URL di destinazione è definito all&#39;interno della struttura del modulo, non ignorarlo con l&#39;API client del servizio Forms. In altre parole, l&#39;impostazione dell&#39;URL di destinazione tramite l&#39;API di Forms reimposta l&#39;URL specificato nella struttura del modulo a quello specificato tramite l&#39;API. Se si desidera inviare il modulo PDF all&#39;URL di destinazione specificato nella struttura del modulo, impostare l&#39;URL di destinazione a livello di programmazione su una stringa vuota.
 
 Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calcolo (con uno script corrispondente eseguito sul server), è possibile definire a livello di programmazione l&#39;URL al quale viene inviato il modulo per eseguire lo script. Utilizzare il pulsante di invio nella struttura del modulo per specificare l&#39;URL in cui vengono inviati i dati del modulo. (Vedere [Calcolo dei dati](/help/forms/developing/calculating-form-data.md)del modulo.)
 
 >[!NOTE]
 >
->Anziché specificare un valore URL per fare riferimento a un file XDP, è anche possibile trasmettere un&#39; `com.adobe.idp.Document` istanza al servizio Forms. L&#39; `com.adobe.idp.Document` istanza contiene una struttura del modulo. (vedere [Trasmissione di documenti al servizio](/help/forms/developing/passing-documents-forms-service.md)Forms).
+>Invece di specificare un valore URL per fare riferimento a un file XDP, potete anche passare un&#39; `com.adobe.idp.Document` istanza al servizio Forms. L&#39; `com.adobe.idp.Document` istanza contiene una struttura del modulo. (vedere [Trasmissione di documenti al servizio](/help/forms/developing/passing-documents-forms-service.md)Forms).
 
 **Allega file al modulo**
 
-È possibile allegare file a un modulo. Quando si esegue il rendering di un modulo PDF con file allegati, gli utenti possono recuperare i file allegati in Acrobat utilizzando il riquadro degli allegati. È possibile allegare tipi di file diversi a un modulo, ad esempio un file di testo, o a un file binario come un file JPG.
+È possibile allegare file a un modulo. Quando si esegue il rendering di un modulo PDF con file allegati, gli utenti possono recuperare i file allegati in  Acrobat utilizzando il riquadro dell&#39;allegato. È possibile allegare tipi di file diversi a un modulo, ad esempio un file di testo, o a un file binario come un file JPG.
 
 >[!NOTE]
 >
@@ -165,9 +168,9 @@ Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calc
 
 **Rendering di un modulo PDF interattivo**
 
-Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `FormsServiceClient` o `renderPDFForm` il `renderPDFForm2` metodo dell&#39;oggetto.
+Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con  Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `FormsServiceClient` o `renderPDFForm` il `renderPDFForm2` metodo dell&#39;oggetto.
 
-L&#39;oggetto `renderPDFForm` utilizza un `URLSpec` oggetto. Il livello principale del contenuto del file XDP viene passato al servizio Forms utilizzando il metodo `URLSpec` dell&#39;oggetto `setContentRootURI` . Il nome della struttura del modulo ( `formQuery`) viene passato come valore di parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo.
+L&#39;oggetto `renderPDFForm` utilizza un `URLSpec` oggetto. Il livello principale del contenuto al file XDP viene passato al servizio Forms utilizzando il metodo dell&#39; `URLSpec` oggetto `setContentRootURI` . Il nome della struttura del modulo ( `formQuery`) viene passato come valore di parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo.
 
 Il `renderPDFForm2` metodo accetta un&#39; `com.adobe.idp.Document` istanza che contiene il documento XDP o PDF da sottoporre a rendering.
 
@@ -177,13 +180,13 @@ Il `renderPDFForm2` metodo accetta un&#39; `com.adobe.idp.Document` istanza che 
 
 ## Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Java {#render-an-interactive-pdf-form-using-the-java-api}
 
-Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (Java):
+Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API di Forms (Java):
 
 1. Includi file di progetto
 
    Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
    * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
@@ -191,17 +194,18 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passare un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
+   * Richiamate il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passate un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
    * Richiamate il metodo dell&#39; `URLSpec` oggetto `setContentRootURI` e passate un valore di stringa che specifica il valore URI della radice del contenuto. Verificare che la struttura del modulo si trovi nell&#39;URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento alla directory archivio, specificare `repository:///`.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
+   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore di stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
 
 1. Allega file al modulo
 
    * Creare un `java.util.HashMap` oggetto per memorizzare gli allegati utilizzando il relativo costruttore.
    * Richiamare il metodo dell&#39; `java.util.HashMap` oggetto `put` affinché ciascun file venga allegato al modulo di cui è stato effettuato il rendering. Passa i seguenti valori a questo metodo:
 
-      * Una stringa che specifica il nome dell&#39;allegato del file, inclusa l&#39;estensione del nome file.
+      * Una stringa che specifica il nome dell&#39;allegato del file, inclusa l&#39;estensione del nome del file.
    * Un `com.adobe.idp.Document` oggetto che contiene l&#39;allegato del file.
+
    >[!NOTE]
    >
    >Ripetere questo passaggio per ogni file da allegare al modulo. Questo passaggio è facoltativo e puoi passare `null`* se non vuoi inviare allegati.*
@@ -215,7 +219,8 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate specificare le opzioni di esecuzione.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+
+   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -229,23 +234,23 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (
 
 ## Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API del servizio Web {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (servizio Web):
+Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API di Forms (servizio Web):
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    Creare un `FormsService` oggetto e impostare i valori di autenticazione.
 
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passare un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
+   * Richiamate il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passate un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
    * Richiamate il metodo dell&#39; `URLSpec` oggetto `setContentRootURI` e passate un valore di stringa che specifica il valore URI della radice del contenuto. Verificare che la struttura del modulo si trovi nell&#39;URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento alla directory archivio, specificare `repository:///`.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
+   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore di stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
 
 1. Allega file al modulo
 
@@ -254,6 +259,7 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (
 
       * Una stringa che specifica il nome dell&#39;allegato del file, inclusa l&#39;estensione del nome file
    * Un `BLOB` oggetto che contiene l&#39;allegato del file
+
    >[!NOTE]
    >
    >Ripetere questo passaggio per ogni file da allegare al modulo.
@@ -271,7 +277,8 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l&#39;API Forms (
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali.)
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
