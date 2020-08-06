@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 23%
 
 ---
 
@@ -22,7 +25,7 @@ La modalità di distribuzione delle risorse multimediali dinamiche (video e imma
 Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 * Se il sito web è ospitato su AEM, allora è necessario aggiungere le risorse dell’elemento multimediale dinamico direttamente sulla pagina.
-* Se il sito Web non è su AEM, potete scegliere tra:
+* Se il sito Web non è AEM, potete scegliere tra:
 
    * Incorporamento del video o dell’immagine nel sito Web.
    * Collegare gli URL all’applicazione Web. Usate il collegamento per distribuire un lettore video come finestra a comparsa o modale.
@@ -30,7 +33,7 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consultate [Smart Imaging](imaging-faq.md) .
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consulta [Smart Imaging](imaging-faq.md) .
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
