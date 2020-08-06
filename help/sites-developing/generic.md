@@ -1,8 +1,8 @@
 ---
 title: Sviluppo (generico)
 seo-title: Sviluppo (generico)
-description: Il framework di integrazione include un livello di integrazione con un’API, che consente di creare componenti AEM per le funzionalità eCommerce
-seo-description: Il framework di integrazione include un livello di integrazione con un’API, che consente di creare componenti AEM per le funzionalità eCommerce
+description: Il framework di integrazione include un livello di integrazione con un'API, che consente di creare componenti AEM per le funzionalità eCommerce
+seo-description: Il framework di integrazione include un livello di integrazione con un'API, che consente di creare componenti AEM per le funzionalità eCommerce
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >[È disponibile anche la documentazione](/help/sites-developing/ecommerce.md#api-documentation) API.
 
-Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di creare componenti AEM per funzionalità eCommerce (indipendentemente dal motore eCommerce specifico). Consente inoltre di utilizzare il database CRX interno o di collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM.
+Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di creare AEM componenti per funzionalità di eCommerce (indipendentemente dal motore eCommerce specifico). Consente inoltre di utilizzare il database CRX interno o di collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM.
 
-Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente si tratta di:
+Per utilizzare il livello di integrazione sono disponibili diversi componenti AEM predefiniti. Attualmente si tratta di:
 
 * Un componente per la visualizzazione di un prodotto
 * Un carrello
@@ -35,11 +35,11 @@ Per usare il livello di integrazione, sono disponibili diversi componenti AEM fo
 * Check-out
 * Ricerca
 
-Per la ricerca viene fornito un gancio di integrazione che consente di utilizzare la ricerca AEM, una ricerca di terze parti (come Search&amp;Promote) o una combinazione di questi.
+Per la ricerca viene fornito un gancio di integrazione che consente di utilizzare la ricerca AEM, una ricerca di terze parti (come Search&amp;Promote) o una combinazione di essi.
 
 ## Selezione motore eCommerce {#ecommerce-engine-selection}
 
-Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce. Il motore utilizzato deve essere identificato da AEM, anche quando si utilizza il motore generico AEM:
+Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce, il motore utilizzato deve essere identificato da AEM, anche quando si utilizza il motore AEM generico:
 
 * I motori di eCommerce sono servizi OSGi che supportano l&#39; `CommerceService` interfaccia
 
@@ -59,7 +59,7 @@ Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce.
    * Ad esempio, una `cq:commerceProvider` proprietà con il valore geometrixx sarà correlata alla configurazione OSGi per **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), dove `commerceProvider` anche il parametro ha il valore `geometrixx`.
    * In questo caso è possibile configurare ulteriori proprietà (se appropriato e disponibile).
 
-In un’installazione standard di AEM è necessaria un’implementazione specifica, ad esempio:
+In un’installazione standard AEM è necessaria un’implementazione specifica, ad esempio:
 
 |  |  |
 |---|---|
@@ -84,7 +84,7 @@ In un’installazione standard di AEM è necessaria un’implementazione specifi
 
 >[!NOTE]
 >
->Con CRXDE Lite potete vedere come questo viene gestito nel componente di prodotto per l’implementazione generica di AEM:
+>Utilizzando CRXDE Lite potete vedere come questo viene gestito nel componente prodotto per l’implementazione AEM generica:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -125,7 +125,7 @@ Qualsiasi risorsa prodotto può essere rappresentata da un `Product API`. La mag
 >
 >In effetti, gli assi di una variante sono determinati da qualsiasi `Product.getVariantAxes()` risultato:
 >
->* per l’implementazione generica, AEM la legge da una proprietà nei dati del prodotto ( `cq:productVariantAxes`)
+>* per l&#39;implementazione generica AEM la legge da una proprietà nei dati del prodotto ( `cq:productVariantAxes`)
 >
 >
 Mentre i prodotti (in generale) possono avere molti assi di variante, il componente prodotto out-of-the-box gestisce solo due:
@@ -135,7 +135,7 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
 
 >
 >   
-Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
+Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per i Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati PIM {#product-references-and-pim-data}
 
@@ -259,7 +259,7 @@ public class AxisFilter implements VariantFilter {
          * Un nodo di prodotto che contiene tutte le proprietà localmente (e non contiene una proprietà productData) eredita gli attributi di prodotto direttamente dai propri predecessori.
 
 
-* **Struttura di prodotto generica AEM**
+* **Struttura AEM prodotto generica**
 
    * Ogni variante deve avere un proprio nodo foglia.
    * L&#39;interfaccia del prodotto rappresenta sia prodotti che varianti, ma il nodo del repository correlato è specifico sul quale si trova.
@@ -335,16 +335,16 @@ public class AxisFilter implements VariantFilter {
 
 * Archiviazione
 
-   * In AEM i carrelli di maiuscole e minuscole generici sono memorizzati in [ClientContext](/help/sites-administering/client-context.md)
+   * Nel caso AEM-generico i carrelli di maiuscole e minuscole sono memorizzati nel [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalizzazione**
 
-* La personalizzazione deve sempre essere guidata da [ClientContext](/help/sites-administering/client-context.md).
-* ClientContext `/version/` del carrello viene creato in tutti i casi:
+* La personalizzazione deve sempre essere guidata dal [ClientContext](/help/sites-administering/client-context.md).
+* Viene creato un ClientContext `/version/` del carrello in tutti i casi:
 
    * I prodotti devono essere aggiunti utilizzando il `CommerceSession.addCartEntry()` metodo .
 
-* Esempio di informazioni sul carrello nel carrello ClientContext:
+* Esempio di informazioni sul carrello nel carrello dei ClientContext:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -477,10 +477,10 @@ Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` met
 
       * `DiscountPromotionHandler`, che applica uno sconto assoluto o percentuale a livello di carrello
       * `PerfectPartnerPromotionHandler`, che applica uno sconto assoluto o percentuale di prodotto se il prodotto partner è anche nel carrello
-   * ClientContext `SegmentMgr` risolve i segmenti e ClientContext `CartMgr` risolve le promozioni. Ogni promozione soggetta ad almeno un segmento risolto verrà attivata.
+   * Il ClientContext `SegmentMgr` risolve i segmenti e il ClientContext `CartMgr` risolve le promozioni. Ogni promozione soggetta ad almeno un segmento risolto verrà attivata.
 
       * Le promozioni generate vengono inviate al server tramite una chiamata AJAX per ricalcolare il carrello.
-      * Le promozioni con attivazione (e i voucher aggiunti) vengono visualizzate anche nel pannello ClientContext.
+      * Nel pannello ClientContext vengono visualizzate anche le Promozioni generate (e i voucher aggiunti).
 
 
 
