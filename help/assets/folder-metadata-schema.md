@@ -1,32 +1,35 @@
 ---
 title: Schema metadati cartelle
-description: Questo articolo descrive come creare uno schema di metadati per le cartelle di risorse in Risorse AEM
+description: Questo articolo descrive come creare uno schema di metadati per le cartelle di risorse in  AEM Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
 translation-type: tm+mt
 source-git-commit: aeb84feff6c0beb0ec3700ffd1870f8663c789a5
+workflow-type: tm+mt
+source-wordcount: '1085'
+ht-degree: 10%
 
 ---
 
 
 # Schema metadati cartelle {#folder-metadata-schema}
 
-Questo articolo descrive come creare uno schema di metadati per le cartelle di risorse in Risorse AEM.
+Questo articolo descrive come creare uno schema di metadati per le cartelle di risorse in  AEM Assets.
 
-Risorse Adobe Experience Manager (AEM) consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
+Adobe Experience Manager (AEM) Assets consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
 
 >[!NOTE]
 >
->Questa funzionalità richiede AEM 6.4 con almeno Service Pack 2 implementato. Per informazioni dettagliate sul service pack di AEM 6.4, consultate queste note [sulla](/help/release-notes/sp-release-notes.md)versione.
+>Questa funzionalità richiede AEM 6.4 con almeno Service Pack 2 implementato. Per AEM informazioni sul service pack 6.4, consultate queste note [sulla](/help/release-notes/sp-release-notes.md)versione.
 
 ## Aggiunta di uno schema di metadati di una cartella {#add-a-folder-metadata-schema-form}
 
-Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
+Usate l’editor Forms Schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
 
 1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
-1. Nella pagina Moduli schema metadati cartella, tocca o fai clic su **[!UICONTROL Crea]**.
-1. Specificare un nome per il modulo, quindi toccare o fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Moduli schema.
+1. Nella pagina Forms Schema metadati cartella, toccate o fate clic su **[!UICONTROL Crea]**.
+1. Specificare un nome per il modulo, quindi toccare o fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Forms schema.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -35,9 +38,9 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 * Schede
 * Elementi del modulo all&#39;interno delle schede.
 
-È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi modulo al modulo schema di metadati.
+È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema di metadati.
 
-1. Nella pagina Moduli schema, selezionare il modulo creato, quindi toccare o fare clic sull&#39;icona **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Schema Forms, selezionare il modulo creato, quindi toccare o fare clic sull&#39;icona **[!UICONTROL Modifica]** dalla barra degli strumenti.
 1. Nella pagina Editor schema metadati cartella, toccate o fate clic sull&#39;icona **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, toccate o fate clic sul nome predefinito e specificate il nuovo nome in **[!UICONTROL Impostazioni]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -48,7 +51,7 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 
    ![adding_components](assets/adding_components.png)
 
-   Se create più schede, toccate o fate clic su una scheda specifica per aggiungere componenti.
+   Se create più schede, toccate o fate clic su una scheda specifica per aggiungere i componenti.
 
 1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
@@ -85,7 +88,7 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: Memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: Visualizza la proprietà JCR nel nodo della cartella. Se configurate queste proprietà in CRXDE, Adobe consiglia di contrassegnarle come Disattiva modifica, perché sono protette. In caso contrario, l&#39;errore `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
+* `./jcr:created`: Visualizza la proprietà JCR nel nodo della cartella. Se configurate queste proprietà in CRXDE,  Adobe consiglia di contrassegnarle come Disattiva modifica, perché sono protette. In caso contrario, l&#39;errore `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, non includete uno spazio nel percorso della proprietà.
 
@@ -101,20 +104,20 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Moduli schema metadati cartella. Per eliminare un modulo, selezionarlo e toccare o fare clic sull&#39;icona Elimina dalla barra degli strumenti.
+È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Forms Schema metadati cartella. Per eliminare un modulo, selezionarlo e toccare o fare clic sull&#39;icona Elimina dalla barra degli strumenti.
 
 ![delete_form](assets/delete_form.png)
 
 ## Assegnazione di uno schema di metadati di una cartella {#assign-a-folder-metadata-schema}
 
-È possibile assegnare uno schema di metadati a una cartella dalla pagina Moduli schema metadati cartella o durante la creazione di una cartella.
+Potete assegnare uno schema di metadati a una cartella dalla pagina Forms Schema metadati cartella o durante la creazione di una cartella.
 
 Se si configura uno schema di metadati per una cartella, il percorso del modulo dello schema viene memorizzato nella `folderMetadataSchema` proprietà del nodo della cartella in .*/jcr:content*.
 
 ### Assegnazione a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
-1. Dalla pagina Moduli schema metadati cartella, selezionare il modulo schema che si desidera applicare a una cartella.
+1. Nella pagina Forms Schema metadati cartella, selezionate il modulo dello schema da applicare a una cartella.
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Applica alle cartelle]**.
 
 1. Selezionare la cartella in cui applicare lo schema, quindi fare clic o toccare **[!UICONTROL Applica]**. Se uno schema di metadati è già applicato alla cartella, un messaggio di avviso informa che lo schema di metadati esistente sta per essere sovrascritto. Toccate o fate clic su **[!UICONTROL Sovrascrivi]**.
@@ -130,7 +133,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 Quando create una cartella, potete assegnare uno schema di metadati a una cartella. Se nel sistema è presente almeno uno schema di metadati della cartella, nella finestra di dialogo **[!UICONTROL Crea cartella]** viene visualizzato un elenco aggiuntivo. È possibile selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcun schema.
 
-1. Dall’interfaccia utente di Risorse AEM, tocca o fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Dall’interfaccia utente di  AEM Assets, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Specificate un titolo e un nome per la cartella.
 1. Dall’elenco Schema metadati cartella, selezionate lo schema desiderato. Then, tap/click **[!UICONTROL Create]**.
 
