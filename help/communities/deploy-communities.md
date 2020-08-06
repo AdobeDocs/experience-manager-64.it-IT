@@ -1,8 +1,8 @@
 ---
 title: Implementazione di Communities
 seo-title: Implementazione di Communities
-description: Come distribuire i AEM Communities
-seo-description: Come distribuire i AEM Communities
+description: Come distribuire  AEM Communities
+seo-description: Come distribuire  AEM Communities
 uuid: 1f7faf1a-a339-4eaa-b728-b9110cb350a8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,21 +22,21 @@ ht-degree: 2%
 
 ## Prerequisiti {#prerequisites}
 
-* [AEM 6.4 Platform](../../help/sites-deploying/deploy.md)
+* [Piattaforma AEM 6.4](../../help/sites-deploying/deploy.md)
 
-* AEM Communities, licenza
+*  licenza AEM Communities
 
 * Licenze facoltative per:
 
-   * [Funzioni di Adobe  Analytics per Communities](analytics.md)
+   * [Funzioni di  Adobe Analytics per Communities](analytics.md)
    * [MongoDB per MSRP](msrp.md)
-   * [Adobe Cloud for ASRP](asrp.md)
+   * [Adobe Cloud per ASRP](asrp.md)
 
 ## Elenco di controllo dell&#39;installazione {#installation-checklist}
 
 **Per la piattaforma[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
-* Installa gli ultimi aggiornamenti di [AEM 6.4](#aem-updates)
+* Installa gli ultimi aggiornamenti [AEM 6.4](#aem-updates)
 
 * Se non si utilizzano le porte predefinite (4502, 4503), [configurare gli agenti di replica](#replication-agents-on-author)
 * [replicare la chiave di crittografia](#replicate-the-crypto-key)
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 * [Abilita il servizio tunnel](#tunnel-service-on-author)
 * [Abilita login per social network](social-login.md#adobe-granite-oauth-authentication-handler)
-* [Configurare Adobe  Analytics](analytics.md)
+* [Configurare  Adobe Analytics](analytics.md)
 * Impostazione di un servizio e-mail [predefinito](email.md)
 * Identificare la scelta per lo storage [UGC](working-with-srp.md) condiviso (**SRP**)
 
@@ -65,7 +65,7 @@ ht-degree: 2%
       * [Installare e configurare MySQL per DSRP](dsrp-mysql.md)
       * [Configura Solr](solr.md)
       * [Seleziona DSRP](srp-config.md)
-   * Se Adobe SRP [(ASRP)](asrp.md)
+   * Se  Adobe SRP [(ASRP)](asrp.md)
 
       * Consultate il rappresentante commerciale di riferimento per il provisioning
       * [Seleziona ASRP](srp-config.md)
@@ -74,13 +74,14 @@ ht-degree: 2%
       * Store UGC non condiviso:
 
          * UGC non è mai replicato
-         * UGC visibile solo nell’istanza o nel cluster AEM in cui è stato immesso
+         * UGC visibile solo su AEM&#39;istanza o cluster in cui è stato immesso
       * Il valore predefinito è JSRP
+
    Per la funzione di **[abilitazione](overview.md#enablement-community)**
 
    * [Installare e configurare FFmpeg](ffmpeg.md)
    * [Installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
-   * [Installare AEM Communities SCORM-Engine](#scorm-package)
+   * [Installazione  AEM Communities SCORM Engine](#scorm-package)
    * [Installazione e configurazione di MySQL per l&#39;abilitazione](mysql.md)
 
 
@@ -90,17 +91,17 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA con il pacchetto Communities. Per informazioni sugli aggiornamenti di AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulta le Note [sulla versione di](/help/release-notes/release-notes.md#release-information)AEM 6.4.
+AEM 6.4 Communities GA navi con pacchetto Community. Per informazioni sugli aggiornamenti di AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulta [AEM Note](/help/release-notes/release-notes.md#release-information)sulla versione 6.4.
 
 ### Aggiornamenti di AEM 6.4 {#aem-updates}
 
-A partire da AEM 6.3, gli aggiornamenti alle community vengono forniti come parte dei Service Pack e dei pacchetti AEM Cumulative Fix.
+A partire dal AEM 6.3, gli aggiornamenti alle Community vengono forniti come parte AEM Cumulative Fix Pack e Service Pack.
 
-Per gli ultimi aggiornamenti ad AEM 6.4, verifica [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
+Per gli ultimi aggiornamenti a AEM 6.4, assicurati di controllare i Service Pack e i Service Pack [Adobe Experience Manager 6.4 cumulativi](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
 
 ### Cronologia versioni {#version-history}
 
-Come in AEM 6.4 e versioni successive, le funzioni AEM Communities e gli hotfix fanno parte di pacchetti di correzioni e Service Pack cumulativi di AEM Communities. Non esistono pertanto pacchetti di caratteristiche distinti.
+Come AEM 6.4 e oltre,  funzionalità AEM Communities e hotfix fanno parte  pacchetti di correzioni e Service Pack cumulativi AEM Communities. Non esistono pertanto pacchetti di caratteristiche distinti.
 
 ### Driver JDBC per MySQL {#jdbc-driver-for-mysql}
 
@@ -145,11 +146,11 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un file ZIP trasferibile.
 
-Il motore SCORM AEM Communities è richiesto per la funzione di [abilitazione](overview.md#enablement-community) . I pacchetti scorm supportati nella versione AEM Communities 6.4 sono:
+Il motore  AEM Communities SCORM è richiesto per la funzione di [abilitazione](overview.md#enablement-community) . I pacchetti scorm supportati  versione AEM Communities 6.4 sono:
 
 * **[cq -social- scorm -package, versione 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Questo pacchetto SCORM è supportato da tutte le versioni di AEM 6.4 Communities.
 
-* **[cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**include il motore[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Questo pacchetto SCORM è supportato a partire da AEM 6.4.2.x Communities.
+* **[cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**include il motore[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Questo pacchetto SCORM è supportato AEM a partire da 6.4.2.x Communities.
 
 Per una nuova installazione del motore SCORM, utilizzare il pacchetto contenente [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (che è [ cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)). In modo da poter utilizzare le risorse di apprendimento supportate da SCORM 2017.
 
@@ -194,7 +195,7 @@ Per utilizzare i registri, vedere [Uso dei record di controllo e dei file](../..
 
 Per la raccolta SRP (MSRP o DSRP) per supportare la ricerca multilingue avanzata (MLS), sono necessari nuovi plug-in Solr oltre a uno schema personalizzato e alla configurazione Solr. Tutti gli elementi richiesti vengono assemblati in un file zip scaricabile.
 
-Il download avanzato di MLS (noto anche come &#39;phasetwo&#39;) è disponibile dall&#39;archivio di Adobe:
+Il download avanzato di MLS (noto anche come &#39;phasetwo&#39;) è disponibile dall&#39;archivio del Adobe :
 
 * [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
@@ -205,46 +206,46 @@ Per informazioni dettagliate e sull&#39;installazione, visitare Configurazione [
 
 ### Informazioni sui collegamenti a Package Share {#about-links-to-package-share}
 
-**Pacchetti visibili in Adobe AEM Cloud**
+**Pacchetti visibili in  Adobe AEM Cloud**
 
-I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza in esecuzione di AEM in quanto devono creare pacchetti di condivisione su `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il `Install`pulsante consente di installare i pacchetti in un sito ospitato da Adobe. Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione `Install`darà luogo a un errore.
+I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza di AEM in esecuzione, in quanto devono creare pacchetti di condivisione `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il `Install`pulsante consente di installare i pacchetti in un sito ospitato in un Adobe . Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione `Install`genererà un errore.
 
-**Come eseguire l&#39;installazione su un&#39;istanza AEM locale**
+**Come eseguire l&#39;installazione sull&#39;istanza AEM locale**
 
-Per installare i pacchetti visibili in `adobeaemcloud.com` un’istanza AEM locale, è necessario prima scaricare il pacchetto su un disco locale:
+Per installare i pacchetti visibili in `adobeaemcloud.com` un&#39;istanza AEM locale, è necessario prima scaricare il pacchetto su un disco locale:
 
 * Select the **[!UICONTROL Assets]** tab
 * Seleziona **[!UICONTROL download su disco]**
 
-Nell&#39;istanza locale di AEM, utilizza il gestore pacchetti (ad esempio [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio pacchetti di AEM locale.
+Nell&#39;istanza AEM locale, utilizzate il gestore pacchetti (ad esempio [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio AEM pacchetti locale.
 
-In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), il `Download`pulsante viene scaricato nell&#39;archivio pacchetti dell&#39;istanza locale di AEM.
+In alternativa, accedendo al pacchetto utilizzando la condivisione del pacchetto dall&#39;istanza AEM locale (ad esempio, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), il `Download`pulsante verrà scaricato nell&#39;archivio del pacchetto dell&#39;istanza AEM locale.
 
-Una volta nell&#39;archivio pacchetti dell&#39;istanza AEM locale, utilizzate il gestore pacchetti per installare il pacchetto.
+Una volta entrati nell&#39;archivio pacchetti dell&#39;istanza AEM locale, utilizzate il gestore pacchetti per installare il pacchetto.
 
 Per ulteriori informazioni, vedere [Come utilizzare i pacchetti](../../help/sites-administering/package-manager.md#package-share).
 
 ## Implementazioni consigliate {#recommended-deployments}
 
-In AEM Communities, uno store comune viene utilizzato per memorizzare il contenuto generato dall&#39;utente (UGC, user generated content) ed è spesso denominato provider di risorse di [storage (SRP)](working-with-srp.md). La distribuzione consigliata si basa sulla scelta di un&#39;opzione SRP per lo store comune.
+In  AEM Communities, uno store comune viene utilizzato per memorizzare il contenuto generato dall&#39;utente (UGC) ed è spesso denominato fornitore di risorse di [storage (SRP)](working-with-srp.md). La distribuzione consigliata si basa sulla scelta di un&#39;opzione SRP per lo store comune.
 
 Lo store comune supporta la moderazione e l&#39;analisi di UGC nell&#39;ambiente di pubblicazione, eliminando al contempo la necessità di [replicare](sync.md) UGC.
 
-* [Archivio](working-with-srp.md)contenuti community: illustra le opzioni di storage SRP per le community AEM
+* [Archivio](working-with-srp.md)contenuti community: illustra le opzioni di storage SRP per le comunità AEM
 
 * [Topologie](topologies.md)consigliate: illustra la topologia da utilizzare in base al caso di utilizzo e alla scelta SRP
 
 ## Aggiornamento {#upgrading}
 
-Quando effettuate l’aggiornamento alla piattaforma AEM 6.4 dalle versioni precedenti di AEM, è importante leggere Aggiornamento ad AEM 6.4.
+Quando eseguite l&#39;aggiornamento alla piattaforma AEM 6.4 dalle versioni precedenti di AEM, è importante leggere Aggiornamento alla AEM 6.4.
 
-Oltre ad aggiornare la piattaforma, leggi [Aggiornamento agli AEM Communities 6.4](upgrade.md) per informazioni sulle modifiche apportate a Communities.
+Oltre ad aggiornare la piattaforma, leggi [Aggiornamento ad  AEM Communities 6.4](upgrade.md) per informazioni sulle modifiche apportate a Communities.
 
 ## Configurazioni {#configurations}
 
 ### Editore principale {#primary-publisher}
 
-Se la distribuzione scelta è una farm [di](topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifiche** o su **Adobe  Analytics**.
+Se la distribuzione scelta è una farm [di](topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza AEM pubblicazione deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifiche** o su **Adobe Analytics**.
 
 Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi è configurata con la **`Primary Publisher`** casella di controllo selezionata, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principali.
 
@@ -326,13 +327,13 @@ Per abilitare il servizio tunnel:
 
 ### Replicare la chiave Crypto {#replicate-the-crypto-key}
 
-Esistono due funzioni dei AEM Communities che richiedono che tutte le istanze del server AEM utilizzino le stesse chiavi di crittografia. Questi sono [Analytics](analytics.md) e [ASRP](asrp.md).
+Esistono due funzionalità di  AEM Communities che richiedono che tutte AEM istanze del server utilizzino le stesse chiavi di crittografia. Si tratta di [Analytics](analytics.md) e [ASRP](asrp.md).
 
-A partire da AEM 6.3, il materiale chiave viene memorizzato nel file system e non più nell’archivio.
+A partire dal AEM 6.3, il materiale chiave è memorizzato nel file system e non più nella directory archivio.
 
 Per copiare il materiale chiave dall’autore a tutte le altre istanze, è necessario:
 
-* Accedete all’istanza di AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare
+* Accedere all&#39;istanza AEM, in genere un&#39;istanza di creazione, che contiene il materiale chiave da copiare
 
    * Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale
 
@@ -349,7 +350,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
 
 
-* Per ogni istanza AEM di destinazione
+* Per ogni istanza di AEM di destinazione
 
    * Accedere alla cartella dei dati
 
@@ -357,7 +358,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Incolla i 2 file precedentemente copiati
-   * È necessario [aggiornare il bundle](#refresh-the-granite-crypto-bundle) Granite Crypto se l’istanza AEM di destinazione è in esecuzione
+   * È necessario [aggiornare il bundle](#refresh-the-granite-crypto-bundle) Granite Crypto se l&#39;istanza AEM di destinazione è in esecuzione
 
 
 >[!CAUTION]
@@ -366,7 +367,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
 #### Replica archivio {#repository-replication}
 
-È possibile conservare il materiale chiave memorizzato nell’archivio, come nel caso di AEM 6.2 e versioni precedenti, specificando la seguente proprietà di sistema al primo avvio di ogni istanza di AEM (che crea l’archivio iniziale):
+È possibile conservare il materiale chiave memorizzato nell&#39;archivio, come nel caso di AEM 6.2 e versioni precedenti, specificando la seguente proprietà di sistema al primo avvio di ogni istanza AEM (che crea l&#39;archivio iniziale):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -427,11 +428,11 @@ In particolare, fate attenzione a utilizzare il nome corretto del server, non `l
 
 ### Dispatcher {#dispatcher}
 
-Se utilizzi un Dispatcher, vedi:
+Se utilizzi un dispatcher, vedi:
 
-* Documentazione di AEM su [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+* Documentazione [del dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) AEM
 * [Installazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [Configurazione di Dispatcher per Communities](dispatcher.md)
+* [Configurazione del dispatcher per Communities](dispatcher.md)
 * [Problemi noti](troubleshooting.md#dispatcher-refetch-fails)
 
 ## Documentazione di Community correlate {#related-communities-documentation}
