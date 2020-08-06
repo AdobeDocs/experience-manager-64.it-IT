@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +31,7 @@ La procedura seguente utilizza l’interfaccia classica per creare una directory
       * Il codice della lingua supportato è un codice di due lettere minuscoli, come definito dallo standard ISO-639-1
       * Il codice del paese supportato è un codice di due lettere minuscolo o superiore, come definito dallo standard ISO 3166
    1. Selezionate il modello e fate clic su Crea.
+
    ![newpage](assets/newpagefr.png)
 
 1. Nella console Siti Web, nella struttura Siti Web, selezionate la pagina principale del sito.
