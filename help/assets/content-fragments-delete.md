@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
 ## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
@@ -45,7 +48,7 @@ Per quanto riguarda l’eliminazione delle autorizzazioni, i frammenti di conten
 
 >[!NOTE]
 >
->Consultate anche [Come controllare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
+>Vedere anche [Come controllare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Autorizzazioni necessarie solo per la funzionalità Editor {#permissions-required-for-editor-functionality-only}
 
@@ -57,7 +60,7 @@ Ad esempio, durante la manipolazione delle variazioni; anche durante la modifica
 >
 >Le autorizzazioni di eliminazione, necessarie per modificare/aggiornare un frammento di contenuto, sono incluse nell&#39;autorizzazione di eliminazione [assegnata tramite Gestione](/help/sites-administering/security.md#managing-permissions)utente e/o gruppo.
 
-Le autorizzazioni necessarie per modificare/aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Se assegnate a tale nodo padre, le autorizzazioni verranno applicate a tutti i nodi all&#39;interno di tale ramo.
+Le autorizzazioni necessarie per modificare/aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Quando vengono assegnate a tale nodo padre, le autorizzazioni vengono applicate a tutti i nodi all&#39;interno di tale ramo.
 
 Ad esempio, una cartella contenente tutti i frammenti di contenuto, come:
 
@@ -87,9 +90,9 @@ I prerequisiti per consentire a un utente e/o gruppo specifico di modificare/agg
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Questi `remove` privilegi devono essere [amministrati utilizzando gli elenchi di controllo degli accessi, all&#39;interno di CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Tali `remove` privilegi devono essere [amministrati tramite elenchi di controllo di accesso, all&#39;interno di CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-I privilegi `add` e `modify` privilegi possono essere amministrati anche in CRXDE Lite, o utilizzando la console Gestione utente.
+I privilegi `add` e `modify` privilegi possono essere amministrati anche in CRXDE Lite o mediante la console Gestione utente.
 
 Ad esempio, la definizione dei `remove` privilegi per un gruppo `content-authors-no-delete`:
 
