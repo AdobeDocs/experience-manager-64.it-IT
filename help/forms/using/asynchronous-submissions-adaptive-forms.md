@@ -1,8 +1,8 @@
 ---
 title: Invio asincrono di moduli adattivi
 seo-title: Invio asincrono di moduli adattivi
-description: Informazioni sulla configurazione dell'invio asincrono per i moduli adattivi.
-seo-description: Informazioni sulla configurazione dell'invio asincrono per i moduli adattivi.
+description: Informazioni su come configurare l'invio asincrono per i moduli adattivi.
+seo-description: Informazioni su come configurare l'invio asincrono per i moduli adattivi.
 uuid: 3b8aeac8-cb38-4a2b-8375-556b2736d58b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Per configurare l&#39;invio asincrono per un modulo adattivo:
 
 ## Funzionamento dell&#39;invio asincrono {#how-asynchronous-submission-works}
 
-In AEM Forms sono inclusi i gestori di errori e di successo per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
+ AEM Forms fornisce handler out-of-the-box per l&#39;invio di moduli con esito positivo e errore. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
 
 Inoltre, autori e sviluppatori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. Per ulteriori informazioni, vedere [Ignorare i gestori predefiniti utilizzando le regole](#custom).
 
@@ -43,7 +46,7 @@ Esaminiamo innanzitutto la risposta del server per gli eventi di successo e di e
 
 ### Risposta del server per l&#39;evento di successo invio {#server-response-for-submission-success-event}
 
-La struttura per la risposta del server per l&#39;evento di successo di invio è la seguente:
+La struttura per la risposta del server per l&#39;evento di successo dell&#39;invio è la seguente:
 
 ```
 {
@@ -87,9 +90,9 @@ La risposta del server in caso di errore nell&#39;invio del modulo include:
 
 Il gestore errori legge la risposta del server e visualizza di conseguenza il messaggio di errore sul modulo.
 
-## Ignora gestori predefiniti utilizzando le regole {#custom}
+## Ignorare i gestori predefiniti utilizzando le regole {#custom}
 
-Gli sviluppatori di moduli e gli autori possono scrivere regole, a livello di modulo, nell&#39;editor di codice per ignorare i gestori predefiniti. La risposta del server agli eventi di successo e di errore è esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
+Gli sviluppatori di moduli e gli autori possono scrivere regole, a livello di modulo, nell&#39;editor di codice per ignorare i gestori predefiniti. La risposta del server per gli eventi di successo e di errore è esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
 
 Effettuate le seguenti operazioni per scrivere le regole nell&#39;editor di codice per gestire gli eventi di successo e di errore.
 
