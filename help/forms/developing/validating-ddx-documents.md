@@ -12,17 +12,20 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 0%
 
 ---
 
 
 # Convalida di documenti DDX {#validating-ddx-documents}
 
-È possibile convalidare a livello di programmazione un documento DDX utilizzato dal servizio Assembler. Utilizzando l&#39;API del servizio Assembler è possibile determinare se un documento DDX è valido o meno. Ad esempio, se avete effettuato l&#39;aggiornamento da una versione precedente di AEM Forms e desiderate verificare che il documento DDX sia valido, potete convalidarlo utilizzando l&#39;API del servizio Assembler.
+È possibile convalidare a livello di programmazione un documento DDX utilizzato dal servizio Assembler. Utilizzando l&#39;API del servizio Assembler è possibile determinare se un documento DDX è valido o meno. Ad esempio, se si è eseguito l&#39;aggiornamento da una versione precedente di AEM Forms  e si desidera verificare la validità del documento DDX, è possibile convalidarlo utilizzando l&#39;API del servizio Assembler.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -48,10 +51,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se  AEM Forms è distribuito su JBoss)
+* jbossall-client.jar (richiesto se  AEM Forms è distribuito su JBoss)
 
-se AEM Forms è implementato su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui è distribuito AEM Forms.
+se  AEM Forms è distribuito su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui  AEM Forms è distribuito.
 
 **Creare un client Assembler PDF**
 
@@ -67,7 +70,7 @@ Durante la convalida di un documento DDX, è necessario impostare opzioni di ese
 
 **Eseguire la convalida**
 
-Dopo aver creato il client del servizio Assembler, fatto riferimento al documento DDX e impostato le opzioni di esecuzione, è possibile richiamare l&#39; `invokeDDX` operazione per convalidare il documento DDX. Durante la convalida del documento DDX, è possibile passare `null` come parametro della mappa (in genere memorizza i documenti PDF richiesti dall&#39;Assembler per eseguire le operazioni specificate nel documento DDX).
+Dopo aver creato il client del servizio Assembler, fatto riferimento al documento DDX e impostato le opzioni di esecuzione, è possibile richiamare l&#39; `invokeDDX` operazione per convalidare il documento DDX. Durante la convalida del documento DDX, è possibile passare `null` come parametro della mappa (in genere questo parametro memorizza i documenti PDF richiesti dall&#39;Assembler per eseguire le operazioni specificate nel documento DDX).
 
 Se la convalida non riesce, viene generata un&#39;eccezione e il file di registro contiene dettagli che spiegano perché il documento DDX non è valido può essere ottenuto dall&#39; `OperationException` istanza. Dopo l&#39;analisi XML di base e il controllo dello schema, viene eseguita la convalida rispetto alla specifica DDX. Tutti gli errori che si trovano nel documento DDX sono specificati nel registro.
 
@@ -81,7 +84,7 @@ Il servizio Assembler restituisce i risultati di convalida che è possibile scri
 
 [Convalida di un documento DDX tramite l&#39;API del servizio Web](#validate-a-ddx-document-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -118,6 +121,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (Java)
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX.
    * Il valore `null` dell&#39;oggetto java.io.Map che in genere memorizza i documenti PDF.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione.
+
    Il `invokeDDX` metodo restituisce un `AssemblerResult` oggetto che contiene informazioni che specificano se il documento DDX è valido.
 
 1. Salvare i risultati della convalida in un file di registro.
@@ -125,6 +129,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (Java)
    * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del nome del file sia .xml.
    * Richiama il metodo dell’ `AssemblerResult` oggetto `getJobLog` . Questo metodo restituisce un&#39; `com.adobe.idp.Document` istanza che contiene informazioni di convalida.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file.
+
    >[!NOTE]
    >
    >Se il documento DDX non è valido, `OperationException` viene generato un errore. All&#39;interno dell&#39;istruzione catch, è possibile richiamare il metodo `OperationException` dell&#39;oggetto `getJobLog` .
@@ -135,7 +140,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (Java)
 
 [Avvio rapido (modalità SOAP): Convalida dei documenti DDX tramite l&#39;API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) Java (modalità SOAP)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -154,12 +159,12 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (servi
 1. Creare un client Assembler PDF.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms  (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
 
-      * Assegnare il nome utente dei moduli AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Assegnare al campo il nome utente del modulo AEM `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -176,7 +181,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (servi
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
    * Impostare l&#39;opzione di esecuzione che richiede al servizio Assembler di convalidare il documento DDX assegnando il valore true al membro `AssemblerOptionSpec` dati dell&#39;oggetto `validateOnly` .
-   * Impostate la quantità di informazioni che il servizio Assembler scrive nel file di registro assegnando un valore stringa al membro dati dell&#39; `AssemblerOptionSpec` oggetto `logLevel` . durante la convalida di un documento DDX, è necessario scrivere ulteriori informazioni nel file di registro per facilitare il processo di convalida. Di conseguenza, è possibile specificare il valore `FINE` o `FINER`. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe in Riferimento API di [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Impostate la quantità di informazioni che il servizio Assembler scrive nel file di registro assegnando un valore stringa al membro dati dell&#39; `AssemblerOptionSpec` oggetto `logLevel` . durante la convalida di un documento DDX, è necessario scrivere ulteriori informazioni nel file di registro per facilitare il processo di convalida. Di conseguenza, è possibile specificare il valore `FINE` o `FINER`. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe in [Guida di riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)delle API di AEM Forms.
 
 1. Eseguire la convalida.
 
@@ -185,6 +190,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (servi
    * Un `BLOB` oggetto che rappresenta il documento DDX.
    * Il valore `null` dell&#39; `Map` oggetto che in genere memorizza i documenti PDF.
    * Un `AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione.
+
    Il `invokeDDX` metodo restituisce un `AssemblerResult` oggetto che contiene informazioni che specificano se il documento DDX è valido.
 
 1. Salvare i risultati della convalida in un file di registro.
@@ -194,6 +200,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (servi
    * Creare un array di byte che memorizza il contenuto dell&#39; `BLOB` oggetto. Compilare l&#39;array di byte ottenendo il valore del campo dell&#39; `BLOB` oggetto `MTOM` .
    * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando l&#39; `System.IO.FileStream` oggetto.
    * Scrivere il contenuto dell&#39;array di byte in un file PDF richiamando il metodo dell&#39; `System.IO.BinaryWriter` oggetto `Write` e passando l&#39;array di byte.
+
    >[!NOTE]
    >
    >Se il documento DDX non è valido, `OperationException` viene generato un errore. All&#39;interno dell&#39;istruzione catch, è possibile ottenere il valore del `OperationException` membro dell&#39; `jobLog` oggetto.
@@ -202,4 +209,4 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (servi
 
 [Convalida di documenti DDX](#validating-ddx-documents)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
