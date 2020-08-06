@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 0%
 
 ---
 
 
 # Aggiunta e rimozione di credenziali di nome utente e password {#adding-and-removing-user-name-and-password-credentials}
 
-Dalla pagina Gestione archivio attendibili, è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello di SOAP.
+Dalla pagina Gestione archivio attendibili, è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello SOAP.
 
 ## Aggiungere una credenziale nome utente e password {#add-a-user-name-and-password-credential}
 
