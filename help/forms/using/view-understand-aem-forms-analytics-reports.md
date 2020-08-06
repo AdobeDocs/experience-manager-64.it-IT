@@ -1,8 +1,8 @@
 ---
-title: Visualizzazione e comprensione dei rapporti di analisi di AEM Forms
-seo-title: Visualizzazione e comprensione dei rapporti di analisi di AEM Forms
-description: AEM Forms si integra con Adobe Analytics e fornisce analisi sintetiche e dettagliate sui moduli adattivi pubblicati.
-seo-description: AEM Forms si integra con Adobe Analytics e fornisce analisi sintetiche e dettagliate sui moduli adattivi pubblicati.
+title: Visualizzazione e comprensione  report di analisi AEM Forms
+seo-title: Visualizzazione e comprensione  report di analisi AEM Forms
+description: ' AEM Forms si integra con  Adobe Analytics e fornisce analisi sintetiche e dettagliate sui moduli adattivi pubblicati.'
+seo-description: ' AEM Forms si integra con  Adobe Analytics e fornisce analisi sintetiche e dettagliate sui moduli adattivi pubblicati.'
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,21 +10,24 @@ topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 0%
 
 ---
 
 
-# Visualizzazione e comprensione dei rapporti di analisi di AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Visualizzazione e comprensione  report di analisi AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L&#39;obiettivo dell&#39;analisi di queste metriche è di rendere più utilizzabili moduli o documenti con decisioni informate basate sui dati richiesti.
+ Adobe Experience Manager Forms si integra con  Adobe Analytics che consente di acquisire e monitorare le metriche delle prestazioni per i moduli e i documenti pubblicati. L&#39;obiettivo dell&#39;analisi di queste metriche è di rendere più utilizzabili moduli o documenti con decisioni informate basate sui dati richiesti.
 
 ## Impostazione dell&#39;analisi {#setting-up-analytics}
 
-La funzione di analisi in AEM Forms è disponibile come parte del pacchetto del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, consultate [Installazione e configurazione di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+La funzione di analisi in  AEM Forms è disponibile come parte del pacchetto  del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, consultate [Installazione e configurazione  AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics. Per informazioni sulla soluzione, consultate [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics . Per informazioni sulla soluzione, consultate [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Una volta ottenuto il pacchetto del componente aggiuntivo AEM Forms e un account Adobe Analytics, integrate l&#39;account Adobe Analytics con AEM Forms e abilitate il tracciamento dei moduli o dei documenti come descritto in [Configura analisi e rapporti](/help/forms/using/configure-analytics-forms-documents.md).
+Una volta ottenuto il pacchetto  del componente aggiuntivo AEM Forms e un account  Adobe Analytics, è possibile integrare  account Adobe Analytics con  AEM Forms e abilitare il tracciamento dei moduli o dei documenti come descritto in [Configura analisi e rapporti](/help/forms/using/configure-analytics-forms-documents.md).
 
 ## Registrazione delle informazioni sull&#39;interazione con l&#39;utente {#how-user-interaction-information-is-recorded}
 
@@ -49,20 +52,20 @@ Quando un utente interagisce con il modulo, le interazioni vengono registrate e 
 Per visualizzare i rapporti di analisi, effettuate le seguenti operazioni:
 
 1. Accedi al portale AEM all&#39;indirizzo `https://[hostname]:[port]`
-1. Fare clic su **Moduli > Moduli e documenti**.
+1. Fate clic su **Forms > Forms e documenti**.
 
 1. Selezionare il modulo per il quale si desidera visualizzare i report di analisi.
 1. Selezionate **Altro > Report** di Analytics.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Report analisi, comando
+**A.** Report analisi, comando
 
-In AEM Forms sono visualizzati i rapporti di analisi per il modulo e per ciascun pannello del modulo, come illustrato di seguito.
+ AEM Forms visualizza i report di analisi per il modulo e per ciascun pannello del modulo, come mostrato di seguito.
 
 ![Report di riepilogo di un modulo adattivo](assets/analyticsdashboard_callout.png)
 
-************ A. Conversioni **B. Riepilogo a livello di modulo** C.**Riepilogo a livello di pannello** D. Browser di visitatori - filtro **E. Sistema operativo dei visitatori - filtro** F. Lingua dei visitatori - filtro
+**A.** Conversioni **B.** Riepilogo a livello di modulo **C.** Riepilogo a livello di pannello **D.** Browser di visitatori - filtro **E.** Sistema operativo dei visitatori - filtro **F.** Lingua dei visitatori - filtro
 
 Per impostazione predefinita, viene visualizzato il rapporto di analisi per gli ultimi sette giorni. Puoi visualizzare i rapporti degli ultimi 15 giorni, degli ultimi 1 mese e così via, oppure specificare un intervallo di date.
 
@@ -104,7 +107,7 @@ La sezione di riepilogo a livello di pannello contiene le seguenti informazioni 
 
 * **Errori riscontrati**: Numero medio di errori riscontrati dagli utenti sui campi di un pannello. Gli errori riscontrati vengono generati dividendo gli errori totali in un campo per numero di rappresentazioni del modulo.
 
-* **Aiuto accessibile**: Numero medio di volte in cui gli utenti accedevano alla guida contestuale per i campi nel pannello. L&#39;Aiuto accessibile viene fornito suddividendo il numero totale di volte in cui l&#39;Aiuto è accessibile per un campo in base al numero di rappresentazioni del modulo.
+* **Aiuto accessibile**: Numero medio di volte in cui gli utenti hanno eseguito l’accesso alla guida contestuale per i campi nel pannello. L&#39;Aiuto accessibile viene fornito suddividendo il numero totale di volte in cui l&#39;Aiuto è accessibile per un campo in base al numero di rappresentazioni del modulo.
 
 ### Report dettagliato del pannello {#detailed-panel-report}
 
