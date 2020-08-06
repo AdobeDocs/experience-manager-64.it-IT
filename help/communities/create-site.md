@@ -1,8 +1,8 @@
 ---
 title: Creazione di un nuovo sito community
 seo-title: Creazione di un nuovo sito community
-description: Come creare un nuovo sito AEM Communities
-seo-description: Come creare un nuovo sito AEM Communities
+description: 'Come creare un nuovo sito AEM Communities '
+seo-description: 'Come creare un nuovo sito AEM Communities '
 uuid: b8557416-cae4-489e-ab3b-e94d56686b7a
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 2%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 Utilizzate l&#39;istanza di creazione per creare un nuovo sito community
 
 * Accesso con privilegi di amministratore
-* Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Siti]**
+* Dalla navigazione globale: **[!UICONTROL Navigation > Communities > Sites]**
 
-La console Siti community offre una procedura guidata che guida l’utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next`passo precedente o `Back`al passo precedente prima di impegnare il sito nel passaggio finale.
+La console Siti community offre una procedura guidata che guida l’utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next`passo precedente o `Back`al passo precedente prima di eseguire il commit del sito nel passaggio finale.
 
 Per iniziare a creare un nuovo sito community:
 
@@ -45,7 +48,7 @@ Nel passaggio [Modello](sites-console.md#step2013asitetemplate)sito, immettete u
 * **[!UICONTROL Radice]** sito community: (lasciare vuoto per la radice predefinita `/content/sites`)
 
 * **[!UICONTROL Configurazioni]** cloud: (lasciate vuoto se non sono specificate configurazioni cloud) fornite il percorso alle configurazioni cloud specificate.
-* **[!UICONTROL Lingua]** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzate il menu a discesa per scegliere una *o più* lingue di base tra quelle disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese tradizionale e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](../../help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
+* **[!UICONTROL Lingua]** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzate il menu a discesa per scegliere una *o più* lingue di base tra quelle disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese (tradizionale) e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](../../help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
 
 * **[!UICONTROL Nome]** sito community: coinvolgimento
 
@@ -76,11 +79,11 @@ Selezionate lo stile da applicare al modello. Quando è selezionato, il tema sar
 
 Seleziona **[!UICONTROL Avanti]**.
 
-### Passaggio 3:Impostazioni {#step-settings}
+### Passaggio 3: Impostazioni {#step-settings}
 
 Nella fase Settings (Impostazioni), prima di selezionare `Next`, sono presenti sette sezioni che forniscono l&#39;accesso alle configurazioni che includono gestione utente, tag, moderazione, gestione dei gruppi, analisi, traduzione e abilitazione.
 
-Per provare a utilizzare le funzioni di abilitazione, consulta l’esercitazione [Guida introduttiva ad AEM Communities for Enablement](getting-started-enablement.md) .
+Per provare a utilizzare le funzioni di abilitazione, [consulta l’esercitazione Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md) .
 
 #### USER MANAGEMENT {#user-management}
 
@@ -100,9 +103,9 @@ Seleziona tutte le caselle di controllo per Gestione [utente](sites-console.md#u
 
 #### TAGGING {#tagging}
 
-I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM precedentemente definiti tramite la console [](../../help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](setup.md#create-tutorial-tags)esercitazioni).
+I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM definiti in precedenza tramite la console [](../../help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](setup.md#create-tutorial-tags)esercitazioni).
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio:
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
 
 * Tipo &#39;tut&#39;
 * Seleziona `Tutorial`
@@ -113,9 +116,9 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esem
 
 [I ruoli](users.md) dei membri della community vengono assegnati tramite le impostazioni nella sezione Ruoli.
 
-Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
+Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Ad esempio:
+Ad esempio,
 
 * Tipo &quot;q&quot;
 * Seleziona [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
@@ -134,7 +137,7 @@ Accettate le impostazioni globali predefinite per [moderare](sites-console.md#mo
 
 #### ANALYTICS {#analytics}
 
-Se Adobe Analytics dispone di una licenza e sono stati configurati un servizio e un framework cloud di Analytics, è possibile abilitare Analytics e selezionare il framework.
+Se  Adobe Analytics è concesso in licenza e è stato configurato un servizio e un framework cloud di Analytics, è possibile abilitare Analytics e selezionare il framework.
 
 Consultate Configurazione [di Analytics per le funzioni](analytics.md)Community.
 
@@ -157,7 +160,7 @@ Le impostazioni [di](sites-console.md#translation) traduzione specificano la lin
 
 Lasciate vuoto quando create una community di coinvolgimento.
 
-Per un’esercitazione simile per creare rapidamente una community di [abilitazione](overview.md#enablement-community), consultate [Guida introduttiva ad AEM Communities per l’abilitazione](getting-started-enablement.md).
+Per un’esercitazione simile per creare rapidamente una community di [abilitazione](overview.md#enablement-community), consulta [Guida introduttiva a  AEM Communities per l’abilitazione](getting-started-enablement.md).
 
 Seleziona **[!UICONTROL Avanti]**.
 
@@ -191,7 +194,7 @@ Da sinistra a destra sono:
 
 * **Pubblica sito** Selezionate l&#39;icona del mondo per pubblicare il sito della community (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, per impostazione predefinita viene utilizzato localhost:4503)
 
-* **Esporta sito** Selezionate l&#39;icona di esportazione per creare un pacchetto del sito della community che viene memorizzato e scaricato in [Package Manager](../../help/sites-administering/package-manager.md) .
+* **Esporta sito** Selezionate l&#39;icona di esportazione per creare un pacchetto del sito della community che viene memorizzato e scaricato in [Gestione](../../help/sites-administering/package-manager.md) pacchetti.
 
    UGC non è incluso nel pacchetto del sito.
 
@@ -213,6 +216,7 @@ Da sinistra a destra sono:
 >1. Accanto a **[!UICONTROL Impostazioni]** , seleziona **[!UICONTROL Modifica]**
 >1. Nella finestra di dialogo a comparsa per Impostazioni agente, seleziona la scheda Trasporto
 >1. In URI, modificate il numero di porta 4503 in base al numero di porta desiderato
+
 >
 >
 Ad esempio, per utilizzare la porta 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -227,27 +231,27 @@ Dopo aver verificato che il server di pubblicazione sia in esecuzione, seleziona
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-Quando il sito community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
+Quando il sito della community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
 ### Notifica nuovi gruppi di utenti community {#notice-new-community-user-groups}
 
-Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti con le autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, consultate Gruppi di [utenti per i siti](users.md#usergroupsforcommunitysites)della community.
+Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti che dispongono delle autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, visitate Gruppi di [utenti per i siti](users.md#usergroupsforcommunitysites)della community.
 
 Per questo nuovo sito community, dato il nome del sito &quot;coinvolgimento&quot; nel passaggio 1, i quattro nuovi gruppi di utenti possono essere visualizzati dalla console [](members.md) Gruppi (navigazione globale: Community, Gruppi):
 
 * Community Engagement
 * Amministratori di gruppi di coinvolgimento community
 * Membri di coinvolgimento della community
-*  Moderatori di coinvolgimento community
+* Moderatori di coinvolgimento community
 * Community Engagement Privileged members
 * Community Engage Sitecontentmanager
 
 Tieni presente che [Aaron McDonald](tutorials.md#demo-users) è membro di
 
 * Community Engagement
-*  Moderatori di coinvolgimento community
+* Moderatori di coinvolgimento community
 * Partecipazione community (indirettamente come membro del gruppo Moderatori)
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
@@ -327,7 +331,7 @@ Il valore &#39;**$**&#39; alla fine della `sling:match`stringa di espressione re
 
 ### Modifica del sito {#modify-the-site}
 
-Dopo la creazione iniziale del sito, gli autori possono utilizzare l’icona [](sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring di AEM.
+Dopo la creazione iniziale del sito, gli autori possono utilizzare l&#39;icona [](sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring AEM.
 
 Inoltre, gli amministratori possono utilizzare l’icona [](sites-console.md#modifying-site-properties) Modifica sito per modificare le proprietà del sito, ad esempio il titolo.
 
