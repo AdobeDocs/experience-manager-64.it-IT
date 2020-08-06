@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Se è installato il connettore per EMC Documentum, oltre alle istruzioni di questo capitolo, la strategia di backup e ripristino deve includere il backup (o il ripristino) del computer in cui è installato il sistema ECM corrispondente. (Vedere la documentazione di ECM Documentum).
 
-Eseguire il backup dell&#39;ambiente dei moduli AEM utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
+Eseguire il backup dell&#39;ambiente AEM dei moduli utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
 
-* Esegui il backup dei moduli AEM seguendo le istruzioni descritte in questo documento.
+* Eseguire il backup AEM moduli seguendo le istruzioni descritte in questo documento.
 * Eseguire il backup del sistema ECM Documentum seguendo le istruzioni riportate in [Backup di EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
-Ripristinare l&#39;ambiente dei moduli AEM utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
+Ripristinare l&#39;ambiente AEM moduli utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
 
 * Ripristinare il sistema ECM seguendo le istruzioni riportate in [Ripristino di EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
-* Ripristina i moduli AEM seguendo le istruzioni descritte in questo documento.
+* Ripristinare AEM moduli seguendo le istruzioni descritte in questo documento.
 
