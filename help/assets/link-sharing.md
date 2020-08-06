@@ -1,16 +1,19 @@
 ---
 title: Condivisione dei collegamenti delle risorse
-description: Come condividere risorse, cartelle e raccolte all’interno di Risorse AEM come URL per parti esterne.
+description: Come condividere risorse, cartelle e raccolte all'interno  AEM Assets come URL per parti esterne.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 14%
 
 ---
 
 
 # Condivisione dei collegamenti delle risorse {#asset-link-sharing}
 
-Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte come URL con i membri dell’organizzazione e le entità esterne, inclusi partner e fornitori. La condivisione di risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili a soggetti esterni senza dover prima accedere a Risorse AEM.
+Risorse Adobe Experience Manager (AEM) consente di condividere risorse, cartelle e raccolte come URL con i membri dell’organizzazione e le entità esterne, inclusi partner e fornitori. La condivisione di risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima accedere a  AEM Assets.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    >[!NOTE]
    >
-   >Per condividere collegamenti da AEM Author a entità esterne, esporre solo i seguenti URL utilizzati per la condivisione dei collegamenti, per le richieste GET. Bloccate altri URL per garantire la protezione della distribuzione AEM.
+   >Per condividere i collegamenti da AEM Author alle entità esterne, esporre solo i seguenti URL utilizzati per la condivisione dei collegamenti, per le richieste di GET. Bloccate altri URL per assicurare che la distribuzione AEM sia sicura.
    >
    >* &lt;AEM Server>/linkshare.html
    * &lt;AEM Server>/linksharepreview.html
@@ -50,7 +53,8 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    * locale
    * author
    * pubblicazione
-   Per le proprietà `local` e `author` , fornite l&#39;URL rispettivamente per l&#39;istanza locale e per l&#39;istanza di creazione. Sia `local` che `author` le proprietà hanno lo stesso valore se si esegue una singola istanza di creazione di AEM. Ad `publish`esempio, fornite l’URL per l’istanza di pubblicazione.
+
+   Per le proprietà `local` e `author` , fornite l&#39;URL rispettivamente per l&#39;istanza locale e per l&#39;istanza di creazione. Sia `local` che `author` le proprietà hanno lo stesso valore se si esegue una singola istanza AEM autore. Ad `publish`esempio, fornite l’URL per l’istanza di pubblicazione.
 
 1. Nella casella dell’indirizzo e-mail della finestra di dialogo **[!UICONTROL Condivisione collegamenti]**, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi anche condividere il collegamento con più utenti.
 
@@ -79,16 +83,16 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 1. Fate clic su **[!UICONTROL Condividi]**. Un messaggio conferma la condivisione del collegamento con gli utenti tramite e-mail.
 1. Per visualizzare la risorsa condivisa, toccate o fate clic sul collegamento contenuto nell&#39;e-mail inviata all&#39;utente. La risorsa condivisa viene visualizzata nella pagina [!UICONTROL Adobe Marketing Cloud] .
 
-   ![Risorse condivise sono disponibili in Adobe Marketing Cloud](assets/chlimage_1-545.png)
+   ![Le risorse condivise sono disponibili in Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
    Per passare alla vista a elenco, toccate o fate clic sull’icona del layout sulla barra degli strumenti.
 
-1. Per generare un’anteprima della risorsa, tocca o fai clic sulla risorsa condivisa. Tocca o fai clic su **[!UICONTROL Indietro]** sulla barra degli strumenti per chiudere l&#39;anteprima e tornare alla pagina di [!UICONTROL Marketing Cloud] . Se hai condiviso una cartella, tocca o fai clic su **[!UICONTROL Cartella padre]** per tornare ad essa.
+1. Per generare un’anteprima della risorsa, tocca o fai clic sulla risorsa condivisa. Tocca o fai clic su **[!UICONTROL Indietro]** sulla barra degli strumenti per chiudere l’anteprima e tornare alla pagina dell’ [!UICONTROL Marketing Cloud] . Se hai condiviso una cartella, tocca o fai clic su **[!UICONTROL Cartella padre]** per tornare ad essa.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM supporta la generazione dell’anteprima delle risorse di questi tipi MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Potete scaricare solo le risorse degli altri tipi MIME.
+   AEM supporta la generazione dell&#39;anteprima delle risorse di questi tipi MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Potete scaricare solo le risorse degli altri tipi MIME.
 
 1. Per scaricare la risorsa condivisa, tocca o fai clic sull’icona **[!UICONTROL Seleziona]** nella barra degli strumenti, tocca o fai clic sulla risorsa, quindi tocca o fai clic su **[!UICONTROL Scarica]** dalla barra degli strumenti.
 
@@ -98,7 +102,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 1. Per visualizzare un elenco delle risorse condivise, scegli **[!UICONTROL Collegamenti condivisi]** nel riquadro di navigazione.
 1. Per annullare la condivisione di una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Annulla condivisione]** nella barra degli strumenti. Viene visualizzato un messaggio di conferma dell’annullamento della condivisione della risorsa. Inoltre, la voce relativa alla risorsa viene rimossa dall’elenco.
 
-## Configurare il servizio di posta CQ Day {#configure-day-cq-mail-service}
+## Configurare il servizio di posta di CQ Day {#configure-day-cq-mail-service}
 
 1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti > Operazioni > Console web]**.
 1. Dall&#39;elenco dei servizi, individuare il servizio **[!UICONTROL di posta]** Day CQ.
@@ -108,13 +112,14 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    * Porta server SMTP: porta del server di posta elettronica
    * Utente SMTP: nome utente del server di posta elettronica
    * Password SMTP: password del server di posta elettronica
+
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
 1. Click/tap **[!UICONTROL Save]**.
 
 ## Configurare la dimensione massima dei dati {#configure-maximum-data-size}
 
-Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime l’intera gerarchia di risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione del servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet **[!UICONTROL proxy di condivisione risorse Adhoc]** Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
+Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime l’intera gerarchia di risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione di servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet **[!UICONTROL proxy di condivisione di risorse Adhoc]** Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
 
 1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti > Operazioni > Console web]**.
 1. Dalla console Web, individua la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
@@ -127,6 +132,6 @@ Quando scaricate le risorse dal collegamento condiviso mediante la funzione Cond
 ## Best practices and troubleshooting {#best-practices-and-troubleshooting}
 
 * Le cartelle di risorse o le raccolte che contengono uno spazio vuoto nel loro nome potrebbero non essere condivise.
-* Se gli utenti non possono scaricare le risorse condivise, verificate con il vostro amministratore AEM i limiti [di](#configure-maximum-data-size) download.
-* Se non potete inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l’e-mail, verificate con l’amministratore AEM se il servizio [e-](#configure-day-cq-mail-service) mail è configurato o meno.
+* Se gli utenti non possono scaricare le risorse condivise, verificate con il vostro amministratore AEM quali siano i limiti [di](#configure-maximum-data-size) download.
+* Se non potete inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l’e-mail, verificate con AEM amministratore se il servizio [e-](#configure-day-cq-mail-service) mail è configurato o meno.
 * Se non potete condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti, accertatevi di disporre delle autorizzazioni appropriate. Consultate [Condividere le risorse](#share-assets).
