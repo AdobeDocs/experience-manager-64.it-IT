@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Panoramica di esempio {#sample-overview}
 
-Le bozze del portale AEM Forms e il componente di invio consentono agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, i AEM Forms forniscono servizi per dati e metadati che consentono di memorizzare i dati compilati dall&#39;utente nel modulo, nonché i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l&#39;istanza di pubblicazione AEM, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
+ componente bozze del portale AEM Forms e invii consente agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità,  AEM Forms fornisce servizi per i dati e i metadati che consentono di memorizzare i dati compilati da un utente nel modulo e i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite AEM&#39;istanza di pubblicazione, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
 
 L’esempio, discusso in questo documento, è un’implementazione di riferimento di servizi di dati e metadati personalizzati per integrare le bozze e i componenti inviati in un database. Il database utilizzato nell&#39;implementazione di esempio è **MySQL 5.6.24**. Tuttavia, potete integrare il componente bozze e invii con qualsiasi database di vostra scelta.
 
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Verificate di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo sui rilasci di [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) .
->* Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
+>* Verificate di aver installato la versione più recente del pacchetto  componente aggiuntivo di AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo sulle [versioni](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) di AEM Forms.
+>* Il pacchetto di esempio funziona solo con le azioni di invio per Forms adattive.
 
 
 ## Configurare e configurare l’esempio {#set-up-and-configure-the-sample}
@@ -42,23 +42,23 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 
    [Ottieni file](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Andate a AEM Package Manager all&#39;indirizzo https://[*host*]:[*port*]/crx/packmgr/.
+1. Andate a AEM gestore pacchetti all&#39;indirizzo https://[*host*]:[*port*]/crx/packmgr/.
 1. Fate clic su **[!UICONTROL Carica pacchetto]**.
 
 1. Selezionate il pacchetto **aem-fp-db-integration-sample-pkg-6.1.2.zip** e fate clic su **[!UICONTROL OK]**.
 1. Fate clic su **[!UICONTROL Installa]** accanto al pacchetto per installare il pacchetto.
-1. Andate alla **[!UICONTROL pagina Configurazione]** della console Web di AEM all&#39;indirizzo https://[*host*]:[*port*]/system/console/configMgr.
-1. Fare clic per aprire la configurazione **[!UICONTROL Bozza e Invio di]** Forms Portal in modalità di modifica.
+1. Andate alla **[!UICONTROL AEM]** pagina Configurazione [*console Web all&#39;indirizzo https://*] host [*:*] port/system/console/configMgr.
+1. Fate clic per aprire la configurazione **[!UICONTROL bozza e invio di]** Forms Portal in modalità di modifica.
 
 1. Specificare i valori delle proprietà come descritto nella tabella seguente:
 
    | **Proprietà** | **Descrizione** | **Valore** |
    |---|---|---|
    | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsportal.sampledataservice |
-   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsportal.samplemetadataservice |
+   | Servizio metadati bozza di Forms Portal | Identificatore per il servizio di metadati bozza | formsportal.samplemetadataservice |
    | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsportal.sampledataservice |
-   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
-   | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsportal.sampledataservice |
+   | Servizio di invio metadati Forms Portal | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
+   | Servizio dati di firma in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsportal.sampledataservice |
    | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati Firma in sospeso | formsportal.samplemetadataservice |
 
    >[!NOTE]
@@ -76,11 +76,11 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 
    Per assegnare un nome diverso alla tabella di metadati:
 
-   * Nella console Web Configuration (Configurazione console Web), individuare e fare clic su Forms Portal Metadata Service Sample Implementation. Potete modificare i valori dell’origine dati, i metadati o il nome della tabella di metadati aggiuntivi.
+   * In Configurazione console Web, trovate e fate clic su Implementazione di esempio del servizio metadati di Forms Portal. Potete modificare i valori dell’origine dati, i metadati o il nome della tabella di metadati aggiuntivi.
 
    Per specificare un nome diverso per la tabella di dati:
 
-   * In Configurazione console Web, individuare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e il nome della tabella dati.
+   * In Configurazione console Web, trova e fai clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e il nome della tabella dati.
    >[!NOTE]
    >
    >Se si modificano i nomi delle tabelle, fornirli nella configurazione di Form Portal.
@@ -326,7 +326,7 @@ Il file ZIP seguente contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalS
 
 ## Verificare la lunghezza del nome del file  {#verify-length-of-the-file-name}
 
-L&#39;implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella presenta una chiave primaria composita basata sulle colonne Key e id della tabella. MySQL consente chiavi primarie fino a un massimo di 255 caratteri. È possibile utilizzare il seguente script di convalida sul lato client per verificare la lunghezza del nome file associato al widget del file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio, quando il nome del file è maggiore di 150 (inclusa l&#39;estensione). È possibile modificare lo script per verificarne la presenza di un numero diverso di caratteri.
+L’implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella presenta una chiave primaria composita basata sulle colonne Key e id della tabella. MySQL consente chiavi primarie fino a un massimo di 255 caratteri. È possibile utilizzare il seguente script di convalida sul lato client per verificare la lunghezza del nome file associato al widget del file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio, quando il nome del file è maggiore di 150 (inclusa l&#39;estensione). È possibile modificare lo script per verificarne la presenza di un numero diverso di caratteri.
 
 Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizzare lo script, effettuate le seguenti operazioni:
 
