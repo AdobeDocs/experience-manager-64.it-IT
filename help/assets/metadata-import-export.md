@@ -4,17 +4,20 @@ description: Questo articolo descrive come importare ed esportare i metadati in 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 9%
 
 ---
 
 
 # Importazione ed esportazione in massa di metadati {#bulk-metadata-import-and-export}
 
-Risorse AEM consente di importare i metadati delle risorse in blocco mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
+ AEM Assets consente di importare in massa i metadati delle risorse mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
 
 ## Importare i metadati {#import-metadata}
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di reinserimento XMP se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server magro per evitare l&#39;impatto sulle prestazioni di altri utenti.
+L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server magro per evitare l&#39;impatto sulle prestazioni di altri utenti.
 
 >[!NOTE]
 >
