@@ -1,47 +1,50 @@
 ---
-title: Configurare l'integrazione di AEM Assets con Experience Cloud e Creative Cloud
-description: Scopri come configurare l’integrazione di AEM Assets con Experience Cloud e Creative Cloud
+title: Configurare 'integrazione AEM Assets con  Experience Cloud e Creative Cloud
+description: Scoprite come configurare 'integrazione AEM Assets con  Experience Cloud e Creative Cloud
 uuid: 73f90846-71d0-4f72-8784-dc877e0e9c41
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
 source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
 
-# Configurare l&#39;integrazione di AEM Assets con Experience Cloud e Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# Configurare &#39;integrazione AEM Assets con  Experience Cloud e Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Se sei un cliente Adobe Experience Cloud, puoi sincronizzare le tue risorse in Adobe Experience Manager (AEM) Assets con Adobe Creative Cloud e viceversa. Puoi anche sincronizzare le tue risorse con Experience Cloud e viceversa. Potete configurare questa sincronizzazione tramite Adobe I/O.
+I clienti Adobe Experience Cloud possono sincronizzare le risorse all’interno di Adobe Experience Manager (AEM) Assets con Adobe Creative Cloud e viceversa. Potete inoltre sincronizzare le risorse con  Experience Cloud e viceversa. È possibile impostare questa sincronizzazione tramite  I/O Adobe.
 
 Il flusso di lavoro per impostare questa integrazione è:
 
-1. Create un&#39;autenticazione in Adobe I/O utilizzando un gateway pubblico e ottenete un ID applicazione.
-1. Crea un profilo nell’istanza di Risorse AEM utilizzando l’ID applicazione.
-1. Utilizza questa configurazione per sincronizzare le risorse in Risorse AEM con Creative Cloud.
+1. Create un&#39;autenticazione in  I/O Adobe utilizzando un gateway pubblico e ottenete un ID applicazione.
+1. Create un profilo nell&#39;istanza di AEM Assets  utilizzando l&#39;ID applicazione.
+1. Utilizzate questa configurazione per sincronizzare le risorse in  AEM Assets con Creative Cloud.
 
-Sul back-end, il server AEM autentica il tuo profilo con il gateway e quindi sincronizza i dati tra Risorse AEM e Experience Cloud.
-
->[!NOTE]
->
->La funzionalità di condivisione delle cartelle da AEM ad Adobe Creative Cloud è obsoleta. Scopri di più e trova un metodo migliore nelle best practice per l&#39;integrazione con [AEM e Creative Cloud](../assets/aem-cc-integration-best-practices.md). La configurazione di AEM per la replica Marketing Cloud e lo scambio di risorse tra Risorse AEM e Marketing Cloud non è obsoleta.
-
-![Flusso di dati quando AEM Assets e Creative Cloud sono integrati](assets/chlimage_1-287.png)
-
-Flusso di dati quando AEM Assets e Creative Cloud sono integrati
+Nel backend, il server AEM autentica il profilo con il gateway e quindi sincronizza i dati tra  AEM Assets e  Experience Cloud.
 
 >[!NOTE]
 >
->La condivisione di risorse tra Adobe Experience Cloud e Adobe Creative Cloud richiede privilegi di amministratore per l&#39;istanza AEM.
+>AEM la funzionalità di condivisione delle cartelle di Adobe Creative Cloud non è più disponibile. Scopri di più e trova un metodo migliore nelle best practice per l&#39;integrazione [AEM e Creative Cloud](../assets/aem-cc-integration-best-practices.md). La configurazione della replica da AEM a Marketing Cloud e lo scambio di risorse tra  AEM Assets e Marketing Cloud non è obsoleta.
+
+![Flusso di dati quando  AEM Assets e Creative Cloud sono integrati](assets/chlimage_1-287.png)
+
+Flusso di dati quando  AEM Assets e Creative Cloud sono integrati
+
+>[!NOTE]
+>
+>La condivisione di risorse tra Adobe Experience Cloud e Adobe Creative Cloud richiede privilegi di amministratore nell’istanza AEM.
 
 >[!CAUTION]
 >
->Adobe Marketing Cloud è stato rinominato come Adobe Experience Cloud. Le procedure riportate di seguito fanno ancora riferimento a Marketing Cloud per riflettere l&#39;interfaccia corrente.
+> Adobe Marketing Cloud è stato rinominato come Adobe Experience Cloud. Le procedure riportate di seguito fanno ancora riferimento al Marketing Cloud per riflettere l&#39;interfaccia corrente.
 
 ## Creare un&#39;applicazione {#create-an-application}
 
-1. Per accedere all’interfaccia del gateway Adobe Developer, effettuate l’accesso all’indirizzo [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
+1. Per accedere all&#39;interfaccia del gateway di  Adobe, effettuate l&#39;accesso all&#39;indirizzo [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
 
    >[!NOTE]
    >
@@ -58,7 +61,7 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
 1. Nell&#39;elenco **[!UICONTROL Ambito]** , selezionare **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** e **[!UICONTROL cc-share]**.
 1. Fai clic su **[!UICONTROL Crea]**. Un messaggio notifica che l’applicazione è stata creata.
 
-   ![Notifica della creazione dell’applicazione per l’integrazione di AEM Assets con Adobe CC](assets/chlimage_1-289.png)
+   ![Notifica della creazione corretta dell&#39;applicazione per integrare  AEM Assets con  Adobe CC](assets/chlimage_1-289.png)
 
 1. Copiate l&#39;ID **** applicazione generato per la nuova applicazione.
 
@@ -66,21 +69,21 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
    >
    >Assicuratevi di non copiare inavvertitamente il Segreto **** applicazione invece dell&#39;ID **** applicazione.
 
-## Aggiunta di una nuova configurazione a Marketing Cloud {#add-a-new-configuration-to-marketing-cloud}
+## Aggiungere una nuova configurazione al Marketing Cloud {#add-a-new-configuration-to-marketing-cloud}
 
-1. Fai clic sul logo AEM nell’interfaccia utente dell’istanza locale di Risorse AEM e passa a **[!UICONTROL Strumenti]** > Servizi **** cloud > Servizi **** legacy di Cloud.
+1. Fare clic sul logo AEM nell&#39;interfaccia utente dell&#39;istanza AEM Assets  locale e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > Cloud Services **** legacy.
 
 1. Individuate il servizio **[!UICONTROL Adobe Marketing Cloud]** . Se non esistono configurazioni, fate clic su **[!UICONTROL Configura ora]**. Se sono presenti configurazioni, fate clic su **[!UICONTROL Mostra configurazioni]** e fate clic su **[!UICONTROL [+]]** per aggiungere una nuova configurazione.
 
    >[!NOTE]
    >
-   >Utilizzate un account Adobe ID con privilegi di amministratore per l&#39;organizzazione.
+   >Utilizzate un account Adobe ID  con privilegi di amministratore per l&#39;organizzazione.
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un titolo e un nome per la nuova configurazione e fate clic su **[!UICONTROL Crea]**.
 
-   ![Denominare una nuova configurazione per integrare AEM Assets e CC](assets/cloudservices_configure_mc.png)
+   ![Denominare una nuova configurazione per l&#39;integrazione  AEM Assets e CC](assets/cloudservices_configure_mc.png)
 
-1. Nel campo URL **** tenant, specificate l’URL per Risorse AEM.
+1. Nel campo URL **** tenant, specificate l&#39;URL per  AEM Assets.
 
    >[!CAUTION]
    >
@@ -89,13 +92,13 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
    1. In Adobe Marketing Cloud, fate clic su **Mostra configurazioni**.
    1. Selezionate la configurazione creata durante la configurazione della sincronizzazione AEM-MAC-CC.
    1. Modificate la configurazione del servizio cloud e sostituite **marketing.adobe.com** nel campo URL tenant con **experience**.adobe.com.
-   1. Salvate la configurazione.
+   1. Salva la configurazione.
    1. Verificate gli agenti di replica della sincronizzazione mac.
 
 
 1. Nel campo ID **** client, incollate l&#39;ID applicazione che avete copiato alla fine della procedura [Creare un&#39;applicazione](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
 
-   ![Immetti i valori ID applicazione richiesti per integrare AEM Assets e Creative Cloud](assets/cloudservices_tenant_info.png)
+   ![Fornire i valori ID applicazione necessari per integrare  AEM Assets e Creative Cloud](assets/cloudservices_tenant_info.png)
 
 1. In **[!UICONTROL Sincronizzazione]** , selezionate **[!UICONTROL Abilitato]** per abilitare la sincronizzazione e fate clic su **[!UICONTROL OK]**.
 
@@ -106,7 +109,7 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
 
 ## Abilita sincronizzazione {#enable-synchronization}
 
-1. Visualizzare la chiave pubblica utilizzando uno dei seguenti metodi menzionati nell&#39;ultimo passaggio della procedura [Aggiungere una nuova configurazione a Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Fate clic su **[!UICONTROL Visualizza chiave]** pubblica.
+1. Visualizzare la chiave pubblica utilizzando uno dei seguenti metodi menzionati nell&#39;ultimo passaggio della procedura [Aggiungere una nuova configurazione al Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Click **[!UICONTROL Display Public Key]**.
 
    ![chlimage_1-292](assets/chlimage_1-292.png)
 
@@ -114,11 +117,11 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
 
    ![chlimage_1-293](assets/chlimage_1-293.png)
 
-1. Click **[!UICONTROL Update]**. Sincronizza ora le risorse con l’istanza Risorse AEM.
+1. Click **[!UICONTROL Update]**. Sincronizzate ora le risorse con l’istanza di AEM Assets .
 
 ## Verificare la sincronizzazione {#test-the-synchronization}
 
-1. Fai clic sul logo AEM nell&#39;interfaccia utente dell&#39;istanza locale di Risorse AEM e passa a **[!UICONTROL Strumenti]**> **[!UICONTROL Distribuzione]**> **[!UICONTROL Replica]**per individuare i profili di replica creati per la sincronizzazione.
+1. Fare clic sul logo AEM nell&#39;interfaccia utente dell&#39;istanza AEM Assets  locale e passare a **[!UICONTROL Strumenti]**> **[!UICONTROL Distribuzione]**> **[!UICONTROL Replica]**per individuare i profili di replica creati per la sincronizzazione.
 1. Nella pagina **[!UICONTROL Replica]** , fate clic su **[!UICONTROL Agenti sull’autore]**.
 1. Dall&#39;elenco dei profili, fate clic sul profilo di replica predefinito per l&#39;organizzazione in uso per aprirlo.
 1. Nella finestra di dialogo, fate clic su **[!UICONTROL Test connessione]**.
@@ -127,52 +130,52 @@ Flusso di dati quando AEM Assets e Creative Cloud sono integrati
 
 1. Al termine della replica, verificare la presenza di un messaggio di riuscita alla fine dei risultati del test.
 
-## Aggiunta di utenti a Marketing Cloud {#add-users-to-marketing-cloud}
+## Aggiunta di utenti al Marketing Cloud {#add-users-to-marketing-cloud}
 
-1. Effettuate l&#39;accesso a Marketing Cloud utilizzando le credenziali di amministratore.
+1. Effettuate l&#39;accesso al Marketing Cloud utilizzando le credenziali di amministratore.
 1. Dai binari, andate a **[!UICONTROL Administration]**e toccate o fate clic su **[!UICONTROL Avvia Enterprise Dashboard]**.
 1. Dalla barra laterale, fate clic su **[!UICONTROL Utenti]** per aprire la pagina Gestione **** utente.
 1. Dalla barra degli strumenti, fate clic o toccate **Aggiungi** aem_assets_add_icon ![](assets/aem_assets_add_icon.png).
-1. Aggiungete uno o più utenti per consentire loro di condividere le risorse con Creative Cloud.
+1. Aggiungete uno o più utenti per consentire loro di condividere le risorse con la Creative Cloud.
 
    >[!NOTE]
-   Solo gli utenti aggiunti a Marketing Cloud possono condividere le risorse da Risorse AEM a Creative Cloud.
+   Solo gli utenti aggiunti al Marketing Cloud possono condividere le risorse da  AEM Assets a Creative Cloud.
 
-## Scambio di risorse tra AEM Assets e Marketing Cloud {#exchange-assets-between-aem-assets-and-marketing-cloud}
+## Exchange assets tra  AEM Assets e Marketing Cloud {#exchange-assets-between-aem-assets-and-marketing-cloud}
 
-1. Accedi a Risorse AEM.
-1. Nella console Risorse, create una cartella e caricate alcune risorse. Ad esempio, create una cartella **mc-demo** e caricate una risorsa su di essa.
-1. Selezionate la cartella e fate clic su **Condividi** ![risorse_condivisione](assets/assets_share.png).
-1. Dal menu, selezionate **[!UICONTROL Adobe Marketing Cloud]** e fate clic su **[!UICONTROL Condividi]**. Un messaggio notifica che la cartella è condivisa con Marketing Cloud.
+1. Effettuate l&#39;accesso a  AEM Assets.
+1. Nella console Risorse, create una cartella e caricate alcune risorse su di essa. Ad esempio, create una cartella **mc-demo** e caricate una risorsa su di essa.
+1. Selezionate la cartella e fate clic su **Condividi** ![risorse_condividi](assets/assets_share.png).
+1. Dal menu, selezionate **[!UICONTROL Adobe Marketing Cloud]** e fate clic su **[!UICONTROL Condividi]**. Un messaggio notifica che la cartella è condivisa con il Marketing Cloud.
 
    ![chlimage_1-295](assets/chlimage_1-295.png)
 
    >[!NOTE]
-   La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata nel contesto della condivisione in Adobe Marketing Cloud. Se desiderate condividere una cartella, quando la create in Risorse AEM, non selezionate l’opzione **[!UICONTROL Ordinato]** .
+   La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata nel contesto della condivisione in Adobe Marketing Cloud. Se desiderate condividere una cartella, quando la create in  AEM Assets, non selezionate l’opzione **[!UICONTROL Ordinato]** .
 
-1. Aggiorna l’interfaccia utente di Risorse AEM. La cartella creata nella console Risorse dell’istanza locale di Risorse AEM viene copiata nell’interfaccia utente di Marketing Cloud. La risorsa caricata nella cartella in Risorse AEM viene visualizzata nella copia della cartella in Marketing Cloud dopo essere stata elaborata dal server AEM.
-1. Potete anche caricare una risorsa nella copia replicata della cartella in Marketing Cloud. Una volta elaborata, la risorsa viene visualizzata nella cartella condivisa in Risorse AEM.
+1. Aggiornare l&#39;interfaccia utente  AEM Assets. La cartella creata nella console Risorse dell’istanza AEM Assets  locale viene copiata nell’interfaccia utente del Marketing Cloud. La risorsa caricata nella cartella in  AEM Assets viene visualizzata nella copia della cartella nel Marketing Cloud dopo l’elaborazione da parte del server di AEM.
+1. Potete anche caricare una risorsa nella copia replicata della cartella del Marketing Cloud. Una volta elaborata, la risorsa viene visualizzata nella cartella condivisa in  AEM Assets.
 
-## Scambio di risorse tra AEM Assets e Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
+## Exchange assets tra  AEM Assets e Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
 
-Risorse AEM consente di condividere cartelle contenenti risorse con utenti Adobe Creative Cloud.
+ AEM Assets consente di condividere con gli utenti Adobe Creative Cloud le cartelle contenenti risorse.
 
-1. Nella console Risorse, selezionate la cartella da condividere con Creative Cloud.
+1. Nella console Risorse, seleziona la cartella da condividere con la Creative Cloud.
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Condividi]** ![risorse_condividi](assets/assets_share.png).
-1. Dall&#39;elenco, selezionate l&#39;opzione **[!UICONTROL Adobe Creative Cloud]** .
+1. Dall’elenco, selezionate l’opzione **[!UICONTROL Adobe Creative Cloud]** .
 
    >[!NOTE]
-   Le opzioni sono disponibili per gli utenti con autorizzazioni di lettura nella directory principale. Gli utenti devono disporre dell&#39;autorizzazione necessaria per accedere alle informazioni dell&#39;agente di replica di Marketing Cloud.
+   Le opzioni sono disponibili per gli utenti con autorizzazioni di lettura nella directory principale. Gli utenti devono disporre dell&#39;autorizzazione necessaria per accedere alle informazioni dell&#39;agente di replica del Marketing Cloud.
 
-1. Nella pagina Condivisione **[!UICONTROL di]** Creative Cloud aggiungete l&#39;utente con cui condividere la cartella e scegliete un ruolo per l&#39;utente. Fate clic su **[!UICONTROL Salva]** e su **[!UICONTROL OK]**.
+1. Nella pagina **[!UICONTROL Creative Cloud condivisione]** , aggiungete l’utente con cui condividere la cartella e scegliete un ruolo per l’utente. Fate clic su **[!UICONTROL Salva]** e su **[!UICONTROL OK]**.
 
-1. Accedete a Creative Cloud con le credenziali dell&#39;utente con cui avete condiviso la cartella. La cartella condivisa è disponibile in Creative Cloud.
+1. Accedete alla Creative Cloud con le credenziali dell&#39;utente con cui avete condiviso la cartella. La cartella condivisa è disponibile nella Creative Cloud.
 
-La sincronizzazione AEM Assets-Marketing Cloud è progettata in modo che l’istanza del computer dell’utente da cui viene caricata la risorsa mantenga il diritto di modificare la risorsa. Solo queste modifiche vengono propagate all&#39;altra istanza.
+La sincronizzazione  Marketing Cloud AEM Assets è progettata in modo che l’istanza del computer dell’utente da cui viene caricata la risorsa mantenga il diritto di modificare la risorsa. Solo queste modifiche vengono propagate all&#39;altra istanza.
 
-Ad esempio, se una risorsa viene caricata da un’istanza di Risorse AEM (nei locali), le modifiche alla risorsa da questa istanza vengono propagate all’istanza Marketing Cloud. Tuttavia, le modifiche apportate dall’istanza Marketing Cloud alla stessa risorsa non vengono propagate all’istanza AEM e viceversa per le risorse caricate da Marketing Cloud.
+Ad esempio, se una risorsa viene caricata da un’istanza di AEM Assets  (nei locali), le modifiche apportate alla risorsa da questa istanza vengono propagate all’istanza di Marketing Cloud. Tuttavia, le modifiche apportate dall’istanza di Marketing Cloud alla stessa risorsa non vengono propagate all’istanza AEM e viceversa per le risorse caricate da Marketing Cloud.
 
 >[!MORELIKETHIS]
-* [Best practice per l&#39;integrazione di AEM e Creative Cloud](../assets/aem-cc-integration-best-practices.md)
-* [Best practice per la condivisione di cartelle da AEM a Creative Cloud](../assets/aem-cc-folder-sharing-best-practices.md)
+* [Tecniche consigliate per l&#39;integrazione di AEM e Creative Cloud](../assets/aem-cc-integration-best-practices.md)
+* [Tecniche consigliate per AEM la condivisione delle cartelle](../assets/aem-cc-folder-sharing-best-practices.md)
 
