@@ -9,11 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '3152'
+ht-degree: 2%
 
 ---
 
 
-# Creazione di una comunicazione interattiva {#create-an-interactive-communication}
+# Creazione di una comunicazione interattiva  {#create-an-interactive-communication}
 
 Creare una comunicazione interattiva utilizzando l&#39;editor di comunicazione interattiva. Utilizzate la funzionalità di trascinamento per creare la comunicazione interattiva e visualizzate in anteprima sia le uscite di stampa che quelle Web su diversi tipi di dispositivi.
 
@@ -32,7 +35,7 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
 
 ## Crea comunicazione interattiva {#createic}
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione AEM e passate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **[!UICONTROL Crea]** e selezionate Comunicazione **** interattiva. Viene visualizzata la pagina Crea comunicazione interattiva.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
@@ -40,26 +43,27 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
 1. Inserite le seguenti informazioni. :
 
    * **[!UICONTROL Titolo]**: Inserite il titolo della comunicazione interattiva.
-   * **[!UICONTROL Nome*]**: Il nome della comunicazione interattiva viene derivato dal titolo immesso. Modificatelo, se necessario.
+   * **[!UICONTROL Nome*]**: Il nome della comunicazione interattiva viene ricavato dal titolo immesso. Modificatelo, se necessario.
    * **[!UICONTROL Descrizione]**: Inserite una descrizione della comunicazione interattiva.
-   * **[!UICONTROL Modello dati modulo*]**: Individuare e selezionare il modello dati del modulo. Per ulteriori informazioni sul modello dati modulo, consulta Integrazione [dati](/help/forms/using/data-integration.md)AEM Forms.
+   * **[!UICONTROL Modello dati modulo*]**: Individuare e selezionare il modello dati del modulo. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dati AEM Forms.
    * **[!UICONTROL Servizio]** di precompilazione: Selezionate il servizio di precompilazione per recuperare i dati e precompilare la comunicazione interattiva.
-   * **[!UICONTROL Tipo]** post-processo: Potete selezionare il flusso di lavoro AEM o Forms da attivare all&#39;invio della comunicazione interattiva. Selezionare il tipo di flusso di lavoro da attivare.
-   * **[!UICONTROL Post-processo]**: Selezionate il nome del flusso di lavoro da attivare. Quando selezionate Flusso di lavoro AEM, specificate Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati Web.
+   * **[!UICONTROL Tipo]** post-processo: Potete selezionare AEM o il flusso di lavoro Forms da attivare all&#39;invio della comunicazione interattiva. Selezionare il tipo di flusso di lavoro da attivare.
+   * **[!UICONTROL Post-processo]**: Selezionate il nome del flusso di lavoro da attivare. Quando si seleziona AEM flusso di lavoro, specificare Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati Web.
    * **[!UICONTROL Tag]**: Selezionate i tag da applicare alla comunicazione interattiva. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
    * **[!UICONTROL Autore]**: il nome dell&#39;autore viene automaticamente prelevato dal nome utente dell&#39;utente connesso.
-   * **** Data pubblicazione: Immettete la data di pubblicazione della comunicazione interattiva.
-   * **[!UICONTROL Data]** annullamento pubblicazione: Immettete la data per annullare la pubblicazione della comunicazione interattiva.
+   * **[!UICONTROL Data pubblicazione:]** Immettete la data di pubblicazione della comunicazione interattiva.
+   * **[!UICONTROL Data]** di annullamento pubblicazione: Immettete la data per annullare la pubblicazione della comunicazione interattiva.
 
 1. Toccate **[!UICONTROL Avanti]**. Viene visualizzata la schermata per specificare i dettagli del canale Web e della stampa.
 1. Digitate il testo seguente:
 
    * **[!UICONTROL Stampa]**: Selezionate questa opzione per generare il canale di stampa della comunicazione interattiva.
-   * **** Modello di stampa*: Individuate e selezionate un file XDP come modello di stampa.
-   * **** Usa Stampa Come Master Per Canale Web: Selezionate questa opzione per creare il canale Web sincronizzato con il canale di stampa. L&#39;utilizzo del canale di stampa come master per il canale Web garantisce che il contenuto e il binding dei dati del canale Web siano derivati dal canale di stampa e che le modifiche apportate al canale di stampa si riflettano sul canale Web quando si tocca Sincronizza. Gli autori possono tuttavia interrompere l’ereditarietà di componenti specifici nel canale Web, a seconda delle necessità. Per ulteriori informazioni, vedere [Sincronizzare il canale Web con il canale](/help/forms/using/create-interactive-communication.md#synchronize)Stampa.
-   * **** Web: Selezionate questa opzione per generare il canale Web o l&#39;output reattivo della comunicazione interattiva.
-   * **** Modello Web per comunicazioni interattive*: Sfogliate e selezionate il modello Web.
-   * **[!UICONTROL Tema]** e **[!UICONTROL Seleziona tema*]**: Sfogliate e selezionate il tema per personalizzare il canale Web della comunicazione interattiva. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
+   * **[!UICONTROL Modello di stampa*:]** Sfogliate e selezionate un XDP come modello di stampa.
+   * **[!UICONTROL Usa Stampa Come Master Per Canale Web:]** Selezionate questa opzione per creare il canale Web sincronizzato con il canale di stampa. L&#39;utilizzo del canale di stampa come master per il canale Web garantisce che il contenuto e il binding dei dati del canale Web siano derivati dal canale di stampa e che le modifiche apportate al canale di stampa si riflettano sul canale Web quando si tocca Sincronizza. Gli autori possono tuttavia interrompere l’ereditarietà di componenti specifici nel canale Web, a seconda delle necessità. Per ulteriori informazioni, vedere [Sincronizzare il canale Web con il canale](/help/forms/using/create-interactive-communication.md#synchronize)Stampa.
+   * **[!UICONTROL Web:]** Selezionate questa opzione per generare il canale Web o l&#39;output reattivo della comunicazione interattiva.
+   * **[!UICONTROL Modello Web per comunicazioni interattive*:]** Sfogliate e selezionate il modello Web.
+   * **[!UICONTROL Tema]** e **[!UICONTROL Seleziona tema*]**: Sfogliate e selezionate il tema per definire lo stile del canale Web della comunicazione interattiva. Per ulteriori informazioni, vedere [Temi in  AEM Forms](/help/forms/using/themes.md).
+
    Per ulteriori informazioni sui canali di stampa e web, vedere Canale di [stampa e canale](/help/forms/using/web-channel-print-channel.md)Web.
 
 1. Toccate **[!UICONTROL Crea]**. Viene creata la comunicazione interattiva e viene visualizzata una finestra di avviso. Toccate **[!UICONTROL Modifica]** per iniziare a creare il contenuto della comunicazione interattiva come spiegato in [Aggiunta di contenuti mediante l’interfaccia](#step2)utente per la creazione di comunicazioni interattive. In alternativa, toccate **[!UICONTROL Fine]** e scegliete di modificare la comunicazione interattiva in un secondo momento.
@@ -70,9 +74,9 @@ Dopo aver creato una comunicazione interattiva, potete usare l’interfaccia di 
 
 Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni interattive, consulta [Introduzione all’authoring](/help/forms/using/introduction-interactive-communication-authoring.md)delle comunicazioni interattive.
 
-1. L&#39;interfaccia di creazione delle comunicazioni interattive viene avviata quando toccate Modifica come indicato in [Creazione di comunicazioni](#createic)interattive. In alternativa, puoi accedere a una risorsa di comunicazione interattiva esistente su AEM, selezionarla e toccare **[!UICONTROL Modifica]** per avviare l’interfaccia di creazione della comunicazione interattiva.
+1. L&#39;interfaccia di creazione delle comunicazioni interattive viene avviata quando toccate Modifica come indicato in [Creazione di comunicazioni](#createic)interattive. In alternativa, puoi accedere a una risorsa di comunicazione interattiva esistente su AEM, selezionarla e toccare **[!UICONTROL Modifica]** per avviare l&#39;interfaccia di creazione della comunicazione interattiva.
 
-   Per impostazione predefinita, viene visualizzato il canale di stampa della comunicazione interattiva, a meno che la comunicazione interattiva non sia solo per canale Web. Il canale di stampa della comunicazione interattiva visualizza le aree di destinazione, come disponibile nel modello di canale XDP/stampa selezionato. In queste aree e campi di destinazione, potete aggiungere componenti o risorse.
+   Per impostazione predefinita, viene visualizzato il canale di stampa della comunicazione interattiva, a meno che la comunicazione interattiva non sia solo per il canale Web. Il canale di stampa della comunicazione interattiva visualizza le aree di destinazione, come disponibile nel modello di canale XDP/stampa selezionato. In queste aree e campi di destinazione, potete aggiungere componenti o risorse.
 
 1. Con il canale di stampa selezionato, selezionare la scheda **[!UICONTROL Componenti]** . I seguenti componenti sono disponibili nel canale di stampa:
 
@@ -84,7 +88,7 @@ Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni i
 
    Trascina i componenti nella comunicazione interattiva e configurali come necessario.
 
-1. Con il canale di stampa selezionato, andate alla scheda **[!UICONTROL Risorse]** e applicate il filtro per visualizzare solo le risorse da visualizzare.
+1. Con il canale di stampa selezionato, andate alla scheda **[!UICONTROL Risorse]** e applicate il filtro per visualizzare solo le risorse che desiderate vedere.
 
    Utilizzando il browser Risorse, puoi anche trascinare e rilasciare risorse direttamente nelle aree di destinazione delle comunicazioni interattive.
 
@@ -120,6 +124,7 @@ Per ulteriori informazioni sui frammenti di documento, vedere [Frammenti](/help/
    * **[!UICONTROL Nessuno]**: L&#39;agente inserirà il valore della variabile.
    * **[!UICONTROL Frammento]** di testo: Se questa opzione è selezionata, è possibile individuare e selezionare un frammento di documento di testo il cui contenuto è rappresentato nel campo. Solo i frammenti di documento di testo possono essere associati a variabili prive di variabili.
    * **[!UICONTROL Oggetto]** modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo.
+
    È inoltre possibile configurare il frammento di documento di testo pertinente. Nel pannello Proprietà viene visualizzato l’elenco delle variabili presenti nel frammento del documento di testo. Toccate ![Modifica](assets/edit.png) (Modifica) accanto al nome di una variabile per visualizzare le impostazioni di modifica della variabile.
 
 1. Per aggiungere una tabella, con il canale di stampa selezionato, nella scheda **[!UICONTROL Risorse]** applicare il filtro per visualizzare solo i frammenti di layout. Trascinate il frammento di layout desiderato nella comunicazione interattiva. Un frammento di layout è basato su un XDP e può essere utilizzato per creare layout grafici o tabelle statiche e dinamiche in Comunicazione interattiva con dati dinamici.
@@ -182,7 +187,7 @@ Potete utilizzare l&#39;opzione **[!UICONTROL Anteprima]** per valutare l&#39;as
 
 Inoltre, puoi [preparare e inviare comunicazioni interattive utilizzando l&#39;interfaccia utente](/help/forms/using/prepare-send-interactive-communication.md)agente.
 
-## Configurazione delle proprietà in Comunicazione interattiva {#configuring-properties-in-interactive-communication}
+## Configurazione delle proprietà in Comunicazione interattiva  {#configuring-properties-in-interactive-communication}
 
 ### Allegati e accesso alla libreria {#attachmentslibrary}
 
@@ -198,13 +203,14 @@ Nel canale Stampa, puoi configurare gli allegati e l&#39;accesso alla libreria p
 
 1. Espandere **[!UICONTROL Allegati]** e specificare le proprietà seguenti:
 
-   * **[!UICONTROL Consenti accesso]** libreria: Selezionate questa opzione per abilitare l&#39;accesso alla libreria per l&#39;agente nell&#39;interfaccia utente dell&#39;agente. Se attivato, l&#39;agente può aggiungere file dalla libreria durante la preparazione della comunicazione interattiva.
+   * **[!UICONTROL Consenti accesso]** libreria: Selezionate questa opzione per abilitare l&#39;accesso alla libreria per l&#39;agente nell&#39;interfaccia utente dell&#39;agente. Se attivato, l&#39;agente può aggiungere i file dalla libreria durante la preparazione della comunicazione interattiva.
    * **[!UICONTROL Consenti Riordinamento Degli Allegati]**: Selezionare per abilitare l&#39;agente a riordinare gli allegati con la comunicazione interattiva.
    * **[!UICONTROL Numero Massimo Di Allegati Consentiti]**: Specificate il numero massimo di allegati consentiti con la comunicazione interattiva.
    * **[!UICONTROL File Da Allegare]**: Toccate **[!UICONTROL Aggiungi]** e sfogliate per selezionare i file da allegare e specificate quanto segue:
 
       * **[!UICONTROL Allega Questo File Al Documento Per Impostazione Predefinita]**: È possibile modificare questa opzione se solo l&#39;allegato non è obbligatorio.
-      * **** Obbligatorio: L&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
+      * **[!UICONTROL Obbligatorio:]** L&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
+
    ![file allegati](assets/attachfiles.png)
 
 1. Toccate **[!UICONTROL Chiudi]**.
@@ -225,12 +231,12 @@ Nel canale Stampa, puoi configurare gli allegati e l&#39;accesso alla libreria p
 
       * Nessuno: L&#39;agente inserirà il valore della proprietà.
       * Frammento di testo: Se questa opzione è selezionata, è possibile individuare e selezionare un frammento di documento di testo il cui contenuto è rappresentato nel campo.
-      * Oggetto modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo.
+      * Oggetto del modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo.
    * **[!UICONTROL Valori]** predefiniti: Il valore predefinito assicura che il campo non sia vuoto se non è presente alcun valore fornito dall&#39;oggetto modello dati o dal frammento di testo specificato. Se il tipo di binding dei dati è none, il valore predefinito viene precompilato nel campo.
    * **[!UICONTROL Modificabile dall&#39;agente]**: Selezionare questa opzione per consentire all&#39;agente di modificare il valore nel campo nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
-   * **[!UICONTROL Etichetta]**: Specificate una stringa di testo da visualizzare con il campo nell’interfaccia utente dell’agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
+   * **[!UICONTROL Etichetta]**: Specificate una stringa di testo da visualizzare con il campo all&#39;agente nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
    * **[!UICONTROL Descrizione]**: Immettere una stringa di testo che sarà visibile quando si passa il puntatore del mouse sull&#39;agente nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
-   * **[!UICONTROL Obbligatorio]**: Selezionare per rendere il campo obbligatorio per l&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
+   * **[!UICONTROL Obbligatorio]**: Selezionare questa opzione per rendere il campo obbligatorio per l&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
    * **[!UICONTROL Consenti righe]** multiple: Selezionare questo campo per consentire l&#39;immissione di più righe di testo nel campo. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
 
 
@@ -238,7 +244,7 @@ Nel canale Stampa, puoi configurare gli allegati e l&#39;accesso alla libreria p
 
 ## Applicazione di regole ai componenti di comunicazione interattiva {#rules}
 
-Per condizionare componenti o contenuti nella comunicazione interattiva, toccate il componente o il contenuto e selezionate ![createruleicon](assets/createruleicon.png) (Crea regola) per avviare Editor regole.
+Per condizionare i componenti o il contenuto nella comunicazione interattiva, toccate il componente o il contenuto e selezionate ![createruleicon](assets/createruleicon.png) (Crea regola) per avviare Editor regole.
 
 Per ulteriori informazioni, vedere:
 
@@ -251,7 +257,7 @@ Per ulteriori informazioni, vedere:
 
 È possibile aggiungere tabelle dinamiche in Comunicazione interattiva utilizzando i frammenti di layout. Nella procedura seguente viene illustrato l&#39;utilizzo di un frammento di layout per creare una tabella dinamica in una comunicazione interattiva tramite un esempio di istruzione con carta di credito.
 
-1. Assicurati che il frammento di layout richiesto per la creazione della tabella sia disponibile in AEM.
+1. Assicurarsi che il frammento di layout richiesto per la creazione della tabella sia disponibile in AEM.
 1. Nel canale di stampa della comunicazione interattiva, trascinate un frammento di layout (con una tabella a più colonne) in un’area di destinazione dal browser Risorse.
 
    ![lf_dragdrop](assets/lf_dragdrop.png)
@@ -289,7 +295,7 @@ Per ulteriori informazioni, vedere:
 
 ### Tabelle solo per canali Web {#web-channel-only-tables}
 
-È possibile creare una tabella dinamica solo per i canali Web in una comunicazione interattiva utilizzando una proprietà modello dati di raccolta di tipi. Una tabella di questo tipo è una rappresentazione delle proprietà figlio di una raccolta. È possibile modificare solo le proprietà di formattazione delle varie celle della tabella.
+È possibile creare una tabella dinamica solo per i canali Web in una comunicazione interattiva utilizzando una proprietà del modello dati di raccolta di tipi. Una tabella di questo tipo è una rappresentazione delle proprietà figlio di una raccolta. È possibile modificare solo le proprietà di formattazione delle varie celle della tabella.
 
 1. Passate al canale Web e scegliete di visualizzare il browser Origini dati.
 1. Trascinare una proprietà della raccolta in un sottomodulo.
@@ -343,7 +349,7 @@ Se utilizzate Stampa come canale principale per il canale Web e apportate modifi
 
    Viene visualizzata la finestra di dialogo Sincronizza contenuto dal canale principale.
 
-   ![sync econtentfrommasterchannel](assets/synchronizecontentfrommasterchannel.png)
+   ![synchronizecontentfrommasterchannel](assets/synchronizecontentfrommasterchannel.png)
 
 1. Toccate una delle seguenti opzioni:
 
