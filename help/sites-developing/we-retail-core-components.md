@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 4%
 
 ---
 
 
 # Prova dei componenti core in We.Retail{#trying-out-core-components-in-we-retail}
 
-I componenti core sono componenti moderni e flessibili, con facilità di estensibilità e per una semplice integrazione nei progetti. I componenti core sono stati creati sulla base di diversi importanti principi di progettazione come HTL, usabilità out-of-the-box, configurabilità, controllo delle versioni e estensibilità. We.Retail è stato costruito su componenti core.
+I componenti core sono componenti moderni e flessibili, con facilità di estensibilità e che consentono una semplice integrazione nei progetti. I componenti core sono stati creati sulla base di diversi importanti principi di progettazione come HTL, usabilità out-of-the-box, configurabilità, controllo delle versioni e estensibilità. We.Retail è stato costruito su componenti core.
 
 ## Provarci {#trying-it-out}
 
-1. Avviate AEM con il contenuto di esempio We.Retail e aprite la console [](/help/sites-authoring/default-components-console.md)Componenti.
+1. Iniziate a AEM con il contenuto di esempio We.Retail e aprite la console [](/help/sites-authoring/default-components-console.md)Componenti.
 
    **Navigazione globale -> Strumenti -> Componenti**
 
@@ -29,11 +32,12 @@ I componenti core sono componenti moderni e flessibili, con facilità di estensi
 
    * `.core-wcm`: Componenti core standard
    * `.core-wcm-form`: Componenti di base per l’invio del modulo
+
    Choose `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tutti i componenti core sono denominati **v1**, riflettendo che si tratta della prima versione di questo componente core. Verranno rilasciate versioni regolari che saranno compatibili con le versioni di AEM e consentiranno un aggiornamento semplice per sfruttare le funzionalità più recenti.
+1. Tutti i componenti core sono denominati **v1**, riflettendo il fatto che si tratta della prima versione di questo componente core. Le versioni regolari verranno rilasciate in futuro, che saranno compatibili con le AEM e consentiranno un semplice aggiornamento per sfruttare le funzionalità più recenti.
 1. Fate clic su **Testo (v1)**.
 
    Verificare che il tipo **di** risorsa del componente sia `/apps/core/wcm/components/text/v1/text`. I componenti core si trovano in `/apps/core/wcm/components` e dispongono di versioni per componente.
@@ -76,14 +80,14 @@ I componenti core sono componenti moderni e flessibili, con facilità di estensi
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. I componenti core consentono a un autore del modello di configurare le proprietà disponibili per gli autori delle pagine. tra cui funzioni quali le sorgenti Incolla consentite, le opzioni di formattazione, gli stili di paragrafo disponibili, ecc.
+1. I componenti core consentono a un autore del modello di configurare le proprietà disponibili per gli autori delle pagine. tra cui funzioni quali le origini di incolla consentite, le opzioni di formattazione, gli stili di paragrafo disponibili, ecc.
 
-   Tali finestre di dialogo sono disponibili per molti componenti core e collaborano con l’editor modelli. Una volta abilitati, sono disponibili per l’autore tramite gli editor componenti.
+   Tali finestre di dialogo sono disponibili per molti componenti core e collaborano con l’editor modelli. Una volta abilitati, sono disponibili per l’autore tramite gli editor di componenti.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sui componenti core, consulta il documento di authoring [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (Componenti [di base) per una panoramica delle funzionalità dei componenti core e il documento di sviluppo](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) Developing Core Components (Sviluppo di componentidi base) per una panoramica tecnica.
+Per ulteriori informazioni sui componenti core, consulta il documento di authoring [Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (Componenti [di base) per una panoramica delle funzionalità dei componenti core e il documento di sviluppo](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) Developing Core Components (Sviluppo di componentidi base) per una panoramica tecnica.
 
 È inoltre possibile esaminare ulteriormente i modelli [](/help/sites-developing/we-retail-editable-templates.md)modificabili. Per informazioni dettagliate sui modelli modificabili, fare riferimento al documento di authoring [Creazione di modelli](/help/sites-authoring/templates.md) di pagina o al documento di sviluppo [Modelli di pagina - Modificabili](/help/sites-developing/page-templates-editable.md) .
