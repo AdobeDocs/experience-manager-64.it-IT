@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 7%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ## Panoramica {#overview}
 
-Per AEM Communities, esistono diversi rapporti a cui è possibile accedere in diversi modi dall&#39;ambiente di authoring.
+Per  AEM Communities, esistono diversi rapporti a cui è possibile accedere in diversi modi dall’ambiente di authoring.
 
-In generale, le varie relazioni sono:
+In generale, le relazioni sono le seguenti:
 
 * [Rapporto](#assignments-report) Assegnazioni - per una comunità di [abilitazione](overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM
 * [Rapporto](#views-report) visualizzazioni - fornisce un grafico dei contenuti per membri della community e visitatori del sito per qualsiasi sito della community
@@ -47,9 +50,9 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
 
 ### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Risorse]**
+* Dalla navigazione globale: **[!UICONTROL Navigation > Communities > Resources]**
 * Selezione di un sito community di abilitazione esistente
-   * Selezionate l’icona **[!UICONTROL Rapporto]** per generare rapporti che coprono tutte le risorse di abilitazione
+   * Selezionate l’icona **[!UICONTROL Rapporto]** per generare rapporti che coprano tutte le risorse di abilitazione
    * Selezionare un percorso di apprendimento per l&#39;abilitazione
    * Seleziona l’icona **[!UICONTROL Rapporto]** per generare i rapporti
       * Risorse di abilitazione incluse
@@ -68,7 +71,7 @@ Per ulteriori dettagli, consultate la sezione [](resources.md#report) Rapporti d
 
 La console Assegnazioni consente di filtrare i rapporti in base all&#39;abilitazione del sito community, degli utenti o dei gruppi e dell&#39;assegnazione.
 
-Il rapporto fornisce informazioni sui loro progressi nonché eventuali commenti o valutazioni forniti.
+Il rapporto fornisce informazioni sui loro progressi, nonché eventuali commenti o valutazioni forniti.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -128,4 +131,4 @@ Selezionate **[!UICONTROL Genera]** per creare il rapporto:
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non sono elencati siti community, accertati che Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
+Se non è presente alcun sito community, accertatevi che  Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
