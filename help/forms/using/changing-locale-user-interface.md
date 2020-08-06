@@ -1,8 +1,8 @@
 ---
-title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
-seo-title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
-seo-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
+title: Modifica delle impostazioni internazionali dell’interfaccia utente ’area di lavoro di AEM Forms
+seo-title: Modifica delle impostazioni internazionali dell’interfaccia utente ’area di lavoro di AEM Forms
+description: Come modificare l'area di lavoro di  AEM Forms per localizzare il testo, le categorie ridotte, le code e i processi e il selettore della data nell'interfaccia.
+seo-description: Come modificare l'area di lavoro di  AEM Forms per localizzare il testo, le categorie ridotte, le code e i processi e il selettore della data nell'interfaccia.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -18,41 +18,41 @@ ht-degree: 0%
 ---
 
 
-# Modifica delle impostazioni internazionali dell&#39;interfaccia utente dell&#39;area di lavoro AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Modifica delle impostazioni internazionali dell’interfaccia utente ’area di lavoro di AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-L&#39;area di lavoro Moduli AEM fornisce supporto completo per le lingue inglese, francese, tedesco e giapponese. Fornisce inoltre la possibilità di localizzare l&#39;interfaccia utente dell&#39;area di lavoro AEM Forms in qualsiasi altra lingua.
+&#39;area di lavoro di AEM Forms fornisce supporto completo per le lingue inglese, francese, tedesco e giapponese. Consente inoltre di localizzare &#39;interfaccia utente dell&#39;area di lavoro AEM Forms in qualsiasi altra lingua.
 
-Per localizzare l&#39;interfaccia utente dell&#39;area di lavoro AEM Forms nella lingua desiderata:
+Per localizzare &#39;interfaccia utente dell&#39;area di lavoro AEM Forms nella lingua desiderata:
 
-* Localizzate il testo dell&#39;area di lavoro Moduli AEM.
+* Localizzate il testo dell&#39;area di lavoro di  AEM Forms.
 * Localizzare categorie, code e processi compressi.
 * Localizza selettore data
 
-Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+Prima di eseguire i passaggi indicati sopra, accertatevi di seguire i passaggi elencati in [Generico per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
 >[!NOTE]
 >
->Per modificare la lingua della schermata di accesso dell&#39;area di lavoro AEM Forms, consultate [Creazione di una nuova schermata](/help/forms/using/creating-new-login-screen.md)di accesso.
+>Per modificare la lingua della schermata di accesso ’area di lavoro di AEM Forms, consultate [Creazione di una nuova schermata](/help/forms/using/creating-new-login-screen.md)di accesso.
 
 ## Localizzazione del testo {#localizing-text}
 
 Effettuate le seguenti operazioni per aggiungere il supporto per una lingua *Nuovo* e il codice delle impostazioni internazionali del browser *ora*.
 
-1. Accedete a CRXDE Lite.
+1. Effettuate l&#39;accesso al CRXDE Lite.
 
-   L’URL predefinito di CRXDE Lite è `https://[server]:[port]/lc/crx/de/index.jsp`.
+   L&#39;URL predefinito del CRXDE Lite è `https://[server]:[port]/lc/crx/de/index.jsp`.
 
 1. Andate alla posizione `apps/ws/locales` e create una nuova cartella `nw.`
 1. Copiare il file `translation.json`dalla posizione `/apps/ws/locales/en-US` alla posizione `/apps/ws/locales/nw`.
 1. Passate a `/apps/ws/locales/nw` e aprite `translation.json` per la modifica. Apportate modifiche specifiche alle impostazioni internazionali al file translate.json.
 
-   Gli esempi seguenti contengono il file translate.json per le impostazioni internazionali inglese e francese dell&#39;area di lavoro AEM Forms.
+   Gli esempi seguenti contengono il file translate.json per le impostazioni internazionali inglese e francese &#39;area di lavoro AEM Forms.
 
    ![translate_json_in_it](assets/translation_json_in_en.png) ![translate_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localizzazione di categorie, code e processi compressi {#localizing-collapsed-categories-queues-and-processes}
 
-L&#39;area di lavoro Moduli AEM utilizza immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+&#39;area di lavoro di AEM Forms utilizza immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione  codice dell&#39;area di lavoro AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. La larghezza consigliata delle immagini è 19 px.
 
@@ -111,7 +111,7 @@ Per localizzare le immagini, effettuate le seguenti operazioni:
 
 ## Localizzazione del selettore data {#localizing-date-picker}
 
-È necessario un pacchetto di sviluppo per localizzare l&#39;API *datepicker *API. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro Moduli AEM.
+È necessario un pacchetto di sviluppo per localizzare l&#39;API *datepicker *API. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione  codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro di AEM Forms.
 
 1. Scaricate ed estraete il pacchetto [dell&#39;interfaccia utente](https://jqueryui.com/download/all/)jQuery, passate a *&lt;pacchetto dell&#39;interfaccia utente jquery estratto>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiate il file jquery.ui.datepicker-nw.js per il codice delle impostazioni internazionali ora in apps/ws/js/libs/jqueryui e apportate modifiche specifiche alle impostazioni internazionali del file.
