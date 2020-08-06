@@ -35,7 +35,7 @@ L’immagine seguente mostra un flusso di lavoro tipico per la creazione di un m
 
 In questo flusso di lavoro:
 
-1. I progettisti di moduli creano layout e frammenti utilizzando Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti dell&#39;applicazione mappano il contenuto richiesto per queste aree di destinazione. Ulteriori informazioni sulla [progettazione del layout](/help/forms/using/layout-design-details.md).
+1. I progettisti di moduli creano layout e frammenti utilizzando  Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti dell&#39;applicazione mappano il contenuto richiesto per queste aree di destinazione. Ulteriori informazioni sulla [progettazione del layout](/help/forms/using/layout-design-details.md).
 1. Esperti di materia oggetto di dipartimenti legali, finanziari o di marketing, creano e caricano contenuti quali clausole di testo, clausole di non responsabilità, termini e condizioni e immagini come logo, che vengono riutilizzati in vari modelli di corrispondenza.
 1. Gli specialisti dell&#39;applicazione creano modelli di corrispondenza. Specialista dell&#39;applicazione
 
@@ -69,7 +69,7 @@ Le condizioni consentono di definire il contenuto da includere al momento della 
 
 #### Layout fragment {#layout-fragment}
 
-Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documenti](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Creazione di lettere {#letter-creation}
 
@@ -95,7 +95,7 @@ La corrispondenza finale può essere inviata a un processo back-end per la poste
 1. Presentato per revisione e approvazione.
 1. Protetto mediante l’applicazione di firme digitali, certificazione, cifratura o gestione dei diritti.
 1. Convertito in un documento PDF ricercabile contenente tutti i metadati necessari per l&#39;archiviazione e il controllo.
-1. Incluso in un portfolio PDF che include più documenti, come materiale di marketing. Il portfolio PDF può quindi essere inviato come corrispondenza finale.
+1. Incluso in un Portfolio PDF che include più documenti, come materiale di marketing. Il Portfolio PDF può quindi essere inviato come corrispondenza finale.
 
 ### Architettura della soluzione di gestione della corrispondenza {#correspondence-management-solution-architecture}
 
@@ -139,7 +139,7 @@ Questo documento Avviso di cancellazione è un esempio di corrispondenza tipica:
   <tr> 
    <td>Immagini archiviate<br /> dall'archivio centrale</td> 
    <td>Immagini quali logo e immagini della firma. Immagini come il logo aziendale apparirebbero nella maggior parte o in tutta la corrispondenza. Le immagini della firma sono specifiche per la lettera e per la persona per conto della quale la lettera viene inviata.</td> 
-   <td><p>Immagini memorizzate in risorse AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Immagini memorizzate in AEM risorse (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -228,7 +228,7 @@ Questa tabella fornisce alcune linee guida che è possibile utilizzare per class
 
 Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
-* [Pacchetto](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)di compatibilità. Installate il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Moduli** .
+* [Pacchetto](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)di compatibilità. Installate il pacchetto di compatibilità per visualizzare l’opzione **Lettere** nella pagina **Forms** .
 
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
 * Altri XDP (frammenti[di](/help/forms/using/document-fragments.md)layout) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
@@ -241,9 +241,9 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
 ### Selezionare un layout e immettere le proprietà della lettera {#select-a-layout-and-enter-the-letter-properties}
 
-1. Selezionare **Moduli** > **Lettere**.
+1. Selezionare **Forms** > **Lettere**.
 
-1. Selezionare **Crea > Lettera**. Gestione corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli Lettera forniti da Gestione Corrispondenza. Per ulteriori informazioni sui modelli di gestione della corrispondenza, consultate Modelli [di lettere di](/help/forms/using/reference-cm-layout-templates.md)riferimento. Per aggiungere layout personalizzati, create file XDP (layout) in Designer e quindi [caricateli in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selezionare **Crea > Lettera**. Gestione corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli Lettera forniti da Gestione Corrispondenza. Per ulteriori informazioni sui modelli di gestione della corrispondenza, consultate Modelli [di lettere di](/help/forms/using/reference-cm-layout-templates.md)riferimento. Per aggiungere layout personalizzati, create file XDP (layout) in Designer e quindi [caricateli in  AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -258,7 +258,7 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
    * **Descrizione (facoltativo):** Descrivete la lettera per il vostro riferimento.
    * **Dizionario dati (facoltativo)**: Il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza oppure nessun dizionario dati.
    * **Tag (facoltativo):** Selezionare i tag da applicare alla corrispondenza. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **Post-processo (facoltativo):** Selezionare il processo di pubblicazione da applicare al modello di lettera. Esistono processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
+   * **Post-processo (facoltativo):** Selezionare il processo di pubblicazione da applicare al modello di lettera. Sono disponibili processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
 
    ![Proprietà corrispondenza](assets/createcorrespondenceproperties.png)
 
@@ -290,7 +290,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
    1. **Modificabile**: Quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Contrassegnare il contenuto come modificabile solo se l&#39;utente aziendale (ad esempio, un regolatore di richieste di indennizzo) lo richiede per modificarlo.
    1. **Obbligatorio**: Quando questa opzione è selezionata, il contenuto è richiesto nell&#39;interfaccia utente Crea corrispondenza.
    1. **Selezionato**: Quando questa opzione è selezionata, il contenuto viene selezionato per impostazione predefinita nell&#39;interfaccia utente Crea corrispondenza.
-   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [di](/help/forms/using/submit-letter-topostprocess.md#formsworkflow)Forms.
+   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [](/help/forms/using/submit-letter-topostprocess.md#formsworkflow)Forms.
    1. **Interruzione di pagina prima** di: Se si imposta l&#39;opzione Interrompi pagina prima su attivata, il contenuto di QUESTO modulo viene sempre visualizzato su una nuova pagina.
    1. **Interruzione di pagina dopo**: Se per un modulo specifico si imposta l&#39;opzione Interruzione pagina dopo, il contenuto del modulo NEXT viene sempre visualizzato su una nuova pagina.
 
