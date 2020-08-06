@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 87%
 
 ---
 
@@ -27,15 +30,15 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >Alcuni termini correlati alla pubblicazione possono creare confusione:
 >
->* **Pubblicare / Annullare la pubblicazione**
-   >  Termini principali per le azioni che rendono o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>* **Pubblicare/Annullare la pubblicazione**
+   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
    >
    >
-* **Attiva/Disattiva**
+* **Attivare/Disattivare**
    >  Sinonimi di pubblicare/annullare la pubblicazione.
    >
    >
-* **Replicare / Replica**
+* **Replicare/Replica**
    >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
 
@@ -48,6 +51,7 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Questo [flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md) dal team di sviluppo.
 >* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
+
 >
 
 
@@ -56,14 +60,14 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 
 A seconda della tua posizione, puoi pubblicare:
 
-* [Dall’editor pagina](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
+* [Dall’editor di pagine](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Dalla console Sites](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### Pubblicazione dall’editor {#publishing-from-the-editor}
 
 Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
-1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
+1. Seleziona l’icona **Informazioni pagina** per aprire il menu, quindi l’opzione **Pubblica pagina**.
 
    ![screen_shot_2018-03-21at152734](assets/screen_shot_2018-03-21at152734.png)
 
@@ -72,11 +76,12 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
    * La pagina verrà pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi saranno elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
 
-      * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
-      * utilizzare **Annulla** per annullare l’azione.
+      * Specifica le risorse, i tag ecc. da pubblicare insieme alla pagina, quindi seleziona **Pubblica** per completare il processo.
+      * Seleziona **Annulla** per annullare l’azione.
+
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Selecting **Publish** will replicate the page to the publish environment. Nell’editor pagina verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
+1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor di pagine verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -95,13 +100,13 @@ Nella console Sites vi sono due opzioni di modifica:
 * [Pubblicazione rapida](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Pubblicazione rapida {#quick-publish}
+#### Pubblicazione rapida  {#quick-publish}
 
-**Pubblicazione** rapida si riferisce a casi semplici e pubblica immediatamente le pagine selezionate senza ulteriore interazione. Anche eventuali riferimenti non pubblicati verranno pubblicati automaticamente.
+**Pubblicazione rapida** si usa in casi semplici; le pagine selezionate vengono pubblicate immediatamente senza ulteriore interazione. Anche eventuali riferimenti non pubblicati verranno pubblicati automaticamente.
 
 Per pubblicare una pagina con Pubblicazione rapida:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Pubblicazione rapida**.
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
@@ -115,20 +120,21 @@ Per pubblicare una pagina con Pubblicazione rapida:
 >
 >La pubblicazione rapida è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
-#### Gestisci pubblicazione {#manage-publication}
+#### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida, consentendo l’inclusione di pagine figlie, la personalizzazione dei riferimenti e l’avvio di eventuali flussi di lavoro applicabili, nonché l’opzione di pubblicazione in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Gestisci pubblicazione**.
 
    ![screen_shot_2018-03-21at153309](assets/screen_shot_2018-03-21at153309.png)
 
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. The first step, **Options**, allows you to:
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passaggio, **Opzioni**, consente di:
 
    * Scegliere di pubblicare le pagine selezionate o annullarne la pubblicazione.
    * Scegliere di eseguire l’azione immediatamente o in un secondo momento.
+
    Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. In modo analogo, se si sceglie di annullare la pubblicazione in un secondo momento, verrà attivato un flusso di lavoro per disattivare le pagine selezionate alla data e all’ora specificate.
 
    Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e interrompete il flusso di lavoro corrispondente.
@@ -141,31 +147,33 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
-   Puoi utilizzare il pulsante **Aggiungi contenuto** per aggiungere ulteriori pagine all’elenco da pubblicare, qualora tu non ne abbia selezionata alcuna prima di avviare la procedura guidata Gestisci pubblicazione.
+   Puoi usare il pulsante **Aggiungi contenuto** per aggiungere ulteriori pagine all’elenco delle pagine da pubblicare, nel caso in cui ti sia dimenticato di selezionarne una prima di avviare la procedura guidata Gestisci pubblicazione.
 
    Facendo clic sul pulsante Aggiungi contenuto si avvia il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser), che consente di selezionare contenuti.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel **to cancel the selection and return to the wizard.
+   Seleziona le pagine desiderate e fai clic su **Seleziona** per aggiungere contenuti alla procedura guidata o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    Nella procedura guidata puoi selezionare un elemento nell’elenco per configurare ulteriori opzioni, come:
 
    * Includere gli elementi figlio.
    * Rimuoverlo dalla selezione.
    * Gestire i relativi riferimenti pubblicati.
+
    ![screen_shot_2018-03-21at153450](assets/screen_shot_2018-03-21at153450.png)
 
-   Clicking **Include Children** opens a dialogue allowing you to:
+   Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di includere:
 
    * Solo gli elementi figli di primo livello.
    * Solo pagine modificate.
    * Solo pagine già pubblicate.
-   Click **Add** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
+
+   Fai clic su **Aggiungi** per aggiungere le pagine figlio nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
    Tornando alla procedura guidata vengono visualizzate le pagine aggiunte in base alle opzioni selezionate nella finestra di dialogo Includi elementi figlio.
 
-   You can view and modify the references to be published or unpublished for a page by selecting it and then clicking the **Published References** button.
+   Puoi visualizzare e modificare i riferimenti da pubblicare o di cui annullare la pubblicazione per una pagina selezionandola e facendo clic sul pulsante **Riferimenti pubblicati**.
 
    ![screen_shot_2018-03-21at153801](assets/screen_shot_2018-03-21at153801.png)
 
@@ -179,23 +187,24 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![screen_shot_2018-03-21at153925](assets/screen_shot_2018-03-21at153925.png)
 
-1. Click **Publish** to complete.
+1. Fai clic su **Pubblica** per completare l’azione.
 
    Nella console Sites, un messaggio di notifica confermerà la pubblicazione.
 
    ![screen_shot_2018-03-21at153951](assets/screen_shot_2018-03-21at153951.png)
 
-1. If the published pages are associated with workflows, they may be shown in a final **Workflows** step of the publication wizard.
+1. Se le pagine pubblicate sono associate a flussi di lavoro, potrebbero essere visualizzati in un passaggio finale **Flussi di lavoro** della procedura guidata di pubblicazione.
 
    >[!NOTE]
    >
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
+   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone l’utente. See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
 
    Le risorse vengono raggruppate in base ai flussi di lavoro attivati e per ognuna sono disponibili opzioni per:
 
    * Definire il titolo del flusso di lavoro.
    * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di [supporto per più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
+
    Click **Publish** or **Publish Later **to complete the publication.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
@@ -204,21 +213,21 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
 L’annullamento della pubblicazione di una pagina ne effettua la rimozione dall’ambiente di pubblicazione e la pagina non sarà più disponibile per i lettori.
 
-In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#publishing-pages), one or more pages can be unpublished:
+Con una procedura [simile alla pubblicazione](/help/sites-authoring/publishing-pages.md#publishing-pages), è possibile annullare la pubblicazione di una o più pagine:
 
-* [Dall’editor pagina](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
+* [Dall’editor di pagine](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Dalla console Sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Annullamento della pubblicazione dall’editor {#unpublishing-from-the-editor}
+### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
 Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Annullamento della pubblicazione dalla console {#unpublishing-from-the-console}
+### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication), ma anche per annullarla.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Nel primo passaggio, **Opzioni**, seleziona **Annulla pubblicazione** invece dell’opzione predefinita **Pubblica**.
+1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Gestisci pubblicazione**.
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Nel primo passaggio, **Opzioni**, seleziona **Annulla pubblicazione** anziché l’opzione predefinita **Pubblica**.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -244,6 +253,7 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publi
 
    * Solo gli elementi figli di primo livello
    * Solo pagine già pubblicate
+
    Queste opzioni sono selezionate per impostazione predefinita, pertanto dovrai ricordarti di deselezionarle. Fai clic su **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -252,7 +262,7 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publi
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
-   Remember that you can also review the references to be published via the **Published References** option.
+   Non dimenticare che è anche possibile esaminare i riferimenti da pubblicare tramite l’opzione **Riferimenti pubblicati**.
 
 1. [Continua a seguire normalmente](#manage-publication) la procedura guidata Gestisci pubblicazione per completare la pubblicazione o annullare la pubblicazione della struttura.
 
@@ -260,17 +270,17 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publi
 
 Puoi determinare lo stato di pubblicazione di una pagina:
 
-* Nelle [informazioni generali sulla risorsa nella console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) 
+* Nelle [informazioni generali sulla risorsa nella console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    ![screen_shot_2018-03-21at154336](assets/screen_shot_2018-03-21at154336.png)
 
-   Lo stato di pubblicazione è visualizzato nelle viste a [schede](/help/sites-authoring/basic-handling.md#card-view), a [colonne](/help/sites-authoring/basic-handling.md#column-view) e a [elenco](/help/sites-authoring/basic-handling.md#list-view) della console Sites.
+   Lo stato di pubblicazione è indicato nelle viste [a schede](/help/sites-authoring/basic-handling.md#card-view), [a colonne](/help/sites-authoring/basic-handling.md#column-view) e [a elenco](/help/sites-authoring/basic-handling.md#list-view) nella console Sites.
 
-* In the [timeline](/help/sites-authoring/basic-handling.md#timeline)
+* Nella [timeline](/help/sites-authoring/basic-handling.md#timeline)
 
    ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
-* In the [Page Information menu](/help/sites-authoring/author-environment-tools.md#page-information) when editing a page
+* Nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) durante la modifica di una pagina
 
    ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
 
