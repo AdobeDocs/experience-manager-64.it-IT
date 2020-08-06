@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 78%
 
 ---
 
@@ -67,7 +70,7 @@ Il corpo della pagina di scaffolding è costituito dal modulo. Se un utente desi
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*Passate alle proprietà&#x200B;**di**pagina della nuova pagina e impostate Testo**titolo,* Descrizione *, Modello**di destinazione e Percorso**destinazione, come descritto sopra.*
+*Passate alle proprietà&#x200B;**di**pagina della nuova pagina e impostate Testo**titolo,* Descrizione *, Modello**di destinazione e Percorso**di destinazione, come descritto sopra.*
 
 *Occorre quindi definire la struttura della pagina che verrà creata dalla pagina di scaffolding. A questo scopo, passate alla modalità di progettazione nella pagina di scaffolding. Viene visualizzato un collegamento che consente di modificare la pagina di scaffolding nell’**editor basato su finestra di dialogo**.
 
@@ -93,7 +96,7 @@ Sul lato destro dell’editor basato su finestra di dialogo viene visualizzato l
 
 Osserva la proprietà nome per questo campo, con valore
 
- &quot;merge_preserve&quot;./jcr:content/par/text/text
+./jcr:content/par/text/text
 
 Questo è il nome della proprietà in cui verrà scritto il contenuto del campo quando la pagina di scaffolding verrà utilizzata per creare una pagina. La proprietà è definita come percorso relativo rispetto al nodo che rappresenta la pagina da creare. Specifica la proprietà text, sotto il nodo text, che si trova sotto il nodo par, che a sua volta è un nodo figlio del nodo jcr:content sotto il nodo della pagina.
 
