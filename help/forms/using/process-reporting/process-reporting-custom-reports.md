@@ -1,8 +1,8 @@
 ---
 title: Report personalizzati in Process Reporting
 seo-title: Report personalizzati in Process Reporting
-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai moduli AEM nell’interfaccia utente di generazione rapporti sui processi JEE.
-seo-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai moduli AEM nell’interfaccia utente di generazione rapporti sui processi JEE.
+description: Puoi creare rapporti personalizzati e aggiungere tali rapporti all'AEM Forms  nell'interfaccia utente di reporting dei processi JEE.
+seo-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti all'AEM Forms  nell'interfaccia utente di reporting dei processi JEE.
 uuid: 8974ec2d-ac54-4b44-9758-b1cf44b732fa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share 
    >
    >In ogni query, il parametro path punta alla posizione di memorizzazione crx e i caratteri vengono preceduti in base allo standard URL.
 
-## Creazione di un servizio mediante l&#39;API Query Builder {#creating-a-service-using-query-builder-api-nbsp}
+## Creazione di un servizio mediante l&#39;API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 Il prerequisito per la creazione di un servizio mediante l&#39;API Query Builder è la [creazione e la distribuzione del bundle](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) CQ OSGI e l&#39; [utilizzo dell&#39;API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)Query Builder.
 
@@ -420,7 +423,7 @@ Il `pom.xml`file di esempio da creare sopra il servizio è:
 </project>
 ```
 
-## Creazione di un’interfaccia utente separata {#creating-a-separate-ui-nbsp}
+## Creazione di un’interfaccia utente separata  {#creating-a-separate-ui-nbsp}
 
 I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornire i privilegi [di](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accesso appropriati.
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integrazione dell&#39;interfaccia utente del rapporto nell&#39;interfaccia utente di Process Reporting esistente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integrazione dell&#39;interfaccia utente del rapporto nell&#39;interfaccia utente di Process Reporting esistente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornire i privilegi [di](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accesso appropriati.
 
@@ -640,6 +643,7 @@ I prerequisiti per la creazione di un’interfaccia utente separata per la visua
    * **link**- Specifica il collegamento relativo al renderer dell&#39;interfaccia utente separata. Il collegamento viene creato al punto 1.
    * **description**- Specifica la descrizione di una riga del report. È possibile lasciare vuoto il campo di descrizione.
    * **icon**- Specifica l&#39;immagine da rappresentare pittoricamente il rapporto. È possibile lasciare vuoto il campo dell&#39;icona.
+
    ![Proprietà del nodo ](assets/nodeproperties.png)
 
    Proprietà del nodo
