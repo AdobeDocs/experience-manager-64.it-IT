@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a063d1ba-712a-49e1-8844-75bfa6e98977
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '7050'
+ht-degree: 0%
 
 ---
 
@@ -42,35 +45,35 @@ Anche se potreste non essere in grado di definire tutti i dettagli all&#39;inizi
 
 Assicurarsi che i livelli di accesso del sistema richiesti siano stati assegnati a tutti i ruoli.
 
-## Elenco di controllo di Adobe Security {#adobe-security-checklist}
+##  elenco di controllo della sicurezza Adobe {#adobe-security-checklist}
 
-L&#39;elenco di controllo di [Adobe Security List](/help/sites-administering/security-checklist.md) è l&#39;elenco di controllo ufficiale fornito per garantire che AEM sia sicuro al momento dell&#39;installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l&#39;integrità dell&#39;istanza.
+L&#39;elenco di controllo di sicurezza [Adobe](/help/sites-administering/security-checklist.md) è l&#39;elenco di controllo ufficiale fornito per garantire che AEM sia sicuro durante l&#39;installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l&#39;integrità dell&#39;istanza.
 
-## Configurazione del progetto Adobe Support Portal {#adobe-support-portal-project-set-up}
+##  Adobe Supporto Portal - Impostazione del progetto {#adobe-support-portal-project-set-up}
 
-Il portale di supporto Adobe consente ai partner e ai clienti di implementare AEM l’implementazione come progetto nel portale di supporto.
+Il  Adobe Support Portal consente ai partner e ai clienti di implementazione di impostare l&#39;implementazione AEM come progetto nel portale di supporto.
 
-I dettagli possono essere registrati; ad esempio, informazioni sulle tecnologie e sulle versioni implementate. che garantiscono la trasparenza tra il cliente e Adobe.
+I dettagli possono essere registrati; ad esempio, informazioni sulle tecnologie e sulle versioni implementate. Queste forniscono trasparenza tra il cliente e il Adobe .
 
-## Formazione amministratori AEM {#aem-administrator-training}
+## Formazione AEM amministratore {#aem-administrator-training}
 
-Formazione per il personale amministrativo della soluzione. Per ulteriori informazioni, consulta [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) .
+Formazione per il personale amministrativo della soluzione. Per ulteriori informazioni, consulta [Servizi](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) di formazione sul Adobe.
 
 ## Formazione su AEM Author {#aem-author-training}
 
-Formazione per il personale addetto alla produzione (authoring) di contenuti per la soluzione. Per ulteriori informazioni, consulta [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) .
+Formazione per il personale addetto alla produzione (authoring) di contenuti per la soluzione. Per ulteriori informazioni, consulta [Servizi](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) di formazione sul Adobe.
 
-## Esame di certificazione AEM {#aem-certification-exam}
+## AEM di certificazione {#aem-certification-exam}
 
-Assicurarsi che la persona appropriata sia registrata per sostenere gli esami [di](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)certificazione pertinenti.
+Assicurarsi che la persona appropriata sia registrata per sostenere gli esami [di](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)certificazione pertinenti.
 
-## Certificato AEM {#aem-certified}
+## AEM certificato {#aem-certified}
 
-Assicurarsi che la persona appropriata abbia superato gli esami [di](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)certificazione pertinenti.
+Assicurarsi che la persona appropriata abbia superato gli esami [di](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)certificazione pertinenti.
 
 ## Formazione tecnica AEM {#aem-technical-training}
 
-fornire formazione tecnica per la persona appropriata; ad esempio, sviluppatori, architetti, ingegneri e professionisti.
+fornire una formazione tecnica per la persona appropriata; ad esempio, sviluppatori, architetti, ingegneri e professionisti.
 
 ## Accordo sui KPI definiti come obiettivi per il progetto {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -82,7 +85,7 @@ L&#39;allineamento dei KPI (Business Key Performance Indicators) e degli indicat
 
 ## Allineamento dell&#39;architettura dei contenuti con KPI {#alignment-of-content-architecture-with-kpis}
 
-Assicurarsi che l&#39;architettura del contenuto proposta sia allineata con gli indicatori prestazioni chiave (KPI) pertinenti.
+Assicurarsi che l&#39;architettura del contenuto proposta sia allineata con gli indicatori prestazioni chiave (KPI, Key Performance Indicators) pertinenti.
 
 ## Allineamento della roadmap del cliente con la cronologia del progetto {#alignment-of-the-customer-roadmap-with-project-timeline}
 
@@ -105,14 +108,13 @@ Oltre alle attività di manutenzione standard di Adobe Experience Manager (AEM),
 
 Assicurati che il team sia composto da personale con la formazione appropriata. Per i team di progetto, la raccomandazione deve avere tutti i seguenti elementi:
 
-* almeno uno sviluppatore lead certificato AEM
+* almeno un AEM sviluppatore lead certificato
 * almeno un architetto certificato AEM
-* almeno il 75% degli sviluppatori con certificazione AEM;
+* almeno il 75% degli sviluppatori AEM certificati;
 
-   
-questo consente agli sviluppatori certificati di guidare gli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
+   questo consente agli sviluppatori certificati di guidare gli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
 
-## Diagramma di architettura {#architecture-diagram}
+## Diagramma dell&#39;architettura {#architecture-diagram}
 
 Il diagramma di architettura è una rappresentazione grafica dell&#39;architettura. Include la rappresentazione di:
 
@@ -122,7 +124,7 @@ Il diagramma di architettura è una rappresentazione grafica dell&#39;architettu
 
 ## Architettura {#architecture-draft}
 
-Questo fornisce una vista di alto livello del sistema e dell&#39;architettura della soluzione. In questa fase si tratta di un progetto che sarà riesaminato e perfezionato in fasi successive.
+Questo fornisce una vista di alto livello del sistema e dell&#39;architettura della soluzione. In questa fase si tratta di un progetto che sarà riesaminato e perfezionato in una fase successiva.
 
 ## Scheda di revisione dell&#39;architettura {#architecture-review-board-sign-off}
 
@@ -142,9 +144,9 @@ Script di automazione e casi di utilizzo automatizzati di base:
 
 ## Strategia di test automatizzato {#automated-testing-strategy}
 
-Questa strategia definisce un quadro per gli script automatizzati riutilizzabili, insieme all&#39;approccio pianificato dal team Quality Assurance (QA). Esso delinea il piano generale per il test di automazione per garantire:
+Questa strategia definisce un quadro per gli script automatizzati riutilizzabili, insieme all&#39;approccio pianificato dal team Quality Assurance (QA). Esso delinea il piano generale per il test di automazione per contribuire a garantire:
 
-* un ROI maggiore
+* un ritorno maggiore sull&#39;investimento (ROI)
 * maggiore copertura
 * maggiore affidabilità del test con ripetizione di qualità
 
@@ -160,17 +162,17 @@ L&#39;automazione delle distribuzioni assicura una distribuzione più rapida e c
 * utensili da utilizzare
 * ambienti da distribuire in
 
-## Piano di comunicazione {#aware-of-communication-plan}
+## Consapevolezza del piano di comunicazione {#aware-of-communication-plan}
 
-L&#39;intero team del progetto e tutti gli interessati devono confermare di essere a conoscenza di:
+L&#39;intero team del progetto e tutti gli interessati devono confermare di essere a conoscenza di quanto segue:
 
 * struttura di reporting
 * cadenza della segnalazione
 * canali di comunicazione
 
-## Informazioni sulle definizioni di successo e sui criteri {#aware-of-success-definitions-and-criteria}
+## Consapevolezza delle definizioni di successo e dei criteri {#aware-of-success-definitions-and-criteria}
 
-L&#39;intero team del progetto e tutti gli interessati devono confermare di essere a conoscenza di:
+L&#39;intero team del progetto e tutti gli interessati devono confermare di essere a conoscenza di quanto segue:
 
 * definizioni di successo
 * criteri di successo
@@ -207,8 +209,7 @@ I KPI aziendali definiscono valori misurabili che dimostrano l&#39;efficacia con
 
 Un documento sui requisiti aziendali (BRD) descrive la soluzione aziendale per un progetto, fornendo una chiara specifica delle esigenze e aspettative aziendali del cliente. Il BRD distingue anche tra la soluzione aziendale e la soluzione tecnica.
 
-Nell&#39;esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla domanda:
-&quot;Cosa vogliono fare gli affari?&quot;
+Nell&#39;esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla domanda: &quot;Cosa vogliono fare gli affari?&quot;
 
 ## Disattivazione di qualsiasi adeguamento necessario alla soluzione o all&#39;architettura identificata e allineata rispetto al ROI e alle aspettative KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -236,13 +237,13 @@ Assicurarsi che tutte le persone/i ruoli appropriati abbiano ricevuto il Manuale
 
 ## Comunicare il rapporto di test delle prestazioni {#communicate-performance-test-report}
 
-Assicurati che tutte le persone/i ruoli appropriati abbiano ricevuto il report Performance Test.
+Assicurati che tutte le persone/i ruoli appropriati abbiano ricevuto il report Performance Test (Test prestazioni).
 
-## Comunica note sulla versione {#communicate-release-notes}
+## Comunicare le note sulla versione {#communicate-release-notes}
 
 Verifica che tutte le persone/i ruoli appropriati abbiano ricevuto le Note sulla versione.
 
-## Comunica ambito e aspettative al team {#communicate-scope-and-expectations-to-team}
+## Comunicare Ambito e aspettative al team {#communicate-scope-and-expectations-to-team}
 
 Assicurati che il team del progetto sia pienamente consapevole e in linea con l’ambito del progetto e le aspettative di realizzazione.
 
@@ -276,7 +277,7 @@ Concetto di come sviluppare e testare interfacce esterne che potrebbero non esse
 
 Pianificare/implementare modelli di queste interfacce per garantire che il test sia il più vicino possibile a un comportamento simile alla produzione.
 
-## Documento Architettura contenuto {#content-architecture-document}
+## Documento sull&#39;architettura dei contenuti {#content-architecture-document}
 
 Documentazione dell&#39;architettura proposta del contenuto. I dettagli dovrebbero includere, tra l&#39;altro:
 
@@ -288,7 +289,7 @@ Documentazione dell&#39;architettura proposta del contenuto. I dettagli dovrebbe
 
 Il contenuto del sistema legacy viene rivisto e il contenuto selezionato viene convalidato per la migrazione alla nuova soluzione.
 
-## Crea contratto {#contract-draft}
+## Bozza contratto {#contract-draft}
 
 Una prima bozza del contratto legale.
 
@@ -313,7 +314,7 @@ Eventuali linee guida/requisiti del cliente sulle modalità di sviluppo da segui
 
 Criteri del cliente che definiscono come e quando è possibile effettuare distribuzioni/rilasci.
 
-Questi includono spesso timeline, requisiti di pianificazione e di disconnessione.
+Questi includono spesso timeline, requisiti per la pianificazione e la disconnessione.
 
 ## Criteri o requisiti per il monitoraggio dei clienti {#customer-monitoring-policies-or-requirements}
 
@@ -341,7 +342,7 @@ Il cliente (business e IT) avrà delle politiche che definiscono i livelli di si
 
 * Requisiti per il superamento di una valutazione del rischio.
 * Requisiti per le prove di penetrazione passante.
-* Eventuali requisiti di sicurezza specifici; come l&#39;escape di tutti i campi di input, l&#39;utilizzo della crittografia (SSL), i certificati, l&#39;autenticazione e la sessione.
+* Eventuali requisiti di sicurezza specifici; come l&#39;escape di tutti i campi di input, l&#39;utilizzo della cifratura (SSL), i certificati, l&#39;autenticazione e la sessione.
 
 ## Linee guida sulle specifiche del cliente {#customer-specification-guidelines}
 
@@ -355,7 +356,7 @@ Rapporti dal cliente al responsabile qualità durante il periodo di test di acce
 
 Eventuali personalizzazioni e/o hotfix applicati devono essere documentati in quanto possono influenzare gli aggiornamenti futuri:
 
-* AEM può essere personalizzato in base alle esigenze aziendali. Tutte le personalizzazioni che possono influenzare l&#39;aggiornamento devono essere documentate in modo completo. Ad esempio, eventuali modifiche principali all’interfaccia utente di AEM.
+* AEM può essere personalizzato in base alle esigenze aziendali. Tutte le personalizzazioni che possono influenzare l&#39;aggiornamento devono essere documentate in modo completo. Ad esempio, le modifiche principali apportate all’interfaccia utente di AEM.
 * Eventuali aggiornamenti richiesti per la soluzione corrente devono essere documentati in modo completo; possono includere:
 
    * fix pack cumulativi (CFP)
@@ -372,7 +373,7 @@ Rapporti o riunioni risultanti dal test di accettazione dell’utente (UAT). Ess
 
 ## Protezione predefinita attivata {#default-security-enabled}
 
-Verifica che le impostazioni di protezione predefinite per AEM siano state abilitate/implementate.
+Verificare che le impostazioni di protezione predefinite per AEM siano state abilitate o implementate.
 
 ## Criteri e processi di distribuzione/rilascio {#deployment-release-policies-and-processes}
 
@@ -473,7 +474,7 @@ Le aspettative possono includere:
 
 ## Requisiti di Experience Design {#experience-designs-requirements}
 
-Requisiti per l&#39;intera esperienza della soluzione. Vengono trattati fattori come la personalizzazione, la persistenza tra dispositivi diversi e l&#39;esperienza utente, tra gli altri.
+Requisiti per l&#39;intera esperienza della soluzione. Vengono trattati fattori quali la personalizzazione, la persistenza tra dispositivi diversi e l&#39;esperienza degli utenti, tra l&#39;altro.
 
 ## Specifiche esperienza {#experience-specifications}
 
@@ -500,7 +501,7 @@ Disconnettiti, dalle parti interessate aziendali, dal fatto che il sistema di fa
 
 ## Conferma di fattibilità sui KPI {#feasibility-confirmation-on-kpis}
 
-Risultati di uno studio di fattibilità sia per AEM che per la progettazione di soluzioni di alto livello. Questi devono essere misurati in base ai KPI per garantire che possano essere soddisfatti.
+Risultati di uno studio di fattibilità per la progettazione di soluzioni sia AEM che ad alto livello. Questi devono essere misurati in base ai KPI per garantire che possano essere soddisfatti.
 
 ## Contratto Finalizzato {#finalized-contract}
 
@@ -528,7 +529,7 @@ Un percorso felice è uno scenario predefinito senza condizioni eccezionali o di
 
 Stime iniziali di:
 
-* l&#39;hardware necessario per l&#39;installazione di base di AEM
+* l&#39;hardware necessario per l&#39;installazione AEM di base
 * eventuali requisiti aggiuntivi, basati sulla progettazione di soluzioni di alto livello
 
 ## L&#39;hardware sarà disponibile per soddisfare i requisiti {#hardware-will-be-available-to-fulfill-requirements}
@@ -564,7 +565,7 @@ Definizione della struttura del contenuto del sistema legacy. Questo viene utili
 
 Un elenco delle funzionalità business critical.
 
-## Implementazione - Modifiche in base ai risultati del test di transizione {#implementation-changes-based-on-penetration-test-results}
+## Implementazione - Modifiche in base ai risultati del test di penetrazione {#implementation-changes-based-on-penetration-test-results}
 
 Implementazione di tutte le modifiche necessarie (che sono state firmate) alla soluzione in base ai risultati dei test di penetrazione.
 
@@ -602,7 +603,7 @@ Implementazione di ruoli e diritti, utenti e gruppi.
 
 ## Implementazione - Concetto di sicurezza {#implementation-security-concept}
 
-Implementazione di tutte le misure di sicurezza, incluse le impostazioni predefinite di AEM.
+Implementazione di tutte le misure di sicurezza, comprese le AEM.
 
 ## Implementazione - Software di sicurezza {#implementation-security-software}
 
@@ -633,9 +634,9 @@ Il concetto di implementazione fornisce i principi guida per l&#39;intera implem
 
 Questo concetto può anche delineare i framework, le librerie e altri artefatti utilizzati nella soluzione.
 
-## Informazioni sul supporto Adobe per Go Live Schedule {#inform-adobe-support-about-the-go-live-schedule}
+## Informazioni  supporto del Adobe sulla pianificazione Go Live {#inform-adobe-support-about-the-go-live-schedule}
 
-Contattate il supporto Adobe per assicurarvi che tutto il supporto necessario possa essere attivato durante il live.
+Contatta  Adobe di supporto per assicurarti che tutto il supporto necessario possa essere attivato durante il live go.
 
 ## Modelli esperienza iniziali {#initial-experience-designs}
 
@@ -655,7 +656,7 @@ I processi chiari registrano tutti i problemi riscontrati e tengono traccia dell
 
 Un sistema di monitoraggio, insieme ai processi richiesti, per registrare tutti i problemi riscontrati e monitorare le attività in corso allo scopo di garantire che tutti i problemi siano risolti.
 
-Tutte le parti interessate del progetto dovrebbero avere accesso per facilitare la trasparenza dello stato del progetto.
+Tutte le parti interessate del progetto dovrebbero avere accesso al fine di facilitare la trasparenza dello stato del progetto.
 
 Esempi includono Atlassian JIRA e HP Quality Center.
 
@@ -678,9 +679,9 @@ Una descrizione degli strumenti che saranno utilizzati per l&#39;attuazione; gli
 * strumenti di distribuzione
 * strumenti di generazione
 
-## Elenco di utenti che richiedono l&#39;accesso al portale di supporto Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
+## Elenco di utenti che richiedono l&#39;accesso a  portale di supporto del Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Un elenco di tutti gli utenti e i ruoli che dovranno accedere al portale di assistenza Adobe.
+Un elenco di tutti gli utenti e i ruoli che dovranno accedere al portale di supporto del Adobe .
 
 L&#39;elenco è normalmente composto da Solution Architect e/o da personale IT del cliente.
 
@@ -692,9 +693,9 @@ Un&#39;analisi, insieme alle raccomandazioni che ne risultano, che definisce gli
 * livello di granularità
 * informazioni registrate per ogni attività
 
-## Attività di manutenzione (specifiche per AEM) Test e attivate {#maintenance-tasks-aem-specific-tested-and-enabled}
+## Attività di manutenzione (AEM specifiche) testate e abilitate {#maintenance-tasks-aem-specific-tested-and-enabled}
 
-Test e attivazione di attività di manutenzione AEM quali:
+Effettuare test e attivare AEM attività di manutenzione quali:
 
 * compattazione
 * pulizia del sistema
@@ -709,7 +710,7 @@ Documentare la migrazione; incluso
 
 ## Strategia di migrazione {#migration-strategy}
 
-Descrizione completa dei contenuti, dell&#39;architettura dei contenuti e dei formati esistenti mappati alla nuova soluzione. Dovrebbe riguardare:
+Una descrizione completa dei contenuti, dell&#39;architettura dei contenuti e dei formati esistenti mappati alla nuova soluzione. Dovrebbe riguardare:
 
 * dettagli tecnici della migrazione automatizzata, se possibile
 * test di fumo da eseguire dopo la migrazione, per convalidare il contenuto migrato
@@ -718,7 +719,7 @@ Dovrebbe inoltre suggerire come mantenere i contenuti aggiornati (o il più aggi
 
 ## Monitoraggio - CPU {#monitoring-cpu}
 
-Monitoraggio dell&#39;utilizzo della CPU del sistema:
+Monitoraggio dell&#39;utilizzo della CPU del sistema da parte della soluzione:
 
 * media
 * picchi
@@ -752,7 +753,7 @@ Monitorare eventuali connessioni tra la soluzione e i sistemi esterni:
 
 ## Monitoraggio - Larghezza di banda della rete {#monitoring-network-bandwidth}
 
-Controlla l&#39;utilizzo della larghezza di banda della soluzione:
+Controlla l&#39;utilizzo della larghezza di banda di rete da parte della soluzione:
 
 * tasso medio di traffico
 * picchi
@@ -783,7 +784,7 @@ Monitoraggio della soglia definita della soluzione e attuazione delle misure di 
 
 Concetti di monitoraggio da applicare alla soluzione; con:
 
-* Monitoraggio standard AEM
+* AEM standard
 * monitoraggio del sistema
 * requisiti di monitoraggio specifici per i clienti
 
@@ -883,7 +884,7 @@ Elenco di controllo per definire la serie di controlli e di attività da eseguir
 
 ## Prove sulle prestazioni dell&#39;ambiente di produzione {#production-environment-baseline-performance-tests}
 
-In genere viene eseguito un test di base su un’installazione standard di AEM. Questo viene quindi utilizzato come punto di riferimento per testare l&#39;implementazione e l&#39;hardware.
+In genere, è consigliabile eseguire un test di base su un&#39;installazione standard di AEM. Questo viene quindi utilizzato come punto di riferimento per testare l&#39;implementazione e l&#39;hardware.
 
 ## Ambiente di produzione pronto {#production-environment-ready}
 
@@ -935,7 +936,7 @@ Esso copre quanto deve essere realizzato, insieme al lavoro da svolgere, per rea
 
 ## Rapporti sullo stato del progetto all&#39;interno di una cadenza definita {#project-status-reports-within-a-defined-cadence}
 
-Rapporti sullo stato del progetto consegnati in base al calendario concordato e con il formato richiesto.
+Rapporti sullo stato del progetto consegnati in base al programma concordato e con il formato richiesto.
 
 ## Prova del concetto (POC) {#proof-of-concept-poc}
 
@@ -945,7 +946,7 @@ Esso dovrebbe mirare a dimostrare la fattibilità della soluzione, verificare ch
 
 ## Regole rimozione {#purge-rules}
 
-AEM consente di gestire più versioni di risorse e contenuti. Le regole di rimozione sono progettate e configurate per rimuovere periodicamente le versioni precedenti al fine di mantenere lo stato e le dimensioni dell&#39;archivio.
+AEM conserva più versioni di risorse e contenuti. Le regole di rimozione sono progettate e configurate per rimuovere periodicamente le versioni precedenti al fine di mantenere lo stato e le dimensioni dell&#39;archivio.
 
 ## Formato rapporto qualità e Cadenza {#quality-report-format-and-cadence}
 
@@ -968,7 +969,7 @@ Viene utilizzato con Runbook per eseguire i passaggi e i controlli pre e post di
 
 >[!NOTE]
 >
->Per un esempio, consultate le Note sulla versione di [AEM](/help/release-notes/release-notes.md).
+>Per un esempio, consultate le [AEM Note](/help/release-notes/release-notes.md)sulla versione.
 
 ## Rilascio in esecuzione su ambiente di produzione {#release-running-on-production-environment}
 
@@ -980,7 +981,7 @@ Versione finale in esecuzione e attiva in produzione.
 
 ## Cadenza di segnalazione {#reporting-cadence}
 
-Insieme al cliente, definite la frequenza dei rapporti che gli vengono forniti.
+Insieme al cliente, definite la frequenza dei rapporti consegnati.
 
 ## Ottimizzazione repository {#repository-optimization}
 
@@ -988,9 +989,9 @@ I dati non vengono mai sovrascritti in un file tar, l&#39;utilizzo del disco aum
 
 Per contrastare le dimensioni sempre maggiori del repository, è stata messa in atto una strategia di ottimizzazione per rimuovere i dati obsoleti.
 
-## Richiesta di configurazione della sezione Progetto nel portale di supporto Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
+## Richiesta di configurazione della sezione Progetto nel portale di supporto  Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
 
-La richiesta ufficiale di impostare il progetto nel portale di supporto Adobe.
+La richiesta ufficiale di impostare il progetto nel portale di supporto del Adobe .
 
 ## Documentazione sui requisiti {#requirements-documentation}
 
@@ -998,7 +999,7 @@ Questa serie di documenti copre i requisiti funzionali e non funzionali, insieme
 
 ## Risorse disponibili per il supporto Go Live {#resources-available-to-support-go-live}
 
-Assicurati che tutti i ruoli necessari per andare in diretta siano dotati di personale e disponibili.
+Verificate che tutti i ruoli necessari per andare in diretta siano dotati di personale e disponibili.
 
 ## Valutazione del rischio {#risk-assessment}
 
@@ -1024,8 +1025,8 @@ Essi mirano a indicare l&#39;efficienza della soluzione in termini economici def
 Specifica dettagliata dei concetti relativi ai ruoli e ai diritti di accesso richiesti per la nuova applicazione, compresa una descrizione ad alto livello di:
 
 * role
-* gruppi
-* utenti
+* groups
+* users
 * permissions
 * nonché gestione e provisioning degli utenti
 
@@ -1037,9 +1038,9 @@ Rivedete il concetto Ruoli e diritti per essere certi che soddisfi i criteri di 
 
 Specifica dettagliata basata sul concetto Ruoli e diritti.
 
-## Recommendations sull&#39;architettura di sicurezza {#security-architecture-recommendations}
+## Architettura della sicurezza Recommendations {#security-architecture-recommendations}
 
-Raccomandazioni relative alla protezione per l&#39;architettura software e hardware.
+Recommendations relativo alla sicurezza per l&#39;architettura software e hardware.
 
 ## Linee guida sulla codifica basata sulla sicurezza {#security-based-coding-guidelines}
 
@@ -1072,7 +1073,7 @@ Un profilo di alto livello che copre l&#39;impostazione della sicurezza dei segu
 
 Tutte le questioni di sicurezza della soluzione elencata e valutata; comprese le stime dello sforzo.
 
-## Disattivazione della sicurezza dalle parti interessate {#security-sign-off-from-business-stakeholders}
+## Disattivazione della sicurezza dalle parti in causa {#security-sign-off-from-business-stakeholders}
 
 Per assicurarsi che l&#39;implementazione della sicurezza sia conforme alle politiche e alle aspettative, è necessario disconnettersi dalle parti interessate.
 
@@ -1100,7 +1101,7 @@ La strategia ad alto livello per l&#39;architettura del software; compresi servi
 
 ## Scheda di revisione della soluzione - Set di cadenza della riunione e stabilito {#solution-review-board-established-and-meeting-cadence-set}
 
-La Solution Review Board è solitamente composta da parti interessate del cliente.
+La Solution Review Board è in genere composta da parti interessate del cliente.
 
 Il consiglio di amministrazione organizza regolarmente riunioni per esaminare in modo continuativo i requisiti attualmente in vigore e le specifiche pertinenti. L&#39;obiettivo è quello di garantire l&#39;allineamento con la definizione e i criteri di successo e di contribuire allo sviluppo dei requisiti.
 
@@ -1120,19 +1121,19 @@ Concetto iniziale per qualsiasi funzionalità speciale considerata al di fuori d
 
 ## Specifiche di funzionalità speciali {#special-functionality-specification}
 
-Dettagli su qualsiasi funzionalità speciale considerata al di fuori del normale ambito di sviluppo sulla piattaforma AEM.
+Dettagli di qualsiasi funzionalità speciale considerata al di fuori del normale ambito di sviluppo sulla piattaforma AEM.
 
 ## Linee guida specifiche {#specification-guidelines}
 
-Eventuali linee guida del cliente sulle modalità di esecuzione della specifica.
+Eventuali linee guida del cliente sulle modalità da seguire per la specifica.
 
 ## Processo di revisione e approvazione delle specifiche definito e comunicato {#specification-review-and-approval-process-defined-and-communicated}
 
 Dovrebbe essere messo in atto un processo chiaro per l&#39;approvazione delle specifiche da parte del cliente. Questo processo assicura chiarezza e fermezza di portata per i requisiti.
 
-## Personale selezionato per la formazione di amministratore AEM {#staff-selected-for-aem-administrator-training}
+## Personale selezionato per AEM formazione di amministratore {#staff-selected-for-aem-administrator-training}
 
-Personale interno che necessita di formazione per gestire la soluzione.
+Personale interno che necessiterà di formazione per gestire la soluzione.
 
 ## Personale selezionato per la formazione Autore e Utente finale {#staff-selected-for-author-and-end-user-training}
 
@@ -1140,7 +1141,7 @@ Personale interno che necessita di formazione per creare la soluzione.
 
 ## Parti interessate {#stakeholders}
 
-Le parti interessate sono le persone e/o i ruoli chiave che hanno un interesse significativo nel progetto. Alcuni contribuiranno al bilancio del progetto.
+Le parti in causa sono le persone e/o i ruoli chiave che hanno un interesse significativo nel progetto. Alcuni contribuiranno al bilancio del progetto.
 
 Le parti interessate possono essere interne e/o esterne.
 
@@ -1175,13 +1176,13 @@ Tali criteri sono utilizzati per garantire che i criteri di successo siano soddi
 
 Parte delle responsabilità del responsabile qualità è garantire che vi siano risorse disponibili per supportare qualsiasi utente durante il test. Ad esempio, per aiutare l&#39;utente durante il test, durante la segnalazione dei problemi e per aiutare a convalidare i problemi nell&#39;ambiente di test.
 
-## Processi di supporto e accesso al portale di supporto Adobe {#support-processes-and-access-to-adobe-support-portal}
+## Processi di supporto e accesso al portale di supporto  Adobe {#support-processes-and-access-to-adobe-support-portal}
 
-L&#39;accesso ad Adobe Support Portal è fondamentale per l&#39;invio di ticket su qualsiasi problema relativo ai prodotti che potrebbe verificarsi durante l&#39;implementazione.
+L&#39;accesso al portale di supporto del Adobe  è fondamentale per l&#39;invio di ticket su qualsiasi problema relativo ai prodotti che potrebbe verificarsi durante l&#39;implementazione.
 
 L&#39;accesso deve essere assegnato ai membri chiave del team.
 
-## Definizione architettura di sistema {#system-architecture-definition}
+## Definizione dell&#39;architettura di sistema {#system-architecture-definition}
 
 Una proposta iniziale e una definizione dell&#39;architettura per tutti gli ambienti della soluzione.
 
@@ -1191,7 +1192,7 @@ un documento che descrive l&#39;architettura del sistema; tra cui interfacce, po
 
 ## Concetto di sicurezza dell&#39;architettura di sistema {#system-architecture-security-concept}
 
-Un profilo di alto livello su come rendere l&#39;architettura del sistema conforme a qualsiasi criterio di protezione. Questo può coprire:
+Un profilo di alto livello su come rendere l&#39;architettura del sistema conforme a qualsiasi criterio di protezione. Può trattarsi di:
 
 * firewall e regole firewall
 * zone di protezione
@@ -1201,7 +1202,7 @@ Un profilo di alto livello su come rendere l&#39;architettura del sistema confor
 
 ## Fattori di rischio del sistema identificati e verificati {#system-risk-factors-identified-and-verified}
 
-Eventuali fattori di rischio rilevati nella valutazione del rischio (o in altri esami) sono identificati e valutati:
+Eventuali fattori di rischio riscontrati nella valutazione del rischio (o in altri esami) sono identificati e valutati:
 
 * il livello di rischio implicito in ciascuno
 * insieme agli sforzi stimati per eventuali modifiche all&#39;implementazione necessarie per affrontarle.
@@ -1242,7 +1243,7 @@ Le specifiche tecniche comprendono (tra le altre informazioni):
 * API
 * servizi che supportano i requisiti della soluzione
 
-## Specifica modello {#template-specification}
+## Specifiche del modello {#template-specification}
 
 Le specifiche per i modelli richiesti. Tali informazioni dovrebbero includere, tra gli altri, i dettagli parsys, blueprint e la mappatura dell&#39;ereditarietà.
 
@@ -1360,10 +1361,10 @@ La persona appropriata dovrebbe confermare che comprendono appieno:
 
 ## Concetto di gestione URL {#url-handling-concept}
 
-Il concetto di gestione degli URL dovrebbe includere funzionalità URL specifiche di AEM, tra cui:
+Il concetto di gestione degli URL dovrebbe includere AEM specifiche funzionalità URL, tra cui:
 
 * URL personalizzati
-* collegamento esternalizzato
+* esternalizzazione dei collegamenti
 * pagine di errore
 * mapping
 
@@ -1412,7 +1413,7 @@ Le specifiche di ciascun flusso di lavoro devono includere (almeno):
 
 ## Concetto Flussi Di Lavoro {#workflows-concept}
 
-I flussi di lavoro consentono di automatizzare le attività di AEM. Il concetto dei flussi di lavoro illustra:
+I flussi di lavoro consentono di automatizzare le attività AEM. Il concetto dei flussi di lavoro illustra:
 
 * i processi che necessitano di automazione
 * i servizi e i ruoli in AEM che saranno interessati
