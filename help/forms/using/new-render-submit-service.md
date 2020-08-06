@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ In Workbench, quando si definisce un&#39; `AssignTask` operazione, specificare u
 * Eseguire il rendering e inviare un modulo XDP come HTML
 * Eseguire il rendering e inviare un modulo XDP come PDF sul desktop e come HTML su dispositivi mobili (ad esempio, un iPad)
 
-### Nuovo servizio moduli HTML {#new-html-forms-service}
+### Nuovo servizio Forms HTML {#new-html-forms-service}
 
-Il nuovo servizio HTML Forms sfrutta la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
+Il nuovo servizio Forms HTML sfrutta la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
 
 ```java
 /*
@@ -104,7 +107,7 @@ Questo processo consente di inviare un modulo XDP su più piattaforme senza prob
 
 ## Conversione del rendering dei moduli per dispositivi mobili da PDF a HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
-I browser stanno gradualmente ritirando il supporto per i plug-in basati su NPAPI, inclusi i plug-in per Adobe Acrobat e Adobe Acrobat Reader. Per modificare il rendering dei moduli mobili da PDF a HTML, procedere come segue:
+I browser stanno gradualmente ritirando il supporto per i plug-in basati su NPAPI, inclusi i plug-in per  Adobe Acrobat e  Adobe Acrobat Reader. Per modificare il rendering dei moduli mobili da PDF a HTML, procedere come segue:
 
 1. Accedere a Workbench come utente valido.
 1. Selezionare **File** > **Ottieni applicazioni**.
@@ -140,7 +143,7 @@ Inoltre, processi di invio equivalenti.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Quali profili di azione saranno disponibili?**
 
-Per I Moduli XDP:
+Per Forms XDP:
 
 * Valore predefinito (rendering/invio tramite i nuovi processi di rendering/invio predefiniti)
 
