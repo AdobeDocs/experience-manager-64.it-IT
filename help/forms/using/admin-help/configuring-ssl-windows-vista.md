@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Per configurare SSL su Windows Vista™, è necessario un certificato SSL con ch
 
 1. Al prompt dei comandi, andate a *[JAVA HOME]*/bin e digitate il comando seguente per creare il certificato e l&#39;archivio di chiavi:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome *host Nome`, OU=`*gruppo Nome* `, O=`*società Nome *`,L=`*città******Nome* `, S=`*Stato *Codice`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`** Paese&quot;LC Cert&quot;&quot;*_*passwordkeystorename `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nome *host Nome`, OU=`*gruppo Nome* `, O=`*società Nome *`,L=`*città******Nome* `, S=`*Stato *Codice`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*Paese&quot;LC Cert&quot;&quot;*_*passwordnomechiave* `.keystore`
 
    >[!NOTE]
    >
