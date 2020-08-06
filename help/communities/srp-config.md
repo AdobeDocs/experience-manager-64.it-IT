@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 La configurazione dello storage è il mezzo per identificare lo storage scelto per il contenuto della community, noto anche come contenuto generato dall&#39;utente (UGC).
 
-Questa impostazione informa il codice di AEM Communities in merito all&#39;implementazione del provider di risorse di storage (SRP) da utilizzare per l&#39;accesso a UGC e deve riflettere la topologia stabilita al momento della distribuzione di AEM.
+Questa impostazione informa il codice AEM Communities  su quale implementazione del provider di risorse di storage (SRP) deve essere utilizzata per accedere a UGC e deve riflettere la topologia stabilita al momento della distribuzione del AEM.
 
 Per una discussione sulle opzioni di storage e sulle topologie di distribuzione, visita
 
@@ -40,14 +43,14 @@ Per selezionare un&#39;opzione di archiviazione diversa dal JCR predefinito:
 * Configurare in modo appropriato
 
    * Vedere i dettagli per la [selezione di MSRP](msrp.md#select-msrp)
-   * Vedere i dettagli per [selezionare DSRP](dsrp.md#select-dsrp)
-   * Vedere i dettagli per [selezionare ASRP](asrp.md#select-asrp)
+   * Vedere i dettagli per la [selezione di DSRP](dsrp.md#select-dsrp)
+   * Vedere i dettagli per la [selezione di ASRP](asrp.md#select-asrp)
 
 * Seleziona **[!UICONTROL Invia]**
 
-### Lo storage JCR {#about-jcr-storage}
+### Informazioni sullo storage JCR {#about-jcr-storage}
 
-Se non viene effettuata alcuna selezione, il valore predefinito è l’archivio AEM, JCR.
+Se non viene effettuata alcuna selezione, il valore predefinito è il repository AEM, JCR.
 
 JCR *non* è uno store comune condiviso dagli ambienti di creazione e pubblicazione. Il contenuto della community sarà visibile solo dall’ambiente di creazione e pubblicazione in cui è stato creato.
 
