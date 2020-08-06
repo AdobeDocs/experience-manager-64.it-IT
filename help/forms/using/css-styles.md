@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ La rappresentazione HTML5 di un modello di modulo basato su XFA è costituita da
 >
 >Nelle classi CSS, non modificate il valore di larghezza, altezza, spessore del bordo, in alto, a sinistra, a destra, in basso, spaziatura, margini e altri attributi di posizione e dimensione. Qualsiasi modifica negli attributi posizione e dimensione comporta modifiche al layout del modulo.
 
-## Classi CSS per gli elementi {#css-classes-nbsp-for-elements-nbsp}
+## Classi CSS per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
 
 Ogni elemento contiene classi CSS ben definite. È possibile modificare queste classi per modificare l&#39;aspetto di un elemento. Ogni elemento, ad eccezione del campo e degli elementi di disegno, ha due classi CSS - Classe Type e Classe Name.
 
@@ -35,7 +38,7 @@ Ogni elemento contiene classi CSS ben definite. È possibile modificare queste c
 >
 >Alcuni elementi XFA non hanno un nome. Per modificare gli stili di tali componenti, modificate tutti i componenti di quel particolare tipo.
 
-Per le pagine senza nome in AEM Forms Designer, le pagine di un modulo HTML5 sono denominate in ordine crescente rispetto al numero corrispondente. Ad esempio, per un modulo HTML5 con due pagine le pagine sono denominate Pagina1, Pagina2.
+Per le pagine senza nome in  AEM Forms Designer, le pagine in un modulo HTML5 vengono denominate in ordine crescente rispetto al numero corrispondente. Ad esempio, per un modulo HTML5 con due pagine le pagine sono denominate Pagina1, Pagina2.
 
 ## Elemento field {#field-element}
 
@@ -104,7 +107,7 @@ Oltre alla classe type e name, il componente field contiene anche una classe CSS
   </tr> 
   <tr> 
    <td>Campo</td> 
-   <td>field</td> 
+   <td>o in un altro campo</td> 
    <td>Nome definito dall’utente</td> 
   </tr> 
   <tr> 
@@ -122,7 +125,7 @@ Oltre alla classe type e name, il componente field contiene anche una classe CSS
 
 ## Classi CSS per campi diversi {#css-classes-for-different-fields}
 
-AEM Forms Designer supporta diversi tipi di campi in un modulo come NumericField, DecimalField e Date Field. Tutti questi campi in HTML contengono le suddette classi CSS. Contiene inoltre alcune classi aggiuntive a seconda del tipo di campo.
+ AEM Forms Designer supporta diversi tipi di campi in un modulo come NumericField, DecimalField e Date Field. Tutti questi campi in HTML contengono le suddette classi CSS. Contiene inoltre alcune classi aggiuntive a seconda del tipo di campo.
 
 A ogni campo è associato un widget che rappresenta l’elemento dell’interfaccia utente. Le classi di ciascun campo e i widget associati a ciascun campo sono elencati di seguito.
 
@@ -224,7 +227,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
 
 ## Classi CSS per diversi elementi di disegno {#css-classes-for-different-draw-elements}
 
-AEM Forms Designer consente di inserire elementi di disegno statici come testo e immagini. Per ciascun elemento draw, è associata a tale elemento una classe CSS separata. L&#39;elenco delle classi CSS per gli elementi di disegno è riportato di seguito. A ogni elemento draw è associata una classe draw.
+È possibile inserire elementi di disegno statici come testo e immagini utilizzando  AEM Forms Designer. Per ciascun elemento draw, è associata a tale elemento una classe CSS separata. L&#39;elenco delle classi CSS per gli elementi di disegno è riportato di seguito. A ogni elemento draw è associata una classe draw.
 
 | **Tipo di disegno** | **Classe CSS** |
 |---|---|
