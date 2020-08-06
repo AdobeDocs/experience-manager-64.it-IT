@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +53,7 @@ Se l’istanza in uso include già una o più pagine, oppure hai appena creato u
 * [Spostamento di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#moving-a-component)
 * [Eliminazione di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#deleting-a-component)
 * [Operazioni di Taglia, Copia, Incolla su un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
-* [Annullamento e ripristino delle modifiche apportate alle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
+* [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Uso della modalità di anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per visualizzare l’aspetto della pagina quando verrà pubblicata)
 * [Blocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
