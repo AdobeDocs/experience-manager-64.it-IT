@@ -114,6 +114,7 @@ Per aggiungere un’attività:
    1. Tocca o fai clic su **Seleziona pubblico **e seleziona il segmento a cui si riferisce l&#39;esperienza.
    1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
    1. Tocca o fai clic su **Avanti**.
+
    Se utilizzi la funzionalità di test A/B di Adobe Target:
 
    1. Tocca o fai clic sulla matita nella casella dei tipi di pubblico per selezionare un pubblico.
@@ -182,6 +183,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
    * Disattiva l&#39;attività in corso
    * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    Un&#39;esperienza vincente è l&#39;esperienza che genera un incremento maggiore nei rapporti, che si basa sul tasso di conversione.
