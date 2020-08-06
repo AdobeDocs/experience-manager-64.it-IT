@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 1%
 
 ---
 
@@ -125,7 +128,7 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr> 
    <td> hideSaveButton/hsavep</td> 
    <td> Booleano</td> 
-   <td> se true, nasconde il pulsante Salva</td> 
+   <td> quando è true, nasconde il pulsante Salva</td> 
   </tr> 
   <tr> 
    <td> hideExportButton / hexpb</td> 
@@ -148,7 +151,7 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
    <td> quando è true, nasconde il pulsante di inserimento griglia</td> 
   </tr> 
   <tr> 
-   <td> hideDeleteButton / hdelb</td> 
+   <td> hideDeleteButton/hdelb</td> 
    <td> Booleano</td> 
    <td> quando è true, nasconde il pulsante di eliminazione griglia</td> 
   </tr> 
@@ -162,13 +165,13 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
 
 ### Sviluppo di un componente basato su Editor di massa: il componente Elenco prodotti {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Questa sezione fornisce una panoramica dell’utilizzo dell’editor in blocco e fornisce una descrizione del componente Geometrixx esistente in base all’editor in blocco: il componente Elenco prodotti.
+Questa sezione fornisce una panoramica sull’utilizzo dell’editor in blocco e fornisce una descrizione del componente Geometrixx esistente in base all’editor in blocco: il componente Elenco prodotti.
 
 Il componente Elenco prodotti consente agli utenti di visualizzare e modificare una tabella di dati. Ad esempio, potete utilizzare il componente Elenco prodotti per rappresentare i prodotti in un catalogo. Le informazioni vengono presentate in una tabella HTML standard e qualsiasi modifica viene eseguita nella finestra di dialogo **Modifica** , che contiene un widget BulkEditor. (L’Editor di massa è esattamente lo stesso di quello accessibile all’indirizzo /etc/importers/bulkeditor.html o dal menu Strumenti). Il componente Elenco prodotti è stato configurato per funzionalità specifiche e limitate dell’editor in blocco. È possibile configurare ogni parte dell’editor in blocco (o componenti derivati dall’editor in blocco).
 
 Con l’editor in blocco è possibile aggiungere, modificare, eliminare, filtrare ed esportare le righe, salvare le modifiche e importare un set di righe. Ogni riga è memorizzata come nodo nell’istanza del componente Elenco prodotti. Ogni cella è una proprietà di ciascun nodo. Si tratta di una scelta di progettazione che può essere facilmente modificata, ad esempio, è possibile memorizzare i nodi altrove nella directory archivio. Il ruolo del servlet di query consiste nel restituire l&#39;elenco dei nodi da visualizzare; il percorso di ricerca è definito come istanza Elenco prodotti.
 
-Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio all’indirizzo /apps/geometrixx/components/productlist ed è composto da diverse parti come tutti i componenti AEM:
+Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio in /apps/geometrixx/components/product list ed è composto da diverse parti come tutti i componenti AEM:
 
 * Rendering HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). JSP legge i nodi secondari del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
 * Finestra di dialogo di modifica, che consente di definire la configurazione dell’editor di massa. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Per informazioni su tutte le proprietà di configurazione, consultate Proprietà [di configurazione dell&#39;editor](#bulk-editor-configuration-properties) in blocco.
@@ -372,7 +375,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr> 
   <tr> 
    <td>importURL</td> 
-   <td>Percorso del servlet di importazione</td> 
+   <td>Percorso per l'importazione del servlet</td> 
   </tr> 
   <tr> 
    <td>insertResourceType</td> 
@@ -392,7 +395,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr> 
   <tr> 
    <td>importButton</td> 
-   <td>Configurazione widget pulsante Importa</td> 
+   <td>Configurazione widget pulsante di importazione</td> 
   </tr> 
   <tr> 
    <td>searchPanel</td> 
@@ -436,7 +439,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
     <ul> 
      <li>cellStyle: stile html </li> 
      <li>cellCls: css, classe </li> 
-     <li>readOnly: true per non poter modificare il valore </li> 
+     <li>readOnly: true per non essere in grado di modificare il valore </li> 
      <li>casella di controllo: true per definire tutte le celle della colonna come caselle di controllo (valori true/false) </li> 
      <li>forcePosition: valore intero per specificare la posizione della colonna nella griglia (tra 0 e numero di colonne-1)<p><br /> </p> </li> 
     </ul> </td> 
@@ -444,7 +447,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
  </tbody> 
 </table>
 
-### Configurazione metadati colonne {#columns-metadata-configuration}
+### Configurazione metadati delle colonne {#columns-metadata-configuration}
 
 Puoi configurare per ogni colonna:
 
@@ -512,7 +515,7 @@ L’esempio seguente è disponibile nel componente elenco prodotti (/apps/geomet
 
 Se la proprietà di configurazione della casella di controllo è impostata su true, tutte le celle della colonna vengono rappresentate come caselle di controllo. Una casella di controllo invia **true** al servlet Server Save, **false** in caso contrario. Nel menu dell’intestazione potete anche **selezionare tutto** o **selezionarne uno**. Queste opzioni sono attivate se l&#39;intestazione selezionata è l&#39;intestazione di una colonna di casella di controllo.
 
-Nel primo esempio la colonna di selezione contiene solo le caselle di controllo come caselle di controllo=&quot;true&quot;.
+Nell’esempio precedente la colonna di selezione contiene solo le caselle di controllo come caselle di controllo=&quot;true&quot;.
 
 **Posizione forzata**
 
@@ -550,7 +553,7 @@ e il flusso JSON restituito è il seguente:
 
 Ogni hit corrisponde a un nodo e alle relative proprietà ed è visualizzato come una riga nella griglia.
 
-È possibile estendere il servlet Query per restituire un modello di ereditarietà complesso o nodi di ritorno memorizzati in una posizione logica specifica. Il servlet Query può essere utilizzato per eseguire qualsiasi tipo di calcolo complesso. La griglia può quindi visualizzare righe che sono un aggregato di più nodi nella directory archivio. La modifica e il salvataggio di queste righe devono in tal caso essere gestiti dal Servlet Save.
+È possibile estendere il servlet Query per restituire un modello di ereditarietà complesso o nodi di ritorno memorizzati in una posizione logica specifica. Il servlet Query può essere utilizzato per eseguire qualsiasi tipo di calcolo complesso. La griglia può quindi visualizzare righe che sono un aggregato di più nodi nella directory archivio. In tal caso, la modifica e il salvataggio di queste righe devono essere gestiti dal Servlet Save.
 
 ### Salva servlet {#save-servlet}
 
@@ -572,4 +575,4 @@ Il servlet deve sapere dove è memorizzata la proprietà catalogCode.
 
 Un’implementazione predefinita del servlet Save è disponibile all’indirizzo /libs/wcm/bulkeditor/save/POST.jsp e viene utilizzata nel componente Elenco prodotti. Prende tutti i parametri dalla richiesta (con un formato &lt;percorso jcr>/&lt;nome proprietà>) e scrive le proprietà sui nodi utilizzando l&#39;API JCR. Crea anche un nodo se non esiste (righe inserite nella griglia).
 
-Il codice predefinito non deve essere utilizzato così come viene implementato di nuovo ciò che il server esegue in modo nativo (un POST su &lt;percorso jcr>/&lt;nome proprietà>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save che gestirà un modello di ereditarietà di proprietà.
+Il codice predefinito non deve essere utilizzato così come viene implementato di nuovo ciò che il server esegue in modo nativo (un POST in &lt;percorso jcr>/&lt;nome proprietà>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save che gestirà un modello di ereditarietà di proprietà.
