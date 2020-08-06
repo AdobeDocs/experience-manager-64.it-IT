@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Utilizzando Trust Store Management è possibile importare, modificare ed elimina
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio certificati > Elenchi di revoca certificati.
 1. Fare clic sul nome alias del CRL da esportare, quindi fare clic su Esporta.
 1. Seguire le istruzioni per esportare il CRL. I CRL vengono esportati in codifica Base64.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Eliminare un CRL {#delete-a-crl}
 
