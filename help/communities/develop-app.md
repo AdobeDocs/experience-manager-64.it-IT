@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +30,7 @@ Lo script predefinito, creato al momento dell&#39;aggiunta del componente che es
 
 Il primo passaggio consiste nell&#39;aggiungere al `/apps/an-scf-sandbox/components/playpage` nodo una proprietà super type di risorsa in modo che erediti gli script e le proprietà del super type.
 
-Utilizzo di CRXDE Lite:
+Utilizzo del CRXDE Lite:
 
 <!--Resolve steps below-->
     * Nome: `sling:resourceSuperType`
@@ -41,7 +44,7 @@ Utilizzo di CRXDE Lite:
 
 ### Script head e body {#head-and-body-scripts}
 
-1. Nel riquadro **CRXDE Lite** Explorer, individuate `/apps/an-scf-sandbox/components/playpage` e fate doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
+1. Nel riquadro di **CRXDE Lite** Explorer, individuate `/apps/an-scf-sandbox/components/playpage` e fate doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -92,6 +95,7 @@ Utilizzo di CRXDE Lite:
 
       * Nome: **body.jsp**
    1. Fate clic su **[!UICONTROL Salva tutto]**
+
    Aprite `/apps/an-scf-sandbox/components/playpage/body.jsp` e incollate il testo seguente:
 
    ```xml
@@ -134,7 +138,7 @@ Per abilitare i componenti di Communities per la creazione, attenetevi alle istr
 
 * [Accesso ai componenti Community](basics.md#accessing-communities-components)
 
-Ai fini di questa sandbox, iniziate con questi componenti **Community** (attivabili selezionando la casella):
+Ai fini di questa sandbox, iniziate con i seguenti componenti **Community** (attivabili selezionando la casella):
 
 * Commenti
 * Forum
@@ -143,7 +147,7 @@ Ai fini di questa sandbox, iniziate con questi componenti **Community** (attivab
 * Riepilogo recensioni (visualizzazione)
 * Votazione
 
-Inoltre, scegliete i componenti **[!UICONTROL Generali]** , come
+Inoltre, scegliete i componenti **[!UICONTROL Generali]** , ad esempio
 
 * Immagine
 * Tabella
@@ -174,4 +178,4 @@ Modificate l’URL del browser nella pagina principale: [http://localhost:4502/e
 
 Una volta pubblicato il sito, quando si passa alla pagina principale di un’istanza di pubblicazione si passa alla pagina inglese.
 
-L&#39;ultimo passaggio prima di giocare con i componenti SCF delle community è aggiungere una cartella libreria client (clientlibs) ... . **[⇒](add-clientlibs.md)**
+L&#39;ultimo passaggio prima di giocare con i componenti SCF delle community è aggiungere una cartella libreria client (clientlibs) .... **[⇒](add-clientlibs.md)**
