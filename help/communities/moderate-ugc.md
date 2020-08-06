@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +36,7 @@ La moderazione di UGC è utile per riconoscere contributi positivi e limitare qu
 
 * [Console di moderazione di massa](moderation.md)
 
-   La console Moderazione è accessibile sia dagli amministratori che dai moderatori [della](users.md) community, sia dagli amministratori nell’ambiente di authoring. Questo è possibile quando il contenuto della community viene memorizzato in uno store [](working-with-srp.md)comune.
+   La console Moderazione è accessibile sia dagli amministratori che dai moderatori [della](users.md) community nell’ambiente pubblico, sia dagli amministratori nell’ambiente di authoring. Questo è possibile quando il contenuto della community viene memorizzato in uno store [](working-with-srp.md)comune.
 
 * [Moderazione contestuale](in-context.md)
 
@@ -165,9 +168,9 @@ L’azione Chiudi/Riapri può essere eseguita da amministratori o moderatori del
 
 Contrassegno è un mezzo per qualsiasi membro che ha effettuato l’accesso, ad eccezione del creatore del contenuto, per indicare che si è verificato un problema con il contenuto di un post. Una volta contrassegnata, viene visualizzata un&#39;icona di annullamento del contrassegno che consente allo stesso membro di annullare l&#39;flag del contenuto.
 
-La moderazione contestuale può essere configurata per consentire ai membri di selezionare un motivo durante la segnalazione di un post. L&#39;elenco dei motivi di flag selezionabili è configurabile, specificando se è possibile immettere o meno un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma il motivo non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agirvi.
+La moderazione contestuale può essere configurata per consentire ai membri di selezionare un motivo durante la segnalazione di un post. L&#39;elenco dei motivi di flag selezionabili è configurabile, specificando se è possibile immettere o meno un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma il motivo non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agire su di esso.
 
-Il sistema tiene traccia di tutti i flag, che sono stati contrassegnati e del motivo del flag e invia un evento quando la soglia è stata raggiunta. Se l&#39;UGC è consentito da un moderatore della comunità, queste bandiere sono archiviate. Dopo l&#39;autorizzazione e l&#39;archiviazione, in caso di flaggings successivi, essi sarebbero archiviati come se non ci fossero stati flaggings precedenti.
+Il sistema tiene traccia di tutti i flag, che sono stati contrassegnati, e del motivo del flag e invia un evento quando la soglia è stata raggiunta. Se l&#39;UGC è consentito da un moderatore della comunità, queste bandiere sono archiviate. Dopo l&#39;autorizzazione e l&#39;archiviazione, in caso di flaggings successivi, essi sarebbero archiviati come se non ci fossero stati flaggings precedenti.
 
 ### Consenti {#allow}
 
@@ -203,7 +206,7 @@ Per attivare il motore di rilevamento dello spam, effettuate le seguenti operazi
 
 1. Aprite la console [](http://localhost:4502/system/console/configMgr)Web accedendo a `/system/console/configMgr`.
 
-1. Individua la configurazione di Moderazione **[!UICONTROL automatica di]** AEM Communities e modificala.
+1. Individuare **[!UICONTROL configurazione di moderazione]** automatica AEM Communities e modificarla.
 1. Aggiungete la `SpamProcess` voce.
 
 ![spam](assets/spamprocess.png)
@@ -225,7 +228,7 @@ Le regole definite nel componente /libs sono:
 * Articolo 1: imposta il valore su 1 se non ci sono parole positive e almeno una parola negativa
 * Articolo 2: imposta il valore su 10 se non ci sono parole negative e almeno una parola positiva
 * Articolo 3: imposta il valore su 3 se sono presenti più parole negative che parole positive
-* Articolo 4: imposta il valore su 8 se sono presenti più parole positive che negative
+* Articolo 4: imposta il valore su 8 se sono presenti più parole positive che parole negative
 
 Per sovrascrivere o aggiungere regole, create un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modificate la configurazione dei sentimenti per identificare la posizione delle regole.
 
@@ -235,7 +238,7 @@ Dalla console [di moderazione in](moderation.md)massa, è possibile filtrare e v
 
 #### Watchwords {#watchwords}
 
-Le comunità AEM forniscono un *analizzatore di parole d&#39;ordine *come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
+AEM comunità fornisce un *analizzatore di parola d&#39;ordine *come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
 
 #### Configurare sentimento e parole di controllo {#configure-sentiment-and-watchwords}
 
@@ -259,9 +262,11 @@ Per configurare sentimento e parole di controllo:
 
 * **Parole di controllo** negative Un elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. Il valore predefinito è un elenco vuoto.
 
-* **Percorso esplicito del nodo** Watchwords La posizione dell&#39;archivio di un nodo contenente le proprietà `positive` e `negative` predefinite che specificano le parole di controllo predefinite. Default is `/libs/settings/community/watchwords/default`.
+* **Percorso esplicito del nodo** Watchwords La posizione dell&#39;archivio di un nodo contenente il nodo predefinito 
+`positive` e `negative` le proprietà che specificano le parole di controllo predefinite. Default is `/libs/settings/community/watchwords/default`.
 
-* **Regole** sentimento La posizione dell&#39;archivio delle regole per il calcolo del sentimento in base alle parole di controllo positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (ma non è più presente alcun flusso di lavoro).
+* **Regole** sentimento La posizione dell&#39;archivio delle regole per il calcolo del sentimento in base alle parole di controllo positive e negative. Il valore predefinito è 
+`/libs/cq/workflow/components/workflow/social/sentiments/rules` (tuttavia, non è più presente alcun flusso di lavoro).
 
 Esempio di una voce personalizzata per le parole d&#39;ordine predefinite, se `Explicit Path to Watchwords Node` è impostata su `/libs/settings/community/watchwords/default`.
 
