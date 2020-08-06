@@ -9,17 +9,20 @@ topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
 # Utilizzo di espressioni SOM nei moduli adattivi {#using-som-expressions-in-adaptive-forms}
 
-I moduli adattivi sono modellati come Pagina AEM, rappresentata come struttura di contenuto JCR nell’archivio AEM. L&#39;elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
+I moduli adattivi sono modellati come AEM pagina, rappresentata come struttura di contenuto JCR AEM repository. L&#39;elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
 
 È possibile utilizzare un modello di oggetto script (SOM) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare DOM (Document Object Model). Un DOM organizza gli oggetti di memoria e le proprietà in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegno di elementi e pannelli.
 
-Nell&#39;immagine seguente è illustrata una struttura di nodi cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, potete aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo del pulsante di scelta nel modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
+Nell&#39;immagine seguente è illustrata una struttura di nodi a cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, potete aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo del pulsante di scelta in un modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
 ![Struttura DOM](assets/hierarchy-1.png)
 
@@ -27,7 +30,7 @@ Un&#39;espressione SOM per qualsiasi elemento in un modulo adattivo ha il prefis
 
 ![Struttura DOM con due pulsanti di scelta](assets/hierarchy_radio_button.png)
 
-L&#39;espressione SOM cambia quando si modifica la posizione dei pulsanti di scelta nel modulo adattivo. In modalità di creazione, è possibile visualizzare l&#39;espressione SOM di un campo o di un elemento all&#39;interno di AEM Forms utilizzando l&#39;opzione Visualizza espressione SOM. L’opzione viene visualizzata nel pannello e quando fate clic con il pulsante destro del mouse sul campo o sull’elemento.
+L&#39;espressione SOM cambia quando si modifica la posizione dei pulsanti di scelta nel modulo adattivo. In modalità di authoring, è possibile visualizzare l&#39;espressione SOM di un campo o di un elemento in  AEM Forms utilizzando l&#39;opzione Visualizza espressione SOM. L’opzione viene visualizzata nel pannello e quando fate clic con il pulsante destro del mouse sul campo o sull’elemento.
 
 ![Estrazione di espressioni SOM in un modulo adattivo](assets/som-expressions.png)
 
