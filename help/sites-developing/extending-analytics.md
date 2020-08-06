@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ AEM Analytics consente di monitorare l’interazione degli utenti sul sito Web. 
 
 >[!NOTE]
 >
->Queste informazioni sono in pratica generiche, ma utilizzano [Adobe Analytics](/help/sites-administering/adobeanalytics.md) per esempi specifici.
+>Queste informazioni sono fondamentalmente generiche, ma utilizzano [Adobe Analytics](/help/sites-administering/adobeanalytics.md) per esempi specifici.
 >
 >Per informazioni generali sullo sviluppo di componenti e finestre di dialogo, vedere [Sviluppo di componenti](/help/sites-developing/components.md).
 
@@ -35,7 +38,7 @@ Gli eventi personalizzati tengono traccia di qualsiasi cosa dipenda dalla dispon
 
 ### Tracciamento Di Eventi Personalizzati Al Caricamento Della Pagina {#tracking-custom-events-on-page-load}
 
-Questo può essere fatto utilizzando lo pseudo-attributo `data-tracking` (l&#39;attributo record precedente è ancora supportato per la compatibilità con le versioni precedenti). Potete aggiungerlo a qualsiasi tag HTML.
+Questo può essere fatto utilizzando lo pseudo-attributo `data-tracking` (l&#39;attributo record precedente è ancora supportato per la compatibilità con le versioni precedenti). Potete aggiungere questo tag a qualsiasi tag HTML.
 
 The syntax for `data-tracking` is
 
@@ -43,7 +46,7 @@ The syntax for `data-tracking` is
 
 Potete passare un numero qualsiasi di coppie chiave-valore come secondo parametro, che è chiamato payload.
 
-Esempio:
+Un esempio potrebbe essere:
 
 ```xml
 <span data-tracking="{event:'blogEntryView', 
@@ -58,11 +61,11 @@ Esempio:
 </span>
 ```
 
-Al caricamento della pagina, tutti `data-tracking` gli attributi verranno raccolti e aggiunti all&#39;archivio eventi di ContextHub, dove possono essere mappati agli eventi di Adobe Analytics. Gli eventi non mappati non verranno tracciati da Adobe Analytics. Consultate [Connessione ad Adobe Analytics](/help/sites-administering/adobeanalytics.md) per ulteriori dettagli sulla mappatura degli eventi.
+Al caricamento della pagina, tutti `data-tracking` gli attributi verranno raccolti e aggiunti all&#39;archivio eventi di ContextHub, dove possono essere mappati  eventi Adobe Analytics. Gli eventi non mappati non verranno tracciati da  Adobe Analytics. Per ulteriori informazioni sulla mappatura degli eventi, consultate [Connessione a  Adobe Analytics](/help/sites-administering/adobeanalytics.md) .
 
 ### Tracciamento degli eventi personalizzati dopo il caricamento della pagina {#tracking-custom-events-after-page-load}
 
-Per tenere traccia degli eventi che si verificano dopo che una pagina è stata caricata (ad esempio, le interazioni degli utenti), utilizzate la funzione `CQ_Analytics.record` JavaScript:
+Per tenere traccia degli eventi che si verificano dopo il caricamento di una pagina (ad esempio, le interazioni degli utenti), utilizzate la funzione `CQ_Analytics.record` JavaScript:
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
@@ -98,7 +101,7 @@ Tutti i negozi pronti:
 
 `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`
 
-Store specifico:
+Specifico per lo store:
 
 `ContextHub.getStore(store).eventing.on(ContextHub.Constants.EVENT_STORE_READY, handler, selector, triggerForPastEvents)`
 
