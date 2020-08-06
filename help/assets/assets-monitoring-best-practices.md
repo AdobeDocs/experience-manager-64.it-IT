@@ -1,6 +1,6 @@
 ---
 title: Tecniche consigliate per il monitoraggio delle risorse
-description: Procedure ottimali per il monitoraggio dell’ambiente e delle prestazioni dell’istanza AEM dopo l’implementazione.
+description: Procedure ottimali per il monitoraggio dell'ambiente e delle prestazioni dell'istanza AEM dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practice di monitoraggio delle risorse {#assets-monitoring-best-practices}
 
-Dal punto di vista di Risorse Adobe Experience Manager (AEM), il monitoraggio deve includere l’osservazione e la generazione di rapporti sui processi e sulle tecnologie seguenti:
+Dal punto di vista di Adobe Experience Manager (AEM) Assets, il monitoraggio deve includere l&#39;osservazione e la segnalazione dei processi e delle tecnologie seguenti:
 
 * CPU del sistema
 * Utilizzo della memoria di sistema
@@ -26,7 +26,7 @@ Dal punto di vista di Risorse Adobe Experience Manager (AEM), il monitoraggio de
 
 * Controlli dello stato della console OSGi
 
-In genere, Risorse AEM può essere monitorato in due modi, dal monitoraggio live e dal monitoraggio a lungo termine.
+In genere,  AEM Assets può essere monitorato in due modi, dal monitoraggio live e dal monitoraggio a lungo termine.
 
 ## Monitoraggio live {#live-monitoring}
 
@@ -41,24 +41,24 @@ In genere, Risorse AEM può essere monitorato in due modi, dal monitoraggio live
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/): Iftop visualizza informazioni dettagliate sull&#39;utilizzo di Ethernet/rete. Iftop visualizza le statistiche sui canali di comunicazione delle entità che utilizzano Ethernet e la quantità di larghezza di banda utilizzata. Iftop può essere installato nella maggior parte dei sistemi Linux utilizzando `yum install iftop` o `apt-get install iftop`.
 
 * Registratore di volo Java (JFR): Uno strumento commerciale di Oracle che può essere utilizzato liberamente in ambienti non di produzione. Per ulteriori dettagli, vedere [Come utilizzare il registratore di volo Java per diagnosticare problemi](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)di runtime CQ.
-* File di registro di errore AEM: Potete esaminare il file AEM error.log per informazioni sugli errori registrati nel sistema. Utilizzate il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
+* AEM file error.log: È possibile esaminare il file AEM error.log per informazioni sugli errori registrati nel sistema. Utilizzate il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
 * [Console](../sites-administering/workflows.md)Flusso di lavoro: Utilizza la console del flusso di lavoro per monitorare i flussi di lavoro che si trovano in ritardo o che restano bloccati.
 
-In genere, questi strumenti vengono utilizzati insieme per ottenere un’idea completa delle prestazioni dell’istanza AEM.
+In genere, questi strumenti vengono utilizzati insieme per ottenere un&#39;idea completa delle prestazioni dell&#39;istanza AEM.
 
 >[!NOTE]
 >
->Questi strumenti sono strumenti standard e non sono supportati direttamente da Adobe. Non richiedono licenze aggiuntive.
+>Questi strumenti sono strumenti standard e non sono supportati direttamente  Adobe. Non richiedono licenze aggiuntive.
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Monitoraggio a lungo termine {#long-term-monitoring}
 
-Il monitoraggio a lungo termine di un’istanza di AEM implica il monitoraggio per un periodo più lungo delle stesse porzioni monitorate dal vivo. Include inoltre la definizione di avvisi specifici per l’ambiente.
+Il monitoraggio a lungo termine di un&#39;istanza AEM comporta il monitoraggio per un periodo più lungo delle stesse porzioni monitorate dal vivo. Include inoltre la definizione di avvisi specifici per l’ambiente.
 
 ### Aggregazione dei registri e generazione dei rapporti {#log-aggregation-and-reporting}
 
-Sono disponibili diversi strumenti per aggregare i registri, ad esempio Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Per valutare il tempo di attività dell’istanza di AEM, è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e di gestione consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
+Sono disponibili diversi strumenti per aggregare i registri, ad esempio Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Per valutare il tempo di attività dell&#39;istanza di AEM, è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e di gestione consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
 
 ### Monitoraggio ambientale {#environment-monitoring}
 
@@ -71,7 +71,7 @@ Il monitoraggio ambientale include il monitoraggio dei seguenti elementi:
 * JMX MBeans
 * Siti Web esterni
 
-Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, un backup del flusso di lavoro, un errore del controllo dello stato o un accesso non autenticato al tuo sito Web. Adobe non consiglia di utilizzare strumenti particolari su altri. Trovate lo strumento che funziona per voi e sfruttatelo per monitorare gli elementi discussi.
+Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, un backup del flusso di lavoro, un errore del controllo dello stato o un accesso non autenticato al tuo sito Web.  Adobe non consiglia strumenti particolari rispetto ad altri. Trovate lo strumento che funziona per voi e sfruttatelo per monitorare gli elementi discussi.
 
 #### Monitoraggio delle applicazioni interne {#internal-application-monitoring}
 
@@ -105,11 +105,11 @@ Thread
 * Soglia allarme: Quando il numero di thread è maggiore del 150% della linea di base.
 * Definizione allarme: È presente un processo di runtime attivo o un&#39;operazione inefficiente che consuma una grande quantità di risorse. Analizzare un dump di thread per arrivare a una definizione.
 
-**Monitoraggio AEM**
+**AEM**
 
-AEM presenta inoltre una serie di statistiche e operazioni tramite JMX. Questi possono aiutare a valutare lo stato di salute del sistema e a identificare potenziali problemi prima che abbiano un impatto sugli utenti. Per ulteriori informazioni, consultate [la documentazione](/help/sites-administering/jmx-console.md) sugli MBeans AEM JMX.
+AEM inoltre espone una serie di statistiche e operazioni tramite JMX. Questi possono aiutare a valutare lo stato di salute del sistema e a identificare potenziali problemi prima che abbiano un impatto sugli utenti. Per ulteriori informazioni, consultate [la documentazione](/help/sites-administering/jmx-console.md) su AEM MBeans JMX.
 
-Di seguito sono riportati alcuni parametri di base che potete monitorare per AEM:
+Di seguito sono riportati alcuni parametri di base che è possibile monitorare per AEM:
 
 Agenti di replica
 
@@ -186,13 +186,13 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
 
 ## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
-Nel processo di monitoraggio, in caso di problemi, sono disponibili alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni relativi alle istanze di AEM:
+Nel processo di monitoraggio, in caso di problemi, sono disponibili alcune operazioni di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni relativi AEM istanze:
 
 * Se si utilizza TarMK, eseguire spesso la compattazione Tar. Per ulteriori dettagli, vedere [Gestione dell&#39;archivio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Controllare `OutOfMemoryError` i registri. Per ulteriori informazioni, consultate [Analizzare i problemi](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)di memoria.
 * Controllate i file di registro per eventuali riferimenti a query non indicizzate, traversate ad albero o traverse di indice. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le procedure ottimali per l&#39;ottimizzazione delle prestazioni delle query e dell&#39;indicizzazione, consultate [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizzate la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o elevati consumatori di risorse specifiche.
-* Esaminare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze di AEM, incluso il dispatcher. Spesso si tratta di aree con collo di bottiglia. Per ulteriori informazioni, consulta Considerazioni sulla rete delle [risorse](assets-network-considerations.md).
-* Aggiornate il server AEM. L’istanza di AEM potrebbe avere dimensioni insufficienti. L&#39;Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
+* Esaminare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze AEM, incluso il dispatcher. Spesso si tratta di aree con collo di bottiglia. Per ulteriori informazioni, consulta Considerazioni sulla rete delle [risorse](assets-network-considerations.md).
+* Aggiornate il server AEM. È possibile che l&#39;istanza di AEM abbia dimensioni insufficienti.  Assistenza clienti di Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
 * Esaminare i `access.log` file e `error.log` le voci relative al momento in cui qualcosa è andato storto. Cercare pattern che possono indicare anomalie di codice potenzialmente personalizzate. Aggiungeteli all’elenco degli eventi monitorati.
