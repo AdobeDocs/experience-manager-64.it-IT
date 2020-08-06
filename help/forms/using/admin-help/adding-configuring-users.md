@@ -40,7 +40,7 @@ Quando create degli utenti, potete aggiungerli ai gruppi e assegnare loro i ruol
 
    >[!NOTE]
    >
-   >Se si verificano problemi di accesso con l’utente, consultate [AEM Forms on JEE user (I moduli AEM su JEE non possono accedere ad AEM Forms su OSGi)](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Se si verifica un problema di accesso con l’utente, consultate [AEM Forms su JEE user (utente JEE) non riesce a effettuare l’accesso  AEM Forms su OSGi lato](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Impostazioni utente {#user-settings}
 
@@ -72,7 +72,7 @@ Evitare di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esem
 
 **Impostazioni internazionali:** Impostazioni internazionali ISO dell&#39;utente
 
-**Chiave calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione. I calendari aziendali definiscono i giorni lavorativi e non lavorativi. I moduli AEM possono utilizzare i calendari aziendali per calcolare le date e le ore future per eventi quali promemoria, scadenze e inoltro per moderazione. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. (Vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Chiave calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione. I calendari aziendali definiscono i giorni lavorativi e non lavorativi. AEM moduli possono utilizzare calendari aziendali per calcolare date e ore future per eventi quali promemoria, scadenze ed escalation. Il modo in cui assegnate le chiavi del calendario aziendale agli utenti dipende dal dominio Enterprise, locale o ibrido utilizzato. (Vedere [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Se utilizzate un dominio locale o ibrido, le informazioni sugli utenti vengono memorizzate solo nel database Gestione utente. Per questi utenti, impostate la chiave del calendario aziendale su una stringa. Quindi mappare la chiave del calendario aziendale (la stringa) su un calendario aziendale nel flusso di lavoro dei moduli.
 
@@ -88,7 +88,7 @@ Nei domini enterprise, utilizzate un attributo non DN come ID utente perché il 
 
 Accertatevi che l&#39;ID utente sia univoco. Non usate uno assegnato a un utente eliminato.
 
-I moduli AEM non possono distinguere tra account utente con ID utente e password identici ma appartenenti a domini diversi. Per evitare questo problema, non create account con lo stesso ID utente su più domini.
+AEM moduli non possono distinguere tra account utente con ID utente e password identici ma appartenenti a domini diversi. Per evitare questo problema, non create account con lo stesso ID utente su più domini.
 
 Quando utilizzate SQL Server come database, non potete creare un ID utente che superi i 255 caratteri.
 
@@ -102,7 +102,7 @@ Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Utenti e gruppi.
 1. Specificate le informazioni per limitare la ricerca e, nell’elenco In, selezionate Utenti e fate clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Potete ordinare l’elenco facendo clic su una delle intestazioni di colonna.
-1. Fate clic sul nome dell&#39;utente per visualizzare i dettagli. Nella pagina Modifica utente sono visualizzati i dettagli seguenti sull’utente:
+1. Fate clic sul nome dell&#39;utente per visualizzare i dettagli. Nella pagina Modifica utente sono riportati di seguito alcuni dettagli relativi all’utente:
 
    * Informazioni generali di identificazione, quali nome, indirizzo e-mail, dominio e organizzazione
    * Ruoli assegnati all’utente
@@ -159,20 +159,20 @@ Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39
 
 >[!NOTE]
 >
->AEM Forms su JEE consente inoltre agli utenti del componente aggiuntivo moduli AEM in esecuzione su un OSGi di essere riconosciuti come utenti AEM. Questo è richiesto per gli scenari in cui è richiesto il single sign-on tra i moduli AEM Forms su JEE e il componente aggiuntivo AEM in esecuzione su un OSGi (ad esempio, un’area di lavoro HTML). L&#39;operazione di eliminazione di cui sopra rimuove un utente solo da AEM Forms su JEE. L&#39;utente non viene eliminato dal componente aggiuntivo AEM Forms in esecuzione nell&#39;ambiente OSGi. Tuttavia, qualsiasi tentativo di accesso effettuato dopo l’eliminazione dell’utente (un tentativo di accesso al server JEE del componente aggiuntivo AEM Forms o al componente aggiuntivo AEM Forms nell’ambiente OSGi) è negato.
+> AEM Forms su JEE consente inoltre agli utenti del componente aggiuntivo AEM dei moduli in esecuzione su un OSGi di essere riconosciuti come utenti AEM. Questo è richiesto per gli scenari in cui è richiesto il single sign-on tra  AEM Forms su JEE e il componente aggiuntivo AEM in esecuzione su un OSGi (ad esempio, area di lavoro HTML). L&#39;operazione di eliminazione di cui sopra rimuove un utente solo da  AEM Forms su JEE. L&#39;utente non viene eliminato  componente aggiuntivo AEM Forms in esecuzione nell&#39;ambiente OSGi. Tuttavia, ogni tentativo di accesso effettuato dopo l’eliminazione dell’utente (un tentativo di accesso a  server JEE del componente aggiuntivo AEM Forms o  componente aggiuntivo AEM Forms nell’ambiente OSGi) viene negato.
 
 ## Crea gestore errori di login personalizzato {#create-custom-login-error-handler}
 
 Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accedere alle seguenti applicazioni incorporate in CQ, viene reindirizzato alla pagina CQ 404 predefinita contenente la traccia di errore:
 
 * Soluzione per la gestione della corrispondenza
-* AEM Forms Workspace
+* Area di lavoro moduli AEM
 
-   ***nota **: Flex Worksapce è obsoleto per la versione dei moduli AEM.*
+   ***nota **: Flex Workspace è obsoleto per AEM rilascio di moduli.*
 
 * Forms Manager
 * Reporting processi
 
 CQ fornisce un meccanismo per ignorare l&#39;jsp del gestore 404 predefinito.
 
-Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, consultate [Personalizzazione delle pagine mostrate dal gestore](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) errori nella documentazione di Adobe Experience Manager.
+Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine mostrate dal gestore](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) errori nella documentazione di Adobe Experience Manager.
