@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
 
 # Quadro componente sociale {#social-component-framework}
 
-Il framework dei componenti social (SCF) semplifica il processo di configurazione, personalizzazione ed estensione dei componenti Community sia sul lato server che sul lato client.
+Il social component framework (SCF) semplifica il processo di configurazione, personalizzazione ed estensione dei componenti Community sia sul lato server che sul lato client.
 
 I vantaggi del quadro:
 
@@ -32,11 +35,11 @@ Esplora un’istanza di creazione o pubblicazione utilizzando la guida [interatt
 
 ## Panoramica {#overview}
 
-In SCF, un componente è composto da un POJO SocialComponent, un Modello JS Handlebars (per eseguire il rendering del componente) e CSS (per formattare il componente).
+In SCF, un componente è composto da un POJO SocialComponent, un Modello JS Handlebars (per il rendering del componente) e CSS (per lo stile del componente).
 
 Un modello JS Handlebars può estendere i componenti JS model/view per gestire l&#39;interazione dell&#39;utente con il componente sul client.
 
-Se un componente deve supportare la modifica dei dati, l&#39;implementazione dell&#39;API SocialComponent può essere scritta per supportare la modifica/il salvataggio di dati simili a oggetti modello/dati nelle applicazioni Web tradizionali. Inoltre, è possibile aggiungere operazioni (controller) e un servizio operativo per gestire le richieste di operazioni, eseguire business logic e richiamare le API sugli oggetti modello/dati.
+Se un componente deve supportare la modifica dei dati, l&#39;implementazione dell&#39;API SocialComponent può essere scritta per supportare la modifica/il salvataggio di dati simili a oggetti modello/dati nelle applicazioni Web tradizionali. Inoltre, è possibile aggiungere operazioni (controller) e un servizio operativo per gestire le richieste di operazioni, eseguire business logic e richiamare le API negli oggetti modello/dati.
 
 L&#39;API SocialComponent può essere estesa per fornire i dati richiesti da un client per un livello di visualizzazione o un client HTTP.
 
@@ -54,7 +57,7 @@ Per personalizzare o estendere i componenti, potete scrivere solo le sovrapposiz
    * Modificare il modello JS e il CSS
 * Per Look, Feel e UX
    * Modificare il modello JS, CSS e [estendere/ignorare Javascript](client-customize.md#extending-javascript)
-* Per modificare le informazioni disponibili per il modello JS o per l&#39;endpoint GET
+* Per modificare le informazioni disponibili sul modello JS o sull&#39;endpoint del GET
    * Estendi [SocialComponent](server-customize.md#socialcomponent-interface)
 * Per aggiungere l&#39;elaborazione personalizzata durante le operazioni
    * Scrivere un&#39; [estensione OperationExtension](server-customize.md#operationextension-class)
@@ -65,13 +68,13 @@ Per personalizzare o estendere i componenti, potete scrivere solo le sovrapposiz
 
 ## Framework lato server {#server-side-framework}
 
-Il framework fornisce alle API l&#39;accesso alle funzionalità sul server e l&#39;interazione tra client e server.
+Il framework fornisce alle API l&#39;accesso alle funzionalità sul server e il supporto dell&#39;interazione tra client e server.
 
 ### API Java {#java-apis}
 
 Le API Java forniscono classi e interfacce astratte che possono essere facilmente ereditate o sottoclassificate.
 
-Le classi principali sono descritte nella pagina Personalizzazione [lato](server-customize.md) server.
+Le classi principali sono descritte nella pagina Personalizzazione lato [server](server-customize.md) .
 
 Per informazioni sull&#39;utilizzo di UGC, visitare [Panoramica](srp.md) sui provider di risorse di storage.
 
@@ -79,9 +82,9 @@ Per informazioni sull&#39;utilizzo di UGC, visitare [Panoramica](srp.md) sui pro
 
 L&#39;API HTTP supporta la facilità di personalizzazione e la scelta delle piattaforme client per le app PhoneGap, le app native e altre integrazioni e mashup. Inoltre, l&#39;API HTTP consente a un sito community di essere eseguito come servizio senza client, in modo che i componenti framework possano essere integrati in qualsiasi pagina Web creata su qualsiasi tecnologia.
 
-### API HTTP - Richieste GET {#http-api-get-requests}
+### API HTTP - Richieste di GET {#http-api-get-requests}
 
-Per ogni componente Social, il framework fornisce un endpoint API basato su HTTP. L&#39;accesso all&#39;endpoint viene effettuato inviando una richiesta GET alla risorsa con un selettore + estensione &#39;.social.json&#39;. Utilizzando Sling, la richiesta viene trasmessa al `DefaultSocialGetServlet`.
+Per ogni componente Social, il framework fornisce un endpoint API basato su HTTP. L&#39;accesso all&#39;endpoint viene effettuato inviando una richiesta di GET alla risorsa con un selettore + estensione &#39;.social.json&#39;. Utilizzando Sling, la richiesta viene trasmessa al `DefaultSocialGetServlet`.
 
 Le azioni `DefaultSocialGetServlet`
 
@@ -93,19 +96,19 @@ Le azioni `DefaultSocialGetServlet`
 
 **`GET Request`**
 
-Un servlet GET predefinito ascolta le richieste .social.json alle quali SocialComponent risponde con JSON personalizzabile.
+Un servlet di GET predefinito ascolta le richieste .social.json alle quali SocialComponent risponde con JSON personalizzabile.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
 ### API HTTP - Richieste POST {#http-api-post-requests}
 
-Oltre alle operazioni GET (lettura), il framework definisce un pattern di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Tali endpoint sono API HTTP che accettano l&#39;input e rispondono con codici di stato HTTP o con un oggetto di risposta JSON.
+Oltre alle operazioni di GET (lettura), il framework definisce un pattern di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Tali endpoint sono API HTTP che accettano l&#39;input e rispondono con codici di stato HTTP o con un oggetto di risposta JSON.
 
 Questo modello di endpoint framework rende le operazioni CUD estensibili, riutilizzabili e testabili.
 
 **`POST Request`**
 
-È disponibile un&#39;operazione Sling POST:per ogni operazione SocialComponent. Il codice business logic e di manutenzione di ciascuna operazione è incluso in un servizio OperationService accessibile tramite l&#39;API HTTP o da un&#39;altra ubicazione come servizio OSGi. Sono disponibili blocchi che supportano le estensioni di funzionamento collegabili per le azioni prima/dopo.
+Esiste un&#39;operazione Sling POST:operation per ogni operazione SocialComponent. Il codice business logic e di manutenzione di ciascuna operazione è incluso in un servizio OperationService accessibile tramite l&#39;API HTTP o da un&#39;altra ubicazione come servizio OSGi. Sono disponibili blocchi che supportano le estensioni di funzionamento collegabili per le azioni prima/dopo.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -129,7 +132,7 @@ Gli script HBS sono semplici, senza logica, compilati sia sul server che sul cli
 
 Il framework fornisce diversi [strumenti](handlebars-helpers.md) Handlebars utili per lo sviluppo di SocialComponents.
 
-Sul server, quando Sling risolve una richiesta GET, identifica lo script che verrà utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (.hbs), Sling delegherà la richiesta al motore Handlebars. Il motore handlebars otterrà il SocialComponent dalla SocialComponentFactory appropriata, creerà un contesto ed eseguirà il rendering del codice HTML.
+Sul server, quando Sling risolve una richiesta di GET, identifica lo script che verrà utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (.hbs), Sling delegherà la richiesta al motore Handlebars. Il motore handlebars otterrà il SocialComponent dalla SocialComponentFactory appropriata, creerà un contesto ed eseguirà il rendering del codice HTML.
 
 ### Nessuna limitazione di accesso {#no-access-restriction}
 
@@ -139,7 +142,7 @@ Ciò richiede che tutti i modelli HBS nel percorso di ricerca sling (qualsiasi f
 
 L&#39;accesso HTTP ai file .hbs potrebbe non essere vietato.
 
-### Aggiungere o includere un componente Community {#add-or-include-a-communities-component}
+### Aggiunta o inclusione di un componente Community {#add-or-include-a-communities-component}
 
 La maggior parte dei componenti Community deve essere *aggiunta* come risorsa indirizzabile Sling. Alcuni componenti Community possono essere *inclusi* in un modello come risorsa non esistente per consentire l&#39;inclusione dinamica e la personalizzazione della posizione in cui scrivere il contenuto generato dall&#39;utente (UGC).
 
@@ -157,7 +160,7 @@ L’inclusione di un componente fa riferimento al processo di aggiunta di un rif
 
 A partire da AEM 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificare le proprietà del componente nel modo *design *authoring.
 
-Solo alcuni dei componenti di AEM Communities possono essere inclusi dinamicamente. Sono:
+È possibile includere in modo dinamico solo alcuni dei  componenti AEM Communities. Sono:
 
 * [Commenti](essentials-comments.md)
 * [Valutazione](rating-basics.md)
@@ -198,7 +201,7 @@ Il framework utilizza i modelli Handlebars lato server per eseguire il rendering
 Di seguito sono illustrate le convenzioni consigliate per definire e utilizzare le classi CSS:
 
 * Utilizzate nomi di selettore di classe CSS chiaramente associati al nome ed evitate nomi generici quali &quot;heading&quot;, &quot;image&quot;, ecc.
-* Definite stili di selettore di classe specifici in modo che i fogli di stile CSS funzionino correttamente con altri elementi e stili sulla pagina. Ad esempio: `.social-forum .topic-list .li { color: blue; }`
+* Definite stili di selettore di classe specifici in modo che i fogli di stile CSS funzionino correttamente con altri elementi e stili sulla pagina. Esempio: `.social-forum .topic-list .li { color: blue; }`
 * Separare le classi CSS per lo stile dalle classi CSS per gli UX guidate da JavaScript
 
 ### Personalizzazioni lato client {#client-side-customizations}
