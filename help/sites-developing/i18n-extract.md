@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ La parte pattern di una regola viene utilizzata per corrispondere ai nomi dei fi
 | Prefisso | Effetto |
 |---|---|
 | / | Indica un percorso JCR. Pertanto, questo prefisso corrisponde ai file sotto la directory jcr_root. |
-|  &amp;ast; | Indica un file regolare nel file system. |
+| &amp;ast; | Indica un file regolare nel file system. |
 | nessuno | Nessun prefisso o un pattern che inizia con un nome di cartella o file indica un file regolare nel file system. |
 
 Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e &amp;ast; il carattere corrisponde a tutti. Nella tabella seguente sono elencate diverse regole di esempio.
@@ -97,7 +100,7 @@ Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodire
  </tbody> 
 </table>
 
-### Estrazione delle stringhe {#extracting-the-strings}
+### Estrazione delle stringhe  {#extracting-the-strings}
 
 nessun POM:
 
