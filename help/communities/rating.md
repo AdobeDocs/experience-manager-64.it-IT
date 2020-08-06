@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Il `Rating`componente viene utilizzato autonomamente o in combinazione con altre
 
 Per aggiungere un `Rating`componente a una pagina in modalità di creazione, individuate il componente `Communities / Rating` e trascinatelo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione per la quale i membri possono assegnare una valutazione.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](rating-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Rating` componente.
 
