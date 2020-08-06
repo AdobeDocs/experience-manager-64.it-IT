@@ -25,9 +25,9 @@ Questa esercitazione è un passaggio della serie [Crea il primo modulo](/help/fo
 
 ## Informazioni sull&#39;esercitazione {#about-the-tutorial}
 
-Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, quali profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
+ modulo di integrazione dei dati AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, come AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
 
-Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello di dati del modulo, consultate Integrazione [dei dati di](/help/forms/using/data-integration.md)AEM Forms.
+Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello di dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dei dati AEM Forms.
 
 Questa esercitazione illustra i passaggi necessari per preparare, creare, configurare e associare un modello dati del modulo a un modulo adattivo. Al termine di questa esercitazione, potrete:
 
@@ -52,13 +52,13 @@ Prima di iniziare, accertatevi di disporre dei seguenti elementi:
 
 ## Passaggio 1: Configurare il database MySQL come origine dati {#config-database}
 
-È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione, verrà configurato il database MySQL configurato e popolato con dati di esempio. Per informazioni su altre origini dati supportate e su come configurarle, consulta Integrazione [dati di](/help/forms/using/data-integration.md)AEM Forms.
+È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione, verrà configurato il database MySQL configurato e popolato con dati di esempio. Per informazioni su altre origini dati supportate e su come configurarle, vedere [Integrazione](/help/forms/using/data-integration.md)dati di AEM Forms.
 
 Per configurare il database MySQL, effettuate le seguenti operazioni:
 
 1. Installare il driver JDBC per il database MySQL come bundle OSGi:
 
-   1. Accedete ad AEM Forms Author Instance come amministratore e passate ai bundle della console Web di AEM. L’URL predefinito è [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+   1. Accedete a  Istanza di AEM Forms Author come amministratore e andate AEM bundle della console Web. L’URL predefinito è [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
    1. Toccate **Installa/Aggiorna**. Viene visualizzata una finestra di dialogo **Carica/Installa pacchetti** .
 
@@ -66,7 +66,7 @@ Per configurare il database MySQL, effettuate le seguenti operazioni:
 
 1. Configurare il database MySQL come origine dati:
 
-   1. Andate alla console Web di AEM all&#39;indirizzo [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+   1. Passate AEM console Web all’indirizzo [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
    1. Individua la configurazione DataSource **** in pool di connessione Apache Sling. Toccate per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specificate i seguenti dettagli:
 
@@ -88,11 +88,11 @@ Per configurare il database MySQL, effettuate le seguenti operazioni:
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms offre un&#39;interfaccia utente intuitiva per [creare un modello](data-integration.md) di dati del modulo da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il nostro caso di utilizzo, utilizzeremo l&#39;origine dati MySQL configurata.
+ AEM Forms fornisce un&#39;interfaccia utente intuitiva per [creare un modello](data-integration.md) di dati del modulo da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il nostro caso di utilizzo, utilizzeremo l&#39;origine dati MySQL configurata.
 
 Per creare un modello dati modulo, effettuare le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, passa a **Forms** > **Data** Integrations (Integrazioni dati).
+1. NellAEMistanza di creazione, accedi a **Forms** > **Data** Integrations (Integrazioni dati).
 1. Tap **Create** >  **Form Data Model**.
 1. Nella finestra di dialogo Crea modello dati modulo, specificare un **nome** per il modello dati del modulo. Ad esempio, **cliente-spedizione-fatturazione-dettagli**. Toccate **Avanti**.
 1. Nella schermata dell&#39;origine dati selezionata sono elencate tutte le origini dati configurate. Selezionate l&#39;origine dati **WeRetailMySQL** e toccate **Crea**.
@@ -110,7 +110,7 @@ La configurazione del modello dati del modulo comporta:
 
 Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, andate a **Moduli > Integrazioni** dati. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. NellAEMistanza di creazione, andate a **Forms > Integrazioni** dati. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Il modello di dati del modulo **per la spedizione dei clienti e la fatturazione** creato in precedenza è riportato di seguito. Aprirlo in modalità di modifica.
 
    L&#39;origine dati selezionata **WeRetailMySQL** è configurata nel modello dati del modulo.
@@ -122,7 +122,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
    * **Oggetti** del modello dati:
 
       * id
-      * nome
+      * name
       * spesaIndirizzo
       * città
       * stadio
