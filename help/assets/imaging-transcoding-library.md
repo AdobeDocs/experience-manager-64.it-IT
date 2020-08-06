@@ -1,6 +1,6 @@
 ---
 title: Imaging Transcoding Library
-description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
+description: Scoprite come configurare e utilizzare  libreria  transcodifica immagini, una soluzione per l’elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
-La libreria Adobe Imaging Transcoding è una soluzione proprietaria di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui:
+ Adobe  Libreria per la transcodifica delle immagini è una soluzione proprietaria per l&#39;elaborazione delle immagini che può eseguire le funzioni di base per la gestione delle immagini, tra cui:
 
 * Codifica
 * Transcodifica (conversione di formati supportati)
@@ -27,7 +27,7 @@ La libreria di transcodifica delle immagini fornisce supporto CMYK e supporto al
 Oltre a supportare un&#39;ampia gamma di formati di file e profili, la libreria Imaging Transcoding offre notevoli vantaggi rispetto ad altre soluzioni di terze parti in termini di prestazioni, scalabilità e qualità. Di seguito sono riportati alcuni dei vantaggi principali dell’utilizzo della libreria di transcodifica delle immagini:
 
 * **Scala con dimensioni file o risoluzione** crescenti: Il ridimensionamento viene ottenuto principalmente dalla capacità brevettata della libreria Imaging Transcoding Library di ridimensionare i file durante la decodifica. Questa capacità assicura che l&#39;utilizzo della memoria di runtime sia sempre ottimale e non sia una funzione quadratica di dimensioni file crescenti o megapixel di risoluzione. La libreria di transcodifica immagini può elaborare file di dimensioni maggiori e ad alta risoluzione (contenenti file megapixel superiori). Strumenti di terze parti, come ImageMagick, non sono in grado di gestire file di grandi dimensioni e arresti anomali durante l’elaborazione di tali file.
-* **algoritmi** di compressione e ridimensionamento della qualità di Photoshop: Coerenza con gli standard di settore in termini di qualità del campionamento in discesa (uniforme, nitido e automatico bicubico) e di qualità della compressione. Imaging Transcoding Library (Libreria transcodifica immagini) valuta ulteriormente il fattore di qualità dell&#39;immagine di input e utilizza in modo intelligente tabelle ottimali e impostazioni di qualità per l&#39;immagine di output. Questa capacità produce file di dimensioni ottimali senza compromettere la qualità visiva.
+* **algoritmi** di compressione e ridimensionamento della qualità Photoshop: Coerenza con gli standard di settore in termini di qualità del campionamento in discesa (uniforme, nitido e automatico bicubico) e di qualità della compressione. Imaging Transcoding Library (Libreria transcodifica immagini) valuta ulteriormente il fattore di qualità dell&#39;immagine di input e utilizza in modo intelligente tabelle ottimali e impostazioni di qualità per l&#39;immagine di output. Questa capacità produce file di dimensioni ottimali senza compromettere la qualità visiva.
 * **Alta velocità:** Il tempo di risposta è inferiore e il throughput è sempre superiore a ImageMagick. Pertanto, la libreria di transcodifica immagini dovrebbe ridurre il tempo di attesa per gli utenti e il costo di hosting.
 * **Scalabilità migliore con carico simultaneo:** La libreria di transcodifica delle immagini funziona in modo ottimale in condizioni di carico simultaneo. Offre un throughput elevato con prestazioni CPU ottimali, utilizzo della memoria e tempi di risposta ridotti, riducendo così i costi di hosting.
 
@@ -95,7 +95,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 1. Esegui `ldconfig` comando per creare i collegamenti e la cache necessari.
 
-1. Nell&#39;account utilizzato per avviare AEM, modifica il `.bash_profile` file. Aggiungete `LD_LIBRARY_PATH` i seguenti elementi.
+1. Nell&#39;account utilizzato per avviare AEM, modificare `.bash_profile` il file. Aggiungete `LD_LIBRARY_PATH` i seguenti elementi.
 
    ```shell
    LD_LIBRARY_PATH=.
