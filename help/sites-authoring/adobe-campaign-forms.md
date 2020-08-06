@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1306'
+ht-degree: 74%
 
 ---
 
@@ -95,7 +98,7 @@ Questa sezione contiene solo dettagli sui collegamenti specifici a Adobe Campaig
    * **Adobe Campaign: iscrizione a servizi**: consente di gestire le iscrizioni dei destinatari in Adobe Campaign.
    * **Adobe Campaign: Annulla iscrizione a servizi**: consente di annullare le iscrizioni dei destinatari in Adobe Campaign.
 
-1. È necessario disporre di un componente di **Chiave principale crittografata** per ogni modulo. Questo componente definisce quale parametro URL verrà utilizzato per accettare la chiave principale crittografata di un profilo Adobe Campaign. In Components (Componenti), in modo che solo i social media siano visibili.
+1. È necessario disporre di un componente di **Chiave principale crittografata** per ogni modulo. Questo componente definisce quale parametro URL verrà utilizzato per accettare la chiave principale crittografata di un profilo Adobe Campaign. In Componenti  Adobe Campaign, in modo che solo tali componenti siano visibili.
 1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. Nella scheda **Adobe Campaign**, specifica un nome per il parametro URL. Tocca o fai clic sul segno di spunta per salvare le modifiche.
 
    I collegamenti generati a questo modulo devono utilizzare questo parametro URL e assegnargli la chiave principale crittografata di un profilo Adobe Campaign. La chiave principale crittografata deve essere correttamente codificata con l&#39;URL (percentuale).
@@ -125,7 +128,7 @@ Dopo aver creato un modulo e modificato il suo contenuto, potresti voler verific
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. In Components (Componenti), in modo che solo i social media siano visibili.
+>You must have an **Encryted Primary Key** component on each form. In Componenti  Adobe Campaign, in modo che solo tali componenti siano visibili.
 >
 >Anche se in questa procedura si inserisce il numero EPK manualmente, in pratica gli utenti otterrebbero un collegamento a questa pagina (che sia per annullare l’iscrizione, iscriversi o aggiornare il profilo) all&#39;interno di una newsletter. In base all&#39;utente, l’EPK si aggiorna automaticamente.
 >
