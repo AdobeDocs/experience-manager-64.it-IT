@@ -1,8 +1,8 @@
 ---
-title: Condizione in linea e ripetizione in comunicazioni interattive e lettere
-seo-title: Condizione in linea e ripetizione in comunicazioni interattive e lettere
-description: 'Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
-seo-description: 'Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
+title: Condizione in linea e ripetizione in Comunicazioni interattive e lettere
+seo-title: Condizione in linea e ripetizione in Comunicazioni interattive e lettere
+description: 'Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
+seo-description: 'Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,17 +10,20 @@ topic-tags: interactive-communications
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1715'
+ht-degree: 0%
 
 ---
 
 
-# Condizione in linea e ripetizione in comunicazioni interattive e lettere {#inline-condition-and-repeat-in-interactive-communications-and-letters}
+# Condizione in linea e ripetizione in Comunicazioni interattive e lettere {#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
-Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate.
+Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate.
 
 ## Condizioni in linea {#inline-conditions}
 
-AEM Forms consente di utilizzare le condizioni in linea nei moduli di testo per automatizzare il rendering del testo che dipende dal contesto o dai dati associati al modello dati del modulo (in comunicazione interattiva) o al dizionario dati (in lettere). La condizione in linea visualizza contenuto specifico in base alla valutazione della condizione che sia vera o falsa.
+ AEM Forms consente di utilizzare le condizioni in linea nei moduli di testo per automatizzare il rendering del testo che dipende dal contesto o dai dati associati al modello dati del modulo (in Comunicazione interattiva) o al dizionario dati (in lettere). La condizione in linea visualizza contenuto specifico in base alla valutazione della condizione che sia vera o falsa.
 
 Le condizioni eseguono calcoli sui valori dei dati forniti dal modello dati/Dizionario dati del modulo o dagli utenti finali. Utilizzando le condizioni in linea, potete risparmiare tempo e ridurre gli errori umani, creando al contempo lettere e comunicazioni interattive altamente contestuali e personalizzate.
 
@@ -32,13 +35,13 @@ Per ulteriori informazioni, vedere:
 
 ### Esempio: Utilizzo di regole per condizionale del testo in linea nella comunicazione interattiva {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
-Per condizionale di una frase, paragrafo o stringa di testo in una comunicazione interattiva, è possibile creare una regola nel frammento di documento di testo appropriato. Nell&#39;esempio seguente viene utilizzata una regola per visualizzare un numero verde solo per i destinatari statunitensi della comunicazione interattiva.
+Per condizionalizzare una frase, un paragrafo o una stringa di testo in una comunicazione interattiva, è possibile creare una regola nel frammento di documento di testo appropriato. Nell&#39;esempio seguente viene utilizzata una regola per visualizzare un numero verde solo per i destinatari statunitensi della comunicazione interattiva.
 
 Per ulteriori informazioni, consultate Creare una regola nel testo nei [testi nelle comunicazioni](/help/forms/using/texts-interactive-communications.md)interattive.
 
 Dopo aver incluso il frammento di testo in una comunicazione interattiva e l&#39;agente utilizza l&#39;interfaccia utente agente per preparare una comunicazione interattiva, i dati (modello dati modulo) per i destinatari vengono valutati e il testo viene mostrato solo ai destinatari negli Stati Uniti.
 
-### Esempio: Utilizzo di condizioni in linea in una lettera per rappresentare l&#39;indirizzo appropriato {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Esempio: Utilizzo di condizioni in linea in una lettera per rappresentare l&#39;indirizzo appropriato  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 È possibile inserire una condizione in linea in una lettera inserendo la condizione in linea nel modulo di testo appropriato. L&#39;esempio seguente utilizza due condizioni per valutare e visualizzare l&#39;indirizzo appropriato, Signore o Signora, in una lettera basata sull&#39;elemento DD Genere. Con passaggi simili, potete creare altre condizioni.
 
@@ -80,8 +83,9 @@ Dopo aver incluso il frammento di testo in una comunicazione interattiva e l&#39
 
 1. Visualizzate l&#39;anteprima della lettera e notate che il testo viene rappresentato in base alla condizione in linea. Puoi inserire il valore dell&#39;elemento DD Genere utilizzando:
 
-   * File di dati XML di esempio creato in base al dizionario dati pertinente durante la visualizzazione in anteprima della lettera con dati di esempio.
+   * Un file di dati XML di esempio creato in base al dizionario dati pertinente durante la visualizzazione in anteprima della lettera con dati di esempio.
    * Un file di dati XML allegato al dizionario dati pertinente.
+
    Per ulteriori informazioni, vedere [Dizionario](/help/forms/using/data-dictionary.md)dati.
 
    ![5_letteroutput](assets/5_letteroutput.png)
@@ -151,7 +155,7 @@ L&#39;esempio seguente illustra i passaggi per utilizzare la ripetizione per str
 
    Data transazione, importo transazione e tipo di transazione (debito o credito)
 
-1. Incorporare il testo negli elementi DD per rendere l&#39;istruzione più leggibile, ad esempio:
+1. Incorporare il testo all&#39;interno degli elementi DD per rendere l&#39;istruzione più leggibile, ad esempio:
 
    ![1_repeat](assets/1_repeat.png)
 
@@ -185,6 +189,7 @@ L&#39;esempio seguente illustra i passaggi per utilizzare la ripetizione per str
 
    * **Interruzione** riga: Inserisce un&#39;interruzione di riga dopo ogni voce di transazione nella lettera di output.
    * **Testo**: Inserisce il carattere di testo specificato dopo ogni voce di transazione nella lettera di output.
+
    Una volta inserita la condizione, il testo con ripetizione viene evidenziato in rosso e una maniglia viene visualizzata a sinistra. Per visualizzare il costrutto di ripetizione, posizionate il puntatore del mouse sulla maniglia a sinistra della ripetizione.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
@@ -195,8 +200,9 @@ L&#39;esempio seguente illustra i passaggi per utilizzare la ripetizione per str
 
 1. Visualizzate l’anteprima della lettera e notate che il testo viene riprodotto in base alla ripetizione. È possibile inserire il valore degli elementi DD utilizzando:
 
-   * File di dati XML di esempio creato in base al dizionario dati pertinente durante la visualizzazione in anteprima della lettera con dati di esempio.
+   * Un file di dati XML di esempio creato in base al dizionario dati pertinente durante la visualizzazione in anteprima della lettera con dati di esempio.
    * Un file di dati XML allegato al dizionario dati pertinente.
+
    Per ulteriori informazioni, vedere [Dizionario](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)dati.
 
    ![6_ripetoutputpreview](assets/6_repeatoutputpreview.png)
@@ -207,7 +213,7 @@ L&#39;esempio seguente illustra i passaggi per utilizzare la ripetizione per str
    >
    >È possibile inserire una condizione e ripeterla solo durante la creazione o la modifica del modulo di testo pertinente. Durante l&#39;anteprima della lettera, anche se è possibile apportare modifiche al modulo di testo, non è possibile inserire condizioni o ripetere.
 
-## Utilizzo di condizioni in linea e ripetizione - alcuni casi di utilizzo {#using-inline-condition-and-repeat-some-use-cases}
+## Utilizzo di condizioni in linea e ripetizione - alcuni casi di utilizzo  {#using-inline-condition-and-repeat-some-use-cases}
 
 ### Ripeti in una condizione {#repeat-within-condition}
 
