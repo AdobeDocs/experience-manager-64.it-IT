@@ -1,14 +1,17 @@
 ---
-title: Informazioni su AEM Assets
-description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta di Risorse AEM di Adobe.
+title: Informazioni su  AEM Assets
+description: Scopri cosa sono la gestione delle risorse digitali, i relativi casi di utilizzo e  Adobe  offerta di risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 48%
 
 ---
 
 
-# Informazioni su AEM Assets {#about-assets}
+# Informazioni su  AEM Assets {#about-assets}
 
 Assets è uno strumento Digital Asset Management (DAM) completamente integrato con la piattaforma AEM e consente alla tua azienda di condividere e distribuire risorse digitali. Gli utenti di un’organizzazione possono gestire e archiviare immagini, video, documenti, clip audio e contenuti multimediali come file Flash, per poi accedervi e utilizzarli sul Web, in documenti stampati e per la distribuzione digitale.
 
@@ -25,9 +28,9 @@ AEM Assets, completamente integrato in AEM, consente di effettuare le seguenti o
 * Utilizzare funzioni di modifica delle immagini come il ridimensionamento e l’aggiunta di filtri. È possibile importare ed esportare contemporaneamente più risorse digitali utilizzando una cartella WebDAV o CIFS.
 * Utilizzare flussi di lavoro e notifiche per consentire l’elaborazione e il download simultanei di qualsiasi insieme di risorse e gestire i diritti di accesso alle risorse.
 
-### AEM Assets è completamente integrato con le funzionalità WCM di AEM {#aem-assets-fully-integrated-in-cq-wcm}
+###  AEM Assets è completamente integrato con AEM funzionalità WCM {#aem-assets-fully-integrated-in-cq-wcm}
 
-Risorse AEM è completamente integrato con CQ WCM e la funzionalità è disponibile tramite l’icona DAM:
+ AEM Assets è completamente integrato con CQ WCM e la funzionalità è disponibile tramite l’icona DAM:
 
 <!-- TBD: Update image for branding -->
 
@@ -41,11 +44,11 @@ Le risorse gestite in CQ DAM sono quindi accessibili tramite Content Finder di W
 
 >[!NOTE]
 >
->La navigazione di base dell’interfaccia utente è la stessa di tutte le altre funzionalità di AEM. Per ulteriori informazioni, consulta [Panoramica della console](/help/sites-authoring/qg-page-authoring.md) GUI.
+>La navigazione di base dell&#39;interfaccia utente è la stessa del resto del AEM. Per ulteriori informazioni, vedere [Panoramica della console](/help/sites-authoring/qg-page-authoring.md) GUI.
 
 ### Gestione delle risorse digitali e componente Immagine {#digital-asset-management-versus-image-component}
 
-Per determinare se inserire un’immagine in Risorse AEM o usare il componente Immagine, considera il ciclo di vita dell’immagine:
+Per determinare se inserire un’immagine in  AEM Assets o usare il componente Immagine, considera il ciclo di vita dell’immagine:
 
 * Se l’immagine ha lo stesso ciclo di vita della pagina, utilizza il componente Immagine.
 * Se l’immagine presenta un ciclo di vita separato, ad esempio se devi utilizzare l’immagine due volte o all’esterno di WCM, utilizza AEM Assets.
@@ -78,7 +81,7 @@ Quando lavori con risorse digitali in AEM, è importante comprendere la seguente
 
 * **Versioni:** Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Risorse secondarie:** Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
+* **Risorse secondarie:** Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop  o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
 
 ### Come lavorare con le risorse {#how-to-work-with-assets}
 
