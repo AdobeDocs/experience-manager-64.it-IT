@@ -1,8 +1,8 @@
 ---
 title: Modalità di esecuzione
 seo-title: Modalità di esecuzione
-description: Scopri come ottimizzare l’istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
-seo-description: Scopri come ottimizzare l’istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
+description: Scoprite come ottimizzare l'istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
+seo-description: Scoprite come ottimizzare l'istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 Le modalità di esecuzione consentono di sintonizzare l’istanza di AEM per uno scopo specifico; ad esempio creazione o pubblicazione, test, sviluppo, Intranet o altri.
 
-Tieni presente quanto segue:
+Operazioni disponibili:
 
 * [Definire raccolte di parametri di configurazione per ciascuna modalità](#defining-configuration-properties-for-a-run-mode)di esecuzione.
 
@@ -33,7 +36,7 @@ Tutte le impostazioni e definizioni vengono memorizzate nell&#39;unico repositor
 
 Le modalità di esecuzione dell&#39;installazione (o fisse) vengono utilizzate al momento dell&#39;installazione e quindi fisse per l&#39;intera durata dell&#39;istanza, non possono essere modificate.
 
-Le modalità di esecuzione dell&#39;installazione sono pronte:
+Le modalità di esecuzione dell&#39;installazione sono pronte all&#39;uso:
 
 * `author`
 * `publish`
@@ -113,14 +116,14 @@ Per ulteriori informazioni sulla definizione dei singoli nodi di configurazione 
 * `install.author`
 * `install.publish`
 
-Queste cartelle sono di tipo `nt:folder` e devono contenere il pacchetto appropriato.
+Queste cartelle sono di tipo `nt:folder` e devono contenere il bundle appropriato.
 
 ## Avvio di CQ con una modalità di esecuzione specifica {#starting-cq-with-a-specific-run-mode}
 
 Se sono state definite configurazioni per più modalità di esecuzione, è necessario definire quali utilizzare all&#39;avvio. Esistono diversi metodi per specificare quale modalità di esecuzione utilizzare; l&#39;ordine di risoluzione è:
 
 1. [ `sling.properties` file](#using-the-sling-properties-file)
-1. [ `-r` opzione](#using-the-r-option)
+1. [ `-r` option](#using-the-r-option)
 1. [proprietà del sistema (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Rilevamento nome file](#filename-detection-renaming-the-jar-file)
@@ -141,7 +144,7 @@ Il `sling.properties` file può essere utilizzato per definire la modalità di e
 
 ### Utilizzo dell&#39;opzione -r {#using-the-r-option}
 
-Una modalità di esecuzione personalizzata può essere attivata utilizzando l&#39; `-r` opzione all&#39;avvio del quickstart. Ad esempio, utilizzate il comando seguente per avviare un’istanza di AEM con la modalità di esecuzione impostata su dev. &quot;
+Una modalità di esecuzione personalizzata può essere attivata utilizzando l&#39; `-r` opzione all&#39;avvio del quickstart. Ad esempio, utilizzare il comando seguente per avviare un&#39;istanza AEM con la modalità di esecuzione impostata su dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -180,6 +183,6 @@ nel file:
 
 `WEB-INF/web.xml`
 
-Questo si trova nel file AEM `war` e deve essere aggiornato prima della distribuzione.
+Si trova nel `war` file AEM e deve essere aggiornato prima della distribuzione.
 
 Per ulteriori informazioni, consultate [Installazione di AEM con un server](/help/sites-deploying/application-server-install.md) applicazioni.
