@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione lato server
 seo-title: Personalizzazione lato server
-description: Personalizzazione lato server in AEM Communities
-seo-description: Personalizzazione lato server in AEM Communities
+description: Personalizzazione lato server in  AEM Communities
+seo-description: Personalizzazione lato server in  AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -29,9 +32,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ### Interfaccia SocialComponent {#socialcomponent-interface}
 
-I componenti social sono POJO che rappresentano una risorsa per una funzione di AEM Communities. Idealmente, ogni SocialComponent rappresenta uno specifico resourceType con GETters esposti che forniscono i dati al client in modo che la risorsa sia correttamente rappresentata. Tutta la logica di business e di visualizzazione è racchiusa in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
+I componenti social sono POJO che rappresentano una risorsa per una funzione AEM Communities . Idealmente, ogni SocialComponent rappresenta uno specifico resourceType con GETters esposti che forniscono i dati al client in modo che la risorsa sia correttamente rappresentata. Tutta la logica di business e di visualizzazione è racchiusa in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
 
-L&#39;interfaccia definisce un set base di GETters necessari per rappresentare una risorsa. L&#39;interfaccia specifica i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint GET JSON per le risorse.
+L&#39;interfaccia definisce un set base di GETters necessari per rappresentare una risorsa. È importante notare che l&#39;interfaccia specifica i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint JSON GET per le risorse.
 
 Tutte le classi SocialComponent devono implementare l&#39;interfaccia `com.adobe.cq.social.scf.SocialComponent`
 
@@ -67,7 +70,7 @@ Un handle per il servizio OSGi viene ottenuto richiamando `com.adobe.cq.social.s
 
 Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39; `SlingPostOperation`interfaccia (pacchetto `org.apache.sling.servlets.post`).
 
-L&#39;implementazione dell&#39; `PostOperation`endpoint viene impostata `sling.post.operation`su un valore a cui l&#39;operazione risponderà. Tutte le richieste POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
+L&#39;implementazione dell&#39; `PostOperation`endpoint viene impostata `sling.post.operation`su un valore a cui l&#39;operazione risponderà. Tutte le richieste di POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
 
 Viene `PostOperation`richiamata la `SocialOperation`quale esegue le azioni necessarie per l&#39;operazione.
 
@@ -75,7 +78,7 @@ Il `PostOperation`destinatario riceve il risultato dal client `SocialOperation`e
 
 #### Classe SocialOperation {#socialoperation-class}
 
-Ogni `SocialOperation`endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation().`Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un errore `SocialOperationResult`o generare un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di stato HTTP di risposta JSON o di successo.
+Ogni `SocialOperation`endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation().`Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un errore `SocialOperationResult`o generare un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di stato HTTP di risposta JSON o di riuscita.
 
 L’estensione `AbstractSocialOperation`consente il riutilizzo dell’invio `SocialComponents`di risposte JSON.
 
@@ -101,7 +104,7 @@ Se la richiesta non è valida o si verifica un altro errore, ad esempio errori i
 
 Il framework dei componenti sociali raccomanda che la logica aziendale responsabile dell&#39;esecuzione dell&#39;operazione non sia implementata all&#39;interno della `SocialOperation`classe, ma delegata a un servizio OSGi. L&#39;utilizzo di un servizio OSGi per la business logic consente a un `SocialComponent``SocialOperation`endpoint di essere integrato con un altro codice e applicare una logica aziendale diversa.
 
-Tutte `OperationService`le classi si estendono `AbstractOperationService`, consentendo ulteriori estensioni che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation`classe. È possibile richiamare la `OperationExtensions`classe durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
+Tutte `OperationService`le classi si estendono `AbstractOperationService`, consentendo ulteriori estensioni che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation`classe. La `OperationExtensions`classe può essere invocata durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
 
 * `performBeforeActions()`
 Consente pre-verifiche/pre-elaborazione e convalide
@@ -114,11 +117,11 @@ Consente di modificare ulteriormente le risorse o richiamare eventi personalizza
 
 ## Codice di esempio {#sample-code}
 
-Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.com/Adobe-Marketing-Cloud) Adobe Marketing Cloud. Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
+Il codice di esempio è disponibile nell’archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
 
-## Best practice {#best-practices}
+## Best practice   {#best-practices}
 
-Consultate la sezione Linee guida [per la](code-guide.md) codifica per diverse linee guida e best practice per gli sviluppatori di AEM Communities.
+Consultate la sezione [Coding Guidelines (Linee guida](code-guide.md) per la codifica) per diverse linee guida e best practice per  sviluppatori AEM Communities.
 
 Per informazioni sull&#39;accesso ai contenuti generati dall&#39;utente, consultate anche [Storage Resource Provider (SRP) per UGC](srp.md) .
 
