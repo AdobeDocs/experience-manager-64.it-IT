@@ -11,6 +11,9 @@ topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ I moduli HTML5 vengono sempre più utilizzati sui dispositivi touch e un requisi
 
    >[!NOTE]
    >
-   >Le dimensioni del campo selezionato in Forms Designer vengono visualizzate durante il rendering del campo. Tuttavia, le dimensioni della casella della firma sottoposta a rendering vengono calcolate in base alle proporzioni del campo e non in base alle dimensioni specificate in Forms Designer.
+   >Dimension del campo selezionato in Forms Designer vengono visualizzati durante il rendering del campo. Tuttavia, le dimensioni della casella della firma sottoposta a rendering vengono calcolate in base alle proporzioni del campo e non in base alle dimensioni specificate in Forms Designer.
 
 1. Configurare il campo Firma scarabocchio.
 
