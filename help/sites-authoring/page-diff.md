@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 
 >[!CAUTION]
 >
->Se state eseguendo una versione precedente a AEM 6.4.3, per utilizzare la funzione l&#39;utente deve disporre dell&#39;autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory` .
+>Se è in esecuzione una versione precedente alla AEM 6.4.3, per utilizzare la funzione l&#39;utente deve disporre dell&#39;autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory` .
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/sites-developing/pagediff.md#operation-details).
 
