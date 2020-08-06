@@ -4,21 +4,24 @@ description: Rappresentazioni video
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
 
 # Video renditions {#video-renditions}
 
-Risorse Adobe Experience Manager (AEM) genera rappresentazioni video per risorse video di vari formati, inclusi OGG, FLV e così via.
+Adobe Experience Manager (AEM) Assets genera rappresentazioni video per risorse video di vari formati, inclusi OGG, FLV e così via.
 
-AEM Assets supporta rappresentazioni statiche e dinamiche (rappresentazioni con codifica DM) per risorse multimediali.
+ AEM Assets supporta rappresentazioni statiche e dinamiche (rappresentazioni con codifica DM) per risorse multimediali.
 
 Le rappresentazioni statiche vengono generate in modo nativo utilizzando FFMPEG (installato e disponibile nel percorso di sistema) e memorizzate nell&#39;archivio dei contenuti.
 
 Le rappresentazioni con codifica DM vengono memorizzate nel server proxy e servite in fase di esecuzione.
 
-Le risorse AEM supportano la riproduzione per queste rappresentazioni sul lato client.
+AEM risorse supportano la riproduzione per queste rappresentazioni sul lato client.
 
 Per visualizzare le rappresentazioni di una particolare risorsa video, aprite la relativa pagina di risorse e toccate l’icona Navigazione globale. Quindi, scegliete **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
 
