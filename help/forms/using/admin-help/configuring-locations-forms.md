@@ -1,6 +1,6 @@
 ---
-title: Configurazione delle posizioni per Forms
-seo-title: Configurazione delle posizioni per Forms
+title: Configurazione dei percorsi per Forms
+seo-title: Configurazione dei percorsi per Forms
 description: Scoprite come configurare il percorso per Forms.
 seo-description: Scoprite come configurare il percorso per Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Configurazione delle posizioni per Forms {#configuring-locations-for-forms}
+# Configurazione dei percorsi per Forms {#configuring-locations-for-forms}
 
 È possibile specificare l&#39;URL, l&#39;URI e i percorsi dei file di attributi come la radice Web, la posizione dei moduli da recuperare, il file PDF di livello inferiore utilizzato nelle trasformazioni PDFForm e il percorso della cache.
 
-1. Nella console di amministrazione, fare clic su Servizi > Moduli.
+1. Nella console di amministrazione, fate clic su Servizi > Forms.
 1. In Posizioni specificare le opzioni appropriate. Le opzioni sono descritte di seguito.
 1. Fate clic su Salva.
 
@@ -44,9 +44,9 @@ L&#39;esempio seguente fa riferimento allo stesso contenuto (utilizzando l&#39;U
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI radice Web FS:** L&#39;URL dell&#39;applicazione Web Forms. È possibile lasciare vuota questa casella se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuiti sullo stesso server applicazione; verrà utilizzato l&#39;URL principale Web dell&#39;API Forms.
+**URI radice Web FS:** URL dell’applicazione Web Forms. È possibile lasciare vuota questa casella se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuiti sullo stesso server applicazione; verrà utilizzato l&#39;URL Web root dell&#39;API Forms.
 
-Se l&#39;applicazione Web Forms e l&#39;applicazione client non sono distribuiti nello stesso server applicazione, fornire l&#39;URL per l&#39;applicazione Web Forms in questa casella, come illustrato nell&#39;esempio seguente:
+Se l’applicazione Web Forms e l’applicazione client non vengono distribuiti nello stesso server applicazione, immettete l’URL per l’applicazione Web Forms in questa casella, come illustrato nell’esempio seguente:
 
 `https://<host name>:<port>/FormServer`
 
@@ -62,11 +62,11 @@ Il valore predefinito è una stringa vuota.
 
 Il valore predefinito è una stringa vuota.
 
-**URI di configurazione XCI:** Posizione relativa o assoluta in cui viene trovato il file XCI utilizzato per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR dei moduli AEM distribuibile.
+**URI di configurazione XCI:** Posizione relativa o assoluta in cui viene trovato il file XCI utilizzato per il rendering. Per un valore relativo, si presume che il file XCI risieda nel file EAR AEM moduli distribuibili.
 
 Il valore predefinito è `com/adobe/formServer/PA/pa.xci`.
 
-**URI mappa font:** Posizione relativa o assoluta del file di mappatura dei font. Per un valore relativo, si presume che il file risieda nel file EAR dei moduli AEM distribuibile.
+**URI mappa font:** Posizione relativa o assoluta del file di mappatura dei font. Per un valore relativo, si presume che il file risieda nel file EAR AEM moduli distribuibili.
 
 Il file di mappatura dei font viene utilizzato per creare mappature dei font personalizzate per le trasformazioni HTML nei moduli, consentendo di specificare quale font verrà sostituito quando un font non sarà disponibile nel computer client.
 
@@ -76,11 +76,11 @@ La voce seguente è un esempio di una voce nel file di mappatura dei font:
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**File PDF seed:** Il file PDF iniziale utilizzato in una trasformazione PDFForm per ottimizzare la distribuzione. Il file PDF di livello inferiore specifica un file PDF personalizzato (contenente solo il flusso XFA, l&#39;immagine e le risorse di font) che viene aggiunto alla struttura del modulo e ai dati. Il rendering del modulo viene eseguito da Acrobat 7 o versione successiva e viene applicato alla trasformazione PDFForm.
+**File PDF seed:** Il file PDF iniziale utilizzato in una trasformazione PDFForm per ottimizzare la distribuzione. Il file PDF di livello inferiore specifica un file PDF personalizzato (contenente solo il flusso XFA, l&#39;immagine e le risorse di font) che viene aggiunto alla struttura del modulo e ai dati. Il rendering del modulo viene eseguito da  Acrobat 7 o versioni successive e viene applicato alla trasformazione PDFForm.
 
 Il valore predefinito è una stringa vuota.
 
-**Posizione cache:** Specifica il percorso della cache del disco di Forms. Quando modificate questa impostazione, tutte le informazioni cache esistenti provenienti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle seguenti opzioni:
+**Posizione cache:** Specifica il percorso della cache del disco Forms. Quando modificate questa impostazione, tutte le informazioni cache esistenti provenienti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle seguenti opzioni:
 
 **Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione che dipende dal server applicazione in uso:
 
@@ -92,5 +92,5 @@ Il valore predefinito è una stringa vuota.
 
 >[!NOTE]
 >
->Se si utilizza un&#39;utilità di pulizia temporanea, tenere presente che mentre si eliminano queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo fino alla creazione della nuova cache. Per evitare questo problema, non eliminate queste directory durante la cancellazione della directory temporanea dei moduli AEM.
+>Se si utilizza un&#39;utilità di pulizia temporanea, tenere presente che mentre si eliminano queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo fino alla creazione della nuova cache. Per evitare questo problema, non eliminare queste directory durante la cancellazione della directory temporanea dei moduli AEM.
 
