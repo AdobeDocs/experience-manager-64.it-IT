@@ -1,14 +1,17 @@
 ---
 title: Riferimento a frammenti di modulo adattivo
 seo-title: Riferimento a frammenti di modulo adattivo
-description: 'In AEM Forms sono disponibili frammenti di modulo adattivi utilizzabili come risorse per creare rapidamente un modulo. '
-seo-description: 'In AEM Forms sono disponibili frammenti di modulo adattivi utilizzabili come risorse per creare rapidamente un modulo. '
+description: ' AEM Forms fornisce frammenti di modulo adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo. '
+seo-description: ' AEM Forms fornisce frammenti di modulo adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo. '
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 [Un frammento](/help/forms/using/adaptive-form-fragments.md) di modulo adattivo è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare per creare un modulo. Consente di creare un modulo in modo semplice e rapido. È possibile trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell&#39;editor del modulo.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel pacchetto AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel  pacchetto AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
@@ -30,7 +33,7 @@ Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel p
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando installate il pacchetto, in Moduli e documenti viene creata una cartella di frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
+Quando installate il pacchetto, in Forms &amp; Documents viene creata una cartella di frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 
@@ -51,7 +54,7 @@ Include i campi per acquisire il numero di telefono e l&#39;indirizzo e-mail.
 ## Informazioni sulla carta di credito {#credit-card-information}
 
 Include i campi per acquisire le informazioni sulla carta di credito che possono essere utilizzati per elaborare i pagamenti.
-[ Frammento ![delle informazioni sulla carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
+[ ![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Occupazione corrente {#current-employment}
 
@@ -76,7 +79,7 @@ Include i campi per acquisire la cronologia del processo. Consente di aggiungere
 
 ## Entrate e spese {#income-expenditure}
 
-Include i campi per acquisire il flusso di cassa mensile e le spese. I moduli che richiedono agli utenti di fornire informazioni finanziarie possono utilizzare questo frammento per acquisire entrate e spese.
+Include i campi per acquisire il flusso di cassa mensile e le spese. Forms che richiede agli utenti di fornire informazioni finanziarie può utilizzare questo frammento per acquisire entrate e spese.
 ![Frammento entrate e spese](assets/income.png)
 
 [Fare clic per ingrandire](assets/income-1.png)
