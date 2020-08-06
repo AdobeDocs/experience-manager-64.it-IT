@@ -1,6 +1,6 @@
 ---
-title: Rendering di moduli basati su frammenti
-seo-title: Rendering di moduli basati su frammenti
+title: Rendering di Forms basato su frammenti
+seo-title: Rendering di Forms basato su frammenti
 description: 'null'
 seo-description: 'null'
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
@@ -12,17 +12,20 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '2187'
+ht-degree: 8%
 
 ---
 
 
-# Rendering di moduli basati su frammenti {#rendering-forms-based-on-fragments}
+# Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments}
 
-## Rendering di moduli basati su frammenti {#rendering-forms-based-on-fragments-inner}
+## Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments-inner}
 
-Il servizio Forms consente di eseguire il rendering dei moduli basati su frammenti creati con Designer. Un *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più strutture del modulo. Ad esempio, un frammento può contenere un blocco indirizzo o note legali.
+Il servizio Forms è in grado di eseguire il rendering dei moduli basati su frammenti creati con Designer. Un *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più strutture del modulo. Ad esempio, un frammento può contenere un blocco indirizzo o note legali.
 
-Utilizzando i frammenti è possibile creare e gestire in modo semplice e veloce anche grandi quantità di moduli. Durante la creazione di un nuovo modulo, è possibile inserire un riferimento al frammento desiderato e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture del modulo basate sui frammenti, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+Utilizzando i frammenti è possibile creare e gestire in modo semplice e veloce anche grandi quantità di moduli. Durante la creazione di un nuovo modulo, è possibile inserire un riferimento al frammento desiderato e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture del modulo basate sui frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Un frammento può includere diversi sottomoduli racchiusi in un set sottomodulo selezionato. I set sottomodulo selezionati controllano la visualizzazione dei sottomoduli in base al flusso di dati proveniente da una connessione dati. È possibile utilizzare istruzioni condizionali per determinare quale sottomodulo del set visualizzare nel modulo finale. Ad esempio, ogni sottomodulo di un set può includere informazioni per una particolare posizione geografica e il sottomodulo visualizzato può essere determinato in base alla posizione dell&#39;utente.
 
@@ -38,24 +41,24 @@ L’uso dei frammenti presenta i seguenti vantaggi:
 
 ### Assemblaggio di una struttura del modulo assemblata utilizzando i frammenti {#assembling-a-form-design-assembled-using-fragments}
 
-È possibile assemblare una struttura del modulo per passare al servizio Forms in base a più frammenti. Per assemblare più frammenti, utilizzare il servizio Assembler. Per un esempio di utilizzo del servizio Assemble per creare una struttura del modulo utilizzata da altri servizi Forms (il servizio Output), vedere [Creazione di documenti PDF utilizzando i frammenti](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Invece di utilizzare il servizio Output, è possibile eseguire lo stesso flusso di lavoro utilizzando il servizio Forms.
+È possibile assemblare una struttura del modulo da trasmettere al servizio Forms in base a più frammenti. Per assemblare più frammenti, utilizzare il servizio Assembler. Per un esempio di utilizzo del servizio Assemble per creare una struttura del modulo utilizzata da un altro servizio Forms (il servizio Output), vedere [Creazione di documenti PDF utilizzando i frammenti](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Invece di utilizzare il servizio Output, è possibile eseguire lo stesso flusso di lavoro utilizzando il servizio Forms.
 
 Quando si utilizza il servizio Assembler, si passa una struttura del modulo assemblata utilizzando i frammenti. La struttura del modulo creata non fa riferimento ad altri frammenti. In questo argomento viene invece discusso il passaggio di una struttura del modulo che fa riferimento ad altri frammenti al servizio Forms. Tuttavia, la struttura del modulo non è stata assemblata da Assembler. È stato creato in Designer.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione basata sul Web per il rendering di moduli basati sui frammenti, vedere [Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Per informazioni sulla creazione di un&#39;applicazione basata sul Web per il rendering di moduli basati sui frammenti, vedere [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
 Per eseguire il rendering di un modulo basato su frammenti, effettuare le operazioni seguenti:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API client Forms.
+1. Creare un oggetto Forms Client API.
 1. Specificate i valori URI.
 1. Eseguire il rendering del modulo.
 1. Scrivere il flusso di dati del modulo nel browser Web del client.
@@ -64,21 +67,21 @@ Per eseguire il rendering di un modulo basato su frammenti, effettuare le operaz
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
-**Creare un oggetto API client Forms**
+**Creare un oggetto Forms Client API**
 
-Prima di eseguire un&#39;operazione API client del servizio Forms a livello di programmazione, è necessario creare un client del servizio Forms.
+Prima di eseguire un&#39;operazione API client di Forms Service a livello di programmazione, è necessario creare un client di servizi Forms.
 
 **Specificare i valori URI**
 
 Per eseguire correttamente il rendering di un modulo basato su frammenti, è necessario assicurarsi che il servizio Forms sia in grado di individuare il modulo e i frammenti (file XDP) a cui fa riferimento la struttura del modulo. Ad esempio, si supponga che il modulo sia denominato PO.xdp e che utilizzi due frammenti denominati FooterUS.xdp e FooterCanada.xdp. In questa situazione, il servizio Forms deve essere in grado di individuare tutti e tre i file XDP.
 
-È possibile organizzare un modulo e i relativi frammenti inserendo il modulo in un&#39;unica posizione e i frammenti in un&#39;altra posizione, oppure posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, si supponga che tutti i file XDP si trovino nell&#39;archivio di AEM Forms. Per informazioni sull&#39;inserimento di file XDP nell&#39;archivio di AEM Forms, consultate [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
+È possibile organizzare un modulo e i relativi frammenti inserendo il modulo in un&#39;unica posizione e i frammenti in un&#39;altra posizione, oppure posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, si supponga che tutti i file XDP si trovino nell&#39;archivio di AEM Forms . Per informazioni sull&#39;inserimento di file XDP nell&#39;archivio di AEM Forms , vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
-Durante il rendering di un modulo basato su frammenti, è necessario fare riferimento solo al modulo stesso e non ai frammenti. Ad esempio, è necessario fare riferimento a PO.xdp e non a FooterUS.xdp o FooterCanada.xdp. Assicurarsi di posizionare i frammenti in un percorso in cui il servizio Forms è in grado di individuarli.
+Durante il rendering di un modulo basato su frammenti, è necessario fare riferimento solo al modulo stesso e non ai frammenti. Ad esempio, è necessario fare riferimento a PO.xdp e non a FooterUS.xdp o FooterCanada.xdp. Assicurarsi di posizionare i frammenti in un percorso in cui il servizio Forms possa individuarli.
 
 **Eseguire il rendering del modulo**
 
-È possibile eseguire il rendering di un modulo basato su frammenti allo stesso modo dei moduli non frammentati. In altre parole, è possibile eseguire il rendering del modulo come PDF, HTML o guide del modulo (obsoleto). L&#39;esempio riportato in questa sezione esegue il rendering di un modulo basato sui frammenti come modulo PDF interattivo. (Vedere [Rendering di moduli](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interattivi.)
+È possibile eseguire il rendering di un modulo basato su frammenti allo stesso modo dei moduli non frammentati. In altre parole, è possibile eseguire il rendering del modulo come PDF, HTML o guide del modulo (obsoleto). L&#39;esempio riportato in questa sezione esegue il rendering di un modulo basato sui frammenti come modulo PDF interattivo. Consultate [Rendering di PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interattivi.
 
 **Scrivere il flusso di dati del modulo nel browser Web del client**
 
@@ -90,25 +93,25 @@ Quando il servizio Forms esegue il rendering di un modulo, restituisce un flusso
 
 [Rendering di moduli basati su frammenti tramite l&#39;API del servizio Web](#render-forms-based-on-fragments-using-the-web-service-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Rendering di moduli basati su frammenti mediante l&#39;API Java {#render-forms-based-on-fragments-using-the-java-api}
 
-Eseguire il rendering di un modulo basato sui frammenti utilizzando l&#39;API Forms (Java):
+Eseguire il rendering di un modulo basato su frammenti utilizzando l&#39;API Forms (Java):
 
 1. Includi file di progetto
 
    Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
    * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
@@ -116,9 +119,9 @@ Eseguire il rendering di un modulo basato sui frammenti utilizzando l&#39;API Fo
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passare un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
+   * Richiamate il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passate un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
    * Richiamate il metodo dell&#39; `URLSpec` oggetto `setContentRootURI` e passate un valore di stringa che specifica il valore URI della radice del contenuto. Verificare che la struttura del modulo e i frammenti si trovino nell&#39;URI principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento alla directory archivio, specificare `repository://`.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
+   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore di stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
 
 1. Eseguire il rendering del modulo
 
@@ -129,7 +132,8 @@ Eseguire il rendering di un modulo basato sui frammenti utilizzando l&#39;API Fo
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms per eseguire il rendering di un modulo basato su frammenti.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+
+   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -143,11 +147,11 @@ Eseguire il rendering di un modulo basato sui frammenti utilizzando l&#39;API Fo
 
 **Consulta anche**
 
-[Rendering di moduli basati su frammenti](#rendering-forms-based-on-fragments)
+[Rendering di Forms basato su frammenti](#rendering-forms-based-on-fragments)
 
 [Avvio rapido (modalità SOAP): Rendering di un modulo basato su frammenti utilizzando l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -157,19 +161,19 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l&#39;API di 
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
    Creare un `FormsService` oggetto e impostare i valori di autenticazione.
 
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passare un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
+   * Richiamate il metodo dell&#39; `URLSpec` oggetto `setApplicationWebRoot` e passate un valore di stringa che rappresenta la radice Web dell&#39;applicazione.
    * Richiamate il metodo dell&#39; `URLSpec` oggetto `setContentRootURI` e passate un valore di stringa che specifica il valore URI della radice del contenuto. Verificare che la struttura del modulo si trovi nell&#39;URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento alla directory archivio, specificare `repository://`.
-   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
+   * Richiamare il metodo dell&#39; `URLSpec` oggetto `setTargetURL` e passare un valore di stringa che specifica il valore dell&#39;URL di destinazione in cui vengono inviati i dati del modulo. Se si definisce l&#39;URL di destinazione nella struttura del modulo, è possibile passare una stringa vuota. È inoltre possibile specificare l&#39;URL al quale viene inviato il modulo per eseguire i calcoli.
 
 1. Eseguire il rendering del modulo
 
@@ -181,10 +185,11 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l&#39;API di 
    * Un `URLSpec` oggetto che contiene i valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo di cui è stato effettuato il rendering.
-   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento memorizza il numero di pagine nel modulo.
+   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. Questo argomento memorizzerà il valore delle impostazioni internazionali.
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -198,6 +203,6 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l&#39;API di 
 
 **Consulta anche**
 
-[Rendering di moduli basati su frammenti](#rendering-forms-based-on-fragments)
+[Rendering di Forms basato su frammenti](#rendering-forms-based-on-fragments)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
