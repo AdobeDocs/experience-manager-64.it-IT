@@ -24,7 +24,7 @@ Quando visualizzate gli elenchi delle operazioni, è possibile che vengano visua
 
 ## Informazioni sugli elenchi Da fare {#about-todo-lists}
 
-L’area di lavoro Moduli AEM include i tre tipi seguenti di elenchi Da fare:
+&#39;area di lavoro di AEM Forms include i tre tipi seguenti di elenchi Da fare:
 
 * Singoli elenchi, che contengono attività assegnate direttamente all&#39;utente.
 * Elenchi di gruppi, che contengono attività assegnate a un gruppo. Qualsiasi membro del gruppo può aprire e completare le attività. Per aprire un&#39;attività, un membro di un gruppo deve prima reclamare l&#39;attività.
@@ -106,7 +106,7 @@ Quando aprite e richiedete un&#39;attività da un gruppo o un elenco condiviso, 
 
 Dopo aver aperto un’attività, le schede visualizzate nel riquadro principale e gli strumenti disponibili dipendono dall’attività. Le schede visualizzate sono descritte di seguito:
 
-**Riepilogo** attività: Quando si apre un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se esistente, utilizzando un URL specificato nel processo al passaggio Assegna attività. Utilizzando il riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un&#39;attività, per aggiungere ulteriori valori all&#39;utente finale dell&#39;area di lavoro Moduli AEM. Questa scheda non è disponibile, se l&#39;URL di riepilogo attività non esiste.
+**Riepilogo** attività: Quando si apre un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se esistente, utilizzando un URL specificato nel processo al passaggio Assegna attività. Utilizzando il riquadro di riepilogo delle attività è possibile visualizzare informazioni aggiuntive e rilevanti per un&#39;attività, per aggiungere ulteriori valori all&#39;utente finale dell&#39;area di lavoro di  AEM Forms. Questa scheda non è disponibile, se l&#39;URL di riepilogo attività non esiste.
 
 **Dettagli**: Fornisce alcune informazioni sull&#39;attività corrente e sul processo a cui appartiene.
 
@@ -148,7 +148,7 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
 
 ### Operazioni offline {#take-a-task-offline}
 
-È possibile lavorare su un&#39;attività offline e successivamente inviare il modulo da Adobe® Reader®, Adobe® Acrobat® Professional o Adobe® Acrobat® Standard. Quando il modulo viene inviato, il client di posta elettronica viene avviato con l&#39;indirizzo e-mail del server appropriato. È quindi possibile inviare il modulo compilato al server tramite e-mail.
+È possibile lavorare su un&#39;attività offline e successivamente inviare il modulo da  Adobe® Reader® o  Adobe®  Acrobat® Professional o  Adobe®  Acrobat® Standard. Quando il modulo viene inviato, il client di posta elettronica viene avviato con l&#39;indirizzo e-mail del server appropriato. È quindi possibile inviare il modulo compilato al server tramite e-mail.
 
 1. In qualsiasi scheda, fate clic su **Offline**.
 1. Specificare un nome di file in cui salvare il modulo e fare clic su **Salva**. Il modulo associato all&#39;attività viene salvato localmente e l&#39;attività rimane nell&#39;elenco A fino all&#39;invio del modulo.
@@ -231,10 +231,10 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 1. Effettuare una delle seguenti operazioni:
 
    * Selezionate l’attività e fate clic sul pulsante appropriato per il passaggio successivo richiesto nel processo in fondo all’elenco.
-   * Se il modulo non dispone di pulsanti e il pulsante Completa nell’area di lavoro Moduli AEM è disponibile, fate clic su **Completa**.
-   * Se il modulo contiene pulsanti e il pulsante Completa nell’area di lavoro Moduli AEM non è disponibile, fare clic sul pulsante appropriato del modulo per il passaggio successivo richiesto nel processo.
+   * Se il modulo non dispone di pulsanti e &#39;area di lavoro AEM Forms è disponibile il pulsante Completa, fare clic su **Completa**.
+   * Se il modulo contiene dei pulsanti e il pulsante Completa nell&#39;area di lavoro  AEM Forms non è disponibile, fare clic sul pulsante appropriato del modulo per il passaggio successivo richiesto nel processo.
 
-   Se il modulo non dispone di pulsanti e il pulsante Completa nell’area di lavoro Moduli AEM non è disponibile, viene visualizzato un messaggio che indica che non è possibile inviare il modulo.
+   Se il modulo non dispone di pulsanti e il pulsante Completa nell&#39;area di lavoro di  AEM Forms non è disponibile, viene visualizzato un messaggio che indica che non è possibile inviare il modulo.
 
 1. Se viene visualizzata una finestra di dialogo di conferma, effettuate una delle seguenti operazioni:
 
@@ -243,7 +243,7 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 
 >[!NOTE]
 >
->È possibile visualizzare un pulsante di invio all&#39;interno dei moduli HTML quando le proprietà di processo sono utilizzate in un modulo. Questo pulsante non è visibile quando viene eseguito il rendering dello stesso modulo come PDF. Per completare un’attività, fate clic sul pulsante Invia nella parte inferiore dell’area di lavoro Moduli AEM, all’esterno del modulo e non sul pulsante Invia all’interno del modulo.
+>È possibile visualizzare un pulsante di invio all&#39;interno dei moduli HTML quando le proprietà di processo sono utilizzate in un modulo. Questo pulsante non è visibile quando viene eseguito il rendering dello stesso modulo come PDF. Per completare un&#39;attività, fare clic sul pulsante Invia disponibile nella parte inferiore dell&#39;area di lavoro di AEM Forms , all&#39;esterno del modulo e non sul pulsante Invia all&#39;interno del modulo.
 
 ### Attività di approvazione in blocco {#bulk-approve-tasks}
 
@@ -272,33 +272,33 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 
 Puoi ricevere e completare le attività tramite e-mail. La partecipazione alle attività tramite e-mail elimina la necessità di controllare regolarmente l&#39;elenco delle attività da eseguire per individuare nuove attività o di controllare lo stato di un&#39;attività nella pagina Tracciamento.
 
-Innanzitutto, impostate le preferenze dell&#39;area di lavoro Moduli AEM per ricevere le notifiche e-mail. L&#39;area di lavoro Moduli AEM può inviare notifiche e-mail per attività nell&#39;elenco A-do o in qualsiasi elenco A-do del gruppo a cui appartenete. L’amministratore determina quando i messaggi e-mail di notifica vengono inviati e chi li riceve.
+Innanzitutto, impostate le preferenze dell&#39;area di lavoro  AEM Forms in modo da ricevere le notifiche e-mail. &#39;area di lavoro di AEM Forms può inviare notifiche e-mail per attività nell&#39;elenco A o in qualsiasi elenco A gruppi a cui appartenete. L’amministratore determina quando i messaggi e-mail di notifica vengono inviati e chi li riceve.
 
-I messaggi e-mail possono contenere un collegamento che apre l’attività nell’area di lavoro di AEM Forms, un allegato del modulo utilizzato per l’attività o azioni per completare l’attività tramite e-mail. Se un modulo è incluso nel messaggio e-mail, è possibile aprire il modulo e completare l&#39;attività se nel modulo sono incorporati i pulsanti per completare l&#39;attività. Se nel messaggio e-mail sono incluse delle azioni per completare l’attività, potete completare l’attività facendo clic sulle azioni contenute nel messaggio e-mail o rispondendo all’e-mail con l’azione digitata come prima riga nel corpo del messaggio e-mail.
-
->[!NOTE]
->
->Per configurare l’area di lavoro in modo da utilizzare i modelli e-mail appropriati, consultate la guida per l’amministratore [AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
-
-Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimossa dall&#39;elenco A nell&#39;area di lavoro Moduli AEM.
+I messaggi e-mail possono contenere un collegamento che apre l’attività ’area di lavoro di AEM Forms, un allegato del modulo utilizzato per l’attività o azioni per completare l’attività tramite e-mail. Se un modulo è incluso nel messaggio e-mail, è possibile aprire il modulo e completare l&#39;attività se nel modulo sono incorporati i pulsanti per completare l&#39;attività. Se nel messaggio e-mail sono incluse delle azioni per completare l’attività, potete completare l’attività facendo clic sulle azioni contenute nel messaggio e-mail o rispondendo all’e-mail con l’azione digitata come prima riga nel corpo del messaggio e-mail.
 
 >[!NOTE]
 >
->Se l’utente non ha eseguito l’accesso all’area di lavoro Moduli AEM nel browser e apre un collegamento a un’attività A, il collegamento A-do diretto non si apre e visualizza un’eccezione. Accedete all’area di lavoro Moduli AEM prima di fare clic sui collegamenti nelle e-mail.
+>Per configurare l’area di lavoro in modo da utilizzare i modelli e-mail appropriati, consultate la [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+
+Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimossa dall&#39;elenco A nell&#39;area di lavoro  AEM Forms.
 
 >[!NOTE]
 >
->Non potete inoltrare una notifica e-mail per assegnare un’attività a un altro utente. È possibile inoltrare le attività solo ad altri utenti dall&#39;area di lavoro Moduli AEM.
+>Se l&#39;utente non ha eseguito l&#39;accesso &#39;area di lavoro AEM Forms nel browser e apre un collegamento a un&#39;attività A-do, il collegamento A-do diretto non si apre e visualizza un&#39;eccezione. Effettuate il login nell&#39;area di lavoro di  AEM Forms prima di fare clic sui collegamenti nelle e-mail.
+
+>[!NOTE]
+>
+>Non potete inoltrare una notifica e-mail per assegnare un’attività a un altro utente. È possibile inoltrare le attività solo ad altri utenti dall’area di lavoro  AEM Forms.
 
 ### Ricevi messaggi di notifica e-mail {#receive-email-notification-messages}
 
 1. Fate clic su **Preferenze**.
 1. Nell’elenco **Notifica eventi attività tramite e-mail** , selezionare **Sì**.
-1. Per includere il modulo e i dati con il messaggio e-mail, selezionare **Sì** dall’elenco **Allega moduli in e-mail**.
+1. Per includere il modulo e i dati con il messaggio e-mail, nell&#39;elenco **Allega Forms in e-mail** , selezionare **Sì**.
 
 ## Partecipazione alle attività mediante i dispositivi mobili {#participating-in-tasks-through-mobile-devices}
 
-Puoi utilizzare l’app dell’area di lavoro AEM Forms per partecipare alle attività dal dispositivo mobile. Prima di installare l&#39;applicazione, verificate con l&#39;amministratore di sistema che l&#39;organizzazione supporti l&#39;utilizzo dell&#39;app dell&#39;area di lavoro AEM Forms.
+Potete utilizzare &#39;app dell&#39;area di lavoro AEM Forms per partecipare alle attività dal dispositivo mobile. Prima di installare l&#39;applicazione, verificate con l&#39;amministratore di sistema che l&#39;azienda supporti l&#39;uso &#39;app dell&#39;area di lavoro AEM Forms.
 
 ## Informazioni su scadenze e promemoria {#about-deadlines-and-reminders}
 
