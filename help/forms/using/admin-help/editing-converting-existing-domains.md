@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Puoi modificare le impostazioni per i domini esistenti dalla pagina Gestione dom
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fate clic sul nome del dominio enterprise da convertire.
 1. Fare clic su Converti in dominio ibrido.
-1. Esaminate le informazioni visualizzate sui dati utente e gruppo e sull’autenticazione degli utenti, quindi fate clic su OK.
+1. Esaminate le informazioni visualizzate in merito ai dati utente e di gruppo e all’autenticazione degli utenti, quindi fate clic su OK.
 1. Modificate le impostazioni per il dominio ibrido e fate clic su OK.
 
 >[!NOTE]
@@ -45,6 +48,6 @@ Puoi modificare le impostazioni per i domini esistenti dalla pagina Gestione dom
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul nome del dominio ibrido da convertire.
 1. Fate clic su Converti in dominio Enterprise.
-1. Esaminate le informazioni visualizzate sui dati utente e gruppo e sull’autenticazione degli utenti, quindi fate clic su OK.
+1. Esaminate le informazioni visualizzate in merito ai dati utente e di gruppo e all’autenticazione degli utenti, quindi fate clic su OK.
 1. Fate clic su Aggiungi directory e configurate le informazioni di directory richieste. Consultate [Aggiunta di directory o SPI](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizzati.
 
