@@ -1,24 +1,27 @@
 ---
 title: Miglioramenti dell’esperienza utente nelle risorse
-description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in Risorse AEM 6.4.
+description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in AEM 6.4 Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 1%
 
 ---
 
 
 # Miglioramenti dell’esperienza utente nelle risorse {#user-experience-enhancements-in-assets}
 
-Risorse AEM 6.4: diversi miglioramenti a livello di usabilità che offrono agli utenti un’esperienza più semplice e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare e gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
+AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che offrono agli utenti un&#39;esperienza senza soluzione di continuità e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare e gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
 
 L&#39;interfaccia è più reattiva e consente di gestire in modo efficiente un ampio portafoglio di risorse. Potete cercare, visualizzare, ordinare e scorrere rapidamente un lungo elenco di elementi.
 
-Potete personalizzare le diverse viste (viste a schede, a elenco e a colonne). Ad esempio, potete configurare la dimensione delle miniature da visualizzare nella vista a schede. Per la vista Elenco, potete configurare il livello di dettaglio che desiderate visualizzare per le risorse nell’elenco. Risorse AEM 6.4 include una nuova vista ad albero che consente di navigare facilmente nell’archivio delle risorse e di trovare le risorse.
+Potete personalizzare le diverse viste (viste a schede, a elenco e a colonne). Ad esempio, potete configurare la dimensione delle miniature da visualizzare nella vista a schede. Per la vista Elenco, potete configurare il livello di dettaglio che desiderate visualizzare per le risorse nell’elenco. AEM 6.4 Assets include una nuova vista ad albero che consente di navigare comodamente nell’archivio delle risorse e di trovare le risorse.
 
 ## Caricamento pigro {#lazy-loading}
 
-Quando ricerchi/cerchi risorse in Risorse AEM 6.4, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si passa in rassegna un lungo elenco di risultati. Poiché un numero significativo di risorse vengono caricate alla volta, la navigazione risulta fluida.
+Quando cercate le risorse in AEM 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si passa in rassegna un lungo elenco di risultati. Poiché un numero significativo di risorse vengono caricate alla volta, la navigazione risulta fluida.
 
 Se toccate o fate clic su una risorsa per visualizzarne la pagina dei dettagli, potete tornare alla pagina dei risultati semplicemente toccando o facendo clic sul pulsante Indietro nella barra degli strumenti.
 
@@ -62,7 +65,7 @@ Oltre alle viste a schede e a elenco, ora potete passare alla pagina dei dettagl
 
 ## Struttura {#tree-view}
 
-Risorse AEM 6.4 include una vista ad albero che consente di esplorare comodamente la gerarchia delle risorse e individuare la risorsa o la cartella desiderata.
+AEM 6.4 Assets include una vista ad albero che consente di esplorare comodamente la gerarchia delle risorse e individuare la risorsa o la cartella desiderata.
 
 Per aprire la vista ad albero, toccate o fate clic sull&#39;icona di navigazione globale nel `Assets UI`menu, quindi scegliete Struttura **** contenuto dal menu.
 
@@ -80,7 +83,7 @@ A seconda del dispositivo, è inoltre possibile scorrere o utilizzare i tasti fr
 
 A seconda del layout scelto, potete aprire la pagina dei dettagli di una risorsa nei seguenti modi:
 
-| **Visualizzazione** | **Come aprire la pagina dei dettagli della risorsa** |
+| **Visualizza** | **Come aprire la pagina dei dettagli della risorsa** |
 |---|---|
 | [!UICONTROL Vista a schede] | Toccate o fate clic sulla sezione della risorsa. |
 | [!UICONTROL Vista a elenco] | Toccate o fate clic sulla voce della riga relativa alla risorsa nell’elenco. |
