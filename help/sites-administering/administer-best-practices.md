@@ -1,8 +1,8 @@
 ---
-title: Best practice
-seo-title: Best practice
-description: Scoprite le best practice compilate dai team tecnici e di consulenza di Adobe per consentire agli amministratori di iniziare a utilizzare il prodotto.
-seo-description: Scoprite le best practice compilate dai team tecnici e di consulenza di Adobe per consentire agli amministratori di iniziare a utilizzare il prodotto.
+title: 'Best practice  '
+seo-title: 'Best practice  '
+description: Scopri le best practice compilate dai team di progettazione e consulenza  Adobe per aiutare gli amministratori a iniziare a lavorare.
+seo-description: Scopri le best practice compilate dai team di progettazione e consulenza  Adobe per aiutare gli amministratori a iniziare a lavorare.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 16%
 
 ---
 
 
-# Best practice{#best-practices}
+# Best practice  {#best-practices}
 
 Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
@@ -50,7 +53,7 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
   </tr>
   <tr>
    <td>Integrazione di Scene7 e AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Procedure ottimali per l’integrazione di Scene7 con AEM</a></td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Procedure ottimali per l'integrazione di Scene7 con AEM</a></td> 
    <td><p>Descrive quando attivare Importazione polling, come testare l’integrazione e quando utilizzare il browser del contenuto anziché caricare direttamente sulle risorse.</p> </td> 
   </tr>
   <tr>
@@ -59,9 +62,9 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
    <td>Come parte della documentazione sulla <a href="/help/assets/managing-image-presets.md">gestione dei predefiniti</a>per immagini, questi argomenti descrivono il significato dei predefiniti per immagini e le procedure ottimali per la selezione delle opzioni per i predefiniti per immagini.</td> 
   </tr>
   <tr>
-   <td>Contenuti multimediali dinamici e integrazione diretta con Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione di Scene7/AEM con i contenuti multimediali dinamici</a></td> 
-   <td>Descrive quando è meglio utilizzare la soluzione per contenuti multimediali dinamici, quando integrare S7 con AEM o quando utilizzare entrambi.</td> 
+   <td>Dynamic Media e integrazione diretta con Scene7</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Media</a></td> 
+   <td>Descrive quando è meglio utilizzare la soluzione per contenuti multimediali dinamici, quando integrare S7 con AEM o quando utilizzarli.</td> 
   </tr>
  </tbody>
 </table>
@@ -74,17 +77,17 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
  <tbody>
   <tr>
    <td>Conformità GDPR</td> 
-   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">Conformità al GDPR di AEM Sites</a></td> 
-   <td>Il regolamento generale dell'Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018. AEM Sites è conforme al GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.</td> 
+   <td><a href="/help/sites-administering/gdpr-compliance-sites.md"> conformità AEM Sites GDPR</a></td> 
+   <td>Il regolamento generale dell'Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018.  AEM Sites è conforme al GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in  AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.</td> 
   </tr>
   <tr>
    <td>Definite l’interfaccia utente predefinita per l’istanza.</td> 
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configurazione dell’interfaccia utente predefinita per l’istanza</a></p> </td> 
-   <td>AEM offre due interfacce: touch e classica. In questa sezione viene illustrato come definire l'interfaccia utente predefinita per l'istanza.</td> 
+   <td>AEM dispone di due interfacce: touch e classica. In questa sezione viene illustrato come definire l'interfaccia utente predefinita per l'istanza.</td> 
   </tr>
   <tr>
    <td>Gestione multisito</td> 
-   <td><a href="/help/sites-administering/msm-best-practices.md">Best practice MSM</a></td> 
+   <td><a href="/help/sites-administering/msm-best-practices.md">Tecniche consigliate per MSM</a></td> 
    <td>Procedure ottimali per l'utilizzo di MSM per automatizzare la distribuzione dei contenuti. </td> 
   </tr>
   <tr>
