@@ -1,8 +1,8 @@
 ---
 title: Componenti per frammenti di contenuto
 seo-title: Componenti per frammenti di contenuto
-description: I frammenti di contenuto di AEM vengono creati e gestiti come risorse indipendenti dalle pagine
-seo-description: I frammenti di contenuto di AEM vengono creati e gestiti come risorse indipendenti dalle pagine
+description: AEM frammenti di contenuto vengono creati e gestiti come risorse indipendenti dalla pagina
+seo-description: AEM frammenti di contenuto vengono creati e gestiti come risorse indipendenti dalla pagina
 uuid: 289ed9cb-9531-43a9-b0d8-a3499e2e9ee5
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +41,7 @@ Consultate API di gestione dei frammenti di [contenuto - lato](/help/sites-devel
 >
 >In questa sezione viene illustrato il componente originale distribuito per l’uso con i frammenti di contenuto (frammento **di** contenuto nel gruppo **Generale** ).
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante la creazione di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche usare una risorsa frammento di contenuto esistente [trascinandola dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come ad esempio Immagine del componente base). Il componente frammento di contenuto fornito visualizza un solo [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui si fa riferimento. La finestra di dialogo del componente consente di definire l’ [elemento, la variante e l’intervallo di paragrafi](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento da visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche usare una risorsa frammento di contenuto esistente [trascinandola dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come ad esempio Immagine del componente base). Il componente frammento di contenuto fornito visualizza un solo [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui si fa riferimento. La finestra di dialogo del componente consente di definire l’ [elemento, la variante e l’intervallo di paragrafi](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento da visualizzare sulla pagina.
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ Solo l’editor dell’interfaccia touch supporta completamente i componenti dei
 
 * `cq.authoring.editor.plugin.cfm`
 
-Questa libreria aggiunge all’editor funzioni specifiche dei frammenti di contenuto. Ad esempio, sono disponibili il supporto per la possibilità di aggiungere e configurare frammenti di contenuto nella pagina, la possibilità di cercare risorse per frammenti di contenuto nel browser Risorse e per il contenuto associato nel pannello laterale.
+Questa libreria aggiunge all’editor funzioni specifiche per i frammenti di contenuto. Ad esempio, sono disponibili il supporto per la possibilità di aggiungere e configurare frammenti di contenuto nella pagina, la possibilità di cercare risorse per frammenti di contenuto nel browser Risorse e per il contenuto associato nel pannello laterale.
 
 ### Contenuto intermedio {#in-between-content}
 
