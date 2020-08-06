@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ Di seguito sono riportati alcuni esempi JSP EL comunemente utilizzati per la sol
 * Per concatenare due stringhe: ${str1} ${str2}
 * Per confrontare due numeri: ${age &lt; 18}
 
-Ulteriori informazioni sono disponibili nella specifica [EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP. Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
+Per ulteriori informazioni, consulta la specifica [EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP. Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
 
 * Gli indici delle raccolte e le chiavi di mappa (utilizzando la [] notazione) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
 * Di seguito sono riportati i tipi di parametro o i tipi di restituzione delle funzioni utilizzate nelle espressioni:
@@ -79,7 +82,7 @@ Le funzioni remote consentono di utilizzare la logica personalizzata nelle espre
    1. **Abilitato**: Determina se questo metodo è abilitato. Expression Manager ignora i metodi disattivati.
    1. **familyId**: Specifica la famiglia del metodo (gruppo). Se vuoto, Expression Manager presuppone che il metodo appartenga alla famiglia predefinita. Non esiste un registro delle famiglie (ad eccezione di quello predefinito) da cui vengono scelte le funzioni. Expression Manager crea dinamicamente il Registro di sistema, unendo tutti gli ID familiari specificati da tutte le funzioni esportate dai vari bundle. Assicurarsi che l’ID qui specificato sia ragionevolmente leggibile, in quanto viene visualizzato anche nell’interfaccia utente di authoring delle espressioni.
    1. **displayName**: Un nome leggibile dall&#39;utente per la funzione. Questo nome viene utilizzato per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea un nome predefinito utilizzando il prefisso della funzione e il nome locale.
-   1. **Descrizione**: Descrizione dettagliata della funzione. Questa descrizione viene utilizzata per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea una descrizione predefinita utilizzando il prefisso della funzione e il nome locale.
+   1. **Descrizione**: Una descrizione dettagliata della funzione. Questa descrizione viene utilizzata per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea una descrizione predefinita utilizzando il prefisso della funzione e il nome locale.
 
    ```java
    package mergeandfuse.com;
