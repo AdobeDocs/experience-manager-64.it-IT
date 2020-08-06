@@ -1,9 +1,12 @@
 ---
 title: Configurare i plug-in Editor Rich Text
-description: Scoprite come configurare i plug-in Editor di testo RTF di AEM per abilitare singole funzionalità.
+description: Scoprite come configurare i plug-in Editor di testo AEM per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+workflow-type: tm+mt
+source-wordcount: '4220'
+ht-degree: 3%
 
 ---
 
@@ -36,12 +39,12 @@ Per impostazione predefinita, `format`, `link`, `list`, `justify`e `control` i p
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nodo di configurazione alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Sono di tipo: **jcr:directType**`cq:Widget`
+   * Sono di tipo: **jcr:PrimaryType** `cq:Widget`
    * Entrambe hanno la seguente proprietà:
 
       * **Nome** `name`
       * **Tipo** `String`
-      * **Valore**`./text`
+      * **Valore** `./text`
 
 
 1. A seconda dell’interfaccia per la quale state configurando, create un nodo `<rtePlugins-node>`, se non esiste:
@@ -73,7 +76,7 @@ Dopo aver attivato un plug-in, attenetevi alle seguenti linee guida per configur
   <tr> 
    <td><strong>Tipo</strong></td> 
    <td>Stringa</td> 
-   <td>String[] (multi-stringa; impostare Tipo su Stringa e fare clic su Più in CRXDE Lite)</td> 
+   <td>String[] (multi-stringa; imposta Tipo su Stringa e fai clic su Più in CRXDE Lite)</td> 
    <td>Stringa</td> 
   </tr> 
   <tr> 
@@ -99,11 +102,11 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare il contenu
 
 * **Modalità** browser: Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati.
 
-* **Modalità** testo normale: Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM.
+* **Modalità** testo normale: Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserire AEM componente.
 
 * **Modalità** MS Word: Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale.
 
-### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Nella barra degli strumenti dell’editor Rich Text è possibile fornire agli autori alcune o nessuna di queste tre icone:
 
@@ -130,7 +133,7 @@ La configurazione consente tre tipi di casi di utilizzo:
 
 * Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati. Configurato utilizzando `browser` di seguito.
 
-* Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM. Configurato utilizzando `plaintext` di seguito.
+* Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserire AEM componente. Configurato utilizzando `plaintext` di seguito.
 
 * Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale. Configurato utilizzando `wordhtml` di seguito.
 
@@ -143,16 +146,16 @@ La configurazione consente tre tipi di casi di utilizzo:
 
 ### Configurare i formati consentiti per incollare il contenuto {#pasteformats}
 
-È possibile configurare ulteriormente la modalità Incolla come Microsoft Word (`paste-wordhtml`) in modo da definire in modo esplicito gli stili consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft Word.
+La modalità Incolla come Microsoft Word (`paste-wordhtml`) può essere configurata ulteriormente in modo da poter definire in modo esplicito gli stili consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft Word.
 
-Ad esempio, se per incollare in AEM solo i formati grassetto e gli elenchi devono essere consentiti, potete filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
+Ad esempio, se è consentito incollare AEM solo formati ed elenchi in grassetto, è possibile filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
 
 * [Testo](#pastemodes)
 * [Collegamenti](#linkstyles)
 
 Per i collegamenti è inoltre possibile definire i protocolli accettati automaticamente.
 
-Per configurare quali formati sono consentiti quando si incolla del testo in AEM da un altro programma:
+Per configurare quali formati sono consentiti quando si incolla testo in AEM da un altro programma:
 
 1. Nel componente, andate al nodo `<rtePlugins-node>/edit`. Creare i nodi se questi non esistono. Per ulteriori dettagli, consultate [Attivare un plug-in](#activateplugin).
 1. Create un nodo sotto il `edit` nodo per mantenere le regole di incolla HTML:
@@ -172,6 +175,7 @@ Per configurare quali formati sono consentiti quando si incolla del testo in AEM
    * **Nome** `underline`
    * **Nome** `anchor` (per collegamenti e ancoraggi denominati)
    * **Nome** `image`
+
    Tutte le proprietà sono di **tipo** `Boolean`, quindi in **Valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
 
    >[!NOTE]
@@ -290,6 +294,7 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
    * **Nome** `externalStyleSheets`
    * **Type** `String[]` (multi-stringa; fate clic su **Multi** in CRXDE)
    * **Valore(i)** Percorso e nome del file di ogni foglio di stile da includere. Utilizzare i percorsi dell&#39;archivio.
+
    >[!NOTE]
    È possibile aggiungere riferimenti a fogli di stile aggiuntivi in qualsiasi momento successivo.
 
@@ -411,7 +416,7 @@ Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, 
 
 ## Configurare i caratteri speciali {#spchar}
 
-In un’installazione standard di AEM, quando il `misctools` plug-in è abilitato per caratteri speciali (`specialchars`) è immediatamente disponibile per l’uso una selezione predefinita; ad esempio, i simboli di copyright e marchio.
+In un&#39;installazione standard di AEM, quando il `misctools` plug-in è abilitato per caratteri speciali (`specialchars`) è immediatamente disponibile per l&#39;uso una selezione predefinita; ad esempio, i simboli di copyright e marchio.
 
 È possibile configurare l’editor Rich Text per rendere disponibile la propria selezione di caratteri; mediante la definizione di caratteri distinti o di un&#39;intera sequenza.
 
@@ -425,7 +430,7 @@ Se si aggiungono caratteri speciali, la selezione predefinita viene ignorata. Se
 
    * **Nome** `features`
    * **Tipo** `String[]`
-   * **Valore**`specialchars`
+   * **Valore** `specialchars`
 
           (o `String / *` se si applicano tutte le funzioni per questo plug-in)
 
@@ -469,10 +474,12 @@ In CRXDE, aggiungere un singolo carattere da rendere disponibile nella barra deg
 1. Sotto questo nodo (denominato in base all&#39;intervallo di caratteri speciale) aggiungere le due seguenti proprietà:
 
    * **Nome** `rangeStart`
+
       **Tipo** `Long`
       **Valore** della rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
+
       **Tipo** `Long`
       **Valore** della rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere dell&#39;intervallo
 
@@ -482,11 +489,11 @@ In CRXDE, aggiungere un singolo carattere da rendere disponibile nella barra deg
 
    ![In CRXDE, definire un intervallo di caratteri da rendere disponibili in RTE](assets/chlimage_1-413.png)
 
-         In *CRXDE, definire un intervallo di caratteri da rendere disponibili in RTE*
+         *In CRXDE, definire un intervallo di caratteri da rendere disponibili in RTE*
 
    ![I caratteri speciali disponibili nell’editor Rich Text vengono visualizzati dagli autori in una finestra a comparsa](assets/rtepencil.png)
 
-         I caratteri *speciali disponibili nell’editor Rich Text vengono visualizzati dagli autori in una finestra a comparsa*
+         *I caratteri speciali disponibili nell’editor Rich Text vengono visualizzati dagli autori in una finestra a comparsa*
 
 ## Configurare gli stili di tabella {#tablestyles}
 
@@ -504,6 +511,7 @@ Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è 
    * **Nome** `features`
    * **Tipo** `String`
    * **Valore** `*` (asterisco)
+
    >[!NOTE]
    Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la `features` proprietà come:
    * **Tipo** `String[]`
@@ -574,7 +582,7 @@ Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Tex
 >[!NOTE]
 Il messaggio `Spell checking failed` viene visualizzato se viene eseguito un controllo per una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
 
-Un’installazione standard di AEM include i dizionari per inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, procedere come segue.
+Un&#39;installazione standard AEM include i dizionari per inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, procedere come segue.
 
 1. Passate alla pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -647,6 +655,7 @@ Questa dimensione del rientro è applicata solo ai paragrafi (blocchi) di testo;
    * **Nome** `height`
    * **Tipo** `Long`
    * **Valore** dell’altezza del quadro di modifica in pixel
+
    >[!NOTE]
    L&#39;altezza della finestra di dialogo non viene modificata.
 
@@ -662,18 +671,20 @@ Quando aggiungete collegamenti in AEM, potete definire:
 * Stili CSS da utilizzare
 * I protocolli automaticamente accettati
 
-Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un altro programma, definite le regole HTML.
+Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un altro programma, definire le regole HTML.
 
 1. Utilizzando CRXDE Lite, individuate il componente di testo per il progetto.
 1. Crea un nuovo nodo allo stesso livello `<rtePlugins-node>`, ovvero crea il nodo sotto il nodo principale di `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
+
    >[!NOTE]
    Il `../items/text` nodo ha la proprietà:
    * **Nome** `xtype`
    * **Tipo** `String`
-   * **Valore**`richtext`
+   * **Valore** `richtext`
+
    La posizione del `../items/text` nodo può variare, a seconda della struttura del dialogo; due esempi:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -710,6 +721,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
+
       Sul nodo `targetConfig`: definire le proprietà richieste:
 
       * Specificate la modalità di destinazione:
