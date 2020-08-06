@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 6%
 
 ---
 
@@ -23,11 +26,11 @@ Consulta anche [Note sulla versione di AEM 3D](/help/release-notes/aem3d-releas
 
 Consulta anche [Installazione e configurazione di AEM 3D](install-config-3d.md).
 
-## Modelli e fasi in AEM 3D {#about-models-and-stages-in-aem-d}
+## Modelli e stadi di AEM 3D {#about-models-and-stages-in-aem-d}
 
 AEM 3D consente di visualizzare ed eseguire il rendering di modelli 3D statici e autonomi di alta qualità in ambienti predefiniti denominati Stages. In sostanza, uno stage fornisce &quot;illuminazione&quot; per la scena 3D e le impostazioni per il rendering in un&#39;applicazione nativa come Autodesk® Maya® o Autodesk 3ds Max®. Inoltre, l&#39;area di visualizzazione può includere, facoltativamente, telecamere, sfondi e geometria del piano di messa a terra già definiti.
 
-I file 3D caricati che contengono luci vengono considerati un passaggio. Potete ripristinare tali risorse come semplici oggetti 3D aprendo la risorsa nella pagina dei dettagli della risorsa. Toccate **[!UICONTROL Visualizza proprietà]**, quindi toccate la scheda **[!UICONTROL Base]** . Nell’intestazione Metadati, dall’elenco a discesa Classe risorsa, selezionate Oggetto **** 3D.
+I file 3D caricati che contengono luci vengono considerati come un passaggio. Potete ripristinare tali risorse come semplici oggetti 3D aprendo la risorsa nella pagina dei dettagli della risorsa. Toccate **[!UICONTROL Visualizza proprietà]**, quindi toccate la scheda **[!UICONTROL Base]** . Nell’intestazione Metadati, dall’elenco a discesa Classe risorsa, selezionate Oggetto **** 3D.
 
 Quando create modelli 3D da usare in AEM 3D, tenete presente quanto segue:
 
@@ -38,7 +41,7 @@ Quando create modelli 3D da usare in AEM 3D, tenete presente quanto segue:
 
    Vedi [Caricamento ed elaborazione di risorse 3D in AEM](upload-processing-3d-assets.md).
 
-* L&#39;illuminazione generale della scena è fornita dal palco. Di conseguenza, Adobe non consiglia di includere luci con file di modelli 3D. Potete includere le luci nel modello. Tuttavia, devono essere specifiche solo per il modello. Ad esempio, potrebbe essere necessario includere un&#39;illuminazione aggiuntiva per illuminare una parte dell&#39;oggetto oscurata da altre parti. Pertanto, non sarebbe sufficientemente visibile solo con le luci di scena.
+* L&#39;illuminazione generale della scena è fornita dal palco. Di conseguenza,  Adobe non consiglia di includere luci con file di modelli 3D. È possibile includere le luci nel modello. Tuttavia, devono essere specifiche solo per il modello. Ad esempio, potrebbe essere necessario includere un&#39;illuminazione aggiuntiva per illuminare una parte dell&#39;oggetto oscurata da altre parti. Pertanto, non sarebbe sufficientemente visibile solo con le luci di scena.
 
 ## File supportati in AEM 3D {#supported-files-in-aem-d}
 
@@ -46,7 +49,7 @@ Una tipica risorsa 3D ha un file modello principale e nessuno o più file di rif
 
 ### Informazioni sul file modello 3D principale {#about-the-primary-d-model-file}
 
-Il file principale del modello 3D contiene la geometria effettiva del modello 3D e le definizioni per i materiali (predefiniti) applicati alle superfici del modello. AEM 3D supporta i seguenti formati di file modello 3D primario:
+Il file principale del modello 3D contiene la geometria effettiva del modello 3D e le definizioni per i materiali (predefiniti) applicati alle superfici del modello. AEM 3D supporta i seguenti formati di file modello 3D principali:
 
 * Formato di file OBJ Wavefront (`.obj`)
 
@@ -56,7 +59,7 @@ Il file principale del modello 3D contiene la geometria effettiva del modello 3D
 
    Il formato di interscambio file 3D di Autodesk; formati binario e ASCII.
 
-   Quando create file FBX in applicazioni di terze parti, Adobe consiglia le seguenti impostazioni di configurazione (vedete la tabella seguente). Queste impostazioni consentono di ottenere i migliori risultati per i file 3D che si intende utilizzare in AEM. I nomi delle opzioni sono ricavati dalla finestra di dialogo Opzioni **[!UICONTROL di esportazione]** Autodesk Maya FBX.
+   Quando create file FBX in applicazioni di terze parti,  Adobe consiglia le seguenti impostazioni di configurazione (vedere la tabella seguente). Queste impostazioni consentono di ottenere i risultati migliori per i file 3D che si intende utilizzare in AEM. I nomi delle opzioni sono ricavati dalla finestra di dialogo Opzioni **[!UICONTROL di esportazione]** Autodesk Maya FBX.
 
 <table> 
  <tbody> 
@@ -78,11 +81,11 @@ Il file principale del modello 3D contiene la geometria effettiva del modello 3D
   </tr> 
   <tr> 
    <td>Animazione</td> 
-   <td><p>Selezionate o deselezionate.</p> <p>Se scegli di selezionare questa opzione, AEM 3D ignora le informazioni di animazione presenti nel file.</p> </td> 
+   <td><p>Selezionate o deselezionate.</p> <p>Se scegliete di selezionare questa opzione, AEM 3D ignora le informazioni di animazione presenti nel file.</p> </td> 
   </tr> 
   <tr> 
    <td>Telecamere</td> 
-   <td><p>Selezionare per le fasi <strong></strong>3D.</p> <p>Deselezionare per i modelli 3D.</p> </td> 
+   <td><p>Selezionare per le fasi <strong></strong>3D.</p> <p>Deselezionate questa opzione per i modelli 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Luci</td> 
@@ -90,15 +93,15 @@ Il file principale del modello 3D contiene la geometria effettiva del modello 3D
   </tr> 
   <tr> 
    <td>Unità - Automatico</td> 
-   <td>Seleziona. AEM 3D viene convertito al momento dell’importazione.</td> 
+   <td>Seleziona. AEM 3D viene convertito al momento dell'importazione.</td> 
   </tr> 
   <tr> 
    <td>Conversione asse - Asse Su</td> 
-   <td><p><strong>Y-up</strong></p> <p>La Y-up fornisce risultati coerenti quando si esporta da Maya ed è il sistema di coordinate preferito per i file FBX in questa release AEM 3D.</p> </td> 
+   <td><p><strong>Y-up</strong></p> <p>Y-up dà risultati coerenti quando si esporta da Maya ed è il sistema di coordinate preferito per i file FBX in questa release AEM 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Incorpora file multimediali</td> 
-   <td>Sono supportate entrambe le opzioni. Se è selezionata l’opzione Incorpora, AEM 3D estrae il supporto incorporato in una cartella adiacente con lo stesso nome del file modello al quale <code>.fbm</code> è stato aggiunto.</td> 
+   <td>Sono supportate entrambe le opzioni. Se è selezionata l'opzione Incorpora, AEM 3D estrae il supporto incorporato in una cartella adiacente con lo stesso nome del file modello al quale è <code>.fbm</code> aggiunto.</td> 
   </tr> 
   <tr> 
    <td>Formato file FBX - Tipo</td> 
@@ -111,7 +114,7 @@ Il file principale del modello 3D contiene la geometria effettiva del modello 3D
  </tbody> 
 </table>
 
-I seguenti formati di file aggiuntivi sono supportati se Autodesk Maya è installato e configurato sui server di creazione AEM:
+I seguenti formati di file aggiuntivi sono supportati se Autodesk Maya è installato e configurato AEM server di authoring:
 
 * Autodesk Maya
 
@@ -133,7 +136,7 @@ Le definizioni dei materiali nei file modello 3D possono includere riferimenti a
 * Mappe opacità
 * Mappe di rugosità (dette anche mappe di potenza della luce, riflettività o coseno)
 
-I materiali presenti nel file modello 3D principale possono fare riferimento ad altri tipi di mappe che vengono ignorati da AEM 3D.
+I materiali presenti nel file principale del modello 3D possono fare riferimento ad altri tipi di mappe ignorate da AEM 3D.
 
 ### Immagini IBL (Image Based Lighting) {#ibl-image-based-lighting-images}
 
@@ -158,5 +161,5 @@ Vedi [Rendering delle risorse 3D](rendering-3d-assets.md).
 
 ## Denominazione dei materiali in un file modello 3D principale {#naming-materials-in-a-primary-d-model-file}
 
-Una *superficie* è definita come la superficie di un modello 3D ricoperta dallo stesso materiale. Questo materiale fornisce anche il nome della superficie. Di conseguenza, Adobe consiglia di denominare di conseguenza i materiali inclusi nei file di modelli 3D primari. Ad esempio, l&#39;uso di nomi specifici come &quot;Corpo&quot;, &quot;Finestre&quot;, &quot;Pneumatici&quot; o &quot;Rimetti&quot; è preferito all&#39;uso di nomi vaghi come &quot;Rosso&quot;, &quot;Vetro&quot;, &quot;Gomma&quot;, &quot;Alluminio&quot;.
+Una *superficie* è definita come la superficie di un modello 3D ricoperta dallo stesso materiale. Questo materiale fornisce anche il nome della superficie. Come tale,  Adobe consiglia di assegnare i nomi ai materiali inclusi nei file di modelli 3D primari di conseguenza. Ad esempio, l&#39;uso di nomi specifici come &quot;Corpo&quot;, &quot;Finestre&quot;, &quot;Pneumatici&quot; o &quot;Rimetti&quot; è preferito all&#39;uso di nomi vaghi come &quot;Rosso&quot;, &quot;Vetro&quot;, &quot;Gomma&quot;, &quot;Alluminio&quot;.
 
