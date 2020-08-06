@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +65,7 @@ Sono disponibili diverse console per la gestione dei flussi di lavoro. Utilizza 
 
    >[!NOTE]
    >
-   >Lo stato di interruzione è considerato come una cessazione riuscita in quanto si verifica in seguito all&#39;azione dell&#39;utente; ad esempio:
+   >Lo stato di interruzione è considerato come una cessazione riuscita in quanto si verifica a seguito di un&#39;azione dell&#39;utente; ad esempio:
    >
    >* utilizzo dell&#39;azione **Terminate**
    >* quando una pagina, soggetta a un flusso di lavoro, viene (forzata) eliminata, il flusso di lavoro viene terminato
@@ -74,17 +77,18 @@ Sono disponibili diverse console per la gestione dei flussi di lavoro. Utilizza 
 
 ## Correzione degli errori di istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-Quando un flusso di lavoro non riesce, AEM fornisce la console **Errori** per consentire di esaminare e intraprendere le azioni appropriate una volta gestita la causa originale:
+In caso di errore di un flusso di lavoro, AEM fornisce la console **Errori** per consentire di esaminare e intraprendere le azioni appropriate una volta gestita la causa originale:
 
-* **Dettagli** errore Apre una finestra in cui vengono visualizzati il messaggio di **errore**, il **passo** e lo stack di **errore**.
+* **Dettagli** errore Apre una finestra per visualizzare 
+**Messaggio** di errore, **passo** e **stack** di errore.
 
-* **Cronologia** apertura Mostra i dettagli della cronologia del flusso di lavoro.
+* **Cronologia** di apertura Mostra i dettagli della cronologia del flusso di lavoro.
 
 * **Riprova** esegue di nuovo l&#39;istanza del componente Passaggio script. Utilizzare il comando Ritenta passo dopo aver risolto la causa dell&#39;errore originale. Ad esempio, ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio di elaborazione.
 * **Terminare** Terminare il flusso di lavoro se l&#39;errore ha causato una situazione irreconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali, come le informazioni contenute nel repository, che non sono più valide per l&#39;istanza del flusso di lavoro.
 * **Termina e Riprova** Simili a **Termina** , con la differenza che una nuova istanza del flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
 
-Per esaminare gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, procedere come segue:
+Per indagare sugli errori, quindi riprendere o terminare il flusso di lavoro in seguito, attenetevi alla seguente procedura:
 
 1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
 1. Selezionate **Errori** per visualizzare l&#39;elenco delle istanze del flusso di lavoro che non sono state completate correttamente.
@@ -96,7 +100,7 @@ Per esaminare gli errori, quindi riprendere o terminare il flusso di lavoro in s
 
 Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione.
 
-Configura la configurazione **di rimozione dei flussi di lavoro** Adobe Granite per eliminare le istanze dei flussi di lavoro in base alla loro età e stato. Potete anche eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
+Configurare **configurazione** Adobe di rimozione del flusso di lavoro Granite per eliminare le istanze del flusso di lavoro in base alla loro età e stato. Potete anche eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
 
 Potete anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, create una configurazione che svuota le istanze di un particolare modello di flusso di lavoro quando sono in esecuzione per un periodo molto più lungo del tempo previsto. Create un&#39;altra configurazione che eliminerà tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni del repository.
 
@@ -136,19 +140,19 @@ Per configurare il servizio, potete utilizzare la console [](/help/sites-deployi
   <tr> 
    <td>Modelli Da Rimuovere</td> 
    <td>scheduledpurge.modelIds</td> 
-   <td><p>ID dei modelli di workflow da eliminare. <br /> L'ID è il percorso del nodo del modello, ad esempio: /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di workflow.</p> <p>Per specificare più modelli, fate clic sul pulsante + nella console Web. </p> </td> 
+   <td><p>ID dei modelli di workflow da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di workflow.</p> <p>Per specificare più modelli, fate clic sul pulsante + nella console Web. </p> </td> 
   </tr> 
   <tr> 
    <td>Età flusso di lavoro</td> 
-   <td>scheduledpurge.daysell</td> 
-   <td> Età delle istanze del flusso di lavoro da eliminare, espressa in giorni.</td> 
+   <td>scheduledpurge.daysold</td> 
+   <td>Età delle istanze del flusso di lavoro da eliminare, espressa in giorni.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
-Potete impostare la dimensione massima della inbox configurando il servizio **** Adobe Granite Workflow, utilizzando la console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web o [aggiungendo una configurazione OSGi alla directory archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). La tabella seguente descrive la proprietà configurata per entrambi i metodi.
+È possibile impostare la dimensione massima della inbox configurando il **Adobe Granite Workflow Service**, utilizzando la console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web o [aggiungendo una configurazione OSGi alla directory archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). La tabella seguente descrive la proprietà configurata per entrambi i metodi.
 
 >[!NOTE]
 >
