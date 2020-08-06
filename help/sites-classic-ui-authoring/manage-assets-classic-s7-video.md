@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 46%
 
 ---
 
@@ -55,7 +58,7 @@ Se la risposta è “sì” ad almeno una di queste domande, carica il video dir
 
 Se hai bisogno di un flusso di lavoro o della gestione delle versioni per le tue risorse, devi prima caricarle in Adobe Assets. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. Caricate la risorsa video in Adobe Assets, quindi codificatela e pubblicatela automaticamente in Dynamic Media Classic.
+1. Caricate la risorsa video in  risorse Adobe e codificatela e pubblicate automaticamente in Dynamic Media Classic.
 1. In AEM, accedi alle risorse video in WCM nella scheda **[!UICONTROL Filmati]** del Content Finder.
 1. Creazione con video Dynamic Media Classic o componente video di base.
 
@@ -92,11 +95,11 @@ Se non avete bisogno di un flusso di lavoro o di un controllo delle versioni per
 
 If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Dynamic Media Classic, navigate to the Dynamic Media Classic configuration in the cloud configuration and click **Update the viewer and encoding presets**.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### Caricare il video principale {#uploading-your-master-video}
 
-Per caricare il video principale in Dynamic Media Classic da Adobe DAM:
+Per caricare il video principale su Dynamic Media Classic da  Adobe DAM:
 
 1. Andate alla cartella di destinazione CQ DAM in cui avete configurato la configurazione cloud con i profili di codifica Dynamic Media Classic.
 1. Fai su **[!UICONTROL Carica]** per caricare il video principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
@@ -109,9 +112,9 @@ Per caricare il video principale in Dynamic Media Classic da Adobe DAM:
 
 ### Componente video base e componente video Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
-Con AEM potete accedere sia al componente Video disponibile in Siti che al componente Video dinamico Classic (Scene7). Questi componenti non sono intercambiabili.
+Quando usate AEM, potete accedere sia al componente Video disponibile in Siti che al componente video Dynamic Media Classic (Scene7). Questi componenti non sono intercambiabili.
 
-Il componente Video Dynamic Media Classic funziona solo per i video Dynamic Media Classic. Il componente foundation funziona con i video memorizzati da AEM (che utilizzano ffmpeg) e dai video Dynamic Media Classic.
+Il componente Video Dynamic Media Classic funziona solo per i video Dynamic Media Classic. Il componente foundation funziona con i video memorizzati da AEM (utilizzando ffmpeg) e video Dynamic Media Classic.
 
 La matrice seguente spiega quando utilizzare questi componenti:
 
@@ -119,12 +122,12 @@ La matrice seguente spiega quando utilizzare questi componenti:
 
 >[!NOTE]
 >
->Il componente Video Dynamic Media Classic utilizza il profilo video universale. Tuttavia, potete ottenere il lettore video basato su HTML5 da utilizzare in AEM. In Dynamic Media Classic, copiate il codice da incorporare del lettore video HTML5 predefinito e inseritelo nella pagina AEM.
+>Il componente Video Dynamic Media Classic utilizza il profilo video universale. Tuttavia, potete ottenere il lettore video basato su HTML5 da usare per AEM. In Dynamic Media Classic, copiate il codice da incorporare del lettore video HTML5 predefinito e inseritelo nella pagina AEM.
 
 
 ## Componente video AEM {#aem-video-component}
 
-Anche se per visualizzare i video di Dynamic Media Classic si consiglia di usare il componente video Dynamic Media Classic, questa sezione descrive l’utilizzo di video Dynamic Media Classic con il componente [!UICONTROL Video] Foundation in AEM, a scopo di completezza.
+Anche se per visualizzare i video Dynamic Media Classic si consiglia di usare il componente video Dynamic Media Classic, questa sezione descrive l’utilizzo di video Dynamic Media Classic con il componente [!UICONTROL Video] Foundation in AEM, per completezza.
 
 ### Confronto tra video AEM e video Dynamic Media Classic {#aem-video-and-scene-video-comparison}
 
@@ -149,7 +152,7 @@ Le diverse codifiche video vengono create in base ai predefiniti di codifica Dyn
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
 1. In AEM, passa a **[!UICONTROL Strumenti]** e seleziona **[!UICONTROL Console di configurazione]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Create un nuovo profilo video Dynamic Media Classic. **[!UICONTROL Nel]** Nuovo... selezionate **[!UICONTROL Crea pagina]** , quindi selezionate il modello Profilo video dinamico classico. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. Create un nuovo profilo video Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -160,7 +163,7 @@ Le diverse codifiche video vengono create in base ai predefiniti di codifica Dyn
    | Proprietà | Descrizione |
    |---|---|
    | Configurazione cloud Dynamic Media Classic (Scene7) | Configurazione cloud da utilizzare per i predefiniti di codifica. |
-   | Predefinito di codifica per contenuti multimediali dinamici Classic (Scene7) | Il predefinito di codifica con cui mappare il profilo video. |
+   | Predefinito di codifica per elementi multimediali dinamici Classic (Scene7) | Il predefinito di codifica con cui mappare il profilo video. |
    | Tipo video HTML5 | Questa proprietà consente di impostare il valore della proprietà type dell’elemento sorgente video HTML5. Queste informazioni non vengono fornite dai predefiniti di codifica per elementi multimediali dinamici, ma sono necessarie per il corretto rendering dei video mediante l’elemento video HTML5. Viene fornito un elenco dei formati più comuni, che può tuttavia essere sovrascritto per altri formati. |
 
    Ripeti questo passaggio per tutti i predefiniti di codifica selezionati nella configurazione cloud da usare nel componente video.
