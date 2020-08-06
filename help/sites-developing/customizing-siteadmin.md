@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
 
 La console Amministrazione siti Web può essere estesa per visualizzare colonne personalizzate. La console è basata su un oggetto JSON che può essere esteso creando un servizio OSGI che implementa l&#39; `ListInfoProvider` interfaccia. Tale servizio modifica l&#39;oggetto JSON inviato al client per creare la console.
 
-Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l’ `ListInfoProvider` interfaccia. È costituito dai seguenti passaggi:
+Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l’ `ListInfoProvider` interfaccia. Si compone dei seguenti passaggi:
 
-1. [Creazione del servizio](#creating-the-osgi-service) OSGI e implementazione del bundle che lo contiene nel server AEM.
+1. [Creazione del servizio](#creating-the-osgi-service) OSGI e distribuzione del bundle che lo contiene nel server AEM.
 1. (facoltativo) [Verifica del nuovo servizio](#testing-the-new-service) mediante una chiamata JSON per richiedere l’oggetto JSON utilizzato per creare la console.
 1. [Visualizzazione della nuova colonna](#displaying-the-new-column) estendendo la struttura dei nodi della console nella directory archivio.
 
@@ -33,6 +36,7 @@ Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nell
 >
 >* la console Risorse digitali
 >* la console Community
+
 >
 
 
@@ -59,7 +63,7 @@ Esempio di implementazione:
 Per creare il servizio OSGI:
 
 1. In CRXDE Lite, [create un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
-1. Aggiungete il codice di esempio seguente.
+1. Aggiungete il codice di esempio riportato di seguito.
 1. Create il bundle.
 
 Il nuovo servizio è attivo e funzionante.
@@ -109,6 +113,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* In base alla richiesta e/o alla risorsa fornita, l&#39;implementazione deve decidere se aggiungere o meno le informazioni all&#39;oggetto JSON.
 >* Se l&#39; `ListInfoProvider` implementazione definisce una proprietà già esistente nell&#39;oggetto response, il relativo valore verrà sovrascritto da quello fornito.\
    >  Potete utilizzare la classificazione [del](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) servizio per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
+
 >
 
 
@@ -117,13 +122,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Quando aprite la console di amministrazione dei siti Web e sfogliate il sito, il browser esegue una chiamata ajax per ottenere l’oggetto JSON utilizzato per creare la console. Ad esempio, quando individuate la `/content/geometrixx` cartella, la seguente richiesta viene inviata al server AEM per creare la console:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Per essere certi che il nuovo servizio sia in esecuzione dopo aver distribuito il pacchetto che lo contiene:
 
 1. Impostate il browser sul seguente URL:
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. La risposta deve visualizzare le nuove proprietà come segue:
 
@@ -131,9 +136,9 @@ Per essere certi che il nuovo servizio sia in esecuzione dopo aver distribuito i
 
 ### Visualizzazione della nuova colonna {#displaying-the-new-column}
 
-L’ultimo passaggio consiste nell’adattare la struttura dei nodi della console Amministrazione siti Web per visualizzare la nuova proprietà per tutte le pagine Geometrixx sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
+L’ultimo passaggio consiste nell’adattare la struttura dei nodi della console di amministrazione dei siti Web per visualizzare la nuova proprietà per tutte le pagine di Geometrixx sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
 
-1. In CRXDE Lite, create la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
+1. In CRXDE Lite, creare la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` che rifletta la struttura `/libs/wcm/core/content`.
 
 1. Copiare il nodo `/libs/wcm/core/content/siteadmin` e incollarlo sotto `/apps/wcm/core/content`.
 
@@ -164,7 +169,7 @@ L’ultimo passaggio consiste nell’adattare la struttura dei nodi della consol
 
    Per reindirizzare questa opzione alla versione dell&#39;amministratore del sito, `/apps/wcm/core/content/siteadmin` definire la proprietà `sling:vanityOrder` con un valore superiore a quello definito in `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi è adatto qualsiasi valore superiore.
 
-1. Passate alla console Amministrazione siti Web e andate al sito Geometrixx:
+1. Passate alla console di amministrazione dei siti Web e individuate il sito di Geometrixx:
 
    [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
