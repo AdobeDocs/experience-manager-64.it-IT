@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
 source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
 
 # Punteggio e Badge Essentials {#scoring-and-badges-essentials}
 
-La funzione punteggio e badge di AEM Communities consente di identificare e premiare i membri della community.
+La funzione  punteggio e distintivi AEM Communities consente di identificare e premiare i membri della community.
 
 I dettagli relativi alla configurazione della funzione sono descritti in
 
@@ -116,13 +119,13 @@ Per visualizzare le voci di registro:
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP sull’autore**: la sperimentazione nell’ambiente di authoring produce UGC visibile solo dall’ambiente di authoring.
 
-**JSRP al momento della pubblicazione**: analogamente, se si eseguono test nell’ambiente di pubblicazione, sarà necessario accedere a CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l’istanza di pubblicazione è in esecuzione in modalità [di](../../help/sites-administering/production-ready.md) produzione (modalità di esecuzione nosamplecontent), sarà necessario [abilitare CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP al momento della pubblicazione**: analogamente, se si eseguono test nell’ambiente di pubblicazione, sarà necessario accedere ai CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l’istanza di pubblicazione è in esecuzione in modalità [di](../../help/sites-administering/production-ready.md) produzione (nosamplecontent runmode), sarà necessario [abilitare CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
 
 La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
@@ -133,7 +136,7 @@ Le seguenti API sono disponibili per l&#39;uso:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Gli [aggiornamenti Javadocs più recenti per le versioni](deploy-communities.md#LatestReleases) installate sono disponibili per gli sviluppatori dall&#39;archivio di Adobe. Vedere [Utilizzo di Paradiso per le community: Javadocs](maven.md#javadocs).
+Gli [aggiornamenti Javadocs più recenti per le versioni](deploy-communities.md#LatestReleases) installate sono disponibili per gli sviluppatori dall&#39;archivio del Adobe . Vedere [Utilizzo di Paradiso per le community: Javadocs](maven.md#javadocs).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
@@ -176,12 +179,14 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    * Aggiunta di proprietà di punteggio e contrassegno
 
       * 
+
          ```
          scoringRules = [/etc/community/scoring/rules/comments-scoring,
          /etc/community/scoring/rules/forums-scoring]
          ```
 
       * 
+
          ```
          badgingRules =[/etc/community/badging/rules/comments-scoring,
          /etc/community/badging/rules/forums-scoring]
@@ -220,7 +225,8 @@ Come un utente ha guadagnato due simboli in bronzo e ha ricevuto un badge modera
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* creazione di immagini di badge univoche per diversi siti AEM
+* creazione di immagini di contrassegno univoche per siti AEM diversi
+
 >
 
 
@@ -235,7 +241,7 @@ A scopo investigativo, utilizzando JSRP per esempio, la cartella base contenente
 
 Il nodo figlio di `scoring`è il nome della regola di punteggio. Di conseguenza, si consiglia di assegnare a un server nomi univoci per le regole di punteggio.
 
-Per il sito Geometrixx Engage, l’utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l’ID del sito della community ( `engage-ba81p`), un ID univoco e l’ID dell’utente:
+Per il sito di Geometrixx Engage, l&#39;utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un ID univoco e l&#39;ID dell&#39;utente:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
