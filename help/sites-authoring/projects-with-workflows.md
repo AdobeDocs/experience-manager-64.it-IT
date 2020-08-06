@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 86%
 
 ---
 
@@ -93,9 +96,9 @@ Questo flusso di lavoro consente di richiedere un lancio.
 1. Nel progetto Semplice, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Launch Workflow (Richiedi flusso di lavoro di Launch)**.
 1. Inserisci un titolo per il lancio e inserisci il percorso origine del lancio. Se necessario, puoi anche aggiungere una descrizione e una data di inizio. Seleziona Eredita i dati live della pagina sorgente o Escludi pagine secondarie, a seconda di come vuoi che si comporti il lancio.
 
-   ![chlimage_1-321](assets/chlimage_1-325.png)
+   ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. **Il flusso di lavoro viene visualizzato nell&#39;elenco** Flussi **di lavoro (fate clic su ellissi**... nella sezione **Flussi** di lavoro per accedere a questo elenco).
+1. Fai clic su **Crea**. Il flusso di lavoro inizia. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## Flusso di lavoro Richiedi pagina di destinazione {#request-landing-page-workflow}
 
