@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +75,7 @@ Utilizzare il `get` metodo dell&#39; `I18n` oggetto per internazionalizzare una 
 
 Il primo argomento del `get` metodo deve essere conforme alle seguenti regole:
 
-* Il valore deve essere una stringa letterale. Variabile di tipo `String` non accettabile.
+* Il valore deve essere un valore letterale di stringa. Una variabile di tipo non `String` è accettabile.
 * La stringa letterale deve essere espressa su una sola riga.
 * La stringa fa distinzione tra maiuscole e minuscole.
 
@@ -92,7 +95,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusione di variabili nelle frasi localizzate {#including-variables-in-localized-sentences}
 
-Includi variabili nella stringa localizzata per creare un significato contestuale in una frase. Ad esempio, dopo aver effettuato l&#39;accesso a un&#39;applicazione Web, nella home page viene visualizzato il messaggio &quot;Benvenuti all&#39;amministratore. Hai 2 messaggi nella tua inbox.&quot; Il contesto della pagina determina il nome utente e il numero di messaggi.
+Includete le variabili nella stringa localizzata per creare un significato contestuale in una frase. Ad esempio, dopo aver effettuato l&#39;accesso a un&#39;applicazione Web, nella home page viene visualizzato il messaggio &quot;Benvenuti all&#39;amministratore. Hai 2 messaggi nella tua inbox.&quot; Il contesto della pagina determina il nome utente e il numero di messaggi.
 
 [Nel dizionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), le variabili sono rappresentate in stringhe come indici tra parentesi. Specificare i valori delle variabili come argomenti del `get` metodo. Gli argomenti vengono inseriti dopo il suggerimento di traduzione e gli indici corrispondono all&#39;ordine degli argomenti:
 
@@ -119,7 +122,7 @@ L&#39;API Javascript consente di localizzare le stringhe sul client. Come per il
 
 La cartella `granite.utils` della libreria [](/help/sites-developing/clientlibs.md) client fornisce l&#39;API Javascript. Per utilizzare l&#39;API, includete questa cartella libreria client nella pagina. Le funzioni di localizzazione utilizzano lo `Granite.I18n` spazio dei nomi.
 
-Prima di presentare stringhe localizzate, è necessario impostare le impostazioni internazionali utilizzando la `Granite.I18n.setLocale` funzione. La funzione richiede il codice della lingua dell&#39;impostazione internazionale come argomento:
+Prima di presentare le stringhe localizzate, è necessario impostare le impostazioni internazionali utilizzando la `Granite.I18n.setLocale` funzione. La funzione richiede il codice della lingua dell&#39;impostazione internazionale come argomento:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -176,7 +179,7 @@ Verificare se sono state internazionalizzate tutte le stringhe nell’interfacci
 
 `USR_*Default-String*_尠`
 
-L’immagine seguente mostra la traduzione stub per la home page di AEM:
+L&#39;immagine seguente mostra la traduzione stub per la pagina principale AEM:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
