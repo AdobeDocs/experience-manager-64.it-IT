@@ -1,8 +1,8 @@
 ---
-title: Struttura dell'interfaccia utente di AEM Touch
-seo-title: Struttura dell'interfaccia utente di AEM Touch
-description: L’interfaccia touch, come implementata in AEM, presenta diversi principi sottostanti ed è composta da diversi elementi chiave
-seo-description: L’interfaccia touch, come implementata in AEM, presenta diversi principi sottostanti ed è composta da diversi elementi chiave
+title: Struttura dell’interfaccia AEM touch
+seo-title: Struttura dell’interfaccia AEM touch
+description: L’interfaccia touch, come implementata in AEM, presenta diversi principi di base ed è composta da diversi elementi chiave
+seo-description: L’interfaccia touch, come implementata in AEM, presenta diversi principi di base ed è composta da diversi elementi chiave
 uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 
 
-# Struttura dell&#39;interfaccia utente di AEM Touch{#structure-of-the-aem-touch-enabled-ui}
+# Struttura dell’interfaccia AEM touch{#structure-of-the-aem-touch-enabled-ui}
 
-L’interfaccia touch di AEM presenta diversi principi di base ed è composta da diversi elementi chiave:
+L’interfaccia AEM touch presenta diversi principi di base ed è composta da diversi elementi chiave:
 
 ## Console {#consoles}
 
 ### Layout di base e ridimensionamento {#basic-layout-and-resizing}
 
-L&#39;interfaccia utente è destinata sia ai dispositivi mobili che a quelli desktop, ma invece di creare due stili, Adobe ha deciso di utilizzare uno stile che funziona per tutti gli schermi e i dispositivi.
+L&#39;interfaccia utente è destinata sia ai dispositivi mobili che a quelli desktop, ma invece di creare due stili  Adobe ha deciso di utilizzare uno stile che funziona per tutti gli schermi e i dispositivi.
 
-Tutti i moduli utilizzano lo stesso layout di base, che in AEM può essere visto come:
+Tutti i moduli utilizzano lo stesso layout di base, AEM può essere visto come:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -41,7 +44,7 @@ Ad esempio, quando la risoluzione è inferiore a 1024 px (come su un dispositivo
 
 La barra di intestazione mostra gli elementi globali, tra cui:
 
-* il logo e lo specifico prodotto/soluzione che state utilizzando; per AEM questo costituisce anche un collegamento alla navigazione globale
+* il logo e lo specifico prodotto/soluzione che state utilizzando; per AEM questo collegamento viene creato anche un collegamento alla navigazione globale
 * Ricerca
 * icona per accedere alle risorse della guida
 * icona per accedere ad altre soluzioni
@@ -140,7 +143,7 @@ Un livello è un pacchetto indipendente di funzionalità che può essere attivat
 
 I livelli forniscono funzionalità sofisticate per l’intera pagina, anziché azioni specifiche su un singolo componente.
 
-AEM include diversi livelli già implementati per l’authoring delle pagine; ad esempio, modifica, anteprima, annotazione.
+AEM sono disponibili diversi livelli già implementati per l’authoring delle pagine; ad esempio, modifica, anteprima, annotazione.
 
 >[!NOTE]
 >
@@ -154,7 +157,7 @@ Lo switcher di livello è disponibile come elenco a discesa dalla barra degli st
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Component Toolbar {#component-toolbar}
+### Barra degli strumenti del componente {#component-toolbar}
 
 Ogni istanza di un componente visualizzerà la propria barra degli strumenti quando viene fatto clic (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad es. copia, incolla, editor aperto) disponibili per l’istanza del componente (modificabile) sulla pagina.
 
@@ -164,7 +167,7 @@ A seconda dello spazio disponibile, le barre degli strumenti dei componenti sono
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori dettagli sui concetti relativi all&#39;interfaccia touch, continuate con l&#39;articolo [Concetti dell&#39;interfaccia](/help/sites-developing/touch-ui-concepts.md)AEM Touch.
+Per ulteriori dettagli sui concetti relativi all’interfaccia touch, continuate con l’articolo [Concetti dell’interfaccia](/help/sites-developing/touch-ui-concepts.md)AEM touch.
 
 Per ulteriori informazioni tecniche, consultate la documentazione [JS impostata](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor pagina touch.
 
