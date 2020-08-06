@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 3%
 
 ---
 
@@ -52,5 +55,5 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
    Digitare un valore per `bindpassword` e salvare le modifiche.
 
 1. Per importare il file aggiornato, in Gestione utente fate clic su Configurazione > Importa ed esporta file di configurazione.
-1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi su OK.
+1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi fate clic su OK.
 
