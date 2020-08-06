@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 ## Panoramica {#overview}
 
-Questa funzione consente di controllare le istanze AEM esistenti per verificarne la aggiornabilità rilevando i pattern in uso che:
+Questa funzione consente di controllare AEM istanze esistenti per verificarne la aggiornabilità rilevando i pattern in uso che:
 
 1. Violare determinate regole e vengono eseguite in aree che saranno interessate o sovrascritte dall&#39;aggiornamento
-1. Utilizzate una funzione AEM 6.x o un&#39;API che non sia compatibile con le versioni precedenti di AEM 6.4 e che possa interrompersi dopo l&#39;aggiornamento.
+1. Utilizzate una funzionalità AEM 6.x o un&#39;API non compatibile con le versioni precedenti di AEM 6.4 e che può interrompersi dopo l&#39;aggiornamento.
 
-Questo potrebbe servire come valutazione dello sforzo di sviluppo coinvolto nell’aggiornamento ad AEM 6.4.
+Ciò potrebbe servire come valutazione dello sforzo di sviluppo che comporta l&#39;aggiornamento al AEM 6.4.
 
-## Come impostare {#how-to-set-up}
+## Configurazione {#how-to-set-up}
 
-Il rilevamento dei pattern viene rilasciato separatamente come [un pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione sorgente di AEM dalla versione 6.1 alla 6.5, con targeting dell’aggiornamento di AEM 6.5. Può essere installato utilizzando [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+Il rilevamento dei pattern viene rilasciato separatamente come un [unico pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM di origine da 6.1 a 6.5 per l&#39;AEM di destinazione 6.5. Può essere installato utilizzando [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Guida all’uso {#how-to-use}
 
@@ -45,7 +48,7 @@ Il rilevamento dei pattern viene rilasciato separatamente come [un pacchetto](ht
 
 * **Tramite la console di Felix Inventory:**
 
-1. Andate alla console Web di AEM visitando: https://<i></i>serveraddress:serverport/system/console/configMgr
+1. Andate alla console Web AEM sfogliando: https://<i></i>serveraddress:serverport/system/console/configMgr
 1. Seleziona **stato - Rilevamento** pattern come illustrato nell&#39;immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
