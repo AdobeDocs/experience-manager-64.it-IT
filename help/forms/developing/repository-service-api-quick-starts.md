@@ -11,13 +11,16 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 
 # Avvio rapido API Servizio repository {#repository-service-api-quick-starts}
 
-Per il servizio archivio AEM Forms sono disponibili i seguenti Avvio rapido.
+Per il servizio  archivio AEM Forms sono disponibili i seguenti avvii rapidi.
 
 [Avvio rapido (modalità SOAP): Creazione di una cartella mediante l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -31,7 +34,7 @@ Per il servizio archivio AEM Forms sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Ricerca di risorse tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Creazione di relazioni tra risorse tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Avvio rapido (modalità SOAP): Creazione di relazioni tra le risorse tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Blocco di una risorsa tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
@@ -39,21 +42,21 @@ Per il servizio archivio AEM Forms sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Eliminazione di una risorsa tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-Le operazioni relative ai moduli AEM possono essere eseguite utilizzando l&#39;API fortemente tipizzata di AEM Forms; la modalità di connessione deve essere impostata su SOAP
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API AEM Forms fortemente tipizzata  e la modalità di connessione deve essere impostata su SOAP
 
 **Applicazioni/FormsApplication**
 
-La maggior parte del servizio archivio di AEM Forms avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
+La maggior parte  servizio repository di AEM Forms avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
 
-La cartella FormsFolder è un percorso nell&#39;archivio di AEM Forms. Ad esempio, potete aggiungere questa cartella a livello di programmazione `Applications/FormsApplication`. (Vedere Avvio [rapido (modalità SOAP): Creazione di una cartella tramite l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.
+La cartella FormsFolder è un percorso nell&#39;archivio di AEM Forms . Ad esempio, potete aggiungere questa cartella a livello di programmazione `Applications/FormsApplication`. (Vedere Avvio [rapido (modalità SOAP): Creazione di una cartella tramite l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.
 
-Il percorso di una risorsa situata nell&#39;archivio di AEM Forms è:
+Il percorso di una risorsa che si trova nell&#39;archivio di AEM Forms  è:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 >[!NOTE]
 >
->È possibile esplorare l&#39;archivio moduli AEM utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web https://[server name]:[server port]/repository. È possibile verificare i risultati di avvio rapido utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio moduli di AEM, potete visualizzarne il contenuto in un browser Web.
+>È possibile esplorare  archivio AEM Forms utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web https://[server name]:[server port]/repository. È possibile verificare i risultati di avvio rapido utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio AEM Forms , potete visualizzarne il contenuto in un browser Web.
 
 >[!NOTE]
 >
@@ -729,9 +732,9 @@ Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplicat
  }
 ```
 
-## Avvio rapido (modalità SOAP): Creazione di relazioni tra risorse tramite l&#39;API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## Avvio rapido (modalità SOAP): Creazione di relazioni tra le risorse tramite l&#39;API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio di AEM Forms. (Vedere [Creazione di relazioni](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)con le risorse.)
+Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio di AEM Forms . (Vedere [Creazione di relazioni](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)con le risorse.)
 
 ```as3
  /* 
