@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '6414'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Nel linguaggio ExtJS, un xtype è un nome simbolico assegnato a una classe. È p
 
 Per informazioni complete su tutti i widget disponibili in AEM, consulta la documentazione [API relativa ai](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)widget.
 
-Per scoprire in quali componenti viene utilizzato un dato xtype in AEM, potete usare la seguente query Xpath in CRXDE sostituendo &#39;Casella di controllo&#39; con l&#39;xtype a cui siete interessati:
+Per scoprire in quali componenti è utilizzato un dato xtype in AEM, è possibile utilizzare la seguente query Xpath in CRXDE sostituendo &#39;Casella di controllo&#39; con l&#39;xtype a cui si è interessati:
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -31,7 +34,7 @@ Per scoprire in quali componenti viene utilizzato un dato xtype in AEM, potete u
 >
 >Questa pagina descrive l’utilizzo di xtype ExtJS nell’interfaccia classica.
 >
->Adobe consiglia di utilizzare l’interfaccia [touch standard e moderna basata sull’interfaccia utente](/help/sites-developing/touch-ui-concepts.md) [Coral e](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+> Adobe consiglia di utilizzare l’interfaccia [touch standard e moderna basata sull’interfaccia utente](/help/sites-developing/touch-ui-concepts.md) [Coral e](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtype {#xtypes}
 
@@ -73,7 +76,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.wcm.msm.BlueprintStatus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus)
 
-   BlueprintStatus fornisce un pannello per visualizzare e modificare una Blueprint e le sue relazioni Live Copy. La navigazione viene effettuata tramite [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), attraverso un’edizione [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) e una [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
+   BlueprintStatus fornisce un pannello per visualizzare e modificare una Blueprint e le sue relazioni Live Copy. La navigazione viene eseguita tramite [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), l’edizione viene realizzata tramite [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) e un file [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
 
 * box
 
@@ -127,11 +130,11 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    Il pacchetto CQ.Ext.chart consente di visualizzare i dati con grafici basati su Flash. Ciascun grafico si collega direttamente a CQ.Ext.data.Store e consente di aggiornare automaticamente il grafico. Per modificare l&#39;aspetto di un grafico, vedere le opzioni di configurazione [chartStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) e [extraStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) .
 
-*  Casella
+* Casella
 
    [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
-   Campo casella di controllo singola. Può essere utilizzato come sostituzione diretta dei campi di controllo tradizionali.
+   Campo casella di controllo singola. Può essere utilizzato come sostituzione diretta per i campi di controllo tradizionali.
 
 * checkboxgroup
 
@@ -161,7 +164,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.menu.ColorMenu](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.ColorMenu)
 
-   Menu contenente un componente [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) .
+   Un menu contenente un componente [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) .
 
 * colorpalette
 
@@ -271,7 +274,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField)
 
-   Fornisce un campo di immissione data con un menu a discesa [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) e una convalida automatica della data.
+   Fornisce un campo di immissione della data con un menu a discesa [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) e una convalida automatica della data.
 
 * datemenu
 
@@ -347,17 +350,17 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    FeedImporter consente all&#39;utente di importare feed RSS o Atom e creare pagine per ogni voce di feed.
 
-* field
+* o in un altro campo
 
    [CQ.Ext.form.Field](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Field)
 
    Classe base per i campi modulo che forniscono la gestione degli eventi, il ridimensionamento, la gestione dei valori e altre funzionalità predefinite.
 
-* field
+* fielabilità
 
    [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-   Contenitore standard utilizzato per raggruppare gli elementi all&#39;interno di un [modulo](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel)....
+   Contenitore standard utilizzato per raggruppare gli elementi all&#39;interno di un [modulo](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel). ...
 
 * fileuploaddialogbutton
 
@@ -409,7 +412,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.HistoryButton](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.HistoryButton)
 
-   HistoryButton è una piccola classe helper che consente di fornire facilmente pulsanti indietro e avanti. In genere sono necessarie due istanze correlate: L&#39;istanza del pulsante avanti è un semplice pulsante collegato all&#39;istanza del pulsante indietro che gestisce la cronologia.
+   HistoryButton è una piccola classe helper che consente di fornire facilmente i pulsanti indietro e avanti. In genere sono necessarie due istanze correlate: L&#39;istanza del pulsante avanti è un semplice pulsante collegato all&#39;istanza del pulsante indietro che gestisce la cronologia.
 
 * htmleditor
 
@@ -505,7 +508,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    MediaBrowseDialog è una finestra di dialogo che consente di esplorare la libreria multimediale.
 
-*  menu
+* menu
 
    [CQ.Ext.menu.Menu](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Menu)
 
@@ -517,7 +520,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem)
 
-   La classe base per tutti gli elementi di cui viene eseguito il rendering nei menu. BaseItem fornisce rendering predefinito, gestione dello stato attivato e opzioni di configurazione di base condivise da tutti i componenti del menu.
+   La classe base per tutti gli elementi di cui viene eseguito il rendering nei menu. BaseItem fornisce il rendering predefinito, la gestione dello stato attivato e le opzioni di configurazione di base condivise da tutti i componenti del menu.
 
 * menucheckitem
 
@@ -637,7 +640,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-   Un&#39;implementazione specializzata della griglia destinata a imitare la tradizionale griglia di proprietà come si vede di solito negli IDE di sviluppo. Ogni riga della griglia rappresenta una proprietà di un oggetto e i dati vengono memorizzati come un insieme di coppie nome/valore in [CQ.Ext.grid.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)PropertyRecords.
+   Un&#39;implementazione specializzata della griglia destinata a imitare la tradizionale griglia di proprietà, come si vede di solito negli IDE di sviluppo. Ogni riga della griglia rappresenta una proprietà di un oggetto e i dati vengono memorizzati come un insieme di coppie nome/valore in [CQ.Ext.grid.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)PropertyRecords.
 
 * propgrid
 
@@ -649,13 +652,13 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip)
 
-   @xtype quicktip Una classe di descrizioni comandi specializzata per le descrizioni comandi che possono essere specificate nella marcatura e gestite automaticamente dall&#39;istanza globale [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) . Consultate l&#39;intestazione della classe QuickTips per ulteriori dettagli di utilizzo ed esempi.
+   @xtype quicktip Una classe di descrizioni comandi specializzata per le descrizioni comandi che possono essere specificate nella marcatura e gestite automaticamente dall&#39;istanza globale [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) . Per ulteriori dettagli sull&#39;utilizzo e per ulteriori esempi, consultate l&#39;intestazione della classe QuickTips.
 
 * radio
 
    [CQ.Ext.form.Radio](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Radio)
 
-   Campo di scelta singolo. Come casella di controllo, ma è utile per impostare automaticamente il tipo di input. Il raggruppamento pulsanti di scelta viene gestito automaticamente dal browser se a ogni radio di un gruppo viene assegnato lo stesso nome.
+   Campo di scelta singolo. Come casella di controllo, ma è utile per impostare automaticamente il tipo di input. I raggruppamenti di pulsanti di scelta vengono gestiti automaticamente dal browser se assegnate a ciascuna radio di un gruppo lo stesso nome.
 
 * radiogroup
 
@@ -717,7 +720,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-   La barra laterale è un assistente mobile che fornisce all’utente gli strumenti comuni per la modifica delle pagine.
+   La barra laterale è un assistente mobile che fornisce all’utente gli strumenti più comuni per la modifica delle pagine.
 
 * siteadmin
 
@@ -735,15 +738,15 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.form.SizeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SizeField)
 
-   SizeField consente all’utente di immettere la larghezza e l’altezza (ad esempio per un’immagine).
+   Il campo SizeField consente all’utente di immettere la larghezza e l’altezza (ad esempio per un’immagine).
 
 * cursore
 
    [CQ.Ext.Slider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Slider)
 
-   Slider che supporta l&#39;orientamento verticale o orizzontale, le regolazioni della tastiera, l&#39;aggancio configurabile, il clic sull&#39;asse e l&#39;animazione. Può essere aggiunto come elemento a qualsiasi contenitore. Esempio di utilizzo:...
+   Slider che supporta l&#39;orientamento verticale o orizzontale, le regolazioni della tastiera, l&#39;aggancio configurabile, il clic sull&#39;asse e l&#39;animazione. Può essere aggiunto come elemento a qualsiasi contenitore. Esempio di utilizzo: ...
 
-* presentazione
+* slideshow
 
    [CQ.form.Slideshow](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Slideshow)
 
@@ -757,7 +760,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    SmartFile è un caricatore intelligente di file.
 
-   Se è installato un plug-in Flash (versione >= 9), i caricamenti vengono eseguiti utilizzando la libreria di caricamento SWF che fornisce un metodo pratico per gestire i caricamenti.
+   Se è installato un plug-in di Flash (versione >= 9), i caricamenti vengono eseguiti utilizzando la libreria di caricamento SWF che fornisce un metodo pratico per gestire i caricamenti.
 
 * smartphone
 
@@ -841,7 +844,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
    CQ.tagging.TagInputField
    ```
 
-    è un widget modulo per l’immissione di tag. Dispone di un menu a comparsa per la selezione tra i tag esistenti, include il completamento automatico e molte altre funzioni.
+   è un widget modulo per l’immissione di tag. Dispone di un menu a comparsa per la selezione tra i tag esistenti, include il completamento automatico e molte altre funzioni.
 
 * textarea
 
@@ -869,7 +872,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)
 
-   Fornisce un campo di immissione dell&#39;ora con un menu a discesa e una convalida automatica dell&#39;ora. Esempio di utilizzo:...
+   Fornisce un campo di immissione dell&#39;ora con un menu a discesa e una convalida automatica dell&#39;ora. Esempio di utilizzo: ...
 
 * tip
 
@@ -887,7 +890,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.Toolbar](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Toolbar)
 
-   Basic Toolbar, classe. Sebbene [`defaultType`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) per Toolbar sia [`button`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button), gli elementi della barra degli strumenti (elementi secondari per il contenitore della barra degli strumenti) possono essere praticamente qualsiasi tipo di componente. Gli elementi della barra degli strumenti possono essere creati in modo esplicito tramite i relativi costruttori.
+   Basic Toolbar, classe. Anche se [`defaultType`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) per Toolbar è [`button`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button), gli elementi della barra degli strumenti (elementi secondari per il contenitore della barra degli strumenti) possono essere praticamente qualsiasi tipo di componente. Gli elementi della barra degli strumenti possono essere creati in modo esplicito tramite i relativi costruttori.
 
 * tooltip
 
@@ -913,7 +916,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)
 
-   Fornisce un pratico wrapper per TextFields che aggiunge un pulsante di attivazione selezionabile (per impostazione predefinita è simile a una casella combinata). L&#39;attivatore non ha alcuna azione predefinita, pertanto è necessario assegnare una funzione per implementare il gestore di clic attivatore sostituendo [onTriggerClick](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). È possibile creare un campo TriggerField direttamente, così come viene riprodotto esattamente come un combobox.
+   Fornisce un pratico wrapper per TextFields che aggiunge un pulsante di attivazione selezionabile (per impostazione predefinita è simile a una casella combinata). L&#39;attivatore non ha alcuna azione predefinita, pertanto è necessario assegnare una funzione per implementare il gestore di clic attivatore sovrascrivendo [onTriggerClick](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). È possibile creare un campo TriggerField direttamente, così come viene riprodotto esattamente come un combobox.
 
 * uploaddialog
 
@@ -931,7 +934,7 @@ Di seguito è riportato un elenco degli xtype disponibili in Adobe Experience Ma
 
    [CQ.Ext.Viewport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport)
 
-   Un contenitore specializzato che rappresenta l&#39;area visibile dell&#39;applicazione (la finestra del browser).
+   Contenitore specializzato che rappresenta l&#39;area visibile dell&#39;applicazione (la finestra del browser).
 
    Il viewport esegue il rendering sul corpo del documento, si ridimensiona automaticamente alle dimensioni della finestra del browser e gestisce il ridimensionamento delle finestre. È possibile creare un solo visualizzatore.
 
