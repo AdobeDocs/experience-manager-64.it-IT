@@ -1,29 +1,32 @@
 ---
 title: Ricerca di risorse video
-description: Utilizzate le parole chiave, le proprietà del file quali il tipo MIME, le dimensioni o l'indicatore di ora modificato di recente per trovare rapidamente il file in Risorse AEM.
+description: Use keywords, file properties such as a Mime type, size, or recently modified time stamp to quickly find your file in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 4%
 
 ---
 
 
 # Searching Video Assets {#searching-video-assets}
 
-Per risparmiare tempo e fatica a non dover sfogliare centinaia di video, utilizzate parole chiave, proprietà del file come il tipo di file o marca temporale modificata di recente per trovare rapidamente il file.
+To save time and effort from having to browse through potentially hundreds of videos, use keywords, file properties such as a file&#39;s type, or recently modified time stamp to quickly find your file.
 
-Se il file ricercato non è visualizzato, è possibile modificare l’intero ambito di una ricerca facendo clic su una delle opzioni nella parte inferiore dei risultati della ricerca. Ad esempio, se cercate un file nella libreria Documenti ma non lo trovate, potete fare clic su Librerie per espandere la ricerca nelle altre librerie. Per ulteriori informazioni, consultate [Trovare un file o una cartella](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
+If you aren&#39;t seeing the file you are looking for, you can change the entire scope of a search by clicking one of the options at the bottom of the search results. For example, if you search for a file in the Documents library but you cannot find it, you can click Libraries to expand the search to the rest of your libraries. For more information, see [Find a file or folder](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
 
-Potete cercare risorse digitali in base a una o più delle seguenti proprietà:
+You can search for digital assets based on one or more of the following properties:
 
-| Campo di ricerca | Valori delle proprietà di ricerca |
+| Campo di ricerca | Search property values |
 |---|---|
-| Tipi mime | [!UICONTROL Immagini], [!UICONTROL Documenti], [!UICONTROL Multimedia], [!UICONTROL Archivi]o Altro. |
-| [!UICONTROL Ultima modifica] | Ora, Giorno, Settimana, Mese o Anno. |
-| [!UICONTROL Dimensione file] | Piccolo, Medio o Grande. |
-| [!UICONTROL Stato pubblicazione] | Pubblicato o Non pubblicato. |
-| [!UICONTROL Stato approvazione] | Approvato o rifiutato. |
-| [!UICONTROL Orientamento] | Orizzontale, Verticale o Quadrato. |
+| Tipi mime | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimedia], [!UICONTROL Archives], or Other. |
+| [!UICONTROL Ultima modifica] | Hour, Day, Week, Month, or Year. |
+| [!UICONTROL Dimensione file] | Small, Medium, or Large. |
+| [!UICONTROL Stato pubblicazione] | Published or Unpublished. |
+| [!UICONTROL Stato approvazione] | Approved or Rejected. |
+| [!UICONTROL Orientamento] | Horizontal, Vertical, or Square. |
 | [!UICONTROL Stile] | Colore o Bianco e nero. |
 | Altezza video | Specificato come valore minimo e massimo.Value viene memorizzato solo nei metadati delle rappresentazioni video. |
 | Larghezza video | Specificato come valore minimo e massimo.Value viene memorizzato solo nei metadati delle rappresentazioni video. |
@@ -33,7 +36,7 @@ Potete cercare risorse digitali in base a una o più delle seguenti proprietà:
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value è memorizzato solo nei metadati delle rappresentazioni video. |
 | Bitrate audio | Specificato come valore minimo e massimo.Value viene memorizzato solo nei metadati delle rappresentazioni video. |
 
-1. Nella pagina **[!UICONTROL Experience Manager]** , toccate **[!UICONTROL Risorse]** nella parte sinistra.
+1. Nella pagina **[!UICONTROL Experience Manager]** , toccate **[!UICONTROL Risorse]** nella barra a sinistra.
 
    Se la barra a sinistra non è visibile, toccate l&#39;icona Attiva/disattiva barra laterale (le righe nell&#39;icona saranno di colore grigio scuro o blu).
 
@@ -49,7 +52,7 @@ Potete cercare risorse digitali in base a una o più delle seguenti proprietà:
 
    * Ricerca utilizzando le proprietà
 
-      Per cercare un file video basato su una proprietà come il tipo di video, potete limitare la ricerca selezionando una proprietà video o audio. Ad esempio, espandete il menu a discesa Formato video, quindi verificate uno o più valori. Per alcune proprietà è necessario immettere un valore minimo e massimo.
+      Per cercare un file video basato su una proprietà come il tipo di video, potete limitare la ricerca selezionando una proprietà video o audio. For example, expand the Video Format drop-down, and then check one or more values. Per alcune proprietà è necessario immettere un valore minimo e massimo.
 
    * Ricerca mediante parole chiave e proprietà
 
