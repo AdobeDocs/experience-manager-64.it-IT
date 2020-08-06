@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Quando si crea un modulo adattivo, è possibile specificare il layout di una barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
 
-Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client basata su codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere questo problema, AEM offre cartelle libreria lato client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consultate [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
+Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client, gestita da codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere il problema, AEM fornisce Cartelle libreria lato client che consentono di memorizzare il codice lato client nell&#39;archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consultate [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) Esempio di layout della barra degli strumenti **** Figura: Layout *Esempio della barra degli strumenti*
+![Esempio di layout della barra degli strumenti](assets/default_toolbar_layout.png)**Figura:** *Esempio di layout della barra degli strumenti*
 
 I moduli adattivi forniscono una serie di layout predefiniti:
 
-![](assets/toolbar1.png) Layout della barra degli strumenti disponibili **** Figura: Layout della *barra degli strumenti disponibili out-of-the-box*
+![Layout della barra degli strumenti disponibili ](assets/toolbar1.png)**Figura:** *Layout della barra degli strumenti disponibili out-of-the-box*
 
 È inoltre possibile creare un layout personalizzato per la barra degli strumenti.
 
@@ -36,7 +39,7 @@ Il pacchetto di contenuti allegato contiene l’intero codice descritto di segui
 
 CustomToolbarLayoutDemo.zip
 
-[Ottieni layout barra degli strumenti personalizzato](assets/customtoolbarlayoutdemo.zip)Demo
+[Ottieni layout barra degli strumenti personalizzato Demo file](assets/customtoolbarlayoutdemo.zip)
 
 ## Per creare un layout personalizzato della barra degli strumenti {#layout-1}
 
@@ -84,7 +87,7 @@ CustomToolbarLayoutDemo.zip
 
    Percorso del file customToolbarLayout.css
 
-   Esempio `customToolbarLayout.jsp`:
+   Esempi `customToolbarLayout.jsp`:
 
    ```php
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -102,7 +105,7 @@ CustomToolbarLayoutDemo.zip
    >
    >Aggiungete la classe guidetoolbar per il layout. Lo stile predefinito per la barra degli strumenti è definito in relazione alla classe guidetoolbar.
 
-   Esempio `toolBarCommon.jsp`:
+   Esempi `toolBarCommon.jsp`:
 
    ```php
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >La descrizione aggiornata nel passaggio precedente viene visualizzata nell&#39;elenco a discesa Layout.
 
-![](assets/toolbar_1.png) Vista desktop della barra degli strumenti **** del layout personalizzato Figura: Visualizzazione *desktop della barra degli strumenti del layout personalizzato*
+![Vista desktop della barra degli strumenti](assets/toolbar_1.png)**del layout personalizzato Figura:** *Vista desktop della barra degli strumenti del layout personalizzato*
