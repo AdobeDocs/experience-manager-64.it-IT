@@ -1,8 +1,8 @@
 ---
 title: Best practice per i modelli e-mail
 seo-title: Best practice per i modelli e-mail
-description: Best practice per la creazione di modelli di e-mail in AEM.
-seo-description: Best practice per la creazione di modelli di e-mail in AEM.
+description: Best practice per la creazione di modelli per le e-mail in AEM.
+seo-description: Best practice per la creazione di modelli per le e-mail in AEM.
 uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
 source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+workflow-type: tm+mt
+source-wordcount: '1054'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
 
 Questo documento descrive alcune delle procedure ottimali per la progettazione delle e-mail e fornisce un modello di campagna e-mail ben sviluppato.
 
-La campagna dimostrativa disponibile in AEM segue tutte queste best practice. Per ogni best practice viene descritto in che modo vengono implementate le best practice nella campagna demo.
+La campagna demo disponibile in AEM segue tutte queste best practice. Per ogni best practice viene descritto in che modo vengono implementate le best practice nella campagna demo.
 
 Utilizzate queste best practice per la creazione di newsletter.
 
@@ -37,7 +40,7 @@ Accertarsi che si trovi sotto una pagina master:
 
 >[!NOTE]
 >
->Quando crei un modello di posta elettronica per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarai in grado di selezionare il modello Adobe Campaign in Proprietà **** pagina di AEM (campo disabilitato).
+>Quando si crea un modello di posta per  Adobe Campaign, è necessario includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarà possibile selezionare il modello di Adobe Campaign  in Proprietà **** pagina di AEM (campo disabilitato).
 
 ## Modello/componente pagina {#template-page-component}
 
@@ -58,7 +61,7 @@ Accertarsi che si trovi sotto una pagina master:
    <td><p>È impostato su UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Codificate tutta la struttura utilizzando l'elemento &lt;table&gt;. Per i layout più complessi, è necessario nidificare le tabelle per creare strutture complesse.</p> <p>Le e-mail dovrebbero avere un buon aspetto anche senza css.</p> </td> 
+   <td><p>Codificate tutta la struttura utilizzando l'elemento &lt;table&gt;. Per i layout più complessi, è necessario nidificare le tabelle per creare strutture complesse.</p> <p>L'e-mail dovrebbe avere un buon aspetto anche senza css.</p> </td> 
    <td><p>Le tabelle vengono utilizzate in tutto il modello per strutturare il contenuto. Attualmente è possibile utilizzare un massimo di quattro tabelle nidificate (1 tabella di base + max. 3 livelli di nidificazione)</p> <p>I tag &lt;div&gt; vengono utilizzati solo in modalità di creazione per garantire la corretta modifica dei componenti.</p> </td> 
   </tr> 
   <tr> 
@@ -92,7 +95,7 @@ Accertarsi che si trovi sotto una pagina master:
 |---|---|
 | Aggiungere attributi *alt* alle immagini | L’attributo *alt* è stato definito come obbligatorio per il componente immagine. |
 | Per le immagini, usate *jpg* invece del formato *png* | Le immagini saranno sempre servite come JPG dal componente immagine. |
-| Utilizzate `<img>` elementi invece delle immagini di sfondo in una tabella. | Nei modelli non vengono utilizzati dati immagine di sfondo. |
+| Utilizzate `<img>` un elemento invece delle immagini di sfondo in una tabella. | Nei modelli non vengono utilizzati dati immagine di sfondo. |
 | Aggiungi attribute style=&quot;display block&quot; sulle immagini. Consente di visualizzare bene su Gmail. | Tutte le immagini contengono per impostazione predefinita l’attributo *style=&quot;display block&quot;* . |
 
 ## Testo e collegamenti {#text-and-links}
@@ -121,12 +124,12 @@ Accertarsi che si trovi sotto una pagina master:
 | **Best practice** | **Implementazione** |
 |---|---|
 | Utilizzate la funzione di convalida W3C per correggere il codice HTML. Accertatevi che tutti i tag aperti siano chiusi correttamente. | Il codice è stato convalidato. Per XHTML Transitional Doctype manca solo l&#39;attributo xmlns mancante per l&#39; `<html>` elemento. |
-| Non preoccupatevi di JavaScript o Flash; tali tecnologie non sono in gran parte supportate dai client e-mail. | Nel modello per newsletter non vengono utilizzati JavaScript né Flash. |
+| Non preoccupatevi di JavaScript o di Flash; tali tecnologie non sono in gran parte supportate dai client e-mail. | Né JavaScript né Flash vengono utilizzati nel modello per newsletter. |
 | Aggiungete una versione di testo normale per l’invio multiparte. | Un nuovo widget è stato creato nelle proprietà della pagina per estrarre facilmente una versione in testo normale dal contenuto della pagina. Può essere utilizzato come punto di partenza per la versione normale finale. |
 
 ## Modelli ed esempi per newsletter per campagne {#campaign-newsletter-templates-and-examples}
 
-Con AEM sono disponibili diversi modelli e componenti per la creazione di newsletter per le campagne. Potete usare questi modelli e componenti per creare newsletter personalizzate.
+AEM con diversi modelli e componenti per la creazione di newsletter per le campagne. Potete usare questi modelli e componenti per creare newsletter personalizzate.
 
 ### Modelli {#templates}
 
@@ -138,7 +141,7 @@ Tutti hanno un&#39; **intestazione**, un **piè di pagina** e una sezione **corp
 
 ### Componenti {#components}
 
-Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/sites-authoring/adobe-campaign-components.md)delle campagne. Tutti questi componenti sono basati sul linguaggio di marcatura Adobe **HTL**.
+Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/sites-authoring/adobe-campaign-components.md)delle campagne. Tutti questi componenti sono basati sul linguaggio  di marcatura Adobe **HTL**.
 
 | **Nome componente** | **Percorso componente** |
 |---|---|
@@ -154,4 +157,4 @@ Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/s
 >
 >Questi componenti sono ottimizzati per il contenuto della posta; in altre parole, aderiscono alle best practice illustrate nel presente documento. L&#39;utilizzo di altri componenti forniti di solito viola tali regole.
 
-Questi componenti sono descritti dettagliatamente nei componenti [di](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
+Questi componenti sono descritti in dettaglio in [componenti](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
