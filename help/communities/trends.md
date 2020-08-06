@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +32,7 @@ Questa sezione della documentazione descrive
 
 ## Requisito {#requirement}
 
-I dati per il sito `Community Activity List` sono disponibili solo se Adobe Analytics è concesso in licenza e configurato per il sito della community.
+I dati per il sito `Community Activity List` sono disponibili solo se  Adobe Analytics è concesso in licenza e configurato per il sito della community.
 
 Consultate Configurazione [di Analytics per le funzioni](analytics.md)Community.
 
@@ -37,13 +40,13 @@ Consultate Configurazione [di Analytics per le funzioni](analytics.md)Community.
 
 Per aggiungere un `Community Activity List` componente a una pagina in modalità di creazione, individuate il componente `Communities / Community Activity List` e trascinatelo nella posizione desiderata sulla pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Configurazione dell&#39;elenco delle attività community {#configuring-community-activity-list}
+## Configurazione dell&#39;elenco delle attività community  {#configuring-community-activity-list}
 
 Selezionate il `Community Activity List` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
@@ -60,6 +63,7 @@ Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizz
    Seleziona da
    * `Members`
    * `Content`
+
    Default is `Members`.
 
 * **[!UICONTROL Titolo da visualizzare]**
@@ -81,6 +85,7 @@ Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizz
    * `Posts`(creazione di UGC)
    * `Follows`
    * `Likes`
+
    Il valore predefinito è Visualizzazioni.
 
 * **[!UICONTROL Periodo di tempo]**
@@ -92,17 +97,18 @@ Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizz
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    Default is `Total`.
 
 * **[!UICONTROL Percorso contesto]**
 
-   Fornisce la possibilità di estendere l&#39;attività a un sottoinsieme del sito, ad esempio un blog specifico.
+   Fornisce la possibilità di estendere l&#39;attività a un sottoinsieme del sito, ad esempio un Blog specifico.
 
    Default è l&#39;intero sito della community.
 
 * **[!UICONTROL Aggregazione conteggio dei membri]**
 
-   Se non è selezionato (disattivato), vengono contati solo i post di livello principale. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), una `Activity Type`di non `Posts`mostrerà mai alcuna attività in quanto non è possibile pubblicare contenuto nella pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi di tutte le pagine discendenti.
+   Se questa opzione è deselezionata (disattivata), vengono contati solo i post di livello principale. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), una `Activity Type`di non `Posts`mostrerà mai alcuna attività in quanto non è possibile pubblicare contenuto nella pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi di tutte le pagine discendenti.
 
    Il valore predefinito è selezionato.
 
