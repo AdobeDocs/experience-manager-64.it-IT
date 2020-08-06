@@ -1,6 +1,6 @@
 ---
-title: Panoramica avvii
-seo-title: Panoramica avvii
+title: Panoramica sui lanci
+seo-title: Panoramica sui lanci
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 seo-description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
 
-# Lanci Panoramica{#launches}
+# Panoramica sui lanci{#launches}
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
@@ -82,12 +85,14 @@ I lanci permettono di:
 
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [Crea un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio all&#39;interno di un lancio:
 
    * L’origine è un lancio esistente.
    * Puoi [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio padre o di pagine sorgenti di primo livello (Produzione).
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
