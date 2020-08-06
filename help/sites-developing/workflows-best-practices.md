@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 0%
 
 ---
 
@@ -36,8 +39,8 @@ Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passagg
 I vantaggi possono includere:
 
 * Una riduzione del tempo di elaborazione del flusso di lavoro; fino al 10%.
-* Riduzione significativa della crescita del repository.
-* Per eliminare i flussi di lavoro CRUD non sono necessari più.
+* Ridurre significativamente la crescita del repository.
+* Per eliminare i flussi di lavoro CRUD non sono necessari altri flussi di lavoro CRUD.
 * Inoltre, riduce il numero di file TAR a dimensioni compatte.
 
 >[!CAUTION]
@@ -46,37 +49,37 @@ I vantaggi possono includere:
 
 ### Ottimizzazione dei flussi di lavoro DAM {#tuning-dam-workflows}
 
-Per le linee guida per l&#39;ottimizzazione delle prestazioni per i flussi di lavoro DAM, consulta la Guida [](/help/assets/performance-tuning-guidelines.md)all&#39;ottimizzazione delle prestazioni di AEM Assets.
+Per le linee guida sull&#39;ottimizzazione delle prestazioni per i flussi di lavoro DAM, consulta la [AEM Assets Performance Tuning Guide](/help/assets/performance-tuning-guidelines.md).
 
 ### Configurare il numero massimo di flussi di lavoro simultanei {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM consente l’esecuzione simultanea di più thread di flusso di lavoro. Per impostazione predefinita, il numero di thread è configurato per la metà del numero di core del processore sul sistema.
+AEM consentire l&#39;esecuzione simultanea di più thread del flusso di lavoro. Per impostazione predefinita, il numero di thread è configurato per la metà del numero di core del processore sul sistema.
 
-Nei casi in cui i flussi di lavoro in esecuzione richiedono risorse di sistema, AEM non può fare molto per altre attività, come il rendering dell’interfaccia utente di authoring. Di conseguenza, il sistema potrebbe risultare lento durante attività quali il caricamento di immagini in massa.
+Nei casi in cui i flussi di lavoro in esecuzione richiedono risorse di sistema, può essere necessario AEM utilizzare poco per altre attività, come il rendering dell’interfaccia utente di authoring. Di conseguenza, il sistema potrebbe risultare lento durante attività quali il caricamento di immagini in massa.
 
-Per risolvere questo problema, Adobe consiglia di configurare il numero **massimo di processi** paralleli in modo che sia compreso tra la metà e i tre quarti del numero di core del processore presenti nel sistema. Ciò dovrebbe consentire al sistema di rimanere reattivo durante l&#39;elaborazione di tali flussi di lavoro.
+Per risolvere questo problema,  Adobe consiglia di configurare il numero **massimo di processi** paralleli in modo che sia compreso tra la metà e i tre quarti del numero di core del processore sul sistema. Ciò dovrebbe consentire al sistema di rimanere reattivo durante l&#39;elaborazione di tali flussi di lavoro.
 
-Per configurare il **numero massimo di processi** paralleli, potete:
+Per configurare il **numero massimo di processi** paralleli, potete effettuare le seguenti operazioni:
 
-* Configurare la configurazione **[](/help/sites-deploying/configuring-osgi.md)**OSGi dalla console Web di AEM; per **coda: Coda**flusso di lavoro Granite (una configurazione **della coda di lavoro Sling**Apache).
+* Configurare la configurazione **[](/help/sites-deploying/configuring-osgi.md)**OSGi dalla console Web AEM; per **coda: Coda**flusso di lavoro Granite (una configurazione **della coda di lavoro Sling**Apache).
 
-* Configurate la coda mediante l’opzione Processi **** Sling della console Web AEM; per la configurazione della coda di **processo: Coda** flusso di lavoro Granite, in `http://localhost:4502/system/console/slingevent`.
+* Configurare la coda può essere dall’opzione Processi **Sling** della console Web AEM; per la configurazione della coda di **processo: Coda** flusso di lavoro Granite, in `http://localhost:4502/system/console/slingevent`.
 
-È inoltre disponibile una configurazione separata per la coda **di processi esterni del flusso di lavoro** Granite. Viene utilizzato per i processi di workflow che avviano file binari esterni, come **InDesign Server** o **Image Magick**.
+È inoltre disponibile una configurazione separata per la coda **di processi esterni del flusso di lavoro** Granite. Viene utilizzato per i processi di workflow che avviano file binari esterni, ad esempio **InDesign Server** o **Image Magick**.
 
 ### Configurare le singole code di processo {#configure-individual-job-queues}
 
-In alcuni casi, è utile configurare le singole code di processo per controllare i thread simultanei o altre opzioni di coda, su base individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite il modulo di configurazione **Coda di lavoro** Apache Sling. Per trovare l’argomento appropriato da elencare, eseguite il modello del flusso di lavoro e cercatelo nella console Processi **** Sling; ad esempio, at `http://localhost:4502/system/console/slingevent`.
+In alcuni casi, è utile configurare le singole code di processo per controllare i thread simultanei o altre opzioni di coda su base individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite il modulo di configurazione **Coda di lavoro** Apache Sling. Per trovare l’argomento appropriato da elencare, eseguite il modello del flusso di lavoro e cercatelo nella console Processi **** Sling; ad esempio, at `http://localhost:4502/system/console/slingevent`.
 
 È possibile aggiungere code di lavoro individuali anche per flussi di lavoro transitori.
 
 ### Configurare lo svuotamento del flusso di lavoro {#configure-workflow-purging}
 
-In un’installazione standard, AEM offre una console di manutenzione in cui è possibile pianificare e configurare attività di manutenzione giornaliere e settimanali. ad esempio, in:
+In un&#39;installazione standard AEM una console di manutenzione in cui è possibile pianificare e configurare le attività di manutenzione giornaliere e settimanali; ad esempio, in:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Per impostazione predefinita, la finestra **Manutenzione** settimanale dispone di un’attività di rimozione **** del flusso di lavoro, che deve essere configurata prima di essere eseguita. Per configurare le eliminazioni dei flussi di lavoro, nella console Web è necessario aggiungere una nuova configurazione **di rimozione dei flussi di lavoro** Adobe Granite.
+Per impostazione predefinita, la finestra **Manutenzione** settimanale dispone di un’attività di rimozione **** del flusso di lavoro, che deve essere configurata prima di essere eseguita. Per configurare le epurazioni del flusso di lavoro, nella console Web è necessario aggiungere una nuova configurazione **Adobe** Soppressione del flusso di lavoro Granite.
 
 Per ulteriori dettagli sulle attività di manutenzione in AEM, consultate [Pannello](/help/sites-administering/operations-dashboard.md)operazioni.
 
@@ -90,13 +93,13 @@ Le definizioni di modelli di flusso di lavoro, avviatori, script e notifiche son
 
 >[!NOTE]
 >
->Consultate anche Ristrutturazione [repository in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Vedere anche Ristrutturazione dei [repository nella AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
-#### Posizioni - Modelli di workflow {#locations-workflow-models}
+#### Posizioni - Modelli di flussi di lavoro {#locations-workflow-models}
 
 I modelli di flussi di lavoro vengono memorizzati nella directory archivio in base al tipo:
 
-* Le progettazioni del flusso di lavoro pronte all&#39;uso si trovano nel seguente percorso:
+* Le progettazioni del flusso di lavoro pronte all’uso si trovano nel seguente percorso:
 
    `/libs/settings/workflow/models/`
 
@@ -105,7 +108,8 @@ I modelli di flussi di lavoro vengono memorizzati nella directory archivio in ba
    >Non eseguire:
    >
    >* inserire un modello di flusso di lavoro personalizzato in questa cartella
-   >* modifica qualsiasi elemento `/libs`
+   >* modificare qualsiasi cosa in `/libs`
+
    >
    >Eventuali modifiche possono essere sovrascritte al momento dell&#39;aggiornamento o dell&#39;installazione di hotfix, pacchetti di correzione o Service Pack cumulativi.
 
@@ -125,7 +129,7 @@ I modelli di flussi di lavoro vengono memorizzati nella directory archivio in ba
 
    >[!NOTE]
    >
-   >Se queste progettazioni vengono modificate *mediante l’interfaccia* di AEM, i dettagli verranno copiati nelle nuove posizioni.
+   >Se queste progettazioni vengono modificate *utilizzando l&#39;interfaccia* AEM, i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Avviatori flussi di lavoro {#locations-workflow-launchers}
 
@@ -140,7 +144,8 @@ Le definizioni del modulo di avvio del flusso di lavoro vengono memorizzate anch
    >Non eseguire:
    >
    >* inserite in questa cartella eventuali avviatori di flussi di lavoro personalizzati
-   >* modifica qualsiasi elemento `/libs`
+   >* modificare qualsiasi cosa in `/libs`
+
    >
    >Eventuali modifiche possono essere sovrascritte al momento dell&#39;aggiornamento o dell&#39;installazione di hotfix, pacchetti di correzione o Service Pack cumulativi.
 
@@ -156,7 +161,7 @@ Le definizioni del modulo di avvio del flusso di lavoro vengono memorizzate anch
 
    >[!NOTE]
    >
-   >Se queste definizioni vengono modificate *utilizzando l’interfaccia* di AEM, i dettagli verranno copiati nelle nuove posizioni.
+   >Se queste definizioni vengono modificate *utilizzando l&#39;interfaccia* AEM, i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Script flusso di lavoro {#locations-workflow-scripts}
 
@@ -171,7 +176,8 @@ Gli script del flusso di lavoro vengono inoltre memorizzati nell&#39;archivio in
    >Non eseguire:
    >
    >* inserire uno script di flusso di lavoro personalizzato in questa cartella
-   >* modifica qualsiasi elemento `/libs`
+   >* modificare qualsiasi cosa in `/libs`
+
    >
    >Eventuali modifiche possono essere sovrascritte al momento dell&#39;aggiornamento o dell&#39;installazione di hotfix, pacchetti di correzione o Service Pack cumulativi.
 
@@ -198,7 +204,8 @@ Le notifiche del flusso di lavoro vengono memorizzate anche nella directory arch
    >Non eseguire:
    >
    >* inserire una delle definizioni di notifica del flusso di lavoro personalizzate in questa cartella
-   >* modifica qualsiasi elemento `/libs`
+   >* modificare qualsiasi cosa in `/libs`
+
    >
    >Eventuali modifiche possono essere sovrascritte al momento dell&#39;aggiornamento o dell&#39;installazione di hotfix, pacchetti di correzione o Service Pack cumulativi.
 
@@ -249,7 +256,7 @@ Salvataggio di una sessione:
    * si consiglia di adattare la sessione del flusso di lavoro jcr; quindi non `save` è necessario in quanto il motore del flusso di lavoro salva automaticamente la sessione una volta completata l’esecuzione del flusso di lavoro.
    * non è consigliato per un passaggio del processo creare una propria sessione jcr.
 
-* Eliminando i risparmi non necessari, puoi ridurre il sovraccarico e rendere i flussi di lavoro più efficienti.
+* Eliminando i risparmi non necessari, puoi ridurre il sovraccarico e rendere quindi i flussi di lavoro più efficienti.
 
 >[!CAUTION]
 >
@@ -279,7 +286,7 @@ La configurazione [di](/help/sites-administering/workflows-starting.md#workflows
 
 ### Non avviare flussi di lavoro da altri flussi di lavoro {#do-not-start-workflows-from-other-workflows}
 
-I flussi di lavoro possono avere un notevole carico di lavoro, sia in termini di oggetti creati nella memoria che di nodi tracciati nella directory archivio. Per questo motivo, è meglio che un flusso di lavoro esegua l&#39;elaborazione all&#39;interno di se stesso anziché avviare flussi di lavoro aggiuntivi.
+I flussi di lavoro possono avere un notevole carico di lavoro, sia in termini di oggetti creati nella memoria che di nodi tracciati nella directory archivio. Per questo motivo, è meglio che un flusso di lavoro esegua la propria elaborazione all&#39;interno di se stesso anziché avviare flussi di lavoro aggiuntivi.
 
 Un esempio potrebbe essere un flusso di lavoro che implementa un processo aziendale su un set di contenuti e quindi attiva tale contenuto. È meglio creare un processo di flusso di lavoro personalizzato che attivi ciascuno di questi nodi, anziché avviare un modello di contenuto **** Attiva per ciascuno dei nodi di contenuto da pubblicare. Questo approccio richiede un ulteriore lavoro di sviluppo, ma è più efficiente se eseguito rispetto all&#39;avvio di un&#39;istanza di flusso di lavoro separata per ogni attivazione.
 
@@ -301,7 +308,7 @@ Queste informazioni vengono utilizzate per visualizzare l&#39;avanzamento di un 
 
 Il passaggio **Attiva processo** pagina attiverà le pagine, ma non troverà automaticamente le risorse DAM di riferimento e non le attiverà.
 
-Questo è qualcosa da tenere presente se prevedete di utilizzare questo passaggio come parte di un modello di workflow.
+Questo è qualcosa da tenere a mente se prevedete di utilizzare questo passaggio come parte di un modello di workflow.
 
 ### Considerazioni sull&#39;aggiornamento {#upgrade-considerations}
 
@@ -314,7 +321,7 @@ Durante l&#39;aggiornamento dell&#39;istanza:
 
 >[!NOTE]
 >
->Consultate anche Ristrutturazione [repository in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Vedere anche Ristrutturazione dei [repository nella AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Strumenti di sistema {#system-tools}
 
@@ -324,7 +331,7 @@ Sono disponibili numerosi strumenti di sistema per il monitoraggio, la manutenzi
 
 `http://localhost:4502/system/console/slingevent`
 
-La console Sling Job Handling mostrerà:
+La console Sling Job Handling mostra:
 
 * Statistiche sullo stato dei processi nel sistema dall’ultimo riavvio.
 * Vengono inoltre visualizzate le configurazioni per tutte le code di processo e viene fornito un collegamento per modificarle in Gestione configurazione.
