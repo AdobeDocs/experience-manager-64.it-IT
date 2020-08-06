@@ -1,6 +1,6 @@
 ---
-title: Proteggere un documento per conto di un altro utente
-seo-title: Proteggere un documento per conto di un altro utente
+title: Protect un documento per conto di un altro utente
+seo-title: Protect un documento per conto di un altro utente
 description: 'null'
 seo-description: 'null'
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
@@ -8,13 +8,16 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
 
-# Proteggere un documento per conto di un altro utente {#protect-a-document-on-behalf-of-another-user}
+# Protect un documento per conto di un altro utente {#protect-a-document-on-behalf-of-another-user}
 
-AEM Forms Document Security Java SDK fornisce API che consentono a un account utente di proteggere un documento per conto di un altro utente senza ottenere le autorizzazioni necessarie per modificare il documento. È possibile utilizzare le API in un processo di flusso di lavoro o in modo programmatico come servizio documenti. Le nuove API sono:
+ AEM Forms Document Security Java SDK fornisce API che consentono a un account utente di proteggere un documento per conto di un altro utente senza ottenere le autorizzazioni necessarie per modificare il documento. È possibile utilizzare le API in un processo di flusso di lavoro o in modo programmatico come servizio documenti. Le nuove API sono:
 
 * **protectDocumentUtilizzare** l&#39;API ProtectDocument per applicare un criterio a un documento per conto di
 
@@ -29,7 +32,7 @@ Effettuare le seguenti operazioni per proteggere un documento per conto di un al
 
 1. Creare un set di criteri. Ad esempio, PolicySet1.
 1. Creare un criterio nel set di criteri appena creato. Ad esempio, Policy1 in PolicySet1.
-1. Create un utente con il ruolo di utente finale Rights Management. Ad esempio, User1. Fornire le autorizzazioni per visualizzare i documenti protetti tramite Policy1 all&#39;utente appena creato.
+1. Creare un utente con il Rights Management di ruolo Utente finale. Ad esempio, User1. Fornire le autorizzazioni per visualizzare i documenti protetti tramite Policy1 all&#39;utente appena creato.
 1. Creare un nuovo ruolo. Ad esempio, Role1. Fornire l&#39;autorizzazione Richiamo assistenza al ruolo appena creato. Creare un utente con un ruolo appena creato. Ad esempio, User2.Puoi utilizzare User2 o un amministratore per creare una connessione SDK e richiamare il servizio protectDocument.
 
    È ora possibile eseguire il seguente codice di esempio per proteggere un documento senza fornire le autorizzazioni necessarie per modificare il documento per proteggere l&#39;utente:
