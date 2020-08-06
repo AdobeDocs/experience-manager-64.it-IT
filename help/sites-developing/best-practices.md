@@ -1,8 +1,8 @@
 ---
 title: 'Best practice  '
 seo-title: 'Best practice  '
-description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
-seo-description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
+description: ' team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori'
+seo-description: ' team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori'
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ## Best practice per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
-I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM. Gli sviluppatori Adobe aderiscono a queste best practice man mano che sviluppano aggiornamenti di prodotto AEM e codice cliente per le implementazioni dei clienti.
+ team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori.  gli sviluppatori di Adobi aderiscono a queste best practice man mano che sviluppano aggiornamenti AEM prodotto di base e codice cliente per le implementazioni dei clienti.
 
 Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le best practice seguenti:
 
@@ -90,7 +93,7 @@ Alcune best practice per Community sono descritte di seguito:
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) è un nuovo sistema di modelli HTML introdotto con AEM 6.0. Sostituisce JSP e ESP come sistema di templazione preferito di AEM.
+HTML Template Language (HTL) è un nuovo sistema di modelli HTML, introdotto con AEM 6.0. Sostituisce JSP e ESP come sistema di AEM preferito.
 
 |  |  |  |
 |---|---|---|
@@ -99,6 +102,6 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML introdotto con 
 
 >[!NOTE]
 >
->Per la procedura ottimale, l’esercitazione con più parti potrebbe interessare impostare un nuovo progetto AEM, con informazioni dettagliate sui componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti:\
->[Guida introduttiva ad AEM Sites - Esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>Per la procedura ottimale per l’impostazione di un nuovo progetto AEM, con i dettagli Componenti principali, Modelli modificabili, Librerie client e sviluppo di componenti potrebbe essere utile seguire un’esercitazione con più parti:\
+>[Guida introduttiva ad  AEM Sites - Esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
