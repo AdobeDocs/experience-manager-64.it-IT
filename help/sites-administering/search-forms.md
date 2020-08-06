@@ -1,8 +1,8 @@
 ---
 title: Configurazione dei moduli di ricerca
 seo-title: Configurazione dei moduli di ricerca
-description: Scoprite come configurare i moduli di ricerca.
-seo-description: Scoprite come configurare i moduli di ricerca.
+description: Scoprite come configurare Search Forms.
+seo-description: Scoprite come configurare Search Forms.
 uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 13%
 
 ---
 
 
 # Configurazione dei moduli di ricerca{#configuring-search-forms}
 
-Utilizzate **Cerca moduli** per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili in varie console e/o pannelli di AEM nell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle esigenze specifiche.
+Utilizzate **Cerca in Forms** per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili nelle varie console AEM e/o nei pannelli dell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle esigenze specifiche.
 
 Sono disponibili [diversi](#predicates-and-their-settings)predicati. Potete aggiungere più predicati, inclusi (tra gli altri) il predicato full-text per le ricerche full-text, il predicato Property per cercare risorse che corrispondono a una singola proprietà specificata dall&#39;utente o il predicato Options per cercare risorse che corrispondono a uno o più valori specificati per una particolare proprietà.
 
@@ -126,7 +129,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr> 
   <tr> 
    <td>Componenti </td> 
-   <td>Consente a un autore di cercare/filtrare le pagine che contengono un componente specifico. For example an image gallery.<br /> </td> 
+   <td>Consente a un autore di cercare/filtrare le pagine in cui è contenuto un componente specifico. For example an image gallery.<br /> </td> 
    <td> 
     <ul> 
      <li>Etichetta campo</li> 
@@ -193,7 +196,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr> 
   <tr> 
    <td>Filtro nascosto</td> 
-   <td>Filtro su proprietà e valore, non visibile all'utente.</td> 
+   <td>Un filtro su proprietà e valore, non visibile all'utente.</td> 
    <td> 
     <ul> 
      <li>Nome proprietà</li> 
@@ -216,7 +219,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr> 
   <tr> 
    <td>Proprietà Options </td> 
-   <td>Cercate una proprietà dell’opzione.</td> 
+   <td>Cercare in una proprietà dell'opzione.</td> 
    <td> 
     <ul> 
      <li>Etichetta campo</li> 
@@ -264,7 +267,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr> 
   <tr> 
    <td>Intervallo </td> 
-   <td>Consente di cercare risorse all’interno di un intervallo specificato. Nel pannello Ricerca potete specificare i valori minimo e massimo per l’intervallo.</td> 
+   <td>Consente di cercare risorse all’interno di un intervallo specificato. Nel pannello Ricerca, potete specificare i valori minimo e massimo per l’intervallo.</td> 
    <td> 
     <ul> 
      <li>Etichetta campo</li> 
@@ -350,13 +353,14 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
 * I predicati di ricerca relativi solo all’amministrazione del sito (interfaccia classica) si trovano in:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Questi sono obsoleti e sono disponibili solo per compatibilità con versioni precedenti.
+
 > 
 >
 Queste informazioni sono solo a scopo di riferimento e non è necessario apportare modifiche a `/libs`.
 
 ### Predicate Settings {#predicate-settings}
 
-A seconda del predicato sono disponibili per la configurazione una selezione di impostazioni:
+A seconda del predicato, per la configurazione è disponibile una selezione di impostazioni:
 
 * **Etichetta campo**
 
@@ -398,7 +402,8 @@ A seconda del predicato sono disponibili per la configurazione una selezione di 
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Percorso** del nodo Opzioni **Equivale al Percorso** delleopzioni. Solo questo si trova nel campo predicato comune, mentre l&#39;altro è specifico per le risorse.
+* **Percorso** del nodo OptionsEffettivamente uguale a 
+**Percorso** opzioni, solo questo è nel campo predicato comune, l&#39;altro è specifico per le risorse.
 
 * **Selezione** singola Se questa opzione è selezionata, le opzioni vengono rappresentate come caselle di controllo che consentono solo una singola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
@@ -406,15 +411,15 @@ A seconda del predicato sono disponibili per la configurazione una selezione di 
 
 * &amp;ast; nelle etichette dei campi della scheda **Impostazioni** , i campi sono obbligatori e, se lasciato vuoto, viene visualizzato un messaggio di errore
 
-## Configurazione dei moduli di ricerca {#configuring-your-search-forms}
+## Configurazione della ricerca in Forms {#configuring-your-search-forms}
 
 ### Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
 
-1. Passare a **Strumenti**, **Operazioni**, **Moduli** di ricerca.
+1. Passa a **Strumenti**, **Operazioni**, **Ricerca in Forms**.
 
 1. Selezionate la configurazione da personalizzare.
 1. Utilizzate l&#39;icona **Modifica** per aprire la configurazione da aggiornare.
-1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se esiste una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
+1. Se desiderate una nuova personalizzazione, probabilmente desiderate [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) come necessario. Se disponete già di una personalizzazione, potete selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
 1. Select **Done** to save the configuration.
 
    >[!NOTE]
@@ -502,6 +507,7 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
 
    * `jcr:title` - l&#39;etichetta del campo da visualizzare nella barra di ricerca
    * `value` - il valore della proprietà su cui effettuare la ricerca
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
@@ -517,7 +523,7 @@ L’esempio seguente (per effettuare ricerche in base al modello utilizzato per 
    >1. Apportare modifiche all&#39;interno `/apps.`
 
 
-1. Aprire la console **Moduli** di ricerca e selezionare la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**.
+1. Aprite la console **Cerca in Forms** e selezionate la configurazione da aggiornare. Ad esempio, **Siti Admin Search Rail**.
 
    Quindi fare clic o toccare l&#39;icona **Modifica moduli** di ricerca.
 
@@ -550,7 +556,7 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire l
  <tbody> 
   <tr> 
    <td><strong>Azione</strong></td> 
-   <td><strong>Autorizzazioni</strong></td> 
+   <td><strong>Autorizzazioni </strong></td> 
   </tr> 
   <tr> 
    <td>Modifica </td> 
