@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
@@ -61,8 +64,7 @@ Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri c
 
    `/social/forum/hbs/social/forum\,ADD`
 
-   
-Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
+   L’impostazione predefinita è impostata sul verbo ADD per i componenti QnA e forum.
 
 
 * **[!UICONTROL Intervallo di punteggio]**
@@ -89,7 +91,7 @@ Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
 
 Nel punteggio di base, è nota la quantità necessaria per ottenere un contrassegno.
 
-Nel punteggio avanzato, la quantità necessaria viene costantemente regolata in base alla quantità di dati di qualità all&#39;interno del sistema. Il punteggio viene calcolato in modo continuo in modo simile a una curva a campana.
+Nel punteggio avanzato, la quantità necessaria viene costantemente regolata in base alla quantità di dati di qualità all&#39;interno del sistema. Il punteggio viene calcolato in modo continuativo in modo simile a una curva a campana.
 
 Se un membro ha ottenuto un badge esperto su un argomento che non è più attivo, c&#39;è la possibilità che perderà il loro distintivo a causa di decadimento nel tempo.
 
@@ -119,14 +121,14 @@ Se manca il file delle parole di arresto, il motore di punteggio avanzato genere
 
 Le proprietà avanzate della regola di contrassegno sono diverse dalle proprietà [di base della regola](implementing-scoring.md#badging-rules)di contrassegno.
 
-Invece di associare i punti a un’immagine badge, è necessario identificare solo il numero di esperti consentiti e l’immagine del contrassegno da assegnare.
+Invece di associare i punti a un’immagine badge, è necessario solo identificare il numero di esperti consentiti e l’immagine del contrassegno da assegnare.
 
 ![chlimage_1-262](assets/chlimage_1-262.png)
 
 | **Proprietà** | **Tipo** | **Descrizione valore** |
 |---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | badgingPath | Stringa[] | (Obbligatorio) Una stringa di più valori di immagini contrassegno fino al numero di badgingLevels. I percorsi immagine del contrassegno devono essere ordinati in modo che il primo venga assegnato all’esperto più alto. Se sono presenti meno simboli di quelli indicati da badgingLevels, l&#39;ultimo contrassegno nell&#39;array riempie il resto dell&#39;array. Voce di esempio:/etc/community/badging/images/Expert-badge/jcr:content/expert.png |
-| badgingLevels | Lungo | (Facoltativo) Specifica i livelli di esperienza da assegnare. Ad esempio, se un esperto e un esperto (due simboli) devono essere presenti, il valore deve essere impostato su 2. Il valore badgingLevel deve corrispondere al numero di immagini del contrassegno relative agli esperti elencate per la proprietà badgingPath. Il valore predefinito è 1. |
+| badgingLevels | Lungo | (Facoltativo) Specifica i livelli di esperienza da assegnare. Ad esempio, se un esperto e un esperto (due simboli) devono essere presenti, il valore deve essere impostato su 2. L&#39;oggetto badgingLevel deve corrispondere al numero di immagini del contrassegno relative agli esperti elencate per la proprietà badgingPath. Il valore predefinito è 1. |
 | badgingType | Stringa | (Obbligatorio) Identifica il motore di valutazione come &quot;base&quot; o &quot;avanzato&quot;. Impostato su &quot;advanced&quot;, altrimenti il valore predefinito è &quot;basic&quot;. |
 | scoringRules | Stringa[] | (Facoltativo) Una stringa di più valori per limitare la regola di contrassegno agli eventi di punteggio identificati dalle regole di punteggio elencate.Voce di esempio:/etc/community/scoring/rules/adv-comments-scoringDefault non è una restrizione. |
 
@@ -182,7 +184,7 @@ Nella versione beta sono incluse due regole di punteggio avanzate per la funzion
 * `subRules` è un attributo di tipo String[] sul nodo della `jcr:content` regola
 * `sub-rules` può essere condiviso tra diverse regole di punteggio
 * `rules` devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
-   * i nomi delle regole devono essere univoci indipendentemente dalla posizione
+   * i nomi delle regole devono essere univoci, indipendentemente dalla posizione
 
 ### Regole di Badging incluse {#included-badging-rules}
 
@@ -195,4 +197,4 @@ Nella release sono incluse due regole di contrassegno avanzate che corrispondono
 
 * `rules` nodi di tipo `cq:Page`
 * `rules`devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
-   * i nomi delle regole devono essere univoci indipendentemente dalla posizione
+   * i nomi delle regole devono essere univoci, indipendentemente dalla posizione
