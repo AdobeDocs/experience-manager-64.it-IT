@@ -1,6 +1,6 @@
 ---
-title: Funzionalità Flussi attività
-seo-title: Funzionalità Flussi attività
+title: Funzionalità Flussi di attività
+seo-title: Funzionalità Flussi di attività
 description: Attività di un membro della community che ha effettuato l'accesso
 seo-description: Attività di un membro della community che ha effettuato l'accesso
 uuid: 8a05a5ed-0edf-4528-a145-f9dc37d10247
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 
-# Funzionalità Flussi attività {#activity-streams-feature}
+# Funzionalità Flussi di attività {#activity-streams-feature}
 
 ## Introduzione {#introduction}
 
@@ -25,7 +28,7 @@ La possibilità di seguire aggiunge un&#39;altra visione delle attività quando 
 
 Questa sezione della documentazione descrive
 
-* Aggiunta del componente Flussi attività a un sito AEM
+* Aggiunta del componente Activity Streams a un sito AEM
 * Impostazioni di configurazione per il componente Activity Streams
 
 ## Aggiunta di flussi di attività a una pagina {#adding-activity-streams-to-a-page}
@@ -36,7 +39,7 @@ Se si desidera aggiungere un `Activity Streams` componente a una pagina in modal
 
 e trascinatelo nella stessa posizione in una pagina in cui dovrebbero essere visualizzati i flussi di attività.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](essentials-activities.md#essentials-for-client-side) richieste, verrà visualizzato il `Activity Streams` componente:
 
@@ -53,7 +56,7 @@ Nella scheda Attività **** utente, specificate le attività da visualizzare:
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
 * **[!UICONTROL Numero massimo di attività]** Il numero di attività da visualizzare
-* **[!UICONTROL Percorso]** risorsa flusso Lascia vuoto il campo predefinito per il sito community o il gruppo community. Il percorso della risorsa del flusso identifica l&#39;origine delle attività. Il valore predefinito è vuoto.
+* **[!UICONTROL Percorso]** risorsa flusso Lascia vuoto per impostazione predefinita il sito community o il gruppo community. Il percorso della risorsa del flusso identifica l&#39;origine delle attività. Il valore predefinito è vuoto.
 * **[!UICONTROL Visualizza visualizzazione]** attività utente se questa opzione è selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
 * **[!UICONTROL Visualizza visualizzazione]** Tutte le attività Se questa opzione è selezionata, la pagina delle attività includerà una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
 * **[!UICONTROL Visualizza visualizzazione]** seguente Se questa opzione è selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
