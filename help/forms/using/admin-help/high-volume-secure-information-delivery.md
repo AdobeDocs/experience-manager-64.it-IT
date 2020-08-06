@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -21,10 +24,10 @@ In un ambiente di produzione di massa, come quello in cui vengono generate fattu
 
 Uno dei vantaggi di questo approccio è che la dimensione del database di protezione dei documenti non aumenta in modo lineare con i documenti, ma con il numero di utenti. Inoltre, poiché è necessario creare la licenza una sola volta per un utente, la successiva protezione dei documenti attraverso questi criteri diventa più rapida. Funzionalità quali accesso offline, scadenza dei documenti e revoca sono supportate per tutti questi documenti.
 
-Document Security supporta anche i criteri astratti. I criteri astratti sono modelli di criteri che contengono tutti gli attributi dei criteri, ad esempio le impostazioni di protezione dei documenti e i diritti di utilizzo, ma non contengono un elenco di entità. Gli amministratori possono creare un numero qualsiasi di criteri dal criterio astratto con entità diverse che devono avere accesso ai documenti. Le modifiche apportate al criterio astratto non incidono sui criteri effettivi generati dai criteri astratti.
+Document Security supporta anche i criteri astratti. I criteri astratti sono modelli di criteri che contengono tutti gli attributi dei criteri, ad esempio le impostazioni di protezione dei documenti e i diritti di utilizzo, ma non contengono un elenco di entità. Gli amministratori possono creare un numero qualsiasi di criteri dal criterio astratto con entità diverse che devono avere accesso ai documenti. Le modifiche apportate al criterio astratto non influiscono sui criteri effettivi generati dai criteri astratti.
 
 Nel caso della generazione mensile di fatture per una società di telecomunicazioni, create un criterio astratto, create utenti e quindi generate licenze univoche per ogni utente. Le licenze vengono successivamente applicate ai documenti per ogni utente.
 
 La creazione di un criterio astratto è supportata solo tramite l&#39;SDK Java per la protezione dei documenti. È tuttavia possibile amministrare i criteri creati dai criteri astratti dalle pagine Web di protezione dei documenti. I criteri creati con questo metodo hanno lo stesso comportamento di quelli creati con le pagine Web per la protezione dei documenti.
 
-Per ulteriori informazioni, consulta [Programmazione con i moduli](https://www.adobe.com/go/learn_aemforms_programming_63) AEM.
+Per ulteriori informazioni, vedere [Programmazione con AEM moduli](https://www.adobe.com/go/learn_aemforms_programming_63) .
