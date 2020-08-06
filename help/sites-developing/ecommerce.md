@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 3%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 
 Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di:
 
-* plug-in in un sistema eCommerce ed estrazione di dati di prodotto in AEM
-* creazione di componenti AEM per funzionalità di eCommerce, indipendentemente dallo specifico motore di eCommerce
+* collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM
+* creazione di componenti AEM per funzionalità di e-commerce indipendenti dal motore eCommerce specifico
 
 Per ulteriori informazioni, vedere:
 
@@ -47,5 +50,5 @@ Per ulteriori informazioni, consultate la documentazione [sulle](https://helpx.a
 
 >[!NOTE]
 >
->Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)di eCommerce Adobe Experience Manager 6.2 personalizzati.
+>Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)di eCommerce personalizzati per Adobe Experience Manager 6.2.
 
