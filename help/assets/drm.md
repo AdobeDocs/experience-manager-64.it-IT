@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: fe99869df5616f8f483ab8a9517e850e45c7a117
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -89,7 +89,7 @@ Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le ri
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Aprite [!DNL Experience Manager] Configuration Manager.
-1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
+1. Scegliete **[!UICONTROL notifica]** di scadenza Adobe CQ DAM. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -114,7 +114,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Fate clic su **[!UICONTROL Pubblica]** nella barra degli strumenti. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
+1. Click **[!UICONTROL Publish]** from the toolbar. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -182,7 +182,7 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 >
 >Il percorso `/etc/dam/drm/licenses` utilizzato per memorizzare le licenze nelle versioni precedenti di [!DNL Experience Manager] è obsoleto.
 >
->Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti, Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
+>Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti,  Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Scaricare risorse protette da DRM {#downloading-drm-assets}
 
