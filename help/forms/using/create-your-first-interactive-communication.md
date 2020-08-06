@@ -44,13 +44,13 @@ Il viaggio inizia con l&#39;apprendimento del caso d&#39;uso:
 Un operatore di telecomunicazioni invia mensilmente ai clienti via e-mail. Il progetto di legge è una comunicazione interattiva. Il messaggio e-mail include:
 
 * Un PDF protetto da password, denominato canale di stampa in questa esercitazione. Include i dettagli del cliente, i dettagli della fattura, il riepilogo delle spese, le pratiche modalità di pagamento della fattura e i dettagli di utilizzo.
-* Un collegamento alla versione Web della fattura, denominata canale Web in questa esercitazione. La versione Web della fattura, oltre ai dettagli trattati nella versione PDF, fornisce una rappresentazione grafica dei dettagli di utilizzo e delle offerte personalizzate basate su Adobe Target. La versione Web contiene anche un modulo di pagamento online. Aiuta a effettuare pagamenti online senza lasciare l&#39;IC.
+* Un collegamento alla versione Web della fattura, denominata canale Web in questa esercitazione. La versione Web della fattura, oltre ai dettagli trattati nella versione PDF, fornisce una rappresentazione grafica dei dettagli di utilizzo e delle offerte personalizzate basate su  Adobe Target. La versione Web contiene anche un modulo di pagamento online. Aiuta a effettuare pagamenti online senza lasciare l&#39;IC.
 * Collegamento a servizi a valore aggiunto, ad esempio archiviazione online, abbonamenti musicali e iscrizioni video on-demand.
 
 ## Prerequisiti {#prerequisites}
 
-* Configurate un’istanza di creazione AEM.
-* Installazione del componente aggiuntivo [](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms nell’istanza di creazione
+* Configurate un’istanza AEM di creazione.
+* Installazione [componente aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms nell’istanza di creazione
 * Configurare il database MYSQL
 * Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione si basano sul database MySQL e utilizzano il driver [di database Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL JDBC.
 
@@ -76,7 +76,7 @@ Per creare un&#39;anatomia per la comunicazione interattiva con le seguenti moda
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modello dati del modulo consente di collegare una comunicazione interattiva a origini dati diverse. Ad esempio, profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, consultate Integrazione [dei dati in](/help/forms/using/data-integration.md)AEM Forms.
+Un modello dati del modulo consente di collegare una comunicazione interattiva a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dei dati AEM Forms.
 
 **Obiettivi:**
 
@@ -109,16 +109,16 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Per creare una comunicazione interattiva, nel server AEM per la stampa e i canali Web devono essere disponibili dei modelli.
+Per creare una comunicazione interattiva, è necessario disporre di modelli nel server AEM per i canali di stampa e Web.
 
-I modelli per il canale di stampa vengono creati in Adobe Forms Designer e caricati nel server AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
+I modelli per il canale di stampa vengono creati  Adobe Forms Designer e caricati nel server di AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
 
 I modelli per il canale Web vengono creati in AEM. Gli autori e gli amministratori dei modelli possono creare, modificare e abilitare i modelli Web. Una volta creati e abilitati, questi modelli sono disponibili per la creazione di una comunicazione interattiva.
 
 **Obiettivi:**
 
-* Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
-* Caricare i modelli XDP nel server AEM Forms
+* Creare modelli XDP per il canale di stampa utilizzando  Adobe Forms Designer
+* Caricare i modelli XDP sul  AEM Forms Server
 * Creazione e attivazione di modelli per il canale Web
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
@@ -146,7 +146,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: S
 
 ![11 test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Dopo aver creato una comunicazione interattiva, è importante verificare ogni modifica apportata. Verificare ogni campo di una comunicazione interattiva è noioso. AEM Forms fornisce un SDK (Calvin SDK) per automatizzare i test delle comunicazioni interattive nel browser Web.
+Dopo aver creato una comunicazione interattiva, è importante verificare ogni modifica apportata. Verificare ogni campo di una comunicazione interattiva è noioso.  AEM Forms fornisce un SDK (Calvin SDK) per automatizzare il test delle comunicazioni interattive nel browser Web.
 
 **Obiettivi:**
 
@@ -156,7 +156,7 @@ Dopo aver creato una comunicazione interattiva, è importante verificare ogni mo
 
 ## Passaggio 7: Pubblicare la comunicazione interattiva {#step-publish-your-interactive-communication}
 
-![12-publish-your-adaptive-form-small](assets/12-publish-your-adaptive-form-_small.png)
+![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
 Dopo aver creato e verificato le comunicazioni interattive tramite i canali Stampa e Web, potete pubblicare queste risorse. Il caso d’uso descritto in questa esercitazione è incentrato sull’integrazione di queste risorse con un client e-mail. Il client e-mail funge da ponte per inviare le comunicazioni interattive a più indirizzi e-mail.
 
