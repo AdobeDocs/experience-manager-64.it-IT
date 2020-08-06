@@ -1,9 +1,12 @@
 ---
 title: Creazione di progetti di traduzione
-description: Scoprite come creare progetti di traduzione in AEM.
+description: Scopri come creare progetti di traduzione in AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 25%
 
 ---
 
@@ -26,9 +29,9 @@ Potete eseguire questo flusso di lavoro per tradurre un ulteriore gruppo di riso
 
 >[!NOTE]
 >
->Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e InDesign, le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
+>Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e file InDesign , le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
 
-## Creazione e conversione di flussi di lavoro {#create-and-translate-workflow}
+## Crea e traduci flusso di lavoro {#create-and-translate-workflow}
 
 Il flusso di lavoro Crea e traduci consente di generare per la prima volta copie della lingua per una particolare lingua. Il flusso di lavoro offre le seguenti opzioni:
 
@@ -90,7 +93,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click/tap on **[!UICONTROL Create]**. Le risorse della cartella sorgente vengono copiate nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
+1. Click/tap on **[!UICONTROL Create]**. Le risorse della cartella di origine vengono copiate nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -126,7 +129,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
 ### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project}
 
-Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo aver eseguito un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione contenente le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
+Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo aver eseguito un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione che contiene le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
 
 1. Nell’interfaccia utente Risorse, passa alla cartella di origine contenente le risorse non tradotte.
 1. Seleziona una risorsa da tradurre e apri il **[!UICONTROL riquadro Riferimento]**. Nella sezione **[!UICONTROL Copie per lingua]** viene visualizzato il numero di copie di traduzione attualmente disponibili.
@@ -278,7 +281,7 @@ Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di 
 
 ## Creazione di copie temporanee della lingua {#creating-temporary-language-copies}
 
-Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. Risorse AEM memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo che l’utente ha esplicitamente approvato le risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
+Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte.  AEM Assets memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo che sono state esplicitamente approvate. Se rifiutate le risorse, la copia nella lingua rimane invariata.
 
 1. Tocca o fai clic sulla cartella principale di origine di **[!UICONTROL Copie per lingua]** per la quale hai già creato una copia per lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per aprire la cartella in AEM Assets.
 
@@ -307,6 +310,6 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Passate alla console Risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
+1. Passate alla console Risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
 
 Per suggerimenti sulla traduzione efficiente dei metadati per le risorse, consultate [5 Passaggi per una traduzione efficiente dei metadati](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
