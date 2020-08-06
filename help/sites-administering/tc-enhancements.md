@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
 
 # Miglioramenti della traduzione{#translation-enhancements}
 
-Questa pagina presenta miglioramenti e miglioramenti incrementali alle funzionalità di gestione della traduzione AEM.
+Questa pagina presenta miglioramenti e miglioramenti incrementali alle funzionalità di gestione AEM traduzione.
 
 ## Automazione del progetto di traduzione {#translation-project-automation}
 
@@ -26,7 +29,7 @@ Sono state aggiunte opzioni per migliorare la produttività nell’utilizzo dei 
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passate alla scheda **Avanzate** . In basso, potete selezionare Promuovi **automaticamente lanci** di traduzione.
+1. Passate alla scheda **Avanzate** . Nella parte inferiore, potete selezionare Promuovi **automaticamente lanci** di traduzione.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -62,7 +65,7 @@ Sono state aggiunte opzioni per migliorare la produttività nell’utilizzo dei 
 
 Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il sistema TMS (Translation Management System) per formare la sua memoria di traduzione.
 
-1. Dalla console Siti, dopo aver aggiornato il testo in una pagina tradotta, selezionate **Aggiorna memoria** traduzione.
+1. Dalla console Siti, dopo aver aggiornato il contenuto di testo in una pagina tradotta, selezionate **Aggiorna memoria** traduzione.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
@@ -72,27 +75,28 @@ Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il 
 
    >[!NOTE]
    >
-   >AEM restituirà le stringhe selezionate al sistema di gestione della traduzione.
+   >AEM rispedirà le stringhe selezionate al Sistema di gestione della traduzione.
 
 ## Copie della lingua a più livelli {#language-copies-on-multiple-levels}
 
-Le radici delle lingue ora possono essere raggruppate sotto i nodi, ad esempio per regione, pur restando riconosciute come radici delle copie delle lingue.
+Le radici delle lingue ora possono essere raggruppate sotto nodi, ad esempio per regione, pur restando riconosciute come radici delle copie delle lingue.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 
 >[!CAUTION]
 >
->È consentito un solo livello. Ad esempio, quanto segue non consente alla pagina &quot;es&quot; di risolvere una copia per lingua:
+>È consentito un solo livello. Ad esempio, quanto segue non consente alla pagina &quot;es&quot; di trovare una copia per lingua:
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
 Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli (America centrale/America centrale) lontano dal `en` nodo.
 
 >[!NOTE]
 >
->Le radici della lingua possono avere un nome di pagina qualsiasi, anziché semplicemente il codice ISO della lingua. AEM controllerà sempre prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controllerà la proprietà cq:language della pagina per l’identificazione della lingua.
+>Le radici della lingua possono avere un nome di pagina qualsiasi, anziché semplicemente il codice ISO della lingua. AEM sempre controllare prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controllare la proprietà cq:language della pagina per l’identificazione della lingua.
 
 ## Report stato conversione {#translation-status-reporting}
 
