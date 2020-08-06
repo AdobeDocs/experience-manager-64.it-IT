@@ -26,7 +26,7 @@ Questa esercitazione è un passaggio della serie [Crea il primo modulo](create-y
 
 ## Informazioni sull&#39;esercitazione  {#about-the-tutorial}
 
-È possibile utilizzare i temi per fornire un aspetto e uno stile univoci a un modulo adattivo. È possibile applicare temi out-of-box forniti con l&#39;editor di moduli adattivi o creare temi personalizzati. AEM Forms fornisce un editor [di](themes.md) temi per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l&#39;editor di temi, ma è desiderato.
+È possibile utilizzare i temi per fornire un aspetto e uno stile univoci a un modulo adattivo. È possibile applicare temi out-of-box forniti con l&#39;editor di moduli adattivi o creare temi personalizzati.  AEM Forms fornisce un editor [di](themes.md) temi per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l&#39;editor di temi, ma è desiderato.
 
 Al termine dell&#39;esercitazione, imparerete a:
 
@@ -101,13 +101,13 @@ In questa esercitazione verranno formattati intestazione e piè di pagina, compo
 
 ### Creare un tema {#create-a-theme}
 
-1. Accedete all’istanza di creazione di AEM e andate ad **Adobe Experience Manager** > **Moduli** > **Temi**. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Accedete all’istanza di creazione AEM e passate a **Adobe Experience Manager** > **Forms** > **Temi**. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Toccate **[!UICONTROL Crea]** e selezionate **[!UICONTROL Tema]**. Viene visualizzata la pagina Crea tema con i campi necessari per creare un tema. I campi Titolo e Nome sono obbligatori:
 
    * **Titolo:** Specificate un titolo del tema. Ad esempio, Tema **globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
    * **Nome:** Specificate il nome del tema. Ad esempio, **Global-Theme.** Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. È possibile modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
 
-1. Toccate **Crea**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **Apri** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell’editor di temi. Per lo stile, l’editor di temi utilizza un modulo adattivo fornito con AEM Forms.
+1. Toccate **Crea**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **Apri** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell’editor di temi. Per lo stile, l&#39;editor di temi utilizza un modulo adattivo fornito con  AEM Forms.
 
    Per informazioni sull’utilizzo dell’interfaccia utente dell’editor di temi, consultate [Informazioni sull’editor](/help/forms/using/themes.md#aboutthethemeeditor)di temi.
 
@@ -135,7 +135,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    | Colore font | FFFFFF |
    | Dimensione font | 54px |
 
-1. Toccate il widget dell’intestazione e toccate **Intestazione**. Le opzioni per lo stile del widget Intestazione vengono visualizzate a sinistra. Espandete il pannello **Dimensioni e posizione** , impostate **Altezza** su `120px`e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Toccate il widget dell’intestazione e toccate **Intestazione**. Le opzioni per lo stile del widget Intestazione vengono visualizzate a sinistra. Espandete il pannello **Dimension e posizione** , impostate **Altezza** su `120px`e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Espandete lo sfondo del widget dell’intestazione e impostate il colore **** di sfondo su `F6921E.`
 
    Passa il puntatore del mouse su **Immagine e sfumatura** > **+ Aggiungi**, tocca **Immagine**. Impostate le seguenti proprietà e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -146,7 +146,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    | Posizione | A destra in basso |
    | Divisione in porzioni | Nessuna ripetizione |
 
-1. Nell’editor di temi, toccate il logo nell’intestazione e toccate **Logo** intestazione. Espandete il pannello di controllo Dimensioni e posizione, impostate le seguenti proprietà e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Nell’editor di temi, toccate il logo nell’intestazione e toccate **Logo** intestazione. Espandete la struttura di Dimension e posizione, impostate le seguenti proprietà e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -217,12 +217,12 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>Dimensioni e posizione</td> 
+   <td>Dimension e posizione</td> 
    <td>Larghezza</td> 
    <td>60%</td> 
   </tr> 
   <tr> 
-   <td>Dimensioni e posizione</td> 
+   <td>Dimension e posizione</td> 
    <td>immagine</td> 
    <td> 
     <ul> 
@@ -301,7 +301,7 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
 
    ![style-option](assets/style-option.png)
 
-1. Toccate il pulsante **Allega** e toccate l&#39;icona ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Impostate le seguenti proprietà nella struttura di **fisarmonica Dimensioni e Posizione** :
+1. Toccate il pulsante **Allega** e toccate l&#39;icona ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Impostate le seguenti proprietà in **Dimension e Posizione** fisarmonica:
 
    | Proprietà | Valore |
    |---|---|
@@ -407,12 +407,12 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
    <td>Valore</td> 
   </tr> 
   <tr> 
-   <td>Dimensioni e posizione</td> 
+   <td>Dimension e posizione</td> 
    <td>Mobile</td> 
    <td>Destra</td> 
   </tr> 
   <tr> 
-   <td>Dimensioni e posizione</td> 
+   <td>Dimension e posizione</td> 
    <td>immagine</td> 
    <td> 
     <ul> 
@@ -441,14 +441,14 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
 
 È possibile utilizzare vari font per progettare un modulo adattivo. Tutti i dispositivi su cui è visualizzato il modulo adattivo potrebbero non avere i font utilizzati per progettare il modulo adattivo. È possibile utilizzare un servizio di font Web per distribuire i font richiesti al dispositivo di destinazione.
 
-Adobe Typekit è un servizio di font Web. È possibile configurare e utilizzare il servizio con moduli adattivi. Per utilizzare Adobe Typekit in un modulo adattivo:
+ Adobe Typekit è un servizio di font Web. È possibile configurare e utilizzare il servizio con moduli adattivi. Per utilizzare  Adobe Typekit in un modulo adattivo:
 
 >[!NOTE]
 >
->![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit ora è denominato Adobe Fonts ed è incluso con Creative Cloud e altre iscrizioni. [Per saperne di più](https://fonts.adobe.com/).
+>![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit ora è denominato  Adobe Fonts ed è incluso con Creative Cloud e altre iscrizioni. [Per saperne di più](https://fonts.adobe.com/).
 
-1. Create un account [Adobe Typekit](https://typekit.com/) , create un kit, aggiungete il font Myriad Pro al kit, pubblicate il kit e ottenete l&#39;ID Kit. È necessario utilizzare i font Adobe Typekit (font Web) in un modulo adattivo.
-1. Nel server AEM Forms, passa a ![adobeexperienceemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Strumenti** ![a martello](assets/hammer.png) > **Distribuzione** ****> Servizi cloud. Nella pagina Servizi cloud, accedi a Servizi **di** terze parti > **Typekit** e fai clic su **Configura** ora in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante + per creare una nuova istanza.
+1. Create un account [Adobe Typekit](https://typekit.com/) , create un kit, aggiungete il font Myriad Pro al kit, pubblicate il kit e ottenete l&#39;ID kit. È necessario utilizzare  font Adobe Typekit (font Web) in un modulo adattivo.
+1. Nel server AEM Forms , accedete ad ![adobeexperience](assets/adobeexperiencemanager.png) emanager **Adobe Experience Manager** > **Strumenti** ![martello](assets/hammer.png) > **Distribuzione** ****> Cloud Services. Nella pagina Cloud Services, accedi a Servizi **di** terze parti > **Typekit** e fai clic su **Configura** ora in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante + per creare una nuova istanza.
 
    Nella finestra di dialogo Crea configurazione, specificate un **Titolo** per la configurazione e fate clic su **Crea**. Viene nuovamente visualizzata la pagina di configurazione. Nella finestra di dialogo Modifica componente visualizzata, inserite l’ID **** kit e fate clic su **OK**.
 
