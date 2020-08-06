@@ -34,7 +34,7 @@ Con i modelli modificabili, le parti che compongono una pagina sono isolate all�
 
 >[!NOTE]
 >
->Per utilizzare i modelli modificabili con [SPA Editor è necessario utilizzare AEM 6.4.5.0 o versione successiva](/help/sites-developing/spa-overview.md).
+>AEM 6.4.5.0 o versione successiva è richiesto per utilizzare modelli modificabili con l&#39;editor [](/help/sites-developing/spa-overview.md)SPA.
 
 >[!NOTE]
 >
@@ -54,13 +54,13 @@ Questo documento presuppone che si abbia già familiarità con la creazione e la
 >[!NOTE]
 >
 >L&#39;esercitazione seguente potrebbe interessare anche la configurazione di un modello di pagina modificabile in un nuovo progetto:\
->[Guida introduttiva ad AEM Sites - Parte 2 - Creazione di una pagina di base e di un modello](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Guida introduttiva  AEM Sites Part 2 - Creazione di una pagina di base e di un modello](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 La creazione di modelli modificabili viene realizzata principalmente con la console [modelli e con l’editor](/help/sites-authoring/templates.md) modelli da un autore di modelli. Questa sezione fornisce una panoramica di questo processo e una descrizione di quanto avviene a livello tecnico.
 
-Per informazioni sull’utilizzo di modelli modificabili in un progetto AEM, consultate [Creazione di un progetto AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Per informazioni sull’utilizzo di modelli modificabili in un progetto AEM consultate [Creazione di un progetto AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Durante la creazione di un nuovo modello modificabile:
 
@@ -239,7 +239,7 @@ Le cartelle dei modelli per l’implementazione [di riferimento](/help/sites-dev
 
 #### Il gruppo di autori dei modelli {#the-template-authors-group}
 
-Il `template-authors` gruppo è il gruppo utilizzato per gestire l’accesso ai modelli ed è dotato di AEM come standard, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
+Il `template-authors` gruppo è il gruppo utilizzato per gestire l&#39;accesso ai modelli ed è dotato di AEM standard, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
 
 >[!CAUTION]
 >
@@ -378,7 +378,7 @@ Quando create un nuovo modello, dovete specificare un tipo di modello:
    * Il criterio del nodo principale, che definisce i componenti consentiti nell&#39;editor modelli.
    * È consigliabile definire i punti di interruzione per la griglia reattiva e l&#39;impostazione dell&#39;emulatore mobile sul tipo di modello. Questo è facoltativo, perché la configurazione può essere definita anche sul singolo modello (consultate Tipo di [modello e Gruppi](/help/sites-developing/page-templates-editable.md#template-type-and-mobile-device-groups)di dispositivi mobili).
 
-* AEM offre una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
+* AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
 
    * Altri esempi sono forniti come parte del contenuto di esempio [We.Retail](/help/sites-developing/we-retail.md) .
 
@@ -430,7 +430,7 @@ Quando create un nuovo modello modificabile, il valore viene copiato dal tipo di
 Se avete creato un modello che può fungere da base per altri modelli, potete copiare il modello come tipo di modello.
 
 1. Create un modello come fareste con qualsiasi altro modello modificabile [come illustrato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
-1. Con CRXDE Lite, copiate il modello appena creato dal `templates` nodo al `template-types` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
+1. Utilizzando CRXDE Lite, copiate il modello appena creato dal `templates` nodo al `template-types` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
 1. Eliminate il modello dal `templates` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
 1. Nella copia del modello che si trova sotto il `template-types` nodo, eliminare tutte `cq:template` e `cq:templateType` le `jcr:content` proprietà.
 
