@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 37%
 
 ---
 
@@ -42,6 +45,7 @@ Le dipendenze principali dei file del modello 3D, come i file di mappe texture, 
 
       1. Osserva i percorsi e i nomi dei file mancanti.
       1. Vicino all’angolo superiore destro della pagina delle proprietà, tocca **[!UICONTROL Chiudi]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. Le risorse appena caricate sono ora correttamente elencate come risorse di riferimento.
 
    * **Ignora le dipendenze**.
