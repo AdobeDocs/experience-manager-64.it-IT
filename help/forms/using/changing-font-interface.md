@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
 
 # Modifica del font nell&#39;interfaccia {#changing-the-font-on-the-interface}
 
-È possibile modificare il font visualizzato nell&#39;area di lavoro Moduli AEM. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
+Potete modificare il font visualizzato nell’area di lavoro  AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
 
-Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) dell&#39;area di lavoro AEM Forms e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
+Seguite i passaggi [Generici per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) dell&#39;area di lavoro AEM Forms e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
 
 1. Modificate o aggiungete la famiglia di font in uno stile esistente.
 1. Modificate o aggiungete l&#39;agganciamento font-family per l&#39;elemento HTML.
@@ -27,7 +30,7 @@ Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic
 
 Ad esempio, per modificare il font del testo di ancoraggio della barra di navigazione superiore in Courier New, effettuate le seguenti operazioni:
 
-1. Accedete a CRXDE Lite accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Accedete al CRXDE Lite accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Effettua una delle operazioni seguenti:
 
    1. Per modificare la famiglia di font in uno stile esistente, aggiungete quanto segue nel file newStyle.css in /apps/ws/css.
@@ -74,6 +77,6 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
 1. Riavviate l’area di lavoro e cancellate la cache del browser affinché le modifiche siano visibili.
 
-![change_font_before](assets/change_font_before.png)**Figure:** Barra di navigazione *superiore prima della personalizzazione dei font*
+![change_font_before](assets/change_font_before.png)**Figure:** *Barra di navigazione superiore prima della personalizzazione dei font*
 
-![change_font_after](assets/change_font_after.png)**Figure:** Barra di navigazione *superiore dopo la personalizzazione del font della prima scheda*
+![change_font_after](assets/change_font_after.png)**Figure:** *Barra di navigazione superiore dopo la personalizzazione del font della prima scheda*
