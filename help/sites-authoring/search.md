@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -25,21 +28,21 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
-La ricerca è disponibile nella barra degli strumenti superiore:
+La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 
 ![](do-not-localize/chlimage_1-17.png)
 
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cercare una parola chiave, un percorso o un tag specifico.
-* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file ecc.
+* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file e così via
 * Definire e utilizzare una [ricerca salvata](#saved-searches) in base ai criteri impostati.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>La ricerca può anche essere avviata mediante il tasto di scelta rapida `/` (barra) ogni volta che la barra di ricerca è visibile.
 
-## Ricerca e Filtro {#search-and-filter}
+## Ricerca e filtro {#search-and-filter}
 
 Per cercare e filtrare le risorse:
 
@@ -70,6 +73,7 @@ Per cercare e filtrare le risorse:
    * Directory di ricerca
    * Tag
    * Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
+
    >[!NOTE]
    >
    >I criteri di ricerca possono variare:
@@ -80,11 +84,11 @@ Per cercare e filtrare le risorse:
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
 
-1. Puoi inoltre aggiungere termini di ricerca aggiuntivi:
+1. Puoi anche aggiungere altri termini di ricerca:
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
-1. Chiudi **Ricerca** facendo clic sulla **X** (in alto a destra).
+1. Per chiudere la **Ricerca**, utilizza la **X** in alto a destra.
 
 >[!NOTE]
 >
@@ -92,7 +96,7 @@ Per cercare e filtrare le risorse:
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
-## Saved Searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare una specifica configurazione di ricerca per riutilizzarla in un secondo momento.
 
