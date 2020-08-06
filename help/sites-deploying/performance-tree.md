@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +28,7 @@ Ogni passaggio del diagramma è collegato a una risorsa della documentazione o a
 
 ## Prerequisiti e supposizioni {#prerequisites-and-assumptions}
 
-Il presupposto è che in una determinata pagina (una console AEM o una pagina Web) venga rilevato un problema di prestazioni e possa essere riprodotto in modo coerente. Prima di avviare l&#39;indagine, è necessario disporre di un metodo per verificare o controllare le prestazioni.
+Il presupposto è che un problema di prestazioni venga osservato in una determinata pagina (una console AEM o una pagina Web) e possa essere riprodotto in modo coerente. Prima di avviare l&#39;indagine, è necessario disporre di un metodo per verificare o controllare le prestazioni.
 
 L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare quale entità (dispatcher, host esterno o AEM) è responsabile del problema di prestazioni, quindi determinare quale area (server o rete) deve essere esaminata.
 
@@ -56,7 +59,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr> 
    <td><strong>Incremento</strong></td> 
    <td><strong>Titolo</strong></td> 
-   <td><strong>Risorse</strong></td> 
+   <td><strong>Riferimenti</strong></td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 0</strong></td> 
@@ -81,7 +84,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr> 
    <td><strong>Passaggio 5</strong></td> 
    <td>Il dispatcher sta tentando di autenticare ogni richiesta tramite AEM?</td> 
-   <td>Verificate se il dispatcher invia <code>HEAD</code> richieste di autenticazione ad AEM prima di consegnare la risorsa nella cache. A tale scopo, è possibile cercare <code>HEAD</code> richieste in AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
+   <td>Verificate se il dispatcher invia <code>HEAD</code> richieste di autenticazione a AEM prima di distribuire la risorsa memorizzata nella cache. Potete farlo cercando <code>HEAD</code> le richieste nella AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 6</strong></td> 
@@ -105,7 +108,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   </tr> 
   <tr> 
    <td><strong>Passaggi 10 e 29</strong></td> 
-   <td>Investigare il livello di rete</td> 
+   <td>Indagine del livello di rete</td> 
    <td><p>Esaminate il livello di rete per i problemi di saturazione e latenza.</p> <p>Per il livello di authoring, si consiglia di non superare i 100 millisecondi.</p> <p>Per ulteriori informazioni sui suggerimenti per l'ottimizzazione delle prestazioni, consultate <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">questa pagina</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -115,12 +118,12 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   </tr> 
   <tr> 
    <td><strong>Passaggio 12</strong></td> 
-   <td>Risoluzione dei problemi del server AEM</td> 
+   <td>Risoluzione dei problemi AEM server</td> 
    <td>Per ulteriori informazioni, consulta i seguenti passaggi secondari del diagramma.</td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 13</strong></td> 
-   <td>Verifica requisiti hardware</td> 
+   <td>Controllare i requisiti hardware</td> 
    <td>Consultate la documentazione sulle linee guida relative al ridimensionamento <a href="/help/managing/hardware-sizing-guidelines.md">hardware</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -171,7 +174,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr> 
    <td><strong>Passaggi 22 e 22.1</strong></td> 
    <td>Rapporto cache</td> 
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio"> Consultate </a>Calcolo delle proporzioni<br />della cache del dispatcher. <br /> </td> 
+   <td>Consultate <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Calcolo delle proporzioni</a>della cache del dispatcher.<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 23</strong></td> 
@@ -209,7 +212,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
    <td>Ottimizzazione delle risorse</td> 
    <td> 
     <ol> 
-     <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servizio sincronizzazione risorse</a></li> 
+     <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servizio di sincronizzazione risorse</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Istanze DAM multiple</a></li> 
      <li>Suggerimenti per l'ottimizzazione delle prestazioni <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a> e <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a>.<br /> </li> 
     </ol> </td> 
@@ -231,7 +234,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   </tr> 
   <tr> 
    <td><strong>Passaggio 32</strong></td> 
-   <td>Utilizzare la gestione delle sessioni a livello di dispatcher per scaricare il server AEM</td> 
+   <td>Utilizzare la gestione delle sessioni a livello di dispatcher per scaricare AEM server</td> 
    <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Abilitazione di sessioni sicure</a></p> </td> 
   </tr> 
   <tr> 
@@ -243,7 +246,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configurazione della cache del dispatcher</a></li> 
     </ol> <p>Come migliorare il rapporto cache; rendi le richieste inseribili nella cache (procedure ottimali per il dispatcher)</p> <p>Inoltre, prendete in considerazione le seguenti impostazioni per ottimizzare le configurazioni di memorizzazione nella cache<br /> </p> 
     <ol> 
-     <li>Impostate una regola di assenza della cache per le richieste HTTP che non sono GET</li> 
+     <li>Impostare una regola di assenza della cache per le richieste HTTP non GET</li> 
      <li>Configurare le stringhe di query affinché non possano essere memorizzate nella cache</li> 
      <li>Non memorizzare nella cache gli URL con estensioni mancanti</li> 
      <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 del dispatcher)</li> 
@@ -257,7 +260,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr> 
    <td><strong>Passaggio 35</strong></td> 
    <td>Configurare il dispatcher</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del dispatcher</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del dispatcher</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 36</strong></td> 
@@ -265,18 +268,18 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
    <td><br /> 
     <ul> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Annullamento validità cache per il livello Author;</a></li> 
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Annullamento validità cache per il livello di pubblicazione.</a></li> 
+     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Annullamento della validità della cache per il livello di pubblicazione.</a></li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggi 37 e 38</strong></td> 
    <td>Caricamento pigro</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulta Sessione Gem su AEM Web Performance.</a><br /> </td> 
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulta la sessione Gem su AEM Web Performance.</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 39</strong></td> 
    <td>Usare la preconnessione per ridurre il sovraccarico di connessione</td> 
-   <td>Vedi la Sessione Gem sopra indicata. <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> È inoltre possibile effettuare la preconnessione della documentazione aggiuntiva su W3c: https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
+   <td>Vedi la Sessione Gem sopra indicata. È inoltre possibile effettuare la preconnessione della documentazione aggiuntiva su W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
   </tr> 
   <tr> 
    <td><strong>Passaggi 40 e 41</strong><br /> </td> 
@@ -296,7 +299,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr> 
    <td><strong>Passaggi 42 e 43</strong></td> 
    <td>Keep-Alive</td> 
-   <td><p>L’ <code>Keep-Alive</code> intestazione è presente nelle diverse richieste di riutilizzo delle connessioni? In caso contrario, ciò significherebbe che ogni richiesta porta a un altro stabilimento di collegamento, che introduce costi aggiuntivi inutili. (Analisi delle richieste HTTP standard nel browser)</p> <p>È possibile controllare lo strumento <a href="/help/sites-administering/proxy-jar.md">Server</a> proxy per verificare la disponibilità di connessioni.<br /> </p> </td> 
+   <td><p>L’ <code>Keep-Alive</code> intestazione è presente nelle diverse richieste di riutilizzo delle connessioni? In caso contrario, ciò significherebbe che ogni richiesta porta a un altro stabilimento di collegamento, che introduce costi aggiuntivi non necessari. (Analisi delle richieste HTTP standard nel browser)</p> <p>È possibile controllare lo strumento <a href="/help/sites-administering/proxy-jar.md">Server</a> proxy per verificare la disponibilità di connessioni.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 44</strong></td> 
