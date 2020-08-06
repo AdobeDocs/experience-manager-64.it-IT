@@ -1,8 +1,8 @@
 ---
 title: Siti community
 seo-title: Siti community
-description: Panoramica della documentazione di AEM Communities
-seo-description: Panoramica della documentazione di AEM Communities
+description: 'Panoramica della documentazione AEM Communities '
+seo-description: 'Panoramica della documentazione AEM Communities '
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 translation-type: tm+mt
 source-git-commit: e600df0bf1c4796b5446969b93a00f9edf280f5a
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 5%
 
 ---
 
 
 # Communities Sites {#communities-sites}
 
-Questa sezione è destinata agli amministratori di AEM Communities e acquisisce familiarità con le funzioni di AEM Communities.
+Questa sezione è destinata a coloro che amministrano  AEM Communities e acquisiscono familiarità con  funzioni AEM Communities.
 
 ## Panoramica {#overview}
 
@@ -25,9 +28,9 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 
 * [Panoramica di AEM Communities](overview.md)
 * [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+* [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
 
-## Argomenti di amministrazione e configurazione {#administration-and-configuration-topics}
+## Argomenti relativi all&#39;amministrazione e alla configurazione {#administration-and-configuration-topics}
 
 ### Creazione e gestione di siti community {#communities-site-creation-and-management}
 
@@ -35,14 +38,14 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 
    * [Sites](sites-console.md)
 
-      * [Gruppi (sub community)](groups.md)
+      * [Gruppi (sub-community)](groups.md)
    * [Moderazione](moderation.md)
    * [Gestione di membri e gruppi](members.md)
    * [Risorse di abilitazione](resources.md)
    * [Rapporti](reports.md)
 
 
-* Strumenti [**](tools.md)Community:
+* [*Strumenti *](tools.md)Community:
 
    * [Modelli per siti](sites.md)
    * [Modelli per gruppi](tools-groups.md)
@@ -54,13 +57,13 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 
 ### Contenuto generato dall&#39;utente {#user-generated-content}
 
-Una delle caratteristiche principali di AEM Communities è la generazione di contenuti generati dagli utenti (UGC, user generated content) tramite visitatori del sito (membri). Per saperne di più sull’utilizzo di UGC visita:
+Una delle caratteristiche principali di  AEM Communities è la generazione di contenuti generati dagli utenti (UGC) da parte di visitatori del sito (membri) che hanno effettuato l&#39;accesso. Per saperne di più sull’utilizzo di UGC visita:
 
 * [Archivio](working-with-srp.md)UGC comune: scelta dell&#39;SRP per la memorizzazione condivisa dell&#39;UGC
 * [Moderazione UGC](moderate-ugc.md): i membri attendibili possono moderare l&#39;UGC in massa o nel contesto
 * [Assegnazione tag UGC](tag-ugc.md): possono essere configurate per consentire ai membri di assegnare tag al contenuto
 * [Traduzione UGC](translate-ugc.md): le funzioni possono essere configurate per tradurre tutti gli UGC o consentire ai membri di tradurre i post selezionati
-* [Configurazione](analytics.md)Analytics: abilitazione di Adobe Analytics per report su diverse metriche relative all&#39;attività dei membri
+* [Configurazione](analytics.md)Analytics: abilitazione di  Adobe Analytics per il report su varie metriche relative all&#39;attività dei membri
 
 ### Membri community {#community-members}
 
@@ -78,12 +81,12 @@ Una delle caratteristiche principali di AEM Communities è la generazione di con
 ### Funzioni di abilitazione {#enablement-features}
 
 * [Configurazione di Enablement](enablement.md): informazioni necessarie per configurare correttamente le funzioni di abilitazione
-* [Configurazione](analytics.md)Analytics: informazioni necessarie per abilitare le funzionalità di Adobe Analytics for Communities
+* [Configurazione](analytics.md)Analytics: informazioni necessarie per abilitare  funzioni di Adobe Analytics for Communities
 * [Risorse](tag-resources.md)di abilitazione tag: necessari per creare cataloghi di abilitazione
 
-### Distribuzione {#deployment}
+### Implementazione {#deployment}
 
-La sezione di distribuzione contiene informazioni specifiche per AEM Communities.
+La sezione della distribuzione contiene informazioni specifiche per  AEM Communities.
 
 La natura dell&#39;utilizzo dei contenuti della community influenza la struttura dell&#39;implementazione:
 
