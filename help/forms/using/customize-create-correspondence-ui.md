@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ La gestione della corrispondenza consente di rigenerare il modello di soluzione 
 
 Potete cambiare il logo nell’interfaccia utente Crea corrispondenza con il logo aziendale.
 
-![](assets/0_1_introscreenshot.png) Icona personalizzata nell’interfaccia **Crea corrispondenza (Create Correspondence UI** Figure): Icona *personalizzata nell’interfaccia utente Crea corrispondenza*
+![Icona personalizzata nell’interfaccia](assets/0_1_introscreenshot.png)Crea corrispondenza (Create Correspondence UI **Figure):** *Icona personalizzata nell’interfaccia utente Crea corrispondenza*
 
 ### Modifica del logo nell’interfaccia utente Crea corrispondenza {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -44,7 +47,7 @@ Il ramo /apps (struttura delle cartelle):
 
 * Assicurarsi che i file siano sicuri in caso di aggiornamento del sistema. In caso di aggiornamento, pacchetto di funzioni o correzione, il ramo /libs viene aggiornato e se ospitate le modifiche nel ramo /libs, queste vengono sovrascritte.
 * Consente di non disturbare l&#39;attuale sistema/ramo, che è possibile disinstallare per errore se si utilizzano le posizioni predefinite per la memorizzazione dei file personalizzati.
-* Consente alle risorse di ottenere una priorità più alta quando AEM cerca le risorse. AEM è configurato per eseguire prima la ricerca nel ramo /apps, quindi nel ramo /libs per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni ivi definite).
+* Consente di assegnare priorità maggiore alle risorse quando AEM le risorse. AEM configurato per cercare prima il ramo /apps e quindi il ramo /libs per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni ivi definite).
 
 Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel ramo /apps:
 
@@ -55,15 +58,15 @@ Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel
 
    1. Fate clic con il pulsante destro del mouse sulla cartella **css** nel percorso seguente e selezionate Nodo **** sovrapposizione: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      ![Overlay, nodo](assets/1_overlaynode_css.png)
+      ![Sovrapposizione, nodo](assets/1_overlaynode_css.png)
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       ![Percorso nodo overlay](assets/0_1_5ioverlaynodedialog.png)
 
@@ -83,13 +86,13 @@ Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel
    1. Fate clic con il pulsante destro del mouse sulla cartella **imgs** nel percorso seguente e selezionate **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. 
+   1. Fai clic su **OK**.
 
       >[!NOTE]
       >
@@ -99,9 +102,9 @@ Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel
 
 ## Caricare il nuovo logo su CRX {#uploadlogo}
 
-Caricate il file del logo personalizzato in CRX. Le regole HTML standard determinano il rendering del logo. I formati di file immagine supportati dipendono dal browser utilizzato per accedere a AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consultate la documentazione specifica del browser sui formati immagine supportati.
+Caricate il file del logo personalizzato in CRX. Le regole HTML standard determinano il rendering del logo. I formati di file immagine supportati dipendono dal browser utilizzato per accedere  AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consultate la documentazione specifica del browser sui formati immagine supportati.
 
-* Le dimensioni predefinite dell&#39;immagine logo sono 48 px &amp;ast; 48 px Assicurarsi che l&#39;immagine sia simile a questa dimensione o superiore a 48 px &amp;ast; 48 px
+* Le dimensioni predefinite dell&#39;immagine logo sono 48 px &amp;ast; 48 px. Assicurarsi che l&#39;immagine sia simile a questa dimensione o superiore a 48 px &amp;ast; 48 px.
 * Se l’altezza dell’immagine del logo è superiore a 50 px, l’interfaccia utente Crea corrispondenza ridimensiona l’immagine fino a un’altezza massima di 50 px, in quanto corrisponde all’altezza dell’intestazione. Quando si riduce l’immagine, l’interfaccia utente Crea corrispondenza mantiene le proporzioni dell’immagine.
 * L’interfaccia utente Crea corrispondenza non ridimensiona l’immagine se è piccola, pertanto accertatevi di usare un’immagine logo di altezza e larghezza almeno 48 px per garantire la chiarezza.
 
@@ -132,20 +135,20 @@ Per caricare il file del logo personalizzato in CRX, effettuate le seguenti oper
 
    Viene visualizzata la finestra di dialogo Modifica jcr:data.
 
-   Ora fate clic sulla cartella newlogo.png, fate doppio clic su jcr:content (opzione dim) e impostate type nt:resource. Se non è presente, create una proprietà con nome jcr:content.
+   Ora fate clic sulla cartella newlogo.png, fate doppio clic su jcr:content (opzione dim) e impostate il tipo nt:resource. Se non è presente, create una proprietà con nome jcr:content.
 
 1. Nella finestra di dialogo Edit jcr:data, fate clic su **Sfoglia** e selezionate il file immagine da usare come logo (in questo caso CustomLogo.png).
 
-   I formati di file immagine supportati dipendono dal browser utilizzato per accedere a AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consultate la documentazione specifica del browser sui formati immagine supportati.
+   I formati di file immagine supportati dipendono dal browser utilizzato per accedere  AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consultate la documentazione specifica del browser sui formati immagine supportati.
 
    ![Esempio di un logo personalizzato](assets/geometrixx-outdoors.png)
-   **** Figura: *Esempio - CustomLogo.png da utilizzare come logo personalizzato*
+   **Figura:** *Esempio - CustomLogo.png da usare come logo personalizzato*
 
 1. Fate clic su **Salva tutto**.
 
 ## Creare il CSS per integrare il logo nell’interfaccia utente {#createcss}
 
-L&#39;immagine logo personalizzata richiede il caricamento di un foglio di stile aggiuntivo nel contesto del contenuto.
+L&#39;immagine del logo personalizzato richiede il caricamento di un foglio di stile aggiuntivo nel contesto del contenuto.
 
 Per impostare il foglio di stile per il rendering del logo, procedere come segue:
 
@@ -172,5 +175,5 @@ Per impostare il foglio di stile per il rendering del logo, procedere come segue
 
 Cancella la cache del browser e apri l’istanza dell’interfaccia utente Crea corrispondenza nel browser. Dovresti vedere il tuo logo personalizzato.
 
-![](assets/0_1_introscreenshot-1.png) Create l&#39;interfaccia utente per la corrispondenza con il logo **** Figura personalizzato: Icona *personalizzata nell’interfaccia utente Crea corrispondenza*
+![Create l&#39;interfaccia utente per la corrispondenza con il logo](assets/0_1_introscreenshot-1.png)**Figura personalizzato:** *Icona personalizzata nell’interfaccia utente Crea corrispondenza*
 
