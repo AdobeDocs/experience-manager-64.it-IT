@@ -1,8 +1,8 @@
 ---
 title: Implementazione della denominazione delle pagine lato server per Analytics
 seo-title: Implementazione della denominazione delle pagine lato server per Analytics
-description: Adobe Analytics utilizza la proprietà s.pageName per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine
-seo-description: Adobe Analytics utilizza la proprietà s.pageName per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine
+description: ' Adobe Analytics utilizza la proprietà s.pageName per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine'
+seo-description: ' Adobe Analytics utilizza la proprietà s.pageName per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine'
 uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 0%
 
 ---
 
 
 # Implementazione della denominazione delle pagine lato server per Analytics{#implementing-server-side-page-naming-for-analytics}
 
-Adobe Analytics utilizza la `s.pageName` proprietà per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine. In genere, in AEM vengono eseguite le seguenti attività per assegnare un valore a questa proprietà che AEM invia ad Analytics:
+ Adobe Analytics utilizza la `s.pageName` proprietà per identificare in modo univoco le pagine e per associare i dati raccolti per le pagine. In genere, per assegnare un valore a questa proprietà che AEM inviata ad Analytics, vengono eseguite le seguenti operazioni in AEM:
 
-* Utilizzate il framework del servizio cloud di Analytics per mappare una variabile CQ alla `s.pageName` proprietà Analytics. Consultate [Mapping di dati di componenti con proprietà](/help/sites-administering/adobeanalytics-mapping.md)Adobe Analytics.
+* Utilizzate il framework del servizio cloud di Analytics per mappare una variabile CQ alla `s.pageName` proprietà Analytics. (vedere [Mappatura dei dati dei componenti con  Proprietà](/help/sites-administering/adobeanalytics-mapping.md)Adobe Analytics).
 
-* Progettare il componente pagina in modo che includa la variabile CQ mappata alla `s.pageName` proprietà. Consultate [Implementazione del tracciamento di Adobe Analytics per i componenti](/help/sites-developing/extending-analytics-components.md)personalizzati.
+* Progettare il componente della pagina in modo che includa la variabile CQ mappata sulla `s.pageName` proprietà. (Vedere [Implementazione  tracciamento Adobe Analytics per i componenti](/help/sites-developing/extending-analytics-components.md)personalizzati.)
 
-Per esporre i dati dei rapporti di Analytics nella console Siti e in Content Insight, AEM richiede il valore della `s.pageName` proprietà per ciascuna pagina. L&#39;API Java di AEM Analytics definisce l&#39; `AnalyticsPageNameProvider` interfaccia implementata per fornire alla console Siti e a Content Insights il valore della `s.pageName` proprietà. Il `AnaltyicsPageNameProvider` servizio risolve la proprietà pageName sul server a scopo di reporting, in quanto può essere impostata in modo dinamico utilizzando Javascript sul client a scopo di monitoraggio.
+Per esporre i dati dei rapporti di Analytics nella console Siti e in Content Insight, AEM richiede il valore della `s.pageName` proprietà per ogni pagina. L&#39;API Java AEM Analytics definisce l&#39; `AnalyticsPageNameProvider` interfaccia implementata per fornire alla console Siti e a Content Insights il valore della `s.pageName` proprietà. Il `AnaltyicsPageNameProvider` servizio risolve la proprietà pageName sul server a scopo di reporting, in quanto può essere impostata in modo dinamico utilizzando Javascript sul client a scopo di monitoraggio.
 
 ## Servizio provider nome pagina di Analytics predefinito {#the-default-analytics-page-name-provider-service}
 
-Il `DefaultPageNameProvider` servizio è il servizio predefinito che determina il valore della `s.pageName` proprietà da utilizzare per recuperare i dati di Analytics per una pagina. Il servizio funziona in combinazione con il componente pagina di base di AEM ( `/libs/foundation/components/page`). Questo componente pagina definisce le seguenti variabili CQ che devono essere mappate alla `s.pageName` proprietà:
+Il `DefaultPageNameProvider` servizio è il servizio predefinito che determina il valore della `s.pageName` proprietà da utilizzare per recuperare i dati di Analytics per una pagina. Il servizio funziona in combinazione con il componente della pagina AEM base ( `/libs/foundation/components/page`). Questo componente pagina definisce le seguenti variabili CQ che devono essere mappate alla `s.pageName` proprietà:
 
 * `pagedata.path`: Il valore è impostato sul percorso della pagina.
 * `pagedata.title`: Il valore è impostato sul titolo della pagina.
@@ -51,12 +54,12 @@ Se non mappate una variabile CQ alla `s.pageName` proprietà nel framework, il v
 
 ## Mantenimento della continuità nei report di Analytics {#maintaining-continuity-in-analytics-reporting}
 
-Per mantenere una cronologia completa dei dati di analisi per una pagina è necessario che il valore della proprietà s.pageName utilizzata per una pagina non cambi mai. Tuttavia, le proprietà di analisi definite dal componente pagina di base possono essere facilmente modificate. Ad esempio, spostando una pagina si modifica il valore di `pagedata.path` e si interrompe la continuità della cronologia del reporting:
+Per mantenere una cronologia completa dei dati di analisi per una pagina, è necessario che il valore della proprietà s.pageName utilizzata per una pagina non cambi mai. Tuttavia, le proprietà di analisi definite dal componente pagina di base possono essere facilmente modificate. Ad esempio, spostando una pagina si modifica il valore di `pagedata.path` e si interrompe la continuità della cronologia del reporting:
 
 * I dati raccolti per il percorso precedente non sono più associati alla pagina.
 * Se una pagina diversa utilizza il percorso utilizzato da un&#39;altra, la pagina diversa eredita i dati per tale percorso.
 
-Per garantire la continuità della segnalazione, il valore di `s.pageName` dovrebbe avere le seguenti caratteristiche:
+Per assicurare la continuità della segnalazione, il valore di `s.pageName` dovrebbe avere le seguenti caratteristiche:
 
 * Univoco.
 * Stabile.
@@ -82,7 +85,7 @@ L&#39;interfaccia AnalyticsPageNameProvider definisce due metodi da implementare
 
 * `getResource`: Restituisce un oggetto `org.apache.sling.api.resource.Resource` che rappresenta la pagina associata alla `s.pageName` proprietà.
 
-Entrambi i metodi utilizzano un `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` oggetto come parametro. La `AnalyticsPageNameContext` classe fornisce informazioni sul contesto delle chiamate di analisi:
+Entrambi i metodi considerano un `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` &#39;oggetto come un parametro. La `AnalyticsPageNameContext` classe fornisce informazioni sul contesto delle chiamate di analisi:
 
 * Percorso di base della risorsa di pagina.
 * L&#39; `Framework` oggetto per la configurazione del servizio cloud di Analytics.
@@ -96,7 +99,7 @@ La classe fornisce inoltre un setter per il nome della pagina.
 L’implementazione di esempio seguente `AnalyticsPageNameProvider` supporta un componente pagina personalizzato:
 
 * Il componente estende il componente della pagina di base.
-* La finestra di dialogo include un campo che gli autori utilizzano per specificare il valore della `s.pageName` proprietà.
+* La finestra di dialogo include un campo che viene utilizzato dagli autori per specificare il valore della `s.pageName` proprietà.
 * Il valore della proprietà è memorizzato nella proprietà pageName del `jcr:content`nodo delle istanze della pagina.
 * Viene chiamata la proprietà analytics che memorizza la `s.pageName` proprietà `pagedata.pagename`. Questa proprietà viene mappata sulla `s.pageName` proprietà nel framework Analytics.
 
