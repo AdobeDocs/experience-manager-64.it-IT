@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -91,11 +94,11 @@ Una struttura del sito community che include la funzione [](functions.md#blog-fu
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.\
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;uso di uno store [](working-with-srp.md) comune per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
 * [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
@@ -112,9 +115,9 @@ Per ulteriori informazioni, vedere Editore [](deploy-communities.md#primary-publ
 
 La piattaforma AEM blocca i collegamenti da altri siti Web per prevenire attacchi XSS come descritto in
 
-* [Protezione contro gli script tra siti (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect contro lo scripting tra siti (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-A partire da AEM 6.2, le modifiche precedentemente richieste per essere effettuate manualmente sono incluse nel file di configurazione AntiSamy predefinito.
+A partire dal AEM 6.2, le modifiche precedentemente richieste per essere effettuate manualmente sono incluse nel file di configurazione AntiSamy predefinito.
 
 I contenuti multimediali avanzati vengono incorporati in un articolo di blog selezionando l&#39; `Embed Media from External Sites` icona:  ![chlimage_1-471](assets/chlimage_1-471.png)
 
