@@ -12,6 +12,9 @@ discoiquuid: e6b2de9e-dddc-4987-af2f-cf3477634ea9
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3875'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-La creazione di un sito mobile è simile alla creazione di un sito standard, ma richiede anche la creazione di modelli e componenti. Per ulteriori dettagli sulla creazione di modelli e componenti, consulta le pagine seguenti: [Modelli](/help/sites-developing/templates.md), [componenti](/help/sites-developing/components.md) e [guida introduttiva allo sviluppo di siti](/help/sites-developing/getting-started.md)AEM. La differenza principale consiste nell’abilitare le funzionalità mobili integrate di AEM all’interno del sito. Viene ottenuto creando un modello basato sul componente Pagina mobile.
+La creazione di un sito mobile è simile alla creazione di un sito standard, ma richiede anche la creazione di modelli e componenti. Per ulteriori dettagli sulla creazione di modelli e componenti, consulta le pagine seguenti: [Modelli](/help/sites-developing/templates.md), [componenti](/help/sites-developing/components.md) e [guida introduttiva allo sviluppo  AEM Sites](/help/sites-developing/getting-started.md). La differenza principale consiste nell&#39;abilitare le funzionalità mobili integrate AEM all&#39;interno del sito. Viene ottenuto creando un modello basato sul componente Pagina mobile.
 
 È inoltre consigliabile utilizzare la progettazione [](/help/sites-developing/responsive.md)reattiva, creando un unico sito in grado di contenere più dimensioni di schermo.
 
-Per iniziare, consultate il sito dimostrativo **We.Retail Mobile** disponibile in AEM.
+Per iniziare, consulta il sito dimostrativo **We.Retail Mobile** disponibile in AEM.
 
 Per creare un sito mobile, effettuate le seguenti operazioni:
 
@@ -130,7 +133,7 @@ Il sito dimostrativo **We.Retail Mobile** utilizza i seguenti componenti mobili 
 
 #### Creazione di un componente mobile {#creating-a-mobile-component}
 
-Il framework AEM Mobile consente di sviluppare componenti sensibili al dispositivo che emette la richiesta. Gli esempi di codice seguenti mostrano come utilizzare l&#39;API AEM Mobile in un&#39;app componente e in particolare come:
+Il framework mobile AEM consente di sviluppare componenti sensibili al dispositivo che emette la richiesta. Gli esempi di codice riportati di seguito mostrano come utilizzare l&#39;API mobile AEM in un jsp componente e in particolare come:
 
 * Ottenete il dispositivo dalla richiesta:
 
@@ -166,7 +169,7 @@ OPPURE
 
 >[!NOTE]
 >
->In un jsp, `slingRequest` è disponibile tramite il `<sling:defineObjects>` tag e `currentPage` il `<cq:defineObjects>` tag .
+>In un jsp, `slingRequest` è disponibile tramite il `<sling:defineObjects>` tag e `currentPage` attraverso il `<cq:defineObjects>` tag .
 
 ### Emulatori {#emulators}
 
@@ -186,11 +189,11 @@ Per creare un emulatore, consultare la sezione [Creazione di un emulatore](/help
 
    Nota: anche se è possibile che lo stesso emulatore appartenga a diversi gruppi di dispositivi, non ha molto senso.
 
-* Tramite la finestra di dialogo di configurazione del gruppo di dispositivi, la `emulators` proprietà viene impostata con il percorso dell&#39;emulatore o degli emulatori desiderati. Ad esempio: `/libs/wcm/mobile/components/emulators/iPhone4`.
+* Tramite la finestra di dialogo di configurazione del gruppo di dispositivi, la `emulators` proprietà viene impostata con il percorso dell&#39;emulatore o degli emulatori desiderati. Esempio: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
 * Componenti dell’emulatore (ad esempio `/libs/wcm/mobile/components/emulators/iPhone4`) estendere il componente emulatore mobile di base ( `/libs/wcm/mobile/components/emulators/base`).
 
-* Ogni componente che estende l’emulatore mobile di base è disponibile per la selezione quando si configura un gruppo di dispositivi. Gli emulatori personalizzati possono essere facilmente creati o estesi.
+* Ogni componente che estende l’emulatore mobile di base è disponibile per la selezione quando si configura un gruppo di dispositivi. Gli emulatori personalizzati possono quindi essere facilmente creati o estesi.
 * Al momento della richiesta in modalità di modifica, l&#39;implementazione dell&#39;emulatore viene utilizzata per eseguire il rendering della pagina.
 * Quando il modello della pagina si basa sul componente della pagina mobile, le funzionalità dell’emulatore vengono automaticamente integrate nella pagina (tramite il componente `head.jsp` della pagina mobile).
 
@@ -206,7 +209,7 @@ I gruppi di dispositivi sono definiti come pagine di contenuto sotto `/etc/mobil
 
 #### Assegnazione di gruppi di dispositivi al sito {#assigning-device-groups-to-your-site}
 
-Quando create un sito mobile, dovete assegnare gruppi di dispositivi al sito. AEM offre tre gruppi di dispositivi a seconda delle capacità di rendering HTML e JavaScript del dispositivo:
+Quando create un sito mobile, dovete assegnare gruppi di dispositivi al sito. AEM fornisce tre gruppi di dispositivi a seconda delle capacità di rendering HTML e JavaScript del dispositivo:
 
 * **Caratteristica** per dispositivi quali Sony Ericsson W800 con supporto per HTML di base ma nessun supporto per immagini e JavaScript.
 * **Smartphone** , per dispositivi come Blackberry con supporto per HTML e immagini di base, ma senza supporto per JavaScript.
@@ -219,11 +222,11 @@ Per assegnare un gruppo di dispositivi al sito:
 
 1. Nel browser, passate alla console **Site Admin** (Amministrazione sito).
 1. Aprite la pagina principale del sito mobile sotto **Siti Web**.
-1. Aprire le proprietà della pagina.
+1. Aprite le proprietà della pagina.
 1. Select the **Mobile** tab:
 
    * Definite i gruppi di dispositivi.
-   * Fai clic su **OK**. 
+   * Fai clic su **OK**.
 
 >[!NOTE]
 >
@@ -233,7 +236,7 @@ Per assegnare un gruppo di dispositivi al sito:
 
 I filtri per gruppi di dispositivi definiscono criteri basati sulle funzionalità per determinare se un dispositivo appartiene al gruppo. Quando create un gruppo di dispositivi, potete selezionare i filtri da utilizzare per valutare i dispositivi.
 
-In fase di esecuzione, quando AEM riceve una richiesta HTTP da un dispositivo, ogni filtro associato a un gruppo confronta le funzionalità del dispositivo con criteri specifici. Il dispositivo è considerato appartenente al gruppo quando dispone di tutte le funzionalità richieste dai filtri. Le funzionalità vengono recuperate dal database WURFL™.
+In fase di esecuzione quando AEM ricevuto una richiesta HTTP da un dispositivo, ogni filtro associato a un gruppo confronta le funzionalità del dispositivo con criteri specifici. Il dispositivo è considerato appartenente al gruppo quando dispone di tutte le funzionalità richieste dai filtri. Le funzionalità vengono recuperate dal database WURFL™.
 
 I gruppi di dispositivi possono utilizzare zero o più filtri per il rilevamento delle funzionalità. È inoltre possibile utilizzare un filtro con più gruppi di dispositivi. AEM fornisce un filtro predefinito che determina se il dispositivo dispone delle funzionalità selezionate per un gruppo:
 
@@ -242,13 +245,13 @@ I gruppi di dispositivi possono utilizzare zero o più filtri per il rilevamento
 * JavaScript
 * Rotazione dispositivo
 
-Se il gruppo di dispositivi non utilizza un filtro, le funzionalità selezionate configurate per il gruppo sono le uniche che un dispositivo richiede.
+Se il gruppo di dispositivi non utilizza un filtro, le funzionalità selezionate configurate per il gruppo sono le uniche richieste da un dispositivo.
 
 Per ulteriori informazioni, consulta [Creazione di filtri](/help/sites-developing/groupfilters.md)per gruppi di dispositivi.
 
 #### Creazione di un gruppo di dispositivi {#creating-a-device-group}
 
-Crea un gruppo di dispositivi quando i gruppi installati da AEM non soddisfano i tuoi requisiti.
+Crea un gruppo di dispositivi quando i gruppi che AEM installati non soddisfano i tuoi requisiti.
 
 1. In your browser, go to the **Tools** console.
 1. Crea una nuova pagina in **Strumenti** > **Mobile** > Gruppi **di** dispositivi. Nella finestra di dialogo **Crea pagina** :
@@ -271,9 +274,11 @@ Crea un gruppo di dispositivi quando i gruppi installati da AEM non soddisfano i
    * **Funzionalità**: definisce se il gruppo può gestire immagini, CSS, JavaScript o rotazione del dispositivo.
    * **Larghezza** e altezza minima **dello schermo**
    * **Disattiva emulatore**: per attivare/disattivare l&#39;emulatore durante la modifica del contenuto.
+
    Nella scheda **Emulatori** :
 
    * **Emulatori**: selezionare gli emulatori assegnati a questo gruppo di dispositivi.
+
    Nella scheda **Filtri** :
 
    * Per aggiungere un filtro, fate clic su Aggiungi elemento e selezionate un filtro dall’elenco a discesa.
@@ -281,7 +286,7 @@ Crea un gruppo di dispositivi quando i gruppi installati da AEM non soddisfano i
 
 
 
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 La finestra di dialogo di configurazione del gruppo di dispositivi mobili si presenta come segue:
 
@@ -310,7 +315,7 @@ Per informazioni, andate a [Creazione di filtri](/help/sites-developing/groupfil
 
 ### Utilizzo del database WURFL™ {#using-the-wurfl-database}
 
-AEM utilizza una versione troncata del database [WURFL](http://wurfl.sourceforge.net/index.php)™ per eseguire query sulle funzionalità dei dispositivi, come la risoluzione dello schermo o il supporto JavaScript, in base all&#39;agente utente del dispositivo.
+AEM utilizza una versione troncata del database [WURFL](http://wurfl.sourceforge.net/index.php)™ per eseguire query sulle funzionalità del dispositivo, come la risoluzione dello schermo o il supporto javascript, in base all&#39;agente utente del dispositivo.
 
 Il codice XML del database WURFL™ è rappresentato come nodi di seguito `/var/mobile/devicespecs` analizzando il `wurfl.xml`file in `/libs/wcm/mobile/devicespecs/wurfl.xml.` L&#39;espansione ai nodi si verifica la prima volta che il `cq-mobile-core` bundle viene avviato.
 
@@ -334,11 +339,11 @@ Il database WURFL™ troncato installato con AEM è una versione precedente alle
 
 Per installare un database WURFL™:
 
-1. In CRXDE Lite, create la seguente cartella: `/apps/wcm/mobile/devicespecs`
+1. In CRXDE Lite , create la seguente cartella: `/apps/wcm/mobile/devicespecs`
 1. Copiate il file WURFL™ nella cartella.
 1. Rinominare il file come `wurfl.xml`.
 
-AEM analizza automaticamente il `wurfl.xml` file e aggiorna i nodi sottostanti `/var/mobile/devicespecs`.
+AEM analizzare automaticamente il `wurfl.xml` file e aggiorna i nodi sottostanti `/var/mobile/devicespecs`.
 
 >[!NOTE]
 >
@@ -351,16 +356,16 @@ Aggiungi un agente utente come espressione regolare di seguito /apps/wcm/mobile/
 1. In **CRXDE Lite**, create un nodo sotto /apps/wcm/mobile/devicspecs/regexp, ad esempio apple_ipad_ver1.
 1. Aggiungi le seguenti proprietà al nodo:
 
-   * **regexp**: espressione regolare che definisce gli agenti utente, ad esempio: .&amp;ast;Mozilla.&amp;ast;iPad.&amp;ast;AppleWebKit.&amp;ast;Safari. &amp;ast;
+   * **regexp**: espressione regolare che definisce gli agenti utente, ad esempio: .&amp;ast;Mozilla.&amp;ast;iPad.&amp;ast;AppleWebKit.&amp;ast;Safari.&amp;ast;
    * **deviceId**: l’ID dispositivo come definito nel file wurfl.xml, ad esempio: apple_ipad_ver1
 
-La configurazione precedente causa la mappatura dei dispositivi per i quali l&#39;agente utente corrisponde all&#39;espressione regolare fornita all&#39;ID dispositivo apple_ipad_ver1 WURFL™, se esistente.
+La configurazione di cui sopra causa la mappatura dei dispositivi per i quali l&#39;agente utente corrisponde all&#39;espressione regolare fornita all&#39;ID dispositivo apple_ipad_ver1 WURFL™, se esistente.
 
 ## Rilevamento dispositivo lato client {#client-side-device-detection}
 
-Questa sezione descrive come utilizzare il rilevamento lato client del dispositivo di AEM per ottimizzare il rendering della pagina o fornire al client versioni alternative del sito Web.
+In questa sezione viene descritto come utilizzare il rilevamento lato client del dispositivo per AEM al fine di ottimizzare il rendering della pagina o per fornire al client versioni alternative del sito Web.
 
-AEM supporta il rilevamento lato client del dispositivo in base a `BrowserMap`. `BrowserMap` viene fornito in AEM come libreria client in `/etc/clientlibs/browsermap`.
+AEM supporta il rilevamento lato client del dispositivo in base a `BrowserMap`. `BrowserMap` viene spedito in AEM come libreria cliente in `/etc/clientlibs/browsermap`.
 
 `BrowserMap` fornisce tre strategie che potete utilizzare per fornire un sito Web alternativo a un cliente, che vengono utilizzate nel seguente ordine:
 
@@ -383,7 +388,7 @@ Il `cq:siteVariant` nodo deve avere le seguenti proprietà:
 
 * `cq:variantDomain` - indica quale `Externalizer` dominio verrà utilizzato per generare gli URL assoluti delle varianti di pagina; se questo valore non è impostato, le varianti di pagina verranno generate utilizzando collegamenti relativi;
 
-* `cq:variantFamily` - indica a quale famiglia di siti web appartiene questo sito; più rappresentazioni per dispositivo dello stesso sito web dovrebbero appartenere alla stessa famiglia;
+* `cq:variantFamily` - indica a quale famiglia di siti web appartiene questo sito; più rappresentazioni specifiche per dispositivo dello stesso sito web dovrebbero appartenere alla stessa famiglia;
 * `media` - memorizza i valori dell&#39;attributo media dell&#39;elemento link; si consiglia di utilizzare il nome della `BrowserMap` libreria registrata `DeviceGroups``BrowserMap` , in modo che possa inoltrare automaticamente i client alla variante corretta del sito Web.
 
 #### PageVariantsProvider ed Externalizer {#pagevariantsprovider-and-externalizer}
@@ -406,7 +411,7 @@ BrowserMap è progettato in modo tale che le definizioni dei gruppi di dispositi
 
 ### Definizione degli URL basati su selettore {#defining-selector-based-urls}
 
-Se non è stato utilizzato nessuno dei meccanismi precedenti per indicare un sito alternativo per `BrowserMap`, i selettori che utilizzeranno i nomi dei `DeviceGroups` verranno aggiunti agli `URL`s, nel qual caso dovreste fornire i vostri servlet che gestiranno le richieste.
+Se non è stato utilizzato nessuno dei meccanismi precedenti per indicare un sito alternativo per `BrowserMap`, i selettori che utilizzeranno i nomi dei `DeviceGroups` verranno aggiunti agli `URL`s, nel qual caso si dovrebbe fornire i propri servlet che gestiranno le richieste.
 
 Ad esempio, una ricerca per dispositivi `www.example.com/index.html` identificata come `smartphone` da BrowserMap viene inoltrata a `www.example.com/index.smartphone.html.`
 
@@ -530,9 +535,9 @@ In questo modo lo `/libs/wcm/core/browsermap/browsermap.jsp` script aggiungerà 
 
 ### Verifica di una versione specifica di un sito Web {#testing-a-specific-version-of-a-web-site}
 
-Normalmente, lo script BrowserMap reindirizzerà sempre i visitatori alla versione più adatta del sito Web, in genere reindirizzando i visitatori al desktop o al sito mobile quando necessario.
+Normalmente, lo script BrowserMap reindirizzerà sempre i visitatori alla versione più adatta del sito Web, in genere reindirizzando i visitatori verso il desktop o il sito mobile quando necessario.
 
-Potete forzare il dispositivo di qualsiasi richiesta per testare una versione specifica di un sito Web aggiungendo il `device` parametro all’URL. Nell’URL riportato di seguito viene visualizzata la versione mobile del sito Web Geometrixx Outdoors.
+Potete forzare il dispositivo di qualsiasi richiesta per testare una versione specifica di un sito Web aggiungendo il `device` parametro all’URL. Il seguente URL renderà la versione mobile del sito Web Geometrixx Outdoors.
 
 `http://localhost:4502/content/geometrixx-outdoors/en.html?wcmmode=disabled&device=smartphone`
 
@@ -554,8 +559,8 @@ AEM elabora una richiesta emessa da un dispositivo mobile appartenente al gruppo
 
 1. Un iPad invia una richiesta all’istanza di pubblicazione AEM, ad esempio `http://localhost:4503/content/geometrixx_mobile/en/products.html`
 1. AEM determina se il sito della pagina richiesta è un sito mobile (verificando se la pagina di primo livello `/content/geometrixx_mobile` estende il componente della pagina mobile). In caso affermativo:
-1. AEM cerca le funzionalità del dispositivo in base all’agente utente nell’intestazione della richiesta.
-1. AEM mappa le funzionalità del dispositivo al gruppo di dispositivi e le imposta `touch` come selettore del gruppo di dispositivi.
+1. AEM le funzionalità del dispositivo in base all&#39;agente utente nell&#39;intestazione della richiesta.
+1. AEM mappare le funzionalità del dispositivo al gruppo di dispositivi e imposta `touch` come selettore del gruppo di dispositivi.
 
 1. AEM reindirizza la richiesta a `http://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
 1. AEM invia la risposta all’iPad:
@@ -566,7 +571,7 @@ AEM elabora una richiesta emessa da un dispositivo mobile appartenente al gruppo
 
 ### Statistiche {#statistics}
 
-Puoi ottenere alcune statistiche sul numero di richieste inviate al server AEM da dispositivi mobili. È possibile suddividere il numero di richieste:
+Potete ottenere alcune statistiche sul numero di richieste effettuate al server AEM dai dispositivi mobili. È possibile suddividere il numero di richieste:
 
 * per gruppo di dispositivi e dispositivo
 * anno, mese e giorno
@@ -576,7 +581,7 @@ Per visualizzare le statistiche:
 1. Go to the **Tools** console.
 1. Aprite la pagina Statistiche **** dispositivo in **Strumenti** > **Mobile**.
 
-1. Fate clic sul collegamento per visualizzare le statistiche relative a un anno, mese o giorno specifico.
+1. Fate clic sul collegamento per visualizzare le statistiche relative a un anno, un mese o un giorno specifico.
 
 La pagina **Statistiche** si presenta come segue:
 
@@ -584,7 +589,7 @@ La pagina **Statistiche** si presenta come segue:
 
 >[!NOTE]
 >
->La pagina **Statistiche** viene creata la prima volta che un dispositivo mobile accede ad AEM e viene rilevata. Prima di questo, non è disponibile.
+>La pagina **Statistiche** viene creata la prima volta che un dispositivo mobile accede AEM e viene rilevata. Prima di questo, non è disponibile.
 
 Per generare una voce nelle statistiche, è possibile procedere come segue:
 
@@ -603,7 +608,7 @@ Di conseguenza, si potrebbe verificare il seguente scenario:
 
 L&#39;utente Alice viene reindirizzato a `coolpage.feature.html`, e invia l&#39;URL a un amico Bob che accede con un altro client appartenente al gruppo `touch` del dispositivo.
 
-Se `coolpage.feature.html` viene distribuito da una cache front-end, AEM non ha la possibilità di analizzare la richiesta per scoprire che il selettore mobile non corrisponde al nuovo agente utente e Bob riceve la rappresentazione sbagliata.
+Se `coolpage.feature.html` viene servito da una cache front-end, AEM non ha la possibilità di analizzare la richiesta per scoprire che il selettore mobile non corrisponde al nuovo agente utente, e Bob riceve la rappresentazione sbagliata.
 
 Per risolverlo, puoi includere una semplice interfaccia utente di selezione nelle pagine, in cui gli utenti finali possono ignorare il gruppo di dispositivi selezionato da AEM. Nell&#39;esempio precedente, un collegamento (o un&#39;icona) sulla pagina consente all&#39;utente finale di passare a `coolpage.touch.html` se ritiene che il dispositivo sia sufficientemente adatto.
 
