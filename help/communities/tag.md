@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-Quando i componenti di AEM Communities sono configurati con l&#39;assegnazione di tag abilitata, i membri della community possono assegnare tag ai contenuti pubblicati nell&#39;ambiente di pubblicazione.
+Quando  componenti AEM Communities sono configurati con l’assegnazione di tag abilitata, i membri della community possono assegnare tag ai contenuti pubblicati nell’ambiente di pubblicazione.
 
 L’infrastruttura sottostante per i tag applicati nell’ambiente di pubblicazione è identica a quella per i tag applicati al contenuto nell’ambiente di authoring, ad esempio pagine e risorse:
 
@@ -82,6 +85,6 @@ Quando si configura un sito [](sites-console.md#tagging) community o una delle s
 
 ## Ricerca tag {#tag-searching}
 
-A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca tag viene eseguita utilizzando i titoli [](../../help/sites-developing/framework.md#tag-characteristics)dei tag.
+A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca dei tag viene eseguita utilizzando i titoli [dei](../../help/sites-developing/framework.md#tag-characteristics)tag.
 
 Prima di FP1, la ricerca veniva eseguita utilizzando gli ID [](../../help/sites-developing/framework.md#tagid)tag.
