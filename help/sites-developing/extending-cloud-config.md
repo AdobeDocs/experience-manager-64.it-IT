@@ -1,6 +1,6 @@
 ---
-title: Configurazioni servizi cloud
-seo-title: Configurazioni servizi cloud
+title: Configurazioni Cloud Service
+seo-title: Configurazioni Cloud Service
 description: Potete estendere le istanze esistenti per creare configurazioni personalizzate
 seo-description: Potete estendere le istanze esistenti per creare configurazioni personalizzate
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
 
-# Configurazioni servizi cloud{#cloud-service-configurations}
+# Configurazioni Cloud Service{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per la memorizzazione delle configurazioni del servizio.
 
 Potete estendere le istanze esistenti per creare configurazioni personalizzate.
 
-##  Concetti {#concepts}
+## Concetti {#concepts}
 
 I principi utilizzati nello sviluppo delle configurazioni si sono basati sui seguenti concetti:
 
@@ -29,8 +32,8 @@ I principi utilizzati nello sviluppo delle configurazioni si sono basati sui seg
 * Le configurazioni (ad es. proprietà/paragrafi) vengono ereditate dagli elementi padre.
 * Riferimento dai nodi di analisi per percorso.
 * Facilmente estensibile.
-* Dispone della flessibilità necessaria per gestire configurazioni più complesse, come [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Il supporto per le dipendenze (ad esempio, i plug-in di [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) richiedono una configurazione di [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Offre la flessibilità necessaria per gestire configurazioni più complesse, come [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Supporto per dipendenze (ad esempio, [plug-in Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) necessitano di una configurazione [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Struttura {#structure}
 
@@ -38,7 +41,7 @@ Il percorso di base delle configurazioni è:
 
 `/etc/cloudservices`.
 
-Per ogni tipo di configurazione verranno forniti un modello e un componente. Questo consente di disporre di modelli di configurazione in grado di soddisfare le esigenze più specifiche dopo essere stati personalizzati.
+Per ogni tipo di configurazione verranno forniti un modello e un componente. Questo consente di disporre di modelli di configurazione in grado di soddisfare la maggior parte delle esigenze dopo essere stati personalizzati.
 
 Per fornire una configurazione per un nuovo servizio è necessario:
 
@@ -106,7 +109,7 @@ Dopo aver configurato il modello e il componente, puoi aggiungere la configurazi
 
 `/etc/cloudservices/<service-name>`
 
-### Modello contenuto {#content-model}
+### Modello di contenuto {#content-model}
 
 Il modello di contenuto è memorizzato come `cq:Page` in:
 
@@ -139,7 +142,7 @@ Per la documentazione di riferimento sull&#39;API, vedete [com.day.cq.wcm.webser
 
 ### Integrazione AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella scheda Servizi **** cloud della finestra di dialogo Proprietà **di** pagina (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella scheda **Cloud Services** della finestra di dialogo Proprietà **di** pagina (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
 La scheda fornisce inoltre:
 
@@ -223,5 +226,5 @@ Questi servizi sono forniti per impostazione predefinita:
 
 >[!NOTE]
 >
->Consultate anche [Creazione di un servizio](/help/sites-developing/extending-cloud-config-custom-cloud.md)cloud personalizzato.
+>Consultate anche [Creazione di un Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)personalizzato.
 
