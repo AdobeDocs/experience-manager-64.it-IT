@@ -1,6 +1,6 @@
 ---
-title: Assegnazione di tag
-seo-title: Assegnazione di tag
+title: Assegnazione tag
+seo-title: Assegnazione tag
 description: I tag consentono di classificare e organizzare il contenuto
 seo-description: I tag consentono di classificare e organizzare il contenuto
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 2%
 
 ---
 
 
-# Assegnazione di tag{#tagging}
+# Assegnazione tag{#tagging}
 
 I tag consentono di classificare e organizzare il contenuto. I tag possono essere classificati da uno spazio dei nomi e una tassonomia.
 
@@ -24,6 +27,6 @@ I tag consentono di classificare e organizzare il contenuto. I tag possono esser
 
 Per gli sviluppatori sono disponibili le seguenti informazioni:
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md) - Una descrizione dei nodi e delle proprietà utilizzati per l’assegnazione di tag
+* [AEM Tagging Framework](/help/sites-developing/framework.md) - Una descrizione dei nodi e delle proprietà utilizzati per l&#39;assegnazione dei tag
 
-* [Creazione di tag in un’applicazione](/help/sites-developing/building.md) AEM - Una descrizione delle API che utilizzano il framework di tag dal codice lato client e lato server
+* [Creazione di tag in un&#39;applicazione](/help/sites-developing/building.md) AEM - Una descrizione delle API che funzionano con il framework di tag dal codice lato client e lato server
