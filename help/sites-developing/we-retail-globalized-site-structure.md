@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
 
 # Prova della struttura del sito globalizzata in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail è stato costruito con una struttura del sito globalizzata che offre un master di lingua che può essere live-copiato su siti web specifici per paese. Tutto è configurato per consentirvi di sperimentare questa struttura e le capacità di traduzione integrate.
+We.Retail è stato costruito con una struttura del sito globalizzata che offre un master di lingua che può essere live-copiato su siti web specifici per paese. Tutto è configurato per consentirvi di sperimentare con questa struttura e le capacità di traduzione integrate.
 
 ## Provarci {#trying-it-out}
 
@@ -44,7 +47,7 @@ We.Retail è stato costruito con una struttura del sito globalizzata che offre u
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Fare clic sulla casella di controllo accanto all&#39;etichetta Copie **** lingua per selezionare tutte le copie della lingua. Nella sezione **Aggiorna copie** lingua della barra laterale, selezionate l’opzione per **creare un nuovo progetto** di traduzione. Specifica un nome per il progetto e fai clic su **Aggiorna**.
+1. Fare clic sulla casella di controllo accanto all&#39;etichetta Copie **** lingua per selezionare tutte le copie della lingua. Nella sezione **Aggiorna copie** lingua della barra laterale, selezionate l’opzione per **creare un nuovo progetto** di traduzione. Specificate un nome per il progetto e fate clic su **Aggiorna**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -56,7 +59,7 @@ We.Retail è stato costruito con una struttura del sito globalizzata che offre u
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Viene avviato il progetto di traduzione. Fate clic sui puntini di sospensione nella parte inferiore della scheda denominata Processo di traduzione per visualizzare i dettagli. Le pagine con stato **Pronto per la revisione** sono già state tradotte dal servizio di traduzione.
+1. Viene avviato il progetto di traduzione. Fate clic sui puntini di sospensione nella parte inferiore della scheda denominata Processo di traduzione per visualizzare i dettagli. Le pagine con lo stato **Pronto per la revisione** sono già state tradotte dal servizio di traduzione.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -66,7 +69,7 @@ We.Retail è stato costruito con una struttura del sito globalizzata che offre u
 
 >[!NOTE]
 >
->Questa procedura ha dimostrato l&#39;integrazione integrata con la traduzione automatica Microsoft. Utilizzando [AEM Translation Integration Framework](/help/sites-administering/translation.md), potete effettuare l&#39;integrazione con molti servizi di traduzione standard per orchestrare la traduzione di AEM.
+>Questa procedura ha dimostrato l&#39;integrazione integrata con la traduzione automatica Microsoft. Utilizzando [AEM Translation Integration Framework](/help/sites-administering/translation.md), è possibile integrarsi con molti servizi di traduzione standard per orchestrare la traduzione di AEM.
 
 ## Ulteriori informazioni {#further-information}
 
