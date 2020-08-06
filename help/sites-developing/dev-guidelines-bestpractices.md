@@ -1,8 +1,8 @@
 ---
-title: Sviluppo AEM - Linee guida e best practice
-seo-title: Sviluppo AEM - Linee guida e best practice
-description: Linee guida e best practice per lo sviluppo su AEM
-seo-description: Linee guida e best practice per lo sviluppo su AEM
+title: Sviluppo AEM - Linee guida e migliori prassi
+seo-title: Sviluppo AEM - Linee guida e migliori prassi
+description: Linee guida e migliori prassi per lo sviluppo di AEM
+seo-description: Linee guida e migliori prassi per lo sviluppo di AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: 8b7373b116a93322ae32bb9afa7028e831ca09f6
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
 
-# Sviluppo AEM - Linee guida e best practice{#aem-development-guidelines-and-best-practices}
+# Sviluppo AEM - Linee guida e migliori prassi{#aem-development-guidelines-and-best-practices}
 
 ## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
-I componenti e i modelli di AEM formano un toolkit molto potente. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali dei siti Web, agli editor e agli amministratori le funzionalità necessarie per adattare i loro siti Web alle esigenze aziendali in continua evoluzione (agilità dei contenuti), mantenendo al contempo il layout uniforme dei siti (protezione del marchio).
+AEM componenti e modelli formano un potente toolkit. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali dei siti Web, agli editor e agli amministratori le funzionalità necessarie per adattare i loro siti Web alle esigenze aziendali in continua evoluzione (agilità dei contenuti), mantenendo al contempo il layout uniforme dei siti (protezione del marchio).
 
 Una tipica sfida per una persona responsabile di un sito Web, o per un insieme di siti Web (ad esempio in una succursale di un&#39;azienda globale), è quella di introdurre un nuovo tipo di presentazione dei contenuti sui propri siti Web.
 
@@ -29,13 +32,13 @@ Il modo consigliato per affrontare tale sfida sarebbe di:
 
 * Riutilizzate un modello esistente per creare un nuovo tipo di pagina. Il modello definisce in modo approssimativo la struttura delle pagine (elementi di navigazione, pannelli e così via), ulteriormente regolata dalla sua progettazione (CSS, grafica).
 * Utilizzate il sistema paragrafo (parsys/iparsys) nelle nuove pagine.
-* Consente di definire l&#39;accesso alla modalità Progettazione dei sistemi paragrafo, in modo che solo gli utenti autorizzati (in genere l&#39;amministratore) possano modificarli.
+* Consente di definire l&#39;accesso alla modalità Progettazione dei sistemi di paragrafi, in modo che solo gli utenti autorizzati (in genere l&#39;amministratore) possano modificarli.
 * Definite i componenti consentiti nel sistema di paragrafi specificato in modo che gli editor possano quindi posizionare i componenti richiesti sulla pagina. Nel nostro caso potrebbe trattarsi di un componente elenco, che può scorrere una sottostruttura di pagine ed estrarre le informazioni in base a regole predefinite.
 * Gli editor aggiungono e configurano i componenti consentiti, sulle pagine di cui sono responsabili, per fornire le funzionalità richieste (informazioni) all&#39;azienda.
 
 Questo approccio illustra come questo approccio consente agli utenti e agli amministratori del sito Web partecipanti di rispondere rapidamente alle esigenze aziendali, senza richiedere il coinvolgimento di team di sviluppo. Metodi alternativi, come la creazione di un nuovo modello, è in genere un esercizio costoso, che richiede un processo di gestione delle modifiche e il coinvolgimento del team di sviluppo. Ciò rende l&#39;intero processo molto più lungo e costoso.
 
-Gli sviluppatori di sistemi basati su AEM devono pertanto utilizzare:
+Gli sviluppatori di sistemi AEM dovrebbero pertanto utilizzare:
 
 * modelli e controllo dell&#39;accesso alla progettazione del sistema paragrafo per uniformità e protezione del marchio
 * il sistema di paragrafi, comprese le opzioni di configurazione per la flessibilità.
@@ -44,11 +47,11 @@ Le seguenti regole generali per gli sviluppatori hanno senso nella maggior parte
 
 * Mantenete basso il numero di modelli, fino al numero di strutture di pagina fondamentalmente diverse nei siti Web.
 * Offrite ai componenti personalizzati la flessibilità e le funzionalità di configurazione necessarie.
-* Ottimizzate l’utilizzo della potenza e della flessibilità del sistema paragrafo AEM, ovvero dei componenti parsys e iparsys.
+* Ottimizzate l&#39;utilizzo della potenza e della flessibilità del sistema AEM paragrafi, ovvero i componenti parsys e iparsys.
 
 ### Personalizzazione di componenti e altri elementi {#customizing-components-and-other-elements}
 
-Quando create componenti personalizzati o personalizzate un componente esistente, è spesso più semplice (e sicuro) riutilizzare le definizioni esistenti. Gli stessi principi si applicano anche ad altri elementi in AEM, ad esempio il gestore di errori.
+Quando create componenti personalizzati o personalizzate un componente esistente, è spesso più semplice (e sicuro) riutilizzare le definizioni esistenti. Gli stessi principi si applicano anche ad altri elementi all&#39;interno di AEM, ad esempio il gestore di errori.
 
 È possibile eseguire questa operazione copiando e sovrapponendo la definizione esistente. In altre parole, copiando la definizione da `/libs` a `/apps/<your-project>`. Questa nuova definizione, in `/apps`, può essere aggiornata in base alle tue esigenze.
 
@@ -66,7 +69,7 @@ Ad esempio:
 
       * Ad esempio, per personalizzare la copia del componente Testo:
 
-         * from `/libs/foundation/components/text`
+         * da `/libs/foundation/components/text`
          * a `/apps/myProject/components/text`
 
 * [Personalizzazione delle pagine mostrate dal gestore errori](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
@@ -75,7 +78,7 @@ Ad esempio:
 
    * Nell&#39;archivio, copiare gli script predefiniti:
 
-      * from `/libs/sling/servlet/errorhandler/`
+      * da `/libs/sling/servlet/errorhandler/`
       * a `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
@@ -86,7 +89,7 @@ Ad esempio:
 >
 >Per la configurazione e altre modifiche:
 >
->1. copiate l’elemento in `/libs``/apps`
+>1. copiate l’elemento in `/libs` `/apps`
 >1. apportare eventuali modifiche `/apps`
 
 
@@ -94,7 +97,7 @@ Ad esempio:
 
 Le query JCR sono uno strumento potente quando utilizzate correttamente. Sono appropriati per:
 
-* query reali per l’utente finale, ad esempio ricerche full text sul contenuto.
+* query reali per l’utente finale, ad esempio ricerche full-text sul contenuto.
 * le occasioni in cui è necessario reperire contenuti strutturati in tutto il repository.
 
    In tali casi, accertatevi che le query vengano eseguite solo quando è assolutamente necessario, ad esempio in caso di attivazione di un componente o di annullamento della validità della cache (invece di eseguire i passaggi dei flussi di lavoro, i gestori eventi che attivano le modifiche ai contenuti, i filtri, ecc.).
@@ -126,19 +129,19 @@ Utilizzate la sessione utente, non quella amministrativa. Questo significa che d
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protezione contro gli script tra siti (XSS) {#protect-against-cross-site-scripting-xss}
+### Protect contro lo scripting tra siti (XSS) {#protect-against-cross-site-scripting-xss}
 
 Lo scripting tra siti (XSS) consente agli aggressori di inserire codice nelle pagine Web visualizzate da altri utenti. Questa vulnerabilità di sicurezza può essere sfruttata da utenti Web malintenzionati per aggirare i controlli di accesso.
 
-AEM applica il principio di filtrare tutti i contenuti forniti dall’utente al momento dell’output. La prevenzione di XSS viene data la massima priorità sia durante lo sviluppo che durante i test.
+AEM applica il principio di filtraggio di tutti i contenuti forniti dall’utente al momento dell’output. La prevenzione di XSS viene data la massima priorità sia durante lo sviluppo che durante i test.
 
 Inoltre, un firewall per applicazioni Web, come [mod_security per Apache](https://modsecurity.org), può fornire un controllo centrale affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere contro attacchi di script tra siti non rilevati in precedenza.
 
 >[!CAUTION]
 >
->Il codice di esempio fornito con AEM potrebbe non essere di per sé protetto da tali attacchi e in genere si basa sul filtraggio delle richieste da parte di un firewall dell’applicazione Web.
+>Il codice di esempio fornito con AEM potrebbe non essere di per sé protetto da tali attacchi e in genere si basa sul filtraggio delle richieste da parte di un firewall dell&#39;applicazione Web.
 
-Il foglio di controllo API XSS contiene informazioni che è necessario conoscere per utilizzare l&#39;API XSS e rendere più sicura un&#39;app AEM. Potete scaricarlo qui:
+Il foglio di controllo API XSS contiene informazioni che è necessario conoscere per utilizzare l&#39;API XSS e rendere un&#39;app AEM più sicura. Potete scaricarlo qui:
 
 Il foglio di imbroglio XSSAPI.
 
@@ -149,7 +152,7 @@ Il foglio di imbroglio XSSAPI.
 Per quanto riguarda le applicazioni Internet, assicurarsi che durante il trasporto di informazioni riservate
 
 * il traffico è protetto tramite SSL
-* HTTP POST è utilizzato se applicabile
+* POST HTTP, se applicabile
 
 Ciò vale per le informazioni riservate al sistema (come la configurazione o l&#39;accesso amministrativo) e per quelle riservate agli utenti (come i loro dati personali)
 
