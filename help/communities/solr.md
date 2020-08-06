@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '1605'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +39,7 @@ Scarica e installa Apache Solr:
 * Scelta delle modalità di esecuzione:
 
    * Modalità indipendente
-   * [Modalità](#solrcloud-mode) SolrCloud (consigliato per ambienti di produzione)
+   * [Modalità](#solrcloud-mode) SolrCloud (consigliato per gli ambienti di produzione)
 
 * Scelta della ricerca multilingue (MLS)
 
@@ -47,7 +50,7 @@ Scarica e installa Apache Solr:
 
 [La modalità SolrCloud](https://cwiki.apache.org/confluence/display/solr/SolrCloud) è consigliata per gli ambienti di produzione. In modalità SolrCloud, SolrCloud deve essere installato e configurato prima di installare MLS (Multilingual Search).
 
-La raccomandazione è di seguire le istruzioni SolrCloud da installare:
+La raccomandazione è di seguire le istruzioni di SolrCloud da installare:
 
 * 3 nodi SolrCloud sullo stesso server
 * Un Apache ZooKeeper esterno
@@ -70,7 +73,6 @@ Riferimento:\
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
 Utilizzo:\
-
 sh./scripts/cloud-scripts/zkcli.sh \\
 -cmd upconfig \\
 -zkhost, *server:porta* \\
@@ -78,14 +80,14 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 -solrhome *solr-home-path* \\
 -confdir *config-dir*
 
-#### 2.Creare una raccolta {#create-a-collection}
+#### 2. Creare una raccolta {#create-a-collection}
 
 Riferimento:\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
 ](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilizzo:\
- &quot;merge_preserve&quot;./bin/solr create \\
+./bin/solr create \\
 -c *mycollection-name*\\
 -d *config-dir* \\
 -n *myconfig-name* \\
@@ -101,7 +103,6 @@ Riferimento:\
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
 Utilizzo:\
-
 sh./scripts/cloud-scripts/zkcli.sh \\
 -cmd linkconfig \\
 -zkhost, *server:porta* \\
@@ -110,9 +111,9 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 
 ### Confronto tra standard e Advanced MLS {#comparison-of-standard-and-advanced-mls}
 
-La ricerca multilingue (MLS) per AEM Communities è stata creata per la piattaforma Solr per fornire una ricerca migliore in tutte le lingue supportate, incluso l&#39;inglese.
+La ricerca multilingue (MLS) per  AEM Communities è stata creata per la piattaforma Solr per fornire una ricerca migliore in tutte le lingue supportate, incluso l&#39;inglese.
 
-MLS per le community AEM è disponibile come standard MLS o Advanced MLS. MLS standard include solo le impostazioni di configurazione Solr ed esclude eventuali plug-in o file di risorse. MLS avanzato è la soluzione più completa e include le impostazioni di configurazione Solr, i plug-in e le relative risorse
+MLS per le comunità AEM è disponibile sia come standard MLS che come Advanced MLS. MLS standard include solo le impostazioni di configurazione Solr ed esclude eventuali plug-in o file di risorse. MLS avanzato è la soluzione più completa e include le impostazioni di configurazione Solr, i plug-in e le relative risorse
 
 MLS standard include miglioramenti per la ricerca di contenuti per le seguenti lingue:
 
@@ -144,7 +145,7 @@ In tutto, le seguenti 33 lingue sono supportate in Advanced MLS.
 
 #### Confronto tra AEM 6.1 Solr search, MLS standard e MLS avanzate {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Nota**: AEM 6.1 si riferisce al FP3 di AEM Communities 6.1 e versioni precedenti.
+**Nota**: AEM 6.1 si riferisce al AEM 6.1 FP3 delle Comunità europee e versioni precedenti.
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
@@ -203,8 +204,8 @@ I file MLS standard vengono memorizzati nell&#39;archivio AEM.
 1. Installare Solr in modalità standalone
 1. Se eseguite Solr5, create una raccolta1 (simile a Solr4):
 
-   *  &quot;merge_preserve&quot;./bin/solr start
-   *  &quot;merge_preserve&quot;./bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr start
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 1. Backup **schema.xml** e **solrconfig.xml** nella directory di configurazione Solr, ad esempio:
 
@@ -218,13 +219,13 @@ I file MLS standard vengono memorizzati nell&#39;archivio AEM.
 
 ### Installazione di MLS avanzate {#installing-advanced-mls}
 
-Affinché l&#39;insieme SRP (MSRP o DSRP) supporti MLS avanzati, sono necessari nuovi plug-in Solr oltre a uno schema personalizzato e alla configurazione Solr. Tutti gli elementi richiesti vengono assemblati in un file zip scaricabile. Inoltre, è incluso uno script di installazione da utilizzare quando Solr viene distribuito in modalità standalone.
+Affinché l&#39;insieme SRP (MSRP o DSRP) supporti MLS avanzati, sono necessari nuovi plug-in Solr, oltre a uno schema personalizzato e a una configurazione Solr. Tutti gli elementi richiesti vengono assemblati in un file zip scaricabile. Inoltre, è incluso uno script di installazione da utilizzare quando Solr viene distribuito in modalità standalone.
 
 Per ottenere il pacchetto MLS avanzato, consultate [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) nella sezione relativa alla distribuzione della documentazione.
 
-Per iniziare a installare per SolrCloud o la modalità standalone:
+Per iniziare a utilizzare l&#39;installazione per SolrCloud o la modalità standalone:
 
-* Scarica l&#39;archivio zip AEM-SOLR-MLS sul server in cui è installato Solr
+* Scarica AEM-SOLR-MLS archivio zip sul server in cui è installato Solr
 * Estrarre l&#39;archivio
 
 #### Modalità SolrCloud - MLS avanzate {#solrcloud-mode-advanced-mls}
@@ -251,7 +252,7 @@ Istruzioni di installazione - notare alcune differenze per Solr4 e Solr5:
       * Per Solr4: Copia *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
       * Per Solr5: Copia *solr-install-dir*/server/solr/configsets/data_Driv_schema_configs/&amp;ast;
    1. Copiate **schema.xml** e **solrconfig.xml** estratti in *new-config-dir* per sovrascrivere i file esistenti
-   1. Per Solr5: Copiare *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/lang/&amp;ast;.txt&quot; in *new-config-dir*/lang/
+   1. Per Solr5: Copiare *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot; in *new-config-dir*/lang/
    1. Copiate le **parole** di arresto/cartella estratte in *new-config-dir* , con conseguente *nuova-config-dir*/stopwords/&amp;ast;.txt
 
 
@@ -281,7 +282,7 @@ Istruzioni di installazione - notare alcune differenze per Solr4 e Solr5:
 
 1. Per MSRP, eseguite [MSRP Reindex Tool](#msrpreindextool), a meno che non si tratti di una nuova installazione
 
-#### Modalità indipendente - MLS avanzate {#standalone-mode-advanced-mls}
+#### Modalità standalone - MLS avanzato {#standalone-mode-advanced-mls}
 
 Uno script di installazione è incluso nel pacchetto MLS avanzato.
 
@@ -290,8 +291,8 @@ Dopo aver estratto il contenuto del pacchetto sul server che ospita il server So
 * Installare Solr in modalità standalone
 * Se eseguite Solr5, create una raccolta1 (simile a Solr4):
 
-   *  &quot;merge_preserve&quot;./bin/solr start
-   *  &quot;merge_preserve&quot;./bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr start
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 * Eseguire lo script di installazione: Install [-v 4|5] - [-d solrhome] [-c percorso]di raccolta dove:
 
