@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
 
 # Configurazione dell&#39;autenticazione basata sui certificati {#configuring-certificate-based-authentication}
 
-In genere, la gestione utente esegue l&#39;autenticazione utilizzando un nome utente e una password. Gestione utente supporta anche l&#39;autenticazione basata sui certificati, che può essere utilizzata per autenticare gli utenti tramite Acrobat o per autenticare gli utenti a livello di programmazione. Per informazioni dettagliate sull&#39;autenticazione degli utenti a livello di programmazione, consultate [Programmazione con i moduli](https://www.adobe.com/go/learn_aemforms_programming_63)AEM.
+In genere, la gestione utente esegue l&#39;autenticazione utilizzando un nome utente e una password. Gestione utente supporta anche l&#39;autenticazione basata sui certificati, che puoi utilizzare per autenticare gli utenti tramite  Acrobat o per autenticare gli utenti a livello di programmazione. Per informazioni dettagliate sull&#39;autenticazione degli utenti a livello di programmazione, vedere [Programmazione con AEM moduli](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 Per utilizzare l&#39;autenticazione basata su certificato, importare un certificato CA (Certificate Authority, autorità di certificazione) attendibile nell&#39;archivio attendibili, quindi creare una mappatura del certificato.
 
-## Importa certificato CA {#import-the-ca-certificate}
+## Importare il certificato CA {#import-the-ca-certificate}
 
 Durante l&#39;importazione del certificato, selezionare le opzioni Considera affidabili per l&#39;autenticazione del certificato e Considera affidabili per l&#39;identità, nonché tutte le altre opzioni richieste. Per informazioni dettagliate sull&#39;importazione dei certificati, vedere [Gestione dei certificati](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
@@ -55,29 +58,30 @@ Quando sottoponete a test un certificato, Gestione utenti carica i controlli del
    Nel regex potete usare i seguenti caratteri:
 
    * . (qualsiasi carattere)
-   *  &amp;ast; (0 o più occorrenze)
+   * &amp;ast; (0 o più occorrenze)
    * () (specificare il gruppo tra parentesi)
    * \ (utilizzato per sfuggire a un carattere regex a un carattere regolare)
    * $n (utilizzato per fare riferimento all&#39;nth group)
+
    Esempi di espressioni regolari:
 
    * Per estrarre &quot;Alex Pink&quot; da &quot;Alex Pink (Autenticazione)&quot;
 
-      **** Regex: (.&amp;ast;) \(Authentication\)
+      **Regex:** (.&amp;ast;) \(Authentication\)
 
    * Per estrarre &quot;Alex Pink&quot; da &quot;Alex (Authentication) Pink&quot;
 
-      **** Regex: (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
    * Per estrarre &quot;Pink Alex&quot; da &quot;Alex (Authentication) Pink&quot;
 
-      **** Regex: (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
       Ordine personalizzato: $2 $1 (restituisce il secondo gruppo, concatenato al primo gruppo, catturato da uno spazio vuoto)
 
    * Per estrarre &quot;apink@sampleorg.com&quot; da &quot;smtp:apink@sampleorg.com&quot;
 
-      **** Regex: smtp:(.&amp;ast;)
+      **Regex:** smtp:(.&amp;ast;)
    Per informazioni dettagliate sull&#39;uso delle espressioni regolari, consultate [Esercitazione Java sulle espressioni](https://java.sun.com/docs/books/tutorial/essential/regex/)regolari.
 
 1. Nell&#39;elenco Per dominio, selezionare il dominio dell&#39;utente.
