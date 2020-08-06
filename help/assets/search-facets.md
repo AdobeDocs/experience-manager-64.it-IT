@@ -4,6 +4,9 @@ description: Questo articolo descrive come creare, modificare e utilizzare i fac
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '2537'
+ht-degree: 22%
 
 ---
 
@@ -12,19 +15,19 @@ source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
 
 Scoprite come creare, modificare e utilizzare i facet di ricerca in AEM.
 
-L’implementazione a livello aziendale di Risorse Adobe Experience Manager (AEM) consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se utilizzate solo le funzionalità di ricerca generiche di AEM.
+Una distribuzione aziendale di Adobe Experience Manager (AEM) Assets consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se si utilizzano solo le funzionalità di ricerca generiche di AEM.
 
 Usate i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere più efficiente e versatile la funzionalità di ricerca. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Potete inoltre aggiungere facet di ricerca personalizzati.
 
 In sintesi, i facet di ricerca consentono di cercare le risorse in più modi anziché in un unico ordine tassonomico predeterminato. Potete facilmente approfondire fino al livello di dettaglio desiderato per una ricerca più mirata.
 
-Ad esempio, se cercate un’immagine, potete scegliere se un elemento bitmap o un’immagine vettoriale. È possibile ridurre ulteriormente l&#39;ambito della ricerca specificando il tipo MIME per l&#39;immagine. Allo stesso modo, quando cercate documenti, potete specificare il formato, ad esempio PDF o MS Word.
+Ad esempio, se cercate un’immagine, potete scegliere se un elemento bitmap o un’immagine vettoriale deve essere selezionato. È possibile ridurre ulteriormente l&#39;ambito della ricerca specificando il tipo MIME per l&#39;immagine. Allo stesso modo, quando cercate documenti, potete specificare il formato, ad esempio PDF o MS Word.
 
 ## Aggiunta di un predicato {#adding-a-predicate}
 
 I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di ricerca sottostante utilizzando i predicati. Per visualizzare più facet o facet diversi, è possibile aggiungere predicati al modulo predefinito oppure utilizzare un modulo personalizzato che includa facet di propria scelta.
 
-Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizzate il predicato Proprietà per cercare risorse corrispondenti a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
+Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizzate il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
 
 1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
@@ -38,7 +41,7 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
    >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra **di ricerca per l’amministratore delle** risorse preconfigurata di una versione precedente di AEM, effettua le seguenti operazioni:
    > 
    >1. Andate a */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
-   >1. Elimina il nodo **tipo** .
+   >1. Eliminare il nodo **del tipo** .
    >1. Dal percorso */libs/settings/dam/search/facets/assets/jcr:content/items*, copia i nodi **asset, directory, typeor, excludepaths** e **searchtype** nel percorso indicato al passaggio 1.
    >1. Salva le modifiche.
 
@@ -72,14 +75,14 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
 
    Visualizzare l&#39;anteprima del modulo di ricerca prima di inviare le modifiche
 
-1. Per chiudere l’anteprima, toccate o fate clic su **[!UICONTROL Chiudi]** ![vicino](assets/close.png) nell’angolo in alto a destra dell’anteprima.
+1. Per chiudere l’anteprima, toccate o fate clic su **[!UICONTROL Chiudi]** ![chiudi](assets/close.png) nell’angolo in alto a destra dell’anteprima.
 1. Toccate **[!UICONTROL Fine]** per salvare le impostazioni.
 1. Andate al pannello Ricerca nell’interfaccia utente Risorse. Il predicato Proprietà viene aggiunto al pannello.
-1. Immettete una descrizione per la risorsa da cercare nella casella di testo. Ad esempio, immettete &quot;Adobe&quot;. Quando eseguite una ricerca, nei risultati della ricerca vengono elencate le risorse con la descrizione &quot;Adobe&quot;.
+1. Immettete una descrizione per la risorsa da cercare nella casella di testo. Ad esempio, immettete &quot; Adobe&quot;. Quando eseguite una ricerca, nei risultati della ricerca vengono elencate le risorse con la descrizione &quot; Adobe&quot;.
 
 ## Aggiunta di un predicato Opzioni {#adding-an-options-predicate}
 
-Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
+Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare le risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
 
 Per mappare le opzioni sulla rispettiva proprietà, create una struttura di nodi per le opzioni e fornite il percorso del nodo principale nella proprietà Nome proprietà del predicato Opzioni. Il nodo padre deve essere di tipo `sling`: `OrderedFolder`. Le opzioni devono essere di tipo `nt:unstructured`. I nodi di opzione devono avere le proprietà `jcr:title` e `value` configurate.
 
@@ -133,10 +136,10 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 
 ## Aggiunta di un predicato proprietà multivalore {#adding-a-multi-value-property-predicate}
 
-Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in Risorse AEM e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
+Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in  AEM Assets e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
 1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
-1. Nella pagina Moduli di ricerca, seleziona Barra **[!UICONTROL di ricerca Amministratore]** risorse e tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
+1. Nella pagina Ricerca in Forms, seleziona **[!UICONTROL Risorse Admin Search Rail]**, quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
 1. Assicurati di aver selezionato **[!UICONTROL Supporto delimitatore]**. Specifica i delimitatori per separare i singoli valori nel campo **[!UICONTROL Delimitatori di input]**. Per impostazione predefinita, la virgola è indicata come delimitatore. È possibile specificare un delimitatore diverso.
@@ -146,10 +149,10 @@ Il predicato Proprietà multivalore consente di cercare risorse per più valori.
 
 ## Aggiunta di un predicato Tag {#adding-a-tags-predicate}
 
-Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, Risorse AEM cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
+Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita,  AEM Assets cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
 1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
-1. Dalla pagina Moduli di ricerca, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse, quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
+1. Dalla pagina Cerca in Forms, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse, quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Nella scheda Impostazioni, inserite un testo segnaposto per il predicato. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. In alternativa, è possibile selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
 1. Configurate la proprietà del percorso dei tag radice di questo predicate per popolare i vari tag nell&#39;elenco Tag.
@@ -163,15 +166,15 @@ Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per
 1. Andate al pannello Ricerca. Il **[!UICONTROL predicato Tag]** viene aggiunto al pannello Ricerca.
 1. Specificate i tag in base ai quali desiderate effettuare ricerche nelle risorse o selezionarli dall’elenco dei suggerimenti.
 
-   ![Suggerimento fornito da AEM durante la digitazione del nome del tag](assets/chlimage_1-419.png)
+   ![Suggerimento fornito AEM durante la digitazione del nome del tag](assets/chlimage_1-419.png)
 
-   Suggerimento fornito da AEM durante la digitazione del nome del tag
+   Suggerimento fornito AEM durante la digitazione del nome del tag
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
 ## Aggiunta di altri predicati {#adding-other-predicates}
 
-Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Opzioni, potete aggiungere i seguenti predicati aggiuntivi al pannello Ricerca:
+Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Opzioni, potete aggiungere al pannello di ricerca i seguenti predicati aggiuntivi:
 
 | Nome predicato | Descrizione | Proprietà |
 |---|---|---|
@@ -180,27 +183,27 @@ Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Op
 | [!UICONTROL Percorso] | Utilizzatelo per filtrare i risultati in base alla posizione. Potete specificare percorsi diversi come opzioni. | <ul><li>Etichetta</li><li>Percorso</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato pubblicazione] | Cercare il predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Data relativa] | Consente di cercare le risorse in base alla data relativa della loro creazione. Ad esempio, potete configurare opzioni come 2 mesi fa, 3 settimane fa e così via. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Data relativa</li></ul> |
-| [!UICONTROL Intervallo] | Cercare il predicato per cercare risorse che si trovano all’interno di un intervallo specificato. Nel pannello Ricerca potete specificare i valori minimo e massimo per l’intervallo. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
-| [!UICONTROL Intervallo date] | Cerca predicato per cercare le risorse create entro un intervallo specificato per una proprietà data. Nel pannello Ricerca, potete specificare le date di inizio e fine utilizzando i selettori data. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Testo intervallo (Da)</li><li>Testo intervallo (A)</li><li>Descrizione</li></ul> |
+| [!UICONTROL Intervallo] | Cercare il predicato per cercare risorse che si trovano all’interno di un intervallo specificato. Nel pannello Ricerca, potete specificare i valori minimo e massimo per l’intervallo. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Intervallo date] | Cerca predicato per cercare le risorse create all’interno di un intervallo specificato per una proprietà data. Nel pannello Ricerca, potete specificare le date di inizio e fine utilizzando i selettori data. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Testo intervallo (Da)</li><li>Testo intervallo (A)</li><li>Descrizione</li></ul> |
 | [!UICONTROL Data] | Consente di eseguire una ricerca basata sul cursore delle risorse in base a una proprietà data. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
-| [!UICONTROL Dimensione file] | Cercare un predicato per cercare le risorse in base alla loro dimensione. Si tratta di un predicato basato su silder in cui potete selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nel repository CRX. La dimensione del file è specificata in byte. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso</li><li>Descrizione</li></ul> |
-| [!UICONTROL Ultima modifica risorsa] | Cerca predicato per cercare le risorse modificate di recente | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Dimensione file] | Cercare un predicato per cercare le risorse in base alla loro dimensione. Si tratta di un predicato basato su silder in cui potete selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nel repository CRX. Le dimensioni del file sono espresse in byte. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso</li><li>Descrizione</li></ul> |
+| [!UICONTROL Ultima modifica risorsa] | Predicato di ricerca per cercare le risorse modificate di recente | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato pubblicazione] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Valutazione] | Cerca predicato per cercare le risorse in base alla loro valutazione media | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso opzione</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato scadenza] | Cerca predicato per cercare le risorse in base al loro stato di scadenza | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
-| [!UICONTROL Nascosto] | predicato di ricerca che definisce una proprietà campo nascosta per cercare le risorse | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Nascosto] | predicato di ricerca che definisce una proprietà campo nascosta per la ricerca delle risorse | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
 
 ## Ripristino dei facet di ricerca predefiniti {#restoring-default-search-facets}
 
-Per impostazione predefinita, l’icona Blocca viene visualizzata prima della Barra **[!UICONTROL di ricerca Amministratore]** risorse nella pagina **[!UICONTROL Moduli]** di ricerca. Se al modulo si aggiungono facet di ricerca per indicare che il modulo predefinito è stato modificato, l&#39;icona Blocca scompare.
+Per impostazione predefinita, l’icona Blocca viene visualizzata prima della Barra **[!UICONTROL di ricerca Amministratore]** risorse nella pagina **[!UICONTROL Cerca in Forms]** . Se al modulo si aggiungono facet di ricerca per indicare che il modulo predefinito è stato modificato, l&#39;icona Blocca scompare.
 
-![L’icona Blocca rispetto a un’opzione nella pagina Moduli di ricerca indica che le impostazioni predefinite sono intatte e non sono personalizzate.](assets/locked_admin_rail.png)
+![L’icona Blocca rispetto a un’opzione nella pagina Cerca Forms indica che le impostazioni predefinite sono intatte e non sono personalizzate.](assets/locked_admin_rail.png)
 
-L’icona Blocca rispetto a un’opzione nella pagina Moduli di ricerca indica che le impostazioni predefinite sono intatte e non sono personalizzate.
+L’icona Blocca rispetto a un’opzione nella pagina Cerca Forms indica che le impostazioni predefinite sono intatte e non sono personalizzate.
 
 Per ripristinare il facet di ricerca predefinito, effettuare le seguenti operazioni:
 
-1. Seleziona Barra di ricerca Amministratore **[!UICONTROL risorse]** nella pagina **[!UICONTROL Moduli]** di ricerca.
+1. Seleziona Barra di ricerca amministratore **[!UICONTROL risorse]** nella pagina **[!UICONTROL Cerca in Forms]** .
 1. Toccate **[!UICONTROL Elimina]** ![elimina](assets/deleteoutline.png) nella barra degli strumenti.
 1. Nella finestra di dialogo di conferma, toccate **[!UICONTROL Elimina]** per rimuovere le modifiche personalizzate.
 
@@ -210,7 +213,7 @@ Per ripristinare il facet di ricerca predefinito, effettuare le seguenti operazi
 
 Se non vi è stato assegnato un ruolo di amministratore, ecco un elenco di autorizzazioni necessarie per eseguire azioni di modifica, eliminazione e anteprima che coinvolgono facet di ricerca.
 
-| Azione | Autorizzazioni |
+| Azione | Autorizzazioni  |
 |---|---|
 | [!UICONTROL Modifica] | Autorizzazioni di lettura e scrittura sul nodo /apps in CRX |
 | [!UICONTROL Elimina] | Autorizzazioni di lettura, scrittura ed eliminazione sul nodo /apps in CRX |
