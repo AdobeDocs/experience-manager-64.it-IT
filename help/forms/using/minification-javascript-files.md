@@ -1,8 +1,8 @@
 ---
 title: Riduzione dei file JavaScript
 seo-title: Riduzione dei file JavaScript
-description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell'area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
-seo-description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell'area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
+description: Istruzioni per generare codice ridotto dopo  personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
+seo-description: Istruzioni per generare codice ridotto dopo  personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Per generare codice ridotto per le modifiche semantiche, effettuate le seguenti 
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui pacchetti, consultate [Introduzione alla personalizzazione dell&#39;area di lavoro](/help/forms/using/introduction-customizing-html-workspace.md) Moduli AEM.
+   >Per ulteriori informazioni sui pacchetti, consultate [Introduzione alla personalizzazione &#39;area di lavoro](/help/forms/using/introduction-customizing-html-workspace.md) AEM Forms.
 
 1. Aggiornate i percorsi in `main.js` Client-html/src/main/webapp/js, per modelli/visualizzazioni aggiunti/aggiornati.
 
