@@ -1,8 +1,8 @@
 ---
 title: Punteggi dei codici
 seo-title: Punteggi dei codici
-description: Comuni errori di codifica da evitare durante lo sviluppo per AEM
-seo-description: Comuni errori di codifica da evitare durante lo sviluppo per AEM
+description: Comuni errori di codifica da evitare quando si sviluppano per AEM
+seo-description: Comuni errori di codifica da evitare quando si sviluppano per AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 
