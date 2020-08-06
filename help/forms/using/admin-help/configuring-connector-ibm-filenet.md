@@ -1,8 +1,8 @@
 ---
 title: Configurazione del connettore per IBM FileNet
 seo-title: Configurazione del connettore per IBM FileNet
-description: Scopri come configurare il connettore per IBM FileNet per abilitare la comunicazione tra i moduli AEM e IBM FileNet.
-seo-description: Scopri come configurare il connettore per IBM FileNet per abilitare la comunicazione tra i moduli AEM e IBM FileNet.
+description: Scopri come configurare il connettore per IBM FileNet per abilitare la comunicazione tra AEM moduli e IBM FileNet.
+seo-description: Scopri come configurare il connettore per IBM FileNet per abilitare la comunicazione tra AEM moduli e IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Configurazione del connettore per IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Il connettore per IBM FileNet consente la comunicazione tra i moduli AEM e IBM FileNet. Per ulteriori informazioni di base, vedere &quot;Connettori per l&#39;ECM&quot; nella Guida di riferimento dei [servizi](https://www.adobe.com/go/learn_aemforms_services_63).
+Il connettore per IBM FileNet consente la comunicazione tra AEM moduli e IBM FileNet. Per ulteriori informazioni di base, vedere &quot;Connettori per l&#39;ECM&quot; nella Guida di riferimento dei [servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. In questa versione, le risorse vengono memorizzate nell&#39;archivio nativo dei moduli di AEM e i servizi dei fornitori di repository non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consulta la guida all’aggiornamento moduli AEM per il server delle applicazioni.
+>Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. In questa versione, le risorse vengono memorizzate nell&#39;archivio nativo dei moduli AEM e i servizi dei provider dell&#39;archivio non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene eseguita quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, vedere la guida all&#39;aggiornamento dei moduli AEM per il server delle applicazioni.
 
 ## Configurare la connessione al motore di contenuto {#configure-the-connection-to-the-content-engine}
 
@@ -51,7 +51,7 @@ IBM FileNet P8 Content Engine offre servizi software per la gestione dei contenu
    * Se è stato selezionato Cancella come schema di protezione delle credenziali, questa parola chiave e il relativo valore vengono ignorati.
    * Se si è selezionata l&#39;opzione Simmetrico come schema di protezione delle credenziali, il percorso immesso punta alla posizione di un file di cifratura nel server dei moduli che contiene le chiavi di crittografia da utilizzare.
 
-1. Nella casella Archivio oggetti predefinito, immettere il connettore per l&#39;archivio oggetti a cui i moduli AEM si connettono per impostazione predefinita.
+1. Nella casella Archivio oggetti predefinito, immettere il connettore dell&#39;archivio oggetti a cui AEM i moduli si connette per impostazione predefinita.
 1. Nella casella Nome utente, immettere il nome utente di un utente che dispone dei diritti di accesso all&#39;archivio oggetti predefinito specificato nel passaggio precedente.
 1. Nella casella Password, immettete la password per l’utente e fate clic su Salva.
 
