@@ -1,8 +1,8 @@
 ---
 title: Proxy Server Tool (proxy.jar)
 seo-title: Proxy Server Tool (proxy.jar)
-description: Informazioni su Proxy Server Tool in AEM.
-seo-description: Informazioni su Proxy Server Tool in AEM.
+description: Scopri di più sullo strumento Proxy Server in AEM.
+seo-description: Scopri di più sullo strumento Proxy Server in AEM.
 uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ Il server proxy si trova nella cartella di installazione appropriata:
 * SMTP per i messaggi e-mail
 * LDAP per la gestione degli utenti
 
-Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; Ad esempio, un browser Web e AEM. Questo consente di monitorare esattamente ciò che accade quando si richiede una pagina AEM.
+Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; ad esempio un browser Web e AEM. Questo consente di monitorare esattamente ciò che accade quando si richiede una pagina AEM.
 
 ## Avvio dello strumento Proxy Server {#starting-the-proxy-server-tool}
 
-Lo strumento si trova nella cartella /opt/helpers dell’installazione di AEM. Per iniziare, digitare:
+Lo strumento si trova nella cartella /opt/helpers dell&#39;installazione AEM. Per iniziare, digitare:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -45,13 +48,13 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 * **q (Modalità silenziosa)** Non scrive le richieste nella finestra della console. Utilizzate questa opzione se non desiderate rallentare la connessione o se registrate l&#39;output in un file (consultate l&#39;opzione -logfile).
 * **b (Modalità binaria)** Se state cercando combinazioni di byte specifiche nel traffico, abilitate la modalità binaria. L&#39;output conterrà quindi l&#39;output esadecimale e il carattere.
-* **t (voci del registro delle marche temporali)** Aggiunge una marca temporale a ciascun output del registro. La marca temporale è espressa in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzatelo per individuare gli eventi che si sono verificati in un momento specifico se utilizzate il server proxy per un periodo di tempo più lungo.
+* **t (voci del registro di data e ora)** Aggiunge una marca temporale a ciascun output del registro. La marca temporale è espressa in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzatelo per individuare gli eventi che si sono verificati in un momento specifico se utilizzate il server proxy per un periodo di tempo più lungo.
 * **logfile &lt;nomefile> (scrivi nel file di registro)** Scrive la conversazione client-server in un file di registro. Questo parametro funziona anche in modalità silenziosa.
-* **i &lt;numIndentions> (aggiungere un rientro)** Ogni connessione attiva è rientrata per una migliore leggibilità. Il valore predefinito è 16 livelli. (novità in proxy.jar versione 1.16).
+* **i &lt;numIndentions> (aggiungere un rientro)** Ogni connessione attiva è rientrata per una migliore leggibilità. Il valore predefinito è 16 livelli. (Novità in proxy.jar versione 1.16).
 
 ## Utilizzo dello strumento Proxy Server {#uses-of-the-proxy-server-tool}
 
-Gli scenari seguenti illustrano alcuni degli scopi per cui è possibile utilizzare lo strumento Proxy Server:
+Gli scenari seguenti illustrano alcuni degli scopi per i quali può essere utilizzato lo strumento Proxy Server:
 
 **Verifica cookie e relativi valori**
 
@@ -87,7 +90,7 @@ Se si perdono richieste in un server complesso, ad esempio con un firewall e un 
 
 1. Avviare un proxy prima di un firewall
 1. Avviare un altro proxy dopo un firewall
-1. Utilizzate questi elementi per vedere quanto sono state estese le richieste.
+1. Utilizzate questi elementi per vedere fino a che punto sono arrivate le richieste.
 
 **Gestione richieste**
 
@@ -95,7 +98,7 @@ Se si verificano richieste sporgenti di tanto in tanto:
 
 1. Avviate un proxy.jar.
 1. Attendi o scrivi il registro di accesso in un file, con ogni voce con una marca temporale.
-1. Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale di esse causa problemi.
+1. Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa dei problemi.
 
 ## Il formato dei messaggi di registro {#the-format-of-log-messages}
 
@@ -105,7 +108,7 @@ Le voci di registro prodotte da proxy.jar hanno tutte il formato seguente:
 [timestamp (optional)] [<b>C</b>lient|<b>S</b>erver]-[ConnectionNumber]-[BytePosition] ->[Character Stream]
 ```
 
-Ad esempio, una richiesta per una pagina Web potrebbe essere:
+Ad esempio, una richiesta per una pagina Web può essere visualizzata come segue:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
