@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 59%
 
 ---
 
@@ -42,6 +45,7 @@ Le dipendenze principali dei file del modello 3D, come i file di mappe texture, 
 
       1. Osserva i percorsi e i nomi dei file mancanti.
       1. Vicino all’angolo superiore destro della pagina delle proprietà, tocca **[!UICONTROL Chiudi]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. Le risorse appena caricate sono ora correttamente elencate come risorse di riferimento.
 
    * **[!UICONTROL Ignora le dipendenze]**.
