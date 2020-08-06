@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Monitoraggio e manutenzione dell’istanza AEM{#monitoring-and-maintaining-your-aem-instance}
 
-Dopo l’implementazione delle istanze AEM, saranno necessarie alcune attività per monitorare e mantenere il funzionamento, le prestazioni e l’integrità di tali istanze.
+Dopo l&#39;implementazione delle istanze AEM, sarà necessario eseguire determinate attività per monitorare e mantenere il funzionamento, le prestazioni e l&#39;integrità.
 
 Un fattore chiave in questo caso è che per riconoscere i potenziali problemi è necessario sapere come si presentano e si comportano i sistemi in condizioni normali. Ciò è meglio monitorando il sistema e raccogliendo informazioni in un determinato periodo di tempo.
 
@@ -32,7 +32,7 @@ Un fattore chiave in questo caso è che per riconoscere i potenziali problemi è
 | I file system vengono monitorati. | Se lo spazio disponibile su disco è insufficiente, il repository CRX si blocca. e riprenderà quando sarà disponibile lo spazio. | &quot; `*ERROR* LowDiskSpaceBlocker`&quot; i messaggi possono essere visualizzati nel file di registro quando lo spazio disponibile diventa insufficiente. |
 | [I file](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) di registro vengono monitorati. |  |  |
 | Il monitoraggio del sistema viene eseguito (in modo costante) in background. | CPU, memoria, disco e utilizzo della rete. Ad esempio, iostat / vmstat / perfmon. | I dati registrati vengono visualizzati e possono essere utilizzati per tenere traccia dei problemi di prestazioni. Anche i dati non elaborati sono accessibili. |
-| [Le prestazioni di AEM vengono monitorate](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Inclusi i contatori delle [richieste](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) per monitorare i livelli di traffico. | Se si riscontra una perdita significativa, o a lungo termine, dei risultati ottenuti, occorre effettuare un&#39;indagine approfondita. |
+| [AEM prestazioni sono sotto controllo](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Inclusi i contatori delle [richieste](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) per monitorare i livelli di traffico. | Se si riscontra una perdita significativa, o a lungo termine, dei risultati ottenuti, occorre effettuare un&#39;indagine approfondita. |
 | Stai monitorando i tuoi agenti [di](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)replica. &quot; |  |  |
 | Elimina regolarmente le istanze del flusso di lavoro. | Dimensioni dell&#39;archivio e prestazioni del flusso di lavoro. | Consultate Sgancio [regolare delle istanze](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)del flusso di lavoro. |
 
@@ -70,12 +70,12 @@ Dopo l&#39;installazione, o modifiche significative nella configurazione, esegui
 
 A questo scopo, è necessario [eseguire il backup dell&#39;intero repository](#backing-up-your-repository) , quindi:
 
-1. Arrestate AEM.
+1. AEM.
 1. Eseguire il backup dell&#39;intero `<cq-installation-dir>` file system.
 
 >[!CAUTION]
 >
->Se si utilizza un server applicazioni di terze parti, è possibile che altre cartelle si trovino in un percorso diverso e che sia necessario eseguire il backup. Consultate [Come installare AEM con un server](/help/sites-deploying/application-server-install.md) applicazioni per informazioni sull&#39;installazione dei server applicazioni.
+>Se si utilizza un server applicazioni di terze parti, è possibile che altre cartelle si trovino in un percorso diverso e che sia necessario eseguire il backup. Per [informazioni sull&#39;installazione dei server delle applicazioni, vedere Installazione di AEM con un server](/help/sites-deploying/application-server-install.md) applicazioni.
 
 >[!CAUTION]
 >
@@ -162,7 +162,7 @@ Nell&#39;esempio seguente:
 
 ## Utilizzo dei record di controllo e dei file di registro {#working-with-audit-records-and-log-files}
 
-I record di controllo e i file di registro relativi  Adobe Experience Manager (AEM) possono essere trovati in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
+I record di controllo e i file di registro relativi a Adobe Experience Manager (AEM) possono essere trovati in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
 
 ### Utilizzo dei registri {#working-with-logs}
 
@@ -173,24 +173,24 @@ AEM WCM registra i registri dettagliati. Dopo aver decompresso e avviato Quickst
 
 #### Rotazione del file di registro {#log-file-rotation}
 
-La rotazione del file di registro si riferisce al processo che limita la crescita del file creando periodicamente un nuovo file. In AEM, un file di registro denominato `error.log` viene ruotato una volta al giorno in base alle regole specificate:
+La rotazione del file di registro si riferisce al processo che limita la crescita del file creando periodicamente un nuovo file. In AEM, un file di registro chiamato `error.log` verrà ruotato una volta al giorno in base alle regole specificate:
 
 * Il `error.log` file viene rinominato in base al pattern {Original_filename} `.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010, il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi `error.og` viene creato un nuovo file.
 * I file di registro precedenti non vengono eliminati, quindi è responsabilità dell&#39;utente pulire i vecchi file di registro periodicamente per limitare l&#39;utilizzo del disco.
 
 >[!NOTE]
 >
->Se aggiorni l’installazione di AEM, qualsiasi file di registro esistente non più utilizzato da AEM rimarrà sul disco. Potete rimuoverli senza rischi. Tutte le nuove voci di registro verranno scritte nei nuovi file di registro.
+>Se si aggiorna l&#39;installazione di AEM, si noti che eventuali file di registro esistenti non più utilizzati da AEM rimarranno sul disco. Potete rimuoverli senza rischi. Tutte le nuove voci di registro verranno scritte nei nuovi file di registro.
 
 ### Ricerca dei file di registro {#finding-the-log-files}
 
-Vari file di registro sono memorizzati nel file server in cui è stato installato AEM:
+Diversi file di registro si trovano sul file server in cui avete installato AEM:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
    * `access.log`
 
-      Tutte le richieste di accesso ad AEM WCM e all&#39;archivio sono registrate qui.
+      Tutte le richieste di accesso a AEM WCM e al repository sono registrate qui.
 
    * `audit.log`
 
@@ -210,7 +210,7 @@ Vari file di registro sono memorizzati nel file server in cui è stato installat
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Questo registro viene utilizzato solo se è abilitato il supporto dinamico. Il registro di accesso s7access registra ogni richiesta inoltrata ad Dynamic Media attraverso `/is/image` e `/is/content`.
+      Questo registro viene utilizzato solo se è abilitato il supporto dinamico. Il registro s7access registra ogni richiesta effettuata a Dynamic Media tramite `/is/image` e `/is/content`.
 
    * `stderr.log`
 
@@ -232,7 +232,7 @@ Vari file di registro sono memorizzati nel file server in cui è stato installat
 
 >[!NOTE]
 >
->I registri ImageServer e s7access non sono inclusi nel pacchetto **Download Full** generato dalla pagina di elenco dei **sistemi/console/status-Bundlelist** . Per assistenza, in caso di problemi con Dynamic Media, aggiungete i registri ImageServer e s7access quando contattate l&#39;Assistenza clienti.
+>I registri ImageServer e s7access non sono inclusi nel pacchetto **Download Full** generato dalla pagina di elenco dei **sistemi/console/status-Bundlelist** . Per motivi di supporto, in caso di problemi relativi ai file multimediali dinamici aggiungi i registri ImageServer e s7access quando contatta l’Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 
@@ -436,9 +436,9 @@ La console Felix fornisce inoltre informazioni sul supporto dei log Sling in `..
 
 ### Ricerca dei record di controllo {#finding-the-audit-records}
 
-I record di audit sono tenuti per fornire un record di chi ha fatto cosa e quando. Vengono generati record di controllo diversi per gli eventi AEM WCM e OSGi.
+I record di audit sono tenuti per fornire un record di chi ha fatto cosa e quando. Vengono generati record di controllo diversi per gli eventi WCM AEM e OSGi.
 
-#### Record di controllo AEM WCM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM record di controllo WCM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Aprite una pagina.
 1. Dalla barra laterale è possibile selezionare la scheda con l&#39;icona a forma di lucchetto, quindi fare doppio clic su **Audit Log...**
@@ -448,7 +448,7 @@ I record di audit sono tenuti per fornire un record di chi ha fatto cosa e quand
 
 1. Fare clic su **OK** per chiudere la finestra.
 
-#### Record di AEM WCM Auditing nella directory archivio {#aem-wcm-auditing-records-within-the-repository}
+#### AEM dei record di controllo WCM nell&#39;archivio {#aem-wcm-auditing-records-within-the-repository}
 
 All&#39;interno della `/var/audit` cartella, i record di controllo vengono conservati in base alla risorsa. È possibile eseguire il drill-down fino a visualizzare i singoli record e le informazioni che contengono.
 
@@ -456,7 +456,7 @@ Queste voci contengono le stesse informazioni visualizzate durante la modifica d
 
 #### Record di audit OSGi dalla console Web {#osgi-audit-records-from-the-web-console}
 
-Gli eventi OSGi generano inoltre record di controllo che possono essere visualizzati dalla scheda Stato **** configurazione -> **File di registro **nella console Web di AEM:
+Gli eventi OSGi generano inoltre record di controllo che possono essere visualizzati dalla scheda Stato **** configurazione -> **File di registro **scheda nella console Web AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -472,7 +472,7 @@ Gli eventi OSGi generano inoltre record di controllo che possono essere visualiz
 
 Per monitorare un agente di replica:
 
-1. Accedete alla scheda **Strumenti** in AEM.
+1. Accedere alla scheda **Strumenti** in AEM.
 1. Fate clic su **Replica**.
 1. Fare doppio clic sul collegamento agli agenti per l&#39;ambiente appropriato (il riquadro a sinistra o a destra); ad esempio **Agenti sull’autore**.
 
@@ -586,7 +586,7 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
   <tr> 
    <td>Cassetti heap</td> 
    <td>Problemi di memoria esauriti che provocano prestazioni lente.</td> 
-   <td><p>Aggiungi:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> nella chiamata Java ad AEM.</p> <p>Consulta la Guida alla <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">risoluzione dei problemi per Java SE 6 con HotSpot VM</a>.</p> </td> 
+   <td><p>Aggiungi:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> nella chiamata Java a AEM.</p> <p>Consulta la Guida alla <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">risoluzione dei problemi per Java SE 6 con HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Chiamate di sistema</td> 
@@ -648,7 +648,7 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
 
 ### Interpretazione di request.log {#interpreting-the-request-log}
 
-Questo file registra le informazioni di base su ogni richiesta effettuata ad AEM. Da queste preziose conclusioni si possono trarre.
+Questo file registra le informazioni di base su ogni richiesta effettuata per AEM. Da queste preziose conclusioni si possono trarre.
 
 L&#39; `request.log` offerta offre un modo integrato per vedere quanto tempo le richieste richiedono. A scopo di sviluppo è utile per `tail -f` il `request.log` e guardare per tempi di risposta lenti. Per analizzare un numero maggiore `request.log` consigliamo l&#39; [utilizzo di `rlog.jar` cui è possibile ordinare e filtrare i tempi](#using-rlog-jar-to-find-requests-with-long-duration-times)di risposta.
 
@@ -663,7 +663,7 @@ Il registro delle richieste registra ogni richiesta effettuata, insieme alla ris
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Compilando tutte le voci GET entro un periodo specifico (ad esempio per diversi periodi di 24 ore), è possibile fare delle dichiarazioni sul traffico medio sul sito Web.
+Se si sommano tutte le voci di GET entro un periodo specifico (ad esempio per diversi periodi di 24 ore), è possibile inserire nel sito Web delle istruzioni relative al traffico medio.
 
 #### Monitoraggio dei tempi di risposta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -736,7 +736,7 @@ Devono essere eseguiti test per determinare quanti utenti simultanei il sistema 
 
 ### Utilizzo di rlog.jar per trovare le richieste con tempi di durata prolungati {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM include vari strumenti di supporto disponibili in:\
+AEM include vari strumenti di supporto in:\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Una di queste `rlog.jar`funzioni può essere utilizzata per ordinare rapidamente `request.log` in modo che le richieste vengano visualizzate per durata, dal più lungo al più breve tempo possibile.
@@ -927,7 +927,7 @@ Le seguenti informazioni possono essere utili:
 * [Quante pagine si trovano attualmente nel sistema?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Se utilizzate MSM, qual è il numero medio di rollout al mese?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [Qual è il numero medio di Live Copy al mese?](#what-is-the-average-number-of-live-copies-per-month)
-* [Se utilizzate AEM Assets, quante risorse mantenete attualmente in Risorse?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [Se utilizzate  AEM Assets, quante risorse mantenete attualmente in Risorse?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
 * [Qual è la dimensione media delle risorse?](#what-is-the-average-size-of-the-assets)
 * [Quanti modelli sono attualmente utilizzati?](#how-many-templates-are-currently-used)
 * [Quanti componenti sono attualmente utilizzati?](#how-many-components-are-currently-used)
@@ -995,7 +995,7 @@ Per determinare il numero totale di Live Copy effettuate dall&#39;installazione 
 
 Utilizzate di nuovo il numero di mesi trascorsi dall&#39;installazione per calcolare la media.
 
-#### Se utilizzate AEM Assets, quante risorse mantenete attualmente in Risorse? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Se utilizzate  AEM Assets, quante risorse mantenete attualmente in Risorse? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Per verificare il numero di risorse DAM attualmente gestite, utilizzate una query sull&#39;archivio; tramite CRXDE - Strumenti - Query:
 
