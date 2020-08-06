@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
@@ -48,11 +51,11 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts
+      **Percorso:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
@@ -101,8 +104,8 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
    <td>Aggiornare le proprietà di un carattere speciale esistente</td> 
    <td> 
     <ol> 
-     <li>Sovrapporre il nodo da aggiornare come descritto in precedenza e verificare tag e classi.</li> 
-     <li>Modificate eventuali valori, quali didascalia, valore, endValue e multipleCaption. </li> 
+     <li>Sovrapporre il nodo da aggiornare come descritto sopra e verificare tag e classi.</li> 
+     <li>Modificate eventuali valori, ad esempio didascalia, valore, endValue e multipleCaption. </li> 
      <li>Fate clic su Salva tutto. </li> 
      <li>Aggiornate l'Editor di testo\Create l'interfaccia utente di corrispondenza per visualizzare le modifiche.</li> 
     </ol> </td> 
@@ -133,7 +136,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
     <ol> 
      <li>Aggiungete un nodo figlio in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts" con proprietà obbligatorie. </li> 
      <li>Aggiungete la proprietà "sling:orderBefore (String)" al nodo figlio appena creato. </li> 
-     <li>Aggiungete il nome del nodo come valore prima del quale verrà visualizzato il nuovo carattere speciale aggiunto. </li> 
+     <li>Aggiungete il nome del nodo come valore prima del quale deve essere visualizzato il nuovo carattere speciale aggiunto. </li> 
      <li>Fate clic su Salva tutto. </li> 
      <li>Aggiornate l'Editor di testo\Create l'interfaccia utente di corrispondenza per visualizzare le modifiche.<br /> </li> 
     </ol> </td> 
