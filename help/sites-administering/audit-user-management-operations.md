@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
@@ -37,10 +40,11 @@ Per reindirizzare l’output di registrazione a un file di registro separato, è
 1. Cercate la configurazione **del logger di registrazione** Apache Sling. Quindi, premere il segno &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
 1. Create la configurazione seguente:
 
-   * **** Livello registro:Informazioni
-   * **** File di registro: logs/useraudit.log
-   * **** Pattern messaggio: level default
-   * **** Logger: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **Livello registro:** Informazioni
+   * **File di registro:** logs/useraudit.log
+   * **Pattern messaggio:** level default
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Per inserire entrambi i login nel campo **Logger** , è necessario immettere il nome del primo campo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
 ## Esempio di output {#example-output}
