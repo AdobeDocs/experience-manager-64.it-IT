@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '3163'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +62,7 @@ Fornisce metodi per ascoltare l&#39;attivazione e la registrazione dell&#39;arch
 
 Registra una funzione di callback che viene chiamata quando viene inizializzato uno store di sessioni. Per gli store che sono inizializzati più volte, specificate un ritardo di callback in modo che la funzione di callback venga chiamata una sola volta:
 
-* Quando lo store viene inizializzato durante il periodo di ritardo di un&#39;inizializzazione precedente, la chiamata della funzione precedente viene annullata e la funzione viene richiamata per l&#39;inizializzazione corrente.
+* Quando lo store viene inizializzato durante il periodo di ritardo di un&#39;inizializzazione precedente, la chiamata della funzione precedente viene annullata e la funzione viene richiamata di nuovo per l&#39;inizializzazione corrente.
 * Se il periodo di ritardo scade prima di una successiva inizializzazione, la funzione di callback viene eseguita due volte.
 
 Ad esempio, uno store di sessione si basa su un oggetto JSON e viene recuperato tramite una richiesta JSON. Sono possibili i seguenti scenari di inizializzazione:
@@ -69,11 +72,11 @@ Ad esempio, uno store di sessione si basa su un oggetto JSON e viene recuperato 
 * Lo store è precompilato con valori predefiniti (proprietà init), ma la richiesta non riesce (timeout). Esiste una sola inizializzazione con valori predefiniti.
 * Il negozio è precompilato.
 
-Quando il ritardo è impostato su `true` o su un numero di millisecondi, il metodo attende prima di richiamare il metodo di callback. Se viene attivato un altro evento di inizializzazione prima del superamento del ritardo, quest&#39;ultimo aspetterà che venga superato il tempo di ritardo, senza alcun evento di inizializzazione. Questo consente di attivare un secondo evento di inizializzazione e richiama la funzione di callback nel caso più ottimale.
+Quando il ritardo è impostato su `true` o su un numero di millisecondi, il metodo attende prima di richiamare il metodo di callback. Se viene attivato un altro evento di inizializzazione prima del superamento del ritardo, quest&#39;ultimo aspetterà che venga superato il tempo di ritardo senza che si verifichi alcun evento di inizializzazione. Questo consente di attivare un secondo evento di inizializzazione e richiama la funzione di callback nel caso più ottimale.
 
 **Parametri**
 
-* storeName: Stringa. Il nome dell&#39;archivio delle sessioni per aggiungere il listener.
+* storeName: Stringa. Il nome dell&#39;archivio delle sessioni da cui aggiungere il listener.
 * callback: Funzione. La funzione da invocare all&#39;inizializzazione dello store.
 * ritardo: Booleano o Numero. Tempo in millisecondi per il ritardo della chiamata alla funzione di callback. Un valore booleano di `true` utilizza il ritardo predefinito di `200 ms`. Un valore booleano `false` o un numero negativo non causa alcun ritardo.
 
@@ -87,7 +90,7 @@ Registra una funzione di callback che viene chiamata quando viene registrato uno
 
 **Parametri**
 
-* storeName: Stringa. Il nome dell&#39;archivio delle sessioni per aggiungere il listener.
+* storeName: Stringa. Il nome dell&#39;archivio delle sessioni da cui aggiungere il listener.
 * callback: Funzione. La funzione da invocare all&#39;inizializzazione dello store.
 
 **Valore restituito**
@@ -195,7 +198,7 @@ Chiave che identifica lo store. Utilizzare il `getInstance` metodo per recuperar
 
 #### STORENAME {#storename}
 
-Nome dello store. Utilizzare il `getInstance` metodo per recuperare questo valore.
+Il nome dello store. Utilizzare il `getInstance` metodo per recuperare questo valore.
 
 ### Metodi {#methods-3}
 
@@ -236,7 +239,7 @@ Nessuno.
 
 **Valore restituito**
 
-Un oggetto che rappresenta i dati dello store in formato JSON.
+Un oggetto che rappresenta i dati dell&#39;archivio in formato JSON.
 
 #### init() {#init}
 
@@ -306,7 +309,7 @@ Registra un listener per un evento. Consultate anche [Creazione di un listener p
 
 **Parametri**
 
-* event: Stringa. Nome dell’evento da ascoltare.
+* event: Stringa. Il nome dell’evento da ascoltare.
 * fct: Funzione. La funzione che viene chiamata quando si verifica l&#39;evento.
 * ambito: (Facoltativo) Object. Ambito in cui eseguire la funzione del gestore. Contesto &quot;this&quot; della funzione gestore.
 
@@ -420,7 +423,7 @@ Chiave che identifica lo store. Utilizzare il `getInstance` metodo per recuperar
 
 #### STORENAME {#storename-1}
 
-Nome dello store. Utilizzare il `getInstance` metodo per recuperare questo valore.
+Il nome dello store. Utilizzare il `getInstance` metodo per recuperare questo valore.
 
 ### Metodi {#methods-6}
 
@@ -449,7 +452,7 @@ Nessuno.
 
 **Valore restituito**
 
-Un oggetto che rappresenta i dati dello store in formato JSON.
+Un oggetto che rappresenta i dati dell&#39;archivio in formato JSON.
 
 #### initJSON(jsonData, doNotClear) {#initjson-jsondata-donotclear-1}
 
@@ -557,7 +560,7 @@ Nessun valore restituito.
 
 #### reset(deferEvent) {#reset-deferevent}
 
-Rimuove tutte le proprietà dei dati dall&#39;archivio e persiste nello store. Se necessario, l’ `udpate` evento non viene attivato al termine.
+Rimuove tutte le proprietà dei dati dall&#39;archivio e persiste nell&#39;archivio. Se necessario, l’ `udpate` evento non viene attivato al termine.
 
 **Parametri**
 
@@ -597,7 +600,7 @@ Nome dello store di sessioni. Utilizzare getName per recuperare il valore di que
 
 #### addInitProperty(name, value) {#addinitproperty-name-value}
 
-Aggiunge una proprietà e un valore ai dati di inizializzazione dell&#39;archivio sessioni.
+Aggiunge una proprietà e un valore ai dati di inizializzazione dell&#39;archivio di sessione.
 
 Utilizzare loadInitProperties per compilare i dati dell&#39;archivio di sessione con i valori di inizializzazione.
 
@@ -644,7 +647,7 @@ Recupera il valore di una proprietà data.
 
 **Valore restituito**
 
-Il valore della proprietà data. Restituisce `null` se l&#39;archivio sessioni non contiene alcuna proprietà del nome specificato.
+Il valore della proprietà data. Restituisce `null` se l&#39;archivio delle sessioni non contiene alcuna proprietà del nome specificato.
 
 #### getName() {#getname}
 
@@ -726,7 +729,7 @@ Aggiunge le proprietà di un dato oggetto ai dati di inizializzazione dell&#39;a
 **Parametri**
 
 * obj: Un oggetto che contiene proprietà enumerabili.
-* setValues: Se true, le proprietà obj vengono aggiunte ai dati dell&#39;archivio sessioni se i dati dell&#39;archivio non includono già una proprietà con lo stesso nome. Se false, non vengono aggiunti dati all&#39;archivio delle sessioni.
+* setValues: Se true, le proprietà obj vengono aggiunte ai dati dell&#39;archivio sessioni se i dati dell&#39;archivio non includono già una proprietà con lo stesso nome. Se è false, non vengono aggiunti dati all&#39;archivio delle sessioni.
 
 **Valore restituito**
 
