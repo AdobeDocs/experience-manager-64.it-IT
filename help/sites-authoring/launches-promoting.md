@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 92%
 
 ---
 
@@ -40,10 +43,11 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 
 >[!NOTE]
 >
->Riguarda l’azione manuale per promuovere le pagine di lancio quando esiste un solo livello di lancio. Vedi:
+>Riguarda l’azione manuale per promuovere le pagine di lancio quando esiste un solo livello di lancio. Consulta:
 >
 >* [Promozione di un lancio nidificato](#promoting-a-nested-launch) in caso di più lanci nella struttura.
 >* [Lanci: ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per ulteriori dettagli sulla promozione e la pubblicazione automatica.
+
 >
 
 
@@ -71,6 +75,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
    * **Promuovi pagine modificate**
    * **Promuovi la pagina corrente**
    * **Promuovi la pagina corrente e le sottopagine**
+
    Ad esempio, quando selezioni solo la promozione delle pagine modificate:
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi so
       * **Promuovi pagine modificate**
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. Seleziona **Avanti**.
