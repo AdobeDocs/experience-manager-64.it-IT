@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Nella pagina Tracciamento, potete cercare i processi attivi o completati avviati
 
 ## Ricerca di processi e attività {#search-for-processes-and-tasks}
 
-È possibile cercare le istanze dei processi e le attività associate in base ai nomi dei processi o utilizzando i modelli di ricerca impostati dall&#39;amministratore dell&#39;area di lavoro Moduli AEM.
+È possibile cercare le istanze di processo e le attività associate in base ai nomi dei processi o utilizzando i modelli di ricerca impostati dall&#39;amministratore dell&#39;area di lavoro di AEM Forms .
 
 È possibile impostare le colonne da visualizzare nei risultati della ricerca.
 
