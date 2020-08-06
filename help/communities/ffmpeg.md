@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ FFmpeg viene utilizzato nell’ambiente di authoring per ottenere i metadati per
 
 ## Installazione di FFmpeg {#installing-ffmpeg}
 
-FFmpeg deve essere installato sui server in cui sono ospitate le istanze di *creazione* di AEM.
+FFmpeg deve essere installato sui server in cui sono ospitate le istanze dell’ *autore* AEM.
 
 1. Vai a [https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. Scaricate la versione più recente di FFmpeg per il vostro ambiente specifico (Macintosh, Windows o Linux)
@@ -34,7 +37,7 @@ FFmpeg deve essere installato sui server in cui sono ospitate le istanze di *cre
 
 1. Installate FFmpeg seguendo le istruzioni per il sistema operativo.
 
-1. Accertatevi che l&#39;eseguibile FFmpeg sia impostato nel percorso di sistema.
+1. Accertatevi che l&#39;eseguibile di FFmpeg sia impostato nel percorso di sistema.
 
    Dovrebbe essere possibile eseguire FFmpeg da qualsiasi directory del sistema.
 
@@ -66,5 +69,5 @@ Per modificare il flusso di lavoro Aggiorna risorsa DAM e, in questo esempio, di
 
 * Selezionate **[!UICONTROL Salva]** per salvare il `DAM Update Asset` flusso di lavoro
 
-   (angolo superiore sinistro)
+   (angolo in alto a sinistra)
 
