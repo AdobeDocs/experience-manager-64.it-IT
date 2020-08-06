@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +34,7 @@ Per i componenti Community, anche se simili all’editor di testo [RTF nell’am
 
 Se non è abilitata, è sufficiente attivare la modalità [di modifica](sites-console.md#authoring-site-content)dell’autore, selezionare il componente per la modifica e selezionare la `Rich Text Editor` casella di controllo.
 
-RTE è disponibile per i seguenti componenti Community:
+L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
