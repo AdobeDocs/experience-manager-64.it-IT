@@ -10,17 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 2%
 
 ---
 
 
 # Ristrutturazione del repository di e-commerce in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione AEM E-Commerce. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 ## Con aggiornamento 6.4 {#with-upgrade}
 
-### Dati prodotti, ordini, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### Dati relativi a prodotti, ordine, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table> 
  <tbody>
@@ -46,7 +49,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.4](/
      <li>/etc/commerce/ordered<br /> </li> 
      <li>/etc/commerce/payment-methods<br /> </li> 
      <li>/etc/commerce/Shipping-methods<br /> </li> 
-    </ul> <p>Per i cataloghi più grandi, si consiglia di eseguire l’attività di migrazione e-commerce singolarmente trasferendo in AEM la seguente proprietà di sistema Java:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Dopo la migrazione, AEM deve essere riavviato.</p> </td> 
+    </ul> <p>Per i cataloghi più grandi, si consiglia di eseguire l'attività di migrazione commerciale singolarmente passando la seguente proprietà di sistema Java a AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Dopo la migrazione AEM necessario riavviare.</p> </td> 
   </tr>
   <tr>
    <td><strong>Note</strong></td> 
