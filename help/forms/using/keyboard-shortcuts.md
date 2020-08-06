@@ -1,6 +1,6 @@
 ---
-title: Scelte rapide da tastiera di AEM Forms
-seo-title: Scelte rapide da tastiera di AEM Forms
+title: ' Scelte rapide da tastiera AEM Forms'
+seo-title: ' Scelte rapide da tastiera AEM Forms'
 description: In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 seo-description: In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
@@ -17,7 +17,7 @@ ht-degree: 13%
 ---
 
 
-# Scelte rapide da tastiera di AEM Forms {#aem-forms-keyboard-shortcuts}
+#  Scelte rapide da tastiera AEM Forms {#aem-forms-keyboard-shortcuts}
 
 In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 
@@ -79,8 +79,8 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 | Comprimi tutte le finestre a soffietto nella struttura Oggetti modulo del browser Contenuto quando è attiva | Ctrl+A per selezionare tutti i fisarmonici seguiti da Freccia sinistra per comprimere | Comando+A per selezionare tutti i fisarmonici seguiti da Freccia sinistra per comprimere |
 | Espande la struttura di navigazione selezionata nella struttura Oggetti modulo | Freccia destra | Freccia destra |
 | Comprimi la struttura di navigazione selezionata nella struttura Oggetti modulo | Freccia sinistra | Freccia sinistra |
-| Selezionare l&#39;elemento successivo nella struttura Oggetti modulo |  Freccia giù |  Freccia giù |
-| Selezionare l&#39;elemento precedente nella struttura Oggetti modulo | Freccia su | Freccia su |
+| Selezionare l&#39;elemento successivo nella struttura degli oggetti di Forms |  Freccia giù |  Freccia giù |
+| Selezionare l&#39;elemento precedente nell&#39;albero Oggetti di Forms | Freccia su | Freccia su |
 
 [1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per Mac OS.\
 [2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per Mac OS.
