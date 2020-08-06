@@ -1,8 +1,8 @@
 ---
 title: Assegnazione tag alle risorse di abilitazione
 seo-title: Assegnazione tag alle risorse di abilitazione
-description: L’assegnazione di tag alle risorse di abilitazione consente di filtrare risorse e percorsi di apprendimento come membri di un catalogo di ricerca
-seo-description: L’assegnazione di tag alle risorse di abilitazione consente di filtrare risorse e percorsi di apprendimento come membri di un catalogo di ricerca
+description: L’assegnazione di tag alle risorse di abilitazione consente di filtrare le risorse e i percorsi di apprendimento come membri di un catalogo di ricerca
+seo-description: L’assegnazione di tag alle risorse di abilitazione consente di filtrare le risorse e i percorsi di apprendimento come membri di un catalogo di ricerca
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ Essenzialmente:
 
 Quando create o modificate un sito community, l&#39;impostazione [](sites-console.md#tagging) Tagging imposta l&#39;ambito dei tag disponibili per le funzioni del sito selezionando un sottoinsieme di spazi dei nomi dei tag esistenti.
 
-Anche se i tag possono essere creati e aggiunti al sito community in qualsiasi momento, si consiglia di progettare in anticipo una tassonomia, simile alla progettazione di un database. Consultate [Utilizzo dei tag](../../help/sites-authoring/tags.md).
+Anche se i tag possono essere creati e aggiunti al sito della community in qualsiasi momento, si consiglia di progettare in anticipo una tassonomia, simile alla progettazione di un database. Consultate [Utilizzo dei tag](../../help/sites-authoring/tags.md).
 
 Quando successivamente si aggiungono tag a un sito community esistente, è necessario salvare la modifica prima di poter aggiungere il nuovo tag a una funzione catalogo nella struttura del sito.
 
@@ -78,7 +81,7 @@ Limitando le risorse di abilitazione e i percorsi di apprendimento per cataloghi
 
 L’interfaccia utente del catalogo consente ai visitatori di applicare un filtro tag all’elenco delle risorse e dei percorsi di apprendimento visualizzati in tale catalogo.
 
-L’amministratore che applica i tag alle risorse di abilitazione deve essere a conoscenza degli spazi dei nomi dei tag associati ai cataloghi, nonché della tassonomia per selezionare un tag secondario per una classificazione più precisa.
+L’amministratore che applica i tag alle risorse di abilitazione deve essere a conoscenza degli spazi dei nomi dei tag associati ai cataloghi, nonché della tassonomia, al fine di selezionare un tag secondario per una classificazione più precisa.
 
 Ad esempio, se uno `ski-catalog` spazio nomi è stato creato e impostato su un catalogo denominato `Ski Catalog`, potrebbe avere due tag secondari: `lesson-1` e `lesson-2`.
 
