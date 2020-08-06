@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +24,7 @@ Per le campagne vengono spesso utilizzati i teaser per veicolare uno specifico s
 
 >[!NOTE]
 >
-> Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
+>Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
 
 * **Le pagine** dei marchi sono memorizzate nella sezione Campagne del sito Web. Un marchio contiene le singole campagne.
 
@@ -30,7 +33,7 @@ Per le campagne vengono spesso utilizzati i teaser per veicolare uno specifico s
 I teaser in AEM sono composti di diverse parti:
 
 * **Le pagine** teaser sono memorizzate nella pagina della campagna appropriata e contengono le definizioni dei paragrafi teaser disponibili per ogni campagna specifica. Tali definizioni sono usate per visualizzare i paragrafi teaser, comprese le varianti dei contenuti, il segmento che determina la selezione di una variante e il fattore di incremento.
-* Il **componente Teaser** è fornito con il prodotto e permette di creare un’istanza del paragrafo teaser in una pagina di contenuto. Per creare un paragrafo teaser, trascina il componente teaser dalla barra laterale, quindi specifica la definizione. **** Nota: Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
+* Il **componente Teaser** è fornito con il prodotto e permette di creare un’istanza del paragrafo teaser in una pagina di contenuto. Per creare un paragrafo teaser, trascina il componente teaser dalla barra laterale, quindi specifica la definizione. **Nota:** Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
 
 * I **paragrafi teaser** sono istanze effettive del teaser in una pagina di contenuto. Hanno il ruolo di invitare un segmento di utenti a visitare contenuti particolari, in base ai loro interessi.
 * Pagine con il contenuto della campagna per un particolare segmento di visitatori. I paragrafi teaser invitano gli utenti a visitare queste pagine.
@@ -236,7 +239,7 @@ Dopo aver creato un marchio e una campagna, puoi creare e impostare un’esperie
 
 >[!NOTE]
 >
-> Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
+>Il componente Teaser è stato dichiarato obsoleto in AEM 6.2.
 
 1. Passa alla pagina del contenuto in cui desideri inserire il paragrafo teaser che indirizzerà l’utente alla pagina della campagna.
 1. Aggiungi un componente **Teaser** (dalla sezione **Personalizzazione** della barra laterale) nella posizione desiderata. Inizialmente il percorso della campagna non sarà ancora configurato:
