@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ In questa sezione viene descritto come estendere [Query Builder](/help/sites-dev
 
 ## Panoramica {#overview}
 
-Query Builder [](/help/sites-developing/querybuilder-api.md) offre un modo semplice per eseguire query sull&#39;archivio dei contenuti. AEM viene fornito con una serie di valutatori di predicati che consentono di gestire i dati.
+Query Builder [](/help/sites-developing/querybuilder-api.md) offre un modo semplice per eseguire query sull&#39;archivio dei contenuti. AEM viene fornito con un insieme di valutatori di predicati che consentono di gestire i dati.
 
 Tuttavia, potrebbe essere utile semplificare le query implementando un valutatore di predicati personalizzato che nasconde una certa complessità e assicura una semantica migliore.
 
@@ -45,7 +48,7 @@ Puoi trovare il codice di questa pagina su GitHub
 * [Apri il progetto Aem-search-custom-predicate-evaluate su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
-## Predicate Valutazione in dettaglio {#predicate-evaluator-in-detail}
+## Predicate Valutazione in Dettaglio {#predicate-evaluator-in-detail}
 
 Un valutatore predicato gestisce la valutazione di determinati predicati, che sono i vincoli di definizione di una query.
 
@@ -55,7 +58,7 @@ Mappa un vincolo di ricerca di livello superiore (ad esempio &quot;larghezza > 2
 >
 >Per ulteriori informazioni sul `PredicateEvaluator` pacchetto e sul `com.day.cq.search` pacchetto, consulta la documentazione [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)Java.
 
-## Implementazione di un valutatore personalizzato per i metadati di replica {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
+## Implementazione di un valutatore predefinito personalizzato per i metadati di replica {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
 Ad esempio, in questa sezione viene illustrato come creare un valutatore di predicati personalizzato che supporti i dati in base ai metadati di replica:
 
@@ -67,7 +70,7 @@ Ad esempio, in questa sezione viene illustrato come creare un valutatore di pred
 
 ### Query dei metadati di replica con gli strumenti di valutazione predefiniti {#querying-replication-metadata-with-default-predicate-evaluators}
 
-La seguente query recupera l&#39;elenco dei nodi del `/content` ramo attivati dall&#39; `admin` inizio dell&#39;anno.
+La seguente query recupera l&#39;elenco di nodi nel `/content` ramo che sono stati attivati dall&#39; `admin` inizio dell&#39;anno.
 
 ```xml
 path=/content
@@ -103,7 +106,7 @@ Il raggruppamento dei predicati di metadati di replica con un valutatore predica
 
 >[!NOTE]
 >
->La configurazione di nuovi progetti AEM con il cielo è documentata da [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>La configurazione di nuovi progetti AEM con il cielo è documentata da [Come costruire AEM progetti con Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Prima devi aggiornare le dipendenze Paradiso del tuo progetto. Il `PredicateEvaluator` è parte del `cq-search` manufatto in modo che deve essere aggiunto al vostro file pom Maven.
 
@@ -113,7 +116,7 @@ Prima devi aggiornare le dipendenze Paradiso del tuo progetto. Il `PredicateEval
 
 pom.xml
 
-Lo snippet di codice seguente mostra le differenze nel formato diff [unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
+Lo snippet di codice seguente mostra le differenze, in formato diff [unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```
 @@ -120,6 +120,12 @@
@@ -145,7 +148,7 @@ Il `cq-search` progetto contiene la classe `AbstractPredicateEvaluator` astratta
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   Lo snippet di codice seguente mostra le differenze nel formato diff [unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
+   Lo snippet di codice seguente mostra le differenze, in formato diff [unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 
 ```
