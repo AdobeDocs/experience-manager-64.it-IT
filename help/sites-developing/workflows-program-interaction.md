@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: c0fbebb86385931315edd05aabe2b23fcc39c4f9
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +74,9 @@ Le azioni seguenti sono supportate con REST API:
 
 >[!NOTE]
 >
->Utilizzando Firebug, un&#39;estensione Firefox per lo sviluppo Web, è possibile seguire il traffico HTTP quando la console è attiva. Ad esempio, puoi controllare i parametri e i valori inviati al server AEM con una `POST` richiesta.
+>Utilizzando Firebug, un&#39;estensione Firefox per lo sviluppo Web, è possibile seguire il traffico HTTP quando la console è attiva. Ad esempio, potete controllare i parametri e i valori inviati al server AEM con una `POST` richiesta.
 
-In questa pagina si presume che AEM venga eseguito su localhost nella porta `4502` e che il contesto di installazione sia &quot; `/`&quot; (root). In caso contrario, gli URI ai quali si applicano le richieste HTTP devono essere adattati di conseguenza.
+In questa pagina si presume che AEM eseguito su localhost sulla porta `4502` e che il contesto di installazione sia &quot; `/`&quot; (root). In caso contrario, gli URI ai quali si applicano le richieste HTTP devono essere adattati di conseguenza.
 
 Il rendering supportato per `GET` le richieste è il rendering JSON. Gli URL per `GET` devono avere l’ `.json` estensione, ad esempio:
 
@@ -242,7 +245,7 @@ Dove `*{uri}*` è il percorso del nodo del modello nella directory archivio.
   </tr> 
   <tr> 
    <td><code>POST</code></td> 
-   <td>Stesso comportamento di PUT. Necessario perché i widget AEM non supportano <code>PUT</code> le operazioni.</td> 
+   <td>Stesso comportamento del PUT. Necessario perché AEM widget non supportano <code>PUT</code> le operazioni.</td> 
   </tr> 
   <tr> 
    <td><code>DELETE</code></td> 
@@ -376,7 +379,7 @@ Si applicano i seguenti metodi di richiesta HTTP:
 
 ### Come ottenere un elenco di tutti i flussi di lavoro in esecuzione con i relativi ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Per ottenere un elenco di tutti i flussi di lavoro in esecuzione, eseguite un&#39;operazione GET per:
+Per ottenere un elenco di tutti i flussi di lavoro in esecuzione, effettuate un GET per:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -424,7 +427,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### Come elencare tutti i modelli di flussi di lavoro {#how-to-list-all-workflow-models}
 
-Per ottenere un elenco di tutti i modelli di workflow disponibili, eseguite un&#39;operazione GET per:
+Per ottenere un elenco di tutti i modelli di workflow disponibili, effettuate un GET per:
 
 `http://localhost:4502/etc/workflow/models.json`
 
@@ -492,6 +495,7 @@ Durante la creazione di un nuovo modello:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
+
    Quando si crea un modello, è innanzitutto necessario creare questo `cq:Page` nodo e utilizzare il relativo `jcr:content` nodo come elemento padre del nodo del modello.
 
 * L&#39; `id` argomento richiesto da alcuni metodi per identificare il modello è il percorso assoluto del nodo del modello nell&#39;archivio:
@@ -564,7 +568,7 @@ I diversi metodi hanno il parametro:
 
 Questo parametro può essere impostato per `true` indicare che i flussi di lavoro del sistema devono essere esclusi dai risultati rilevanti.
 
-È [possibile aggiornare la configurazione](/help/sites-deploying/configuring-osgi.md) OSGi di **Adobe Granite Workflow PayloadMapCache** che specifica il flusso di lavoro `Models` da considerare come flussi di lavoro di sistema. I modelli di flusso di lavoro predefiniti (runtime) sono:
+È [possibile aggiornare la configurazione](/help/sites-deploying/configuring-osgi.md) OSGi **Adobe Granite Workflow PayloadMapCache** che specifica il flusso di lavoro `Models` da considerare come flussi di lavoro di sistema. I modelli di flusso di lavoro predefiniti (runtime) sono:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
