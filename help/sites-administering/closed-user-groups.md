@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 translation-type: tm+mt
 source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+workflow-type: tm+mt
+source-wordcount: '6889'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
 
 ## Introduzione {#introduction}
 
-A partire da AEM 6.3, è disponibile una nuova implementazione del gruppo utenti chiuso che affronta i problemi di prestazioni, scalabilità e sicurezza presenti con l’implementazione esistente.
+A partire dal AEM 6.3, è disponibile una nuova implementazione del Gruppo utenti chiuso per risolvere i problemi di prestazioni, scalabilità e sicurezza presenti con l&#39;implementazione esistente.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ A partire da AEM 6.3, è disponibile una nuova implementazione del gruppo utenti
 
 L&#39;obiettivo della nuova implementazione è quello di coprire le funzionalità esistenti laddove necessario, affrontando al tempo stesso i problemi e le limitazioni di progettazione delle versioni precedenti. Il risultato è un nuovo progetto CUG con le seguenti caratteristiche:
 
-* netta separazione degli elementi di autenticazione e di autorizzazione che possono essere utilizzati singolarmente o in combinazione;
+* netta separazione degli elementi di autenticazione e di autorizzazione, che possono essere utilizzati singolarmente o in combinazione;
 * modello di autorizzazione dedicato per riflettere l&#39;accesso in lettura limitata agli alberi CUG configurati senza interferire con altri requisiti di configurazione del controllo di accesso e di autorizzazione;
 * separazione tra l’impostazione del controllo di accesso per l’accesso in lettura limitato, generalmente necessaria per le istanze di creazione, e la valutazione delle autorizzazioni, in genere richiesta solo al momento della pubblicazione;
 * Modifica dell&#39;accesso in lettura limitato senza escalation di privilegi;
@@ -36,12 +39,12 @@ L&#39;obiettivo della nuova implementazione è quello di coprire le funzionalit�
 
 ### Nuova implementazione del gruppo utenti personalizzato {#the-new-custom-user-group-implementation}
 
-Un CUG noto nel contesto di AEM comprende i seguenti passaggi:
+Un CUG noto nel contesto di AEM è costituito dai seguenti passaggi:
 
 * Limita l’accesso in lettura alla struttura che deve essere protetta e consente la lettura solo delle entità elencate con una determinata istanza CUG o escluse dalla valutazione CUG. Questo è chiamato elemento **di autorizzazione** .
 * Applica l&#39;autenticazione su una struttura specifica e, facoltativamente, specifica una pagina di login dedicata per tale struttura ad albero che verrà successivamente esclusa. Questo è chiamato elemento di **autenticazione** .
 
-La nuova implementazione è stata progettata per tracciare una linea tra gli elementi di autenticazione e di autorizzazione. A partire da AEM 6.3, è possibile limitare l’accesso in lettura senza aggiungere esplicitamente un requisito di autenticazione. Ad esempio, se una determinata istanza richiede l&#39;autenticazione totale o se una determinata struttura ad albero risiede già in una sottostruttura che richiede l&#39;autenticazione già.
+La nuova implementazione è stata progettata per tracciare una linea tra gli elementi di autenticazione e di autorizzazione. A partire dal AEM 6.3, è possibile limitare l&#39;accesso in lettura senza aggiungere esplicitamente un requisito di autenticazione. Ad esempio, se una determinata istanza richiede l&#39;autenticazione totale o se una determinata struttura ad albero risiede già in una sottostruttura che richiede l&#39;autenticazione già.
 
 Allo stesso modo, un determinato albero può essere contrassegnato con un requisito di autenticazione senza modificare l&#39;impostazione effettiva delle autorizzazioni. Le combinazioni e i risultati sono elencati nella sezione Criteri CUG [combinati e nella sezione Autenticazione richiesta](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement) .
 
@@ -49,7 +52,7 @@ Allo stesso modo, un determinato albero può essere contrassegnato con un requis
 
 ### Autorizzazione: Limitazione dell&#39;accesso in lettura {#authorization-restricting-read-access}
 
-La funzione chiave di un gruppo di utenti chiuso limita l’accesso in lettura a un determinato albero nell’archivio dei contenuti per tutti gli utenti tranne le entità selezionate. Invece di manipolare al volo il contenuto predefinito del controllo di accesso, la nuova implementazione adotta un approccio diverso definendo un tipo dedicato di criteri di controllo di accesso che rappresenta un CUG.
+La funzione chiave di un gruppo di utenti chiuso limita l’accesso in lettura a un determinato albero nell’archivio dei contenuti per tutti gli utenti tranne le entità selezionate. Invece di manipolare al volo il contenuto predefinito per il controllo dell’accesso, la nuova implementazione adotta un approccio diverso definendo un tipo dedicato di criteri per il controllo dell’accesso che rappresenta un CUG.
 
 #### Criteri di controllo degli accessi per il CUG {#access-control-policy-for-cug}
 
@@ -66,9 +69,9 @@ L’implementazione di PrincipalSetPolicy utilizzata per rappresentare i CUG def
 * I criteri CUG possono essere nidificati, un CUG nidificato avvia un nuovo CUG senza ereditare il set di entità del CUG &#39;principale&#39;;
 * L&#39;effetto del criterio, se è abilitata la valutazione, viene ereditato dall&#39;intera sottostruttura fino al successivo CUG nidificato.
 
-Questi criteri CUG vengono distribuiti in un’istanza di AEM tramite un modulo di autorizzazione separato denominato oak-permissions-cug. Questo modulo è dotato di una propria gestione di controllo degli accessi e di una valutazione delle autorizzazioni. In altre parole, l’impostazione predefinita di AEM fornisce una configurazione dell’archivio di contenuti Oak che combina più meccanismi di autorizzazione. Per ulteriori informazioni, consultate [questa pagina nella Documentazione](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)Apache Oak.
+Questi criteri CUG vengono distribuiti in un&#39;istanza AEM tramite un modulo di autorizzazione separato denominato oak-permissions-cug. Questo modulo è dotato di una propria gestione di controllo degli accessi e di una valutazione delle autorizzazioni. In altre parole, l&#39;impostazione predefinita AEM fornisce una configurazione del repository di contenuti Oak che combina più meccanismi di autorizzazione. Per ulteriori informazioni, consultate [questa pagina nella Documentazione](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)Apache Oak.
 
-In questa configurazione composita, un nuovo CUG non sostituisce il contenuto del controllo di accesso esistente collegato al nodo di destinazione, ma è progettato per essere un complemento che può essere rimosso anche in un secondo momento senza influire sul controllo di accesso originale, che per impostazione predefinita in AEM sarebbe un elenco di controllo di accesso.
+In questa configurazione composita, un nuovo CUG non sostituisce il contenuto del controllo di accesso esistente collegato al nodo di destinazione, ma è progettato per essere un complemento che può essere rimosso anche in seguito senza influenzare il controllo di accesso originale, che per impostazione predefinita in AEM sarebbe un elenco di controllo di accesso.
 
 A differenza della precedente implementazione, le nuove regole CUG vengono sempre riconosciute e trattate come contenuto di controllo dell’accesso. Ciò implica che vengono creati e modificati utilizzando l&#39;API di gestione del controllo degli accessi JCR. Per ulteriori informazioni, consultate la sezione [Gestione dei criteri](#managing-cug-policies) CUG.
 
@@ -81,7 +84,7 @@ La valutazione delle autorizzazioni per le politiche CUG e l&#39;interazione con
 Le seguenti caratteristiche si applicano alla valutazione delle autorizzazioni associata al modello di autorizzazione progettato per gestire e valutare i criteri CUG:
 
 * Gestisce solo le autorizzazioni di lettura per nodi e proprietà regolari, ma non legge il contenuto del controllo di accesso
-* non gestisce le autorizzazioni di scrittura né alcun tipo di autorizzazioni necessarie per la modifica del contenuto JCR protetto (tra l&#39;altro, controllo di accesso, informazioni sul tipo di nodo, controllo delle versioni, blocco o gestione utente); Tali autorizzazioni non sono influenzate da un criterio CUG e non verranno valutate dal modello di autorizzazione associato. La concessione o meno di tali autorizzazioni dipende dagli altri modelli configurati nella configurazione della protezione.
+* non gestisce le autorizzazioni di scrittura né alcun tipo di autorizzazioni necessarie per la modifica del contenuto JCR protetto (tra l&#39;altro, il controllo dell&#39;accesso, le informazioni sul tipo di nodo, il controllo delle versioni, il blocco o la gestione degli utenti); Tali autorizzazioni non sono influenzate da un criterio CUG e non verranno valutate dal modello di autorizzazione associato. La concessione o meno di tali autorizzazioni dipende dagli altri modelli configurati nella configurazione della protezione.
 
 L’effetto di un’unica politica CUG sulla valutazione delle autorizzazioni può essere riassunto come segue:
 
@@ -91,7 +94,7 @@ L’effetto di un’unica politica CUG sulla valutazione delle autorizzazioni pu
 * Tuttavia, non incide né sui fratelli né sugli antenati del nodo controllato di accesso;
 * L’ereditarietà di un determinato CUG si arresta in corrispondenza di un CUG nidificato.
 
-#### Best practice {#best-practices}
+#### Best practice   {#best-practices}
 
 Per definire l’accesso in lettura limitato tramite i CUG è necessario tenere conto delle seguenti best practice:
 
@@ -104,7 +107,7 @@ Per definire l’accesso in lettura limitato tramite i CUG è necessario tenere 
    * L’eccessiva necessità di contenuti CUG nidificati potrebbe evidenziare problemi nella progettazione dei contenuti
    * L’eccessiva necessità di CUG (ad esempio, su ogni singola pagina) può indicare la necessità di un modello di autorizzazione personalizzato potenzialmente più adatto a soddisfare le specifiche esigenze di sicurezza dell’applicazione e del contenuto in questione.
 
-* Limitare i percorsi supportati per i criteri CUG ad alcuni alberi nell&#39;archivio per consentire prestazioni ottimizzate. Ad esempio, consentite solo i CUG sotto il nodo /content come valore predefinito a partire da AEM 6.3.
+* Limitare i percorsi supportati per i criteri CUG ad alcuni alberi nell&#39;archivio per consentire prestazioni ottimizzate. Ad esempio, consentono solo i CUG sotto il nodo /content come valore predefinito a partire da AEM 6.3.
 * I criteri CUG sono progettati per garantire l&#39;accesso in lettura a un piccolo gruppo di entità. La necessità di un gran numero di entità può evidenziare problemi nella progettazione del contenuto o dell&#39;applicazione e dovrebbe essere riconsiderata.
 
 ### Autenticazione: Definizione del requisito di autenticazione {#authentication-defining-the-auth-requirement}
@@ -127,7 +130,7 @@ Lo stesso vale per la `granite:loginPath` proprietà. Sarà rispettata solo se �
 
 Poiché questo tipo di requisito di autenticazione deve essere limitato a determinate modalità di esecuzione e a un piccolo sottoinsieme di strutture presenti nell&#39;archivio dei contenuti, il tracciamento del tipo di mixin dei requisiti e delle proprietà del percorso di login è condizionale e associato a una configurazione corrispondente che definisce i percorsi supportati (vedere Opzioni di configurazione di seguito). Di conseguenza, solo le modifiche all&#39;interno dell&#39;ambito di questi percorsi supportati attiveranno un aggiornamento della registrazione OSGi, mentre altrove sia il tipo di mixin che la proprietà verranno ignorati.
 
-L’impostazione predefinita di AEM ora utilizza questa configurazione consentendo di impostare il mixin in modalità di esecuzione dell’autore, ma solo a partire dalla replica nell’istanza di pubblicazione. Consultate [questa pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) per informazioni dettagliate su come Sling applica i requisiti di autenticazione.
+L&#39;impostazione AEM predefinita ora utilizza questa configurazione consentendo di impostare il mixin in modalità di esecuzione dell&#39;autore, ma solo a partire dalla replica nell&#39;istanza di pubblicazione. Consultate [questa pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) per informazioni dettagliate su come Sling applica i requisiti di autenticazione.
 
 Se si aggiunge il tipo di `granite:AuthenticationRequired` mixin all&#39;interno dei percorsi supportati configurati, la registrazione OSGi del gestore responsabile verrà aggiornata e conterrà una nuova voce aggiuntiva con la `sling.auth.requirements` proprietà. Se un determinato requisito di autenticazione specifica la `granite:loginPath` proprietà opzionale, il valore viene registrato con l&#39;Autenticatore con il prefisso &quot;-&quot; per essere escluso dal requisito di autenticazione.
 
@@ -137,7 +140,7 @@ I requisiti di autenticazione Apache Sling devono essere ereditati attraverso la
 
 #### Valutazione del percorso di login {#evaluation-of-login-path}
 
-La valutazione del percorso di accesso e il reindirizzamento alla risorsa corrispondente al momento dell&#39;autenticazione è attualmente un dettaglio di implementazione del gestore autenticazione selettore di accesso di Adobe Granite ( `com.day.cq.auth.impl.LoginSelectorHandler`), che è un gestore autenticazione Apache Sling configurato con AEM per impostazione predefinita.
+La valutazione del percorso di login e il reindirizzamento alla risorsa corrispondente al momento dell&#39;autenticazione è attualmente un dettaglio di implementazione del Adobe  Gestore autenticazione Granite Login Selector ( `com.day.cq.auth.impl.LoginSelectorHandler`), che è un gestore autenticazione Apache Sling AuthenticationHandler configurato con AEM per impostazione predefinita.
 
 Quando `AuthenticationHandler.requestCredentials` questo gestore esegue un tentativo di determinare la pagina di accesso alla mappatura a cui verrà reindirizzato l&#39;utente. Sono inclusi i seguenti passaggi:
 
@@ -151,7 +154,7 @@ Quando `AuthenticationHandler.requestCredentials` questo gestore esegue un tenta
 
 * Non appena un percorso di accesso valido è stato ottenuto tramite le chiamate elencate sopra, la richiesta dell&#39;utente verrà reindirizzata a tale pagina.
 
-L&#39;obiettivo di questa documentazione è la valutazione del percorso di login come esposto dall&#39; `LoginPathProvider` interfaccia interna. L’implementazione fornita a partire da AEM 6.3 si comporta come segue:
+L&#39;obiettivo di questa documentazione è la valutazione del percorso di login come esposto dall&#39; `LoginPathProvider` interfaccia interna. L&#39;implementazione spedita a partire da AEM 6.3 si comporta come segue:
 
 * La registrazione dei percorsi di login dipende dalla distinzione tra la password scaduta e la necessità di un login regolare come motivo del reindirizzamento
 * In caso di login regolare, verifica se è possibile ottenere un percorso di login nel seguente ordine:
@@ -163,13 +166,13 @@ L&#39;obiettivo di questa documentazione è la valutazione del percorso di login
 
 * Non appena un percorso di accesso valido è stato ottenuto tramite le chiamate elencate sopra, la richiesta dell&#39;utente verrà reindirizzata a tale pagina.
 
-Il `LoginPathProvider` nuovo supporto per i requisiti di autenticazione di Granite espone i percorsi di login come definiti dalle `granite:loginPath` proprietà, che a loro volta sono definiti dal tipo di mixin come descritto sopra. La mappatura del percorso della risorsa contenente il percorso di login e il valore della proprietà stesso viene mantenuta in memoria e viene valutata per trovare un percorso di accesso adatto per altri nodi della gerarchia.
+Il `LoginPathProvider` nuovo supporto per i requisiti di autenticazione di Granite espone i percorsi di login come definiti dalle `granite:loginPath` proprietà, che a loro volta sono definiti dal tipo di mixin come descritto in precedenza. La mappatura del percorso della risorsa contenente il percorso di login e il valore della proprietà stesso viene mantenuta in memoria e viene valutata per trovare un percorso di accesso adatto per altri nodi della gerarchia.
 
 >[!NOTE]
 >
 >La valutazione viene eseguita solo per le richieste associate alle risorse che si trovano nei percorsi supportati configurati. Per ogni altra richiesta verranno valutati i metodi alternativi per determinare il percorso di accesso.
 
-#### Best practice {#best-practices-1}
+#### Best practice   {#best-practices-1}
 
 Nella definizione dei requisiti di autenticazione è necessario tenere conto delle best practice seguenti:
 
@@ -191,7 +194,7 @@ La documentazione di Oak illustra il modo in cui i nuovi criteri CUG si rifletto
 
 La necessità di un requisito di autenticazione separato si riflette nel contenuto del repository con un tipo di nodo mixin dedicato posizionato sul nodo di destinazione. Il tipo di mixin definisce una proprietà opzionale per specificare una pagina di login dedicata per la struttura ad albero definita dal nodo di destinazione.
 
-La pagina associata al percorso di login può trovarsi all’interno o all’esterno di tale struttura. Sarà escluso dal requisito di autenticazione.
+La pagina associata al percorso di login può trovarsi all’interno o all’esterno della struttura ad albero. Sarà escluso dal requisito di autenticazione.
 
 ```java
 [granite:AuthenticationRequired]
@@ -304,7 +307,7 @@ for (AccessControlPolicy policy : acMgr.getEffectivePolicies(path) {
 
 #### Recupera criteri CUG ereditati {#retrieve-inherited-cug-policies}
 
-Ricerca di tutti i CUG nidificati definiti in un determinato percorso, indipendentemente dal fatto che abbiano o meno effetto. Per ulteriori informazioni, consultate la sezione Opzioni [di](/help/sites-administering/closed-user-groups.md#configuration-options) configurazione.
+Ricerca di tutti i CUG nidificati definiti in un determinato percorso, indipendentemente dal fatto che abbiano o meno effetto. Per ulteriori informazioni, consulta la sezione Opzioni [di](/help/sites-administering/closed-user-groups.md#configuration-options) configurazione.
 
 ```java
 String path = [...]
@@ -409,7 +412,7 @@ if (session.propertyExists(propertyPath)) {
 
 #### Rimozione di un requisito di autenticazione {#remove-an-auth-requirement}
 
-Procedura per rimuovere un requisito di autenticazione esistente. Il requisito sarà deregistrato dall&#39;Autenticatore Apache Sling solo se `RequirementHandler` è stato configurato per la struttura ad albero contenente il nodo di destinazione.
+Procedura per rimuovere un requisito di autenticazione esistente. Il requisito verrà rimosso dalla registrazione dall&#39;Autenticatore Apache Sling solo se `RequirementHandler` è stato configurato per la struttura ad albero contenente il nodo di destinazione.
 
 ```java
 Node targetNode = [...]
@@ -434,7 +437,7 @@ L&#39;immagine seguente mostra i requisiti di autenticazione di un&#39;istanza d
 
 Al momento non è disponibile alcuna API pubblica per recuperare il percorso di accesso che verrà attivato dopo l&#39;accesso anonimo a una risorsa che richiede l&#39;autenticazione. Consultate la sezione Valutazione del percorso di login per informazioni dettagliate sull’implementazione del metodo di recupero del percorso di login.
 
-Tuttavia, oltre ai percorsi di accesso definiti con questa funzione, esistono metodi alternativi per specificare il reindirizzamento all&#39;accesso, che devono essere presi in considerazione quando si progetta il modello di contenuto e i requisiti di autenticazione di una determinata installazione AEM.
+Tuttavia, a parte i percorsi di login definiti con questa funzione, esistono metodi alternativi per specificare il reindirizzamento al login, che devono essere presi in considerazione quando si progetta il modello di contenuto e i requisiti di autenticazione di una determinata installazione AEM.
 
 #### Recupera il requisito di autenticazione ereditato {#retrieve-the-inherited-auth-requirement}
 
@@ -464,19 +467,19 @@ while (isSupported(node)) {
 
 ### Combinazione di criteri CUG e requisito di autenticazione {#combining-cug-policies-and-the-authentication-requirement}
 
-Nella tabella seguente sono elencate le combinazioni valide di criteri CUG e i requisiti di autenticazione in un’istanza AEM in cui entrambi i moduli sono abilitati tramite la configurazione.
+Nella tabella seguente sono elencate le combinazioni valide di criteri CUG e i requisiti di autenticazione in un&#39;istanza AEM con entrambi i moduli abilitati tramite la configurazione.
 
 | **Autenticazione richiesta** | **Percorso di login** | **Accesso in lettura limitato** | **Effetto previsto** |
 |---|---|---|---|
-| Sì | Sì | Sì | Un determinato utente potrà visualizzare la struttura ad albero secondaria contrassegnata con il criterio CUG solo se la valutazione effettiva delle autorizzazioni consente l&#39;accesso. Un utente non autenticato verrà reindirizzato alla pagina di accesso specificata. |
-| Sì | No | Sì | Un determinato utente potrà visualizzare la struttura ad albero secondaria contrassegnata con il criterio CUG solo se la valutazione effettiva delle autorizzazioni consente l&#39;accesso. Un utente non autenticato verrà reindirizzato a una pagina di login predefinita ereditata. |
+| Sì | Sì | Sì | Un determinato utente potrà visualizzare la struttura secondaria contrassegnata con il criterio CUG solo se la valutazione effettiva delle autorizzazioni consente l&#39;accesso. Un utente non autenticato verrà reindirizzato alla pagina di accesso specificata. |
+| Sì | No | Sì | Un determinato utente potrà visualizzare la struttura secondaria contrassegnata con il criterio CUG solo se la valutazione effettiva delle autorizzazioni consente l&#39;accesso. Un utente non autenticato verrà reindirizzato a una pagina di login predefinita ereditata. |
 | Sì | Sì | No | Un utente non autenticato verrà reindirizzato alla pagina di accesso specificata. Il fatto che sia consentito o meno visualizzare la struttura ad albero contrassegnata con i requisiti di autorizzazione dipende dalle autorizzazioni effettive dei singoli elementi contenuti nella sottostruttura. Nessun CUG dedicato che limita l&#39;accesso in lettura. |
 | Sì | No | No | Un utente non autenticato verrà reindirizzato a una pagina di login predefinita ereditata. Il fatto che sia consentito o meno visualizzare la struttura ad albero contrassegnata con il requisito di autorizzazione dipende dalle autorizzazioni effettive dei singoli elementi contenuti nella sottostruttura. Nessun CUG dedicato che limita l&#39;accesso in lettura. |
 | No | No | Sì | Un dato utente autenticato o non autenticato sarà in grado di visualizzare la struttura secondaria contrassegnata con i criteri CUG solo se la valutazione effettiva delle autorizzazioni consente l&#39;accesso. Un utente non autenticato verrà trattato allo stesso modo e non verrà reindirizzato all&#39;accesso. |
 
 >[!NOTE]
 >
->La combinazione di &#39;Autenticazione richiesta&#39; = No e &#39;Percorso di accesso&#39; = Sì non è elencata sopra, perché &#39;Percorso di accesso&#39; è un attributo facoltativo associato a un&#39;Autenticazione-Requisito. La specifica di una proprietà JCR con quel nome senza aggiungere il tipo di mixin di definizione non avrà alcun effetto e verrà ignorata dal gestore corrispondente.
+>La combinazione di &#39;Autenticazione richiesta&#39; = No e &#39;Percorso di accesso&#39; = Sì non è elencata sopra, in quanto &#39;Percorso di accesso&#39; è un attributo facoltativo associato a un&#39;Autenticazione-Requisito. La specifica di una proprietà JCR con quel nome senza aggiungere il tipo di mixin di definizione non avrà alcun effetto e verrà ignorata dal gestore corrispondente.
 
 ## Componenti e configurazione OSGi {#osgi-components-and-configuration}
 
@@ -486,17 +489,17 @@ Consulta anche la documentazione sulla mappatura CUG per una mappatura completa 
 
 ### Autorizzazione: Configurazione e configurazione {#authorization-setup-and-configuration}
 
-Le nuove parti relative all’autorizzazione sono contenute nel pacchetto **Oak CUG Authorization** ( `org.apache.jackrabbit.oak-authorization-cug`), che fa parte dell’installazione predefinita di AEM. Il bundle definisce un modello di autorizzazione separato che deve essere distribuito come ulteriore modo per gestire l&#39;accesso in lettura.
+Le nuove parti relative all’autorizzazione sono contenute nel pacchetto **Oak CUG Authorization** ( `org.apache.jackrabbit.oak-authorization-cug`), che fa parte dell’installazione predefinita AEM. Il bundle definisce un modello di autorizzazione separato che deve essere distribuito come ulteriore modo per gestire l&#39;accesso in lettura.
 
 #### Impostazione dell’autorizzazione CUG {#setting-up-cug-authorization}
 
-La configurazione dell’autorizzazione CUG è descritta in dettaglio nella documentazione [Apache](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)pertinente. Per impostazione predefinita, AEM dispone di autorizzazione CUG distribuita in tutte le modalità di esecuzione. Le istruzioni dettagliate possono essere utilizzate anche per disabilitare l’autorizzazione CUG nelle installazioni che richiedono un’autorizzazione diversa.
+La configurazione dell’autorizzazione CUG è descritta in dettaglio nella documentazione [Apache](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)pertinente. Per impostazione predefinita, AEM dispone dell&#39;autorizzazione CUG distribuita in tutte le modalità di esecuzione. Le istruzioni dettagliate possono essere utilizzate anche per disabilitare l’autorizzazione CUG nelle installazioni che richiedono un’autorizzazione diversa.
 
 #### Configurazione del filtro referente {#configuring-the-referrer-filter}
 
-Dovete inoltre configurare il filtro [](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) Sling Referrer con tutti i nomi host che possono essere utilizzati per accedere ad AEM; ad esempio tramite CDN, Load Balancer ed altri.
+È inoltre necessario configurare il filtro [](/help/sites-administering/security-checklist.md#the-sling-referrer-filter) Sling Referrer con tutti i nomi host che possono essere utilizzati per accedere ai AEM; ad esempio tramite CDN, Load Balancer ed altri.
 
-Se il filtro di riferimento non è configurato, quando un utente tenta di accedere a un sito CUG vengono visualizzati errori simili a quelli riportati di seguito:
+Se il filtro di riferimento non è configurato, quando un utente tenta di accedere a un sito CUG vengono visualizzati degli errori simili a quelli riportati di seguito:
 
 ```shell
 31.01.2017 13:49:42.321 *INFO* [qtp1263731568-346] org.apache.sling.security.impl.ReferrerFilter Rejected referrer header for POST request to /libs/granite/core/content/login.html/j_security_check : https://hostname/libs/granite/core/content/login.html?resource=%2Fcontent%2Fgeometrixx%2Fen%2Ftest-site%2Ftest-page.html&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown
@@ -515,7 +518,7 @@ Sono stati introdotti due componenti OSGi per definire i requisiti di autenticaz
  <tbody> 
   <tr> 
    <td>Etichetta</td> 
-   <td> Configurazione CUG Apache Jackrabbit Oak</td> 
+   <td>Configurazione CUG Apache Jackrabbit Oak</td> 
   </tr> 
   <tr> 
    <td>Descrizione</td> 
@@ -547,7 +550,7 @@ Sono stati introdotti due componenti OSGi per definire i requisiti di autenticaz
  <tbody> 
   <tr> 
    <td>Etichetta</td> 
-   <td> Apache Jackrabbit Oak CUG Escludi elenco</td> 
+   <td>Apache Jackrabbit Oak CUG Escludi elenco</td> 
   </tr> 
   <tr> 
    <td>Descrizione</td> 
@@ -582,15 +585,15 @@ Le opzioni di configurazione disponibili associate al modulo di autorizzazione C
 
 #### Esclusione di entità dalla valutazione CUG {#excluding-principals-from-cug-evaluation}
 
-L&#39;esenzione dei singoli principi dalla valutazione CUG è stata adottata dalla precedente attuazione. La nuova autorizzazione CUG copre questo problema con un&#39;interfaccia dedicata denominata CugExclude. Apache Jackrabbit Oak 1.4 è dotato di un&#39;implementazione predefinita che esclude un insieme fisso di entità e un&#39;implementazione estesa che consente di configurare i singoli nomi principali. Quest’ultimo è configurato nelle istanze di pubblicazione AEM.
+L&#39;esenzione dei singoli principi dalla valutazione CUG è stata adottata dalla precedente attuazione. La nuova autorizzazione CUG copre questo problema con un&#39;interfaccia dedicata denominata CugExclude. Apache Jackrabbit Oak 1.4 è dotato di un&#39;implementazione predefinita che esclude un insieme fisso di entità e un&#39;implementazione estesa che consente di configurare i singoli nomi principali. Quest’ultimo è configurato in AEM istanze di pubblicazione.
 
-L’impostazione predefinita a partire da AEM 6.3 impedisce che le seguenti entità siano interessate dai criteri CUG:
+L&#39;impostazione predefinita rispetto a AEM 6.3 impedisce che le seguenti entità siano interessate dai criteri CUG:
 
 * entità amministrative (utente amministratore, gruppo amministratori)
 * entità utente del servizio
 * directory principale interna del repository
 
-Per ulteriori informazioni, consultate la tabella nella sezione Configurazione [predefinita a partire da AEM 6.3](#default-configuration-since-aem) seguente.
+Per ulteriori informazioni, vedi la tabella nella sezione Configurazione [predefinita a partire da AEM 6.3](#default-configuration-since-aem) di seguito.
 
 L&#39;esclusione del gruppo &quot;amministratori&quot; può essere modificata o espansa nella console di sistema nella sezione di configurazione di **Apache Jackrabbit Oak CUG Exclude List**.
 
@@ -598,13 +601,13 @@ In alternativa, è possibile fornire e distribuire un&#39;implementazione person
 
 ### Autenticazione: Configurazione e configurazione {#authentication-setup-and-configuration}
 
-Le nuove parti relative all&#39;autenticazione sono contenute nel bundle **Adobe Granite Authentication Handler** ( `com.adobe.granite.auth.authhandler` versione 5.6.48). Questo bundle fa parte dell’installazione predefinita di AEM.
+Le nuove parti relative all&#39;autenticazione sono contenute nel bundle del gestore **di autenticazione** Adobe Granite ( `com.adobe.granite.auth.authhandler` versione 5.6.48). Questo bundle fa parte dell&#39;installazione AEM predefinita.
 
 Per impostare la sostituzione dei requisiti di autenticazione per il supporto CUG obsoleto, alcuni componenti OSGi devono essere presenti e attivi in una determinata installazione AEM. Per ulteriori dettagli, consulta **Caratteristiche dei componenti** OSGi di seguito.
 
 >[!NOTE]
 >
->A causa dell&#39;opzione di configurazione obbligatoria con RequirementHandler, le parti correlate all&#39;autenticazione saranno attive solo se la funzionalità è stata abilitata specificando un set di percorsi supportati. Con un’installazione standard di AEM, la funzione è disabilitata in modalità di esecuzione dell’autore e abilitata per /content in modalità di esecuzione della pubblicazione.
+>A causa dell&#39;opzione di configurazione obbligatoria con RequirementHandler, le parti correlate all&#39;autenticazione saranno attive solo se la funzionalità è stata abilitata specificando un set di percorsi supportati. Con un’installazione AEM standard, la funzione è disattivata in modalità di esecuzione dell’autore e attivata per /content in modalità di esecuzione della pubblicazione.
 
 **Caratteristiche dei componenti OSGi**
 
@@ -646,7 +649,7 @@ Sono stati introdotti i seguenti 2 componenti OSGi per definire i requisiti di a
 
 **com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler**
 
-| Etichetta |  Gestore percorso di login e requisiti di autenticazione Adobe Granite |
+| Etichetta |  Adobe requisito di autenticazione Granite e gestore del percorso di accesso |
 |---|---|
 | Descrizione | `RequirementHandler` implementazione che aggiorna i requisiti di autenticazione Apache Sling e la corrispondente esclusione per i percorsi di accesso associati. |
 | Proprietà di configurazione | `supportedPaths` |
@@ -655,7 +658,7 @@ Sono stati introdotti i seguenti 2 componenti OSGi per definire i requisiti di a
 
 #### Configuration Options {#configuration-options-1}
 
-Le parti correlate all’autenticazione della riscrittura CUG vengono fornite solo con un’unica opzione di configurazione associata al gestore dei percorsi di accesso e dei requisiti di autenticazione di Adobe Granite:
+Le parti correlate all’autenticazione della riscrittura CUG vengono fornite solo con un’unica opzione di configurazione associata al requisito di autenticazione granite del Adobe  e al gestore del percorso di accesso:
 
 **&quot;Autenticazione richiesta e gestore percorso di login&quot;**
 
@@ -678,7 +681,7 @@ Le parti correlate all’autenticazione della riscrittura CUG vengono fornite so
 
 ## Configurazione predefinita a partire da AEM 6.3 {#default-configuration-since-aem}
 
-Per impostazione predefinita, le nuove installazioni di AEM utilizzano le nuove implementazioni sia per le parti relative all’autorizzazione che per l’autenticazione della funzione CUG. La vecchia implementazione &quot;Adobe Granite Closed User Group (CUG) Support&quot; è stata rimossa e per impostazione predefinita verrà disattivata in tutte le installazioni di AEM. Le nuove implementazioni verranno invece abilitate come segue:
+Per impostazione predefinita, le nuove installazioni di AEM utilizzeranno le nuove implementazioni sia per le parti relative all’autorizzazione che per l’autenticazione della funzione CUG. La vecchia implementazione &quot; Adobe di supporto per gruppo utenti chiuso (CUG)&quot; è stata rimossa e per impostazione predefinita verrà disattivata in tutte AEM installazioni. Le nuove implementazioni verranno invece abilitate come segue:
 
 ### Istanze autore {#author-instances}
 
@@ -690,9 +693,9 @@ Per impostazione predefinita, le nuove installazioni di AEM utilizzano le nuove 
 
 >[!NOTE]
 >
->Nelle istanze di creazione predefinite non è presente alcuna configurazione per l’elenco **Escludi CUG** Apache Jackrabbit Oak CUG e per il gestore **di percorsi di accesso e di autenticazione** Adobe Granite.
+>Nelle istanze di authoring predefinite non è presente alcuna configurazione per **Apache Jackrabbit Oak CUG Exclude List** e **Adobe Granite Authentication Requirements and Login Path Handler** .
 
-### Pubblica istanze {#publish-instances}
+### Istanze di pubblicazione {#publish-instances}
 
 | **&quot;Configurazione Apache Jackrabbit Oak CUG&quot;** | **Spiegazione** |
 |---|---|
@@ -704,9 +707,9 @@ Per impostazione predefinita, le nuove installazioni di AEM utilizzano le nuove 
 |---|---|
 | Amministratori dei nomi principali | Esclude l’entità amministratore dalla valutazione CUG. |
 
-| **&quot;Requisiti di autenticazione Adobe Granite e gestore del percorso di login&quot;** | **Spiegazione** |
+| **&quot; Adobe requisito di autenticazione granite e gestore percorso di login&quot;** | **Spiegazione** |
 |---|---|
-| Percorsi supportati `/content` | I requisiti di autenticazione definiti nel repository mediante il tipo di `granite:AuthenticationRequired` mixin diventano effettivi `/content` al momento `Session.save()`. Sling Authenticator viene aggiornato. L&#39;aggiunta del tipo di mixin all&#39;esterno dei percorsi supportati viene ignorata. |
+| Percorsi supportati  `/content` | I requisiti di autenticazione definiti nel repository mediante il tipo di `granite:AuthenticationRequired` mixin diventano effettivi `/content` al momento `Session.save()`. Sling Authenticator viene aggiornato. L&#39;aggiunta del tipo di mixin all&#39;esterno dei percorsi supportati viene ignorata. |
 
 ## Disattivazione dell’autorizzazione e del requisito di autenticazione CUG {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -718,7 +721,7 @@ Per informazioni su come rimuovere il modello di autorizzazione CUG dalla config
 
 ### Disattiva requisito di autenticazione {#disable-the-authentication-requirement}
 
-Per disabilitare il supporto per il requisito di autenticazione fornito dal `granite.auth.authhandler` modulo, è sufficiente rimuovere la configurazione associata al requisito di autenticazione **Adobe Granite e al gestore** del percorso di accesso.
+Per disabilitare il supporto per il requisito di autenticazione come fornito dal `granite.auth.authhandler` modulo, è sufficiente rimuovere la configurazione associata a **Adobe requisito di autenticazione granita e gestore** del percorso di accesso.
 
 >[!NOTE]
 >
@@ -738,9 +741,9 @@ Il meccanismo di importazione di Apache Jackrabbit FileVault è stato modificato
 
 Vedere la sezione [Apache Jackrabbit FileVault](/help/sites-administering/closed-user-groups.md#apache-jackrabbit-filevault) .
 
-### Replica di Adobe Granite {#adobe-granite-replication}
+### Replica  Adobe Granite {#adobe-granite-replication}
 
-Il modulo di replica è stato leggermente modificato per poter replicare i criteri CUG tra diverse istanze di AEM:
+Il modulo di replica è stato leggermente modificato per poter replicare i criteri CUG tra AEM istanze diverse:
 
 * `DurboImportConfiguration.isImportAcl()` viene interpretato letteralmente e influenzerà solo l&#39;implementazione delle politiche di controllo dell&#39;accesso `javax.jcr.security.AccessControlList`
 
@@ -749,19 +752,19 @@ Il modulo di replica è stato leggermente modificato per poter replicare i crite
 
 Esiste un limite alla replica delle politiche CUG. Se un determinato criterio CUG viene rimosso senza rimuovere il tipo di nodo del mixin corrispondente, `rep:CugMixin,` la rimozione non si riflette sulla replica. Questo problema è stato risolto rimuovendo sempre il mixin alla rimozione del criterio. La limitazione può tuttavia apparire se il tipo di mixin viene aggiunto manualmente.
 
-### Gestore autenticazione Adobe Granite {#adobe-granite-authentication-handler}
+### Gestore autenticazione granite  Adobe {#adobe-granite-authentication-handler}
 
-Il gestore di autenticazione **Adobe Granite HTTP Header Authentication Handler** fornito con il `com.adobe.granite.auth.authhandler` bundle contiene un riferimento all&#39;interfaccia `CugSupport` definita dallo stesso modulo. Viene utilizzato per calcolare l&#39;area di autenticazione in determinate circostanze, tornando all&#39;area di autenticazione configurata con il gestore.
+Il gestore di autenticazione **Adobe gestore** di autenticazione dell&#39;intestazione HTTP Granite fornito con il `com.adobe.granite.auth.authhandler` bundle contiene un riferimento all&#39;interfaccia `CugSupport` definita dallo stesso modulo. Viene utilizzato per calcolare l&#39;area di autenticazione in determinate circostanze, tornando all&#39;area di autenticazione configurata con il gestore.
 
-Questo è stato modificato per rendere il riferimento `CugSupport` facoltativo al fine di garantire la massima compatibilità con le versioni precedenti se una determinata configurazione decide di riabilitare l&#39;implementazione obsoleta. Le installazioni che utilizzano l&#39;implementazione non otterranno più l&#39;area di autenticazione estratta dall&#39;implementazione CUG, ma visualizzeranno sempre l&#39;area di autenticazione come definito con il gestore **di autenticazione dell&#39;intestazione HTTP** Adobe Granite.
+Questo è stato modificato per rendere il riferimento `CugSupport` facoltativo al fine di garantire la massima compatibilità con le versioni precedenti se una determinata configurazione decide di riabilitare l&#39;implementazione obsoleta. Le installazioni che utilizzano l&#39;implementazione non otterranno più l&#39;area di autenticazione estratta dall&#39;implementazione CUG, ma visualizzeranno sempre l&#39;area di autenticazione come definito con **gestore** di autenticazione dell&#39;intestazione HTTP Granite Adobe.
 
 >[!NOTE]
 >
->Per impostazione predefinita, il gestore **di autenticazione dell&#39;intestazione HTTP** Adobe Granite è configurato solo in modalità di esecuzione pubblica con l&#39;opzione &quot;Disattiva pagina di accesso&quot; ( `auth.http.nologin`) abilitata.
+>Per impostazione predefinita, il gestore **di autenticazione dell&#39;intestazione HTTP Granite** Adobe è configurato solo in modalità di esecuzione pubblica con l&#39;opzione &quot;Disattiva pagina di accesso&quot; ( `auth.http.nologin`) abilitata.
 
 ### AEM LiveCopy {#aem-livecopy}
 
-La configurazione dei CUG in combinazione con LiveCopy è rappresentata nell’archivio tramite l’aggiunta di un nodo aggiuntivo e di una proprietà aggiuntiva come segue:
+La configurazione dei CUG in combinazione con LiveCopy è rappresentata nell’archivio tramite l’aggiunta di un nodo aggiuntivo e di una proprietà aggiuntiva, come segue:
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
@@ -776,7 +779,7 @@ Scopo di questa sezione è fornire una panoramica delle modifiche apportate alla
 
 ### Differenze nella configurazione e configurazione CUG {#diferences-in-cug-setup-and-configuration}
 
-Il componente OSGi obsoleto Supporto **per gruppi di utenti chiusi (CUG)** Adobe Granite User Group (CUG) `com.day.cq.auth.impl.cug.CugSupportImpl`) è stato sostituito da nuovi componenti per poter gestire separatamente le parti relative all’autorizzazione e all’autenticazione della precedente funzionalità CUG.
+Il componente OSGi obsoleto **Adobe di supporto** del gruppo di utenti chiuso (CUG) obsoleto ( `com.day.cq.auth.impl.cug.CugSupportImpl`) è stato sostituito da nuovi componenti per poter gestire separatamente le parti relative all’autorizzazione e all’autenticazione della precedente funzionalità CUG.
 
 ## Differenze nella gestione dei CUG nel contenuto del repository {#differences-in-managing-cugs-in-the-repository-content}
 
@@ -790,23 +793,23 @@ Le principali differenze dal punto di vista dell&#39;autorizzazione sono riassun
 
 Nella precedente implementazione, il modello di autorizzazione predefinito è stato utilizzato per manipolare i criteri degli elenchi di controllo degli accessi al momento della pubblicazione, sostituendo eventuali ACE esistenti con la configurazione richiesta dal gruppo di utenti chiuso. Questo è stato attivato scrivendo proprietà JCR regolari e residue interpretate al momento della pubblicazione.
 
-Con la nuova implementazione, l’impostazione del controllo di accesso del modello di autorizzazione predefinito non viene modificata da alcun CUG creato, modificato o rimosso. Al contrario, un nuovo tipo di criterio denominato `PrincipalSetPolicy` viene applicato come contenuto di controllo di accesso aggiuntivo al nodo di destinazione. Questo criterio aggiuntivo si trova come elemento secondario del nodo di destinazione e, se presente, sarà di pari livello del nodo di criterio predefinito.
+Con la nuova implementazione, la configurazione del controllo di accesso del modello di autorizzazione predefinito non viene influenzata da alcun CUG creato, modificato o rimosso. Al contrario, un nuovo tipo di criterio denominato `PrincipalSetPolicy` viene applicato come contenuto di controllo di accesso aggiuntivo al nodo di destinazione. Questo criterio aggiuntivo si trova come elemento secondario del nodo di destinazione e, se presente, sarà di pari livello del nodo di criterio predefinito.
 
-**Modifica dei criteri CUG in Gestione controllo degli accessi**
+**Modifica dei criteri CUG in Gestione del controllo degli accessi**
 
-Questo passaggio dalle proprietà JCR residue a una politica di controllo degli accessi dedicata ha un impatto sulle autorizzazioni necessarie per creare o modificare la parte di autorizzazione della funzione CUG. Poiché si tratta di una modifica per accedere ai contenuti di controllo, per poter essere scritti nella directory archivio sono necessari `jcr:readAccessControl` e `jcr:modifyAccessControl` privilegi. Pertanto, solo gli autori di contenuti autorizzati a modificare il contenuto del controllo di accesso di una pagina possono impostare o modificare tale contenuto. Ciò contrasta con la vecchia implementazione in cui la capacità di scrivere proprietà JCR regolari era sufficiente, con conseguente aumento dei privilegi.
+Questo passaggio dalle proprietà JCR residue a una politica di controllo degli accessi dedicata ha un impatto sull&#39;autorizzazione necessaria per creare o modificare la parte di autorizzazione della funzione CUG. Poiché si tratta di una modifica per accedere ai contenuti di controllo, per poter essere scritti nella directory archivio sono necessari `jcr:readAccessControl` e `jcr:modifyAccessControl` privilegi. Pertanto, solo gli autori di contenuti autorizzati a modificare il contenuto del controllo di accesso di una pagina possono impostare o modificare tale contenuto. Ciò contrasta con la vecchia implementazione in cui la capacità di scrivere proprietà JCR regolari era sufficiente, con conseguente aumento dei privilegi.
 
 **Nodo di destinazione definito dal criterio**
 
-I criteri CUG devono essere creati nel nodo JCR che definisce la sottostruttura soggetta a accesso in lettura limitato. È probabile che si tratti di una pagina AEM nel caso in cui il CUG interesserà l’intera struttura.
+I criteri CUG devono essere creati nel nodo JCR che definisce la sottostruttura soggetta a accesso in lettura limitato. È probabile che si tratti di una pagina AEM nel caso in cui il CUG interesserà l’intero albero.
 
-Tenere presente che l&#39;inserimento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l&#39;accesso al contenuto di una determinata pagina, ma non ha effetto su alcuna pagina secondaria o di pari livello. Questo può essere un caso d&#39;uso valido ed è possibile ottenere con un editor repository che consente di applicare contenuto di accesso in grana fine. Tuttavia, contrasta con la precedente implementazione in cui l&#39;inserimento di una proprietà cq:cugEnabled nel nodo jcr:content era internamente mappato al nodo della pagina. Il mapping non viene più eseguito.
+Tenere presente che l&#39;inserimento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l&#39;accesso al contenuto di una determinata pagina, ma non ha effetto su alcuna pagina secondaria o di pari livello. Questo può essere un caso d&#39;uso valido ed è possibile ottenere con un editor repository che consente di applicare contenuto di accesso in grana fine. Tuttavia, contrasta con la precedente implementazione in cui l&#39;inserimento di una proprietà cq:cugEnabled nel nodo jcr:content era internamente mappato al nodo della pagina. Questa mappatura non viene più eseguita.
 
 **Valutazione delle autorizzazioni con i criteri CUG**
 
 Passando dal vecchio supporto CUG a un modello di autorizzazione aggiuntivo, cambia il modo in cui vengono valutate le autorizzazioni di lettura effettive. Come descritto nella documentazione [di](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)Jackrabbit, a un determinato entità autorizzato a visualizzare il `CUGcontent` sito verrà concesso l&#39;accesso in lettura solo se la valutazione delle autorizzazioni di tutti i modelli confusi nel repository di Oak concede l&#39;accesso in lettura.
 
-In altre parole, per la valutazione delle autorizzazioni effettive si terrà conto sia delle voci di controllo di accesso `CUGPolicy` che di quelle predefinite, e l&#39;accesso in lettura al contenuto CUG sarà concesso solo se è concesso da entrambi i tipi di criteri. In un’installazione di pubblicazione AEM predefinita in cui l’accesso in lettura alla `/content` struttura ad albero è consentito a tutti, l’effetto dei criteri CUG sarà identico a quello della precedente implementazione.
+In altre parole, per la valutazione delle autorizzazioni effettive, si terrà conto sia delle voci di controllo di accesso `CUGPolicy` che di quelle predefinite, e l&#39;accesso in lettura al contenuto CUG sarà concesso solo se è concesso da entrambi i tipi di criteri. In un’installazione di pubblicazione AEM predefinita in cui l’accesso in lettura all’ `/content` albero completo è concesso a tutti, l’effetto dei criteri CUG sarà identico a quello della precedente implementazione.
 
 **Valutazione su richiesta**
 
@@ -815,7 +818,7 @@ Il modello di autorizzazione CUG consente di attivare singolarmente la gestione 
 * la gestione del controllo degli accessi è abilitata se il modulo dispone di uno o più percorsi supportati in cui è possibile creare i CUG
 * la valutazione delle autorizzazioni è abilitata solo se l&#39;opzione **CUG Evaluation Enabled (Valutazione CUG abilitata** ) è selezionata.
 
-Nella nuova valutazione della configurazione predefinita di AEM per i criteri CUG, questa viene attivata solo con la modalità di esecuzione &quot;pubblica&quot;. Per ulteriori informazioni, consultate i dettagli sulla configurazione [predefinita a partire da AEM 6.3](#default-configuration-since-aem) . Questo può essere verificato confrontando i criteri effettivi per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i CUG.
+Nella nuova AEM di impostazione predefinita per i criteri CUG è abilitata solo con la modalità di esecuzione &quot;pubblica&quot;. Per ulteriori dettagli, consultate i dettagli sulla configurazione [predefinita a partire da AEM 6.3](#default-configuration-since-aem) . Questo può essere verificato confrontando i criteri effettivi per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i CUG.
 
 Come spiegato sopra, i criteri di controllo degli accessi CUG ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri sarà applicata solo se **CUG Evaluation Enabled** è attivata nella console di sistema in Apache Jackrabbit Oak **CUG Configuration.** Per impostazione predefinita, è abilitata solo in modalità di esecuzione &quot;Pubblica&quot;.
 
@@ -825,7 +828,7 @@ Le differenze per quanto riguarda l&#39;autenticazione sono descritte di seguito
 
 #### Tipo Di Mixin Dedicato Per Il Requisito Di Autenticazione {#dedicated-mixin-type-for-authentication-requirement}
 
-Nella prima implementazione sia gli aspetti relativi all’autorizzazione che all’autenticazione di un CUG sono stati attivati da una singola proprietà JCR ( `cq:cugEnabled`). Per quanto riguarda l&#39;autenticazione, ciò ha comportato un elenco aggiornato dei requisiti di autenticazione come memorizzato con l&#39;implementazione Apache Sling Authenticator. Con la nuova implementazione lo stesso risultato viene ottenuto contrassegnando il nodo target con un tipo di mixin dedicato ( `granite:AuthenticationRequired`).
+Nella prima implementazione sia gli aspetti relativi all’autorizzazione che all’autenticazione di un CUG sono stati attivati da una singola proprietà JCR ( `cq:cugEnabled`). Per quanto riguarda l&#39;autenticazione, ciò ha portato a un elenco aggiornato di requisiti di autenticazione come memorizzato con l&#39;implementazione Apache Sling Authenticator. Con la nuova implementazione lo stesso risultato viene ottenuto contrassegnando il nodo target con un tipo di mixin dedicato ( `granite:AuthenticationRequired`).
 
 #### Proprietà Per Escludere Il Percorso Di Login {#property-for-excluding-login-path}
 
@@ -843,17 +846,17 @@ I requisiti di autenticazione devono essere creati nel nodo JCR che definisce la
 
 Posizionando il criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina, l&#39;accesso al contenuto sarà limitato ma non interesserà né il nodo della pagina né le pagine figlie.
 
-Questo potrebbe essere uno scenario valido ed è possibile con un editor repository che consente di posizionare il mixin a qualsiasi nodo. Tuttavia, il comportamento contrasta con la precedente implementazione, in cui l&#39;inserimento di una proprietà cq:cugEnabled o cq:cugLoginPage nel nodo jcr:content veniva ricollegato internamente in ultima istanza al nodo della pagina. Il mapping non viene più eseguito.
+Questo potrebbe essere uno scenario valido ed è possibile con un editor repository che consente di posizionare il mixin a qualsiasi nodo. Tuttavia, il comportamento contrasta con la precedente implementazione, in cui l&#39;inserimento di una proprietà cq:cugEnabled o cq:cugLoginPage nel nodo jcr:content veniva ricollegato internamente in ultima istanza al nodo della pagina. Questa mappatura non viene più eseguita.
 
 #### Percorsi supportati configurati {#configured-supported-paths}
 
-Sia il tipo di `granite:AuthenticationRequired` mixin che la proprietà granite:loginPath saranno rispettati solo all&#39;interno dell&#39;ambito definito dall&#39;insieme di opzioni di configurazione dei percorsi **** supportati presenti con il gestore **** Adobe Granite Authentication Requirement e Login Path. Se non viene specificato alcun percorso, la funzione di autenticazione richiesta è disabilitata completamente. In questo caso il tipo di mixin o la proprietà hanno effetto quando vengono aggiunti o impostati su un determinato nodo JCR.
+Sia il tipo di `granite:AuthenticationRequired` mixin che la proprietà granite:loginPath saranno rispettati solo all&#39;interno dell&#39;ambito definito dall&#39;insieme di opzioni di configurazione dei percorsi **** supportati presenti con il **Adobe requisito di autenticazione granite e il gestore** del percorso di login. Se non è stato specificato alcun percorso, la funzione di autenticazione richiesta è disabilitata completamente. In questo caso il tipo di mixin o la proprietà hanno effetto quando vengono aggiunti o impostati su un determinato nodo JCR.
 
 ### Mappatura di contenuti JCR, servizi OSGi e configurazioni {#mapping-of-jcr-content-osgi-services-and-configurations}
 
 Il documento seguente fornisce una mappatura completa dei servizi OSGi, delle configurazioni e del contenuto del repository tra la vecchia e la nuova implementazione.
 
-Mapping CUG da AEM 6.3
+Mapping CUG a partire da AEM 6.3
 
 [Ottieni file](assets/cug-mapping.pdf)
 
@@ -861,16 +864,16 @@ Mapping CUG da AEM 6.3
 
 ### Installazioni esistenti con il CUG obsoleto {#existing-installations-using-the-deprecated-cug}
 
-La precedente implementazione del supporto CUG è stata rimossa e verrà rimossa per le versioni future. È consigliabile passare alle nuove implementazioni quando si esegue l&#39;aggiornamento da versioni precedenti a AEM 6.3.
+La precedente implementazione del supporto CUG è stata rimossa e verrà rimossa per le versioni future. È consigliabile passare alle nuove implementazioni quando si esegue l&#39;aggiornamento da versioni precedenti alla AEM 6.3.
 
-Per l’installazione AEM aggiornata, è importante assicurarsi che sia abilitata una sola implementazione CUG. La combinazione del nuovo e vecchio supporto CUG obsoleto non viene testata e può causare un comportamento indesiderato:
+Per l’installazione AEM aggiornata, è importante garantire che sia abilitata una sola implementazione CUG. La combinazione del nuovo e vecchio supporto CUG obsoleto non viene testata e può causare un comportamento indesiderato:
 
 * collisioni in Sling Authenticator per quanto riguarda i requisiti di autenticazione
 * accesso in lettura negato quando l&#39;impostazione ACL associata al vecchio CUG è in conflitto con un nuovo criterio CUG.
 
 ### Migrazione di contenuto CUG esistente {#migrating-existing-cug-content}
 
-Adobe fornisce uno strumento per la migrazione alla nuova implementazione CUG. Per utilizzarlo, effettuare le seguenti operazioni:
+ Adobe fornisce uno strumento per la migrazione alla nuova implementazione CUG. Per utilizzarlo, effettuare le seguenti operazioni:
 
 1. Accedere `https://<serveraddress>:<serverport>/system/console/cug-migration` allo strumento.
 1. Immettere il percorso principale per il quale si desidera controllare i CUG e premere il pulsante **Esegui esecuzione** a secco. Verranno analizzati i CUG utilizzabili per la conversione nella posizione selezionata.
