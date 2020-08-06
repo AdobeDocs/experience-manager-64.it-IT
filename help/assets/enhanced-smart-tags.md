@@ -1,6 +1,6 @@
 ---
-title: Smart tag migliorati
-description: Smart tag migliorati
+title: Tag avanzati migliorati
+description: Tag avanzati migliorati
 uuid: 4452ca05-1f20-4f80-884a-a739ae7b8b0e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,15 +8,18 @@ topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
 source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+workflow-type: tm+mt
+source-wordcount: '1577'
+ht-degree: 17%
 
 ---
 
 
-# Smart tag migliorati {#enhanced-smart-tags}
+# Tag avanzati migliorati {#enhanced-smart-tags}
 
 ## Panoramica dei tag avanzati avanzati {#overview-of-enhanced-smart-tags}
 
-Le organizzazioni che si occupano di risorse digitali utilizzano sempre più vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una determinata classe. L’assegnazione di tag alle risorse con un vocabolario controllato dalla tassonomia ne consente l’identificazione e il recupero tramite ricerche basate sui tag.
+Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una determinata classe. L’assegnazione di tag alle risorse con un vocabolario controllato dalla tassonomia ne consente l’identificazione e il recupero tramite ricerche basate sui tag.
 
 Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag alle risorse digitali in base alla tassonomia aziendale consente di allinearle al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche.
 
@@ -26,9 +29,9 @@ Affinché Smart Content Service possa applicare i tag giusti, è necessario adde
 
 Una volta che un tag è stato preparato e pronto, il servizio ora può applicare questi tag alle risorse tramite un flusso di lavoro per l’assegnazione di tag.
 
-In background, Smart Content Service utilizza il framework AI di Adobe Sensei per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
+In background, Smart Content Service utilizza il framework AI di  Adobe Sensei per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su Adobe I/O. Per utilizzarlo in Adobe Experience Manager (AEM), l’amministratore di sistema deve integrare l’istanza AEM con Adobe IO.
+Smart Content Service è un servizio cloud ospitato su  I/O Adobe. Per utilizzarlo in Adobe Experience Manager (AEM), l&#39;amministratore di sistema deve integrare l&#39;istanza AEM con  I/O Adobe.
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -41,22 +44,22 @@ Di seguito sono riportati i passaggi principali per utilizzare Smart Content Ser
 
 ## Prerequisiti {#prerequisites}
 
-Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per creare un&#39;integrazione su Adobe I/O:
+Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su Adobe I/O:
 
-* Un account Adobe ID con privilegi di amministratore per l’organizzazione.
-* Il servizio Smart Content Service è abilitato per la vostra azienda.
+* Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
+* Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 
 ## Onboarding {#onboarding}
 
-Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per AEM. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento ad Adobe IO.
+Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo da AEM. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento  I/O Adobe.
 
-L’amministratore può seguire il collegamento per integrare Smart Content Service con AEM. Per integrare il servizio con AEM Assets, consulta [Configurare i tag](config-smart-tagging.md)avanzati.
+L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con AEM. Per integrare il servizio con  AEM Assets, consultate [Configurare i tag](config-smart-tagging.md)avanzati.
 
 La procedura di registrazione è completa quando l’amministratore configura il servizio e aggiunge utenti in AEM.
 
 >[!NOTE]
 >
->Se utilizzate AEM 6.3 o versione precedente e necessitate di un servizio di tag automatico per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di AI e sono meno precisi della funzionalità di Smart Tagging avanzata.
+>Se utilizzate AEM 6.3 o versione precedente e avete bisogno di un servizio di tag automatico per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di AI e sono meno precisi della funzionalità di Smart Tagging avanzata.
 
 ## Verifica di risorse e tag {#reviewing-assets-and-tags}
 
@@ -68,9 +71,10 @@ Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla 
 
 >[!NOTE]
 >
->1. La formazione è un processo irrevocabile. Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
+>1. La formazione è un processo irrevocabile.  Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
 >1. Prima di iniziare la formazione per qualsiasi tag, leggete le linee guida [per la formazione su](smart-tags-training-guidelines.md) Smart Content Service.
->1. Quando formate Smart Content Service per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
+>1. Quando formate Smart Content Service per la prima volta,  Adobe consiglia di addestrarlo su almeno due tag distinti.
+
 >
 
 
@@ -93,7 +97,7 @@ Potete abilitare Smart Content Service per l&#39;addestramento periodico delle r
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Quando questa opzione è selezionata per una cartella, AEM esegue automaticamente un flusso di lavoro di formazione per formare Smart Content Service sulle risorse delle cartelle e i relativi tag. Per impostazione predefinita, il flusso di lavoro della formazione viene eseguito settimanalmente alle 12:30 del sabato.
+Quando questa opzione è selezionata per una cartella, AEM un flusso di lavoro di formazione per formare automaticamente Smart Content Service sulle risorse delle cartelle e i relativi tag. Per impostazione predefinita, il flusso di lavoro della formazione viene eseguito settimanalmente alle 12:30 del sabato.
 
 ### Formazione su richiesta {#on-demand-training}
 
@@ -148,7 +152,7 @@ Quando questa opzione è selezionata per una cartella, Smart Content Service ass
 Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro dei tag:
 
 * Console Flusso di lavoro
-* Timeline
+* Timeline 
 
 >[!NOTE]
 >
