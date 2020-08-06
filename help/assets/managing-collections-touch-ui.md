@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Gestire le raccolte {#managing-collections}
 
-Una raccolta è un insieme di risorse all&#39;interno  risorse di Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
+Una raccolta è un set di risorse all&#39;interno di Adobe Experience Manager Assets. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -27,7 +27,7 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 ## Accedere alla console delle raccolte {#navigating-the-collections-console}
 
-Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience Manager . From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo dell&#39;Experience Manager . From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Creare una raccolta {#creating-a-collection}
 
@@ -51,7 +51,7 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 
    >[!NOTE]
    >
-   > Risorse Experience Manager consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   > Risorse Experience Manager consente di creare attività di revisione per una raccolta simile a quelle effettuate per le attività di revisione per una cartella di risorse.
 
    Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
@@ -194,7 +194,7 @@ Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;ag
 
 ## Cerca raccolte {#searching-collections}
 
-Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, i AEM Assets cercano i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico,  AEM Assets cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
 Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
@@ -202,7 +202,7 @@ Se cercate raccolte dal livello principale, nei risultati della ricerca vengono 
 
 Nella console Raccolte, toccate o fate clic su una raccolta per aprirla.
 
-All&#39;interno di una raccolta, la ricerca di Risorse AEM è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
+All&#39;interno di una raccolta, AEM ricerca delle risorse è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
 
 ## Modifica delle impostazioni della raccolta {#editing-collection-settings}
 
@@ -303,6 +303,6 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 
 >[!MORELIKETHIS]
 >
->* [Configurare  notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configurare  notifiche e-mail di Risorse Experience Manager](/help/sites-administering/notification.md#assetsconfig)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
