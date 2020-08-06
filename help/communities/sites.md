@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
@@ -51,7 +54,7 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 * **[!UICONTROL Disattivato/Abilitato]** Un interruttore di attivazione/disattivazione che controlla se il modello è referente o meno
 
-### Miniatura {#thumbnail}
+### Miniatura  {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -67,7 +70,7 @@ Ad esempio, se desiderate una pagina principale, trascinate la funzione Pagina d
 
 Trascinate e rilasciate tutte le altre funzioni della community desiderate per un sito community basato su questo modello.
 
-La funzione page fornisce una pagina vuota. La funzione group consente di creare un sito di gruppo (sub-community) all&#39;interno del sito community.
+La funzione page fornisce una pagina vuota. La funzione Groups (Gruppi) consente di creare un sito di gruppo (sub-community) all&#39;interno del sito community.
 
 >[!CAUTION]
 >
