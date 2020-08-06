@@ -1,25 +1,28 @@
 ---
-title: Matrice di compatibilità per AEM Screens Player
-seo-title: Matrice di compatibilità per AEM Screens Player
-description: In questa pagina sono elencati i lettori AEM Screens con la rispettiva versione di AEM Screens.
-seo-description: In questa pagina sono elencati i lettori AEM Screens con la rispettiva versione di AEM Screens.
+title: Matrice di compatibilità per  AEM Screens Player
+seo-title: Matrice di compatibilità per  AEM Screens Player
+description: In questa pagina sono elencati i  AEM Screens Players con la rispettiva versione  AEM Screens.
+seo-description: In questa pagina sono elencati i  AEM Screens Players con la rispettiva versione  AEM Screens.
 page-status-flag: never-activated
 uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
 contentOwner: jsyal
 discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 7%
 
 ---
 
 
-# Matrice di compatibilità per AEM Screens Player{#compatibility-matrix-for-aem-screens-player}
+# Matrice di compatibilità per  AEM Screens Player{#compatibility-matrix-for-aem-screens-player}
 
 >[!NOTE]
 >
 >Le informazioni seguenti sono aggiornate a partire dal 14 maggio 2018.
 
-Nella sezione seguente sono elencati i lettori di schermo Adobe Experience Manager (AEM) con le rispettive versioni di AEM Screens.
+Nella sezione seguente sono elencati i lettori Adobe Experience Manager (AEM) Screens con la rispettiva versione  AEM Screens.
 
 ## Lettore iOS {#ios-player}
 
@@ -38,7 +41,7 @@ Nella sezione seguente sono elencati i lettori di schermo Adobe Experience Manag
    <td><p><strong>3.3.0</strong> </p> <p> </p> </td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.4</strong></td> 
+   <td><strong>AEM 6.4  </strong></td> 
    <td><strong>3.3.0</strong> </td> 
   </tr>
  </tbody>
@@ -69,7 +72,7 @@ aem-screens-player-ios-3.3.0.ipa.zip
    <td><strong>1.0.48 </strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.4</strong></td> 
+   <td><strong>AEM 6.4  </strong></td> 
    <td><p><strong>1.0.48 </strong></p> </td> 
   </tr>
  </tbody>
@@ -105,7 +108,7 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><strong>Versione server AEM</strong></td> 
    <td><strong>Lettore iOS</strong></td> 
    <td><strong>Windows10 Player</strong></td> 
-   <td><strong>Lettore Chrome OS</strong><br /> </td> 
+   <td><strong>Lettore del sistema operativo Chrome</strong><br /> </td> 
    <td><strong>Android Player</strong></td> 
   </tr>
   <tr>
@@ -123,7 +126,7 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><strong>3.3.0 - </strong><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.4</strong></td> 
+   <td><strong>AEM 6.4  </strong></td> 
    <td><p><strong>3.3.0</strong> - <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> <p>Da pubblicare su Apple Store</p> </td> 
    <td><p><strong>1.0.48 -</strong><br /> </p> <p><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> </td> 
    <td><p><strong>1.0.42 - </strong></p> <p>Da pubblicare su Chrome Store</p> </td> 
