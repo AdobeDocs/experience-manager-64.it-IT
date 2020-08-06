@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ Utenti e amministratori utilizzano le pagine Web sulla protezione dei documenti 
 
 >[!NOTE]
 >
->È inoltre possibile accedere alla protezione dei documenti tramite Acrobat e altre applicazioni client utilizzando l&#39;account di accesso utente. (Vedere [Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)client.)
+>È inoltre possibile accedere alla protezione dei documenti tramite  Acrobat e altre applicazioni client utilizzando l&#39;account di accesso utente. (Vedere [Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)client.)
 
-Per aprire le pagine Web, è necessario un browser e l&#39;URL e le informazioni di login per la protezione del documento. L’URL degli utenti è diverso dall’URL degli amministratori.
+Per aprire le pagine Web, è necessario un browser e l&#39;URL e le informazioni di login per la protezione del documento. L’URL per gli utenti è diverso dall’URL per gli amministratori.
 
 Poiché Document Security fa riferimento alle directory esistenti dell&#39;azienda per ottenere informazioni sugli utenti, le informazioni di accesso a Document Security possono essere le stesse informazioni utilizzate per accedere alla rete e ad altre applicazioni. Consultate l’amministratore di sistema o l’amministratore per informazioni sull’account.
 
@@ -31,7 +34,7 @@ Per effettuare l’accesso come amministratore, dovete avere il ruolo di amminis
 
 ## Accesso alle pagine Web {#log-in-to-the-web-pages}
 
-Per accedere alle pagine Web utilizzando un browser, è necessario disporre dell&#39;URL di protezione del documento e di un account. L’URL degli utenti è diverso dall’URL degli amministratori. Gli amministratori possono inoltre accedere alle pagine utente per creare i criteri.
+Per accedere alle pagine Web utilizzando un browser, è necessario disporre dell&#39;URL di protezione del documento e di un account. L’URL per gli utenti è diverso dall’URL per gli amministratori. Gli amministratori possono inoltre accedere alle pagine utente per creare i criteri.
 
 Se si dispone dell&#39;accesso a più installazioni di Document Security, è necessario l&#39;URL per l&#39;istanza di Document Security a cui si desidera accedere. Se non disponete di tali informazioni, rivolgetevi all’amministratore. L’URL predefinito per le pagine utente è https://*[host]*:*[port]*/edc. In alcuni casi il numero di porta potrebbe non essere richiesto. Per ulteriori informazioni, rivolgetevi all’amministratore.
 
@@ -41,13 +44,13 @@ Per gli amministratori, durante l&#39;installazione viene creato un account supe
 
 >[!NOTE]
 >
->È inoltre possibile accedere alle pagine Web da Acrobat e da altre applicazioni client. Per ulteriori informazioni, consultare la Guida di Acrobat Reader DC o la Guida delle estensioni appropriata.
+>Potete inoltre accedere alle pagine Web da  Acrobat e da altre applicazioni client. Per ulteriori informazioni, consultate  Guida di Acrobat o la relativa Guida alle estensioni Acrobat Reader DC.
 
 1. Digitate l’URL nel browser:
 
-   URL protezione documento: `https://`*[host ]*`:`*[porta]*`/edc`
+   URL protezione documento: `https://`*[host ]*,`:`*[porta]* `/edc`
 
-   o URL console di amministrazione: `https://`*[host ]*`:`*[porta]*`/adminui`
+   o URL console di amministrazione: `https://`*[host ]*,`:`*[porta]* `/adminui`
 
 1. Nella finestra di accesso, digitate il nome utente e la password e fate clic su OK.
 1. In Admin Console, fai clic su Servizi > Protezione documento.
@@ -82,7 +85,7 @@ Utilizzate questi collegamenti per accedere alle varie pagine, in cui potete cre
 
 ## Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni client {#setting-up-access-to-document-security-from-client-applications}
 
-Le applicazioni client devono essere configurate per connettersi alla protezione dei documenti al fine di proteggere i documenti, aprire documenti protetti tramite criterio e connettersi alle pagine Web della protezione dei documenti. Per informazioni sulla configurazione della connessione all’interno dell’applicazione client, consultate la Guida *di* Acrobat o la Guida *di* RightsManagementExtension appropriata.
+Le applicazioni client devono essere configurate per connettersi alla protezione dei documenti al fine di proteggere i documenti, aprire documenti protetti tramite criterio e connettersi alle pagine Web della protezione dei documenti. Per *informazioni sulla configurazione della connessione all’interno dell’applicazione client, consultate la Guida* di Acrobat o la Guida *di* RightsManagementExtension appropriata.
 
 La protezione del documento è accessibile tramite SSL (Secure Sockets Layer). È necessario installare il certificato del sito Web nell&#39;archivio certificati per poter accedere alla protezione dei documenti tramite le applicazioni client.
 
