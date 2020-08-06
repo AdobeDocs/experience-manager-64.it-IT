@@ -1,6 +1,6 @@
 ---
 title: Configurare l’editor Rich Text per più editor locali.
-description: Potete creare più editor interni nel  Adobe Experience Manager configurando Editor Rich Text.
+description: Potete creare più editor interni in Adobe Experience Manager configurando Editor Rich Text.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Configurare più editor interni {#configure-multiple-in-place-editors}
 
-Potete configurare l’editor Rich Text in  Adobe Experience Manager in modo che contenga più editor interni. Una volta configurato, potete selezionare il contenuto appropriato e aprire l&#39;editor appropriato.
+Potete configurare l’editor Rich Text in Adobe Experience Manager in modo che contenga più editor interni. Una volta configurato, potete selezionare il contenuto appropriato e aprire l&#39;editor appropriato.
 
 ![Un editor locale specifico](assets/rte-inplace-editor.png)
 
@@ -71,6 +71,7 @@ Per configurare più editor, effettuate le seguenti operazioni:
 
    * Nome: Il nome di ciascun nodo è il nome della proprietà che rappresenta, come nel caso delle destinazioni di rilascio. Ad esempio `image` e `text`.
    * Tipo: `cq:ChildEditorConfig`
+
    >[!NOTE]
    >
    >Esiste una correlazione tra le destinazioni di rilascio definite e gli editor secondari. Il nome del `cq:ChildEditorConfig` nodo viene considerato come ID destinazione di rilascio, da utilizzare come parametro per l&#39;editor secondario selezionato. Se la sottoarea modificabile non ha una destinazione di rilascio, ad esempio, in un componente di testo, il nome dell’editor secondario viene comunque considerato come un ID per identificare l’area modificabile corrispondente.
@@ -85,7 +86,7 @@ Per configurare più editor, effettuate le seguenti operazioni:
 
 ### Configurazione aggiuntiva per gli editor Rich Text {#additional-configuration-for-rich-text-editors}
 
-La configurazione per più editor Rich Text è leggermente diversa, in quanto potete configurare ogni singola istanza RTE separatamente. Per informazioni dettagliate, consultate [configurare l&#39;Editor](/help/sites-administering/rich-text-editor.md)Rich Text. Per fare in modo che più editor Rich Text creino una configurazione per ogni editor Rich Text in loco. Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` quanto ogni singolo editor Rich Text può avere una configurazione diversa. Sotto il nuovo nodo creare ogni singola configurazione RTE.
+La configurazione per più editor Rich Text è leggermente diversa, in quanto potete configurare ogni singola istanza RTE separatamente. Per informazioni dettagliate, consultate [configurare l&#39;Editor](/help/sites-administering/rich-text-editor.md)Rich Text. Per fare in modo che più editor Rich Text creino una configurazione per ogni editor Rich Text in loco.  Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` quanto ogni singolo editor Rich Text può avere una configurazione diversa. Sotto il nuovo nodo creare ogni singola configurazione RTE.
 
 ```xml
     texttext
@@ -118,5 +119,5 @@ Per informazioni generali sull’aggiunta di un editor locale, consultate il doc
 
 >[!MORELIKETHIS]
 >
->* [Configurare l’editor Rich Text in  Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configurare l&#39;Editor Rich Text in  Experience Manager](/help/sites-administering/rich-text-editor.md).
 
