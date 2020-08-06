@@ -1,8 +1,8 @@
 ---
 title: Controllo collegamenti esterni
 seo-title: Controllo collegamenti esterni
-description: Scopri il controllo dei collegamenti esterni in AEM.
-seo-description: Scopri il controllo dei collegamenti esterni in AEM.
+description: Ulteriori informazioni sul controllo dei collegamenti esterni in AEM.
+seo-description: Ulteriori informazioni sul controllo dei collegamenti esterni in AEM.
 uuid: fd0c6ff6-52d2-4096-af40-54786e9d9ab8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 1%
 
 ---
 
 
-# Controllo collegamenti esterni{#the-external-link-checker}
+# The External Link Checker{#the-external-link-checker}
 
 In AEM è disponibile un controllo esterno dei collegamenti. Controllo collegamenti:
 
@@ -40,6 +43,7 @@ Per utilizzare il controllo dei collegamenti esterni:
    * tempo dall&#39;ultima convalida del collegamento
    * tempo dall&#39;ultima disponibilità del collegamento
    * ora dell&#39;ultimo accesso al collegamento
+
    viene visualizzato.
 
 1. Nelle singole pagine di contenuto, i collegamenti non validi vengono visualizzati come interrotti:
