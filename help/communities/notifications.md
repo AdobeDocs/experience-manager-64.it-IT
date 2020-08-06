@@ -1,8 +1,8 @@
 ---
 title: Notifiche community
 seo-title: Notifiche community
-description: AEM Communities dispone di notifiche che mostrano eventi di interesse per il membro della community che ha effettuato l'accesso
-seo-description: AEM Communities dispone di notifiche che mostrano eventi di interesse per il membro della community che ha effettuato l'accesso
+description: ' AEM Communities dispone di notifiche che mostrano eventi di interesse per il membro della community che ha effettuato l''accesso'
+seo-description: ' AEM Communities dispone di notifiche che mostrano eventi di interesse per il membro della community che ha effettuato l''accesso'
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## Panoramica {#overview}
 
-In AEM Communities è disponibile una sezione che mostra gli eventi di interesse per i membri della community sottoscritti.
+ AEM Communities fornisce una sezione delle notifiche che mostra gli eventi di interesse per i membri della community sottoscritti.
 
 Le notifiche sono simili alle [attività](essentials-activities.md) e alle [sottoscrizioni](subscriptions.md) derivanti da
 
