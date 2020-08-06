@@ -1,8 +1,8 @@
 ---
 title: Scadenza degli oggetti statici
 seo-title: Scadenza degli oggetti statici
-description: Scopri come configurare AEM in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
-seo-description: Scopri come configurare AEM in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
+description: Scoprite come configurare AEM in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
+seo-description: Scoprite come configurare AEM in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Le scadenze sono specificate dallo standard HTTP per quanto riguarda la &quot;sc
 >
 >Questa configurazione è completamente separata dal Dispatcher (e non funziona per esso).
 >
->Lo scopo del dispatcher è quello di memorizzare i dati nella cache di fronte ad AEM.
+>Lo scopo del Dispatcher è quello di memorizzare i dati nella cache davanti a AEM.
 
 Tutti i file, che non sono dinamici e che non subiscono modifiche nel tempo, possono e devono essere memorizzati nella cache. La configurazione per il server Apache HTTPD potrebbe essere simile a una delle seguenti, a seconda dell&#39;ambiente:
 
