@@ -1,6 +1,6 @@
 ---
-title: Impostazioni generali di AEM Forms
-seo-title: Impostazioni generali di AEM Forms
+title: Impostazioni generali  AEM Forms
+seo-title: Impostazioni generali  AEM Forms
 description: Scoprite come configurare le impostazioni della pagina Configurazioni di base nella console di amministrazione per migliorare le prestazioni del sistema.
 seo-description: Scoprite come configurare le impostazioni della pagina Configurazioni di base nella console di amministrazione per migliorare le prestazioni del sistema.
 uuid: 940680fd-b7ab-4376-aa5b-e139223522ea
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Impostazioni generali di AEM Forms {#general-aem-forms-settings}
+# Impostazioni generali  AEM Forms {#general-aem-forms-settings}
 
 La pagina Configurazioni di base nella console di amministrazione fornisce impostazioni che consentono di migliorare le prestazioni del sistema. Dopo aver configurato o aggiornato queste impostazioni, riavviate il server applicazione.
 
@@ -33,9 +33,9 @@ Per informazioni sull&#39;abilitazione della modalità di backup sicuro, consult
 
 ## Opzioni delle configurazioni di base {#core-configurations-options}
 
-**Posizione della directory** temporanea Il percorso della directory in cui i moduli AEM creeranno i file temporanei dei prodotti. Se il valore di questa impostazione è vuoto, per impostazione predefinita la posizione corrisponde alla directory temporanea del sistema. Verificate che la directory temporanea sia una cartella scrivibile.
+**Posizione della directory** temporanea Il percorso della directory in cui AEM moduli creeranno file temporanei di prodotto. Se il valore di questa impostazione è vuoto, per impostazione predefinita la posizione corrisponde alla directory temporanea del sistema. Verificate che la directory temporanea sia una cartella scrivibile.
 
-***nota **: Assicurarsi che la directory temporanea si trovi nel file system locale. I moduli AEM non supportano una directory temporanea in una posizione remota.*
+***nota **: Assicurarsi che la directory temporanea si trovi nel file system locale. AEM moduli non supporta una directory temporanea in una posizione remota.*
 
 **Directory** radice dell&#39;archivio documenti globale La directory radice dell&#39;archivio documenti globale (GDS) è utilizzata per i seguenti scopi:
 
@@ -44,9 +44,9 @@ Per informazioni sull&#39;abilitazione della modalità di backup sicuro, consult
 
 >[!NOTE]
 >
->È inoltre possibile abilitare l&#39;archiviazione documenti nel database moduli di AEM. Tuttavia, le prestazioni del sistema sono migliori quando si utilizza il GDS.
+>È inoltre possibile abilitare l&#39;archiviazione dei documenti nel database dei moduli AEM. Tuttavia, le prestazioni del sistema sono migliori quando si utilizza il GDS.
 
-* Trasferimento di documenti tra nodi di un cluster. Se si esegue AEM Forms in un ambiente cluster, questa directory deve essere accessibile da tutti i nodi del cluster.
+* Trasferimento di documenti tra nodi di un cluster. Se si esegue AEM moduli in un ambiente cluster, è necessario che la directory sia accessibile da tutti i nodi del cluster.
 * Ricezione dei parametri in arrivo dalle chiamate API remote.
 
 Se non si specifica una directory radice GDS, per impostazione predefinita la directory corrisponde a una directory del server applicazione:
@@ -57,19 +57,19 @@ Se non si specifica una directory radice GDS, per impostazione predefinita la di
 
 >[!NOTE]
 >
->La modifica del valore dell&#39;impostazione della directory principale GDS deve essere effettuata con particolare attenzione. La directory GDS viene utilizzata per memorizzare sia i file longevi utilizzati in un processo che i componenti critici dei moduli AEM. La modifica della posizione della directory GDS è una modifica importante del sistema. La configurazione non corretta della posizione della directory GDS renderà i moduli AEM inattivi e potrebbe richiedere una reinstallazione completa dei moduli AEM. Se si specifica una nuova posizione per la directory GDS, è necessario arrestare il server applicazione e migrare i dati prima di riavviare il server. L&#39;amministratore di sistema deve spostare tutti i file dalla posizione precedente alla nuova posizione, ma mantenere la struttura di directory interna.
+>La modifica del valore dell&#39;impostazione della directory principale GDS deve essere effettuata con particolare attenzione. La directory GDS viene utilizzata per memorizzare sia i file longevi utilizzati all&#39;interno di un processo che i componenti critici AEM dei prodotti dei moduli. La modifica della posizione della directory GDS è una modifica importante del sistema. La configurazione non corretta della posizione della directory GDS renderà AEM moduli inattivi e potrebbe richiedere la reinstallazione completa dei moduli AEM. Se si specifica una nuova posizione per la directory GDS, è necessario arrestare il server applicazione e migrare i dati prima di riavviare il server. L&#39;amministratore di sistema deve spostare tutti i file dalla posizione precedente alla nuova posizione, ma mantenere la struttura di directory interna.
 
 >[!NOTE]
 >
 >Non specificare la stessa directory per la directory temp e la directory GDS.
 
-Per ulteriori informazioni sulla directory GDS, consultate [Preparazione all&#39;installazione di moduli AEM (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Per ulteriori informazioni sulla directory GDS, vedere [Preparazione all&#39;installazione di moduli AEM (Server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
-**Posizione della directory** Font di Adobe Server Digitare il percorso della directory che contiene i font del server Adobe. Questi font vengono installati con i moduli AEM. Il percorso predefinito per questi font è la directory principale [/font dei moduli]aem. Se questa directory non è accessibile, potete copiare i font altrove e utilizzare questa impostazione per specificare il nuovo percorso.
+**Posizione della directory** Font del server di Adobe  Digitare il percorso della directory che contiene i font del server di Adobe . Questi font vengono installati con AEM moduli. Il percorso predefinito per questi font è la directory principale [/font dei moduli]aem. Se questa directory non è accessibile, potete copiare i font altrove e utilizzare questa impostazione per specificare il nuovo percorso.
 
 **Posizione della directory** Font del cliente Digitare il percorso di una directory che contiene i font aggiuntivi che si desidera utilizzare.
 
-***nota **: I font vengono selezionati dalla cache dei font di sistema di Windows e per aggiornare la cache è necessario riavviare il sistema. Dopo aver specificato la directory dei font per il cliente, accertatevi di riavviare il sistema in cui sono installati i moduli AEM.*
+***nota **: I font vengono selezionati dalla cache dei font di sistema di Windows e per aggiornare la cache è necessario riavviare il sistema. Dopo aver specificato la directory dei font del cliente, assicurarsi di riavviare il sistema in cui sono installati AEM moduli.*
 
 **Posizione della directory** Font di sistema Digitare il percorso della directory dei font fornita dal sistema operativo in uso. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 
@@ -79,11 +79,11 @@ Il file di configurazione di Data Services consente la personalizzazione delle i
 
 Questa impostazione è vuota per impostazione predefinita.
 
-**Dimensioni massime predefinite del documento in linea (byte)** Il numero massimo di byte conservati in memoria durante il passaggio di documenti tra vari componenti di moduli AEM. Utilizzare questa impostazione per ottimizzare le prestazioni. I documenti di dimensioni inferiori a questo numero vengono memorizzati e memorizzati nel database. I documenti che superano questo limite massimo vengono memorizzati sul disco rigido.
+**Dimensioni massime predefinite del documento in linea (byte)** Il numero massimo di byte conservati in memoria durante il passaggio di documenti tra vari componenti AEM. Utilizzare questa impostazione per ottimizzare le prestazioni. I documenti di dimensioni inferiori a questo numero vengono memorizzati e memorizzati nel database. I documenti che superano questo limite massimo vengono memorizzati sul disco rigido.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 65536 byte.
 
-**Timeout predefinito per lo smaltimento dei documenti (secondi)** Il tempo massimo, in secondi, durante il quale un documento passato tra i vari componenti di AEM viene considerato attivo. Una volta trascorso tale periodo, i file utilizzati per memorizzare il documento sono soggetti a rimozione. Utilizzare questa impostazione per controllare l&#39;utilizzo dello spazio su disco.
+**Timeout predefinito per lo smaltimento dei documenti (secondi)** Il tempo massimo, in secondi, durante il quale un documento passato tra vari componenti di moduli AEM viene considerato attivo. Una volta trascorso tale periodo, i file utilizzati per memorizzare il documento sono soggetti a rimozione. Utilizzare questa impostazione per controllare l&#39;utilizzo dello spazio su disco.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 600 secondi.
 
@@ -91,28 +91,28 @@ Questa impostazione è obbligatoria. Il valore predefinito è 600 secondi.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 30 secondi.
 
-**Abilita FIPS** Selezionare questa opzione per abilitare la modalità FIPS. Il Federal Information Processing Standard (FIPS) 140-2 è uno standard di crittografia definito dal governo degli Stati Uniti. In modalità FIPS, i moduli AEM limitano la protezione dei dati agli algoritmi approvati da FIPS 140-2 utilizzando il modulo di crittografia RSA BSAFE Crypto-C 2.1.
+**Abilita FIPS** Selezionare questa opzione per abilitare la modalità FIPS. Il Federal Information Processing Standard (FIPS) 140-2 è uno standard di crittografia definito dal governo degli Stati Uniti. In modalità FIPS, AEM moduli limita la protezione dei dati agli algoritmi approvati FIPS 140-2 utilizzando il modulo di crittografia RSA BSAFE Crypto-C 2.1.
 
-La modalità FIPS non supporta gli algoritmi di cifratura utilizzati nelle versioni di Adobe Acrobat® precedenti alla 7.0. Se la modalità FIPS è abilitata e si utilizza il servizio di cifratura per cifrare il PDF utilizzando una password con un livello di compatibilità impostato su Acrobat 5, il tentativo di cifratura non riuscirà con un errore.
+La modalità FIPS non supporta gli algoritmi di cifratura utilizzati in  versioni di Adobe Acrobat® precedenti alla 7.0. Se la modalità FIPS è abilitata e si utilizza il servizio di cifratura per cifrare il PDF utilizzando una password con un livello di compatibilità impostato su  Acrobat 5, il tentativo di cifratura non riuscirà con un errore.
 
 In generale, quando FIPS è abilitato, il servizio Assembler non applicherà la crittografia della password ad alcun documento. Se si tenta di eseguire questa operazione, viene generata un&#39;eccezione FIPSModeException che indica che la crittografia della password non è consentita in modalità FIPS. Inoltre, l&#39;elemento PDFsFromBookmarks della descrizione documento XML (DDX) non è supportato in modalità FIPS se il documento di base è crittografato con password.
 
 >[!NOTE]
 >
->Il software per moduli AEM non convalida il codice per garantire la compatibilità FIPS. Fornisce una modalità di funzionamento FIPS in modo che gli algoritmi approvati FIPS siano utilizzati per i servizi di crittografia dalle librerie approvate FIPS (RSA).
+>AEM software dei moduli non convalida il codice per garantire la compatibilità FIPS. Fornisce una modalità di funzionamento FIPS in modo che gli algoritmi approvati FIPS siano utilizzati per i servizi di crittografia dalle librerie approvate FIPS (RSA).
 
-**Abilita WSDL** Selezionate questa opzione per abilitare la generazione del linguaggio WSDL (Web Service Definition Language) per tutti i servizi che fanno parte di moduli AEM.
+**Abilita WSDL** Selezionare questa opzione per abilitare la generazione del linguaggio WSDL (Web Service Definition Language) per tutti i servizi che fanno parte di moduli AEM.
 
 Abilitate questa opzione negli ambienti di sviluppo, dove gli sviluppatori utilizzano la generazione WSDL per creare le applicazioni client. Potete scegliere di disabilitare la generazione WSDL in un ambiente di produzione per evitare di esporre i dettagli interni di un servizio.
 
-**Abilita archiviazione documenti nel database** Selezionate questa opzione per memorizzare documenti di lunga durata nel database dei moduli AEM. L&#39;attivazione di questa opzione non elimina la necessità di una directory GDS. Tuttavia, scegliendo questa opzione è possibile semplificare i backup dei moduli AEM. Se si utilizza solo il GDS, un backup comporta l’implementazione del sistema di moduli AEM in modalità di backup e il completamento dei backup del database e del GDS. Se si seleziona l&#39;opzione del database, il backup prevede il completamento del backup del database per una nuova installazione o il completamento del backup del database e il backup una tantum del GDS per un aggiornamento. Potrebbe essere necessaria una gestione aggiuntiva del database per eliminare processi e dati rispetto a una configurazione solo GDS. (Vedere Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti.)
+**Abilita archiviazione documenti nel database** Selezionare questa opzione per memorizzare i documenti di lunga durata nel database dei moduli AEM. L&#39;attivazione di questa opzione non elimina la necessità di una directory GDS. Tuttavia, scegliendo questa opzione è possibile semplificare AEM backup dei moduli. Se si utilizza solo il GDS, un backup richiede il posizionamento del sistema di moduli AEM AEM in modalità di backup e il completamento dei backup del database e del GDS. Se si seleziona l&#39;opzione del database, il backup prevede il completamento del backup del database per una nuova installazione o il completamento del backup del database e il backup una tantum del GDS per un aggiornamento. Potrebbe essere necessaria una gestione aggiuntiva del database per eliminare processi e dati rispetto a una configurazione solo GDS. (Vedere Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti.)
 
-**Abilita statistica** chiamate DSC Quando questa opzione è selezionata, AEM Forms tiene traccia delle statistiche di chiamata, come il numero di chiamate, la quantità di tempo impiegato per richiamare e il numero di errori nelle chiamate. Queste informazioni sono memorizzate in un fagiolo JMX in modo da poter utilizzare Java™ JConsole o software di terze parti per consultare le statistiche. Se non si desidera visualizzare queste statistiche, deselezionare questa opzione per migliorare le prestazioni dei moduli AEM.
+**Abilita statistica** chiamate DSC Quando questa opzione è selezionata, AEM moduli tiene traccia delle statistiche di chiamata, come il numero di chiamate, la quantità di tempo impiegato per richiamare e il numero di errori nelle chiamate. Queste informazioni sono memorizzate in un fagiolo JMX in modo da poter utilizzare Java™ JConsole o software di terze parti per consultare le statistiche. Se non si desidera visualizzare queste statistiche, deselezionare questa opzione per migliorare le prestazioni AEM moduli.
 
-**Abilita RDS** Quando si seleziona questa opzione, il servlet Servizi di sviluppo remoto (RDS) viene attivato nei moduli AEM. Quando questa opzione è abilitata, gli strumenti lato client possono interagire con Data Services per eseguire operazioni quali l&#39;implementazione o l&#39;annullamento della distribuzione di modelli per creare destinazioni ed endpoint, o per scoprire quali modelli sono stati distribuiti negli endpoint. Per impostazione predefinita, questa opzione non è selezionata.
+**Abilita RDS** Selezionando questa opzione è possibile abilitare il servlet Servizi di sviluppo remoto (RDS) all&#39;interno AEM moduli. Quando questa opzione è abilitata, gli strumenti lato client possono interagire con Data Services per eseguire operazioni quali l&#39;implementazione o l&#39;annullamento della distribuzione di modelli per creare destinazioni ed endpoint, o per scoprire quali modelli sono stati distribuiti negli endpoint. Per impostazione predefinita, questa opzione non è selezionata.
 
 **Consenti richiesta** RDS non sicura Se questa opzione è selezionata, le richieste RDS non devono utilizzare https. Per impostazione predefinita, questa opzione non è selezionata e tutte le comunicazioni a Data Services devono essere richieste https.
 
-**Consenti caricamento di documenti non protetti dalle applicazioni Flex:** Il servlet di caricamento dei file utilizzato per caricare i documenti dalle applicazioni Adobe Flex® ai moduli AEM richiede che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente applicazione Caricamento documento o un altro ruolo che include l&#39;autorizzazione Caricamento documento. Questo consente di impedire agli utenti non autorizzati di caricare documenti nel server moduli AEM. Selezionate questa opzione se desiderate disattivare questa funzione di protezione in un ambiente di sviluppo o per garantire la compatibilità con le versioni precedenti dei moduli AEM. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, consultate &quot;Invoking AEM forms Using AEM forms Remoting&quot; (Invocare moduli AEM utilizzando la funzionalità REMIX moduli AEM) nella programmazione con i moduli AEM.
+**Consenti caricamento di documenti non protetti dalle applicazioni Flex:** Il servlet di caricamento dei file utilizzato per caricare documenti  applicazioni di Flex® AEM moduli richiede che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente applicazione Caricamento documento o un altro ruolo che include l&#39;autorizzazione Caricamento documento. Questo consente di impedire agli utenti non autorizzati di caricare documenti nel server AEM moduli. Selezionare questa opzione se si desidera disattivare questa funzione di protezione in un ambiente di sviluppo o per garantire la compatibilità con versioni precedenti dei moduli AEM. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, vedere &quot;Invocazione AEM moduli utilizzando AEM rimozione dei moduli&quot; in Programmazione con AEM moduli.
 
-**Consenti caricamento di documenti non protetti dalle applicazioni Java SDK:** I caricamenti HTTP DocumentManager devono essere protetti. Per impostazione predefinita, i caricamenti HTTP richiedono che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente servizi o un altro ruolo che contiene l&#39;autorizzazione Richiamo servizi. Questo consente di impedire agli utenti non autorizzati di caricare documenti nel server dei moduli. Selezionate questa opzione se desiderate disattivare questa funzione di protezione in un ambiente di sviluppo, per compatibilità con le versioni precedenti dei moduli AEM o in base alla configurazione del firewall in uso. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, consultate &quot;Richiamo di moduli AEM tramite l&#39;API Java&quot; nella programmazione con i moduli AEM.
+**Consenti caricamento di documenti non protetti dalle applicazioni Java SDK:** I caricamenti HTTP DocumentManager devono essere protetti. Per impostazione predefinita, i caricamenti HTTP richiedono che gli utenti siano autenticati e autorizzati prima di poter caricare i documenti. All&#39;utente deve essere assegnato il ruolo Utente servizi o un altro ruolo che contiene l&#39;autorizzazione Richiamo servizi. Questo consente di impedire agli utenti non autorizzati di caricare documenti nel server dei moduli. Selezionare questa opzione se si desidera disattivare questa funzione di protezione in un ambiente di sviluppo, per garantire la compatibilità con versioni precedenti dei moduli AEM o in base alla configurazione del firewall in uso. Per impostazione predefinita, questa opzione non è selezionata. Per informazioni dettagliate, vedere &quot;Chiamata di moduli AEM tramite l&#39;API Java&quot; nella programmazione con AEM moduli.
