@@ -1,6 +1,6 @@
 ---
-title: Best practice
-seo-title: Best practice
+title: 'Best practice  '
+seo-title: 'Best practice  '
 description: Come utilizzare AEM nel modo più efficace ed efficiente possibile
 seo-description: Come utilizzare AEM nel modo più efficace ed efficiente possibile
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 89%
 
 ---
 
 
-# Best practice{#best-practices}
+# Best practice  {#best-practices}
 
 Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
@@ -23,7 +26,7 @@ La documentazione relativa alle best practice disponibile per le aree seguenti:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Moduli](#forms)
+* [Forms](#forms)
 
 Per le best practice relative ad amministrazione, distribuzione e manutenzione o sviluppo, consulta uno dei documenti elencati di seguito:
 
