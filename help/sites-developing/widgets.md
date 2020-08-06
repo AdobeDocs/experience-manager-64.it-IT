@@ -1,8 +1,8 @@
 ---
 title: Utilizzo ed estensione dei widget (interfaccia classica)
 seo-title: Utilizzo ed estensione dei widget (interfaccia classica)
-description: L'interfaccia basata sul Web di AEM utilizza AJAX e altre moderne tecnologie browser per consentire agli autori di modificare e formattare i contenuti WYSIWYG direttamente sulla pagina Web
-seo-description: L'interfaccia basata sul Web di AEM utilizza AJAX e altre moderne tecnologie browser per consentire agli autori di modificare e formattare i contenuti WYSIWYG direttamente sulla pagina Web
+description: AEM interfaccia basata su Web utilizza AJAX e altre moderne tecnologie di browser per consentire la modifica e la formattazione WYSIWYG dei contenuti da parte degli autori direttamente sulla pagina Web
+seo-description: AEM interfaccia basata su Web utilizza AJAX e altre moderne tecnologie di browser per consentire la modifica e la formattazione WYSIWYG dei contenuti da parte degli autori direttamente sulla pagina Web
 uuid: e8dfa140-dab7-4e08-a790-d703adf86d6f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '5182'
+ht-degree: 0%
 
 ---
 
 
 # Utilizzo ed estensione dei widget (interfaccia classica){#using-and-extending-widgets-classic-ui}
 
-L&#39;interfaccia basata su Web di Adobe Experience Manager utilizza AJAX e altre moderne tecnologie browser per consentire agli autori di modificare e formattare i contenuti WYSIWYG direttamente sulla pagina Web.
+L&#39;interfaccia basata su Web di Adobe Experience Manager utilizza AJAX e altre moderne tecnologie di browser per consentire la modifica e la formattazione WYSIWYG dei contenuti da parte degli autori direttamente sulla pagina Web.
 
-Adobe Experience Manager (AEM) utilizza la libreria di widget [ExtJS](https://www.sencha.com/) , che fornisce gli elementi dell’interfaccia utente altamente lucidi che funzionano su tutti i browser più importanti e consentono la creazione di esperienze dell’interfaccia utente per desktop.
+Adobe Experience Manager (AEM) utilizza la libreria widget [ExtJS](https://www.sencha.com/) , che fornisce gli elementi dell&#39;interfaccia utente altamente lucidi che funzionano su tutti i browser più importanti e consentono la creazione di esperienze dell&#39;interfaccia utente di livello desktop.
 
-Questi widget sono inclusi in AEM e, oltre a essere utilizzati direttamente da AEM, possono essere utilizzati da qualsiasi sito Web creato tramite AEM.
+Questi widget sono inclusi in AEM e, oltre ad essere utilizzati da AEM, possono essere utilizzati da qualsiasi sito Web creato utilizzando AEM.
 
-Per un riferimento completo a tutti i widget disponibili in AEM, consulta la documentazione [API relativa ai](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) widget o l’ [elenco degli xtype](/help/sites-developing/xtypes.md)esistenti. Inoltre, molti esempi che mostrano come utilizzare il framework ExtJS sono disponibili sul sito [Sencha](https://www.sencha.com/products/extjs/examples/) , il proprietario del framework.
+Per un riferimento completo a tutti i widget disponibili in AEM potete fare riferimento alla documentazione [API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) widget o all&#39; [elenco di xtype](/help/sites-developing/xtypes.md)esistenti. Inoltre, molti esempi che mostrano come utilizzare il framework ExtJS sono disponibili sul sito [Sencha](https://www.sencha.com/products/extjs/examples/) , il proprietario del framework.
 
 Questa pagina fornisce alcune informazioni su come utilizzare ed estendere i widget. In primo luogo, descrive come [includere il codice lato client in una pagina](#including-the-client-sided-code-in-a-page). Vengono quindi descritti alcuni componenti di esempio creati per illustrare l’uso e l’estensione di base. Tali componenti sono disponibili nel pacchetto **Using ExtJS Widget** on **Package Share**(Utilizzo di widgetJS in Package Share).
 
@@ -41,7 +44,7 @@ Il pacchetto include esempi di:
 
 >[!NOTE]
 >
->Questa pagina descrive l’utilizzo dei widget nell’interfaccia classica. Adobe consiglia di utilizzare la moderna interfaccia [touch basata sull’interfaccia utente](/help/sites-developing/touch-ui-concepts.md) [Coral e l’interfaccia utente](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Questa pagina descrive l’utilizzo dei widget nell’interfaccia classica.  Adobe consiglia di utilizzare la moderna interfaccia [touch basata sull’interfaccia utente](/help/sites-developing/touch-ui-concepts.md) [Coral e l’interfaccia utente](/help/sites-developing/touch-ui-concepts.md#coral-ui) [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)Granite.
 
 ## Inclusione del codice lato client in una pagina {#including-the-client-sided-code-in-a-page}
 
@@ -62,9 +65,9 @@ Per creare una libreria client:
 
    >[!NOTE]
    >
-   >Nota: è `<category-name>` il nome della libreria personalizzata (ad es. &quot;cq.extjstragging&quot;) ed è utilizzato per includere la libreria nella pagina.
+   >Nota: `<category-name>` è il nome della libreria personalizzata (ad es. &quot;cq.extjstragging&quot;) ed è utilizzato per includere la libreria nella pagina.
 
-1. Di seguito `clientlib` create le cartelle `css` e `js` (nt:folder).
+1. Di seguito `clientlib` create le cartelle `css` e `js` le cartelle (nt:folder).
 
 1. Sotto `clientlib` create i file `css.txt` e `js.txt` (nt:files). Tali file .txt elencano i file inclusi nella libreria.
 
@@ -100,8 +103,7 @@ Per includere la libreria client nell’jsp del componente pagina:
 
    `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
 
-   
-dove `<category-nameX>` è il nome della libreria sul lato client.
+   dove `<category-nameX>` è il nome della libreria sul lato client.
 
 * per includere solo il codice JavaScript:
 
@@ -121,23 +123,22 @@ In alcuni casi, una libreria client dovrebbe essere disponibile solo in modalit�
 
 Per seguire le esercitazioni riportate in questa pagina, installate il pacchetto denominato **Using ExtJS Widgets** in un’istanza AEM locale e create una pagina di esempio in cui i componenti saranno inclusi. A questo scopo:
 
-1. Nell’istanza di AEM, scaricate il pacchetto denominato **Utilizzo dei widget ExtJS (v01)** da Package Share e installate il pacchetto. Crea il progetto `extjstraining` sottostante `/apps` nella directory archivio.
+1. Nell&#39;istanza AEM scaricate il pacchetto denominato **Utilizzo dei widget ExtJS (v01)** da Package Share e installate il pacchetto. Crea il progetto `extjstraining` sottostante `/apps` nella directory archivio.
 
 1. Includete la libreria client contenente gli script (js) e il foglio di stile (css) nel tag head del jsp pagina geometrixx, in quanto includerete i componenti di esempio in una nuova pagina del ramo **Geometrixx** :
 
-   
-in **CRXDE Lite** aprite il file `/apps/geometrixx/components/page/headlibs.jsp` e aggiungete la `cq.extjstraining` categoria al `<ui:includeClientLib>` tag esistente come segue:
+   in **CRXDE Lite** aprite il file `/apps/geometrixx/components/page/headlibs.jsp` e aggiungete la `cq.extjstraining` categoria al `<ui:includeClientLib>` tag esistente come segue:
 
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 
-1. Create una nuova pagina nel ramo **Geometrixx** qui sotto `/content/geometrixx/en/products` e chiamatela **utilizzando i widgetJS**.
+1. Create una nuova pagina nel ramo **Geometrixx** qui sotto `/content/geometrixx/en/products` e chiamatela **utilizzando i widgetJS Ext**.
 
-1. Passate alla modalità di progettazione e aggiungete tutti i componenti del gruppo denominato **Utilizzo dei widgetJS** alla progettazione di Geometrixx
+1. Passate alla modalità di progettazione e aggiungete tutti i componenti del gruppo denominato **Utilizzo dei widgetJS** alla progettazione dell’Geometrixx
 1. Torna alla modalità di modifica: i componenti del gruppo **Utilizzo dei widget** ExtJS sono disponibili nella barra laterale.
 
 >[!NOTE]
 >
->Gli esempi presenti in questa pagina si basano sul contenuto di esempio Geometrixx, che non viene più fornito con AEM, dopo essere stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consultate il documento [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) .
+>Gli esempi in questa pagina si basano sul contenuto di Geometrixx, che non viene più fornito con AEM, essendo stato sostituito da We.Retail. Per informazioni su come scaricare e installare Geometrixx, consulta il documento [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) .
 
 ### Finestre di dialogo di base {#basic-dialogs}
 
@@ -151,13 +152,13 @@ Il primo componente del gruppo **Utilizzo dei widget** ExtJS nella barra lateral
 
 * la finestra di dialogo Pannello singolo ( `singlepanel` nodo): viene visualizzata una finestra con 1 scheda con 2 campi di testo.
 * la finestra di dialogo Pannello multiplo ( `multipanel` nodo): la visualizzazione è la stessa della finestra di dialogo Completa, ma viene creata in modo diverso.
-* la finestra di dialogo Progettazione ( `design` nodo): visualizza una finestra con 2 schede. La prima scheda include un campo di testo, un menu a discesa e un&#39;area di testo comprimibile. La seconda scheda dispone di un campo con 4 campi di testo e un campo comprimibile con 2 campi di testo.
+* la finestra di dialogo Progettazione ( `design` nodo): viene visualizzata una finestra con 2 schede. La prima scheda include un campo di testo, un menu a discesa e un&#39;area di testo comprimibile. La seconda scheda dispone di un campo con 4 campi di testo e un campo comprimibile con 2 campi di testo.
 
 Includete il **1. Finestra di dialogo Nozioni di base** nella pagina di esempio:
 
 1. Aggiungete il **1. Nozioni di base sulle** finestre di dialogo per visualizzare la pagina di esempio dalla scheda **Utilizzo dei widget** ExtJS nella barra **laterale**.
 
-1. Il componente visualizza un titolo, un testo e un collegamento **PROPERTIES** : fate clic sul collegamento per visualizzare le proprietà del paragrafo memorizzato nella directory archivio. Fate nuovamente clic sul collegamento per nascondere le proprietà.
+1. Il componente visualizza un titolo, un testo e un collegamento **PROPERTIES** : fare clic sul collegamento per visualizzare le proprietà del paragrafo memorizzato nella directory archivio. Fate nuovamente clic sul collegamento per nascondere le proprietà.
 
 Il componente viene visualizzato come segue:
 
@@ -217,7 +218,7 @@ Per utilizzare la finestra di dialogo Pannello singolo:
 
 ![screen_shot_2012-01-31at45952pm](assets/screen_shot_2012-01-31at45952pm.png)
 
-#### Esempio 3: Finestra di dialogo multipannello {#example-multi-panel-dialog}
+#### Esempio 3: Finestra di dialogo Pannello multiplo {#example-multi-panel-dialog}
 
 La finestra di dialogo **Pannello** multiplo ha la stessa visualizzazione della finestra di dialogo **Completa** , ma è costruita in modo diverso. Le sue caratteristiche sono:
 
@@ -242,8 +243,7 @@ Per utilizzare la finestra di dialogo Pannello multiplo:
 
 1. Sostituisce la finestra di dialogo del componente **Finestra di dialogo Nozioni di base** con la finestra di dialogo **Pannello** multiplo:
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente: la finestra di dialogo viene visualizzata come segue:
 
@@ -272,8 +272,7 @@ Per utilizzare la finestra di dialogo **Rich** :
 
 1. Sostituire la finestra di dialogo del componente **Finestra di dialogo Nozioni di base** con la finestra di dialogo **RTF** :
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente: la finestra di dialogo viene visualizzata come segue:
 
@@ -283,7 +282,7 @@ seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello
 
 Il secondo componente del gruppo **Utilizzo dei widget** ExtJS nella barra laterale è denominato **2. Dialoghi** dinamici e includono tre finestre di dialogo dinamiche costruite con widget predefiniti e **con logica** JavaScript personalizzata. Le finestre di dialogo sono memorizzate di seguito `/apps/extjstraining/components/dynamicdialogs`. Le finestre di dialogo dinamiche sono:
 
-* finestra di dialogo Switch Tabs ( `switchtabs` nodo): viene visualizzata una finestra con due schede. La prima scheda dispone di una selezione di pulsanti di scelta con tre opzioni: quando è selezionata un&#39;opzione, viene visualizzata una scheda relativa all&#39;opzione. La seconda scheda contiene due campi di testo.
+* la finestra di dialogo Switch Tabs ( `switchtabs` nodo): viene visualizzata una finestra con due schede. La prima scheda dispone di una selezione di pulsanti di scelta con tre opzioni: quando è selezionata un&#39;opzione, viene visualizzata una scheda relativa all&#39;opzione. La seconda scheda contiene due campi di testo.
 * la finestra di dialogo arbitraria ( `arbitrary` nodo): viene visualizzata una finestra con una scheda. Nella scheda è presente un campo da cui rilasciare o caricare una risorsa e un campo in cui sono visualizzate informazioni sulla pagina contenitore e sulla risorsa, se vi si fa riferimento.
 * finestra di dialogo Attiva/disattiva campi ( `togglefield` nodo): viene visualizzata una finestra con una scheda. La scheda dispone di una casella di controllo: quando viene selezionato, viene visualizzato un set di campi con due campi di testo.
 
@@ -316,7 +315,7 @@ Le sue caratteristiche principali sono:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/switchtabs.-1.json`
 
-La logica è implementata tramite i listener di eventi e il codice JavaScript come segue:
+La logica è implementata tramite i listener di eventi e il codice javascript come segue:
 
 * Il nodo di dialogo ha un listener &quot; `beforeshow`&quot; che nasconde tutte le schede facoltative prima della visualizzazione della finestra di dialogo:
 
@@ -364,7 +363,7 @@ Viene visualizzato come segue:
 
 Molto spesso viene visualizzata una finestra di dialogo con il contenuto del componente sottostante. La finestra di dialogo qui descritta, denominata **finestra di dialogo arbitraria** , estrae il contenuto da un altro componente.
 
-Nella finestra di dialogo **arbitrario** viene visualizzata una finestra con una scheda. La scheda presenta due campi: uno per rilasciare o caricare una risorsa e uno per visualizzare informazioni sulla pagina contenitore e sulla risorsa, se esiste un riferimento.
+Nella finestra di dialogo **arbitrario** viene visualizzata una finestra con una scheda. La scheda presenta due campi: uno per rilasciare o caricare una risorsa e uno per visualizzare informazioni sulla pagina contenitore e sulla risorsa, se vi è stato riferimento.
 
 Le sue caratteristiche principali sono:
 
@@ -382,7 +381,7 @@ Le sue caratteristiche principali sono:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/arbitrary.-1.json`
 
-La logica è implementata tramite i listener di eventi e il codice JavaScript come segue:
+La logica è implementata tramite i listener di eventi e il codice javascript come segue:
 
 * Il widget di proprietà dispone di un listener &quot; `loadcontent`&quot; che mostra informazioni sulla pagina contenente il componente e la risorsa a cui fa riferimento il widget smartfile quando il contenuto viene caricato:
 
@@ -410,10 +409,9 @@ La logica è implementata tramite i listener di eventi e il codice JavaScript co
 
 Per utilizzare la finestra di dialogo **arbitrario** :
 
-1. Sostituire la finestra di dialogo del componente Dialogo **** dinamico con la finestra di dialogo **arbitrario** :
+1. Sostituisce la finestra di dialogo del componente Dialogo **** dinamico con la finestra di dialogo **arbitrario** :
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente: la finestra di dialogo viene visualizzata come segue:
 
@@ -439,9 +437,9 @@ Le sue caratteristiche principali sono:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
 
-La logica è implementata tramite i listener di eventi e il codice JavaScript come segue:
+La logica è implementata tramite i listener di eventi e il codice javascript come segue:
 
-* nella scheda di selezione sono presenti due listener: uno che mostra lo stato di dialogfieldè quando il contenuto viene caricato (&quot;evento&quot; `loadcontent`&quot;) e uno che mostra lo stato di dialogfieldità quando la selezione viene modificata (&quot; evento `selectionchanged`&quot;):
+* nella scheda di selezione sono presenti due listener: uno che mostra lo stato di dialogfieldè quando il contenuto viene caricato (&quot;evento&quot; `loadcontent`&quot;) e uno che mostra lo stato di dialogfieldità quando la selezione viene modificata (&quot;evento&quot; `selectionchanged`&quot;):
 
    `loadcontent="function(field,rec,path){Ejst.x2.toggleFieldSet(field);}"`
 
@@ -461,10 +459,9 @@ La logica è implementata tramite i listener di eventi e il codice JavaScript co
 
 Per utilizzare la finestra di dialogo **Attiva/disattiva campi** :
 
-1. Sostituire la finestra di dialogo del componente Finestra di dialogo **** dinamica con la finestra di dialogo **Attiva campi** :
+1. Sostituisce la finestra di dialogo del componente Finestra di dialogo **** dinamica con la finestra di dialogo **Attiva campi** :
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente: la finestra di dialogo viene visualizzata come segue:
 
@@ -474,9 +471,9 @@ seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello
 
 I widget forniti con AEM dovrebbero includere la maggior parte dei casi di utilizzo. Tuttavia, a volte potrebbe essere necessario creare un widget personalizzato per soddisfare un requisito specifico del progetto. È possibile creare widget personalizzati estendendone quelli esistenti. Per iniziare a utilizzare questa personalizzazione, il pacchetto **Using ExtJS Widgets** include tre finestre di dialogo che utilizzano tre widget personalizzati diversi:
 
-* la finestra di dialogo Campo multiplo ( `multifield` nodo) visualizza una finestra con una scheda. La scheda dispone di un widget multicampo personalizzato con due campi: un menu a discesa con due opzioni e un campo di testo. Poiché si basa sul `multifield` widget out-of-the-box (che dispone solo di un campo di testo), ha tutte le funzioni del `multifield` widget.
+* la finestra di dialogo Campo multiplo ( `multifield` nodo) visualizza una finestra con una scheda. La scheda dispone di un widget multicampo personalizzato con due campi: un menu a discesa con due opzioni e un campo di testo. Poiché si basa sul `multifield` widget out-of-the-box (che dispone solo di un campo di testo), dispone di tutte le funzioni del `multifield` widget.
 
-* la finestra di dialogo Sfoglia struttura ( `treebrowse` nodo) visualizza una finestra con una scheda contenente un widget di ricerca percorso: quando si fa clic sulla freccia, si apre una finestra in cui è possibile esplorare una gerarchia e selezionare un elemento. Il percorso dell’elemento viene quindi aggiunto al campo percorso e viene mantenuto alla chiusura della finestra di dialogo.
+* la finestra di dialogo Sfoglia struttura ( `treebrowse` nodo) visualizza una finestra con una scheda contenente un widget di ricerca del percorso: quando si fa clic sulla freccia, si apre una finestra in cui è possibile esplorare una gerarchia e selezionare un elemento. Il percorso dell’elemento viene quindi aggiunto al campo percorso e viene mantenuto alla chiusura della finestra di dialogo.
 * una finestra di dialogo basata sul plug-in Editor Rich Text ( `rteplugin` nodo) che aggiunge un pulsante personalizzato all&#39;Editor Rich Text per inserire del testo personalizzato nel testo principale. È costituito da un `richtext` widget (RTE) e da una funzione personalizzata che viene aggiunta tramite il meccanismo plug-in RTE.
 
 I widget personalizzati e il plug-in sono inclusi nel componente denominato **3. Widget** personalizzati del pacchetto **Using ExtJS Widgets** . Per includere questo componente nella pagina di esempio:
@@ -508,8 +505,7 @@ Finestra di dialogo **Custom Multifield** basata su:
 
       `/apps/extjstraining/clientlib/js/exercises.js`
 
-      
-e restituisce 2 opzioni.
+      e restituisce 2 opzioni.
 
 * È definito dal `multifield` nodo in:
 
@@ -552,7 +548,7 @@ La finestra di dialogo **personalizzata basata su widget multicampo** viene visu
 
 La finestra di dialogo personalizzata basata su widget **Sfoglia** presenta una finestra con una scheda contenente un widget di ricerca del percorso personalizzato: quando si fa clic sulla freccia, si apre una finestra in cui è possibile esplorare una gerarchia e selezionare un elemento. Il percorso dell’elemento viene quindi aggiunto al campo percorso e viene mantenuto alla chiusura della finestra di dialogo.
 
-Finestra di dialogo delle risorse personalizzate:
+Finestra di dialogo delle righe di testo personalizzata:
 
 * È definito da un nodo (tipo di nodo = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
@@ -600,8 +596,7 @@ Per utilizzare la finestra di dialogo basata su widget **personalizzato** Sfogli
 
 1. Sostituisce la finestra di dialogo del componente Widget **** personalizzati con la finestra di dialogo **Sfoglia** personalizzata:
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente: la finestra di dialogo viene visualizzata come segue:
 
@@ -653,8 +648,7 @@ Per utilizzare la finestra di dialogo basata sul plug-in Editor **Rich Text (RTE
 
 1. Sostituisce la finestra di dialogo del componente Widget **** personalizzati con la finestra di dialogo basata sul plug-in Editor di testo **RTF (Rich Text Editor)** :
 
-   
-seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
+   seguite i passaggi descritti per l&#39; [esempio 2: Finestra di dialogo Pannello singolo](#example-single-panel-dialog)
 
 1. Modificate il componente.
 1. Fate clic sull’ultima icona a destra (quella con quattro frecce). Immettete un percorso e fate clic su **OK**:
@@ -706,7 +700,7 @@ Il componente jsp:
 
    `apps/extjstraining/components/treeoverview/content.jsp`
 
-Il codice JavaScript incorporato nel componente jsp:
+Il codice javascript incorporato nel componente jsp:
 
 * Definisce un `tree` oggetto cercando di recuperare una finestra ad albero dalla pagina.
 
@@ -729,7 +723,7 @@ Finestra di dialogo del componente:
 * Visualizza 1 scheda con 2 campi per impostare le dimensioni (larghezza e altezza) della finestra della panoramica struttura e 1 campo per agganciare/sganciare la finestra
 * È definito da un nodo (tipo di nodo = `cq:Dialog`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
 
-* Il pannello ha un widget di dimensioni (tipo di nodo = `cq:Widget`, xtype = [`sizefield`](/help/sites-developing/xtypes.md#sizefield)) e un widget di selezione (tipo di nodo = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), tipo = `radio`) con 2 opzioni (true/false)
+* Il pannello dispone di un widget di dimensioni (tipo di nodo = `cq:Widget`, xtype = [`sizefield`](/help/sites-developing/xtypes.md#sizefield)) e di un widget di selezione (tipo di nodo = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), tipo = `radio`) con 2 opzioni (true/false)
 
 * È definito dal nodo della finestra di dialogo in:
 
@@ -801,7 +795,7 @@ Il componente jsp:
 
    `apps/extjstraining/components/gridoverview/content.jsp`
 
-Il codice JavaScript incorporato nel componente jsp:
+Il codice javascript incorporato nel componente jsp:
 
 * Definisce l’ `grid` oggetto cercando di recuperare il componente finestra dalla pagina:
 
@@ -844,7 +838,7 @@ Come spiegato nella sezione precedente, l&#39;oggetto window ottiene il proprio 
 
 Cambiate il file .js a cui viene fatto riferimento nel componente jsp:
 
-1. In **CRXDE Lite**, nel `content.jsp` file del componente, commentare la riga che include il `defaultgrid.js` file, in modo che abbia il seguente aspetto:
+1. In **CRXDE Lite**, nel `content.jsp` file del componente, aggiungete un commento alla riga che include il `defaultgrid.js` file, in modo che abbia l’aspetto seguente:
 
    `<!-- script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script-->`
 
@@ -865,7 +859,7 @@ Il codice javascript a cui si fa riferimento nel componente jsp (`referencesearc
 
 * `cm` è un [`CQ.Ext.grid.ColumnModel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) oggetto per 3 colonne.
 
-   Le celle di colonna &quot;Test&quot; possono essere modificate in base alla definizione con un editor:
+   Le celle di colonna &quot;Test&quot; possono essere modificate in base alla definizione fornita con un editor:
 
    `editor: new `[`CQ.Ext.form.TextField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)`({})`
 
