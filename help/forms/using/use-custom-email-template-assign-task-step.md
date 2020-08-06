@@ -8,6 +8,9 @@ topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +19,11 @@ source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
 
 Modelli e-mail personalizzati per le notifiche e-mail del flusso di lavoro dei moduli
 
-È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o gruppo. Quando un&#39;attività viene assegnata a un utente o gruppo, viene inviata una notifica e-mail all&#39;utente definito o a ciascun membro del gruppo definito. Una tipica notifica e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività. L&#39;immagine seguente mostra un esempio di notifica e-mail:
+È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un&#39;attività viene assegnata a un utente o gruppo, viene inviata una notifica e-mail all&#39;utente definito o a ciascun membro del gruppo definito. Una tipica notifica e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività. L&#39;immagine seguente mostra un esempio di notifica e-mail:
 
 ![Notifica e-mail con modello out-of-box](do-not-localize/default-email-template.png)
 
-Potete personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. I moduli AEM forniscono un modello standard per le notifiche e-mail. Potete personalizzare il modello out of the box o creare un nuovo modello da zero.
+Potete personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail.  AEM Forms fornisce un modello standard per le notifiche e-mail. Potete personalizzare il modello out of the box o creare un nuovo modello da zero.
 
 I modelli di notifica e-mail si basano sulle e-mail [](https://en.wikipedia.org/wiki/HTML_email)HTML. Tali e-mail si adattano a diversi client e-mail e dimensioni dello schermo. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
 
@@ -30,7 +33,7 @@ L&#39;immagine seguente mostra una notifica e-mail personalizzata:
 
 ## Personalizzare il modello esistente {#customize-the-existing-template}
 
-In AEM Forms è disponibile un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. Potete personalizzare il modello per modificarne l’aspetto. Per personalizzare il modello, effettuate le seguenti operazioni:
+ AEM Forms fornisce un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. Potete personalizzare il modello per modificarne l’aspetto. Per personalizzare il modello, effettuate le seguenti operazioni:
 
 1. Accedete a CRXDE con l&#39;account amministratore.
 
@@ -46,7 +49,7 @@ In AEM Forms è disponibile un modello per le notifiche e-mail. Il modello forni
 
 ## Creare un modello e-mail {#create-an-email-template}
 
-In AEM Forms è disponibile un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. Potete anche aggiungere un modello e-mail personalizzato (il modello personalizzato) per i passaggi Assegnazione attività. Per aggiungere un modello e-mail personalizzato, effettuate le seguenti operazioni:
+ AEM Forms fornisce un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. Potete anche aggiungere un modello e-mail personalizzato (il modello personalizzato) per i passaggi Assegnazione attività. Per aggiungere un modello e-mail personalizzato, effettuate le seguenti operazioni:
 
 1. Accedete a CRXDE con l&#39;account amministratore.
 
