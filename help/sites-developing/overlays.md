@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
 
 AEM (e prima ancora, CQ) utilizza da tempo il principio delle sovrapposizioni per estendere e personalizzare le [console](/help/sites-developing/customizing-consoles-touch.md) e altre funzionalità (ad esempio, l’authoring delle [pagine](/help/sites-developing/customizing-page-authoring-touch.md)).
 
-Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione di AEM), una sovrapposizione significa acquisire le funzionalità predefinite e imporre le proprie definizioni su di essa (per personalizzare le funzionalità standard).
+Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione AEM) una sovrapposizione significa acquisire le funzionalità predefinite e imporre le proprie definizioni su di essa (per personalizzare la funzionalità standard).
 
-In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo. AEM usa un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel `/apps` ramo e poi nel `/libs` ramo (il percorso di [ricerca può essere configurato](#configuring-the-search-paths)). Questo meccanismo significa che la sovrapposizione (e le personalizzazioni qui definite) avranno priorità.
+In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` ed è consigliabile definire la sovrapposizione (personalizzazioni) sotto il `/apps` ramo. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel `/apps` ramo e poi nel `/libs` ramo (il percorso di [ricerca può essere configurato](#configuring-the-search-paths)). Questo meccanismo significa che la sovrapposizione (e le personalizzazioni qui definite) avranno priorità.
 
-A partire da AEM 6.0, sono state apportate modifiche alla modalità di implementazione e utilizzo delle sovrapposizioni:
+A partire dal AEM 6.0, sono state apportate modifiche alle modalità di implementazione e utilizzo delle sovrapposizioni:
 
 * A partire da AEM 6.0 - per le sovrapposizioni [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)(ad es. l’interfaccia touch)
 
@@ -58,7 +61,7 @@ A partire da AEM 6.0, sono state apportate modifiche alla modalità di implement
 >
 >La fusione [di risorse](/help/sites-developing/sling-resource-merger.md) Sling e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia touch standard.
 >
->Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) comportano la copia del nodo appropriato e dell’intera sottostruttura, quindi la modifica richiesta.
+>Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) comportano la copia del nodo appropriato e dell’intera sottostruttura, quindi l’esecuzione delle modifiche richieste.
 
 Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio per [configurare le console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creare la categoria di selezione nel browser delle risorse nel pannello](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) laterale (utilizzato per l’authoring delle pagine). Sono richiesti come:
 
@@ -68,7 +71,7 @@ Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio pe
    * applica un hotfix
    * installare un pacchetto di funzioni
 
-* Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, se necessario.
+* Consentono di concentrare le modifiche in un&#39;unica posizione; facilitando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, a seconda delle necessità.
 
 ## Configurazione dei percorsi di ricerca {#configuring-the-search-paths}
 
@@ -88,7 +91,7 @@ Per le sovrapposizioni, la risorsa consegnata è un insieme di risorse e proprie
    resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
    ```
 
-* Infine deve essere configurato anche Servlet Resolver (in questo esempio per aggiungere anche /etc)
+* Infine, deve essere configurato anche Servlet Resolver (in questo esempio per aggiungere anche /etc)
 
    ```
    PID = org.apache.sling.servlets.resolver.SlingServletResolver  
