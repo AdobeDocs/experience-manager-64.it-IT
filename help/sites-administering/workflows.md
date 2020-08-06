@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
@@ -23,10 +26,10 @@ I flussi di lavoro consentono di automatizzare le attività di Adobe Experience 
 
    * Ciascuna fase svolge un&#39;attività distinta; ad esempio in attesa di input da parte dell’utente, attivazione di una pagina o invio di un messaggio e-mail.
 
-* Può interagire con le risorse presenti nell’archivio, negli account utente e nei servizi AEM.
+* Può interagire con le risorse presenti nell’archivio, gli account utente e i servizi AEM.
 * Può coordinare attività complesse che coinvolgono qualsiasi aspetto di AEM.
 
-I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti di un sito Web in genere include passaggi quali l&#39;approvazione e l&#39;accesso da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro AEM e applicati a pagine e risorse di contenuto.
+I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti di un sito Web in genere include passaggi quali l&#39;approvazione e l&#39;accesso da parte di vari soggetti interessati. Questi processi possono essere implementati AEM flussi di lavoro e applicati a pagine e risorse di contenuto.
 
 * [Avvio dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md)
@@ -38,14 +41,15 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 >
 >* Applicazione e partecipazione ai flussi di lavoro: [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Creazione di modelli di workflow ed estensione delle funzionalità dei flussi di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
->* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano importanti risorse server: Elaborazione [flusso di lavoro](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)simultanea.
+>* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano importanti risorse server: [Elaborazione](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)flusso di lavoro simultanea.
+
 >
 
 
 
 ## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
-[I modelli](/help/sites-developing/workflows.md#model) di flussi di lavoro in AEM rappresentano e implementano i processi aziendali:
+[I modelli](/help/sites-developing/workflows.md#model) di workflow in AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
 
 * In genere agiscono su pagine o risorse per ottenere un risultato specifico.
 * Queste pagine e/o risorse sono denominate payload del flusso di lavoro.
@@ -64,14 +68,14 @@ Le istanze del flusso di lavoro procedono nel seguente ciclo di vita:
 
    1. Il payload dell&#39;istanza del flusso di lavoro viene identificato all&#39;avvio del modello.
    1. L&#39;istanza è di fatto una copia del modello (come al momento della creazione).
-   1. Gli autori, gli amministratori o i servizi di AEM possono avviare modelli di workflow.
+   1. AEM autori, amministratori o servizi possono avviare modelli di workflow.
 
 1. Viene eseguito il primo passaggio del modello di workflow.
 1. Il passaggio viene completato e il motore del flusso di lavoro utilizza il modello per determinare il passaggio successivo da eseguire.
 1. I passaggi successivi nel modello di workflow vengono eseguiti e completati.
 1. Al termine del passaggio finale, l’istanza del flusso di lavoro viene completata e quindi archiviata.
 
-Con AEM vengono forniti molti modelli di flussi di lavoro utili. Inoltre, gli sviluppatori della vostra organizzazione possono creare modelli di flusso di lavoro personalizzati, in base alle esigenze specifiche dei vostri processi aziendali.
+Sono disponibili numerosi modelli di workflow utili con AEM. Inoltre, gli sviluppatori della vostra organizzazione possono creare modelli di flusso di lavoro personalizzati, in base alle esigenze specifiche dei vostri processi aziendali.
 
 ## Passaggi del flusso di lavoro {#workflow-steps}
 
