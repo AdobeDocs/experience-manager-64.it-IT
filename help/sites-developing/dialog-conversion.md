@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Lo strumento di conversione della finestra di dialogo consente di estendere i co
 
 L&#39;obiettivo di questo strumento è automatizzare l&#39;aggiornamento per quanto possibile, aumentare l&#39;efficienza e ridurre gli errori. Tuttavia, poiché lo strumento non è in grado di coprire ogni scenario, il processo non può essere completamente automatizzato e l&#39;utente deve rivedere le finestre di dialogo convertite ed eventualmente apportare ulteriori modifiche. Lo strumento è inteso come aiuto per avviare il processo di conversione, ma non per prendere il controllo completo della conversione.
 
-Lo strumento crea la nuova finestra di dialogo utilizzando l’interfaccia standard Granite e Coral 3, ma ignora ciò che non può convertire. Pertanto, la finestra di dialogo risultante potrebbe contenere nodi della finestra di dialogo originale copiati così com&#39;è, se nessuna regola corrispondeva a quel componente specifico. Inoltre, un componente convertito potrebbe avere alcune proprietà non convertite, perché non esisteva una regola appropriata per convertirle.
+Lo strumento crea la nuova finestra di dialogo utilizzando l’interfaccia standard Granite e l’interfaccia utente basata su Coral 3, ma ignora ciò che non può convertire. Pertanto, la finestra di dialogo risultante potrebbe contenere nodi della finestra di dialogo originale copiati così com&#39;è, se nessuna regola corrispondeva a quel componente specifico. Inoltre, un componente convertito potrebbe avere alcune proprietà non convertite, perché non esisteva una regola appropriata per convertirle.
 
 >[!CAUTION]
 >
@@ -29,9 +32,9 @@ Lo strumento crea la nuova finestra di dialogo utilizzando l’interfaccia stand
 
 >[!NOTE]
 >
->Poiché l’interfaccia classica non è più sviluppata o migliorata, Adobe consiglia ai clienti di passare all’interfaccia utente predefinita di Granite per beneficiare della tecnologia più avanzata.
+>Poiché l’interfaccia classica non è più sviluppata o migliorata,  Adobe consiglia agli utenti di passare all’interfaccia utente predefinita di Granite per beneficiare della tecnologia più avanzata.
 >
->Sebbene sia generalmente buona prassi migrare alla piattaforma più recente, la migrazione dal Coral 2 al Coral 3 non è fondamentale. Tuttavia, qualsiasi nuovo progetto dovrebbe essere avviato sulla base del Coral 3.
+>Anche se è generalmente buona prassi migrare alla piattaforma più recente, la migrazione da Coral 2 a Coral 3 non è fondamentale. Tuttavia, qualsiasi nuovo progetto dovrebbe essere avviato sulla base del Coral 3.
 
 ## Download e installazione dello strumento di conversione finestra di dialogo {#download-and-install-the-dialog-conversion-tool}
 
@@ -46,7 +49,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 >[!NOTE]
 >
->AEM non viene fornito con lo strumento di conversione della finestra di dialogo. È necessario scaricarlo e installarlo per poterlo utilizzare.
+>AEM non viene fornito con lo strumento di conversione finestra di dialogo. È necessario scaricarlo e installarlo per poterlo utilizzare.
 
 Per installare lo strumento di conversione della finestra di dialogo, effettuate le seguenti operazioni.
 
@@ -73,11 +76,12 @@ Per convertire una o più finestre di dialogo, effettuate le seguenti operazioni
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-   La tabella elenca tutte le finestre di dialogo precedenti esistenti sotto il percorso immesso. Ogni finestra di dialogo ha il relativo tipo elencato. I tipi includono:
+   Nella tabella sono elencate tutte le finestre di dialogo precedenti esistenti sotto il percorso immesso. Ogni finestra di dialogo ha il relativo tipo elencato. I tipi includono:
 
-   * **** Classic: Nodi di tipo `cq:Dialog` con nome nodo `dialog` o `design_dialog`
-   * **** Corallo 2: Nodi denominati `cq:dialog` o `cq:design_dialog` con un tipo di risorsa Granite UI/Coral 2 nel nodo di contenuto figlio
-   Ogni riga contiene un collegamento per visualizzare la finestra di dialogo e un collegamento a CRXDE Lite per visualizzare la struttura del nodo.
+   * **Classic:** Nodi di tipo `cq:Dialog` con nome nodo `dialog` o `design_dialog`
+   * **Corallo 2:** Nodi denominati `cq:dialog` o `cq:design_dialog` con un tipo di risorsa Granite UI/Coral 2 nel nodo di contenuto figlio
+
+   Ogni riga contiene un collegamento per visualizzare la finestra di dialogo e un collegamento al CRXDE Lite per visualizzarne la struttura del nodo.
 
    >[!NOTE]
    >
@@ -232,7 +236,7 @@ Le regole sono ulteriormente divise in questa posizione in cartelle per le regol
 
 `/libs/cq/dialogconversion/rules/coral2`
 
-Tali regole possono essere sovrascritte fornendo una serie di norme:
+Tali norme possono essere sovrascritte fornendo una serie di norme al seguente indirizzo:
 
 `/apps/cq/dialogconversion/rules`
 
