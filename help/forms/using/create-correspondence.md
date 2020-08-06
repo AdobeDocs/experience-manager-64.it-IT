@@ -1,8 +1,8 @@
 ---
 title: Crea corrispondenza
 seo-title: Crea corrispondenza
-description: Dopo aver creato un modello di lettera, è possibile utilizzarlo per creare la corrispondenza in AEM Forms gestendo dati, contenuto e allegati.
-seo-description: Dopo aver creato un modello di lettera, è possibile utilizzarlo per creare la corrispondenza in AEM Forms gestendo dati, contenuto e allegati.
+description: Dopo aver creato un modello di lettera, è possibile utilizzarlo per creare la corrispondenza in  AEM Forms gestendo dati, contenuto e allegati.
+seo-description: Dopo aver creato un modello di lettera, è possibile utilizzarlo per creare la corrispondenza in  AEM Forms gestendo dati, contenuto e allegati.
 uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -52,13 +52,13 @@ Selezionate la lettera da visualizzare in anteprima con la procedura seguente:
 
 1. L&#39;anteprima HTML della lettera (anteprima moduli mobili) si apre con la scheda Dati attivata per impostazione predefinita.
 
-   Per ulteriori informazioni sui moduli per dispositivi mobili e sulle relative funzioni, vedere Differenza tra le [funzioni nei moduli per dispositivi mobili e nei moduli](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)PDF.
+   Per ulteriori informazioni sui moduli per dispositivi mobili e sulle relative funzioni, vedere Differenza tra le [funzioni di Mobile Forms e PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Sono disponibili tre schede: dati, contenuto e allegati. Se non sono presenti elementi di dati (variabili segnaposto e campi di layout), la lettera si apre direttamente con la scheda Contenuto visualizzata. La scheda Allegati è disponibile solo quando gli allegati sono presenti o l&#39;accesso alla libreria è abilitato.
 
    >[!NOTE]
 
-   >Per ulteriori informazioni sul passaggio tra la modalità di rappresentazione HTML o PDF dell&#39;anteprima della lettera, vedere [Modificare la modalità di rappresentazione della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto PDF in Gestione corrispondenza e AEM, consultate [Discontinuità dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e moduli [PDF nei moduli](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)HTML5.
+   >Per ulteriori informazioni sul passaggio tra la modalità di rappresentazione HTML o PDF dell&#39;anteprima della lettera, vedere [Modificare la modalità di rappresentazione della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto PDF in Gestione e AEM corrispondenza, consultate [Discontinuità dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms a HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Enter data {#enterdata}
 
@@ -165,7 +165,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Per l&#39;area di destinazione, il modulo e la variabile il conteggio viene visualizzato a destra di ciascun oggetto nel modello lettera. Tuttavia, per il modello completo, il conteggio viene visualizzato nella barra di stato Crea corrispondenza.
 
-   I moduli in un modello di lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
+   I moduli in un modello Lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
 
    * **Testo** Visualizza la somma delle variabili segnaposto univoche e degli elementi del dizionario dati non compilati contenuti nel modulo di testo.
    * **Condizione** Visualizza la somma delle variabili di condizione univoche non compilate contenute nella condizione e delle variabili contenute nei moduli risultanti.
@@ -259,7 +259,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    >[!NOTE]
    >
-   >Se utilizzate Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare l&#39;anteprima della lettera come PDF appiattito, accertatevi di utilizzare il plug-in nativo del browser e non il plug-in di Acrobat. Per selezionare il plug-in del browser nativo, accedete alle impostazioni di Mozilla Firefox e, per il tipo di contenuto PDF, selezionate Anteprima in Firefox.
+   >Se utilizzate Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare in anteprima la lettera come PDF appiattito, accertatevi di utilizzare il plug-in nativo del browser e non il plug-in  Acrobat. Per selezionare il plug-in del browser nativo, accedete alle impostazioni di Mozilla Firefox e, per il tipo di contenuto PDF, selezionate Anteprima in Firefox.
 
 1. Se l’anteprima PDF appiattita è soddisfacente, toccate **Invia** per inviare la lettera. Oppure, per apportare modifiche alla lettera, toccate **Esci da anteprima** per tornare all’anteprima dell’interfaccia utente Crea corrispondenza della lettera e apportare modifiche alla lettera. Toccando Invia, se nell’istanza Pubblica è abilitata la configurazione Gestisci istanza lettera, viene generata l’istanza Invia lettera.
 
@@ -269,7 +269,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Dopo aver apportato le modifiche necessarie, potete inviare la lettera dall’anteprima HTML5 oppure toccare nuovamente Anteprima per controllare l’output PDF appiattito.
 
-   Per informazioni sulle differenze tra moduli HTML5 e PDF, vedere Differenza tra le [funzioni dei moduli HTML5 e dei moduli](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)PDF.
+   Per informazioni sulle differenze tra moduli HTML5 e PDF forms, vedere Differenza tra [funzioni per moduli HTML5 e PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Salvataggio di bozze e invio di istanze di lettere {#savingdrafts}
 
@@ -283,7 +283,7 @@ Quando viene eseguito il rendering di una lettera nell&#39;interfaccia utente Cr
 
 Tali istanze possono essere salvate solo quando la lettera viene visualizzata nell’istanza di pubblicazione. Per impostazione predefinita, il salvataggio delle istanze è disattivato. Per abilitare il salvataggio delle istanze di lettere, eseguire le operazioni seguenti.
 
-1. In AEM, apri la configurazione della console Web di Adobe Experience Manager per il tuo server utilizzando il seguente URL: https://&lt;server>:&lt;porta>/&lt;percorso contestuale>/system/console/configMgr
+1. In AEM, aprite Adobe Experience Manager Web Console Configuration per il server utilizzando il seguente URL: https://&lt;server>:&lt;porta>/&lt;percorso contestuale>/system/console/configMgr
 1. Individuate le configurazioni di **[!UICONTROL gestione della corrispondenza]** e fate clic su di essa.
 1. Selezionate **[!UICONTROL Gestisci istanze lettera nella configurazione Pubblica]** , quindi fate clic su **[!UICONTROL Salva]**.
 
@@ -295,25 +295,25 @@ Le istanze di lettere vengono salvate nell’istanza di pubblicazione e vengono 
 
 ### Salvataggio remoto {#remote-save}
 
-Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio di dati utente in istanze pubblicate, che in genere si trovano al di fuori del firewall aziendale. Quando il salvataggio remoto è attivato, le istanze della lettera non vengono salvate nell&#39;istanza di pubblicazione, ma vengono salvate in remoto nell&#39;autore di elaborazione specificata dalle configurazioni dell&#39;SDK del client LiveCycle.
+Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio di dati utente in istanze pubblicate, che in genere si trovano al di fuori del firewall aziendale. Quando il salvataggio remoto è attivato, le istanze della lettera non vengono salvate nell’istanza di pubblicazione, ma vengono salvate in remoto nell’autore di elaborazione specificata dalle configurazioni SDK client LiveCycle.
 
 #### Abilita salvataggio remoto {#enable-remote-save}
 
-1. In AEM, apri la configurazione della console Web di Adobe Experience Manager per il tuo server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, aprite Adobe Experience Manager Web Console Configuration per il server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Cercate le configurazioni **[!UICONTROL di gestione della]** corrispondenza e fate clic su di essa.
 1. Individuare la configurazione del salvataggio **** remoto, controllarla e fare clic su **[!UICONTROL Salva]**.
 
 #### Specificare le impostazioni di elaborazione per l&#39;autore {#specify-processing-author-settings}
 
-1. In AEM, apri la configurazione della console Web di Adobe Experience Manager per il tuo server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, aprite Adobe Experience Manager Web Console Configuration per il server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Configurazione della console Web di Adobe Experience Manager](assets/2configmanager.png)
+   ![Configurazione della console Web Adobe Experience Manager](assets/2configmanager.png)
 
-1. In questa pagina, individua Adobe LiveCycle Client SDK Configuration (Configurazione SDK client Adobe LiveCycle) ed espandila facendo clic su di esso.
+1. In questa pagina, individua  Adobe Configurazione SDK client per LiveCycli e espandi facendo clic su di esso.
 
-1. Nell&#39;URL del server di elaborazione, immettere il nome del server LiveCycle, fornire le informazioni di accesso, quindi fare clic su **Salva**.
+1. Nell’URL del server di elaborazione, immettete il nome del server di LiveCycle, fornite le informazioni di accesso e fate clic su **Salva**.
 
-   ![Immettere il nome e le informazioni di login del server LiveCycle](assets/3configmanager.png)
+   ![Immettere il nome e le informazioni di login del server di LiveCycle](assets/3configmanager.png)
 
 1. Se necessario, impostate il nome utente e la password con cui desiderate accedere al server.
 
@@ -326,7 +326,7 @@ Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio
 
 ## Modalità di rappresentazione dell&#39;anteprima della lettera: Anteprima dei moduli mobili e anteprima PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management visualizza una lettera come HTML nell&#39;interfaccia utente Crea corrispondenza. Tuttavia, la gestione della corrispondenza continua a supportare il ripristino dell&#39;anteprima PDF invece dell&#39;anteprima HTML. Per ulteriori informazioni sul passaggio tra la modalità di anteprima HTML e PDF, consultate [Modificare la modalità di rappresentazione della lettera](#changerenditionmode).
+ AEM Forms Correspondence Management visualizza una lettera come HTML nell&#39;interfaccia utente Crea corrispondenza. Tuttavia, la gestione della corrispondenza continua a supportare il ripristino dell&#39;anteprima PDF invece dell&#39;anteprima HTML. Per ulteriori informazioni sul passaggio tra la modalità di anteprima HTML e PDF, consultate [Modificare la modalità di rappresentazione della lettera](#changerenditionmode).
 
 Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’anteprima HTML e PDF.
 
@@ -342,7 +342,7 @@ Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’antep
 * **Interruzione** pagina: Nell’anteprima PDF è possibile visualizzare esattamente in che modo le interruzioni di pagina nella lettera influiscono sul relativo output.
 * **Anteprima** finale: Nell’anteprima PDF è possibile visualizzare la formattazione e l’aspetto esatti della lettera così come apparirà nell’output della stessa.
 
-Per informazioni sul supporto degli script nei moduli PDF, vedere [Supporto](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)per gli script.
+Per informazioni sul supporto degli script nei PDF forms, vedere [Supporto](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)script.
 
 Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [Supporto degli script per i moduli](/help/forms/using/scripting-support.md)HTML5.
 
