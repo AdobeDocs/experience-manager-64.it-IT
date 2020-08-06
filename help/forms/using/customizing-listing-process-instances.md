@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione dell'elenco delle istanze del processo
 seo-title: Personalizzazione dell'elenco delle istanze del processo
-description: Procedura per personalizzare le proprietà visualizzate nell'istanza di processo nell'area di lavoro Moduli AEM.
-seo-description: Procedura per personalizzare le proprietà visualizzate nell'istanza di processo nell'area di lavoro Moduli AEM.
+description: Come personalizzare le proprietà visualizzate nell’istanza di processo ’area di lavoro di AEM Forms.
+seo-description: Come personalizzare le proprietà visualizzate nell’istanza di processo ’area di lavoro di AEM Forms.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 3%
 
 ---
 
 
 # Personalizzazione dell&#39;elenco delle istanze del processo {#customizing-the-listing-of-process-instances}
 
-L&#39;elenco delle istanze del processo viene visualizzato nella scheda Tracciamento dell&#39;area di lavoro Moduli AEM.
+L&#39;elenco delle istanze di processo viene visualizzato nella scheda Tracciamento &#39;area di lavoro AEM Forms.
 
-Nell’elenco delle istanze di processo, per ogni istanza di processo l’area di lavoro Moduli AEM mostra alcune proprietà dell’istanza. Le seguenti proprietà sono disponibili per ogni istanza di processo. Queste proprietà sono memorizzate come attributi nel modello di componenti dell’istanza di processo e sono disponibili per l’uso nella relativa vista e nel modello.
+Nell’elenco delle istanze di processo, per ogni istanza di processo,  area di lavoro di AEM Forms mostra alcune proprietà di tale istanza. Le seguenti proprietà sono disponibili per ogni istanza di processo. Queste proprietà sono memorizzate come attributi nel modello di componenti dell’istanza di processo e sono disponibili per l’uso nella relativa vista e nel modello.
 
 <table> 
  <tbody> 
@@ -69,7 +72,7 @@ Nell’elenco delle istanze di processo, per ogni istanza di processo l’area d
 
 Per visualizzare la `description` proprietà dell&#39;istanza di processo nella scheda dell&#39;istanza di processo, eseguire le operazioni seguenti.
 
-1. Seguite i passaggi [Generici per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+1. Seguite i passaggi [Generico per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
 1. Effettua le seguenti operazioni:
 
    1. Copiate /libs/ws/js/runtime/templates/processinstance.htmlà/apps/ws/js/runtime/templates/, se non esiste. Fate clic su **Salva tutto**.
