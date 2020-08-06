@@ -1,8 +1,8 @@
 ---
 title: Creazione di un modulo adattivo
 seo-title: Creazione di un modulo adattivo
-description: Come creare un modulo adattivo utilizzando i AEM Forms. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni.
-seo-description: Come creare un modulo adattivo utilizzando i AEM Forms. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni.
+description: Come creare un modulo adattivo utilizzando  AEM Forms. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni.
+seo-description: Come creare un modulo adattivo utilizzando  AEM Forms. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni.
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 Per creare un modulo adattivo, procedere come segue.
 
-1. AEM Forms Access Istanza Author in `https://[server]:[port]/<custom-context-if-any>.`
+1. Accedi &#39;istanza di AEM Forms Author in `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
    ```
 
-1. Immettete le credenziali nella pagina di accesso di AEM.
+1. Immettete le credenziali nella pagina di accesso AEM.
 
-   Dopo aver effettuato l&#39;accesso, nell&#39;angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manager > Moduli > Moduli e documenti]**.
+   Dopo aver effettuato l&#39;accesso, nell&#39;angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manage > Forms > Forms e documenti]**.
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ Per creare un modulo adattivo, procedere come segue.
 1. Viene visualizzata un’opzione per selezionare un modello. Per ulteriori informazioni sui modelli, vedere Modelli [di moduli](/help/forms/using/creating-adaptive-form.md#p-adaptive-form-templates-p)adattivi. Toccate un modello per selezionarlo e toccate Avanti.
 1. Viene visualizzata l&#39;opzione &quot;Aggiungi proprietà&quot;. Specificare i valori per i seguenti campi di proprietà. I campi Titolo e Nome sono obbligatori:
 
-   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente dei AEM Forms.
+   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell&#39;interfaccia utente  AEM Forms.
    * **[!UICONTROL Nome:]** Specifica il nome del modulo. Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. È possibile modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
    * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
    * **[!UICONTROL Tag:]** Specifica i tag per identificare in modo univoco il modulo adattivo. I tag consentono di effettuare ricerche nel modulo. Per creare i tag, digitate nuovi nomi di tag nella casella **Tag** .
@@ -73,7 +73,7 @@ Per creare un modulo adattivo, procedere come segue.
 
 ## Creare un modulo adattivo basato su un modello dati del modulo {#fdm}
 
-[L&#39;integrazione](/help/forms/using/data-integration.md) dei dati AEM Forms consente di integrare più origini dati e di unire le relative entità e servizi per creare un modello dati del modulo. È un&#39;estensione dello schema JSON. È possibile utilizzare un modello dati modulo per creare un modulo adattivo. Le entità o gli oggetti del modello dati configurati in un modello dati del modulo sono disponibili come oggetti del modello dati per l&#39;authoring del modulo. Sono associati alle rispettive origini dati e utilizzati per precompilare un modulo e riscrittare i dati inviati alle rispettive origini dati. È inoltre possibile richiamare i servizi configurati in un modello dati modulo utilizzando regole modulo adattive.
+[&#39;integrazione](/help/forms/using/data-integration.md) dei dati AEM Forms consente di integrare più origini dati e di unire le relative entità e servizi per creare un modello dati del modulo. È un&#39;estensione dello schema JSON. È possibile utilizzare un modello dati modulo per creare un modulo adattivo. Le entità o gli oggetti del modello dati configurati in un modello dati del modulo sono disponibili come oggetti del modello dati per l&#39;authoring del modulo. Sono associati alle rispettive origini dati e utilizzati per precompilare un modulo e riscrittare i dati inviati alle rispettive origini dati. È inoltre possibile richiamare i servizi configurati in un modello dati modulo utilizzando regole modulo adattive.
 
 Per utilizzare un modello dati modulo per la creazione di un modulo adattivo:
 
@@ -97,12 +97,12 @@ Per utilizzare un modello dati modulo per la creazione di un modulo adattivo:
 
 >[!NOTE]
 >
->[Caricate il modello](/help/forms/using/get-xdp-pdf-documents-aem.md) di modulo XFA in AEM Forms prima di iniziare a creare un modulo adattivo basato sul modello di modulo.
+>[Caricare il modello](/help/forms/using/get-xdp-pdf-documents-aem.md) di modulo XFA su  AEM Forms prima di iniziare a creare un modulo adattivo basato sul modello di modulo.
 
 Per utilizzare un modello di modulo XFA come modello di modulo per il modulo adattivo, effettuate le seguenti operazioni:
 
 1. Nella pagina **[!UICONTROL Aggiungi proprietà]** , aprire la scheda Modello **** modulo.
-1. Nella scheda Modello modulo, dall&#39;elenco a discesa, selezionare Modelli **** modulo. Sono elencati per selezione tutti i modelli di modulo caricati nell&#39;archivio tramite l&#39;interfaccia utente AEM Forms. Selezionate un modello dall’elenco.
+1. Nella scheda Modello modulo, dall&#39;elenco a discesa, selezionare Modelli **** modulo. Vengono elencati tutti i modelli di modulo caricati nell&#39;archivio tramite &#39;interfaccia utente di AEM Forms. Selezionate un modello dall’elenco.
 
    ![Associare il modello di modulo XFA a un modulo adattivo](assets/form_model_xfa_associate.png)
    **Figura:** *Selezione di un modello di modulo*
@@ -148,13 +148,13 @@ Per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattiv
 
 ## Modelli di moduli adattivi {#adaptive-form-templates}
 
-Un modello fornisce una struttura di base e definisce l&#39;aspetto (layout e stili) di un modulo adattivo. Contiene componenti preformattati che contengono determinate proprietà e struttura del contenuto. I AEM Forms forniscono alcuni modelli di modulo adattivi. Per ottenere il pacchetto completo dei modelli che include modelli avanzati, dovete installare il pacchetto del componente aggiuntivo AEM Forms. Per ulteriori informazioni, consultate [Installazione del pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms.
+Un modello fornisce una struttura di base e definisce l&#39;aspetto (layout e stili) di un modulo adattivo. Contiene componenti preformattati che contengono determinate proprietà e struttura del contenuto. In  AEM Forms sono disponibili alcuni modelli di modulo adattivi. Per ottenere il pacchetto completo dei modelli che include modelli avanzati, è necessario installare il pacchetto  componente aggiuntivo AEM Forms. Per ulteriori informazioni, consultate [Installazione  pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo di AEM Forms.
 
 Inoltre, potete usare l’editor modelli per creare modelli personalizzati. Per ulteriori informazioni sull&#39;utilizzo dei modelli, vedere Modelli [di moduli](/help/forms/using/template-editor.md)adattivi.
 
 >[!NOTE]
 >
->Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Nel modello avanzato è presente un componente Passaggio firma e per impostazione predefinita è abilitato Adobe Sign. Crea e seleziona una configurazione [cloud](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configura un firmatario](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) per la risoluzione dell’errore.
+>Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Il modello avanzato include un componente Fase firma e per impostazione predefinita  Adobe Sign è abilitato. Crea e seleziona una [configurazione](/help/forms/using/adobe-sign-integration-adaptive-forms.md) cloud Adobe Sign e [configura un firmatario](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) per la risoluzione dell&#39;errore.
 
 ## Modifica delle proprietà del modello di modulo di un modulo adattivo {#edit-form-model}
 
@@ -208,6 +208,6 @@ Per impostazione predefinita, l&#39;opzione di salvataggio automatico non è abi
 
    >[!NOTE]
    >
-   >Affinché l&#39;opzione di salvataggio automatico funzioni correttamente per gli utenti anonimi, è necessario configurare Forms Common Configuration Service in modo da consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
+   >Affinché l&#39;opzione di salvataggio automatico funzioni correttamente per gli utenti anonimi, è necessario configurare il servizio di configurazione comune di Forms in modo da consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, andate alla configurazione della console Web di AEM in `https://[server]:[host]/system/console/configMgr` e modificate il servizio **[!UICONTROL di configurazione comune]** Forms per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvate la configurazione.
+   >Per configurare il servizio, andate AEM configurazione della console Web in `https://[server]:[host]/system/console/configMgr` e modificate il servizio **[!UICONTROL di configurazione comune di]** Forms per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** , quindi salvate la configurazione.
