@@ -1,8 +1,8 @@
 ---
-title: Creazione di un servizio Cloud personalizzato
-seo-title: Creazione di un servizio Cloud personalizzato
-description: Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud personalizzati
-seo-description: Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud personalizzati
+title: Creazione di un Cloud Service personalizzato
+seo-title: Creazione di un Cloud Service personalizzato
+description: Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati
+seo-description: Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 12%
 
 ---
 
 
-# Creazione di un servizio Cloud personalizzato{#creating-a-custom-cloud-service}
+# Creazione di un Cloud Service personalizzato{#creating-a-custom-cloud-service}
 
-Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud personalizzati. Questo consente di inserire tag personalizzati nella pagina in modo strutturato. Questo sarà utilizzato principalmente per fornitori di analisi di terze parti, ad esempio Google Analytics, Chartbeat, ecc. I servizi cloud vengono ereditati dalle pagine padre alle pagine figlie, con la possibilità di interrompere l&#39;ereditarietà a qualsiasi livello.
+Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati. Questo consente di inserire tag personalizzati nella pagina in modo strutturato. Questo sarà utilizzato principalmente per fornitori di analisi di terze parti, ad esempio Google Analytics, heartbeat, ecc. Gli Cloud Services vengono ereditati dalle pagine padre alle pagine figlie, con la possibilità di interrompere l&#39;ereditarietà a qualsiasi livello.
 
 >[!NOTE]
 >
->Questa guida dettagliata per la creazione di un nuovo servizio Cloud è un esempio che utilizza Google Analytics. Tutto potrebbe non essere applicabile al caso di utilizzo.
+>Questa guida dettagliata per la creazione di un nuovo Cloud Service è un esempio che utilizza le Google Analytics. Tutto potrebbe non essere applicabile al caso di utilizzo.
 
-1. In CRXDE Lite, create un nuovo nodo sotto `/apps`:
+1. In CRXDE Lite, crea un nuovo nodo sotto `/apps`:
 
    * **Nome**: `acs`
    * **Tipo**: `nt:folder`
@@ -37,13 +40,14 @@ Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud
 
    * **Nome**: components
    * **Tipo**: `sling:Folder`
+
    e
 
    * **Nome**: templates
    * **Tipo**: `sling:Folder`
 
 
-1. Fare clic con il pulsante destro del mouse `/apps/acs/analytics/components`. **** Seleziona **Crea... seguito da** Crea componente... La finestra di dialogo visualizzata consente di specificare:
+1. Fare clic con il pulsante destro del mouse `/apps/acs/analytics/components`. Seleziona **Crea...** seguito da **Crea componente...** La finestra di dialogo visualizzata consente di specificare:
 
    * **Etichetta**: `googleanalyticspage`
    * **Titolo**: `Google Analytics Page`
@@ -53,12 +57,13 @@ Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud
 1. Fate clic due volte su **Avanti** e specificate:
 
    * **Elementi padre consentiti:** `acs/analytics/templates/googleanalytics`
+
    Fare clic due volte su **Avanti** e fare clic su **OK**.
 
 1. Aggiungi una proprietà a `googleanalyticspage`:
 
    * **Nome:** `cq:defaultView`
-   * **** Valore: `html`
+   * **Valore:** `html`
 
 1. Create un nuovo file denominato `content.jsp` in `/apps/acs/analytics/components/googleanalyticspage`, con il seguente contenuto:
 
@@ -120,7 +125,7 @@ Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud
    * **Proprietà**:
 
       * **Nome**: `fieldLabel`
-      * **Tipo**:Stringa
+      * **Tipo**: Stringa
       * **Valore**: ID account
 
       * **Nome**: `fieldDescription`
@@ -195,7 +200,8 @@ Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud
 
    * **Titolo**: `Google Analytics`
    * **Nome**: `googleanalytics`
-   Tornare indietro in CRXDE Lite e, in `/etc/cloudservices/googleanalytics`, aggiungere la seguente proprietà a `jcr:content`:
+
+   Tornate indietro in CRXDE Lite e in `/etc/cloudservices/googleanalytics`, aggiungete la seguente proprietà a `jcr:content`:
 
    * **Nome**: `componentReference`
    * **Tipo**: `String`
@@ -206,9 +212,10 @@ Il set predefinito di servizi cloud può essere esteso con tipi di servizi cloud
 
    * **Configurazione elemento padre**: `/etc/cloudservices/googleanalytics`
    * **Titolo:**  `My First GA Config`
+
    Scegliete Configurazione **** Google Analytics e fate clic su **Crea**.
 
-1. Inserite un ID **** account, ad esempio `AA-11111111-1`. Fai clic su **OK**. 
-1. Passa a una pagina e aggiungi la configurazione appena creata nelle proprietà della pagina, nella scheda Servizi **** cloud.
+1. Inserite un ID **** account, ad esempio `AA-11111111-1`. Fai clic su **OK**.
+1. Passate a una pagina e aggiungete la configurazione appena creata nelle proprietà della pagina, nella scheda **Cloud Services** .
 1. Alla pagina verrà aggiunta la marcatura personalizzata.
 
