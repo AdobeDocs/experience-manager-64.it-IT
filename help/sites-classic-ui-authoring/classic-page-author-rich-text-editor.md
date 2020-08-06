@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 89%
 
 ---
 
@@ -171,7 +174,7 @@ Viene visualizzata una finestra di dialogo che consente di impostare l’URL di 
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
-È possibile:
+Operazioni disponibili:
 
 * Digitare l’URI direttamente
 * Usare la mappa del sito per selezionare una pagina all’interno del sito Web
@@ -260,7 +263,7 @@ Le tabelle sono disponibili:
 
 Sia nel componente **Testo** sia nel componente **Tabella** la funzionalità per le tabelle è disponibile dal menu di scelta rapida, in genere visualizzato facendo clic con il pulsante destro del mouse all’interno di una tabella, ad esempio:
 
-![cq55_rte_tablet](assets/cq55_rte_tablemenu.png)
+![cq55_rte_Tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
@@ -408,6 +411,7 @@ Quando si crea una tabella nidificata, viene creata una nuova tabella indipenden
 >
 >* Windows Internet Explorer: premi Ctrl e fai clic con il pulsante principale del mouse (in genere il sinistro) per selezionare più celle.
 >* Firefox: trascina il mouse per selezionare un intervallo di celle.
+
 >
 
 
