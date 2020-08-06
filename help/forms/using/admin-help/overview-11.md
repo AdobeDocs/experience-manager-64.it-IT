@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 
 # Panoramica di Health Monitor {#overview-of-health-monitor}
 
-Health Monitor fornisce informazioni critiche sul sistema di moduli AEM, come informazioni sul server, sull&#39;utilizzo della memoria e sul processore. Sono inoltre disponibili le statistiche di Work Manager, ad esempio il numero di elementi di lavoro o processi in coda e i relativi stati. Con il Monitor integrità potete eseguire le seguenti operazioni:
+Health Monitor fornisce informazioni critiche sul sistema dei moduli AEM, come informazioni sul server, utilizzo della memoria e utilizzo del processore. Sono inoltre disponibili le statistiche di Work Manager, ad esempio il numero di elementi di lavoro o processi in coda e i relativi stati. Con il Monitor integrità potete eseguire le seguenti operazioni:
 
 * Verificare che il sistema sia in esecuzione correttamente
 * Visualizzazione delle informazioni per diagnosticare i problemi del sistema man mano che si verificano
@@ -27,10 +30,10 @@ Health Monitor fornisce informazioni critiche sul sistema di moduli AEM, come in
 La pagina Monitoraggio stato nella console di amministrazione presenta tre schede:
 
 * Nella scheda Sistema sono visualizzati i grafici di monitoraggio delle risorse e le informazioni sul server o sul nodo dei moduli in un ambiente cluster. Consultate [Visualizzare le informazioni](/help/forms/using/admin-help/view-system-information.md#view-system-information)di sistema.
-* La scheda Work Manager visualizza i dati relativi a Work Manager, ad esempio il numero di elementi di lavoro nella coda di Work Manager. Potete filtrare le informazioni utilizzando vari criteri o gestire singoli elementi di lavoro utilizzando gli strumenti operativi. (Vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+* La scheda Work Manager visualizza i dati relativi a Work Manager, ad esempio il numero di elementi di lavoro nella coda di Work Manager. È possibile filtrare le informazioni utilizzando vari criteri o gestire singoli elementi di lavoro utilizzando gli strumenti operativi. (Vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 * La scheda Utilità di pianificazione rimozione processo consente di eliminare i record obsoleti dal database di Gestione processi. (vedere [Eliminare i record dal database](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)di Gestione processi.)
 
-La pagina Web Health Monitor è composta da statistiche raccolte tramite un&#39;API Gemfire. Questa API rileva automaticamente tutti i nodi di un cluster. Risolve inoltre i problemi di sicurezza che si verificano durante la raccolta di statistiche da server proxy o dai sistemi di bilanciamento del carico. Sono disponibili opzioni Java per configurare il Monitor integrità in modo da ridurre l&#39;impatto sulle prestazioni dell&#39;ambiente dei moduli AEM. (vedere [Ottimizzazione delle prestazioni](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)del monitor di stato).
+La pagina Web Health Monitor è composta da statistiche raccolte tramite un&#39;API Gemfire. Questa API rileva automaticamente tutti i nodi di un cluster. Risolve inoltre i problemi di sicurezza che si verificano durante la raccolta di statistiche da server proxy o dai sistemi di bilanciamento del carico. Sono disponibili opzioni Java per regolare con precisione il Monitor integrità, riducendo l&#39;impatto sulle prestazioni dell&#39;ambiente dei moduli AEM. (vedere [Ottimizzazione delle prestazioni](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)del monitor di stato).
 
 **Monitoraggio integrità accesso**
 
