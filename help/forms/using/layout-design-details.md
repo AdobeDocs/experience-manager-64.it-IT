@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1305'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ I modelli di modulo XFA o XDP sono i modelli per:
 
 * Frammenti di layout
 
-Un XDP è progettato in Adobe Forms Designer. Questo articolo fornisce dettagli su come progettare i file XDP per la creazione di corrispondenze/comunicazioni interattive efficaci, ad esempio dove utilizzare i campi del modulo o le aree di destinazione e quando utilizzare i frammenti di layout.
+Un XDP è progettato in Forms Designer  Adobe. Questo articolo fornisce dettagli su come progettare i file XDP per la creazione di corrispondenze/comunicazioni interattive efficaci, ad esempio dove utilizzare i campi del modulo o le aree di destinazione e quando utilizzare i frammenti di layout.
 
-## Creazione di un layout per le lettere o per il canale di stampa di Interactive Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Creazione di un layout per le lettere o per il canale di stampa delle comunicazioni interattive {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. Crea il layout nella finestra di progettazione del modulo e, al termine, lo specialista dell’applicazione lo carica nel server AEM. Da qui potete selezionare il layout quando create un modello di corrispondenza o un canale di stampa di una comunicazione interattiva.
+Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. Creare il layout nella finestra di progettazione del modulo e, al termine, caricarlo AEM server mediante Application Specialist. Da qui potete selezionare il layout quando create un modello di corrispondenza o un canale di stampa di una comunicazione interattiva.
 
 ![Designer: creare un layout](assets/claimsubrogationlayout.png)
 
@@ -44,7 +47,7 @@ Per creare layout per lettere/canale di stampa delle comunicazioni interattive, 
    1. Altre sezioni contengono elementi in posizioni specifiche, in modo che siano progettati come layout posizionato.
    1. Suddividere una sezione in sottomoduli se la sezione contiene elementi in posizioni specifiche e questi elementi contengono grandi quantità di dati. Disporre quindi i sottomoduli per ottenere il comportamento desiderato.
    1. Per la sezione Residenza principale, aggiungere un&#39;area di destinazione segnaposto. Questo segnaposto è associato al frammento Residenza principale al momento della progettazione Lettera/Comunicazione interattiva.
-   1. Caricate il layout (e l&#39;eventuale frammento che utilizza il layout) nel server AEM Forms.
+   1. Caricate il layout (e l&#39;eventuale frammento che utilizza il layout) nel server AEM Forms .
 
 ## Uso dello schema {#using-schema}
 
@@ -73,9 +76,9 @@ Un campo relativo non può:
 * con binding impostato su &quot;none&quot;
 * essere figlio di un elemento &lt;exclGroup>
 
-Fintanto che un campo relativo soddisfa i criteri sopra descritti, può trovarsi in qualsiasi posizione e a qualsiasi profondità di nidificazione nel layout. È possibile utilizzare campi correlati all&#39;interno delle pagine master.
+Fintanto che un campo relativo soddisfa i criteri descritti in precedenza, può trovarsi in qualsiasi posizione e a qualsiasi profondità di nidificazione nel layout. È possibile utilizzare campi correlati all&#39;interno delle pagine master.
 
-I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su larghezza, altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
+I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su una larghezza, un&#39;altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
 
 ## Definizione di quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
@@ -99,7 +102,7 @@ Utilizzare un campo se si desidera acquisire i dati del modulo o dei dati del di
   </tr> 
   <tr> 
    <td><p>I gruppi di dati ripetuti, facoltativi e condizionali sono associati a sottomoduli, per ridurre il rischio di errori di progettazione che potrebbero verificarsi se gli script vengono utilizzati per ottenere gli stessi risultati</p> </td> 
-   <td><p>Elementi quali il logo e l'indirizzo dell'azienda vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta il binding dei campi su "Nessuno", i campi no vengono visualizzati come campi correlati nell'Editor di comunicazione interattiva/Lettera. Se si desidera collegare un certo tipo di contenuto a questi campi, è necessario che il binding sia associato.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti righe multiple" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell'output del modulo invece della versione in formato RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td> 
+   <td><p>Elementi quali il logo e l'indirizzo dell'azienda vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta il binding dei campi su "Nessun binding dei dati", i campi no vengono visualizzati come campi correlati nell'Editor di comunicazione interattiva/Lettera. Se si desidera mettere in relazione un certo tipo di contenuto con questi campi, è necessario che questi dispongano di binding.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti righe multiple" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell'output del modulo invece della versione in formato RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Il testo è scorrevole</p> </td> 
@@ -118,11 +121,11 @@ Utilizzare un campo se si desidera acquisire i dati del modulo o dei dati del di
 
 ## Impostazione di elementi ripetitivi {#setting-up-repetitive-elements}
 
-Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva, create campi modulo per tali elementi e inseriteli nella pagina master. Usa binding Nome (Nome campo) per questi campi.
+Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva, create campi modulo per tali elementi e inseriteli nella pagina master. Utilizzare il binding Nome (Nome campo) per questi campi.
 
 ## Specificare il formato di rendering del server {#specify-the-server-nbsp-render-format}
 
-Utilizzare il formato di rendering del server del layout su Modulo XML dinamico; in caso contrario, il rendering di lettere/comunicazioni interattive basate su questo layout non può essere eseguito correttamente. Per impostazione predefinita, in Forms Designer il formato di rendering del server è impostato su Modulo XML dinamico. Per verificare di utilizzare il formato corretto:
+Utilizzare il formato di rendering del server del layout su Modulo XML dinamico; in caso contrario, il rendering di lettere/comunicazioni interattive basate su questo layout non può essere eseguito correttamente. Per impostazione predefinita, il formato di rendering del server in Forms Designer è impostato su Modulo XML dinamico. Per verificare di utilizzare il formato corretto:
 
 * In Designer, fare clic su **[!UICONTROL File > Proprietà modulo > Predefinito]** e assicurarsi che l&#39;impostazione Rendering/Formato PDF sia impostata su Modulo XML dinamico.
 
