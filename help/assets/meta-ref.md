@@ -4,6 +4,9 @@ description: 'Scoprite le convenzioni standard per la descrizione dei metadati d
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +17,7 @@ Il riferimento seguente contiene informazioni su uno specifico schema di metadat
 
 ## Dublin Core {#dublin-core}
 
-I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse, al fine di facilitarne la ricerca. In Risorse AEM, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
+I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse, al fine di facilitarne la ricerca. In  AEM Assets, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
 
 Il semplice set di metadati Dublin Core Metadata Element Set (DCMES) contiene 15 elementi di metadati, come elencato nella tabella seguente. Ciascun elemento Dublin Core è facoltativo e può essere ripetuto. Potete aggiungere o eliminare i metadati Dublin Core come fareste per i metadati specifici per i tipi di supporti.
 
@@ -24,10 +27,10 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa D
 |---|---|
 | collaboratore | La persona o la società responsabile del contributo al contenuto. |
 | cover | La posizione geografica o il periodo di tempo coperto dall&#39;attività. |
-| creatore | Persona o società responsabile della creazione del contenuto. |
+| creatore | La persona o la società responsabile della creazione del contenuto. |
 | data | Data o periodo di tempo associato alla risorsa. |
 | descrizione | Ulteriori informazioni sulla risorsa. |
-| format | Formato file, supporto fisico o dimensioni della risorsa. AEM utilizza dc:format per indicare il tipo mime della risorsa. |
+| format | Il formato file, il supporto fisico o le dimensioni della risorsa. AEM utilizza dc:format per indicare il tipo mime della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
 | language | La lingua della risorsa (ad esempio, en per l’inglese). |
 | publisher | La persona o la società responsabile della messa a disposizione della risorsa. |
@@ -42,4 +45,4 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa D
 
 L&#39;International Press Telecommunications Council (IPTC) è un consorzio di agenzie di informazione di tutto il mondo, uno dei suoi obiettivi è quello di sviluppare e mantenere gli standard tecnici. L&#39;IPTC ha definito una serie di standard di metadati fotografici per le immagini che sono quasi universalmente accettati dai fotografi. Questi standard di metadati facevano parte dello standard più ampio noto come IPTC Information Interchange Model (IIM) creato negli anni &#39;90.
 
-Sebbene le informazioni dell&#39;intestazione IPTC siano state in gran parte sostituite da XMP, per XMP sono disponibili uno schema di base IPTC e uno schema di estensione. Nei programmi per immagini, le proprietà XMP e IPTC sono sincronizzate.
+Sebbene le informazioni dell&#39;intestazione IPTC siano state in gran parte sostituite da XMP, per XMP sono disponibili uno schema di base IPTC e uno schema di estensione. Nei programmi di immagini, le proprietà XMP e IPTC sono sincronizzate.
