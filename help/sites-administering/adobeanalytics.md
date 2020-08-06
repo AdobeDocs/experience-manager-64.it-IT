@@ -1,8 +1,8 @@
 ---
 title: Integrazione con Adobe Analytics
 seo-title: Integrazione con Adobe Analytics
-description: Scopri come integrare AEM con Adobe  Analytics.
-seo-description: Scopri come integrare AEM con Adobe  Analytics.
+description: Scoprite come integrare AEM con  Adobe Analytics.
+seo-description: Scoprite come integrare AEM con  Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,37 +20,37 @@ ht-degree: 21%
 
 # Integrazione con Adobe Analytics{#integrating-with-adobe-analytics}
 
-L’integrazione di Adobe  Analytics e AEM consente di tenere traccia dell’attività relativa alle pagine Web:
+L’integrazione  Adobe Analytics e AEM consente di monitorare l’attività della pagina Web:
 
-* Una configurazione Adobe  Analytics consente ad AEM di effettuare l&#39;autenticazione con Adobe  Analytics.
-* Un framework identifica i dati inviati alla suite di rapporti Adobe  Analytics.
+* Una configurazione Adobe Analytics  consente AEM l&#39;autenticazione con  Adobe Analytics.
+* Un framework identifica i dati inviati alla suite di rapporti Adobe Analytics .
 
 I dati comprendono i dati di pagina e utente; ad esempio:
 
-* dati raccolti dai componenti AEM
+* dati raccolti AEM componenti
 * clic collegamento
 * informazioni sull’utilizzo video
-* il numero di visite di pagina da Adobe  Analytics
+* il numero di visite di pagina da  Adobe Analytics
 
 Le pagine seguenti consentono di configurare l&#39;integrazione:
 
-* [Connessione ad Adobe  Analytics e creazione di framework](/help/sites-administering/adobeanalytics-connect.md)
-* [Configurazione del tracciamento dei collegamenti per Adobe  Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mappatura dei dati dei componenti con Adobe  Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configurazione del tracciamento video per Adobe  Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Connessione a  Adobe Analytics e creazione di framework](/help/sites-administering/adobeanalytics-connect.md)
+* [Configurazione del tracciamento dei collegamenti per  Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Mappatura dei dati dei componenti con  delle proprietà Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configurazione del tracciamento video per  Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
 Potete inoltre utilizzare la procedura guidata di [consenso](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
 
 >[!NOTE]
 >
->Consultate anche l’articolo introduttivo: [Integrazione di AEM con  Adobe Target e Adobe  Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consultate anche l’articolo introduttivo: [Integrazione di AEM con  Adobe Target e  Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Ulteriori informazioni {#further-information}
 
 Consulta:
 
-* [Estensione di Adobe  Analytics Integration](/help/sites-developing/extending-analytics.md) per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Analytics  Adobe.
-* L&#39;articolo della knowledge base, [Adobe  Analytics - Risoluzione di problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione di problemi relativi all&#39;integrazione di Adobe  Analytics.
+* [Estensione della  integrazione](/help/sites-developing/extending-analytics.md) Adobe Analytics per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Adobe Analytics .
+* L&#39;articolo della knowledge base, [integrazione con Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all&#39;integrazione  Adobe Analytics.
 
 >[!NOTE]
 >
