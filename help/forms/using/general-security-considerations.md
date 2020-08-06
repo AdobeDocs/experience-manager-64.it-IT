@@ -1,8 +1,8 @@
 ---
-title: Considerazioni generali sulla sicurezza per AEM Forms su JEE
-seo-title: Considerazioni generali sulla sicurezza per AEM Forms su JEE
-description: Scoprite come prepararvi a rendere più rigido AEM Forms nell’ambiente JEE.
-seo-description: Scoprite come prepararvi a rendere più rigido AEM Forms nell’ambiente JEE.
+title: Considerazioni generali sulla sicurezza per  AEM Forms su JEE
+seo-title: Considerazioni generali sulla sicurezza per  AEM Forms su JEE
+description: Scoprite come preparare l'applicazione dell' AEM Forms nell'ambiente JEE.
+seo-description: Scoprite come preparare l'applicazione dell' AEM Forms nell'ambiente JEE.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -10,19 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 1%
 
 ---
 
 
-# Considerazioni generali sulla sicurezza per AEM Forms su JEE {#general-security-considerations-for-aem-forms-on-jee}
+# Considerazioni generali sulla sicurezza per  AEM Forms su JEE {#general-security-considerations-for-aem-forms-on-jee}
 
-Scoprite come prepararvi a rendere più rigido AEM Forms nell’ambiente JEE.
+Scoprite come preparare l&#39;applicazione dell&#39; AEM Forms nell&#39;ambiente JEE.
 
-Questo articolo fornisce informazioni introduttive utili per prepararsi a rendere più rigido l’ambiente AEM Forms. Contiene informazioni preliminari su AEM Forms su JEE, sistema operativo, server applicazioni e sicurezza del database. Prima di continuare a bloccare l&#39;ambiente, controlla queste informazioni.
+Questo articolo fornisce informazioni introduttive che aiutano a prepararsi a rendere più rigido l&#39;ambiente AEM Forms . Include informazioni preliminari su  AEM Forms su JEE, sistema operativo, server applicazioni e sicurezza del database. Prima di continuare a bloccare l&#39;ambiente, controlla queste informazioni.
 
 ## Informazioni di sicurezza specifiche per il fornitore {#vendor-specific-security-information}
 
-Questa sezione contiene informazioni sulla sicurezza relative a sistemi operativi, server applicazioni e database incorporati nella soluzione AEM Forms on JEE.
+Questa sezione contiene informazioni relative alla sicurezza su sistemi operativi, server applicazioni e database incorporati nella soluzione AEM Forms  su JEE.
 
 Utilizzare i collegamenti in questa sezione per trovare informazioni di protezione specifiche per il fornitore per il sistema operativo, il database e il server applicazione in uso.
 
@@ -35,7 +38,7 @@ Quando si protegge il sistema operativo, considerare attentamente l&#39;implemen
 * Rimozione di servizi e applicazioni non necessari
 * Backup dei file
 
-Per informazioni sulla sicurezza dei sistemi operativi supportati da AEM Forms su JEE, consulta le risorse nella tabella:
+Per informazioni di sicurezza sui sistemi operativi supportati  AEM Forms su JEE, vedere le risorse nella tabella:
 
 <table> 
  <thead> 
@@ -70,7 +73,7 @@ Per informazioni sulla sicurezza dei sistemi operativi supportati da AEM Forms s
    <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guida alla sicurezza per la release 7</a><br /> </td> 
   </tr> 
   <tr> 
-   <td>CentOS 7<sup></sup></td> 
+   <td>CentOS 7<sup> </sup></td> 
    <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">Documentazione di protezione</a></td> 
   </tr> 
  </tbody> 
@@ -88,7 +91,7 @@ Durante la protezione del server applicazioni, considerare attentamente l&#39;im
 * Limitazione dei client per indirizzi IP o domini
 * Utilizzo di Java™ Security Manager per limitare programmaticamente i privilegi
 
-Per informazioni sulla sicurezza dei server delle applicazioni supportati da AEM Forms su JEE, consultate le risorse presenti nella tabella.
+Per informazioni sulla protezione dei server delle applicazioni che  AEM Forms su JEE supporta, vedere le risorse in questa tabella.
 
 <table> 
  <thead> 
@@ -122,7 +125,7 @@ Quando proteggete il database, prendete in considerazione l&#39;implementazione 
 * Nascondere il database dietro un firewall
 * Cifratura di dati sensibili prima di scriverli nel database (consultare la documentazione del produttore del database)
 
-Per informazioni sulla sicurezza dei database supportati da AEM Forms su JEE, consultate le risorse presenti nella tabella.
+Per informazioni di protezione sui database supportati da AEM Forms su JEE, vedere le risorse in questa tabella.
 
 <table> 
  <thead> 
@@ -151,7 +154,7 @@ Per informazioni sulla sicurezza dei database supportati da AEM Forms su JEE, co
  </tbody> 
 </table>
 
-Questa tabella descrive le porte predefinite che devono essere aperte durante il processo di configurazione AEM Forms on JEE. Se vi connettete attraverso https, regolate di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, consultate il documento *Installazione e distribuzione di AEM Forms su JEE* per il server delle applicazioni.
+La tabella seguente descrive le porte predefinite che devono essere aperte durante il processo di configurazione di AEM Forms  su JEE. Se vi connettete attraverso https, regolate di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, vedere il documento *Installazione e distribuzione  AEM Forms su JEE* per il server delle applicazioni.
 
 <table> 
  <thead> 
@@ -210,13 +213,13 @@ Questa tabella descrive le porte predefinite che devono essere aperte durante il
 
 ### Configurazione di JBoss per utilizzare una porta HTTP non predefinita {#configuring-jboss-to-use-a-non-default-http-port}
 
-Application Server JBoss utilizza 8080 come porta HTTP predefinita. JBoss dispone anche di porte preconfigurate 8180, 8280 e 8380, che vengono commentate nel file jboss-service.xml. Se nel computer è già presente un&#39;applicazione che utilizza questa porta, modificare la porta utilizzata da AEM Forms su JEE attenendosi alla seguente procedura:
+Application Server JBoss utilizza 8080 come porta HTTP predefinita. JBoss dispone anche di porte preconfigurate 8180, 8280 e 8380, che vengono commentate nel file jboss-service.xml. Se nel computer è già presente un&#39;applicazione che utilizza questa porta, modificare la porta utilizzata da AEM Forms su JEE seguendo la procedura seguente:
 
 1. Aprite il file seguente per la modifica:
 
-   Installazione su un solo server: Livello principale [JBoss]/standalone/configuration/standalone.xml
+   Installazione su un solo server: [Livello principale]JBoss /standalone/configuration/standalone.xml
 
-   Installazioni cluster: Livello principale [JBoss]/domain/configuration/domain.xml
+   Installazioni cluster: [Livello principale]JBoss /domain/configuration/domain.xml
 
 1. Modificate il valore dell&#39;attributo **port** nel tag **&lt;socket-binding>** in un numero di porta personalizzato. Ad esempio, i seguenti utilizzano la porta 8090:
 
@@ -225,30 +228,30 @@ Application Server JBoss utilizza 8080 come porta HTTP predefinita. JBoss dispon
 1. Salvate e chiudete il file.
 1. Riavviare il server applicazione JBoss.
 
-## Considerazioni sulla sicurezza di AEM Forms {#aem-forms-on-jee-security-considerations}
+##  AEM Forms su considerazioni di sicurezza JEE {#aem-forms-on-jee-security-considerations}
 
-In questa sezione vengono descritti alcuni moduli AEM relativi a problemi di sicurezza specifici per JEE.
+In questa sezione vengono descritti alcuni  di AEM Forms relativi a problemi di sicurezza specifici per JEE che dovrebbero essere noti.
 
 ### Credenziali e-mail non crittografate nel database {#email-credentials-not-encrypted-in-database}
 
-Le credenziali e-mail archiviate dalle applicazioni non vengono crittografate prima di essere archiviate nel database AEM Forms su JEE. Quando configurate un endpoint di servizio per l&#39;utilizzo dell&#39;e-mail, tutte le informazioni sulla password utilizzate come parte della configurazione dell&#39;endpoint non vengono crittografate quando vengono memorizzate nel database.
+Le credenziali e-mail archiviate dalle applicazioni non vengono crittografate prima di essere memorizzate nel  AEM Forms nel database JEE. Quando configurate un endpoint di servizio per l&#39;utilizzo dell&#39;e-mail, tutte le informazioni sulla password utilizzate come parte della configurazione dell&#39;endpoint non vengono crittografate quando vengono memorizzate nel database.
 
-### Contenuto sensibile per Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
+### Contenuto sensibile ad Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms su JEE utilizza i moduli AEM sul database JEE per memorizzare informazioni chiave del documento riservate e altro materiale crittografico utilizzato per i documenti dei criteri. Proteggere il database dall&#39;intrusione aiuta a proteggere queste informazioni sensibili.
+ AEM Forms su JEE utilizza l&#39;AEM Forms  nel database JEE per memorizzare informazioni sensibili relative alle chiavi del documento e altro materiale crittografico utilizzato per i documenti dei criteri. Proteggere il database dall&#39;intrusione aiuta a proteggere queste informazioni sensibili.
 
 ### Password nel modulo di testo trasparente {#password-in-clear-text-format-in-adobe-ds-xml}
 
-Il server applicazione utilizzato per eseguire AEM Forms su JEE richiede una propria configurazione per poter accedere al database tramite un&#39;origine dati configurata sul server applicazione. Assicurarsi che il server applicazioni non esponga la password del database in testo libero nel file di configurazione dell&#39;origine dati.
+Il server applicazione utilizzato per eseguire  AEM Forms su JEE richiede una propria configurazione per poter accedere al database tramite un&#39;origine dati configurata sul server dell&#39;applicazione. Assicurarsi che il server applicazioni non esponga la password del database in testo libero nel file di configurazione dell&#39;origine dati.
 
 Il file lc_[database].xml non deve contenere password in formato testo libero. Per informazioni su come crittografare queste password per il server applicazioni, consultare il fornitore del server applicazioni.
 
 >[!NOTE]
 >
->Il programma di installazione chiavi in mano AEM Forms su JEE JBoss crittografia la password del database.
+>Il programma di installazione della chiave di  AEM Forms su JEE JBoss crittografa la password del database.
 
 Per impostazione predefinita, IBM WebSphere Application Server e Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, verificate con la documentazione del server applicazione che ciò si verifichi.
 
 ### Protezione della chiave privata archiviata in Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-Le chiavi private o le credenziali importate in Trust Store sono memorizzate in AEM Forms nel database JEE. Prendere le dovute precauzioni per proteggere il database e limitare l&#39;accesso solo agli amministratori designati.
+Le chiavi private o le credenziali importate in Trust Store sono memorizzate in  AEM Forms nel database JEE. Prendere le dovute precauzioni per proteggere il database e limitare l&#39;accesso solo agli amministratori designati.
