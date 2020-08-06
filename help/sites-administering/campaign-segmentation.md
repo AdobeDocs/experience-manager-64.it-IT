@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 3%
 
 ---
 
@@ -118,7 +121,7 @@ Quando l&#39;intera istruzione restituisce true, il segmento è stato risolto. S
 >
 >Pertanto, quando si crea un segmento con tali proprietà è normalmente necessario basarsi su **browserFamily** , ad esempio, invece di **browserFamily_i18n**.
 
-## Creazione di un nuovo segmento {#creating-a-new-segment}
+## Creating a New Segment {#creating-a-new-segment}
 
 Per definire il nuovo segmento:
 
@@ -129,7 +132,7 @@ Per definire il nuovo segmento:
 
    ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
 
-1. **Utilizzate la barra laterale o il menu di scelta rapida (in genere fate clic con il pulsante destro del mouse, quindi selezionate** Nuovo). per aprire la finestra Inserisci nuovo componente) per trovare la caratteristica del segmento desiderata. Trascinala quindi nell’Editor **** segmenti che verrà visualizzato nel contenitore **AND** predefinito.
+1. Utilizzate la barra laterale o il menu di scelta rapida (in genere fate clic con il pulsante destro del mouse, quindi selezionate **Nuovo).** per aprire la finestra Inserisci nuovo componente) per trovare la caratteristica del segmento desiderata. Trascinala quindi nell’Editor **** segmenti che verrà visualizzato nel contenitore **AND** predefinito.
 1. Fare doppio clic sulla nuova caratteristica per modificare i parametri specifici; ad esempio la posizione del mouse:
 
    ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
@@ -143,7 +146,7 @@ Per definire il nuovo segmento:
 
 ## Utilizzo di AND e OR Containers {#using-and-and-or-containers}
 
-In AEM è possibile creare segmenti complessi. È utile conoscere alcuni punti fondamentali:
+Puoi creare segmenti complessi in AEM. È utile conoscere alcuni punti fondamentali:
 
 * Il livello principale della definizione è sempre il contenitore AND creato inizialmente; questo non può essere modificato, ma non ha un effetto sul resto della definizione del segmento.
 * Verificare che la nidificazione del contenitore abbia senso. I contenitori possono essere visualizzati come parentesi dell&#39;espressione booleana.
