@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
 source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ Scopri come gestire e modificare le risorse video in Risorse Adobe Experience Ma
 
 ## Caricare e visualizzare in anteprima le risorse video {#uploading-and-previewing-video-assets}
 
-Risorse AEM genera le anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Puoi visualizzare l’anteprima di queste rappresentazioni nell’interfaccia utente di Risorse AEM.
+ AEM Assets genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Potete visualizzare l&#39;anteprima di queste rappresentazioni nell&#39;interfaccia utente  AEM Assets.
 
 1. Nella cartella o nelle sottocartelle Risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
 1. Per caricare la risorsa, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti, quindi scegliete **[!UICONTROL File]**. In alternativa, rilasciatelo direttamente nell’area delle risorse. Per informazioni dettagliate sull’operazione di caricamento, consultate [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets) .
@@ -35,21 +38,21 @@ Risorse AEM genera le anteprime per le risorse video con l’estensione MP4. Se 
 
 ## Configurazione per il caricamento di risorse di dimensioni superiori a 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Per impostazione predefinita, Risorse AEM non consente di caricare risorse maggiori di 2 GB a causa di un limite di dimensione file. Tuttavia, potete sovrascrivere questo limite entrando in CRXDE Lite e creando un nodo sotto la `/apps` directory. Il nodo deve avere lo stesso nome di nodo, la stessa struttura di directory e le stesse proprietà di nodo confrontabili dell&#39;ordine.
+Per impostazione predefinita, l’AEM Assets  non consente di caricare risorse di dimensioni superiori a 2 GB a causa di un limite di dimensione file. Tuttavia, potete sovrascrivere questo limite entrando nel CRXDE Lite e creando un nodo sotto la `/apps` directory. Il nodo deve avere lo stesso nome di nodo, la stessa struttura di directory e le stesse proprietà di nodo confrontabili dell&#39;ordine.
 
-Oltre alla configurazione Risorse AEM, modifica le seguenti configurazioni per caricare risorse di grandi dimensioni:
+Oltre  configurazione AEM Assets, modificate le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
-* Aumenta l’ora di scadenza del token. Consulta Servlet [!UICONTROL CSRF] Adobe Granite nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumentare la configurazione `receiveTimeout` del dispatcher. Per ulteriori informazioni, consulta Configurazione [del dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
+* Aumenta l’ora di scadenza del token. Consulta [!UICONTROL servlet] CSRF Granite Adobe nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
+* Aumentare la configurazione `receiveTimeout` del dispatcher. Per ulteriori informazioni, consultate [configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)del dispatcher di Experienci Manager.
 
 >[!NOTE]
 >
->L&#39;interfaccia utente di AEM Classic non presenta un limite di dimensione file di due gigabyte. Inoltre, il flusso di lavoro end-to-end per video di grandi dimensioni non è completamente supportato.
+>L&#39;interfaccia utente di AEM Classic non ha un limite di dimensione file di due gigabyte. Inoltre, il flusso di lavoro end-to-end per i video di grandi dimensioni non è completamente supportato.
 
 Per configurare un limite di dimensione file più elevato, eseguire i seguenti passaggi nella `/apps` directory.
 
 1. In AEM, tocca **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
-1. Nella pagina **[!UICONTROL CRXDE Lite]** , nella finestra directory a sinistra, passare a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Per visualizzare la finestra della directory, toccate `>>` l&#39;icona.
+1. Nella pagina **[!UICONTROL CRXDE Lite]** , nella finestra della directory a sinistra, passare a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Per visualizzare la finestra della directory, toccate `>>` l&#39;icona.
 1. From the toolbar, tap **[!UICONTROL Overlay Node]**. In alternativa, seleziona **[!UICONTROL Sovrapponi nodo]** dal menu di scelta rapida.
 1. Nella finestra di dialogo **[!UICONTROL Sovrapponi nodo]**, tocca **[!UICONTROL OK]**.
 
@@ -62,7 +65,7 @@ Per configurare un limite di dimensione file più elevato, eseguire i seguenti p
 
 1. Dalla barra degli strumenti, toccate **[!UICONTROL Salva tutto]**.
 1. All’interno di AEM, tocca **[!UICONTROL Strumenti > Operazioni > Console web]**.
-1. Nella pagina **[!UICONTROL Adobe Experience Manager Web Console Bundles]** , nella colonna **[!UICONTROL Nome]** della tabella, individua e tocca il gestore **[!UICONTROL processi esterni]** Adobe Granite Workflow.
+1. Nella pagina Bundle **[!UICONTROL della console Web di]** Adobe Experience Manager, nella colonna **[!UICONTROL Nome]** della tabella, individuare e toccare **[!UICONTROL Gestoreprocesso esterno del flusso di lavoro Granite del Adobe]**.
 1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours).
 1. Toccate **[!UICONTROL Salva]**.
 1. In AEM, toccate **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
@@ -82,7 +85,7 @@ Dopo la pubblicazione, le risorse video sono disponibili per l’inclusione in u
 1. Toccate l’icona **[!UICONTROL Anteprima]** per riprodurre il video.
 1. Per annotare il video, toccate il pulsante **[!UICONTROL Annota]** . Un’annotazione viene aggiunta al particolare punto temporale (fotogramma) del video.
 
-   Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente in Risorse Adobe Experience Manager.
+   Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente in Adobe Experience Manager Assets.
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -90,7 +93,7 @@ Dopo la pubblicazione, le risorse video sono disponibili per l’inclusione in u
 
 1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. For example, to skip the first 10 seconds of video, enter `20` in the text field.
 
-   ![chlimage_1-206](assets/chlimage_1-205.png)
+   ![chlimage_1-205](assets/chlimage_1-205.png)
 
 1. Fate clic su un’annotazione per visualizzarla nella timeline. Toccate **[!UICONTROL Elimina]** per rimuovere l’annotazione dalla timeline.
 
