@@ -33,19 +33,19 @@ Questo gestore memorizza il messaggio di risposta SAML crittografato nel nodo ut
 
 >[!NOTE]
 >
->Vedi [una dimostrazione dell’integrazione](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)AEM e SAML.
+>Vedere [una dimostrazione dell&#39;integrazione](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)AEM e SAML.
 >
 >Per leggere un articolo della community end to end, fate clic su: [Integrazione di SAML con Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## Configurazione Del Gestore Di Autenticazione SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere alla configurazione del gestore di autenticazione [SAML](http://saml.xml.org/saml-specifications) 2.0 denominata gestore **di autenticazione** Adobe Granite SAML 2.0. È possibile impostare le seguenti proprietà.
+La console [](/help/sites-deploying/configuring-osgi.md) Web fornisce l&#39;accesso alla configurazione del gestore di autenticazione [SAML](http://saml.xml.org/saml-specifications) 2.0 denominata **Adobe Gestore** di autenticazione Granite SAML 2.0. È possibile impostare le seguenti proprietà.
 
 >[!NOTE]
 >
 >Per impostazione predefinita, il gestore di autenticazione SAML 2.0 è disabilitato. Per attivare il gestore, è necessario impostare almeno una delle seguenti proprietà:
 >
->* L’URL POST del provider di identità.
+>* L&#39;URL del POST del provider di identità.
 >* L&#39;ID entità provider di servizi.
 
 >
@@ -60,7 +60,7 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 
 **Classificazione** del servizio OSGi Framework Service Ranking valore per indicare l&#39;ordine in cui chiamare questo servizio. Si tratta di un valore intero per il quale i valori superiori indicano una precedenza superiore.
 
-**Alias** certificato IDP L&#39;alias del certificato dell&#39;IdP nell&#39;archivio di attendibilità globale. Se questa proprietà è vuota, il gestore di autenticazione è disabilitato. Consultate il capitolo &quot;Add the IdP Certificate to AEM TrustStore&quot; (Aggiungi certificato IdP a AEM TrustStore) per informazioni sulla configurazione.
+**Alias** certificato IDP L&#39;alias del certificato dell&#39;IdP nell&#39;archivio di attendibilità globale. Se questa proprietà è vuota, il gestore di autenticazione è disabilitato. Consultate il capitolo &quot;Add the IdP Certificate to the AEM TrustStore&quot; (Aggiungi il certificato IdP a TrustStore) di seguito per informazioni sulla configurazione.
 
 **URL** provider di identità dell&#39;IDP a cui deve essere inviata la richiesta di autenticazione SAML. Se questa proprietà è vuota, il gestore di autenticazione è disabilitato.
 
@@ -95,7 +95,7 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 
 **Appartenenza** al gruppo Il nome dell&#39;attributo saml:Attribute contenente un elenco di gruppi CRX a cui l&#39;utente deve essere aggiunto.
 
-## Aggiungi il certificato IdP a AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
+## Aggiungere il certificato IdP al AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
 Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate. Affinché questo funzioni, è necessario fornire almeno il certificato pubblico dell&#39;IdP nella directory archivio. A tal fine, è necessario:
 
@@ -108,7 +108,7 @@ Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Aggiungi il codice del fornitore di servizi e la catena di certificati all’archivio chiavi di AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Aggiungere il codice del provider di servizi e la catena di certificati all&#39;archivio chiavi AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
