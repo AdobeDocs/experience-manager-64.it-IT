@@ -3,7 +3,7 @@ title: Utilizzo di Tracciatore pagina e codice da incorporare nelle pagine Web
 description: Scoprite come includere il Tracciatore pagina e incorporare codici JavaScript nel codice del sito Web per consentire  Adobe Analytics di acquisire dati di utilizzo intorno alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -33,9 +33,9 @@ Il seguente codice di esempio mostra l’aspetto di una pagina Web che contiene 
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","xxxx","xxx","list1","eVar3","event8","event7");
             </script>
-                    
+
     </head>
-                
+
     <body>
 
                                 <img
@@ -46,7 +46,7 @@ Il seguente codice di esempio mostra l’aspetto di una pagina Web che contiene 
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
                     src="http://localhost/xxxx/content/dam/test/xyz.jpg"
@@ -75,7 +75,6 @@ Potete aggiungere il codice di tracciamento delle pagine nella sezione di intest
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
             </script>
-                                                
  </head>
 ```
 
@@ -94,7 +93,7 @@ Il codice da incorporare viene aggiunto all’interno del corpo del codice del s
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img
                     src="http://localhost:4502/xxxx/content/dam/test/xyz.jpg"
