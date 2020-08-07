@@ -1,8 +1,8 @@
 ---
-title: Best practice
-seo-title: Best practice
-description: Segui questa pagina per conoscere le best practice e le linee guida che aiuteranno gli sviluppatori esperti di AEM per i siti che desiderano creare modelli e componenti per app mobili.
-seo-description: Segui questa pagina per conoscere le best practice e le linee guida che aiuteranno gli sviluppatori esperti di AEM per i siti che desiderano creare modelli e componenti per app mobili.
+title: 'Best practice  '
+seo-title: 'Best practice  '
+description: Segui questa pagina per apprendere le best practice e le linee guida utili per gli sviluppatori esperti AEM siti che desiderano creare modelli e componenti per app mobili.
+seo-description: Segui questa pagina per apprendere le best practice e le linee guida utili per gli sviluppatori esperti AEM siti che desiderano creare modelli e componenti per app mobili.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -11,26 +11,30 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Best practice {#best-practices}
+# Best practice   {#best-practices}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-La creazione di un&#39;app AEM Mobile On-Demand Services è diversa dalla creazione di un&#39;app che viene eseguita direttamente nella shell Cordova (o PhoneGap). Gli sviluppatori dovrebbero avere familiarità con:
+La creazione di un&#39;app AEM Mobile On-demand Services  è diversa dalla creazione di un&#39;app che viene eseguita direttamente nella shell Cordova (o PhoneGap). Gli sviluppatori dovrebbero avere familiarità con:
 
-* Plug-in supportati out-of-box e plug-in specifici di AEM Mobile.
+* Plug-in supportati oltre ai plug-in specifici di AEM Mobile .
 
 >[!NOTE]
 >
 >Per informazioni dettagliate sui plug-in, consultate le risorse seguenti:
 >
->* [Utilizzo dei plug-in Cordova in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Utilizzo dei plug-in abilitati a Cordova specifici di AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Utilizzo dei plug-in Cordova in  AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Utilizzo  plug-in abilitati a Cordova specifici di AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+
 >
 
 
@@ -39,11 +43,11 @@ La creazione di un&#39;app AEM Mobile On-Demand Services è diversa dalla creazi
 
    * Ad esempio, attendere la funzione *deviceready* prima di tentare di accedere all&#39;API di un plug-in.
 
-## Linee guida per gli sviluppatori AEM {#guidelines-for-aem-developers}
+## Linee guida per AEM sviluppatori {#guidelines-for-aem-developers}
 
-Le seguenti linee guida aiuteranno gli sviluppatori esperti di AEM per i siti che desiderano creare modelli e componenti per app mobili:
+Le seguenti linee guida aiuteranno AEM sviluppatori esperti per i siti che desiderano creare modelli e componenti per app mobili:
 
-**Strutturare i modelli di siti AEM per incoraggiare il riutilizzo e l’estensibilità**
+**Struttura AEM modelli di siti per incoraggiare il riutilizzo e l&#39;estensibilità**
 
 * Preferisci più file di script componenti su un singolo file monolitico
 
@@ -56,7 +60,7 @@ Le seguenti linee guida aiuteranno gli sviluppatori esperti di AEM per i siti ch
 
 **Ottimizzazione per prestazioni su dispositivo**
 
-* Lo script e i fogli di stile specifici dell&#39;articolo devono essere inclusi nel payload dell&#39;articolo, utilizzando il modello di sincronizzazione dei contenuti dps-article
+* Lo script specifico per l&#39;articolo e i fogli di stile devono essere inclusi nel payload dell&#39;articolo, utilizzando il modello di sincronizzazione dei contenuti dps-article
 * Gli script e i fogli di stile condivisi da più articoli devono essere inclusi nelle risorse condivise, tramite il modello di sincronizzazione dei contenuti dps-HTMLResources
 * Non fare riferimento ad alcuno script esterno che bloccano il rendering
 
@@ -67,7 +71,7 @@ Le seguenti linee guida aiuteranno gli sviluppatori esperti di AEM per i siti ch
 **Preferisci librerie JS e CSS lato client specifiche dell&#39;app a librerie specifiche per il Web**
 
 * Per evitare problemi di sovraccarico nelle librerie come jQuery Mobile per gestire una vasta gamma di dispositivi e browser
-* Quando un modello è in esecuzione nella visualizzazione Web di un&#39;app, potete controllare le piattaforme e le versioni che l&#39;app supporterà, nonché la consapevolezza che sarà presente il supporto JavaScript. Ad esempio, preferisci Ionic (forse solo il CSS) rispetto all&#39;interfaccia utente jQuery Mobile e Onsen rispetto a Bootstrap.
+* Quando un modello è in esecuzione nella visualizzazione Web di un&#39;app, potete controllare le piattaforme e le versioni che l&#39;app supporterà, nonché la consapevolezza che sarà presente il supporto JavaScript. Ad esempio, preferisci Ionic (forse solo il CSS) rispetto all&#39;interfaccia utente jQuery Mobile e Onsen rispetto all&#39;Bootstrap.
 
 >[!NOTE]
 >
