@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire il contenuto all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sul contenuto all&#39;interno dell&#39;applicazione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consultate Considerazioni di [progettazione per le app](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultate Considerazioni di [progettazione per  app](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile nella Guida in linea.
 
 >[!CAUTION]
 >
@@ -52,9 +55,9 @@ Per caricare le risorse condivise per un articolo, effettuate le seguenti operaz
 
 Dopo aver appreso la creazione e la pubblicazione di contenuti, vedete
 
-* [Sviluppo di contenuto AEM per i servizi on-demand AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Amministrazione dei contenuti per l&#39;utilizzo dei servizi on-demand AEM Mobile](/help/mobile/aem-mobile.md)
+* [Sviluppo AEM contenuto per  AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Amministrazione di contenuti da utilizzare  AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Per ulteriori informazioni sugli argomenti relativi all’authoring, consulta
 
-[Creazione di contenuti AEM per le app AEM Mobile On-Demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Creazione AEM contenuto per  app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
