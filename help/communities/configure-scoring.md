@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -119,7 +119,7 @@ Per visualizzare le voci di registro:
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
@@ -178,19 +178,16 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
       * `/content/community-components/en/forum/jcr:content`
    * Aggiunta di proprietà di punteggio e contrassegno
 
-      * 
+      ```
+      scoringRules = [/etc/community/scoring/rules/comments-scoring,
+      /etc/community/scoring/rules/forums-scoring]
+      ```
 
-         ```
-         scoringRules = [/etc/community/scoring/rules/comments-scoring,
-         /etc/community/scoring/rules/forums-scoring]
-         ```
+      ```
+      badgingRules =[/etc/community/badging/rules/comments-scoring,
+      /etc/community/badging/rules/forums-scoring]
+      ```
 
-      * 
-
-         ```
-         badgingRules =[/etc/community/badging/rules/comments-scoring,
-         /etc/community/badging/rules/forums-scoring]
-         ```
    * Individuare il nodo del componente forum
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
@@ -200,7 +197,6 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 
       * `allowBadges = true`
    * Un utente accede, crea un argomento del forum e riceve un contrassegno di bronzo
-
 
 
 
