@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire il contenuto all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sul contenuto all&#39;interno dell&#39;applicazione.
 
@@ -29,19 +32,20 @@ I banner rappresentano collegamenti promozionali tipicamente grafici.
 
 >[!NOTE]
 >
->Consultate le seguenti risorse nell&#39;Aiuto online per informazioni sui seguenti argomenti nelle app AEM Mobile:
+>Consultate le seguenti risorse nella Guida in linea per informazioni sui seguenti argomenti nelle  app AEM Mobile:
 >
 >* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Creazione di banner](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+
 >
 
 
 
 ## Creazione di un banner {#creating-a-banner}
 
-Il flusso di lavoro generale per creare un articolo è il seguente:
+Il flusso di lavoro generale per la creazione di un articolo è il seguente:
 
 1. Selezionate **Mobile** dalla barra laterale.
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
@@ -54,7 +58,7 @@ Il flusso di lavoro generale per creare un articolo è il seguente:
 
 ## Importazione di un nuovo banner {#importing-a-new-banner}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
 
 >[!NOTE]
 >
@@ -63,7 +67,7 @@ Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mob
 Flusso di lavoro per importare un nuovo articolo
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia rivolta verso il basso nell’angolo superiore destro della sezione **Gestisci banner** e selezionate Importa banner.
+1. Fate clic sulla freccia rivolta verso il basso nell’angolo in alto a destra della sezione **Gestisci banner** e selezionate Importa banner.
 1. Fate clic su **Importa banner** nella finestra di dialogo, quindi su Chiudi.
 1. Gli articoli Mobile On-Demand ora vengono visualizzati nella sezione **Gestisci banner** .
 
@@ -73,11 +77,11 @@ Flusso di lavoro per importare un nuovo articolo
 
 ## Modifica di un banner {#editing-a-banner}
 
-Utilizzate l&#39;editor incorporato con trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
+Utilizzate l&#39;editor incorporato AEM trascinamento per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
 
 >[!CAUTION]
 >
->Nell’editor è possibile aprire solo i banner creati in AEM.
+>Solo i banner creati in AEM possono essere aperti nell’editor.
 
 Flusso di lavoro per modificare un articolo:
 
@@ -116,7 +120,7 @@ Flusso di lavoro generale per caricare un banner:
 
 ## Eliminazione di un banner {#deleting-a-banner}
 
-Questa operazione elimina il banner selezionato da Mobile On-Demand ed eventualmente dall’istanza AEM locale.
+Questa operazione elimina il banner selezionato da Mobile On-Demand ed eventualmente dall&#39;istanza AEM locale.
 
 Flusso di lavoro generale per eliminare un banner:
 
