@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
 source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Esistono elenchi di controllo per ogni persona (ruolo) coinvolta nel progetto. Q
 
 ## Scarica {#download}
 
-Elenco di controllo delle best practice per i progetti AEM v2
+Elenco di controllo delle best practice AEM progetto v2
 
 [Ottieni file](assets/aem_project_bp_checklistv2.xlsx)
 
@@ -43,7 +46,7 @@ Il foglio di calcolo contiene i seguenti fogli di lavoro:
 
 ## Utilizzo degli elenchi di controllo {#using-the-checklists}
 
-Per distribuire correttamente un progetto di alta qualità, è necessario completare tutti gli elementi nelle checklist, preferibilmente in ordine:
+Per distribuire correttamente un progetto di alta qualità, è necessario completare tutti gli elementi nelle liste di controllo, preferibilmente in ordine:
 
 1. Le liste di controllo sono definite in base al **[Persona](/help/managing/best-practices.md#persona)**(ruolo) coinvolto. Ogni persona deve utilizzare l&#39;elenco di controllo appropriato al proprio ruolo nel progetto.
 1. Gli elenchi di controllo coprono i documenti **[e i](/help/managing/best-practices.md#required-documents)**risultati finali**[](/help/managing/best-practices.md#deliverables)** richiesti per ogni attività cardine; il soggetto interessato deve impostare i campi di stato e di qualità appropriati.
