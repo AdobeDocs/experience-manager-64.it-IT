@@ -1,8 +1,8 @@
 ---
 title: Gestori di app in dotazione
 seo-title: Gestori di app in dotazione
-description: Segui questa pagina per saperne di più sui gestori out-of-the-box per Adobe PhoneGap Enterprise con AEM.
-seo-description: Segui questa pagina per saperne di più sui gestori out-of-the-box per Adobe PhoneGap Enterprise con AEM.
+description: Seguite questa pagina per informazioni sui gestori out-of-the-box per  Adobe PhoneGap Enterprise con AEM.
+seo-description: Seguite questa pagina per informazioni sui gestori out-of-the-box per  Adobe PhoneGap Enterprise con AEM.
 uuid: 436038cb-fb76-4bb5-ae79-5d4043b81dd9
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 0%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Consultate le seguenti linee guida per lo sviluppo di gestori di sincronizzazione dei contenuti:
 
 * I gestori devono implementare *com.day.cq.contentsync.handler.ContentUpdateHandler* (direttamente o estendendo una classe che lo supporta)
 * I gestori possono estendere *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Il gestore deve segnalare true solo se ha aggiornato la cache ContentSync. La segnalazione non corretta di AEM consente di creare un aggiornamento.
+* Il gestore deve segnalare true solo se ha aggiornato la cache ContentSync. La segnalazione errata di true consente AEM creare un aggiornamento.
 * Il gestore deve aggiornare la cache solo se il contenuto è effettivamente cambiato. Non scrivere nella cache se non è necessario un bianco ed evitare una creazione di aggiornamenti non necessaria.
 
-## Gestori esterni {#out-of-the-box-handlers}
+## Gestori out of the Box {#out-of-the-box-handlers}
 
 Di seguito sono elencati i gestori di app forniti con il prodotto:
 
@@ -58,9 +61,9 @@ Di seguito sono elencati i gestori di app forniti con il prodotto:
 
 **mobilepageassets** Raccoglie le risorse della pagina dell&#39;app.
 
-**mobilecontentlist** Elenca il contenuto dello zip ContentSync. Questo viene utilizzato dal client side js sul dispositivo per eseguire la copia iniziale del file richiesta per le app AEM.
+**mobilecontentlist** Elenca il contenuto dello zip ContentSync. Questo viene utilizzato dal client lato js sul dispositivo per eseguire la copia del file iniziale richiesta per AEM app.
 
-Questo handler deve essere aggiunto a qualsiasi configurazione ContentSync delle app AEM.
+Questo gestore deve essere aggiunto a qualsiasi configurazione ContentSync AEM App.
 
 * ***type - String - mobilecontentlist***
 * ***path*** - String - keep empty, must be present as a valid handler, ma il percorso viene ricavato come cache ContentSync corrente. Questo valore viene ignorato.
@@ -87,7 +90,7 @@ Questo handler deve essere aggiunto a qualsiasi configurazione ContentSync delle
 
 **mobilecontentpackageslist** Elenca il pacchetto di contenuto AEM in una determinata app e il serverURL a cui effettuare le richieste di aggiornamento. Viene utilizzato per richiedere gli aggiornamenti dei contenuti tramite il lato client sul dispositivo
 
-Il gestore deve essere utilizzato nella configurazione ContentSync della shell delle app AEM (nodo con page-type=app-instance)
+Il gestore deve essere utilizzato nella configurazione ContentSync della shell AEM app (nodo con page-type=app-instance)
 
 * ***type - String - mobilecontentpackageslist***
 * ***percorso **-**Stringa*** - Percorso di una shell app (nodo con page-type=app-instance).
@@ -133,17 +136,17 @@ Questo handler deve essere utilizzato in una configurazione AEM App Shell Conten
 
 Questo viene utilizzato in fase di compilazione per configurare il plugin AMS per il supporto analitico.
 
-Il gestore deve essere utilizzato nella configurazione ContentSync della shell delle app AEM (nodo con page-type=app-instance)
+Il gestore deve essere utilizzato nella configurazione ContentSync della shell AEM app (nodo con page-type=app-instance)
 
 * ***type - String*** - mobileADBMobileConfigJSON
 * ***percorso - Stringa*** - Percorso di una shell app (nodo con page-type=app-instance o una RT che estende /libs/mobileapps/core/components/instance)
 * ***targetRootDirectory - String*** - il prefisso da aggiungere ai percorsi come radice di destinazione per l&#39;aggiornamento del contenuto per questo gestore
 
-**notifiche sconfig** Estragga le configurazioni delle notifiche richieste sul dispositivo. Le proprietà vengono estratte dalla configurazione del servizio cloud del servizio push associata all&#39;app.
+**notifiche sconfig** Estragga le configurazioni delle notifiche richieste sul dispositivo. Le proprietà vengono estratte dalla rispettiva configurazione del servizio cloud del servizio push associata all&#39;app.
 
-Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al file JSON **page-notifications-config.json** per essere incluse nel file www root dell&#39;app del contenuto.
+Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al file JSON **page-notifications-config.json** per essere incluse nel file www root del contenuto dell&#39;app.
 
-Le proprietà AEM sono quelle con spazi dei nomi con &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. È possibile escludere altre proprietà utilizzando la proprietà &quot;excludeProperties&quot; nel nodo di configurazione della sincronizzazione dei contenuti.
+AEM proprietà sono quelle con spazio dei nomi con &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. È possibile escludere altre proprietà utilizzando la proprietà &quot;excludeProperties&quot; nel nodo di configurazione della sincronizzazione dei contenuti.
 
 * ***type - String*** - notificationsconfig
 * ***excludeProperties - String[]*** - proprietà da escludere
@@ -155,14 +158,14 @@ Le proprietà AEM sono quelle con spazi dei nomi con &quot;cq&quot;, &quot;sling
 
    * un&#39;altra configurazione ContentSync
    * a un pacchetto di contenuti (verrà utilizzata la proprietà phonegap-exportTemplate per trovare la configurazione ContentSync)
-   * a una risorsa mobile (i contenuti dell’app si trovano nella risorsa e, se i pacchetti di contenuto dispongono di una proprietà page-includeInBuild che è true, il phonegap-exportTemplate verrà utilizzato per trovare la configurazione ContentSync)
+   * a una risorsa mobile (i contenuti dell’app si trovano in tale risorsa e, se i pacchetti di contenuto dispongono di una proprietà page-includeInBuild che è true, il phonegap-exportTemplate verrà utilizzato per trovare la configurazione ContentSync)
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - se true, crea un **aggiornamento** iniziale nella configurazione di destinazione prima dell&#39;importazione, se una volta non esiste già
 
 * ***autoFillBeforeImport - Boolean*** - se true, aggiorna/compila la configurazione di destinazione prima di importare
 * ***configSuffix - String*** - una stringa da aggiungere al percorso indicato nella proprietà &quot;phonegap-exportTemplate&quot; di app-content. Questo può essere utilizzato per distinguere diversi modelli di esportazione. Ad esempio, questa proprietà può essere impostata su **&quot;-dev&quot;** per indicare che *&quot;/../../../appconfig-dev&quot;* deve essere utilizzata (al contrario di *&quot;/../../../appconfig&quot;*).
 
-**app-assets** Include tutte le risorse associate a un&#39;istanza dell&#39;app. Questo handler includerà tutte le risorse trovate nel percorso specificato insieme alle risorse a cui fa riferimento la proprietà appAssetPath di un&#39;istanza di app.
+**app-assets** Include tutte le risorse associate a un&#39;istanza dell&#39;app. Questo handler includerà tutte le risorse trovate nel percorso specificato insieme alle risorse a cui fa riferimento la proprietà appAssetPath di un&#39;istanza dell&#39;app.
 
 * ***type - String*** - app-assets
 
@@ -177,14 +180,14 @@ Il gestore mobileappsoffers estende il gestore mobileappspages e aggiunge le seg
 * ***selector - String*** - deve essere impostato su tandt
 * ***path - String***- il percorso del marchio della campagna
 
-**mobileappconfig** Il gestore di sincronizzazione del contenuto mobileappconfig fornisce un modo per inserire i dati JSON in MobileAppsConfig.json. Per registrare una classe di provider, gli sviluppatori aggiungeranno la classe MobileAppsInfoProvider all&#39;elenco dei provider. Il gestore si ripeterà sull&#39;elenco di MobileAppsInfoProviders e consentirà al provider di inserire i dati nel file json risultante. L&#39;elenco delle proprietà supportate da questo gestore è:
+**mobileappconfig** Il gestore di sincronizzazione del contenuto mobileappconfig fornisce un modo per inserire i dati JSON in MobileAppsConfig.json. Per registrare una classe di provider, gli sviluppatori aggiungeranno la classe MobileAppsInfoProvider all&#39;elenco dei provider. Il gestore eseguirà un&#39;iterazione sull&#39;elenco di MobileAppsInfoProviders e consentirà al provider di inserire i dati nel file json risultante. L&#39;elenco delle proprietà supportate da questo gestore è:
 
 * ***percorso **-**Stringa*** - il percorso di un nodo di istanza dell&#39;app con pge-type=app-instance o un RT che estende /libs/mobileapps/core/components/instance
 * ***provider - Stringa***`[]` - elenco di MobileAppsInfoProviders completi
 * ***targetRootDirectory - String*** - la directory in cui scrivere il file MobileAppsConfig.json.
 * **fileName - String** - nome facoltativo del file in cui scrivere il file JSON, per impostazione predefinita è MobileAppsConfig.json
 
-È possibile configurare più gestori mobileappconfig ciascuno con un set univoco di provider che scrivono in file JSON diversi.
+È possibile che più gestori mobileappconfig siano configurati ciascuno con un set univoco di provider che scrivono in file JSON diversi.
 
 ### Test dei gestori di sincronizzazione dei contenuti {#testing-content-sync-handlers}
 
@@ -198,18 +201,18 @@ Il gestore mobileappsoffers estende il gestore mobileappspages e aggiunge le seg
 
 * Eseguire la configurazione
 * Esportare la configurazione o la revisione sul dispositivo
-* Se il rendering non riesce, controllare se mancano *stili/risorse/libs* o controllare se sono presenti percorsi non validi per *stili/risorse/libs*
+* Se il rendering non riesce, controllare se mancano *stili/risorse/libs* o verificare se sono presenti percorsi non validi per *stili/risorse/libs*
 
 **Registrazione** Abilita registrazione debug ContentSync tramite le configurazioni OSGI logger sul pacchetto `com.day.cq.contentsync` Questo consente di tenere traccia dei gestori eseguiti e se hanno aggiornato la cache e segnalato l&#39;aggiornamento della cache.
 
-## Additional Resources {#additional-resources}
+## Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
-* [Authoring per Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
-* [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Authoring per  Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
+* [Amministrazione di contenuti per  Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
 
 >[!NOTE]
 >
->Per iniziare a utilizzare lo sviluppo di app AEM Mobile, fai clic [qui](/help/mobile/getting-started-aem-mobile.md).
+>Per iniziare a sviluppare  app AEM Mobile, fai clic [qui](/help/mobile/getting-started-aem-mobile.md).
 
