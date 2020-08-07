@@ -11,6 +11,9 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Questa pagina spiega l&#39;anteprima con l&#39;app Preflight.
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni seguenti vengono eseguite sull&#39;intera applicazione.
 
@@ -45,18 +48,18 @@ Con l&#39;app Mobile On Demand Preflight, potete visualizzare tutti i progetti a
 >
 >L&#39;app AEM Preflight viene utilizzata per visualizzare l&#39;anteprima del contenuto e delle pagine di ricerca. Per informazioni dettagliate sull&#39;app Preflight, fai clic [qui](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
 >
->L&#39;app AEM Preflight è disponibile in [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&hl=en)e [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
+>L&#39;app AEM Preflight è disponibile in [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)e [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
 
 ### Come {#getting-ahead}
 
-Se avete ancora bisogno di ulteriori informazioni sulla creazione di contenuto, consultate le seguenti risorse per creare e gestire il contenuto in un&#39;applicazione AEM Mobile:
+Per ulteriori informazioni sull’authoring dei contenuti, consultate le seguenti risorse per creare e gestire i contenuti in un’applicazione AEM Mobile :
 
-* [Pannello applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Gestione dei contenuti](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-## Additional Resources {#additional-resources}
+## Risorse aggiuntive {#additional-resources}
 
-Per ulteriori informazioni sugli altri due ruoli e responsabilità per la creazione di un&#39;app AEM Mobile On-Demand Services, consultate le risorse seguenti:
+Per ulteriori informazioni sugli altri due ruoli e responsabilità per la creazione di un&#39;app AEM Mobile On-demand Services , consulta le risorse seguenti:
 
-* [Sviluppo di contenuto AEM per i servizi on-demand AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Creazione di contenuti AEM per AEM Mobile On-Demand Services App](/help/mobile/mobile-apps-ondemand.md)
+* [Sviluppo AEM contenuto per  AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Creazione AEM contenuto per  app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
