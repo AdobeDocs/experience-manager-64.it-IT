@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 0%
@@ -125,7 +125,9 @@ Di seguito viene fornita una panoramica della procedura per aggiornare un server
 
       Se create una nuova istanza del database, importate nel database i dati di cui al punto 3. Per informazioni su come importare dati in un database, consultate la documentazione del fornitore di database corrispondente.
 
-      >[!NOTE] Se si utilizza il formato di persistenza RDBMK, utilizzare un singolo database sia per la persistenza dell&#39;archivio che per i servizi documenti in esecuzione su  AEM Forms su JEE.
+      >[!NOTE]
+      >
+      >Se si utilizza il formato di persistenza RDBMK, utilizzare un singolo database sia per la persistenza dell&#39;archivio che per i servizi documenti in esecuzione su  AEM Forms su JEE.
 
 
 1. Eseguire l&#39;aggiornamento:
@@ -133,17 +135,23 @@ Di seguito viene fornita una panoramica della procedura per aggiornare un server
    1. Installate AEM 6.4 Forms su JEE su un nuovo server eseguendo il programma di installazione. Il programma di installazione inserisce tutti i file richiesti nel computer, all&#39;interno di una struttura di directory di installazione.
    1. Al termine dell&#39;installazione, eseguite **Configuration Manager** per configurare vari moduli AEM Forms  e impostare le configurazioni appropriate. Insieme alle impostazioni di configurazione, consente di specificare il percorso di Global Data Storage (GDS) e crx-repository.
 
-      >[!NOTE] Nella schermata Aggiornamento selezione attività, selezionate l&#39;opzione **[!UICONTROL Aggiorna da  Adobe Experience Manager Forms 6.2.0]** . L&#39; **[!UICONTROL opzione di aggiornamento da  Adobe Experience Manager Forms 6.2.0]** consente al gestore di configurazione di effettuare l&#39;aggiornamento dall&#39;LiveCycle ES3 a AEM Forms 6.4.
+      >[!NOTE]
+      >
+      >Nella schermata Aggiornamento selezione attività, selezionate l&#39;opzione **[!UICONTROL Aggiorna da  Adobe Experience Manager Forms 6.2.0]** . L&#39; **[!UICONTROL opzione di aggiornamento da  Adobe Experience Manager Forms 6.2.0]** consente al gestore di configurazione di effettuare l&#39;aggiornamento dall&#39;LiveCycle ES3 a AEM Forms 6.4.
 
    1. (Non richiesto per  modulo AEM Forms Document Security) Aggiornare e importare l&#39;archivio CRX nel server Forms AEM 6.4.
 
-      >[!NOTE] Dopo l&#39;aggiornamento dell&#39;archivio crx e la migrazione del contenuto, modificate la password dell&#39;account amministratore. Per istruzioni dettagliate, consultate [Modifica della password per un utente](/help/sites-administering/granite-user-group-admin.md)esistente.
+      >[!NOTE]
+      >
+      >Dopo l&#39;aggiornamento dell&#39;archivio crx e la migrazione del contenuto, modificate la password dell&#39;account amministratore. Per istruzioni dettagliate, consultate [Modifica della password per un utente](/help/sites-administering/granite-user-group-admin.md)esistente.
 1. Eseguire le operazioni post-distribuzione per verificare le credenziali di accesso, configurare document services, la gestione della corrispondenza, la protezione dei documenti e altro a seconda del caso d&#39;uso.
 1. Verificare che il server sia stato aggiornato correttamente:
 
    Eseguire alcune operazioni di routine sul server AEM Forms aggiornato  per garantire che il server sia aggiornato correttamente. È possibile compilare e inviare alcuni moduli migrati o proteggere i documenti per garantire la corretta esecuzione dell&#39;aggiornamento.
 
-   >[!NOTE] In Forms AEM 6.4, la struttura del repository crx è cambiata. Dopo aver effettuato l&#39;aggiornamento ai moduli AEM 6.4, utilizzare i percorsi modificati per la personalizzazione creati di nuovo. Per l&#39;elenco completo dei percorsi modificati, vedere Ristrutturazione archivio [Forms in AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+   >[!NOTE]
+   >
+   >In Forms AEM 6.4, la struttura del repository crx è cambiata. Dopo aver effettuato l&#39;aggiornamento ai moduli AEM 6.4, utilizzare i percorsi modificati per la personalizzazione creati di nuovo. Per l&#39;elenco completo dei percorsi modificati, vedere Ristrutturazione archivio [Forms in AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 **A seconda dell’ambiente e del server applicazioni esistenti, scegliete uno dei seguenti documenti e seguite le istruzioni dettagliate:**
 
