@@ -1,8 +1,8 @@
 ---
 title: Gestione degli articoli
 seo-title: Gestione degli articoli
-description: Seguite questa pagina per informazioni sulla creazione e gestione degli articoli.
-seo-description: Seguite questa pagina per informazioni sulla creazione e gestione degli articoli.
+description: Seguite questa pagina per informazioni sulla creazione e la gestione degli articoli.
+seo-description: Seguite questa pagina per informazioni sulla creazione e la gestione degli articoli.
 uuid: 72b86cd7-3016-41b6-a001-9dce4084e9db
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 translation-type: tm+mt
 source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire gli articoli all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sugli articoli all&#39;interno dell&#39;applicazione.
 
@@ -29,19 +32,20 @@ Gli articoli rappresentano il testo basato sulla grafica per trasmettere le info
 
 >[!NOTE]
 >
->Consultate le seguenti risorse nell&#39;Aiuto online per informazioni sui seguenti argomenti nelle app AEM Mobile:
+>Consultate le seguenti risorse nella Guida in linea per informazioni sui seguenti argomenti nelle  app AEM Mobile:
 >
 >* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Gestione degli articoli](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+
 >
 
 
 
 ## Creazione di un articolo {#creating-an-article}
 
-Il flusso di lavoro generale per creare un articolo è il seguente:
+Il flusso di lavoro generale per la creazione di un articolo è il seguente:
 
 1. Selezionate **Mobile** dalla barra laterale.
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
@@ -53,7 +57,7 @@ Il flusso di lavoro generale per creare un articolo è il seguente:
 
 ## Importazione di un nuovo articolo {#importing-a-new-article}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
 
 >[!NOTE]
 >
@@ -62,7 +66,7 @@ Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mob
 Flusso di lavoro per importare un nuovo articolo
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia rivolta verso il basso nell’angolo superiore destro della sezione **Gestisci articoli** e selezionate Importa articoli.
+1. Fate clic sulla freccia rivolta verso il basso nell’angolo in alto a destra della sezione **Gestisci articoli** e selezionate Importa articoli.
 1. Fate clic su **Importa articoli** nella finestra di dialogo, quindi su Chiudi.
 1. Gli articoli Mobile On-Demand ora vengono visualizzati nella sezione **Gestisci articoli** .
 
@@ -74,16 +78,16 @@ Flusso di lavoro per importare un nuovo articolo
 
 ## Modifica di un articolo {#editing-an-article}
 
-Utilizzate l&#39;editor incorporato con trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
+Utilizzate l&#39;editor incorporato AEM trascinamento per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
 
 >[!CAUTION]
 >
->Solo gli articoli creati in AEM possono essere aperti nell’editor.
+>Solo gli articoli creati in AEM possono essere aperti nell&#39;editor.
 
 Flusso di lavoro per modificare un articolo:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate un articolo basato su AEM dalla sezione **Gestisci articoli** .
+1. Selezionate un articolo originato AEM dalla sezione **Gestisci articoli** .
 1. Fate clic sull&#39;articolo evidenziato dalla vista a elenco per aprirlo nell&#39;editor del contenuto.
 1. Usate l’editor di contenuti per trascinare il contenuto dell’articolo (manoscritti, immagini, testo, ecc.).
 
@@ -122,7 +126,7 @@ Questa operazione elimina il contenuto selezionato da Mobile On-Demand ed eventu
 Flusso di lavoro generale per eliminare un articolo:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate l&#39;articolo da eliminare nella sezione **Gestisci articoli** .
+1. Selezionate l’articolo da eliminare nella sezione **Gestisci articoli** .
 1. Assicurarsi che sia selezionato nell&#39;elenco (selezionare altri da eliminare in base alle esigenze).
 1. Click **Delete** from the action bar.
 1. Verificate se desiderate eliminare sia da AEM che da Mobile On-Demand.
