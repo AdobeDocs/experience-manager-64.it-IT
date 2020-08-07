@@ -3,7 +3,7 @@ title: Estendi editor risorse
 description: Scoprite come estendere le funzionalità di Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 13%
@@ -47,7 +47,7 @@ Alcuni dei componenti AEM Assets  richiedono funzioni JS definite in `component.
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-L&#39;esempio carica questa origine javascript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+L&#39;esempio carica l&#39;origine JavaScript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Fogli di stile aggiuntivi {#additional-style-sheets}
 
