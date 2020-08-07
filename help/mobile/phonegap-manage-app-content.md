@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 5c8971ab-b07c-4131-b4cb-f34c52425014
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 La gestione dei contenuti delle app richiede un impegno collettivo da parte di [sviluppatori](#developer), [autori](#author) di contenuti e [amministratori](#administrator). Gli autori modificano le pagine, che a loro volta si basano su modelli e componenti generati dagli sviluppatori di app.
 
@@ -29,7 +32,7 @@ Infine, gli amministratori pubblicano strategicamente il contenuto dell&#39;app 
 >
 >**Prerequisito**:
 >
->Con [Implementazione e manutenzione](/help/sites-deploying/deploy.md), gli sviluppatori hanno acquisito familiarità con il sistema di componenti e modelli di AEM.
+>In [Implementazione e manutenzione](/help/sites-deploying/deploy.md), gli sviluppatori hanno acquisito familiarità con AEM sistema di componenti e modelli.
 
 ## Gestisci sezione contenuto pagina {#the-manage-page-content-tile}
 
@@ -39,7 +42,7 @@ Infine, gli amministratori pubblicano strategicamente il contenuto dell&#39;app 
 >
 >Per ulteriori informazioni, consultate [Mobile con Content Sync](/help/mobile/phonegap-contentsync.md) (Sincronizzazione dei contenuti) nella sezione Sviluppatore.
 
-In questo caso, il contenuto può essere creato, modificato ed eliminato in AEM Mobile nello stesso modo in cui lo si farebbe in AEM Sites.
+In questo caso, il contenuto può essere creato, modificato ed eliminato in  AEM Mobile nello stesso modo in cui lo si creava in  AEM Sites.
 
 La sezione **** Gestisci contenuto pagina mostra il numero di pagine di contenuto gestito e l’ultima modifica apportata per un particolare payload. Per approfondire i contenuti per creare, copiare, spostare, eliminare e aggiornare le pagine, fate clic su ciascun record nella sezione.
 
@@ -51,15 +54,15 @@ Selezionate uno dei pacchetti di contenuti elencati per creare o modificare cont
 
 Nota *tutto è contenuto*, vale a dire stili di applicazione, copia (testo), supporti, pagine, navigazione e, targeting del contenuto possono essere tutti modificati e aggiornati OTA, senza un viaggio in un app store.
 
-Per modificare il contenuto di AEM Mobile, *Gli autori di AEM *avranno bisogno di una conoscenza approfondita dell&#39;interfaccia di modifica del contenuto di AEM: Creazione [di pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Per modificare  contenuto AEM Mobile, *AEM autori *dovranno conoscere AEM&#39;interfaccia di modifica del contenuto: [Authoring delle pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## Sezione Gestisci pacchetti di contenuti {#the-manage-content-packages-tile}
 
-In questo caso, gli amministratori *di* AEM possono aggiornare rapidamente e facilmente le app per offrire esperienze coinvolgenti e contenuti aggiornati in grado di attirare l&#39;attenzione del marchio e soddisfare gli obiettivi aziendali, senza la necessità di inviare nuovamente gli sviluppatori o gli app store.
+In questo caso, *AEM amministratori* possono aggiornare rapidamente e facilmente le app per offrire esperienze coinvolgenti e contenuti aggiornati in grado di promuovere il coinvolgimento del marchio e raggiungere obiettivi aziendali senza la necessità di inviare nuovamente uno sviluppatore o un app store.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Una volta che gli autori *di* AEM hanno aggiunto o modificato il contenuto tramite Gestisci sezione contenuto, gli amministratori *di* AEM possono inviare tali modifiche ai clienti con un aggiornamento Pacchetti di contenuti.
+Una volta che gli autori *di* AEM hanno aggiunto o modificato il contenuto tramite Gestisci sezione contenuto, *AEM gli amministratori* possono inviare tali modifiche ai clienti con un aggiornamento Pacchetti di contenuti.
 
 L&#39;azione Pacchetto contenuti consente a *AEM Author* di creare e modificare il contenuto delle pagine mentre il team di sviluppo apporta modifiche alla progettazione e all&#39;implementazione di un&#39;applicazione host, inclusi navigazione, stile, logica lato server, modelli e componenti, quindi invia le modifiche in OTA ai clienti senza dover inviare nuovamente ai vari store per la distribuzione.
 
@@ -81,7 +84,7 @@ L&#39;avvio di un aggiornamento al contenuto consente di effettuare diversi aggi
 >
 >Il contenuto sullo stage può essere verificato utilizzando l&#39;app AEM Verify prima della pubblicazione.
 >
->Consultate [Avvio rapido per AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) per ulteriori dettagli sull&#39;app AEM Verify.
+>Consultate [Mobile Quickstart per AEM Verifica](/help/mobile/phonegap-mobile-quickstart.md) per ulteriori dettagli sullAEMapp Verifica.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -91,7 +94,7 @@ Quando siete pronti per fornire nuovo contenuto agli utenti dell&#39;app con Con
 
 ### Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso la creazione e la gestione del contenuto dell&#39;app nel dashboard dell&#39;applicazione, consulta le risorse seguenti per altri ruoli di creazione:
+Dopo aver appreso la creazione e la gestione del contenuto dell&#39;app nel dashboard dell&#39;applicazione, consulta le risorse seguenti per altri ruoli di authoring:
 
 * [Gestisci sezione app](/help/mobile/phonegap-app-details-tile.md)
 * [Modifica dei metadati dell&#39;app](/help/mobile/phonegap-editmetadata.md)
@@ -99,9 +102,9 @@ Dopo aver appreso la creazione e la gestione del contenuto dell&#39;app nel dash
 * [Creazione di una nuova app tramite Creazione guidata app](/help/mobile/phonegap-create-new-app.md)
 * [Importare un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
-* [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
-* [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Sviluppo per  Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Amministrazione di contenuti per  Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
