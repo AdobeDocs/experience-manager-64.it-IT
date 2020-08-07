@@ -1,8 +1,8 @@
 ---
 title: Sviluppo di applicazioni mobili in AEM
 seo-title: Sviluppo di applicazioni mobili in AEM
-description: Segui questa pagina per iniziare a sviluppare applicazioni mobili in AEM tramite Adobe PhoneGap Enterprise.
-seo-description: Segui questa pagina per iniziare a sviluppare applicazioni mobili in AEM tramite Adobe PhoneGap Enterprise.
+description: Seguite questa pagina per iniziare a sviluppare applicazioni mobili in AEM utilizzando  Adobe PhoneGap Enterprise.
+seo-description: Seguite questa pagina per iniziare a sviluppare applicazioni mobili in AEM utilizzando  Adobe PhoneGap Enterprise.
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 0%
 
 ---
 
@@ -19,33 +22,33 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-AEM sfrutta Adobe PhoneGap e le soluzioni Adobe Publishing, consentendo di creare e gestire applicazioni mobili multipiattaforma basate sia sui contenuti che sulle utility:
+AEM utilizza  soluzioni di pubblicazione di Adobe di Adobe PhoneGap e , consentendo di creare e gestire applicazioni mobili multipiattaforma basate su piattaforme e ricche di contenuti e basate su utility:
 
 * Gestisci tutte le tue app mobili aziendali in un&#39;unica posizione.
 * Rivedete le app in ambienti di sviluppo e di pre-produzione senza la complessità dei profili di provisioning e senza dover creare e caricare l&#39;app per la condivisione.
-* Utilizzate l&#39;ambiente di authoring di AEM per creare e gestire contenuto avanzato per le vostre app.
-* Utilizzate HTML5 con Adobe PhoneGap per creare esperienze avanzate con funzionalità native per dispositivi.
+* Utilizzate l&#39;ambiente di authoring AEM per creare e gestire contenuti avanzati per le vostre app.
+* Utilizzate HTML5 con  Adobe PhoneGap per creare esperienze avanzate con funzionalità native per dispositivi.
 * Potete introdurre le visualizzazioni Web HTML5 nelle applicazioni **native** nuove o preesistenti tramite Cordova WebViews.
 * Crea, cura e condividi contenuti multimediali avanzati su tutti i canali di distribuzione, inclusi web, mobile-web, app e stampa.
 
-AEM si integra con il servizio **[Adobe](https://build.phonegap.com/)**PhoneGap Build per semplificare il processo di creazione e implementazione delle applicazioni.
+AEM si integra con il servizio **[Adobe](https://build.phonegap.com/)**PhoneGap Build per semplificare la creazione e la distribuzione dell&#39;applicazione.
 
-**Adobe ContentSync** consente agli utenti di scaricare facilmente gli aggiornamenti di pagina e contenuto Over-the-Air (OTA) sui propri dispositivi senza dover reinstallare l&#39;applicazione o scaricarla da appStore, Google Play o altre fonti di app.
+**Adobe ContentSync** consente agli utenti di scaricare facilmente gli aggiornamenti di pagina e contenuto Over-the-Air (OTA) sui propri dispositivi senza dover reinstallare l&#39;applicazione o scaricarla dall&#39;appStore, Google Play o da altre fonti di app.
 
-**Adobe Analytics** è completamente integrato nelle app AEM e consente il tracciamento dettagliato di distribuzione, geolocalizzazione, sistemi operativi, dispositivi, flussi di clic, tracciamento iBeacon e altro ancora.
+**Adobe Analytics** è completamente integrato nelle AEM app e consente il tracciamento dettagliato di distribuzione, geolocalizzazione, sistemi operativi, dispositivi, flussi di clic, tracciamento iBeacon e altro ancora.
 
 ## Creazione di app {#creating-apps}
 
-Gli sviluppatori possono utilizzare [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) con risorse aggiuntive reperibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare le app AEM con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
+Gli sviluppatori possono utilizzare il [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) insieme alle risorse aggiuntive reperibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare AEM app con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
 
-Il file Leggimi per il repository Starter Kit Git include un&#39;esercitazione per l&#39;utilizzo del kit di avvio:
+Il file Leggimi per l&#39;archivio di Starter Kit Git include un&#39;esercitazione per l&#39;utilizzo del kit di avvio:
 
 * Personalizzare il marchio
 * Esempi di destinazione di creazione e distribuzione
 * Configurazione archivio del controllo del codice sorgente
-* Installazione e implementazione in istanze AEM locali o remote
+* Installare e distribuire in istanze AEM locali o remote
 * Disinstallazione da AEM
 
 >[!NOTE]
@@ -75,23 +78,23 @@ Gli sviluppatori IOS devono essere a conoscenza di un problema aperto con le app
 
 ## Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem-1}
 
-* [Avvio di AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
+* [Avvio AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
 * [Creazione di applicazioni mobili](/help/mobile/building-app-mobile-phonegap.md)
 * [Struttura di un&#39;app](/help/mobile/phonegap-structure-an-app.md)
 * [Creazione e modifica di app tramite la console App](/help/mobile/phonegap-apps-console.md)
 * [Applicazioni a pagina singola](/help/mobile/phonegap-single-page-applications.md)
 * [Sviluppo di app con PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md)
 * [Accesso alle funzioni del dispositivo](/help/mobile/phonegap-access-device-features.md)
-* [Tracciare le prestazioni delle app con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
-* [Aggiungere Adobe Analytics alla tua applicazione mobile](/help/mobile/phonegap-add-analytics-to-apps.md)
+* [Tracciare le prestazioni delle app con  Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+* [Aggiungere  Adobe Analytics all&#39;applicazione mobile](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [Notifiche push](/help/mobile/phonegap-push-notifications.md)
-* [Personalizzazione del contenuto AEM Mobile](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+* [Personalizzazione  dei contenuti AEM Mobile](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 * [L&#39;anatomia di un&#39;app](/help/mobile/phonegap-apps-arch.md)
-* [L&#39;app ibrida è pronta per AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
+* [La tua app ibrida è pronta per  AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
-* [Authoring per Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
-* [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Authoring per  Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
+* [Amministrazione di contenuti per  Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
