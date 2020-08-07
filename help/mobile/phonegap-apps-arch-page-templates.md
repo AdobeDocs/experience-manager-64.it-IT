@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '2665'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 ## Modelli di pagina per app mobili {#page-templates-for-mobile-apps-1}
 
@@ -61,7 +64,7 @@ Il corpo di una pagina Angular viene rappresentato in modo diverso a seconda che
 
 In modalità di creazione, ogni singola pagina viene rappresentata separatamente. Angular non gestisce il routing tra le pagine, né un ng-view utilizzato per caricare un modello parziale che contiene i componenti della pagina. Al contrario, il contenuto del modello di pagina (template.jsp) viene incluso sul lato server tramite il `cq:include` tag .
 
-Questa strategia consente alle funzioni di authoring (come l’aggiunta e la modifica di componenti nel sistema paragrafo, nella barra laterale, in modalità progettazione ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di creazione AEM.
+Questa strategia consente alle funzioni di authoring (come l’aggiunta e la modifica di componenti nel sistema paragrafo, nella barra laterale, in modalità progettazione ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in AEM modalità di creazione.
 
 Tenete presente che template.jsp include è racchiuso in un `div` elemento che contiene la `ng-controller` direttiva. Questa struttura consente il collegamento dei contenuti DOM con il controller. Pertanto, anche se le pagine che si presentano sul lato client non vanno a buon fine, i singoli componenti che lo fanno funzionano correttamente (vedere la sezione sui componenti di seguito).
 
@@ -118,7 +121,7 @@ Questo script genera un frammento JavaScript che deve avere il seguente modulo:
 
 Questo codice indica a $routeProvider (definito in angular-app-module.js.jsp) che &#39;/&lt;percorso>&#39; deve essere gestito dalla risorsa in `templateUrl`e cablato da `controller` (che verrà raggiunto in seguito).
 
-Se necessario, è possibile ignorare questo script per gestire percorsi più complessi, inclusi quelli con variabili. Un esempio di questo è disponibile nello script /apps/weretail-app/components/angular/ng-template-page/angular-route-fragment.js.jsp installato con AEM:
+Se necessario, è possibile ignorare questo script per gestire percorsi più complessi, inclusi quelli con variabili. Un esempio è riportato nello script /apps/weretail-app/components/angular/ng-template-page/angular-route-fragment.js.jsp installato con AEM:
 
 ```xml
 // note the :id suffix on the path
@@ -146,7 +149,7 @@ Lo script controller.js.jsp genera il frammento controller per ogni pagina. Ques
 ])
 ```
 
-Alla `data` variabile viene assegnata la promessa restituita dal `$http.get` metodo Angular. Ogni componente incluso in questa pagina può, se necessario, rendere disponibile del contenuto .json (tramite il relativo script angular.json.jsp) e agire sul contenuto di questa richiesta quando viene risolta. La richiesta è molto veloce su dispositivi mobili perché accede semplicemente al file system.
+Si noti che alla `data` variabile viene assegnata la promessa restituita dal `$http.get` metodo Angular. Ogni componente incluso in questa pagina può, se lo desiderate, rendere disponibile del contenuto .json (tramite il relativo script angular.json.jsp) e agire sul contenuto di questa richiesta quando viene risolta. La richiesta è molto veloce su dispositivi mobili perché accede semplicemente al file system.
 
 Affinché un componente faccia parte del controller in questo modo, deve estendere il componente /libs/mobileapps/components/angular/ng-component e includere la `frameworkType: angular` proprietà.
 
@@ -154,7 +157,7 @@ Affinché un componente faccia parte del controller in questo modo, deve estende
 
 Introdotto nella sezione body.jsp, template.jsp contiene semplicemente parsys della pagina. In modalità di pubblicazione, a questo contenuto viene fatto riferimento direttamente (in &lt;percorso-pagina>.template.html) e viene caricato nell&#39;SPA tramite il templateUrl configurato in $routeProvider.
 
-parsys in questo script può essere configurato per accettare qualsiasi tipo di componente. Tuttavia, occorre prestare attenzione quando si tratta di componenti creati per un sito Web tradizionale (anziché per un sito Web). Ad esempio, il componente Immagine di base funziona correttamente solo sulla pagina dell&#39;app di livello principale, poiché non è progettato per fare riferimento a risorse che si trovano all&#39;interno di un&#39;app.
+parsys in questo script può essere configurato per accettare qualsiasi tipo di componente. Tuttavia, occorre prestare attenzione quando si tratta di componenti creati per un sito Web tradizionale (anziché per un sito Web). Ad esempio, il componente Immagine di base funziona correttamente solo sulla pagina dell&#39;app di livello principale, in quanto non è progettato per fare riferimento a risorse che si trovano all&#39;interno di un&#39;app.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
@@ -178,10 +181,10 @@ Ignorate questo script per includere i clientlibs CSS.
 
 ## Componenti per app {#app-components}
 
-I componenti dell&#39;app non devono funzionare solo su un&#39;istanza di AEM (pubblicazione o creazione), ma anche quando il contenuto dell&#39;applicazione viene esportato nel file system tramite Content Sync. Il componente deve pertanto includere le seguenti caratteristiche:
+I componenti dell&#39;app non devono funzionare solo su un&#39;istanza AEM (pubblicazione o creazione), ma anche quando il contenuto dell&#39;applicazione viene esportato nel file system tramite Content Sync. Il componente deve pertanto includere le seguenti caratteristiche:
 
 * È necessario fare riferimento a tutte le risorse, i modelli e gli script di un&#39;applicazione PhoneGap relativamente.
-* La gestione dei collegamenti è diversa se l’istanza di AEM funziona in modalità di creazione o pubblicazione.
+* La gestione dei collegamenti è diversa se l’istanza AEM funziona in modalità di creazione o pubblicazione.
 
 ### Risorse relative {#relative-assets}
 
@@ -231,7 +234,7 @@ Questo script visualizza il contenuto del componente o un segnaposto appropriato
 
 ### template.jsp {#template-jsp-1}
 
-Lo script template.jsp esegue il rendering della marcatura del componente. Se il componente in questione è guidato da dati JSON estratti da AEM (ad esempio, &quot;ng-text&quot;): /libs/mobileapps/components/angular/ng-text/template.jsp), questo script sarà responsabile del cablaggio della marcatura con i dati esposti dall&#39;ambito del controller della pagina.
+Lo script template.jsp esegue il rendering della marcatura del componente. Se il componente in questione è guidato da dati JSON estratti da AEM (come &quot;ng-text&quot;): /libs/mobileapps/components/angular/ng-text/template.jsp), questo script sarà responsabile del cablaggio della marcatura con i dati esposti dall&#39;ambito del controller della pagina.
 
 Tuttavia, a volte i requisiti di prestazioni stabiliscono che non è possibile eseguire modelli lato client (ovvero il binding dei dati). In questo caso, è sufficiente eseguire il rendering della marcatura del componente sul lato server e viene inclusa nel contenuto del modello di pagina.
 
@@ -241,11 +244,11 @@ Nei componenti guidati da dati JSON (come &#39;ng-text&#39;: /libs/mobileapps/co
 
 ### controller.js.jsp {#controller-js-jsp-1}
 
-Come descritto in Modelli [di pagina](/help/mobile/apps-architecture.md)AEM, ogni componente può restituire un frammento JavaScript per utilizzare il contenuto JSON esposto dalla `data` promessa. In base alle convenzioni Angular, è consigliabile utilizzare un controller solo per assegnare variabili all&#39;ambito.
+Come descritto in [AEM Modelli](/help/mobile/apps-architecture.md)di pagina, ogni componente può restituire un frammento JavaScript per utilizzare il contenuto JSON esposto dalla `data` promessa. In base alle convenzioni Angular, è consigliabile utilizzare un controller solo per assegnare variabili all&#39;ambito.
 
 ### angular.json.jsp {#angular-json-jsp}
 
-Questo script è incluso come frammento nel file &#39;&lt;page-name>.angular.json&#39; a livello di pagina, che viene esportato per ogni pagina che estende la pagina. In questo file, lo sviluppatore di componenti può esporre qualsiasi struttura JSON richiesta dal componente. Nell’esempio &quot;ng-text&quot;, questa struttura include semplicemente il contenuto di testo del componente e un flag che indica se il componente include o meno testo RTF.
+Questo script è incluso come frammento nel file &#39;&lt;page-name>.angular.json&#39; a livello di pagina, che viene esportato per ogni pagina che si estende su più pagine. In questo file, lo sviluppatore di componenti può esporre qualsiasi struttura JSON richiesta dal componente. Nell’esempio &quot;ng-text&quot;, questa struttura include semplicemente il contenuto di testo del componente e un flag che indica se il componente include o meno testo RTF.
 
 Il componente prodotto per l’app We.Retail è un esempio più complesso (app/weretail-app/components/angular/ng-product):
 
@@ -312,17 +315,17 @@ Questa directory contiene i ganci [CLI](https://devgirl.org/2013/11/12/three-hoo
 
 ### .cordova/ganci/dopo-platform_add/ {#cordova-hooks-after-platform-add}
 
-La directory after-platform_add contiene il `copy_AMS_Conifg.js` file. Questo script copia un file di configurazione per supportare la raccolta di analisi Adobe Mobile Services.
+La directory after-platform_add contiene il `copy_AMS_Conifg.js` file. Questo script copia un file di configurazione per supportare la raccolta  analisi di Mobile Services.
 
 ### .cordova/ganci/post-preparazione/ {#cordova-hooks-after-prepare}
 
-La directory post-preparazione contiene il `copy_resource_files.js` file. Questo script copia una serie di immagini di icone e schermate iniziali in posizioni specifiche della piattaforma.
+La directory post-preparazione contiene il `copy_resource_files.js` file. Questo script copia una serie di immagini di icone e schermate iniziali in posizioni specifiche per la piattaforma.
 
 ### .cordova/ganci/before_platform_add/ {#cordova-hooks-before-platform-add}
 
 La directory before_platform_add contiene il `install_plugins.js` file. Questo script esegue un&#39;iterazione in un elenco di identificatori plug-in Cordova, installando quelli che rileva non sono già disponibili.
 
-Questa strategia non richiede che i plug-in vengano raggruppati e installati in AEM ogni volta che viene eseguito il `content-package:install` comando Maven. La strategia alternativa per il controllo dei file nel sistema SCM richiede attività di bundling e installazione ripetitive.
+Questa strategia non richiede che si impacchettino e installare i plug-in per AEM ogni volta che il `content-package:install` comando Maven è eseguito. La strategia alternativa per il controllo dei file nel sistema SCM richiede attività di bundling e installazione ripetitive.
 
 ### .cordova/ganci/altri ganci {#cordova-hooks-other-hooks}
 
@@ -365,11 +368,11 @@ La directory dei plug-in viene compilata da ciascun plug-in elencato nel `.cordo
 
 ### www/ {#www}
 
-La directory www contiene tutto il contenuto Web (file HTML, JS e CSS) che implementa l&#39;aspetto e il comportamento dell&#39;app. Ad eccezione delle eccezioni descritte di seguito, questo contenuto proviene da AEM ed è esportato nel suo modulo statico tramite Content Sync.
+La directory www contiene tutto il contenuto Web (file HTML, JS e CSS) che implementa l&#39;aspetto e il comportamento dell&#39;app. Ad eccezione delle eccezioni descritte di seguito, il contenuto proviene da AEM ed è esportato nel suo modulo statico tramite Content Sync.
 
 ### www/config.xml {#www-config-xml}
 
-La documentazione [di](https://docs.phonegap.com) PhoneGap fa riferimento a questo file come &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell&#39;app, come il nome dell&#39;app, le &#39;preferenze&#39; dell&#39;app (ad esempio, se una visualizzazione Web iOS consente o meno lo scorrimento eccessivo) e le dipendenze del plug-in che vengono utilizzate *solo* dalla build PhoneGap.
+La documentazione [di](https://docs.phonegap.com) PhoneGap fa riferimento a questo file come &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell&#39;app, come il nome dell&#39;app, le &#39;preferenze&#39; dell&#39;app (ad esempio, se una visualizzazione Web iOS consente o meno l&#39;overflow) e dipendenze del plug-in che vengono utilizzate *solo* dalla build PhoneGap.
 
 Il file config.xml è un file statico in AEM ed è esportato così come lo è tramite Content Sync.
 
@@ -391,7 +394,7 @@ La directory res contiene immagini della schermata iniziale e icone. Lo `copy_re
 
 ### www/etc {#www-etc}
 
-Per convenzione, in AEM il nodo /etc contiene contenuto clientlib statico. La directory etc contiene le librerie Topcappotto, AngularJS e We.Retail ng-clientlibsall.
+Per convenzione, in AEM nodo /etc contiene contenuto clientlib statico. La directory etc contiene le librerie Topcappotto, AngularJS e We.Retail ng-clientlibsall.
 
 ### www/apps {#www-apps}
 
