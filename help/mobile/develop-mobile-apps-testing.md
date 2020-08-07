@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Data l&#39;ampia gamma di dispositivi sul mercato e dispositivi in fase di rilascio, il test delle app è diventato estremamente importante. Si tratta di un&#39;area in cui funzionalità e facilità d&#39;uso possono generare recensioni ridotte su un app store, ma un singolo difetto può causare la disinstallazione dell&#39;app. Occorre prestare attenzione ai piani di test e alla garanzia della qualità. Il collegamento seguente illustra molti degli argomenti che devono essere affrontati in generale, ad esempio, identificare l&#39;ambiente, definire casi di test, tipi di test, ipotesi, coinvolgimento del cliente, ecc. Sono stati inoltre discussi gli strumenti per facilitare il lavoro di test. Strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), possono essere utili per i test dell’interfaccia utente basati sul Web. [Un giorno](/help/sites-developing/tough-day.md) difficile può sollecitare le istanze con un carico simulato. Se l&#39;ambiente di test dispone già di esperienza con strumenti di terze parti, come Selenium, anche questi possono essere utilizzati.
+Data l&#39;ampia gamma di dispositivi sul mercato e dispositivi in fase di rilascio, il test delle app è diventato estremamente importante. Si tratta di un&#39;area in cui funzionalità e facilità d&#39;uso possono generare recensioni ridotte su un app store, ma un singolo difetto può causare la disinstallazione dell&#39;app. Occorre prestare attenzione ai piani di test e alla garanzia della qualità. Il collegamento seguente illustra molti degli argomenti che devono essere affrontati in generale, ad esempio, identificare l&#39;ambiente, definire casi di test, tipi di test, ipotesi, coinvolgimento del cliente, ecc. Sono stati inoltre discussi gli strumenti per facilitare il lavoro di test. Strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), possono essere utili per i test dell’interfaccia utente basati sul Web. [Un giorno](/help/sites-developing/tough-day.md) difficile può sollecitare le istanze con un carico simulato. Se l&#39;ambiente di test dispone già di esperienza con strumenti 3rd-party, come Selenium, anche questi possono essere utilizzati.
 
 Quando si sviluppa un&#39;app mobile, esistono molti nuovi problemi specifici per i dispositivi che devono essere affrontati insieme a quelli dei test tradizionali.
 
