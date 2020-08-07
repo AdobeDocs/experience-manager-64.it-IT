@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 La gestione dei modelli prevede la creazione e la gestione di modelli allo scopo di associare a eventuali oggetti dati. Ogni modello includerà tutte le proprietà e le definizioni dei campi necessarie per facilitare la creazione e il rendering degli oggetti.
 
@@ -32,17 +35,17 @@ Un modello descrive il tipo di contenuto e indica quali informazioni saranno dis
 
 I modelli servono anche a trasformare il contenuto AEM esistente in oggetti che possono essere facilmente utilizzati dalle app mobili native.
 
-Content Services fornirà alcuni modelli out-of-the-box per oggetti comuni come risorse, raccolte di risorse, pagine HTML, configurazioni di app e pagine indipendenti dai canali. Questi elementi saranno configurabili in modo da soddisfare specifiche esigenze dei clienti senza richiedere uno sforzo di sviluppo AEM.
+Content Services fornirà alcuni modelli out-of-the-box per oggetti comuni come risorse, raccolte di risorse, pagine HTML, configurazioni di app e pagine indipendenti dai canali. Questi elementi saranno configurabili in modo da soddisfare specifiche esigenze dei clienti senza dover AEM sforzo di sviluppo.
 
-L&#39;utente può creare modelli personalizzati. Questo consente di creare nuovi tipi di contenuto che non sono già gestiti da AEM. La creazione di un modello viene eseguita tramite un&#39;interfaccia utente con i tipi di base esistenti.
+L&#39;utente può creare modelli personalizzati. Questo consente la creazione di nuovi tipi di contenuto che non sono già gestiti da AEM. La creazione di un modello viene eseguita tramite un&#39;interfaccia utente che utilizza i tipi di base esistenti.
 
-Il diagramma seguente illustra il modello di contenuto per le app AEM Mobile e il modo in cui entità, cartelle e spazi vengono assegnati a un&#39;app.
+Il diagramma seguente illustra il modello di contenuto per  app AEM Mobile e come entità, cartelle e spazi vengono assegnati a un&#39;app.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
 ### I modelli {#the-models}
 
-I modelli vengono utilizzati per determinare come vengono create le entità. Definiscono ciò che è disponibile in un&#39;entità e come tali dati vengono generati dal contenuto AEM. Prima di iniziare a lavorare con Spazi, Cartelle ed Entità, è necessario avere familiarità con la creazione e la gestione di modelli.
+I modelli vengono utilizzati per determinare in che modo vengono create le entità. Definiscono ciò che è disponibile in un&#39;entità e come tali dati vengono generati dal contenuto AEM. Prima di iniziare a lavorare con Spazi, Cartelle ed Entità, è necessario avere familiarità con la creazione e la gestione di modelli.
 
 >[!NOTE]
 >
@@ -55,7 +58,7 @@ Consulta **[Modelli](/help/mobile/administer-mobile-apps.md)**per creare e gesti
 
 Un&#39;entità è un&#39;istanza di un modello di contenuto. Un&#39;entità viene esposta tramite Content Services API alla libreria lato client e fornisce un modo per un&#39;app nativa di accedere al contenuto in modo indipendente dal canale.
 
-Nel caso del contenuto AEM esistente, un&#39;entità viene generata utilizzando un modello e l&#39;origine contenuto AEM. Ad esempio, un&#39;entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello di pagina.
+Nel caso del contenuto AEM esistente, un&#39;entità viene generata utilizzando un modello e l&#39;origine di contenuto AEM. Ad esempio, un&#39;entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello di pagina.
 
 Le modifiche al contenuto di riferimento di un&#39;entità determineranno una modifica all&#39;entità. Ad esempio, se viene aggiornato un *cq:page* , verranno aggiornate anche tutte le entità basate su tale pagina.
 
@@ -70,7 +73,7 @@ Consultate **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)**per 
 
 Uno spazio viene utilizzato per organizzare le entità per un accesso facilitato. Uno spazio può contenere uno o più tipi di entità e può contenere sottocartelle.
 
-Dal lato di AEM, uno spazio rappresenta un modo pratico per gestire le entità correlate. Può essere utilizzato anche per assegnare autorizzazioni. È possibile autorizzare uno spazio per proteggere le entità che si trovano in tale spazio.
+Dal lato AEM, uno spazio è un modo conveniente per gestire le entità correlate. Può essere utilizzato anche per assegnare le autorizzazioni. È possibile autorizzare uno spazio per proteggere le entità che si trovano in tale spazio.
 
 *Ad esempio*,
 
