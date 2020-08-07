@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire il contenuto all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sul contenuto all&#39;interno dell&#39;applicazione.
 
@@ -29,12 +32,13 @@ Le raccolte rappresentano un *bucket* ben definito con contenuto, ad esempio art
 
 >[!NOTE]
 >
->Consultate le seguenti risorse nell&#39;Aiuto online per informazioni sui seguenti argomenti nelle app AEM Mobile:
+>Consultate le seguenti risorse nella Guida in linea per informazioni sui seguenti argomenti nelle  app AEM Mobile:
 >
 >* [Considerazioni sulla progettazione](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [Gestione delle raccolte](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+
 >
 
 
@@ -45,7 +49,7 @@ Il flusso di lavoro generale per creare una raccolta è il seguente:
 
 1. Selezionate **Mobile** dalla barra laterale.
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia giù nell&#39;angolo superiore destro della sezione **Gestisci raccolte** .
+1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** .
 1. Per continuare a creare il nuovo articolo, eseguite i vari passaggi della procedura guidata.
 1. Una volta pronti, fate clic su **Crea**.
 1. Il nuovo articolo viene visualizzato nella sezione **Gestisci raccolte** .
@@ -54,16 +58,16 @@ Il flusso di lavoro generale per creare una raccolta è il seguente:
 
 ## Importazione di una nuova raccolta {#importing-a-new-collection}
 
-Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand ad AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
+Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mobile On-Demand a AEM. Questo consente la modifica e la visualizzazione locale dei contenuti.
 
 >[!NOTE]
 >
 >L&#39;importazione non include immagini.
 
-Flusso di lavoro per importare una nuova raccolta
+Flusso di lavoro per l&#39;importazione di una nuova raccolta
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** e selezionate Importa raccolte.
+1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** , quindi selezionate Importa raccolte.
 1. Fate clic su **Importa raccolte** nella finestra di dialogo, quindi su Chiudi.
 1. Le raccolte Mobile On-Demand ora vengono visualizzate nella sezione **Gestisci raccolte** .
 
@@ -73,12 +77,12 @@ Flusso di lavoro per importare una nuova raccolta
 
 ## Modifica di una raccolta {#editing-a-collection}
 
-Utilizzate l&#39;editor incorporato con trascinamento AEM per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
+Utilizzate l&#39;editor incorporato AEM trascinamento per aggiungere o modificare un articolo. È possibile aggiungere o rimuovere componenti come testo e immagini. È possibile inserire immagini da Risorse DAM.
 
 Flusso di lavoro per la modifica di una raccolta:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate un articolo originato da AEM dalla sezione **Gestisci raccolte** .
+1. Selezionate un articolo originato AEM dalla sezione **Gestisci raccolte** .
 1. Fate clic sulla raccolta evidenziata dalla vista a elenco per aprirla nell&#39;editor del contenuto.
 1. Usate l&#39;editor dei contenuti per trascinare il contenuto della raccolta (manoscritti, immagini, testo, ecc.).
 
@@ -124,7 +128,7 @@ Flusso di lavoro generale per eliminare una raccolta:
 
 ## Aggiunta di contenuto alle raccolte {#adding-content-to-collections}
 
-Le raccolte sono essenzialmente una categoria di contenuto correlato.  Raccolgono contenuti come articoli, banner insieme in pacchetti che definiscono la struttura di navigazione dell&#39;applicazione. Le raccolte possono essere nidificate.
+Le raccolte sono essenzialmente una categoria di contenuto correlato. Raccolgono contenuti come articoli, banner insieme in pacchetti che definiscono la struttura di navigazione dell&#39;applicazione. Le raccolte possono essere nidificate.
 
 >[!NOTE]
 >
