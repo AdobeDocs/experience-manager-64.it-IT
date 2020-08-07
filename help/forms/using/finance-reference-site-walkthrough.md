@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 0%
@@ -240,7 +240,7 @@ https://&lt;*nomehost*>:&lt;*porta*>/content/aemforms-refsite/doclink.html?docum
 
 Potete accedervi nelle istanze di creazione e pubblicazione.
 
-Il rendiconto della carta di credito visualizza le offerte promozionali verso la fine del rendiconto. Potete integrare  Adobe Target con  AEM Forms Interactive Communication per distribuire offerte promozionali mirate basate su segmenti di clienti specifici. Per configurare la comunicazione interattiva per utilizzare  Adobe Target per offerte personalizzate e mirate, consultate [Creare esperienze](/help/forms/using/experience-targeting-forms.md)mirate.
+Il rendiconto della carta di credito visualizza le offerte promozionali verso la fine del rendiconto. È possibile integrare  Adobe Target con  AEM Forms Interactive Communication per distribuire offerte promozionali mirate basate su segmenti di clienti specifici. Per configurare la comunicazione interattiva per utilizzare  Adobe Target per offerte personalizzate e mirate, consultate [Creare esperienze](/help/forms/using/experience-targeting-forms.md)mirate.
 
 ![](do-not-localize/offers.png)
 
@@ -305,7 +305,10 @@ Effettuare le seguenti operazioni per verificare la creazione di test A/B per il
 1. Ora aprire il modulo nel browser Chrome diverse volte utilizzando il seguente URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
+
+   >[!NOTE]
+   >
+   >Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
 
 1. Selezionate il modulo, fate clic su **Altro** e fate clic su Rapporto **** test A/B. Non troverai molti dati nel rapporto come hai appena iniziato il test. Forniamo ora alcuni dati iniziali per vedere come si presenterà il rapporto Test A/B.
 
@@ -552,13 +555,19 @@ Per verificare la creazione di un test A/B per il modulo di richiesta di mutuo W
 1. Ora aprire il modulo nel browser Chrome diverse volte utilizzando il seguente URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
+
+   >[!NOTE]
+   >
+   >Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
 
 1. Selezionate il modulo, fate clic su **Altro** e fate clic su Rapporto **** test A/B. Non troverai molti dati nel rapporto come hai appena iniziato il test. Forniamo ora alcuni dati iniziali per vedere come si presenterà il rapporto Test A/B.
 
 1. Aprite il CRXDE Lite ed effettuate il backup del seguente file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Sostituire la definizione della `onReportLoadSuccess` funzione nel file di cui sopra con la definizione della funzione nel file seguente: /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
+
+   >[!NOTE]
+   >
+   >Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
 
 1. Aggiorna il rapporto generato e vedrai qualcosa di simile al seguente. Esaminate il dashboard di reporting.
 
