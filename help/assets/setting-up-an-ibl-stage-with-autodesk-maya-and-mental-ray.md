@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 75%
@@ -59,7 +59,7 @@ ht-degree: 75%
 
       * **Qualità generale** -`0.5` o minore
       * **Modalità** Indirect Diffuse (GI) - `Final Gather`
-      * ``**Filter Size** - `2.0`, `2.0`
+      * **Dimensioni** filtro - `2.0`, `2.0`
    * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfeziona le luci, le impostazioni di rendering o entrambe per ottenere il risultato desiderato.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
