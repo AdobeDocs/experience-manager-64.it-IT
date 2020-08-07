@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ Di seguito è riportata una descrizione degli effetti presenti nell’archivio d
 
    Un valore speciale per la `cq:movedTo` proprietà è `nirvana`: viene applicato quando il tag viene eliminato ma non può essere rimosso dalla directory archivio perché sono presenti tag secondari con un tag `cq:movedTo` che deve essere mantenuto.
 
-   >[!NOTE]La `cq:movedTo` proprietà viene aggiunta al tag spostato o unito solo se è soddisfatta una delle seguenti condizioni:
+   >[!NOTE]
+   >
+   >La `cq:movedTo` proprietà viene aggiunta al tag spostato o unito solo se è soddisfatta una delle seguenti condizioni:
+   >
    >1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O
    >1. Nel tag sono presenti elementi figlio che sono già stati spostati.
 
 
 * `cq:backlinks` mantiene i riferimenti nella direzione opposta, ossia tiene un elenco di tutti i tag spostati o uniti al tag B. Questa funzione è principalmente necessaria per mantenere `cq:movedTo`le proprietà aggiornate quando il tag B viene spostato/unito/eliminato o quando il tag B viene attivato, nel qual caso tutti i tag backlink devono essere attivati.
 
->[!NOTE]La `cq:backlinks` proprietà viene aggiunta al tag spostato o unito solo se è soddisfatta una delle seguenti condizioni:
+>[!NOTE]
+>
+>La `cq:backlinks` proprietà viene aggiunta al tag spostato o unito solo se è soddisfatta una delle seguenti condizioni:
+>
 >1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O
 >1. Nel tag sono presenti elementi figlio che sono già stati spostati.
 
