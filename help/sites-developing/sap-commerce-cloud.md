@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -171,18 +171,16 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 
 * L&#39;estensione hybris fornisce un importatore polling (&quot;schema hybris&quot;), che può essere configurato per importare modifiche in AEM a un intervallo specificato (ad esempio, ogni 24 ore in cui l&#39;intervallo è specificato in secondi):
 
-   * 
-
-      ```
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```
+     http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      {
+      * "jcr:mixinTypes": ["cq:PollConfig"],
+      * "enabled": true,
+      * "source": "hybris:outdoors",
+      * "jcr:primaryType": "cq:PageContent",
+      * "interval": 86400
+      }
+   ```
 
 * La configurazione del catalogo in AEM riconosce le versioni **dei cataloghi Staged** e **Online** .
 
@@ -664,4 +662,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-
