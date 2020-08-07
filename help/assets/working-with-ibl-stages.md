@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 56%
@@ -37,7 +37,7 @@ Mentre una singola immagine HDR è spesso sufficiente per le aree di visualizzaz
 
 * **Immagine** ambiente di illuminazione diffusa - Questo tipo di immagine deve essere un&#39;immagine HDR, ma può essere relativamente piccola, in quanto l&#39;immagine verrà filtrata pesantemente prima di essere utilizzata per l&#39;illuminazione diffusa.
 * **Immagine** ambiente di riflessione - Questo tipo di immagine viene usato per creare riflessi nelle superfici degli oggetti. Può essere un’immagine RGB standard a 8 bit, di dimensioni e risoluzione tali da fornire la qualità e la nitidezza desiderate per i riflessi. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit prima di utilizzare un algoritmo proprietario.
-* **Immagine** ambiente di sfondo - Questo tipo di immagine viene usato come sfondo. Può essere un’immagine RGB standard a 8 bit e dovrebbe avere dimensioni, risoluzione e livello di dettagli appropriati per lo sfondo dell’area di visualizzazione. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit utilizzando un algoritmo proprietario. ``
+* **Immagine** ambiente di sfondo - Questo tipo di immagine viene usato come sfondo. Può essere un’immagine RGB standard a 8 bit e dovrebbe avere dimensioni, risoluzione e livello di dettagli appropriati per lo sfondo dell’area di visualizzazione. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit utilizzando un algoritmo proprietario.
 
 >[!NOTE]
 >
