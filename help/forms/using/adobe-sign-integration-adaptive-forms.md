@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  A
    * widget_write
    * workflow_read
 
-   Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione Adobe Sign  e ottenere le chiavi, consultate [Configurare le impostazioni di autenticazione per la documentazione per lo sviluppatore dell&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) .
+   Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione Adobe Sign  e ottenere le chiavi, consultate [Configurare le impostazioni di autenticazione per la documentazione per lo sviluppatore dell&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) .
 
    ![Configurazione OAuth](assets/oauth_config.png)
 
@@ -95,7 +95,7 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  A
 
 1. Ripetete i passaggi da 1 a 12 per configurare  Adobe Sign con  AEM Forms. Utilizzate lo stesso titolo per la configurazione (come specificato al punto 3) e lo stesso nome (come specificato al punto 6) per replicare le impostazioni configurate nell&#39;istanza Author.
 
-    Adobe Sign è integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo](/help/forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)adattivo, specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
+    Adobe Sign è ora integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo](/help/forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)adattivo, specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
 
 ## Configurare  pianificazione Adobe Sign per sincronizzare lo stato di firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
