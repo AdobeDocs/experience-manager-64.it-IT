@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida utente Forms di AEM 6.4
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3715'
 ht-degree: 1%
 
 ---
@@ -577,6 +577,7 @@ ht-degree: 1%
    + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms su JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API Form Bridge per moduli HTML5](using/form-bridge-apis.md)
+   + [Riferimento API della libreria JavaScript per Forms adattivo](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [Assembler Service e DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Guida di Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + Programmazione con  AEM Forms su JEE {#programming-aem-forms-jee}
