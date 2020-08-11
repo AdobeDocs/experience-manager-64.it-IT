@@ -1,8 +1,8 @@
 ---
 title: Note sulla versione AEM 3D
 seo-title: Note sulla versione AEM 3D
-description: Note sulla versione specifiche per il contenuto 3D in  risorse di Adobe Experience Manager.
-seo-description: Note sulla versione specifiche per il contenuto 3D in  risorse di Adobe Experience Manager.
+description: Note sulla versione specifiche per il contenuto 3D in Adobe Experience Manager Assets.
+seo-description: Note sulla versione specifiche per il contenuto 3D in Adobe Experience Manager Assets.
 uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 # Note sulla versione AEM 3D {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>AEM feature pack 3D in AEM 6.4 non è più supportato.  Adobe consiglia di usare la funzione Risorse 3D in [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superiore.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D versione 3.1.0 (10 ottobre 2018)
 
-Il AEM feature pack 3D consente il supporto del contenuto 3D nei AEM Assets. Offre funzionalità di caricamento, gestione, anteprima e rendering delle risorse 3D. Il supporto per la visualizzazione e il rendering è ottimizzato per singoli oggetti (anziché per scene complesse con più oggetti).
+Il AEM pacchetto di funzioni 3D consente il supporto dei contenuti 3D in  AEM Assets. Offre funzionalità di caricamento, gestione, anteprima e rendering delle risorse 3D. Il supporto per la visualizzazione e il rendering è ottimizzato per singoli oggetti (anziché per scene complesse con più oggetti).
 
 AEM 3D supporta  tipi di risorse Adobe Dimension (Dn) e glTF. L’implementazione per questi tipi di risorse è sostanzialmente diversa da quella per i tipi 3D tradizionali descritti nella presente documentazione. Consultate [Utilizzo di  risorse](/help/assets/working-dimension-assets.md)Adobe Dimension.
 
@@ -47,7 +51,7 @@ Consultate anche [Utilizzo di risorse](/help/assets/assets-3d.md)3D.
 * Apple OS X El Capitan 10.6 o versione successiva
 * RedHat Enterprise Linux 7.3
 
-**Browser Web supportati per AEM Assets**
+**Browser Web supportati per  AEM Assets**
 
 * Google Chrome 53 o versione successiva (consigliato).
 * Apple Safari 9.1 o versione successiva.
@@ -106,7 +110,7 @@ Versione 3.1
 
 * Questa versione di AEM3D ha un supporto limitato per i file .dn creati con  Adobe Dimension.
 * Durante l&#39;elaborazione del caricamento, AEM utilizza un servizio di conversione basato su cloud  ospitato dal Adobe per creare una rappresentazione GlTF dal file nativo .dn. È necessario accedere al servizio di conversione e selezionare  endpoint Amazon AWS.
-* È disponibile un nuovo visualizzatore GlTF che supporta la visualizzazione delle risorse Dn in AEM Assets e in Siti/Schermi. Il supporto per le fasi nel visualizzatore non è ancora disponibile.
+* È disponibile un nuovo visualizzatore GlTF che supporta la visualizzazione delle risorse Dn in  AEM Assets e in Siti/schermi. Il supporto per le fasi nel visualizzatore non è ancora disponibile.
 * I modelli Dn possono incorporare luci e sfondi IBL visualizzati, se presenti. In alternativa, il visualizzatore applica l’illuminazione predefinita, un colore di sfondo predefinito o entrambi.
 * Il rendering di alta qualità per le risorse Dn non è ancora disponibile.
 * Le dipendenze come le mappe di texture sono incorporate nelle risorse Dn e non possono essere gestite esplicitamente in AEM.
@@ -114,7 +118,7 @@ Versione 3.1
 ### Compatibilità {#compatibility}
 
 * **L&#39;esecuzione come servizio Windows non è supportata (solo Windows)** . Questo potrebbe funzionare ma non è stato testato.
-* **Dynamic Media** ( `dynamicmedia-scene7` modalità) - La compatibilità di AEM3D con la nuova soluzione Dynamic Media rilasciata con AEM 6.4 non è ancora completamente verificata. Se Dynamic Media e AEM3D vengono distribuiti insieme, si consiglia di inserire risorse 3D e le relative dipendenze solo in un&#39;area dell&#39;archivio AEM Assets che non è assegnata ad Dynamic Media. Questa raccomandazione è particolarmente importante per i file TIFF a 32 bit che sono richiesti per le fasi 3D ma non sono supportati da Dynamic Media.
+* **Dynamic Media** ( `dynamicmedia-scene7` modalità) - La compatibilità di AEM3D con la nuova soluzione Dynamic Media rilasciata con AEM 6.4 non è ancora completamente verificata. Se i contenuti multimediali dinamici e AEM3D sono distribuiti insieme, è consigliabile inserire risorse 3D e le relative dipendenze solo in un&#39;area dell&#39;archivio AEM Assets  non assegnata a Contenuti multimediali dinamici. Questa raccomandazione è particolarmente importante per i file TIFF a 32 bit che sono richiesti per le fasi 3D ma non sono supportati da Dynamic Media.
 
 ### Generale {#general}
 
@@ -154,7 +158,7 @@ Versione 3.1
 * **Immagine di sfondo inversa per l&#39;area di visualizzazione** IBL - Le immagini per gli stadi IBL vengono capovolte in orizzontale in modo intenzionale in modo da corrispondere al comportamento del modulo di rendering NVIDIA per i raggi mentali fornito con Autodesk Maya. Soluzione: Riflettete le immagini utilizzate per le fasi IBL in Photoshop prima di caricarle.
 * **Luminosità delle fasi** IBL - L&#39;analisi automatica dell&#39;immagine IBL potrebbe produrre una scena troppo scura o troppo luminosa. Per regolare la luminosità dell&#39;illuminazione delle fasi IBL, andate a Proprietà **** di base e regolate il valore **luminoso** dell&#39;illuminazione dell&#39; **ambiente** in base alle esigenze.
 
-### AEM Sites 3D Component {#aem-sites-d-component}
+###  AEM Sites 3D Component {#aem-sites-d-component}
 
 * **Un componente 3D per pagina** - Al momento, è consentita solo un’istanza del componente 3D in ogni pagina Web. Se alla stessa pagina vengono aggiunti più componenti 3D, nessuno di essi funziona correttamente.
 * **Visualizzazione 3D mancante durante l&#39;anteprima in Siti** - Quando si utilizza **Anteprima** in Siti, la pagina deve essere ricaricata nel browser per inizializzare completamente il visualizzatore 3D. Non si tratta di un problema se visualizzate la pagina Web direttamente (ovvero quando `edit.html` viene rimossa dal percorso) sui nodi Autore o Pubblica.
@@ -165,4 +169,4 @@ Versione 3.1
 
 * **Configurazione** di componenti 3D - È necessario installare il Feature Pack 3D su tutti i nodi Publish attivi e ogni nodo deve essere configurato con **CRXDE Lite** alle stesse opzioni di configurazione in `/libs/settings/dam/v3D/WebGLSites`.
 
-* **texture, sfondo o illuminazione mancanti dopo la pubblicazione** - Il meccanismo **Pubblica** in AEM Sites pubblica automaticamente le dipendenze primarie della pagina, incluso il modello 3D e lo stage 3D a cui fa riferimento il componente 3D. Le fasi 3D e i modelli 3D in genere dipendono dalle risorse secondarie per le immagini IBL e le mappe di texture, che il meccanismo di pubblicazione di Siti non pubblica automaticamente. Soluzione: pubblicate tutte le risorse 3D da Risorse prima di pubblicare la pagina Web da Siti. In questo modo tutte le dipendenze per le risorse 3D saranno disponibili sui nodi Pubblica.
+* **texture, sfondo o illuminazione mancanti dopo la pubblicazione** - Il meccanismo **Pubblica** in  AEM Sites pubblica automaticamente le dipendenze principali della pagina, incluso il modello 3D e lo stage 3D a cui fa riferimento il componente 3D. Le fasi 3D e i modelli 3D in genere dipendono dalle risorse secondarie per le immagini IBL e le mappe di texture, che il meccanismo di pubblicazione di Siti non pubblica automaticamente. Soluzione: pubblicate tutte le risorse 3D da Risorse prima di pubblicare la pagina Web da Siti. In questo modo tutte le dipendenze per le risorse 3D saranno disponibili sui nodi Pubblica.
