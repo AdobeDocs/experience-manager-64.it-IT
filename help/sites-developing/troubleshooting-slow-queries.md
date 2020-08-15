@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Spiegare **tutte** le **query e assicurarsi che i relativi piani di query non co
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Questo messaggio viene registrato solo se non è disponibile alcun indice e se la query attraversa potenzialmente molti nodi. I messaggi non vengono registrati se è disponibile un indice, ma la quantità da scorrere è piccola e quindi veloce.
 
-* Visitate la console delle operazioni di AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) e [spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di spiegazioni sulle query trasversali o prive di spiegazioni sulle query di indice.
+* Visitate la console delle operazioni [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) AEM e [spiegate](/help/sites-administering/operations-dashboard.md#explain-query) le query lente alla ricerca di spiegazioni incrociate o senza query indice.
 
 ### Rilevamento Di Query Limitate {#detecting-poorly-restricted-queries}
 
@@ -98,20 +98,20 @@ Dopo l&#39;aggiunta della regola di indice cq:tags
 
 * **cq:tags, regola di indice**
 
-       &quot;
- /     oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-     @name=jcr:content/cq:tags
-     @propertyIndex=true
-     &quot;
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **Query Builder**
 
-       &quot;
- type=cq:Page     
- property=jcr:content/cq:tags     
- property.value=myTagNamespace:myTag     
-     &quot;
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **Piano query**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ In questo modo si evitano le query che richiedono molte risorse (ad es. non sost
 
 #### Post-distribuzione {#post-deployment-2}
 
-* Monitorare i registri per le query che attivano il consumo di memoria heap di grandi nodi: &quot;
+* Monitorare i registri per le query che attivano il consumo di memoria heap di grandi nodi:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Ottimizzare la query per ridurre il numero di nodi attraversati
@@ -156,7 +156,7 @@ In questo modo si evitano le query che richiedono molte risorse (ad es. non sost
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Ottimizzare la query per ridurre il consumo di memoria heap
 
-Per le versioni di AEM 6.0 - 6.2, puoi regolare la soglia per l’attraversamento dei nodi tramite i parametri JVM nello script di avvio di AEM per evitare che query di grandi dimensioni sovraccarichino l’ambiente. I valori consigliati sono:
+Per le versioni AEM 6.0 - 6.2, è possibile ottimizzare la soglia per l&#39;attraversamento dei nodi tramite i parametri JVM nello script di avvio AEM per evitare che le query di grandi dimensioni sovraccarichino l&#39;ambiente. I valori consigliati sono:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
@@ -167,7 +167,7 @@ Ulteriori informazioni disponibili in: [https://jackrabbit.apache.org/oak/docs/q
 
 ## Ottimizzazione delle prestazioni delle query {#query-performance-tuning}
 
-Il motto dell’ottimizzazione delle prestazioni delle query in AEM è:
+Il motto dell&#39;ottimizzazione delle prestazioni della query in AEM è:
 
 **&quot;Più restrizioni, meglio è.&quot;**
 
@@ -181,7 +181,7 @@ AEM supporta le seguenti lingue di query:
 * JCR-SQL2
 * XPath
 
-Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
+Nell&#39;esempio seguente viene utilizzato Query Builder in quanto è il linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
 
 1. Aggiungete una restrizione relativa al tipo di nodo in modo che la query corrisponda a un indice esistente della proprietà Lucene.
 
@@ -361,7 +361,7 @@ Nell&#39;esempio seguente viene utilizzato Query Builder, il linguaggio di query
 
    1. Individuate l&#39;indice delle proprietà Lucene esistente che copre cq:Page (utilizzando la funzione di gestione dell&#39;indice). In questo caso, `/oak:index/cqPageLucene`.
    1. Identificare il delta di configurazione tra la definizione dell&#39;indice ottimizzata (Passaggio 4) e l&#39;indice esistente (/oak:index/cqPageLucene), quindi aggiungere le configurazioni mancanti dall&#39;indice ottimizzato alla definizione dell&#39;indice esistente.
-   1. In base alle best practice di reindicizzazione di AEM, è possibile aggiornare o reindicizzare in ordine, in base al fatto che il contenuto esistente verrà influenzato da questa modifica alla configurazione dell&#39;indice.
+   1. Per AEM Best practice di reindicizzazione, è possibile aggiornare o reindicizzare in ordine, in base al fatto che il contenuto esistente verrà influenzato da questa modifica alla configurazione dell&#39;indice.
 
 ## Crea nuovo indice {#create-a-new-index}
 
@@ -415,7 +415,7 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 
 ## Strumenti di sviluppo query {#query-development-tools}
 
-### Adobe Supportato {#adobe-supported}
+###  Adobe supportato {#adobe-supported}
 
 * **Debugger Query Builder**
 
@@ -433,7 +433,7 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 
 * **[Query lente/popolari](/help/sites-administering/operations-dashboard.md#query-performance)**
 
-   * Una dashboard delle operazioni AEM che elenca le recenti query lente e popolari eseguite su AEM.
+   * Una dashboard delle operazioni AEM che elenca le query lente e popolari recenti eseguite su AEM.
 
 * **[Gestione indice](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
@@ -452,7 +452,7 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 * **Configurazione OSGi delle impostazioni del motore di query Apache Jackrabbit**
 
    * Configurazione OSGi che configura il comportamento di errore per l’attraversamento delle query.
-   * In AEM all’indirizzo [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * Situato su AEM in [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX**
 
@@ -468,5 +468,5 @@ Pertanto, assicurarsi che gli indici soddisfino le query, a meno che la combinaz
 * **[Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
 
    * Estensione del browser Web Google Chrome che espone i dati di registro per ogni richiesta, incluse le query eseguite e i relativi piani di query, nella console degli strumenti di sviluppo del browser.
-   * Richiede l&#39;installazione e l&#39;abilitazione di [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) su AEM.
+   * Richiede [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) per essere installato e attivato su AEM.
 
