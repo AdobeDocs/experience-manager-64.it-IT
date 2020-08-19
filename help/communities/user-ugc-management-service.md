@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 77cca35f74db2ced556b71c3192058b7c352ab4d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Per ulteriori informazioni, consulta la pagina [GDPR all’ Centro](https://www.
 >
 >Se avete configurato [Adobe Analytics  sito AEM Communities](analytics.md) , i dati utente acquisiti vengono inviati  server Adobe Analytics.  Adobe Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente e che sono conformi al GDPR. Per ulteriori informazioni, vedere [Sottomettere richieste](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)di accesso ed eliminazione.
 
-Per utilizzare queste API, è necessario abilitare l&#39; `/services/social/ugcmanagement` endpoint attivando il servizio UserUgcManagement. Per attivare questo servizio, installate il servlet [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) esempio disponibile su [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Quindi, toccate l’endpoint nell’istanza di pubblicazione del sito community con i parametri appropriati utilizzando una richiesta http, simile alla seguente:
+Per utilizzare queste API, è necessario abilitare l&#39; `/services/social/ugcmanagement` endpoint attivando il servizio UserUgcManagement. Per attivare questo servizio, installate il servlet [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) esempio disponibile su [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Quindi, toccate l’endpoint nell’istanza di pubblicazione del sito community con i parametri appropriati utilizzando una richiesta http, simile alla seguente:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
