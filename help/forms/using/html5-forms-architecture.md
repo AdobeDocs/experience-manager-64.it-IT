@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 La funzionalità dei moduli HTML5 è distribuita come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-    [ ![01-aem-forms-architecture](assets/01-aem-forms-architecture.jpg)
-*Visualizza dimensioni* intere](javascript:void(0).md)
-
-    [ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Utilizzo di Sling Framework {#using-sling-framework}
 
