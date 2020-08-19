@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 0%
@@ -95,7 +95,7 @@ AEM 6.4 Communities fornisce l&#39;icona Elimina sito sui siti community esisten
 
 ## Gestione di UGC e profili utente {#managing-ugc-and-user-profiles}
 
-Mantenendo la protezione dei dati degli utenti al centro dell&#39;esperienza della community,  AEM Communities espone [API pronte all&#39;uso](user-ugc-management-service.md) e servlet [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)esempio. Queste API consentono di gestire in massa (eliminazione ed esportazione in blocco) i contenuti generati dagli utenti e di eliminare i profili utente, e sono fondamentali per gestire le richieste di conformità ai requisiti GDPR dell&#39;UE.
+Mantenendo la protezione dei dati degli utenti al centro dell&#39;esperienza della community,  AEM Communities espone [API pronte all&#39;uso](user-ugc-management-service.md) e servlet [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)esempio. Queste API consentono di gestire in massa (eliminazione ed esportazione in blocco) i contenuti generati dagli utenti e di eliminare i profili utente, e sono fondamentali per gestire le richieste di conformità ai requisiti GDPR dell&#39;UE.
 
 ## Che cosa è cambiato {#what-s-changed}
 
