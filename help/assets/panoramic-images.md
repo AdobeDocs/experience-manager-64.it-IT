@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Affinché il visualizzatore di immagini panoramiche funzioni correttamente all�
    >
    >Sono supportate solo le immagini che rientrano nella dimensione massima consentita per le immagini. Le richieste di immagini che superano il limite di dimensione genereranno una risposta di 403.
 
-1. Nell&#39;intestazione **Attributi richiesta]** , effettuate le seguenti operazioni:
+1. Nell’intestazione **[Attributi]** richiesta, effettuate le seguenti operazioni:
 
    * Impostate **[!UICONTROL Richiedi modalità]** offuscamento su **[!UICONTROL Disabilitata]**.
    * Impostate **[!UICONTROL Richiedi modalità]** di blocco su **[!UICONTROL Disattivato]**.
