@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 0%
 
 ---
@@ -240,13 +240,13 @@ https://&lt;*nomehost*>:&lt;*porta*>/content/aemforms-refsite/doclink.html?docum
 
 Potete accedervi nelle istanze di creazione e pubblicazione.
 
-Il rendiconto della carta di credito visualizza le offerte promozionali verso la fine del rendiconto. È possibile integrare  Adobe Target con  AEM Forms Interactive Communication per distribuire offerte promozionali mirate basate su segmenti di clienti specifici. Per configurare la comunicazione interattiva per utilizzare  Adobe Target per offerte personalizzate e mirate, consultate [Creare esperienze](/help/forms/using/experience-targeting-forms.md)mirate.
+Il rendiconto della carta di credito visualizza le offerte promozionali verso la fine del rendiconto. Potete integrare  Adobe Target con  AEM Forms Interactive Communication per distribuire offerte promozionali mirate basate su segmenti di clienti specifici. Per configurare la comunicazione interattiva per utilizzare  Adobe Target per offerte personalizzate e mirate, consultate [Creare esperienze](/help/forms/using/experience-targeting-forms.md)mirate.
 
 ![](do-not-localize/offers.png)
 
 ### We.Finance analizza le prestazioni dell&#39;applicazione della carta di credito {#we-finance-analyzes-the-performance-of-the-credit-card-application}
 
-We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero dover affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
+We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero dover affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
 
 Per ulteriori informazioni su come interpretare il dashboard di analisi, vedi [Visualizzazione e comprensione  report](/help/forms/using/view-understand-aem-forms-analytics-reports.md)di analisi AEM Forms.
 
@@ -341,7 +341,7 @@ Esaminiamo ora in dettaglio i passaggi nello scenario relativo al sito di riferi
 
 ### Sarah visita il sito web We.Finance e si applica per la casa ipoteca {#sarah-visits-we-finance-website-and-applies-for-home-mortgage}
 
-Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano ipotecario.
+Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano di mutuo.
 
 ![prestiti1](assets/loans1.png) ![prestiti2](assets/loans2.png)**Figura:** *Calcolatore ipotecario*
 
@@ -497,7 +497,7 @@ Potete accedervi nelle istanze di creazione e pubblicazione.
 
 ### We.Finance analizza le prestazioni dell&#39;applicazione ipoteca {#we-finance-analyzes-the-performance-of-the-mortgage-application}
 
-We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione di ipoteca per controllare eventuali problemi che i clienti potrebbero dover affrontare. Essi utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione del mutuo per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli, e quindi migliorare la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
+We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione di ipoteca per controllare eventuali problemi che i clienti potrebbero dover affrontare. Essi utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione del mutuo per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli, e quindi migliorare la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
 
 Per ulteriori informazioni su come interpretare il dashboard di analisi, vedi [Visualizzazione e comprensione  report](/help/forms/using/view-understand-aem-forms-analytics-reports.md)di analisi AEM Forms.
 
@@ -534,7 +534,7 @@ Oltre ad analizzare le prestazioni dell&#39;applicazione ipoteca e a migliorarla
 
 Per configurare Target in  server AEM Forms, vedi [Configurare e integrare Target in  AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
-Per verificare la creazione di un test A/B per il modulo di richiesta di mutuo We.Finance, eseguire i seguenti passaggi nell&#39;istanza di creazione:
+Effettuare le seguenti operazioni nell’istanza di creazione per verificare la creazione di test A/B per il modulo di richiesta di mutuo We.Finance:
 
 1. Andate su **Forms e documenti** all&#39;indirizzo https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
@@ -588,7 +588,7 @@ La procedura dettagliata dell&#39;applicazione Home Mutuo con Microsoft Dynamics
 
 ### Sarah visita il sito web We.Finance e si applica per la casa ipoteca {#sarah-visits-we-finance-website-and-applies-for-home-mortgage-1}
 
-Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano ipotecario.
+Sarah Rose sta progettando di comprare una casa e alla ricerca di un mutuo per la casa. È un cliente We.Finance e quindi visita il portale We.Finance per esplorare le offerte di mutui per la casa. Va alla sezione Prestiti e trova una calcolatrice ipotecaria sul portale. Riempie i dettagli e fa clic su Calcola il mio mutuo, che restituisce un piano di mutuo.
 
 ![prestiti1](assets/loans1.png) ![prestiti2](assets/loans2.png)**Figura:** *Calcolatore ipotecario*
 
@@ -740,7 +740,7 @@ Sarah riceve un&#39;e-mail con un collegamento al contratto di assicurazione sul
 
 #### Come funziona {#how-it-works-16}
 
-Quando Sarah invia l&#39;applicazione di assicurazione per la casa, un Forms Workflow si attiva e un compito viene creato nella inbox AEM Gloria. Mentre Gloria esamina la domanda e la approva, il compito è assegnato a Frank De Costa. Il flusso di attività da un soggetto all&#39;altro è definito nel flusso di lavoro AEM associato all&#39;applicazione di assicurazione. Per ulteriori informazioni sui flussi di lavoro, consultate Flusso di lavoro incentrato su [Forms in OSGi](/help/forms/using/aem-forms-workflow.md).
+Quando Sarah invia l&#39;applicazione di assicurazione per la casa, un Forms Workflow si attiva e un compito viene creato nella casella in AEM di Gloria. Mentre Gloria esamina la domanda e la approva, il compito è assegnato a Frank De Costa. Il flusso di attività da un soggetto all&#39;altro è definito nel flusso di lavoro AEM associato all&#39;applicazione di assicurazione. Per ulteriori informazioni sui flussi di lavoro, consultate Flusso di lavoro incentrato su [Forms in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Nell&#39;immagine seguente viene illustrato il flusso di lavoro AEM associato all&#39;applicazione di assicurazione.
 
@@ -871,7 +871,7 @@ La procedura guidata di assicurazione auto contiene anche un altro cliente, Alis
 * La politica standard costa meno della politica dei premi.
 * La politica premium ha una ricompensa anti-furto e la politica standard ha una ricompensa intelligente
 
-Entrambi i criteri utilizzano la stessa comunicazione interattiva. Le sezioni del criterio vengono modificate o nascoste in base alla condizione del tipo di criterio. È possibile accedere e rivedere la comunicazione interattiva per il rinnovo automatico dell&#39;assicurazione direttamente da https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoInsurance/auto-rispririmento
+Entrambi i criteri utilizzano la stessa comunicazione interattiva. Le sezioni del criterio vengono modificate o nascoste in base alla condizione del tipo di criterio. Puoi accedere e rivedere la comunicazione interattiva per il rinnovo dell&#39;assicurazione auto direttamente da `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Utilizzo di Microsoft Dynamics come origine dati**
 
@@ -894,7 +894,7 @@ Ora, accedete al dashboard **di assicurazione automatica** We.Finance come Conra
 
 Sarah riceve una email con un allegato da We.Finance che le ricorda che la sua assicurazione auto sta per scadere. L&#39;allegato è la versione cartacea dei dettagli di rinnovo della polizza di assicurazione auto.
 
-Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa, come Numero polizza, Importo dovuto, e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
+Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa come Numero polizza, Importo dovuto e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
 
 ![auto-assicurazione-rinnovo-email](assets/auto-insurance-renewal-email.png)
 
