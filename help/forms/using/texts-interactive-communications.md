@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2249'
 ht-degree: 0%
 
 ---
@@ -194,11 +194,10 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 ## Formattazione del testo {#formatting}
 
 Durante la creazione o la modifica del testo, la barra degli strumenti cambia a seconda del tipo di modifiche che si desidera apportare: Paragrafo, Allineamento o Elenco:
-[ ![Selezionare il tipo di barra degli strumenti](do-not-localize/toolbarselection.png)
 
 Selezionare il tipo di barra degli strumenti: Paragrafo, Allineamento o Elenco
 
-](assets/toolbarselection.png) Barra degli strumenti di modifica ![dei font](do-not-localize/paragraphtoolbar-1.png)
+![Barra degli strumenti di modifica dei font](do-not-localize/paragraphtoolbar-1.png)
 
 Barra degli strumenti di modifica dei font
 
@@ -266,6 +265,6 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
    * Se viene trovata un&#39;altra istanza del testo di ricerca, tale istanza viene evidenziata nel frammento del documento di testo. Se toccate nuovamente **[!UICONTROL Sostituisci]** , l’istanza evidenziata viene sostituita e il cursore si sposta in avanti, se viene trovata una terza istanza.
    * Se non viene trovata un&#39;altra istanza, nella finestra di dialogo Trova e sostituisci viene visualizzato un messaggio: Fine del modulo raggiunta.
 
-   Potete anche toccare Replace all (Sostituisci tutto) per sostituire tutte le corrispondenze in una sola volta.
+   Potete anche toccare Replace all (Sostituisci tutto) per sostituire tutte le corrispondenze in un&#39;unica operazione.
 
    Trova e sostituisci include anche una potente ricerca di espressioni regolari. Per utilizzare regex nella ricerca, selezionare **[!UICONTROL Reg ex]** , quindi toccare **[!UICONTROL Trova]** o **[!UICONTROL Sostituisci]**.
