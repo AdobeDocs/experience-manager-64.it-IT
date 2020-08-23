@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 19%
 
 ---
@@ -72,7 +72,7 @@ Se necessario, potete modificare i set [di file multimediali](#editing-mixed-med
 
 >[!NOTE]
 >
->In caso di problemi durante la creazione dei set, consultate [Risoluzione dei problemi relativi ai file multimediali dinamici - Modalità](troubleshoot-dms7.md)Scene7.
+>In caso di problemi durante la creazione dei set, consulta [Risoluzione dei problemi relativi ai file multimediali dinamici - Modalità](troubleshoot-dms7.md)Scene7.
 
 ## Caricamento delle risorse {#uploading-assets}
 
@@ -138,7 +138,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
 
    * Passate il puntatore del mouse su una risorsa del set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita).
    * Passate il puntatore del mouse su una risorsa di set di file multimediali diversi, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
-   * Toccate una risorsa set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) nella barra degli strumenti.
+   * Toccate una risorsa di set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
 1. Nell’editor di set di file multimediali diversi, effettuate una delle seguenti operazioni:
 
@@ -153,7 +153,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. Toccate **[!UICONTROL Save** al termine della modifica.
+1. Toccate **[!UICONTROL Salva]** al termine della modifica.
 
    >[!NOTE]
    >
