@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
 
    È possibile configurare la dimensione sopra la quale una risorsa viene considerata una risorsa grande. Ad esempio, potete configurare il sistema affinché consideri le risorse superiori ai 1000 MB (invece dei 500 MB) come risorse grandi. In questo caso, il pulsante **[!UICONTROL Pausa]** nella barra di avanzamento viene visualizzato quando vengono caricate risorse di dimensioni superiori a 1000 MB.
 
-   Il pulsante **[!UICONTROL Pausa]]**non viene visualizzato se un file maggiore di 1000 MB viene caricato con un file inferiore a 1000 MB. Tuttavia, se annullate il caricamento di file di dimensioni inferiori a 1000 MB, viene visualizzato il pulsante**[!UICONTROL Pausa ]**.
+   Il pulsante **[!UICONTROL Pausa]** non viene visualizzato se un file maggiore di 1000 MB viene caricato con un file inferiore a 1000 MB. Tuttavia, se annullate il caricamento di file di dimensioni inferiori a 1000 MB, viene visualizzato il pulsante **[!UICONTROL Pausa]** .
 
    Per modificare il limite di dimensioni, configurare la `chunkUploadMinFileSize` proprietà del `fileupload`nodo nell&#39;archivio CRX.
 
@@ -96,7 +96,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
    >
    >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto **** nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se **[!UICONTROL Asset Insights]** è abilitato per il tracciamento di impression/clic con  Adobe Analytics, questo ID risorsa rigenerato invalida i dati acquisiti per la risorsa su  Adobe Analytics.
+   >Se **[!UICONTROL Asset Insights]** è abilitato per il tracciamento di impression/clic con  Adobe Analytics, questo ID risorsa rigenerato invalida i dati acquisiti per la risorsa  Adobe Analytics.
 
    Se la risorsa caricata esiste in  AEM Assets, la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avverte che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore di checksum SHA 1 del binario della risorsa esistente corrisponde al valore di checksum della risorsa caricata. In questo caso, i nomi delle attività sono irrilevanti. In altre parole, la finestra di dialogo può essere visualizzata anche per le risorse con nomi diversi se i valori SHA 1 per i rispettivi binari sono gli stessi.
 
@@ -128,7 +128,7 @@ Prima di caricare una risorsa, accertatevi che sia in un formato [](assets-forma
 
 ### Caricamenti seriali {#serial-uploads}
 
-Il caricamento di numerose risorse in massa richiede notevoli risorse di sistema, il che può influire negativamente sulle prestazioni della distribuzione AEM. I potenziali colli di bottiglia possono essere la connessione Internet, le operazioni di lettura/scrittura su disco, le limitazioni del browser Web sul numero di richieste di POST in caso di caricamento simultaneo di risorse. L&#39;operazione di caricamento in blocco può non riuscire o terminare prematuramente. In altre parole, AEM risorse potrebbero perdere alcuni file durante l’assimilazione di un gruppo di file o potrebbero non essere in grado di assimilare alcun file.
+Il caricamento di numerose risorse in massa richiede notevoli risorse di sistema, il che può avere un impatto negativo sulle prestazioni della distribuzione AEM. I potenziali colli di bottiglia possono essere la connessione Internet, le operazioni di lettura/scrittura su disco, le limitazioni del browser Web sul numero di richieste di POST in caso di caricamento simultaneo di risorse. L&#39;operazione di caricamento in blocco può non riuscire o terminare prematuramente. In altre parole, AEM risorse potrebbero perdere alcuni file durante l’assimilazione di un gruppo di file o potrebbero non essere in grado di assimilare alcun file.
 
 Per ovviare a questa situazione,  AEM Assets carica una risorsa alla volta (caricamento seriale) durante un’operazione di caricamento in blocco, invece di caricare tutte le risorse contemporaneamente.
 
@@ -175,7 +175,7 @@ Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento sp
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Decomprimi file ZIP o TAR al caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -276,7 +276,7 @@ Scegliete tra le seguenti opzioni:
 |  | Forza come CMYK | Effettua la conversione nello spazio colore CMYK. |
 |  | Forza come scala di grigio | Effettua la conversione nello spazio colore Scala di grigio. |
 
-#### Impostare le opzioni di caricamento di eVideo {#setting-evideo-upload-options}
+#### Impostare le opzioni di caricamento per eVideo {#setting-evideo-upload-options}
 
 Potete transcodificare un file video scegliendo tra diversi predefiniti per video.
 
@@ -290,7 +290,7 @@ Potete transcodificare un file video scegliendo tra diversi predefiniti per vide
 
 #### Imposta predefiniti per set di batch al caricamento {#setting-batch-set-presets-at-upload}
 
-Per creare automaticamente un set di immagini o un set 360 gradi dalle immagini caricate, fate clic sulla colonna Attivo **** [!UICONTROL per il predefinito che desiderate usare. Potete selezionare più predefiniti.
+Per creare automaticamente un set di immagini o un set 360 gradi dalle immagini caricate, fate clic sulla colonna **[!UICONTROL Attivo]** relativa al predefinito da usare. Potete selezionare più predefiniti.
 
 Consultate [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 360 gradi per ulteriori informazioni sulla creazione di predefiniti per set di batch.
 
@@ -337,7 +337,7 @@ Alcune limitazioni della funzione sono:
 
 >[!MORELIKETHIS]
 >
->* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
+>* [Visualizzare l’anteprima delle risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
 
 
@@ -365,22 +365,22 @@ Alcune limitazioni della funzione sono:
 
 1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete **[!UICONTROL Invio]**. Il nuovo tag viene salvato in AEM.
 
-   YouTube requires tags to publish and have a link to YouTube (if a suitable link can be found).
+   YouTube richiede che i tag vengano pubblicati e che sia disponibile un collegamento a YouTube (se è possibile trovare un collegamento appropriato).
 Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura per `/content/cq:tags/default` l&#39;archivio CRX.
 
 1. To provide a rating to the asset, tap the **[!UICONTROL Advanced]** tab and then tap the star at the appropriate position to assign the desired rating.
 
    ![valutazioni](assets/ratings.png)
 
-   Il punteggio assegnato alla risorsa viene visualizzato in **[!UICONTROL Valutazioni]** personali. La valutazione media che la risorsa ricevuta dagli utenti che hanno valutato la risorsa viene visualizzata in **[!UICONTROL Valutazione]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
+   Il punteggio assegnato alla risorsa viene visualizzato in **[!UICONTROL Valutazioni]** personali. La valutazione media che la risorsa ricevuta dagli utenti che hanno valutato la risorsa viene visualizzata in **[!UICONTROL Valutazione]**. Inoltre, la suddivisione dei punteggi di rating che contribuiscono al punteggio medio è visualizzata in Disaggregazione **[!UICONTROL valutazione]**. Potete cercare le risorse in base alla media dei punteggi di valutazione.
 
-1. To view usage usage statistics for the asset, tap the **[!UICONTROL Insights]** tab.
+1. Per visualizzare le statistiche di utilizzo della risorsa, toccate la scheda **[!UICONTROL Approfondimenti]** .
 
-   Usage statistics include the following:
+   Le statistiche di utilizzo includono quanto segue:
 
-   * Number of times the asset was viewed or downloaded.
-   * Channels/devices through which the asset was used.
-   * Creative solutions where the asset was recently used.
+   * Numero di volte in cui la risorsa è stata visualizzata o scaricata.
+   * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa.
+   * Soluzioni creative in cui la risorsa è stata utilizzata di recente.
 
    Per ulteriori dettagli, consulta [Informazioni approfondite](touch-ui-asset-insights.md)sulle risorse.
 
@@ -397,9 +397,9 @@ Alcuni attributi univoci per una particolare copia di una risorsa non vengono ri
 
 * L’ora di creazione e i percorsi di riferimento sono univoci per ciascuna risorsa e per ciascuna delle relative rappresentazioni.
 
-The other properties and metadata information is retained. Durante la copia di una risorsa non viene creata una copia parziale.
+Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la copia di una risorsa non viene creata una copia parziale.
 
-1. From the Assets UI, select one or more assets, and then tap the **[!UICONTROL Copy]** icon from the toolbar. In alternativa, scegliete l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
+1. Nell’interfaccia utente Risorse, seleziona una o più risorse, quindi tocca l’icona **[!UICONTROL Copia]** dalla barra degli strumenti. In alternativa, scegliete l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
 
    ![copy_icon](assets/copy_icon.png)
 
@@ -433,65 +433,65 @@ The other properties and metadata information is retained. Durante la copia di u
 
 1. Nella procedura guidata **[!UICONTROL Sposta risorse]** , effettuate una delle seguenti operazioni:
 
-   * Specify the name for the asset after it is moved. Then tap **[!UICONTROL Next]** to proceed.
+   * Dopo averlo spostato, specificate il nome della risorsa. Quindi toccate **[!UICONTROL Avanti]** per proseguire.
    * Toccate **[!UICONTROL Annulla]** per interrompere il processo.
 
    >[!NOTE]
    >
-   >You can specify the same name for the asset if there is no asset with that name at the new location. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. If you use the same name, the system automatically generates a variation of the name. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
+   >Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
 
    >[!NOTE]
    >
    >I seguenti caratteri (elenco separato da spazi) non sono supportati:
-   >* asset file name must not contain  `* / : [ \ \ ] | # % { } ? &`
+   >* il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
    >* il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 
-1. On the **[!UICONTROL Select Destination]** page, do one of the following:
+1. Nella pagina **[!UICONTROL Seleziona destinazione]** , effettuate una delle seguenti operazioni:
 
    * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** page.
+   * Toccate **[!UICONTROL Indietro]** per tornare alla pagina **[!UICONTROL Rinomina]** .
 
-1. If the assets being moved have any referencing pages, assets, or collections, the **[!UICONTROL Adjust References]** tab appears beside the **[!UICONTROL Select Destination]** tab.
+1. Se le risorse che state spostando dispongono di pagine, risorse o raccolte di riferimento, accanto alla scheda **[!UICONTROL Seleziona destinazione]** viene visualizzata la scheda **[!UICONTROL Regola riferimenti]** .
 
-   Do one of the following on the **[!UICONTROL Adjust References]** page:
+   Nella pagina **[!UICONTROL Regola riferimenti]** , effettuate una delle seguenti operazioni:
 
-   * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed.
-   * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
-   * Tap **[!UICONTROL Cancel]** to stop the move operation.
+   * Specificate i riferimenti da modificare in base ai nuovi dettagli, quindi toccate **[!UICONTROL Sposta]** per proseguire.
+   * Nella colonna **[!UICONTROL Regola]** , selezionate o deselezionate i riferimenti alle risorse.
+   * Toccate **[!UICONTROL Indietro]** per tornare alla pagina **[!UICONTROL Seleziona destinazione]** .
+   * Toccate **[!UICONTROL Annulla]** per interrompere l’operazione di spostamento.
 
-   If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
+   Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
 
-1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
+1. Potete aggiungere o rimuovere rappresentazioni per una risorsa, tranne l’originale. Andate alla posizione della risorsa per la quale desiderate aggiungere o rimuovere le rappresentazioni.
 
-1. Tap the asset to open its asset page.
+1. Toccate la risorsa per aprire la pagina della risorsa.
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
-1. Tap the **[!UICONTROL Global Navigation]** icon, and select **[!UICONTROL Renditions]** from the list.
+1. Toccate l&#39;icona Navigazione **** globale e selezionate **[!UICONTROL Rappresentazioni]** dall&#39;elenco.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
+1. Nel pannello **[!UICONTROL Rappresentazioni]** , visualizzate l’elenco delle rappresentazioni generate per la risorsa.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >By default, AEM Assets does not display the original rendition of the asset in the preview mode. Gli amministratori possono utilizzare le sovrapposizioni per configurare  AEM Assets in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
+   >Per impostazione predefinita,  AEM Assets non visualizza la rappresentazione originale della risorsa in modalità di anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare  AEM Assets in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
 
-1. Select a rendition to either view or delete the rendition.
+1. Selezionate una rappresentazione per visualizzare o eliminare la rappresentazione.
 
-   **Delete a rendition**
+   **Eliminare una rappresentazione**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap the **[!UICONTROL Delete Rendition]** icon from the [toolbar](/help/sites-authoring/basic-handling.md). Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
+   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate l&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla [barra degli strumenti](/help/sites-authoring/basic-handling.md). Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare  Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Upload a new rendition**
+   **Caricare una nuova rappresentazione**
 
    Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
@@ -501,11 +501,11 @@ The other properties and metadata information is retained. Durante la copia di u
    >
    >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
-   You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, AEM Assets displays the rendition with the exact or closest dimensions.
+   Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate,  AEM Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
    To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. For size-based customization, the property **[!UICONTROL preferOriginal]** assigns preference to the original if the size of the matched rendition is greater than the original.
 
-   Similarly, you can customize the **[!UICONTROL Annotation]** page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Analogamente, potete personalizzare l’immagine della pagina **[!UICONTROL Annotazione]** sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -513,17 +513,17 @@ The other properties and metadata information is retained. Durante la copia di u
 
    >[!NOTE]
    >
-   >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
+   >Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video.
 
-For information about subassets, see [manage subassets](managing-linked-subassets.md).
+Per informazioni sulle risorse secondarie, consultate [gestire le risorse](managing-linked-subassets.md)secondarie.
 
 ## Delete assets {#deleting-assets}
 
-To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
+Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa.
 
-Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
 
-You require delete permissions on dam/asset to be able to delete an asset. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
+Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di eliminazione per la risorsa DAM o la risorsa. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
 
 **Per eliminare le risorse**:
 
@@ -539,13 +539,13 @@ You require delete permissions on dam/asset to be able to delete an asset. Se di
    * **[!UICONTROL Elimina]** per confermare l’azione in base ai seguenti elementi:
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
-      * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+      * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **[!UICONTROL Una o più risorse dispongono di riferimenti]**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
+   >Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa.
    >
-   >Also, disable the **[!UICONTROL Force Delete]** button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >Inoltre, disattivate il pulsante **[!UICONTROL Forza eliminazione]** utilizzando una sovrapposizione per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
 
 ## Scaricare le risorse {#downloading-assets}
 
@@ -553,52 +553,52 @@ See [Download assets from AEM](download-assets-from-aem.md)
 
 ## Publish assets {#publishing-assets}
 
-If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset after the processing is completed.
+Se pubblicate una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano le rappresentazioni. Attendere il completamento dell’elaborazione, quindi pubblicare o pubblicare nuovamente la risorsa al termine dell’elaborazione.
 
-If the folder you want to publish includes an empty folder, the empty folder is not published.
+Se la cartella da pubblicare include una cartella vuota, la cartella vuota non verrà pubblicata.
 
-For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](publishing-dynamicmedia-assets.md).
+Per ulteriori informazioni specifiche per gli elementi multimediali dinamici, consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md)multimediali dinamiche.
 
-**To publish assets**:
+**Per pubblicare le risorse**:
 
 1. Andate alla posizione delle risorse o della cartella che desiderate pubblicare.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
-1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published or unpublished are displayed. Choose the references you want to publish.
+1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dall’ultima pubblicazione o dall’annullamento della pubblicazione. Scegliete i riferimenti da pubblicare.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Tap **[!UICONTROL Publish]** to confirm the activation for the assets.
+1. Toccate **[!UICONTROL Pubblica]** per confermare l’attivazione delle risorse.
 
-## Unpublish assets {#unpublishing-assets}
+## Annullare la pubblicazione delle risorse {#unpublishing-assets}
 
-While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referenced by other published assets.
+Per annullare la pubblicazione di una risorsa complessa, annullate la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
 
-**To unpublish assets**:
+**Per annullare la pubblicazione delle risorse**:
 
 1. Andate alla posizione della risorsa o della cartella di risorse che desiderate rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
 
-1. Select the asset or folder to unpublish, and tap the **[!UICONTROL Manage Publication]** icon from the toolbar.
+1. Selezionate la risorsa o la cartella da annullare la pubblicazione, quindi toccate l’icona **[!UICONTROL Gestisci pubblicazione]** dalla barra degli strumenti.
 
    ![manage_publication](assets/manage_publication.png)
 
-1. Select the **[!UICONTROL Unpublish]** action from the list.
+1. Selezionate l’azione **[!UICONTROL Annulla pubblicazione]** dall’elenco.
 
    ![unpublish_action](assets/unpublish_action.png)
 
-1. To unpublish the asset later, select **[!UICONTROL Unpublish Later]**, and then select a date for unpublishing the asset.
-1. Schedule a date for the asset to be unavailable from the publish environment.
-1. If the asset references other assets, choose the references you want to unpublish. Toccate **[!UICONTROL Annulla pubblicazione]**.
+1. Per annullare la pubblicazione della risorsa in un secondo momento, selezionate **[!UICONTROL Annulla pubblicazione più tardi]**, quindi selezionate una data per annullare la pubblicazione della risorsa.
+1. Pianificate una data in cui la risorsa non sarà disponibile dall’ambiente di pubblicazione.
+1. Se la risorsa fa riferimento ad altre risorse, scegliete i riferimenti da annullare la pubblicazione. Toccate **[!UICONTROL Annulla pubblicazione]**.
 1. Nella finestra di dialogo di conferma, effettuate una delle seguenti operazioni:
 
-   * Tap **[!UICONTROL Cancel]** to stop the action
+   * Toccate **[!UICONTROL Annulla]** per interrompere l’azione
    * Toccate **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
 
 ## Creare un gruppo utenti chiuso {#closed-user-group}
 
-A CUG (Closed User Group) is used to limit access to specific asset folders published from AEM. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
+Per limitare l’accesso a specifiche cartelle di risorse pubblicate da AEM, viene utilizzato un gruppo di utenti chiuso. Se create un gruppo di utenti chiuso per una cartella, l’accesso alla cartella (comprese le risorse e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
 
-CUG are an extra way to restrict access to your assets. Potete anche configurare una pagina di login per la cartella.
+I CUG consentono di limitare l’accesso alle risorse. Potete anche configurare una pagina di login per la cartella.
 
 **Per creare un gruppo** utenti chiuso:
 
@@ -618,61 +618,61 @@ CUG are an extra way to restrict access to your assets. Potete anche configurare
 
 ## Cercare risorse {#searching-assets}
 
-La ricerca di base è dettagliata nella sezione [Ricerca e filtro](/help/sites-authoring/search.md#search-and-filter) . Usate il pannello **[!UICONTROL Ricerca]** per cercare risorse, tag e metadati. You can search parts of a string using the wildcard asterisk. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
+La ricerca di base è dettagliata nella sezione [Ricerca e filtro](/help/sites-authoring/search.md#search-and-filter) . Usate il pannello **[!UICONTROL Ricerca]** per cercare risorse, tag e metadati. È possibile cercare parti di una stringa utilizzando l&#39;asterisco carattere jolly. Inoltre, potete personalizzare il pannello **[!UICONTROL Ricerca]** utilizzando i facet [](search-facets.md)Ricerca.
 
 ![filter_panel](assets/filters_panel.png)
 
-For recently uploaded assets, their metadata (including titles, tags, and so on) is not immediately available in the list of suggestions that appear when you type in the Omnisearch box.
+Per le risorse caricate di recente, i relativi metadati (inclusi titoli, tag e così via) non sono immediatamente disponibili nell’elenco dei suggerimenti che vengono visualizzati quando digitate nella casella di ricerca Omnico.
 
-This is because AEM Assets waits until the expiry of a timeout period (1 hour by default) before running a background job to index the metadata for all newly uploaded/updated assets and adding them to the list of suggestions.
+Questo perché  AEM Assets attende la scadenza di un periodo di timeout (per impostazione predefinita, 1 ora) prima di eseguire un processo in background, per indicizzare i metadati per tutte le risorse caricate/aggiornate di recente e aggiungerli all’elenco dei suggerimenti.
 
-## Use Quick Actions {#quick-actions}
+## Usa azioni rapide {#quick-actions}
 
-Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta. Depending upon your device, perform the following actions to display the quick action icons:
+Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta. A seconda del dispositivo, effettuate le seguenti operazioni per visualizzare le icone delle azioni rapide:
 
-* Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
-* Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
+* Dispositivi touch: Toccate e tenete premuto. Ad esempio, su un iPad potete toccare e tenere premuto un contenuto per visualizzare le azioni rapide.
+* Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passate il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
 
-### Navigate to and select assets {#navigating-and-selecting-assets}
+### Spostarsi e selezionare le risorse {#navigating-and-selecting-assets}
 
-Potete visualizzare, navigare e selezionare le risorse tramite una qualsiasi delle viste disponibili (scheda, colonna, elenco) tramite l&#39;icona **[!UICONTROL Seleziona]** . **[!UICONTROL Select]** appears as a quick action in the card view.
+Potete visualizzare, navigare e selezionare le risorse tramite una qualsiasi delle viste disponibili (scheda, colonna, elenco) tramite l&#39;icona **[!UICONTROL Seleziona]** . **[!UICONTROL Selezionate]** viene visualizzata come azione rapida nella vista a schede.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-In list view, **[!UICONTROL Select]** appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
+Nella visualizzazione a elenco, quando si passa il puntatore del mouse sull’icona **[!UICONTROL Seleziona]** viene visualizzata la prima miniatura dei nomi delle risorse o della cartella nell’elenco.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Similar to list view, **[!UICONTROL Select]** appears when you hover the mouse icon over the thumbnail before the names of the assets or folder in column view.
+Come per la vista a elenco, **[!UICONTROL Seleziona]** viene visualizzato quando passi l’icona del mouse sulla miniatura prima dei nomi delle risorse o della cartella nella vista a colonne.
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Per ulteriori informazioni, consulta [Visualizzazione e selezione delle risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Modificare le immagini {#editing-images}
 
-The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. Potete anche aggiungere mappe immagine alle risorse.
+Gli strumenti di modifica nell’interfaccia  AEM Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagine. Potete ritagliare, ruotare, capovolgere ed eseguire altri processi di modifica sulle immagini. Potete anche aggiungere mappe immagine alle risorse.
 
-Image editing is supported for files that have the following formats:
+La modifica delle immagini è supportata per i file con i seguenti formati:
 
 * BMP
 * GIF
 * PNG
 * JPEG
 
-For some components, **[!UICONTROL Full Screen]** mode has additional options available.
+Per alcuni componenti, la modalità **[!UICONTROL Schermo]** intero dispone di opzioni aggiuntive.
 
-To edit a TXT file, set **[!UICONTROL Day CQ Link Externalizer]** from within Configuration Manager.
+Per modificare un file TXT, impostare **[!UICONTROL Day CQ Link Externalizer]** dall&#39;interno di Configuration Manager.
 
-Potete anche aggiungere mappe immagine utilizzando l’editor immagini. For details, see [Adding Image Maps](image-maps.md).
+Potete anche aggiungere mappe immagine utilizzando l’editor immagini. Per informazioni dettagliate, consultate [Aggiunta di mappe](image-maps.md)immagine.
 
-**To edit images**:
+**Per modificare le immagini**:
 
-1. Do one of the following to open an asset in edit mode:
+1. Per aprire una risorsa in modalità di modifica, effettuate una delle seguenti operazioni:
 
-   * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
+   * Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate l&#39;opzione **[!UICONTROL Modifica]** che viene visualizzata su una risorsa nella vista a schede.
-   * In the asset page, tap the **[!UICONTROL Edit]** icon in the toolbar.
+   * Nella pagina della risorsa, toccate l’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
 
    ![edit_icon](assets/edit_icon.png)
 
@@ -684,8 +684,8 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. For deta
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. Select the area to crop, and resize or reposition it on the image.
-1. Use the **[!UICONTROL Finish]** option in the upper-right corner to crop the image. Toccando **[!UICONTROL Fine]** si attiva anche la rigenerazione delle rappresentazioni.
+1. Selezionate l’area da ritagliare e ridimensionatela o riposizionatela sull’immagine.
+1. Per ritagliare l’immagine, usate l’opzione **[!UICONTROL Fine]** nell’angolo in alto a destra. Toccando **[!UICONTROL Fine]** si attiva anche la rigenerazione delle rappresentazioni.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -693,11 +693,11 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. For deta
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-1. Tap the appropriate **[!UICONTROL Rotate]** icon to rotate the image clockwise or anti-clockwise.
+1. Toccate l’icona **[!UICONTROL Ruota]** appropriata per ruotare l’immagine in senso orario o antiorario.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-1. Tap the appropriate **[!UICONTROL Flip]** icon to flip the image horizontally or vertically.
+1. Toccate l’icona **[!UICONTROL Rifletti]** appropriata per riflettere l’immagine in orizzontale o verticale.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -707,20 +707,20 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. For deta
 
 ## Utilizzo della timeline {#timeline}
 
-The **[!UICONTROL Timeline]** lets you view various events for a selected item, such as active workflows for an asset, comments, annotations, activity logs, and versions.
+La **[!UICONTROL timeline]** consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti, annotazioni, registri attività e versioni.
 
-In the [Collections console](managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+Nella console [](managing-collections-touch-ui.md#navigating-the-collections-console)Raccolte, l&#39;elenco **[!UICONTROL Mostra tutto]** contiene opzioni per visualizzare solo commenti e flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di livello principale elencate nella console. Non viene visualizzato se vi spostate all&#39;interno di una qualsiasi delle raccolte.
 
-**[!UICONTROL Timeline]** contains several [options specific to Content Fragments](content-fragments-managing.md#timeline-for-content-fragments); this functionality requires [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) or later.
+**[!UICONTROL La timeline]** contiene diverse [opzioni specifiche per i frammenti](content-fragments-managing.md#timeline-for-content-fragments)di contenuto; questa funzionalità richiede [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o successivo.
 
-**To use Timeline**:
+**Per utilizzare la timeline**:
 
-1. Open the asset page for an asset, or select it in the Assets UI.
-1. Tap the **[!UICONTROL Global Navigation]** icon, and choose **Timeline]** from the list.
+1. Aprite la pagina della risorsa per una risorsa o selezionatela nell’interfaccia utente delle risorse.
+1. Toccate l&#39;icona Navigazione **** globale e scegliete **[Timeline]** dall&#39;elenco.
 
    ![timeline](assets/timeline.png)
 
-1. In the list that appears, use the **[!UICONTROL Show All]** list to filter the results based on comments, versions, workflows, and activities.
+1. Nell&#39;elenco visualizzato, utilizzare l&#39;elenco **[!UICONTROL Mostra tutto]** per filtrare i risultati in base a commenti, versioni, flussi di lavoro e attività.
 
    ![timeline_options](assets/timeline_options.png)
 
@@ -875,7 +875,7 @@ Di seguito è riportato un esempio di come configurare AEM per la stampa di anno
 
 ## Creazione di versioni delle risorse {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. La gestione delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa.
 
 Di seguito sono riportati gli scenari in cui si creano le versioni:
 
