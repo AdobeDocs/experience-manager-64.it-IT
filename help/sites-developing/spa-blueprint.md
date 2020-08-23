@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Consultate anche la risorsa npm [@adobe/cq-response-editable-components#srccompo
 
 Il componente SPA viene mappato su un contenitore grafico, ad esempio la griglia reattiva, e deve aggiungere un segnaposto figlio virtuale al momento della creazione del contenuto. Quando il contenuto dell’API viene creato dall’Editor pagina, tale contenuto viene incorporato nell’editor tramite un iframe e l’ `data-cq-editor` attributo viene aggiunto al nodo del documento di tale contenuto. Quando l&#39; `data-cq-editor` attributo è presente, il contenitore deve includere un oggetto HTMLElement per rappresentare l&#39;area con la quale l&#39;autore interagisce quando inserisce un nuovo componente nella pagina.
 
-Ad esempio:
+Esempio:
 
 ```
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
@@ -278,7 +278,7 @@ Il frammento seguente illustra la tipica rappresentazione HTML di una struttura 
 
 L&#39;app è proprietaria del routing. Lo sviluppatore front-end deve innanzitutto implementare un componente Navigazione (mappato su un componente di navigazione AEM). Questo componente eseguirebbe il rendering dei collegamenti URL da utilizzare insieme a una serie di route per visualizzare o nascondere frammenti di contenuto.
 
-La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) libreria sottostante e il relativo modulo `[`ModelRouter`](/help/sites-developing/spa-routing.md) (attivato per impostazione predefinita) sono responsabili della preacquisizione e dell&#39;accesso al modello associato a un determinato percorso di risorse.
+La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) libreria sottostante e il relativo [`ModelRouter`](/help/sites-developing/spa-routing.md) modulo (attivato per impostazione predefinita) sono responsabili della preacquisizione e dell&#39;accesso al modello associato a un determinato percorso di risorse.
 
 Le due entità si riferiscono al concetto di routing, ma [`ModelRouter`](/help/sites-developing/spa-routing.md) è responsabile solo del fatto che [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sia caricato con un modello dati strutturato in sincronia con lo stato dell&#39;applicazione corrente.
 
