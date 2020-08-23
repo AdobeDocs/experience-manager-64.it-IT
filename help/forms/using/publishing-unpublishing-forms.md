@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Per pianificare la data e l’ora di pubblicazione e annullamento della pubblica
    1. Portate il puntatore su una risorsa e toccate **[!UICONTROL Annulla pubblicazione]** per ![annullare la pubblicazione](assets/unpublish.png).
    1. Effettuate una delle seguenti operazioni, quindi toccate Annulla pubblicazione:
 
-      * Se vi trovate nella vista a schede, toccate **[!UICONTROL Enter Selection** aem6forms_check-cerchio ![](assets/aem6forms_check-circle.png), quindi toccate la risorsa. La risorsa è selezionata.
+      * Se vi trovate nella vista a schede, toccate **[!UICONTROL Entra nella selezione]** ![aem6forms_check-cerchio](assets/aem6forms_check-circle.png)e toccate la risorsa. La risorsa è selezionata.
       * Se vi trovate nella vista a elenco, passate il puntatore del mouse su una risorsa e toccate il segno di ![spunta](assets/selectassetcheckmark.png) selezionato . La risorsa è selezionata.
       * Toccate una risorsa per visualizzarne i dettagli.
       * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![vista](assets/viewproperties.png).
