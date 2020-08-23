@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10507'
+source-wordcount: '10502'
 ht-degree: 4%
 
 ---
@@ -359,7 +359,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 **La risoluzione** descrive l’altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
-La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320x240 e un file video con risoluzione 640x480:
+La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
 
 | Risoluzione | Pixel per fotogramma |
 |--- |--- |
@@ -469,7 +469,7 @@ Per pubblicare contenuti su YouTube, è necessario un account Google. Se avete u
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 **Per configurare le impostazioni** di Google Cloud:
 
@@ -490,7 +490,7 @@ Per pubblicare contenuti su YouTube, è necessario un account Google. Se avete u
 1. Nel **[!UICONTROL dashboard]** del progetto, nella scheda **[!UICONTROL Guida introduttiva]** , toccate **[!UICONTROL Abilita API e ottenete le credenziali come chiavi]**.
 1. Nella parte superiore della pagina **[!UICONTROL Dashboard]** , toccate **[!UICONTROL Abilita API]**.
 1. Nella pagina **[!UICONTROL Libreria]** , in API di YouTube, toccate **[!UICONTROL YouTube Data API]**.
-1. Nella parte superiore della pagina API **YouTube Data v3]** , toccate **[!UICONTROL Abilita]** per attivarla.
+1. Nella parte superiore della pagina API **[!UICONTROL YouTube Data v3]** , toccate **[!UICONTROL Abilita]** per attivarla.
 1. Per utilizzare l&#39;API, potrebbero essere necessarie delle credenziali. Se necessario, toccate **[!UICONTROL Crea credenziali]**.
 1. Da **[!UICONTROL dove chiamerete l&#39;API?]** dall’elenco a discesa, selezionate Server **[!UICONTROL Web (ad es. node.js, Tomcat)]**.
 1. In **[!UICONTROL quali dati accederai?]** selezionate Dati **** utente.
@@ -570,7 +570,7 @@ Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa 
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Sotto l&#39;intestazione Servizi **[!UICONTROL di]** terze parti, sotto YouTube, tocca **[!UICONTROL Configura ora]**.
-1. Nella finestra di dialogo **Crea configurazione]** , immettete un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
+1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , immettete un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
 1. Toccate **[!UICONTROL Crea]**.
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
@@ -586,7 +586,7 @@ Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa 
    Ora configurerete i canali di YouTube in AEM.
 
 1. A destra di **[!UICONTROL Canali disponibili]**, tocca **[!UICONTROL +]** (icona del segno più).
-1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel ]**earlier.
+1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]** earlier.
 
    Se necessario, potete aggiungere una descrizione.
 
@@ -597,7 +597,7 @@ Oppure, se intendete utilizzare i tag predefiniti in AEM, potete saltare questa 
    * A seconda di quanti canali l’account dispone di due o più elementi. Selezionate un canale. Non selezionate l’indirizzo e-mail.
    * Nella pagina successiva, toccate **[!UICONTROL Accetta]** per consentire l’accesso a questo canale.
 
-1. Toccate **[!UICONTROL Consenti**.
+1. Toccate **[!UICONTROL Consenti]**.
 
    Ora verranno impostati i tag per la pubblicazione.
 
@@ -656,7 +656,7 @@ Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori 
 1. Nell’angolo superiore destro della pagina Editor **[!UICONTROL schema]** metadati, toccate **[!UICONTROL Annulla]**.
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
-1. Nella pagina **[!UICONTROL Metadata Profiles** , toccate **[!UICONTROL Create**(Creametadati CONTROL) in alto a destra della pagina. In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
+1. Nella pagina **[!UICONTROL Profili]** metadati, toccate **[!UICONTROL Crea]** nell’angolo in alto a destra della pagina. In the **[!UICONTROL Add Metadata Profile]** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
 1. Nella pagina Editor **[!UICONTROL profilo]** metadati, toccate la scheda **[!UICONTROL Avanzate]** .
 1. Aggiungete i valori di Pubblicazione su YouTube copiati al profilo effettuando le seguenti operazioni:
 
@@ -676,7 +676,7 @@ Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori 
    * Sul lato destro della pagina, nella scheda Impostazioni, nel campo di testo Etichetta campo, immettere `YouTube Privacy`.
    * Tap the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Single Line Text]** and drop it below the **[!UICONTROL YouTube Privacy]** heading you just created.
    * Tap **[!UICONTROL Field Label]** to select the component.
-   * Sul lato destro della pagina, nella scheda **[!UICONTROL Impostazioni]** , incollate i valori di pubblicazione **** YouTube (valore Etichetta **** campo e **[!UICONTROL Mappa su valore proprietà]** ) copiati in precedenza nei rispettivi campi del modulo. Incollate il valore **[!UICONTROL** Choices nel campo Valore **** predefinito.
+   * Sul lato destro della pagina, nella scheda **[!UICONTROL Impostazioni]** , incollate i valori di pubblicazione **** YouTube (valore Etichetta **** campo e **[!UICONTROL Mappa su valore proprietà]** ) copiati in precedenza nei rispettivi campi del modulo. Incolla il valore **[!UICONTROL Scelte]** nel campo Valore **** predefinito.
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. Applicate il profilo di metadati Pubblicazione su YouTube alle cartelle in cui desiderate caricare i video. Dovrete avere sia il profilo metadati che il profilo video impostato.
@@ -807,7 +807,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    >[!NOTE]
    >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -824,7 +824,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
 1. For completed workflows, see **[!UICONTROL Workflow Archive]** available from **[!UICONTROL Tools > Workflow > Archive]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
-   Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -844,7 +844,7 @@ La modalità di configurazione delle notifiche dipende dal tipo di notifiche per
 1. In AEM, selezionare **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Selezionate il flusso di lavoro **[!UICONTROL Pubblica su YouTube]** , quindi toccate **[!UICONTROL Modifica]**.
 1. Fate clic con il pulsante destro del mouse sul passaggio del flusso di lavoro di caricamento **[!UICONTROL di]** YouTube, quindi toccate **[!UICONTROL Modifica]**.
-1. Toccate la scheda **Argomenti **.
+1. Toccate la scheda **Argomenti** .
 1. È possibile selezionare o deselezionare le seguenti caselle di controllo:
 
    * **[!UICONTROL Inizio pubblicazione]**
@@ -988,7 +988,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
 1. Usate un’applicazione o un servizio di terze parti per creare il file di sottotitoli o sottotitoli video.
 
-   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione dei file di sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
+   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione del nome file dei sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
 
    Vedere [WebVTT: Il formato](https://dev.w3.org/html5/webvtt/)Web Video Text Tracks.
 
@@ -1119,7 +1119,7 @@ In base al tempo totale del video, Contenuti multimediali dinamici acquisisce di
 
 È consigliabile aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul sito Web.
 
-Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video invece di usare una miniatura generata da Contenuti multimediali dinamici. Ad esempio, potete creare un’immagine in miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
+Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video invece di usare una miniatura generata da Contenuti multimediali dinamici. Ad esempio, potete creare una miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
 
 >[!NOTE]
 >
