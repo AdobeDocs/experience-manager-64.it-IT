@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4300'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Quando aggiungete punti di attivazione a un&#39;immagine del banner in  AEM Asse
 
 È importante identificare correttamente il numero e il tipo di variabili da associare ai dati dei punti di attivazione. Ogni punto di attivazione aggiunto a un&#39;immagine del banner deve contenere informazioni sufficienti per identificare in modo univoco il prodotto nel sistema di back-end esistente.
 
-Esistono diversi modi per identificare un set di variabili da utilizzare per i dati dei punti di attivazione.
+Esistono diversi modi per identificare un insieme di variabili da utilizzare per i dati dei punti di attivazione.
 
 A volte può essere sufficiente consultare gli specialisti IT responsabili dell&#39;implementazione di Quickview, in quanto è probabile che sappiano quale sia il set minimo di dati necessario per identificare Quickview nel sistema. Tuttavia, nella maggior parte dei casi è anche possibile analizzare semplicemente il comportamento esistente del codice front-end.
 
@@ -260,9 +260,9 @@ Consultate [(Facoltativo) Anteprima delle immagini](#optional-previewing-interac
 1. Nella vista Risorse, individuate il banner immagine da rendere interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). Sulla barra degli strumenti, toccate **[!UICONTROL Edit**.
+   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). Sulla barra degli strumenti, toccate **[!UICONTROL Modifica]**.
    * Passate il puntatore sull&#39;immagine, quindi toccate **[!UICONTROL Altre azioni]** (icona a tre punti) > **[!UICONTROL Modifica]**.
-   * Toccate l’immagine per aprirla nella pagina Visualizzazione **** dettagli. Sulla barra degli strumenti, toccate **[!UICONTROL Edit**.
+   * Toccate l’immagine per aprirla nella pagina Visualizzazione **** dettagli. Sulla barra degli strumenti, toccate **[!UICONTROL Modifica]**.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
