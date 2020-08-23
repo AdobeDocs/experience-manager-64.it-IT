@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 31%
 
 ---
@@ -109,7 +109,7 @@ A tale scopo, configura la configurazione Cloud per la pagina in cui apparirà l
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Fate clic su **[!UICONTROL Cloud Services > Aggiungi servizi > Dynamic Media Classic (Scene7)**.
+1. Fate clic su **[!UICONTROL Cloud Services]>[!UICONTROL Aggiungi servizi]>[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. Nell’elenco a discesa  Adobe Dynamic Media Classic, selezionate la configurazione desiderata, quindi fate clic su **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -240,7 +240,7 @@ Il componente Immagine Dynamic Media Classic consente di aggiungere alle immagin
 
 **[!UICONTROL Formato]** di output - Selezionare il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, è possibile che siano disponibili ulteriori opzioni di configurazione. Consulta [Gestione dei predefiniti per immagini](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Nitidezza]** - Selezionate la modalità di nitidezza dell’immagine. La nitidezza viene spiegata nel dettaglio in [*Adobe Qualità immagine di Dynamic Media Classic e Best practice *](/help/assets/assets/s7_sharpening_images.pdf)per la nitidezza.
+**[!UICONTROL Nitidezza]** - Selezionate la modalità di nitidezza dell’immagine. La nitidezza viene spiegata nel dettaglio in [*Adobe Qualità immagine di Dynamic Media Classic e Best practice*](/help/assets/assets/s7_sharpening_images.pdf) per la nitidezza.
 
 **[!UICONTROL Modificatori]** URL - Potete modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
