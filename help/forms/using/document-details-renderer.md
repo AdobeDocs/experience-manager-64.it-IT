@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Il rendering delle applicazioni di terze parti viene eseguito utilizzando la vis
 
 **area di lavoro AEM Forms alla comunicazione con applicazioni di terze parti**
 
-Se  pulsanti di azione diretta dell&#39;area di lavoro di AEM Forms sono visibili, viene chiamato `window.[External-App-Name].getMessage([Action])`, dove [ `Action]` viene letto dall&#39;area di lavoro `routeActionMap`. L&#39;applicazione di terze parti deve ascoltare questa interfaccia e inviare una notifica &#39;area di lavoro AEM Forms tramite l&#39; `postMessage ()` API.
+Se  pulsanti di azione diretta dell&#39;area di lavoro di AEM Forms sono visibili, viene chiamato `window.[External-App-Name].getMessage([Action])`il punto in cui `[Action]` viene letto dal `routeActionMap`. L&#39;applicazione di terze parti deve essere in ascolto su questa interfaccia, quindi inviare una notifica &#39;area di lavoro AEM Forms tramite l&#39; `postMessage ()` API.
 
 Ad esempio, un&#39;applicazione Flex può definire `ExternalInterface.addCallback('getMessage', listener)` per supportare questa comunicazione. Se l&#39;applicazione di terze parti desidera gestire l&#39;invio del modulo tramite i propri pulsanti, è necessario specificare `hideDirectActions = true() in the runtimeMap` e ignorare il listener. Quindi, questo costrutto è facoltativo.
 
