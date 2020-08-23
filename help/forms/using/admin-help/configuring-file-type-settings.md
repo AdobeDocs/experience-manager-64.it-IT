@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '6146'
 ht-degree: 2%
@@ -84,7 +84,7 @@ Creare o modificare un&#39;impostazione di tipo di file per specificare come l&#
 
 1. Dopo aver completato tutte le sezioni, fare clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva con nome]** e specificare un nome per l&#39;impostazione.
 
-È possibile personalizzare il supporto per diversi tipi di file. (Vedere &quot; [Aggiunta del supporto per formati](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)di file nativi aggiuntivi&quot; nella [programmazione con moduli](https://www.adobe.com/go/learn_lc_programming_11)AEM.)
+È possibile personalizzare il supporto per diversi tipi di file. (Vedere [Aggiunta del supporto per formati](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)di file nativi aggiuntivi nella [programmazione con moduli](https://www.adobe.com/go/learn_lc_programming_11)AEM.)
 
 ## Modificare le impostazioni predefinite {#change-the-default-settings}
 
@@ -112,7 +112,7 @@ Creare o modificare un&#39;impostazione di tipo di file per specificare come l&#
 
 ## Impostazioni di Image to PDF {#image-to-pdf-settings}
 
-Le seguenti opzioni determinano la modalità di conversione dei file immagine in PDF. Per istruzioni su come accedere a queste impostazioni, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
+Le seguenti opzioni determinano il modo in cui i file immagine vengono convertiti in PDF. Per istruzioni su come accedere a queste impostazioni, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
 **Estensioni nome file:** Elenco separato da virgole di estensioni di nomi file convertibili.
 
@@ -257,7 +257,7 @@ Per istruzioni su come accedere a questa impostazione, consultate [Creare o modi
 
    >[!NOTE]
    >
-   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere al nome del font il prefisso +. Ad esempio, &quot;+Helvetica&quot;.*
+   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere il prefisso al nome del font con il segno +. Ad esempio, &quot;+Helvetica&quot;.*
 
 1. Se si desidera incorporare solo i sottoinsiemi in uso dei font incorporati, selezionare **Sottoinsieme tutti i font** incorporati.
 
@@ -285,7 +285,7 @@ Selezionate **Trasparenza** per configurare le impostazioni di trasparenza duran
 >
 >La quantità di rasterizzazione che si verifica dipende dalla complessità della pagina e dai tipi di oggetti sovrapposti.
 
-**Linea Art (Line Art) e risoluzione testo** a cui vengono rasterizzati tutti gli oggetti, incluse immagini, grafica vettoriale, testo e sfumature. I valori supportati sono da 1 pixel per pollice (ppi) a 9600 ppi.
+**Risoluzione grafica e testo** a cui vengono rasterizzati tutti gli oggetti, incluse immagini, grafica vettoriale, testo e sfumature. I valori supportati sono da 1 pixel per pollice (ppi) a 9600 ppi.
 
 >[!NOTE]
 >
@@ -301,7 +301,11 @@ Selezionate **Trasparenza** per configurare le impostazioni di trasparenza duran
 
 **Converti tutti i tratti in contorni** Converte tutti i tratti in semplici tracciati riempiti su pagine contenenti trasparenza. Questa opzione assicura che la larghezza dei tratti rimanga costante durante la conversione. Tenete presente che l’attivazione di questa opzione fa sì che i tratti sottili appaiano leggermente più spessi e potrebbero compromettere le prestazioni di appiattimento.
 
-**Le aree** complesse della clip garantiscono che i bordi tra grafica vettoriale e grafica rasterizzata rientrino lungo i percorsi degli oggetti. Questa opzione consente di ridurre gli artefatti di cucitura che si verificano quando fanno parte di un og] &quot;>
+**Le aree** complesse della clip garantiscono che i bordi tra grafica vettoriale e grafica rasterizzata rientrino lungo i percorsi degli oggetti. Questa opzione consente di ridurre gli artefatti che si verificano quando parte di un og
+
+<!--
+NOTE to WRITER - The above sentence is incomplete.
+-->
 
 >[!NOTE]
 >
