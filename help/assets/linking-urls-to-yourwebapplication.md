@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 10%
@@ -139,7 +139,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    Ad esempio, se l’ID di registrazione era `87654321|MyCompany`, il nome del cliente sarebbe `MyCompany`.
 
-1. Nell’angolo in alto a sinistra della pagina, toccate **[!UICONTROL Cloud Services**, quindi toccate l’icona AEM e passate a **[!UICONTROL Generale > CRXDE Lite]**.
+1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Cloud]Services**, quindi tocca l’icona AEM e passa a **[!UICONTROL Generale > CRXDE Lite]**.
 1. Copiate l’intero percorso di rappresentazione video dal JCR (Java Content Repository).
 
    Ad esempio, il percorso di rappresentazione del video potrebbe essere simile al seguente:
@@ -185,7 +185,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 1. Copiate il percorso completo della risorsa video in AEM, come elaborato da Contenuti multimediali dinamici. Questo percorso di risorse video copiato sarà necessario più avanti nei seguenti passaggi.
 
-   Ad esempio:
+   Esempio:
 
    `/content/dam/marketing/MyVideo.mp4`
 
