@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5549'
+source-wordcount: '5547'
 ht-degree: 4%
 
 ---
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    Tenere presente che [!UICONTROL Visualizza modulo], come impostato nell’angolo superiore destro della pagina [!UICONTROL Dettagli] , è la visualizzazione predefinita.
 
 1. Nel pannello Elenco **** predefiniti, toccate **[!UICONTROL Aggiungi]** per attivare i campi delle definizioni nel pannello **[!UICONTROL Dettagli]** sul lato destro della schermata.
-1. Nel pannello **[!UICONTROL Dettagli]** , digitate un nome per il predefinito nel campo [!UICONTROL Preset Name[!UICONTROL.
+1. Nel pannello **[!UICONTROL Dettagli]** , digitate nel campo Nome  predefinito un nome per il predefinito.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. Nell’elenco a discesa **[!UICONTROL Sottotipo]** , selezionate Set 360 gradi con asse **[!UICONTROL multiplo]**.
 1. Espandete Convenzioni **[!UICONTROL di denominazione delle]** risorse e toccate **[!UICONTROL Personalizzato]** nell’elenco a discesa Denominazione **** file.
