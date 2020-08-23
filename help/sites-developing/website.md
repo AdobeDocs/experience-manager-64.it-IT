@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ Dopo aver installato AEM, accedete all’ambiente di sviluppo CRXDE Lite facendo
 
 Utilizzate CRXDE Lite per creare la struttura dell’applicazione miosito Web nella directory archivio:
 
-1. Nella struttura ad albero, sul lato sinistro del CRXDE Lite, fate clic con il pulsante destro del mouse sulla **`/apps`** cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **Crea cartella** , digitate `mywebsite` il nome della cartella e fate clic su **[!UICONTROL OK**.
+1. Nella struttura ad albero, sul lato sinistro del CRXDE Lite, fate clic con il pulsante destro del mouse sulla **`/apps`** cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **Crea cartella** , digitate `mywebsite` il nome della cartella e fate clic su **OK**.
 1. Fate clic con il pulsante destro del mouse sulla `/apps/mywebsite` cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , digitate `components` il nome della cartella e fate clic su **[!UICONTROL OK]**.
 1. Fate clic con il pulsante destro del mouse sulla `/apps/mywebsite` cartella e fate clic su **[!UICONTROL Crea > Crea cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , digitate `templates` il nome della cartella e fate clic su **[!UICONTROL OK]**.
 
@@ -407,7 +407,7 @@ In questa sezione vengono creati diversi script che generano ciascuno una parte 
 
 In questa sezione, potete creare un componente per visualizzare i collegamenti a tutte le pagine di livello principale del sito Web per semplificare la navigazione. Il contenuto di questo componente viene visualizzato nella parte superiore di tutte le pagine create utilizzando il modello di pagina del contenuto.
 
-Nella prima versione del componente di navigazione superiore (navigazione superiore) gli elementi di navigazione sono solo collegamenti di testo. Nella seconda versione implementate la navigazione topnav con i collegamenti di navigazione delle immagini.
+Nella prima versione del componente di navigazione superiore (navigazione superiore), gli elementi di navigazione sono solo collegamenti di testo. Nella seconda versione implementate la navigazione topnav con i collegamenti di navigazione delle immagini.
 
 La navigazione superiore avrà il seguente aspetto:
 
@@ -1082,7 +1082,7 @@ In questa sezione viene incluso il componente titolo, uno dei componenti di base
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NOTE]
 >Potete impostare un diverso Titolo e Tipo/Dimensione in modalità **[!UICONTROL Modifica]** .
 
 ### Inclusione del componente del sistema paragrafo {#including-the-paragraph-system-component}
@@ -1275,7 +1275,7 @@ Nella pagina **[!UICONTROL inglese]** la casella di immissione della ricerca sar
       * **[!UICONTROL Descrizione]**: Questo è il componente Ricerca personale
       * **[!UICONTROL Gruppo]**: MyWebsite
    1. Fate clic su **[!UICONTROL Avanti]**, quindi fate di nuovo clic su **[!UICONTROL Avanti]** .
-   1. Nel pannello **[!UICONTROL Allowed Parents (Genitori** consentiti), fate clic sul pulsante **[!UICONTROL +]** e digitate `*/parsys`.
+   1. Nel pannello **[!UICONTROL Genitori]** consentiti, fate clic sul pulsante **[!UICONTROL +]** e digitate `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
