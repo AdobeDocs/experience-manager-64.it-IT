@@ -3,9 +3,9 @@ title: Configurare i plug-in Editor Rich Text
 description: Scoprite come configurare i plug-in Editor di testo AEM per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4206'
 ht-degree: 3%
 
 ---
@@ -176,7 +176,7 @@ Per configurare quali formati sono consentiti quando si incolla testo in AEM da 
    * **Nome** `anchor` (per collegamenti e ancoraggi denominati)
    * **Nome** `image`
 
-   Tutte le proprietà sono di **tipo** `Boolean`, quindi in **Valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
+   Tutte le proprietà sono di **tipo** `Boolean`, quindi nel **valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
 
    >[!NOTE]
    Se non viene definito in modo esplicito, viene utilizzato il valore predefinito true e il formato viene accettato.
@@ -253,7 +253,7 @@ Esempio di una `htmlPasteRules` struttura valida:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Ad esempio:
+Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -303,11 +303,10 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
 >[!NOTE]
 Quando si utilizza l&#39;editor Rich Text in una finestra di dialogo (interfaccia classica) È possibile specificare fogli di stile ottimizzati per la modifica RTF. A causa di restrizioni tecniche, il contesto CSS viene perso nell&#39;editor, quindi potrebbe essere utile emulare questo contesto per migliorare l&#39;esperienza WYSIWYG.
 L’Editor Rich Text utilizza un elemento DOM contenitore con un ID `CQrte` che può essere utilizzato per fornire stili diversi per la visualizzazione e la modifica:
-# CQ td {
-// definisce lo stile per la visualizzazione }
-# CQrte td {
-// definisce lo stile per la modifica }
-
+`#CQ td {`
+` // defines the style for viewing }`
+`#CQrte td {`
+` // defines the style for editing }`
 
 ### Specificare gli stili disponibili nell&#39;elenco a comparsa {#stylesindropdown}
 
