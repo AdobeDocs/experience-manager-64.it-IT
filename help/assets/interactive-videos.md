@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6008'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->Se create un video interattivo per avviare una pagina Web quando un utente fa clic su una miniatura, alcuni dispositivi impediranno l’apertura della pagina Web a comparsa. In tali casi, è necessario modificare l&#39;impostazione del blocco dei pop-up sul dispositivo. Ad esempio, su un Apple iPhone 6, toccate **[!UICONTROL Settings** > **Safari** > **Block Pop-ups**, quindi fate scorrere il controllo su **[!UICONTROL Off**. Ora, quando riproducete un video interattivo e fate clic su una miniatura, viene richiesto se desiderate aprire la finestra a comparsa. Se accettate, viene visualizzata la pagina Web.
+>Se create un video interattivo per avviare una pagina Web quando un utente fa clic su una miniatura, alcuni dispositivi impediranno l’apertura della pagina Web a comparsa. In tali casi, è necessario modificare l&#39;impostazione del blocco dei pop-up sul dispositivo. Ad esempio, su un Apple iPhone 6, toccate **[!UICONTROL Impostazioni]** > **Safari** > **Blocca finestre a comparsa**, quindi fate scorrere il controllo su **[!UICONTROL Disattivato]**. Ora, quando riproducete un video interattivo e fate clic su una miniatura, viene richiesto se desiderate aprire la finestra a comparsa. Se accettate, viene visualizzata la pagina Web.
 
 ## Scoprite come creare video interattivi {#watch-how-interactive-videos-are-created}
 
@@ -77,7 +77,7 @@ Al termine dell&#39;esercitazione nell&#39;ultima sezione Esempio, la pagina Web
 
 1. **(Facoltativo) Creazione di un predefinito** per visualizzatori video interattivi - Personalizzate l’aspetto e il comportamento di vari componenti che compongono il lettore, ad esempio la barra di scorrimento video e le miniature interattive.
 
-   La creazione di un predefinito per visualizzatori video interattivi non è necessaria se intendete utilizzare i predefiniti per visualizzatori video interattivi forniti con il prodotto `Shoppable_Video_Light` o `Shoppable_Video_Dark` .
+   La creazione di un predefinito per visualizzatori video interattivi non è necessaria se intendete utilizzare i predefiniti per visualizzatori video interattivi forniti `Shoppable_Video_Light` o `Shoppable_Video_Dark` invece.
 Consultate [Creazione di un nuovo predefinito](managing-viewer-presets.md#creating-a-new-viewer-preset) per visualizzatori (facoltativo) e Considerazioni [speciali per la creazione di un predefinito](managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)per visualizzatori interattivi.
 
 1. **Caricamento di un video e delle relative risorse** immagine associate - Caricamento di un video e delle immagini associate da rendere interattive.
