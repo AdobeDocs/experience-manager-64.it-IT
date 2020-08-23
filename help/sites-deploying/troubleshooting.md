@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -48,7 +48,7 @@ L&#39;opzione dettagliata visualizza parte dell&#39;output del registro Quicksta
 
 La sezione seguente descrive alcuni problemi di installazione e le relative soluzioni.
 
-### **Se si fa doppio clic sul file JAR non si verifica alcun effetto o si apre il file JAR con un altro programma (ad esempio, archive manager){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Se si fa doppio clic sul file JAR non si verifica alcun effetto o si apre il file JAR con un altro programma (ad esempio, archive manager) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 In genere indica un problema con la configurazione dell&#39;ambiente desktop del sistema operativo per l&#39;apertura di file con estensione .jar. Potrebbe inoltre indicare che non è installato Java o che si sta utilizzando una versione non supportata di Java.
 
@@ -65,7 +65,7 @@ Per risolvere i problemi, effettuate le seguenti operazioni:
 * A volte la reinstallazione della versione Java supportata consente di ripristinare l&#39;associazione corretta.
 * È sempre possibile eseguire CRX utilizzando la riga di comando o gli script start/stop come descritto in precedenza in questo documento.
 
-### **La mia applicazione in esecuzione su CRX genera errori di memoria insufficiente{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### La mia applicazione in esecuzione su CRX genera errori di memoria insufficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Se tutto il resto non riesce, controllare i registri per scoprire cosa è succes
 
 ## Risoluzione dei problemi relativi alle installazioni con un server applicazioni {#troubleshooting-installations-with-an-application-server}
 
-### **Pagina non trovata restituita quando si richiede una pagina geometrixx-outdoor{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Pagina non trovata restituita quando si richiede una pagina geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Applicabile a WebLogic 10.3.5 e JBoss 5.1**
 
@@ -108,7 +108,7 @@ Quando una richiesta a pagina geometrixx-outdoors/en restituisce un 404 (Page No
 
 Consultate i passaggi *Implementazione AEM applicazione* Web per i dettagli.
 
-### **La dimensione dell&#39;intestazione della risposta può essere maggiore di 4 Kb{#response-header-size-can-be-greater-than-kb}**
+### La dimensione dell&#39;intestazione della risposta può essere maggiore di 4 Kb {#response-header-size-can-be-greater-than-kb}
 
 502 errori possono indicare che il server Web non è in grado di gestire le dimensioni dell&#39;intestazione AEM risposta HTTP. AEM generare intestazioni di risposta HTTP che includono cookie di dimensione maggiore di 4Kb. Accertatevi che il contenitore del servlet sia configurato in modo che la dimensione massima dell’intestazione della risposta possa superare i 4 kb.
 
@@ -126,7 +126,7 @@ Se la memorizzazione persistente è incorporata nella directory di installazione
 
 Se l&#39;installazione di AEM utilizza un archivio esterno, ad esempio un server di database, la rimozione della cartella non rimuove automaticamente i dati, ma rimuove la configurazione di storage, il che rende difficile il ripristino del contenuto JCR.
 
-### **I file JSP non sono compilati su JBoss{#jsp-files-are-not-compiled-on-jboss}**
+### I file JSP non sono compilati su JBoss {#jsp-files-are-not-compiled-on-jboss}
 
 Se installate o aggiornate i file JSP in  Experience Manager su JBoss e i servlet corrispondenti non vengono compilati, accertatevi che il compilatore JBoss JSP sia configurato correttamente. Per ulteriori informazioni, consulta la\
 [Problemi di compilazione JSP nell&#39;articolo JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
