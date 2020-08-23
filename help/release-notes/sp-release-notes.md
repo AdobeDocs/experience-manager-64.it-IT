@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '21624'
+source-wordcount: '21621'
 ht-degree: 23%
 
 ---
@@ -85,7 +85,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * L&#39;assimilazione delle risorse PSD causa il picco della CPU e l&#39;assenza di risposta &#39;istanza Author del Experience Manager (NPR-32165).
 
-* Eccezione di memoria insufficiente quando un grande file ZIP viene caricato in  DAM Experience Manager (NPR-32155).
+* Eccezione di memoria insufficiente quando un file ZIP di grandi dimensioni viene caricato in  DAM Experience Manager (NPR-32155).
 
 * Gli URL della cronologia delle versioni vengono visualizzati nel campo Con riferimento nella pagina Proprietà delle risorse (NPR-31889).
 
@@ -163,7 +163,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Document Services: Viene visualizzato un messaggio di errore durante l&#39;assemblaggio e la conversione di file XDP in file PDF (NPR-31821).
 
-* L&#39;analisi non mostra i risultati appropriati durante l&#39;invio o l&#39;abbandono dei moduli in una pagina Siti (NPR-31359).
+* L&#39;analisi non mostra i risultati appropriati all&#39;invio o all&#39;abbandono dei moduli in una pagina di Siti (NPR-31359).
 
 ### Hotfix e Feature Pack inclusi nei Service Pack precedenti {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
@@ -221,7 +221,7 @@ Se state utilizzando il pacchetto `com.day.cq.dam.handler.standard.msoffice` nel
 
 * Dopo aver creato una pagina con un componente Contenuti multimediali dinamici durante la pubblicazione dello stesso elemento, dall’istanza di creazione in esecuzione su Contenuti multimediali dinamici - Modalità di esecuzione di Scene7, all’utente viene richiesto di pubblicare la configurazione dmscene7 (NPR-30880).
 
-* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo che sono stati modificati i valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
+* Il valore del parametro &quot;asset&quot; nel codice da incorporare del visualizzatore rimane invariato dopo la modifica dei valori in &quot;Titolo dopo lo spostamento&quot; e &quot;Nome dopo lo spostamento&quot; nel campo Contenuti multimediali dinamici - Scene7 (NPR-30745).
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31306).
 
@@ -406,7 +406,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 * Publish/Unpublish from a page alias non è supportato e deve essere rimosso. NPR-30062: Hotfix per CQ-4271249
 * Avviso ResourceResolver non chiuso in ExperienceFragmentsReplicationListener che causava problemi di stabilità nel tempo, obbligando il riavvio AEM istanze. NPR-30416: Hotfix per CQ-4257521
 * Se si spostano frammenti esperienza a cui viene fatto riferimento in più di 150 pagine, il percorso del frammento non viene modificato nelle pagine a cui viene fatto riferimento. NPR-30556: Hotfix per CQ-4274900
-* Errore di analisi durante l&#39;apertura di un frammento di contenuto con caratteri dollaro ($) e parentesi graffa aperta ({) uno dopo l&#39;altro. Hotfix per CQ-4270266
+* Parsing error when opening a Content Fragment which has characters dollar (`$`) and open brace (`{`) one after another. Hotfix per CQ-4270266
 * VersionPreviewServlet non riesce in NullPointerException quando si prova a visualizzare una versione di un frammento esperienza nella timeline. NPR-30074: Hotfix per CQ-4271881
 * Impossibile bloccare i frammenti di contenuto tramite la funzione di archiviazione. NPR-29923: Hotfix per CQ-4258785
 * Errore di verifica della firma nel gestore di autenticazione SAML. NPR-30379: Richiesta di back-port per GRANITE-26567
@@ -780,7 +780,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * Quando un file CSV ha un valore separato da virgole in una singola colonna, AEM editor CSV non esce dalla virgola e la gestisce come una colonna separata. NPR-28801: Hotfix per CQ-4261694
 * Problema con l&#39;Editor schema metadati quando si utilizza il browser percorsi per selezionare i dati. NPR-28674: Hotfix per CQ-4263005
 * Troppe risorse vengono elaborate in Smart Content Service e il processo periodico di assegnazione dei tag viene completato per un periodo di tempo molto lungo. NPR-28640: Hotfix per CQ-4262661, CQ-4262644, CQ-4263234
-* Le azioni desktop non funzionano per i risultati di ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
+* Le azioni desktop non funzionano per i risultati della ricerca Omnyce dalla `aem/start.html` pagina. NPR-27242: Hotfix per CQ-4248176
 * L’API Assets non consente il caricamento di file > 2 GB, causando errori di caricamento. NPR-27629: Hotfix per GRANITE-23590
 * I metadati non vengono salvati nella risorsa scaricata nel primo tentativo nel caso in cui l&#39;elemento multimediale dinamico sia abilitato nell&#39;istanza. NPR-28233: Hotfix per CQ-4260759
 * Il risolutore del servizio non è chiuso nella configurazione del SiteCatalyst. NPR-28015: Hotfix per CQ-4259397
@@ -819,7 +819,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * La versione dei frammenti di contenuto confronta diversi miglioramenti per AEM 6.4. NPR-27764
 * Se nel modello di frammento esperienza non è definito alcun cq:allowTemplates su /content/experience-fragments e allowPaths, viene generato un errore quando il frammento esperienza viene spostato/copiato. NPR-27487: Hotfix per CQ-4257489
 * Il pulsante Crea viene visualizzato all’aggiornamento per il nuovo utente. NPR-27335: Hotfix per CQ-4255360
-* Durante il tentativo di spostare una pagina pubblicata, il conteggio &quot;Pagine di riferimento&quot; visualizzato nella prima pagina della procedura guidata &quot;Sposta pagina&quot; non è corretto. NPR-28111: Hotfix per CQ-4259663
+* Durante il tentativo di spostare una pagina pubblicata, il conteggio &quot;Riferimenti alle pagine&quot; visualizzato nella prima pagina della procedura guidata &quot;Sposta pagina&quot; non è corretto. NPR-28111: Hotfix per CQ-4259663
 * (Interfaccia touch) La barra laterale Riferimenti non mostra i collegamenti in entrata. NPR-28529: Hotfix per CQ-4262306
 * Impossibile modificare le proprietà dei componenti e della pagina dopo l’installazione di AEM 6.4.3. NPR-27998: Hotfix per CQ-4261216, CQ-4260441
 * Migra contexthub a jquery 3. NPR-28397: Hotfix per GRANITE-19902
@@ -1210,7 +1210,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 
 **Integrazione con il back-end**
 
-* Impossibile compilare le mappature dei modelli di dati del modulo basate su entità dinamiche nella risposta SOAP. NPR-26428: Hotfix per CQ-4250639
+* Impossibile compilare le mappature del modello dati del modulo basate su entità dinamiche nella risposta SOAP. NPR-26428: Hotfix per CQ-4250639
 * Il valore per _elementNamespace nel modello dati del modulo dati aggiuntivi, immesso utilizzando l&#39;interfaccia utente di prova, non viene riflesso correttamente nella richiesta SOAP. Hotfix per CQ-4255373
 * Un vincolo di proprietà nullable viene inizializzato con un valore predefinito e non può essere sincronizzato con FDM. Hotfix per CQ-4253873
 * Il valore predefinito per la proprietà nullable non è impostato su True per l&#39;origine dati OData. Hotfix per CQ-4253870
@@ -1559,7 +1559,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 
 **Pacchetto di componenti aggiuntivi per Forms**
 
-**Reporting transazione**
+**Report transazione**
 
 * Aggiornare la configurazione di Report transazione con l&#39;importanza della replica inversa configurata su un server di pubblicazione. NPR-26050: Hotfix per CQ-4246650
 * Inizializzazione ritardata del processo di scaricamento periodico. NPR-25968: Hotfix per CQ-4245024
@@ -1860,7 +1860,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni degli elementi di rilie
 * (DMS7) La modifica dei set remoti in AEM non viene sovrascritta in Scene7. Hotfix per CQ-4243430
 * Verifica della build 6.4 SP1 su DM Hybrid. Hotfix per CQ-4244623
 * (DMS7-UA) Quando fate clic sul pulsante Incorpora per una risorsa video pubblicata, non viene visualizzato nulla. La finestra di dialogo Incorpora deve essere visualizzata con codice HTML. Hotfix per CQ-4245237
-* (DM ibrido) Copia URL per risorse video pubblicate o set di file multimediali diversi ottiene &quot;[oggetto[]oggetto&quot; nella finestra di dialogo URL. Hotfix per CQ-4245236, CQ-4245451
+* (DM ibrido) La funzione Copia URL per risorse video pubblicate o set di file multimediali diversi ottiene`[object Object]`&quot; nella finestra di dialogo URL. Hotfix per CQ-4245236, CQ-4245451
 * (DMHybrid) La pagina Visualizzazione dettagli video non contiene l’anteprima della visualizzazione della risorsa video e invia un messaggio di errore alla console. Hotfix per CQ-4244320
 * Codifica automatica S7 del contenuto We.retail. Hotfix per CQ-4242253
 * I predefiniti di elaborazione video pre-aggiornamento non possono presentare un nuovo predefinito di codifica video aggiunto né modificare i predefiniti di codifica esistenti. Hotfix per CQ-4240407
@@ -2148,7 +2148,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 Per determinare la piattaforma certificata da eseguire con questa release di  AEM Sites e Assets, consulta Requisiti [](../sites-deploying/technical-requirements.md)tecnici.
 
->[!Note]
+>[!NOTE]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Aggiornamento dei visualizzatori per contenuti multimediali dinamici (5.10.1) {#update-dynamic-media-viewers}
