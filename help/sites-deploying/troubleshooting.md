@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Questo genera un file di dump dell&#39;heap (**java_...hprof**) ogni volta che il processo non dispone di memoria sufficiente. Il processo può continuare a essere eseguito dopo la generazione del dump dell&#39;heap. Solitamente, un file di dump heap è sufficiente per analizzare il problema.
 
-### **La schermata di benvenuto di AEM non viene visualizzata nel browser quando si fa doppio clic su AEM Quickstart{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### La schermata di benvenuto di AEM non viene visualizzata nel browser quando si fa doppio clic su AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 In alcune situazioni, le schermate di benvenuto AEM WCM non vengono visualizzate automaticamente anche se l&#39;archivio stesso è in esecuzione correttamente. Ciò può dipendere dalla configurazione del sistema operativo, dalla configurazione del browser o da fattori simili.
 
