@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
@@ -41,7 +41,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!NOTE]
 >
->AEM 6.4.5.0 o versione successiva è richiesto per utilizzare modelli modificabili con l&#39;editor [](/help/sites-developing/spa-overview.md)SPA.
+>AEM 6.4.5.0 o versione successiva è richiesto per utilizzare modelli modificabili con [SPA Editor](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
-   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Ad esempio:
+   Il percorso può essere esplicito o utilizzare schemi ricorrenti. Esempio:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
@@ -316,7 +316,7 @@ Quando si crea o si modifica un modello, è possibile definire vari aspetti. La 
 
 * [Layout](#editing-a-template-layout-template-author)
 
-   Qui è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**per la creazione delle pagine].
+   Qui è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità **[Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** per la creazione delle pagine.
 
 * [Criteri di pagina](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ In modalità **Struttura** dell’Editor modelli:
 
    >[!NOTE]
    >
-   >Se vengono aggiunti come contenuto iniziale più componenti dello stesso tipo, lo stesso criterio si applica a tutti i componenti. Questo riflette la stessa restrizione nella **[Modalità Progettazione](/help/sites-authoring/default-components-designmode.md)**per i modelli statici.
+   >Se vengono aggiunti come contenuto iniziale più componenti dello stesso tipo, lo stesso criterio si applica a tutti i componenti. Questo riflette la stessa restrizione nella **[Modalità Progettazione](/help/sites-authoring/default-components-designmode.md)** per i modelli statici.
 
    ***Proprietà***
 
