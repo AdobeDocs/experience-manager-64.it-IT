@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 74%
+source-wordcount: '705'
+ht-degree: 75%
 
 ---
 
@@ -50,8 +50,8 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
    Vedi [Visualizzazione delle risorse 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. Da **Adobe Experience Manager**, nella pagina di **[!UICONTROL navigazione]**, tocca **[!UICONTROL Risorse]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Passa all’oggetto 3D che desideri renderizzare.
 
 1. Tocca la scheda dell&#39;oggetto 3D per aprirla nella pagina dei dettagli della risorsa.
