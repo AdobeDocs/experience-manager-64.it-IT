@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '7876'
 ht-degree: 0%
@@ -715,7 +715,7 @@ Se gli attributi non identificano una didascalia, è possibile identificare un e
 Tenete presenti i seguenti problemi:
 
 * Microsoft Spy++ visualizza le didascalie utilizzando una e commerciale (&amp;) per identificare il tasto di scelta rapida della didascalia. Ad esempio, Spy++ mostra come `Pri&nt`la didascalia di una finestra di dialogo Stampa, che indica che il tasto di scelta rapida è *n*. I titoli dei sottotitoli nei file XML di script e di dialogo devono omettere le commerciale.
-* Alcune didascalie includono le interruzioni di riga. il servizio Genera PDF non è in grado di identificare le interruzioni di riga. Se una didascalia include un&#39;interruzione di riga, includete una porzione sufficiente della didascalia per distinguerla dalle altre voci di menu, quindi utilizzate le espressioni regolari per la parte omessa. Un esempio è ( `^Long caption title$`).]. Consultate [Utilizzo di espressioni regolari negli attributi](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)delle didascalie.
+* Alcune didascalie includono le interruzioni di riga. il servizio Genera PDF non è in grado di identificare le interruzioni di riga. Se una didascalia include un&#39;interruzione di riga, includete una porzione sufficiente della didascalia per distinguerla dalle altre voci di menu, quindi utilizzate le espressioni regolari per la parte omessa. Un esempio è ( `^Long caption title$`). Consultate [Utilizzo di espressioni regolari negli attributi](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)delle didascalie.
 * Utilizzare entità carattere (o sequenze di escape) per caratteri XML riservati. Ad esempio, utilizzare `&` per le ampersands, `<` e `>` per i simboli minore o maggiore di, `&apos;` per gli apostrofi e `&quot;` per le virgolette.
 
 Se intendete lavorare su file di dialogo o script XML, installate l&#39;applicazione Microsoft Spy++.
