@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2831'
 ht-degree: 2%
 
 ---
@@ -108,7 +108,7 @@ La divisione **[!UICONTROL AND (AND Split]** ) crea una divisione nel flusso di 
 
 Un passaggio **[!UICONTROL Contenitore]** avvia un altro modello di flusso di lavoro che viene eseguito come flusso di lavoro secondario.
 
-Questo **[!UICONTROL Contenitore]]**consente di riutilizzare i modelli di workflow per implementare le sequenze di passaggi più comuni. Ad esempio, un modello di flusso di lavoro di traduzione potrebbe essere utilizzato in più flussi di lavoro di modifica.
+Questo **[!UICONTROL contenitore]** consente di riutilizzare i modelli di flussi di lavoro per implementare le sequenze di passaggi più comuni. Ad esempio, un modello di flusso di lavoro di traduzione potrebbe essere utilizzato in più flussi di lavoro di modifica.
 
 ![wf-28](assets/wf-28.png)
 
@@ -138,7 +138,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 * [**[!UICONTROL Comune]**](#step-properties-common-tab)
 * **[!UICONTROL Processo]**
 
-   * **[!UICONTROL Il passaggio a cui andare]]**: Selezionare il passaggio da eseguire.
+   * **[!UICONTROL Il passaggio a cui andare]**: Selezionare il passaggio da eseguire.
    * **[!UICONTROL Percorso]** script: Percorso di ECMAScript che determina se eseguire il **[!UICONTROL passaggio]** Goto.
    * **[!UICONTROL Script]**: ECMAScript che determina se eseguire il **[!UICONTROL passaggio]** Goto.
 
@@ -268,7 +268,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 * [**[!UICONTROL Utente/Gruppo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Finestra di dialogo]**
 
-   * **[!UICONTROL Percorso** della finestra di dialogo: Percorso del nodo del dialogo della [finestra di dialogo creata](#dialog-participant-step-creating-a-dialog).
+   * **Percorso[!UICONTROL finestra di dialogo**]: Percorso del nodo del dialogo della [finestra di dialogo creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 
 #### Passaggio partecipante dinamico - Sviluppo del selettore partecipante {#dynamic-participant-step-developing-the-participant-chooser}
 
-Potete creare il selettore partecipanti. Pertanto, potete utilizzare qualsiasi logica o criterio di selezione. Ad esempio, il selettore partecipanti può selezionare l&#39;utente (all&#39;interno di un gruppo) con il minor numero di elementi di lavoro. Potete creare un numero qualsiasi di partecipanti che scelgono di utilizzare con istanze diverse del componente Passo **partecipante *dinamico]*nei modelli di flusso di lavoro.
+Potete creare il selettore partecipanti. Pertanto, potete utilizzare qualsiasi logica o criterio di selezione. Ad esempio, il selettore partecipanti può selezionare l&#39;utente (all&#39;interno di un gruppo) con il minor numero di elementi di lavoro. Potete creare un numero qualsiasi di partecipanti che scelgono di utilizzare con istanze diverse del componente Passaggio **partecipante** dinamico nei modelli di flusso di lavoro.
 
 Creare un servizio OSGi o un codice ECMAScript che selezioni un utente a cui assegnare l’elemento di lavoro.
 
@@ -514,11 +514,11 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
 * [**[!UICONTROL Utente/Gruppo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Modulo]**
 
-   * **[!Percorso** modulo UICONTROL: Percorso del [modulo creato](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Percorso]** modulo: Percorso del [modulo creato](#form-participant-step-creating-the-form).
 
 #### Passaggio partecipante modulo - Creazione del modulo {#form-participant-step-creating-the-form}
 
-Creare un modulo da utilizzare normalmente con un passaggio partecipante **[!UICONTROL modulo]** . Tuttavia, i moduli per un passaggio partecipante a un modulo devono avere le seguenti configurazioni:
+Creare un modulo da utilizzare normalmente con un passaggio partecipante **[!UICONTROL modulo]** . Tuttavia, i moduli per un Passaggio partecipante modulo devono avere le seguenti configurazioni:
 
 * Il componente **[!UICONTROL Inizio modulo]** deve avere la proprietà Tipo **** azione impostata su `Edit Workflow Controlled Resource(s)`.
 
@@ -583,7 +583,7 @@ Per configurare il passaggio, modificate e utilizzate le seguenti schede:
    * **[!UICONTROL Processo]**: L&#39;implementazione del processo da eseguire. Utilizzate il menu a discesa per selezionare il servizio ECMAScript o OSGi. Per informazioni su:
 
       * I servizi standard ECMAScripts e OSGi, consultate Processi [predefiniti per i passaggi](/help/sites-developing/workflows-process-ref.md)di processo.
-      * Creazione di ECMAScripti per un passaggio **[!UICONTROL Processo]** , vedere [Implementazione di un passo Processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * Creazione di script ECMAS per un passaggio **[!UICONTROL Processo]** , vedere [Implementazione di un passaggio del processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creazione di servizi OSGi per un passaggio **[!UICONTROL di processo]** , vedere [Implementazione di un passaggio di processo con una classe](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)Java.
    * **[!UICONTROL Avanzamento]** gestore: Selezionate questa opzione per avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non è selezionato, lo script di implementazione deve gestire l&#39;avanzamento del flusso di lavoro.
    * **[!UICONTROL Argomenti]**: Argomenti da passare al processo.
