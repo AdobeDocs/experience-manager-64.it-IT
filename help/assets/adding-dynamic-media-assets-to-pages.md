@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 34%
 
 ---
@@ -213,7 +213,7 @@ Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini,
 * **[!UICONTROL URL, Apri in]**Potete impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Height** and **[!UICONTROL Width]** Immettere il valore in pixel se si desidera che l&#39;immagine di ritaglio avanzato sia a dimensione fissa. Se questi valori vengono lasciati vuoti, la risorsa sarà adattiva.
+* **[!UICONTROL Altezza]** e **[!UICONTROL larghezza]** Immettere il valore in pixel se si desidera che l&#39;immagine di ritaglio avanzato sia a dimensione fissa. Se questi valori vengono lasciati vuoti, la risorsa sarà adattiva.
 
 ### Interactive Media component {#interactive-media-component}
 
