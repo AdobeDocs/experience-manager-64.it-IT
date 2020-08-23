@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 55%
 
 ---
@@ -150,7 +150,7 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 >
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
-1. In AEM, toccate **[!UICONTROL Tools > Configuration Console**.
+1. In AEM, toccate **[!UICONTROL Strumenti]> Console[!UICONTROL di]** configurazione.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. Crea un nuovo profilo video S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
 
