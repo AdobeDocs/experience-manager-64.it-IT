@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1838'
 ht-degree: 7%
 
 ---
@@ -110,7 +110,7 @@ I set di batch vengono creati dall’IPS (Image Production System) come parte de
 
 **Per creare dei set 360 gradi:**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set**. Puoi anche creare il set dall’interno di una cartella contenente le risorse.
+1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
