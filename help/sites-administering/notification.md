@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Per configurare l’indirizzo e-mail, aggiungete un `sling:OsgiConfig` nodo alla
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` di tipo `sling:OsgiConfig`
 
-1. Aggiungi una `String` proprietà al nodo] denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
+1. Aggiungere una `String` proprietà al nodo denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
 
 1. Fate clic su **Salva tutto**.
 
@@ -147,7 +147,7 @@ Dove &lt;text_x> può essere un mix di testo statico e variabili di stringa dina
 
    &lt;tipo evento pagina> => &lt;percorso pagina>
 
-   Ad esempio:
+   Esempio:
 
    PageModified => /content/geometrixx/en/products
 
