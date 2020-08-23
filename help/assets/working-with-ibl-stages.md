@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 56%
 
 ---
@@ -31,11 +31,11 @@ Attualmente, AEM 3D supporta soltanto i TIFF a 32 bit. Se necessario, utilizza A
 * **[!UICONTROL Profondità]** bit - 32 bit (mobile)
 * **[!UICONTROL Ordine]** pixel - Interleaved (RGBRGB)
 * **[!UICONTROL Compressione]** immagine - LZW
-* **[!UICONTROL ordine** byte - PC IBM
+* **[!UICONTROL Ordine]** byte - PC IBM
 
 Mentre una singola immagine HDR è spesso sufficiente per le aree di visualizzazione IBL, AEM 3D fornisce un controllo aggiuntivo sugli effetti IBL che consente fino a tre immagini distinte:
 
-* **Immagine** ambiente di illuminazione diffusa - Questo tipo di immagine deve essere un&#39;immagine HDR, ma può essere relativamente piccola, in quanto l&#39;immagine verrà filtrata pesantemente prima di essere utilizzata per l&#39;illuminazione diffusa.
+* **Immagine** ambiente di illuminazione diffusa - Questo tipo di immagine deve essere un&#39;immagine HDR, ma può essere relativamente piccola, poiché l&#39;immagine verrà filtrata pesantemente prima di essere utilizzata per l&#39;illuminazione diffusa.
 * **Immagine** ambiente di riflessione - Questo tipo di immagine viene usato per creare riflessi nelle superfici degli oggetti. Può essere un’immagine RGB standard a 8 bit, di dimensioni e risoluzione tali da fornire la qualità e la nitidezza desiderate per i riflessi. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit prima di utilizzare un algoritmo proprietario.
 * **Immagine** ambiente di sfondo - Questo tipo di immagine viene usato come sfondo. Può essere un’immagine RGB standard a 8 bit e dovrebbe avere dimensioni, risoluzione e livello di dettagli appropriati per lo sfondo dell’area di visualizzazione. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit utilizzando un algoritmo proprietario.
 
@@ -83,7 +83,7 @@ Le fasi IBL utilizzano immagini di sfondo sferiche con un diametro di 20 metri p
 
 **Per aumentare il diametro dello sfondo sferico di uno stadio** IBL:
 
-1. In CRXDE Lite, andate all’area di visualizzazione di cui desiderate aumentare il diametro di sfondo sferico. Ad esempio,
+1. In CRXDE Lite, andate all’area di visualizzazione di cui desiderate aumentare il diametro di sfondo sferico. Esempio,
 
    `/content/dam/test3d/stage-helipad.fbx`
 
