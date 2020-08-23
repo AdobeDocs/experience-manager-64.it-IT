@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '739'
 ht-degree: 22%
 
 ---
@@ -38,7 +38,7 @@ Utilizzate il selettore Prodotto per scegliere un prodotto quando desiderate un 
 
 1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
