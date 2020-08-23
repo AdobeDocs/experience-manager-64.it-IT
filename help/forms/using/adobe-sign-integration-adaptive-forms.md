@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -40,10 +40,10 @@ Per integrare  Adobe Sign con  AEM Forms è necessario disporre dei seguenti req
 
 Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  Adobe Sign con  AEM Forms nell’istanza Author:
 
-1. ’istanza di creazione di AEM Forms, andate a **[!UICONTROL Strumenti **![a martello](assets/hammer.png)>**Generale **>**Browser]**di configurazione.
+1. ’istanza di creazione di AEM Forms, selezionate **[!UICONTROL Strumenti** ![martello](assets/hammer.png) > **Generale** > **Browser]** di configurazione.
 1. Nella pagina del browser **[!UICONTROL di]** configurazione, toccate **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un **[!UICONTROL titolo]** per la configurazione, abilitate le configurazioni **** Cloud e toccate **[!UICONTROL Crea]**. Crea un contenitore di configurazione per i servizi cloud.
-1. Accedete a **[!UICONTROL Strumenti **![martello](assets/hammer.png)>**Cloud Services **>**Adobe Sign]**e selezionate il contenitore di configurazione creato nel passaggio precedente.
+1. Accedete a **[!UICONTROL Strumenti** ![martello](assets/hammer.png) > **Cloud Services** > **Adobe Sign]** e selezionate il contenitore di configurazione creato nel passaggio precedente.
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  A
 
    ![Configurazione OAuth](assets/oauth_config.png)
 
-1. Tornate alla pagina **[!UICONTROL Crea configurazione]** Adobe Sign . Nella scheda **[!UICONTROL Impostazioni]** , il campo URL **!UICONTROL OAuth]**fa riferimento al seguente URL predefinito:
+1. Tornate alla pagina **[!UICONTROL Crea configurazione]** Adobe Sign . Nella scheda **[!UICONTROL Impostazioni]** , il campo URL **** OAuth fa riferimento al seguente URL predefinito:
 
    `https://secure.na1.echosign.com/public/oauth`
 
