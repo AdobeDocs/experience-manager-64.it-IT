@@ -3,9 +3,9 @@ title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 13%
 
 ---
@@ -292,6 +292,6 @@ Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content d
 >
 >Se una risorsa viene aggiunta dopo il controllo pianificato, non viene segnalata `hasValidMetadata` fino al controllo pianificato successivo. Le risorse non vengono visualizzate nei risultati di ricerca intermedi.
 
->[!Caution]
+>[!CAUTION]
 >
 >I controlli di convalida dei metadati richiedono molte risorse e possono avere un impatto sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se la distribuzione AEM presenta problemi di prestazioni, provate a disattivare questo processo.
