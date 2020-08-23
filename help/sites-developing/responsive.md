@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5341'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Per informazioni sull’implementazione di comportamenti di progettazione reatti
 * [Griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Immagini adattive](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Durante la progettazione, usate la barra **!UICONTROL laterale]**per visualizzare in anteprima le pagine per diverse dimensioni di schermo.
+Durante la progettazione, usate la barra **[!UICONTROL laterale]** per visualizzare in anteprima le pagine per diverse dimensioni di schermo.
 
 ## Prima di sviluppare {#before-you-develop}
 
@@ -290,7 +290,7 @@ In una pagina AEM, il valore dell&#39; `data-src` attributo è il percorso di un
 
 ### Implementazione di immagini adattive in AEM {#implementing-adaptive-images-in-aem}
 
-Per implementare le immagini adattive nell&#39;applicazione AEM, dovete aggiungere le librerie javascript necessarie e includere nelle pagine il codice HTML richiesto.
+Per implementare le immagini adattive nell&#39;applicazione AEM, è necessario aggiungere le librerie javascript necessarie e includere nelle pagine il codice HTML richiesto.
 
 **Librerie**
 
@@ -351,7 +351,7 @@ Quando il browser carica la pagina, richiede l’immagine utilizzando il valore 
 * Selettore: `img`
 * Suffisso: `1358372073597.jpg`
 
-Il `image_0` nodo ha un `jcr:resourceType` valore di `foundation/components/image`, che ha `sling:resourceSuperType` un valore di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e all’estensione del nome file dell’URL della richiesta. CQ utilizza questo script (servlet) per eseguire il rendering dell’immagine.
+Il `image_0` nodo ha un `jcr:resourceType` valore di `foundation/components/image`, che ha `sling:resourceSuperType` un valore di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e all’estensione del nome del file dell’URL della richiesta. CQ utilizza questo script (servlet) per eseguire il rendering dell’immagine.
 
 Per visualizzare il codice sorgente dello script, utilizzare CRXDE Lite per aprire il `/libs/foundation/components/parbase/img.GET.java`\
 file.
@@ -475,7 +475,7 @@ I valori numerici sono rispettivamente 0,4, 0,82 e 1,0.
 
 **Modifica delle larghezze supportate predefinite**
 
-Utilizzate la console Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate dal Servlet  componente immagine adattiva di Adobe CQ.
+Utilizzate la console Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig per configurare le larghezze supportate dal  Adobe CQ Adaptive Image Component Servlet.
 
 Per informazioni su come configurare AEM servizi, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -897,7 +897,7 @@ Creare classi e stili CSS per controllare il layout dei blocchi di contenuto su 
 * Una classe per `div` gli elementi che rappresentano una riga. Questa classe controlla il posizionamento orizzontale o verticale dei blocchi di contenuto in essa contenuti.
 * Classi per `div` gli elementi che rappresentano blocchi di contenuto di diverse larghezze. Le larghezze sono espresse come percentuale della riga padre.
 
-Le larghezze delle viste di destinazione (e le relative query multimediali associate) delimitano le larghezze discrete utilizzate per un layout di pagina.
+Le larghezze delle finestre di destinazione (e le relative query multimediali associate) delimitano le larghezze discrete utilizzate per un layout di pagina.
 
 #### Ampiezza dei blocchi di contenuto {#widths-of-content-blocks}
 
