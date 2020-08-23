@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -109,11 +109,11 @@ Quando l&#39;opzione Contenuto iniziale è selezionata, il contenitore modulo ad
 
 Gli autori dei moduli la utilizzano come base per creare un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di visualizzare l&#39;anteprima nella barra degli strumenti della pagina, toccare ![canvas-menu a discesa](assets/canvas-drop-down.png)**[!UICONTROL > Contenuto ]**iniziale.
 
-    [ ![Livello contenuto iniziale nell&#39;Editor modelli](assets/initial-content-layer.png)
+![Livello contenuto iniziale nell&#39;Editor modelli](assets/initial-content-layer.png)
 
 Livello contenuto iniziale nell&#39;Editor modelli che mostra il contenitore modulo adattivo selezionato per specificare le proprietà.
 
-](assets/initial-content-layer-1.png) Nel livello Contenuto iniziale, è possibile creare il modello di modulo adattivo utilizzato dagli autori come base. L’authoring di un modello è simile all’authoring di un modulo e le opzioni sono disponibili nella barra laterale. La barra laterale fornisce browser di contenuti, proprietà, risorse e componenti.
+Nel livello Contenuto iniziale, è possibile creare il modello di modulo adattivo utilizzato dagli autori come base. L’authoring di un modello è simile all’authoring di un modulo e le opzioni sono disponibili nella barra laterale. La barra laterale fornisce browser di contenuti, proprietà, risorse e componenti.
 
 Consultate [Barra laterale](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -141,11 +141,11 @@ Per creare le schede Informazioni generali e Informazioni professionali, aggiung
 
 #### Aggiunta di contenuto alle schede {#adding-content-in-tabs}
 
-    [ ![Aggiunta di campi nel modello di modulo adattivo](assets/template-edit-initial-content.png)
+![Aggiunta di campi nel modello di modulo adattivo](assets/template-edit-initial-content.png)
 
 Aggiunta di campi nel modello
 
-](assets/template-edit-initial-content-1.png) Dopo aver aggiunto i pannelli e averli strutturati come schede, è possibile aggiungere campi all&#39;interno delle schede. Quando selezionate una scheda nell’editor, potete visualizzare l’opzione **[!UICONTROL Trascinate qui]** i componenti. È possibile trascinare componenti come caselle di testo, elementi elenco e pulsanti. Puoi trascinare componenti dal browser Componenti nella barra laterale.
+Dopo aver aggiunto i pannelli e averli strutturati come schede, potete aggiungere campi all’interno delle schede. Quando selezionate una scheda nell’editor, potete visualizzare l’opzione **[!UICONTROL Trascinate qui]** i componenti. È possibile trascinare componenti come caselle di testo, elementi elenco e pulsanti. Puoi trascinare componenti dal browser Componenti nella barra laterale.
 
 Ciascun componente dispone di proprietà che migliorano l’acquisizione e la manipolazione dei dati. Ad esempio, è possibile abilitare la proprietà Campo **** obbligatorio di un componente. Gli autori possono specificare un messaggio che i clienti potranno visualizzare quando saltano la compilazione di un campo obbligatorio. Specificate il messaggio nella proprietà Messaggio **[!UICONTROL campo]** obbligatorio.
 
