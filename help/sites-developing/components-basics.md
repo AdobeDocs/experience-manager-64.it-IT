@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Per questo motivo descriveremo le basi di entrambi, e come riconoscerli, in ques
 
 >[!NOTE]
 >
-> Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Strumenti di modernizzazione&amp;(modernation-tools.md) può facilitare la migrazione.
+> Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Strumenti](modernization-tools.md) di modernizzazione possono facilitare la migrazione.
 
 ### Logica dei contenuti e marcatura del rendering  {#content-logic-and-rendering-markup}
 
@@ -190,7 +190,7 @@ La definizione di un componente può essere ripartita come segue:
 * **Proprietà** vitali:
 
    * `jcr:title` - Titolo componente; ad esempio, utilizzato come etichetta quando il componente è elencato nel browser o nella barra laterale dei componenti.
-   * `jcr:description` - Descrizione del componente; può essere utilizzato come hint per il passaggio del mouse nel browser Componenti o nella barra laterale.
+   * `jcr:description` - Descrizione del componente; può essere utilizzato come hint di posizionamento del mouse nel browser o nella barra laterale dei componenti.
    * Interfaccia classica:
 
       * `icon.png` - Icona per questo componente.
