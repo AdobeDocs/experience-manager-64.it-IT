@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -83,8 +83,7 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 #### 2. Creare una raccolta {#create-a-collection}
 
 Riferimento:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilizzo:\
 ./bin/solr create \\
@@ -252,7 +251,7 @@ Istruzioni di installazione - notare alcune differenze per Solr4 e Solr5:
       * Per Solr4: Copia *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
       * Per Solr5: Copia *solr-install-dir*/server/solr/configsets/data_Driv_schema_configs/&amp;ast;
    1. Copiate **schema.xml** e **solrconfig.xml** estratti in *new-config-dir* per sovrascrivere i file esistenti
-   1. Per Solr5: Copiare *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot; in *new-config-dir*/lang/
+   1. Per Solr5: Copiare *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/lang/&amp;ast;.txt&quot; in *new-config-dir*/lang/
    1. Copiate le **parole** di arresto/cartella estratte in *new-config-dir* , con conseguente *nuova-config-dir*/stopwords/&amp;ast;.txt
 
 
