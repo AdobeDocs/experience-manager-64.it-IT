@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,9 @@ La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per
 
 Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l&#39;interfaccia [!DNL Assets] Web e l&#39;API HTTP. L&#39;API restituisce un messaggio di errore 404 se l&#39;ora [!UICONTROL di] attivazione è futura o [!UICONTROL Ora] di disattivazione è passata.
 
+>[!CAUTION]
+>
+>[L&#39;API HTTP aggiorna le proprietà](#update-asset-metadata) dei metadati nello `jcr` spazio dei nomi. Tuttavia, l&#39;interfaccia utente del Experience Manager  aggiorna le proprietà dei metadati nello `dc` spazio dei nomi.
 
 ## Dati, modello {#data-model}
 
@@ -66,17 +69,17 @@ In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
 L&#39;API HTTP Assets include le seguenti funzionalità:
 
-* Recuperate un elenco di cartelle.
-* Creare una cartella.
-* Creare una risorsa.
-* Aggiorna binario risorsa.
-* Aggiornare i metadati delle risorse.
-* Creare una rappresentazione di una risorsa.
-* Aggiornare una rappresentazione di una risorsa.
-* Create un commento sulla risorsa.
-* Copiate una cartella o una risorsa.
-* Spostate una cartella o una risorsa.
-* Eliminate una cartella, una risorsa o una rappresentazione.
+* [Recuperate un elenco](#retrieve-a-folder-listing)di cartelle.
+* [Creare una cartella](#create-a-folder).
+* [Creare una risorsa](#create-an-asset).
+* [Aggiorna binario](#update-asset-binary)risorse.
+* [Aggiornare i metadati](#update-asset-metadata)delle risorse.
+* [Creare una rappresentazione](#create-an-asset-rendition)di una risorsa.
+* [Aggiornare una rappresentazione](#update-an-asset-rendition)di una risorsa.
+* [Create un commento](#create-an-asset-comment)sulla risorsa.
+* [Copiate una cartella o una risorsa](#copy-a-folder-or-asset).
+* [Spostate una cartella o una risorsa](#move-a-folder-or-asset).
+* [Eliminate una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -102,7 +105,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: La classe dell&#39;entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;intero insieme di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell&#39;entità, i clienti devono recuperare il contenuto dell&#39;URL indicato dal collegamento con un `rel` di `self`.
 
-## Creare una cartella {#create-a-folder}
+## Crea una cartella . {#create-a-folder}
 
 Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito un nome di nodo al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome del nodo. Accettato come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 
@@ -157,7 +160,7 @@ Aggiorna il binario di una risorsa (rappresentazione con nome originale). Un agg
 
 Aggiorna le proprietà dei metadati della risorsa. Se aggiornate una qualsiasi proprietà nello `dc:` spazio dei nomi, l&#39;API aggiorna la stessa proprietà nello `jcr` spazio dei nomi. L&#39;API non sincronizza le proprietà sotto i due spazi dei nomi.
 
-**Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Codici** di risposta: I codici di risposta sono:
 
@@ -165,6 +168,27 @@ Aggiorna le proprietà dei metadati della risorsa. Se aggiornate una qualsiasi p
 * 404 - NON TROVATO - se la risorsa non è stata trovata o a cui non è stato possibile accedere all&#39;URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
 * 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro va storto.
+
+### Sincronizzare l&#39;aggiornamento dei metadati tra `dc` `jcr` e lo spazio dei nomi {#sync-metadata-between-namespaces}
+
+Il metodo API aggiorna le proprietà dei metadati nello `jcr` spazio dei nomi. Gli aggiornamenti effettuati utilizzando l&#39;interfaccia touch modificano le proprietà dei metadati nello `dc` spazio dei nomi. Per sincronizzare i valori dei metadati tra `dc` e lo `jcr` spazio dei nomi, potete creare un flusso di lavoro e configurare  Experience Manager in modo da eseguire il flusso di lavoro dopo la modifica della risorsa. Utilizzate uno script ECMA per sincronizzare le proprietà di metadati richieste. Lo script di esempio seguente sincronizza la stringa del titolo tra `dc:title` e `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Creare una rappresentazione di una risorsa {#create-an-asset-rendition}
 
