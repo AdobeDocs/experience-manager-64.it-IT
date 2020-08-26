@@ -1,6 +1,9 @@
 ---
-source-git-commit: 56d3b9ccfa274ffb6305317bfe262060555b46a0
+source-git-commit: 02ba51316b01c8e96a96735b95c60164df3a48ea
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 # Documentazione di Adobe Experience Manager 6.4
@@ -12,4 +15,3 @@ I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse se
 * [contribute.md](contributing.md) Per una panoramica di come contribuire alla documentazione.
 * [guidelines.md](guidelines.md) Per una panoramica di quanto ci si aspetta dai contributi e come comporre i contributi della documentazione.
 * [code-of-Conduct.md](code-of-conduct.md) Per una panoramica degli standard di comportamento che ci aspettiamo quando contribuisci a questo progetto di documentazione.
-
