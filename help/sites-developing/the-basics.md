@@ -1,5 +1,5 @@
 ---
-title: Concetti AEM base
+title: Concetti di base AEM
 seo-title: Nozioni di base
 description: Una panoramica dei concetti chiave di come AEM è strutturato e come svilupparsi oltre a esso, tra cui la comprensione di JCR, Sling, OSGi, dispatcher, flussi di lavoro e MSM
 seo-description: Una panoramica dei concetti chiave di come AEM è strutturato e come svilupparsi oltre a esso, tra cui la comprensione di JCR, Sling, OSGi, dispatcher, flussi di lavoro e MSM
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Concetti AEM base {#aem-core-concepts}
+# Concetti di base AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Il super tipo di risorsa può essere definito in due modi:
 * dalla `sling:resourceSuperType` proprietà della risorsa.
 * dalla `sling:resourceSuperType` proprietà del nodo a cui `sling:resourceType` punta.
 
-Ad esempio:
+Esempio:
 
 * /
 
