@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 0%
@@ -28,11 +28,11 @@ Il codice sorgente dell&#39;app AEM Forms  è disponibile per i clienti tramite 
 
  app AEM Forms è supportata sui dispositivi iOS, Android e Windows. Puoi installare  app AEM Forms per Android da Google Play, iOS da App Store e Windows da Windows Store.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Per installare, personalizzare e distribuire l&#39;app sui dispositivi iOS, Android o Windows, consultate [Personalizzare, creare e distribuire l&#39;app](#customize-build-distribute)AEM Forms .
 
@@ -163,7 +163,7 @@ Con i formati, è possibile raggruppare più moduli relativi a un servizio o a u
 
 &#39;app AEM Forms è facile da personalizzare in base alle esigenze specifiche dell&#39;organizzazione. Il codice sorgente per l’applicazione viene fornito insieme  AEM Forms. Puoi cambiare il codice sorgente e creare una tua soluzione per la forza lavoro mobile. Potete inoltre firmare l&#39;app con la vostra chiave enterprise.
 
-### Personalizza {#customize}
+### Personalizzazione {#customize}
 
 Potete personalizzare l&#39;app per:
 
@@ -217,7 +217,7 @@ Per informazioni dettagliate su come creare un&#39;app Windows (.appx), consulta
 
 Per informazioni dettagliate su come distribuire l&#39;app tramite MDM, consultate [Distribuire  app](/help/forms/using/distribute-mobile-workspace-app.md)AEM Forms. La distribuzione delle app tramite MDM è applicabile solo per iOS e Android.
 
-## Recommendations per aggiornare Mobile Workspace a  app AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
+## Recommendations per aggiornare Mobile Workspace all&#39;app AEM Forms  {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
 
 Se state effettuando l&#39;aggiornamento alla versione più recente &#39;app AEM Forms, accertatevi di leggere i punti seguenti:
 
