@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '611'
+ht-degree: 4%
 
 ---
 
@@ -33,9 +33,10 @@ Il primo passaggio consiste nell&#39;aggiungere al `/apps/an-scf-sandbox/compone
 Utilizzo del CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nome: `sling:resourceSuperType`
-    * Tipo: &quot;String`
-    * Valore: &quot;foundation/components/page&quot;
+
+* Nome: `sling:resourceSuperType`
+* Tipo: `String`
+* Valore: `foundation/components/page`
 
 1. Fate clic su verde **[!UICONTROL [+]Aggiungi]**
 1. Fate clic su **[!UICONTROL Salva tutto]**
