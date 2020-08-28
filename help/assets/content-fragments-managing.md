@@ -10,7 +10,7 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 11%
@@ -97,7 +97,7 @@ Selezionare il frammento per visualizzare la barra degli strumenti con le azioni
    * Salvare il frammento come file ZIP; potete definire se includere elementi, varianti, metadati.
 
 * **[!UICONTROL Crea]**
-* **[!UICONTROL Estrai]**
+* **[!UICONTROL Pagamento]**
 * **[!UICONTROL Proprietà]**
 
    * Consente di visualizzare e/o modificare i metadati del frammento.
@@ -228,7 +228,7 @@ Dopo aver creato il contenuto principale, potete creare e gestire [le varianti](
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-È possibile visualizzare e modificare le proprietà di un frammento utilizzando la scheda [!UICONTROL Metadati](content-fragments-metadata.md) .
+È possibile visualizzare e modificare le proprietà di un frammento utilizzando la scheda [[!UICONTROL Metadati]](content-fragments-metadata.md) .
 
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
@@ -237,8 +237,8 @@ Oltre alle opzioni standard, [Timeline](managing-assets-touch-ui.md#timeline) fo
 * Visualizzazione di informazioni su versioni, commenti e annotazioni
 * Azioni per le versioni
 
-   * **[!UICONTROL Ripristina questa versione](#reverting-to-a-version)**(selezionare un frammento esistente, quindi una versione specifica)
-   * **[!UICONTROL Confronta con corrente](#comparing-fragment-versions)**(selezionare un frammento esistente, quindi una versione specifica)
+   * **[[!UICONTROL Ripristina questa versione]](#reverting-to-a-version)** (selezionare un frammento esistente, quindi una versione specifica)
+   * **[[!UICONTROL Confronta con corrente]](#comparing-fragment-versions)** (selezionare un frammento esistente, quindi una versione specifica)
    * Aggiungere un’ **[!UICONTROL etichetta]** e/o un **[!UICONTROL commento]** (selezionare un frammento esistente, quindi una versione specifica)
    * **[!UICONTROL Salva come versione]** (selezionare un frammento esistente, quindi la freccia su nella parte inferiore della timeline)
 
@@ -262,13 +262,13 @@ Le annotazioni (per i frammenti di contenuto) sono:
 >* Specifica per un segmento di testo selezionato all&#39;interno del frammento
 
 
-Ad esempio:
+Esempio:
 
 ![cfm-6420-19](assets/cfm-6420-19.png)
 
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 
-L&#39;azione **[!UICONTROL Confronta con corrente]** è disponibile dalla [!UICONTROL Timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
+L&#39;azione **[!UICONTROL Confronta con corrente]** è disponibile dalla [[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
 
 Verrà aperto:
 
@@ -298,7 +298,7 @@ Vengono visualizzati affiancati, dove:
 
 È possibile ripristinare una versione specifica del frammento:
 
-* Direttamente dalla [!UICONTROL timeline](content-fragments-managing.md#timeline-for-content-fragments).
+* Direttamente dalla [[!UICONTROL timeline]](content-fragments-managing.md#timeline-for-content-fragments).
 
    Selezionate la versione desiderata, quindi l’azione **[!UICONTROL Ripristina versione]** corrente.
 
