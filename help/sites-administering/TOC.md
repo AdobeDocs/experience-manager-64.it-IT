@@ -5,10 +5,10 @@ audience: admin-user
 user-guide-title: Guida utente per l'amministrazione di AEM 6.4
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 14%
+source-wordcount: '614'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 + [Panoramica sulla Guida utente di amministrazione](home.md)
 + Caratteristiche dei siti {#introduction}
    + [Amministrazione di siti Web](msm-and-translation.md)
-   + [Riutilizzo del contenuto: Multi Site Manager e Live Copy](msm.md)
+   + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
    + [Console Panoramica Live Copy](msm-livecopy-overview.md)
    + [Configurazione della sincronizzazione di una Live Copy](msm-sync.md)
    + [Creazione e sincronizzazione di Live Copy](msm-livecopy.md)
@@ -105,7 +105,7 @@ ht-degree: 14%
    + [Concetti ](concepts.md)
    + [Amministrazione di eCommerce generico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
    + [AEM Commercio - Preparazione GDPR](gdpr-compliance-commerce.md)
 + Integrazione {#integration}
@@ -130,7 +130,7 @@ ht-degree: 14%
    + [Integrazione con Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Feed prodotto](product-feed.md)
    + [Integrazione con  Gestione tag dinamica dei Adobi](dtm.md)
-   + [Scelta  Adobe Analytics e  Adobe Target](opt-in.md)
+   + [Opzione per  Adobe Analytics e  Adobe Target](opt-in.md)
    + [Portali AEM e portlet](aem-as-portal.md)
    + [Integrazione con Dynamic Media Classic (Scene7)](scene7.md)
    + [AEM Ricette Livefyre](aem-livefyre-recipes.md)
@@ -150,7 +150,6 @@ ht-degree: 14%
    + [Integrazione con  Search&amp;Promote Adobe](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
    + [Integrazione con Target con i frammenti esperienza](experience-fragments-target.md)
-   + [Best practice per i modelli e-mail](best-practices-for-email-templates.md)
 + Best practice   {#bestpractices}
    + [Best practice  ](administer-best-practices.md)
    + [Tecniche consigliate per la traduzione](tc-bp.md)
