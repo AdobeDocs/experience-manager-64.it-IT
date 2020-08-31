@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida utente Forms di AEM 6.4
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,12 @@ ht-degree: 1%
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
    + [Introduzione alla gestione dei moduli](using/introduction-managing-forms.md)
-   + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
-      + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
+   + modulo: Creare il primo modulo adattivo {#create-first-adaptive-form}
+      + [modulo: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
       + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
-      + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
-      + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
+      + [modulo: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
+      + [modulo: Stile del modulo adattivo](using/style-your-adaptive-form.md)
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
@@ -161,7 +161,7 @@ ht-degree: 1%
    + [Utilizzo di  Adobe Sign in un modulo adattivo](using/working-with-adobe-sign.md)
    + [Creazione e utilizzo di temi](using/themes.md)
    + [Editor di regole per moduli adattivi](using/rule-editor.md)
-   + [API per richiamare il servizio del modello dati modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
+   + [API per richiamare il servizio del modello dati del modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
    + [Invio asincrono di moduli adattivi](using/asynchronous-submissions-adaptive-forms.md)
    + [Creare un modulo adattivo utilizzando un set di moduli adattivi](using/create-adaptive-form-using-adaptive-form-set.md)
    + [Modelli di moduli adattivi](using/template-editor.md)
@@ -408,7 +408,7 @@ ht-degree: 1%
       + [Modificare l&#39;ordine di valutazione per l&#39;autenticazione](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Configurare la password per il binding LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + [Configurare AEM moduli per la preacquisizione delle informazioni sul dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
-      + [Configurazione dell&#39;autenticazione basata sui certificati](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
+      + [Configurazione dell&#39;autenticazione basata su certificato](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
       + [Configurare le impostazioni del provider di servizi SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md)
       + [Abilitazione del single sign-on nei moduli AEM](/help/forms/using/admin-help/enabling-single-sign-on-aem.md)
       + [Configurare la gestione utente per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md)
@@ -451,7 +451,7 @@ ht-degree: 1%
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l&#39;acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Verifica delle informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per  plug-in browser Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
@@ -466,7 +466,7 @@ ht-degree: 1%
       + [Abilita supporto PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configurazione di una stampante di rete PDFG (solo Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configurazione dei font di fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
-      + [Modifica delle impostazioni di conversione PDF Export](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
+      + [Modifica delle impostazioni di conversione di esportazione PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversione di file tramite PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + Configurazione di SSL {#configure-ssl}
       + [Panoramica sulla configurazione di SSL](/help/forms/using/admin-help/overview-6.md)
@@ -501,10 +501,9 @@ ht-degree: 1%
       + [Specificare le opzioni di configurazione XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Configurazione della memorizzazione nella cache per Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md)
-      + [Font disponibili](/help/forms/using/admin-help/make-fonts-available.md)
+      + [Gestione dei font](/help/forms/using/admin-help/make-fonts-available.md)
       + [Specificare i font da incorporare](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Specificare le impostazioni di protezione](/help/forms/using/admin-help/specify-security-settings.md)
-      + [Modificare il set di caratteri](/help/forms/using/admin-help/change-character-set.md)
    + Configurazione del flusso di lavoro dei moduli{#configure-forms-workflow}
       + [Informazioni sull&#39;amministrazione e la terminologia del processo](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gestione dei processi](/help/forms/using/admin-help/processes.md)
@@ -516,7 +515,7 @@ ht-degree: 1%
       + [Operazioni con operazioni e rami in stallo](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configurazione delle code condivise](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Operazioni con le attività](/help/forms/using/admin-help/tasks.md)
-   + Configurazione di Workspace {#configure-workspace}
+   + giorno di configurazione {#configure-workspace}
       + [Panoramica di Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importazione ed esportazione di impostazioni globali](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Impostazione del messaggio del giorno](/help/forms/using/admin-help/setting-message-day.md)
