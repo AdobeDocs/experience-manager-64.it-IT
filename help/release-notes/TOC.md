@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Note sulla versione di AEM 6.4
 user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 41%
+source-wordcount: '73'
+ht-degree: 38%
 
 ---
 
@@ -22,8 +22,9 @@ ht-degree: 41%
 + [Note sulla versione di AEM Sites](sites.md)
 + [Note sulla versione di AEM Assets](assets.md)
 + [Note sulla versione di AEM Forms](forms.md)
++ [programma di installazione patch JEE AEM Forms](jee-patch-installer-64.md)
 + [Note sulla versione di AEM Communities](communities-release-notes.md)
-+ [Note sulla versione di AEM 3D](aem3d-release-notes.md)
++ [Note sulla versione AEM 3D](aem3d-release-notes.md)
 + [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 + [Problemi noti](known-issues.md)
 + [AEM Foundation e Repository](wcm-platform.md)
