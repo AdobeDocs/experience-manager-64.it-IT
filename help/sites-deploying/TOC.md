@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.4
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 11%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 # Guida utente alla distribuzione di AEM 6.4 {#deploying}
 
-+ [Guida utente alla distribuzione](home.md)
++ [Guida utente per la distribuzione](home.md)
 + Introduzione alla piattaforma AEM {#introduction}
    + [Introduzione alla piattaforma AEM](platform.md)
    + [Requisiti tecnici](technical-requirements.md)
@@ -68,12 +68,13 @@ ht-degree: 11%
    + [Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern](pattern-detector.md)
    + [Compatibilità con le versioni precedenti della AEM 6.4](backward-compatibility.md)
    + [Procedura di aggiornamento](upgrade-procedure.md)
+   + [Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento](upgrade-offline-reindexing.md)
    + [Esecuzione di un aggiornamento locale](in-place-upgrade.md)
    + [Lazy Content Migration](lazy-content-migration.md)
    + [Utilizzo dello strumento di migrazione CRX2Oak](using-crx2oak.md)
    + [Attività di manutenzione pre-aggiornamento](pre-upgrade-maintenance-tasks.md)
    + [Post Upgrade Checks e risoluzione dei problemi](post-upgrade-checks-and-troubleshooting.md)
-   + [Aggiornamento della ricerca personalizzata Forms](upgrading-custom-search-forms.md)
+   + [Aggiornamento della ricerca personalizzata per Forms](upgrading-custom-search-forms.md)
    + [Aggiornamenti sostenibili](sustainable-upgrades.md)
    + [Aggiornamento di codice e personalizzazioni](upgrading-code-and-customizations.md)
    + [Passaggi di aggiornamento per le installazioni di Application Server](app-server-upgrade.md)
@@ -89,7 +90,7 @@ ht-degree: 11%
    + [Ristrutturazione del repository per  AEM Communities in 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Panoramica di eCommerce](ecommerce.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best practice   {#practices}
