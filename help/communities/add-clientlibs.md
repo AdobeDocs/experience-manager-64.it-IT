@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 4%
@@ -124,7 +124,7 @@ Una volta inclusi i clientlibs apps.an-scf-sandbox, il componente dei commenti S
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-L&#39;istruzione include appartiene alla variabile <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> della sezione <html> script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto: **`headlibs.jsp`**.
+L&#39;istruzione include appartiene alla `<head>` sezione dello `<html>` script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto: **`headlibs.jsp`**.
 
 **Copiate headlibs.jsp e includete clientlibs:**
 
