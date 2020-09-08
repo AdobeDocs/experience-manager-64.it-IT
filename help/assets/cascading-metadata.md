@@ -3,9 +3,9 @@ title: Metadati A Cascata
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 13%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 13%
 # Cascading Metadata {#cascading-metadata}
 
 In questo articolo viene descritto come definire metadati a cascata per le risorse.
+
+>[!CAUTION]
+>
+>I metadati a cascata non sono supportati per i frammenti di contenuto.
 
 Quando acquisite le informazioni di metadati di una risorsa, gli utenti forniscono informazioni nei vari campi disponibili. Potete visualizzare campi di metadati o valori di campi specifici che dipendono dalle opzioni selezionate negli altri campi. Tale visualizzazione condizionale dei metadati è denominata metadati CSS. In altre parole, potete creare una dipendenza tra un particolare campo/valore di metadati e uno o più campi e/o relativi valori.
 
