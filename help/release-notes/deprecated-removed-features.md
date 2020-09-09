@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 27%
+source-wordcount: '1281'
+ht-degree: 26%
 
 ---
 
@@ -40,6 +40,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 | Forms | Utilizzo obsoleto di JSONObject in Query e OperationOptions. Le seguenti API sono obsolete: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Utilizzare l&#39; `IValueMap` API |
 | Forms | Servizio Bridge di migrazione centrale obsoleto. | Non viene offerta alcuna sostituzione. |
 | Assets | Lo scarico delle risorse è stato dichiarato obsoleto a partire da AEM 6.4. |  |
+| Sviluppatori | Libreria client Lodash/underscore.  Adobe non prevede di mantenere e aggiornare ulteriormente la libreria client Lodash/underscore fornita come parte della distribuzione (Quickstart) |  Adobe consiglia ai clienti che necessitano ancora di Lodash/underscore per il codice di aggiungerlo alla base di codice del progetto. |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -161,11 +162,11 @@ Nella tabella seguente sono elencate le funzionalità rimosse dalla AEM 6.4. Le 
 | Forms |  Export PDF al formato PDF/E-1 tramite PDF Generator è stato rimosso. | PDF Generator continua a supportare l’esportazione di PDF nei formati PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
 | Forms | Il supporto per le immagini all&#39;interno di frammenti di documento è stato rimosso. | Le comunicazioni interattive consentono di utilizzare direttamente le immagini nei canali Web e per la stampa. |
 | Forms | Aggiornamento fuori sede | Il supporto per l&#39;esecuzione dell&#39;aggiornamento locale non è disponibile |
-| Forms | Sidegrade per le migrazioni da TarMK a DocumentMK | È possibile esportare i dati da sistemi meno recenti e quindi importarli in un sistema di configurazione più recente. Per istruzioni dettagliate, consultate AEM Forms sulla documentazione di aggiornamento JEE |
-| Forms | AEM Forms nel programma di installazione JEE a 32 bit non disponibili. |  Adobe ha interrotto la spedizione dei AEM Forms nel programma di installazione JEE a 32 bit. Potete continuare a utilizzare il programma di installazione a 64 bit per installare AEM Forms su JEE. |
+| Forms | Sidegrade per le migrazioni da TarMK a DocumentMK | È possibile esportare i dati da sistemi meno recenti e quindi importarli in un sistema di configurazione più recente. Per istruzioni dettagliate, consultate  AEM Forms sulle documentazioni di aggiornamento JEE |
+| Forms |  AEM Forms sul programma di installazione JEE a 32 bit non disponibile. |  Adobe ha interrotto la spedizione  AEM Forms sul programma di installazione JEE a 32 bit. Potete continuare a utilizzare il programma di installazione a 64 bit per installare  AEM Forms su JEE. |
 | Forms | È stato rimosso il supporto per l&#39;utilizzo di immagini DAM in Componente frammento documento. | Potete usare i componenti Immagine e Grafico nel canale di stampa delle comunicazioni interattive. Se nei moduli adattivi si utilizza il componente frammento di documento del documento adattivo, questo non funziona più dopo l&#39;aggiornamento a AEM 6.4 Forms. |
 | Forms | È stata rimossa la funzione Documenti adattivi | Potete utilizzare la funzione di comunicazione interattiva per creare comunicazioni stampate e basate sul Web. Se utilizzate Documenti adattivi, installate il pacchetto di compatibilità per continuare a utilizzare i documenti adattivi esistenti |
-| Forms | Sono stati rimossi AEM Forms sulla pagina di destinazione specifica per JEE. | I AEM Forms sulla pagina di destinazione JEE vengono sostituiti da AEM pagina di destinazione (/aem/start.html) |
+| Forms | Rimosso  AEM Forms sulla pagina di destinazione specifica per JEE. |  AEM Forms sulla pagina di destinazione JEE viene sostituito con AEM pagina di destinazione (/aem/start.html) |
 | Forms | Rimosso il supporto per Captcha predefinito | Utilizzate il servizio reCAPTCHA di Google. |
 | Forms | È stato rimosso il supporto per i campi Flash in AEM Designer. AEM Designer non consente la modifica dei campi Flash utilizzati in un modulo. | È possibile utilizzare AEM Designer rilasciato per una versione precedente per modificare tali moduli. |
 | Communities | Il supporto per la verifica Captcha è stato rimosso. | Utilizzate l&#39;integrazione captcha personalizzata (ad esempio reCAPTCHA di Google) per la verifica. |
