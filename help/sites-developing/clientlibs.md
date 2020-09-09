@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Per risolvere il problema, AEM fornisce Cartelle **libreria lato** client che co
 
 ## Funzionamento delle librerie lato client in AEM {#how-client-side-libraries-work-in-aem}
 
-Il modo standard per includere una libreria lato client (ovvero un file JS o CSS) nell’HTML di una pagina consiste semplicemente nell’includere un `<script>` tag o `<link>` nel JSP per tale pagina, contenente il percorso del file in questione. Ad esempio,
+Il modo standard per includere una libreria lato client (ovvero un file JS o CSS) nell’HTML di una pagina consiste semplicemente nell’includere un `<script>` tag o `<link>` nel JSP per tale pagina, contenente il percorso del file in questione. Esempio,
 
 ```xml
 ...
@@ -50,7 +50,7 @@ Una cartella libreria lato client è un nodo di tipo repository `cq:ClientLibrar
   - channels (string) multiple
 ```
 
-Per impostazione predefinita, `cq:ClientLibraryFolder` i nodi possono essere posizionati ovunque all&#39;interno delle `/apps`strutture `/libs` e `/etc` sottostrutture dell&#39;archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite il pannello **Adobe Granite HTML Library Manager** della console [di](http://localhost:4502/system/console/configMgr)sistema).
+Per impostazione predefinita, `cq:ClientLibraryFolder` i nodi possono essere posizionati ovunque all’interno delle `/apps`strutture `/libs` e `/etc` sottostrutture dell’archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite il pannello **Adobe Granite HTML Library Manager** della console [di](http://localhost:4502/system/console/configMgr)sistema).
 
 Ogni file `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedete di seguito). Le proprietà `cq:ClientLibraryFolder` sono configurate come segue:
 
@@ -181,8 +181,8 @@ Quindi si imposta la `allowProxy` proprietà `foo` su true.
 1. Selezionate la cartella della libreria client e fate clic su **Crea > Crea file**.
 1. Nella casella Nome file digitare uno dei seguenti nomi di file e fare clic su OK:
 
-   * **`js.txt`:**Utilizzate questo nome file per generare un file JavaScript.
-   * **`css.txt`:**Utilizzare questo nome file per generare un foglio di stile CSS.
+   * **`js.txt`:** Utilizzate questo nome file per generare un file JavaScript.
+   * **`css.txt`:** Utilizzare questo nome file per generare un foglio di stile CSS.
 
 1. Aprite il file e digitate il testo seguente per identificare la radice del percorso dei file sorgente:
 
@@ -242,7 +242,6 @@ In alcuni casi, l’HTML finale generato per la pagina tipica dall’istanza di 
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ Nella tabella seguente, ad esempio, è riportato il valore della `channels` prop
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*nessun valore *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*nessun valore*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
