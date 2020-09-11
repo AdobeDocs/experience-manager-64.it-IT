@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: e30606a7fdb96f332bda3c28441eed8011528c43
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 0%
@@ -152,7 +152,7 @@ log-bin=logname
 
 ## Directory principale dell&#39;archivio contenuti (solo Content Services) {#content-storage-root-directory-content-services-only}
 
-La directory principale di Content Storage contiene l&#39;archivio di Content Services (obsoleto) in cui sono memorizzati tutti i documenti, gli artefatti e gli indici. È necessario eseguire il backup della struttura di directory principale dell&#39;archivio contenuti. In questa sezione viene descritto come determinare la posizione della directory principale di memorizzazione dei contenuti per gli ambienti sia standalone che cluster.
+La directory principale di Content Storage contiene l&#39;archivio di Content Services (obsoleto) in cui sono memorizzati tutti i documenti, gli artefatti e gli indici. È necessario eseguire il backup della struttura di directory principale dell&#39;archivio contenuti. In questa sezione viene descritto come determinare la posizione della directory radice di memorizzazione dei contenuti per gli ambienti sia standalone che cluster.
 
 ### Posizione di origine dell&#39;archiviazione dei contenuti (ambiente autonomo) {#content-storage-root-location-stand-alone-environment}
 
