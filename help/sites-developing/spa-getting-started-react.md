@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 1%
@@ -59,17 +59,17 @@ Oltre alla dipendenza prevista dal programma React, l&#39;area SPA di esempio pu
 
 ### Dipendenze {#dependencies}
 
-Il `package.json` file definisce i requisiti del pacchetto SPA complessivo. Le dipendenze AEM minime per un&#39;app SPA funzionante sono elencate di seguito.
+Il `package.json` file definisce i requisiti del pacchetto SPA complessivo. Le dipendenze AEM minime per un&#39;app SPA funzionante sono elencate qui.
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
-Poiché questo esempio si basa sul quadro React, nel `package.json` file sono presenti due dipendenze specifiche di React:
+Poiché questo esempio è basato sul quadro React, nel `package.json` file sono presenti due dipendenze specifiche di React:
 
 ```
 react
@@ -139,10 +139,10 @@ Un componente immagine semplificato viene utilizzato come esempio, ma tutti i co
 
 Il punto di ingresso nell&#39;SPA è ovviamente il `index.js` file qui mostrato semplificato per concentrarsi sul contenuto importante.
 
-```
+```javascript
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -167,7 +167,7 @@ Quando un’istanza del componente viene creata in modo statico utilizzando il m
 Eseguendo il rendering dell&#39;app, `index.js` le chiamate `App.js`, che vengono visualizzate in una versione semplificata per concentrarvi sul contenuto importante.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -185,7 +185,7 @@ export default withModel(App);
 Mediante il rendering della pagina, `App.js` le chiamate elencate `Page.js` qui in una versione semplificata.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -206,7 +206,7 @@ Con la pagina sottoposta a rendering, è possibile eseguire il rendering dei com
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -249,7 +249,7 @@ Potete esportare un componente e mantenerlo modificabile.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -276,7 +276,7 @@ Per ulteriori informazioni, consultate il documento [](/help/sites-developing/sp
 
 È necessario che i componenti all’interno di un’applicazione a pagina singola condividano informazioni. Ci sono diversi modi consigliati di fare questo, elencati come segue in ordine crescente di complessità.
 
-* **Opzione 1:** Centralizzate la logica e la trasmissione ai componenti necessari, ad esempio utilizzando React Context.
+* **Opzione 1:** Centralizzare la logica e trasmettere ai componenti necessari, ad esempio utilizzando React Context.
 * **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
 * **Opzione 3:** Sfruttare la gerarchia di oggetti personalizzando ed estendendo il componente contenitore.
 
