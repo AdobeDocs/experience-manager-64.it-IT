@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Guida utente allo sviluppo
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 + [Panoramica sullo sviluppo della Guida utente](home.md)
 + Introduzione per gli sviluppatori{#introduction}
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](getting-started.md)
-   + [Concetti AEM base](the-basics.md)
+   + [Concetti di base AEM](the-basics.md)
    + [Struttura dell’interfaccia AEM touch](touch-ui-structure.md)
    + [Concetti dell’interfaccia AEM touch](touch-ui-concepts.md)
    + [Sviluppo AEM - Linee guida e migliori prassi](dev-guidelines-bestpractices.md)
@@ -114,7 +114,7 @@ ht-degree: 10%
       + [Routing modello SPA](spa-routing.md)
       + [Integrazione SPA e  Adobe Experience Platform Launch](spa-launch.md)
       + [Rendering SPA e lato server](spa-ssr.md)
-      + [Riferimenti API SPA Javascript](spa-reference-materials.md)
+      + [Materiali di riferimento SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Frammenti di contenuto](/help/assets/content-fragments.md)
    + [Frammenti esperienza](/help/sites-authoring/experience-fragments.md)
@@ -139,7 +139,7 @@ ht-degree: 10%
    + [Riferimento API ContextHub Javascript](contexthub-api.md)
    + [Estensione di ContextHub](ch-extend.md)
    + [Aggiunta di ContextHub alle pagine e accesso agli store](ch-adding.md)
-   + [Candidati per lo store ContextHub di esempio](ch-samplestores.md)
+   + [Candidati per l&#39;archivio ContextHub di esempio](ch-samplestores.md)
    + [Tipi di moduli interfaccia utente ContextHub di esempio](ch-samplemodules.md)
    + [Diagnostica ContextHub](ch-diagnostics.md)
    + [Sviluppo per contenuti mirati](target.md)
