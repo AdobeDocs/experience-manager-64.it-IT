@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ La `PageModelManager` libreria viene fornita come pacchetto NPM da utilizzare in
 
 Per conto dell&#39;SPA, l&#39;articolo illustra il recupero e la gestione della struttura JSON che rappresenta la struttura di contenuto effettiva. È inoltre responsabile della sincronizzazione con l&#39;SPA per informarlo quando deve eseguire nuovamente il rendering dei suoi componenti.
 
-Consultate il pacchetto NPM [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Consultate il pacchetto NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Quando si inizializza l&#39;app, la libreria carica innanzitutto il modello principale fornito dall&#39;app (tramite parametro, proprietà meta o URL corrente). `PageModelManager` Se la libreria identifica che il modello della pagina corrente non fa parte del modello principale, recupera e lo include come modello di una pagina figlia.
 
@@ -99,14 +99,14 @@ Separare i problemi aiuta a facilitare l&#39;implementazione del progetto. Occor
 
 Per facilitare l&#39;interoperabilità delle librerie,  Adobe consiglia al modulo specifico del quadro di creare i pacchetti delle seguenti librerie. Se necessario, il livello può racchiudere e adattare le API sottostanti prima di esporle al progetto.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementazioni {#implementations}
 
 #### Reagisce {#react}
 
-modulo npm: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+modulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angolare {#angular}
 
@@ -169,7 +169,7 @@ Il componente Griglia reattiva deve essere pre-mappato sulla sua controparte AEM
 * `gridClassNames:` Nomi di classe forniti per la griglia reattiva
 * `columnClassNames:` Nomi di classe forniti per la colonna reattiva
 
-Consultate anche la risorsa npm [@adobe/cq-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Consultate anche la risorsa npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Segnaposto della griglia di risposta {#placeholder-of-the-reponsive-grid}
 
