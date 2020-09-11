@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 I moduli adattivi sono modellati come AEM pagina, rappresentata come struttura di contenuto JCR AEM repository. L&#39;elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
 
-È possibile utilizzare un modello di oggetto script (SOM) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare DOM (Document Object Model). Un DOM organizza gli oggetti di memoria e le proprietà in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegno di elementi e pannelli.
+È possibile utilizzare un modello di oggetto script (SOM) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello di oggetto documento (DOM). Un DOM organizza gli oggetti di memoria e le proprietà in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegno di elementi e pannelli.
 
 Nell&#39;immagine seguente è illustrata una struttura di nodi a cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, potete aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo del pulsante di scelta in un modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
