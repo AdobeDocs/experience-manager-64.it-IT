@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: 'forms '
 audience: end-user
 user-guide-title: Guida utente Forms di AEM 6.4
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 1%
@@ -25,12 +26,12 @@ ht-degree: 1%
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
    + [Introduzione alla gestione dei moduli](using/introduction-managing-forms.md)
-   + modulo: Creare il primo modulo adattivo {#create-first-adaptive-form}
-      + [modulo: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
+   + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
+      + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
       + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
-      + [modulo: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
-      + [modulo: Stile del modulo adattivo](using/style-your-adaptive-form.md)
+      + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
+      + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
@@ -501,7 +502,7 @@ ht-degree: 1%
       + [Specificare le opzioni di configurazione XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Configurazione della memorizzazione nella cache per Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md)
-      + [Gestione dei font](/help/forms/using/admin-help/make-fonts-available.md)
+      + [Font disponibili](/help/forms/using/admin-help/make-fonts-available.md)
       + [Specificare i font da incorporare](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Specificare le impostazioni di protezione](/help/forms/using/admin-help/specify-security-settings.md)
    + Configurazione del flusso di lavoro dei moduli{#configure-forms-workflow}
