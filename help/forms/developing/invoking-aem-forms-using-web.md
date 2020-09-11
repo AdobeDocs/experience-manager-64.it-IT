@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: d731d290738403f41e601da8e9bdb9bd3b94bcd4
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '9984'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Nella tabella seguente sono elencate le definizioni WSDL del servizio (supponend
    <td><p><code>http://localhost:8080/soap/services/DocumentManagementService?WSDL</code></p></td> 
   </tr> 
   <tr> 
-   <td><p>Encryption </p></td> 
+   <td><p>Cifratura </p></td> 
    <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -224,7 +224,7 @@ Assegnare valori ai campi appartenenti all&#39; `BLOB` istanza come segue:
 
 Il protocollo di trasmissione per `BLOB` gli oggetti restituiti dipende da diversi fattori, considerati nell&#39;ordine seguente, che si arrestano quando la condizione principale è soddisfatta:
 
-1. **L&#39;URL di destinazione specifica il protocollo** di trasmissione. Se l&#39;URL di destinazione specificato alla chiamata SOAP contiene il parametro `blob="`*BLOB_TYPE *&quot;,* BLOB_TYPE *determina il protocollo di trasmissione.* BLOB_TYPE *è un segnaposto per base64, dime, mime, http, mtom o swaref.
+1. **L&#39;URL di destinazione specifica il protocollo** di trasmissione. Se l&#39;URL di destinazione specificato alla chiamata SOAP contiene il parametro `blob="`*BLOB_TYPE*&quot;, *BLOB_TYPE* determina il protocollo di trasmissione. *BLOB_TYPE* è un segnaposto per base64, dime, mime, http, mtom o swaref.
 1. **L&#39;endpoint SOAP del servizio è Smart**. Se le seguenti condizioni sono vere, i documenti di output vengono restituiti utilizzando lo stesso protocollo di trasmissione dei documenti di input:
 
    * Il protocollo predefinito del parametro endpoint SOAP del servizio per gli oggetti BLOB di output è impostato su Smart.
@@ -770,7 +770,7 @@ Dopo aver creato un riferimento a un servizio, i tipi di dati associati al servi
 
 1. Creare un progetto .NET utilizzando Microsoft Visual Studio 2008.
 1. Nel menu **Progetto** , selezionate **Aggiungi riferimento** servizio.
-1. Nella finestra di dialogo **Indirizzo** , specificare il WSDL nel servizio AEM Forms . Ad esempio,
+1. Nella finestra di dialogo **Indirizzo** , specificare il WSDL nel servizio AEM Forms . Esempio,
 
    ```as3
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -1175,7 +1175,7 @@ Per richiamare il `MyApplication/EncryptDocument` servizio (incorporato in Workb
 
 ## Utilizzo dell&#39;autenticazione basata su SAML {#using-saml-based-authentication}
 
- AEM Forms supporta diverse modalità di autenticazione dei servizi Web quando si esegue la chiamata ai servizi. Una modalità di autenticazione consiste nel specificare sia il nome utente che il valore della password utilizzando un&#39;intestazione di autorizzazione di base nella chiamata al servizio Web.  AEM Forms supporta anche l&#39;autenticazione basata sull&#39;asserzione SAML. Quando un&#39;applicazione client richiama un servizio AEM Forms  utilizzando un servizio Web, l&#39;applicazione client può fornire informazioni di autenticazione in uno dei modi seguenti:
+ AEM Forms supporta diverse modalità di autenticazione del servizio Web quando si richiamano i servizi. Una modalità di autenticazione consiste nel specificare sia il nome utente che il valore della password utilizzando un&#39;intestazione di autorizzazione di base nella chiamata al servizio Web.  AEM Forms supporta anche l&#39;autenticazione basata sull&#39;asserzione SAML. Quando un&#39;applicazione client richiama un servizio AEM Forms  utilizzando un servizio Web, l&#39;applicazione client può fornire informazioni di autenticazione in uno dei modi seguenti:
 
 * Invio delle credenziali nell&#39;ambito dell&#39;autorizzazione di base
 * Passaggio del token nome utente come parte dell&#39;intestazione WS-Security
@@ -1533,7 +1533,7 @@ L&#39;elenco seguente specifica i tipi di dati che non possono essere condivisi 
 * `Roles`
 * `BLOB`
 
-Per evitare questo problema, è consigliabile qualificare completamente i tipi di dati. Si consideri ad esempio un&#39;applicazione .NET che fa riferimento sia al servizio Forms che al servizio Signature utilizzando un riferimento al servizio. Entrambi i riferimenti di servizio conterranno una `BLOB` classe. Per utilizzare un&#39; `BLOB` istanza, qualificare completamente l&#39; `BLOB` oggetto quando lo si dichiara. Questo approccio è illustrato nel seguente esempio di codice. Per informazioni su questo esempio di codice, vedere Firma [digitale di Forms](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)interattivo.
+Per evitare questo problema, è consigliabile qualificare completamente i tipi di dati. Si consideri ad esempio un&#39;applicazione .NET che fa riferimento sia al servizio Forms che al servizio Signature utilizzando un riferimento al servizio. Entrambi i riferimenti di servizio conterranno una `BLOB` classe. Per utilizzare un&#39; `BLOB` istanza, qualificare completamente l&#39; `BLOB` oggetto quando viene dichiarato. Questo approccio è illustrato nel seguente esempio di codice. Per informazioni su questo esempio di codice, vedere Firma [digitale di Forms](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)interattivo.
 
 Nell&#39;esempio di codice C# riportato di seguito viene firmato un modulo interattivo di cui il servizio Forms esegue il rendering. L&#39;applicazione client ha due riferimenti di servizio. L&#39; `BLOB` istanza associata al servizio Forms appartiene allo `SignInteractiveForm.ServiceReference2` spazio dei nomi. Analogamente, l&#39; `BLOB` istanza associata al servizio Signature appartiene allo `SignInteractiveForm.ServiceReference1` spazio dei nomi. Il modulo interattivo firmato viene salvato come file PDF denominato *LoanXFASigned.pdf*.
 
