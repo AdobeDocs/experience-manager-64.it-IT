@@ -11,7 +11,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 4%
@@ -39,10 +39,10 @@ AEM fornisce diverse API per lo sviluppo di applicazioni. L&#39;elenco seguente 
 
 AEM l&#39;editor dell&#39;applicazione per pagina singola (SPA) framework i riferimenti API JavaScript:
 
-* [Mapping dei componenti](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [Page Model Manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [Reazione di componenti modificabili](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [Componenti modificabili angolari](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [Mapping dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [Page Model Manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [Reazione di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Componenti modificabili angolari](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 AEM API di distribuzione e gestione dei contenuti:
 
