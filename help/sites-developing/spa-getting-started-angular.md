@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 1%
@@ -62,9 +62,9 @@ Il `package.json` file definisce i requisiti del pacchetto SPA complessivo. Le d
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -131,12 +131,12 @@ Un componente immagine semplificato viene utilizzato come esempio, ma tutti i co
 
 Il punto di ingresso nell&#39;SPA è il `app.module.ts` file mostrato qui semplificato per concentrarsi sul contenuto importante.
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ Quando un’istanza del componente viene creata in modo statico utilizzando il m
 
 Una volta `app.module.ts` avviati `AppComponent`, l&#39;app può quindi essere inizializzata, come illustrato in una versione semplificata per concentrarsi sul contenuto importante.
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -194,13 +194,13 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-Elaborando la pagina, `app.component.ts` le chiamate `main-content.component.ts` elencate in questa sezione vengono semplificate.
+Elaborando la pagina, `app.component.ts` le chiamate elencate `main-content.component.ts` qui in una versione semplificata.
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',
