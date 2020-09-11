@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Il componente di pagina per un’app SPA non fornisce gli elementi HTML dei comp
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una `PageModel` libreria specificata. Per poter essere inizializzata e creata dall’editor SPA, l’SPA deve utilizzare la libreria Modello pagina. Libreria Modello pagina fornita indirettamente al componente Pagina AEM tramite `cq-react-editable-components` npm. Il Modello pagina è un interprete tra AEM e l&#39;SPA e pertanto deve essere sempre presente. Quando la pagina viene creata, `cq.authoring.pagemodel.messaging` deve essere aggiunta una libreria aggiuntiva per abilitare la comunicazione con l’editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una `PageModel` libreria specificata. Per poter essere inizializzata e creata dall’editor SPA, l’SPA deve utilizzare la libreria Modello pagina. Libreria Modello pagina fornita indirettamente al componente Pagina AEM tramite `aem-react-editable-components` npm. Il Modello pagina è un interprete tra AEM e l&#39;SPA e pertanto deve essere sempre presente. Quando la pagina viene creata, `cq.authoring.pagemodel.messaging` deve essere aggiunta una libreria aggiuntiva per abilitare la comunicazione con l’editor pagina.
 
 Se il componente della pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere disponibile la categoria della libreria `cq.authoring.pagemodel.messaging` client:
 
@@ -147,7 +147,7 @@ Questa è una panoramica più dettagliata dell&#39;interazione client-server dur
 
 1. Il modello di pagina aggiornato viene restituito all’editor.
 
-1. L’editor pagina aggiorna il riferimento del modello di pagina dell’API.
+1. L’editor pagina aggiorna il riferimento del modello di pagina dell’area di protezione.
 
 1. L’area SPA aggiorna i suoi componenti in base al nuovo riferimento al modello di pagina.
 
@@ -189,7 +189,7 @@ Questa è una panoramica più dettagliata che si concentra sull’esperienza di 
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di un’app SPA, l’applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA AEM. Consulta la [Guida introduttiva agli SPA in AEM](/help/sites-developing/spa-getting-started-react.md) documento per ottenere il minimo necessario per l&#39;esecuzione.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di un’app SPA, l’applicazione SPA deve essere implementata per interagire con l’SDK dell’AEM SPA Editor. Consulta la [Guida introduttiva agli SPA in AEM](/help/sites-developing/spa-getting-started-react.md) documento per ottenere il minimo necessario per l&#39;esecuzione.
 
 ### Framework supportati {#supported-frameworks}
 
