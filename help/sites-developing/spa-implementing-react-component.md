@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 2%
@@ -64,7 +64,7 @@ Il cambiamento è persistente e il componente si aggiorna automaticamente con i 
 
 ### Implementazione dei componenti del tempo {#weather-component-implementation}
 
-La componente meteo è in realtà basata su un componente React disponibile al pubblico, denominato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal.
+La componente meteo è in realtà basata su un componente React disponibile al pubblico, chiamato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
 
 Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’utilizzo del componente React Open Weather.
 
@@ -79,7 +79,7 @@ Revisione del codice del componente meteo personalizzato ( `Weather.js`) nell&#3
 
 * **Linee 31-44**: Il componente Meteo estende la `Component` classe e fornisce i dati richiesti come definito nella documentazione sull’utilizzo di NPM per il componente React Open Weather ed esegue il rendering del componente.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -97,7 +97,7 @@ Revisione del codice del componente meteo personalizzato ( `Weather.js`) nell&#3
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
