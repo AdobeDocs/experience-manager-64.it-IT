@@ -6,11 +6,11 @@ seo-description: 'La gestione di un progetto per l''implementazione di Adobe Exp
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 1%
@@ -57,13 +57,13 @@ Il foglio di lavoro **Heartbeat** progetto fornisce una panoramica grafica delle
 
 ## Stato per ruolo {#status-by-role}
 
-Il foglio di lavoro **Stato per ruolo** mostra una suddivisione dettagliata di **[Salute, Qualità e Completezza](#project-heartbeat-dashboard)**per**[ Fase](#phases-and-milestones)** e **[Persona](#persona)**.
+Il foglio di lavoro **Stato per ruolo** mostra una suddivisione dettagliata di **[Salute, Qualità e Completezza](#project-heartbeat-dashboard)** per **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
 
 ## Fasi e pietre miliari {#phases-and-milestones}
 
 Il piano del progetto è suddiviso in fasi distinte (ad alto livello).
 
-Ogni fase contiene le proprie pietre miliari. Per ogni [persona](#persona) (o ruolo) sono elencati i punti cardine rilevanti, insieme ai documenti necessari per produrre i risultati finali definiti.
+Ogni fase contiene le proprie tappe. Per ogni [persona](#persona) (o ruolo) sono elencati i punti cardine rilevanti, insieme ai documenti necessari per produrre i risultati finali definiti.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ La pianificazione dello sviluppo è fondamentale per garantire che il progetto s
    * Server per ogni ambiente; consultate le linee guida sui requisiti [](/help/sites-deploying/technical-requirements.md) tecnici e sul ridimensionamento [hardware](/help/managing/hardware-sizing-guidelines.md)
    * Processi per ogni ambiente; ad esempio, requisiti di implementazione e manutenzione
    * Attività di manutenzione (Datastore GC, ottimizzazione TarPM, ecc.)
-   * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Memorizzazione in cache di Dispatcher
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authoring
    * Prestazioni lato client (JS minify, concat, sprites css, numero totale di richieste http e altre)
 
@@ -249,7 +249,7 @@ Allo stesso modo, le operazioni devono essere pianificate in modo appropriato pe
 
    È necessario pianificare e quindi implementare un concetto di ruoli e diritti per tutti gli utenti/gruppi che utilizzeranno la soluzione.
 
-   Ad esempio:
+   Esempio:
 
    * Un elenco di ruoli (ovvero gruppi) con definizioni di `read`/ `write` accesso per ogni
    * Definizione dell’uso dei privilegi che hanno un impatto sull’ambiente di pubblicazione; ad esempio, `replicate`
@@ -455,7 +455,7 @@ Vuoi che il tuo Go Live sia il più liscio possibile. Anche in questo caso, i pa
 
 ## Persona {#persona}
 
-Gli elenchi di controllo sono progettati per persona. Questi sono i ruoli con un ruolo significativo nel ciclo di vita del progetto.
+Gli elenchi di controllo sono progettati per persona. Questi sono i ruoli che hanno un ruolo significativo nel ciclo di vita del progetto.
 
 Ci sono anche [altre persone](#other-persona) coinvolte in compiti specifici.
 
@@ -592,7 +592,7 @@ Per le procedure ottimali per l’implementazione, l’amministrazione, lo svilu
    * [Best practice per SEO e gestione degli URL](/help/managing/seo-and-url-management.md)
    * [Linee guida sull’accessibilità di AEM per il Web](/help/managing/web-accessibility.md)
    * [Regolamento generale sulla protezione dei dati](/help/managing/data-protection-and-privacy.md)
-* [Best practice di implementazione e manutenzione](/help/sites-deploying/best-practices.md)
+* [Implementazione e manutenzione delle procedure ottimali](/help/sites-deploying/best-practices.md)
 * [Best practice di amministrazione](/help/sites-administering/administer-best-practices.md)
 * [Best practice di sviluppo](/help/sites-developing/best-practices.md)
 * [Best practice di authoring](/help/sites-authoring/best-practices.md)
