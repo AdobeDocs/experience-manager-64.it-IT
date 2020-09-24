@@ -6,10 +6,10 @@ seo-description: Scoprite come configurare AEM servizio CAPTCHA o Google reCAPTC
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: author
+topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Per implementare il servizio reCAPTCHA in  AEM Forms:
 1. Ottenete una coppia [di chiavi API](https://www.google.com/recaptcha/admin) reCAPTCHA da Google. Include una chiave del sito e un segreto.
 1. Creare un contenitore di configurazione per i servizi cloud.
 
-   1. Scegliere **[!UICONTROL Strumenti > Generale > Browser]** di configurazione.
+   1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
    1. Effettuate le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud o saltate questo passaggio per creare e configurare un&#39;altra cartella per le configurazioni del servizio cloud.
 
       1. Nel browser di configurazione, selezionate la cartella **[!UICONTROL globale]** e toccate **[!UICONTROL Proprietà]**.
