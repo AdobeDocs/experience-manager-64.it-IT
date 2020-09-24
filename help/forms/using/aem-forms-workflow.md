@@ -5,11 +5,11 @@ description: Utilizzare  flusso di lavoro AEM Forms per automatizzare e creare r
 seo-description: Utilizzare  flusso di lavoro AEM Forms per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), per integrare  flusso di lavoro delle firme Adobe Sign e altro ancora.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 1%
@@ -165,7 +165,7 @@ L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&
   </tr> 
   <tr> 
    <td>Modulo adattivo</td> 
-   <td><p>Specificare il percorso di un modulo adattivo. Quando un utente avvia un'applicazione, viene visualizzato il modulo adattivo specificato.</p> <p><strong>Nota</strong>: Le applicazioni per i flussi di lavoro non supportano moduli e documenti PDF con più pagine o che richiedono lo scorrimento sull'iPad Apple. Quando un'applicazione viene aperta su Apple iPad e il modulo adattivo o il documento PDF supera una pagina, i campi modulo e il contenuto della seconda pagina vengono persi.</p> </td> 
+   <td><p>Specificare il percorso di un modulo adattivo. Quando un utente avvia un'applicazione, viene visualizzato il modulo adattivo specificato.</p> <p><strong>Nota</strong>: Le applicazioni per i flussi di lavoro non supportano moduli e documenti PDF con più pagine o che richiedono lo scorrimento sull'iPad Apple. Quando un'applicazione viene aperta sull'iPad e il modulo adattivo o il documento PDF supera una pagina, i campi modulo e il contenuto della seconda pagina vengono persi.</p> </td> 
   </tr> 
   <tr> 
    <td>Gruppo di accesso</td> 
