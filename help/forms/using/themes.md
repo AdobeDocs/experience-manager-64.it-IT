@@ -5,11 +5,11 @@ description: È possibile utilizzare i temi per stilizzare e fornire un'identit�
 seo-description: È possibile utilizzare i temi per stilizzare e fornire un'identità visiva a un modulo adattivo o a una comunicazione interattiva. È possibile condividere un tema tra un numero qualsiasi di moduli adattivi o comunicazioni interattive.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 1%
@@ -230,7 +230,7 @@ L’Editor tema è diviso in due pannelli:
 
    [ ![Editor di temi con Barra e Area di lavoro evidenziata.](assets/themes.png)](assets/themes-1.png) **A.** Barra laterale **B.** Canvas
 
-### Componenti di stile {#styling-components}
+### Styling components {#styling-components}
 
 È possibile utilizzare un tema in più moduli adattivi e nelle comunicazioni interattive, per importare la formattazione del componente specificata nel tema. È possibile formattare vari componenti come titoli, descrizioni, pannelli, campi, icone e caselle di testo. Utilizzare i widget per configurare le proprietà dei componenti in un tema. La conoscenza precedente di CSS o LESS non è necessaria ma desiderata, anche se la sezione Ignorare i CSS consente di scrivere codice CSS o fornire selettori personalizzati. La sezione Sostituzioni CSS viene visualizzata quando selezionate un componente nella barra laterale.
 
