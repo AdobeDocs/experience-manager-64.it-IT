@@ -5,13 +5,13 @@ description: L’utility Migrazione consente di migrare  risorse e documenti AEM
 seo-description: L’utility Migrazione consente di migrare  risorse e documenti AEM Forms da AEM 6.3 Forms o versioni precedenti a AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -30,7 +30,7 @@ L&#39;utility Migrazione converte le risorse [Forms](/help/forms/using/introduct
 
 >[!NOTE]
 >
->In caso di aggiornamento non aggiornato, per le risorse Gestione corrispondenza potete eseguire la migrazione ogni volta che importate le risorse. Per la migrazione alla gestione della corrispondenza è necessario che sia installato il pacchetto di compatibilità Forms.
+>In caso di aggiornamento non aggiornato, per le risorse di Gestione della corrispondenza potete eseguire la migrazione ogni volta che importate le risorse. Per la migrazione alla gestione della corrispondenza è necessario che sia installato il pacchetto di compatibilità Forms.
 
 ## Approccio alla migrazione {#approach-to-migration}
 
@@ -69,7 +69,7 @@ Per le risorse Gestione corrispondenza:
 
 ### Esecuzione dell&#39;utility di migrazione {#runningmigrationutility}
 
-Eseguite l’utility Migrazione prima di apportare modifiche alle risorse o di crearle. È consigliabile non eseguire l&#39;utility dopo aver apportato modifiche o creato risorse. Accertatevi che l’interfaccia utente Gestione corrispondenza o Risorse Forms adattive non sia aperta durante il processo di migrazione.
+Eseguite l’utility di migrazione prima di apportare modifiche alle risorse o di crearle. È consigliabile non eseguire l&#39;utility dopo aver apportato modifiche o creato risorse. Accertatevi che l’interfaccia utente Gestione corrispondenza o Risorse Forms adattive non sia aperta durante il processo di migrazione.
 
 Quando si esegue l&#39;utility di migrazione per la prima volta, viene creato un registro con il percorso e il nome seguenti: `\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log`. Questo registro continua ad essere aggiornato con le informazioni di gestione della corrispondenza e di migrazione Forms adattiva, come lo spostamento delle risorse.
 
