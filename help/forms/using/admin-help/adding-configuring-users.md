@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Utenti e gruppi.
 1. Specificate le informazioni per limitare la ricerca e, nell’elenco In, selezionate Utenti e fate clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Potete ordinare l’elenco facendo clic su una delle intestazioni di colonna.
-1. Fate clic sul nome dell&#39;utente per visualizzare i dettagli. Nella pagina Modifica utente sono riportati di seguito alcuni dettagli relativi all’utente:
+1. Fate clic sul nome dell&#39;utente per visualizzare i dettagli. Nella pagina Modifica utente sono visualizzati i dettagli seguenti sull’utente:
 
    * Informazioni generali di identificazione, quali nome, indirizzo e-mail, dominio e organizzazione
    * Ruoli assegnati all’utente
