@@ -5,11 +5,11 @@ description: I moduli adattivi possono utilizzare lo schema XML come modello di 
 seo-description: I moduli adattivi possono utilizzare lo schema XML come modello di modulo, consentendo di utilizzare i modelli XSD esistenti per creare moduli adattivi. È possibile trascinare gli elementi dello schema da XSD al modulo adattivo.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 5%
