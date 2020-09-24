@@ -6,10 +6,10 @@ seo-description: ' AEM Forms fornisce strumenti per gestire l’Forms adattivo e
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Oltre alle opzioni per creare moduli, documenti e risorse correlate, AEM offre o
 
 Forms e documenti offre opzioni per la creazione di comunicazioni interattive, moduli adattivi, frammenti di modulo adattivi e set di moduli. Solo per  AEM Forms su JEE, Forms &amp; Documents offre l&#39;opzione per importare file dall&#39;archivio locale e sincronizzare  risorse AEM Forms con Workbench.
 
-Il pulsante Crea rappresenta il punto di partenza del processo di creazione o caricamento  risorsa AEM Forms. Fornisce opzioni per creare:
+Il pulsante Crea rappresenta il punto di partenza del processo di creazione o caricamento  risorsa AEM Forms. Fornisce le opzioni per creare:
 
 * **Comunicazione** interattiva: Una comunicazione interattiva è una corrispondenza digitale, un&#39;istruzione o un documento personalizzati, interattivi e compatibili con i dispositivi basati su HTML. Le comunicazioni interattive sono di natura reattiva e modificano automaticamente layout e progettazione in base al dispositivo e alle impostazioni dell&#39;utente. Per informazioni dettagliate, consultate Panoramica delle comunicazioni [interattive](/help/forms/using/interactive-communications-overview.md).
 
@@ -96,7 +96,7 @@ Per informazioni sulla creazione e l&#39;uso dei dizionari di dati, vedere Creaz
 
 AEM pannello degli strumenti contiene strumenti per vari componenti. Per passare a  strumenti specifici di AEM Forms, fate clic sul logo **del Experience Manager** ![adobeexperienceemanager](assets/adobeexperiencemanager.png) > **utensili** ![martello](assets/hammer.png) > **Forms**. Vengono visualizzati gli strumenti per eseguire le seguenti funzioni:
 
-* **Configura cartella esaminata:** Un amministratore può configurare una cartella di rete, nota come cartella esaminata, in modo che quando un utente inserisce un file (come un file PDF) nella cartella esaminata, venga avviata un’operazione preconfigurata e il file venga manipolato. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
+* **Configura cartella esaminata:** Un amministratore può configurare una cartella di rete, nota come cartella controllata, in modo che quando un utente inserisce un file (come un file PDF) nella cartella esaminata, venga avviata un’operazione preconfigurata e il file venga manipolato. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
 * **Configura servizio offline app Forms:** Il servizio offline  app AEM Forms memorizza nella cache i percorsi o gli URL delle risorse utilizzate in un modulo. La memorizzazione nella cache di percorsi o URL delle risorse utilizzate in un modulo migliora le prestazioni lato server. Per configurare il componente offline lato server di  app AEM Forms, consulta [Utilizzo della modalità](/help/forms/using/work-offline-mode.md)offline.
 
