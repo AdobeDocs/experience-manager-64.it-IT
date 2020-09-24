@@ -1,15 +1,15 @@
 ---
 title: Condizione in linea e ripetizione in Comunicazioni interattive e lettere
 seo-title: Condizione in linea e ripetizione in Comunicazioni interattive e lettere
-description: 'Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
-seo-description: 'Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
+description: 'Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
+seo-description: 'Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate. '
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Condizione in linea e ripetizione in Comunicazioni interattive e lettere {#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
-Utilizzando lo stato in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate.
+Utilizzando le condizioni in linea e ripetendo in comunicazioni interattive e lettere, potete creare comunicazioni altamente contestuali e ben strutturate.
 
 ## Condizioni in linea {#inline-conditions}
 
@@ -237,4 +237,4 @@ Potrebbe essere necessario inserire condizioni in linea vuote e incorporare test
 
 ![emptycondition](assets/emptycondition.png)
 
-Tuttavia, si consiglia di inserire il testo e gli elementi DD prima nel modulo di testo con la formattazione prevista, come ad esempio i punti elenco, e di applicare successivamente una condizione in linea.
+Tuttavia, si consiglia di inserire il testo e gli elementi DD prima nel modulo di testo con la formattazione prevista, come ad esempio gli elenchi puntati, e di applicare successivamente una condizione in linea.
