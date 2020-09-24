@@ -6,10 +6,10 @@ seo-description: In Dettagli progettazione layout viene illustrato come creare l
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Per creare layout per lettere/canale di stampa delle comunicazioni interattive, 
 1. Durante la progettazione delle pagine corpo, suddividere il contenuto della pagina in sezioni. Ogni sezione è progettata come un sottomodulo incorporato nel layout stesso o come layout di frammento. Se la sezione contiene una tabella, modellare la sezione come un frammento di layout.
 1. Un layout può essere progettato come segue:
 
-   1. Creare ogni sezione come sottomodulo separato contenente tutti gli elementi della sezione.
+   1. Creare ciascuna sezione come sottomodulo separato contenente tutti gli elementi della sezione.
    1. Rendere ogni sottomodulo di sezione secondario dello stesso sottomodulo principale. Il layout del sottomodulo principale è impostato in modo da consentire lo spostamento verso il basso delle sezioni nel caso in cui dati di grandi dimensioni vengano uniti nelle sezioni precedenti.
    1. La residenza principale sezione può essere riutilizzata anche in altri layout. Crea come layout di frammento.
    1. Sezione I dettagli di interesse aggiuntivi contengono solo due elementi posizionati uno sotto l&#39;altro, possono contenere dati di grandi dimensioni ed è progettato come flusso.
