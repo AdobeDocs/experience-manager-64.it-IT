@@ -5,11 +5,11 @@ description: L'editor di regole per moduli adattivi consente di aggiungere compo
 seo-description: L'editor di regole per moduli adattivi consente di aggiungere comportamenti dinamici e di creare logiche complesse nei moduli senza codificare né creare script.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6348'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Nell&#39;editor delle regole, il tipo di regola **Quando** applica il costrutto 
 
 **Action-Condition** In questo costrutto, una regola definisce innanzitutto un&#39;azione da attivare seguita da condizioni per la valutazione. Un&#39;altra variante di questo costrutto è action-condition-alternate action, che definisce anche un&#39;azione alternativa da attivare se la condizione restituisce False.
 
-I tipi di regola Mostra, Nascondi, Abilita, Disattiva, Imposta valore di e Convalida nell&#39;editor di regole applicano il costrutto della regola della condizione azione. Per impostazione predefinita, l’azione alternativa per Mostra è Nascondi e per Abilita è Disattiva e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
+I tipi di regola Mostra, Nascondi, Abilita, Disattiva, Imposta valore di e Convalida nell&#39;editor di regole applicano il costrutto della regola della condizione azione. Per impostazione predefinita, l’azione alternativa per Mostra è Nascondi e per Abilita è Disattiva, e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
 
 >[!NOTE]
 >
@@ -471,7 +471,7 @@ Effettuare le seguenti operazioni per scrivere le regole:
 
 Gli utenti aggiunti al gruppo form-power-users possono utilizzare l&#39;editor di codice. L&#39;editor di regole genera automaticamente il codice JavaScript per qualsiasi regola creata utilizzando l&#39;editor visivo. È possibile passare dall&#39;editor visivo all&#39;editor di codice per visualizzare il codice generato. Tuttavia, se modificate il codice della regola nell&#39;editor di codice, non potete tornare all&#39;editor visivo. Se preferite scrivere le regole nell&#39;editor di codice piuttosto che nell&#39;editor visivo, potete scrivere di nuovo le regole nell&#39;editor di codice. Lo switcher di modifica del codice visivo consente di passare da una modalità all&#39;altra.
 
-JavaScript dell&#39;editor di codice è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il documento Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)adattivi.
+JavaScript dell&#39;editor di codice è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il riferimento alle API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)adattivi.
 
 Per ulteriori informazioni sulle linee guida per la scrittura di regole nell&#39;editor di codice, vedere Espressioni [modulo](/help/forms/using/adaptive-form-expressions.md)adattive.
 
@@ -682,7 +682,7 @@ Per copiare e incollare le regole, effettuate le seguenti operazioni:
 
    Per informazioni sulla gestione delle regole esistenti, consultate [Gestire le regole](/help/forms/using/rule-editor.md#p-manage-rules-p).
 
-1. Selezionate la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
+1. Selezionare la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
 
    ![copyrule2](assets/copyrule2.png)
 
@@ -776,7 +776,7 @@ In un modulo di ordine di acquisto è presente la tabella seguente, nella quale 
 
 **A.** Riga1 **B.** Quantità **C.** Quantità totale
 
-A questo punto, si desidera aggiungere quantità specificate nella colonna Quantità prodotto per tutti i prodotti e visualizzare la somma nella cella Quantità totale. A tal fine, è possibile scrivere una regola Imposta valore di nella cella Quantità totale come illustrato di seguito.
+A questo punto, si desidera aggiungere quantità specificate nella colonna Quantità prodotto per tutti i prodotti e visualizzare la somma nella cella Quantità totale. È possibile ottenere questo risultato scrivendo una regola Imposta valore di nella cella Quantità totale come illustrato di seguito.
 
 ![example-function-output](assets/example-function-output.png)
 
