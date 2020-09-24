@@ -5,12 +5,12 @@ description: Spiega come generare un modello per un documento di record (DoR) pe
 seo-description: Spiega come generare un modello per un documento di record (DoR) per i moduli adattivi.
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 3%
