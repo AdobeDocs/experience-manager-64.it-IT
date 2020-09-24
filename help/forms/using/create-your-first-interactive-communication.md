@@ -6,10 +6,10 @@ seo-description: Scopri come creare la tua prima comunicazione interattiva.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -156,7 +156,7 @@ Dopo aver creato una comunicazione interattiva, è importante verificare ogni mo
 
 ## Passaggio 7: Pubblicare la comunicazione interattiva {#step-publish-your-interactive-communication}
 
-![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
+![12-publish-your-adaptive-form-small](assets/12-publish-your-adaptive-form-_small.png)
 
 Dopo aver creato e verificato le comunicazioni interattive tramite i canali Stampa e Web, potete pubblicare queste risorse. Il caso d’uso descritto in questa esercitazione è incentrato sull’integrazione di queste risorse con un client e-mail. Il client e-mail funge da ponte per inviare le comunicazioni interattive a più indirizzi e-mail.
 
