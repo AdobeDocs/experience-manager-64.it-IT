@@ -6,11 +6,11 @@ seo-description: Trovi le best practice compilate dai team di progettazione e co
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 translation-type: tm+mt
-source-git-commit: c1cf6fa92c923cce18000c8dd82b2c17d6783ee5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 0%
@@ -31,7 +31,7 @@ La creazione o l&#39;espansione di una presenza Web globale può essere un proce
 
 * Determinare un modello di **governance** che supporti il business globale e utilizzare meccanismi AEM come MSM e autorizzazioni utente per applicare il modello scelto. Ad esempio, potete determinare se il contenuto verrà creato a livello centrale e se verrà inviato o meno alle regioni o ai paesi. Determinare il contenuto che può essere sbloccato e modificato nelle aree geografiche. Determinare chi è responsabile dell&#39;avvio e della gestione delle traduzioni.
 * Se le risorse lo consentono, è meglio gestire l&#39;attività di traduzione da un team centrale che può sviluppare competenze negli strumenti, nei processi e nelle relazioni con i fornitori necessari.
-* **Pianificate**, **prototipi** e **testate** la struttura e i processi globali per garantire che supportino l&#39;attività e che possiate contare sul supporto necessario degli azionisti nelle aree geografiche.
+* **Pianificate**, **prototipi** e **testate** la struttura e i processi globali per garantire che supportino l&#39;azienda e che possiate contare sul supporto necessario degli azionisti nelle aree geografiche.
 
 ## Struttura sito  {#site-structure}
 
@@ -50,7 +50,7 @@ La creazione o l&#39;espansione di una presenza Web globale può essere un proce
 
 ## Processi e metodi di traduzione {#translation-processes-and-methods}
 
-* Coinvolgere un provider di servizi di **localizzazione (LSP)** con competenze in traduzione e relative attività di localizzazione. I sistemi LSP possono contribuire a scalare la vostra attività globale fornendo un&#39;ampia gamma di risorse e tecnologie per migliorare l&#39;efficienza e risparmiare sui costi di traduzione:
+* Coinvolgere un provider di servizi di **localizzazione (LSP)** con competenze in traduzione e relative attività di localizzazione. I sistemi LSP possono contribuire a scalare l&#39;attività globale fornendo un&#39;ampia gamma di risorse e tecnologie per migliorare l&#39;efficienza e risparmiare sui costi di traduzione:
 
    * Alcuni LSP sono sia fornitori di servizi che di tecnologie. Ci sono anche fornitori di tecnologie indipendenti che consentono a molti LSP di partecipare alle loro piattaforme di traduzione.
    * Il **AEM Quadro** di traduzione sostiene l&#39;integrazione con diversi fornitori di tecnologie di traduzione sia per la traduzione automatica che per la traduzione umana.
