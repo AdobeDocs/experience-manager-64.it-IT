@@ -6,10 +6,10 @@ seo-description: È possibile incorporare moduli adattivi AEM pagine dei siti. G
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Per informazioni sull&#39;incorporazione di un modulo adattivo in una pagina Web
 
  pagina AEM Sites, è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando:
 
-* **[componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**Contenitore AEM Forms AEM Forms fornisce un componente che potete aggiungere alle pagine del sito. Il componente Contenitore di AEM Forms  consente di incorporare un modulo adattivo e una comunicazione interattiva.
+* **[componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** Contenitore AEM Forms AEM Forms fornisce un componente che potete aggiungere alle pagine del sito. Il componente Contenitore di AEM Forms  consente di incorporare un modulo adattivo e una comunicazione interattiva.
 
-* **[Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**risorse Tutti i moduli e le comunicazioni interattive creati sono disponibili in Risorse. È possibile trascinare il modulo come risorsa sulla pagina.
+* **[Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** risorse Tutti i moduli e le comunicazioni interattive creati sono disponibili in Risorse. È possibile trascinare il modulo come risorsa sulla pagina.
 
 ## Prerequisiti {#prerequisites}
 
