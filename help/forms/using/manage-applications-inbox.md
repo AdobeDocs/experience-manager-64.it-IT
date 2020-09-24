@@ -6,10 +6,10 @@ seo-description: AEM Posta in arrivo consente di avviare flussi di lavoro basati
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -91,7 +91,7 @@ La scheda Modulo nell&#39;area di contenuto principale visualizza il modulo invi
 
 La scheda Dettagli flusso di lavoro nella parte superiore mostra l’avanzamento dell’attività nelle varie fasi del flusso di lavoro. Mostra le fasi completate, correnti e in sospeso per l&#39;attività. Le fasi di un flusso di lavoro sono definite nel passaggio [attività](/help/sites-developing/workflows-step-ref.md) Assegna del flusso di lavoro associato.
 
-Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Toccate **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli relativi a tale fase. Visualizza commenti, allegati a moduli e task, stato, date di inizio e fine e così via.
+Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Toccate **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli relativi a tale fase. Visualizza commenti, allegati a moduli e attività, stato, date di inizio e fine e così via.
 
 ![workflow-details](assets/workflow-details.png)
 
