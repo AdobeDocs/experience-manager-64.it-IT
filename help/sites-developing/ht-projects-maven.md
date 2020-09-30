@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
+source-git-commit: 821cbc7fc1f92f1ac2a4044798c7e008c6248b92
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Se utilizzate Apache Maven come sistema di compilazione (come avviene per la mag
 
 Se la società utilizza già un repository Manager di Maven, come Sonype Nexus, Apache Archiva o JFrog Artifactory, aggiungete la configurazione appropriata al progetto per fare riferimento a questo repository manager e aggiungete  repository  Maven ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) al repository manager.
 
+>[!NOTE]
+>
+>A partire dal AEM 6.4.8.2, UberJar e altri manufatti correlati sono disponibili nel repository [](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) Maven Central invece del repository  Adobe Public Maven (repo.adobe.com). Il file UberJar principale viene rinominato in `uber-jar-<version>.jar`. Di conseguenza, non esiste `classifier`, con `apis` il valore, per il `dependency` tag.
+
 Se non si utilizza un repository manager, sarà necessario aggiungere un elemento *repository* al file *pom.xml* :
 
 ```xml
@@ -67,7 +71,7 @@ Se non si utilizza un repository manager, sarà necessario aggiungere un element
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -75,7 +79,7 @@ Se non si utilizza un repository manager, sarà necessario aggiungere un element
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
