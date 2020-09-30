@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2824'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ I passaggi necessari sono:
       * Create e pubblicate un servizio [cloud di](#create-a-twitter-connect-cloud-service)Twitter Connect.
 
 
-1. [**Abilitate **il login](#enable-social-login)mediante profilo sociale per un sito della community.
+1. [**Abilitate** il login](#enable-social-login) mediante profilo sociale per un sito della community.
 
 Esistono due concetti fondamentali:
 
@@ -98,7 +98,7 @@ Una volta creata l&#39;applicazione, individua le impostazioni ID **** app e Seg
 
 ### Creare un Cloud Service Facebook Connect {#create-a-facebook-connect-cloud-service}
 
-L&#39;istanza [applicazione e provider](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) OAuth Granite del Adobe, creata creando una configurazione del servizio cloud, identifica l&#39;applicazione Facebook e i gruppi membri ai quali vengono aggiunti i nuovi utenti.
+L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-provider) OAuth Granite del Adobe, creata creando una configurazione del servizio cloud, identifica l&#39;applicazione Facebook e i gruppi membri ai quali vengono aggiunti i nuovi utenti.
 
 1. Nell’istanza di creazione AEM, effettuate l’accesso con privilegi di amministratore.
 1. Dalla navigazione globale, selezionate **[!UICONTROL Strumenti > Cloud Services > Configurazione]** accesso Facebook Social.
@@ -107,7 +107,7 @@ L&#39;istanza [applicazione e provider](https://chl-author.corp.adobe.com/conten
    **[!UICONTROL Il percorso]** di contesto deve corrispondere al percorso di configurazione cloud selezionato durante la creazione o la modifica di un sito community.
 
 1. Controlla se il percorso contestuale è abilitato per creare servizi cloud al di sotto di esso.
-1. Scegliere **[!UICONTROL Strumenti > Generale > Browser]** di configurazione. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
+1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![config-properties](assets/config-propertiespng.png)
 
@@ -242,7 +242,7 @@ Nella sezione delle autorizzazioni della gestione dell&#39;applicazione Twitter:
    * Se non è selezionato, il profilo utente in AEM non includerà il proprio indirizzo e-mail.
    * Le istruzioni di Twitter indicano ulteriori passi da compiere.
 
-L&#39;unica richiesta REST fatta per l&#39;accesso tramite social network è di *[GET delle credenziali](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*di account/verifica.
+L&#39;unica richiesta REST fatta per l&#39;accesso tramite social network è di *[GET delle credenziali](https://dev.twitter.com/rest/reference/get/account/verify_credentials)* di account/verifica.
 
 ### Creare un Cloud Service di Twitter Connect {#create-a-twitter-connect-cloud-service}
 
@@ -255,7 +255,7 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
    Il percorso di contesto deve corrispondere al percorso di configurazione cloud selezionato durante la creazione o la modifica di un sito community.
 
 1. Controlla se il percorso contestuale è abilitato per creare servizi cloud al di sotto di esso.
-1. Scegliere **[!UICONTROL Strumenti > Generale > Browser]** di configurazione. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
+1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![twitterconfigpropping](assets/twitterconfigproppng.png)
 
