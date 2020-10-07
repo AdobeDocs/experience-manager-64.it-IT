@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -350,7 +350,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 ## API Billable Data Capture {#billable-data-capture-apis}
 
-Tutti gli eventi di invio di moduli adattivi, Forms HTML5 e set di moduli sono considerati transazioni. Per impostazione predefinita, l&#39;invio di un modulo PDF non viene contabilizzato come transazione. Utilizzate l&#39;API [dei rapporti di](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transazione fornita per registrare l&#39;invio di PDF forms come transazione.
+Tutti gli eventi di invio di moduli adattivi, Forms HTML5 e set di moduli sono considerati transazioni. Per impostazione predefinita, l&#39;invio di un modulo PDF non viene contabilizzato come transazione. Utilizzate l&#39;API [dei rapporti di](record-transaction-custom-implementation.md) transazione fornita per registrare l&#39;invio di PDF forms come transazione.
 
 ### Moduli adattivi {#adaptive-forms}
 
