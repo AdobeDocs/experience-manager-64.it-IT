@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 6%
+source-wordcount: '1835'
+ht-degree: 7%
 
 ---
 
@@ -58,7 +58,6 @@ Dopo aver acquisito familiarità con queste nozioni di base, nelle seguenti sott
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Aggiorna definizioni veicolo di rilascio](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Cos&#39;è  AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Concetti di base {#basic-concepts}
@@ -128,13 +127,13 @@ Con AEM clienti Managed Services possono ottenere i seguenti vantaggi:
 
 **Cloud Manager**: Cloud Manager, parte dell&#39;offerta Adobe Experience Manager Managed Services è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include un&#39;integrazione continua all&#39;avanguardia e una pipeline di fornitura continua (CI/CD) che consente ai team IT e ai partner di implementazione di velocizzare la fornitura di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per  clienti di servizi gestiti di Adobe.
 
-Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta la Guida [**utente di **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)Cloud Manager.
+Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta la Guida [**utente di**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)Cloud Manager.
 
 ## Guida introduttiva {#getting-started}
 
 ### Prerequisiti {#prerequisites}
 
-Anche se le istanze di produzione vengono in genere eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedere Requisiti [](/help/sites-deploying/technical-requirements.md)tecnici), il server di Experience Manager  verrà in realtà eseguito su qualsiasi sistema che supporta [**Java Standard Edition 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Anche se le istanze di produzione vengono in genere eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedere Requisiti [](/help/sites-deploying/technical-requirements.md)tecnici), il server di Experience Manager  verrà in realtà eseguito su qualsiasi sistema che supporta [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Per scopi di familiarizzazione e per lo sviluppo su AEM è abbastanza comune utilizzare un&#39;istanza installata sul computer locale che esegue Apple OS X o versioni desktop di Microsoft Windows o Linux.
 
@@ -142,7 +141,7 @@ Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft Edge**, *
 
 ### Ottenimento del software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Il pacchetto software AEM è disponibile in due moduli:
 
@@ -154,7 +153,7 @@ Nella sezione seguente viene descritta l&#39;installazione **** indipendente. Pe
 
 ### Installazione locale predefinita {#default-local-install}
 
-1. Creare una directory di installazione sul computer locale. Ad esempio:
+1. Creare una directory di installazione sul computer locale. Esempio:
 
    Percorso di installazione UNIX: **/opt/aem**
 
@@ -320,6 +319,5 @@ La sezione di cui sopra dovrebbe fornire una buona conoscenza delle basi dell&#3
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Aggiorna definizioni veicolo di rilascio](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Cos&#39;è  AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
