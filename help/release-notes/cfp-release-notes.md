@@ -4,9 +4,9 @@ description: Note sulla versione specifiche dei pacchetti di correzioni cumulati
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3420'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2 è un Cumulative Fix Pack (CFP) che dipende da AEM 6.4 Service Pack 
 
 Nella AEM 6.4.8.2, il repository incorporato (Apache Jackrabbit Oak) viene aggiornato alla versione 1.8.22.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2 fornisce delle correzioni per i seguenti problemi.
 
@@ -175,7 +175,7 @@ Alcuni degli elementi salienti della AEM 6.4.8.1 sono:
 * È stata rimossa l&#39;integrazione di Package Share con Adobe Experience Manager.
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.8.21.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1 fornisce delle correzioni ai seguenti problemi.
 
