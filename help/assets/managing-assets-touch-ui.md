@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
 workflow-type: tm+mt
-source-wordcount: '9811'
+source-wordcount: '10015'
 ht-degree: 3%
 
 ---
@@ -425,6 +425,12 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 ### Spostare o rinominare le risorse {#moving-or-renaming-assets}
 
+Quando spostate le risorse (o le cartelle) in un’altra posizione, le risorse (o cartelle) non vengono duplicate, a differenza di quando copiate la risorsa. Le risorse (o le cartelle) vengono posizionate nel percorso di destinazione e rimosse dal percorso di origine. Potete inoltre rinominare la risorsa quando la spostate nella nuova posizione. Se spostate una risorsa pubblicata in un percorso diverso, potete ripubblicare la risorsa. Per impostazione predefinita, l’operazione di spostamento su una risorsa pubblicata viene automaticamente annullata dalla pubblicazione. La risorsa spostata viene ripubblicata se l’autore seleziona l’opzione [!UICONTROL Ripubblica] quando si sposta la risorsa.
+
+![Quando si sposta una risorsa già pubblicata, è possibile ripubblicarla](assets/republish-on-move.png)
+
+Per spostare risorse o cartelle:
+
 1. Andate alla posizione della risorsa da spostare.
 
 1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
@@ -462,6 +468,14 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Toccate **[!UICONTROL Annulla]** per interrompere l’operazione di spostamento.
 
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
+
+### Spostare le risorse tramite trascinamento {#move-using-drag}
+
+Potete spostare le risorse (o cartelle) in una cartella di pari livello trascinandole nella posizione di destinazione, invece di utilizzare l’opzione [!UICONTROL Sposta] nell’interfaccia utente. Tuttavia, questa operazione è possibile solo nella vista a elenco.
+
+Se si spostano le risorse trascinandole, non viene aperta la procedura guidata [!UICONTROL Sposta risorsa] . Pertanto, durante lo spostamento non è possibile rinominare le risorse. Inoltre, le risorse già pubblicate vengono ripubblicate trascinandole per spostarle, senza richiedere l&#39;approvazione dell&#39;utente per la ripubblicazione.
+
+![Spostare le risorse nelle cartelle di pari livello trascinandole](assets/move-by-drag.gif)
 
 ## Gestire le rappresentazioni {#managing-renditions}
 
