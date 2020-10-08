@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 * **Servizio firma:** Consente di utilizzare firme digitali e documenti sul server AEM. Ad esempio, il servizio Signature è in genere utilizzato nelle situazioni seguenti:
 
-   * Il server AEM certifica un modulo prima che venga inviato all&#39;utente per l&#39;apertura utilizzando  Acrobat o  Adobe Reader.
+   * Il server AEM certifica un modulo prima che venga inviato all&#39;utente per l&#39;apertura, utilizzando  Acrobat o  Adobe Reader.
    * Il server AEM convalida una firma aggiunta a un modulo utilizzando  Acrobat o  Adobe Reader.
    * Il server AEM firma un modulo per conto di un notaio pubblico.
 
@@ -69,7 +69,7 @@ Prima di iniziare a installare e configurare  AEM Forms document services, assic
    * **Autore**: Istanza AEM utilizzata per creare, caricare e modificare i contenuti e per amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
    * **Pubblica**: Un&#39;istanza AEM che trasmette il contenuto pubblicato al pubblico su Internet o su una rete interna.
 
-* I requisiti di memoria sono soddisfatti.  pacchetto aggiuntivo AEM Forms richiede:
+* I requisiti di memoria sono soddisfatti.  pacchetto del componente aggiuntivo AEM Forms richiede:
 
    * 15 GB di spazio temporaneo per le installazioni basate su Microsoft Windows.
    * 6 GB di spazio temporaneo per le installazioni basate su UNIX.
@@ -555,8 +555,7 @@ Per configurare i certificati, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >* Nell&#39;ambiente di produzione, sostituite le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare le credenziali scadute o di valutazione, assicurarsi di eliminare le credenziali di estensioni di Reader precedenti.
-
+   >Nell&#39;ambiente di produzione, sostituite le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare le credenziali scadute o di valutazione, assicurarsi di eliminare le credenziali di estensioni di Reader precedenti.
 
 1. Fate clic su **[!UICONTROL Salva e chiudi]** nella pagina **[!UICONTROL Modifica impostazioni]** utente.
 
