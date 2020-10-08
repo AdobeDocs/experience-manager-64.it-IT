@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 98%
@@ -254,7 +254,7 @@ Ecco un esempio di scenario in cui si verifica questo problema:
 
 1. Il dispatcher memorizza nella cache la risposta in `/my-page.html` e restituisce la risposta all’utente.
 1. Un autore di contenuti apporta una modifica a questa pagina e la attiva.
-1. L’agente di eliminazione del dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.**Poiché il dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non verrà aggiornato.
+1. L’agente di eliminazione del dispatcher invia una richiesta di annullamento della validità per `/content/my-brand/my-page`**.** Poiché il dispatcher non ha una pagina memorizzata nella cache in questo percorso, il contenuto precedente rimane memorizzato nella cache e non verrà aggiornato.
 
 Sono disponibili vari modi per configurare regole di eliminazione invio personalizzate che mappano l’URL più breve all’URL più lungo per consentire l’annullamento della validità della cache.
 
