@@ -3,7 +3,7 @@ title: Configurare AEM Assets con Brand Portal
 description: 'Scoprite come configurare  AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 46%
@@ -21,15 +21,14 @@ Adobe Experience Manager (AEM) Assets è configurato con Brand Portal tramite Ad
 >
 >Precedentemente, Brand Portal era stato configurato nell’interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione.
 
-
 >[!TIP]
 >
 >***Solo per i clienti esistenti***
 >
 >Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth legacy, eliminare la configurazione esistente e creare una nuova configurazione tramite  I/O Adobe.
 
-
 Questa guida descrive i due casi d’uso seguenti:
+
 * [Nuova configurazione](#configure-new-integration-64): Se siete un nuovo utente di Brand Portal e desiderate configurare ’istanza di creazione AEM Assets con Brand Portal, potete creare una nuova configurazione  I/O Adobe.
 * [Configurazione](#upgrade-integration-64)aggiornamento: Se siete già utenti di Brand Portal con l’istanza di creazione  AEM Assets configurata con Brand Portal su OAuth Gateway legacy, è consigliabile eliminare le configurazioni esistenti e creare una nuova configurazione  I/O Adobe.
 
@@ -46,7 +45,6 @@ Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 * Un’istanza di creazione di  AEM Assets con l’ultimo Service Pack.
 * URL del tenant di Brand Portal.
 * Un utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant di Brand Portal.
-
 
 [Download e installazione AEM 6.4](#aemquickstart)
 
@@ -73,6 +71,7 @@ Per istruzioni dettagliate, vedete
 ## Creare la configurazione {#configure-new-integration-64}
 
 Effettuate i seguenti passaggi nella sequenza elencata se state configurando  AEM Assets con Brand Portal per la prima volta:
+
 1. [Recuperare il certificato pubblico](#public-certificate)
 1. [Creare l’integrazione di Adobe I/O](#createnewintegration)
 1. [Creare la configurazione dell’account IMS](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Effettuate i seguenti passaggi nella sequenza elencata se state configurando  AE
 >[!NOTE]
 >
 >Un’istanza di autore  AEM Assets può essere configurata solo con un tenant Brand Portal.
-
 
 ### Creare la configurazione IMS {#create-ims-configuration}
 
@@ -205,8 +203,6 @@ Verifica di aver eseguito i seguenti passaggi:
 >
 >Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
 
-
-
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
 Per creare la configurazione del servizio cloud di Brand Portal, effettua le seguenti operazioni:
@@ -258,7 +254,6 @@ Per creare la configurazione del servizio cloud di Brand Portal, effettua le seg
    >[!NOTE]
    >
    >Gli agenti di replica lavorano in parallelo e condividono la distribuzione dei processi in modo uniforme, aumentando così la velocità di pubblicazione di quattro volte la velocità originale. Una volta configurato il servizio cloud, non è richiesta ulteriore configurazione per abilitare gli agenti di replica attivati per impostazione predefinita per abilitare la pubblicazione parallela di più risorse.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -360,4 +355,3 @@ Una volta completata la replica, potete pubblicare risorse, cartelle e raccolte 
 * [Pubblicare risorse su Brand Portal](brand-portal-publish-assets.md)
 * [Pubblicare risorse e cartelle su Brand Portal](brand-portal-publish-folder.md)
 * [Pubblicare raccolte nel portale dei marchi](brand-portal-publish-collection.md)
-
