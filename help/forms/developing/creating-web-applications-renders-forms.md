@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -67,7 +67,7 @@ I file di dati XML utilizzati dall&#39;applicazione Web sono stati spostati dall
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
-Per creare un&#39;applicazione basata sul Web che esegue il rendering di moduli basati su frammenti, procedere come segue:
+Per creare un&#39;applicazione basata sul Web che esegue il rendering di moduli basati sui frammenti, procedere come segue:
 
 1. Crea un nuovo progetto Web.
 1. Creare una logica di applicazione Java che rappresenta il servlet Java.
@@ -119,7 +119,7 @@ Per la posizione di questi file JAR, consultate [Inclusione  file](/help/forms/d
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di una pagina HTML che richiama il servlet `RenderFormFragment` Java, vedere[Creazione di una pagina](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
+>Per informazioni sulla creazione di una pagina HTML che richiama il servlet `RenderFormFragment` Java, consultate [Creazione di una pagina](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
 
 ### Creazione di una logica di applicazione Java per il servlet {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Per distribuire il servlet Java che richiama il servizio Forms, creare un pacche
 
 1. Nella finestra **Esplora** progetti, fare clic con il pulsante destro del mouse sul `FragmentsWebApplication` progetto e selezionare **Esporta** > File **** WAR.
 1. Nella casella di testo del modulo **** Web, digitare `FragmentsWebApplication` il nome del progetto Java.
-1. Nella casella di testo **Destinazione** , digitare `FragmentsWebApplication.war`**il nome del **file, specificare il percorso del file WAR, quindi fare clic su Fine.
+1. Nella casella di testo **Destinazione** , digitare `FragmentsWebApplication.war`**il nome del** file, specificare il percorso del file WAR, quindi fare clic su Fine.
 
 ### Distribuzione del file WAR nel server applicazioni J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
