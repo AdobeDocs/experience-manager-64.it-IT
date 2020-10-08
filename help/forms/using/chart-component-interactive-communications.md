@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ A tal fine, è necessario specificare:
 * **[!UICONTROL Titolo]** per gli assi X e Y (solo per il tipo di colonna nel canale di stampa in questo esempio) - in questo esempio, Importo ($) per l&#39;asse X e Spese per l&#39;asse Y.
 * **[!UICONTROL Direzione]** etichetta (per il tipo di colonna grafico nel canale di stampa solo in questo esempio) - in questo esempio `Tilt Left`
 
-* **[!UICONTROL Descrizione]** da visualizzare al passaggio del mouse su una spesa (solo canale Web) - in questo esempio `${x}: $ ${y}`, che viene visualizzata come Etichetta [spesa: $ Amount] (Esempio: Visita del parco tematico: $ 315)
+* **[!UICONTROL Descrizione]** da visualizzare al passaggio del mouse su una spesa (solo per il canale Web) - in questo esempio `${x}: $ ${y}`, che viene visualizzata come `[Expense Label: $ Amount]` (Esempio: Visita del parco tematico: $ 315)
 
 ![Grafico a colonne nell’output di stampa di una comunicazione](assets/chartprintchannel.png)interattiva **Figura:** *Grafico a colonne nell&#39;output di stampa di una comunicazione interattiva*
 
@@ -217,7 +217,7 @@ Per impostazione predefinita, con il componente Grafico sono disponibili le segu
 
 Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere funzioni personalizzate in JavaScript™ e renderle disponibili nell&#39;elenco delle funzioni del componente Grafico per il canale Web.
 
-Una funzione utilizza una matrice o più valori e un nome di categoria come input e restituisce un valore. Ad esempio:
+Una funzione utilizza una matrice o più valori e un nome di categoria come input e restituisce un valore. Esempio:
 
 ```
 Multiply(valueArray, category) {
