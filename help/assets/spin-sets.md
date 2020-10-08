@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 7%
@@ -49,7 +49,8 @@ Per iniziare rapidamente a usare i set 360 gradi, effettuate le seguenti operazi
    >[!NOTE]
    >
    >You can also create Spin Sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-   *I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità* Dynamic Media - Scene7.
+   >
+   >*I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità* Dynamic Media - Scene7.
 
 1. Impostate i predefiniti [](managing-viewer-presets.md)per visualizzatori di set 360 gradi in base alle vostre esigenze.
 
@@ -104,7 +105,8 @@ Ordine in cui le immagini vengono visualizzate in un set 360 gradi Accertatevi d
 >[!NOTE]
 >
 >Puoi anche creare in automatico i set 360 gradi da [predefiniti set di batch](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+>
+>I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 >
 >Consultate &quot;Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi&quot; in [Configurazione di elementi multimediali dinamici - Modalità](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)Scene7.
 
