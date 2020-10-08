@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 4e4dfb105e12b6855ec32a72246d6b921d6d7829
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Una volta creato il nodo, aggiungere le seguenti proprietà:
    false (of type Boolean)
    ```
 
-* **includePropertyNames:** `["alias"] (of type String)`
+* **includePropertyNames:** `[alias]` (di tipo String)
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ AEM può essere utilizzato con un server Solr incorporato che può essere config
 
 È possibile configurare il server Solr incorporato tramite:
 
-1. Passate alla console Web in `https://serveraddress:4502/system/console/configMgr`
+1. Passate alla console Web all&#39;indirizzo `https://serveraddress:4502/system/console/configMgr`
 1. Cercate &quot;**Oak Solr server provider**&quot;.
 1. Premere il pulsante Modifica e, nella finestra seguente, impostare il tipo di server su **Incorporato** nell&#39;elenco a discesa.
 
@@ -460,7 +460,7 @@ Poiché nella maggior parte dei casi, la configurazione di indicizzazione è mem
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
-Se l&#39;indice è configurato in una posizione diversa, modificare di conseguenza il percorso.
+Se l&#39;indice è configurato in una posizione diversa, modificare il percorso di conseguenza.
 
 #### Uscita MBean {#mbean-output}
 
