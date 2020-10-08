@@ -4,7 +4,7 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 3%
@@ -145,7 +145,8 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 >[!NOTE]
 >
 >Per caricare le risorse mediante FTP in Dynamic Media - modalità di installazione Scene7 feature pack (FP) 18912 sull’autore AEM. Per accedere al programma FP-18912 e completare la configurazione dell&#39;account FTP, contatta &#39;Assistenza clienti del Adobe. Consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
-Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
+>
+>Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
 
