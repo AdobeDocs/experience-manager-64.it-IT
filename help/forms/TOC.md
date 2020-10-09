@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'forms '
 audience: end-user
-user-guide-title: Guida utente Forms di AEM 6.4
+user-guide-title: Guida per Forms di Adobe Experience Manager 6.4
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3713'
 ht-degree: 1%
 
 ---
 
-# AEM 6.4 - Guida utente di Forms {#forms}
+# Adobe Experience Manager 6.4 Forms Guide {#forms}
 
 + [Guida utente Forms di AEM 6.4](home.md)
 + Note sulla versione {#release-notes-new-features}
@@ -162,7 +162,7 @@ ht-degree: 1%
    + [Utilizzo di  Adobe Sign in un modulo adattivo](using/working-with-adobe-sign.md)
    + [Creazione e utilizzo di temi](using/themes.md)
    + [Editor di regole per moduli adattivi](using/rule-editor.md)
-   + [API per richiamare il servizio del modello dati del modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
+   + [API per richiamare il servizio del modello dati modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
    + [Invio asincrono di moduli adattivi](using/asynchronous-submissions-adaptive-forms.md)
    + [Creare un modulo adattivo utilizzando un set di moduli adattivi](using/create-adaptive-form-using-adaptive-form-set.md)
    + [Modelli di moduli adattivi](using/template-editor.md)
@@ -516,7 +516,7 @@ ht-degree: 1%
       + [Operazioni con operazioni e rami in stallo](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configurazione delle code condivise](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Operazioni con le attività](/help/forms/using/admin-help/tasks.md)
-   + giorno di configurazione {#configure-workspace}
+   + Configurazione di Workspace {#configure-workspace}
       + [Panoramica di Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importazione ed esportazione di impostazioni globali](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Impostazione del messaggio del giorno](/help/forms/using/admin-help/setting-message-day.md)
