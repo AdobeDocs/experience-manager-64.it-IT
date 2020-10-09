@@ -1,18 +1,18 @@
 ---
-title: Guida utente Forms di AEM 6.4
+title: Guida per Forms di Adobe Experience Manager 6.4
 seo-title: Guida utente Forms di AEM 6.4
 description: Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 seo-description: Vengono  tutte le attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 22%
 
 ---
 
 
-# Guida utente Forms di AEM 6.4
+# Guida per Forms di Adobe Experience Manager 6.4
 
 Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 
@@ -35,7 +35,7 @@ Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di cre
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
-| [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
+| [Guida utente per la distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scoprite come creare l&#39;istanza AEM. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
