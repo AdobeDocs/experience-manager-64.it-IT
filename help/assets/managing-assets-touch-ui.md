@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 3%
 
 ---
@@ -424,7 +424,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >L’icona **[!UICONTROL Incolla]** è disponibile nella barra degli strumenti fino al completamento dell’operazione Incolla.
 
-### Spostare o rinominare le risorse {#moving-or-renaming-assets}
+## Spostare e rinominare le risorse {#moving-or-renaming-assets}
 
 Quando spostate le risorse (o le cartelle) in un’altra posizione, le risorse (o cartelle) non vengono duplicate, a differenza di quando copiate la risorsa. Le risorse (o le cartelle) vengono posizionate nel percorso di destinazione e rimosse dal percorso di origine. Potete inoltre rinominare la risorsa quando la spostate nella nuova posizione. Se spostate una risorsa pubblicata in un percorso diverso, potete ripubblicare la risorsa. Per impostazione predefinita, l’operazione di spostamento su una risorsa pubblicata viene automaticamente annullata dalla pubblicazione. La risorsa spostata viene ripubblicata se l’autore seleziona l’opzione [!UICONTROL Ripubblica] quando si sposta la risorsa.
 
@@ -434,39 +434,42 @@ Per spostare risorse o cartelle:
 
 1. Andate alla posizione della risorsa da spostare.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![Quando si sposta una risorsa già pubblicata, è possibile ripubblicarla](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+Per spostare risorse o cartelle:
 
-1. Nella procedura guidata **[!UICONTROL Sposta risorse]** , effettuate una delle seguenti operazioni:
+1. Andate alla posizione della risorsa da spostare.
 
-   * Dopo averlo spostato, specificate il nome della risorsa. Quindi toccate **[!UICONTROL Avanti]** per proseguire.
-   * Toccate **[!UICONTROL Annulla]** per interrompere il processo.
+1. Selezionate la risorsa e fate clic sull’opzione **[!UICONTROL Sposta]** nella barra degli strumenti.
+   ![Opzione Sposta nella barra degli strumenti Risorse](assets/do-not-localize/move_icon.png)
 
+1. Nella procedura guidata [!UICONTROL Sposta risorse] , effettuate una delle seguenti operazioni:
+
+   * Dopo averlo spostato, specificate il nome della risorsa. Quindi fate clic su **[!UICONTROL Avanti]** per proseguire.
+
+   * Fate clic su **[!UICONTROL Annulla]** per interrompere il processo.
    >[!NOTE]
    >
-   >Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
-
-   >[!NOTE]
-   >
-   >I seguenti caratteri (elenco separato da spazi) non sono supportati:
-   >* il nome del file di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? &`
-   >* il nome della cartella di risorse non deve contenere  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
+   >* Durante la ridenominazione, gli spazi bianchi non sono consentiti nel nome del file.
 
 
-1. Nella pagina **[!UICONTROL Seleziona destinazione]** , effettuate una delle seguenti operazioni:
+1. Nella finestra di dialogo **[!UICONTROL Seleziona destinazione]** , effettuate una delle seguenti operazioni:
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Toccate **[!UICONTROL Indietro]** per tornare alla pagina **[!UICONTROL Rinomina]** .
+   * Andate alla nuova posizione delle risorse, quindi fate clic su **[!UICONTROL Avanti]** per proseguire.
+
+   * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Rinomina]** .
 
 1. Se le risorse che state spostando dispongono di pagine, risorse o raccolte di riferimento, accanto alla scheda **[!UICONTROL Seleziona destinazione]** viene visualizzata la scheda **[!UICONTROL Regola riferimenti]** .
 
-   Nella pagina **[!UICONTROL Regola riferimenti]** , effettuate una delle seguenti operazioni:
+   Effettuate una delle seguenti operazioni nella schermata **[!UICONTROL Regola riferimenti]** :
 
-   * Specificate i riferimenti da modificare in base ai nuovi dettagli, quindi toccate **[!UICONTROL Sposta]** per proseguire.
+   * Specificate i riferimenti da modificare in base ai nuovi dettagli, quindi fate clic su **[!UICONTROL Sposta]** per proseguire.
+
    * Nella colonna **[!UICONTROL Regola]** , selezionate o deselezionate i riferimenti alle risorse.
-   * Toccate **[!UICONTROL Indietro]** per tornare alla pagina **[!UICONTROL Seleziona destinazione]** .
-   * Toccate **[!UICONTROL Annulla]** per interrompere l’operazione di spostamento.
+   * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
+
+   * Fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
 
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
