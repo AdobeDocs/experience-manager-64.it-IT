@@ -3,20 +3,20 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'forms '
 audience: end-user
-user-guide-title: Guida per Forms di Adobe Experience Manager 6.4
-breadcrumb-title: Forms Guide
-user-guide-description: Create, manage, publish, and update digital forms.
+user-guide-title: Guida a Forms di Adobe Experience Manager 6.4
+breadcrumb-title: Guida a Forms
+user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3713'
-ht-degree: 1%
+source-wordcount: '3722'
+ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager 6.4 Forms Guide {#forms}
+# Guida a Forms di Adobe Experience Manager 6.4 {#forms}
 
-+ [Guida utente Forms di AEM 6.4](home.md)
++ [Guida utente ad AEM 6.4 Forms](home.md)
 + Note sulla versione {#release-notes-new-features}
    + [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [Riepilogo delle nuove funzioni](using/whats-new.md)
@@ -452,7 +452,7 @@ ht-degree: 1%
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l&#39;acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Verifica delle informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per  plug-in browser Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
