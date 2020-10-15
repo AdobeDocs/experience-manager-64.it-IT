@@ -1,20 +1,20 @@
 ---
 title: Note sulla versione di Adobe Experience Manager 6.4
 seo-title: Note sulla versione di AEM 6.4
-description: Le AEM Note sulla versione contengono informazioni importanti sull’ultima versione di AEM, tra cui le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti.
-seo-description: Le AEM Note sulla versione contengono informazioni importanti sull’ultima versione di AEM, tra cui le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti.
+description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
+seo-description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 20%
+ht-degree: 45%
 
 ---
 
 
 # Note sulla versione di Adobe Experience Manager 6.4
 
-Le AEM Note sulla versione contengono informazioni importanti sull’ultima versione di AEM, tra cui le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti.
+Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 
 ## Articoli AEM chiave
 
@@ -26,10 +26,10 @@ Le AEM Note sulla versione contengono informazioni importanti sull’ultima vers
 
 | Guida utente | Descrizione |
 |--- |---|
-| [Guida utente di Assets](/help/assets/home.md) | Creazione, gestione, distribuzione e ottimizzazione di risorse digitali. |
+| [Guida utente di Assets](/help/assets/home.md) | Crea, gestisci, distribuisci e ottimizza risorse digitali. |
 | [Guida utente Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network. |
-| [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
+| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
+| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
