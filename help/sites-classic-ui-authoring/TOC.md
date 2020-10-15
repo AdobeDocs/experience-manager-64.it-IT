@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente per l’authoring con l’interfaccia classica AEM 6.4
-breadcrumb-title: Classic UI Authoring Guide
-user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
+breadcrumb-title: Guida all’authoring con l’interfaccia classica
+user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 90%
+source-wordcount: '316'
+ht-degree: 85%
 
 ---
 
