@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente per l'authoring di AEM 6.4
-breadcrumb-title: Authoring Guide
-user-guide-description: Learn key concepts for creating content and authoring in AEM.
+user-guide-title: Guida utente all’authoring di AEM 6.4
+breadcrumb-title: Guida all’authoring
+user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 89%
+source-wordcount: '278'
+ht-degree: 92%
 
 ---
 
 
-# Guida utente per l&#39;authoring di AEM 6.4 {#authoring}
+# Guida utente all’authoring di AEM 6.4 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
 + Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
