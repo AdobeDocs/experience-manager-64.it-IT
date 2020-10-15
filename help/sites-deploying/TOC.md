@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.4
-breadcrumb-title: Deploying Guide
-user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
+breadcrumb-title: Guida alla distribuzione
+user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.4, inclusa la distribuzione cloud di Adobe Managed Services.
 translation-type: tm+mt
 source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 11%
+source-wordcount: '349'
+ht-degree: 18%
 
 ---
 
 
-# Guida utente alla distribuzione di AEM 6.4 {#deploying}
+# AEM 6.4 Deploying User Guide {#deploying}
 
 + [Guida utente per la distribuzione](home.md)
 + Introduzione alla piattaforma AEM {#introduction}
