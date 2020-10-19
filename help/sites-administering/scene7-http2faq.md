@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '761'
 ht-degree: 4%
 
 ---
@@ -57,9 +57,8 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 ## Qual è la procedura per abilitare HTTP/2 per il mio account Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-È necessario avviare una richiesta di assistenza tecnica (`s7support@adobe.com`) di Adobe  per passare a HTTP/2; non viene eseguita automaticamente.
-
-1. Nella richiesta di assistenza, fornite le seguenti informazioni:
+1. È necessario [utilizzare il Admin Console  per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto e richiedere di passare a HTTP/2; non viene eseguita automaticamente.
+1. Fornite le seguenti informazioni nel caso di assistenza:
 
    * Nome contatto principale, indirizzo e-mail e numero di telefono.
    * Tutti i domini da trasferire a HTTP2. Questo è, `images.company.com` o `mycompany.scene7.com`.
@@ -98,4 +97,4 @@ Il contenuto non memorizzato nella cache arriva direttamente  server  origine de
 
 ## Come verificare se un URL o un sito Web è attivato con HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-È necessario scaricare un&#39;esternalizzazione da utilizzare con il browser Web. Per Firefox e Chrome esiste un&#39;estensione chiamata **[!UICONTROL HTTP/2 e SPDY Indicator]**. I browser supportano solo HTTP/2 in modo sicuro, pertanto è necessario chiamare un URL con HTTPS per la verifica. Se HTTP/2 è supportato, questo è indicato dall’estensione sotto forma di simbolo di Flash blu e di intestazione &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
+È necessario scaricare un&#39;esternalizzazione da utilizzare con il browser Web. Per Firefox e Chrome esiste un&#39;estensione chiamata **[!UICONTROL HTTP/2 e SPDY Indicator]**. I browser supportano solo HTTP/2 in modo sicuro, pertanto è necessario richiamare un URL con HTTPS per la verifica. Se HTTP/2 è supportato, questo è indicato dall’estensione sotto forma di simbolo di Flash blu e di intestazione &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
