@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 2%
 
 ---
@@ -217,10 +217,10 @@ Potete configurare AEM per caricare le risorse in Dynamic Media Classic. Le riso
 Per configurare Dynamic Media Classic per l’integrazione con AEM, è necessario completare i seguenti passaggi:
 
 1. [Definizione di una configurazione](#creating-a-cloud-configuration-for-scene) cloud - Definisce la mappatura tra una cartella Dynamic Media Classic e una cartella Assets. È necessario completare questo passaggio anche se si desidera solo la sincronizzazione unidirezionale ( AEM Assets a Dynamic Media Classic).
-1. [Abilitare il **del listener **](#enabling-the-adobe-cq-scene-dam-listener)Adobe CQ s7dam Dam - Done nella console[!UICONTROL OSGi].
+1. [Abilitare il **del listener**](#enabling-the-adobe-cq-scene-dam-listener) Adobe CQ s7dam Dam - Done nella console [!UICONTROL OSGi] .
 1. Se desiderate che AEM risorse vengano caricate automaticamente in Dynamic Media Classic, dovete attivare tale opzione e aggiungere Dynamic Media Classic al flusso di lavoro delle risorse di aggiornamento DAM. Potete anche caricare manualmente le risorse.
 1. Aggiunta di componenti Dynamic Media Classic alla barra laterale. Questo consente agli utenti di utilizzare i componenti Dynamic Media Classic nelle loro pagine AEM.
-1. [Mappate la configurazione sulla pagina in AEM](#enabling-scene-for-wcm) - Questo passaggio è richiesto per visualizzare eventuali predefiniti video creati in Dynamic Media Classic. È inoltre richiesto se è necessario pubblicare una risorsa dall’esterno della cartella di destinazione di CQ in Dynamic Media Classic.
+1. [Mappa la configurazione sulla pagina in AEM](#enabling-scene-for-wcm) : questo passaggio è necessario per visualizzare eventuali predefiniti video creati in Dynamic Media Classic. È inoltre richiesto se è necessario pubblicare una risorsa dall’esterno della cartella di destinazione di CQ in Dynamic Media Classic.
 
 Questa sezione descrive come eseguire tutti questi passaggi ed elenca importanti limitazioni.
 
@@ -425,7 +425,7 @@ Tuttavia, se non desiderate che le risorse siano inviate a Dynamic Media Classic
 
 Prima di inviare le risorse a Dynamic Media Classic senza pubblicarle, dovete impostare quanto segue:
 
-1. Contatta l’Assistenza clienti Dynamic Media Classic (s7support@adobe.com) per abilitare l’anteprima protetta per l’account Dynamic Media Classic.
+1. [Utilizzate l&#39;Admin Console  per creare un caso di supporto.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Nel caso in cui si tratti di assistenza, è necessario abilitare l&#39;anteprima protetta per l&#39;account Dynamic Media Classic.
 1. Seguite le istruzioni per [configurare l&#39;anteprima protetta per l&#39;account Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Si tratta degli stessi passaggi da seguire per creare qualsiasi impostazione di test protetta in Dynamic Media Classic.
@@ -434,7 +434,7 @@ Si tratta degli stessi passaggi da seguire per creare qualsiasi impostazione di 
 >
 >Se l’ambiente di installazione è un sistema operativo Unix a 64 bit, consultate [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) sulle opzioni di configurazione aggiuntive da impostare.
 
-#### Limitazioni note per l’invio di risorse in stato non pubblicato  {#known-limitations-for-pushing-assets-in-unpublished-state}
+#### Limitazioni note per l’invio push delle risorse in stato non pubblicato  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
 Se utilizzate questa funzione, tenete presenti le seguenti limitazioni:
 
@@ -560,7 +560,7 @@ Nello specifico, è possibile configurare il formato di file accettato per tipo 
 
 1. Nell’angolo inferiore destro della finestra di configurazione, toccate **[!UICONTROL Salva]**.
 1. Ritornare a AEM e nella barra a sinistra, toccare CRXDE Lite.
-1. Nella pagina CRXDE Lite, nella barra a sinistra, individuate `/etc/cloudservices/scene7/<environment>` (sostituire `<environment>` il nome effettivo).
+1. Nella pagina CRXDE Lite, nella barra a sinistra, individuate il percorso `/etc/cloudservices/scene7/<environment>` (sostitutivo `<environment>` del nome effettivo).
 1. Espandi `<environment>` (sostituisci `<environment>` il nome effettivo) per visualizzare il `mimeTypes` nodo.
 1. Toccate il mimeType appena aggiunto.
 
