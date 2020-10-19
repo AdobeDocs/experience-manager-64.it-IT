@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
@@ -131,4 +131,4 @@ Anche se potete ancora essere live in produzione con visualizzatori basati su DH
 
 **Chi posso contattare per maggiori informazioni?**
 
-Se non trovi la risposta che cerchi in queste domande frequenti, contatta l’assistenza ([s7support@adobe.com](mailto:s7support@adobe.com)) o il tuo Adobe account manager.
+Se questa domanda frequente non risponde a tutte le tue domande, [utilizza il Admin Console  per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di assistenza o contatta il tuo account manager  Adobe.
