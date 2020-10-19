@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
@@ -120,8 +120,8 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 
 È necessario avviare la richiesta per utilizzare l&#39;imaging intelligente; non è abilitata automaticamente.
 
-1. Avviate una richiesta di assistenza tecnica (e-mail: s7support@adobe.com).
-1. Nella richiesta di assistenza, fornite le seguenti informazioni:
+1. [Utilizzate l&#39;Admin Console  per creare un caso di supporto.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Fornite le seguenti informazioni nel caso di assistenza:
 
    1. Nome contatto principale, email, telefono.
    1. Tutti i domini da abilitare per l’imaging intelligente (ovvero, images.company.com o mycompany.scene7.com).
