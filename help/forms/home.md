@@ -1,18 +1,18 @@
 ---
-title: Guida per Forms di Adobe Experience Manager 6.4
-seo-title: Guida utente Forms di AEM 6.4
+title: Guida a Forms di Adobe Experience Manager 6.4
+seo-title: Guida Forms di AEM 6.4
 description: Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 seo-description: Vengono  tutte le attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 22%
+source-wordcount: '369'
+ht-degree: 30%
 
 ---
 
 
-# Guida per Forms di Adobe Experience Manager 6.4
+# Guida a Forms di Adobe Experience Manager 6.4
 
 Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 
@@ -30,8 +30,8 @@ Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di cre
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull&#39;ultima versione di AEM, incluse le nuove piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti |
 | [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
 | [Guida utente Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network. |
-| [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
+| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
+| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
