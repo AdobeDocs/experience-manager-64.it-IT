@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Riepilogo delle nuove funzioni e dei miglioramenti in AEM 6.4 Forms.
 
  AEM Forms include diverse nuove funzioni e miglioramenti che semplificano ulteriormente la creazione, la gestione e l&#39;esperienza utente con moduli adattivi e comunicazioni interattive.
 
-Continua a leggere per una breve introduzione a nuove funzioni e miglioramenti. Per informazioni dettagliate sulle risorse, consultate la documentazione. Inoltre, consultate AEM 6.4 Note sulla [versione di Forms](/help/release-notes/forms.md). Per la documentazione completa AEM 6.4 Forms, visitate [AEM Guida](/help/forms/home.md)utente Forms 6.4.
+Continua a leggere per una breve introduzione a nuove funzioni e miglioramenti. Per informazioni dettagliate sulle risorse, consultate la documentazione. Inoltre, consultate AEM 6.4 Note sulla [versione di Forms](/help/release-notes/forms.md). Per la documentazione completa AEM 6.4 Forms, visitate [AEM Guida](/help/forms/home.md)Forms 6.4.
 
 ## Comunicazioni interattive {#interactive-communications}
 
