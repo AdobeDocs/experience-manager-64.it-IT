@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Requisiti minimi per l’installazione di Adobe Experience Manager:
 
 ### Requisiti minimi di dimensionamento {#minimum-sizing-requirements}
 
-Requisiti minimi per l&#39;esecuzione di Adobe Experience Manager:
+Requisiti minimi per l’esecuzione di Adobe Experience Manager:
 
 * 5 GB di spazio libero su disco nella directory di installazione
 * 2 GB di memoria
@@ -86,7 +86,7 @@ In questo documento sono elencate le piattaforme client e server supportate per 
 
 ## Piattaforme supportate {#supported-platforms}
 
-### Macchine virtuali Java {#java-virtual-machines}
+### Java Virtual Machines {#java-virtual-machines}
 
 L&#39;applicazione richiede l&#39;esecuzione di una macchina virtuale Java, fornita dalla distribuzione Java Development Kit (JDK).
 
@@ -319,7 +319,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server:
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x e 4.x include derivati dalla distribuzione Red Hat, tra cui Red Hat Enterprise Linux, CentOS, Oracle Linux e  Amazon Linux. AEM funzioni aggiuntive per moduli sono supportate solo su CentOS 7 e Red Hat Enterprise Linux 6.5 e 7.
+1. Linux Kernel 2.6, 3.x e 4.x include derivati dalla distribuzione Red Hat, tra cui Red Hat Enterprise Linux, CentOS, Oracle Linux e  Amazon Linux.  funzioni aggiuntive di AEM Forms sono supportate solo su CentOS 7 e Red Hat Enterprise Linux 7.
 1.  AEM Assets: Consultate la sezione [Supporto per XMP riscrittura dei metadati](#requirements-for-aem-assets-xmp-metadata-write-back)
 1.  AEM Assets: Nessun supporto per le immagini multimediali dinamiche. Video multimediale dinamico è supportato.
 1.  AEM Forms è supportato solo su Ubuntu 16.04 LTS.
