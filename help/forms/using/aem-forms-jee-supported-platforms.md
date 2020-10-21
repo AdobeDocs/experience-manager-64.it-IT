@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 1%
+source-wordcount: '3305'
+ht-degree: 0%
 
 ---
 
@@ -278,7 +278,7 @@ In questo documento sono elencate le piattaforme client e server supportate per 
    <td><p>Aggiornamenti e patch</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Nota:</b> Red Hat Enterprise Linux 6 raggiunge la fase di fine manutenzione e le transizioni alla fase di durata estesa il 30 novembre 2020.  Adobe consiglia Red Hat Enterprise Linux 7 per l'aggiornamento e le nuove installazioni.</p> </td> 
    <td><p>A: Supportato</p> </td> 
    <td><p>Rilasci secondari, aggiornamenti cumulativi e aggiornamenti critici</p> </td> 
   </tr> 
@@ -350,10 +350,10 @@ Considerate le seguenti eccezioni quando scegliete una piattaforma per configura
 1.  AEM Forms su JEE non supporta JDK con JBoss® diverso da Oracle Java™ SE.
 1.  AEM Forms su JEE non supporta JDK con IBM® WebSphere® diverso da IBM® JDK.
 1.  AEM Forms su JEE non supporta IBM® DB2 con JBoss®.
-1. CRX-repository supporta la persistenza di tipo TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due diversi sistemi di database tra il server applicazioni e il repository CRX. Tuttavia, su un AEM Forms  in ambiente JEE, è possibile utilizzare MongoMK con repository CRX e un database relazionale supportato con server applicazioni.
+1. CRX-repository supporta la persistenza di tipo TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due diversi sistemi di database tra il server applicazioni e il repository CRX. Tuttavia, in un AEM Forms  in ambiente JEE, è possibile utilizzare MongoMK con repository CRX e un database relazionale supportato con server applicazioni.
 1.  AEM Forms su JEE non supporta il server applicazioni WebSphere su CentOS.
 1. I sistemi operativi AIX e Solaris sono disponibili solo per i clienti che effettuano l&#39;aggiornamento.
-1.  AEM Forms su JEE non supporta il controllo degli accessi basato su ruolo JBoss (RBAC).
+1.  AEM Forms su JEE non supporta il controllo degli accessi basato sui ruoli JBoss (RBAC).
 
 Inoltre, considerate quanto segue durante la scelta del software per  Adobe  AEM Forms sulle distribuzioni JEE:
 
@@ -809,4 +809,4 @@ In circostanze che esulano  controllo del Adobe, le patch di terze parti che riv
 
 Per ulteriori informazioni sulle patch di terze parti, consultate anche il sito del supporto Enterprise  Adobe per gli articoli della knowledgebase relativi al prodotto.
 
-[**Contattare il supporto **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contattare il supporto**](https://www.adobe.com/account/sign-in.supportportal.html)
