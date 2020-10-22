@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,10 +35,6 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 Nell’ambiente di authoring le funzioni di AEM sono accessibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
-
->[!NOTE]
->
->AEM e il dispatcher vengono utilizzati per pubblicare la documentazione AEM.
 
 ## Ambiente di authoring {#author-environment}
 
@@ -96,4 +92,4 @@ Quando il sito AEM è di tipo [community](/help/communities/overview.md) o inclu
 
 ## Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, vengono usati **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)che implementano funzioni di bilanciamento del carico e memorizzazione in cache.**
+Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, vengono usati **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) che implementano funzioni di bilanciamento del carico e memorizzazione in cache.**
