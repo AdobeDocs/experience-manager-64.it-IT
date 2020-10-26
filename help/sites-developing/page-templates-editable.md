@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 8%
 
 ---
@@ -137,7 +137,7 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >La libreria client dell&#39;editor presuppone la presenza dello `cq.shared` spazio dei nomi nelle pagine di contenuto, e se è assente, `Uncaught TypeError: Cannot read property 'shared' of undefined` si verificherà l&#39;errore JavaScript.
 >
->Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio dei nomi.
+>Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio nomi.
 >
 >Per ulteriori informazioni, consultate [Utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client.
 
@@ -230,6 +230,8 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 >[!NOTE]
 >
 >Nel browser di configurazione, potete modificare la cartella globale e attivare l’opzione Modelli **** modificabili se desiderate creare dei modelli all’interno di questa cartella, ma questa non è la procedura consigliata.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACL e gruppi {#acls-and-groups}
 
@@ -396,7 +398,7 @@ I tipi di modello specifici per il sito devono essere memorizzati nella posizion
 
 * `/apps/settings/wcm/template-types`
 
-Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Ad esempio:
+Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -445,7 +447,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Definizioni dei modelli {#template-definitions}
 
-Le definizioni per i modelli modificabili sono memorizzate nelle cartelle [definite dall&#39;](/help/sites-developing/page-templates-editable.md#template-folders) utente (consigliato) o in alternativa in `global`. Ad esempio:
+Le definizioni per i modelli modificabili sono memorizzate nelle cartelle [definite dall&#39;](/help/sites-developing/page-templates-editable.md#template-folders) utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -585,7 +587,7 @@ I criteri di pagina consentono di definire i criteri [di](#content-policies) con
 
 1. **Modelli consentiti**
 
-   * [Definire i percorsi dei modelli consentiti nelle proprietà **di **](/help/sites-authoring/templates.md#allowing-a-template-author)pagina della pagina o della pagina principale appropriata di un ramo secondario.
+   * [Definire i percorsi dei modelli consentiti nelle proprietà **di**](/help/sites-authoring/templates.md#allowing-a-template-author) pagina della pagina o della pagina principale appropriata di un ramo secondario.
    * Impostare la proprietà:
 
       `cq:allowedTemplates`
@@ -639,9 +641,9 @@ Durante il rendering di una pagina:
 
 * **Componenti**:
 
-   * Il componente Pagina unisce la `structure/jcr:content` struttura ad albero del modello alla `jcr:content` struttura della pagina.
+   * Il componente Pagina unisce la `structure/jcr:content` struttura ad albero del modello alla `jcr:content` struttura ad albero della pagina.
    * Il componente Pagina consente solo all’autore di modificare i nodi della struttura del modello contrassegnati come modificabili (così come altri elementi secondari).
-   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene tracciato dal `jcr:content` nodo; viene quindi ricercato lo stesso percorso sotto il `policies/jcr:content` nodo del modello.
+   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene ricavato dal `jcr:content` nodo; viene quindi ricercato lo stesso percorso sotto il `policies/jcr:content` nodo del modello.
 
       * La `cq:policy` proprietà di questo nodo fa riferimento al criterio del contenuto effettivo (ovvero contiene la configurazione di progettazione per quel componente).
       * Questo consente di avere più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
