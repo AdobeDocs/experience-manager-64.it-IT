@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,8 @@ Tutte le configurazioni del servizio cloud in AEM sono consolidate nella `/conf`
 
 Per configurare la cartella per le configurazioni del servizio cloud:
 
-1. Scegliere **[!UICONTROL Strumenti > Generale > Browser]** di configurazione.
+1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Effettuate le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud o saltate questo passaggio per creare e configurare un&#39;altra cartella per le configurazioni del servizio cloud.
 
    1. Nel browser **** Configurazione, selezionate la `global` cartella e toccate **[!UICONTROL Proprietà]**.
