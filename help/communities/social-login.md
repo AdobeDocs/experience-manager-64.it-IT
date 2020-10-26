@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2840'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,7 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![config-properties](assets/config-propertiespng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Crea/Modifica la configurazione del servizio cloud di Facebook.
 
@@ -258,6 +259,7 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![twitterconfigpropping](assets/twitterconfigproppng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Creare/modificare la configurazione del servizio cloud di Twitter.
 
@@ -443,7 +445,7 @@ Se nei registri sono visibili avvisi di attraversamento, è consigliabile aggiun
 
 Per un’istanza di authoring, effettuate l’accesso con privilegi amministrativi:
 
-1. Dalla navigazione globale: selezionare **Strumenti,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Dalla navigazione globale: selezionare **Strumenti, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Create un indice denominato ntBaseLucene-oauth da una copia di ntBaseLucene:
 
    * Sotto il nodo /oak:index
