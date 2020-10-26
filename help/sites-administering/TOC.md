@@ -6,9 +6,9 @@ user-guide-title: Guida utente all’amministrazione di AEM 6.4
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: dd3fdd5fd632d79262aeb2edaca0c58bf6710d18
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '625'
 ht-degree: 17%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 17%
    + [Copia guidata lingua](tc-wizard.md)
    + [Miglioramenti della traduzione](tc-enhancements.md)
    + [Tecniche consigliate per la traduzione](tc-bp.md)
+   + [Configurazioni e browser di configurazione](configurations.md)
    + [AEM domande frequenti](aem-faqs.md)
 + Operazioni {#operations}
    + [Dashboard](dashboards.md)
