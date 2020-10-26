@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -43,7 +43,9 @@ Content Services può distribuire i contenuti come risorse, pacchetti HTML (HTML
 >
 >Prima di iniziare a utilizzare Content Services, assicurati di abilitare il flag Content Services. Per abilitare la creazione e la gestione di modelli nell&#39;app, devi abilitare i modelli di dati nel browser di configurazione.
 >
->Per informazioni dettagliate, consultate **[Amministrazione di Content Services](/help/mobile/developing-content-services.md)**.
+>Per informazioni dettagliate, consultate **[Amministrazione di Content Services](/help/mobile/developing-content-services.md)** .
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
