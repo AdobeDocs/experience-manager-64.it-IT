@@ -9,9 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 13%
 
 ---
@@ -41,6 +41,7 @@ Per abilitare i modelli di frammenti di contenuto è necessario:
 Per [creare un nuovo modello](#creating-a-content-fragment-model) di frammento di contenuto, è **necessario** innanzitutto attivarlo utilizzando Gestione configurazione:
 
 1. Accedi a **[!UICONTROL Strumenti]**, **[!UICONTROL Generali]**, quindi apri **[!UICONTROL Browser configurazioni]**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Selezionate la posizione appropriata per il sito Web.
 1. Utilizzate **[!UICONTROL Crea]** per aprire la finestra di dialogo in cui:
 
@@ -103,7 +104,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
-   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Ad esempio:
+   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Esempio:
 
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
@@ -113,7 +114,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![cf-32](assets/cf-32.png)
 
-1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **[!UICONTROL Salva]** per mantenere la definizione. Ad esempio:
+1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **[!UICONTROL Salva]** per mantenere la definizione. Esempio:
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
