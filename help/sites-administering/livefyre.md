@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1668'
 ht-degree: 4%
 
 ---
@@ -52,6 +52,7 @@ AEM 6.4 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstalla
 ### Configurare AEM per l&#39;utilizzo di Livefyre: Creare una cartella di configurazione {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. Dalla home page di AEM, fai clic sull’icona **Strumenti** nella barra a sinistra, quindi passa a **Generale > Browser** di configurazione.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Fate clic su **Crea** per aprire la finestra di dialogo Crea configurazione.
 1. Assegnate un nome alla configurazione e selezionate la casella di controllo **Cloud Configurations (Configurazioni** cloud).
 
@@ -61,7 +62,7 @@ AEM 6.4 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstalla
 
 ### Configurare AEM per l&#39;utilizzo di Livefyre: Creare una configurazione Livefyre {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
-Configurate AEM per utilizzare le credenziali di licenza Livefyre della vostra organizzazione, consentendo la comunicazione tra Livefyre e AEM.
+Configurate AEM per utilizzare le credenziali di licenza Livefyre della vostra azienda, consentendo la comunicazione tra Livefyre e AEM.
 
 1. Dalla home page di AEM, fate clic sull&#39;icona **Strumenti** nella barra a sinistra, quindi selezionate **Distribuzione > Configurazione** Livefyre.
 1. Selezionate la cartella di configurazione in cui desiderate creare una nuova configurazione Livefyre, quindi fate clic su **Crea**.
@@ -73,6 +74,8 @@ Configurate AEM per utilizzare le credenziali di licenza Livefyre della vostra o
    >Per poter aggiungere le configurazioni di Livefyre, nelle cartelle deve essere abilitata l&#39;opzione Configurazioni cloud nelle relative proprietà. Le cartelle di configurazione vengono create e gestite nel browser di configurazione.
    >
    >Non è possibile creare un nome per una configurazione, a cui fa riferimento il percorso della cartella in cui si trova. Potete avere una sola configurazione per cartella.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Selezionate la scheda di configurazione Livefyre appena creata, quindi fate clic su **Proprietà**.
 
