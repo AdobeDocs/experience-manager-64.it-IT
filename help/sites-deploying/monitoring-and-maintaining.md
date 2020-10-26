@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Un fattore chiave in questo caso è che per riconoscere i potenziali problemi è
 | [I file](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) di registro vengono monitorati. |  |  |
 | Il monitoraggio del sistema viene eseguito (in modo costante) in background. | CPU, memoria, disco e utilizzo della rete. Ad esempio, iostat / vmstat / perfmon. | I dati registrati vengono visualizzati e possono essere utilizzati per tenere traccia dei problemi di prestazioni. Anche i dati non elaborati sono accessibili. |
 | [AEM prestazioni sono sotto controllo](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Inclusi i contatori delle [richieste](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) per monitorare i livelli di traffico. | Se si riscontra una perdita significativa, o a lungo termine, dei risultati ottenuti, occorre effettuare un&#39;indagine approfondita. |
-| Stai monitorando i tuoi agenti [di](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)replica. &quot; |  |  |
+| Stai monitorando i tuoi agenti [di](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)replica. |  |  |
 | Elimina regolarmente le istanze del flusso di lavoro. | Dimensioni dell&#39;archivio e prestazioni del flusso di lavoro. | Consultate Sgancio [regolare delle istanze](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)del flusso di lavoro. |
 
 ## Backup {#backups}
@@ -99,7 +99,7 @@ Questa sezione descrive le operazioni di manutenzione relative alla funzione di 
 
 ### Panoramica {#overview}
 
-Lo strumento **Rimuovi versioni** è disponibile nella console **[](/help/sites-administering/tools-consoles.md)Strumenti **in Gestione**versioni **o direttamente all’indirizzo: &quot;
+Lo strumento **Rimuovi versioni** è disponibile nella console **[](/help/sites-administering/tools-consoles.md) Strumenti** in Gestione **versioni** o direttamente all’indirizzo:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -121,7 +121,7 @@ Lo strumento **Rimuovi versioni** è disponibile nella console **[](/help/sites-
 
 Per eliminare le versioni di un sito Web, procedere come segue:
 
-1. Passate alla console **[](/help/sites-administering/tools-consoles.md)Strumenti **, selezionate Gestione**versioni **e fate doppio clic su**Rimuovi versioni **.
+1. Passate alla console **[](/help/sites-administering/tools-consoles.md) Strumenti**, selezionate Gestione **versioni** e fate doppio clic su **Rimuovi versioni**.
 1. Impostate il percorso iniziale del contenuto da rimuovere (ad es. `/content/geometrixx-outdoors`).
 
    * Per eliminare solo il nodo definito dal percorso, deselezionare **Ricorsivo**.
@@ -143,7 +143,7 @@ Per eliminare le versioni di un sito Web, procedere come segue:
 I processi **Prova** e **Svuota** elencano tutti i nodi elaborati. Durante il processo, un nodo può avere uno dei seguenti stati:
 
 * `ignore (not versionnable)`: il nodo non supporta il controllo delle versioni e viene ignorato durante il processo.
-* `ignore (no version)`: il nodo non dispone di alcuna versione e viene ignorato durante il processo. &quot;
+* `ignore (no version)`: il nodo non dispone di alcuna versione e viene ignorato durante il processo.
 * `retained`: il nodo non viene eliminato.
 * `purged`: il nodo viene eliminato.
 
@@ -244,7 +244,7 @@ Per attivare il livello di registro di debug per un logger, impostare la proprie
 >
 >Non lasciare il registro a livello di registro di debug più lungo del necessario, in quanto genera molte voci di registro, consumando quindi risorse.
 
-Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
+Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Esempio:
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -317,10 +317,15 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
    >`org.apache.sling.commons.log.pattern` supporta fino a sei argomenti.
    >
    >{0} Il timestamp del tipo `java.util.Date`
+   >
    >{1} il marcatore di registro
-   >{2} il nome del thread corrente\
-   >{3} il nome del logger\
-   >{4} il livello di registro\
+   >
+   >{2} il nome del thread corrente
+   >
+   >{3} il nome del logger
+   >
+   >{4} il livello di registro
+   >
    >{5} il messaggio di registro
    >
    >Se la chiamata di registro include una traccia `Throwable` di stack, questa viene aggiunta al messaggio.
@@ -405,21 +410,20 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
    >* È possibile specificare come `java.util.SimpleDateFormat` pattern una pianificazione di ora/data. Definisce il periodo di tempo dopo il quale il file verrà ruotato; inoltre il suffisso aggiunto al file ruotato (per l’identificazione).
 
    >
-   >  Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
    >
-   >  Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo tale data sarà preciso), ../logs/error.log verrà rinominato in ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio verrà restituita a (un nuovo e vuoto) ../logs/error.log finché non viene eseguito il rollback al cambio di giorno successivo.
+   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo tale data sarà preciso), ../logs/error.log verrà rinominato in ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio verrà restituita a (un nuovo e vuoto) ../logs/error.log finché non viene eseguito il rollback al cambio successivo del giorno.
    >
-   >  | `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotazione al primo giorno di ogni settimana (a seconda delle impostazioni internazionali). |
-   >  | `'.'yyyy-MM-dd` | Rotazione a mezzanotte ogni giorno. |
-   >  | `'.'yyyy-MM-dd-a` | Rotazione a mezzanotte e a mezzogiorno di ogni giorno. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotazione nella parte superiore di ogni ora. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotazione all&#39;inizio di ogni minuto. |
+   >| `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotazione al primo giorno di ogni settimana (a seconda delle impostazioni internazionali). |
+   >| `'.'yyyy-MM-dd` | Rotazione a mezzanotte ogni giorno. |
+   >| `'.'yyyy-MM-dd-a` | Rotazione a mezzanotte e a mezzogiorno di ogni giorno. |
+   >| `'.'yyyy-MM-dd-HH` | Rotazione nella parte superiore di ogni ora. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotazione all&#39;inizio di ogni minuto. |
    >
-   >  Nota: Quando si specifica un&#39;ora/data:
-   >
-   >  1. È necessario &quot;escape&quot; testo letterale all&#39;interno di una coppia di virgolette singole (&#39; &#39;);
+   >Nota: Quando si specifica un&#39;ora/data:
+   > 1. È necessario &quot;escape&quot; testo letterale all&#39;interno di una coppia di virgolette singole (&#39; &#39;);
       >
       >     
       per evitare che alcuni caratteri vengano interpretati come lettere del pattern.
@@ -456,7 +460,7 @@ Queste voci contengono le stesse informazioni visualizzate durante la modifica d
 
 #### Record di audit OSGi dalla console Web {#osgi-audit-records-from-the-web-console}
 
-Gli eventi OSGi generano inoltre record di controllo che possono essere visualizzati dalla scheda Stato **** configurazione -> **File di registro **scheda nella console Web AEM:
+Gli eventi OSGi generano inoltre record di controllo che possono essere visualizzati dalla scheda Stato **di** configurazione > scheda File **di** registro nella AEM console Web:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -497,7 +501,7 @@ Per monitorare un agente di replica:
    >
    >Non utilizzate il collegamento &quot;Test Connection&quot; per la replica inversa in uscita in un&#39;istanza pubblicata.
    >
-   >Se viene eseguito un test di replica per una coda in uscita, tutti gli elementi precedenti alla replica di test verranno rielaborati con ogni replica inversa.
+   >Se viene eseguito un test di replica per una coda in uscita, tutti gli elementi che sono più vecchi della replica di test verranno rielaborati con ogni replica inversa.
    >
    >Se tali elementi esistono già in una coda, possono essere trovati con la seguente query XPath JCR e devono essere rimossi.
    >
@@ -591,7 +595,7 @@ Alcuni di questi dipenderanno dal sistema operativo in uso.
   <tr> 
    <td>Chiamate di sistema</td> 
    <td>Identificare i problemi di temporizzazione.</td> 
-   <td><p>Le chiamate a <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing vengono utilizzate per generare marche temporali dal codice o tramite commenti <a href="#html-comments"></a>HTML.</p> <p><strong>Nota:</strong> Tali misure dovrebbero essere attuate in modo che possano essere attivate o disattivate secondo necessità; quando un sistema funziona senza problemi, l'onere della raccolta delle statistiche non sarà necessario.</p> </td> 
+   <td><p>Le chiamate a <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing vengono utilizzate per generare marche temporali dal codice o tramite commenti <a href="#html-comments"></a>HTML.</p> <p><strong>Nota:</strong> Devono essere attuate in modo da poter essere attivate o disattivate secondo necessità; quando un sistema funziona senza problemi, l'onere della raccolta delle statistiche non sarà necessario.</p> </td> 
   </tr> 
   <tr> 
    <td>Apache Bench</td> 
