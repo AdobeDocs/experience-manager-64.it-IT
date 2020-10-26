@@ -8,9 +8,9 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Per creare un frammento di layout per il canale di stampa della comunicazione in
 
 1. Toccare **+** nel riquadro a sinistra accanto a **Tabella** 1 e fare clic con il pulsante destro del mouse su **Cella1** , quindi selezionare **Rinomina oggetto** in **data**.
 
-   Allo stesso modo, rinominate **Cell2**, **Cell3**, **Cell4** e **Cell5** rispettivamente in **Time************** , Number, Duration, Durata, e Oneri.
+   Allo stesso modo, rinominate **Cell2**, **Cell3**, **Cell4** e **Cell5** rispettivamente in **Time************** , Number, Duration, e in Upload.
 
 1. Fare clic sui campi di testo Intestazione nella vista **di** Designer e rinominarli in **Ora**, **Numero**, **Durata** e **Addebiti**.
 
@@ -178,6 +178,7 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
 1. Toccare **Strumenti** ![Strumenti](assets/tools-icon.svg) > **Browser** di configurazione.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
