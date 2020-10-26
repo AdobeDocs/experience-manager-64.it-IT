@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Questo componente dispone degli strumenti necessari per eseguire il rendering de
 
 ## Posizioni {#locations}
 
-I modelli vengono salvati e creati in `/conf`, in una cartella in cui è abilitata la proprietà [Modelli di frammenti di](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenuto. Questa impostazione è visibile anche nelle proprietà **di** configurazione, accessibili dal browser **di** configurazione.
+I modelli vengono salvati e creati in `/conf`, in una cartella in cui è abilitata la proprietà [Modelli di frammenti di](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenuto. Questa impostazione è visibile anche nelle proprietà **di** configurazione, accessibili dal browser **[di](/help/sites-administering/configurations.md)** configurazione.
 
 1. Passare al browser tramite **Strumenti**, **Generali**, **Configuration Browser** Ad esempio, 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -85,7 +85,7 @@ L&#39;Editor **modello di frammento di** contenuto ha due parti:
 
 * Il pannello di anteprima, o visualizzazione, a sinistra, in cui è possibile rilasciare gli elementi. Tale comportamento:
 
-   * Visualizza un&#39;anteprima del tipo **di** dati creato.
+   * Visualizza un&#39;anteprima del tipo **di** dati di cui viene creata un&#39;istanza.
    * Consente l&#39;ordinamento all&#39;interno dell&#39;Editor modello.
 
 * Le schede **Tipi** di dati/**Proprietà** nel pannello a destra. Tale comportamento:
