@@ -1,13 +1,14 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
-sub-product: 'forms '
+sub-product: forms
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Guida a Forms di Adobe Experience Manager 6.4
 breadcrumb-title: Guida a Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 translation-type: tm+mt
-source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '3721'
 ht-degree: 2%
@@ -452,7 +453,7 @@ ht-degree: 2%
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l&#39;acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Verifica delle informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per  plug-in browser Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
