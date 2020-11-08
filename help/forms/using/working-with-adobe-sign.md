@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3569'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,10 @@ Per creare un modulo adattivo per  Adobe Sign, effettuate le seguenti operazioni
 
    1. Specificare **Nome** e **Titolo** per il modulo adattivo.
    1. Selezionate il contenitore [di](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configurazione creato durante la configurazione  Adobe Sign con  AEM Forms.
+
+      >[!NOTE]
+      >
+      >Nell&#39;elenco a discesa **[!UICONTROL Cloud Service]** Adobe Sign sono visualizzati i servizi cloud configurati nel contenitore di configurazione selezionato in questo campo. L&#39;elenco a discesa **[!UICONTROL Cloud Service]** Adobe Sign è disponibile nella sezione Firma **** elettronica delle proprietà del modulo adattivo quando si seleziona l&#39;opzione **[!UICONTROL Abilita  Adobe Sign]** .
 
 1. Nella scheda Modello **** modulo, selezionare una delle opzioni seguenti:
 
@@ -153,6 +157,8 @@ Per selezionare un servizio cloud e l&#39;ordine di firma, effettuate le seguent
 1. Selezionate un servizio cloud dall&#39;elenco di Cloud Services Adobe Sign già configurati.
 
    Se l’elenco di Cloud Service **Adobe Sign** è vuoto, seguite l’articolo [Configura  Adobe Sign con  AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) per configurare il servizio.
+
+   Il menu a discesa elenca i servizi cloud presenti nella `global` cartella in Strumenti > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Inoltre, nel menu a discesa sono elencati anche i servizi cloud presenti nella cartella selezionata nel campo Contenitore **[!UICONTROL di]** configurazione al momento della creazione di un modulo adattivo.
 
 1. Selezionare l&#39;ordine di firma dalla finestra di dialogo **Firma** dei firmatari.  cantanti Adobe Sign possono firmare un modulo adattivo in **sequenza** , uno dopo l’altro firmatario o **simultaneamente** , in qualsiasi ordine.
 
