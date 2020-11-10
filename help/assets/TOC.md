@@ -7,9 +7,9 @@ user-guide-title: Guida ad Assets
 breadcrumb-title: Guida ad Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '721'
 ht-degree: 46%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 46%
 # Guida ad Assets {#assets}
 
 + [Guida utente di Risorse](home.md)
-+ [Note sulla versione di AEM 6.4 Assets](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
++ [Note sulla versione di AEM 6.4 Assets](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
 + [Informazioni su DAM](assets.md)
 + [Miglioramenti dell&#39;esperienza utente](ux-improvements.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
