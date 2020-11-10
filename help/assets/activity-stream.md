@@ -3,10 +3,10 @@ title: Flusso di attività nella timeline
 description: 'Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 40%
+source-wordcount: '214'
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,7 @@ Le seguenti operazioni vengono registrate nel flusso di attività:
 
 I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro.
 
-Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate in AEM tramite [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o l’[app desktop AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html).
+Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate in AEM tramite [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o l’[app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >
