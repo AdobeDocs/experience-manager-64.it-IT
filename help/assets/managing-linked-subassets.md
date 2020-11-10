@@ -3,9 +3,9 @@ title: Gestire le risorse composte e generare le risorse secondarie.
 description: Scoprite come creare riferimenti a AEM risorse dai file  InDesign,  Adobe Illustrator e Photoshop. Scoprite inoltre come utilizzare la funzione Visualizzatore pagina per visualizzare le singole pagine di file con più pagine, inclusi file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gestire le risorse composte con le risorse secondarie {#managing-compound-assets}
 
-Adobe Experience Manager (AEM) Le risorse possono identificare se un file caricato contiene riferimenti a risorse già presenti nella directory archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a AEM risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui viene fatto riferimento.
+Le risorse Adobe Experience Manager (AEM) possono identificare se un file caricato contiene riferimenti a risorse già presenti nella directory archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a AEM risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui viene fatto riferimento.
 
 Oltre ad eliminare la ridondanza, il riferimento AEM risorse nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l&#39;efficienza e la produttività degli utenti.
 
@@ -117,7 +117,7 @@ Per  InDesign, è possibile estrarre le pagine utilizzando  server InDesign. Se 
 
 Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a sinistra e nei controlli Visualizzatore pagina:
 
-* **[!UICONTROL Azioni]** desktop per aprire o visualizzare una risorsa secondaria specifica mediante AEM&#39;app desktop. Scoprite come [configurare le azioni](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) desktop se utilizzate AEM&#39;app desktop.
+* **[!UICONTROL Azioni]** desktop per aprire o visualizzare una risorsa secondaria specifica mediante AEM&#39;app desktop. Scoprite come [configurare le azioni](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) desktop se utilizzate AEM&#39;app desktop.
 
 * **[!UICONTROL L’opzione Proprietà]** consente di aprire la pagina [!UICONTROL Proprietà] della risorsa secondaria specifica.
 
@@ -133,4 +133,5 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 >[!MORELIKETHIS]
 >
->* [Usa app desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Usa app desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+
