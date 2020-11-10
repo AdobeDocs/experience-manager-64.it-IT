@@ -3,10 +3,10 @@ title: Configurate i tag delle risorse mediante Smart Content Service.
 description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 53%
+source-wordcount: '1212'
+ht-degree: 54%
 
 ---
 
@@ -83,7 +83,7 @@ Una volta scaduto, il certificato non è più affidabile. Non è possibile rinno
 
    ![Per aggiungere un nuovo certificato di protezione, eliminate la voce di ricerca per similarità esistente in Keystore](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente`similaritysearch`in Registro chiavi*
+   *Figura: per aggiungere un nuovo certificato di sicurezza, elimina la voce esistente `similaritysearch` in Registro chiavi*
 
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**. Fai clic su **[!UICONTROL Tag avanzati risorse]** > **[!UICONTROL Mostra configurazioni]** > **[!UICONTROL Configurazioni disponibili]**. Seleziona la configurazione richiesta.
 
@@ -190,5 +190,4 @@ Dopo aver completato la configurazione, utilizzate un MBean JMX per convalidare 
 >* [Gestire i tag avanzati](managing-smart-tags.md)
 >* [Panoramica e come formare i tag avanzati](enhanced-smart-tags.md)
 >* [Linee guida e regole per la formazione di Smart Content Service](smart-tags-training-guidelines.md)
->* [Esercitazione video sulla configurazione degli smart tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
