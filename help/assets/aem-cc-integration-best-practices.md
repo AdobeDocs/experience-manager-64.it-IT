@@ -3,10 +3,10 @@ title: Best practice per l'integrazione di AEM e Creative Cloud
 description: Best practice per integrare un’implementazione AEM con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f44950e3e0653df61289e1bd435d13829051365
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '3578'
-ht-degree: 17%
+source-wordcount: '3566'
+ht-degree: 16%
 
 ---
 
@@ -24,7 +24,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 >[!NOTE]
 >
->AEM per Creative Cloud la condivisione delle cartelle è obsoleta e non è più inclusa in questa guida.  Adobe consiglia di utilizzare funzionalità più recenti, come [collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe o l’app [desktop](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/introduction.html) AEM per fornire agli utenti creativi l’accesso alle risorse gestite in AEM.
+>AEM per Creative Cloud la condivisione delle cartelle è obsoleta e non è più inclusa in questa guida.  Adobe consiglia di utilizzare funzionalità più recenti, come [collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe o l’app [desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) AEM per fornire agli utenti creativi l’accesso alle risorse gestite in AEM.
 
 ## Esigenze di collaborazione tra creativi, esperti di marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -32,14 +32,14 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 |---|---|---|
 | Esperienza semplificata per i creativi su desktop | Semplificate l&#39;accesso alle risorse da un DAM ( AEM Assets) per i creativi professionisti o, più in generale, per gli utenti desktop che lavorano nelle applicazioni native per la creazione di risorse. Hanno bisogno di un modo semplice e semplice per scoprire, usare (aprire), modificare e salvare le modifiche in AEM, nonché caricare nuovi file. | desktop Win o Mac; Creative Cloud di app |
 | Fornire risorse pronte all’uso di alta qualità da  Adobe Stock | Gli esperti di marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l&#39;origine e l&#39;individuazione delle risorse. I creativi professionisti usano le risorse approvate direttamente dai loro strumenti creativi. |  AEM Assets;  mercato Adobe Stock; campi di metadati |
-| Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L’organizzazione intende condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | Portale del marchio, Contenuti di condivisione delle risorse |
+| Distribuire e condividere le risorse per organizzazioni | I dipartimenti interni/le filiali locali e i partner esterni, i distributori e le agenzie utilizzano le risorse approvate condivise dall&#39;organizzazione madre. L&#39;organizzazione intende condividere in modo sicuro e senza soluzione di continuità le risorse create per un riutilizzo più ampio. | Portale del marchio, Contenuti di condivisione delle risorse |
 
 ## Offerte  Adobe per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 
 | Proposta di valore per le persone coinvolte |  offerta Adobe | Superfici interessate |
 |---|---|---|
 | Gli utenti creativi scoprono le risorse da AEM, le aprono e le usano, le modificano e caricano le modifiche in AEM, nonché caricano nuovi file in AEM, senza uscire dalle app di Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Photoshop,  Illustrator e  InDesign |
-| Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche in AEM e il caricamento di nuovi file in AEM dall’ambiente desktop. Utilizzano un&#39;integrazione generica per aprire qualsiasi tipo di risorsa nell&#39;applicazione desktop nativa, inclusi quelli non  Adobe. | [App desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM app desktop su Windows e Mac desktop |
+| Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche in AEM e il caricamento di nuovi file in AEM dall’ambiente desktop. Utilizzano un&#39;integrazione generica per aprire qualsiasi tipo di risorsa nell&#39;applicazione desktop nativa, inclusi quelli non  Adobe. | [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | AEM app desktop su Windows e Mac desktop |
 | Gli esperti di marketing e gli utenti aziendali possono scoprire, visualizzare in anteprima, concedere in licenza e salvare le risorse Adobe Stock  e gestirle direttamente dall’AEM. Le risorse concesse in licenza e salvate offrono  metadati Adobe Stock selezionati per una migliore governance. | [Integrazione  Experience Manager e  Adobe Stock](aem-assets-adobe-stock.md) | AEM interfaccia Web |
 
 Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
@@ -67,9 +67,9 @@ The terms used in this document may have a different meaning in other contexts. 
 | Caso di utilizzo | App desktop AEM | Condivisione delle cartelle | Altre soluzioni |
 |---|---|---|---|
 | Condivisione di un numero inferiore di risorse DAM con un utente Creative | ✔✔ | ✔ |  |
-| Condivisione di un numero maggiore (2) di risorse DAM con un utente Creative | ✔✔ | ✘ | [Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) <br> [Condivisione risorse](assets-finder-editor.md) |
+| Condivisione di un numero maggiore (2) di risorse DAM con un utente Creative | ✔✔ | ✘ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Condivisione risorse](assets-finder-editor.md) |
 | Condivisione di risorse DAM con utenti che hanno accesso a DAM | ✔✔ | ✔ | [Condivisione collegamenti](link-sharing.md) |
-| Condivisione di risorse DAM con utenti che non hanno accesso a DAM | ✘ | ✔✔ | [Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/home.html) <br> [Condivisione risorse](assets-finder-editor.md) |
+| Condivisione di risorse DAM con utenti che non hanno accesso a DAM | ✘ | ✔✔ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Condivisione risorse](assets-finder-editor.md) |
 | Salvataggio di un numero/volume di risorse inferiore in DAM | ✔✔ | ✔ | [Caricamento interfaccia Web](managing-assets-touch-ui.md) |
 | Salva un numero maggiore di risorse in DAM (3) | ✔✔ | ✘ | [Interfaccia Web Carica](managing-assets-touch-ui.md) script <br> personalizzati / strumento |
 | Migrazione di un numero elevato di risorse a DAM | ✘ | ✘ | [Guida alla migrazione](assets-migration-guide.md) |
@@ -111,7 +111,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 ### Considerazioni sull&#39;utilizzo dell&#39;integrazione AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Consultate Best practice per le app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* Consultate Best practice per le app [desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Consultate Integrazione [Adobe Stock](aem-assets-adobe-stock.md)
 * Consultate [collegamento Adobe risorse](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 
@@ -297,7 +297,7 @@ Per pianificare ed eseguire la migrazione delle risorse dal sistema esistente a 
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [Best practice per AEM app desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [AEM Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Best practice per AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integrazione AEM e  Adobe Stock](aem-assets-adobe-stock.md)
 
