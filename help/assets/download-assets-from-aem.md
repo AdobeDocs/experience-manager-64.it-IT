@@ -3,7 +3,7 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 05ecc940180ead13676cc5bb8e2e230b1d55162b
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Per scaricare le risorse, effettuate le seguenti operazioni:
 
    | Opzione di esportazione o download | Descrizione |
    |---|---|
-   | **[!UICONTROL Crea una cartella separata per ogni risorsa]** | Selezionate questa opzione per includere tutte le risorse scaricate, incluse quelle nelle cartelle figlie nidificate sotto la cartella padre della risorsa in una cartella sul computer locale. Se questa opzione non è selezionata, per impostazione predefinita la gerarchia delle cartelle viene ignorata e tutte le risorse vengono scaricate in una cartella del computer locale. |
+   | **[!UICONTROL Crea una cartella separata per ogni risorsa]** | Selezionate questa opzione per includere in un’unica cartella del computer locale tutte le risorse che avete scaricato, comprese quelle presenti in cartelle figlie nidificate sotto la cartella padre della risorsa. Se questa opzione non è selezionata, per impostazione predefinita la gerarchia delle cartelle viene ignorata e tutte le risorse vengono scaricate in una cartella del computer locale. |
    | **[!UICONTROL E-mail]** | All’utente viene inviata una notifica e-mail. I modelli standard per le e-mail sono disponibili nelle seguenti posizioni:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> I modelli personalizzati durante la distribuzione sono disponibili nelle seguenti posizioni: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Potete memorizzare i modelli personalizzati specifici per il tenant nelle seguenti posizioni:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Assets]** | Selezionate questa opzione per scaricare la risorsa nel modulo originale senza alcuna rappresentazione.<br>L’opzione Risorse secondarie è disponibile se la risorsa originale contiene risorse secondarie. |
    | **[!UICONTROL Rappresentazioni]** | Rappresentazione binaria di una risorsa. Le risorse hanno una rappresentazione principale, ossia quella del file caricato. Possono avere un numero qualsiasi di rappresentazioni. <br> Con questa opzione, potete selezionare le rappresentazioni da scaricare. Le rappresentazioni disponibili dipendono dalla risorsa selezionata. L’opzione è disponibile se la risorsa dispone di rappresentazioni. |
@@ -66,7 +66,7 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 
 È `Asset Download Servlet` possibile disattivare le istanze di [!DNL Experience Manager] pubblicazione aggiornando la configurazione del dispatcher per bloccare qualsiasi richiesta di download di risorse. Il servlet può anche essere disattivato manualmente tramite la console OSGi direttamente.
 
-1. Per bloccare le richieste di download delle risorse tramite una configurazione dispatcher, modifica la `dispatcher.any` configurazione e aggiungi una regola alla sezione [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Per bloccare le richieste di download delle risorse tramite una configurazione dispatcher, modifica la `dispatcher.any` configurazione e aggiungi una regola alla sezione [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Per disattivare il componente OSGi in un’istanza Pubblica, accedete alla console OSGi all’indirizzo `http://[aem_server]:[port]/system/console/components`. Individuate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e fate clic su **[!UICONTROL Disattiva]**.
 
