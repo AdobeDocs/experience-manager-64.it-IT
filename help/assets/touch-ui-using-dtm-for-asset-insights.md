@@ -3,9 +3,9 @@ title: Abilitazione di approfondimenti sulle risorse tramite DTM
 description: Scopri come utilizzare  Gestione dinamica dei tag (DTM, Dynamic Tag Management) di Adobe per abilitare le informazioni sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '678'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> Adobe DTM è obsoleto a favore di  Adobe Experience Platform Launch e presto arriverà [alla fine della vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f).  Adobe consiglia di [utilizzare Launch per approfondimenti](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sulle risorse.
+> Adobe DTM è obsoleto a favore di  Adobe Experience Platform Launch e presto arriverà [alla fine della vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f).  Adobe consiglia di [utilizzare Launch per approfondimenti](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sulle risorse.
 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, effettuate le seguenti operazioni:
 
