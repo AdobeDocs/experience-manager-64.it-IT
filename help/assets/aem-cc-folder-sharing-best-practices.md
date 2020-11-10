@@ -3,9 +3,9 @@ title: Condivisione  cartelle AEM Assets con Creative Cloud
 description: Configurazione e procedure ottimali per consentire agli utenti di Adobe Experience Manager Assets di scambiare cartelle di risorse con gli utenti Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Il diagramma seguente fornisce una panoramica dell&#39;integrazione.
 L&#39;integrazione include i seguenti elementi:
 
 * **server** AEM Assets implementato nella rete aziendale (servizi gestiti o locali): La condivisione delle cartelle viene avviata qui.
-* **Servizio** di base di Adobe Marketing Cloud Assets: funge da intermediario tra i servizi di storage AEM e Creative Cloud. L&#39;amministratore della società che utilizza l&#39;integrazione deve stabilire una relazione di trust tra l&#39;organizzazione del Marketing Cloud e l&#39;istanza AEM Assets . Inoltre, [definiscono un elenco di collaboratori](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)di Creative Cloud approvati, che  utenti AEM Assets possono condividere anche le cartelle per ulteriore protezione.
+* **Servizio** di base di Adobe Marketing Cloud Assets: funge da intermediario tra i servizi di storage AEM e Creative Cloud. L&#39;amministratore della società che utilizza l&#39;integrazione deve stabilire una relazione di trust tra l&#39;organizzazione del Marketing Cloud e l&#39;istanza AEM Assets . Inoltre, [definiscono un elenco di collaboratori](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets)di Creative Cloud approvati, che  utenti AEM Assets possono condividere anche le cartelle per ulteriore protezione.
 * **Creative Cloud servizi** Web Risorse (interfaccia utente Web per l’archiviazione e la Creative Cloud di file): Questo è il punto in cui gli utenti di Creative Cloud specifici, con cui è stata condivisa una cartella AEM Assets , potrebbero accettare l’invito e visualizzare la cartella nell’archivio dell’account Creative Cloud.
 * **Creative Cloud applicazione** desktop: (Facoltativo) Consente l&#39;accesso diretto alla cartella o ai file condivisi dal desktop dell&#39;utente creativo tramite sincronizzazione con l&#39;archiviazione Creative Cloud risorse.
 
