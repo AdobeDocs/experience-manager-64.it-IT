@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Il Pannello operazioni nel AEM 6 aiuta gli operatori di sistema a monitorare AEM
 
 >[!NOTE]
 >
->Per poter accedere al Pannello operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Utente, Gruppo e Accesso all’amministrazione](/help/sites-administering/user-group-ac-admin.md)dei diritti.
+>Per poter accedere al Pannello operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Utente, Gruppo e Amministrazione](/help/sites-administering/user-group-ac-admin.md)dei diritti di accesso.
 
 ## Rapporti stato {#health-reports}
 
@@ -151,7 +151,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
    Lo scopo di ciascuna proprietà di configurazione è il seguente:
 
    * **Nome (hc.name):** Nome del controllo dello stato composito. È consigliabile assegnare un nome significativo.
-   * **Tag (hc.tags):** Tag per il controllo dello stato. Se questo controllo di integrità composito è destinato a essere parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui è correlato questo composito.
+   * **Tag (hc.tags):** Tag per il controllo dello stato. Se questo controllo di integrità composito è destinato a essere parte di un altro controllo di stato composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui è correlato questo composito.
    * **Nome MBean (hc.mava.name):** Il nome del Mava che verrà dato al JMX MBean di questo controllo di stato composito.
    * **Tag filtro (filter.tags):** Si tratta di una proprietà specifica per i controlli di integrità compositi. Questi sono i tag che il composito deve aggregare. La verifica dello stato composito verrà aggregata sotto il suo gruppo tutti i controlli di integrità che presentano tag corrispondenti a qualsiasi tag del filtro di questa composizione. Ad esempio, un controllo dello stato composito con i tag filtro **test** e **check** , aggrega tutti i controlli di integrità individuali e composite che dispongono di uno dei tag **test** e **check** nella proprietà tags ( `hc.tags`).
 
@@ -251,7 +251,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
      <li>se un'attività non viene aggiunta a una finestra di manutenzione, il relativo controllo dello stato restituirà Critico</li> 
      <li>è necessario configurare le attività di manutenzione Registro di controllo e Rimozione flusso di lavoro o rimuoverle dalle finestre di manutenzione. Se non viene configurata, queste attività non riusciranno al primo tentativo di esecuzione, pertanto il controllo di manutenzione del sistema restituirà lo stato Critico.</li> 
      <li><strong>Con AEM 6.4</strong>, c'è anche un controllo per l'attività di manutenzione <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">dei binari di</a> Lucene</li> 
-     <li>AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce uno stato di avviso subito dopo l'avvio, in quanto le attività non vengono mai eseguite. A partire da 6.3, torneranno a essere OK se la prima finestra di manutenzione non è ancora stata raggiunta.</li> 
+     <li>aem 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce uno stato di avviso subito dopo l'avvio, in quanto le attività non vengono mai eseguite. A partire da 6.3, torneranno a essere OK se la prima finestra di manutenzione non è ancora stata raggiunta.</li> 
     </ul> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=systemcheck,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -296,7 +296,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
   </tr> 
   <tr> 
    <td>Verifiche di sicurezza</td> 
-   <td><p>Il controllo di sicurezza è un insieme composto che aggrega i risultati di più controlli di sicurezza. Questi controlli di integrità individuali risolvono problemi diversi dall'elenco di controllo di sicurezza disponibile nella pagina della documentazione <a href="/help/sites-administering/security-checklist.md">Security Checklist.</a> Il controllo è utile come test di fumo di sicurezza all'avvio dell'istanza. </p> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.HealthCheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">securityChecks,type=HealthCheck</a></p> </td> 
+   <td><p>Il controllo di sicurezza è un insieme composto che aggrega i risultati di più controlli di sicurezza. Questi controlli di integrità individuali risolvono problemi diversi dall'elenco di controllo di sicurezza disponibile nella pagina della documentazione <a href="/help/sites-administering/security-checklist.md">Security Checklist.</a> Il controllo è utile come test di fumo di sicurezza all'avvio dell'istanza. </p> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.HealthCheck:name=securityChecks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>Bundle attivi</td> 
