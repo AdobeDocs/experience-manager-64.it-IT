@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 1%
@@ -1030,10 +1030,12 @@ Il `cq:listeners` nodo (tipo di nodo `cq:EditListenersConfig`) definisce cosa ac
 >[!NOTE]
 >
 >Nel caso di componenti nidificati, esistono alcune limitazioni alle azioni definite come proprietà del `cq:listeners` nodo:
-
->* Per i componenti nidificati, i valori delle seguenti proprietà *devono* essere `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>
+>* Per i componenti nidificati, i valori delle seguenti proprietà *devono* essere `REFRESH_PAGE`:
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 Il gestore eventi può essere implementato con un&#39;implementazione personalizzata. Ad esempio (dove `project.customerAction` è un metodo statico):
@@ -1045,7 +1047,8 @@ L&#39;esempio seguente è equivalente alla `REFRESH_INSERTED` configurazione:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consultare la sezione `before<action>` ed `after<action>` eventi della documentazione [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ dei `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
+>
+>Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consultare la sezione `before<action>` ed `after<action>` eventi della documentazione [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ dei `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
 
 Con la seguente configurazione, la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
 
