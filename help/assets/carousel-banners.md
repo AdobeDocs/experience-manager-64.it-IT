@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4787'
 ht-degree: 4%
@@ -58,7 +58,7 @@ Per iniziare subito a lavorare:
    >
    >Se siete clienti AEM Sites  o e-commerce, potete utilizzare la funzione integrata per passare alle pagine di prodotto e cercare le interfacce esistenti nel catalogo di prodotti. Non è necessario immettere manualmente le variabili per punti attivi o per mappe immagine. Consultate le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md).
    >
-   >Se siete clienti AEM Assets  e Dynamic Media, immettete manualmente i dati per i punti di attivazione e le mappe immagine, quindi integrate l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
+   >Se siete clienti di AEM Assets  e Dynamic Media, immettete manualmente i dati per i punti di attivazione e le mappe immagine, quindi integrate l’URL pubblicato o il codice da incorporare con il sistema di gestione dei contenuti di terze parti.
 
 1. Facoltativo: se necessario, [crea un predefinito visualizzatore per set carosello](managing-viewer-presets.md).
 
@@ -106,7 +106,7 @@ Quando aggiungete punti di attivazione o mappe immagine a un&#39;immagine del ba
 >
 >Se siete clienti AEM Assets o Media , pubblicate l’URL o il codice da incorporare e quindi integrate con il sistema di gestione dei contenuti di terze parti, identificando manualmente i punti di attivazione e le mappe immagine.
 
-È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione dei punti attivi o delle mappe immagine più soggetta a errori.
+È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione continua dei punti attivi o delle mappe immagine più soggetta a errori.
 
 Esistono diversi modi per identificare un set di variabili da utilizzare per i dati di aree sensibili o mappe immagine.
 
@@ -251,7 +251,7 @@ Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-ba
 >[!NOTE]
 >
 >Quando aggiungete punti di attivazione a un’immagine in un’immagine [](interactive-images.md) interattiva o in un banner carosello, le informazioni relative ai punti di attivazione vengono memorizzate nella stessa posizione di metadati, relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti di attivazione definiti, in entrambi i visualizzatori.
-
+>
 >Tenete presente, tuttavia, che i banner carosello supportano le mappe immagine sulle immagini che possono anche contenere punti di attivazione; un’immagine interattiva non lo è. Tenete presente questo aspetto se intendete creare un&#39;immagine interattiva o un banner carosello che utilizza la stessa immagine. È possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 
 >[!NOTE]
