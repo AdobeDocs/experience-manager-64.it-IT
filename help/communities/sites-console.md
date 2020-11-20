@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 4%
@@ -52,21 +52,21 @@ Per garantire che il sito sia pronto a supportare molte funzioni, è consigliabi
 
 ## Accesso alla console Siti di Communities {#accessing-communities-sites-console}
 
-In the author environment, to reach the Communities Sites console:
+Nell’ambiente di authoring, per accedere alla console Siti community:
 
 * Dalla navigazione globale: **[!UICONTROL Community > Siti]**
 
-Nella console Siti community sono visualizzati tutti i siti community esistenti. From this console, community sites may be created, edited, managed and deleted.
+Nella console Siti community sono visualizzati tutti i siti community esistenti. Da questa console è possibile creare, modificare, gestire ed eliminare siti della community.
 
 Per creare un nuovo sito community, selezionate l&#39;icona **Crea** .
 
-To access an existing community site, for the purpose of authoring, modifying, publishing, exporting, or adding a nested group, select the sites&#39; folder icon.
+Per accedere a un sito community esistente, allo scopo di creare, modificare, pubblicare, esportare o aggiungere un gruppo nidificato, selezionate l&#39;icona della cartella dei siti.
 
-For example, the following image shows the main Communities Sites console displaying the folders for two community sites: [enable](getting-started-enablement.md) and [engage](getting-started.md):
+Ad esempio, l&#39;immagine seguente mostra la console Siti community principale, che mostra le cartelle per due siti della community: [abilitare](getting-started-enablement.md) e [coinvolgere](getting-started.md):
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
-## Site Creation {#site-creation}
+## Creazione del sito {#site-creation}
 
 La console per la creazione di siti offre un approccio passo passo per assemblare le funzioni del sito in base a un modello [e alle impostazioni di sito](sites.md) community selezionate.
 
@@ -86,9 +86,9 @@ Nel pannello Modello del sito sono specificati il Titolo, la Descrizione, la Rad
 
    Il titolo viene visualizzato sia nel sito pubblicato che nell’interfaccia utente di amministrazione del sito.
 
-* **[!UICONTROL Descrizione]** sito community: Descrizione del sito.
+* **[!UICONTROL Descrizione]** sito community: Una descrizione del sito.
 
-   The description does not appear on the published site.
+   La descrizione non viene visualizzata sul sito pubblicato.
 
 * **[!UICONTROL Radice]** sito community: Percorso principale del sito.
 
@@ -102,7 +102,7 @@ Nel pannello Modello del sito sono specificati il Titolo, la Descrizione, la Rad
    * L&#39;URL di base ( `https://*server:port/site root/site name*)` viene visualizzato sotto la `Community Site Name`
    * Per un URL valido, aggiungete un codice della lingua di base + &quot;.html&quot;
 
-      *Ad esempio*, `http://localhost:4502/content/sites/mysight/en.html`
+      *Esempio*, `http://localhost:4502/content/sites/mysight/en.html`
 
 * **[!UICONTROL Menu Modello]** sito community: Utilizzate il menu a discesa per scegliere un modello [di sito](tools.md)community disponibile.
 
@@ -130,11 +130,11 @@ Il marchio Community del sito è un&#39;immagine visualizzata come intestazione 
 
 Le dimensioni dell’immagine devono corrispondere alla larghezza prevista per la visualizzazione della pagina nel browser e a 120 pixel in altezza.
 
-When creating or selecting an image, keep in mind:
+Quando create o selezionate un’immagine, tenete presente:
 
 * L’altezza dell’immagine viene ritagliata a 120 pixel, misurati dal bordo superiore dell’immagine
 * L&#39;immagine viene bloccata sul bordo sinistro della finestra del browser
-* There is no resizing of the image, such that when the image width is...
+* L&#39;immagine non viene ridimensionata, pertanto quando la larghezza dell&#39;immagine è impostata su ...
 
    * Con una larghezza inferiore a quella del browser, l&#39;immagine si ripeterà in orizzontale
    * Maggiore della larghezza del browser, l&#39;immagine apparentemente verrà ritagliata
@@ -155,53 +155,53 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano le f
 
 >[!NOTE]
 >
->**Enable Tunnel Service**
+>**Abilita servizio tunnel**
 >
->Several of the Settings sub-panels allow assignment of a trusted member to moderate UGC, manage groups, or be contacts for enablement resources in the publish environment.
+>Diversi pannelli secondari di Impostazioni consentono l’assegnazione di un membro affidabile per moderare l’UGC, gestire i gruppi o essere contatti per le risorse di abilitazione nell’ambiente di pubblicazione.
 >
->The convention is for publish-side [users and user groups](users.md) (members and member groups) to not be duplicated in the author environment.
+>La convenzione prevede che [gli utenti e i gruppi](users.md) di utenti lato pubblicazione (membri e gruppi di membri) non vengano duplicati nell’ambiente di authoring.
 >
 >Pertanto, quando create il sito community nell&#39;ambiente di creazione e assegnate membri attendibili a vari ruoli, è necessario recuperare i dati dei membri dall&#39;ambiente di pubblicazione.
 >
->This is accomplished by enabling the ` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`for the author environment.
+>A questo scopo, è possibile attivare l’ambiente ` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`di authoring.
 
 #### USER MANAGEMENT {#user-management}
 
-![createsitesettings-1](assets/createsitesettings-1.png)
+![createsitesettesettings-1](assets/createsitesettings-1.png)
 
 >[!NOTE]
 >
->It is recommended that [enablement community sites](overview.md#enablement-community) be private (contact your account representative for more information).
+>Si consiglia di [abilitare i siti](overview.md#enablement-community) della community privati (per ulteriori informazioni, contattare il rappresentante commerciale di riferimento).
 >
->A community site is private when anonymous site visitors are denied access, may not self-register, and may not use social login.
+>Un sito community è privato quando ai visitatori anonimi viene negato l&#39;accesso, non può registrarsi autonomamente e non può utilizzare il login mediante social network.
 
 * **[!UICONTROL Consenti registrazione utente]**
 
-   If checked, site visitors may become community members by self-registration.
+   Se questa opzione è attivata, i visitatori del sito possono diventare membri della community mediante autoregistrazione.
 
-   If unchecked, the community site is *restricted* and site visitors must be assigned to the community site&#39;s members group, make a request or be sent an invitation by email. If unchecked, anonymous access should not be allowed.
+   Se questa opzione è deselezionata, il sito della community è *limitato* e i visitatori del sito devono essere assegnati al gruppo di membri della community, effettuare una richiesta o ricevere un invito tramite e-mail. Se questa opzione è deselezionata, non è consentito l&#39;accesso anonimo.
 
-   Uncheck for a *private* community site. Il valore predefinito è selezionato.
+   Deselezionate il sito di una community *privata* . Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti accesso anonimo]**
 
-   If checked, the community site is *open* and any site visitor may access the site.
+   Se questa opzione è attivata, il sito della community è *aperto* e qualsiasi visitatore del sito può accedere al sito.
 
    Se questa opzione è deselezionata, solo i membri che hanno effettuato l’accesso possono accedere al sito.
 
-   Uncheck for a *private* community site. Il valore predefinito è selezionato.
+   Deselezionate il sito di una community *privata* . Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti messaggi]**
 
    Se selezionato, i membri possono inviare messaggi tra loro e al gruppo all&#39;interno del sito della community.
 
-   If unchecked, messaging is not setup for the community.
+   Se questa opzione è deselezionata, la messaggistica non viene configurata per la community.
 
    Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti accesso social network: Facebook]**
 
-   If checked, allow site visitors to sign in with their Facebook account credentials. La configurazione [cloud](social-login.md#create-a-facebook-connect-cloud-service) Facebook selezionata deve essere configurata per aggiungere utenti al gruppo di membri del sito community una volta creato il sito community.
+   Se questa opzione è selezionata, consentite ai visitatori del sito di accedere con le credenziali del loro account Facebook. La configurazione [cloud](social-login.md#create-a-facebook-connect-cloud-service) Facebook selezionata deve essere configurata per aggiungere utenti al gruppo di membri del sito community una volta creato il sito community.
 
    Se questa opzione è deselezionata, non viene presentato alcun login di Facebook.
 
@@ -216,53 +216,54 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano le f
    Lasciate deselezionato un sito community *privato* . Il valore predefinito è deselezionato.
 
 >[!NOTE]
-
-**[!UICONTROL Consentire accessi tramite social network]**
->Anche se le configurazioni Facebook e Twitter di esempio possono esistere e essere selezionabili, per un ambiente [di](../../help/sites-administering/production-ready.md)produzione è necessario creare applicazioni Facebook e Twitter personalizzate. See [Social Login with Facebook and Twitter](social-login.md).
 >
+>**[!UICONTROL Consentire accessi tramite social network]**
+>
+>Anche se le configurazioni Facebook e Twitter di esempio possono esistere e essere selezionabili, per un ambiente [di](../../help/sites-administering/production-ready.md)produzione è necessario creare applicazioni Facebook e Twitter personalizzate. Consultate Accesso [social network con Facebook e Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
 
 I tag che possono essere applicati al contenuto della community sono controllati selezionando Spazi dei nomi dei tag definiti in precedenza tramite la console [](../../help/sites-administering/tags.md#tagging-console)Tagging.
 
-Inoltre, se si selezionano gli spazi dei nomi dei tag per il sito community, la selezione viene limitata quando si definiscono cataloghi e risorse. See [Tagging Enablement Resources](tag-resources.md) for important information.
+Inoltre, se si selezionano gli spazi dei nomi dei tag per il sito community, la selezione viene limitata quando si definiscono cataloghi e risorse. Per informazioni importanti, consulta [Assegnazione di tag alle risorse](tag-resources.md) di abilitazione.
 
-* Text search box: start typing to identify tags allowed to be used on the site
+* Casella di ricerca testo: inizia a digitare per identificare i tag consentiti nel sito
 
 #### ROLES {#roles}
 
 ![chlimage_1-451](assets/chlimage_1-451.png)
 
-The [roles of community members](users.md) are assigned with these settings.
+I [ruoli dei membri](users.md) della community sono assegnati a queste impostazioni.
 
-Finding community members is easy using type-ahead search.
+La ricerca di membri della community è semplice grazie alla funzione di ricerca del tipo.
 
 * **[!UICONTROL Manager community]**
 
-   Start typing to select one or more community members or member groups who may manager community members and member groups.
+   Inizia a digitare per selezionare uno o più membri della community o gruppi di membri che possono gestire membri della community e gruppi di membri.
 
 * **[!UICONTROL Moderatori community]**
 
-   Start typing to select one or more community members or member groups who are to be trusted as moderators of user generated content.
+   Iniziate a digitare per selezionare uno o più membri della community o gruppi di membri da considerare affidabili come moderatori di contenuto generato dall&#39;utente.
 
 * **[!UICONTROL Membri community con privilegi]**
 
-   Start typing to select one or more community members or member groups to be given the ability to create new content when `Allow Privileged Member` has been selected for a [community function](functions.md).
+   Inizia a digitare per selezionare uno o più membri della community o gruppi di membri ai quali assegnare la possibilità di creare nuovi contenuti quando `Allow Privileged Member` è stato selezionato per una funzione [](functions.md)community.
 
 #### MODERATION {#moderation}
 
 ![chlimage_1-452](assets/chlimage_1-452.png)
 
-The global setting for moderating user generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
+L&#39;impostazione globale per la moderazione del contenuto generato dall&#39;utente (UGC) è controllata da queste impostazioni. I singoli componenti dispongono di impostazioni aggiuntive per controllare la moderazione.
 
 * **[!UICONTROL Il contenuto è premoderato]**
 
-   If checked, posted community content will not appear until approved by a moderator. Il valore predefinito è deselezionato. For more information, see [Moderating Community Content](moderate-ugc.md#premoderation).
+   Se questa opzione è attivata, il contenuto della community pubblicato non verrà visualizzato fino all&#39;approvazione di un moderatore. Il valore predefinito è deselezionato. Per ulteriori informazioni, consultate [Moderazione del contenuto](moderate-ugc.md#premoderation)della community.
 
 * **[!UICONTROL Soglia di segnalazione prima che il contenuto venga nascosto]**
 
-   Se è maggiore di 0, il numero di volte in cui un topic o un post deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. If set to -1, the flagged topic or post is never hidden from public view. Il valore predefinito è 5.
+   Se è maggiore di 0, il numero di volte in cui un topic o un post deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Se impostato su -1, l&#39;argomento o il post contrassegnati non viene mai nascosto dalla visualizzazione pubblica. Il valore predefinito è 5.
 
 #### ANALYTICS {#analytics}
 
@@ -270,9 +271,9 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 * **[!UICONTROL Abilita Analytics]**
 
-   Only available when Adobe Analytics has been [configured](analytics.md) for Communities features.
+   Disponibile solo se  Adobe Analytics è stato [configurato](analytics.md) per le funzioni Community.
 
-   Il valore predefinito è deselezionato. When checked, an additional selection menu appears:
+   Il valore predefinito è deselezionato. Quando questa opzione è selezionata, viene visualizzato un menu di selezione aggiuntivo:
 
 ![chlimage_1-454](assets/chlimage_1-454.png)
 
@@ -286,59 +287,57 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
-* **[!UICONTROL Allow Machine Translation]**
-When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. Consultate [Traduzione di contenuti per siti](../../help/sites-administering/translation.md) multilingue per una panoramica completa.
+* **[!UICONTROL Consenti traduzione]** automatica se questa opzione è selezionata (l&#39;impostazione predefinita è deselezionata), la traduzione automatica è abilitata per l&#39;UGC all&#39;interno del sito. Ciò non influisce su altri contenuti, come il contenuto della pagina, anche se il sito è configurato come sito multilingue. Consultate [Traduzione di contenuto](translate-ugc.md) generato dall&#39;utente per informazioni sulla configurazione di un servizio di traduzione con licenza per  AEM Communities. Consultate [Traduzione di contenuti per siti](../../help/sites-administering/translation.md) multilingue per una panoramica completa.
 
 ![chlimage_1-456](assets/chlimage_1-456.png)
 
 * **[!UICONTROL Attiva traduzione automatica per le lingue selezionate]**
 
-   Le lingue abilitate per la traduzione automatica sono predefinite nell&#39;impostazione di sistema specificata dalla configurazione [di integrazione della](translate-ugc.md#translation-integration-configuration)traduzione. These default settings may be overridden for this site by deleting defaults and/or selecting other languages from the pull-down menu.
+   Le lingue abilitate per la traduzione automatica sono predefinite nell&#39;impostazione di sistema specificata dalla configurazione [di integrazione della](translate-ugc.md#translation-integration-configuration)traduzione. Queste impostazioni predefinite potrebbero essere sostituite per il sito eliminando le impostazioni predefinite e/o selezionando altre lingue dal menu a discesa.
 
 * **[!UICONTROL Scegli il provider di traduzione]**
 
-   By default, the service provider is a trial service using `microsoft`for demonstration only. Se nessun provider di servizi di traduzione è concesso in licenza, **Consenti traduzione** automatica deve essere deselezionato.
+   Per impostazione predefinita, il provider di servizi è un servizio di prova che utilizza solo `microsoft`per la dimostrazione. Se nessun provider di servizi di traduzione è concesso in licenza, **Consenti traduzione** automatica deve essere deselezionato.
 
 * **[!UICONTROL Scegli store condiviso globale]**
 
-   Per un sito Web con più copie in lingua, uno store condiviso globale fornisce un singolo thread di conversazione, visibile da ogni copia in lingua. This is achieved by selecting one of the languages included as a language copy. Default is *No Global Shared Store*.
+   Per un sito Web con più copie in lingua, uno store condiviso globale fornisce un singolo thread di conversazione, visibile da ogni copia in lingua. Questo si ottiene selezionando una delle lingue incluse come copia della lingua. Il valore predefinito è *Nessuno store* condiviso globale.
 
 * **[!UICONTROL Scegli la configurazione del provider di traduzione]**
 
-   Choose a [translation integration framework](../../help/sites-administering/tc-tic.md) created for the licensed translation provider.
+   Scegliete un framework [di integrazione di](../../help/sites-administering/tc-tic.md) traduzione creato per il provider di traduzione con licenza.
 
 * **Seleziona le opzioni di traduzione per il sito community**
 
    * **[!UICONTROL Traduci tutta la pagina]**
 
-      If selected, all UGC on a page is translated into the base language of the page.
+      Se selezionato, tutti gli UGC presenti in una pagina vengono tradotti nella lingua di base della pagina.
 
       Il valore predefinito *non è selezionato*.
 
    * **[!UICONTROL Traduci solo la selezione]**
 
-      If selected, a translate option appears next to each post allowing individual posts to be translated into the base language of the page.
+      Se questa opzione è selezionata, accanto a ciascun post viene visualizzata un&#39;opzione di traduzione che consente di tradurre i singoli post nella lingua di base della pagina.
 
-      Default is *selected*.
+      Il valore predefinito è *selezionato*.
 
 * **Seleziona le opzioni di persistenza**
 
    * **[!UICONTROL Traduci contributi su richiesta dell&#39;utente e in seguito mantieni le traduzioni]**
 
-      If selected, content is not translated until a request is made. Once translated, the translation is stored in the repository.
+      Se questa opzione è selezionata, il contenuto non viene tradotto fino a quando non viene effettuata una richiesta. Una volta tradotta, la traduzione viene memorizzata nella directory archivio.
 
-      Default is *not selected*.
+      Il valore predefinito *non è selezionato*.
 
    * **[!UICONTROL Non mantenere le traduzioni]**
 
-      If selected, translations are not stored in the repository.
+      Se selezionata, le traduzioni non vengono memorizzate nella directory archivio.
 
       Se non è selezionata, le traduzioni sono persistenti.
 
-      Default is *not selected*.
+      Il valore predefinito *non è selezionato*.
 
-* **[!UICONTROL Smart Render]**
-Select one of
+* **[!UICONTROL Rendering]** avanzato Selezionate una delle seguenti opzioni
 
    * `Always show contributions in the original language` (impostazione predefinita)
    * `Always show contributions in user preferred language`
@@ -348,11 +347,11 @@ Select one of
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
-The `ENABLEMENT`settings are applicable when the chosen community site template includes the [assignments function](functions.md#assignments-function), which is available when the enablement features are licensed and [configured](enablement.md). The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
+Le `ENABLEMENT`impostazioni sono applicabili quando il modello di sito community scelto include la funzione [di](functions.md#assignments-function)assegnazione, disponibile quando le funzioni di abilitazione sono [configurate](enablement.md)e abilitate. Il modello di sito di riferimento che include la funzione assegnazioni è `Reference Structured Learning Site Template.`
 
 * **[!UICONTROL Gestione attivazione]**
 
-   (required) Only members of the `Community Enablementmanagers` group are available to be selected to manage this enablement community. I manager dell’abilitazione sono responsabili dell’assegnazione dei membri alle risorse. Consultate anche [Gestione di utenti e gruppi](users.md)di utenti.
+   (obbligatorio) Solo i membri del `Community Enablementmanagers` gruppo possono essere selezionati per gestire questa community di abilitazione. I manager dell’abilitazione sono responsabili dell’assegnazione dei membri alle risorse. Consultate anche [Gestione di utenti e gruppi](users.md)di utenti.
 
 * **[!UICONTROL ID organizzazione Marketing Cloud]**
 
@@ -366,7 +365,7 @@ Se sono necessarie delle regolazioni, fate clic sul pulsante **Indietro** .
 
 Dopo aver selezionato e avviato **Crea** , il processo di creazione del sito non può essere interrotto.
 
-Once the site is created:
+Una volta creato il sito:
 
 * La modifica dell&#39;URL (nome nodo) non è supportata
 * Le future modifiche al modello di sito community non avranno effetto sul sito community creato
@@ -379,7 +378,7 @@ Al termine del processo, la cartella del nuovo sito viene visualizzata nella con
 
 ![chlimage_1-459](assets/chlimage_1-459.png)
 
-In order to modify a community site, select its project folder to open it:
+Per modificare un sito community, selezionatene la cartella per aprirlo:
 
 ![siteactions-2](assets/siteactions-2.png)
 
@@ -389,12 +388,13 @@ Quando passate il puntatore del mouse su un sito con un mouse o toccate una sche
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
-Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi altro sito Web AEM. To open the site for authoring, select the `Open Site` iconm that appears on hovering the site with mouse. Il sito verrà aperto in una nuova scheda in modo che la console Siti di Communities rimanga accessibile.
+Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi altro sito Web AEM. Per aprire il sito per l’authoring, selezionate l’ `Open Site` icona visualizzata quando si passa il puntatore del mouse sul sito. Il sito verrà aperto in una nuova scheda in modo che la console Siti di Communities rimanga accessibile.
 
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](../../help/sites-authoring/qg-page-authoring.md)di authoring.
+>
+>Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](../../help/sites-authoring/qg-page-authoring.md)di authoring.
 
 ## Modifica delle proprietà del sito {#modifying-site-properties}
 
@@ -415,43 +415,48 @@ Il pannello BASIC consente di modificare
 
 Impossibile modificare il nome del sito community.
 
-Choosing a different community site template would have no affect on an existing community site as no connection remains between templates and sites.
+La scelta di un diverso modello di sito community non avrebbe alcun effetto su un sito community esistente, in quanto non resta alcuna connessione tra i modelli e i siti.
 
-Instead, the [STRUCTURE](#modify-structure) of the community site may be modified.
+è invece possibile modificare la [struttura](#modify-structure) del sito comunitario.
 
-### Modify Structure {#modify-structure}
+### Modifica struttura {#modify-structure}
 
-The STRUCTURE panel allows the modification of the structure initially created from the selected community site template. From the panel, it is possible to
+Il pannello STRUTTURA consente la modifica della struttura creata inizialmente dal modello di sito community selezionato. Dal pannello è possibile
 
-* Drag-and-drop additional [community functions](functions.md) into the site structure
-* On an instance of a community function in the site structure:
+* Trascinare ulteriori funzioni [della](functions.md) community nella struttura del sito
+* In un&#39;istanza di una funzione community nella struttura del sito:
 
    * **`gear icon`**
 
-      edit settings, including the display title and URL name&amp;ast;
+      modificare le impostazioni, incluso il titolo visualizzato e il nome URL&amp;ast;
 
-      as well as [privileged members groups](users.md#privilegedmembersgroups)
+      nonché i gruppi di membri [privilegiati](users.md#privilegedmembersgroups)
 
    * **`trashcan icon`**
 
-      remove (delete) functions from the site structure
+      rimuovere (eliminare) funzioni dalla struttura del sito
 
    * **`grid icon`**
 
-      modifiy the order of functions as displayed in the site&#39;s top level navigation bar
+      modifica l&#39;ordine delle funzioni visualizzate nella barra di navigazione di livello superiore del sito
 
 >[!NOTE]
-You can change the order of all the functions in the Site Structure except for the function at the top. Therefore, the home page of communities site cannot be changed.
+>
+>È possibile modificare l&#39;ordine di tutte le funzioni nella struttura del sito, ad eccezione della funzione nella parte superiore. Pertanto, la home page del sito community non può essere modificata.
 
 >[!CAUTION]
-While the display title may be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
-For example, renaming the URL will not move existing UGC, thus having the effect of &#39;losing&#39; UGC.
+>
+>Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si consiglia di non modificare il nome URL di una funzione community appartenente a un sito community.
+>
+>Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’UGC esistente, con l’effetto di perdere l’UGC.
 
 >[!CAUTION]
-La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
-Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
+>
+>La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
+>
+>Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
 
-#### Example: Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### Esempio: Aggiunta di una funzione catalogo a una struttura del sito community {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
@@ -522,19 +527,21 @@ Ad esempio, se il nome fosse &quot;coinvolgimento&quot; per un sito denominato &
 * Titolo: Moderatori di coinvolgimento community
 * Nome: community-*use-uid*-moderatori
 
-Tutti i membri assegnati ruoli di moderatori o amministratori di gruppi durante la creazione del sito, verranno assegnati al gruppo appropriato e anche al gruppo di membri. These groups and member assignments are created on publish when the new site is published.
+Tutti i membri assegnati ruoli di moderatori o amministratori di gruppi durante la creazione del sito, verranno assegnati al gruppo appropriato e anche al gruppo di membri. Questi gruppi e assegnazioni di membri vengono creati al momento della pubblicazione quando il nuovo sito viene pubblicato.
 
-For details, see [Managing Users and User Groups](users.md).
+Per informazioni dettagliate, consultate [Gestione di utenti e gruppi](users.md)di utenti.
 
 >[!NOTE]
-If [Allow Social Login: Facebook](#user-management) is enabled, once the user group
-* community-*&lt;site-name>*-*&lt;uid>*-members
+>
+>Se [Consenti accesso tramite social network: Facebook](#user-management) è abilitato, una volta che il gruppo di utenti
+>
+>* community-*&lt;site-name>*-*&lt;uid>* members
 
-is created, the applied [Facebook cloud service](social-login.md#createafacebookcloudservice) should be configured to add users to this group.
+viene creato, il servizio [cloud](social-login.md#createafacebookcloudservice) Facebook applicato deve essere configurato per aggiungere utenti a questo gruppo.
 
-## Configure for Authentication Error {#configure-for-authentication-error}
+## Configura per errore di autenticazione {#configure-for-authentication-error}
 
-By default, a community site will redirect to a sample login page when the user enters the wrong credentials and fails to login. L&#39;accesso di esempio non sarà presente in un server [di](../../help/sites-administering/production-ready.md)produzione.
+Per impostazione predefinita, un sito community si reindirizzerà a una pagina di accesso di esempio quando l&#39;utente immette le credenziali errate e non riesce a effettuare l&#39;accesso. L&#39;accesso di esempio non sarà presente in un server [di](../../help/sites-administering/production-ready.md)produzione.
 
 Per eseguire correttamente il reindirizzamento, una volta che un sito è stato configurato e inviato per la pubblicazione, completare i seguenti passaggi per evitare che l&#39;autenticazione venga reindirizzata al sito della community:
 
