@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3726'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Selezionate la lettera da visualizzare in anteprima con la procedura seguente:
 
    >[!NOTE]
    >
-   >Se un dizionario dati non è associato alla lettera, viene visualizzata l&#39;anteprima della lettera. In caso contrario, se la lettera è basata su un dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzato nel menu Anteprima ed è possibile selezionare una delle due opzioni. È inoltre possibile associare i dati del test a un dizionario dati. Quando al dizionario [dati sono associati dati](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)di prova, quando si seleziona l&#39;opzione di anteprima viene visualizzata l&#39;anteprima normale con i dati di prova compilati.
+   >Se un dizionario dati non è associato alla lettera, viene visualizzata l&#39;anteprima della lettera. In caso contrario, se la lettera è basata su un dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzato nel menu Anteprima ed è possibile selezionare una delle due opzioni. È inoltre possibile associare i dati del test a un dizionario dati. Quando al dizionario [dati sono associati dati](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)di test, quando si seleziona l&#39;opzione di anteprima viene visualizzata l&#39;anteprima normale con i dati di test popolati.
 
 1. Per eseguire il rendering di una corrispondenza durante la visualizzazione in anteprima, è necessario essere un amministratore o parte di uno dei seguenti gruppi:
 
@@ -57,7 +57,7 @@ Selezionate la lettera da visualizzare in anteprima con la procedura seguente:
    Sono disponibili tre schede: dati, contenuto e allegati. Se non sono presenti elementi di dati (variabili segnaposto e campi di layout), la lettera si apre direttamente con la scheda Contenuto visualizzata. La scheda Allegati è disponibile solo quando gli allegati sono presenti o l&#39;accesso alla libreria è abilitato.
 
    >[!NOTE]
-
+   >
    >Per ulteriori informazioni sul passaggio tra la modalità di rappresentazione HTML o PDF dell&#39;anteprima della lettera, vedere [Modificare la modalità di rappresentazione della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto PDF in Gestione e AEM corrispondenza, consultate [Discontinuità dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms a HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Enter data {#enterdata}
@@ -96,13 +96,13 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Il correttore ortografico predefinito nel browser esegue il controllo ortografia nell&#39;editor di testo. Per gestire il controllo ortografico e grammaticale, potete modificare le impostazioni del correttore ortografico del browser oppure installare plug-in/addons del browser per il controllo ortografico e grammaticale.
 
-   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;Editor [di](/help/forms/using/keyboard-shortcuts.md#correspondence-management) testo, vedere Scelte rapide da tastiera di Gestione della corrispondenza.
+   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;Editor [di](/help/forms/using/keyboard-shortcuts.md#correspondence-management) testo, vedere Scelte rapide da tastiera per la gestione della corrispondenza.
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
    È possibile riutilizzare uno o più paragrafi di testo presenti in un&#39;altra applicazione del documento. Potete copiare e incollare direttamente il testo, ad esempio da MS Word, pagine HTML o qualsiasi altra applicazione.
 
-   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, ad esempio:
+   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, come segue:
 
    ![pastetextmword-1](assets/pastetextmsword-1.png)
 
@@ -165,7 +165,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Per l&#39;area di destinazione, il modulo e la variabile il conteggio viene visualizzato a destra di ciascun oggetto nel modello lettera. Tuttavia, per il modello completo, il conteggio viene visualizzato nella barra di stato Crea corrispondenza.
 
-   I moduli in un modello Lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
+   I moduli in un modello di lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
 
    * **Testo** Visualizza la somma delle variabili segnaposto univoche e degli elementi del dizionario dati non compilati contenuti nel modulo di testo.
    * **Condizione** Visualizza la somma delle variabili di condizione univoche non compilate contenute nella condizione e delle variabili contenute nei moduli risultanti.
@@ -348,7 +348,7 @@ Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [S
 
 ### Modifica della modalità di rappresentazione della lettera {#changerenditionmode}
 
-Per impostazione predefinita, l’interfaccia utente Crea corrispondenza utilizza i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L&#39;anteprima dei moduli per dispositivi mobili non presenta problemi di rendering in alcun browser, in quanto utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. È possibile modificare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell&#39;anteprima PDF interattiva della lettera.
+Per impostazione predefinita, l’interfaccia utente Crea corrispondenza utilizza i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L&#39;anteprima dei moduli per dispositivi mobili non presenta problemi di rendering in alcun browser, in quanto utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. È possibile modificare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per le diverse funzioni dell&#39;anteprima PDF interattiva della lettera.
 
 Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, consultate [Discontinuità dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
