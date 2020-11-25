@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## Elenco di controllo dell&#39;installazione {#installation-checklist}
 
-**Per la piattaforma[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Per la piattaforma [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installa gli ultimi aggiornamenti [AEM 6.4](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    (impostazione di esempio per lo sviluppo)
 
-**Per la funzionalità[Community](overview.md)**
+**Per la funzionalità [Community](overview.md)**
 
 * Se distribuite una farm [di](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)pubblicazione, [identificate l&#39;editore principale](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA navi con pacchetto Community. Per informazioni sugli aggiornamenti di AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulta [AEM Note](/help/release-notes/release-notes.md#release-information)sulla versione 6.4.
+AEM 6.4 Communities GA include il pacchetto Community. Per informazioni sugli aggiornamenti di AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulta [AEM Note](/help/release-notes/release-notes.md#release-information)sulla versione 6.4.
 
 ### Aggiornamenti di AEM 6.4 {#aem-updates}
 
@@ -107,7 +107,7 @@ Come AEM 6.4 e oltre,  funzionalità AEM Communities e hotfix fanno parte  pacch
 
 Due funzionalità Community utilizzano un database MySQL:
 
-* Per l&#39; [abilitazione](enablement.md): registrazione delle attività SCORM e degli studenti
+* Per [l&#39;abilitazione](enablement.md): registrazione delle attività SCORM e degli studenti
 * Per [DSRP](dsrp.md): memorizzazione di contenuto generato dall&#39;utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
@@ -125,7 +125,7 @@ Le misure necessarie sono:
    * Ad esempio, http://localhost:4502/system/console/bundles
    * Seleziona **`Install/Update`**
    * Sfoglia... per selezionare il bundle estratto dall&#39;archivio ZIP scaricato
-   * Verificare che il driver JDBC di *Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
+   * Verificare che *il driver JDBC di Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
 
 1. Se l&#39;installazione avviene su una distribuzione esistente dopo la configurazione di JDBC, eseguire un nuovo riferimento JDBC al nuovo connettore salvando nuovamente la configurazione JDBC dalla console Web:
 
@@ -150,7 +150,7 @@ Il motore  AEM Communities SCORM è richiesto per la funzione di [abilitazione](
 
 * **[cq -social- scorm -package, versione 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Questo pacchetto SCORM è supportato da tutte le versioni di AEM 6.4 Communities.
 
-* **[cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**include il motore[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Questo pacchetto SCORM è supportato AEM a partire da 6.4.2.x Communities.
+* **[cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** include il motore [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Questo pacchetto SCORM è supportato AEM a partire da 6.4.2.x Communities.
 
 Per una nuova installazione del motore SCORM, utilizzare il pacchetto contenente [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (che è [ cq -social- scorm -package, versione 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)). In modo da poter utilizzare le risorse di apprendimento supportate da SCORM 2017.
 
@@ -162,7 +162,7 @@ Per una nuova installazione del motore SCORM, utilizzare il pacchetto contenente
 1. Scaricate **`/libs/social/config/scorm/database_scormengine_data.sql`** dall&#39;istanza cq ed eseguitela in server mysql per creare uno schema scormEngineDB aggiornato.
 1. Aggiungi `/content/communities/scorm/RecordResults` nella proprietà Percorsi esclusi nel filtro CSRF dagli `https://<hostname>;:<port>/system/console/configMgr` editori.
 
-Le installazioni SCORM esistenti possono essere aggiornate al pacchetto [**cq-social-scorm, versione 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(che utilizza[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se il contenuto del corso creato richiede SCORM 2017.1.
+Le installazioni SCORM esistenti possono essere aggiornate al pacchetto [**cq-social-scorm, versione 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (che utilizza [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), se il contenuto del corso creato richiede SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -337,13 +337,13 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
    * Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale
 
-      Ad esempio,
+      Esempio,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Il `bundle.info` file identificherà il bundle
    * Accedere alla cartella dei dati
 
-      Ad esempio,
+      Esempio,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Copiare i file hmac e i file dei nodi principali
@@ -354,7 +354,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
    * Accedere alla cartella dei dati
 
-      Ad esempio,
+      Esempio,
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Incolla i 2 file precedentemente copiati
