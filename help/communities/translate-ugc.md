@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Ad esempio, supponete
 
 * Un membro francese ha pubblicato una ricetta in francese al forum comunitario di un sito web di cucina multinazionale
 * Un altro membro del Giappone utilizza la funzione di traduzione per attivare la traduzione della ricetta dal francese al giapponese
-* Dopo aver letto la ricetta in giapponese, il membro giapponese ha poi postato un commento in giapponese
+* Dopo aver letto la ricetta in giapponese, il membro giapponese ha poi pubblicato un commento in giapponese
 * Il membro francese utilizza la funzione di traduzione per tradurre il commento giapponese in francese
 * Comunicazione globale!
 
@@ -42,7 +42,7 @@ Quando un framework di integrazione della traduzione è configurato in aggiunta 
 
 ## Servizio di traduzione predefinito {#the-default-translation-service}
 
- AEM Communities viene fornito con una licenza [di](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) prova per un servizio [di traduzione](../../help/sites-administering/tc-msconf.md) predefinito abilitato per diverse lingue.
+ AEM Communities include una licenza [di](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) prova per un servizio [di traduzione](../../help/sites-administering/tc-msconf.md) predefinito abilitato per diverse lingue.
 
 Quando si [crea un sito](sites-console.md)community, il servizio di traduzione predefinito viene attivato quando `Allow Machine Translation` viene selezionato dal [sottopannello TRADUZIONE](sites-console.md#translation) .
 
