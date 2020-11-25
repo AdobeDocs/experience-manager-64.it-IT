@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 4%
 
 Adobe Experience Manager (AEM) Communities permette di creare rapidamente un sito di community on-premise con prestazioni ottimizzate e una migliore gestione del sito, che favorisce la conversione dei visitatori in membri attivi della community.
 
-Contattate il rappresentante commerciale di riferimento per informazioni sulle licenze di  AEM Communities e per ottenere licenze aggiuntive per le funzioni di abilitazione e  Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Funzioni di Communities {#communities-features}
 
@@ -128,7 +130,7 @@ La console degli strumenti globali consente di accedere ai seguenti strumenti di
 
 La creazione di siti community si basa sulla selezione di un modello di sito community per configurare rapidamente un sito community indipendente da qualsiasi sito di esempio.
 
-Un modello di sito community, composto da funzioni per la community e modelli per i gruppi di community, fornisce la struttura per un sito community che include login, profili utente, messaggistica, menu del sito, ricerca, temi e funzioni di branding.
+Un modello di sito community, composto da funzioni per la community e modelli per gruppi di community, fornisce la struttura per un sito della community con login, profili utente, messaggistica, menu del sito, ricerca, temi e funzioni di branding.
 
 Consultate la console [Modelli](sites.md)sito.
 
