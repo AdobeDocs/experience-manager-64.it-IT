@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: 39c54df8a3626ef56ffa4ca171f14d09e3c8792e
+source-git-commit: f12b12fa80d9b3fa6890aee3d0609b7513f072c6
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 2%
 
 Gli amministratori devono spesso automatizzare o semplificare le attività più comuni all&#39;interno di qualsiasi sistema. In AEM, ad esempio, la gestione di utenti, l&#39;installazione di pacchetti e la gestione di pacchetti OSGi sono attività che devono essere eseguite normalmente.
 
-A causa della natura RESTful del framework Sling su cui AEM è costruito, la maggior parte delle attività può essere ridotta a una chiamata URL. cURL può essere utilizzato per eseguire tali chiamate URL e può essere uno strumento utile per AEM amministratori.
+A causa della natura RESTful del framework Sling su cui AEM è costruito, la maggior parte delle attività può essere eseguita con una chiamata URL. cURL può essere utilizzato per eseguire tali chiamate URL e può essere uno strumento utile per AEM amministratori.
 
-## Cos’è cURL {#what-is-curl}
+## Cos&#39;è cURL {#what-is-curl}
 
 cURL è uno strumento della riga di comando open-source utilizzato per eseguire manipolazioni URL. Supporta un&#39;ampia gamma di protocolli Internet tra cui HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP e RTSP.
 
 cURL è uno strumento noto e ampiamente utilizzato per ottenere o inviare dati utilizzando la sintassi URL ed è stato originariamente rilasciato nel 1997. Il nome cURL in origine significava &quot;see URL&quot;.
 
-A causa della natura RESTful del framework Sling su cui AEM è creato, la maggior parte delle attività può essere ridotta a una chiamata URL, che può essere eseguita con cURL. [Le attività](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) di manipolazione dei contenuti, come l’attivazione delle pagine, l’avvio dei flussi di lavoro e le attività [](/help/sites-administering/curl.md#common-operational-aem-curl-commands) operative come la gestione dei pacchetti e la gestione degli utenti possono essere automatizzate tramite cURL. Potete inoltre [creare comandi cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) personalizzati per la maggior parte delle attività in AEM.
+A causa della natura RESTful del framework Sling su cui AEM è creato, la maggior parte delle attività può essere ridotta a una chiamata URL, che può essere eseguita con cURL. [Le ](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) attività di manipolazione dei contenuti, come l’attivazione delle pagine e l’avvio dei flussi di lavoro, nonché  [le attività ](/help/sites-administering/curl.md#common-operational-aem-curl-commands) operative come la gestione dei pacchetti e la gestione degli utenti possono essere automatizzate tramite cURL. È inoltre possibile [creare comandi cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) personalizzati per la maggior parte delle attività in AEM.
 
 >[!NOTE]
 >
@@ -50,20 +50,20 @@ Per trovare il comando esatto necessario per la vostra particolare operazione, �
 
 Nei passaggi seguenti viene descritto come eseguire questa operazione utilizzando come esempio la creazione di una nuova pagina nel browser Chrome.
 
-1. Preparate l’azione da richiamare all’interno di AEM. In questo caso, alla fine della procedura guidata **Crea pagina** è stata completata l’operazione, ma non è stato ancora fatto clic su **Crea**.
+1. Preparate l’azione da richiamare all’interno di AEM. In questo caso, alla fine della procedura guidata **Crea pagina**, non è stato ancora fatto clic su **Crea**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Avviate gli strumenti di sviluppo e selezionate la scheda **Rete** . Fate clic sull’opzione **Mantieni registro** prima di cancellare la console.
+1. Avviate gli strumenti di sviluppo e selezionate la scheda **Rete**. Fare clic sull&#39;opzione **Mantieni registro** prima di cancellare la console.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Fate clic su **Crea** nella procedura guidata **Crea pagina** per creare il flusso di lavoro.
+1. Fare clic su **Crea** nella procedura guidata **Crea pagina** per creare effettivamente il flusso di lavoro.
 1. Fare clic con il pulsante destro del mouse sull&#39;azione POST risultante e selezionare **Copia** -> **Copia come cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Copiate il comando cURL in un editor di testo e rimuovete tutte le intestazioni dal comando, che inizia con `-H` (evidenziato in blu nell’immagine di seguito) e aggiungete il parametro di autenticazione corretto, ad esempio `-u <user>:<password>`.
+1. Copiate il comando cURL in un editor di testo e rimuovete tutte le intestazioni dal comando, che inizia con `-H` (evidenziato in blu nell&#39;immagine sottostante) e aggiungete il parametro di autenticazione corretto, ad esempio `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -77,7 +77,7 @@ Elenco di comandi cURL AEM per le comuni attività amministrative e operative.
 
 >[!NOTE]
 >
->Gli esempi seguenti presumono che AEM sia in esecuzione sulla `localhost` porta `4502` e che utilizzi l&#39;utente `admin` con password `admin`. I segnaposto dei comandi aggiuntivi sono impostati tra parentesi angolari.
+>Gli esempi seguenti presumono che AEM in esecuzione su `localhost` sulla porta `4502` e utilizza l&#39;utente `admin` con password `admin`. I segnaposto dei comandi aggiuntivi sono impostati tra parentesi angolari.
 
 ### Gestione pacchetti {#package-management}
 
@@ -87,7 +87,7 @@ Elenco di comandi cURL AEM per le comuni attività amministrative e operative.
 curl -u <user>:<password> http://<host>:<port>/crx/packmgr/service.jsp?cmd=ls
 ```
 
-#### Create a Package {#create-a-package}
+#### Creare un pacchetto {#create-a-package}
 
 ```shell
 curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=create -d packageName=<name> -d groupName=<name>
@@ -155,13 +155,13 @@ curl -u <user>:<password> http://localhost:4502/etc/packages/my_packages/test.zi
 
 ### User Management {#user-management}
 
-#### Create a New User {#create-a-new-user}
+#### Crea nuovo utente {#create-a-new-user}
 
 ```shell
 curl -u <user>:<password> -FcreateUser= -FauthorizableId=hashim -Frep:password=hashim http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
-#### Create a New Group {#create-a-new-group}
+#### Creare un nuovo gruppo {#create-a-new-group}
 
 ```shell
 curl -u <user>:<password> -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
@@ -179,7 +179,7 @@ curl -u <user>:<password> -Fprofile/age=25 http://localhost:4502/home/users/h/ha
 curl -u <user>:<password> -FcreateUser=testuser -FauthorizableId=hashimkhan -Frep:password=hashimkhan -Fprofile/gender=male http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
-#### Creare un nuovo utente come membro di un gruppo {#create-a-new-user-as-a-member-of-a-group}
+#### Crea un nuovo utente come membro di un gruppo {#create-a-new-user-as-a-member-of-a-group}
 
 ```shell
 curl -u <user>:<password> -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fmembership=contributor http://localhost:4502/libs/granite/security/post/authorizables
@@ -197,7 +197,7 @@ curl -u <user>:<password> -FaddMembers=testuser1 http://localhost:4502/home/grou
 curl -u <user>:<password> -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
-#### Impostazione dell&#39;appartenenza a un gruppo di utenti {#set-a-user-s-group-membership}
+#### Imposta appartenenza a un gruppo di utenti {#set-a-user-s-group-membership}
 
 ```shell
 curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
@@ -206,7 +206,7 @@ curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http:/
 #### Eliminare un utente {#delete-a-user}
 
 ```shell
-curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
 ```
 
 #### Eliminare un gruppo {#delete-a-group}
@@ -217,7 +217,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### Backup {#backup}
 
-Per informazioni dettagliate, consultate [Backup e ripristino](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) .
+Per ulteriori informazioni, vedere [Backup e ripristino](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup).
 
 ### OSGi {#osgi}
 
@@ -241,7 +241,7 @@ curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bun
 curl -H "CQ-Action: Activate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path: /content/test-site/" -H "Content-Length: 0" -H "Content-Type: application/octet-stream" http://localhost:4502/dispatcher/invalidate.cache
 ```
 
-#### Rimozione della cache {#evict-the-cache}
+#### Rimuovere la cache {#evict-the-cache}
 
 ```shell
 curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path: /content/test-site/" -H "Content-Length: 0" -H "Content-Type: application/octet-stream" http://localhost:4502/dispatcher/invalidate.cache
@@ -249,7 +249,7 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 
 ### Agente replica {#replication-agent}
 
-#### Verificare lo stato di un agente {#check-the-status-of-an-agent}
+#### Controllare lo stato di un agente {#check-the-status-of-an-agent}
 
 ```shell
 curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
@@ -274,7 +274,7 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
 ```
 
-#### Cancellare una coda agente {#clear-an-agent-queue}
+#### Cancellare la coda di un agente {#clear-an-agent-queue}
 
 ```shell
 curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
@@ -282,35 +282,35 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 ### Communities {#communities}
 
-#### Assegnazione e revoca di badge {#assign-and-revoke-badges}
+#### Assegnazione e revoca dei simboli {#assign-and-revoke-badges}
 
-Per informazioni dettagliate, consultate Punteggio [community e Badge](/help/communities/implementing-scoring.md#assign-and-revoke-badges) .
+Per ulteriori informazioni, vedere [Punteggio delle community e Badge](/help/communities/implementing-scoring.md#assign-and-revoke-badges).
 
-Per informazioni dettagliate, consulta [Punteggio e Badge Essentials](/help/communities/configure-scoring.md#example-setup) .
+Per ulteriori informazioni, vedere [Punteggio e Badges Essentials](/help/communities/configure-scoring.md#example-setup).
 
 #### Reindicizzazione MSRP {#msrp-reindexing}
 
-Per ulteriori informazioni, vedere [MSRP - Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) risorse di storage MongoDB.
+Per ulteriori informazioni, vedere [MSRP - Provider risorse di storage MongoDB](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command).
 
 ### Sicurezza {#security}
 
-#### Attivazione e disattivazione di CRX DE Lite {#enabling-and-disabling-crx-de-lite}
+#### Abilitazione e disabilitazione di CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-Per [informazioni dettagliate, consultate Abilitazione del CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) .
+Per ulteriori informazioni, vedere [Abilitazione del CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ### Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
 
-Per informazioni dettagliate, consultate [Raccolta](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) di oggetti inattivi nell&#39;archivio dati.
+Per ulteriori informazioni, vedere [Raccolta di oggetti inattivi nell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 
 ### Integrazione di Analytics e Target {#analytics-and-target-integration}
 
-Per informazioni, consultate [Scelta  Adobe Analytics e  Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) .
+Per informazioni, vedere [Scelta  Adobe Analytics e  Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script).
 
 ### Single Sign On {#single-sign-on}
 
 #### Invia intestazione test {#send-test-header}
 
-Per informazioni dettagliate, consultate [Single Sign On](/help/sites-deploying/single-sign-on.md) .
+Per ulteriori informazioni, vedere [Single Sign On](/help/sites-deploying/single-sign-on.md).
 
 ## Comandi comuni di gestione dei contenuti AEM cURL {#common-content-manipulation-aem-curl-commands}
 
@@ -318,7 +318,7 @@ Elenco dei comandi cURL AEM per la manipolazione del contenuto.
 
 >[!NOTE]
 >
->Gli esempi seguenti presumono che AEM sia in esecuzione sulla `localhost` porta `4502` e che utilizzi l&#39;utente `admin` con password `admin`. I segnaposto dei comandi aggiuntivi sono impostati tra parentesi angolari.
+>Gli esempi seguenti presumono che AEM in esecuzione su `localhost` sulla porta `4502` e utilizza l&#39;utente `admin` con password `admin`. I segnaposto dei comandi aggiuntivi sono impostati tra parentesi angolari.
 
 ### Gestione pagine {#page-management}
 
@@ -360,11 +360,11 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### Flussi di lavoro {#workflows}
 
-Per informazioni dettagliate, vedere [Interazione con flussi di lavoro a livello di programmazione](/help/sites-developing/workflows-program-interaction.md) .
+Per informazioni dettagliate, vedere [Interazione con i flussi di lavoro a livello di programmazione](/help/sites-developing/workflows-program-interaction.md).
 
 ### Contenuto Sling {#sling-content}
 
-#### Create a Folder {#create-a-folder}
+#### Creare una cartella {#create-a-folder}
 
 ```shell
 curl -u <user>:<password> -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
@@ -376,7 +376,7 @@ curl -u <user>:<password> -F jcr:primaryType=sling:Folder http://localhost:4502/
 curl -u <user>:<password> -F :operation=delete http://localhost:4502/etc/test/test.properties
 ```
 
-#### Sposta un nodo {#move-a-node}
+#### Spostare un nodo {#move-a-node}
 
 ```shell
 curl -u <user>:<password> -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
@@ -388,7 +388,7 @@ curl -u <user>:<password> -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=
 curl -u <user>:<password> -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
-#### Caricare i file tramite Sling PostServlet {#upload-files-using-sling-postservlet}
+#### Caricare i file utilizzando Sling PostServlet {#upload-files-using-sling-postservlet}
 
 ```shell
 curl -u <user>:<password> -F"*=@test.properties"  http://localhost:4502/etc/test
@@ -400,12 +400,12 @@ curl -u <user>:<password> -F"*=@test.properties"  http://localhost:4502/etc/test
 curl -u <user>:<password> -F"test2.properties=@test.properties"  http://localhost:4502/etc/test
 ```
 
-#### Caricare i file che specificano un tipo di contenuto {#upload-files-specifying-a-content-type}
+#### Carica file che specificano un tipo di contenuto {#upload-files-specifying-a-content-type}
 
 ```shell
 curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localhost:4502/etc/test
 ```
 
-### Manipolazione risorse {#asset-manipulation}
+### Gestione risorse {#asset-manipulation}
 
-Per informazioni dettagliate, consultate [Assets HTTP API](/help/assets/mac-api-assets.md) .
+Per informazioni, consultate [Assets HTTP API](/help/assets/mac-api-assets.md).
