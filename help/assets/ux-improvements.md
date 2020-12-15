@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Miglioramenti dell’esperienza utente nelle risorse {#user-experience-enhancements-in-assets}
+# Miglioramenti dell&#39;esperienza utente in Risorse {#user-experience-enhancements-in-assets}
 
 AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che offrono agli utenti un&#39;esperienza senza soluzione di continuità e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare e gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
 
@@ -31,11 +31,11 @@ A seconda del dispositivo utilizzato e della quantità di dettagli necessaria, p
 
 Per ridimensionare le miniature nella vista a schede, effettuate le seguenti operazioni:
 
-1. Toccate o fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]** .
+1. Toccate/fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]**.
 
    ![view_settings](assets/view_settings.png)
 
-1. Dalla finestra di dialogo Impostazioni **** visualizzazione, selezionate la dimensione della miniatura desiderata, quindi toccate o fate clic su **[!UICONTROL Aggiorna]**.
+1. Dalla finestra di dialogo **[!UICONTROL Visualizza impostazioni]**, selezionare la dimensione della miniatura desiderata, quindi toccare o fare clic su **[!UICONTROL Aggiorna]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -47,27 +47,27 @@ Nella vista a schede ora sono visualizzate informazioni aggiuntive, come lo stat
 
 ![publish_status](assets/publish_status.png)
 
-## Miglioramenti della visualizzazione a elenco {#list-view-improvements}
+## Miglioramenti alla visualizzazione a elenco {#list-view-improvements}
 
 Nella vista Elenco, la prima colonna ora mostra i nomi file delle risorse per impostazione predefinita. Vengono inoltre visualizzate informazioni aggiuntive, come lo stato di pubblicazione e elaborazione e le impostazioni internazionali.
 
 ![list_view](assets/list_view.png)
 
-Potete scegliere di configurare la quantità di dettagli da visualizzare. Toccate o fate clic sull&#39;icona Layout, scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]** e specificate le colonne da visualizzare nella finestra di dialogo Impostazioni **** visualizzazione.
+Potete scegliere di configurare la quantità di dettagli da visualizzare. Toccate/fate clic sull&#39;icona Layout, scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]** e specificate le colonne da visualizzare nella finestra di dialogo **[!UICONTROL Visualizza impostazioni]**.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
-## Miglioramenti alla visualizzazione a colonne {#column-view-improvements}
+## Miglioramenti alla visualizzazione delle colonne {#column-view-improvements}
 
-Oltre alle viste a schede e a elenco, ora potete passare alla pagina dei dettagli di una risorsa dalla vista a colonne. Selezionate una risorsa dalla vista Colonna, quindi toccate o fate clic su **[!UICONTROL Maggiori dettagli]** sotto lo snapshot della risorsa.
+Oltre alle viste a schede e a elenco, ora potete passare alla pagina dei dettagli di una risorsa dalla vista a colonne. Selezionate una risorsa dalla vista Colonna, quindi toccate o fate clic su **[!UICONTROL Maggiori dettagli]** nello snapshot della risorsa.
 
 ![more_details](assets/more_details.png)
 
-## Struttura {#tree-view}
+## Visualizzazione struttura {#tree-view}
 
 AEM 6.4 Assets include una vista ad albero che consente di esplorare comodamente la gerarchia delle risorse e individuare la risorsa o la cartella desiderata.
 
-Per aprire la vista ad albero, toccate o fate clic sull&#39;icona di navigazione globale nel `Assets UI`menu, quindi scegliete Struttura **** contenuto dal menu.
+Per aprire la vista ad albero, toccate o fate clic sull&#39;icona di navigazione globale in `Assets UI`, quindi scegliete **[!UICONTROL Struttura contenuto]** dal menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -87,7 +87,7 @@ A seconda del layout scelto, potete aprire la pagina dei dettagli di una risorsa
 |---|---|
 | [!UICONTROL Vista a schede] | Toccate o fate clic sulla sezione della risorsa. |
 | [!UICONTROL Vista a elenco] | Toccate o fate clic sulla voce della riga relativa alla risorsa nell’elenco. |
-| [!UICONTROL Vista a colonne] | Toccate/fate clic sul pulsante **[!UICONTROL Maggiori dettagli]** dall’istantanea della risorsa. |
+| [!UICONTROL Vista a colonne] | Toccate/fate clic sul pulsante **[!UICONTROL Maggiori dettagli]** dall&#39;istantanea della risorsa. |
 
 Usate i pulsanti Precedente/Successivo per spostarvi avanti e indietro tra le risorse.
 
