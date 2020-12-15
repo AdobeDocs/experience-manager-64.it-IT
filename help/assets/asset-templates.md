@@ -46,20 +46,20 @@ Potete esportare il file aggiornato all’interno della cartella principale nei 
 
 È inoltre possibile scaricare l&#39;output in questi formati nel sistema locale.
 
-## Creare una garanzia {#creating-a-collateral}
+## Creare una garanzia{#creating-a-collateral}
 
 Considerate uno scenario in cui desiderate creare materiale collaterale stampabile digitale, come brochure, volantini e annunci pubblicitari per una campagna imminente e condividetelo con gli outlet store a livello globale. La creazione di materiale collaterale basato su un modello consente di offrire un&#39;esperienza cliente unificata tra i canali. I progettisti possono creare i modelli delle campagne (pagina singola o pagina multipla) utilizzando una soluzione creativa, come  InDesign, e caricare i modelli  AEM Assets per voi. Prima di creare una garanzia collaterale, è necessario caricare e rendere disponibili in  Experience Manager uno o più modelli INDD.
 
 1. Tocca o fai clic sul logo AEM, quindi tocca o fai clic su **[!UICONTROL Risorse]** nella pagina di navigazione.
-1. Tra le opzioni, scegliete **[!UICONTROL Modelli]**.
+1. Tra le opzioni, scegliere **[!UICONTROL Modelli]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Tocca o fai clic su **[!UICONTROL Crea]**, quindi dal menu scegli il materiale collaterale da creare. Ad esempio, scegliete **[!UICONTROL Brochure]**.
+1. Toccate o fate clic su **[!UICONTROL Crea]**, quindi scegliete dal menu il materiale collaterale da creare. Ad esempio, scegliere **[!UICONTROL Brochure]**.
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. Accertatevi che uno o più modelli INDD siano caricati e disponibili in  Experience Manager in anticipo. Scegliete un modello per la brochure e toccate o fate clic su **[!UICONTROL Avanti]**.
+1. Accertatevi che uno o più modelli INDD siano caricati e disponibili in  Experience Manager in anticipo. Scegliete un modello per la brochure e toccate o fate clic su **[!UICONTROL Next]**.
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -67,7 +67,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-309](assets/chlimage_1-309.png)
 
-1. (Facoltativo) Tocca o fai clic sull’icona **[!UICONTROL Tag]** accanto al campo **[!UICONTROL Tag]** e seleziona uno o più tag per la brochure. Tocca o fai clic su **[!UICONTROL Conferma]** per confermare la selezione.
+1. (Facoltativo) Tocca o fai clic sull&#39;icona **[!UICONTROL Tag]** accanto al campo **[!UICONTROL Tag]** e seleziona uno o più tag per la brochure. Tocca o fai clic su **[!UICONTROL Conferma]** per confermare la selezione.
 
    ![chlimage_1-310](assets/chlimage_1-310.png)
 
@@ -79,13 +79,13 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Modificare una garanzia {#editing-a-collateral}
+## Modifica di una garanzia{#editing-a-collateral}
 
 È possibile modificare un materiale collaterale immediatamente dopo averlo creato. In alternativa, potete aprirlo dalla pagina Modelli o dalla pagina della risorsa.
 
 1. Per aprire il materiale collaterale per la modifica, effettuate una delle seguenti operazioni:
 
-   * Aprire la documentazione (in questo caso la brochure) creata nel passaggio 7 di [Creazione di una garanzia](asset-templates.md#creating-a-collateral).
+   * Aprire il materiale collaterale (in questo caso la brochure) creato nel passaggio 7 di [Creazione di un collaterale](asset-templates.md#creating-a-collateral).
    * Dalla pagina Modelli, andate a una cartella in cui avete creato il materiale collaterale e toccate o fate clic sull&#39;azione rapida Modifica sulla miniatura di un materiale collaterale.
    * Nella pagina della risorsa per il materiale collaterale, tocca o fai clic sull’icona Modifica dalla barra degli strumenti.
    * Selezionate le risorse, quindi toccate o fate clic sull’icona Modifica dalla barra degli strumenti.
@@ -106,7 +106,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Assicuratevi che l’istanza AEM sia integrata con un server di InDesign  per consentire  AEM Assets di estrarre i dati dal modello di InDesign  e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione  AEM Assets con  InDesign Server](indesign.md).
+   >Assicuratevi che l’istanza AEM sia integrata con un server di InDesign  per consentire  AEM Assets di estrarre i dati dal modello di InDesign  e renderlo disponibile per la modifica. Per informazioni dettagliate, vedere [Integrazione  AEM Assets con  InDesign Server](indesign.md).
 
 1. Per modificare il testo in un campo modificabile, toccate o fate clic sul campo di testo nell’elenco dei campi modificabili e modificate il testo nel campo.
 
@@ -114,11 +114,11 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    È possibile modificare le proprietà del testo, ad esempio lo stile del font, il colore e le dimensioni utilizzando le opzioni disponibili.
 
-1. Toccate o fate clic sull’icona **[!UICONTROL Anteprima]** per visualizzare l’anteprima delle modifiche di testo.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Anteprima]** per visualizzare l&#39;anteprima delle modifiche apportate al testo.
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. Per sostituire un’immagine, toccate o fate clic sull’icona di **[!UICONTROL Asset Finder]** .
+1. Per sostituire un&#39;immagine, toccate o fate clic sull&#39;icona **[!UICONTROL Asset Finder]**.
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. Tocca o fai clic sull’icona **[!UICONTROL Anteprima]** per visualizzare l’immagine in anteprima.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Anteprima]** per visualizzare l&#39;anteprima dell&#39;immagine.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Tocca o fai clic sull’icona **[!UICONTROL Anteprima]** sulla barra degli strumenti per visualizzare in anteprima tutte le modifiche. Tocca o fai clic su **[!UICONTROL Fine]** per salvare le modifiche apportate al materiale collaterale.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Anteprima]** sulla barra degli strumenti per visualizzare in anteprima tutte le modifiche. Tocca o fai clic su **[!UICONTROL Fine]** per salvare le modifiche apportate al materiale collaterale.
 
    >[!NOTE]
    >
@@ -150,14 +150,14 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    >
    >Per AEM la risoluzione delle immagini, effettuate le seguenti operazioni:
    >
-   >* Incorporare le immagini durante la creazione di modelli di InDesign  (consultate [I collegamenti e gli elementi grafici](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporati).
+   >* Incorporare le immagini durante la creazione di modelli di InDesign  (vedere [I collegamenti e la grafica incorporata](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* AEM al file system locale, quindi mappate le icone mancanti con le risorse AEM esistenti.
 
    >
-   >Per ulteriori informazioni sull&#39;uso  documenti InDesign, vedere [Best practice per l&#39;utilizzo  documenti InDesign in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Per ulteriori informazioni sull&#39;utilizzo dei documenti  InDesign, vedere [Best Practices for Working with  InDesign Documents in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Per generare una rappresentazione PDF per la brochure, selezionate l’opzione  Acrobat nella finestra di dialogo, quindi fate clic su **[!UICONTROL Continua]**.
-1. Il materiale collaterale viene creato nella cartella con cui avete iniziato. Per visualizzare i rendering, aprite il materiale collaterale e scegliete **[!UICONTROL Rendering]** dall’elenco di navigazione globale.
+1. Per generare una rappresentazione PDF per la brochure, selezionate l&#39;opzione  Acrobat nella finestra di dialogo, quindi fate clic su **[!UICONTROL Continue]**.
+1. Il materiale collaterale viene creato nella cartella con cui avete iniziato. Per visualizzare le rappresentazioni, aprite il materiale collaterale e scegliete **[!UICONTROL Rappresentazioni]** dall&#39;elenco GlobalNav.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
@@ -169,7 +169,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
 
 1. Tocca o fai clic su **[!UICONTROL Strumenti > Risorse]**.
-1. Tra le opzioni, scegliete **[!UICONTROL Modelli]**.
+1. Tra le opzioni, scegliere **[!UICONTROL Modelli]**.
 1. Toccate o fate clic su **[!UICONTROL Crea]** e scegliete **[!UICONTROL Unisci]** dal menu.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -194,16 +194,16 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
-1. Tocca o fai clic su **[!UICONTROL Avanti]** dalla barra degli strumenti.
-1. Nella schermata **[!UICONTROL Anteprima e riordina]** , se necessario ridisponete i modelli e visualizzate l’anteprima della selezione di modelli da unire. Quindi, fate clic o toccate **[!UICONTROL Avanti]** dalla barra degli strumenti.
+1. Tocca o fai clic su **[!UICONTROL Next]** dalla barra degli strumenti.
+1. Nella schermata **[!UICONTROL Anteprima e riordinamento]**, se necessario ridisporre i modelli e visualizzare in anteprima la selezione dei modelli da unire. Quindi, fare clic o toccare **[!UICONTROL Next]** dalla barra degli strumenti.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. Nella schermata Configura modello, specificate un nome per il materiale collaterale. Facoltativamente, potete specificare i tag desiderati. Se si desidera esportare l&#39;output in formato PDF, selezionare l&#39;opzione **[!UICONTROL Acrobat (.PDF)]** . Per impostazione predefinita, il materiale collaterale viene esportato in formato JPG e  InDesign. Per modificare la miniatura di visualizzazione per le risorse a più pagine collaterali, toccate o fate clic su **[!UICONTROL Cambia miniatura]**.
+1. Nella schermata Configura modello, specificate un nome per il materiale collaterale. Facoltativamente, potete specificare i tag desiderati. Se si desidera esportare l&#39;output in formato PDF, selezionare l&#39;opzione **[!UICONTROL Acrobat (.PDF)]**. Per impostazione predefinita, il materiale collaterale viene esportato in formato JPG e  InDesign. Per modificare la miniatura di visualizzazione per le garanzie reali su più pagine, fare clic o toccare **[!UICONTROL Change Thumbnail]**.
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
-1. Click/tap **[!UICONTROL Save]** and then click/tap **[!UICONTROL OK]** in the dialog to close the dialog. Il materiale collaterale multipagina viene creato nella cartella con cui avete iniziato.
+1. Tocca o fai clic su **[!UICONTROL Salva]**, quindi su **[!UICONTROL OK]** nella finestra di dialogo per chiudere la finestra di dialogo. Il materiale collaterale multipagina viene creato nella cartella con cui avete iniziato.
 
    >[!NOTE]
    >
