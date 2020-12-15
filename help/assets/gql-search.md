@@ -21,14 +21,14 @@ Per cercare una risorsa in base ai relativi metadati, ad esempio il titolo, spec
 
 Ad esempio, per cercare le risorse con il titolo &quot;Target&quot;, effettuate le seguenti operazioni:
 
-## Ricerca delle risorse {#searching-assets}
+## Ricerca risorse {#searching-assets}
 
 1. Dalla barra degli strumenti dell’interfaccia utente Risorse, tocca o fai clic sull’icona **[!UICONTROL Cerca]** per visualizzare la casella di ricerca Omnico.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Con il cursore nella casella Omnisearch, premere Invio.
-1. Tocca o fai clic sull’icona GlobalNav per visualizzare il pannello **[!UICONTROL Filtri]** .
+1. Tocca o fai clic sull&#39;icona GlobalNav per visualizzare il pannello **[!UICONTROL Filtri]**.
 1. Nella casella Ricerca Omni, specificate il valore &quot;Target&quot;. Per limitare la ricerca a una cartella specifica, toccate o fate clic sull’icona Sfoglia nel pannello Filtri e selezionate la cartella. In questo caso, la ricerca viene effettuata solo all’interno della cartella e delle sottocartelle al suo interno.
 
    >[!NOTE]
@@ -37,7 +37,7 @@ Ad esempio, per cercare le risorse con il titolo &quot;Target&quot;, effettuate 
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. L&#39;interfaccia utente  AEM Assets visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
+1. Premere **[!UICONTROL Invio]**. L&#39;interfaccia utente  AEM Assets visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
 
 La funzione di ricerca full-text GQL consente di effettuare ricerche di risorse basate sui seguenti elementi:
 
@@ -66,7 +66,7 @@ La funzione di ricerca full-text di GQL consente di cercare le risorse in base a
 | [!UICONTROL Data scadenza] | scade:AAAA-MM-DTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ora di attivazione] | ora:AAAA-MM-DTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ora di disattivazione] | offtime:AAAA-MM-DTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Intervallo di tempo] (data di scadenza, ora di disattivazione) | campo facet: in basso..upperbound |
+| [!UICONTROL Intervallo di tempo]  (data di scadenza, ora di disattivazione) | campo facet: in basso..upperbound |
 | [!UICONTROL Percorso] | /content/dam/&lt;nome cartella> |
 | [!UICONTROL Titolo PDF] | pdftitle:&quot;Documento  Adobe&quot; |
 | [!UICONTROL Oggetto] | oggetto: &quot;Formazione&quot; |
@@ -124,13 +124,13 @@ La ricerca full text supporta anche operatori quali -, ^ e così via. Per cercar
 Potete migliorare la rilevanza delle parole chiave per risorse particolari per migliorare le ricerche in base alle parole chiave. In altre parole, le immagini per le quali vengono promosse parole chiave specifiche vengono visualizzate nella parte superiore dei risultati della ricerca quando si esegue una ricerca basata su tali parole chiave.
 
 1. Nell’interfaccia utente delle risorse, apri la pagina delle proprietà per la risorsa per la quale vuoi promuovere una parola chiave.
-1. Passate alla scheda **[!UICONTROL Avanzate]** e toccate o fate clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Elevate per cercare le parole chiave]**.
+1. Passate alla scheda **[!UICONTROL Avanzate]** e toccate o fate clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Elevate for search keywords]**.
 
    ![elev_for_search](assets/elevate_for_search.png)
 
-1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e quindi fate clic o toccate **[!UICONTROL Aggiungi]**. Se necessario, specificate più parole chiave nello stesso modo.
+1. Nella casella **[!UICONTROL Search Promote]**, specificare una parola chiave per la quale si desidera incrementare la ricerca dell&#39;immagine, quindi fare clic o toccare **[!UICONTROL Add]**. Se necessario, specificate più parole chiave nello stesso modo.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Click/tap **[!UICONTROL Save &amp; Close]**.
+1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Cercate la parola chiave utilizzando la casella di ricerca Omnico. La risorsa per la quale hai promosso questa parola chiave viene visualizzata tra i primi risultati della ricerca.
