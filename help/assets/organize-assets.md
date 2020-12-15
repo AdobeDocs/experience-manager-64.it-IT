@@ -19,25 +19,25 @@ Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Offi
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
-Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestire le risorse](managing-assets-touch-ui.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
+Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestione delle risorse](managing-assets-touch-ui.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
 
 * Nella maggior parte dei casi, l’archivio delle risorse digitali è in continua crescita. Pertanto, è importante formalizzare l’utilizzo dei metadati, la struttura delle cartelle e la denominazione dei file all’inizio del ciclo di creazione dei contenuti.
-* Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare [i profili appropriati per l’elaborazione](processing-profiles.md)delle risorse:
+* Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare i profili [appropriati per l&#39;elaborazione delle risorse](processing-profiles.md):
 
-   * **Cartelle** di sviluppo - contiene le risorse digitali su cui state lavorando.
-   * **Cartelle** client: contiene risorse digitali basate sui nomi dei client o dei progetti.
-   * **Cartelle** principali: contiene risorse digitali originali.
-   * **Cartelle** di rappresentazione - contiene rappresentazioni e copie delle risorse digitali originali.
-   * **Cartelle** Dimensione file: contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
-   * **Cartelle** di gestione temporanea: contiene risorse digitali pronte per la pubblicazione sul sito Web.
-   * **Cartelle** di tipo MIME: contiene risorse digitali specifiche per tipi MIME quali immagini, documenti e contenuti multimediali.
-   * **Archivia cartelle** - contiene le risorse digitali ritirate.
-   * **Cartelle** basate su data: contiene risorse digitali basate su una data di creazione o un’ultima modifica.
+   * **Cartelle**  di sviluppo - contiene le risorse digitali su cui state lavorando.
+   * **Cartelle**  client: contiene risorse digitali basate su client o nomi di progetti.
+   * **Cartelle**  principali - contiene le risorse digitali sorgente originali.
+   * **Cartelle**  di rappresentazione - contiene rappresentazioni e copie delle risorse digitali originali.
+   * **Cartelle**  Dimensione file: contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
+   * **Cartelle**  di gestione temporanea contiene risorse digitali pronte per la pubblicazione sul sito Web.
+   * **Cartelle**  di tipo MIME: contiene risorse digitali specifiche per tipi MIME quali immagini, documenti e contenuti multimediali.
+   * **Archivia cartelle**  - contiene le risorse digitali ritirate.
+   * **Cartelle**  basate su data: contiene risorse digitali basate su una data di creazione o l’ultima data di modifica.
 
 * Create una directory di cartelle che probabilmente non verrà modificata in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *perduta* AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
+* Se una risorsa è già pubblicata, usate AEM per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è *persa* AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
 
-## Organizzare le risorse tramite i tag {#use-tags-to-organize-assets}
+## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
 Utilizzando i tag, come metadati, potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classificazione delle ricerche per alcune risorse e sfruttare  algoritmi AI di Adobe Sensei per l&#39;individuazione delle risorse.
 
@@ -49,26 +49,26 @@ Per ulteriori informazioni, consultate i seguenti articoli:
 * [Modificare i metadati delle risorse](meta-edit.md)
 * [Tag avanzati migliorati nelle risorse](enhanced-smart-tags.md)
 
-## Organizzare come raccolte {#organize-as-collections}
+## Organizza come raccolte {#organize-as-collections}
 
 Con le raccolte di risorse in  risorse di Experience Manager, potete semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Create diversi tipi di raccolte in base al modo in cui le utilizzate, comprese le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano risorse in base ai criteri di ricerca.  Potete anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
 
-Per ulteriori informazioni, vedete [Gestione delle raccolte](managing-collections-touch-ui.md)
+Per ulteriori informazioni, vedere [gestire le raccolte](managing-collections-touch-ui.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->
 
-## Organizzare le risorse per utilizzare i profili {#organize-to-use-profiles}
+## Organizzate le risorse per utilizzare i profili {#organize-to-use-profiles}
 
 Un profilo di elaborazione contiene i comandi di elaborazione delle risorse applicabili alle risorse che vengono caricate in cartelle predefinite. I profili vengono utilizzati per automatizzare l’elaborazione del contenuto di una cartella o di risorse appena caricate. Potete sfruttare i profili per organizzare meglio le risorse.
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui vari profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
+Per ulteriori informazioni sui diversi profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
 * [Profili video](video-profiles.md)
-* [Profili immagine per elementi multimediali dinamici](image-profiles.md)
+* [Profili immagine Dynamic Media](image-profiles.md)
