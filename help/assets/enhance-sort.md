@@ -19,7 +19,7 @@ La funzione di ricerca di Risorse Adobe Experience Manager (AEM) è stata miglio
 
  AEM Assets distribuisce l’ordinamento lato server per ordinare l’intero set di risorse (indipendentemente dalle dimensioni) all’interno di una cartella o di una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client. In questo modo, i risultati pregenerati possono essere visualizzati rapidamente sull&#39;interfaccia utente, il che rende l&#39;operazione di ordinamento più reattiva e semplice.
 
-## Ordinamento delle risorse nella visualizzazione Elenco {#sorting-assets-in-list-view}
+## Ordinamento delle risorse nella vista Elenco {#sorting-assets-in-list-view}
 
  AEM Assets consente di ordinare le risorse delle cartelle in base ai seguenti campi:
 
@@ -50,9 +50,9 @@ La funzione di ricerca di Risorse Adobe Experience Manager (AEM) è stata miglio
 
 >[!NOTE]
 >
->Per ordinare i valori nelle `Name` colonne o nelle `Title`colonne, sovrapponete `/libs/dam/gui/content/commons/availablecolumns` e modificate il valore di `sortable` in `True`.
+>Per ordinare i valori nelle `Name` o `Title`colonne, sovrapporre `/libs/dam/gui/content/commons/availablecolumns` e modificare il valore di `sortable` in `True`.
 
-## Ordinamento delle risorse nei risultati della ricerca {#sorting-assets-in-search-results}
+## Ordinamento delle risorse nei risultati di ricerca {#sorting-assets-in-search-results}
 
 Potete ordinare i risultati della ricerca in base ai seguenti campi:
 
@@ -72,7 +72,7 @@ Potete ordinare i risultati della ricerca in base ai seguenti campi:
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## Ordinamento delle risorse nella timeline {#sorting-assets-in-timeline}
+## Ordinamento delle risorse nella cronologia {#sorting-assets-in-timeline}
 
  AEM Assets consente di ordinare cronologicamente le voci della cronologia, come annotazioni, versioni, flussi di lavoro e attività.
 
@@ -81,11 +81,11 @@ Potete ordinare i risultati della ricerca in base ai seguenti campi:
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Nella timeline, selezionate una voce dall’elenco. Ad esempio, selezionate **[!UICONTROL Commenti]** per visualizzare l’elenco delle annotazioni associate alla risorsa.
+1. Nella timeline, selezionate una voce dall’elenco. Ad esempio, selezionare **[!UICONTROL Commenti]** per visualizzare l&#39;elenco delle annotazioni associate alla risorsa.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Tocca o fai clic sull’icona **[!UICONTROL Ordina]** accanto all’etichetta **[!UICONTROL Data]** . In base alla selezione, le annotazioni sono elencate in ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Sort]** accanto all&#39;etichetta **[!UICONTROL Date]**. In base alla selezione effettuata, le annotazioni sono elencate in ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 
