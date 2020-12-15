@@ -14,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# Guida alla dimensionamento delle risorse {#assets-sizing-guide}
+# Guida alle dimensioni delle risorse {#assets-sizing-guide}
 
 Quando si esegue il ridimensionamento dell&#39;ambiente per un&#39;implementazione di Adobe Experience Manager (AEM) Assets, è importante assicurarsi che siano disponibili risorse sufficienti in termini di disco, CPU, memoria, IO e throughput di rete. Per ridimensionare molte di queste risorse è necessario conoscere il numero di risorse caricate nel sistema. Se una metrica migliore non è disponibile, potete dividere la dimensione della libreria esistente per l’età della libreria per individuare la frequenza con cui vengono create le risorse.
 
@@ -60,15 +60,15 @@ I dati di esempio inseriti nello strumento dimostrano l&#39;importanza di esegui
 
 Per i grandi archivi dati, puoi implementare un archivio dati condiviso tramite un archivio dati condiviso su un&#39;unità collegata di rete o tramite un archivio dati S3. In questo caso, non è necessario mantenere una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binario e consente di ridurre la larghezza di banda utilizzata per replicare le risorse in ambienti di pubblicazione o per scaricare le istanze.
 
-#### Use Cases {#use-cases}
+#### Casi di utilizzo {#use-cases}
 
 Il datastore può essere condiviso tra un’istanza di creazione primaria e standby per ridurre al minimo il tempo necessario per aggiornare l’istanza standby con le modifiche apportate nell’istanza principale.  Adobe consiglia di condividere il datastore tra un’istanza di creazione primaria e di scaricare le istanze di autori per ridurre i costi comuni durante lo scaricamento del flusso di lavoro. Potete anche condividere il datastore tra le istanze di creazione e pubblicazione per ridurre il traffico durante la replica.
 
-#### Svantaggi {#drawbacks}
+#### Draback {#drawbacks}
 
 A causa di alcune insidie, la condivisione di un datastore non è consigliata in tutti i casi.
 
-#### Singolo punto di errore {#single-point-of-failure}
+#### Punto singolo di errore {#single-point-of-failure}
 
 Avere un datastore condiviso, introduce un singolo punto di fallimento in un&#39;infrastruttura. Considerate uno scenario in cui nel sistema sono presenti una o due istanze di creazione e pubblicazione, ciascuna con un datastore personalizzato. Se uno di questi si arresta in modo anomalo, gli altri due possono continuare a funzionare. Tuttavia, se il datastore è condiviso, un singolo errore del disco può abbattere l&#39;intera infrastruttura. Di conseguenza, è necessario mantenere un backup dell&#39;archivio dati condiviso da cui è possibile ripristinare rapidamente l&#39;archivio dati.
 
@@ -80,9 +80,9 @@ I datastores condivisi aumentano anche la complessità delle operazioni, come il
 
 Per le operazioni AWS, l&#39;implementazione di un&#39;unica posizione centrale (tramite S3), invece di creare un array RAID di volumi EBS, può compensare in modo significativo la complessità e i rischi operativi del sistema.
 
-#### Preoccupazioni sulle prestazioni {#performance-concerns}
+#### Problemi di prestazioni {#performance-concerns}
 
-Un datastore condiviso richiede che i file binari siano memorizzati su un&#39;unità montata in rete condivisa tra tutte le istanze. Poiché tali file binari sono accessibili attraverso una rete, le prestazioni del sistema ne risentono negativamente. È possibile attenuare parzialmente l&#39;impatto utilizzando una connessione di rete rapida a un array veloce di dischi. Tuttavia, questa è una proposta costosa. Nel caso delle operazioni AWS, tutti i dischi sono remoti e richiedono connettività di rete. I volumi effimeri perdono i dati all&#39;avvio o all&#39;arresto dell&#39;istanza.
+Un datastore condiviso richiede che i file binari siano memorizzati in un&#39;unità montata sulla rete e condivisi tra tutte le istanze. Poiché tali file binari sono accessibili attraverso una rete, le prestazioni del sistema ne risentono negativamente. È possibile attenuare parzialmente l&#39;impatto utilizzando una connessione di rete rapida a un array veloce di dischi. Tuttavia, questa è una proposta costosa. Nel caso delle operazioni AWS, tutti i dischi sono remoti e richiedono connettività di rete. I volumi effimeri perdono i dati all&#39;avvio o all&#39;arresto dell&#39;istanza.
 
 #### Latenza {#latency}
 
@@ -105,13 +105,13 @@ Per l&#39;archivio, utilizzare SSD o dischi con un livello IOPS superiore a 3000
 
 ## Rete {#network}
 
- AEM Assets ha una serie di casi di utilizzo che rendono le prestazioni di rete più importanti rispetto a molti dei nostri AEM progetti. Un cliente può disporre di un server veloce, ma se la connessione di rete non è sufficientemente grande per supportare il carico degli utenti che caricano e scaricano risorse dal sistema, la connessione continuerà a risultare lenta. È disponibile una buona metodologia per determinare il punto di interruzione nella connessione di rete di un utente da AEM a [AEM considerazioni delle risorse per l’esperienza dell’utente, il ridimensionamento delle istanze, la valutazione del flusso di lavoro e la topologia](assets-network-considerations.md)di rete.
+ AEM Assets ha una serie di casi di utilizzo che rendono le prestazioni di rete più importanti rispetto a molti dei nostri AEM progetti. Un cliente può disporre di un server veloce, ma se la connessione di rete non è sufficientemente grande per supportare il carico degli utenti che caricano e scaricano risorse dal sistema, la connessione continuerà a risultare lenta. Esiste una buona metodologia per determinare il punto di interruzione nella connessione di rete di un utente per AEM a [AEM Considerazioni relative alle risorse per l&#39;esperienza utente, il ridimensionamento delle istanze, la valutazione del flusso di lavoro e la topologia di rete](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
 Se aggiungete l&#39;app desktop AEM al mix, i problemi di rete diventano più gravi a causa di inefficienze nel protocollo WebDAV.
 
-Per illustrare queste inefficienze,  Adobe ha verificato le prestazioni del sistema utilizzando WebDAV su OS X. È stato aperto, modificato un file InDesign  da 3,5 MB e le modifiche sono state salvate. Sono state formulate le seguenti osservazioni:
+Per illustrare queste inefficienze,  Adobe ha testato le prestazioni del sistema utilizzando WebDAV su OS X. È stato aperto, modificato un file InDesign  da 3,5 MB e le modifiche sono state salvate. Sono state formulate le seguenti osservazioni:
 
 * Totale di circa 100 richieste HTTP generate per completare l&#39;operazione
 * Il file è stato caricato quattro volte tramite HTTP
@@ -121,7 +121,7 @@ Per illustrare queste inefficienze,  Adobe ha verificato le prestazioni del sist
 
 Analizzando il tempo di risparmio medio per i file su WebDAV, è stato rilevato che le prestazioni aumentano notevolmente man mano che la larghezza di banda aumenta fino al livello di 5-10 Mbps. Pertanto,  Adobe consiglia a ogni utente che accede contemporaneamente al sistema di avere almeno 10 Mbps di velocità di caricamento e 5-10 Mbps di larghezza di banda.
 
-Per ulteriori informazioni, consultate [Risoluzione dei problemi AEM&#39;app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)desktop.
+Per ulteriori informazioni, vedere [Risoluzione dei problemi AEM app desktop](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Limitazioni  {#limitations}
 
@@ -129,7 +129,7 @@ Quando si esegue il ridimensionamento di un&#39;implementazione, è importante t
 
 La dimensione del file non è l&#39;unico fattore che contribuisce a problemi di memoria insufficiente (OOM, Out of Memory). Dipende anche dalle dimensioni dell’immagine. Potete evitare problemi di OOM fornendo una dimensione di heap maggiore all’avvio AEM.
 
-Inoltre, potete modificare la proprietà della dimensione della soglia del `com.day.cq.dam.commons.handler.StandardImageHandler` componente in Configuration Manager per utilizzare un file temporaneo intermedio maggiore di zero.
+Inoltre, potete modificare la proprietà della dimensione della soglia del componente `com.day.cq.dam.commons.handler.StandardImageHandler` in Configuration Manager per utilizzare un file temporaneo intermedio maggiore di zero.
 
 ## Numero massimo di risorse {#maximum-number-of-assets}
 
@@ -143,6 +143,6 @@ Se le rappresentazioni non vengono generate correttamente, utilizzate la libreri
 
 È difficile stimare accuratamente la dimensione del file TIFF supportato out-of-the-box (OOTB) con un heap specifico per AEM, perché fattori aggiuntivi, come l&#39;elaborazione dell&#39;influenza delle dimensioni dei pixel. È possibile che AEM elaborare un file di dimensioni pari a 255 MB di OOTB, ma non sia in grado di elaborare un file di dimensioni pari a 18 MB, poiché quest&#39;ultimo comprende un numero di pixel insolitamente più elevato rispetto al primo.
 
-## Dimensione delle risorse {#size-of-assets}
+## Dimensioni delle risorse {#size-of-assets}
 
-Per impostazione predefinita, AEM è possibile caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse molto grandi in AEM, consultate [Configurazione per caricare risorse](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)molto grandi.
+Per impostazione predefinita, AEM è possibile caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse molto grandi in AEM, consultate [Configurazione per caricare risorse molto grandi](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
