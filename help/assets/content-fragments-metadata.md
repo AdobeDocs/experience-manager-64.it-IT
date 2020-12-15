@@ -22,23 +22,23 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l&#39;applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
 
 ## Proprietà di modifica / Metadati {#editing-properties-meta-data}
 
 È possibile visualizzare e modificare i metadati (proprietà) per i frammenti di contenuto:
 
-1. Nella console **[!UICONTROL Risorse]** , andate alla posizione del frammento di contenuto.
+1. Nella console **[!UICONTROL Risorse]** individuate la posizione del frammento di contenuto.
 1. Effettua una delle seguenti operazioni:
 
-   * Selezionate [Visualizza proprietà per aprire le finestre di dialogo](managing-assets-touch-ui.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
-   * Aprite il frammento di [contenuto per Modifica](content-fragments-managing.md#opening-the-fragment-editor), quindi selezionate **[!UICONTROL Metadati]** dal pannello laterale.
+   * Selezionare [Visualizza proprietà per aprire le finestre di dialogo](managing-assets-touch-ui.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
+   * Aprire il frammento di contenuto [per Modifica](content-fragments-managing.md#opening-the-fragment-editor), quindi selezionare **[!UICONTROL Metadati]** dal pannello laterale.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. La scheda **[!UICONTROL Base]** contiene le opzioni che è possibile visualizzare o modificare:
+1. La scheda **[!UICONTROL Base]** fornisce le opzioni che è possibile visualizzare o modificare:
 
-   * Miniatura, per la quale è possibile **caricare l’immagine**
+   * Miniatura per la quale è possibile **caricare l&#39;immagine**
    * **Titolo**
    * **Descrizione**
    * **Tag**
