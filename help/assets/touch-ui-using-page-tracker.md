@@ -78,7 +78,7 @@ Potete aggiungere il codice di tracciamento delle pagine nella sezione di intest
  </head>
 ```
 
-## Aggiunta di codice da incorporare {#adding-embed-code}
+## Aggiunta del codice da incorporare {#adding-embed-code}
 
 Il codice da incorporare viene aggiunto all’interno del corpo del codice del sito Web. Il frammento di codice seguente visualizza il codice da incorporare incluso in una pagina Web di esempio:
 
