@@ -22,7 +22,7 @@ Se siete un utente di Adobe Experience Manager (AEM) Assets, Lightbox viene crea
 ## Aggiunta di risorse a lightbox {#adding-assets-to-lightbox}
 
 1. Dall’interfaccia utente Risorse, selezionate le risorse da aggiungere a Lightbox.
-1. Trascinate le risorse nell’area **[!UICONTROL Rilascia in Lightbox]** . Rilasciate quando il Dropzone diventa attivo e la relativa etichetta diventa **[!UICONTROL Rilascia per aggiungere]**.
+1. Trascinate le risorse nell&#39;area **[!UICONTROL Rilascia in Lightbox]**. Rilasciare quando la zona di rilascio diventa attiva e l&#39;etichetta diventa **[!UICONTROL Rilascia per aggiungere]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
@@ -39,5 +39,5 @@ Se siete un utente di Adobe Experience Manager (AEM) Assets, Lightbox viene crea
 1. Passate alla console Raccolte, toccate o fate clic su Lightbox per visualizzarne le risorse.
 1. Selezionate le risorse da rimuovere.
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Rimuovi]**.
-1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Rimuovi]** per confermare l’eliminazione. Le risorse vengono eliminate da Lightbox.
+1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Rimuovi]** per confermare l&#39;eliminazione. Le risorse vengono eliminate da Lightbox.
 
