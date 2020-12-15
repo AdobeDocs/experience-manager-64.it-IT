@@ -11,7 +11,7 @@ ht-degree: 11%
 ---
 
 
-# Configurazione di approfondimenti sulle risorse {#configuring-asset-insights}
+# Configurazione di approfondimenti risorse {#configuring-asset-insights}
 
 Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse utilizzate da siti Web di terze parti da  Adobe Analytics. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura innanzitutto la funzione da integrare con  Adobe Analytics.
 
@@ -29,14 +29,14 @@ Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse ut
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Tocca o fai clic su **[!UICONTROL Autentica]**.
-1. Dopo aver AEM autenticato le credenziali, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di rapporti Adobe Analytics  da cui recuperare i dati in Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
-1. Dopo aver impostato AEM suite di rapporti, tocca o fai clic su **[!UICONTROL Fine]**.
+1. Dopo aver AEM autenticato le credenziali, dall&#39;elenco **[!UICONTROL Suite di rapporti]**, scegliete una suite di rapporti Adobe Analytics  da dove si desidera che Asset Insights recuperi i dati. Fate clic su **[!UICONTROL Aggiungi]**.
+1. Dopo aver impostato AEM suite di rapporti, fare clic o toccare **[!UICONTROL Fine]**.
 
-## Tracciatore pagina {#page-tracker}
+## Page Tracker {#page-tracker}
 
-Dopo aver configurato l’account Analytics, viene generato il codice Page Tracker. Per abilitare Assets Insights a tracciare AEM risorse utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utility Page Tracker in  AEM Assets per generare il codice di tracciamento pagina. Per ulteriori informazioni su come includere il codice Tracciatore pagina nelle pagine Web di terze parti, vedere [Utilizzo del tracciatore pagina e codice da incorporare nelle pagine](touch-ui-using-page-tracker.md)Web.
+Dopo aver configurato l’account Analytics, viene generato il codice Page Tracker. Per abilitare Assets Insights a tracciare AEM risorse utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utility Page Tracker in  AEM Assets per generare il codice di tracciamento pagina. Per ulteriori informazioni su come includere il codice Tracciatore pagina nelle pagine Web di terze parti, vedere [Utilizzo del tracciatore pagina e del codice da incorporare nelle pagine Web](touch-ui-using-page-tracker.md).
 
-1. In AEM, click the **[!UICONTROL Tools > Assets]**.
+1. In AEM, fare clic su **[!UICONTROL Strumenti > Risorse]**.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
