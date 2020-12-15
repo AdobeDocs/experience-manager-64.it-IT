@@ -39,22 +39,22 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configurazione  Registrazione AEM Assets Events {#configuring-aem-assets-events-recording}
+## Configurazione  registrazione eventi AEM Assets {#configuring-aem-assets-events-recording}
 
-La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning  Registrazione eventi di AEM Assets. Per configurare  AEM Assets Event Recorder, effettuate le seguenti operazioni:
+La [console Web](/help/sites-deploying/configuring-osgi.md) consente di accedere al tuning del  del registratore eventi AEM Assets. Per configurare  AEM Assets Event Recorder, effettuate le seguenti operazioni:
 
-1. Passare alla console **[!UICONTROL Web]**
+1. Passare alla **[!UICONTROL console Web]**
 
-1. Fate clic su **[!UICONTROL Configurazione]**.
+1. Fare clic su **[!UICONTROL Configuration]**.
 
-1. Fate doppio clic su Registratore **[!UICONTROL eventi CQ DAM]** Day.
+1. Fare doppio clic su **[!UICONTROL Day CQ DAM Event Recorder]**.
 
-1. Seleziona **[!UICONTROL Abilita il servizio]**.
+1. Selezionare **[!UICONTROL Abilita questo servizio]**.
 
-1. Verificare i tipi **[!UICONTROL di]** evento da registrare nel flusso di attività dell&#39;utente.
+1. Verificare quali **[!UICONTROL Tipi di eventi]** si desidera registrare nel flusso di attività dell&#39;utente.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
 ## Lettura degli eventi registrati {#reading-recorded-events}
 
-Gli eventi registrati vengono memorizzati come attività. Potete leggerli a livello di programmazione utilizzando l&#39;API [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)ActivityManager.
+Gli eventi registrati vengono memorizzati come attività. Potete leggerli a livello di programmazione utilizzando l&#39;API [ActivityManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
