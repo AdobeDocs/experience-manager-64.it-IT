@@ -1,8 +1,8 @@
 ---
 title: Anteprima delle risorse Dynamic Media
 seo-title: Anteprima delle risorse Dynamic Media
-description: Scopri come visualizzare in anteprima le risorse in Contenuti multimediali dinamici
-seo-description: Scopri come visualizzare in anteprima le risorse in Contenuti multimediali dinamici
+description: Scoprite come visualizzare in anteprima le risorse in Dynamic Media
+seo-description: Scoprite come visualizzare in anteprima le risorse in Dynamic Media
 uuid: f0ff2fc4-a263-4dbe-ba46-b07077b49ae0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Anteprima delle risorse Dynamic Media {#previewing-assets}
 
-Potete utilizzare **[!UICONTROL Anteprima]** per vedere l’aspetto di una risorsa digitale per contenuti multimediali dinamici quando viene visualizzata da un cliente nel proprio browser Web. Per l’ **[!UICONTROL anteprima]** viene utilizzato il visualizzatore predefinito incorporato per dispositivi assegnato alla risorsa.
+Potete utilizzare **[!UICONTROL Preview]** per vedere l&#39;aspetto di una risorsa digitale Dynamic Media quando viene visualizzata da un cliente nel proprio browser Web. Il visualizzatore predefinito incorporato per dispositivi assegnato alla risorsa viene utilizzato per la **[!UICONTROL Anteprima]**.
 
 Un visualizzatore è una raccolta di varie impostazioni o &quot;predefiniti&quot;, come le dimensioni di visualizzazione del visualizzatore, il comportamento di zoom, gli schemi di colori, i bordi, i font e così via, che determinano in che modo gli utenti possono visualizzare le risorse multimediali sullo schermo del computer e sui dispositivi mobili.
 
@@ -35,10 +35,10 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
 
 **Per visualizzare in anteprima le risorse**:
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Asset]s **, then**[!UICONTROL Files ]**to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
-1. (Facoltativo) Usate la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo di cui desiderate visualizzare l’anteprima.
-1. Nella colonna **[!UICONTROL Titolo]** , fate clic sul nome del titolo (non sulla miniatura) della risorsa da visualizzare in anteprima.
+1. Da **Adobe Experience Manager**, nella pagina **[!UICONTROL Navigazione]**, toccare **[!UICONTROL Asset]s**, quindi **[!UICONTROL Files]** per accedere alle risorse.
+1. Nell&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL View]**, toccare **[!UICONTROL List View]** (Visualizzazione elenco).
+1. (Facoltativo) Utilizzate la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo di cui desiderate visualizzare l&#39;anteprima.
+1. Nella colonna **[!UICONTROL Titolo]**, fate clic sul nome del titolo (non sulla miniatura) della risorsa da visualizzare in anteprima.
 1. A seconda del tipo di risorsa su cui avete fatto clic, effettuate una delle seguenti operazioni:
 
 <table> 
@@ -54,11 +54,11 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td>Sì</td> 
    <td><p><strong>Per visualizzare in anteprima la risorsa in una rappresentazione particolare</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fare clic su <strong>Rendering </strong>dall'elenco, quindi selezionare una rappresentazione particolare da visualizzare in anteprima.</li> 
     </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Usate le <strong>+</strong> e <strong>le </strong>icone per aumentare o ridurre rispettivamente lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.<br /> </p> </td> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> nell’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
+    </ul> <p>Utilizzate le icone <strong>+</strong> e <strong>- </strong>rispettivamente per aumentare o diminuire lo zoom dell'immagine selezionata. Fare clic su <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.<br /> </p> </td> 
   </tr>
   <tr>
    <td>File multimediali</td> 
@@ -66,11 +66,11 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td>Sì</td> 
    <td><p><strong>Per visualizzare in anteprima la risorsa in una rappresentazione particolare</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fare clic su <strong>Rendering </strong>dall'elenco, quindi selezionare una rappresentazione particolare da visualizzare in anteprima.</li> 
     </ul> <p>Selezionando una rappresentazione video ad alta risoluzione per l'anteprima del video, il video potrebbe risultare troncato. Questo perché l’anteprima della rappresentazione mostra la risoluzione esatta che i clienti vedranno, il tutto nel contesto del visualizzatore incorporato utilizzato per l’anteprima.</p> <p>Quando visualizzate l’anteprima di un set video adattivo a livello di risorsa, le rappresentazioni vengono raggruppate in un’unica esperienza di riproduzione. In altre parole, il video adattivo viene ridimensionato correttamente per la visualizzazione e la riproduzione utilizzando la risoluzione migliore nel contesto del dispositivo di visualizzazione e della velocità di connessione.<br /> </p> <p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.</p> </td> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> nell’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
+    </ul> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.</p> </td> 
   </tr>
   <tr>
    <td>Set di immagini</td> 
@@ -78,8 +78,8 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td>Sì</td> 
    <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Usate le <strong>+</strong> e <strong>le </strong>icone per aumentare o ridurre rispettivamente lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.</p> </td> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> nell’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
+    </ul> <p>Utilizzate le icone <strong>+</strong> e <strong>- </strong>rispettivamente per aumentare o diminuire lo zoom dell'immagine selezionata. Fare clic su <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.</p> </td> 
   </tr>
   <tr>
    <td>Set 360 gradi</td> 
@@ -87,8 +87,8 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td>Sì</td> 
    <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Usate le <strong>+</strong> e <strong>le </strong>icone per aumentare o ridurre rispettivamente lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.</p> </td> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> nell’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
+    </ul> <p>Utilizzate le icone <strong>+</strong> e <strong>- </strong>rispettivamente per aumentare o diminuire lo zoom dell'immagine selezionata. Fare clic su <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.</p> </td> 
   </tr>
   <tr>
    <td>Set di file multimediali diversi</td> 
@@ -96,8 +96,8 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td>Sì</td> 
    <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
-     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Usate le <strong>+</strong> e <strong>le </strong>icone per aumentare o ridurre rispettivamente lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.</p> </td> 
+     <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> nell’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li> 
+    </ul> <p>Utilizzate le icone <strong>+</strong> e <strong>- </strong>rispettivamente per aumentare o diminuire lo zoom dell'immagine selezionata. Fare clic su <strong>Reimposta</strong> per ripristinare lo zoom originale dell'immagine.<br /> Se vi trovate su un dispositivo mobile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.</p> </td> 
   </tr>
   <tr>
    <td>Set carosello</td> 
@@ -106,7 +106,7 @@ Oltre a usare la funzione di anteprima dedicata per video, set 360 gradi e set d
    <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p> 
     <ul> 
      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Selezionate un visualizzatore da applicare alla risorsa.</li> 
-    </ul> <p>Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti</a>per visualizzatori.</p> </td> 
+    </ul> <p>Per attivare o disattivare i predefiniti per visualizzatori nell'interfaccia utente, consultate <a href="/help/assets/managing-viewer-presets.md">Gestione dei predefiniti per visualizzatori</a>.</p> </td> 
   </tr>
  </tbody>
 </table>
