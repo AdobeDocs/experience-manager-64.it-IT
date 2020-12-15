@@ -21,7 +21,7 @@ Se apportate modifiche successive alla risorsa o alla cartella originale in  AEM
 
 ## Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Dall’interfaccia AEM Assets , passate il mouse sulla cartella desiderata e selezionate l’opzione **[!UICONTROL Pubblica]** dalle azioni rapide.
+1. Dall&#39;interfaccia AEM Assets , passate il puntatore del mouse sulla cartella desiderata e selezionate l&#39;opzione **[!UICONTROL Pubblica]** dalle azioni rapide.
 
    In alternativa, selezionate la cartella desiderata e seguite i passaggi successivi.
 
@@ -31,11 +31,11 @@ Se apportate modifiche successive alla risorsa o alla cartella originale in  AEM
 
    Per pubblicare le cartelle selezionate su Brand Portal, effettua una delle seguenti operazioni:
 
-   * Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Dal menu, selezionate **[!UICONTROL Pubblica su Brand Portal]**.
    * Dalla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**.
 
-3. Quindi, dall’ **[!UICONTROL azione]** , selezionate **[!UICONTROL Pubblica su Brand Portal]**, quindi, in **[!UICONTROL Pianificazione]** , selezionate **[!UICONTROL Ora]**. Toccate **[!UICONTROL Avanti].**
-4. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Pubblica sul portale]** marchio.
+3. Quindi, in **[!UICONTROL Action]** selezionare **[!UICONTROL Pubblica su Brand Portal]**, quindi in **[!UICONTROL Scheduling]** selezionare **[!UICONTROL Now]**. Toccare **[!UICONTROL Next].**
+4. In **[!UICONTROL Ambito]**, confermare la selezione e toccare **[!UICONTROL Pubblica su Brand Portal]**.
 
    Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Accedete all’interfaccia Brand Portal per visualizzare la cartella pubblicata.
 
@@ -44,12 +44,12 @@ Se apportate modifiche successive alla risorsa o alla cartella originale in  AEM
    Per pianificare il flusso di lavoro di pubblicazione in Brand Portal delle cartelle di risorse in una data o ora successiva:
 
    1. Dopo aver selezionato le risorse/cartelle da pubblicare, selezionate **[!UICONTROL Gestisci pubblicazione]** dalla barra degli strumenti nella parte superiore.
-   2. Nella pagina **[!UICONTROL Gestisci pubblicazione]** , selezionate **[!UICONTROL Pubblica su Brand Portal]** dall’ **[!UICONTROL azione]** e selezionate **[!UICONTROL Più tardi]** da **[!UICONTROL Pianificazione]**.
+   2. Nella pagina **[!UICONTROL Gestisci pubblicazione]**, selezionare **[!UICONTROL Pubblica su Brand Portal]** da **[!UICONTROL Action]** e selezionare **[!UICONTROL Successivo]** da **[!UICONTROL Pianificazione]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccate **[!UICONTROL Avanti]**.
-   4. Conferma la selezione in **[!UICONTROL Ambito]**. Toccate **[!UICONTROL Avanti]**.
+   3. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccare **[!UICONTROL Next]**.
+   4. Conferma la selezione in **[!UICONTROL Ambito]**. Toccare **[!UICONTROL Next]**.
    5. Specifica un titolo del flusso di lavoro in **[!UICONTROL Flussi di lavoro]**. Toccate **[!UICONTROL Pubblica più tardi]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
@@ -70,9 +70,9 @@ Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido 
 
    Per annullare rapidamente la pubblicazione della cartella desiderata da Brand Portal:
 
-   1. Nella pagina **[!UICONTROL Gestisci pubblicazione]** , in **[!UICONTROL Azione]** , selezionate **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Pianificazione]** selezionate **[!UICONTROL Ora]**.
-   2. Tap/ click **[!UICONTROL Next].**
-   3. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Annulla pubblicazione da Brand Portal]**.
+   1. Nella pagina **[!UICONTROL Gestisci pubblicazione]**, in **[!UICONTROL Azione]** selezionare **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Scheduling]** selezionare **[!UICONTROL Now]**.
+   2. Toccate o fate clic su **[!UICONTROL Next].**
+   3. In **[!UICONTROL Ambito]**, confermare la selezione e toccare **[!UICONTROL Annulla pubblicazione da Brand Portal]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ Potete annullare la pubblicazione delle cartelle da Brand Portal in modo rapido 
 
    Per pianificare la pubblicazione di una cartella da Brand Portal a una data e un’ora successive:
 
-   1. Nella pagina **[!UICONTROL Gestisci pubblicazione]** , in **[!UICONTROL Azione]** , selezionate **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Pianificazione]** selezionate **[!UICONTROL Più tardi].**
-   2. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccate **[!UICONTROL Avanti]**.
-   3. In **[!UICONTROL Ambito]**, conferma la selezione e tocca **[!UICONTROL Avanti]**.
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Toccate **[!UICONTROL Annulla pubblicazione più tardi].**
+   1. Nella pagina **[!UICONTROL Gestisci pubblicazione]**, in **[!UICONTROL Azione]** selezionare **[!UICONTROL Annulla pubblicazione da Brand Portal]** e in **[!UICONTROL Scheduling]** selezionare **[!UICONTROL Successivo].**
+   2. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Toccare **[!UICONTROL Next]**.
+   3. In **[!UICONTROL Ambito]**, confermare la selezione e toccare **[!UICONTROL Avanti]**.
+   4. Specificare un **[!UICONTROL titolo del flusso di lavoro]** in **[!UICONTROL Flussi di lavoro]**. Toccare **[!UICONTROL Annulla pubblicazione più tardi].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
