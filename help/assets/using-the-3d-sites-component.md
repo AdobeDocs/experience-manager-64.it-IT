@@ -22,27 +22,27 @@ ht-degree: 0%
 
 AEM 3D include un componente AEM Sites  che potete utilizzare per implementare la visualizzazione interattiva dei modelli 3D sulle pagine Web.
 
-Dopo aver aggiunto il componente 3D, puoi [visualizzare la risorsa 3D in quel componente.](viewing-3d-assets.md)
+Dopo aver aggiunto il componente 3D, potete [visualizzare la risorsa 3D in tale componente.](viewing-3d-assets.md)
 
 ## Aggiunta del componente 3D al modello di pagina {#adding-the-d-component-to-the-page-template}
 
-È necessario abilitare il componente 3D nella pagina prima di posizionarlo su una pagina. Consultate [Modifica dei modelli](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) per informazioni dettagliate sull&#39;abilitazione dei componenti nei modelli.
+È necessario abilitare il componente 3D nella pagina prima di posizionarlo su una pagina. Per informazioni dettagliate sull&#39;abilitazione dei componenti nei modelli, vedere [Modifica dei modelli](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
 **Aggiunta del componente 3D al modello** di pagina:
 
-1. Selezionare **[!UICONTROL Strumenti > Generale > Modelli]**.
+1. Passa a **[!UICONTROL Strumenti > Generale > Modelli]**.
 
 1. Individuate il modello di pagina in cui desiderate abilitare il componente 3D e selezionatelo.
 
 1. Toccate **[!UICONTROL Modifica]** per aprire il modello.
-1. Vicino alla parte superiore destra della pagina, nel menu a discesa, selezionate **[!UICONTROL Struttura]** , se non è già attiva.
+1. Vicino alla parte superiore destra della pagina, nel menu a discesa, selezionare la modalità **[!UICONTROL Struttura]**, se non è già attiva.
 
    ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
 
-1. Toccate l&#39;area Contenitore **[!UICONTROL di]** layout per selezionarla.
+1. Toccate l&#39;area **[!UICONTROL Contenitore di layout]** per selezionarla.
 
-1. Toccate il pulsante **[!UICONTROL Criterio]** per aprire l&#39;Editor **** criteri.
-1. Nella sezione **[!UICONTROL Proprietà]** , selezionare il segno di spunta **[!UICONTROL 3D]** , quindi toccare **[!UICONTROL Fine]** per salvare le modifiche e chiudere l&#39;Editor **** criteri.
+1. Toccate il pulsante **[!UICONTROL Policy]** per aprire l&#39; **[!UICONTROL Editor criteri]**.
+1. Nella sezione **[!UICONTROL Proprietà]**, selezionare il segno di spunta **[!UICONTROL 3D]**, quindi toccare **[!UICONTROL Fine]** per salvare le modifiche e chiudere l&#39; **[!UICONTROL Editor criteri]**.
 
    Ora puoi posizionare il componente Siti 3D su tutte le pagine che utilizzano questo modello.
 
@@ -56,21 +56,21 @@ Dopo aver aggiunto il componente 3D, puoi [visualizzare la risorsa 3D in quel co
 
 1. Aprite  AEM Sites e selezionate la pagina Web alla quale desiderate aggiungere il componente 3D.
 
-1. Toccate l’icona **[!UICONTROL Modifica]** (matita) per aprire la pagina nell’editor pagina. Accertatevi che sia selezionata la modalità **[!UICONTROL Modifica]** in alto a destra della pagina.
+1. Toccate l&#39;icona **[!UICONTROL Modifica]** (matita) per aprire la pagina nell&#39;editor pagina. Verificate che sia selezionata la modalità **[!UICONTROL Modifica]** in alto a destra della pagina.
 
    ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
 
 1. Toccate il selettore della barra per aprire il pannello laterale.
 
-1. Toccate l&#39;icona più per aprire l&#39;elenco **[!UICONTROL Componenti]** .
+1. Toccate l&#39;icona del segno più per aprire l&#39;elenco **[!UICONTROL Componenti]**.
 
-1. Trascinate il componente Visualizzatore **** 3D dall’elenco **[!UICONTROL Componenti]** alla posizione nella pagina in cui desiderate visualizzare il visualizzatore 3D.
+1. Trascinate il componente **[!UICONTROL Visualizzatore 3D]** dall&#39;elenco **[!UICONTROL Componenti]** nella posizione nella pagina in cui desiderate visualizzare il visualizzatore 3D.
 
 ## Configurazione del componente 3D {#configuring-the-d-component}
 
-1. Nell’editor  pagina di AEM Sites, selezionate il componente Visualizzatore **** 3D precedentemente aggiunto alla pagina.
+1. Nell&#39;editor  pagina AEM Sites, selezionate il componente **[!UICONTROL Visualizzatore 3D]** precedentemente aggiunto alla pagina.
 
-1. Toccate l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese) per aprire la finestra di dialogo di configurazione del componente.
+1. Toccate l&#39;icona **[!UICONTROL Configuration]** (chiave inglese) per aprire la finestra di dialogo di configurazione del componente.
 
    È possibile impostare le seguenti proprietà del componente:
 
@@ -88,7 +88,7 @@ Dopo aver aggiunto il componente 3D, puoi [visualizzare la risorsa 3D in quel co
     </tr> 
     <tr> 
     <td>Nome stage</td> 
-    <td><p>Selezionare uno stage 3D dall'elenco delle fasi disponibili. L’area di visualizzazione fornisce informazioni sullo sfondo e l’illuminazione.</p> <p>See <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">About the use of stages in AEM 3D Sites</a>.</p> </td> 
+    <td><p>Selezionare uno stage 3D dall'elenco delle fasi disponibili. L’area di visualizzazione fornisce informazioni sullo sfondo e l’illuminazione.</p> <p>Vedere <a href="/help/assets/about-the-use-of-stages-in-aem-3d.md" target="_blank">Informazioni sull'utilizzo di fasi in AEM siti 3D</a>.</p> </td> 
     <td>Ignorato per  risorse Adobe Dimension.</td> 
     </tr> 
     <tr> 
@@ -98,7 +98,7 @@ Dopo aver aggiunto il componente 3D, puoi [visualizzare la risorsa 3D in quel co
         <li>Imposta un valore positivo per la rotazione a destra</li> 
         <li>Imposta un valore negativo per la rotazione a sinistra</li> 
         <li>Impostate un valore 0 per disattivare la rotazione automatica.</li> 
-        </ul> <p>Il valore predefinito è 3 RPM, pari a 20 secondi per ogni rivoluzione completa.<br /> <br /> <strong>Nota:</strong> La velocità di centrifuga si basa su un frame rate di 60/sec. Questo tasso viene generalmente raggiunto con modelli di piccole e medie dimensioni su hardware grafico più potente. Modelli più grandi o dispositivi più lenti eseguono la rotazione automatica a velocità più basse.</p> </td> 
+        </ul> <p>Il valore predefinito è 3 RPM, pari a 20 secondi per ogni rivoluzione completa.<br /> <br /> <strong>Nota:</strong> la velocità di centrifuga presuppone una frequenza fotogrammi di 60/sec. Questo tasso viene generalmente raggiunto con modelli di piccole e medie dimensioni su hardware grafico più potente. Modelli più grandi o dispositivi più lenti eseguono la rotazione automatica a velocità più basse.</p> </td> 
     <td>Ignorato per  risorse Adobe Dimension.</td> 
     </tr> 
     <tr> 
@@ -132,44 +132,44 @@ Dopo aver aggiunto il componente 3D, puoi [visualizzare la risorsa 3D in quel co
 1. Toccate il segno di spunta per salvare le modifiche.
 
    Oltre alle impostazioni disponibili nella finestra di dialogo di configurazione del componente, sono disponibili diverse impostazioni di configurazione globali che possono essere modificate dal CRXDE Lite.
-Per informazioni dettagliate su queste impostazioni globali, consultate Impostazioni [di configurazione](advanced-config-3d.md) avanzate.
+Per informazioni dettagliate su queste impostazioni globali, vedere [Impostazioni di configurazione avanzate](advanced-config-3d.md).
 
 ## Assegnazione di un modello 3D al componente {#assigning-a-d-model-to-the-component}
 
-1. Nell’editor  pagina AEM Sites, fai clic sull’icona **[!UICONTROL Risorse]** per aprire l’elenco Risorse nel pannello laterale.
+1. Nell&#39;editor  pagina AEM Sites, fai clic sull&#39;icona **[!UICONTROL Risorse]** per aprire l&#39;elenco Risorse nel pannello laterale.
 
-1. Selezionate il filtro Modelli **** 3D per nascondere i tipi di risorse indesiderati.
+1. Selezionate il filtro **[!UICONTROL Modelli 3D]** per nascondere i tipi di risorse indesiderati.
 
    ![screen_shot_2017-12-11at124258](assets/screen_shot_2017-12-11at124258.png)
 
 1. Cercate o scorrete fino alla risorsa 3D che desiderate visualizzare sulla pagina da modificare.
 
-1. Trascinate la risorsa 3D dall’elenco **[!UICONTROL Risorse]** al componente Visualizzatore **** 3D precedentemente inserito nella pagina.
+1. Trascinate la risorsa 3D dall&#39;elenco **[!UICONTROL Risorse]** al componente **[!UICONTROL Visualizzatore 3D]** precedentemente inserito nella pagina.
 
     le risorse Adobe Dimension vengono sottoposte a rendering con la nuova tecnologia di visualizzatore basata sullo standard aperto glTF, mentre tutti gli altri tipi di risorse 3D si basano sul visualizzatore WebGL AEM classico. Il componente seleziona automaticamente il visualizzatore appropriato in base al tipo di modello 3D.
 
 ## Anteprima di una pagina Web con un componente 3D {#previewing-a-web-page-that-has-a-d-component}
 
-Mentre la pagina Web è in modalità **[!UICONTROL Modifica]** , il componente 3D visualizza il modello 3D ma non è possibile interagire con il modello.
+Mentre la pagina Web è in modalità **[!UICONTROL Modifica]**, il componente 3D visualizza il modello 3D ma non è possibile interagire con il modello.
 
 È possibile visualizzare l’anteprima della pagina Web nell’editor pagina con accesso completo alle funzionalità del componente 3D.
 
-Consultate anche [Visualizzazione di risorse 3D nel componente](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component)Siti 3D.
+Consultate anche [Visualizzazione di risorse 3D nel componente Siti 3D](viewing-3d-assets.md#viewing-d-assets-in-the-sites-d-component).
 
 **Per visualizzare in anteprima una pagina Web con un componente** 3D:
 
 1. Effettuate una delle seguenti operazioni:
 
-   * Nella parte superiore destra della pagina, fate clic su **[!UICONTROL Anteprima]** per passare alla modalità di anteprima.
-   * Elimina `/edit.html` dall’URL della pagina nel browser.
+   * Vicino alla parte superiore destra della pagina, fare clic su **[!UICONTROL Anteprima]** per passare alla modalità di anteprima.
+   * Elimina `/edit.html` dall&#39;URL della pagina nel browser.
 
-## Pubblicazione di pagina e risorse {#publishing-the-page-and-assets}
+## Pubblicazione della pagina e delle risorse {#publishing-the-page-and-assets}
 
-Consultate [Pubblicazione delle risorse](managing-assets-touch-ui.md) per informazioni su come pubblicare le risorse. Consultate [Pubblicazione di pagine](/help/sites-authoring/publishing-pages.md) per informazioni su come pubblicare le pagine.
+Per informazioni sulla pubblicazione delle risorse, consultate [Pubblicazione delle risorse](managing-assets-touch-ui.md). Per informazioni su come pubblicare le pagine, consultate [Pubblicazione di pagine](/help/sites-authoring/publishing-pages.md).
 
 >[!NOTE]
 >
->L’utilizzo della voce di menu **[!UICONTROL Pubblica pagina]** nel menu Informazioni **** pagina consente di pubblicare la pagina e tutte le dipendenze della pagina principale. Le dipendenze secondarie a cui può fare riferimento il modello 3D e/o l’area di visualizzazione 3D, come mappe di texture e immagini IBL, non vengono pubblicate quando si pubblica la pagina in questo modo.
+>L&#39;utilizzo della voce di menu **[!UICONTROL Pubblica pagina]** nel menu **[!UICONTROL Informazioni pagina]** consente di pubblicare la pagina e tutte le dipendenze della pagina principale. Le dipendenze secondarie a cui può fare riferimento il modello 3D e/o l’area di visualizzazione 3D, come mappe di texture e immagini IBL, non vengono pubblicate quando si pubblica la pagina in questo modo.
 >
 > Adobe consiglia di pubblicare tutte le risorse 3D e le relative dipendenze direttamente da  AEM Assets, prima di pubblicare la pagina Web che fa riferimento a tali risorse.
 
