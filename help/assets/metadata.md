@@ -1,6 +1,6 @@
 ---
-title: Consente di gestire i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
-description: Scoprite i tipi di metadati e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] come organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
+description: Scoprite i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 * [Metadati XMP](xmp.md).
 * [Come modificare o aggiungere metadati](meta-edit.md).
-* [Riferimento](meta-ref.md)per gli schemi di metadati.
+* [Riferimento](meta-ref.md) per gli schemi di metadati.
 
 ## Perché abbiamo bisogno di metadati {#why-we-need-metadata}
 
@@ -31,7 +31,7 @@ I metadati sono la raccolta di tutti i dati disponibili per una risorsa, ma non 
 * Nome della cartella in cui è contenuta.
 * Risorse correlate o tag applicati.
 
-Le proprietà di metadati di base che [!DNL Experience Manager] possono essere gestite per le risorse, permettono agli utenti di visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte di recente.
+Le proprietà di metadati di base che [!DNL Experience Manager] possono gestire per le risorse, permettono agli utenti di visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte di recente.
 
 Puoi aggiungere più dati di alto livello alle risorse digitali, ad esempio:
 
@@ -70,14 +70,14 @@ Il costo per la creazione manuale di informazioni di metadati descrittivi è ele
 
 Esistono diversi modi per incorporare i metadati nei file. Sono supportati alcuni standard di codifica:
 
-* XMP: utilizzato per [!DNL Assets] archiviare i metadati estratti nella directory archivio.
+* XMP: utilizzato da [!DNL Assets] per memorizzare i metadati estratti all&#39;interno della directory archivio.
 * ID3: per i file audio e video.
 * Exif: per i file di immagine.
-* Altro/Legacy: da [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]e così via.
+* Altro/Legacy: da [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] e così via.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file.  Adobe e altre aziende supportano XMP standard in quanto fornisce un modello di contenuto avanzato. Gli utenti di XMP standard e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui costruire. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da  [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file.  Adobe e altre aziende supportano XMP standard in quanto fornisce un modello di contenuto avanzato. Gli utenti di XMP standard e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui costruire. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -93,15 +93,15 @@ I tag ID3 sono progettati per il formato di file MP3. Ulteriori informazioni sui
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Le coppie nome-valore dei metadati sono anche denominate tag, da non confondere con i tag in [!DNL Experience Manager]. Le moderne fotocamere digitali creano i metadata Exif e il software di grafica moderna lo supportano. Il formato Exif è il denominatore più basso per la gestione dei metadati, in particolare per le immagini.
+Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Queste coppie nome-valore-valore di metadati sono anche denominate tag, da non confondere con i tag in [!DNL Experience Manager]. Le moderne fotocamere digitali creano i metadata Exif e il software di grafica moderna lo supportano. Il formato Exif è il denominatore più basso per la gestione dei metadati, in particolare per le immagini.
 
 Un importante limite di Exif è dato dal fatto che alcuni formati di file immagine popolari come BMP, GIF o PNG non lo supportano.
 
-I campi di metadati definiti da Exif sono generalmente di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif in [comuni schemi](metadata-schemas.md) di metadati e in [XMP](xmp-writeback.md).
+I campi di metadati definiti da Exif sono generalmente di natura tecnica e sono di utilizzo limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif in [schemi di metadati comuni](metadata-schemas.md) e in [XMP](xmp-writeback.md).
 
 ### Altri metadati {#other-metadata}
 
-Altri metadati che possono essere incorporati dai file sono [!DNL Microsoft Word], [!DNL PowerPoint][!DNL Excel], e così via.
+Altri metadati che possono essere incorporati dai file sono [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] e così via.
 
 ## Schemi metadati {#metadata-schemata}
 
@@ -115,20 +115,20 @@ Gli schemi di metadati supportati sono elencati di seguito.
 
 * DC - [!DNL Dublin Core] è un set importante e ampiamente utilizzato di metadati.
 * DICOM - Digital Imaging and Communications in Medicine.
-* `Iptc4xmpCore` e `iptc4xmpExt` - International Press Communications Standard contiene molti metadata specifici per oggetto.
+* `Iptc4xmpCore` e  `iptc4xmpExt` - International Press Communications Standard contiene molti metadata specifici per oggetto.
 * RDF - Framework Descrizione risorsa - per metadati Web semantici generici.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - Ticketing di base.
 
-### Metadati specifici per l’applicazione {#application-specific-metadata}
+### Metadati specifici dell&#39;applicazione {#application-specific-metadata}
 
-I metadati specifici dell&#39;applicazione includono metadati tecnici e descrittivi. Se utilizzate tali metadati, altre applicazioni potrebbero non essere in grado di utilizzarli. Ad esempio, un’altra applicazione di rendering delle immagini potrebbe non essere in grado di accedere ai [!DNL Adobe Photoshop] metadati. Potete creare un passaggio del flusso di lavoro che modifica una proprietà specifica di un’applicazione in una proprietà standard.
+I metadati specifici dell&#39;applicazione includono metadati tecnici e descrittivi. Se utilizzate tali metadati, altre applicazioni potrebbero non essere in grado di utilizzarli. Ad esempio, un&#39;altra applicazione di rendering delle immagini potrebbe non essere in grado di accedere ai metadati [!DNL Adobe Photoshop]. Potete creare un passaggio del flusso di lavoro che modifica una proprietà specifica di un’applicazione in una proprietà standard.
 
-* ACDSee - Metadati gestiti dal [!DNL ACDSee] programma. Consultate [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee - Metadati gestiti dal programma [!DNL ACDSee]. Vedere [www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Usato da [!DNL Experience Manager Assets].
 * DAM - Usato da [!DNL Experience Manager Assets].
-* DEX - [Optima SC Descrizione Explorer](http://www.optimasc.com/products/dex/index.html) è una raccolta di strumenti per la gestione di metadati e file per i sistemi operativi Windows.
+* DEX - [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) è una raccolta di strumenti per la gestione di metadati e file per i sistemi operativi Windows.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -140,8 +140,8 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - Requisiti [di pubblicazione per metadati](https://www.idealliance.org/prism-metadata)standard di settore.
+* PLUS - [Sistema universale di gestione delle immagini](https://www.useplus.com).
+* PRISM - [Requisiti di pubblicazione per i metadati standard di settore](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - Diritti di utilizzo PRISM.
 * `xmpPlus` - Integrazione di PLUS con XMP.
@@ -149,14 +149,14 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 ### Metadati specifici per la fotografia {#photography-specific-metadata}
 
 * Exif - Informazioni tecniche della telecamera, inclusa la posizione GPS.
-* CRS - [!DNL Camera Raw] schema.
+* Schema CRS - [!DNL Camera Raw].
 * `iptc4xmpCore` e `iptc4xmpExt`.
 * TIFF - metadati immagine (non solo per le immagini TIFF).
 
 ### Metadati specifici per la stampa {#print-specific-metadata}
 
 * PDF e PDF/X -  applicazioni Adobe PDF e di terze parti.
-* PRISM - Requisiti [di pubblicazione per metadati](https://www.prismstandard.org)standard di settore.
+* PRISM - [Requisiti di pubblicazione per i metadati standard di settore](https://www.prismstandard.org).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per il testo a pagina.
 
@@ -171,4 +171,4 @@ La creazione di flussi di lavoro basati su metadati consente di automatizzare al
 
 * Il flusso di lavoro può verificare se un’immagine ha o meno un titolo. In caso contrario, il sistema notifica l’aggiunta di un titolo.
 * Il flusso di lavoro può verificare se una notifica di copyright su una risorsa consente o meno la distribuzione. Pertanto, il sistema invia la risorsa a un server o all’altro.
-* Un flusso di lavoro può verificare la presenza di risorse senza metadati obbligatori predefiniti o risorse con metadati *non validi* .
+* Un flusso di lavoro può verificare la presenza di risorse senza metadati predefiniti e obbligatori o risorse con metadati *non validi*.
