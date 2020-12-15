@@ -26,7 +26,7 @@ In qualità di sviluppatore AEM, potete personalizzare ed estendere l’Editor r
 * [Sviluppo proxy risorse](proxy.md)
 * [Best practice per la configurazione di ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzazione dell’aspetto {#customizing-the-look-and-feel}
+## Personalizzazione dell&#39;aspetto {#customizing-the-look-and-feel}
 
 È possibile personalizzare i seguenti aspetti dell’aspetto e del comportamento dell’Editor risorse:
 
