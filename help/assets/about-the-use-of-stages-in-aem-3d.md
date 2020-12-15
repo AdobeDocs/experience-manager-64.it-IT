@@ -24,8 +24,8 @@ Le aree di visualizzazione sono leggeri file di scena 3D che forniscono un ambie
 
 >[!NOTE]
 >
->The **[!UICONTROL OBJ 3D]** format does not support lights. Di conseguenza, non può essere utilizzato per fornire aree di visualizzazione ad AEM 3D.
+>Il formato **[!UICONTROL OBJ 3D]** non supporta le luci. Di conseguenza, non può essere utilizzato per fornire aree di visualizzazione ad AEM 3D.
 
-Il formato di file dell’area di visualizzazione determina quale modulo di rendering puoi usare. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Se prevedi di utilizzare solo il modulo di rendering Rapid Refine™, è accettato qualsiasi formato di file supportato dell’area di visualizzazione.
+Il formato di file dell’area di visualizzazione determina quale modulo di rendering puoi usare. Ad esempio, se Autodesk® Maya® viene utilizzato per il rendering di alta qualità, l&#39;area di visualizzazione deve essere in formato `.ma` o `.mb`. Se prevedi di utilizzare solo il modulo di rendering Rapid Refine™, è accettato qualsiasi formato di file supportato dell’area di visualizzazione.
 
 Tutte le impostazioni di rendering in AEM 3D eccetto il tipo e la dimensione dell’immagine di output devono essere preconfigurate e salvate nel file dell’area di visualizzazione prima di caricare su AEM.
