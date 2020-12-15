@@ -11,11 +11,11 @@ ht-degree: 48%
 ---
 
 
-# Informazioni su  AEM Assets {#about-assets}
+# Informazioni  AEM Assets {#about-assets}
 
 Assets è uno strumento Digital Asset Management (DAM) completamente integrato con la piattaforma AEM e consente alla tua azienda di condividere e distribuire risorse digitali. Gli utenti di un’organizzazione possono gestire e archiviare immagini, video, documenti, clip audio e contenuti multimediali come file Flash, per poi accedervi e utilizzarli sul Web, in documenti stampati e per la distribuzione digitale.
 
-## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
+## Cos’è Digital Asset Management (DAM)? {#what-is-digital-asset-management}
 
 Assets consente di condividere e distribuire le risorse digitali chiave di un’organizzazione in tutta l’azienda. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali come immagini, elementi grafici, audio, video e documenti tramite un’interfaccia Web (o una cartella CIFS o WebDAV).
 
@@ -34,7 +34,7 @@ AEM Assets, completamente integrato in AEM, consente di effettuare le seguenti o
 
 <!-- TBD: Update image for branding -->
 
-![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
 Le risorse gestite in CQ DAM sono quindi accessibili tramite Content Finder di WCM:
 
@@ -44,9 +44,9 @@ Le risorse gestite in CQ DAM sono quindi accessibili tramite Content Finder di W
 
 >[!NOTE]
 >
->La navigazione di base dell&#39;interfaccia utente è la stessa del resto del AEM. Per ulteriori informazioni, vedere [Panoramica della console](/help/sites-authoring/qg-page-authoring.md) GUI.
+>La navigazione di base dell&#39;interfaccia utente è la stessa del resto del AEM. Per ulteriori informazioni, vedere [Panoramica della console dell&#39;interfaccia utente](/help/sites-authoring/qg-page-authoring.md).
 
-### Gestione delle risorse digitali e componente Immagine {#digital-asset-management-versus-image-component}
+### Digital Asset Management e il componente Immagine {#digital-asset-management-versus-image-component}
 
 Per determinare se inserire un’immagine in  AEM Assets o usare il componente Immagine, considera il ciclo di vita dell’immagine:
 
@@ -63,25 +63,25 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 >
 >Il caricamento e/o la modifica di un grande volume di risorse (in particolare immagini) può influire sulle prestazioni dell’istanza CQ.
 
-### AEM Assets terminology {#aem-assets-terminology}
+### Terminologia  AEM Assets {#aem-assets-terminology}
 
 Quando lavori con risorse digitali in AEM, è importante comprendere la seguente terminologia:
 
-* **Raccolta:** Una raccolta di risorse, basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione dell’utente (cartelle lightbox).
+* **Raccolta:** Una raccolta di risorse, basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione dell&#39;utente (cartelle lightbox).
 
-* **Metadati:** Le risorse dispongono di metadati; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. AEM Assets offre e supporta i seguenti schemi di metadati di uso comune:
+* **Metadati:** le risorse dispongono di metadati; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. AEM Assets offre e supporta i seguenti schemi di metadati di uso comune:
 
    * **Dublin Core**: inclusi autore, descrizione, data, oggetto e così via.
    * **IPTC**: compresi evento, modello, posizione e così via.
    * **WCM**: incluse le proprietà della pagina, il tempo di attivazione e disattivazione e così via.
 
-* **Assegnazione tag:** Le risorse possono essere classificate e con tag. Consulta Utilizzo dei tag e Gestione dei tag.
+* **Assegnazione di tag:** le risorse possono essere classificate e con tag. Consulta Utilizzo dei tag e Gestione dei tag.
 
 * **Rappresentazioni:** Una rappresentazione è la rappresentazione binaria di una risorsa. Le risorse dispongono sempre di una rappresentazione principale, cioè quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
 
-* **Versioni:** Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versioni:** il controllo delle versioni crea un&#39;istantanea delle risorse digitali in un momento preciso. Se necessario, puoi ripristinare le risorse alle versioni precedenti. Vedere [controllo delle versioni in  AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Risorse secondarie:** Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop  o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
+* **Risorse secondarie:le** risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop  o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
 
 ### Come lavorare con le risorse {#how-to-work-with-assets}
 
@@ -98,4 +98,4 @@ Ovviamente, puoi applicare i flussi di lavoro anche manualmente. Per un elenco d
 
 ## AEM DAM e AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-See [AEM DAM and AEM MediaLibrary](medialibrary.md) for information on the differences.
+Per informazioni sulle differenze, vedere [AEM DAM e AEM MediaLibrary](medialibrary.md).
