@@ -31,7 +31,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza il framework AI di  Adobe Sensei per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su  I/O Adobe. Per utilizzarlo in Adobe Experience Manager (AEM), l&#39;amministratore di sistema deve integrare l&#39;istanza AEM con  I/O Adobe.
+Smart Content Service è un servizio cloud ospitato su  Adobe I/O. Per utilizzarlo in Adobe Experience Manager (AEM), l&#39;amministratore di sistema deve integrare l&#39;istanza AEM con  I/O Adobe.
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -53,26 +53,26 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo da AEM. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento  I/O Adobe.
 
-L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con AEM. Per integrare il servizio con  AEM Assets, consultate [Configurare i tag](config-smart-tagging.md)avanzati.
+L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con AEM. Per integrare il servizio con  AEM Assets, vedere [Configurare i tag avanzati](config-smart-tagging.md).
 
 La procedura di registrazione è completa quando l’amministratore configura il servizio e aggiunge utenti in AEM.
 
 >[!NOTE]
 >
->Se utilizzate AEM 6.3 o versione precedente e avete bisogno di un servizio di tag automatico per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di AI e sono meno precisi della funzionalità di Smart Tagging avanzata.
+>Se utilizzate AEM versione 6.3 o precedente e desiderate un servizio di tag automatico per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di AI e sono meno precisi della funzionalità di Smart Tagging avanzata.
 
-## Verifica di risorse e tag {#reviewing-assets-and-tags}
+## Verifica delle risorse e dei tag {#reviewing-assets-and-tags}
 
 Dopo essere stati caricati, la prima cosa da fare è identificare un set di tag che meglio descrivono queste immagini nel contesto della vostra attività.
 
-Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle linee guida [di formazione di](smart-tags-training-guidelines.md)Smart Content Service.
+Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle [linee guida di formazione per Smart Content Service](smart-tags-training-guidelines.md).
 
 Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla pagina delle proprietà. Quindi, eseguite il flusso di lavoro di formazione su questa cartella. La serie di risorse selezionata consente a Smart Content Service di formare in modo efficace più risorse utilizzando le definizioni della tassonomia.
 
 >[!NOTE]
 >
 >1. La formazione è un processo irrevocabile.  Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
->1. Prima di iniziare la formazione per qualsiasi tag, leggete le linee guida [per la formazione su](smart-tags-training-guidelines.md) Smart Content Service.
+>1. Prima di iniziare la formazione per qualsiasi tag, leggete le [linee guida per la formazione su Smart Content Service.](smart-tags-training-guidelines.md)
 >1. Quando formate Smart Content Service per la prima volta,  Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 >
@@ -93,7 +93,7 @@ Potete addestrare Smart Content Service periodicamente o su richiesta.
 
 ### Formazione periodica {#periodic-training}
 
-Potete abilitare Smart Content Service per l&#39;addestramento periodico delle risorse e dei tag associati all&#39;interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag]** avanzati nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
+Potete abilitare Smart Content Service per l&#39;addestramento periodico delle risorse e dei tag associati all&#39;interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
@@ -105,8 +105,8 @@ Potete addestrare Smart Content Service quando necessario dalla console Flusso d
 
 1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Apprendimento dei tag avanzati]**, quindi dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individuate la cartella payload che include le risorse con tag per la formazione del servizio.
-1. Specificate un titolo per il flusso di lavoro e un commento. Quindi toccate o fate clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
+1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individuate la cartella payload che include le risorse con tag per la formazione del servizio.
+1. Specificate un titolo per il flusso di lavoro e un commento. Quindi, toccate o fate clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -129,7 +129,7 @@ Per verificare se Smart Content Service è addestrato sui tag presenti nel set d
 
    Se non visualizzate i tag nel rapporto, eseguite nuovamente il flusso di lavoro di formazione per questi tag.
 
-1. Per scaricare il rapporto, selezionatelo dall’elenco, quindi toccate o fate clic sull’icona **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come file Excel.
+1. Per scaricare il rapporto, selezionatelo dall&#39;elenco, quindi toccate o fate clic sull&#39;icona **[!UICONTROL Scarica]** nella barra degli strumenti. Il rapporto viene scaricato come file Excel.
 
 ## Assegnazione di tag alle risorse automaticamente {#tagging-assets-automatically}
 
@@ -143,7 +143,7 @@ Potete eseguire il flusso di lavoro dei tag periodicamente o quando necessario.
 
 ### Assegnazione periodica di tag {#periodic-tagging}
 
-Potete abilitare Smart Content Service per assegnare tag periodici alle risorse all’interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag]** avanzati nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
+Potete abilitare Smart Content Service per assegnare tag periodici alle risorse all’interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
 
 Quando questa opzione è selezionata per una cartella, Smart Content Service assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro dei tag viene eseguito ogni giorno alle 12:00.
 
@@ -165,12 +165,12 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individuate la cartella payload contenente le risorse per le quali desiderate applicare automaticamente i tag.
-1. Specificate un titolo per il flusso di lavoro e un commento facoltativo. Quindi toccate o fate clic su **[!UICONTROL Esegui]**.
+1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individuate la cartella payload contenente le risorse sulle quali desiderate applicare automaticamente i tag.
+1. Specificate un titolo per il flusso di lavoro e un commento facoltativo. Quindi, toccate o fate clic su **[!UICONTROL Esegui]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione dei tag](managing-smart-tags.md)avanzati.
+   Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, vedere [Gestione dei tag avanzati](managing-smart-tags.md).
 
 #### Assegnazione di tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
 
@@ -181,7 +181,7 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
    ![start_workflow](assets/start_workflow.png)
 
 1. Selezionate il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specificate un titolo per il flusso di lavoro.
-1. Toccate o fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione dei tag](managing-smart-tags.md)avanzati.
+1. Toccate/fate clic su **[!UICONTROL Start]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, vedere [Gestione dei tag avanzati](managing-smart-tags.md).
 
 >[!NOTE]
 >
