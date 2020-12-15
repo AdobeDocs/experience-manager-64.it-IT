@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-#  esperienza della home page di AEM Assets {#aem-assets-home-page-experience}
+#  esperienza home page AEM Assets {#aem-assets-home-page-experience}
 
 Personalizzate la home page di  AEM Assets per un&#39;esperienza ricca di schermata di benvenuto, con un&#39;istantanea delle attività recenti intorno alle risorse.
 
@@ -19,24 +19,24 @@ La home page di Adobe Experience Manager (AEM) Assets offre un’esperienza sull
 
 Per impostazione predefinita, la home page delle risorse è disattivata. Per attivarla, effettuare le seguenti operazioni:
 
-1. Per accedere AEM Gestione configurazione, fate clic su **[!UICONTROL Strumenti > Operazione > Console]** Web.
-1. Aprite il servizio **Day CQ DAM Event Recorder** .
-1. Selezionate **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell&#39;attività.
+1. Per accedere AEM Gestione configurazione, fare clic su **[!UICONTROL Strumenti > Operazione > Console Web]**.
+1. Aprite il servizio **Day CQ DAM Event Recorder**.
+1. Selezionare **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell&#39;attività.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Dall’elenco Tipi **** evento, selezionate gli eventi da registrare e salvate le modifiche.
+1. Nell&#39;elenco **Tipi di eventi**, selezionare gli eventi da registrare e salvare le modifiche.
 
    >[!CAUTION]
    >
    >Abilitando le opzioni di visualizzazione delle risorse, dei progetti visualizzati e delle raccolte, il numero di eventi registrati aumenta notevolmente.
 
-1. Aprite il servizio Flag **[!UICONTROL di funzionalità della home page della risorsa]** DAM da Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Selezionate l’opzione **[!UICONTROL isEnabled.name]** per attivare la funzione Pagina iniziale risorse. Salva le modifiche.
+1. Aprite il servizio **[!UICONTROL DAM Asset Home Page Feature Flag]** da Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Selezionate l&#39;opzione **[!UICONTROL isEnabled.name]** per abilitare la funzione Pagina iniziale risorse. Salva le modifiche.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Aprite la finestra di dialogo Preferenze **** utente e selezionate **[!UICONTROL Abilita pagina]** iniziale risorse. Salva le modifiche.
+1. Aprite la finestra di dialogo **[!UICONTROL Preferenze utente]** e selezionate **[!UICONTROL Abilita pagina iniziale risorse]**. Salva le modifiche.
 
    ![user_preferences](assets/user_preferences.png)
 
@@ -44,7 +44,7 @@ Dopo aver attivato la home page delle risorse, passa all’interfaccia utente de
 
 ![home_page](assets/home_page.png)
 
-Toccate o fate clic su **[!UICONTROL Fate clic qui per configurare il collegamento]** dell&#39;esperienza per aggiungere il vostro nome utente, l&#39;immagine di sfondo e l&#39;immagine del profilo.
+Toccate/fate clic su **[!UICONTROL Fate clic qui per configurare il collegamento esperienza]** per aggiungere il nome utente, l&#39;immagine di sfondo e l&#39;immagine del profilo.
 
 La home page delle risorse include le seguenti sezioni:
 
@@ -65,13 +65,13 @@ Questa sezione viene visualizzata sotto la sezione Benvenuti e presenta i widget
 * Recente
 * Scopri
 
-**Attività**: In questa sezione, il widget **Attività** personale visualizza le attività recenti svolte dall’utente che ha eseguito l’accesso con risorse (incluse le risorse senza rappresentazioni), ad esempio caricamenti di risorse, download, creazione di risorse, modifiche, commenti, annotazioni e condivisioni.
+**Attività**: In questa sezione, il  **widget** Attività personale visualizza le attività recenti svolte dall’utente che ha eseguito l’accesso con risorse (incluse risorse senza rappresentazioni), ad esempio caricamenti di risorse, download, creazione di risorse, modifiche, commenti, annotazioni e condivisioni.
 
-**Recente**: Il widget **Visualizzato** di recente in questa sezione visualizza le entità a cui l&#39;utente ha effettuato l&#39;accesso di recente, comprese cartelle, raccolte e progetti.
+**Recente**: Il  **widget** Visualizzato di recente in questa sezione visualizza le entità a cui l&#39;utente ha effettuato l&#39;accesso di recente, comprese cartelle, raccolte e progetti.
 
-**Scopri**: Il **nuovo** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nell’istanza AEM Assets .
+**Scopri**: In questa sezione,  **** il widget Newsletter visualizza le risorse e le rappresentazioni recentemente caricate nell’istanza AEM Assets .
 
-Per abilitare la rimozione dei dati dell&#39;attività utente, abilita il servizio **di rimozione eventi** DAM da Configuration Manager. Dopo aver attivato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
+Per abilitare la rimozione dei dati dell&#39;attività dell&#39;utente, abilita il **servizio di rimozione degli eventi DAM** da Configuration Manager. Dopo aver attivato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
 La schermata introduttiva fornisce strumenti di navigazione semplici, ad esempio icone sulla barra degli strumenti per accedere a cartelle, raccolte e cataloghi.
 
