@@ -22,7 +22,7 @@ ht-degree: 22%
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l&#39;applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
 
 Il contenuto associato consente la connessione in modo che le risorse (ad es.) possano essere (facoltativamente) utilizzate con il frammento quando questo viene aggiunto a una pagina di contenuto. Questo offre flessibilità [fornendo una serie di risorse a cui accedere quando si utilizza il frammento di contenuto in una pagina](/help/sites-authoring/content-fragments.md#using-associated-content), riducendo al contempo il tempo necessario per la ricerca della risorsa appropriata.
 
@@ -32,7 +32,7 @@ Il contenuto associato consente la connessione in modo che le risorse (ad es.) p
 >
 >Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
-Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali a una raccolta](managing-collections-touch-ui.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
+Per creare l&#39;associazione è necessario [aggiungere le risorse multimediali a una raccolta](managing-collections-touch-ui.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
 
 1. Apri il frammento e seleziona **[!UICONTROL Contenuto associato]** dal pannello laterale.
 
@@ -53,8 +53,8 @@ Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali 
 
 Una volta associata una raccolta potete:
 
-* **Rimuovere** l&#39;associazione.
-* **Aggiungete risorse** alla raccolta.
+* **Rimuove** l&#39;associazione.
+* **Aggiungere** risorse alla raccolta.
 * Selezionate una risorsa per ulteriori azioni.
 * Modificare il contenuto.
 
