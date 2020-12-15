@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Best practice per tradurre le risorse in modo efficiente {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager (AEM) Assets supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag di risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consultate Risorse [](multilingual-assets.md)multilingue.
+Adobe Experience Manager (AEM) Assets supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag di risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consultate [Risorse multilingue](multilingual-assets.md).
 
-Per una gestione efficiente delle risorse, al fine di garantire che le diverse versioni tradotte rimangano sincronizzate, create copie [in](preparing-assets-for-translation.md) lingua delle risorse prima di eseguire i flussi di lavoro di traduzione.
+Per una gestione efficiente delle risorse, al fine di garantire che le diverse versioni tradotte rimangano sincronizzate, create [copie della lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
 
 Una copia in lingua di una risorsa o di un gruppo di risorse è un linguaggio di pari livello (o una versione delle risorse in un linguaggio cognato) con una gerarchia di contenuti simile.
 
@@ -32,7 +32,7 @@ Potete inoltre apportare alcune modifiche alla configurazione di un paio di flus
    * [Imposta archivio dati file](/help/sites-deploying/data-store-config.md)
    * [Configurare  archivio dati Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Disattiva il flusso di lavoro [di WriteData](/help/sites-administering/workflow-offloader.md#disable-offloading) MetaData DAM
+1. Disattiva il flusso di lavoro [WriteData MetaData DAM](/help/sites-administering/workflow-offloader.md#disable-offloading)
 
    Come suggerisce il nome, il flusso di lavoro *DAM Metadata Writeback* riscrive i metadati nel file binario. Poiché i metadati cambiano dopo la traduzione, la riscrittura nel file binario genera un binario diverso per una copia della lingua.
 
@@ -40,10 +40,10 @@ Potete inoltre apportare alcune modifiche alla configurazione di un paio di flus
    >
    >La disattivazione del flusso di lavoro *DAM MetaData Writeback* disattiva XMP riscrittura dei metadati sui binari delle risorse. Di conseguenza, le modifiche future ai metadati non saranno più salvate nelle risorse. Valutare le conseguenze prima di disattivare questo flusso di lavoro.
 
-1. Attiva il flusso di lavoro *Imposta data* ultima modifica.
+1. Attivare il flusso di lavoro *Imposta data ultima modifica*.
 
-   Il flusso di lavoro *DAM MetaData Writeback* configura l’ultima data modificata per una risorsa. Poiché nel passaggio 2 avete disattivato questo flusso di lavoro,  AEM Assets non è più in grado di aggiornare l’ultima data di modifica delle risorse. Pertanto, abilitate il flusso di lavoro *Imposta data* ultima modifica per fare in modo che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
+   Il flusso di lavoro *DAM MetaData Writeback* configura l&#39;ultima data modificata per una risorsa. Poiché nel passaggio 2 avete disattivato questo flusso di lavoro,  AEM Assets non è più in grado di aggiornare l’ultima data di modifica delle risorse. Pertanto, abilitate il flusso di lavoro *Imposta data ultima modifica* per verificare che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
 
-1. [Configurate il framework](/help/sites-administering/tc-tic.md) di integrazione della conversione per interrompere la traduzione dei file binari delle risorse. Deselezionate l’opzione &quot;Traduci risorse&quot; nella scheda Risorse per interrompere la conversione dei file binari delle risorse.
-1. Traducete i metadati/i tag delle risorse utilizzando i flussi di lavoro [delle risorse](multilingual-assets.md)multilingue.
+1. [Configurate il ](/help/sites-administering/tc-tic.md) framework di integrazione della traduzione per interrompere la traduzione dei file binari delle risorse. Deselezionate l’opzione &quot;Traduci risorse&quot; nella scheda Risorse per interrompere la conversione dei file binari delle risorse.
+1. Traducete i metadati/i tag delle risorse utilizzando i flussi di lavoro [risorse multilingue](multilingual-assets.md).
 
