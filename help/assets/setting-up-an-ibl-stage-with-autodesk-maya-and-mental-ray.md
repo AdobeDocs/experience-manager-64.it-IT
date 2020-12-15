@@ -25,10 +25,10 @@ ht-degree: 75%
 1. Crea un riferimento (temporaneo) a un modello rappresentativo. Questo consente di valutare la luce, impostare le videocamere e configurare il rendering.
 1. Imposta l’illuminazione basata sull’immagine (IBL).
 
-   1. In **[!UICONTROL Render Settings]**, select **[!UICONTROL Render Render Using: mental ray]**, and open the Scene tab.
-   1. Open the **[!UICONTROL Render Environment]** accordion and click **[!UICONTROL Render Create Image Based Lighting]**.
-   1. Click the box icon that has a right arrow on the left side of the box to select the IBL node `mentalRayIblShape1`, then exit **[!UICONTROL Render Settings]**.
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. In **[!UICONTROL Impostazioni rendering]**, selezionare **[!UICONTROL Rendering con: razza mentale]** e aprite la scheda Scene.
+   1. Aprite il pannello di controllo **[!UICONTROL Ambiente di rendering]** e fate clic su **[!UICONTROL Rendering crea illuminazione basata su immagine]**.
+   1. Fate clic sull&#39;icona della casella con una freccia destra a sinistra della casella per selezionare il nodo IBL `mentalRayIblShape1`, quindi uscite da **[!UICONTROL Impostazioni di rendering]**.
+   1. In **[!UICONTROL Editor attributi]**, selezionare il nodo di trasformazione `mentalRayIbl1`, quindi rinominare il nodo di trasformazione in `AdobeIbl`.
    1. Imposta la scala del nodo per aumentare significativamente l&#39;ambiente rispetto all’oggetto in 3D più grande per poterlo visualizzare (ad esempio, `10000,10000,10000`).
    1. Seleziona il nodo `AdobeIblShape` e configuralo come segue:
 
@@ -49,17 +49,17 @@ ht-degree: 75%
 
 1. Imposta il rendering con Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions.
+   Configurate le **[!UICONTROL Impostazioni di rendering]** con i seguenti suggerimenti.
 
-   * **[!UICONTROL Scheda Comune]**
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
+      Deselezionare la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le **[!UICONTROL Telecamere con rendering]**.
 
    * **[!UICONTROL Scheda Qualità]**
 
       * **Qualità generale** -`0.5` o minore
-      * **Modalità** Indirect Diffuse (GI) - `Final Gather`
-      * **Dimensioni** filtro - `2.0`, `2.0`
+      * **Modalità**  Diffusione indiretta (GI) -  `Final Gather`
+      * **Dimensioni**  filtro-  `2.0`,  `2.0`
    * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfeziona le luci, le impostazioni di rendering o entrambe per ottenere il risultato desiderato.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
@@ -79,7 +79,7 @@ ht-degree: 75%
 
    AEM 3D potrebbe non essere in grado di individuare l&#39;immagine IBL configurata in questa area di visualizzazione. Se così fosse, devi risolvere manualmente le dipendenze mancanti. Puoi assegnare la stessa immagine IBL PTIFF precedentemente caricata a ciascuna delle dipendenze mancanti. In alternativa, puoi assegnare immagini diverse per controllare ulteriormente gli effetti IBL. Dopo la risoluzione delle dipendenze, fare clic su **[!UICONTROL Salva]** per avviare la rielaborazione.
 
-1. Apri Proprietà risorsa in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
+1. Apri Proprietà risorsa in AEM. Impostare **[!UICONTROL Title]** su una stringa appropriata che verrà visualizzata nell&#39;elenco a discesa **[!UICONTROL Selettore fase]**. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
 
 1. Apri una risorsa 3D, seleziona la nuova area di visualizzazione e verifica che anteprima e rendering siano come previsto.
 
