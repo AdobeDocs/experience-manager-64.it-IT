@@ -11,7 +11,7 @@ ht-degree: 36%
 ---
 
 
-# Flusso di attività nella timeline {#activity-stream-in-timeline}
+# Flusso di attività nella cronologia {#activity-stream-in-timeline}
 
 Questa funzione consente di visualizzare i registri attività per le risorse nella timeline. Se eseguite una delle seguenti operazioni relative alle risorse in Adobe Experience Manager (AEM) Assets, la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
 
