@@ -28,16 +28,16 @@ Per risultati ottimali, le immagini utilizzate per l’illuminazione basata sull
 
 Attualmente, AEM 3D supporta soltanto i TIFF a 32 bit. Se necessario, utilizza Adobe Photoshop o altro strumento simile per convertire in TIFF l’immagine HDR, utilizzando le seguenti impostazioni nella finestra di dialogo Esporta TIFF di Adobe Photoshop:
 
-* **[!UICONTROL Profondità]** bit - 32 bit (mobile)
-* **[!UICONTROL Ordine]** pixel - Interleaved (RGBRGB)
-* **[!UICONTROL Compressione]** immagine - LZW
-* **[!UICONTROL Ordine]** byte - PC IBM
+* **[!UICONTROL Profondità]**  bit - 32 bit (mobile)
+* **[!UICONTROL Ordine]**  dei pixel - Interleaved (RGBRGB)
+* **[!UICONTROL Compressione]**  immagine - LZW
+* **[!UICONTROL Ordine]**  byte - PC IBM
 
 Mentre una singola immagine HDR è spesso sufficiente per le aree di visualizzazione IBL, AEM 3D fornisce un controllo aggiuntivo sugli effetti IBL che consente fino a tre immagini distinte:
 
-* **Immagine** ambiente di illuminazione diffusa - Questo tipo di immagine deve essere un&#39;immagine HDR, ma può essere relativamente piccola, poiché l&#39;immagine verrà filtrata pesantemente prima di essere utilizzata per l&#39;illuminazione diffusa.
-* **Immagine** ambiente di riflessione - Questo tipo di immagine viene usato per creare riflessi nelle superfici degli oggetti. Può essere un’immagine RGB standard a 8 bit, di dimensioni e risoluzione tali da fornire la qualità e la nitidezza desiderate per i riflessi. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit prima di utilizzare un algoritmo proprietario.
-* **Immagine** ambiente di sfondo - Questo tipo di immagine viene usato come sfondo. Può essere un’immagine RGB standard a 8 bit e dovrebbe avere dimensioni, risoluzione e livello di dettagli appropriati per lo sfondo dell’area di visualizzazione. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit utilizzando un algoritmo proprietario.
+* **Immagine**  ambiente di illuminazione diffusa - Questo tipo di immagine deve essere un&#39;immagine HDR, ma può essere relativamente piccola, poiché l&#39;immagine verrà filtrata pesantemente prima di essere utilizzata per l&#39;illuminazione diffusa.
+* **Immagine**  ambiente di riflessione - Questo tipo di immagine viene usato per creare riflessi nelle superfici degli oggetti. Può essere un’immagine RGB standard a 8 bit, di dimensioni e risoluzione tali da fornire la qualità e la nitidezza desiderate per i riflessi. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit prima di utilizzare un algoritmo proprietario.
+* **Immagine**  ambiente di sfondo - Questo tipo di immagine viene usato come sfondo. Può essere un’immagine RGB standard a 8 bit e dovrebbe avere dimensioni, risoluzione e livello di dettagli appropriati per lo sfondo dell’area di visualizzazione. Se viene specificata un’immagine HDR, AEM 3D la converte in RGB a 8 bit utilizzando un algoritmo proprietario.
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Mentre una singola immagine HDR è spesso sufficiente per le aree di visualizzaz
    <td>IBL Sun Details</td> 
    <td><p>Consente di regolare la direzione e la forza della sorgente di luce supplementare che simula il sole. <span class="diff-html-added">Questa sorgente di luce aumenta la luminosità dell’illuminazione e fa sì che l’oggetto proietti un’ombra esterna sul piano terreno. La funzione di generazione ombre è supportata quando si esegue il rendering con Rapid Refine e per l’anteprima con Google Chrome; tuttavia, al momento non è supportata da altri browser.</span></p> 
     <ul> 
-     <li><strong>lat</strong> - La posizione verticale della sorgente luminosa del sole (<code>0.0</code>-<code>1.0</code>).<br /> Un'impostazione di <code>0.0</code> è all'orizzonte (centro verticale dell'immagine dell'ambiente di illuminazione diffusa); <code>1.0</code> si trova nello zenith (bordo superiore dell’immagine dell’ambiente di luce diffusa).</li> 
+     <li><strong>lat</strong>  - La posizione verticale della sorgente luminosa del sole (<code>0.0</code>-<code>1.0</code>).<br /> Un'impostazione di  <code>0.0</code> è all'orizzonte (centro verticale dell'immagine dell'ambiente di illuminazione diffusa);  <code>1.0</code> si trova nello zenith (bordo superiore dell’immagine dell’ambiente di luce diffusa).</li> 
      <li><strong>long</strong> - La posizione orizzontale della sorgente luminosa del sole (<code>0.0</code>-<code>1.0</code>).<br /> Un’impostazione pari a 0,0 corrisponde a sinistra; 1,0 corrisponde al bordo destro dell’immagine ambiente di illuminazione diffusa.<br /> </li> 
-     <li><strong>luminoso</strong> - La luminosità della sorgente luminosa del sole. Aumenta questo valore per schiarire la fonte di luce solare; diminuiscilo per scurirla. <br /> Un'impostazione <code>0</code> disattiva l'illuminazione supplementare e disabilita le ombre proiettate. Il parametro non influisce sui riflessi ambientali.<br /> </li> 
+     <li><strong>luminoso</strong>  - La luminosità della sorgente luminosa del sole. Aumenta questo valore per schiarire la fonte di luce solare; diminuiscilo per scurirla. <br /> Un'impostazione di  <code>0</code> disattivazione dell'illuminazione supplementare e disattivazione delle ombre proiettate. Il parametro non influisce sui riflessi ambientali.<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -71,7 +71,7 @@ Mentre una singola immagine HDR è spesso sufficiente per le aree di visualizzaz
    <td><p><span class="diff-html-added">Consente di controllare l'illuminazione diffusa. Potrebbe essere necessario regolare manualmente questa proprietà per correggere la luminosità dell’illuminazione se l’immagine ambiente di illuminazione diffusa è insolitamente chiara o scura (ad esempio, scene notturne).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Attualmente non utilizzato.</li> 
-     <li><strong>luminoso</strong> - Moltiplicatore <span class="diff-html-added">luminosità. Aumentando o diminuendo questo valore si aumenta o diminuisce l’intensità di illuminazione complessiva (sia l’illuminazione di base IBL che la luminosità della sorgente solare).</span></li> 
+     <li><strong>luminoso</strong> - Moltiplicatore  <span class="diff-html-added">luminosità. Aumentando o diminuendo questo valore si aumenta o diminuisce l’intensità di illuminazione complessiva (sia l’illuminazione di base IBL che la luminosità della sorgente solare).</span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -87,12 +87,12 @@ Le fasi IBL utilizzano immagini di sfondo sferiche con un diametro di 20 metri p
 
    `/content/dam/test3d/stage-helipad.fbx`
 
-1. Espandi il nodo dell’area di visualizzazione in `jcr:content/metadata`.
+1. Espandete il nodo dell&#39;area di visualizzazione su `jcr:content/metadata`.
 1. Impostare la proprietà `dam:gPlaneRadius` sul valore millimetrico desiderato.
 
    Per l’efficienza del rendering,  Adobe consiglia di limitare questo valore a circa la dimensione più grande dell’oggetto più grande che si intende visualizzare nell’area di visualizzazione.
 
    Ad esempio, un modello di piano a getto lungo 20 metri viene visualizzato bene se `dam:gPlaneRadius=20000`.
 
-1. Nell’angolo in alto a sinistra della pagina del CRXDE Lite, toccate **[!UICONTROL Salva tutto]**.
+1. Vicino all&#39;angolo superiore sinistro della pagina CRXDE Lite, toccare **[!UICONTROL Salva tutto]**.
 
