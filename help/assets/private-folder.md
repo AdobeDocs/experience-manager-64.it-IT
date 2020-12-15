@@ -19,7 +19,7 @@ Potete creare una cartella privata nell’interfaccia utente di Adobe Experience
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Aggiungi cartella]** , immettete un titolo e un nome (facoltativi) per la cartella e selezionate **[!UICONTROL Privato]**.
+1. Nella finestra di dialogo **[!UICONTROL Aggiungi cartella]**, immettete un titolo e un nome (facoltativo) per la cartella, quindi selezionate **[!UICONTROL Privato]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -35,7 +35,7 @@ Potete creare una cartella privata nell’interfaccia utente di Adobe Experience
    >
    >La cartella non è visibile ad altri utenti finché non la condividete.
 
-1. In the Folder Prperties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. Nella pagina Proprietà cartella, selezionate un utente dall&#39;elenco **[!UICONTROL Aggiungi utente]**, assegnate un ruolo all&#39;utente nella cartella privata e fate clic su **[!UICONTROL Aggiungi]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
@@ -44,7 +44,7 @@ Potete creare una cartella privata nell’interfaccia utente di Adobe Experience
    >Potete assegnare diversi ruoli, ad esempio Editor, Proprietario o Visualizzatore all’utente con il quale condividete la cartella. Se assegnate un ruolo Proprietario all’utente, quest’ultimo dispone dei privilegi di Modifica sulla cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegnate un ruolo Editor, l’utente può modificare le risorse presenti nella cartella privata. Se assegnate un ruolo Visualizzatore, l’utente può visualizzare solo le risorse presenti nella propria cartella privata.
 
 1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi nella cartella privata quando accede a  AEM Assets.
-1. Fate clic su **[!UICONTROL OK]** per chiudere il messaggio di conferma.
+1. Fare clic su **[!UICONTROL Ok]** per chiudere il messaggio di conferma.
 1. L’utente con il quale condividete la cartella riceve una notifica di condivisione. Accedete a  AEM Assets con le credenziali dell&#39;utente per visualizzare la notifica.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
