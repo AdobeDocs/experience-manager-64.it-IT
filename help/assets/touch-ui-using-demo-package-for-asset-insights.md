@@ -11,14 +11,14 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo del pacchetto dimostrativo per approfondimenti sulle risorse {#using-demo-package-for-asset-insights}
+# Utilizzo del pacchetto dimostrativo per informazioni sulle risorse {#using-demo-package-for-asset-insights}
 
 Utilizzando il pacchetto demo, puoi abilitare  Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina Web di esempio.
 
-## Utilizzo  AEM Assets Insights con una pagina Web di esempio  {#using-aem-assets-insights-with-sample-web-page}
+## Utilizzo di  AEM Assets Insights con una pagina Web di esempio {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configura approfondimenti risorse utilizzando le istruzioni in [Configurazione di approfondimenti](touch-ui-configuring-asset-insights.md)risorse.
-1. Scaricate l&#39;esempio  pacchetto AEM Assets dal seguente percorso e installate il pacchetto da CRXDE package manager.
+1. Configura approfondimenti risorse seguendo le istruzioni riportate in [Configurazione di approfondimenti risorse](touch-ui-configuring-asset-insights.md).
+1. Scaricate l&#39;esempio  pacchetto AEM Assets da qui sotto e installate il pacchetto da CRXDE package manager.
 
    [Ottieni file](assets/insightsdemo.zip)
 
