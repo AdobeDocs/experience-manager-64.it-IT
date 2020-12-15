@@ -23,7 +23,7 @@ ht-degree: 46%
 + [Miglioramenti dell&#39;esperienza utente](ux-improvements.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
 + Usa  AEM Assets {#using}
-   + [esperienza della home page di AEM Assets](assets-home-page.md)
+   + [ esperienza della home page di AEM Assets](assets-home-page.md)
    + [Ricerca di risorse in AEM](search-assets.md)
    + [Ricerca full-text GQL](gql-search.md)
    + [Risorse in più lingue](multilingual-assets.md)
@@ -39,7 +39,7 @@ ht-degree: 46%
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+   + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -139,7 +139,7 @@ ht-degree: 46%
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments-delete.md)
    + [Frammenti di contenuto - Markdown](content-fragments-markdown.md)
    + [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gestisci risorse {#managing}
    + [Gestione delle risorse con l&#39;interfaccia utente ottimizzata per il tocco](managing-assets-touch-ui.md)
    + [Gestione di più risorse e raccolte](managing-multiple-assets.md)
    + [Selettore risorse](asset-selector.md)
