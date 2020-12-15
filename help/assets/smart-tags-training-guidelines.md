@@ -14,11 +14,11 @@ ht-degree: 12%
 ---
 
 
-# Linee guida per la formazione sui servizi di contenuto avanzato {#smart-content-service-training-guidelines}
+# Linee guida per la formazione su Smart Content Service {#smart-content-service-training-guidelines}
 
 Per poter etichettare efficacemente le immagini del tuo marchio, Smart Content Service richiede che le immagini di formazione siano conformi a determinate linee guida.
 
-## Orientamenti per la formazione {#guidelines-for-training}
+## Linee guida per la formazione {#guidelines-for-training}
 
 Per risultati ottimali, le immagini del set di formazione devono essere conformi alle seguenti linee guida:
 
@@ -26,19 +26,19 @@ Per risultati ottimali, le immagini del set di formazione devono essere conformi
 
 **Coerenza**: Le immagini di un tag devono essere visivamente simili.
 
-Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag *di mia parte* (per la formazione) perché non sono visivamente simili.
+Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag *my-party* (per la formazione) perché non sono visivamente simili.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coherence.png)
 
 **Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini della formazione. L&#39;idea è quella di fornire alcuni esempi, ma ragionevolmente diversi, in modo che AEM imparare a concentrarsi sulle cose giuste. Se applicate lo stesso tag a immagini visivamente diverse, includete almeno cinque esempi di ciascun tipo.
 
-Ad esempio, per il tag *model-down-pose*, includete più immagini di formazione simili all’immagine evidenziata di seguito per il servizio, in modo da identificare immagini simili con maggiore precisione durante l’assegnazione dei tag.
+Ad esempio, per il tag *model-down-pose*, includete più immagini di formazione simili all&#39;immagine evidenziata di seguito per il servizio, in modo da identificare le immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coverage_1.png)
 
 **Distrazione/ostruzione**: Il servizio si allena meglio sulle immagini con meno distrazioni (sfondi visibili, accompagnamento indipendenti, come oggetti/persone con il soggetto principale).
 
-Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candidato per l&#39;addestramento.
+Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candidato alla formazione.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/distraction.png)
 
@@ -52,7 +52,7 @@ Gli smart tag avanzati si basano su modelli di apprendimento delle immagini del 
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle impostazioni internazionali AEM. Per un elenco delle lingue, consultate [Note](/help/release-notes/smart-content-service-release-notes.md)sulla versione di Smart Content Services.
+* I tag sono supportati nelle impostazioni internazionali AEM. Per un elenco delle lingue, vedere [Note sulla versione di Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
 Per cercare risorse con smart tag (regolari o avanzati), usate la ricerca Omni delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
