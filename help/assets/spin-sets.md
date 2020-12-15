@@ -24,13 +24,13 @@ Un set 360 gradi simula la rotazione reale di un oggetto per esaminarlo. I set 3
 
 Un set 360 gradi simula un’esperienza di visualizzazione a 360 gradi. Dynamic Media offre set 360 gradi con asse singolo in cui gli utenti possono ruotare un elemento. Inoltre, gli utenti possono effettuare lo zoom &quot;a mano libera&quot; e scorrere qualsiasi visualizzazione con pochi semplici clic del mouse. In questo modo, gli utenti possono esaminare un elemento più da vicino da un particolare punto di vista.
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+I set 360 gradi sono contrassegnati da un banner con la parola **[!UICONTROL SPINSET]**. Inoltre, se il set 360 gradi è pubblicato, la data di pubblicazione indicata dall&#39;icona **[!UICONTROL World]** si trova sul banner insieme all&#39;ultima data di modifica, indicata dall&#39;icona **[!UICONTROL Pencil]**.
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](managing-assets-touch-ui.md)touch.
+>Per informazioni sull&#39;interfaccia utente di Risorse, consultate [Gestione delle risorse con l&#39;interfaccia utente touch](managing-assets-touch-ui.md).
 
 ## Avvio rapido: Set 360 gradi {#quick-start-spin-sets}
 
@@ -42,37 +42,37 @@ Per iniziare rapidamente a usare i set 360 gradi, effettuate le seguenti operazi
 
 1. [Creare set 360 gradi.](#creating-spin-sets)
 
-   Per creare un set 360 gradi, selezionate **[!UICONTROL Crea > Set]** 360 gradi, quindi assegnate un nome al set, scegliete le risorse e ordinate le immagini nell’ordine in cui appariranno.
+   Per creare un set 360 gradi, selezionate **[!UICONTROL Crea > Set 360 gradi]**, quindi denominate il set, scegliete le risorse e ordinate le immagini nell’ordine in cui verranno visualizzate.
 
-   See [Working with Selectors](working-with-selectors.md).
+   Vedere [Utilizzo dei selettori](working-with-selectors.md).
 
    >[!NOTE]
    >
-   >You can also create Spin Sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   >Potete anche creare automaticamente i set 360 gradi mediante i predefiniti per set di batch [predefiniti](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >
    >*I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità* Dynamic Media - Scene7.
 
-1. Impostate i predefiniti [](managing-viewer-presets.md)per visualizzatori di set 360 gradi in base alle vostre esigenze.
+1. Impostate i predefiniti per visualizzatori di set 360 gradi [a seconda delle necessità.](managing-viewer-presets.md)
 
-   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set 360 gradi. To see your Spin Set with a Viewer preset, select the Spin Set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set 360 gradi. Per visualizzare il set 360 gradi con un predefinito per visualizzatori, selezionate il set 360 gradi e, nel menu a discesa a sinistra, selezionate **[!UICONTROL Visualizzatori]**.
 
-   Consultate **[!UICONTROL Strumenti > Risorse > Predefiniti]** visualizzatore per creare o modificare i predefiniti per visualizzatori.
+   Per creare o modificare i predefiniti per visualizzatori, consultate **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
    Consultate [Aggiunta e modifica dei predefiniti per visualizzatori.](managing-viewer-presets.md)
 
-1. [Visualizzazione di set](#viewing-spin-sets)360 gradi
+1. [Visualizzazione di set](#viewing-spin-sets) 360 gradi
 
-   Potete visualizzare e accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente).
+   Potete visualizzare e accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (i set creati utilizzando i predefiniti per set di batch, non *vengono visualizzati nell’interfaccia utente.)*
 
 1. [Anteprima set 360 gradi](previewing-assets.md)
 
-   Selezionate il set 360 gradi ed effettuate l’anteprima. Ruotate il set 360 gradi. Potete scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]** , disponibile dal menu a discesa della barra a sinistra.
+   Selezionate il set 360 gradi ed effettuate l’anteprima. Ruotate il set 360 gradi. Potete scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]**, disponibile dal menu a discesa della barra a sinistra.
 
 1. [Pubblicare Set 360 gradi](publishing-dynamicmedia-assets.md)
 
-   La pubblicazione di un set 360 gradi attiva l’ordine in cui le immagini vengono visualizzate in un set 360 gradi. Accertatevi di ordinarli in modo che la rotazione sia una vista a 360 gradi uniforme.**[!UICONTROL Stringa URL]** e **[!UICONTROL Incorpora]** . Inoltre, dovete [pubblicare il predefinito](managing-viewer-presets.md)per visualizzatori.
+   La pubblicazione di un set 360 gradi attiva l’ordine in cui le immagini vengono visualizzate in un set 360 gradi. Accertatevi di ordinarli in modo che la rotazione sia una vista a 360 gradi uniforme.**** URL e  **** stringa da incorporare. Inoltre, è necessario [pubblicare il predefinito per visualizzatori](managing-viewer-presets.md).
 
-1. [Collegare gli URL all’applicazione](linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](embed-code.md)video o immagini.
+1. [Collegate gli URL all’](linking-urls-to-yourwebapplication.md) applicazione Web o  [incorporate il visualizzatore](embed-code.md) video o immagini.
 
     AEM Assets crea richieste URL per i set 360 gradi e le attiva dopo la pubblicazione dei set 360 gradi. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
@@ -80,7 +80,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettuate le seguenti operazi
 
    Consulta le sezioni [Collegamento di un set 360 gradi a una pagina web](linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](embed-code.md).
 
-Se necessario, potete [modificare i set](#editing-spin-sets)360 gradi. Inoltre, potete visualizzare e modificare le proprietà [del set](managing-assets-touch-ui.md#editing-properties)360 gradi.
+Se necessario, potete [modificare i set 360 gradi](#editing-spin-sets). Inoltre, potete visualizzare e modificare le proprietà dei set 360 gradi [a1/>.](managing-assets-touch-ui.md#editing-properties)
 
 ## Caricamento delle risorse per i set 360 gradi {#uploading-assets-for-spin-sets}
 
@@ -108,63 +108,63 @@ Ordine in cui le immagini vengono visualizzate in un set 360 gradi Accertatevi d
 >
 >I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 >
->Consultate &quot;Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi&quot; in [Configurazione di elementi multimediali dinamici - Modalità](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)Scene7.
+>Consultate &quot;Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi&quot; in [Configurazione di Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 **Per creare dei set 360 gradi:**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse.
+1. In Risorse, andate nel punto in cui desiderate creare un set 360 gradi, toccate **[!UICONTROL Crea]**, quindi selezionate **[!UICONTROL Set 360 gradi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-1. Nella pagina Editor **[!UICONTROL set]** 360 gradi, immettete un nome per il set 360 gradi nel campo **[!UICONTROL Titolo]** . Il nome viene visualizzato nel banner lungo il set 360 gradi. Facoltativamente, immettete una descrizione.
+1. Nella pagina **[!UICONTROL Editor set 360 gradi]**, nel campo **[!UICONTROL Titolo]**, inserite un nome per il set 360 gradi. Il nome viene visualizzato nel banner lungo il set 360 gradi. Facoltativamente, immettete una descrizione.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-   Quando create il set 360 gradi, potete modificare la miniatura del set 360 gradi o consentire AEM selezionare la miniatura automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, toccate **[!UICONTROL Cambia miniatura]**. Selezionate un’immagine (per trovare le immagini potete spostarvi anche in altre cartelle). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   Quando create il set 360 gradi, potete modificare la miniatura del set 360 gradi o consentire AEM selezionare la miniatura automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, toccare **[!UICONTROL Cambia miniatura]**. Selezionate un’immagine (per trovare le immagini potete spostarvi anche in altre cartelle). Se è stata selezionata una miniatura e si decide di AEM generare una miniatura dal set 360 gradi, selezionare **[!UICONTROL Passa alla miniatura automatica]**.
 
 1. Effettuate una delle seguenti operazioni:
 
-   * Nell’angolo in alto a sinistra della pagina Editor **[!UICONTROL set]** 360 gradi, toccate **[!UICONTROL Aggiungi risorsa]**.
-   * Al centro della pagina Editor **[!UICONTROL set]** 360 gradi, toccate **[!UICONTROL Toccate per aprire il selettore]** risorse.
+   * Nell’angolo in alto a sinistra della pagina **[!UICONTROL Editor set 360 gradi]**, toccate **[!UICONTROL Aggiungi risorsa]**.
+   * Vicino al centro della pagina **[!UICONTROL Editor set 360 gradi]**, toccate **[!UICONTROL Toccate per aprire il selettore risorse]**.
 
-   Toccate per selezionare le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   Toccate per selezionare le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, nell&#39;angolo superiore destro della pagina, toccare **[!UICONTROL Seleziona]**.
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, nell’angolo superiore destro della pagina toccate l’icona **[!UICONTROL Visualizza]** , quindi toccate Visualizzazione **** colonne, Visualizzazione **** a schede o Visualizzazione **** elenco.
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, accanto all&#39;angolo superiore destro della pagina, toccate l&#39;icona **[!UICONTROL Visualizza]**, quindi toccate **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Visualizzazione a elenco]**.
 
-   See [Working with Selectors](working-with-selectors.md).
+   Vedere [Utilizzo dei selettori](working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte in ordine alfanumerico. Potete riordinare o ordinare manualmente le risorse dopo averle aggiunte. Se necessario, trascinate l’icona **[!UICONTROL Riordinamento]** di una risorsa a destra del nome file della risorsa per riordinare le immagini verso l’alto o verso il basso nell’elenco dei set.
+1. Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte in ordine alfanumerico. Potete riordinare o ordinare manualmente le risorse dopo averle aggiunte. Se necessario, trascinate l&#39;icona **[!UICONTROL Riordina]** di una risorsa a destra del nome file della risorsa per riordinare le immagini verso l&#39;alto o verso il basso nell&#39;elenco dei set.
 
    ![spin_set_assets6-4](assets/spin_set_assets6-4.png)
 
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Per eliminare un’immagine, selezionatela, quindi toccate **[!UICONTROL Elimina risorsa]**.
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
+   * Per eliminare un&#39;immagine, selezionate l&#39;immagine, quindi toccate **[!UICONTROL Elimina risorsa]**.
+   * Per applicare un predefinito, nell’angolo superiore destro della pagina toccate **[!UICONTROL Preset]**, quindi selezionate un predefinito da applicare a tutte le risorse alla volta.
 
 1. Toccate **[!UICONTROL Salva]**. Il set 360 gradi appena creato viene visualizzato nella cartella in cui è stato creato.
 
-## Visualizzazione di set 360 gradi {#viewing-spin-sets}
+## Visualizzazione dei set 360 gradi {#viewing-spin-sets}
 
-Potete creare i set 360 gradi nell’interfaccia utente o automaticamente utilizzando i predefiniti per set di [batch](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente. Potete accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set 360 gradi nell’interfaccia utente).
+Potete creare i set 360 gradi nell’interfaccia utente o automaticamente utilizzando i predefiniti per set di batch [](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Tuttavia, i set creati utilizzando i predefiniti per set di batch, non *vengono visualizzati nell’interfaccia utente.* Potete accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set 360 gradi nell’interfaccia utente).
 
-Potete inoltre visualizzare i set mediante l’interfaccia utente come descritto in [Modifica di set](#editing-spin-sets)360 gradi.
+Potete inoltre visualizzare i set mediante l’interfaccia utente come descritto in [Modifica di set 360 gradi](#editing-spin-sets).
 
 **Per visualizzare i set 360 gradi:**
 
-1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano i set di cui la risorsa selezionata è membro (in **[!UICONTROL Membro dei set]**). Toccate il nome del set per visualizzare l’intero set.
+1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano i set di risorse selezionate come membro di (sotto **[!UICONTROL Membro di set]**). Toccate il nome del set per visualizzare l’intero set.
 
    ![chlimage_1-384](assets/chlimage_1-384.png)
 
-1. Da un’immagine inclusa in un qualsiasi set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
+1. Da un’immagine inclusa in un qualsiasi set. Selezionate il menu **[!UICONTROL Set]** per visualizzare i set di cui la risorsa è membro.
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
-1. From search, you can select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
+1. Dalla ricerca è possibile selezionare **[!UICONTROL Filtri]**, quindi espandere **[!UICONTROL Dynamic Media]** e selezionare **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando **[!UICONTROL Inizia con]** criteri di ricerca diversi dalla ricerca AEM basata sull&#39;utilizzo dei criteri di ricerca **[!UICONTROL Contiene]** . L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca **[!UICONTROL Inizia con]** diversi da quelli AEM basati sull&#39;utilizzo dei criteri di ricerca **[!UICONTROL Contiene]**. L&#39;impostazione del filtro su **[!UICONTROL Sets]** è l&#39;unico modo per eseguire ricerche nei set automatizzati.
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
@@ -183,8 +183,8 @@ Potete eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
 1. Effettuate una delle seguenti operazioni:
 
    * Passate il puntatore del mouse su una risorsa set 360 gradi, quindi toccate **[!UICONTROL Modifica]** (icona matita).
-   * Passate il puntatore del mouse su una risorsa set 360 gradi, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** nella barra degli strumenti.
-   * Toccate una risorsa set 360 gradi, quindi toccate **[!UICONTROL Modifica]** (icona matita) nella barra degli strumenti.
+   * Passate il puntatore del mouse su una risorsa set 360 gradi, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Toccate una risorsa set 360 gradi, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
 1. Per modificare il set 360 gradi, effettuate una delle seguenti operazioni:
 
@@ -193,14 +193,14 @@ Potete eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, toccate **[!UICONTROL Aggiungi risorsa]**. Andate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all&#39;angolo superiore destro.
 Se eliminate l’immagine che AEM usata per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
    * Per eliminare una risorsa, selezionatela e toccate **[!UICONTROL Elimina risorsa]**.
-   * Per applicare un predefinito, toccate l’icona **[!UICONTROL Predefinito]** e selezionate un predefinito.
-   * Per eliminare un intero set 360 gradi, selezionatelo e selezionate **[!UICONTROL Elimina]**
+   * Per applicare un predefinito, toccate l&#39;icona **[!UICONTROL Preset]** e selezionate un predefinito.
+   * Per eliminare un intero set 360 gradi, portatevi sul set 360 gradi, selezionatelo e selezionate **[!UICONTROL Elimina]**
 
       >[!NOTE]
-      >* You can edit the images in a Spin Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the **[!UICONTROL Edit]** (pencil icon) on an individual asset to open the editing window.
+      >* Per modificare le immagini di un set 360 gradi, toccate il set, toccate **[!UICONTROL Imposta membri]** nella barra a sinistra, quindi toccate l&#39; **[!UICONTROL Modifica]** (icona matita) su una singola risorsa per aprire la finestra di modifica.
 
 
-1. Al termine della modifica, fate clic su **[!UICONTROL Salva]** .
+1. Fare clic su **[!UICONTROL Save]** al termine della modifica.
 
 ## Anteprima dei set 360 gradi {#previewing-spin-sets}
 
@@ -208,4 +208,4 @@ Consultate [Anteprima delle risorse](previewing-assets.md).
 
 ## Pubblicazione di set 360 gradi {#publishing-spin-sets}
 
-Consultate [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md).
+Consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
