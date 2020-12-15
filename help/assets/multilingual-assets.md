@@ -29,6 +29,6 @@ La conversione delle risorse include quanto segue:
 1. [Applicazione dei servizi di traduzione cloud alle cartelle](transition-cloud-services.md)
 1. [Creazione di progetti di traduzione](translation-projects.md)
 
-Se il provider di servizi di traduzione non fornisce un connettore da integrare con AEM, utilizzare un processo [](/help/sites-administering/tc-manage.md#exporting-a-translation-job)alternativo.
+Se il provider di servizi di traduzione non fornisce un connettore da integrare con AEM, utilizzare un [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Consultate anche [Creazione di progetti di traduzione per i frammenti](creating-translation-projects-for-content-fragments.md)di contenuto.
+Vedere anche [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md).
