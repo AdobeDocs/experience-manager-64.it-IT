@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HTTP2 Delivery of Content {#http-delivery-of-content}
+# HTTP2 Distribuzione di contenuto {#http-delivery-of-content}
 
  Adobe è entusiasta di annunciare la disponibilità della distribuzione di contenuti HTTP/2 con il vantaggio complessivo di prestazioni migliorate.
 
@@ -32,7 +32,7 @@ Il seguente sito Web descrive HTTP/2 e i relativi benefici in modo semplice e br
 
 ## Quali sono i vantaggi principali del passaggio a HTTP/2 per la distribuzione dei contenuti? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Il miglioramento delle prestazioni varia notevolmente in base a fattori quali il codice del sito Web, la modalità di utilizzo di Dynamic Media, il dispositivo, lo schermo e la posizione del consumatore e così via.
+I miglioramenti delle prestazioni variano notevolmente in base a fattori quali il codice del sito Web, la modalità di utilizzo di Dynamic Media, il dispositivo, lo schermo e la posizione del consumatore e così via.
 
  Adobe  proprio test ha prodotto i seguenti risultati:
 
@@ -48,7 +48,7 @@ La dimostrazione seguente illustra la differenza tra il caricamento HTTP/1 e HTT
 Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 * Usa HTTPS sicuro per le tue richieste rich media.
-* Utilizza la rete CDN (rete di distribuzione dei contenuti)  Adobe inclusa nella licenza per contenuti multimediali dinamici.
+* Utilizzate la rete CDN (rete di distribuzione dei contenuti)  inclusa nel Adobe come parte della licenza Dynamic Media.
 * Utilizzate un dominio dedicato (non-company-h.assetsadobe#.com).
 
    Se disponete già di un dominio dedicato, potete scegliere di utilizzare il supporto tecnico.
@@ -59,7 +59,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 È necessario avviare la richiesta per passare a HTTP/2; non viene eseguita automaticamente.
 
-1. Avviate una richiesta di assistenza tecnica per passare a HTTP2. Consultate [Accesso al AEM Supporto Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Avviate una richiesta di assistenza tecnica per passare a HTTP2. Consultate [Accesso al portale di supporto AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Nella richiesta di assistenza, fornite le seguenti informazioni:
 
@@ -67,7 +67,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
       1. Tutti i domini da trasferire a HTTP2.
       1. Verifica di utilizzare HTTPS protetto per le richieste rich media.
       1. Verifica di utilizzare la CDN tramite  Adobe e di non essere gestito con una relazione diretta.
-      1. Verifica di utilizzare un dominio dedicato. Se utilizzi Dynamic Media, utilizzi già un dominio dedicato.
+      1. Verifica di utilizzare un dominio dedicato. Se usi Dynamic Media, utilizzi già un dominio dedicato.
    1. Il supporto tecnico vi aggiunge alla lista di attesa dei clienti HTTP/2 in base all&#39;ordine in cui sono state inviate le richieste.
    1. Quando  Adobe è pronto per gestire la richiesta, il supporto vi contatterà per coordinare la transizione e impostare una data di destinazione.
    1. Riceverai una notifica dopo il completamento e potrai verificare il corretto passaggio a HTTP2.
