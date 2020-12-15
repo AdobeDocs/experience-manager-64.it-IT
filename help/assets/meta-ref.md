@@ -21,7 +21,7 @@ I metadati Dublin Core forniscono un set standardizzato di convenzioni per la de
 
 Il semplice set di metadati Dublin Core Metadata Element Set (DCMES) contiene 15 elementi di metadati, come elencato nella tabella seguente. Ciascun elemento Dublin Core è facoltativo e può essere ripetuto. Potete aggiungere o eliminare i metadati Dublin Core come fareste per i metadati specifici per i tipi di supporti.
 
-Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa Dublin Core. Per ulteriori informazioni, consulta la [Dublin Core Initiative](http://dublincore.org/) .
+Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa Dublin Core. Per ulteriori informazioni, vedere [Dublin Core Initiative](http://dublincore.org/).
 
 | Proprietà | Descrizione |
 |---|---|
