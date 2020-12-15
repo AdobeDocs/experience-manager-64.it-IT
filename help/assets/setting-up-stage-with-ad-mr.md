@@ -43,15 +43,15 @@ ht-degree: 85%
 
    Configura le impostazioni di rendering con i seguenti suggerimenti:
 
-   * **[!UICONTROL Scheda Comune]**
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Deselezionare la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le videocamere con rendering.
 
    * **[!UICONTROL Scheda Qualità]**
 
-      * **[!UICONTROL Qualità]** globale `- 0.5` o inferiore
-      * **[!UICONTROL Modalità]** Indirect Diffuse (GI) - `Final Gather`
-      * **[!UICONTROL Dimensioni]** filtro - `2.0`, `2.0`
+      * **[!UICONTROL Qualità]** `- 0.5` complessiva o inferiore
+      * **[!UICONTROL Modalità]**  Diffusione indiretta (GI) -  `Final Gather`
+      * **[!UICONTROL Dimensioni]**  filtro-  `2.0`,  `2.0`
    * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfeziona le luci o le impostazioni di rendering, o entrambi, fino a ottenere il risultato desiderato.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
@@ -66,6 +66,6 @@ ht-degree: 85%
 
    Se Autodesk® Maya® non è configurato sul server AEM, esporta un file FBX da Maya e caricalo in AEM.
 
-1. Apri Proprietà risorsa in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
+1. Apri Proprietà risorsa in AEM. Impostare **[!UICONTROL Title]** su una stringa appropriata che verrà visualizzata nell&#39;elenco a discesa **[!UICONTROL Selettore fase]**. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
 1. Apri una risorsa 3D, seleziona la nuova area di visualizzazione e verifica che anteprima e rendering siano come previsto.
 
