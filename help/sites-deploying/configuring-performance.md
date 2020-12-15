@@ -10,23 +10,23 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 51694efa2b4e12b6218bf245aa5997f6342f02ca
 workflow-type: tm+mt
-source-wordcount: '6722'
+source-wordcount: '6662'
 ht-degree: 2%
 
 ---
 
 
-# Ottimizzazione delle prestazioni{#performance-optimization}
+# Ottimizzazione delle prestazioni {#performance-optimization}
 
 >[!NOTE]
 >
->Per linee guida generali sulle prestazioni, consultate la pagina Linee guida [](/help/sites-deploying/performance-guidelines.md) sulle prestazioni.
+>Per linee guida generali sulle prestazioni, consultare la pagina [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) (Linee guida sulle prestazioni).
 >
->Per ulteriori informazioni sulla risoluzione dei problemi di prestazioni e sulla risoluzione dei problemi, vedere anche la struttura [](/help/sites-deploying/performance-tree.md)Prestazioni.
+>Per ulteriori informazioni sulla risoluzione dei problemi di prestazioni, vedere anche la [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
->Inoltre, potete esaminare un articolo della Knowlege Base sui suggerimenti per l&#39;ottimizzazione delle [prestazioni.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>È inoltre possibile esaminare un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 Un problema chiave è rappresentato dal tempo impiegato dal sito Web per rispondere alle richieste dei visitatori. Anche se questo valore varia per ogni richiesta, è possibile definire un valore target medio. Una volta dimostrato che questo valore è sia raggiungibile che gestibile, può essere utilizzato per monitorare le prestazioni del sito Web e indicare lo sviluppo di potenziali problemi.
 
@@ -42,16 +42,13 @@ Questo ambiente contiene il contenuto che potete rendere disponibile agli utenti
 
 >[!NOTE]
 >
->* Dopo aver configurato per l&#39;ottimizzazione delle prestazioni, seguite le procedure in [Tough Day](/help/sites-developing/tough-day.md) per testare l&#39;ambiente sotto carico pesante.
->* Vedere anche [Suggerimenti](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)per l&#39;ottimizzazione delle prestazioni.
-
->
-
+>* Dopo aver configurato per l&#39;ottimizzazione delle prestazioni, seguire le procedure riportate in [Giorno duro](/help/sites-developing/tough-day.md) per verificare l&#39;ambiente con un carico elevato.
+>* Vedere anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
 
-Una metodologia di ottimizzazione delle prestazioni per i progetti CQ può essere riassunta in cinque semplici regole che possono essere seguite per evitare problemi di prestazioni fin dall’inizio:
+Una metodologia di ottimizzazione delle prestazioni per AEM progetti può essere riassunta in cinque semplici regole che possono essere seguite per evitare problemi di prestazioni fin dall&#39;inizio:
 
 1. [Pianificazione per l&#39;ottimizzazione](#planning-for-optimization)
 1. [Simula realtà](#simulate-reality)
@@ -95,7 +92,7 @@ Stabilire buoni e solidi obiettivi prestazionali è in realtà una delle aree pi
 
 È importante ottimizzare un collo di bottiglia alla volta. Se provate a fare cose in parallelo senza convalidare l&#39;impatto dell&#39;ottimizzazione unica, perderete la traccia di quale misura di ottimizzazione effettivamente ha aiutato.
 
-### Cicli Di Iterazione Agile {#agile-iteration-cycles}
+### Cicli di iterazione degli assi {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -103,7 +100,7 @@ Il perfezionamento delle prestazioni è un processo iterativo che richiede, misu
 
 Ciò significa in gran parte che lo sviluppatore che implementa l&#39;ottimizzazione deve avere un modo rapido per sapere se l&#39;ottimizzazione ha già raggiunto l&#39;obiettivo. Si tratta di informazioni preziose, perché quando si raggiunge l&#39;obiettivo, l&#39;ottimizzazione è finita.
 
-## Linee guida di base sulle prestazioni {#basic-performance-guidelines}
+## Linee guida sulle prestazioni di base {#basic-performance-guidelines}
 
 In genere, mantenete le richieste HTML non memorizzate nella cache fino a meno di 100 ms. Più specificamente, possono essere utilizzati come orientamento:
 
@@ -115,16 +112,16 @@ In genere, mantenete le richieste HTML non memorizzate nella cache fino a meno d
 
 I numeri sopra riportati si basano sulle seguenti condizioni:
 
-* misurati al momento della pubblicazione (nessun overhead correlato a un ambiente di authoring)
-* misurati sul server (nessun sovraccarico di rete)
-* non memorizzato nella cache (nessuna cache di output CQ, nessuna cache del dispatcher)
-* solo per elementi complessi con molte dipendenze (HTML, JS, PDF, ...)
-* nessun altro carico sul sistema
+* Misurato al momento della pubblicazione (nessun overhead correlato a un ambiente di authoring)
+* Misurato sul server (nessun sovraccarico di rete)
+* Non memorizzato nella cache (nessuna cache di output AEM, nessuna cache del dispatcher)
+* Solo per elementi complessi con molte dipendenze (HTML, JS, PDF, ...)
+* Nessun altro carico sul sistema
 
 Ci sono alcuni problemi che spesso contribuiscono a problemi di prestazioni. Questi ruotano principalmente intorno a:
 
-* inefficienza della cache dello dispatcher
-* l&#39;utilizzo di query in normali modelli di visualizzazione.
+* Inefficienza della cache del dispatcher
+* Utilizzo delle query nei normali modelli di visualizzazione.
 
 La sintonizzazione a livello di JVM e del sistema operativo in genere non comporta grandi balzi nelle prestazioni e dovrebbe pertanto essere eseguita alla fine del ciclo di ottimizzazione.
 
@@ -132,7 +129,7 @@ Anche la struttura di un archivio dei contenuti può avere un impatto sulle pres
 
 I migliori amici durante un normale esercizio di ottimizzazione delle prestazioni sono:
 
-* the `request.log`
+* `request.log`
 * temporizzazione basata su componenti
 * ultimo, ma non meno importante, profiler Java.
 
@@ -151,7 +148,7 @@ Per migliorare le prestazioni è possibile considerare quanto segue:
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-* Il periodo di tempo in cui verranno apportate le modifiche (in genere la durata della giornata lavorativa, più per le operazioni internazionali).
+* Intervallo di tempo in cui verranno apportate le modifiche (in genere la durata della giornata lavorativa, più per le operazioni internazionali).
 * La dimensione media delle immagini caricate (e la dimensione delle rappresentazioni generate per immagine) in megabyte.
 * Determinare la velocità dati media:
 
@@ -161,7 +158,7 @@ Per migliorare le prestazioni è possibile considerare quanto segue:
 
 ## Monitoraggio delle prestazioni {#performance-monitoring}
 
-Le prestazioni (o l&#39;assenza) sono una delle prime cose che gli utenti notano, così come con qualsiasi applicazione con un&#39;interfaccia utente, le prestazioni sono di importanza fondamentale. Per ottimizzare le prestazioni dell’installazione di CQ è necessario monitorare i vari attributi dell’istanza e il relativo comportamento.
+Le prestazioni (o l&#39;assenza) sono una delle prime cose che gli utenti notano, così come con qualsiasi applicazione con un&#39;interfaccia utente, le prestazioni sono di importanza fondamentale. Per ottimizzare le prestazioni dell&#39;installazione AEM è necessario monitorare i vari attributi dell&#39;istanza e il suo comportamento.
 
 Per informazioni su come eseguire il monitoraggio delle prestazioni, vedere [Monitoraggio delle prestazioni](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
@@ -169,15 +166,15 @@ I problemi che causano problemi di prestazioni sono spesso difficili da individu
 
 Un punto di partenza di base è una buona conoscenza del sistema quando funziona normalmente. A meno che non si sappia come l&#39;ambiente &quot;appare&quot; e &quot;si comporta&quot; quando viene eseguito correttamente, può essere difficile individuare il problema quando le prestazioni peggiorano. Ciò significa che è necessario dedicare un po&#39; di tempo alle indagini sul sistema quando viene eseguito senza problemi e assicurarsi che la raccolta delle informazioni sulle prestazioni sia un&#39;attività continua. Questo vi fornirà una base per il confronto qualora le prestazioni ne risentano.
 
-Il diagramma seguente illustra il percorso che una richiesta di contenuti CQ può seguire, e quindi il numero di elementi diversi che possono influire sulle prestazioni.
+Nel diagramma seguente è illustrato il percorso che una richiesta di contenuto AEM può seguire, e quindi il numero di elementi diversi che possono avere un impatto sulle prestazioni.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Le prestazioni sono anche un equilibrio tra Volume e Capacità:
+Le prestazioni sono anche un equilibrio tra volume e capacità:
 
-**Volume** L&#39;ammontare dell&#39;output elaborato e consegnato dal sistema.
+**** Volume: l&#39;ammontare dell&#39;output elaborato e consegnato dal sistema.
 
-**Capacità** La capacità del sistema di fornire il volume.
+**** Capacità: capacità del sistema di fornire il volume.
 
 Questo può essere illustrato in diverse aree della catena Web.
 
@@ -193,12 +190,12 @@ Esistono diverse aree funzionali che spesso hanno un impatto sulle prestazioni:
 
 Quando si ottimizzano le prestazioni, si dovrebbero tenere presenti alcune regole:
 
-* Il perfezionamento delle prestazioni *deve* essere parte di ogni progetto.
+* Il tuning delle prestazioni *deve essere* incluso in ogni progetto.
 * Non eseguire l&#39;ottimizzazione all&#39;inizio del ciclo di sviluppo.
 * Le prestazioni sono buone solo quanto il collegamento più debole.
 * Pensate sempre alla capacità rispetto al volume.
 * Prima di tutto, ottimizzate le cose importanti.
-* Non ottimizzarlo mai senza obiettivi *realistici* .
+* Non eseguire mai l&#39;ottimizzazione senza *obiettivi realistici*.
 
 >[!NOTE]
 >
@@ -206,13 +203,13 @@ Quando si ottimizzano le prestazioni, si dovrebbero tenere presenti alcune regol
 
 ## Configurazione per prestazioni {#configuring-for-performance}
 
-Alcuni aspetti di CQ (e/o CRX sottostante) possono essere configurati per ottimizzare le prestazioni. Di seguito sono riportati alcuni suggerimenti e opzioni che consentono di verificare se e come utilizzare la funzionalità in questione prima di apportare modifiche.
+Alcuni aspetti di AEM (e/o del repository sottostante) possono essere configurati per ottimizzare le prestazioni. Di seguito sono riportati alcuni suggerimenti e opzioni che consentono di verificare se e come utilizzare la funzionalità in questione prima di apportare modifiche.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consultate l&#39;articolo [](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)KB.
+>Per ulteriori informazioni, vedere l&#39;articolo [KB](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
-### Search Indexing {#search-indexing}
+### Indicizzazione ricerca {#search-indexing}
 
 A partire da AEM 6.0, Adobe Experience Manager utilizza un&#39;architettura repository basata su Oak.
 
@@ -223,28 +220,28 @@ Per informazioni aggiornate sull’indicizzazione, consultate:
 
 ### Elaborazione flusso di lavoro simultanea {#concurrent-workflow-processing}
 
-Limitare il numero di processi di workflow in esecuzione simultanea per migliorare le prestazioni. Per impostazione predefinita, il motore del flusso di lavoro elabora in parallelo tutti i flussi di lavoro disponibili per la macchina virtuale Java. Quando i passaggi del flusso di lavoro richiedono grandi quantità di risorse di elaborazione (RAM o CPU), l&#39;esecuzione parallela di diversi di questi flussi di lavoro può richiedere molto alle risorse server disponibili.
+Limitare il numero di processi di workflow in esecuzione simultanea per migliorare le prestazioni. Per impostazione predefinita, il motore del flusso di lavoro elabora in parallelo tutti i flussi di lavoro disponibili per la macchina virtuale Java. Quando i passaggi del flusso di lavoro richiedono una grande quantità di risorse di elaborazione (RAM o CPU), l&#39;esecuzione parallela di diversi di questi flussi di lavoro può richiedere molto alle risorse server disponibili.
 
 Ad esempio, quando si caricano immagini (o risorse DAM in generale), i flussi di lavoro importano automaticamente le immagini in DAM. Le immagini sono spesso ad alta risoluzione e possono facilmente consumare centinaia di MB di heap per l&#39;elaborazione. La gestione parallela di queste immagini colloca un carico elevato sul sottosistema di memoria e sul Garbage Collector.
 
 Il motore del flusso di lavoro utilizza le code di processo Apache Sling per gestire e pianificare l’elaborazione degli elementi di lavoro. Per impostazione predefinita, dal factory del servizio di configurazione della coda di processo Apache Sling sono stati creati i seguenti servizi per l&#39;elaborazione dei processi del flusso di lavoro:
 
 * Coda flusso di lavoro Granite: La maggior parte dei passaggi del flusso di lavoro, ad esempio quelli che elaborano le risorse DAM, utilizza il servizio Coda flussi di lavoro Granite.
-* Coda processo esterno flusso di lavoro Granite: Questo servizio è utilizzato per i passaggi di flusso di lavoro estremi speciali, solitamente utilizzati per contattare un sistema esterno e per eseguire il polling dei risultati. Ad esempio, il passaggio  InDesign Media Extraction Process è implementato come processo esterno. Il motore del flusso di lavoro utilizza la coda esterna per elaborare il polling. (Vedere [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Coda processo esterno flusso di lavoro Granite: Questo servizio viene utilizzato per i passaggi di flusso di lavoro esterni speciali, solitamente utilizzati per contattare un sistema esterno e per eseguire il polling dei risultati. Ad esempio, il passaggio  InDesign Media Extraction Process è implementato come processo esterno. Il motore del flusso di lavoro utilizza la coda esterna per elaborare il polling. (Vedere [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configurate questi servizi per limitare il numero massimo di processi di flusso di lavoro in esecuzione simultanea.
 
-**Nota:** La configurazione di queste code di processo interessa tutti i flussi di lavoro, a meno che non sia stata creata una coda di processo per un modello di flusso di lavoro specifico (vedere [Configurare la coda per un modello](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) di flusso di lavoro specifico di seguito).
+**Nota:** la configurazione di queste code di processi interessa tutti i flussi di lavoro a meno che non sia stata creata una coda di lavoro per un modello di flusso di lavoro specifico (consultate  [Configurare la coda per un ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) modello di flusso di lavoro specifico riportato di seguito).
 
-**Configurazione nell&#39;archivio**
+#### Configurazione nell&#39;archivio {#configuration-in-the-repo}
 
-Se state configurando i servizi [utilizzando un nodo](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)sling:OsgiConfig, è necessario trovare il PID dei servizi esistenti, ad esempio: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. È possibile individuare il PID utilizzando la console Web.
+Se state configurando i servizi [utilizzando un nodo sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), è necessario trovare il PID dei servizi esistenti, ad esempio: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. È possibile individuare il PID utilizzando la console Web.
 
-È necessario configurare la proprietà denominata queue.maxparallela.
+È necessario configurare la proprietà denominata `queue.maxparallel`.
 
-**Configurazione nella console Web**
+#### Configurazione nella console Web {#configuration-in-the-web-console}
 
-Per configurare questi servizi [utilizzando la console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web, individua gli elementi di configurazione esistenti sotto il service factory di configurazione della coda di lavoro Apache Sling.
+Per configurare questi servizi [utilizzando la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), individuare gli elementi di configurazione esistenti sotto il service factory di configurazione della coda di lavoro Apache Sling.
 
 È necessario configurare la proprietà denominata Massimo processi paralleli.
 
@@ -254,54 +251,54 @@ Create una coda di processo per un modello di flusso di lavoro specifico in modo
 
 Quando vengono eseguiti, i modelli di workflow creano processi Sling per un argomento specifico. Per impostazione predefinita, l’argomento corrisponde agli argomenti configurati per la coda generale del flusso di lavoro Granite o per la coda del processo esterno del flusso di lavoro Granite:
 
-* com/adobe/granite/workflow/job&amp;ast;
-* com/adobe/granite/workflow/external/job&amp;ast;
+* `com/adobe/granite/workflow/job*`
+* `com/adobe/granite/workflow/external/job*`
 
 Gli argomenti di processo effettivi generati dai modelli di flusso di lavoro includono il suffisso specifico per il modello. Ad esempio, il modello di flusso di lavoro Aggiorna risorsa DAM genera processi con il seguente argomento:
 
-com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
+`com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 Pertanto, potete creare una coda di processo per l’argomento che corrisponde agli argomenti di processo del modello di workflow. La configurazione delle proprietà relative alle prestazioni della coda ha effetto solo sul modello di flusso di lavoro che genera i processi che corrispondono all&#39;argomento della coda.
 
 La procedura seguente crea una coda di processo per un flusso di lavoro, utilizzando come esempio il flusso di lavoro Aggiorna risorsa DAM.
 
 1. Eseguite il modello di flusso di lavoro per il quale desiderate creare la coda dei processi, in modo da generare le statistiche degli argomenti. Ad esempio, aggiungi un’immagine a Risorse per eseguire il flusso di lavoro Aggiorna risorsa DAM.
-1. Aprite la console Processi Sling. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
+1. Aprite la console Processi Sling. (`https://<host>:<port>/system/console/slingevent`)
 1. Scopri gli argomenti relativi al flusso di lavoro nella console. Per DAM Update Asset, sono disponibili i seguenti argomenti:
 
-   * com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model
+   * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
 1. Crea una coda di processi per ciascuno di questi argomenti. Per creare una coda di processi, create una configurazione di fabbrica per il servizio factory Apache Sling Job Queue.
 
-   Le configurazioni di fabbrica sono simili alla coda del flusso di lavoro Granite descritta in Elaborazione [flusso di lavoro](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)simultanea, ad eccezione della proprietà Topics che corrisponde all&#39;argomento dei processi del flusso di lavoro.
+   Le configurazioni di fabbrica sono simili alla coda del flusso di lavoro Granite descritta in [Elaborazione del flusso di lavoro simultanea](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), tranne per il fatto che la proprietà Topics corrisponde all&#39;argomento dei processi del flusso di lavoro.
 
-### Servizio di sincronizzazione risorse CQ5 DAM {#cq-dam-asset-synchronization-service}
+### AEM servizio di sincronizzazione risorse DAM {#cq-dam-asset-synchronization-service}
 
-Viene `AssetSynchronizationService` utilizzato per sincronizzare le risorse dai repository installati (tra cui LiveLink, Documentum e altri). Per impostazione predefinita, questo esegue un controllo regolare ogni 300 secondi (5 minuti), quindi se non si utilizzano i repository montati, è possibile disattivare questo servizio.
+`AssetSynchronizationService` viene utilizzato per sincronizzare le risorse dai repository montati (tra cui LiveLink, Documentum, tra gli altri). Per impostazione predefinita, questo esegue un controllo regolare ogni 300 secondi (5 minuti), quindi se non si utilizzano i repository montati, è possibile disattivare questo servizio.
 
-A questo scopo, [configurare il servizio](/help/sites-deploying/configuring-osgi.md) OSGi **CQ DAM Asset Synchronization Service** per impostare il periodo **di** sincronizzazione ( `scheduler.period`) su (almeno) 1 anno (definito in secondi).
+A tal fine, [è possibile configurare il servizio OSGi](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** per impostare il **periodo di sincronizzazione** ( `scheduler.period`) su (almeno) 1 anno (definito in secondi).
 
 ### Più istanze DAM {#multiple-dam-instances}
 
 La distribuzione di più istanze DAM può essere utile per migliorare le prestazioni, ad esempio:
 
-* il carico è elevato a causa del caricamento regolare di un gran numero di risorse per l’ambiente di authoring; in questo caso, un&#39;istanza DAM separata può essere dedicata all&#39;autore del servizio.
-* disponete di più team in sedi mondiali (ad esempio USA, Europa, Asia).
+* Il carico è elevato a causa del caricamento regolare di un gran numero di risorse per l’ambiente di authoring; in questo caso, un&#39;istanza DAM separata può essere dedicata all&#39;autore del servizio.
+* Disponete di più team in sedi mondiali (ad esempio USA, Europa, Asia).
 
 Ulteriori considerazioni sono:
 
-* separazione tra &quot;lavoro in corso&quot; sull’autore e &quot;finale&quot; sulla pubblicazione
-* separazione degli utenti interni per l’autore da visitatori/utenti esterni al momento della pubblicazione (ad esempio, agenti, rappresentanti della stampa, clienti, studenti, ecc.).
+* Separazione di &quot;lavoro in corso&quot; sull’autore da &quot;finale&quot; alla pubblicazione
+* Separazione degli utenti interni sull’autore da visitatori/utenti esterni al momento della pubblicazione (ad es. agenti, rappresentanti della stampa, clienti, studenti, ecc.)
 
 ## Best practice per la garanzia della qualità {#best-practices-for-quality-assurance}
 
 Le prestazioni sono di importanza fondamentale per l’ambiente di pubblicazione. Pertanto, durante l’implementazione del progetto dovete pianificare e analizzare attentamente i test di prestazioni che effettuerete per l’ambiente di pubblicazione.
 
-Questa sezione offre una panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni nell’ambiente di *pubblicazione* . Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.
+Questa sezione offre una panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test di prestazioni nell&#39;ambiente *publish*. Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.
 
-Di seguito viene illustrato un approccio standardizzato ai test di prestazioni per un’applicazione CQ nell’ambiente *Publish* . Sono previste cinque fasi:
+Di seguito viene illustrato un approccio standardizzato ai test di prestazioni per un&#39;applicazione AEM nell&#39;ambiente *Publish*. Sono previste cinque fasi:
 
 * [Verifica della conoscenza](#verification-of-knowledge)
 * [Definizione di ambito di applicazione](#scope-definition)
@@ -315,10 +312,10 @@ Il controllo è un processo aggiuntivo e completo, necessario ma non limitato ai
 
 Un primo passaggio consiste nel documentare le informazioni di base che è necessario conoscere prima di poter iniziare il test:
 
-* l&#39;architettura dell&#39;ambiente di test
-* una mappa dell&#39;applicazione che specifica gli elementi interni che dovranno essere testati (sia in isolamento che in combinazione)
+* L&#39;architettura dell&#39;ambiente di test
+* Una mappa dell&#39;applicazione che descrive gli elementi interni che dovranno essere testati (sia in isolamento che in combinazione)
 
-#### Architettura del test {#test-architecture}
+#### Architettura di test {#test-architecture}
 
 È necessario documentare chiaramente l&#39;architettura dell&#39;ambiente di test utilizzato per il test delle prestazioni.
 
@@ -336,8 +333,8 @@ Un&#39;applicazione avrà in genere una selezione di casi di utilizzo. Alcuni sa
 
 Per focalizzare l&#39;ambito del test delle prestazioni sulla pubblicazione, si consiglia di definire i seguenti parametri:
 
-* casi di utilizzo aziendale più importanti
-* casi di utilizzo tecnico più critici
+* Principali casi di utilizzo aziendale
+* Casi di utilizzo tecnico più critici
 
 Il numero di casi d’uso dipende dall’utente, ma deve essere limitato a un numero facilmente gestibile (ad esempio tra 5 e 10).
 
@@ -351,30 +348,30 @@ Una volta selezionati i casi d’uso chiave, gli indicatori prestazioni chiave (
 * Numero di connessioni gratuite
 * Risorse di sistema come CPU e accesso I/O
 
-### Metodologie Di Prova {#test-methodologies}
+### Metodologie di prova {#test-methodologies}
 
 Questo concetto include 4 scenari utilizzati per definire e testare gli obiettivi prestazionali:
 
 * Test per singoli componenti
 * Test combinati dei componenti
-* *Vai allo scenario Live*
+* *Vai* Livescenario
 * Scenari di errore
 
 In base ai seguenti principi.
 
-**Punti di interruzione componente**
+#### Punti di interruzione componente {#component-breakpoints}
 
 * Ogni componente ha un punto di interruzione specifico in relazione alle prestazioni. Ciò significa che un componente può mostrare buone prestazioni fino al raggiungimento di un punto specifico, dopodiché le prestazioni peggioreranno rapidamente.
 * Per ottenere una panoramica completa dell’applicazione, è innanzitutto necessario verificare i componenti per determinare quando viene raggiunto il punto di interruzione di ciascuna applicazione.
 * Per trovare il punto di interruzione è possibile eseguire un test di carico in cui, in un periodo di tempo, si aumenta il numero di utenti per creare un carico crescente. Monitorando questo carico e la risposta dei componenti, si verificherà un comportamento di prestazioni specifico quando viene raggiunto il punto di interruzione del componente. Il punto può essere definito dal numero di transazioni simultanee al secondo, insieme al numero di utenti simultanei (se il componente è sensibile a questo indicatore KPI).
 * Tali informazioni possono quindi fungere da punto di riferimento per i miglioramenti, indicare l&#39;efficienza delle misure utilizzate e contribuire a definire gli scenari di test.
 
-**Transazioni**
+#### Transazioni {#transactions}
 
 * Il termine transazione è utilizzato per rappresentare la richiesta di una pagina Web completa, inclusa la pagina stessa e tutte le chiamate successive; ad esempio, la richiesta di pagina, le chiamate AJAX, le immagini e altri oggetti.**Richiesta Drill Down**
 * Per analizzare completamente ogni richiesta potete rappresentare ogni elemento dello stack di chiamate, quindi calcolare il tempo medio di elaborazione per ogni elemento.
 
-### Definizione degli obiettivi di prestazione {#defining-the-performance-goals}
+### Definizione degli obiettivi di prestazioni {#defining-the-performance-goals}
 
 Una volta definiti l’ambito e i relativi KPI, è possibile impostare gli obiettivi di prestazioni specifici. Ciò comporta l&#39;elaborazione di scenari di test, insieme ai valori target.
 
@@ -384,25 +381,25 @@ Qualsiasi esperienza, o statistiche che potreste aver raccolto da un sito Web es
 
 #### Test per singolo componente {#single-component-tests}
 
-I componenti critici dovranno essere testati, sia in condizioni medie che di picco.
+I componenti critici dovranno essere testati sia in condizioni medie che di picco.
 
 In entrambi i casi, è possibile definire il numero previsto di transazioni al secondo quando un numero predefinito di utenti utilizza il sistema.
 
-| Componente | Tipo di test | #Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Componente | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Homepage Utente Singolo | Media | 1 | 1 |  |  |
-|  | Picco | 1 | 3 |  |  |
+| Homepage Utente Singolo | Media | 1 | 3 |  |  |
+|  | Picco | 3 | 3 |  |  |
 | Homepage 100 utenti | Media | 100 | 3 |  |  |
 |  | Picco | 100 | 3 |  |
 
 #### Test combinati dei componenti {#combined-component-tests}
 
-La verifica combinata dei componenti offre una migliore riflessione sul comportamento delle applicazioni. Anche in questo caso è necessario testare le condizioni medie e di picco.
+La verifica dei componenti in combinazione offre una migliore riflessione sul comportamento delle applicazioni. Anche in questo caso è necessario testare le condizioni medie e di picco.
 
-| Scenario | Componente | #Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Scenario | Componente | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Media mista | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 1 |  |  |
+|  | Ricerca | 10 | 3 |  |  |
 |  | Notizie | 10 | 2 |  |  |
 |  | Eventi | 10 | 1 |  |  |
 |  | Activations | 10 | 3 |  | Simulazione del comportamento dell’autore. |
@@ -412,11 +409,11 @@ La verifica combinata dei componenti offre una migliore riflessione sul comporta
 |  | Eventi | 100 | 10 |  |  |
 |  | Activations | 20 | 20 |  | Simulazione del comportamento dell’autore. |
 
-#### Esecuzione di Live Test {#going-live-tests}
+#### Esecuzione di test live {#going-live-tests}
 
 Nei primi giorni successivi alla disponibilità del sito Web, è possibile che si verifichi un aumento del livello di interesse. Questo sarà probabilmente anche maggiore dei valori di picco per i quali avete eseguito il test. È vivamente consigliato testare scenari Go Live per garantire che il sistema possa soddisfare questa situazione.
 
-| Scenario | Tipo di test | #Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Scenario | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Vai al picco live | Home page | 200 | 20 |  |  |
 |  | Ricerca | 100 | 10 |  |  |
@@ -424,29 +421,29 @@ Nei primi giorni successivi alla disponibilità del sito Web, è possibile che s
 |  | Eventi | 200 | 20 |  |  |
 |  | Activations | 20 | 20 |  | Simulazione del comportamento dell’autore. |
 
-#### Test scenario di errore {#error-scenario-tests}
+#### Test scenario errore {#error-scenario-tests}
 
-È inoltre necessario testare gli scenari di errore per garantire che il sistema reagisca correttamente e correttamente. Non solo per come viene gestito l&#39;errore, ma anche per l&#39;impatto che potrebbe avere sulle prestazioni. Ad esempio:
+È inoltre necessario testare gli scenari di errore per garantire che il sistema reagisca correttamente e correttamente. Non solo per come viene gestito l&#39;errore, ma anche per l&#39;impatto che potrebbe avere sulle prestazioni. Esempio:
 
-* cosa accade quando l&#39;utente tenta di inserire un termine di ricerca non valido nella casella di ricerca
-* cosa accade quando il termine di ricerca è così generale che restituisce un numero eccessivo di risultati
+* Cosa accade quando l&#39;utente tenta di inserire un termine di ricerca non valido nella casella di ricerca.
+* Cosa accade quando il termine di ricerca è così generale che restituisce un numero eccessivo di risultati.
 
 Nel concepire questi test si dovrebbe ricordare che non tutti gli scenari si verificano regolarmente. Tuttavia, il loro impatto sull&#39;intero sistema è importante.
 
-| Scenario di errore | Tipo errore | #Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Scenario di errore | Tipo errore | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Sovraccarico del componente di ricerca | Cerca nei caratteri jolly globali (asterisco) | 10 | 1 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
 |  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto. |
-|  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
-|  | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |
+|  | Stringa vuota | 10 | 3 |  | Ricerca di una stringa vuota. |
+|  | Caratteri speciali | 10 | 3 |  | Ricerca di caratteri speciali. |
 
 #### Test di resistenza {#endurance-tests}
 
 Alcuni problemi si verificheranno solo dopo che il sistema è stato in funzione per un periodo di tempo continuo; sia ore o anche giorni. Una prova di resistenza è utilizzata per testare un carico medio costante in un periodo di tempo richiesto. È quindi possibile analizzare qualsiasi degradazione delle prestazioni.
 
-| Scenario | Tipo di test | #Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Scenario | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Prova di resistenza (72 ore) | Home page | 10 | 1 |  |  |
+| Prova di resistenza (72 ore) | Home page | 10 | 3 |  |  |
 |  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 20 | 2 |  |  |
 |  | Eventi | 10 | 1 |  |  |
@@ -454,18 +451,18 @@ Alcuni problemi si verificheranno solo dopo che il sistema è stato in funzione 
 
 ### Ottimizzazione {#optimization}
 
-Nelle fasi successive dell&#39;implementazione sarà necessario ottimizzare l&#39;applicazione per raggiungere / massimizzare gli obiettivi di prestazioni.
+Nelle fasi successive dell&#39;implementazione sarà necessario ottimizzare l&#39;applicazione per raggiungere/massimizzare gli obiettivi di prestazioni.
 
 Eventuali ottimizzazioni effettuate devono essere verificate in modo da garantire che:
 
-* senza influire sulla funzionalità
-* è stato verificato con le prove di carico prima del rilascio
+* Funzionalità non compromessa
+* Verificate con le prove di carico prima del rilascio
 
 È disponibile una serie di strumenti per aiutarti con la generazione del carico, il monitoraggio delle prestazioni e/o l&#39;analisi dei risultati:
 
 * [JMeter](https://jakarta.apache.org/jmeter/)
 * [Load Runner](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
-* [Determinare](https://www.determyne.com/) InsideApps
+* [](https://www.determyne.com/) DeterminareInsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Profilo interattivo Java](https://jiprof.sourceforge.net/)
 * molti altri...
@@ -474,18 +471,18 @@ Dopo l&#39;ottimizzazione, sarà necessario eseguire nuovamente il test per conf
 
 ### Generazione rapporti {#reporting}
 
-Sarà necessaria una relazione permanente per informare tutti sullo stato; come accennato in precedenza con la codifica a colori, la mappa di architettura può essere utilizzata per questo.
+Per informare tutti sullo stato sarà necessario un reporting continuo. Come accennato in precedenza con la codifica a colori, la mappa dell&#39;architettura può essere utilizzata per questo.
 
 Una volta completati tutti i test, sarà necessario eseguire un rapporto su:
 
-* eventuali errori critici rilevati
-* questioni non critiche che necessitano di ulteriori indagini
-* eventuali ipotesi effettuate durante la prova
-* eventuali raccomandazioni derivanti dalla verifica
+* Eventuali errori critici rilevati
+* Questioni non critiche che richiederanno ulteriori indagini
+* Eventuali ipotesi formulate durante la prova
+* Eventuali raccomandazioni derivanti dal test
 
 ## Ottimizzazione delle prestazioni quando si utilizza il dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-Il [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) è  strumento  caching e/o bilanciamento del carico Adobe. Quando si utilizza il dispatcher è consigliabile ottimizzare il sito Web per le prestazioni della cache.
+Il [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) è  strumento  caching e/o bilanciamento del carico. Quando si utilizza il dispatcher è consigliabile ottimizzare il sito Web per le prestazioni della cache.
 
 >[!NOTE]
 >
@@ -499,50 +496,50 @@ Il Dispatcher offre una serie di meccanismi incorporati che è possibile utilizz
 >
 >Potrebbe essere utile ricordare che il Dispatcher memorizza la cache su un server Web standard. Ciò significa che:
 >
->* è possibile memorizzare nella cache tutto ciò che è possibile memorizzare come pagina e richiederlo utilizzando un URL
->* non è possibile memorizzare altri elementi, quali cookie, dati di sessione e dati del modulo.
+>* Memorizzazione nella cache di tutto ciò che è possibile memorizzare come pagina e richiedere utilizzando un URL
+>* Non è possibile memorizzare altri elementi, ad esempio cookie, dati di sessione e dati del modulo.
 
 >
 >
 In generale, molte strategie di caching richiedono la selezione di buoni URL e non affidarsi a questi dati aggiuntivi.
 >
->Con la versione 4.1.11 del dispatcher è inoltre possibile memorizzare nella cache le intestazioni delle risposte. Consultate [Memorizzazione delle intestazioni delle risposte HTTP nella cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Con la versione 4.1.11 del dispatcher è inoltre possibile memorizzare nella cache le intestazioni delle risposte. Vedere [Memorizzazione delle intestazioni delle risposte HTTP nella cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 
 
-### Calcolo delle proporzioni cache del dispatcher {#calculating-the-dispatcher-cache-ratio}
+### Calcolo del rapporto cache del dispatcher {#calculating-the-dispatcher-cache-ratio}
 
 La formula del rapporto cache stima la percentuale di richieste gestite dalla cache rispetto al numero totale di richieste che arrivano nel sistema. Per calcolare il rapporto della cache è necessario disporre dei seguenti elementi:
 
-* Numero totale di richieste. Queste informazioni sono disponibili in Apache `access.log`. Per ulteriori dettagli, consulta la documentazione [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)ufficiale Apache.
+* Numero totale di richieste. Queste informazioni sono disponibili in Apache `access.log`. Per ulteriori dettagli, vedere la [documentazione ufficiale di Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Numero di richieste servite dall&#39;istanza Pubblica. Queste informazioni sono disponibili nella `request.log` dell’istanza. Per ulteriori dettagli, consultate [Interpretazione del file request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) e [Ricerca dei file](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)di registro.
+* Numero di richieste servite dall&#39;istanza Pubblica. Queste informazioni sono disponibili in `request.log` dell&#39;istanza. Per ulteriori dettagli, vedere [Interpretazione della richiesta.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) e [Ricerca dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 La formula per calcolare il rapporto della cache è la seguente:
 
-* (Il numero totale di richieste **meno** il numero di richieste in fase di pubblicazione) **diviso** per il numero totale di richieste.
+* (Il numero totale di richieste **meno** il numero di richieste in Pubblica) **divise** per il numero totale di richieste.
 
 Ad esempio, se il numero totale di richieste è 129491 e il numero di richieste servite dall’istanza Pubblica è 58959, il rapporto della cache è: **(129491 - 58959)/129491= 54,5%**.
 
-Se non si dispone di un&#39;associazione uno-uno editore/dispatcher, sarà necessario aggiungere insieme le richieste di tutti i dispatcher e gli editori per ottenere una misurazione accurata. Consultate anche [Implementazioni](/help/sites-deploying/recommended-deploys.md)consigliate.
+Se non si dispone di un&#39;associazione uno-uno editore/dispatcher, sarà necessario aggiungere insieme le richieste di tutti i dispatcher e gli editori per ottenere una misurazione accurata. Vedere anche [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
 >Per ottenere prestazioni ottimali,  Adobe consiglia un rapporto cache compreso tra 90% e 95%.
 
-#### Utilizzo della codifica coerente delle pagine {#using-consistent-page-encoding}
+#### Utilizzo della codifica di pagina coerente {#using-consistent-page-encoding}
 
 Con la versione 4.1.11 del dispatcher è possibile memorizzare nella cache le intestazioni delle risposte. Se non si memorizzano nella cache le intestazioni di risposta sul dispatcher, possono verificarsi problemi se si memorizzano le informazioni di codifica della pagina nell&#39;intestazione. In questa situazione, quando Dispatcher invia una pagina dalla cache, per la pagina viene utilizzata la codifica predefinita del server Web. Esistono due modi per evitare questo problema:
 
 * Se utilizzate una sola codifica, accertatevi che la codifica utilizzata sul server Web sia la stessa della codifica predefinita del sito Web AEM.
-* Utilizzate un `<META>` tag nella sezione HTML `head` per impostare la codifica, come nell&#39;esempio seguente:
+* Utilizzate un tag `<META>` nella sezione HTML `head` per impostare la codifica, come nell&#39;esempio seguente:
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 ```
 
-#### Evita parametri URL {#avoid-url-parameters}
+#### Evitare i parametri URL {#avoid-url-parameters}
 
-Se possibile, evitate i parametri URL per le pagine che desiderate memorizzare nella cache. Ad esempio, se disponete di una raccolta immagini, l’URL seguente non viene mai memorizzato nella cache (a meno che il dispatcher non sia [configurato di conseguenza](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Se possibile, evitate i parametri URL per le pagine che desiderate memorizzare nella cache. Ad esempio, se disponete di una raccolta immagini, l&#39;URL seguente non viene mai memorizzato nella cache (a meno che Dispatcher non sia [configurato di conseguenza](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -556,7 +553,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Questo URL richiama la stessa pagina e lo stesso modello di galleria.html. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
+>Questo URL richiama la stessa pagina e lo stesso modello di `gallery.html`. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
 
 #### Personalizza per URL {#customize-by-url}
 
@@ -574,13 +571,13 @@ www.myCompany.com/news/main.large.html
 >
 >Per la maggior parte degli aspetti del layout, è anche possibile utilizzare fogli di stile e/o script sul lato client. Questi di solito funzionano molto bene con la cache.
 >
->Questa funzione è utile anche per una versione di stampa in cui potete usare un URL come: &quot;
+>Questa funzione è utile anche per una versione di stampa in cui potete usare un URL come:
 >
 >`www.myCompany.com/news/main.print.html`
 >
 >Utilizzando la combinazione di script della definizione del modello, potete specificare uno script separato che esegue il rendering delle pagine di stampa.
 
-#### Annullamento Della Convalida Dei File Immagine Utilizzati Come Titoli {#invalidating-image-files-used-as-titles}
+#### Annullamento della convalida dei file immagine utilizzati come titoli {#invalidating-image-files-used-as-titles}
 
 Se eseguite il rendering dei titoli di pagina o di altro testo come immagini, si consiglia di memorizzare i file in modo che vengano eliminati in seguito a un aggiornamento del contenuto sulla pagina:
 
@@ -589,13 +586,13 @@ Se eseguite il rendering dei titoli di pagina o di altro testo come immagini, si
 
    `<page file name>.<image file name>`
 
-Ad esempio, è possibile memorizzare il titolo della pagina myPage.html nel file myPage.title.gif. Questo file viene eliminato automaticamente se la pagina viene aggiornata, pertanto qualsiasi modifica al titolo della pagina viene automaticamente riflessa nella cache.
+Ad esempio, è possibile memorizzare il titolo della pagina myPage.html nel file `myPage.title.gif`. Questo file viene eliminato automaticamente se la pagina viene aggiornata, pertanto qualsiasi modifica al titolo della pagina viene automaticamente riflessa nella cache.
 
 >[!NOTE]
 >
 >Il file immagine non esiste necessariamente fisicamente nell&#39;istanza AEM. È possibile utilizzare uno script che crea in modo dinamico il file immagine. Il dispatcher memorizza quindi il file sul server Web.
 
-#### Annullamento Della Convalida Dei File Immagine Utilizzati Per La Navigazione {#invalidating-image-files-used-for-navigation}
+#### Annullamento della convalida dei file immagine utilizzati per la navigazione {#invalidating-image-files-used-for-navigation}
 
 Se si utilizzano le immagini per le voci di navigazione, il metodo è sostanzialmente lo stesso che con i titoli, leggermente più complessi. Archiviate tutte le immagini di navigazione con le pagine di destinazione. Se si utilizzano due immagini per la modalità normale e attiva, è possibile utilizzare i seguenti script:
 
@@ -609,38 +606,41 @@ Per le pagine che non vengono modificate, le immagini rimangono nella cache, anc
 
 #### Personalizzazione {#personalization}
 
-Il Dispatcher non è in grado di memorizzare nella cache i dati personalizzati, pertanto si consiglia di limitare la personalizzazione a dove necessario. Per illustrare i motivi:
+Si consiglia di limitare la personalizzazione laddove necessario. Per illustrare i motivi:
 
 * Se utilizzate una pagina iniziale liberamente personalizzabile, tale pagina deve essere composta ogni volta che un utente la richiede.
 * Se, invece, si offre una scelta di 10 pagine iniziali diverse, è possibile memorizzare nella cache ciascuna di esse, migliorando così le prestazioni.
 
->[!NOTE]
+>[!TIP]
 >
->Se personalizzate ciascuna pagina (ad esempio inserendo il nome dell’utente nella barra del titolo) non potete memorizzarla nella cache, il che può avere un impatto maggiore sulle prestazioni.
->
->Tuttavia, se dovete eseguire questa operazione, potete:
->
->* utilizzate iFrame per dividere la pagina in una parte identica per tutti gli utenti e in una parte identica per tutte le pagine dell&#39;utente. Potete quindi memorizzare nella cache entrambe le parti.
->* utilizzate JavaScript lato client per visualizzare informazioni personalizzate. Tuttavia, è necessario verificare che la pagina venga visualizzata correttamente anche se l&#39;utente disattiva JavaScript.
+>Per ulteriori dettagli sulla configurazione della cache del dispatcher, vedere l&#39;[AEM Dispatcher Cache Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) e la relativa sezione su [Memorizzazione nella cache dei contenuti protetti.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
+Se personalizzate ciascuna pagina (ad esempio inserendo il nome dell’utente nella barra del titolo), questa può avere un impatto sulle prestazioni.
+
+>[!TIP]
 >
+>Per la memorizzazione nella cache dei contenuti protetti, vedere [Memorizzazione nella cache dei contenuti protetti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) nella guida del dispatcher.
 
+Per quanto riguarda la combinazione di contenuto limitato e pubblico su una pagina, potrebbe essere utile considerare una strategia che sfrutta i server inclusi nel Dispatcher, o lato client include tramite Ajax nel browser.
 
+>[!TIP]
+>
+>Per gestire contenuti pubblici misti e con restrizioni, consultate [Configurare Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Connessioni permanenti {#sticky-connections}
 
-[Le connessioni](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) permanenti garantiscono che i documenti per un utente siano tutti composti sullo stesso server. Se un utente lascia la cartella e successivamente vi ritorna, la connessione rimane fissa. Definite una cartella per contenere tutti i documenti che richiedono connessioni permanenti per il sito Web. Cercate di non inserire altri documenti. Questo influisce sul bilanciamento del carico se utilizzate pagine personalizzate e dati di sessione.
+[Connessione ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) fissa, assicurarsi che i documenti per un utente siano tutti composti sullo stesso server. Se un utente lascia la cartella e successivamente vi ritorna, la connessione rimane fissa. Definite una cartella per contenere tutti i documenti che richiedono connessioni permanenti per il sito Web. Cercate di non inserire altri documenti. Questo influisce sul bilanciamento del carico se utilizzate pagine personalizzate e dati di sessione.
 
-#### MIME Types {#mime-types}
+#### Tipi MIME {#mime-types}
 
 Esistono due modi in cui un browser può determinare il tipo di file:
 
-1. Per estensione (ad esempio .html, .gif, .jpg, ecc.)
+1. Per estensione (ad esempio `.html`, `.gif`, `.jpg` ecc.)
 1. Per tipo MIME inviato dal server con il file.
 
 Per la maggior parte dei file, il tipo MIME è implicito nell&#39;estensione del file. i.e.:
 
-1. Per estensione (ad esempio .html, .gif, .jpg, ecc.)
+1. Per estensione (ad esempio `.html`, `.gif`, `.jpg` ecc.)
 1. Per tipo MIME inviato dal server con il file.
 
 Se il nome del file non ha estensione, viene visualizzato come testo normale.
@@ -650,11 +650,11 @@ Con la versione 4.1.11 del dispatcher è possibile memorizzare nella cache le in
 Per essere certi che i file siano memorizzati nella cache in modo corretto, attenetevi alle seguenti linee guida:
 
 * Accertatevi che i file abbiano sempre l&#39;estensione corretta.
-* Evitate gli script di server di file generici, con URL quali download.jsp?file=2214. riscrivere lo script per utilizzare gli URL contenenti la specifica del file; nell’esempio precedente, questo sarà download.2214.pdf.
+* Evitate gli script di server di file generici con URL quali `download.jsp?file=2214`. Riscrittura dello script per utilizzare gli URL contenenti la specifica del file. Per l&#39;esempio precedente, si tratterebbe di `download.2214.pdf`.
 
-## Prestazioni backup {#backup-performance}
+## Prestazioni di backup {#backup-performance}
 
-Questa sezione presenta una serie di benchmark utilizzati per valutare le prestazioni dei backup CQ e gli effetti dell&#39;attività di backup sulle prestazioni dell&#39;applicazione. Il backup CQ presenta un carico significativo sul sistema mentre viene eseguito, e misuriamo questo, così come gli effetti delle impostazioni di ritardo del backup che tentano di modulare questi effetti. L&#39;obiettivo è quello di fornire alcuni dati di riferimento sulle prestazioni previste dei backup in configurazioni realistiche e sulle quantità di dati di produzione, e di fornire indicazioni su come stimare i tempi di backup per i sistemi pianificati.
+Questa sezione presenta una serie di benchmark utilizzati per valutare le prestazioni dei backup AEM e gli effetti dell&#39;attività di backup sulle prestazioni dell&#39;applicazione. Un backup AEM presenta un carico significativo sul sistema durante l&#39;esecuzione, e misuriamo questo, così come gli effetti delle impostazioni di ritardo di backup che tentano di modulare questi effetti. L&#39;obiettivo è quello di fornire alcuni dati di riferimento sulle prestazioni previste dei backup in configurazioni realistiche e sulle quantità di dati di produzione, e di fornire indicazioni su come stimare i tempi di backup per i sistemi pianificati.
 
 ### Ambiente di riferimento {#reference-environment}
 
@@ -667,72 +667,43 @@ I risultati riportati in questo documento sono stati ottenuti da benchmark esegu
 * Controller RAID hardware; 8 unità in un array RAID0+5
 * CPU immagine VMware x 2 Intel Xeon E5540 a 2,53 GHz
 * RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
-* Single Author instance con CQ 5.5 GM.
+* Singola istanza Author
 
 Il sottosistema del disco su questo server è abbastanza veloce, rappresentativo di una configurazione RAID ad alte prestazioni che potrebbe essere utilizzata in un server di produzione. Le prestazioni di backup possono essere sensibili alle prestazioni del disco e i risultati in questo ambiente riflettono le prestazioni su una configurazione RAID molto veloce. L&#39;immagine VMWare è configurata per avere un singolo grande volume di disco che risiede fisicamente nello storage locale su disco, sull&#39;array RAID.
 
-La configurazione CQ posiziona il repository e il datastore sullo stesso volume logico, insieme a tutto il sistema operativo e il software CQ. La directory di destinazione per i backup risiede anche in questo file system logico.
+La configurazione AEM colloca il repository e il datastore sullo stesso volume logico, insieme a tutto il sistema operativo e AEM software. La directory di destinazione per i backup risiede anche in questo file system logico.
 
-#### Volumi dati {#data-volumes}
+#### Volumi di dati {#data-volumes}
 
-Nella tabella seguente sono illustrate le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene installato per primo, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui viene eseguito il backup. I backup verranno creati con incrementi specifici per rappresentare un aumento significativo del contenuto e di ciò che può essere prodotto in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) si baserà approssimativamente sulla composizione realistica delle risorse di produzione. Pagine, immagini e tag possono essere limitati a un massimo di 800 pagine figlie. Ogni pagina includerà i componenti titolo, Flash, testo/immagine, video, presentazione, modulo, tabella, cloud e carosello. Le immagini verranno caricate da un pool di 400 file unici, di dimensioni comprese tra 37 kB e 594 kB.
+Nella tabella seguente sono illustrate le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene installato per primo, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui viene eseguito il backup. I backup verranno creati con incrementi specifici per rappresentare un aumento significativo del contenuto e della produzione in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) si baserà approssimativamente sulla composizione realistica delle risorse di produzione. Pagine, immagini e tag possono essere limitati a un massimo di 800 pagine figlie. Ogni pagina includerà i componenti titolo, Flash, testo/immagine, video, presentazione, modulo, tabella, cloud e carosello. Le immagini verranno caricate da un pool di 400 file unici, di dimensioni comprese tra 37 kB e 594 kB.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Contenuto</strong></td> 
-   <td><strong>Nodi</strong></td> 
-   <td><strong>Pagine</strong></td> 
-   <td><strong>Immagini</strong></td> 
-   <td><strong>Tag</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Installazione di base</td> 
-   <td>69,610</td> 
-   <td>562</td> 
-   <td>256</td> 
-   <td>237</td> 
-  </tr> 
-  <tr> 
-   <td>Piccoli contenuti per il backup incrementale</td> 
-   <td><br type="_moz" /> </td> 
-   <td>+100</td> 
-   <td>+2</td> 
-   <td>+2</td> 
-  </tr> 
-  <tr> 
-   <td>Contenuti di grandi dimensioni per il backup completo</td> 
-   <td><br type="_moz" /> </td> 
-   <td>+10,000</td> 
-   <td>+100</td> 
-   <td>+100</td> 
-  </tr> 
- </tbody> 
-</table>
+| Contenuto | Nodi | Pagine | Immagini | Tag |
+|---|---|---|---|---|
+| Installazione di base | 69.610 | 562 | 256 | 237 |
+| Piccoli contenuti per il backup incrementale |  | +100 | +2 | +2 |
+| Contenuti di grandi dimensioni per il backup completo |  | +10 000 | +100 | +100 |
 
 Il benchmark di backup viene ripetuto con i set di contenuti aggiuntivi aggiunti a ogni ripetizione.
 
 #### Scenari di riferimento {#benchmark-scenarios}
 
-I benchmark di backup coprono due scenari principali: backup quando il sistema è sottoposto a un carico significativo dell&#39;applicazione e backup quando il sistema è inattivo. Sebbene la raccomandazione generale sia di eseguire i backup quando il sistema CQ è il più inattivo possibile, in alcune situazioni è necessario eseguire il backup quando il sistema è sotto carico.
+I benchmark di backup coprono due scenari principali: backup quando il sistema è sottoposto a un carico significativo dell&#39;applicazione e backup quando il sistema è inattivo. Sebbene la raccomandazione generale sia che i backup vengano eseguiti quando AEM è il più inattivo possibile, in alcune situazioni è necessario che il backup venga eseguito quando il sistema è sotto carico.
 
-**I backup dello stato** inattivo vengono eseguiti senza alcuna altra attività in CQ.
+* **Idle** StateBackup vengono eseguiti senza altre attività su AEM.
+* **In** LoadBackups vengono eseguiti mentre il sistema è sotto l&#39;80% di carico dai processi online. Il ritardo del backup è stato modificato per vedere l&#39;impatto sul caricamento.
 
-**In Backup del caricamento** vengono eseguiti mentre il sistema è sotto l&#39;80% di carico dai processi online. Il ritardo del backup è stato modificato per vedere l&#39;impatto sul caricamento.
-
-I tempi di backup e le dimensioni del backup risultante vengono ricavati dai registri del server CQ. In genere si consiglia di pianificare i backup per i tempi di inattività di CQ, ad esempio nel cuore della notte. Questo scenario è rappresentativo dell&#39;approccio raccomandato.
+I tempi di backup e le dimensioni del backup risultante vengono ottenuti dai registri del server AEM. In genere si consiglia di pianificare i backup per gli off-time quando AEM è inattivo, ad esempio al centro della notte. Questo scenario è rappresentativo dell&#39;approccio raccomandato.
 
 Il caricamento sarà composto da creazione/eliminazione di pagine, traversate e query con la maggior parte del carico proveniente da attraversamenti di pagina e query. L’aggiunta e la rimozione di troppe pagine aumenta continuamente la dimensione dell’area di lavoro e impedisce il completamento dei backup. La distribuzione del carico che lo script utilizzerà è il 75% di traversate di pagina, il 24% di query e l&#39;1% di creazioni di pagina (livello singolo senza sottopagine nidificata). Il picco di transazioni medie al secondo su un sistema inattivo viene raggiunto con 4 thread simultanei, che è ciò che verrà utilizzato per testare i backup sotto carico.
 
 L&#39;impatto del carico sulle prestazioni di backup può essere stimato dalla differenza tra le prestazioni con e senza questo carico dell&#39;applicazione. L&#39;impatto del backup sul throughput dell&#39;applicazione si trova confrontando il throughput dello scenario in transazioni all&#39;ora con e senza un backup simultaneo in corso, e con i backup che funzionano con diverse impostazioni di &quot;ritardo del backup&quot;.
 
-**Impostazione** ritardata Per diversi scenari abbiamo anche variato l&#39;impostazione del ritardo di backup, utilizzando valori di 10 ms (predefinito), 1 ms e 0 ms, per scoprire in che modo questa impostazione influiva sulle prestazioni dei backup.
-
-**Tipo** di backup Tutti i backup esterni del repository effettuati su una directory di backup senza creare un file ZIP, tranne in un caso unico per il confronto dove il comando tar è stato utilizzato direttamente. Poiché i backup incrementali non possono essere creati su un file zip, o quando il backup completo precedente è un file zip, il metodo di directory di backup è il più utilizzato nelle situazioni di produzione.
+* **Impostazione** ritardataPer diversi scenari abbiamo anche modificato l&#39;impostazione del ritardo di backup, utilizzando valori di 10 ms (predefinito), 1 ms e 0 ms, per scoprire in che modo questa impostazione influiva sulle prestazioni dei backup.
+* **Backup** typeTutti i backup erano backup esterni del repository effettuati in una directory di backup senza creare un file ZIP, tranne in un caso unico per il confronto dove il comando tar è stato utilizzato direttamente. Poiché i backup incrementali non possono essere creati su un file zip, o quando il backup completo precedente è un file zip, il metodo di directory di backup è il più utilizzato nelle situazioni di produzione.
 
 ### Riepilogo dei risultati {#summary-of-results}
 
-#### Tempo di backup e Troughput {#backup-time-and-troughput}
+#### Tempo e larghezza di backup {#backup-time-and-throughput}
 
 Il risultato principale di questi benchmark è di mostrare come i tempi di backup variano in funzione del tipo di backup e della quantità complessiva di dati. Il grafico seguente mostra il tempo di backup ottenuto utilizzando la configurazione di backup predefinita, in funzione del numero totale di pagine.
 
@@ -764,4 +735,3 @@ L&#39;impatto effettivo del throughput dell&#39;applicazione di un backup in cor
 
 * [Amministrazione - Backup e ripristino](/help/sites-administering/backup-and-restore.md)
 * [Gestione - Capacità e volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)
-
