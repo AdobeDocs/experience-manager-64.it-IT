@@ -11,7 +11,7 @@ ht-degree: 6%
 ---
 
 
-# Archiviazione e estrazione di file in risorse {#check-in-and-check-out-files-in-assets}
+# Archiviazione e estrazione dei file in Risorse {#check-in-and-check-out-files-in-assets}
 
 Adobe Experience Manager (AEM) Assets consente di estrarre le risorse per modificarle e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non riaccedete la risorsa a  AEM Assets. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
@@ -19,17 +19,17 @@ Per poter eseguire il check-out o il check-in delle risorse, è necessario dispo
 
 Questa funzione consente di impedire ad altri utenti di ignorare le modifiche apportate da un autore, in cui più utenti collaborano ai flussi di lavoro di modifica tra più team.
 
-## Risorse per il check-out {#checking-out-assets}
+## Risorse di estrazione {#checking-out-assets}
 
 1. Nell’interfaccia utente Risorse, seleziona la risorsa da estrarre. Potete anche selezionare più risorse da estrarre.
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Estrai]** .
+1. Dalla barra degli strumenti, fare clic o toccare l&#39;icona **[!UICONTROL Checkout]**.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   Osservate che l&#39;icona **[!UICONTROL Checkout]** si sposta sull&#39;icona **[!UICONTROL Check]** con il blocco aperto.
+   Tenere presente che l&#39;icona **[!UICONTROL Checkout]** passa all&#39;icona **[!UICONTROL Checkin]** con il blocco aperto.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -41,7 +41,7 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Potete tuttavia fare clic o toccare l’icona **[!UICONTROL Visualizza proprietà]** per modificare i metadati della risorsa bloccata.
+   Tuttavia, potete fare clic o toccare l&#39;icona **[!UICONTROL Visualizza proprietà]** per modificare i metadati della risorsa bloccata.
 
 1. Tocca o fai clic sull’icona Modifica per aprire la risorsa in modalità di modifica.
 
@@ -68,6 +68,6 @@ Gli amministratori possono archiviare le risorse sottoposte a check-in da parte 
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Rilascia blocco]** . La risorsa viene archiviata e può essere modificata da altri utenti.
+1. Dalla barra degli strumenti, fare clic o toccare l&#39;icona **[!UICONTROL Rilascia blocco]**. La risorsa viene archiviata e può essere modificata da altri utenti.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)
