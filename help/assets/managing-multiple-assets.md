@@ -32,7 +32,7 @@ Per personalizzare la pagina delle proprietà dei metadati, compresa l&#39;aggiu
 
 1. Nell’interfaccia utente Risorse, passa alla posizione delle risorse che desideri modificare.
 1. Selezionate le risorse per le quali desiderate modificare le proprietà comuni.
-1. Dalla barra degli strumenti, toccate o fate clic sull’icona **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
+1. Dalla barra degli strumenti, toccate o fate clic sull&#39;icona **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
 
    >[!NOTE]
    >
@@ -44,10 +44,10 @@ Per personalizzare la pagina delle proprietà dei metadati, compresa l&#39;aggiu
    >[!NOTE]
    >
    >* Nella pagina delle proprietà potete rimuovere le risorse dall’elenco delle risorse deselezionandole. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati delle risorse rimosse dall’elenco non vengono aggiornati.
-   >* Nella parte superiore dell’elenco delle risorse, selezionate la casella di controllo accanto a **Titolo** per alternare tra la selezione delle risorse e la cancellazione dell’elenco.
+   >* Nella parte superiore dell&#39;elenco delle risorse, selezionate la casella di controllo accanto a **Titolo** per passare alla selezione delle risorse e alla cancellazione dell&#39;elenco.
 
 
-1. Per selezionare uno schema di metadati diverso per le risorse, toccate o fate clic sull’icona **[!UICONTROL Impostazioni]** nella barra degli strumenti, quindi selezionate lo schema desiderato.
+1. Per selezionare uno schema di metadati diverso per le risorse, toccate o fate clic sull&#39;icona **[!UICONTROL Settings]** nella barra degli strumenti, quindi selezionate lo schema desiderato.
 1. Salva le modifiche.
 1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
 
@@ -55,13 +55,13 @@ Per personalizzare la pagina delle proprietà dei metadati, compresa l&#39;aggiu
    >
    >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
-## Configurare il limite per l&#39;aggiornamento in massa dei metadati {#configure-limit-for-bulk-metadata-update}
+## Configura limite per l&#39;aggiornamento di metadati in massa {#configure-limit-for-bulk-metadata-update}
 
 Per evitare situazioni simili a DOS, AEM limita il numero di parametri supportati in una richiesta Sling. Quando aggiornate i metadati di molte risorse in una sola volta, potete raggiungere il limite massimo e i metadati non vengono aggiornati per altre risorse. AEM genera il seguente avviso nei registri:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Per modificare il limite, accedete a **[!UICONTROL Strumenti > Operazioni > Console Web]** e modificate il valore di [!UICONTROL Parametri POST massimi] nella configurazione [!UICONTROL Apache Sling Request Parameter Handling] OSGi.
 
 >[!MORELIKETHIS]
 >
