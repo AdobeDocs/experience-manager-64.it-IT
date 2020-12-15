@@ -22,7 +22,7 @@ Lo schema di metadati predefinito per le risorse ora include gli schemi di metad
 La pagina Proprietà delle risorse ora include schede separate per visualizzare i metadati IPTC Core e IPTC Extension nei campi modificabili.
 
 1. Dall’interfaccia utente Risorse, seleziona un’immagine.
-1. Tocca o fai clic sull’icona **[!UICONTROL Proprietà]** dalla barra degli strumenti.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Proprietà]** dalla barra degli strumenti.
 1. Nella pagina Proprietà, tocca o fai clic sulla scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC per la risorsa.
 1. Modificate le proprietà dei metadati IPTC, a seconda delle necessità.
 
@@ -30,7 +30,7 @@ La pagina Proprietà delle risorse ora include schede separate per visualizzare 
 
 1. Per visualizzare i metadati dell’estensione IPTC della risorsa, tocca o fai clic sulla scheda **[!UICONTROL Estensione IPTC]**.
 1. Modificate le proprietà dei metadati dell&#39;estensione ITPC, a seconda delle necessità.
-1. Tap/click **[!UICONTROL Save &amp; Close]** to save the changes.
+1. Toccate/fate clic su **[!UICONTROL Salva e chiudi]** per salvare le modifiche.
 
 ## Supporto per valutazione creativa {#creative-rating-support}
 
@@ -44,7 +44,7 @@ Tuttavia, questa proprietà non è attualmente indicizzata per evitare conflitti
 
 ## Supporto parole chiave {#keyword-support}
 
-Nella scheda **[!UICONTROL IPTC]** della pagina Proprietà vengono visualizzate anche le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative. Potete anche modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]** .
+Nella scheda **[!UICONTROL IPTC]** della pagina Proprietà vengono visualizzate anche le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative. È inoltre possibile modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]**.
 
 ![keywords](assets/keywords.png)
 
