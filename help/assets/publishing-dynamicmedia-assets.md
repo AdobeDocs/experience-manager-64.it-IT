@@ -1,6 +1,6 @@
 ---
-title: Pubblicazione di risorse multimediali dinamiche
-seo-title: Pubblicazione di risorse multimediali dinamiche
+title: Pubblicazione delle risorse Dynamic Media
+seo-title: Pubblicazione delle risorse Dynamic Media
 description: Come pubblicare le risorse multimediali dinamiche
 seo-description: Come pubblicare le risorse multimediali dinamiche
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
@@ -18,11 +18,11 @@ ht-degree: 8%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Pubblicazione delle risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Contenuti multimediali dinamici, selezionatele e toccate **[!UICONTROL Pubblica]**. Dopo la pubblicazione, le risorse multimediali dinamiche possono essere incluse in una pagina Web tramite URL o mediante incorporazione.
+Per pubblicare le risorse Dynamic Media, selezionatele e toccate **[!UICONTROL Pubblica]**. Dopo la pubblicazione, le risorse multimediali dinamiche possono essere incluse in una pagina Web tramite URL o mediante incorporazione.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. Consultate [Configurazione di contenuti multimediali dinamici - Modalità](config-dms7.md)Scene7.
+Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. Vedere [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md).
 
 Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
@@ -32,7 +32,7 @@ Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visual
 
 Se intendete pubblicare le risorse video subito dopo la codifica, accertatevi che la codifica sia stata completata. Quando i video vengono ancora codificati, il sistema segnala che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, dovreste essere in grado di visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro pubblicare i video senza che si verifichino errori di pubblicazione.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Vedere anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
 Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
 
@@ -45,10 +45,10 @@ Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](em
 
 
 
-Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consultate [Pubblicazione di risorse.](managing-assets-touch-ui.md)
+Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consultate [Pubblicazione delle risorse.](managing-assets-touch-ui.md)
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+AEM ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) via HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consultate la distribuzione [HTTP/2 di contenuti con domande](/help/sites-administering/scene7-http2faq.md) frequenti.
+Per ulteriori informazioni, vedere [Distribuzione HTTP/2 del contenuto alle domande frequenti](/help/sites-administering/scene7-http2faq.md).
