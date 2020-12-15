@@ -11,7 +11,7 @@ ht-degree: 56%
 ---
 
 
-# Applicazione dei servizi di traduzione cloud alle cartelle {#applying-translation-cloud-services-to-folders}
+# Applicazione dei servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
 
 Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione di vostra scelta per garantire che le risorse vengano tradotte in base alle vostre esigenze.
 
@@ -37,17 +37,17 @@ L’applicazione dei servizi di traduzione cloud direttamente nella cartella del
 
 1. Dalla barra degli strumenti, fai clic o tocca **[!UICONTROL Salva]**, quindi fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo: il servizio di traduzione viene applicato alla cartella.
 
-## Applicazione del connettore di traduzione personalizzato  {#applying-custom-translation-connector}
+## Applicazione del connettore di traduzione personalizzato {#applying-custom-translation-connector}
 
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installare il connettore da Package Manager.
-1. Tocca o fai clic sul logo AEM, quindi accedi a **[!UICONTROL Strumenti > Distribuzione > Cloud Services]**.
+1. Tocca o fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Distribuzione > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Tocca o fai clic sul collegamento **[!UICONTROL Configura ora]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione]** .
+1. Tocca o fai clic sul collegamento **[!UICONTROL Configura ora]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione]**.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
