@@ -17,20 +17,20 @@ Scoprite come aggiungere mappe immagine con collegamento ipertestuale alle risor
 
 Le mappe immagine consentono di aggiungere una o più aree con collegamento ipertestuale che funzionano come gli altri collegamenti ipertestuali.
 
-1. Per aprire Editor **[!UICONTROL immagini]** locale, effettuate una delle seguenti operazioni:
+1. Per aprire **[!UICONTROL Editor immagine locale]**, effettuate una delle seguenti operazioni:
 
-   * Con Azioni rapide, toccate l’icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista **[!UICONTROL Scheda]** . Nella vista Elenco, selezionate la risorsa e toccate l’icona **Modifica** nella barra degli strumenti.
+   * Tramite Azioni rapide, toccate l&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista **[!UICONTROL Scheda]**. Nella vista Elenco, selezionate la risorsa e toccate l&#39;icona **Modifica** nella barra degli strumenti.
 
       >[!NOTE]
       >
-      >Azioni rapide non è disponibile nella vista **[!UICONTROL Elenco]** .
+      >Azioni rapide non è disponibile nella visualizzazione **[!UICONTROL Elenco]**.
 
-   * Nella vista **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]** , selezionate la risorsa e toccate l’icona **[!UICONTROL Modifica]** sulla barra degli strumenti.
-   * Toccate l’icona **[!UICONTROL Modifica]** dalla pagina della risorsa.
+   * Nella vista **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]**, selezionate la risorsa e toccate l&#39;icona **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Toccate l&#39;icona **[!UICONTROL Edit]** dalla pagina della risorsa.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. Per inserire una mappa immagine, toccate l’icona **[!UICONTROL Avvia mappa]** dalla barra degli strumenti.
+1. Per inserire una mappa immagine, toccate l&#39;icona **[!UICONTROL Avvia mappa]** dalla barra degli strumenti.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -38,15 +38,15 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Toccate l’area sensibile e immettete il testo URL e Alt. Dall&#39;elenco **[!UICONTROL Target]** , specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Destinazione]** affinché la mappa immagine si apra in una nuova scheda.
+1. Toccate l’area sensibile e immettete il testo URL e Alt. Dall&#39;elenco **[!UICONTROL Target]**, specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Toccate l’icona **[!UICONTROL Conferma]** , quindi toccate l’icona **[!UICONTROL Fine]** dalla barra degli strumenti per salvare le modifiche.
+1. Toccate l&#39;icona **[!UICONTROL Confirm]**, quindi toccate l&#39;icona **[!UICONTROL Finish]** dalla barra degli strumenti per salvare le modifiche.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Per eliminare la mappa immagine, toccate l’area sensibile e toccate l’icona **[!UICONTROL Elimina]** .
+   Per eliminare la mappa immagine, toccate l&#39;area sensibile e toccate l&#39;icona **[!UICONTROL Elimina]**.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -54,4 +54,4 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se l’opzione Contenuti multimediali dinamici è attivata, passate all’editor risorse e toccate l’icona **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
+   Se l’opzione Dynamic Media è abilitata, andate all’editor risorse e toccate l’icona **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
