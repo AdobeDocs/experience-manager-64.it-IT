@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) Assets utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
-Un proxy è un&#39;istanza AEM specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy AEM Assets  può essere utilizzato per caricare le risorse per il rendering all&#39;interno  AEM Assets. Ad esempio, il lavoratore [proxy](indesign.md) IDS utilizza un InDesign Server  per elaborare i file da utilizzare in  AEM Assets.
+Un proxy è un&#39;istanza AEM specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy AEM Assets  può essere utilizzato per caricare le risorse per il rendering all&#39;interno  AEM Assets. Ad esempio, il lavoratore proxy [IDS](indesign.md) utilizza un InDesign Server  per elaborare i file da utilizzare in  AEM Assets.
 
 Se il proxy è un’istanza AEM separata, questo consente di ridurre il carico sulle istanze di authoring AEM. Per impostazione predefinita,  AEM Assets esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite proxy) per ridurre il carico sull’istanza di creazione AEM.
 
@@ -27,7 +27,7 @@ Un proxy è disponibile tramite il servlet HTTP quando è configurato per accett
 
 * `job`
 
-   **Requisiti**: il parametro `jobevent` deve essere impostato come mappa di valore serializzato. Viene utilizzato per creare un processore `Event` per un processo.
+   **Requisiti**: il parametro  `jobevent` deve essere impostato come una mappa di valore serializzata. Viene utilizzato per creare un `Event` per un processore di processo.
 
    **Risultato**: Aggiunge un nuovo processo. In caso di esito positivo, viene restituito un ID di processo univoco.
 
@@ -38,7 +38,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Requisiti**: il parametro `jobid` deve essere impostato.
+   **Requisiti**: il parametro  `jobid` deve essere impostato.
 
    **Risultato**: Restituisce una rappresentazione JSON del nodo risultato creato dal processore del processo.
 
@@ -71,7 +71,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Proxy Worker {#proxy-worker}
 
-Un lavoratore proxy è un processore responsabile della gestione di un processo e della creazione di un risultato. I lavoratori risiedono nell&#39;istanza proxy e devono implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuti come un lavoratore proxy.
+Un lavoratore proxy è un processore responsabile della gestione di un processo e della creazione di un risultato. I lavoratori risiedono nell&#39;istanza proxy e devono implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuti come proxy.
 
 >[!NOTE]
 >
@@ -109,11 +109,11 @@ Esempio di utilizzo delle API:
 >
 >La documentazione di riferimento per l&#39;API proxy è disponibile in [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Sia le configurazioni di proxy che quelle di proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console  AEM Assets **Tools** o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
+Sia le configurazioni di proxy che quelle di proxy sono disponibili tramite configurazioni di servizi cloud accessibili dalla console  AEM Assets **Tools** o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta Configurazione [e configurazione](indesign.md#configuring-the-proxy-worker-for-indesign-server) dei [](../sites-developing/extending-cloud-config.md) Cloud Services del Proxy Worker di Indesign Server.
+>Per ulteriori informazioni, vedere [Configurazione del Proxy Worker di Indesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [configurazione dei Cloud Services](../sites-developing/extending-cloud-config.md).
 
 Esempio di utilizzo delle API:
 
@@ -132,7 +132,7 @@ Esempio di utilizzo delle API:
 
 ### Sviluppo di un Proxy Worker personalizzato {#developing-a-customized-proxy-worker}
 
-Il lavoratore [proxy](indesign.md) IDS è un esempio di un lavoratore proxy AEM Assets  già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse Indesign.
+Il lavoratore proxy [IDS](indesign.md) è un esempio di un lavoratore proxy AEM Assets  già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse Indesign.
 
 È inoltre possibile sviluppare e configurare un proprio  AEM Assets proxy Worker per creare un lavoratore specializzato per l&#39;invio e l&#39;outsourcing  attività di elaborazione AEM Assets.
 
@@ -158,21 +158,21 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 >
 >Nei passaggi seguenti, gli equivalenti di Indesign sono indicati come esempi di riferimento.
 
-1. Viene utilizzato un processo [](https://sling.apache.org/site/eventing-and-jobs.html) Sling, per cui è necessario definire un argomento di processo per il caso d’uso.
+1. Viene utilizzato un [processo Sling](https://sling.apache.org/site/eventing-and-jobs.html), pertanto è necessario definire un argomento del processo per il caso d&#39;uso.
 
-   Ad esempio, vedere `IDSJob.IDS_EXTENDSCRIPT_JOB` per il proxy worker IDS.
+   Ad esempio, vedere `IDSJob.IDS_EXTENDSCRIPT_JOB` per il lavoratore proxy IDS.
 
 1. Il passaggio esterno viene utilizzato per attivare l’evento e quindi attendere che sia terminato; questo viene fatto tramite un sondaggio sull&#39;ID. Per implementare le nuove funzionalità è necessario sviluppare un proprio passaggio.
 
-   Implementate un `WorkflowExternalProcess`, quindi utilizzate l’API JobService e l’argomento del processo per preparare un evento di processo e inviarlo a JobService (un servizio OSGi).
+   Implementate un `WorkflowExternalProcess`, quindi utilizzate l&#39;API JobService e l&#39;argomento del processo per preparare un evento di processo e inviarlo a JobService (un servizio OSGi).
 
    Ad esempio, vedere `INDDMediaExtractProcess`.java per il lavoratore proxy IDS.
 
 1. Implementare un gestore di processi per l’argomento. Questo gestore richiede lo sviluppo in modo che esegua l&#39;azione specifica e sia considerato come implementazione del lavoratore.
 
-   Ad esempio, vedere `IDSJobProcessor.java` per il proxy worker IDS.
+   Ad esempio, vedere `IDSJobProcessor.java` per il lavoratore proxy IDS.
 
-1. Fate uso di `ProxyUtil.java` in dam-commons. Questo consente di inviare i processi ai lavoratori utilizzando il proxy DAM.
+1. Utilizzare `ProxyUtil.java` in dam-commons. Questo consente di inviare i processi ai lavoratori utilizzando il proxy DAM.
 
 >[!NOTE]
 >
