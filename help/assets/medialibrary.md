@@ -32,7 +32,7 @@ Le funzioni uniche disponibili solo per  clienti di AEM Assets sono:
 1. possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
 1.  AEM Assets Admin, disponibile dalla schermata di benvenuto facendo clic sul secondo pulsante accanto a `siteadmin`.
 1. Tutti i passaggi del flusso di lavoro relativi a Gestione delle risorse digitali, AEM l’assimilazione delle risorse,  l’eliminazione di AEM Assets,  gestione delle risorse secondarie AEM Assets,  l’estrazione dei metadati AEM Assets.
-1. librerie, incluso lo spazio del pacchetto `dam` im.
+1. librerie che includono `dam` spazio del pacchetto im.
 
 L&#39;utilizzo di queste funzioni richiede una licenza valida di  AEM Assets.
 
