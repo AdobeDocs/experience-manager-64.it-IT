@@ -74,11 +74,11 @@ Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo es
 
 L&#39;istanza AEM condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con diversi servizi.
 
-Se si esamina la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere il firewall enterprise da 10 Mbit. Per determinare l’esperienza dell’utente potete usare questi valori nel calcolatore del ridimensionamento nella Guida [al ridimensionamento delle](assets-sizing-guide.md) risorse.
+Se si esamina la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere il firewall enterprise da 10 Mbit. Per determinare l&#39;esperienza dell&#39;utente è possibile utilizzare questi valori nel calcolatore di ridimensionamento della [Guida alle dimensioni delle risorse](assets-sizing-guide.md).
 
 ## Flussi di lavoro definiti dell&#39;istanza AEM {#defined-workflows-of-the-aem-instance}
 
-Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, lo storage collegato in rete S3 o di altro tipo utilizzato e le richieste di I/O utilizzano la larghezza di banda della rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
+Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, l&#39;archiviazione S3 o altra rete collegata utilizzata e le richieste di I/O richiedono una larghezza di banda di rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
 Per semplificare i processi relativi all’assimilazione delle risorse (in particolare durante il caricamento di un gran numero di risorse), esplora i flussi di lavoro delle risorse e scopri di più sulla loro configurazione.
 
