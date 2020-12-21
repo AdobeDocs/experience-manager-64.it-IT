@@ -30,7 +30,7 @@ Per una semplice dimostrazione, viene rimossa una funzione visiva, l’avatar mo
 
 ## Modificare gli script HBS {#modify-the-hbs-scripts}
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Apri [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -52,7 +52,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
        -->
       ```
 
-* Seleziona **Salva tutto**
+* Selezionare **Salva tutto**
 
 ## Replica app personalizzata {#replicate-custom-app}
 
@@ -64,17 +64,17 @@ Un modo per farlo è
 
    * Selezionare **[!UICONTROL Strumenti > Operazioni > Replica]**
    * Seleziona `Activate Tree`
-   * Set `Start Path`: to `/apps/custom`
-   * Deseleziona `Only Modified`
-   * Seleziona `Activate` , pulsante
+   * Imposta `Start Path`: a `/apps/custom`
+   * Deselezionare `Only Modified`
+   * Selezionare il pulsante `Activate`
 
 ## Visualizza commento modificato sulla pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
-[Continuando l’esperienza](extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
+[Continuando l’](extend-sample-page.md#publish-sample-page) esperienza nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-## Esempio di pacchetto di estensione dei commenti {#sample-comment-extension-package}
+## Pacchetto di estensioni di commenti di esempio {#sample-comment-extension-package}
 
 Allegato è un pacchetto dell&#39;applicazione di commenti personalizzata creata in questa esercitazione.
 
