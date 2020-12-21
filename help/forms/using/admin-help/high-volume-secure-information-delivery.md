@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Distribuzione sicura delle informazioni ad alto volume {#high-volume-secure-information-delivery}
+# Distribuzione di informazioni sicure ad alto volume {#high-volume-secure-information-delivery}
 
 In un ambiente di produzione di massa, come quello in cui vengono generate fatture mensili protette per una società di telecomunicazioni, la creazione di licenze specifiche per ciascun documento può diventare un processo ad alta intensità di risorse. In tali casi, Document Security supporta l&#39;associazione di licenze agli utenti, anziché ai documenti. La licenza generata per un utente viene utilizzata per tutti i documenti protetti per tale utente.
 
@@ -30,4 +30,4 @@ Nel caso della generazione mensile di fatture per una società di telecomunicazi
 
 La creazione di un criterio astratto è supportata solo tramite l&#39;SDK Java per la protezione dei documenti. È tuttavia possibile amministrare i criteri creati dai criteri astratti dalle pagine Web di protezione dei documenti. I criteri creati con questo metodo hanno lo stesso comportamento di quelli creati con le pagine Web per la protezione dei documenti.
 
-Per ulteriori informazioni, vedere [Programmazione con AEM moduli](https://www.adobe.com/go/learn_aemforms_programming_63) .
+Per ulteriori informazioni, vedere [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).
