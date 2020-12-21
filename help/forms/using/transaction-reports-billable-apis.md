@@ -34,8 +34,8 @@ Elenco di tutte le API contabilizzate come transazioni
 
 Le API di fatturazione non tengono conto del numero di pagine, della lunghezza di un documento o modulo o del formato finale del documento di cui è stato effettuato il rendering. Un rapporto sulle transazioni divide le transazioni in tre categorie: Documenti elaborati, Documenti sottoposti a rendering e Forms Inviato.
 
-* **Forms inviato:** Quando i dati vengono inviati da qualsiasi tipo di modulo creato con  AEM Forms e i dati vengono inviati a qualsiasi archivio dati o database è considerato invio del modulo. Ad esempio, l&#39;invio di un modulo adattivo, di un modulo HTML5, di PDF forms e di un set di moduli viene contabilizzato come moduli inviati. Ciascun modulo in un set di moduli è considerato un invio. Ad esempio, se un set di moduli contiene 5 moduli, all&#39;invio del set di moduli il servizio di reporting delle transazioni li conteggia come 5 invii.
-* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e dati, la firma digitale o la certificazione di un documento, l&#39;utilizzo di API Document Services fatturabili per Document Services o la conversione di un documento da un formato a un altro vengono contabilizzate come documenti sottoposti a rendering.
+* **Forms Inviato:** Quando i dati vengono inviati da qualsiasi tipo di modulo creato con  AEM Forms e i dati vengono inviati a qualsiasi archivio dati o database è considerata come invio del modulo. Ad esempio, l&#39;invio di un modulo adattivo, di un modulo HTML5, di PDF forms e di un set di moduli viene contabilizzato come moduli inviati. Ciascun modulo in un set di moduli è considerato un invio. Ad esempio, se un set di moduli contiene 5 moduli, all&#39;invio del set di moduli il servizio di reporting delle transazioni li conteggia come 5 invii.
+* **Rendering dei documenti:** la generazione di un documento mediante la combinazione di un modello e dati, la firma digitale o la certificazione di un documento, l&#39;utilizzo di API Document Services fatturabili per Document Services o la conversione di un documento da un formato a un altro vengono considerati come documenti di cui viene eseguito il rendering.
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Servizio Distiller {#distiller-service}
 
 <table> 
  <tbody>
@@ -135,7 +135,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
  </tbody>
 </table>
 
-### Servizio Document of Record (DoR Service) {#document-of-record-service-dor-service}
+### Servizio del documento record (servizio DoR) {#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
@@ -310,7 +310,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 
 
-### PDF Utility Service  {#pdf-utility-service}
+### Servizio di utilità PDF {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -343,14 +343,14 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>L'API consente di proteggere il documento. È possibile utilizzare l'API per firmare, certificare, estendere o cifrare un documento PDF. </td> 
    <td>Documenti elaborati</td> 
-   <td>Vengono fatturate solo le operazioni di firma e certificazione del <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">SecureDocument</a> .</td> 
+   <td>Vengono fatturate solo le operazioni di firma e certificazione di <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a>.</td> 
   </tr>
  </tbody>
 </table>
 
 ## API Billable Data Capture {#billable-data-capture-apis}
 
-Tutti gli eventi di invio di moduli adattivi, Forms HTML5 e set di moduli sono considerati transazioni. Per impostazione predefinita, l&#39;invio di un modulo PDF non viene contabilizzato come transazione. Utilizzate l&#39;API [dei rapporti di](record-transaction-custom-implementation.md) transazione fornita per registrare l&#39;invio di PDF forms come transazione.
+Tutti gli eventi di invio di moduli adattivi, Forms HTML5 e set di moduli sono considerati transazioni. Per impostazione predefinita, l&#39;invio di un modulo PDF non viene contabilizzato come transazione. Utilizzate l&#39;API [report di transazione ](record-transaction-custom-implementation.md) fornita per registrare l&#39;invio di PDF forms come transazione.
 
 ### Moduli adattivi {#adaptive-forms}
 
@@ -442,7 +442,7 @@ Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM basati s
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Comunicazione interattiva - Canale di stampa {#interactive-communication-print-channel}
 
 <table> 
  <tbody>
@@ -463,7 +463,7 @@ Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM basati s
  </tbody>
 </table>
 
-### Flussi di lavoro AEM incentrati sui moduli in OSGi  {#form-centric-aem-workflows-on-osgi}
+### Flussi di lavoro AEM incentrati sui moduli in OSGi {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
@@ -492,11 +492,11 @@ Assegna i passaggi di task e servizi documenti dei flussi di lavoro AEM basati s
  </tbody>
 </table>
 
-## Registrazione di API fatturabili come transazioni per codice personalizzato {#recording-billable-apis-as-transactions-for-custom-code}
+## Registrazione di API fatturabili come transazioni per il codice personalizzato {#recording-billable-apis-as-transactions-for-custom-code}
 
-Azioni come l&#39;invio di un modulo PDF, l&#39;utilizzo dell&#39;interfaccia utente dell&#39;agente per visualizzare l&#39;anteprima di una comunicazione interattiva, l&#39;utilizzo di sottomoduli non standard e l&#39;implementazione personalizzata non vengono considerate come transazioni.  AEM Forms fornisce un&#39;API per registrare azioni come le transazioni. Puoi richiamare l&#39;API dalle tue implementazioni personalizzate per [registrare una transazione](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Azioni come l&#39;invio di un modulo PDF, l&#39;utilizzo dell&#39;interfaccia utente dell&#39;agente per visualizzare l&#39;anteprima di una comunicazione interattiva, l&#39;utilizzo di sottomoduli non standard e l&#39;implementazione personalizzata non vengono considerate come transazioni.  AEM Forms fornisce un&#39;API per registrare azioni come le transazioni. Puoi chiamare l&#39;API dalle tue implementazioni personalizzate per [registrare una transazione](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
-## Related Articles {#related-articles}
+## Articoli correlati {#related-articles}
 
 * [Panoramica dei report sulle transazioni](/help/forms/using/transaction-reports-overview.md)
 * [Visualizzazione e comprensione di rapporti sulle transazioni](/help/forms/using/viewing-and-understanding-transaction-reports.md)
