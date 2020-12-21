@@ -4,9 +4,9 @@ description: Note sulla versione specifiche dei pacchetti di correzioni cumulati
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 11%
 
 ---
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2 fornisce delle correzioni per i seguenti proble
 * È possibile sospendere la [!DNL Live Copy] di una pagina e l&#39;ereditarietà viene interrotta come mostrato in modalità Editor. Tuttavia, nelle proprietà Page, l&#39;icona che rappresenta l&#39;ereditarietà indica erroneamente che l&#39;ereditarietà esiste e non è interrotta (NPR-34096).
 * Problema con la visualizzazione dei componenti consentiti nella pagina del modello Modifica (CQ-4297295).
 * Dopo l&#39;aggiornamento di Chrome e Firefox, i menu a comparsa non funzionano come previsto. Quando si caricano le proprietà della pagina, il pannello non viene visualizzato in presenza di dati (CQ-4292995).
+* Più istanze di script tra siti nei componenti [!DNL Experience Manager Sites] (NPR-33926).
+* Gli input dell&#39;utente non vengono codificati correttamente per vari componenti quando inviano informazioni al client (NPR-33696).
+* Un URL che termina con `childrenlist.html` visualizza una pagina HTML invece di una risposta 404. Tali URL sono vulnerabili agli script tra siti diversi (NPR-33441).
 
 #### Assets {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2 fornisce delle correzioni per i seguenti proble
 * L&#39;azione di invio **[!UICONTROL Invia all&#39;endpoint REST]** non funziona per un modulo adattivo (NPR-34513).
 
 * Accessibilità: Quando si tenta di inviare un modulo adattivo senza caricare un allegato per un campo obbligatorio, lo stato attivo non si sposta automaticamente sul campo allegato (NPR-34511).
+
+* Gli input dell&#39;utente non vengono codificati correttamente per i componenti [!DNL Forms] quando inviano informazioni al client (NPR-33611).
 
 **Flusso di lavoro**
 
@@ -431,9 +436,9 @@ Per determinare la piattaforma certificata da eseguire con questa release di  AE
 >[!NOTE]
 >Dopo l&#39;installazione corretta del pacchetto, viene visualizzato un messaggio informativo che indica che il pacchetto di contenuti è stato installato correttamente, ad esempio **&quot;Content Package AEM-6.4-Service-Pack-8 installato correttamente.&quot;**
 
-### Aggiornamento dei visualizzatori per contenuti multimediali dinamici (5.10.1) {#update-dynamic-media-viewers}
+### Aggiornamento dei visualizzatori Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.3 contiene la nuova versione dei visualizzatori per contenuti multimediali dinamici (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti di contenuti multimediali dinamici viene consigliato di eseguire il comando seguente per aggiornare i predefiniti per visualizzatori box.
+AEM 6.4.8.3 contiene la nuova versione dei visualizzatori Dynamic Media (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti Dynamic Media viene consigliato di eseguire il comando seguente per aggiornare i predefiniti per visualizzatori in scatola.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
