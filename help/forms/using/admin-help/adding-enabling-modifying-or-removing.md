@@ -70,8 +70,8 @@ In caso di problemi con i servizi, disattivate gli endpoint associati per risolv
 
 È inoltre possibile eseguire questa operazione dalla pagina Gestione dei servizi selezionando un servizio e facendo clic sulla scheda Endpoint.
 
-## Rimozione di un endpoint {#remove-an-endpoint}
+## Rimuovere un endpoint {#remove-an-endpoint}
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione endpoint.
-1. Nella pagina Gestione endpoint, selezionare la casella di controllo dell&#39;endpoint da rimuovere e fare clic su Rimuovi. L&#39;endpoint non viene più visualizzato.
+1. Nella pagina Gestione endpoint, selezionare la casella di controllo per l&#39;endpoint da rimuovere e fare clic su Rimuovi. L&#39;endpoint non viene più visualizzato.
 
