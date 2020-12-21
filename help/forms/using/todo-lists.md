@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Uso degli elenchi A-do {#working-with-to-do-lists}
+# Utilizzo degli elenchi delle operazioni da eseguire {#working-with-to-do-lists}
 
 Quando visualizzate gli elenchi delle operazioni, è possibile che vengano visualizzate attività da un processo aziendale assegnato all&#39;utente o a qualsiasi gruppo a cui appartenete o che sia l&#39;attività condivisa di altri utenti. È possibile aprire, lavorare e completare le attività come necessario, ad esempio approvare o rifiutare una richiesta o aggiungere ulteriori informazioni. Dopo aver completato un&#39;attività, questa viene inviata alla persona successiva nel processo aziendale,
 
-## Informazioni sugli elenchi Da fare {#about-todo-lists}
+## Informazioni sugli elenchi da fare {#about-todo-lists}
 
 &#39;area di lavoro di AEM Forms include i tre tipi seguenti di elenchi Da fare:
 
@@ -36,7 +36,7 @@ Per eseguire alcune azioni senza aprire l’attività, fare clic sulle icone vis
 >
 >Un&#39;icona esclamativa indica che l&#39;attività è ad alta priorità.
 
-## Operazioni tipiche {#typical-tasks}
+## Attività tipiche {#typical-tasks}
 
 Quando si apre e si lavora su un&#39;attività, gli strumenti disponibili dipendono dall&#39;attività. Diverse attività richiedono l’esecuzione di azioni diverse e, per questo motivo, alcuni strumenti potrebbero non essere disponibili. Di seguito sono descritte le attività tipiche che potete ricevere.
 
@@ -92,17 +92,17 @@ Quando si apre un&#39;attività dall&#39;elenco A, se l&#39;elenco è condiviso,
 
 1. Aprite l’attività facendo clic su di essa.
 
-### Apertura e richiesta di un&#39;attività da un elenco condiviso o di gruppi {#open-and-claim-a-task-from-a-shared-or-group-list}
+### Aprire e richiedere un&#39;attività da un elenco condiviso o di gruppi {#open-and-claim-a-task-from-a-shared-or-group-list}
 
 Quando aprite e richiedete un&#39;attività da un gruppo o un elenco condiviso, l&#39;attività viene spostata dal gruppo o dall&#39;elenco condiviso al singolo elenco A. Agli altri utenti con accesso all&#39;elenco non è consentito lavorare sull&#39;attività.
 
 1. Nella pagina Da fare, nel riquadro a sinistra, selezionare un gruppo o un elenco Condiviso da fare. Tutte le attività vengono visualizzate nel riquadro centrale.
 1. Effettuare una delle seguenti operazioni:
 
-   * Per richiedere un&#39;attività, senza aprirla, da un elenco di gruppi o di azioni condivise, fare clic su **Richiedi** posizionando il puntatore sull&#39;attività. In alternativa, quando l&#39;attività è aperta, il pulsante Richiedi rimborso è disponibile nella barra delle azioni sotto il riquadro attività. Al momento della richiesta, un&#39;attività passa dall&#39;elenco dei gruppi o dei To-do condivisi all&#39;elenco.
-   * Per richiedere e aprire un&#39;attività da un gruppo o da un elenco di attività condivise, fare clic su **Richiedi e aprire**.
+   * Per richiedere un&#39;attività, senza aprirla, da un elenco di attività di gruppo o condivisa fare clic su **Claim** posizionando il puntatore sull&#39;attività. In alternativa, quando l&#39;attività è aperta, il pulsante Richiedi rimborso è disponibile nella barra delle azioni sotto il riquadro attività. Al momento della richiesta, un&#39;attività passa dall&#39;elenco dei gruppi o dei To-do condivisi all&#39;elenco.
+   * Per richiedere e aprire un&#39;attività da un gruppo o un elenco di attività condivise, fare clic su **Richiedi e aprire**.
 
-## Working with tasks {#working-with-tasks}
+## Operazioni con le attività {#working-with-tasks}
 
 Dopo aver aperto un’attività, le schede visualizzate nel riquadro principale e gli strumenti disponibili dipendono dall’attività. Le schede visualizzate sono descritte di seguito:
 
@@ -120,7 +120,7 @@ Dopo aver aperto un’attività, le schede visualizzate nel riquadro principale 
 
 Quando lavorate su un’attività, gli strumenti che potete visualizzare e le azioni che potete eseguire sono descritti di seguito.
 
-### Inoltro, condivisione o consultazione di un&#39;attività {#forward-share-or-consult-on-a-task}
+### Inoltra, condividi o consulta un&#39;attività {#forward-share-or-consult-on-a-task}
 
 È possibile inoltrare un&#39;attività con note o allegati a un altro utente o condividere l&#39;attività o consultare l&#39;attività con un altro utente. Se si modificano i dati del modulo associati a un&#39;attività, salvare il modulo come bozza prima di inoltrare, condividere o consultare l&#39;attività. In caso contrario, l&#39;attività viene inviata senza il modulo aggiornato. Dopo aver inoltrato e condiviso un&#39;attività, l&#39;utente che riceve l&#39;attività può richiederla e completarla o restituirla. Se si consulta un&#39;attività, l&#39;utente può solo restituirla.
 
@@ -144,13 +144,13 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
 
 ### Restituire un&#39;attività {#return-a-task}
 
-1. In qualsiasi scheda, fate clic su **Torna**. L&#39;attività viene restituita all&#39;elenco A dell&#39;utente che in precedenza ha inoltrato l&#39;attività all&#39;utente oppure l&#39;ha condivisa o consultata con l&#39;utente.
+1. In qualsiasi scheda, fare clic su **Return**. L&#39;attività viene restituita all&#39;elenco A dell&#39;utente che in precedenza ha inoltrato l&#39;attività all&#39;utente oppure l&#39;ha condivisa o consultata con l&#39;utente.
 
-### Operazioni offline {#take-a-task-offline}
+### Eseguire un&#39;attività offline {#take-a-task-offline}
 
 È possibile lavorare su un&#39;attività offline e successivamente inviare il modulo da  Adobe® Reader® o  Adobe®  Acrobat® Professional o  Adobe®  Acrobat® Standard. Quando il modulo viene inviato, il client di posta elettronica viene avviato con l&#39;indirizzo e-mail del server appropriato. È quindi possibile inviare il modulo compilato al server tramite e-mail.
 
-1. In qualsiasi scheda, fate clic su **Offline**.
+1. In qualsiasi scheda, fare clic su **Offline**.
 1. Specificare un nome di file in cui salvare il modulo e fare clic su **Salva**. Il modulo associato all&#39;attività viene salvato localmente e l&#39;attività rimane nell&#39;elenco A fino all&#39;invio del modulo.
 
 ### Operazioni con gli allegati {#work-with-attachments}
@@ -159,18 +159,18 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
 
 **Aggiungere un allegato**
 
-1. Nella scheda **Allegati** , fare clic su **Sfoglia** per selezionare il file da allegare.
-1. Selezionate il livello **Autorizzazioni** per l’allegato per gli altri utenti che partecipano al processo. Se si seleziona **Leggi**, altri utenti possono salvare il file localmente. Se si seleziona una delle autorizzazioni di modifica, altri utenti possono caricare un nuovo file per sostituire l&#39;allegato.
+1. Nella scheda **Allegati**, fare clic su **Sfoglia** per selezionare il file da allegare.
+1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se si seleziona **Leggi**, altri utenti possono salvare il file localmente. Se si seleziona una delle autorizzazioni di modifica, altri utenti possono caricare un nuovo file per sostituire l&#39;allegato.
 
    >[!NOTE]
    >
    >È inoltre possibile aggiungere commenti insieme agli allegati.
 
-1. Click **Upload**. Il file è allegato al modulo.
+1. Fare clic su **Carica**. Il file è allegato al modulo.
 
 **Visualizzare un allegato**
 
-1. Nella scheda **Allegati** , fare clic sul nome del file dell&#39;allegato da visualizzare.
+1. Nella scheda **Allegati** fare clic sul nome del file dell&#39;allegato da visualizzare.
 
 **Salvare un allegato localmente**
 
@@ -178,7 +178,7 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
 
 **Aggiornamento di un allegato**
 
-1. Fare clic su **Modifica** per l&#39;allegato. Selezionare il file con cui sostituire l&#39;allegato esistente facendo clic su **Sfoglia**.
+1. Fare clic su **Modifica** per l&#39;allegato. Selezionare il file con cui sostituire l&#39;allegato esistente, facendo clic su **Sfoglia**.
 
 **Eliminare un allegato**
 
@@ -186,7 +186,7 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
 
 ### Salvare il lavoro senza completare l&#39;attività {#save-your-work-without-completing-the-task}
 
-1. Su qualsiasi scheda, toccate **Salva**.
+1. Su qualsiasi scheda, toccare **Save**.
 
    Viene visualizzata la finestra di dialogo Salva come bozza. Il nome predefinito della bozza è il nome dell&#39;attività dal modello di attività.
 
@@ -196,9 +196,9 @@ Quando lavorate su un’attività, gli strumenti che potete visualizzare e le az
    >
    >Potete configurare l’area di lavoro in modo da salvare periodicamente automaticamente le informazioni immesse da un utente come bozza. Se il salvataggio automatico è abilitato e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente. In caso di salvataggio automatico, il nome predefinito dell&#39;attività viene assunto automaticamente.
    >
-   >Per ulteriori informazioni, vedere Salva la bozza periodicamente in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
+   >Per ulteriori informazioni, vedere Salva bozza periodicamente in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Nella finestra di dialogo Salva come bozza, specificate un nome univoco per l’attività e toccate **OK**.
+1. Nella finestra di dialogo Salva come bozza, specificate un nome univoco per l&#39;attività e toccate **OK**.
 
    ![saveasreddialog_name](assets/saveasdraftdialog_name.png)
 
@@ -216,7 +216,7 @@ Potete completare un’attività in vari modi:
 * Uso delle azioni integrate nel modulo stesso
 * Dall&#39;elenco A, senza aprire l&#39;attività
 
-   Nota: Questa opzione è disponibile se `isMustOpenToComplete` il campo non è selezionato nel `Assign Task` passaggio di Workbench durante la progettazione di un processo.
+   Nota: Questa opzione è disponibile se il campo `isMustOpenToComplete` non è selezionato nel passaggio `Assign Task` di Workbench durante la progettazione di un processo.
 
 * Per e-mail, se ricevete notifiche e-mail
 
@@ -226,7 +226,7 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 >
 >Se avete modificato un’attività ma non siete pronti a completarla, potete salvare il lavoro come bozza facendo clic su Salva e tornarvi in seguito.
 
-### Completa un’attività {#complete-a-task}
+### Completa un&#39;attività {#complete-a-task}
 
 1. Effettuare una delle seguenti operazioni:
 
@@ -238,8 +238,8 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 
 1. Se viene visualizzata una finestra di dialogo di conferma, effettuate una delle seguenti operazioni:
 
-   * Fate clic su **OK** se avete completato l&#39;attività e siete pronti per disconnettervi.
-   * Fate clic su **Annulla** se desiderate tornare all&#39;attività e non siete pronti per disconnettervi.
+   * Fare clic su **OK** se si è completata l&#39;attività e si è pronti per disconnettersi.
+   * Fare clic su **Annulla** per tornare all&#39;attività e non essere pronti per disconnettersi.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe compa
 >Questa opzione è disponibile se il campo isMustOpenToComplete non è selezionato nel passaggio Assegna attività di Workbench durante la progettazione di un processo.
 
 1. Nella pagina Da fare, nel riquadro a sinistra, selezionare il singolo elenco Da fare. Tutte le attività vengono visualizzate nel riquadro centrale.
-1. Selezionate **Attiva modalità** di massa. Le caselle di controllo sono visualizzate davanti alle attività elencate.
+1. Selezionare **Attiva modalità di massa**. Le caselle di controllo sono visualizzate davanti alle attività elencate.
 
    >[!NOTE]
    >
@@ -278,7 +278,7 @@ I messaggi e-mail possono contenere un collegamento che apre l’attività ’ar
 
 >[!NOTE]
 >
->Per configurare l’area di lavoro in modo da utilizzare i modelli e-mail appropriati, consultate la [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>Per configurare l&#39;area di lavoro in modo che utilizzi i modelli e-mail appropriati, consultare la [ AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimossa dall&#39;elenco A nell&#39;area di lavoro  AEM Forms.
 
@@ -292,11 +292,11 @@ Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimoss
 
 ### Ricevi messaggi di notifica e-mail {#receive-email-notification-messages}
 
-1. Fate clic su **Preferenze**.
-1. Nell’elenco **Notifica eventi attività tramite e-mail** , selezionare **Sì**.
-1. Per includere il modulo e i dati con il messaggio e-mail, nell&#39;elenco **Allega Forms in e-mail** , selezionare **Sì**.
+1. Fare clic su **Preferenze**.
+1. Nell&#39;elenco **Notifica eventi attività tramite e-mail**, selezionare **Yes**.
+1. Per includere il modulo e i dati con il messaggio e-mail, nell&#39;elenco **Allega Forms in E-mail** selezionare **Sì**.
 
-## Partecipazione alle attività mediante i dispositivi mobili {#participating-in-tasks-through-mobile-devices}
+## Partecipazione alle attività tramite dispositivi mobili {#participating-in-tasks-through-mobile-devices}
 
 Potete utilizzare &#39;app dell&#39;area di lavoro AEM Forms per partecipare alle attività dal dispositivo mobile. Prima di installare l&#39;applicazione, verificate con l&#39;amministratore di sistema che l&#39;azienda supporti l&#39;uso &#39;app dell&#39;area di lavoro AEM Forms.
 
@@ -304,17 +304,17 @@ Potete utilizzare &#39;app dell&#39;area di lavoro AEM Forms per partecipare all
 
 Una *scadenza* determina la data e l&#39;ora in cui è necessario completare un&#39;attività. Quando una scadenza viene superata, il server indirizza l&#39;attività al passaggio successivo del processo (che può essere l&#39;elenco A-do di un altro utente), quindi sull&#39;attività viene visualizzata l&#39;icona della scadenza. L&#39;icona di scadenza viene visualizzata indipendentemente dalle regole associate al processo.
 
-Un *promemoria* notifica un’attività che richiede l’attenzione dell’utente. I promemoria si verificano a un&#39;ora prestabilita e quindi a intervalli regolari fino al completamento dell&#39;attività associata. Quando ricevete un promemoria, sull&#39;attività viene visualizzata l&#39;icona del promemoria.
+Un *promemoria* notifica un&#39;attività che richiede l&#39;attenzione dell&#39;utente. I promemoria si verificano a un&#39;ora prestabilita e quindi a intervalli regolari fino al completamento dell&#39;attività associata. Quando ricevete un promemoria, sull&#39;attività viene visualizzata l&#39;icona del promemoria.
 
 Il processo aziendale determina il comportamento e la tempistica di scadenze e promemoria. Non tutti i processi hanno scadenze e promemoria. L’amministratore specifica se le notifiche e-mail vengono inviate per scadenze e promemoria. Potete impostare le preferenze in modo da specificare se ricevere le notifiche e-mail.
 
-## Operazioni con le attività da code di gruppi e condivise {#working-with-tasks-from-group-and-shared-queues}
+## Operazioni con le attività da code di gruppo e condivise {#working-with-tasks-from-group-and-shared-queues}
 
 Tutte le attività assegnate all&#39;utente vengono visualizzate nell&#39;elenco A (coda).
 
 Qualsiasi elenco di gruppi e di operazioni condivise a cui avete accesso viene visualizzato anche nel riquadro a sinistra nella pagina Da fare. È possibile completare le attività da qualsiasi elenco A a cui si ha accesso.
 
-Un elenco di attività di gruppo può avere più di un membro. Un amministratore imposta gli elenchi di attività del gruppo in base ai requisiti specifici dell&#39;organizzazione. Gli elenchi di attività raggruppate consentono di distribuire il lavoro a più persone che condividono responsabilità simili.
+Un elenco di attività di gruppo può avere più di un membro. Un amministratore configura elenchi di attività di gruppo in base ai requisiti specifici dell&#39;organizzazione. Gli elenchi di attività raggruppate consentono di distribuire il lavoro a più persone che condividono responsabilità simili.
 
 Ad esempio, ogni membro del team elabora i moduli per le domande di prestito. Tutte queste attività vengono inviate a un elenco di attività del gruppo a cui ogni membro del gruppo ha accesso. Ciascun membro del gruppo può accedere alle attività contenute in tale elenco.
 
@@ -338,14 +338,14 @@ Tenere presente che per consentire a un utente di visualizzare un&#39;attività 
 
 **Condivisione della coda**
 
-1. Nella scheda **Code** della scheda **Preferenze** , fate clic sull&#39;icona &quot;+&quot; per &quot;Utenti che condividono la coda&quot;.
+1. Nella scheda **Code** della scheda **Preferenze** fare clic sull&#39;icona &quot;+&quot; per &quot;Utenti che condividono la coda&quot;.
 1. Cercate e selezionate il nome dell’utente.
-1. Fate clic sul pulsante **Condividi** per condividere la coda con l’utente selezionato.
-1. Selezionate il nome dell’utente e fate clic su **Condividi**.
+1. Fate clic sul pulsante **Condividi** per condividere la coda con l&#39;utente selezionato.
+1. Selezionate il nome dell&#39;utente e fate clic su **Condividi**.
 
    >[!NOTE]
    >
-   >Potete rimuovere un utente dalla condivisione dell&#39;elenco A facendo clic sull&#39;icona **X** alla fine della riga in cui l&#39;utente è elencato.
+   >Per rimuovere un utente dalla condivisione dell&#39;elenco delle azioni, fare clic sull&#39;icona **X** alla fine della riga in cui l&#39;utente è elencato.
 
 ### Accesso ad altre code {#accessing-other-queues}
 
@@ -357,15 +357,15 @@ Se si dispone dell&#39;accesso all&#39;elenco A di un altro utente, non è possi
 
 **Accedere a un&#39;altra coda**
 
-1. Nella scheda **Preferenze** , aprite la scheda **Code** .
+1. Nella scheda **Preferenze**, aprire la scheda **Code**.
 1. Fare clic su &#39;+&#39; per le &#39;code utente a cui ho accesso&#39;. Cercate il nome dell’utente nella finestra di dialogo a comparsa.
-1. Selezionate il nome dell’utente e fate clic su **Richiedi**.
+1. Selezionate il nome dell&#39;utente e fate clic su **Request**.
 
    >[!NOTE]
    >
-   >Per rimuovere l&#39;accesso a un altro elenco A, selezionare il nome utente dall&#39;elenco Code utenti a cui ho accesso e fare clic su **X** alla fine della riga in cui viene indicato il nome utente. Non è possibile rimuovere l&#39;accesso a un altro elenco A-do quando la richiesta di accesso all&#39;elenco A-do è ancora in sospeso.
+   >Per rimuovere l&#39;accesso a un altro elenco A, selezionare il nome utente dall&#39;elenco Code utenti a cui ho accesso e fare clic su **X** alla fine della riga in cui è indicato il nome utente. Non è possibile rimuovere l&#39;accesso a un altro elenco A-do quando la richiesta di accesso all&#39;elenco A-do è ancora in sospeso.
 
-## Impostazione delle preferenze esterne all&#39;ufficio {#setting-out-of-office-preferences}
+## Impostazione delle preferenze fuori sede {#setting-out-of-office-preferences}
 
 Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade alle attività assegnate per quel periodo.
 
@@ -377,24 +377,24 @@ Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade a
 >
 >Quando non sei in ufficio, tutte le attività precedentemente incluse nell&#39;elenco A-do rimangono tali e non vengono inoltrate ad altri utenti.
 
-### Impostazione delle preferenze dell&#39;ufficio {#set-out-of-office-preferences}
+### Impostare le preferenze fuori sede {#set-out-of-office-preferences}
 
-1. Fate clic su **Preferenze** e fate clic su **Fuori sede**.
+1. Fare clic su **Preferenze** e fare clic su **Fuori sede**.
 1. Per specificare quando non si è in ufficio, effettuare una delle seguenti operazioni:
 
-   * Per specificare di essere fuori ufficio ora per un periodo di tempo indeterminato, nell&#39;elenco **Sono attualmente** selezionato **Fuori sede** ma non aggiungere un intervallo di date.
-   * Per specificare una data e un&#39;ora di inizio in cui non si è in ufficio e fare clic su &#39;+&#39; per **la pianificazione** fuori sede. Utilizzare l&#39;elenco calendario e ora per specificare la data e l&#39;ora di inizio. Se non si specifica una data e un&#39;ora di fine, si viene considerati fuori ufficio a tempo indeterminato dalla data e dall&#39;ora di inizio fino a quando non si modificano le preferenze.
+   * Per specificare di essere fuori ufficio ora per un periodo di tempo indeterminato, nell&#39;elenco **Sono attualmente**, selezionare **Fuori sede** ma non aggiungere un intervallo di date.
+   * Per specificare una data e un&#39;ora di inizio in cui si è fuori ufficio e fare clic su &#39;+&#39; per **Programma fuori sede**. Utilizzare l&#39;elenco calendario e ora per specificare la data e l&#39;ora di inizio. Se non si specifica una data e un&#39;ora di fine, si viene considerati fuori ufficio a tempo indeterminato dalla data e dall&#39;ora di inizio fino a quando non si modificano le preferenze.
 
-1. Per specificare come devono essere gestite le attività per impostazione predefinita, selezionare una delle seguenti opzioni in **Quando fuori dall&#39;ufficio: Utente predefinito per l&#39;elenco delle attività** fuori sede:
+1. Per specificare come devono essere gestite le attività per impostazione predefinita, selezionare una delle seguenti opzioni dal menu **Quando fuori dall&#39;ufficio: Utente predefinito per le attività fuori sede** elenco:
 
-   * Selezionare **Non assegnare** per mantenere le attività nell&#39;elenco A-do fino al ritorno.
-   * Selezionate **Trova utente** per cercare un utente a cui assegnare le attività. Quando selezionate un utente, potete anche visualizzarne la pianificazione fuori ufficio.
+   * Selezionare **Non assegnare** per mantenere le attività nell&#39;elenco A fino al ritorno.
+   * Selezionare **Trova utente** per cercare un utente a cui assegnare le attività. Quando selezionate un utente, potete anche visualizzarne la pianificazione fuori ufficio.
 
-1. Per impostare le eccezioni al valore predefinito, fare clic su + per Eccezioni **di** processo, selezionare il processo per cui creare un&#39;eccezione, quindi selezionare un altro utente o selezionare **Non assegnare** dall&#39;elenco **è assegnato** .
+1. Per impostare le eccezioni al valore predefinito, fare clic su + per **Eccezioni processo**, selezionare il processo per cui creare un&#39;eccezione, quindi selezionare un altro utente o selezionare **Non assegnare** dall&#39;elenco **è assegnato a**.
 
    >[!NOTE]
    >
    >Il progettista di processi può specificare che le attività di alcuni processi vengono sempre mantenute private e non inoltrate ad altri utenti. Questa impostazione sostituisce tutte le impostazioni che avete creato.
 
-1. Al termine, fate clic su **Salva**. Se le impostazioni indicano che al momento siete fuori ufficio, le modifiche avranno effetto immediatamente. In caso contrario, hanno effetto alla data e all&#39;ora di inizio specificate. Se accedete mentre siete fuori dall&#39;ufficio, non sarete considerati in ufficio finché non cambiate le impostazioni.
+1. Al termine dell&#39;impostazione delle preferenze, fare clic su **Salva**. Se le impostazioni indicano che al momento siete fuori ufficio, le modifiche avranno effetto immediatamente. In caso contrario, hanno effetto alla data e all&#39;ora di inizio specificate. Se accedete mentre siete fuori dall&#39;ufficio, non sarete considerati in ufficio finché non cambiate le impostazioni.
 
