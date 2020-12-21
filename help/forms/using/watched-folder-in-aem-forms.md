@@ -27,9 +27,9 @@ Per creare una cartella esaminata nel file system è possibile utilizzare uno de
 
 * Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`
 
-   La `MyWatchedFolder`cartella non esiste.  AEM Forms tenta di creare la cartella nel percorso specificato.
+   La cartella `MyWatchedFolder`non esiste,  AEM Forms tenta di creare la cartella nel percorso specificato.
 
-* Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](#watchedfolderproperties)esaminate.
+* Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere [Proprietà cartella esaminata](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
    * `inputProcessorId`
    * `outputFilePattern`
 
-   Per un elenco completo delle proprietà supportate, consultate Proprietà delle cartelle [esaminate](#watchedfolderproperties).
+   Per un elenco completo delle proprietà supportate, vedere [Proprietà cartella esaminata](#watchedfolderproperties).
 
-1. Fate clic su **Salva tutto**. Dopo la creazione del nodo e il salvataggio delle proprietà. Le `input`, `result`, `failure``preserve`e `stage`le cartelle vengono create nel percorso specificato nella `folderPath` proprietà.
+1. Fare clic su **Salva tutto**. Dopo la creazione del nodo e il salvataggio delle proprietà. Le cartelle `input`, `result`, `failure`, `preserve` e `stage`vengono create nel percorso specificato nella proprietà `folderPath`.
 
    Il processo di scansione avvia la scansione della cartella esaminata a un intervallo di tempo definito.
 
@@ -85,40 +85,40 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
    >
    >Se il server che ospita la cartella esaminata non dispone della modalità di esecuzione specificata, la cartella esaminata viene sempre attivata indipendentemente dalle modalità di esecuzione sul server.
 
-* **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file. [Il pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) di file e cartelle può anche specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
+* **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file. [Il ](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pattern di file e cartelle può anche specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
 
 * **stageFileExpirationDuration (Long, default -1)**: Il numero di secondi di attesa prima che un file o una cartella di input già prelevato per l’elaborazione venga considerato come se fosse scaduto e contrassegnato come un errore. Questo meccanismo di scadenza si attiva solo quando il valore di questa proprietà è un numero positivo.
 
-   **Nota:** *Anche quando un input è contrassegnato come timeout utilizzando questo meccanismo, potrebbe essere ancora in fase di elaborazione in background ma richiede solo più tempo del previsto. Se il contenuto di input è stato utilizzato prima dell&#39;avvio del meccanismo di timeout, l&#39;elaborazione potrebbe persino procedere al completamento in un secondo momento e l&#39;output potrebbe essere scaricato nella cartella dei risultati. Se il contenuto non è stato consumato prima del timeout, è molto probabile che l&#39;elaborazione si errori più tardi quando si tenta di consumare il contenuto, e questo errore verrà anche registrato nella cartella degli errori per lo stesso input. D&#39;altro canto, se l&#39;elaborazione per l&#39;input non si è mai attivata a causa di un errore di processo/flusso di lavoro intermittente (ovvero lo scenario a cui punta il meccanismo di scadenza), non si verificherà nessuna di queste due eventualità. Di conseguenza, per tutte le voci nella cartella degli errori contrassegnate come errori a causa di un timeout (cercate i messaggi del modulo &quot;File non elaborato dopo un periodo di tempo significativo, contrassegnando come errore!&quot; nel registro degli errori, è consigliabile analizzare la cartella dei risultati (e anche la cartella degli errori stessa per un&#39;altra voce per lo stesso input) per verificare se si sono verificati alcuni degli eventi precedentemente descritti.*
+   **Nota:** *Anche quando un input è contrassegnato come timeout utilizzando questo meccanismo, potrebbe essere ancora in corso l&#39;elaborazione in background ma richiede solo più tempo del previsto. Se il contenuto di input è stato utilizzato prima dell&#39;avvio del meccanismo di timeout, l&#39;elaborazione potrebbe persino procedere al completamento in un secondo momento e l&#39;output potrebbe essere scaricato nella cartella dei risultati. Se il contenuto non è stato consumato prima del timeout, è molto probabile che l&#39;elaborazione si errori più tardi quando si tenta di consumare il contenuto, e questo errore verrà anche registrato nella cartella degli errori per lo stesso input. D&#39;altro canto, se l&#39;elaborazione per l&#39;input non si è mai attivata a causa di un errore di processo/flusso di lavoro intermittente (ovvero lo scenario a cui punta il meccanismo di scadenza), non si verificherà nessuna di queste due eventualità. Di conseguenza, per tutte le voci nella cartella degli errori contrassegnate come errori a causa di un timeout (cercate i messaggi del modulo &quot;File non elaborato dopo un periodo di tempo significativo, contrassegnando come errore!&quot; nel registro degli errori, è consigliabile analizzare la cartella dei risultati (e anche la cartella degli errori stessa per un&#39;altra voce per lo stesso input) per verificare se si sono verificati alcuni degli eventi precedentemente descritti.*
 
 * 
-* **deleteExpiredStageFileOnlyWhenThrottled (booleano, valore predefinito true):** Indica se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di orologi limitate in quanto un numero limitato di file che si trovano in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) ha il potenziale di soffocare l&#39;elaborazione per l&#39;intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (impostazione predefinita), il meccanismo di scadenza non si attiva per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo si attiva sempre che la proprietà stageFileExpirationDuration sia un numero positivo.
+* **deleteExpiredStageFileOnlyWhenThrottled (booleano, impostazione predefinita true):** se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di orologi limitate in quanto un numero limitato di file che si trovano in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) ha il potenziale di soffocare l&#39;elaborazione per l&#39;intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (impostazione predefinita), il meccanismo di scadenza non si attiva per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo si attiva sempre che la proprietà stageFileExpirationDuration sia un numero positivo.
 
 * **pollInterval (Long)**: L&#39;intervallo in secondi per la scansione della cartella esaminata per l&#39;input. A meno che l’impostazione Limita non sia abilitata, l’intervallo di sondaggio deve essere più lungo del tempo necessario per elaborare un processo medio; in caso contrario, il sistema potrebbe sovraccaricarsi. Il valore predefinito è 5. Per ulteriori informazioni, consultate la descrizione per Dimensione batch. Il valore dell&#39;intervallo polling deve essere maggiore o uguale a uno.
-* **excludeFilePattern (String)**: un punto e virgola **;** elenco delimitato di pattern utilizzati da una cartella esaminata per determinare i file e le cartelle da analizzare e acquisire. Qualsiasi file o cartella con questo pattern non viene sottoposto a scansione per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella esaminata. Ciò impedisce alla cartella esaminata di acquisire una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
+* **excludeFilePattern (String)**: Un punto e virgola  **;** delimitato da un elenco di pattern utilizzati da una cartella esaminata per determinare quali file e cartelle eseguire la scansione e prelevare. Qualsiasi file o cartella con questo pattern non viene sottoposto a scansione per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella esaminata. Ciò impedisce alla cartella esaminata di acquisire una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
 
-   È possibile utilizzare i pattern [di](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) file per escludere:
+   È possibile utilizzare [pattern di file](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
 
    * file con specifiche estensioni di file; ad esempio, &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * File con nomi specifici; ad esempio data&amp;ast; escluderebbe file e cartelle denominati data1, data2 e così via.
    * File con espressioni composite nel nome e nell&#39;estensione, come negli esempi seguenti:
 
-      * Data[0-9][0-9][0-9].[dD][aA][tT]
-      * &amp;ast;.[dD][A][Tt]
+      * Data[0-9][0-9][0-9].[dD][a][tT]
+      * &amp;ast;.[dD][Aa][Tt]
       * &amp;ast;.[Xx][Mm][Ll]
 
-Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)di file.
+Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (String)**: un punto e virgola **;** elenco delimitato di pattern utilizzati dalla cartella esaminata per determinare le cartelle e i file da analizzare e acquisire. Ad esempio, se IncludeFilePattern è input&amp;ast;, tutti i file e le cartelle che corrispondono a input&amp;ast; vengono prese. Sono inclusi file e cartelle denominati input1, input2 e così via. Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle. È possibile utilizzare i pattern di file per includere:
+* **includeFilePattern (String)**: Un punto e virgola  **;** delimitato da un elenco di pattern utilizzati dalla cartella esaminata per determinare quali cartelle e file eseguire la scansione e il prelievo. Ad esempio, se IncludeFilePattern è input&amp;ast;, tutti i file e le cartelle che corrispondono a input&amp;ast; vengono prese. Sono inclusi file e cartelle denominati input1, input2 e così via. Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle. È possibile utilizzare i pattern di file per includere:
 
    * file con specifiche estensioni di file; ad esempio, &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * File con nomi specifici; ad esempio, data.&amp;ast; includerebbe file e cartelle denominati data1, data2 e così via.
 
 * File con espressioni composite nel nome e nell&#39;estensione, come negli esempi seguenti:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][a][tT]
 
-      * &amp;ast;.[dD][A][Tt]
+      * &amp;ast;.[dD][Aa][Tt]
       * &amp;ast;.[Xx][Mm][Ll]
 
 Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
@@ -144,14 +144,14 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
 
    Ad esempio, se il numero è alle 20 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati è C:/Test/WF0/failure/2009/07/17/20
 
-   Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella esaminata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella esaminata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)di file.
+   Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella esaminata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella esaminata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
 >Più piccole sono le dimensioni delle cartelle dei risultati, migliore sarà l&#39;esecuzione della cartella esaminata. Ad esempio, se il carico stimato per la cartella esaminata è di 1000 file ogni ora, provate un pattern come risultato/%Y%M%D%H in modo che venga creata una nuova sottocartella ogni ora. Se il carico è minore (ad esempio, 1000 file al giorno), è possibile utilizzare un pattern come risultato/%Y%M%D.
 
 * **failureFolderName (String)**: La cartella in cui vengono salvati i file di errore. Questa posizione è sempre relativa alla cartella esaminata. È possibile utilizzare i pattern di file, come descritto per Cartella risultati. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. Il valore predefinito è failure/%Y/%M/%D/.
-* **preserveFolderName (String):** Posizione in cui i file vengono memorizzati dopo l’elaborazione. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i pattern di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
+* **preserveFolderName (String):** il percorso in cui i file vengono memorizzati dopo l’elaborazione. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i pattern di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
 * **batchSize (Long)**: Numero di file o cartelle da raccogliere per scansione. utilizzare per evitare un sovraccarico del sistema; la scansione di troppi file alla volta può causare un arresto anomalo. Il valore predefinito è 2.
 
    Le impostazioni Intervallo sondaggio e Dimensione batch determinano quanti file vengono raccolti da Cartella esaminata in ogni scansione. Cartella esaminata utilizza un pool di thread Quartz per eseguire la scansione della cartella di input. Il pool di thread è condiviso con altri servizi. Se l’intervallo di scansione è ridotto, i thread eseguono spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella esaminata, è necessario mantenere l&#39;intervallo di scansione ridotto. Se i file vengono omessi raramente, usate un intervallo di scansione maggiore in modo che gli altri servizi possano usare i thread.
@@ -172,17 +172,17 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
 >Per impostazione predefinita, i flussi di lavoro sono asincroni. Anche se impostate il valore su false, i flussi di lavoro vengono avviati in modalità asincrona.
 
 * **enabled (Boolean)**: Disattiva e attiva la scansione per una cartella esaminata. Impostato enabled su true, per avviare la scansione della cartella esaminata. Il valore predefinito è true.
-* **payloadMapperFilter**: Quando una cartella è configurata come cartella esaminata, viene creata una struttura di cartelle all’interno della cartella esaminata. La struttura dispone di cartelle per fornire input, ricevere output (risultati), salvare i dati per gli errori, conservare i dati per i processi di lunga durata e salvare i dati per le varie fasi. La struttura di cartelle di una cartella esaminata può fungere da payload di flussi di lavoro Forms incentrati su di essa. Un mappatore payload consente di definire la struttura di un payload che utilizza una cartella esaminata per l&#39;input, l&#39;output e l&#39;elaborazione. Ad esempio, se utilizzate il mappatore predefinito, viene mappato il contenuto della cartella esaminata con la cartella [payload]\input e [payload]\output. Sono disponibili due implementazioni di payload mapper out-of-the-box. Se non disponete [di un&#39;implementazione](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)personalizzata, utilizzate un&#39;implementazione standard:
+* **payloadMapperFilter**: Quando una cartella è configurata come cartella esaminata, viene creata una struttura di cartelle all’interno della cartella esaminata. La struttura dispone di cartelle per fornire input, ricevere output (risultati), salvare i dati per gli errori, conservare i dati per i processi di lunga durata e salvare i dati per le varie fasi. La struttura di cartelle di una cartella esaminata può fungere da payload di flussi di lavoro Forms incentrati su di essa. Un mappatore payload consente di definire la struttura di un payload che utilizza una cartella esaminata per l&#39;input, l&#39;output e l&#39;elaborazione. Ad esempio, se utilizzate il mappatore predefinito, viene mappato il contenuto della cartella esaminata con la cartella [payload]\input e [payload]\output. Sono disponibili due implementazioni di payload mapper out-of-the-box. Se non disponete di [un&#39;implementazione personalizzata](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizzate un&#39;implementazione out-of-the-box:
 
-   * **Mapper predefinito:** Usate il mappatore payload predefinito per mantenere il contenuto di input e output delle cartelle esaminate in cartelle di input e output separate nel payload. Inoltre, nel percorso di payload di un flusso di lavoro, utilizzate i percorsi [payload]/input/ e [payload]/output per recuperare e salvare il contenuto.
-   * **Semplice mappatore di payload basato su file:** Utilizzate il mappatore di payload basato su file semplice per mantenere i contenuti di input e output direttamente nella cartella payload. Non crea alcuna gerarchia aggiuntiva, come il mappatore predefinito.
+   * **Mappatore predefinito:** utilizzate il mapping payload predefinito per mantenere il contenuto di input e output delle cartelle esaminate in cartelle di input e output separate nel payload. Inoltre, nel percorso di payload di un flusso di lavoro, utilizzate i percorsi [payload]/input/ e [payload]/output per recuperare e salvare il contenuto.
+   * **Mappatore di payload semplice basato su file:** utilizzate il mappatore di payload semplice basato su file per mantenere i contenuti di input e output direttamente nella cartella payload. Non crea alcuna gerarchia aggiuntiva, come il mappatore predefinito.
 
 ### Parametri di configurazione personalizzati {#custom-configuration-parameters}
 
 Insieme alle proprietà di configurazione delle cartelle esaminate elencate sopra, potete anche specificare parametri di configurazione personalizzati. I parametri personalizzati vengono passati al codice di elaborazione del file. Consente al codice di modificarne il comportamento in base al valore del parametro. Per specificare un parametro:
 
 1. Accedete a CRXDE-Lite e andate al nodo di configurazione della cartella esaminata.
-1. Aggiungete un parametro di proprietà.&lt;nome_proprietà> al nodo di configurazione della cartella esaminata. Il tipo della proprietà può essere solo booleano, data, decimale, Double, Long e String. È possibile specificare proprietà singole e multivalore.
+1. Aggiungete un parametro di proprietà.&lt;property_name> al nodo di configurazione della cartella esaminata. Il tipo della proprietà può essere solo booleano, data, decimale, Double, Long e String. È possibile specificare proprietà singole e multivalore.
 
 **Nota:** *Se il tipo di dati della proprietà è Double, specificare un punto decimale nel valore di tali proprietà. Per tutte le proprietà, in cui il tipo di dati è Double e nel valore non è specificato alcun separatore decimale, il tipo è convertito in Long. *
 
@@ -198,7 +198,7 @@ Potete creare variabili mutevoli per i metodi di elaborazione dei file basati su
 
 1. Accedete a CRXDE-Lite e andate al nodo di configurazione della cartella esaminata.
 
-1. Aggiungere una proprietà workflow.var.&lt;nome_variabile> al nodo di configurazione della cartella esaminata.
+1. Aggiungere una proprietà workflow.var.&lt;variable_name> al nodo di configurazione della cartella esaminata.
 
    Il tipo della proprietà può essere solo booleano, data, decimale, Double, Long e String. Sono inoltre supportate le proprietà multivalore. Per le proprietà con più valori, il valore disponibile per il passaggio del flusso di lavoro è un array di tipo specificato.
 
@@ -212,17 +212,18 @@ Potete creare variabili mutevoli per i metodi di elaborazione dei file basati su
 
 ![custom-configuration-parameters2](assets/custom-configuration-parameters2.png)
 
-## Vari metodi per l’elaborazione dei file {#variousmethodsforprocessingfiles}
+## Vari metodi per l&#39;elaborazione dei file {#variousmethodsforprocessingfiles}
 
 È possibile avviare un flusso di lavoro, un servizio o uno script per elaborare i documenti posizionati in una cartella di controllo.
 
 ### Utilizzo di un servizio per elaborare i file di una cartella esaminata   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
-Un servizio è un&#39;implementazione personalizzata dell&#39; `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaccia. È registrato con OSGi insieme ad alcune proprietà personalizzate. Le proprietà personalizzate dell&#39;implementazione lo rendono unico e aiutano a identificare l&#39;implementazione.
+Un servizio è un&#39;implementazione personalizzata dell&#39;interfaccia `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. È registrato con OSGi insieme ad alcune proprietà personalizzate. Le proprietà personalizzate dell&#39;implementazione lo rendono unico e aiutano a identificare l&#39;implementazione.
 
 #### Implementazione personalizzata dell&#39;interfaccia ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-L&#39;implementazione personalizzata accetta un contesto di elaborazione (un oggetto di tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), legge i documenti di input e i parametri di configurazione dal contesto, elabora gli input e aggiunge l&#39;output al contesto. ProcessorContext dispone delle seguenti API:
+L&#39;implementazione personalizzata accetta un contesto di elaborazione (un oggetto di tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), legge i documenti di input e i parametri di configurazione dal contesto, elabora gli input e aggiunge l&#39;output al
+context. ProcessorContext dispone delle seguenti API:
 
 * **getWatchFolderId**: Restituisce l’ID della cartella esaminata.
 * **getInputMap**: Restituisce una mappa di tipo Mappa. Le chiavi della mappa sono il nome del file di input e un oggetto documento contenente il contenuto del file. Utilizzate l&#39;API getInputMap per leggere i file di input.
@@ -238,9 +239,9 @@ Ad esempio, il codice seguente è un&#39;implementazione personalizzata dell&#39
 public class OutputWriter implements ContentProcessor {
 ```
 
-Durante la [configurazione di una cartella](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)esaminata, se si specifica la proprietà inputProcessorId come (foo=bar) e la proprietà inputProcessorType come Service, il servizio di cui sopra (implementazione personalizzata) viene utilizzato per elaborare i file di input della cartella esaminata.
+Durante la [configurazione di una cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), se si specifica la proprietà inputProcessorId come (foo=bar) e la proprietà inputProcessorType come Service, il servizio sopra menzionato (implementazione personalizzata) viene utilizzato per elaborare i file di input della cartella esaminata.
 
-L&#39;esempio seguente è anche un&#39;implementazione personalizzata dell&#39;interfaccia ContentProcessor. Nell&#39;esempio, il Servizio accetta i file di input, copia i file in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto document viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo [di configurazione Cartella](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)esaminata.
+L&#39;esempio seguente è anche un&#39;implementazione personalizzata dell&#39;interfaccia ContentProcessor. Nell&#39;esempio, il Servizio accetta i file di input, copia i file in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto document viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 ```java
 @Component(immediate = true)
@@ -267,7 +268,7 @@ Gli script sono il codice personalizzato di reclamo ECMAScript scritto per elabo
 * **getConfigParameters**: Restituisce una mappa immutabile di tipo Mappa. La mappa contiene i parametri di configurazione di una cartella esaminata.
 * **setResult**: L&#39;implementazione di ContentProcessor utilizza l&#39;API per scrivere il documento di output nella cartella dei risultati. Potete fornire un nome per il file di output all&#39;API setResult. L&#39;API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output/del pattern di file specificato. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
 
-Di seguito è riportato un esempio di ECMAScript. Accetta i file di input, copia i file in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto document viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo [di configurazione Cartella](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)esaminata.
+Di seguito è riportato un esempio di ECMAScript. Accetta i file di input, copia i file in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto document viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 >[!NOTE]
 >
@@ -282,13 +283,13 @@ entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
-#### Posizione degli script e considerazioni sulla sicurezza {#location-of-scripts-and-security-considerations}
+#### Posizione degli script e considerazioni relative alla protezione {#location-of-scripts-and-security-considerations}
 
 Per impostazione predefinita, viene fornita una cartella contenitore (/etc/fd/watchfolder/scripts) in cui i clienti possono inserire i propri script, e l&#39;utente predefinito del servizio utilizzato dal framework delle cartelle di controllo dispone delle autorizzazioni necessarie per la lettura degli script da questa posizione.
 
 Se si intende posizionare gli script in una posizione personalizzata, è probabile che l&#39;utente predefinito del servizio non disponga delle autorizzazioni di lettura sulla posizione personalizzata. Per tale scenario, eseguire le operazioni seguenti per fornire le autorizzazioni necessarie al percorso personalizzato:
 
-1. Creare un utente del sistema a livello di programmazione o tramite la console `https://[server]:[port]/crx/explorer`. Potete anche utilizzare un utente di sistema esistente. È importante lavorare con gli utenti del sistema al posto dei normali utenti.
+1. Creare un utente di sistema a livello di programmazione o tramite la console `https://[server]:[port]/crx/explorer`. Potete anche utilizzare un utente di sistema esistente. È importante lavorare con gli utenti del sistema al posto dei normali utenti.
 1. Fornire le autorizzazioni di lettura all&#39;utente di sistema appena creato o esistente nel percorso personalizzato in cui sono memorizzati gli script. Potete avere più posizioni personalizzate. Fornite almeno le autorizzazioni di lettura a tutte le posizioni personalizzate.
 1. Nella console di configurazione Felix (/system/console/configMgr), individuate la mappatura utente del servizio per le cartelle di controllo. Questa mappatura è simile a &#39;Mapping: adobe-aemds-core-watch-folder=...&quot;.
 1. Fate clic sulla mappatura. Per la voce &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39;, impostate fd-service sull’ID dell’utente del sistema personalizzato. Fate clic su Salva.
@@ -308,7 +309,7 @@ I flussi di lavoro consentono di automatizzare le attività  Experience Manager.
 
 Per elaborare i file utilizzando i flussi di lavoro, effettuate le seguenti operazioni:
 
-1. Creare un&#39;implementazione dell&#39; `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` interfaccia. È simile all&#39;implementazione creata per un servizio.
+1. Creare un&#39;implementazione dell&#39;interfaccia `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor`. È simile all&#39;implementazione creata per un servizio.
 
    >[!NOTE]
    >
@@ -332,7 +333,7 @@ L&#39;argomento di processWorkflowContext() è un oggetto di tipo com.adobe.aemf
 * getMetadata: Restituisce il valore della variabile Metadati. Le variabili vengono passate al metodo WorkflowContextService.execute().
 * getCommittingVariables: Restituisce una mappa oggetto di sola lettura che rappresenta le variabili impostate dai passaggi precedenti. Se una variabile non viene modificata in nessuno dei passaggi precedenti, viene restituito il valore predefinito specificato durante la configurazione della cartella esaminata.
 * getCommittingResults: Restituisce una mappa documento di sola lettura. La mappa rappresenta i file di output generati dai passaggi precedenti.
-* setVariable: L’implementazione WorkflowContextProcessor utilizza la variabile per manipolare le variabili che rappresentano i dati dinamici personalizzati che fluiscono tra i passaggi. Il nome e il tipo delle variabili sono identici al nome delle variabili specificate durante la [configurazione della cartella](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)esaminata. Per modificare il valore di una variabile, invoca l’API setVariable con un valore non nullo. Per rimuovere una variabile, chiamate setVariable() con un valore null.
+* setVariable: L’implementazione WorkflowContextProcessor utilizza la variabile per manipolare le variabili che rappresentano i dati dinamici personalizzati che fluiscono tra i passaggi. Il nome e il tipo delle variabili sono identici al nome delle variabili specificate durante la [configurazione della cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Per modificare il valore di una variabile, invoca l’API setVariable con un valore non nullo. Per rimuovere una variabile, chiamate setVariable() con un valore null.
 
 Sono inoltre disponibili le seguenti API di ProcessorContext:
 
@@ -398,11 +399,11 @@ Se la struttura di un payload è diversa dalla struttura della cartella esaminat
 
 #### Creazione di un filtro mappatore payload personalizzato {#creating-a-custom-payload-mapper-filter}
 
-1. Scarica [SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar)client Adobe.
+1. Scarica [ Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Imposta l’SDK del client nel percorso di creazione del progetto basato su server. Per iniziare, puoi scaricare e aprire il seguente progetto basato sul cielo nell’IDE di tua scelta.
-1. Modificate il codice del filtro di mappatura del payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
+1. Modificate il codice del filtro di mappatura payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
 1. Utilizzate maven per creare un bundle del filtro Payload Mapper personalizzato.
-1. Utilizzate [AEM console](http://localhost:4502/system/console/bundles) bundle per installare il bundle.
+1. Utilizzate la console [AEM bundle](http://localhost:4502/system/console/bundles) per installare il bundle.
 
    Ora, il filtro Payload Mapper personalizzato è elencato AEM&#39;interfaccia utente delle cartelle esaminate. Puoi usarlo con il tuo flusso di lavoro.
 
@@ -498,25 +499,25 @@ Se il processo contiene più di un file di input, l’utente deve creare una car
 
 ### Informazioni sulla limitazione {#about-throttling}
 
-Quando la limitazione è abilitata per l’endpoint di una cartella di controllo, limita il numero di processi di cartelle esaminate elaborati in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch, anch’esso configurabile nell’endpoint Cartella esaminata. Quando viene raggiunto il limite di limitazione, i documenti in entrata nella directory di input della cartella esaminata non vengono sottoposti a polling. Il documento rimane anche nella directory di input fino al completamento di altri processi delle cartelle esaminate e all’esecuzione di un altro tentativo di sondaggio. Per l’elaborazione sincrona, tutti i processi elaborati in un singolo sondaggio vengono conteggiati verso il limite di limitazione, anche se i processi vengono elaborati consecutivamente in un singolo thread.
+Quando la limitazione è abilitata per l’endpoint di una cartella di controllo, limita il numero di processi di cartelle esaminate elaborati in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch, anch’esso configurabile nell’endpoint Cartella esaminata. Quando viene raggiunto il limite di limitazione, i documenti in entrata nella directory di input della cartella esaminata non vengono sottoposti a polling. Il documento rimane anche nella directory di input fino al completamento di altri processi delle cartelle esaminate e al successivo tentativo di sondaggio. Per l’elaborazione sincrona, tutti i processi elaborati in un singolo sondaggio vengono conteggiati verso il limite di limitazione, anche se i processi vengono elaborati consecutivamente in un singolo thread.
 
 >[!NOTE]
 >
 >La limitazione non viene ridimensionata con un cluster. Quando la limitazione è attivata, il cluster nel suo insieme non elaborerà più del numero di processi specificato in Dimensione batch in un dato momento. Questo limite è a livello di cluster e non è specifico per ciascun nodo del cluster. Ad esempio, con una dimensione batch pari a 2, il limite di limitazione potrebbe essere raggiunto con un singolo nodo che elabora due processi, e nessun altro nodo eseguirebbe il polling della directory di input fino al completamento di uno dei processi.
 
-#### Come funziona la limitazione {#how-throttling-works}
+#### Funzionamento della limitazione {#how-throttling-works}
 
 Cartella esaminata analizza la cartella di input in ogni intervallo poll, rileva il numero di file specificato in Dimensione batch e richiama il servizio di destinazione per ciascuno di questi file. Ad esempio, se la dimensione del batch è quattro, ad ogni scansione, la cartella esaminata raccoglie quattro file, crea quattro richieste di chiamata e richiama il servizio di destinazione. Prima del completamento di queste richieste, se viene richiamata la cartella esaminata, vengono avviati di nuovo quattro processi, indipendentemente dal fatto che i quattro processi precedenti siano stati completati o meno.
 
 La limitazione impedisce alla cartella esaminata di richiamare nuovi processi quando i processi precedenti non sono completati. La cartella esaminata rileva i processi in corso ed elabora i nuovi processi in base alle dimensioni del batch meno i processi in corso. Ad esempio, nella seconda chiamata, se il numero di processi completati è di soli tre e un processo è ancora in corso, Cartella esaminata richiama solo altri tre processi.
 
 * La cartella esaminata si basa sul numero di file presenti nella cartella dell’area di visualizzazione per verificare quanti processi sono in corso. Se i file non vengono elaborati nella cartella dell’area di visualizzazione, la cartella esaminata non esegue altri processi. Ad esempio, se la dimensione del batch è pari a quattro e tre processi sono in stallo, Cartella osservata richiama un solo processo nelle chiamate successive. Esistono diversi scenari in cui i file possono rimanere non elaborati nella cartella dell’area di visualizzazione. Quando i processi vengono bloccati, l’amministratore può terminare il processo nella pagina di amministrazione di Process Management in modo che la cartella esaminata sposta i file fuori dalla cartella dell’area di visualizzazione.
-* Se il server AEM Forms  va giù prima che la cartella esaminata invoca i processi, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se il server AEM Forms  è in esecuzione ma la cartella esaminata non è in esecuzione quando il servizio Job Manager effettua una nuova chiamata, che si verifica quando i servizi non vengono avviati nella sequenza ordinata, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se il server AEM Forms  va giù prima che la cartella esaminata invoca i processi, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere [Punti di errore e ripristino](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se il server AEM Forms  è in esecuzione ma la cartella esaminata non è in esecuzione quando il servizio Job Manager effettua una nuova chiamata, che si verifica quando i servizi non vengono avviati nella sequenza ordinata, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere [Punti di errore e ripristino](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
-### Punti di errore e ripristino di punti di errore e ripristino {#failure-points-and-recoveryfailure-points-and-recovery}
+### Punti di errore e punti di ripristino e ripristino {#failure-points-and-recoveryfailure-points-and-recovery}
 
-In ogni evento del sondaggio, Cartella osservata blocca la cartella di input, sposta i file che corrispondono al pattern di file include nella cartella dell’area di visualizzazione, quindi sblocca la cartella di input. Il blocco è necessario in modo che due thread non raccolgano lo stesso set di file ed elaborino due volte. Le possibilità che ciò accada aumentano con un piccolo intervallo di poll e una dimensione batch elevata. Dopo aver spostato i file nella cartella dell’area di visualizzazione, la cartella di input viene sbloccata in modo che altri thread possano eseguire la scansione della cartella. Questo passaggio consente di ottenere un throughput elevato perché altri thread possono eseguire la scansione mentre un thread elabora i file.
+A ogni evento di sondaggio, Cartella osservata blocca la cartella di input, sposta i file che corrispondono al pattern di file include nella cartella dell’area di visualizzazione, quindi sblocca la cartella di input. Il blocco è necessario in modo che due thread non raccolgano lo stesso set di file ed elaborino due volte. Le possibilità che ciò accada aumentano con un piccolo intervallo di poll e una dimensione batch elevata. Dopo aver spostato i file nella cartella dell’area di visualizzazione, la cartella di input viene sbloccata in modo che altri thread possano eseguire la scansione della cartella. Questo passaggio consente di ottenere un throughput elevato perché altri thread possono eseguire la scansione mentre un thread elabora i file.
 
 Dopo aver spostato i file nella cartella dell’area di visualizzazione, vengono create richieste di chiamata per ciascun file e viene richiamato il servizio di destinazione. In alcuni casi la cartella esaminata non è in grado di recuperare i file nella cartella dell’area di visualizzazione:
 
@@ -564,8 +565,8 @@ Gli amministratori possono specificare il tipo di file che può richiamare un se
 * File con nomi specifici; ad esempio, data.&amp;ast;
 * File con espressioni composite nel nome e nell&#39;estensione, come negli esempi seguenti:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * &amp;ast;.[dD][A][Tt]
+   * Data[0-9][0-9][0-9].[dD][a][tT]
+   * &amp;ast;.[dD][Aa][Tt]
    * &amp;ast;.[Xx][Mm][Ll]
 
 * L&#39;amministratore può definire il pattern di file della cartella di output in cui memorizzare i risultati. Per le cartelle di output (risultato, mantenimento e errore), l’amministratore può specificare uno dei seguenti pattern di file:
@@ -599,7 +600,7 @@ Per configurare una cartella esaminata con PDF Generator, effettuate le seguenti
 1. [Creazione di un flusso di lavoro](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Configurare la cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### Creare un ECMAScript {#create-an-ecmascript}
+### Creare uno script ECMAS {#create-an-ecmascript}
 
 ECMAScript utilizza l’API createPDF di PDF Generator per convertire i documenti Microsoft Word (.docx) in documenti PDF. Per creare lo script, effettuare le operazioni seguenti:
 
@@ -634,13 +635,13 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 1. Salvate e chiudete il file.
 
-### Creazione di un flusso di lavoro {#create-a-workflow}
+### Crea un flusso di lavoro {#create-a-workflow}
 
 1. Aprite AEM&#39;interfaccia utente Workflow in una finestra del browser.
 
-   https://[nomeserver]:[porta]/flusso di lavoro
+   https://[nomeserver]:[porta]/workflow
 
-1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificate **Titolo** e fate clic su **OK**.
+1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificare **Titolo** e fare clic su **OK**.
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
@@ -650,9 +651,9 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
-1. Fare clic con il pulsante destro del mouse sul passo Processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
+1. Fare clic con il pulsante destro del mouse sul passaggio del processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
 
-1. Nella scheda Processo, selezionare ECMAScript. Ad esempio, lo script pdfg-openOffice-sample.ecma creato in [Create a ECMAScript](#p-create-an-ecmascript-p). Attivate l&#39;opzione **Avanzamento** gestore e fate clic su **OK**.
+1. Nella scheda Processo, selezionare ECMAScript. Ad esempio, lo script pdfg-openOffice-sample.ecma creato in [Create a ECMAScript](#p-create-an-ecmascript-p). Abilitare l&#39;opzione **Handler Advance** e fare clic su **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
@@ -673,7 +674,7 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
    * inputProcessorId (String): Il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. In questo esempio, il valore della proprietà inputProcessorType è workflow. Pertanto, per la proprietà inputProcessorId specificare il seguente percorso del flusso di lavoro PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
-   Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per un elenco completo e una descrizione delle proprietà facoltative, consultate Proprietà [cartella](#watchedfolderproperties)esaminate.
+   Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per un elenco completo e una descrizione delle proprietà facoltative, vedere [Proprietà cartella esaminata](#watchedfolderproperties).
 
 ## Utilizzo di Central Migration Bridge (obsoleto) con una cartella esaminata {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -685,7 +686,7 @@ Per configurare una cartella esaminata con PDF Generator, effettuate le seguenti
 1. [Creazione di un flusso di lavoro](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Configurare la cartella esaminata](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### Creare un ECMAScript {#create-an-ecmascript-1}
+### Creare uno script ECMAS {#create-an-ecmascript-1}
 
 ECMAScript utilizza l’API createPDF di PDF Generator per convertire i documenti Microsoft Word (.docx) in documenti PDF. Per creare lo script, effettuare le operazioni seguenti:
 
@@ -725,18 +726,18 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
    >
    >Durante la creazione del flusso di lavoro, la proprietà title viene utilizzata per individuare ECMAScript.
 
-### Creazione di un flusso di lavoro {#create-a-workflow-1}
+### Crea un flusso di lavoro {#create-a-workflow-1}
 
 1. Aprite AEM&#39;interfaccia utente Workflow in una finestra del browser. `https://[server]:[port]/workflow`
 
-1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificate **Titolo** e fate clic su **OK**.
+1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificare **Titolo** e fare clic su **OK**.
 1. Selezionate il flusso di lavoro appena creato e fate clic su **Modifica**. Il flusso di lavoro si apre in una nuova finestra.
 1. Elimina il passaggio del flusso di lavoro predefinito. Trascinare il Passaggio processo dalla barra laterale al flusso di lavoro.
 
    ![create-a-workflow-cmb](assets/create-a-workflow-cmb.png)
 
-1. Fare clic con il pulsante destro del mouse sul passo Processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
-1. Nella scheda Processo, selezionare ECMAScript. Ad esempio, cmb-mergeandprint-sample.ecma ECMAScript creato nella sezione [Crea un flusso di lavoro](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p) . Attivate l&#39;opzione **Avanzamento** gestore e fate clic su **OK**.
+1. Fare clic con il pulsante destro del mouse sul passaggio del processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
+1. Nella scheda Processo, selezionare ECMAScript. Ad esempio, cmb-mergeandprint-sample.ecma ECMAScript creato nella sezione [Crea un flusso di lavoro](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p). Abilitare l&#39;opzione **Handler Advance** e fare clic su **OK**.
 
 ### Configurare la cartella esaminata {#configure-the-watched-folder-1}
 
@@ -754,4 +755,4 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
    * **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
 
-Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per l&#39;elenco completo e la descrizione delle proprietà facoltative, consultate Proprietà [cartella](#watchedfolderproperties)esaminate.
+Oltre alle proprietà obbligatorie sopra menzionate, le cartelle esaminate supportano anche alcune proprietà facoltative. Per l&#39;elenco completo e la descrizione delle proprietà facoltative, vedere [Proprietà cartella esaminata](#watchedfolderproperties).
