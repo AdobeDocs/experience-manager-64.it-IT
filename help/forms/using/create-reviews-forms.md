@@ -26,7 +26,7 @@ Una revisione è un meccanismo che consente a uno o più revisori di inserire co
 ## Impostazione di una revisione {#setting-up-a-review}
 
 1. Passare alla scheda Forms e selezionare un modulo.
-1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Fate clic sull’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fare clic sull&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Inserite le seguenti informazioni:
 
    * Nome revisione: Obbligatorio, può contenere caratteri alfanumerici, trattini o caratteri di sottolineatura.
@@ -44,7 +44,7 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 1. A tutti i revisori viene assegnata un&#39;attività di revisione. L&#39;attività viene visualizzata nella sezione Notifiche. Un revisore può fare clic su una notifica oppure passare alla casella in entrata per visualizzare l&#39;attività. Un revisore può fare clic per aprire l&#39;attività di revisione, visualizzare il modulo e iniziare ad aggiungere commenti.
 
    ![Avviso notifica revisore](assets/noti.png)
-   **Figura:** *Avviso notifica revisore*
+   **Figura:Avviso notifica** *revisore*
 
 1. La casella dei commenti è disponibile per gli iniziatori e i revisori della risorsa. Altri possono visualizzare i commenti, ma non scrivere commenti.
 
@@ -56,9 +56,9 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 
 1. Passare alla scheda Forms e selezionare un modulo.
 
-1. Se una risorsa dispone di una revisione in corso e l’utente è l’iniziatore della revisione, nella barra delle azioni viene visualizzata un’icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Solo l&#39;iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
+1. Se una risorsa dispone di una revisione in corso e l&#39;utente è l&#39;iniziatore della revisione, nella barra delle azioni viene visualizzata l&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Solo l&#39;iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
 
-   Fate clic su Gestisci revisione ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)commenticon.
+   Fare clic sull&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Per gli utenti diversi dall&#39;iniziatore, l&#39;icona Gestisci revisione è disabilitata.
 
@@ -72,7 +72,7 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 1. Modificate i campi necessari, quindi fate clic su Aggiorna.
 
    ![Rivedere lo stato aggiornato in Task Manager](assets/tskmgr.png)
-   **Figura:** *Rivedere lo stato aggiornato in Task Manager*
+   **Figura:** *Rivedi stato aggiornato in Task Manager*
 
 1. Per terminare la revisione, fare clic su Fine.
 
