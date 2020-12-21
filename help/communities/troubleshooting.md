@@ -24,7 +24,7 @@ Questa sezione contiene le preoccupazioni comuni e i problemi noti.
 
 ## Problemi noti {#known-issues}
 
-### Recupero Dispatcher Non Riuscito {#dispatcher-refetch-fails}
+### Recupero del dispatcher non riuscito {#dispatcher-refetch-fails}
 
 Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un recupero potrebbe causare l&#39;impossibilità di ricevere la risposta dal server remoto dopo l&#39;attesa del timeout della richiesta.
 
@@ -55,7 +55,7 @@ Pertanto, qualsiasi codice che utilizza l&#39;API RelativeTimeFormat() dovrebbe 
 
 L’errore è diverso in fase di creazione e pubblicazione. L’autore non riesce in modo invisibile e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, l’errore viene visualizzato sulla pagina.
 
-Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
 ## Preoccupazioni comuni {#common-concerns}
 
@@ -63,9 +63,9 @@ Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.Relati
 
 Durante l&#39;avvio (non il primo, ma ogni altro dopo) nei registri potrebbe essere visualizzato il seguente avviso:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
 
-Questo avviso può essere ignorato in modo sicuro come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito con un AEM helper [](handlebars-helpers.md#i-n)i18n specifico. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All&#39;avvio, viene sostituito con un [helper i18n specifico AEM](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avvertenza nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
