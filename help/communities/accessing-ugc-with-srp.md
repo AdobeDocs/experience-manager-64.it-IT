@@ -22,21 +22,21 @@ ht-degree: 0%
 
 ## Informazioni su SRP {#about-srp}
 
-Tutti  componenti e funzionalità AEM Communities sono basati sul framework di componenti [social network (SCF)](scf.md), che richiama l&#39;API SocialResourceProvider per accedere a tutto il contenuto generato dall&#39;utente (UGC).
+Tutti  componenti e funzionalità AEM Communities sono basati sul [social component framework (SCF)](scf.md), che richiama l&#39;API SocialResourceProvider per accedere a tutti i contenuti generati dall&#39;utente.
 
-Prima di creare un sito community, è necessario configurare il provider di risorse di [storage (SRP)](working-with-srp.md) per selezionare un&#39;implementazione coerente con la [topologia](topologies.md)sottostante. Le implementazioni SRP si basano su tre opzioni di storage:
+Prima di creare un sito community, è necessario configurare il [provider di risorse di storage (SRP)](working-with-srp.md) per selezionare un&#39;implementazione coerente con la [topologia sottostante](topologies.md). Le implementazioni SRP si basano su tre opzioni di storage:
 
-1. [ASRP](asrp.md) -  Adobe di storage su richiesta
+1. [ASRP](asrp.md) -  Adobe su richiesta
 2. [MSRP](msrp.md) - MongoDB
-3. [JSRP](jsrp.md) - JCR
+3. [JSRP](jsrp.md)  - JCR
 
 ## Archiviazione UGC {#about-ugc-storage}
 
-Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per utilizzare ASRP o MSRP, l&#39;UGC effettivo non è memorizzato in AEM archivio [](../../help/sites-deploying/data-store-config.md) nodi (JCR).
+Ciò che è importante sapere sull&#39;archiviazione di UGC è che, quando un sito è configurato per utilizzare ASRP o MSRP, l&#39;UGC effettivo non è memorizzato in AEM [node store](../../help/sites-deploying/data-store-config.md) (JCR).
 
 Anche se in JCR possono essere presenti nodi che oscurano l&#39;UGC per fornire metadati utili, questi nodi non devono essere confusi con l&#39;UGC effettivo.
 
-Vedere Panoramica sui provider delle risorse [di storage.](srp.md)
+Vedere [Panoramica sui provider di risorse di storage.](srp.md)
 
 ## Best practice {#best-practice}
 
@@ -63,16 +63,16 @@ Metodi per evitare:
 * Eventi JCR
 * Lancio di flussi di lavoro (che utilizzano eventi JCR)
 
-### Usa raccolte di ricerca {#use-search-collections}
+### Utilizzare raccolte di ricerca {#use-search-collections}
 
 Diversi SRP possono avere lingue di query native diverse. È consigliabile utilizzare i metodi del pacchetto [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) per richiamare la lingua di query appropriata.
 
-Per ulteriori informazioni, consulta [Ricerca in Essentials](search-implementation.md).
+Per ulteriori informazioni, vedere [Ricerca di Essentials](search-implementation.md).
 
 ## Riferimenti {#resources}
 
-* [Archiviazione](working-with-srp.md) dei contenuti della community - illustra le opzioni SRP disponibili per uno store comune UGC
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Ricerca Essentials](search-implementation.md) - informazioni essenziali per la ricerca UGC
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Archiviazione](working-with-srp.md)  dei contenuti della community: vengono illustrate le opzioni SRP disponibili per uno store comune UGC
+* [Panoramica](srp.md)  del provider di risorse di storage - introduzione e utilizzo del repository
+* [Funzioni essenziali](srp-and-ugc.md)  SRP e UGC - Metodi di utilità SRP ed esempi
+* [Ricerca Essentials](search-implementation.md)  - informazioni essenziali per la ricerca UGC
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
