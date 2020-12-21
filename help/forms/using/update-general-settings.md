@@ -27,11 +27,11 @@ Quando si sincronizza l&#39;app con il server AEM Forms , tutti i moduli e le at
 
 La soluzione predefinita  app AEM Forms non scarica gli allegati associati a ciascun modulo quando l&#39;app viene sincronizzata.
 
-Nella scheda Generale, modificare gli allegati di download, la modalità offline, la schermata di destinazione, il salvataggio automatico e le impostazioni di sincronizzazione. Potete modificare la schermata [](/help/forms/using/home-screen.md) Home dell&#39;app.
+Nella scheda Generale, modificare gli allegati di download, la modalità offline, la schermata di destinazione, il salvataggio automatico e le impostazioni di sincronizzazione. Puoi cambiare la [Home screen](/help/forms/using/home-screen.md) dell&#39;app.
 
 **Passate alla scheda Generale nella schermata Impostazioni**
 
-1. Per passare alla schermata Impostazioni, toccate il pulsante Menu nell’angolo superiore sinistro della schermata Home, quindi toccate **Impostazioni**.
+1. Per passare alla schermata Impostazioni, toccate il pulsante Menu nell&#39;angolo superiore sinistro della schermata Home, quindi toccate **Impostazioni**.
 1. Nella schermata Impostazioni, toccate la scheda Generale.
 
    ![Impostazioni generali nell&#39;app  AEM Forms](assets/gen-settings-2.png)
@@ -46,9 +46,9 @@ Potete apportare le seguenti modifiche alle impostazioni dell&#39;app.
 
 * **Recupera allegati** attività: Per specificare se scaricare o meno gli allegati associati quando ogni attività viene scaricata nell&#39;app.
 
-* **Modalità** offline: Per abilitare o disabilitare il servizio offline per  app AEM Forms. Per informazioni dettagliate, consultate [Utilizzo della modalità](/help/forms/using/work-offline-mode.md) offline.
+* **Modalità** offline: Per abilitare o disabilitare il servizio offline per  app AEM Forms. Per ulteriori informazioni, vedere [Utilizzo della modalità offline](/help/forms/using/work-offline-mode.md).
 
-* **Schermata** di destinazione: Per impostare la posizione iniziale (schermata[](/help/forms/using/home-screen.md)iniziale) per l&#39;app.
+* **Schermata** di destinazione: Per impostare la posizione iniziale (schermata[ ](/help/forms/using/home-screen.md)iniziale) per l&#39;app.
 
    Opzioni disponibili:
 
@@ -58,9 +58,9 @@ Potete apportare le seguenti modifiche alle impostazioni dell&#39;app.
 
 * **Categoria** predefinita: Consente di selezionare la categoria di moduli da visualizzare nella schermata iniziale. Quando si seleziona Tutto, è possibile visualizzare tutti i moduli nella schermata iniziale. Le categorie vengono popolate in base ai moduli caricati nell&#39;app. Forms è disponibile nell&#39;app in base alle impostazioni del modulo specificate nel server AEM Forms .
 
-* **Frequenza** salvataggio automatico: Per impostare la frequenza con cui l&#39;app [mobile salva localmente i dati](/help/forms/using/autosave-data-app.md) del modulo.
+* **Frequenza** salvataggio automatico: Per impostare la frequenza con cui l&#39;app  [mobile salva i moduli ](/help/forms/using/autosave-data-app.md) in modo datalocale.
 
-* **Frequenza** sincronizzazione: Per impostare la frequenza con cui l&#39;app [mobile viene sincronizzata](/help/forms/using/sync-app.md) con il server AEM Forms  in modalità online.
+* **Frequenza** sincronizzazione: Per impostare la frequenza con cui l&#39;app  [mobile viene ](/help/forms/using/sync-app.md) sincronizzata con il server AEM Forms  in modalità online.
 
 **Cancella dati** locali: Cancellare il database, comprese le impostazioni e i dati locali per tutti gli utenti e l&#39;archiviazione dei file dal dispositivo.
 
