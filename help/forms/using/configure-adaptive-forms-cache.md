@@ -34,8 +34,8 @@ Una cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la la
 Per configurare la cache dei moduli adattivi, effettuate le seguenti operazioni:
 
 1. Andate AEM console Web Configuration Manager all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
-1. Fate clic su Configurazione **canale Web per moduli** adattivi e comunicazioni interattive per modificarne i valori di configurazione.
-1. Nella finestra di dialogo Modifica valori configurazione, specificare il numero massimo di moduli o documenti che un&#39;istanza del server AEM Forms  può memorizzare nella cache nel campo **Numero di Forms** adattivi. Il valore predefinito è 100.
+1. Fare clic su **Configurazione canale Web per moduli adattivi e comunicazioni interattive** per modificarne i valori di configurazione.
+1. Nella finestra di dialogo Modifica valori configurazione, specificare il numero massimo di moduli o documenti che un&#39;istanza del server AEM Forms  può memorizzare nella cache nel campo **Numero di Forms adattivo**. Il valore predefinito è 100.
 
    >[!NOTE]
    >
@@ -43,5 +43,5 @@ Per configurare la cache dei moduli adattivi, effettuate le seguenti operazioni:
 
    ![Finestra di dialogo di configurazione per la cache HTML dei moduli adattivi](assets/cache-configuration-edit.png)
 
-1. Click **Save** to save the configuration.
+1. Fare clic su **Salva** per salvare la configurazione.
 
