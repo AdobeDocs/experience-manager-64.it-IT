@@ -30,7 +30,7 @@ Per impostazione predefinita, la funzione e-mail non funziona perché richiede l
 
 >[!CAUTION]
 >
->Le e-mail per le notifiche e le iscrizioni devono essere configurate solo sull&#39;editore [](deploy-communities.md#primary-publisher)principale.
+>Le e-mail per le notifiche e le iscrizioni devono essere configurate solo sull&#39; [editore principale](deploy-communities.md#primary-publisher).
 
 ## Configurazione servizio di posta elettronica predefinita {#default-mail-service-configuration}
 
@@ -38,34 +38,34 @@ Il servizio e-mail predefinito è richiesto sia per le notifiche che per le iscr
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Accesso alla console [Web](../../help/sites-deploying/configuring-osgi.md)
+* Accedere alla [console Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Individua la variabile `Day CQ Mail Service`
+* Individuare il percorso `Day CQ Mail Service`
 * Selezionate l’icona di modifica
 
-Questo si basa sulla documentazione per la [configurazione delle notifiche](../../help/sites-administering/notification.md)e-mail, ma con una differenza in quanto il campo `"From" address`*non* è obbligatorio e deve essere lasciato vuoto.
+Questo è basato sulla documentazione relativa alla [configurazione delle notifiche e-mail](../../help/sites-administering/notification.md), ma con una differenza nel fatto che il campo `"From" address` è *non* richiesto e deve essere lasciato vuoto.
 
 Ad esempio (con valori solo a scopo illustrativo):
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
-* **[!UICONTROL Nome]** host del server SMTP: *(obbligatorio)* Il server SMTP da utilizzare.
+* **[!UICONTROL Nome]** host del server SMTP:  *(obbligatorio)* Server SMTP da utilizzare.
 
-* **[!UICONTROL Porta]** del server SMTP *(richiesta)* La porta del server SMTP deve essere 25 o superiore.
+* **[!UICONTROL Porta]** *del server SMTP (richiesta)* La porta del server SMTP deve essere 25 o superiore.
 
-* **[!UICONTROL Utente]** SMTP: *(obbligatorio)* L&#39;utente SMTP.
+* **[!UICONTROL Utente]** SMTP:  *(obbligatorio)* L&#39;utente SMTP.
 
-* **[!UICONTROL Password]** SMTP: *(obbligatorio)* La password dell&#39;utente SMTP.
+* **[!UICONTROL Password]** SMTP:  *(obbligatorio)* La password dell&#39;utente SMTP.
 
-* **[!UICONTROL Indirizzo]**&quot;Da&quot;: Lascia vuoto
+* **[!UICONTROL Indirizzo]** &quot;Da&quot;: Lascia vuoto
 * **[!UICONTROL SMTP usa SSL]**: Se questa opzione è selezionata, verrà inviata un&#39;e-mail protetta. Verificare che la porta sia impostata su 465 o come richiesto per il server SMTP.
 * **[!UICONTROL Esegui debug e-mail]**: Se questa opzione è selezionata, consente la registrazione delle interazioni del server SMTP.
 
-## Configurazione e-mail AEM Communities  {#aem-communities-email-configuration}
+##  Configurazione e-mail AEM Communities {#aem-communities-email-configuration}
 
-Una volta configurato il servizio [di posta](#default-mail-service-configuration) predefinito, le due istanze esistenti della configurazione `AEM Communities Email Reply Configuration` OSGi, incluse nella release, diventano operative.
+Una volta configurato il [servizio di posta predefinito](#default-mail-service-configuration), le due istanze esistenti della configurazione `AEM Communities Email Reply Configuration` OSGi, incluse nella release, diventano operative.
 
 Per consentire la risposta tramite e-mail, è necessario configurare ulteriormente solo l’istanza per le iscrizioni.
 
@@ -81,7 +81,7 @@ Per raggiungere le istanze di configurazione e-mail di Communities:
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Accesso alla console [Web](../../help/sites-deploying/configuring-osgi.md)
+* Accedere alla [console Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -91,49 +91,49 @@ Per raggiungere le istanze di configurazione e-mail di Communities:
 
 ### Configurazione per le notifiche {#configuration-for-notifications}
 
-L’istanza della configurazione `AEM Communities Email Reply Configuration` OSGi con il messaggio e-mail Nome è relativa alla funzione delle notifiche. Questa funzione non include la risposta tramite e-mail.
+L&#39;istanza della configurazione `AEM Communities Email Reply Configuration` OSGi con l&#39;e-mail Name è per la funzione notifiche. Questa funzione non include la risposta tramite e-mail.
 
 Questa configurazione non deve essere modificata.
 
-* Individua la variabile `AEM Communities Email Reply Configuration`
+* Individuare il percorso `AEM Communities Email Reply Configuration`
 * Selezionate l’icona di modifica
-* Verifica che il **nome** sia `email`
+* Verificare che **Name** sia `email`
 
-* Verifica che **Crea post dal messaggio e-mail** di risposta sia `unchecked`
+* Verifica che **Crea post dal messaggio di risposta** sia `unchecked`
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
-### Configurazione per le iscrizioni {#configuration-for-subscriptions}
+### Configurazione per iscrizioni {#configuration-for-subscriptions}
 
 Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilità per un membro di pubblicare contenuto rispondendo a un&#39;e-mail.
 
-* Individua la variabile `AEM Communities Email Reply Configuration`
+* Individuare il percorso `AEM Communities Email Reply Configuration`
 * Selezionate l’icona di modifica
-* Verifica che il **nome** sia `subscriptions-email`
+* Verificare che **Name** sia `subscriptions-email`
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-* **[!UICONTROL Nome]** : *(obbligatorio)*`subscriptions-email`. Non Modificate.
+* **[!UICONTROL Nome]** :  *(obbligatorio)* `subscriptions-email`. Non Modificate.
 
 * **[!UICONTROL Crea post dal messaggio e-mail]** di risposta: Se questa opzione è attivata, il destinatario dell&#39;e-mail di iscrizione può inviare contenuti inviando una risposta. Il valore predefinito è selezionato.
-* **[!UICONTROL Aggiungi ID tracciato all’intestazione]**: Il valore predefinito è `Reply-To`.
+* **[!UICONTROL Aggiungi ID tracciato all’intestazione]**: Il valore predefinito è  `Reply-To`.
 
 * **[!UICONTROL Lunghezza massima del soggetto]**: Se l’ID tracciatore viene aggiunto all’oggetto, si tratta della lunghezza massima dell’oggetto, escluso l’ID tracciato, dopo di che verrà tagliato. Tieni presente che questo deve essere il più piccolo possibile per evitare che le informazioni ID tracciate vadano perdute. Il valore predefinito è 200.
-* **[!UICONTROL Indirizzo]**&quot;Da&quot; e-mail: *(obbligatorio)* Indirizzo dal quale verrà recapitato il messaggio e-mail di notifica. Probabilmente lo stesso utente **** SMTP specificato per il servizio [di posta](#configuredefaultmailservice)predefinito. Default is `no-reply@example.com`.
+* **[!UICONTROL Indirizzo]** &quot;Da&quot; e-mail:  *(obbligatorio)* Indirizzo da cui verrà recapitato il messaggio e-mail di notifica. Probabilmente lo stesso **utente SMTP** specificato per il [servizio di posta predefinito](#configuredefaultmailservice). Il valore predefinito è `no-reply@example.com`.
 
 * **[!UICONTROL Risposta al carattere di delimitazione]**: Se viene aggiunto l’ID tracciatore all’intestazione Rispondi a, verrà utilizzato questo delimitatore. Il valore predefinito è `+` (segno più).
 
-* **[!UICONTROL Prefisso ID tracciatore nell’oggetto]**: Se alla riga dell’oggetto viene aggiunto l’ID tracciatore, verrà utilizzato questo prefisso. Default is `post#`.
+* **[!UICONTROL Prefisso ID tracciatore nell’oggetto]**: Se alla riga dell’oggetto viene aggiunto l’ID tracciatore, verrà utilizzato questo prefisso. Il valore predefinito è `post#`.
 
-* **[!UICONTROL Prefisso ID tracciatore nel corpo]** del messaggio: Se viene aggiunto l’ID tracciatore al corpo del messaggio, verrà utilizzato questo prefisso. Default is `Please do not remove this:`.
+* **[!UICONTROL Prefisso ID tracciatore nel corpo]** del messaggio: Se viene aggiunto l’ID tracciatore al corpo del messaggio, verrà utilizzato questo prefisso. Il valore predefinito è `Please do not remove this:`.
 
-* **[!UICONTROL E-mail come HTML]**: Se questa opzione è selezionata, il tipo di contenuto dell’e-mail verrà impostato come `"text/html;charset=utf-8"`. Il valore predefinito è selezionato.
+* **[!UICONTROL E-mail come HTML]**: Se questa opzione è selezionata, il tipo di contenuto dell’e-mail verrà impostato come  `"text/html;charset=utf-8"`. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Nome]** utente predefinito: Questo nome verrà utilizzato per gli utenti senza nome. Default is `no-reply@example.com`.
+* **[!UICONTROL Nome]** utente predefinito: Questo nome verrà utilizzato per gli utenti senza nome. Il valore predefinito è `no-reply@example.com`.
 
-* **[!UICONTROL Percorso]** principale dei modelli: L&#39;e-mail viene creata utilizzando il modello memorizzato in questo percorso principale. Default is `/etc/community/templates/subscriptions-email`.
+* **[!UICONTROL Percorso]** principale dei modelli: L&#39;e-mail viene creata utilizzando il modello memorizzato in questo percorso principale. Il valore predefinito è `/etc/community/templates/subscriptions-email`.
 
-## Configurare Importazione polling {#configure-polling-importer}
+## Configura Importazione polling {#configure-polling-importer}
 
 Affinché l’e-mail possa essere inserita nella directory archivio, è necessario configurare manualmente un modulo di importazione polling e configurarne le proprietà nella directory archivio.
 
@@ -141,44 +141,46 @@ Affinché l’e-mail possa essere inserita nella directory archivio, è necessar
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Passate alla console di importazione pollingAd esempio, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
-* Seleziona **[!UICONTROL Aggiungi]**
+* Passate alla console di importazione polling
+Ad esempio, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+* Selezionare **[!UICONTROL Aggiungi]**
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-* **[!UICONTROL Tipo]**: *(richiesto)* Per selezionare il pulsante `POP3 (over SSL).`
+* **[!UICONTROL Tipo]**:  *(richiesto)* Per selezionare, trascinate verso il basso  `POP3 (over SSL).`
 
-* **[!UICONTROL URL]**: *(obbligatorio)* Il server di posta in uscita. Esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
+* **[!UICONTROL URL]**:  *(obbligatorio)* Server di posta in uscita. Esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL Importa in percorso]**&amp;ast;: *(richiesto)* Impostate questa opzione `/content/usergenerated/mailFolder/postEmails`visitando il pannello 
-`postEmails`e selezionate **OK**
+* **[!UICONTROL Importa in Path]**&amp;ast;:  *(richiesto)* Impostate questa opzione  `/content/usergenerated/mailFolder/postEmails`
+visitando il pannello 
+`postEmails`e selezionate  **OK**
 
-* **[!UICONTROL Intervallo di aggiornamento in secondi]**: *(facoltativo)* Il server di posta configurato per il servizio di posta elettronica predefinito potrebbe presentare requisiti per il valore dell&#39;intervallo di aggiornamento. Ad esempio, Gmail potrebbe richiedere un intervallo di `300`.
+* **[!UICONTROL Intervallo di aggiornamento in secondi]**:  *(facoltativo)* Il server di posta configurato per il servizio di posta elettronica predefinito può presentare requisiti relativi al valore dell&#39;intervallo di aggiornamento. Ad esempio, Gmail potrebbe richiedere un intervallo di `300`.
 
-* **[!UICONTROL Login]**: *(facoltativo)*
+* **[!UICONTROL Login]**:  *(facoltativo)*
 
-* **[!UICONTROL Password]**: *(facoltativo)*
+* **[!UICONTROL Password]**:  *(facoltativo)*
 
 * Selezionare **[!UICONTROL OK]**
 
 ### Regola protocollo per il nuovo importatore di polling {#adjust-protocol-for-new-polling-importer}
 
-Una volta salvata la nuova configurazione di polling, è necessario modificare ulteriormente le proprietà di Subscription Email Importer per cambiare il protocollo da `POP3` a `emailreply`
+Una volta salvata la nuova configurazione di polling, è necessario modificare ulteriormente le proprietà di utilità di importazione e-mail per la sottoscrizione, al fine di modificare il protocollo da `POP3` a `emailreply`
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Individuate [https://&lt;server>:&lt;porta>/crx/de/index.jsp#/etc/importer/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)
+* Passare a [https://&lt;server>:&lt;porta>/crx/de/index.jsp#/etc/importer/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)
 * Seleziona la configurazione appena creata
 * Modificare le seguenti proprietà
 
-   * **feedType**: sostituire `pop3s` con **`emailreply`**
-   * **source**: sostituire il protocollo di origine `pop3s://` con **`emailreply://`**
+   * **feedType**: sostituire  `pop3s` con  **`emailreply`**
+   * **source**: sostituire il protocollo di origine  `pop3s://` con  **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 I triangoli rossi indicano le proprietà modificate. Salvare le modifiche:
 
-* Seleziona **[!UICONTROL Salva tutto]**
+* Selezionare **[!UICONTROL Salva tutto]**
 
