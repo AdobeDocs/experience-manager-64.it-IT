@@ -26,12 +26,12 @@ ht-degree: 0%
 >
 >La configurazione del font di fallback si applica anche al servizio assembler.
 
-1. Andate al file adobe-livecycle-*[appserver]*.ear nella directory root *[/configurationManager/export dei moduli]* aem, create una copia di backup e decomprimete il pacchetto dell&#39;originale.
+1. Andate al file adobe-livecycle-*[appserver]*.ear nella directory *[aem-forms root]*/configurationManager/export, create una copia di backup e rimuovete il pacchetto dell&#39;originale.
 1. Individuate il file adobe-fontmanager.jar e decomprimetelo.
 1. Individuare il file FontManagerResources.properties e aprirlo in un editor di testo.
 1. Modificate le posizioni e i nomi dei font Generici e Fallback come richiesto e salvate il file.
 
-   Le voci dei font nel file FontManagerResources.properties sono relative alla directory root *[/fonts dei moduli]* Aem. Se si specificano font che non sono font AEM modulo predefiniti, è necessario installare tali font all&#39;interno di questa struttura di directory (all&#39;interno di una directory esistente o in una nuova directory creata).
+   Le voci dei font nel file FontManagerResources.properties sono relative alla directory *[aem-forms root]*/fonts. Se si specificano font che non sono font AEM modulo predefiniti, è necessario installare tali font all&#39;interno di questa struttura di directory (all&#39;interno di una directory esistente o in una nuova directory creata).
 
    >[!NOTE]
    >
@@ -42,9 +42,9 @@ ht-degree: 0%
    * Font generico, ricercato per ordine impostato nella tabella di fallback
 
 1. Reinserite il pacchetto del file adobe-fontmanager.jar.
-1. Create nuovamente il pacchetto del file adobe-livecycle-*[appserver]*.ear, quindi ridistribuitelo manualmente o eseguendo Configuration Manager.
+1. Reinserite il file adobe-livecycle-*[appserver]*.ear e quindi ridistribuitelo manualmente o eseguendo Configuration Manager.
 
 >[!NOTE]
 >
->Non utilizzare Configuration Manager per creare nuovamente il pacchetto del file adobe-livecycle-[appserver].ear perché le modifiche apportate verranno sovrascritte con i valori predefiniti dei moduli AEM.
+>Non utilizzare Configuration Manager per creare nuovamente il pacchetto del file adobe-livecycle-[appserver].ear perché le modifiche verranno sovrascritte con i valori predefiniti dei moduli AEM.
 
