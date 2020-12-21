@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
- AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
+ AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` nell&#39;editor di codice dell&#39; [editor di regole](/help/forms/using/rule-editor.md).
 
-Questo documento è incentrato sulla scrittura di JavaScript tramite l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
+Questo documento è incentrato sulla scrittura di un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare un servizio.
 
 ## Utilizzo dell&#39;API {#using-the-api}
 
-L&#39; `guidelib.dataIntegrationUtils.executeOperation` API richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
+L&#39;API `guidelib.dataIntegrationUtils.executeOperation` richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ L&#39;API richiede i seguenti parametri.
 | `inputs` | Struttura per specificare gli oggetti modulo i cui valori vengono immessi nell&#39;operazione del servizio |
 | `outputs` | Struttura per specificare gli oggetti modulo che verranno compilati con i valori restituiti dall&#39;operazione del servizio |
 
-La struttura dell&#39; `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
+La struttura dell&#39;API `guidelib.dataIntegrationUtils.executeOperation` specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
 
 ```
 var operationInfo = {
@@ -87,9 +87,9 @@ La struttura API specifica i seguenti dettagli sull&#39;operazione del servizio.
 
 ## Script di esempio per richiamare un servizio {#sample-script-to-invoke-a-service}
 
-Lo script di esempio seguente utilizza l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare l&#39;operazione di `getAccountById` servizio configurata nel modello dati del `employeeAccount` modulo.
+Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `getAccountById` configurata nel modello di dati del modulo `employeeAccount`.
 
-L&#39; `getAccountById` operazione prende il valore nel campo `employeeID` modulo come input per l&#39; `empId` argomento e restituisce il nome del dipendente, il numero del conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39; `name` argomento è popolato nell&#39;elemento `fullName` modulo e il valore per l&#39; `accountNumber` argomento nell&#39;elemento `account` modulo.
+L&#39;operazione `getAccountById` prende il valore nel campo del modulo `employeeID` come input per l&#39;argomento `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39;argomento `name` viene popolato nell&#39;elemento modulo `fullName` e nel valore per l&#39;argomento `accountNumber` nell&#39;elemento modulo `account`.
 
 ```
 var operationInfo = {
