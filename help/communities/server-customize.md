@@ -68,27 +68,27 @@ Un handle per il servizio OSGi viene ottenuto richiamando `com.adobe.cq.social.s
 
 #### Classe PostOperation {#postoperation-class}
 
-Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39; `SlingPostOperation`interfaccia (pacchetto `org.apache.sling.servlets.post`).
+Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39;interfaccia `SlingPostOperation`pacchetto `org.apache.sling.servlets.post`.
 
-L&#39;implementazione dell&#39; `PostOperation`endpoint viene impostata `sling.post.operation`su un valore a cui l&#39;operazione risponderà. Tutte le richieste di POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
+L&#39;implementazione dell&#39;endpoint `PostOperation`imposta `sling.post.operation`su un valore a cui l&#39;operazione risponderà. Tutte le richieste di POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
 
-Viene `PostOperation`richiamata la `SocialOperation`quale esegue le azioni necessarie per l&#39;operazione.
+Il `PostOperation`richiama il `SocialOperation`che esegue le azioni necessarie per l&#39;operazione.
 
-Il `PostOperation`destinatario riceve il risultato dal client `SocialOperation`e restituisce la risposta appropriata al client.
+Il `PostOperation`riceve il risultato dal `SocialOperation`e restituisce la risposta appropriata al client.
 
 #### Classe SocialOperation {#socialoperation-class}
 
-Ogni `SocialOperation`endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation().`Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un errore `SocialOperationResult`o generare un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di stato HTTP di risposta JSON o di riuscita.
+Ogni `SocialOperation`endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation().`Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un `SocialOperationResult`oppure genera un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di stato HTTP di risposta JSON o di riuscita.
 
-L’estensione `AbstractSocialOperation`consente il riutilizzo dell’invio `SocialComponents`di risposte JSON.
+L&#39;estensione di `AbstractSocialOperation`consente il riutilizzo di `SocialComponents`per inviare risposte JSON.
 
 #### Classe SocialOperationResult {#socialoperationresult-class}
 
-La `SocialOperationResult`classe viene restituita come risultato dell&#39;evento `SocialOperation`ed è composta da un codice di stato `SocialComponent`HTTP e da un messaggio di stato HTTP.
+La classe `SocialOperationResult`viene restituita come risultato della classe `SocialOperation`ed è composta da un `SocialComponent`, da un codice di stato HTTP e da un messaggio di stato HTTP.
 
-La risorsa `SocialComponent`rappresenta la risorsa interessata dall&#39;operazione.
+La `SocialComponent`rappresenta la risorsa interessata dall&#39;operazione.
 
-Per un&#39;operazione Create, la risorsa `SocialComponent`inclusa nella `SocialOperationResult`rappresenta la risorsa appena creata e per un&#39;operazione Update rappresenta la risorsa modificata dall&#39;operazione. Non `SocialComponent`viene restituito alcun valore per un&#39;operazione Delete.
+Per un&#39;operazione di creazione, la `SocialComponent`inclusa nella `SocialOperationResult`rappresenta la risorsa appena creata e, per un&#39;operazione di aggiornamento, rappresenta la risorsa modificata dall&#39;operazione. Per un&#39;operazione di eliminazione non viene restituito nessun `SocialComponent`.
 
 I codici di stato HTTP utilizzati per il successo sono:
 
@@ -98,13 +98,13 @@ I codici di stato HTTP utilizzati per il successo sono:
 
 #### Classe OperationException {#operationexception-class}
 
-Se la richiesta non è valida o si verifica un altro errore, ad esempio errori interni, valori errati dei parametri, autorizzazioni non corrette e così via, `OperationExcepton`è possibile generare un messaggio di errore durante l&#39;esecuzione di un&#39;operazione. Un messaggio `OperationException`è composto da un codice di stato HTTP e un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
+Se la richiesta non è valida o si verifica un altro errore, ad esempio errori interni, valori errati dei parametri, autorizzazioni non corrette e così via, è possibile generare un `OperationExcepton`durante l&#39;esecuzione di un&#39;operazione. Un `OperationException`è composto da un codice di stato HTTP e un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
 
 #### Classe OperationService {#operationservice-class}
 
-Il framework dei componenti sociali raccomanda che la logica aziendale responsabile dell&#39;esecuzione dell&#39;operazione non sia implementata all&#39;interno della `SocialOperation`classe, ma delegata a un servizio OSGi. L&#39;utilizzo di un servizio OSGi per la business logic consente a un `SocialComponent``SocialOperation`endpoint di essere integrato con un altro codice e applicare una logica aziendale diversa.
+Il framework dei componenti social consiglia di non implementare la logica aziendale responsabile dell&#39;esecuzione dell&#39;operazione all&#39;interno della classe `SocialOperation`ma di delegarla a un servizio OSGi. L&#39;utilizzo di un servizio OSGi per la logica aziendale consente di integrare un `SocialComponent`, basato su un `SocialOperation`endpoint, con un altro codice e applicare una logica aziendale diversa.
 
-Tutte `OperationService`le classi si estendono `AbstractOperationService`, consentendo ulteriori estensioni che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation`classe. La `OperationExtensions`classe può essere invocata durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
+Tutte le classi `OperationService`estendono `AbstractOperationService`, consentendo estensioni aggiuntive che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation`classe. La classe `OperationExtensions`può essere richiamata durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
 
 * `performBeforeActions()`
 Consente pre-verifiche/pre-elaborazione e convalide
@@ -117,13 +117,13 @@ Consente di modificare ulteriormente le risorse o richiamare eventi personalizza
 
 ## Codice di esempio {#sample-code}
 
-Il codice di esempio è disponibile nell’archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
+Il codice di esempio è disponibile nell&#39;archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud). Cercare progetti con il prefisso `aem-communities` o `aem-scf`.
 
 ## Best practice   {#best-practices}
 
-Consultate la sezione [Coding Guidelines (Linee guida](code-guide.md) per la codifica) per diverse linee guida e best practice per  sviluppatori AEM Communities.
+Per informazioni su diverse linee guida di codifica e best practice per  sviluppatori AEM Communities, vedere la sezione [Linee guida di codifica](code-guide.md).
 
-Per informazioni sull&#39;accesso ai contenuti generati dall&#39;utente, consultate anche [Storage Resource Provider (SRP) per UGC](srp.md) .
+Vedere anche [Storage Resource Provider (SRP) per UGC](srp.md) per informazioni sull&#39;accesso ai contenuti generati dall&#39;utente.
 
 | **[⇐ Funzioni Essenziali](essentials.md)** | **[Personalizzazione lato client ⇒](client-customize.md)** |
 |---|---|
