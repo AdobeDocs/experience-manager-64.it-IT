@@ -17,7 +17,7 @@ ht-degree: 9%
 ---
 
 
-# Descrizione oggetto JSON dell&#39;area di lavoro di AEM Forms {#aem-forms-workspace-json-object-description}
+#  descrizione dell&#39;oggetto JSON dell&#39;area di lavoro AEM Forms {#aem-forms-workspace-json-object-description}
 
 Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di seguito.
 
@@ -40,7 +40,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>id</td> 
    <td>F</td> 
-   <td>Category ID<br type="_moz" /> </td> 
+   <td>ID categoria<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>descrizione<br type="_moz" /> </td> 
@@ -94,23 +94,23 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
  <tbody>
   <tr>
    <td>Proprietà<br /> </td> 
-   <td>Client Only<br /> </td> 
+   <td>Solo client<br /> </td> 
    <td>Commenti<br /> </td> 
   </tr>
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>La classe di attività è 'LC8' quando l'attività è lc8 task 'Standard'.<br /> </td> 
+   <td>La classe di attività è 'LC8' quando l'attività è lc8 task else 'Standard'.<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
    <td>F</td> 
-   <td>Contiene la marca temporale in cui è stata completata l'attività.<br /> </td> 
+   <td>Contiene la marca temporale al termine dell'attività.<br /> </td> 
   </tr>
   <tr>
    <td>consultareGroupId<br /> </td> 
    <td>F</td> 
-   <td>Contiene l'ID di un gruppo al quale è possibile consultare l'attività. Viene impostato durante la progettazione del processo.<br /> </td> 
+   <td>Contiene l'ID di un gruppo al quale è possibile consultare l'attività. È impostato durante la progettazione del processo.<br /> </td> 
   </tr>
   <tr>
    <td>createTime<br /> </td> 
@@ -120,7 +120,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>creatingId<br /> </td> 
    <td>F</td> 
-   <td>Contiene l’ID dell’utente che ha creato l’attività.<br /> </td> 
+   <td>Contiene l'ID dell'utente che ha creato l'attività.<br /> </td> 
   </tr>
   <tr>
    <td>currentAssignment<br /> </td> 
@@ -130,7 +130,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>scadenza<br /> </td> 
    <td>F</td> 
-   <td>Contiene la marca temporale che indica quando un'attività raggiungerà la scadenza.<br /> </td> 
+   <td>Contiene la marca temporale in cui un'attività raggiungerà la scadenza.<br /> </td> 
   </tr>
   <tr>
    <td>descrizione<br /> </td> 
@@ -145,10 +145,10 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>forwardGroupId<br /> </td> 
    <td>F</td> 
-   <td>Contiene l’ID di un gruppo al quale è possibile inoltrare l’attività. Viene impostato durante la progettazione del processo.<br /> </td> 
+   <td>Contiene l’ID di un gruppo al quale è possibile inoltrare l’attività. È impostato durante la progettazione del processo.<br /> </td> 
   </tr>
   <tr>
-   <td>instructions<br /> </td> 
+   <td>istruzioni<br /> </td> 
    <td>F</td> 
    <td>Contiene istruzioni per un'attività.<br /> </td> 
   </tr>
@@ -165,12 +165,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>isOpenFullScreen<br /> </td> 
    <td>F</td> 
-   <td>Se true, all'apertura dell'attività il modulo viene visualizzato per la prima volta nella schermata completa.<br /> </td> 
+   <td>Se true, all'apertura dell'attività il modulo viene visualizzato per la prima volta.<br /> </td> 
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td> 
    <td>F</td> 
-   <td>Se è true, per completare l'attività è necessario selezionare la route.<br /> </td> 
+   <td>Se true, è necessario selezionare la route per completare l'attività.<br /> </td> 
   </tr>
   <tr>
    <td>isShowAttachments<br /> </td> 
@@ -195,7 +195,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>priority<br /> </td> 
    <td>F</td> 
-   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità<br /> massima 2 = Priorità<br /> alta 3 = Priorità<br /> normale 4 = Priorità<br /> bassa 5 = Priorità più bassa<br /> </td> 
+   <td>Contiene la priorità dell'attività.<br /> 1 = Priorità<br /> 2 più alta = Priorità<br /> 3 alta = Priorità<br />  normale 4 = Priorità<br /> 5 bassa = Prioritàpiù bassa<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceId</td> 
@@ -255,7 +255,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>taskACL<br /> </td> 
    <td>F</td> 
-   <td>È l'elenco di controllo degli accessi per un'attività.<br /> </td> 
+   <td>È l'elenco di controllo di accesso per un'attività.<br /> </td> 
   </tr>
   <tr>
    <td>taskId<br /> </td> 
@@ -265,7 +265,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>updateTime<br /> </td> 
    <td>F</td> 
-   <td>Data e ora dell'ultimo aggiornamento dell'attività.<br /> </td> 
+   <td>Timestamp dell'ultimo aggiornamento dell'attività.<br /> </td> 
   </tr>
   <tr>
    <td>formUrl<br /> </td> 
@@ -285,12 +285,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>showACLActions<br /> </td> 
    <td>T</td> 
-   <td>Se true, azioni come forward, consultare, condividere sono visibili nell’area di lavoro.<br /> </td> 
+   <td>Se true, azioni quali forward, consultare, condividere sono visibili nell'area di lavoro.<br /> </td> 
   </tr>
   <tr>
    <td>supportedOffline<br /> </td> 
    <td>T</td> 
-   <td>Se true, il modulo può essere portato offline. Si tratta solo dei moduli PDF.<br /> </td> 
+   <td>Se true, il modulo può essere portato offline. Solo per i moduli PDF.<br /> </td> 
   </tr>
   <tr>
    <td>supportedSave<br /> </td> 
@@ -305,12 +305,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>isDefaultImage<br /> </td> 
    <td>T</td> 
-   <td>Indica se esiste un'immagine specificata per il processo o meno. True se non è associata alcuna immagine a process else false.<br /> </td> 
+   <td>Indica se esiste un'immagine specificata per il processo o meno. True se non esiste un'immagine associata a process else false.<br /> </td> 
   </tr>
   <tr>
    <td>historyTaskList<br /> </td> 
    <td>T</td> 
-   <td>Contiene un elenco delle attività utilizzate nella scheda Cronologia dei dettagli delle attività.<br /> </td> 
+   <td>Contiene l'elenco delle attività utilizzate nella scheda Cronologia dei dettagli delle attività.<br /> </td> 
   </tr>
   <tr>
    <td>isOwner<br /> </td> 
@@ -320,7 +320,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>availableCommands<br /> </td> 
    <td>T</td> 
-   <td>Contiene tutte le azioni che possono essere eseguite sulle attività.<br /> </td> 
+   <td>Contiene tutte le azioni che è possibile eseguire sull'attività.<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands.directCommands<br /> </td> 
@@ -330,12 +330,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td> 
    <td>T</td> 
-   <td>Contiene comandi come avanti, condivisione e consulta, se disponibili, per un’attività.<br /> </td> 
+   <td>Contiene comandi come avanti, condivisione e consulta se disponibili per un'attività.<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands.otherCommands<br /> </td> 
    <td>T</td> 
-   <td>Contiene comandi quali blocco, sblocco, abbandono, restituzione, richiesta e così via, se disponibili.<br /> </td> 
+   <td>Contiene comandi quali blocco, sblocco, abbandono, restituzione, attestazione e così via, come disponibili.<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td> 
@@ -360,7 +360,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>dataUrl<br /> </td> 
    <td>T</td> 
-   <td>È url per i dati della forma di un'attività.<br /> </td> 
+   <td>È url per i dati del modulo di un'attività.<br /> </td> 
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td> 
@@ -368,19 +368,19 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
    <td>Configurazione per i moduli di applicazione di terze parti.<br /> </td> 
   </tr>
   <tr>
-   <td>submitted<br /> </td> 
+   <td>submit<br /> </td> 
    <td>T</td> 
    <td>True se l'attività viene inviata.<br /> </td> 
   </tr>
   <tr>
    <td>attachments<br /> </td> 
    <td>T</td> 
-   <td>Elenco di allegati per un’attività.<br /> </td> 
+   <td>Elenco degli allegati per un'attività.<br /> </td> 
   </tr>
   <tr>
    <td>assegnazioni<br /> </td> 
    <td>T</td> 
-   <td>Elenco delle assegnazioni di un’attività.<br /> </td> 
+   <td>Elenco delle assegnazioni di un'attività.<br /> </td> 
   </tr>
  </tbody>
 </table>
@@ -419,12 +419,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>query</td> 
    <td>T</td> 
-   <td>Contiene query associate a un filtro. Questa query viene utilizzata per cercare attività dall'elenco attività completo.<br type="_moz" /> </td> 
+   <td>Contiene query associate a un filtro. Questa query viene utilizzata per cercare attività dall'elenco di task completo.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>task</td> 
    <td>T</td> 
-   <td>Contiene un elenco di tutte le attività appartenenti a un filtro.<br type="_moz" /> </td> 
+   <td>Contiene l'elenco di tutte le attività appartenenti a un filtro.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -448,7 +448,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>True se non è presente un predefinito nel caso in cui l'utente non sia in ufficio.<br type="_moz" /> </td> 
+   <td>True se non è presente un predefinito principale nel caso in cui l'utente sia fuori ufficio.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td> 
@@ -458,7 +458,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contiene i dettagli dell’utente assegnato come principale designato dall’utente.<br type="_moz" /> </td> 
+   <td>Contiene i dettagli dell'utente assegnato come designato principale dall'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
@@ -466,19 +466,19 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
    <td>Contiene un array di oggetti per la definizione fuori sede specifica per il processo. In ciascun oggetto designato specifico per il processo, processName contiene il nome del processo, isNotDesignated è true se nessun utente è assegnato per il processo corrispondente, e userDesignated è null se nessun utente ha assegnato altri dettagli dell'utente assegnato per il processo corrispondente.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>processes<br type="_moz" /> </td> 
+   <td>process<br type="_moz" /> </td> 
    <td>T</td> 
    <td>Contiene un elenco di tutti i processi disponibili per l'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>initialOutOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Contiene le impostazioni iniziali dell’utente fuori ufficio recuperate inizialmente.<br type="_moz" /> </td> 
+   <td>Contiene le impostazioni iniziali dell'utente fuori ufficio recuperate inizialmente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Contiene impostazioni esterne all’ufficio modificate.<br type="_moz" /> </td> 
+   <td>Contiene impostazioni esterne all'ufficio modificate.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td> 
@@ -502,7 +502,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>descrizione<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Descrizione dell’istanza di processo<br type="_moz" /> </td> 
+   <td>Descrizione dell'istanza di processo<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>iniziatore</td> 
@@ -512,22 +512,22 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>iniziatorId</td> 
    <td>F</td> 
-   <td>ID dell’iniziatore dell’istanza di processo.<br type="_moz" /> </td> 
+   <td>ID dell'iniziatore dell'istanza di processo.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Timestamp al completamento del processo.<br type="_moz" /> </td> 
+   <td>Timestamp al termine del processo.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID dell’istanza di processo.<br type="_moz" /> </td> 
+   <td>ID dell'istanza di processo.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 = Avviato<br /> 1 = In esecuzione<br /> 2 = Completato<br /> 3 = Completato<br /> 4 = Terminato<br /> 5 = Terminato<br /> 6 = Sospeso<br /> 7 = Sospeso<br /> 8 = Non sospeso<br type="_moz" /> </td> 
+   <td>0 = Iniziato<br /> 1 = In esecuzione<br /> 2 = Completato<br /> 3 = Completato<br /> 4 = Terminato<br /> 5 = Terminante<br /> 6 = Sospeso<br /> 7 = Sospeso<br /> 8 = Non sospeso<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td> 
@@ -584,7 +584,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>processInstanceList<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Elenco delle istanze di processo per questo processo.<br type="_moz" /> </td> 
+   <td>Elenco di istanze del processo per questo processo.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -603,12 +603,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>assignCreateTime<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Timestamp alla creazione dell'assegnazione di un'attività.<br type="_moz" /> </td> 
+   <td>Timestamp della creazione dell'assegnazione di un'attività.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignType<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 = Assegnazione<br /> iniziale 1 = Inoltro (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituito (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività.)<br /> 3 = Richiesto (l'attività è stata reclamata dal proprietario corrente dell'attività).<br /> 4 = Inoltro (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'inoltro.)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività.)<br /> 6 = Consultato (l'attività è stata consultata al proprietario corrente dell'attività).<br type="_moz" /> </td> 
+   <td>0 = Assegnazione iniziale<br /> 1 = Inoltro (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituito (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività.)<br /> 3 = Richiesto (l'attività è stata reclamata dal proprietario corrente dell'attività).<br /> 4 = Inoltro (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'inoltro.)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività.)<br /> 6 = Consultato (l'attività è stata consultata al proprietario corrente dell'attività).<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignUpdateTime<br type="_moz" /> </td> 
@@ -618,7 +618,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>queueId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID coda del proprietario corrente dell'attività.<br type="_moz" /> </td> 
+   <td>ID della coda del proprietario corrente dell'attività.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td> 
@@ -647,7 +647,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Se true, è possibile aggiungere allegati all'attività.<br type="_moz" /> </td> 
+   <td>Se true, gli allegati possono essere aggiunti all'attività.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canAddNotes<br type="_moz" /> </td> 
@@ -657,12 +657,12 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>canClaim<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Se true, è possibile reclamare l'attività.<br type="_moz" /> </td> 
+   <td>Se true, è possibile richiedere l'attività.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Se è vero, si può consultare il compito.<br type="_moz" /> </td> 
+   <td>Se true, l'attività può essere consultata.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td> 
@@ -689,19 +689,19 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
    <td><strong>Commenti</strong></td> 
   </tr>
   <tr>
-   <td>creationDate<br type="_moz" /> </td> 
+   <td>creatingDate<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Timestamp della creazione dell'allegato.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>creatorId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID dell’utente che ha aggiunto l’allegato.<br type="_moz" /> </td> 
+   <td>ID dell'utente che ha aggiunto l'allegato.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>creatorName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Nome dell’utente che ha aggiunto l’allegato.<br type="_moz" /> </td> 
+   <td>Nome dell'utente che ha aggiunto l'allegato.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>descrizione<br type="_moz" /> </td> 
@@ -721,17 +721,17 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>lastModifiedDate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Timestamp dell'ultima modifica dell'allegato.<br type="_moz" /> </td> 
+   <td>Timestamp dell'ultima modifica apportata all'allegato.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>noteExtended<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Se true, nota è una nota estesa (lunga).<br type="_moz" /> </td> 
+   <td>Se true, la nota è una nota estesa (lunga).<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>permissions<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Autorizzazioni associate a un allegato. allowRead è un campo per l'autorizzazione di lettura, allowWrite è per l'autorizzazione di scrittura, allowDelete è per l'autorizzazione di eliminazione.<br type="_moz" /> </td> 
+   <td>Autorizzazioni associate a un allegato. allowRead campo is for read permissions. allowWrite è per l'autorizzazione di scrittura. allowDelete è per l'autorizzazione di eliminazione.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td> 
@@ -761,7 +761,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro  AEM Forms. Questo è solo per le note.<br type="_moz" /> </td> 
+   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro  AEM Forms. Solo per note.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -780,17 +780,17 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>address<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Indirizzo dell’utente.<br type="_moz" /> </td> 
+   <td>Indirizzo dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>commonName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Nome comune dell’utente.<br type="_moz" /> </td> 
+   <td>Nome comune dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>descrizione<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Descrizione dell’utente.<br type="_moz" /> </td> 
+   <td>Descrizione dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td> 
@@ -805,7 +805,7 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>email<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID e-mail dell’utente.<br type="_moz" /> </td> 
+   <td>ID e-mail dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td> 
@@ -815,22 +815,22 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
   <tr>
    <td>lastName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Cognome dell’utente.<br type="_moz" /> </td> 
+   <td>Cognome dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>firstName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Nome dell’utente.<br type="_moz" /> </td> 
+   <td>Nome dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>oid<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID dell’utente.<br type="_moz" /> </td> 
+   <td>ID dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>org<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Nome dell’organizzazione dell’utente.<br type="_moz" /> </td> 
+   <td>Nome dell'organizzazione dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>postalAddress<br type="_moz" /> </td> 
@@ -838,19 +838,19 @@ Gli oggetti JSON utilizzati &#39;area di lavoro di AEM Forms sono descritti di s
    <td>Indirizzo postale dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>telephone<br type="_moz" /> </td> 
+   <td>phone<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Numero di contatto dell’utente.<br type="_moz" /> </td> 
+   <td>Numero di contatto dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>phoneNumber<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Numero di contatto dell’utente.<br type="_moz" /> </td> 
+   <td>Numero di contatto dell'utente.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>userid<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>ID di accesso dell’utente.<br type="_moz" /> </td> 
+   <td>ID di accesso dell'utente.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
