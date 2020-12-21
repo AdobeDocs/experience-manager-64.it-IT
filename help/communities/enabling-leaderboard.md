@@ -22,25 +22,25 @@ ht-degree: 7%
 
 ## Introduzione {#introduction}
 
-Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, classificando i membri in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+Il componente `Leaderboard` consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](implementing-scoring.md).
+Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio community e Badges](implementing-scoring.md).
 
 Questa sezione della documentazione descrive
 
-* Aggiunta del `Leaderboard` componente a un sito [community](overview.md#community-sites)
+* Aggiunta del componente `Leaderboard` a un [sito della community](overview.md#community-sites)
 
-* Impostazioni di configurazione per il `Leaderboard` componente
+* Impostazioni di configurazione per il componente `Leaderboard`
 
-## Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+## Aggiunta di una classifica a una pagina {#adding-a-leaderboard-to-a-page}
 
-Per aggiungere un `Leaderboard` componente a una pagina in modalità di creazione, individuare il componente
+Per aggiungere un componente `Leaderboard` a una pagina in modalità di creazione, individuare il componente
 
 * `Communities / Leaderboard`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
@@ -48,41 +48,49 @@ La prima volta che il componente viene inserito in una pagina di un sito communi
 
 ## Configurazione della classifica {#configuring-leaderboard}
 
-Selezionate il `Leaderboard` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Leaderboard` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### scheda Impostazioni {#settings-tab}
+### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]** , specificate le informazioni relative al membro da visualizzare:
+Nella scheda **[!UICONTROL Impostazioni]**, specificare quali informazioni relative al membro vengono visualizzate:
 
-* **[!UICONTROL Nome]** visualizzato Un nome descrittivo da visualizzare per la bacheca, che riflette le regole selezionate per la visualizzazione di simboli e punteggi.
+* **[!UICONTROL Nome visualizzato:]**
+nome descrittivo da visualizzare per la bacheca, che riflette le regole selezionate per la visualizzazione di simboli e punteggi.
 
    Il valore predefinito è `Leaderboard`, se non è stato immesso nulla.
 
-* **[!UICONTROL Badge]** Se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone dei simboli.
+* ****
+Badge: se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone dei simboli.
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Nome]** contrassegno Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del contrassegno.
+* **[!UICONTROL Nome]**
+badge: se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del contrassegno.
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Usa avatar]** Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo del membro.
+* **[!UICONTROL Usa]**
+avatar: se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo del membro.
 
    Il valore predefinito è deselezionato.
 
 ### Scheda Regole {#rules-tab}
 
-Nella scheda **[!UICONTROL Regole]** , il sito della community e le relative regole di valutazione e contrassegno
+Nella scheda **[!UICONTROL Regole]**, il sito della community e le relative regole di valutazione e contrassegno
 
-* **[!UICONTROL Posizione]** regola (richiesta) Posizione in cui è configurata la regola Punteggio/Badging.
+* **[!UICONTROL Posizione]**
+ regola (richiesta) Posizione in cui è configurata la regola Punteggio/Badging.
 
-* **[!UICONTROL Regola]** punteggio (obbligatoria) Regola specifica che genera i punteggi da visualizzare.
+* **[!UICONTROL Regola]**
+ punteggio (obbligatoria) Regola specifica che genera i punteggi da visualizzare.
 
-* **[!UICONTROL Regola]** di Badging (obbligatoria) Regola specifica che genera il contrassegno da visualizzare.
+* **[!UICONTROL Regola]**
+ di Badging (obbligatoria) Regola specifica che genera il contrassegno da visualizzare.
 
-* **[!UICONTROL Limite]** di visualizzazione Numero di membri da visualizzare per pagina.
+* **[!UICONTROL Visualizza]**
+LimiteNumero di membri da visualizzare per pagina.
 
    Il valore predefinito è 10.
 
@@ -92,7 +100,7 @@ Questo rapporto della classifica deriva dall&#39;applicazione di regole di punte
 
 Configurazione del componente della classifica:
 
-* **[!UICONTROL scheda Impostazioni]** :
+* **** Settingstab:
 
    * Nome visualizzato = `Participation Board`
    * `checked`:
@@ -101,7 +109,7 @@ Configurazione del componente della classifica:
       * Nome badge
       * Usa avatar
 
-* **[!UICONTROL Scheda Regole]** :
+* **** Rulestab:
 
    * Percorso regola = `/content/sites/communities/jcr:content`
    * Regola punteggio = `/etc/community/scoring/rules/forums-scoring`
@@ -116,7 +124,7 @@ Questo rapporto della classifica deriva dall&#39;applicazione di regole di punte
 
 Configurazione del componente della classifica:
 
-* **[!UICONTROL scheda Impostazioni]** :
+* **** Settingstab:
 
    * Nome visualizzato = `Expertise Board`
    * `checked`:
@@ -124,7 +132,7 @@ Configurazione del componente della classifica:
       * Badge
       * Usa avatar
 
-* **[!UICONTROL Scheda Regole]** :
+* **** Rulestab:
 
    * Percorso regola = `/content/sites/communities/jcr:content`
    * Regola punteggio = `/etc/community/scoring/rules/adv-forums-scoring`
@@ -135,6 +143,6 @@ Configurazione del componente della classifica:
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Leaderboard Essentials](leaderboard.md) per gli sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Leaderboard Essentials](leaderboard.md) dedicata agli sviluppatori.
 
-Le istruzioni per la creazione di regole sono fornite nella pagina [Communities Scoring and Badges](implementing-scoring.md) (Punteggio e Badgecommunity) per gli amministratori.
+Le istruzioni per la creazione di regole sono fornite nella pagina [Communities Scoring and Badges](implementing-scoring.md) per gli amministratori.
