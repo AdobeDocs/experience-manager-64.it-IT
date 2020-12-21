@@ -16,11 +16,11 @@ ht-degree: 0%
 ---
 
 
-# Procedura dettagliata sul sito di riferimento self-service dei dipendenti {#employee-self-service-reference-site-walkthrough}
+# Procedura dettagliata sul sito di riferimento self-service dipendente{#employee-self-service-reference-site-walkthrough}
 
 ## Prerequisito {#prerequisite}
 
-Configurate i siti di riferimento come descritto in [Impostazione e configurazione  siti](/help/forms/using/setup-reference-sites.md)di riferimento AEM Forms.
+Configurare i siti di riferimento come descritto in [Configurare e configurare  siti di riferimento AEM Forms](/help/forms/using/setup-reference-sites.md).
 
 ## Panoramica {#overview}
 
@@ -30,9 +30,9 @@ Il sito di riferimento self-service dei dipendenti mostra come sfruttare  AEM Fo
 
 >[!NOTE]
 >
->I casi di utilizzo self-service dei dipendenti sono disponibili sia nei siti di riferimento We.Finance che We.Gov. Gli esempi, le immagini e le descrizioni utilizzati nelle procedure dettagliate utilizzano il sito di riferimento We.Finance. Tuttavia, potete eseguire questi casi di utilizzo e rivedere gli artifact utilizzando anche We.Gov. A tal fine, è necessario sostituire **we-finance** con **we-gov** negli URL citati.
+>I casi di utilizzo self-service dei dipendenti sono disponibili sia nei siti di riferimento We.Finance che We.Gov. Gli esempi, le immagini e le descrizioni utilizzati nelle procedure dettagliate utilizzano il sito di riferimento We.Finance. Tuttavia, potete eseguire questi casi di utilizzo e rivedere gli artifact utilizzando anche We.Gov. A tal fine, è necessario sostituire **we-finance** con **we-gov** negli URL indicati.
 
-## Procedura dettagliata del questionario sui conflitti di interesse {#conflict-of-interest-questionnaire-walkthrough}
+## Procedura dettagliata del questionario sul conflitto di interessi {#conflict-of-interest-questionnaire-walkthrough}
 
 Di tanto in tanto, le organizzazioni chiedono ai propri dipendenti di inviare un questionario sul conflitto di interessi per identificare le attività esterne o i rapporti personali dei loro dipendenti che possono potenzialmente entrare in conflitto con la loro organizzazione.
 
@@ -42,9 +42,11 @@ Il reparto Conformità dell&#39;organizzazione di Sarah ha chiesto ai dipendenti
 
 Sarah passa al portale aziendale, accede e fa clic su Dipendente per accedere al dashboard del dipendente. Trova il questionario sul conflitto di interessi nel dashboard del dipendente e fai clic su **[!UICONTROL Applica]**.
 
-![we-finance-home](assets/we-finance-home.png)**Figure:** *Portale organizzazione*
+![we-finance-](assets/we-finance-home.png)
+**homeFigure:portale** *dell&#39;organizzazione*
 
-![dipendente-dashboard](assets/employee-dashboard.png)**Figura:** *Pannello dipendente*
+![dipendente-](assets/employee-dashboard.png)
+**dashboardFigura:dashboard** *dipendente*
 
 Sarah naviga nel modulo utilizzando il pulsante Avanti e legge le sezioni Introduzione e Definizione. Risponde alle domande nella sezione Domande. Infine firma e invia il questionario.
 
@@ -60,39 +62,43 @@ Il modulo adattivo utilizza delle regole per mostrare o nascondere le informazio
 
 **Vedi te stesso**
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e accedi utilizzando `srose/srose` come nome utente/password per Sarah. Fai clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fai clic su **[!UICONTROL Applica]** al questionario sui conflitti di interessi. Riesaminare e presentare il questionario.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` ed effettuate l&#39;accesso utilizzando `srose/srose` come nome utente/password per Sarah. Fare clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fare clic su **[!UICONTROL Applica]** al questionario sui conflitti di interesse. Riesaminare e presentare il questionario.
 
-### Gloria esamina e approva la presentazione del questionario sul conflitto di interessi {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
+### Gloria esamina e approva il questionario sul conflitto di interessi inviato {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
 Il questionario sul Conflitto di interessi presentato da Sarah è assegnato a Gloria Rios per un riesame. Gloria lavora come Responsabile per la conformità nell&#39;organizzazione. Gloria accede alla propria casella AEM Posta in arrivo e rivede i compiti che le sono stati assegnati. Approva il questionario presentato da Sarah e completa il compito.
 
-![inbox](assets/conflict-inbox.png)**Figura:** *Posta in arrivo di Gloria*
+![Conflitto-](assets/conflict-inbox.png)
+**inboxFigure:inbox di** *Gloria*
 
-![approvato](assets/conflict-approved.png)in conflitto **Figura:** *Apri attività*
+![conflittuale-](assets/conflict-approved.png)
+**approvatoFigura:** *Apri attività*
 
 **Come funziona**
 
-L&#39;azione di invio nel questionario sul conflitto di interessi attiva un flusso di lavoro che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Consulta il Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+L&#39;azione di invio nel questionario sul conflitto di interessi attiva un flusso di lavoro che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Rivedete l&#39;Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
 ![sede di riferimento personale](assets/employee-self-service-reference-site.png)
 
 **Vedi te stesso**
 
-Accedi `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e accedi utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprite l&#39;attività creata per il questionario sul conflitto di interessi e approvatela.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` ed effettuate l&#39;accesso utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprite l&#39;attività creata per il questionario sul conflitto di interessi e approvatela.
 
-## Procedura dettagliata sull&#39;applicazione con carta di credito {#corporate-card-application-walkthrough}
+## Procedura dettagliata per l&#39;applicazione di schede aziendali {#corporate-card-application-walkthrough}
 
 Sarah viaggia molto per lavoro e richiede una carta di credito aziendale per pagare le sue bollette in movimento. Fa domanda per una carta aziendale tramite il portale aziendale dei dipendenti.
 
-### Sarah presenta l&#39;applicazione della carta d&#39;identità {#sarah-submits-the-corporate-card-application}
+### Sarah invia l&#39;applicazione della carta d&#39;identità {#sarah-submits-the-corporate-card-application}
 
-Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova l&#39;applicazione di carta d&#39;identità nel dashboard del dipendente e fai clic su **[!UICONTROL Applica]**.
+Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova l&#39;applicazione Carta aziendale nel dashboard del dipendente e fai clic su **[!UICONTROL Applica]**.
 
-![we-finance-home-1](assets/we-finance-home-1.png)**Figura:** *Portale organizzazione*
+![we-finance-home-1](assets/we-finance-home-1.png)
+**Figure:Portale** *organizzazione*
 
-![dipendente-dashboard-1](assets/employee-dashboard-1.png)**Figura:** *Pannello dipendente*
+![dipendente-dashboard-1](assets/employee-dashboard-1.png)
+**Figura:Pannello** *dipendente*
 
-Fa clic su **[!UICONTROL Applica]** nell&#39;applicazione della carta di credito. Viene aperta un’applicazione a pagina singola. Compila tutti i dettagli e fa clic su **[!UICONTROL Applica]** per inviare l&#39;applicazione.
+Fa clic su **[!UICONTROL Applica]** nell&#39;applicazione della scheda aziendale. Viene aperta un’applicazione a pagina singola. Compila tutti i dettagli e fa clic su **[!UICONTROL Applica]** per inviare l&#39;applicazione.
 
 ![scheda](assets/card-form.png)
 
@@ -105,25 +111,27 @@ Il modulo adattivo per l&#39;applicazione con scheda aziendale è un modulo adat
 
 **Vedi te stesso**
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e accedi utilizzando `srose/srose` come nome utente/password per Sarah. Fate clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fate clic su **[!UICONTROL Applica]** nell&#39;applicazione Carta aziendale. Compila i dettagli e invia la domanda.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` ed effettuate l&#39;accesso utilizzando `srose/srose` come nome utente/password per Sarah. Fare clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fare clic su **[!UICONTROL Applica]** nell&#39;applicazione Carta aziendale. Compila i dettagli e invia la domanda.
 
-### Gloria esamina e approva l&#39;applicazione della carta aziendale {#gloria-reviews-and-approves-the-corporate-card-application}
+### Gloria esamina e approva l&#39;applicazione scheda aziendale {#gloria-reviews-and-approves-the-corporate-card-application}
 
 La richiesta di carta aziendale inviata da Sarah è assegnata a Gloria Rios per la revisione. Gloria accede alla propria casella AEM Posta in arrivo e rivede i compiti che le sono stati assegnati. Approva la richiesta presentata da Sarah e completa il compito.
 
-![scheda aziendale-inbox](assets/corporate-card-inbox.png)**Figura:** *Posta in arrivo di Gloria*
+![corporate-card-](assets/corporate-card-inbox.png)
+**inboxFigure:inbox di** *Gloria*
 
-![scheda aziendale approvata](assets/corporate-card-approved.png)**Figura:** *Apri attività*
+![scheda aziendale-](assets/corporate-card-approved.png)
+**approvatoFigura:** *Apri attività*
 
 **Come funziona**
 
-Il flusso di lavoro di invio nell&#39;applicazione Card aziendale attiva un flusso di lavoro Forms che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Consulta il Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+Il flusso di lavoro di invio nell&#39;applicazione Card aziendale attiva un flusso di lavoro Forms che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Rivedete l&#39;Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
 ![scheda aziendale-workflow-model](assets/corporate-card-workflow-model.png)
 
 **Vedi te stesso**
 
-Accedi `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e accedi utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprite l&#39;attività creata per l&#39;applicazione Carta aziendale e approvatela.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` ed effettuate l&#39;accesso utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprite l&#39;attività creata per l&#39;applicazione Carta aziendale e approvatela.
 
 ## Procedura dettagliata per l&#39;invio della nota spese {#expense-report-submission-walkthrough}
 
@@ -131,17 +139,19 @@ Mentre Sarah spende durante i viaggi d&#39;affari, deve inviare le note spese pe
 
 ### Sarah invia l&#39;applicazione nota spese {#sarah-submits-the-expense-report-application}
 
-Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova l&#39;applicazione Nota spese nel dashboard del dipendente e fai clic su **[!UICONTROL Applica]**.
+Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova l&#39;applicazione nota spese nel dashboard del dipendente e fa clic su **[!UICONTROL Applica]**.
 
-![we-finance-home-2](assets/we-finance-home-2.png)**Figura:** *Portale organizzazione*
+![we-finance-home-2](assets/we-finance-home-2.png)
+**Figure:Portale** *organizzazione*
 
-![dipendente-dashboard-2](assets/employee-dashboard-2.png)**Figura:** *Pannello dipendente*
+![coi dipendenti-dashboard-2](assets/employee-dashboard-2.png)
+**Figura:** *Pannello dei dipendenti*
 
 Fare clic su **[!UICONTROL Applica]** nell&#39;applicazione Nota spese. Si apre un modulo di applicazione, con due schede: Nome rapporto e Dettagli rapporto. L&#39;icona **+** nella scheda Dettagli rapporto consente di aggiungere più spese in un rapporto.
 
 Il portale dell&#39;organizzazione e le applicazioni sono reattivi e facili da usare per i dispositivi mobili. Il seguente flusso di lavoro mostra come Sarah esplora e invia la nota spese sul suo dispositivo mobile.
 
-![cost-report-on mobile](assets/expense-report-on-mobile.png)
+![resoconto spese per dispositivi mobili](assets/expense-report-on-mobile.png)
 
 **Come funziona**
 
@@ -151,37 +161,41 @@ Le schede Nome rapporto e Dettagli rapporto nel modulo adattivo sono componenti 
 
 **Vedi te stesso**
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e accedi utilizzando `srose/srose` come nome utente/password per Sarah. Fare clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fare clic su **[!UICONTROL Applica]** all&#39;applicazione nota spese. Compila i dettagli e invia la domanda.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` ed effettuate l&#39;accesso utilizzando `srose/srose` come nome utente/password per Sarah. Fare clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fare clic su **[!UICONTROL Applica]** nell&#39;applicazione Nota spese. Compila i dettagli e invia la domanda.
 
 ### Gloria esamina e approva la nota spese {#gloria-reviews-and-approves-the-expense-report}
 
 La nota spese inviata da Sarah è assegnata a Gloria Rios per la revisione. Gloria accede alla propria casella AEM Posta in arrivo e rivede i compiti che le sono stati assegnati. Approva la richiesta presentata da Sarah e completa il compito.
 
-![cost-report-inbox](assets/expense-report-inbox.png)**Figure:** *Posta in arrivo di Gloria*
+![cost-report-](assets/expense-report-inbox.png)
+**inboxFigure:inbox di** *Gloria*
 
-![nota spese approvata](assets/expense-report-approved.png)**Figura:** *Apri attività*
+![nota spese-rapporto-](assets/expense-report-approved.png)
+**approvatoFigura:** *Apri attività*
 
 **Come funziona**
 
-Il flusso di lavoro di invio nell&#39;applicazione Nota spese attiva un flusso di lavoro Forms che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Consulta il Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+Il flusso di lavoro di invio nell&#39;applicazione Nota spese attiva un flusso di lavoro Forms che crea un&#39;attività nella inbox di Gloria per l&#39;approvazione. Rivedete l&#39;Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
 ![scheda aziendale-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
 **Vedi te stesso**
 
-Accedi `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e accedi utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprire l&#39;attività creata per l&#39;applicazione nota spese e approvarla.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` ed effettuate l&#39;accesso utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprire l&#39;attività creata per l&#39;applicazione nota spese e approvarla.
 
-## Procedura dettagliata sull&#39;applicazione {#leave-application-walkthrough}
+## Esclusione della procedura dettagliata dell&#39;applicazione {#leave-application-walkthrough}
 
 Sarah sta pianificando una vacanza in famiglia il mese prossimo e vuole fare domanda per una settimana di congedo dal lavoro.
 
 ### Sarah invia l&#39;applicazione di congedo {#sarah-submits-the-leave-application}
 
-Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova di lasciare l&#39;applicazione sul dashboard del dipendente e fai clic su **[!UICONTROL Applica]**.
+Sarah passa al portale aziendale, accede e fa clic su **[!UICONTROL Dipendente]** per accedere al dashboard del dipendente. Trova di lasciare l&#39;applicazione sul dashboard del dipendente e fare clic su **[!UICONTROL Applica]**.
 
-![we-finance-home-3](assets/we-finance-home-3.png)**Figura:** *Portale organizzazione*
+![we-finance-home-3](assets/we-finance-home-3.png)
+**Figure:Portale** *organizzazione*
 
-![dipendente-dashboard-3](assets/employee-dashboard-3.png)**Figura:** *Pannello dipendente*
+![coi dipendenti-dashboard-3](assets/employee-dashboard-3.png)
+**Figura:** *Pannello dei dipendenti*
 
 Si apre l&#39;applicazione di congedo con il nome di Sarah e l&#39;ID dipendente precompilati nel modulo. Mostra anche l&#39;equilibrio e la storia del suo congedo. Compila i dettagli del congedo e presenta la domanda di approvazione.
 
@@ -193,7 +207,7 @@ Il portale dell&#39;organizzazione e le applicazioni sono reattivi e facili da u
 
 Il portale dell&#39;organizzazione e il dashboard del dipendente sono  pagine AEM Sites. Nel dashboard sono elencate diverse opzioni self-service, ad esempio l&#39;applicazione di destinazione. Il pulsante Applica è collegato a un modulo adattivo.
 
-Il modulo adattivo per l&#39;applicazione di congedo si basa sul modello dati dipendente Lascia il modulo. Nella sezione Saldo congedo, la tabella dei saldi di uscita viene compilata utilizzando il servizio `getLeavesOf` Modello dati modulo. I campi Data di inizio e Data di fine utilizzano regole per convalidare che i valori di data siano uguali o successivi alla data corrente. La durata dell&#39;uscita viene calcolata utilizzando la `calcBusinessDays` funzione.
+Il modulo adattivo per l&#39;applicazione di congedo si basa sul modello dati dipendente Lascia il modulo. Nella sezione Saldo congedo, la tabella dei saldi di uscita viene compilata utilizzando il servizio `getLeavesOf` Modello dati modulo. I campi Data di inizio e Data di fine utilizzano regole per convalidare che i valori di data siano uguali o successivi alla data corrente. La durata dell&#39;uscita viene calcolata utilizzando la funzione `calcBusinessDays`.
 
 È possibile esaminare il modulo adattivo e il modello dati modulo nelle seguenti posizioni:
 
@@ -203,22 +217,24 @@ Il modulo adattivo per l&#39;applicazione di congedo si basa sul modello dati di
 
 **Vedi te stesso**
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e accedi utilizzando `srose/srose` come nome utente/password per Sarah. Fate clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fate clic su **[!UICONTROL Applica]** all&#39;uscita dall&#39;applicazione. Compila i dettagli e invia la domanda.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` ed effettuate l&#39;accesso utilizzando `srose/srose` come nome utente/password per Sarah. Fare clic su **[!UICONTROL Dipendente]** per accedere al dashboard, quindi fare clic su **[!UICONTROL Applica]** in Esci dall&#39;applicazione. Compila i dettagli e invia la domanda.
 
-### Gloria recensioni e approva la richiesta di congedo {#gloria-reviews-and-approves-the-leave-application}
+### Gloria esamina e approva l&#39;applicazione di congedo {#gloria-reviews-and-approves-the-leave-application}
 
 La richiesta di congedo presentata da Sarah è assegnata a Gloria Rios per la revisione. Gloria accede alla propria casella AEM Posta in arrivo e rivede i compiti che le sono stati assegnati. Approva la richiesta presentata da Sarah e completa il compito.
 
-![left-inbox](assets/leave-inbox.png)**Figure:** *Posta in arrivo di Gloria*
+![left-](assets/leave-inbox.png)
+**inboxFigure:inbox di** *Gloria*
 
-![omologato](assets/leave-approved.png)**per il congedo:** *Apri attività*
+![left-](assets/leave-approved.png)
+**approvatoFigure:** *Apri attività*
 
 **Come funziona**
 
-Il flusso di lavoro di invio nell’applicazione di uscita attiva un flusso di lavoro Forms che crea un’attività nella inbox di Gloria per l’approvazione. Consulta il Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+Il flusso di lavoro di invio nell’applicazione di uscita attiva un flusso di lavoro Forms che crea un’attività nella inbox di Gloria per l’approvazione. Rivedete l&#39;Forms Workflow all&#39;indirizzo `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![corporate-card-left-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 
 **Vedi te stesso**
 
-Accedi `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e accedi utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprire l&#39;attività creata per uscire dall&#39;applicazione e approvarla.
+Andate a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` ed effettuate l&#39;accesso utilizzando `grios/password` come nome utente/password per Gloria Rios. Aprire l&#39;attività creata per uscire dall&#39;applicazione e approvarla.
