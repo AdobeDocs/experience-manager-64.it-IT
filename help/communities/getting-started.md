@@ -22,9 +22,9 @@ ht-degree: 12%
 
  AEM Communities consente alle aziende di creare esperienze dedicate per community basate su una libreria di modelli di sito. Forum, gruppi, blog, condivisione di file, calendari, feed di attività e profili utente estesi possono essere integrati nel sito Web per promuovere le interazioni tra progetti, clienti e aziende.
 
-Di seguito è riportata un&#39;esercitazione sulla creazione rapida di una community [di](overview.md#engagement-community) coinvolgimento a scopo dimostrativo o di sviluppo.
+Di seguito è riportata un&#39;esercitazione sulla configurazione rapida di una [community di coinvolgimento](overview.md#engagement-community) a scopo dimostrativo o di sviluppo.
 
-Per un&#39;esercitazione sulla configurazione rapida di una community di [abilitazione](overview.md#enablement-community), visita la [Guida introduttiva ad  AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
+Per un&#39;esercitazione sulla configurazione rapida di una [community di abilitazione](overview.md#enablement-community), visitare la [Guida introduttiva  AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
 
 * [Configurazione iniziale](setup.md)
 
