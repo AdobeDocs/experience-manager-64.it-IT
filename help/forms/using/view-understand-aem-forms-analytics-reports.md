@@ -25,9 +25,9 @@ ht-degree: 0%
 
 La funzione di analisi in  AEM Forms è disponibile come parte del pacchetto  del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, consultate [Installazione e configurazione  AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics . Per informazioni sulla soluzione, consultate [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics . Per informazioni sulla soluzione, vedere [ Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Una volta ottenuto il pacchetto  del componente aggiuntivo AEM Forms e un account  Adobe Analytics, è possibile integrare  account Adobe Analytics con  AEM Forms e abilitare il tracciamento dei moduli o dei documenti come descritto in [Configura analisi e rapporti](/help/forms/using/configure-analytics-forms-documents.md).
+Una volta ottenuto il pacchetto  del componente aggiuntivo AEM Forms e un account  Adobe Analytics, è possibile integrare  account Adobe Analytics con  AEM Forms e abilitare il tracciamento dei moduli o dei documenti come descritto in [Configura analisi e report](/help/forms/using/configure-analytics-forms-documents.md).
 
 ## Registrazione delle informazioni sull&#39;interazione con l&#39;utente {#how-user-interaction-information-is-recorded}
 
@@ -51,21 +51,21 @@ Quando un utente interagisce con il modulo, le interazioni vengono registrate e 
 
 Per visualizzare i rapporti di analisi, effettuate le seguenti operazioni:
 
-1. Accedi al portale AEM all&#39;indirizzo `https://[hostname]:[port]`
-1. Fate clic su **Forms > Forms e documenti**.
+1. Accedete al portale AEM all&#39;indirizzo `https://[hostname]:[port]`
+1. Fare clic su **Forms > Forms &amp; Documents**.
 
 1. Selezionare il modulo per il quale si desidera visualizzare i report di analisi.
-1. Selezionate **Altro > Report** di Analytics.
+1. Selezionare **Altro > Analytics Reports**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Report analisi, comando
+**A.** Analytics Report, comando
 
  AEM Forms visualizza i report di analisi per il modulo e per ciascun pannello del modulo, come mostrato di seguito.
 
 ![Report di riepilogo di un modulo adattivo](assets/analyticsdashboard_callout.png)
 
-**A.** Conversioni **B.** Riepilogo a livello di modulo **C.** Riepilogo a livello di pannello **D.** Browser di visitatori - filtro **E.** Sistema operativo dei visitatori - filtro **F.** Lingua dei visitatori - filtro
+**A.** Conversioni  **B.Riepilogo a livello di** modulo  **C.** Riepilogo a livello di pannello  **D.** Browser di visitatori - filtro  **E.** OS di visitatori - filtro  **** F.Lingua dei visitatori - filtro
 
 Per impostazione predefinita, viene visualizzato il rapporto di analisi per gli ultimi sette giorni. Puoi visualizzare i rapporti degli ultimi 15 giorni, degli ultimi 1 mese e così via, oppure specificare un intervallo di date.
 
@@ -95,11 +95,11 @@ La sezione di riepilogo a livello di modulo fornisce informazioni approfondite s
 * **Bozze**: Numero di volte in cui il modulo è stato salvato come bozza
 * **Invii**: Numero di volte in cui il modulo è stato inviato
 * **Interrompi**: Numero di volte in cui gli utenti hanno iniziato a compilare il modulo e poi se ne sono andati senza compilare il modulo
-* **Visitatori** univoci: Numero di volte in cui il modulo viene rappresentato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, consulta Visitatori [unici, Visite e comportamento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)dei clienti.
+* **Visitatori** univoci: Numero di volte in cui il modulo viene rappresentato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori unici, Visite e comportamento dei clienti](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Report di analisi di riepilogo a livello di modulo esteso](assets/analytics-report.png)
 
-## Panel report {#bottom-summary-report}
+## Rapporto pannello {#bottom-summary-report}
 
 La sezione di riepilogo a livello di pannello contiene le seguenti informazioni su ciascun pannello del modulo:
 
@@ -109,7 +109,7 @@ La sezione di riepilogo a livello di pannello contiene le seguenti informazioni 
 
 * **Aiuto accessibile**: Numero medio di volte in cui gli utenti hanno eseguito l’accesso alla guida contestuale per i campi nel pannello. L&#39;Aiuto accessibile viene fornito suddividendo il numero totale di volte in cui l&#39;Aiuto è accessibile per un campo in base al numero di rappresentazioni del modulo.
 
-### Report dettagliato del pannello {#detailed-panel-report}
+### Rapporto dettagliato sul pannello {#detailed-panel-report}
 
 Potete anche visualizzare i dettagli di ciascun pannello facendo clic sul nome di un pannello in Rapporto pannello.
 
@@ -119,7 +119,7 @@ Il rapporto dettagliato mostra i valori per tutti i campi del pannello.
 
 Report pannello ha tre schede:
 
-* **Rapporto** ora (predefinito): Visualizza il tempo, in secondi, trascorso a compilare ciascuno dei campi nel pannello
+* **Rapporto**  ora (predefinito): Visualizza il tempo, in secondi, trascorso a compilare ciascuno dei campi nel pannello
 * **Report** errore: Visualizza il numero di errori riscontrati dagli utenti durante la compilazione dei campi
 * **Rapporto** Aiuto: Numero di volte in cui è stato eseguito l&#39;accesso all&#39;aiuto per un particolare campo
 
@@ -131,7 +131,7 @@ Le tabelle Distribuzione browser, Distribuzione sistema operativo e Distribuzion
 
 Per filtrare ulteriormente i dati di analisi, potete fare clic su una voce in una qualsiasi delle tabelle. Ad esempio, se fai clic su Google Chrome nella tabella di distribuzione del browser, il rapporto viene riprodotto con i dati relativi al browser Google Chrome come segue:
 
-![Filtro applicato al report di Analytics - Google Chrome ](assets/filter.png)
+![Filtro applicato al report di Analytics - Google Chrome  ](assets/filter.png)
 
 Se visualizzate il rapporto del pannello dopo aver applicato un filtro, i dati del rapporto del pannello vengono visualizzati anche in base al filtro applicato.
 
@@ -143,8 +143,8 @@ Una volta applicato il filtro:
 
 ![Pulsante Chiudi per rimuovere il filtro applicato](assets/close-filter.png)
 
-## A/B Testing {#a-b-testing}
+## Test A/B {#a-b-testing}
 
 Se il test A/B è abilitato e configurato per il modulo, nella pagina del rapporto è disponibile un elenco a discesa che è possibile utilizzare per visualizzare il rapporto di test A/B. Il rapporto di test A/B mostra le prestazioni comparative di due versioni del modulo configurate.
 
-Per ulteriori informazioni sui test A/B, vedere [Creazione e gestione di test A/B per i moduli](/help/forms/using/ab-testing-adaptive-forms.md)adattivi.
+Per ulteriori informazioni sui test A/B, vedere [Creazione e gestione di test A/B per i moduli adattivi](/help/forms/using/ab-testing-adaptive-forms.md).
