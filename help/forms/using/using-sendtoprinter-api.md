@@ -30,8 +30,8 @@ In  AEM Forms, è possibile utilizzare il servizio SendToPrinter per inviare un 
    Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: Il servizio Output supporta il protocollo CIFS (Common Internet File System) per la stampa.
 
@@ -68,7 +68,7 @@ L&#39;autenticazione è supportata solo per la stampa CIFS. Per eseguire l&#39;a
 
 1. Andate a https://&lt;server>:&lt;porta>/sistema/console.
 
-1. Vai a **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
+1. Andate a **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
 1. Inserite del testo normale e fate clic su **[!UICONTROL Protect]**.
 
