@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Il componente Moduli HTML5 in AEM offre il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) e utilizzare la funzionalità di rappresentazione HTML5. Questi modelli di modulo, insieme alle relative risorse, possono risiedere AEM repository, nel file system o essere esposti tramite http. Tuttavia, se si intende gestire i moduli utilizzando Forms Manager, i modelli e le risorse devono risiedere nell&#39;archivio AEM.
 
-Sebbene i moduli HTML5 corrispondano in larga misura al comportamento dei PDF forms, alcune funzioni di entrambi i formati non sono applicabili all’altro formato. Ad esempio, il modo in cui i codici a barre vengono applicati a un modulo PDF in  Adobe Reader varia a seconda del modulo Mobile o il modo in cui il modulo viene firmato digitalmente varia anche a seconda dei formati. Per ulteriori informazioni su tali variazioni, vedere Differenza [tra i moduli HTML5 e i PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+Sebbene i moduli HTML5 corrispondano in larga misura al comportamento dei PDF forms, alcune funzioni di entrambi i formati non sono applicabili all’altro formato. Ad esempio, il modo in cui i codici a barre vengono applicati a un modulo PDF in  Adobe Reader varia a seconda del modulo Mobile o il modo in cui il modulo viene firmato digitalmente varia anche a seconda dei formati. Per ulteriori informazioni su tali variazioni, vedere [Differenza tra le funzioni dei moduli HTML5 e dei PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 Per le funzioni XFA comuni, vedere le procedure ottimali e le linee guida riportate di seguito per progettare un modulo che funzioni in entrambi i formati.
 
@@ -33,6 +33,6 @@ La scheda Anteprima HTML viene aggiunta nella modalità Progettazione per i prog
 
 ### Firma scarabocchio {#scribble-signature}
 
-La destinazione chiave per i moduli HTML5 sono i dispositivi touch. Pertanto, in  AEM Forms Designer è stato aggiunto un nuovo controllo firma con script. È possibile fare clic o trascinare e rilasciare il controllo firma script sul modello di modulo e configurarlo. Viene rappresentato come campo di script nella rappresentazione HTML5 e può essere utilizzato per creare script di firma sui dispositivi touch. Sui computer desktop, può essere utilizzato come campo di scripting utilizzando il controllo del mouse. Per ulteriori informazioni sull&#39;utilizzo di questa funzione, vedere Campo [di](/help/forms/using/scribble-signature.md)scorrimento XFA.
+La destinazione chiave per i moduli HTML5 sono i dispositivi touch. Pertanto, in  AEM Forms Designer è stato aggiunto un nuovo controllo firma con script. È possibile fare clic o trascinare e rilasciare il controllo firma script sul modello di modulo e configurarlo. Viene rappresentato come campo di script nella rappresentazione HTML5 e può essere utilizzato per creare script di firma sui dispositivi touch. Sui computer desktop, può essere utilizzato come campo di scripting utilizzando il controllo del mouse. Per ulteriori informazioni sull&#39;utilizzo di questa funzione, vedere [XFA Scribble Field](/help/forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
