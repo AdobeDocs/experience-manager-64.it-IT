@@ -22,9 +22,9 @@ ht-degree: 1%
 
 Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
 
-Potete [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo aver installato [pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms, i gruppi menzionati in questo articolo, quali form-user e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
+Dopo aver installato [ pacchetto aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, quali form-user e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
 
 <table> 
  <tbody>
