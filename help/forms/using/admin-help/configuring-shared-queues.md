@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurazione delle code condivise{#configuring-shared-queues}
 
-Le code condivise consentono di configurare e gestire le code degli utenti in modo efficace. Una coda di utenti è semplicemente costituita da tutte le attività assegnate a un utente. Per ulteriori informazioni, vedere [Elenco](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) attività. Potete assegnare, annullare l’assegnazione e riassegnare le code utente in base alle esigenze aziendali. Potete gestire le code condivise in due modi:
+Le code condivise consentono di configurare e gestire le code degli utenti in modo efficace. Una coda di utenti è semplicemente tutte le attività assegnate a un utente. Per ulteriori informazioni, vedere [To Do Lists](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Potete assegnare, annullare l’assegnazione e riassegnare le code utente in base alle esigenze aziendali. Potete gestire le code condivise in due modi:
 
 **Gestire L&#39;Accesso A Un Utente**
 
@@ -30,7 +30,7 @@ Questa opzione consente di gestire l&#39;accesso a una coda di utenti selezionat
 
 Questa opzione consente di gestire le code condivise assegnate a un utente selezionato.
 
-## Gestione dell&#39;accesso a una coda di utenti selezionata {#managing-access-to-a-selected-user-queue}
+## Gestione dell&#39;accesso a una coda utente selezionata {#managing-access-to-a-selected-user-queue}
 
 Gestione dell&#39;accesso a un utente consente di gestire l&#39;accesso a una coda di utenti selezionata. Potete concedere o revocare l’accesso a una coda di utenti selezionata ad altri utenti nell’organizzazione. Per esempio, Kara Bowman è fuori ufficio. Utilizzando la funzionalità Gestisci accesso a un utente, la sua coda può essere condivisa con Akira Tanaka e John Jacobs per il completamento. A un punto successivo, quando Kara Bowman ritorna in ufficio, puoi revocare l&#39;accesso alla sua coda da Akira Tanaka e John Jacobs.
 
@@ -43,7 +43,7 @@ Una volta condivise, queste attività possono essere completate dall&#39;utente,
 ### Configurazione dell&#39;accesso a una coda utente selezionata {#configuring-access-to-a-selected-user-queue}
 
 1. Accedete alla console di amministrazione utilizzando un account amministratore.
-1. Selezionare **Servizi** > Flusso di lavoro **** moduli > Coda **** condivisa.
+1. Selezionare **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso a un utente, individua e seleziona l’utente di cui desideri condividere la coda. In qualsiasi momento, il riquadro in basso a destra visualizza l&#39;elenco degli utenti con accesso alla coda di utenti selezionata.
 1. Nel riquadro in basso a sinistra, individuate e selezionate l’utente. Fate clic su Condividi.
@@ -52,7 +52,7 @@ Una volta condivise, queste attività possono essere completate dall&#39;utente,
 ### Revoca dell&#39;accesso a una coda utente selezionata {#revoking-access-to-a-selected-user-queue}
 
 1. Accedete alla console di amministrazione utilizzando un account amministratore.
-1. Selezionare **Servizi** > Flusso di lavoro **** moduli > Coda **** condivisa.
+1. Selezionare **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso a un utente, individua e seleziona l’utente di cui desideri gestire la coda.
 1. Nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata. Selezionate l’utente e fate clic su Revoca.
@@ -71,7 +71,7 @@ Una volta assegnati, questi task possono essere completati dall&#39;utente trami
 ### Concessione dell&#39;accesso a una coda utente selezionata {#granting-access-to-a-selected-user-queue}
 
 1. Accedete alla console di amministrazione utilizzando un account amministratore.
-1. Selezionare **Servizi** > Flusso di lavoro **** moduli > Coda **** condivisa.
+1. Selezionare **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso a un utente, individua e seleziona l&#39;utente di cui desideri condividere la coda. In qualsiasi momento, il riquadro in basso a destra visualizza l&#39;elenco degli utenti con accesso alla coda di utenti selezionata.
 1. Nel riquadro in basso a sinistra, individuate e selezionate le code utente da condividere con l’utente selezionato. Fate clic su Condividi.
@@ -80,7 +80,7 @@ Una volta assegnati, questi task possono essere completati dall&#39;utente trami
 ### Revoca dell&#39;accesso a una coda utente selezionata {#revoking_access_to_a_selected_user_queue-1}
 
 1. Accedete alla console di amministrazione utilizzando un account amministratore.
-1. Selezionare **Servizi** > Flusso di lavoro **** moduli > Coda **** condivisa.
+1. Selezionare **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
 
 1. Nella scheda Gestisci accesso per utente, individua e seleziona l’utente di cui desideri gestire la coda.
 1. Nel riquadro in basso a destra viene visualizzato l’elenco delle code utente assegnate all’utente selezionato. Selezionate la coda di utenti e fate clic su Revoca.
