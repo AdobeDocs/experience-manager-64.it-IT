@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-È possibile creare un modulo adattivo basato su un modello di modulo XFA ( `*.XDP` file). Questo riutilizzo consente di mantenere l&#39;investimento nei moduli XFA esistenti. Per informazioni sull&#39;utilizzo di un modello di modulo XFA per la creazione di un modulo adattivo, [creare un modulo adattivo basato su un modello](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+È possibile creare un modulo adattivo basato su un modello di modulo XFA ( `*.XDP` file). Questo riutilizzo consente di mantenere l&#39;investimento nei moduli XFA esistenti. Per informazioni sull&#39;utilizzo di un modello di modulo XFA per la creazione di un modulo adattivo, vedere [Creare un modulo adattivo basato su un modello](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 È possibile riutilizzare i campi del file XDP nel modulo adattivo. Questi campi sono denominati campi associati. Le proprietà dei campi associati (come script, etichette e formato di visualizzazione) vengono copiate dal file XDP. È inoltre possibile scegliere di ignorare il valore di alcune di queste proprietà.
 
@@ -38,7 +38,7 @@ Per utilizzare le informazioni contenute in questo articolo, si consiglia di acq
 
 * XFA (XML Forms Architecture)
 
-Per usare le risorse, come per l’esempio riportato nell’articolo, scaricate il pacchetto di esempio come descritto nella sezione successiva, [Pacchetto](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)di esempio.
+Per utilizzare le risorse, come illustrato nell&#39;articolo, scaricate il pacchetto di esempio come descritto nella sezione successiva, [Pacchetto di esempio](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
 ## Pacchetto di esempio {#sample-package}
 
@@ -59,7 +59,7 @@ Il pacchetto contiene le risorse seguenti:
 1. Andate a https://&lt;server>:&lt;porta>/aem/forms.html. Se richiesto, immettete le credenziali.
 1. Aprite sample-af-xfa per la modifica in modalità di creazione.
 1. Dal browser Contenuto nella barra laterale, scegliete la scheda Oggetti modello dati. Trascinare NumericField1 e TextField1 nel modulo adattivo.
-1. Modificate il Titolo del campo NumericField1 da Campo **** numerico a Campo numerico **AF.**
+1. Modificare il titolo del campo NumericField1 da **Campo numerico** a **Campo numerico AF.**
 
 >[!NOTE]
 >
@@ -71,28 +71,28 @@ Ogni volta che si verificano modifiche in un file XDP o in un frammento, l&#39;i
 
 Dopo aver aggiornato un file XDP, è necessario caricarlo nuovamente nell&#39;interfaccia  AEM Forms per contrassegnare le modifiche.
 
-Ad esempio, è possibile aggiornare il `sample-form.xdp` file seguendo la procedura seguente:
+Ad esempio, è possibile aggiornare il file `sample-form.xdp` utilizzando i seguenti passaggi:
 
-1. Passa a `https://<server>:<port>/projects.html.` Immettere le credenziali, se richiesto.
+1. Passa a `https://<server>:<port>/projects.html.` Se richiesto, immetti le tue credenziali.
 1. Fate clic sulla scheda Forms a sinistra.
-1. Scaricate il `sample-form.xdp` file sul computer locale. Il file XDP viene scaricato come `.zip` file, che può essere estratto utilizzando qualsiasi utilità di decompressione file.
+1. Scaricate il file `sample-form.xdp` nel computer locale. Il file XDP viene scaricato come file `.zip`, che può essere estratto utilizzando qualsiasi utilità di decompressione file.
 
-1. Aprire il `sample-form.xdp` file e modificare il titolo del campo TextField1 da Campo **di** testo a Campo **di testo** personale.
+1. Aprire il file `sample-form.xdp` e modificare il titolo del campo TextField1 da **Campo di testo** a **Campo di testo**.
 
-1. Caricate nuovamente il `sample-form.xdp` file nell’interfaccia  di AEM Forms.
+1. Caricate nuovamente il file `sample-form.xdp` nell&#39;interfaccia  di AEM Forms.
 
 Se un file XDP viene aggiornato, viene visualizzata un&#39;icona nell&#39;editor quando si modificano i moduli adattivi in base al file XDP. Questa icona indica che il modulo adattivo non è sincronizzato con il file XDP. Nell’immagine seguente, vedete l’icona accanto alla barra laterale.
 
 ![Icona per visualizzare che il modulo adattivo non è sincronizzato con il file XDP](assets/sync-af-xfa.png)
 
-## Sincronizzazione di moduli adattivi con l’ultimo file XDP {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
+## Sincronizzazione dei moduli adattivi con l&#39;ultimo file XDP {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
 Quando un modulo adattivo non sincronizzato con il file XDP viene aperto per la creazione successiva, viene visualizzato il seguente messaggio:
-**Schema/modello di modulo per il modulo adattivo è stato aggiornato.`Click Here`per riavviarlo con la nuova versione.**
+**Schema/modello di modulo per il modulo adattivo è stato aggiornato. `Click Here` per riavviarlo con la nuova versione.**
 
 Facendo clic sul messaggio, i campi del modulo adattivo vengono sincronizzati con i campi corrispondenti nel file XDP.
 
-Per l’esempio utilizzato in questo articolo, aprite `sample-xfa-af` in modalità authoring. Il messaggio viene visualizzato nella parte inferiore del modulo adattivo.
+Per l&#39;esempio utilizzato in questo articolo, aprite `sample-xfa-af` in modalità di creazione. Il messaggio viene visualizzato nella parte inferiore del modulo adattivo.
 
 ![Messaggio che richiede di sincronizzare il modulo adattivo con il file XDP](assets/sync-af-xfa-1.png)
 
@@ -100,13 +100,13 @@ Per l’esempio utilizzato in questo articolo, aprite `sample-xfa-af` in modalit
 
 Tutte le proprietà copiate dal file XDP al modulo adattivo vengono aggiornate, fatta eccezione per le proprietà esplicitamente sostituite nel modulo adattivo (dalla finestra di dialogo dei componenti) dall&#39;autore. L&#39;elenco delle proprietà che sono state aggiornate è disponibile nei registri del server.
 
-Per aggiornare le proprietà nel modulo adattivo di esempio, fare clic sul collegamento (con etichetta `"Click Here"`) nel messaggio. Il titolo di TextField1 cambia da Campo **di testo** a Campo **di testo** personale.
+Per aggiornare le proprietà nel modulo adattivo di esempio, fare clic sul collegamento (con etichetta `"Click Here"`) nel messaggio. Il titolo di TextField1 cambia da **Campo di testo** a **Campo di testo personale**.
 
 ![update-property](assets/update-property.png)
 
 >[!NOTE]
 >
->L’etichetta Campo numerico AF non è stata modificata perché questa proprietà era stata ignorata dalla finestra di dialogo delle proprietà del componente, come descritto in [Aggiungi contenuto ai moduli](#p-add-content-to-adaptive-form-br-p)adattivi.
+>L&#39;etichetta AF Numeric Field non è stata modificata perché questa proprietà è stata ignorata dalla finestra di dialogo delle proprietà del componente, come descritto in [Aggiungi contenuto a moduli adattivi](#p-add-content-to-adaptive-form-br-p).
 
 ### Aggiunta di nuovi campi dal file XDP al modulo adattivo   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -116,15 +116,15 @@ Non è necessario fare clic sul collegamento nel messaggio di errore per aggiorn
 
 ### Campi eliminati nel file XDP {#deleted-fields-in-xdp-file}
 
-Se un campo precedentemente copiato in un modulo adattivo viene eliminato da un file XDP, in modalità di creazione viene visualizzato un messaggio di errore che informa che il campo non esiste nel file XDP. In tali casi, eliminare manualmente il campo dal modulo adattivo o cancellare la `bindRef` proprietà nella finestra di dialogo del componente.
+Se un campo precedentemente copiato in un modulo adattivo viene eliminato da un file XDP, in modalità di creazione viene visualizzato un messaggio di errore che informa che il campo non esiste nel file XDP. In questi casi, eliminare manualmente il campo dal modulo adattivo o deselezionare la proprietà `bindRef` nella finestra di dialogo del componente.
 
 I passaggi seguenti illustrano questo flusso di utilizzo per le risorse nell’esempio utilizzato in questo articolo:
 
-1. Aggiornare il `sample-form.xdp` file ed eliminare NumericField1.
-1. Caricare il `sample-form.xdp` file nell’interfaccia  di AEM Forms
+1. Aggiornare il file `sample-form.xdp` ed eliminare NumericField1.
+1. Caricare il file `sample-form.xdp` nell&#39;interfaccia  di AEM Forms
 1. Aprire il modulo `sample-xfa-af` adattivo per la creazione. Viene visualizzato il seguente messaggio di errore: Schema/modello di modulo per il modulo adattivo è stato aggiornato. `Click Here` per riavviarlo con la nuova versione.
 
-1. Fai clic sul collegamento (&quot; `Click Here`&quot;) nel messaggio. Viene visualizzato un messaggio di errore che segnala che il campo non esiste più nel file XDP.
+1. Fare clic sul collegamento (con l&#39;etichetta &quot; `Click Here`&quot;) nel messaggio. Viene visualizzato un messaggio di errore che segnala che il campo non esiste più nel file XDP.
 
 ![Errore visualizzato durante l&#39;eliminazione di un elemento nel file XDP](assets/no-element-xdp.png)
 
@@ -134,7 +134,7 @@ Anche il campo eliminato è contrassegnato da un’icona che indica un errore ne
 
 >[!NOTE]
 >
->Anche i campi del modulo adattivo con un binding non corretto ( `bindRef` valore non valido nella finestra di dialogo di modifica) sono considerati campi eliminati. Se l&#39;autore non corregge questi errori e pubblica il modulo adattivo, il campo viene trattato come un normale campo modulo adattivo non associato e viene incluso nella sezione non associata del file XML di output.
+>Anche i campi del modulo adattivo con un binding non corretto (un valore `bindRef` non valido nella finestra di dialogo di modifica) sono considerati campi eliminati. Se l&#39;autore non corregge questi errori e pubblica il modulo adattivo, il campo viene trattato come un normale campo modulo adattivo non associato e viene incluso nella sezione non associata del file XML di output.
 
 ## Download {#downloads}
 
