@@ -38,18 +38,18 @@ Se il database è in esecuzione in modalità di registrazione, come descritto ne
 >
 >I file a cui non viene fatto riferimento possono persistere nella directory GDS dopo il processo di ripristino. Questa è una limitazione nota al momento.
 
-## Eseguire il backup delle directory di database, GDS, AEM repository e Content Storage Root {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Eseguire il backup delle directory radice di database, GDS, AEM repository e Content Storage {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 È necessario inserire AEM moduli in modalità backup sicuro (snapshot) o backup continuo (copertura continua). Prima di impostare AEM moduli per l&#39;immissione di una delle modalità di backup, assicurarsi di disporre dei seguenti elementi:
 
 * Verificare la versione del sistema e registrare le patch o gli aggiornamenti applicati dopo l&#39;ultimo backup completo dell&#39;immagine del sistema.
-* Se utilizzate backup in modalità di scorrimento o snapshot, accertatevi che il database sia configurato con le impostazioni di registro corrette per consentire il backup a caldo del database. (Vedere [AEM database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)moduli.)
+* Se utilizzate backup in modalità di scorrimento o snapshot, accertatevi che il database sia configurato con le impostazioni di registro corrette per consentire il backup a caldo del database. (Vedere [AEM database moduli](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Inoltre, attenersi alle seguenti linee guida per il processo di backup/ripristino.
 
-* Eseguire il backup della directory GDS utilizzando un sistema operativo disponibile o un&#39;utility di backup di terze parti. (Vedere [Posizione](/help/forms/using/admin-help/files-back-recover.md#gds-location)GDS.)
-* (Facoltativo) Eseguire il backup della directory principale di Content Storage utilizzando un sistema operativo disponibile o un&#39;utility e un backup di terze parti. (Vedete Posizione di origine dell&#39;archiviazione [dei contenuti (ambiente autonomo)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o posizione di origine dell&#39;archiviazione dei [contenuti (ambiente cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Esegui il backup delle istanze di creazione e pubblicazione (backup crx-repository).
+* Eseguire il backup della directory GDS utilizzando un sistema operativo disponibile o un&#39;utility di backup di terze parti. (Vedere [Posizione GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
+* (Facoltativo) Eseguire il backup della directory principale di Content Storage utilizzando un sistema operativo disponibile o un&#39;utility e un backup di terze parti. (Vedere [Posizione radice memorizzazione contenuto (ambiente autonomo)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Posizione radice memorizzazione contenuto (ambiente cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Eseguire il backup   creare e pubblicare le istanze (crx -repository backup).
 
    Per eseguire il backup dell&#39;ambiente della soluzione di gestione della corrispondenza, eseguire i passaggi sulle istanze di creazione e pubblicazione come descritto in [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
@@ -60,9 +60,9 @@ Inoltre, attenersi alle seguenti linee guida per il processo di backup/ripristin
    * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi localmente. Non devono distribuire nuovi processi durante la fase di backup.
    * La decisione relativa alla lunghezza di ciascuna sessione di backup (per la modalità di backup continuo) deve basarsi sul tempo totale impiegato per eseguire il backup di tutti i dati nei moduli AEM (DB, GDS, AEM repository e qualsiasi altro dato personalizzato aggiuntivo).
 
-Eseguire il backup del database dei moduli AEM, compresi eventuali log delle transazioni. (Vedere [AEM database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)moduli.) Per ulteriori informazioni, consultate l&#39;articolo appropriato della knowledge base per il database:
+Eseguire il backup del database dei moduli AEM, compresi eventuali log delle transazioni. (Vedere [AEM database moduli](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, consultate l&#39;articolo appropriato della knowledge base per il database:
 
-* [Oracle Backup e ripristino per i moduli AEM](https://www.adobe.com/go/kb403624)
+* [ Oracle Backup e ripristino per i moduli AEM](https://www.adobe.com/go/kb403624)
 * [Backup e ripristino di MySQL per moduli AEM](https://www.adobe.com/go/kb403625)
 * [Backup e ripristino di Microsoft SQL Server per i moduli AEM](https://www.adobe.com/go/kb403623)
 * [Backup e ripristino DB2 per i moduli AEM](https://www.adobe.com/go/kb403626)
@@ -91,15 +91,15 @@ Questi articoli forniscono indicazioni sulle funzionalità di base del database 
 
 **Utilizzo dell&#39;opzione della riga di comando per passare alla modalità di backup sicura**
 
-È possibile utilizzare gli script di interfaccia della riga di comando `LCBackupMode` per posizionare AEM moduli in modalità di backup sicuro.
+È possibile utilizzare gli script dell&#39;interfaccia della riga di comando `LCBackupMode` per posizionare AEM moduli in modalità di backup sicuro.
 
 1. Impostate  ADOBE_LIVECYCLE e avviate il server applicazione.
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. A seconda del sistema operativo in uso, modificare lo `LCBackupMode.cmd` script o `LCBackupMode.sh` specificare i valori predefiniti appropriati per il sistema in uso.
-1. Al prompt dei comandi, eseguire il comando seguente su una singola riga:
+1. Andate alla cartella `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. A seconda del sistema operativo in uso, modificare lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire i valori predefiniti appropriati al sistema in uso.
+1. Al prompt dei comandi, eseguire il comando seguente su una sola riga:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*nomehost *`] [-port=`*portnumber* `] [-user=`*nomeutente *`] [-password=`*password* nome `] [-label=`*etichetta *`] [-timeout=`*secondi* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname *`] [-port=`*portnumber* `] [-user=`*nomeutente *`] [-password=`*password* `] [-label=`*labelname *`]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nomehost* `] [-port=`*numeroporta* `] [-user=`*nomeutente* `] [-password=`*password* `] [-label=`*nomeetichetta* `] [-timeout=`*secondi* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
 
    Nei comandi precedenti, i segnaposto sono definiti come segue:
 
@@ -133,17 +133,17 @@ Per utilizzare la console di amministrazione per estrarre AEM moduli dalla modal
 
 È possibile utilizzare l&#39;interfaccia della riga di comando per estrarre AEM moduli dalla modalità di backup sicura (modalità snapshot) o per terminare la sessione corrente della modalità di backup (modalità di scorrimento). Non è possibile utilizzare la console di amministrazione per uscire dalla modalità di backup continuo. In modalità di backup continuo, i controlli Utilità di backup nella console di amministrazione sono disabilitati. È necessario utilizzare una chiamata API o il comando LCBackupMode.
 
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. A seconda del sistema operativo in uso, modificare lo `LCBackupMode.cmd` script o `LCBackupMode.sh` specificare i valori predefiniti appropriati per il sistema in uso.
+1. Andate alla cartella `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. A seconda del sistema operativo in uso, modificare lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire i valori predefiniti appropriati al sistema in uso.
 
    >[!NOTE]
    >
-   >È necessario impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazione in [Preparazione all&#39;installazione dei moduli](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*AEM.*
+   >È necessario impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazione in [Preparazione all&#39;installazione di moduli AEM](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Eseguire il comando seguente su una sola riga:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nomehost *`] [-port=`*portnumber* `] [-user=`*nomeutente *`] [-password=`*password* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nomehost *`] [-port=`*portnumber* `] [-user=`*nomeutente *`] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
 
       Nei comandi precedenti, i segnaposto sono definiti come segue:
 
