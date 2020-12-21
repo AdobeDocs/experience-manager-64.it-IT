@@ -29,7 +29,7 @@ Per informazioni dettagliate sulla sincronizzazione dell&#39;app, consultate [Si
 
 Quando si sincronizza l&#39;app con il server AEM Forms , i moduli vengono scaricati sul dispositivo mobile. Tuttavia, per impostazione predefinita, gli allegati associati al modulo non vengono scaricati. Ciò implica che se siete online, potete visualizzare gli allegati. Tuttavia, per essere certi di poter visualizzare l&#39;allegato in modalità offline, modificate le impostazioni predefinite nell&#39;app.
 
-Per fare in modo che gli allegati associati siano scaricati con ciascun modulo, impostare Recupera allegati su ON. Per informazioni dettagliate, consultate [Aggiornamento delle impostazioni](/help/forms/using/update-general-settings.md)generali.
+Per fare in modo che gli allegati associati siano scaricati con ciascun modulo, impostare Recupera allegati su ON. Per informazioni dettagliate, vedere [Aggiornamento delle impostazioni generali](/help/forms/using/update-general-settings.md).
 
 Poiché il download dei dati sul dispositivo mobile può influire sulle prestazioni del dispositivo, per impostazione predefinita, l&#39;impostazione Recupera allegati è impostata su OFF. Gli allegati vengono estratti nel dispositivo per qualsiasi attività scaricata dal server dopo che l&#39;impostazione è stata aggiornata a ON. In modalità offline, un utente può quindi lavorare su tutte le attività che vengono scaricate sul dispositivo dopo aver impostato le opzioni **Recupera allegati** su ON.
 
@@ -39,7 +39,7 @@ Poiché il download dei dati sul dispositivo mobile può influire sulle prestazi
 
 Per configurare il componente offline lato server di  app AEM Forms:
 
-1. Nell’istanza di creazione, andate a **Adobe Experience Manager** >**Strumenti** > **Forms** > **Configura servizio** Forms App Offline.
+1. Nell&#39;istanza di creazione, andate a **Adobe Experience Manager** >**Strumenti** > **Forms** > **Configura servizio offline app Forms**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
@@ -50,4 +50,4 @@ Per configurare il componente offline lato server di  app AEM Forms:
    * **Validità** cache: Specifica il periodo di validità della cache offline lato server.
    * **Percorsi** di osservazione delle risorse: Specifica i percorsi in cui il servizio offline effettua il monitoraggio delle modifiche delle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Esempio, `/etc/clientlibs/fd,/content/dam/images`.
 
-1. Nella scheda Cache **risorse** manuale, specificare le dipendenze del modulo offline non è in grado di identificare. È possibile specificare risorse come le immagini caricate dall&#39;interno di JavaScript.  app AEM Forms scaricherà anche queste risorse per la modalità offline.
+1. Nella scheda **Cache delle risorse manuali**, specificare che il servizio offline delle dipendenze del modulo non è in grado di identificare. È possibile specificare risorse come le immagini caricate dall&#39;interno di JavaScript.  app AEM Forms scaricherà anche queste risorse per la modalità offline.
