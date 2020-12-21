@@ -1,8 +1,8 @@
 ---
 title: Aggiornamento a AEM 6.4 Forms
 seo-title: Aggiornamento a AEM 6.4 Forms
-description: 'È possibile eseguire un aggiornamento diretto da Forms 6.1, Forms 6.2 e da Forms ES4 SP1 a AEM 6.3. '
-seo-description: 'È possibile eseguire un aggiornamento diretto da Forms 6.1, Forms 6.2 e da Forms ES4 SP1 a AEM 6.3. '
+description: 'È possibile eseguire un aggiornamento diretto da AEM 6.1 Forms, AEM 6.2 Forms e da LiveCycle ES4 SP1 a AEM 6.3 Forms. '
+seo-description: 'È possibile eseguire un aggiornamento diretto da AEM 6.1 Forms, AEM 6.2 Forms e da LiveCycle ES4 SP1 a AEM 6.3 Forms. '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aggiornamento a AEM 6.4 Forms{#upgrade-to-aem-forms}
 
-AEM 6.4 Forms include diverse nuove funzioni e miglioramenti che semplificano la creazione, la gestione e l&#39;esperienza utente con moduli e corrispondenze. Per informazioni su tutte le nuove funzionalità e i miglioramenti di Forms AEM 6.4, consultate [Nuovo documento](/help/forms/using/whats-new.md)di riepilogo delle funzioni.
+AEM 6.4 Forms include diverse nuove funzioni e miglioramenti che semplificano la creazione, la gestione e l&#39;esperienza utente con moduli e corrispondenze. Per informazioni su tutte le nuove funzionalità e i miglioramenti di Forms AEM 6.4, consultate [Nuovo documento di riepilogo delle funzioni](/help/forms/using/whats-new.md).
 
 Puoi aggiornare il LiveCycle esistente o &#39;installazione AEM Forms per ottenere nuove funzionalità e miglioramenti offerti in AEM 6.4 Forms, mantenendo intatti i dati, i processi e le risorse esistenti. Durante l&#39;aggiornamento, vengono conservati anche i metadati e lo stato dei processi. Potete scegliere un percorso di aggiornamento per iniziare a eseguire l&#39;aggiornamento.
 
