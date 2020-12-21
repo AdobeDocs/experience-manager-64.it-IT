@@ -28,33 +28,33 @@ Nell&#39;app AEM Forms , lo scorrimento a sinistra apre una nuova attività o un
 
 1. Apri il progetto.
 
-   * Per iOS, aprite `Capture.xcodeproj` in Xcode
+   * Per iOS, apri `Capture.xcodeproj` in Xcode
    * Per Android, aprite il progetto Android in Eclipse.
    * Per Windows, aprire `MWSWindows.sln` in Visual Studio.
 
-1. Andate alla cartella delle viste e aprite il `task.js` file per la modifica.
+1. Andate alla cartella delle viste e aprite il file `task.js` per la modifica.
 
-   * In Xcode, andate alla cartella **Capture > www > wsmobile > js > runtime > views** .
-   * In Eclipse, passa alla cartella **assets > www > wsmobile > js > runtime > views** .
-   * In Visual Studio, passare alla cartella **MWSWindows > www > wsmobile > js > runtime > views** .
+   * In Xcode, andate alla cartella **Capture > www > wsmobile > js > runtime > views**.
+   * In Eclipse, andate alla cartella **assets > www > wsmobile > js > runtime > views**.
+   * In Visual Studio, passare alla cartella **MWSWindows > www > wsmobile > js > runtime > views**.
 
    >[!NOTE]
    >
    >Il file task.js contiene la visualizzazione della colonna vertebrale associata a ogni attività o punto di inizio elencato negli elenchi task o punto di inizio.
 
-1. Nel `task.js` file, cercare la proprietà events della visualizzazione.
+1. Nel file `task.js`, cercare la proprietà events della vista.
 
    La proprietà events è una mappa con ciascuna voce nel formato seguente:
 
    `"EventName Selector": "Function"`
 
-   Quando si attiva un evento Javascript denominato `EventName`su un elemento HTML specificato da `Selector`, `Function`viene chiamato.
+   Quando si attiva un evento Javascript denominato `EventName`su un elemento HTML specificato da `Selector`, viene chiamato il simbolo `Function`.
 
 1. Trova
 
    * &quot;tap.taskContentArea&quot;: &quot;onTaskClick&quot;,
 
-      &quot;tap .taskOpenArea&quot;: &quot;onTaskClick&quot;,
+      &quot;tap.taskOpenArea&quot;: &quot;onTaskClick&quot;,
 
       &quot;tap .task-content&quot;: &quot;onTaskClick&quot;,
 
@@ -70,7 +70,7 @@ Nell&#39;app AEM Forms , lo scorrimento a sinistra apre una nuova attività o un
       &quot;swipe.last_empty_div&quot;: &quot;onTaskClick&quot;,
 
 
-1. Salvate e chiudete il `task.js` file.
+1. Salvate e chiudete il file `task.js`.
 1. Create ed eseguite l&#39;app AEM Forms . Ora è possibile aprire un’interfaccia con il passaggio del dito verso sinistra e il passaggio del dito verso destra.
 
 Allo stesso modo, potete apportare modifiche in altre viste per diverse combinazioni di gesti, elementi HTML e funzioni.
