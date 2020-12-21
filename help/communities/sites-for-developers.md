@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Community Site Essentials {#community-site-essentials}
+# Nozioni di base del sito community {#community-site-essentials}
 
 ## Modello del sito personalizzato {#custom-site-template}
 
@@ -29,7 +29,7 @@ A tal fine,
 * Creare un modello personalizzato
 * Sovrapponi il percorso predefinito del modello di sito
 * Aggiungere il modello personalizzato al percorso della sovrapposizione
-* Specificare il modello personalizzato aggiungendo una `page-template` proprietà al `configuration` nodo
+* Specificare il modello personalizzato aggiungendo una proprietà `page-template` al nodo `configuration`
 
 **Modello** predefinito:
 
@@ -37,53 +37,54 @@ A tal fine,
 
 **Modello personalizzato nel percorso** della sovrapposizione:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;nome *modello*>**.hbs
+/**app**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
 
 **Proprietà**: page-template\
 **Tipo**: Stringa\
-**Valore**: &lt;*template-name*> (nessuna estensione)
+**Valore**:  &lt;>template-name *> (nessuna estensione)*
 
 **Nodo** di configurazione:
 
-/content/&lt;percorso *del sito* community>/&lt;*lang*>/configuration
+/content/&lt;*percorso del sito della community*>/&lt;*lang*/configuration
 
 Ad esempio: /content/sites/interazione/it/configurazione
 
 >[!NOTE]
 >
->Tutti i nodi del percorso sovrapposto devono essere solo di tipo `Folder`.
+>Tutti i nodi del percorso sovrapposto devono essere di tipo `Folder`.
 
 >[!CAUTION]
 >
->Se al modello personalizzato viene assegnato il nome *sitepage.hbs,* tutti i siti della community verranno personalizzati.
+>Se al modello personalizzato viene assegnato il nome *sitepage.hbs,*, tutti i siti della community verranno personalizzati.
 
 ### Esempio di modello di sito personalizzato {#custom-site-template-example}
 
-Ad esempio, `vertical-sitepage.hbs` è un modello di sito che consente di posizionare verticalmente i collegamenti dei menu verso il basso a sinistra della pagina, anziché in orizzontale sotto il banner.
+Ad esempio, `vertical-sitepage.hbs` è un modello di sito che consente di posizionare verticalmente i collegamenti dei menu verso il basso a sinistra della pagina, anziché orizzontalmente sotto il banner.
 
-[Ottieni file](assets/vertical-sitepage.hbs)Inserite il modello di sito personalizzato nella cartella delle sovrapposizioni:
+[Ottieni ](assets/vertical-sitepage.hbs)
+file: inserite il modello di sito personalizzato nella cartella delle sovrapposizioni:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
+/**app**/social/console/components/hbs/sitepage/**pagina di sito verticale**.hbs
 
-Identificare il modello personalizzato aggiungendo una `page-template` proprietà al nodo di configurazione:
+Identificare il modello personalizzato aggiungendo una proprietà `page-template` al nodo di configurazione:
 
 /content/sites/sample/en/configuration
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Accertatevi di **salvare tutto** e replicare il codice personalizzato a tutte le istanze AEM (il codice personalizzato non è incluso quando il contenuto del sito community viene pubblicato dalla console).
+Assicuratevi di **salvare tutto** e replicare il codice personalizzato a tutte le istanze AEM (il codice personalizzato non è incluso quando il contenuto del sito community viene pubblicato dalla console).
 
-La procedura consigliata per la replica del codice personalizzato consiste nel [creare un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) e distribuirlo in tutte le istanze.
+La procedura consigliata per la replica del codice personalizzato è [creare un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) e distribuirlo in tutte le istanze.
 
 ## Esportazione di un sito community {#exporting-a-community-site}
 
 Una volta creato un sito community, è possibile esportare il sito come pacchetto AEM memorizzato in package manager e disponibile per il download e il caricamento.
 
-È disponibile dalla console [Siti](sites-console.md#exporting-the-site)community.
+Questa funzione è disponibile dalla [console Siti community](sites-console.md#exporting-the-site).
 
 Si noti che UGC e codice personalizzato non sono inclusi nel pacchetto del sito community.
 
-Per esportare UGC, utilizzate [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uno strumento di migrazione open source disponibile su GitHub.
+Per esportare UGC, utilizzare [ AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uno strumento di migrazione open source disponibile su GitHub.
 
 ## Eliminazione di un sito community {#deleting-a-community-site}
 
@@ -98,16 +99,17 @@ A partire  AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene vi
 
 Per identificare l&#39;ID univoco del sito associato al sito community, utilizzando CRXDE:
 
-* Andate alla directory principale della lingua del sito, come `/content/sites/*<site name>*/en/rep:policy`
+* Andate alla directory principale della lingua del sito, ad esempio `/content/sites/*<site name>*/en/rep:policy`
 
-* Trova il `allow<#>` nodo con un `rep:principalName` in questo formato `rep:principalName = *community-enable-nrh9h-members*`
+* Trovare il nodo `allow<#>` con un `rep:principalName` in questo formato `rep:principalName = *community-enable-nrh9h-members*`
 
-* L&#39;ID sito è il terzo componente di `rep:principalName`Ad esempio, se 
+* L&#39;ID sito è il terzo componente di `rep:principalName`
+Ad esempio, se 
 `rep:principalName = community-enable-nrh9h-members`
 
-   * **nome** sito = *enable*
-   * **ID** sito = *nrh9h*
-   * **ID** univoco del sito = *enable-nrh9h*
+   * **site name** =  *enable*
+   * **site ID** =  *nrh9h*
+   * **univoco del sito ID** =  *enable-nrh9h*
 
 ### Contenuto generato dall&#39;utente {#user-generated-content}
 
@@ -121,14 +123,14 @@ Tutti gli UGC possono essere rimossi o per un sito specifico, ad esempio:
 
 * path=/content/usergenerated/asi/mongo/content/sites/interazione
 
-Questo rimuove solo il contenuto generato dall’utente (immesso al momento della pubblicazione) e non il contenuto generato (immesso all’autore). Pertanto, i nodi [](srp.md#shadownodes) ombra non vengono modificati.
+Questo rimuove solo il contenuto generato dall’utente (immesso al momento della pubblicazione) e non il contenuto generato (immesso all’autore). Pertanto, [nodi ombra](srp.md#shadownodes) non sono interessati.
 
-### Gruppi utenti community {#community-user-groups}
+### Gruppi di utenti community {#community-user-groups}
 
-Per tutte le istanze di creazione e pubblicazione, dalla console [di](../../help/sites-administering/security.md)sicurezza individuate e rimuovete i gruppi [di](users.md) utenti che sono:
+In tutte le istanze di creazione e pubblicazione, dalla [console di protezione](../../help/sites-administering/security.md), individuare e rimuovere i [gruppi di utenti](users.md) che sono:
 
 * Prefisso con `community`
-* Seguito da un ID sito [univoco](#community-unique-site-id)
+* Seguito da [id sito univoco](#community-unique-site-id)
 
 Esempio, `community-engage-x0e11-members`.
 
@@ -136,10 +138,10 @@ Esempio, `community-engage-x0e11-members`.
 
 Dalla console principale:
 
-* Select **[!UICONTROL Assets]**
-* Attiva modalità **[!UICONTROL Seleziona]**
-* Seleziona la cartella con l&#39;ID [univoco del sito](#community-unique-site-id)
-* Seleziona **[!UICONTROL Elimina]** (potrebbe essere necessario selezionare **[!UICONTROL Altro...]**)
+* Selezionare **[!UICONTROL Risorse]**
+* Modalità **[!UICONTROL Seleziona]**
+* Selezionare la cartella denominata con l&#39; [ID univoco del sito](#community-unique-site-id)
+* Selezionare **[!UICONTROL Elimina]** (potrebbe essere necessario selezionare tra **[!UICONTROL Altro...]**)
 
 ### Record del database {#database-records}
 
