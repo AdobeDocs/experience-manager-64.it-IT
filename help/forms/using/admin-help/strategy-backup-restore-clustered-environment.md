@@ -53,14 +53,14 @@ In questo argomento vengono illustrate le strategie seguenti per eseguire il bac
    1. Esegui il backup di tutti i file di qualsiasi nodo secondario del cluster, incluse le sottodirectory.
    1. Eseguire separatamente il backup dell&#39;ID del repository o del sistema di ciascun nodo del cluster.
 
-   Per i passaggi dettagliati, consultate [Backup e ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Esegui il backup di qualsiasi altro dato, ad esempio i font del cliente.
 1. Avviate di nuovo il cluster.
 
 ### Backup offline senza tempi di inattività {#offline-backup-with-no-downtime}
 
-1. Accedete alla modalità di backup continuo. (vedere [Inserimento delle modalità](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)di backup)
+1. Accedete alla modalità di backup continuo. (vedere [Inserimento delle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Si noti che è necessario lasciare la modalità di backup a scorrimento dopo un ripristino.
 
@@ -72,14 +72,14 @@ In questo argomento vengono illustrate le strategie seguenti per eseguire il bac
    1. Esegui il backup di tutti i file di qualsiasi nodo secondario del cluster, incluse le sottodirectory.
    1. Eseguire il backup di repository/system.id di ciascun nodo del cluster separatamente.
 
-   Per i passaggi dettagliati, consultate [Backup e ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Esegui il backup di qualsiasi altro dato, ad esempio i font del cliente.
 1. Avviate di nuovo il cluster.
 
 ### Backup online senza tempi di inattività ma ritardo nella risposta {#online-backup-with-no-downtime-but-delay-in-response}
 
-1. Accedete alla modalità di backup continuo. (vedere [Inserimento delle modalità](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)di backup)
+1. Accedete alla modalità di backup continuo. (vedere [Inserimento delle modalità di backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Si noti che è necessario lasciare la modalità di backup a scorrimento dopo un ripristino.
 
@@ -146,7 +146,7 @@ Se l&#39;intero cluster ha esito negativo a causa di errori come arresto anomalo
 * Prima di riavviare qualsiasi nodo del cluster, assicurarsi di eliminare l&#39;archivio /clustered.txt dal nodo principale.
 * Assicurarsi che il nodo primario sia avviato per primo e che, una volta completamente attivato, avvii altri nodi.
 
-### Ripristino dell’intero cluster {#restoring-the-entire-cluster}
+### Ripristino dell&#39;intero cluster {#restoring-the-entire-cluster}
 
 1. Arrestate tutti i nodi del cluster.
 1. Ricreare il sistema fisico da un&#39;immagine del sistema.
@@ -178,15 +178,15 @@ Se l&#39;intero cluster ha esito negativo a causa di errori come arresto anomalo
 
 ## Eseguire il backup e ripristinare il nodo di pubblicazione della soluzione di gestione della corrispondenza {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Il nodo editore non ha alcuna relazione principale-secondaria in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo Publisher seguendo [Backup e Ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+Il nodo editore non ha alcuna relazione principale-secondaria in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo Publisher seguendo [Backup e ripristino](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
-### Ripristino di un singolo nodo editore {#recover-a-single-publisher-node}
+### Recuperare un singolo nodo editore {#recover-a-single-publisher-node}
 
 1. Arrestate il nodo che deve essere recuperato e non eseguite alcuna attività di pubblicazione finché il nodo non viene nuovamente attivato.
-1. Ripristinare il nodo Pubblica mediante il [ripristino del backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring del backup).
+1. Ripristinare il nodo Pubblica utilizzando [Ripristino del backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring il backup).
 
 ### Ripristino di un cluster {#recover-a-cluster}
 
 1. Arrestate il cluster.
-1. Ripristinare il nodo Pubblica mediante il [ripristino del backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring del backup).
+1. Ripristinare il nodo Pubblica utilizzando [Ripristino del backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring il backup).
 1. Avviate il nodo principale seguito dal nodo secondario del cluster di autori.
