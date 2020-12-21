@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Specifica delle opzioni di configurazione XCI {#specifying-xci-configuration-options}
 
-Forms consente di specificare un file XCI personalizzato che verrà utilizzato per il rendering. Consultate [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms). Per impostazione predefinita, Forms sostituisce alcune delle opzioni specificate nel file XCI, tra cui:
+Forms consente di specificare un file XCI personalizzato che verrà utilizzato per il rendering. (Vedere [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Per impostazione predefinita, Forms sostituisce alcune delle opzioni specificate nel file XCI, tra cui:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
