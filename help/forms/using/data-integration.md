@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Introduzione all&#39;integrazione  dati AEM Forms {#aem-forms-data-integration}
+# Introduzione  integrazione dei dati AEM Forms {#aem-forms-data-integration}
 
 L&#39;integrazione dei dati consente di integrare  AEM Forms con origini dati diverse e di creare un modello di dati per i moduli per creare e utilizzare moduli adattivi e comunicazioni interattive.
 
 ![](do-not-localize/data-integeration.png)
 
-Le infrastrutture aziendali includono diversi sistemi back-end o origini dati come database, servizi Web, servizi REST, servizi OData e soluzioni CRM. Insieme, creano un sistema informativo che trasmette dati alle applicazioni aziendali per svolgere attività quotidiane. D&#39;altro canto, le applicazioni acquisiscono i dati e li inviano di nuovo per aggiornare le origini dati.
+Le infrastrutture aziendali includono diversi sistemi back-end o origini dati come database, servizi Web, servizi REST, servizi OData e soluzioni CRM. Insieme, creano un sistema di informazione che trasmette dati alle applicazioni aziendali per svolgere attività quotidiane. D&#39;altro canto, le applicazioni acquisiscono i dati e li inviano di nuovo per aggiornare le origini dati.
 
  applicazioni AEM Forms come moduli adattivi e comunicazioni interattive richiedono l&#39;integrazione con le origini dati per recuperare i dati dei clienti durante il rendering dei moduli e la creazione di comunicazioni interattive. Esistono casi d&#39;uso in cui i dati vengono estratti da origini dati in base agli input dell&#39;utente nei moduli adattivi. Inoltre, i dati del modulo adattivo inviati possono essere riscritti per aggiornare le rispettive origini dati.
 
