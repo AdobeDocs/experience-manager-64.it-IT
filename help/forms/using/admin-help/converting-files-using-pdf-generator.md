@@ -39,17 +39,17 @@ Per convertire i file è possibile utilizzare le pagine Web di PDF Generator.
 
    * Se caricate un file di impostazioni, digitatene il percorso e il nome nella casella oppure fate clic su Sfoglia per trovare e selezionare il file.
 
-1. (Facoltativo) In XMP file di metadati, digitate il percorso e il nome del file XMP oppure fate clic su Sfoglia per individuare e selezionare il file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. Consultate [I file](converting-files-using-pdf-generator.md#about-xmp-files)XMP.
+1. (Facoltativo) In XMP file di metadati, digitate il percorso e il nome del file XMP oppure fate clic su Sfoglia per individuare e selezionare il file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (Vedere [Informazioni XMP file](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento. Se si verifica un errore durante la conversione, viene visualizzato un avviso. Se si sta creando un file Postscript, l&#39;avviso contiene anche un collegamento al file di registro.
 1. Fare clic sul collegamento per il file PDF. Il file si apre in  Acrobat.
 
 ### Informazioni sui file XMP {#about-xmp-files}
 
-I documenti PDF creati da PDF Generator in  Acrobat 5.0 o versioni successive contengono i metadati del documento in formato XML. *I metadati* includono informazioni sul documento e il relativo contenuto, ad esempio il nome dell’autore, le parole chiave e le informazioni sul copyright utilizzabili dalle utilità di ricerca.
+I documenti PDF creati da PDF Generator in  Acrobat 5.0 o versioni successive contengono i metadati del documento in formato XML. *I* metadati contengono informazioni sul documento e il relativo contenuto, ad esempio il nome dell&#39;autore, le parole chiave e le informazioni sul copyright utilizzabili dalle utilità di ricerca.
 
 I metadati del documento contengono (ma non sono limitati a) informazioni che vengono visualizzate anche nella scheda Descrizione della finestra di dialogo Proprietà documento in  Acrobat. Le modifiche apportate nella scheda Descrizione vengono riportate nei metadati del documento. I metadati del documento possono essere estesi e modificati utilizzando prodotti di terze parti.
 
- Adobe Extensible Metadata Platform (XMP) fornisce  applicazioni di Adobe con un framework XML comune che standardizza la creazione, l&#39;elaborazione e lo scambio di metadati di documento tra i flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in XMP formato, semplificando la condivisione dei metadati tra i vari documenti. Per ulteriori informazioni sui XMP file, consultate [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e [AdobeXMP Developer Center](https://www.adobe.com/devnet/xmp.html).
+ Adobe Extensible Metadata Platform (XMP) fornisce  applicazioni di Adobe con un framework XML comune che standardizza la creazione, l&#39;elaborazione e lo scambio di metadati di documento tra i flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in XMP formato, semplificando la condivisione dei metadati tra i vari documenti. Per ulteriori informazioni sui XMP file, vedere [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e [ Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 Potete creare XMP file in  Acrobat.
 
@@ -90,13 +90,13 @@ Se il file ZIP contiene più di un file HTML al livello più basso della gerarch
    * Per usare un file di impostazioni esistente, selezionate Carica file impostazioni e fate clic su Sfoglia per passare al percorso del file.
 
 
-1. Per caricare un file XMP, fate clic su Sfoglia e passate al percorso del file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. Consultate [I file](converting-files-using-pdf-generator.md#about-xmp-files)XMP.
+1. Per caricare un file XMP, fate clic su Sfoglia e passate al percorso del file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (Vedere [Informazioni XMP file](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento al file PDF.
 1. Fare clic sul collegamento per visualizzare il documento PDF in  Acrobat.
 
 ## Esportare un file PDF in un altro formato (solo Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-È possibile esportare i file PDF in vari formati, come descritto nel capitolo Genera servizio PDF del manuale [Servizi di riferimento](https://www.adobe.com/go/learn_aemforms_services_63).
+È possibile esportare i file PDF in vari formati, come descritto nel capitolo Generate PDF Service di [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. Nella console di amministrazione, fare clic su Servizi > PDF Generator >  Export PDF.
 1. Fare clic su Sfoglia per individuare il file PDF da esportare.
@@ -105,7 +105,7 @@ Se il file ZIP contiene più di un file HTML al livello più basso della gerarch
 
    Il tempo di conversione visualizzato quando il file viene convertito può essere maggiore del valore qui specificato. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). time. Il valore Specificate un timeout corrisponde solo al tempo necessario per convertire il file.
 
-1. (Facoltativo) Nell&#39;opzione **Specifica profilo** di verifica preliminare personalizzato, fate clic su Sfoglia, quindi selezionate un profilo [di verifica preliminare](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)personalizzato. I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato PDF (PDF/A).
+1. (Facoltativo) Nell&#39;opzione **Specifica profilo di verifica preliminare personalizzato**, fare clic su Sfoglia e selezionare un [profilo di verifica preliminare personalizzato](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato PDF (PDF/A).
 1. Fate clic su Esporta. Al termine della conversione, viene visualizzato un collegamento al file esportato.
 1. Fate clic sul collegamento per visualizzare il file convertito.
 
