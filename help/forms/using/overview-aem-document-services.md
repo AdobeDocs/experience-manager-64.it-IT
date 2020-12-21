@@ -65,7 +65,7 @@ Il documento DDX può specificare i documenti risultanti con le seguenti caratte
 
 * Documento PDF assemblato da più documenti PDF
 * Più documenti PDF suddivisi in un singolo documento PDF
-* Portfolio PDF che include un&#39;interfaccia utente indipendente e più documenti PDF e non PDF
+* PORTFOLIO PDF che include un&#39;interfaccia utente indipendente e più documenti PDF e non PDF
 * Documento XDP assemblato da più documenti XDP
 * Documento XDP contenente frammenti XML inseriti in modo dinamico in un documento XDP
 * Documento PDF che crea un pacchetto per un documento XDP
@@ -97,11 +97,11 @@ Doc Assurance Service consente di cifrare e decrittografare i documenti, ampliar
 
 Il servizio Doc Assurance contiene tre servizi: firma, cifratura e estensione del lettore.
 
-### Servizio Firma {#signature-service}
+### Servizio firma {#signature-service}
 
 Il servizio Signature consente di utilizzare firme digitali e documenti sul server AEM. Ad esempio, il servizio Signature è in genere utilizzato nelle situazioni seguenti:
 
-* Il server AEM certifica un modulo prima che venga inviato all&#39;utente per l&#39;apertura utilizzando  Acrobat o  Adobe Reader.
+* Il server AEM certifica un modulo prima che venga inviato all&#39;utente per l&#39;apertura, utilizzando  Acrobat o  Adobe Reader.
 * Il server AEM convalida una firma aggiunta a un modulo utilizzando  Acrobat o  Adobe Reader.
 * Il server AEM firma un modulo per conto di un notaio pubblico.
 
@@ -132,4 +132,4 @@ Il servizio DocAssurance non è disponibile per l&#39;uso. Per configurare il se
 
 ## Invia a servizio stampante {#send-to-printer-service}
 
-Invia a servizio stampante fornisce l&#39;API per l&#39;invio di documenti alla stampante specificata per la stampa.
+Invia a servizio stampante fornisce l&#39;API per l&#39;invio di documenti a una stampante specificata per la stampa.
