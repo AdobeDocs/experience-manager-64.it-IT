@@ -38,9 +38,9 @@ Con  AEM Forms potete creare, scaricare o caricare i temi. Un tema viene creato 
 
 Per creare un tema, effettuate le seguenti operazioni:
 
-1. Fate clic su **[!UICONTROL Adobe Experience Manager]**, fate clic su **[!UICONTROL Forms]**, quindi fate clic su **[!UICONTROL Temi]**.
+1. Fare clic su **[!UICONTROL Adobe Experience Manager]**, fare clic su **[!UICONTROL Forms]**, quindi su **[!UICONTROL Temi]**.
 
-1. Nella pagina Temi, fate clic su **[!UICONTROL Crea > Tema]**.
+1. Nella pagina Temi fare clic su **[!UICONTROL Crea > Tema]**.
 
    Viene avviata una procedura guidata per creare un tema.
 
@@ -51,17 +51,17 @@ Per creare un tema, effettuate le seguenti operazioni:
    * **[!UICONTROL Posizione]** Clientlib: Posizione nella directory archivio in cui sono memorizzati i clientlibs per il tema.
    * **[!UICONTROL Categoria]** Clientlib: Fornisce un campo di testo per immettere il nome della categoria clientlib per il tema.
 
-1. Fate clic su **[!UICONTROL Crea]** , quindi su **[!UICONTROL Modifica]** per aprire il tema in Editor tema oppure fate clic su **[!UICONTROL Fine]** per tornare alla pagina dei temi.
+1. Fare clic su **[!UICONTROL Crea]**, quindi su **[!UICONTROL Modifica]** per aprire il tema in Editor tema oppure fare clic su **[!UICONTROL Fine]** per tornare alla pagina dei temi.
 
 ### Download di un tema {#downloading-a-theme}
 
 Potete esportare i temi come file zip e usarli in altri progetti o AEM istanze. Per scaricare un tema:
 
-1. Fate clic su **[!UICONTROL Adobe Experience Manager]**, fate clic su **[!UICONTROL Forms]**, quindi fate clic su **[!UICONTROL Temi]**.
+1. Fare clic su **[!UICONTROL Adobe Experience Manager]**, fare clic su **[!UICONTROL Forms]**, quindi su **[!UICONTROL Temi]**.
 
 1. Nella pagina Temi, selezionate un tema e fate clic su **[!UICONTROL Scarica]**. Viene visualizzata una finestra di dialogo con i dettagli del tema.
 
-1. Fate clic su **[!UICONTROL Scarica]**. Il tema viene scaricato come file zip.
+1. Fare clic su **[!UICONTROL Scarica]**. Il tema viene scaricato come file zip.
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ Potete usare i temi creati con i predefiniti di stile del progetto. Potete impor
 
 Per caricare un tema:
 
-1. Fate clic su **[!UICONTROL Adobe Experience Manager]**, fate clic su **[!UICONTROL Forms]**, quindi fate clic su **[!UICONTROL Temi]**.
+1. Fare clic su **[!UICONTROL Adobe Experience Manager]**, fare clic su **[!UICONTROL Forms]**, quindi su **[!UICONTROL Temi]**.
 
-1. Nella pagina Temi, fate clic su **[!UICONTROL Crea > Caricamento]** file.
+1. Nella pagina Temi, fate clic su **[!UICONTROL Crea > Caricamento file]**.
 1. Nel prompt Caricamento file, individuate e selezionate un pacchetto di temi sul computer e fate clic su **[!UICONTROL Carica]**.
 
    Il tema caricato è disponibile nella pagina dei temi.
@@ -175,7 +175,7 @@ Elenco di meta-proprietà di un tema (trovato nella pagina delle proprietà di u
      <li>Percorso del repository definito dall'utente all'interno di '/etc' in cui sono memorizzati i clientlibs corrispondenti a questo tema.</li> 
      <li>Valore predefinito - '/etc/clientlibs/fd/topics' + percorso relativo della risorsa tema.</li> 
      <li>Se la posizione non esiste, la gerarchia delle cartelle viene generata automaticamente.</li> 
-     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> Se si modifica il percorso clientlib predefinito, nell'archivio CRXDE assegnare <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read </code>a <code>fd-service</code> nella nuova posizione. Aggiungi anche un altro ACL aggiungendo <span class="kbd">rinnega jcr:addChildNodes</span> per <code>forms-user</code></em></li> 
+     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> se modificate la posizione clientlib predefinita, nell'archivio CRXDE assegnate  <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a  <code>forms-users</code> e  <code>crx:replicate</code>,  <code>jcr:read </code>a  <code>fd-service</code> nella nuova posizione. Associate anche un altro ACL aggiungendo <span class="kbd">Rifiuta jcr:addChildNodes</span> per <code>forms-user</code></em></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,11 +201,11 @@ L’Editor tema consente di personalizzare gli stili dei componenti formattati i
 
 L’Editor tema è diviso in due pannelli:
 
-* **Area di lavoro** - Visualizzata sul lato destro. Viene visualizzato un esempio di modulo adattivo o di comunicazione interattiva in cui tutte le modifiche dello stile vengono immediatamente applicate. È inoltre possibile selezionare gli oggetti direttamente dal quadro per cercare gli stili ad essi associati e per modificarli. Un righello di risoluzione del dispositivo nella parte superiore regola il quadro. Quando si seleziona un punto di interruzione della risoluzione dal righello, viene visualizzata l&#39;anteprima del modulo di esempio o la comunicazione interattiva per la relativa risoluzione. Il quadro è discusso in dettaglio [di seguito](/help/forms/using/themes.md#using-canvas).
+* **Area di lavoro**  - Visualizzata sul lato destro. Viene visualizzato un esempio di modulo adattivo o di comunicazione interattiva in cui tutte le modifiche dello stile vengono immediatamente applicate. È inoltre possibile selezionare gli oggetti direttamente dal quadro per cercare gli stili ad essi associati e per modificarli. Un righello di risoluzione del dispositivo nella parte superiore regola il quadro. Quando si seleziona un punto di interruzione della risoluzione dal righello, viene visualizzata l&#39;anteprima del modulo di esempio o la comunicazione interattiva per la relativa risoluzione. Il quadro è discusso in dettaglio [sotto](/help/forms/using/themes.md#using-canvas).
 
-* **Barra laterale**- Visualizzata sul lato sinistro. Contiene i seguenti elementi:
+* **Barra laterale** - Visualizzata sul lato sinistro. Contiene i seguenti elementi:
 
-   * **Selettore:** Mostra il componente selezionato per lo stile e le relative proprietà che è possibile definire. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per la definizione dello stile, tutte le caselle di testo nel modulo o nella comunicazione interattiva erediteranno lo stile. I selettori consentono di selezionare un componente generico o un componente specifico per la definizione dello stile. Ad esempio, un componente Campo è un componente generico e una casella di testo è un componente specifico.
+   * **Selettore:** mostra il componente selezionato per lo stile e le relative proprietà che è possibile formattare. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per la definizione dello stile, tutte le caselle di testo nel modulo o nella comunicazione interattiva erediteranno lo stile. I selettori consentono di selezionare un componente generico o un componente specifico per la definizione dello stile. Ad esempio, un componente Campo è un componente generico e una casella di testo è un componente specifico.
 
       **Attribuzione stile a un componente generico:**
 
@@ -221,16 +221,16 @@ L’Editor tema è diviso in due pannelli:
 
       Quando personalizzate tutti i componenti campo con un colore di sfondo specifico, tutti i campi quali età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio age, e ne si riduce la larghezza, la larghezza di tutte le caselle numeriche, come l&#39;età, il numero di persone in una famiglia viene ridotto. La larghezza delle caselle di testo non viene modificata.
 
-   * **Stato:** Consente di personalizzare gli stili di un oggetto in uno stato specifico. Ad esempio, è possibile specificare l&#39;aspetto di un oggetto quando è nello stato predefinito, attivo, disattivato, passaggio del mouse o di errore.
-   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ciascuna categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo, potete fornire Colore di sfondo e Immagine e sfumatura.
-   * **Avanzate:** Consente di aggiungere un CSS personalizzato a un oggetto, che sostituisce le proprietà definite dai controlli visivi in caso di sovrapposizione.
+   * **Stato:** consente di personalizzare gli stili di un oggetto in uno stato specifico. Ad esempio, è possibile specificare l&#39;aspetto di un oggetto quando è nello stato predefinito, attivo, disattivato, passaggio del mouse o di errore.
+   * **Categorie delle proprietà:le proprietà** dello stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ciascuna categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo, potete fornire Colore di sfondo e Immagine e sfumatura.
+   * **Avanzate:** consente di aggiungere CSS personalizzato a un oggetto, che ignora le proprietà definite dai controlli visivi in caso di sovrapposizione.
    * **Visualizza CSS**: Consente di visualizzare i CSS del componente selezionato
 
-   Inoltre, nella barra laterale, in basso è presente una freccia. Quando fate clic sulla freccia, vengono visualizzate altre due opzioni: **Simulare il successo** e **simulare l&#39;errore.** Queste opzioni, insieme alle opzioni descritte sopra, sono discusse in dettaglio [di seguito](/help/forms/using/themes.md#using-rail).
+   Inoltre, nella barra laterale, in basso è presente una freccia. Quando fate clic sulla freccia, vengono visualizzate altre due opzioni: **Simulare il successo** e **Simulare l&#39;errore.** Queste opzioni, insieme alle opzioni descritte sopra, sono discusse in dettaglio  [di seguito](/help/forms/using/themes.md#using-rail).
 
-   [ ![Editor di temi con Barra e Area di lavoro evidenziata.](assets/themes.png)](assets/themes-1.png) **A.** Barra laterale **B.** Canvas
+   [ ![Editor di temi con Barra e Area di lavoro evidenziata.](assets/themes.png)](assets/themes-1.png) **A.** Barra laterale  **B.** Canvas
 
-### Styling components {#styling-components}
+### Componenti dello stile {#styling-components}
 
 È possibile utilizzare un tema in più moduli adattivi e nelle comunicazioni interattive, per importare la formattazione del componente specificata nel tema. È possibile formattare vari componenti come titoli, descrizioni, pannelli, campi, icone e caselle di testo. Utilizzare i widget per configurare le proprietà dei componenti in un tema. La conoscenza precedente di CSS o LESS non è necessaria ma desiderata, anche se la sezione Ignorare i CSS consente di scrivere codice CSS o fornire selettori personalizzati. La sezione Sostituzioni CSS viene visualizzata quando selezionate un componente nella barra laterale.
 
@@ -240,11 +240,11 @@ Opzioni nella barra laterale che consentono di selezionare e formattare diversi 
 
 Facendo clic sul pulsante Modifica rispetto a un componente nella barra laterale, il componente viene selezionato in Area di lavoro e potete definire lo stile del componente utilizzando le opzioni nella barra laterale.
 
-Alcuni componenti come caselle di testo, caselle numeriche, pulsanti di scelta e caselle di controllo sono classificati in componenti generici come Campo. Ad esempio, è necessario personalizzare lo stile dei pulsanti di scelta. Per selezionare i pulsanti di scelta per lo stile, selezionare **Campo > Widget > Pulsante** di scelta.
+Alcuni componenti come caselle di testo, caselle numeriche, pulsanti di scelta e caselle di controllo sono classificati in componenti generici come Campo. Ad esempio, è necessario personalizzare lo stile dei pulsanti di scelta. Per selezionare i pulsanti di scelta per lo stile, selezionare **Campo > Widget > Pulsante di scelta**.
 
-Fate clic su **ESPANDI TUTTO** nella barra laterale per visualizzare, selezionare e formattare i componenti categorizzati che non sono visibili in primo piano.
+Fare clic su **EXPAND ALL** nella barra laterale per visualizzare, selezionare e formattare i componenti categorizzati che non sono visibili in primo piano.
 
-### Layout del pannello Stile {#styling-panel-layouts-br}
+### Layout del pannello di stile {#styling-panel-layouts-br}
 
 I temi in  AEM Forms supportano lo stile degli elementi nel layout dei pannelli nei moduli e nelle comunicazioni interattive. È supportato lo stile degli elementi nei layout out-of-the-box e nei layout personalizzati.
 
@@ -267,7 +267,7 @@ Lo stile di layout personalizzati dall&#39;Editor tema include:
 * Definizione delle proprietà CSS che possono essere applicate a questi componenti
 * Definire lo stile di questi componenti in modo interattivo dall’interfaccia utente
 
-### Stili diversi per dimensioni di schermo diverse {#different-styles-for-different-screen-sizes-br}
+### Stili diversi per diverse dimensioni di schermo {#different-styles-for-different-screen-sizes-br}
 
 I layout per desktop e dispositivi mobili possono avere stili leggermente diversi o completamente diversi. Per i dispositivi mobili, tablet e telefono condividono layout simili, tranne che per le dimensioni dei componenti.
 
@@ -277,11 +277,11 @@ Usate i punti di interruzione dell’Editor tema per definire lo stile alternati
 >
 >Il tema viene creato innanzitutto utilizzando un modulo o una comunicazione interattiva, quindi applicato a moduli o comunicazioni interattive diversi. I punti di interruzione utilizzati nella creazione di un tema possono essere diversi dal modulo o dalla comunicazione interattiva su cui viene applicato il tema. Le query multimediali CSS si basano sul modulo o sulla comunicazione interattiva utilizzata per la creazione di temi e non sul modulo o sulla comunicazione interattiva a cui è applicato il tema.
 
-### Modifica del contesto delle proprietà dello stile nella barra laterale durante la selezione degli oggetti {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
+### Modifiche contestuali delle proprietà dello stile nella barra laterale per la selezione degli oggetti {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
 Quando selezionate un componente nell’area di lavoro, le relative proprietà di stile sono elencate nella barra laterale. Selezionare il tipo di oggetto e il relativo stato, quindi specificarne lo stile.
 
-### Stili usati di recente nell&#39;Editor tema {#recently-used-styles-in-theme-editor}
+### Stili usati di recente in Editor tema {#recently-used-styles-in-theme-editor}
 
 L’editor di temi memorizza nella cache fino a 10 stili applicati a un componente. Potete usare gli stili memorizzati nella cache con un altro componente di un tema. Gli stili utilizzati di recente sono disponibili sotto il componente selezionato nella barra laterale come casella di riepilogo. Inizialmente, l&#39;elenco degli stili utilizzati di recente è vuoto.
 
@@ -293,7 +293,7 @@ Quando si formatta un componente, gli stili vengono memorizzati nella cache ed e
 
 In questo esempio, lo stile dell&#39;etichetta del campo viene modificato e quando si seleziona Descrizione pannello reattivo per lo stile, viene aggiunta una voce di elenco nella libreria delle risorse. La voce nella libreria delle risorse può essere utilizzata per modificare lo stile per Descrizione pannello reattivo.
 
-Quando uno stile viene aggiunto nella libreria delle risorse, è disponibile per altri temi e nella modalità [di](/help/forms/using/inline-style-adaptive-forms.md) stile dell’editor di moduli o dell’interfaccia utente dell’editor di comunicazioni interattivo. Allo stesso modo, quando si utilizza la modalità di stile dell’editor di moduli o dell’interfaccia utente dell’editor di comunicazioni interattive per formattare un componente, lo stile viene memorizzato nella cache ed è disponibile nei temi.
+Quando uno stile viene aggiunto nella libreria delle risorse, è disponibile per altri temi e nella [modalità di stile](/help/forms/using/inline-style-adaptive-forms.md) dell&#39;editor di moduli o dell&#39;interfaccia utente dell&#39;editor di comunicazioni interattivo. Allo stesso modo, quando si utilizza la modalità di stile dell’editor di moduli o dell’interfaccia utente dell’editor di comunicazioni interattive per formattare un componente, lo stile viene memorizzato nella cache ed è disponibile nei temi.
 
 Il pulsante più (+) nella libreria delle risorse consente di salvare in modo permanente lo stile con il nome specificato. Il pulsante più salva lo stile anche se non si fa clic sul pulsante Salva nella barra laterale per applicare lo stile a un componente. Il pulsante più per salvare uno stile per un uso successivo non è disponibile in modalità stile.
 
@@ -301,14 +301,14 @@ Il pulsante più (+) nella libreria delle risorse consente di salvare in modo pe
 
 Quando si fornisce un nome personalizzato per uno stile, lo stile è legato a un tema e non è più disponibile per altri temi. Per eliminare uno stile salvato:
 
-1. Nella barra degli strumenti CANVAS, fate clic su Opzioni **[!UICONTROL tema (]** Theme Options ![) Opzioni](assets/theme-options.png) **[!UICONTROL tema (tema) >]** Gestisci stili(Manage Styles).
+1. Sulla barra degli strumenti CANVAS, fare clic su **[!UICONTROL Opzioni tema]** ![opzioni tema](assets/theme-options.png) > **[!UICONTROL Gestisci stili]**.
 1. Nella finestra di dialogo Gestisci stili, selezionate uno stile salvato, fate clic su **[!UICONTROL Elimina]**.
 
    ![Eliminare lo stile salvato](assets/manage-styles.png)
 
-### Anteprima dal vivo, salvare ed eliminare le modifiche {#live-preview-save-and-discard-changes}
+### Visualizzare in anteprima dal vivo, salvare ed eliminare le modifiche {#live-preview-save-and-discard-changes}
 
-Le modifiche apportate allo stile vengono immediatamente riportate nel modulo o nella comunicazione interattiva caricata nell’area di lavoro. L&#39;anteprima dal vivo consente di definire e visualizzare in modo interattivo l&#39;impatto dello stile. Quando modificate lo stile di un componente, nella barra laterale viene attivato il pulsante **[!UICONTROL Fine]** . Per mantenere le modifiche, fate clic sul pulsante **[!UICONTROL Fine]** .
+Le modifiche apportate allo stile vengono immediatamente riportate nel modulo o nella comunicazione interattiva caricata nell’area di lavoro. L&#39;anteprima dal vivo consente di definire e visualizzare in modo interattivo l&#39;impatto dello stile. Quando modificate lo stile di un componente, nella barra laterale viene attivato il pulsante **[!UICONTROL Fine]**. Per mantenere le modifiche, utilizzare il pulsante **[!UICONTROL Fine]**.
 
 >[!NOTE]
 >
@@ -320,9 +320,9 @@ Quando si crea un tema, questo viene creato con un modulo fornito con l&#39;Edit
 
 Per sostituire il modulo corrente o la comunicazione interattiva nell&#39;area di lavoro dell&#39;Editor tema:
 
-1. Nel pannello EDITOR TEMA, fate clic su Opzioni **[!UICONTROL tema (]** Theme Options) ![](assets/theme-options.png) tema-options ****> Configura.
+1. Nel pannello EDITOR TEMA, fate clic su **[!UICONTROL Opzioni tema]** ![opzioni tema](assets/theme-options.png) **[!UICONTROL > Configura]**.
 
-1. Nella scheda Generale, individuare e selezionare un modulo o una comunicazione interattiva per il campo Modulo/Documento **** adattivo.
+1. Nella scheda Generale, individuare e selezionare un modulo o una comunicazione interattiva per il campo **[!UICONTROL Modulo/Documento adattivo]**.
 
 ### Ripristina/Annulla {#redo-undo}
 
@@ -330,42 +330,42 @@ Potete annullare o ripristinare le modifiche indesiderate che si verificano acci
 
 ![redo-undo](assets/redo-undo.png)
 
-**Figura:** *Pulsanti Annulla/Ripristina nell’area di lavoro*
+**Figura:pulsanti** *Annulla/Ripristina nell’area di lavoro*
 
 I pulsanti Ripristina/Annulla vengono visualizzati quando si formatta un componente nell’Editor tema.
 
-## Utilizzo dell&#39;Editor tema {#using-the-theme-editor}
+## Utilizzo dell&#39;editor di temi {#using-the-theme-editor}
 
-L&#39;Editor tema consente di modificare un tema creato o caricato. Andate su **[!UICONTROL Forms e documenti > Temi]**, selezionate un tema e apritelo. Il tema viene aperto nell’Editor tema.
+L&#39;Editor tema consente di modificare un tema creato o caricato. Andate su **[!UICONTROL Forms &amp; Documents > Themes]**, selezionate un tema e apritelo. Il tema viene aperto nell’Editor tema.
 
 Come già detto, l’Editor tema dispone di due pannelli: Barra laterale e quadro.
 ![editor di temi](assets/theme-editor.png)
 
 Personalizzazione dello stile dello stato di successo del componente Widget casella di testo nell’Editor tema. Il componente è selezionato in Area di lavoro e il suo stato è selezionato nella barra laterale. Le opzioni di stile disponibili nella barra laterale consentono di personalizzare l’aspetto di un componente.
 
-### Utilizzo del quadro {#using-canvas}
+### Utilizzo di Canvas {#using-canvas}
 
 Il tema viene creato utilizzando il modulo out-of-the-box oppure utilizzando un modulo o una comunicazione interattiva a scelta dell&#39;utente. Il quadro mostra l&#39;anteprima del modulo o la comunicazione interattiva utilizzata per creare il tema con le personalizzazioni specificate nel tema. Il righello sopra il modulo viene utilizzato per determinare il layout in base alle dimensioni di visualizzazione del dispositivo.
 
 Nella barra degli strumenti Area di lavoro sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Attiva/disattiva pannello]** laterale ![o pannello](assets/toggle-side-panel.png)laterale: Consente di mostrare o nascondere la barra laterale.
+* **[!UICONTROL Attiva/disattiva pannello]** ![laterale](assets/toggle-side-panel.png): Consente di mostrare o nascondere la barra laterale.
 
-* **[!UICONTROL Opzioni]** tema - ![opzioni](assets/theme-options.png)tema: Fornisce tre opzioni
+* **[!UICONTROL Opzioni tema]** ![opzioni](assets/theme-options.png) tema: Fornisce tre opzioni
 
    * Configura: Fornisce opzioni per selezionare il modulo di anteprima o la comunicazione interattiva, clientlib di base e la configurazione del Typekit.
    * Visualizza CSS tema: Genera CSS per il tema selezionato.
    * Gestisci stili: Fornisce opzioni per gestire gli stili di testo e immagini
    * Aiuto: Esegue una visita guidata immagine dell&#39;Editor tema.
 
-* **[!UICONTROL Emulatore]** ![righello](assets/ruler.png): Emulazione dell’aspetto del tema per diverse dimensioni di visualizzazione. Una dimensione di visualizzazione viene trattata come un punto di interruzione nell&#39;emulatore. È possibile selezionare un punto di interruzione e specificarne uno stile. Ad esempio, Desktop e Tablet sono due punti di interruzione. È possibile specificare stili diversi per ciascun punto di interruzione.
+* **** ![Emulatore](assets/ruler.png): Emulazione dell’aspetto del tema per diverse dimensioni di visualizzazione. Una dimensione di visualizzazione viene trattata come un punto di interruzione nell&#39;emulatore. È possibile selezionare un punto di interruzione e specificarne uno stile. Ad esempio, Desktop e Tablet sono due punti di interruzione. È possibile specificare stili diversi per ciascun punto di interruzione.
 
 Quando selezionate un componente nell’area di lavoro, compare sopra la barra degli strumenti del componente. La barra degli strumenti dei componenti consente di selezionare i componenti o di passare a componenti generici. Ad esempio, potete selezionare una casella di testo numerica in un pannello. Nella barra degli strumenti del componente sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Widget]** casella numerica: Consente di selezionare il componente per personalizzarne l’aspetto nella barra laterale.
 * **[!UICONTROL Widget]** campo: Consente di selezionare il componente generico da applicare allo stile. In questo esempio, tutti i componenti di immissione di testo (casella di testo/casella numerica/passo numerico/data di input) sono selezionati per lo stile.
 
-* ![a livello](assets/field-level.png)di campo: Consente di passare a un componente generico per la definizione dello stile. Se si seleziona una casella numerica e si tocca questa icona, viene selezionato il componente Campo. Se selezionate il componente Campo e toccate questa icona, il pannello è selezionato. Toccando questa icona per la selezione, si finisce per selezionare il layout per lo stile.
+* ![a livello](assets/field-level.png) di campo: Consente di passare a un componente generico per la definizione dello stile. Se si seleziona una casella numerica e si tocca questa icona, viene selezionato il componente Campo. Se selezionate il componente Campo e toccate questa icona, il pannello è selezionato. Toccando questa icona per la selezione, si finisce per selezionare il layout per lo stile.
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Quando selezionate un componente nell’area di lavoro, compare sopra la barra d
 
 ![Barra degli strumenti del componente](assets/overlay.png)
 
-**Figura:** *Barra degli strumenti del componente nella casella numerica del quadro*
+**Figura:barra degli strumenti** *del componente nella casella numerica del quadro*
 
 ### Utilizzo della barra laterale {#using-rail}
 
@@ -424,7 +424,7 @@ Le opzioni per la personalizzazione degli stili di stato variano per i diversi c
    <td><p>Avanzate </p> </td> 
    <td><p>Consente di aggiungere:</p> 
     <ul> 
-     <li>Proprietà per <code>::before</code> e <code>::after</code> pseudo elementi per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e formattarlo.<br /> Consultate Elementi Pseudo <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS</a>.</li> 
+     <li>Proprietà degli pseudoelementi <code>::before</code> e <code>::after</code> per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore, quindi formattarlo.<br /> Consultate Elementi Pseudo  <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS</a>.</li> 
      <li>Codice CSS personalizzato in linea con un componente e scrittura di selettori personalizzati. </li> 
     </ul> <p>Quando aggiungete un codice CSS personalizzato, sostituisce la personalizzazione aggiunta utilizzando le opzioni nella barra laterale. </p> </td> 
   </tr> 
@@ -459,14 +459,14 @@ Per personalizzare lo stile di un particolare componente, effettuate le seguenti
 
    * ![a livello di campo](assets/field-level.png)
 
-1. Selezionare Widget **[!UICONTROL casella]** numerica.
+1. Selezionare **[!UICONTROL Widget Casella numerica]**.
 1. Il titolo della barra laterale diventa Widget Casella numerica e mostra le opzioni per personalizzarne l’aspetto.
 
-   Utilizzate l’opzione **[!UICONTROL Dimension e posizione]** nella barra laterale per personalizzare le dimensioni del componente. Assicurarsi che lo stato sia **[!UICONTROL Predefinito]**.
+   Utilizzate l&#39;opzione **[!UICONTROL Dimension e posizione]** nella barra laterale per personalizzare le dimensioni del componente. Assicurarsi che lo stato sia **[!UICONTROL Default]**.
 
-Anziché selezionare Widget **[!UICONTROL casella]** numerica, selezionare Widget **** campo nella barra degli strumenti del componente ed eseguire la procedura descritta sopra. Quando si selezionano le dimensioni per l&#39;opzione Widget **** campo, tutte le caselle di testo tranne la casella numerica hanno la stessa dimensione.
+Invece di selezionare **[!UICONTROL Widget casella numerica]**, selezionare **[!UICONTROL Widget campo]** nella barra degli strumenti del componente ed eseguire i passaggi descritti sopra. Quando si selezionano le dimensioni per l&#39;opzione **[!UICONTROL Widget campo]**, tutte le caselle di testo tranne la casella numerica hanno la stessa dimensione.
 
-### Attribuzione dello stile ai campi per un dato stato {#styling-fields-given-state}
+### Campi di stile per un dato stato {#styling-fields-given-state}
 
 Con la barra degli strumenti dei componenti, potete anche specificare lo stile dei componenti per i diversi stati. Ad esempio, se un componente è disabilitato, si trova in uno stato disabilitato. Gli stati usati comunemente di un componente che è possibile formattare nell’editor di temi sono: Predefinito, Attiva, Disattivato, Errore, Successo e Passaggio del mouse. Potete selezionare un componente nell’area di lavoro e utilizzare l’opzione Stato nella barra laterale per personalizzarne l’aspetto.
 
@@ -477,16 +477,16 @@ Per personalizzare lo stile di un componente in uno stato specifico, effettuate 
    La barra laterale mostra le opzioni per personalizzare lo stile del componente.
 
 1. Selezionate uno stato nella barra laterale. Ad esempio, Stato errore.
-1. Utilizzate opzioni quali **[!UICONTROL Bordo e Sfondo]** nella barra laterale per personalizzare l’aspetto del componente.
-1. Utilizzate l&#39;opzione **[!UICONTROL Simula errore]** nella parte inferiore della barra laterale per vedere l&#39;aspetto dello stile nella modifica.
+1. Utilizzate opzioni quali **[!UICONTROL Bordo, Sfondo]** nella barra laterale per personalizzare l&#39;aspetto del componente.
+1. Utilizzate l&#39;opzione **[!UICONTROL Simula errore]** nella parte inferiore della barra laterale per visualizzare l&#39;aspetto dello stile durante la modifica.
 
 Quando personalizzate lo stile di un componente dopo averlo specificato, la personalizzazione viene visualizzata solo per il componente per lo stato specificato. Ad esempio, se personalizzate lo stile del componente quando è selezionato lo stato del passaggio del mouse. La personalizzazione viene visualizzata per il componente quando si passa il puntatore sul componente nel modulo di cui è stato effettuato il rendering o nella comunicazione interattiva a cui si applica il tema.
 
-Per simulare il comportamento di stati diversi da errore e successo, utilizzate la modalità Anteprima. Per utilizzare la modalità Anteprima, fate clic su **[!UICONTROL Anteprima]** nella barra degli strumenti della pagina.
+Per simulare il comportamento di stati diversi da errore e successo, utilizzate la modalità Anteprima. Per utilizzare la modalità Anteprima, fare clic su **[!UICONTROL Anteprima]** nella barra degli strumenti della pagina.
 
-### Layout di stile per schermi più piccoli {#styling-layouts-for-smaller-displays}
+### Layout di stile per display più piccoli {#styling-layouts-for-smaller-displays}
 
-Utilizzate il righello in Area di lavoro per selezionare punti di interruzione per i dispositivi con display più piccoli. Fate clic sul ![righello](assets/ruler.png) emulatore nell’area di lavoro per visualizzare il righello e i punti di interruzione. I punti di interruzione consentono di visualizzare l&#39;anteprima di un modulo o di una comunicazione interattiva per le dimensioni di visualizzazione relative a dispositivi diversi, ad esempio telefoni e tablet. Nell&#39;Editor tema sono supportate più dimensioni di visualizzazione.
+Utilizzate il righello in Area di lavoro per selezionare punti di interruzione per i dispositivi con display più piccoli. Fare clic su emulatore ![righello](assets/ruler.png) in Area di lavoro per visualizzare il righello e i punti di interruzione. I punti di interruzione consentono di visualizzare l&#39;anteprima di un modulo o di una comunicazione interattiva per le dimensioni di visualizzazione relative a dispositivi diversi, ad esempio telefoni e tablet. Nell&#39;Editor tema sono supportate più dimensioni di visualizzazione.
 
 Per formattare i componenti per diversi punti di interruzione:
 
@@ -501,23 +501,23 @@ Per formattare i componenti per diversi punti di interruzione:
 
 ### Utilizzo dei font Web in un tema {#using-web-fonts-in-a-theme}
 
-È ora possibile utilizzare i font disponibili in un servizio Web in un modulo adattivo o in una comunicazione interattiva. È disponibile come configurazione [Typekit](https://typekit.com/),  servizio di font Web  out-of-the-box. Per utilizzare Typekit, create un kit e font al suo interno, quindi ottenete l&#39;ID Kit dal sito Web [Typekit](https://typekit.com/).
+È ora possibile utilizzare i font disponibili in un servizio Web in un modulo adattivo o in una comunicazione interattiva. È disponibile una configurazione con [Typekit](https://typekit.com/),  servizio  font Web fornito con i prodotti, Per utilizzare Typekit, create un kit e font al suo interno, quindi ottenete l&#39;ID Kit dal [sito Web di Typekit](https://typekit.com/).
 
 Per configurare Typekit in AEM, effettuate le seguenti operazioni:
 
-1. Nell’istanza di authoring, fate clic su ![](assets/adobeexperiencemanager.png)**[!UICONTROL adobeexperience emanagerExperience Manager  Adobe > Strumenti ]**![martello](assets/hammer.png)**[!UICONTROL > Distribuzione > Cloud Services ]**.
-1. Nella pagina **[!UICONTROL Cloud Services]** , accedi a Servizi **[!UICONTROL di]** terze parti > **[!UICONTROL Typekit]** e fai clic su **[!UICONTROL Configura ora]** in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante **+** per creare una nuova istanza.
-1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un titolo per la configurazione e fate clic su **[!UICONTROL Crea]**.
+1. Nell&#39;istanza dell&#39;autore, fare clic su ![adobeexperienceemanager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Strumenti ]**![martello](assets/hammer.png)**[!UICONTROL > Distribuzione > Cloud Services ]**.
+1. Nella pagina **[!UICONTROL Cloud Services]**, andate a **[!UICONTROL Servizi di terze parti]** > **[!UICONTROL Typekit]** e fate clic su **[!UICONTROL Configura ora]** in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante **+** per creare una nuova istanza.
+1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specificate un titolo per la configurazione e fate clic su **[!UICONTROL Crea]**.
 
    Viene nuovamente visualizzata la pagina di configurazione.
 
-1. Nella finestra di dialogo Edit Component (Modifica componente) visualizzata, inserite l&#39;ID Kit e fate clic su **OK**.
+1. Nella finestra di dialogo Modifica componente visualizzata, fornite l&#39;ID kit e fate clic su **OK**.
 
 Per configurare un tema in modo che utilizzi la configurazione TypeKit, effettuate le seguenti operazioni:
 
 1. Nell’istanza di creazione, aprite un tema nell’editor di temi.
-1. Nell&#39;editor di temi, accedi a Opzioni **[!UICONTROL tema (]** Theme Options) ![(Opzioni](assets/theme-options.png) tema) > **[!UICONTROL Configura (Configure)]**.
-1. Nel campo Configurazione **** Typekit, selezionate un kit e fate clic su **[!UICONTROL Salva]**.
+1. Nell&#39;editor di temi, passare a **[!UICONTROL Opzioni tema]** ![opzioni tema](assets/theme-options.png) > **[!UICONTROL Configura]**.
+1. Nel campo **[!UICONTROL Configurazione Typekit]**, selezionate un kit e fate clic su **[!UICONTROL Salva]**.
 
    Ora è possibile vedere i font aggiunti nella proprietà font-family del tema.
 
@@ -525,12 +525,12 @@ Per configurare un tema in modo che utilizzi la configurazione TypeKit, effettua
 
 Potete utilizzare il servizio di configurazione del tema per aggiungere altri font all&#39;editor del tema. Per aggiungere i font, effettuate le seguenti operazioni:
 
-1. Accedi a AEM console Web con privilegi di amministratore. L&#39;URL per la console Web AEM è `https://[server]:[port]/system/console/configMgr`.
-1. Aprire Il Servizio **[!UICONTROL Di Configurazione Tema Modulo]** Adattivo.
+1. Accedi a AEM console Web con privilegi di amministratore. L&#39;URL della console Web AEM è `https://[server]:[port]/system/console/configMgr`.
+1. Aprire **[!UICONTROL Servizio di configurazione del tema del modulo adattivo]**.
 
    ![themoconfig](assets/theme-config.png)
 
-1. Fate clic su +, specificate il nome del font e fate clic su **Salva**. Il font viene aggiunto e disponibile nell&#39;editor di temi.
+1. Fare clic su +, specificare il nome del font e fare clic su **Salva**. Il font viene aggiunto e disponibile nell&#39;editor di temi.
 
 #### Selezione dei font nell&#39;editor di temi {#selecting-fonts-in-theme-editor}
 
@@ -552,7 +552,7 @@ Il campo Famiglia font supporta più font. Quando digitate un font, il browser l
 
 #### Stili di maschera applicati nell&#39;editor di temi {#mask-styles-applied-in-theme-editor}
 
-Potete applicare una maschera agli stili applicati a un tema. Nella barra laterale dell’editor di temi, potete usare l’icona ![toggle_](assets/toggle_eye.png)eyeicon per disattivare uno stile applicato. Ad esempio, se modificate le dimensioni di un componente in un modulo o in una comunicazione interattiva, potete utilizzare il pulsante maschera a sinistra di una proprietà per disattivarlo. Quando salvate un tema, le opzioni di mascheratura selezionate vengono mantenute.
+Potete applicare una maschera agli stili applicati a un tema. Nella barra laterale dell&#39;editor di temi, potete utilizzare l&#39;icona ![toggle_eye](assets/toggle_eye.png)per disabilitare uno stile applicato. Ad esempio, se modificate le dimensioni di un componente in un modulo o in una comunicazione interattiva, potete utilizzare il pulsante maschera a sinistra di una proprietà per disattivarlo. Quando salvate un tema, le opzioni di mascheratura selezionate vengono mantenute.
 
 ![Opzione Maschera disponibile nella barra laterale dell’editor di temi](assets/mask-styles.png)
 
@@ -565,25 +565,25 @@ L&#39;esempio seguente mostra gli stili mascherati e non mascherati in un tema.
 Per applicare un tema a un modulo adattivo:
 
 1. Aprire il modulo in modalità di modifica. Per aprire un modulo in modalità di modifica, selezionare un modulo e fare clic su **[!UICONTROL Apri]**.
-1. In modalità di modifica, selezionare un componente, fare clic su ![campo](assets/field-level.png) > Contenitore **[!UICONTROL modulo]** adattivo, quindi fare clic su ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, selezionare un componente, quindi fare clic su ![livello campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi fare clic su ![cmppr](assets/cmppr.png).
 
    È possibile modificare le proprietà del modulo nella barra laterale.
 
-1. Nella barra laterale, fate clic su **[!UICONTROL Attribuzione stile]**.
-1. Selezionate il tema dal menu a discesa Tema **[!UICONTROL modulo]** adattivo e fate clic sul pulsante **[!UICONTROL Fine]** ![controllo](assets/check-button.png).
+1. Nella barra laterale, fare clic su **[!UICONTROL Attribuzione stile]**.
+1. Selezionate il tema dal menu a discesa **[!UICONTROL Tema modulo adattivo]** e fate clic su **[!UICONTROL Fine]** ![tasto di controllo](assets/check-button.png).
 
 Per applicare un tema a una comunicazione interattiva:
 
 1. Aprite la comunicazione interattiva in modalità di modifica. Per aprire una comunicazione interattiva in modalità di modifica, selezionare un modulo e fare clic su **[!UICONTROL Apri]**.
-1. In modalità di modifica, selezionate un componente, fate clic su livello ![di](assets/field-level.png) campo > Contenitore **** documento, quindi fate clic su ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, selezionate un componente, quindi fate clic su ![livello campo](assets/field-level.png) >**[!UICONTROL Contenitore documento]**, quindi fate clic su ![cmppr](assets/cmppr.png).
 
    È possibile modificare le proprietà del modulo nella barra laterale.
 
-1. Nella barra laterale, in **[!UICONTROL Base]**, selezionate il tema dal menu a discesa **[!UICONTROL Tema]** e fate clic sul pulsante **[!UICONTROL Fine]** ![controllo](assets/check-button.png).
+1. Nella barra laterale, in **[!UICONTROL Base]**, selezionate il tema dal menu a discesa **[!UICONTROL Tema]** e fate clic su **[!UICONTROL Fine]** ![check-button](assets/check-button.png).
 
 ### Modifica del tema di un modulo in fase di esecuzione {#change-theme-of-a-form-at-runtime}
 
-Un tema stili diversi componenti di un modulo. È possibile utilizzare la `themeOverride` proprietà per modificare dinamicamente il tema di un modulo. Un tipico URL di un modulo è:
+Un tema stili diversi componenti di un modulo. È possibile utilizzare la proprietà `themeOverride` per modificare dinamicamente il tema di un modulo. Un tipico URL di un modulo è:
 
 `https://<server>:<port>/content/forms/af/test.html`
 
@@ -591,15 +591,15 @@ Potete utilizzare il parametro temaOverride per applicare un tema al runtime.
 
 `https://<server>:<port>/content/forms/af/test.html?themeOverride=/content/dam/formsanddocuments-themes/simpleEnrollmentTheme`
 
-L&#39; `themeOverride` opzione consente di fornire un percorso a un tema. Cambia il tema del modulo e aggiorna il modulo con gli stili aggiornati.
+L&#39;opzione `themeOverride` consente di fornire un percorso a un tema. Cambia il tema del modulo e aggiorna il modulo con gli stili aggiornati.
 
-## Ottenimento di un aspetto specifico tramite Temi {#specific-af-appearance}
+## Ottenimento dell&#39;aspetto specifico utilizzando i temi {#specific-af-appearance}
 
 Con  AEM Forms, insieme a un tema quadro predefinito, ci sono molti altri temi. Se si desidera progettare il modulo o la comunicazione interattiva utilizzando altri temi, insieme ad altre modifiche, copiare il tema dalla cartella Libreria temi. Incollate i temi copiati all’esterno della cartella Libreria temi e modificate il tema copiato in base alle modifiche desiderate.
 
 Per copiare un tema, effettuate le seguenti operazioni:
 
-1. Nell’istanza di creazione, passa a **[!UICONTROL Adobe Experience Manager > Forms > Temi]**.
+1. Nell’istanza di creazione, passare a **[!UICONTROL Adobe Experience Manager > Forms > Themes]**.
 1. Aprite la cartella Libreria temi.
 1. Nella cartella Libreria temi, passate il puntatore del mouse sul tema out-of-the-box corrispondente e toccate **[!UICONTROL Copia]**.
 1. Incollate il tema copiato fuori dalla cartella Libreria temi.
@@ -611,13 +611,13 @@ Dopo aver personalizzato il tema, applicatelo al modulo o alla comunicazione int
 >
 >Non modificate i temi disponibili nella cartella Libreria temi. Questa cartella contiene i temi del sistema. Eventuali modifiche apportate a questi temi vengono sovrascritte al momento dell’installazione di una versione più recente o  correzione rapida di AEM Forms.
 
-## Impatto su altri casi di utilizzo di moduli adattivi {#impact-on-other-adaptive-form-use-cases}
+## Impatto sugli altri casi di utilizzo di moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
 * **Pubblicare/annullare la pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema a cui è stato applicato (se non è già pubblicato)
-* **Importare/esportare un modulo:** Durante l&#39;importazione o l&#39;esportazione di un modulo, anche il tema associato viene importato o esportato automaticamente.
-* **Riferimenti a un modulo:** La sezione Riferimenti nei riferimenti del modulo contiene una voce aggiuntiva per il tema.
+* **Importazione/Esportazione di un modulo:** Durante l&#39;importazione o l&#39;esportazione di un modulo, anche il tema associato viene importato o esportato automaticamente.
+* **Riferimenti di un modulo:** La sezione Riferimenti nei riferimenti di modulo contiene una voce aggiuntiva per il tema.
 * **Ora ultima modifica di un modulo:** Aggiornato quando il tema associato viene modificato.
-* **Test A/B:** È possibile applicare un tema diverso a due versioni del modulo nel test A/B. Le informazioni dei due temi sono memorizzate singolarmente nei due contenitori di guida.
+* **Test A/B:** è possibile applicare un tema diverso a due versioni del modulo nel test A/B. Le informazioni dei due temi sono memorizzate singolarmente nei due contenitori di guida.
 
 ## Sequenza di generazione CSS {#css-generation-sequence}
 
@@ -629,21 +629,21 @@ Quando selezionate Visualizza CSS, Editor tema raccoglie tutte le informazioni s
 
 Ad esempio, il colore di sfondo di una casella di testo è blu nella libreria client di base. Potete modificarlo in rosa utilizzando le proprietà nella barra laterale. Quando generate i CSS, il colore di sfondo della casella di testo viene visualizzato in rosa. Dopo aver modificato il colore di sfondo utilizzando le proprietà, un altro autore utilizza l&#39;opzione di sostituzione CSS per modificare la casella di testo del colore di sfondo come bianca. Quando generate i CSS, il colore di sfondo viene visualizzato come bianco nel CSS generato.
 
-## Debug degli stili {#debugging-styles}
+## Debug di stili {#debugging-styles}
 
 Quando specificate gli stili per i componenti in Editor tema, viene generato un CSS. Quando si formatta un componente generico, vengono formattati anche più componenti inclusi in esso. Ad esempio, quando si formatta un campo, anche la casella di testo e l’etichetta al suo interno sono formattate. Quando si formatta la casella di testo all&#39;interno del campo, viene creato un CSS personalizzato. Se si desidera eseguire il debug del CSS generato per il campo e il componente, l&#39;Editor tema fornisce opzioni che consentono di visualizzare i CSS.
 
 Potete visualizzare i CSS generati utilizzando le seguenti opzioni:
 
-* **Opzione Visualizza CSS** nella barra laterale: Quando selezionate un componente nel tema, potete visualizzare l’opzione VISUALIZZA CSS nella barra laterale. Mostra il CSS generato, inclusi i CSS per `::before` e gli `::after` pseudo elementi.
+* **Visualizza** opzione CSS nella barra laterale: Quando selezionate un componente nel tema, potete visualizzare l’opzione VISUALIZZA CSS nella barra laterale. Mostra il CSS generato, inclusi i CSS per gli pseudoelementi `::before` e `::after`.
 
-* **Opzione Visualizza CSS** tema nella barra degli strumenti canvas: Nella barra degli strumenti quadro, fate clic su ![tema-opzioni](assets/theme-options.png) > **Visualizza CSS** tema. Potete visualizzare l&#39;intero CSS del tema generato dalle proprietà definite nell&#39;Editor tema.
+* **Visualizza** CSS tema nella barra degli strumenti canvas: Nella barra degli strumenti quadro, fate clic su  ![tema-opzioni](assets/theme-options.png)  >  **Visualizza CSS** tema. Potete visualizzare l&#39;intero CSS del tema generato dalle proprietà definite nell&#39;Editor tema.
 
-## Risoluzione di problemi, raccomandazioni e best practice {#troubleshooting-recommendations-and-best-practices}
+## Risoluzione dei problemi, raccomandazioni e best practice {#troubleshooting-recommendations-and-best-practices}
 
 * **Evitare la presenza di risorse da un altro tema**
 
-   Quando modificate un tema, potete sfogliare e aggiungere risorse (come le immagini) da altri temi. Ad esempio, si sta modificando lo sfondo di una pagina. Ad esempio, quando si seleziona **[!UICONTROL Pagina]** , ![Modifica pulsante](assets/edit-button.png)> **[!UICONTROL Sfondo > Aggiungi > Immagine]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in altri temi.
+   Quando modificate un tema, potete sfogliare e aggiungere risorse (come le immagini) da altri temi. Ad esempio, si sta modificando lo sfondo di una pagina. Ad esempio, quando si seleziona **[!UICONTROL Page]** ![edit-button](assets/edit-button.png)> **[!UICONTROL Background > Add > Image]**, viene visualizzata una finestra di dialogo che consente di sfogliare e aggiungere immagini in altri temi.
 
 * Potete affrontare problemi con il tema corrente se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato. È consigliabile evitare di sfogliare e aggiungere risorse da altri temi.
 
@@ -655,14 +655,14 @@ Potete visualizzare i CSS generati utilizzando le seguenti opzioni:
 
       1. Andate a **[!UICONTROL Experience Manager > Forms > Temi]**.
       1. Nella pagina Temi, selezionate un tema e fate clic su **[!UICONTROL Visualizza proprietà]**.
-      1. Nella pagina Proprietà visualizzata, fate clic su **[!UICONTROL Avanzate]**.
+      1. Nella pagina Proprietà visualizzata, fare clic su **[!UICONTROL Avanzate]**.
       1. Nella scheda Avanzate, nel campo Posizione Clientlib, individuare e selezionare la libreria client da utilizzare.
       1. Fai clic su **[!UICONTROL Salva]**.
 
       Lo stile specificato nella libreria client viene importato nel tema che lo utilizza. Ad esempio, potete specificare lo stile per le caselle di testo, le caselle numeriche e il passaggio alla libreria client. Quando importate la libreria client nel tema, viene importato lo stile per le caselle di testo, le caselle numeriche e il pulsante. Potete quindi creare degli stili per altri componenti utilizzando l&#39;editor di temi.\
       Potete anche creare un tema, crearne delle copie e quindi modificare lo stile fornito nei temi copiati per casi di utilizzo simili.
 
-      Consultate [Ottenimento di un aspetto specifico con i temi](#specific-af-appearance)
+      Vedere [Ottenimento di un aspetto specifico utilizzando Themes](#specific-af-appearance)
 
    * **Editor temi:**
 
@@ -670,12 +670,12 @@ Potete visualizzare i CSS generati utilizzando le seguenti opzioni:
 
    * **Stile in linea:**
 
-      Quando si lavora con un modulo, è possibile formattare i componenti utilizzando la modalità Stile nell&#39;editor multicanale di comunicazione interattiva o modulo. Se si utilizza la modalità stile per modificare lo stile del componente modulo, lo stile specificato nel tema viene ignorato. Per modificare lo stile di alcuni componenti di un particolare modulo, vedere [Stile in linea dei componenti](/help/forms/using/inline-style-adaptive-forms.md).
+      Quando si lavora con un modulo, è possibile formattare i componenti utilizzando la modalità Stile nell&#39;editor multicanale di comunicazione interattiva o modulo. Se si utilizza la modalità stile per modificare lo stile del componente modulo, lo stile specificato nel tema viene ignorato. Per modificare lo stile di alcuni componenti di un modulo specifico, vedere [Stile in linea di componenti](/help/forms/using/inline-style-adaptive-forms.md).
 
 
 * **Utilizzo di librerie lato client**
 
-   Se desiderate creare librerie client per importare informazioni sullo stile, consultate [Utilizzo delle librerie](/help/sites-developing/clientlibs.md)lato client. Dopo aver creato una libreria client, potete importarla nel tema utilizzando i passaggi indicati sopra.
+   Per creare librerie client per importare informazioni sugli stili, vedere [Utilizzo di librerie lato client](/help/sites-developing/clientlibs.md). Dopo aver creato una libreria client, potete importarla nel tema utilizzando i passaggi indicati sopra.
 
 * **Modifica della larghezza del layout del pannello contenitore**
 
