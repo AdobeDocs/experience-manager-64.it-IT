@@ -27,7 +27,7 @@ Process Reporting fornisce una serie di report out-of-the-box che consentono di 
 
 Process Reporting fornisce inoltre un&#39;interfaccia per eseguire query ad hoc e integrare le visualizzazioni di report personalizzate nell&#39;interfaccia utente di Process Reporting.
 
-Per l&#39;elenco dei browser supportati, consultate [piattaforme](/help/forms/using/aem-forms-jee-supported-platforms.md)supportate da AEM Forms.
+Per l&#39;elenco dei browser supportati, vedere [ piattaforme supportate da AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Reporting è basato su moduli che:
 
@@ -45,7 +45,7 @@ Visualizza l&#39;elenco dei processi con esecuzione prolungata, dei grafici dell
 
 Process Reporting (Generazione di rapporti sui processi) offre anche la possibilità di esportare i dati del rapporto e della query in formato CSV.
 
-### Report Adhoc {#adhoc-reports}
+### Rapporti Adhoc {#adhoc-reports}
 
 ![print-and-color](assets/print-&-colour.png)
 
