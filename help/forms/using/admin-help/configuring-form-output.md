@@ -25,9 +25,9 @@ ht-degree: 1%
 1. Nella console di amministrazione, fare clic su Servizi > moduli.
 1. In Output modulo, nell&#39;elenco Tipo di output, selezionare una delle opzioni seguenti:
 
-   **HTML completo:** Per eseguire il rendering del modulo all&#39;interno di tag HTML completi (una pagina HTML completa). Questo è il valore predefinito.
+   **HTML completo:** per eseguire il rendering del modulo all&#39;interno di tag HTML completi (una pagina HTML completa). Questo è il valore predefinito.
 
-   **Corpo del modulo:** Per eseguire il rendering del modulo all&#39;interno di `<BODY>` tag (non una pagina HTML completa).
+   **corpo del modulo:** Per eseguire il rendering del modulo all&#39;interno di  `<BODY>` tag (non una pagina HTML completa).
 
 1. Fate clic su Salva.
 
@@ -37,9 +37,9 @@ ht-degree: 1%
 
    **Client:** Per eseguire il rendering dei PDF forms all&#39;interno  Adobe Acrobat o  Adobe Reader. Il rendering sul lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione PDFForm.
 
-   **Server:** Per eseguire il rendering dei PDF forms sul server dell&#39;applicazione.
+   **Server:** per eseguire il rendering dei PDF forms sul server dell&#39;applicazione.
 
-   **Automatico:** Per eseguire il rendering del modulo PDF nella posizione specificata dal valore di `dynamicRender` configurazione del file XDP. Questo è il valore predefinito.
+   **Automatico:** Per eseguire il rendering del modulo PDF nella posizione specificata dal valore di  `dynamicRender` configurazione del file XDP. Questo è il valore predefinito.
 
 1. Fate clic su Salva.
 
@@ -48,7 +48,7 @@ ht-degree: 1%
 Per attivare la funzione, effettuate le seguenti operazioni:
 
 1. Accedete alla console di amministrazione.
-1. Accedere a **Servizi** > **moduli**.
+1. Accedere a **Services** > **forms**.
 1. Specificare il tipo di output come corpo del modulo.
 1. Salvate le impostazioni.
 1. Dichiarate una variabile JavaScript, __CUSTOM_SCRIPTS_VERSION, nella sezione head del codice HTML e impostatene il valore su 1.
