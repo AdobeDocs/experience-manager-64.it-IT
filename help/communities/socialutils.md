@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Il pacchetto **com.adobe.cq.social.ugcbase.SocialUtils** è stato dichiarato obsoleto in AEM 6.1.
 
-Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi SocialUtils.
+Le tabelle seguenti elencano i metodi da utilizzare al posto dei metodi SocialUtils.
 
-## Pacchetto SocialResourceUtilities  {#socialresourceutilities-package}
+## Pacchetto SocialResourceUtilities {#socialresourceutilities-package}
 
 | Metodi in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -60,7 +60,7 @@ Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi 
 | String getSocialProfileURL(nome utente stringa, risolutore risorse, pagina pagina) |
 | UserProperties getUserProperties(ResourceResolver, String userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Solo per uso interno {#for-internal-use-only}
 
 | boolean canAddNode(Session session, String path) |
 |---|
