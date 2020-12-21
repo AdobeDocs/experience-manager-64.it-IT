@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configurare l&#39;ambiente per &#39;app AEM Forms {#set-up-environment-for-aem-forms-app}
+# Configurare l&#39;ambiente per  app AEM Forms {#set-up-environment-for-aem-forms-app}
 
 Per creare e distribuire l&#39;app AEM Forms  sono necessari hardware, software e licenze seguenti:
 
@@ -41,7 +41,7 @@ Per creare e distribuire l&#39;app AEM Forms  sono necessari hardware, software 
 
 * Android Development Toolkit (bundle ADT) scaricabile da [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Se l&#39;ambiente è impostato su un sistema MAC, ADT deve essere installato nella cartella Applicazioni.
-* Se ADT è installato in un altro percorso in MAC o se l&#39;ambiente è configurato in un sistema Windows, il percorso ADT SDK deve essere aggiornato nel `local.properties` file disponibile nella `src\android` cartella dell&#39;archivio di origine estratto `mobileworkspace-src.zip`. In questo file, specifica la `sdk.dir` variabile da utilizzare per ADT SDK sul desktop.
+* Se ADT è installato in un altro percorso in MAC o se l&#39;ambiente è configurato in un sistema Windows, il percorso ADT SDK deve essere aggiornato in `local.properties` file disponibile nella cartella `src\android` nell&#39;archivio di origine estratto `mobileworkspace-src.zip`. In questo file, indicate la variabile `sdk.dir` per il percorso ADT SDK sul desktop.
 
 >[!NOTE]
 >
