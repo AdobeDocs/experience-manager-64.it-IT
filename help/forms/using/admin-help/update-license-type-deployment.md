@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Aggiornamento del tipo di licenza per la distribuzione {#update-the-license-type-for-the-deployment}
+# Aggiornare il tipo di licenza per la distribuzione {#update-the-license-type-for-the-deployment}
 
-Durante il processo di installazione dei moduli AEM, è stato utilizzato Configuration Manager per configurare e implementare i moduli AEM richiesti. Per impostazione predefinita, tali moduli sono configurati con una licenza di valutazione di 60 giorni. Utilizzate la pagina Modifica licenza nella console di amministrazione per modificare il tipo di licenza per la distribuzione. I moduli attualmente distribuiti vengono visualizzati nella pagina Modifica licenza.
+Come parte del processo di installazione dei moduli AEM, è stato utilizzato Configuration Manager per configurare e distribuire i moduli AEM richiesti. Per impostazione predefinita, tali moduli sono configurati con una licenza di valutazione di 60 giorni. Utilizzate la pagina Modifica licenza nella console di amministrazione per modificare il tipo di licenza per la distribuzione. I moduli attualmente distribuiti vengono visualizzati nella pagina Modifica licenza.
 
 Nella pagina Modifica licenza sono visualizzate le informazioni sulla licenza:
 
@@ -41,10 +41,10 @@ Nella pagina Modifica licenza sono visualizzate le informazioni sulla licenza:
 1. Leggere il contratto di licenza per l&#39;utente finale AEM moduli, selezionare Accetto se si è d&#39;accordo con i termini del contratto, quindi fare clic su Avanti.
 1. Nella pagina Modifica licenza, selezionate un tipo di licenza:
 
-   * **EVAL:** Licenza di valutazione di 60 giorni
-   * **DEV:** Licenza di sviluppo permanente
-   * **NFR:** licenza di valutazione biennale
-   * **IDEV:** Iscrizione di 1 anno al  Adobe Developer Program
+   * **EVAL:licenza di valutazione** di 60 giorni
+   * **DEV:licenza di sviluppo** permanente
+   * **NFR:licenza di valutazione** biennale
+   * **IDEV:iscrizione** di 1 anno al programma per sviluppatori del Adobe
    * **Produzione:** Licenza perpetua
 
 1. Selezionare Sì, La Modifica Della Licenza È Valida Per Tutti I Moduli Distribuiti.
