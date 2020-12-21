@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Naming Conventions {#naming-conventions}
+# Convenzioni di denominazione {#naming-conventions}
 
 ## Trattini nel nome del pacchetto Java {#hyphens-in-java-package-name}
 
@@ -26,8 +26,8 @@ Quando create un percorso per una classe Java, tenete presente che il nome del p
 
 Anche se l&#39;uso dei trattini nei nomi degli elementi del repository è una procedura consigliata AEM sviluppo, i trattini non sono consentiti nei nomi dei pacchetti Java.
 
-La piattaforma CRX sottostante deve essere in grado di distinguere tra un carattere di sottolineatura effettivo &#39;_&#39; e un trattino &#39;-&#39;. Pertanto, in JCR, il trattino deve essere sostituito con il suo valore unicode (u002d) ed eseguito con escape con un carattere di sottolineatura &#39;_&#39;.
+La piattaforma CRX sottostante deve essere in grado di distinguere tra un carattere di sottolineatura effettivo &#39;_&#39; e un trattino &#39;-&#39;. Pertanto, in JCR, il trattino deve essere sostituito con il relativo valore Unicode (u002d) ed eseguito l&#39;escape con un carattere di sottolineatura &#39;_&#39;.
 
 Ad esempio, se il percorso del repository è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
 
-Tenere presente che un carattere di sottolineatura deve essere anch&#39;esso evitato, in modo che `_` diventi `_005f`.
+Tenere presente che un carattere di sottolineatura deve essere simile a un carattere di escape, in modo che `_` diventi `_005f`.
