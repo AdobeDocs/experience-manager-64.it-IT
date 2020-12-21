@@ -58,11 +58,11 @@ AEM gli amministratori dei moduli possono utilizzare il monitoraggio integrità 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.debug-mode-enabled</code></td> 
-   <td><p>Impostate questa opzione <code>true</code> per abilitare la modalità di debug o su false per disattivarla. </p><p>In modalità debug, i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager vengono registrati. Impostate questa opzione su true solo per la risoluzione dei problemi.</p></td> 
+   <td><p>Impostate questa opzione su <code>true</code> per abilitare la modalità di debug o su false per disattivarla. </p><p>In modalità debug, i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager vengono registrati. Impostate questa opzione su true solo per la risoluzione dei problemi.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.enabled</code></td> 
-   <td><p>Impostare questa opzione <code>true</code> per abilitare la limitazione in base alle impostazioni del controllo della memoria descritte di seguito o per <code>false</code> disabilitare la limitazione.</p></td> 
+   <td><p>Impostare questa opzione su <code>true</code> per abilitare la limitazione in base alle impostazioni del controllo della memoria descritte di seguito, oppure su <code>false</code> per disabilitare la limitazione.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.high-limit</code></td> 
@@ -82,12 +82,12 @@ AEM gli amministratori dei moduli possono utilizzare il monitoraggio integrità 
 **Aggiungere opzioni Java a JBoss**
 
 1. Arrestate il server applicazioni JBoss.
-1. Aprite l&#39; *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java necessarie nel formato `-Dproperty=value`.
+1. Aprite la *[directory principale dell&#39;appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java richieste nel formato `-Dproperty=value`.
 1. Riavviate il server.
 
 **Aggiunta di opzioni Java a WebLogic**
 
-1. Avviate la console di amministrazione WebLogic digitando il nome `https://`*[]*host`:`*[porta]* `/console` in un browser Web.
+1. Avviate la console di amministrazione WebLogic digitando `https://`*[nome host ]*`:`*[porta]* `/console` in un browser Web.
 1. Digitare il nome utente e la password creati per il dominio WebLogic Server e fare clic su Log In Change Center, quindi fare clic su Lock &amp; Edit (Blocca e modifica).
 1. In Struttura dominio, fare clic su Ambiente > Server e, nel riquadro a destra, fare clic sul nome del server gestito.
 1. Nella schermata successiva, fate clic sulla scheda Configurazione > scheda Avvio server.
