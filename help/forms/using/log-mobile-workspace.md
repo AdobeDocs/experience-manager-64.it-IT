@@ -34,7 +34,7 @@ Quando avviate l&#39;app  AEM Forms, dovete prima fornire le credenziali di acce
    >* Potete selezionare un URL  server AEM Forms a cui accedere tramite l&#39;app.
 
 
-Quando effettuate l&#39;accesso all&#39;app, siete indirizzati alla schermata [**Home **](/help/forms/using/home-screen.md).
+Quando effettuate l&#39;accesso all&#39;app, siete indirizzati alla schermata [**Home**](/help/forms/using/home-screen.md).
 
 >[!NOTE]
 >
