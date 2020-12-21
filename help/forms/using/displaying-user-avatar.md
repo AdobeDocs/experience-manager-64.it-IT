@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Visualizzazione dell’avatar utente {#displaying-the-user-avatar}
+# Visualizzazione dell&#39;avatar utente {#displaying-the-user-avatar}
 
 L’avatar dell’utente che ha effettuato l’accesso viene visualizzato nell’angolo superiore destro ’area di lavoro di AEM Forms. Inoltre, gli avatar dei rapporti diretti nella gerarchia organizzativa vengono visualizzati nella vista Manager. Potete configurare &#39;area di lavoro AEM Forms per scegliere le immagini utente dal database, ad esempio il server LDAP.
 
@@ -26,7 +26,7 @@ L’avatar dell’utente che ha effettuato l’accesso viene visualizzato nell�
 >
 >Le proporzioni supportate per le immagini utente sono 1:1.
 
-1. Create un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con  AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Create un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con  AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. In DSC, definite un nuovo SPI che espone i metodi getCurrentUserImageUrl e getUserImageUrl per ottenere un URL immagine per un utente AEM Forms . Segue un esempio di snippet di codice Java™:
 
    ```as3
@@ -84,5 +84,5 @@ L’avatar dell’utente che ha effettuato l’accesso viene visualizzato nell�
    </component>
    ```
 
-1. Implementare DSC tramite Workbench. Riavviate `ProcessManagementClientSessionService` il servizio.
+1. Implementare DSC tramite Workbench. Riavviate il servizio `ProcessManagementClientSessionService`.
 1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere nuovamente con l&#39;utente.
