@@ -26,17 +26,17 @@ ht-degree: 0%
 * Modello, ovvero un file HTML contenente controlli di interfaccia.
 * Visualizza, che funge da classe Controller in Modello.
 
-Le risorse per tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, effettuate l’accesso al CRXDE Lite e individuate `/libs/ws/js/runtime/`.
+Le risorse per tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, effettuate l’accesso al CRXDE Lite e andate a `/libs/ws/js/runtime/`.
 
-**modelli** Contiene modelli di dorsale.
+**** modelsContiene modelli di dorsale.
 
-**viste** Contiene le viste della colonna vertebrale.
+**** visteContiene le viste della colonna vertebrale.
 
-**modelli** Contiene solo i modelli HTML per i componenti.
+**** modelliContiene solo i modelli HTML per i componenti.
 
-**route** Contiene route universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
+**** routeContiene route universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
 
-**services** Contiene l&#39;interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull&#39;endpoint REST.
+**** servicesContiene l&#39;interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull&#39;endpoint REST.
 
-**util** Contiene utility generiche utilizzabili da più componenti.
+**** utilContiene utility generiche utilizzabili da più componenti.
 
