@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Indurimento e protezione dei moduli AEM in ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Protezione e protezione dei moduli AEM nell&#39;ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Scopri le raccomandazioni e le best practice per proteggere  AEM Forms sul server OSGi.
 
@@ -34,15 +34,15 @@ Nell’immagine seguente sono visualizzati i componenti e i protocolli utilizzat
 
  AEM Forms è altamente personalizzabile e può funzionare in diversi ambienti. Alcune delle raccomandazioni potrebbero non essere applicabili all&#39;organizzazione.
 
-## Secure Transport Layer {#secure-transport-layer}
+## Livello di trasporto sicuro {#secure-transport-layer}
 
 Le vulnerabilità relative alla sicurezza dei livelli di trasporto sono tra le prime minacce a qualsiasi server applicazioni rivolto a Internet o Intranet. Questa sezione descrive il processo di indurimento degli host sulla rete rispetto a tali vulnerabilità. Si occupa della segmentazione della rete, del protocollo di controllo della trasmissione/del protocollo Internet (TCP/IP) e dell&#39;uso di firewall per la protezione dell&#39;host.
 
-### Limite endpoint aperti  {#limit-open-endpoints}
+### Limite punti finali aperti {#limit-open-endpoints}
 
 Un&#39;organizzazione può disporre di un firewall esterno per limitare l&#39;accesso tra un utente finale e  AEM Forms Publish Farm. L’organizzazione può inoltre disporre di un firewall interno per limitare l’accesso tra una farm di pubblicazione e altri elementi dell’organizzazione (ad esempio, istanza di creazione, istanza di elaborazione, database). Consentite ai firewall di consentire l’accesso a un numero limitato di  URL AEM Forms per gli utenti finali e all’interno degli elementi dell’organizzazione:
 
-#### Configurare il firewall esterno  {#configure-external-firewall}
+#### Configurare il firewall esterno {#configure-external-firewall}
 
 È possibile configurare un firewall esterno per consentire l’accesso a Internet a un determinato URL di AEM Forms . Per compilare o inviare un modulo adattivo, HTML5, una lettera di gestione della corrispondenza o per accedere a un server AEM Forms  è necessario accedere a tali URL:
 
@@ -96,7 +96,7 @@ Un&#39;organizzazione può disporre di un firewall esterno per limitare l&#39;ac
  </tbody>
 </table>
 
-#### Configurare il firewall interno  {#configure-internal-firewall}
+#### Configurare il firewall interno {#configure-internal-firewall}
 
 È possibile configurare il firewall interno per consentire ad alcuni componenti AEM Forms  (ad esempio, istanza di creazione, istanza di elaborazione, database) di comunicare con la farm di pubblicazione e altri componenti interni menzionati nel diagramma della topologia:
 
@@ -129,7 +129,7 @@ Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione s
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}
+## Gestione sicura dei dati dei moduli {#securely-handle-forms-data}
 
  AEM Forms memorizza i dati in posizioni predefinite e cartelle temporanee. Proteggere i dati per evitare un uso non autorizzato.
 
@@ -139,22 +139,22 @@ Quando si configurano moduli per allegati di file, si verificano o si visualizza
 
 Negli scenari di cui sopra, i dati vengono salvati solo per gli utenti autenticati. Inoltre, i dati sono protetti con elenchi di controllo di accesso (ACL, Access Control List). Pertanto, modificare la rimozione dei dati è un passo aggiuntivo per proteggere le informazioni.
 
-### Protezione dei dati salvati tramite l&#39;azione di invio del portale moduli {#secure-data-saved-by-forms-portal-submit-action}
+### Proteggere i dati salvati dal portale moduli azione di invio {#secure-data-saved-by-forms-portal-submit-action}
 
 Per impostazione predefinita, l&#39;azione Invia del portale moduli dei moduli adattivi salva i dati nell&#39;archivio locale del nodo di pubblicazione. I dati vengono salvati in /content/forms/fp. **Non è consigliabile memorizzare i dati nell’istanza di pubblicazione.**
 
 È possibile configurare il servizio di storage in modo che venga inviato via cavo al cluster di elaborazione senza salvare nulla localmente sul nodo di pubblicazione. Il cluster di elaborazione risiede in un&#39;area protetta dietro il firewall privato e i dati restano sicuri.
 
-Utilizzare le credenziali del server di elaborazione per AEM servizio impostazioni DS per inviare dati dal nodo di pubblicazione al server di elaborazione. Si consiglia di utilizzare le credenziali di un utente non amministrativo con restrizioni con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, consultate [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
+Utilizzare le credenziali del server di elaborazione per AEM servizio impostazioni DS per inviare dati dal nodo di pubblicazione al server di elaborazione. Si consiglia di utilizzare le credenziali di un utente non amministrativo con restrizioni con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, vedere [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Proteggere i dati gestiti dal modello dati del modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Utilizzare gli account utente con privilegi minimi richiesti per configurare le origini dati per il modello dati del modulo (FDM). L&#39;utilizzo di account amministrativi può fornire l&#39;accesso aperto di entità di metadati e schema a utenti non autorizzati.\
 L&#39;integrazione dei dati fornisce anche metodi per autorizzare le richieste di servizi FDM. È possibile inserire meccanismi di autorizzazione pre e post-esecuzione per convalidare una richiesta. Le richieste di servizio vengono generate durante la precompilazione di un modulo, l&#39;invio di un modulo e la chiamata di servizi tramite una regola.
 
-**Autorizzazione pre-elaborazione:** Potete utilizzare l&#39;autorizzazione pre-elaborazione per convalidare l&#39;autenticità di una richiesta prima di eseguirla. Potete utilizzare gli input, il servizio e i dettagli della richiesta per consentire o interrompere l&#39;esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene arrestata. Potete inoltre modificare la richiesta del client prima di inviarla per l&#39;esecuzione. Ad esempio, modifica dell’input e aggiunta di informazioni aggiuntive.
+**Autorizzazione pre-elaborazione:** è possibile utilizzare l&#39;autorizzazione pre-elaborazione per convalidare l&#39;autenticità di una richiesta prima di eseguirla. Potete utilizzare gli input, il servizio e i dettagli della richiesta per consentire o interrompere l&#39;esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene arrestata. Potete inoltre modificare la richiesta del client prima di inviarla per l&#39;esecuzione. Ad esempio, modifica dell’input e aggiunta di informazioni aggiuntive.
 
-**Autorizzazione post-elaborazione:** Potete utilizzare l&#39;autorizzazione post-processo per convalidare e controllare i risultati prima di restituire i risultati al richiedente. Potete anche filtrare, eseguire la potatura e inserire dati aggiuntivi per i risultati.
+**Autorizzazione post-elaborazione:** è possibile utilizzare l&#39;autorizzazione post-processo per convalidare e controllare i risultati prima di restituire i risultati al richiedente. Potete anche filtrare, eseguire la potatura e inserire dati aggiuntivi per i risultati.
 
 ### Limite accesso utente {#limit-user-access}
 
@@ -196,6 +196,6 @@ In generale, i cluster di elaborazione e il componente aggiuntivo di Forms Workf
 
 Un cluster di elaborazione viene eseguito in modalità di creazione ma non viene utilizzato per attività di sviluppo. Non consentire l&#39;inclusione di un utente normale nei gruppi di autori e utenti di moduli di un cluster di elaborazione.
 
-### Utilizzare AEM best practice per proteggere un ambiente AEM Forms  {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### Utilizza AEM best practice per proteggere un ambiente AEM Forms  {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Questo documento fornisce istruzioni specifiche per  ambiente AEM Forms. È necessario assicurarsi che l&#39;installazione AEM sottostante sia sicura quando viene distribuita. Per istruzioni dettagliate, consultate [AEM documentazione sull&#39;elenco](/help/sites-administering/security-checklist.md) di controllo della protezione.
+Questo documento fornisce istruzioni specifiche per  ambiente AEM Forms. È necessario assicurarsi che l&#39;installazione AEM sottostante sia sicura quando viene distribuita. Per istruzioni dettagliate, consultare la documentazione relativa alla [AEM lista di controllo della sicurezza](/help/sites-administering/security-checklist.md).
