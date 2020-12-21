@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# Font disponibili {#make-fonts-available}
+# Disponibilità di font {#make-fonts-available}
 
 Assicurarsi che i font utilizzati all&#39;interno di un modulo siano disponibili per l&#39;uso nel server applicazione J2EE in cui sono ospitati AEM moduli. Ad esempio, considerare lo scenario seguente. Una struttura del modulo aggiunge un font alla directory dei font utilizzata da Designer e crea un modulo che utilizza tale font in un computer a parte. Affinché il servizio Output possa utilizzare il font, inserirlo nella directory dei font del cliente. Se la directory dei font del cliente non esiste, creare una directory sul server applicazione J2EE in cui sono ospitati AEM moduli.
 
-Per informazioni su ulteriori impostazioni dei font, vedere [Configurare le impostazioni](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)generali AEM moduli.
+Per ulteriori informazioni sulle impostazioni dei font, vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 
 **Specificare il percorso della directory dei font del cliente**
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Impostazioni sistemi di base > Configurazioni.
-1. Nella casella Posizione della directory dei font di sistema, digitare il percorso della directory dei font del cliente. È possibile aggiungere più directory, separate da punto e virgola **;**
+1. Nella casella Posizione della directory dei font di sistema, digitare il percorso della directory dei font del cliente. È possibile aggiungere più directory, separate da un punto e virgola **;**
 1. Fai clic su OK.
 1. Riavviare il sistema in cui sono installati AEM moduli.
 
