@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Avvio di un nuovo processo con i dati del processo esistenti nell&#39;area di lavoro  AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
+# Avvio di un nuovo processo con dati di processo esistenti nell&#39;area di lavoro  AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
 È possibile avviare un nuovo processo utilizzando i dati di un processo esistente. La necessità di avviare un nuovo processo dai dati di processo esistenti si manifesta quando è necessario utilizzare frequentemente lo stesso modulo con pochi cambiamenti di contenuto, come quello dei moduli a pagamento. Questa funzione consente agli utenti di risparmiare tempo e fatica soprattutto quando il processo ha un modulo lungo da compilare.
 
@@ -27,7 +27,7 @@ Di seguito sono riportati i passaggi per avviare un nuovo processo dai dati di p
 
    * In Tracciamento, fare clic sull’istanza di processo di cui si desidera utilizzare i dati. Nella visualizzazione Cronologia processi nel riquadro a destra, fare clic sulla riga corrispondente al punto iniziale.
    * In Tracciamento, selezionate un modello di ricerca per visualizzare un elenco di istanze del processo. Selezionare l&#39;istanza di cui si desidera utilizzare i dati.
-   * Nella scheda **[!UICONTROL Da fare]** , selezionare l&#39;attività. Fare clic sulla scheda **[!UICONTROL Cronologia]** e selezionare l&#39;attività che ha avviato l&#39;istanza di processo.
+   * Nella scheda **[!UICONTROL To-Do]**, selezionare l&#39;attività. Fare clic sulla scheda **[!UICONTROL Cronologia]** e selezionare l&#39;attività che ha avviato l&#39;istanza di processo.
 
    ![start3](assets/start3.png) ![start1](assets/start1.png)
 
