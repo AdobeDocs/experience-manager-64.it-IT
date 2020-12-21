@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Guida introduttiva all’area di lavoro  AEM Forms {#getting-started-with-aem-forms-workspace}
+# Guida introduttiva &#39;area di lavoro AEM Forms {#getting-started-with-aem-forms-workspace}
 
 È possibile utilizzare  area di lavoro AEM Forms per eseguire le seguenti operazioni:
 
@@ -40,7 +40,7 @@ Per navigare nell’interfaccia utente principale ’area di lavoro di AEM Forms
 * Nella scheda Cronologia, selezionare un&#39;attività per visualizzare le schede Allegati e Assegnazioni per tale attività.
 * Utilizzate il tasto di tabulazione, i tasti freccia e la barra spaziatrice per navigare &#39;area di lavoro di AEM Forms senza utilizzare il mouse.
 
-## Utilizzo &#39;area di lavoro AEM Forms con gli assistenti vocali {#using-html-workspace-with-screen-readers}
+## Utilizzo  area di lavoro AEM Forms con assistenti vocali {#using-html-workspace-with-screen-readers}
 
 &#39;area di lavoro AEM Forms è un&#39;applicazione HTML basata sul Web ed è compatibile con gli assistenti vocali. È possibile spostarsi nell&#39;interfaccia dell&#39;area di lavoro di  AEM Forms utilizzando la tastiera.
 
@@ -50,7 +50,7 @@ Per utilizzare &#39;area di lavoro AEM Forms con un assistente vocale, tenere pr
 * Tutta la navigazione nellarea di lavoro di AEM Forms avviene attraverso i tag di ancoraggio, facilmente accessibili tramite le schede.
 * Il caricamento di Forms può richiedere alcuni secondi. L&#39;assistente vocale non informa acusticamente che il modulo è in fase di caricamento e che è necessario attendere.
 
-## Navigazione &#39;area di lavoro AEM Forms mediante una tastiera {#navigating-html-workspace-using-a-keyboard}
+## Navigazione &#39;area di lavoro AEM Forms utilizzando una tastiera {#navigating-html-workspace-using-a-keyboard}
 
 Quando si naviga &#39;area di lavoro di AEM Forms utilizzando una tastiera, la navigazione è conforme alle convenzioni di accessibilità HTML. In alcune situazioni, l&#39;ordine di tabulazione non è conforme all&#39;ordine convenzionale tipico. I seguenti suggerimenti consentono di spostarsi all&#39;interno dell&#39;interfaccia:
 
@@ -64,21 +64,21 @@ Quando si naviga &#39;area di lavoro di AEM Forms utilizzando una tastiera, la n
 
 Potete impostare le varie preferenze  area di lavoro AEM Forms nelle seguenti categorie:
 
-**Fuori sede:** Impostare le preferenze per controllare in che modo le attività vengono assegnate ad altre persone mentre non si è in ufficio. Consultate [Impostazione delle preferenze](/help/forms/using/todo-lists.md#setting-out-of-office-preferences)esterne all’ufficio.
+**Fuori sede:** impostare le preferenze per controllare in che modo le attività vengono assegnate ad altre persone mentre non si è in ufficio. Vedere [Impostazione delle preferenze esterne all&#39;ufficio](/help/forms/using/todo-lists.md#setting-out-of-office-preferences).
 
-**Code:** Impostate le preferenze per la condivisione dell’elenco A-fare con altri utenti o per la richiesta di accesso all’elenco di altri utenti. Consultate [Operazioni con le attività dalle code](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues)di gruppi e condivisi.
+**Code:** impostare le preferenze per la condivisione dell&#39;elenco Da fare con altri utenti o per la richiesta di accesso all&#39;elenco di altri utenti. Vedere [Operazioni con le attività dalle code di gruppo e condivise](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Impostazioni interfaccia utente:** Impostate le preferenze per il modo in cui interagite con &#39;area di lavoro AEM Forms. Consultate [Impostare le preferenze](#set-user-interface-preferences)dell’interfaccia utente.
+**Impostazioni interfaccia utente:** impostare le preferenze per il modo in cui interagisci con &#39;area di lavoro AEM Forms. Vedere [Impostare le preferenze dell&#39;interfaccia utente](#set-user-interface-preferences).
 
-### Impostare le preferenze dell’interfaccia utente {#set-user-interface-preferences}
+### Impostare le preferenze dell&#39;interfaccia utente {#set-user-interface-preferences}
 
 Impostate le preferenze dell’interfaccia utente nella scheda Preferenze > Impostazioni interfaccia utente. Sono disponibili le seguenti preferenze.
 
-* **Percorso di avvio:** Specifica la pagina che viene visualizzata quando si effettua l&#39;accesso &#39;area di lavoro AEM Forms. Le quattro opzioni disponibili sono Start Process, To Do, Tracking e Preferiti.
+* **Percorso iniziale:** specifica la pagina visualizzata al momento dell&#39;accesso &#39;area di lavoro AEM Forms. Le quattro opzioni disponibili sono Start Process, To Do, Tracking e Preferiti.
 * **Prompt di disconnessione:** Specifica se viene richiesto di confermare la disconnessione dopo aver fatto clic su Disconnetti.
-* **Formato data:** Specifica il formato di visualizzazione della data utilizzato nell&#39;area di lavoro  AEM Forms.
+* **Formato data:** specifica il formato di visualizzazione della data utilizzato nell&#39;area di lavoro  AEM Forms.
 * **Formato** ora: Specifica il formato di visualizzazione dell&#39;ora utilizzato nell&#39;area di lavoro  AEM Forms.
-* **Notifica eventi attività tramite e-mail:** Specifica se ricevere notifiche e-mail per gli eventi delle attività, comprese le assegnazioni delle attività, i promemoria e le scadenze per le attività nell&#39;elenco A e negli elenchi A-do del gruppo a cui appartenete.
-* **Allega Forms all’e-mail:** Specifica se una copia del modulo è associata ai messaggi di notifica e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
-* **Salva le bozze periodicamente:** Specifica se le bozze del modulo vengono salvate automaticamente o meno. Per salvare le bozze periodicamente, attivate questa opzione e impostate la durata del salvataggio automatico da 1 a 30 minuti. Quando il salvataggio automatico è abilitato e un utente sta lavorando su una bozza, la bozza viene salvata periodicamente dopo il numero specificato di minuti. La bozza viene salvata automaticamente solo in presenza di una modifica nella bozza a partire dall&#39;ultimo salvataggio o salvataggio automatico. Quando la bozza viene salvata, sullo schermo viene visualizzato un messaggio di avviso.
+* **Notifica eventi attività tramite e-mail:** Specifica se ricevere notifiche e-mail per gli eventi attività, comprese le assegnazioni di attività, i promemoria e le scadenze per le attività nell&#39;elenco A-do e negli elenchi A-do del gruppo a cui appartenete.
+* **Allega Forms in e-mail:** specifica se una copia del modulo è associata ai messaggi di notifica e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
+* **Salva le bozze periodicamente:** specifica se le bozze del modulo vengono salvate automaticamente o meno. Per salvare le bozze periodicamente, attivate questa opzione e impostate la durata del salvataggio automatico da 1 a 30 minuti. Quando il salvataggio automatico è abilitato e un utente sta lavorando su una bozza, la bozza viene salvata periodicamente dopo il numero specificato di minuti. La bozza viene salvata automaticamente solo in presenza di una modifica nella bozza a partire dall&#39;ultimo salvataggio o salvataggio automatico. Quando la bozza viene salvata, sullo schermo viene visualizzato un messaggio di avviso.
 
