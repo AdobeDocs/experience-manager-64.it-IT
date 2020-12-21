@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Apertura di un&#39;attività {#opening-a-task}
 
-Se l&#39;app AEM Forms  si sincronizza con un server AEM Forms , potete lavorare con le attività assegnate. Le attività sono passi nel flusso di lavoro definito in workbench o nell&#39;editor del flusso di lavoro AEM. Ad esempio, vedere [Conard ottiene l&#39;attività di valutazione nel sito](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)di riferimento del Governatore di Geometrixx. È possibile apportare modifiche a qualsiasi attività attualmente assegnata. Tutte le attività sono disponibili nella scheda Attività. Le attività salvate come bozze rimangono nella scheda delle attività.
+Se l&#39;app AEM Forms  si sincronizza con un server AEM Forms , potete lavorare con le attività assegnate. Le attività sono passi nel flusso di lavoro definito in workbench o nell&#39;editor del flusso di lavoro AEM. Ad esempio, vedere [Conard ottiene l&#39;attività di valutazione nel sito di riferimento del governo di Geometrixx](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). È possibile apportare modifiche a qualsiasi attività attualmente assegnata. Tutte le attività sono disponibili nella scheda Attività. Le attività salvate come bozze rimangono nella scheda delle attività.
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
 **Per aprire un&#39;attività**
 
@@ -38,7 +38,7 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salv
 
 **Per aprire un&#39;applicazione**
 
-1. Toccate l&#39; **applicazione** nella scheda **Forms** .
+1. Toccate l&#39;applicazione **application** nella scheda **Forms**.
 
    Quando selezionate un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione, vengono visualizzate le azioni/azioni dell&#39;utente associate all&#39;applicazione.
 
@@ -47,4 +47,4 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salv
 
 1. Toccate l&#39;attività per aprirla.
 
-   Toccate **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
+   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
