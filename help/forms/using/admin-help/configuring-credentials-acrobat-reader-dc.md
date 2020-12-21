@@ -24,7 +24,7 @@ Per applicare diritti di utilizzo ai documenti PDF, configurare AEM moduli con u
 
 Se utilizzate una credenziale di valutazione, sostituitela con una credenziale di produzione quando vi spostate nell&#39;ambiente di produzione. Per aggiornare una credenziale scaduta o di valutazioni, eliminare prima la credenziale delle estensioni Acrobat Reader DC precedente.
 
-Per informazioni su come ottenere una credenziale, vedere [Preparazione all&#39;installazione di moduli AEM (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Per informazioni su come ottenere una credenziale, vedere [Preparazione all&#39;installazione dei moduli AEM (Server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 L&#39;archivio attendibili può contenere più credenziali di estensione Acrobat Reader DC. È necessario specificare una di queste credenziali come credenziale di Reader predefinita Estensioni. La credenziale predefinita viene utilizzata quando un utente di Workbench non è in grado di determinare quale credenziale utilizzare durante la creazione del processo. Queste regole si applicano alle credenziali predefinite:
 
@@ -35,7 +35,7 @@ L&#39;archivio attendibili può contenere più credenziali di estensione Acrobat
 
 >[!NOTE]
 >
->È inoltre possibile importare ed eliminare le credenziali a livello di programmazione. (Vedere [Programmazione con AEM moduli](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>È inoltre possibile importare ed eliminare le credenziali a livello di programmazione. (Vedere [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
 
 ## Importare una credenziale di estensione Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
