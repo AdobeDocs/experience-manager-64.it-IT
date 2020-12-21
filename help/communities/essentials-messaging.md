@@ -55,7 +55,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggi per in
  </tbody> 
 </table>
 
-**Elenco** messaggi (per Inbox, Inviato e Cestino)
+**Elenco**  messaggi (per Inbox, Inviato e Cestino)
 
 <table> 
  <tbody> 
@@ -86,15 +86,15 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggi per in
  </tbody> 
 </table>
 
-Vedere anche Personalizzazioni lato [client](client-customize.md)
+Vedere anche [Personalizzazioni lato client](client-customize.md)
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configurazione dei messaggi](configure-messaging.md)
 
-* [API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) client di messaggistica per componenti SCF
+* [Messaggistica ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) API client per componenti SCF
 
-* [API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) di messaggistica per il servizio
+* [API ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) di messaggistica per il servizio
 
 * [Endpoint di messaggistica](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
@@ -109,7 +109,7 @@ Vedere anche Personalizzazioni lato [client](client-customize.md)
 
 >
 >
-Ad esempio:
+Esempio:
 >
 >
 ```
@@ -119,32 +119,32 @@ Ad esempio:
 
 ### Sito community {#community-site}
 
-Una struttura del sito community, creata utilizzando la procedura guidata, includerà la funzione di messaggistica selezionata. Consulta `User Management` Impostazioni della console [Siti](sites-console.md#user-management)community.
+Una struttura del sito community, creata utilizzando la procedura guidata, includerà la funzione di messaggistica selezionata. Vedere Impostazioni `User Management` della [console Siti della community](sites-console.md#user-management).
 
-### Codice di esempio: Notifica ricevuta messaggio {#sample-code-message-received-notification}
+### Codice di esempio: Messaggio ricevuto notifica {#sample-code-message-received-notification}
 
 La funzione Messaggi social genera eventi per le operazioni, ad esempio `send`, `marking read`, `marking delete`. Questi eventi possono essere rilevati e le azioni eseguite sui dati contenuti nell’evento.
 
-L&#39;esempio seguente fa riferimento a un gestore di eventi che ascolta l&#39; `message sent` evento e invia un messaggio e-mail a tutti i destinatari del messaggio che utilizzano l&#39; `Day CQ Mail Service`.
+L&#39;esempio seguente fa riferimento a un gestore eventi in ascolto dell&#39;evento `message sent` e invia un&#39;e-mail a tutti i destinatari del messaggio utilizzando la variabile `Day CQ Mail Service`.
 
 Per provare lo script di esempio lato server, sarà necessario un ambiente di sviluppo e la capacità di creare un bundle OSGi.
 
-1. Login as an administrator to ` [CRXDE|Lite](http://localhost:4502/crx/de)`
-1. Crea un `bundle node`in `/apps/engage/install` con nomi arbitrari, come
+1. Accedi come amministratore a ` [CRXDE|Lite](http://localhost:4502/crx/de)`
+1. Create un `bundle node`in `/apps/engage/install` con nomi arbitrari, ad esempio
 
    * **[!UICONTROL Nome]** simbolico: com.interazione.media.social.messaging.MessagingNotification
    * **[!UICONTROL Nome]**: Notifiche per messaggi introduttivi sull’esercitazione
    * **[!UICONTROL Descrizione]**: un servizio di esempio per inviare una notifica e-mail agli utenti che ricevono un messaggio
-   * **[!UICONTROL Pacchetto]**: `com.engage.media.social.messaging.notification`
+   * **[!UICONTROL Pacchetto]**:  `com.engage.media.social.messaging.notification`
 
 1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-   1. Eliminare la `Activator.java` classe creata automaticamente
+   1. Eliminare la classe `Activator.java` creata automaticamente
    1. Crea classe `MessageEventHandler.java`
-   1. Copia/incolla il codice riportato di seguito in `MessageEventHandler.java`
+   1. Copia/incolla il codice seguente in `MessageEventHandler.java`
 
-1. Fate clic su **[!UICONTROL Salva tutto]**
-1. Individuare `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e aggiungere tutte le istruzioni di importazione come scritte nel `MessageEventHandler.java` codice.
+1. Fare clic su **[!UICONTROL Salva tutto]**
+1. Passare a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e aggiungere tutte le istruzioni di importazione come scritte nel codice `MessageEventHandler.java`.
 1. Creare il bundle
 1. Verificare che il servizio `Day CQ Mail Service`OSGi sia configurato
 1. Effettua il login come utente dimostrativo e invia un&#39;e-mail a un altro utente
