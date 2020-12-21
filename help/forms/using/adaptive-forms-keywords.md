@@ -16,7 +16,7 @@ ht-degree: 15%
 ---
 
 
-# Parole chiave moduli adattivi {#adaptive-forms-keywords}
+# Parole chiave per moduli adattivi {#adaptive-forms-keywords}
 
 Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
 
@@ -240,4 +240,4 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate sopra, evitare di utilizzare nomi simili alle API JavaScript dei moduli [adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate sopra, evitare di utilizzare nomi simili a [moduli adattivi API JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
