@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Funzionalità di messaggistica {#messaging-feature}
+# Funzione di messaggistica {#messaging-feature}
 
 Oltre alle interazioni pubblicamente visibili che si verificano nei forum e nei commenti, la funzione di messaggistica di  AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
 
-Questa funzione può essere inclusa quando si crea un sito [](overview.md#communitiessites) community.
+Questa funzione può essere inclusa quando si crea un [sito community](overview.md#communitiessites).
 
 Le funzioni di messaggistica consentono di:
 
@@ -36,12 +36,12 @@ Le funzioni di messaggistica consentono di:
 
 Per abilitare e modificare la funzione di messaggistica, visita
 
-* [Configurazione dei messaggi](messaging.md) per gli amministratori
-* [Messaging Essentials](essentials-messaging.md) for developer
+* [Configurazione dei ](messaging.md) messaggi per gli amministratori
+* [Messaging ](essentials-messaging.md) Essentials for developer
 
 >[!NOTE]
 >
->Non è supportato l’aggiunta di `Compose Message, Message, or Message List` componenti (nel gruppo di `Communities`componenti) a una pagina in modalità di modifica dell’autore.
+>Non è supportato l&#39;aggiunta di componenti `Compose Message, Message, or Message List` (nel gruppo di componenti `Communities`) a una pagina in modalità di modifica dell&#39;autore.
 
 ## Configurazione dei componenti di messaggistica {#configuring-messaging-components}
 
@@ -49,118 +49,144 @@ Quando la messaggistica è abilitata per un sito community, viene completamente 
 
 ### Configurazione dell&#39;elenco dei messaggi (messagebox) {#configuring-message-list-messagebox}
 
-Per modificare la configurazione dell’elenco dei messaggi per le pagine **Posta in arrivo**, **Inviati** e **Cestino** della funzione di messaggistica, aprite il sito in modalità [di modifica dell’](sites-console.md#authoring-site-content)autore.
+Per modificare la configurazione dell&#39;elenco dei messaggi per le pagine **Inbox**, **Posta inviata** e **Cestino** della funzione di messaggistica, aprire il sito in [modalità di modifica dell&#39;autore](sites-console.md#authoring-site-content).
 
-In `Preview` modalità, selezionate il collegamento **[!UICONTROL Messaggi]** per aprire la pagina di messaggi principale. Selezionate quindi **[!UICONTROL Casella in entrata, Elementi inviati o Cestino]** per configurare il componente per l’elenco dei messaggi.
+In modalità `Preview`, selezionare il collegamento **[!UICONTROL Messages]** per aprire la pagina di messaggi principale. Quindi, per configurare il componente per l&#39;elenco dei messaggi, selezionate **[!UICONTROL Inbox, Inviati elementi o Cestino]**.
 
-In `Edit` modalità, selezionate il componente sulla pagina.
+In modalità `Edit`, selezionate il componente sulla pagina.
 
-Per accedere alla finestra di dialogo di configurazione, è necessario annullare l’ereditarietà selezionando l’ `link`icona .
+Per accedere alla finestra di dialogo di configurazione, è necessario annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
 
-Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39; `broken link` icona.
+Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
 ![chlimage_1-396](assets/chlimage_1-396.png)
 
-Una volta annullata l&#39;ereditarietà, sarà possibile selezionare l&#39; `configure` icona per aprire la finestra di dialogo di configurazione.
+Una volta annullata l&#39;ereditarietà, sarà possibile selezionare l&#39;icona `configure` per aprire la finestra di dialogo di configurazione.
 
 ![chlimage_1-397](assets/chlimage_1-397.png)
 
-#### Basic tab {#basic-tab}
+#### Scheda di base {#basic-tab}
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
-* **[!UICONTROL Selettore]** del servizio (*Obbligatorio*) Impostare questo valore sulla proprietà `serviceSelector.name` del [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
+* **[!UICONTROL Selettore]**
+ del servizio (*obbligatorio*) Impostare questo valore sulla proprietà  `serviceSelector.name` dal  [ AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
 
-* **[!UICONTROL Componi pagina]**(*richiesta*) La pagina da aprire quando un membro fa clic sul `Reply` pulsante. La pagina di destinazione deve contenere il modulo **[!UICONTROL Componi messaggio]** .
+* **[!UICONTROL Componi pagina]**
+ (*richiesta*) La pagina da aprire quando un membro fa clic sul  `Reply` pulsante. La pagina di destinazione deve contenere il modulo **[!UICONTROL Componi messaggio]**.
 
-* **[!UICONTROL Rispondi/Visualizza come risorsa]** Se questa opzione è selezionata, l&#39;URL di risposta e l&#39;URL di visualizzazione faranno riferimento a una risorsa. In caso contrario, i dati vengono passati come parametri di query nell&#39;URL.
+* **[!UICONTROL Rispondi/Visualizza come]**
+risorsaSe questa opzione è selezionata, l&#39;URL di risposta e l&#39;URL di visualizzazione faranno riferimento a una risorsa. In caso contrario, i dati vengono passati come parametri di query nell&#39;URL.
 
-* **[!UICONTROL Modulo]** di visualizzazione profilo Il modulo del profilo da utilizzare per visualizzare il profilo di mittenti.
+* **[!UICONTROL Modulo di visualizzazione profilo:]**
+il modulo del profilo da utilizzare per visualizzare il profilo di mittenti.
 
-* **[!UICONTROL Cartella]** Cestino Se questa opzione è selezionata, questo componente Elenco messaggi visualizza solo i messaggi contrassegnati come eliminati (cestino).
+* **[!UICONTROL Cartella]**
+cestino: se questa opzione è selezionata, questo componente Elenco messaggi visualizza solo i messaggi contrassegnati come eliminati (cestino).
 
-* **[!UICONTROL Percorsi]** cartella (*obbligatorio*) Riferimento ai valori impostati per `inbox.path.name` e `sentitems.path.name` nel [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service). Quando si configura per un `Inbox`, aggiungere una voce utilizzando il valore di `inbox.path.name`. Quando si configura per un `Outbox`, aggiungere una voce utilizzando il valore di `sentitems.path.name`. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
+* **[!UICONTROL Percorsi]**
+ cartella (*obbligatorio*) Riferimento ai valori impostati per  `inbox.path.name` e  `sentitems.path.name` nel  [ AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service). Durante la configurazione di un `Inbox`, aggiungere una voce utilizzando il valore di `inbox.path.name`. Durante la configurazione di un `Outbox`, aggiungere una voce utilizzando il valore di `sentitems.path.name`. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
 
-#### Scheda Visualizzazione {#display-tab}
+#### Scheda Visualizza {#display-tab}
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-* **[!UICONTROL Contrassegna pulsante]** di lettura se questa opzione è selezionata, visualizza un 
+* **[!UICONTROL Contrassegna]**
+pulsante di letturaSe questa opzione è selezionata, viene visualizzata una 
 `Read`che consente di contrassegnare un messaggio come letto.
 
-* **[!UICONTROL Contrassegna pulsante]** non letto se selezionato, visualizza un 
+* **[!UICONTROL Contrassegna]**
+pulsante non lettoSe questa opzione è selezionata, visualizza un 
 `Mark Unread` che consente di contrassegnare un messaggio come letto.
 
-* **[!UICONTROL Pulsante]** Elimina se selezionato, visualizza un 
-`Delete`che consente di contrassegnare un messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionata.
+* **[!UICONTROL Elimina]**
+pulsanteSe selezionato, visualizza un 
+`Delete`che consente di contrassegnare un messaggio come letto. Duplica la funzionalità di eliminazione se è selezionata anche **`Message Options`**.
 
-* **[!UICONTROL Opzioni]** messaggio se selezionato, viene visualizzato 
-**`Reply`**, **`Reply All`****`Forward`** e **`Delete`** i pulsanti che consentono di inviare o eliminare un messaggio. Duplica la funzionalità di eliminazione se **`Delete Button`** è selezionata.
+* **[!UICONTROL Opzioni]**
+messaggioSe selezionato, viene visualizzato 
+**`Reply`**,  **`Reply All`** **`Forward`** e  **`Delete`** i pulsanti che consentono di inviare o eliminare un messaggio. Duplica la funzionalità di eliminazione se è selezionata anche **`Delete Button`**.
 
-* **[!UICONTROL Messaggi per pagina]** Il numero specificato corrisponde al numero massimo di messaggi visualizzati per pagina in uno schema di impaginazione. Se non viene specificato alcun numero (lasciato vuoto), vengono visualizzati tutti i messaggi e non è prevista alcuna impaginazione.
+* **[!UICONTROL Messaggi per]**
+paginaIl numero specificato corrisponde al numero massimo di messaggi visualizzati per pagina in uno schema di impaginazione. Se non viene specificato alcun numero (lasciato vuoto), vengono visualizzati tutti i messaggi e non è prevista alcuna impaginazione.
 
-* **[!UICONTROL Pattern]** di marca temporale Fornisci pattern di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
+* **[!UICONTROL Modelli]**
+di marca temporaleFornisci pattern di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
 
-* **[!UICONTROL Visualizza utente]**: 
-**`Sender`** o **`Recipients`** per determinare se visualizzare il mittente o i destinatari.
+* **[!UICONTROL Visualizza]**
+utenteScegliere 
+**`Sender`** o  **`Recipients`** per determinare se visualizzare il mittente o i destinatari.
 
 ### Configurazione del messaggio di composizione {#configuring-compose-message}
 
-Per modificare la configurazione della pagina Componi messaggio, aprite il sito in modalità [di modifica](sites-console.md#authoring-site-content)dell’autore.
+Per modificare la configurazione della pagina dei messaggi di composizione, aprire il sito in [modalità di modifica dell&#39;autore](sites-console.md#authoring-site-content).
 
-In `Preview`modalità, selezionate il collegamento **[!UICONTROL Messaggi]** per aprire la pagina di messaggi principale. Quindi fate clic sul pulsante Nuovo messaggio per aprire la `Compose Message` pagina.
+In `Preview`modalità, selezionare il collegamento **[!UICONTROL Messaggi]** per aprire la pagina di messaggi principale. Quindi fate clic sul pulsante Nuovo messaggio per aprire la pagina `Compose Message`.
 
-In `Edit` modalità, selezionate il componente principale nella pagina contenente il corpo del messaggio.
+In modalità `Edit`, selezionate il componente principale nella pagina contenente il corpo del messaggio.
 
-Per accedere alla finestra di dialogo di configurazione, è necessario annullare l’ereditarietà selezionando l’ `link`icona .
+Per accedere alla finestra di dialogo di configurazione, è necessario annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
 
-Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39; `broken link` icona.
+Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
-Una volta annullata l&#39;ereditarietà, sarà possibile selezionare l&#39; `configure` icona per aprire la finestra di dialogo di configurazione.
+Una volta annullata l&#39;ereditarietà, sarà possibile selezionare l&#39;icona `configure` per aprire la finestra di dialogo di configurazione.
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### Basic tab {#basic-tab-1}
+#### Scheda di base {#basic-tab-1}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL URL]** di reindirizzamento Immettere l&#39;URL della pagina visualizzata dopo l&#39;invio del messaggio. Ad esempio, 
+* **[!UICONTROL Reindirizza]**
+URLE: immettete l’URL della pagina visualizzata dopo l’invio del messaggio. Esempio, 
 `../messaging.html`.
 
-* **[!UICONTROL Annulla URL]** Immettere l&#39;URL della pagina visualizzata se il mittente annulla il messaggio. Ad esempio, 
+* **[!UICONTROL Annulla]**
+URLImmettere l&#39;URL della pagina visualizzata se il mittente annulla il messaggio. Esempio, 
 `../messaging.html`.
 
-* **[!UICONTROL Lunghezza massima oggetto]** messaggio Il numero massimo di caratteri consentiti nel campo Oggetto. Ad esempio, 500. Il valore predefinito non è alcun limite.
+* **[!UICONTROL Lunghezza massima]**
+oggetto messaggioNumero massimo di caratteri consentiti nel campo Oggetto. Ad esempio, 500. Il valore predefinito non è alcun limite.
 
-* **[!UICONTROL Lunghezza massima del corpo]** del messaggio Il numero massimo di caratteri consentiti nel campo Contenuto. Ad esempio, 10000. Il valore predefinito non è alcun limite.
+* **[!UICONTROL Lunghezza massima del]**
+corpo del messaggioNumero massimo di caratteri consentiti nel campo Contenuto. Ad esempio, 10000. Il valore predefinito non è alcun limite.
 
-* **[!UICONTROL Selettore]** del servizio (*Obbligatorio*) Impostare questo valore sulla proprietà **`serviceSelector.name`** del [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
+* **[!UICONTROL Selettore]**
+ del servizio (*obbligatorio*) Impostare questo valore sulla proprietà  **`serviceSelector.name`** dal  [ AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
 
-#### Scheda Visualizzazione {#display-tab-1}
+#### Scheda Visualizza {#display-tab-1}
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 
-* **[!UICONTROL Mostra campo]** oggetto se selezionato, mostra il pulsante 
+* **[!UICONTROL Mostra]**
+campo oggetto Se questa opzione è selezionata, viene visualizzata la 
 `Subject` e abilitare l&#39;aggiunta di un oggetto al messaggio. Il valore predefinito non è selezionato.
 
-* **[!UICONTROL Etichetta]** oggetto Immettere il testo da visualizzare accanto al pulsante 
-`Subject` o in un altro campo. Default is `Subject`.
+* **[!UICONTROL Oggetto]**
+Etichetta: testo da visualizzare accanto al pulsante 
+`Subject` o in un altro campo. Il valore predefinito è `Subject`.
 
-* **[!UICONTROL Mostra campo]** Allega file se selezionato, mostra la variabile 
+* **[!UICONTROL Mostra]**
+campo Allega fileSe questa opzione è selezionata, viene visualizzata la variabile 
 `Attachment` e abilitare l&#39;aggiunta di allegati al messaggio. Il valore predefinito non è selezionato.
 
-* **[!UICONTROL Allega etichetta]** file Immettere il testo da visualizzare accanto al pulsante 
-`Attachment` o in un altro campo. Default is **`Attach File`**.
+* **[!UICONTROL Allega]**
+etichetta fileImmettere il testo da visualizzare accanto al pulsante 
+`Attachment` o in un altro campo. Il valore predefinito è **`Attach File`**.
 
-* **[!UICONTROL Mostra campo]** contenuto se questa opzione è selezionata, visualizza la variabile 
+* **[!UICONTROL Mostra]**
+campo contenutoSe questa opzione è selezionata, viene visualizzata la variabile 
 `Content` e abilitare l&#39;aggiunta di un corpo del messaggio. Il valore predefinito non è selezionato.
 
-* **[!UICONTROL Etichetta]** contenuto Immettere il testo da visualizzare accanto al pulsante 
-`Content` o in un altro campo. Default is **`Body`**.
+* **[!UICONTROL Etichetta]**
+contenutoImmettere il testo da visualizzare accanto al pulsante 
+`Content` o in un altro campo. Il valore predefinito è **`Body`**.
 
-* **[!UICONTROL Se questa opzione è selezionata, l&#39;Editor]** Rich Text indica l&#39;utilizzo di una casella di testo Contenuto personalizzata con un proprio editor Rich Text. Il valore predefinito non è selezionato.
+* **[!UICONTROL Con l’]**
+Editor Rich TextSe questa opzione è selezionata, indica l’utilizzo di una casella di testo Contenuto personalizzata con un proprio editor Rich Text. Il valore predefinito non è selezionato.
 
-* **[!UICONTROL Pattern]** di marca temporale Fornisci pattern di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
+* **[!UICONTROL Modelli]**
+di marca temporaleFornisci pattern di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
 
