@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Quando si avvia un processo, potrebbe essere necessario compilare un modulo per avviare un processo aziendale che  controlli del flusso di lavoro AEM Forms. Se un modulo utilizza l&#39;opzione Prepara processo dati, alcune informazioni possono essere precompilate in un modulo vuoto quando viene avviato un nuovo processo.
 
-Ad esempio, si desidera acquistare un nuovo monitor per computer e quindi avviare un processo denominato *Ordine* di acquisto. Quando si avvia il processo, viene aperto un modulo che richiede informazioni dettagliate sull&#39;elemento da ordinare. Il nome, il numero del dipendente e il nome del manager possono già essere precompilati nel modulo. Quando inviate la richiesta, viene avviato un processo aziendale. In base alla definizione del processo, il server invia automaticamente la richiesta al manager. L&#39;attività inizia a comparire nell&#39;elenco A-do del manager. Quando il manager approva la richiesta, il flusso di lavoro dei moduli indirizza la richiesta al reparto acquisti e invia una notifica e-mail.
+Ad esempio, si desidera acquistare un nuovo monitor per computer e quindi avviare un processo denominato *Ordine di acquisto*. Quando si avvia il processo, viene aperto un modulo che richiede informazioni dettagliate sull&#39;elemento da ordinare. Il nome, il numero del dipendente e il nome del manager possono già essere precompilati nel modulo. Quando inviate la richiesta, viene avviato un processo aziendale. In base alla definizione del processo, il server invia automaticamente la richiesta al manager. L&#39;attività inizia a comparire nell&#39;elenco A-do del manager. Quando il manager approva la richiesta, il flusso di lavoro dei moduli indirizza la richiesta al reparto acquisti e invia una notifica e-mail.
 
 ## Selezione dei processi da avviare {#selecting-processes-to-start}
 
@@ -60,7 +60,7 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
 
    Process Management avvia il processo e indirizza il modulo agli elenchi A-do delle persone appropriate che devono completare l&#39;attività successiva nel processo.
 
-   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla successivamente, se il processo lo consente. Se il modulo e la procedura lo consentono, è anche possibile fare clic su **Offline** e successivamente inviarlo da  Adobe® Reader® o  Adobe®  Acrobat® Professional o  Acrobat Standard.
+   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla successivamente, se il processo lo consente. Se il modulo e la procedura lo consentono, è possibile fare clic su **Offline** e successivamente inviarlo da  Adobe® Reader® o  Adobe®  Acrobat® Professional o  Acrobat Standard.
 
    >[!NOTE]
    >
@@ -80,10 +80,10 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 * Lettura/eliminazione
 * Nessun accesso
 
-1. Aprite un’attività e fate clic sulla scheda **Note** , se il processo lo consente.
-1. Digitate un titolo per la nota nella casella **Titolo** e digitate il testo della nota nella casella **Nota** .
-1. Selezionate il livello **Autorizzazioni** per la nota per gli altri utenti che partecipano al processo.
-1. Fai clic su **OK**. Un file di testo che contiene la nota viene allegato al modulo. Potete aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Per eliminare una nota, fate clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
+1. Aprite un&#39;attività e fate clic sulla scheda **Note**, se il processo lo consente.
+1. Digitare un titolo per la nota nella casella **Titolo** e digitare il testo della nota nella casella **Nota**.
+1. Selezionate il livello **Autorizzazioni** per la nota relativa agli altri utenti che partecipano al processo.
+1. Fai clic su **OK**. Un file di testo che contiene la nota viene allegato al modulo. Potete aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Per eliminare una nota, fare clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
 
 ### Aggiungere un allegato {#add-an-attachment}
 
@@ -95,10 +95,10 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 * Lettura/eliminazione
 * Nessun accesso
 
-1. Fare clic sulla scheda **Allegati** e selezionare **Allegato**.
-1. Fate clic su **Sfoglia** per selezionare il file da allegare.
-1. Selezionate il livello **Autorizzazioni** per l’allegato per gli altri utenti che partecipano al processo. Se si seleziona **Leggi**, altri utenti possono salvare il file localmente. Se si seleziona una delle autorizzazioni di modifica, altri utenti possono caricare un nuovo file per sostituire l&#39;allegato.
-1. Fai clic su **OK**. Il file è allegato al modulo. È possibile eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
+1. Fare clic sulla scheda **Allegati** e selezionare **Allegati**.
+1. Fare clic su **Sfoglia** per selezionare il file da allegare.
+1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se si seleziona **Leggi**, altri utenti possono salvare il file localmente. Se si seleziona una delle autorizzazioni di modifica, altri utenti possono caricare un nuovo file per sostituire l&#39;allegato.
+1. Fai clic su **OK**. Il file è allegato al modulo. Per eliminare un file, fare clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
 
 ## Salvataggio delle copie bozza dei moduli {#saving-draft-copies-of-forms}
 
@@ -112,9 +112,9 @@ Inoltre, potete configurare l’area di lavoro in modo da salvare automaticament
 >
 >Il pulsante Salva non è disponibile per alcuni moduli, a seconda del processo a cui è associato.
 
-### Salvare una bozza di copia {#save-a-draft-copy}
+### Salva una bozza di copia {#save-a-draft-copy}
 
-1. Fate clic su **Salva** nell’angolo inferiore sinistro di una scheda. Il modulo viene aggiunto alla categoria Bozze nella pagina Da fare. Tutte le modifiche apportate al modulo vengono salvate.
+1. Fare clic su **Salva** nell&#39;angolo inferiore sinistro di una scheda. Il modulo viene aggiunto alla categoria Bozze nella pagina Da fare. Tutte le modifiche apportate al modulo vengono salvate.
 
 ### Riaprire una copia bozza {#reopen-a-draft-copy}
 
@@ -128,7 +128,7 @@ Inoltre, potete configurare l’area di lavoro in modo da salvare automaticament
 
 >[!NOTE]
 >
->Se in genere si avviano i processi quando si utilizza &#39;area di lavoro di AEM Forms, è possibile impostare la preferenza Posizione iniziale in modo da visualizzare automaticamente la categoria Preferiti all&#39;avvio &#39;area di lavoro di AEM Forms. Per ulteriori dettagli, consulta Gestione delle preferenze nella [Guida introduttiva ’area di lavoro](/help/forms/using/getting-started-livecycle-html-workspace.md)AEM Forms.
+>Se in genere si avviano i processi quando si utilizza &#39;area di lavoro di AEM Forms, è possibile impostare la preferenza Posizione iniziale in modo da visualizzare automaticamente la categoria Preferiti all&#39;avvio &#39;area di lavoro di AEM Forms. Per ulteriori dettagli, vedere Gestione delle preferenze in [Guida introduttiva &#39;area di lavoro AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Per contrassegnare un processo come preferito, selezionate l&#39;attività nella relativa categoria e fate clic sulla stella vuota. La stella diventa dorata. Per contrassegnare un processo come preferito, fate di nuovo clic sulla stella d&#39;oro.
 
