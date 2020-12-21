@@ -31,7 +31,7 @@ Ad esempio, è possibile inserire i seguenti caratteri speciali:
 
 È possibile inserire caratteri speciali nelle lettere:
 
-* Nell’editor [di testo](/help/forms/using/document-fragments.md#createtext)
+* Nell&#39; [editor di testo](/help/forms/using/document-fragments.md#createtext)
 * In un modulo in linea [modificabile in una corrispondenza](/help/forms/using/create-correspondence.md#managecontent)
 
 ![specialtisinlinemodulo](assets/specialcharactersinlinemodule.png)
@@ -42,10 +42,10 @@ L&#39;amministratore può aggiungere il supporto per più o più caratteri speci
 
 Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate le seguenti operazioni:
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
-1. Nella cartella delle app, create una cartella denominata **[!UICONTROL specialfonts]** con percorso/struttura simile alla cartella dei caratteri speciali (che si trova nella cartella textEditorConfig in libs):
+1. Andate a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Nella cartella delle app, create una cartella denominata **[!UICONTROL caratteri speciali]** con percorso/struttura simile alla cartella dei caratteri speciali (che si trova nella cartella textEditorConfig in libs):
 
-   1. Fate clic con il pulsante destro del mouse sulla cartella **dei caratteri** speciali nel percorso seguente e selezionate Nodo **** sovrapposizione:
+   1. Fare clic con il pulsante destro del mouse sulla cartella **caratteri speciali** nel percorso seguente e selezionare **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -55,7 +55,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
 
       **Posizione overlay:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** Selezionati
 
       >[!NOTE]
       >
@@ -66,23 +66,23 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
       >* Installare un pacchetto di funzioni
 
 
-   1. Fate clic su **OK** , quindi su **Salva tutto**. La cartella dei caratteri speciali viene creata nel percorso specificato.
+   1. Fare clic su **OK**, quindi fare clic su **Salva tutto**. La cartella dei caratteri speciali viene creata nel percorso specificato.
 
       Dopo aver creato la sovrapposizione, verificate i tag della struttura del nodo. Ogni nodo creato in /apps utilizzando la sovrapposizione deve avere la stessa classe e le stesse proprietà definite in /libs per quel nodo. Se manca una proprietà o un tag nella struttura del nodo nella posizione /apps, sincronizzatene i tag con il nodo corrispondente in /libs.
 
-1. Assicurarsi che il nodo **[!UICONTROL textEditorConfig]** abbia le proprietà e i valori seguenti:
+1. Assicurarsi che il nodo **[!UICONTROL textEditorConfig]** disponga delle proprietà e dei valori seguenti:
 
    | Nome | Tipo | Valore |
    |---|---|---|
    | cmConfigurationType | Stringa | cmTextEditorConfiguration |
    | cssPath | Stringa | /libs/fd/cm/ma/gui/components/admin/create-asset/textcontrol/clientlibs/textcontrol |
 
-1. Fate clic con il pulsante destro del mouse sulla cartella **[!UICONTROL dei caratteri]** speciali nel percorso seguente e selezionate **Crea > Nodo** secondario, quindi fate clic su **Salva tutto**:
+1. Fare clic con il pulsante destro del mouse sulla cartella **[!UICONTROL caratteri speciali]** nel percorso seguente e selezionare **Crea > Nodo figlio**, quindi fare clic su **Salva tutto**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts/&lt;YourChildNode>
 
 1. Aggiornate la pagina Editor di testo\Crea interfaccia utente di corrispondenza. Il nodo aggiunto è l’ultimo nell’elenco dei caratteri speciali nell’interfaccia utente.
-1. Fate clic su **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 1. Apportate le modifiche necessarie ai caratteri speciali:
 
 <table> 
