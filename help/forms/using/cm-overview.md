@@ -41,7 +41,7 @@ Fornisce comunicazioni di qualità superiore, consentendo di:
 * Creare  file Adobe PDF per l&#39;archiviazione e il controllo
 * Crea messaggi conformi a livello organizzativo utilizzando contenuto approvato tramite regole aziendali incorporate.
 
-### Esteso {#extensive}
+### Estensivo {#extensive}
 
 Migliora il coinvolgimento dei clienti, consentendo di:
 
