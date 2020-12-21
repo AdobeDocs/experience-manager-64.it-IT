@@ -23,10 +23,10 @@ Questo articolo illustra le strategie e le procedure ottimali che potete impleme
 
 ## Impostazioni cache {#cache-settings}
 
-Puoi configurare e controllare la strategia di caching per  AEM Forms utilizzando il componente **Mobile Forms Configurations** nella console AEM configurazione Web all’indirizzo:
+Puoi configurare e controllare la strategia di caching per  AEM Forms utilizzando il componente **Mobile Forms Configurations** nella console AEM configurazione Web all&#39;indirizzo:
 
 * ( AEM Forms su OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* ( AEM Forms su JEE) `https://[server]:[port]/lc/system/console/configMgr`
 
 Le opzioni disponibili per il caching sono le seguenti:
 
@@ -37,18 +37,18 @@ Le opzioni disponibili per il caching sono le seguenti:
 Le impostazioni predefinite della cache per  AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
 
 * **Strategia** cache: Aggressivo
-* **Dimensione** cache (in termini di numero di moduli): Come richiesto
+* **Dimensione**  cache (in termini di numero di moduli): Come richiesto
 * **Dimensione** massima oggetto: Come richiesto
 
 ![Configurazioni Forms per dispositivi mobili](assets/snap.png)
 
 >[!NOTE]
 >
->Se si utilizza AEM Dispatcher per memorizzare i moduli adattivi nella cache, i moduli adattivi che contengono moduli con dati precompilati vengono memorizzati nella cache. Se tali moduli vengono serviti AEM cache del dispatcher, potrebbe causare la trasmissione di dati precompilati o non aggiornati agli utenti. Utilizzare quindi AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, la cache del dispatcher non invalida automaticamente i frammenti memorizzati nella cache. Pertanto, non utilizzarlo per memorizzare nella cache i frammenti di modulo. Per tali moduli e frammenti, utilizzare la cache [dei moduli](/help/forms/using/configure-adaptive-forms-cache.md)adattivi.
+>Se si utilizza AEM Dispatcher per memorizzare i moduli adattivi nella cache, i moduli adattivi che contengono moduli con dati precompilati vengono memorizzati nella cache. Se tali moduli vengono serviti AEM cache del dispatcher, potrebbe causare la trasmissione di dati precompilati o non aggiornati agli utenti. Utilizzare quindi AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, la cache del dispatcher non invalida automaticamente i frammenti memorizzati nella cache. Pertanto, non utilizzarlo per memorizzare nella cache i frammenti di modulo. Per tali moduli e frammenti, utilizzare la [cache moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md).
 
 ## Parametri JVM {#jvm-parameters}
 
-Per ottenere prestazioni ottimali, si consiglia di utilizzare i seguenti `init` argomenti JVM per configurare il `Java heap` e `PermGen`.
+Per ottenere prestazioni ottimali, si consiglia di utilizzare i seguenti argomenti JVM `init` per configurare le `Java heap` e `PermGen`.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -59,7 +59,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Le impostazioni consigliate sono per Windows 2008 R2 8 Core e per Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
+>Le impostazioni consigliate sono per Windows 2008 R2 8 Core e  Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
 
 ## Utilizzo di un server Web {#using-a-web-server}
 
@@ -81,7 +81,7 @@ I passaggi seguenti dimostrano le modifiche necessarie per abilitare la compress
 
 Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono per l&#39;ottimizzazione tramite HTTP.
 
-1. Rimuovete il commento dalle seguenti configurazioni del modulo nel `APACHE_HOME/conf/httpd.conf` file.
+1. Rimuovete il commento dalle seguenti configurazioni del modulo nel file `APACHE_HOME/conf/httpd.conf`.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -95,14 +95,14 @@ Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni
 
 1. Configurare il proxy sulla porta 4502 di crx.
 
-   Aggiungi la seguente configurazione nel file di `APACHE_HOME/conf/httpd.conf` configurazione.
+   Aggiungi la seguente configurazione nel file di configurazione `APACHE_HOME/conf/httpd.conf`.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Abilita compressione. Aggiungi la seguente configurazione nel file di `APACHE_HOME/conf/httpd.conf` configurazione.
+1. Abilita compressione. Aggiungi la seguente configurazione nel file di configurazione `APACHE_HOME/conf/httpd.conf`.
 
    **Per moduli HTML5**
 
@@ -138,9 +138,9 @@ Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni
    </Location>
    ```
 
-   Per accedere al server crx, utilizzate `https://[server]:80`, dove `server` è il nome del server su cui è in esecuzione il server Apache.
+   Per accedere al server crx, utilizzare `https://[server]:80`, dove `server` è il nome del server su cui è in esecuzione il server Apache.
 
-## Utilizzo di un antivirus sul server che esegue  AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
+## Utilizzo di un antivirus sul server in cui è in esecuzione  AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
 È possibile che sui server in cui è in esecuzione un software antivirus si verifichino rallentamenti delle prestazioni. Un software antivirus sempre su (scansione on-access) analizza tutti i file di un sistema. Può rallentare il server e le prestazioni dell&#39;AEM Forms  sono influenzate.
 
@@ -148,9 +148,9 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 * AEM directory di installazione. Se non è possibile escludere la directory completa, escludere quanto segue:
 
-   * [AEM directory]di installazione \crx-repository\temp
-   * [AEM directory]di installazione \crx-repository\repository
-   * [AEM directory]di installazione \crx-repository\launchpad
+   * [AEM directory] di installazione \crx-repository\temp
+   * [AEM directory] di installazione \crx-repository\repository
+   * [AEM directory] di installazione \crx-repository\launchpad
 
 * Directory temporanea del server applicazioni. Il percorso predefinito è:
 
@@ -158,7 +158,7 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Sfera Web) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **( AEM Forms solo su JEE)** Directory Global Document Storage (GDS). Il percorso predefinito è:
+* **( AEM Forms solo su JEE)** Global Document Storage (GDS). Il percorso predefinito è:
 
    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`
@@ -166,12 +166,12 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 * **( AEM Forms solo su JEE)**  registri del server AEM Forms e directory temporanea. Il percorso predefinito è:
 
-   * Server logs - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
-   * Directory temporanea - [directory]di installazione AEM Forms\temp
+   * Registri server - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
+   * Directory temporanea - [ directory di installazione AEM Forms]\temp
 
 >[!NOTE]
 >
->* Se si utilizza una posizione diversa per GDS e directory temporanea, aprire AdminUI in `https://[server]:[port]/adminui)`, passare a **Home > Settings > Core System Settings > Core Configurations (Impostazioni di sistema principali) > Core Configurations (Configurazioni** di base) per confermare la posizione in uso.
+>* Se si utilizza una posizione diversa per GDS e directory temporanea, aprire AdminUI in `https://[server]:[port]/adminui)`, passare a **Home > Settings > Core System Settings > Core Configurations** per confermare la posizione in uso.
 
 * Se il server AEM Forms  esegue lentamente anche dopo aver escluso le directory suggerite, escludere anche il file eseguibile Java (java.exe).
 
