@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Pre-requisito {#pre-requisite}
 
-Configurate il sito di riferimento We.Gov come descritto in [Impostazione e configurazione  siti](/help/forms/using/setup-reference-sites.md)di riferimento AEM Forms.
+Configurate il sito di riferimento We.Gov come descritto in [Configurare e configurare  siti di riferimento AEM Forms](/help/forms/using/setup-reference-sites.md).
 
 ## Scenario di riferimento del sito {#reference-site-scenario}
 
@@ -42,7 +42,7 @@ Una volta inoltrata la domanda e pagata la tassa, il richiedente riceve un’e-m
 
 L&#39;organizzazione We.Gov riceve l&#39;applicazione. L&#39;organizzazione ottiene la valutazione dell&#39;applicazione e approva le applicazioni autentiche.
 
-Dopo l&#39;approvazione della domanda, il richiedente riceve un&#39;e-mail dal sito We.Gov. L&#39;opzione **Visualizza documento** nel messaggio e-mail collega un documento con i dettagli di iscrizione del richiedente.
+Dopo l&#39;approvazione della domanda, il richiedente riceve un&#39;e-mail dal sito We.Gov. L&#39;opzione **Visualizza documento** nell&#39;e-mail collega un documento con i dettagli di iscrizione del richiedente.
 
 L&#39;infografica seguente mostra il flusso di lavoro dettagliato dello scenario del sito di riferimento We.Gov.
 
@@ -55,11 +55,11 @@ Lo scenario coinvolge le seguenti persone:
 * Gloria Rios, capo della divisione di approvazione, We.Gov
 * Conard Simms, l&#39;agente di campo che si occupa della valutazione dell&#39;applicazione
 
-## Sarah avvia il suo assegno di idoneità {#sarah-initiates-her-eligibility-check}
+## Sarah avvia il controllo di idoneità {#sarah-initiates-her-eligibility-check}
 
-Un richiedente può verificare l’idoneità per richiedere prestazioni di assistenza per bambini. Il sito consente agli utenti di rispondere alle domande e consentire loro di determinare se la loro applicazione è idonea ai benefici. Sarah, una genitore adottiva, è una potenziale richiedente. Il modulo di idoneità fa parte dell’applicazione per i servizi di assistenza per i bambini del sito We.Gov. Per verificare la sua idoneità, Sarah fa clic su **[!UICONTROL Child Support]** sul sito Web di We.Gov. Nella pagina Assistenza figlio, Sarah fa clic su **[!UICONTROL Verifica idoneità]**.
+Un richiedente può verificare l’idoneità per richiedere prestazioni di assistenza per bambini. Il sito consente agli utenti di rispondere alle domande e consentire loro di determinare se la loro applicazione è idonea ai benefici. Sarah, una genitore adottiva, è una potenziale richiedente. Il modulo di idoneità fa parte dell’applicazione per i servizi di assistenza per i bambini del sito We.Gov. Per verificare la propria idoneità, Sarah fa clic su **[!UICONTROL Supporto per bambini]** nel sito Web di We.Gov. Nella pagina Assistenza figlio, Sarah fa clic su **[!UICONTROL Verifica la tua idoneità]**.
 
-In aggiunta all&#39;approccio di cui sopra, Sarah può fare clic su **[!UICONTROL Get Started]** nella home page. Sarah viene visualizzata la pagina Tutte le applicazioni, in cui può fare clic su Applica in **[!UICONTROL Application for Child Support Services]**. Sarah viene poi portata al controllo di idoneità.
+Oltre a questo approccio, Sarah può fare clic su **[!UICONTROL Get Started]** nella home page. Sarah viene visualizzata la pagina Tutte le applicazioni, in cui può fare clic su Applica in **[!UICONTROL Application for Child Support Services]**. Sarah viene poi portata al controllo di idoneità.
 
 Nella pagina Verifica idoneità per supporto figlio, Sarah riceve una serie di domande per determinare la propria idoneità per i benefici di assistenza ai bambini. Attraverso la serie di domande, le viene chiesto:
 
@@ -82,18 +82,18 @@ La verifica di idoneità fa parte del modulo adattivo per l&#39;applicazione di 
 * Il richiedente ha la cura principale giorno per giorno del bambino
 * L&#39;età del bambino che riceve servizi di assistenza è sotto i 16 anni.
 
-### Vedi te stesso {#see-it-yourself}
+### Vedere da soli {#see-it-yourself}
 
 Nel browser, aprite `https://<hostname>:<PublishPort>/content/we-gov/en.html`. Nel sito We.Gov, fate clic su Supporto per bambini. Nella pagina Supporto figlio, fate clic su Verifica idoneità.
 
 Per visualizzare le regole:
 
 1. Aprire il modulo in modalità di modifica nell’istanza di creazione. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Select a component and click ![edit-rules](assets/edit-rules.png).
+1. Selezionate un componente e fate clic su ![edit-rules](assets/edit-rules.png).
 
    Viene visualizzato l&#39;Editor regole in cui sono elencate tutte le regole applicate al modulo.
 
-1. Nel pannello a sinistra, fate clic su regole `passMsg` e `failMsg` per comprendere come funziona il controllo di idoneità.
+1. Nel pannello a sinistra, fate clic sulle regole `passMsg` e `failMsg` per capire come funziona il controllo di idoneità.
 
 ## Sarah avvia la sua applicazione per il supporto dei bambini {#sarah-starts-her-application-for-child-support}
 
@@ -108,11 +108,11 @@ Nella pagina Application For Child Support Services, Sarah fornisce i dettagli n
 
 * **[!UICONTROL Pagamento]** della tariffa: Lascia che Sarah fornisca i dati della sua carta di credito per pagare la tassa di richiesta.
 
-Per impostazione predefinita, Sarah viene portata alla sezione **[!UICONTROL Informazioni sui candidati]** .
+Per impostazione predefinita, Sarah viene portata alla sezione **[!UICONTROL Informazioni su richiedente]**.
 
 ![Applicazione di supporto per bambini sul desktop](assets/desktop.png)
 
-In qualsiasi momento, Sarah può fare clic su **[!UICONTROL Torna più tardi]** e riprendere con la sua applicazione. Quando fa clic su **[!UICONTROL Torna più tardi]**, i suoi progressi vengono salvati come bozza, e ottiene un&#39;opzione per inviare via e-mail la bozza.
+In qualsiasi momento, Sarah può fare clic su **[!UICONTROL Torna più tardi]** e riprendere con la sua applicazione. Quando fa clic su **[!UICONTROL Torna più tardi]**, i suoi progressi vengono salvati come bozza e riceve un&#39;opzione per inviare via e-mail la bozza.
 
 Quando fa clic su **[!UICONTROL Invia e-mail]**, riceve un messaggio e-mail contenente un collegamento alla bozza del modulo.
 
@@ -128,7 +128,7 @@ Sarah può fornire i dettagli in qualsiasi sezione, ma la tariffa per l&#39;appl
 
 ### <strong>Sarah fornisce le sue informazioni</strong> {#strong-sarah-provides-her-information-strong}
 
-Dopo che Sarah fa clic su **[!UICONTROL Avvia domanda]**, viene portata alla sezione Informazioni sul candidato della pagina Application For Child Support Services (Servizi di assistenza per i bambini). In Informazioni sul candidato, Sarah naviga tra le schede e fornisce i suoi dati personali per l&#39;applicazione. Fa clic su **[!UICONTROL Avanti]** per navigare tra le schede.
+Dopo che Sarah fa clic su **[!UICONTROL Avvia applicazione]**, viene portata alla sezione Informazioni sui candidati della pagina Application For Child Support Services. In Informazioni sul candidato, Sarah naviga tra le schede e fornisce i suoi dati personali per l&#39;applicazione. Fa clic su **[!UICONTROL Next]** per navigare tra le schede.
 
 Nella sezione Informazioni sui candidati, le viene chiesto di fornire i dettagli nelle seguenti schede:
 
@@ -146,7 +146,7 @@ In Informazioni di base, Sarah fornisce la sua prova d&#39;identità e i suoi da
 
 ### Sarah fornisce informazioni sui bambini {#sarah-provides-child-information}
 
-Dopo che Sarah ha fornito i suoi dati personali e ha fatto clic su **[!UICONTROL Next (Avanti]**), viene portata alla sezione Child Information (Informazioni sui bambini).
+Dopo che Sarah ha fornito i suoi dati personali e ha fatto clic su **[!UICONTROL Next]**, viene portata alla sezione Informazioni sui bambini.
 
 Nella sezione Informazioni figlio, fornisce i seguenti dettagli:
 
@@ -154,11 +154,11 @@ Nella sezione Informazioni figlio, fornisce i seguenti dettagli:
 * Nome del bambino, numero di previdenza sociale, data di nascita e luogo di nascita
 
 Se Sarah sceglie più di un bambino, le verranno abilitati moduli aggiuntivi con gli stessi dettagli da compilare.\
-Sarah sceglie il suo figlio singolo, Joe, e gli fa il nome.
+Sarah sceglie il suo figlio singolo, Joe, e gli dà il nome.
 
-### Sarah fornisce informazioni sul pagamento {#sarah-provides-payment-information}
+### Sarah fornisce informazioni di pagamento {#sarah-provides-payment-information}
 
-Dopo che Sarah fornisce informazioni sul figlio adottato (o sui figli) e fa clic su **[!UICONTROL Avanti]**, viene portata alla sezione Informazioni **[!UICONTROL sul]** pagamento.
+Dopo che Sarah fornisce informazioni sul figlio adottato (o sui figli) e fa clic su **[!UICONTROL Next]**, viene portata alla sezione **[!UICONTROL Informazioni sul pagamento]**.
 
 Nella sezione Informazioni sul pagamento, l&#39;utente fornisce i dettagli del conto bancario in cui può ricevere i sussidi per l&#39;assistenza ai figli.\
 Immette il suo numero di conto bancario di dieci cifre.
@@ -195,7 +195,7 @@ Il controllo di idoneità utilizza le regole specificate nel modulo. Utilizza i 
 
 `HIDE failMsg WHEN (Does the child lives in the state of GX? is equal to Yes) AND ( (Do you live in the state of GX? is equal to Yes) AND (Who has the main day-to-day care of the child? is equal to You) ) AND (Is the child you are applying for: is equal to Under 16 years) AND (Are you: is equal to The custodial parent) ELSE Show`
 
-### Vedi te stesso {#see-it-yourself-1}
+### Vedere da soli {#see-it-yourself-1}
 
 Nel browser, aprite `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` e compilate le informazioni richieste. Quando si invia l&#39;applicazione dopo aver compilato le informazioni richieste, pagato le tariffe e firmato il documento, si riceve l&#39;e-mail di conferma.
 
@@ -209,7 +209,7 @@ Per visualizzare tutte le regole, eseguire le operazioni seguenti:
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
-1. Selezionate un componente e toccate ![le regole](assets/edit-rules.png)di modifica. Tutte le regole sono elencate nell&#39;editor delle regole, incluse quelle elencate sopra.
+1. Selezionate un componente e toccate ![edit-rules](assets/edit-rules.png). Tutte le regole sono elencate nell&#39;editor delle regole, incluse quelle elencate sopra.
 
 ## Gloria riceve l&#39;applicazione {#gloria-receives-the-application}
 
@@ -219,9 +219,9 @@ Gloria, responsabile delle approvazioni di We.Gov, può visualizzare, approvare 
 
 Quando Sarah riempie e invia l&#39;applicazione di supporto per bambini, viene creato un PDF o un documento di registrazione dell&#39;applicazione e inviato alla inbox di Gloria Rios. Gloria può visualizzare la domanda inviata e accettarla o rifiutarla.
 
-### Vedi te stesso {#see-it-yourself-2}
+### Vedere da soli {#see-it-yourself-2}
 
-Apri pagina `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sulla pagina, toccate **[!UICONTROL Accedi]**, selezionate la casella di controllo **[!UICONTROL Accesso come rappresentante]** , accedete alla casella in entrata AEM utilizzando grios/password come nome utente/password per Gloria Rios. Viene visualizzata l’applicazione di supporto figlio. Per informazioni sull&#39;utilizzo di AEM Inbox per le attività relative ai flussi di lavoro incentrate sui moduli, vedere [Gestione delle applicazioni e delle attività Forms in AEM Posta in arrivo](/help/forms/using/manage-applications-inbox.md).
+Apri pagina `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sulla pagina, toccare **[!UICONTROL Accedi]**, selezionare la casella di controllo **[!UICONTROL Accedi come rappresentante]**, accedere alla casella in entrata AEM utilizzando grios/password come nome utente/password per Gloria Rios. Viene visualizzata l’applicazione di supporto figlio. Per informazioni sull&#39;utilizzo di AEM Inbox per le attività relative ai flussi di lavoro incentrate sui moduli, vedere [Gestione di applicazioni e attività Forms in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![La inbox di Gloria nel refsite We.Gov](assets/gloria-inbox.png)
 
@@ -232,17 +232,17 @@ Gloria può visualizzare, approvare o rifiutare l’applicazione dal dashboard d
 Gloria, responsabile delle approvazioni a We.Gov, apre la sua casella AEM. Visualizza un&#39;attività di revisione nel suo elenco di compiti. Apre e visualizza l&#39;attività di revisione.
 
 Vede un PDF del modulo compilato con i dettagli inseriti da Sarah insieme ai documenti caricati da Sarah.\
-Gloria può approvare o respingere la domanda. Tuttavia, Gloria fa clic su **[!UICONTROL Valutazione richiesta]** per ottenere la valutazione della domanda.
+Gloria può approvare o respingere la domanda. Tuttavia, Gloria fa clic su **[!UICONTROL Valutazione richiesta]** per valutare l&#39;applicazione.
 
 ![gloria-invia-valutazione](assets/gloria-sends-assessment.png)
 
 L&#39;applicazione di Sarah è un punto di partenza nel flusso di lavoro AEM. Viene avviato il flusso di lavoro AEM all’invio del modulo di richiesta del supporto figlio. Il flusso di lavoro AEM crea un&#39;attività per Gloria, che compare nella sua casella AEM. Quando Gloria richiede la valutazione in loco, viene creata una nuova attività per l&#39;agente di campo.
 
-### Vedi te stesso {#see-it-yourself-3}
+### Vedere da soli {#see-it-yourself-3}
 
 Se la configurazione è completa, il flusso di lavoro AEM inizia subito dopo l&#39;invio del modulo. Accedete alla inbox utilizzando le credenziali di Gloria.
 
-Accedete alla casella in entrata all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. Sulla pagina, tocca **[!UICONTROL Accedi]**, seleziona la casella di controllo **[!UICONTROL Accesso come rappresentante]** utilizza le credenziali predefinite di Gloria:
+Accedete alla inbox all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. Sulla pagina, toccare **[!UICONTROL Accesso]**, selezionare la casella di controllo **[!UICONTROL Accesso come rappresentante]** utilizzare le credenziali predefinite di Gloria:
 
 * Nome utente: grios
 * Password: password
@@ -251,7 +251,7 @@ Nella sua casella in entrata AEM, l&#39;applicazione di Sarah viene aggiunta com
 
 ### Conard ottiene l&#39;attività Valutazione {#conard-assessment-task}
 
-Quando Gloria fa clic su **[!UICONTROL Valutazione richiesta]**, Conard ottiene l&#39;attività di revisione nella sua casella in entrata AEM. L&#39;attività rappresenta il passaggio successivo nel flusso di lavoro AEM definito nel modello di workflow. Vede il compito di revisione e lo apre.
+Quando Gloria fa clic su **[!UICONTROL Valutazione richiesta]**, Conard riceve l&#39;attività di revisione nella propria casella in entrata AEM. L&#39;attività rappresenta il passaggio successivo nel flusso di lavoro AEM definito nel modello di workflow. Vede il compito di revisione e lo apre.
 
 Conard ottiene il compito di valutazione del candidato come mostrato di seguito.
 
@@ -271,7 +271,7 @@ Quando Gloria richiede una valutazione, viene avviato il passaggio successivo AE
 
 Conard visita il posto di Sarah, verifica che le informazioni fornite da Sarah siano autentiche e compila il modulo di valutazione. Conard può accedere a un PDF dell&#39;intero modulo compilato da Sarah.
 
-### Vedi te stesso {#see-it-yourself-4}
+### Vedere da soli {#see-it-yourself-4}
 
 Aprite la casella in entrata AEM sul tablet e utilizzate le credenziali di Conard per effettuare l&#39;accesso.
 
@@ -282,7 +282,7 @@ Le credenziali predefinite di Conard sono:
 
 Nella inbox è disponibile una nuova attività Richiesta di valutazione. Invia la valutazione completata e passa alla fase successiva.
 
-### Gloria esamina la valutazione e approva la domanda {#gloria-reviews-the-assessment-and-approves-the-application}
+### Gloria esamina la valutazione e approva la domanda{#gloria-reviews-the-assessment-and-approves-the-application}
 
 Dopo che Conard ha presentato la valutazione, Gloria vede un compito di revisione nella sua inbox. Seleziona e apre **[!UICONTROL Review]**.
 
@@ -298,7 +298,7 @@ Dopo che Conard ha presentato la valutazione, Gloria vede un compito di revision
 
 Gloria approva la domanda.
 
-### Vedi te stesso {#see-it-yourself-5}
+### Vedere da soli {#see-it-yourself-5}
 
 Aprite la inbox ed effettuate l&#39;accesso utilizzando le credenziali di Gloria. Nella inbox viene visualizzata una nuova attività denominata Review.
 
@@ -308,7 +308,7 @@ Aprire l&#39;attività per visualizzare lo stato dell&#39;ultima azione eseguita
 
 Dopo che Gloria ha approvato l&#39;applicazione, Sarah riceve un&#39;e-mail da We.Gov che la sua applicazione è stata approvata.
 
-Il pulsante **[!UICONTROL Visualizza documento]** nell’e-mail rimanda ai dettagli di iscrizione. Sarah fa clic su **[!UICONTROL Visualizza documento.]**
+Il pulsante **[!UICONTROL Visualizza documento]** nell&#39;e-mail rimanda ai dettagli di iscrizione. Sarah fa clic su **[!UICONTROL Visualizza documento.]**
 
 ![approvazione-iscrizione-kit-email](assets/approval-enrolment-kit-email.png)
 
@@ -326,7 +326,7 @@ Quando Gloria approva l&#39;applicazione, Sarah riceve un&#39;e-mail automatizza
 
 Il documento di iscrizione è una comunicazione interattiva e può essere visualizzato su qualsiasi dispositivo. Contiene i dettagli del servizio di assistenza per i bambini e le informazioni fornite da Sarah.
 
-### Vedi te stesso {#see-it-yourself-6}
+### Vedere da soli {#see-it-yourself-6}
 
 Controllate il client e-mail configurato per l’e-mail automatica con un collegamento al documento di iscrizione.
 
@@ -334,24 +334,24 @@ In alternativa, per visualizzare il documento nel browser, aprite: `https://<hos
 
 ## We.Gov analizza le prestazioni dell&#39;applicazione {#we-gov-analyzes-the-performance-of-the-application}
 
-We.Gov, di tanto in tanto, analizza le prestazioni dell&#39;applicazione di servizi di assistenza ai figli per verificare se i clienti potrebbero dover affrontare dei problemi. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione dei servizi di assistenza per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e quindi migliorare la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
+We.Gov, di tanto in tanto, analizza le prestazioni dell&#39;applicazione di servizi di assistenza ai figli per verificare se i clienti potrebbero dover affrontare dei problemi. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione dei servizi di assistenza per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e quindi migliorare la conversione. Utilizzano l&#39;integrazione di  AEM Forms con  Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
 
 ![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
 
 ### Come funziona {#how-it-works-7}
 
-Le metriche delle prestazioni per il modulo dell&#39;applicazione dei servizi di supporto figlio vengono tracciate utilizzando  Adobe Analytics. Per ulteriori informazioni sulla configurazione  Adobe Analytics e la visualizzazione dei rapporti, vedere [Configurazione dell&#39;analisi per moduli e documenti](/help/forms/using/configure-analytics-forms-documents.md).
+Le metriche delle prestazioni per il modulo dell&#39;applicazione dei servizi di supporto figlio vengono tracciate utilizzando  Adobe Analytics. Per ulteriori informazioni sulla configurazione  Adobe Analytics e la visualizzazione dei report, vedere [Configuring analytics for forms and documents](/help/forms/using/configure-analytics-forms-documents.md) (Configurazione dell&#39;analisi per moduli e documenti).
 
-### Vedi te stesso {#see-it-yourself-7}
+### Vedere da soli {#see-it-yourself-7}
 
-Per visualizzare ed esaminare il rapporto di analisi, nel sito di riferimento vengono forniti i dati iniziali per l&#39;applicazione dei servizi di supporto per bambini. Prima di utilizzare i dati iniziali, consulta [Configurare Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Per visualizzare il rapporto con i dati iniziali, effettuate i seguenti passaggi nell’istanza di creazione:
+Per visualizzare ed esaminare il rapporto di analisi, nel sito di riferimento vengono forniti i dati iniziali per l&#39;applicazione dei servizi di supporto per bambini. Prima di utilizzare i dati iniziali, vedete [Configurare Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Per visualizzare il rapporto con i dati iniziali, effettuate i seguenti passaggi nell’istanza di creazione:
 
-1. Passate all&#39;interfaccia utente di **[!UICONTROL Forms e documenti]** all&#39;indirizzo https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Andate all&#39;interfaccia di **[!UICONTROL Forms &amp; Documents]** all&#39;indirizzo https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
-1. Fate clic per aprire la cartella **We.Gov** .
-1. Selezionate il modulo adattivo **[!UICONTROL Application for Child Support Services]** , quindi fate clic su **[!UICONTROL Enable Analytics]** (Abilita analisi) nella barra degli strumenti.
+1. Fare clic per aprire la cartella **We.Gov**.
+1. Selezionare il modulo adattivo **[!UICONTROL Application for Child Support Services]**, quindi fare clic su **[!UICONTROL Enable Analytics]** (Abilita Analytics) nella barra degli strumenti.
 
-1. Seleziona di nuovo il modulo e fai clic su Report **[!UICONTROL di]** Analytics nella barra degli strumenti per generare il rapporto. Inizialmente viene visualizzato un rapporto vuoto.
+1. Selezionate di nuovo il modulo e fate clic su **[!UICONTROL Rapporto analisi]** nella barra degli strumenti per generare il rapporto. Inizialmente viene visualizzato un rapporto vuoto.
 
 Per generare report di analisi con dati iniziali:
 
