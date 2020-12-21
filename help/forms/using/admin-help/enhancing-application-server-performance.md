@@ -26,7 +26,7 @@ Questo contenuto descrive le impostazioni facoltative che è possibile configura
 
 AEM moduli utilizza l&#39;archivio moduli AEM come origine dati. L&#39;archivio moduli AEM memorizza le risorse delle applicazioni e, in fase di esecuzione, i servizi possono recuperare le risorse dall&#39;archivio nel corso del processo aziendale automatizzato.
 
-L&#39;accesso all&#39;origine dati può essere significativo, a seconda del numero di moduli AEM in esecuzione e del numero di utenti simultanei che accedono all&#39;applicazione. L&#39;accesso all&#39;origine dati può essere ottimizzato utilizzando il pool di connessioni. *Il pool* di connessioni è una tecnica utilizzata per evitare il sovraccarico di creazione di nuove connessioni al database ogni volta che un&#39;applicazione o un oggetto server richiede l&#39;accesso al database. Il pool di connessioni è in genere utilizzato nelle applicazioni Web e aziendali ed è in genere gestito da un server applicazione, ma non solo a esso.
+L&#39;accesso all&#39;origine dati può essere significativo, a seconda del numero di moduli AEM in esecuzione e del numero di utenti simultanei che accedono all&#39;applicazione. L&#39;accesso all&#39;origine dati può essere ottimizzato utilizzando il pool di connessioni. *Il* pool di connessioni è una tecnica utilizzata per evitare il sovraccarico necessario per creare nuove connessioni al database ogni volta che un&#39;applicazione o un oggetto server richiede l&#39;accesso al database. Il pool di connessioni è in genere utilizzato nelle applicazioni Web e aziendali ed è in genere gestito da un server applicazione, ma non solo a esso.
 
 È importante configurare correttamente i parametri del pool di connessioni in modo da non esaurire mai le connessioni, il che può causare il deterioramento delle prestazioni dell&#39;applicazione.
 
@@ -36,7 +36,7 @@ Per configurare correttamente le impostazioni del pool di connessioni, è import
 
 Quando l&#39;amministratore del server applicazioni determina le impostazioni corrette del pool di connessioni, deve comunicare tali informazioni all&#39;amministratore del database. L&#39;amministratore del database necessita di queste informazioni perché il numero di connessioni al database è uguale al numero di connessioni nel pool di connessioni per l&#39;origine dati. Quindi, completare i passaggi per configurare le impostazioni del pool di connessioni per il server applicazione e il tipo di origine dati come descritto di seguito.
 
-### Configurare le impostazioni del pool di connessioni per WebLogic per Oracle e MySQL {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
+### Configurare le impostazioni del pool di connessioni per WebLogic per  Oracle e MySQL {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
 
 1. In Struttura dominio, fare clic su Servizi > JDBC > Origini dati e, nel riquadro a destra, fare clic su IDP_DS.
 1. Nella schermata successiva, fate clic sulla scheda Configurazione > Pool di connessioni e immettete un valore nelle caselle seguenti:
@@ -70,9 +70,9 @@ Quando l&#39;amministratore del server applicazioni determina le impostazioni co
 1. Nella schermata successiva, in Proprietà aggiuntive, fare clic su Proprietà pool di connessioni e immettere un valore nelle caselle Connessioni massime e Connessioni minime.
 1. Fate clic su OK o Applica, quindi fate clic su Salva direttamente in configurazione principale.
 
-### Configurare le impostazioni del pool di connessioni per WebSphere per Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Configurare le impostazioni del pool di connessioni per WebSphere per  Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
-1. Nella struttura di navigazione, fate clic su Risorse > JDBC > Fornitori JDBC. Nel riquadro a destra, fare clic sull&#39;origine dati del driver Oracle JDBC creata.
+1. Nella struttura di navigazione, fate clic su Risorse > JDBC > Fornitori JDBC. Nel riquadro a destra, fare clic sull&#39;origine dati del driver Oracle JDBC  creata.
 1. In Proprietà aggiuntive, fare clic su Origini dati, quindi selezionare IDP_DS.
 1. Nella schermata successiva, in Proprietà aggiuntive, fare clic su Proprietà pool di connessioni e immettere un valore nelle caselle Connessioni massime e Connessioni minime.
 1. Fate clic su OK o Applica, quindi fate clic su Salva direttamente in configurazione principale.
@@ -150,22 +150,22 @@ Ad esempio, le operazioni precedenti sul server delle applicazioni hanno lasciat
 
 Per tenere conto della frammentazione dell&#39;heap, la dimensione del documento in linea non deve essere superiore allo 0,1% della dimensione totale dell&#39;heap. Ad esempio, una dimensione massima dell&#39;heap JVM di 512 MB può supportare una dimensione massima in linea di 512 MB x 0.001 = 0,512 MB, o 512 KB.
 
-## Miglioramenti a WebSphere Application Server {#websphere-application-server-enhancements}
+## Miglioramenti di WebSphere Application Server {#websphere-application-server-enhancements}
 
 Questa sezione descrive le impostazioni specifiche di un ambiente WebSphere Application Server.
 
-### Aumento della memoria massima allocata alla JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
+### Incremento della memoria massima allocata alla JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Se si esegue Configuration Manager o si tenta di generare codice di implementazione Enterprise JavaBeans (EJB) utilizzando l&#39;utility della riga di comando *ejbdeployment* e si verifica un errore OutOfMemory, aumentare la quantità di memoria allocata alla JVM.
+Se si esegue Configuration Manager o si tenta di generare codice di implementazione JavaBeans Enterprise (EJB) utilizzando l&#39;utilità della riga di comando *ejbdeployment* e si verifica un errore OutOfMemory, aumentare la quantità di memoria allocata alla JVM.
 
 1. Modificate lo script ejbdeployment nella directory *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux e UNIX) `ejbdeploy.sh`
 
-1. Trovate il `-Xmx256M` parametro e modificatelo in un valore più alto, ad esempio `-Xmx1024M`.
+1. Trovate il parametro `-Xmx256M` e modificatelo in un valore più alto, ad esempio `-Xmx1024M`.
 1. Salvate il file.
-1. Eseguire il `ejbdeploy` comando o ridistribuire utilizzando Configuration Manager.
+1. Eseguire il comando `ejbdeploy` o ridistribuire utilizzando Configuration Manager.
 
 ## Miglioramento delle prestazioni di Windows Server 2003 con LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -178,11 +178,11 @@ L&#39;utilizzo del pool di connessioni sulla connessione di ricerca può ridurre
 1. Fare clic su Start > Esegui per avviare l&#39;editor del Registro di sistema e, nella casella Apri, digitare `regedit` e fare clic su OK.
 1. Vai alla chiave del Registro di sistema `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. Nel riquadro a destra dell’editor del Registro di sistema, individuate il nome del valore TcpTimedWaitDelay. Se il nome non viene visualizzato, selezionate Modifica > Nuovo > Valore DWORD dalla barra dei menu per aggiungere il nome.
-1. In the Name box, type `TcpTimedWaitDelay`
+1. Nella casella Nome, digitare `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Se non viene visualizzato un cursore lampeggiante e `New Value #` all’interno della casella, fare clic con il pulsante destro del mouse all’interno del pannello di destra, selezionare Rinomina e, nella casella Nome, digitare `TcpTimedWaitDelay`*.*
+   >Se non viene visualizzato un cursore lampeggiante e `New Value #` all&#39;interno della casella, fare clic con il pulsante destro del mouse nel pannello di destra, selezionare Rinomina e digitare `TcpTimedWaitDelay`*nella casella Nome.*
 
 1. Ripetere il passaggio 4 per i nomi dei valori MaxUserPort, MaxHashTableSize e MaxFreeTcbs.
 1. Fate doppio clic nel riquadro a destra per impostare il valore TcpTimedWaitDelay. In Base, selezionare Decimale e, nella casella Valore, digitare `30`.
