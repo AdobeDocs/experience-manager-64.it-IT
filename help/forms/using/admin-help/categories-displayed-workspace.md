@@ -26,7 +26,7 @@ Quando si specificano i nomi delle categorie, crearli in modo che vengano visual
 
 **Nome categoria adatto:** Partecipazione e uscita
 
-**Nome categoria troncato:** Partecipazione e congedo (Stati Uniti)
+**Nome categoria troncato:** Partecipazione e uscita (Stati Uniti)
 
 In Workspace, i processi all&#39;interno di una categoria vengono generalmente visualizzati come schede nella pagina Avvia processo. In generale, sei schede possono essere visualizzate sullo schermo per una categoria prima che l&#39;utente sia tenuto a scorrere per visualizzare le schede rimanenti. Poiché lo scorrimento rende più difficile trovare un processo, è consigliabile limitare ciascuna categoria a sei processi oppure, a seconda della risoluzione, limitare il numero di processi che possono essere visualizzati sullo schermo senza richiedere alcuno scorrimento.
 
@@ -47,7 +47,7 @@ Se si utilizza MySQL come database di moduli AEM, la console di amministrazione 
 1. Selezionate la categoria da modificare e fate clic su Modifica. In alternativa, potete fare doppio clic su una categoria da modificare.
 1. Modificate il nome della categoria nella casella Nome.
 
-## Rimozione di una categoria {#remove-a-category}
+## Rimuovere una categoria {#remove-a-category}
 
 È possibile rimuovere solo le categorie non utilizzate.
 
