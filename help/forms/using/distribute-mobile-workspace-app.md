@@ -40,10 +40,10 @@ L&#39;amministratore MDM può caricare sia file ipa che apk nel server MDM e con
 
 Le seguenti impostazioni di profilo sul dispositivo influiranno sul funzionamento dell&#39;app AEM Forms  sul dispositivo:
 
-* **Consenti utilizzo della fotocamera** nella sezione Funzionalità **** dispositivo
+* **Consenti utilizzo della** videocamera nella sezione  **Funzionalità** dispositivo
 
-Se disattivate l&#39;opzione **Consenti uso fotocamera**, la funzionalità della fotocamera dell&#39;annotazione [](/help/forms/using/add-attachments.md) Fotografia non funzionerà. È necessario abilitare questa opzione per utilizzare la fotocamera nell&#39;app.
+Se si disabilita **Consenti l&#39;uso della fotocamera**, la funzionalità della fotocamera dell&#39; [annotazione foto](/help/forms/using/add-attachments.md) non funzionerà. È necessario abilitare questa opzione per utilizzare la fotocamera nell&#39;app.
 
-* **Richiedi passcode sul dispositivo** nella sezione Criteri passcode
+* **Richiedi passcode sul** dispositivo nella sezione Criteri passcode
 
-Per abilitare la **cifratura dei dati** dell&#39;applicazione, si consiglia di abilitare la **passcode** sul dispositivo. Se passcode non è impostato sul dispositivo, i dati dell&#39;applicazione memorizzati sul dispositivo non sono crittografati.
+Per abilitare la crittografia **dei dati dell&#39;applicazione**, si consiglia di abilitare la **passcode** sul dispositivo. Se passcode non è impostato sul dispositivo, i dati dell&#39;applicazione memorizzati sul dispositivo non sono crittografati.
