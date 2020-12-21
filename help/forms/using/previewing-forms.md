@@ -38,7 +38,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
   </tr>
   <tr>
    <td>Modulo PDF</td> 
-   <td>Anteprima e anteprima PDF con dati<br /> </td> 
+   <td>Anteprima PDF con dati<br /> </td> 
   </tr>
   <tr>
    <td>modulo adattivo</td> 
@@ -53,7 +53,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
 ## Anteprima di un modulo {#previewing-a-form-1}
 
-1. Selezionate una risorsa da visualizzare in anteprima, quindi fate clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti delle azioni.
+1. Selezionate una risorsa da visualizzare in anteprima e fate clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti delle azioni.
 
    >[!NOTE]
    >
