@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Come funziona Reporting dei processi {#how-process-reporting-works}
+# Funzionamento di Reporting dei processi {#how-process-reporting-works}
 
 Process Reporting è il modulo di reporting dell&#39;AEM Forms  su JEE.
 
@@ -37,21 +37,21 @@ Process Reporting è costituito dai seguenti moduli:
 
 ![processreportistica](assets/processreportingarchitecture.png)
 
-## Moduli di generazione rapporti {#process-reporting-modules}
+## Moduli di generazione rapporti processo {#process-reporting-modules}
 
 ### Servizio ProcessDataPublisher {#processdatapublisher-service-br}
 
 Il server ProcessDataPublisher viene eseguito periodicamente sul database AEM Forms  ed estrae i dati modificati dall&#39;ultima esecuzione del servizio. Quindi pubblica i dati nel servizio Process Data Storage.
 
-Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)ProcessDataPublisher.
+Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### Servizio ProcessDataStorageProvider {#processdatastorageprovider-service-br}
 
 Il servizio ProcessDataStorageProvider riceve i dati del processo dal servizio ProcessDataPublisher e li salva nell&#39;archivio di Process Reporting.
 
-Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)ProcessDataStorageProvider.
+Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
-### servizio OSGi {#osgi-service-br}
+### Servizio OSGi {#osgi-service-br}
 
 QueryDataServlet utilizza questo servizio per ottenere i dati di reporting dall&#39;archivio di Process Reporting.
 
@@ -75,5 +75,5 @@ Il servizio utilizza quindi i servizi OSGi per ottenere i dati di reporting rile
 
 Potete creare rapporti personalizzati e visualizzarli nella scheda Report personalizzati dell&#39;interfaccia utente di Process Reporting.
 
-Per i passaggi necessari per creare un rapporto personalizzato, vedere Creazione di un rapporto personalizzato nell&#39;articolo Report [personalizzati in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Per i passaggi necessari per creare un rapporto personalizzato, vedere Creazione di un rapporto personalizzato nell&#39;articolo [Report personalizzati in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
