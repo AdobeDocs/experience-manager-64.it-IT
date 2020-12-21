@@ -17,9 +17,9 @@ ht-degree: 3%
 ---
 
 
-# Struttura di aspetto per moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
+# Struttura di aspetto per i moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (moduli adattivi e moduli HTML5) utilizza le librerie [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) per l’aspetto e lo scripting. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (come campi e pulsanti) del modulo. Questa architettura consente agli sviluppatori di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. È inoltre possibile implementare una logica specifica per il modulo durante l&#39;acquisizione dei dati da parte di utenti quali le restrizioni leadDigits/trailDigits o l&#39;implementazione di clausole illustrazione. Gli sviluppatori di moduli possono creare e utilizzare apparenze personalizzate per migliorare l&#39;esperienza di acquisizione dei dati e renderla più semplice da utilizzare.
+Forms (moduli adattivi e moduli HTML5) utilizza le librerie [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) per l&#39;aspetto e lo scripting. I moduli utilizzano anche l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (ad esempio, campi e pulsanti) del modulo. Questa architettura consente agli sviluppatori di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. È inoltre possibile implementare una logica specifica per il modulo durante l&#39;acquisizione dei dati da parte di utenti quali le restrizioni leadDigits/trailDigits o l&#39;implementazione di clausole illustrazione. Gli sviluppatori di moduli possono creare e utilizzare apparenze personalizzate per migliorare l&#39;esperienza di acquisizione dei dati e renderla più semplice da utilizzare.
 
 Questo articolo è destinato agli sviluppatori che dispongono di conoscenze sufficienti sui widget jQuery e jQuery. Fornisce informazioni approfondite sul framework di aspetto e consente agli sviluppatori di creare un aspetto alternativo per un campo modulo.
 
@@ -57,7 +57,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
   </tr>
   <tr>
    <td>tabIndex</td> 
-   <td>Posizione del campo nella sequenza di tabulazione del modulo. Sostituire tabIndex solo se si desidera modificare l'ordine di tabulazione predefinito del modulo.</td> 
+   <td>Posizione del campo nella sequenza di tabulazione del modulo. Ignorare tabIndex solo se si desidera modificare l'ordine di tabulazione predefinito del modulo.</td> 
   </tr>
   <tr>
    <td>role</td> 
@@ -102,24 +102,24 @@ Per interagire con il framework dei moduli, un widget attiva alcuni eventi per c
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td> 
-   <td>Questo evento viene attivato ogni volta che il campo è nello stato attivo. Consente l'esecuzione dello script "enter" sul campo. La sintassi per attivare l'evento è<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td> 
+   <td>Questo evento viene attivato ogni volta che il campo è nello stato attivo. Consente l'esecuzione dello script "enter" sul campo. La sintassi per attivare l'evento è <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td> 
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td> 
-   <td>Questo evento viene attivato ogni volta che l'utente esce dal campo. Consente al motore di impostare il valore del campo ed eseguire lo script "exit". La sintassi per attivare l'evento è<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td> 
+   <td>Questo evento viene attivato ogni volta che l'utente esce dal campo. Consente al motore di impostare il valore del campo ed eseguire lo script "exit". La sintassi per attivare l'evento è <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td> 
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td> 
-   <td>Questo evento viene attivato per consentire al motore di eseguire lo script "change" scritto sul campo. La sintassi per attivare l'evento è<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td> 
+   <td>Questo evento viene attivato per consentire al motore di eseguire lo script "change" scritto sul campo. La sintassi per attivare l'evento è <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td> 
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td> 
-   <td>Questo evento viene attivato ogni volta che si fa clic sul campo. consente al motore di eseguire lo script "click" scritto sul campo. La sintassi per attivare l'evento è<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td> 
+   <td>Questo evento viene attivato ogni volta che si fa clic sul campo. consente al motore di eseguire lo script "click" scritto sul campo. La sintassi per attivare l'evento è <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-#### API implementate da widget {#apis-implemented-by-widget}
+#### API implementate dal widget {#apis-implemented-by-widget}
 
 Il framework di aspetto richiama alcune funzioni del widget implementate nei widget personalizzati. Il widget deve implementare le seguenti funzioni:
 
@@ -138,7 +138,7 @@ Il framework di aspetto richiama alcune funzioni del widget implementate nei wid
    <td>Attiva il campo e richiama XFA_CLICK_EVENT.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: stringa </em>che rappresenta l'errore<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Nota</strong>: Applicabile solo ai moduli HTML5.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: stringa </em>che rappresenta l'errore<br /> <em>errorType: stringa ("warning"/"error")</em></p> <p><strong>Nota</strong>: Applicabile solo ai moduli HTML5.</p> </td> 
    <td>Invia un messaggio di errore e un tipo di errore al widget. Il widget visualizza l'errore.</td> 
   </tr>
   <tr>
@@ -193,7 +193,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
   </tr>
   <tr>
    <td><p>modificabile</p> <p><strong>Nota</strong>: Applicabile solo ai moduli HTML5.<br /> </p> </td> 
-   <td>Se il valore è true, l'immissione di testo personalizzata è abilitata nel widget.<br /> </td> 
+   <td>Se il valore è true, la voce di testo personalizzata è abilitata nel widget.<br /> </td> 
   </tr>
   <tr>
    <td>displayValue<br /> </td> 
@@ -249,7 +249,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche di cui sopr
   </tr>
   <tr>
    <td>values</td> 
-   <td><p>Matrice di valori (on/off/neutrale).</p> <p>È un array di valori per i diversi stati del checkButton. values[0] è il valore quando lo stato è ON, i valori[1] è il valore quando lo stato è OFF,<br /> i valori[2] è il valore quando lo stato è NEUTRAL. La lunghezza dell'array dei valori è uguale al valore dell'opzione state.<br /> </p> </td> 
+   <td><p>Matrice di valori (on/off/neutrale).</p> <p>È un array di valori per i diversi stati del checkButton. values[0] è il valore quando lo stato è ON, i valori[1] è il valore quando lo stato è OFF, i valori<br />[2] è il valore quando lo stato è NEUTRAL. La lunghezza dell'array dei valori è uguale al valore dell'opzione state.<br /> </p> </td> 
   </tr>
   <tr>
    <td>stati</td> 
