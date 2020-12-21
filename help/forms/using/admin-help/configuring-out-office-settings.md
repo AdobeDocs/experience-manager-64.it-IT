@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configurazione delle impostazioni Fuori sede {#configuring-out-of-office-settings}
+# Configurazione delle impostazioni fuori sede {#configuring-out-of-office-settings}
 
 La funzione Fuori sede consente a utenti o amministratori di specificare quando un utente sarà fuori ufficio e non sarà in grado di completare le attività assegnate dai moduli AEM. Quando un utente è impostato su Fuori sede, le sue attività vengono assegnate a uno o più utenti designati. Gli utenti possono modificare le impostazioni Fuori sede in Workspace oppure gli amministratori possono modificare le impostazioni per conto di un utente nel flusso di lavoro dei moduli.
 
@@ -41,14 +41,14 @@ Durante la creazione di un processo, l&#39;utente di Workbench può specificare 
 
 ## Modifica dello stato fuori ufficio di un utente {#change-a-user-s-out-of-office-status}
 
-1. Individuate l’utente, come descritto in [Visualizzare le informazioni](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)non di Office di un utente.
+1. Individuate l&#39;utente, come descritto in [Visualizza le informazioni fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Fate clic sul nome dell’utente che desiderate modificare.
-1. Dall&#39;elenco Nome ** utente corrente, selezionare In Office o Fuori dall&#39;Office.
+1. Nell&#39;elenco *Nome utente*, selezionare In Office o Fuori dall&#39;ufficio.
 1. Fate clic su Salva.
 
 ## Aggiunta di un intervallo di date fuori sede per un utente {#add-an-out-of-office-date-range-for-a-user}
 
-1. Individuate l’utente, come descritto in [Visualizzare le informazioni](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)non di Office di un utente.
+1. Individuate l&#39;utente, come descritto in [Visualizza le informazioni fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Fate clic sul nome dell’utente che desiderate modificare.
 1. Fai clic su Aggiungi intervallo date.
 1. Immettete l’ora di inizio e di fine. Potete fare clic sull&#39;icona Calendario per selezionare una data. Se non si specifica un&#39;ora di fine, l&#39;utente verrà impostato come fuori ufficio a tempo indeterminato.
@@ -63,7 +63,7 @@ Mentre un utente è fuori ufficio, potete assegnare uno o più utenti per esegui
 * Assegnate un utente predefinito che riceverà la maggior parte delle attività dell&#39;utente, ma specificate che le attività di determinati processi vengono riassegnate ad altri utenti o restano assegnate all&#39;utente fuori ufficio.
 * Non assegnate un utente predefinito, ma assegnate determinate attività da determinati processi a utenti specifici.
 
-   1. Individuate l’utente, come descritto in [Visualizzare le informazioni](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)non di Office di un utente.
+   1. Individuate l&#39;utente, come descritto in [Visualizza le informazioni fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Fate clic sul nome dell’utente che desiderate modificare.
    1. Nell&#39;elenco Attività predefinite utente per fuori ufficio, selezionare un utente dall&#39;elenco. Se non si desidera designare un utente predefinito per ricevere gli elementi riassegnati, selezionare Non assegnare.
 
