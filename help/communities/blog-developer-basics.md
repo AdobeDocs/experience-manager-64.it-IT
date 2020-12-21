@@ -32,7 +32,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-La funzione blog è composta da due componenti principali disponibili aggiungendo la funzione [](functions.md#blog-function) Blog o aggiungendo i componenti a una pagina in modalità di modifica dell’autore.
+La funzione blog è composta da due componenti principali disponibili aggiungendo la funzione [Blog](functions.md#blog-function) o aggiungendo i componenti a una pagina in modalità di modifica dell&#39;autore.
 
 ### Blog {#blog}
 
@@ -48,7 +48,7 @@ La funzione blog è composta da due componenti principali disponibili aggiungend
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.Voto<br /> cq.social.hbs.journal</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.registration<br /> cq.social.hbs.journal</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -60,7 +60,7 @@ La funzione blog è composta da due componenti principali disponibili aggiungend
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>consulta Funzione <a href="blog-feature.md">Blog</a></td> 
+   <td>vedere <a href="blog-feature.md">Funzione blog</a></td> 
   </tr>
  </tbody>
 </table>
@@ -69,11 +69,11 @@ La funzione blog è composta da due componenti principali disponibili aggiungend
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**inclusa **](scf.md#add-or-include-a-communities-component) | No |
-| [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**inclusa**](scf.md#add-or-include-a-communities-component) | No |
+| [**clientllibs**](clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **proprietà** | consulta Funzione [Blog](blog-feature.md) |
+| **proprietà** | vedere [Funzione blog](blog-feature.md) |
 
 * [Personalizzazioni lato client](client-customize.md)
 
@@ -87,31 +87,31 @@ La funzione blog è composta da due componenti principali disponibili aggiungend
 
 ### Funzione Blog {#blog-function}
 
-Una struttura del sito community che include la funzione [](functions.md#blog-function) Bog avrà configurato `Blog` e `Blog Sidebar` componenti. La funzione Blog supporta l&#39;identificazione di un gruppo [utenti membro](users.md#privileged-members-group)privilegiato.
+Una struttura del sito della community che include la [funzione Bog](functions.md#blog-function) avrà configurato i componenti `Blog` e `Blog Sidebar`. La funzione Blog supporta l&#39;identificazione di un [gruppo di utenti con privilegi](users.md#privileged-members-group).
 
 ### Accesso a voci di blog (UGC) {#accessing-blog-entries-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.\
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l&#39;uso di uno store [](working-with-srp.md) comune per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md)  del provider di risorse di storage - introduzione e utilizzo del repository
+* [Funzioni essenziali](srp-and-ugc.md)  SRP e UGC - Metodi di utilità SRP ed esempi
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md)  - linee guida di codifica
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
 
 ## Editore principale {#primary-publisher}
 
 Quando la distribuzione è una farm di pubblicazione, è necessario identificare un editore principale che eseguirà il sondaggio per gli articoli pianificati per la pubblicazione.
 
-Per ulteriori informazioni, vedere Editore [](deploy-communities.md#primary-publisher) principale.
+Per ulteriori informazioni, vedere [Editore principale](deploy-communities.md#primary-publisher).
 
-## Consentire contenuti multimediali avanzati {#allowing-rich-media}
+## Consentire contenuti multimediali {#allowing-rich-media}
 
 La piattaforma AEM blocca i collegamenti da altri siti Web per prevenire attacchi XSS come descritto in
 
@@ -119,5 +119,5 @@ La piattaforma AEM blocca i collegamenti da altri siti Web per prevenire attacch
 
 A partire dal AEM 6.2, le modifiche precedentemente richieste per essere effettuate manualmente sono incluse nel file di configurazione AntiSamy predefinito.
 
-I contenuti multimediali avanzati vengono incorporati in un articolo di blog selezionando l&#39; `Embed Media from External Sites` icona:  ![chlimage_1-471](assets/chlimage_1-471.png)
+I contenuti multimediali avanzati vengono incorporati in un articolo di blog selezionando l&#39;icona `Embed Media from External Sites`:  ![chlimage_1-471](assets/chlimage_1-471.png)
 
