@@ -22,9 +22,9 @@ ht-degree: 0%
 
 La pagina Impostazioni server consente di accedere alle varie impostazioni del flusso di lavoro dei moduli:
 
-* **Impostazioni** e-mail che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (See [Configuring email settings](configuring-server-settings.md#configuring-email-settings).)
-* **Impostazioni** di notifica delle attività che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail agli utenti finali e ai gruppi in merito alle loro attività. Consultate [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).
-* **Impostazioni** di notifica dell&#39;amministratore che abilitano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. Consultate [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).
+* **Impostazioni e-mail** che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (Vedere [Configurazione delle impostazioni e-mail](configuring-server-settings.md#configuring-email-settings).)
+* **Impostazioni di notifica** delle attività che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail agli utenti e ai gruppi finali in merito alle loro attività. (Vedere [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Impostazioni di notifica** dell&#39;amministratore che abilitano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. (Vedere [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
@@ -32,11 +32,11 @@ La pagina Impostazioni server consente di accedere alle varie impostazioni del f
 
 Per abilitare l&#39;invio di messaggi e-mail tra moduli AEM e utenti, configurare le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L&#39;e-mail in uscita deve utilizzare un server SMTP.
 
-Per consentire AEM moduli di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (vedere [Creare un endpoint e-mail per il servizio](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)Attività completa).
+Per consentire AEM moduli di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (Vedere [Creare un endpoint e-mail per il servizio Attività completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Se i vostri processi sono progettati e implementati senza richiedere e-mail, non dovete configurare alcuna opzione nella pagina Impostazioni e-mail.
 
-### Configurare le impostazioni e-mail in uscita {#configure-outgoing-email-settings}
+### Configurare le impostazioni delle e-mail in uscita {#configure-outgoing-email-settings}
 
 1. Nella console di amministrazione, fare clic su Servizi > flusso di lavoro moduli > Impostazioni server > Impostazioni e-mail.
 1. Selezionate Abilita messaggi in uscita.
@@ -46,7 +46,7 @@ Se i vostri processi sono progettati e implementati senza richiedere e-mail, non
 
    >[!NOTE]
    >
-   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server di Microsoft Exchange non invia un messaggio e-mail alle liste di distribuzione. Per risolvere il problema, selezionare l&#39;opzione **Abilita comunicazione** esterna separatamente per ogni elenco di distribuzione del server Microsoft Exchange.
+   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server di Microsoft Exchange non invia un messaggio e-mail alle liste di distribuzione. Per risolvere il problema, selezionare l&#39;opzione **Abilita comunicazione esterna** separatamente per ogni elenco di distribuzione del server Microsoft Exchange.
 
 1. Fate clic su Salva.
 
@@ -54,13 +54,13 @@ Se i vostri processi sono progettati e implementati senza richiedere e-mail, non
 >
 >Se si immettono informazioni errate, è possibile fare clic su Annulla per tornare alla pagina visualizzata in precedenza.
 
-### Configurazione dei modelli e-mail per l’utilizzo  AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
+### Configurazione dei modelli e-mail per l&#39;utilizzo  AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
->Flex Workspace è diventato obsoleto AEM rilascio dei moduli.
+>Flex Workspace è diventato obsoleto per AEM rilascio dei moduli.
 
-Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per AEM moduli su JEE) Flex Workspace. È possibile configurare AEM moduli per l&#39;invio di e-mail con collegamenti a  AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di  AEM Forms Workspace (obsoleto per i moduli AEM su JEE) Flex Workspace, consultare [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
+Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per AEM moduli su JEE) Flex Workspace. È possibile configurare AEM moduli per l&#39;invio di e-mail con collegamenti a  AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di  AEM Forms Workspace (obsoleto per i moduli AEM su JEE) Flex Workspace, vedere [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
 
 1. Nella console di amministrazione, fare clic su Home > Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
 1. Aprire il modello di assegnazione delle attività.
@@ -94,13 +94,13 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. In Tipo di notifica, fate clic su Promemoria (per utenti) o su Gruppo - Promemoria (per gruppi).
 1. Selezionate Abilita promemoria o Abilita gruppo - Promemoria.
 1. (Solo notifiche utente) Per includere un allegato del modulo e dei relativi dati con il messaggio e-mail del promemoria, selezionare Includi dati del modulo.
-1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio, selezionare il formato in cui viene inviato il messaggio e-mail, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
 
-### Configurare le notifiche di assegnazione delle attività per utenti o gruppi {#configure-task-assignment-notifications-for-users-or-groups}
+### Configurare le notifiche di assegnazione delle attività per gli utenti o i gruppi {#configure-task-assignment-notifications-for-users-or-groups}
 
 È possibile inviare notifiche di assegnazione a un utente o a un gruppo al momento dell&#39;assegnazione di un&#39;attività.
 
@@ -108,8 +108,8 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. In Tipo di notifica, fare clic su Assegnazione task per gli utenti o Gruppo - Assegnazione task per i gruppi.
 1. Selezionare Abilita assegnazione task per gli utenti o Abilita gruppo - Assegnazione task per i gruppi.
 1. (Solo notifiche utente) Per includere un allegato del modulo e dei relativi dati con il messaggio e-mail di assegnazione delle attività, selezionare Includi dati modulo.
-1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio, selezionare il formato in cui viene inviato il messaggio e-mail, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
@@ -121,8 +121,8 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Impostazioni server > Notifiche attività.
 1. In Tipo di notifica, fate clic su Scadenza (per utenti) o Raggruppa - Scadenza (per gruppi).
 1. Selezionate Abilita scadenza o Abilita gruppo - Scadenza.
-1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio, selezionare il formato in cui viene inviato il messaggio e-mail, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
@@ -140,7 +140,7 @@ Potete configurare i seguenti tipi di notifiche per gli amministratori:
 * diramazione in stallo
 * operazione in stallo
 
-### Configurare le notifiche dei rami in stallo {#configure-stalled-branch-notifications}
+### Configurare le notifiche del ramo in stallo {#configure-stalled-branch-notifications}
 
 Se un ramo si arresta (interrompe deliberatamente o a causa di un errore), puoi avere una notifica e-mail inviata a un amministratore o a un altro utente, che può quindi esaminare il problema.
 
@@ -148,8 +148,8 @@ Se un ramo si arresta (interrompe deliberatamente o a causa di un errore), puoi 
 1. In Tipo di notifica, fare clic su Ramo bloccato.
 1. Selezionare Abilita ramo bloccato.
 1. Nella casella Indirizzo e-mail, digitate gli indirizzi degli utenti a cui inviare una notifica quando un ramo si ferma. Utilizzate il formato user@domain.com e separate ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è destinato a un amministratore.
-1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Nell&#39;elenco Formato messaggio, selezionare il formato in cui viene inviato il messaggio e-mail, HTML o Testo. Il formato predefinito è HTML.
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che la maggior parte degli utenti al di fuori del Giappone utilizza. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
@@ -162,8 +162,8 @@ Se un&#39;operazione si arresta (interrompe deliberatamente o a causa di un erro
 1. In Tipo di notifica, fare clic su Operazione bloccata.
 1. Selezionate Abilita operazione bloccata.
 1. Nella casella Indirizzi e-mail, digitate gli indirizzi degli utenti a cui inviare la notifica quando un&#39;operazione si arresta. Utilizzate il formato user@domain.com e separate ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è destinato a un amministratore.
-1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Nella casella Modello notifica, digitate il testo per il corpo del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, vedere [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Fate clic su Salva.
 
 ## Personalizzazione del contenuto delle notifiche {#customizing-the-content-of-notifications}
@@ -174,7 +174,7 @@ Le pagine Notifiche attività e Notifiche amministratori forniscono diverse funz
 * selettore variabile
 * Generazione URL
 
-### Rich text editor {#rich-text-editor}
+### Editor Rich Text {#rich-text-editor}
 
 L’area Modello notifica è un editor Rich Text che consente di generare HTML per i messaggi di notifica e-mail. Contiene opzioni di formattazione di font e paragrafo, che si trovano sotto la casella Modello notifica. Le opzioni includono il tipo di font, la dimensione, lo stile e il colore, nonché l&#39;allineamento del paragrafo e gli elenchi puntati.
 
@@ -194,9 +194,9 @@ Solo per Notifiche attività, il flusso di lavoro Forms include due configurazio
 >
 >Flex Workspace è obsoleto per AEM rilascio di moduli.
 
-Se la soluzione viene distribuita in un ambiente cluster, sostituitela `@@notification-host@@` con l&#39;indirizzo del cluster.
+Se la soluzione è distribuita in un ambiente cluster, sostituire `@@notification-host@@` con l&#39;indirizzo del cluster.
 
-`<`*PORT *`>`è il numero di porta del listener HTTP per il server applicazione. La porta listener HTTP predefinita per i server applicazione supportati è la seguente:
+`<`*PORT* `>` è il numero di porta del listener HTTP per il server applicazione. La porta listener HTTP predefinita per i server applicazione supportati è la seguente:
 
 **JBoss:** 8080
 
@@ -204,7 +204,7 @@ Se la soluzione viene distribuita in un ambiente cluster, sostituitela `@@notifi
 
 **IBM WebSphere:** 9080
 
-Affinché questi URL funzionino correttamente, sostituite `<`*PORT *`>`con il numero di porta appropriato per l&#39;ambiente.
+Affinché questi URL funzionino correttamente, sostituite `<`*PORT* `>` con il numero di porta appropriato per l&#39;ambiente in uso.
 
 >[!NOTE]
 >
@@ -216,23 +216,23 @@ L&#39;elenco Selettore variabile fornisce variabili utili che è possibile trasc
 
 Per promemoria, assegnazioni di attività e scadenze per utenti e gruppi, potete utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**descrizione** Il contenuto della proprietà Descrizione, come definito nel passaggio utente (punto iniziale, operazione Assegna attività o operazione Assegna più attività) del processo in Workbench.
+**** descrizioneContenuto della proprietà Descrizione, come definito nel passaggio utente (punto iniziale, operazione Assegna attività o operazione Assegna più attività) del processo in Workbench.
 
-**istruzioni** Il contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
+**** istruzioniContenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
 
-**notification-host** Il nome host del server applicazione AEM moduli.
+**notification-** hostIl nome host del server applicazione AEM moduli.
 
-**process-name** Il nome del processo.
+**process-** nameIl nome del processo.
 
-**operation-name** Il nome del passaggio.
+**operation-** nameIl nome del passaggio.
 
-**tascapola** L&#39;identificatore univoco per l&#39;attività corrente.
+**** tasboyIdentificatore univoco per l&#39;attività corrente.
 
-**azioni** Genera un elenco numerato di route valide (ad esempio, Approva, Rifiuta) su cui il destinatario può fare clic.
+**** azioniGenera un elenco numerato di route valide (ad esempio, Approva, Rifiuta) su cui il destinatario può fare clic.
 
 Inoltre, per i promemoria di gruppo, le assegnazioni di task di gruppo e le scadenze di gruppo, potete utilizzare anche:
 
-**group-name** Il nome del gruppo a cui è assegnato l’elemento di lavoro.
+**group-** nameIl nome del gruppo a cui è assegnato l’elemento di lavoro.
 
 >[!NOTE]
 >
@@ -240,21 +240,21 @@ Inoltre, per i promemoria di gruppo, le assegnazioni di task di gruppo e le scad
 
 Per i rami in stallo, nelle caselle Oggetto e Modello di notifica è possibile utilizzare le seguenti variabili:
 
-**branch-id** L&#39;identificatore del ramo.
+**branch-** idIdentificatore del ramo.
 
-**process-id** L’identificatore dell’istanza di processo.
+**process-** idIdentificatore dell&#39;istanza di processo.
 
-**notification-host** Il nome host del server applicazione AEM moduli.
+**notification-** hostIl nome host del server applicazione AEM moduli.
 
 Per le operazioni in stallo, nelle caselle Oggetto e Modello di notifica è possibile utilizzare le seguenti variabili:
 
-**action-id** L’identificatore dell’operazione.
+**action-** idIdentificatore dell&#39;operazione.
 
-**branch-id** L&#39;identificatore del ramo.
+**branch-** idIdentificatore del ramo.
 
-**process-id** L’identificatore dell’istanza di processo.
+**process-** idIdentificatore dell&#39;istanza di processo.
 
-**notification-host** Il nome host del server applicazione AEM moduli.
+**notification-** hostIl nome host del server applicazione AEM moduli.
 
 ### Utilizzo di una variabile nella casella Oggetto {#using-a-variable-in-the-subject-box}
 
@@ -266,13 +266,13 @@ L&#39;utente riceve un messaggio e-mail con il seguente oggetto se gli è stata 
 
 `Please complete task 376`
 
-### Uso delle variabili nella casella Modello di notifica {#using-variables-in-the-notification-template-box}
+### Uso delle variabili nella casella Modello notifica {#using-variables-in-the-notification-template-box}
 
 Se si digita il testo seguente nella casella Modello di notifica per le notifiche per ramo bloccato:
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-Se il numero del ramo è 4868 e il nome del server è `ServerXYZ`:
+Se il numero del ramo è 4868 e il nome del server è `ServerXYZ`, l’amministratore riceve un messaggio e-mail contenente il contenuto seguente:
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
