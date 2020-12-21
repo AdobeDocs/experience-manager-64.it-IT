@@ -26,7 +26,7 @@ Quando visualizzate l’anteprima, potete anche applicare predefiniti per immagi
 
 Informazioni generali sulla gestione delle risorse sono disponibili in [Gestione delle risorse con l&#39;interfaccia utente touch](managing-assets-touch-ui.md).
 
-Gli argomenti seguenti descrivono le operazioni da effettuare per gestire le risorse Dynamic Media:
+Gli argomenti seguenti descrivono le operazioni necessarie per gestire le risorse Dynamic Media:
 
 * [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](previewing-assets.md)
