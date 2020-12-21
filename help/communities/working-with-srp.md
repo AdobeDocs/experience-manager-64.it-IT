@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# SRP - Memorizzazione dei contenuti nella community {#srp-community-content-storage}
+# SRP - Archiviazione dei contenuti della community {#srp-community-content-storage}
 
 ## Introduzione {#introduction}
 
@@ -26,19 +26,19 @@ A partire  AEM Communities 6.1, i contenuti generati dall&#39;utente (UGC) vengo
 
 A differenza delle versioni precedenti, non esiste replica inversa/avanti di UGC tra le istanze AEM. Al contrario, l’SRP rende direttamente accessibile UGC per le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) da tutte le istanze di creazione e pubblicazione, con un’eccezione per JSRP.
 
-Di seguito sono riportate [le caratteristiche di ciascuna opzione](#characteristics-of-srp-options)SRP, che è un&#39;informazione fondamentale per il processo decisionale nella scelta dell&#39;SRP appropriato e della distribuzione [](topologies.md)sottostante.
+Di seguito sono riportate le [caratteristiche di ogni opzione SRP](#characteristics-of-srp-options), che è un&#39;informazione fondamentale per il processo decisionale quando si sceglie l&#39;SRP appropriato e [la distribuzione sottostante](topologies.md).
 
-Per informazioni dettagliate sull&#39;utilizzo di SRP per UGC, vedere Panoramica [del provider di risorse di](srp.md)storage.
+Per informazioni dettagliate sull&#39;utilizzo di SRP per UGC, vedere [Panoramica sui provider di risorse di storage](srp.md).
 
 >[!NOTE]
 >
->SRP si applica solo ai contenuti della community. Non influenza la posizione di memorizzazione del contenuto del sito (archivio[](../../help/sites-deploying/data-store-config.md)nodi) e non influisce sulla gestione protetta della registrazione utente, dei profili utente e dei gruppi di utenti tra AEM istanze (vedere anche [Gestione dei dati](#managing-user-data)utente).
+>SRP si applica solo ai contenuti della community. Non influenza la posizione di memorizzazione del contenuto del sito ([node store](../../help/sites-deploying/data-store-config.md)) e non influisce sulla gestione protetta della registrazione utente, dei profili utente e dei gruppi di utenti tra istanze AEM (vedere anche [Gestione dei dati utente](#managing-user-data)).
 
 >[!CAUTION]
 >
 >A partire dal AEM 6.1, [UGC non viene mai replicato](#ugc-never-replicated).
 >
->Se la distribuzione non include uno store comune, come la topologia [JSRP](topologies.md#jsrp) predefinita, UGC sarà visibile solo nell’istanza di pubblicazione o di creazione AEM in cui è stato immesso. Solo se la topologia include un cluster di pubblicazione, l’UGC sarà visibile su qualsiasi istanza di pubblicazione.
+>Se la distribuzione non include uno store comune, ad esempio la topologia [JSRP](topologies.md#jsrp) predefinita, UGC sarà visibile solo nell&#39;istanza di pubblicazione AEM o di creazione in cui è stato immesso. Solo se la topologia include un cluster di pubblicazione, l’UGC sarà visibile su qualsiasi istanza di pubblicazione.
 
 ## Caratteristiche delle opzioni SRP {#characteristics-of-srp-options}
 
@@ -86,7 +86,7 @@ Con l&#39;opzione predefinita, non è disponibile uno store comune. L&#39;UGC è
 
 ## Configurazione di SRP {#configuring-srp}
 
-La specifica dell&#39;opzione di memorizzazione predefinita, basata sulla distribuzione sottostante, viene effettuata tramite la console [Configurazione](srp-config.md)storage.
+La specifica dell&#39;opzione di memorizzazione predefinita, basata sulla distribuzione sottostante, viene effettuata tramite la [console di configurazione dell&#39;archivio](srp-config.md).
 
 Per i dettagli di configurazione di ciascuna opzione, vedete:
 
@@ -99,7 +99,7 @@ Se non è selezionata alcuna opzione di archiviazione attiva, per impostazione p
 
 ## Informazioni aggiuntive {#additional-information}
 
-### UGC non replicato {#ugc-never-replicated}
+### UGC mai replicato {#ugc-never-replicated}
 
 Nell’ambiente di authoring, un autore crea il contenuto della pagina e lo replica nell’ambiente di pubblicazione. Quando una pagina include una funzione AEM Communities  interattiva, come commenti, revisioni, forum, blog o QnA, l&#39;interazione dei membri (con accesso ai visitatori del sito) in un&#39;istanza di pubblicazione genera contenuto generato dall&#39;utente (UGC) immesso nell&#39;ambiente di pubblicazione.
 
@@ -111,12 +111,12 @@ Mentre il contenuto del sito viene replicato, UGC non viene mai replicato.
 
 ### Gestione dei dati utente {#managing-user-data}
 
-Anche per le comunità di interesse sono [*utenti *, gruppi* di *utenti e profili**](users.md)utente. Questi dati relativi all’utente, quando creati e aggiornati nell’ambiente di pubblicazione, devono essere resi disponibili ad altre istanze di pubblicazione quando la topologia è una farm[di](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)pubblicazione.
+Anche per le comunità di utenti [*sono*, *gruppi di utenti* e *profili utente*](users.md). Questi dati relativi all&#39;utente, quando creati e aggiornati nell&#39;ambiente di pubblicazione, devono essere resi disponibili ad altre istanze di pubblicazione quando la topologia è una [farm di pubblicazione](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-A partire da  AEM Communities 6.1, i dati relativi agli utenti vengono sincronizzati utilizzando la distribuzione Sling anziché la replica. Per ulteriori informazioni, visita Sincronizzazione [](sync.md)utente.
+A partire da  AEM Communities 6.1, i dati relativi agli utenti vengono sincronizzati utilizzando la distribuzione Sling anziché la replica. Per ulteriori informazioni, vedere [Sincronizzazione utente](sync.md).
 
-### Upgrading to AEM Communities 6.2 {#upgrading-to-aem-communities}
+### Aggiornamento a  AEM Communities 6.2 {#upgrading-to-aem-communities}
 
 Quando si esegue l&#39;aggiornamento a  AEM Communities 6.3, se è necessario mantenere l&#39;UGC preesistente, è necessario adottare delle misure a seconda che la comunità AEM 5.6.1 o AEM 6.0 utilizzasse  Adobe su richiesta o lo storage locale di UGC.
 
-Per informazioni dettagliate, visitate [Aggiornamento ad  AEM Communities 6.3](upgrade.md).
+Per informazioni dettagliate, vedere [Aggiornamento ad  AEM Communities 6.3](upgrade.md).
