@@ -25,12 +25,12 @@ I moduli vengono scaricati nell&#39;app e sono disponibili offline. Ad esempio, 
 
 Per sincronizzare il modulo &#39;app AEM Forms:
 
-1. Nell’istanza di creazione, selezionare un modulo e fare clic su **Visualizza proprietà**.
+1. Nell&#39;istanza di creazione, selezionare un modulo e fare clic su **Visualizza proprietà**.
 
 1. Nella pagina delle proprietà fare clic su **Avanzate.**
-1. In Avanzate, abilita opzione: **Sincronizza con  app** AEM Forms e tocca **Salva**.
+1. In Avanzate, abilita opzione: **Sincronizza con  AEM Forms App** e tocca **Salva**.
 
-Per sincronizzare più moduli, nell&#39;istanza di creazione selezionare più moduli in Forms Manager e toccare **Sincronizza con  app** AEM Forms. Quando il modulo viene pubblicato, l&#39;app AEM Forms  può connettersi al server di pubblicazione e recuperare i moduli.
+Per sincronizzare più moduli, nell&#39;istanza di creazione selezionare più moduli in Forms Manager e toccare **Sincronizza con  AEM Forms App**. Quando il modulo viene pubblicato, l&#39;app AEM Forms  può connettersi al server di pubblicazione e recuperare i moduli.
 
 >[!NOTE]
 >
