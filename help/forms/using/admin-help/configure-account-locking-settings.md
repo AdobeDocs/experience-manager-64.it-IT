@@ -18,13 +18,13 @@ ht-degree: 4%
 ---
 
 
-# Configurare le impostazioni di blocco degli account {#configure-account-locking-settings}
+# Configurare le impostazioni di blocco dell&#39;account {#configure-account-locking-settings}
 
 Quando aggiungete un dominio, specificate se abilitare il blocco dell&#39;account. Quando l&#39;opzione Attiva blocco account è selezionata, gli account utente vengono bloccati dopo un numero specificato di errori di autenticazione consecutivi. Dopo un periodo di tempo specificato, l&#39;utente può tentare di eseguire nuovamente l&#39;autenticazione. Questa funzione impedisce agli utenti di provare diverse combinazioni di credenziali per accedere al sistema.
 
 Utilizzare le impostazioni della pagina Gestione dominio per specificare il numero massimo di errori di autenticazione e la durata del blocco degli account. Queste impostazioni si applicano a tutti i domini in cui è attivato il blocco dell&#39;account.
 
-1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Gestione]** dominio.
+1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Gestione dominio]**.
 1. Nella casella Massimo errori di autenticazione consecutivi, immettere il numero di tentativi consecutivi in cui un utente può tentare di eseguire il login prima che il proprio account sia bloccato. Il valore predefinito è 20.
 1. Nella casella Sblocca l’account dopo (minuti), inserite il numero di minuti in cui l’account utente è bloccato. Dopo il numero specificato di minuti, l&#39;utente può tentare di nuovo l&#39;accesso. Il valore predefinito è 30.
 1. Fai clic su **[!UICONTROL Salva]**.
