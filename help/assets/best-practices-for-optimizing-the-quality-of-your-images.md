@@ -39,7 +39,7 @@ Come procedura ottimale per il formato immagine, iniziate con l&#39;impostazione
 
 La riduzione dinamica delle dimensioni delle immagini è una delle attività più comuni. Si tratta di specificare le dimensioni e, facoltativamente, la modalità di downsampling da usare per ridimensionare l’immagine.
 
-* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`oppure semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
+* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`o semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
 * `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Iniziate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L&#39;utilizzo del downsampling `value =bilin` è più veloce, ma spesso comporta l&#39;aliasing degli artefatti.
 
 Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
