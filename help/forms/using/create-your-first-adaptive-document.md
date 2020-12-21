@@ -26,7 +26,7 @@ Una delle polizze di assicurazione auto dei clienti è in scadenza e le viene in
 Il portale viene eseguito  AEM Adobe. L&#39;output del canale di benvenuto per il Web e la stampa viene creato utilizzando le funzionalità multicanale del documento adattivo.
 
 Alla fine dell&#39;esercitazione sarà disponibile un documento adattivo simile al seguente:
-[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [ ad-2 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Per creare la prima esercitazione sui documenti adattivi si procede in categorie. Ogni passaggio è un articolo completo in sé.
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf)    [ ![ad-2](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)La creazione della prima esercitazione per documenti adattivi è suddivisa in categorie. Ogni passaggio è un articolo completo in sé.
 
 <table> 
  <tbody>
@@ -36,7 +36,7 @@ Alla fine dell&#39;esercitazione sarà disponibile un documento adattivo simile 
     <ul> 
      <li>Creazione di un modello di dati adattivo per documenti e moduli.</li> 
      <li>Creazione di modelli e temi per documenti adattivi.</li> 
-     <li>Utilizzo dell'editor di regole per creare regole di business.<br /> </li> 
+     <li>Utilizzo dell'editor di regole per creare regole aziendali.<br /> </li> 
      <li>Pubblicazione di un documento adattivo. <br /> </li> 
     </ul> </th> 
   </tr>
@@ -45,19 +45,19 @@ Alla fine dell&#39;esercitazione sarà disponibile un documento adattivo simile 
    <td>
     <ul> 
      <li>Imposta AEM’istanza di creazione. </li> 
-     <li>Installare il componente aggiuntivo per AEM Forms. Per informazioni dettagliate, consultate <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installare e configurare  AEM Forms</a>.</li> 
-     <li>Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell'esercitazione si basano sul database MySQL e utilizzano il driver di database MySQL JDBC di Oracle. </li> 
+     <li>Installare il componente aggiuntivo per AEM Forms. Per informazioni dettagliate, vedere <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installare e configurare  AEM Forms</a>.</li> 
+     <li>Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell'esercitazione si basano sul database MySQL e utilizzano  driver di database Oracle MySQL JDBC. </li> 
      <li>Configurate un database contenente i dati del cliente. Un database è essenziale per creare un documento adattivo. Questa esercitazione utilizza un database per visualizzare il modello dati del modulo e le funzionalità di persistenza di  AEM Forms. </li> 
-     <li>Crea/importa e abilita <a href="/help/forms/using/web-channel-print-channel.md">Modelli per la stampa e il canale</a>Web.</li> 
-     <li>Assicurarsi di disporre dei frammenti di <a href="/help/forms/using/document-fragments.md">documento basati su FDM</a>.</li> 
+     <li>Creare/importare e abilitare <a href="/help/forms/using/web-channel-print-channel.md">Modelli per la stampa e il canale Web</a>.</li> 
+     <li>Assicurarsi di disporre dei frammenti di documento <a href="/help/forms/using/document-fragments.md">basati su FDM</a>.</li> 
     </ul> </td> 
   </tr>
  </tbody>
 </table>
 
-## Step 1: Create Form Data Model {#step-create-form-data-model}
+## Passaggio 1: Crea modello dati modulo {#step-create-form-data-model}
 
-Un modello dati del modulo consente di collegare un documento adattivo a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati Modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un documento adattivo per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dei dati AEM Forms.
+Un modello dati del modulo consente di collegare un documento adattivo a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati Modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un documento adattivo per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [ Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md).
 
 Obiettivi:
 
@@ -85,16 +85,16 @@ Obiettivi:
 
 ## Passaggio 3: Applicare regole ai campi dei documenti adattivi (solo per il canale Web) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Il documento adattivo fornisce un editor per la scrittura di regole sugli oggetti documento adattivi. Queste regole definiscono le azioni da attivare sugli oggetti del documento in base alle condizioni e alle azioni dell&#39;utente sul documento. Garantisce la precisione e velocizza l’esperienza utente nella versione Web del documento adattivo. Per ulteriori informazioni sull&#39;editor di regole e regole per documenti adattivi, vedere Editor [di](/help/forms/using/rule-editor.md)regole.
+Il documento adattivo fornisce un editor per la scrittura di regole sugli oggetti documento adattivi. Queste regole definiscono le azioni da attivare sugli oggetti del documento in base alle condizioni e alle azioni dell&#39;utente sul documento. Garantisce la precisione e velocizza l’esperienza utente nella versione Web del documento adattivo. Per ulteriori informazioni sull&#39;editor di regole e regole per documenti adattivi, vedere [editor di regole](/help/forms/using/rule-editor.md).
 
 Obiettivi:
 
 * Creazione e applicazione di regole ai campi canale Web del documento adattivo
 * Utilizzare le regole per attivare i servizi del modello dati documento nel canale Web
 
-## Passaggio 4: Definire lo stile del documento adattivo (solo per il canale Web) {#step-style-the-adaptive-document-web-channel-only}
+## Passaggio 4: Formattare il documento adattivo (solo canale Web) {#step-style-the-adaptive-document-web-channel-only}
 
-I documenti adattivi forniscono un editor per la creazione di temi per i documenti adattivi e lo stile in linea. Un tema contiene dettagli di stile per componenti e pannelli e potete riutilizzare un tema sui canali Web di diversi documenti. Gli stili includono proprietà quali i colori di sfondo, i colori dello stato, la trasparenza, l’allineamento e le dimensioni. Quando si applica il tema al documento, lo stile specificato si riflette sui componenti corrispondenti del documento. For more information, see [Themes](/help/forms/using/themes.md).
+I documenti adattivi forniscono un editor per la creazione di temi per i documenti adattivi e lo stile in linea. Un tema contiene dettagli di stile per componenti e pannelli e potete riutilizzare un tema sui canali Web di diversi documenti. Gli stili includono proprietà quali i colori di sfondo, i colori dello stato, la trasparenza, l’allineamento e le dimensioni. Quando si applica il tema al documento, lo stile specificato si riflette sui componenti corrispondenti del documento. Per ulteriori informazioni, vedere [Temi](/help/forms/using/themes.md).
 
 Obiettivi:
 
