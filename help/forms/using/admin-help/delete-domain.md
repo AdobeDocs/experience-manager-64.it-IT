@@ -24,6 +24,6 @@ Utilizzare la pagina Gestione dominio per contrassegnare un dominio esistente co
 
 Se create un dominio con lo stesso nome di un dominio eliminato, il dominio eliminato viene ripristinato insieme alle informazioni in esso contenute. Impossibile eliminare il dominio DefaultDom.
 
-1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Gestione]** dominio.
-1. Selezionare la casella di controllo del dominio da eliminare, fare clic su **[!UICONTROL Elimina]** e quindi su **[!UICONTROL OK]**.
+1. Nella console di amministrazione, fate clic su **[!UICONTROL Impostazioni > Gestione utente > Gestione dominio]**.
+1. Selezionare la casella di controllo del dominio da eliminare, fare clic su **[!UICONTROL Elimina]**, quindi fare clic su **[!UICONTROL OK]**.
 
