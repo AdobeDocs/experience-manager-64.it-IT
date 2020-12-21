@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Per amministrare efficacemente il flusso di lavoro dei moduli, è necessario comprendere i termini e la gerarchia degli elementi seguenti:
 
-* *Le categorie* di processo organizzano i processi in gruppi logici.
-* *I processi* rappresentano i processi aziendali automatizzati. Dovrebbe esistere almeno un processo per ogni processo aziendale implementato.
-* Un diagramma *di* processo è la rappresentazione visiva del processo aziendale automatizzato.
-* Un&#39;istanza *di* processo è un processo avviato da un utente (ad esempio, per completare e inviare un modulo) o un passaggio automatico. Possono essere presenti più istanze di un processo.
+* *Categorie* di processo: organizzare i processi in gruppi logici.
+* *I* processi rappresentano i processi aziendali automatizzati. Dovrebbe esistere almeno un processo per ogni processo aziendale implementato.
+* Un *diagramma di processo* è la rappresentazione visiva del processo aziendale che viene automatizzato.
+* Un&#39;istanza di processo *è un processo avviato da un utente (ad esempio, per completare e inviare un modulo) o da un passaggio automatico.* Possono essere presenti più istanze di un processo.
 * Un *operation *è uno dei passaggi di un diagramma di processo, rappresentato in Workbench da un&#39;icona nel diagramma di processo.
-* Un&#39; *attività* è un&#39;azione assegnata a un utente. Quando l&#39;attività viene eseguita e l&#39;operazione viene eseguita, il servizio Utente assegna un&#39;attività a un utente.
+* Un *task* è un&#39;azione che è stata assegnata a un utente. Quando l&#39;attività viene eseguita e l&#39;operazione viene eseguita, il servizio Utente assegna un&#39;attività a un utente.
 
-Per ulteriori informazioni su questi termini, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
+Per ulteriori informazioni su questi termini, vedere [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
