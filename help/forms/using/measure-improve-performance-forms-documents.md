@@ -33,9 +33,9 @@ Per massimizzare il ROI, le organizzazioni devono monitorare il modo in cui i cl
 
 ## La soluzione {#the-solution}
 
- AEM Forms si integra con le soluzioni [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - che consentono di monitorare e analizzare le prestazioni dei moduli e di sperimentare e identificare l&#39;esperienza che porta a un migliore tasso di conversione.
+ AEM Forms si integra con soluzioni [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [ Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [ Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - che possono aiutarti a monitorare e analizzare le prestazioni dei moduli e consentirti di sperimentare e identificare l&#39;esperienza che porta a un migliore tasso di conversione.
 
-## Il flusso di lavoro {#the-workflow}
+## Flusso di lavoro {#the-workflow}
 
 Analizziamo i dettagli di come misurare le prestazioni e migliorare i tassi di conversione per i moduli.
 
@@ -44,7 +44,7 @@ Analizziamo i dettagli di come misurare le prestazioni e migliorare i tassi di c
 * Utenti e analisti aziendali responsabili di strategie di marketing e di successo
 * Personale IT che si occupa della configurazione e manutenzione dell&#39;infrastruttura e delle soluzioni
 
-###  componenti e funzionalità di AEM Forms {#aem-forms-components-and-features-involved}
+###  componenti e funzionalità di AEM Forms coinvolti {#aem-forms-components-and-features-involved}
 
 * Moduli adattivi
 * Integrazione con  Adobe Analytics per raccogliere, organizzare e segnalare le interazioni dei clienti con i moduli adattivi
@@ -69,19 +69,19 @@ Per ottenere informazioni approfondite sulle interazioni dei clienti con i modul
 1. Configurare  servizio di configurazione AEM Forms Analytics in AEM
 1. Abilitare l&#39;analisi del modulo in AEM
 
-Per i passaggi dettagliati, vedere [Configurazione di analisi e rapporti per i moduli](/help/forms/using/configure-analytics-forms-documents.md)adattivi.
+Per i passaggi dettagliati, vedere [Configurazione di analisi e rapporti per i moduli adattivi](/help/forms/using/configure-analytics-forms-documents.md).
 
 **Configurare Target**
 
 Per creare ed eseguire test A/B per i moduli adattivi, configurare Target in  AEM Forms come descritto in [Configurare e integrare Target in  AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Passaggio 2: Visualizza rapporto analisi {#step-view-analytics-report-br}
+#### Passaggio 2: Visualizza report di analisi {#step-view-analytics-report-br}
 
 Quando i clienti accedono e interagiscono con i moduli su cui hai attivato Analytics, le loro interazioni vengono acquisite in database Analytics altamente protetti. I database sono segmentati dai client e accessibili tramite connessioni sicure.
 
 È possibile visualizzare un rapporto dall&#39;interno AEM per i moduli abilitati per l&#39;analisi e analizzare i dati. Per visualizzare il rapporto:
 
-1. Nel server AEM, accedete a **Forms > Forms e documenti**.
+1. Sul AEM server, andate a **Forms > Forms &amp; Documents**.
 1. Selezionare il modulo per il quale si desidera visualizzare il rapporto di analisi.
 1. Fate clic sull&#39;icona Rapporti di Analytics. Viene visualizzato il rapporto.
 
@@ -111,7 +111,7 @@ Inoltre, vengono forniti i seguenti dettagli su ciascun pannello del modulo:
 
 ![Report di analisi di esempio per un modulo adattivo](assets/summary-report.png)
 
-Per ulteriori dettagli sui report di analisi dei moduli, vedere [Visualizzazione e comprensione  report](/help/forms/using/view-understand-aem-forms-analytics-reports.md)di analisi AEM Forms.
+Per ulteriori dettagli sui report di analisi dei moduli, vedere [Visualizzazione e comprensione  report di analisi AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Per ulteriori dettagli sui report di analisi dei moduli, vedere [Visualizzazione
 
 #### Passaggio 3: Analizzare i punti dati {#step-analyze-data-points}
 
-In questo passaggio, si analizzeranno i punti dati nel report di analisi e si noterà le prestazioni del modulo. Se non soddisfa i KPI di successo, verranno create ipotesi, basate sui dati, e verranno trovate possibili soluzioni per risolvere i problemi. Ad esempio:
+In questo passaggio, si analizzeranno i punti dati nel report di analisi e si noterà le prestazioni del modulo. Se non soddisfa i KPI di successo, verranno create ipotesi, basate sui dati, e verranno trovate possibili soluzioni per risolvere i problemi. Esempio:
 
 * Se il tempo medio di compilazione del modulo è superiore alle aspettative, è possibile che il modulo sia complesso per consentire agli utenti di comprenderlo, che il modulo non utilizzi terminologie standard, che il modulo sia troppo lungo e così via. In questo caso, potrebbe essere necessario semplificare la struttura del modulo e i campi, rielaborare la struttura del modulo, ridurre la lunghezza del modulo o aggiungere descrizioni ed esempi di aiuto per i campi modulo non standard.
 * Se i dati indicano che la maggior parte dei clienti accede all’Aiuto per un pannello di moduli, è evidente che i clienti sono perplessi sulle informazioni da compilare. È possibile utilizzare una terminologia alternativa o aggiungere alcuni input di esempio e una descrizione della guida per tale pannello.
@@ -135,11 +135,11 @@ In questo passaggio sarà possibile convalidare le modifiche apportate nel modul
 
 L&#39;integrazione di  AEM Forms con Target consente di creare test A/B per i moduli adattivi. Nei test A/B, potete presentare in tempo reale ai clienti diverse esperienze di un modulo per sapere quale funziona meglio o genera più conversioni. Una volta ottenuti dati significativi che indicano un&#39;esperienza di conversione migliore dell&#39;altra, potete dichiarare che le esperienze sono vincenti e, andando avanti, diventerà l&#39;esperienza predefinita visibile a tutti i clienti.
 
-Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, vedere Test [A/B dei moduli](/help/forms/using/ab-testing-adaptive-forms.md)adattivi.
+Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, vedere [Test A/B dei moduli adattivi](/help/forms/using/ab-testing-adaptive-forms.md).
 
 ![Un esempio di rapporto sintetico del test A/B per un modulo adattivo](assets/ab-test-report-2.png)
 
-## Best practices {#best-practices}
+## Best practice {#best-practices}
 
 Le best practice effettive sono quelle che ti identifichi mentre esegui questo flusso di lavoro. Sono esclusivi per il tuo ambiente e i tuoi requisiti. Acquisite le informazioni nel flusso di lavoro e documentatele come best practice.
 
