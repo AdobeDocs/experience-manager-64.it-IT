@@ -22,7 +22,7 @@ ht-degree: 0%
 I modelli di modulo XFA o XDP sono i modelli per:
 
 * [Lettere](/help/forms/using/create-letter.md)
-* [Canale](/help/forms/using/web-channel-print-channel.md#printchannel) di stampa delle comunicazioni [interattive](/help/forms/using/interactive-communications-overview.md)
+* [Canale di stampa ](/help/forms/using/web-channel-print-channel.md#printchannel) delle comunicazioni  [interattive](/help/forms/using/interactive-communications-overview.md)
 
 * Frammenti di layout
 
@@ -49,7 +49,7 @@ Per creare layout per lettere/canale di stampa delle comunicazioni interattive, 
    1. Per la sezione Residenza principale, aggiungere un&#39;area di destinazione segnaposto. Questo segnaposto è associato al frammento Residenza principale al momento della progettazione Lettera/Comunicazione interattiva.
    1. Caricate il layout (e l&#39;eventuale frammento che utilizza il layout) nel server AEM Forms .
 
-## Uso dello schema {#using-schema}
+## Utilizzo dello schema {#using-schema}
 
 È possibile utilizzare uno schema in un layout o in un frammento di layout, ma non è obbligatorio. Se utilizzate uno schema, accertatevi di quanto segue:
 
@@ -80,7 +80,7 @@ Fintanto che un campo relativo soddisfa i criteri descritti in precedenza, può 
 
 I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su una larghezza, un&#39;altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
 
-## Definizione di quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Decide quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Utilizzare un sottomodulo se si desidera acquisire più contenuto del modulo in un layout verticale con scorrimento dall&#39;alto verso il basso (più paragrafi o immagini). Il layout deve gestire l&#39;aumento dell&#39;altezza del sottomodulo per adattarlo al contenuto. Se non si può essere certi che la lunghezza del contenuto associato al sottomodulo o alla destinazione non superi mai lo spazio riservato al sottomodulo nel layout, creare il sottomodulo come elemento secondario all&#39;interno di un contenitore di sottomoduli scorrevole. Questo processo assicura che gli oggetti layout sotto il sottomodulo scorrano verso il basso man mano che il sottomodulo cresce.
 
