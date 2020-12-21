@@ -37,11 +37,11 @@ L&#39;elenco seguente specifica gli stili supportati in un file CSS personalizza
 
 >[!NOTE]
 >
->Prima di eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato, è importante avere una conoscenza approfondita del rendering dei moduli HTML. Consultate [Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md).
+>Prima di eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato, è importante avere una conoscenza approfondita del rendering dei moduli HTML. (Vedere [Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md).)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -101,37 +101,37 @@ Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato 
 
 1. Creare un oggetto API Forms Java
 
-   * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
-   * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` che contiene le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Riferimento al file CSS
 
-   * Creare un `HTMLRenderSpec` oggetto utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setCustomCSSURI` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
+   * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore di stringa che specifica la posizione e il nome del file CSS.`setCustomCSSURI`
 
 1. Eseguire il rendering di un modulo HTML
 
-   Richiama il metodo dell’ `FormsServiceClient` oggetto `(Deprecated) (Deprecated) renderHTMLForm` e passa i seguenti valori:
+   Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) (Deprecated) renderHTMLForm` e trasmettere i seguenti valori:
 
    * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valore `TransformTo` enum che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
-   * Un `com.adobe.idp.Document` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare un `com.adobe.idp.Document` oggetto vuoto.
-   * L&#39; `HTMLRenderSpec` oggetto che memorizza le opzioni di runtime HTML.
-   * Una stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Un `URLSpec` oggetto che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
-   * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Un valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
+   * Un oggetto `com.adobe.idp.Document` che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * L&#39;oggetto `HTMLRenderSpec` che memorizza le opzioni di runtime HTML.
+   * Un valore di stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Un oggetto `URLSpec` che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il `(Deprecated) renderHTMLForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il metodo `(Deprecated) renderHTMLForm` restituisce un oggetto `FormsResult` contenente un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` metodo ‘s `getOutputContent` .
-   * Ottenere il tipo di contenuto dell&#39; `com.adobe.idp.Document` oggetto richiamandone il `getContentType` metodo.
-   * Impostare il tipo di contenuto dell&#39; `javax.servlet.http.HttpServletResponse` oggetto richiamandone `setContentType` il metodo e passando il tipo di contenuto dell&#39; `com.adobe.idp.Document` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il `javax.servlet.h\ttp.HttpServletResponse` metodo dell&#39; `getOutputStream` oggetto.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` metodo dell&#39; `getInputStream` oggetto.
-   * Creare un array di byte e compilarlo con il flusso di dati del modulo richiamando il metodo dell&#39; `InputStream` oggetto `read` e passando l&#39;array di byte come argomento.
-   * Richiamare il metodo dell&#39; `javax.servlet.ServletOutputStream` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamandone il metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.h\ttp.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
+   * Creare un array di byte e compilarlo con il flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto `read` e passando l&#39;array di byte come argomento.
+   * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -154,42 +154,42 @@ Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato 
 
 1. Creare un oggetto API Forms Java
 
-   Creare un `FormsService` oggetto e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Riferimento al file CSS
 
-   * Creare un `HTMLRenderSpec` oggetto utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setCustomCSSURI` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
+   * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore di stringa che specifica la posizione e il nome del file CSS.`setCustomCSSURI`
 
 1. Eseguire il rendering di un modulo HTML
 
-   Richiama il metodo dell’ `FormsService` oggetto `(Deprecated) renderHTMLForm` e passa i seguenti valori:
+   Richiamare il metodo `FormsService` dell&#39;oggetto `(Deprecated) renderHTMLForm` e trasmettere i seguenti valori:
 
    * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valore `TransformTo` enum che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
-   * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. Consultate [Precompilazione di Forms con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md)scorrevoli.
-   * L&#39; `HTMLRenderSpec` oggetto che memorizza le opzioni di runtime HTML.
-   * Una stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
-   * Un `URLSpec` oggetto che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
-   * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal `(Deprecated) renderHTMLForm` metodo. Questo valore del parametro memorizza il modulo di cui è stato effettuato il rendering.
-   * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal `(Deprecated) renderHTMLForm` metodo. Questo parametro memorizza i dati XML di output.
-   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal `(Deprecated) renderHTMLForm` metodo. Questo argomento memorizza il numero di pagine nel modulo.
-   * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal `(Deprecated) renderHTMLForm` metodo. Questo argomento memorizza il valore delle impostazioni internazionali.
-   * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal `(Deprecated) renderHTMLForm` metodo. Questo argomento memorizza il valore di rendering HTML utilizzato.
-   * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
+   * Un valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
+   * Un oggetto `BLOB` che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. (Vedere [Precompilazione di Forms con layout scorrevoli](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * L&#39;oggetto `HTMLRenderSpec` che memorizza le opzioni di runtime HTML.
+   * Un valore di stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
+   * Un oggetto `URLSpec` che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo valore del parametro memorizza il modulo di cui è stato effettuato il rendering.
+   * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo parametro memorizza i dati XML di output.
+   * Un oggetto `javax.xml.rpc.holders.LongHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo argomento memorizza il numero di pagine nel modulo.
+   * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo argomento memorizza il valore delle impostazioni internazionali.
+   * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo argomento memorizza il valore di rendering HTML utilizzato.
+   * Un oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
 
-   Il `(Deprecated) renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il metodo `(Deprecated) renderHTMLForm` compila l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `FormResult` oggetto ottenendo il valore del membro `com.adobe.idp.services.holders.FormsResultHolder` dati dell&#39; `value` oggetto.
-   * Creare un `BLOB` oggetto che contenga dati del modulo richiamando il `FormsResult` metodo dell&#39; `getOutputContent` oggetto.
-   * Ottenere il tipo di contenuto dell&#39; `BLOB` oggetto richiamandone il `getContentType` metodo.
-   * Impostare il tipo di contenuto dell&#39; `javax.servlet.http.HttpServletResponse` oggetto richiamandone `setContentType` il metodo e passando il tipo di contenuto dell&#39; `BLOB` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il `javax.servlet.http.HttpServletResponse` metodo dell&#39; `getOutputStream` oggetto.
-   * Creare un array di byte e compilarlo richiamando il metodo dell&#39; `BLOB` oggetto `getBinaryData` . Questa attività assegna il contenuto dell&#39; `FormsResult` oggetto all&#39;array di byte.
-   * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `FormResult` ottenendo il valore del membro di dati `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value`.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamandone il metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare un array di byte e compilarlo richiamando il metodo `BLOB` dell&#39;oggetto `getBinaryData`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
+   * Richiamare il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
 
