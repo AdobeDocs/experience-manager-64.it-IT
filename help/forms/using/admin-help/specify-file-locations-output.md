@@ -23,28 +23,28 @@ ht-degree: 3%
 È possibile specificare le posizioni in cui Output cerca determinati tipi di file richiesti.
 
 1. Nella console di amministrazione, fate clic su Servizi > output.
-1. In Posizioni specificare le opzioni appropriate.
+1. In Posizioni, specificate le opzioni appropriate.
 1. Fate clic su Salva.
 
-## Impostazioni posizioni {#locations-settings}
+## Impostazioni posizione {#locations-settings}
 
-**URI radice contenuto:** URI o posizione assoluta della directory archivio da cui vengono recuperati i moduli. Questo valore è combinato con il parametro sForm, specificato tramite l&#39;API, per costruire il percorso assoluto del modulo recuperato. Questo valore può fare riferimento a una directory o a una posizione Web accessibile tramite HTTP.
+**URI radice contenuto:** URI o posizione assoluta dell&#39;archivio da cui vengono recuperati i moduli. Questo valore è combinato con il parametro sForm, specificato tramite l&#39;API, per costruire il percorso assoluto del modulo recuperato. Questo valore può fare riferimento a una directory o a una posizione Web accessibile tramite HTTP.
 
 Il valore predefinito è una stringa vuota.
 
-**File di configurazione XCI:** La posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio Output per il rendering. Per un valore relativo, si presume che il file XCI risieda nei moduli AEM che possono essere distribuiti nel file EAR.
+**File di configurazione XCI:** la posizione relativa o assoluta del file di configurazione XCI utilizzato dal servizio Output per il rendering. Per un valore relativo, si presume che il file XCI risieda nei moduli AEM che possono essere distribuiti nel file EAR.
 
 Il valore predefinito è `com/adobe/formServer/PA/pa_output.xci`.
 
-**Posizione cache:** Specifica il percorso della cache del disco di output. Quando modificate questa impostazione, tutte le informazioni cache esistenti provenienti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle seguenti opzioni:
+**Posizione cache:** specifica la posizione della cache del disco di output. Quando modificate questa impostazione, tutte le informazioni cache esistenti provenienti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle seguenti opzioni:
 
-**Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione che dipende dal server applicazione in uso:
+**Posizione predefinita:** questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione che dipende dal server applicazione in uso:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema di base > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata `adobeoutput_[servername]`.
+**LC Temp Directory:** La cache viene creata in una sottodirectory della directory temp dei moduli AEM, specificata nella console di amministrazione in Settings (Impostazioni) > Core System Settings (Impostazioni sistema di base) > Configurations (Configurazioni) > Location of Temp Directory (Posizione della directory temporanea). La sottodirectory è denominata `adobeoutput_[servername]`.
 
 >[!NOTE]
 >
