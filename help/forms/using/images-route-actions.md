@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Personalizzare le immagini utilizzate nelle azioni di route {#customize-images-used-in-route-actions}
 
-Per personalizzare le immagini utilizzate nelle azioni di route, eseguite i passaggi descritti in Passaggi [generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti in questo articolo.
+Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i passaggi descritti in [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti in questo articolo.
 
 ## Immagini per le azioni di route {#images-for-route-actions}
 
@@ -45,13 +45,13 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguite i pass
        }
    ```
 
-## Menu a comparsa azioni attività Elenco attività {#task-list-task-action-popup}
+## Popup azione elenco attività {#task-list-task-action-popup}
 
-1. Creare un elenco di attività a comparsa azioni, vedere [Creazione  codice](introduction-customizing-html-workspace.md#building-html-workspace-code)dell&#39;area di lavoro AEM Forms. Richiede l&#39;utilizzo del pacchetto dev.
+1. Creare una finestra a comparsa di azioni elenco attività, vedere [Creazione  codice area di lavoro AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Richiede l&#39;utilizzo del pacchetto dev.
 
-1. Copia `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
+1. Copiare `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/task.html`:
+1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificare il seguente codice in `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -81,7 +81,7 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguite i pass
                <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/task.html`. Aggiunge uno stack delle condizioni `if-else` servlet per mappare lo stile con il nome dell&#39;azione di route.
+1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/task.html`. Aggiunge uno stack delle condizioni servlet `if-else` per mappare lo stile con il nome dell&#39;azione di route.
 
 ```
 <%if(routeList == null){%>
@@ -117,11 +117,11 @@ To
             <%}%>
 ```
 
-## Popup attività dettagli attività {#task-details-task-action-popup}
+## Popup azione dettagli attività {#task-details-task-action-popup}
 
-1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` in `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copiare `/libs/ws/js/runtime/templates/taskdetails.html` in `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificare il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +141,7 @@ To
                        <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge uno stack di condizioni `if-else` servlet per mappare lo stile con il nome dell&#39;azione di route.
+1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge uno stack di condizioni servlet `if-else` per mappare lo stile con il nome dell&#39;azione di route.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,7 +169,7 @@ To
                <%}%>
    ```
 
-1. Apri `/apps/ws/js/registry.js` per la modifica e cerca il testo seguente:\
+1. Aprite `/apps/ws/js/registry.js` per la modifica e cercate il testo seguente:\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Sostituite il testo con quanto segue:\
