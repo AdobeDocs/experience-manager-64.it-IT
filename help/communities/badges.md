@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Console Badge {#badges-console}
 
-## Informazioni sui Badge {#about-badges}
+## Informazioni sui simboli {#about-badges}
 
 La console Community Badges consente di aggiungere distintivi personalizzati che possono essere visualizzati per un membro quando guadagnato (assegnato) o assume un ruolo specifico nella comunità (assegnato).
 
@@ -44,30 +44,30 @@ In questa console vengono visualizzati i simboli attualmente disponibili e dai q
 
 ## Crea badge {#create-badge}
 
-Un contrassegno viene creato caricando un’immagine di dimensioni appropriate (72 dpi con un’altezza compresa tra 26 e 32 pixel) e fornendo un nome. L’immagine del contrassegno viene memorizzata nella directory archivio `/etc/community/badging/images` e replicata automaticamente nell’ambiente di pubblicazione.
+Un contrassegno viene creato caricando un’immagine di dimensioni appropriate (72 dpi con un’altezza compresa tra 26 e 32 pixel) e fornendo un nome. L&#39;immagine del contrassegno viene memorizzata nella directory archivio in `/etc/community/badging/images` e replicata automaticamente nell&#39;ambiente di pubblicazione.
 
-Se l’ambiente di pubblicazione è una farm di editori, è necessario configurare la sincronizzazione [](sync.md)utente.
+Se l&#39;ambiente di pubblicazione è una farm di editori, è necessario configurare [sincronizzazione utente](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Carica immagine]**
 
-   (*Obbligatorio*) Un’immagine con un’immagine con dimensioni consigliate di 32 x 32 pixel a 72 dpi in formato JPEG o PNG.
+   (*Richiesto*) Un&#39;immagine con un contrassegno di 32 x 32 pixel a 72 dpi consigliati in formato JPEG o PNG.
 
 * **[!UICONTROL Nome]**
 
-   (*Obbligatorio*) Il nome del contrassegno. È il nome predefinito `Display Name` e il nome del nodo del repository. Se il nome del nodo del repository non `Name` è valido, verrà modificato.
+   (*Obbligatorio*) Il nome del contrassegno. È il nome predefinito `Display Name` e il nome del nodo del repository. Se `Name` non è un nome di nodo del repository valido, verrà modificato.
 
 * **[!UICONTROL Nome visualizzato]**
 
-   (*Facoltativo*) Nome da visualizzare per il contrassegno nell’interfaccia utente. Il valore predefinito è il testo non modificato immesso per il `Name`.
+   (*Facoltativo*) Nome da visualizzare per il contrassegno nell&#39;interfaccia utente. Il valore predefinito è il testo inalterato immesso per il simbolo `Name`.
 
 * **[!UICONTROL Descrizione]**
 
-   (*Facoltativo*) Una descrizione del contrassegno.
+   (*Facoltativo*) Una descrizione per il contrassegno.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Per informazioni dettagliate sull’impostazione delle regole di punteggio e contrassegno, vedere [Punteggio e Badge](implementing-scoring.md).
+Per informazioni dettagliate sulla configurazione delle regole di punteggio e contrassegno, vedere [Punteggio e Badge](implementing-scoring.md).
 
-Per gestire i simboli per i membri, consulta Console [](members.md)Membri.
+Per gestire i simboli per i membri, vedere [Console Membri](members.md).
