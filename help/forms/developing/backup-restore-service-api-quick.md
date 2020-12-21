@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Avvio rapido delle API di backup e ripristino {#backup-and-restore-service-apiquick-starts}
+# Avvio rapido dell&#39;API del servizio di backup e ripristino {#backup-and-restore-service-apiquick-starts}
 
 Java API Quick Start(SOAP) è disponibile per l&#39;API del servizio di backup e ripristino.
 
@@ -30,11 +30,11 @@ Java API Quick Start(SOAP) è disponibile per l&#39;API del servizio di backup e
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Accesso alla modalità di backup mediante l&#39;API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità di backup con un&#39;etichetta univoca per due ore. Dopo la scadenza del tempo di backup o se la modalità di backup viene esplicitamente chiusa, il server moduli ritorna alla rimozione dei file dall&#39;archivio documenti globale. (Vedere [Accesso alla modalità di backup sul server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)dei moduli.)
+Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità di backup con un&#39;etichetta univoca per due ore. Dopo la scadenza del tempo di backup o se la modalità di backup viene esplicitamente chiusa, il server moduli ritorna alla rimozione dei file dall&#39;archivio documenti globale. (Vedere [Accesso alla modalità di backup nel server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```as3
  /* 
@@ -148,9 +148,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità
  
 ```
 
-## Avvio rapido (modalità SOAP): Uscire dalla modalità di backup mediante l&#39;API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Avvio rapido (modalità SOAP): Uscire dalla modalità di backup utilizzando l&#39;API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito, un server Forms lascia esplicitamente la modalità di backup e ritorna allo svuotamento dei file da Global Document Storage. (Vedere [Uscita dalla modalità di backup sul server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)dei moduli.)
+Nell&#39;esempio di codice Java riportato di seguito viene indicato che un server Forms lascia la modalità di backup e ritorna alla rimozione dei file dall&#39;Archiviazione documenti globale. (Vedere [Uscita dalla modalità di backup sul server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```as3
  /* 
