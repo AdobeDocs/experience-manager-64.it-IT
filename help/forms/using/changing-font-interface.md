@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Potete modificare il font visualizzato nell’area di lavoro  AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
 
-Seguite i passaggi [Generici per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) dell&#39;area di lavoro AEM Forms e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
+Seguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
 
 1. Modificate o aggiungete la famiglia di font in uno stile esistente.
 1. Modificate o aggiungete l&#39;agganciamento font-family per l&#39;elemento HTML.
@@ -30,7 +30,7 @@ Seguite i passaggi [Generici per  personalizzazione](/help/forms/using/generic-s
 
 Ad esempio, per modificare il font del testo di ancoraggio della barra di navigazione superiore in Courier New, effettuate le seguenti operazioni:
 
-1. Accedete al CRXDE Lite accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Accedete al CRXDE Lite accedendo a `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Effettua una delle operazioni seguenti:
 
    1. Per modificare la famiglia di font in uno stile esistente, aggiungete quanto segue nel file newStyle.css in /apps/ws/css.
@@ -41,7 +41,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       }
       ```
 
-   1. Per aggiungere la famiglia di font in linea per l&#39;elemento HTML, copiate il `/libs/ws/js/runtime/templates/appnavigation.html` file in `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Per aggiungere la famiglia di font in linea per l&#39;elemento HTML, copiate il file `/libs/ws/js/runtime/templates/appnavigation.html` in `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Aggiornate il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
 
@@ -77,6 +77,8 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
 1. Riavviate l’area di lavoro e cancellate la cache del browser affinché le modifiche siano visibili.
 
-![change_font_before](assets/change_font_before.png)**Figure:** *Barra di navigazione superiore prima della personalizzazione dei font*
+![change_font_](assets/change_font_before.png)
+**beforeFigure:Barra di navigazione** *principale prima della personalizzazione dei font*
 
-![change_font_after](assets/change_font_after.png)**Figure:** *Barra di navigazione superiore dopo la personalizzazione del font della prima scheda*
+![change_font_](assets/change_font_after.png)
+**afterFigure:Barra di navigazione** *principale dopo la personalizzazione dei font della prima scheda*
