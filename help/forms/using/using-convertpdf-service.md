@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# ConvertPDF Service {#convertpdf-service}
+# Servizio ConvertPDF {#convertpdf-service}
 
 ## Panoramica {#overview}
 
@@ -30,7 +30,7 @@ Con il servizio Converti PDF puoi effettuare le seguenti operazioni:
 
 ## Configurare le proprietà del servizio   {#properties}
 
-È possibile utilizzare il servizio **** AEMFD ConvertPDF in AEM Console per configurare le proprietà per il servizio. L’URL predefinito di AEM console è `https://[host]:[port]/system/console/configMgr`.
+È possibile utilizzare il **servizio AEMFD ConvertPDF Service** nella console AEM per configurare le proprietà per questo servizio. L&#39;URL predefinito di AEM console è `https://[host]:[port]/system/console/configMgr`.
 
 ## Utilizzo del servizio {#using-the-service}
 
@@ -84,7 +84,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Utilizzo dell’API toImage con un JSP o servlet {#using-toimage-api-with-a-jsp-or-servlets}
+### Utilizzo dell&#39;API toImage con un JSP o servlet {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```java
 <%@ page import="java.util.List, java.io.File,
