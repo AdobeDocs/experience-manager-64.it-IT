@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Funzionalità Flussi di attività {#activity-streams-feature}
+# Funzionalità dei flussi di attività {#activity-streams-feature}
 
 ## Introduzione {#introduction}
 
-Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del `Activity Streams` componente.
+Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del componente `Activity Streams`.
 
 La possibilità di seguire aggiunge un&#39;altra visione delle attività quando i membri della comunità seguono i post di interesse o seguono le attività di altri membri della comunità.
 
@@ -33,45 +33,50 @@ Questa sezione della documentazione descrive
 
 ## Aggiunta di flussi di attività a una pagina {#adding-activity-streams-to-a-page}
 
-Se si desidera aggiungere un `Activity Streams` componente a una pagina in modalità di creazione, utilizzare il browser Componenti per individuare
+Se si desidera aggiungere un componente `Activity Streams` a una pagina in modalità di creazione, utilizzare il browser componenti per individuare
 
 * `Communities / Activity Streams`
 
 e trascinatelo nella stessa posizione in una pagina in cui dovrebbero essere visualizzati i flussi di attività.
 
-Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
 
-Quando sono incluse le librerie [lato client](essentials-activities.md#essentials-for-client-side) richieste, verrà visualizzato il `Activity Streams` componente:
+Quando vengono incluse le [librerie lato client ](essentials-activities.md#essentials-for-client-side), viene visualizzato il componente `Activity Streams`:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ## Configurazione dei flussi di attività {#configuring-activity-streams}
 
-Selezionate il `Activity Streams` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Activity Streams` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-Nella scheda Attività **** utente, specificate le attività da visualizzare:
+Nella scheda **[!UICONTROL Attività utente]**, specificare quali attività visualizzare:
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Numero massimo di attività]** Il numero di attività da visualizzare
-* **[!UICONTROL Percorso]** risorsa flusso Lascia vuoto per impostazione predefinita il sito community o il gruppo community. Il percorso della risorsa del flusso identifica l&#39;origine delle attività. Il valore predefinito è vuoto.
-* **[!UICONTROL Visualizza visualizzazione]** attività utente se questa opzione è selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
-* **[!UICONTROL Visualizza visualizzazione]** Tutte le attività Se questa opzione è selezionata, la pagina delle attività includerà una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
-* **[!UICONTROL Visualizza visualizzazione]** seguente Se questa opzione è selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
+* **[!UICONTROL Numero massimo di]**
+attivitàNumero di attività da visualizzare
+* **[!UICONTROL Percorso risorsa flusso:]**
+lasciate vuoto per impostazione predefinita il sito della community o il gruppo della community. Il percorso della risorsa del flusso identifica l&#39;origine delle attività. Il valore predefinito è vuoto.
+* **[!UICONTROL Visualizza visualizzazione attività utente]**
+selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
+* **[!UICONTROL Visualizza]**
+visualizzazione Tutte le attivitàSe questa opzione è selezionata, la pagina delle attività includerà una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
+* **[!UICONTROL Visualizza]**
+visualizzazione seguente: se questa opzione è selezionata, la pagina delle attività includerà una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
 
 ## Visualizzazione seguente {#following-view}
 
-I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendario](calendar.md), [filibreria](file-library.md)[](comments.md), commenti.
+I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [calendario](calendar.md), [filelibrary](file-library.md) e [commenti](comments.md).
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](notifications.md)e/o [iscrizioni](subscriptions.md). Ogni volta che si seleziona il pulsante **Segui** , è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
+Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](notifications.md) e/o [iscrizioni](subscriptions.md). Ogni volta che il tasto **Segui** è selezionato, è possibile attivare o disattivare una selezione. La selezione `Email Subscriptions` è presente solo se configurata.
 
-Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
+Se è selezionato un metodo di seguito, il testo del pulsante diventa **Successivo**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Verrà visualizzato il pulsante **Segui** :
+Verrà visualizzato il pulsante **Segui**:
 
 * Quando si visualizza il profilo di un altro membro
 * In una pagina delle funzioni principali, ad esempio forum, QnA e blog
