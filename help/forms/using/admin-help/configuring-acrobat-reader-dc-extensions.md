@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Se gli utenti dell&#39;installazione dei moduli AEM utilizzano la funzionalità di acquisizione dei dati di Content Services (obsoleto), è consigliabile creare un ruolo con accesso in sola lettura per tali utenti.
 
-***nota **:  Adobe® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle LiveCycle®. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta[documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)sul ciclo di vita del prodotto di Adobe. Per informazioni sulla configurazione di Content Services (obsoleto), consulta[Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
+***nota **:  Adobe® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle LiveCycle®. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Vedere [ documento sul ciclo di vita del prodotto del Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Per informazioni sulla configurazione di Content Services (obsoleto), vedere [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
 
 Per acquisire i dati è necessario assegnare un ruolo utente per accedere a SampleReaderExtensionsCredential. È possibile assegnare il ruolo Amministratore trust standard, ma si consideri che questo ruolo offre agli utenti generali non amministrativi i potenti privilegi di amministratore che controllano le impostazioni PKI Trust e gestiscono le credenziali PKI, compromettendo la sicurezza dell&#39;installazione dei moduli AEM in un ambiente di produzione. È consigliabile che l&#39;amministratore di sistema dei moduli AEM crei un ruolo che conceda l&#39;accesso in sola lettura all&#39;archivio attendibili e assegni questo nuovo ruolo agli utenti non amministratori che utilizzano l&#39;acquisizione dei dati.
 
-## Creazione di un ruolo per gli utenti di acquisizione dei dati {#create-a-role-for-data-capture-users}
+## Creazione di un ruolo per gli utenti di acquisizione dati {#create-a-role-for-data-capture-users}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nuovo ruolo.
 1. Immettete il nome del ruolo (ad esempio, Utente acquisizione dati) e la descrizione nei campi appropriati, quindi fate clic su Avanti.
