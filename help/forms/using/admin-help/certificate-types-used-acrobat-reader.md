@@ -27,7 +27,7 @@ Il Visualizzatore certificati fornisce le seguenti informazioni sul certificato:
 * Periodo di validità
 * Diritti di utilizzo delle estensioni Acrobat Reader DC
 
-## Nome &quot;descrittivo&quot; del certificato {#certificate-friendly-name}
+## Nome &quot;descrittivo&quot; certificato {#certificate-friendly-name}
 
 Il nome &quot;descrittivo&quot; di un certificato di estensione Acrobat Reader DC è una stringa che descrive le proprietà del certificato, come nell&#39;esempio seguente:
 
@@ -37,13 +37,13 @@ La stringa contiene gli elementi seguenti:
 
 **Tipo di certificato:** Descrive i moduli AEM attivati dal certificato e il livello di attivazione, ad esempio ARE 2D Barcode Full. Per un elenco dei tipi di certificato disponibili, consultate la colonna Tipo nella tabella nella sezione Profili certificato.
 
-**Tipo di distribuzione:** Indica l&#39;uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, vedete la colonna Tipo di distribuzione nella tabella nella sezione Profili certificato.
+**Tipo di distribuzione:** indica l&#39;uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, vedete la colonna Tipo di distribuzione nella tabella nella sezione Profili certificato.
 
-**Versione dei diritti di utilizzo:** Descrive la versione dell&#39;algoritmo dei diritti di utilizzo per cui può essere utilizzato il certificato, ad esempio V6.1. Questa versione non indica la versione di  estensioni Acrobat o Acrobat Reader DC.
+**Versione dei diritti di utilizzo:** Descrive la versione dell&#39;algoritmo dei diritti di utilizzo per il quale può essere utilizzato il certificato, ad esempio V6.1. Questa versione non indica la versione di  estensioni Acrobat o Acrobat Reader DC.
 
-**Codice profilo:** Il codice del profilo è una breve descrizione delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, vedi la colonna Codice di profilo nella tabella nella sezione Profili di certificato.
+**Codice profilo:** il codice del profilo è una breve descrizione delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, vedi la colonna Codice di profilo nella tabella nella sezione Profili di certificato.
 
-**Numero di serie:** A ciascun certificato rilasciato dal Adobe viene assegnato un numero di serie, ad esempio 0002054.  Adobe Enterprise Support o un rappresentante commerciale  Adobe Enterprise può utilizzare questo numero di serie per tracciare il certificato in un ordine di prodotto specifico o in una relazione OEM.
+**Numero di serie:** A ogni certificato rilasciato dal Adobe viene assegnato un numero di serie, ad esempio 0002054.  Adobe Enterprise Support o un rappresentante commerciale  Adobe Enterprise può utilizzare questo numero di serie per tracciare il certificato in un ordine di prodotto specifico o in una relazione OEM.
 
 ## Profili certificato {#certificate-profiles}
 
@@ -154,13 +154,13 @@ I certificati di integrazione dei partner vengono rilasciati a  partner aziendal
 
  Adobe I certificati di utilizzo interno vengono utilizzati all&#39;interno  Adobe per supportare lo sviluppo, l&#39;integrazione, la prototipazione e la dimostrazione del software. Tali certificati sono validi per due anni dalla data del rilascio.
 
-I certificati di produzione vengono rilasciati ai clienti che hanno acquistato le estensioni Acrobat Reader DC. Tali certificati sono validi per il periodo massimo consentito dall&#39;autorità di certificazione (CA), indicato come *Massimo* nella tabella Profili certificati.
+I certificati di produzione vengono rilasciati ai clienti che hanno acquistato le estensioni Acrobat Reader DC. Questi certificati sono validi per il periodo massimo consentito dall&#39;autorità di certificazione (CA), indicato come *Max* nella tabella Profili certificati.
 
 ## Diritti di utilizzo delle estensioni Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
 Quando esaminate il certificato di estensione Acrobat Reader DC nel Visualizzatore certificati, potete selezionare l&#39;elemento dei diritti di utilizzo dalla scheda Dettagli (se configurata) per visualizzare un elenco dettagliato dei diritti di utilizzo Adobe Reader  che il certificato può abilitare. I diritti di utilizzo attivati in un particolare documento possono essere un sottoinsieme di quelli abilitati dal certificato.
 
-Se i commenti online sono richiesti in un ambiente non collaborativo, contattate  Adobe Support per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *produzione* o *valutazione*.
+Se i commenti online sono richiesti in un ambiente non collaborativo, contattate  Adobe Support per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *production* o *Evaluation*.
 
 I diritti di utilizzo delle estensioni Acrobat Reader DC consentiti sono costituiti da uno o più elementi specifici. Questi elementi sono utilizzati in diverse combinazioni per ottenere varietà di funzionalità di prodotto concesso in licenza.
 
@@ -202,7 +202,7 @@ I diritti di utilizzo delle estensioni Acrobat Reader DC consentiti sono costitu
   </tr> 
   <tr> 
    <td><p>AnnotImportExport</p></td> 
-   <td><p>Salvare annotazioni come commenti in un file di dati separato e caricare commenti da un file.</p></td> 
+   <td><p>Salvataggio di annotazioni, ad esempio commenti, in un file di dati separato e caricamento di commenti da un file.</p></td> 
   </tr> 
   <tr> 
    <td><p>Codice a barreTesto</p></td> 
