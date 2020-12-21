@@ -37,15 +37,15 @@ Oltre al suddetto approccio predefinito, è disponibile un&#39;implementazione a
 >
 >Se si utilizza l&#39;azione di invio di Forms Portal o si abilita l&#39;opzione Archivia dati nel portale moduli in un modulo adattivo, i dati del modulo vengono memorizzati AEM archivio. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati AEM repository. Al contrario, è necessario integrare le bozze e il componente di invio con un archivio protetto come il database aziendale per memorizzare le bozze e i dati dei moduli inviati.
 >
->Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
+>Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente per bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Configurazione dei servizi di bozza e di invio di Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-Nella AEM Configurazione console Web ( `https://[*host*]:[*port*]/system/console/configMgr`), fate clic per aprire la configurazione **bozza e invio di** Forms Portal in modalità di modifica.
+Nella AEM Configurazione console Web ( `https://[*host*]:[*port*]/system/console/configMgr`), fare clic per aprire **Forms Portal Draft and Submission Configuration** in modalità di modifica.
 
 Specificate i valori per le proprietà in base ai vostri requisiti come descritto di seguito:
 
-### Servizi forniti per memorizzare i dati nell’istanza di pubblicazione {#out-of-the-box-services-to-store-data-on-publish-instance}
+### I servizi forniti per memorizzare i dati nell&#39;istanza di pubblicazione {#out-of-the-box-services-to-store-data-on-publish-instance}
 
 I dati vengono replicati in modo inverso nell’istanza di creazione configurata.
 
@@ -60,7 +60,7 @@ I dati vengono replicati in modo inverso nell’istanza di creazione configurata
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>)</td> 
+   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td> 
   </tr>
   <tr>
@@ -68,7 +68,7 @@ I dati vengono replicati in modo inverso nell’istanza di creazione configurata
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Servizio di invio metadati Forms Portal (identificatore per l’invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td> 
+   <td>Servizio di invio metadati Forms Portal (identificatore per l'invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td> 
   </tr>
  </tbody>
@@ -89,7 +89,7 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>)</td> 
+   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
@@ -97,7 +97,7 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Servizio di invio metadati Forms Portal (identificatore per l’invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td> 
+   <td>Servizio di invio metadati Forms Portal (identificatore per l'invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td> 
   </tr>
  </tbody>
@@ -105,9 +105,9 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
 
 Oltre alla configurazione specificata in precedenza, fornisci informazioni sull&#39;istanza di elaborazione remota configurata.
 
-Nella AEM Configurazione console Web ( `https://[*host*]:[*port*]/system/console/configMgr`), fare clic per aprire **AEM Servizio** impostazioni DS in modalità di modifica. Nella finestra di dialogo Servizio impostazioni DS AEM, fornire informazioni sull&#39;URL del server di elaborazione, il nome utente e la password del server di elaborazione.
+In Configurazione console Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), fare clic per aprire **AEM Servizi impostazioni DS** in modalità di modifica. Nella finestra di dialogo Servizio impostazioni DS AEM, fornire informazioni sull&#39;URL del server di elaborazione, il nome utente e la password del server di elaborazione.
 
 >[!NOTE]
 >
->Viene inoltre fornita un&#39;implementazione di esempio per la memorizzazione dei dati utente in un database. Per informazioni su come configurare i servizi dati e metadati per la memorizzazione dei dati utente in un database esterno, vedere [Esempio per l’integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
+>Viene inoltre fornita un&#39;implementazione di esempio per la memorizzazione dei dati utente in un database. Per informazioni su come configurare i servizi dati e metadati per la memorizzazione dei dati utente in un database esterno, vedere [Esempio per l&#39;integrazione di bozze e invii di componenti con database](/help/forms/using/integrate-draft-submission-database.md).
 
