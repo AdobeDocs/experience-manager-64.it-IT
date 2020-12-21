@@ -25,9 +25,9 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 * [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
+## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
 
- AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle specifiche [](https://json-schema.org/draft-04/schema)v4.
+ AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le caratteristiche chiave dell&#39;utilizzo di uno schema JSON sono:
 
@@ -66,24 +66,24 @@ La mappatura degli elementi JSON con componenti per moduli adattivi è la seguen
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>number, proprietà<br /> </td> 
+   <td>number property<br /> </td> 
    <td>Campo numerico con sottotipo impostato su Mobile<br /> </td> 
   </tr> 
   <tr> 
-   <td>integer, proprietà<br /> </td> 
-   <td>Campo numerico con sottotipo impostato su numero intero<br /> </td> 
+   <td>proprietà integer<br /> </td> 
+   <td>Campo numerico con sottotipo impostato su integer<br /> </td> 
   </tr> 
   <tr> 
-   <td>boolean, proprietà<br /> </td> 
+   <td>proprietà booleana<br /> </td> 
    <td>Scambia<br /> </td> 
   </tr> 
   <tr> 
-   <td>object property<br /> </td> 
+   <td>proprietà object<br /> </td> 
    <td>Pannello<br /> </td> 
   </tr> 
   <tr> 
    <td>array, proprietà</td> 
-   <td>Pannello ripetibile con min e max uguali rispettivamente a minItems e maxItems. Sono supportati solo gli array omogenei. Pertanto, il vincolo elementi deve essere un oggetto e non un array.<br /> </td> 
+   <td>Pannello ripetibile con min e max uguali rispettivamente a minItems e maxItems. Sono supportati solo gli array omogenei. Pertanto, il vincolo degli elementi deve essere un oggetto e non un array.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -437,7 +437,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente dispon
  </tbody> 
 </table>
 
-## costrutti non supportati  {#non-supported-constructs}
+## costrutti non supportati {#non-supported-constructs}
 
 I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
