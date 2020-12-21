@@ -16,16 +16,16 @@ ht-degree: 2%
 ---
 
 
-# Stile in linea dei componenti per moduli adattivi {#inline-styling-of-adaptive-form-components}
+# Stile in linea dei componenti per modulo adattivo {#inline-styling-of-adaptive-form-components}
 
-È possibile definire l&#39;aspetto e lo stile complessivi di un modulo adattivo specificando gli stili mediante l&#39;editor [](/help/forms/using/themes.md)tema. Inoltre, potete applicare stili CSS in linea a singoli componenti di moduli adattivi e visualizzare rapidamente l&#39;anteprima delle modifiche. Gli stili in linea sostituiscono lo stile fornito nel tema.
+È possibile definire l&#39;aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando l&#39;editor di temi [editor di temi](/help/forms/using/themes.md). Inoltre, potete applicare stili CSS in linea a singoli componenti di moduli adattivi e visualizzare rapidamente l&#39;anteprima delle modifiche. Gli stili in linea sostituiscono lo stile fornito nel tema.
 
-## Applicare proprietà CSS in linea {#apply-inline-css-properties}
+## Applica proprietà CSS in linea {#apply-inline-css-properties}
 
 Per aggiungere stili in linea a un componente:
 
-1. Aprire il modulo nell&#39;editor del modulo e passare alla modalità di stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina toccate ![quadro a discesa](assets/canvas-drop-down.png) > **Stile**.
-1. Selezionate un componente nella pagina e toccate il pulsante di ![modifica](assets/edit-button.png). Le proprietà di stile vengono aperte nella barra laterale.
+1. Aprire il modulo nell&#39;editor del modulo e passare alla modalità di stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina, toccate ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Selezionate un componente nella pagina e toccate il pulsante di modifica ![pulsante di modifica](assets/edit-button.png). Le proprietà di stile vengono aperte nella barra laterale.
 
    È inoltre possibile selezionare componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura gerarchica del modulo è disponibile come oggetti modulo nella barra laterale.
 
@@ -45,7 +45,7 @@ Per aggiungere stili in linea a un componente:
 1. Allo stesso modo, potete applicare stili ad altre parti di un componente, ad esempio Widget, Didascalia e Aiuto.
 1. Toccate **Fine** per confermare le modifiche oppure **Annulla** per annullare le modifiche.
 
-## Esempio: stili in linea per un componente Campo {#example-inline-styles-for-a-field-component}
+## Esempio: stili in linea per un componente campo {#example-inline-styles-for-a-field-component}
 
 Le immagini seguenti rappresentano un campo di testo prima e dopo l’applicazione degli stili in linea.
 
@@ -78,7 +78,7 @@ Osservate la modifica nello stile della casella di testo come illustrato nell&#3
   <tr> 
    <td><p>Etichetta</p> </td> 
    <td><p>Dimensioni e posizione &gt; larghezza</p> </td> 
-   <td><p>100px</p> </td> 
+   <td><p>100 px</p> </td> 
    <td><p>Corregge la larghezza di 100 px per l'etichetta</p> </td> 
   </tr> 
   <tr> 
@@ -96,7 +96,8 @@ Osservate la modifica nello stile della casella di testo come illustrato nell&#3
  </tbody> 
 </table>
 
-![Stile casella di testo dopo l’applicazione](assets/applied-style.png)dello stile in linea **Figura:** *Componente casella di testo dopo l&#39;applicazione delle proprietà di stile in linea*
+![Stile casella di testo dopo lo stile in linea viene ](assets/applied-style.png)
+**applicatoFigura:componente casella di** *testo dopo l&#39;applicazione delle proprietà dello stile in linea*
 
 Seguendo i passaggi descritti qui sopra, è possibile selezionare e formattare altri componenti, ad esempio pannelli, pulsanti di invio e pulsanti di scelta.
 
