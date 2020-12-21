@@ -38,13 +38,13 @@ Il servizio di output consente di creare applicazioni che consentono di:
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-In genere, i modelli vengono creati utilizzando  AEM Forms Designer. Le `generatePDFOutput` e `generatePrintedOutput` le API del servizio Output consentono di convertire direttamente questi modelli in vari formati, inclusi PDF, PostScript, ZPL e PCL.
+In genere, i modelli vengono creati utilizzando  AEM Forms Designer. Le `generatePDFOutput` e `generatePrintedOutput` API del servizio Output consentono di convertire direttamente questi modelli in vari formati, inclusi PDF, PostScript, ZPL e PCL.
 
-L&#39; `generatePDFOutput` operazione genera PDF, mentre l&#39; `generatePrintedOutput` operazione genera formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio `ExpenseClaim.xdp`) o un oggetto Document che contiene il modello. Quando specificate il nome del file modello, specificate anche la directory principale del contenuto come percorso della cartella che contiene il modello. Potete specificare la radice del contenuto utilizzando il `PDFOutputOptions` parametro o `PrintedOutputOptions` . Per informazioni dettagliate sulle altre opzioni che potete specificare utilizzando questi parametri, consultate Javadoc.
+L&#39;operazione `generatePDFOutput` genera PDF, mentre l&#39;operazione `generatePrintedOutput` genera formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio `ExpenseClaim.xdp`) o un oggetto Document che contiene il modello. Quando specificate il nome del file modello, specificate anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la radice del contenuto utilizzando il parametro `PDFOutputOptions` o `PrintedOutputOptions`. Per informazioni dettagliate sulle altre opzioni che potete specificare utilizzando questi parametri, consultate Javadoc.
 
 Il secondo parametro accetta un documento XML unito al modello durante la generazione del documento di output.
 
-L&#39; `generatePDFOutput` operazione può inoltre accettare come input un modulo PDF basato su XFA e restituire come output una versione non interattiva del modulo PDF.
+L&#39;operazione `generatePDFOutput` può inoltre accettare come input un modulo PDF basato su XFA e restituire una versione non interattiva del modulo PDF come output.
 
 ## Generazione di documenti modulo non interattivi {#generating-non-interactive-form-documents}
 
