@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# API per accedere alle istanze della lettera {#apis-to-access-letter-instances}
+# API per accedere alle istanze di lettere {#apis-to-access-letter-instances}
 
 ## Panoramica {#overview}
 
@@ -42,9 +42,9 @@ Gestione corrispondenza espone le API per recuperare le istanze di lettere trami
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L&#39;API seguente trova le istanze della lettera in base all&#39;oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce l&#39;elenco degli oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) , che possono essere utilizzati per l&#39;estrazione di informazioni aggiuntive sull&#39;istanza letter
+L&#39;API seguente trova le istanze della lettera in base all&#39;oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce l&#39;elenco degli oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), che possono essere utilizzati per estrarre informazioni aggiuntive sull&#39;istanza della lettera
 
-**Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
+**Sintassi**:  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table> 
  <tbody> 
@@ -59,9 +59,9 @@ L&#39;API seguente trova le istanze della lettera in base all&#39;oggetto query 
  </tbody> 
 </table>
 
-#### Esempio 1: Recupera tutte le istanze di lettere di tipo INVIATO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Esempio 1: Recupera tutte le istanze di lettere di tipo SUBMITTED {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, modificare `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
+Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, modificare la variabile `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -78,7 +78,7 @@ query.addStatement(statementForInstanceType);
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-#### Esempio 2: recupera tutte le istanze di lettere inviate da un utente e da un tipo di istanza di lettera è DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
+#### Esempio 2: tutte le istanze di lettere inviate da un utente e da un tipo di istanza di lettera sono DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
 Il codice seguente contiene più istruzioni nella stessa query per filtrare i risultati in base a criteri diversi, come l&#39;istanza di lettera inviata (attributo inviato da) da un utente e il tipo di letterInstanceType è DRAFT.
 
@@ -122,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Controlla se esiste un&#39;istanza Letter con il nome specificato
 
-**Sintassi**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Sintassi**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parametro** | **Descrizione** |
 |---|---|
@@ -135,7 +135,7 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Apertura delle istanze di lettere {#opening-letter-instances}
+## Apertura di istanze di lettere {#opening-letter-instances}
 
 L&#39;istanza Lettera può essere di tipo Inviato o Bozza. L&#39;apertura di entrambi i tipi di istanza della lettera mostra comportamenti diversi:
 
@@ -152,7 +152,7 @@ L’interfaccia utente CCR supporta il parametro cmLetterInstanceId, che può es
 >
 >Non è necessario specificare cmLetterId o cmLetterName/State/Version al momento del ricaricamento di una corrispondenza, poiché i dati inviati contengono già tutti i dettagli sulla corrispondenza che viene ricaricata. RandomNo è utilizzato per evitare problemi nella cache del browser, è possibile utilizzare timestamp come numero casuale.
 
-### Apertura dell&#39;istanza della lettera inviata {#opening-submitted-letter-instance}
+### Apertura dell&#39;istanza di lettera inviata {#opening-submitted-letter-instance}
 
 Il PDF inviato può essere aperto direttamente utilizzando l&#39;ID istanza lettera:
 
