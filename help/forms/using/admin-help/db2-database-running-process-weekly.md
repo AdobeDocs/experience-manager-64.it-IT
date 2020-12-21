@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Database DB2: Esecuzione settimanale di un processo{#db-database-running-a-process-weekly}
+# Database DB2: Esecuzione di un processo settimanale{#db-database-running-a-process-weekly}
 
 Se il database DB2 del modulo AEM inizia a funzionare lentamente, l&#39;esecuzione settimanale del seguente processo può migliorare le prestazioni:
 
@@ -26,7 +26,7 @@ Se il database DB2 del modulo AEM inizia a funzionare lentamente, l&#39;esecuzio
 
    (Windows) Selezionate Start > Programmi > IBM DB2 > Strumenti di amministrazione generale > Centro di controllo.
 
-   (Linux e UNIX) Da un prompt dei comandi, digitare il `db2jcc` comando.
+   (Linux e UNIX) Da un prompt dei comandi, digitare il comando `db2jcc`.
 
 1. Nella struttura degli oggetti DB2 Control Center fare clic su Tutti i database.
 1. Fare clic sul database creato per AEM moduli e fare clic sulla cartella Tabelle.
