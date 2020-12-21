@@ -40,24 +40,24 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 >
 >I modelli di gestione della corrispondenza non vi obbligano a creare nomi univoci al momento della creazione dei segnaposto. Se create due segnaposto con lo stesso nome, ad esempio un testo e una condizione, e li utilizzate entrambi in un modello di lettera, i valori dell&#39;ultimo segnaposto inserito vengono utilizzati per entrambi i segnaposto. Se due segnaposto hanno lo stesso nome, i loro tipi vengono confrontati. Se i tipi sono diversi, il relativo tipo diventa Stringa. All’interno di un modulo, tuttavia, non è possibile creare più segnaposto con lo stesso nome.
 
-### Create text {#create-text}
+### Crea testo {#create-text}
 
-1. Selezionare **Forms** > Frammenti **** documento.
+1. Selezionare **Forms** > **Frammenti documento**.
 
-1. Toccate **Crea** > **Testo.** In alternativa, selezionate una risorsa di testo e toccate **Modifica**.
+1. Toccate **Crea** > **Testo.** In alternativa, selezionate una risorsa di testo e toccate  **Modifica**.
 1. Specificate le seguenti informazioni per il testo:
 
    * **Titolo: (Facoltativo)** Inserite il titolo della risorsa di testo. I titoli non devono essere univoci e possono contenere caratteri speciali e caratteri non inglesi. I testi sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
-   * **Nome:** Nome univoco della risorsa di testo. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **Nome:** nome univoco della risorsa di testo. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
    * **Descrizione**: Digitate una descrizione della risorsa.
    * **Dizionario** dati: Facoltativamente, selezionare il dizionario dati in cui eseguire la mappatura. Questo attributo consente di aggiungere riferimenti agli elementi del dizionario dati nella risorsa di testo.
    * **Tag**: Se necessario, per creare un tag personalizzato immettete un valore nel campo di testo e premete Invio. Potete visualizzare il tag sotto il campo di testo dei tag. Quando salvate questo testo, vengono creati anche i nuovi tag aggiunti.
 
-1. Toccate **Avanti**. Gestione corrispondenza visualizza la pagina Editor in cui è possibile aggiungere al testo paragrafi di testo ed elementi di dati.
+1. Toccare **Next**. Gestione corrispondenza visualizza la pagina Editor in cui è possibile aggiungere al testo paragrafi di testo ed elementi di dati.
 
    Il correttore ortografico predefinito nel browser esegue il controllo ortografia nell&#39;editor di testo. Per gestire il controllo ortografico e grammaticale, potete modificare le impostazioni del correttore ortografico del browser oppure installare plug-in/addons del browser per il controllo ortografico e grammaticale.
 
-   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;Editor [di](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) testo, vedere Scelte rapide da tastiera di Gestione della corrispondenza.
+   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera [Editor di testo](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) nelle scelte rapide da tastiera di Gestione della corrispondenza.
 
 1. Viene aperto un editor di testo e inserite il testo. Utilizzate la barra degli strumenti nella parte superiore della pagina per formattare il testo, inserire condizioni, collegamenti e interruzioni di pagina.
 
@@ -66,7 +66,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    **Figura:** *Barra degli strumenti*
 
-   * **Collegamento**: Inserisci collegamento ipertestuale nel testo. Toccate **[!UICONTROL Collegamento]**, specificate il collegamento nel campo **[!UICONTROL URL]** , rimuovete il nome oggetto predefinito dal campo Testo **** Alt e toccate ![Salva](assets/save_icon.svg).
+   * **Collegamento**: Inserisci collegamento ipertestuale nel testo. Toccate **[!UICONTROL Link]**, specificate il collegamento nel campo **[!UICONTROL URL]**, rimuovete il nome dell&#39;oggetto predefinito dal campo **[!UICONTROL Alt Text]** e toccate ![Salva](assets/save_icon.svg).
    * **Ripeti**: Ripete la stampa dell&#39;elemento raccolta nel dizionario dati utilizzando un delimitatore.
    * **Condizione**: Toccate per inserire una condizione. Inserisci testo in base alla condizione. Se la condizione è true, il testo è visibile nella lettera, altrimenti non è visibile.
    * **Aggiungi descrizione**: Aggiungete un’annotazione a un elemento di testo. Si tratta di metadati visibili all’autore, ma non a una parte della lettera creata.
@@ -80,7 +80,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    ![Barra degli strumenti Paragrafo](assets/fonteditingtoolbar.png)
 
-   **Figura:** *Barra degli strumenti Paragrafo*
+   **Figura:Barra degli strumenti** *Paragrafo*
 
    ![Allineamento, barra degli strumenti](assets/paragrapheditingtoolbar.png)
 
@@ -92,7 +92,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
 1. Per riutilizzare uno o più paragrafi di testo esistenti in un’altra applicazione, ad esempio da pagine MS Word o HTML, copiate e incollate il testo nell’editor di testo. La formattazione del testo copiato viene mantenuta nell’editor di testo.
 
-   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, ad esempio:
+   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, come segue:
 
    ![pastetextmspada](assets/pastetextmsword.png)
 
@@ -112,15 +112,15 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    ![caratteri speciali](assets/specialcharacters.png)
 
-   La gestione della corrispondenza è dotata di supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere il supporto per più o meno caratteri speciali personalizzati in base alla personalizzazione](/help/forms/using/custom-special-characters.md).
+   La gestione della corrispondenza è dotata di supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere supporto per più/personalizzare caratteri speciali mediante la personalizzazione](/help/forms/using/custom-special-characters.md).
 
 1. Per evidenziare\enfatizzare parti di testo in un modulo in linea modificabile, selezionate il testo e toccate Colore evidenziazione.
 
    ![textbackground, colorata](assets/textbackgroundcolorapplied.png)
 
-   È possibile toccare direttamente un colore di base **`[A]`** presente nella palette Colori base oppure toccare **Seleziona** dopo aver utilizzato il cursore **`[B]`** per scegliere l&#39;ombreggiatura appropriata del colore.
+   È possibile toccare direttamente un colore di base **`[A]`** presente nella palette Colori base oppure toccare **Seleziona** dopo aver utilizzato il cursore **`[B]`** per scegliere la tonalità appropriata del colore.
 
-   Facoltativamente, potete anche passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriata **`[C]`** per creare il colore preciso, quindi toccare Seleziona **`[D]`** per applicare il colore per evidenziare il testo.
+   Facoltativamente, è anche possibile passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione **`[C]`** appropriata per creare il colore preciso, quindi toccare Seleziona **`[D]`** per applicare il colore per evidenziare il testo.
 
    ![textbackground, colore](assets/textbackgroundcolor.png)
 
@@ -128,18 +128,18 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    A:
 
-   * Aggiungete un elemento del dizionario dati nel testo, selezionate un elemento dati dall&#39;elenco e toccate Inserisci ( ![inserire](assets/insert.png)). Se selezionate Protetto, l’elemento del dizionario dati è di sola lettura e viene visualizzato nell’editor di lettere, ma non nell’interfaccia utente Crea corrispondenza o in Creazione corrispondenza.
+   * Aggiungete un elemento del dizionario dati nel testo, selezionate un elemento dati dall&#39;elenco e toccate Inserisci ( ![insert](assets/insert.png)). Se selezionate Protetto, l’elemento del dizionario dati è di sola lettura e viene visualizzato nell’editor di lettere, ma non nell’interfaccia utente Crea corrispondenza o in Creazione corrispondenza.
    * Aggiungi un elemento segnaposto nel testo, nel pannello Elementi dati tocca Crea nuovo, immetti i dettagli per il nuovo elemento dati e tocca Crea per aggiungere il nuovo elemento all&#39;elenco. Il nuovo segnaposto può essere inserito nel testo allo stesso modo dell&#39;elemento dizionario dati. Per modificare un segnaposto, selezionate un segnaposto e toccate Modifica.
 
    ![Elementi Placeholder](assets/placeholder_elements_in_xmldata.png)
 
-   **Figura:** *Elementi segnaposto come specificato nel file di dati di esempio di un dizionario dati*
+   **Figura:elementi** *segnaposto come specificato nel file di dati di esempio di un dizionario dati*
 
    ![Elementi segnaposto nella lettera](assets/placeholder_elements_in_text.png)
 
-   **Figura:** *Valori degli elementi segnaposto nella vista CCR popolati dalle variabili del dizionario dati come specificato nel file di dati di esempio*
+   **Figura:valori degli elementi** *segnaposto nella vista CCR popolata dalle variabili del dizionario dati come specificato nel file di dati di esempio*
 
-1. È possibile utilizzare le condizioni in linea e ripetere per rendere la lettera altamente contestuale e ben strutturata. Per ulteriori informazioni sulle condizioni in linea e sulla ripetizione, vedere Condizioni in [linea e ripetere in lettere](/help/forms/using/cm-inline-condition.md).
+1. È possibile utilizzare le condizioni in linea e ripetere per rendere la lettera altamente contestuale e ben strutturata. Per ulteriori informazioni sulle condizioni in linea e sulla ripetizione, vedere [Condizioni in linea e ripetere in lettere](/help/forms/using/cm-inline-condition.md).
 1. Toccate **Salva**.
 
 #### Ricerca e sostituzione del testo {#searching-and-replacing-text}
@@ -148,7 +148,7 @@ Quando lavorate con elementi di testo contenenti un grande corpo di testo, dovet
 
 La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi stringa di testo in un elemento di testo. La funzione include anche una potente ricerca di espressioni regolari.
 
-#### Ricerca di testo in un modulo di testo {#to-search-text-in-a-text-module}
+#### Per cercare il testo in un modulo di testo {#to-search-text-in-a-text-module}
 
 1. Aprite il modulo di testo nell’editor di testo.
 
@@ -157,7 +157,7 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
 1. Per cercare l’istanza successiva del testo, premere nuovamente Trova.
 
-   Se si continua a premere il pulsante Trova, la ricerca continua verso il basso nella pagina. Dopo aver trovato l’ultima istanza del testo, il messaggio **Raggiunto fine modulo** indica che non sono stati trovati altri risultati di ricerca.
+   Se si continua a premere il pulsante Trova, la ricerca continua verso il basso nella pagina. Dopo aver trovato l&#39;ultima istanza del testo, il messaggio **Raggiunto la fine del modulo** indica che non sono stati trovati altri risultati di ricerca.
 
    Tuttavia, se nel modulo di testo non viene trovata alcuna istanza del testo di ricerca, il messaggio visualizzato è: **Corrispondenza non trovata**.
 
@@ -165,17 +165,17 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
 #### Opzioni di ricerca {#search-options}
 
-**Maiuscole/minuscole:** La ricerca restituisce i risultati solo con lo stesso caso.
+**Maiuscole/minuscole:** la ricerca restituisce risultati solo con lo stesso maiuscole e minuscole.
 
-**Parola intera:** La ricerca restituisce solo parole intere.
+**Parola intera:** Ricerca restituisce solo parole intere.
 
-**Nota:** Se si immettono caratteri speciali nella casella di testo Trova, l&#39;opzione Parola intera è disabilitata.
+**Nota:** se nella casella di testo Trova immettete caratteri speciali, l&#39;opzione Parola intera viene disattivata.
 
-**Reg ex:** Consente di effettuare ricerche utilizzando espressioni regolari. Ad esempio, la seguente espressione regolare cerca gli indirizzi e-mail in un modulo di testo:
+**Reg ex:** ricerca utilizzando espressioni regolari. Ad esempio, la seguente espressione regolare cerca gli indirizzi e-mail in un modulo di testo:
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
-#### Ricerca e sostituzione del testo in un modulo di testo {#to-search-and-replace-text-in-a-text-module}
+#### Per cercare e sostituire il testo in un modulo di testo {#to-search-and-replace-text-in-a-text-module}
 
 1. Aprite il modulo di testo nell’editor di testo.
 
@@ -190,22 +190,22 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
    Utilizzate l&#39;opzione Sostituisci tutto per sostituire tutte le istanze di un testo nel modulo di testo. Quando si utilizza &quot;, il numero di sostituzioni viene visualizzato come messaggio nella finestra di dialogo Trova e sostituisci.
 
-#### Best practice/suggerimenti e trucchi per i moduli di testo {#best-practices-tips-and-tricks-for-text-modules}
+#### Best practice/suggerimenti e trucchi per moduli di testo {#best-practices-tips-and-tricks-for-text-modules}
 
 * Utilizzate una convenzione di denominazione coerente per evitare duplicazioni.
 * Utilizzare il binding appropriato del dizionario dati nei moduli di testo.
 * Quando si modifica una risorsa di testo si applicano le regole seguenti quando si utilizza l’Editor di testo:
 
    * **Aggiunta di variabile:** Consentita
-   * **Rimozione della variabile:** Consentita
-   * **Aggiornamento delle proprietà:** Consentita
-   * **Modifica del dizionario dati:** Consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato. Non è possibile modificare il dizionario dati in fase di aggiornamento.
+   * **Rimozione di variabile:** Consentita
+   * **Aggiornamento delle proprietà:** Consentito
+   * **Modifica del dizionario dati:** consentita fino a quando non viene utilizzato l&#39;elemento del dizionario dati. Non è possibile modificare il dizionario dati in fase di aggiornamento.
 
 ## Elenco {#list}
 
 Un elenco è un gruppo di frammenti di documento, inclusi testo, (altri) elenchi, condizioni e immagini. L&#39;ordine degli elementi elenco può essere fisso o modificabile. Durante la creazione di una lettera, è possibile utilizzare alcuni o tutti gli elementi dell&#39;elenco per replicare un pattern di elementi riutilizzabili. Gli elenchi si comportano fondamentalmente come destinazioni che possono essere nidificate all&#39;interno di altri target.
 
-### Elenchi di implementazione {#implementing-lists}
+### Implementazione di elenchi {#implementing-lists}
 
 Gli elenchi di implementazione si articolano in due fasi:
 
@@ -225,19 +225,19 @@ Un elenco è un gruppo di contenuti correlati che possono essere utilizzati in u
 * **Letterato**: Un elenco alfabetico con la scelta di lettere minuscole (a,b,...) e maiuscole (A,B,...).
 * **Personalizzato**: Potete creare qualsiasi tipo di carattere Numerato/Letterato e i valori di prefisso e suffisso desiderati.
 
-1. Selezionare **Forms** > Frammenti **** documento.
+1. Selezionare **Forms** > **Frammenti documento**.
 
-1. Selezionate **Crea** > **Elenco**.
+1. Selezionare **Crea** > **Elenco**.
 
 1. Specificate le seguenti informazioni per l&#39;elenco:
 
    * **Titolo (facoltativo): Immettere** il titolo dell&#39;elenco. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Gli elenchi sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
-   * **Nome:** Nome univoco dell&#39;elenco. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente con il valore nel campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **Nome:** nome univoco dell&#39;elenco. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente con il valore nel campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
    * **Descrizione (facoltativo)**: Digitate una descrizione della risorsa.
    * **Dizionario dati (facoltativo)**: Facoltativamente, selezionare il dizionario dati a cui connettersi. È possibile aggiungere all&#39;elenco solo le risorse che utilizzano lo stesso dizionario dati dell&#39;elenco o che non dispongono di un dizionario dati. L&#39;assegnazione di un dizionario dati a un elenco facilita la ricerca dell&#39;elenco da parte dell&#39;utente che crea un modello di lettera.
    * **Tag (facoltativo)**: Selezionare i tag da applicare. Potete anche digitare il nome di un nuovo tag e crearlo. (Il nuovo tag viene creato quando toccate **Salva**.)
 
-1. Toccate **Avanti**.
+1. Toccare **Next**.
 1. Toccate **Aggiungi risorsa**.
 1. Per aggiungere risorse all’elenco, selezionatele nella pagina Seleziona risorse e toccate **Fine**.
 
@@ -245,7 +245,7 @@ Un elenco è un gruppo di contenuti correlati che possono essere utilizzati in u
 
 1. Le risorse vengono aggiunte alla pagina Elementi elenco.
 
-   Per modificare l’ordine delle risorse nell’elenco, toccate e tenete premuto l’icona delle frecce ( ![libretto](assets/dragndrop.png) ) e trascinate. Quando l&#39;utente apre un modello di lettera nell&#39;interfaccia utente Crea corrispondenza, il contenuto viene assemblato nell&#39;ordine definito qui.
+   Per modificare l&#39;ordine delle risorse nell&#39;elenco, toccate e tenete premuto l&#39;icona delle frecce ( ![dragndrop](assets/dragndrop.png) ) e trascinate. Quando l&#39;utente apre un modello di lettera nell&#39;interfaccia utente Crea corrispondenza, il contenuto viene assemblato nell&#39;ordine definito qui.
 
    ![Riordinare e configurare le risorse in un elenco](assets/listitems.png)
 
@@ -259,14 +259,14 @@ Un elenco è un gruppo di contenuti correlati che possono essere utilizzati in u
 
 1. Potete selezionare le seguenti opzioni per specificare il comportamento di ciascuna risorsa dell&#39;elenco in fase di esecuzione:
 
-   * **Modificabile:** Quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Questa opzione non è disponibile per i moduli Elenco e Immagine.
-   * **Obbligatorio:** Quando questa opzione è selezionata, il contenuto è richiesto nell&#39;interfaccia utente Crea corrispondenza.
-   * **Selezionato:** Quando questa opzione è selezionata, il contenuto viene preselezionato nell&#39;interfaccia utente Crea corrispondenza.
-   * **Skip Style:** Quando questa opzione è selezionata, il contenuto salta gli elenchi puntati e numerati nell&#39;interfaccia utente Crea corrispondenza. Questa opzione non è disponibile per i moduli immagine. Inoltre, tra Skip Style, Compound e Ignore List Style (Ignora stile elenco) è possibile applicare a un modulo solo una delle opzioni disponibili. Una di queste opzioni può essere utilizzata per un modulo quando si seleziona Aggiungi punti elenco per un modulo.
-   * **Rientro:** È possibile modificare il livello di rientro di ciascun modulo/contenuto selezionato come parte dell’Elenco. Il rientro è specificato in termini di Livelli (a partire da zero), in modo che ogni livello di rientro corrisponda a una spaziatura di 36 punti.
-   * **Composto:** Quando è selezionata, la numerazione composta viene applicata come combinazione dello stile dell&#39;Elenco più esterno (primario) e del proprio stile. La numerazione composta di questo elenco nidificato si basa sull’ordine in cui questo elenco nidificato viene visualizzato nell’elenco esterno.
-   * **Ignora stile elenco:** Se l&#39;opzione Numerazione composta è deselezionata, l&#39;opzione Ignora stile elenco è attivata. Questa selezione ignora lo stile dell&#39;Elenco nidificato e la numerazione continua dall&#39;Elenco esterno. Pertanto, i moduli dell’elenco nidificato vengono trattati come parte dell’elenco esterno stesso, a prescindere dagli stili specificati nell’elenco nidificato. Se per un elenco nidificato è deselezionata l’opzione Ignora stile elenco, i moduli che fanno parte di tale elenco nidificato hanno un proprio stile di numerazione.
-   * **Mantieni con successivo:** Imposta l&#39;interruzione di pagina per le risorse contenute in un elenco. Se impostate la proprietà Mantieni con successivo di una risorsa di un elenco su **Attivato**, la risorsa e la risorsa successiva restano sulla stessa pagina. Ciò implica che il contenuto della risorsa selezionata e della risorsa successiva non verrà suddiviso tra le pagine.
+   * **Modificabile:** Quando questa opzione è selezionata, il contenuto può essere modificato nell&#39;interfaccia utente Crea corrispondenza. Questa opzione non è disponibile per i moduli Elenco e Immagine.
+   * **Obbligatorio:** quando questa opzione è selezionata, il contenuto è richiesto nell&#39;interfaccia utente Crea corrispondenza.
+   * **Selezionato:** quando questa opzione è selezionata, il contenuto è preselezionato nell&#39;interfaccia utente Crea corrispondenza.
+   * **Skip Style:** quando questa opzione è selezionata, il contenuto salta gli elenchi puntati e la numerazione nell&#39;interfaccia utente Crea corrispondenza. Questa opzione non è disponibile per i moduli immagine. Inoltre, tra Skip Style, Compound e Ignore List Style (Ignora stile elenco) è possibile applicare a un modulo solo una delle opzioni disponibili. Una di queste opzioni può essere utilizzata per un modulo quando si seleziona Aggiungi punti elenco per un modulo.
+   * **Rientro:** potete modificare il livello di rientro di ciascun modulo/contenuto selezionato come parte dell’elenco. Il rientro è specificato in termini di Livelli (a partire da zero), in modo che ogni livello di rientro corrisponda a una spaziatura di 36 punti.
+   * **Composto:** se è selezionata, la numerazione composta viene applicata come combinazione dello stile dell&#39;Elenco esterno (primario) e del proprio stile. La numerazione composta di questo elenco nidificato si basa sull’ordine in cui questo elenco nidificato viene visualizzato nell’elenco esterno.
+   * **Ignora stile elenco:** se l&#39;opzione Numerazione composta è deselezionata, l&#39;opzione Ignora stile elenco è attivata. Questa selezione ignora lo stile dell&#39;Elenco nidificato e la numerazione continua dall&#39;Elenco esterno. Pertanto, i moduli dell’elenco nidificato vengono trattati come parte dell’elenco esterno stesso, a prescindere dagli stili specificati nell’elenco nidificato. Se per un elenco nidificato è deselezionata l’opzione Ignora stile elenco, i moduli che fanno parte di tale elenco nidificato hanno un proprio stile di numerazione.
+   * **Mantieni con successivo:** imposta l&#39;interruzione di pagina per le risorse contenute in un elenco. Se impostate la proprietà Mantieni con successivo di una risorsa di un elenco su **On**, la risorsa e la risorsa successiva restano sulla stessa pagina. Ciò implica che il contenuto della risorsa selezionata e della risorsa successiva non verrà suddiviso tra le pagine.
 
 1. Toccate **Salva**.
 
@@ -285,9 +285,9 @@ Le condizioni consentono di definire il contenuto da includere al momento della 
 
 In base alle opzioni selezionate, viene valutata solo la prima espressione che si è rivelata vera, in base alla variabile di condizione corrente o a tutte le condizioni. Quando si compila la lettera in Crea corrispondenza (CCR), le condizioni si comportano come &quot;caselle bianche&quot;. Se una condizione restituisce un elenco, vengono generati tutti gli elementi obbligatori e preselezionati dell&#39;elenco. Se uno di questi elementi è costituito da condizioni o da elenchi stessi, il relativo contenuto viene anch’esso riprodotto in ordine di profondità, dall’alto verso il basso, come elenco semplice di testo e contenuti immagine. I risultati delle condizioni possono essere di qualsiasi tipo (testo, elenco, condizione o immagine).
 
-### Condizioni di esecuzione {#implementing-conditions}
+### Condizioni di implementazione {#implementing-conditions}
 
-L&#39;Editor di condizione viene fornito con un&#39;interfaccia utente di Generatore [di](/help/forms/using/expression-builder.md) espressioni che supporta la creazione di espressioni utilizzando più segnaposto ed elementi del Dizionario dati. In tali espressioni è possibile utilizzare operandi comuni e funzioni locali/globali. Ciascuna espressione può essere associata ad alcuni contenuti ed eventualmente potrebbe essere presente una sezione predefinita se nessuna delle espressioni restituisce true. Tutte le espressioni vengono valutate nella sequenza in cui sono definite e le prime espressioni che restituiscono true vengono selezionate e il contenuto associato viene restituito da tale modulo condizionale.
+L&#39;Editor condizioni è dotato di un&#39;interfaccia utente [Generatore di espressioni](/help/forms/using/expression-builder.md) che supporta la creazione di espressioni utilizzando sia segnaposto multipli che elementi del Dizionario dati. In tali espressioni è possibile utilizzare operandi comuni e funzioni locali/globali. Ciascuna espressione può essere associata ad alcuni contenuti ed eventualmente potrebbe essere presente una sezione predefinita se nessuna delle espressioni restituisce true. Tutte le espressioni vengono valutate nella sequenza in cui sono definite e le prime espressioni che restituiscono true vengono selezionate e il contenuto associato viene restituito da tale modulo condizionale.
 
 Ad esempio, se il testo di termini e condizioni in una lettera varia a seconda dello stato in cui si trova il cliente e il dizionario dati contiene un elemento denominato &quot;state&quot;, è possibile aggiungere la condizione come segue:\
 ・ stato = NY, selezionare il paragrafo di testo T&amp;C_NY\
@@ -298,17 +298,17 @@ L&#39;editor Condizione consente di specificare una condizione predefinita. Se i
 
 ### Creare una condizione {#create-a-condition}
 
-1. Selezionare **Forms** > Frammenti **** documento.
+1. Selezionare **Forms** > **Frammenti documento**.
 1. Selezionare **Crea > Condizione**.
 1. Specificate le seguenti informazioni per l&#39;elenco:
 
-   * **Titolo (facoltativo):** Inserire il titolo della condizione. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Le condizioni sono indicate dai titoli (quando disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
-   * **Nome:** Nome univoco della condizione. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **Titolo (facoltativo):** inserire il titolo della condizione. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Le condizioni sono indicate dai titoli (quando disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
+   * **Nome:** nome univoco della condizione. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
    * **Descrizione (facoltativo)** Digitare una descrizione della condizione.
    * **Dizionario dati (facoltativo)**: Facoltativamente, selezionare il dizionario dati a cui connettersi. È possibile aggiungere all&#39;elenco solo le risorse che utilizzano lo stesso dizionario dati della condizione, o risorse a cui non è assegnato alcun dizionario dati. L&#39;assegnazione di un dizionario dati a un elenco facilita la ricerca della condizione appropriata da parte dell&#39;utente che crea un modello di lettera.
    * **Tag (facoltativo)**: Facoltativamente, selezionare i tag da applicare. Potete anche digitare il nome di un nuovo tag e crearlo. (Il nuovo tag viene creato quando toccate **Salva**.)
 
-1. Toccate **Avanti**.
+1. Toccare **Next**.
 1. Toccate **Aggiungi risorsa**.
 1. Per aggiungere una risorsa alla condizione, selezionatela nella pagina Seleziona risorse e toccate **Fine**. Le risorse vengono aggiunte al riquadro Espressione.
 1. Potete selezionare le seguenti opzioni per specificare il comportamento della condizione in fase di esecuzione:
@@ -316,15 +316,15 @@ L&#39;editor Condizione consente di specificare una condizione predefinita. Se i
    * **Disattiva valutazione di più risultati\Abilita valutazione** di più risultati: Quando questa opzione è attivata (viene visualizzata come &quot;Abilita multipla...&quot;), tutte le condizioni vengono valutate e il risultato è la somma di tutte le condizioni vere. Se questa opzione è disattivata (viene visualizzata come &quot;Disattiva multipla...&quot;), viene valutata solo la prima condizione che risulta vera e diventa l&#39;output della condizione.
    * **Interruzione** pagina: Selezionare questa opzione ( ![interruzione](assets/break.png)) per aggiungere un&#39;interruzione di pagina tra i moduli delle condizioni. Se questa opzione non è selezionata ( ![nobreak](assets/nobreak.png)), se una condizione è in eccesso sulla pagina successiva, l&#39;intera condizione viene spostata sulla pagina successiva invece di interrompere la pagina tra la condizione.
 
-1. Per modificare l’ordine delle risorse all’interno della condizione, toccate e tenete premuto l’icona delle frecce ( ![dragndrop](assets/dragndrop.png) ) e trascinate. Quando l&#39;utente apre un modello di lettera nell&#39;interfaccia utente Crea corrispondenza, il contenuto viene assemblato nell&#39;ordine definito qui.
+1. Per modificare l&#39;ordine delle risorse all&#39;interno della condizione, toccate e tenete premuto l&#39;icona delle frecce ( ![dragndrop](assets/dragndrop.png) ) e trascinate. Quando l&#39;utente apre un modello di lettera nell&#39;interfaccia utente Crea corrispondenza, il contenuto viene assemblato nell&#39;ordine definito qui.
 1. Toccate **Elimina** per eliminare la riga. Se toccate Elimina per la riga predefinita, vengono cancellate solo le informazioni sulla risorsa.
 1. Toccate **Copia** per duplicare una riga.
-1. Toccate **Modifica** per modificare la risorsa o l’espressione.
+1. Toccate **Modifica** per modificare la risorsa o l&#39;espressione.
 
    Ulteriori informazioni:
 
    * Per aggiornare la risorsa, toccate l’icona della cartella sotto la colonna Risorsa.
-   * Per aprire il Generatore di espressioni per inserire un&#39;espressione, toccate l&#39;icona della cartella sotto la colonna Espressione. Per ulteriori informazioni su Generatore di espressioni, consulta [Generatore](/help/forms/using/expression-builder.md)di espressioni.
+   * Per aprire il Generatore di espressioni per inserire un&#39;espressione, toccate l&#39;icona della cartella sotto la colonna Espressione. Per ulteriori informazioni su Generatore di espressioni, vedere [Generatore di espressioni](/help/forms/using/expression-builder.md).
 
 ### Best practice/suggerimenti e trucchi {#best-practices-tips-and-tricks-1}
 
@@ -334,9 +334,9 @@ L&#39;editor Condizione consente di specificare una condizione predefinita. Se i
 * Quando si utilizza Editor condizione per modificare una condizione si applicano le regole seguenti:
 
    * **Aggiunta di variabile:** Consentita
-   * **Rimozione della variabile:** Consentita
-   * **Aggiornamento delle proprietà:** Consentita
-   * **Modifica del dizionario dati:** Consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato.
+   * **Rimozione di variabile:** Consentita
+   * **Aggiornamento delle proprietà:** Consentito
+   * **Modifica del dizionario dati:** consentita fino a quando non viene utilizzato l&#39;elemento del dizionario dati.
 
 ## Frammenti di layout {#layoutfragments}
 
@@ -346,7 +346,7 @@ Uno o più frammenti di layout possono formare parti di una lettera e definire i
 
 Un caso comune è quello di individuare pattern di layout riutilizzabili in Lettere e creare frammenti di layout per tali pattern. Ad esempio, la formula introduttiva, l&#39;indirizzo e la parte oggetto della lettera, che vengono visualizzate nello stesso ordine con più lettere. Un altro esempio potrebbe essere una tabella con un numero di righe e colonne simile, utilizzata in più lettere.
 
-È possibile creare un frammento di layout basato su un XDP esistente. Un frammento di layout può essere composto da campi e aree di destinazione o da una o più tabelle. Le tabelle di un layout possono essere statiche o dinamiche. Un file XDP viene creato in Designer e [caricato in  AEM Forms](/help/forms/using/import-export-forms-templates.md). Un XDP può formare la struttura di un frammento di layout o di una lettera. Ulteriori informazioni su [Layout Design](/help/forms/using/layout-design-details.md).
+È possibile creare un frammento di layout basato su un XDP esistente. Un frammento di layout può essere composto da campi e aree di destinazione o da una o più tabelle. Le tabelle di un layout possono essere statiche o dinamiche. Viene creato un file XDP in Designer e [caricato in  AEM Forms](/help/forms/using/import-export-forms-templates.md). Un XDP può formare la struttura di un frammento di layout o di una lettera. Ulteriori informazioni su [Layout Design](/help/forms/using/layout-design-details.md).
 
 L’utilizzo di frammenti associati alle aree di destinazione consente di modificare la lettera al momento dell’authoring. È possibile creare un frammento di layout con dimensioni diverse e associare il frammento appropriato all&#39;area di destinazione. I frammenti di layout consentono inoltre di personalizzare alcune proprietà della tabella:
 
@@ -387,12 +387,12 @@ Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei
 
 ### Creazione di un frammento di layout {#creating-a-layout-fragment}
 
-1. Selezionare **Crea** > Frammento di **layout**.
-1. Gestione corrispondenza visualizza gli XDP disponibili. Selezionare l&#39;XDP sul quale si desidera basare il frammento di layout e toccare **Avanti**.
+1. Selezionare **Crea** > **Frammento di layout**.
+1. Gestione corrispondenza visualizza gli XDP disponibili. Selezionare l&#39;XDP su cui si desidera basare il frammento di layout e toccare **Next**.
 1. Specificate le seguenti informazioni per il layout:
 
-   * **Titolo (facoltativo):** Immettere il titolo per il frammento di layout. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. I frammenti di layout sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
-   * **Nome:** Nome univoco per il frammento di layout. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo. Questo nome viene visualizzato nell’elenco dell’interfaccia utente Gestisci risorse.
+   * **Titolo (facoltativo):** inserire il titolo del frammento di layout. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. I frammenti di layout sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà delle risorse.
+   * **Nome:** nome univoco per il frammento di layout. Non sono disponibili due risorse (testo, condizione o elenco) in uno stato con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo. Questo nome viene visualizzato nell’elenco dell’interfaccia utente Gestisci risorse.
    * **Descrizione (facoltativo)**: Descrizione visualizzata nell’elenco nell’interfaccia utente Gestisci risorse.
    * **Tag (facoltativo)**: Facoltativamente, selezionare i tag da applicare alla condizione. Potete anche digitare il nome di un nuovo tag e crearlo.
 
@@ -425,13 +425,13 @@ Durante la creazione di aree di destinazione in Designer, è possibile impostare
 
 Per impostare il binding predefinito:
 
-1. In Designer, toccare **Strumenti** > **Opzioni** > **Binding** dei dati > Binding **** sottomodulo.
+1. In Designer, toccare **Strumenti** > **Opzioni** > **Binding dei dati** > **Binding dei sottomoduli**.
 
-1. Nell&#39;elenco Binding predefinito per nuovi sottomoduli, selezionare **Nessuno**.
+1. Nell&#39;elenco Binding predefinito per nuovi sottomoduli, selezionare **Nessun binding dati**.
 
-In questo modo, per impostazione predefinita, i sottomoduli inseriti mediante il comando Inserisci > Sottomodulo o trascinandoli dalla palette Oggetto hanno un binding &quot;none&quot;. Questo significa che per impostazione predefinita, qualsiasi nuovo sottomodulo è un&#39;area di destinazione a meno che non vi si aggiunga contenuto, non si modifichi l&#39;impostazione di binding o non si denomini il sottomodulo con suffisso &quot;_int&quot;.
+In questo modo, per impostazione predefinita, i sottomoduli inseriti mediante il comando Inserisci > Sottomodulo o trascinandoli dalla palette Oggetto hanno un binding &quot;none&quot;. Questo significa che per impostazione predefinita, qualsiasi nuovo sottomodulo è un&#39;area di destinazione, a meno che non vi si aggiunga contenuto, non si modifichi l&#39;impostazione di binding o non si denomini il sottomodulo con suffisso &quot;_int&quot;.
 
-#### Sezione 508 - Conformità {#section-compliance}
+#### Conformità alla sezione 508 {#section-compliance}
 
 Se la lettera finale creata nell’interfaccia utente Crea corrispondenza viene utilizzata per compilare un flusso di lavoro successivo. Seguite queste raccomandazioni relative alla sezione 508 durante la creazione del layout. In caso contrario, la lettera PDF è visualizzata e potete ignorare le seguenti raccomandazioni:
 
@@ -439,13 +439,13 @@ Se la lettera finale creata nell’interfaccia utente Crea corrispondenza viene 
 * Per impostazione predefinita, i campi con didascalie sono conformi a 508. Per impostazione predefinita, l&#39;attributo speak@priority del campo è impostato su &quot;custom&quot;; pertanto, a meno che non venga fornito testo personalizzato per l&#39;assistente vocale, l&#39;assistente vocale legge la didascalia del campo.
 * I campi senza didascalie specificano una descrizione comandi e indicano che gli assistenti vocali leggono la descrizione comandi impostando
 
-`/field/assist/speak@priority="toolTip"` e specifica del testo della descrizione comandi in `/field/assist/toolTip`.
+`/field/assist/speak@priority="toolTip"` e specifica del testo della descrizione comandi in  `/field/assist/toolTip`.
 
-#### Formati di data in Designer e Gestione configurazione risorse {#date-formats-in-designer-and-asset-configuration-manager}
+#### Formati data in Designer e Gestione configurazione risorse {#date-formats-in-designer-and-asset-configuration-manager}
 
-Durante la progettazione di un layout in Designer, assicurarsi che i formati per i campi data corrispondano ai formati data specificati in Formati di visualizzazione dati in Proprietà [di configurazione di](/help/forms/using/cm-configuration-properties.md)Gestione corrispondenza. Per ulteriori informazioni, vedere &quot;Formattazione dei valori dei campi e uso dei pattern&quot; nella Guida di Designer.
+Durante la progettazione di un layout in Designer, assicurarsi che i formati per i campi data corrispondano ai formati data specificati in Formati di visualizzazione dati in [Proprietà di configurazione della gestione della corrispondenza](/help/forms/using/cm-configuration-properties.md). Per ulteriori informazioni, vedere &quot;Formattazione dei valori dei campi e uso dei pattern&quot; nella Guida di Designer.
 
-#### Acquisizione degli intervalli di date {#capturing-date-ranges}
+#### Intervalli di date di acquisizione {#capturing-date-ranges}
 
 Per gestire una combinazione di date, ad esempio startDate - endDate, utilizzare un singolo sottomodulo per garantire l&#39;allineamento corretto nella lettera finale e ridurre al minimo il numero di campi.
 
@@ -487,7 +487,7 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
    Quindi selezionate DD ed esportate i dati di esempio. Il file XML ottenuto contiene i dati Dipendente e tre istanze per Nominee_details (per impostazione predefinita vengono scaricate 3 istanze. Potete aggiungere o eliminare i contenuti in base alle vostre esigenze). Aggiornate i valori e importate i dati del test in DD. Il file CMP è il pacchetto e contiene il DD. Quindi, importate il DD in Gestione della corrispondenza.
 
-   Per ulteriori informazioni sull&#39;utilizzo del dizionario dati e sui dati di prova, vedere [Dizionario](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)dati.
+   Per ulteriori informazioni sull&#39;utilizzo del dizionario dati e sui dati di prova, vedere [Dizionario dati](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
    ![Struttura del dizionario dati](assets/dd.jpeg)
 
@@ -500,9 +500,9 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
    In alternativa, utilizzate gli XDP statici e dinamici associati a questo passaggio.
 
-   Per ulteriori informazioni sull&#39;uso dei frammenti di layout, vedere Frammenti [di](#layoutfragments)layout.
+   Per ulteriori informazioni sull&#39;uso dei frammenti di layout, vedere [Frammenti di layout](#layoutfragments).
 
-   Per ulteriori informazioni sulla progettazione dei layout, vedere la Guida [di](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)Designer.
+   Per ulteriori informazioni sulla progettazione dei layout, vedere [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Ottieni file](assets/static.xdp.zip)
 
@@ -525,11 +525,11 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
 1. Creare una lettera utilizzando entrambi i frammenti di layout al suo interno. Quando si inserisce l&#39;XDP dinamico nella lettera, impostare il binding dei relativi campi agli elementi della raccolta del dizionario dati.
 
-   Per ulteriori informazioni sulla creazione di modelli per lettere e lettere, vedere [Creazione di lettere](/help/forms/using/create-letter.md).
+   Per ulteriori informazioni sulla creazione di modelli per lettere e lettere, vedere [Crea lettera](/help/forms/using/create-letter.md).
 
 1. Salvate la lettera e visualizzatela in anteprima. Quando si visualizza l&#39;anteprima della lettera, i valori del dizionario dati sono visualizzati nella lettera. Per la tabella dinamica sono presenti tre righe. Questo perché i dati del test hanno tre record per queste righe.
 
-   Per la tabella statica, durante la creazione del frammento di layout sono presenti tutte le righe e colonne specificate.
+   Per la tabella statica, durante la creazione del frammento di layout sono presenti tutte le righe e le colonne specificate.
 
    ![Tabella statica nella lettera](assets/statictableletter.png)
 
@@ -537,7 +537,7 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
    ![Tabella dinamica nella lettera](assets/dynamictableletter.png)
 
-## Creazione di una copia di un frammento di documento {#create-a-copy-of-a-document-fragment}
+## Creare una copia di un frammento di documento {#create-a-copy-of-a-document-fragment}
 
 Per creare rapidamente un frammento di documento con proprietà e contenuto simili a un frammento di documento esistente, è possibile copiarlo e incollarlo.
 
