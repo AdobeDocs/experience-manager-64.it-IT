@@ -26,11 +26,11 @@ Lo script comment.hbs è responsabile della creazione dell&#39;HTML complessivo 
 
 Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
 
-1. Copia `comment.hbs`da `libs`a `apps`
+1. Copiare `comment.hbs`da `libs`a `apps`
    1. Seleziona `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Seleziona **[!UICONTROL copia]**
+   1. Selezionare **[!UICONTROL Copia]**
    1. Seleziona `/apps/social/commons/components/hbs/comments/comment`
-   1. Seleziona **[!UICONTROL Incolla]**
+   1. Selezionare **[!UICONTROL Incolla]**
 1. Aprire la sovrapposizione `comment.hbs`
    * Fare doppio clic sul nodo `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Trovate le righe seguenti ed eliminatele o aggiungetele un commento:
@@ -54,11 +54,11 @@ Inviate il componente dei commenti sovrapposti all’istanza di pubblicazione ut
 
 >[!NOTE]
 >
->Una replica più affidabile consiste nel creare un pacchetto in Gestione pacchetti e [attivarlo](../../help/sites-administering/package-manager.md#replicating-packages) . Un pacchetto può essere esportato e archiviato.
+>Una replica più affidabile sarebbe quella di creare un pacchetto in Gestione pacchetti e [attivarlo](../../help/sites-administering/package-manager.md#replicating-packages). Un pacchetto può essere esportato e archiviato.
 
-Dalla navigazione globale, selezionare **[!UICONTROL Strumenti > Distribuzione > Replica]** , quindi **[!UICONTROL Attiva albero]**.
+Dalla navigazione globale, selezionare **[!UICONTROL Strumenti > Distribuzione > Replica]**, quindi **[!UICONTROL Attiva albero]**.
 
-Per Percorso iniziale, immettete `/apps/social/commons` e selezionate **[!UICONTROL Attiva]**.
+Per Percorso iniziale, immettere `/apps/social/commons` e selezionare **[!UICONTROL Attiva]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
