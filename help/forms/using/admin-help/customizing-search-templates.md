@@ -47,9 +47,9 @@ Potete creare tutti i modelli di ricerca richiesti.
 
    * Nella parte superiore della scheda Criteri, selezionare un elemento di processo o un elemento di attività.
 
-      **Suggerimento**: *Se in precedenza è stato selezionato l&#39;elemento Nome processo e specificato un processo, tutte le variabili di processo definite in tale processo sono disponibili anche per la selezione.*
+      **Suggerimento**:  *Se in precedenza è stato selezionato l&#39;elemento Nome processo e specificato un processo, tutte le variabili di processo definite in tale processo sono disponibili anche per la selezione.*
 
-      **Suggerimento**: *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
+      **Suggerimento**:  *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
 
       I campi dei criteri di ricerca per l&#39;elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
 
@@ -59,9 +59,9 @@ Potete creare tutti i modelli di ricerca richiesti.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
       * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato, selezionate gli operatori che saranno disponibili per l&#39;utente.
 
-      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+      **Suggerimento**:  *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
-      **Suggerimento**: *Per eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
+      **Suggerimento**:  *Per eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
 
 
 1. (Facoltativo) Per ogni intestazione di colonna da visualizzare nei risultati della ricerca, fare clic sulla scheda Layout ed eseguire le operazioni seguenti:
