@@ -33,10 +33,10 @@ Immettete i criteri di base per eseguire una ricerca generale. Se immettete più
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Process Search.
 1. Nella pagina Ricerca processo, in Ricerca generale, specificate i seguenti criteri:
 
-   * **ID processo:** Numero intero positivo che identifica ogni istanza di processo univoca.
-   * **Stato processo:** Selezionate uno stato dall’elenco.
-   * **Applicazione:** Selezionare un&#39;applicazione dall&#39;elenco. Vengono visualizzate solo le applicazioni distribuite.
-   * **Nome processo - Versione:** Selezionate un nome di processo dal menu. Vengono visualizzati solo i processi distribuiti.
+   * **ID processo:** il numero intero positivo che identifica ogni istanza di processo univoca.
+   * **Stato processo:** selezionare uno stato dall&#39;elenco.
+   * **Applicazione:** selezionare un&#39;applicazione dall&#39;elenco. Vengono visualizzate solo le applicazioni distribuite.
+   * **Nome processo - Versione:** selezionate dal menu il nome di un processo. Vengono visualizzati solo i processi distribuiti.
 
 1. Fate clic su Cerca. Viene visualizzata la pagina Istanza processo, in cui sono elencate le istanze trovate.
 
