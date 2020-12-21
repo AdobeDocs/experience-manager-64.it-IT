@@ -20,24 +20,24 @@ ht-degree: 0%
 
 # Gestione delle credenziali locali {#managing-local-credentials}
 
-Le credenziali locali sono credenziali di chiave privata ospitate in Trust Store Management. Una credenziale ** locale identifica la posizione di memorizzazione delle credenziali DES di un utente. Utilizzando Trust Store Management, è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti in modo da importare, modificare ed eliminare le credenziali locali.
+Le credenziali locali sono credenziali di chiave privata ospitate in Trust Store Management. Una *credenziale locale* identifica la posizione di memorizzazione delle credenziali DES di un utente. Utilizzando Trust Store Management, è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti in modo da importare, modificare ed eliminare le credenziali locali.
 
 I moduli AEM supportano le credenziali RSA e DSA fino a 4096 bit nel formato PKCS12 standard (file .pfx e .p12).
 
 Potete importare ed esportare qualsiasi numero di credenziali. Per sostituire una credenziale scaduta con lo stesso alias, eliminare la credenziale e importare la nuova credenziale con lo stesso alias.
 
-Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, consultate [Configurazione delle credenziali per l&#39;uso con le estensioni](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)Acrobat Reader DC.
+Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, vedere [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Importare una credenziale {#import-a-credential}
+## Importa una credenziale {#import-a-credential}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio attendibili > Credenziali locali.
 1. Fai clic su Importa. In Tipo archivio attendibili, selezionare una delle seguenti opzioni:
 
-   * **Credenziali firma documento:** Credenziale utilizzata per emettere una firma digitale su un documento.
-   * **Credenziali estensioni Acrobat Reader DC:** Certificato digitale specifico per le estensioni Acrobat Reader DC che consente  diritti di utilizzo di Adobe Reader da attivare nei documenti PDF prodotti.
-   * **Predefinito:** Indica che si tratta della credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC.
+   * **Credenziali firma documento:** credenziale utilizzata per emettere una firma digitale su un documento.
+   * **Credenziali per estensioni Acrobat Reader DC:** Certificato digitale specifico per le estensioni Acrobat Reader DC che consente  diritti di utilizzo Adobe Reader di essere attivato nei documenti PDF prodotti.
+   * **Valore predefinito:** indica che si tratta della credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC.
 
-   Per informazioni su come ottenere una credenziale, vedere [Preparazione all&#39;installazione dei moduli](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)AEM.
+   Per informazioni su come ottenere una credenziale, vedere [Preparazione all&#39;installazione di moduli AEM](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 1. Nella casella Alias, digitare un identificatore per la credenziale. Questo identificatore viene utilizzato come nome visualizzato per la credenziale nelle estensioni Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alla credenziale a livello di programmazione tramite l&#39;SDK dei moduli AEM.
 
