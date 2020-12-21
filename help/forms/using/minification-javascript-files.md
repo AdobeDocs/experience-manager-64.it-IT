@@ -24,13 +24,13 @@ La riduzione rimuove dal codice sorgente i caratteri ridondanti, ad esempio lo s
 
 Per generare codice ridotto per le modifiche semantiche, effettuate le seguenti operazioni.
 
-1. Copiare `client-html/src/main/webapp/js` da src-package sul file system.
+1. Copiare `client-html/src/main/webapp/js` da src-package nel file system.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui pacchetti, consultate [Introduzione alla personalizzazione &#39;area di lavoro](/help/forms/using/introduction-customizing-html-workspace.md) AEM Forms.
+   >Per ulteriori informazioni sui pacchetti, vedere [Introduzione alla personalizzazione  area di lavoro AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md).
 
-1. Aggiornate i percorsi in `main.js` Client-html/src/main/webapp/js, per modelli/visualizzazioni aggiunti/aggiornati.
+1. Aggiornate i percorsi in `main.js` ubicati in client-html/src/main/webapp/js, per i modelli/visualizzazioni aggiunti/aggiornati.
 
    Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, modifica:
 
@@ -42,7 +42,7 @@ Per generare codice ridotto per le modifiche semantiche, effettuate le seguenti 
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Aggiorna `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` in caso di modifica/aggiunta di alias in `main.js`.
+1. Aggiornare `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` in caso di modifica/aggiunta di alias in `main.js`.
 
    Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, modifica:
 
