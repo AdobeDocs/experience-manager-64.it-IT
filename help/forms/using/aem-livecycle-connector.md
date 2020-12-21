@@ -23,15 +23,15 @@ Adobe Experience Manager (AEM) LiveCycle connettore di LiveCycle consente di inv
 
 ## Collegamento AEM server a  Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM connettore LiveCycle fa parte del pacchetto [aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms. Dopo aver installato il pacchetto  del componente aggiuntivo AEM Forms, eseguite i seguenti passaggi per aggiungere i dettagli del server di LiveCycle AEM Console Web.
+AEM connettore LiveCycle fa parte del [ pacchetto aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto  del componente aggiuntivo AEM Forms, eseguite i seguenti passaggi per aggiungere i dettagli del server di LiveCycle AEM Console Web.
 
 1. In AEM gestione della configurazione della console Web, individua il componente di configurazione  Adobe LiveCycle Client SDK.
 1. Fate clic sul componente per modificare l’URL, il nome utente e la password del server di configurazione.
-1. Esaminate le impostazioni e fate clic su **Salva**.
+1. Esaminare le impostazioni e fare clic su **Salva**.
 
 Anche se le proprietà sono auto-esplicative, quelle importanti sono le seguenti:
 
-* **URL** server - Specifica l&#39;URL del server di LiveCycle. Se si desidera che LiveCycle e AEM comunicare attraverso https, avviare AEM con la seguente JVM
+* **URL**  server - Specifica l&#39;URL del server di LiveCycle. Se si desidera che LiveCycle e AEM comunicare attraverso https, avviare AEM con la seguente JVM
 
    ```
    argument 
@@ -41,10 +41,10 @@ Anche se le proprietà sono auto-esplicative, quelle importanti sono le seguenti
    opzione.
 
 * **Nome** utente - Specifica il nome utente dell&#39;account utilizzato per stabilire la comunicazione tra AEM e LiveCycle. L&#39;account è un account utente di LiveCycle che dispone delle autorizzazioni necessarie per avviare Document Services.
-* **Password**- Specifica la password.
-* **Nome** servizio - Specifica i servizi avviati utilizzando le credenziali utente fornite nei campi Nome utente e Password. Per impostazione predefinita, non vengono passate credenziali all&#39;avvio dei servizi di LiveCycle.
+* **Password** - Specifica la password.
+* **Nome**  servizio - Specifica i servizi avviati utilizzando le credenziali utente fornite nei campi Nome utente e Password. Per impostazione predefinita, non vengono passate credenziali all&#39;avvio dei servizi di LiveCycle.
 
-## Avvio di Document Services {#starting-document-services}
+## Avvio di document services {#starting-document-services}
 
 Le applicazioni client possono avviare i servizi di LiveCycle a livello di programmazione utilizzando un&#39;API Java, servizi Web, funzionalità di reporting e REST. Per i client Java, l’applicazione può utilizzare l’SDK per LiveCycli. L’SDK per LiveCycli fornisce un’API Java per avviare questi servizi in remoto. Ad esempio, per convertire un documento di Microsoft Word in PDF, il client avvia GeneratePDFService. Il flusso di chiamata è costituito dai seguenti passaggi:
 
@@ -54,11 +54,11 @@ Le applicazioni client possono avviare i servizi di LiveCycle a livello di progr
 
 AEM connettore LiveCycle semplifica il flusso esponendo queste istanze client come servizi OSGi a cui è possibile accedere utilizzando i mezzi OSGi standard. Il connettore LiveCycle offre le seguenti caratteristiche:
 
-* Istanze client come servizio OSGi: I client inclusi in pacchetti OSGI sono elencati nella sezione Elenco [di](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Document Services. Ogni Jar client registra l’istanza client come servizio OSGi con il Registro di servizio OSGi.
+* Istanze client come servizio OSGi: I client inclusi in pacchetti OSGI sono elencati nella sezione [Elenco Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ogni Jar client registra l’istanza client come servizio OSGi con il Registro di servizio OSGi.
 * Propagazione credenziali utente: I dettagli di connessione necessari per connettersi al server di LiveCycle sono gestiti in una posizione centrale.
 * ServiceClientFactory: Per avviare i processi, l&#39;applicazione client può accedere all&#39;istanza ServiceClientFactory.
 
-### Avvio tramite i riferimenti di servizio dal Registro di sistema OSGi {#starting-via-service-references-from-osgi-service-registry}
+### Avvio tramite i riferimenti di servizio dal Registro di sistema del servizio OSGi {#starting-via-service-references-from-osgi-service-registry}
 
 Per avviare un servizio esposto dall&#39;interno di AEM, effettua le seguenti operazioni:
 
@@ -82,7 +82,7 @@ Per avviare un servizio esposto dall&#39;interno di AEM, effettua le seguenti op
    </dependency>
    ```
 
-   Per avviare un servizio, aggiungete la corrispondente dipendenza Maven per il servizio. Per l&#39;elenco delle dipendenze, vedere Elenco [servizi](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)documenti. Ad esempio, per il servizio Genera PDF aggiungere la seguente dipendenza:
+   Per avviare un servizio, aggiungete la corrispondente dipendenza Maven per il servizio. Per l&#39;elenco delle dipendenze, vedere [Elenco servizi documenti](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ad esempio, per il servizio Genera PDF aggiungere la seguente dipendenza:
 
    ```xml
    <dependency>
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest, proprietà {#invocationrequest-property}
+### Proprietà InvocationRequest {#invocationrequest-property}
 
 Se si chiama un processo o si utilizza direttamente la classe ServiceClientFactory e si crea una richiesta di chiamata, è possibile specificare una proprietà per indicare che il livello di chiamata deve utilizzare le credenziali configurate.
 
@@ -213,7 +213,7 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## Elenco di Document Services {#document-services-list}
+## Elenco servizi documenti {#document-services-list}
 
 ###  pacchetto API SDK client LiveCycle di Adobe {#adobe-livecycle-client-sdk-api-bundle}
 
@@ -225,7 +225,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.idp.dsc.registry.service.ServiceRegistry
 * com.adobe.idp.dsc.registry.component.ComponentRegistry
 
-#### Dipendenze Paradiso {#maven-dependencies}
+#### Dipendenze del cielo {#maven-dependencies}
 
 ```xml
 <dependency>
@@ -240,14 +240,14 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Bundle SDK client LiveCycle di  Adobe {#adobe-livecycle-client-sdk-bundle}
+### Bundle SDK client di LiveCycle  Adobe {#adobe-livecycle-client-sdk-bundle}
 
 Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.dsc.clientsdk.security.RunAsManager
 * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider
 
-#### Dipendenze Paradiso {#maven-dependencies-1}
+#### Dipendenze del cielo {#maven-dependencies-1}
 
 ```xml
 <dependency>
@@ -257,7 +257,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe pacchetto Client TaskManager {#adobe-livecycle-taskmanager-client-bundle}
+###  Adobe pacchetto client TaskManager{#adobe-livecycle-taskmanager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -268,7 +268,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
 * com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
-#### Dipendenze Paradiso {#maven-dependencies-2}
+#### Dipendenze del cielo {#maven-dependencies-2}
 
 ```xml
 <dependency>
@@ -278,13 +278,13 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe Bundle client LiveCycle Workflow {#adobe-livecycle-workflow-client-bundle}
+### Bundle client di LiveCycle Workflow  Adobe {#adobe-livecycle-workflow-client-bundle}
 
 È disponibile il seguente servizio:
 
 * com.adobe.idp.workflow.client.WorkflowServiceClient
 
-#### Dipendenze Paradiso {#maven-dependencies-3}
+#### Dipendenze del cielo {#maven-dependencies-3}
 
 ```xml
 <dependency>
@@ -300,7 +300,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient
 
-#### Dipendenze Paradiso {#maven-dependencies-4}
+#### Dipendenze del cielo {#maven-dependencies-4}
 
 ```xml
 <dependency>
@@ -310,7 +310,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe pacchetto client Application Manager {#adobe-livecycle-application-manager-client-bundle}
+###  pacchetto client Application Manager LiveCycle {#adobe-livecycle-application-manager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -318,7 +318,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.livecycle.applicationmanager.client.ApplicationManager
 * com.adobe.livecycle.design.service.DesigntimeService
 
-#### Dipendenze Paradiso {#maven-dependencies-5}
+#### Dipendenze del cielo {#maven-dependencies-5}
 
 ```xml
 <dependency>
@@ -328,13 +328,13 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Pacchetto client Assembler LiveCycle di  Adobe {#adobe-livecycle-assembler-client-bundle}
+### Pacchetto client Assembler del LiveCycle di Adobe  {#adobe-livecycle-assembler-client-bundle}
 
 È disponibile il seguente servizio:
 
 * com.adobe.livecycle.assembler.client.AssemblerServiceClient
 
-#### Dipendenze Paradiso {#maven-dependencies-6}
+#### Dipendenze del cielo {#maven-dependencies-6}
 
 ```xml
 <dependency>
@@ -344,13 +344,13 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe Modulo di integrazione dei dati del client {#adobe-livecycle-form-data-integration-client-bundle}
+###  Adobe Pacchetto client integrazione dati modulo {#adobe-livecycle-form-data-integration-client-bundle}
 
 È disponibile il seguente servizio:
 
 * com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
-#### Dipendenze Paradiso {#maven-dependencies-7}
+#### Dipendenze del cielo {#maven-dependencies-7}
 
 ```xml
 <dependency>
@@ -366,7 +366,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.formsservice.client.FormsServiceClient
 
-#### Dipendenze Paradiso {#maven-dependencies-8}
+#### Dipendenze del cielo {#maven-dependencies-8}
 
 ```xml
 <dependency>
@@ -382,7 +382,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.output.client.OutputClient
 
-#### Dipendenze Paradiso {#maven-dependencies-9}
+#### Dipendenze del cielo {#maven-dependencies-9}
 
 ```xml
 <dependency>
@@ -398,7 +398,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
-#### Dipendenze Paradiso {#maven-dependencies-10}
+#### Dipendenze del cielo {#maven-dependencies-10}
 
 ```xml
 <dependency>
@@ -408,7 +408,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  pacchetto client LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
+### Pacchetto client  Adobe Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -420,7 +420,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.livecycle.rightsmanagement.client.PolicyManager
 * com.adobe.livecycle.rightsmanagement.client.AbstractPolicyManager
 
-#### Dipendenze Paradiso {#maven-dependencies-11}
+#### Dipendenze del cielo {#maven-dependencies-11}
 
 ```xml
 <dependency>
@@ -430,13 +430,13 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe Pacchetto Firme LiveCycle Client {#adobe-livecycle-signatures-client-bundle}
+###  Adobe Firme pacchetto client {#adobe-livecycle-signatures-client-bundle}
 
 È disponibile il seguente servizio:
 
 * com.adobe.livecycle.signatures.client.SignatureServiceClientInterface
 
-#### Dipendenze Paradiso {#maven-dependencies-12}
+#### Dipendenze del cielo {#maven-dependencies-12}
 
 ```xml
 <dependency>
@@ -446,7 +446,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-###  Adobe LiveCycle Truststore Client bundle {#adobe-livecycle-truststore-client-bundle}
+###  Adobe Truststore Client bundle {#adobe-livecycle-truststore-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -455,7 +455,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.truststore.dsc.CredentialService
 * com.adobe.truststore.dsc.CertificateService
 
-#### Dipendenze Paradiso {#maven-dependencies-13}
+#### Dipendenze del cielo {#maven-dependencies-13}
 
 ```xml
 <dependency>
@@ -472,7 +472,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.repository.bindings.ResourceRepository
 * com.adobe.repository.bindings.ResourceSynchronizer
 
-#### Dipendenze Paradiso {#maven-dependencies-14}
+#### Dipendenze del cielo {#maven-dependencies-14}
 
 ```xml
 <dependency>
