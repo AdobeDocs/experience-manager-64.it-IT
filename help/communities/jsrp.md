@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# JSRP - Provider di risorse di storage JCR {#jsrp-jcr-storage-resource-provider}
+# JSRP - Provider risorse di archiviazione JCR {#jsrp-jcr-storage-resource-provider}
 
 ## Informazioni su JSRP {#about-jsrp}
 
@@ -26,23 +26,23 @@ Quando  AEM Communities utilizza JSRP come opzione di archiviazione (impostazion
 
 Grazie alla semplicità di implementazione, JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di autore.
 
-Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
+Vedere anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
 
 ## Configurazione {#configuration}
 
-### Select JSRP {#select-jsrp}
+### Selezionare JSRP {#select-jsrp}
 
 Per impostazione predefinita, JSRP è l’opzione di memorizzazione per UGC.
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
+La [console di configurazione dell&#39;archivio](srp-config.md) consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione dell&#39;SRP da utilizzare.
 
 Nell’ambiente di authoring, per accedere alla console Configurazione archiviazione
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Configurazione dello storage]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Configurazione dell&#39;archivio]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Selezionare **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
 * Seleziona **[!UICONTROL Invia]**
 
 ### Pubblicazione della configurazione {#publishing-the-configuration}
@@ -52,16 +52,16 @@ JSRP è la configurazione predefinita, ma per assicurarsi che la configurazione 
 * Per autore:
 
    * Dalla navigazione globale: **[!UICONTROL Strumenti > Implementazione > Replica]**
-   * Seleziona **[!UICONTROL Attiva albero]**
+   * Selezionare **[!UICONTROL Attiva albero]**
    * **[!UICONTROL Percorso iniziale]**:
 
       * Passa a `/conf/global/settings/community/srpc/`
-   * Seleziona **[!UICONTROL attiva]**
+   * Selezionare **[!UICONTROL Activate]**
 
 
 ## Gestione dei dati utente {#managing-user-data}
 
-Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spesso inseriti nell’ambiente di pubblicazione, visita
+Per informazioni su *utenti*, *profili utente* e *gruppi di utenti*, spesso inseriti nell&#39;ambiente di pubblicazione, visita
 
 * [Sincronizzazione utente](sync.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
@@ -76,16 +76,16 @@ Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console Confi
 
 * in JCR, se [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa che il provider di archiviazione è JSRP
+   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), significa che il provider di archiviazione è JSRP
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire JSRP come provider predefinito
 
-### UGC non visibile nell&#39;istanza Author {#ugc-not-visible-on-author-instance}
+### UGC non visibile nell&#39;istanza di autore {#ugc-not-visible-on-author-instance}
 
 Questo non è un bug. Una caratteristica di JSRP è che il contenuto della community inserito nell’ambiente di pubblicazione sarà visibile solo nell’ambiente di pubblicazione.
 
-### UGC non visibile nell&#39;istanza di pubblicazione {#ugc-not-visible-on-publish-instance}
+### UGC non visibile sull&#39;istanza di pubblicazione {#ugc-not-visible-on-publish-instance}
 
-Se viene distribuita una singola istanza di pubblicazione o un cluster di pubblicazione, seguite le istruzioni per [UGC non visibile in JCR](#ugc-not-visible-in-jcr).
+Se viene distribuita una singola istanza di pubblicazione o un cluster di pubblicazione, seguite le istruzioni per [UGC Not Visible in JCR](#ugc-not-visible-in-jcr).
 
 Se viene distribuita una farm di pubblicazione, una caratteristica di JSRP è che il contenuto della community sarà visibile solo nell’istanza di pubblicazione in cui è stato pubblicato.
 
