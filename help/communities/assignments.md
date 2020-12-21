@@ -18,16 +18,16 @@ ht-degree: 1%
 ---
 
 
-# Funzione Assegnazioni {#assignments-feature}
+# Funzione di assegnazione {#assignments-feature}
 
-I componenti Enablement Assignments and [Enablement Catalog](catalog.md) disponibili nel gruppo Community nel browser Componenti sono componenti di una community di [abilitazione](overview.md#enablement-community).
+I componenti Enablement Assignments e [Enablement Catalog](catalog.md) trovati nel gruppo Communities nel browser Componenti sono componenti di una [community di abilitazione](overview.md#enablement-community).
 
-Il componente Assegnazione abilitazione consente al membro della community attualmente connesso (utente in formazione) di accedere alle risorse [di](resources.md)abilitazione assegnate.
+Il componente Assegnazione abilitazione consente al membro della community attualmente connesso (utente in formazione) di accedere alle risorse di abilitazione assegnate [a1/>.](resources.md)
 
-Nella sezione [Guida introduttiva a  AEM Communities per l&#39;abilitazione](getting-started-enablement.md) , vedete la visualizzazione di assegnazioni e cataloghi da parte di un membro nella sezione [Esperienza del sito](enablement-published-site.md) pubblicato.
+Nell&#39;esercitazione [Guida introduttiva  AEM Communities per l&#39;abilitazione](getting-started-enablement.md), vedere la visualizzazione delle assegnazioni e dei cataloghi da parte di un membro nella sezione [Esperienza del sito pubblicato](enablement-published-site.md).
 
 ## Informazioni aggiuntive {#additional-information}
 
 Ulteriori informazioni sono disponibili nella pagina [Assignments Essentials](essentials-assignments.md) per gli sviluppatori.
 
-La funzione [](functions.md#assignments-function) assegnazioni è disponibile quando si crea un sito [](sites-console.md)community.
+La funzione [assegnazioni](functions.md#assignments-function) è disponibile quando si crea un [sito community](sites-console.md).
