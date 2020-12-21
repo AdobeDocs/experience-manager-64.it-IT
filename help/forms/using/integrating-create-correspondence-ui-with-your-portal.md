@@ -46,7 +46,7 @@ Se il portale contiene già il nome del modello Lettera, l&#39;URL potrebbe esse
 
 ## Chiamata in linea basata sui dati {#inline-data-based-invocation}
 
-Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe consistere nel colpire semplicemente l’URL in corrispondenza `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta di POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
+Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe essere semplicemente l’URL in `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta di POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
 
 ### Parametri per la specifica della lettera {#parameters-for-specifying-letter}
 
