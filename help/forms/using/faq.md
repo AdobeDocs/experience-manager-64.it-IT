@@ -26,7 +26,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. Perché i codici a barre e i campi firma non vengono visualizzati nel modulo?
 
-   Risposta: I campi per codici a barre e firme non sono pertinenti negli scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia,  AEM Forms Designer fornisce un nuovo campo di script firma che è possibile utilizzare al posto del campo firma. È inoltre possibile aggiungere un widget [](/help/forms/using/custom-widgets.md) personalizzato per i codici a barre e integrarlo.
+   Risposta: I campi per codici a barre e firme non sono pertinenti negli scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia,  AEM Forms Designer fornisce un nuovo campo di script firma che è possibile utilizzare al posto del campo firma. È inoltre possibile aggiungere un [widget personalizzato](/help/forms/using/custom-widgets.md) per i codici a barre e integrarlo.
 
 1. Il formato RTF è supportato per il campo di testo XFA?
 
@@ -135,7 +135,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
    * Le tabelle e i sottomoduli nidificati all&#39;interno di una tabella non sono supportati.
    * Le intestazioni sono supportate solo per la riga superiore o per le colonne sinistre della tabella. Le intestazioni non sono supportate per gli elementi della tabella centrale. È possibile applicare intestazioni a più intestazioni di riga e colonna, purché siano supportate tutte queste righe e colonne insieme alla riga o alla colonna più a sinistra della tabella.
-   * `Rowspan`e `colspan`da una posizione casuale all&#39;interno della tabella non è supportata.
+   * `Rowspan`e  `colspan`da una posizione casuale all&#39;interno della tabella non è supportata.
    * Non è possibile aggiungere o rimuovere dinamicamente un&#39;istanza di righe contenenti elementi con un valore di estensione di riga maggiore di 1.
 
 1. Qual è l&#39;ordine di lettura della descrizione comandi e della didascalia per gli assistenti vocali?
@@ -168,18 +168,18 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
    Risposta:
 
-   * Il supporto per lo script xfa.connectionSet è limitato. Per connectionSet, è supportata solo la chiamata lato server del servizio Web. Per informazioni dettagliate, vedere [Supporto](/help/forms/using/scripting-support.md)script.
+   * Il supporto per lo script xfa.connectionSet è limitato. Per connectionSet, è supportata solo la chiamata lato server del servizio Web. Per informazioni dettagliate, vedere [Supporto script](/help/forms/using/scripting-support.md).
    * Non è supportato $record e $data negli script sul lato client. Tuttavia, se gli script sono scritti in un blocco formReady e layoutReady, gli script funzionano comunque perché questi eventi vengono eseguiti sul lato server.
    * Gli script XFA Draw specifici dell&#39;elemento, come la modifica del testo Disegno (o del testo della didascalia nel caso di campi) non sono supportati.
 
 1. Esistono limitazioni nell&#39;uso di formCalc?
 
-   Risposta: Attualmente è implementato solo un sottoinsieme degli script formCalc. Per informazioni dettagliate, vedere [Supporto](/help/forms/using/scripting-support.md)script.
+   Risposta: Attualmente è implementato solo un sottoinsieme degli script formCalc. Per informazioni dettagliate, vedere [Supporto script](/help/forms/using/scripting-support.md).
 
 1. Esistono convenzioni di denominazione consigliate e sono presenti parole chiave riservate da evitare?
 
    * In  AEM Forms Designer, si consiglia di non iniziare il nome di un oggetto (ad esempio un sottomodulo o un campo di testo) con un carattere di sottolineatura (_). Per utilizzare il carattere di sottolineatura all&#39;inizio del nome, aggiungere un prefisso dopo il carattere di sottolineatura, *_&lt;prefix>&lt;objectname>. *
-   * Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizzare un nome non identico alle API dei moduli [HTML5](/help/forms/using/scripting-support.md).
+   * Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le funzioni/API personalizzate, utilizzare un nome non identico alle [API dei moduli HTML5](/help/forms/using/scripting-support.md).
 
 1. I moduli HTML5 supportano i campi mobili?
 
@@ -189,9 +189,9 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
    >
    >Per impostazione predefinita, i campi non sono attivati per il mobile. È possibile utilizzare Forms Designer per impostare la proprietà mobile dei campi.
 
-   1. Aprite CRXde lite e individuate il `/content/xfaforms/profiles/default` nodo.
+   1. Aprite CRXde lite e passate al nodo `/content/xfaforms/profiles/default`.
    1. Aggiungere una proprietà `mfDataDependentFloatingField` di tipo String e impostare il valore della proprietà su `true`**.**
-   1. Fate clic su **Salva tutto**. Ora i campi mobili sono abilitati per l’Forms HTML utilizzando il profilo di rendering aggiornato.
+   1. Fare clic su **Salva tutto**. Ora i campi mobili sono abilitati per l’Forms HTML utilizzando il profilo di rendering aggiornato.
 
       >[!NOTE]
       >
@@ -205,5 +205,5 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. Nei moduli HTML5 sono presenti parole chiave riservate?
 
-   Risposta: Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizzare un nome non identico alle API dei moduli [HTML5](/help/forms/using/scripting-support.md). Oltre alle parole chiave riservate, se si utilizzano nomi di oggetti che iniziano con un carattere di sottolineatura (_), è consigliabile aggiungere un prefisso univoco dopo il carattere di sottolineatura. L&#39;aggiunta di un prefisso consente di evitare possibili conflitti con le API interne dei moduli HTML5. Esempio, `_fpField1`
+   Risposta: Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le funzioni/API personalizzate, utilizzare un nome non identico alle [API dei moduli HTML5](/help/forms/using/scripting-support.md). Oltre alle parole chiave riservate, se si utilizzano nomi di oggetti che iniziano con un carattere di sottolineatura (_), è consigliabile aggiungere un prefisso univoco dopo il carattere di sottolineatura. L&#39;aggiunta di un prefisso consente di evitare possibili conflitti con le API interne dei moduli HTML5. Esempio, `_fpField1`
 
