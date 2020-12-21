@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Nozioni di base sulla gestione di certificati e credenziali {#basics-of-managing-certificates-and-credentials}
 
-Una *credenziale* contiene le informazioni di chiave privata necessarie per firmare o identificare i documenti. Un *certificato* è un&#39;informazione di chiave pubblica configurata per l&#39;attendibilità. AEM moduli utilizza certificati e credenziali per diversi scopi:
+Una *credenziale* contiene le informazioni di chiave privata necessarie per firmare o identificare i documenti. Un *certificato* è una chiave pubblica configurata per l&#39;attendibilità. AEM moduli utilizza certificati e credenziali per diversi scopi:
 
-* Le estensioni Acrobat Reader DC utilizzano una credenziale per abilitare  diritti di utilizzo Adobe Reader nei documenti PDF. Consultate [Configurazione delle credenziali per l’uso con le estensioni](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)Acrobat Reader DC.
-* Potete configurare il Rights Management per visualizzare le credenziali da utilizzare in  Acrobat solo da emittenti attendibili. Consultate [Configurare le impostazioni](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)di visualizzazione degli Rights Management. Il nome comune (NC) deve essere presente nel certificato.
-* Il servizio Signature accede a certificati e credenziali. Per informazioni dettagliate sul servizio Signature, vedere [Servizi di riferimento](https://www.adobe.com/go/learn_aemforms_services_63).
+* Le estensioni Acrobat Reader DC utilizzano una credenziale per abilitare  diritti di utilizzo Adobe Reader nei documenti PDF. (Vedere [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* Potete configurare il Rights Management per visualizzare le credenziali da utilizzare in  Acrobat solo da emittenti attendibili. (Vedere [Configurare le impostazioni di visualizzazione del Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Il nome comune (NC) deve essere presente nel certificato.
+* Il servizio Signature accede a certificati e credenziali. Per informazioni dettagliate sul servizio Signature, vedere [Guida di riferimento dei servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Generazione di un tasto coppia**
 
