@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Componente Commenti overlay {#overlay-comments-component}
 
-L’intenzione di [sovrapporre](client-customize.md#overlays) un componente predefinito consiste nel modificare l’aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di cercare nella cartella /libs. Il percorso del componente è quindi identico al percorso del componente predefinito, ma si trova nella cartella /apps e non nella cartella /libs.
+L&#39;intenzione di [overlay](client-customize.md#overlays) di un componente predefinito è di modificare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di cercare nella cartella /libs. Il percorso del componente è quindi identico al percorso del componente predefinito, ma si trova nella cartella /apps e non nella cartella /libs.
 
 ## Esempio {#example}
 
