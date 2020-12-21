@@ -24,25 +24,25 @@ Diverse procedure richiedono l&#39;arresto o l&#39;avvio dell&#39;istanza di Web
 
 ## Visualizzare lo stato di WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. Dal prompt dei comandi, andate alla directory principale *[/bin]* appserver.
+1. Dal prompt dei comandi, andate alla directory *[host]*/bin.
 1. Digitate il comando seguente, sostituendo *server_name* con il nome del server applicazioni WebSphere:
 
-   * (Windows) `serverStatus.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `serverStatus.sh`*server *
+   * (Windows) `serverStatus.bat`*nome_server*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nome_server*
 
-## Avvia server applicazione WebSphere {#start-websphere-application-server}
+## Avvia server applicazioni WebSphere {#start-websphere-application-server}
 
-1. Dal prompt dei comandi, andate alla directory principale *[/bin]* appserver.
+1. Dal prompt dei comandi, andate alla directory *[host]*/bin.
 1. Digitate il comando seguente, sostituendo *server_name* con il nome del server applicazioni WebSphere:
 
-   * (Windows) `startServer.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `startServer.sh`*server *
+   * (Windows) `startServer.bat`*nome_server*
+   * (Linux, UNIX) ./ `startServer.sh`*nome_server*
 
 ## Arresta server applicazione WebSphere {#stop-websphere-application-server}
 
-1. Dal prompt dei comandi, andate alla directory principale *[/bin]* appserver.
+1. Dal prompt dei comandi, andate alla directory *[host]*/bin.
 1. Digitate il comando seguente, sostituendo *server_name* con il nome del server applicazioni WebSphere:
 
-   * (Windows) `stopServer.bat`*server_name *
-   * (Linux, UNIX) ./ nome_ `stopServer.sh`*server *
+   * (Windows) `stopServer.bat`*nome_server*
+   * (Linux, UNIX) ./ `stopServer.sh`*nome_server*
 
