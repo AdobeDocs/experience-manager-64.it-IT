@@ -26,7 +26,7 @@ Per il corretto funzionamento della sincronizzazione su LDAPS, i certificati LDA
 1. Esportate un certificato client dal server di directory.
 1. Utilizzare il programma keytool per importare il file del certificato client nell&#39;archivio certificati Java Virtual Machine (JVM™) predefinito del server applicazioni AEM moduli. La procedura per questa attività varia a seconda dei percorsi di installazione JVM e client. Ad esempio, se si utilizza BEA WebLogic Server con JDK 1.5, dal prompt dei comandi digitare il testo seguente:
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. Quando richiesto, digitate la password. Per Java, la password predefinita è `changeit`. Viene visualizzato un messaggio che indica che il certificato è stato importato correttamente.
 1. Quando richiesto, digitare `Yes` per rendere affidabile il certificato.
