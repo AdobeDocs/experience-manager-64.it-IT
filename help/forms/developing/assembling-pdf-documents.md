@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Assemblare documenti PDF {#assembling-pdf-documents}
+# Assemblaggio di documenti PDF {#assembling-pdf-documents}
 
 **Informazioni su Assembler Service**
 
@@ -29,5 +29,5 @@ A partire dall&#39;LiveCycle ES 8.0 e versioni successive, il supporto per i pac
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, vedere [Servizi di riferimento per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
