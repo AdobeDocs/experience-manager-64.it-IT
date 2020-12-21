@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Log files {#log-files}
+# File di registro {#log-files}
 
 Eventi quali errori di esecuzione o di avvio vengono registrati nei file di registro del server dell&#39;applicazione. In caso di problemi durante l&#39;implementazione nel server dell&#39;applicazione, è possibile utilizzare i file di registro per individuare il problema. Potete aprire i file di registro utilizzando un editor di testo qualsiasi.
 
-(JBoss) I seguenti file di registro si trovano nella `*[appserver root]*/server/*[server]*/log` directory:
+(JBoss) I seguenti file di registro si trovano nella directory `*[appserver root]*/server/*[server]*/log`:
 
 * boot.log
 * server.log.*[aaaa-mm-gg]*
 * server.log
 
-(WebLogic) I file di registro del dominio si trovano nella directory *[appserverdomain]* e i file di registro del server si trovano nella directory *[appserverdomain]/server/nome[]appserver/logs *:
+(WebLogic) I file di registro del dominio si trovano nella directory *[appserverdomain]* e i file di registro del server si trovano nella directory *[appserverdomain]/server/[nome appserver]/logs *directory:
 
 * access.log
 * *[appserver name]*.log
 * *[nomeappserver]*.out.*[numero incrementale]*
 
-(WebSphere) I seguenti file di registro si trovano nella directory principale *[/profili/default/logs/]* appserver name *[]* :
+(WebSphere) I seguenti file di registro si trovano nella directory *[appserver principale]*/profile/default/logs/*[nome appserver]*:
 
 * SystemErr.log
 * SystemOut.log
