@@ -36,7 +36,7 @@ Potete utilizzare i documenti protetti tramite criterio che ricevete da un utent
 >
 >Se ricevete un documento protetto tramite criterio ma non ricevete un invito e-mail di registrazione, contattate la persona che vi ha inviato il documento per ulteriori informazioni.
 
-## Registrazione come utente invitato {#register-as-an-invited-user}
+## Registrati come utente invitato {#register-as-an-invited-user}
 
 Se siete un utente invitato e ricevete un messaggio di registrazione e-mail da Document Security, potete registrarvi utilizzando l&#39;URL contenuto nel messaggio per aprire la pagina di registrazione online. Dopo la registrazione, riceverete un secondo avviso sull&#39;attivazione dell&#39;account.
 
@@ -45,7 +45,7 @@ Se siete un utente invitato e ricevete un messaggio di registrazione e-mail da D
 1. Digitare il nome, il numero di telefono, l&#39;indirizzo, l&#39;organizzazione e la password nelle caselle appropriate, quindi digitare nuovamente la password nella casella Conferma password. La password può contenere una combinazione qualsiasi di otto caratteri.
 1. Fai clic su Salva. Viene visualizzato un messaggio di ringraziamento per informarvi di controllare l’e-mail di posta elettronica relativa a un messaggio di attivazione. È ora necessario attivare l&#39;account per completare la procedura di registrazione.
 
-## Attivare l’account utente invitato {#activate-your-invited-user-account}
+## Attivare l&#39;account utente invitato {#activate-your-invited-user-account}
 
 Dopo la registrazione, Document Security invia un messaggio e-mail di attivazione. Devi attivare il tuo account utilizzando l&#39;URL contenuto nel messaggio. È quindi possibile accedere a Document Security per utilizzare i documenti protetti tramite criterio a cui si ha accesso. A seconda delle funzioni abilitate dall&#39;amministratore per gli utenti esterni, potete disporre dell&#39;autorizzazione per creare criteri, applicare criteri ai documenti e aggiungere altri utenti esterni ai criteri.
 
@@ -57,7 +57,7 @@ L’account rimane attivo finché l’amministratore non lo disattiva o lo elimi
 1. Nella casella Nome utente, digitate l&#39;indirizzo e-mail con cui vi siete registrati in Document Security. Questo indirizzo e-mail è il vostro nome utente predefinito per la protezione dei documenti.
 1. Nella casella Password, digitare la password creata al momento della registrazione, quindi fare clic su Login.
 
-## Reimpostare la password {#reset-your-password}
+## Reimposta la password {#reset-your-password}
 
 Se avete dimenticato la password, l&#39;amministratore del criterio può reimpostarla automaticamente. Reimpostando una password si genera un messaggio e-mail che invita a effettuare l’accesso utilizzando una password temporanea. Potete quindi creare una nuova password.
 
