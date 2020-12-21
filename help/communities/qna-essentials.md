@@ -36,7 +36,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td> <a href="clientlibs.md">clientllibs</a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.Voto<br /> cq.social.hbs.qna</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.registration<br /> cq.social.hbs.qna</td> 
   </tr>
   <tr>
    <td> templates</td> 
@@ -48,7 +48,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td> proprietà</td> 
-   <td>Consultate Funzione forum <a href="working-with-qna.md">QnA</a></td> 
+   <td>Vedere <a href="working-with-qna.md">QnA Forum Feature</a></td> 
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
 
 ### Funzione D/R {#qna-function}
 
-Una struttura del sito community che include la funzione [](functions.md#qna-function) QnA avrà un `QnA` componente configurato, oltre alle impostazioni che interessano la moderazione e l&#39;assegnazione di tag. La funzione QnA supporta l&#39;identificazione di un gruppo [di utenti membro](users.md#privileged-members-group)privilegiato.
+Una struttura del sito community che include la [funzione QnA](functions.md#qna-function) avrà un componente `QnA` configurato, nonché impostazioni che influiscono sulla moderazione e l&#39;assegnazione di tag. La funzione QnA supporta l&#39;identificazione di un [gruppo di utenti con privilegi](users.md#privileged-members-group).
 
-### Accesso ai post del forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
+### Accesso ai post di forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.\
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l&#39;uso di uno store [](working-with-srp.md) comune per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md)  del provider di risorse di storage - introduzione e utilizzo del repository
+* [Funzioni essenziali](srp-and-ugc.md)  SRP e UGC - Metodi di utilità SRP ed esempi
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md)  - linee guida di codifica
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
 
