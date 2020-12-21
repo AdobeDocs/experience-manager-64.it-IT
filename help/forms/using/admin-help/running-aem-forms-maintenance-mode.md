@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Esecuzione di AEM moduli in modalità di manutenzione {#running-aem-forms-in-maintenance-mode}
+# Esecuzione AEM moduli in modalità di manutenzione {#running-aem-forms-in-maintenance-mode}
 
 La modalità di manutenzione è utile per eseguire attività quali l&#39;applicazione di patch a un DSC, l&#39;aggiornamento AEM moduli o l&#39;applicazione di un service pack.
 
@@ -31,7 +31,7 @@ Evitare di richiamare processi mentre il server è in modalità di manutenzione.
 
 1. In un browser Web, immettete:
 
-   `https://`*[nomehost ]*`:`*[porta]* nome utente `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[amministratore ]*`&password=`*[password]*
+   `https://`*[hostnameportadmin ]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[ ]*`&password=`*[usernameppassword]*
 
    Nella finestra del browser viene visualizzato un messaggio di tipo &quot;ora in pausa&quot;.
 
@@ -43,7 +43,7 @@ Evitare di richiamare processi mentre il server è in modalità di manutenzione.
 
 1. In un browser Web, immettete:
 
-   `https://`*[nomehost]:[porta ]*nome utente`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[]* amministratore `&password=`*[password ]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernameppassword ]*
 
    Lo stato viene visualizzato nella finestra del browser. Lo stato &quot;true&quot; indica che il server è in esecuzione in modalità manutenzione, mentre &quot;false&quot; indica che il server non è in modalità manutenzione.
 
@@ -51,7 +51,7 @@ Evitare di richiamare processi mentre il server è in modalità di manutenzione.
 
 1. In un browser Web, immettete:
 
-   `https://`*[nomehost]:[porta ]*nome utente`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[]* amministratore `&password=`*[password ]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernameppassword ]*
 
    Nella finestra del browser viene visualizzato un messaggio di tipo &quot;ora in esecuzione&quot;.
 
