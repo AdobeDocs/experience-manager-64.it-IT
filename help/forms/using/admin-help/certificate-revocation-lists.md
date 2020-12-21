@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Utilizzando Trust Store Management è possibile importare, modificare ed eliminare elenchi di revoche di certificati (CRL, Certificate Revocation List). Sono supportati gli elenchi di revoche di certificati con codifica DER e Base64.
 
-## Importare un CRL {#import-a-crl}
+## Importa un CRL {#import-a-crl}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio attendibili > Elenchi di revoca certificati, quindi fate clic su Importa.
 1. Nella casella Alias digitare un identificatore per il CRL.
