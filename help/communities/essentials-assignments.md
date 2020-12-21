@@ -20,7 +20,7 @@ ht-degree: 13%
 
 # Assignments Essentials {#assignments-essentials}
 
-Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione di assegnazione dei siti della community di [abilitazione](overview.md#enablement-community) .
+Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione di assegnazione dei siti [community di abilitazione](overview.md#enablement-community).
 
 La funzione di assegnazione consente di assegnare risorse di abilitazione e percorsi di apprendimento ai membri delle comunità di abilitazione.
 
@@ -50,7 +50,7 @@ La funzione di assegnazione consente di assegnare risorse di abilitazione e perc
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>Consulta Funzione <a href="assignments.md">Assegnazioni</a></td> 
+   <td>Vedere <a href="assignments.md">Caratteristica di assegnazione</a></td> 
   </tr>
  </tbody>
 </table>
@@ -85,7 +85,7 @@ Le uniche possibili combinazioni di Stato completamento e Successo sono:
 
 ### Funzione Assegnazioni {#assignments-function}
 
-Una struttura del sito community che include la funzione [](functions.md#assignments-function)Assegnazioni, include un ` [assignments](assignments.md)` componente configurato.
+Una struttura del sito community che include la funzione [Assegnazioni](functions.md#assignments-function), include un componente ` [assignments](assignments.md)` configurato.
 
 ### API di riferimento {#reference-apis}
 
