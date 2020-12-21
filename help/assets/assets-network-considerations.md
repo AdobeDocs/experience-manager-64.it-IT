@@ -74,7 +74,7 @@ Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo es
 
 L&#39;istanza AEM condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con diversi servizi.
 
-Se si esamina la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere il firewall enterprise da 10 Mbit. Per determinare l&#39;esperienza dell&#39;utente è possibile utilizzare questi valori nel calcolatore di ridimensionamento della [Guida alle dimensioni delle risorse](assets-sizing-guide.md).
+Se si esamina la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere il firewall enterprise da 10 Mbit. Per determinare l&#39;esperienza dell&#39;utente è possibile utilizzare questi valori nel calcolatore di ridimensionamento nella [Guida alle dimensioni delle risorse](assets-sizing-guide.md).
 
 ## Flussi di lavoro definiti dell&#39;istanza AEM {#defined-workflows-of-the-aem-instance}
 
