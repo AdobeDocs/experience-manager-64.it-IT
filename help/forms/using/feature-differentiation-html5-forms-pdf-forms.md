@@ -36,8 +36,8 @@ La tabella seguente specifica il supporto delle funzioni fornito per moduli e PD
   </tr>
   <tr>
    <td>Campo firma<br /> </td> 
-   <td><strong>Le firme</strong> digitali non sono supportate, ma è stato aggiunto un nuovo campo <strong>Firma</strong> scarabocchio per le firme cartacee. È possibile creare uno script per la firma sul modulo utilizzando il campo <strong>Firma</strong> scarabocchio. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni sulla geolocalizzazione nel campo <strong>Firma</strong> scarabocchio.</td> 
-   <td>Campo firma disponibile per <strong>Digital Signatures</strong>.</td> 
+   <td><strong>Le </strong> firme digitali non sono supportate, ma è stato aggiunto un nuovo  <strong>campo </strong> firma Scribble per le firme cartacee. È possibile inserire la firma nel modulo utilizzando il campo <strong>Firma scarabocchio</strong>. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni sulla geolocalizzazione nel campo <strong>Firma scarabocchio</strong>.</td> 
+   <td>Campo firma disponibile per <strong>Firme digitali</strong>.</td> 
   </tr>
   <tr>
    <td>Unione dati</td> 
@@ -51,12 +51,12 @@ La tabella seguente specifica il supporto delle funzioni fornito per moduli e PD
   </tr>
   <tr>
    <td>Paginazione<br /> </td> 
-   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td> 
+   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td> 
    <td>L'impaginazione in PDF dipende dal contenuto dei dati unito o contenuto utente e il conteggio delle pagine viene aumentato o ridotto in base a tale contenuto.</td> 
   </tr>
   <tr>
    <td>Intestazioni/Piè di pagina </td> 
-   <td>Supportato. <br /> <br /> Poiché i moduli mobili HTML5 non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. Tuttavia, è possibile impostarle nel layout in modo che vengano visualizzate in più posizioni nell'anteprima dei moduli per dispositivi mobili.<br /> </td> 
+   <td>Supportato. <br /> <br /> Poiché i moduli mobili HTML5 non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. Tuttavia, è possibile impostarle nel layout in modo che vengano visualizzate in più posizioni nell'anteprima dei moduli mobili.<br /> </td> 
    <td>Supportato.</td> 
   </tr>
   <tr>
@@ -66,12 +66,12 @@ La tabella seguente specifica il supporto delle funzioni fornito per moduli e PD
   </tr>
   <tr>
    <td>API script XFA</td> 
-   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, vedere <a href="/help/forms/using/scripting-support.md">Supporto</a>script.</td> 
+   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, vedere <a href="/help/forms/using/scripting-support.md">supporto degli script</a>.</td> 
    <td>Supporta tutti i costrutti di script XFA.</td> 
   </tr>
   <tr>
    <td> API di Acrobat Script </td> 
-   <td>I moduli HTML5 supportano le API più utilizzate. Per informazioni dettagliate, vedere <a href="/help/forms/using/scripting-support.md">Supporto</a>per gli script.</td> 
+   <td>I moduli HTML5 supportano le API più utilizzate. Per informazioni dettagliate, vedere <a href="/help/forms/using/scripting-support.md">supporto degli script</a>.</td> 
    <td>Se il file PDF viene aperto in  Acrobat o Reader, supporta anche tutte le API di script  Acrobat.</td> 
   </tr>
   <tr>
@@ -82,5 +82,5 @@ La tabella seguente specifica il supporto delle funzioni fornito per moduli e PD
  </tbody>
 </table>
 
-Seguire le procedure ottimali per abilitare un modello di modulo per le rappresentazioni HTML5 e assicurarsi che il comportamento e l&#39;aspetto dei moduli HTML5 e dei PDF basati su XFA siano coerenti. Per un elenco dettagliato delle procedure ottimali, vedere Procedure [consigliate per progettare un modulo HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
+Seguire le procedure ottimali per abilitare un modello di modulo per le rappresentazioni HTML5 e assicurarsi che il comportamento e l&#39;aspetto dei moduli HTML5 e dei PDF basati su XFA siano coerenti. Per un elenco dettagliato delle procedure ottimali, vedere [Procedure consigliate per progettare un modulo HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
 
