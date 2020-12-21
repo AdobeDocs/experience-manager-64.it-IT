@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Poiché è possibile selezionare un file XDP durante la progettazione del processo, è stata aggiunta la possibilità di spostarsi da un modulo adattivo esistente AEM repository. Questa funzione consente al progettista di processi di configurare un modulo adattivo sia nel punto di partenza che in attività.
 
-## Esperienza di progettazione dei processi {#process-design-experience}
+## Esperienza di progettazione del processo {#process-design-experience}
 
 Per abilitare l&#39;uso dei moduli adattivi nella progettazione del processo, effettuare le seguenti operazioni:
 
@@ -31,11 +31,11 @@ Per abilitare l&#39;uso dei moduli adattivi nella progettazione del processo, ef
 * Nel foglio delle proprietà Assegna workbench task/Start Point è possibile nascondere la barra degli strumenti di livello principale/globale di un modulo adattivo.
 * È possibile utilizzare i nuovi profili di azione per eseguire le azioni di rendering e invio nei moduli adattivi.
 
-### Esportazione e importazione di applicazioni LiveCycli {#livecycle-application-export-and-import}
+### Esportazione e importazione di applicazioni di LiveCycle {#livecycle-application-export-and-import}
 
 Poiché i moduli adattivi si trovano nell&#39;archivio AEM, l&#39;esportazione dell&#39;applicazione di LiveCycle contiene solo i riferimenti per i moduli adattivi utilizzati. Pertanto, l&#39;esportazione e l&#39;importazione dell&#39;applicazione di LiveCycle è un processo in due fasi. L&#39;applicazione di LiveCycle include le definizioni dei processi e così via. Un pacchetto separato contenente moduli adattivi viene esportato come file ZIP da AEM. Durante l&#39;importazione, l&#39;applicazione di LiveCycle viene importata tramite Workbench e i moduli adattivi vengono importati tramite AEM.
 
-## Esperienza dell’utente per i moduli adattivi in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
+## Esperienza utente del modulo adattivo in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
 HTML Workspace offre alcuni controlli specifici per i moduli adattivi, oltre ai controlli disponibili per i moduli per dispositivi mobili. Un utente può aggiungere allegati, salvare, firmare, inviare e spostarsi all&#39;interno dei moduli adattivi in HTML Workspace quando l&#39;utente apre un&#39;attività o un punto iniziale. Di seguito sono riportate le specifiche:
 
@@ -57,7 +57,7 @@ HTML Workspace offre alcuni controlli specifici per i moduli adattivi, oltre ai 
 
 1. Aprire  Adobe Experience Manager Forms Workbench.
 
-1. Selezionare **File > Nuovo > Applicazione** o utilizzare l&#39;applicazione esistente per creare un&#39;applicazione.
+1. Passate a **File > Nuovo > Applicazione** oppure utilizzate l&#39;applicazione esistente per creare un&#39;applicazione.
 
    ![Creare una nuova applicazione](assets/create_new_appl.png)
 
@@ -66,17 +66,17 @@ HTML Workspace offre alcuni controlli specifici per i moduli adattivi, oltre ai 
    ![Crea nuovo processo](assets/create_new_process.png)
 
 1. Crea un punto iniziale o Assegna attività e fai doppio clic su di esso.
-1. Nella sezione **[!UICONTROL Presentazione e dati]** , selezionate **[!UICONTROL utilizza una risorsa]** CRX e fate clic sulle ellissi prima della risorsa.
+1. Nella sezione **[!UICONTROL Presentation &amp; Data]** (Presentazione e dati), selezionate **[!UICONTROL use a CRX asset]** e fate clic sulle ellissi prima della risorsa.
 
    ![Utilizzare una risorsa CRX](assets/use_crx_asset.png)
 
-1. Selezionate il modulo adattivo creato tramite l’interfaccia utente Gestisci risorse e fate clic su **[!UICONTROL OK]**.
+1. Selezionate il modulo adattivo creato tramite l’interfaccia utente di Gestione risorse e fate clic su **[!UICONTROL OK]**.
 
    ![Selezione di un modulo adattivo](assets/selecting_form.png)
 
    >[!NOTE]
    >
-   >Per informazioni dettagliate sulla creazione di un modulo adattivo, vedere [Creazione di un modulo](/help/forms/using/creating-adaptive-form.md)adattivo.
+   >Per informazioni dettagliate sulla creazione di un modulo adattivo, vedere [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md).
    >
-   >Per informazioni dettagliate sulla creazione di un processo, consultate [Creazione e gestione di processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione di processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 
