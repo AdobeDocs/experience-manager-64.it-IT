@@ -18,34 +18,34 @@ ht-degree: 0%
 ---
 
 
-# Linee guida per la risoluzione dei problemi per &#39;area di lavoro AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Linee guida per la risoluzione dei problemi &#39;area di lavoro AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 In questo articolo viene illustrato come eseguire il debug &#39;area di lavoro AEM Forms abilitando la registrazione e utilizzando debugger in un browser. Vengono inoltre illustrati alcuni problemi comuni che è possibile incontrare quando si utilizza &#39;area di lavoro di AEM Forms e le relative soluzioni.
 
 ## Impossibile installare  pacchetto dell&#39;area di lavoro AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Dopo aver installato la patch, aprite l’area di lavoro  AEM Forms. Se si verifica l&#39;errore Nessuna risorsa trovata, aprite Gestione pacchetti CRX e reinstallate il `adobe-lc-workspace-pkg-<version>.zip` pacchetto.
+Dopo aver installato la patch, aprite l’area di lavoro  AEM Forms. Se si verifica l&#39;errore Nessuna risorsa trovata, aprite Gestione pacchetti CRX e reinstallate il pacchetto `adobe-lc-workspace-pkg-<version>.zip`.
 
-Durante l&#39;installazione del pacchetto, in caso di errore, `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`eseguite i seguenti passaggi:
+Durante l&#39;installazione del pacchetto, se si verifica un errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, eseguite i seguenti passaggi:
 
 1. Accedete a CRX DE lite. L&#39;URL predefinito è `https://[localhost]:[port]/lc/crx/de/index.jsp`
 1. Elimina il seguente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Andate a Gestione pacchetti. L’URL predefinito è `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
-1. Cercate e installate il `adobe-lc-workspace-pkg-[version].zip` pacchetto.
+1. Andate a Gestione pacchetti. L&#39;URL predefinito è `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Cercate e installate il pacchetto `adobe-lc-workspace-pkg-[version].zip`.
 1. Riavviate il server applicazione.
 
-## Registrazione dell’area di lavoro  AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Registrazione area di lavoro  AEM Forms {#aem-forms-workspace-nbsp-logging}
 
 Potete generare file di registro a vari livelli per consentire la risoluzione ottimale degli errori. Ad esempio, in un’applicazione complessa, l’accesso a livello di componente facilita il debug e la risoluzione dei problemi relativi a componenti specifici.
 
 Nell’area di lavoro  AEM Forms:
 
-* Per ottenere le informazioni di registrazione su un file componente specifico, aggiungete `/log/<ComponentFile>/<LogLevel>` l’URL e premete `Enter`. Tutte le informazioni di registrazione per il file componente al livello di registro specificato vengono stampate nella console.
+* Per ottenere le informazioni di registrazione su un file componente specifico, aggiungete `/log/<ComponentFile>/<LogLevel>` nell&#39;URL e premete `Enter`. Tutte le informazioni di registrazione per il file componente al livello di registro specificato vengono stampate nella console.
 
-* Per ottenere informazioni di registrazione su tutti i file dei componenti, aggiungete `/log/all/trace` l’URL e premete `Enter`.
+* Per ottenere le informazioni di registrazione di tutti i file dei componenti, aggiungere `/log/all/trace` nell&#39;URL e premere `Enter`.
 
 * Formato registro: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -55,7 +55,7 @@ Nell’area di lavoro  AEM Forms:
 
 * Il livello di registro impostato dall&#39;utente viene mantenuto solo per la sessione del browser in questione. Quando l’utente aggiorna la pagina, il livello di registro viene impostato sul valore iniziale per tutti i componenti.
 
-### Elenco dei file componenti nell’area di lavoro  AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Elenco dei file di componenti nell&#39;area di lavoro  AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table> 
  <tbody> 
@@ -142,7 +142,7 @@ Nell’area di lavoro  AEM Forms:
  </tbody> 
 </table>
 
-### Livelli di registro disponibili nell’area di lavoro  AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Livelli di registro disponibili nell&#39;area di lavoro  AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATTILE
 * ERRORE
@@ -156,11 +156,11 @@ Nell’area di lavoro  AEM Forms:
 
 È possibile eseguire il debug di script e stili in diversi browser.
 
-* **Debug in IE**: Per eseguire il debug &#39;area di lavoro AEM Forms in IE, vedi: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Debug in IE**: Per eseguire il debug &#39;area di lavoro AEM Forms in IE, vedi:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Debug in Chrome**: Per aprire il debugger in Chrome, utilizzate la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, vedi: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debug in Chrome**: Per aprire il debugger in Chrome, utilizzate la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, vedi:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Debug in Firefox**: Diversi componenti aggiuntivi sono disponibili per il debug di script e stili in Firefox. Ad esempio, Firebug è una di queste utilità di debug ([https://getfirebug.com](https://getfirebug.com)).
+* **Debug in Firefox**: Diversi componenti aggiuntivi sono disponibili per il debug di script e stili in Firefox. Ad esempio, Firebug è una di tali utilità di debug ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Domande frequenti {#faqs}
 
@@ -176,7 +176,7 @@ Nell’area di lavoro  AEM Forms:
    1. Consultate i dettagli per  plug-in Flash® Player di Adobe.
    1. Disattivate PepperFlash in  plug-in Flash Player Adobe.
 
-1. Ho personalizzato &#39;area di lavoro di AEM Forms ma non sono in grado di visualizzare le modifiche.
+1. Ho personalizzato &#39;area di lavoro di AEM Forms ma non riesco a visualizzare le modifiche.
 
    Cancella la cache del browser e accedi &#39;area di lavoro AEM Forms.
 
