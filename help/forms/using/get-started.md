@@ -21,15 +21,15 @@ ht-degree: 0%
 
 I moduli HTML5 offrono numerose funzionalità pronte per l’uso in ambiente mobile. Consente di espandere le soluzioni e i flussi di lavoro correnti a tablet o smartphone con browser HTML5. Alcune delle funzionalità includono:
 
-* **Rendering basato su HTML5 dei modelli di modulo XFA:** Oltre ai PDF forms normali, è ora possibile eseguire il rendering dei moduli basati su XFA esistenti in formato HTML5. Consente di espandere la piattaforma client a dispositivi mobili (Apple iPad, tablet Android, smartphone e così via) che supportano HTML5 e non supportano  Adobe Reader con XFA Forms. Per ulteriori informazioni sulla funzionalità di rendering basato su HTML5, vedere [Introduzione ai moduli](/help/forms/using/introduction.md)HTML5.
+* **Rendering basato su HTML5 di modelli di modulo XFA:** oltre ai normali PDF forms, è ora possibile eseguire il rendering dei moduli basati su XFA esistenti in formato HTML5. Consente di espandere la piattaforma client a dispositivi mobili (Apple iPad, tablet Android, smartphone e così via) che supportano HTML5 e non supportano  Adobe Reader con XFA Forms. Per ulteriori informazioni sulla funzionalità di rendering basata su HTML5, vedere [Introduzione ai moduli HTML5](/help/forms/using/introduction.md).
 
-* **Gestione di Forms:** Inoltre, AEM include nuove funzionalità per semplificare il processo di organizzazione e gestione dei moduli. È possibile attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
+* **Gestione di Forms:** Inoltre, AEM nuove funzionalità per semplificare il processo di organizzazione e gestione dei moduli. È possibile attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
 
 ## Installazione di moduli HTML5 {#installing-html-forms}
 
 Dopo aver installato AEM, effettuate le seguenti operazioni per importare Mobile Forms in AEM:
 
-* **Configurare e distribuire  pacchetto aggiuntivo AEM Forms:** Installate  pacchetto del componente aggiuntivo AEM Forms per abilitare Mobile Forms. Per informazioni sull&#39;installazione  pacchetto aggiuntivo AEM Forms, consultate [Installazione e configurazione  AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+* **Configurare e distribuire  pacchetto aggiuntivo AEM Forms:** installare  pacchetto aggiuntivo AEM Forms per abilitare Mobile Forms. Per informazioni sull&#39;installazione  pacchetto aggiuntivo AEM Forms, consultate [Installazione e configurazione  AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-* **Importa Forms mobile:** Importare i moduli dal file system locale nell&#39;archivio CRX. Per informazioni dettagliate, vedere [Ottenimento di documenti XDP e PDF in  AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+* **Importa Forms Mobile:** importare i moduli dal file system locale nell&#39;archivio CRX. Per informazioni dettagliate, vedere [Ottenimento di documenti XDP e PDF in  AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
