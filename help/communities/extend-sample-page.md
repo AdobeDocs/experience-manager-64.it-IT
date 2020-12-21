@@ -22,23 +22,23 @@ ht-degree: 0%
 
 Ora che i componenti per il sistema di commenti personalizzato sono presenti nella directory dell&#39;applicazione (/apps), è possibile utilizzare il componente esteso. L’istanza del sistema di commenti in un sito Web da modificare deve impostare resourceType come sistema di commenti personalizzato e includere tutte le librerie client necessarie.
 
-## Identifica ClientLibs Richiesti {#identify-required-clientlibs}
+## Identificare Clientlibs richiesti {#identify-required-clientlibs}
 
 Le librerie client necessarie per lo stile e il funzionamento dei commenti predefiniti sono necessarie anche per i commenti estesi.
 
-La Guida ai componenti [della](components-guide.md) community identifica le librerie client richieste. Passare alla Guida ai componenti e visualizzare il componente Commenti, ad esempio:
+La [Guida ai componenti della community](components-guide.md) identifica le librerie client richieste. Passare alla Guida ai componenti e visualizzare il componente Commenti, ad esempio:
 
 [http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
 
-Tenere presenti le tre librerie client necessarie affinché Commenti possa eseguire correttamente il rendering e il funzionamento. Questi dovranno essere inclusi dove viene fatto riferimento ai commenti estesi, così come la libreria [client dei commenti](extend-create-components.md#create-a-client-library-folder) estesi ( `apps.custom.comments`).
+Tenere presenti le tre librerie client necessarie affinché Commenti possa eseguire correttamente il rendering e il funzionamento. Questi dovranno essere inclusi nel punto in cui viene fatto riferimento ai commenti estesi, così come nella libreria client dei commenti [estesi](extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-## Aggiunta di commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
+## Aggiungi commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
 
-Poiché per ogni pagina può essere presente un solo sistema di commenti, è più semplice creare una pagina di esempio come descritto nella breve esercitazione [Crea una pagina](create-sample-page.md) di esempio.
+Poiché per ogni pagina può essere presente un solo sistema di commenti, è più semplice creare una pagina di esempio come descritto nella breve [Creazione di una pagina di esempio](create-sample-page.md) esercitazione.
 
-Una volta creato, entrate in modalità Progettazione e rendete disponibile il gruppo di componenti Personalizzato per consentire l’aggiunta del `Alt Comments` componente alla pagina.
+Una volta creato, entrate in modalità Progettazione e rendete disponibile il gruppo di componenti Personalizzato per consentire l&#39;aggiunta del componente `Alt Comments` alla pagina.
 
 Affinché il commento venga visualizzato e funzioni correttamente, è necessario aggiungere le librerie client per i commenti all&#39;elenco clientlibslist della pagina (vedere [Clientlibs for Communities Components](clientlibs.md)).
 
@@ -62,7 +62,7 @@ Dopo che il componente personalizzato è stato aggiunto alla pagina, è inoltre 
 
 ### Pubblica: Commento Alt sulla pagina di esempio {#publish-alt-comment-on-sample-page}
 
-Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, dovrebbe essere possibile inserire un commento. Una volta effettuato l’accesso, con un utente [o un amministratore](tutorials.md#demo-users) demo, dovrebbe essere possibile pubblicare un commento.
+Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, dovrebbe essere possibile inserire un commento. Quando si effettua l&#39;accesso, con un utente [demo](tutorials.md#demo-users) o un amministratore, dovrebbe essere possibile pubblicare un commento.
 
 Di seguito è riportato aaron.mcdonald@mailinator.com di un commento:
 
