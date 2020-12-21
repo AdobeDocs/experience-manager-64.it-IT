@@ -25,15 +25,16 @@ Spesso si verificano problemi nella gestione dei ritardi di configurazione e pro
 
 Forms Portal riduce i costi generali di gestione e i ritardi di produzione. Offre agli sviluppatori Web componenti per creare e personalizzare un portale moduli sui siti Web creati con Adobe Experience Manager (AEM).
 
-Per ulteriori informazioni sul portale dei moduli e sulle sue funzioni, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
+Per ulteriori informazioni sul portale dei moduli e sulle relative funzionalità, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
 
 ## Guida introduttiva al portale dei moduli {#getting-started-with-forms-portal}
 
-Passare alla pagina del portale dei moduli pubblicati. Per ulteriori informazioni sulla creazione di una pagina del portale dei moduli, vedere [Creazione di una pagina](/help/forms/using/creating-form-portal-page.md)del portale dei moduli.
+Passare alla pagina del portale dei moduli pubblicati. Per ulteriori informazioni sulla creazione di una pagina del portale dei moduli, vedere [Creazione di una pagina del portale dei moduli](/help/forms/using/creating-form-portal-page.md).
 
 Il componente Ricerca e filtro del portale Roma visualizza i moduli disponibili nell&#39;istanza Pubblica del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento della creazione della pagina del portale dei moduli. La pagina del portale dei moduli ha un aspetto simile a quello illustrato nell&#39;immagine seguente:
 
-![Pagina portale moduli di esempio ](assets/forms-portal-page.png)**Figura:** *Pagina del portale moduli di esempio*
+![Pagina portale moduli di esempio  ](assets/forms-portal-page.png)
+**Figura:Pagina portale** *moduli di esempio*
 
 ### Ricerca e filtro {#search-and-lister}
 
@@ -54,7 +55,8 @@ Il componente Cerca e registri consente di aggiungere le seguenti funzionalità 
 
 La ricerca full text consente di trovare ed elencare moduli basati sulle parole chiave specificate.
 
-![Una finestra di dialogo](assets/search-panel.png)di ricerca **avanzata Figura:** *Finestra di dialogo di ricerca avanzata*
+![Una ](assets/search-panel.png)
+**finestra di dialogo di ricerca avanzataFigura:** *Una finestra di dialogo di ricerca avanzata*
 
 La funzione di ricerca avanzata consente di effettuare ricerche nei moduli in base alle proprietà specificate del modulo. Questo fornisce risultati più specifici della ricerca full-text. La ricerca avanzata include la ricerca basata su tag, proprietà (come Autore, Descrizione e Titolo), data di modifica e testo completo.
 
@@ -62,7 +64,8 @@ Lister visualizza i moduli in base ai parametri di ricerca. Ogni modulo del risu
 
 ### Compilazione di un modulo {#filling-a-form}
 
-![Esempio di modulo](assets/filling_a_form.png)adattivo **Figura:** *Esempio di modulo adattivo*
+![Esempio di ](assets/filling_a_form.png)
+**modulo adattivoFigura:** *Un esempio di modulo adattivo*
 
 È possibile accedere ai moduli dal collegamento fornito insieme al modulo nel componente Ricerca e Controllo della pagina.
 
@@ -78,11 +81,12 @@ Al termine della compilazione del modulo, l&#39;utente invia i moduli facendo cl
 
 >[!NOTE]
 >
->I moduli inviati vengono visualizzati nella scheda Forms inviata solo se l&#39;azione di invio per il modulo adattivo è configurata come azione di invio di Forms Portal. Per ulteriori informazioni sulle azioni di invio, vedere [Configurazione dell&#39;azione](/help/forms/using/configuring-submit-actions.md)di invio.
+>I moduli inviati vengono visualizzati nella scheda Forms inviata solo se l&#39;azione di invio per il modulo adattivo è configurata come azione di invio di Forms Portal. Per ulteriori informazioni sulle azioni di invio, vedere [Configurazione dell&#39;azione di invio](/help/forms/using/configuring-submit-actions.md).
 
-![Bozze e contributi componente](assets/draft-submission.png)**Figura:** *Bozze e invii, componente*
+![Bozze e ](assets/draft-submission.png)
+**componenti per inviiFigura:componente** *Bozze e invii*
 
-## Start a new form using submitted form data {#start-a-new-form-using-submitted-form-data}
+## Avviare un nuovo modulo utilizzando i dati del modulo inviati {#start-a-new-form-using-submitted-form-data}
 
 Alcuni moduli devono essere compilati e inviati molto spesso. Ad esempio, il modulo per la presentazione della dichiarazione dei redditi individuale viene inviato ogni anno. In tali casi, mentre una parte delle informazioni cambia ogni volta che si compila il modulo, la maggior parte di esso come i dati personali e familiari non cambia. Tuttavia, è comunque necessario compilare nuovamente l&#39;intero modulo da zero.
 
