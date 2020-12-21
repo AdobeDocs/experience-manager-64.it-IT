@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di Maven for Communities {#using-maven-for-communities}
+# Utilizzo di Paradiso per community {#using-maven-for-communities}
 
 ## Panoramica {#overview}
 
@@ -28,8 +28,8 @@ Questa sezione della documentazione AEM Communities  si aggiunge a:
 
 Esistono ora due artefatti &quot;uber&quot; che sostituiscono singoli artefatti:
 
-* AEM API [Community](#communities-api-jar-artifact)
-* AEM API [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Community API jar](#communities-api-jar-artifact)
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Artifact API community {#communities-api-jar-artifact}
 
@@ -47,7 +47,7 @@ Di seguito è riportato un esempio di GAV per il  Jar API di AEM Communities:
 Verificate che la versione specificata corrisponda alla versione del pacchetto Community installata per  AEM Communities. Per verificare il numero di versione installato:
 
 1. Effettua l’accesso con privilegi amministrativi.
-2. Passa a Gestione [](../../help/sites-administering/package-manager.md)pacchetti. Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+2. Passare a [Gestione pacchetti](../../help/sites-administering/package-manager.md). Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 3. individuare il pacchetto *cq-socialcommunity-pkg-1.x.xxx*
 4. estraete la versione dal nome del pacchetto
