@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Quando caricate un file PDF nell’applicazione Web con estensione Acrobat Reader DC, potete visualizzare queste informazioni:per verificare se è stato esteso il Reader, se sono stati applicati i diritti di utilizzo e le relative date di scadenza.
 
-1. Accedete all&#39;applicazione Web delle estensioni Acrobat Reader DC all&#39;indirizzo http://localhost:*[port]*/ReaderExtensions (dove *[port]* è il numero di porta del server dell&#39;applicazione).
+1. Accedete all&#39;applicazione Web delle estensioni Acrobat Reader DC all&#39;indirizzo http://localhost:*[porta]*/ReaderExtensions (dove *[porta]* è il numero di porta del server dell&#39;applicazione).
 1. Fate clic su Sfoglia per caricare il file PDF, quindi fate clic su Informazioni. Le informazioni vengono visualizzate sotto il nome del file.
 
    Per informazioni dettagliate su come modificare i diritti di utilizzo del file, consultate la Guida delle estensioni Acrobat Reader DC.
