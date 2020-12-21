@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Personalizzazione delle finestre di dialogo degli errori {#customizing-error-dialogs}
 
-’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Effettuate i passaggi [Generici per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) dell&#39;area di lavoro AEM Forms, seguiti dai passaggi indicati di seguito per personalizzare le finestre di dialogo degli errori.
+’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Per personalizzare le finestre di dialogo degli errori, eseguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md), quindi eseguite i passaggi indicati di seguito.
 
 ## Personalizzazione del testo {#customizing-text}
 
-1. Nel `/apps/ws/locales/en-US/translation.json` file, modificate i valori di `wserror` in base ai valori personalizzati. Ad esempio:
+1. Nel file `/apps/ws/locales/en-US/translation.json`, modificate i valori di `wserror` in base ai valori personalizzati. Esempio:
 
    ```
    "wserror" : {
@@ -48,9 +48,9 @@ ht-degree: 1%
    >
    >Aggiungete le coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
-## Personalizzazione dei CSS {#customizing-css}
+## Personalizzazione di CSS {#customizing-css}
 
-1. Per aggiornare la finestra di dialogo, l’intestazione, l’area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali, è possibile aggiungere nel `/apps/ws/css/newStyle.css` file il seguente frammento:
+1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali aggiungendo il seguente frammento nel file `/apps/ws/css/newStyle.css`:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -185,7 +185,7 @@ ht-degree: 1%
    }
    ```
 
-1. Per l&#39;estensione del pulsante della barra del piede, separare le estensioni `.error-dialog` e `.foot-bar` il pulsante dall&#39;elenco composito. Per apportare questa modifica, aggiungere quanto segue nel file newStyle.css:
+1. Per l&#39;estensione del pulsante della barra del piede, separare le estensioni dei pulsanti `.error-dialog` e `.foot-bar` dall&#39;elenco composito. Per apportare questa modifica, aggiungere quanto segue nel file newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -220,7 +220,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se fate riferimento ad altre immagini, aggiungetele alla gerarchia desiderata sotto `/apps/ws/images`.
+>Se fate riferimento a immagini aggiuntive, aggiungetele alla gerarchia desiderata in `/apps/ws/images`.
 
 ## Esempi {#examples}
 
