@@ -26,17 +26,17 @@ Per  AEM Communities, esistono diversi rapporti a cui è possibile accedere in d
 
 In generale, le relazioni sono le seguenti:
 
-* [Rapporto](#assignments-report) Assegnazioni - per una comunità di [abilitazione](overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM
-* [Rapporto](#views-report) visualizzazioni - fornisce un grafico dei contenuti per membri della community e visitatori del sito per qualsiasi sito della community
-* [Rapporto](#posts-report) Post - fornisce un grafico dei vari tipi di post dei membri della community in qualsiasi sito della community
+* [Rapporto](#assignments-report)  assegnazioni - per una comunità di  [abilitazione](overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM
+* [Rapporto](#views-report)  Viste: fornisce un grafico delle visualizzazioni dei contenuti per membri della community e visitatori del sito per qualsiasi sito della community
+* [Post Report](#posts-report) - fornisce un grafico dei vari tipi di post da parte dei membri della community a qualsiasi sito della community
 
-Quando [Adobe Analytics è abilitato](sites-console.md#analytics), i rapporti includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ciascuna risorsa di abilitazione nel tempo
+Quando [ Adobe Analytics è abilitato](sites-console.md#analytics), i report includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ogni risorsa di abilitazione nel tempo
 
 I rapporti tabulari possono essere esportati in formato .csv per l’elaborazione successiva.
 
 ## Console di reporting {#reporting-consoles}
 
-### Report per siti community {#reports-for-community-sites}
+### Rapporti per siti community {#reports-for-community-sites}
 
 * Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Rapporti]**
 * Scegli da
@@ -50,11 +50,11 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
 
 ### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
 
-* Dalla navigazione globale: **[!UICONTROL Navigation > Communities > Resources]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione > Community > Risorse]**
 * Selezione di un sito community di abilitazione esistente
-   * Selezionate l’icona **[!UICONTROL Rapporto]** per generare rapporti che coprano tutte le risorse di abilitazione
+   * Selezionate l&#39;icona **[!UICONTROL Report]** per generare rapporti che coprono tutte le risorse di abilitazione
    * Selezionare un percorso di apprendimento per l&#39;abilitazione
-   * Seleziona l’icona **[!UICONTROL Rapporto]** per generare i rapporti
+   * Selezionare l&#39;icona **[!UICONTROL Report]** per generare report per
       * Risorse di abilitazione incluse
       * Gli studenti assegnati al percorso di apprendimento
 * Tali rapporti forniscono:
@@ -65,7 +65,7 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
       * Numero di osservazioni fatte
       * Valutazione a stella
 
-Per ulteriori dettagli, consultate la sezione [](resources.md#report) Rapporti della console Risorse.
+Per ulteriori dettagli, vedere [Sezione Rapporti](resources.md#report) della console Risorse.
 
 ## Rapporto assegnazioni {#assignments-report}
 
@@ -77,13 +77,16 @@ Il rapporto fornisce informazioni sui loro progressi, nonché eventuali commenti
 
 Seleziona i criteri per il rapporto:
 
-* **[!UICONTROL Sito]** Selezione di un sito community di abilitazione
+* ****
+SitoSelezione di un sito di abilitazione per community
 * **[!UICONTROL Utente o gruppo]**
    * Selezionate Utente per generare un rapporto per uno studente
-   * Selezionate Gruppo per generare un rapporto per un gruppo di utenti in formazione. Il servizio tunnel accederà ai membri e ai gruppi di membri dall’ambiente di pubblicazione
-* **[!UICONTROL Assegnazione]** Scegliere tra le risorse di abilitazione assegnate allo studente selezionato
+   * Selezionate Gruppo per generare un rapporto per un gruppo di utenti in formazione
+Il servizio tunnel accederà ai membri e ai gruppi di membri dall&#39;ambiente di pubblicazione
+* **[!UICONTROL Assegnazione:]**
+scegliete tra le risorse di abilitazione assegnate agli studenti selezionati.
 
-Selezionate **[!UICONTROL Genera]** per creare il rapporto:
+Selezionare **[!UICONTROL Generate]** per creare il rapporto:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -95,15 +98,18 @@ La console Visualizzazioni consente di generare rapporti sulle visualizzazioni d
 
 Seleziona i criteri per il rapporto:
 
-* **[!UICONTROL Sito]** Selezionare un sito community
-* **[!UICONTROL Tipo]** di contenuto Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito
-* Intervallo di tempo: selezionare una delle seguenti opzioni:
+* ****
+SitoSelezione di un sito community
+* **[!UICONTROL Content]**
+TypePuò scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito
+* Intervallo di tempo
+Selezionate una delle seguenti opzioni:
    * Ultimi 7 giorni
    * Ultimi 30 giorni
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionate **[!UICONTROL Genera]** per creare il rapporto:
+Selezionare **[!UICONTROL Generate]** per creare il rapporto:
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -115,15 +121,18 @@ La console Post consente di generare rapporti sul numero di post alle funzioni d
 
 Seleziona i criteri per il rapporto:
 
-* **[!UICONTROL Sito]** Selezionare un sito community
-* **[!UICONTROL Tipo]** di contenuto Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito
-* Intervallo di tempo: selezionare una delle seguenti opzioni:
+* ****
+SitoSelezione di un sito community
+* **[!UICONTROL Content]**
+TypePuò scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito
+* Intervallo di tempo
+Selezionate una delle seguenti opzioni:
    * Ultimi 7 giorni
    * Ultimi 30 giorni
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionate **[!UICONTROL Genera]** per creare il rapporto:
+Selezionare **[!UICONTROL Generate]** per creare il rapporto:
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
