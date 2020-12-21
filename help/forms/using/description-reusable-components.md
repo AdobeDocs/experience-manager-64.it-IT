@@ -20,9 +20,9 @@ ht-degree: 9%
 
 # Descrizione dei componenti riutilizzabili {#description-of-reusable-components}
 
- area di lavoro AEM Forms è composta da componenti [riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) , organizzati in una specifica struttura [di](/help/forms/using/folder-structure.md) cartelle in CRX™. Ciascun componente dispone di un modello, una vista e un file di modello nella posizione specificata nella struttura delle cartelle, dipendenze JavaScript™ da altri file componenti, eventi ascoltati dagli oggetti componenti e JavaScript che attivano tali eventi &#39;area di lavoro di AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi file e dipendenze dei componenti è riportato qui.
+&#39;area di lavoro AEM Forms è composta da [componenti riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) organizzati in una struttura [di cartelle ](/help/forms/using/folder-structure.md) specifica in CRX™. Ciascun componente dispone di un modello, una vista e un file di modello nella posizione specificata nella struttura delle cartelle, dipendenze JavaScript™ da altri file componenti, eventi ascoltati dagli oggetti componenti e JavaScript che attivano tali eventi &#39;area di lavoro di AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi file e dipendenze dei componenti è riportato qui.
 
-## ElencoAttività {#tasklist}
+## Elenco attività {#tasklist}
 
 <table> 
  <tbody> 
@@ -186,7 +186,7 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## TeamQueues {#teamqueues}
+## TeamCode {#teamqueues}
 
 <table> 
  <tbody> 
@@ -266,7 +266,7 @@ ht-degree: 9%
 >
 >TeamFilter riceve l&#39;evento che indica quale attività è stata selezionata dal componente TaskList. Sebbene questi componenti condividano la classe del modello, non esiste altra dipendenza.
 
-## DettagliAttività {#taskdetails}
+## TaskDetails {#taskdetails}
 
 <table> 
  <tbody> 
@@ -967,7 +967,7 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## UserSearch {#usersearch}
+## Ricerca utente {#usersearch}
 
 <table> 
  <tbody> 
