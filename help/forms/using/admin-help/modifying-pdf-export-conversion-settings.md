@@ -1,6 +1,6 @@
 ---
-title: Modifica delle impostazioni di conversione PDF Export
-seo-title: Modifica delle impostazioni di conversione PDF Export
+title: Modifica delle impostazioni di conversione di esportazione PDF
+seo-title: Modifica delle impostazioni di conversione di esportazione PDF
 description: Scoprite come modificare le impostazioni di conversione di esportazione PDF.
 seo-description: Scoprite come modificare le impostazioni di conversione di esportazione PDF.
 uuid: 7bade010-f422-4a76-a876-705e3cf346e6
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Modifica delle impostazioni di conversione PDF Export {#modifying-the-pdf-export-conversion-settings}
+# Modifica delle impostazioni di conversione dell&#39;esportazione PDF {#modifying-the-pdf-export-conversion-settings}
 
 Utilizzate la procedura seguente per modificare le impostazioni di conversione per l’esportazione di un file PDF, EPS, DOC, TXT, RTF, XML o HTML. Per impostazione predefinita, il file PDF utilizza le impostazioni predefinite Salva con nome configurate in  Adobe Acrobat Professional o  Acrobat Standard. Ad esempio, le impostazioni predefinite Salva con nome in  Acrobat per la conversione di un file PDF in EPS determineranno la conversione di una sola pagina del file PDF in EPS.
 
