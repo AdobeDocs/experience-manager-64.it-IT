@@ -24,21 +24,21 @@ ht-degree: 0%
 
 Se necessario, potete utilizzare i tag HTML supportati da  Adobe Flash® Player per formattare l&#39;aspetto del testo:
 
-* &lt;a> Tag ancoraggio
-* &lt;b> Grassetto
-* &lt;br> Tag di interruzione
-* &lt;font> Tag font
+* &lt;a> Tag ancoraggio&lt;/a>
+* &lt;b> Grassetto&lt;/b>
+* &lt;br> Tag break
+* &lt;font> Tag font&lt;/font>
 * &lt;img> Tag immagine
-* &lt;i> Tag corsivo
+* &lt;i> Tag corsivo&lt;/i>
 * &lt;li> Tag elemento elenco
 * &lt;p> Tag paragrafo
-* Tag &lt;span> Span
-* &lt;textformat> Tag del formato di testo
-* Tag &lt;u> sottolineato
+* &lt;span> Tag Span&lt;/span>
+* &lt;textformat> Tag formato testo
+* &lt;u> Tag di sottolineatura&lt;/u>
 
-Per ulteriori informazioni sui tag supportati, vedere la definizione della `htmlText` proprietà per la classe TextField nella Guida di riferimento [del linguaggio di](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Per ulteriori informazioni sui tag supportati, vedere la definizione della proprietà `htmlText` per la classe TextField nella [Guida di riferimento del linguaggio Flex](https://www.adobe.com/support/documentation/en/flex/).
 
-## Imposta il messaggio del giorno {#set-the-message-of-the-day}
+## Impostare il messaggio del giorno {#set-the-message-of-the-day}
 
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Messaggio del giorno.
 1. Nella casella Messaggio del giorno, inserite il testo da visualizzare nella schermata di benvenuto.
