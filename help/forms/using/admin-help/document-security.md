@@ -25,15 +25,15 @@ La protezione dei documenti garantisce che solo gli utenti autorizzati possano u
 *  file Adobe PDF
 * File di Microsoft® Word, Excel e PowerPoint
 
-Per ulteriori informazioni sulla protezione dei tipi di file supportati tramite i criteri, vedere Informazioni [](https://www.adobe.com/go/learn_aemforms_doc_security_63)aggiuntive sulla protezione dei documenti.
+Per ulteriori informazioni sulla protezione dei tipi di file supportati tramite i criteri, vedere [Informazioni aggiuntive sulla protezione dei documenti](https://www.adobe.com/go/learn_aemforms_doc_security_63).
 
 La protezione dei documenti consente di creare, memorizzare e applicare facilmente ai documenti impostazioni predefinite per la salvaguardia della riservatezza. Per evitare che le informazioni si diffondano oltre la portata dell&#39;utente, è inoltre possibile monitorare e controllare in che modo i destinatari utilizzano i documenti dopo averli distribuiti.
 
-È possibile proteggere i documenti utilizzando i criteri. Un *criterio* è una raccolta di informazioni che include impostazioni per la salvaguardia della riservatezza e un elenco di utenti autorizzati. Le impostazioni di riservatezza specificate in un criterio determinano in che modo il destinatario può utilizzare il documento a cui si applica il criterio. Ad esempio, è possibile specificare se i destinatari possono stampare o copiare il testo, modificare il testo o aggiungere firme e commenti ai documenti protetti.
+È possibile proteggere i documenti utilizzando i criteri. Una *policy* è una raccolta di informazioni che include impostazioni per la salvaguardia della riservatezza e un elenco di utenti autorizzati. Le impostazioni di riservatezza specificate in un criterio determinano in che modo il destinatario può utilizzare il documento a cui si applica il criterio. Ad esempio, è possibile specificare se i destinatari possono stampare o copiare il testo, modificare il testo o aggiungere firme e commenti ai documenti protetti.
 
 Gli utenti di Document Security creano i criteri tramite le pagine Web dell&#39;utente finale. Gli amministratori utilizzano le pagine Web relative alla protezione dei documenti per creare set di criteri che contengono criteri condivisi disponibili per tutti gli utenti autorizzati.
 
-Sebbene i criteri siano memorizzati nella protezione dei documenti, tali criteri vengono applicati ai documenti tramite l&#39;applicazione client. Come applicare i criteri ai documenti PDF è descritto dettagliatamente nella *Guida* di Acrobat. L&#39;applicazione dei criteri mediante l&#39;uso di altre applicazioni, come Microsoft Office, è documentata nella Guida *delle estensioni* Acrobat Reader DC relativa all&#39;applicazione.
+Sebbene i criteri siano memorizzati nella protezione dei documenti, tali criteri vengono applicati ai documenti tramite l&#39;applicazione client. Come applicare i criteri ai documenti PDF è descritto dettagliatamente in *Guida di Acrobat*. L&#39;applicazione dei criteri tramite l&#39;uso di altre applicazioni, come Microsoft Office, è documentata nella Guida delle *estensioni Acrobat Reader DC* per l&#39;applicazione.
 
 Quando applicate un criterio a un documento, le impostazioni di riservatezza specificate nel criterio proteggono le informazioni contenute nel documento. Le impostazioni per la salvaguardia della riservatezza proteggono inoltre tutti i file (testo, audio o video) presenti in un documento PDF. Potete distribuire il documento protetto tramite criterio ai destinatari autorizzati dal criterio.
 
@@ -47,7 +47,7 @@ Tramite la protezione dei documenti è possibile monitorare i documenti protetti
 
 Document Security è costituito da un&#39;interfaccia server e utente:
 
-**Server:** Il componente centrale attraverso il quale la protezione dei documenti esegue transazioni quali l&#39;autenticazione degli utenti, la gestione in tempo reale dei criteri e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per criteri, record di controllo e altre informazioni correlate.
+**Server:** Il componente centrale tramite il quale la protezione dei documenti esegue transazioni quali l&#39;autenticazione degli utenti, la gestione in tempo reale dei criteri e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per criteri, record di controllo e altre informazioni correlate.
 
 **Pagine Web:** Interfaccia in cui vengono creati criteri, gestiti i documenti protetti tramite criterio e monitorati gli eventi associati ai documenti protetti tramite criterio. Gli amministratori possono inoltre configurare opzioni globali quali l&#39;autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
 
@@ -148,7 +148,7 @@ Gli amministratori di Document Security possono creare ruoli personalizzati util
 
 ## Criteri e documenti protetti tramite criterio {#policies-and-policy-protected-documents}
 
-Un *criterio* definisce un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. Un criterio consente inoltre di modificare dinamicamente le autorizzazioni per un documento. Consente alla persona che garantisce il documento di modificare le impostazioni di riservatezza per revocare l&#39;accesso al documento o cambiare il criterio.
+Un *policy* definisce un insieme di impostazioni per la salvaguardia della riservatezza e consente agli utenti di accedere a un documento a cui viene applicato il criterio. Un criterio consente inoltre di modificare dinamicamente le autorizzazioni per un documento. Consente alla persona che garantisce il documento di modificare le impostazioni di riservatezza per revocare l&#39;accesso al documento o cambiare il criterio.
 
 La protezione tramite criterio può essere applicata a un documento PDF utilizzando  Adobe Acrobat® Pro e  Acrobat Standard. La protezione tramite criterio può essere applicata ad altri tipi di file, come file Microsoft Word, Excel e PowerPoint, utilizzando l&#39;applicazione client con le estensioni Acrobat Reader DC appropriate installate.
 
@@ -202,15 +202,15 @@ I passaggi nel diagramma sono i seguenti:
 
 Potete inoltre utilizzare i documenti protetti tramite criterio offline (senza una connessione Internet o di rete) se il criterio consente l&#39;accesso offline. Per sincronizzare il documento è innanzitutto necessario eseguire il login per proteggere il documento. Potete quindi utilizzare il documento per la durata del periodo di tempo consentito per l&#39;utilizzo non in linea specificato nel criterio.
 
-Al termine del periodo consentito per l&#39;utilizzo non in linea, è necessario sincronizzare nuovamente il documento con la protezione del documento, accedendo online e aprendo un documento protetto tramite criterio oppure utilizzando un comando nell&#39;applicazione client. (Per informazioni dettagliate, consultate *Guida* di Acrobat o la Guida *alle estensioni* Acrobat Reader DC appropriata.)
+Al termine del periodo consentito per l&#39;utilizzo non in linea, è necessario sincronizzare nuovamente il documento con la protezione del documento, accedendo online e aprendo un documento protetto tramite criterio oppure utilizzando un comando nell&#39;applicazione client. (Per ulteriori informazioni, vedere *Acrobat Help* o la *Guida delle estensioni Acrobat Reader DC*.)
 
 Se si salva una copia di un documento protetto tramite criterio utilizzando il comando Salva o Salva con nome, il criterio viene applicato e imposto automaticamente per il nuovo documento. Eventi come i tentativi di aprire il nuovo documento vengono anche sottoposti a controllo e registrati per il documento originale.
 
 ## Set di criteri {#policy-sets}
 
-*I set* di criteri vengono utilizzati per raggruppare un insieme di criteri con uno scopo aziendale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema.
+*I* set di criteri vengono utilizzati per raggruppare un insieme di criteri che hanno uno scopo commerciale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema.
 
-A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente che dispone di autorizzazioni aggiuntive. Il coordinatore *del set di* criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
+A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente che dispone di autorizzazioni aggiuntive. Il *coordinatore del set di criteri* è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
 
 I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
@@ -226,4 +226,4 @@ I set di criteri vengono creati ed eliminati nelle pagine Web dell&#39;amministr
 
 I set di criteri sono generalmente resi disponibili a un numero limitato di utenti specificando quali utenti o gruppi all&#39;interno di un dominio possono utilizzare i criteri del set di criteri per proteggere i documenti.
 
-Quando è installata la protezione del documento, viene creato un set di criteri predefinito denominato Set *di criteri* globali. L&#39;amministratore che ha installato il software gestisce questo set di criteri.
+Quando è installata la protezione del documento, viene creato un set di criteri predefinito denominato *Set di criteri globali*. L&#39;amministratore che ha installato il software gestisce questo set di criteri.
