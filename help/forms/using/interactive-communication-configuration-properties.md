@@ -18,13 +18,13 @@ ht-degree: 7%
 ---
 
 
-# Proprietà di configurazione di Interactive Communications {#interactive-communications-configuration-properties}
+# Proprietà di configurazione delle comunicazioni interattive {#interactive-communications-configuration-properties}
 
 Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
 
-Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto [componente aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms. Gli autori delle comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina Configurazione **console Web di** Adobe Experience Manager.
+Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto [ componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Gli autori delle comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina **Configurazione della console Web di Adobe Experience Manager**.
 
-Aprite la pagina Configurazione **console Web di** Adobe Experience Manager utilizzando il seguente URL:
+Aprite la pagina **Configurazione console Web Adobe Experience Manager** utilizzando il seguente URL:
 
 https://&lt;server>:&lt;porta>/&lt;percorsoContesto>/system/console/configMgr
 
@@ -37,7 +37,7 @@ Le proprietà di configurazione includono:
 
 ## Configurazione frammenti di documento {#document-fragments-configuration}
 
-Toccate Configurazione **frammenti di** documento nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per i frammenti di documento.
+Toccate **Configurazione frammenti di documento** nella pagina **Configurazione console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione per i frammenti di documento.
 
 <table> 
  <tbody> 
@@ -58,24 +58,24 @@ Toccate Configurazione **frammenti di** documento nella pagina Configurazione **
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td>Rientro</td> 
    <td>Larghezza di una singola unità di rientro applicata al testo nei frammenti di documento elenco.</td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima numeri romani</td> 
    <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano numeri romani nei frammenti del documento elenco. </td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima</td> 
-   <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano elenchi numerati, ad eccezione dei numeri romani, nei frammenti del documento elenco.</td> 
-   <td>8.0mm</td> 
+   <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano elenchi numerati, ad eccezione dei numeri romani, nei frammenti di documento elenco.</td> 
+   <td>8,0 mm</td> 
    <td>Numero</td> 
   </tr> 
  </tbody> 
@@ -83,7 +83,7 @@ Toccate Configurazione **frammenti di** documento nella pagina Configurazione **
 
 ## Crea configurazione corrispondenza {#create-correspondence-configuration}
 
-Toccate **Crea configurazione** corrispondenza nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per l’interfaccia utente dell’agente.
+Toccate **Crea configurazione corrispondenza** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente dell&#39;agente.
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
@@ -92,7 +92,7 @@ Toccate **Crea configurazione** corrispondenza nella pagina Configurazione **con
 
 ## Configurazione canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toccate Configurazione **canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per il canale Web per Forms adattivo e per le comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
+Toccate **Configurazione canale Web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per il canale Web per Forms adattivo e per le comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
@@ -100,9 +100,9 @@ Toccate Configurazione **canale Web per moduli** adattivi e comunicazioni intera
 | Numero massimo di voci della cache | Impostare il numero massimo di moduli adattivi e comunicazioni interattive che è possibile recuperare utilizzando la memoria cache. | 100 | Numero |
 | Rendi univoco il nome del file | Selezionate la casella di controllo per avere nomi univoci per i file inclusi come allegati in Forms adattivo e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
 
-## Configurazione del tema del canale del canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configurazione del tema del canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toccate Configurazione **tema canale Web per moduli** adattivi e comunicazioni interattive nella pagina Configurazione **console Web di** Adobe Experience Manager per visualizzare le proprietà di configurazione per i temi canale Web per Forms adattivo e per le comunicazioni interattive.
+Toccate **Configurazione del tema del canale Web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione della console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per i temi del canale Web per Forms adattivo e per le comunicazioni interattive.
 
 <table> 
  <tbody> 
