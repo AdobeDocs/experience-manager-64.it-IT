@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Modifica del contenuto Page Zero in Designer {#changing-page-zero-content-in-designer}
+# Modifica del contenuto della pagina Zero in Designer {#changing-page-zero-content-in-designer}
 
 Il contenuto della pagina Zero è visualizzato per impostazione predefinita quando un visualizzatore Adobe PDF non , ad esempio il visualizzatore PDF predefinito in Chrome o Firefox, non è in grado di leggere il contenuto del modulo PDF/XFA. Il messaggio predefinito Page Zero è riportato di seguito.
 
@@ -28,12 +28,12 @@ Il contenuto della pagina Zero è visualizzato per impostazione predefinita quan
 
 1. Aprire il modulo per il quale si desidera modificare il contenuto Page Zero.
 
-1. Click **File > Form Properties**.
+1. Fare clic su **File > Proprietà modulo**.
 
 1. Nella finestra di dialogo Proprietà modulo, fare clic su ![più](assets/plus.png) (icona più) per aggiungere una proprietà personalizzata.
 
-1. Specificate **_pagezerocontent** come nome della proprietà.
-1. Aggiungete il nuovo messaggio Page Zero, in formato RTF, come valore. Ad esempio:
+1. Specificare **_pagezerocontent** come nome della proprietà.
+1. Aggiungete il nuovo messaggio Page Zero, in formato RTF, come valore. Esempio:
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </span>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </span>https://www.adobe.com/go/acrreader.</p></body>`
 
