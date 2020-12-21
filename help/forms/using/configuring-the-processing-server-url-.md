@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Configurazione delle impostazioni di AEM DS {#configuring-aem-ds-settings}
 
-Questo articolo descrive come configurare **AEM Servizi** impostazioni di DS. Questa impostazione può essere utilizzata in più scenari, ad esempio:
+Questo articolo descrive come configurare **AEM DS Settings Service**. Questa impostazione può essere utilizzata in più scenari, ad esempio:
 
 * In Gestione della corrispondenza
 
    * Per configurare  flusso di lavoro AEM Forms
-   * Durante l&#39;utilizzo del portale dei moduli per il salvataggio remoto della bozza o dell&#39;invio
+   * Durante l&#39;utilizzo del portale dei moduli per il salvataggio remoto della bozza/invio
 
 * Nei moduli adattivi per i casi in cui il modulo adattivo viene inviato dall’istanza di pubblicazione
 
-Di seguito sono descritti i passaggi per configurare le impostazioni **[!UICONTROL DS]** AEM:
+Seguono i passaggi per configurare le **[!UICONTROL AEM Impostazioni DS]**:
 
 1. Aprite Configuration Manager nell&#39;istanza di pubblicazione utilizzando l&#39;URL:
 
@@ -36,11 +36,11 @@ Di seguito sono descritti i passaggi per configurare le impostazioni **[!UICONTR
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Nella finestra Configurazione **[!UICONTROL console Web di]** Adobe Experience Manager, individuare e fare clic sull&#39;opzione Impostazioni **[!UICONTROL DS]** AEM.
+1. Nella finestra **[!UICONTROL Configurazione console Web Adobe Experience Manager]**, individuare e fare clic sull&#39;opzione **[!UICONTROL AEM Impostazioni DS]**.
 
    ![ds_settings](assets/ds_settings.png)
 
-1. Nella finestra **[!UICONTROL AEM Servizi]** impostazioni DS sono visualizzate le impostazioni di configurazione comuni per AEM Componenti DS.
+1. Nella finestra **[!UICONTROL AEM DS Settings Service]** vengono visualizzate le impostazioni di configurazione comuni per AEM componenti DS.
 
    ![ds_settings_1](assets/ds_settings_1.png)
 
@@ -48,7 +48,7 @@ Di seguito sono descritti i passaggi per configurare le impostazioni **[!UICONTR
 
    **[!UICONTROL URL]** server di elaborazione: Il server di elaborazione è il server in cui è necessario attivare il flusso di lavoro Forms o AEM. Può corrispondere all’URL dell’istanza di creazione AEM o dell’altro URL del server (http:// localhost:port/).
 
-   **[!UICONTROL Nome]** utente del server di elaborazione: Nome utente dell’utente del flusso di lavoro [in base all’URL del server utilizzato]
+   **[!UICONTROL Nome]** utente del server di elaborazione: Nome utente dell’utente del flusso di lavoro  [in base all’URL del server utilizzato]
 
    **[!UICONTROL Password]** del server di elaborazione: Password utente flusso di lavoro
 
