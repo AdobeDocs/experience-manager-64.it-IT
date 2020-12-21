@@ -24,28 +24,28 @@ Tali capacità sono ulteriormente migliorate.  AEM Forms ora supporta la collabo
 
 Ad esempio, consideriamo la gestione della corrispondenza come esempio di riferimento per l&#39;integrazione con &#39;area di lavoro AEM Forms. Gestione corrispondenza ha il concetto di &quot;Lettera&quot;, che può essere rappresentata e consente azioni.
 
-## Creare le risorse Gestione corrispondenza {#create-correspondence-management-assets}
+## Creare risorse per la gestione della corrispondenza {#create-correspondence-management-assets}
 
-Per iniziare, create un modello di gestione della corrispondenza di esempio di cui viene eseguito il rendering nell’area di lavoro  AEM Forms. Per ulteriori dettagli, vedere [Creare un modello](/help/forms/using/create-letter.md)di lettera.
+Per iniziare, create un modello di gestione della corrispondenza di esempio di cui viene eseguito il rendering nell’area di lavoro  AEM Forms. Per ulteriori dettagli, vedere [Creare un modello di lettera](/help/forms/using/create-letter.md).
 
 Per verificare se il rendering del modello di gestione della corrispondenza può essere eseguito correttamente, accedete al modello di gestione della corrispondenza nel relativo URL. L&#39;URL ha un pattern simile a `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-dove `encodedLetterId` è l’ID lettera con codifica URL. Quando si definisce il processo di rendering per l&#39;attività dell&#39;area di lavoro in Workbench, specificare lo stesso ID lettera.
+dove `encodedLetterId` è l&#39;ID lettera con codifica URL. Quando si definisce il processo di rendering per l&#39;attività dell&#39;area di lavoro in Workbench, specificare lo stesso ID lettera.
 
-## Creazione di un’attività per eseguire il rendering e inviare una lettera in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Creare un&#39;attività per eseguire il rendering e inviare una lettera in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Prima di eseguire questi passaggi, accertatevi di essere membri dei seguenti gruppi:
 
 * cm-agent-users
 * Utenti Workspace
 
-Per ulteriori informazioni, consultate [Aggiungere e configurare utenti](/help/forms/using/admin-help/adding-configuring-users.md).
+Per ulteriori informazioni, vedere [Aggiungi e configura utenti](/help/forms/using/admin-help/adding-configuring-users.md).
 
 Per creare un’attività di rendering e inviare una lettera in AEM Workspace, effettuare le seguenti operazioni:
 
 1. Avviare Workbench. Accedete a localhost come amministratore.
-1. Fate clic su File > Nuovo > Applicazione. Nel campo Nome applicazione, immettete `CMDemoSample` e fate clic su Fine.
-1. Seleziona `CMDemoSample/1.0` e fai clic con il pulsante destro del mouse `NewProcess`. Nel campo del nome, immettere `CMRenderer` e fare clic su Fine.
+1. Fate clic su File > Nuovo > Applicazione. Nel campo Nome applicazione, immettere `CMDemoSample`, quindi fare clic su Fine.
+1. Selezionare `CMDemoSample/1.0` e fare clic con il pulsante destro del mouse su `NewProcess`. Nel campo del nome, immettere `CMRenderer`, quindi fare clic su Fine.
 1. Trascinate il selettore attività Punto iniziale e configuratelo:
 
    1. In Dati presentazione, selezionate Usa una risorsa CRX.
@@ -101,12 +101,13 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
    }
    ```
 
-   [Ottieni DSC](assets/dscsample.zip)download file: Un esempio di DSC è disponibile nel `DSCSample.zip` file allegato qui sopra. Scaricate e decomprimete il `DSCSample.zip` file. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per informazioni, consultate [Configurare il servizio](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
+   [Get ](assets/dscsample.zip)
+FileDownload DSC: Un esempio di DSC è disponibile nel  `DSCSample.zip` file allegato qui sopra. Scaricate e decomprimete il file `DSCSample.zip`. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per ulteriori informazioni, vedere [Configurare il servizio DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata, ad esempio getLetterInstanceInfo, quindi fate clic su **OK**.
 
 1. Implementare l&#39;applicazione. Se richiesto, archiviate e salvate le risorse.
-1. Accedere all&#39;area di lavoro moduli AEM all&#39;indirizzo `https://[server]:[port]/lc/content/ws`.
+1. Accedere all&#39;area di lavoro moduli AEM in `https://[server]:[port]/lc/content/ws`.
 1. Aprite il compito aggiunto, CMRenderer. Viene visualizzata la lettera Gestione corrispondenza.
 
    ![cminworkspace](assets/cminworkspace.png)
