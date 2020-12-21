@@ -18,11 +18,11 @@ ht-degree: 6%
 ---
 
 
-# Leaderboard Essentials {#leaderboard-essentials}
+# Elementi essenziali della classifica {#leaderboard-essentials}
 
 Questa pagina contiene le informazioni essenziali per l’utilizzo della funzione della classifica.
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](implementing-scoring.md). Vedere anche [Punteggio e Badges Essentials](configure-scoring.md).
+Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio community e Badges](implementing-scoring.md). Vedere anche [Punteggio e Badges Essentials](configure-scoring.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -50,7 +50,7 @@ Prima di includere il componente della classifica in una pagina, è necessario c
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>Consulta Funzione <a href="enabling-leaderboard.md">Leaderboard</a></td> 
+   <td>Vedere <a href="enabling-leaderboard.md">Caratteristica della guida</a></td> 
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Prima di includere il componente della classifica in una pagina, è necessario c
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito community che include la funzione [Leaderboard](functions.md#leaderboard-function)include un `leaderboard` componente configurato.
+Una struttura del sito della community che include la funzione [Leaderboard](functions.md#leaderboard-function), include un componente `leaderboard` configurato.
