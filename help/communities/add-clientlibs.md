@@ -24,11 +24,11 @@ ht-degree: 4%
 
 Create una ClientLibraryFolder denominata `clientlibs`che conterrà i file JS e CSS utilizzati per il rendering delle pagine del sito.
 
-Il valore della `categories`proprietà dato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
+Il valore della proprietà `categories`data a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
 
-1. Utilizzando **[!UICONTROL CRXDE Lite]**, espandi `/etc/designs`
+1. Utilizzando **[!UICONTROL CRXDE Lite]**, espandere `/etc/designs`
 
-1. Fare clic con il pulsante destro del mouse `an-scf-sandbox` e selezionare `Create Node`
+1. Fare clic con il pulsante destro del mouse su `an-scf-sandbox` e selezionare `Create Node`
 
    * Nome: `clientlibs`
    * Tipo: `cq:ClientLibraryFolder`
@@ -37,25 +37,25 @@ Il valore della `categories`proprietà dato a questa libreria client è l&#39;id
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
-Nella scheda **[!UICONTROL Proprietà]** del nuovo `clientlibs` nodo, immettere la **`categories`** proprietà:
+Nella scheda **[!UICONTROL Proprietà]** per il nuovo nodo `clientlibs`, immettere la proprietà **`categories`**:
 
-* Nome: **[!UICONTROL category]**
-* Tipo: **[!UICONTROL Stringa]**
+* Nome: **[!UICONTROL categorie]**
+* Tipo: **[!UICONTROL String]**
 * Valore: **[!UICONTROL apps.an-scf-sandbox]**
 * Fate clic su **[!UICONTROL Aggiungi]**
-* Fate clic su **[!UICONTROL Salva tutto]**
+* Fare clic su **[!UICONTROL Salva tutto]**
 
-Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungere segnaposto `js.txt` e `css.txt` file. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
+Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungere file segnaposto `js.txt` e `css.txt`. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
 
 
-1. Clic destro **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. Seleziona **[!UICONTROL Crea file...]**
-1. Enter **[!UICONTROL Name]**: `css.txt`
+1. Fare clic con il pulsante destro del mouse su **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Selezionare **[!UICONTROL Crea file...]**
+1. Immettere **[!UICONTROL Nome]**: `css.txt`
 
-1. Seleziona **[!UICONTROL Crea file...]**
-1. Enter **[!UICONTROL Name]**: `js.txt`
+1. Selezionare **[!UICONTROL Crea file...]**
+1. Immettere **[!UICONTROL Nome]**: `js.txt`
 
-1. Fate clic su **[!UICONTROL Salva tutto]**
+1. Fare clic su **[!UICONTROL Salva tutto]**
 
 ![chlimage_1-221](assets/chlimage_1-221.png)
 
@@ -78,9 +78,9 @@ Quindi create un file in clientlibs denominato style.css e impostate il contenut
 
 ## Incorpora client SCF {#embed-scf-clientlibs}
 
-Nella scheda **[!UICONTROL Proprietà]** del `clientlibs` nodo, immettere la proprietà String **[!UICONTROL embed]** con più valori. In questo modo verranno incorporate le librerie lato [client (clientlibs) necessarie per i componenti](client-customize.md#clientlibs-for-scf)SCF. Per questa esercitazione verranno aggiunti molti dei clientlibs necessari per i componenti Community.
+Nella scheda **[!UICONTROL Proprietà]** del nodo `clientlibs`, immettere la proprietà String multi-valore **[!UICONTROL embed]**. In questo modo verranno incorporate le [librerie lato client (clientlibs) necessarie per i componenti SCF](client-customize.md#clientlibs-for-scf). Per questa esercitazione verranno aggiunti molti dei clientlibs necessari per i componenti Community.
 
-**Notate** che questo potrebbe essere l&#39;approccio desiderato per un sito di produzione, in quanto vi sono considerazioni di convenienza rispetto alla dimensione/velocità dei clientlibs scaricati per ogni pagina.
+**Si** noti che questo potrebbe essere o meno l&#39;approccio desiderato da utilizzare per un sito di produzione, in quanto vi sono considerazioni di convenienza rispetto alla dimensione/velocità dei clientlibs scaricati per ogni pagina.
 
 Se si utilizza una sola funzione su una pagina, è possibile includere direttamente sulla pagina la clientlib completa di tale funzione, ad esempio, &lt;% ui:includeClientLib category=cq.social.hbs.forum&quot; %>
 
@@ -92,7 +92,7 @@ In questo caso, li includiamo tutti, e quindi preferiremmo i più basilari clien
 * Clic **`Multi`**
 * Valore: **`cq.social.scf`**
 
-   *&lt;enter> apre una finestra di dialogo*
+   *&lt;enter> verrà visualizzata una finestra di dialogo*
 
    *Fate clic **[+]**dopo ogni voce per aggiungere le seguenti categorie clientlib:*
 
@@ -104,11 +104,11 @@ In questo caso, li includiamo tutti, e quindi preferiremmo i più basilari clien
    * **`cq.social.author.hbs.voting`**
    * Fai clic su **[!UICONTROL OK]**
 
-* Fate clic su **[!UICONTROL Salva tutto]**
+* Fare clic su **[!UICONTROL Salva tutto]**
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-Questo è il modo in cui `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe essere visualizzato nella directory archivio:
+Questo è il modo in cui `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe ora apparire nella directory archivio:
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
@@ -124,20 +124,20 @@ Una volta inclusi i clientlibs apps.an-scf-sandbox, il componente dei commenti S
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-L&#39;istruzione include appartiene alla `<head>` sezione dello `<html>` script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto: **`headlibs.jsp`**.
+L&#39;istruzione include appartiene alla sezione `<head>` dello script `<html>`. L&#39;elemento **`foundation head.jsp`** predefinito include uno script che può essere sovrapposto: **`headlibs.jsp`**.
 
 **Copiate headlibs.jsp e includete clientlibs:**
 
 1. Utilizzando **[!UICONTROL CRXDE Lite]**, selezionare **`/libs/foundation/components/page/headlibs.jsp`**
-1. Fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Copia]** (oppure selezionate Copia dalla barra degli strumenti)
+1. Fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Copia]** (oppure selezionare Copia dalla barra degli strumenti)
 1. Seleziona **`/apps/an-scf-sandbox/components/playpage`**
-1. Fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Incolla]** (oppure selezionate Incolla dalla barra degli strumenti)
-1. Fare doppio clic **`headlibs.jsp`** per aprirlo
+1. Fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Incolla]** (oppure selezionare Incolla dalla barra degli strumenti)
+1. Fare doppio clic su **`headlibs.jsp`** per aprirlo
 1. Aggiungi la riga seguente alla fine del file
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Fate clic su **[!UICONTROL Salva tutto]**
+1. Fare clic su **[!UICONTROL Salva tutto]**
 
 
 ```xml
@@ -160,13 +160,13 @@ Caricate il sito Web nel browser e verificate se lo sfondo non è blu.
 
 A questo punto, esiste una sandbox minimalista, e potrebbe essere utile salvarla come pacchetto in modo che, durante la riproduzione, se il repository diventa danneggiato e si desidera ricominciare, è possibile spegnere il server, rinominare o eliminare la cartella crx-quickstart/, attivare il server, caricare e installare questo pacchetto salvato, e non dover ripetere questi passaggi fondamentali.
 
-Questo pacchetto è disponibile nell’esercitazione [Crea una pagina](create-sample-page.md) di esempio per coloro che non vedono l’ora di iniziare a riprodurre il pacchetto...
+Questo pacchetto è disponibile nell&#39;esercitazione [Create a Sample Page](create-sample-page.md) per coloro che non possono aspettare di passare a un&#39;azione e iniziare la riproduzione!...
 
 Per creare un pacchetto:
 
 
-* In **[!UICONTROL CRXDE Lite]**, fate clic sull&#39;icona [Pacchetto](http://localhost:4502/crx/packmgr/)
-* Fate clic su **[!UICONTROL Crea pacchetto]**
+* Da **[!UICONTROL CRXDE Lite]**, fare clic sull&#39;icona [Pacchetto](http://localhost:4502/crx/packmgr/)
+* Fare clic su **[!UICONTROL Crea pacchetto]**
 
    * Nome pacchetto: `an-scf-sandbox-minimal-pkg`
    * Versione: `0.1`
@@ -175,20 +175,20 @@ Per creare un pacchetto:
 
 * Fai clic su **[!UICONTROL Modifica]**
 
-   * Seleziona **[!UICONTROL filtri]** , scheda
+   * Selezionare la scheda **[!UICONTROL Filtri]**
 
-      * Fate clic su **[!UICONTROL Aggiungi filtro]**
-      * Percorso directory principale: &lt;Browse to `/apps/an-scf-sandbox`>
-      * Fate clic su **[!UICONTROL Fine]**
-      * Fate clic su **[!UICONTROL Aggiungi filtro]**
-      * Percorso directory principale: &lt;Browse to `/etc/designs/an-scf-sandbox`>
-      * Fate clic su **[!UICONTROL Fine]**
-      * Fate clic su **[!UICONTROL Aggiungi filtro]**
-      * Percorso directory principale: &lt;Browse to `/content/an-scf-sandbox`>
-      * Fate clic su **[!UICONTROL Fine]**
+      * Fare clic su **[!UICONTROL Aggiungi filtro]**
+      * Percorso directory principale: &lt;individuare `/apps/an-scf-sandbox`
+      * Fare clic su **[!UICONTROL Fine]**
+      * Fare clic su **[!UICONTROL Aggiungi filtro]**
+      * Percorso directory principale: &lt;individuare `/etc/designs/an-scf-sandbox`
+      * Fare clic su **[!UICONTROL Fine]**
+      * Fare clic su **[!UICONTROL Aggiungi filtro]**
+      * Percorso directory principale: &lt;individuare `/content/an-scf-sandbox`
+      * Fare clic su **[!UICONTROL Fine]**
    * Fai clic su **[!UICONTROL Salva]**
 
 
-* Fate clic su **[!UICONTROL Genera]**
+* Fare clic su **[!UICONTROL Build]**
 
-Ora potete selezionare **[!UICONTROL Scarica]** per salvarlo su disco e **[!UICONTROL caricare il pacchetto]** altrove, nonché **[!UICONTROL Altro > Replica]** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere l&#39;area di autenticazione della sandbox.
+Ora potete selezionare **[!UICONTROL Scarica]** per salvarlo su disco e **[!UICONTROL Carica pacchetto]** altrove, nonché selezionare **[!UICONTROL Altro > Replica]** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere l&#39;area di autenticazione della sandbox.
