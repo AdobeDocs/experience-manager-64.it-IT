@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Funzione Libreria file {#file-library-feature}
+# Caratteristica Libreria file {#file-library-feature}
 
 ## Introduzione {#introduction}
 
@@ -27,87 +27,109 @@ La funzione di libreria dei file consente ai visitatori del sito che hanno effet
 Questa sezione della documentazione descrive
 
 * Aggiunta della funzione di libreria file a un sito AEM
-* Impostazioni di configurazione per il `File Library` componente
+* Impostazioni di configurazione per il componente `File Library`
 
 ## Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
-Per aggiungere un `File Library` componente a una pagina in modalità di creazione, individuare il componente
+Per aggiungere un componente `File Library` a una pagina in modalità di creazione, individuare il componente
 
 * `Communities / File Library`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
 
-Quando sono incluse le librerie [lato client](essentials-file-library.md#essentials-for-client-side) richieste, verrà visualizzato il `File Library` componente:
+Quando vengono incluse le [librerie lato client ](essentials-file-library.md#essentials-for-client-side), viene visualizzato il componente `File Library`:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
-## Configurazione della libreria dei file {#configuring-file-library}
+## Configurazione della libreria di file {#configuring-file-library}
 
-Selezionate il `File Library` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `File Library` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
 ### Scheda Commenti {#comments-tab}
 
-Nella scheda **[!UICONTROL Commenti]** , specificate se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **[!UICONTROL Commenti]**, specificate se e come vengono visualizzati i commenti per i file caricati:
 
-* **[!UICONTROL Consenti commenti sui file]** Se questa opzione è selezionata, consenti commenti sui file caricati. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti commenti sui]**
+file: se questa opzione è selezionata, consenti commenti sui file caricati. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Commenti per pagina]** Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è 
+* **[!UICONTROL Commenti per]**
+paginaLimita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è 
 **10**.
 
-* **[!UICONTROL Dimensione]** massima file Questo valore limita le dimensioni del file caricato. Il limite predefinito è 104857600 (10 Mb).
+* **[!UICONTROL Max]**
+dimensione file: questo valore limita la dimensione del file caricato. Il limite predefinito è 104857600 (10 Mb).
 
-* **[!UICONTROL Lunghezza]** massima messaggio Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+* **[!UICONTROL Numero massimo]**
+lunghezza messaggio: numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
 
-* **[!UICONTROL Tipi]** di file consentiti Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+* **[!UICONTROL Tipi]**
+di file consentitiElenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
-* **[!UICONTROL Editor]** Rich Text Se questa opzione è selezionata, è possibile inserire commenti con la marcatura. Il valore predefinito è deselezionato.
+* **[!UICONTROL Rich Text]**
+EditorSe questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Elimina commenti]** Se questa opzione è selezionata, gli utenti possono eliminare i propri commenti. Il valore predefinito è selezionato.
+* **[!UICONTROL Elimina]**
+commentiSe questa opzione è selezionata, gli utenti possono eliminare i propri commenti. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Consenti tag]** Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere al file un tag. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti]**
+tag: se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere al file un tag. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Spazi dei nomi consentiti]** Se l’opzione Consenti tag è selezionata, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non ne è selezionata alcuna, sono tutti consentiti. Il valore predefinito è tutti gli spazi dei nomi.
+* **[!UICONTROL Spazi dei]**
+nomi consentiti: se l’opzione Consenti tag è selezionata, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non ne è selezionata alcuna, sono tutti consentiti. Il valore predefinito è tutti gli spazi dei nomi.
 
-* **[!UICONTROL Limite]** suggerimenti Se l’opzione Consenti tag è selezionata, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non è previsto alcun limite. Il valore predefinito è -1.
+* **[!UICONTROL Limite]**
+suggerimenti: se l’opzione Consenti tag è selezionata, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non è previsto alcun limite. Il valore predefinito è -1.
 
-* **[!UICONTROL Consenti votazione]** Se questa opzione è selezionata, la possibilità di votare per un file verrà abilitata. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti]**
+votazione: se questa opzione è selezionata, la possibilità di votare per un file verrà abilitata. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti di seguire]** se questa opzione è selezionata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti]**
+seguenti: se questa opzione è selezionata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere  [](notifications.md) notifiche sui nuovi post. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti risposte]** filettate se questa opzione è selezionata, consenti risposte ai commenti inviati. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti]**
+risposte threadSe questa opzione è selezionata, consenti risposte ai commenti inviati. Il valore predefinito è deselezionato.
 
 ### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda Moderazione **** utente configurate la moderazione dei commenti, se i commenti sono consentiti:
+Nella scheda **[!UICONTROL Moderazione utente]**, configurare la moderazione dei commenti, se i commenti sono consentiti:
 
-* **[!UICONTROL Pre-moderazione]** Se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+* **[!UICONTROL Pre-]**
+moderazione: se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Elimina commenti]** Se questa opzione è selezionata, al visitatore che ha pubblicato il commento viene fornita la possibilità di eliminarlo. Il valore predefinito è selezionato.
+* **[!UICONTROL Elimina]**
+commenti: se questa opzione è selezionata, il visitatore che ha pubblicato il commento può eliminarlo. Il valore predefinito è selezionato.
 
-* **[!UICONTROL Rifiuta commenti]** Se questa opzione è selezionata, consente ai moderatori membri attendibili di negare i commenti. Il valore predefinito è deselezionato.
+* **[!UICONTROL Rifiuta]**
+commenti: se questa opzione è selezionata, i moderatori di membri attendibili possono rifiutare i commenti. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Chiudi/Riapri commenti]** Se questa opzione è selezionata, consente ai moderatori di membri attendibili di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
+* **[!UICONTROL Chiudi/Riapri]**
+commentiSe questa opzione è selezionata, i moderatori di membri attendibili possono chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Contrassegna commenti]** Se questa opzione è selezionata, i visitatori possono contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
+* **[!UICONTROL Contrassegna]**
+commenti: se questa opzione è selezionata, i visitatori possono contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Elenco]** motivi contrassegno Se questa opzione è selezionata, i visitatori possono scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+* **[!UICONTROL Flag Reason]**
+ListSe questa opzione è selezionata, consente ai visitatori di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Motivo]** contrassegno personalizzato Se questa opzione è selezionata, i visitatori possono immettere il proprio motivo per cui un commento viene contrassegnato come inappropriato. Il valore predefinito è deselezionato.
+* **[!UICONTROL Custom Flag]**
+Reason (Motivo contrassegno personalizzato): se questa opzione è selezionata, consente ai visitatori di inserire il proprio motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Soglia]** moderazione Consente di specificare quante volte un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (
+* **[!UICONTROL Soglia]**
+moderazioneConsente di specificare quante volte un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (
 **1**).
 
-* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalato un commento prima di essere nascosto nella visualizzazione pubblica. Questo numero deve essere maggiore o uguale al valore 
+* **[!UICONTROL Limite di]**
+contrassegnazioneConsente di specificare quante volte deve essere segnalato un commento prima di essere nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al valore 
 **Soglia moderazione**. Il valore predefinito è 5.
 
 ## Informazioni aggiuntive {#additional-information}
 
 Ulteriori informazioni sono disponibili nella pagina [File Library Essentials](essentials-file-library.md) per gli sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti](tag-ugc.md)generati dagli utenti.
+Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti generati dall&#39;utente](tag-ugc.md).
