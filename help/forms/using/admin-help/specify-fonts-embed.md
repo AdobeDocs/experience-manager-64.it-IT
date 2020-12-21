@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Specificare i font da incorporare{#specify-fonts-to-embed}
 
-È possibile specificare quali font vengono sempre incorporati o non vengono mai incorporati nei moduli utilizzati da Output. L&#39;incorporazione dei font aumenta la dimensione del file dei moduli. Incorporare font insoliti che gli utenti probabilmente non avranno sui loro sistemi e non incorporare i font comuni che avranno installato.
+È possibile specificare i font sempre incorporati o mai incorporati nei moduli utilizzati da Output. L&#39;incorporazione dei font aumenta la dimensione del file dei moduli. Incorporare font insoliti che gli utenti probabilmente non avranno sui loro sistemi e non incorporare i font comuni che avranno installato.
 
 >[!NOTE]
 >
->Se per Output è stato specificato un file XCI personalizzato, l&#39;opzione font da incorporare nel file XCI ha la priorità su queste impostazioni. (vedere [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)).
+>Se per Output è stato specificato un file XCI personalizzato, l&#39;opzione font da incorporare nel file XCI ha la priorità su queste impostazioni. (Vedere [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 
 1. Nella console di amministrazione, fate clic su Servizi > output.
 1. In Impostazioni incorporazione font, nella casella Incorpora sempre font digitare i nomi dei font da incorporare nei moduli, separati da virgole. I font specificati vengono incorporati nel modulo generato solo se vengono utilizzati nel modulo. Questa impostazione viene ignorata se l&#39;opzione font incorporato è stata attivata nel file XCI passato al servizio. In tal caso, tutti i font utilizzati nel PDF sono sempre incorporati.
