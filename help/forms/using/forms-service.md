@@ -33,11 +33,11 @@ Utilizzate il servizio Forms per effettuare le seguenti operazioni:
 
 ## Creazione di PDF forms  {#creating-pdf-forms-nbsp}
 
-Utilizzare il servizio Modulo per creare PDF forms per l&#39;acquisizione dei dati. In genere si inizia con un modello  AEM Forms Designer. Utilizzare l&#39;operazione `renderPDFForm` (collegamento a Javadoc) del servizio Forms per convertire il modello in un modulo PDF.
+Utilizzare il servizio Modulo per creare PDF forms per l&#39;acquisizione dei dati. In genere si inizia con un modello  AEM Forms Designer. Per convertire il modello in un modulo PDF, utilizzare l&#39;operazione `renderPDFForm` (collegamento a Javadoc) del servizio Forms.
 
-Il primo parametro dell&#39; `renderPDFForm` operazione è il nome del file modello (ad esempio, `ExpenseClaim.xdp`). È possibile archiviare il file modello in un file system locale, nell&#39;archivio CRX o in un percorso HTTP o FTP. Potete specificare la posizione del file modello impostando la directory principale del contenuto nel `PDFFormRenderOptions` parametro dell&#39; `renderPDFForm` operazione. Per informazioni dettagliate sulle altre opzioni che potete specificare per il `PDFFormRenderOptions` parametro, consultate Javadoc.
+Il primo parametro dell&#39;operazione `renderPDFForm` è il nome del file modello (ad esempio, `ExpenseClaim.xdp`). È possibile archiviare il file modello in un file system locale, nell&#39;archivio CRX o in un percorso HTTP o FTP. Potete specificare la posizione del file modello impostando la directory principale del contenuto nel parametro `PDFFormRenderOptions` dell&#39;operazione `renderPDFForm`. Per informazioni dettagliate sulle altre opzioni che è possibile specificare per il parametro `PDFFormRenderOptions`, consultate Javadoc.
 
-L&#39; `renderPDFForm` operazione può inoltre accettare dati XML. Durante la creazione di un modulo PDF, i dati XML vengono uniti al modello in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per l&#39; `renderPDFForm` operazione può accettare un oggetto Document (Javadoc) che contiene dati XML.
+L&#39;operazione `renderPDFForm` può inoltre accettare dati XML. Durante la creazione di un modulo PDF, i dati XML vengono uniti al modello in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per l&#39;operazione `renderPDFForm` può accettare un oggetto Document (Javadoc) che contiene dati XML.
 
 ## Estrazione di dati dai PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
@@ -45,7 +45,7 @@ Utilizzare l&#39;operazione `exportData` (Javadoc) del servizio Forms per estrar
 
 ## Importazione di dati in PDF forms {#importing-data-into-pdf-forms}
 
-Il servizio Forms consente inoltre di unire un modulo PDF creato utilizzando  AEM Forms Designer o l&#39; `renderPDFForm` operazione con dati XML. L&#39;operazione `importData` (Javadoc) del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con dati XML.
+Il servizio Forms consente inoltre di unire un modulo PDF creato utilizzando  AEM Forms Designer o l&#39;operazione `renderPDFForm` con dati XML. L&#39;operazione `importData` (Javadoc) del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con dati XML.
 
 ## Rendering di moduli basati su frammenti {#rendering-forms-based-on-fragments}
 
