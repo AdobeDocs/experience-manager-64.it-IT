@@ -31,7 +31,7 @@ Durante la creazione di un modulo adattivo, per creare un modulo adattivo con ac
 * Fornire un contrasto di colore sufficiente
 * Verificare che i controlli modulo siano accessibili tramite tastiera
 
-## Fornire etichette corrette per i controlli modulo {#provide-proper-labels-for-form-controls}
+## Specificare le etichette corrette per i controlli modulo {#provide-proper-labels-for-form-controls}
 
 L’etichetta o il titolo di un componente identifica il contenuto rappresentato dal componente modulo. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile dagli assistenti vocali, l&#39;etichetta è associata a un componente modulo a livello di programmazione. In alternativa, il controllo modulo è configurato con ulteriori informazioni di accesso facilitato.
 
@@ -40,21 +40,21 @@ L&#39;etichetta percepita dagli assistenti vocali non deve necessariamente corri
 Per utilizzare l&#39;opzione Accessibilità, procedere come segue:
 
 1. Selezionate un componente e toccate ![cmppr](assets/cmppr.png).
-1. Fate clic su **Accessibilità** nella barra laterale per scegliere l’opzione di accessibilità desiderata.
+1. Fare clic su **Accessibilità** nella barra laterale per scegliere l&#39;opzione di accessibilità desiderata.
 
 ### Opzioni di accessibilità nei componenti modulo {#accessibility-options-in-form-components}
 
 ![Opzioni di accessibilità nei componenti modulo](assets/accessibility-options.png)
 
-**Gli autori di moduli di testo** personalizzati forniscono il contenuto dell&#39;opzione di accesso facilitato Campo di testo personalizzato. La tecnologia di supporto, ad esempio gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valutare la possibilità di creare testo personalizzato dell&#39;Reader dello schermo solo quando si utilizza il Titolo o se non è possibile inserire una breve descrizione.
+**Gli autori di** TextForm personalizzati forniscono il contenuto dell&#39;opzione di accesso facilitato Campo di testo personalizzato. La tecnologia di supporto, ad esempio gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valutare la possibilità di creare testo personalizzato dell&#39;Reader dello schermo solo quando si utilizza il Titolo o se non è possibile inserire una breve descrizione.
 
-**Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di esecuzione quando l&#39;utente passa il puntatore sul componente. Potete impostare questa opzione nel campo della descrizione breve, sotto l&#39;opzione di contenuto della guida.
+**Breve** descrizionePer la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di esecuzione quando l&#39;utente passa il puntatore sul componente. Potete impostare questa opzione nel campo della descrizione breve, sotto l&#39;opzione di contenuto della guida.
 
-**Titolo** Utilizzare questa opzione per consentire  AEM Forms di utilizzare l&#39;etichetta visiva associata al campo modulo come testo dell&#39;assistente vocale.
+**** Titolo: utilizzate questa opzione per consentire a  AEM Forms di utilizzare l&#39;etichetta visiva associata al campo modulo come testo dell&#39;assistente vocale.
 
-**Nome** È possibile specificare un valore nel campo Nome della scheda Binding. Il nome non può contenere spazi.
+**** Nome: è possibile specificare un valore nel campo Nome della scheda Binding. Il nome non può contenere spazi.
 
-**Nessuno** Se si seleziona Nessuno, l&#39;oggetto modulo non avrà un nome nel modulo pubblicato. Nessuna impostazione consigliata per i controlli modulo.
+**** Nessuno: se si seleziona Nessuno, l&#39;oggetto modulo non ha un nome nel modulo pubblicato. Nessuna impostazione consigliata per i controlli modulo.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Selezionate un componente immagine e toccate ![cmppr](assets/cmppr.png). Nella b
 
 ![Testo alternativo per un’immagine](assets/image-properties.png)
 
-## Fornire un contrasto di colore sufficiente {#provide-sufficient-color-contrast}
+## Contrasto colore sufficiente {#provide-sufficient-color-contrast}
 
 La progettazione dell&#39;accessibilità prevede la considerazione di ulteriori linee guida per l&#39;utilizzo del colore. Gli autori dei moduli possono utilizzare i colori per migliorare l&#39;aspetto dei moduli, evidenziando diversi componenti. Tuttavia, un uso improprio del colore può rendere un modulo difficile o impossibile da leggere da persone con capacità diverse.
 
@@ -82,7 +82,7 @@ Gli utenti con problemi di vista si affidano a un contrasto elevato tra il testo
 
 Si consiglia di utilizzare i colori di font e sfondo predefiniti, ossia il contenuto in nero su uno sfondo bianco. Se modificate i colori predefiniti, scegliete un colore di primo piano scuro su un colore di sfondo chiaro o viceversa.
 
-Per ulteriori informazioni sulla modifica del contrasto dei colori e del tema per i moduli [adattivi, vedere](/help/forms/using/creating-custom-adaptive-form-themes.md)Creazione di temi personalizzati per i moduli adattivi.
+Per ulteriori informazioni sulla modifica del contrasto dei colori e del tema per i moduli adattivi, vedere [Creazione di temi personalizzati per i moduli adattivi.](/help/forms/using/creating-custom-adaptive-form-themes.md)
 
 ## Verificare che i controlli modulo siano accessibili tramite tastiera {#ensure-that-form-controls-are-keyboard-accessible}
 
