@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di registrazione {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di record {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-I moduli localizzati consentono di distribuire un pubblico più ampio su più aree geografiche. Il flusso di lavoro di traduzione di Adobe Experience Manager consente di localizzare i moduli adattivi e i relativi documenti da record. Per localizzare un modulo adattivo è possibile utilizzare traduttori **** automatici o traduttori **** umani.
+I moduli localizzati consentono di distribuire un pubblico più ampio su più aree geografiche. Il flusso di lavoro di traduzione di Adobe Experience Manager consente di localizzare i moduli adattivi e i relativi documenti da record. È possibile utilizzare **traduzione automatica** o **traduttori umani** per localizzare un modulo adattivo.
 
 In questo articolo viene illustrato come utilizzare AEM flusso di lavoro di traduzione con moduli adattivi e documenti di registrazione.
 
@@ -27,15 +27,15 @@ In questo articolo viene illustrato come utilizzare AEM flusso di lavoro di trad
 
 Il servizio di traduzione automatica traduce immediatamente il contenuto in forma adattiva e nel documento di registrazione.  AEM Forms è preconfigurato per utilizzare una versione di prova di Microsoft Translator per la traduzione automatica. Per abilitare la traduzione automatica per i moduli adattivi e il documento di record, procedere come segue:
 
-1. Nell&#39;interfaccia  AEM Forms, selezionare un modulo e toccare l&#39;opzione **Aggiungi dizionario** .
-1. Nella schermata **Aggiungi dizionario al progetto** di traduzione, selezionate l&#39;opzione **Crea un nuovo progetto** di traduzione o **Aggiungi a un progetto** di traduzione esistente.
-1. Nel campo Titolo **** progetto, specificate il titolo. Esempio, `Government Reference Site - German locale.`
-1. Nel campo Lingue **** di destinazione, specificate le impostazioni internazionali (ad esempio, `German(de)`) e fate clic su **Fine**. Potete specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le impostazioni internazionali specificate nel campo Lingue **di** destinazione.
+1. Nell&#39;interfaccia  di AEM Forms, selezionare un modulo e toccare l&#39;opzione **Aggiungi dizionario**.
+1. Nella schermata **Aggiungi dizionario al progetto di traduzione**, selezionare l&#39;opzione **Crea un nuovo progetto di traduzione** o **Aggiungi a un progetto di traduzione esistente**.
+1. Nel campo **Titolo progetto**, specificate il titolo. Esempio, `Government Reference Site - German locale.`
+1. Nel campo **Lingue di destinazione**, specificare una lingua (ad esempio, `German(de)`), quindi fare clic su **Fine**. Potete specificare più impostazioni internazionali. Il modulo viene convertito in tutte le impostazioni internazionali specificate nel campo **Lingue di destinazione**.
 1. Nella finestra di dialogo Dizionario aggiunto, fare clic su **Apri progetti**. Nella schermata Progetti, aprite il progetto appena creato.
-1. Fate clic sulle **ellissi** nella parte inferiore della sezione Riepilogo **** traduzione. Viene visualizzata la schermata Riepilogo conversione.
-1. Fate clic sull’icona **Modifica** nella parte superiore della schermata Riepilogo **** traduzione. Aprire la scheda **Traduzione** e selezionare Traduzione automatica nella schermata Metodo **di** traduzione. Selezionate il provider **di** traduzione e la configurazione **** cloud appropriati. Click the **Done** icon at the top of the screen.
-1. Nel riquadro **Processo** di traduzione, fate clic sull’icona ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fate clic su **Start**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato diventa **Pronto per la revisione**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
-1. Dopo che lo stato è impostato su **Pronto per la revisione** nella sezione Processo **di** traduzione, aprire il modulo in una finestra del browser. Viene visualizzata una versione localizzata del modulo.
+1. Fare clic sulle **ellissi** nella parte inferiore della sezione **Riepilogo traduzione**. Viene visualizzata la schermata Riepilogo conversione.
+1. Fare clic sull&#39;icona **Edit** nella parte superiore della schermata **Translation Summary**. Aprire la scheda **Traduzione** e selezionare Traduzione automatica nella schermata **Metodo di traduzione**. Selezionare il **Provider di traduzione** e **Configurazione cloud** appropriato. Fate clic sull&#39;icona **Done** nella parte superiore dello schermo.
+1. Nella sezione **Processo di traduzione**, fare clic sull&#39;icona ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fare clic su **Start**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato cambia in **Pronto per la revisione**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
+1. Dopo che lo stato è stato modificato in **Pronto per la revisione** nella sezione **Processo di traduzione**, aprire il modulo in una finestra del browser. Viene visualizzata una versione localizzata del modulo.
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in form
 
    [Impostazioni del documento di registrazione](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personalizzare le informazioni di branding del documento del record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurarsi che le impostazioni internazionali del browser siano impostate sulla stessa lingua in cui è stato localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni internazionali del browser consentono di localizzare le informazioni sul marchio nel documento di registrazione.
+1. [Personalizzare le informazioni di branding del documento di ](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) registrazione e assicurarsi che le impostazioni internazionali del browser siano impostate sulla stessa lingua in cui è stato localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni internazionali del browser consentono di localizzare le informazioni sul marchio nel documento di registrazione.
 1. Per visualizzare il documento localizzato del record, toccate Genera anteprima. Il documento PDF del record viene generato e aperto in una nuova scheda del browser.
 
 ## Localizzazione di un modulo adattivo e del relativo documento di registrazione mediante la traduzione umana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
@@ -62,17 +62,17 @@ Per la traduzione, un dizionario contenente file in formato XLIFF è condiviso c
 
 Effettuare le seguenti operazioni per localizzare un modulo e il relativo documento di registrazione utilizzando l&#39;espressione Traduttori umani:
 
-1. [Connetti AEM con il tuo provider](/help/sites-administering/tc-tic.md) di servizi di traduzione e [crea configurazioni](/help/sites-administering/tc-tic.md)del framework di integrazione della traduzione.
+1. [Collega AEM al ](/help/sites-administering/tc-tic.md) provider del servizio di traduzione e  [crea configurazioni](/help/sites-administering/tc-tic.md) del framework di integrazione della traduzione.
 
-1. [Associate le pagine del vostro master](/help/sites-administering/tc-tic.md) lingua alle configurazioni del servizio e del framework di traduzione.
+1. [Associate le pagine del vostro ](/help/sites-administering/tc-tic.md) maestro di lingua alle configurazioni del servizio di traduzione e del framework.
 
-1. [Identificare il tipo di contenuto](/help/sites-administering/tc-rules.md) da tradurre.
+1. [Identificare il tipo di ](/help/sites-administering/tc-rules.md) contenuto da tradurre.
 
-1. [Preparate il contenuto per la traduzione](/help/sites-administering/tc-prep.md) creando il master della lingua e le pagine principali delle copie della lingua.
+1. [Preparate il contenuto per la ](/help/sites-administering/tc-prep.md) traduzione creando il master della lingua e le pagine principali delle copie della lingua.
 
-1. [Create progetti](/help/sites-administering/tc-manage.md) di traduzione per raccogliere il contenuto da tradurre e preparare il processo di traduzione.
+1. [Create ](/help/sites-administering/tc-manage.md) progetti di traduzione per raccogliere il contenuto da tradurre e preparare il processo di traduzione.
 
-1. Utilizzate i progetti di traduzione per [gestire il processo](/help/sites-administering/tc-manage.md)di traduzione del contenuto.
+1. Utilizzate i progetti di traduzione per [gestire il processo di traduzione del contenuto](/help/sites-administering/tc-manage.md).
 
 >[!NOTE]
 >
