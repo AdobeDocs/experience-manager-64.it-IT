@@ -27,15 +27,15 @@ Per i moduli di cui viene eseguito il rendering in formato HTML, gli errori di c
 1. Nella console di amministrazione, fare clic su Servizi > moduli.
 1. In Output convalida, nell&#39;elenco Rapporti, selezionare una delle opzioni seguenti:
 
-   **Messaggio:** Visualizzazione dei messaggi di convalida in una finestra di dialogo separata.
+   **Messaggio:** Per visualizzare i messaggi di convalida in una finestra di dialogo separata.
 
-   **Frame:** Visualizzazione di messaggi di convalida all&#39;interno di un frame della stessa finestra.
+   **Frame:** Per visualizzare i messaggi di convalida all&#39;interno di un frame della stessa finestra.
 
-   **Nessun fotogramma:** Visualizzazione dei messaggi di convalida nella stessa finestra. Questo è il valore predefinito.
+   **Nessun fotogramma:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo è il valore predefinito.
 
-   **Tramite API (con dati):** Per restituire i messaggi di convalida tramite l&#39;API (con i dati). I messaggi di convalida non vengono visualizzati sullo schermo.
+   **Tramite API (con i dati):** per restituire i messaggi di convalida tramite l&#39;API (con i dati). I messaggi di convalida non vengono visualizzati sullo schermo.
 
-   **Tramite API (con modulo):** Per restituire i messaggi di convalida tramite l&#39;API (con il modulo). I messaggi di convalida non vengono visualizzati sullo schermo.
+   **Tramite API (con modulo):** per restituire i messaggi di convalida tramite l&#39;API (con il modulo). I messaggi di convalida non vengono visualizzati sullo schermo.
 
    **Nessuno:** Per non visualizzare i messaggi di convalida.
 
@@ -47,7 +47,7 @@ Se Reporting (Generazione rapporti) è impostato su Frame o No Frame, è possibi
 
 1. In Output convalida, nell&#39;elenco Posizione, selezionare una delle opzioni seguenti:
 
-   **A sinistra:** Per visualizzare i messaggi di convalida sul lato sinistro del browser Web.
+   **Sinistra:** per visualizzare i messaggi di convalida sul lato sinistro del browser Web.
 
    **Destra:** Per visualizzare i messaggi di convalida sul lato destro del browser Web.
 
@@ -57,7 +57,7 @@ Se Reporting (Generazione rapporti) è impostato su Frame o No Frame, è possibi
 
 1. Fate clic su Salva.
 
-## Specificare le dimensioni del bordo del frame {#specify-the-frame-border-size}
+## Specificare la dimensione del bordo del fotogramma {#specify-the-frame-border-size}
 
 Quando Reporting (Generazione rapporti) è impostato su Frame, potete specificare la dimensione del bordo della cornice.
 
