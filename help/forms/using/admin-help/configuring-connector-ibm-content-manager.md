@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurazione del connettore per IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Il connettore per IBM Content Manager consente la comunicazione tra AEM moduli e IBM Content Manager. Per ulteriori informazioni di base, vedere &quot;Connettori per l&#39;ECM&quot; nella Guida di riferimento dei [servizi](https://www.adobe.com/go/learn_aemforms_services_63).
+Il connettore per IBM Content Manager consente la comunicazione tra AEM moduli e IBM Content Manager. Per ulteriori informazioni, vedere &quot;Connettori per l&#39;ECM&quot; in [Guida di riferimento dei servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configurare la connessione IBM Content Manager {#configure-the-ibm-content-manager-connection}
 
