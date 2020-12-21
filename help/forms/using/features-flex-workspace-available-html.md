@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Funzioni dell&#39;area di lavoro Flex non disponibili &#39;area di lavoro AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+# Funzionalità dell&#39;area di lavoro Flex non disponibili &#39;area di lavoro AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 &#39;area di lavoro AEM Forms è la nuova area di lavoro. Di seguito sono elencate alcune delle funzioni dell’area di lavoro basata su Flex che non sono disponibili ’area di lavoro di AEM Forms.
 
