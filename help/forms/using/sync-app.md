@@ -30,11 +30,11 @@ Quando siete online con il server AEM Forms , per impostazione predefinita l&#39
 
 **Per sincronizzare manualmente l&#39;app**
 
-Toccate il pulsante Sincronizza ![sincronizzazione-app](assets/sync-app.png) nell’angolo inferiore destro della schermata principale.
+Toccate il pulsante Sincronizza ![app di sincronizzazione](assets/sync-app.png) nell&#39;angolo inferiore destro della schermata principale.
 
 **Per modificare la frequenza di sincronizzazione**
 
-1. Per passare alla schermata Impostazioni, toccate il pulsante del menu in alto a sinistra nella schermata Home, quindi toccate **Impostazioni**.
+1. Per passare alla schermata Impostazioni, toccate il pulsante del menu nell&#39;angolo superiore sinistro della schermata Home, quindi toccate **Impostazioni**.
 1. Nella schermata Impostazioni, toccate la scheda Generale.
 
    ![Impostazione della frequenza di sincronizzazione nella finestra Impostazioni generali](assets/gen-settings-1.png)
