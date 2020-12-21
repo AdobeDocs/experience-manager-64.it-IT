@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Configurazione del connettore per EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Il connettore per EMC Documentum consente la comunicazione tra i moduli AEM e EMC Documentum. Per ulteriori informazioni di base, vedere &quot;Connettori per l&#39;ECM&quot; nella Guida di riferimento dei [servizi](https://www.adobe.com/go/learn_aemforms_services_63).
+Il connettore per EMC Documentum consente la comunicazione tra i moduli AEM e EMC Documentum. Per ulteriori informazioni, vedere &quot;Connettori per l&#39;ECM&quot; in [Guida di riferimento dei servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 La configurazione del connettore per EMC Documentum comporta la configurazione della connessione del server e delle credenziali del repository.
 
@@ -58,15 +58,15 @@ Se immettete un nome utente o una password non corretta, otterrete i seguenti ri
 1. Se durante l&#39;accesso non viene fornito un nome di repository esplicito, immettete il nome di repository a cui sono associate le credenziali.
 1. Fate clic su Salva.
 
-### Modifica del provider del servizio repository {#change-the-repository-service-provider}
+### Modifica del provider del servizio directory archivio {#change-the-repository-service-provider}
 
 È possibile configurare il provider del servizio repository da utilizzare con Documentum. Le chiamate al servizio repository sono delegate al provider configurato. Sono disponibili le seguenti opzioni:
 
-**Nome provider servizio repository corrente:** Nome del provider di servizi repository corrente
+**Nome provider di servizi repository corrente:** nome del provider di servizi repository corrente
 
-**Provider repository ECM Documentum:** Rende il provider del repository Documentum il fornitore del repository. Questa opzione è stata rimossa
+**Fornitore di repository ECM Documentum:** rende il provider di repository Documentum il fornitore del repository. Questa opzione è stata rimossa
 
-**provider repository:** Imposta il provider del repository nativo come fornitore del repository
+**provider del repository:** rende il provider del repository nativo il provider del repository
 
 >[!NOTE]
 >
@@ -76,9 +76,9 @@ Se immettete un nome utente o una password non corretta, otterrete i seguenti ri
 1. Nell&#39;area Informazioni su Repository Service Provider, selezionare il provider di servizi repository alternativo.
 1. Fate clic su Salva.
 
-## Configurazione delle credenziali dell&#39;archivio {#configuring-repository-credentials}
+## Configurazione delle credenziali del repository {#configuring-repository-credentials}
 
-Le informazioni sulle credenziali Documentum vengono utilizzate nel contesto del sistema dei moduli AEM. Le credenziali del repository sono specifiche per i repository specifici di Documentum. È possibile fornire le credenziali per qualsiasi numero di repository; tuttavia, potete specificare un solo set di credenziali per repository.
+Le informazioni sulle credenziali Documentum vengono utilizzate nel contesto del sistema dei moduli AEM. Le credenziali del repository sono specifiche per i repository specifici in Documentum. È possibile fornire le credenziali per qualsiasi numero di repository; tuttavia, potete specificare un solo set di credenziali per repository.
 
 ### Aggiungere una credenziale archivio {#add-a-repository-credential}
 
@@ -90,12 +90,12 @@ Le informazioni sulle credenziali Documentum vengono utilizzate nel contesto del
 
 Se il connettore Content Repository per il servizio EMC Documentum e/o il servizio Repository per EMC Documentum sono in esecuzione, le informazioni sulle credenziali vengono verificate rispetto al repository specificato prima di essere archiviate nel database. Se le credenziali non sono valide o esistono, viene visualizzato un messaggio di errore.
 
-### Rimozione di una credenziale archivio {#remove-a-repository-credential}
+### Rimuovere una credenziale del repository {#remove-a-repository-credential}
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per EMC Documentum > Impostazioni di configurazione.
 1. Selezionare la casella di controllo accanto all&#39;archivio da cui rimuovere le credenziali e fare clic su Rimuovi. Le credenziali per l&#39;archivio selezionato vengono rimosse dal database.
 
-### Modificare il nome utente e la password di una credenziale archivio {#change-the-user-name-and-password-for-a-repository-credential}
+### Modificare il nome utente e la password di una credenziale dell&#39;archivio {#change-the-user-name-and-password-for-a-repository-credential}
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per EMC Documentum > Impostazioni di configurazione.
 1. Fare clic sul nome della directory archivio per cui modificare le credenziali.
@@ -104,7 +104,7 @@ Se il connettore Content Repository per il servizio EMC Documentum e/o il serviz
 
 Se il connettore Content Repository per il servizio EMC Documentum e/o il servizio Repository per EMC Documentum sono in esecuzione, le informazioni sulle credenziali vengono verificate rispetto al repository specificato prima di essere archiviate nel database. Se le credenziali non sono valide o esistono, viene visualizzato un messaggio di errore.
 
-## Abilita la richiesta di condivisione delle code delle attività di Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Abilita la richiesta di condivisione delle code di attività di Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Sono necessari alcuni passaggi manuali per garantire che la funzionalità Richiesta di condivisione della coda di task in Workspace funzioni correttamente con il connettore per EMC Documentum.
 
