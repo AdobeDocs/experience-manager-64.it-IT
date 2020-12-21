@@ -44,7 +44,7 @@ Se sono stati configurati più provider di autenticazione, è possibile modifica
     </node>
    ```
 
-   In `<entry key="order" value="3" />`, modificate il valore di ciascun nodo per impostare l&#39;ordine della valutazione dell&#39;autenticazione.
+   In `<entry key="order" value="3" />`, modificare il valore di ciascun nodo per impostare l&#39;ordine della valutazione dell&#39;autenticazione.
 
 1. Per importare il file aggiornato, in Gestione utente fate clic su Configurazione > Importa ed esporta file di configurazione.
 1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi fate clic su OK.
