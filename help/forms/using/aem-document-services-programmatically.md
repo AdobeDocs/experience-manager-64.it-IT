@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Utilizzo di AEM Document Services a livello di programmazione {#using-aem-document-services-programmatically}
 
-Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili nel [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) Jar. Per informazioni sui progetti per il cielo, vedi [come costruire il tuo progetto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
+Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili nel [ AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) jar. Per informazioni sui progetti relativi al cielo, vedere [come creare il progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
->Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio](/help/forms/using/install-configure-document-services.md)DocAssurance.
+>Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
 ## Servizio DocAssurance {#docassurance-service}
 
@@ -63,13 +63,13 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare il codice Java all&#39;URL [https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare il codice Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
 
 ### Aggiunta di un campo firma invisibile {#adding-an-invisible-signature-field}
 
 Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi del modulo che contengono una rappresentazione grafica della firma. I campi firma possono essere visibili o invisibili. I firmatari possono utilizzare un campo firma preesistente oppure è possibile aggiungere un campo firma a livello di programmazione. In entrambi i casi, il campo firma deve esistere prima che sia possibile firmare un documento PDF. È possibile aggiungere un campo firma a livello di programmazione utilizzando l&#39;API Java del servizio firma o l&#39;API del servizio Web Firma. È possibile aggiungere più campi firma a un documento PDF. Tuttavia, ogni nome di campo firma deve essere univoco.
 
-**Sintassi**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
+**Sintassi**:  `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -81,19 +81,19 @@ Le firme digitali vengono visualizzate nei campi firma, ovvero nei campi del mod
   </tr> 
   <tr> 
    <td><code>inDoc</code></td> 
-   <td>Oggetto Document contenente PDF.<br /> </td> 
+   <td>Oggetto del documento contenente PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code> </td> 
-   <td>Nome del campo firma. Questo parametro è obbligatorio e non può avere come valore null.<br /> </td> 
+   <td>Nome del campo firma. Questo parametro è obbligatorio e non può avere un valore nullo.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>Un <code>FieldMDPOptionSpec</code> oggetto che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore null.</td> 
+   <td>Un oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo parametro è facoltativo e può accettare un valore null.</td> 
   </tr> 
   <tr> 
    <td><code>seedValueOptionsSpec</code></td> 
-   <td>Un <code>SeedValueOptions</code> oggetto che specifica i vari valori iniziali del campo. T Questo parametro è facoltativo e può accettare un valore null.<span class="acrolinxCursorMarker"></span></td> 
+   <td>Un oggetto <code>SeedValueOptions</code> che specifica i vari valori iniziali per il campo. T Questo parametro è facoltativo e può accettare un valore null.<span class="acrolinxCursorMarker"></span></td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -229,7 +229,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-È inoltre possibile utilizzare le specifiche [](https://en.wikipedia.org/wiki/CAdES_%28computing%29)CAdES per la firma dei documenti. Utilizzare il seguente codice di esempio per impostare il formato di firma su [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+È inoltre possibile utilizzare le specifiche [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)per la firma dei documenti. Utilizzare il seguente codice di esempio per impostare il formato di firma su [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -274,15 +274,15 @@ public Document addSignatureField(Document inDoc,
   </tr> 
   <tr> 
    <td><code>positionRectangle</code></td> 
-   <td>Un valore <code>PositionRectangle object</code> che specifica la posizione del campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, <code>InvalidArgumentException</code> viene generato un errore. Inoltre, né l’altezza né la larghezza del rettangolo specificato possono essere pari a 0 o negativi. Le coordinate X in basso a sinistra o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative al riquadro di ritaglio della pagina.</td> 
+   <td>Una <code>PositionRectangle object</code> che specifica la posizione del campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, viene restituito un <code>InvalidArgumentException</code>. Inoltre, né l’altezza né la larghezza del rettangolo specificato possono essere pari a 0 o negativi. Le coordinate X in basso a sinistra o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative al riquadro di ritaglio della pagina.</td> 
   </tr> 
   <tr> 
    <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>Un <code>FieldMDPOptionSpec</code> oggetto che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere null.</td> 
+   <td>Un oggetto <code>FieldMDPOptionSpec</code> che specifica i campi del documento PDF bloccati dopo la firma del campo firma. Questo è un parametro facoltativo e può essere null.</td> 
   </tr> 
   <tr> 
    <td><code>seedValueOptionsSpec</code></td> 
-   <td>Un <code>SeedValueOptions</code> oggetto che specifica i vari valori iniziali del campo. Questo è un parametro facoltativo e può essere null.</td> 
+   <td>Un oggetto <code>SeedValueOptions</code> che specifica i vari valori iniziali per il campo. Questo è un parametro facoltativo e può essere null.</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -419,9 +419,9 @@ public class AddSignatureField {
 
 ### Applica la marca temporale al documento {#apply-document-timestamp}
 
-È possibile marcare a livello di programmazione un documento in base alle specifiche [PAdES 4](https://en.wikipedia.org/wiki/PAdES) . È inoltre possibile utilizzare la specifica [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) per i documenti relativi alle transazioni.
+È possibile marcare a livello di programmazione un documento in base alle specifiche [PAdES 4](https://en.wikipedia.org/wiki/PAdES). È inoltre possibile utilizzare la specifica [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) per i documenti relativi alle transazioni.
 
-**Sintassi**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
+**Sintassi**:  `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -433,7 +433,7 @@ public class AddSignatureField {
   </tr> 
   <tr> 
    <td><code>doc</code> </td> 
-   <td>Oggetto Document contenente PDF.<br /> </td> 
+   <td>Oggetto del documento contenente PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>VerificationTime</code></td> 
@@ -628,7 +628,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma che si trovano in un documento PDF o per verificare i nomi, recuperare i nomi a livello di programmazione. Il servizio Firma restituisce il nome completo del campo firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Sintassi**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
+**Sintassi**:  `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -640,7 +640,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
   </tr> 
   <tr> 
    <td><code>doc</code> </td> 
-   <td>Oggetto Document contenente PDF.<br /> </td> 
+   <td>Oggetto del documento contenente PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code></td> 
@@ -752,7 +752,7 @@ public class GetSignature {
 
 È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma di un documento PDF, è possibile recuperarli e verificarli a livello di programmazione. Il servizio Firma restituisce il nome completo del campo firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Sintassi**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
+**Sintassi**:  `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -871,7 +871,7 @@ Un dizionario di blocco dei campi specifica un elenco di campi bloccati al momen
 
 Modificando un campo firma esistente, è possibile modificare il documento PDF per riflettere i cambiamenti dei requisiti aziendali. Ad esempio, un nuovo requisito aziendale richiede il blocco di tutti i campi del documento dopo la firma del documento.
 
-**Sintassi**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
+**Sintassi**:  `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -891,7 +891,7 @@ Modificando un campo firma esistente, è possibile modificare il documento PDF p
   </tr> 
   <tr> 
    <td><code>pdfSignatureFieldProperties</code></td> 
-   <td>Oggetto che specifica informazioni sui <code>PDFSeedValueOptionSpec</code> valori e i valori <code>FieldMDPOptionSpec</code> del campo firma.</td> 
+   <td>Oggetto che specifica informazioni sui valori <code>PDFSeedValueOptionSpec</code> e <code>FieldMDPOptionSpec</code> del campo firma.</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1055,7 +1055,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Documento PDF di input documento<br /> </td> 
+   <td>Documento PDF di input del documento<br /> </td> 
   </tr> 
   <tr> 
    <td><code>encryptionOptions</code> </td> 
@@ -1386,7 +1386,7 @@ La chiave pubblica è memorizzata nel certificato dell&#39;utente e deve essere 
 
 >[!NOTE]
 >
-> AEM Forms supporta anche le specifiche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*per la firma digitale dei documenti PDF.
+> AEM Forms supporta inoltre la specifica *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* per la firma digitale dei documenti PDF.
 
 **Certificazione di documenti PDF**
 
@@ -1433,7 +1433,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Documento PDF di input documento<br /> </td> 
+   <td>Documento PDF di input del documento<br /> </td> 
   </tr> 
   <tr> 
    <td><code>encryptionOptions</code> </td> 
@@ -2081,9 +2081,9 @@ public class PassEncryptSignExtend {
 
 ### Ottenimento dei diritti di utilizzo delle credenziali {#getting-credential-usage-rights}
 
-Per recuperare le informazioni sui diritti di utilizzo della credenziale specificata dal dato `credentialAlias`, chiamate questa API dall&#39;interno dell&#39; `SecureDocument` API.
+Per recuperare le informazioni sui diritti di utilizzo della credenziale specificata dalla `credentialAlias` data, chiama questa API dall&#39;interno dell&#39;API `SecureDocument`.
 
-**Sintassi**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
+**Sintassi**:  `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
 **Parametri di input**
 
@@ -2095,11 +2095,11 @@ Per recuperare le informazioni sui diritti di utilizzo della credenziale specifi
   </tr> 
   <tr> 
    <td><code>credentialAlias</code> </td> 
-   <td>Indica <code>credentialAlias</code> la credenziale.<br /> </td> 
+   <td>La <code>credentialAlias</code> che specifica la credenziale.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>credentialPassword</code> </td> 
-   <td>Se la credenziale è crittografata, è necessario utilizzare la password della credenziale null se la credenziale non è crittografata.<br /> </td> 
+   <td>La password della credenziale se la credenziale è crittografata, se la credenziale non è crittografata è necessario utilizzare null.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2172,9 +2172,9 @@ public void getCredentialUsageRights() {
 
 ### Ottenimento dei diritti di utilizzo dei documenti {#getting-document-usage-rights}
 
-Per recuperare le informazioni sui diritti di utilizzo per un dato documento, chiamate questa API dall&#39;interno dell&#39; `docAssuranceService`API.
+Per recuperare le informazioni sui diritti di utilizzo per un dato documento, chiamate questa API dall&#39;interno dell&#39;API `docAssuranceService`.
 
-**Sintassi**: `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
+**Sintassi**:  `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -2186,7 +2186,7 @@ Per recuperare le informazioni sui diritti di utilizzo per un dato documento, ch
   </tr> 
   <tr> 
    <td><code>inDocument</code> </td> 
-   <td>Il documento da cui recuperare le informazioni sui diritti di utilizzo<br /> </td> 
+   <td>Il documento da cui recuperare le informazioni sui diritti di utilizzo è disponibile da<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2292,7 +2292,7 @@ public void getDocumentUsageRights() {
 
 ### Rimozione dei diritti di utilizzo {#removing-usage-rights}
 
-Potete rimuovere i diritti di utilizzo per un documento chiamando l&#39; `removeUsageRights`API dall&#39;interno dell&#39; `docAssuranceService`API.
+È possibile rimuovere i diritti di utilizzo per un documento chiamando l&#39;API `removeUsageRights`dall&#39;API `docAssuranceService`API.
 
 **Parametri di input**
 
@@ -2304,7 +2304,7 @@ Potete rimuovere i diritti di utilizzo per un documento chiamando l&#39; `remove
   </tr> 
   <tr> 
    <td><code>inDocument</code> </td> 
-   <td>Il documento da cui rimuovere i diritti di utilizzo.<br /> </td> 
+   <td>Documento da cui rimuovere i diritti di utilizzo.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code> </td> 
@@ -2419,7 +2419,7 @@ public void removeDocumentUsageRights() {
 
 È possibile verificare che il documento PDF firmato non sia stato modificato e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le proprietà della firma, ad esempio l&#39;identità del firmatario. Prima di considerare affidabile una firma digitale, è consigliabile verificarla. Quando si verifica una firma digitale, fare riferimento a un documento PDF contenente una firma digitale.
 
-**Sintassi**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
+**Sintassi**:  `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
 **Parametri di input**
 
@@ -2431,7 +2431,7 @@ public void removeDocumentUsageRights() {
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Oggetto documento contenente PDF<br /> </td> 
+   <td>Oggetto del documento contenente PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code class="code">signatureField
@@ -2457,7 +2457,7 @@ public void removeDocumentUsageRights() {
  </tbody> 
 </table>
 
-Questo codice di esempio viene utilizzato `DocAssuranceService` per verificare un campo firma in un documento PDF crittografato.
+Questo codice di esempio utilizza `DocAssuranceService` per verificare un campo firma in un documento PDF crittografato.
 
 ```java
 /*************************************************************************
@@ -2737,7 +2737,7 @@ public class VerifyFieldEncryptedPDF {
 
 AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è sottoposto a un processo aziendale che richiede la firma di più firmatari. Ad esempio, una transazione finanziaria richiede la firma sia del funzionario che del manager. È possibile utilizzare l&#39;API del servizio Firma per verificare tutte le firme presenti nel documento PDF. Durante la verifica di più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale,  Adobe consiglia di verificarla.
 
-**Sintassi**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
+**Sintassi**:  `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
 **Parametri di input**
 
@@ -2749,7 +2749,7 @@ AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Oggetto documento contenente PDF<br /> </td> 
+   <td>Oggetto del documento contenente PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code>revocationCheckStyle</code></td> 
@@ -3035,7 +3035,7 @@ public class VerifyEncryptedPDFDoc {
 
 È possibile applicare una nuova firma digitale a un campo firma solo dopo aver rimosso la firma digitale precedente. Non è possibile sovrascrivere una firma digitale. Se si tenta di applicare una firma digitale a un campo firma che contiene già una firma, si verifica un&#39;eccezione.
 
-**Sintassi**: `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
+**Sintassi**:  `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -3047,7 +3047,7 @@ public class VerifyEncryptedPDFDoc {
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Oggetto documento contenente PDF<br /> </td> 
+   <td>Oggetto del documento contenente PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code></td> 
@@ -3156,7 +3156,7 @@ public class ClearSignatureField {
 
 È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma che si trovano in un documento PDF o si desidera verificarne i nomi, è possibile recuperarli a livello di programmazione. Il servizio Firma restituisce il nome completo del campo firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Sintassi**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
+**Sintassi**:  `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
 **Parametri di input**
 
@@ -3168,7 +3168,7 @@ public class ClearSignatureField {
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Oggetto Document contenente PDF.<br /> </td> 
+   <td>Oggetto del documento contenente PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>UnlockOptions</code></td> 
@@ -3275,7 +3275,7 @@ public class GetCertifyingSignatureField {
 
 È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma che si trovano in un documento PDF o si desidera verificarne i nomi, è possibile recuperarli a livello di programmazione. Il servizio Firma restituisce il nome completo del campo firma, ad esempio `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Sintassi**: `void getPDFEncryption(Document inDoc)`
+**Sintassi**:  `void getPDFEncryption(Document inDoc)`
 
 **Parametri di input**
 
@@ -3287,7 +3287,7 @@ public class GetCertifyingSignatureField {
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Un documento fornito come input. Può o non può essere criptato.<br /> </td> 
+   <td>Un documento fornito come input. Può essere crittografato o meno.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3391,7 +3391,7 @@ public class GetPDFEncryption {
 
 Rimuovere la cifratura basata su password da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat senza dover specificare una password. Dopo aver rimosso la cifratura basata su password da un documento PDF, il documento non è più protetto.
 
-**Sintassi**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
+**Sintassi**:  `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
 **Parametri di input**
 
@@ -3407,7 +3407,7 @@ Rimuovere la cifratura basata su password da un documento PDF per consentire agl
   </tr> 
   <tr> 
    <td><code>password</code> </td> 
-   <td>Aprire un documento o utilizzare una password di autorizzazione per rimuovere la protezione dal documento.<br /> </td> 
+   <td>Apertura di un documento o password di autorizzazione da utilizzare per rimuovere la protezione dal documento.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3486,11 +3486,11 @@ public class RemovePasswordEncryption {
 }
 ```
 
-### Rimozione della crittografia del certificato {#removing-certificate-encryption}
+### Rimozione crittografia certificato {#removing-certificate-encryption}
 
 È possibile rimuovere la cifratura basata su certificato da un documento PDF per consentire agli utenti di aprire il documento PDF in  Adobe Reader o  Acrobat. Per rimuovere la cifratura da un documento PDF cifrato con un certificato, fare riferimento a una chiave privata. Dopo aver rimosso la cifratura da un documento PDF, non è più protetta.
 
-**Sintassi**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
+**Sintassi**:  `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
 **Parametri di input**
 
@@ -3612,17 +3612,17 @@ public class RemovePKIEncryption {
 
 Il servizio Output fornisce API per il rendering di un file XDP nei formati .pdf, .pcl, .zpl e .ps. Il servizio supporta le seguenti API:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un&#39;applicazione.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Genera un output PCL, PostScript o ZPL da una struttura del modulo e da un file di dati memorizzato in una posizione di rete, in un file system locale o in una posizione HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un&#39;applicazione.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript o ZPL da una struttura del modulo e da un file di dati memorizzati in una posizione di rete, in un file system locale o in una posizione HTTP come valori letterali.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file di dati memorizzati in un&#39;applicazione.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file di dati memorizzati in un&#39;applicazione.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF. Utilizzare l&#39;API generatePDFOutput per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono memorizzati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
+L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF. Utilizzare l&#39;API generatePDFOutput per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono memorizzati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintassi:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3729,7 +3729,7 @@ try {
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, potete generare un file di metadati per ciascun record o salvare l’output in un file PDF. Utilizzare l&#39;API generatePrintedOutput per le strutture del modulo o i dati memorizzati in un&#39;applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, localmente o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
+L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, potete generare un file di metadati per ciascun record o salvare l’output in un file PDF. Utilizzare l&#39;API generatePrintedOutput per le strutture del modulo o i dati memorizzati in un&#39;applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, localmente o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintassi:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3974,7 +3974,7 @@ Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file 
   </tr> 
   <tr> 
    <td>data</td> 
-   <td>Un file XML che contiene dati uniti a documenti PDF.<br /> </td> 
+   <td>Un file XML che contiene dati uniti ai documenti PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td>options</td> 
@@ -3983,7 +3983,7 @@ Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file 
  </tbody> 
 </table>
 
-Il seguente esempio di codice Java genera un output PCL, PostScript e ZPL da una struttura del modulo e dai dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Il seguente esempio di codice Java genera un output PCL, PostScript e ZPL da una struttura del modulo e dai dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4065,7 +4065,7 @@ Genera un output PCL, PostScript e ZPL in base a una struttura del modulo e a un
   </tr> 
   <tr> 
    <td>data</td> 
-   <td>Un file XML che contiene dati uniti a documenti PDF.<br /> </td> 
+   <td>Un file XML che contiene dati uniti ai documenti PDF.<br /> </td> 
   </tr> 
   <tr> 
    <td>options</td> 
@@ -4074,7 +4074,7 @@ Genera un output PCL, PostScript e ZPL in base a una struttura del modulo e a un
  </tbody> 
 </table>
 
-Il seguente esempio di codice Java genera un output PCL, PostScript e ZPL da una struttura del modulo e dai dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Il seguente esempio di codice Java genera un output PCL, PostScript e ZPL da una struttura del modulo e dai dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4134,7 +4134,7 @@ Document doc=null;
 
 Genera un documento in formato PS, PCL e ZPL unendo una struttura del modulo ai dati. Facoltativamente, potete generare un file di metadati per ciascun record o salvare l’output in un file PDF. Utilizzare l&#39;API generatePrintedOutputBatch per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-**Sintassi`:`**`BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
+**Sintassi`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
 #### Parametri di input {#input-parameters-4}
 
@@ -4150,7 +4150,7 @@ Genera un documento in formato PS, PCL e ZPL unendo una struttura del modulo ai 
   </tr> 
   <tr> 
    <td>data</td> 
-   <td>Specifica la mappa della chiave e del documento dati. Se key non è nullo, viene eseguito il rendering del documento dati con il modello per la chiave corrispondente nella mappa dei modelli.<br /> </td> 
+   <td>Specifica la mappa della chiave e del documento dati. Se key non è null, il documento dati viene rappresentato con il modello per la chiave corrispondente nella mappa dei modelli.<br /> </td> 
   </tr> 
   <tr> 
    <td>options</td> 
@@ -4163,7 +4163,7 @@ Genera un documento in formato PS, PCL e ZPL unendo una struttura del modulo ai 
  </tbody> 
 </table>
 
-Il seguente esempio di codice Java genera in batch output PCL, PostScript e ZPL da più modelli di struttura del modulo e file di dati. Il tipo di output dipende dal valore passato al `printConfig`parametro.
+Il seguente esempio di codice Java genera in batch output PCL, PostScript e ZPL da più modelli di struttura del modulo e file di dati. Il tipo di output dipende dal valore passato al parametro `printConfig`.
 
 ```java
 @Reference private OutputService outputService;
@@ -4271,8 +4271,8 @@ String outputFolder="C:/Output";
 
 Il servizio Forms fornisce alle API la possibilità di importare ed esportare dati da e verso un modulo PDF interattivo. Un modulo PDF interattivo è un documento PDF contenente uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**esporta i dati da un modulo PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**importa i dati in un modulo PDF interattivo.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** esportazione di dati da un modulo PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dati in un modulo PDF interattivo.
 
 ### exportData {#exportdata}
 
@@ -4294,7 +4294,7 @@ Esporta i dati del modulo da un modulo PDF interattivo in formato XML e XDP.
   </tr> 
   <tr> 
    <td>dataFormat<br /> </td> 
-   <td>Specificato il formato in cui vengono esportati i dati. Accetta variabile di tipo enum(XDP, XmlData, Auto).<br /> </td> 
+   <td>Specificato il formato in cui vengono esportati i dati. Accetta la variabile di tipo enum(XDP, XmlData, Auto).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -4442,7 +4442,7 @@ Il servizio PDF Generator fornisce API per la conversione dei formati di file na
 Il servizio GeneratePDFService fornisce API per la conversione di vari formati di file quali .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (obsoleto).swf, .jpg, .bmp, .tif, .png, .html e molti altri formati di file in PDF. Fornisce inoltre API per esportare i PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
 
 * **createPDF**: Converte un tipo di file supportato in un documento PDF. Supporta formati di file quali Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi tipo di applicazione generatrice di PDF generico di terze parti può essere collegato all&#39;API.
-* **exportPDF**: Converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento PDF in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word( doc, docx Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). Potete anche specificare profili [di verifica preliminare](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) personalizzati per gli output PDF.
+* **exportPDF**: Converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento PDF in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word( doc, docx Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). È inoltre possibile specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) per gli output PDF.
 
 * **optimizePDF**: Ottimizza il documento PDF e converte un documento PDF da un tipo all’altro. Il metodo accetta un documento PDF come input.
 * **htmlToPdf2**: Converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
@@ -4462,27 +4462,27 @@ Il servizio GeneratePDFService fornisce API per la conversione di vari formati d
   </tr>
   <tr>
    <td>createPDF</td>
-   <td><strong>✓</strong></td>
-   <td><strong>✓</strong></td>
+   <td><strong>AND</strong></td>
+   <td><strong>AND</strong></td>
   </tr>
   <tr>
    <td>htmlToPDF</td>
-   <td><strong>✓</strong></td>
-   <td><strong>✓</strong></td>
+   <td><strong>AND</strong></td>
+   <td><strong>AND</strong></td>
   </tr>
    <td>optimizePDF</td>
-   <td><strong>✓</strong></td>
-   <td>✖</td>
+   <td><strong>AND</strong></td>
+   <td>true</td>
   </tr>
   <tr>
    <td>exportPDF</td>
-   <td><strong>✓</strong></td>
-   <td>✖</td>
+   <td><strong>AND</strong></td>
+   <td>true</td>
   </tr>
   <tr>
    <td>PDF OCR (PDF ricercabile)</td>
-   <td><strong>✓</strong></td>
-   <td>✖</td>
+   <td><strong>AND</strong></td>
+   <td>true</td>
   </tr>
  </tbody>
 </table>
@@ -4545,7 +4545,7 @@ Il servizio createPDF genera le seguenti eccezioni:
     <ul> 
      <li>Nessuna protezione</li> 
      <li>Protezione password<br /> </li> 
-     <li>Protezione dei certificati<br /> </li> 
+     <li>Protezione certificati<br /> </li> 
      <li> Adobe Policy Server</li> 
     </ul> <p>È un parametro facoltativo.</p> </td> 
   </tr> 
@@ -4656,7 +4656,7 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
   </tr> 
   <tr> 
    <td>inputFileName<br /> </td> 
-   <td>Il nome del file e l’estensione.<br /> </td> 
+   <td>Nome del file con l'estensione.<br /> </td> 
   </tr> 
   <tr> 
    <td>formatType</td> 
@@ -4958,7 +4958,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
     <ul> 
      <li>Nessuna protezione</li> 
      <li>Protezione password<br /> </li> 
-     <li>Protezione dei certificati<br /> </li> 
+     <li>Protezione certificati<br /> </li> 
      <li> Adobe Policy Server</li> 
     </ul> <p>È un parametro facoltativo.</p> </td> 
   </tr> 
