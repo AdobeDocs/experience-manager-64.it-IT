@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Riconoscimento di certificati validi e scaduti nei documenti PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
-Quando in Adobe Reader viene aperto un documento PDF con diritti di utilizzo applicati da Estensioni Reader, viene visualizzata una barra di stato che descrive i diritti di utilizzo specifici attivati nel documento PDF.
+Quando in  Adobe Reader viene aperto un documento PDF con diritti di utilizzo applicati da Estensioni Reader, viene visualizzata una barra di stato che descrive i diritti di utilizzo specifici attivati nel documento PDF.
 
 Quando il certificato digitale che specifica i diritti di utilizzo per un documento PDF scade e il documento PDF viene aperto in  Adobe Reader, viene visualizzata una finestra di dialogo in cui si informa l&#39;utente che il documento PDF dispone di diritti di utilizzo, ma tali diritti sono disattivati. Anche se il messaggio indica che il documento PDF è stato alterato o alterato, ciò non avviene necessariamente.  Adobe Reader visualizza questo messaggio alla scadenza di un certificato o alla modifica di un documento. In  Adobe Reader 7.0.x o versione successiva, non è possibile determinare quale caso è al momento il problema.
 
