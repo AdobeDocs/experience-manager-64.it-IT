@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Impostazione dei valori di timeout per l&#39;uso con le estensioni Acrobat Reader DC  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Impostazione dei valori di timeout per l&#39;uso con le estensioni Acrobat Reader DC {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
 Quando lavorate su molti file PDF con le estensioni Acrobat Reader DC, accertatevi che i seguenti valori di timeout siano impostati correttamente per evitare che i processi scadano e non funzionino correttamente:
 
@@ -26,12 +26,12 @@ Quando lavorate su molti file PDF con le estensioni Acrobat Reader DC, accertate
 
 Questo valore può essere impostato nella console di amministrazione. Fate clic su Impostazioni > Impostazioni di sistema di base > Configurazioni e specificate un valore per Timeout eliminazione documento predefinito.
 
-**Timeout moduli AEM User Manager:** Questo valore può essere impostato modificando il file config.xml. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione, quindi fate clic su Esporta. Aprite il file config.xml esportato e modificate le righe seguenti:
+**Timeout AEM moduli di User Manager:** questo valore può essere impostato modificando il file config.xml. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione, quindi fate clic su Esporta. Aprite il file config.xml esportato e modificate le righe seguenti:
 
-Valore &lt;entry key=&quot;assertionValidityInMinutes&quot;=&quot;600&quot;/>
+&lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot; />
 
-&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot;/>
+&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot; />
 
 Salvate e importate di nuovo il file config.xml nella console di amministrazione.
 
-**Timeout sessione server applicazioni:** Questo valore può essere impostato sul server dell’applicazione. Per ulteriori informazioni, consultate la documentazione fornita con il server applicazione.
+**Timeout sessione server applicazione:** questo valore può essere impostato sul server applicazione. Per ulteriori informazioni, consultate la documentazione fornita con il server applicazione.
