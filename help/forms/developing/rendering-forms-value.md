@@ -43,7 +43,7 @@ Quando una struttura del modulo viene passata per valore, si applicano le seguen
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -65,7 +65,7 @@ Prima di poter importare i dati in un modulo PDF API client a livello di program
 
 **Riferimento alla struttura del modulo**
 
-Quando si esegue il rendering di un modulo in base al valore, è necessario creare un `com.adobe.idp.Document` oggetto che contenga la struttura del modulo da sottoporre a rendering. È possibile fare riferimento a un file XDP esistente oppure creare in modo dinamico una struttura del modulo in fase di esecuzione e compilare un `com.adobe.idp.Document` modulo con tali dati.
+Quando si esegue il rendering di un modulo in base al valore, è necessario creare un oggetto `com.adobe.idp.Document` che contenga la struttura del modulo da sottoporre a rendering. È possibile fare riferimento a un file XDP esistente oppure creare in modo dinamico una struttura del modulo in fase di esecuzione e compilare un `com.adobe.idp.Document` con tali dati.
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Quando si esegue il rendering di un modulo in base al valore, è necessario crea
 
 **Eseguire il rendering di un modulo per valore**
 
-Per eseguire il rendering di un modulo in base al valore, passare un&#39; `com.adobe.idp.Document` istanza che contiene la struttura del modulo al `inDataDoc` parametro del metodo di rendering (può essere uno dei metodi di rendering dell&#39; `FormsServiceClient` oggetto come `renderPDFForm`, `(Deprecated) renderHTMLForm`e così via). Questo valore del parametro è in genere riservato ai dati uniti al modulo. Analogamente, trasmettere al `formQuery` parametro un valore di stringa vuoto. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
+Per eseguire il rendering di un modulo in base al valore, passare un&#39;istanza `com.adobe.idp.Document` che contiene la struttura del modulo al parametro `inDataDoc` del metodo di rendering (può essere uno dei metodi di rendering dell&#39;oggetto `FormsServiceClient` come `renderPDFForm`, `(Deprecated) renderHTMLForm` e così via). Questo valore del parametro è in genere riservato ai dati uniti al modulo. Analogamente, trasmettere un valore di stringa vuoto al parametro `formQuery`. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
 
 >[!NOTE]
 >
->Se si desidera visualizzare i dati all&#39;interno del modulo, è necessario specificarli all&#39;interno dell&#39; `xfa:datasets` elemento . Per informazioni sull&#39;architettura XFA, visitate [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Se si desidera visualizzare i dati all&#39;interno del modulo, è necessario specificarli all&#39;interno dell&#39;elemento `xfa:datasets`. Per informazioni sull&#39;architettura XFA, visitare il sito Web [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
 
 **Scrivere il flusso di dati del modulo nel browser Web del client**
 
@@ -109,36 +109,36 @@ Eseguire il rendering di un modulo per valore utilizzando l&#39;API di Forms (Ja
 
 1. Creare un oggetto Forms Client API
 
-   * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
-   * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` che contiene le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Riferimento alla struttura del modulo
 
-   * Creare un `java.io.FileInputStream` oggetto che rappresenta la struttura del modulo da sottoporre a rendering utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del file XDP.
-   * Creare un `com.adobe.idp.Document` oggetto utilizzando il relativo costruttore e passando l&#39; `java.io.FileInputStream` oggetto.
+   * Creare un oggetto `java.io.FileInputStream` che rappresenta la struttura del modulo da eseguire di rendering utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del file XDP.
+   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
 
 1. Eseguire il rendering di un modulo per valore
 
-   Richiama il metodo dell’ `FormsServiceClient` oggetto `renderPDFForm` e passa i seguenti valori:
+   Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
 
    * Un valore di stringa vuoto. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
-   * Un `com.adobe.idp.Document` oggetto che contiene la struttura del modulo. Normalmente questo valore di parametro è riservato ai dati uniti al modulo.
-   * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate specificare le opzioni di esecuzione.
-   * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
-   * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
+   * Un oggetto `com.adobe.idp.Document` che contiene la struttura del modulo. Normalmente questo valore di parametro è riservato ai dati uniti al modulo.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di esecuzione. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate specificare le opzioni di esecuzione.
+   * Un oggetto `URLSpec` che contiene valori URI richiesti dal servizio Forms.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che può essere scritto nel browser Web del client.
+   Il metodo `renderPDFForm` restituisce un oggetto `FormsResult` contenente un flusso di dati del modulo che può essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` metodo ‘s `getOutputContent` .
-   * Ottenere il tipo di contenuto dell&#39; `com.adobe.idp.Document` oggetto richiamandone il `getContentType` metodo.
-   * Impostare il tipo di contenuto dell&#39; `javax.servlet.http.HttpServletResponse` oggetto richiamandone `setContentType` il metodo e passando il tipo di contenuto dell&#39; `com.adobe.idp.Document` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il `javax.servlet.http.HttpServletResponse` metodo dell&#39; `getOutputStream` oggetto.
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` metodo dell&#39; `getInputStream` oggetto.
-   * Creare un array di byte e allocare le dimensioni dell&#39; `InputStream` oggetto. Richiamare il metodo dell&#39; `InputStream` oggetto `available` per ottenere le dimensioni dell&#39; `InputStream` oggetto.
-   * Compilare l&#39;array di byte con il flusso di dati del modulo richiamando il `InputStream` `read`metodo dell&#39;oggetto e passando l&#39;array di byte come argomento.
-   * Richiamare il metodo dell&#39; `javax.servlet.ServletOutputStream` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamandone il metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
+   * Creare un array di byte e allocare le dimensioni dell&#39;oggetto `InputStream`. Richiamare il metodo `InputStream` dell&#39;oggetto `available` per ottenere le dimensioni dell&#39;oggetto `InputStream`.
+   * Compilare l&#39;array di byte con il flusso di dati del modulo richiamando il metodo `read`dell&#39;oggetto `InputStream` e passando l&#39;array di byte come argomento.
+   * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
 
@@ -161,41 +161,41 @@ Eseguire il rendering di un modulo per valore utilizzando l&#39;API di Forms (se
 
 1. Creare un oggetto Forms Client API
 
-   Creare un `FormsService` oggetto e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Riferimento alla struttura del modulo
 
-   * Creare un `java.io.FileInputStream` oggetto utilizzando il relativo costruttore. Passa un valore di stringa che specifica la posizione del file XDP.
-   * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare un documento PDF cifrato con una password.
-   * Creare un array di byte che memorizza il contenuto dell&#39; `java.io.FileInputStream` oggetto. È possibile determinare le dimensioni dell&#39;array di byte ottenendo le dimensioni dell&#39; `java.io.FileInputStream` oggetto utilizzando il relativo `available` metodo.
-   * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo dell&#39; `java.io.FileInputStream` oggetto `read` e passando l&#39;array di byte.
-   * Compilare l&#39; `BLOB` oggetto richiamandone il `setBinaryData` metodo e passando l&#39;array di byte.
+   * Creare un oggetto `java.io.FileInputStream` utilizzando il relativo costruttore. Passa un valore di stringa che specifica la posizione del file XDP.
+   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF cifrato con una password.
+   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `java.io.FileInputStream`. È possibile determinare la dimensione dell&#39;array di byte ottenendo la dimensione dell&#39;oggetto `java.io.FileInputStream` utilizzando il metodo `available` corrispondente.
+   * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo `java.io.FileInputStream` dell&#39;oggetto `read` e passando l&#39;array di byte.
+   * Compilare l&#39;oggetto `BLOB` richiamandone il metodo `setBinaryData` e passando l&#39;array di byte.
 
 1. Eseguire il rendering di un modulo per valore
 
-   Richiama il metodo dell’ `FormsService` oggetto `renderPDFForm` e passa i seguenti valori:
+   Richiamare il metodo `FormsService` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
 
    * Un valore di stringa vuoto. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
-   * Un `BLOB` oggetto che contiene la struttura del modulo. Normalmente questo valore di parametro è riservato ai dati uniti al modulo.
-   * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate specificare le opzioni di esecuzione.
-   * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
-   * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato effettuato il rendering.
-   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento memorizza il numero di pagine nel modulo.
-   * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali.)
-   * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
+   * Un oggetto `BLOB` che contiene la struttura del modulo. Normalmente questo valore di parametro è riservato ai dati uniti al modulo.
+   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di esecuzione. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate specificare le opzioni di esecuzione.
+   * Un oggetto `URLSpec` che contiene valori URI richiesti dal servizio Forms.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato effettuato il rendering.
+   * Un oggetto `javax.xml.rpc.holders.LongHolder` vuoto compilato dal metodo. Questo argomento memorizza il numero di pagine nel modulo.
+   * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali.)
+   * Un oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
 
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il metodo `renderPDFForm` compila l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `FormResult` oggetto ottenendo il valore del membro `com.adobe.idp.services.holders.FormsResultHolder` dati dell&#39; `value` oggetto.
-   * Creare un `BLOB` oggetto che contenga dati del modulo richiamando il `FormsResult` metodo dell&#39; `getOutputContent` oggetto.
-   * Ottenere il tipo di contenuto dell&#39; `BLOB` oggetto richiamandone il `getContentType` metodo.
-   * Impostare il tipo di contenuto dell&#39; `javax.servlet.http.HttpServletResponse` oggetto richiamandone `setContentType` il metodo e passando il tipo di contenuto dell&#39; `BLOB` oggetto.
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il `javax.servlet.http.HttpServletResponse` metodo dell&#39; `getOutputStream` oggetto.
-   * Creare un array di byte e compilarlo richiamando il metodo dell&#39; `BLOB` oggetto `getBinaryData` . Questa attività assegna il contenuto dell&#39; `FormsResult` oggetto all&#39;array di byte.
-   * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `FormResult` ottenendo il valore del membro di dati `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value`.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
+   * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamandone il metodo `getContentType`.
+   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare un array di byte e compilarlo richiamando il metodo `BLOB` dell&#39;oggetto `getBinaryData`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
+   * Richiamare il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
 
