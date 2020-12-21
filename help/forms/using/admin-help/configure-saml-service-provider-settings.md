@@ -22,14 +22,14 @@ ht-degree: 0%
 
 SAML (Security Assertion Markup Language) è una delle opzioni che è possibile selezionare al momento della configurazione dell&#39;autorizzazione per un dominio Enterprise o ibrido. SAML viene utilizzato principalmente per supportare SSO tra più domini. Quando SAML è configurato come provider di autenticazione, gli utenti accedono e si autenticano per AEM moduli tramite un provider di identità (IDP) di terze parti specificato.
 
-Per una spiegazione di SAML, vedere [Security Assertion Markup Language (SAML) V2.0 Technical Overview (Panoramica](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf)tecnica di SAML).
+Per una spiegazione di SAML, vedere [Security Assertion Markup Language (SAML) V2.0 Technical Overview](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
 1. Nella console di amministrazione, fate clic su Settings (Impostazioni) > User Management (Gestione utente) > Configuration (Configurazione) > SAML Service Provider Settings (Impostazioni provider di servizi SAML).
-1. Nella casella ID entità provider di servizi, digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi di AEM moduli. Potete inoltre specificare questo ID univoco al momento della configurazione dell’IDP (ad esempio, `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere AEM moduli (ad esempio, `https://AEMformsserver`).
+1. Nella casella ID entità provider di servizi, digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi di AEM moduli. Potete inoltre specificare questo ID univoco al momento della configurazione dell&#39;IDP (ad esempio, `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere ai moduli AEM (ad esempio, `https://AEMformsserver`).
 1. Nella casella URL base provider di servizi, digitare l&#39;URL di base per il server moduli (ad esempio, `https://AEMformsserver:8080`).
 1. (Facoltativo) Per abilitare AEM moduli per inviare richieste di autenticazione firmate all&#39;IDP, effettuare le seguenti operazioni:
 
-   * Utilizzare Trust Manager per importare una credenziale in formato PKCS #12 con le credenziali per la firma dei documenti selezionate come tipo di archivio attendibili. (vedere [Gestione delle credenziali](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials)locali.)
+   * Utilizzare Trust Manager per importare una credenziale in formato PKCS #12 con le credenziali per la firma dei documenti selezionate come tipo di archivio attendibili. (Vedere [Gestione delle credenziali locali](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Nell&#39;elenco Alias chiave credenziali provider di servizi, selezionare l&#39;alias assegnato alla credenziale in Trust Store.
    * Fate clic su Esporta per salvare il contenuto dell’URL in un file e quindi importare il file nell’IDP.
 
