@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Temi di riferimento {#reference-themes}
 
-[I temi](/help/forms/using/themes.md) consentono di formattare i moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, potete ottenere i seguenti temi installando il pacchetto [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[I ](/help/forms/using/themes.md) temi consentono di formattare i moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il pacchetto [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES):
 
 * Berile
 * Exec
@@ -35,12 +35,13 @@ Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare del
 
 I temi inclusi in questo pacchetto sono reattivi e lo stile di questi temi è definito per i display per dispositivi mobili e desktop. La maggior parte dei browser moderni su una varietà di dispositivi può eseguire il rendering dei moduli applicati con uno di questi temi senza problemi.
 
-Per ulteriori informazioni sull&#39;installazione del pacchetto, consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
+Per ulteriori informazioni sull&#39;installazione del pacchetto, vedere [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 
-## Berile {#beryl}
+## Beryl {#beryl}
 
-Il tema Beryl è utilizzato dal modulo [adattivo](/help/forms/using/gov-reference-site-walkthrough.md)We.Gov e enfatizza l&#39;uso dell&#39;immagine di sfondo, la trasparenza e le icone grandi e semplici. Nella schermata seguente, è possibile vedere l&#39;aspetto del tema Beryl e come può migliorare lo stile del modulo.
-![Tema](assets/beryl.png)Beryl[Clicca per ingrandire](assets/beryl-1.png)
+Il tema Beryl è utilizzato da [Modulo adattivo We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) e mette in evidenza l&#39;utilizzo di immagini di sfondo, trasparenza e icone grandi e semplici. Nella schermata seguente, è possibile vedere l&#39;aspetto del tema Beryl e come può migliorare lo stile del modulo.
+![Beryl ](assets/beryl.png)
+[temaFare clic per ingrandire](assets/beryl-1.png)
 
 ## Exec {#exec}
 
@@ -49,7 +50,7 @@ Il tema Exec evita riempimenti di sfondo pieni per enfatizzare i componenti del 
 
 [Fare clic per ingrandire](assets/exec-1.png)
 
-## Exec Light {#exec-light}
+## Evidenziazione sez {#exec-light}
 
 Il tema Exec Light utilizza lo spazio vuoto per creare un&#39;esperienza senza soluzione di continuità. I pulsanti Successivo e Invia consentono di ottenere un riempimento uniforme e un&#39;ombreggiatura 3D. Le schede selezionate a sinistra visualizzano una freccia invece dei doppi indicatori di spunta.
 ![Titolo Exec](assets/exec-light.png)
@@ -82,7 +83,7 @@ Il tema Urbane enfatizza un aspetto minimalista e funzionale per il modulo. Quan
 
 [Fare clic per ingrandire](assets/urbane-1.png)
 
-## Standard di web design degli Stati Uniti {#u-s-web-design-standards}
+## Standard di progettazione Web USA {#u-s-web-design-standards}
 
 Il tema Standard di Progettazione Web degli Stati Uniti, come suggerisce il nome, utilizza i tipi di carattere e gli stili descritti nel sito Web Microsoft Design Standards. Lo standard web è utilizzato dalle organizzazioni federali per creare esperienze Web coerenti tra i siti web delle amministrazioni federali.
 ![Tema statunitense per gli standard di progettazione Web](assets/us-web-standards.png)
