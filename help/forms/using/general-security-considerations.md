@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Scoprite come preparare l&#39;applicazione dell&#39; AEM Forms nell&#39;ambiente JEE.
 
-Questo articolo fornisce informazioni introduttive che aiutano a prepararsi a rendere più rigido l&#39;ambiente AEM Forms . Include informazioni preliminari su  AEM Forms su JEE, sistema operativo, server applicazioni e sicurezza del database. Prima di continuare a bloccare l&#39;ambiente, controlla queste informazioni.
+Questo articolo fornisce informazioni introduttive che aiutano a prepararsi a rendere più rigido l&#39;ambiente AEM Forms . Include informazioni preliminari su  AEM Forms su JEE, sistema operativo, server applicazioni e sicurezza del database. Rivedete queste informazioni prima di continuare a bloccare l&#39;ambiente.
 
 ## Informazioni di sicurezza specifiche per il fornitore {#vendor-specific-security-information}
 
@@ -69,7 +69,7 @@ Per informazioni di sicurezza sui sistemi operativi supportati  AEM Forms su JEE
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Linee guida per la sicurezza e l'indurimento</a></p> </td> 
   </tr> 
   <tr> 
-   <td>Aggiornamento 3 di Oracle Linux® 7</td> 
+   <td> Oracle Linux® 7 Update 3</td> 
    <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guida alla sicurezza per la release 7</a><br /> </td> 
   </tr> 
   <tr> 
@@ -102,8 +102,8 @@ Per informazioni sulla protezione dei server delle applicazioni che  AEM Forms s
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Cercate informazioni su WebLogic Security all'indirizzo <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
+   <td><p> Oracle WebLogic®</p> </td> 
+   <td><p>Cercate informazioni sulla sicurezza WebLogic all'indirizzo <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -148,13 +148,13 @@ Per informazioni di protezione sui database supportati da AEM Forms su JEE, vede
    <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">Problemi generali di protezione di MySQL 5.0</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">Problemi generali di protezione di MySQL 5.1</a></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Oracle® 12c</p> </td> 
-   <td><p>Vedere il capitolo Sicurezza nella documentazione di <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g</a></p> </td> 
+   <td><p> Oracle® 12c</p> </td> 
+   <td><p>Vedere il capitolo Sicurezza nella <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank"> documentazione Oracle 12g</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-La tabella seguente descrive le porte predefinite che devono essere aperte durante il processo di configurazione di AEM Forms  su JEE. Se vi connettete attraverso https, regolate di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, vedere il documento *Installazione e distribuzione  AEM Forms su JEE* per il server delle applicazioni.
+La tabella seguente descrive le porte predefinite che devono essere aperte durante il processo di configurazione di AEM Forms  su JEE. Se vi connettete attraverso https, regolate di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, vedere il documento *Installazione e distribuzione  AEM Forms su JEE* per il server applicazioni.
 
 <table> 
  <thead> 
@@ -193,7 +193,7 @@ La tabella seguente descrive le porte predefinite che devono essere aperte duran
    <td><p>3306</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Oracle</p> </td> 
+   <td><p> Oracle</p> </td> 
    <td><p>1521</p> </td> 
   </tr> 
   <tr> 
@@ -217,13 +217,13 @@ Application Server JBoss utilizza 8080 come porta HTTP predefinita. JBoss dispon
 
 1. Aprite il file seguente per la modifica:
 
-   Installazione su un solo server: [Livello principale]JBoss /standalone/configuration/standalone.xml
+   Installazione su un solo server: [Radice JBoss]/standalone/configuration/standalone.xml
 
-   Installazioni cluster: [Livello principale]JBoss /domain/configuration/domain.xml
+   Installazioni cluster: [Radice JBoss]/domain/configuration/domain.xml
 
-1. Modificate il valore dell&#39;attributo **port** nel tag **&lt;socket-binding>** in un numero di porta personalizzato. Ad esempio, i seguenti utilizzano la porta 8090:
+1. Modificate il valore dell&#39;attributo **port** nel tag **&lt;socket-binding>** su un numero di porta personalizzato. Ad esempio, i seguenti utilizzano la porta 8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
 1. Salvate e chiudete il file.
 1. Riavviare il server applicazione JBoss.
@@ -244,14 +244,14 @@ Le credenziali e-mail archiviate dalle applicazioni non vengono crittografate pr
 
 Il server applicazione utilizzato per eseguire  AEM Forms su JEE richiede una propria configurazione per poter accedere al database tramite un&#39;origine dati configurata sul server dell&#39;applicazione. Assicurarsi che il server applicazioni non esponga la password del database in testo libero nel file di configurazione dell&#39;origine dati.
 
-Il file lc_[database].xml non deve contenere password in formato testo libero. Per informazioni su come crittografare queste password per il server applicazioni, consultare il fornitore del server applicazioni.
+Il file lc_[database].xml non deve contenere password in formato testo chiaro. Per informazioni su come crittografare queste password per il server applicazioni, consultare il fornitore del server applicazioni.
 
 >[!NOTE]
 >
 >Il programma di installazione della chiave di  AEM Forms su JEE JBoss crittografa la password del database.
 
-Per impostazione predefinita, IBM WebSphere Application Server e Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, verificate con la documentazione del server applicazione che ciò si verifichi.
+Per impostazione predefinita, IBM WebSphere Application Server e  Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, verificate con la documentazione del server applicazione che ciò si verifichi.
 
-### Protezione della chiave privata archiviata in Trust Store {#protecting-the-private-key-stored-in-trust-store}
+### Protezione della chiave privata memorizzata nell&#39;archivio certificati {#protecting-the-private-key-stored-in-trust-store}
 
 Le chiavi private o le credenziali importate in Trust Store sono memorizzate in  AEM Forms nel database JEE. Prendere le dovute precauzioni per proteggere il database e limitare l&#39;accesso solo agli amministratori designati.
