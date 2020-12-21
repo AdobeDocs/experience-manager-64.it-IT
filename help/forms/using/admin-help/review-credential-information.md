@@ -24,7 +24,7 @@ La credenziale contiene informazioni che ne descrivono l&#39;uso previsto, acces
 
 1. Aprite un browser Web e immettete il seguente URL:
 
-   http://localhost:*[port]*/ReaderExtensions (dove *[porta]* è il numero di porta del server dell&#39;applicazione)
+   http://localhost:*[porta]*/ReaderExtensions (dove *[porta]* è il numero di porta del server dell&#39;applicazione)
 
 1. Effettuate l&#39;accesso utilizzando il nome utente e la password predefiniti:
 
@@ -34,7 +34,7 @@ La credenziale contiene informazioni che ne descrivono l&#39;uso previsto, acces
 
    >[!NOTE]
    >
-   >Per effettuare l’accesso con il nome utente e la password predefiniti, è necessario disporre dei privilegi di amministratore o utente avanzato. Per consentire ad altri utenti di accedere alle estensioni Acrobat Reader DC, create gli account utente in Gestione utente e assegnate agli utenti il ruolo Applicazione Web con le estensioni Acrobat Reader DC.
+   >Per effettuare l’accesso con il nome utente e la password predefiniti dovete disporre dei privilegi di amministratore o utente avanzato. Per consentire ad altri utenti di accedere alle estensioni Acrobat Reader DC, create gli account utente in Gestione utente e assegnate agli utenti il ruolo Applicazione Web con le estensioni Acrobat Reader DC.
 
 1. Selezionare l&#39;alias delle credenziali dall&#39;elenco Seleziona credenziali e rivedere le informazioni incluse nella Data di scadenza e nell&#39;avviso di utilizzo previsto.
 
