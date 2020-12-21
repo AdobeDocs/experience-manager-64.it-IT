@@ -33,7 +33,7 @@ ht-degree: 2%
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
       + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
       + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
-   + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
+   + Esercitazione: Creare la prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model-tutorial.md)
@@ -52,16 +52,16 @@ ht-degree: 2%
       + [Temi di riferimento](using/reference-themes.md)
       + [Modelli per lettere di riferimento](using/reference-cm-layout-templates.md)
       + [Configurazione di Microsoft Dynamics 365 per il flusso di lavoro del mutuo home del sito di riferimento We.Finance](using/ms-dynamics-configuration-home-mortgage.md)
-+ Installare e configurare  AEM Forms {#install-aem-forms}
++ Installazione e configurazione  AEM Forms {#install-aem-forms}
    + [Topologie di architettura e implementazione per  AEM Forms](using/aem-forms-architecture-deployment.md)
-   + [Scelta di un tipo di persistenza per un&#39;installazione AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
+   + [Scelta di un tipo di persistenza per un&#39;installazione AEM Forms ](using/choosing-persistence-type-for-aem-forms.md)
    + Installare  AEM Forms su OSGi {#osgi-installation}
       + [Piattaforme supportate per AEM moduli su OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Installazione e configurazione di document services](using/install-configure-document-services.md)
       + [Installare e configurare le funzionalità di acquisizione dei dati](using/installing-configuring-aem-forms-osgi.md)
       + [Installazione e configurazione del flusso di lavoro Forms-centric su OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installare e configurare le comunicazioni interattive](using/installing-configuring-intreactive-communication-correspondence-management.md)
-   + Install AEM Forms on JEE {#jee-installation}
+   + Installare  AEM Forms su JEE {#jee-installation}
       + [Piattaforme supportate per AEM moduli su JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installare e distribuire  AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [Installazione e configurazione solo del server di protezione dei documenti](using/installing-and-configuring-the-document-security-server.md)
@@ -102,8 +102,8 @@ ht-degree: 2%
       + [Aggiornamento dall&#39;LiveCycle ES4 SP1 a  AEM Forms su JEE per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [Aggiornamento da una release AEM Forms  a AEM Forms 6.4 su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
       + [Aggiornamento da LiveCycle ES4 SP1 a  AEM Forms su JEE per WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
-+ Gestione  AEM Forms {#manage-administer-aem-forms}
-   + [AEM Forms su gruppi e privilegi OSGi](using/forms-groups-privileges-tasks.md)
++ Gestisci  AEM Forms {#manage-administer-aem-forms}
+   + [ AEM Forms su gruppi e privilegi OSGi](using/forms-groups-privileges-tasks.md)
    + [Creazione di nuove cartelle per classificare i moduli](using/creating-new-folders-categorize-forms.md)
    + [Ricerca di moduli e risorse](using/searching-forms-or-assets.md)
    + [Gestire i metadati dei moduli](using/manage-form-metadata.md)
@@ -154,7 +154,7 @@ ht-degree: 2%
    + [Riutilizzo di moduli adattivi](using/reusing-adaptive-forms.md)
    + [Componente separatore nei moduli adattivi](using/separator-component-in-adaptive-forms.md)
    + [Applicazione di firme elettroniche a un modulo tramite firme a script](using/signing-forms-using-scribble.md)
-   + [Scelte rapide da tastiera AEM Forms](using/keyboard-shortcuts.md)
+   + [ Scelte rapide da tastiera AEM Forms](using/keyboard-shortcuts.md)
    + [Associazione di revisori per l&#39;invio a un modulo](using/adding-reviewers-form.md)
    + [Authoring della guida contestuale per i campi del modulo](using/authoring-in-field-help.md)
 + Forms adattivo - Authoring avanzato {#adaptive-forms-advanced-authoring}
@@ -201,7 +201,7 @@ ht-degree: 2%
 +  AEM Forms Workspace {#use-aem-forms-workspace}
    + [Introduzione a  area di lavoro AEM Forms](using/introduction-html-workspace.md)
    + [Utilizzo dell’area di lavoro  AEM Forms](using/html-workspace-overview.md)
-   + [AEM Forms Workspace Architecture](using/html-workspace-architecture.md)
+   + [ AEM Forms Workspace Architecture](using/html-workspace-architecture.md)
    + [Funzioni dell’area di lavoro di  AEM Forms non disponibili nell’area di lavoro di Flex](using/features-html-workspace-available-flex.md)
    + [Funzioni dell&#39;area di lavoro Flex non disponibili &#39;area di lavoro AEM Forms](using/features-flex-workspace-available-html.md)
    + [Interazione con il dorso](using/backbone-interaction.md)
@@ -245,7 +245,7 @@ ht-degree: 2%
    + [Integrazione dell&#39;area di lavoro AEM moduli con Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Uso degli elenchi A-do](using/todo-lists.md)
    + [Linee guida per la risoluzione dei problemi per &#39;area di lavoro AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
-+ AEM Forms app {#aem-forms-app}
++  app AEM Forms {#aem-forms-app}
    + [Introduzione a  app AEM Forms](using/aem-forms-app.md)
    + [Configurare l&#39;ambiente per &#39;app AEM Forms](using/setup-environment-mobile-workspace.md)
    + [Configurare il progetto Xcode e creare l&#39;app iOS](using/setup-xcode-project-build-installer.md)
@@ -350,7 +350,7 @@ ht-degree: 2%
    + [Creazione di una pagina del portale moduli](using/creating-form-portal-page.md)
    + [API per l&#39;utilizzo dei moduli inviati nel portale dei moduli](using/report-submitted-data-forms.md)
    + [Memorizzazione personalizzata per il componente bozze e invii](using/adding-custom-storage-provider-forms.md)
-+ Servizi basati su documenti {#use-document-services}
++ Servizi documentali {#use-document-services}
    + [Panoramica di AEM Document Services](using/overview-aem-document-services.md)
    + [Servizio Forms](using/forms-service.md)
    + [Servizio di output](using/output-service.md)
@@ -442,7 +442,7 @@ ht-degree: 2%
    + Gestione dei servizi {#manage-services}
       + [Configurare le impostazioni del servizio](/help/forms/using/admin-help/configure-service-settings.md)
       + [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md)
-   + Gestione degli endpoint {#manage-endpoints}
+   + Gestione di endpoint {#manage-endpoints}
       + [Aggiunta, attivazione, modifica o rimozione di endpoint](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configurazione degli endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configurazione degli endpoint remoti](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
@@ -517,13 +517,13 @@ ht-degree: 2%
       + [Operazioni con operazioni e rami in stallo](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configurazione delle code condivise](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Operazioni con le attività](/help/forms/using/admin-help/tasks.md)
-   + Configurazione di Workspace {#configure-workspace}
+   + Configurazione dell&#39;area di lavoro {#configure-workspace}
       + [Panoramica di Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importazione ed esportazione di impostazioni globali](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Impostazione del messaggio del giorno](/help/forms/using/admin-help/setting-message-day.md)
       + [Personalizzazione dei modelli di ricerca](/help/forms/using/admin-help/customizing-search-templates.md)
       + [Gestione delle categorie visualizzate in Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
-   + Monitoraggio stato {#health-monitor}
+   + Monitoraggio integrità {#health-monitor}
       + [Panoramica di Health Monitor](/help/forms/using/admin-help/overview-11.md)
       + [Ottimizzazione delle prestazioni del monitor di stato](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
       + [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md)
@@ -535,9 +535,9 @@ ht-degree: 2%
       + [Monitoraggio delle distribuzioni di moduli AEM](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Gestione del lavoro e limitazione](/help/forms/using/admin-help/manager-throttling.md)
       + [Esecuzione di AEM moduli in modalità di manutenzione](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-   + Gestione del database moduli AEM {#maintain-aem-forms-database}
+   + Gestione del database dei moduli AEM {#maintain-aem-forms-database}
       + [Database DB2: Esecuzione settimanale di un processo](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Soglia massima cursori aperti del database Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [ soglia massima per i cursori aperti del database Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [Database IBM DB2: Esecuzione di comandi per una manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Rimozione dei dati del processo](/help/forms/using/admin-help/purging-process-data.md)
       + [Database di Microsoft SQL Server: Ottimizzazione della configurazione](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
@@ -571,12 +571,12 @@ ht-degree: 2%
    + [Report personalizzati in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Query ad hoc in Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Risoluzione dei problemi relativi ai processi di reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
-+ Riferimento per sviluppatori {#developer-reference}
++ Riferimento sviluppatore {#developer-reference}
    + [Nozioni di base sugli sviluppatori](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
    + [HTML Template Language](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
    + [AEM plug-in per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
-   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
-   + [AEM Forms su JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
+   + [ AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
+   + [ AEM Forms su JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API Form Bridge per moduli HTML5](using/form-bridge-apis.md)
    + [Riferimento API della libreria JavaScript per Forms adattivo](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [Assembler Service e DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
@@ -587,7 +587,7 @@ ht-degree: 2%
          + [Chiamata  AEM Forms tramite API](developing/invoking-aem-forms-using-apis.md)
          + [Informazioni  processi AEM Forms](developing/aem-forms-processes.md)
          + [Contenitore di servizi](developing/service-container.md)
-      + Avvio rapido di Java API - Esempi di codice {#java-api-quick-start-code-examples}
+      + Avvio rapido API Java - Esempi di codice {#java-api-quick-start-code-examples}
          + [Avvio rapido JavaAPI client Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Avvio rapido JavaAPI di Application Manager Service (SOAP)](developing/application-manager-service-java-api.md)
          + [Avvio rapido dell&#39;API Java del servizio Assembler (SOAP)](developing/assembler-service-java-api-quick.md)
