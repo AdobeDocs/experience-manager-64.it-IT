@@ -22,7 +22,7 @@ ht-degree: 0%
 
 I processi di lunga durata memorizzano i dati del processo nel database dei moduli di AEM. La crescita del database dei moduli AEM può essere ridotta al minimo utilizzando alcune semplici strategie di progettazione del processo e configurazione del prodotto.
 
-## Suggerimenti per la progettazione di processi {#process-design-tips}
+## Suggerimenti per la progettazione del processo {#process-design-tips}
 
 Utilizzare processi di breve durata quando possibile. I processi di breve durata non memorizzano i dati di processo nel database. Lo svantaggio di utilizzare i processi di breve durata è che il loro stato e stato non sono tracciati nella console di amministrazione e non c&#39;è alcuna storia del processo.
 
@@ -32,8 +32,8 @@ Usare le variabili con cautela. Quando si utilizzano processi longevi, per ogni 
 
 Utilizzate tipi di variabili semplici (ad esempio, stringa o int) ed evitate di utilizzare tipi di variabili complesse quando possibile. Lo spazio del database è allocato per le variabili anche se non contengono un valore. Le variabili complesse in genere richiedono più spazio rispetto a quelle semplici.
 
-## Suggerimenti per l&#39;amministrazione del prodotto {#product-administration-tips}
+## Suggerimenti per l&#39;amministrazione dei prodotti {#product-administration-tips}
 
 Utilizzate l&#39;archiviazione globale dei documenti (GDS) in modo efficace. La directory GDS sul server dei moduli viene utilizzata per memorizzare, tra le altre cose, i file che vengono passati ai servizi che fanno parte di moduli AEM nei processi. Per migliorare le prestazioni, i documenti più piccoli vengono invece memorizzati e memorizzati nel database.
 
-la console di amministrazione espone la proprietà Default Document Max Inline Size (Dimensione massima documento in linea) per configurare la dimensione massima dei documenti memorizzati e memorizzati nel database. (Vedere [Configurare le impostazioni](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)generali AEM moduli.) Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene mantenuta nella directory GDS anziché nel database. Il vantaggio è che si può eliminare più facilmente i file quando non sono più necessari quando sono memorizzati nella directory GDS.
+la console di amministrazione espone la proprietà Default Document Max Inline Size (Dimensione massima documento in linea) per configurare la dimensione massima dei documenti memorizzati e memorizzati nel database. (Vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene mantenuta nella directory GDS anziché nel database. Il vantaggio è che si può eliminare più facilmente i file quando non sono più necessari quando sono memorizzati nella directory GDS.
