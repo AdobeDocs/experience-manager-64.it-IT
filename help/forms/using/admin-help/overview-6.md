@@ -34,4 +34,4 @@ Le informazioni fornite si applicano alle installazioni chiavi in mano, automati
 >
 >Quando create certificati di sicurezza SSL e le credenziali, utilizzate gli stessi privilegi dell&#39;account utente che avete usato per eseguire il server dell&#39;applicazione. Se il server applicazione viene eseguito utilizzando altri privilegi utente, il modulo potrebbe non essere visualizzato correttamente per le rappresentazioni PDFForm quando ContentRootURI punta a https.
 
-Se disponete di un server LDAP abilitato per SSL, configurate Gestione utente per utilizzarlo. Consultate [Configurare la gestione utente per un server](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)LDAP abilitato per SSL.
+Se disponete di un server LDAP abilitato per SSL, configurate Gestione utente per utilizzarlo. Consultate [Configurare la gestione utente per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).
