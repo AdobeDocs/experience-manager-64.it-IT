@@ -23,10 +23,10 @@ L&#39;opzione Salva come bozza consente di salvare un&#39;istantanea di un&#39;a
 
 È possibile [aggiornare il modulo](/help/forms/using/working-with-form.md), [annotarlo](/help/forms/using/add-attachments.md) con fotografie e note di script. Durante l&#39;aggiornamento di un modulo, si consiglia di salvarlo come bozza. Per le situazioni in cui si decide di inviare un modulo compilato in un momento successivo, è utile salvarlo come bozza.
 
-Per abilitare la funzione Salva come bozza per i moduli salvati nel portale moduli, vedere [Salvataggio di un modulo HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).\
-Per configurare l&#39;invio di moduli adattivi, vedere [Bozze e componenti](/help/forms/using/draft-submission-component.md)di invio. (Non valido per i moduli sincronizzati con  server AEM Forms JEE).
+Per abilitare la funzione Salva come bozza per i moduli salvati nel portale dei moduli, vedere [Salvataggio di un modulo HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).\
+Per configurare l&#39;invio di moduli adattivi, vedere [Bozze e componenti di invio](/help/forms/using/draft-submission-component.md). (Non valido per i moduli sincronizzati con  server AEM Forms JEE).
 
-Per creare una bozza, aprire il modulo e toccare **Salva come bozza** , ![Salva come bozza](assets/save-as-draft.png). Specificate il nome della bozza e toccate **Salva**. La bozza viene salvata nella cartella Bozze e sincronizzata con il server. Se l&#39;app è offline, viene salvata nella cartella Posta in uscita.
+Per creare una bozza, aprire il modulo e toccare **Salva come bozza** ![salva come bozza](assets/save-as-draft.png). Specificare il nome della bozza e toccare **Salva**. La bozza viene salvata nella cartella Bozze e sincronizzata con il server. Se l&#39;app è offline, viene salvata nella cartella Posta in uscita.
 
 Se successivamente si aggiorna il modulo corrispondente, le modifiche verranno applicate immediatamente. Quando si sincronizza l&#39;app  AEM Forms con  server AEM Forms, la bozza viene caricata  server AEM Forms. Inoltre, la bozza viene spostata dalla casella in uscita alla cartella Attività o Bozze. Accanto ad essa viene visualizzata un’icona di modifica.
 
@@ -42,8 +42,8 @@ Potete eliminare le bozze sia in modalità offline che online. Se si scartano le
 
 Per eliminare una bozza, effettuate le seguenti operazioni:
 
-1. Nell&#39;app AEM Forms , andate ad **Forms.**
-1. Selezionate **Bozze** dal menu a discesa accanto a Cerca.
+1. Nell&#39;app AEM Forms , andate a **Forms.**
+1. Selezionare **Bozze** dal menu a discesa accanto a Cerca.
 1. Un modulo con l&#39;icona di modifica ![edit-draft-app](assets/edit-draft-app.png) indica una bozza. Toccate i puntini di sospensione orizzontali accanto alla bozza.
 1. Nelle opzioni visualizzate quando toccate i puntini di sospensione orizzontali, toccate **Elimina bozza**.
 
