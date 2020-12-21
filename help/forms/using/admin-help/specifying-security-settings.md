@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Specifica delle impostazioni di protezione {#specifying-security-settings}
 
-Forms consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita, sono risolti, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema di moduli AEM.
+Forms consente di controllare se le entità esterne negli input XML sono risolte. Per impostazione predefinita, sono risolti, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema di moduli AEM.
 
 **Impedisci l&#39;elaborazione di file di dati XML che contengono riferimenti a entità esterne**
 
