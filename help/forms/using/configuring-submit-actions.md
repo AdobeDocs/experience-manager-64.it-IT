@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Configurazione dell’azione Invia {#configuring-the-submit-action}
+# Configurazione dell&#39;azione di invio {#configuring-the-submit-action}
 
 ## Introduzione all&#39;invio di azioni {#introduction-to-submit-actions}
 
@@ -26,7 +26,8 @@ Quando un modulo viene precompilato o inviato, i dati inviati vengono instradati
 
 È possibile configurare un&#39;azione di invio nella sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo, nella barra laterale.
 
-![Configura azione](assets/thank-you-setting.png)**di invio:** *Configura azione di invio*
+![Configura ](assets/thank-you-setting.png)
+**azione Invia, figura:** *Configura azione invio*
 
 Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
@@ -44,23 +45,23 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
 >[!NOTE]
 >
->Verificate che [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. La directory è necessaria per memorizzare temporaneamente gli allegati. Se la directory non esiste, createla.
+>Assicurarsi che la [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. La directory è necessaria per memorizzare temporaneamente gli allegati. Se la directory non esiste, createla.
 
 >[!CAUTION]
 >
->Se si [precompila](/help/forms/using/prepopulate-adaptive-form-fields.md) un modello di modulo, un modello di dati o un modulo adattivo basato su schema con un reclamo di dati XML o JSON a uno schema (schema XML, schema JSON, modello di modulo o modello di dati di modulo) che non contiene i tag &lt;afData>, &lt;afBoundData> e &lt;/afUnboundData>, i dati dei campi non associati (campi non associati sono campi adattivi) senza campi modulo. proprietà [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) ) del modulo adattivo viene perso.
+>Se si [precompila](/help/forms/using/prepopulate-adaptive-form-fields.md) un modello di modulo, un modello di dati o un modulo adattivo basato su schema con un reclamo di dati XML o JSON a uno schema (schema XML, schema JSON, modello di modulo o modello di dati di modulo) che non contiene i tag &lt;afData>, &lt;afBoundData> e &lt;/afUnboundData>, i dati dei campi non associati (campi non associati) sono campi modulo adattivi senza la proprietà [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) del modulo adattivo.
 
-È possibile scrivere un&#39;azione di invio personalizzata per i moduli adattivi per soddisfare le esigenze d&#39;uso. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli](/help/forms/using/custom-submit-action-form.md)adattivi.
+È possibile scrivere un&#39;azione di invio personalizzata per i moduli adattivi per soddisfare le esigenze d&#39;uso. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md).
 
-## Invia a endpoint REST {#submit-to-rest-endpoint}
+## Invia all&#39;endpoint REST {#submit-to-rest-endpoint}
 
-L&#39;opzione di invio **[!UICONTROL Invia a endpoint]** REST passa i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta di GET HTTP. Potete aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
+L&#39;opzione di invio **[!UICONTROL Invia all&#39;endpoint REST]** passa i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta di GET HTTP. Potete aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
 `{fieldName}={request parameter name}`
 
-Come illustrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **[!UICONTROL textbox]** e **[!UICONTROL numericbox]** per l&#39;azione successiva.
+Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **[!UICONTROL textbox]** e **[!UICONTROL numericbox]** per l&#39;azione successiva.
 
-Potete anche **[!UICONTROL abilitare la richiesta]** POST e fornire un URL per inviare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server di AEM. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+Potete inoltre **[!UICONTROL Abilitare la richiesta di POST]** e fornire un URL per inviare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server di AEM. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint rimanente](assets/action-config.png)
 
@@ -71,7 +72,7 @@ Per trasmettere i campi come parametri in un URL REST, tutti i campi devono aver
 
 ### Invia i dati inviati a una risorsa o a un punto finale di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
-Utilizzare l&#39;azione **[!UICONTROL Invia a endpoint]** REST per inviare i dati inviati a un URL rimanente. L&#39;URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
+Utilizzare l&#39;azione **[!UICONTROL Invia a endpoint REST]** per inviare i dati inviati a un URL rimanente. L&#39;URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
 
 Per inviare i dati a un server interno, fornire il percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste di post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
@@ -79,7 +80,7 @@ Per inviare dati a un server esterno, immetti un URL. Il formato dell&#39;URL è
 
 ![Mapping dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
 
-Nell&#39;esempio precedente, le informazioni immesse dall&#39;utente in `textbox` vengono acquisite utilizzando il parametro `param1`. Sintassi per registrare i dati acquisiti tramite `param1` è:
+Nell&#39;esempio precedente, le informazioni immesse dall&#39;utente in `textbox` vengono acquisite utilizzando il parametro `param1`. La sintassi per il post dei dati acquisiti con `param1` è la seguente:
 
 `String data=request.getParameter("param1");`
 
@@ -90,46 +91,46 @@ Ad esempio, è possibile utilizzare questi due parametri nello script per analiz
 `String data=request.getParameter("dataXml");`\
 `String att=request.getParameter("attachments");`
 
-In questo esempio `data` vengono memorizzati i dati XML e `att` i dati degli allegati.
+In questo esempio, `data` memorizza i dati XML e `att` memorizza i dati degli allegati.
 
 ## Invia e-mail {#send-email}
 
-L&#39;azione **[!UICONTROL Invia e-mail]** invia un messaggio e-mail a uno o più destinatari dopo l&#39;invio corretto del modulo. L&#39;e-mail generata può contenere dati del modulo in un formato predefinito.
+L&#39;azione di invio **[!UICONTROL Invia e-mail]** invia un messaggio e-mail a uno o più destinatari dopo l&#39;invio corretto del modulo. L&#39;e-mail generata può contenere dati del modulo in un formato predefinito.
 
 >[!NOTE]
 Tutti i campi modulo devono avere nomi di elementi diversi, anche se si trovano in pannelli diversi), per l’inclusione dei dati del modulo in un messaggio e-mail.
 
-## Send PDF via Email {#send-pdf-via-email}
+## Invia PDF tramite e-mail {#send-pdf-via-email}
 
-L&#39;azione **[!UICONTROL Invia PDF tramite e-mail]** invia un messaggio e-mail contenente i dati del modulo a uno o più destinatari dopo l&#39;invio corretto del modulo.
+L&#39;azione di invio **[!UICONTROL Invia PDF tramite e-mail]** invia un messaggio e-mail contenente un PDF contenente dati del modulo a uno o più destinatari dopo l&#39;invio corretto del modulo.
 
-**Nota:** *Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD con modello Documento di record.*
+**Nota:** *questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD con modello Documento di record.*
 
-## Invoke a forms workflow {#invoke-a-forms-workflow}
+## Richiamo di un flusso di lavoro moduli {#invoke-a-forms-workflow}
 
-L&#39;opzione **[!UICONTROL Invia al flusso di lavoro]** Forms invia un file xml di dati e eventuali allegati a un Adobe  esistente LiveCycle un  o  AEM Forms su JEE.
+L&#39;opzione **[!UICONTROL Invia a flusso di lavoro Forms]** invia un file xml di dati ed eventuali allegati a un LiveCycle di Adobe  esistente o  AEM Forms su JEE.
 
-Per informazioni su come configurare l&#39;azione di invio del flusso di lavoro Invia ai moduli, vedere [Invio ed elaborazione dei dati del modulo mediante i flussi di lavoro](/help/forms/using/submit-form-data-livecycle-process.md)dei moduli.
+Per informazioni su come configurare l&#39;azione di invio del flusso di lavoro Invia ai moduli, vedere [Invio ed elaborazione dei dati del modulo mediante i flussi di lavoro dei moduli](/help/forms/using/submit-form-data-livecycle-process.md).
 
 ## Invia usando il modello dati modulo {#submit-using-form-data-model}
 
-L&#39;azione di invio **[!UICONTROL Invia utilizzando il modello]** dati del modulo scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati del modulo alla relativa origine dati. Durante la configurazione dell&#39;azione di invio, è possibile scegliere un oggetto modello dati di cui si desidera riscrivere i dati inviati nell&#39;origine dati.
+L&#39;azione di invio **[!UICONTROL Invia utilizzando il modello dati del modulo]** scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati del modulo alla relativa origine dati. Durante la configurazione dell&#39;azione di invio, è possibile scegliere un oggetto modello dati di cui si desidera riscrivere i dati inviati nell&#39;origine dati.
 
 È inoltre possibile inviare all&#39;origine dati un allegato del modulo utilizzando un modello dati del modulo e un documento record (DoR).
 
-Per informazioni sul modello dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dati AEM Forms.
+Per informazioni sul modello di dati del modulo, vedere [ Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md).
 
 ## Azione di invio Forms Portal {#forms-portal-submit-action}
 
-L&#39;opzione **[!UICONTROL Forms Portal Invia azione]** rende i dati del modulo disponibili tramite un portale AEM Forms .
+L&#39;opzione **[!UICONTROL Forms Portal Submit Action]** rende i dati del modulo disponibili tramite un  portale AEM Forms.
 
-Per ulteriori informazioni su Forms Portal e sull’azione di invio, consultate [Bozze e componenti](/help/forms/using/draft-submission-component.md)di invio.
+Per ulteriori informazioni su Forms Portal e per l&#39;invio di azioni, vedere [Componente Bozze e invii](/help/forms/using/draft-submission-component.md).
 
-## Invoke an AEM Workflow {#invoke-an-aem-workflow}
+## Richiama un flusso di lavoro AEM {#invoke-an-aem-workflow}
 
-L’azione **[!UICONTROL Richiama un flusso di lavoro]** AEM associa un modulo adattivo a un flusso di lavoro AEM. Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente sul nodo di elaborazione. Inoltre, posiziona il file di dati, gli allegati e il documento di registrazione, se applicabile, nel percorso di payload del flusso di lavoro.
+L&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]** consente di associare un modulo adattivo a un flusso di lavoro AEM. Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente sul nodo di elaborazione. Inoltre, posiziona il file di dati, gli allegati e il documento di registrazione, se applicabile, nel percorso di payload del flusso di lavoro.
 
-Prima di utilizzare l&#39;azione **[!UICONTROL Richiama un flusso di lavoro]** AEM, [configurare le impostazioni](/help/forms/using/configuring-the-processing-server-url-.md)DS AEM. Per informazioni sulla creazione di un flusso di lavoro AEM, consultate Flussi di lavoro incentrati sui [moduli in OSGi](/help/forms/using/aem-forms-workflow.md).
+Prima di utilizzare l&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]**, [configurare le impostazioni AEM DS](/help/forms/using/configuring-the-processing-server-url-.md). Per informazioni sulla creazione di un flusso di lavoro AEM, vedere [Flussi di lavoro incentrati sui moduli in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Ripristino lato server nel modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
@@ -147,22 +148,24 @@ Tutte le convalide dei campi (OOTB) di un modulo adattivo eseguite nuovamente su
 
 ### Abilitazione della convalida lato server {#enabling-server-side-validation-br}
 
-Per attivare o disattivare la convalida lato server per il modulo corrente, utilizzare **Revoca sul server** in Contenitore modulo adattivo nella barra laterale.
+Utilizzare la funzione **Revoca sul server** in Contenitore modulo adattivo nella barra laterale per attivare o disattivare la convalida lato server per il modulo corrente.
 
-![Abilitazione della convalida](assets/revalidate-on-server.png)**figura lato server:** *Abilitazione della convalida lato server*
+![Abilitazione della ](assets/revalidate-on-server.png)
+**convalida lato serverFigura:** *Abilitazione della convalida lato server*
 
 Se l&#39;utente finale bypassa tali convalide e invia i moduli, il server esegue di nuovo la convalida. Se la convalida ha esito negativo alla fine del server, la transazione di invio viene arrestata. All&#39;utente finale viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all&#39;utente come un errore.
 
 ### Supporto delle funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 
-In alcuni casi, in caso di regole **di convalida** complesse, lo script di convalida esatto risiede in funzioni personalizzate e l&#39;autore chiama queste funzioni personalizzate dall&#39;espressione di convalida del campo. Per rendere la libreria di funzioni personalizzate nota e disponibile durante l&#39;esecuzione di convalide sul lato server, l&#39;autore del modulo può configurare il nome AEM libreria client nella scheda **[!UICONTROL Base]** delle proprietà Contenitore modulo adattivo, come illustrato di seguito.
+A volte, nel caso di **complesse regole di convalida**, lo script di convalida esatto risiede in funzioni personalizzate e l&#39;autore chiama queste funzioni personalizzate dall&#39;espressione di convalida del campo. Per rendere la libreria di funzioni personalizzate nota e disponibile durante l&#39;esecuzione di convalide sul lato server, l&#39;autore del modulo può configurare il nome AEM libreria client nella scheda **[!UICONTROL Base]** delle proprietà Contenitore di moduli adattivi, come illustrato di seguito.
 
-![Supporto delle funzioni personalizzate nella](assets/clientlib-cat.png)figura Espressioni **convalida:** *Supporto delle funzioni personalizzate nelle espressioni di convalida*
+![Supporto delle funzioni personalizzate nelle ](assets/clientlib-cat.png)
+**espressioni di convalidaFigura:** *Supporto delle funzioni personalizzate nelle espressioni di convalida*
 
 L&#39;autore può configurare la libreria JavaScript personalizzata per ciascun modulo adattivo. Nella libreria, mantenere solo le funzioni riutilizzabili, che dipendono dalle librerie di terze parti jquery e underscore.js.
 
-## Gestione degli errori durante l&#39;azione di invio {#error-handling-on-submit-action}
+## Gestione degli errori nell&#39;azione di invio {#error-handling-on-submit-action}
 
 Come parte delle AEM linee guida sulla protezione e l&#39;indurimento, configurate pagine di errore personalizzate come 404.jsp e 500.jsp. Questi gestori vengono chiamati quando si invia un modulo 404 o 500 errori. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Pubblica.
 
-Per ulteriori informazioni, vedere [Personalizzazione delle pagine mostrate dal gestore](/help/sites-developing/customizing-errorhandler-pages.md)errori.
+Per ulteriori informazioni, vedere [Personalizzazione delle pagine mostrate dal gestore errori](/help/sites-developing/customizing-errorhandler-pages.md).
