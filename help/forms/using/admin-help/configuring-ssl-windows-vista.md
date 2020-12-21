@@ -32,11 +32,11 @@ Per configurare SSL su Windows Vista™, è necessario un certificato SSL con ch
 
 1. Al prompt dei comandi, andate a *[JAVA HOME]*/bin e digitate il comando seguente per creare il certificato e l&#39;archivio di chiavi:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome *host Nome`, OU=`*gruppo Nome* `, O=`*società Nome *`,L=`*città******Nome* `, S=`*Stato *Codice`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*Paese&quot;LC Cert&quot;&quot;*_*passwordnomechiave* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameCompany* `,L=`*NameCity******Name*  `, S=`** `, C=`*StateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `*key*`*_*** `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Sostituite *[JAVA_HOME]con la directory in cui è installato JDK e sostituite il testo in corsivo con valori corrispondenti all’ambiente in uso.*
+   >Sostituire *[JAVA_HOME] con la directory in cui è installato il JDK e sostituire il testo in corsivo con valori corrispondenti all&#39;ambiente.*
 
-1. Digitare `changeit` la password. Questa password è l&#39;impostazione predefinita per un&#39;installazione Java e l&#39;amministratore di sistema potrebbe averla modificata.
+1. Digitare `changeit` come password. Questa password è l&#39;impostazione predefinita per un&#39;installazione Java e l&#39;amministratore di sistema potrebbe averla modificata.
 
