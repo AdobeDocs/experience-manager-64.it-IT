@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Directory di archiviazione documenti globali{#global-document-storage-directory}
 
-La directory GDS ( *Global document storage)* è una directory utilizzata per memorizzare i file longevi utilizzati all&#39;interno di un processo. Tali file includono PDF, criteri e modelli di modulo. I file di lunga durata rappresentano una parte fondamentale dello stato generale di molte distribuzioni di moduli AEM. Se alcuni o tutti i documenti di lunga durata vengono persi o danneggiati, il server dei moduli potrebbe diventare instabile. I documenti di input per le chiamate asincrone dei processi vengono inoltre memorizzati nella directory GDS e devono essere disponibili per l’elaborazione delle richieste. È importante considerare l&#39;affidabilità del file system che ospita la directory GDS. Utilizzate un array ridondante di dischi indipendenti (RAID) o altre tecnologie, in base alla qualità e al livello di servizio richiesti.
+La directory *Global document storage (GDS)* è una directory utilizzata per memorizzare i file longevi utilizzati in un processo. Tali file includono PDF, criteri e modelli di modulo. I file di lunga durata rappresentano una parte fondamentale dello stato generale di molte distribuzioni di moduli AEM. Se alcuni o tutti i documenti di lunga durata vengono persi o danneggiati, il server dei moduli potrebbe diventare instabile. I documenti di input per le chiamate asincrone dei processi vengono inoltre memorizzati nella directory GDS e devono essere disponibili per l’elaborazione delle richieste. È importante considerare l&#39;affidabilità del file system che ospita la directory GDS. Utilizzate un array ridondante di dischi indipendenti (RAID) o altre tecnologie, in base alla qualità e al livello di servizio richiesti.
 
 I file di lunga durata possono contenere informazioni utente sensibili. Queste informazioni possono richiedere credenziali speciali quando vi si accede utilizzando le API dei moduli AEM o le interfacce utente. È importante che la directory GDS sia adeguatamente protetta attraverso il sistema operativo. Solo l&#39;account amministratore utilizzato per eseguire il server applicazione deve disporre dell&#39;accesso in lettura/scrittura alla directory GDS.
 
-Oltre a selezionare una directory sicura e a disponibilità elevata per GDS, potete anche scegliere di abilitare l&#39;archiviazione dei documenti nel database. Tenere presente che anche utilizzando il database dei moduli AEM per l&#39;archiviazione dei documenti, AEM moduli richiede ancora la directory GDS. (Vedere Opzioni [di backup quando il database viene utilizzato per l&#39;archiviazione](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)dei documenti.)
+Oltre a selezionare una directory sicura e a disponibilità elevata per GDS, potete anche scegliere di abilitare l&#39;archiviazione dei documenti nel database. Tenere presente che anche utilizzando il database dei moduli AEM per l&#39;archiviazione dei documenti, AEM moduli richiede ancora la directory GDS. (Vedere [Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
 
 AEM i dati dell&#39;applicazione dei moduli risiedono nella directory GDS e nel database dei moduli AEM. Nella tabella seguente sono descritti i dati e le relative posizioni.
 
@@ -99,11 +99,11 @@ AEM moduli è costituito da due tipi di file di distribuzione, i contenitori del
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-L&#39;implementazione AEM moduli prevede la distribuzione dei file EAR assemblati e dei file di supporto al server applicazione in cui si prevede di eseguire la soluzione di moduli AEM. Se avete configurato e assemblato più moduli, i moduli distribuibili vengono assemblati all&#39;interno dei file EAR distribuibili. Per distribuire questi file, copiateli nella home *[\server\all\deploy directory dell&#39;]* appserver.
+L&#39;implementazione AEM moduli prevede la distribuzione dei file EAR assemblati e dei file di supporto al server applicazione in cui si prevede di eseguire la soluzione di moduli AEM. Se avete configurato e assemblato più moduli, i moduli distribuibili vengono assemblati all&#39;interno dei file EAR distribuibili. Per distribuire questi file, copiateli nella *[home]*\server\all\deploy directory.
 
 I moduli e AEM file di archivio dei moduli vengono assemblati in file JAR. Poiché non sono file di tipo J2EE, non vengono distribuiti nel server applicazioni. Vengono invece copiati nella directory GDS e nel database dei moduli AEM viene memorizzato un riferimento alla relativa posizione. Per questo motivo, la directory GDS deve essere condivisa tra tutti i nodi del cluster. Tutti i nodi devono avere accesso alla directory di memorizzazione centrale per i DSC.
 
 >[!NOTE]
 >
->Prima di distribuire i contenitori di servizi, accertatevi di aver creato e configurato la directory GDS. (vedere [Configurazione della directory](global-document-storage-directory.md#configuring-the-gds-directory)GDS)
+>Prima di distribuire i contenitori di servizi, accertatevi di aver creato e configurato la directory GDS. (Vedere [Configurazione della directory GDS](global-document-storage-directory.md#configuring-the-gds-directory))
 
