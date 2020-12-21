@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# NON PUBBLICARE l&#39;interfaccia utente basata su ruolo in Gestione della corrispondenza {#do-not-publish-role-based-user-interface-in-correspondence-management}
+# NON PUBBLICARE l&#39;interfaccia utente basata su ruolo in Gestione corrispondenza {#do-not-publish-role-based-user-interface-in-correspondence-management}
 
 In AEM, l&#39;amministratore può fornire l&#39;accesso basato sui ruoli a diversi gruppi di utenti, eseguendo varie azioni su risorse diverse. Ad esempio, la funzionalità di creazione o modifica dei dizionari di dati potrebbe essere disponibile solo per gli utenti di un determinato gruppo di utenti, mentre altri utenti potrebbero visualizzare e utilizzare solo i dizionari di dati.
 
@@ -25,25 +25,25 @@ L&#39;interfaccia AEM visualizza le opzioni, ad esempio per creare o modificare 
 
 Sebbene CRX consenta di configurare i diritti di accesso per gli account utente e per i gruppi, questo articolo riguarda i diritti di accesso basati su ruoli o gruppi di utenti.
 
-Per ulteriori informazioni su gruppi, autorizzazioni, elenchi di controllo degli accessi e gestione di utenti e gruppi, consultate Amministrazione [utente e sicurezza](/help/sites-administering/security.md).
+Per ulteriori informazioni su gruppi, autorizzazioni, elenchi di controllo degli accessi e gestione di utenti e gruppi, vedere [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
 
 ## Gestione delle autorizzazioni {#managing-permissions}
 
 1. Accertatevi che l’utente per il quale desiderate gestire le autorizzazioni sia aggiunto al gruppo di utenti interessato.
 
-   Ad esempio, l’utente John Doe viene aggiunto ai gruppi `agents` e `cm-creditcard`. Per ulteriori informazioni, consultate Aggiunta di utenti o gruppi a un gruppo. Per ulteriori informazioni, consulta [Gestione di utenti e gruppi](/help/communities/users.md)di utenti.
+   Ad esempio, l&#39;utente John Doe viene aggiunto ai gruppi `agents` e `cm-creditcard`. Per ulteriori informazioni, consultate Aggiunta di utenti o gruppi a un gruppo. Per ulteriori informazioni, vedere [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
    ![]()
 
 1. Create le cartelle in base alle autorizzazioni desiderate.
 
-   Ad esempio, se un&#39;azienda dispone di divisioni ipoteca, carta di credito e assicurazione, può creare cartelle denominate `HomeMortgage`e `CreditCard,``Insurance` mantenere le attività rilevanti e consentire l&#39;accesso in modo selettivo agli agenti solo per i loro reparti.
+   Ad esempio, se un&#39;azienda possiede divisioni di mutuo per la casa, carta di credito e assicurazione, può creare cartelle denominate `HomeMortgage`, `CreditCard,`e `Insurance` per mantenere le attività rilevanti e consentire l&#39;accesso selettivo agli agenti solo per le attività rilevanti per i loro reparti.
 
 1. Per accedere AEM protezione WCM, effettuare una delle seguenti operazioni:
 
    1. Nella schermata introduttiva o in diverse aree di AEM, fate clic sull’icona relativa alla protezione:
 
-   1. Passa direttamente a `https://[server]:[port]/useradmin`. Assicuratevi di accedere AEM come amministratore.
+   1. Andate direttamente a `https://[server]:[port]/useradmin`. Assicuratevi di accedere AEM come amministratore.
 
       ![]()
    Nella struttura ad albero a sinistra sono elencati tutti gli utenti e i gruppi attualmente presenti nel sistema. È possibile selezionare le colonne desiderate, ordinare il contenuto delle colonne e persino modificare l&#39;ordine di visualizzazione delle colonne trascinando l&#39;intestazione della colonna in una nuova posizione.
@@ -54,7 +54,7 @@ Per ulteriori informazioni su gruppi, autorizzazioni, elenchi di controllo degli
 
    Per individuare il nome del gruppo, potete digitare il nome del gruppo nello spazio disponibile.
 
-1. Nella scheda Autorizzazioni, andate al percorso al quale desiderate aggiungere le autorizzazioni. Le cartelle Gestione corrispondenza si trovano nella `content/apps/cm/` cartella.
+1. Nella scheda Autorizzazioni, andate al percorso al quale desiderate aggiungere le autorizzazioni. Le cartelle Gestione corrispondenza si trovano nella cartella `content/apps/cm/`.
 
    Selezionate la casella di controllo nella colonna Membro per i membri per i quali desiderate disporre delle autorizzazioni per tale percorso. Deselezionare la casella di controllo relativa al membro per il quale si desidera rimuovere le autorizzazioni. Nella cella a cui sono state apportate modifiche viene visualizzato un triangolo rosso.
 
