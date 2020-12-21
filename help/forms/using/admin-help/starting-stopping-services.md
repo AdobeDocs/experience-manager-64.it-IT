@@ -29,7 +29,7 @@ Esistono due tipi di servizi che fanno parte dei moduli AEM:
 
 I moduli AEM (ad esempio, Forms, Rights Management, Output) funzionano come servizi. In alcuni casi, potrebbe essere necessario arrestare o avviare i servizi per questi moduli AEM. Ad esempio, dopo aver modificato un&#39;impostazione per il servizio è necessario arrestare e riavviare un servizio moduli AEM.
 
-1. Nella console di amministrazione, fai clic su **Servizi** > **Applicazioni e servizi** > Gestione **dei** servizi.
+1. Nella console di amministrazione fare clic su **Servizi** > **Applicazioni e servizi** > **Gestione dei servizi**.
 1. Nella pagina Gestione dei servizi, selezionate la casella di controllo accanto al servizio da arrestare o avviare e fate clic su Interrompi o Avvia.
 
 ## Avviare o arrestare i servizi per il server applicazioni e il database {#start-or-stop-services-for-the-application-server-and-database}
@@ -39,14 +39,14 @@ Un&#39;implementazione completa dei AEM moduli include un server applicazioni e 
 * *`[application server]`* per i moduli AEM
 * *`[database]`* per i moduli AEM
 
-In Windows, questi servizi sono accessibili tramite il pannello **Strumenti** di amministrazione > **Servizi**. Ad esempio, se AEM moduli installati su JBoss utilizzando il metodo chiavi in mano, nel sistema in uso sono disponibili i seguenti servizi:
+In Windows, questi servizi sono accessibili tramite il **pannello** Strumenti di amministrazione&lt;a1/> > **Servizi**. Ad esempio, se AEM moduli installati su JBoss utilizzando il metodo chiavi in mano, nel sistema in uso sono disponibili i seguenti servizi:
 
 * JBoss per moduli Adobe Experience Manager
 * MySQL per moduli Adobe Experience Manager
 
 Per avviare o arrestare questi servizi, selezionateli dall’elenco nel pannello Servizi e fate clic sul pulsante di azione appropriato nel pannello.
 
-In UNIX® o Linux, immettete il testo seguente da una riga di comando, dove *`[service name]`* corrisponde al nome del servizio che state verificando:
+In UNIX® o Linux, immettete il testo seguente da una riga di comando, dove *`[service name]`* è il nome del servizio che state verificando:
 
 ```as3
      ps -A | grep [service name]
