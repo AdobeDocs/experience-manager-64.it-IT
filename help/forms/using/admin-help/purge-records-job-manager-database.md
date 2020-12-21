@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Eliminare i record dal database di Gestione processi {#purge-records-from-the-job-manager-database}
+# Eliminare i record dal database di Job Manager {#purge-records-from-the-job-manager-database}
 
 I dati di processo generati quando viene richiamato un processo di lunga durata possono diventare troppo grandi, riducendo le prestazioni dei moduli AEM e l&#39;uso di spazio su disco non necessario. È buona norma eliminare i dati di processo quando i record non sono più necessari.
 
-È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti, oppure per pianificare regolarmente le eliminazioni automatiche. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dei dati](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)di processo.
+È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti, oppure per pianificare regolarmente le eliminazioni automatiche. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dei dati del processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **Accesso alla pagina Utilità di pianificazione rimozione processo**
 
