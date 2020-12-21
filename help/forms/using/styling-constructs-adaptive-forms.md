@@ -16,15 +16,15 @@ ht-degree: 4%
 ---
 
 
-# Stili di costruzione per i moduli adattivi {#styling-constructs-for-adaptive-forms}
+# Costruttori di stile per i moduli adattivi {#styling-constructs-for-adaptive-forms}
 
 ## Prerequisiti {#prerequisites}
 
 Conoscenza dei CSS e del framework LESS.
 
-## Elementi personalizzabili {#what-can-be-customized}
+## Cosa è possibile personalizzare {#what-can-be-customized}
 
-L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per definire lo stile di vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, non rientra nell’ambito di questo articolo. Utilizzate questi costrutti di stile per creare stili (utilizzando CSS o Less) solo quando non è possibile formattare i componenti utilizzando l&#39;editor [di](themes.md)temi.
+L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per definire lo stile di vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, non rientra nell’ambito di questo articolo. Utilizzate questi costrutti di stile per creare stili (utilizzando CSS o Less) solo quando non è possibile creare stili di componenti utilizzando l&#39;editor di temi [editor di temi](themes.md).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
@@ -63,7 +63,7 @@ Per applicare uno stile a un modulo adattivo, aprire il modulo adattivo in per l
 
 I componenti descritti in questo articolo dispongono di classi CSS predefinite. È possibile modificare le variabili per modificare gli stili nelle classi CSS. In alternativa, è possibile riscrivere l&#39;intera classe. Questa sezione descrive le classi all&#39;interno di componenti e stili che è possibile modificare utilizzando le variabili.
 
-## Stile del contenitore {#container-styling}
+## Stile contenitore {#container-styling}
 
 Un contenitore è il componente di primo livello. Altri pannelli e campi si trovano sotto il componente contenitore.
 
@@ -101,7 +101,7 @@ Un contenitore è il componente di primo livello. Altri pannelli e campi si trov
  </tbody> 
 </table>
 
-## Stile campo {#field-styling}
+## Stile del campo {#field-styling}
 
 I moduli adattivi includono vari tipi di campi. Ogni campo ha un nome di classe univoco, che è il nome del campo. Il campo ha anche un nome di classe comune `guideFieldNode`.
 
@@ -139,7 +139,7 @@ I campi includono etichette, widget, descrizione dell’Aiuto (descrizione lunga
 
 ## Stile etichetta {#label-styling}
 
-L&#39; **etichetta** dell&#39;elemento HTML utilizzata per il campo include le classi **sinistra** o **superiore** , a seconda che l&#39;etichetta si trovi in alto o a sinistra.
+L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o in basso a sinistra.
 
 <table> 
  <tbody> 
@@ -179,11 +179,11 @@ L&#39; **etichetta** dell&#39;elemento HTML utilizzata per il campo include le c
  </tbody> 
 </table>
 
-Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel** . Se siete un autore, ignorate questa regola per rendere visibili le modifiche personalizzate.
+Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel**. Se siete un autore, ignorate questa regola per rendere visibili le modifiche personalizzate.
 
-## Stile widget {#widgets-styling}
+## Stile dei widget {#widgets-styling}
 
-A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono la `guideFieldWidget` classe. I widget forniti con HTML normalmente utilizzano l&#39;input standard dell&#39;elemento HTML e selezionano. Lo stile viene applicato di conseguenza. Non è possibile formattare un widget personalizzato modificando le variabili.
+A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono la classe `guideFieldWidget`. I widget forniti con HTML normalmente utilizzano l&#39;input standard dell&#39;elemento HTML e selezionano. Lo stile viene applicato di conseguenza. Non è possibile formattare un widget personalizzato modificando le variabili.
 
 <table> 
  <tbody> 
@@ -283,7 +283,7 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
  </tbody> 
 </table>
 
-### Limitazioni nello stile dei widget {#limitations-in-widget-styling}
+### Limitazioni nello stile del widget {#limitations-in-widget-styling}
 
 Lo stile per i campi attivi, obbligatori e disattivati è limitato utilizzando le variabili. Tuttavia, potete modificarlo ignorando gli stili. L&#39;utilizzo di variabili è limitato principalmente per mantenere sotto controllo il numero di variabili. La limitazione può essere attenuata se l&#39;aspetto di un campo cambia drasticamente perché si trova in uno degli stati discussi in precedenza.
 
@@ -330,7 +330,7 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
 
 ## Condizioni d’uso {#terms-and-conditions}
 
-Il widget Termini e condizioni (TnC `` ``) consente di specificare termini e condizioni. Potete personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
+Il widget Condizioni generali (TnC `` ``) consente di specificare termini e condizioni. Potete personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
 
 <table> 
  <tbody> 
@@ -353,7 +353,7 @@ Il widget Termini e condizioni (TnC `` ``) consente di specificare termini e con
 
 I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. Nei moduli adattivi, uno dei seguenti è un pulsante:
 
-* [inputtype = text]
+* input[type = text]
 * pulsante
 * element with class .button
 
@@ -569,7 +569,7 @@ Il widget Allegato file dei moduli adattivi consente di caricare i file. Potete 
  </tbody> 
 </table>
 
-## Stili Navigator {#navigator-styles}
+## Stili di navigazione {#navigator-styles}
 
 Esistono quattro tipi di schede di navigazione. Tra queste, le schede a sinistra, in alto, nella procedura guidata e nella fisarmonica. Ogni navigatore ha una classe diversa.
 
@@ -640,7 +640,7 @@ Di seguito è riportato il codice HTML per l&#39;elemento del navigatore tabulaz
 
 `</div>`
 
-Potete modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendenti** . Ad esempio, per aggiungere uno stile decorativo di testo al tag di ancoraggio:
+Potete modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendenti**. Ad esempio, per aggiungere uno stile decorativo di testo al tag di ancoraggio:
 
 Navigatore tabulazioni in alto:
 
@@ -720,7 +720,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
 
 >[!NOTE]
 >
->Potete modificare l&#39;icona di un particolare navigatore fornendo una classe CSS nel pannello in fase di creazione, ad esempio &lt;CLASS_NAME>. Per l&#39;icona del navigatore è possibile aggiungere un **&lt;CLASS_NAME>_nav** .
+>Potete modificare l&#39;icona di un particolare navigatore fornendo una classe CSS nel pannello in fase di creazione, ad esempio &lt;CLASS_NAME>. Per l&#39;icona del navigatore è possibile aggiungere un **&lt;CLASS_NAME>_nav**.
 
 <table> 
  <tbody> 
@@ -941,13 +941,13 @@ Un pannello include una barra degli strumenti opzionale e il relativo contenuto.
  </tbody> 
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. Non `` `` esiste un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. `` `` non esiste un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
 
 &amp;ast;La classe non è presente nel pannello superiore (RootPanel).
 
 ## Stile mobile {#mobile-styling}
 
-## Header bar {#header-bar}
+## Barra delle intestazioni {#header-bar}
 
 Queste variabili influenzano la barra dell’intestazione visibile su un dispositivo mobile o su dispositivi con schermo piccolo che contengono il titolo del pannello e i navigatori successivi e posteriori.
 
@@ -981,7 +981,7 @@ Queste variabili influenzano la barra dell’intestazione visibile su un disposi
  </tbody> 
 </table>
 
-## Scroll indicator {#scroll-indicator}
+## Indicatore di scorrimento {#scroll-indicator}
 
 Queste variabili influenzano l’indicatore di scorrimento, ossia una freccia arancione che viene visualizzata su un dispositivo mobile o su un dispositivo a schermo piccolo. Un indicatore di scorrimento indica che è presente del contenuto oltre la parte visibile dello schermo. Potete scorrere verso il basso per visualizzarlo. Quando si tocca la fine del contenuto, la freccia scompare.
 
@@ -1019,7 +1019,7 @@ Queste variabili influenzano l’indicatore di scorrimento, ossia una freccia ar
  </tbody> 
 </table>
 
-## Variabili specifiche del layout della barra degli strumenti fissa per dispositivi mobili {#mobile-fixed-toolbar-layout-specific-variables}
+## Variabili del layout fisso della barra degli strumenti mobile {#mobile-fixed-toolbar-layout-specific-variables}
 
 Queste variabili nella tabella seguente influiscono sul layout della barra degli strumenti fissa per dispositivi mobili.
 
