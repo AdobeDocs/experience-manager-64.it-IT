@@ -20,22 +20,23 @@ ht-degree: 0%
 
 Gli autori dei moduli possono configurare una pagina per ciascun modulo, alla quale verranno reindirizzati gli utenti dopo l&#39;invio del modulo.
 
-1. In modalità di modifica, selezionare un componente, fare clic su ![campo](assets/field-level.png) > Contenitore **modulo** adattivo, quindi fare clic su ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, selezionare un componente, quindi fare clic su ![livello campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi fare clic su ![cmppr](assets/cmppr.png).
 
-1. Nella barra laterale, fate clic su **Invia**.
+1. Nella barra laterale, fare clic su **Invio**.
 
 1. Fornite l’URL della pagina di reindirizzamento nella sezione Pagina di ringraziamento della sezione Invio.
 1. Facoltativamente, in Invia azione, per l’azione Invia a endpoint REST è possibile configurare il parametro da passare alla pagina di reindirizzamento.
 
-![Reindirizza la configurazione](assets/thank-you-setting-1.png)**della pagina Figura:** *Reindirizza configurazione pagina*
+![Reindirizza ](assets/thank-you-setting-1.png)
+**configurazione paginaFigura:** *Reindirizza configurazione pagina*
 
-Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili `status` e per `owner` i parametri vengono passati. Oltre a questi due parametri, alcuni parametri aggiuntivi vengono passati per le seguenti azioni di invio:
+Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, vengono passati i parametri `status` e `owner`. Oltre a questi due parametri, alcuni parametri aggiuntivi vengono passati per le seguenti azioni di invio:
 
-* **Azione** contenuto store (obsoleto): `contentPath`— il percorso del nodo nell&#39;archivio in cui sono memorizzati i dati inviati.
+* **Azione**  contenuto store (obsoleto):  `contentPath`— il percorso del nodo nell&#39;archivio in cui sono memorizzati i dati inviati.
 
-* **Azione** Store PDF (obsoleto): `contentPath`—dei dati inviati e del percorso del nodo in cui è memorizzato il file PDF nella directory archivio—viene passato.
+* **Azione**  Store PDF (obsoleto):  `contentPath`—dei dati inviati e del percorso del nodo in cui è memorizzato il file PDF nella directory archivio—viene passato.
 
 * **Invia al flusso di lavoro** Forms: I parametri di output restituiti dal flusso di lavoro dei moduli vengono passati.
 
-* **Invia a endpoint** REST: I parametri aggiunti per la mappatura in-field ai parametri vengono passati. `status` e `owner` i parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione](/help/forms/using/configuring-submit-actions.md)di invio dell&#39;endpoint Invia a REST.
+* **Invia a endpoint** REST: I parametri aggiunti per la mappatura in-field ai parametri vengono passati. `status` e  `owner` i parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione Invia a endpoint REST](/help/forms/using/configuring-submit-actions.md).
 
