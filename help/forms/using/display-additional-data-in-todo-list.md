@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Visualizzazione di dati aggiuntivi nell&#39;elenco Attività {#displaying-additional-data-in-todo-list}
+# Visualizzazione di dati aggiuntivi nell&#39;elenco ToDo {#displaying-additional-data-in-todo-list}
 
 Per impostazione predefinita, nell&#39;elenco  attività dell&#39;area di lavoro di AEM Forms vengono visualizzati il nome e la descrizione dell&#39;attività. Tuttavia, potete aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
 
@@ -27,16 +27,16 @@ In questo articolo sono descritti i passaggi da eseguire per aggiungere informaz
 
 ## Cosa è possibile aggiungere {#what-can-be-added}
 
-Potete aggiungere le informazioni disponibili in `task.json` inviato dal server. Le informazioni possono essere aggiunte come testo normale oppure potete usare gli stili per formattare le informazioni.
+È possibile aggiungere le informazioni disponibili in `task.json` inviate dal server. Le informazioni possono essere aggiunte come testo normale oppure potete usare gli stili per formattare le informazioni.
 
-Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [questo](/help/forms/using/html-workspace-json-object-description.md) articolo.
+Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate l&#39;articolo [this](/help/forms/using/html-workspace-json-object-description.md).
 
 ## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Seguite i passaggi [Generico per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
+1. Seguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Per visualizzare informazioni aggiuntive su un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti all&#39;interno del blocco attività di `translation.json`.
 
-   Ad esempio, change `/apps/ws/locales/en-US/translation.json` for English:
+   Ad esempio, modificare `/apps/ws/locales/en-US/translation.json` per Inglese:
 
    ```
    "task" : {
@@ -121,7 +121,7 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
    }
    ```
 
-## Definizione di CSS per la nuova proprietà {#defining-css-for-the-new-property}
+## Definizione CSS per la nuova proprietà {#defining-css-for-the-new-property}
 
 1. È possibile applicare lo stile alle informazioni (proprietà) aggiunte a un&#39;attività. A questo scopo, è necessario aggiungere informazioni di stile per la nuova proprietà aggiunta a `/apps/ws/css/newStyle.css`.
 
@@ -146,7 +146,7 @@ Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà c
 
 1. Aggiungete le nuove informazioni a `/apps/ws/js/runtime/templates/task.html`.
 
-   Ad esempio, aggiungi in `div class="taskProperties"`:
+   Ad esempio, aggiungere sotto `div class="taskProperties"`:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
