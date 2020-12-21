@@ -25,7 +25,7 @@ Se è installato il connettore per EMC Documentum, oltre alle istruzioni di ques
 Eseguire il backup dell&#39;ambiente AEM dei moduli utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
 
 * Eseguire il backup AEM moduli seguendo le istruzioni descritte in questo documento.
-* Eseguire il backup del sistema ECM Documentum seguendo le istruzioni riportate in [Backup di EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* Eseguire il backup del sistema ECM Documentum seguendo le istruzioni riportate in [Eseguire il backup di EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
 Ripristinare l&#39;ambiente AEM moduli utilizzando l&#39;archivio ECM ed eseguendo le operazioni seguenti:
 
