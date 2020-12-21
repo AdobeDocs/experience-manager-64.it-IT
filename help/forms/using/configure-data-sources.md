@@ -24,7 +24,7 @@ Scoprite come configurare diversi tipi di origini dati e utilizzare i moduli per
 
  Integrazione dei dati AEM Forms consente di configurare e connettersi a origini dati diverse. I seguenti tipi sono supportati out-of-the-box. Tuttavia, con poca personalizzazione, è possibile integrare anche altre origini dati.
 
-* Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
+* Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e  Oracle RDBMS
 * AEM profilo utente
 * Servizi Web RESTful
 * Servizi Web basati su SOAP
@@ -37,7 +37,7 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
 È possibile configurare i database relazionali utilizzando AEM Configurazione console Web. Effettua le seguenti operazioni:
 
 1. Passate AEM console Web all&#39;indirizzo `https://[server]:[host]/system/console/configMgr`.
-1. Cerca la configurazione **[!UICONTROL Apache Sling Connection Pooled DataSource]** . Toccate per aprire la configurazione in modalità di modifica.
+1. Cercare la configurazione di **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Toccate per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione, specificate i dettagli per il database da configurare, ad esempio:
 
    * Nome dell&#39;origine dati
@@ -51,16 +51,16 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
    >Prima di configurare l&#39;origine dati, assicurarsi di crittografare le informazioni riservate come password. Per crittografare:
    >
    >1. Passa a `https://[server]:[port]/system/console/crypto`.
-   >1. Nel campo Testo **** normale, specificare la password o qualsiasi stringa da cifrare e fare clic su **[!UICONTROL Protect]**.
+   >1. Nel campo **[!UICONTROL Testo normale]**, specificare la password o qualsiasi stringa da cifrare e fare clic su **[!UICONTROL Protect]**.
 
    >
    >Il testo cifrato viene visualizzato nel campo Testo protetto che è possibile specificare nella configurazione.
 
-1. Abilitare **[!UICONTROL Test su prestito]** o **[!UICONTROL Test su ritorno]** per specificare che gli oggetti vengono convalidati prima di essere presi in prestito o restituiti da e verso il pool, rispettivamente.
-1. Specificare una query SQL SELECT nel campo Query **[!UICONTROL di]** convalida per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificate una delle seguenti opzioni:
+1. Selezionare **[!UICONTROL Test on Bfuture]** o **[!UICONTROL Test on Return]** per specificare che gli oggetti vengono convalidati prima di essere presi in prestito o restituiti dal pool, rispettivamente.
+1. Specificare una query SQL SELECT nel campo **[!UICONTROL Query convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificate una delle seguenti opzioni:
 
    * SELECT 1 (MySQL e MS SQL)
-   * SELECT 1 from dual (Oracle)
+   * SELECT 1 from dual ( Oracle)
 
 1. Toccate **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -69,7 +69,7 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
 È possibile configurare AEM profilo utente mediante la configurazione Connettore profilo utente in AEM console Web. Effettua le seguenti operazioni:
 
 1. Passate AEM console Web all&#39;indirizzo `https://[server]:[host]/system/console/configMgr`.
-1. Cerca **[!UICONTROL integrazioni dati AEM Forms - Configurazione]** connettore profilo utente e tocca per aprire la configurazione in modalità di modifica.
+1. Cercare **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** e toccare per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo Configurazione connettore profilo utente, potete aggiungere, rimuovere o aggiornare le proprietà del profilo utente. Le proprietà specificate saranno disponibili per l&#39;uso nel modello dati del modulo. Utilizzate il formato seguente per specificare le proprietà del profilo utente:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -81,7 +81,7 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
 
    >[!NOTE]
    >
-   >The **&amp;ast;** nell&#39;esempio precedente indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM struttura CRXDE. Ciò significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
+   >Il **&amp;ast;** nell&#39;esempio precedente indica tutti i nodi sotto il nodo `profile/empLocation/` nel profilo utente AEM struttura CRXDE. Ciò significa che il modello dati modulo può accedere alla proprietà `city` di tipo `string` presente in qualsiasi nodo sotto il nodo `profile/empLocation/`. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
 
 1. Toccate **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -91,33 +91,33 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
 >
 >La configurazione della cartella dei servizi cloud è necessaria per configurare i servizi cloud per i servizi RESTful, SOAP e OData.
 
-Tutte le configurazioni del servizio cloud in AEM sono consolidate nella `/conf` cartella AEM repository. Per impostazione predefinita, la `conf` cartella contiene la `global` cartella in cui è possibile creare configurazioni del servizio cloud. Tuttavia, è necessario abilitarlo manualmente per le configurazioni cloud. Potete anche creare ulteriori cartelle in `conf` per creare e organizzare le configurazioni del servizio cloud.
+Tutte le configurazioni del servizio cloud in AEM sono consolidate nella cartella `/conf` AEM repository. Per impostazione predefinita, la cartella `conf` contiene la cartella `global` in cui è possibile creare configurazioni del servizio cloud. Tuttavia, è necessario abilitarlo manualmente per le configurazioni cloud. In `conf` è inoltre possibile creare cartelle aggiuntive per creare e organizzare le configurazioni del servizio cloud.
 
 Per configurare la cartella per le configurazioni del servizio cloud:
 
-1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
-   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+1. Vai a **[!UICONTROL Strumenti > Generale > Browser di configurazione]**.
+   * Per ulteriori informazioni, consultare la [documentazione del browser di configurazione](/help/sites-administering/configurations.md).
 1. Effettuate le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud o saltate questo passaggio per creare e configurare un&#39;altra cartella per le configurazioni del servizio cloud.
 
-   1. Nel browser **** Configurazione, selezionate la `global` cartella e toccate **[!UICONTROL Proprietà]**.
-   1. Nella finestra di dialogo Proprietà **** configurazione, abilita Configurazioni **** Cloud.
+   1. Nel **[!UICONTROL Browser di configurazione]**, selezionare la cartella `global` e toccare **[!UICONTROL Properties]**.
+   1. Nella finestra di dialogo **[!UICONTROL Proprietà di configurazione]**, abilita **[!UICONTROL Configurazioni cloud]**.
    1. Toccate **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
 
-1. Nel browser **** Configurazione, toccate **[!UICONTROL Crea]**.
-1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un titolo per la cartella e abilitate **[!UICONTROL Cloud Configurations]**.
+1. Nel **[!UICONTROL Browser di configurazione]**, toccare **[!UICONTROL Crea]**.
+1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specificate un titolo per la cartella e abilitate le **[!UICONTROL Configurazioni cloud]**.
 1. Toccate **[!UICONTROL Crea]** per creare la cartella abilitata per le configurazioni del servizio cloud.
 
 ## Configurare i servizi Web RESTful {#configure-restful-web-services}
 
-Il servizio Web RESTful può essere descritto utilizzando le specifiche [](https://swagger.io/specification/) Swagger in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful nei servizi cloud di AEM, accertatevi di disporre del file Swagger nel sistema di file o dell’URL in cui è ospitato il file.
+Il servizio Web RESTful può essere descritto utilizzando le [specifiche Swagger](https://swagger.io/specification/) in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful nei servizi cloud di AEM, accertatevi di disporre del file Swagger nel sistema di file o dell’URL in cui è ospitato il file.
 
 Per configurare i servizi RESTful, effettuate le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
-   Consultate [Configurare la cartella per le configurazioni](/help/forms/using/configure-data-sources.md#cloud-folder) del servizio cloud per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consultate [Configurare la cartella per le configurazioni del servizio cloud.](/help/forms/using/configure-data-sources.md#cloud-folder)
 
-1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **** Crea configurazione origine dati. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL RESTful Service]** dal menu a discesa **[!UICONTROL Service Type]** (Tipo **[!UICONTROL servizio), oppure, facoltativamente, sfogliate e selezionate una miniatura per la configurazione, quindi toccate]** Next (Avanti).
+1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione origine dati]**. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL RESTful Service]** dal menu a discesa **[!UICONTROL Service Type]** (Tipo di servizio), eventualmente sfogliate e selezionate una miniatura per la configurazione, quindi toccate **[!UICONTROL Next]** (Avanti).
 1. Specificare i seguenti dettagli per il servizio RESTful:
 
    * Selezionate URL o File dal menu a discesa Sorgente swagger e specificate quindi l&#39;URL Swagger per il file di definizione Swagger oppure caricate il file Swagger dal file system locale.
@@ -127,13 +127,13 @@ Per configurare i servizi RESTful, effettuate le seguenti operazioni:
 
 ## Configurare i servizi Web SOAP {#configure-soap-web-services}
 
-I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](https://www.w3.org/TR/wsdl)Web Services Description Language). Per configurare il servizio Web basato su SOAP nei servizi cloud AEM, accertatevi di disporre dell&#39;URL WSDL per il servizio Web ed effettuate le seguenti operazioni:
+I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Per configurare il servizio Web basato su SOAP nei servizi cloud AEM, accertatevi di disporre dell&#39;URL WSDL per il servizio Web ed effettuate le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
-   Consultate [Configurare la cartella per le configurazioni](/help/forms/using/configure-data-sources.md#cloud-folder) del servizio cloud per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consultate [Configurare la cartella per le configurazioni del servizio cloud.](/help/forms/using/configure-data-sources.md#cloud-folder)
 
-1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **** Crea configurazione origine dati. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL SOAP Web Service]** dal menu a discesa **[!UICONTROL Service Type]** (Tipo **[!UICONTROL servizio), oppure, facoltativamente, sfogliate e selezionate una miniatura per la configurazione, quindi toccate]** Next (Avanti).
+1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione origine dati]**. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL Servizio Web SOAP]** dal menu a discesa **[!UICONTROL Tipo di servizio]**, eventualmente sfogliate e selezionate una miniatura per la configurazione, quindi toccate **[!UICONTROL Avanti]**.
 1. Specificate quanto segue per il servizio Web SOAP:
 
    * URL WSDL per il servizio Web.
@@ -141,7 +141,7 @@ I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](h
    * Selezionare il tipo di autenticazione — Nessuno, OAuth2.0, autenticazione di base, autenticazione personalizzata o token X509 — per accedere al servizio SOAP e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
       Se selezionate Token X509 come tipo di autenticazione, configurate il certificato X509. Per ulteriori informazioni, vedere [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Specificate l&#39;alias KeyStore per il certificato X509 nel campo Alias **** chiave. Specificate il tempo, in secondi, fino a quando la richiesta di autenticazione non rimane valida, nel campo **[!UICONTROL Tempo di vita]** . Facoltativamente, selezionare per firmare il corpo del messaggio, l&#39;intestazione della marca temporale o entrambe.
+Specificare l&#39;alias KeyStore per il certificato X509 nel campo **[!UICONTROL Alias chiave]**. Specificate il tempo, in secondi, fino a quando la richiesta di autenticazione non rimane valida, nel campo **[!UICONTROL Time To Live]**. Facoltativamente, selezionare per firmare il corpo del messaggio, l&#39;intestazione della marca temporale o entrambe.
 
 1. Toccate **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio Web SOAP.
 
@@ -151,13 +151,13 @@ Un servizio OData è identificato dall&#39;URL principale del servizio. Per conf
 
 >[!NOTE]
 >
->Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, in linea o in locale, vedere Configurazione [di](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics OData.
+>Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, online o in locale, vedere [Configurazione OData Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
-   Consultate [Configurare la cartella per le configurazioni](/help/forms/using/configure-data-sources.md#cloud-folder) del servizio cloud per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consultate [Configurare la cartella per le configurazioni del servizio cloud.](/help/forms/using/configure-data-sources.md#cloud-folder)
 
-1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **** Crea configurazione origine dati. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL OData Service]** dal menu a discesa **[!UICONTROL Service Type]** (Tipo **[!UICONTROL servizio), oppure, facoltativamente, sfogliate e selezionate una miniatura per la configurazione, quindi toccate]** Next (Avanti).
+1. Toccate **[!UICONTROL Crea]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione origine dati]**. Specificate un nome ed eventualmente un titolo per la configurazione, selezionate **[!UICONTROL OData Service]** dal menu a discesa **[!UICONTROL Service Type]** (Tipo di servizio), eventualmente sfogliate e selezionate una miniatura per la configurazione, quindi toccate **[!UICONTROL Next]** (Avanti).
 1. Specificate i seguenti dettagli per il servizio OData:
 
    * URL radice del servizio per il servizio OData da configurare.
@@ -171,4 +171,4 @@ Un servizio OData è identificato dall&#39;URL principale del servizio. Per conf
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato le origini dati. È quindi possibile creare un modello dati del modulo o, se è già stato creato un modello dati del modulo senza un&#39;origine dati, è possibile associarlo alle origini dati appena configurate. Per informazioni dettagliate, vedere [Creazione di un modello](/help/forms/using/create-form-data-models.md) dati modulo.
+Hai configurato le origini dati. È quindi possibile creare un modello dati del modulo o, se è già stato creato un modello dati del modulo senza un&#39;origine dati, è possibile associarlo alle origini dati appena configurate. Per ulteriori informazioni, vedere [Creare un modello dati del modulo](/help/forms/using/create-form-data-models.md).
