@@ -20,7 +20,7 @@ ht-degree: 15%
 
 Durante la progettazione di un modulo in  AEM Forms Designer, oltre alla visualizzazione in anteprima della rappresentazione PDF di un modulo, è anche possibile visualizzarne l&#39;anteprima in HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare l&#39;anteprima di un modulo così come apparirebbe in un browser.
 
-## Abilita anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
+## Attiva anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
 
 Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, eseguire le configurazioni seguenti:
 
@@ -30,13 +30,13 @@ Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, esegu
 
 ### Configurare il servizio di autenticazione Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Accedete `https://[server]:[port]/system/console/configMgr` a  AEM Forms in esecuzione su OSGi o
+1. Vai a `https://[server]:[port]/system/console/configMgr` su  AEM Forms in esecuzione su OSGi o
 
    `https://[server]:[port]/lc/system/console/configMgr` su  AEM Forms in esecuzione su JEE.
 
-1. Individuate e fate clic sulla configurazione **Apache Sling Authentication Service** per aprirla in modalità di modifica.
+1. Individuate e fate clic su **Apache Sling Authentication Service** per aprirlo in modalità di modifica.
 
-1. A seconda che sia in esecuzione  AEM Forms su OSGi o JEE, aggiungete quanto segue nel campo Requisiti **** di autenticazione:
+1. A seconda che sia in esecuzione  AEM Forms su OSGi o JEE, aggiungere quanto segue nel campo **Autenticazione obbligatoria**:
 
    *  AEM Forms su JEE
 
@@ -51,44 +51,44 @@ Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, esegu
    >
    >Non copiate e incollate il valore specificato nel campo Requisiti autenticazione, in quanto potrebbe danneggiare i caratteri speciali presenti nel valore. Digitare invece il valore specificato nel campo.
 
-1. Specificate rispettivamente il nome utente e la password nei campi Nome **[!UICONTROL utente]** anonimo e Password **[!UICONTROL utente]** anonima. Le credenziali specificate vengono utilizzate per gestire l&#39;autenticazione anonima e consentire l&#39;accesso agli utenti anonimi.
-1. Click **Save** to save the configuration.
+1. Specificate un nome utente e una password rispettivamente nei campi **[!UICONTROL Nome utente anonimo]** e **[!UICONTROL Password utente anonima]**. Le credenziali specificate vengono utilizzate per gestire l&#39;autenticazione anonima e consentire l&#39;accesso agli utenti anonimi.
+1. Fare clic su **Salva** per salvare la configurazione.
 
 ### Disattiva modalità protetta {#disable-protected-mode}
 
-Per impostazione predefinita, la modalità [](/help/forms/using/get-xdp-pdf-documents-aem.md) protetta è attivata. Mantenetela attivata per gli ambienti di produzione. Potete disattivarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms nel designer. Per disattivarlo, effettuate le seguenti operazioni:
+Per impostazione predefinita, la [modalità protetta](/help/forms/using/get-xdp-pdf-documents-aem.md) è attivata. Mantenetela attivata per gli ambienti di produzione. Potete disattivarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms nel designer. Per disattivarlo, effettuate le seguenti operazioni:
 
 1. Accedete AEM console Web come amministratore.
 
-   * L’URL per  AEM Forms su OSGi è `https://[server]:[port]/system/console/configMgr`
+   * L&#39;URL per  AEM Forms su OSGi è `https://[server]:[port]/system/console/configMgr`
    * L&#39;URL per  AEM Forms su JEE è `https://[server]:[port]/lc/system/console/configMgr`
 
-1. Aprite le configurazioni **[!UICONTROL Forms]** Mobile per la modifica.
-1. Deselezionare l’opzione Modalità **** protetta e fare clic su **[!UICONTROL Salva]**.
+1. Aprire **[!UICONTROL Configurazioni Forms mobili]** per la modifica.
+1. Deselezionare l&#39;opzione **[!UICONTROL Modalità protetta]** e fare clic su **[!UICONTROL Salva]**.
 
 ### Fornire i dettagli  server AEM Forms {#provide-details-of-aem-forms-server}
 
 1. In Designer, passare a **Strumenti** > **Opzioni**.
-1. Nella finestra Opzioni, selezionate la pagina Opzioni **** server, fornite i seguenti dettagli e fate clic su **OK**.
+1. Nella finestra Opzioni, selezionare la pagina **Opzioni server**, fornire i seguenti dettagli e fare clic su **OK**.
 
    * **URL** server:  URL del server AEM Forms.
    * **Numero** porta HTTP: AEM porta del server. Il valore predefinito è 4502.
-   * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
+   * **Contesto anteprima HTML:** percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
 
       * `/content/xfaforms/profiles/default.html` ( AEM Forms su OSGi)
       * `/lc/content/xfaforms/profiles/default.html` ( AEM Forms su JEE)
-   * **Contesto Forms Manager:** Percorso di contesto in cui viene distribuita l’interfaccia utente di Forms Manager. I valori predefiniti sono:
+   * **Contesto di Forms Manager:percorso** contestuale in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
 
       * `/aem/forms` ( AEM Forms su OSGi)
       * `/lc/forms` ( AEM Forms su JEE)
 
-   **Nota:** *Verificate che  server AEM Forms sia attivato e in esecuzione. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Nota:** *verificare che  server AEM Forms sia in esecuzione. L&#39;anteprima HTML si collega al server CRX per* generare *un&#39;anteprima.*
 
-   ![opzioni di AEM Forms Designer ](assets/server_options.png)
+   ![ opzioni di AEM Forms Designer  ](assets/server_options.png)
 
     opzioni di AEM Forms Designer
 
-1. Per visualizzare l&#39;anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML** .
+1. Per visualizzare l&#39;anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML**.
 
    >[!NOTE]
    >
@@ -106,14 +106,14 @@ Se non sono disponibili dati di esempio, è possibile crearli manualmente o auto
 
 La verifica del modulo mediante un’origine dati di esempio garantisce la mappatura dei dati e dei campi e la corretta ripetizione dei sottomoduli. È possibile creare un layout di modulo bilanciato che fornisce lo spazio appropriato per la visualizzazione dei dati uniti a ciascun oggetto.
 
-1. Select **File > Form Properties**.
+1. Selezionare **File > Proprietà modulo**.
 
-1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. Potete anche utilizzare il pulsante Sfoglia per individuare il file.
+1. Fare clic sulla scheda **Anteprima** e, nella casella File dati, digitare il percorso completo del file di dati di prova. Potete anche utilizzare il pulsante Sfoglia per individuare il file.
 
-1. Fai clic su **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
+1. Fai clic su **OK**. La volta successiva che si visualizza l&#39;anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio saranno visualizzati nei rispettivi oggetti.
 
-## Anteprima dei moduli che si trovano in un archivio {#html-preview-of-forms-in-forms-manager}
+## Visualizzare l&#39;anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
 
 In  AEM Forms è possibile visualizzare in anteprima moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
 
-[**Contattare il supporto **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contattare il supporto**](https://www.adobe.com/account/sign-in.supportportal.html)
