@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Ottimizzazione delle prestazioni del monitor di stato{#fine-tuning-health-monitor-performance}
+# Ottimizzazione delle prestazioni del monitor integrità{#fine-tuning-health-monitor-performance}
 
 La raccolta delle statistiche di sistema che popolano il Monitor integrità ha un impatto sulle prestazioni dell&#39;ambiente dei moduli AEM. Questo impatto può essere controllato impostando le opzioni Java elencate di seguito nel server delle applicazioni.
 
@@ -67,16 +67,16 @@ La raccolta delle statistiche di sistema che popolano il Monitor integrità ha u
 ## Aggiungere opzioni Java a JBoss {#add-java-options-to-jboss}
 
 1. Arrestate il server applicazioni JBoss.
-1. Aprite l&#39; *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java necessarie.
+1. Aprite la *[directory principale dell&#39;appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java richieste.
 1. Riavviate il server.
 
-## Aggiunta di opzioni Java a WebLogic {#add-java-options-to-weblogic}
+## Aggiungere opzioni Java a WebLogic {#add-java-options-to-weblogic}
 
-1. Avviate la console di amministrazione WebLogic digitando https://[host name]:[port]/console nella riga URL di un browser Web.
+1. Avviate la console di amministrazione WebLogic digitando https://[nome host]:[porta]/console nella riga URL di un browser Web.
 1. Digitare il nome utente e la password creati per il dominio WebLogic Server e fare clic su Log In Change Center, quindi fare clic su Lock &amp; Edit (Blocca e modifica).
 1. In Struttura dominio, fare clic su Ambiente > Server e, nel riquadro a destra, fare clic sul nome del server gestito.
 1. Nella schermata successiva, fate clic sulla scheda Configurazione > scheda Avvio server.
-1. Nella casella Argomenti, aggiungere gli argomenti richiesti alla fine del contenuto corrente. Ad esempio, se si aggiunge - `Dadobe.healthmonitor.enabled=false` viene disattivato il controllo integrità.
+1. Nella casella Argomenti, aggiungere gli argomenti richiesti alla fine del contenuto corrente. Ad esempio, se si aggiunge - `Dadobe.healthmonitor.enabled=false` viene disattivato il monitoraggio integrità.
 1. Fate clic su Salva, quindi su Attiva modifiche.
 1. Riavviare il server gestito WebLogic.
 
