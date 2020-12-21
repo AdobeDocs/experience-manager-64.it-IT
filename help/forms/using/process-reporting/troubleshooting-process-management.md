@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Risoluzione dei problemi relativi ai processi di reporting {#troubleshooting-process-reporting}
+# Risoluzione dei problemi relativi alla generazione di report dei processi {#troubleshooting-process-reporting}
 
 ## Problemi relativi alla creazione di filtri in Internet Explorer 9 in Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Se si creano filtri per report predefiniti, si verificano in modo intermittente i seguenti problemi nell&#39;ambiente **Internet Explorer 9** per **Microsoft Windows 7** :
+Se si creano filtri per report predefiniti, si verificano in modo intermittente i seguenti problemi nell&#39;ambiente **Internet Explorer 9** per **Microsoft Windows 7**:
 
 * L&#39;elenco a discesa nel campo Valore visualizza identificatori univoci invece dei valori.
 * Nel controllo Calendario del campo Valore sono visualizzati i caratteri giapponesi.
