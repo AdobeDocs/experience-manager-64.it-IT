@@ -22,7 +22,7 @@ ht-degree: 0%
 
 In questo argomento viene descritto come utilizzare l&#39;API del servizio Preferences Manager (Java) per gestire i nodi delle preferenze in modo programmatico.
 
-Potete modificare manualmente le impostazioni di configurazione dall&#39;interfaccia utente amministratore. Per modificare le opzioni, passare a `Home>Settings>User Management> Configuration>Manual Configuration`. Importa `config.xml` dopo aver apportato le modifiche, noterete che tutte le modifiche tranne quelle apportate al nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` vanno perse. L&#39;anteprima di Importazione ed esportazione di Gestione utente non supporta la modifica delle impostazioni di configurazione per altri componenti. Ora, queste modifiche possono essere effettuate utilizzando `PreferencesManagerServiceClient` le API.
+Potete modificare manualmente le impostazioni di configurazione dall&#39;interfaccia utente amministratore. Per modificare le opzioni, passare a `Home>Settings>User Management> Configuration>Manual Configuration`. Importa `config.xml` dopo aver apportato le modifiche, noterai che tutte le modifiche tranne quelle apportate al nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` vanno perse. L&#39;anteprima di Importazione ed esportazione di Gestione utente non supporta la modifica delle impostazioni di configurazione per altri componenti. Ora, queste modifiche possono essere effettuate utilizzando le `PreferencesManagerServiceClient` API.
 
 **Riepilogo dei** passaggiPer gestire in modo programmatico i nodi delle preferenze, effettuare le seguenti operazioni:
 
