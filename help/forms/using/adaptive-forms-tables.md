@@ -40,7 +40,7 @@ Per creare una tabella, trascinate il componente Tabella dal browser Componenti 
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 
-Le celle di intestazione sono campi di testo. Per modificare l’etichetta di un’intestazione, fare clic con il pulsante destro del mouse sulla cella di intestazione e scegliere **Modifica**. Nella finestra di dialogo Modifica, aggiornate l’etichetta nel campo **Valore** e fate clic su **OK**.
+Le celle di intestazione sono campi di testo. Per modificare l&#39;etichetta di un&#39;intestazione, fare clic con il pulsante destro del mouse sulla cella di intestazione e scegliere **Modifica**. Nella finestra di dialogo Modifica, aggiornare l&#39;etichetta nel campo **Valore** e fare clic su **OK**.
 
 Per impostazione predefinita, le celle corpo sono caselle di testo. È possibile sostituire una cella corpo con qualsiasi altro componente di modulo adattivo disponibile nella barra laterale, ad esempio una casella numerica, un selettore data o un elenco a discesa.
 
@@ -48,7 +48,7 @@ Ad esempio, la prima riga corpo nella tabella seguente include come celle i comp
 
 ![celle di riga](assets/row-cell-types.png)
 
-Per unire due o più celle corpo, selezionare le celle da unire, fare clic con il pulsante destro del mouse e selezionare **Unisci**. È inoltre possibile dividere una cella unita facendo clic con il pulsante destro del mouse e selezionando **Dividi celle**.
+Per unire due o più celle corpo, selezionare le celle da unire, fare clic con il pulsante destro del mouse e selezionare **Merge**. È inoltre possibile dividere una cella unita facendo clic con il pulsante destro del mouse e selezionando **Dividi celle**.
 
 ### Aggiungere, eliminare, spostare righe e colonne {#add-delete-move-rows-and-columns}
 
@@ -72,17 +72,17 @@ Il menu a discesa della riga fornisce inoltre l&#39;operazione Modifica per modi
 
 È possibile aggiungere una descrizione della tabella per spiegare in che modo le informazioni sono organizzate che gli assistenti vocali possono interpretare e leggere. Per aggiungere la descrizione:
 
-1. Selezionate la tabella e toccate ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
+1. Selezionare la tabella e toccare ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare un riepilogo nella scheda Accessibilità.
-1. Fate clic su **Fine**.
+1. Fare clic su **Fine**.
 
-## Configura stile tabella {#configure}
+## Configurare lo stile di tabella {#configure}
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Per passare alla modalità di stile e modificare lo stile della tabella, procedere come segue.
 
-1. Nella barra degli strumenti della pagina, prima di Anteprima, toccate ![canvas-menu a discesa](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra degli strumenti della pagina, prima di Preview, toccare ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. Nella barra laterale selezionate la tabella e toccate il pulsante Modifica ![pulsante](assets/edit-button.png).
+1. Nella barra laterale selezionate la tabella e toccate il pulsante di modifica ![pulsante di modifica](assets/edit-button.png).
 
    Potete visualizzare le proprietà di stile nella barra laterale.
 
@@ -98,9 +98,9 @@ Le tabelle forniscono supporto out-of-the-box per l&#39;aggiunta o l&#39;elimina
 
 1. Selezionare una riga di tabella e toccare ![cmppr](assets/cmppr.png).
 1. Nella scheda Impostazioni ripetizione, specificare i conteggi minimo e massimo per limitare il numero di righe nella tabella.
-1. Fate clic su **Fine**.
+1. Fare clic su **Fine**.
 
-In fase di esecuzione, verranno visualizzati **`+`** e *`-`* pulsanti per aggiungere o eliminare una riga.
+In fase di esecuzione, saranno visualizzati i pulsanti **`+`** e *`-`* per aggiungere o eliminare una riga.
 
 ![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
@@ -115,7 +115,7 @@ Le tabelle nei moduli adattivi consentono di scrivere espressioni in JavaScript 
 Mentre tabelle e righe supportano solo le espressioni di visibilità per controllarne la visibilità in base al valore restituito da un&#39;espressione, le celle supportano le seguenti espressioni:
 
 * **Script di inizializzazione:** per eseguire un&#39;azione all&#39;inizializzazione di un campo.
-* **Script di conferma del valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **script Conferma valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ Mentre tabelle e righe supportano solo le espressioni di visibilità per control
 
 L’espressione di visibilità per una tabella o una riga può essere definita nella scheda Proprietà pannello della finestra di dialogo corrispondente del componente Modifica. Le espressioni per una cella possono essere definite nella scheda Script della finestra di dialogo del componente Modifica.
 
-Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il documento Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adattivi.
+Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, vedere [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
 ## Layout per dispositivi mobili {#mobile-layouts}
 
@@ -136,13 +136,15 @@ Le tabelle nei moduli adattivi offrono un&#39;esperienza senza confronti per i d
 
 È possibile configurare un layout mobile per una tabella dalla scheda Stile della finestra di dialogo del componente Modifica per una tabella.
 
-### Headers on left {#headers-on-left}
+### Intestazioni a sinistra {#headers-on-left}
 
 Nel layout Intestazioni a sinistra, l’intestazione della tabella viene trasposta a sinistra, con una sola cella che appare su un’intestazione. Ogni riga in questo layout viene visualizzata come una sezione distinta. Le immagini seguenti confrontano una tabella su un desktop con quella su un dispositivo mobile.
 
-![desktop](assets/desktopview.png)**Figure:** *Vista desktop di una tabella con il layout Intestazione a sinistra*
+![](assets/desktopview.png)
+**desktopViewFigura:Vista** *desktop di una tabella con il layout Intestazione a sinistra*
 
-![headersontheleft](assets/headersontheleft.png)**Figura:** *Vista mobile di una tabella con il layout Intestazione a sinistra*
+![](assets/headersontheleft.png)
+**headersontheleftFigure:visualizzazione** *mobile di una tabella con il layout Intestazione a sinistra*
 
 ### Layout colonne comprimibili {#collapsible-columns-layout}
 
@@ -154,11 +156,13 @@ Nel layout della colonna Comprimibile, le colonne della tabella vengono ridotte 
 
 Le immagini seguenti confrontano l&#39;aspetto di una tabella su un dispositivo con colonne compresse ed espanse.
 
-![colonna](assets/collapsed-column.png)**ridotta Figura:** *Colonne compresse di una tabella con solo due colonne visualizzate su un dispositivo mobile*
+![riduzione-](assets/collapsed-column.png)
+**colonnaFigura:** *Colonne ridotte di una tabella con solo due colonne visualizzate su un dispositivo mobile*
 
-![comprimibile_column](assets/collapsible_column.png)**Figure:** *Colonna estesa di una tabella su un dispositivo mobile*
+![comprimibile_](assets/collapsible_column.png)
+**columnFigure:colonna** *espansa di una tabella su un dispositivo mobile*
 
-## Unione di dati in una tabella {#merge-data-in-a-table}
+## Unisci dati in una tabella {#merge-data-in-a-table}
 
 Le tabelle in moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati provenienti da un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui è in esecuzione  server AEM Forms o nell&#39;archivio CRX.
 
@@ -171,7 +175,7 @@ In questo esempio, la proprietà Nome elemento per:
 * la riga è **Riga1**
 * la cella corpo in Data transazione è **tableItem1**
 * la cella corpo in Descrizione è **tableItem2**
-* la cella corpo sotto il tipo di transazione è **tipo**
+* la cella corpo sotto il tipo di transazione è **type**
 * la cella corpo sotto Importo in USD è **tableItem3**
 
 Il file XML che contiene i dati nel formato seguente:
@@ -232,9 +236,9 @@ Il file XML che contiene i dati nel formato seguente:
 </afData>
 ```
 
-Nell&#39;XML di esempio, i dati per una riga sono definiti dai `<Row1>` tag, che è il nome dell&#39;elemento per la riga nella tabella. All&#39;interno del `<Row1>` tag, i dati di ciascuna cella sono definiti all&#39;interno del tag per il nome del relativo elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
+Nell&#39;XML di esempio, i dati per una riga sono definiti dai tag `<Row1>`, che è il nome dell&#39;elemento per la riga nella tabella. All&#39;interno del tag `<Row1>`, i dati di ciascuna cella sono definiti all&#39;interno del tag relativo al nome dell&#39;elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
 
-Per unire questi dati alla tabella in fase di esecuzione, è necessario indirizzare il modulo adattivo contenente la tabella nella posizione XML assoluta con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in *http://localhost:4502/myForms/bankTransaction.html* e il file XML di dati viene salvato in *C:/myTransactions/bankSummary.xml*, è possibile visualizzare la tabella con i dati al seguente URL:
+Per unire questi dati alla tabella in fase di esecuzione, è necessario indirizzare il modulo adattivo contenente la tabella nella posizione XML assoluta con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in corrispondenza di *http://localhost:4502/myForms/bankTransaction.html* e il file XML di dati viene salvato in corrispondenza di *C:/myTransactions/bankSummary.xml*, è possibile visualizzare la tabella con i dati al seguente URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
