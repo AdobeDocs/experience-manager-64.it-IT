@@ -27,7 +27,7 @@ Il servizio Forms consente di creare applicazioni client interattive per l&#39;a
 
 Quando un utente finale richiede un modulo, un&#39;applicazione client invia la richiesta al servizio Forms, che restituisce il modulo nel formato appropriato. Non appena il servizio Forms riceve una richiesta, unisce i dati a una struttura del modulo e quindi invia il modulo nel formato desiderato. L&#39;output del servizio Modulo è un modulo interattivo, in genere un documento PDF. Un modulo interattivo consente agli utenti di compilare i campi presenti nel modulo.
 
-A seconda del tipo di applicazione client, è possibile scrivere il modulo in un browser Web client o salvarlo come file PDF. Un&#39;applicazione basata sul Web può scrivere il modulo nel browser Web. Un&#39;applicazione desktop può salvare il modulo come file PDF. Per illustrare come eseguire la scrittura in un browser Web e in un file PDF, gli avvii rapidi disponibili nella sezione *Rendering di Forms* sono organizzati nel modo seguente:
+A seconda del tipo di applicazione client, è possibile scrivere il modulo in un browser Web client o salvarlo come file PDF. Un&#39;applicazione basata sul Web può scrivere il modulo nel browser Web. Un&#39;applicazione desktop può salvare il modulo come file PDF. Per dimostrare come eseguire la scrittura in un browser Web e in un file PDF, gli avvii rapidi disponibili nella sezione *Rendering Forms* sono organizzati nel modo seguente:
 
 * Gli esempi Java API fortemente tipizzati (modalità SOAP) sono un servlet Java.
 * Gli esempi di servizi Web (Java Base64) sono un servlet Java.
@@ -39,23 +39,23 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
    È possibile trasmettere una struttura del modulo (un file XDP) o un documento PDF al servizio Forms in uno dei due modi seguenti:
 
-* È possibile fare riferimento alla struttura del modulo utilizzando un valore URL. Questo approccio prevede l&#39;utilizzo di un `URLSpec` oggetto. Il livello principale del contenuto viene passato al servizio Forms utilizzando il `URLSpec` metodo dell&#39; `setContentRootURI` . Il nome della struttura del modulo ( `formQuery`) viene passato come parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo. (La maggior parte degli avvii rapidi disponibili nella sezione *Rendering Forms* utilizza questo approccio.)
-* È possibile trasmettere al servizio Forms una struttura del modulo `com.adobe.idp.Document` contenente tale struttura. Due nuovi metodi denominati `renderPDFForm2` e `renderHTMLForm2` accettano un `com.adobe.idp.Document` oggetto contenente una struttura del modulo. (vedere [Trasmissione di documenti al servizio Forms)](/help/forms/developing/passing-documents-forms-service.md)
+* È possibile fare riferimento alla struttura del modulo utilizzando un valore URL. Questo approccio prevede l&#39;utilizzo di un oggetto `URLSpec`. Il livello principale del contenuto viene passato al servizio Forms utilizzando il metodo `URLSpec` dell&#39;oggetto `setContentRootURI`. Il nome della struttura del modulo ( `formQuery`) viene passato come parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo. (La maggior parte degli avvii rapidi che si trovano nella sezione *Rendering Forms* utilizza questo approccio.)
+* È possibile passare al servizio Forms un `com.adobe.idp.Document` contenente la struttura del modulo. Due nuovi metodi denominati `renderPDFForm2` e `renderHTMLForm2` accettano un oggetto `com.adobe.idp.Document` contenente una struttura del modulo. (Vedere [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
 Potete eseguire le seguenti attività utilizzando il servizio Forms:
 
-* Rendering di PDF forms interattivi. Consultate [Rendering di PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interattivi.
-* Eseguire il rendering dei moduli sul client. Consultate [Rendering di Forms presso il client](/help/forms/developing/rendering-forms-client.md).
+* Rendering di PDF forms interattivi. (Vedere [Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Eseguire il rendering dei moduli sul client. (Vedere [Rendering di Forms in Client](/help/forms/developing/rendering-forms-client.md).)
 * Eseguire il rendering dei moduli in base ai frammenti. (Vedere [Rendering di Forms basato su frammenti](/help/forms/developing/rendering-forms-based-fragments.md).)
-* Eseguire il rendering dei moduli abilitati per i diritti. Consultate [Forms](/help/forms/developing/rendering-rights-enabled-forms.md)con diritti di rendering.
-* Eseguire il rendering dei moduli come HTML. Consultate [Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md).
-* Rendering HTML Forms con file CSS personalizzati ([rendering HTML Forms con file](/help/forms/developing/rendering-html-forms-using-custom.md)CSS personalizzati).
-* Gestire i moduli inviati. Consultate [Gestione dell’Forms](/help/forms/developing/handling-submitted-forms.md)inviato.
-* Creazione di documenti PDF con dati XML inviati. (Vedere [Creazione di documenti PDF con dati](/help/forms/developing/creating-pdf-documents-submitted-xml.md)XML inviati).
-* Precompilare i moduli. Consultate [Precompilazione di Forms con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md)scorrevoli.
-* Invio di documenti. (vedere [Trasmissione di documenti al servizio Forms)](/help/forms/developing/passing-documents-forms-service.md)
-* Calcola i dati del modulo. (Vedere [Calcolo dei dati](/help/forms/developing/calculating-form-data.md)del modulo.)
-* Ottimizzate un&#39;applicazione. (vedere [Ottimizzazione delle prestazioni del servizio](/help/forms/developing/optimizing-performance-forms-service.md)Forms.)
+* Eseguire il rendering dei moduli abilitati per i diritti. (Vedere [Forms](/help/forms/developing/rendering-rights-enabled-forms.md) con diritti di rendering.)
+* Eseguire il rendering dei moduli come HTML. (Vedere [Rendering di Forms come HTML](/help/forms/developing/rendering-forms-html.md).)
+* Rendering di Forms HTML con file CSS personalizzati ([Rendering di Forms HTML con file CSS personalizzati](/help/forms/developing/rendering-html-forms-using-custom.md)).
+* Gestire i moduli inviati. (Vedere [Gestione di Forms](/help/forms/developing/handling-submitted-forms.md) inviato.)
+* Creazione di documenti PDF con dati XML inviati. (Vedere [Creazione di documenti PDF con dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Precompilare i moduli. (Vedere [Precompilazione di Forms con layout scorrevoli](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+* Invio di documenti. (Vedere [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
+* Calcola i dati del modulo. (Vedere [Calcolo dei dati del modulo](/help/forms/developing/calculating-form-data.md).)
+* Ottimizzate un&#39;applicazione. (Vedere [Ottimizzazione delle prestazioni del servizio Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-   ***Suggerimento **: Il sito Web  Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere[Creazione di applicazioni](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET per il rendering dei moduli.*
+   ***Suggerimento **: Il sito Web  Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione di applicazioni ASP.NET per il rendering dei moduli](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 
