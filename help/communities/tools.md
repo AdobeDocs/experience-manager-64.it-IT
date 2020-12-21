@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Strumenti Community {#communities-tools}
+# Strumenti community {#communities-tools}
 
 Per accedere alla console degli strumenti di Communities, all’autore:
 
@@ -27,11 +27,11 @@ Per accedere alla console degli strumenti di Communities, all’autore:
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Modelli](sites.md) per siti - Console per la creazione e gestione di modelli e modelli di sito
-* [Modelli](tools-groups.md)di gruppo - Console per la creazione e gestione di modelli di gruppo
-* [Funzioni](functions.md)della community - Console per la creazione e la gestione di funzioni della community
-* [Configurazione](srp-config.md) dello storage - Console per la configurazione e la selezione dell&#39;SRP [predefinito](working-with-srp.md)
+* [Modelli](sites.md)  per sito - Console per la creazione e gestione di modelli e modelli di sito
+* [Modelli](tools-groups.md) di gruppo - Console per la creazione e gestione di modelli di gruppo
+* [Funzioni](functions.md) della community - Console per la creazione e la gestione di funzioni della community
+* [Configurazione](srp-config.md)  dello storage - Console per la configurazione e la selezione dell&#39;SRP  [predefinito](working-with-srp.md)
 
-* [Guida](components-guide.md) ai componenti - Apre un sito interattivo che consente di sperimentare il funzionamento dei componenti SCF e le modalità di configurazione o personalizzazione.
-* [Badge](badges.md) - Console da cui è possibile aggiungere simboli personalizzati da utilizzare nelle regole di [punteggio e contrassegno](implementing-scoring.md)
+* [Guida](components-guide.md)  ai componenti: apre un sito interattivo che consente di sperimentare il funzionamento dei componenti SCF e le modalità di configurazione o personalizzazione.
+* [Badge](badges.md)  - Console da cui è possibile aggiungere simboli personalizzati da utilizzare nelle regole di  [punteggio e contrassegno](implementing-scoring.md)
 
