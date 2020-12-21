@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Attivazione e disattivazione della modalità di backup sicura {#enabling-and-disabling-safe-backup-mode}
+# Attivazione e disattivazione della modalità di backup sicuro {#enabling-and-disabling-safe-backup-mode}
 
 Nella pagina Impostazioni di backup è possibile utilizzare AEM moduli in modalità di backup sicuro per eseguire il backup affidabile del database e della directory GDS (Global Document Storage).
 
@@ -28,7 +28,7 @@ AEM moduli è in modalità di backup sicuro, funziona normalmente, ma non rimuov
 >
 >L&#39;impostazione di questa opzione non effettua il backup del sistema; prepara il sistema per il backup.
 
-## Abilita modalità di backup sicura {#enable-safe-backup-mode}
+## Abilita modalità backup sicuro {#enable-safe-backup-mode}
 
 1. Nella console di amministrazione, fate clic su Settings (Impostazioni) > Core Systems Settings (Impostazioni dei sistemi di base) > Backup Settings (Impostazioni di backup).
 1. Nella pagina Impostazioni di backup, selezionate Opera in modalità di backup sicuro e fate clic su OK.
