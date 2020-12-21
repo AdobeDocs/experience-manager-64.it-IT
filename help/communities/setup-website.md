@@ -53,31 +53,31 @@ La directory /apps nell&#39;archivio contiene il codice con implementa il compor
 
 La directory /apps è protetta e non accessibile al pubblico così come le directory /content e /etc/designs.
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. Creare la cartella `/apps/an-scf-sandbox`.
 
-   Utilizzo di **[!UICONTROL CRXDE Lite]** nel riquadro Explorer
+   Utilizzo di **[!UICONTROL CRXDE Lite]** nel riquadro di esplorazione
 
-   1. Selezionare la `/apps` cartella
-   1. Fare clic con il pulsante destro del mouse su **[!UICONTROL Crea]**... oppure fai clic su **[!UICONTROL Crea...]** menu
-   1. Seleziona **[!UICONTROL Crea cartella...]** .
-   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete `an-scf-sandbox`
+   1. Selezionare la cartella `/apps`
+   1. Fare clic con il pulsante destro del mouse su **[!UICONTROL Crea]**... oppure premere il tasto **[!UICONTROL Crea...Menu]**
+   1. Selezionare **[!UICONTROL Crea cartella...]** .
+   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]**, immettere `an-scf-sandbox`
    1. Fai clic su **[!UICONTROL OK]**
 
-1. Crea sottocartella **[!UICONTROL componenti]** .
+1. Creare la sottocartella **[!UICONTROL components]**.
 
-   1. Selezionare la `/apps/an-scf-sandbox` cartella
-   1. Fate clic su **[!UICONTROL Crea > Crea cartella]**
-   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete **[!UICONTROL i componenti]**
+   1. Selezionare la cartella `/apps/an-scf-sandbox`
+   1. Fare clic su **[!UICONTROL Crea > Crea cartella]**
+   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]**, immettere **[!UICONTROL components]**
    1. Fai clic su **[!UICONTROL OK]**
 
-1. Creare **[!UICONTROL la sottocartella dei modelli]** .
+1. Creare la sottocartella **[!UICONTROL templates]**.
 
-   1. Selezionare la `/apps/an-scf-sandbox` cartella
-   1. Fate clic su **[!UICONTROL Crea > Crea cartella]**
-   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete **[!UICONTROL i modelli]**
+   1. Selezionare la cartella `/apps/an-scf-sandbox`
+   1. Fare clic su **[!UICONTROL Crea > Crea cartella]**
+   1. Nella finestra di dialogo **[!UICONTROL Crea cartella]**, immettere **[!UICONTROL templates]**
    1. Fai clic su **[!UICONTROL OK]**
    1. Ri-seleziona `/apps/an-scf-sandbox`
-   1. Seleziona **[!UICONTROL Salva tutto]**
+   1. Selezionare **[!UICONTROL Salva tutto]**
 
    Come per qualsiasi processo di modifica, salvate spesso. Se si verificano problemi durante l’immissione dei dati, è possibile che l’accesso sia scaduto o che sia necessario salvare le modifiche precedenti.
 
@@ -89,17 +89,17 @@ La directory /apps è protetta e non accessibile al pubblico così come le direc
 
 La directory /etc/designs contiene le immagini, gli script e i fogli di stile da scaricare insieme al contenuto della pagina.
 
-1. Per utilizzare lo strumento Designer nell&#39;interfaccia classica, accedere a [https://&lt;server>:&lt;porta>/miscadmin](http://localhost:4502/miscadmin).
+1. Per utilizzare lo strumento Designer nell&#39;interfaccia classica, individuare [https://&lt;server>:&lt;porta>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, i controlli di accesso e la replica non vengono impostati sulle impostazioni predefinite per una pagina.
+   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, il controllo di accesso e la replica non verranno impostati sulle impostazioni predefinite per una pagina.
 
-1. Nel riquadro di esplorazione, selezionate la cartella **[!UICONTROL Progettazione]** e fate clic su **[!UICONTROL Nuovo > Nuova pagina]**.
+1. Nel riquadro di esplorazione, selezionare la cartella **[!UICONTROL Designs]**, quindi fare clic su **[!UICONTROL Nuovo > Nuova pagina]**.
 
    Invio:
 
    * Titolo: **Un sandbox SCF**
    * Nome: **an-scf-sandbox**
-   * Seleziona modello pagina **di progettazione**
+   * Selezionare **Modello pagina di progettazione**
 
    Fai clic su **[!UICONTROL Crea]**
 
@@ -113,8 +113,8 @@ La directory /etc/designs contiene le immagini, gli script e i fogli di stile da
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-## Configurare la directory contenuto (/content) {#setup-the-content-directory-content}
+## Configurare la directory dei contenuti (/content) {#setup-the-content-directory-content}
 
 La directory /content nel repository è la posizione in cui risiede il contenuto del sito Web. I percorsi in /content comprendono i percorsi dell&#39;URL per le richieste del browser.
 
-*Dopo* la creazione del modello [di](initial-app.md#createthepagetemplate) pagina come parte dell’applicazione iniziale, il contenuto della pagina iniziale può essere creato in base al modello.... [**⇒**](initial-app.md)
+*Dopo la* creazione dei  [modelli di ](initial-app.md#createthepagetemplate) pagina come parte dell’applicazione iniziale, il contenuto della pagina iniziale può essere creato in base al modello....  [**⇒**](initial-app.md)
