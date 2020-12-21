@@ -25,7 +25,7 @@ Modelli e-mail personalizzati per le notifiche e-mail del flusso di lavoro dei m
 
 Potete personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail.  AEM Forms fornisce un modello standard per le notifiche e-mail. Potete personalizzare il modello out of the box o creare un nuovo modello da zero.
 
-I modelli di notifica e-mail si basano sulle e-mail [](https://en.wikipedia.org/wiki/HTML_email)HTML. Tali e-mail si adattano a diversi client e-mail e dimensioni dello schermo. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
+I modelli di notifica e-mail si basano su [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Tali e-mail si adattano a diversi client e-mail e dimensioni dello schermo. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
 
 L&#39;immagine seguente mostra una notifica e-mail personalizzata:
 
@@ -43,7 +43,7 @@ L&#39;immagine seguente mostra una notifica e-mail personalizzata:
 
 1. Sostituite il contenuto del file htmlEmailTemplate.txt con contenuto personalizzato.
 
-   Un modello di notifica e-mail è un messaggio e-mail [](https://en.wikipedia.org/wiki/HTML_email)HTML. Potete sostituire il codice HTML esistente con il codice personalizzato per modificare l’aspetto del modello.
+   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Potete sostituire il codice HTML esistente con il codice personalizzato per modificare l’aspetto del modello.
 
 1. Salvate il file. Ora, il modello personalizzato è pronto per essere utilizzato.
 
@@ -59,7 +59,7 @@ L&#39;immagine seguente mostra una notifica e-mail personalizzata:
 
 1. Aggiungete codice HTML personalizzato al file.
 
-   Un modello di notifica e-mail è un messaggio e-mail [](https://en.wikipedia.org/wiki/HTML_email)HTML. Potete aggiungere al file codice HTML personalizzato per creare un nuovo modello.
+   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Potete aggiungere al file codice HTML personalizzato per creare un nuovo modello.
 
 1. Salvate il file. Il modello è pronto per essere utilizzato nel passaggio Assegna attività.
 
@@ -67,12 +67,12 @@ L&#39;immagine seguente mostra una notifica e-mail personalizzata:
 
 Il passaggio Assegna attività è configurato per utilizzare il modello predefinito, htmlEmailTemplate.txt. Potete scegliere di utilizzare un modello personalizzato. Per modificare il modello:
 
-1. Aprire il passaggio **[!UICONTROL Assegna attività]** .
+1. Aprire il passaggio **[!UICONTROL Assegna attività]**.
 
-1. Passa a **[!UICONTROL Assegnatario > Modello]** e-mail HTML.
+1. Passa a **[!UICONTROL Assegnatario > Modello e-mail HTML]**.
 
 1. Selezionate il modello e-mail HTML appena creato.
 
 1. Fai clic su **[!UICONTROL OK]**. Il modello viene modificato.
 
-Una notifica e-mail utilizza anche [i metadati](/help/forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro. Potete anche configurare il modello in modo che utilizzi i metadati [](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification)personalizzati.
+Una notifica e-mail utilizza anche [metadata](/help/forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro. Potete inoltre configurare il modello in modo che utilizzi [metadati personalizzati](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
