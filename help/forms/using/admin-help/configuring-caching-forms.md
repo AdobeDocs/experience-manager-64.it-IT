@@ -26,14 +26,14 @@ La pagina Forms nella console di amministrazione contiene impostazioni che contr
 
 Il servizio Forms memorizza nella cache i seguenti elementi:
 
-* **strutture del modulo:** Il servizio Forms memorizza nella cache le strutture del modulo recuperate dall&#39;archivio o da origini HTTP. Questo caching migliora le prestazioni perché per richieste di rendering successive, il servizio Forms recupera la struttura del modulo dalla cache anziché dall&#39;archivio.
-* **frammenti e immagini:** Il servizio Forms può memorizzare nella cache frammenti e immagini utilizzati nelle strutture del modulo. Quando il servizio Forms memorizza nella cache questi oggetti, migliora le prestazioni perché i frammenti e le immagini vengono letti solo dalla directory archivio alla prima richiesta.
-* **moduli:** Il servizio Forms memorizza nella cache i moduli che esegue il rendering. Questo tipo di caching migliora le prestazioni perché il servizio Forms non deve risolvere ed eseguire il rendering dello stesso modulo nelle richieste successive.
+* **strutture del modulo:** il servizio Forms memorizza nella cache le strutture del modulo recuperate dall&#39;archivio o da origini HTTP. Questo caching migliora le prestazioni perché per richieste di rendering successive, il servizio Forms recupera la struttura del modulo dalla cache anziché dall&#39;archivio.
+* **frammenti e immagini:** Il servizio Forms è in grado di memorizzare nella cache frammenti e immagini utilizzati nelle strutture del modulo. Quando il servizio Forms memorizza nella cache questi oggetti, migliora le prestazioni perché i frammenti e le immagini vengono letti solo dalla directory archivio alla prima richiesta.
+* **moduli:** il servizio Forms memorizza nella cache i moduli di cui esegue il rendering. Questo tipo di caching migliora le prestazioni perché il servizio Forms non deve risolvere ed eseguire il rendering dello stesso modulo nelle richieste successive.
 
 Forms memorizza la cache in due posizioni:
 
 * **in memoria:** Gli elementi vengono memorizzati per un accesso rapido. La cache in memoria ha dimensioni limitate e viene eliminata al riavvio del server.
-* **su disco:** Gli elementi vengono memorizzati nel file system del server. La cache del disco ha una capacità maggiore della cache in memoria e viene mantenuta al riavvio del server. La posizione della cache del disco dipende dal server dell’applicazione in uso. Per informazioni sulla modifica della posizione della cache del disco, consultate [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
+* **su disco:** Gli elementi sono memorizzati nel file system del server. La cache del disco ha una capacità maggiore della cache in memoria e viene mantenuta al riavvio del server. La posizione della cache del disco dipende dal server dell’applicazione in uso. Per informazioni sulla modifica della posizione della cache del disco, vedere [Configurazione delle posizioni per Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
 
 ## Specifica della modalità cache {#specifying-the-cache-mode}
 
@@ -42,11 +42,11 @@ Forms supporta due modalità di caching:
 * incondizionato
 * utilizzo del punto di controllo della cache
 
-Se passate da una modalità cache all’altra, riavviate il servizio Forms affinché la modifica abbia effetto. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) AEM per istruzioni.
+Se passate da una modalità cache all’altra, riavviate il servizio Forms affinché la modifica abbia effetto. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
 Il tempo del punto di controllo della cache viene reimpostato automaticamente quando si passa da una modalità all&#39;altra.
 
-### Utilizzo della cache non condizionale {#using-unconditional-caching}
+### Utilizzo della cache incondizionata {#using-unconditional-caching}
 
 In questa modalità, quando il servizio Forms riceve una richiesta, convalida le risorse necessarie (struttura del modulo ed eventuali risorse correlate, ad esempio frammenti e immagini). Il servizio Forms confronta la marca temporale delle risorse presenti nell&#39;archivio con la marca temporale delle risorse presenti nella cache. Se la risorsa nella cache è precedente, il servizio Forms la aggiorna.
 
@@ -90,23 +90,23 @@ Per accedere a queste impostazioni, nella console di amministrazione fare clic s
 >
 >I requisiti del disco per la cache devono essere uguali al repository.
 
-### Specifica delle impostazioni della cache globale {#specifying-global-cache-settings}
+### Specifica delle impostazioni globali della cache {#specifying-global-cache-settings}
 
-Le impostazioni nell&#39;area Impostazioni **cache** globale interessano tutti i tipi di cache. Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) AEM per istruzioni.
+Le impostazioni nell&#39;area **Impostazioni cache globale** interessano tutti i tipi di cache. Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
-**Dimensione massima documento cache (KB):** La dimensione massima, in kilobyte, di una struttura del modulo o di altre risorse che è possibile memorizzare nella cache in qualsiasi memoria. Si tratta di un&#39;impostazione globale che si applica a tutte le cache in memoria. Se una risorsa è più grande di questo valore, non viene memorizzata nella cache. Il valore predefinito è 1024 kilobyte. Questa impostazione non influisce sulla cache del disco.
+**Dimensione massima documento cache (KB):** dimensione massima, in kilobyte, di una struttura del modulo o di altre risorse che è possibile memorizzare in qualsiasi cache in memoria. Si tratta di un&#39;impostazione globale che si applica a tutte le cache in memoria. Se una risorsa è più grande di questo valore, non viene memorizzata nella cache. Il valore predefinito è 1024 kilobyte. Questa impostazione non influisce sulla cache del disco.
 
-**Cache di rendering del modulo abilitata:** Per impostazione predefinita, questa opzione è selezionata, il che significa che i moduli sottoposti a rendering vengono memorizzati nella cache per il successivo recupero. Questa impostazione migliora le prestazioni perché il servizio Forms deve eseguire il rendering di un modulo specifico solo una volta e quindi utilizza la versione memorizzata nella cache. Questa opzione funziona con la proprietà caching della struttura del modulo. Per informazioni sulla configurazione di questo valore nella struttura del modulo, vedere la Guida di Designer.
+**Cache di rendering del modulo abilitata:** per impostazione predefinita, questa opzione è selezionata, il che significa che i moduli sottoposti a rendering vengono memorizzati nella cache per il successivo recupero. Questa impostazione migliora le prestazioni perché il servizio Forms deve eseguire il rendering di un modulo specifico solo una volta e quindi utilizza la versione memorizzata nella cache. Questa opzione funziona con la proprietà caching della struttura del modulo. Per informazioni sulla configurazione di questo valore nella struttura del modulo, vedere la Guida di Designer.
 
 ### Memorizzazione delle strutture del modulo nella cache {#caching-form-designs}
 
 Quando il servizio Forms riceve una richiesta di rendering, recupera la struttura del modulo dall&#39;archivio e la memorizza nella cache. Questo caching migliora le prestazioni perché per richieste di rendering successive, il servizio Forms recupera la struttura del modulo dalla cache anziché dall&#39;archivio.
 
-Il servizio Forms memorizza sempre nella cache le strutture del modulo su disco. Se le strutture del modulo sono memorizzate sul server, tali file vengono considerati cache del disco. Il servizio Forms memorizza anche le strutture del modulo nella cache, in base alle impostazioni specificate nell&#39;area **In Memory Template Cache** . Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) AEM per istruzioni.
+Il servizio Forms memorizza sempre nella cache le strutture del modulo su disco. Se le strutture del modulo sono memorizzate sul server, tali file vengono considerati cache del disco. Il servizio Forms memorizza anche le strutture del modulo nella cache, in base alle impostazioni specificate nell&#39;area **In Memory Template Cache**. Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
-**Dimensione cache configurazione modello:** Il numero massimo di oggetti di configurazione del modello da tenere in memoria. Il valore predefinito è 100. È consigliabile impostare questo valore maggiore o uguale al valore Dimensione cache modello. Questa impostazione non influisce sulla cache del disco.
+**Dimensione cache configurazione modello:** il numero massimo di oggetti di configurazione modello da tenere in memoria. Il valore predefinito è 100. È consigliabile impostare questo valore maggiore o uguale al valore Dimensione cache modello. Questa impostazione non influisce sulla cache del disco.
 
-**Dimensione cache modello:** Il numero massimo di oggetti di contenuto modello da tenere in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
+**Dimensione cache modello:** il numero massimo di oggetti di contenuto modello da tenere in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
 
 **Abilitato:** Per impostazione predefinita, questa casella di controllo è selezionata, il che significa che i modelli di modulo sono memorizzati nella cache. Se questa opzione non è selezionata, i modelli di modulo sono memorizzati nella cache solo sul disco.
 
@@ -114,27 +114,27 @@ Il servizio Forms memorizza sempre nella cache le strutture del modulo su disco.
 
 Il servizio Forms memorizza nella cache i moduli di cui è stato eseguito il rendering in modo che non sia necessario risolvere ed eseguire il rendering dello stesso modulo nelle richieste successive. I moduli di cui è stato effettuato il rendering sono memorizzati nella cache sia su disco che in memoria.
 
-Queste impostazioni si trovano nell&#39;area **In Memory Form Rendering Cache** . Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) AEM per istruzioni.
+Queste impostazioni si trovano nell&#39;area **Nella cache di rendering del modulo di memoria**. Se modificate una di queste impostazioni, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare [Avviare o arrestare i servizi associati ai moduli AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per le istruzioni.
 
-**Dimensione cache:** Specifica il numero massimo di moduli sottoposti a rendering che possono risiedere nella cache in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
+**Dimensione cache:** specifica il numero massimo di moduli di cui è stato effettuato il rendering che possono risiedere nella cache in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
 
-**Abilitato:** Per impostazione predefinita, questa opzione è selezionata, il che significa che i moduli di cui è stato effettuato il rendering sono memorizzati nella cache. Se questa opzione non è selezionata, i moduli di cui è stato eseguito il rendering vengono memorizzati nella cache solo sul disco.
+**Abilitato:** Per impostazione predefinita, questa opzione è selezionata, il che significa che i moduli di cui è stato eseguito il rendering sono memorizzati nella cache. Se questa opzione non è selezionata, i moduli di cui è stato eseguito il rendering vengono memorizzati nella cache solo sul disco.
 
 ### Memorizzazione nella cache di frammenti e immagini {#caching-fragments-and-images}
 
 Il servizio Forms memorizza nella cache frammenti e immagini utilizzati nelle strutture del modulo su disco. Ciò migliora le prestazioni perché i frammenti e le immagini vengono letti solo dalla directory archivio alla prima richiesta. Quindi, su richieste successive, il servizio Forms legge frammenti e immagini dalla cache del disco. I frammenti e le immagini sono memorizzati nella cache solo su disco e non nella memoria.
 
-Per controllare il caching su disco di frammenti e immagini è possibile utilizzare le seguenti impostazioni. Queste impostazioni si trovano nell&#39;area **Template Resource Cache Settings** (Impostazioni cache risorse modello):
+Per controllare il caching su disco di frammenti e immagini è possibile utilizzare le seguenti impostazioni. Queste impostazioni si trovano nell&#39;area **Impostazioni cache delle risorse dei modelli**:
 
-**Memorizzazione nella cache** delle risorse Selezionare una delle seguenti opzioni dall&#39;elenco:
+**Memorizzazione** nella cache delle risorseSelezionare una delle seguenti opzioni dall&#39;elenco:
 
-**Abilitata per frammenti e immagini:** Il servizio Forms memorizza nella cache frammenti e immagini. Questa è l&#39;opzione predefinita.
+**Abilitata per frammenti e immagini:** il servizio Forms memorizza nella cache frammenti e immagini. Questa è l&#39;opzione predefinita.
 
-**Abilitato per i frammenti:** Il servizio Forms memorizza nella cache i frammenti, ma non le immagini.
+**Abilitato per i frammenti:** il servizio Forms memorizza nella cache i frammenti, ma non le immagini.
 
 **Disattivato:** Il servizio Forms non memorizza nella cache frammenti o immagini.
 
-**Intervallo pulizia (secondi):** Specifica la frequenza con cui il servizio Forms rimuove i vecchi file cache non validi. Il servizio Forms non rimuove i file di cache validi. Se modificate l’intervallo di pulizia, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare Avviare o arrestare i servizi associati ai moduli AEM per istruzioni. Il valore predefinito è 600 secondi.
+**Intervallo di pulizia (secondi):** specifica la frequenza con cui il servizio Forms rimuove i vecchi file cache non validi. Il servizio Forms non rimuove i file di cache validi. Se modificate l’intervallo di pulizia, riavviate il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o consultare Avviare o arrestare i servizi associati ai moduli AEM per istruzioni. Il valore predefinito è 600 secondi.
 
 ## Considerazioni sul clustering per le cache {#clustering-considerations-for-caches}
 
