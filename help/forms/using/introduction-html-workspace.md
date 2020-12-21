@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Introduzione a  area di lavoro AEM Forms {#introduction-to-aem-forms-workspace}
+# Introduzione all&#39;area di lavoro  AEM Forms {#introduction-to-aem-forms-workspace}
 
 Il flusso di lavoro di Forms aumenta l&#39;efficienza dell&#39;organizzazione automatizzando e fornendo visibilità ai processi aziendali critici relativi ai documenti e ai moduli. Il modulo Process Management consente di creare flussi di lavoro end-to-end semplificati — comprese persone, sistemi, contenuti e regole aziendali — accessibili online o offline.Il flusso di lavoro Forms include l&#39;area di lavoro AEM Forms . &#39;area di lavoro di AEM Forms aggiunge nuove funzionalità per ampliare e integrare l&#39;area di lavoro e renderla più semplice da usare.
 
@@ -29,7 +29,7 @@ Il flusso di lavoro di Forms aumenta l&#39;efficienza dell&#39;organizzazione au
 **Funzionalità** chiave:
 
 * Coinvolgete i partecipanti ai processi ovunque con PDF forms dinamici, interfacce mobili e applicazioni Web.
-* Integrare facilmente i componenti dell’area di lavoro con le applicazioni Web. &#39;area di lavoro di AEM Forms è un software basato su componenti, può essere facilmente personalizzato e riutilizzato.
+* Integrare facilmente i componenti dell’area di lavoro con le applicazioni Web. Poiché &#39;area di lavoro di AEM Forms è un software basato su componenti, può essere facilmente personalizzato e riutilizzato.
 * Estendi i processi aziendali ai lavoratori mobili online e offline con l&#39;app dell&#39;area di lavoro AEM Forms .
 * Visualizzare rapporti per monitorare i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI). Potete utilizzare le API per estrarre i dati per ulteriori analisi utilizzando strumenti di reporting di terze parti.
 
