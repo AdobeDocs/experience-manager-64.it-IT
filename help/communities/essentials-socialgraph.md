@@ -18,13 +18,13 @@ ht-degree: 3%
 ---
 
 
-# Social Graph Essentials {#social-graph-essentials}
+# Nozioni di base di grafico social network {#social-graph-essentials}
 
-La capacità di un membro della Comunità di seguire e seguire [le attività](essentials-activities.md) è stabilita attraverso due componenti:
+La capacità di un membro della Comunità di seguire [le attività](essentials-activities.md) e di seguirle è stabilita tramite due componenti:
 
-Il `follow`componente deve essere associato a un&#39;altra risorsa, e questa associazione è già stabilita per i membri e le funzionalità di Community esistenti in un sito [](overview.md#communitiessites)community.
+Il componente `follow`deve essere associato a un&#39;altra risorsa e questa associazione è già stabilita per i membri e le funzionalità di Community esistenti in un [sito community](overview.md#communitiessites).
 
-Il `following`componente elenca i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
+Il componente `following`elenca i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -54,20 +54,20 @@ Il `following`componente elenca i membri che seguono il membro corrente o che so
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>Consultate <a href="socialgraph.md">Utilizzo di Social Graph</a></td> 
+   <td>Vedere <a href="socialgraph.md">Utilizzo di Social Graph</a></td> 
   </tr>
   <tr>
-   <td><strong> optional<br /> , proprietà</strong></td> 
+   <td><strong> proprietà opzionale<br /></strong></td> 
    <td>
     <ul> 
      <li>Nome: <strong><code>outgoing</code></strong></li> 
      <li>Tipo: booleano</li> 
      <li>Valore:<br /> 
       <ul> 
-       <li><i>true </i>- il <code>following</code> componente elenca i membri che hanno effettuato l’accesso <code>follows</code></li> 
-       <li><i>false </i>- il <code>following</code> componente elenca i membri <code>follow </code>del membro che ha effettuato l’accesso</li> 
+       <li><i>true  </i>- il  <code>following</code> componente elenca i membri che hanno effettuato l’accesso <code>follows</code></li> 
+       <li><i>false  </i>- il  <code>following</code> componente elenca i membri che hanno effettuato  <code>follow </code>l’accesso</li> 
       </ul> </li> 
-    </ul> <p>Se manca la proprietà, il valore predefinito è <i>true</i> . Al momento, non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del <code>following </code>nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
+    </ul> <p>Il valore predefinito è <i>true</i> se la proprietà è mancante. Al momento, non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del nodo <code>following </code>utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -76,7 +76,7 @@ Il `following`componente elenca i membri che seguono il membro corrente o che so
 
 | **resourceType** | social/socialgrafo/componenti/hbs/seguenti |
 |---|---|
-| [**inclusa **](scf.md#add-or-include-a-communities-component) | No |
+| [**inclusa**](scf.md#add-or-include-a-communities-component) | No |
 | **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
 | **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
 
