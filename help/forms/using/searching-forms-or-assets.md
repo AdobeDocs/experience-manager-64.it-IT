@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Quando selezionate uno o più criteri e specificate anche una stringa di testo, l’intersezione del testo e dei criteri viene restituita come risultati di ricerca. I risultati della ricerca sono validi quanto i metadati del modulo e delle risorse forniti.
 
-Fare clic su ![aem6forms_search](assets/aem6forms_search.png)per visualizzare o nascondere il pannello di ricerca.
+Fare clic su ![aem6forms_search](assets/aem6forms_search.png) per visualizzare o nascondere il pannello di ricerca.
 
 ## Ricerca di base {#basic-search}
 
@@ -37,14 +37,14 @@ Tenete presenti i seguenti punti sulla ricerca di base:
 
 * La ricerca viene eseguita utilizzando le proprietà dei metadati del modulo e delle risorse.
 * Se si digitano più parole, l&#39;operazione di ricerca corrisponde al testo completo per la ricerca.
-* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digitate `geometrixx`, nei risultati di ricerca vengono visualizzate le risorse con titoli `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` vengono visualizzate.
+* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digitate `geometrixx`, nei risultati della ricerca vengono visualizzate le risorse con titoli `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx`.
 
 * Le corrispondenze parziali di una parola non sono supportate. Per eseguire ricerche utilizzando stringhe parziali, utilizzare &amp;ast; carattere jolly. Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzato il modulo o la risorsa corrispondente.
 * Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio, `My form` non è la stessa query di ricerca di `My form`.
 
 * Se i dati e i valori di visualizzazione dei campi nelle proprietà dei metadati sono diversi, non è possibile utilizzare i valori di visualizzazione come parametri di ricerca. Ad esempio, non è possibile effettuare ricerche basate su uno stato, ad esempio Modificato o Pubblicato, poiché queste proprietà sono memorizzate in un formato diverso.
 
-## Advanced search {#advanced-search}
+## Ricerca avanzata {#advanced-search}
 
 Nei criteri di ricerca, oltre alla query è possibile specificare alcuni parametri di ricerca per rendere la ricerca di base più efficiente e mirata.
 
@@ -87,7 +87,7 @@ Potete selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisc
   </tr>
   <tr>
    <td>Modello modulo<br /> </td> 
-   <td>Eseguire ricerche in tutti i modelli di modulo.<br /> </td> 
+   <td>Cerca in tutti i modelli di modulo.<br /> </td> 
   </tr>
   <tr>
    <td>Modulo PDF</td> 
@@ -103,7 +103,7 @@ Potete selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisc
   </tr>
   <tr>
    <td>Risorsa</td> 
-   <td>Consente di effettuare ricerche in tutte le risorse.<br /> </td> 
+   <td>Cerca in tutte le risorse.<br /> </td> 
   </tr>
  </tbody>
 </table>
