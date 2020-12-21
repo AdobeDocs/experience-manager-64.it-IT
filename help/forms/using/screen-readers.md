@@ -25,7 +25,7 @@ I moduli HTML5 utilizzano costrutti HTML standard che consentono di utilizzare c
 
 ## Standard di accessibilità {#accessibility-standards}
 
-I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità, con eccezioni note. Per informazioni dettagliate, vedere [VPAT per i moduli](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) HTML5.
+I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità, con eccezioni note. Per informazioni dettagliate, vedere [VPAT per moduli HTML5](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html).
 
 ## assistenti vocali certificati per moduli HTML5 {#certified-screen-readers-for-html-forms}
 
@@ -34,11 +34,11 @@ I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità, con eccezi
 
 ### JAWS {#jaws}
 
-Tutti i tasti e i collegamenti predefiniti funzionano per i moduli HTML5. Per ulteriori informazioni sull&#39;utilizzo di JAWS, visitate [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Tutti i tasti e i collegamenti predefiniti funzionano per i moduli HTML5. Per ulteriori informazioni sull&#39;utilizzo di JAWS, visitare il sito Web [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 
-I moduli HTML5 supportano tutti i tasti e i gesti predefiniti di Voice over. Per ulteriori informazioni sulla configurazione e l’uso di VoiceOver, vedete [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+I moduli HTML5 supportano tutti i tasti e i gesti predefiniti di Voice over. Per ulteriori informazioni sulla configurazione e l&#39;utilizzo di VoiceOver, vedere [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Problemi noti {#known-issues}
 
