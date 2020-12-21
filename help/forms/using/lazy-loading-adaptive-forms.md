@@ -28,15 +28,18 @@ Comprendiamo innanzitutto i requisiti e i passaggi preparatori prima di configur
 
 Prima di configurare il caricamento pigro dei frammenti nel modulo adattivo, è importante definire strategie per la creazione di frammenti, identificare i valori utilizzati negli script o citati in altri frammenti e definire regole per controllare la visibilità dei campi nei frammenti caricati lentamente.
 
-* **Identificazione e creazione di frammenti**&#x200B;È possibile configurare solo frammenti di modulo adattivi per il caricamento pigro. Un frammento è un segmento autonomo che si trova al di fuori di un modulo adattivo e può essere riutilizzato nei diversi moduli. Pertanto, il primo passo verso l&#39;implementazione del caricamento pigro è identificare le sezioni logiche di un modulo e convertirle in frammenti. È possibile creare un frammento da zero o salvare come frammento un pannello di moduli esistente.
+* **Identificare e creare**
+i frammentiÈ possibile configurare solo i frammenti di modulo adattivi per il caricamento pigro. Un frammento è un segmento autonomo che si trova al di fuori di un modulo adattivo e può essere riutilizzato nei diversi moduli. Pertanto, il primo passo verso l&#39;implementazione del caricamento pigro è identificare le sezioni logiche di un modulo e convertirle in frammenti. È possibile creare un frammento da zero o salvare come frammento un pannello di moduli esistente.
 
-   Per ulteriori informazioni sulla creazione di frammenti, vedere [Frammenti](/help/forms/using/adaptive-form-fragments.md)di moduli adattivi.
+   Per ulteriori informazioni sulla creazione di frammenti, vedere [Frammenti di moduli adattivi](/help/forms/using/adaptive-form-fragments.md).
 
-* **Identificare e contrassegnare valori** globali Le transazioni basate suForms comportano elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare la compilazione dei moduli. Ad esempio, nel modulo è presente il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento pigro, il valore del campo A deve essere disponibile per convalidare il campo B anche se il frammento X non è caricato. A tal fine, è possibile contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non è caricato.
+* **Identificare e contrassegnare**
+i valori globaliLe transazioni basate su moduli comportano elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare la compilazione dei moduli. Ad esempio, nel modulo è presente il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento pigro, il valore del campo A deve essere disponibile per convalidare il campo B anche se il frammento X non è caricato. A tal fine, è possibile contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non è caricato.
 
-   Per informazioni su come rendere il valore di un campo globale, consultate [Configurazione del caricamento](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)pigro.
+   Per informazioni su come rendere il valore di un campo globale, vedere [Configurazione del caricamento pigro](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Regole di scrittura per controllare la visibilità dei campi** Forms includono alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato occupazione di un modulo. Per ulteriori informazioni sulla scrittura delle regole, vedere [Utilizzo dell&#39;editor](/help/forms/using/rule-editor.md)delle regole.
+* **Regole di scrittura per controllare la visibilità dei**
+campiI moduli contengono alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato occupazione di un modulo. Per ulteriori informazioni sulla scrittura di regole, vedere [Utilizzo dell&#39;editor di regole](/help/forms/using/rule-editor.md).
 
    È possibile utilizzare le regole di visibilità nei frammenti caricati in modo da visualizzare i campi condizionali solo quando sono obbligatori. Inoltre, contrassegnare il campo condizionale come globale per farvi riferimento nell&#39;espressione di visibilità del frammento caricato in modo graduale.
 
@@ -46,7 +49,7 @@ Per abilitare il caricamento lento su un frammento di modulo adattivo, effettuar
 
 1. Aprire il modulo adattivo in modalità di creazione che contiene il frammento da abilitare per il caricamento pigro.
 1. Selezionare il frammento di modulo adattivo e toccare ![cmppr](assets/cmppr.png).
-1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo graduale]** e tocca **Fine**.
+1. Nella barra laterale, abilitare **[!UICONTROL Carica frammento in modo pigro]** e toccare **Fine**.
 
    ![Abilita caricamento lento per il frammento di modulo adattivo](assets/lazy-loading-fragment.png)
 
@@ -56,7 +59,7 @@ Per abilitare il caricamento lento su un frammento di modulo adattivo, effettuar
 
 1. Aprire il frammento di modulo adattivo in modalità di creazione.
 1. Toccate il campo di cui desiderate contrassegnare il valore come globale, quindi toccate ![](assets/cmppr.png).
-1. Nella barra laterale, abilitate il valore **[!UICONTROL Use (Usa) durante il caricamento]**pigro.
+1. Nella barra laterale, attivare il valore **[!UICONTROL Usa durante il caricamento pigro]**.
    ![Campo di caricamento pigro nella barra laterale](assets/enable-lazy-loading.png)
 
    Il valore è ora contrassegnato come globale e sarà disponibile per l&#39;uso negli script anche quando il frammento contenitore viene scaricato.
@@ -73,7 +76,7 @@ Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando 
 * Valutare la possibilità di scrivere regole di visibilità per i frammenti da mostrare o nascondere in base a una condizione. Ad esempio, è possibile mostrare o nascondere il frammento Dettagli coniuge in base allo stato civile specificato da un utente.
 * I componenti Allegati e Termini e Condizioni del file non sono supportati nei frammenti caricati lentamente.
 
-### Best practice di scripting per configurare il caricamento pigro {#scripting-best-practices-for-configuring-lazy-loading}
+### Best practice di scripting per la configurazione del caricamento pigro {#scripting-best-practices-for-configuring-lazy-loading}
 
 I punti importanti da tenere a mente durante lo sviluppo di script per i pannelli di caricamento pigri sono i seguenti:
 
