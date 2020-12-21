@@ -17,19 +17,19 @@ ht-degree: 0%
 ---
 
 
-# Interazione con il dorso {#backbone-interaction}
+# Interazione dorsale {#backbone-interaction}
 
-Backbone è una libreria che consente di creare e seguire l&#39;architettura MVC nelle applicazioni Web. L&#39;idea di base di Backbone consiste nell&#39;organizzare l&#39;interfaccia in viste logiche, affiancate da modelli, ciascuno dei quali può essere aggiornato indipendentemente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni sulla barra laterale, vedere [https://backbonejs.org](https://backbonejs.org/).
+Backbone è una libreria che consente di creare e seguire l&#39;architettura MVC nelle applicazioni Web. L&#39;idea di base di Backbone consiste nell&#39;organizzare l&#39;interfaccia in viste logiche, affiancate da modelli, ciascuno dei quali può essere aggiornato indipendentemente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni sulla dorsale, vedere [https://backbonejs.org](https://backbonejs.org/).
 
 Alcuni concetti chiave sono i seguenti:
 
-**Modello** backbone Contiene i dati e la maggior parte della logica correlata a tali dati.
+**Backbone** modelContiene i dati e la maggior parte della logica ad essi correlati.
 
-**Vista** dorsale Utilizzata per rappresentare lo stato del modello corrispondente. Una vista dorsale si comporta come un controller, ascoltando eventi dell&#39;interfaccia utente come clic dell&#39;utente o eventi del modello (come i dati modificati) e modificando l&#39;interfaccia utente a seconda delle necessità.
+**Backbone** viewUtilizzato per rappresentare lo stato del modello corrispondente. Una vista dorsale si comporta come un controller, ascoltando eventi dell&#39;interfaccia utente come clic dell&#39;utente o eventi del modello (come i dati modificati) e modificando l&#39;interfaccia utente a seconda delle necessità.
 
-**Modello** HTML Un modello di wrapper con segnaposto popolati dal modello.
+**HTML** templateModello wrapper con segnaposto popolati dal modello.
 
-**area di lavoro** AEM Forms Contiene diversi componenti singoli. Ciascun componente:
+**** area di lavoro AEM FormsContiene diversi componenti singoli. Ciascun componente:
 
 * Rappresenta un singolo elemento di interfaccia utente logico.
 * Può essere un insieme di componenti simili.
