@@ -27,9 +27,9 @@ Gli agenti possono associare ed eseguire flussi di lavoro post-elaborazione su l
 
 Per associare i processi post a lettere o comunicazioni interattive, è innanzitutto necessario impostare i processi post. È possibile eseguire due tipi di flussi di lavoro sulle lettere inviate:
 
-1. **Forms Workflow:** Si tratta dei flussi di lavoro di gestione dei processi AEM Forms  su JEE. Istruzioni per la configurazione del [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Si tratta dell&#39;AEM Forms  sui flussi di lavoro di gestione dei processi JEE. Istruzioni per l&#39;impostazione di [Forms Workflow](#formsworkflow).
 
-1. **Flusso di lavoro AEM:** AEM flussi di lavoro possono essere utilizzati anche come processi post per le lettere inviate. Istruzioni per l’impostazione di [AEM Flusso di lavoro](/help/forms/using/aem-forms-workflow.md).
+1. **AEM Flusso di lavoro:** AEM flussi di lavoro possono essere utilizzati anche come processi post per le lettere inviate. Istruzioni per l&#39;impostazione di [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Flusso di lavoro per moduli {#formsworkflow}
 
@@ -38,7 +38,7 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
    ![Gestione configurazione](assets/2configmanager-1.png)
 
 1. In questa pagina, individua  configurazione SDK AEM Forms Client ed espandila facendo clic su di essa.
-1. In URL server, immettete il nome dell’AEM Forms  sul server JEE, i dettagli di accesso e fate clic su **Salva**.
+1. In URL server, immettete il nome dell&#39;AEM Forms  sul server JEE, i dettagli di accesso, quindi fate clic su **Salva**.
 
    ![Immettere il nome del server di LiveCycle](assets/1cofigmanager.png)
 
@@ -57,27 +57,27 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
 
 1. Per utilizzare  flussi di lavoro AEM Forms su JEE per la post-elaborazione, impostare i parametri e gli output necessari. I valori predefiniti dei parametri sono indicati di seguito.
 
-   Andate alla pagina Configurazioni console Web di Adobe Experience Manager > Configurazioni **[!UICONTROL di gestione della]** corrispondenza e configurate i seguenti parametri:
+   Andate alla pagina Configurazioni console Web di Adobe Experience Manager > **[!UICONTROL Configurazioni gestione corrispondenza]** e configurate i seguenti parametri:
 
-   1. **inPDFDoc (parametro del documento PDF):** Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
-   1. **inXMLDoc (parametro dati XML):** Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
-   1. **inXDPDoc (parametro del documento XDP):** Un documento XML come input. Questo input contiene il layout sottostante (XDP).
-   1. **inAttachmentDocs (parametro Attachment Documents):** Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
-   1. **redirectURL (Redirect URL Output):** Un tipo di output che indica l&#39;URL a cui reindirizzare.
+   1. **inPDFDoc (parametro del documento PDF):** un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
+   1. **inXMLDoc (parametro dati XML):** un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
+   1. **inXDPDoc (parametro del documento XDP):** un documento XML come input. Questo input contiene il layout sottostante (XDP).
+   1. **inAttachmentDocs (parametro Attachment Documents):parametro di immissione** di un elenco. Questo input contiene tutti gli allegati come input.
+   1. **redirectURL (Output URL di reindirizzamento):** un tipo di output che indica l&#39;URL a cui reindirizzare.
 
-   Il flusso di lavoro dei moduli deve avere parametri di documento PDF o dati XML come input con lo stesso nome specificato in **[!UICONTROL Correspondence Management Configurations]**. Questo è necessario per elencare il processo nel menu a discesa Post Process (Processo post).
+   Il flusso di lavoro dei moduli deve contenere parametri di documento PDF o dati XML come input con lo stesso nome specificato in **[!UICONTROL Configurazioni di gestione della corrispondenza]**. Questo è necessario per elencare il processo nel menu a discesa Post Process (Processo post).
 
-## Impostazioni nell’istanza Pubblica {#settings-on-the-publish-instance}
+## Impostazioni sull&#39;istanza Pubblica {#settings-on-the-publish-instance}
 
 1. accedere a `http://localhost:publishport/aem/forms`.
-1. Passate a **[!UICONTROL Lettere]** per visualizzare la lettera pubblicata disponibile nell’istanza di pubblicazione.
-1. Configurare le impostazioni AEM DS. Consultate [Configurazione AEM impostazioni](/help/forms/using/configuring-the-processing-server-url-.md)DS.
+1. Passate a **[!UICONTROL Lettere]** per visualizzare la lettera pubblicata disponibile nell&#39;istanza di pubblicazione.
+1. Configurare le impostazioni AEM DS. Vedere [Configurazione AEM impostazioni DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
 >Durante l&#39;utilizzo di flussi di lavoro Forms o AEM, prima di inviare qualsiasi invio dal server di pubblicazione è necessario configurare il servizio Impostazioni DS. In caso contrario, la presentazione del modulo non può essere effettuata.
 
-## Recupero Istanze Lettera {#letter-instances-retrieval}
+## Recupero istanze lettera {#letter-instances-retrieval}
 
 Le istanze di lettere salvate possono essere ulteriormente modificate, ad esempio il recupero di istanze di lettere e l&#39;eliminazione di istanze di lettere, utilizzando le API seguenti definite in LetterInstanceService.
 
@@ -101,7 +101,7 @@ Le istanze di lettere salvate possono essere ulteriormente modificate, ad esempi
   <tr> 
    <td>List getAllLetterInstances(Query) restituisce ICCException; </td> 
    <td>getAllLetterInstances </td> 
-   <td>Questa API recupera le istanze di lettere in base al parametro della query di input. Per recuperare tutte le istanze di lettere, il parametro query può essere passato come null.<br /> </td> 
+   <td>Questa API recupera le istanze di lettere in base al parametro della query di input. Per recuperare tutte le istanze di lettere, il parametro di query può essere passato come null.<br /> </td> 
   </tr> 
   <tr> 
    <td>letterInstanceExists booleano pubblico(String letterInstanceName) genera ICCException; </td> 
@@ -111,7 +111,7 @@ Le istanze di lettere salvate possono essere ulteriormente modificate, ad esempi
  </tbody> 
 </table>
 
-## Associazione di un processo di post a una lettera {#associating-a-post-process-with-a-letter}
+## Associazione di un processo post a una lettera {#associating-a-post-process-with-a-letter}
 
 Nell&#39;interfaccia utente CCR, completa i seguenti passaggi per associare un processo di post a una lettera:
 
@@ -131,4 +131,4 @@ Un&#39;istanza di lettera bozza può essere ricaricata nell&#39;interfaccia uten
 
 LetterInstanceID: L&#39;ID univoco dell&#39;istanza della lettera inviata.
 
-Per ulteriori informazioni sul salvataggio di una bozza di lettera, vedere [Salvataggio di bozze e invio di istanze](/help/forms/using/create-correspondence.md#savingdrafts)di lettere.
+Per ulteriori informazioni sul salvataggio di una bozza di lettera, vedere [Salvataggio di bozze e invio di istanze di lettere](/help/forms/using/create-correspondence.md#savingdrafts).
