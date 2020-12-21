@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Modifica della combinazione di colori dell’interfaccia {#changing-the-color-scheme-of-the-interface}
+# Modifica della combinazione di colori dell&#39;interfaccia {#changing-the-color-scheme-of-the-interface}
 
-Potete modificare lo schema di colori  porzioni dell’interfaccia utente dell’area di lavoro di AEM Forms in base alle vostre esigenze. Di seguito sono riportati alcuni esempi di personalizzazioni rappresentative dello schema di colori. Oltre ai passaggi descritti in questo articolo, consultate Procedura [Generica per  personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+Potete modificare lo schema di colori  porzioni dell’interfaccia utente dell’area di lavoro di AEM Forms in base alle vostre esigenze. Di seguito sono riportati alcuni esempi di personalizzazioni rappresentative dello schema di colori. Oltre ai passaggi descritti in questo articolo, consultate [Passaggi generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barra di navigazione superiore {#top-navigation-bar}
 
@@ -43,7 +43,7 @@ Per aggiornare la barra di navigazione nella parte superiore dell&#39;area di la
    }
    ```
 
-### Utilizzo della proprietà colore nei CSS {#using-color-property-in-css}
+### Utilizzo della proprietà colore in CSS {#using-color-property-in-css}
 
 1. Aggiungi il seguente stile in newStyle.css in /apps/ws/css
 
@@ -56,7 +56,7 @@ Per aggiornare la barra di navigazione nella parte superiore dell&#39;area di la
 
 ## Componente categoria {#category-component}
 
-Il componente Categoria visualizza le varie categorie di attività nel pannello a sinistra. Per modificarne il colore, definite il colore di sfondo nell’ `.category` elemento del file CSS.
+Il componente Categoria visualizza le varie categorie di attività nel pannello a sinistra. Per modificarne il colore, definite il colore di sfondo nell&#39;elemento `.category` del file CSS.
 
 ## Componente attività {#task-component}
 
