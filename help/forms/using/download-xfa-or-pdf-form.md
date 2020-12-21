@@ -29,15 +29,15 @@ In  AEM Forms, l’operazione di download è supportata per i seguenti tipi di r
 
  AEM Forms supporta il download di questi tipi di moduli singolarmente o in una cartella contenente uno o più moduli supportati.
 
-Oltre a queste risorse, potete scaricare il `Resource` tipo di risorsa, se presente in una cartella. Questa funzionalità consente di scaricare la risorsa a cui fa riferimento un modulo XFA insieme al modulo.
+A parte queste risorse, potete scaricare il tipo di risorsa `Resource` se presente in una cartella. Questa funzionalità consente di scaricare la risorsa a cui fa riferimento un modulo XFA insieme al modulo.
 
 ## Download di uno o più moduli {#download-one-or-more-forms}
 
-1. Effettuate l&#39;accesso all&#39;interfaccia utente  AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Accedete all&#39;interfaccia utente  AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
 
 1. Andate alla posizione della risorsa da scaricare.
 
-1. Selezionate la risorsa. Fate clic sull’icona **[!UICONTROL Scarica]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
+1. Selezionate la risorsa. Fare clic sull&#39;icona **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
 
    >[!NOTE]
    >
@@ -49,9 +49,9 @@ Oltre a queste risorse, potete scaricare il `Resource` tipo di risorsa, se prese
 
    Se scaricate una cartella, le risorse supportate all’interno della cartella vengono scaricate nella gerarchia esistente.
 
-   Il file ZIP viene salvato nella `Downloads` cartella del sistema.
+   Il file ZIP viene salvato nella cartella `Downloads` del sistema.
 
-## Considerazioni correlate all’operazione di caricamento {#related-considerations-for-the-upload-operation}
+## Considerazioni correlate all&#39;operazione di caricamento {#related-considerations-for-the-upload-operation}
 
 * Potete caricare il file ZIP in qualsiasi altra posizione nello stesso repository o in un altro repository
 * La gerarchia delle risorse in una cartella viene mantenuta durante l’operazione di caricamento
