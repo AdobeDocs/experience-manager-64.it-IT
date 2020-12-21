@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# Creazione di moduli adattivi tramite lo schema XML {#creating-adaptive-forms-using-xml-schema}
+# Creazione di moduli adattivi utilizzando lo schema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisiti {#prerequisites}
 
@@ -173,7 +173,7 @@ Esempio di uno schema XML.
 
 >
 >
-Ad esempio, se si aggiunge l&#39;elemento `userFirstName` schema, la didascalia generata nel modulo adattivo è `User First Name`.
+Ad esempio, se si aggiunge l&#39;elemento dello schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare i valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -293,7 +293,7 @@ Ad esempio, se si aggiunge l&#39;elemento `userFirstName` schema, la didascalia 
 
 **Come si fa a sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando si fa doppio clic su un elemento in Content Finder, viene visualizzato un nome di campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando si fa doppio clic su un elemento in Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
 
 ![Un campo associato a un elemento dello schema XML](assets/dblclick.png)
 
@@ -301,7 +301,7 @@ Il campo bindRef</code> mostra l&#39;associazione tra un elemento ad albero e un
 
 >[!NOTE]
 >
->Gli attributi hanno un `@` simbolo nel relativo `bindRef`valore per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
+>Gli attributi hanno un simbolo `@` nel relativo valore `bindRef`per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
@@ -316,4 +316,4 @@ Sono disponibili due opzioni:
 
 **Cos&#39;è un bindRef?**
 
-Una `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo dello schema. Determina la `XPath` posizione in cui il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Un oggetto `bindRef`viene utilizzato anche per precompilare un valore di campo da un XML precompilato (precompilato).
+Un `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo dello schema. Determina il `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Un elemento `bindRef`viene utilizzato anche per precompilare un valore di campo da un XML precompilato (precompilato).
