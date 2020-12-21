@@ -32,7 +32,7 @@ ht-degree: 1%
 
 1. In Internazionalizzazione, nell&#39;elenco Set di caratteri, selezionare un set di caratteri. Questa impostazione dipende dall’API utilizzata, ossia renderingHTMLForm o renderingPDFForm. Per specificare un set di caratteri diverso da quelli elencati, selezionare Personalizzato e specificare un valore di codifica nella casella visualizzata.
 
-   Per le trasformazioni HTML, i moduli AEM supportano i valori di codifica dei caratteri definiti dal `java.nio.charset` pacchetto. Se sFormPreference è PDFForm, sono supportati solo set di caratteri specifici. Il set di caratteri deve essere un nome canonico valido. Il valore predefinito è ISO-8859-1.
+   Per le trasformazioni HTML, i moduli AEM supportano i valori di codifica dei caratteri definiti dal pacchetto `java.nio.charset`. Se sFormPreference è PDFForm, sono supportati solo set di caratteri specifici. Il set di caratteri deve essere un nome canonico valido. Il valore predefinito è ISO-8859-1.
 
 1. Fate clic su Salva.
 
