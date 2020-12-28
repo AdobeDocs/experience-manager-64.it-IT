@@ -61,7 +61,7 @@ Potete vedere come funziona in una distribuzione geograficamente distribuita con
 >* le sessioni permanenti sono abilitate, oppure
    >
    >
-* Gli utenti sono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui i gestori **creano** utenti durante il processo di sincronizzazione.
+* Gli utenti sono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui gli utenti **create** durante il processo di sincronizzazione.
 
 
 Per configurare il token incapsulato è necessario tenere in considerazione alcuni aspetti:
@@ -71,30 +71,30 @@ Per configurare il token incapsulato è necessario tenere in considerazione alcu
 
 ### Replica del tasto HMAC {#replicating-the-hmac-key}
 
-La chiave HMAC è presente come proprietà binaria di `/etc/key` nella directory archivio. Potete scaricarlo separatamente premendo il **collegamento di visualizzazione** accanto:
+La chiave HMAC è presente come proprietà binaria di `/etc/key` nella directory archivio. È possibile scaricarlo separatamente premendo il collegamento **view** accanto ad esso:
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
 Per replicare la chiave tra le istanze, è necessario:
 
 1. accedere all&#39;istanza AEM, in genere un&#39;istanza di creazione, che contiene il materiale chiave da copiare;
-1. Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale. Ad esempio, in questo percorso:
+1. Individuare il bundle `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, in questo percorso:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
 
-   Il `bundle.info` file all’interno di ciascuna cartella identificherà il nome del bundle.
+   Il file `bundle.info` all&#39;interno di ciascuna cartella identificherà il nome del bundle.
 
-1. Passa alla cartella dei dati. Ad esempio:
+1. Passa alla cartella dei dati. Esempio:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copiate i file HMAC e master.
-1. Quindi, passate all&#39;istanza di destinazione alla quale desiderate duplicare la chiave HMAC e individuate la cartella di dati. Ad esempio:
+1. Quindi, passate all&#39;istanza di destinazione alla quale desiderate duplicare la chiave HMAC e individuate la cartella di dati. Esempio:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Incollate i due file precedentemente copiati.
-1. [Aggiornate Crypto Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l&#39;istanza di destinazione è già in esecuzione.
+1. [Aggiornate Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) Bundlese l&#39;istanza di destinazione è già in esecuzione.
 
 1. Ripetere i passaggi indicati sopra per tutte le istanze in cui si desidera replicare la chiave.
 
@@ -102,7 +102,7 @@ Per replicare la chiave tra le istanze, è necessario:
 
 Una volta replicata la chiave HMAC, potete abilitare il token incapsulato tramite la console Web:
 
-1. Posiziona il browser su `https://serveraddress:port/system/console/configMgr`
-1. Cercate una voce denominata Gestore **autenticazione token CRX** Day e fate clic su di essa.
-1. Nella finestra seguente, selezionate la casella **Abilita supporto** token incapsulato e premete **Salva**.
+1. Posizionate il browser su `https://serveraddress:port/system/console/configMgr`
+1. Cercate una voce denominata **Day CRX Token Authentication Handler** e fate clic su di essa.
+1. Nella finestra seguente, selezionare la casella **Abilita supporto token incapsulato** e premere **Salva**.
 
