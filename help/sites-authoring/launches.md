@@ -18,7 +18,7 @@ ht-degree: 97%
 ---
 
 
-# Panoramica sui lanci{#launches}
+# Panoramica avvii{#launches}
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
@@ -101,7 +101,7 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
