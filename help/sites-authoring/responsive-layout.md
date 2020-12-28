@@ -22,7 +22,7 @@ ht-degree: 93%
 
 AEM consente di creare un layout reattivo per le pagine mediante il componente **Contenitore di layout**.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Con questa griglia è possibile riorganizzare il layout in base alla dimensione e al formato del dispositivo o della finestra. Il componente viene utilizzato [**insieme alla modalità **Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Con questa griglia è possibile riorganizzare il layout in base alla dimensione e al formato del dispositivo o della finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
 
 Il Contenitore di layout:
 
@@ -41,15 +41,16 @@ L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti per di
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
-* Componente [**Contenitore di layout **](#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contenitore di layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Questo componente è disponibile nel [browser dei componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
 
-* [**Modalità Layout **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Modalità Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
-* [**Emulatore **](#selecting-a-device-to-emulate)Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
+* [**Emulatore**](#selecting-a-device-to-emulate)
+Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
 
 Con questi meccanismi basati su una griglia reattiva è possibile:
 
@@ -67,7 +68,7 @@ A seconda del progetto, il Contenitore di layout può essere usato come il siste
 
 >[!NOTE]
 >
->L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. Per ulteriori informazioni, vedere [Configurazione del layout reattivo](/help/sites-administering/configuring-responsive-layout.md).
 
 ## Definizioni di layout, emulazione del dispositivo e punti di interruzione {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 
 >[!NOTE]
 >
->Se non è già disponibile, il **Contenitore di layout** deve essere [attivato esplicitamente per un sistema paragrafo/pagina](/help/sites-administering/configuring-responsive-layout.md) (ad esempio, utilizzando la modalità [**Progettazione **).](/help/sites-authoring/default-components-designmode.md)
+>Se non è già disponibile, il **Contenitore di layout** deve essere [attivato esplicitamente per un sistema paragrafo/pagina](/help/sites-administering/configuring-responsive-layout.md) (ad esempio, utilizzando la modalità [**Progettazione**).](/help/sites-authoring/default-components-designmode.md)
 
 1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché verrà visualizzato il segnaposto **Trascina qui i componenti**.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
@@ -237,7 +238,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Ad esempio:
+   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
@@ -263,8 +264,9 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    >
    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Scopri componenti** Selezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con la 
-**Opzione Mostra componenti** nascosti. In questo esempio, due componenti sono nascosti.
+   * **Scopri**
+componentiSelezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con 
+**Mostra** componente nascosto. In questo esempio, due componenti sono nascosti.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
