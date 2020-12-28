@@ -18,7 +18,7 @@ ht-degree: 15%
 ---
 
 
-# Deploying Best Practices{#deploying-best-practices}
+# Implementazione delle best practice{#deploying-best-practices}
 
 Le best practice di distribuzione descrivono come implementare o mantenere AEM nel modo più efficiente ed efficace possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
@@ -39,7 +39,7 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile e performante che costituisce la base di AEM.
+[](/help/sites-deploying/platform.md) Oakis, un archivio di contenuti gerarchici scalabile e performante che è alla base di AEM.
 
 <table> 
  <tbody>
@@ -75,9 +75,9 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
 
  AEM Communities semplifica la creazione e la gestione di community locali. Le best practice per  AEM Communities sono descritte di seguito:
 
-[Archivio](/help/communities/working-with-srp.md) di contenuti community - Consente di esaminare la nuova funzione di memorizzazione condivisa per i contenuti generati dall&#39;utente (UGC) e le considerazioni per la scelta della [topologia](/help/communities/topologies.md)sottostante.
+[Archivio](/help/communities/working-with-srp.md)  di contenuti community: descrive la nuova funzione di memorizzazione condivisa per i contenuti generati dall&#39;utente (UGC) e le considerazioni per la scelta della  [topologia](/help/communities/topologies.md) sottostante.
 
-[Implementazioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per le community. |
+[Implementazioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Descrive le distribuzioni consigliate per community. |
 
 ## Interfaccia {#ui}
 
@@ -96,7 +96,7 @@ Le best practice relative alle prestazioni sono elencate di seguito:
   <tr>
    <td>Best practice per la garanzia della qualità</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per la garanzia della qualità</a></td> 
-   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test di prestazioni nell’ambiente di <em>pubblicazione</em> . Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.</td> 
+   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test di prestazioni nell'ambiente <em>publish</em>. Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.</td> 
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td> 
