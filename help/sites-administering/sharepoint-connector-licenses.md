@@ -18,7 +18,7 @@ ht-degree: 10%
 ---
 
 
-# Licenze connettore SharePoint, avvisi sul copyright e clausole di esclusione della responsabilità{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenze connettore SharePoint, avvisi di copyright e clausole di esclusione della responsabilità{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Questa sezione elenca tutte le licenze, le note sul copyright e le clausole di non responsabilità che devono essere esplicitamente indicate in relazione al connettore Day JCR per MS SharePoint.
 
@@ -41,7 +41,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concorrente | [Concorrente](#concurrent) (dominio pubblico) |
+| concorrente | [Concurrent](#concurrent)  (dominio pubblico) |
 | geronimo-activate_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -426,7 +426,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
      limitations under the License.
 ```
 
-## Concorrente {#concurrent}
+## Corrente {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -966,7 +966,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
      (LFI#134403/Form ID#011801)
 ```
 
-## Sun Servlet {#sun-servlet}
+## Servlet Sun {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification") 
