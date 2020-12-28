@@ -12,13 +12,13 @@ discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 86%
 
 ---
 
 
-# Concept of Authoring and Publishing{#authoring}
+# Concetto di authoring e pubblicazione{#authoring}
 
 AEM offre due ambienti:
 
@@ -66,7 +66,7 @@ Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
 ## Ambiente di pubblicazione {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
+Quando è pronto, il contenuto del sito AEM viene pubblicato nell&#39; **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
 Solitamente, l’ambiente di pubblicazione si trova nella cosiddetta zona demilitarizzata. In altre parole, è accessibile da Internet ma non usufruisce più della protezione completa offerta dalla rete interna.
 
