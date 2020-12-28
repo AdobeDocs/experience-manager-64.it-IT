@@ -23,7 +23,7 @@ ht-degree: 94%
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* Il titolo viene visualizzato nella barra laterale [Riferimenti](/help/sites-authoring/author-environment-tools.md#references), dalla quale gli autori possono accedervi per utilizzarlo.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
 
@@ -85,7 +85,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Titolo lancio**: nome del lancio. Scegli un nome che possa essere facilmente riconosciuto dagli autori.
    * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione consente di ottenere questo risultato impostando il lancio come [live copy](/help/sites-administering/msm.md).
 
       Per impostazione predefinita, questa opzione è selezionata.
 
@@ -97,8 +97,8 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
 
-   * Dalla [****console Lanci](/help/sites-authoring/launches.md#the-launches-console)
-   * da [**Riferimenti **nella console** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * Dalla [**** console Lanci](/help/sites-authoring/launches.md#the-launches-console)
+   * da [**Riferimenti** nella console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
@@ -135,7 +135,7 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 
 #### Creazione di un lancio nidificato: console Lanci {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+La creazione di un lancio nidificato dalla console **Lanci** è sostanzialmente la stessa procedura utilizzata per creare qualsiasi altra forma di avvio, con l&#39;eccezione che è necessario passare al ramo avvii `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
 1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
