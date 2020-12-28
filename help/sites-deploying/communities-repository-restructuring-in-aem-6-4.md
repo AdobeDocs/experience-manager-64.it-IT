@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Ristrutturazione del repository per  AEM Communities in 6.4{#repository-restructuring-for-aem-communities-in}
 
-Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Communities. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina [Ristrutturazione del repository principale di AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Communities. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 **Con aggiornamento 6.4**
 
@@ -54,7 +54,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>La migrazione manuale è necessaria se si desidera passare al nuovo percorso in "<code>/apps/settings</code>". È possibile utilizzare Granite Configuration Manager per eseguire la migrazione.</p> <p>È possibile eseguire la migrazione impostando la proprietà <code>mergeList</code> su <code>true</code> sul nodo "<code>/libs/settings/community/subscriptions</code>" e aggiungendo un nodo <code>nt:unstructured</code> secondario.</p> </td> 
+   <td><p>La migrazione manuale è necessaria se si desidera passare al nuovo percorso in "<code>/apps/settings</code>". È possibile utilizzare Granite Configuration Manager per eseguire la migrazione.</p> <p>È possibile eseguire la migrazione impostando la proprietà <code>mergeList</code> su <code>true</code> sul nodo "<code>/libs/settings/community/subscriptions</code>" e aggiungendo un nodo secondario <code>nt:unstructured</code>.</p> </td> 
   </tr>
   <tr>
    <td><strong>Note</strong></td> 
@@ -77,7 +77,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>La migrazione manuale è necessaria se si desidera passare al nuovo percorso in "<code>/apps/settings</code>". È possibile utilizzare Granite Configuration Manager per eseguire la migrazione.</p> <p>È possibile eseguire la migrazione impostando la proprietà <code>mergeList</code> su <code>true</code> sul nodo "<code>/libs/settings/community/subscriptions</code>" e aggiungendo un nodo <code>nt:unstructured</code> secondario.</p> </td> 
+   <td><p>La migrazione manuale è necessaria se si desidera passare al nuovo percorso in "<code>/apps/settings</code>". È possibile utilizzare Granite Configuration Manager per eseguire la migrazione.</p> <p>È possibile eseguire la migrazione impostando la proprietà <code>mergeList</code> su <code>true</code> sul nodo "<code>/libs/settings/community/subscriptions</code>" e aggiungendo un nodo secondario <code>nt:unstructured</code>.</p> </td> 
   </tr>
   <tr>
    <td><strong>Note</strong></td> 
@@ -86,7 +86,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Configurazioni di Watchwords {#watchwords-configurations}
+### Configurazioni Watchwords {#watchwords-configurations}
 
 <table> 
  <tbody>
@@ -100,7 +100,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td>È disponibile un'attività di migrazione Lazy per ripulire le configurazioni Community.<br /> <p>L'attività sposta le parole d'ordine da <code>/etc/watchwords</code> a <code>/conf/global/settings/community/watchwords</code>.</p> <p>Se le parole di controllo personalizzate sono memorizzate in SCM, devono essere distribuite in <code>/apps/settings/...</code> e occorre assicurarsi che non vi sia una <code>/conf/global/settings/...</code> configurazione sovrapposta che abbia la precedenza.</p> <p>L'attività di migrazione rimuove <code>/etc</code> le posizioni.</p> </td> 
+   <td>È disponibile un'attività di migrazione Lazy per ripulire le configurazioni community.<br /> <p>L'attività sposta le parole d'ordine da <code>/etc/watchwords</code> a <code>/conf/global/settings/community/watchwords</code>.</p> <p>Se le parole d'ordine personalizzate sono memorizzate in SCM, devono essere distribuite su <code>/apps/settings/...</code> e occorre assicurarsi che non vi sia una configurazione sovrapposta <code>/conf/global/settings/...</code> che abbia la precedenza.</p> <p>L'attività di migrazione rimuove le posizioni <code>/etc</code>.</p> </td> 
   </tr>
   <tr>
    <td><strong>Note</strong></td> 
@@ -127,13 +127,13 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
    <td><p>È richiesta la migrazione manuale.</p> <p>Se la tua istanza ha personalizzato le regole di assegnazione dei badging/punteggio, non esiste un modo automatico per posizionare tutte le regole sotto un bucket. Hai bisogno di input da parte del cliente sul quale desideri usare il bucket conf (globale o specifico) per il tuo sito.</p> <p>Nessuna interfaccia utente disponibile per configurare il contrassegno e il punteggio per un sito.</p> <p>Per allineare con la nuova struttura del repository:</p> 
     <ol> 
-     <li>Creare un bucket di contesto del sito utilizzando il browser <strong>di</strong> configurazione in <strong>Strumenti</strong></li> 
+     <li>Creare un bucket di contesto del sito utilizzando il <strong>browser di configurazione</strong> in <strong>Strumenti</strong></li> 
      <li>Vai alla directory principale del sito</li> 
-     <li>Impostate <code>cq:confproperty</code> il percorso del bucket in cui desiderate memorizzare tutte le impostazioni. Lo stesso può essere impostato tramite la procedura guidata di <strong>modifica del sito - Imposta input</strong>configurazione cloud.</li> 
-     <li>Sposta le regole di contrassegno e di punteggio pertinenti dal bucket <code>/etc/community/*</code> del contesto del sito creato nel passaggio precedente.</li> 
+     <li>Impostare <code>cq:confproperty</code> sul percorso del bucket in cui si desidera memorizzare tutte le impostazioni. Lo stesso può essere impostato tramite il sito <strong>Modifica guidata - Imposta input configurazione cloud</strong>.</li> 
+     <li>Sposta le regole di contrassegno e di punteggio pertinenti da <code>/etc/community/*</code> al bucket del contesto del sito creato nel passaggio precedente.</li> 
      <li>Regola le proprietà Regole di contrassegno e Regole di punteggio nella directory principale del sito per disporre di riferimenti relativi alle nuove posizioni delle regole. 
       <ol> 
-       <li>Ad esempio, se la proprietà per <code>cq:conf = /conf/we-retail</code>, <code>badgingRules [] = community/badging/rules</code> se le regole ora sono spostate in questo nuovo bucket.</li> 
+       <li>Ad esempio, se la proprietà per <code>cq:conf = /conf/we-retail</code>, <code>badgingRules [] = community/badging/rules</code> se le regole ora vengono spostate in questo nuovo bucket.</li> 
       </ol> </li> 
      <li>Analogamente, regolare i riferimenti alle regole di punteggio in un nodo di regola contrassegno per ottenere un percorso relativo.</li> 
     </ol> <p> </p> <p>Infine, pulite la risorsa rimuovendo <code>/etc/community/badging</code></p> </td> 
@@ -168,7 +168,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Facebook Social Login Configurations {#facebook-social-login-configurations}
+### Configurazioni di accesso tramite social network di Facebook {#facebook-social-login-configurations}
 
 <table> 
  <tbody>
@@ -187,10 +187,10 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
     <ol> 
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol> 
-       <li>Potete ricreare manualmente nuove configurazioni di accesso tramite social network di Facebook tramite l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione</strong>accesso tramite social network di Facebook.<br /> o <br /> </li> 
+       <li>Ricreate manualmente le nuove configurazioni di accesso tramite social network di Facebook tramite l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione accesso tramite social network di Facebook</strong>.<br /> o <br /> </li> 
        <li>Copia le nuove configurazioni di Facebook Cloud da Posizione precedente alla nuova posizione appropriata, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso tramite social network di Facebook impostando la <code>[cq:Page]/jcr:content@cq:conf</code> proprietà sul percorso assoluto nella nuova posizione.</li> 
+     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso tramite social network di Facebook impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li> 
      <li>Separate il Cloud Service di Facebook Connect legacy da qualsiasi  directory principale del sito AEM Communities aggiornata per fare riferimento alla nuova posizione.</li> 
     </ol> </td> 
   </tr>
@@ -224,7 +224,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Pinterest Social Login Configurations {#pinterest-social-login-configurations}
+### Configurazioni di accesso tramite social network Pinterest {#pinterest-social-login-configurations}
 
 <table> 
  <tbody>
@@ -243,10 +243,10 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
     <ol> 
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol> 
-       <li>Potete ricreare manualmente le nuove configurazioni di accesso tramite social network Pinterest mediante l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione</strong>accesso tramite social network Pinterest.<br /> o</li> 
+       <li>Create manualmente nuove configurazioni di accesso tramite social network Pinterest tramite l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione accesso tramite social network Pinterest</strong>.<br /> o</li> 
        <li>Copiate le nuove configurazioni di Pinterest Cloud dalla posizione precedente alla nuova posizione appropriata in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso tramite social network Pinterest impostando la <code>[cq:Page]/jcr:content@cq:conf</code> proprietà sul percorso assoluto nella nuova posizione.</li> 
+     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso tramite social network Pinterest impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li> 
      <li>Separate il Cloud Service Pinterest Connect legacy da qualsiasi  directory principale del sito AEM Communities aggiornata in base alla nuova posizione.</li> 
     </ol> </td> 
   </tr>
@@ -271,15 +271,15 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Per allineare con la nuova struttura del repository, è possibile memorizzare le regole di punteggio in <code>/apps/settings/</code> o /<code>conf/.../settings</code></p> 
+   <td><p>Per allineare con la nuova struttura del repository, le regole di punteggio possono essere memorizzate in <code>/apps/settings/</code> o /<code>conf/.../settings</code></p> 
     <ol> 
-     <li>Ad <code>/apps/settings</code>esempio, si tratterebbe di regole globali o predefinite gestite in SCM.</li> 
+     <li>Per <code>/apps/settings</code>, si tratterebbe di regole globali o predefinite gestite in SCM.</li> 
     </ol> <p>Crea configurazioni basate sul contesto in <code>/conf/</code> utilizzando CRXDELite:</p> 
     <ol> 
-     <li>Creare le configurazioni nella posizione desiderata <code>/conf/.../settings</code><br /> </li> 
-     <li>Il sito community deve avere la proprietà <code>cq:conf </code>impostata.
+     <li>Creare le configurazioni nella posizione <code>/conf/.../settings</code> desiderata<br /> </li> 
+     <li>La proprietà <code>cq:conf </code>del sito community deve essere impostata.
       <ol> 
-       <li>Se non <code>cq:conf</code> viene impostata alcuna opzione, le regole di punteggio verranno lette direttamente dal percorso specificato per la proprietà '<code>scoringRules</code>' nel nodo principale del sito, ad esempio: <code>/content/we-retail/us/en/community/jcr:content</code></li> 
+       <li>Se non è impostata alcuna <code>cq:conf</code>, le regole di punteggio verranno lette direttamente dal percorso specificato per la proprietà '<code>scoringRules</code>' nel nodo principale del sito, ad esempio: <code>/content/we-retail/us/en/community/jcr:content</code></li> 
       </ol> </li> 
     </ol> <p>Pulizia: Rimuovere la risorsa <code>/etc/community/scoring</code></p> </td> 
   </tr>
@@ -290,7 +290,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Twitter Social Login Configurations {#twitter-social-login-configurations}
+### Configurazioni di accesso social network per Twitter {#twitter-social-login-configurations}
 
 <table> 
  <tbody>
@@ -309,10 +309,10 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
     <ol> 
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol> 
-       <li>Potete ricreare manualmente le nuove configurazioni di accesso a Twitter mediante l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione</strong>accesso a Twitter tramite social network.<br /> o <br /> </li> 
+       <li>Ricreate manualmente le nuove configurazioni di accesso a Twitter mediante l'interfaccia utente di authoring AEM in <strong>Strumenti &gt; Cloud Services &gt; Configurazione accesso a Twitter tramite social network</strong>.<br /> o <br /> </li> 
        <li>Copia le nuove configurazioni di Twitter Cloud da Posizione precedente alla nuova posizione appropriata, in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso tramite social network di Twitter impostando la <code>[cq:Page]/jcr:content@cq:conf</code> proprietà sul percorso assoluto nella nuova posizione.</li> 
+     <li>Aggiornate  radice del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network di Twitter impostando la proprietà <code>[cq:Page]/jcr:content@cq:conf</code> sul percorso assoluto nella nuova posizione.</li> 
      <li>Separate il Cloud Service precedente di Twitter Connect da qualsiasi  radice del sito AEM Communities aggiornata in riferimento alla nuova posizione.</li> 
     </ol> </td> 
   </tr>
