@@ -18,11 +18,11 @@ ht-degree: 4%
 ---
 
 
-# Definizioni delle app{#app-definitions}
+# Definizioni app{#app-definitions}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le definizioni delle app sono un modo per identificare gli spazi e altre configurazioni appropriati per l&#39;app. Le definizioni delle app consentono all&#39;utente di aggiungere spazio, senza dover ricompilare l&#39;app. La definizione dell&#39;app viene aggiornata e includerà le informazioni per eventuali nuovi spazi.
 
@@ -36,9 +36,9 @@ Le definizioni delle app sono un modo per identificare gli spazi e altre configu
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Scegliete **App** da **Mobile** e fate clic su **Crea.**
+1. Scegliere **App** da **Mobile** e fare clic su **Crea.**
 
-   Scegliete **App** a e immettete i dettagli per creare la nuova app.
+   Scegliete **App** e immettete i dettagli per creare la nuova app.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
