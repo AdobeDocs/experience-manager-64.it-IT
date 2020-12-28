@@ -36,8 +36,8 @@ Per creare una nuova versione di una pagina:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Inserisci un **Commento** (facoltativo).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. A greyed message is displayed on the page; for example:
+1. Per impostare un&#39;etichetta per la versione (facoltativo), fare clic sul pulsante **Altro >>** e impostare l&#39; **Label** in modo da assegnare un nome alla versione. Se l&#39;etichetta non è impostata, la versione è un numero incrementato automaticamente.
+1. Fare clic su **Crea versione**. Sulla pagina viene visualizzato un messaggio in grigio; ad esempio:
 
    Versione 1.2 creata per: Shirts.
 
@@ -45,7 +45,7 @@ Per creare una nuova versione di una pagina:
 >
 >Quando la pagina viene attivata, viene automaticamente creata una versione.
 
-## Ripristino di una versione di una pagina dalla barra laterale {#restoring-a-page-version-from-sidekick}
+## Ripristino di una versione di una pagina dalla barra laterale  {#restoring-a-page-version-from-sidekick}
 
 Per ripristinare una versione precedente della pagina:
 
@@ -71,7 +71,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una pagina
 
 1. Seleziona la versione da ripristinare e fai clic su **Ripristina**. AEM ripristina le versioni o gli alberi selezionati.
 
-### Ripristino di una struttura ad albero dalla console {#restoring-a-tree-from-the-console}
+### Ripristino di una struttura ad albero dalla console  {#restoring-a-tree-from-the-console}
 
 Questo metodo può essere utilizzato per ripristinare una versione di una pagina o pagine precedentemente eliminate:
 
@@ -83,12 +83,12 @@ Questo metodo può essere utilizzato per ripristinare una versione di una pagina
 
 1. Fai clic su **Ripristina**. AEM ripristina la struttura ad albero selezionata.
 
-## Confronto con una versione precedente {#comparing-with-a-previous-version}
+## Confronto con una versione precedente  {#comparing-with-a-previous-version}
 
 Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nel browser, apri la pagina da confrontare con una versione precedente.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. Nella barra laterale selezionate la scheda **Gestione versioni**, quindi la sottoscheda **Ripristina versione** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -103,7 +103,7 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nella barra laterale seleziona la sottoscheda **Ripristina versione** e fai clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
 
-## Timewarp   {#timewarp}
+## Timewarp    {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
@@ -120,7 +120,7 @@ Per effettuare ciò:
 >
 >Se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css, immagini ecc.) per la riproduzione del sito Web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nella directory archivio.
 
-### Utilizzo del calendario Timewarp {#using-the-timewarp-calendar}
+### Utilizzo del calendario Timewarp  {#using-the-timewarp-calendar}
 
 Timewarp è disponibile dalla barra laterale.
 
