@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile è solo uno dei pilastri che compongono la piattaforma AEM completa.
 
@@ -33,7 +33,7 @@ L&#39;avvio di una nuova esperienza  app AEM Mobile richiede una coesione di ruo
 
 ## Creazione di applicazioni PhoneGap {#authoring-phonegap-applications}
 
-Un ***AEM Author *(o*Marketer *)**può utilizzare i modelli e i componenti predefiniti per aggiungere e modificare pagine, trascinare componenti e aggiungere supporti di tutti i tipi dal DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto).
+Un ***AEM Author* (o *Marketer*)**è in grado di utilizzare i modelli e i componenti predefiniti per aggiungere e modificare pagine, componenti drag and drop e aggiungere contenuti multimediali di tutti i tipi da DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto).
 
 Per iniziare, consulta le risorse seguenti:
 
@@ -45,7 +45,7 @@ Per iniziare, consulta le risorse seguenti:
 * [Creazione di una nuova app  AEM Mobile tramite la creazione guidata](/help/mobile/phonegap-create-new-app.md)
 * [Importare un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Per informazioni su **Content Services**, consulta Panoramica [di](/help/mobile/develop-content-as-a-service.md) Content Services.
+Per informazioni su **Content Services**, vedere [Panoramica sui servizi di contenuto](/help/mobile/develop-content-as-a-service.md) per iniziare.
 
 ## Risorse aggiuntive {#additional-resources}
 
