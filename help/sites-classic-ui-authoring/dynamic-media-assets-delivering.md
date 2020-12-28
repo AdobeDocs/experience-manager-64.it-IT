@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
 
-La modalità di distribuzione delle risorse per contenuti multimediali dinamici, sia video che immagini, dipende dall’implementazione del sito Web.
+La modalità di distribuzione delle risorse Dynamic Media (video e immagini) dipende dalla modalità di implementazione del sito Web.
 
 Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
