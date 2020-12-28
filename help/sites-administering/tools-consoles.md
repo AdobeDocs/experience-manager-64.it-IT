@@ -20,7 +20,7 @@ ht-degree: 36%
 
 # Console Strumenti{#tools-consoles}
 
-Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. A seconda dell’interfaccia in uso, la console **Strumenti** offre due funzioni:
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Esistono attualmente due versioni della console **Strumenti** a seconda dell&#39;interfaccia in uso:
 
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
@@ -42,12 +42,12 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   <tr> 
    <td>Configurazioni ClientContext<br /> </td> 
    <td> </td> 
-   <td>Client Context <a href="/help/sites-developing/client-context.md"></a> rappresenta una raccolta di dati utente assemblata in modo dinamico. Le configurazioni predefinite e di Marketing Cloud si trovano qui.<br /> </td> 
+   <td>Il <a href="/help/sites-developing/client-context.md">Client Context</a> rappresenta una raccolta di dati utente assemblata in modo dinamico. Le configurazioni predefinite e di Marketing Cloud si trovano qui.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configurazioni servizi cloud<br /> </td> 
    <td> </td> 
-   <td>Contiene le configurazioni relative all' <a href="/help/sites-administering/marketing-cloud.md">integrazione con l'Adobe Marketing Cloud</a>.</td> 
+   <td>Contiene configurazioni relative a <a href="/help/sites-administering/marketing-cloud.md">Integrazione con Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
@@ -60,12 +60,12 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Consente l'accesso alle informazioni sui diritti digitali e alle licenze.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Health Checker<br /> </td> 
+   <td>DAM - Controllo integrità<br /> </td> 
    <td> </td> 
-   <td>Confronta <code>/var/dam</code> e <code>/content/dam</code> verifica<br /> eventuali incoerenze. È quindi possibile sincronizzare o eliminare tutti i file/cartelle elencati. I tipi di nodo per il confronto delle cartelle sono configurabili nella console Web.</td> 
+   <td>Confronta <code>/var/dam</code> e <code>/content/dam</code> e verifica eventuali incongruenze. <br /> È quindi possibile sincronizzare o eliminare tutti i file/cartelle elencati. I tipi di nodo per il confronto delle cartelle sono configurabili nella console Web.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Indesign Adobe<br /> </td> 
+   <td>DAM -  Adobe Indesign<br /> </td> 
    <td> </td> 
    <td>Script da utilizzare insieme a  Adobe Indesign.</td> 
   </tr> 
@@ -95,7 +95,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Contiene l'elenco degli invii di moduli ricevuti.</td> 
   </tr> 
   <tr> 
-   <td>Importatori - Editor <a href="/help/sites-administering/bulk-editor.md">di massa</a></td> 
+   <td>Importatori - <a href="/help/sites-administering/bulk-editor.md">Bulk Editor</a></td> 
    <td> </td> 
    <td>Consente di cercare gli elementi e modificarli in blocco. Potete anche esportare e importare contenuti (in blocco) nella directory archivio.</td> 
   </tr>
@@ -130,7 +130,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Un collegamento alternativo a Gestione pacchetti che mostra i pacchetti caricati per AEM WCM. Simili alle informazioni visualizzate in Gestione pacchetti di CRX.</td> 
   </tr> 
   <tr> 
-   <td>Replica - Agenti <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">di replica</a></td> 
+   <td>Replica - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agenti di replica</a></td> 
    <td> </td> 
    <td>Utilizzato per replicare i dati dall’autore alla pubblicazione al momento della pubblicazione delle pagine o con replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’autore.</td> 
   </tr> 
@@ -150,19 +150,19 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Con la funzione di scaffolding è invece possibile creare un modulo (scaffolding significa letteralmente impalcatura) con i campi necessari per creare la struttura desiderata per le pagine e quindi utilizzare il modulo per creare agevolmente pagine basate su tale struttura.</td> 
   </tr> 
   <tr> 
-   <td>Sicurezza - Configurazione <a href="/help/sites-administering/notification.md">self-service </a> </td> 
+   <td>Sicurezza - <a href="/help/sites-administering/notification.md">Configurazione self-service </a> </td> 
    <td> </td> 
    <td>Consente di configurare le e-mail che gli utenti ricevono automaticamente quando creano un account o reimpostano una password e di confermare una password che è stata reimpostata.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentazione</a></td> 
    <td> </td> 
-   <td>I visitatori che arrivano a un sito hanno interessi e obiettivi diversi. Per il successo di operazioni di marketing online, è importante comprendere tali obiettivi e soddisfare le aspettative dei visitatori. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td> 
+   <td>I visitatori che arrivano a un sito hanno interessi e obiettivi diversi. Per il successo di operazioni di marketing online, è importante comprendere tali obiettivi e soddisfare le aspettative dei visitatori. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configurazione SRP predefinita. Consultate Console <a href="/help/communities/srp-config.md">Configurazione</a> archiviazione.</td> 
+   <td>Configurazione SRP predefinita. Vedere <a href="/help/communities/srp-config.md">Console Storage Configuration</a>.</td> 
   </tr> 
   <tr> 
    <td>gestione attività</td> 
@@ -175,7 +175,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Nessuna funzionalità attiva correlata a questa voce.</td> 
   </tr> 
   <tr> 
-   <td>Gestione versioni - Versioni <a href="/help/sites-deploying/version-purging.md">di eliminazione</a></td> 
+   <td>Versioni - <a href="/help/sites-deploying/version-purging.md">Rimuovi versioni</a></td> 
    <td> </td> 
    <td>Consente di eliminare le versioni delle pagine come necessario.</td> 
   </tr> 
@@ -187,7 +187,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   <tr> 
    <td>watchwords</td> 
    <td> </td> 
-   <td>Obsoleto. Consultate <a href="/help/communities/moderate-ugc.md#watchwords">Moderazione del contenuto della community</a></td> 
+   <td>Obsoleto. Vedere <a href="/help/communities/moderate-ugc.md#watchwords">Moderazione dei contenuti della community</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Flusso di lavoro</a></td> 
