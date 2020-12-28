@@ -32,7 +32,7 @@ Ad esempio, nella vista a schede:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Ad esempio:
+Puoi modificare una pagina con l’editor di pagina. Esempio:
 
 `http://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -48,7 +48,7 @@ Puoi modificare una pagina con l’editor di pagina. Ad esempio:
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
-* il selettore [**Informazioni pagina **](/help/sites-authoring/editing-page-properties.md#page-properties), che mostrerà le diapositive introduttive (così come visualizzate al primo accesso all’editor);
+* il selettore [**Informazioni pagina**](/help/sites-authoring/editing-page-properties.md#page-properties), che mostrerà le diapositive introduttive (così come visualizzate al primo accesso all’editor);
 * la finestra di dialogo di [configurazione](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) per i componenti specifici (utilizzando l’icona ? nella barra degli strumenti della finestra di dialogo), che mostrerà le informazioni di aiuto specifiche per il contesto.
 
 Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-authoring/basic-handling.md#accessing-help).
@@ -269,13 +269,13 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 Ad esempio, quando appropriato, da **Informazioni pagina** possono essere disponibili le funzioni seguenti:
 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio.
-* [Modifica modello](/help/sites-authoring/templates.md) se la pagina è basata su un modello [modificabile](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Modifica ](/help/sites-authoring/templates.md) modello se la pagina è basata su un modello  [modificabile](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Apri nell’interfaccia](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) classica se questa opzione è stata [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
+* [Apri nell’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaccia classicase questa opzione è stata  [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina    {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
@@ -315,7 +315,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
 
-### Campi percorso   {#path-fields}
+### Campi percorso    {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-authoring/default-components.md).
 
