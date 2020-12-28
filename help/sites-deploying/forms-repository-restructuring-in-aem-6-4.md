@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Ristrutturazione dell&#39;archivio Forms in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Forms. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina [Ristrutturazione del repository principale di AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione  AEM Forms. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 **Con aggiornamento 6.4**
 
@@ -97,15 +97,15 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
 | **Posizione precedente** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
+| **Orientamenti per la ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
-### Configurazioni Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
+### Configurazioni di Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Posizione precedente** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
+| **Orientamenti per la ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
 ### Configurazioni Cloud Service Typekit {#typekit-cloud-service-configurations}
@@ -113,7 +113,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
 | **Posizione precedente** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
+| **Orientamenti per la ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
 ### Misc {#misc-1}
@@ -121,12 +121,12 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
 | **Posizione precedente** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Orientamenti per la ristrutturazione** | L’utility di migrazione dei contenuti [pigri](/help/sites-deploying/lazy-content-migration.md) da attivare dall’interfaccia utente di migrazione di Forms. |
+| **Orientamenti per la ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
 | **Posizione precedente** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nuove posizioni** | `/libs/fd/fp` |
-| **Orientamenti per la ristrutturazione** | Eventuali riferimenti ai modelli /etc dovrebbero essere aggiornati in modo da indicare le `/libs` controparti. |
+| **Orientamenti per la ristrutturazione** | Eventuali riferimenti ai modelli /etc dovrebbero essere aggiornati in modo da indicare le controparti `/libs`. |
 | **Note** | N/D |
 
