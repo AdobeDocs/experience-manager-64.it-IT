@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Gestione dei contenuti per schermi{#content-management-for-screens}
 
-Un ***Content Manager*** per  AEM Screens è un professionista creativo che lavora a stretto contatto con il marketing e conosce la campagna, il pubblico e l&#39;obiettivo. Content Manager è responsabile della creazione e dell&#39;orchestrazione dell&#39;esperienza dell&#39;utente finale sviluppando canali diversi e assegnando sequenze a un&#39;esperienza di canale temporizzata.
+Un ***Content Manager*** per  AEM Screens è un professionista creativo che lavora a stretto contatto con il marketing e conosce la campagna, il pubblico e il focus desiderato. Content Manager è responsabile della creazione e dell&#39;orchestrazione dell&#39;esperienza dell&#39;utente finale sviluppando canali diversi e assegnando sequenze a un&#39;esperienza di canale temporizzata.
 
 Content Manager per Screens progetta posizioni e pianificazioni, mantiene l&#39;integrità dei canali, esegue analisi e reporting e mantiene i profili video.
 
