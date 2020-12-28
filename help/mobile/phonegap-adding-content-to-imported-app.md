@@ -19,11 +19,11 @@ ht-degree: 0%
 ---
 
 
-# La tua app ibrida è pronta per  AEM Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
+# L&#39;app ibrida è pronta per  AEM Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Quindi hai importato la tua app Hybrid PhoneGap o Cordova in AEM, ora cosa? È probabile che desideriate aggiungere all&#39;app contenuto modificabile. Per eseguire questa attività, è necessario conoscere in modo generale la struttura di un&#39;app AEM. Un&#39;app in AEM è comunemente divisa in due parti. &#39;shell&#39; e &#39;content&#39;. La &#39;shell&#39; comprende le parti statiche dell&#39;app; come i file di configurazione PhoneGap, il framework dell&#39;app e i controlli di navigazione. I contenuti dell&#39;archivio importato vengono memorizzati come parte della shell. Nel contesto di questo documento, la shell è tutto il contenuto non AEM creato dell&#39;app PhoneGap ibrida creata dallo sviluppatore di app.
 
@@ -35,7 +35,7 @@ Per semplificare la spiegazione, utilizzeremo il Marketing Cloud AEM:  AEM Mobil
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-In questo esempio verrà creata la pagina di benvenuto dell&#39;applicazione. Guardate la fonte [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Lo sviluppatore di app ha definito una pagina di benvenuto e fornito un modello per la pagina di cui l&#39;app esegue il rendering. Qui è dove lo sviluppatore di app e AEM sviluppatore devono coordinarsi. Il percorso del modello di pagina di benvenuto nell&#39;app di riferimento ibrida è definito come &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Questo percorso è estremamente importante perché lo sviluppatore AEM creerà la propria pagina di benvenuto nell&#39;archivio AEM utilizzando lo stesso percorso.
+In questo esempio verrà creata la pagina di benvenuto dell&#39;applicazione. Date un&#39;occhiata alla fonte [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Lo sviluppatore di app ha definito una pagina di benvenuto e fornito un modello per la pagina di cui l&#39;app esegue il rendering. Qui è dove lo sviluppatore di app e AEM sviluppatore devono coordinarsi. Il percorso del modello di pagina di benvenuto nell&#39;app di riferimento ibrida è definito come &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Questo percorso è estremamente importante perché lo sviluppatore AEM creerà la propria pagina di benvenuto nell&#39;archivio AEM utilizzando lo stesso percorso.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
