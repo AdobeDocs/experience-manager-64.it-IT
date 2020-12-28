@@ -29,7 +29,7 @@ Dovete disporre dei seguenti elementi installati:
 * Adobe Experience Manager
 *  Adobe Campaign 6.1
 
-See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) for more information.
+Per ulteriori informazioni, vedere [Integrazione AEM con  Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
 ## Esempio 1: AEM a  Adobe Campaign {#example-aem-to-adobe-campaign}
 
@@ -43,11 +43,11 @@ L&#39;integrazione standard tra AEM e Campaign è basata su JSON e JSSP (pagina 
 
 In questo esempio, creeremo un nuovo file JSSP personalizzato e lo chiameremo dal lato AEM per recuperare il risultato. Può essere utilizzato, ad esempio, per recuperare dati da  Adobe Campaign o per salvare dati in  Adobe Campaign.
 
-1. In  Adobe Campaign, per creare un nuovo file JSSP, fate clic sull&#39;icona **Nuovo** .
+1. In  Adobe Campaign, per creare un nuovo file JSSP, fare clic sull&#39;icona **New**.
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Immettere il nome del file JSSP. In questo esempio, utilizzeremo **cus:custom.jssp** (ovvero nello spazio dei nomi **cus** ).
+1. Immettere il nome del file JSSP. In questo esempio, utilizzeremo **cus:custom.jssp** (il che significa che sarà nello spazio dei nomi **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -64,9 +64,9 @@ In questo esempio, creeremo un nuovo file JSSP personalizzato e lo chiameremo da
 1. Create un servlet semplice sul lato AEM per chiamare questo JSSP. In questo esempio, si presuppone quanto segue:
 
    * La connessione funziona tra AEM e Campaign
-   * Il servizio cloud della campagna è configurato in modalità **/content/geometrixx-outdoors**
+   * Il servizio cloud della campagna è configurato su **/content/geometrixx-outdoors**
 
-   L&#39;oggetto più importante in questo esempio è **GenericCampaignConnector**, che consente di chiamare (ottenere e pubblicare) i file jssp sul lato Adobe Campaign .
+   L&#39;oggetto più importante in questo esempio è il **GenericCampaignConnector**, che consente di chiamare (ottenere e pubblicare) i file jssp sul lato Adobe Campaign .
 
    Segue un piccolo frammento di codice:
 
@@ -181,15 +181,15 @@ l&#39;API è:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-La fine dell&#39;URL **.1.json** può essere sostituita da **.2.json**, **.3.json**, in base al numero di livelli secondari che si è interessati a ottenere Per ottenere tutti loro la parola chiave **infinity** può essere utilizzata:
+La fine dell&#39;URL **.1.json** può essere sostituita da **.2.json**, **.3.json**, in base al numero di sottolivelli che si desidera ottenere Per ottenere tutti questi livelli è possibile utilizzare la parola chiave **infinity**:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Ora, per utilizzare l&#39;API, dobbiamo sapere che AEM, per impostazione predefinita, utilizza l&#39;autenticazione di base.
 
-Una libreria JS denominata **amcIntegration.js** è disponibile in 6.1.1 (build 8624 e versioni successive) che implementa tale logica tra diverse altre.
+Una libreria JS denominata **amcIntegration.js** è disponibile in 6.1.1 (build 8624 e versioni successive) che implementa tale logica tra le altre.
 
-### chiamata API AEM {#aem-api-call}
+### AEM chiamata API {#aem-api-call}
 
 ```java
 loadLibrary("nms:amcIntegration.js");
