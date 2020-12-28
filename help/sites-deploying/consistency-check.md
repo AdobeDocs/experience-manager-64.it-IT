@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Controlli di coerenza e di transito{#consistency-and-traversal-checks}
+# Verifiche di coerenza e di transito{#consistency-and-traversal-checks}
 
 Quando si esegue l’aggiornamento possono verificarsi problemi a causa di incoerenze nell’area di lavoro. È possibile eseguire un aggiornamento di test per verificare se si tratta di un problema, oppure eseguire controlli di coerenza come azione preventiva.
 
@@ -37,7 +37,7 @@ Per eseguire una verifica di coerenza, andate alla pagina di amministrazione per
 
 **Strumenti > Console Web > Principale (nella barra dei menu) > JMX > com.adobe.granite (Repository)**
 
-In un&#39;installazione predefinita, si trova qui:  **[|Mostra utente|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+In un&#39;installazione predefinita, si trova qui:  **[|Mostra|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 Nella sezione **Operazioni** della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fare clic sull&#39;operazione e immettere i parametri desiderati.
 
