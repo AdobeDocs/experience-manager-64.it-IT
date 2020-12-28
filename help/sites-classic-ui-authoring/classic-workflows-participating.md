@@ -71,7 +71,7 @@ Dopo aver eseguito l&#39;azione indicata è possibile completare l&#39;elemento 
 
 1. Fai clic su **OK** per confermare l’azione.
 
-### Delega di un passaggio partecipante {#delegating-a-participant-step}
+### Delega di un passaggio partecipante  {#delegating-a-participant-step}
 
 Segui la procedura riportata di seguito per delegare l&#39;elemento di lavoro.
 
@@ -82,7 +82,7 @@ Segui la procedura riportata di seguito per delegare l&#39;elemento di lavoro.
 
 1. Fai clic su **OK** per confermare l’azione.
 
-### Tornare indietro di un passaggio {#performing-step-back-on-a-participant-step}
+### Tornare indietro di un passaggio  {#performing-step-back-on-a-participant-step}
 
 Segui la procedura riportata di seguito per tornare a un passaggio precedente.
 
