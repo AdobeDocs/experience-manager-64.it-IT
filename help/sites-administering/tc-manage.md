@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# Gestione dei progetti di traduzione{#managing-translation-projects}
+# Gestione di progetti di traduzione{#managing-translation-projects}
 
 Dopo aver preparato il contenuto per la traduzione, è necessario completare la struttura della lingua creando copie della lingua mancanti e creare progetti di traduzione.
 
-I progetti di traduzione consentono di gestire la traduzione del contenuto AEM. Un progetto di traduzione è un tipo di [progetto](/help/sites-authoring/projects.md) AEM che contiene risorse da tradurre in altre lingue. Queste risorse sono le pagine e le risorse delle copie [della](/help/sites-administering/tc-prep.md) lingua create dal master della lingua.
+I progetti di traduzione consentono di gestire la traduzione del contenuto AEM. Un progetto di traduzione è un tipo di AEM [progetto](/help/sites-authoring/projects.md) che contiene risorse da tradurre in altre lingue. Queste risorse sono le pagine e le risorse delle [copie della lingua](/help/sites-administering/tc-prep.md) create dal master della lingua.
 
 Quando le risorse vengono aggiunte a un progetto di traduzione, per esse viene creato un processo di traduzione. I processi forniscono i comandi e le informazioni sullo stato utilizzati per gestire i flussi di lavoro di traduzione umana e traduzione automatica eseguiti sulle risorse.
 
@@ -46,8 +46,8 @@ I progetti e i processi di traduzione vengono creati con flussi di lavoro di pre
 
 AEM rileva se viene creato un progetto di traduzione per la traduzione iniziale del contenuto o per aggiornare le copie già tradotte. Quando create un progetto di traduzione per una pagina e indicate le copie della lingua per cui state traducendo, AEM rileva se la pagina di origine esiste già nelle copie della lingua di destinazione:
 
-* **La copia della lingua non include la pagina:** AEM questa situazione come la traduzione iniziale. La pagina viene immediatamente copiata nella copia della lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la copia direttamente nella copia della lingua.
-* **La copia della lingua include già la pagina:** AEM questa situazione come una traduzione aggiornata. Viene creato un lancio e al lancio viene aggiunta una copia della pagina, che viene inclusa nel progetto. Gli avvii consentono di rivedere le traduzioni aggiornate prima di eseguire il commit nella copia della lingua:
+* **La copia della lingua non include la pagina:** AEM considera questa situazione come la traduzione iniziale. La pagina viene immediatamente copiata nella copia della lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la copia direttamente nella copia della lingua.
+* **La copia della lingua include già la pagina:** AEM considera questa situazione come una traduzione aggiornata. Viene creato un lancio e al lancio viene aggiunta una copia della pagina, che viene inclusa nel progetto. Gli avvii consentono di rivedere le traduzioni aggiornate prima di eseguire il commit nella copia della lingua:
 
    * Quando la pagina tradotta viene importata in AEM, sovrascrive la pagina nel lancio.
    * La pagina tradotta sovrascrive la copia della lingua solo quando il lancio viene promosso.
@@ -67,7 +67,7 @@ Create progetti di traduzione in modo da poter eseguire e gestire il flusso di l
 
 È possibile specificare che sono selezionate anche le pagine figlie della pagina selezionata. In questo caso, a ciascun progetto vengono aggiunte anche copie delle pagine figlie, in modo che vengano tradotte. Quando delle pagine figlie sono associate a diverse configurazioni del framework di integrazione della traduzione, AEM crea altri progetti.
 
-Potete anche creare [manualmente progetti](#creating-a-translation-project-using-the-projects-console)di traduzione.
+È inoltre possibile [creare manualmente progetti di traduzione](#creating-a-translation-project-using-the-projects-console).
 
 **Traduzioni iniziali e aggiornamento traduzioni**
 
@@ -75,11 +75,11 @@ Il pannello Riferimenti indica se si stanno aggiornando le copie della lingua es
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoting-updated-content) prima di sovrascrivere con essa la copia della lingua. Se non esiste una copia della lingua per la pagina selezionata, viene visualizzata la scheda Crea e traduci per consentire l&#39;accesso ai comandi relativi al progetto.
+Dopo la traduzione, è possibile [rivedere la traduzione](#reviewing-and-promoting-updated-content) prima di sovrascrivere la copia della lingua con essa. Se non esiste una copia della lingua per la pagina selezionata, viene visualizzata la scheda Crea e traduci per consentire l&#39;accesso ai comandi relativi al progetto.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-### Creazione di progetti di traduzione per una nuova copia della lingua {#create-translation-projects-for-a-new-language-copy}
+### Crea progetti di traduzione per una nuova copia della lingua {#create-translation-projects-for-a-new-language-copy}
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo ai progetti di traduzione.
 
@@ -92,7 +92,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
 1. Selezionare Copie per lingua, quindi selezionare le copie per le quali si stanno traducendo le pagine di origine.
 1. Toccate o fate clic su Crea e traslazione, quindi configurate il processo di traduzione:
 
-   * Utilizzate il menu a discesa Lingue per selezionare una copia della lingua per la quale desiderate tradurre. Selezionate le lingue aggiuntive desiderate. Le lingue visualizzate nell&#39;elenco corrispondono alle radici [della lingua creata](/help/sites-administering/tc-prep.md#creating-a-language-root).
+   * Utilizzate il menu a discesa Lingue per selezionare una copia della lingua per la quale desiderate tradurre. Selezionate le lingue aggiuntive desiderate. Le lingue visualizzate nell&#39;elenco corrispondono alle [radici della lingua create](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Per tradurre la pagina selezionata e tutte le pagine figlie, selezionare Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deselezionare l’opzione.
    * Per Progetto, selezionate Crea nuovo progetto di traduzione.
    * Digitate un nome per il progetto.
@@ -101,7 +101,7 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
 
 1. Tocca o fai clic su Crea.
 
-### Creare progetti di traduzione per una copia lingua esistente {#create-translation-projects-for-an-existing-language-copy}
+### Crea progetti di traduzione per una copia lingua esistente {#create-translation-projects-for-an-existing-language-copy}
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo ai progetti di traduzione.
 
@@ -126,9 +126,9 @@ Dopo aver tradotto, è possibile [rivedere la traduzione](#reviewing-and-promoti
 
 Dopo aver creato un progetto di traduzione, puoi utilizzare il riquadro Risorse per aggiungere pagine al progetto. L’aggiunta di pagine è utile quando si includono pagine da rami diversi nello stesso progetto.
 
-Quando aggiungete delle pagine a un progetto di traduzione, le pagine vengono incluse in un nuovo processo di traduzione. Potete anche [aggiungere pagine a un processo](#adding-pages-assets-to-a-translation-job)esistente.
+Quando aggiungete delle pagine a un progetto di traduzione, le pagine vengono incluse in un nuovo processo di traduzione. È inoltre possibile [aggiungere pagine a un processo esistente](#adding-pages-assets-to-a-translation-job).
 
-Come per la creazione di un nuovo progetto, quando si aggiungono pagine, le copie delle pagine vengono aggiunte a un lancio quando necessario per evitare di sovrascrivere le copie della lingua esistenti. Consultate [Creazione di progetti di traduzione per le copie](#performing-initial-translations-and-updating-existing-translations)di lingua esistenti.
+Come per la creazione di un nuovo progetto, quando si aggiungono pagine, le copie delle pagine vengono aggiunte a un lancio quando necessario per evitare di sovrascrivere le copie della lingua esistenti. (Vedere [Creazione di progetti di traduzione per copie di lingua esistenti](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Utilizzate la console Siti per selezionare la pagina che state aggiungendo al progetto di traduzione.
 
@@ -200,7 +200,7 @@ Il tuo dizionario ora è nel tuo lavoro di traduzione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui dizionari i18n, vedere [Utilizzo di Translator per gestire i dizionari](/help/sites-developing/i18n-translator.md).
+>Per ulteriori informazioni sui dizionari i18n, consultare [Using Translator to Manage Dictionaries](/help/sites-developing/i18n-translator.md) (Utilizzo di Translator per gestire i dizionari).
 
 ## Aggiunta di tag a un processo di traduzione {#adding-tags-to-a-translation-job}
 
@@ -224,7 +224,7 @@ I tag vengono ora aggiunti al processo di traduzione.
 
 ## Visualizzazione dei dettagli del progetto di traduzione {#seeing-translation-project-details}
 
-Il riquadro Riepilogo conversione contiene le proprietà configurate per un progetto di traduzione. Oltre alle informazioni [generali sul](/help/sites-authoring/projects.md#project-info)progetto, la scheda Traduzione contiene proprietà specifiche per la conversione:
+Il riquadro Riepilogo conversione contiene le proprietà configurate per un progetto di traduzione. Oltre alle informazioni generali [sul progetto](/help/sites-authoring/projects.md#project-info), la scheda Traduzione contiene proprietà specifiche per la traduzione:
 
 * Lingua di origine: Lingua delle pagine che vengono tradotte.
 * Lingua di destinazione: Lingua in cui vengono tradotte le pagine.
@@ -262,12 +262,12 @@ La tabella seguente descrive ogni stato che un processo o un elemento del proces
 
 Per visualizzare lo stato di ciascun file nel processo, toccate o fate clic sui puntini di sospensione nella parte inferiore della sezione.
 
-## Impostazione della data di scadenza dei processi di conversione {#setting-the-due-date-of-translation-jobs}
+## Impostazione della data di scadenza dei processi di traduzione {#setting-the-due-date-of-translation-jobs}
 
 Specificare la data prima della quale il fornitore della traduzione deve restituire i file convertiti. Potete impostare la data di scadenza per il progetto o per un processo specifico:
 
-* **Progetto:** I processi di conversione nel progetto ereditano la data di scadenza.
-* **Processo:** La data di scadenza impostata per il processo ha la priorità sulla data di scadenza impostata per il progetto.
+* **Progetto: i processi di** traduzione nel progetto ereditano la data di scadenza.
+* **Processo:** la data di scadenza impostata per il processo ha la priorità sulla data di scadenza impostata per il progetto.
 
 L&#39;impostazione della data di scadenza funziona correttamente solo quando il fornitore di traduzione utilizzato supporta questa funzione.
 
@@ -314,7 +314,7 @@ L&#39;ambito funziona correttamente solo quando il fornitore di traduzione che u
 
 1. Quando lo stato del processo cambia in SCOPE_COMPLETED, nella sezione Processo di traduzione fate clic o toccate il menu dei comandi, quindi fate clic o toccate Mostra ambito.
 
-## Avvio di un processo di conversione {#starting-a-translation-job}
+## Avvio di un processo di traduzione {#starting-a-translation-job}
 
 Avviate un processo di traduzione per tradurre le pagine di origine nella lingua di destinazione. La conversione viene eseguita in base ai valori delle proprietà della sezione Riepilogo conversione.
 
@@ -331,7 +331,7 @@ Dopo aver avviato il processo di traduzione, il riquadro Processo di traduzione 
 
 ## Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
-Annullate un processo di traduzione per arrestare il processo di traduzione e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. Potete annullare un processo quando il processo ha lo stato `Committed For Translation` o `Translation In Progress` .
+Annullate un processo di traduzione per arrestare il processo di traduzione e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. Potete annullare un processo quando il processo ha lo stato `Committed For Translation` o `Translation In Progress`.
 
 1. Nella console Progetti, aprite il progetto di traduzione.
 1. Nella sezione Processo di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Annulla.
@@ -372,9 +372,9 @@ Quando il contenuto viene tradotto per una copia esistente della lingua, rivedet
 
 Per confrontare le copie della lingua con la lingua principale:
 
-1. Nella console **Siti** , individuate la copia della lingua da confrontare.
+1. Nella console **Siti**, passare alla copia della lingua da confrontare.
 1. Aprite il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**.
-1. Sotto l’intestazione **Copie** , selezionare Copie **lingua.**
+1. Sotto l&#39;intestazione **Copie** selezionare **Copie lingua.**
 1. Selezionare la copia della lingua desiderata e quindi fare clic su **Compare to Master **o **Compare to Previous **se applicabile.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
@@ -393,9 +393,9 @@ Dopo aver completato il processo, il processo ha lo stato Completato.
 
 Dopo il completamento, archiviate un processo di traduzione e non dovrete più visualizzare i dettagli sullo stato del processo. Quando archiviate il processo, la sezione Processo di traduzione viene rimossa dal progetto.
 
-## Creazione della struttura di una copia lingua {#creating-the-structure-of-a-language-copy}
+## Creazione della struttura di una copia della lingua {#creating-the-structure-of-a-language-copy}
 
-Compilate la copia per lingua in modo che contenga il contenuto della lingua principale che state traducendo. Prima di compilare la copia per lingua, è necessario aver [creato la lingua principale](/help/sites-administering/tc-prep.md#creating-a-language-root) della copia per lingua.
+Compilate la copia per lingua in modo che contenga il contenuto della lingua principale che state traducendo. Prima di compilare la copia per lingua, è necessario che sia stata creata [la lingua principale](/help/sites-administering/tc-prep.md#creating-a-language-root) della copia per lingua.
 
 1. Utilizzare la console Siti per selezionare la lingua principale della lingua principale utilizzata come origine. Ad esempio, per tradurre le pagine inglesi del Sito Demo di Geometrixx, selezionare Contenuto > Sito Demo di Geometrixx > Inglese.
 1. Sulla barra degli strumenti, fare clic o toccare Riferimenti.
@@ -419,12 +419,12 @@ Compilate la copia per lingua in modo che contenga il contenuto della lingua pri
 
 Se preferite usare la console Progetti, potete creare manualmente un progetto di traduzione.
 
-Quando create manualmente un progetto di traduzione, dovete fornire valori per le seguenti proprietà relative alla conversione oltre alle proprietà [](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)di base:
+Quando si crea manualmente un progetto di traduzione, è necessario fornire valori per le seguenti proprietà relative alla conversione oltre alle proprietà [di base](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
-* **Nome:** Nome progetto.
-* **Lingua di origine:** Lingua del contenuto di origine.
-* **Lingua di destinazione:** Lingua in cui viene tradotto il contenuto.
-* **Metodo di traduzione:** Selezionare Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
+* **Nome:Nome** progetto.
+* **Lingua di origine:** la lingua del contenuto di origine.
+* **Lingua di destinazione:** la lingua in cui viene tradotto il contenuto.
+* **Metodo di traduzione:** selezionate Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
 
 1. Nella barra degli strumenti della console Progetti, fate clic o toccate Crea.
 1. Selezionate il modello Progetto di traduzione e quindi fate clic o toccate Avanti.
