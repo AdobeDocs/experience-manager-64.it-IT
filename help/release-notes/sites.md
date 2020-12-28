@@ -18,7 +18,7 @@ ht-degree: 13%
 ---
 
 
-# AEM Sites Note sulla versione {#aem-sites-release-notes}
+#  AEM Sites Note sulla versione {#aem-sites-release-notes}
 
 ## Sites {#sites}
 
@@ -40,7 +40,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 
 ### Sviluppo di componenti e modelli {#component-amp-template-development}
 
-* Project Archetype 13+, consulta [Github per le note](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)sulla versione.
+* Project Archetype 13+, vedere [Github per le note sulla versione](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
 * HTL versione 1.3.1, consulta le [note sulla versione su Github](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
 * Core Components 2.0.4+, consulta le [note sulla versione su Github](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Sistema di stili
@@ -85,9 +85,9 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 * Aggiunta la possibilità di avviare flussi di lavoro con frammenti esperienza tramite la barra laterale della cronologia
 * La barra laterale di riferimento ora mostra dove viene utilizzato un frammento esperienza in AEM
 * La configurazione delle posizioni dei modelli ora consente agli autori di definire a livello globale o di cartella quali modelli di frammenti esperienza possono essere utilizzati
-* La ricerca sfaccettata ora supporta i filtri avanzati, come quelli pubblicati/non pubblicati, esportati nei social media e  Adobe Target
+* La ricerca su facet ora supporta i filtri avanzati, come quelli pubblicati/non pubblicati, esportati sui social media e  Adobe Target
 * È stato aggiunto l&#39;accesso a un singolo social media durante l&#39;esportazione di frammenti esperienza in Pinterest o Facebook
-* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target che possono essere utilizzate con Target Visual Experience Composer (Compositore esperienza visivo) per incorporarle in qualsiasi esperienza Target abilitata.
+* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target utilizzabili con Visual Experience Composer (Compositore esperienza visivo) di Target per incorporarle in qualsiasi esperienza abilitata per Target.
 
 ### Traduzione {#translation}
 
@@ -121,14 +121,14 @@ Per informazioni sui miglioramenti di AEM Sites 6.4, consulta i seguenti riferim
 
 ### AEM e Adobe Target  {#aem-amp-adobe-target-nbsp}
 
-* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target che possono essere utilizzate con Target Visual Experience Composer (Compositore esperienza visivo) per incorporarle in qualsiasi esperienza Target abilitata.
+* Frammenti esperienza AEM integrati con  Adobe Target. La sincronizzazione di frammenti esperienza in Target creerà offerte in  Adobe Target utilizzabili con Visual Experience Composer (Compositore esperienza visivo) di Target per incorporarle in qualsiasi esperienza abilitata per Target.
 *  Adobe Target mbox.js versione 63 ora incluso.  Adobe consiglia di passare all&#39;implementazione a at.js.
-* at.js versione 1.2.2 è ora incluso.  Adobe consiglia di utilizzare Dynamic Tag Management (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per effettuare il provisioning di at.js nel sito.
+* at.js versione 1.2.2 è ora incluso.  Adobe consiglia di utilizzare Gestione tag dinamica (DTM) o [ Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per eseguire il provisioning di at.js nel sito.
 
 ### AEM e Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5 ora incluso.  Adobe consiglia di passare all’implementazione in AppMeasurement.js
-* AppMeasurement.js 1.8.0 ora incluso.  Adobe consiglia di utilizzare Gestione tag dinamica (DTM) o [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per eseguire il provisioning di AppMeasurement.js nel sito.
+* AppMeasurement.js 1.8.0 ora incluso.  Adobe consiglia di utilizzare Gestione tag dinamica (DTM) o [ Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) per eseguire il provisioning di AppMeasurement.js nel sito.
 
 ## Add-on Communities {#communities-add-on}
 
@@ -141,5 +141,5 @@ Consulta la [pagina delle note sulla versione di Communities](/help/release-note
 * Le assegnazioni dei canali ora dispongono della data di inizio e di fine
 * Pannello dispositivo ora mostra la shell del lettore e la versione del firmware
 * Nell&#39;elenco Dashboard dispositivo viene visualizzato lo stato di connessione del lettore
-* Aggiunto il supporto Google Chrome OS per AEM Screens Player
-* Aggiunta di Microsoft Windows 10 per il lettore AEM Screens
+* È stato aggiunto il supporto Google Chrome OS per  AEM Screens Player
+* Aggiunta di Microsoft Windows 10 per  AEM Screens Player
