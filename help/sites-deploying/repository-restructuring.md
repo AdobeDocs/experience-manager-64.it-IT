@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ristrutturazione dell&#39;archivio in AEM 6.4{#repository-restructuring-in-aem}
+# Ristrutturazione del repository nella AEM 6.4{#repository-restructuring-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -38,16 +38,16 @@ Quando eseguite l&#39;aggiornamento a AEM 6.4, un ampio sottoinsieme di contenut
 * Con l&#39;aggiornamento 6.4 - una manciata delle modifiche alla ristrutturazione /etc non sono compatibili con le versioni precedenti e quindi le modifiche dovrebbero essere pianificate e implementate come parte dell&#39;aggiornamento AEM 6.4.
 * Prima dell&#39;aggiornamento 6.5 - la maggior parte delle modifiche alla ristrutturazione /etc può essere posticipata fino a qualche tempo nel futuro post-aggiornamento. Come già detto, AEM codice 6.4 continuerà a fare riferimento alle posizioni precedenti fino a quando le modifiche non saranno implementate come parte di un rilascio del cliente. Sebbene non vi sia una tempistica forzata per la quale le modifiche dovrebbero essere apportate, si consiglia che vengano effettuate prima dell&#39;aggiornamento 6.5, dal momento che le funzioni future potrebbero dipendere dalle nuove posizioni a cui si fa riferimento. Inoltre, la documentazione di una data funzione farà riferimento per convenzione alle nuove posizioni e potrebbe quindi confondere l&#39;utilizzo delle vecchie posizioni.
 
-### Orientamenti sulla ristrutturazione {#restructuring-guidance}
+### Guida alla ristrutturazione {#restructuring-guidance}
 
 Durante la pianificazione dell&#39;aggiornamento alla AEM 6.4, è necessario fare riferimento alle seguenti pagine per soluzione al fine di valutare lo sforzo di lavoro:
 
 * [Ristrutturazione del repository comune a tutte le soluzioni AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
-* [ristrutturazione del repository AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [ristrutturazione del repository AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
-* [Ristrutturazione dell&#39;archivio di contenuti multimediali dinamici di AEM Assets](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
-* [ristrutturazione del repository AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
-* [ristrutturazione del repository AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
+* [ ristrutturazione del repository AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
+* [ ristrutturazione del repository AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [ ristrutturazione dell&#39;archivio Dynamic Media di AEM Assets](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+* [ ristrutturazione del repository AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+* [ ristrutturazione del repository AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [AEM del repository di Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
 Ogni pagina contiene due sezioni corrispondenti all’urgenza delle modifiche necessarie. Qualsiasi cosa nella sezione &quot;Con l&#39;aggiornamento 6.4&quot; dovrebbe essere affrontata come parte del progetto di aggiornamento AEM 6.4. Qualsiasi elemento contenuto nell&#39;aggiornamento precedente alla versione 6.5 può essere eventualmente posticipato fino al successivo aggiornamento.
