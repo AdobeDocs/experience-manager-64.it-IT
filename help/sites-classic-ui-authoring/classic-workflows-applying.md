@@ -38,7 +38,7 @@ Quando si applica il flusso di lavoro, è necessario specificare le seguenti inf
 
 I flussi di lavoro possono essere avviati dalla console Siti web o, durante la modifica di una pagina, dalla barra laterale.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+La colonna **Stato** nella console **Siti Web** indica se un flusso di lavoro è stato applicato a una pagina:
 
 ![workflowstatus](assets/workflowstatus.png)
 
@@ -49,12 +49,12 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. Nell&#39;elenco delle pagine, seleziona la pagina, quindi fai clic su Flusso di lavoro.
 1. Nella finestra di dialogo Avvia flusso di lavoro, seleziona il flusso di lavoro da applicare. In alternativa, inserisci un commento e un titolo. Quindi fai clic su Avvia.
 
-### Avvio di un flusso di lavoro con la barra laterale {#starting-a-workflow-using-sidekick}
+### Avvio di un flusso di lavoro con la barra laterale  {#starting-a-workflow-using-sidekick}
 
 1. Apri la console Siti web. 
 1. Apri la pagina desiderata.
 1. Seleziona la scheda Flusso di lavoro dalla barra laterale.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. Espandete la finestra di dialogo **Workflow** per selezionare il **Workflow** e, facoltativamente, immettete **Workflow Title** e **Comment**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
