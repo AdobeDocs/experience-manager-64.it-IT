@@ -22,7 +22,7 @@ ht-degree: 95%
 
 La console Componenti consente di consultare tutti i componenti definiti nell’istanza e di visualizzare le informazioni chiave di ciascun componente.
 
-It can be accessed from **Tools** -> **General** -> **Components**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
+È possibile accedervi da **Strumenti** -> **Generale** -> **Componenti**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
