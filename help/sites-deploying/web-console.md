@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Console Web{#web-console}
 
-La console Web di AEM si basa sulla console [di gestione Web](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)Apache Felix. Apache Felix è uno sforzo della comunità per implementare OSGi R4 Service Platform, che include il framework OSGi e i servizi standard.
+La console Web in AEM si basa sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della comunità per implementare OSGi R4 Service Platform, che include il framework OSGi e i servizi standard.
 
 >[!NOTE]
 >
@@ -42,13 +42,13 @@ Eventuali modifiche apportate vengono applicate immediatamente al sistema in ese
 
 ## Configurazione {#configuration}
 
-La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare AEM parametri di sistema.
+La scheda **Configuration** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare AEM parametri di sistema.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta Configurazione [OSGi con la console](/help/sites-deploying/configuring-osgi.md) Web.
+>Per ulteriori informazioni, vedere [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md).
 
-Per accedere alla scheda **Configurazione** , effettuare le seguenti operazioni:
+È possibile accedere alla scheda **Configuration** tramite:
 
 * Il menu a discesa:
 
@@ -64,12 +64,14 @@ Verrà visualizzato un elenco delle configurazioni:
 
 Negli elenchi a discesa di questa schermata sono disponibili due tipi di configurazioni:
 
-* **Configurazioni** Consente di aggiornare le configurazioni esistenti. Questi hanno un&#39;identità persistente (PID) e possono essere:
+* ****
+Configurazioni: consente di aggiornare le configurazioni esistenti. Questi hanno un&#39;identità persistente (PID) e possono essere:
 
    * standard e integrale a AEM; se eliminati, i valori torneranno alle impostazioni predefinite.
    * istanze create da Configurazioni in fabbrica; queste istanze vengono create dall&#39;utente. L&#39;eliminazione rimuove l&#39;istanza.
 
-* **Configurazioni** di fabbrica Consente di creare un&#39;istanza dell&#39;oggetto di funzionalità richiesto.
+* **Configurazioni**
+di fabbrica: consente di creare un&#39;istanza dell&#39;oggetto di funzionalità richiesto.
 
    A questo verrà assegnata un&#39;identità persistente, che verrà quindi elencata nell&#39;elenco a discesa Configurazioni.
 
@@ -103,7 +105,7 @@ Potete quindi aggiornare i parametri come richiesto e:
 
 ## Bundle {#bundles}
 
-La scheda **Bundle** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda tramite uno dei seguenti metodi:
+La scheda **Bundles** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda tramite uno dei seguenti metodi:
 
 * Il menu a discesa:
 
@@ -121,7 +123,7 @@ Questa scheda consente di:
 
 * **Installazione o aggiornamento**
 
-   Potete **cercare** il file contenente il pacchetto e specificare se deve essere **avviato** immediatamente e a quale livello **** iniziale.
+   È possibile **Browse** individuare il file che contiene il pacchetto e specificare se deve iniziare **Start** immediatamente e a quale **Livello iniziale**.
 
 * **Ricarica**
 
@@ -151,7 +153,7 @@ Questa scheda consente di:
 
 >[!NOTE]
 >
->Dopo l&#39; **aggiornamento** è consigliabile eseguire un pacchetto di **aggiornamento**.
+>Dopo **Update** si consiglia di eseguire un **Refresh Packages**.
 
 ## Componenti {#components}
 
