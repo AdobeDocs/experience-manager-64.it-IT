@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Bundle OSGI{#osgi-bundles}
 
-## Utilizzo delle versioni semantiche {#use-semantic-versioning}
+## Utilizzare le versioni semantiche {#use-semantic-versioning}
 
-Le procedure ottimali per la numerazione delle versioni semantica sono disponibili all&#39;indirizzo [https://semver.org/](https://semver.org/).
+Le best practice concordate per la numerazione delle versioni semantiche sono disponibili all&#39;indirizzo [https://semver.org/](https://semver.org/).
 
-## Non incorporare più classi e vasetti di quanto strettamente necessario nei bundle OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
+## Non incorporare più classi e jar di quanto strettamente necessario nei bundle OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Le librerie comuni devono essere raggruppate in pacchetti separati. In questo modo sarà possibile riutilizzarli nei bundle. Quando racchiudete una *JAR* in un bundle OSGI, accertatevi di controllare le origini online per verificare se qualcuno l&#39;ha già fatto prima. Alcuni luoghi comuni per trovare i bundle esistenti sono: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
+Le librerie comuni devono essere raggruppate in pacchetti separati. In questo modo sarà possibile riutilizzarli nei bundle. Quando racchiudete un *JAR* in un pacchetto OSGI, verificate di aver controllato le origini online per verificare se qualcuno ha già fatto questo. Alcuni luoghi comuni per trovare i bundle esistenti sono: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
 
 ## Dipende dalle versioni bundle necessarie più basse {#depend-on-the-lowest-needed-bundle-versions}
 
@@ -36,12 +36,12 @@ Per le dipendenze in fase di compilazione nei file POM, dipende sempre dalla ver
 
 Non appena un pacchetto è stato esportato, abbiamo creato un&#39;API da cui gli altri utenti possono dipendere. Assicuratevi di esportare il meno possibile e assicuratevi che ciò che viene esportato sia un&#39;API. È molto più facile prendere un metodo/classe privato e renderlo pubblico che prendere qualcosa che è stato precedentemente esportato e renderlo privato.
 
-Le implementazioni devono sempre essere inserite in un pacchetto *completo* separato. Per impostazione predefinita, il plug-in ** maven-bundle esporta qualsiasi elemento del progetto che non abbia un *impl* nel nome.
+Le implementazioni devono sempre essere collocate in un pacchetto *impl* separato. Per impostazione predefinita, il *maven-bundle-plugin* esporta qualsiasi elemento del progetto che non abbia un *impl* nel nome.
 
-## Definire sempre in modo esplicito una versione semantica per ciascun pacchetto esportato {#always-explicitly-define-a-semantic-version-for-each-package-exported}
+## Definire sempre esplicitamente una versione semantica per ciascun pacchetto esportato {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
 In questo modo i consumatori delle API potranno evolvere insieme a voi. In questo modo, segui sempre le best practice relative alle versioni semantiche. In questo modo gli utenti dell&#39;API potranno sapere quali tipi di modifiche sono previste in una nuova versione.
 
-## Includi informazioni sul tipo di dati se esposte {#include-metatype-information-where-exposed}
+## Includi informazioni sul tipo di dati in esposizione {#include-metatype-information-where-exposed}
 
 Specificando informazioni significative per il tipo di dati, i vostri servizi e componenti saranno più facili da comprendere nella console Felix. Un elenco delle annotazioni e degli attributi SCR è disponibile all&#39;indirizzo: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
