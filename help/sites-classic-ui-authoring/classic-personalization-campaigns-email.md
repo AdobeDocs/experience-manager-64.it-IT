@@ -23,7 +23,7 @@ ht-degree: 94%
 >[!NOTE]
 >
 > Adobe non prevede di migliorare ulteriormente le e-mail aperte/rimbalzate inviate dal servizio SMTP AEM.\
->La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
+>La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
 
 Le comunicazioni di e-mail marketing, come le newsletter, sono una parte importante delle campagne marketing, in quanto utili a veicolare i contenuti verso i lead. In AEM è possibile creare newsletter a partire da contenuti AEM esistenti, nonché aggiungere nuovi contenuti specifici per le newsletter.
 
@@ -146,7 +146,7 @@ Per personalizzare una newsletter e simularne l’aspetto risultante:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `http://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -229,7 +229,7 @@ Per effettuare una prova rapida della newsletter:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `http://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -263,7 +263,7 @@ Per inviare una newsletter dalla campagna:
    >
    >Accertatevi di essere tra i destinatari, in modo da verificare personalmente che la newsletter arrivi a destinazione.
 
-### Invio delle newsletter da un elenco {#sending-newsletters-from-a-list}
+### Invio delle newsletter da un elenco  {#sending-newsletters-from-a-list}
 
 Per inviare una newsletter da un elenco:
 
@@ -293,7 +293,7 @@ Per inviare una newsletter da un elenco:
 
 Questa sezione descrive come registrarsi ad una newsletter.
 
-### Registrazione a una newsletter {#subscribing-to-a-newsletter-1}
+### Registrazione a una newsletter  {#subscribing-to-a-newsletter-1}
 
 Per effettuare la sottoscrizione a una newsletter (utilizzando come esempio il sito Web Geometrixx):
 
