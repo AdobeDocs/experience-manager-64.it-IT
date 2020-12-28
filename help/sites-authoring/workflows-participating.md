@@ -54,7 +54,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
    >[!NOTE]
    >
-   >The status bar is only visible to users with workflow privileges; for example, members of the `workflow-users` group.
+   >la barra di stato è visibile solo agli utenti con privilegi di flusso di lavoro; ad esempio, i membri del gruppo `workflow-users`.
    >
    >
    >Le azioni vengono visualizzate quando l&#39;utente è direttamente coinvolto nella fase corrente del flusso di lavoro.
@@ -79,30 +79,30 @@ Per questa azione è possibile indicare:
 * [Timeline ](#completing-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
-#### Completare un Passaggio partecipante: Casella in entrata {#completing-a-participant-step-inbox}
+#### Completare un Passaggio partecipante: Casella in entrata  {#completing-a-participant-step-inbox}
 
 Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri intervenire (tocca o fai clic sull’anteprima).
-1. Select **Complete** from the toolbar.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Selezionare **Complete** dalla barra degli strumenti.
+1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Selezionare il **Passaggio successivo** dal selettore a discesa e aggiungere un **Commento** se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Completare un Passaggio partecipante: Editor pagina {#completing-a-participant-step-page-editor}
 
 Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina da modificare](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Complete** from the status bar at the top.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Selezionare **Complete** dalla barra di stato nella parte superiore.
+1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Selezionare il **Passaggio successivo** dal selettore a discesa e aggiungere un **Commento** se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Completare un Passaggio partecipante: Timeline {#completing-a-participant-step-timeline}
 
 È possibile utilizzare la timelineper completare un passaggio e avanzare:
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page):
+1. Selezionate la pagina desiderata e aprite **Timeline** (oppure aprite **Timeline** e selezionate la pagina):
 
    ![wf-65](assets/wf-65.png)
 
@@ -116,7 +116,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Seleziona **Avanti** per confermare l&#39;azione.
 
-### Delega di un passaggio partecipante {#delegating-a-participant-step}
+### Delega di un passaggio partecipante  {#delegating-a-participant-step}
 
 Se ti è stato assegnato un passaggio, ma per qualche motivo non ti è possibile procedere, puoi delegarlo a un altro utente o gruppo.
 
@@ -138,30 +138,30 @@ Per questa azione è possibile indicare:
 * [Timeline ](#delegating-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
-#### Delegare un Passaggio partecipante: Casella in entrata {#delegating-a-participant-step-inbox}
+#### Delegare un Passaggio partecipante: Casella in entrata  {#delegating-a-participant-step-inbox}
 
 Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri intervenire (tocca o fai clic sull’anteprima).
-1. Select **Delegate** from the toolbar.
-1. Viene aperta una finestra di dialogo. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Selezionare **Delegate** dalla barra degli strumenti.
+1. Viene aperta una finestra di dialogo. Specificate il **Utente** dal selettore a discesa (che può anche essere un gruppo) e aggiungete un **Commento**, se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Delegare un Passaggio partecipante: Editor pagina {#delegating-a-participant-step-page-editor}
 
 Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina da modificare](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Delegate** from the status bar at the top.
-1. Viene aperta una finestra di dialogo. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Selezionare **Delegate** dalla barra di stato nella parte superiore.
+1. Viene aperta una finestra di dialogo. Specificate il **Utente** dal selettore a discesa (che può anche essere un gruppo) e aggiungete un **Commento**, se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Delegare un Passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}
 
 È anche possibile utilizzare la timeline per delegare e/o assegnare un passaggio:
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. Selezionate la pagina desiderata e aprite **Timeline** (oppure aprite **Timeline** e selezionate la pagina).
 1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
 
    ![wf-69](assets/wf-69.png)
@@ -170,7 +170,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
    ![wf-68](assets/wf-68.png)
 
-1. Select **Assign** to confirm the action.
+1. Selezionare **Assign** per confermare l&#39;azione.
 
 ### Tornare indietro di un passaggio {#performing-step-back-on-a-participant-step}
 
@@ -188,31 +188,31 @@ Per questa azione è possibile indicare:
 * [Timeline ](#performing-step-back-on-a-participant-step-timeline)
 * all&#39;[apertura di un elemento del flusso di lavoro per visualizzarne i dettagli](#opening-a-workflow-item-to-view-details-and-take-actions).
 
-#### Eseguire un passo indietro su un Passaggio partecipante: Casella in entrata {#performing-step-back-on-a-participant-step-inbox}
+#### Eseguire un passo indietro su un Passaggio partecipante: Casella in entrata  {#performing-step-back-on-a-participant-step-inbox}
 
 Utilizza la seguente procedura per fare un passo indietro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri intervenire (tocca o fai clic sull’anteprima).
-1. Select **Step Back** to open the dialog.
+1. Selezionare **Indietro** per aprire la finestra di dialogo.
 
-1. Specify the **Previous Step** and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Specificare il **Passaggio precedente** e aggiungere un **Commento** se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Eseguire un passo indietro su un Passaggio partecipante: Editor pagina {#performing-step-back-on-a-participant-step-page-editor}
 
 Utilizza la seguente procedura per fare un passo indietro:
 
 1. Apri la [pagina da modificare](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Step Back** from the status bar at the top.
-1. Specify the **Previous Step** and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Selezionare **Indietro** dalla barra di stato nella parte superiore.
+1. Specificare il **Passaggio precedente** e aggiungere un **Commento** se necessario.
+1. Utilizzare **OK** per completare il passaggio (oppure selezionare **Annulla** per interrompere l&#39;azione).
 
 #### Eseguire un passo indietro su un Passaggio partecipante: Timeline {#performing-step-back-on-a-participant-step-timeline}
 
 È anche possibile utilizzare la timeline per tornare a un passaggio precedente:
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. Selezionate la pagina desiderata e aprite **Timeline** (oppure aprite **Timeline** e selezionate la pagina).
 1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Ripristina versione precedente**:
 
    ![wf-69-1](assets/wf-69-1.png)
@@ -221,7 +221,7 @@ Utilizza la seguente procedura per fare un passo indietro:
 
    ![wf-70](assets/wf-70.png)
 
-1. Select **Roll back** to confirm the action.
+1. Selezionare **Indietro** per confermare l&#39;azione.
 
 ### Aprire un elemento del flusso di lavoro per visualizzare i dettagli (e Intraprendere Azioni) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -250,26 +250,26 @@ I dettagli del flusso di lavoro vengono visualizzati in schede e le relative azi
 * [Casella in entrata](#performing-step-back-on-a-participant-step-inbox)
 * [Editor pagina](#performing-step-back-on-a-participant-step-page-editor)
 
-#### Aprire dei dettagli del flusso di lavoro: Casella in entrata {#opening-workflow-details-inbox}
+#### Aprire dei dettagli del flusso di lavoro: Casella in entrata  {#opening-workflow-details-inbox}
 
 Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri intervenire (tocca o fai clic sull’anteprima).
-1. Select **Open** to open the information tabs.
+1. Selezionare **Apri** per aprire le schede delle informazioni.
 
 1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
-1. Use **Save** or **Cancel** to exit.
+1. Utilizzare **Save** o **Cancel** per uscire.
 
 #### Apertura dei dettagli del flusso di lavoro: Editor pagina {#opening-workflow-details-page-editor}
 
 Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la [pagina da modificare](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **View Details** from the status bar to open the information tabs.
+1. Selezionate **Visualizza dettagli** dalla barra di stato per aprire le schede delle informazioni.
 
 1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
-1. Use **Save** or **Cancel** to exit.
+1. Utilizzare **Save** o **Cancel** per uscire.
 
 ### Visualizzare il Payload flusso di lavoro (Risorse Multiple) {#viewing-the-workflow-payload-multiple-resources}
 
@@ -279,7 +279,7 @@ Per visualizzare il carico utile e le risorse del singolo flusso di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri intervenire (tocca o fai clic sull’anteprima).
-1. Select **View Payload** from the toolbar to open the dialog.
+1. Selezionare **Visualizza payload** dalla barra degli strumenti per aprire la finestra di dialogo.
 
    Poiché un pacchetto di flusso di lavoro è semplicemente un insieme di puntatori ai percorsi all&#39;interno della libreria, è possibile aggiungere, rimuovere e modificare le voci qui indicate per regolare i riferimenti del pacchetto del flusso di lavoro. Usa il componente **Definizione risorsa** per aggiungere nuove voci.
 
