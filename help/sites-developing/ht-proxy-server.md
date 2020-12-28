@@ -45,11 +45,11 @@ Avviate il server dalla riga di comando:
 
 `<host>`
 
-Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui si desidera connettersi. Se l&#39;istanza si trova nel computer locale, lo sarà `localhost`.
+Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui si desidera connettersi. Se l&#39;istanza si trova nel computer locale, sarà `localhost`.
 
 `<remoteport>`
 
-Si tratta della porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza AEM di creazione installata è `4502`.
+Si tratta della porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione AEM installata è `4502`.
 
 `<localport>`
 
@@ -99,7 +99,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Mostra il numero di byte passati tra client ( `C`) e server ( `S`) sulla 6a connessione e alla velocità media.
+Questo mostra il numero di byte passati tra client ( `C`) e server ( `S`) sulla 6a connessione e alla velocità media.
 
 **Esempio di output di registro**
 
@@ -129,11 +129,11 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Presupponendo che l&#39;istanza AEM sia in esecuzione su `localhost:4502` avvieremo il proxy come segue:
+Presupponendo che l&#39;istanza AEM sia in esecuzione su `localhost:4502`, avvieremo il proxy come segue:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ora è possibile accedere all&#39;istanza CQ/CRX tramite il proxy `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate `test.log`.
+Ora è possibile accedere all&#39;istanza CQ/CRX tramite il proxy su `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate su `test.log`.
 
 Se ora guardiamo l&#39;output del proxy, vedremo l&#39;interazione tra il browser e l&#39;istanza AEM.
 
@@ -165,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-L&#39;istanza AEM risponde al contenuto del file `test.html`:
+L&#39;istanza AEM risponde con il contenuto del file `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -232,5 +232,5 @@ Se si verificano richieste sporgenti di tanto in tanto:
 
 * Avviate il proxy.
 * Attendi o scrivi il registro di accesso in un file con ciascuna voce con una marca temporale.
-* Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa dei problemi.
+* Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa problemi.
 
