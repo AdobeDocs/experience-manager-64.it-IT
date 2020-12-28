@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# Guida rapida a WCAG 2.0{#quick-guide-to-wcag}
 
 AEM è stato sviluppato per massimizzare la conformità alle linee guida sull&#39;accessibilità dei contenuti Web:
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+Le [Web Content Accessibility Guidelines versione 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) sono una serie di linee guida riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell&#39;ambito della [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 Le linee guida WCAG 2.0 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità. Includono suggerimenti e indicazioni per autori, designer e sviluppatori di contenuti web al fine di garantire che le risorse prodotte siano progettate in modo da essere accessibili per un pubblico che sia il più ampio possibile, indipendentemente da eventuali disabilità o limitazioni, quali disabilità visive o uditive, difficoltà di apprendimento o limiti correlati all’età.
 
@@ -36,13 +36,13 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 
 WCAG 2.0 intende fornire linee guida con le caratteristiche indicate di seguito.
 
-* Non sono **tecnologici:**
+* Non sono **agnostici della tecnologia:**
 
    In altre parole, linee guida che possono essere applicate a una serie di formati di contenuto Web, non solo HTML. Le linee guida WCAG 2.0 sono quindi applicabili anche a contenuti generati o forniti tramite PDF, Flash, JavaScript o altre tecnologie web attuali e future. Questo obiettivo è quello di affrontare una debolezza riconosciuta di WCAG 1.0, in quanto era focalizzata su HTML a scapito di altri formati di contenuto Web.
 
 * Sono **testabili:**
 
-   Ogni orientamento è redatto in modo tale da poter essere testato obiettivamente per garantire che un gruppo di esperti in materia di accessibilità concordi in generale sul fatto che la linea guida è stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno. WCAG 2.0 è stato scritto con l&#39;obiettivo di ridurre la soggettività che era presente in alcune delle linee guida WCAG 1.0 e checkpoint.
+   Ogni orientamento è redatto in modo tale da poter essere testato obiettivamente per garantire che un gruppo di esperti in materia di accessibilità concordi in generale sul fatto che la linea guida è stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno. WCAG 2.0 è stato scritto con l&#39;obiettivo di ridurre la soggettività che era presente in alcune delle linee guida e dei checkpoint WCAG 1.0.
 
 * **Implementazione contestuale e con priorità**:
 
@@ -91,13 +91,13 @@ Mentre le linee guida WCAG 2.0 rappresentano un documento stabile che non verrà
 
 ### Risorse WCAG 2.0 {#wcag-resources}
 
-* [un profilo di tutti i documenti](https://www.w3.org/WAI/intro/wcag.php)WCAG 2.0;
-* [Spiegazione del modo in cui i diversi componenti si relazionano tra loro](https://www.w3.org/WAI/intro/wcag20);
+* [un profilo di tutti i documenti](https://www.w3.org/WAI/intro/wcag.php) WCAG 2.0;
+* [Spiegazione di come i diversi componenti si relazionano tra loro](https://www.w3.org/WAI/intro/wcag20);
 * [Domande frequenti sulle linee guida WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### Tecniche per WCAG 2.0 {#techniques-for-wcag}
 
-Techniques for WCAG 2.0 are available on the [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/) page.
+Le tecniche per WCAG 2.0 sono disponibili nella pagina [Tecniche per WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/).
 
 Nella gerarchia WCAG 2.0, le **tecniche** rappresentano il livello inferiore ai criteri di successo e sono classificate da WAI come informative anziché normative. In altre parole, non è necessario seguire una tecnica specifica affinché una risorsa sia conforme a WCAG 2.0.
 
