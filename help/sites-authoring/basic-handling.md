@@ -54,7 +54,7 @@ Ogni volta che un utente accede per la prima volta a una console, viene avviata 
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!** per passare alla pagina successiva della panoramica. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+Fare clic o toccare **Capito!** per passare alla pagina successiva della panoramica. Tocca o fai clic su **Chiudi** oppure tocca o fai clic all&#39;esterno della finestra di dialogo della panoramica per chiuderla.
 
 Se non selezioni l’opzione **Non mostrare più**, la panoramica viene riavviata la prossima volta che accedi a una console.
 
@@ -190,7 +190,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Questa funzione è disponibile solo nella vista a elenco. See [list view](#list-view) for more information.
+   Questa funzione è disponibile solo nella vista a elenco. Per ulteriori informazioni, vedere [visualizzazione elenco](#list-view).
 
 * Pulsante **Crea**
 
@@ -228,7 +228,7 @@ Sono disponibili diverse risorse di Aiuto:
 
    Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine **puoi selezionare** Aiuto **](/help/sites-authoring/author-environment-tools.md#accessing-help)per accedervi di nuovo in un secondo tempo.
+   Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-authoring/author-environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
@@ -247,7 +247,7 @@ Sono disponibili diverse risorse di Aiuto:
    >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni  {#actions-toolbar}
+## Barra delle azioni   {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -267,7 +267,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide  {#quick-actions}
+## Azioni rapide   {#quick-actions}
 
 Nella [Vista a schede](#quick-actions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -290,7 +290,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse  {#selecting-resources}
+### Selezionare le risorse   {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -318,13 +318,13 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
    <td>Vista a schede<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>Desktop:<br /> Passate il puntatore del mouse, quindi utilizzate l'azione rapida con il segno di spunta</li> 
      <li>Dispositivo mobile: <br /> Tenete premuto sulla scheda</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>Desktop:<br /> Fate clic sulla scheda</li> 
+     <li>Dispositivo mobile:<br /> Toccate la scheda</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -361,7 +361,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
 1. Dopo la selezione di una risorsa, l’intestazione superiore è coperta dalla [barra delle azioni](#actions-toolbar), che permette di accedere alle azioni applicabili alla risorsa selezionata.
 
-   To exit selection mode select the **X** to the top-right.
+   Per uscire dalla modalità di selezione, selezionate la **X** in alto a destra.
 
 ### Vista a colonne {#column-view}
 
@@ -419,7 +419,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco   {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
@@ -499,7 +499,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline  {#timeline}
+### Timeline   {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
