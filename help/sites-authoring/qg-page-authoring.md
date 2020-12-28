@@ -189,7 +189,7 @@ La modalità di selezione di una pagina dipende da quale vista si sta utilizzand
    >
    >Per spostarsi mediante i collegamenti presenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Modifica delle proprietà pagina   {#editing-the-page-properties}
+## Modifica delle proprietà pagina    {#editing-the-page-properties}
 
 Esistono due metodi (principali) per [modificare le proprietà di pagina](/help/sites-authoring/editing-page-properties.md):
 
@@ -241,7 +241,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-authoring
 
    Per ulteriori informazioni, consulta [Pubblicazione di pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-## Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
+## Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina    {#move-copy-and-paste-or-delete-your-page}
 
 1. [Passa alla pagina](#finding-your-page) da spostare, copiare e incollare o eliminare.
 1. Seleziona l’icona Copia (e quindi Incolla), Sposta o Elimina, a seconda delle necessità, utilizzando:
@@ -288,9 +288,9 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 1. Tocca/fai clic sul tipo di riferimento richiesto per visualizzare maggiori dettagli e (se necessario) eseguire ulteriori azioni.
 
-## Creazione di una versione della pagina   {#creating-a-version-of-your-page}
+## Creazione di una versione della pagina    {#creating-a-version-of-your-page}
 
-1. Per aprire la barra laterale Timeline, seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)**dalla barra degli strumenti (prima o dopo aver[selezionato la pagina](#selecting-your-page-for-further-action)):
+1. Per aprire la barra laterale Timeline, seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto tra diverse versioni di una pagina:
 
-1. Seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)**dalla barra degli strumenti (prima o dopo aver[selezionato la pagina](#selecting-your-page-for-further-action)):
+1. Seleziona l’icona **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
