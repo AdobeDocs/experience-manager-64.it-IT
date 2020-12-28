@@ -39,28 +39,28 @@ Le pagine seguenti consentono di configurare l&#39;integrazione:
 * [Mappatura dei dati dei componenti con  delle proprietà Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configurazione del tracciamento video per  Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
-Potete inoltre utilizzare la procedura guidata di [consenso](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
+Per eseguire facilmente l&#39;integrazione è inoltre possibile utilizzare la [procedura guidata di consenso](/help/sites-administering/opt-in.md).
 
 >[!NOTE]
 >
->Consultate anche l’articolo introduttivo: [Integrazione di AEM con  Adobe Target e  Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consultate anche l’articolo introduttivo: [Integrazione AEM con  Adobe Target e  Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Ulteriori informazioni {#further-information}
 
 Consulta:
 
-* [Estensione della  integrazione](/help/sites-developing/extending-analytics.md) Adobe Analytics per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Adobe Analytics .
-* L&#39;articolo della knowledge base, [integrazione con Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all&#39;integrazione  Adobe Analytics.
+* [Estensione  ](/help/sites-developing/extending-analytics.md) Integrazione Adobe Analytics per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Adobe Analytics .
+* L&#39;articolo della knowledge base, [ integrazione Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all&#39;integrazione  Adobe Analytics.
 
 >[!NOTE]
 >
->Se utilizzi Adobe Analytics con una configurazione proxy personalizzata, devi [configurare due bundle OSGi](/help/sites-deploying/configuring-osgi.md) (ad esempio, con la console web), necessari per le configurazioni proxy **Apache HTTP Client**. Entrambi sono necessari, poiché alcune funzionalità di AEM utilizzano le API 3.x, mentre altre le API 4.x. Configura:
+>Se utilizzi Adobe Analytics con una configurazione proxy personalizzata, devi [configurare due bundle OSGi](/help/sites-deploying/configuring-osgi.md) (ad esempio, con la console web), necessari per le configurazioni proxy **Apache HTTP Client**. Entrambi sono necessari, poiché alcune funzionalità di AEM utilizzano le API 3.x, mentre altre le API 4.x. Configurazione:
 >
 >* **Day Commons HTTP Client 3.1** per configurare l&#39;API 3.x;\
    >  ad esempio, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configurazione** proxy dei componenti Apache HTTP per configurare l&#39;API 4.x;
+* **Configurazione proxy** dei componenti Apache HTTP per configurare l&#39;API 4.x;
 >
 >  
 ad esempio, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
