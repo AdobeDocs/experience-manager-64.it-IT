@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 ## Best practice per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
- team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori.  gli sviluppatori di Adobi aderiscono a queste best practice man mano che sviluppano aggiornamenti AEM prodotto di base e codice cliente per le implementazioni dei clienti.
+ team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori.  conformità degli sviluppatori di Adobi a queste best practice per sviluppare aggiornamenti AEM prodotti di base e codice cliente per le implementazioni dei clienti.
 
 Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le best practice seguenti:
 
@@ -82,13 +82,13 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) semplifica la creazione e la gestione di community locali.
+[AEM ](/help/communities/overview.md) Comunità semplifica la creazione e la gestione delle comunità locali.
 
 Alcune best practice per Community sono descritte di seguito:
 
 |  |  |  |
 |---|---|---|
-| Procedure ottimali per l&#39;utilizzo dei contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di codici flessibili e portatili per il quadro [delle componenti](/help/communities/scf.md) sociali (SCF). |
+| Procedure ottimali per l&#39;utilizzo dei contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di codice flessibile e portatile per il [social component framework](/help/communities/scf.md) (SCF). |
 | Esempio di utilizzo dei componenti Community | [Guida ai componenti community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
 
 ## Tooling/HTL {#tooling-htl}
@@ -103,5 +103,5 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML, introdotto con
 >[!NOTE]
 >
 >Per la procedura ottimale per l’impostazione di un nuovo progetto AEM, con i dettagli Componenti principali, Modelli modificabili, Librerie client e sviluppo di componenti potrebbe essere utile seguire un’esercitazione con più parti:\
->[Guida introduttiva ad  AEM Sites - Esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Guida introduttiva ad AEM Sites: tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
