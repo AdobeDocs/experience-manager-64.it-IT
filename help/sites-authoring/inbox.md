@@ -201,13 +201,13 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **Nome**: verrà utilizzato per formare l’URL; se vuoto, verrà basato sul **Titolo**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto  {#creating-a-project}
+## Creazione di un progetto   {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
 
