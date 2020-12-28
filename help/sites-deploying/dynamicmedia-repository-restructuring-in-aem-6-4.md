@@ -1,8 +1,8 @@
 ---
-title: Ristrutturazione dell'archivio multimediale dinamico in AEM 6.4
-seo-title: Ristrutturazione dell'archivio multimediale dinamico in AEM 6.4
-description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per gli elementi multimediali dinamici.
-seo-description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per gli elementi multimediali dinamici.
+title: Ristrutturazione dei repository Dynamic Media in AEM 6.4
+seo-title: Ristrutturazione dei repository Dynamic Media in AEM 6.4
+description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Dynamic Media.
+seo-description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.4 per Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -17,21 +17,21 @@ ht-degree: 4%
 ---
 
 
-# Ristrutturazione dell&#39;archivio multimediale dinamico in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
+# Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione Dynamic Media. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina [Ristrutturazione del repository principale di AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione Dynamic Media. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 **Aggiornamento precedente a 6.5**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
-* [Configurazione cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [Configurazione Cloud Service Dynamic Media (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Contenuti multimediali dinamici - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Configurazione di Dynamic Media (DMS7) Cloud](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
+* [Configurazione del Cloud Service Dynamic Media (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
+* [Dynamic Media - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## Aggiornamento precedente a 6.5 {#prior-to-upgrade}
 
-### Configurazioni di codifica video adattiva personalizzate  {#custom-adaptive-video-encoding-configurations}
+### Configurazioni di codifica video adattiva personalizzate {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -54,7 +54,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### Configurazione Dynamic Media (DMS7) Cloud {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -68,7 +68,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Il cliente può eseguire uno script di migrazione nel seguente percorso:<br /> </p> 
+   <td><p>Il cliente può eseguire uno script di migrazione nel percorso seguente:<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>Riavviate il bundle Dynamic Media OSGi.</li> 
@@ -81,7 +81,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Configurazione Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
+### Configurazione del Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -104,7 +104,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
  </tbody>
 </table>
 
-### Contenuti multimediali dinamici - Configurazione Cloud Service YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configurazione Cloud Service YouTube {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
