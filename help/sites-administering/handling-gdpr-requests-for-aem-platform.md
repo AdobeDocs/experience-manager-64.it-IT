@@ -15,7 +15,7 @@ ht-degree: 6%
 ---
 
 
-# Gestione delle richieste GDPR per la AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste GDPR per AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo Utente
 
 ### Passaggi manuali {#manual-steps}
 
-1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Impostazioni - Protezione - Utenti]** o sfogliando direttamente `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Impostazioni - Protezione - Utenti]** o visitando direttamente `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -37,11 +37,11 @@ A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo Utente
 
    ![usersearch](assets/usersearch.png)
 
-1. Infine, aprite il profilo utente facendo clic su di esso, quindi selezionate nella scheda **[!UICONTROL Dettagli]** .
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### HTTP API {#http-api}
+### API HTTP {#http-api}
 
 Come già detto,  Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
 
@@ -97,18 +97,18 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Apri il nodo utente in cui si trova per impostazione `[!UICONTROL /home/users]` predefinita:
+1. Apri il nodo utente che si trova in `[!UICONTROL /home/users]` per impostazione predefinita:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
 
-   1. Il profilo privato predefinito in `[!UICONTROL /profile]`
+   1. Profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.4.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### HTTP API {#http-api-1}
+### API HTTP {#http-api-1}
 
 Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
