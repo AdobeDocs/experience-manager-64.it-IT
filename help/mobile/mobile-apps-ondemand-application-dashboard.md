@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Potete gestire il contenuto dell&#39;applicazione e dell&#39;app mobile  AEM Mobile Application Dashboard o dal Centro di controllo.
 
@@ -40,7 +40,7 @@ Infine, gli amministratori pubblicano strategicamente il contenuto dell&#39;app 
 
 ## Gestisci sezione app {#the-manage-app-tile}
 
-La sezione **Gestione app** visualizza le informazioni dell&#39;applicazione disponibili:
+La sezione **Gestione app** mostra le informazioni disponibili per l&#39;applicazione:
 
 * Titolo
 * Descrizione
@@ -52,7 +52,7 @@ La sezione **Gestione app** visualizza le informazioni dell&#39;applicazione dis
 
 ## Gestisci sezione di connessione {#the-manage-connection-tile}
 
-Nella sezione **Gestisci connessione** sono visualizzate le informazioni sulla connessione AEM Mobile On-demand Services :
+La sezione **Gestisci connessione** visualizza le informazioni sulla connessione AEM Mobile On-demand Services :
 
 * Nome configurazione Coud
 * Nome progetto e ID
@@ -62,7 +62,7 @@ Nella sezione **Gestisci connessione** sono visualizzate le informazioni sulla c
 >
 >Fate clic sull&#39;ingranaggio in alto a destra per impostare una configurazione Mobile On-Demand Cloud.
 >
->Consultate [Configurazione di Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+>Per ulteriori informazioni, vedere [Configurazione di Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md).
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -78,7 +78,7 @@ Queste 3 sezioni forniscono una panoramica dello stato del contenuto di un&#39;a
 
 ### La sezione Gestisci banner {#the-manage-banners-tile}
 
-La sezione **Gestisci banner** consente di gestire il contenuto per un banner. Per un banner vengono visualizzate le informazioni seguenti:
+La sezione **Gestisci banner** consente di gestire il contenuto di un banner. Per un banner vengono visualizzate le informazioni seguenti:
 
 * immagine
 * **TITLE**: nome del banner
@@ -87,15 +87,15 @@ La sezione **Gestisci banner** consente di gestire il contenuto per un banner. P
 * **PUBBLICATO**: ultimo AEM modulo di richiesta pubblicato
 * **ORIGINE**: source (AEM locale o remoto da Mobile On Demand)
 
-L&#39;immagine seguente mostra la sezione **Gestisci banner** in  AEM Mobile Application Dashboard:
+L&#39;immagine seguente mostra la sezione **Manage Banners** in  AEM Mobile Application Dashboard:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Consultate **[Gestione dei banner](/help/mobile/mobile-on-demand-managing-banners.md)**per creare, eliminare o aggiornare i banner.
+>Per creare, eliminare o aggiornare i banner, consultate **[Gestione dei banner](/help/mobile/mobile-on-demand-managing-banners.md)**.
 
-### Sezione Gestisci articoli {#the-manage-articles-tile}
+### Gestisci articoli {#the-manage-articles-tile}
 
 La sezione **Gestisci articoli** consente di gestire il contenuto di un articolo. Per un articolo vengono visualizzate le informazioni seguenti:
 
@@ -112,11 +112,11 @@ L&#39;immagine seguente mostra la sezione **Gestisci articoli** in  AEM Mobile A
 
 >[!NOTE]
 >
->Consultate [**Gestione degli articoli **](/help/mobile/mobile-on-demand-managing-articles.md)per creare, eliminare o aggiornare gli articoli.
+>Consultate [**Gestione degli articoli**](/help/mobile/mobile-on-demand-managing-articles.md) per creare, eliminare o aggiornare gli articoli.
 
-### La Sezione Gestisci Raccolte {#the-manage-collections-tile}
+### Sezione Gestisci raccolte {#the-manage-collections-tile}
 
-Il riquadro **Gestisci raccolte** consente di gestire il contenuto di una raccolta. Per una raccolta vengono visualizzate le informazioni seguenti:
+La sezione **Gestisci raccolte** consente di gestire il contenuto per una raccolta. Per una raccolta vengono visualizzate le informazioni seguenti:
 
 * immagine
 * **TITLE**: nome della raccolta
@@ -125,13 +125,13 @@ Il riquadro **Gestisci raccolte** consente di gestire il contenuto di una raccol
 * **PUBBLICATO**: ultimo AEM modulo di richiesta pubblicato
 * **ORIGINE**: source (AEM locale o remoto da Mobile On-Demand)
 
-L&#39;immagine seguente mostra la sezione **Gestisci raccolte** in  AEM Mobile Application Dashboard:
+L&#39;immagine seguente mostra la sezione **Gestisci raccolte**  AEM Mobile Application Dashboard:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Consultate **[Gestione delle raccolte](/help/mobile/mobile-on-demand-managing-collections.md)**per creare, eliminare o aggiornare le raccolte.
+>Per creare, eliminare o aggiornare le raccolte, consultate **[Gestione delle raccolte](/help/mobile/mobile-on-demand-managing-collections.md)**.
 
 ### Passaggi successivi {#the-next-steps}
 
