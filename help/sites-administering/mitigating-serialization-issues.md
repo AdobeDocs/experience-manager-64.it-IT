@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il team AEM del Adobe  ha lavorato a stretto contatto con il progetto open source [NotSoSerial](https://github.com/kantega/notsoserial) per aiutare a ridurre le vulnerabilità descritte in **CVE-2015-7501**. NotSoSerial è concesso in licenza con la licenza [](https://www.apache.org/licenses/LICENSE-2.0) Apache 2 e include il codice ASM concesso in licenza con la propria licenza [](https://asm.ow2.org/license.html)BSD.
+Il team AEM del Adobe  ha lavorato a stretto contatto con il progetto open source [NotSoSerial](https://github.com/kantega/notsoserial) per aiutare a mitigare le vulnerabilità descritte in **CVE-2015-7501**. NotSoSerial è concesso in licenza con la [licenza Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e include il codice ASM concesso in licenza con la propria [licenza BSD](https://asm.ow2.org/license.html).
 
 L&#39;agente Jar incluso con questo pacchetto è  Adobe  distribuzione modificata di NotSoSerial.
 
@@ -30,7 +30,7 @@ NotSoSerial è una soluzione a livello Java per un problema a livello Java e non
 
 Per impostazione predefinita, l&#39;agente eseguirà un controllo di elenco Bloccati  rispetto alle classi vulnerabili attualmente note. Questo  elenco Bloccati è inteso a proteggere l&#39;utente dall&#39;elenco corrente di sfruttatori che utilizzano questo tipo di vulnerabilità.
 
-Il elenco Bloccati  e il elenco consentiti  possono essere configurati seguendo le istruzioni fornite nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
+Il elenco Bloccati  e il elenco consentiti  possono essere configurati seguendo le istruzioni fornite nella sezione [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
 
 L&#39;agente ha lo scopo di attenuare le ultime classi vulnerabili conosciute. Se il progetto sta deserializzando dati non attendibili, potrebbe comunque essere vulnerabile agli attacchi di negazione del servizio, agli attacchi di memoria esauriti e agli attacchi di deserializzazione futuri sconosciuti.
 
@@ -42,9 +42,9 @@ L&#39;agente ha lo scopo di attenuare le ultime classi vulnerabili conosciute. S
 >
 >Se avete già installato in precedenza l&#39;hotfix di serializzazione per AEM 6.1, rimuovete i comandi di avvio dell&#39;agente dalla riga di esecuzione Java.
 
-1. Installate il bundle **com.adobe.cq.cq-serialization-tester** .
+1. Installate il pacchetto **com.adobe.cq.cq-serialization-tester**.
 
-1. Passate alla console Web del pacchetto all&#39;indirizzo `https://server:port/system/console/bundles`
+1. Andate alla console Web del pacchetto all&#39;indirizzo `https://server:port/system/console/bundles`
 1. Cercate il bundle di serializzazione e avviatelo. Questo dovrebbe caricare dinamicamente l&#39;agente NotSoSerial.
 
 ## Installazione dell&#39;agente sui server applicazioni {#installing-the-agent-on-application-servers}
@@ -57,9 +57,9 @@ L&#39;agente NotSoSerial non è incluso nella distribuzione standard di AEM per 
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Andate al percorso del AEM rapido decompresso di recente e copiate la `crx-quickstart/opt/notsoserial/` cartella nella `crx-quickstart` cartella dell&#39;installazione del server AEM applicazione.
+1. Andate al percorso del AEM rapido decompresso di recente e copiate la cartella `crx-quickstart/opt/notsoserial/` nella cartella `crx-quickstart` dell&#39;installazione del server dell&#39;applicazione AEM.
 
-1. Modificate la proprietà dell&#39;utente `/opt` che esegue il server:
+1. Modificare la proprietà di `/opt` per l&#39;utente che esegue il server:
 
    ```shell
    chown -R opt <user running the server>
@@ -73,8 +73,8 @@ La configurazione predefinita è adeguata per la maggior parte delle installazio
 
 La configurazione del firewall è dinamica e può essere modificata in qualsiasi momento:
 
-1. Passate alla console Web in `https://server:port/system/console/configMgr`
-1. Ricerca e clic su Configurazione firewall **di deserializzazione.**
+1. Passate alla console Web all&#39;indirizzo `https://server:port/system/console/configMgr`
+1. Ricerca e clic su **Configurazione firewall di deserializzazione.**
 
    >[!NOTE]
    >
@@ -97,9 +97,9 @@ Nella sezione elenco blocchi sono incluse le classi che non possono essere deser
 
 Nella sezione per la registrazione diagnostica, potete scegliere diverse opzioni di registrazione quando viene eseguita la deserializzazione. Questi vengono registrati solo per il primo utilizzo e non vengono registrati di nuovo per gli usi successivi.
 
-Per impostazione predefinita, solo **nome** classe vi informa delle classi che vengono deserializzate.
+Il valore predefinito di **class-name-only** vi informerà delle classi che vengono deserializzate.
 
-Potete anche impostare l’opzione **full-stack** che registrerà uno stack Java del primo tentativo di deserializzazione per informarvi su dove si svolge la deserializzazione. Questo può essere utile per trovare e rimuovere la deserializzazione dall’utilizzo.
+Potete anche impostare l&#39;opzione **full-stack** che consente di registrare uno stack Java del primo tentativo di deserializzazione per informarvi in quale punto si trova la deserializzazione. Questo può essere utile per trovare e rimuovere la deserializzazione dall’utilizzo.
 
 ## Verifica dell&#39;attivazione dell&#39;agente {#verifying-the-agent-s-activation}
 
@@ -109,13 +109,13 @@ Per verificare la configurazione dell&#39;agente di deserializzazione, andate al
 
 Una volta effettuato l&#39;accesso all&#39;URL, viene visualizzato un elenco di controlli di integrità relativi all&#39;agente. È possibile determinare se l&#39;agente è attivato correttamente verificando che i controlli di integrità siano superati. In caso di errore, potrebbe essere necessario caricare l&#39;agente manualmente.
 
-Per ulteriori informazioni sulla risoluzione dei problemi con l&#39;agente, vedi [Gestione degli errori con il caricamento](#handling-errors-with-dynamic-agent-loading) dinamico dell&#39;agente di seguito.
+Per ulteriori informazioni sulla risoluzione dei problemi con l&#39;agente, vedere [Gestione degli errori con caricamento dinamico dell&#39;agente](#handling-errors-with-dynamic-agent-loading) di seguito.
 
 >[!NOTE]
 >
->Se si aggiunge `org.apache.commons.collections.functors` al elenco consentiti , la verifica dello stato di salute non riuscirà mai.
+>Se aggiungete `org.apache.commons.collections.functors` al elenco consentiti , il controllo dello stato di salute avrà sempre esito negativo.
 
-## Gestione degli errori con caricamento agente dinamico {#handling-errors-with-dynamic-agent-loading}
+## Gestione degli errori con caricamento dell&#39;agente dinamico {#handling-errors-with-dynamic-agent-loading}
 
 Se nel registro sono riportati degli errori o i passaggi di verifica rilevano un problema durante il caricamento dell&#39;agente, potrebbe essere necessario caricare l&#39;agente manualmente. Questo è consigliato anche nel caso in cui si utilizzi un JRE (Java Runtime Environment) invece di un JDK (Java Development Toolkit), poiché gli strumenti per il caricamento dinamico non sono disponibili.
 
@@ -133,13 +133,13 @@ Per caricare l&#39;agente manualmente, seguire le istruzioni riportate di seguit
 
    >[!NOTE]
    >
-   >La distribuzione  Adobe del Jar agente NotSoSerial si trova nella `crx-quickstart/opt/notsoserial/` cartella dell&#39;installazione AEM.
+   >La distribuzione  Adobe del Jar agente NotSoSerial si trova nella cartella `crx-quickstart/opt/notsoserial/` dell&#39;installazione AEM.
 
 1. Arrestare e riavviare la JVM;
 
-1. Verifica di nuovo l&#39;attivazione dell&#39;agente seguendo i passaggi descritti in precedenza in [Verifica dell&#39;attivazione](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation)dell&#39;agente.
+1. Verificare nuovamente l&#39;attivazione dell&#39;agente seguendo i passaggi descritti in [Verifica dell&#39;attivazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
 
 ## Altre considerazioni {#other-considerations}
 
-Se utilizzi una JVM IBM, consulta la documentazione relativa al supporto per l&#39;API Java Attach in [questa posizione](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
+Se si è in esecuzione su una JVM IBM, consultare la documentazione relativa al supporto per l&#39;API Java Attach in [questo percorso](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
 
