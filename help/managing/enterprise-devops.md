@@ -63,7 +63,7 @@ A seconda delle dimensioni del sistema, nell’ambiente di sviluppo possono esse
 
 ### Controllo qualità {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
+Questo ambiente viene utilizzato dal team di controllo della qualità per [testare ](/help/sites-developing/test-plan.md) in modo completo il nuovo sistema; progettazione e funzione. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
 
 ### Staging {#staging}
 
@@ -141,6 +141,6 @@ I contenuti di produzione devono essere spostati dall’ambiente di produzione a
 I contenuti possono essere trasferiti:
 
 * tra i diversi ambienti esportando e importando pacchetti;
-* Between different instances - by directly replicating ([AEM replication](/help/sites-deploying/replication.md)) the content (using a HTTP, or HTTPS, connection).
+* Tra istanze diverse, replicando direttamente ([AEM replica](/help/sites-deploying/replication.md)) il contenuto (mediante una connessione HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
