@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM fornisce:
 
-* [un framework per il test dell’interfaccia](/help/sites-developing/hobbes.md)utente dei componenti.
+* [un framework per il test dell’interfaccia](/help/sites-developing/hobbes.md) utente dei componenti.
 * [un meccanismo di verifica e debug dei componenti](/help/sites-developing/developer-mode.md).
 
 Di seguito sono riportati due strumenti Open Source Testing:
@@ -33,13 +33,13 @@ Di seguito sono riportati due strumenti Open Source Testing:
 
 Il selenio viene utilizzato per il test delle funzioni in un browser con un utente per attività. Registra i passaggi di test (clic) come tabelle HTML o classi Java.
 
-Per ulteriori informazioni, consultate [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Per ulteriori informazioni, vedere [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter viene utilizzato per monitorare le richieste e può essere utilizzato per test funzionali, di prestazioni e di stress.
 
-Per ulteriori informazioni, consultate [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/).
+Per ulteriori informazioni, vedere [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/).
 
 Esistono anche molti strumenti proprietari per automatizzare i test e gestire i piani di test.
 
