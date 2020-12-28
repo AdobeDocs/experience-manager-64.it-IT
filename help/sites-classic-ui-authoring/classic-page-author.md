@@ -38,9 +38,9 @@ L’ambiente di authoring offre diverse funzionalità tra cui:
 
 * **Modifica diretta** I componenti Testo e Immagine possono essere modificati direttamente sulla pagina web senza aprire alcuna finestra di dialogo e senza dover effettuare un’azione Salva.
 
-* **[Barra laterale](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**Una finestra di “ispezione” mobile visualizzata sulla pagina modificabile. È possibile trascinare nuovi componenti dalla barra laterale alla pagina ed eseguire azioni specifiche per la pagina.
+* **[Barra laterale](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** Una finestra di “ispezione” mobile visualizzata sulla pagina modificabile. È possibile trascinare nuovi componenti dalla barra laterale alla pagina ed eseguire azioni specifiche per la pagina.
 
-* **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**Disponibile a sinistra di ogni pagina che supporta la modalità di authoring, il Content Finder permette di accedere rapidamente a una serie di risorse, come quelli digitali (ad esempio altre immagini, elementi Flash e documenti), altre pagine e paragrafi. Tali elementi possono essere trascinati sulla pagina, ad esempio per inserire risorse o creare collegamenti ad altre pagine.
+* **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** Disponibile a sinistra di ogni pagina che supporta la modalità di authoring, il Content Finder permette di accedere rapidamente a una serie di risorse, come quelli digitali (ad esempio altre immagini, elementi Flash e documenti), altre pagine e paragrafi. Tali elementi possono essere trascinati sulla pagina, ad esempio per inserire risorse o creare collegamenti ad altre pagine.
 
 * **Menu di scelta rapida** Facendo clic con il pulsante destro del mouse sugli elementi visualizzati (ad esempio, sui paragrafi di una pagina), è possibile aprire il menu di scelta rapida con le azioni applicabili al contesto.
 
