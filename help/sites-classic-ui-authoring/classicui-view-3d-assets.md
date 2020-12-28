@@ -49,7 +49,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
    Vedi [Caricamento ed elaborazione di risorse 3D in AEM](/help/sites-classic-ui-authoring/classicui-upload-proc-3d.md).
 1. Da **[!UICONTROL Adobe Experience Manager]**, nella pagina di **[!UICONTROL navigazione]**, tocca **[!UICONTROL Risorse]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Vicino all&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL View]**, toccare **[!UICONTROL Card View]**.
 
 1. Accedi alla risorsa 3D da visualizzare.
 1. Tocca la scheda della risorsa 3D per aprirla nella pagina dei dettagli della risorsa.
@@ -58,9 +58,9 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
    * Nell’angolo in basso a destra della pagina dei dettagli delle risorse, utilizza la barra dei comandi della fotocamera per cambiare le varie viste delle risorse.
 
-      Se utilizzi un dispositivo di input non touch senza rotella di scorrimento, ad esempio un classico mouse Apple con un solo pulsante, puoi comunque cambiare lo zoom o la prospettiva di una risorsa 3D in ciascuna modalità. You accomplish the action by pressing and holding down the `SHIFT`key while depressing the mouse button and dragging up or down.
+      Se utilizzi un dispositivo di input non touch senza rotella di scorrimento, ad esempio un classico mouse Apple con un solo pulsante, puoi comunque cambiare lo zoom o la prospettiva di una risorsa 3D in ciascuna modalità. Per eseguire l&#39;azione, premere e tenere premuto il tasto `SHIFT`mentre si deprime il pulsante del mouse e si trascina verso l&#39;alto o il basso.
 
-      Quando utilizzi il touchpad di un computer portatile, è spesso difficile controllare lo zoom o la prospettiva mediante il gesto con due dita. In such cases, you can press and hold down `SHIFT`during the action. Questo riduce la velocità del gesto di avvicinamento delle dita e rende più semplice ottenere lo zoom o la prospettiva desiderati. Alternately, you can use a one finger drag up or down while the `SHIFT`key is pressed to affect zoom or perspective behaviors.
+      Quando utilizzi il touchpad di un computer portatile, è spesso difficile controllare lo zoom o la prospettiva mediante il gesto con due dita. In questi casi, è possibile premere e tenere premuto `SHIFT`durante l&#39;azione. Questo riduce la velocità del gesto di avvicinamento delle dita e rende più semplice ottenere lo zoom o la prospettiva desiderati. In alternativa, è possibile trascinare un dito verso l&#39;alto o il basso mentre il tasto `SHIFT`viene premuto per influenzare i comportamenti di zoom o prospettiva.
    <table> 
     <tbody> 
       <tr> 
@@ -69,17 +69,17 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>o</p> <p>Persp</p> </td> 
-      <td><p>Toccate o fate clic per alternare tra le modalità Zoom e Prospettiva.</p> <p>Oppure, tenete premuto il <code>ALT/OPTION</code> tasto durante l’azione per passare temporaneamente alla modalità Prospettiva<br /> . Rilascia il tasto per tornare alla modalità Zoom.</p> 
+      <td><p>Toccate o fate clic per alternare tra le modalità Zoom e Prospettiva.</p> <p>In alternativa, tenere premuto il tasto <code>ALT/OPTION</code> durante l'azione per passare temporaneamente alla modalità Prospettiva<br />. Rilascia il tasto per tornare alla modalità Zoom.</p> 
         <ul> 
-        <li><strong>Comportamento Zoom</strong>-Dolly in e out che avvicina o allontana la telecamera dalla risorsa<br /> che stai visualizzando. Lo zoom è il comportamento predefinito per la rotellina di scorrimento del mouse (se disponibile), per i movimenti di allontanamento o avvicinamento con due dita sui dispositivi mobili, o quando tieni premuto il tasto Maiusc mentre muovi il mouse su o giù premendo il pulsante sinistro.</li> 
+        <li><strong>Comportamento Zoom</strong>-Dolly in e out, che avvicina o allontana la telecamera dalla <br /> risorsa visualizzata. Lo zoom è il comportamento predefinito per la rotellina di scorrimento del mouse (se disponibile), per i movimenti di allontanamento o avvicinamento con due dita sui dispositivi mobili, o quando tieni premuto il tasto Maiusc mentre muovi il mouse su o giù premendo il pulsante sinistro.</li> 
         <li><strong>Prospettiva</strong>: modifica la lunghezza focale (o campo visivo) della fotocamera, mantenendo le dimensioni relative della risorsa nella vista. La prospettiva è il comportamento alternativo per la rotellina (se disponibile), per i movimenti di allontanamento o avvicinamento con due dita sui dispositivi mobili, o quando tieni premuto il tasto Maiusc mentre muovi il mouse su o giù premendo il pulsante sinistro.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbita</p> <p>o</p> <p>Pan</p> </td> 
-      <td><p>Toccate o fate clic per alternare tra le modalità Orbit e Panning.</p> <p>Oppure, tenete premuto il <code>ALT/OPTION</code> tasto durante l’azione per passare temporaneamente alla modalità scorrimento. Rilascia il tasto per tornare alla modalità Rotazione.</p> 
+      <td><p>Toccate o fate clic per alternare tra le modalità Orbit e Panning.</p> <p>Oppure, tenete premuto il tasto <code>ALT/OPTION</code> durante l'azione per passare temporaneamente alla modalità Scorrimento. Rilascia il tasto per tornare alla modalità Rotazione.</p> 
         <ul> 
-        <li><strong>Orbita</strong>- Per impostazione predefinita, sposta la telecamera di visualizzazione su una sfera centrata su un punto di destinazione vicino al centro della risorsa 3D. La rotazione è il funzionamento predefinito per il trascinamento con il pulsante sinistro o con un singolo tocco sui dispositivi mobili.</li> 
+        <li><strong>Orbita</strong> - Per impostazione predefinita, sposta la telecamera di visualizzazione su una sfera centrata su un punto di destinazione vicino al centro della risorsa 3D. La rotazione è il funzionamento predefinito per il trascinamento con il pulsante sinistro o con un singolo tocco sui dispositivi mobili.</li> 
         <li><strong>Pan</strong>-Sposta la telecamera nel piano di visualizzazione. L’obiettivo viene spostato di conseguenza, quindi le successive azioni di rotazione sposteranno la videocamera intorno a un nuovo obiettivo. Il panning è il funzionamento predefinito per il trascinamento con il pulsante sinistro o con un singolo tocco.</li> 
         </ul> </td> 
       </tr> 
@@ -87,18 +87,18 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
       <td><p>Esaminare</p> <p>o</p> <p>Destinazione</p> </td> 
       <td><p>Toccate o fate clic per alternare tra le modalità Examine e Target.</p> 
         <ul> 
-        <li><strong>Toccate o fate</strong>clic per passare alla modalità Target.</li> 
-        <li><strong>Toccate</strong>o fate clic su un punto qualsiasi della risorsa 3D per centrare la visualizzazione sulla parte della risorsa.<br /> Le azioni Rotazione utilizzano il nuovo obiettivo.</li> 
+        <li><strong>Toccate o fate</strong> clic per passare alla modalità Target.</li> 
+        <li><strong>Toccate</strong> o fate clic su un punto qualsiasi della risorsa 3D per centrare la visualizzazione sulla parte della risorsa.<br /> Le azioni Rotazione utilizzano il nuovo obiettivo.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Ripristina</td> 
-      <td>Toccate o fate clic per ripristinare il punto di destinazione della vista al centro del modello. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toccate o fate clic per ripristinare il punto di destinazione della vista al centro del modello. Il ripristino consente inoltre di spostare la telecamera<br /> più vicino o più lontano per mostrare la risorsa nella sua interezza e con dimensioni di visualizzazione ragionevoli.</td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Seleziona il nome di un’area di visualizzazione con lo sfondo e l’illuminazione che desideri applicare alla risorsa 3D.
+1. Vicino all&#39;angolo superiore destro della pagina dei dettagli della risorsa, toccate l&#39;icona **[!UICONTROL Selettore fase]**. Seleziona il nome di un’area di visualizzazione con lo sfondo e l’illuminazione che desideri applicare alla risorsa 3D.
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -106,7 +106,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
    Vedi [Utilizzo delle aree di visualizzazione in AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. Nell&#39;angolo superiore destro della pagina dei dettagli della risorsa, toccate l&#39;icona **[!UICONTROL Selettore fotocamera]**, quindi selezionate una vista fotocamera da applicare alla risorsa 3D.
 
    ![](do-not-localize/chlimage_1-3.png)
 
