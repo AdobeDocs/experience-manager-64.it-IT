@@ -1,8 +1,8 @@
 ---
 title: Problemi noti in AEM 6.4
 seo-title: Problemi noti in AEM 6.4
-description: Problemi noti in  Adobe Experience Manager 6.4
-seo-description: Problemi noti  Adobe Experience Manager 6.4.
+description: Problemi noti in Adobe Experience Manager 6.4
+seo-description: Problemi noti in Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Problemi noti {#known-issues}
 
-Questa pagina contiene un elenco dei problemi noti  Adobe Experience Manager 6.4, rilasciato nell’aprile 2018. Per ulteriori informazioni sui problemi noti, [contattate il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
+Questa pagina contiene un elenco dei problemi noti che Adobe Experience Manager 6.4 ha rilasciato ad aprile 2018. Per ulteriori informazioni sui problemi noti, [contattare il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
 
 ## Dispositivi ibridi {#hybrid-devices}
 
@@ -28,53 +28,53 @@ I dispositivi ibridi non sono supportati. Durante l&#39;utilizzo di tali disposi
 
 Se utilizzate Google Chrome come browser:
 
-* Digitate `chrome://flags/` la barra degli indirizzi e premete Invio.
+* Digitare `chrome://flags/` nella barra degli indirizzi e premere Invio.
 * Fate clic su Attiva eventi di tocco > Disattivato.
 * Riavviate il browser (tutte le schede e le finestre).
 
 Se si utilizza Mozilla Firefox come browser:
 
-* Digitate `about:config` la barra degli indirizzi e premete Invio.
+* Digitare `about:config` nella barra degli indirizzi e premere Invio.
 * Filtrare le impostazioni su `dom.w3c`.
-* Verificate che le impostazioni siano `0` e `false`.
+* Assicurarsi che le impostazioni siano `0` e `false`.
 * Riavviate il browser.
 
 Se utilizzate Microsoft Edge come browser:
 
-* Digitate `about:flags` nella barra degli indirizzi e premete Invio.
-* Scorrete fino alle funzioni Sperimentali e quindi **[!UICONTROL toccate]**.
-* Fate clic su **[!UICONTROL Abilita eventi]** di tocco.
-* Selezionare **[!UICONTROL Sempre disattivato]**.
+* Digitare `about:flags` nella barra degli indirizzi e premere Invio.
+* Scorrete fino alle funzioni sperimentali, quindi **[!UICONTROL Touch]**.
+* Fare clic su **[!UICONTROL Abilita eventi di tocco]**.
+* Selezionare **[!UICONTROL Always Off]**.
 * Riavviate il browser.
 
 ## Platform {#platform}
 
-* **Pannello operazioni:** La barra di avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
-* **HTL:** Oggetto Java Use con spazi vuoti finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
-* **Apache Felix/Sling:** File di configurazione ancora presente nell&#39;archivio anche dopo configurazione.delete() (GRANITE-20618)
+* **Pannello delle operazioni: la barra di** avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
+* **HTL:oggetto** Java Use con spazi vuoti finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling:** File di configurazione ancora presente nell&#39;archivio anche dopo configuration.delete() (GRANITE-20618)
 * **Impostazioni cloud:** Console viene interrotta dopo la modifica del contenitore di configurazione (GRANITE-20726)
-* **Sicurezza:** L&#39;integrazione IMS non riesce con il percorso contestuale personalizzato (GRANITE-20639)
-* **Sicurezza:** Migliorare la classificazione JAAS predefinita dei moduli di login SSO, esterni e predefiniti (GRANITE-20590)
-* **Tooling - CRX DE Lite:** La vista Ridge of properties continua a muoversi verso l&#39;alto (GRANITE-12040)
-* **Tooling - CRX DE Lite:** Non è possibile salvare le modifiche in &quot;Long&quot; Value Types a meno che non si faccia doppio clic su Property Name (GRANITE-12351)
+* **Protezione:integrazione** IMS non riuscita con il percorso contestuale personalizzato (GRANITE-20639)
+* **Protezione:** Migliorare la classificazione JAAS predefinita di SSO, moduli di login esterni e predefiniti (GRANITE-20590)
+* **Tooling - CRX DE Lite:** Ridge della vista delle proprietà continua a salire (GRANITE-12040)
+* **Strumenti - CRX DE Lite:** non è possibile salvare le modifiche in &quot;Long&quot; Value Types a meno che non si faccia doppio clic su Property Name (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** ctrl+F per la ricerca sui file di testo aperti si blocca nella ricerca RegExp (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F ricerca su file di testo aperti si blocca nella ricerca RegExp (GRANITE-5996)
 
-* **Tooling - CRX DE Lite:** La proprietà Node non viene visualizzata dopo aver rinominato il nodo (GRANITE-7160)
+* **Strumenti - CRX DE Lite:proprietà** Node non visualizzata dopo la ridenominazione del nodo (GRANITE-7160)
 * **Interfaccia utente:** Pulldown &quot;more...&quot; non visualizza tutti gli elementi quando viene aperto in un elemento del puntatore su IE e Firefox (GRANITE-16326)
-* **Interfaccia utente:** La descrizione delle informazioni viene nascosta quando si utilizza il layout delle colonne fisse con 2 colonne affiancate (GRANITE-16869)
-* **Interfaccia utente:** Errore non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione [implementando un gestore](/help/sites-developing/customizing-errorhandler-pages.md) di errori per personalizzare il messaggio di errore.
+* **Interfaccia utente:** La descrizione comandi Info viene nascosta quando si utilizza il layout delle colonne fisse con 2 colonne affiancate (GRANITE-16869)
+* **UI:errore** non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione per [implementazione di un gestore errori](/help/sites-developing/customizing-errorhandler-pages.md) per personalizzare il messaggio di errore.
 
-* **Omnisearch:** Ricerche con eccezione di causa barra rovesciata (GRANITE-11769)
-* **Omnisearch:** Aprite &quot;Visualizza impostazioni&quot; nella vista a elenco per cambiare il filtro di ricerca (GRANITE-16524)
-* **Omnisearch:** Elenco errato di configurazioni di colonne visualizzate durante la ricerca di risorse da Siti (GRANITE-16527)
+* **Omnisearch:** Ricerche con l&#39;eccezione di causa barra rovesciata (GRANITE-11769)
+* **Omnisearch:** Aprire &quot;Visualizza impostazioni&quot; nella vista a elenco causando la modifica del filtro di ricerca (GRANITE-16524)
+* **Omnisearch:** Elenco errato di configurazioni di colonne visualizzate durante la ricerca di Risorse da Siti (GRANITE-16527)
 
-* **Omnisearch:** I predicati della barra a sinistra vanno di pari passo con la richiesta del server Omnisearch (GRANITE-20524)
+* **Omnisearch: i predicati della barra a** sinistra stanno seguendo la richiesta del server Omnisearch (GRANITE-20524)
 * **Omnisearch:** Omnisearch non supporta i percorsi contestuali (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Ricerca**: La ricerca non restituisce alcun risultato se la stringa di ricerca inizia con uno spazio vuoto [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Ricerca**: La ricerca non restituisce alcun risultato se la stringa di ricerca inizia con uno spazio vuoto  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Ricerca**: Nell’interfaccia classica i tag non sono visibili nella ricerca (CQ-4235239)
 
@@ -94,16 +94,16 @@ Se utilizzate Microsoft Edge come browser:
 
 ## Communities {#communities}
 
-* **Moderazione** - Impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
+* **Moderazione** : impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
 
-* **Console** - Il collegamento Password o Nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
+* **Console** : il collegamento Password o Nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
 
 ## Forms {#forms}
 
 ### Installazione e implementazione
 
-* (Solo AEM Forms JEE) Quando si esegue l&#39;avvio del server applicazioni JBoss durante l&#39;esecuzione di Configuration Manager, vengono restituiti errori di chiamata EJB e di avvio automatico. Tuttavia, potete ignorarli. (Ref. CQ-4229793)
-* All&#39;avvio dei AEM Forms, viene visualizzato l&#39; `SAX Security Manager could not be setup` avviso. (CQ-4297403)
+* ( solo AEM Forms JEE) Quando si esegue l&#39;avvio del server applicazioni JBoss durante l&#39;esecuzione di Configuration Manager, vengono restituiti errori di chiamata EJB e di avvio automatico. Tuttavia, potete ignorarli. (Ref. CQ-4229793)
+* Quando  AEM Forms viene avviato, viene visualizzato l&#39;avviso `SAX Security Manager could not be setup`. (CQ-4297403)
 
 ### Comunicazioni interattive
 
@@ -136,7 +136,7 @@ Se utilizzate Microsoft Edge come browser:
 
 ### Integrazione  Adobe Sign
 
-*  pianificazione Adobe Sign smette di funzionare in modo intermittente e pertanto i moduli in attesa di firma non passano all&#39;invio. Per risolvere il problema, riavviate il bundle **Apache Sling Scheduler Support** dalla console Web AEM https://[*server*]:[*port*]/system/console/bundle.
+*  pianificazione Adobe Sign smette di funzionare in modo intermittente e pertanto i moduli in attesa di firma non passano all&#39;invio. Per risolvere il problema, riavviare il pacchetto **Apache Sling Scheduler Support** dalla console Web AEM all&#39;indirizzo https://[*server*]:[*port*]/system/console/bundle.
 
 ### Authoring Forms adattivo
 
