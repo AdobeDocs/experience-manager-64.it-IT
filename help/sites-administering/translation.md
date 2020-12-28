@@ -28,13 +28,13 @@ Automatizzate la traduzione di contenuti di pagina, risorse e contenuti generati
 
 La conversione dei contenuti comporta i seguenti passaggi:
 
-1. [Connetti AEM con il tuo provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) di servizi di traduzione e [crea configurazioni](/help/sites-administering/tc-tic.md)del framework di integrazione della traduzione.
+1. [Collega AEM al ](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) provider del servizio di traduzione e  [crea configurazioni](/help/sites-administering/tc-tic.md) del framework di integrazione della traduzione.
 
-1. [Associate le pagine del vostro master](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) lingua alle configurazioni del servizio e del framework di traduzione.
-1. [Identificare il tipo di contenuto](/help/sites-administering/tc-rules.md) da tradurre.
-1. [Preparate il contenuto per la traduzione](/help/sites-administering/tc-prep.md) creando il master della lingua e le pagine principali delle copie della lingua.
-1. [Create progetti](/help/sites-administering/tc-manage.md) di traduzione per raccogliere il contenuto da tradurre e preparare il processo di traduzione.
-1. Utilizzate i progetti di traduzione per [gestire il processo](/help/sites-administering/tc-manage.md)di traduzione del contenuto.
+1. [Associate le pagine del vostro ](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) maestro di lingua alle configurazioni del servizio di traduzione e del framework.
+1. [Identificare il tipo di ](/help/sites-administering/tc-rules.md) contenuto da tradurre.
+1. [Preparate il contenuto per la ](/help/sites-administering/tc-prep.md) traduzione creando il master della lingua e le pagine principali delle copie della lingua.
+1. [Create ](/help/sites-administering/tc-manage.md) progetti di traduzione per raccogliere il contenuto da tradurre e preparare il processo di traduzione.
+1. Utilizzate i progetti di traduzione per [gestire il processo di traduzione del contenuto](/help/sites-administering/tc-manage.md).
 
 Se il provider di servizi di traduzione non fornisce un connettore per l&#39;integrazione con AEM, AEM supporta l&#39;estrazione manuale e il reinserimento del contenuto di traduzione in formato XML.
 
@@ -44,4 +44,4 @@ Se il provider di servizi di traduzione non fornisce un connettore per l&#39;int
 
 ## Best practice   {#best-practices}
 
-La pagina [Tecniche consigliate](/help/sites-administering/tc-bp.md) per la traduzione contiene informazioni importanti sulla vostra implementazione.
+La pagina [Best practice di traduzione](/help/sites-administering/tc-bp.md) contiene informazioni importanti sull&#39;implementazione.
