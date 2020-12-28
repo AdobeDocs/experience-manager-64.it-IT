@@ -388,7 +388,7 @@ In entrambi i casi, è possibile definire il numero previsto di transazioni al s
 | Componente | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Homepage Utente Singolo | Media | 1 | 3 |  |  |
-|  | Picco | 3 | 3 |  |  |
+|  | Picco | 1 | 3 |  |  |
 | Homepage 100 utenti | Media | 100 | 3 |  |  |
 |  | Picco | 100 | 3 |  |
 
@@ -398,11 +398,11 @@ La verifica dei componenti in combinazione offre una migliore riflessione sul co
 
 | Scenario | Componente | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Media mista | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 3 |  |  |
+| Media mista | Home page | 10 | 3 |  |  |
+|  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 10 | 2 |  |  |
-|  | Eventi | 10 | 1 |  |  |
-|  | Activations | 10 | 3 |  | Simulazione del comportamento dell’autore. |
+|  | Eventi | 10 | 3 |  |  |
+|  | Activations | 10 | 1 |  | Simulazione del comportamento dell’autore. |
 | Picco misto | Home page | 100 | 5 |  |  |
 |  | Ricerca | 50 | 5 |  |  |
 |  | Notizie | 100 | 10 |  |  |
@@ -434,7 +434,7 @@ Nel concepire questi test si dovrebbe ricordare che non tutti gli scenari si ver
 |---|---|---|---|---|---|
 | Sovraccarico del componente di ricerca | Cerca nei caratteri jolly globali (asterisco) | 10 | 1 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
 |  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto. |
-|  | Stringa vuota | 10 | 3 |  | Ricerca di una stringa vuota. |
+|  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
 |  | Caratteri speciali | 10 | 3 |  | Ricerca di caratteri speciali. |
 
 #### Test di resistenza {#endurance-tests}
@@ -446,7 +446,7 @@ Alcuni problemi si verificheranno solo dopo che il sistema è stato in funzione 
 | Prova di resistenza (72 ore) | Home page | 10 | 3 |  |  |
 |  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 20 | 2 |  |  |
-|  | Eventi | 10 | 1 |  |  |
+|  | Eventi | 10 | 3 |  |  |
 |  | Activations | 1 | 3 |  | Simulazione del comportamento dell’autore. |
 
 ### Ottimizzazione {#optimization}
