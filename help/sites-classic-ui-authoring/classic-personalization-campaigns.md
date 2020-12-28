@@ -40,10 +40,12 @@ La gestione delle campagne consiste di vari elementi:
 In AEM, i marchi sono l&#39;unità di livello principale e costituiscono una raccolta di 
 **Campagne**.
 
-* **Campagne** Una campagna è un insieme di singoli 
+* **CampagneUna campagna è un insieme di singole campagne**
+ 
 **Esperienze**.
 
-* **Esperienze** I contenuti mirati formano le varie esperienze, presentate al visitatore in 
+* ****
+EsperienzeIl contenuto specifico forma le varie esperienze, presentate al visitatore in 
 **Punti di contatto**. Sono disponibili diversi tipi di esperienze:
 
    * **Teaser**
