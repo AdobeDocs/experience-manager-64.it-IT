@@ -86,7 +86,7 @@ Per inserire un nuovo componente:
 
 1. Inserisci nella pagina il componente desiderato. Quindi fai doppio clic sul paragrafo. Viene visualizzata una finestra che consente di configurare il paragrafo e aggiungere il contenuto.
 
-### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
+### Inserimento di un componente tramite Content Finder  {#inserting-a-component-using-the-content-finder}
 
 Per aggiungere un nuovo componente alla pagina, puoi anche trascinare una risorsa da [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo, si crea automaticamente un nuovo componente di tipo appropriato, che contiene la risorsa.
 
@@ -105,7 +105,7 @@ Questo vale per i seguenti tipi di risorse (alcune dipenderanno dal sistema dell
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
-1. Assicurati che la pagina sia in [**modalità Modifica **.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Apri [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Trascina la risorsa richiesta nella posizione desiderata. Il [segnaposto](#componentplaceholder) indica dove sarà posizionato il componente.
 
@@ -113,7 +113,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 1. Se necessario, [modifica](#editmovecopypastedelete) il componente.
 
-## Modifica di un componente (contenuto e proprietà) {#editing-a-component-content-and-properties}
+## Modifica di un componente (contenuto e proprietà)  {#editing-a-component-content-and-properties}
 
 Per modificare un paragrafo esistente, è possibile effettuare una delle seguenti operazioni:
 
@@ -203,7 +203,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Le [annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consentono agli autori di fornire feedback sui contenuti. Spesso vengono utilizzate a scopo di revisione e convalida.
 
-## Anteprima delle pagine   {#previewing-pages}
+## Anteprima delle pagine    {#previewing-pages}
 
 Lungo il lato inferiore della barra laterale sono disponibili due icone importanti per visualizzare le pagine in anteprima:
 
@@ -223,7 +223,7 @@ Lungo il lato inferiore della barra laterale sono disponibili due icone importan
 
 ## Trova e sostituisci {#find-replace}
 
-Per modificare più occorrenze di una stessa parola o frase, l’opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**consente di cercare e sostituire più istanze di una stringa in una sezione del sito Web.
+Per modificare più occorrenze di una stessa parola o frase, l’opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa in una sezione del sito Web.
 
 ## Blocco di una pagina {#locking-a-page}
 
