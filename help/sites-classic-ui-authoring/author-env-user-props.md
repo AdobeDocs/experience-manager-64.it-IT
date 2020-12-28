@@ -25,7 +25,7 @@ Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambi
 Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#user-preferences) consentono di definire le opzioni e le preferenze elencate di seguito:
 
 * **Barra degli strumenti di modifica** Consente di specificare se visualizzare o meno la barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, fornisce 
-**I pulsanti Copia**, **Taglia**, **Incolla** ed **Elimina** possono essere utilizzati con i componenti paragrafo della pagina:
+**Copia**,  **Taglia**,  **Incolla**,  **** Elimina per l’utilizzo con i componenti paragrafo della pagina:
 
    * Mostra se necessario (predefinito)
    * Mostra sempre
@@ -33,7 +33,8 @@ Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#us
 
 * **Impersona** La funzionalità [Impersona](/help/sites-administering/security.md#impersonating-another-user) permette a un utente di lavorare a nome di un altro utente.
 
-* **Lingua** Lingua da usare nell’interfaccia dell’ambiente Authoring. Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
+* **Lingua**
+Indica la lingua da usare nell’interfaccia dell’ambiente Authoring. Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
 
 * **Gestione finestre** Seleziona una delle seguenti opzioni:
 
