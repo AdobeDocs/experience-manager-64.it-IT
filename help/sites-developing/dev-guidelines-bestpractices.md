@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Sviluppo AEM - Linee guida e migliori prassi{#aem-development-guidelines-and-best-practices}
+# Sviluppo AEM - Linee guida e best practice{#aem-development-guidelines-and-best-practices}
 
-## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
+## Linee guida per l&#39;utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
 AEM componenti e modelli formano un potente toolkit. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali dei siti Web, agli editor e agli amministratori le funzionalità necessarie per adattare i loro siti Web alle esigenze aziendali in continua evoluzione (agilità dei contenuti), mantenendo al contempo il layout uniforme dei siti (protezione del marchio).
 
@@ -57,15 +57,15 @@ Quando create componenti personalizzati o personalizzate un componente esistente
 
 >[!NOTE]
 >
->Consultate [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md) per ulteriori dettagli.
+>Per ulteriori informazioni, consultate [Utilizzo delle sovrapposizioni](/help/sites-developing/overlays.md).
 
-Ad esempio:
+Esempio:
 
 * [Personalizzazione di un componente](/help/sites-developing/components.md)
 
    Questo comportava la sovrapposizione di una definizione di componente:
 
-   * Per creare una nuova cartella di componenti, copiate `/apps/<website-name>/components/<MyComponent>` un componente esistente:
+   * Crea una nuova cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
 
       * Ad esempio, per personalizzare la copia del componente Testo:
 
@@ -83,17 +83,17 @@ Ad esempio:
 
 >[!CAUTION]
 >
->Non **devi** cambiare nulla nel `/libs` percorso.
+>**non è necessario modificare alcun elemento nel percorso `/libs`.**
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Per la configurazione e altre modifiche:
 >
->1. copiate l’elemento in `/libs` `/apps`
->1. apportare eventuali modifiche `/apps`
+>1. copiare l&#39;elemento in `/libs` in `/apps`
+>1. apportare modifiche entro `/apps`
 
 
-## Quando utilizzare le query JCR e quando non utilizzarle {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## Quando utilizzare le query JCR e quando non usarle {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 Le query JCR sono uno strumento potente quando utilizzate correttamente. Sono appropriati per:
 
@@ -112,14 +112,14 @@ Per eseguire il rendering del contenuto, utilizzate l&#39;accesso alla struttura
 
 >[!NOTE]
 >
->Se utilizzate [Query Builder](/help/sites-developing/querybuilder-api.md), potete utilizzare Query JCR, poiché Query Builder genera Query JCR sotto la cappa.
+>Se utilizzate il [Generatore di query](/help/sites-developing/querybuilder-api.md), utilizzate le query JCR, poiché Query Builder genera le query JCR sotto il cofano.
 
 
 ## Considerazioni sulla sicurezza {#security-considerations}
 
 >[!NOTE]
 >
->È inoltre utile fare riferimento all&#39;elenco di controllo della [sicurezza](/help/sites-administering/security-checklist.md).
+>Vale anche la pena fare riferimento alla [lista di controllo di sicurezza](/help/sites-administering/security-checklist.md).
 
 ### Sessioni JCR (repository) {#jcr-repository-sessions}
 
@@ -129,13 +129,13 @@ Utilizzate la sessione utente, non quella amministrativa. Questo significa che d
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect contro lo scripting tra siti (XSS) {#protect-against-cross-site-scripting-xss}
+### Protect per lo scripting tra siti (XSS) {#protect-against-cross-site-scripting-xss}
 
 Lo scripting tra siti (XSS) consente agli aggressori di inserire codice nelle pagine Web visualizzate da altri utenti. Questa vulnerabilità di sicurezza può essere sfruttata da utenti Web malintenzionati per aggirare i controlli di accesso.
 
 AEM applica il principio di filtraggio di tutti i contenuti forniti dall’utente al momento dell’output. La prevenzione di XSS viene data la massima priorità sia durante lo sviluppo che durante i test.
 
-Inoltre, un firewall per applicazioni Web, come [mod_security per Apache](https://modsecurity.org), può fornire un controllo centrale affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere contro attacchi di script tra siti non rilevati in precedenza.
+Inoltre, un firewall per applicazioni Web, come [mod_security for Apache](https://modsecurity.org), può fornire un controllo centrale affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere contro attacchi di script tra siti non rilevati in precedenza.
 
 >[!CAUTION]
 >
@@ -147,7 +147,7 @@ Il foglio di imbroglio XSSAPI.
 
 [Ottieni file](assets/xss_cheat_sheet_2016.pdf)
 
-### Comunicazione sicura per informazioni riservate {#securing-communication-for-confidential-information}
+### Protezione della comunicazione per informazioni riservate {#securing-communication-for-confidential-information}
 
 Per quanto riguarda le applicazioni Internet, assicurarsi che durante il trasporto di informazioni riservate
 
@@ -162,10 +162,10 @@ Ciò vale per le informazioni riservate al sistema (come la configurazione o l&#
 
 Le pagine di errore possono essere personalizzate per AEM. Questo è consigliabile in modo che l&#39;istanza non riveli tracce di utilizzo in caso di errori interni del server.
 
-Per informazioni dettagliate, consultate [Personalizzazione delle pagine di errore visualizzate dal gestore](/help/sites-developing/customizing-errorhandler-pages.md) di errori.
+Per informazioni dettagliate, vedere [Personalizzazione delle pagine di errore visualizzate dal gestore di errori](/help/sites-developing/customizing-errorhandler-pages.md).
 
-### Apri file nel processo Java {#open-files-in-the-java-process}
+### Apri i file nel processo Java {#open-files-in-the-java-process}
 
-Poiché AEM può accedere a un gran numero di file, si consiglia di configurare in modo esplicito per AEM il numero di file [aperti per un processo](/help/sites-deploying/configuring.md#open-files-in-the-java-process) Java.
+Poiché AEM può accedere a un gran numero di file, si consiglia di configurare in modo esplicito per AEM il numero di [file aperti per un processo Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process).
 
 Per ridurre al minimo questo problema, lo sviluppo dovrebbe garantire che tutti i file aperti vengano chiusi correttamente non appena (significativo) possibile.
