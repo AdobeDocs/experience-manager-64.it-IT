@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Struttura dell’interfaccia AEM touch{#structure-of-the-aem-touch-enabled-ui}
+# Struttura dell&#39;AEM interfaccia touch{#structure-of-the-aem-touch-enabled-ui}
 
 L’interfaccia AEM touch presenta diversi principi di base ed è composta da diversi elementi chiave:
 
@@ -71,7 +71,7 @@ La barra a sinistra può essere aperta o nascosta come richiesto per mostrare:
 * **Riferimenti**
 * **Filtro**
 
-Il valore predefinito è Solo **** contenuto (barra laterale nascosta).
+Il valore predefinito è **Solo contenuto** (barra nascosta).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -87,11 +87,11 @@ La cornice contenuto si trova nella sezione destra della finestra, sotto la barr
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Editor Frame {#editor-frame}
+### Fotogramma editor {#editor-frame}
 
 La cornice dell’editor realizza le funzioni di modifica.
 
-La cornice dell’editor è un contenitore (astratto) per tutti gli elementi *di authoring delle* pagine. Vive sopra la cornice contenuto e include:
+La cornice dell&#39;editor è un contenitore (astratto) per tutti gli elementi *di authoring delle pagine*. Vive sopra la cornice contenuto e include:
 
 * barra degli strumenti superiore
 * il pannello laterale
@@ -128,7 +128,7 @@ Nella scheda Componenti è possibile selezionare uno dei componenti disponibili.
 
 ### Sovrapposizioni {#overlays}
 
-Questi elementi sovrappongono la cornice contenuto e vengono utilizzati dai [livelli](#layer) per comprendere la tecnica di interazione (completamente trasparente) con i componenti e il relativo contenuto.
+Questi elementi sovrappongono la cornice contenuto e vengono utilizzati dai [livelli](#layer) per comprendere quali sono le modalità di interazione (completamente trasparente) con i componenti e il relativo contenuto.
 
 Le sovrapposizioni sono live nella cornice dell’editor (con tutti gli altri elementi di authoring delle pagine), anche se sovrappongono effettivamente i componenti appropriati nella cornice contenuto.
 
@@ -167,7 +167,7 @@ A seconda dello spazio disponibile, le barre degli strumenti dei componenti sono
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori dettagli sui concetti relativi all’interfaccia touch, continuate con l’articolo [Concetti dell’interfaccia](/help/sites-developing/touch-ui-concepts.md)AEM touch.
+Per ulteriori dettagli sui concetti relativi all&#39;interfaccia touch, continuate con l&#39;articolo [Concetti dell&#39;interfaccia AEM touch](/help/sites-developing/touch-ui-concepts.md).
 
-Per ulteriori informazioni tecniche, consultate la documentazione [JS impostata](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor pagina touch.
+Per ulteriori informazioni tecniche, consultate la sezione [Documentazione JS set](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l&#39;editor pagina touch.
 
