@@ -44,7 +44,7 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
   <tr>
    <td>Best practice in diverse aree intorno a Risorse per migliorare la stabilità e le prestazioni del sistema sotto carico</td> 
    <td><a href="/help/assets/organize-assets.md">Best practice per Assets</a></td> 
-   <td>Include collegamenti alle guide sulle procedure ottimali in diverse aree intorno alle risorse. Dopo averli esaminati, avrete a disposizione le conoscenze e gli strumenti per creare e gestire un sistema di gestione delle risorse aziendale.</td> 
+   <td>Include collegamenti alle guide sulle procedure ottimali in diverse aree intorno alle risorse. Dopo averli revisionati, avrai a disposizione le conoscenze e gli strumenti per creare e gestire un sistema di gestione delle risorse aziendali.</td> 
   </tr>
   <tr>
    <td>Come organizzare il contenuto (gerarchia delle cartelle)</td> 
@@ -58,13 +58,13 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
   </tr>
   <tr>
    <td>Opzioni dei predefiniti per immagini</td> 
-   <td>Predefiniti per <a href="/help/assets/managing-image-presets.md#understanding-image-presets">immagini</a> e predefiniti per <a href="/help/assets/managing-image-presets.md#image-preset-options">immagini</a></td> 
-   <td>Come parte della documentazione sulla <a href="/help/assets/managing-image-presets.md">gestione dei predefiniti</a>per immagini, questi argomenti descrivono il significato dei predefiniti per immagini e le procedure ottimali per la selezione delle opzioni per i predefiniti per immagini.</td> 
+   <td>Procedure ottimali per <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefiniti per immagini</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">i predefiniti per immagini</a></td> 
+   <td>Come parte della documentazione relativa alla <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti per immagini</a>, questi argomenti descrivono il significato dei predefiniti per immagini e le procedure ottimali per la selezione delle opzioni per i predefiniti per immagini.</td> 
   </tr>
   <tr>
    <td>Dynamic Media e integrazione diretta con Scene7</td> 
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Media</a></td> 
-   <td>Descrive quando è meglio utilizzare la soluzione per contenuti multimediali dinamici, quando integrare S7 con AEM o quando utilizzarli.</td> 
+   <td>Descrive quando è meglio utilizzare la soluzione Dynamic Media, quando integrare S7 con AEM, o quando utilizzare entrambi.</td> 
   </tr>
  </tbody>
 </table>
