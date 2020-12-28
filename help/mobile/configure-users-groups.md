@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Configurazione di utenti e gruppi di utenti {#configure-your-users-and-user-groups}
+# Configurare utenti e gruppi di utenti {#configure-your-users-and-user-groups}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Questo capitolo descrive i ruoli utente e come configurare utenti e gruppi per l’authoring e la gestione delle app mobili.
 
@@ -53,22 +53,22 @@ I membri del gruppo di autori dell&#39;app sono responsabili della creazione AEM
 
    Aggiunta di autori di app al gruppo Autori
 
-1. Dopo aver creato il gruppo di utenti autori delle app, puoi aggiungere singoli membri del team a questo nuovo gruppo tramite la console [di amministrazione](http://localhost:4502/libs/granite/security/content/useradmin.md)utenti.
+1. Dopo aver creato il gruppo di utenti autori dell&#39;app, puoi aggiungere singoli membri del team a questo nuovo gruppo tramite la [console di amministrazione utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Modifica dei gruppi di utenti
 
-1. Andate alla console [](http://localhost:4502/useradmin) Autorizzazioni e aggiungete le autorizzazioni per amministrare i servizi cloud
+1. Andate alla [console Autorizzazioni](http://localhost:4502/useradmin) e aggiungete le autorizzazioni per amministrare i servizi cloud
 
    * (Leggi) su /etc/cloudservices
    >[!NOTE]
    >
    >Gli autori delle app estendono il gruppo predefinito di autori di contenuti (autori) da AEM, ereditando così la possibilità di creare contenuti in /content/phonegap
 
-###  AEM Mobile Application Administrators Group (gruppo di amministratori app) {#aem-mobile-application-administrators-group-app-admins-group}
+###  AEM Mobile Application Administrators Group (gruppo app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-I membri del gruppo di amministratori dell&#39;app possono creare contenuto dell&#39;applicazione con le stesse autorizzazioni incluse con gli autori dell&#39;app **E** sono inoltre responsabili per:
+I membri del gruppo di amministratori dell&#39;app possono creare contenuto dell&#39;applicazione con le stesse autorizzazioni incluse con gli autori dell&#39;app **AND** inoltre sono responsabili per:
 
 * Configurazione di PhoneGap Build e  servizi cloud di Mobile Services in AEM
 * Gestione temporanea, pubblicazione e cancellazione degli aggiornamenti dell&#39;applicazione Content Sync OTA
@@ -77,9 +77,9 @@ I membri del gruppo di amministratori dell&#39;app possono creare contenuto dell
 >
 >Le autorizzazioni determinano la disponibilità di alcune azioni utente in AEM App Command Center.
 >
->noterete che alcune opzioni non sono disponibili per gli autori di app disponibili per gli amministratori di app.
+>Noterete che alcune opzioni non sono disponibili per gli autori di app disponibili per gli amministratori di app.
 
-#### Configurazione del gruppo - amministratori delle app {#group-configuration-app-admins}
+#### Configurazione del gruppo - app-admins {#group-configuration-app-admins}
 
 1. Create un nuovo gruppo denominato app-admins.
 1. Aggiungi i seguenti gruppi al nuovo gruppo di amministratori delle app:
@@ -89,7 +89,7 @@ I membri del gruppo di amministratori dell&#39;app possono creare contenuto dell
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Andate alla console [](http://localhost:4502/useradmin) Autorizzazioni e aggiungete le autorizzazioni per amministrare i servizi cloud
+1. Andate alla [console Autorizzazioni](http://localhost:4502/useradmin) e aggiungete le autorizzazioni per amministrare i servizi cloud
 
    * (Lettura, Modifica, Creazione, Eliminazione, Replica) su /etc/cloud/services/mobileservizi
    * (Leggi, Modifica, Crea, Elimina, Replica) su /etc/cloudservices/phonegap-build
@@ -115,13 +115,13 @@ I membri del gruppo di amministratori dell&#39;app possono creare contenuto dell
 
 Le sezioni del dashboard possono esporre azioni diverse in base alle autorizzazioni di cui dispone l&#39;utente. Di seguito sono descritte le azioni disponibili per ogni sezione.
 
-Oltre a queste autorizzazioni, un&#39;azione può anche essere visualizzata o nascosta in base alla configurazione dell&#39;app corrente. Ad esempio, non ha senso esporre l&#39;azione &quot;Remote Build&quot;, se all&#39;app non è stata assegnata una configurazione cloud PhoneGap. Questi saranno elencati di seguito nelle sezioni &quot;Condizione **di** configurazione&quot;.
+Oltre a queste autorizzazioni, un&#39;azione può anche essere visualizzata o nascosta in base alla configurazione dell&#39;app corrente. Ad esempio, non ha senso esporre l&#39;azione &quot;Remote Build&quot;, se all&#39;app non è stata assegnata una configurazione cloud PhoneGap. Questi saranno elencati di seguito nelle sezioni &quot;**Condizione di configurazione**&quot;.
 
 ### Gestisci sezione app {#manage-app-tile}
 
 Al momento la sezione non dispone di azioni che richiedono autorizzazioni, tuttavia la pagina dei dettagli dell&#39;applicazione include le azioni seguenti:
 
-* *Modifica* per app-author e app-admin (attivatore interfaccia utente - jcr:write - on /content/phonegap/{suffix})
+* *Editor* per app-author e app-admin (attivatore interfaccia utente - jcr:write - on /content/phonegap/{suffix})
 * *Download* per app-author e app-admin (attivatore interfaccia utente - su /content/phonegap/{suffix})
 
 L&#39;immagine seguente mostra le opzioni di download e modifica per un&#39;app:
