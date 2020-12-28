@@ -19,11 +19,11 @@ ht-degree: 2%
 
 # Ristrutturazione del repository di e-commerce in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che hanno un impatto sulla soluzione AEM E-Commerce. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
+Come descritto nella pagina [Ristrutturazione repository principale di AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che effettuano l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere posticipate fino a un aggiornamento di 6.5.
 
 ## Con aggiornamento 6.4 {#with-upgrade}
 
-### Dati relativi a prodotti, ordine, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### Dati prodotti, ordine, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table> 
  <tbody>
@@ -37,7 +37,7 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td> 
-   <td><p>Puoi utilizzare un'attività di migrazione <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank"></a> Lazy per migrare i dati di E-Commerce.</p> <p>Effettua le seguenti operazioni:</p> 
+   <td><p>Puoi utilizzare un'attività <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migrazione pigra</a> per migrare i dati di E-Commerce.</p> <p>Effettua le seguenti operazioni:</p> 
     <ul> 
      <li>regola i riferimenti alla vecchia posizione in modo che punti alla nuova posizione</li> 
      <li>sposta il contenuto dalla posizione precedente alla nuova posizione</li> 
@@ -46,9 +46,9 @@ Come descritto nella pagina Ristrutturazione [repository padre di AEM 6.4](/help
     <ul> 
      <li>/etc/commerce/products</li> 
      <li>/etc/commerce/collections<br /> </li> 
-     <li>/etc/commerce/ordered<br /> </li> 
+     <li>/etc/commerce/Orders<br /> </li> 
      <li>/etc/commerce/payment-methods<br /> </li> 
-     <li>/etc/commerce/Shipping-methods<br /> </li> 
+     <li>/etc/commerce/shipping-methods<br /> </li> 
     </ul> <p>Per i cataloghi più grandi, si consiglia di eseguire l'attività di migrazione commerciale singolarmente passando la seguente proprietà di sistema Java a AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Dopo la migrazione AEM necessario riavviare.</p> </td> 
   </tr>
   <tr>
