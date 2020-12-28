@@ -22,9 +22,9 @@ ht-degree: 0%
 
 In questa sezione viene descritta la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
 
-Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già distribuita. La procedura è destinata a documentare gli aggiornamenti eseguiti dalla **AEM versione 5.6 alla 6.3**.
+Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già distribuita. La procedura è destinata a documentare gli aggiornamenti eseguiti da **AEM versione 5.6 a 6.3**.
 
-1. Innanzitutto, avviate JBoss. Nella maggior parte dei casi, è possibile eseguire lo script di `standalone.sh` avvio, eseguendo questo comando dal terminale:
+1. Innanzitutto, avviate JBoss. Nella maggior parte dei casi, è possibile eseguire lo script di avvio `standalone.sh`, eseguendo questo comando dal terminale:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -56,7 +56,7 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
 
 1. Eliminate le proprietà necessarie nel file sling.properties effettuando le seguenti operazioni:
 
-   1. Apri il file in `crx-quickstart/launchpad/sling.properties`
+   1. Aprire il file che si trova in `crx-quickstart/launchpad/sling.properties`
    1. Testo del passaggio Rimuovete le seguenti proprietà e salvate il file:
 
       1. `sling.installer.dir`
@@ -70,7 +70,7 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
 
 1. Rimuovete i file e le cartelle che non sono più necessari. Gli elementi da rimuovere sono:
 
-   * La cartella **** di avvio/avvio. È possibile eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
+   * La **cartella di avvio/avvio**. È possibile eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
    * Il file **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
    * Il file **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
@@ -86,9 +86,9 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. Quindi, dovete creare la cartella che conterrà le configurazioni OSGi che verranno utilizzate con la nuova istanza aggiornata. Più precisamente, una cartella denominata install deve essere creata in **crx-quickstart**.
+1. Quindi, dovete creare la cartella che conterrà le configurazioni OSGi che verranno utilizzate con la nuova istanza aggiornata. Più precisamente, è necessario creare una cartella denominata install in **crx-quickstart**.
 
-1. A questo punto, creare l&#39;archivio nodi e l&#39;archivio dati che verrà utilizzato con AEM 6.3. A questo scopo, create due file con i seguenti nomi in **crx-quickstart\install**:
+1. A questo punto, creare l&#39;archivio nodi e l&#39;archivio dati che verrà utilizzato con AEM 6.3. A tal fine, potete creare due file con i seguenti nomi in **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -98,11 +98,11 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
 
 1. Modificate i file di configurazione per renderli pronti per l’uso. Più precisamente:
 
-   * Aggiungi la riga seguente a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Aggiungi la seguente riga a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
-   * Quindi aggiungi le seguenti righe a **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * Quindi aggiungete le seguenti righe a **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -115,13 +115,13 @@ Tutti gli esempi contenuti in questa procedura utilizzano JBoss come Application
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. È ora necessario modificare le modalità di esecuzione nel file di guerra AEM 6.3. Per fare ciò, create innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.3. Il nome della cartella in questo esempio sarà **temporaneo**. Una volta copiato il file di guerra, estrarne il contenuto dall&#39;interno della cartella temp:
+1. È ora necessario modificare le modalità di esecuzione nel file di guerra AEM 6.3. Per fare ciò, create innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.3. Il nome della cartella in questo esempio sarà **temp**. Una volta copiato il file di guerra, estrarne il contenuto dall&#39;interno della cartella temp:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Una volta estratto il contenuto, accedete alla cartella **WEB-INF** e modificate il `web.xml` file per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nell&#39;XML, cercare la `sling.run.modes` stringa. Una volta trovata, modificate le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata per l’authoring:
+1. Una volta estratto il contenuto, passare alla cartella **WEB-INF** e modificare il file `web.xml` per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nell&#39;XML, cercare la stringa `sling.run.modes`. Una volta trovata, modificate le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata per l’authoring:
 
    ```shell
    <param-value >author</param-value>
