@@ -22,11 +22,11 @@ ht-degree: 2%
 
 Per sviluppare le applicazioni JCR, Apache Sling o AEM, sono disponibili i seguenti set di strumenti:
 
-* un set composto da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è integrato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con i CRXDE Lite, potete creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
+* un set costituito da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è integrato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con i CRXDE Lite, potete creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
 
    CRXDE Lite è consigliato quando non si dispone dell&#39;accesso diretto al server CRX/AEM, quando si sviluppa un&#39;applicazione estendendo o modificando i componenti out-of-the-box e i bundle Java o quando non è necessario un debugger dedicato, completamento del codice e messa in evidenza della sintassi.
 
-* un set costituito da un ambiente di sviluppo integrato (ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), uno strumento di compilazione (ad esempio: [Apache Maven](/help/sites-developing/ht-projects-maven.md), FileVault sviluppato da  Adobe per mappare un archivio su un file system, un sistema di controllo delle versioni (ad esempio: Subversion), un sistema di tracciamento dei bug (ad esempio: Jira), un sistema centrale di gestione delle dipendenze (ad esempio: Apache Archiva e un sistema di automazione di compilazione (ad esempio: Apache Continuum).
+* un set costituito da un ambiente di sviluppo integrato (ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), uno strumento di compilazione (ad esempio: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault sviluppato da  Adobe per mappare un repository su un file system, un sistema di controllo delle versioni (ad esempio: Subversion), un sistema di tracciamento dei bug (ad esempio: Jira), un sistema centrale di gestione delle dipendenze (ad esempio: Apache Archiva e un sistema di automazione di compilazione (ad esempio: Apache Continuum).
 
    Questa configurazione consente di integrare completamente l&#39;applicazione (contenuto, codice, configurazione) in qualsiasi ambiente e processo di sviluppo.Il collegamento tra i diversi elementi è la rappresentazione del file system del repository tramite FileVault, in quanto tutti i suddetti strumenti di sviluppo possono funzionare con i file.
 
@@ -36,7 +36,7 @@ Per sviluppare le applicazioni JCR, Apache Sling o AEM, sono disponibili i segue
 
 * [Estensione AEM Eclipse](/help/sites-developing/aem-eclipse.md)
 * [Estensione AEM parentesi](/help/sites-developing/aem-brackets.md)
-* [AEM estensione](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) IntelliJ (da Headwire)
+* [AEM estensione](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  IntelliJ (da Headwire)
 
 ### Altri strumenti {#other-tools}
 
