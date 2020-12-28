@@ -36,7 +36,7 @@ Ad esempio, il catalogo prodotti We.Retail include teaser che focalizzano l&#39;
 
 Le attività identificano anche il [motore di destinazione](/help/sites-authoring/personalization.md#targeting-engine) utilizzato dalle tue pagine.
 
-Usa la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. You can also create activities as you [author targeted content](/help/sites-authoring/content-targeting-touch.md).
+Usa la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Potete anche creare attività durante l&#39;creazione di [contenuti mirati ](/help/sites-authoring/content-targeting-touch.md).
 
 ## Esperienze {#experiences}
 
@@ -48,7 +48,7 @@ Ad esempio, un&#39;attività definisce le esperienze per due segmenti di pubblic
 
 È possibile definire le esperienze per un&#39;attività. Usa la [console Attività](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o la [modalità Targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) per aggiungere le esperienze a un&#39;attività.
 
-## Offerte {#offers}
+## Offerte  {#offers}
 
 Un&#39;offerta è un contenuto visualizzato in una certa ubicazione della pagina per una certa esperienza. Utilizza offerte diverse per le diverse esperienze e massimizza l&#39;efficacia dei contenuti per il tuo pubblico.
 
@@ -56,7 +56,7 @@ Ad esempio, la pagina Donne del sito Web di esempio We.Retail può utilizzare le
 
 Usa la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea le offerte per un uso singolo o aggiungi le offerte da una libreria di offerte durante la [creazione di contenuti personalizzati](/help/sites-authoring/content-targeting-touch.md).
 
-## Motore di destinazione {#targeting-engine}
+## Motore di destinazione  {#targeting-engine}
 
 Il motore di destinazione è il meccanismo che definisce la logica per la creazione dei contenuti mirati. Le [Attività](/help/sites-authoring/activitylib.md) sono configurate per l&#39;utilizzo di uno di due motori di targeting a tua disposizione: AEM e Adobe Target.
 
@@ -71,4 +71,4 @@ Il motore di destinazione Adobe Target permette di tenere traccia e raccogliere 
 * Con questo motore di destinazione, si utilizzano i segmenti importati da Adobe Target per definire il pubblico delle esperienze.
 * Le attività che sfruttano Adobe Target vengono [sincronizzate con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).
+È possibile utilizzare questo motore se si dispone di [integrato con  Adobe Target](/help/sites-administering/opt-in.md).
