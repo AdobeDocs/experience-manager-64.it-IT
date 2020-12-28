@@ -20,7 +20,7 @@ ht-degree: 20%
 
 # Integrazione delle pagine di destinazione con  Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrato la soluzione per pagine di destinazione con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di invito all’azione (CTA, Call To Action):
+AEM ha integrato la soluzione delle pagine di destinazione con [ Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di invito all&#39;azione (CTA):
 
 1. Componente Collegamento ClickThrough
 1. Componente Collegamento grafico
@@ -29,11 +29,11 @@ Questi componenti espongono alcuni attributi che possono essere mappati tramite 
 
 ## Prerequisiti {#prerequisites}
 
- Adobe consiglia di esaminare l&#39;integrazione [Adobe Analytics AEM-](/help/sites-administering/adobeanalytics.md) esistente per comprendere come funziona questa integrazione.
+ Adobe consiglia di seguire l&#39;integrazione AEM- Adobe Analytics [esistente](/help/sites-administering/adobeanalytics.md) per comprendere come funziona questa integrazione.
 
 ## Componenti disponibili per la mappatura {#components-available-for-mapping}
 
-In AEM, i componenti **Invito all’azione** - **ClickThroughLink** e **GraphicalLink** - visualizzati qui nella barra laterale, possono essere mappati su  variabili Adobe Analytics.
+In AEM, i componenti **Invito all&#39;azione** - **ClickThroughLink** e **GraphicalLink** - visualizzati qui nella barra laterale, possono essere mappati su  variabili Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
@@ -90,7 +90,7 @@ Per mappare i componenti della pagina di destinazione su  Adobe Analytics:
 </table>
 
 1. Mappate questi attributi esposti con qualsiasi  variabile Adobe Analytics da Content Finder. Il framework è ora pronto per essere utilizzato.
-1. È ora possibile creare una nuova pagina di destinazione o aprire una pagina di destinazione esistente con componenti CTA e fare clic sulla scheda **Cloud Services** nella barra laterale Proprietà **** pagina (nell’interfaccia touch, selezionate **Apri proprietà** e fate clic su **Cloud Services**) e configurate il framework da utilizzare con la pagina di destinazione. Selezionate il framework dall’elenco a comparsa.
+1. È ora possibile creare una nuova pagina di destinazione o aprire una pagina di destinazione esistente con componenti CTA, fare clic sulla scheda **Cloud Services** in **Proprietà pagina** nella barra laterale (nell&#39;interfaccia touch, selezionare **Apri proprietà**, quindi fare clic su **Cloud Services**) e configurare il framework da utilizzare con la pagina di destinazione. Selezionate il framework dall’elenco a comparsa.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
