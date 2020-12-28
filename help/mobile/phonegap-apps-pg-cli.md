@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 In qualsiasi momento, come sviluppatore, puoi eseguire l&#39;app su un dispositivo o all&#39;interno di un emulatore, a condizione che sia stato configurato l&#39;ambiente di sviluppo.
 
@@ -42,7 +42,7 @@ Per Android: Per sviluppare per iPhone e iPad, è necessario Google Android Stui
 * Scaricatelo gratuitamente [qui](https://developer.android.com/sdk/index.html).
 * [Guida alla piattaforma PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
-## Scarica l&#39;origine {#download-the-source}
+## Scarica la sorgente {#download-the-source}
 
 Dopo aver eseguito correttamente il boot dell&#39;ambiente di sviluppo, scarica l&#39;origine dalla sezione AEM App Build:
 
@@ -70,7 +70,7 @@ L&#39;interfaccia CLI di PhoneGap può creare un progetto di piattaforma, compil
 
 >[!NOTE]
 >
->È possibile eseguire tutti questi passaggi separatamente, vedere i documenti CLI di [PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>È possibile eseguire tutti questi passaggi separatamente, vedere [PhoneGap CLI docs](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Accertatevi di aver installato l&#39;interfaccia CLI di PhoneGap, come descritto sopra.
 1. In una finestra della console (o terminale), andate alla directory principale dell’origine estratta.
@@ -119,7 +119,7 @@ Per attivare gli strumenti di sviluppo:
 * Selezionare &quot;Mostra menu sviluppo nella barra dei menu&quot;
 * Chiudi la finestra Preferenze
 
-## Connessione di Safari a iOS {#connect-safari-to-ios}
+## Connetti Safari a iOS {#connect-safari-to-ios}
 
 Potete collegare Safari a un dispositivo iOS o a un emulatore.
 
@@ -162,4 +162,4 @@ Puoi impostare punti di interruzione ovunque nella tua origine. Quando interagis
 
 ## Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso lo sviluppo di app con l&#39;interfaccia CLI di PhoneGap, consulta [Accesso alle funzioni](/help/mobile/phonegap-access-device-features.md)del dispositivo.
+Dopo aver appreso come sviluppare app con l&#39;interfaccia CLI di PhoneGap, vedere [Accesso alle funzionalità del dispositivo](/help/mobile/phonegap-access-device-features.md).
