@@ -32,13 +32,13 @@ Per ulteriori informazioni, vedere:
 
 >[!NOTE]
 >
->Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce, consulta [Sviluppo (generico)](/help/sites-developing/generic.md) per ulteriori informazioni sullo sviluppo delle possibilità con Intershop, Elastic Path o IBM Webference Commerce.
+>Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce, vedere [Sviluppo (generico)](/help/sites-developing/generic.md) per ulteriori informazioni sullo sviluppo di possibilità con Intershop, Elastic Path o IBM Webference Commerce.
 
 >[!NOTE]
 >
 >Per utilizzare il framework di integrazione con i provider di eCommerce esterni, è innanzitutto necessario installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consulta [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
+>Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consultate [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
 
 ## Documentazione API {#api-documentation}
 
@@ -46,9 +46,9 @@ L&#39;API eCommerce è fornita dai pacchetti:
 
 `com.adobe.cq.commerce.*`
 
-Per ulteriori informazioni, consultate la documentazione [sulle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) API.
+Per ulteriori informazioni, consultare la [documentazione API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html).
 
 >[!NOTE]
 >
->Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)di eCommerce personalizzati per Adobe Experience Manager 6.2.
+>Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider di eCommerce personalizzati per Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
 
