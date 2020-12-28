@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >Questo documento descrive come personalizzare le console nell’interfaccia touch moderna e non applicabile all’interfaccia classica.
 
-AEM offre diversi metodi per personalizzare le console (e la funzionalità [di authoring delle](/help/sites-developing/customizing-page-authoring-touch.md)pagine) dell’istanza di authoring.
+AEM offre diversi metodi per personalizzare le console (e la [funzionalità di authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) dell’istanza di authoring.
 
 * Clientlibs
 
@@ -46,28 +46,28 @@ che possono essere utilizzati in molti modi per estendere le console AEM. Di seg
 
 >
 >
-Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalizzazione dell&#39;interfaccia [utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - [Personalizzazione dell&#39;interfaccia utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->Non ***devi*** cambiare nulla nel `/libs` percorso.
+>***non è necessario*** modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
 >1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    >
    >
-1. Apportare modifiche all&#39;interno `/apps`
+1. Apportare modifiche all&#39;interno di `/apps`
 
 >
 
 
 
-Ad esempio, è possibile sovrapporre le seguenti posizioni all’interno della `/libs` struttura:
+Ad esempio, è possibile sovrapporre le seguenti posizioni all&#39;interno della struttura `/libs`:
 
-* console (tutte le console basate sulle pagine dell’interfaccia utente Granite); ad esempio:
+* console (qualsiasi console basata sulle pagine dell’interfaccia Granite); ad esempio:
 
    * `/libs/wcm/core/content`
 
@@ -98,7 +98,7 @@ Ad esempio, è possibile sovrapporre le seguenti posizioni all’interno della `
 -->
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l’articolo della Knowledge Base [Risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)AEM TouchUI.
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base, [Risoluzione dei problemi AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -211,7 +211,7 @@ Potete personalizzare la visualizzazione predefinita (colonna, scheda, elenco) p
 
    * **Nome**: `sling:orderBefore`
    * **Tipo**: `String`
-   * **Valore**: `column`
+   * **Valore**:  `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -263,7 +263,7 @@ You can find the code of this page on GitHub
 
 ## Aggiungi nuova azione alla barra degli strumenti {#add-new-action-to-the-toolbar}
 
-1. Potete creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Promote to Twitter** all&#39;indirizzo:
+1. Potete creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Passa a Twitter** all&#39;indirizzo:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -275,7 +275,7 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Limitare un&#39;azione barra degli strumenti a un gruppo specifico {#restrict-a-toolbar-action-to-a-specific-group}
+## Limita un&#39;azione barra degli strumenti a un gruppo specifico {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. Potete utilizzare una condizione di rendering personalizzata per sovrapporre l&#39;azione standard e imporre condizioni specifiche che devono essere soddisfatte prima del rendering.
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Utilizzando le proprietà di questo nodo è possibile definire le `groups` autorizzazioni per eseguire l&#39;azione specifica; ad esempio, `administrators`
+   Utilizzando le proprietà di questo nodo è possibile definire il `groups` consentito per eseguire l&#39;azione specifica; ad esempio, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -389,7 +389,7 @@ Per personalizzare le colonne nella vista a elenco:
       `/apps/wcm/core/content/common/availablecolumns`
 
    * Aggiungete le nuove colonne o rimuovete quelle esistenti.
-   Per ulteriori informazioni, consultate [Utilizzo delle sovrapposizioni (e Sling Resource Merger)](/help/sites-developing/overlays.md) .
+   Per ulteriori informazioni, vedere [Utilizzo delle sovrapposizioni (e la fusione delle risorse Sling)](/help/sites-developing/overlays.md).
 
 1. Facoltativamente:
 
@@ -404,4 +404,4 @@ Per personalizzare le colonne nella vista a elenco:
 
 Quando si utilizza una console, un caso comune è quando l’utente deve selezionare una delle risorse (ad esempio pagine, componenti, risorse ecc.). Può assumere la forma di un elenco, ad esempio da cui l’autore deve scegliere un elemento.
 
-Per mantenere l&#39;elenco a dimensioni ragionevoli e anche pertinente al caso d&#39;uso, è possibile implementare un filtro sotto forma di predicato personalizzato. Consultate [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) per i dettagli.
+Per mantenere l&#39;elenco a dimensioni ragionevoli e anche pertinente al caso d&#39;uso, è possibile implementare un filtro sotto forma di predicato personalizzato. Per ulteriori informazioni, vedere [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).
