@@ -55,7 +55,7 @@ Sono disponibili due interfacce grafiche, accessibili dalle versioni più recent
 
 ## Passaggio delle interfacce
 
-Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). Sono disponibili diverse opzioni per eseguire questa operazione.
+Sebbene l&#39;interfaccia touch sia ora l&#39;interfaccia standard e [funzionalità di parità](../release-notes/touch-ui-features-status.md) sia quasi raggiunta con l&#39;amministrazione e la modifica dei siti, è possibile che talvolta l&#39;utente desideri passare all&#39; [interfaccia classica](/help/sites-classic-ui-authoring/classicui.md). Sono disponibili diverse opzioni per eseguire questa operazione.
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 È possibile definire l’interfaccia utente da usare in diverse aree:
 
-* [Configurazione dell’interfaccia utente predefinita per l’istanza](#configuring-the-default-ui-for-your-instance) : questa opzione consente di impostare l’interfaccia utente predefinita da visualizzare al momento dell’accesso dell’utente, anche se l’utente può ignorare questa opzione e selezionare una diversa interfaccia per il proprio account o la sessione corrente.
+* [Configurazione dell’interfaccia utente predefinita per l’istanza](#configuring-the-default-ui-for-your-instance)  in uso: questa opzione consente di impostare l’interfaccia utente predefinita da visualizzare al momento dell’accesso dell’utente, anche se l’utente può ignorare questa opzione e selezionare una diversa interfaccia per il proprio account o la sessione corrente.
 
-* [Impostazione dell’interfaccia utente classica per l’account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : questa opzione consente di impostare l’interfaccia utente predefinita per la modifica delle pagine, anche se l’utente può selezionare una diversa interfaccia per il proprio account o la sessione corrente.
+* [Impostazione dell’interfaccia classica Authoring per l’account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : consente di impostare l’interfaccia utente predefinita per la modifica delle pagine, anche se l’utente può selezionare una diversa interfaccia per il proprio account o la sessione corrente.
 
-* [Passaggio all’interfaccia utente classica per la sessione](#switching-to-classic-ui-for-the-current-session) corrente: consente di passare all’interfaccia classica per la sessione corrente.
+* [Passaggio all’interfaccia utente classica per la sessione](#switching-to-classic-ui-for-the-current-session)  corrente: consente di passare all’interfaccia classica per la sessione corrente.
 
 * Per l’[authoring delle pagine il sistema implementa alcune impostazioni locali in base all’interfaccia utente](#ui-overrides-for-the-editor).
 
@@ -75,13 +75,13 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >Le diverse opzioni per passare all’interfaccia utente classica non sono immediatamente disponibili, ma devono essere configurate specificamente per l’istanza.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Per ulteriori informazioni, vedere [Abilitazione dell&#39;accesso all&#39;interfaccia classica](/help/sites-administering/enable-classic-ui.md).
 
 >[!NOTE]
 >
 >Nelle istanze aggiornate da una versione precedente viene mantenuta l’interfaccia classica per la creazione e la modifica delle pagine.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Vedi [Ignorare le impostazioni dell’interfaccia per l’editor](#ui-overrides-for-the-editor).
+>Dopo l&#39;aggiornamento, l&#39;authoring delle pagine non passa automaticamente all&#39;interfaccia touch, ma è possibile configurarlo utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **servizio WCM in modalità interfaccia utente di authoring** ( `AuthoringUIMode` servizio). Vedi [Ignorare le impostazioni dell’interfaccia per l’editor](#ui-overrides-for-the-editor).
 
 ## Configuring the Default UI for Your Instance {#configuring-the-default-ui-for-your-instance}
 
@@ -95,7 +95,7 @@ Ogni utente può accedere alle proprie [preferenze](/help/sites-authoring/user-p
 
 Tale impostazione può essere ignorata e sostituita dalle impostazioni della sessione.
 
-## Passaggio all’interfaccia classica per la sessione corrente {#switching-to-classic-ui-for-the-current-session}
+## Passaggio all’interfaccia classica per la sessione corrente  {#switching-to-classic-ui-for-the-current-session}
 
 Gli utenti desktop possono passare dall’interfaccia touch all’interfaccia classica (solo per desktop). Esistono diversi metodi per passare all’interfaccia classica per la sessione corrente:
 
@@ -106,7 +106,7 @@ Gli utenti desktop possono passare dall’interfaccia touch all’interfaccia cl
    >Questa opzione per passare all’interfaccia utente classica non è immediatamente disponibile e deve essere configurata in modo specifico per l’istanza.
    >
    >
-   >See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+   >Per ulteriori informazioni, vedere [Abilitazione dell&#39;accesso all&#39;interfaccia classica](/help/sites-administering/enable-classic-ui.md).
 
    Se questa funzione è abilitata, ogni volta che passi il mouse su una console applicabile viene visualizzata un’icona (simbolo di un monitor); tocca o fai clic su tale icona per aprire la sezione corrispondente nell’interfaccia classica.
 
@@ -116,13 +116,13 @@ Gli utenti desktop possono passare dall’interfaccia touch all’interfaccia cl
 
 * **URL**
 
-   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
+   È possibile accedere all&#39;interfaccia classica utilizzando l&#39;URL della schermata di benvenuto all&#39;indirizzo `welcome.html`. Ad esempio:
 
    `http://localhost:4502/welcome.html`
 
    >[!NOTE]
    >
-   >L’interfaccia touch è accessibile tramite `sites.html`. Ad esempio:
+   >L’interfaccia touch è accessibile tramite `sites.html`. Esempio:
    >
    >
    >`http://localhost:4502/sites.html`
@@ -133,7 +133,7 @@ Gli utenti desktop possono passare dall’interfaccia touch all’interfaccia cl
 >
 >Questa opzione per passare all’interfaccia utente classica non è immediatamente disponibile e deve essere configurata in modo specifico per l’istanza.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Per ulteriori informazioni, vedere [Abilitazione dell&#39;accesso all&#39;interfaccia classica](/help/sites-administering/enable-classic-ui.md).
 
 Se abilitata, la voce **Apri interfaccia utente classica** è disponibile nella finestra di dialogo **Informazioni pagina**:
 
@@ -145,17 +145,17 @@ Per l’authoring delle pagine, le impostazioni definite da un utente o amminist
 
 * Durante la creazione di pagine:
 
-   * Use of the classic editor is forced when accessing the page using `cf#` in the URL. Ad esempio:
+   * Viene forzato l’utilizzo dell’editor classico quando si accede alla pagina utilizzando `cf#` nell’URL. Esempio:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. Ad esempio:
+   * Viene forzato l’utilizzo dell’editor touch quando si utilizza `/editor.html` nell’URL o quando si utilizza un dispositivo touch. Esempio:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Tale comportamento forzato è temporaneo e valido solo per la sessione del browser.
 
-   * A cookie set will be set dependent on whether touch-enabled ( `editor.html`) or classic ( `cf#`) is used.
+   * Viene impostato un cookie a seconda dell&#39;utilizzo o meno dell&#39;opzione touch ( `editor.html`) o classica ( `cf#`).
 
 * Quando si aprono pagine tramite `siteadmin`, viene verificato se i seguenti elementi sono presenti:
 
