@@ -33,7 +33,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 
 >[!CAUTION]
 >
->Non è possibile promuovere contemporaneamente un singolo lancio. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Non è possibile promuovere contemporaneamente un singolo lancio. Ciò significa che due azioni promozionali allo stesso avvio possono causare un errore `Launch could not be promoted` (insieme a errori di conflitto nel registro).
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
 
    * la console **Sites**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#references) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Verranno visualizzati tutti i riferimenti.
+      1. Aprite la barra dei riferimenti [a1/> e selezionate la pagina di origine desiderata utilizzando la modalità di selezione [a3/> (oppure selezionate e aprite la barra dei riferimenti, l&#39;ordine non è importante). ](/help/sites-authoring/basic-handling.md)](/help/sites-authoring/author-environment-tools.md#references) Verranno visualizzati tutti i riferimenti.
 
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
@@ -101,7 +101,7 @@ Durante la modifica di una pagina di lancio, l’azione **Promuovi lancio** è d
 >
 >Questa funzione è disponibile per i lanci singoli e per i [lanci nidificati](#promoting-a-nested-launch).
 
-## Promozione di un lancio nidificato {#promoting-a-nested-launch}
+## Promozione di un lancio nidificato  {#promoting-a-nested-launch}
 
 Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi sorgente, compresa la sorgente principale (produzione).
 
