@@ -22,18 +22,18 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-## Creazione di componenti AEM per l&#39;accesso alle funzionalità dei dispositivi {#building-aem-components-that-access-device-features}
+## Creazione AEM componenti che accedono alle funzionalità del dispositivo {#building-aem-components-that-access-device-features}
 
-L&#39;archivio [AEM PhoneGap Kitchen](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github offre agli sviluppatori un&#39;app AEM funzionale che illustra l&#39;utilizzo di diverse API Cordova di base. Quando viene eseguita su iOS o Android tramite l&#39;interfaccia CLI di PhoneGap, l&#39;app si apre nella pagina seguente, che include un collegamento a ogni API dispositivo che illustra:
+L&#39;archivio [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github offre agli sviluppatori un&#39;app AEM funzionale che illustra l&#39;utilizzo di diverse API Cordova di base. Quando viene eseguita su iOS o Android tramite l&#39;interfaccia CLI di PhoneGap, l&#39;app si apre nella pagina seguente, che include un collegamento a ogni API dispositivo che illustra:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 Il codice sorgente per ciascuno di questi componenti API dispositivo è [disponibile su Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Per maggiori dettagli sull&#39;utilizzo di ciascuna API, si consiglia di consultare la documentazione [del plug-in](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)Cordova.
+Per maggiori dettagli sull&#39;utilizzo di ciascuna API, si consiglia di consultare la [documentazione del plug-in Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
 ## Passaggi successivi {#the-next-steps}
 
-Consultate [Tracciare le prestazioni delle app con  Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
+Consultate [Tenere traccia delle prestazioni delle app con  Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
