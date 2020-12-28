@@ -18,11 +18,11 @@ ht-degree: 12%
 ---
 
 
-# AEM Communities Note sulla versione {#aem-communities-release-notes}
+#  AEM Communities Note sulla versione {#aem-communities-release-notes}
 
-Questa sezione fornisce informazioni sui miglioramenti apportati agli AEM Communities a partire dalla versione 6.3. Per ulteriori informazioni sulle nuove funzioni, consulta [Novità di AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
+Questa sezione contiene informazioni sui miglioramenti apportati ad  AEM Communities a partire dalla versione 6.3. Per ulteriori informazioni sulle nuove funzioni, vedere [Novità in AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
-To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
+Per ottenere la versione più recente, consultare la sezione [Distribuzione di Communities](/help/communities/deploy-communities.md#latest-releases) della documentazione.
 
 ## Miglioramenti principali {#main-improvements}
 
@@ -61,17 +61,17 @@ Moderazione:
 
 Compatibilità generale con le modifiche fondamentali di AEM 6.4.
 
-Nota: tutte queste funzioni sono disponibili anche per AEM 6.3. Controlla le note di rilascio dei AEM Communities per [6.3](https://helpx.adobe.com/it/experience-manager/6-3/release-notes.html).
+Nota: tutte queste funzioni sono disponibili anche per AEM 6.3. Controllare le  note sulla versione di AEM Communities per [6.3](https://helpx.adobe.com/it/experience-manager/6-3/release-notes.html).
 
 ## Problemi noti {#known-issues}
 
-* **Moderazione** - Impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
-* **Console** - Il collegamento Password o Nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
+* **Moderazione** : impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
+* **Console** : il collegamento Password o Nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
 
-## Seleziona funzioni {#select-features}
+## Selezionare le funzioni {#select-features}
 
-Il punteggio di esperti (*fornito da Sensei*) è utilizzato per abilitare la gamificazione, che è un modo efficace per incoraggiare e premiare comportamenti comunitari di valore. Può essere utilizzato anche per identificare esperti a scopo di raccomandazione o marketing.
+Il punteggio di esperti (*fornito da Sensei*) viene utilizzato per abilitare la gamificazione, che è un modo efficace per incoraggiare e premiare i comportamenti della community. Può essere utilizzato anche per identificare esperti a scopo di raccomandazione o marketing.
 
-## Manifestazioni {#demonstrations}
+## Dimostrazioni {#demonstrations}
 
-Tutte queste funzioni possono essere dimostrate utilizzando la [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponibile pubblicamente su GitHub.com quando si utilizza lo scenario demo AEM Communities e anche all&#39;interno della nuova implementazione di riferimento We.Retail.
+Tutte queste funzionalità possono essere dimostrate utilizzando la [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponibile pubblicamente su GitHub.com quando si utilizza lo scenario dimostrativo  AEM Communities e anche all&#39;interno della nuova implementazione di riferimento di We.Retail.
