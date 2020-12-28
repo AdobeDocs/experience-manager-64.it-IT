@@ -18,9 +18,9 @@ ht-degree: 57%
 ---
 
 
-# Adding Search&amp;Promote features to your page {#adding-search-promote-features-to-your-page}
+# Aggiunta di funzionalità di Search&amp;Promote alla pagina {#adding-search-promote-features-to-your-page}
 
-To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
+Per integrare le funzionalità di Search&amp;Promote nel sito Web, utilizzate i componenti [!UICONTROL Search&amp;Promote] per aggiungere alle pagine le seguenti funzionalità:
 
 * Ricerca per parola chiave
 * Pagina dei risultati di ricerca
@@ -39,7 +39,7 @@ Sul server Search&amp;Promote sono configurati i facet, così come le informazio
   </tr> 
   <tr> 
    <td>Banner</td> 
-   <td>Visualizza gli annunci pubblicitari dei banner. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td> 
+   <td>Visualizza gli annunci pubblicitari dei banner. I banner sono selezionati in base ai dati raccolti attraverso i Search&amp;Promote.<br /> </td> 
   </tr> 
   <tr> 
    <td>Breadcrumb</td> 
@@ -84,20 +84,20 @@ Il componente **[!UICONTROL Paginazione]** consente agli utenti di navigare tra 
 
 ![cercappaginazione](assets/srchpagination.png)
 
-You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
+È possibile configurare le seguenti proprietà del componente in modalità [!UICONTROL Modifica] per controllare il comportamento runtime:
 
-* **[!UICONTROL Nascondi pagina]** a risultato singolo - Selezionate questa opzione per nascondere i controlli di navigazione della pagina quando la ricerca restituisce una singola pagina di risultati.
+* **[!UICONTROL Nascondi pagina]**  a risultato singolo: selezionate questa opzione per nascondere i controlli di navigazione della pagina quando la ricerca restituisce una singola pagina di risultati.
 * **[!UICONTROL Nascondi prima/ultimo]** : selezionate questa opzione per impedire agli utenti di passare alla prima o all’ultima pagina di risultati.
-* **[!UICONTROL Nascondi precedente/successivo]** - Determina se gli utenti possono passare alle pagine dei risultati relative alla pagina corrente.
-* **[!UICONTROL Nascondi visualizzazione tutto]** - Determina se l&#39;utente può consolidare tutti i risultati di ricerca in una singola pagina. In genere, la fornitura di dati impaginati rende più efficiente l&#39;uso delle risorse del server. Seleziona questa opzione per impedire il trasferimento di set di dati di grandi dimensioni in un messaggio di risposta.
+* **[!UICONTROL Nascondi precedente/successivo]** : determina se gli utenti possono passare alle pagine dei risultati relative alla pagina corrente.
+* **[!UICONTROL Nascondi visualizzazione tutto]** : determina se l&#39;utente può consolidare tutti i risultati di ricerca in una singola pagina. In genere, la fornitura di dati impaginati rende più efficiente l&#39;uso delle risorse del server. Seleziona questa opzione per impedire il trasferimento di set di dati di grandi dimensioni in un messaggio di risposta.
 
 ## Abilita il filtraggio dei risultati per facet. {#enabling-the-filtering-of-results-by-facets}
 
-Puoi consentire agli utenti di filtrare i risultati della ricerca per facet. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Quando si utilizzano questi componenti, è necessario includere anche il componente **[!UICONTROL Breadcrumb]**. Le Breadcrumb indicano i filtri attuali utilizzati.
+Puoi consentire agli utenti di filtrare i risultati della ricerca per facet. I componenti Facet **[!UICONTROL Elenco caselle di controllo]**, **[!UICONTROL Facet a discesa]** e **[!UICONTROL Facet elenco collegamenti]** consentono agli utenti di selezionare uno o più facet per il filtro. Quando si utilizzano questi componenti, è necessario includere anche il componente **[!UICONTROL Breadcrumb]**. Le Breadcrumb indicano i filtri attuali utilizzati.
 
-The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+I componenti **[!UICONTROL Facet elenco di controllo]**, **[!UICONTROL Facet a discesa]** e **[!UICONTROL Facet elenco collegamenti]** dispongono delle seguenti proprietà che è possibile configurare in modalità **[!UICONTROL Modifica]**:
 
-* **[!UICONTROL Nome]** facet - Il nome del facet utilizzato per i filtri.
+* **[!UICONTROL Nome]**  facet: il nome del facet utilizzato per i filtri.
 
 Il componente **[!UICONTROL Facet elenco casella di selezione]** mostra un elenco di facet accompagnati da una casella di selezione. Utilizza un **[!UICONTROL Facet elenco casella di selezione]** in modo che gli utenti possano visualizzare un sottoinsieme di risultati che includono elementi da più facet. Ad esempio, il facet Marchio è appropriato poiché vari marchi forniscono lo stesso tipo di prodotto.
 
@@ -117,7 +117,7 @@ I membri dei facet vengono visualizzati come un elenco di collegamenti. Il testo
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. L&#39;uso di componenti filtranti di tipo multiplo può fornire combinazioni di filtri efficaci.
+I collegamenti nell&#39;elenco vengono modificati anche quando un filtro viene applicato da un altro tipo di componente [!UICONTROL Search&amp;Promote]. L&#39;uso di componenti filtranti di tipo multiplo può fornire combinazioni di filtri efficaci.
 
 Il componente **[!UICONTROL Breadcrumb]** consente ai clienti di vedere i filtri attualmente applicati ai risultati di ricerca, nell&#39;ordine in cui sono stati applicati. I clienti possono selezionare gli elementi nella breadcrumb per tornare a quella combinazione di filtri.
 
@@ -125,29 +125,29 @@ Il componente **[!UICONTROL Breadcrumb]** consente ai clienti di vedere i filtri
 
 Puoi configurare le seguenti proprietà per Breadcrumb in modalità Modifica per personalizzare l&#39;aspetto del componente:
 
-* **[!UICONTROL Delimitatore]** - Consente di definire la stringa di caratteri o caratteri da utilizzare come delimitatore tra ciascun percorso di navigazione. Il campo Delimiter accetta qualsiasi stringa di caratteri come input. L&#39;impostazione predefinita è: &quot;>&quot; (senza virgolette)
-* **[!UICONTROL Delimitatore]** finale - Consente di definire una stringa di caratteri o caratteri da visualizzare alla fine delle breadcrumb. Il campo Delimitatore finale accetta qualsiasi stringa di caratteri come input. L’impostazione predefinita è &quot;blank&quot; (cioè alla fine della linea di navigazione non viene visualizzato nulla)
+* **[!UICONTROL Delimitatore]**  - Consente di definire la stringa di caratteri o caratteri da utilizzare come delimitatore tra ciascuna breadcrumb. Il campo Delimiter accetta qualsiasi stringa di caratteri come input. L&#39;impostazione predefinita è: &quot;>&quot; (senza virgolette)
+* **[!UICONTROL Delimitatore]**  finale: consente di definire una stringa di caratteri o caratteri da visualizzare alla fine delle breadcrumb. Il campo Delimitatore finale accetta qualsiasi stringa di caratteri come input. L’impostazione predefinita è &quot;blank&quot; (cioè alla fine della linea di navigazione non viene visualizzato nulla)
 
 ## Aggiunta di caselle di ricerca {#adding-search-boxes}
 
-The **[!UICONTROL Search]** component enables customers to perform keyword searches. Aggiungi Componenti di ricerca in ogni pagina in cui si desidera fornire l&#39;accesso alla ricerca.
+Il componente **[!UICONTROL Search]** consente ai clienti di eseguire ricerche per parole chiave. Aggiungi Componenti di ricerca in ogni pagina in cui si desidera fornire l&#39;accesso alla ricerca.
 
-Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
+Configurare le seguenti proprietà nella modalità **[!UICONTROL Modifica]** per controllare il comportamento del runtime:
 
-* **[!UICONTROL Percorso]** pagina risultati - Percorso della pagina in cui sono visualizzati i risultati della ricerca.
-* **[!UICONTROL Abilita completamento]** automatico: selezionare questa opzione per fare in modo che le parole chiave di ricerca suggerite vengano visualizzate quando il cliente inizia a digitare nella casella di ricerca.
+* **[!UICONTROL Percorso]**  pagina risultati: percorso della pagina in cui sono visualizzati i risultati della ricerca.
+* **[!UICONTROL Abilita completamento]**  automatico: consente di visualizzare le parole chiave di ricerca suggerite quando il cliente inizia a digitare nella casella di ricerca.
 
 ![sandpsearch comp](assets/sandpsearchcomp.png)
 
 ## Aggiunta di banner {#adding-banners}
 
-The **[!UICONTROL Banners]** component displays banner advertisements according to the customer&#39;s Search&amp;Promote searches. La logica sul server Search&amp;Replace determina quale banner mostrare. Ad esempio, una ricerca sui jeans potrebbe far apparire un banner legato alla moda. Il filtro sul reparto Uomini potrebbe affinare ulteriormente la scelta del banner.
+Il componente **[!UICONTROL Banner]** visualizza gli annunci pubblicitari sui banner in base alle ricerche effettuate dal cliente. La logica sul server Search&amp;Replace determina quale banner mostrare. Ad esempio, una ricerca sui jeans potrebbe far apparire un banner legato alla moda. Il filtro sul reparto Uomini potrebbe affinare ulteriormente la scelta del banner.
 
-The **[!UICONTROL Banners]** component provides one configurable property named **[!UICONTROL Banner Area]**. In **[!UICONTROL Edit]** mode, select one of the property values to specify how the banner appears. Il servizio di Search&amp;Promote determina l&#39;elenco di valori selezionabili.
+Il componente **[!UICONTROL Banner]** fornisce una proprietà configurabile denominata **[!UICONTROL Banner Area]**. In modalità **[!UICONTROL Modifica]**, selezionate uno dei valori delle proprietà per specificare la modalità di visualizzazione del banner. Il servizio di Search&amp;Promote determina l&#39;elenco di valori selezionabili.
 
 ## Esempio di pagina di ricerca Search&amp;Promote {#example-search-promote-search-page}
 
 Questo diagramma mostra i componenti che vengono aggiunti a una pagina per creare la sottostante pagina completamente funzionale dei risultati di Search&amp;Promote.
 
-![1328213789109](assets/1328213789109.png) , ![esempio](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandpageexample](assets/sandppageexample.png)
 
