@@ -18,27 +18,27 @@ ht-degree: 0%
 ---
 
 
-# Integrazione con Target con i frammenti esperienza{#target-integration-with-experience-fragments}
+# Integrazione di Target con i frammenti esperienza{#target-integration-with-experience-fragments}
 
 >[!NOTE]
 >
->Questa funzionalità richiede l&#39;applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o successivo.
+>Questa funzionalità richiede l&#39;applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
 
-Puoi esportare frammenti [](/help/sites-authoring/experience-fragments.md)esperienza creati in Adobe Experience Manager (AEM) in  Adobe Target. Possono quindi essere utilizzati come offerte nelle attività Target, per sottoporre a test e personalizzare le esperienze su scala. Questo consente di combinare la facilità d&#39;uso e la potenza del AEM con le potenti funzionalità di Automated Intelligence (AI) e di machine Learning (ML) di Target.
+È possibile esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creati in Adobe Experience Manager (AEM), in  Adobe Target. Possono quindi essere utilizzati come offerte nelle attività Target, per sottoporre a test e personalizzare le esperienze su scala. Questo consente di combinare la facilità d&#39;uso e la potenza del AEM con le potenti funzionalità di Automated Intelligence (AI) e di machine Learning (ML) di Target.
 
 ## Prerequisiti {#prerequisites}
 
 Sono necessarie diverse azioni:
 
-1. Devi integrare AEM con Target. See [Integrating with Adobe Target](/help/sites-administering/target.md) for more information.
-1. I frammenti esperienza vengono esportati dall’istanza di creazione, pertanto è necessario [configurare Link Externalizer](/help/sites-developing/externalizer.md) sull’istanza di creazione per garantire che eventuali collegamenti siano esternalizzati per l’istanza di pubblicazione.
+1. Devi integrare AEM con Target. Per ulteriori informazioni, vedere [Integrazione con  Adobe Target](/help/sites-administering/target.md).
+1. I frammenti esperienza vengono esportati dall’istanza di creazione, pertanto è necessario [configurare l’esternalizzatore collegamento](/help/sites-developing/externalizer.md) nell’istanza di creazione per garantire che eventuali collegamenti siano esternalizzati per l’istanza di pubblicazione.
 
 ## Aggiungi configurazione cloud {#add-the-cloud-configuration}
 
-Prima di esportare un frammento è necessario aggiungere la configurazione **** Cloud per **Adobe Target** al frammento o alla cartella:
+Prima di esportare un frammento è necessario aggiungere al frammento o alla cartella **Configurazione cloud** per **Adobe Target**:
 
-1. Navigate to the **Experience Fragments** console.
-1. Aprire Proprietà **** pagina per la cartella o il frammento appropriato.
+1. Andate alla console **Frammenti esperienza**.
+1. Aprire **Proprietà pagina** per la cartella o il frammento appropriato.
 
    >[!NOTE]
    >
@@ -46,10 +46,10 @@ Prima di esportare un frammento è necessario aggiungere la configurazione **** 
    >
    >Se aggiungi la configurazione cloud allo stesso frammento esperienza, la configurazione viene ereditata da tutte le varianti.
 
-1. Selezionate la scheda **Cloud Services** .
+1. Selezionare la scheda **Cloud Services**.
 
-1. In Configurazione **** Cloud Service, selezionate **Adobe Target** dall&#39;elenco a discesa.
-1. In **Adobe Target**, selezionate la configurazione appropriata.
+1. In **Configurazione Cloud Service**, selezionare **Adobe Target** dall&#39;elenco a discesa.
+1. In **Adobe Target**, selezionare la configurazione appropriata.
 
 1. **Salva e chiudi**.
 
@@ -70,29 +70,29 @@ Per esportare un frammento esperienza da AEM a Target (dopo aver specificato la 
    >
    >Deve essere una variante Web del frammento esperienza.
 
-1. Toccate o fate clic su **Esporta per  Adobe Target**.
+1. Toccate/fate clic su **Esporta in  Adobe Target**.
 
    >[!NOTE]
    >
-   >Se il frammento esperienza è già stato esportato, selezionate **Aggiorna in  Adobe Target**.
+   >Se il frammento esperienza è già stato esportato, selezionare **Aggiorna in  Adobe Target**.
 
-1. Toccate/fate clic su **Esporta senza pubblicare** o **pubblicare** come necessario.
+1. Toccate/fate clic su **Esporta senza pubblicare** o **Pubblica** come necessario.
 
    >[!NOTE]
    >
    >Se selezionate** Publish**, il frammento esperienza verrà pubblicato immediatamente e inviato a Target.
 
-1. Toccate o fate clic su **OK** nella finestra di dialogo di conferma.
+1. Toccate/fate clic su **OK** nella finestra di dialogo di conferma.
 
    Il frammento esperienza deve ora essere in Target.
 
 >[!NOTE]
 >
->In alternativa, potete eseguire l’esportazione dall’editor pagina utilizzando comandi comparabili nel menu Informazioni [](/help/sites-authoring/author-environment-tools.md#page-information) pagina.
+>In alternativa, è possibile eseguire l&#39;esportazione dall&#39;Editor pagina utilizzando comandi comparabili nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
 
 ## Utilizzo dei frammenti esperienza in Target {#using-your-experience-fragments-in-target}
 
-Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte in Target. Consulta la documentazione [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) specifica di Target per saperne di più sui risultati ottenuti.
+Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte in Target. Consulta la [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) per saperne di più sui risultati ottenuti.
 
 ## Eliminazione di un frammento esperienza già esportato in Target {#deleting-an-experience-fragment-already-exported-to-target}
 
