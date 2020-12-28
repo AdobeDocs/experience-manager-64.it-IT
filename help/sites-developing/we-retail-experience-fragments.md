@@ -30,7 +30,7 @@ Questo supporta l’utilizzo headless Content Management System (CMS), dove gli 
 
 >[!NOTE]
 >
->I **[frammenti di contenuto](/help/sites-developing/we-retail-content-fragments.md)**e i **frammenti esperienza**sono funzioni diverse in AEM:
+>I **[frammenti di contenuto](/help/sites-developing/we-retail-content-fragments.md)** e i **frammenti esperienza** sono funzioni diverse in AEM:
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
@@ -41,11 +41,11 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 
 ## Dove creare frammenti esperienza in We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Seleziona **Frammenti esperienza** nel pannello di navigazione globale. Qui puoi configurare, [creare](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [modificare](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) i frammenti esperienza e tutte le [varianti](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)correlate.
+Seleziona **Frammenti esperienza** nel pannello di navigazione globale. Qui si configura [creare](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) e [modificare](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) i frammenti esperienza e tutte le relative [varianti](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
 ## Dove utilizzare i frammenti esperienza in We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Puoi usare i tuoi frammenti [](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) esperienza (come con qualsiasi altro componente) su [qualsiasi pagina](/help/sites-authoring/editing-content.md) in **Siti** nella navigazione globale.
+È possibile utilizzare i [frammenti esperienza](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (come con qualsiasi altro componente) su [qualsiasi pagina](/help/sites-authoring/editing-content.md) in **Siti** nella navigazione globale.
 
 ## Ulteriori informazioni {#further-information}
 
