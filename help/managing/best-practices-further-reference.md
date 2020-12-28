@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Elenco di controllo - Ulteriore riferimento{#the-checklist-further-reference}
 
-Questa pagina fornisce ulteriori dettagli per approfondire e/o ampliare i documenti e i principi coperti dall&#39;elenco di controllo [Gestione dei progetti - Best Practices](/help/managing/best-practices.md).
+Questa pagina fornisce ulteriori dettagli per approfondire e/o completare i documenti e i principi coperti dalla [Lista di controllo Gestione progetti - Best Practices](/help/managing/best-practices.md).
 
 ## AEM - Cosa userete? {#aem-what-will-you-be-using}
 
@@ -28,9 +28,9 @@ Questa pagina fornisce ulteriori dettagli per approfondire e/o ampliare i docume
 >
 >Gli elenchi di cui alla presente sottosezione non sono esaustivi, ma sono intesi come introduzione.
 
-### Funzioni in AEM {#features-within-aem}
+### Funzioni all&#39;interno di AEM {#features-within-aem}
 
-Durante l&#39;implementazione di AEM (in particolare per la prima volta) dovrete rivedere le [funzionalità e i flussi di lavoro di AEM](https://www.adobe.com/it/marketing/experience-manager.html) per essere certi di quali aree desiderate o necessarie.
+Durante l&#39;implementazione di AEM (in particolare per la prima volta) sarà necessario rivedere le [funzionalità e flussi di lavoro di AEM](https://www.adobe.com/it/marketing/experience-manager.html) per essere certi delle aree desiderate e necessarie.
 
 Considerare le caratteristiche di AEM che si intende utilizzare e l&#39;impatto sulla progettazione; ad esempio:
 
@@ -43,13 +43,13 @@ Considerare le caratteristiche di AEM che si intende utilizzare e l&#39;impatto 
 * [Community](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Inoltre, per le diverse versioni di AEM, controllate le Note [sulla](/help/release-notes/release-notes.md)versione per vedere quando sono state aggiunte nuove funzioni.
+Inoltre, controllare le [Note sulla versione](/help/release-notes/release-notes.md), per le diverse versioni di AEM, per vedere quando sono state aggiunte nuove funzioni.
 
 ### Integrations (Integrazioni){#integrations}
 
 AEM può essere integrato con altri prodotti  Adobe e/o servizi di terze parti. Questi possono aumentare la potenza e le funzionalità a vostra disposizione.
 
-Consulta Integrazione [delle](/help/sites-administering/integration.md) soluzioni per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Integrazione delle soluzioni](/help/sites-administering/integration.md).
 
 ## Migrare o aggiornare? {#migrate-or-upgrade}
 
@@ -60,16 +60,16 @@ Una considerazione importante è se si desidera:
 
 Per passare da una versione precedente a quella corrente, sono disponibili due opzioni:
 
-* Usate Gestione [](/help/sites-administering/package-manager.md) pacchetti per esportare tutto il contenuto e il codice applicazione dal vecchio sistema al nuovo.
-* [Aggiornamento](/help/sites-deploying/upgrade.md) del vecchio sistema. Questa è la scelta consigliata nella maggior parte dei casi.
+* Utilizzate [Package Manager](/help/sites-administering/package-manager.md) per esportare tutto il contenuto e il codice dell&#39;applicazione dal vecchio sistema al nuovo.
+* [Il vecchio ](/help/sites-deploying/upgrade.md) sistema è stato aggiornato. Questa è la scelta consigliata nella maggior parte dei casi.
 
-## Regole di base {#basic-ground-rules}
+## Regole di base del terreno {#basic-ground-rules}
 
 Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima possibile. Comprendono:
 
 >[!NOTE]
 >
->Questi punti sono generici, l&#39;elenco di controllo [Best Practices](/help/managing/best-practices.md) contiene informazioni specifiche relative alle AEM.
+>Questi punti sono generici, la [lista di controllo delle best practice](/help/managing/best-practices.md) contiene informazioni specifiche relative alle AEM.
 
 * **Ruoli**
 
@@ -84,7 +84,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
 * **Partecipazione**
 
-   Coinvolgendo al più presto le parti interessate è possibile incoraggiarle a diventare *parti interessate* al progetto, aumentando così il loro impegno per il suo successo.
+   Coinvolgendo al più presto le parti interessate è possibile incoraggiarle a diventare *parti interessate* nel progetto, aumentando così il loro impegno per il suo successo.
 
    * Dal punto di vista del cliente, questo include gli autori che dovranno collaborare con il sistema giorno per giorno.
    * All&#39;interno del team di progetto, questo includerà anche i responsabili della garanzia della qualità. Più comprendono le esigenze del cliente e meglio possono pianificare i test.
@@ -102,7 +102,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
 * **Strumenti di tracciamento**
 
-   Sono disponibili molti strumenti per il tracciamento delle informazioni su bug, attività e altri aspetti del progetto. Per ulteriori informazioni, consulta [Panoramica sugli strumenti](#overview-of-potential-tools) potenziali.
+   Sono disponibili molti strumenti per il tracciamento delle informazioni su bug, attività e altri aspetti del progetto. Per ulteriori informazioni, vedere [Panoramica sugli strumenti potenziali](#overview-of-potential-tools).
 
    * Il punto chiave da notare qui è di mantenere una sola copia delle informazioni e condividere le informazioni (e quindi l&#39;accesso allo strumento in uso). Questo faciliterà la manutenzione e aiuterà a prevenire le discrepanze.
 
@@ -113,7 +113,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
    * le singole versioni (se viene utilizzato un processo di rilascio iterativo, e indipendentemente dal fatto che siano consegnate ai clienti o al team di test interno).
    * il progetto AEM.
    * l&#39;intero progetto; compresi eventuali software di terze parti, il loro impatto sui test, i problemi organizzativi e molti altri.
-   * Per alcuni aspetti può anche essere utile indicare ciò che *non* rientra nell&#39;ambito del progetto. Ciò può aiutare a prevenire confusione e ipotesi errate, anche se dovrebbe essere limitato a questioni essenziali.
+   * Per alcuni aspetti può anche essere utile indicare che cosa è *non* nell&#39;ambito del progetto. Ciò può aiutare a prevenire confusione e ipotesi errate, anche se dovrebbe essere limitato a questioni essenziali.
 
 * **Generazione rapporti**
 
@@ -127,7 +127,7 @@ Come per qualsiasi progetto, è fondamentale stabilire regole di base il prima p
 
    * Definire eventuali ipotesi in corso.
 
-Tali informazioni possono essere definite all&#39;interno di un manuale del progetto; l&#39;utilizzo di un Wiki può anche contribuire a garantire che le modifiche in corso vengano gestite in modo efficiente. In ogni caso, i fattori chiave sono i seguenti:
+Tali informazioni possono essere definite all&#39;interno di un manuale del progetto; l&#39;utilizzo di un wiki può anche garantire che le modifiche in corso vengano gestite in modo efficiente. In ogni caso, i fattori chiave sono i seguenti:
 
 * Le informazioni sono definite e mantenute
 * Le informazioni sono comunicate chiaramente a tutte le persone interessate. Anche se la prassi standard di gestione dei progetti non può essere ripetuta abbastanza spesso da consentire una chiara definizione del ruolo e una buona comunicazione per realizzare o interrompere un progetto.
@@ -142,7 +142,7 @@ Questi indicatori possono essere:
 * Business:
 
    * Utilizzato per misurare i principali obiettivi aziendali.
-   * È importante scegliere KPI appropriati per la tua attività/scenario con chiare definizioni di cosa sono, come verranno misurati, come verranno utilizzati e da chi.
+   * È importante scegliere KPI appropriati per la vostra attività/scenario con chiare definizioni di cosa sono, come verranno misurati, come verranno utilizzati e da chi.
 
 * Spettacolo:
 
@@ -153,22 +153,22 @@ Alcuni indicatori, ma non tutti, possono essere basati sulle metriche di destina
 
 ### Metriche di destinazione {#target-metrics}
 
-Le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, ovvero una definizione degli obiettivi prestazionali che si desidera raggiungere e che può essere utilizzata per definire i [KPI (Indicatori prestazioni chiave)](#key-performance-indicators-and-target-metrics).
+Le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, ovvero una definizione degli obiettivi prestazionali che si desidera raggiungere e che può essere utilizzata per definire i [KPI (Key Performance Indicators)](#key-performance-indicators-and-target-metrics).
 
-È possibile definire molte metriche, ma spesso quelle definite coprono gli obiettivi per prestazioni e concorrenza. In particolare, fattori che possono essere difficili da quantificare e che sono spesso soggetti a valutazioni *emotive* :
+È possibile definire molte metriche, ma spesso quelle definite coprono gli obiettivi per prestazioni e concorrenza. In particolare, fattori che possono essere difficili da quantificare e che sono spesso soggetti a *valutazione emotiva*:
 
-* &quot;il nostro sito web è *troppo lento* oggi&quot; - quando è *lento* qualificarsi?
+* &quot;il nostro sito Web è *troppo lento* oggi&quot; - quando *lento* è qualificato?
 
-* &quot;tutto *si arresta* quando il mio collega accede&quot; - quanti utenti simultanei possono supportare il sistema?
-* &quot;quando io cerco, il sistema *si ferma* &quot; - quali richieste di ricerca stanno influenzando il sistema?
-* &quot;ci vogliono *delle pagine* per scaricare il file&quot; - quali sono i tempi di download accettabili (in condizioni di rete normali)?
+* &quot;tutto *si arresta* quando il mio collega effettua l&#39;accesso&quot; - quanti utenti simultanei possono supportare il sistema?
+* &quot;quando si esegue una ricerca, il sistema *si chiude in un blocco* &quot; - quali richieste di ricerca influiscono sul sistema?
+* &quot;il download del file richiede *ages*&quot; - quali sono i tempi di download accettabili (in condizioni di rete normali)?
 
 Le metriche di destinazione sono definite all&#39;inizio di un progetto per:
 
 * indicare le dimensioni previste del sito Web che verrà offerto
 * indicare la qualità minima che si desidera ottenere
 * definire il modo in cui tali fattori saranno effettivamente misurati
-* essere utilizzato come base per gli indicatori di prestazioni [chiave](#key-performance-indicators-and-target-metrics)
+* essere utilizzato come base per [Indicatori prestazioni chiave](#key-performance-indicators-and-target-metrics)
 
 Quando si definiscono le metriche di destinazione, occorre sempre prestare attenzione:
 
@@ -192,7 +192,7 @@ Se utilizzate correttamente, queste metriche possono fornire uno strumento utile
 
 Tutte le metriche da misurare saranno in qualche modo influenzate dalla progettazione del progetto. Al contrario, molti problemi saranno risolti al meglio con le modifiche alla progettazione.
 
-Pertanto, è necessario definire le metriche di destinazione *prima* di decidere sulla progettazione. Questo consente di ottimizzare la progettazione in base a questi fattori. Una volta sviluppato il progetto, sarà difficile apportare modifiche ai principi di progettazione di base.
+Pertanto, è necessario definire le metriche di destinazione *prima di* decidere in merito alla progettazione. Questo consente di ottimizzare la progettazione in base a questi fattori. Una volta sviluppato il progetto, sarà difficile apportare modifiche ai principi di progettazione di base.
 
 Quando create la struttura per il sito Web, seguite la struttura consigliata per AEM siti Web. Assicuratevi di comprendere i seguenti problemi e/o principi:
 
@@ -259,7 +259,7 @@ I tempi di risposta desiderati saranno diversi negli ambienti di creazione e pub
       * il contenuto è memorizzato nella cache
       * è applicato il bilanciamento del carico
 
-#### Impostazione dei tempi di risposta di destinazione {#setting-target-response-times}
+#### Impostazione dei tempi di risposta della destinazione {#setting-target-response-times}
 
 Come si può decidere sui tempi di risposta raggiungibili (medi)? Spesso si tratta di una questione di esperienza:
 
@@ -287,7 +287,7 @@ Sono disponibili diversi meccanismi per monitorare i tempi di risposta:
 
 * **Monitoraggio dei tempi di risposta con AEM request.log**
 
-   Un buon punto di partenza per l&#39;analisi delle prestazioni è il registro delle richieste. Tra le altre informazioni, potete utilizzarlo per visualizzare i tempi di risposta delle singole richieste. Per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
+   Un buon punto di partenza per l&#39;analisi delle prestazioni è il registro delle richieste. Tra le altre informazioni, potete utilizzarlo per visualizzare i tempi di risposta delle singole richieste. Per ulteriori informazioni, vedere [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
 * **Monitoraggio dei tempi di risposta con commenti HTML**
 
@@ -319,15 +319,15 @@ Questi devono essere pianificati e integrati fin dall&#39;inizio del progetto. I
 
 * **Monitoraggio dei tempi di risposta della ricerca con AEM request.log**
 
-   Anche in questo caso, request.log può essere utilizzato per monitorare i tempi di risposta per le richieste di ricerca; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
+   Anche in questo caso, request.log può essere utilizzato per monitorare i tempi di risposta per le richieste di ricerca; per ulteriori informazioni, vedere [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
 * **Meccanismi programmati per misurare i tempi di risposta delle ricerche**
 
-   Per personalizzare le informazioni raccolte sulle richieste di ricerca e le relative prestazioni, si consiglia di includere la raccolta di informazioni nel codice sorgente del progetto; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
+   Per personalizzare le informazioni raccolte sulle richieste di ricerca e le relative prestazioni, si consiglia di includere la raccolta di informazioni nel codice sorgente del progetto; per ulteriori informazioni, vedere [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
-### Concorrenza {#concurrency}
+### Convaluta {#concurrency}
 
-Il sito Web verrà reso disponibile a diversi utenti/visitatori, sia nell’ambiente di creazione che nell’ambiente di pubblicazione. I numeri sono spesso più numerosi di quelli utilizzati per i test, ma anche fluttuanti e difficili da prevedere. Il sito Web dovrà essere progettato per un numero medio di utenti/visitatori simultanei, senza che si noti un impatto negativo sulle prestazioni. Anche in questo caso `request.log` si può utilizzare per effettuare test di concorrenza; per ulteriori informazioni, consulta Ottimizzazione [delle](/help/sites-deploying/configuring-performance.md) prestazioni.
+Il sito Web verrà reso disponibile a diversi utenti/visitatori, sia nell’ambiente di creazione che nell’ambiente di pubblicazione. I numeri sono spesso più numerosi di quelli utilizzati per i test, ma anche fluttuanti e difficili da prevedere. Il sito Web dovrà essere progettato per un numero medio di utenti/visitatori simultanei, senza che si noti un impatto negativo sulle prestazioni. Anche in questo caso, la `request.log` può essere utilizzata per effettuare test di concorrenza; per ulteriori informazioni, vedere [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
 Le destinazioni per il numero di utenti simultanei dipendono dal tipo di ambiente:
 
@@ -375,9 +375,9 @@ Tuttavia, è preferibile disporre di un set limitato di metriche di base precise
 
 ## Sicurezza {#security}
 
-La sicurezza è fondamentale e una sfida in continua crescita. Essa ***deve*** essere considerata e pianificata fin dalle prime fasi del progetto.
+La sicurezza è fondamentale e una sfida in continua crescita. ***deve*** essere considerato e pianificato fin dalle prime fasi del progetto.
 
-La procedura [di elenco](/help/sites-administering/security-checklist.md) di controllo di sicurezza dettagliata da eseguire per garantire che l&#39;installazione AEM sia sicura al momento della distribuzione. Altri aspetti di sicurezza sono trattati in [Sicurezza (durante lo sviluppo)](/help/sites-developing/security.md) e Amministrazione [utente e sicurezza](/help/sites-administering/security.md).
+La [lista di controllo di sicurezza](/help/sites-administering/security-checklist.md) procedura dettagliata da eseguire per garantire che l&#39;installazione AEM sia sicura quando distribuita. Altri aspetti di sicurezza sono trattati in [Sicurezza (durante lo sviluppo)](/help/sites-developing/security.md) e [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
 
 ## Attività parallele e iterative {#parallel-and-iterative-tasks}
 
@@ -385,8 +385,8 @@ La procedura [di elenco](/help/sites-administering/security-checklist.md) di con
 >
 >Seguono:
 >
->* Offre una panoramica correlata alla *prima* implementazione di un progetto AEM.
->* è intesa come una panoramica astratta; vedere l&#39;elenco [di controllo del](/help/managing/best-practices.md) progetto per fasi/fasi/fasi/attività specifiche.
+>* Offre una panoramica relativa alla *prima* implementazione di un progetto AEM.
+>* è intesa come una panoramica astratta; vedere la [lista di controllo del progetto](/help/managing/best-practices.md) per le fasi/tappe/attività specifiche.
 >* Ogni scala temporale è teorica.
 
 >
@@ -398,8 +398,8 @@ Per una nuova implementazione di un progetto AEM standard è necessario consider
 * Consegna dal processo di vendita.
 * Implementazione dell&#39;applicazione del cliente (**Sviluppo**).
 * Installazione e configurazione dell&#39;infrastruttura (e dei processi correlati) sul sito del cliente (**Infrastruttura**).
-* Creazione (o migrazione) del contenuto (**Contenuto**).
-* Consegna alle operazioni (**manutenzione/supporto**).
+* Creazione (o migrazione) del contenuto (**Content**).
+* Consegna alle operazioni (**Manutenzione/Assistenza**).
 * Seguite i rilasci.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
@@ -410,11 +410,11 @@ Per tutti gli aspetti si raccomanda di utilizzare un approccio iterativo:
 
 >[!NOTE]
 >
->Dividete il lancio del progetto in **Soft Launch(s)** (disponibilità ridotta, iterazioni multiple) e **Hard Launch** (disponibilità completa - dal vivo) per consentire l&#39;ottimizzazione, l&#39;ottimizzazione e la formazione degli utenti in condizioni realistiche sull&#39;ambiente di produzione.
+>Suddividere il lancio del progetto in **Lanci morbidi** (disponibilità ridotta, iterazioni multiple) e **Lancio rigido** (disponibilità completa - Dal vivo) per consentire l&#39;ottimizzazione, l&#39;ottimizzazione e la formazione degli utenti in condizioni realistiche nell&#39;ambiente di produzione.
 
 >[!NOTE]
 >
->Per esempi di attività da eseguire (o valutare) durante il ciclo di vita del progetto, consultate la [lista](/help/managing/best-practices.md) di controllo del progetto.
+>Per esempi di attività da eseguire (o valutare) durante il ciclo di vita del progetto, vedere [Project Checklist](/help/managing/best-practices.md).
 
 Alcuni punti da sottolineare per ciascuna categoria sono:
 
@@ -530,10 +530,10 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
    <td><p>AEM fornisce una serie di meccanismi che consentono di monitorare, testare, esaminare ed eseguire il debug dell'applicazione; compresi:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modalità Sviluppatore</a></li>
-     <li>Console <a href="/help/sites-developing/hobbes.md">di prova</a></li>
+     <li>La <a href="/help/sites-developing/hobbes.md">console di test</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Dashboard operazioni</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Approfondimenti contenuto</a></li>
-     <li>Struttura <a href="/help/sites-authoring/author-environment-tools.md#content-tree">Contenuto</a></li>
+     <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">Struttura contenuto</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -542,7 +542,7 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>Selenio</td>
-   <td><a href="https://docs.seleniumhq.org/">Selenium</a> è uno strumento di test Open Source. I test vengono eseguiti direttamente nel browser, emulando il funzionamento degli utenti.</td>
+   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumis uno strumento di test Open Source. I test vengono eseguiti direttamente nel browser, emulando il funzionamento degli utenti.</td>
   </tr>
   <tr>
    <td>Microsoft Project</td>
@@ -550,28 +550,28 @@ Viene fornito l’elenco seguente per informarvi sugli strumenti che possono ess
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> è uno strumento Open Source per tenere traccia e gestire i dettagli dei bug software. I flussi di lavoro possono essere imposti sui dettagli del bug come richiesto.</td>
+   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais uno strumento Open Source per tenere traccia e gestire i dettagli dei bug software. I flussi di lavoro possono essere imposti sui dettagli del bug come richiesto.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> è un software per il controllo delle revisioni.</td>
+   <td><a href="https://git-scm.com/"></a> Gite un software di controllo revisione.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse è un IDE open source, composto da vari progetti. Si tratta della creazione di una piattaforma di sviluppo aperta, composta da framework estensibili, strumenti e tempi di esecuzione per la creazione, l'implementazione e la gestione del software nel corso del ciclo di vita.</p> <p>Per ulteriori informazioni, vedere <a href="/help/sites-developing/howto-projects-eclipse.md">Come sviluppare progetti AEM utilizzando Eclipse</a> .</p> </td>
+   <td><p>Eclipse è un IDE open source, composto da vari progetti. Si tratta della creazione di una piattaforma di sviluppo aperta, composta da framework estensibili, strumenti e tempi di esecuzione per la creazione, l'implementazione e la gestione del software nel corso del ciclo di vita.</p> <p>Per ulteriori informazioni, vedere <a href="/help/sites-developing/howto-projects-eclipse.md">Come sviluppare AEM progetti con Eclipse</a>.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionale (e quindi soggetto a costi di licenza) che offre una vasta gamma di funzioni. </p> <p>Per ulteriori informazioni, consulta <a href="/help/sites-developing/ht-intellij.md">Come sviluppare progetti AEM utilizzando IntelliJ IDEA</a> .</p> </td>
+   <td><p>Un IDE professionale (e quindi soggetto a costi di licenza) che offre una vasta gamma di funzioni. </p> <p>Per ulteriori informazioni, vedere <a href="/help/sites-developing/ht-intellij.md">Come sviluppare AEM progetti con IntelliJ IDEA</a>.</p> </td>
   </tr>
   <tr>
    <td>Paradiso</td>
-   <td><a href="https://maven.apache.org/">Maven</a> è uno strumento di gestione e comprensione del progetto software in grado di gestire il processo di creazione di un progetto (software e documentazione).</td>
+   <td><a href="https://maven.apache.org/"></a> Mavenis è uno strumento di gestione e comprensione del progetto software che può gestire il processo di creazione di un progetto (software e documentazione).</td>
   </tr>
  </tbody>
 </table>
 
-## Lettura {#further-reading}
+## Lettura successiva {#further-reading}
 
 Inoltre, sono di particolare interesse le seguenti sezioni:
 
