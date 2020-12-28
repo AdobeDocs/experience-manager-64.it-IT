@@ -40,7 +40,7 @@ Per attivare il livello di registro DEBUG, utilizzare CRX Explorer per impostare
 
 da eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
 
-Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
+Una riga nel file di debug in genere inizia con DEBUG, quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Esempio:
 
 ```xml
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -54,7 +54,7 @@ I livelli di registro sono i seguenti:
 | 2 | Avvertenza | L&#39;azione è riuscita ma ha incontrato dei problemi. CRX può funzionare o meno correttamente. |
 | 3 | Informazioni | L&#39;azione è riuscita. |
 
-## Opzioni dettagliate utilizzate per la risoluzione dei problemi {#verbose-option-used-for-troubleshooting}
+## Opzione dettagliata utilizzata per la risoluzione dei problemi {#verbose-option-used-for-troubleshooting}
 
 Quando avviate CRX, potete aggiungere l&#39;opzione -v (verbose) alla riga di comando come in: &quot;
 
