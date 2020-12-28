@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -28,9 +28,9 @@ L&#39;obiettivo di questa esercitazione con più parti è insegnare a uno svilup
 
 ## Esercitazione per sviluppatori WKND {#wknd-developer-tutorial}
 
-L&#39;esercitazione è disponibile [qui](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) o fai clic sull&#39;immagine sottostante.
+L&#39;esercitazione è disponibile [qui](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) oppure fare clic sull&#39;immagine sottostante.
 
-[![click image](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+[![click image](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## Concetti di base {#core-concepts}
 
@@ -46,4 +46,4 @@ Proseguite l&#39;esercitazione prima di approfondire i concetti sopra descritti.
 
 ## Passaggi successivi {#next-steps}
 
-Una volta completata l&#39; [esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), è consigliabile rivedere il documento [AEM Concetti](/help/sites-developing/the-basics.md) fondamentali per comprendere meglio alcune delle tecnologie e dei paradigmi di sviluppo di AEM.
+Dopo aver completato l&#39; [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), prendere in considerazione la revisione del documento [AEM Concetti di base](/help/sites-developing/the-basics.md) per comprendere meglio alcune delle tecnologie e dei paradigmi di sviluppo di AEM.
