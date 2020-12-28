@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# Mappatura dei dati dei componenti con  delle proprietà Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
+# Mappatura dei dati dei componenti con  proprietà Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Aggiungete componenti al framework che raccoglie i dati da inviare a  Adobe Analytics. I componenti progettati per raccogliere i dati di analisi memorizzano i dati nella variabile **** CQ appropriata. Quando aggiungete un componente di questo tipo a un framework, il framework visualizza l’elenco delle variabili CQ in modo da consentirvi di passare alla variabile **** Analytics appropriata.
+Aggiungete componenti al framework che raccoglie i dati da inviare a  Adobe Analytics. I componenti progettati per raccogliere i dati di analisi memorizzano i dati nella variabile **CQ** appropriata. Quando aggiungete un componente di questo tipo a un framework, il framework visualizza l&#39;elenco delle variabili CQ in modo da poter passare alla **variabile Analytics** appropriata.
 
 ![a-11](assets/aa-11.png)
 
-Quando la vista **** AEM è aperta, le variabili Analytics vengono visualizzate in Content Finder.
+Quando la **vista AEM** è aperta, le variabili Analytics vengono visualizzate in Content Finder.
 
 ![a-12](assets/aa-12.png)
 
-Potete mappare più variabili Analytics con la stessa variabile **** CQ.
+Potete mappare più variabili Analytics con la stessa **variabile CQ**.
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -39,13 +39,13 @@ I dati mappati vengono inviati a  Adobe Analytics quando la pagina viene caricat
 
 Per mappare le variabili dei componenti CQ con  proprietà dei rapporti Adobe Analytics, attenersi alla procedura descritta di seguito.
 
-1. Nella vista **** AEM, trascinate un componente di tracciamento dalla barra laterale alla cornice. Ad esempio, trascinare il componente **Pagina** dalla categoria **Generale** .
+1. Nella **vista AEM**, trascinate un componente di tracciamento dalla barra laterale al framework. Ad esempio, trascinare il componente **Page** dalla categoria **General**.
 
    ![a-13](assets/aa-13.png)
 
    Esistono diversi gruppi di componenti predefiniti: **Generale**, **Commerce**, **Communities**, **Search&amp;Promote** e **Altro**. L’istanza AEM può essere configurata per visualizzare diversi gruppi e componenti.
 
-1. Per mappare  variabili Adobe Analytics con variabili definite nel componente, trascinate una variabile **di** Analytics da Content Finder su un campo del componente di tracciamento. Ad esempio, trascinare `Page Name (pageName)` su `pagedata.title`.
+1. Per mappare  variabili Adobe Analytics con variabili definite nel componente, trascinate una **variabile Analytics** da Content Finder su un campo del componente di tracciamento. Ad esempio, trascinare `Page Name (pageName)` su `pagedata.title`.
 
    ![a-14](assets/aa-14.png)
 
@@ -57,19 +57,19 @@ Per mappare le variabili dei componenti CQ con  proprietà dei rapporti Adobe An
 
    >[!NOTE]
    >
-   >Potete mappare più variabili di Analytics (ad es. `props`, `eVars`, `events`) alla stessa variabile CQ (ad esempio `pagedata.title`)
+   >Potete mappare più variabili di Analytics (ad es. `props`, `eVars`, `events`) nella stessa variabile CQ (ad esempio `pagedata.title`)
 
    >[!CAUTION]
    >
    >Si consiglia vivamente di:
    >
-   >* `eVars` e `props` sono mappate su variabili CQ che iniziano con `pagedata.X` o `eventdata.X`
-   >* che gli eventi devono essere mappati su variabili che iniziano con `eventdata.events.X`
+   >* `eVars` e  `props` sono mappati su variabili CQ che iniziano con   `pagedata.X` o  `eventdata.X`
+   >* considerando che gli eventi devono essere mappati su variabili a partire da `eventdata.events.X`
 
 
 1. Per rendere il framework disponibile nell&#39;istanza di pubblicazione del sito, aprite la scheda **Page **della barra laterale e fate clic su **Attiva framework.**
 
-## Mappatura delle variabili relative al prodotto {#mapping-product-related-variables}
+## Mapping delle variabili relative al prodotto {#mapping-product-related-variables}
 
 AEM utilizza una convenzione per denominare variabili ed eventi relativi ai prodotti che devono essere mappati  proprietà relative ai prodotti Adobe Analytics:
 
@@ -79,8 +79,8 @@ AEM utilizza una convenzione per denominare variabili ed eventi relativi ai prod
 | `product.sku` | `product.sku` (variabile di conversione) | Il prodotto sku. |
 | `product.quantity` | `product.quantity` (variabile di conversione) | Numero di prodotti acquistati. |
 | `product.price` | `product.price` (variabile di conversione) | Il prezzo del prodotto. |
-| `product.events.*eventName*` | Gli eventi di successo da associare al prodotto nel rapporto. | `product.events` è il prefisso per gli eventi denominati *eventName.* |
-| `product.evars.*eVarName*` | Le variabili di conversione ( `eVar`) da associare al prodotto. | `product.evars` è il prefisso per  variabili di eVar denominate *eVarName.* |
+| `product.events.*eventName*` | Gli eventi di successo da associare al prodotto nel rapporto. | `product.events` è il prefisso per gli eventi denominati  *eventName.* |
+| `product.evars.*eVarName*` | Le variabili di conversione ( `eVar`) da associare al prodotto. | `product.evars` è il prefisso per  variabili di eVar denominate  *eVarName.* |
 
 Diversi componenti Commerce AEM utilizzano questi nomi di variabili.
 
@@ -88,11 +88,11 @@ Diversi componenti Commerce AEM utilizzano questi nomi di variabili.
 >
 >Non mappate la proprietà Prodotti Adobe Analytics  su una variabile CQ. La configurazione delle mappature relative ai prodotti come descritto nella tabella equivale a mappare la variabile Prodotti.
 
-## Verifica dei rapporti su  Adobe Analytics {#checking-reports-on-adobe-analytics}
+## Verifica dei rapporti  Adobe Analytics {#checking-reports-on-adobe-analytics}
 
 1. Effettuate l&#39;accesso al sito Web  Adobe Analytics utilizzando le stesse credenziali fornite per AEM.
 1. Assicurarsi che l&#39;RSID selezionato sia quello utilizzato nei passaggi precedenti.
-1. In **Rapporti** (sul lato sinistro della pagina) selezionate Conversione **** personalizzata, quindi Conversione **personalizzata 1-10** e selezionate la variabile corrispondente a `eVar7`
+1. In **Report** (sul lato sinistro della pagina) selezionare **Conversione personalizzata**, quindi **Conversione personalizzata 1-10** e selezionare la variabile corrispondente a `eVar7`
 
 1. A seconda della versione di  Adobe Analytics in uso, è necessario attendere in media 45 minuti prima che il rapporto venga aggiornato con il termine di ricerca utilizzato; ad esempio melanzana nell&#39;esempio
 
@@ -107,18 +107,18 @@ Inizialmente, quando aprite un framework Adobe Analytics , Content Finder contie
 * Eventi
 
 Quando un RSID viene selezionato, tutte le variabili appartenenti a tale RSID vengono aggiunte all&#39;elenco.\
-È `cf#` necessario per mappare le variabili Analytics alle variabili CQ presenti nei diversi componenti di tracciamento. Vedere Impostazione di un framework per il tracciamento di base.
+La `cf#` è necessaria per mappare le variabili di Analytics alle variabili CQ presenti nei diversi componenti di tracciamento. Vedere Impostazione di un framework per il tracciamento di base.
 
 A seconda della vista selezionata per il framework, Content Finder viene popolato da variabili Analytics (nella vista AEM) o da variabili CQ (nella vista Analytics).
 
 L’elenco può essere modificato nei seguenti modi:
 
-1. Nella **AEM visualizzazione**, l&#39;elenco può essere filtrato in base al tipo di variabile selezionato utilizzando i 3 pulsanti di filtro:
+1. In **AEM vista**, l&#39;elenco può essere filtrato a seconda del tipo di variabile selezionato utilizzando i 3 pulsanti di filtro:
 
-   * Se *non è selezionato alcun pulsante* , l’elenco mostra l’elenco completo.
-   * Se il pulsante **Traffico** è selezionato, nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Traffico
-   * Se è selezionato il pulsante **Conversione** , nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Conversione.
-   * Se il pulsante **Eventi** è selezionato, nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Eventi.
+   * Se *nessun pulsante* è selezionato, l&#39;elenco mostra l&#39;elenco completo.
+   * Se è selezionato il pulsante **Traffic**, nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Traffic
+   * Se è selezionato il pulsante **Conversion**, nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Conversion.
+   * Se è selezionato il pulsante **Eventi**, nell&#39;elenco verranno visualizzate solo le variabili appartenenti alla sezione Eventi.
 
    >[!NOTE]
    >
@@ -136,30 +136,30 @@ L’elenco può essere modificato nei seguenti modi:
 
 1. In  visualizzazione Adobe Analytics, Content Finder visualizza tutte le variabili CQ appartenenti ai componenti di tracciamento trascinati in CQ.
 
-   * Ad esempio, se il componente **Download **è l&#39; *unico trascinato* nella visualizzazione CQ (con due variabili mappabili *eventdata.downloadLink* ed *eventdata.events.startDownload*), Content Finder sarà simile al seguente quando si passa alla visualizzazione Adobe Analytics :
+   * Ad esempio, se il componente **Download **è l&#39; *unico trascinato* nella visualizzazione CQ (con due variabili mappabili *eventdata.downloadLink* e *eventdata.events.startDownload*), Content Finder sarà simile a questo quando si passa alla  visualizzazione Adobe Analytics:
 
    ![aa-22](assets/aa-22.png)
 
-   * Le variabili possono essere trascinate&amp;llate su qualsiasi  variabile Adobe Analytics appartenente a una delle 3 sezioni variabili (**Traffic**, **Conversion** and **Events**).
+   * Le variabili possono essere trascinate&amp;llate su qualsiasi  variabile Adobe Analytics appartenente a una delle 3 sezioni variabili (**Traffic**, **Conversion** e **Events**).
    * Quando si trascina un nuovo componente di tracciamento nel framework in visualizzazione CQ, le variabili CQ appartenenti al componente vengono automaticamente aggiunte a Content Finder(cf#)  visualizzazione Adobe Analytics.
 
    >[!NOTE]
    >
    >È possibile mappare una sola variabile CQ a una  variabile Adobe Analytics contemporaneamente
 
-## Utilizzo della visualizzazione AEM e di Analytics {#using-aem-view-and-analytics-view}
+## Utilizzo della vista AEM e della vista Analytics {#using-aem-view-and-analytics-view}
 
 In qualsiasi momento, gli utenti possono scegliere tra due modi diversi per visualizzare le mappature Adobe Analytics  in una pagina di framework. Le due viste forniscono una migliore panoramica delle mappature all&#39;interno del quadro, da due prospettive distinte.
 
-### AEM View {#aem-view}
+### Visualizzazione AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-Ad esempio, la vista **** AEM presenta le seguenti proprietà:
+Prendendo ad esempio l&#39;immagine precedente, la **AEM view** dispone delle seguenti proprietà:
 
 1. Questa è la visualizzazione predefinita all&#39;apertura del framework.
 1. Lato sinistro: Content Finder(cf#) è popolato da  variabili Adobe Analytics in base agli RSID selezionati.
-1. Intestazioni di tabulazione (**AEM vista** e vista **** Analytics): usate queste per passare da una vista all’altra.
+1. Intestazioni di tabulazione (**vista AEM** e **vista Analytics**): usate queste per passare da una vista all’altra.
 
 1. **Vista AEM**:
 
@@ -176,13 +176,13 @@ Ad esempio, la vista **** AEM presenta le seguenti proprietà:
       1. Tenete presente che un componente può essere eliminato solo dal framework in cui è stato creato e non può essere eliminato dai framework figlio nel senso tradizionale (possono essere solo sovrascritti).
 
 
-### Analytics View {#analytics-view}
+### Visualizzazione analisi {#analytics-view}
 
 ![aa-24](assets/aa-24.png)
 
-1. Per accedere a questa visualizzazione, passare alla scheda di visualizzazione **** Analytics nel framework.
+1. Per accedere a questa visualizzazione, passare alla scheda **Visualizzazione analisi** del framework.
 1. Lato sinistro: Content Finder (cf#) popolato da variabili CQ basate sui componenti trascinati nel framework in visualizzazione CQ.
-1. Intestazioni di tabulazione (**AEM vista** e vista **** Analytics): usate queste per passare da una vista all’altra.
+1. Intestazioni di tabulazione (**vista AEM** e **vista Analytics**): usate queste per passare da una vista all’altra.
 
 1. Le tre tabelle (Traffico, Conversione, Evento) elencano tutte  variabili Adobe Analytics disponibili. appartenenti ai RSID selezionati. Le mappature mostrate di seguito devono corrispondere a quelle mostrate nella visualizzazione AEM:
 
@@ -196,7 +196,7 @@ Ad esempio, la vista **** AEM presenta le seguenti proprietà:
       * Variabile di conversione ( `eVar3`) mappata a un&#39;espressione javascript aggiunta in linea facendo doppio clic sul campo della variabile CQ e immettendo manualmente il codice
    * **Evento**:
 
-      * Variabile evento ( `event1`) associata a un evento CQ ( `eventdata.events.pageView`)
+      * Variabile evento ( `event1`) mappata a un evento CQ ( `eventdata.events.pageView`)
 
 
 
@@ -204,9 +204,9 @@ Ad esempio, la vista **** AEM presenta le seguenti proprietà:
 >
 >È inoltre possibile compilare in linea la colonna della variabile CQ di qualsiasi tabella facendo doppio clic sul campo e aggiungendo del testo. Questi campi accettano javascript come input.
 >
->* Ad esempio, accanto a `prop3` puoi aggiungere
+>* Ad esempio, accanto a `prop3` è possibile aggiungere
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  per inviare il *titolo* di una pagina concatenata con la relativa *sezione* utilizzando *:* (due punti) e ha il prefisso *Adobe* come `prop3`
+   >  per inviare il *titolo* di una pagina concatenata con la relativa *sezione del sito* utilizzando *:* (due punti) e con il prefisso *Adobe* come `prop3`
 
 
 >[!CAUTION]
