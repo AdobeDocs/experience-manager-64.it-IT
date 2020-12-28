@@ -18,13 +18,13 @@ ht-degree: 2%
 ---
 
 
-# Admin Console{#admin-consoles}
+# Admin Console {#admin-consoles}
 
 Per impostazione predefinita, è stata disattivata la possibilità di passare all’interfaccia classica tramite le console di amministrazione. Pertanto, le icone a comparsa visualizzate quando si passa il mouse su determinate icone della console e si consente l’accesso all’interfaccia classica, non vengono più visualizzate.
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Ogni console con una versione dell’interfaccia classica in `/libs/cq/core/content/nav` può essere riattivata singolarmente, in modo che l’opzione dell’interfaccia **** classica venga nuovamente visualizzata sopra l’icona della console quando viene spostata.
+Ogni console con una versione dell&#39;interfaccia classica in `/libs/cq/core/content/nav` può essere riattivata singolarmente, in modo che l&#39;opzione **Interfaccia classica** venga nuovamente visualizzata sopra l&#39;icona della console quando viene spostata.
 
 In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
@@ -32,7 +32,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
    `/libs/cq/core/content/nav`
 
-   Ad esempio
+   Esempio
 
    [ `http://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](http://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
@@ -40,7 +40,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Create una sovrapposizione utilizzando l’opzione **Overlay Node** (Nodo sovrapposizione); ad esempio:
+1. Create una sovrapposizione utilizzando l&#39;opzione **Overlay Node**; ad esempio:
 
    * **Percorso**: `/apps/cq/core/content/nav/sites`
    * **Posizione sovrapposizione**: `/apps/`
@@ -50,7 +50,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. L’opzione Interfaccia **** classica è nuovamente disponibile come opzione di pover nella console di amministrazione.
+1. L&#39;opzione **Interfaccia classica** è nuovamente disponibile come opzione del puntatore nella console di amministrazione.
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
