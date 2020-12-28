@@ -26,13 +26,13 @@ Adobe Experience Manager Apps consente di aggiornare il contenuto dell&#39;appli
 
 Per configurare il servizio filtro di riferimento:
 
-* Aprite la console Apache Felix (**Configurazioni**) in:
+* Aprite la console Apache Felix (**Configurations**) all&#39;indirizzo:
 * https://&lt;server>:&lt;numero_porta>/system/console/configMgr
 * Effettuate il login come amministratore.
-* Nel menu **Configurazioni** , selezionare: *Filtro di riferimento Apache Sling*
+* Nel menu **Configurazioni**, selezionare: *Filtro di riferimento Apache Sling*
 * Selezionare il campo Consenti valori vuoti per consentire intestazioni referrer vuote o mancanti.
-* Click **Save** to save your changes.
+* Fare clic su **Salva** per salvare le modifiche.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-Per ulteriori informazioni, consultate Impostazioni [di configurazione](/help/sites-deploying/osgi-configuration-settings.md) OSGI e Elenco di controllo della [sicurezza - Problemi con il servizio di inoltro](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) delle richieste tra siti.
+Per ulteriori informazioni, vedere [Impostazioni di configurazione OSGI](/help/sites-deploying/osgi-configuration-settings.md) e [Elenco di controllo della sicurezza - Problemi con la falsificazione delle richieste tra siti](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
