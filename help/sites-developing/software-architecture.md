@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Architettura del software{#software-architecture}
+# Architettura software{#software-architecture}
 
 ## Progettazione per gli aggiornamenti {#design-for-upgrades}
 
@@ -56,6 +56,6 @@ Picchi e codice di test sono parte integrante di qualsiasi implementazione softw
 
 Gli script di migrazione dei dati, mentre il codice di produzione, vengono in genere eseguiti una sola volta all&#39;avvio iniziale di un sito. Pertanto, non appena il sito è attivo, questo diventa codice morto. Per evitare che venga creato codice di implementazione che dipende dagli script di migrazione, questi devono essere implementati nel proprio modulo. Questo ci permette anche di rimuovere e ritirare questo codice subito dopo il lancio, eliminando il codice morto dal sistema.
 
-### Seguire le convenzioni pubblicate di Paradiso nei file POM {#follow-published-maven-conventions-in-pom-files}
+### Seguite le convenzioni pubblicate in formato Maven nei file POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache ha pubblicato le convenzioni di stile all&#39;indirizzo [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). E&#39; meglio seguire queste convenzioni, in quanto renderà più facile reperire rapidamente nuove risorse.
+Apache ha pubblicato le convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). E&#39; meglio seguire queste convenzioni, in quanto renderà più facile reperire rapidamente nuove risorse.
