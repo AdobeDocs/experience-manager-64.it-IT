@@ -18,14 +18,14 @@ ht-degree: 0%
 ---
 
 
-# Accettazione e annullamento{#acceptance-and-sign-off}
+# Accettazione e cancellazione{#acceptance-and-sign-off}
 
-Come indicato, i test di [accettazione](/help/sites-developing/planning.md) sono una categoria speciale di test utilizzati per verificare che:
+Come indicato, i [test di accettazione](/help/sites-developing/planning.md) sono una categoria speciale di test utilizzata per verificare che:
 
 * Project soddisfa i requisiti del cliente.
 * Il cliente accetta il progetto.
 
-Devono essere definiti dal cliente e dal project manager. Essi hanno particolare rilevanza in quanto sono spesso connessi alla fatturazione finale.
+Devono essere definiti dal cliente e dal project manager. Essi hanno particolare rilevanza in quanto sono spesso legati alla fatturazione finale.
 
 Per questo motivo devono essere:
 
