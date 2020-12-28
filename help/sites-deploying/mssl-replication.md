@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Replica mediante SSL reciproco{#replicating-using-mutual-ssl}
+# Replica con SSL reciproco{#replicating-using-mutual-ssl}
 
 Configurate AEM in modo che un agente di replica nell’istanza di creazione utilizzi SSL (MSSL) reciproco per connettersi all’istanza di pubblicazione. Utilizzando MSSL, l’agente di replica e il servizio HTTP nell’istanza di pubblicazione utilizzano i certificati per l’autenticazione reciproca.
 
@@ -49,7 +49,7 @@ La configurazione di MSSL per la replica prevede l&#39;esecuzione dei seguenti p
 
 Generate una chiave privata e un certificato in formato JKS. La chiave privata è memorizzata in un file KeyStore e il certificato è memorizzato in un file TrustStore. Utilizzate [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) per creare entrambi.
 
-Per creare la chiave privata e la credenziale, eseguite i seguenti passaggi tramite Java `keytool` :
+Per creare la chiave privata e la credenziale, eseguite i seguenti passaggi utilizzando Java `keytool`:
 
 1. Generare una coppia di chiavi pubblica-privata in un KeyStore.
 1. Create o ottenete il certificato:
@@ -84,7 +84,7 @@ Per creare una chiave privata e un certificato autofirmato per entrambe le istan
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
-### pkcs#12 Format {#pkcs-format}
+### pkcs#12 Formato {#pkcs-format}
 
 Generate una chiave privata e un certificato in formato pkcs#12. Utilizzate [openSSL](https://www.openssl.org/) per generarli. Utilizzate la procedura seguente per generare una chiave privata e una richiesta di certificato. Per ottenere il certificato, firmate la richiesta con la vostra chiave privata (certificato autofirmato) o inviate la richiesta a una CA. Quindi, generate l&#39;archivio pkcs#12 che contiene la chiave privata e il certificato.
 
@@ -179,7 +179,7 @@ Per eseguire la procedura seguente, è necessario aver effettuato l’accesso co
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Installa chiave privata e TrustStore su Pubblica {#install-private-key-and-truststore-on-publish}
+## Installa la chiave privata e TrustStore su Pubblica {#install-private-key-and-truststore-on-publish}
 
 Installate i seguenti elementi nell’istanza di pubblicazione:
 
@@ -188,7 +188,7 @@ Installate i seguenti elementi nell’istanza di pubblicazione:
 
 Per eseguire la procedura seguente, è necessario aver eseguito l’accesso come amministratore dell’istanza di pubblicazione.
 
-### Installare la chiave privata Pubblica {#install-the-publish-private-key}
+### Installare la chiave privata di pubblicazione {#install-the-publish-private-key}
 
 1. Aprite la pagina Gestione utente per l’istanza di pubblicazione. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Per aprire le proprietà dell’account utente, toccate o fate clic sul nome utente.
@@ -224,7 +224,7 @@ Nella tabella seguente sono elencate le proprietà OSGi che è necessario config
 
 ## Configurare l&#39;agente di replica sull&#39;autore {#configure-the-replication-agent-on-author}
 
-Configurate l&#39;agente di replica nell&#39;istanza di creazione in modo che utilizzi il protocollo HTTPS quando ci si connette all&#39;istanza di pubblicazione. Per informazioni complete sulla configurazione degli agenti di replica, consultate [Configurazione degli agenti](/help/sites-deploying/replication.md#configuring-your-replication-agents)di replica.
+Configurate l&#39;agente di replica nell&#39;istanza di creazione in modo che utilizzi il protocollo HTTPS quando ci si connette all&#39;istanza di pubblicazione. Per informazioni complete sulla configurazione degli agenti di replica, vedere [Configurazione degli agenti di replica](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Per abilitare MSSL, configura le proprietà nella scheda Trasporto in base alla tabella seguente:
 
@@ -236,7 +236,7 @@ Per abilitare MSSL, configura le proprietà nella scheda Trasporto in base alla 
   </tr> 
   <tr> 
    <td>URI</td> 
-   <td><p>https://server_name:SSL_port/bin/receive?sling:authRequestLogin=1</p> <p>Ad esempio:</p> <p>http://localhost:8443/bin/receive?sling:authRequestLogin=1</p> </td> 
+   <td><p>https://server_name:SSL_port/bin/receive?sling:authRequestLogin=1</p> <p>Esempio:</p> <p>http://localhost:8443/bin/receive?sling:authRequestLogin=1</p> </td> 
   </tr> 
   <tr> 
    <td>User</td> 
