@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Rimozione delle versioni{#version-purging}
+# Scorrimento delle versioni{#version-purging}
 
 In un’installazione standard AEM creare una nuova versione di una pagina o di un nodo quando si attiva una pagina dopo l’aggiornamento del contenuto.
 
@@ -32,7 +32,7 @@ Queste versioni non vengono mai eliminate, pertanto la dimensione del repository
 
 AEM viene fornito con diversi meccanismi per la gestione del repository:
 
-* Gestione [versioni](#version-manager)
+* [Version Manager](#version-manager)
 
    Questa opzione può essere configurata per eliminare le versioni precedenti al momento della creazione di nuove versioni.
 
@@ -50,7 +50,7 @@ AEM viene fornito con diversi meccanismi per la gestione del repository:
 
       Quando l’età di una versione supera tale valore, viene eliminata dalla directory archivio.
 
-* l&#39;attività [di manutenzione](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)Version Purge. È possibile pianificare l&#39;attività di manutenzione di Rimozione versioni per eliminare automaticamente le versioni precedenti. Questo riduce al minimo la necessità di utilizzare manualmente gli strumenti di rimozione della versione.
+* l&#39;attività di manutenzione [Version Purge](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione di Rimozione versioni per eliminare automaticamente le versioni precedenti. Questo riduce al minimo la necessità di utilizzare manualmente gli strumenti di rimozione della versione.
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ AEM viene fornito con diversi meccanismi per la gestione del repository:
 
 ## Version Manager {#version-manager}
 
-Oltre all&#39;eliminazione esplicita tramite lo strumento di eliminazione, Version Manager può essere configurato per eliminare le versioni precedenti quando vengono create nuove versioni.
+Oltre all&#39;eliminazione esplicita tramite lo strumento di eliminazione, Version Manager può essere configurato per eliminare le versioni precedenti al momento della creazione delle nuove versioni.
 
 Per configurare Gestione versioni, crea una configurazione per:
 
@@ -104,7 +104,7 @@ Sono disponibili le seguenti opzioni:
 
 ### Combinazione di opzioni di conservazione {#combining-retention-options}
 
-Le opzioni che definiscono il modo in cui le versioni devono essere mantenute ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), possono essere combinate a seconda delle esigenze.
+Le opzioni che definiscono le modalità di mantenimento delle versioni ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), possono essere combinate a seconda delle esigenze.
 
 Ad esempio, quando si definisce il numero massimo di versioni da mantenere E la versione più vecchia da mantenere:
 
@@ -138,6 +138,6 @@ Ad esempio, quando si definisce il numero massimo E minimo di versioni da manten
 
    * Verranno mantenute 3 versioni
 
-## Strumento Svuota versioni {#purge-versions-tool}
+## Strumento Rimuovi versioni {#purge-versions-tool}
 
-Lo strumento Versioni [di](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) eliminazione è destinato a eliminare le versioni di un nodo o di una gerarchia di nodi nel repository. Lo scopo principale è quello di ridurre le dimensioni del repository rimuovendo le versioni precedenti dei nodi.
+Lo strumento [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) consente di eliminare le versioni di un nodo o di una gerarchia di nodi nel repository. Lo scopo principale è quello di ridurre le dimensioni del repository rimuovendo le versioni precedenti dei nodi.
