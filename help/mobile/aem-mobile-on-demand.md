@@ -21,19 +21,19 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Se non utilizzate AEM come origine di gestione del contenuto, consultate [Guida](https://helpx.adobe.com/digital-publishing-solution/topics.html)di AEM Mobile On-demand Services.
+>Se non utilizzate AEM come origine di gestione dei contenuti, consultate la sezione [ Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
->Prima di lavorare con  AEM Mobile e di seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con i [AEM](/help/sites-deploying/deploy.md).
+>Prima di lavorare con  AEM Mobile e di seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con [AEM](/help/sites-deploying/deploy.md).
 >
->Per configurare l&#39;ambiente per  AEM Mobile On-demand Services, consultate [AEM Mobile Application Dashboard o il Centro](/help/mobile/mobile-apps-ondemand-application-dashboard.md)di controllo.
+>Per configurare l&#39;ambiente per  AEM Mobile On-demand Services, vedere [ AEM Mobile Application Dashboard o il Centro di controllo](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Uno sviluppatore **** AEM estende e crea modelli Web e componenti personalizzati per consentire ad *AEM Author* di creare esperienze mobili attraenti e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili; ma comunicare sia al dispositivo che al server AEM (qualsiasi server remoto) ai punti finali del servizio omnicanale. AEM editor di contenuti integrato viene utilizzato dagli autori *di* AEM per creare esperienze avanzate e rilevanti all’interno dell’app, inclusa l’integrazione con il resto dell’Adobe Marketing Cloud.
+Uno **AEM sviluppatore** estende e crea modelli Web e componenti personalizzati per consentire a *AEM Author* di creare esperienze mobili attraenti e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili; ma comunicare sia al dispositivo che al server AEM (qualsiasi server remoto) ai punti finali del servizio omnicanale. AEM editor di contenuti integrato viene utilizzato da *AEM Authors* per creare esperienze avanzate e pertinenti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto dell&#39;Adobe Marketing Cloud.
 
 Durante la creazione di un&#39;app tramite  AEM Mobile On-demand Services, uno sviluppatore AEM è responsabile delle seguenti attività:
 
@@ -41,11 +41,11 @@ Durante la creazione di un&#39;app tramite  AEM Mobile On-demand Services, uno s
 * [Mobile con sincronizzazione dei contenuti](/help/mobile/mobile-ondemand-contentsync.md)
 * [Proprietà contenuto ed esportazione di contenuto](/help/mobile/on-demand-content-properties-exporting.md)
 
-Consultate [Sviluppo  AEM Mobile Content Services](/help/mobile/developing-content-services.md) per lo sviluppo di Content Services.
+Vedere [Sviluppo  AEM Mobile Content Services](/help/mobile/developing-content-services.md) per lo sviluppo di Content Services.
 
 >[!NOTE]
 >
->Il ruolo di *AEM sviluppatore* non inizia e termina con lo sviluppo di modelli e componenti. Uno sviluppatore ** AEM può creare un&#39;app completamente nuova anziché estendere semplicemente l&#39;esempio di implementazione dei riferimenti out-of-the-box.
+>Il ruolo *AEM sviluppatore* non inizia e non termina con lo sviluppo di modelli e componenti. Uno sviluppatore *AEM* può creare un&#39;app completamente nuova anziché semplicemente estendere l&#39;esempio di implementazione dei riferimenti out-of-the-box.
 
 ## Risorse aggiuntive {#additional-resources}
 
