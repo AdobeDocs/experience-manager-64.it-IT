@@ -18,18 +18,18 @@ ht-degree: 6%
 ---
 
 
-# Adobe Classifications{#adobe-classifications}
+# Classificazioni  Adobe{#adobe-classifications}
 
- Classificazioni Adobe esporta i dati di classificazione in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in modo pianificato. L&#39;esportatore è un&#39;implementazione di un **com.adobe.cq.scheduled.export.Exporter**.
+ Classificazioni Adobi esporta i dati delle classificazioni in [ Adobe Analytics](/help/sites-administering/adobeanalytics.md) in modo programmato. L&#39;esportatore è un&#39;implementazione di un **com.adobe.cq.scheduled.export.Exporter**.
 
 Per configurare:
 
-1. Passa a **Strumenti, Servizi cloud** e passa alla sezione **Adobe Analytics** .
-1. Aggiungete una nuova configurazione. Il modello **Configurazione classificazione** Adobe Analytics viene visualizzato sotto la configurazione di Adobe Analytics Framework **** . Specificate un **Titolo** e un **Nome** come richiesto:
+1. Andate alla sezione **Strumenti, servizi cloud**  Adobe Analytics **.**
+1. Aggiungete una nuova configurazione. Il modello **Classificazioni Adobe Analytics** viene visualizzato sotto la configurazione **Adobe Analytics Framework**. Specificare un **Titolo** e **Nome** come necessario:
 
    ![aa-25](assets/aa-25.png)
 
-1. Fate clic su **Crea** per configurare le impostazioni.
+1. Fare clic su **Crea** per configurare le impostazioni.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -37,9 +37,9 @@ Per configurare:
 
    | **Campo** | **Descrizione** |
    |---|---|
-   | Abilitato | Selezionate **Sì** per attivare le impostazioni Classificazioni Adobe . |
-   | Sovrascrivi in caso di conflitto | Selezionare **Sì** per sovrascrivere eventuali collisioni di dati. Per impostazione predefinita, è impostato su **No**. |
-   | Elimina elementi elaborati | Se è impostato su **Sì**, elimina i nodi elaborati dopo l’esportazione. Il valore predefinito è **False**. |
+   | Abilitato | Selezionare **Yes** per abilitare le impostazioni di classificazione  Adobe. |
+   | Sovrascrivi in caso di conflitto | Selezionare **Sì** per sovrascrivere eventuali conflitti di dati. Per impostazione predefinita, è impostata su **No**. |
+   | Elimina elementi elaborati | Se è impostato su **Yes**, elimina i nodi elaborati dopo l&#39;esportazione. Il valore predefinito è **False**. |
    | Descrizione processo esportazione | Inserire una descrizione per il processo Classificazioni Adobe . |
    | E-mail di notifica | Inserite un indirizzo e-mail per  notifica Classificazioni Adobi. |
    | Suite di rapporti | Inserite la suite di rapporti per la quale eseguire il processo di importazione. |
@@ -48,7 +48,7 @@ Per configurare:
    | Sorgente dati | Individuare il percorso del contenitore di dati. |
    | Esporta pianificazione | Selezionare la pianificazione per l&#39;esportazione. Il valore predefinito è ogni 30 minuti. |
 
-1. Click **OK** to save your settings.
+1. Fare clic su **OK** per salvare le impostazioni.
 
 ## Modifica delle dimensioni di pagina {#modifying-page-size}
 
@@ -58,11 +58,11 @@ Una pagina può avere una dimensione massima di 25000, per definizione nelle cla
 
 Per modificare le dimensioni della pagina:
 
-1. Andate alla console OSGI all&#39;indirizzo **https://&lt;host>:&lt;porta>/system/console/configMgr** e selezionate **Adobe AEM Esportatore** classificazioni.
+1. Andate alla console OSGI all&#39;indirizzo **https://&lt;host>:&lt;porta>/system/console/configMgr** e selezionate **Adobe AEM Esportatore classificazioni**.
 
-   ![aa-25](assets/aa-26.png)
+   ![aa-26](assets/aa-26.png)
 
-1. Aggiornate le dimensioni **di pagina** Esporta come necessario, quindi fate clic su **Salva**.
+1. Aggiornare la **Esporta dimensioni pagina** come necessario, quindi fare clic su **Salva**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -70,9 +70,9 @@ Per modificare le dimensioni della pagina:
 >
 > Classificazioni Adobe era precedentemente noto come Esportatore SAINT.
 
-Un esportatore può usare un trasformatore per trasformare i dati di esportazione in un formato specifico. Per  Classificazioni Adobi, è stata fornita una sottointerfaccia `SAINTTransformer<String[]>` che implementa l&#39;interfaccia Transformer. Questa interfaccia viene utilizzata per limitare il tipo di dati `String[]` che viene utilizzato dall&#39;API SAINT e per avere un&#39;interfaccia marker per la ricerca di tali servizi per la selezione.
+Un esportatore può usare un trasformatore per trasformare i dati di esportazione in un formato specifico. Per  Classificazioni Adobi, è stata fornita una sottointerfaccia `SAINTTransformer<String[]>` che implementa l&#39;interfaccia Transformer. Questa interfaccia viene utilizzata per limitare il tipo di dati a `String[]` utilizzato dall&#39;API SAINT e per avere un&#39;interfaccia marker per la ricerca di tali servizi per la selezione.
 
-Nell&#39;implementazione predefinita SAINTDefaultTransformer, le risorse figlio dell&#39;origine esportatore vengono trattate come record con nomi di proprietà come chiavi e valori di proprietà come valori. La colonna **Tasto** viene aggiunta automaticamente come prima colonna; il suo valore sarà il nome del nodo. Le proprietà con nome (contenenti :) non vengono prese in considerazione.
+Nell&#39;implementazione predefinita SAINTDefaultTransformer, le risorse figlio dell&#39;origine esportatore vengono trattate come record con nomi di proprietà come chiavi e valori di proprietà come valori. La colonna **Key** viene aggiunta automaticamente come prima colonna; il suo valore sarà il nome del nodo. Le proprietà con nome (contenenti :) non vengono prese in considerazione.
 
 *Struttura nodo:*
 
@@ -90,7 +90,7 @@ Nell&#39;implementazione predefinita SAINTDefaultTransformer, le risorse figlio 
 
 | **Chiave** | **Prodotto** | **Prezzo** | **Dimensione** | **Colore** | **Colore^Code** |
 |---|---|---|---|---|---|
-| 1 | Nome prodotto personale | 120.90 | M | black | 101 |
+| 1 | Nome prodotto personale | 120,90 | M | black | 101 |
 
 Le proprietà includono quanto segue:
 
@@ -126,7 +126,7 @@ Le proprietà includono quanto segue:
   </tr> 
   <tr> 
    <td>divisioni di controllo</td> 
-   <td>Flag per verificare la compatibilità delle suite di rapporti. Default is <strong>true</strong>.</td> 
+   <td>Flag per verificare la compatibilità delle suite di rapporti. Il valore predefinito è <strong>true</strong>.</td> 
   </tr> 
   <tr> 
    <td>deleteprocessed</td> 
