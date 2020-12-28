@@ -22,15 +22,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Il processo di sviluppo AEM applicazioni mobili riconosce che gli utenti con competenze diverse contribuiscono allo sviluppo di applicazioni mobili. La seguente mappa del processo illustra l’ordine generale in cui gli autori dei contenuti e gli sviluppatori di applicazioni eseguono le attività.
+Il processo di sviluppo AEM applicazioni mobili riconosce che gli utenti con competenze diverse contribuiscono allo sviluppo di applicazioni mobili. La seguente mappa del processo illustra l’ordine generale in cui gli autori e gli sviluppatori di contenuti eseguono le attività.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
 In questa pagina vengono visualizzate informazioni su come eseguire le attività di marketing. Per informazioni sulle attività per gli sviluppatori, vedere Creazione di applicazioni PhoneGap.
 
-## La struttura delle applicazioni mobili {#the-structure-of-mobile-applications}
+## Struttura delle applicazioni mobili {#the-structure-of-mobile-applications}
 
  AEM Mobile fornisce il progetto App PhoneGap per la creazione di applicazioni mobili. Il modello definisce la struttura delle applicazioni create. Le applicazioni sono composte dai seguenti elementi:
 
@@ -42,7 +42,7 @@ In questa pagina vengono visualizzate informazioni su come eseguire le attività
 
 La pagina principale delle applicazioni mobili create in AEM viene visualizzata nella console App.
 
-La pagina principale è memorizzata sotto la proprietà Percorso di destinazione dell’applicazione specificata al momento della creazione dell’applicazione (il percorso predefinito è /content/phonegap/apps). Il nome pagina è la proprietà Name dell&#39;applicazione. Ad esempio, l’URL predefinito della pagina principale del sito denominato `myphonegapapp` è `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+La pagina principale è memorizzata sotto la proprietà Percorso di destinazione dell’applicazione specificata al momento della creazione dell’applicazione (il percorso predefinito è /content/phonegap/apps). Il nome pagina è la proprietà Name dell&#39;applicazione. Ad esempio, l&#39;URL predefinito della pagina principale del sito denominato `myphonegapapp` è `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -50,7 +50,7 @@ La pagina principale è memorizzata sotto la proprietà Percorso di destinazione
 
 Le prime pagine figlie della pagina principale sono le varianti di lingua dell&#39;applicazione. Il nome di ogni pagina è la lingua per la quale viene creata l’applicazione. Ad esempio, Inglese è il nome della variante inglese dell&#39;applicazione.
 
-**Nota:** Il modello predefinito di PhoneGap crea solo un&#39;applicazione inglese. Lo sviluppatore può modificare il progetto in modo da creare più varianti di lingua.
+**Nota:** il progetto predefinito PhoneGap crea solo un&#39;applicazione in lingua inglese. Lo sviluppatore può modificare il progetto in modo da creare più varianti di lingua.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -61,7 +61,7 @@ La pagina relativa alla lingua ha due scopi:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Home page {#the-home-page}
+### Pagina principale {#the-home-page}
 
 Quando l&#39;applicazione viene aperta, viene visualizzata la pagina principale, o index.html di una variante della lingua di un&#39;applicazione. La pagina principale fornisce agli utenti un menu di collegamenti alle varie pagine dell&#39;applicazione. Il sistema paragrafo consente di aggiungere componenti alla pagina per la creazione di contenuti.
 
@@ -70,17 +70,17 @@ Quando l&#39;applicazione viene aperta, viene visualizzata la pagina principale,
 Le applicazioni mobili si basano su un modello che definisce una struttura e proprietà di pagina. Potete configurare le seguenti proprietà dell’applicazione:
 
 * **Titolo:** Titolo dell’applicazione.
-* **Percorso di destinazione:** Posizione nella directory archivio in cui è memorizzata l’applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
-* **Nome:** Il valore predefinito è il valore della proprietà Title con la rimozione di spazi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
-* **Descrizione:** Una descrizione dell&#39;applicazione.
-* **URL server:** L&#39;URL che fornisce contenuto Over-the-Air (OTA) si aggiorna all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
+* **Percorso di destinazione:** percorso nella directory archivio in cui è memorizzata l&#39;applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
+* **Nome:** il valore predefinito è il valore della proprietà Titolo a cui sono stati rimossi gli spazi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
+* **Descrizione:** Una descrizione dell’applicazione.
+* **URL server:** l&#39;URL che fornisce aggiornamenti di contenuto Over-the-Air (OTA) all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
 
 Puoi anche fornire un file immagine da usare come miniatura dell’applicazione, selezionare la configurazione delle PhoneGap Build da utilizzare e selezionare la configurazione di analisi per app mobili da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’applicazione mobile all’interno della console delle app mobili  Experience Manager.
 
 Sono presenti schede aggiuntive (e facoltative) per creare il servizio cloud e integrare il plug-in SDK di Mobile Services  Adobe nell&#39;app.
 
 * Build: Fai clic su Gestione configurazioni e configura il servizio build build build build build build build build.phonegap.com qui. Dal menu a discesa potrete selezionare il nuovo servizio cloud PhoneGap build.
-* Analytics: Fai clic su Gestione configurazioni e configura il servizio cloud [SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) di Mobile Services. Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
+* Analytics: Fai clic su Gestione configurazioni e configura il servizio cloud [ Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html). Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ La procedura seguente utilizza l’interfaccia utente touch per creare un’appl
 
 Dopo aver creato un’applicazione mobile, potete modificare le proprietà.
 
-#### Modificare il titolo, la descrizione e l’icona {#change-the-title-description-and-icon}
+#### Modificare il titolo, la descrizione e l&#39;icona {#change-the-title-description-and-icon}
 
 1. Nella barra laterale, fate clic o toccate App.
 1. Selezionate l’applicazione da configurare e fate clic sull’icona Visualizza proprietà pagina.
@@ -139,7 +139,7 @@ Dopo aver creato un’applicazione mobile, potete modificare le proprietà.
 
    ![](do-not-localize/chlimage_1-13.png)
 
-### Creazione e modifica del contenuto di un’applicazione mobile {#authoring-the-content-of-a-mobile-application}
+### Creazione di contenuti di un&#39;applicazione mobile {#authoring-the-content-of-a-mobile-application}
 
 Dopo aver creato l’applicazione per dispositivi mobili, aggiungete il contenuto utilizzato come interfaccia utente dell’applicazione.
 
@@ -211,7 +211,7 @@ Passaggi per creare una nuova app basata su un modello di app:
 >
 >Se disinstallate il pacchetto dell&#39;app di riferimento Geometrixx Outdoors da AEM e create un&#39;app basata sul suo modello, tale app non funzionerà più. L&#39;app Geometrixx Outdoors può essere rimossa, ma il modello di app deve rimanere se utilizzato da altre applicazioni mobili.
 
-## Esplorazione dell’app Geometrixx Outdoors di esempio {#exploring-the-sample-geometrixx-outdoors-app}
+## Esplorazione dell&#39;app Geometrixx Outdoors di esempio {#exploring-the-sample-geometrixx-outdoors-app}
 
 L&#39;app Geometrixx Outdoors è un&#39;applicazione PhoneGap di esempio che illustra le funzioni del modello di applicazione PhoneGap predefinito e dei componenti mobili di esempio.
 
@@ -231,14 +231,14 @@ Ogni pagina dell&#39;app mobile include le seguenti funzionalità:
 
 * Il sistema paragrafo, per aggiungere componenti e creare contenuti.
 
-### Home Page - Geometrixx app mobile {#the-home-page-geometrixx-mobile-app}
+### Pagina principale - App mobile Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 Il contenuto della home page è costituito dai seguenti strumenti di navigazione:
 
 * Componente Elenco menu che fornisce collegamenti alle pagine figlie Ingranaggio, Recensioni, Novità e Informazioni su di noi.
 * Un componente Carosello con scorrimento che mostra le pagine figlie.
 
-### Pagina ingranaggio - Geometrixx app mobile {#the-gear-page-geometrixx-mobile-app}
+### Pagina ingranaggio - App mobile Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 La pagina Gear consente agli utenti di accedere alle pagine dei prodotti. Un componente Elenco menu consente di accedere alle pagine figlie della pagina Ingranaggio. Le pagine figlie sono categorie di prodotti disponibili nel sito Web.
 
@@ -255,31 +255,31 @@ La pagina Products (Prodotti) e la sua gerarchia di pagine figlie implementano u
 
 La pagina Prodotti non è disponibile per gli utenti dell’applicazione. La pagina Gear consente di accedere a ogni pagina di prodotto.
 
-### Pagina recensioni - Geometrixx app mobile {#the-reviews-page-geometrixx-mobile-app}
+### Pagina recensioni - App mobile Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un pulsante Indietro. Il sistema paragrafo consente di aggiungere componenti.
 
 Quando si utilizza l&#39;applicazione, la pagina Recensioni è disponibile dal carosello nella pagina inglese.
 
-### Pagina delle notizie - Geometrixx app mobile {#the-news-page-geometrixx-mobile-app}
+### Pagina delle notizie - App mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
 
 Contiene un pulsante Indietro. Il sistema paragrafo consente di aggiungere componenti.
 
 Quando si utilizza l&#39;applicazione, la pagina News è disponibile dal carosello sulla pagina inglese.
 
-### La pagina Informazioni su noi - App mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### Pagina Informazioni su di noi - App mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 La pagina Informazioni su di noi contiene diversi componenti Riga a due colonne. Ogni colonna contiene un componente Immagine o Testo. I componenti sono modificabili e il sistema di paragrafi consente di aggiungere componenti.
 
 Quando si utilizza l’applicazione, la pagina Informazioni su di noi è disponibile dal carosello nella pagina inglese.
 
-### Pagina Posizioni - Geometrixx app mobile {#the-locations-page-geometrixx-mobile-app}
+### Pagina Posizioni - App mobile Geometrixx {#the-locations-page-geometrixx-mobile-app}
 
 La pagina Locations (Posizioni) contiene un componente Locations (Posizioni).
 
 Quando si utilizza l&#39;applicazione, la pagina Locations (Posizioni) è disponibile dall&#39;elenco dei menu nella pagina in lingua inglese.
 
-## Esempi di componenti mobili {#sample-mobile-components}
+## Componenti mobili di esempio {#sample-mobile-components}
 
 Diversi componenti sono immediatamente disponibili nella barra laterale quando si creano le pagine di un’applicazione mobile. I componenti appartengono al gruppo di componenti PhoneGap.
 
@@ -307,7 +307,7 @@ Specificate la modalità di generazione dell’elenco di pagine:
 * Ordina per: Selezionare una proprietà pagina da utilizzare per ordinare l&#39;elenco di pagine. Ad esempio, selezionate jcr:title per ordinare le pagine in ordine alfabetico per titolo.
 * Limite: Il numero massimo di pagine da includere. Questa proprietà è appropriata per i metodi basati sulla ricerca per la creazione dell&#39;elenco di pagine.
 
-#### Creazione dell’elenco di pagine {#building-the-page-list}
+#### Creazione dell&#39;elenco di pagine {#building-the-page-list}
 
 Il componente Scorrimento del carosello contiene i seguenti valori per la proprietà Genera elenco tramite. La finestra di dialogo di modifica cambia in base al valore selezionato:
 
@@ -334,7 +334,7 @@ Compilare l’elenco utilizzando i risultati di una ricerca per parole chiave. L
 
 **Ricerca avanzata**
 
-Compilare l’elenco utilizzando una query [QueryBuilder](/help/sites-developing/querybuilder-api.md) .
+Compilare l&#39;elenco utilizzando una query [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Immagine {#image}
 
