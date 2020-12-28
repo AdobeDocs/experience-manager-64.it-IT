@@ -15,23 +15,23 @@ ht-degree: 0%
 ---
 
 
-# AEM Commercio - Preparazione GDPR{#aem-commerce-gdpr-readiness}
+# AEM Commerce - GDPR: prontezza{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >
 >Il GDPR è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come GDPR, CCPA ecc.
 
-Il regolamento generale dell&#39;Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018. Per ulteriori informazioni, consulta la pagina [GDPR all’ Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)per la privacy del Adobe.
+Il regolamento generale dell&#39;Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018. Per ulteriori informazioni, vedere la pagina [GDPR all&#39; Centro per la privacy del Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [AEM preparazione](/help/managing/data-protection-and-privacy.md) al GDPR.
+>Per ulteriori informazioni, vedere [AEM GDPR Readiness](/help/managing/data-protection-and-privacy.md).
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
 Nelle integrazioni Commerce pronte all&#39;uso, AEM è il livello esperienza, i servizi di consumo e l&#39;invio di dati alla piattaforma di e-commerce del cliente che viene eseguita in modalità headless.
 
-Per alcune piattaforme di e-commerce, vengono memorizzate le informazioni di profilo ( `/home/users`) e i token di e-commerce (per accedere alla piattaforma di e-commerce) in AEM. Per questi casi di utilizzo, leggete [Gestione delle richieste GDPR per la piattaforma](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)AEM.
+Per alcune piattaforme di e-commerce, vengono memorizzate le informazioni di profilo ( `/home/users`) e i token di e-commerce (per accedere alla piattaforma di e-commerce) in AEM. Per questi casi di utilizzo, leggere [Gestione delle richieste GDPR per la piattaforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at111621](assets/screen_shot_2018-03-22at111621.jpg)
 
@@ -39,7 +39,7 @@ Per alcune piattaforme di e-commerce, vengono memorizzate le informazioni di pro
 
 Per l&#39;integrazione con l&#39;Commerce Cloud Salesforce, AEM Commerce non memorizza informazioni rilevanti per il GDPR. Inoltra la richiesta a [Salesforce Cloud](https://documentation.demandware.com/).
 
-Per le integrazioni hybris e IBM WebSphere, ci sono alcuni dati in AEM. Devi usare le istruzioni [GDPR della piattaforma](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) AEM e prendere in considerazione le seguenti domande:
+Per le integrazioni hybris e IBM WebSphere, ci sono alcuni dati in AEM. È necessario utilizzare le [AEM istruzioni GDPR della piattaforma](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) e prendere in considerazione le seguenti domande:
 
 1. **Dove vengono memorizzati o utilizzati i dati personali?** Le informazioni del profilo utente memorizzate nella cache, come nome, identificatore utente di e-commerce, token, password, dati dell&#39;indirizzo e così via, vengono visualizzate da AEM.
 1. **Con chi condivido i dati GDPR coperti?** Qualsiasi aggiornamento dei dati GDPR rilevanti in AEM Commerce non viene memorizzato (ad eccezione delle informazioni di profilo pertinenti, come indicato sopra) ma viene proxy alla piattaforma di eCommerce.
@@ -47,5 +47,5 @@ Per le integrazioni hybris e IBM WebSphere, ci sono alcuni dati in AEM. Devi usa
 
 >[!NOTE]
 >
->Date un&#39;occhiata al wiki [hybris](https://wiki.hybris.com/) o alla documentazione [Commerce di](https://www-01.ibm.com/support/docview.wss?uid=swg27036450) Web-sfera, se necessario.
+>Date un&#39;occhiata alla [hybris wiki](https://wiki.hybris.com/) o alla [Documentazione di WebCommerce](https://www-01.ibm.com/support/docview.wss?uid=swg27036450), se necessario.
 
