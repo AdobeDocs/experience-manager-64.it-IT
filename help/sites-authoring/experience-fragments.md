@@ -90,7 +90,7 @@ La creazione di cartelle consente di:
    >
    >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-authoring/templates.md).
 
-L’esempio seguente mostra i frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
+L&#39;esempio seguente mostra i frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>È anche possibile configurare i [Modelli consentiti per l&#39;istanza ](#configure-allowed-templates-instance), ma questo metodo è **not** consigliato in quanto i valori possono essere sovrascritti al momento dell&#39;aggiornamento.
 
 ### Configurare i modelli consentiti per la cartella {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>Non è consigliabile modificare i **[!UICONTROL Modelli consentiti]** con questo metodo, in quanto i modelli specificati potrebbero essere sovrascritti al momento dell&#39;aggiornamento.
 >
 >Utilizza questa finestra di dialogo solo a scopo informativo.
 
@@ -185,7 +185,7 @@ L’Editor di frammenti esperienza offre funzionalità simili al normale Editor 
 
 L’esempio seguente illustra come creare un teaser per un prodotto:
 
-1. Drag and drop a **[!UICONTROL Category Teaser]** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Trascinare un **[!UICONTROL Teaser di categoria]** dal [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ Puoi trascinare il blocco predefinito nel sistema di paragrafi di qualsiasi fram
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+Utilizzando il selettore `.plain.` nell&#39;URL, potete accedere alla rappresentazione HTML semplice.
 
 Questo è disponibile dal browser, ma il suo scopo principale è consentire ad altre applicazioni (ad esempio, app Web di terze parti, implementazioni mobili personalizzate) di accedere direttamente al contenuto del frammento esperienza, utilizzando solo l&#39;URL.
 
 La rappresentazione HTML semplice aggiunge protocollo, host e percorso contestuale a percorsi che sono:
 
-* del tipo: `src`, `href`oppure `action`
+* del tipo: `src`, `href` o `action`
 
-* o terminare con: `-src`oppure `-href`
+* o terminare con: `-src` o `-href`
 
 Esempio:
 
@@ -309,7 +309,7 @@ Esempio:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
+## Esportazione di frammenti esperienza    {#exporting-experience-fragments}
 
 Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
 
