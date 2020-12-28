@@ -34,7 +34,7 @@ Per promuovere le pagine, esegui le seguenti operazioni durante la modifica dell
 1. Nella scheda **Pagina** nella barra laterale, fai clic su **Promuovi lancio**.
 1. Specifica le pagine da promuovere:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * (Impostazione predefinita) Per promuovere solo la pagina corrente, selezionare **Promuovi modifiche pagina a versione produzione**.
    * Per promuovere anche le pagine figlie della pagina corrente, seleziona **Includi sottopagine**.
    * Per promuovere tutte le pagine del lancio, seleziona **Promuovi lancio completo alla versione in produzione**.
 
