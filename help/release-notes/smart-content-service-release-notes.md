@@ -22,13 +22,13 @@ Panoramica di Smart Content Service e problemi noti relativi al servizio.
 
 Le organizzazioni richiedono che i tag delle proprie risorse digitali siano basati sulla tassonomia a cui dipendenti, partner e clienti fanno riferimento per cercare risorse digitali. Rispetto ai tag generici, le risorse con tag basati sulla tassonomia aziendale vengono identificate e recuperate più facilmente mediante ricerche basate sui tag.
 
-Smart Content Service utilizza la tassonomia aziendale dei AEM Assets per assegnare automaticamente i tag alle risorse digitali, in modo che le risorse più rilevanti vengano visualizzate nelle ricerche.
+Smart Content Service utilizza la tassonomia aziendale di  AEM Assets per assegnare automaticamente tag alle risorse digitali, in modo che le risorse più rilevanti vengano visualizzate nelle ricerche.
 
 È necessario formare Smart Content Service su un set specifico di risorse e tag AEM per riconoscere la tassonomia aziendale. Una volta eseguita la formazione, il servizio può applicare questi tag a un set di risorse simile.
 
 Smart Content Service è basato sulla piattaforma Adobe Sensei , che consente di formare l&#39;algoritmo di riconoscimento delle immagini nella tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a risorse simili.
 
-## Miglioramenti principali {#key-improvements}
+## Miglioramenti chiave {#key-improvements}
 
 Smart Content Service include i seguenti miglioramenti principali:
 
@@ -85,14 +85,14 @@ Smart Content Service è disponibile per le seguenti impostazioni internazionali
 
 ## Collegamenti {#links}
 
-* [Pagina prodotto  Adobe Experience Manager su adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
+* [Pagina prodotto Adobe Experience Manager su adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [Documentazione avanzata sui tag avanzati](/help/assets/enhanced-smart-tags.md)
 
-## Product Access and Support (Restricted Sites) {#product-access-and-support-restricted-sites}
+## Accesso e supporto al prodotto (siti limitati) {#product-access-and-support-restricted-sites}
 
 Questi siti sono disponibili solo per i clienti. Se siete un cliente e richiedete l&#39;accesso, contattate il vostro responsabile commerciale  Adobe.
 
 * [Accesso al prodotto](https://login.marketing.adobe.com)
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
-* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive sulla distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
-* [Assistenza clienti tramite  Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza](https://docs.adobe.com/content/help/en/customer-one/using/home.html)di assistenza clienti  Adobe.
+* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Assistenza clienti tramite  Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, vedere [Nuova esperienza di assistenza clienti  Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
