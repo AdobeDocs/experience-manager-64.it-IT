@@ -15,10 +15,10 @@ ht-degree: 85%
 ---
 
 
-# AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.4 Guida utente per l&#39;authoring con l&#39;interfaccia classica {#classic-ui}
 
 + [Panoramica della guida all’authoring con l’interfaccia classica](home.md)
-+ Introduzione all’authoring con l’interfaccia classica {#introduction}
++ Introduzione all&#39;authoring con l&#39;interfaccia classica {#introduction}
    + [Primi passi per gli autori](classic-page-author-first-steps.md)
    + [Authoring nell’interfaccia classica](classicui.md)
    + [Utilizzo dell’ambiente Authoring](author-env.md)
@@ -78,7 +78,7 @@ ht-degree: 85%
    + [Utilizzo di Adobe Campaign](classic-personalization-ac.md)
    + [Componenti di Adobe Campaign](classic-personalization-ac-components.md)
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
-+ Authoring delle risorse nell’interfaccia classica {#assets}
++ Authoring delle risorse nell&#39;interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Utilizzo delle aree di visualizzazione IBL](classicui-stages-aem3d-ibl.md)
    + [Rendering delle risorse 3D](classicui-rendering-3d.md)
