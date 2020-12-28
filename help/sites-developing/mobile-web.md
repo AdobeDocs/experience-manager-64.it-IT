@@ -23,7 +23,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 AEM offre diversi strumenti che consentono di sviluppare siti per dispositivi mobili e di integrare i contenuti nelle applicazioni mobili.
 
@@ -40,4 +40,4 @@ Sviluppare modelli di pagina e componenti ottimizzati per la visualizzazione med
 
 ## Sviluppo di app mobili {#developing-mobile-apps}
 
-Sviluppare applicazioni mobili che utilizzano AEM pagine come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente le app utilizzando AEM pagine. Content Sync (Sincronizzazione contenuto) consente di creare archivi con versione di pagine da distribuire alle app. To learn more about Content Sync, click [here](/help/mobile/phonegap-contentsync.md).
+Sviluppare applicazioni mobili che utilizzano AEM pagine come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente le app utilizzando AEM pagine. Content Sync (Sincronizzazione contenuto) consente di creare archivi con versione di pagine da distribuire alle app. Per ulteriori informazioni sulla sincronizzazione dei contenuti, fate clic [qui](/help/mobile/phonegap-contentsync.md).
