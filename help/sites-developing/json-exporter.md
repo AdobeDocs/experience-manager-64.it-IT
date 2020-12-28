@@ -32,13 +32,13 @@ Con frammenti di contenuto che utilizzano contenuto strutturato, puoi fornire se
 
 >[!NOTE]
 >
->La funzionalità descritta qui è disponibile per tutti i componenti core a partire dalla [release 1.1.0 dei componenti](https://docs.adobe.com/content/docs/en/core-components/v1.html)core.
+>La funzionalità descritta qui è disponibile per tutti i componenti core a partire dalla [release 1.1.0 dei componenti core](https://docs.adobe.com/content/docs/en/core-components/v1.html).
 
 ## Esportatore JSON con componenti di base frammento di contenuto {#json-exporter-with-content-fragment-core-components}
 
 Utilizzando il modulo di esportazione JSON AEM potete distribuire il contenuto di una pagina AEM (y) nel formato del modello di dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
 
-All&#39;interno AEM la consegna viene ottenuta utilizzando il selettore `model` e l&#39; `.json` estensione.
+All&#39;interno AEM la consegna viene ottenuta utilizzando il selettore `model` e l&#39;estensione `.json`.
 
 `.model.json`
 
@@ -54,7 +54,7 @@ All&#39;interno AEM la consegna viene ottenuta utilizzando il selettore `model` 
 
 In alternativa, è possibile distribuire i contenuti di un frammento di contenuto strutturato specificandone il targeting.
 
-Questo avviene utilizzando l&#39;intero percorso del frammento (tramite il `jcr:content`); ad esempio con un suffisso come
+Tale operazione viene eseguita utilizzando l&#39;intero percorso del frammento (tramite `jcr:content`); ad esempio con un suffisso come
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -76,7 +76,7 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
    >[!NOTE]
    >
-   >Sebbene non sia un&#39;implementazione standard, [più selettori sono supportati,](json-exporter-components.md#multiple-selectors) ma `model` devono essere i primi.
+   >Sebbene non sia un&#39;implementazione standard, [sono supportati più selettori,](json-exporter-components.md#multiple-selectors) ma `model` deve essere il primo.
 
 ### Ulteriori informazioni {#further-information}
 
@@ -94,15 +94,15 @@ Consulta anche:
 
    * [Ottenimento di informazioni sulla pagina in formato JSON](/help/sites-developing/pageinfo.md)
 
-## Related Documentation {#related-documentation}
+## Documentazione correlata {#related-documentation}
 
 Per maggiori dettagli, consulta:
 
-* Argomento Frammenti di [contenuto nella guida utente delle risorse](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Argomento [Frammenti di contenuto nella guida utente di Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Abilitazione dell&#39;esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti ](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base e componente Frammento di  [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
