@@ -38,7 +38,7 @@ Il rendering di contenuti 3D consuma notevoli risorse del server, come la CPU e 
 
 Il modulo di rendering Rapid Refine richiede in genere alcuni minuti per il rendering di immagini più grandi. Tuttavia, i moduli di rendering di terze parti spesso impiegano molti minuti, anche ore, se configurati per la massima qualità.
 
-I lavori di conversione, elaborazione e rendering vengono messi in coda sul server in base alle necessità, per evitare sovraccarichi. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Questo stato indica che altri lavori di elaborazione o rendering devono terminare prima che il lavoro di rendering corrente possa iniziare.
+I lavori di conversione, elaborazione e rendering vengono messi in coda sul server in base alle necessità, per evitare sovraccarichi. Messaggio &quot;In attesa del rendering...&quot; viene visualizzata sulle risorse caricate di recente nella [!UICONTROL vista a schede]. Questo stato indica che altri lavori di elaborazione o rendering devono terminare prima che il lavoro di rendering corrente possa iniziare.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
    Vedi [Visualizzazione delle risorse 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
 1. Da **Adobe Experience Manager**, nella pagina di **[!UICONTROL navigazione]**, tocca **[!UICONTROL Risorse]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Vicino all&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL View]**, toccare **[!UICONTROL Card View]**.
 1. Passa all’oggetto 3D che desideri renderizzare.
 
 1. Tocca la scheda dell&#39;oggetto 3D per aprirla nella pagina dei dettagli della risorsa.
@@ -59,7 +59,7 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. Nell’angolo superiore destro della pagina dei dettagli della risorsa, toccate l’icona **[!UICONTROL Selettore fase]** (evidenziatore), quindi selezionate un nome di area di visualizzazione con lo sfondo e l’illuminazione che desiderate applicare all’oggetto 3D.
 
    Vedi [Utilizzo delle aree di visualizzazione in AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
@@ -67,7 +67,7 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
    [!UICONTROL Icona Selettore area di visualizzazione]
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. Nell&#39;elenco a discesa **[!UICONTROL Rendering]** a sinistra della pagina dei dettagli della risorsa, selezionate un renderer.
 
    Il modulo di rendering predefinito **[!UICONTROL Rapid Refine]** è sempre disponibile. Se l’area di visualizzazione selezionata è un formato nativo, nell&#39;elenco viene reso disponibile anche il corrispondente modulo di rendering di terze parti.
 
@@ -75,12 +75,12 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
 1. Effettua le seguenti operazioni:
 
-   * In the **[!UICONTROL Width and Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
+   * Nei campi **[!UICONTROL Larghezza e altezza]**, immettere la larghezza e l&#39;altezza in pixel per cui si desidera eseguire il rendering dell&#39;immagine.
+   * Nel campo **[!UICONTROL Nome immagine]**, immettete il nome dell’immagine di cui è stato effettuato il rendering.
+   * Nel campo **[!UICONTROL Percorso di esportazione]**, immettete il percorso in cui memorizzare l&#39;immagine di cui si desidera eseguire il rendering. Oppure, toccate l&#39;icona **[!UICONTROL Browse]** e individuate una posizione.
    * (Facoltativo) Seleziona o deseleziona la casella di controllo **[!UICONTROL Sovrascrivi immagine esistente.]**
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. Seleziona una visualizzazione della videocamera da applicare all&#39;immagine renderizzata.
+1. Nell&#39;angolo superiore destro della pagina dei dettagli della risorsa, toccate l&#39;icona **[!UICONTROL Selettore fotocamera]**. Seleziona una visualizzazione della videocamera da applicare all&#39;immagine renderizzata.
 
    Le barre sinistra e destra o le barre superiore e inferiore sono un indicatore visivo di quali parti della visualizzazione saranno renderizzate. Quando la videocamera viene fornita dall’area di visualizzazione selezionata, è possibile selezionare una videocamera predefinita.
 
@@ -90,5 +90,5 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
 1. Tocca **[!UICONTROL Avvia rendering]** per iniziare il processo di rendering.
 
-   Viene visualizzato temporaneamente un messaggio per indicare che il rendering è stato avviato. For convenience, this message also includes a link to the selected [!UICONTROL Output Folder] so you can navigate to it directly.
+   Viene visualizzato temporaneamente un messaggio per indicare che il rendering è stato avviato. Per comodità, questo messaggio include anche un collegamento alla [!UICONTROL cartella di output] selezionata, in modo da consentirvi di navigare direttamente.
 
