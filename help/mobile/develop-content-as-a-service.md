@@ -21,15 +21,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Le app mobili dovrebbero essere in grado di utilizzare qualsiasi contenuto e tutto il contenuto in AEM, in base alle esigenze, per fornire l&#39;esperienza app di destinazione.
+Le app mobili dovrebbero essere in grado di utilizzare qualsiasi contenuto e tutto il contenuto in AEM in base alle esigenze per fornire l&#39;esperienza app di destinazione.
 
 Ciò include l&#39;utilizzo di risorse, contenuto del sito, contenuto CaaS (over-the-air) e contenuto personalizzato che può avere una propria struttura.
 
 >[!NOTE]
 >
->**I contenuti** in onda possono provenire da una qualsiasi delle funzionalità descritte sopra tramite gestori ContentSync. Può essere utilizzato per il pacchetto batch e la consegna tramite zip, nonché mantenere gli aggiornamenti o tali pacchetti.
+>**I contenuti over-the-Air** possono provenire da una delle funzionalità precedenti tramite gestori ContentSync. Può essere utilizzato per il pacchetto batch e la consegna tramite zip, nonché mantenere gli aggiornamenti o tali pacchetti.
 
 I servizi Content Services forniscono tre tipi principali di materiale:
 
@@ -43,12 +43,12 @@ I servizi Content Services forniscono tre tipi principali di materiale:
 
 Le raccolte di risorse sono AEM costrutti che contengono riferimenti ad altre raccolte.
 
-Una raccolta di risorse può essere esposta tramite Content Services. Una chiamata a una raccolta di risorse in una richiesta restituisce un oggetto che è un elenco delle risorse, inclusi i relativi URL. Le risorse sono accessibili tramite un URL. L&#39;URL viene fornito in un oggetto. Ad esempio:
+Una raccolta di risorse può essere esposta tramite Content Services. Una chiamata a una raccolta di risorse in una richiesta restituisce un oggetto che è un elenco delle risorse, inclusi i relativi URL. Le risorse sono accessibili tramite un URL. L&#39;URL viene fornito in un oggetto. Esempio:
 
 * Un&#39;entità pagina restituisce JSON (oggetto pagina) che include un riferimento immagine. Il riferimento immagine è un URL utilizzato per ottenere il binario della risorsa per l’immagine.
 * Una richiesta di un elenco di risorse in una cartella restituisce un JSON con dettagli su tutte le entità in tale cartella. Quell&#39;elenco è un oggetto. Il JSON dispone di riferimenti URL che vengono utilizzati per ottenere il binario della risorsa per ogni risorsa in quella cartella.
 
-### Ottimizzazione delle risorse {#asset-optimization}
+### Ottimizzazione risorse {#asset-optimization}
 
 Un valore chiave di Content Services è la capacità di restituire le risorse ottimizzate per il dispositivo. Questo riduce le esigenze di archiviazione locale dei dispositivi e migliora le prestazioni delle app.
 
@@ -65,7 +65,7 @@ Il flusso di lavoro delle risorse è il seguente:
    1. Scegli una risorsa o una raccolta di risorse
    1. Personalizzare il rendering JSON
 
-Il diagramma seguente mostra il flusso di lavoro **di riferimento per le** risorse:
+Il diagramma seguente mostra il flusso di lavoro di riferimento delle **risorse**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -85,7 +85,7 @@ Attualmente questi sono distribuiti nell’archivio delle risorse. I file a cui 
 * /content/dam/geometrixx-outdoors/brand/icons/app/cart.png
 * /content/dam/geometrixx-outdoors/brand/icons/app/home.png
 
-#### Accesso alle entità delle risorse CS {#accessing-cs-asset-entities}
+#### Accesso a entità risorsa CS {#accessing-cs-asset-entities}
 
 Mettiamo da parte i passaggi per rendere la pagina disponibile tramite l’API per il momento (sarà coperta dalla descrizione dell’interfaccia utente AEM) e presupponiamo che sia stata completata. Le entità risorsa sono state create e aggiunte allo spazio &quot;appImages&quot;. Ulteriori cartelle sono state create nello spazio a scopo organizzativo. Pertanto, le entità delle risorse sono memorizzate nel JCR AEM come:
 
@@ -103,7 +103,7 @@ Il risultato sarebbe un oggetto in formato JSON che fornirebbe un elenco delle r
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
-#### Ottenimento di un’immagine {#getting-an-image}
+#### Ottenimento di un&#39;immagine {#getting-an-image}
 
 Il JSON fornisce un URL per ogni immagine, generato da Content Services all&#39;immagine.
 
@@ -117,8 +117,8 @@ AEM Content Services sarà in grado di fornire contenuto HTML all&#39;app mobile
 
 Vengono considerate le seguenti opzioni:
 
-* **File ZIP:** Per avere la migliore possibilità di essere visualizzati correttamente sul dispositivo, tutto il materiale di riferimento della pagina - css, JavaScript, risorse, ecc. - verrà incluso in un singolo file compresso con la risposta. I riferimenti nella pagina HTML verranno modificati per utilizzare un percorso relativo a tali file.
-* **Streaming:** Ottenimento di un manifesto dei file richiesti da AEM. Quindi utilizzate il manifesto per richiedere tutti i file (HTML, CSS, JS, ecc.) con richieste successive.
+* **File ZIP:** per avere la migliore possibilità di essere visualizzato correttamente sul dispositivo, tutto il materiale di riferimento della pagina (css, JavaScript, risorse, ecc.) - verrà incluso in un singolo file compresso con la risposta. I riferimenti nella pagina HTML verranno modificati per utilizzare un percorso relativo a tali file.
+* **Streaming:** ottenere un manifesto dei file richiesti da AEM. Quindi utilizzate il manifesto per richiedere tutti i file (HTML, CSS, JS, ecc.) con richieste successive.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -128,7 +128,7 @@ Il contenuto indipendente dal canale è un modo per esporre AEM costrutti di con
 
 Queste entità di contenuto vengono generate utilizzando un modello di contenuto per tradurre le strutture di AEM in un formato JSON. I dati JSON risultanti contengono informazioni sui dati del contenuto, che vengono disaccoppiati dall&#39;archivio AEM. Ciò include la restituzione di metadati e AEM collegamenti di riferimento alle risorse, nonché le relazioni tra le strutture di contenuto, inclusa la gerarchia delle entità.
 
-### Gestione di contenuti indipendenti dal canale {#managing-channel-independent-content}
+### Gestione del contenuto indipendente dal canale {#managing-channel-independent-content}
 
 Il contenuto può essere immesso nell&#39;app in diversi modi.
 
