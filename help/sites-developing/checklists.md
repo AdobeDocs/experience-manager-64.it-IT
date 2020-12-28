@@ -37,5 +37,5 @@ Il seguente elenco di controllo evidenzia alcuni dei problemi principali. Per ma
 
 >[!NOTE]
 >
->Per ulteriori elenchi di controllo relativi all’intero progetto, è inoltre possibile visualizzare l’elenco di controllo [Gestione progetti - Best Practices](/help/managing/best-practices.md) .
+>Per ulteriori elenchi di controllo relativi all&#39;intero progetto, è inoltre possibile vedere la [Gestione dei progetti - Best Practices Checklist](/help/managing/best-practices.md).
 
