@@ -22,8 +22,8 @@ ht-degree: 77%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati, consultate [Amministrazione dei tag](/help/sites-administering/tags.md).
+* Per informazioni sul framework dei tag, nonché sull&#39;inclusione e l&#39;estensione dei tag nelle applicazioni personalizzate, consultate [Tagging per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -49,11 +49,11 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 
 Quando progetti la struttura dei contenuti di un sito e lo schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dai tag.
 
-## Applicazione dei tag   {#applying-tags}
+## Applicazione dei tag    {#applying-tags}
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
+Per applicare [tag predefiniti](/help/sites-administering/tags.md), nella finestra **Proprietà pagina** utilizzare il campo **Tag** e la finestra **Seleziona tag**. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -75,19 +75,19 @@ Come avviene per le pagine, su tag e namespace è possibile effettuare le operaz
 
 * È possibile disattivare i tag selezionati.
 
-## Tag cloud {#tag-clouds}
+## Tag cloud  {#tag-clouds}
 
 I tag cloud mostrano un insieme di tag relativi alla pagina corrente, all’intero sito Web o ai contenuti maggiormente utilizzati. I tag cloud sono uno strumento per evidenziare i problemi che sono (o sono stati) di interesse per l’utente. Le dimensioni del testo utilizzato per visualizzare il tag variano a seconda dell&#39;uso.
 
 Il componente [Tag cloud](/help/sites-authoring/default-components-foundation.md#tag-cloud) (gruppo di componenti Generale) viene utilizzato per aggiungere un Tag cloud a una pagina.
 
-## Ricerca sui tag {#searching-on-tags}
+## Ricerca sui tag  {#searching-on-tags}
 
 Puoi ricercare i tag sia nell’ambiente di creazione e modifica che nell’ambiente di pubblicazione.
 
-### Uso del componente Ricerca {#using-search-component}
+### Uso del componente Ricerca  {#using-search-component}
 
-Adding a [Search component](/help/sites-authoring/default-components-foundation.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+L&#39;aggiunta di un [componente di ricerca](/help/sites-authoring/default-components-foundation.md#search) a una pagina fornisce una funzionalità di ricerca che include i tag e può essere utilizzata sia nell&#39;ambiente di creazione che nell&#39;ambiente di pubblicazione.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
