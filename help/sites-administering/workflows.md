@@ -39,9 +39,9 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 >
 >Per ulteriori informazioni, consulta:
 >
->* Applicazione e partecipazione ai flussi di lavoro: [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
+>* Applicazione e partecipazione ai flussi di lavoro: [Lavorare con flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Creazione di modelli di workflow ed estensione delle funzionalità dei flussi di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
->* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano importanti risorse server: [Elaborazione](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)flusso di lavoro simultanea.
+>* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano importanti risorse server: [Elaborazione flusso di lavoro simultanea](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
 >
 
@@ -49,7 +49,7 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 
 ## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
-[I modelli](/help/sites-developing/workflows.md#model) di workflow in AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
+[I ](/help/sites-developing/workflows.md#model) modelli di flusso di lavoro AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
 
 * In genere agiscono su pagine o risorse per ottenere un risultato specifico.
 * Queste pagine e/o risorse sono denominate payload del flusso di lavoro.
@@ -60,7 +60,7 @@ Quando un modello di workflow viene avviato (eseguito), viene creata un&#39;ista
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono quelli definiti dal modello di workflow *al momento della generazione* dell&#39;istanza. Per ulteriori dettagli, vedere [Sviluppo dei flussi di lavoro](/help/sites-developing/workflows.md#model) .
+>I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori informazioni, vedere [Sviluppo di flussi di lavoro](/help/sites-developing/workflows.md#model).
 
 Le istanze del flusso di lavoro procedono nel seguente ciclo di vita:
 
@@ -90,7 +90,7 @@ Un utente o un servizio esegue i passaggi del flusso di lavoro, a seconda del ti
 >
 >Se si verifica un errore, l&#39;implementazione di servizio/passaggio deve gestire il comportamento per uno scenario di errore. Il motore del flusso di lavoro stesso riproverà il processo, quindi registrerà un errore e interromperà l&#39;istanza.
 
-## Stato e azioni del flusso di lavoro {#workflow-status-and-actions}
+## Stato del flusso di lavoro e azioni {#workflow-status-and-actions}
 
 Un flusso di lavoro può avere uno dei seguenti stati:
 
@@ -103,11 +103,11 @@ Un flusso di lavoro può avere uno dei seguenti stati:
 
 >[!NOTE]
 >
->Quando l&#39;esecuzione di un passaggio di processo genera errori, il passaggio viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
+>Quando l&#39;esecuzione di un passaggio di processo genera errori, il passaggio viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **ESECUZIONE**.
 
 A seconda dello stato corrente, potete eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella progressione normale di un’istanza del flusso di lavoro:
 
 * **Sospendi**: Arresta temporaneamente l&#39;esecuzione del flusso di lavoro. La sospensione è utile in casi eccezionali in cui non si desidera che il flusso di lavoro continui, ad esempio per la manutenzione. La sospensione modifica lo stato del flusso di lavoro in Sospeso.
 * **Riprendi**: Riavvia un flusso di lavoro sospeso nello stesso punto di esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
-* **Termina**: Termina l&#39;esecuzione del flusso di lavoro e cambia lo stato in **ABORTED**. Impossibile riavviare un&#39;istanza del flusso di lavoro interrotta.
+* **Termina**: Termina l&#39;esecuzione del flusso di lavoro e cambia lo stato in  **ABORTED**. Impossibile riavviare un&#39;istanza del flusso di lavoro interrotta.
 
