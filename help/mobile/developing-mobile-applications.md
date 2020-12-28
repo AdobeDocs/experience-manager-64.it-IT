@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 AEM utilizza  soluzioni di pubblicazione di Adobe di Adobe PhoneGap e , consentendo di creare e gestire applicazioni mobili multipiattaforma basate su piattaforme e ricche di contenuti e basate su utility:
 
@@ -30,18 +30,18 @@ AEM utilizza  soluzioni di pubblicazione di Adobe di Adobe PhoneGap e , consente
 * Rivedete le app in ambienti di sviluppo e di pre-produzione senza la complessità dei profili di provisioning e senza dover creare e caricare l&#39;app per la condivisione.
 * Utilizzate l&#39;ambiente di authoring AEM per creare e gestire contenuti avanzati per le vostre app.
 * Utilizzate HTML5 con  Adobe PhoneGap per creare esperienze avanzate con funzionalità native per dispositivi.
-* Potete introdurre le visualizzazioni Web HTML5 nelle applicazioni **native** nuove o preesistenti tramite Cordova WebViews.
+* Visualizzazioni Web HTML5 per applicazioni **native** nuove o preesistenti tramite Cordova WebViews.
 * Crea, cura e condividi contenuti multimediali avanzati su tutti i canali di distribuzione, inclusi web, mobile-web, app e stampa.
 
-AEM si integra con il servizio **[Adobe](https://build.phonegap.com/)**PhoneGap Build per semplificare la creazione e la distribuzione dell&#39;applicazione.
+AEM si integra con il Adobe  **[PhoneGap Build servizio](https://build.phonegap.com/)** per semplificare il processo di creazione e implementazione dell&#39;applicazione.
 
-**Adobe ContentSync** consente agli utenti di scaricare facilmente gli aggiornamenti di pagina e contenuto Over-the-Air (OTA) sui propri dispositivi senza dover reinstallare l&#39;applicazione o scaricarla dall&#39;appStore, Google Play o da altre fonti di app.
+**Adobe** ContentSyncconsente agli utenti di scaricare facilmente gli aggiornamenti di pagina e contenuto Over-the-Air (OTA) sui loro dispositivi senza dover reinstallare l&#39;applicazione o scaricarla dall&#39;appStore, Google Play o da altre origini di app.
 
-**Adobe Analytics** è completamente integrato nelle AEM app e consente il tracciamento dettagliato di distribuzione, geolocalizzazione, sistemi operativi, dispositivi, flussi di clic, tracciamento iBeacon e altro ancora.
+**Adobe** Analytics completamente integrato nelle app AEM e consente il tracciamento dettagliato di distribuzione, geolocalizzazione, sistemi operativi, dispositivi, flussi di clic, tracciamento iBeacon e altro ancora.
 
 ## Creazione di app {#creating-apps}
 
-Gli sviluppatori possono utilizzare il [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) insieme alle risorse aggiuntive reperibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare AEM app con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
+Gli sviluppatori possono utilizzare il [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) con risorse aggiuntive reperibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare AEM app con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
 
 Il file Leggimi per l&#39;archivio di Starter Kit Git include un&#39;esercitazione per l&#39;utilizzo del kit di avvio:
 
@@ -53,14 +53,14 @@ Il file Leggimi per l&#39;archivio di Starter Kit Git include un&#39;esercitazio
 
 >[!NOTE]
 >
->Ulteriori fonti di implementazione di riferimento, compresi i laboratori, si trovano su GitHub [qui](https://github.com/adobe-marketing-cloud-apps) e, la fonte &quot;cucina-lavello&quot; [qui](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
+>Un&#39;ulteriore fonte di implementazione di riferimento, compresi i laboratori, è reperibile su GitHub [qui](https://github.com/adobe-marketing-cloud-apps) e, la sorgente &quot;cucina-lavello&quot; [qui](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
 
-## Sviluppo per gli host IOS 9 e HTTP {#developing-for-ios-and-http-hosts}
+## Sviluppo per host IOS 9 e HTTP {#developing-for-ios-and-http-hosts}
 
 Gli sviluppatori IOS devono essere a conoscenza di un problema aperto con le app Cordova in esecuzione su iOS 9. Questo problema impedisce che vengano effettuate richieste a host non sicuri (ad esempio *http://localhost:4502*). Questo problema verrà risolto con una prossima release di cordova-ios (utilizzata dalla CLI Cordova), ma nel frattempo sono disponibili due soluzioni:
 
 1. Come soluzione immediata, potete comunque utilizzare senza problemi uno qualsiasi dei simulatori iOS 8.
-1. Se devi usare iOS 9, il file app -Info.plist (trovato dopo l&#39;esecuzione `cordova platform add ios` in &quot;&lt;app root>/platform/ios/&lt;nome app>/&lt;nome app>-Info.plist&quot;) può essere modificato manualmente per includere la seguente proprietà:
+1. Se devi usare iOS 9, il file app -Info.plist (trovato dopo l&#39;esecuzione di `cordova platform add ios` in &quot;&lt;app root>/platform/ios/&lt;nome app>/&lt;nome app>/&lt;nome app>-Info.plist&quot;) può essere modificato manualmente per includere la seguente proprietà:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -74,7 +74,7 @@ Gli sviluppatori IOS devono essere a conoscenza di un problema aperto con le app
 
 >[!NOTE]
 >
->Per ulteriori informazioni su &quot;App Transport Security&quot;, consultate la sezione seguente dei documenti prerelease di [Apple iOS9](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) e questa discussione [sull&#39;](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/)overflow dello stack.
+>Per ulteriori informazioni su &quot;App Transport Security&quot;, consultate la sezione seguente della [prerelease docs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) di Apple iOS9 e questa [discussione Stack Overflow](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem-1}
 
