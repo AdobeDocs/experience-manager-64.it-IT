@@ -41,18 +41,18 @@ ht-degree: 88%
 
 1. Imposta il rendering con Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   Configurate le **[!UICONTROL Impostazioni di rendering]** con i seguenti suggerimenti:
 
-   * **[!UICONTROL Scheda Comune]**
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      Deselezionare la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le [!UICONTROL Telecamere con rendering].
 
    * **[!UICONTROL Scheda Qualità]**
 
-      * **[!UICONTROL Qualità]** globale `- 0.5` o inferiore
-      * **[!UICONTROL Modalità]** Indirect Diffuse (GI) - `Final Gather`
-      * **[!UICONTROL Dimensioni]** filtro - `2.0`, `2.0`
-   * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **[!UICONTROL Qualità]** `- 0.5` complessiva o inferiore
+      * **[!UICONTROL Modalità]**  Diffusione indiretta (GI) -  `Final Gather`
+      * **[!UICONTROL Dimensioni]**  filtro-  `2.0`,  `2.0`
+   * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfezionare le luci oppure [!UICONTROL Impostazioni di rendering] oppure eseguire entrambe le operazioni per ottenere i risultati desiderati.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
 
