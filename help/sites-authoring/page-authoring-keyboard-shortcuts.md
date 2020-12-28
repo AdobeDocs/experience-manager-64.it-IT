@@ -44,7 +44,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, la scelta rapida `Ctrl-Shift-m` non è più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 
