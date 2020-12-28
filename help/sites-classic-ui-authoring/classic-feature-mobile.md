@@ -26,21 +26,21 @@ I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedere [Creazione di una Live Copy per diversi canali](/help/sites-administering/msm-livecopy.md).)
 >
->Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
+>Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedere [Creazione di filtri per gruppi di dispositivi.](/help/sites-developing/groupfilters.md))
 
 Segui la procedura seguente per creare una pagina mobile:
 
 1. Nel browser, passate alla console **Site Admin** (Amministrazione sito).
-1. Open the **Products** page below **Websites** >> **Geometrixx Mobile Demo Site** >> **English**.
+1. Aprite la pagina **Products** sotto **Websites** >> **Geometrixx Demo mobile Site** >> **English**.
 
 1. Passa a un altro emulatore effettuando una delle seguenti operazioni:
 
    * Fate clic sull’icona del dispositivo nella parte superiore della pagina.
    * Fate clic sul pulsante **Modifica** nella **barra laterale** e selezionate il dispositivo dal menu a discesa.
 
-1. Drag and drop the **Text &amp; Image** component from the Mobile tab of the Sidekick to the page.
+1. Trascinare il componente **Testo e immagine** dalla scheda Mobile della barra laterale alla pagina.
 1. Modificate il componente e aggiungete del testo. Fate clic su **OK** per salvare le modifiche.
 
 La pagina si presenta come illustrato di seguito:
