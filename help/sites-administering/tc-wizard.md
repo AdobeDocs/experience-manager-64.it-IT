@@ -40,15 +40,15 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
-1. Il pulsante **Avanti** consente di passare al passaggio **Configura** della procedura guidata. Qui è possibile aggiungere o rimuovere le lingue e selezionare il metodo di traduzione.
+1. Il pulsante **Next** consente di passare al passaggio **Configure** della procedura guidata. Qui è possibile aggiungere o rimuovere le lingue e selezionare il metodo di traduzione.
 
    ![chlimage_1-51](assets/chlimage_1-51.jpeg)
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, è presente una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consultate [Configurazione del framework](/help/sites-administering/tc-tic.md)di integrazione della traduzione.
+   >Per impostazione predefinita, è presente una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Vedere [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. Il pulsante **Avanti** consente di passare al passaggio **Traduci** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
+1. Il pulsante **Next** consente di passare al passaggio **Translate** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
 
    >[!NOTE]
    >
