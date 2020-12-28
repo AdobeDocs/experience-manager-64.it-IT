@@ -149,7 +149,7 @@ Nella console **Siti web** le pagine di contenuto sono elencate in una struttura
 >
 >Per ulteriori informazioni, consulta [SiteAdmin in CQ Widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
-## Informazioni sulla pagina nella console Siti web {#page-information-on-the-websites-console}
+## Informazioni sulla pagina nella console Siti web  {#page-information-on-the-websites-console}
 
 Nel riquadro a destra nella console **Siti web** è disponibile una vista a elenco con le seguenti informazioni sulle pagine:
 
