@@ -128,14 +128,15 @@ Puoi configurare le seguenti operazioni nelle schede **Visualizzazione**, **Info
 
 * **Descrizione collegamento** Ulteriori informazioni su come utilizzare il collegamento.
 
-* **LinkType** Nell&#39;elenco a discesa, seleziona tra 
-**URL** personalizzato e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+* ****
+LinkTypeNell&#39;elenco a discesa, seleziona tra 
+**URL personalizzato** e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo** Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere altri elementi.
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>È necessario immettere informazioni nel campo **Tipo di collegamento** nella scheda **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
@@ -152,7 +153,7 @@ In questo componente, accedi al paragrafo di destinazione per selezionarlo.
 
 Fai clic sul menu a discesa per passare al paragrafo a cui desideri fare riferimento. Al termine, fai clic su **OK**.
 
-### Testo e immagine (Campaign) {#text-image-campaign}
+### Testo e immagine (Campaign)  {#text-image-campaign}
 
 Il componente Testo e immagine (Campaign) aggiunge un blocco di testo e un’immagine.
 
@@ -164,7 +165,7 @@ Come per i componenti di Testo e personalizzazione (Campaign) e Immagine (Campai
 
 * **Immagine** Trascina un’immagine da Content Finder oppure fai clic per individuare l’immagine desiderata. Ritaglia o ruota come richiesto.
 
-* **Proprietà** immagine (proprietà&#x200B;**immagine** avanzate)
+* **Proprietà**  immagine (**Proprietà** immagine avanzate)
 
    Potete specificare i seguenti parametri:
 
@@ -201,7 +202,7 @@ I seguenti esempi mostrano un componente Testo e immagine (Campaign) che viene v
 
 ### Testo e personalizzazione (Campaign) {#text-personalization-campaign}
 
-The Text &amp; Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). Inoltre, consente di utilizzare i campi di contesto e i blocchi di personalizzazione da Adobe Campaign. Consulta [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+Il componente Testo e personalizzazione (Campaign) consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39; [Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Inoltre, consente di utilizzare i campi di contesto e i blocchi di personalizzazione da Adobe Campaign. Consulta [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 Le varie icone consentono di formattare il testo con font, allineamento, collegamenti, elenchi e rientri.
 
@@ -221,7 +222,7 @@ Utilizza i componenti di Adobe Campaign per creare un modulo che gli utenti dovr
 
 Ogni campo del componente può essere collegato a un campo del database di Adobe Campaign. I campi disponibili dipendono dal tipo di dati che contengono, come descritto nella sezione [Componenti e tipi di dati](#components-and-data-type). Se si estende lo schema dei destinatari in Adobe Campaign, i nuovi campi saranno disponibili nei componenti con tipi di dati corrispondenti.
 
-When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign** section:
+Quando si apre un modulo configurato per l&#39;integrazione con  Adobe Campaign, nella sezione **Adobe Campaign** vengono visualizzati i seguenti componenti:
 
 * Casella di selezione (Campaign)
 * Campo data (Campaign) e Campo data/HTML 5 (Campaign)
@@ -235,7 +236,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
 
 Questa sezione descrive ogni componente.
 
-### Componenti e tipi di dati {#components-and-data-type}
+### Componenti e tipi di dati  {#components-and-data-type}
 
 La tabella seguente descrive i componenti disponibili per visualizzare e modificare i dati di profilo Adobe Campaign. Ogni componente può essere mappato su un campo profilo Adobe Campaign, per visualizzarne il valore e aggiornare il campo quando il modulo viene inviato. I diversi componenti possono essere associati solo a campi di un tipo di dati appropriato.
 
@@ -280,7 +281,7 @@ I componenti di Adobe Campaign hanno impostazioni comuni a tutti i componenti (e
 
 Nella maggior parte dei componenti, è possibile configurare le seguenti operazioni:
 
-#### Titolo e testo {#title-and-text}
+#### Titolo e testo  {#title-and-text}
 
 * **Titolo**
 
@@ -342,9 +343,9 @@ Consenti ai destinatari di aggiungere una data tramite il campo data; ad esempio
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Elenco a discesa Vincolo**
+* **Vincoli -** Constraintdrop
 
-   You can select - **None** or **Date** - to add the constraint of a date or no constraint. Se si seleziona la data, la risposta che gli utenti immettono nel campo deve essere in un formato di data.
+   È possibile selezionare - **None** o **Date** - per aggiungere il vincolo di una data o nessun vincolo. Se si seleziona la data, la risposta che gli utenti immettono nel campo deve essere in un formato di data.
 
 * **Messaggio vincolo**
 
@@ -352,7 +353,7 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 
 * **Attribuzione stile - Larghezza**
 
-   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+   Per regolare la larghezza del campo, tocca o fai clic sulle icone **+** e **-** oppure immetti un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo data (Campaign) con la larghezza regolata.
 
@@ -407,15 +408,16 @@ Usa il campo numerico per consentire ai destinatari di immettere numeri, ad esem
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Elenco a discesa Vincolo**
+* **Vincoli -** Constraintdrop
 
-   You can select - **None** or **Numeric** - to add the constraint of either a number or no constraint. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
+   È possibile selezionare - **None** o **Numeric** - per aggiungere il vincolo di un numero o di nessun vincolo. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
 
 * **Messaggio vincolo**
 
    Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo facendo clic o toccando il pulsante 
-**+** e **-** icone oppure immettere un numero.
+* **Attribuzione stile -**
+LarghezzaConsente di regolare la larghezza del campo facendo clic o toccando il pulsante 
+**+** e  **-** icons oppure immettere un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo numerico (Campaign) con la larghezza configurata.
 
@@ -435,7 +437,7 @@ I seguenti esempi mostrano come viene visualizzato il componente Campo opzione (
 
 Usa il componente **Lista di controllo delle iscrizioni (Campaign)** per modificare le iscrizioni associate a un profilo Adobe Campaign.
 
-Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
+Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. Quando gli utenti inviano il modulo, questo componente si iscrive o annulla la sottoscrizione all&#39;utente dai servizi selezionati a seconda del tipo di azione del modulo (**Adobe Campaign: Iscriviti a Servizi** o **Adobe Campaign: Annulla sottoscrizione a Servizi**).
 
 >[!NOTE]
 >
@@ -453,9 +455,9 @@ Il componente Campo testo (Campaign) che consente di immettere dati di tipo stri
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Elenco a discesa Vincolo**
+* **Vincoli -** Constraintdrop
 
-   You can select - **None, Email,** or **Name (no umlauts)** - to add the constraint of either an email address, name, or no constraint. Se selezioni E-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezionate un nome, deve essere un nome (gli umlauts non sono consentiti).
+   È possibile selezionare - **None, Email,** o **Name (no umlauts)** - per aggiungere il vincolo di un indirizzo e-mail, nome o nessun vincolo. Se selezioni E-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezionate un nome, deve essere un nome (gli umlauts non sono consentiti).
 
 * **Messaggio vincolo**
 
@@ -463,7 +465,7 @@ Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campa
 
 * **Attribuzione stile - Larghezza**
 
-   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+   Per regolare la larghezza del campo, tocca o fai clic sulle icone **+** e **-** oppure immetti un numero.
 
 I seguenti esempi mostrano viene visualizzato un componente Campo testo (Campaign).
 
