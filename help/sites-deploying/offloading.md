@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Scaricamento dei processi{#offloading-jobs}
+# Scaricamento di processi{#offloading-jobs}
 
 ## Introduzione {#introduction}
 
@@ -26,7 +26,7 @@ L&#39;offload distribuisce le attività di elaborazione per la quantità  istanz
 
 L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, è possibile aggiungere  cluster di Experienci Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze  Experience Manager, in modo che una singola istanza sia considerata un cluster.
 
-Per informazioni sull&#39;aggiunta di istanze a una topologia, consultate [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
+Per informazioni sull&#39;aggiunta di istanze a una topologia, vedere [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Distribuzione processo {#job-distribution}
 
@@ -40,7 +40,7 @@ Quando JobManager crea un processo, il framework Offloading seleziona un cluster
 * Il cluster deve includere una o più istanze che eseguono un JobConsumer registrato per l&#39;argomento del processo.
 * L&#39;argomento deve essere abilitato per almeno un&#39;istanza del cluster.
 
-Consultate [Configurazione del consumo](/help/sites-deploying/offloading.md#configuring-topic-consumption) argomento per informazioni sul miglioramento della distribuzione dei processi.
+Per informazioni sull&#39;ottimizzazione della distribuzione dei processi, vedere [Configurazione del consumo di argomenti](/help/sites-deploying/offloading.md#configuring-topic-consumption).
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -148,7 +148,7 @@ Utilizzate la console Web o un nodo sling:OsgiConfig per configurare le seguenti
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>elenco consentiti  connettore topologia</td> 
+   <td>Elenco consentiti  connettore topologia</td> 
    <td>topologyConnectorWhitelist</td> 
    <td>L'elenco di indirizzi IP o nomi host consentiti dal servizio locale Connettore topologia nella topologia. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -176,7 +176,7 @@ Eseguire la procedura seguente sul membro principale della topologia. La procedu
 1. Fate clic su Configura servizio di individuazione.
 1. Per ciascun membro della topologia, aggiungete un elemento alla proprietà  elenco consentiti del connettore topologia e specificate il nome host o l&#39;indirizzo IP del membro della topologia.
 
-## Configurazione del consumo dell&#39;argomento {#configuring-topic-consumption}
+## Configurazione consumo argomento {#configuring-topic-consumption}
 
 Utilizzate il browser di scaricamento per configurare il consumo dell&#39;argomento per le istanze del Experience Manager  nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
 
@@ -201,7 +201,7 @@ I processi sono istanze di quantità distribuita con l’argomento associato abi
    * Disattivato: In questa istanza non vengono utilizzati processi di questo argomento.
    * Esclusivo: Questa istanza utilizza solo i processi di questo argomento.
 
-   **Nota:** Quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
+   **Nota:** quando selezionate Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
 
 ### Consumatori di lavori installati {#installed-job-consumers}
 
@@ -217,24 +217,24 @@ Diverse implementazioni JobConsumer sono installate con  Experience Manager. Gli
 
 Il servizio Apache Sling Job Consumer Manager fornisce le proprietà dell&#39;argomento  elenco consentiti e  elenco Bloccati. Configurate queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici in un&#39;istanza di Experience Manager .
 
-**Nota:** Se l&#39;istanza appartiene a una topologia, potete anche utilizzare il browser di scaricamento su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
+**Nota:** se l&#39;istanza appartiene a una topologia, puoi anche utilizzare Offload Browser su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
 
-La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nel elenco consentiti , quindi rimuove gli argomenti presenti nel elenco Bloccati . Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore elenco consentiti  è `*`) e nessun argomento è disabilitato (il elenco Bloccati  non ha alcun valore).
+La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nel elenco consentiti , quindi rimuove gli argomenti presenti nel elenco Bloccati . Per impostazione predefinita, tutti gli argomenti sono attivati (il valore elenco consentiti  è `*`) e nessun argomento è disabilitato (il elenco Bloccati  non ha alcun valore).
 
-Utilizzare la console Web o un `sling:OsgiConfig` nodo per configurare le seguenti proprietà. Per `sling:OsgiConfig` i nodi, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
+Utilizzate Console Web o un nodo `sling:OsgiConfig` per configurare le seguenti proprietà. Per i nodi `sling:OsgiConfig`, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nome proprietà nella console Web | OSGi ID | Descrizione |
 |---|---|---|
 | Whitelist argomento | job.consumermanager.whitelist | Elenco di argomenti elaborati dal servizio JobManager locale. Il valore predefinito di &amp;ast; determina l&#39;invio di tutti gli argomenti al servizio TopicConsumer registrato. |
 | Topic Blacklist | job.consumermanager.blacklist | Un elenco di argomenti che il servizio JobManager locale non elabora. |
 
-## Creazione Di Agenti Di Replica Per L&#39;Offload {#creating-replication-agents-for-offloading}
+## Creazione Di Agenti Di Replica Per Lo Scaricamento Di {#creating-replication-agents-for-offloading}
 
 Il framework di scarico utilizza la replica per il trasporto delle risorse tra autore e lavoratore. Il framework di scaricamento crea automaticamente agenti di replica quando le istanze si uniscono alla topologia. Gli agenti vengono creati con valori predefiniti. È necessario modificare manualmente la password utilizzata dagli agenti per l&#39;autenticazione.
 
 >[!CAUTION]
 >
->Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica. Seguire la procedura descritta in [Problemi relativi all&#39;utilizzo degli agenti](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) di replica generati automaticamente prima di creare gli agenti per il caricamento.
+>Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica. Seguire la procedura descritta in [Problemi relativi all&#39;utilizzo degli agenti di replica generati automaticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) prima di creare gli agenti per lo scarico.
 
 Creare gli agenti di replica che trasportano i payload di processo tra le istanze per lo scarico. L&#39;illustrazione seguente mostra gli agenti che devono essere scaricati dall&#39;istanza di creazione a un&#39;istanza di lavoro. L’autore ha un Sling ID pari a 1 e l’istanza di lavoro ha un Sling ID pari a 2:
 
@@ -252,19 +252,19 @@ Lo schema di replica è simile a quello utilizzato tra le istanze di creazione e
 >
 >Il framework di offload utilizza la topologia per ottenere gli indirizzi IP delle istanze di scarico. Il framework quindi crea automaticamente gli agenti di replica basati su questi indirizzi IP. Se gli indirizzi IP delle istanze di scaricamento cambiano successivamente, la modifica viene propagata automaticamente sulla topologia dopo il riavvio dell&#39;istanza. Tuttavia, il framework di offload non aggiorna automaticamente gli agenti di replica per riflettere i nuovi indirizzi IP. Per evitare questa situazione, utilizzare indirizzi IP fissi per tutte le istanze della topologia.
 
-### Denominazione degli agenti di replica per lo scarico {#naming-the-replication-agents-for-offloading}
+### Denominazione degli agenti di replica per l&#39;offload di {#naming-the-replication-agents-for-offloading}
 
 Utilizzare un formato specifico per la proprietà ***Name*** degli agenti di replica, in modo che il framework di scarico utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
 
 **Denominazione dell’agente in uscita nell’istanza di creazione:**
 
-`offloading_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
+`offloading_<slingid>`, dove  `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Denominazione dell’agente inverso nell’istanza di creazione:**
 
-`offloading_reverse_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
+`offloading_reverse_<slingid>`, dove  `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -274,7 +274,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell&#39;agente in uscita {#creating-the-outgoing-agent}
 
-1. Creare un agente **di** replica in fase di creazione. (Vedere la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica). Specificate un **Titolo**. Il **nome** deve seguire la convenzione di denominazione.
+1. Creare un **Agente di replica** sull&#39;autore. (Vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md)). Specificare un **Titolo**. La **Name** deve seguire la convenzione di denominazione.
 1. Create l&#39;agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -288,7 +288,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell&#39;agente inverso {#creating-the-reverse-agent}
 
-1. Creare un agente **di replica** inversa all&#39;autore. (Vedere la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica.) Specificate un **Titolo**. Il **nome** deve seguire la convenzione di denominazione.
+1. Creare un **agente di replica inversa** sull&#39;autore. (Vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md).) Specificare un **Titolo**. La **Name** deve seguire la convenzione di denominazione.
 1. Create l&#39;agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -299,9 +299,9 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto > Password trasporto | Password utente di replica nell&#39;istanza di destinazione |
    | Extended > Metodo HTTP | GET |
 
-### Creazione dell’agente di output {#creating-the-outbox-agent}
+### Creazione dell&#39;agente di posta in uscita {#creating-the-outbox-agent}
 
-1. Creare un agente **di** replica nell&#39;istanza di lavoro. (Vedere la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica.) Specificate un **Titolo**. Il **Nome** deve essere `offloading_outbox`.
+1. Creare un **Agente di replica** nell&#39;istanza di lavoro. (Vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md).) Specificare un **Titolo**. Il **Nome** deve essere `offloading_outbox`.
 1. Create l&#39;agente utilizzando le proprietà seguenti.
 
    | Proprietà | Valore |
@@ -310,31 +310,31 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto > URI trasporto | repo://var/replication/outbox |
    | Trigger > Ignore Default | Vero |
 
-### Ricerca dell’ID Sling {#finding-the-sling-id}
+### Ricerca dell&#39;ID Sling {#finding-the-sling-id}
 
 Ottenete l’ID Sling di un’istanza di Experience Manager  utilizzando uno dei seguenti metodi:
 
-* Aprite la console Web e, in Impostazioni Sling, individuate il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l’istanza non fa ancora parte della topologia.
+* Aprite la console Web e, nelle Impostazioni Sling, individuate il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l’istanza non fa ancora parte della topologia.
 * Utilizzate il browser Topologia se l&#39;istanza fa già parte della topologia.
 
 ## Offload dell&#39;elaborazione di risorse DAM {#offloading-the-processing-of-dam-assets}
 
 Configurate le istanze di una topologia in modo che istanze specifiche eseguano l&#39;elaborazione in background delle risorse aggiunte o aggiornate in DAM.
 
-Per impostazione predefinita,  Experience Manager esegue il flusso di lavoro Aggiorna risorsa DAM quando una risorsa DAM cambia o una viene aggiunta a DAM. Modificate il comportamento predefinito in modo che  Experience Manager esegua invece il flusso di lavoro DAM Update Asset Offloader. Questo flusso di lavoro genera un processo JobManager con un argomento di `com/adobe/granite/workflow/offloading`. Quindi, configurate la topologia in modo che il processo venga scaricato a un lavoratore dedicato.
+Per impostazione predefinita,  Experience Manager esegue il flusso di lavoro Aggiorna risorsa DAM quando una risorsa DAM cambia o una viene aggiunta a DAM. Modificate il comportamento predefinito in modo che  Experience Manager esegua invece il flusso di lavoro DAM Update Asset Offloader. Questo flusso di lavoro genera un processo JobManager con argomento `com/adobe/granite/workflow/offloading`. Quindi, configurate la topologia in modo che il processo venga scaricato a un lavoratore dedicato.
 
 >[!CAUTION]
 >
->Nessun flusso di lavoro deve essere transitorio se utilizzato con lo scaricamento del flusso di lavoro. Ad esempio, il flusso di lavoro DAM Update Asset (Aggiorna risorsa DAM) non deve essere transitorio quando viene utilizzato per lo scaricamento delle risorse. Per impostare/disimpostare il flag transitorio su un flusso di lavoro, vedere Flussi di lavoro [transitori](/help/assets/performance-tuning-guidelines.md#workflows).
+>Nessun flusso di lavoro deve essere transitorio se utilizzato con lo scaricamento del flusso di lavoro. Ad esempio, il flusso di lavoro DAM Update Asset (Aggiorna risorsa DAM) non deve essere transitorio quando viene utilizzato per lo scaricamento delle risorse. Per impostare/disimpostare il flag transitorio su un flusso di lavoro, vedere [Flussi di lavoro transitori](/help/assets/performance-tuning-guidelines.md#workflows).
 
 La procedura seguente assume le seguenti caratteristiche per la topologia di scarico:
 
 * Una o più istanze  Experience Manager sono istanze di authoring con cui gli utenti interagiscono per aggiungere o aggiornare risorse DAM.
 * Gli utenti non interagiscono direttamente con una o più istanze di Experienci Manager  che elaborano le risorse DAM. Queste istanze sono dedicate all&#39;elaborazione in background delle risorse DAM.
 
-1. Su ogni istanza  Experience Manager, configurate il servizio di individuazione in modo che punti al connettore topografico principale. Consultate [Configurazione dell’appartenenza](#title4)alla topologia.
+1. Su ogni istanza  Experience Manager, configurate il servizio di individuazione in modo che punti al connettore topografico principale. (Vedere [Configurazione dell&#39;appartenenza alla topologia](#title4).)
 1. Configurare il connettore topografico principale in modo che le istanze di connessione siano sul elenco consentiti .
-1. Aprite il Browser offload e disattivate l&#39; `com/adobe/granite/workflow/offloading` argomento nelle istanze con cui gli utenti interagiscono per caricare o modificare le risorse DAM.
+1. Aprite il Browser offload e disattivate l&#39;argomento `com/adobe/granite/workflow/offloading` sulle istanze con cui gli utenti interagiscono per caricare o modificare le risorse DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -343,15 +343,15 @@ La procedura seguente assume le seguenti caratteristiche per la topologia di sca
    1. Aprite la console Flusso di lavoro.
    1. Fare clic sulla scheda Avvio.
    1. Individua le due configurazioni di avvio che eseguono il flusso di lavoro di aggiornamento risorse DAM. Un tipo di evento di configurazione del lanciatore è Node Create e l&#39;altro è Node Modified.
-   1. Modificate entrambi i tipi di evento in modo che eseguano il flusso di lavoro DAM Update Asset Offload. Per informazioni sulle configurazioni del modulo di avvio, consultate [Avvio dei flussi di lavoro quando i nodi cambiano](/help/sites-administering/workflows-starting.md).
+   1. Modificate entrambi i tipi di evento in modo che eseguano il flusso di lavoro DAM Update Asset Offload. Per informazioni sulle configurazioni di avvio, vedere [Avvio dei flussi di lavoro quando i nodi cambiano](/help/sites-administering/workflows-starting.md).
 
 1. Nelle istanze che eseguono l&#39;elaborazione in background delle risorse DAM, disabilitate gli avviatori del flusso di lavoro che eseguono il flusso di lavoro Aggiorna risorsa DAM.
 
-## Lettura {#further-reading}
+## Lettura successiva {#further-reading}
 
 Oltre ai dettagli presentati in questa pagina, potete anche leggere quanto segue:
 
-* Per informazioni sull’utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, consultate [Creazione e utilizzo di processi per lo scaricamento](/help/sites-developing/dev-offloading.md).
-* Per le linee guida generali e le best practice per lo scarico delle risorse, consultate Linee guida [generali e Tecniche consigliate per lo scarico](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading)delle risorse.
-* Per sapere come disabilitare la creazione automatica di agenti di scarico, vedere [Disattivazione della gestione](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management)automatica degli agenti.
+* Per informazioni sull&#39;utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, vedere [Creazione e utilizzo di processi per lo scarico](/help/sites-developing/dev-offloading.md).
+* Per linee guida generali e procedure ottimali per lo scarico delle risorse, consultate [Linee guida generali e best practice per lo scarico delle risorse](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading).
+* Per sapere come disabilitare la creazione automatica di agenti di scarico, vedere [Disattivazione della gestione automatica degli agenti](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management).
 
