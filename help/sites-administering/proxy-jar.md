@@ -25,7 +25,7 @@ Il server proxy funge da server intermedio che invia le richieste tra un client 
 Il server proxy si trova nella cartella di installazione appropriata:
 
 * &lt;cq_install_path>/opt/helpers/proxy.jar
-* &lt;percorso_installazione_crx>/opt/helpers/proxy.jar
+* &lt;crx_install_path>/opt/helpers/proxy.jar
 
 È possibile utilizzare il server proxy per monitorare tutte le interazioni client-server, indipendentemente dal protocollo di comunicazione sottostante. Ad esempio, potete monitorare i protocolli seguenti:
 
@@ -49,8 +49,8 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **q (Modalità silenziosa)** Non scrive le richieste nella finestra della console. Utilizzate questa opzione se non desiderate rallentare la connessione o se registrate l&#39;output in un file (consultate l&#39;opzione -logfile).
 * **b (Modalità binaria)** Se state cercando combinazioni di byte specifiche nel traffico, abilitate la modalità binaria. L&#39;output conterrà quindi l&#39;output esadecimale e il carattere.
 * **t (voci del registro di data e ora)** Aggiunge una marca temporale a ciascun output del registro. La marca temporale è espressa in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzatelo per individuare gli eventi che si sono verificati in un momento specifico se utilizzate il server proxy per un periodo di tempo più lungo.
-* **logfile &lt;nomefile> (scrivi nel file di registro)** Scrive la conversazione client-server in un file di registro. Questo parametro funziona anche in modalità silenziosa.
-* **i &lt;numIndentions> (aggiungere un rientro)** Ogni connessione attiva è rientrata per una migliore leggibilità. Il valore predefinito è 16 livelli. (Novità in proxy.jar versione 1.16).
+* **logfile  &lt;filename> (scrittura nel file di registro)** Scrive la conversazione client-server in un file di registro. Questo parametro funziona anche in modalità silenziosa.
+* **i  &lt;numindentions> (aggiunta di un rientro)** Ogni connessione attiva è rientrata per una migliore leggibilità. Il valore predefinito è 16 livelli. (Novità in proxy.jar versione 1.16).
 
 ## Utilizzo dello strumento Proxy Server {#uses-of-the-proxy-server-tool}
 
@@ -64,7 +64,7 @@ L&#39;esempio seguente mostra tutti i cookie e i relativi valori inviati dal cli
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Verifica delle intestazioni e dei relativi valori** L’esempio di voce di registro seguente mostra che il server è in grado di stabilire una connessione sicura e che l’intestazione della lunghezza del contenuto è stata impostata correttamente:
+**Verifica delle intestazioni e** dei relativi valoriL’esempio di voce di registro seguente mostra che il server è in grado di stabilire una connessione sicura e che l’intestazione della lunghezza del contenuto è stata impostata correttamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -74,7 +74,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Verifica del funzionamento di Keep-Alive**
 
-**Keep-Alive** indica che un client riutilizza la connessione al server per il trasporto di più file (codice di pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
+**Keep-** Alivemes indica che un client riutilizza la connessione al server per il trasporto di più file (codice di pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
 
 Per verificare se keep-alive funziona:
 
@@ -98,7 +98,7 @@ Se si verificano richieste sporgenti di tanto in tanto:
 
 1. Avviate un proxy.jar.
 1. Attendi o scrivi il registro di accesso in un file, con ogni voce con una marca temporale.
-1. Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa dei problemi.
+1. Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa problemi.
 
 ## Il formato dei messaggi di registro {#the-format-of-log-messages}
 
@@ -117,7 +117,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa che questa voce proviene dal client (è una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * # 00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
-* [GET &lt;?>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
+* [GET  &lt;?>] è il contenuto della richiesta, nell’esempio una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le informazioni seguenti:
 
