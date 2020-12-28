@@ -23,7 +23,7 @@ ht-degree: 94%
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* The title appears in the **Sidekick**, from where authors can access them to work on them.
+* Il titolo viene visualizzato nella **barra laterale**, da cui gli autori possono accedervi per utilizzarlo.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
 
@@ -33,7 +33,7 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 
 La seguente procedura consente di creare un lancio.
 
-1. Open the Website administration page ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Aprite la pagina di amministrazione del sito Web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
 1. Fai clic su **Nuovo…**, quindi su **Nuovo lancio…**.
 1. Nella finestra di dialogo **Crea lancio**, specifica i valori delle seguenti proprietà:
 
