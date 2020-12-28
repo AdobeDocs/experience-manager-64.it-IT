@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Modelli e componenti per app{#app-templates-and-components}
+# Modelli e componenti app{#app-templates-and-components}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Un modello viene utilizzato per creare una pagina e definisce quali componenti possono essere utilizzati all’interno dell’ambito selezionato. Un modello è una gerarchia di nodi con la stessa struttura della pagina da creare, ma senza alcun contenuto effettivo.
 
 Ogni modello vi presenta una selezione di componenti disponibili per l’uso.
 
-* i modelli sono composti di [componenti](/help/sites-developing/components.md);
+* I modelli sono composti di [Componenti](/help/sites-developing/components.md);
 * I componenti utilizzano e consentono l&#39;accesso ai Widget e questi vengono utilizzati per il rendering del contenuto.
 
 >[!NOTE]
@@ -37,7 +37,7 @@ Ogni modello vi presenta una selezione di componenti disponibili per l’uso.
 
 Un modello è la base di una pagina.
 
-Per creare una pagina, il modello deve essere copiato (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) nella posizione corrispondente nella struttura del sito: questo è ciò che accade se una pagina viene creata utilizzando la scheda **Siti Web** .
+Per creare una pagina, il modello deve essere copiato (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) nella posizione corrispondente nella struttura del sito: questo è ciò che accade se una pagina viene creata utilizzando la scheda **Siti Web**.
 
 Questa azione di copia assegna alla pagina anche il contenuto iniziale (in genere Contenuto di livello principale) e la proprietà sling:resourceType, il percorso del componente della pagina utilizzato per eseguire il rendering della pagina (tutto nel nodo figlio jcr:content).
 
@@ -55,7 +55,7 @@ Un modello viene creato sotto un nodo di tipo **cq:Template**.
 * **jcr:title** - title per il modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
 * **jcr:description** - descrizione del modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
 
-Questo nodo contiene *un nodo jcr:content (cq:PageContent)* da utilizzare come base per il nodo di contenuto delle pagine risultanti; questo fa riferimento, utilizzando *sling:resourceType*, al componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
+Questo nodo contiene *un nodo jcr:content (cq:PageContent)* che può essere utilizzato come base per il nodo di contenuto delle pagine risultanti; questo fa riferimento, utilizzando *sling:resourceType*, al componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
 
 >[!NOTE]
 >
