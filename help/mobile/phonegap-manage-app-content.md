@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Creazione e gestione del contenuto delle app{#creating-and-managing-app-content}
+# Creazione e gestione di contenuto dell&#39;app{#creating-and-managing-app-content}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-La gestione dei contenuti delle app richiede un impegno collettivo da parte di [sviluppatori](#developer), [autori](#author) di contenuti e [amministratori](#administrator). Gli autori modificano le pagine, che a loro volta si basano su modelli e componenti generati dagli sviluppatori di app.
+La gestione dei contenuti dell&#39;app richiede un impegno collettivo da parte di [sviluppatori](#developer), [autori](#author) e [amministratori](#administrator). Gli autori modificano le pagine, che a loro volta si basano su modelli e componenti generati dagli sviluppatori di app.
 
 Infine, gli amministratori pubblicano strategicamente il contenuto dell&#39;app aggiornata.
 
@@ -40,11 +40,11 @@ Infine, gli amministratori pubblicano strategicamente il contenuto dell&#39;app 
 >
 >Se non utilizzate un modello di app integrato, per abilitare la pubblicazione OTA del nuovo contenuto dell&#39;app, dovete configurare un gestore di sincronizzazione dei contenuti.
 >
->Per ulteriori informazioni, consultate [Mobile con Content Sync](/help/mobile/phonegap-contentsync.md) (Sincronizzazione dei contenuti) nella sezione Sviluppatore.
+>Per ulteriori informazioni, consultate [Mobile con Content Sync](/help/mobile/phonegap-contentsync.md) nella sezione Sviluppatore.
 
 In questo caso, il contenuto può essere creato, modificato ed eliminato in  AEM Mobile nello stesso modo in cui lo si creava in  AEM Sites.
 
-La sezione **** Gestisci contenuto pagina mostra il numero di pagine di contenuto gestito e l’ultima modifica apportata per un particolare payload. Per approfondire i contenuti per creare, copiare, spostare, eliminare e aggiornare le pagine, fate clic su ciascun record nella sezione.
+La sezione **Gestisci contenuto pagina** visualizza il numero di pagine di contenuto gestito e l&#39;ultima modifica apportata a un particolare payload. Per approfondire i contenuti per creare, copiare, spostare, eliminare e aggiornare le pagine, fate clic su ciascun record nella sezione.
 
 Una volta aggiornato il contenuto, gli amministratori possono pubblicare un payload di aggiornamento del contenuto Over-the-Air (OTA) per i clienti tramite la sezione **Gestisci pacchetti di contenuti.**
 
@@ -52,23 +52,23 @@ Una volta aggiornato il contenuto, gli amministratori possono pubblicare un payl
 
 Selezionate uno dei pacchetti di contenuti elencati per creare o modificare contenuti quali creazione, modifica o rimozione di pagine, modifica della navigazione e dell&#39;ordine delle pagine, creazione o aggiornamento di contenuti quali copia (testo) e contenuti multimediali.
 
-Nota *tutto è contenuto*, vale a dire stili di applicazione, copia (testo), supporti, pagine, navigazione e, targeting del contenuto possono essere tutti modificati e aggiornati OTA, senza un viaggio in un app store.
+Nota *tutto è contenuto*, vale a dire stili di applicazione, copia (testo), supporti, pagine, navigazione e, il targeting del contenuto può essere modificato e aggiornato OTA, senza un viaggio in un app store.
 
-Per modificare  contenuto AEM Mobile, *AEM autori *dovranno conoscere AEM&#39;interfaccia di modifica del contenuto: [Authoring delle pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Per modificare  contenuto AEM Mobile, *AEM autori *dovranno conoscere AEM&#39;interfaccia di modifica del contenuto: [Creazione di pagine in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## Sezione Gestisci pacchetti di contenuti {#the-manage-content-packages-tile}
 
-In questo caso, *AEM amministratori* possono aggiornare rapidamente e facilmente le app per offrire esperienze coinvolgenti e contenuti aggiornati in grado di promuovere il coinvolgimento del marchio e raggiungere obiettivi aziendali senza la necessità di inviare nuovamente uno sviluppatore o un app store.
+In questo caso, *AEM amministratori* possono aggiornare rapidamente e facilmente le app per offrire esperienze coinvolgenti e contenuti aggiornati in grado di promuovere il coinvolgimento del marchio e soddisfare gli obiettivi aziendali, senza la necessità di inviare nuovamente uno sviluppatore o un app store.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Una volta che gli autori *di* AEM hanno aggiunto o modificato il contenuto tramite Gestisci sezione contenuto, *AEM gli amministratori* possono inviare tali modifiche ai clienti con un aggiornamento Pacchetti di contenuti.
+Dopo che *AEM Authors* ha aggiunto o modificato contenuto tramite la sezione Gestisci contenuto, *AEM amministratori* possono inviare tali modifiche ai clienti con un aggiornamento Pacchetti di contenuti.
 
-L&#39;azione Pacchetto contenuti consente a *AEM Author* di creare e modificare il contenuto delle pagine mentre il team di sviluppo apporta modifiche alla progettazione e all&#39;implementazione di un&#39;applicazione host, inclusi navigazione, stile, logica lato server, modelli e componenti, quindi invia le modifiche in OTA ai clienti senza dover inviare nuovamente ai vari store per la distribuzione.
+L&#39;azione Pacchetto contenuti consente a *AEM Author* di creare e modificare il contenuto delle pagine mentre il team di sviluppo apporta modifiche alla progettazione e all&#39;implementazione di un&#39;applicazione host, inclusi navigazione, stile, logica lato server, modelli e componenti, e quindi invia tali modifiche ai clienti senza dover inviare nuovamente i diversi store per la distribuzione.
 
 **Per pubblicare contenuto nuovo o aggiornato**
 
-Selezionate un pacchetto di contenuti dalla sezione, in questo esempio il pacchetto inglese. Una finestra di dialogo di aggiornamento del contenuto elenca la configurazione *Content Sync* pertinente. Se il contenuto dell&#39;app è stato modificato dopo un aggiornamento precedente, lo stato sarà *In sospeso*, come mostrato di seguito.
+Selezionate un pacchetto di contenuti dalla sezione, in questo esempio il pacchetto inglese. Una finestra di dialogo di aggiornamento del contenuto elenca la relativa configurazione *Content Sync*. Se il contenuto dell&#39;app è stato modificato dopo un aggiornamento precedente, lo stato sarà *In sospeso*, come mostrato di seguito.
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -76,7 +76,7 @@ Quindi, selezionate l&#39;azione **Stage** in alto a destra per creare il nuovo 
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-Il gestore *Content Sync* crea quindi i pacchetti richiesti formando un delta (un pacchetto di *sole* modifiche). Una volta completato, questo pacchetto di aggiornamento del contenuto è stato messo in stato di avanzamento come mostrato di seguito.
+Il gestore *Content Sync* crea quindi i pacchetti richiesti formando un delta (un pacchetto di *only* che ha modificato). Una volta completato, questo pacchetto di aggiornamento del contenuto è stato messo in stato di avanzamento come mostrato di seguito.
 
 L&#39;avvio di un aggiornamento al contenuto consente di effettuare diversi aggiornamenti prima di pubblicarli su OTA per dispositivi mobili.
 
@@ -84,11 +84,11 @@ L&#39;avvio di un aggiornamento al contenuto consente di effettuare diversi aggi
 >
 >Il contenuto sullo stage può essere verificato utilizzando l&#39;app AEM Verify prima della pubblicazione.
 >
->Consultate [Mobile Quickstart per AEM Verifica](/help/mobile/phonegap-mobile-quickstart.md) per ulteriori dettagli sullAEMapp Verifica.
+>Per ulteriori informazioni sull&#39;app AEM verifica, vedere [Mobile Quickstart per AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Quando siete pronti per fornire nuovo contenuto agli utenti dell&#39;app con Content Sync OTA, selezionate **Pubblica** come mostrato di seguito.
+Quando siete pronti per inviare nuovo contenuto agli utenti dell&#39;app con Content Sync OTA, selezionate **Pubblica** come mostrato di seguito.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 
