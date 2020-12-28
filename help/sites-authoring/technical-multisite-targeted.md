@@ -22,7 +22,7 @@ ht-degree: 90%
 
 Il diagramma seguente illustra il modo in cui è strutturato il supporto multisito per contenuti di destinazione.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Ogni area contiene la propria serie di attività, esperienze e offerte.
+Le aree vengono visualizzate sotto **/content/campaign/&lt;brand>** e per impostazione predefinita ogni marchio ha un&#39;area master, che viene creata automaticamente. Ogni area contiene la propria serie di attività, esperienze e offerte.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
