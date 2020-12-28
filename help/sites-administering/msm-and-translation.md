@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -24,19 +24,19 @@ I seguenti strumenti di amministrazione sono disponibili per la gestione di siti
 
 * Multi Site Manager (MSM) consente di utilizzare lo stesso contenuto del sito in più posizioni, consentendo allo stesso tempo l&#39;utilizzo di varianti:
 
-   * [Riutilizzo del contenuto: Multi Site Manager e Live Copy](/help/sites-administering/msm.md)
+   * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-administering/msm.md)
 
 * La traduzione consente di automatizzare la traduzione di contenuti di una pagina, risorse e contenuti generati dagli utenti per creare e gestire siti Web multilingue:
 
    * [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md)
 
-* Queste due funzioni possono essere combinate per gestire siti Web [multinazionali e multilingue](#multinational-and-multilingual-sites).
+* Queste due funzioni possono essere combinate per gestire siti Web che sono [Multilinazionali e Multilingue](#multinational-and-multilingual-sites).
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
 È possibile creare contenuti per siti multinazionali e multilingue in modo efficiente grazie all&#39;utilizzo combinato di Multi Site Manager e al flusso di lavoro di traduzione. Create un sito master in una lingua, per un paese specifico, quindi utilizzate tale contenuto come base per gli altri siti, utilizzando la traduzione ove necessario:
 
-* [Tradurre](/help/sites-administering/translation.md) il sito principale in diverse lingue.
+* [Tradurre ](/help/sites-administering/translation.md) il sito principale in diverse lingue.
 
 * Utilizzate [Multi Site Manager](/help/sites-administering/msm.md) per:
 
@@ -52,8 +52,8 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 >
 >In questo e in altri scenari, MSM non gestisce le diverse versioni in quanto tale.
 >
->* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione di contenuti tradotti da un blueprint (ad esempio, un master globale) alle Live Copy (ad esempio i siti locali), entro i limiti di una lingua.
->* Le capacità di integrazione della [traduzione](/help/sites-administering/translation.md) di AEM, insieme ai servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
+>* [MSM ](/help/sites-administering/msm.md) gestisce la distribuzione di contenuto convertito da un blueprint (ad esempio, un master globale) alle Live Copy (ad esempio i siti locali), entro i limiti di una lingua.
+>* Le funzionalità di [traduzione](/help/sites-administering/translation.md) integrazione di AEM, insieme ai servizi di gestione della traduzione di terze parti, gestiscono le lingue e traducono i contenuti in queste diverse lingue.
 
 >
 >
