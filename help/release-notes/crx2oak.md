@@ -1,8 +1,8 @@
 ---
 title: Strumento di migrazione CRX2OAK
 seo-title: Strumento di migrazione CRX2OAK
-description: Note sulla versione specifiche per lo strumento di migrazione  Adobe Experience Manager 6.4 CRX2OAK.
-seo-description: Note sulla versione specifiche per lo strumento di migrazione  Adobe Experience Manager 6.4 CRX2OAK.
+description: Note sulla versione specifiche dello strumento di migrazione Adobe Experience Manager 6.4 CRX2OAK.
+seo-description: Note sulla versione specifiche dello strumento di migrazione Adobe Experience Manager 6.4 CRX2OAK.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Strumento di migrazione CRX2OAK {#crx-oak-migration-tool}
 
-## Elenco delle modifiche e delle correzioni {#list-of-changes-and-fixes}
+## Elenco di modifiche e correzioni {#list-of-changes-and-fixes}
 
 ### 1.8.6 (giugno 2018) {#june}
 
@@ -49,8 +49,8 @@ ht-degree: 0%
 
 * Aggiornamento della versione Oak alla 1.4.1
 * OAK-3846/GRANITE-10748 Rinominare i nodi SNS se violano i vincoli del tipo di nodo
-* OAK-3910 / GRANITE-10730 Migrazione del nodo da cui ereditare `mix:versionable` senza cronologia delle versioni
-* OAK-4128/GRANITE-11757 `RepositorySidegrade` non copia le proprietà del nodo radice
+* OAK-3910 / GRANITE-10730 Migrazione del nodo che eredita da `mix:versionable` senza cronologia delle versioni
+* OAK-4128 / GRANITE-11757 `RepositorySidegrade` non copia le proprietà del nodo radice
 
 ### Versione 1.3.4 (gennaio 2016) {#version-january}
 
