@@ -81,7 +81,7 @@ Nella console **Siti web**, l’opzione di menu **Trova e sostituisci** consente
    * Specificare se nella ricerca è necessario distinguere tra maiuscole e minuscole
    * Specificare se cercare solo parole intere (in caso contrario vengono trovate anche le sottostringhe)
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   Facendo clic su **Preview** vengono elencati i punti in cui è stato trovato il termine. È possibile selezionare o deselezionare le istanze specifiche da sostituire:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +94,7 @@ L’ambito predefinito del servlet di ricerca e sostituzione include le seguenti
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+L&#39;ambito può essere modificato utilizzando la console di gestione Web Apache Felix (ad esempio, in `http://localhost:4502/system/console/configMgr`). Selezionare `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configurare l&#39;ambito come necessario.
 
 >[!NOTE]
 >
