@@ -25,7 +25,7 @@ Create una configurazione per il servizio cloud Microsoft Translator per utilizz
 | Proprietà | Descrizione |
 |---|---|
 | Etichetta traduzione | Nome visualizzato per il servizio di traduzione. |
-| Attribuzione traduzione | (Facoltativo) Per il contenuto generato dall&#39;utente, l&#39;attribuzione che viene visualizzata accanto al testo convertito, ad esempio `Translations by Microsoft`. |
+| Attribuzione traduzione | (Facoltativo) Per il contenuto generato dall&#39;utente, l&#39;attribuzione visualizzata accanto al testo convertito, ad esempio `Translations by Microsoft`. |
 | ID area di lavoro | (Facoltativo) L&#39;ID del motore di Microsoft Translator personalizzato da utilizzare. |
 | Chiave di sottoscrizione | La chiave di iscrizione Microsoft per Microsoft Translator. |
 
@@ -43,7 +43,7 @@ La procedura seguente utilizza l’interfaccia touch per creare una configurazio
 1. Fai clic su Crea.
 1. Nella finestra di dialogo visualizzata, digitate i valori per le proprietà e fate clic su OK.
 
-## Esempi di configurazioni di Cloud Service di Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
+## Configurazioni di Cloud Service di Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
 Con gli esempi di Geometrixx sono installate le seguenti configurazioni del servizio cloud Microsoft Translator. Alcune configurazioni di esempio utilizzano un account di prova Microsoft Translation che consente di tradurre al massimo 2 000 000 caratteri al mese.
 
@@ -51,7 +51,7 @@ Con gli esempi di Geometrixx sono installate le seguenti configurazioni del serv
 
 La configurazione della licenza di prova di Microsoft Translator è un esempio di configurazione che viene installata con il pacchetto di esempio Geometrixx Outdoors. Questa configurazione utilizza un account Microsoft Translator con un abbonamento gratuito che consente 2 000 000 caratteri tradotti al mese.
 
-### Microsoft Translator Trial License - Geometrixx-outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
+### Licenza di prova per Microsoft Translator - Geometrixx all&#39;aperto {#microsoft-translator-trial-license-geometrixx-outdoors}
 
 La Microsoft Translator Trial License - configurazione Geometrixx-outdoors è una configurazione di esempio installata con Geometrixx Outdoors. Questa configurazione utilizza lo stesso account gratuito Microsoft Translator della configurazione Microsoft Translator Trial License. L&#39;account dispone di un&#39;iscrizione gratuita che consente 2 000 000 caratteri tradotti al mese.
 
@@ -80,7 +80,7 @@ Le pagine di configurazione di Microsoft Translation forniscono un comodo colleg
 
 ## Attivazione delle configurazioni del servizio di traduzione {#activating-the-translator-service-configurations}
 
-È necessario attivare le configurazioni del servizio cloud per supportare il contenuto convertito replicato nell’istanza di pubblicazione. Utilizzare il metodo di [attivazione di una sezione completa (struttura ad albero)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) per attivare i nodi del repository in cui sono memorizzate le configurazioni del servizio cloud Microsoft Translator o di terze parti. I nodi si trovano sotto i seguenti nodi padre:
+È necessario attivare le configurazioni del servizio cloud per supportare il contenuto convertito replicato nell’istanza di pubblicazione. Utilizzare il metodo di [attivazione di una sezione completa (struttura ad albero)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) per attivare i nodi del repository che archiviano le configurazioni del servizio cloud di Microsoft Translator o di terze parti. I nodi si trovano sotto i seguenti nodi padre:
 
 * Servizio di traduzione Microsoft: /libs/settings/cloudconfigs/translate/msft-Translation
 * Traduzione di terze parti: /etc/cloudservices/traduzione automatica
