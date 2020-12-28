@@ -23,7 +23,7 @@ ht-degree: 20%
 Grazie alla funzionalità touch equiparabile a quella dell’interfaccia classica in molte aree di AEM, l’accesso all’interfaccia classica tramite l’interfaccia touch è ora disattivato per impostazione predefinita. Nelle pagine seguenti viene illustrato come riabilitare questo accesso, se necessario.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
-* [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
+* [Admin Console ](/help/sites-administering/enable-classic-ui-admin.md)
 
 >[!NOTE]
 >
