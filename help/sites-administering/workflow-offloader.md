@@ -26,75 +26,75 @@ Lo scaricatore del flusso di lavoro di Assets consente di abilitare più istanze
 
 Utilizzate Configuration Manager per aggiungere l&#39;URL per l&#39;istanza leader e i nomi host delle istanze offloader per le richieste di connessione nell&#39;istanza leader.
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Operazioni** > Console **** Web per aprire Gestione configurazione.
-1. Dalla console Web, selezionate **Sling** (Sling) > **Topology Management (Gestione** topologia).
+1. Toccate/fate clic sul logo AEM e scegliete **Strumenti** > **Operazioni** > **Console Web** per aprire Gestione configurazione.
+1. Dalla console Web, selezionare **Sling** > **Gestione topologia**.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Nella pagina Gestione topologia, tocca o fai clic sul collegamento **Configura servizio** Discovery.Oak.
+1. Nella pagina Gestione topologia, tocca o fai clic sul collegamento **Configura servizio Discovery.Oak**.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. Nella pagina Configurazione servizio di individuazione, specificate l&#39;URL del connettore per l&#39;istanza leader nel campo URL **del connettore** topologia.
+1. Nella pagina Configurazione servizio di individuazione, specificate l&#39;URL del connettore per l&#39;istanza leader nel campo **URL del connettore topologia**.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Nel campo Whitelist del connettore **topologia** , specificate l&#39;indirizzo IP o i nomi host delle istanze offloader che possono connettersi all&#39;istanza leader. Tap/click **Save**.
+1. Nel campo **Whitelist del connettore topologia**, specificate l&#39;indirizzo IP o i nomi host delle istanze offloader che possono connettersi all&#39;istanza leader. Toccate/fate clic su **Salva**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Per visualizzare le istanze offload collegate all&#39;istanza leader, accedete a **Strumenti** > **Distribuzione** > **Topologia** e toccate o fate clic sulla vista Cluster.
+1. Per visualizzare le istanze offloader collegate all&#39;istanza leader, passare a **Strumenti** > **Distribuzione** > **Topologia** e toccare/fare clic sulla vista Cluster.
 
-## Disattivazione {#disable-offloading}
+## Disattivazione dell&#39;offload {#disable-offloading}
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Distribuzione** > **Offload**. Nella pagina **Scaricamento del browser** sono visualizzati gli argomenti e le istanze del server che possono utilizzare gli argomenti.
+1. Toccate/fate clic sul logo AEM e scegliete **Strumenti** > **Distribuzione** > **Offload**. La pagina **Scaricamento del browser** visualizza gli argomenti e le istanze del server che possono utilizzare gli argomenti.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Disattiva l’argomento *com/adobe/granite/workflow/offload* sulle istanze iniziali con cui gli utenti interagiscono per caricare o modificare AEM risorse.
+1. Disattiva l&#39;argomento *com/adobe/granite/workflow/offloading* sulle istanze iniziali con cui gli utenti interagiscono per caricare o modificare AEM risorse.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-## Configurare gli avviatori del flusso di lavoro sull&#39;istanza leader {#configure-workflow-launchers-on-the-leader-instance}
+## Configurare i avviatori di workflow sull&#39;istanza iniziale {#configure-workflow-launchers-on-the-leader-instance}
 
-Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavoro **DAM Update Asset Offload** (Aggiorna risorsa) sull&#39;istanza principale invece del flusso di lavoro **Dam Update Asset** (Aggiorna risorsa Dam).
+Configurate gli avviatori del flusso di lavoro per utilizzare il flusso di lavoro **Aggiornamento DAM Asset Offloading** sull&#39;istanza principale invece del flusso di lavoro **Aggiorna risorsa Dam**.
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Avviatori** flusso di lavoro.
+1. Toccate/fate clic sul logo AEM e scegliete **Strumenti** > **Flusso di lavoro** > **Avviatori** per aprire la console **Avviatori flusso di lavoro**.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Individuate le due configurazioni di avvio con i tipi di evento **Nodo creato** e **Nodo modificato** rispettivamente, che eseguono il flusso di lavoro **DAM Update Asset** .
-1. Per ciascuna configurazione, seleziona la casella di controllo prima di essa e tocca o fai clic sull’icona **Visualizza proprietà** dalla barra degli strumenti per visualizzare la finestra di dialogo Proprietà **** avvio.
+1. Individuate le due configurazioni di avvio con il tipo di evento **Node Create** e **Node Modified** rispettivamente, che eseguono il flusso di lavoro **DAM Update Asset**.
+1. Per ogni configurazione, seleziona la casella di controllo prima e tocca o fai clic sull&#39;icona **Visualizza proprietà** nella barra degli strumenti per visualizzare la finestra di dialogo **Proprietà di avvio**.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. Dall’elenco **Flusso** di lavoro, scegliete **DAM Update Asset Offload** (Aggiorna offload risorsa) e toccate o fate clic su **Salva**.
+1. Nell&#39;elenco **Workflow**, scegliere **Aggiornamento DAM Asset Offloading** e toccare o fare clic su **Salva**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Modelli** per aprire la pagina Modelli **** di workflow.
-1. Selezionate il flusso di lavoro **DAM Update Asset Offload** , quindi toccate o fate clic su **Modifica** nella barra degli strumenti per visualizzarne i dettagli.
+1. Toccate/fate clic sul logo AEM e scegliete **Strumenti** > **Workflow** > **Modelli** per aprire la pagina **Modelli di workflow**.
+1. Selezionate il flusso di lavoro **DAM Update Asset Offloading**, quindi toccate o fate clic su **Edit** dalla barra degli strumenti per visualizzarne i dettagli.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Visualizzare il menu di scelta rapida per il passaggio Offload **del flusso di lavoro** DAM e scegliere **Modifica**. Verificare la voce nel campo **Argomenti** processo della scheda Argomenti **** generici della finestra di dialogo di configurazione.
+1. Visualizzare il menu di scelta rapida per il passaggio **Scaricamento del flusso di lavoro DAM** e scegliere **Modifica**. Verificare la voce nel campo **Argomento processo** della scheda **Argomenti generici** della finestra di dialogo di configurazione.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Disattivare gli avviatori del flusso di lavoro sulle istanze offload {#disable-the-workflow-launchers-on-the-offloader-instances}
+## Disabilitare gli avviatori del flusso di lavoro sulle istanze offload {#disable-the-workflow-launchers-on-the-offloader-instances}
 
-Disattivate i avviatori del flusso di lavoro che eseguono il flusso di lavoro **DAM Update Asset** nell&#39;istanza iniziale.
+Disattivate i avviatori del flusso di lavoro che eseguono il flusso di lavoro **DAM Update Asset** sull&#39;istanza iniziale.
 
-1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Avviatori** flusso di lavoro.
+1. Toccate/fate clic sul logo AEM e scegliete **Strumenti** > **Flusso di lavoro** > **Avviatori** per aprire la console **Avviatori flusso di lavoro**.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-1. Individuate le due configurazioni di avvio con i tipi di evento **Nodo creato** e **Nodo modificato** rispettivamente, che eseguono il flusso di lavoro **DAM Update Asset** .
-1. Per ciascuna configurazione, seleziona la casella di controllo prima di essa e tocca o fai clic sull’icona **Visualizza proprietà** dalla barra degli strumenti per visualizzare la finestra di dialogo Proprietà **** avvio.
+1. Individuate le due configurazioni di avvio con il tipo di evento **Node Create** e **Node Modified** rispettivamente, che eseguono il flusso di lavoro **DAM Update Asset**.
+1. Per ogni configurazione, seleziona la casella di controllo prima e tocca o fai clic sull&#39;icona **Visualizza proprietà** nella barra degli strumenti per visualizzare la finestra di dialogo **Proprietà di avvio**.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
 
-1. Nella sezione **Activate **(Attiva*), trascinate il cursore per disattivare l&#39;avvio del flusso di lavoro, quindi toccate o fate clic su **Salva** per disattivarlo.
+1. Nella sezione **Activate **, trascinare il cursore per disattivare l&#39;avvio del flusso di lavoro e toccare/fare clic su **Save** per disattivarlo.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
