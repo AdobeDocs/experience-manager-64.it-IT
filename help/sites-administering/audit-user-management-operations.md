@@ -30,22 +30,22 @@ Questo miglioramento consente di eseguire il controllo delle azioni CRUD (Crea, 
 * Aggiunta di un utente a un gruppo
 * Modifiche delle autorizzazioni per un utente o un gruppo esistente
 
-Per impostazione predefinita, le voci vengono scritte nel `error.log` file. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
+Per impostazione predefinita, le voci vengono scritte nel file `error.log`. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
 
 ## Reindirizzamento dell&#39;output a un file di registro separato {#redirecting-the-output-to-a-separate-log-file}
 
-Per reindirizzare l’output di registrazione a un file di registro separato, è necessario creare una nuova configurazione **Apache Sling Logging Logger** . Nell&#39;esempio seguente verrà utilizzato `useraudit.log` come nome del file separato.
+Per reindirizzare l&#39;output di registrazione a un file di registro separato, è necessario creare una nuova configurazione **Apache Sling Logging Logger**. Nell&#39;esempio seguente verrà utilizzato `useraudit.log` come nome del file separato.
 
-1. Vai alla console Web sfogliando `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Cercate la configurazione **del logger di registrazione** Apache Sling. Quindi, premere il segno &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
+1. Andate alla console Web sfogliando `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Cercare la **configurazione del log di registrazione Apache Sling**. Quindi, premere il segno &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
 1. Create la configurazione seguente:
 
-   * **Livello registro:** Informazioni
-   * **File di registro:** logs/useraudit.log
-   * **Pattern messaggio:** level default
+   * **Livello Registro:** Informazioni
+   * **File Di Registro:** logs/useraudit.log
+   * **Pattern messaggio:** livello predefinito
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Per inserire entrambi i login nel campo **Logger** , è necessario immettere il nome del primo campo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
+   Per inserire entrambi i login nel campo **Logger**, è necessario immettere il nome del primo campo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
 ## Esempio di output {#example-output}
 
@@ -85,7 +85,7 @@ Se configurato correttamente, l&#39;output avrà l&#39;aspetto seguente:
 
 Nell’interfaccia classica, le informazioni sulle operazioni CRUD registrate nel registro di controllo relative all’aggiunta e all’eliminazione di utenti sono limitate all’ID dell’utente interessato e al momento in cui è avvenuta la modifica.
 
-Ad esempio:
+Esempio:
 
 ```
 10.05.2019 18:01:09.123 INFO [0:0:0:0:0:0:0:1 [1557491469096] POST /libs/cq/security/authorizables/POST HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction User 'test' was created
