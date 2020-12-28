@@ -18,9 +18,9 @@ ht-degree: 2%
 ---
 
 
-# Creazione di una directory principale della lingua mediante l’interfaccia classica{#creating-a-language-root-using-the-classic-ui}
+# Creazione di una directory principale della lingua mediante l&#39;interfaccia classica{#creating-a-language-root-using-the-classic-ui}
 
-La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale](/help/sites-administering/tc-prep.md#creating-a-language-root)della lingua.
+La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Nella console Siti Web, nella struttura Siti Web, selezionate la pagina principale del sito. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Aggiungete una nuova pagina figlia che rappresenta la versione in lingua del sito:
