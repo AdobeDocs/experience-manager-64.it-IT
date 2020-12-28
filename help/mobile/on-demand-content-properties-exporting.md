@@ -18,19 +18,19 @@ ht-degree: 4%
 ---
 
 
-# Utilizzo delle proprietà di contenuto per esportare il contenuto{#using-content-properties-to-export-content}
+# Utilizzo delle proprietà contenuto per esportare contenuto{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le app sono rappresentate come *cq:Pages* in AEM.
 
-Condividono le stesse proprietà comuni riscontrate in qualsiasi *cq:Page* oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell&#39;integrazione.
+Condividono le stesse proprietà comuni presenti in qualsiasi *cq:Page*, oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell&#39;integrazione.
 
 ## Proprietà app {#app-properties}
 
-La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
+La tabella seguente mostra **Proprietà e nodi dell&#39;app**.
 
 <table>
  <tbody>
@@ -87,7 +87,7 @@ La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
  </tbody>
 </table>
 
-Potete utilizzare Proprietà ****** contenuto per creare contenuto. Consultate le seguenti risorse per la creazione ed esportazione di articoli e risorse condivise:
+È possibile utilizzare ***Proprietà contenuto*** per creare contenuto. Consultate le seguenti risorse per la creazione ed esportazione di articoli e risorse condivise:
 
 * [Proprietà contenuto](/help/mobile/content-properties.md)
 * [Creazione della configurazione di esportazione degli articoli](/help/mobile/creating-article-export-configuration.md)
