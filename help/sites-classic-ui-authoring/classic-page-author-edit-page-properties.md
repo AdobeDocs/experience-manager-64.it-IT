@@ -82,7 +82,7 @@ Le proprietà sono distribuite su più schede:
 
    Consente di inserire un URL personalizzato per questa pagina. Questo consente di ottenere un URL più breve e significativo.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,`, h `ttp://example.com/welcome`sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -134,7 +134,7 @@ Le proprietà sono distribuite su più schede:
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 * **Miniatura pagina**
 
@@ -160,7 +160,7 @@ Le proprietà sono distribuite su più schede:
 
    Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Autorizzazioni   {#permissions}
+### Autorizzazioni    {#permissions}
 
 * **Autorizzazioni** (interfaccia touch)
 
@@ -172,13 +172,13 @@ Le proprietà sono distribuite su più schede:
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito  {#site-structure}
+### Struttura sito   {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
