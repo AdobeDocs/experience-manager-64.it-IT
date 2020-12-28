@@ -26,23 +26,23 @@ Il supporto per la persistenza relazionale del database in AEM viene implementat
 
 È costituita da un&#39;API Java basata sull&#39;API Java di Mongo. Viene inoltre fornita un&#39;implementazione di un&#39;API BlobStore. Per impostazione predefinita, i BLOB sono memorizzati nel database.
 
-Per ulteriori informazioni sull&#39;implementazione, consulta la documentazione [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) .
+Per ulteriori informazioni sull&#39;implementazione, consultare la documentazione relativa a [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
 
 >[!NOTE]
 >
->È inoltre disponibile il supporto per **PostgreSQL 9.4** , ma solo a scopo dimostrativo. Non sarà disponibile per gli ambienti di produzione.
+>È inoltre disponibile il supporto per **PostgreSQL 9.4**, ma solo a scopo dimostrativo. Non sarà disponibile per gli ambienti di produzione.
 
 ## Database supportati {#supported-databases}
 
-Per ulteriori informazioni sul livello di supporto del database relazionale in AEM, vedere la pagina [Requisiti](/help/sites-deploying/technical-requirements.md)tecnici.
+Per ulteriori informazioni sul livello di supporto del database relazionale in AEM, vedere la pagina [Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 ## Passaggi di configurazione {#configuration-steps}
 
 Il repository viene creato configurando il servizio `DocumentNodeStoreService` OSGi. È stato esteso per supportare la persistenza relazionale del database oltre a MongoDB.
 
-Per consentirne il funzionamento, è necessario configurare un&#39;origine dati con AEM. Questa operazione viene eseguita tramite il `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all&#39;interno della configurazione locale.
+Per consentirne il funzionamento, è necessario configurare un&#39;origine dati con AEM. Questa operazione viene eseguita tramite il file `org.apache.sling.datasource.DataSourceFactory.config`. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all&#39;interno della configurazione locale.
 
-Per informazioni sulla creazione di pacchetti OSGi per i driver JDBC, consultate questa [documentazione](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) sul sito Web Apache Sling.
+Per informazioni sulla creazione di pacchetti OSGi per i driver JDBC, consultate questa [documentazione](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) nel sito Web Apache Sling.
 
 >[!NOTE]
 >
@@ -54,17 +54,17 @@ Una volta installati i bundle, attenetevi alla seguente procedura per configurar
 
 1. Accertatevi che il demone del database sia avviato e che sia presente un database attivo da utilizzare con AEM.
 1. Copiate il AEM 6.3 jar nella directory di installazione.
-1. Create una cartella chiamata `crx-quickstart\install` nella directory di installazione.
-1. Configurare l&#39;archivio dei nodi del documento creando un file di configurazione con il seguente nome nella `crx-quickstart\install` directory:
+1. Create una cartella denominata `crx-quickstart\install` nella directory di installazione.
+1. Configurare l&#39;archivio dei nodi del documento creando un file di configurazione con il seguente nome nella directory `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-1. Configurate l&#39;origine dati e i parametri JDBC creando un altro file di configurazione con il seguente nome nella `crx-quickstart\install` cartella:
+1. Configurate l&#39;origine dati e i parametri JDBC creando un altro file di configurazione con il seguente nome nella cartella `crx-quickstart\install`:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >Per informazioni dettagliate sulla configurazione dell&#39;origine dati per ciascun database supportato, vedere Opzioni [di configurazione origine](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)dati.
+   >Per informazioni dettagliate sulla configurazione dell&#39;origine dati per ciascun database supportato, vedere [Opzioni di configurazione dell&#39;origine dati](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
 1. Quindi, preparate i bundle JDBC OSGi da utilizzare con AEM:
 
@@ -73,11 +73,11 @@ Una volta installati i bundle, attenetevi alla seguente procedura per configurar
    1. Estrarre il `mysql-connector-java-version-bin.jar` (bundle) dall&#39;archivio
    1. Utilizzate la console Web per installare e avviare il bundle:
       * Vai a *http://serveraddress:serverport/system/console/bundles*
-      * Selezionate **Installa/Aggiorna**
+      * Selezionare **Install/Update**
       * Individua il pacchetto estratto dall&#39;archivio ZIP scaricato
-      * Verificare che il driver JDBC di **Oracle Corporation per MySQLcom.mysql.jdbc** sia attivo e avviarlo.
+      * Verificare che il **driver JDBC di Oracle Corporation per MySQLcom.mysql.jdbc** sia attivo e avviarlo.
 
-1. Infine, iniziare AEM con `crx3` e `crx3rdb` modalità di esecuzione:
+1. Infine, iniziare AEM con le modalità di esecuzione `crx3` e `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -91,13 +91,13 @@ Sono disponibili le seguenti opzioni di configurazione:
 
 * `datasource.name:` Il nome dell&#39;origine dati. Il valore predefinito è `oak`.
 
-* `url:` Stringa URL del database che deve essere utilizzata con JDBC. Ogni tipo di database ha un proprio formato di stringa URL. Per ulteriori informazioni, consulta Formati [stringa](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) URL di seguito.
+* `url:` Stringa URL del database che deve essere utilizzata con JDBC. Ogni tipo di database ha un proprio formato di stringa URL. Per ulteriori informazioni, vedere [Formati di stringa URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) di seguito.
 
 * `driverClassName:` Il nome della classe del driver JDBC. Ciò varia a seconda del database che si desidera utilizzare e, successivamente, del driver necessario per connettersi ad esso. Di seguito sono riportati i nomi delle classi per tutti i database supportati da AEM:
 
    * `org.postgresql.Driver` per PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` per DB2;
-   * `oracle.jdbc.OracleDriver` per Oracle;
+   * `oracle.jdbc.OracleDriver` per  Oracle;
    * `com.mysql.jdbc.Driver` per MySQL e MariaDB (sperimentale);
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` per Microsoft SQL Server (sperimentale).
 
@@ -112,7 +112,7 @@ Nella configurazione dell&#39;origine dati viene utilizzato un formato di string
 * `jdbc:postgresql:databasename` per PostgreSQL;
 
 * `jdbc:db2://localhost:port/databasename` per DB2;
-* `jdbc:oracle:thin:localhost:port:SID` per Oracle;
+* `jdbc:oracle:thin:localhost:port:SID` per  Oracle;
 * `jdbc:mysql://localhost:3306/databasename` per MySQL e MariaDB (sperimentale);
 
 * `jdbc:sqlserver://localhost:1453;databaseName=name` per Microsoft SQL Server (sperimentale).
