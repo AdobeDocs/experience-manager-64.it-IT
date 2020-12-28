@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# Utilizzo dell&#39;editor Rich Text per creare contenuto {#using-the-rich-text-editor-to-author-content}
 
 L’editor Rich Text (RTE) è un componente di base per la creazione di testo nelle pagine AEM. Molti componenti come Testo, Testo e Immagine e Tabella sono basati su editor Rich Text.
 
@@ -28,7 +28,7 @@ L’editor Rich Text (RTE) è un componente di base per la creazione di testo ne
 
 ## Modifica diretta {#in-place-editing}
 
-Quando si seleziona un componente basato su testo con un solo tocco o clic, viene visualizzata la barra degli strumenti [del](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)componente.
+Quando si seleziona un componente basato su testo con un solo tocco o clic, viene visualizzata la barra degli strumenti del componente [](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -58,7 +58,7 @@ Per i componenti basati su testo, selezionando la modalità a schermo intero dal
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-La modalità a schermo intero mostra tutte le opzioni dell’editor Rich Text configurate dall’amministratore. che possono variare in AEM istanze [a seconda della configurazione](../sites-administering/rich-text-editor.md) fornita dagli amministratori o AEM sviluppatori. Se viene rilevata un’opzione mancante, chiedete all’amministratore di renderla disponibile.
+La modalità a schermo intero mostra tutte le opzioni dell’editor Rich Text configurate dall’amministratore. Questi possono variare tra AEM istanze [a seconda della configurazione](../sites-administering/rich-text-editor.md) fornita dagli amministratori o AEM sviluppatori. Se viene rilevata un’opzione mancante, chiedete all’amministratore di renderla disponibile.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
