@@ -24,11 +24,11 @@ Il team  Adobe Consulting Services ha generato una serie di AEM esempi di codice
 
 Un’esercitazione multiparte progettata per gli sviluppatori che AEM argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti: [Guida introduttiva ad  AEM Sites - Esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
-Il Adobe  AEM Community Team crea articoli su come fare per gli sviluppatori. Potete trovare gli articoli [qui](https://helpx.adobe.com/it/experience-manager/topics/how-to.html).
+Il Adobe  AEM Community Team crea articoli su come fare per gli sviluppatori. Gli articoli [sono disponibili qui](https://helpx.adobe.com/it/experience-manager/topics/how-to.html).
 
 Un modello Maven per creare un nuovo progetto AEM come punto di partenza per sviluppare le proprie funzionalità è disponibile [qui](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-Gli esempi di codice standard per l’interfaccia touch sono disponibili [qui](/help/sites-developing/developing-components.md).
+Gli esempi di codice standard per l&#39;interfaccia touch sono disponibili [qui](/help/sites-developing/developing-components.md).
 
 Sono disponibili ulteriori esempi di codice:
 
