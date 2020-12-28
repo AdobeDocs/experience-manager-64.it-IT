@@ -27,24 +27,24 @@ AEM eCommerce generico è disponibile come parte di un&#39;installazione standar
 |  | CIF on-prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versioni di AEM supportate | AEM on prem o AMS 6.x | AEM AMS 6.4 e 6.5 |
-| Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - archivio JCR | - Magento <br>- Java e Javascript <br>- Nessun dato Commerce memorizzato nell&#39;archivio JCR |
+| Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-compilazione (template)<br> - archivio JCR | - Magento <br>- Java e Javascript <br>- Nessun dato Commerce memorizzato nell&#39;archivio JCR |
 | Front-end | AEM pagine sottoposte a rendering sul lato server | Applicazione a pagina mista (rendering ibrido) |
-| Catalogo prodotti | - Importatore di prodotti, editor, cache in AEM <br>- Cataloghi regolari con AEM o pagine proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati on-demand tramite connettore |
-| Scalabilità | - Può supportare fino a pochi milioni di prodotti (dipende dal caso d&#39;uso) <br> - Memorizzazione nella cache del Dispatcher | - Nessuna limitazione del volume <br>- Memorizzazione nella cache su Dispatcher o CDN |
+| Catalogo prodotti | - Importazione prodotti, editor, memorizzazione nella cache in AEM <br>- Cataloghi regolari con AEM o pagine proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati su richiesta tramite connettore |
+| Scalabilità | - Può supportare fino a pochi milioni di prodotti (dipende dal caso d&#39;uso) <br> - Caching on Dispatcher | - Nessuna limitazione del volume <br>- Memorizzazione nella cache del dispatcher o CDN |
 | Modello dati standardizzato | No | Sì, schema Magento GraphQL |
-| Disponibilità | Sì:<br> - Commerce Cloud SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (predefinita) e mantiene la compatibilità con Hybris 4 <br>- Salesforce Commerce Cloud (connettore open-source per supportare AEM 6.4) | Sì tramite open source tramite GitHub. <br> Magento Commerce (Supporta l&#39;Magento 2.3.2 (predefinito) e compatibile con Magento 2.3.1). |
-| Quando utilizzare | Casi di utilizzo limitati: Per gli scenari in cui può essere necessario importare cataloghi statici di piccole dimensioni | Soluzione preferita nella maggior parte dei casi di utilizzo |
+| Disponibilità | Sì:<br> - Commerce Cloud SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantiene la compatibilità con l&#39;Commerce Cloud Hybris 4 <br>- Salesforce (connettore open source per supportare AEM 6.4) | Sì tramite open source tramite GitHub. <br> Magento Commerce (Supporta l&#39;Magento 2.3.2 (predefinito) e compatibile con Magento 2.3.1). |
+| Quando utilizzare | Casi di utilizzo limitati: Per gli scenari in cui potrebbe essere necessario importare cataloghi statici di piccole dimensioni | Soluzione preferita nella maggior parte dei casi di utilizzo |
 
 
-## Distribuzione di altre implementazioni {#deploying-other-implementations}
+## Implementazione di altre implementazioni {#deploying-other-implementations}
 
-* [Commerce Cloud SAP](/help/sites-deploying/sap-commerce-cloud.md)
+* [COMMERCE CLOUD SAP](/help/sites-deploying/sap-commerce-cloud.md)
 * [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 * [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 
 >[!NOTE]
 >
->Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consulta [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
+>Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consultate [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
 >
->Per informazioni sull’estensione delle funzionalità eCommerce, consultate [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
+>Per informazioni sull&#39;estensione delle funzionalità di eCommerce, vedere [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
 
