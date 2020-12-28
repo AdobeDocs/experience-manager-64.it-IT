@@ -22,18 +22,18 @@ ht-degree: 7%
 
 I singoli visitatori del sito Web possono essere identificati solo quando è possibile accedervi. Esistono diversi motivi per cui potrebbe essere utile fornire una funzionalità di accesso:
 
-* [AEM](/help/communities/overview.md)CommunitiesI visitatori del sito devono effettuare l&#39;accesso per inviare contenuti alla community.
+* [AEM ](/help/communities/overview.md)CommunitiesI visitatori del sito devono effettuare l&#39;accesso per inviare contenuti alla community.
 * [Gruppi di utenti chiusi](/help/sites-administering/cug.md)
 
    Potrebbe essere necessario limitare l’accesso al sito Web (o a sezioni di esso) a visitatori specifici.
 
-* [Personalizzazione](/help/sites-administering/personalization.md) Consente ai visitatori di configurare alcuni aspetti di come accedono al sito Web.
+* [](/help/sites-administering/personalization.md) PersonalizzazioneConsente ai visitatori di configurare alcuni aspetti di come accedono al sito Web.
 
-La funzionalità di accesso (e disconnessione) è fornita da un [account con un **profilo **](#profiles-and-user-accounts), che contiene informazioni aggiuntive sul visitatore registrato (utente). Le procedure effettive di registrazione e autorizzazione possono essere diverse:
+La funzionalità di accesso (e disconnessione) è fornita da un account [con un **Profilo**](#profiles-and-user-accounts), che contiene informazioni aggiuntive sul visitatore registrato (utente). Le procedure effettive di registrazione e autorizzazione possono essere diverse:
 
 * Autoregistrazione dal sito Web
 
-   È possibile configurare un sito [](/help/communities/sites-console.md) community per consentire ai visitatori di registrarsi o accedere autonomamente con i propri account Facebook o Twitter.
+   È possibile configurare un [sito community](/help/communities/sites-console.md) per consentire ai visitatori di registrarsi o accedere autonomamente con i propri account Facebook o Twitter.
 
 * Richiesta di registrazione dal sito Web
 
@@ -52,7 +52,7 @@ Funzionalità aggiuntive possono essere configurate o sviluppate:
 
 >[!NOTE]
 >
->Le informazioni specificate nel profilo possono essere utilizzate anche per fornire all’utente contenuti mirati tramite [Segmenti](/help/sites-administering/campaign-segmentation.md) e [Campagne](/help/sites-authoring/personalization.md).
+>Le informazioni specificate nel profilo possono essere utilizzate anche per fornire all&#39;utente contenuti mirati tramite [Segments](/help/sites-administering/campaign-segmentation.md) e [Campaigns](/help/sites-authoring/personalization.md).
 
 ## Registrazione Forms {#registration-forms}
 
@@ -67,15 +67,15 @@ Dopo aver inviato la richiesta, si apre la pagina del profilo in cui l&#39;utent
 
 ![profilepage](assets/profilepage.png)
 
-Il nuovo account è visibile anche nella console [](/help/sites-administering/security.md)Utenti.
+Il nuovo account è visibile anche nella [console Utenti](/help/sites-administering/security.md).
 
 ## Accesso {#login}
 
-Il componente login può essere usato per raccogliere le informazioni di login, quindi attivare il processo di login.
+Il componente login può essere utilizzato per raccogliere le informazioni di login, quindi attivare il processo di login.
 
-Questo fornisce al visitatore i campi standard **Nome** utente e **Password**, con un pulsante **Accesso** per attivare il processo di login quando vengono immesse le credenziali.
+Questo fornisce al visitatore i campi standard di **Nome utente** e **Password**, con un pulsante **Login** per attivare il processo di accesso quando vengono immesse le credenziali.
 
-Ad esempio, gli utenti possono effettuare l’accesso o creare un nuovo account utilizzando l’opzione **Accedi** nella barra degli strumenti Geometrixx, che utilizza la pagina:
+Ad esempio, gli utenti possono effettuare l&#39;accesso o creare un nuovo account utilizzando l&#39;opzione **Accedi** nella barra degli strumenti dell&#39;Geometrixx, che utilizza la pagina:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -83,7 +83,7 @@ Ad esempio, gli utenti possono effettuare l’accesso o creare un nuovo account 
 
 ## Disconnessione {#logging-out}
 
-Poiché esiste un meccanismo di login, è necessario anche un meccanismo di logout. È disponibile come opzione **Disconnetti** in Geometrixx.
+Poiché esiste un meccanismo di login, è necessario anche un meccanismo di logout. È disponibile come opzione **Esci** in Geometrixx.
 
 ## Visualizzazione e aggiornamento di un profilo {#viewing-and-updating-a-profile}
 
@@ -93,28 +93,28 @@ A seconda del modulo di registrazione, il visitatore potrebbe avere nel suo prof
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Per visualizzare i dettagli del tuo profilo fai clic su **Profilo** personale nell&#39;angolo superiore destro di qualsiasi pagina; ad esempio con l&#39; `admin` account:\
+Per visualizzare i dettagli del tuo profilo, fai clic su **My Profile** nell&#39;angolo superiore destro di qualsiasi pagina; ad esempio con l&#39;account `admin`:\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-administering/client-context.md) client (nell’ambiente di authoring e con privilegi sufficienti):
+Potete visualizzare un altro profilo utilizzando il [contesto client](/help/sites-administering/client-context.md) (nell&#39;ambiente di authoring e con privilegi sufficienti):
 
 1. Aprire una pagina; ad esempio, la pagina di Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Fate clic su **Profilo** personale nell’angolo in alto a destra. Vedrai il profilo del tuo account corrente; ad esempio l&#39;amministratore.
+1. Fare clic su **Profilo personale** nell&#39;angolo in alto a destra. Vedrai il profilo del tuo account corrente; ad esempio l&#39;amministratore.
 1. Premere **control-alt-C** per aprire il contesto client.
-1. Nell’angolo in alto a sinistra del contesto client, fate clic sul pulsante **Carica un profilo** .
+1. Nell&#39;angolo superiore sinistro del contesto client, fare clic sul pulsante **Carica un profilo**.
 
    ![](do-not-localize/loadprofile.png)
 
 1. Selezionate un altro profilo dall’elenco a discesa nella finestra di dialogo; ad esempio, **Alison Parker**.
 1. Fai clic su **OK**.
-1. Fate di nuovo clic su **Profilo** personale. Il modulo verrà aggiornato con i dettagli di Alison.
+1. Fare di nuovo clic su **Profilo personale**. Il modulo verrà aggiornato con i dettagli di Alison.
 
    ![profilealison](assets/profilealison.png)
 
-1. Ora potete usare **Modifica profilo** o **Modifica password** per aggiornare i dettagli.
+1. Per aggiornare i dettagli è ora possibile utilizzare **Modifica profilo** o **Modifica password**.
 
 ## Aggiunta di campi alla definizione del profilo {#adding-fields-to-the-profile-definition}
 
@@ -122,33 +122,33 @@ Potete visualizzare un altro profilo utilizzando il contesto [](/help/sites-admi
 
 1. Dalla console Siti Web andate a Geometrixx Outdoors Site > English > User > My Profile (Sito Web).
 
-1. Fate doppio clic sulla pagina **Profilo** personale per aprirla in modalità di modifica.
+1. Fare doppio clic sulla pagina **Profilo personale** per aprirla in modalità di modifica.
 
-1. Nella scheda **Componenti** della barra laterale, espandere la sezione **Modulo** .
+1. Nella scheda **Componenti** della barra laterale, espandere la sezione **Modulo**.
 
-1. Trascinare un Elenco **a** discesa dalla barra laterale al modulo, immediatamente sotto il campo **Informazioni su di me** .
+1. Trascinare un **Elenco a discesa** dalla barra laterale al modulo, immediatamente sotto il campo **Informazioni su di me**.
 
-1. Fate doppio clic sul componente Elenco a **discesa** per aprire la finestra di dialogo per la configurazione e immettete:
+1. Fare doppio clic sul componente **Elenco a discesa** per aprire la finestra di dialogo per la configurazione e immettere:
 
    * **Nome elemento** - `favoriteColor`
    * **Titolo** - `Favorite Color`
-   * **Articoli** - Aggiungi diversi colori come elementi
+   * **Articoli**  - Aggiungi diversi colori come elementi
 
    Fate clic su **OK** per salvare. 
 
-1. Chiudete la pagina e tornate alla console Siti **Web** e attivate la pagina Profilo personale.
+1. Chiudi la pagina e torna alla console **Siti Web** e attiva la pagina Profilo personale.
 
    La prossima volta che visualizzate un profilo potete selezionare un colore preferito:
 
    ![aparkerfavcolor](assets/aparkerfavcolour.png)
 
-   Il campo verrà salvato nella sezione del **profilo** dell’account utente pertinente:
+   Il campo verrà salvato nella sezione **profile** dell&#39;account utente pertinente:
 
    ![aparkercrxdelite](assets/aparkercrxdelite.png)
 
 ## Stati profilo {#profile-states}
 
-Esistono diversi casi d’uso che richiedono di sapere se un utente (o meglio il suo profilo) si trova o meno in uno stato ** specifico.
+Esistono diversi casi d&#39;uso che richiedono di sapere se un utente (o meglio il suo profilo) si trova in uno stato *specifico* o meno.
 
 Ciò comporta la definizione di una proprietà appropriata nel profilo utente in modo che:
 
@@ -188,13 +188,13 @@ I provider di stato gestiscono una proprietà profilo e i relativi stati.
 
 ## Profili e account utente {#profiles-and-user-accounts}
 
-I profili vengono memorizzati nell&#39;archivio dei contenuti come parte dell&#39;account [](/help/sites-administering/user-group-ac-admin.md)utente.
+I profili vengono memorizzati nell&#39;archivio dei contenuti come parte dell&#39; [account utente](/help/sites-administering/user-group-ac-admin.md).
 
 Il profilo si trova in `/home/users/geometrixx`:
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
-In un’installazione standard (autore o pubblicazione), tutti possono accedere in lettura alle informazioni di profilo di tutti gli utenti. tutti sono un &quot;gruppo *predefinito che contiene automaticamente tutti gli utenti e i gruppi esistenti. L&#39;elenco dei membri non può essere modificato*&quot;.
+In un’installazione standard (autore o pubblicazione), tutti possono accedere in lettura alle informazioni di profilo di tutti gli utenti. tutti sono un &quot;*gruppo predefinito che contiene automaticamente tutti gli utenti e i gruppi esistenti. L&#39;elenco dei membri non può essere modificato*&quot;.
 
 Tali diritti di accesso sono definiti dal seguente ACL con caratteri jolly:
 
@@ -207,7 +207,7 @@ Ciò consente di:
 
 Se tale accesso non è appropriato per l’installazione in uso, potete modificare queste impostazioni predefinite.
 
-Questa operazione può essere eseguita mediante la scheda Controllo **[](/help/sites-administering/user-group-ac-admin.md#access-right-management)**accesso:
+Questa operazione può essere eseguita utilizzando la scheda **[Controllo accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
 
 ![direttore](assets/aclmanager.png)
 
