@@ -24,15 +24,15 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 
 In Adobe Experience Manager (AEM), un tag può essere una proprietà di
 
-* un nodo di contenuto per una pagina (vedere [Utilizzo dei tag](/help/sites-authoring/tags.md))
+* un nodo di contenuto per una pagina (vedere [Utilizzo di tag](/help/sites-authoring/tags.md))
 
-* un nodo di metadati per una risorsa (consultate [Gestione dei metadati per le risorse](/help/assets/metadata.md)digitali)
+* un nodo di metadati per una risorsa (consultate [Gestione dei metadati per le risorse digitali](/help/assets/metadata.md))
 
 Oltre alle pagine e alle risorse, i tag vengono utilizzati per  funzioni di AEM Communities
 
-* contenuto generato dall’utente (consultate [Assegnazione di tag a UGC)](/help/communities/tag-ugc.md)
+* contenuto generato dall&#39;utente (vedere [Tagging UGC)](/help/communities/tag-ugc.md)
 
-* Risorse di abilitazione (consultate [Assegnazione di tag alle risorse](/help/communities/functions.md#catalog-function)di abilitazione)
+* Risorse di abilitazione (vedere [Risorse per l&#39;abilitazione dei tag](/help/communities/functions.md#catalog-function))
 
 ## Funzioni tag {#tag-features}
 
@@ -46,20 +46,20 @@ Alcune delle caratteristiche dei tag in AEM includono:
    * barra (/) - delimita i tag secondari
 
 * I tag possono essere applicati dagli autori e dai visitatori del sito. A prescindere dalla modalità di creazione, tutti i tipi di tag possono essere selezionati sia per essere assegnati a una pagina, sia per operazioni di ricerca.
-* I tag possono essere creati e la loro tassonomia può essere modificata dai membri del gruppo &quot;tag-administrators&quot; e dai membri che dispongono dei diritti di modifica per `/content/cq:tags`.
+* I tag possono essere creati e la loro tassonomia può essere modificata dai membri del gruppo &quot;tag-administrators&quot; e dai membri che dispongono dei diritti di modifica su `/content/cq:tags`.
 
    * Un tag che contiene tag secondari viene definito tag contenitore
    * Un tag che non è un tag contenitore è definito tag foglia
    * Uno spazio dei nomi tag è un tag foglia o contenitore
 
-* I tag vengono utilizzati dal componente [](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) Ricerca per facilitare la ricerca del contenuto.
-* Tags are used by the [Teaser component](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), which monitors a user&#39;s tag cloud to provide targeted content.
+* I tag vengono utilizzati dal componente [Ricerca](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
+* I tag vengono utilizzati dal componente [Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), che controlla il tag cloud di un utente per fornire contenuti mirati.
 * Se l’assegnazione di tag è un aspetto importante del contenuto
 
    * creare pacchetti di tag con le pagine che li utilizzano
-   * accertatevi che le autorizzazioni relative ai [tag](#setting-tag-permissions) consentano l&#39;accesso in lettura
+   * assicurarsi che [autorizzazioni dei tag](#setting-tag-permissions) sia abilitata l&#39;accesso in lettura
 
-## Console per tag {#tagging-console}
+## Console di assegnazione tag {#tagging-console}
 
 La console Tagging consente di creare e gestire i tag e le rispettive tassonomie. Un obiettivo è quello di evitare di avere molti tag simili relativi sostanzialmente la stessa cosa: ad esempio, pagina e pagine o calzature e scarpe.
 
@@ -79,21 +79,24 @@ Per accedere alla console Tagging:
 
 ### Creazione di uno spazio dei nomi {#creating-a-namespace}
 
-Per creare un nuovo spazio nomi, selezionate l&#39; **`Create Namespace`** icona.
+Per creare un nuovo spazio nomi, selezionate l&#39;icona **`Create Namespace`**.
 
-Lo spazio nomi è di per sé un tag e non deve contenere tag secondari. Tuttavia, per continuare a creare una tassonomia, [create dei tag](#creating-tags)secondari, che a loro volta possono essere tag foglia o contenitore.
+Lo spazio nomi è di per sé un tag e non deve contenere tag secondari. Tuttavia, per continuare a creare una tassonomia, [creare tag secondari](#creating-tags), che a loro volta possono essere tag foglia o contenitore.
 
 ![chlimage_1-183](assets/chlimage_1-183.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
 
-* **Titolo*** (richiesto) *Un titolo di visualizzazione per lo spazio dei nomi.
+* **Titolo**
+* (richiesto) *Un titolo di visualizzazione per lo spazio dei nomi.
 
-* **Nome*** (facoltativo) *Un nome per lo spazio dei nomi. Se non viene specificato, dal Titolo viene creato un nome di nodo valido. Consulta [TagID](/help/sites-developing/framework.md#tagid).
+* **Nome**
+* (facoltativo) *Un nome per lo spazio dei nomi. Se non viene specificato, dal Titolo viene creato un nome di nodo valido. Vedere [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Descrizione*** (facoltativo) *Una descrizione dello spazio dei nomi.
+* **Descrizione**
+* (facoltativo) *Una descrizione dello spazio dei nomi.
 
 Una volta inserite le informazioni richieste
 
-* select **Create**
+* selezionare **Crea**
 
 ### Operazioni sui tag {#operations-on-tags}
 
@@ -111,7 +114,7 @@ Quando si seleziona uno spazio nomi o un altro tag, sono disponibili le operazio
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Quando la finestra del browser non è abbastanza ampia per visualizzare tutte le icone, le icone più a destra sono raggruppate sotto un&#39; **`... More`** icona, che mostrerà un elenco a discesa delle icone delle operazioni nascoste se selezionate.
+Quando la finestra del browser non è abbastanza ampia per visualizzare tutte le icone, le icone più a destra sono raggruppate sotto un&#39;icona **`... More`**, che mostrerà un elenco a discesa delle icone delle operazioni nascoste quando è selezionata.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -127,11 +130,11 @@ Per selezionare il tag per le operazioni e per selezionare più volte, seleziona
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Quando si seleziona uno spazio dei nomi o un altro tag, la selezione dell&#39; **`View Properties`** icona determina la visualizzazione di informazioni relative all&#39; `name`, all&#39;ora dell&#39;ultima modifica e al numero di riferimenti. Se pubblicato, vengono visualizzati l’ora dell’ultima pubblicazione e l’ID dell’editore. Queste informazioni verranno visualizzate in una colonna a sinistra delle colonne del tag.
+Quando si seleziona uno spazio dei nomi o un altro tag, quando si seleziona l&#39;icona **`View Properties`** vengono visualizzate le informazioni relative a `name`, ora dell&#39;ultima modifica e numero di riferimenti. Se pubblicato, vengono visualizzati l’ora dell’ultima pubblicazione e l’ID dell’editore. Queste informazioni verranno visualizzate in una colonna a sinistra delle colonne del tag.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
-### Visualizzazione dei riferimenti ai tag {#showing-tag-references}
+### Visualizzazione dei riferimenti di tag {#showing-tag-references}
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -151,19 +154,22 @@ Il percorso del riferimento viene visualizzato come una descrizione quando si pa
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Quando si seleziona uno spazio dei nomi o un altro tag (selezionando l&#39;icona accanto al titolo), è possibile creare un tag secondario per il tag corrente selezionando l&#39; **`Create Tag`** icona.
+Quando si seleziona uno spazio dei nomi o un altro tag (selezionando l&#39;icona accanto al titolo), è possibile creare un tag secondario per il tag corrente selezionando l&#39;icona **`Create Tag`**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-* **Titolo*** (richiesto) *Titolo visualizzato per il tag.
+* **Titolo**
+* (richiesto) *Titolo visualizzato per il tag.
 
-* **Nome*** (facoltativo) *Un nome per il tag. Se non viene specificato, dal Titolo viene creato un nome di nodo valido. Consulta [TagID](/help/sites-developing/framework.md#tagid).
+* **Nome**
+* (facoltativo) *Un nome per il tag. Se non viene specificato, dal Titolo viene creato un nome di nodo valido. Vedere [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Descrizione*** (facoltativo) *Una descrizione del tag.
+* **Descrizione**
+* (facoltativo) *Una descrizione del tag.
 
 Una volta inserite le informazioni richieste
 
-* select **Create**
+* selezionare **Crea**
 
 ### Modifica dei tag {#editing-tags}
 
@@ -171,9 +177,9 @@ Una volta inserite le informazioni richieste
 
 Quando è selezionato uno spazio dei nomi o un altro tag, è possibile modificare il Titolo, la Descrizione e fornire le localizzazioni del Titolo selezionando l&#39;icona **`Edit`**.
 
-Dopo aver apportato le modifiche, selezionate **Salva**.
+Dopo aver apportato le modifiche, selezionare **Salva**.
 
-Per informazioni dettagliate sull’aggiunta di traduzioni in lingua, consultate la sezione sulla [gestione dei tag in diverse lingue](#managing-tags-in-different-languages).
+Per informazioni dettagliate sull&#39;aggiunta di traduzioni in lingua, vedere la sezione relativa alla [Gestione dei tag in lingue diverse](#managing-tags-in-different-languages).
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -181,25 +187,27 @@ Per informazioni dettagliate sull’aggiunta di traduzioni in lingua, consultate
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l’ **`Move`** icona gli amministratori e gli sviluppatori di tag potranno ripulire la tassonomia spostando il tag in una nuova posizione o rinominandolo. Quando il tag selezionato è un tag contenitore, lo spostamento del tag determina anche lo spostamento di tutti i tag secondari.
+Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l&#39;icona **`Move`** gli amministratori e gli sviluppatori di tag potranno ripulire la tassonomia spostando il tag in una nuova posizione o rinominandolo. Quando il tag selezionato è un tag contenitore, lo spostamento del tag determina anche lo spostamento di tutti i tag secondari.
 
 >[!NOTE]
 >
->È consigliabile che gli autori possano [modificare](#editing-tags) solo i tag `title`e non spostare o rinominare i tag.
+>È consigliabile che gli autori possano solo [modificare](#editing-tags) il tag `title`, non spostare o rinominare i tag.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Percorso**
 
-   *(sola lettura)* Il percorso corrente del tag selezionato.
+   *(sola lettura)* Percorso corrente del tag selezionato.
 
-* **Passa a** Sfoglia per individuare il nuovo percorso in cui spostare il tag.
+* **Passa**
+a: consente di individuare il nuovo percorso in cui spostare il tag.
 
-* **Rinomina in** Iniziale visualizza la variabile corrente 
-`name`del tag . È `name`possibile inserire una nuova voce.
+* **Rinomina**
+inInizialmente visualizza la variabile corrente 
+`name`del tag . È possibile inserire un nuovo elemento `name`.
 
 * 
-* select **Save**
+* selezionare **Save**
 
 ### Unione dei tag {#merging-tags}
 
@@ -215,7 +223,8 @@ Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l&#39;ico
 
    *(sola lettura)* Percorso del tag selezionato per l&#39;unione in un altro tag.
 
-* **Unisci in** Sfoglia per selezionare il percorso del tag in cui unire.
+* **Unisci**
+in Sfoglia per selezionare il percorso del tag in cui unire.
 
 >[!NOTE]
 >
@@ -229,36 +238,36 @@ Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l&#39;ico
 
 Quando è selezionato uno spazio dei nomi o un altro tag, selezionate l&#39;icona **`Publish`**per attivare il tag nell&#39;ambiente di pubblicazione. Analogamente al contenuto della pagina, viene pubblicato solo il tag selezionato, a prescindere dal fatto che si tratti o meno di un tag contenitore.
 
-Per pubblicare una tassonomia (uno spazio dei nomi e dei tag secondari), è consigliabile creare un [pacchetto](/help/sites-administering/package-manager.md) dello spazio dei nomi (vedere Nodo [radice](/help/sites-developing/framework.md#taxonomy-root-node)tassonomia). Assicuratevi di [applicare le autorizzazioni](#setting-tag-permissions) allo spazio dei nomi prima di creare il pacchetto.
+Per pubblicare una tassonomia (uno spazio dei nomi e dei tag secondari), è consigliabile creare un [pacchetto](/help/sites-administering/package-manager.md) dello spazio dei nomi (vedere [Nodo radice tassonomia](/help/sites-developing/framework.md#taxonomy-root-node)). Prima di creare il pacchetto, assicuratevi di [applicare le autorizzazioni](#setting-tag-permissions) allo spazio dei nomi.
 
 ### Annullamento della pubblicazione dei tag {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-Quando si seleziona uno spazio dei nomi o un altro tag, selezionando l&#39;icona **`Unpublish`**il tag viene disattivato nell&#39;ambiente di creazione e rimosso dall&#39;ambiente di pubblicazione. Come per l’ `Delete`operazione, se il tag selezionato è un tag contenitore, tutti i relativi tag secondari saranno disattivati nell’ambiente di authoring e rimossi dall’ambiente di pubblicazione.
+Quando si seleziona uno spazio dei nomi o un altro tag, selezionando l&#39;icona **`Unpublish`**il tag viene disattivato nell&#39;ambiente di creazione e rimosso dall&#39;ambiente di pubblicazione. Analogamente all&#39;operazione `Delete`se il tag selezionato è un tag contenitore, tutti i relativi tag secondari saranno disattivati nell&#39;ambiente di authoring e rimossi dall&#39;ambiente di pubblicazione.
 
 ### Eliminazione dei tag {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-Quando si seleziona uno spazio dei nomi o un altro tag, selezionando l&#39;icona **`Delete`**il tag viene rimosso definitivamente dall&#39;ambiente di authoring. Se il tag è stato pubblicato, viene rimosso anche dall’ambiente di pubblicazione. Se il tag selezionato è un tag contenitore, verranno rimossi anche tutti i tag secondari corrispondenti.
+Quando è selezionato uno spazio dei nomi o un altro tag, selezionando l&#39;icona **`Delete`**il tag viene rimosso definitivamente dall&#39;ambiente di authoring. Se il tag è stato pubblicato, viene rimosso anche dall’ambiente di pubblicazione. Se il tag selezionato è un tag contenitore, verranno rimossi anche tutti i tag secondari corrispondenti.
 
 ## Impostazione delle autorizzazioni per i tag {#setting-tag-permissions}
 
-Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)](/help/sites-administering/production-ready.md); una procedura ottimale per l’ambiente di pubblicazione che richiede l’autorizzazione di lettura per i tag. Per impostazione di base, questo viene fatto creando un pacchetto dello spazio dei nomi dei tag dopo che le autorizzazioni sono state impostate sull’autore e installando il pacchetto su tutte le istanze di pubblicazione.
+Le autorizzazioni dei tag sono [&#39;secure (per impostazione predefinita)&#39;](/help/sites-administering/production-ready.md); una procedura ottimale per l’ambiente di pubblicazione che richiede l’autorizzazione di lettura per i tag. Per impostazione di base, questo viene fatto creando un pacchetto dello spazio dei nomi dei tag dopo che le autorizzazioni sono state impostate sull’autore e installando il pacchetto su tutte le istanze di pubblicazione.
 
 * sull’istanza di creazione
 
    * accesso con privilegi amministrativi
-   * accedere alla console [di](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)sicurezza,
+   * accedere alla [console di sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * ad esempio, individuare http://localhost:4502/useradmin
-   * nel riquadro a sinistra, selezionare il gruppo (o l&#39;utente) per il quale concedere l&#39;autorizzazione [di](/help/sites-administering/security.md#permissions) lettura
+   * nel riquadro a sinistra, selezionare il gruppo (o l&#39;utente) per il quale [read permissions](/help/sites-administering/security.md#permissions) deve essere concesso
    * nel riquadro di destra, individuare il **Path **to Tag Namespace
 
-      * for example, `/content/cq:tags/mycommunity`
-   * selezionare la `checkbox`colonna **Leggi**
-   * select **Save**
+      * ad esempio, `/content/cq:tags/mycommunity`
+   * selezionare il simbolo `checkbox`nella colonna **Leggi**
+   * selezionare **Save**
 
 
 
@@ -266,23 +275,23 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)](/h
 
 * verifica che tutte le istanze di pubblicazione abbiano le stesse autorizzazioni
 
-   * un approccio consiste nel [creare un pacchetto](/help/sites-administering/package-manager.md#package-manager) dello spazio nomi sull&#39;autore
+   * un approccio consiste nel [creare un pacchetto](/help/sites-administering/package-manager.md#package-manager) dello spazio dei nomi sull&#39;autore
 
-      * nella `Advanced` scheda, per `AC Handling` selezionare `Overwrite`
+      * nella scheda `Advanced`, per `AC Handling` selezionare `Overwrite`
    * replicare il pacchetto
 
-      * scegliere `Replicate` da Gestione pacchetti
+      * scegliete `Replicate` da Gestione pacchetti
 
 
 ## Gestione dei tag in diverse lingue {#managing-tags-in-different-languages}
 
-La `title`proprietà di un tag può essere tradotta in più lingue. Una volta tradotto, il tag appropriato `title`può essere visualizzato in base alla lingua dell’utente o alla lingua della pagina.
+La proprietà `title`di un tag può essere tradotta in più lingue. Una volta tradotto, il tag appropriato `title`può essere visualizzato in base alla lingua dell&#39;utente o alla lingua della pagina.
 
 ### Definizione dei titoli dei tag in diverse lingue {#defining-tag-titles-in-multiple-languages}
 
-Di seguito viene descritto come tradurre `title`il tag **Animals** dall&#39;inglese al tedesco e al francese.
+Di seguito viene descritto come tradurre il `title`del tag **Animals** dall&#39;inglese al tedesco e al francese.
 
-Per iniziare, seleziona il tag sotto lo spazio dei nomi **Stock Photography** e seleziona l’icona **`Edit`**(consulta la sezione [Modifica tag](#editing-tags) ).
+Per iniziare, seleziona il tag sotto lo spazio dei nomi **Stock Photography** e seleziona l&#39;icona **`Edit`**(vedi [Editing Tags](#editing-tags)).
 
 Il pannello Modifica tag consente di scegliere le lingue in cui il titolo del tag deve essere localizzato.
 
@@ -296,11 +305,11 @@ In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, 
 
 Anziché utilizzare l’impostazione della lingua della pagina, nella console Tag viene utilizzata l’impostazione della lingua utente. Nella console Tagging, per il tag &quot;Animals&quot; viene visualizzato &quot;Animaux&quot; per un utente che imposta la lingua in francese nelle relative proprietà utente.
 
-Per aggiungere una nuova lingua alla finestra di dialogo, consultate [Aggiunta di una nuova lingua alla finestra di dialogo](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog)Modifica tag.
+Per aggiungere una nuova lingua alla finestra di dialogo, vedere [Aggiunta di una nuova lingua alla finestra di dialogo Modifica tag](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
 
 >[!NOTE]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
+>Il tag cloud e le parole chiave meta nel componente di pagina standard utilizzano il tag localizzato `titles`in base alla lingua della pagina, se disponibile.
 
 ## Riferimenti {#resources}
 
