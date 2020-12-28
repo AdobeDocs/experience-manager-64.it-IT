@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Interfaccia utente Recommendations per clienti{#user-interface-recommendations-for-customers}
+# Recommendations interfaccia utente per clienti{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager 6.4 viene fornito con due interfacce: l’interfaccia utente del Experience Cloud  unificata e l’interfaccia classica.
 
@@ -26,17 +26,23 @@ Questo documento è pensato per guidare i clienti nella scelta dell’interfacci
 
 Termini di interesse:
 
-* **Interfaccia utente (o interfaccia standard)Interfaccia utente** moderna introdotta in 5.6.0 come anteprima tecnologica ed estesa nelle versioni successive. Si basa sull’esperienza utente unificata di Adobe Experience Cloud, precedentemente nota come interfaccia touch o interfaccia touch.
+* **Interfaccia utente (o interfaccia standard)Interfaccia utente**
+moderna introdotta in 5.6.0 come anteprima tecnologica ed estesa nelle versioni successive. Si basa sull’esperienza utente unificata di Adobe Experience Cloud, precedentemente nota come interfaccia touch o interfaccia touch.
 
-* **Interfaccia utente** classica basata sulla tecnologia ExtJS introdotta con CQ 5.1 nel 2008.
+* **Interfaccia classica**
+UIUser basata sulla tecnologia ExtJS introdotta con CQ 5.1 nel 2008.
 
-* **Amministrazione** sito: funzionalità per gestire la gerarchia del sito (spostamento, attivazione, riferimenti gestiti) e creare nuove pagine.
+* **Site**
+AdminCapabilities per gestire la gerarchia del sito (spostamento, attivazione, riferimenti gestiti) e creare nuove pagine.
 
-* **Funzionalità di authoring** delle pagine per aggiungere o modificare il contenuto di una pagina.
+* **Page**
+AuthoringFunzionalità per aggiungere o modificare il contenuto di una pagina.
 
-* **Funzionalità di amministrazione** di DAM/Assets per la gestione delle risorse digitali (immagini, video, documenti, download).
+* **DAM/Assets**
+AdminFunzionalità per la gestione delle risorse digitali (immagini, video, documenti, download).
 
-* **ContextHub** Capabilities per aggregare le informazioni sul visitatore e utilizzarle per vari scopi. Fornisce un&#39;interfaccia utente per simulare le persone che visitano il sito. A partire da AEM 6.2, ContextHub ha sostituito la tecnologia precedente, ClientContext.
+* ****
+ContextHubCapabilities per aggregare le informazioni sul visitatore e utilizzarle per vari scopi. Fornisce un&#39;interfaccia utente per simulare le persone che visitano il sito. A partire da AEM 6.2, ContextHub ha sostituito la tecnologia precedente, ClientContext.
 
 ## Generale {#general}
 
@@ -68,7 +74,7 @@ Di seguito è riportato un elenco di raccomandazioni di Product Management per A
     <ol> 
      <li>Aggiornamento a 6.4</li> 
      <li>Usa l’interfaccia utente predefinita per l’amministrazione del sito, le risorse, ... etc.<br /> </li> 
-     <li>Configura l’azione "Modifica pagina" per aprire l’editor classico delle pagine dell’interfaccia utente. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>Configura l’azione "Modifica pagina" per aprire l’editor classico delle pagine dell’interfaccia utente. Vedere <a href="#selecting-your-ui">Selezione dell'interfaccia utente</a>.</li> 
     </ol> <p>Quindi, in una seconda fase:</p> 
     <ol> 
      <li>Aggiornate le finestre di dialogo dei componenti per utilizzare il formato di dialogo Coral 3.  Adobe consiglia di utilizzare <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> per aggiornare i componenti.</li> 
@@ -80,7 +86,7 @@ Di seguito è riportato un elenco di raccomandazioni di Product Management per A
     <ol> 
      <li>Aggiornamento a 6.4</li> 
      <li>Usa l’interfaccia utente predefinita per l’amministrazione del sito, le risorse, ... etc.</li> 
-     <li>Configura l’azione "Modifica pagina" per aprire l’editor classico delle pagine dell’interfaccia utente. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>Configura l’azione "Modifica pagina" per aprire l’editor classico delle pagine dell’interfaccia utente. Vedere <a href="#selecting-your-ui">Selezione dell'interfaccia utente</a>.</li> 
     </ol> <p>Quindi, in una seconda fase:</p> 
     <ol> 
      <li>Aggiornate le finestre di dialogo dei componenti per utilizzare il formato di dialogo Coral 3.  Adobe consiglia di utilizzare <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> per aggiornare i componenti.</li> 
@@ -89,43 +95,43 @@ Di seguito è riportato un elenco di raccomandazioni di Product Management per A
   </tr> 
   <tr> 
    <td><p>Ha utilizzato CQ/AEM per molti anni.</p> <p>Ha esteso l'interfaccia utente del prodotto (ad esempio Amministratore sito) e integrato componenti con ampie finestre di dialogo per la modifica.</p> </td> 
-   <td><p>Aggiornamento alla versione 6.4 e configurazione dell’interfaccia classica come impostazione predefinita per l’authoring delle pagine per tutti gli utenti. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Quindi avviate un progetto per applicare la personalizzazione e ottimizzare le finestre di dialogo dei componenti in formato Coral 3. Consulta <a href="#resources-to-help">Risorse per l’Aiuto</a>.<br /> </p> </td> 
+   <td><p>Aggiornamento alla versione 6.4 e configurazione dell’interfaccia classica come impostazione predefinita per l’authoring delle pagine per tutti gli utenti. Vedere <a href="#selecting-your-ui">Selezione dell'interfaccia utente</a>.</p> <p>Quindi avviate un progetto per applicare la personalizzazione e ottimizzare le finestre di dialogo dei componenti in formato Coral 3. Vedere <a href="#resources-to-help">Risorse per la Guida</a>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Domande frequenti {#faq}
 
-Per informazioni dettagliate, consultate l&#39;articolo Knowledge Base, [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html); incluse eventuali informazioni sulla pianificazione obsoleta dell’interfaccia classica.
+Per informazioni, consultate l&#39;articolo della Knowledge Base, [Domande frequenti sull&#39;authoring con l&#39;interfaccia utente touch](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html); incluse eventuali informazioni sulla pianificazione obsoleta dell’interfaccia classica.
 
-## Selecting Your UI {#selecting-your-ui}
+## Selezione dell&#39;interfaccia {#selecting-your-ui}
 
-Consultate [Selezione dell’interfaccia](/help/sites-authoring/select-ui.md) utente per informazioni sulla configurazione del sistema in base alle esigenze.
+Per informazioni sulla configurazione del sistema, vedere [Selezione dell&#39;interfaccia utente](/help/sites-authoring/select-ui.md).
 
-## Stato interfaccia touch {#touch-optimized-ui-status}
+## Stato interfaccia utente ottimizzata per il tocco {#touch-optimized-ui-status}
 
-Per informazioni dettagliate sui miglioramenti apportati all’interfaccia touch nella AEM 6.3, consultate [Novità](/help/release-notes/release-notes.md#what-s-new) nelle note sulla versione.
+Per informazioni dettagliate sui miglioramenti apportati all&#39;interfaccia touch nella AEM 6.3, vedere [Novità](/help/release-notes/release-notes.md#what-s-new) nelle note sulla versione.
 
-Panoramica completa Visualizza la pagina Stato [delle funzioni dell’interfaccia](/help/release-notes/touch-ui-features-status.md) touch
+Panoramica completa: vedere la pagina [Stato delle funzioni dell&#39;interfaccia utente touch](/help/release-notes/touch-ui-features-status.md)
 
-## Risorse per l&#39;Aiuto {#resources-to-help}
+## Risorse per la Guida {#resources-to-help}
 
 Per informazioni di base sulla gestione di base:
 
-* [Utilizzo dell’ambiente](/help/sites-authoring/home.md)Authoring.
+* [Utilizzo dell’ambiente](/help/sites-authoring/home.md) Authoring.
 * [Authoring delle pagine](/help/sites-authoring/author-environment-tools.md).
 
 Per informazioni dettagliate sullo sviluppo:
 
-* [Architettura](/help/sites-developing/touch-ui-concepts.md)dell’interfaccia touch.
-* Usate lo strumento [di conversione finestra di](/help/sites-developing/dialog-conversion.md) dialogo per convertire le finestre di dialogo di modifica dei componenti dall’interfaccia classica all’interfaccia touch.
+* [Architettura](/help/sites-developing/touch-ui-concepts.md) dell’interfaccia touch.
+* Utilizzate lo [strumento di conversione finestra di dialogo](/help/sites-developing/dialog-conversion.md) per convertire le finestre di dialogo di modifica dei componenti dall’interfaccia classica all’interfaccia touch.
 
-* [Struttura dell’interfaccia](/help/sites-developing/touch-ui-structure.md)touch.
+* [Struttura dell’interfaccia](/help/sites-developing/touch-ui-structure.md) touch.
 
-* [Personalizzazione delle console nell’interfaccia](/help/sites-developing/customizing-consoles-touch.md) touch (include codice di esempio).
+* [Personalizzazione delle console nell’interfaccia](/help/sites-developing/customizing-consoles-touch.md)  touch (include codice di esempio).
 
-* [Personalizzazione dell’authoring delle pagine nell’interfaccia](/help/sites-developing/customizing-page-authoring-touch.md) touch (include codice di esempio).
+* [Personalizzazione dell’authoring delle pagine nell’interfaccia](/help/sites-developing/customizing-page-authoring-touch.md)  touch (include codice di esempio).
 
-* [AEM Sessione Gem sulla personalizzazione](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)ottimizzata per il tocco.
-* [Documentazione](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)sull’interfaccia utente Granite.
+* [AEM Sessione Gem sulla personalizzazione](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) ottimizzata per il tocco.
+* [Documentazione](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) sull’interfaccia utente Granite.
 
