@@ -20,9 +20,9 @@ ht-degree: 2%
 
 # Integrazione con  Gestione tag dinamica dei Adobi {#integrating-with-adobe-dynamic-tag-management}
 
-Integra [Gestione](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) tag dinamica dei Adobi con AEM in modo da poter utilizzare le proprietà Web di Gestione tag dinamica per tenere traccia AEM siti. Gestione tag dinamica consente ai professionisti del marketing di gestire i tag per la raccolta dei dati e la distribuzione dei dati tra i sistemi di marketing digitale. Ad esempio, utilizzate Gestione tag dinamica per raccogliere i dati di utilizzo per il sito Web AEM e distribuire i dati per l&#39;analisi in  Adobe Analytics o  Adobe Target.
+Integrare [ Gestione tag dinamica dei Adobi](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) con AEM in modo da poter utilizzare le proprietà Web di Gestione tag dinamica per tenere traccia AEM siti. Gestione tag dinamica consente agli esperti di marketing di gestire i tag per la raccolta dei dati e la distribuzione dei dati tra i sistemi di marketing digitale. Ad esempio, utilizzate Gestione tag dinamica per raccogliere i dati di utilizzo per il sito Web AEM e distribuire i dati per l&#39;analisi in  Adobe Analytics o  Adobe Target.
 
-Prima di effettuare l’integrazione, è necessario creare la proprietà [](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) Web Gestione tag dinamica per tenere traccia del dominio del sito AEM. Le opzioni [](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) di hosting della proprietà Web devono essere configurate in modo da poter configurare AEM per accedere alle librerie Gestione tag dinamica.
+Prima di procedere all&#39;integrazione, è necessario creare la proprietà di gestione tag dinamica [web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) che tenga traccia del dominio del sito AEM. Le [opzioni di hosting](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) della proprietà Web devono essere configurate in modo da poter configurare AEM per accedere alle librerie Gestione tag dinamica.
 
 Dopo aver configurato l’integrazione, le modifiche apportate agli strumenti e alle regole di distribuzione Gestione tag dinamica non richiedono la modifica della configurazione Gestione tag dinamica in AEM. Le modifiche sono automaticamente disponibili per AEM.
 
@@ -41,14 +41,14 @@ Dopo aver configurato l’integrazione, le modifiche apportate agli strumenti e 
 
 Le seguenti opzioni di distribuzione influiscono sulla configurazione dell&#39;integrazione con Gestione tag dinamica.
 
-### Hosting Gestione tag dinamica {#dynamic-tag-management-hosting}
+### Gestione tag dinamica hosting {#dynamic-tag-management-hosting}
 
 AEM supporta la gestione tag dinamica ospitata nel cloud o ospitata in AEM.
 
 * In hosting sul cloud: Le librerie JavaScript di Gestione tag dinamica sono memorizzate nel cloud e le pagine AEM vi fanno riferimento direttamente.
 * AEM: Gestione tag dinamica genera librerie JavaScript. AEM utilizza un modello di flusso di lavoro per ottenere e installare le librerie.
 
-Il tipo di hosting utilizzato dall&#39;implementazione determina alcune delle attività di configurazione e implementazione che esegui. Per informazioni sulle opzioni di hosting, consultate [Hosting - Embed Tab](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) (Hosting - Embed Tab) nella guida di Gestione tag dinamica.
+Il tipo di hosting utilizzato dall&#39;implementazione determina alcune delle attività di configurazione e implementazione che esegui. Per informazioni sulle opzioni di hosting, vedere [Hosting - Embed Tab](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) nella Guida di Gestione tag dinamica.
 
 ### Libreria produzione e gestione temporanea {#staging-and-production-library}
 
@@ -66,14 +66,14 @@ Per utilizzare il gancio di distribuzione, Gestione tag dinamica deve essere in 
 
 In alcune circostanze AEM irraggiungibile, ad esempio quando AEM si trova dietro un firewall. In questi casi, potete utilizzare l&#39;opzione Importazione polling AEM per recuperare periodicamente le librerie. Un&#39;espressione di processo cron imposta la pianificazione per i download della libreria.
 
-## Abilitazione dell&#39;accesso al servizio del gruppo di distribuzione {#enabling-access-for-the-deployment-hook-service}
+## Abilitazione dell&#39;accesso al servizio di assistenza alla distribuzione {#enabling-access-for-the-deployment-hook-service}
 
 Abilita il servizio gancio di distribuzione Gestione tag dinamica per accedere ai AEM in modo che il servizio possa aggiornare le librerie AEM ospitate. Specificate l&#39;indirizzo IP dei server Gestione tag dinamica che aggiornano le librerie di staging e produzione come richiesto:
 
 * Staging: `107.21.99.31`
 * Produzione: `23.23.225.112` e `204.236.240.48`
 
-Perform the configuration using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) node:
+Eseguire la configurazione utilizzando il nodo [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * Nella console Web, utilizza l’elemento di configurazione del gruppo di distribuzione DTM di Adobe  nella pagina Configurazione.
 * Per una configurazione OSGi, il servizio PID è `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
@@ -85,13 +85,13 @@ Nella tabella seguente sono descritte le proprietà da configurare.
 | Gestione dinamica dei tag - Elenco bianco IP | `dtm.staging.ip.whitelist` | Indirizzo IP del server Gestione tag dinamica che aggiorna le librerie di staging. |
 | Elenco bianco IP DTM produzione | `dtm.production.ip.whitelist` | L&#39;indirizzo IP del server Gestione tag dinamica che aggiorna le librerie di produzione. |
 
-## Creazione della configurazione Gestione tag dinamica {#creating-the-dynamic-tag-management-configuration}
+## Creazione della configurazione di gestione tag dinamica {#creating-the-dynamic-tag-management-configuration}
 
 Create una configurazione cloud in modo che l&#39;istanza AEM possa autenticarsi con Gestione tag dinamica e interagire con la vostra proprietà Web.
 
 >[!NOTE]
 >
->Evitate di includere  codici di monitoraggio Adobe Analytics sulle pagine quando la proprietà Web di Gestione dinamica dei tag include lo strumento Adobe Analytics  e state utilizzando anche [Content Insight](/help/sites-authoring/content-insights.md). Nella configurazione [cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)Adobe Analytics, selezionate l&#39;opzione Non includere il codice di tracciamento.
+>Evitare di includere  codici di monitoraggio Adobe Analytics sulle pagine quando la proprietà Web di Gestione dinamica dei tag include lo strumento Adobe Analytics  e si utilizza anche [Content Insight](/help/sites-authoring/content-insights.md). Nella [ configurazione cloud Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), selezionare l&#39;opzione Non includere codice di tracciamento.
 
 ### Impostazioni generali {#general-settings}
 
@@ -124,7 +124,7 @@ Create una configurazione cloud in modo che l&#39;istanza AEM possa autenticarsi
 
 Le seguenti proprietà della configurazione Gestione tag dinamica consentono AEM ospitare le librerie Gestione tag dinamica. Le proprietà consentono AEM scaricare e installare le librerie. Facoltativamente, puoi aggiornare automaticamente le librerie per assicurarti che riflettano eventuali modifiche apportate nell’applicazione Gestione tag dinamica.
 
-Alcune proprietà utilizzano i valori ottenuti dalla sezione Download libreria della scheda Incorpora per la proprietà Web Gestione tag dinamica. Per ulteriori informazioni, consulta Download [della](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) libreria nella guida di Gestione tag dinamica.
+Alcune proprietà utilizzano i valori ottenuti dalla sezione Download libreria della scheda Incorpora per la proprietà Web Gestione tag dinamica. Per ulteriori informazioni, vedere [Download della libreria](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) nella Guida alla gestione tag dinamica.
 
 >[!NOTE]
 >
@@ -152,15 +152,15 @@ Quando si ospitano le librerie Gestione tag dinamica su AEM, AEM configura autom
   </tr> 
   <tr> 
    <td>Suggerimento dominio</td> 
-   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Gestione tag dinamica. Specificate un valore per ignorare il dominio predefinito configurato per il servizio <a href="/help/sites-developing/externalizer.md">Esternalizzatore collegamento CQ</a>Day.</p> <p>Quando è connesso a Gestione tag dinamica, AEM utilizza questo valore per configurare il Percorso HTTP temporaneo o il Percorso HTTP di produzione delle proprietà Download della libreria per la proprietà Web Gestione tag dinamica.</p> </td> 
+   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Gestione tag dinamica. Specificate un valore per ignorare il dominio predefinito configurato per il servizio <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer Service</a>.</p> <p>Quando è connesso a Gestione tag dinamica, AEM utilizza questo valore per configurare il Percorso HTTP temporaneo o il Percorso HTTP di produzione delle proprietà Download della libreria per la proprietà Web Gestione tag dinamica.</p> </td> 
   </tr> 
   <tr> 
    <td>Suggerimento dominio sicuro</td> 
-   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Gestione tag dinamica tramite HTTPS. Specificate un valore per ignorare il dominio predefinito configurato per il servizio <a href="/help/sites-developing/externalizer.md">Esternalizzatore collegamento CQ</a>Day.</p> <p>Quando è connesso a Gestione tag dinamica, AEM utilizza questo valore per configurare il Percorso HTTPS di gestione temporanea o il Percorso HTTPS di produzione delle proprietà Download della libreria per la proprietà Web Gestione tag dinamica.</p> </td> 
+   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Gestione tag dinamica tramite HTTPS. Specificate un valore per ignorare il dominio predefinito configurato per il servizio <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer Service</a>.</p> <p>Quando è connesso a Gestione tag dinamica, AEM utilizza questo valore per configurare il Percorso HTTPS di gestione temporanea o il Percorso HTTPS di produzione delle proprietà Download della libreria per la proprietà Web Gestione tag dinamica.</p> </td> 
   </tr> 
   <tr> 
    <td>Segreto condiviso</td> 
-   <td><p>(Facoltativo) Il segreto condiviso da utilizzare per decrittografare il download. Ottenete questo valore dal campo Segreto condiviso della pagina Download della libreria di Gestione tag dinamica.</p> <p><strong>Nota:</strong> Nel computer in cui è installato AEM devono essere installate le librerie <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> , in modo che AEM decrittografare le librerie scaricate.</p> </td> 
+   <td><p>(Facoltativo) Il segreto condiviso da utilizzare per decrittografare il download. Ottenete questo valore dal campo Segreto condiviso della pagina Download della libreria di Gestione tag dinamica.</p> <p><strong>Nota:</strong> nel computer in cui è installato AEM devono essere installate le librerie  <a href="https://www.openssl.org/docs/apps/openssl.html"></a> OpenSSL, in modo che AEM decrittografare le librerie scaricate.</p> </td> 
   </tr> 
   <tr> 
    <td>Abilita importazione polling</td> 
@@ -195,7 +195,7 @@ Quando la configurazione della gestione tag dinamica è in hosting sul cloud, pu
   </tr> 
   <tr> 
    <td>Codice piè di pagina</td> 
-   <td><p>Il codice piè di pagina per l'area di visualizzazione che viene ottenuto da Gestione tag dinamica per l'host. Questo valore viene popolato automaticamente quando ci si connette a Gestione tag dinamica.</p> <p>Per visualizzare il codice in Gestione tag dinamica, fai clic sulla scheda Incorpora, quindi fai clic sul nome host. Espandete la sezione Codici piè di pagina e fate clic su Copia codice da incorporare del codice di incorporamento temporaneo o sull’area Codice da incorporare produzione, a seconda delle necessità.</p> </td> 
+   <td><p>Il codice piè di pagina per l'area di gestione dei tag dinamici ottenuto da Gestione tag dinamica per l'host. Questo valore viene popolato automaticamente quando ci si connette a Gestione tag dinamica.</p> <p>Per visualizzare il codice in Gestione tag dinamica, fai clic sulla scheda Incorpora, quindi fai clic sul nome host. Espandete la sezione Codici piè di pagina e fate clic su Copia codice da incorporare del codice di incorporamento temporaneo o sull’area Codice da incorporare produzione, a seconda delle necessità.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -240,9 +240,9 @@ Scarica manualmente le librerie Gestione tag dinamica per aggiornarle immediatam
 
 >[!NOTE]
 >
->I file scaricati sono memorizzati in `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
+>I file scaricati vengono memorizzati in `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
 >
->I seguenti elementi sono tratti direttamente dalla configurazione [di](#creating-the-dynamic-tag-management-configuration)Gestione dinamica dei tag.
+>I seguenti sono tratti direttamente dalla [configurazione DTM](#creating-the-dynamic-tag-management-configuration).
 >
 >* `myconfig`
 >* `companyID`
