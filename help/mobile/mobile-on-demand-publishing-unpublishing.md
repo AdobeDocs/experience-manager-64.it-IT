@@ -22,13 +22,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Una volta che avete familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, potete pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultate Considerazioni di [progettazione per  app](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultare [Considerazioni di progettazione per  app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 
