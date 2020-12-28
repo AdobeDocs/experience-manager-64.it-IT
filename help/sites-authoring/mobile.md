@@ -26,16 +26,16 @@ I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedere [Creazione di una Live Copy per diversi canali](/help/sites-administering/msm-livecopy.md).)
 >
->Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
+>Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedere [Creazione di filtri per gruppi di dispositivi](/help/sites-developing/groupfilters.md).)
 
 Segui la procedura seguente per creare una pagina mobile:
 
 1. Dalla navigazione globale apri la console **Sites**.
-1. Open the page **We.Retail** -> **United States** -> **English**.
+1. Aprite la pagina **We.Retail** -> **Stati Uniti** -> **Inglese**.
 
-1. Switch to **Preview** mode.
+1. Passate alla modalità **Anteprima**.
 1. Passa all&#39;emulatore desiderato facendo clic sull&#39;icona del dispositivo nella parte superiore della pagina.
 1. Trascina e rilascia i componenti dal browser componente alla pagina.
 
