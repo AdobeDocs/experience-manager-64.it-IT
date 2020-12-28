@@ -1,8 +1,8 @@
 ---
 title: Prestazioni e scalabilità
 seo-title: Prestazioni e scalabilità
-description: 'Questo white paper illustra i modi in cui la scalabilità è stata integrata nelle AEM, insieme agli indicatori di prestazioni e alle funzioni di disaster recovery.  '
-seo-description: 'Questo white paper illustra i modi in cui la scalabilità è stata integrata nelle AEM, insieme agli indicatori di prestazioni e alle funzioni di disaster recovery.  '
+description: 'Questo white paper illustra i modi in cui la scalabilità è stata integrata in AEM, insieme agli indicatori di prestazioni e alle funzioni di disaster recovery.  '
+seo-description: 'Questo white paper illustra i modi in cui la scalabilità è stata integrata in AEM, insieme agli indicatori di prestazioni e alle funzioni di disaster recovery.  '
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Prestazioni e scalabilità{#performance-scalability}
 
-## Libro bianco: Scalabilità AEM, prestazioni e disaster recovery {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## Libro bianco: AEM scalabilità, prestazioni e disaster recovery {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 Questo white paper illustra i modi in cui la scalabilità è stata integrata in Adobe Experience Manager, insieme a eccellenti indicatori di prestazioni e alle eccellenti funzionalità di disaster recovery.
 
