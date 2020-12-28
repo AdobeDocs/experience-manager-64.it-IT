@@ -40,7 +40,7 @@ Inoltre, è possibile integrare AEM con il [Marketing Cloud](/help/sites-adminis
 
 Salesforce.com è l&#39;azienda per l&#39;elaborazione cloud di livello Enterprise leader nel passaggio a Social Enterprise.
 
-Per informazioni sull’integrazione del sito AEM e di Salesforce, consulta [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
+Per informazioni sull&#39;integrazione del sito AEM e di Salesforce, vedere [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
 
 ## Integrazione con Silverpop Engage {#integrating-with-silverpop-engage}
 
@@ -50,20 +50,20 @@ Per informazioni sull’integrazione del sito AEM e di Salesforce, consulta [Int
 
 Silverpop Engage offre automazione marketing, e-mail, dispositivi mobili e social network.
 
-Per informazioni sull’integrazione del sito AEM con ExactTarget, consultate [Integrazione con Silverpop Engage](/help/sites-administering/silverpop.md).
+Per informazioni sull&#39;integrazione del sito AEM e di ExactTarget, consultate [Integrazione con Silverpop Engage](/help/sites-administering/silverpop.md).
 
 ## Integrazione con ExactTarget {#integrating-with-exacttarget}
 
 Le soluzioni di marketing e-mail ExactTarget permettono alle organizzazioni grandi e piccole di progettare e distribuire campagne e-mail molto mirate, mission-critical e completamente integrate.
 
-Per informazioni sull’integrazione del sito AEM e di ExactTarget, consultate [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md).
+Per informazioni sull&#39;integrazione del sito AEM e di ExactTarget, consultate [Configuring ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integrazione con Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook e Twitter sono popolari servizi di social network. AEM&#39;integrazione con Facebook e Twitter consente alle organizzazioni di fornire un&#39;opzione di accesso a Facebook o Twitter sulle proprietà digitali possedute, e quindi personalizzare l&#39;esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono inoltre combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, come un sistema di gestione delle relazioni con i clienti o un profilo del sito Web, per creare una visualizzazione unificata del cliente.
 
-Per ulteriori informazioni, consultate Accesso [tramite](/help/communities/social-login.md) social network.
+Per ulteriori informazioni, vedere [Accesso tramite social network](/help/communities/social-login.md).
 
 ## Integrazione con altri provider {#integrating-with-other-providers}
 
-AEM consente di connettersi ad altri fornitori esterni con uno snippet di analisi [generico.](/help/sites-administering/external-providers.md)
+AEM consente di connettersi ad altri fornitori esterni con uno snippet di Analytics generico [](/help/sites-administering/external-providers.md).
