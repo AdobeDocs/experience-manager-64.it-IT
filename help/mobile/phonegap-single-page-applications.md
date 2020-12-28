@@ -22,15 +22,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-[Le applicazioni](https://en.wikipedia.org/wiki/Single-page_application) SPA (Single Page Applications) hanno raggiunto una massa critica, ampiamente considerata come il modello più efficace per creare esperienze perfette con la tecnologia Web. Seguendo un pattern SPA, è possibile creare un&#39;applicazione che funziona in modo identico a un&#39;applicazione desktop o mobile, ma che raggiunge un gran numero di piattaforme di dispositivi e di fattori di forma a causa del suo fondamento in standard Web aperti.
+[Le applicazioni](https://en.wikipedia.org/wiki/Single-page_application)  a pagina singola (SPA) hanno raggiunto una massa critica, ampiamente considerata come il modello più efficace per creare esperienze senza soluzione di continuità con la tecnologia Web. Seguendo un pattern di SPA, è possibile creare un&#39;applicazione che esegue in modo identico su un&#39;applicazione desktop o mobile, ma che raggiunge un gran numero di piattaforme di dispositivi e di fattori di forma a causa del suo fondamento in standard Web aperti.
 
-In generale, gli SPA appaiono più efficaci dei siti Web basati sulle pagine tradizionali, perché in genere caricano una pagina HTML completa **solo una volta** (inclusi CSS, JS e contenuti di supporto per i font), quindi caricano solo ciò che è necessario ogni volta che si verifica una modifica di stato nell&#39;app. Ciò che è necessario per questa modifica di stato può variare in base al set di tecnologie selezionate, ma in genere include un singolo frammento HTML per sostituire la &quot;vista&quot; esistente, e l&#39;esecuzione di un blocco di codice JS per collegare la nuova vista ed eseguire il rendering di modelli lato client che potrebbe essere necessario. La velocità di questa modifica dello stato può essere ulteriormente migliorata grazie al supporto dei meccanismi di memorizzazione nella cache dei modelli, o anche tramite l&#39;accesso offline ai contenuti dei modelli, se  Adobe PhoneGap viene utilizzato.
+In generale, SPA appaiono più performanti rispetto ai siti Web tradizionali basati su pagine, perché in genere caricano una pagina HTML completa **una sola volta (inclusi CSS, JS e contenuti di supporto per i font), e quindi caricano solo ciò che è necessario ogni volta che si verifica una modifica di stato nell&#39;app.** Ciò che è necessario per questa modifica di stato può variare in base al set di tecnologie selezionate, ma in genere include un singolo frammento HTML per sostituire la &quot;vista&quot; esistente, e l&#39;esecuzione di un blocco di codice JS per collegare la nuova vista ed eseguire il rendering di modelli lato client che potrebbe essere necessario. La velocità di questa modifica dello stato può essere ulteriormente migliorata grazie al supporto dei meccanismi di memorizzazione nella cache dei modelli, o anche tramite l&#39;accesso offline ai contenuti dei modelli, se  Adobe PhoneGap viene utilizzato.
 
-AEM 6.1 sostiene la creazione e la gestione delle ZPS tramite AEM Apps. Questo articolo fornisce un&#39;introduzione ai concetti alla base dell&#39;SPA e come sfruttano [AngularJS](https://angularjs.org/) per portare il tuo marchio nell&#39;App Store e in Google Play.
+AEM 6.1 sostiene la creazione e la gestione di SPA tramite AEM Apps. Questo articolo fornisce un&#39;introduzione ai concetti alla base del SPA e come sfruttano [AngularJS](https://angularjs.org/) per portare il tuo marchio nell&#39;App Store e in Google Play.
 
-## SPA nelle app AEM {#spa-in-aem-apps}
+## SPA in AEM app {#spa-in-aem-apps}
 
 Il framework di applicazione per pagina singola in AEM app consente di ottenere prestazioni elevate di un&#39;app AngularJS, consentendo agli autori (o ad altro personale non tecnico) di creare e gestire il contenuto dell&#39;app tramite l&#39;editor touch, con trascinamento della selezione tradizionalmente riservato alla gestione dei siti Web. Avete già un sito costruito con AEM? Scoprirai che riutilizzare i tuoi contenuti, componenti, flussi di lavoro, risorse e autorizzazioni è semplice con AEM app.
 
@@ -56,9 +56,9 @@ L’esempio di cui sopra illustra in particolare un esempio di passaggio di un p
 
 Il modello da caricare quando questa route è richiesta è specificato dalla proprietà templateUrl. Questo modello conterrà il codice HTML dei componenti AEM che sono stati inclusi nella pagina, nonché eventuali direttive AngularJS necessarie per il cablaggio del lato client dell&#39;applicazione. Per un esempio di direttiva AngularJS in un componente Geometrixx, osservate la riga 45 del template.jsp di swipe-carosello (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
 
-## Controllori pagina {#page-controllers}
+## Controller pagina {#page-controllers}
 
-Nelle parole di Angular, &quot;un controller è una funzione di costruzione JavaScript utilizzata per ampliare l&#39;ambito angolare.&quot; ([sorgente](https://docs.angularjs.org/guide/controller)) Ogni pagina in un&#39;app AEM viene automaticamente collegata a un controller che può essere incrementato da qualsiasi controller che specifica un `frameworkType` di `angular`. Osservate il componente ng-text come un esempio (/libs/mobileapps/components/angular/ng-text), incluso il nodo cq:template che verifica che ogni volta che questo componente viene aggiunto a una pagina includa questa importante proprietà.
+Nelle parole di Angular, &quot;un controller è una funzione di costruzione JavaScript utilizzata per ampliare l&#39;ambito angolare.&quot; ([source](https://docs.angularjs.org/guide/controller)) Ogni pagina in un&#39;app AEM viene automaticamente collegata a un controller che può essere incrementato da qualsiasi controller che specifica `frameworkType` di `angular`. Osservate il componente ng-text come un esempio (/libs/mobileapps/components/angular/ng-text), incluso il nodo cq:template che verifica che ogni volta che questo componente viene aggiunto a una pagina includa questa importante proprietà.
 
 Per un esempio di controller più complesso, aprite lo script ng-template-page controller.jsp (che si trova in /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Di particolare interesse è il codice JavaScript generato al momento dell&#39;esecuzione, che viene riprodotto come segue:
 
@@ -83,10 +83,10 @@ Per un esempio di controller più complesso, aprite lo script ng-template-page c
 ])
 ```
 
-Nell&#39;esempio precedente, noterete che stiamo prendendo un parametro dal `$routeParams` servizio e poi lo massaggiamo nella struttura di directory in cui sono memorizzati i nostri dati JSON. Trattando lo sku `id` in questo modo, siamo in grado di fornire un singolo modello di prodotto che può rappresentare i dati del prodotto per migliaia di prodotti potenzialmente distinti. Si tratta di un modello molto più scalabile che richiede un percorso singolo per ogni elemento in un database di prodotti (potenzialmente) di massa.
+Nell&#39;esempio precedente, noterete che stiamo prendendo un parametro dal servizio `$routeParams` e poi massaggiarlo nella struttura di directory in cui sono memorizzati i nostri dati JSON. Affrontando lo sku `id` in questo modo, siamo in grado di fornire un singolo modello di prodotto che possa rappresentare i dati del prodotto per migliaia di prodotti potenzialmente distinti. Si tratta di un modello molto più scalabile che richiede un percorso singolo per ogni elemento in un database di prodotti (potenzialmente) di massa.
 
-Sono inoltre disponibili due componenti: ng-product aumenta l’ambito con i dati estratti dalla `$http` chiamata precedente. In questa pagina è presente anche un&#39;immagine ng che a sua volta amplia l&#39;ambito con il valore recuperato dalla risposta. In virtù del `$http` servizio di Angular, ogni componente aspetterà pazientemente fino al completamento della richiesta e alla realizzazione della promessa che ha creato.
+Sono inoltre disponibili due componenti: ng-product amplia l&#39;ambito con i dati estratti dalla chiamata `$http` precedente. In questa pagina è presente anche un&#39;immagine ng che a sua volta amplia l&#39;ambito con il valore recuperato dalla risposta. In virtù del servizio Angular `$http`, ogni componente aspetterà pazientemente fino al completamento della richiesta e al completamento della promessa che ha creato.
 
 ## Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso le applicazioni a pagina singola, consulta [Sviluppo di app con l’interfaccia CLI](/help/mobile/phonegap-apps-pg-cli.md)di PhoneGap.
+Dopo aver appreso le applicazioni a pagina singola, vedere [Sviluppo di app con PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
