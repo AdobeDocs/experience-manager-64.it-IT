@@ -44,12 +44,12 @@ Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di orig
 
 Per ulteriori informazioni, consulta [Modifica del contenuto per Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
-## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
+## Confronto tra una pagina di lancio e la relativa pagina sorgente  {#comparing-a-launch-page-to-its-source-page}
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
 1. Nella console **Sites**, [spostati sulla pagina di origine del lancio e selezionala](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**e seleziona **Lanci**.
+1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Lanci**.
 1. Seleziona il tuo specifico lancio, quindi **Confronta con origine**:
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
@@ -58,7 +58,7 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **R
 
    Per informazioni complete sull&#39;utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
-## Modifica delle pagine di origine utilizzate {#changing-the-source-pages-used}
+## Modifica delle pagine di origine utilizzate  {#changing-the-source-pages-used}
 
 In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la gamma di pagine di origine per un lancio:
 
@@ -79,7 +79,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    >
    >Per aggiungere pagine a un lancio, queste devono essere sotto una radice linguistica comune, cioè all&#39;interno di un singolo sito.
 
-## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio  {#editing-a-launch-configuration}
 
 In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
@@ -98,7 +98,7 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
    Consulta [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione dei campi **Data lancio** e **Produzione pronta**.
 
-## Rilevamento dello stato del lancio di una pagina {#discovering-the-launch-status-of-a-page}
+## Rilevamento dello stato del lancio di una pagina  {#discovering-the-launch-status-of-a-page}
 
 Lo stato viene visualizzato quando si seleziona un lancio specifico dalla scheda Riferimenti (consulta [Avvia in Riferimenti (Console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
