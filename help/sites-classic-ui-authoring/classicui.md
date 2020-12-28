@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Authoring nell’interfaccia classica{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Interfaccia classica e interfaccia utente touch {#classic-ui-and-touch-enabled-ui}
 
 L’interfaccia classica è l’interfaccia utente orientata al desktop disponibile a partire da CQ5 (il predecessore AEM). La seguente documentazione sull’authoring è incentrata su tale interfaccia utente.
 
