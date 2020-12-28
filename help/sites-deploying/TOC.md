@@ -15,7 +15,7 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.4 Deploying User Guide {#deploying}
+# AEM 6.4 Guida utente alla distribuzione {#deploying}
 
 + [Guida utente per la distribuzione](home.md)
 + Introduzione alla piattaforma AEM {#introduction}
@@ -63,7 +63,7 @@ ht-degree: 18%
    + [Articoli guida alla configurazione](ht-deploy.md)
    + [Rimozione dei siti di Geometrixx](removing-the-geometrixx-sites.md)
    + [Configurazione della console Web](configuring-web-console.md)
-+ Upgrading to AEM 6.4 {#upgrading}
++ Aggiornamento a AEM 6.4 {#upgrading}
    + [Aggiornamento a AEM 6.4](upgrade.md)
    + [Pianificazione dell&#39;aggiornamento](upgrade-planning.md)
    + [Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern](pattern-detector.md)
@@ -85,7 +85,7 @@ ht-degree: 18%
    + [Ristrutturazione comune dell&#39;archivio in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell&#39;archivio siti in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione del repository delle risorse in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
-   + [Ristrutturazione Dynamic Media Repository in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell&#39;archivio Forms in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione del repository di e-commerce in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione del repository per  AEM Communities in 6.4](communities-repository-restructuring-in-aem-6-4.md)
