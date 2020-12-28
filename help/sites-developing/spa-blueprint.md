@@ -156,7 +156,7 @@ Il contenitore ottiene in modo dinamico i componenti secondari dallo store della
 
 ### Pagina {#page}
 
-Il componente `Page` estende il componente `Container`. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari, incluse le pagine figlie. A tal fine, il contenitore esegue un&#39;iterazione sulle proprietà `:itemsOrder`, `:items` e `:children` del modello. Il componente `Page` ottiene dinamicamente i componenti secondari dallo store della libreria [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` è responsabile della creazione di istanze di componenti secondari.
+Il componente `Page` estende il componente `Container`. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari, incluse le pagine figlie. A tal fine, il contenitore esegue un&#39;iterazione sulle proprietà `:itemsOrder`, `:items` e `:children` del modello. Il componente `Page` riceve dinamicamente i componenti secondari dallo store della libreria [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` è responsabile della creazione di istanze di componenti secondari.
 
 ### Griglia reattiva {#responsive-grid}
 
