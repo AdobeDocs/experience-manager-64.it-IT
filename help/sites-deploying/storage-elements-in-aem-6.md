@@ -32,7 +32,7 @@ Una delle modifiche più importanti nel AEM 6 sono le innovazioni a livello di r
 
 Al momento, in AEM6 sono disponibili due implementazioni di storage a nodo: Archiviazione Tar e storage MongoDB.
 
-### Archiviazione Tar {#tar-storage}
+### Archiviazione delle barre {#tar-storage}
 
 #### Esecuzione di un&#39;istanza AEM appena installata con Tar Storage {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
@@ -49,7 +49,7 @@ Per impostazione predefinita, AEM 6 utilizza l&#39;archiviazione Tar per memoriz
 
 1. Create una cartella denominata `crx-quickstart\install` nella directory di installazione.
 
-1. Create un file chiamato `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` nella cartella appena creata.
+1. Create un file denominato `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` nella cartella appena creata.
 
 1. Modificate il file e impostate le opzioni di configurazione. Le seguenti opzioni sono disponibili per l&#39;archivio dei nodi del segmento, che è la base dell&#39;implementazione dell&#39;archiviazione AEM Tar:
 
@@ -58,7 +58,7 @@ Per impostazione predefinita, AEM 6 utilizza l&#39;archiviazione Tar per memoriz
 
 1. Inizia AEM.
 
-### Mongo Storage {#mongo-storage}
+### Archiviazione Mongo {#mongo-storage}
 
 #### Esecuzione di un&#39;istanza AEM appena installata con Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -69,21 +69,21 @@ AEM 6 può essere configurato per l&#39;esecuzione con l&#39;archivio MongoDB se
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Accertatevi che MongoDB sia installato e che un&#39;istanza di `mongod` sia in esecuzione. Per ulteriori informazioni, vedere [Installazione di MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Assicurarsi che MongoDB sia installato e che sia in esecuzione un&#39;istanza di `mongod`. Per ulteriori informazioni, vedere [Installazione di MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Create una cartella denominata `crx-quickstart\install` nella directory di installazione.
-1. Configurate l&#39;archivio nodi creando un file di configurazione con il nome della configurazione che desiderate utilizzare nella `crx-quickstart\install` directory.
+1. Configurare l&#39;archivio nodi creando un file di configurazione con il nome della configurazione che si desidera utilizzare nella directory `crx-quickstart\install`.
 
-   Document Node Store (che è la base per AEM&#39;implementazione dell&#39;archivio MongoDB) utilizza un file denominato `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   L&#39;archivio dei nodi del documento (base per AEM&#39;implementazione dell&#39;archiviazione MongoDB) utilizza un file denominato `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Modificate il file e impostate le opzioni di configurazione. Sono disponibili le seguenti opzioni:
 
-   * `mongouri`: Il [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) richiesto per connettersi al database Mongo. Il valore predefinito è `mongodb://localhost:27017`
+   * `mongouri`: Il  [](https://docs.mongodb.org/manual/reference/connection-string/) MongoURI richiesto per connettersi al database Mongo. Il valore predefinito è `mongodb://localhost:27017`
    * `db`: Nome del database Mongo. Per impostazione predefinita, le nuove installazioni AEM 6 utilizzano **aem-author** come nome del database.
    * `cache`: Dimensione della cache in MB. Questo viene distribuito tra diverse cache utilizzate in DocumentNodeStore. Il valore predefinito è 256.
    * `changesSize`: Dimensioni in MB della raccolta limitata utilizzata in Mongo per memorizzare nella cache l&#39;output delle diff. Il valore predefinito è 256.
    * `customBlobStore`: Valore booleano che indica che verrà utilizzato un archivio dati personalizzato. Il valore predefinito è false.
 
-1. Creare un file di configurazione con il PID dell&#39;archivio dati che si desidera utilizzare e modificare il file per impostare le opzioni di configurazione. Per ulteriori informazioni, consulta [Configurazione di archivi di nodi e archivi](/help/sites-deploying/data-store-config.md)dati.
+1. Creare un file di configurazione con il PID dell&#39;archivio dati che si desidera utilizzare e modificare il file per impostare le opzioni di configurazione. Per ulteriori informazioni, consultare [Configuring Node Stores and Data Stores](/help/sites-deploying/data-store-config.md) (Configurazione di archivi di nodi e archivi dati).
 
 1. Avviare AEM 6 jar con un backend di storage MongoDB eseguendo:
 
@@ -91,14 +91,14 @@ AEM 6 può essere configurato per l&#39;esecuzione con l&#39;archivio MongoDB se
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Dov&#39; **`-r`** è la modalità di esecuzione back-end. In questo esempio, inizierà con il supporto MongoDB.
+   Dove **`-r`** è la modalità di esecuzione back-end. In questo esempio, inizierà con il supporto MongoDB.
 
-#### Disattivazione di pagine grandi trasparenti {#disabling-transparent-huge-pages}
+#### Disattivazione delle pagine grandi trasparenti {#disabling-transparent-huge-pages}
 
 Red Hat Linux utilizza un algoritmo di gestione della memoria denominato Transparent Huge Pages (THP). Mentre AEM esegue letture e scrittura a grana fine, THP è ottimizzato per operazioni di grandi dimensioni. Per questo motivo, si consiglia di disabilitare THP sia su storage Tar che Mongo. Per disattivare l’algoritmo, procedere come segue:
 
-1. Aprite il `/etc/grub.conf` file nell’editor di testo desiderato.
-1. Aggiungete la riga seguente al file **grub.conf** :
+1. Aprite il file `/etc/grub.conf` nell&#39;editor di testo desiderato.
+1. Aggiungete la seguente riga al file **grub.conf**:
 
    ```
    transparent_hugepage=never
@@ -120,7 +120,7 @@ Red Hat Linux utilizza un algoritmo di gestione della memoria denominato Transpa
 >
 >È inoltre possibile consultare le risorse seguenti:
 >
->* Per ulteriori informazioni sulle Pagine Enormi Trasparenti su Red Hat Linux, consulta questo [articolo](https://access.redhat.com/solutions/46111).
+>* Per ulteriori informazioni sulle pagine grandi trasparenti su Red Hat Linux, consultate questo [articolo](https://access.redhat.com/solutions/46111).
 >* Per suggerimenti di ottimizzazione per Linux, consultate questo [articolo](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 >
@@ -129,4 +129,4 @@ Red Hat Linux utilizza un algoritmo di gestione della memoria denominato Transpa
 
 ## Gestione del repository {#maintaining-the-repository}
 
-Ogni aggiornamento al repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento le dimensioni del repository aumentano. Per evitare una crescita incontrollata del repository, le vecchie revisioni devono essere pulite per liberare risorse su disco. Questa funzionalità di manutenzione è denominata Revision Cleanup (Pulizia revisioni). Il meccanismo Revision Cleanup recupererà spazio su disco rimuovendo i dati obsoleti dall&#39;archivio. Per ulteriori dettagli sulla pulizia della revisione, consultate la pagina [Pulizia](/help/sites-deploying/revision-cleanup.md)revisione.
+Ogni aggiornamento al repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento le dimensioni del repository aumentano. Per evitare una crescita incontrollata del repository, le vecchie revisioni devono essere pulite per liberare risorse su disco. Questa funzionalità di manutenzione è denominata Revision Cleanup (Pulizia revisioni). Il meccanismo Revision Cleanup recupererà spazio su disco rimuovendo i dati obsoleti dall&#39;archivio. Per ulteriori dettagli sulla pulizia delle revisioni, consultare la [pagina Pulizia revisioni](/help/sites-deploying/revision-cleanup.md).
