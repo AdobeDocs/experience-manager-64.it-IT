@@ -24,13 +24,13 @@ Le modalità di esecuzione consentono di sintonizzare l’istanza di AEM per uno
 
 Operazioni disponibili:
 
-* [Definire raccolte di parametri di configurazione per ciascuna modalità](#defining-configuration-properties-for-a-run-mode)di esecuzione.
+* [Definire raccolte di parametri di configurazione per ciascuna modalità](#defining-configuration-properties-for-a-run-mode) di esecuzione.
 
    Per tutte le modalità di esecuzione viene applicato un set di parametri di configurazione di base, che consente di sintonizzare ulteriori set in base alle esigenze specifiche dell&#39;ambiente. Questi vengono applicati come necessario.
 
 * [Definire pacchetti aggiuntivi da installare per una particolare modalità](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
-Tutte le impostazioni e definizioni vengono memorizzate nell&#39;unico repository e attivate impostando la modalità **** Run.
+Tutte le impostazioni e le definizioni sono memorizzate nell&#39;unico repository e attivate impostando la **Modalità di esecuzione**.
 
 ## Modalità di esecuzione dell&#39;installazione {#installation-run-modes}
 
@@ -51,7 +51,7 @@ Si tratta di due coppie di modalità di esecuzione che si escludono a vicenda; a
 
 >[!CAUTION]
 >
->Quando si utilizza una delle modalità di esecuzione di cui sopra (autore, pubblicazione, contenuto di esempio, nessun contenuto di esempio), il valore utilizzato al momento dell&#39;installazione definisce la modalità di esecuzione per l&#39; *intera durata* dell&#39;installazione.
+>Quando si utilizza una delle modalità di esecuzione di cui sopra (autore, pubblicazione, contenuto di esempio, nessun contenuto di esempio), il valore utilizzato al momento dell&#39;installazione definisce la modalità di esecuzione per l&#39; *intera durata* di tale installazione.
 >
 >Per queste modalità di esecuzione *non è possibile* modificarle dopo l&#39;installazione.
 
@@ -61,11 +61,11 @@ Potete anche creare modalità di esecuzione personalizzate. Questi possono esser
 
 * `author` + `development`
 
-* `publish` + `test`
+* `publish` +  `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` + `intranet`
+* `publish` +  `intranet`
 
 * come richiesto. . .
 
@@ -75,9 +75,9 @@ Potete anche creare modalità di esecuzione personalizzate. Questi possono esser
 
 Queste modalità consentono di controllare l’utilizzo di contenuti campione. Il contenuto di esempio viene definito prima della creazione del quickstart e può includere pacchetti, configurazioni e così via:
 
-* La modalità `samplecontent` di esecuzione installerà questo contenuto (la modalità predefinita).
+* La modalità di esecuzione `samplecontent` installerà il contenuto (modalità predefinita).
 
-* La `nosamplecontent` modalità non installa il contenuto di esempio.
+* La modalità `nosamplecontent` non installa il contenuto di esempio.
 
 La modalità di esecuzione nosamplecontent è progettata per le installazioni di produzione.
 
@@ -85,7 +85,7 @@ La modalità di esecuzione nosamplecontent è progettata per le installazioni di
 
 È possibile salvare nell&#39;archivio una raccolta di valori per le proprietà di configurazione, utilizzati per una particolare modalità di esecuzione.
 
-La modalità di esecuzione è indicata da un suffisso sul nome della cartella. Questo consente di memorizzare tutte le configurazioni in un archivio come. Ad esempio:
+La modalità di esecuzione è indicata da un suffisso sul nome della cartella. Questo consente di memorizzare tutte le configurazioni in un archivio come. Esempio:
 
 * `config`
 
@@ -103,11 +103,11 @@ La modalità di esecuzione è indicata da un suffisso sul nome della cartella. Q
 
    Utilizzato per la modalità di esecuzione applicabile; ad esempio, config
 
-Per ulteriori informazioni sulla definizione dei singoli nodi di configurazione all&#39;interno di queste cartelle e sulla creazione di configurazioni per combinazioni di più modalità di esecuzione, consultate Configurazione [OSGi nell&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) .
+Per ulteriori informazioni sulla definizione dei singoli nodi di configurazione all&#39;interno di queste cartelle e sulla creazione di configurazioni per combinazioni di più modalità di esecuzione, vedere [Configurazione OSGi nell&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 >[!NOTE]
 >
->Per le modalità [di esecuzione](#installation-run-modes) dell&#39;installazione (ad esempio, autore), la modalità di esecuzione non può essere modificata dopo l&#39;installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
+>Per [Modalità di esecuzione dell&#39;installazione](#installation-run-modes) (ad es. autore), la modalità di esecuzione non può essere modificata dopo l&#39;installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
 
 ## Definizione di pacchetti aggiuntivi da installare per una modalità di esecuzione {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -116,7 +116,7 @@ Per ulteriori informazioni sulla definizione dei singoli nodi di configurazione 
 * `install.author`
 * `install.publish`
 
-Queste cartelle sono di tipo `nt:folder` e devono contenere il bundle appropriato.
+Queste cartelle sono di tipo `nt:folder` e devono contenere il pacchetto appropriato.
 
 ## Avvio di CQ con una modalità di esecuzione specifica {#starting-cq-with-a-specific-run-mode}
 
@@ -132,7 +132,7 @@ Quando si utilizza un server applicazione è anche possibile [definire la modali
 
 ### Utilizzo del file sling.properties {#using-the-sling-properties-file}
 
-Il `sling.properties` file può essere utilizzato per definire la modalità di esecuzione richiesta:
+Il file `sling.properties` può essere utilizzato per definire la modalità di esecuzione richiesta:
 
 1. Modificate il file di configurazione:
 
@@ -144,13 +144,13 @@ Il `sling.properties` file può essere utilizzato per definire la modalità di e
 
 ### Utilizzo dell&#39;opzione -r {#using-the-r-option}
 
-Una modalità di esecuzione personalizzata può essere attivata utilizzando l&#39; `-r` opzione all&#39;avvio del quickstart. Ad esempio, utilizzare il comando seguente per avviare un&#39;istanza AEM con la modalità di esecuzione impostata su dev. &quot;
+Una modalità di esecuzione personalizzata può essere attivata utilizzando l&#39;opzione `-r` all&#39;avvio del quickstart. Ad esempio, utilizzare il comando seguente per avviare un&#39;istanza AEM con la modalità di esecuzione impostata su dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
 ```
 
-### Uso di una proprietà di sistema nello script iniziale {#using-a-system-property-in-the-start-script}
+### Utilizzo di una proprietà di sistema nello script iniziale {#using-a-system-property-in-the-start-script}
 
 Per specificare la modalità di esecuzione è possibile utilizzare una proprietà di sistema nello script iniziale.
 
@@ -169,7 +169,7 @@ Il file JAR deve usare la convenzione di denominazione:
 
 `cq5-<run-mode>-p<port-number>`
 
-Ad esempio, impostare la modalità di `publish` esecuzione denominando il file jar:
+Ad esempio, impostare la modalità di esecuzione `publish` denominando il file jar:
 
 `cq5-publish-p4503`
 
@@ -183,6 +183,6 @@ nel file:
 
 `WEB-INF/web.xml`
 
-Si trova nel `war` file AEM e deve essere aggiornato prima della distribuzione.
+Si trova nel file AEM `war` e deve essere aggiornato prima della distribuzione.
 
-Per ulteriori informazioni, consultate [Installazione di AEM con un server](/help/sites-deploying/application-server-install.md) applicazioni.
+Per ulteriori informazioni, vedere [Installazione di AEM con un server applicazioni](/help/sites-deploying/application-server-install.md).
