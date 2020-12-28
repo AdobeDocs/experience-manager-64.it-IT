@@ -32,7 +32,7 @@ Il processo di aggiornamento AEM necessita di una gestione accurata delle fasi d
 
 >[!CAUTION]
 >
->Se si esegue l&#39;aggiornamento da AEM 6.2 a 6.3, è necessario eseguire l&#39;aggiornamento dalle versioni (**6.2-SP1-CFP1 - -6.2SP1-CFP12.1**) o **6.2SP1-CFP15** in poi. In caso contrario, se si sta effettuando l&#39;aggiornamento da **6.2SP1-CFP13/6.2SP1CFP14** a AEM 6.3, è inoltre necessario eseguire l&#39;aggiornamento ad almeno la versione **6.3.2.2**. In caso contrario,  AEM Sites avrebbe avuto esito negativo dopo l&#39;aggiornamento.
+>Se si sta effettuando l&#39;aggiornamento da AEM 6.2 a 6.3, è necessario eseguire l&#39;aggiornamento dalle versioni (**6.2-SP1-CFP1 - -6.2SP1-CFP12.1**) oppure a partire da **6.2SP1-CFP15**. In caso contrario, se si sta effettuando l&#39;aggiornamento da **6.2SP1-CFP13/6.2SP1CFP14** a AEM 6.3, è inoltre necessario eseguire l&#39;aggiornamento ad almeno la versione **6.3.2.2**. In caso contrario,  AEM Sites avrebbe avuto esito negativo dopo l&#39;aggiornamento.
 
 ## Ambito e requisiti dell&#39;aggiornamento {#upgrade-scope-requirements}
 
@@ -53,17 +53,17 @@ Di seguito è riportato un elenco delle aree interessate da un tipico progetto d
   <tr>
    <td>Java Runtime</td> 
    <td>Impatto moderato</td> 
-   <td>AEM 6.3 richiede JRE 1.7.x (64 bit) o versione successiva. JRE 1.8 è l'unica versione attualmente supportata da Oracle.</td> 
+   <td>AEM 6.3 richiede JRE 1.7.x (64 bit) o versione successiva. JRE 1.8 è l'unica versione attualmente supportata da  Oracle.</td> 
   </tr>
   <tr>
    <td>Hardware</td> 
    <td>Impatto moderato</td> 
-   <td>La pulizia online delle revisioni richiede spazio libero<br /> su disco pari al 25% delle dimensioni dell'archivio e al 15% dello spazio<br /> heap gratuito per il completamento. Potrebbe essere necessario aggiornare l'hardware per<br /> garantire risorse sufficienti per l'esecuzione completa<br /> della pulizia delle revisioni online. Inoltre, se si esegue l'aggiornamento da una versione precedente alla AEM 6, potrebbero<br /> essere presenti requisiti di storage aggiuntivi.</td> 
+   <td>Per completare la pulizia online delle revisioni è necessario spazio libero su disco pari al 25% delle dimensioni dell'archivio e al 15% dello spazio libero dell'heap<br />. <br /> Potrebbe essere necessario aggiornare l'hardware per <br /> garantire risorse sufficienti per l'esecuzione della pulizia delle revisioni online fino a <br />. Inoltre, se si esegue l'aggiornamento da una versione precedente alla AEM 6, è possibile che vi siano <br /> requisiti di storage aggiuntivi.</td> 
   </tr>
   <tr>
    <td>Repository dei contenuti (CRX o Oak)</td> 
    <td>Impatto elevato</td> 
-   <td>A partire dalla versione 6.1, AEM non supporta CRX2, pertanto è necessaria una migrazione<br /> a Oak (CRX3) se si esegue l’aggiornamento da una versione precedente. AEM 6.3 ha<br /> implementato un nuovo archivio dei nodi dei segmenti che richiede anche una migrazione. Lo<br /> strumento crx2oak è utilizzato a questo scopo.</td> 
+   <td>A partire dalla versione 6.1, AEM non supporta CRX2, pertanto è necessaria una migrazione a <br /> Oak (CRX3) se si esegue l'aggiornamento da una versione precedente. AEM 6.3 ha implementato <br /> un nuovo archivio dei nodi dei segmenti che richiede anche una migrazione. Lo strumento <br /> crx2oak è utilizzato a questo scopo.</td> 
   </tr>
   <tr>
    <td>Componenti AEM/Contenuto</td> 
@@ -78,7 +78,7 @@ Di seguito è riportato un elenco delle aree interessate da un tipico progetto d
   <tr>
    <td>Servizi applicazione personalizzati</td> 
    <td>Impatto basso-alto</td> 
-   <td>A seconda dell'applicazione e della personalizzazione, potrebbero esserci<br /> dipendenze da JVM, versioni del sistema operativo e alcune modifiche relative<br /> all'indicizzazione, in quanto gli indici non vengono generati automaticamente in Oak.</td> 
+   <td>A seconda dell'applicazione e della personalizzazione, potrebbero esserci dipendenze<br /> da JVM, versioni del sistema operativo e alcune modifiche relative all'indicizzazione<br />, in quanto gli indici non vengono generati automaticamente in Oak.</td> 
   </tr>
   <tr>
    <td>Contenuto applicazione personalizzato</td> 
@@ -88,7 +88,7 @@ Di seguito è riportato un elenco delle aree interessate da un tipico progetto d
  </tbody>
 </table>
 
-È importante verificare che sia in esecuzione un sistema operativo supportato, runtime Java, versione httpd e Dispatcher. Per ulteriori informazioni, consultare la pagina [Requisiti tecnici di](/help/sites-deploying/technical-requirements.md)AEM 6.4. L&#39;aggiornamento di questi componenti dovrà essere incluso nel piano di progetto e dovrebbe avvenire prima dell&#39;aggiornamento AEM.
+È importante verificare che sia in esecuzione un sistema operativo supportato, runtime Java, versione httpd e Dispatcher. Per ulteriori informazioni, vedere la pagina [AEM 6.4 Technical Requirements](/help/sites-deploying/technical-requirements.md). L&#39;aggiornamento di questi componenti dovrà essere incluso nel piano di progetto e dovrebbe avvenire prima dell&#39;aggiornamento AEM.
 
 ## Fasi del progetto {#project-phases}
 
@@ -100,7 +100,7 @@ Con qualsiasi nuova versione, potrebbero essere introdotte modifiche all’inter
 
 ![screen_shot_2018-04-04at121206](assets/screen_shot_2018-04-04at121206.png)
 
-Le nuove funzioni di AEM 6.4 si trovano [nella sezione AEM di adobe.com](/help/release-notes/release-notes.md). Assicuratevi di notare eventuali modifiche alle interfacce utente o alle funzionalità dei prodotti comunemente utilizzate nella vostra organizzazione. Osservando le nuove funzioni, prendete nota anche di tutte le funzioni che possono essere di valore per la vostra organizzazione. Dopo aver esaminato le modifiche apportate alla AEM 6.4, sviluppate un piano di formazione per gli autori. Ciò potrebbe comportare l&#39;utilizzo di risorse liberamente disponibili come i video delle funzioni di helpx o la formazione formale offerta tramite [Adobi Digital Learning Services](https://www.adobe.com/training.html).
+Le nuove funzioni di AEM 6.4 si trovano nella sezione [AEM di adobe.com](/help/release-notes/release-notes.md). Assicuratevi di notare eventuali modifiche alle interfacce utente o alle funzionalità dei prodotti comunemente utilizzate nella vostra organizzazione. Osservando le nuove funzioni, prendete nota anche di tutte le funzioni che possono essere di valore per la vostra organizzazione. Dopo aver esaminato le modifiche apportate alla AEM 6.4, sviluppate un piano di formazione per gli autori. Ciò potrebbe comportare l&#39;utilizzo di risorse liberamente disponibili come i video delle funzioni di helpx o la formazione formale offerta tramite [ Adobe Digital Learning Services](https://www.adobe.com/training.html).
 
 ### Creazione di un piano di test {#creating-a-test-plan}
 
@@ -110,7 +110,7 @@ L&#39;implementazione di AEM da parte di ogni cliente è unica ed è stata perso
 
 L&#39;ambiente di produzione deve essere duplicato e il test deve essere eseguito dopo l&#39;aggiornamento per essere certi che tutte le applicazioni e il codice personalizzato vengano eseguiti come desiderato. Devi ripristinare tutte le tue personalizzazioni ed eseguire test di prestazioni, carico e sicurezza. Quando organizzate il piano di test, accertatevi di coprire tutte le personalizzazioni effettuate al sistema, oltre alle interfacce utente e ai flussi di lavoro out-of-box che vengono utilizzati nelle operazioni quotidiane. Questi possono includere servizi e servlet OSGI personalizzati, integrazioni per Adobe Marketing Cloud, integrazioni con terze parti tramite connettori AEM, integrazioni di terze parti personalizzate, componenti e modelli personalizzati, sovrapposizioni di interfaccia utente personalizzate in AEM e flussi di lavoro personalizzati. Per i clienti che eseguono la migrazione da una versione precedente alla AEM 6, eventuali query personalizzate devono essere analizzate in quanto potrebbero dover essere indicizzate. Per i clienti che dispongono già di una versione AEM 6.x, queste query devono essere ancora testate per garantire che i loro indici continuino a funzionare efficacemente dopo l&#39;aggiornamento.
 
-### Determinazione dei cambiamenti di architettura e di infrastruttura necessari {#determining-architectural-and-infrastructure-changes-needed}
+### Determinazione dei cambiamenti di architettura e infrastruttura necessari {#determining-architectural-and-infrastructure-changes-needed}
 
 Durante l&#39;aggiornamento, è possibile che sia necessario aggiornare anche altri componenti nello stack tecnico, come il sistema operativo o JVM. Inoltre, è possibile che a causa delle modifiche nella struttura del repository sia necessario hardware aggiuntivo. In genere questo problema si verifica solo per i clienti che eseguono la migrazione da istanze precedenti alla 6.x, ma è importante tenerne conto. Infine, potrebbero essere necessarie modifiche alle procedure operative, inclusi i processi di monitoraggio, manutenzione, backup e disaster recovery.
 
@@ -138,7 +138,7 @@ Esaminate i requisiti tecnici per AEM 6.4 e assicuratevi che l&#39;hardware e il
 
 #### Considerazioni sulla ristrutturazione dei contenuti {#content-restructuring-considerations}
 
-AEM 6.4 ha introdotto modifiche alla struttura del repository che aiuteranno a rendere gli aggiornamenti più semplici. Le modifiche comportano lo spostamento del contenuto dalla cartella /etc a cartelle quali /libs, /apps e /content, a seconda che  Adobe o un cliente sia proprietario del contenuto, limitando così le possibilità di sovrascrivere il contenuto durante le release. La ristrutturazione del repository è stata effettuata in modo tale da non richiedere modifiche di codice al momento dell&#39;aggiornamento 6.4, anche se si consiglia di rivedere i dettagli alla ristrutturazione del [repository in AEM 6.4](/help/sites-deploying/repository-restructuring.md) durante la pianificazione di un aggiornamento.
+AEM 6.4 ha introdotto modifiche alla struttura del repository che aiuteranno a rendere gli aggiornamenti più semplici. Le modifiche comportano lo spostamento del contenuto dalla cartella /etc a cartelle quali /libs, /apps e /content, a seconda che  Adobe o un cliente sia proprietario del contenuto, limitando così le possibilità di sovrascrivere il contenuto durante le release. La ristrutturazione del repository è stata effettuata in modo tale da non richiedere modifiche di codice al momento dell&#39;aggiornamento 6.4, sebbene sia consigliabile rivedere i dettagli in [Ristrutturazione del repository in AEM 6.4](/help/sites-deploying/repository-restructuring.md) durante la pianificazione di un aggiornamento.
 
 ### Valutazione della complessità dell&#39;aggiornamento {#assessing-upgrade-complexity}
 
@@ -146,19 +146,19 @@ A causa dell&#39;ampia varietà di personalizzazioni che i nostri clienti applic
 
 Per valutare la complessità dell&#39;aggiornamento è possibile adottare due approcci: una fase preliminare può semplicemente utilizzare il nuovo Rilevatore di pattern, disponibile per l&#39;esecuzione sulle istanze AEM 6.1, 6.2 e 6.3. Il rilevatore di pattern è il modo più semplice per valutare la complessità complessiva dell&#39;aggiornamento da attendersi utilizzando i pattern riportati. Il rapporto del rilevatore di pattern include pattern per identificare le API non disponibili utilizzate dalla base di codice personalizzata (ciò è stato fatto utilizzando i controlli di compatibilità pre-aggiornamento in 6.3).
 
-Dopo la valutazione iniziale, un passo successivo più completo potrebbe essere quello di eseguire un aggiornamento su un&#39;istanza di prova ed eseguire alcune prove di fumo di base.  Adobe fornisce anche alcuni . Inoltre, l&#39;elenco delle funzioni [](/help/release-notes/deprecated-removed-features.md) obsolete e rimosse deve essere rivisto non solo per la versione in cui si sta effettuando l&#39;aggiornamento, ma anche per qualsiasi versione tra le versioni di origine e di destinazione. Ad esempio, se si effettua l’aggiornamento da AEM 6.2 a 6.4, è importante rivedere le funzioni AEM 6.3 obsolete e rimosse oltre a quelle per AEM 6.4.
+Dopo la valutazione iniziale, un passo successivo più completo potrebbe essere quello di eseguire un aggiornamento su un&#39;istanza di prova ed eseguire alcune prove di fumo di base.  Adobe fornisce anche alcuni . Inoltre, l&#39;elenco di [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md) deve essere rivisto non solo per la versione in cui si sta effettuando l&#39;aggiornamento, ma anche per qualsiasi versione tra le versioni di origine e di destinazione. Ad esempio, se si effettua l’aggiornamento da AEM 6.2 a 6.4, è importante rivedere le funzioni AEM 6.3 obsolete e rimosse oltre a quelle per AEM 6.4.
 
 ![screen_shot_2018-04-04at120912](assets/screen_shot_2018-04-04at120912.png)
 
-Il rilevamento dei pattern introdotto in 6.4 dovrebbe fornire una stima abbastanza precisa di cosa aspettarsi durante un aggiornamento per la maggior parte dei casi. Tuttavia, per le personalizzazioni e le distribuzioni più complesse con modifiche incompatibili, puoi aggiornare un&#39;istanza di sviluppo a AEM 6.4 in base alle istruzioni in [Esecuzione di un aggiornamento](/help/sites-deploying/in-place-upgrade.md)locale. Una volta completato, eseguire alcuni test di fumo ad alto livello su questo ambiente. L&#39;obiettivo di questo esercizio non è di completare esaustivamente l&#39;inventario dei casi di test e produrre un inventario formale dei difetti, ma di darci una stima approssimativa della quantità di lavoro che sarà richiesto per aggiornare il codice per la compatibilità 6.4. In combinazione con il [Rilevamento](/help/sites-deploying/pattern-detector.md) pattern e le modifiche architettoniche determinate nella sezione precedente, è possibile fornire al team di gestione del progetto una stima approssimativa per la pianificazione dell&#39;aggiornamento.
+Il rilevamento dei pattern introdotto in 6.4 dovrebbe fornire una stima abbastanza precisa di cosa aspettarsi durante un aggiornamento per la maggior parte dei casi. Tuttavia, per le personalizzazioni e le distribuzioni più complesse in cui si verificano modifiche incompatibili, è possibile aggiornare un&#39;istanza di sviluppo a AEM 6.4 in base alle istruzioni riportate in [Esecuzione di un aggiornamento locale](/help/sites-deploying/in-place-upgrade.md). Una volta completato, eseguire alcuni test di fumo ad alto livello su questo ambiente. L&#39;obiettivo di questo esercizio non è di completare esaustivamente l&#39;inventario dei casi di test e produrre un inventario formale dei difetti, ma di darci una stima approssimativa della quantità di lavoro che sarà richiesto per aggiornare il codice per la compatibilità 6.4. In combinazione con le [Rilevamento pattern](/help/sites-deploying/pattern-detector.md) e le modifiche architettoniche determinate nella sezione precedente, è possibile fornire al team di gestione del progetto una stima approssimativa per la pianificazione dell&#39;aggiornamento.
 
-### Creazione del Runbook di aggiornamento e rollback {#building-the-upgrade-and-rollback-runbook}
+### Creazione del Runbook di aggiornamento e ripristino {#building-the-upgrade-and-rollback-runbook}
 
 Sebbene  Adobe abbia documentato il processo di aggiornamento di un&#39;istanza AEM, il layout di rete, l&#39;architettura di distribuzione e le personalizzazioni di ciascun cliente richiederanno una messa a punto e una personalizzazione di questo approccio. Per questo motivo, ti invitiamo a consultare tutta la documentazione fornita e a utilizzarla per informare un runbook specifico per il progetto che delinea le procedure di aggiornamento e ripristino specifiche che seguirai nel tuo ambiente. Se si esegue l&#39;aggiornamento da CRX2, assicurarsi di valutare quanto tempo impiegherà la migrazione dei contenuti per passare da CRX2 a Oak. Per i grandi repository, potrebbe essere sostanziale.
 
 ![organigramma](assets/runbook-diagram.png)
 
-Abbiamo fornito procedure di aggiornamento e ripristino nella procedura [di](/help/sites-deploying/upgrade-procedure.md) aggiornamento e istruzioni dettagliate per l&#39;applicazione dell&#39;aggiornamento in Esecuzione di un aggiornamento [](/help/sites-deploying/in-place-upgrade.md)locale. Queste istruzioni devono essere riviste e prese in considerazione con l&#39;architettura del sistema, le personalizzazioni e la tolleranza di inattività per determinare le procedure di switch-over e rollback appropriate che verranno eseguite durante l&#39;aggiornamento. Eventuali modifiche all&#39;architettura o alle dimensioni del server devono essere incluse nella progettazione del runbook personalizzato. E&#39; importante notare che questo dovrebbe essere trattato come un primo progetto. Quando il team completa i cicli di QA e di sviluppo e implementa l&#39;aggiornamento nell&#39;ambiente di pre-produzione, è probabile che sia necessaria la necessità di alcuni passaggi aggiuntivi. Idealmente, il presente documento dovrebbe contenere informazioni sufficienti affinché, se consegnato a un membro del personale operativo, possa completare l&#39;aggiornamento completamente dalle informazioni contenute all&#39;interno.
+Abbiamo fornito procedure di aggiornamento e ripristino in [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md), nonché istruzioni dettagliate per l&#39;applicazione dell&#39;aggiornamento in Esecuzione di un [Aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md). Queste istruzioni devono essere riviste e prese in considerazione con l&#39;architettura del sistema, le personalizzazioni e la tolleranza di inattività per determinare le procedure di switch-over e rollback appropriate che verranno eseguite durante l&#39;aggiornamento. Eventuali modifiche all&#39;architettura o alle dimensioni del server devono essere incluse nella progettazione del runbook personalizzato. E&#39; importante notare che questo dovrebbe essere trattato come un primo progetto. Quando il team completa i cicli di QA e di sviluppo e implementa l&#39;aggiornamento nell&#39;ambiente di pre-produzione, è probabile che sia necessaria la necessità di alcuni passaggi aggiuntivi. Idealmente, il presente documento dovrebbe contenere informazioni sufficienti affinché, se consegnato a un membro del personale operativo, possa completare l&#39;aggiornamento completamente dalle informazioni contenute all&#39;interno.
 
 ### Sviluppo di un piano di progetto {#developing-a-project-plan}
 
@@ -184,9 +184,9 @@ Un piano di progetto globale dovrebbe includere:
 
 * Vai live
 
-### Sviluppo e QA {#performing-development-and-qa}
+### Esecuzione di sviluppo e QA {#performing-development-and-qa}
 
-Abbiamo fornito procedure per l&#39; [aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) per essere compatibili con AEM 6.4. Poiché questo processo iterativo viene eseguito, è necessario apportare modifiche al runbook in base alle esigenze. Consultare anche [Compatibilità con le versioni precedenti nella AEM 6.4](/help/sites-deploying/backward-compatibility.md) per informazioni su come le personalizzazioni possono rimanere compatibili con le versioni precedenti nella maggior parte dei casi senza richiedere lo sviluppo subito dopo l&#39;aggiornamento.
+Abbiamo fornito procedure per [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) compatibili con AEM 6.4. Poiché questo processo iterativo viene eseguito, è necessario apportare modifiche al runbook in base alle esigenze. Consultare anche [Compatibilità con le versioni precedenti nella AEM 6.4](/help/sites-deploying/backward-compatibility.md) per informazioni su come le personalizzazioni possono rimanere compatibili con le versioni precedenti nella maggior parte dei casi senza richiedere lo sviluppo subito dopo l&#39;aggiornamento.
 
 ![screen_shot_2018-04-04at154829](assets/screen_shot_2018-04-04at154829.png)
 
@@ -202,7 +202,7 @@ Questo passaggio è fondamentale, in quanto è l&#39;unico momento in cui è pos
 
 ### Esecuzione dell&#39;aggiornamento {#performing-the-upgrade}
 
-Una volta ricevuta la firma finale da parte di tutte le parti interessate, è il momento di eseguire le procedure del runbook che sono state definite. Abbiamo fornito i passaggi per l&#39;aggiornamento e il rollback nella procedura [di](/help/sites-deploying/upgrade-procedure.md) aggiornamento e i passaggi di installazione in Esecuzione di un aggiornamento [](/help/sites-deploying/in-place-upgrade.md) locale come punto di riferimento.
+Una volta ricevuta la firma finale da parte di tutte le parti interessate, è il momento di eseguire le procedure del runbook che sono state definite. Abbiamo fornito i passaggi per l&#39;aggiornamento e il ripristino in [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md) e i passaggi di installazione in Esecuzione di un [Aggiornamento in loco](/help/sites-deploying/in-place-upgrade.md) come punto di riferimento.
 
 ![execute-upgrade](assets/perform-upgrade.png)
 
