@@ -26,13 +26,13 @@ Il Modello di David è stato scritto da David Nuescheler anni fa, ma le idee son
 
 * I dati vengono prima, la struttura dopo. Forse.
 * Guidare la gerarchia dei contenuti, non lasciarla accadere.
-* Le aree di lavoro sono per `clone()`, `merge()`e `update()`.
+* Le aree di lavoro sono `clone()`, `merge()` e `update()`.
 * Fai attenzione ai fratelli con lo stesso nome.
 * I riferimenti sono considerati dannosi.
 * I file sono file.
 * Gli ID sono malvagi.
 
-Il modello di David è disponibile sul wiki Jackrabbit all’indirizzo [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Il modello di David è disponibile sul wiki Jackrabbit all&#39;indirizzo [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tutto è contenuto {#everything-is-content}
 
@@ -42,7 +42,7 @@ Tutto deve essere memorizzato nell&#39;archivio piuttosto che basarsi su origini
 
 Quando create una nuova funzione, iniziate sempre progettando la struttura del contenuto JCR, quindi cercate di leggere e scrivere il contenuto utilizzando i servlet Sling predefiniti. Questo vi consentirà di garantire il buon funzionamento dell&#39;implementazione con meccanismi di controllo dell&#39;accesso out-of-box e di evitare la generazione di servlet CRUD non necessari.
 
-### Sii RESTful {#be-restful}
+### Essere RESTful {#be-restful}
 
 I servlet devono essere definiti in base a resourceTypes anziché ai percorsi. Questo consente di utilizzare i controlli di accesso JCR, aderire ai principi REST e utilizzare il risolutore di risorse e risorse fornito nella richiesta. Questo consente anche di modificare gli script che eseguono il rendering degli URL sul lato server senza dover modificare alcun URL dal lato client, nascondendo al contempo dal client i dettagli di implementazione lato server per una maggiore sicurezza.
 
@@ -50,7 +50,7 @@ I servlet devono essere definiti in base a resourceTypes anziché ai percorsi. Q
 
 I tipi di nodo funzionano a un livello basso nel livello dell&#39;infrastruttura e la maggior parte dei requisiti può essere soddisfatta utilizzando un tipo di nodo sling:resourceType assegnato a un tipo di nodo nt:unstructure, oak:Unstructure, sling:Folder o cq:Page. I tipi di nodo equivalgono allo schema nel repository e la modifica dei tipi di nodo può essere molto costoso lungo la strada.
 
-### Conformità alle convenzioni di denominazione nel JCR {#adhere-to-naming-conventions-in-the-jcr}
+### Conformità alle convenzioni di denominazione in JCR {#adhere-to-naming-conventions-in-the-jcr}
 
 Il rispetto delle convenzioni di denominazione darà coerenza alla base di codice, riducendo il tasso di incidenza dei difetti e aumentando la velocità degli sviluppatori che lavorano nel sistema. Il Adobe utilizza le seguenti convenzioni per sviluppare AEM:
 
