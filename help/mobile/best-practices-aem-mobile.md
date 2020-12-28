@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 La creazione di un&#39;app AEM Mobile On-demand Services  è diversa dalla creazione di un&#39;app che viene eseguita direttamente nella shell Cordova (o PhoneGap). Gli sviluppatori dovrebbero avere familiarità con:
 
@@ -51,8 +51,8 @@ Le seguenti linee guida aiuteranno AEM sviluppatori esperti per i siti che desid
 
 * Preferisci più file di script componenti su un singolo file monolitico
 
-   * Sono disponibili diversi punti di estensione vuoti, come *customheaderlibs.html* e *customfooterlibs.html*, che consentono allo sviluppatore di modificare il modello di pagina duplicando il minor numero possibile di codice di base
-   * I modelli possono quindi essere estesi e personalizzati tramite il meccanismo *sling:resourceSuperType* di Sling
+   * Sono disponibili diversi punti di estensione vuoti, ad esempio *customheaderlibs.html* e *customfooterlibs.html*, che consentono allo sviluppatore di modificare il modello di pagina mentre duplica il minor numero possibile di codice di base
+   * I modelli possono quindi essere estesi e personalizzati tramite il meccanismo Sling *sling:resourceSuperType*
 
 * Preferisci Sightly/HTL su JSP come linguaggio modulare
 
@@ -66,7 +66,7 @@ Le seguenti linee guida aiuteranno AEM sviluppatori esperti per i siti che desid
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli script esterni con blocco del rendering, [consultate](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Per ulteriori informazioni sugli script esterni [qui](https://developers.google.com/speed/docs/insights/BlockingJS) per il blocco del rendering, consultate &lt;a0/>.
 
 **Preferisci librerie JS e CSS lato client specifiche dell&#39;app a librerie specifiche per il Web**
 
@@ -75,20 +75,20 @@ Le seguenti linee guida aiuteranno AEM sviluppatori esperti per i siti che desid
 
 >[!NOTE]
 >
->Per ulteriori informazioni su jQuery Mobile, fai clic [qui](https://jquerymobile.com/browser-support/1.4/).
+>Per ulteriori informazioni su jQuery Mobile, fare clic [qui](https://jquerymobile.com/browser-support/1.4/).
 
 **Preferisci le microlibrerie su uno stack completo**
 
 * Il tempo necessario per inserire i contenuti nel vetro del dispositivo verrà rallentato da ogni libreria da cui dipendono gli articoli. Questo rallentamento è aggravato quando viene utilizzata una nuova visualizzazione Web per eseguire il rendering di ogni articolo, in modo che ogni libreria debba essere inizializzata nuovamente da zero
-* Se gli articoli non sono creati come app SPA (app a pagina singola), probabilmente non è necessario includere una libreria di stack completa come Angular
+* Se gli articoli non sono creati come SPA (app a pagina singola), probabilmente non è necessario includere una libreria di stack completa come Angular
 * Preferite librerie singole più piccole per aggiungere l&#39;interattività richiesta dalla pagina, ad esempio [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
 **Ridurre al minimo le dimensioni del payload dell&#39;articolo**
 
 * Utilizzate le risorse più piccole possibili in grado di coprire efficacemente il più grande viewport che si desidera supportare, a una risoluzione ragionevole
-* Utilizzate uno strumento come *ImmagineOptim* per rimuovere eventuali metadati in eccesso
+* Utilizzate uno strumento come *ImageOptim* sulle immagini per rimuovere eventuali metadati in eccesso
 
-## Come {#getting-ahead}
+## Introduzione {#getting-ahead}
 
 Per ulteriori informazioni sugli altri due ruoli e responsabilità, consulta le risorse seguenti:
 
