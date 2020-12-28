@@ -21,13 +21,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 AEM si integra con PhoneGap in modo da poter creare facilmente le app utilizzando AEM pagine. PhoneGap consente all&#39;utente di creare app di utilità che consentono all&#39;utente di lavorare con il contenuto. Content Sync (Sincronizzazione contenuto) consente di creare archivi con versione di pagine da distribuire alle app.
 
 >[!NOTE]
 >
->Prima di iniziare a utilizzare  AEM Mobile con  Adobe PhoneGap, accertatevi di configurare l&#39;ambiente e di iniziare a utilizzare [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
+>Prima di iniziare a utilizzare  AEM Mobile con  Adobe PhoneGap, accertatevi di configurare l&#39;ambiente e di iniziare a utilizzare il [ AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
 
 Le seguenti risorse sono utili per iniziare a usare  AEM Mobile con  Adobe PhoneGap:
 
@@ -35,17 +35,17 @@ Le seguenti risorse sono utili per iniziare a usare  AEM Mobile con  Adobe Phone
 * [Mobile con sincronizzazione dei contenuti](/help/mobile/phonegap-contentsync.md)
 * [Modelli di pagina](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile Content Services: Panoramica](/help/mobile/develop-content-as-a-service.md)
+* [ AEM Mobile Content Services: Panoramica](/help/mobile/develop-content-as-a-service.md)
 
-   * Per abilitare Content Services e i modelli di dati, consulta [Amministrazione di Content Services](/help/mobile/developing-content-services.md)
+   * Per abilitare Content Services e i modelli di dati, vedere [Amministrazione di Content Services](/help/mobile/developing-content-services.md)
    * Per ulteriori informazioni sulla creazione di modelli, vedere [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
-   * Per informazioni su Rendering e distribuzione, consulta [Rendering e distribuzione di Content Services](/help/mobile/rendering-and-delivery.md)
+   * Per informazioni sul rendering e la distribuzione, vedere [Rendering e distribuzione di Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Per eseguire le applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android, consulta Avvio rapido [mobile utilizzando AEM Verifica app](/help/mobile/phonegap-mobile-quickstart.md).
+>Per eseguire le applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android, vedere [Avvio rapido mobile utilizzando AEM Verifica app](/help/mobile/phonegap-mobile-quickstart.md).
 
-## Come {#getting-ahead}
+## Introduzione {#getting-ahead}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
