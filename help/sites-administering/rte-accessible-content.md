@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configurazione dell’editor Rich Text per la produzione di siti accessibili {#configuring-rte-for-producing-accessible-sites}
+# Configurazione dell&#39;editor Rich Text per la produzione di siti accessibili {#configuring-rte-for-producing-accessible-sites}
 
 AEM supporta entrambi:
 
@@ -33,17 +33,17 @@ AEM supporta entrambi:
 
 Gli autori dei contenuti possono utilizzare le funzioni dell’editor Rich Text per fornire informazioni di accessibilità durante l’aggiunta di contenuti a una pagina. Ciò può includere l&#39;aggiunta di informazioni strutturali tramite titoli ed elementi paragrafo.
 
-Potete [configurare e personalizzare queste funzioni configurando i plug-in](#configuring-the-plugin-features) RTE per il componente. Ad esempio, il `paraformat` plug-in consente di aggiungere altri elementi semantici a livello di blocco, inclusa l&#39;estensione del numero di livelli di intestazione supportati oltre il livello di base `H1`, `H2` e `H3` forniti per impostazione predefinita.
+È possibile [configurare e personalizzare queste funzioni configurando i plug-in RTE](#configuring-the-plugin-features) per il componente. Ad esempio, il plug-in `paraformat` consente di aggiungere elementi semantici a livello di blocco aggiuntivi, inclusa l&#39;estensione del numero di livelli di intestazione supportati oltre i livelli di base `H1`, `H2` e `H3` forniti per impostazione predefinita.
 
-L’editor Rich Text è disponibile in diversi componenti sia dall’interfaccia touch che dall’interfaccia classica. Tuttavia, il componente principale per l’utilizzo dell’editor Rich Text è il componente **Testo** .
+L’editor Rich Text è disponibile in diversi componenti sia dall’interfaccia touch che dall’interfaccia classica. Tuttavia, il componente principale per l’utilizzo dell’editor Rich Text è il componente **Text**.
 
-Il componente **Testo** in AEM è disponibile sia per le interfacce touch che per quelle classiche. Le immagini seguenti mostrano l’editor Rich Text con una serie di plug-in abilitati, tra cui `paraformat`:
+Il componente **Testo** in AEM è disponibile sia per le interfacce touch che per quelle classiche. Le immagini seguenti mostrano l&#39;editor Rich Text con una serie di plug-in abilitati, tra cui `paraformat`:
 
-* Il componente **Testo** nell’interfaccia touch:
+* Il componente **Testo** nell&#39;interfaccia touch:
 
    ![Componente testo (RTE) in modalità a schermo intero nell’interfaccia touch.](assets/chlimage_1-206.png)
 
-* Il componente **Testo** nell’interfaccia classica:
+* Il componente **Testo** nell&#39;interfaccia classica:
 
    ![Finestra di dialogo di modifica (RTE) del componente di testo nell’interfaccia classica.](assets/chlimage_1-207.png)
 
@@ -60,60 +60,60 @@ Il componente **Testo** in AEM è disponibile sia per le interfacce touch che pe
 
 ## Configurazione delle funzioni plug-in {#configuring-the-plugin-features}
 
-Le istruzioni complete sulla configurazione dell’editor Rich Text sono disponibili nella pagina [Configurazione dell’editor](/help/sites-administering/rich-text-editor.md) Rich Text. Vengono trattati tutti i problemi, compresi i passi chiave:
+Le istruzioni complete sulla configurazione dell&#39;editor Rich Text sono disponibili nella pagina [Configuring the Rich Text Editor](/help/sites-administering/rich-text-editor.md). Vengono trattati tutti i problemi, compresi i passi chiave:
 
 * [Plugin e relative funzioni](/help/sites-administering/rich-text-editor.md#aboutplugins)
 * [Posizioni di configurazione](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Attivare un plug-in e configurare la proprietà delle funzioni](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurazione di altre funzionalità dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Configurando un plug-in all&#39;interno del `rtePlugins` ramo secondario appropriato nel CRXDE Lite (vedere l&#39;immagine seguente), potete attivare tutte le funzioni o specifiche per quel plug-in.
+Configurando un plug-in all&#39;interno del sottoramo `rtePlugins` appropriato nel CRXDE Lite (vedere l&#39;immagine seguente), potete attivare tutte le funzioni o specifiche per quel plug-in.
 
 ![CRXDE Lite che mostra un esempio rtePlugin.](assets/chlimage_1-208.png)
 
-### Esempio: specifica dei formati di paragrafo disponibili nel campo di selezione dell’editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Esempio - Specifica dei formati di paragrafo disponibili nel campo di selezione dell&#39;editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 Nuovi formati di blocco semantico possono essere resi disponibili per la selezione tramite:
 
-1. A seconda dell’editor Rich Text, determina e passa al percorso [di](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)configurazione.
-1. [Attiva il campo](/help/sites-administering/rich-text-editor.md)di selezione Paragrafi; attivando [il plug-in](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Specificare i formati che si desidera rendere disponibili nel campo](/help/sites-administering/rich-text-editor.md)di selezione Paragrafi.
+1. A seconda dell&#39;editor Rich Text, determinare e passare alla [posizione di configurazione](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [Attiva il campo](/help/sites-administering/rich-text-editor.md) di selezione Paragrafi; attivando  [il plug-in](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Specificare i formati che si desidera rendere disponibili nel campo](/help/sites-administering/rich-text-editor.md) di selezione Paragrafi.
 1. I formati di paragrafo sono quindi disponibili per l’autore del contenuto dai campi di selezione nell’editor Rich Text. È possibile accedervi:
 
-   * Utilizzo dell’icona paragrafo ([cuscino](https://en.wikipedia.org/wiki/Pilcrow)) nell’interfaccia touch:
+   * Utilizzo dell&#39;icona paragrafo ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) nell&#39;interfaccia touch:
 
    ![Icona Paragrafo (cuscino).](do-not-localize/chlimage_1-7.png)
 
-   * Utilizzo del campo **Formato** (selettore a discesa) nell’interfaccia classica.
+   * Utilizzo del campo **Formato** (selettore a discesa) nell&#39;interfaccia classica.
 
 
 Con gli elementi strutturali disponibili nell’editor Rich Text tramite le opzioni di formato del paragrafo, AEM fornisce una buona base per lo sviluppo di contenuto accessibile. Gli autori dei contenuti non possono utilizzare l’editor Rich Text per formattare la dimensione del font o i colori o altri attributi correlati, impedendo la creazione di formattazione in linea. Devono invece selezionare gli elementi strutturali appropriati, ad esempio le intestazioni, e utilizzare gli stili globali scelti dall&#39;opzione Stili. In questo modo, gli utenti che sfogliano con i propri fogli di stile e con contenuti strutturati correttamente possono usufruire di una marcatura pulita e di opzioni maggiori.
 
 ## Utilizzo della funzione di modifica sorgente {#use-of-the-source-edit-feature}
 
-In alcuni casi, gli autori dei contenuti dovranno esaminare e regolare il codice sorgente HTML creato mediante l’editor Rich Text. Ad esempio, un contenuto creato all’interno dell’editor Rich Text potrebbe richiedere una marcatura aggiuntiva per garantire la conformità a WCAG 2.0. Questa operazione può essere eseguita con l’opzione di modifica [](/help/sites-administering/rich-text-editor.md#aboutplugins) sorgente dell’editor Rich Text. Potete specificare la [`sourceedit` funzione sul `misctools` plug-in](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In alcuni casi, gli autori dei contenuti dovranno esaminare e regolare il codice sorgente HTML creato mediante l’editor Rich Text. Ad esempio, un contenuto creato all’interno dell’editor Rich Text potrebbe richiedere una marcatura aggiuntiva per garantire la conformità a WCAG 2.0. Questo può essere fatto con l&#39;opzione [modifica sorgente](/help/sites-administering/rich-text-editor.md#aboutplugins) dell&#39;editor Rich Text. È possibile specificare la funzione [ `sourceedit` sul plug-in `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Utilizzate la `sourceedit` funzione con attenzione. Gli errori di digitazione e/o le funzioni non supportate possono causare altri problemi.
+>Utilizzate attentamente la funzione `sourceedit`. Gli errori di digitazione e/o le funzioni non supportate possono causare altri problemi.
 
-## Aggiunta di supporto per elementi e attributi HTML aggiuntivi {#adding-support-for-additional-html-elements-and-attributes}
+## Aggiunta del supporto per elementi e attributi HTML aggiuntivi {#adding-support-for-additional-html-elements-and-attributes}
 
-Per ampliare ulteriormente le funzioni di accessibilità di AEM, è possibile estendere i componenti esistenti in base all’editor Rich Text (come i componenti **Testo** e **Tabella** ) con elementi e attributi aggiuntivi.
+Per ampliare ulteriormente le funzioni di accessibilità di AEM, è possibile estendere i componenti esistenti in base all&#39;editor Rich Text (come i componenti **Text** e **Table**) con elementi e attributi aggiuntivi.
 
-La procedura seguente illustra come estendere il componente **Tabella** con un elemento **Didascalia** che fornisce informazioni su una tabella di dati per aiutare gli utenti della tecnologia:
+La procedura seguente illustra come estendere il componente **Table** con un elemento **Caption** che fornisce informazioni su una tabella di dati per aiutare gli utenti della tecnologia:
 
 ### Esempio: aggiunta della didascalia alla finestra di dialogo Proprietà tabella {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Nella funzione di costruzione della didascalia, `TablePropertiesDialog`aggiungere un campo di testo aggiuntivo da utilizzare per la modifica della didascalia. Per gestire automaticamente il contenuto, `itemId` è necessario impostare `caption` (ovvero il nome dell’attributo DOM).
+Nella funzione di costruzione della `TablePropertiesDialog`, aggiungere un campo di testo aggiuntivo utilizzato per modificare la didascalia. Tenere presente che `itemId` deve essere impostato su `caption` (ovvero il nome dell&#39;attributo DOM) per gestire automaticamente il contenuto.
 
-Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attributo dall&#39;elemento DOM. Il valore viene passato dalla finestra di dialogo nell&#39; `config` oggetto. Tenete presente che gli attributi DOM devono essere impostati/rimossi utilizzando i `CQ.form.rte.Common` metodi corrispondenti ( `com` è un collegamento per `CQ.form.rte.Common`) per evitare i comuni errori con le implementazioni del browser.
+In **Table** è necessario impostare o rimuovere esplicitamente l&#39;attributo dall&#39;elemento DOM. Il valore viene passato dalla finestra di dialogo nell&#39;oggetto `config`. Gli attributi DOM devono essere impostati/rimossi utilizzando i metodi `CQ.form.rte.Common` corrispondenti ( `com` è una scelta rapida per `CQ.form.rte.Common`) per evitare le comuni insidie con le implementazioni del browser.
 
 >[!NOTE]
 >
 >Questa procedura è adatta solo all’interfaccia classica.
 
-### Istruzioni dettagliate {#step-by-step-instructions}
+### Istruzioni passo-passo {#step-by-step-instructions}
 
 1. Inizia CRXDE Lite. Ad esempio: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copia:
@@ -140,7 +140,7 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-1. Nel `constructor` metodo, prima della lettura della riga:
+1. Nel metodo `constructor`, prima della lettura della riga:
 
    ```
    var dialogRef = this;
@@ -162,7 +162,7 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Aggiungete il codice seguente alla fine del `transferConfigToTable` metodo:
+1. Aggiungete il seguente codice alla fine del metodo `transferConfigToTable`:
 
    ```
    /**
@@ -197,14 +197,14 @@ Nella **tabella** è necessario impostare o rimuovere esplicitamente l&#39;attri
    }
    ```
 
-1. Salva le modifiche con **Salva tutto**
+1. Salvare le modifiche utilizzando **Salva tutto**
 
 >[!NOTE]
 >
->Un campo di testo normale non è l&#39;unico tipo di input consentito per il valore dell&#39;elemento caption. È possibile utilizzare qualsiasi widget ExtJS che fornisce il valore della didascalia tramite il suo `getValue()` metodo.
+>Un campo di testo normale non è l&#39;unico tipo di input consentito per il valore dell&#39;elemento caption. È possibile utilizzare qualsiasi widget ExtJS che fornisce il valore della didascalia tramite il metodo `getValue()`.
 >
 >Per aggiungere funzionalità di modifica per altri elementi e attributi, accertatevi che:
 >
->* La `itemId` proprietà per ciascun campo corrispondente viene impostata sul nome dell&#39;attributo DOM appropriato (`TablePropertiesDialog`).
+>* La proprietà `itemId` di ciascun campo corrispondente viene impostata sul nome dell&#39;attributo DOM appropriato (`TablePropertiesDialog`).
 >* L&#39;attributo viene impostato e/o rimosso in modo esplicito sull&#39;elemento DOM (`Table`).
 
