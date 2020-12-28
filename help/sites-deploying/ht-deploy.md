@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Articoli guida alla configurazione{#configuration-how-to-articles}
+# Istruzioni per la configurazione{#configuration-how-to-articles}
 
 Gli argomenti seguenti descrivono come eseguire specifiche attività di AEM distribuzione:
 
