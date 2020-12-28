@@ -26,11 +26,11 @@ ht-degree: 85%
 1. Imposta l’illuminazione basata sull’immagine (IBL).
 
    1. Nelle impostazioni del rendering, seleziona **[!UICONTROL Render Using: mental ray]** e apri la scheda Scena.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. Aprite il **[!UICONTROL Environment]** Accordion, quindi fate clic su **[!UICONTROL Crea illuminazione basata su immagine]**.
    1. Fai clic sull&#39;icona della casella con una freccia destra sul lato sinistro del riquadro per selezionare il nodo IBL `mentalRayIblShape1`[!UICONTROL , quindi esci dalle impostazioni di rendering].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. In **[!UICONTROL Editor attributi]**, selezionare il nodo di trasformazione `mentalRayIbl1`, quindi rinominare il nodo di trasformazione in `AdobeIbl`.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. Impostare la [!UICONTROL Scala] del nodo per rendere la sfera dell&#39;ambiente significativamente più grande dell&#39;oggetto 3D più grande da visualizzare con questo passaggio (ad esempio, `10000,10000,10000`).
    1. Seleziona il nodo `AdobeIblShape` e configuralo come segue:
 
       * **[!UICONTROL Mappatura]** : sferica
@@ -50,17 +50,17 @@ ht-degree: 85%
 
 1. Imposta il rendering con Mental Ray.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   Configurate le [!UICONTROL Impostazioni di rendering] con i seguenti suggerimenti.
 
-   * **[!UICONTROL Scheda Comune]**
+   * **** Commontab
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Deselezionare la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le videocamere con rendering.
 
    * **[!UICONTROL Scheda Qualità]**
 
       * **[!UICONTROL Qualità generale]** -`0.5` o minore
-      * **[!UICONTROL Modalità]** Indirect Diffuse (GI) - `Final Gather`
-      * **[!UICONTROL Dimensioni]** filtro - `2.0`, `2.0`
+      * **[!UICONTROL Modalità]**  Diffusione indiretta (GI) -  `Final Gather`
+      * **[!UICONTROL Dimensioni]**  filtro-  `2.0`,  `2.0`
    * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfeziona le luci, le impostazioni di rendering o entrambe per ottenere il risultato desiderato.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
