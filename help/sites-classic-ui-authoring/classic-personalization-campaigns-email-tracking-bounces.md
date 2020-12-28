@@ -24,7 +24,7 @@ ht-degree: 83%
 >
 > Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate AEM servizio SMTP.
 >
->La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione](/help/sites-administering/campaign.md)AEM.
+>La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
 
 Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione, AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi. La frequenza di rimbalzo è impostata su 3 come impostazione predefinita, ma è possibile modificarla.
 
@@ -68,7 +68,7 @@ Per configurare Feed Importer per il tracciamento dei messaggi e-mail rimbalzati
 
    `imap.flag.SEEN`:Impostate false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   Per l&#39;elenco completo dei flag, vedere [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
 
    **Esempi IMAP:**
 
@@ -79,13 +79,13 @@ Per configurare Feed Importer per il tracciamento dei messaggi e-mail rimbalzati
 
 1. Salvate la configurazione.
 
-## Configurazione del componente del servizio newsletter {#configuring-the-newsletter-service-component}
+## Configurazione del componente del servizio newsletter  {#configuring-the-newsletter-service-component}
 
 Dopo aver configurato Importazione feed, è necessario configurare l’indirizzo mittente e il contatore per non arrivate a destinazione.
 
 Per configurare il servizio newsletter:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
+1. Nella console OSGi all&#39;indirizzo `<host>:<port>/system/console/configMgr` e passare a **MCM Newsletter**.
 
 1. Configurate il servizio e salvate le modifiche.
 
