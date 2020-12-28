@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Risoluzione dei problemi di replica{#troubleshooting-replication}
+# Risoluzione dei problemi relativi alla replica{#troubleshooting-replication}
 
 Questa pagina fornisce informazioni su come risolvere i problemi di replica.
 
@@ -42,8 +42,8 @@ Per verificare il problema, visitate /etc/replication/agents.author.html e fate 
 
 **Se una coda agente o alcune code agente si bloccano:**
 
-1. La coda mostra lo stato **bloccato** ? In caso affermativo, l’istanza di pubblicazione non è in esecuzione o non risponde completamente? Controllate l’istanza di pubblicazione per verificare i problemi riscontrati (ad esempio, controllate i registri e verificate se si è verificato un errore OutOfMemory o un altro problema). Poi se è solo in generale lento poi prendere i cespugli di fili e analizzarli.
-1. Lo stato della coda mostra che la **coda è attiva - # in attesa**? Il processo di replica potrebbe essere bloccato in una lettura socket in attesa della risposta dell&#39;istanza pubblica o del dispatcher. Ciò potrebbe significare che l’istanza di pubblicazione o il dispatcher sono sotto carico elevato o sono bloccati in un blocco. Eseguite la creazione di thread dumps dall’autore e la pubblicazione in questo caso.
+1. La coda mostra lo stato **bloccato**? In caso affermativo, l’istanza di pubblicazione non è in esecuzione o non risponde completamente? Controllate l’istanza di pubblicazione per verificare i problemi riscontrati (ad esempio, controllate i registri e verificate se si è verificato un errore OutOfMemory o un altro problema). Poi se è solo in generale lento poi prendere i cespugli di fili e analizzarli.
+1. Lo stato della coda mostra **La coda è attiva - # pending**? Il processo di replica potrebbe essere bloccato in una lettura socket in attesa della risposta dell&#39;istanza pubblica o del dispatcher. Ciò potrebbe significare che l’istanza di pubblicazione o il dispatcher sono sotto carico elevato o sono bloccati in un blocco. Eseguite la creazione di thread dumps dall’autore e la pubblicazione in questo caso.
 
    * Aprire i thread dumps dall&#39;autore in un analizzatore di dump del thread, verificare che il processo di sling dell&#39;agente di replica sia bloccato in un socketRead.
    * Aprite i thread dumps dalla pubblicazione in un analizzatore di dump del thread, analizzate cosa potrebbe causare la mancata risposta dell&#39;istanza di pubblicazione. Dovrebbe essere visualizzato un thread con il nome dell&#39;POST /bin/receive, ovvero il thread che riceve la replica dall&#39;autore.
@@ -74,7 +74,7 @@ Per verificare il problema, visitate /etc/replication/agents.author.html e fate 
 
 A volte può essere molto utile impostare tutte le registrazioni di replica da aggiungere in un file di registro separato a livello DEBUG. Per effettuare ciò:
 
-1. Accedete a `https://host:port/system/console/configMgr` e accedete come amministratore.
+1. Vai a `https://host:port/system/console/configMgr` e accedi come amministratore.
 1. Trovate la fabbrica Apache Sling Logging e create un&#39;istanza facendo clic sul pulsante **+** a destra della configurazione di fabbrica. Questo creerà un nuovo logger.
 1. Impostate la configurazione come segue:
 
@@ -84,14 +84,14 @@ A volte può essere molto utile impostare tutte le registrazioni di replica da a
 
 1. Se sospettate che il problema sia correlato alla vendita di eventi/processi in qualsiasi modo, potete anche aggiungere questo pacchetto Java in categorie:org.apache.sling.event
 
-### Sospensione della coda dell&#39;agente di replica  {#pausing-replication-agent-queue}
+### Sospensione della coda dell&#39;agente di replica {#pausing-replication-agent-queue}
 
 In alcuni casi potrebbe essere opportuno mettere in pausa la coda di replica per ridurre il carico sul sistema di authoring, senza disattivarla. Attualmente questo è possibile solo tramite un hack di configurazione temporanea di una porta non valida. A partire da 5.4 è possibile visualizzare il pulsante Pausa nella coda dell&#39;agente di replica che presenta alcuni limiti
 
 1. Lo stato non è persistente, ovvero se si riavvia un server o si ricicla un bundle di replica, si torna allo stato di esecuzione.
 1. La pausa è inattiva per un periodo più breve (OOB 1 ora dopo l’assenza di attività con replica da parte di altri thread) e non per un periodo più lungo. Perché c&#39;è una caratteristica nella fionda che evita i filetti inattivi. In sostanza, verificate se un thread della coda di lavoro non è stato utilizzato per un periodo di tempo più lungo, se necessario, avvia cicli di pulizia. A causa del ciclo di pulizia, il thread si arresta e quindi l&#39;impostazione messa in pausa si perde. Poiché i processi sono persistenti, avvia un nuovo thread per elaborare la coda che non contiene dettagli sulla configurazione in pausa. A causa di questa coda si trasforma in stato di esecuzione.
 
-### Le autorizzazioni della pagina non vengono replicate in attivazione utente {#page-permissions-are-not-replicated-on-user-activation}
+### Le autorizzazioni pagina non vengono replicate in attivazione utente {#page-permissions-are-not-replicated-on-user-activation}
 
 Le autorizzazioni di pagina non vengono replicate perché sono memorizzate nei nodi a cui è concesso l&#39;accesso, non con l&#39;utente.
 
@@ -99,17 +99,17 @@ In generale, le autorizzazioni della pagina non devono essere replicate dall’a
 
 ### Coda di replica bloccata durante la replica delle informazioni dello spazio nomi da Author a Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-In alcuni casi, la coda di replica viene bloccata quando si tenta di replicare le informazioni dello spazio nomi dall’istanza di creazione all’istanza di pubblicazione. Ciò si verifica perché l&#39;utente di replica non dispone dei `jcr:namespaceManagement` privilegi. Per evitare questo problema, accertatevi che:
+In alcuni casi, la coda di replica viene bloccata quando si tenta di replicare le informazioni dello spazio nomi dall’istanza di creazione all’istanza di pubblicazione. Ciò si verifica perché l&#39;utente di replica non dispone di privilegi `jcr:namespaceManagement`. Per evitare questo problema, accertatevi che:
 
-* L&#39;utente di replica (configurato nella scheda [Trasporto](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) >Utente) esiste anche nell&#39;istanza Pubblica.
+* L&#39;utente di replica (configurato nella scheda [Trasporto](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)>Utente) esiste anche nell&#39;istanza Pubblica.
 * L&#39;utente dispone dei privilegi di lettura e scrittura nel percorso in cui è installato il contenuto.
-* L&#39;utente dispone `jcr:namespaceManagement` dei privilegi a livello di repository. Potete concedere il privilegio come segue:
+* L&#39;utente ha il privilegio `jcr:namespaceManagement` a livello di repository. Potete concedere il privilegio come segue:
 
-1. Accedi a CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) come amministratore.
-1. Fare clic sulla scheda Controllo **** accesso.
+1. Accedete a CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) come amministratore.
+1. Fare clic sulla scheda **Controllo accesso**.
 1. Selezionare **Repository**.
-1. Fate clic su **Aggiungi voce** (icona più).
+1. Fare clic su **Aggiungi voce** (icona più).
 1. Immettete il nome dell’utente.
-1. Select `jcr:namespaceManagement` from the privileges list.
+1. Selezionare `jcr:namespaceManagement` dall&#39;elenco dei privilegi.
 1. Fai clic su OK.
 
