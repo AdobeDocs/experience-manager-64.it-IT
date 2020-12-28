@@ -3,27 +3,27 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.4
-user-guide-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4.
+user-guide-description: Panoramica di tutte le risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.4.
 contentOwner: Chris Bohnert
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 
 
-# AEM 6.4 User Guide {#user-guide}
+# Guida utente di AEM 6.4 {#user-guide}
 
-+ [Guida utente di AEM 6.4](home.md)
++ [Hub guida utente di AEM 6.4](home.md)
 + Guide utente e risorse{#user-guides}
-   + [Guida utente delle funzionalità AEM](capabilities.md)
-   + [Guide utente per l’implementazione di AEM](implementation.md)
+   + [AEM funzionalità, guide utente](capabilities.md)
+   + [AEM guide utente per l’implementazione](implementation.md)
    + [Risorse AEM](resources.md)
 + Risoluzione dei problemi e assistenza{#troubleshooting}
    + [Risorse per i nuovi utenti AEM](new.md)
-   + [Scopri le funzionalità di AEM](learn.md)
+   + [Scopri AEM funzionalità](learn.md)
    + [Best practice, procedure e formazioni](best-practice.md)
-   + [La community AEM](community.md)
+   + [La Comunità AEM](community.md)
    + [Risoluzione dei problemi](troubleshooting.md)
