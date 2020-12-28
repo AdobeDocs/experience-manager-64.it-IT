@@ -22,13 +22,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire il contenuto all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sul contenuto all&#39;interno dell&#39;applicazione.
 
-## Panoramica sulle raccolte {#collections-overview}
+## Panoramica delle raccolte {#collections-overview}
 
-Le raccolte rappresentano un *bucket* ben definito con contenuto, ad esempio articoli o banner, adatto al tema della copertina.
+Le raccolte rappresentano un *bucket* ben definito, riempito con contenuti quali articoli o banner che si adattano al tema della copertina.
 
 >[!NOTE]
 >
@@ -47,12 +47,12 @@ Le raccolte rappresentano un *bucket* ben definito con contenuto, ad esempio art
 
 Il flusso di lavoro generale per creare una raccolta è il seguente:
 
-1. Selezionate **Mobile** dalla barra laterale.
+1. Selezionare **Mobile** dalla barra laterale.
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** .
+1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte**.
 1. Per continuare a creare il nuovo articolo, eseguite i vari passaggi della procedura guidata.
-1. Una volta pronti, fate clic su **Crea**.
-1. Il nuovo articolo viene visualizzato nella sezione **Gestisci raccolte** .
+1. Quando è pronto, fare clic su **Crea**.
+1. Il nuovo articolo viene visualizzato nella sezione **Gestisci raccolte**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -67,9 +67,9 @@ Il contenuto Mobile On-Demand esistente può essere scaricato (importato) da Mob
 Flusso di lavoro per l&#39;importazione di una nuova raccolta
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** , quindi selezionate Importa raccolte.
-1. Fate clic su **Importa raccolte** nella finestra di dialogo, quindi su Chiudi.
-1. Le raccolte Mobile On-Demand ora vengono visualizzate nella sezione **Gestisci raccolte** .
+1. Fate clic sulla freccia rivolta verso il basso nell&#39;angolo superiore destro della sezione **Gestisci raccolte** e selezionate Importa raccolte.
+1. Fare clic su **Importa raccolte** nella finestra di dialogo, quindi su Chiudi.
+1. Le raccolte Mobile On-Demand ora vengono visualizzate nella sezione **Gestisci raccolte**.
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Utilizzate l&#39;editor incorporato AEM trascinamento per aggiungere o modificar
 Flusso di lavoro per la modifica di una raccolta:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate un articolo originato AEM dalla sezione **Gestisci raccolte** .
+1. Selezionate un articolo di origine AEM dalla sezione **Gestisci raccolte**.
 1. Fate clic sulla raccolta evidenziata dalla vista a elenco per aprirla nell&#39;editor del contenuto.
 1. Usate l&#39;editor dei contenuti per trascinare il contenuto della raccolta (manoscritti, immagini, testo, ecc.).
 
@@ -93,11 +93,11 @@ Le raccolte presentano numerose proprietà quali titoli, descrizioni e immagini.
 Flusso di lavoro generale per visualizzare/modificare una raccolta:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Scegliete una raccolta dalla sezione **Gestisci raccolte** .
+1. Scegliete una raccolta dalla sezione **Gestisci raccolte**.
 
-1. Selezionate **Proprietà** dalla barra delle azioni.
+1. Selezionare **Properties** dalla barra delle azioni.
 1. Visualizzate tutti i metadati disponibili per l&#39;articolo.
-1. Se necessario, modificate i metadati e fate clic su **Salva** al termine.
+1. Modificate i metadati, se necessario, e fate clic su **Salva** al termine.
 1. Facoltativamente, caricate immediatamente le modifiche su Mobile On-Demand.
 
 ## Caricamento di una raccolta {#uploading-a-collection}
@@ -107,7 +107,7 @@ L&#39;azione di caricamento copia il contenuto selezionato e lo aggiunge a un pr
 Flusso di lavoro generale per caricare una raccolta:
 
 1. Da **Mobile**, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Nella sezione **Gestisci raccolte** , selezionate un articolo da caricare su Mobile On-Demand.
+1. Nella sezione **Gestisci raccolte**, selezionate un articolo da caricare su Mobile On-Demand.
 1. Se necessario, aggiungete altre raccolte dalla vista a elenco.
 1. Selezionate **Carica** dalla barra delle azioni, quindi fate clic su Carica nella finestra di dialogo.
 1. Le raccolte ora vengono caricate su Mobile On-Demand.
@@ -119,9 +119,9 @@ Questa operazione elimina la raccolta selezionata da Mobile On-Demand ed eventua
 Flusso di lavoro generale per eliminare una raccolta:
 
 1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate l&#39;articolo da eliminare nella sezione **Gestisci raccolte** .
+1. Selezionate l&#39;articolo da eliminare nella sezione **Gestisci raccolte**.
 1. Assicurarsi che sia selezionato nell&#39;elenco (selezionare altri da eliminare in base alle esigenze).
-1. Click **Delete** from the action bar.
+1. Fare clic su **Elimina** dalla barra delle azioni.
 1. Verificate se desiderate eliminare sia da AEM che da Mobile On-Demand.
 1. Fai clic su **Elimina**.
 1. La raccolta viene ora rimossa dall&#39;elenco.
