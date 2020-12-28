@@ -50,7 +50,7 @@ In modalità Progettazione, la barra laterale viene ridotta a icona ed è possib
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Fare clic su **Modifica** nel sistema Paragrafo (**Progettazione di par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +74,7 @@ In modalità Progettazione è inoltre possibile configurare gli attributi di sin
 
 1. È possibile configurare l’aspetto dei componenti.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Ad esempio, se fai clic su **Modifica** nel componente Immagine (**Progettazione di immagine**), puoi configurare i parametri specifici del componente:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
