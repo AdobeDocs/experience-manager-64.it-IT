@@ -24,7 +24,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>Nelle tabelle seguenti, per le combinazioni di tasti nella colonna **Collegamento**, i tasti Ctrl e Comando funzionano su macOS.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponi
   </tr> 
   <tr> 
    <td>Modalità Modifica</td> 
-   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Impostate il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizzate:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Visualizza le statistiche sui tempi di caricamento della pagina.</td> 
   </tr> 
  </tbody> 
