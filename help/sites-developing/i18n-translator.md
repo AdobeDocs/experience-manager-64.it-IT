@@ -26,7 +26,7 @@ AEM offre una console per la gestione delle diverse traduzioni di testi utilizza
 
 Utilizzate lo strumento di traduzione per gestire le stringhe inglesi e le relative traduzioni. I dizionari vengono creati nella directory archivio, ad esempio /apps/myproject/i18n.
 
-Lo strumento Traduttore e i dizionari gestiti consentono di presentare l’interfaccia utente dei componenti in lingue diverse. Se desiderate tradurre il contenuto generato da una pagina o un utente, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md) multilingue e [Traduzione del contenuto](/help/communities/translate-ugc.md)generato dall’utente.
+Lo strumento Traduttore e i dizionari gestiti consentono di presentare l’interfaccia utente dei componenti in lingue diverse. Per tradurre contenuti generati dalla pagina o dall&#39;utente, vedere [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) e [Traduzione di contenuti generati dall&#39;utente](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Il traduttore elenca i testi utilizzati in AEM con le varie traduzioni linguisti
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui progetti di traduzione, consultate [Gestione dei progetti](/help/sites-administering/tc-manage.md)di traduzione.
+   >Per ulteriori informazioni sui progetti di traduzione, consultare [Managing Translation Projects](/help/sites-administering/tc-manage.md).
 
 ## Creazione di un dizionario {#creating-a-dictionary}
 
@@ -72,7 +72,7 @@ Create un dizionario per la gestione delle stringhe di interfaccia localizzate. 
 
    Esempio, `/apps/myProject/i18n`
 
-1. Aggiungete la struttura della lingua richiesta sotto questa radice. Ad esempio:
+1. Aggiungete la struttura della lingua richiesta sotto questa radice. Esempio:
 
    ```shell
    /apps/myProject/i18n [sling:Folder]
@@ -84,7 +84,7 @@ Create un dizionario per la gestione delle stringhe di interfaccia localizzate. 
 
    >[!NOTE]
    >
-   >Questa è la struttura del modulo [](https://sling.apache.org/site/internationalization-support.html)Sling i18n.
+   >Questa è la struttura del modulo [Sling i18n](https://sling.apache.org/site/internationalization-support.html).
 
 1. Ricaricare il traduttore e il percorso del dizionario (ad es. `/apps/myProject/i18n`) sarà disponibile nel selettore a discesa nella barra degli strumenti. Selezionare questa opzione per iniziare ad aggiungere le stringhe e le relative traduzioni.
 
@@ -122,7 +122,7 @@ Includete le variabili nella stringa localizzata per creare un significato conte
 
 Per includere le variabili nella stringa localizzata, posizionate gli indici tra parentesi nella posizione delle variabili nel primo argomento del metodo get. Utilizzate il suggerimento di localizzazione per descrivere i valori. Il traduttore deve capire il significato delle variabili perché lingue diverse utilizzano strutture di frasi diverse.
 
-Si noti che [il codice che richiede la stringa](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) convertita fornisce i valori per le variabili indicizzate in base al contesto.
+Tenere presente che [il codice che richiede la stringa convertita](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) fornisce i valori per le variabili indicizzate in base al contesto.
 
 Ad esempio, la seguente stringa viene visualizzata quando un utente accede a un sito Web ed è inclusa nel dizionario:
 
@@ -177,8 +177,8 @@ Per rimuovere una stringa da un dizionario, attenersi alla procedura descritta d
 
 La barra di ricerca nella parte inferiore dello strumento di traduzione fornisce le opzioni di selezione delle stringhe:
 
-* **Filtra per testo:** Un pattern che deve corrispondere alla stringa, al commento o alle traduzioni in inglese. Nella tabella vengono visualizzati solo gli elementi che corrispondono a tutto o a parte del pattern.
-* **Modifiche: Qualsiasi, Modificato, Nuovo, Eliminato:** Mostra gli elementi modificati e non salvati.
+* **Filtrare per testo:** Un pattern che corrisponde alla stringa, al commento o alle traduzioni in inglese. Nella tabella vengono visualizzati solo gli elementi che corrispondono a tutto o a parte del pattern.
+* **Modifiche: Qualsiasi, Modificato, Nuovo, Eliminato:** Mostra elementi modificati e non salvati.
 
    * Qualsiasi: Mostra gli elementi che sono stati modificati, aggiunti o rimossi.
    * Modificato: Mostra gli elementi modificati.
@@ -195,11 +195,11 @@ La barra di ricerca nella parte inferiore dello strumento di traduzione fornisce
 1. Per filtrare utilizzando le opzioni, fate clic su Filtro.
 1. Per rimuovere i filtri e visualizzare tutti gli elementi nel dizionario, fate clic su Cancella.
 
-### Modifica di stringhe tradotte {#editing-translated-strings}
+### Modifica delle stringhe tradotte {#editing-translated-strings}
 
-Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere traduzioni della stringa. È inoltre possibile [esportare il dizionario](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) affinché venga tradotto da una terza parte.
+Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere traduzioni della stringa. È inoltre possibile [esportare il dizionario](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) per tradurlo da terzi.
 
-1. Selezionate [il dizionario](#creating-a-dictionary) specifico del progetto in quanto specifica il percorso nella directory archivio che contiene le traduzioni. Ad esempio, selezionare **Dizionari** come:
+1. Selezionare [il dizionario specifico del progetto](#creating-a-dictionary) in quanto specifica il percorso nella directory archivio che contiene le traduzioni. Ad esempio, selezionare **Dizionari** come:
 
    `/apps/myProject/i18n`
 
@@ -215,15 +215,15 @@ Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere t
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Fare doppio clic sui campi **Stringa** o **Commento** per la stringa richiesta per aprire la finestra di dialogo **Modifica stringa** , modificare le traduzioni come richiesto, quindi fare clic su **OK** per chiudere la finestra di dialogo:
+   * Fare doppio clic sui campi **String** o **Comment** per la stringa richiesta per aprire la finestra di dialogo **Edit string**, modificare le traduzioni come necessario, quindi fare clic su **OK** per chiudere la finestra di dialogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Fate clic su **Salva** nella barra degli strumenti per salvare le modifiche.
+1. Fare clic su **Salva** nella barra degli strumenti per salvare le modifiche.
 
    >[!NOTE]
    >
-   >Facendo clic su **Reimposta e aggiorna** (invece di **Salva**) vengono ripristinate le modifiche apportate ai testi precedenti.
+   >Facendo clic su **Reimposta e aggiorna** (invece di **Salva**), tutte le modifiche apportate ai testi precedenti vengono ripristinate.
 
 ## Utilizzo di traduttori di terze parti {#using-third-party-translators}
 
@@ -236,13 +236,13 @@ Esportate un dizionario in un file XLIFF in modo che un servizio di terze parti 
 * Esportate un dizionario e includete l&#39;inglese e i termini tradotti per una lingua.
 * Esportate alcune o tutte le stringhe inglesi.
 
-Quando esportate un file XLIFF e includete una lingua, la struttura del nodo del dizionario nell&#39;archivio deve includere tale lingua. Se la lingua non è inclusa, si verificano degli errori. Ad esempio, per esportare il file XLIFF francese, la cartella del dizionario deve includere il nodo `mix:language` figlio denominato `fr`. (Vedere [Creazione di un dizionario](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
+Quando esportate un file XLIFF e includete una lingua, la struttura del nodo del dizionario nell&#39;archivio deve includere tale lingua. Se la lingua non è inclusa, si verificano degli errori. Ad esempio, per esportare il file XLIFF francese, la cartella del dizionario deve includere il nodo secondario `mix:language` denominato `fr`. (Vedere [Creazione di un dizionario](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
 
 Per esportare un file XLIFF per una lingua specifica, attenersi alla procedura descritta di seguito.
 
-1. Aprire lo strumento Traduzione `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Aprire lo strumento di traduzione `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Utilizzate il menu a discesa Dizionari per selezionare il dizionario da esportare.
-1. Fate clic su Esporta > Esporta opzioni Xliff completo *XX* , dove *XX* è il codice della lingua a due lettere, ad esempio DE o FR.
+1. Fate clic su Esporta > Esporta opzioni complete *XX* Xliff, dove *XX* è il codice della lingua di due lettere, ad esempio DE o FR.
 
    Il file XLIFF si apre in una nuova scheda o finestra.
 
@@ -260,7 +260,7 @@ Utilizzare la procedura seguente per esportare tutte o alcune delle stringhe ing
 
 Importare un file XLIFF in un dizionario per compilare il dizionario. Quando il dizionario include una traduzione per una stringa inglese e il file XLIFF contiene una traduzione diversa per la stessa stringa, la traduzione del dizionario viene sostituita.
 
-1. Aprire lo strumento Traduzione `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Aprire lo strumento di traduzione `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Fate clic su Importa > Traduzioni XLIFF.
 1. Selezionate il file da importare e fate clic su OK.
 
@@ -292,7 +292,7 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
 
    * **Nome**: `languages`
    * **Tipo**: `Multi-String`
-   * **Valore**: l’elenco delle lingue da visualizzare. Ad esempio:
+   * **Valore**: l’elenco delle lingue da visualizzare. Esempio:
 
       * fr
       * es
@@ -301,7 +301,7 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
    >
    >I codici lingua devono essere in lettere minuscole.
 
-1. Fate clic su **Salva tutto** in CRXDE Lite e ricaricate il traduttore. La griglia verrà aggiornata per mostrare le lingue definite.
+1. Fare clic su **Salva tutto** nel CRXDE Lite e ricaricare il traduttore. La griglia verrà aggiornata per mostrare le lingue definite.
 
    >[!NOTE]
    >
@@ -311,9 +311,9 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
 
 ### Come rendere le lingue disponibili agli autori {#making-languages-available-to-authors}
 
-Dopo aver definito un dizionario per una lingua nuova nell’istanza AEM, è necessario renderlo disponibile per la selezione da parte degli autori (ad esempio, da utilizzare in **Preferenze**):
+Dopo aver definito un dizionario per una lingua nuova nell&#39;istanza AEM, è necessario renderlo disponibile per la selezione da parte degli autori (ad esempio, da utilizzare in **Preferenze**):
 
-1. Per modificare l’elenco delle lingue disponibili nelle **Preferenze** della console **Protezione** :
+1. Per modificare l&#39;elenco delle lingue disponibili in **Preferenze** della console **Protezione**:
 
    1. Create una sovrapposizione nel codice dell’applicazione per:
 
@@ -322,7 +322,7 @@ Dopo aver definito un dizionario per una lingua nuova nell’istanza AEM, è nec
        and update as required.
       ```
 
-1. Per rendere la lingua disponibile in **Preferenze** dalla console **Siti** Web, è necessario apportare le seguenti modifiche all’applicazione:
+1. Per rendere disponibile la lingua in **Preferenze** dalla console **Siti Web**, è necessario apportare le seguenti modifiche all&#39;applicazione:
 
    1. Create una sovrapposizione per la struttura in:
 
@@ -336,13 +336,13 @@ Dopo aver definito un dizionario per una lingua nuova nell’istanza AEM, è nec
 
 ### Modifica dei nomi delle lingue e dei paesi predefiniti {#changing-language-names-and-default-countries}
 
-Diversi paesi utilizzano la stessa lingua, ad esempio gli Stati Uniti, il Regno Unito e l&#39;Australia utilizzano tutti l&#39;inglese. Questo è indicato da un codice che indica sia la lingua che il paese come `en_US`, `en_GB` e `en_AU`.
+Diversi paesi utilizzano la stessa lingua, ad esempio gli Stati Uniti, il Regno Unito e l&#39;Australia utilizzano tutti l&#39;inglese. Questo è indicato da un codice che indica sia la lingua che il paese, ad esempio `en_US`, `en_GB` e `en_AU`.
 
 I paesi predefiniti vengono utilizzati per visualizzare i flag (ad esempio nella finestra di dialogo Copia lingua), per risolvere il paese in base al codice della lingua.
 
 >[!NOTE]
 >
->Per le localizzazioni come gestito dal traduttore sopra, funziona solo la lingua esatta. Se il menu a discesa delle preferenze della lingua viene utilizzato `en_uk`, nella directory archivio deve essere presente un `en_uk` dizionario.
+>Per le localizzazioni come gestito dal traduttore sopra, funziona solo la lingua esatta. Se il menu a discesa delle preferenze della lingua utilizza `en_uk`, nella directory archivio deve essere presente un dizionario `en_uk`.
 
 Per modificare le definizioni predefinite:
 
@@ -354,9 +354,9 @@ Per modificare le definizioni predefinite:
 
    `/apps/wcm/core/resources/languages`
 
-   Quindi, modificate o estendete l’elenco. La proprietà `defaultCountry` su un nodo della lingua (ad esempio `ja`) deve contenere il codice completo, ad esempio `ja_jp`, che definisce `jp` come paese predefinito per la lingua `ja`.
+   Quindi, modificate o estendete l’elenco. La proprietà `defaultCountry` su un nodo della lingua (ad es. `ja`) deve contenere il codice completo, ad esempio `ja_jp`, che definirebbe `jp` come il paese predefinito per la lingua `ja`.
 
-1. Aggiornare **CQ WCM Language Manager**.
+1. Aggiornate il **CQ WCM Language Manager**.
 
    * **Lingua**:
 
@@ -386,5 +386,5 @@ Allo stesso modo, il test delle stringhe dizionario deve essere eseguito come pa
 
 >[!NOTE]
 >
->Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) memorizzate nella cache per includere nuove stringhe dicazionarie nelle stringhe dei componenti di cui è stato eseguito il rendering.
+>Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate nella cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe dicazionarie nelle stringhe dei componenti sottoposti a rendering.
 
