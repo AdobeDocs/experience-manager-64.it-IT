@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Alcune funzionalità per i frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
+>Alcune funzionalità per i frammenti di contenuto richiedono l&#39;applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o versioni successive](/help/release-notes/sp-release-notes.md).
 
 I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md).
 
@@ -32,7 +32,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)**sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
@@ -136,7 +136,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **[!UICONTROL Tratta le intestazioni come paragrafi propri]**
 
-## Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
+## Collegamento rapido all’Editor frammento di contenuto   {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **[!UICONTROL Modifica]** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments.md).
 
@@ -144,7 +144,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-## Aggiunta di contenuto intermedio  {#adding-in-between-content}
+## Aggiunta di contenuto intermedio   {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **[!UICONTROL Trascina qui i componenti]** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -182,7 +182,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 
 
-## Uso di contenuti associati  {#using-associated-content}
+## Uso di contenuti associati   {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
