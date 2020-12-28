@@ -69,9 +69,9 @@ Inoltre, ora sono possibili implementazioni non Java e fanno parte del concetto 
 
 Il livello di memorizzazione Oak fornisce un livello di astrazione per lo storage effettivo del contenuto.
 
-Al momento sono disponibili due implementazioni di storage in AEM6: **Archiviazione** Tar e storage **** MongoDB.
+Al momento sono disponibili due implementazioni di storage in AEM6: **Tar Storage** e **MongoDB Storage**.
 
-### Archiviazione Tar {#tar-storage}
+### Archiviazione delle barre {#tar-storage}
 
 L&#39;archiviazione Tar utilizza i file tar. Il contenuto viene memorizzato come vari tipi di record all&#39;interno di segmenti più grandi. Le scritture contabili vengono utilizzate per tenere traccia dello stato più recente della directory archivio.
 
@@ -91,7 +91,7 @@ I record correlati come un nodo e i relativi elementi figlio immediati vengono g
 
 La formattazione dei record è ottimizzata per ridurre i costi di I/O e per adattare il maggior numero possibile di contenuti nelle cache.
 
-### Mongo Storage {#mongo-storage}
+### Archiviazione Mongo {#mongo-storage}
 
 Lo storage MongoDB utilizza MongoDB per la condivisione e il clustering. La struttura dell&#39;archivio è memorizzata in un database MongoDB in cui ogni nodo è un documento separato.
 
