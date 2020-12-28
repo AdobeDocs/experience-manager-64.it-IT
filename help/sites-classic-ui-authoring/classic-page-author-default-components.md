@@ -35,7 +35,7 @@ Nelle pagine seguenti puoi trovare dei collegamenti verso alcune delle aree prin
 
 * [Componenti per l’authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   I componenti utilizzati per la creazione di contenuti di pagina standard sono contenuti principalmente nei gruppi **Generale**, **Colonne** e **Forms**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
