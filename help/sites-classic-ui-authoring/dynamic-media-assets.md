@@ -28,5 +28,5 @@ Non è possibile utilizzare Dynamic Media nell’interfaccia utente classica. Co
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media è disattivato per impostazione predefinita.
+>Se utilizzate Dynamic Media, non potete utilizzare simultaneamente caricamenti automatici disponibili se [integrate Dynamic Media Classic in AEM](/help/sites-administering/scene7.md). Vedere [abilitazione di Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media è disattivato per impostazione predefinita.
 
