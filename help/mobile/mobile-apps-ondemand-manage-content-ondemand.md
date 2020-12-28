@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono di creare e gestire il contenuto all&#39;interno di un&#39;applicazione. Le azioni seguenti vengono eseguite sul contenuto all&#39;interno dell&#39;applicazione.
 
@@ -31,16 +31,16 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 Se pensate a una rivista online, il contenuto principale include articoli, annunci e copertine. All&#39;interno di AEM è possibile creare tre tipi principali di contenuto Mobile On-Demand:
 
 * **Articoli**: testo basato su arte per trasmettere informazioni
-* **Banner:** collegamenti promozionali tipicamente grafici
-* **Raccolte:** rappresentano un *bucket* ben definito con contenuti quali articoli o banner adatti al tema della copertina
+* **Banner:collegamenti promozionali grafici** tipicamente
+* **Raccolte:** rappresentano un  ** pacchetto ben definito con contenuto, ad esempio articoli o banner, adatto al tema della copertina
 
 * **Risorse condivise:** consente il riutilizzo o la condivisione di pezzi comuni tra gli articoli
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultate Considerazioni di [progettazione per  app](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultare [Considerazioni di progettazione per  app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
-## Creating and Managing Content {#creating-and-managing-content}
+## Creazione e gestione di contenuti {#creating-and-managing-content}
 
 Gli argomenti seguenti descrivono la creazione e la gestione del contenuto, vale a dire articoli, banner e raccolte. Dopo aver appreso come creare e gestire il contenuto, potete visualizzare argomenti aggiuntivi come il caricamento di risorse condivise, la pubblicazione/annullamento della pubblicazione del contenuto e l&#39;anteprima con Verifica preliminare.
 
@@ -52,7 +52,7 @@ Gli argomenti seguenti descrivono la creazione e la gestione del contenuto, vale
 
 >[!NOTE]
 >
->In genere, è consigliabile eseguire la verifica preliminare prima di pubblicare il contenuto. Per ulteriori informazioni, consultate [Anteprima con verifica preliminare](/help/mobile/aem-mobile-manage-ondemand-services.md) .
+>In genere, è consigliabile eseguire la verifica preliminare prima di pubblicare il contenuto. Per ulteriori informazioni, vedere [Anteprima con Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md).
 
 ### Risorse aggiuntive {#additional-resources}
 
