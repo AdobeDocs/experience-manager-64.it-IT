@@ -22,11 +22,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Se non utilizzate AEM come origine di gestione del contenuto, consultate [Guida](https://helpx.adobe.com/digital-publishing-solution/topics.html)di AEM Mobile On-demand Services.
+>Se non utilizzate AEM come origine di gestione del contenuto, consultate la sezione [ Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Amministratore AEM {#aem-administrator}
 
@@ -34,13 +34,13 @@ ht-degree: 2%
 >
 >**Prerequisito:**
 >
->Prima di iniziare a configurare l&#39;ambiente per  AEM Mobile On-demand Services, consultate [AEM Mobile Application Dashboard o il Centro](/help/mobile/mobile-apps-ondemand-application-dashboard.md)di controllo.
+>Prima di iniziare a configurare l&#39;ambiente per  AEM Mobile On-demand Services, vedere [ AEM Mobile Application Dashboard o il Centro di controllo](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un amministratore ****** AEM è responsabile dell&#39;aggiunta di una nuova applicazione al  catalogo AEM Mobile, tramite la creazione di una nuova app tramite la procedura guidata di creazione o l&#39;importazione di un&#39;applicazione esistente. AEM amministratori che creano una nuova app utilizzando  procedura guidata *per la* creazione di AEM Mobile in genere selezionano uno dei modelli di app desiderati dagli esempi di riferimento forniti dall&#39;app oppure (nella maggior parte dei casi) da un modello di app personalizzato creato da *AEM sviluppatori.*
+Un ***AEM amministratore*** è responsabile dell&#39;aggiunta di una nuova applicazione al  catalogo AEM Mobile, sia mediante la creazione di una nuova app tramite la procedura guidata di creazione, sia mediante l&#39;importazione di un&#39;applicazione esistente. AEM amministratori che creano una nuova app utilizzando  procedura guidata di creazione di AEM Mobile ** in genere selezionano uno dei modelli di app desiderati dagli esempi di riferimento forniti dall&#39;utente oppure (nella maggior parte dei casi) da un modello di app personalizzato creato dagli sviluppatori *AEM.*
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione AEM gruppi e autorizzazioni, fate clic su [Creazione di ruoli utente e concessione dell’accesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) nella guida in linea.
+>Per ulteriori informazioni sulla configurazione AEM gruppi e autorizzazioni, fare clic su [Creazione di ruoli utente e concessione di accesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) nella Guida in linea.
 
 Durante la creazione di un&#39;app tramite  AEM Mobile On-demand Services, un amministratore AEM è responsabile delle seguenti attività:
 
