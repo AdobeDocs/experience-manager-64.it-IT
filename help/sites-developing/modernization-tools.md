@@ -23,7 +23,7 @@ ht-degree: 58%
 * [](/help/sites-authoring/default-components-foundation.md)Componenti di base in componenti core[](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [](website.md)Interfaccia classica in interfaccia touch[](touch-ui-concepts.md)
 
-Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
+Per ulteriori informazioni sull&#39;utilizzo di questi strumenti, [consultare la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
