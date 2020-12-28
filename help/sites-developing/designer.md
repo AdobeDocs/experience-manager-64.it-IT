@@ -18,27 +18,27 @@ ht-degree: 0%
 ---
 
 
-# Progettazione e Designer{#designs-and-the-designer}
+# Designer e Designer{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->Questo articolo descrive come creare un sito Web basato sull’interfaccia classica.  Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Primi passi nello sviluppo  AEM Sites](/help/sites-developing/getting-started.md).
+>Questo articolo descrive come creare un sito Web basato sull’interfaccia classica.  Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Guida introduttiva allo sviluppo  AEM Sites](/help/sites-developing/getting-started.md).
 
 Sarà necessario creare una progettazione per il sito Web e, in AEM, utilizzare Designer.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;accessibilità del Web, vedere [AEM e Linee guida](/help/managing/web-accessibility.md)per l&#39;accessibilità del Web.
+>Per ulteriori informazioni sull&#39;accessibilità Web, vedere [AEM e le linee guida sull&#39;accessibilità Web](/help/managing/web-accessibility.md).
 
 ## Utilizzo di Designer {#using-the-designer}
 
-La progettazione può essere definita nella sezione **progettazioni** della scheda **Strumenti** :
+La progettazione può essere definita nella sezione **progettazioni** della scheda **Strumenti**:
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Qui è possibile creare la struttura necessaria per memorizzare la progettazione, quindi caricare i fogli di stile CSS e le immagini richieste.
 
-Le progettazioni sono memorizzate in `/etc/designs`. Il percorso della progettazione da utilizzare per un sito Web è specificato utilizzando la `cq:designPath` proprietà del `jcr:content` nodo.
+Le progettazioni sono memorizzate in `/etc/designs`. Il percorso della progettazione da utilizzare per un sito Web è specificato utilizzando la proprietà `cq:designPath` del nodo `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -50,13 +50,13 @@ Le progettazioni sono memorizzate in `/etc/designs`. Il percorso della progettaz
 
 Per realizzare il progetto, è necessario:
 
-**CSS** - I fogli di stile CSS definiscono i formati di aree specifiche delle pagine.
+**CSS**  - I fogli di stile a cascata definiscono i formati di aree specifiche delle pagine.
 
-**Immagini** - Qualsiasi immagine utilizzata per funzioni quali sfondi e pulsanti.
+**Immagini**  - Qualsiasi immagine utilizzata per funzioni quali sfondi e pulsanti.
 
-### Considerazioni Per La Progettazione Del Sito Web {#considerations-when-designing-your-website}
+### Considerazioni sulla progettazione del sito Web {#considerations-when-designing-your-website}
 
-Durante lo sviluppo di un sito Web, si consiglia vivamente di memorizzare immagini e file CSS in `/etc/design/<project>` modo da poter fare riferimento alle risorse in base alla progettazione corrente, come descritto dal frammento di codice seguente.
+Durante lo sviluppo di un sito Web, si consiglia vivamente di memorizzare immagini e file CSS in `/etc/design/<project>` in modo da poter fare riferimento alle risorse in base al progetto corrente, come descritto dal frammento di codice seguente.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -65,7 +65,7 @@ Durante lo sviluppo di un sito Web, si consiglia vivamente di memorizzare immagi
 L&#39;esempio precedente offre diversi vantaggi:
 
 * I componenti possono avere un aspetto o un aspetto diverso in base a ciascun sito utilizzando un percorso di progettazione diverso.
-* La riprogettazione del sito Web può essere eseguita semplicemente indicando il percorso di progettazione a un altro nodo nella radice del sito, da `design/v1` a `design/v2.`
+* La riprogettazione del sito Web può essere eseguita semplicemente indicando il percorso di progettazione a un altro nodo nella radice del sito da `design/v1` a `design/v2.`
 
-* `/etc/designs` e `/content` sono gli unici URL esterni che il browser vede proteggersi da un utente esterno incuriosito da ciò che si trova sotto la vostra `/apps` struttura. I vantaggi dell’URL riportati sopra consentono inoltre all’amministratore di sistema di impostare una maggiore sicurezza, in quanto l’esposizione delle risorse viene limitata a poche posizioni distinte.
+* `/etc/designs` e  `/content` sono gli unici URL esterni che il browser vede proteggersi da un utente esterno incuriosito da ciò che si trova sotto la vostra  `/apps` struttura. I vantaggi dell’URL riportati sopra consentono inoltre all’amministratore di sistema di impostare una maggiore sicurezza, in quanto l’esposizione delle risorse viene limitata a poche posizioni distinte.
 
