@@ -41,7 +41,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!NOTE]
 >
->AEM 6.4.5.0 o versione successiva è richiesto per utilizzare modelli modificabili con [SPA Editor](/help/sites-developing/spa-overview.md).
+>AEM 6.4.5.0 o versione successiva è richiesto per utilizzare modelli modificabili con l&#39;editor [SPA](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>Le pagine e i modelli creati con la **console Modelli** non devono essere utilizzati nell&#39;interfaccia classica e tale utilizzo non è supportato.
 
 ## Prima di iniziare {#before-you-start}
 
@@ -96,7 +96,7 @@ A causa della natura di alcune attività, come la creazione di una cartella, è 
 
 I compiti descritti nel presente documento sono elencati con il ruolo di responsabilità per il loro svolgimento.
 
-### Modelli modificabili e statici {#editable-and-static-templates}
+### Modelli modificabili e statici  {#editable-and-static-templates}
 
 AEM offre ora due tipi di modelli di base:
 
@@ -112,11 +112,11 @@ AEM offre ora due tipi di modelli di base:
    * Sono [forniti dagli sviluppatori](/help/sites-developing/page-templates-static.md), e non possono essere creati o modificati dagli autori.
    * Vengono copiati per creare una nuova pagina, ma non esiste alcuna connessione dinamica (il nome del modello viene registrato solo a titolo informativo).
    * La [modalità Progettazione](/help/sites-authoring/default-components-designmode.md) di applicare proprietà di progettazione persistenti.
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * Poiché la modifica di modelli statici è l&#39;attività esclusiva di uno sviluppatore, per ulteriori informazioni consultate il documento sullo sviluppatore [Modelli di pagina - Static](/help/sites-developing/page-templates-static.md).
 
 Per definizione, la console e l’editor dei modelli consentono di creare e modificare solo i modelli modificabili. Pertanto questo documento si concentra esclusivamente sui modelli modificabili.
 
-### Utilizzo di un modello per creare una pagina {#using-a-template-to-create-a-page}
+### Utilizzo di un modello per creare una pagina  {#using-a-template-to-create-a-page}
 
 Quando si utilizza un modello per [creare una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page), non vi è alcuna differenza visibile e nessuna indicazione tra modelli statici e modificabili. Per l’autore della pagina, il processo è trasparente.
 
@@ -157,7 +157,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. Aprite la **console Modelli** (tramite **Strumenti** -> **Generale**), quindi individuate la cartella desiderata.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ Durante la creazione di un nuovo modello modificabile:
    >
    >Quando viene creato un nuovo modello, questo viene contrassegnato come **Bozza** nella console, a indicare che non è ancora disponibile per l’uso da parte degli autori di pagine.
 
-### Definizione delle proprietà del modello - Autore del modello   {#defining-template-properties-template-author}
+### Definizione delle proprietà del modello - Autore del modello    {#defining-template-properties-template-author}
 
 Un modello può avere le seguenti proprietà:
 
@@ -229,7 +229,7 @@ Per definire la miniatura del modello:
 
 1. Una volta ottenuta la miniatura desiderata, tocca o fai clic su **Salva e chiudi**.
 
-### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
+### Abilitazione e autorizzazione di un modello - Autore del modello    {#enabling-and-allowing-a-template-template-author}
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
@@ -272,7 +272,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Vedere [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability) - i principi per i modelli consentiti restano invariati.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -290,7 +290,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 
 1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
-## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
+## Modifica dei modelli - Autori dei modelli    {#editing-templates-template-authors}
 
 Quando si crea o si modifica un modello, è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
@@ -613,7 +613,7 @@ La progettazione della pagina, comprese le librerie lato client e le policy di p
 
 Per accedere alla finestra di dialogo **Progettazione pagina**:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. In **Editor modelli**, selezionare **Informazioni pagina** dalla barra degli strumenti, quindi **Progettazione pagina** per aprire la finestra di dialogo.
 1. Si apre la finestra di dialogo **Progettazione pagina**, divisa in due sezioni:
 
    * Nella metà sinistra si definiscono i [criteri della pagina](/help/sites-authoring/templates.md#page-policies).
@@ -686,7 +686,7 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
 1. Conferma le definizioni con **Fine**.
 
-## Best practice   {#best-practices}
+## Best practice    {#best-practices}
 
 Quando si creano modelli, è necessario considerare i seguenti aspetti:
 
