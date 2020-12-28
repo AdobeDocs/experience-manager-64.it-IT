@@ -49,7 +49,7 @@ Di seguito è riportato un estratto del sito Geometrixx in cui, a titolo di esem
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   A seconda della configurazione dell’istanza, l’utilizzo di `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
 
 ```xml
   /content
@@ -71,7 +71,7 @@ Di seguito è riportato un estratto del sito Geometrixx in cui, a titolo di esem
     /...
 ```
 
-This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Questa struttura può essere visualizzata dalla console Siti Web, che è possibile utilizzare per [spostarsi all&#39;interno della struttura ad albero](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +89,7 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
    * Viene utilizzato per generare l’URI.
    * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+Durante la creazione di una nuova pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
 L’implementazione e l’elenco di caratteri consentiti variano leggermente a seconda dell’interfaccia utente (è più esteso per l’interfaccia touch), ma il minimo consentito è:
 
@@ -114,10 +114,10 @@ Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM 
 
 Se specifichi il **nome**[ della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/sites-developing/naming-conventions.md)
 
-In the Classic UI you **cannot enter invalid characters** in the **Name** field.
+Nell&#39;interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Name**.
 
 >[!NOTE]
->In the touch-enabled UI you **cannot submit invalid characters** in the **Name** field. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
+>Nell&#39;interfaccia touch **non è possibile inviare caratteri non validi** nel campo **Name**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ I componenti sono gli elementi forniti da AEM che consentono di aggiungere speci
 * Video
 * e molti altri.
 
-Once you have created and opened a page you can [add content using the components](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), available from the [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Dopo aver creato e aperto una pagina è possibile [aggiungere contenuti utilizzando i componenti](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibili dalla [barra laterale](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gestione delle pagine {#managing-pages}
 
@@ -198,7 +198,7 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
 
    >[!NOTE]
    >
-   >È inoltre possibile creare una pagina mentre si modifica una pagina esistente. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >È inoltre possibile creare una pagina mentre si modifica una pagina esistente. Utilizzando **Create Child Page **dalla scheda **Page** della barra laterale, verrà creata una nuova pagina direttamente sotto la pagina che si sta modificando.
 
 ### Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
@@ -295,7 +295,7 @@ Per spostare o rinominare una pagina:
       Ripubblica la pagina che contiene il riferimento. Anche questa opzione può essere selezionata per ogni singola pagina.
    >[!NOTE]
    >
-   >Se la pagina era già stata attivata, lo spostamento ne determina automaticamente la disattivazione. By default, it will be reactivated when the move is complete, but this can changed by unchecking the **Republish** field for the page in the **Move** window.
+   >Se la pagina era già stata attivata, lo spostamento ne determina automaticamente la disattivazione. Per impostazione predefinita, viene riattivata al termine dello spostamento, ma questo può essere modificato deselezionando il campo **Ripubblica** per la pagina nella finestra **Sposta**.
 
 1. Fai clic su **Sposta**. Verrà richiesto di confermare l’operazione. Fai clic su **OK** per confermare.
 
@@ -332,7 +332,7 @@ Per spostare o rinominare una pagina:
 >Anche quando si rinomina una cartella occorre rispettare le [convenzioni di denominazione delle pagine](#page-naming-conventions).
 
 1. Apri la console **Siti Web** e passa alla posizione desiderata.
-1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
+1. In **Nuovo...** (fare clic sulla freccia accanto a **Nuovo...**), selezionare **Nuova cartella..**.
 1. Verrà visualizzata la finestra di dialogo **Crea cartella**. Qui è possibile specificare il **Nome** e il **Titolo**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
