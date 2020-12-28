@@ -76,17 +76,17 @@ I membri del gruppo utenti amministratori-analytics possono configurare la conso
 
 ### Apertura di approfondimenti sui contenuti da Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Aprite [Content Insight](/help/sites-authoring/content-insights.md) dalla console Siti per approfondire l&#39;efficacia della pagina.
 
 1. Nella console Sites, seleziona la pagina per la quale desideri visualizzare gli approfondimenti dei contenuti.
 1. Nella barra degli strumenti, fai clic sull’icona di Analytics e Recommendations.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Dati analitici visibili dall’Editor pagine (Mappa attività) {#analytics-visible-from-the-page-editor-activity-map}
+## Dati analitici visibili dall’Editor pagine (Mappa attività)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>È ora necessario utilizzare il plug-in [ActivityMap fornito da  Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html).
