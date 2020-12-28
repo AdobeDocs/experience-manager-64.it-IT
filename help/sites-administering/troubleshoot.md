@@ -24,7 +24,7 @@ La sezione seguente illustra alcuni problemi che potrebbero verificarsi durante 
 
 >[!NOTE]
 >
->Per risolvere eventuali problemi di authoring in AEM, consulta Risoluzione dei [problemi per gli autori.](/help/sites-authoring/troubleshooting.md)
+>Per risolvere eventuali problemi di authoring in AEM, vedere [Risoluzione dei problemi per gli autori.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
 
 ## Problemi di installazione {#installation-issues}
 
-Consultate Problemi [](/help/sites-deploying/troubleshooting.md#common-installation-issues) comuni di installazione per informazioni sui seguenti scenari di risoluzione dei problemi:
+Per informazioni sui seguenti scenari di risoluzione dei problemi, vedere [Problemi comuni di installazione](/help/sites-deploying/troubleshooting.md#common-installation-issues):
 
 * Un doppio clic sul jar Quickstart non ha alcun effetto oppure il file JAR viene aperto in un altro programma (ad esempio un gestore di archivi).
 * Le applicazioni eseguite su CRX generano errori di esaurimento della memoria.
@@ -73,15 +73,15 @@ Consultate Problemi [](/help/sites-deploying/troubleshooting.md#common-installat
 
 ## Metodi per la risoluzione dei problemi di analisi {#methods-for-troubleshooting-analysis}
 
-### Creazione di un dump del thread {#making-a-thread-dump}
+### Creazione di un dump di thread {#making-a-thread-dump}
 
 Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AEM non risponde correttamente, il dump del thread può essere utile per identificare i blocchi di blocco di sicurezza o altri problemi.
 
-### Utilizzo di Sling Thread Dumer {#using-sling-thread-dumper}
+### Utilizzo di Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Aprire la **AEM console** Web; ad esempio in `http://localhost:4502/system/console/`.
+1. Aprire la **AEM console Web**; ad esempio in `http://localhost:4502/system/console/`.
 
-1. Selezionare i **thread** nella **scheda Stato** .
+1. Selezionare la scheda **Thread** in **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -89,7 +89,7 @@ Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AE
 
 1. Individuate il PID (ID processo) dell&#39;istanza Java AEM.
 
-   Ad esempio, potete utilizzare `ps -ef` o `jps`.
+   Ad esempio, è possibile utilizzare `ps -ef` o `jps`.
 
 1. Esegui:
 
@@ -99,11 +99,11 @@ Il dump del thread è un elenco di tutti i thread Java attualmente attivi. Se AE
 
 >[!NOTE]
 >
->È possibile aggiungere i file di thread a un file di registro utilizzando il reindirizzamento `>>` di output:
+>È possibile aggiungere i file di thread a un file di registro utilizzando il reindirizzamento di output `>>`:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Per ulteriori informazioni, consulta [How to take Thread Dumps from a JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) documentation.
+Per ulteriori informazioni, vedere la sezione [Come estrarre i file di thread da una documentazione JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html)
 
 ### Verifica delle sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
@@ -113,15 +113,15 @@ Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le ses
 * È possibile vedere molti CacheManager: ridimensionaTutte le voci nel file di registro; il numero seguente (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
 * Di tanto in tanto il sistema non dispone di memoria sufficiente (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per analizzare le sessioni non chiuse e scoprire quale codice non sta chiudendo una sessione, fare riferimento all&#39;articolo Knowledge Base [Analisi delle sessioni](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)non chiuse.
+Per analizzare le sessioni non chiuse e scoprire quale codice non sta chiudendo una sessione, fare riferimento all&#39;articolo della Knowledge Base [Analizza sessioni non chiuse](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
 
-### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Utilizzo della console Web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 Lo stato dei bundle OSGi può anche fornire un&#39;indicazione tempestiva dei possibili problemi.
 
-1. Aprire la **AEM console** Web; ad esempio in `http://localhost:4502/system/console/`.
+1. Aprire la **AEM console Web**; ad esempio in `http://localhost:4502/system/console/`.
 
-1. Selezionate **Bundle** nella scheda **OSGI** .
+1. Selezionare **Bundle** nella scheda **OSGI**.
 
 1. Seleziona:
 
