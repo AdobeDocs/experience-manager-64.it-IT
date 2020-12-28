@@ -24,14 +24,14 @@ Con i modelli modificabili, la creazione e la manutenzione dei modelli non è pi
 
 Tutte le pagine in We.Retail si basano su modelli modificabili, consentendo agli utenti non sviluppatori di adattare e personalizzare i modelli.
 
-## Provarci {#trying-it-out}
+## Prova {#trying-it-out}
 
 1. Modificare la pagina Apparecchiature della sezione master lingua.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Il selettore di modalità non offre più una modalità Progettazione. Tutte le pagine per We.Retail si basano su modelli modificabili e per modificare la progettazione dei modelli modificabili devono essere modificate nell&#39;editor modelli.
-1. Dal menu Informazioni **** pagina, selezionate **Modifica modello**.
+1. Dal menu **Informazioni pagina** selezionare **Modifica modello**.
 1. È in corso la modifica del modello Pagina eroica.
 
    La modalità struttura della pagina consente di modificare la struttura del modello. Questo include, ad esempio, i componenti consentiti nel Contenitore di layout.
@@ -68,13 +68,13 @@ Tutte le pagine in We.Retail si basano su modelli modificabili, consentendo agli
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Nell’editor modelli potete utilizzare il selettore modalità per passare alla modalità Contenuto **** iniziale e definire il contenuto necessario sulla pagina.
+1. Nell&#39;editor modelli, potete utilizzare il selettore modalità per passare alla modalità **Contenuto iniziale** per definire il contenuto necessario sulla pagina.
 
-   **La modalità Layout** può essere utilizzata così come si trova su una pagina normale per definire il layout del modello.
+   **La modalità** Layout può essere utilizzata così come si trova su una pagina normale per definire il layout del modello.
 
 ## Ulteriori informazioni {#more-information}
 
-Per ulteriori informazioni, consultare il documento di authoring [Creazione di modelli](/help/sites-authoring/templates.md) di pagina o il documento sviluppatore [Modelli di pagina - Modificabili](/help/sites-developing/page-templates-editable.md) per informazioni tecniche complete sui modelli modificabili.
+Per ulteriori informazioni, consultare il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento sviluppatore Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md) per informazioni tecniche complete sui modelli modificabili.
 
-È inoltre possibile esaminare i componenti [core](/help/sites-developing/we-retail-core-components.md). Per una panoramica tecnica, consulta il documento di authoring [Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (Componenti [di base) e il documento di sviluppo](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) Developing Core Components (Sviluppo di componentidi base).
+È inoltre possibile esaminare i [componenti core](/help/sites-developing/we-retail-core-components.md). Per una panoramica tecnica, consulta il documento sull’authoring [Componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) e il documento sullo sviluppo [Sviluppo di componenti di base](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
 
