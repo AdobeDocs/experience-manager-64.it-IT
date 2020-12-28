@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Richiedi script di analisi{#request-analysis-script}
+# Request Analysis Script{#request-analysis-script}
 
 ## Scarica {#download}
 
-Questo script è stato creato per semplificare l&#39;analisi dei `access.log` file producendo un rapporto leggibile per l&#39;elaborazione successiva.
+Questo script consente di semplificare l&#39;analisi dei file `access.log` generando un report leggibile per l&#39;elaborazione successiva.
 
 [Ottieni file](assets/analyse-access.sh)
 
 ## Descrizione {#description}
 
-Questo script è stato creato per semplificare l&#39;analisi dei `access.log` file producendo un rapporto leggibile per l&#39;elaborazione successiva.
+Questo script consente di semplificare l&#39;analisi dei file `access.log` generando un report leggibile per l&#39;elaborazione successiva.
 
 Produce il numero complessivo di richieste, GET e POST, la distribuzione delle richieste nel tempo e più.
 
