@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Conflitti tra rollout MSM{#msm-rollout-conflicts}
+# Conflitti di rollout MSM{#msm-rollout-conflicts}
 
 Possono verificarsi conflitti se vengono create nuove pagine con lo stesso nome di pagina sia nel ramo blueprint che in un ramo Live Copy dipendente.
 
@@ -38,9 +38,9 @@ Per garantire che il rollout non sia bloccato, le possibili definizioni possono 
 
 Oltre alla funzionalità standard, è possibile aggiungere gestori di conflitti personalizzati per implementare regole diverse. Possono inoltre consentire la pubblicazione di azioni come un singolo processo.
 
-### Esempio {#example-scenario}
+### Esempio di scenario {#example-scenario}
 
-Nelle sezioni seguenti viene illustrato l’esempio di una nuova pagina `b`, creata sia nella blueprint che nel ramo Live Copy (creata manualmente), per illustrare i vari metodi di risoluzione dei conflitti:
+Nelle sezioni seguenti viene illustrato l&#39;esempio di una nuova pagina `b`, creata sia nel blueprint che nel ramo Live Copy (creata manualmente), per illustrare i vari metodi di risoluzione dei conflitti:
 
 * blueprint: `/b`
 
@@ -69,7 +69,7 @@ Nelle sezioni seguenti viene illustrato l’esempio di una nuova pagina `b`, cre
   <tr> 
    <td><code> /bp-level-1</code></td> 
    <td><code> /lc-level-1</code> <br /> (creato manualmente nel ramo Live Copy)<br /> </td> 
-   <td><code> /lc-level-1</code> <br /> (contiene il contenuto della pagina<br /> di livello secondario 1 creata manualmente nel ramo Live Copy)</td> 
+   <td><code> /lc-level-1</code> <br /> (contiene il contenuto della pagina<br /> livello figlio-1 creata manualmente nel ramo Live Copy)</td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Nelle sezioni seguenti viene illustrato l’esempio di una nuova pagina `b`, cre
 
 Il manager rollout consente di attivare o disattivare la gestione dei conflitti.
 
-Questa operazione viene eseguita utilizzando la configurazione [](/help/sites-deploying/configuring-osgi.md) OSGi di **Day CQ WCM Rollout Manager**:
+Questa operazione viene eseguita utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) di **Day CQ WCM Rollout Manager**:
 
 * **Gestione dei conflitti con le pagine** create manualmente:
 
@@ -88,33 +88,33 @@ Questa operazione viene eseguita utilizzando la configurazione [](/help/sites-de
 
 AEM ha un comportamento [predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
-## Gestori dei conflitti {#conflict-handlers}
+## Gestori conflitti {#conflict-handlers}
 
 AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout del contenuto da una blueprint a una Live Copy. La ridenominazione delle pagine è uno dei metodi più comuni per risolvere tali conflitti. Possono essere operativi più gestori di conflitti per consentire una selezione di comportamenti diversi.
 
 AEM fornisce:
 
-* Il gestore [di conflitti](#default-conflict-handler)predefinito:
+* Il gestore di conflitti [predefinito](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
-* Possibilità di implementare un gestore [](#customized-handlers)personalizzato.
+* Possibilità di implementare un [handler personalizzato](#customized-handlers).
 * Meccanismo di classificazione del servizio che consente di impostare la priorità di ogni singolo gestore. Viene utilizzato il servizio con la classificazione più alta.
 
 ### Gestore conflitti predefinito {#default-conflict-handler}
 
 Il gestore di conflitti predefinito:
 
-* È chiamato `ResourceNameRolloutConflictHandler`
+* È denominato `ResourceNameRolloutConflictHandler`
 
 * Con questo gestore, la pagina di blueprint ha la precedenza.
-* La classificazione del servizio per questo gestore è impostata su bassa ( &quot;es. sotto il valore predefinito per la `service.ranking` proprietà), in quanto si presuppone che i gestori personalizzati necessitino di una classificazione più elevata. Tuttavia, la classifica non è il minimo assoluto per garantire la flessibilità quando necessario.
+* La classificazione del servizio per questo gestore è impostata su bassa ( &quot;es. sotto il valore predefinito per la proprietà `service.ranking`), in quanto si presuppone che i gestori personalizzati necessitino di una classificazione più elevata. Tuttavia, la classifica non è il minimo assoluto per garantire la flessibilità quando necessario.
 
-Questo gestore di conflitti ha la precedenza sul modello. La pagina Live Copy `/b` viene spostata (all&#39;interno del ramo Live Copy) in `/b_msm_moved`.
+Questo gestore di conflitti ha la precedenza sul modello. La pagina della Live Copy `/b` viene spostata (all&#39;interno del ramo Live Copy) in `/b_msm_moved`.
 
 * live copy: `/b`
 
-   Viene spostato (all’interno della Live Copy) in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
+   Viene spostato (all&#39;interno della Live Copy) in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
 
    * `lc-level-1` non viene spostato.
 
@@ -158,9 +158,9 @@ I gestori di conflitti personalizzati consentono di implementare le proprie rego
 
 I gestori di conflitti personalizzati possono:
 
-* Assegnate un nome in base alle vostre esigenze. ``
+* Assegnate un nome in base alle vostre esigenze. &quot;
 * essere sviluppati/configurati in base alle vostre esigenze; ad esempio, è possibile sviluppare un gestore in modo che la pagina Live Copy abbia la precedenza.
-* può essere progettato per essere configurato utilizzando la configurazione [](/help/sites-deploying/configuring-osgi.md)OSGi; in particolare:
+* Può essere configurato utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md); in particolare:
 
    * **Classificazione** servizio:
 
@@ -170,13 +170,13 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se si [disattiva manualmente la gestione](#rollout-manager-and-conflict-handling) dei conflitti, AEM non intervenire su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
+Se si disattiva manualmente [la gestione dei conflitti](#rollout-manager-and-conflict-handling), AEM non intervenire su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
 
 >[!CAUTION]
 >
 >AEM non indica che i conflitti vengono ignorati in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
 
-In questo caso la Live Copy ha la precedenza. La pagina blueprint non `/b` viene copiata e la pagina Live Copy non `/b` viene toccata.
+In questo caso la Live Copy ha la precedenza. La pagina di blueprint `/b` non viene copiata e la pagina di live copy `/b` non viene toccata.
 
 * blueprint: `/b`
 
@@ -209,6 +209,6 @@ In questo caso la Live Copy ha la precedenza. La pagina blueprint non `/b` viene
  </tbody> 
 </table>
 
-### Classificazioni di servizio {#service-rankings}
+### Classificazioni servizio {#service-rankings}
 
-La classificazione del servizio [OSGi](https://www.osgi.org/) può essere utilizzata per definire la priorità dei singoli gestori di conflitti.
+La classificazione [OSGi](https://www.osgi.org/) può essere utilizzata per definire la priorità dei singoli gestori di conflitti.
