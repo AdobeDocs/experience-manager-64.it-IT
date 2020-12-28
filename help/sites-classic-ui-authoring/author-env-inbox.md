@@ -25,7 +25,7 @@ Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a el
 Tali notifiche vengono recapitate in due caselle in entrata, a seconda del tipo di notifica:
 
 * Una casella in entrata per le notifiche ricevute in seguito alla sottoscrizione di un abbonamento, descritta nella sezione successiva.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Una casella in entrata specializzata per gli elementi del flusso di lavoro è descritta nel documento [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -91,7 +91,7 @@ Per effettuare la sottoscrizione alle notifiche:
 1. Specificate i percorsi delle pagine per cui desiderate ricevere le notifiche:
 
    * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Fare clic sulla cella **Percorso** della tabella e immettere il percorso, ad esempio `/content/docs`.
    * Per ricevere le notifiche per tutte le pagine appartenenti al sottoalbero, imposta **Esatto?** su **No**.
 
       Per ricevere le notifiche solo per la pagina definita dal percorso, impostate **Esatto?** su **Sì**.
