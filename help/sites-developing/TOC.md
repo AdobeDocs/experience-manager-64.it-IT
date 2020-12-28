@@ -18,7 +18,7 @@ ht-degree: 12%
 # Guida utente allo sviluppo in AEM 6.4 {#developing}
 
 + [Panoramica sullo sviluppo della Guida utente](home.md)
-+ Introduzione per gli sviluppatori{#introduction}
++ Introduzione per sviluppatori{#introduction}
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](getting-started.md)
    + [Concetti di base AEM](the-basics.md)
    + [Struttura dell’interfaccia AEM touch](touch-ui-structure.md)
@@ -40,7 +40,7 @@ ht-degree: 12%
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
-      + [Modelli di pagina - Modificabili ](page-templates-editable.md)
+      + [Modelli di pagina - Modificabili  ](page-templates-editable.md)
       + [Modelli di pagina - Statici](page-templates-static.md)
       + [Modelli di frammento di contenuto](content-fragment-templates.md)
       + [Rendering dei modelli adattivi](templates-adaptive-rendering.md)
@@ -93,7 +93,7 @@ ht-degree: 12%
       + [Internazionalizzazione delle stringhe di interfaccia](i18n-dev.md)
       + [Utilizzo di Translator per gestire i dizionari](i18n-translator.md)
       + [Estrazione di stringhe per la conversione](i18n-extract.md)
-   + Componenti per interfaccia classica{#classic-ui-components}
+   + Componenti interfaccia classica{#classic-ui-components}
       + [Sviluppo di componenti AEM (interfaccia classica)](developing-components-classic.md)
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
@@ -114,7 +114,7 @@ ht-degree: 12%
       + [Componente pagina SPA](spa-page-component.md)
       + [Mappatura da modello dinamico a componente per SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routing modello SPA](spa-routing.md)
-      + [Integrazione Adobe Experience Platform Launch SPA e](spa-launch.md)
+      + [Integrazione Adobe Experience Platform Launch SPA e ](spa-launch.md)
       + [Rendering lato SPA e lato server](spa-ssr.md)
       + [Materiali di riferimento SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
@@ -178,7 +178,7 @@ ht-degree: 12%
       + [Richiedi script di analisi](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](jmx-integration.md)
    + [Sviluppo dell’editor di massa](dev-bulk-editor.md)
-   + Estensione dell’interfaccia classica{#extending-classic-ui}
+   + Estensione dell&#39;interfaccia classica{#extending-classic-ui}
       + [Personalizzazione della console Siti Web (interfaccia classica)](customizing-siteadmin.md)
       + [Personalizzazione della console di benvenuto (interfaccia classica)](customizing-the-welcome-console.md)
       + [Sviluppo di report](dev-reports.md)
@@ -201,7 +201,7 @@ ht-degree: 12%
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
    + [Architettura dei contenuti](content-architecture.md)
    + [Architettura del software](software-architecture.md)
-   + Implementazione di riferimento We.Retail{#we-retail}
+   + Implementazione riferimento We.Retail{#we-retail}
       + [Implementazione di riferimento We.Retail](we-retail.md)
       + [Prova di frammenti di contenuto in We.Retail](we-retail-content-fragments.md)
       + [Prova dei componenti core in We.Retail](we-retail-core-components.md)
