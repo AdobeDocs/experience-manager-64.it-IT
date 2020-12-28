@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >Il GDPR è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come GDPR, CCPA ecc.
 
-## Supporto  AEM Mobile GDPR {#aem-mobile-gdpr-support}
+##  supporto AEM Mobile GDPR {#aem-mobile-gdpr-support}
 
  AEM Mobile è pronta ad assistere i clienti nei loro obblighi di conformità ai requisiti GDPR. Nessun dato personale è memorizzato in  AEM Mobile. Se hai effettuato il provisioning, puoi accedere ad Adobe Experience Mobile con il tuo Adobe ID .
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
- prodotto Digital Publishing del Adobe (che precede  AEM Mobile) supporta  iniziative di preparazione del GDPR del Adobe. Consultate [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito verranno fornite informazioni specifiche sul supporto per le funzioni GDPR pertinenti nel prodotto Digital Publishing Suite, tra cui come lavorare con  Adobe per avviare richieste GDPR.
+ prodotto Digital Publishing del Adobe (che precede  AEM Mobile) supporta  iniziative di preparazione del GDPR del Adobe. Vedere [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito verranno fornite informazioni specifiche sul supporto per le funzioni GDPR pertinenti nel prodotto Digital Publishing Suite, tra cui come lavorare con  Adobe per avviare richieste GDPR.
 
 Per evitare di confondere  AEM Mobile con il precedente prodotto Digital Publishing Suite, potete accedere al prodotto Digital Publishing Suite qui:
 
