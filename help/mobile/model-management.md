@@ -17,11 +17,11 @@ ht-degree: 1%
 ---
 
 
-# Panoramica sui modelli{#models-overview}
+# Panoramica dei modelli{#models-overview}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 La gestione dei modelli prevede la creazione e la gestione di modelli allo scopo di associare a eventuali oggetti dati. Ogni modello includerà tutte le proprietà e le definizioni dei campi necessarie per facilitare la creazione e il rendering degli oggetti.
 
@@ -52,7 +52,7 @@ I modelli vengono utilizzati per determinare in che modo vengono create le entit
 >Un modello esiste all&#39;esterno di un&#39;app in quanto più app possono utilizzarlo.
 
 
-Consulta **[Modelli](/help/mobile/administer-mobile-apps.md)**per creare e gestire modelli nel dashboard e nell&#39;archivio.
+Vedere **[Modelli](/help/mobile/administer-mobile-apps.md)** per creare e gestire modelli nel dashboard e nella directory archivio.
 
 ### Entità nel modello di contenuto {#entities-in-content-model}
 
@@ -60,9 +60,9 @@ Un&#39;entità è un&#39;istanza di un modello di contenuto. Un&#39;entità vien
 
 Nel caso del contenuto AEM esistente, un&#39;entità viene generata utilizzando un modello e l&#39;origine di contenuto AEM. Ad esempio, un&#39;entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello di pagina.
 
-Le modifiche al contenuto di riferimento di un&#39;entità determineranno una modifica all&#39;entità. Ad esempio, se viene aggiornato un *cq:page* , verranno aggiornate anche tutte le entità basate su tale pagina.
+Le modifiche al contenuto di riferimento di un&#39;entità determineranno una modifica all&#39;entità. Ad esempio, se viene aggiornato un *cq:page*, verranno aggiornate anche tutte le entità basate su tale pagina.
 
-Consultate **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)**per creare entità personalizzate dai modelli.
+Vedere **[Utilizzo di Entità](/help/mobile/spaces-and-entities.md)** per creare entità personalizzate dai modelli.
 
 >[!NOTE]
 >
@@ -75,9 +75,9 @@ Uno spazio viene utilizzato per organizzare le entità per un accesso facilitato
 
 Dal lato AEM, uno spazio è un modo conveniente per gestire le entità correlate. Può essere utilizzato anche per assegnare le autorizzazioni. È possibile autorizzare uno spazio per proteggere le entità che si trovano in tale spazio.
 
-*Ad esempio*,
+*Esempio*,
 
-Un utente ha tre classificazioni generali di entità. Uno è solo per uso interno, un altro è approvato per uso pubblico e ancora un terzo è per le entità comuni che vengono utilizzate da molte app. Per semplificare la gestione, l&#39;utente crea tre spazi: *interni*, *pubblici* (con contenuti sia inglesi che francesi) e *comuni* per la gestione delle entità appropriate, come indicato di seguito:
+Un utente ha tre classificazioni generali di entità. Uno è solo per uso interno, un altro è approvato per uso pubblico e ancora un terzo è per le entità comuni che vengono utilizzate da molte app. Per semplificare la gestione, l&#39;utente crea tre spazi: *internal*, *public* (con contenuti sia inglesi che francesi) e *common* per la gestione delle entità appropriate come indicato di seguito:
 
 * /content/entities/internal
 * /content/entities/public/en
@@ -86,7 +86,7 @@ Un utente ha tre classificazioni generali di entità. Uno è solo per uso intern
 
 Verrà fornito un punto finale del servizio allo spazio in modo che la libreria client nativa possa richiedere un elenco dei contenuti di uno spazio. Questo &quot;elenco&quot; verrà restituito come oggetto JSON.
 
-Consultate **[Spazi ed entità](/help/mobile/spaces-and-entities.md)**per la creazione e la pubblicazione di spazi.
+Per creare e pubblicare spazi, consultate **[Spazi e entità](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
@@ -96,4 +96,4 @@ Consultate **[Spazi ed entità](/help/mobile/spaces-and-entities.md)**per la cre
 
 Le cartelle consentono agli utenti di organizzare le entità come richiesto e facilitano un controllo ACL più preciso. Gli spazi possono includere cartelle per organizzare ulteriormente il contenuto e le risorse dello spazio. Un utente può creare una propria gerarchia sotto uno spazio.
 
-Consultate **[Utilizzo delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)**per creare e gestire le cartelle all’interno di uno spazio.
+Vedere **[Utilizzo delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)** per creare e gestire le cartelle all&#39;interno di uno spazio.
