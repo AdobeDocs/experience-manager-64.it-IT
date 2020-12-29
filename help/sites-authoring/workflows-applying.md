@@ -42,7 +42,6 @@ Puoi avviare i flussi di lavoro a partire da:
 >
 >* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md).
 >* [Lavorare con Flussi di lavoro per progetto](/help/sites-authoring/projects-with-workflows.md).
-
 >
 
 
@@ -109,6 +108,7 @@ Puoi specificare i dettagli:
    * **Titolo pacchetto**
 
       * Puoi specificare un titolo da attribuire al pacchetto, per facilitarne l&#39;identificazione.
+
    >[!NOTE]
    >
    >L’opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per Supporto risorse multiple e sono state selezionate più risorse.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
