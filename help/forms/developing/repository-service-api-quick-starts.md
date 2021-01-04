@@ -1,8 +1,8 @@
 ---
 title: Avvio rapido API Servizio repository
 seo-title: Avvio rapido API Servizio repository
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il  servizio Repository di AEM Forms per creare una cartella, scrivere una risorsa, elencare risorse, leggere una risorsa, aggiornare una risorsa, cercare risorse, creare relazioni tra le risorse, bloccare una risorsa, gestire elenchi di controlli di accesso ed eliminare una risorsa.
+seo-description: Utilizzate il  servizio Repository di AEM Forms per creare una cartella, scrivere una risorsa, elencare risorse, leggere una risorsa, aggiornare una risorsa, cercare risorse, creare relazioni tra le risorse, bloccare una risorsa, gestire elenchi di controlli di accesso ed eliminare una risorsa.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
