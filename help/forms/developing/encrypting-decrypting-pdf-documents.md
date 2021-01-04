@@ -1,8 +1,8 @@
 ---
 title: Cifratura e decrittografia di documenti PDF
 seo-title: Cifratura e decrittografia di documenti PDF
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il servizio di cifratura per cifrare e decifrare i documenti. Le attività del servizio di cifratura includono la cifratura di un documento PDF con una password, la cifratura di un documento PDF con un certificato, la rimozione della cifratura basata su password da un documento PDF, la rimozione della cifratura basata su certificato da un documento PDF, lo sblocco del documento PDF per eseguire altre operazioni di servizio e la determinazione del tipo di cifratura di un documento PDF protetto.
+seo-description: Utilizzate il servizio di cifratura per cifrare e decifrare i documenti. Le attività del servizio di cifratura includono la cifratura di un documento PDF con una password, la cifratura di un documento PDF con un certificato, la rimozione della cifratura basata su password da un documento PDF, la rimozione della cifratura basata su certificato da un documento PDF, lo sblocco del documento PDF per eseguire altre operazioni di servizio e la determinazione del tipo di cifratura di un documento PDF protetto.
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8244'
 ht-degree: 0%
 
 ---
