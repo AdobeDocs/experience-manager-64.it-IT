@@ -1,8 +1,8 @@
 ---
 title: Gestione degli utenti
 seo-title: Gestione degli utenti
-description: 'null'
-seo-description: 'null'
+description: Utilizzate l'API di gestione utente per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità (che possono essere utenti o gruppi), nonché di autenticare gli utenti.
+seo-description: Utilizzate l'API di gestione utente per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità (che possono essere utenti o gruppi), nonché di autenticare gli utenti.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
@@ -744,7 +744,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>L'utente accede a un sito Web e specifica un nome utente e una password. Queste informazioni vengono inviate a un server applicazione J2EE che ospita  AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -870,7 +870,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma
  </thead> 
  <tbody>
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Un'applicazione client richiede che  AEM Forms esegua un'operazione di sincronizzazione.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma
    <td><p> AEM Forms esegue un'operazione di sincronizzazione.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Le informazioni utente vengono aggiornate.</p></td> 
   </tr> 
   <tr> 
