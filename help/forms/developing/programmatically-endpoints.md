@@ -1,8 +1,8 @@
 ---
 title: Gestione programmatica degli endpoint
 seo-title: Gestione programmatica degli endpoint
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il servizio Endpoint Registry per aggiungere endpoint EJB, aggiungere endpoint SOAP, aggiungere endpoint di cartelle esaminate, aggiungere endpoint e-mail, aggiungere endpoint Remoting, aggiungere endpoint Task Manager, modificare endpoint, rimuovere endpoint e recuperare informazioni sul connettore endpoint.
+seo-description: Utilizzate il servizio Endpoint Registry per aggiungere endpoint EJB, aggiungere endpoint SOAP, aggiungere endpoint di cartelle esaminate, aggiungere endpoint e-mail, aggiungere endpoint Remoting, aggiungere endpoint Task Manager, modificare endpoint, rimuovere endpoint e recuperare informazioni sul connettore endpoint.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '10781'
+source-wordcount: '10849'
 ht-degree: 1%
 
 ---
