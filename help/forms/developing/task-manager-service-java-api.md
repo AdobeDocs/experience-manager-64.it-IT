@@ -1,8 +1,8 @@
 ---
 title: Guida rapida API Java di Task Manager Service (SOAP)
 seo-title: Guida rapida API Java di Task Manager Service (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio Task Manager per assegnare attività, bloccare attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati del file e recuperare le informazioni sulle attività.
+seo-description: Utilizzare il servizio Task Manager per assegnare attività, bloccare attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati del file e recuperare le informazioni sulle attività.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
