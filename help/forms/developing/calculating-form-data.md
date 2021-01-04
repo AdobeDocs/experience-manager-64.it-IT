@@ -1,8 +1,8 @@
 ---
 title: Calcolo dei dati del modulo
 seo-title: Calcolo dei dati del modulo
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio Forms per calcolare i valori immessi dall'utente in un modulo e visualizzare i risultati. Il servizio Forms calcola i valori utilizzando l'API Java e l'API del servizio Web.
+seo-description: Utilizzare il servizio Forms per calcolare i valori immessi dall'utente in un modulo e visualizzare i risultati. Il servizio Forms calcola i valori utilizzando l'API Java e l'API del servizio Web.
 uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
