@@ -3,10 +3,10 @@ title: Integrare  AEM Assets con  Adobe InDesign Server
 description: Scoprite come integrare  AEM Assets con  InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 5%
+source-wordcount: '1702'
+ht-degree: 4%
 
 ---
 
@@ -135,13 +135,13 @@ Argomenti di estrazione dei supporti e percorsi di script
 
 * **Estendi script**: Qui è possibile specificare diverse combinazioni di script. Se si desidera che gli script personalizzati siano eseguiti sul InDesign Server , salvare gli script in `/apps/settings/dam/indesign/scripts`.
 
-   Per informazioni sugli script Indesign, vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+   Per informazioni sugli script  InDesign, vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 >[!CAUTION]
 >
 >Non modificare la libreria ExtendScript. La libreria fornisce la funzionalità HTTP necessaria per comunicare con Sling. Questa impostazione specifica la libreria da inviare all&#39;Adobe InDesign Server  per l&#39;utilizzo.
 
-Lo script `ThumbnailExport.jsx` eseguito dal passaggio del flusso di lavoro Estrazione file multimediali genera una rappresentazione in miniatura in formato .jpg. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da AEM.
+Lo script `ThumbnailExport.jsx` eseguito dal passaggio del flusso di lavoro Media Extraction genera una rappresentazione in miniatura in formato JPG. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da AEM.
 
 Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Accertatevi di non rimuovere i valori predefiniti, in quanto sono richiesti dall’interfaccia  di AEM Assets. Infine, il passaggio del flusso di lavoro Elimina rappresentazione anteprima immagine rimuove la rappresentazione in miniatura .jpg, in quanto non è più necessaria.
 
@@ -185,15 +185,15 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 ### Configurazione di Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-Se il server  InDesign e AEM vengono eseguiti su host diversi o una o entrambe le applicazioni non vengono eseguite sulle porte predefinite, configurate **Day CQ Link Externalizer** per impostare il nome host, la porta e il percorso del contenuto per il server InDesign .
+Se il InDesign Server  e il AEM si trovano su host diversi o se una o entrambe le applicazioni non funzionano sulle porte predefinite, configurate **Day CQ Link Externalizer** per impostare il nome host, la porta e il percorso del contenuto per il InDesign Server .
 
 1. Accedete a Configuration Manager dall&#39;URL `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Individua la configurazione **[!UICONTROL Day CQ Link Externalizer]** e fai clic sull’icona **[!UICONTROL Modifica]** per aprirla.
-1. Specificate il nome host e il percorso contestuale per il server Indesign e fate clic su **[!UICONTROL Salva]**.
+1. Individuare la configurazione **[!UICONTROL Day CQ Link Externalizer]**. Fare clic su **[!UICONTROL Modifica]** per aprire.
+1. Le impostazioni di Link Externalizer consentono di creare URL assoluti per la [!DNL Experience Manager] distribuzione e per [!DNL InDesign Server]. Utilizzare il campo **[!UICONTROL Domains]** per specificare il nome host e il percorso contestuale per [!DNL Adobe InDesign Server]. Seguire le istruzioni visualizzate. Fai clic su **[!UICONTROL Salva]**.
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![Impostazioni di collegamento esternalizzatore](assets/link-externalizer-config.png)
 
-### Attivazione dell&#39;elaborazione parallela dei processi per  InDesign Server {#enabling-parallel-job-processing-for-indesign-server-s}
+### Abilitazione dell&#39;elaborazione parallela dei processi per  InDesign Server {#enabling-parallel-job-processing-for-indesign-server}
 
 È ora possibile abilitare l&#39;elaborazione processi paralleli per gli ID.
 
