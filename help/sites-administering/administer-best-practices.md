@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 16%
+source-wordcount: '543'
+ht-degree: 13%
 
 ---
 
@@ -37,7 +37,7 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
 
 ## Assets {#assets}
 
-Le best practice relative alle risorse, inclusa la funzionalità per i file multimediali dinamici e l’integrazione con Scene7, sono descritte negli argomenti elencati di seguito:
+Le best practice relative alle risorse, inclusa la funzionalità Dynamic Media e l&#39;integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
 
 <table> 
  <tbody>
