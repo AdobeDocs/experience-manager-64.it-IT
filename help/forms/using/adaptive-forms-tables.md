@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ Il menu a discesa della riga fornisce inoltre l&#39;operazione Modifica per modi
 >[!NOTE]
 >
 >Anche se è possibile aggiungere un numero qualsiasi di righe in una tabella, il numero massimo di colonne è sei. Inoltre, non è possibile eliminare la riga di intestazione dalla tabella.
+
+### Impostare la larghezza della colonna per una tabella {#set-column-width}
+
+Per impostare la larghezza della colonna per una tabella, procedere come segue:
+
+1. Nella scheda **[!UICONTROL Contenuto]**, toccate il componente **[!UICONTROL Tabella]** e toccate l&#39;icona Configura (![Configura](assets/configure-icon.svg)).
+
+1. Immettere l&#39;elenco di valori separati da virgola nel campo **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel campo **[!UICONTROL Larghezza colonna]** si ottiene l&#39;impostazione della larghezza delle colonne come 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 come la larghezza per la prima colonna fa riferimento a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
 
 ### Aggiungi descrizione tabella {#add-table-description}
 
