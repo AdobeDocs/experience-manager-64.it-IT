@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 8%
 
 ---
@@ -84,7 +84,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni dettagliate sulla definizione della struttura da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Per i dettagli tecnici della struttura, vedere [Struttura](/help/sites-developing/page-templates-editable.md#structure) in questo documento.
+   Per informazioni tecniche sulla struttura, vedere [Struttura](/help/sites-developing/page-templates-editable.md#structure) in questo documento.
 
    **Criteri**
 
@@ -95,7 +95,7 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni dettagliate sulla definizione dei criteri da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Per informazioni tecniche sui criteri, consultare [Criteri di contenuto](/help/sites-developing/page-templates-editable.md#content-policies) in questo documento.
+   Per informazioni tecniche sui criteri, vedere [Criteri di contenuto](/help/sites-developing/page-templates-editable.md#content-policies) in questo documento.
 
    **Contenuto iniziale**
 
@@ -133,6 +133,16 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni tecniche sulla creazione di pagine con modelli modificabili, consultare [Pagine di contenuti risultanti](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in questo documento.
 
+>[!TIP]
+>
+>Non inserire mai informazioni che devono essere internazionalizzate in un modello. A scopo di internalizzazione, si consigliano le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>
+> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+
 >[!NOTE]
 >
 >La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto, e se è assente, si verificherà l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -140,10 +150,6 @@ Durante la creazione di un nuovo modello modificabile:
 >Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse include automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo spazio dei nomi `cq.shared`.
 >
 >Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](/help/sites-developing/clientlibs.md).
-
->[!CAUTION]
->
->Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello.
 
 ## Cartelle modello {#template-folders}
 
@@ -217,7 +223,7 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
 1. Andate a **Navigazione globale** -> **Strumenti** > **Browser di configurazione**.
 
-   Le cartelle esistenti sono elencate a sinistra, inclusa la cartella **globa** l.
+   Le cartelle esistenti sono elencate a sinistra, inclusa la cartella **globale**.
 
 1. Fai clic su **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** è necessario configurare i seguenti campi:
