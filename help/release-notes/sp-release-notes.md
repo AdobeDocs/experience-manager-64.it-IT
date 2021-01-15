@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 23%
 
 ---
@@ -48,7 +48,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * L&#39;integrazione del modello di dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
-*  AEM Assets è ora configurato con Brand Portal tramite  Adobe I/O.
+*  AEM Assets è ora configurato con Brand Portal tramite [!DNL Adobe I/O].
 
 * È stata aggiornata la versione jQuery inclusa nel pacchetto ContextHub alla 3.2.1.
 
@@ -349,7 +349,7 @@ Se utilizzi il pacchetto `com.day.cq.dam.handler.standard.msoffice` nell&#39;imp
 
 **Programma di installazione di JEE per Forms**
 
-**Servizi documentali**
+**Document Services**
 
 * Il servizio Converti PDF non è in grado di convertire i documenti PDF in PostScript e visualizza un messaggio di errore (NPR-31267).
 
@@ -1256,7 +1256,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 * file binario convertpdf mancante nel pacchetto aggiuntivo AIX Forms, che causa un errore durante la chiamata del servizio PDFA. Hotfix per CQ-4257873
 * Il servizio di acquisizione della carta si blocca durante l&#39;elaborazione dei file TIFF. NPR-28079: Hotfix per CQ-4240649
 
-**Servizi documentali**
+**Document Services**
 
 * Aggiungi la conformità FIPS per il flusso di lavoro RE in Digital Signature, estensioni di Reader, CryptoProvider e TrustStore. NPR-27495: Hotfix per CQ-4257572
 * La conversione non riesce durante l&#39;esecuzione del servizio AssemblerService.toPDFA in un ciclo. NPR-26354: Hotfix per CQ-4248656
@@ -1612,7 +1612,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * (Editor modello) Il modello di base mostra le aree di rilascio aggiuntive del trascinamento di intestazione e piè di pagina e gli sfarfalli dello schermo all&#39;apertura del canale Web. Hotfix per CQ-4253323
 * I componenti generati automaticamente non vengono evidenziati quando si seleziona dalla struttura Contenuto. Hotfix per CQ-4246178
 
-**Servizi documentali**
+**Document Services**
 
 * (Form Service) OSGI non supporta XFAF. NPR-25181, Hotfix per CQ-4251313
 * I caratteri nell&#39;intestazione del file PDF assemblato stanno diventando illeggibili. NPR-25113: Hotfix per CQ-4244682
@@ -1641,7 +1641,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * La funzione di creazione/modifica delle impostazioni di protezione non funziona. NPR-24769: Hotfix per CQ-4246927
 *  Optimize PDF rimuovendo selettivamente i font tramite una singola chiamata API. NPR-23287
 
-**Servizi documentali**
+**Document Services**
 
 * Il servizio di output non fornisce i tag corretti per l&#39;Reader di accessibilità. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Hotfix per CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
