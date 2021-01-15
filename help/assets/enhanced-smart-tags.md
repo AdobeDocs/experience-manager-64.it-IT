@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 17%
+source-wordcount: '1567'
+ht-degree: 18%
 
 ---
 
@@ -31,7 +31,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza il framework AI di  Adobe Sensei per formare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su  Adobe I/O. Per utilizzarlo in Adobe Experience Manager (AEM), l&#39;amministratore di sistema deve integrare l&#39;istanza AEM con  I/O Adobe.
+Smart Content Service è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in Adobe Experience Manager (AEM), l&#39;amministratore di sistema deve integrare l&#39;istanza AEM con [!DNL Adobe I/O].
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -44,14 +44,14 @@ Di seguito sono riportati i passaggi principali per utilizzare Smart Content Ser
 
 ## Prerequisiti {#prerequisites}
 
-Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su Adobe I/O:
+Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su [!DNL Adobe I/O]:
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 
 ## Onboarding {#onboarding}
 
-Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo da AEM. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento  I/O Adobe.
+Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo da AEM. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
 
 L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con AEM. Per integrare il servizio con  AEM Assets, vedere [Configurare i tag avanzati](config-smart-tagging.md).
 
