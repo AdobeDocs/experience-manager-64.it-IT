@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 26%
@@ -190,7 +190,7 @@ Se il predefinito per immagini che cerchi non è visibile, potrebbe essere neces
 Format: consente di selezionare il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, è possibile che siano disponibili ulteriori opzioni di configurazione. Consulta [Best practice sui predefiniti per immagini](/help/assets/managing-image-presets.md#image-preset-options).
 
 * ****
-NitidezzaSelezionate la modalità di nitidezza dell’immagine. La regolazione della nitidezza è descritta in dettaglio in [Best practice sui predefiniti per immagini](/help/assets/managing-image-presets.md#image-preset-options) e [Best practice sulla nitidezza](/help/assets/assets/s7_sharpening_images.pdf).
+NitidezzaSelezionate la modalità di nitidezza dell’immagine. La regolazione della nitidezza è descritta in dettaglio in [Best practice sui predefiniti per immagini](/help/assets/managing-image-presets.md#image-preset-options) e [Best practice sulla nitidezza](/help/assets/assets/sharpening_images.pdf).
 
 * **[!UICONTROL URL]**
 ModificatoriPotete modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Tali situazioni vengono descritte in [Predefiniti per immagini](/help/assets/managing-image-presets.md) e nella [Guida ai comandi](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
