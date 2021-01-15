@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Miglioramenti nell&#39;ultima versione di Smart Imaging:
 
 ## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Smart Imaging è incluso con la licenza esistente di Dynamic Media Classic (Scene7) o AEM Dynamic Media (On Prem, AMS e AEM come Cloud Service).
+No. Smart Imaging è incluso con la licenza esistente di Dynamic Media Classic o AEM Dynamic Media (On Prem, AMS e AEM come Cloud Service).
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache arrivan
 
 ## Come posso verificare se la funzione di imaging intelligente funziona come previsto?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Dopo aver configurato l’account con la funzione di imaging intelligente, caricate nel browser un URL immagine Dynamic Media Classic (Scene7)/Dynamic Media.
+1. Dopo aver configurato l’account con la funzione di imaging intelligente, caricate nel browser un URL immagine Dynamic Media Classic/Dynamic Media.
 1. Aprite il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti per sviluppatori]** nel browser. Oppure, scegliete uno strumento di sviluppo browser a vostra scelta.
 
 1. Verificate che la cache sia disattivata quando gli strumenti di sviluppo sono aperti.
