@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
-source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1361'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Configurare &#39;integrazione AEM Assets con  Experience Cloud e Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-I clienti Adobe Experience Cloud possono sincronizzare le risorse all’interno di Adobe Experience Manager (AEM) Assets con Adobe Creative Cloud e viceversa. Potete inoltre sincronizzare le risorse con  Experience Cloud e viceversa. Potete configurare questa sincronizzazione tramite  Adobe I/O.
+I clienti Adobe Experience Cloud possono sincronizzare le risorse all’interno di Adobe Experience Manager (AEM) Assets con Adobe Creative Cloud e viceversa. Potete inoltre sincronizzare le risorse con  Experience Cloud e viceversa. È possibile configurare questa sincronizzazione tramite [!DNL Adobe I/O].
 
 Il flusso di lavoro per impostare questa integrazione è:
 
-1. Create un&#39;autenticazione in  Adobe I/O utilizzando un gateway pubblico e ottenete un ID applicazione.
+1. Create un&#39;autenticazione in [!DNL Adobe I/O] utilizzando un gateway pubblico e ottenete un ID applicazione.
 1. Create un profilo nell&#39;istanza di AEM Assets  utilizzando l&#39;ID applicazione.
 1. Utilizzate questa configurazione per sincronizzare le risorse in  AEM Assets con Creative Cloud.
 
