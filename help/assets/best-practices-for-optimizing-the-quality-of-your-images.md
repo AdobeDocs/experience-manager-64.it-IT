@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 5%
+source-wordcount: '1493'
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ Come procedura ottimale per il formato immagine, iniziate con l&#39;impostazione
 
 La riduzione dinamica delle dimensioni delle immagini è una delle attività più comuni. Si tratta di specificare le dimensioni e, facoltativamente, la modalità di downsampling da usare per ridimensionare l’immagine.
 
-* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`o semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
+* Per il ridimensionamento delle immagini, l&#39;approccio migliore e più semplice consiste nell&#39;utilizzare `&wid=<value>` e `&hei=<value>,`oppure semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
 * `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Iniziate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L&#39;utilizzo del downsampling `value =bilin` è più veloce, ma spesso comporta l&#39;aliasing degli artefatti.
 
 Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
@@ -48,7 +48,7 @@ Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wi
 
 La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito Web e in cui si verificano numerosi errori. Dedica il tempo necessario per scoprire come funzionano la nitidezza e la maschera di contrasto in AEM, facendo riferimento alle seguenti risorse utili:
 
-Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/s7_sharpening_images.pdf) si applica anche a AEM.
+Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/sharpening_images.pdf) si applica anche a AEM.
 
 Vedere anche [Nitidezza di un&#39;immagine con maschera di contrasto](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,19 +64,18 @@ Esistono due metodi per rendere le immagini più nitide:
       * **[!UICONTROL amount]** (0-5, intensità dell&#39;effetto).
       * **[!UICONTROL radius]** (0-250, larghezza delle &quot;linee di nitidezza&quot; tracciate attorno all’oggetto, misurata in pixel.)
 
-         Ricordate che i parametri radius e amount funzionano l&#39;uno contro l&#39;altro. La riduzione del raggio può essere compensata aumentando la quantità. Raggio consente un controllo più preciso, poiché un valore inferiore rende più nitidi solo i pixel del bordo, mentre un valore più elevato rende più nitida una banda più ampia di pixel.
+             Ricordate che i parametri radius e amount funzionano l&#39;uno contro l&#39;altro. La riduzione del raggio può essere compensata aumentando la quantità. Raggio consente un controllo più preciso poiché un valore inferiore rende più nitidi solo i pixel del bordo, mentre un valore più elevato rende più nitida una banda più ampia di pixel.
+         * **[!UICONTROL threshold]** (0-255, sensibilità dell&#39;effetto.)
 
-      * **[!UICONTROL threshold]** (0-255, sensibilità dell&#39;effetto.)
+             Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
+         
+         Per ulteriori informazioni su come impostare questi tre parametri, comprese le best practice da utilizzare con il filtro, consultate le risorse seguenti:
 
-         Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL threshold]** consente di evitare l&#39;eccessiva nitidezza delle aree con colori simili, ad esempio le tonalità della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
-      Per ulteriori informazioni su come impostare questi tre parametri, comprese le best practice da utilizzare con il filtro, consultate le risorse seguenti:
+         AEM argomento della guida sulla nitidezza di un’immagine.
 
-      AEM argomento della guida sulla nitidezza di un’immagine.
+         White paper sulle procedure ottimali [Nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/sharpening_images.pdf).
 
-      White paper sulle procedure ottimali [Nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/s7_sharpening_images.pdf).
-
-   * AEM inoltre consente di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell’immagine utilizzando il valore 1.
-
+      * AEM inoltre consente di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell’immagine utilizzando il valore 1.
 
 Come procedura ottimale, iniziate con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio con cui potete iniziare sono le seguenti:
 
@@ -121,11 +120,10 @@ Questa combinazione di impostazioni produce ottimi risultati nella maggior parte
 
 Se l’immagine richiede un’ulteriore ottimizzazione, regolate gradualmente i parametri di nitidezza (maschera di contrasto) iniziando con un raggio impostato su 0.2 o 0.3. Quindi, aumentate gradualmente l&#39;importo da 1,75 a un massimo di 4 (equivalente a 400% in Photoshop). Verificate che il risultato desiderato sia raggiunto.
 
-Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori riportati sopra rappresentano un approccio convalidato dagli studi creativi, è possibile iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
+Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori sopra riportati sono un approccio convalidato dagli studi creativi, potete iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
 
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
-* Provate a utilizzare parametri diversi in tempo reale, direttamente su un URL o utilizzando la funzionalità di regolazione delle immagini di Scene7 Publishing System, che fornisce anteprime in tempo reale per le operazioni di regolazione.
+* Provate e testate i diversi parametri in tempo reale, direttamente su un URL.
 * Come procedura ottimale, potete raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
 * AEM inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio l’applicazione della nitidezza alle immagini durante l’assimilazione. Per i casi d&#39;uso avanzati in cui questa può essere un&#39;opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può essere di aiuto con approfondimenti personalizzati e procedure ottimali.
-
