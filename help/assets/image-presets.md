@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 11%
 
 ---
@@ -55,5 +55,5 @@ Potete applicare un predefinito per immagini a un’immagine ogni volta che la v
    >
    >Se la risorsa *e* il predefinito immagine non sono ancora stati pubblicati, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se presente) non è disponibile.
    >
-   >I predefiniti per immagini vengono inoltre pubblicati automaticamente su un server Dynamic Media S7.
+   >I predefiniti per immagini vengono inoltre pubblicati automaticamente su un server Dynamic Media.
 
