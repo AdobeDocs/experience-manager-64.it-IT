@@ -1,8 +1,8 @@
 ---
 title: Java APIQuick Start (SOAP) di Forms Service con codice a barre
 seo-title: Java APIQuick Start (SOAP) di Forms Service con codice a barre
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il servizio Forms con codice a barre per decodificare i dati del modulo con codice a barre tramite la Guida rapida a Java API.
+seo-description: Utilizzate il servizio Forms con codice a barre per decodificare i dati del modulo con codice a barre tramite la Guida rapida a Java API.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
