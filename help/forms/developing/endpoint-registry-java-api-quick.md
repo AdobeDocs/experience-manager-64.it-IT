@@ -1,8 +1,8 @@
 ---
 title: QuickStart API Java del Registro di sistema endpoint (SOAP)
 seo-title: QuickStart API Java del Registro di sistema endpoint (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilizzate l'API Java del Registro di sistema di endpoint per aggiungere un endpoint EJB, aggiungere un endpoint SOAP, un endpoint della cartella esaminata, aggiungere un endpoint e-mail, aggiungere un endpoint remoto, aggiungere un endpoint TaskManager, modificare un endpoint, rimuovere un endpoint e recuperare informazioni sul connettore dell'endpoint.
+seo-description: Utilizzate l'API Java del Registro di sistema di endpoint per aggiungere un endpoint EJB, aggiungere un endpoint SOAP, un endpoint della cartella esaminata, aggiungere un endpoint e-mail, aggiungere un endpoint remoto, aggiungere un endpoint TaskManager, modificare un endpoint, rimuovere un endpoint e recuperare informazioni sul connettore dell'endpoint.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
