@@ -1,8 +1,8 @@
 ---
 title: Contenitore di servizi
 seo-title: Contenitore di servizi
-description: 'null'
-seo-description: 'null'
+description: Ulteriori informazioni sulle funzionalità del contenitore di servizi. Inoltre, l'articolo descrive anche i diversi modi in cui è possibile richiamare  servizi AEM Forms a livello di programmazione.
+seo-description: Ulteriori informazioni sulle funzionalità del contenitore di servizi. Inoltre, l'articolo descrive anche i diversi modi in cui è possibile richiamare  servizi AEM Forms a livello di programmazione.
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
