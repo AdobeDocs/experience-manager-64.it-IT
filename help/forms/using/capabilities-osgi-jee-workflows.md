@@ -1,17 +1,17 @@
 ---
 title: 'Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e  AEM Forms JEE '
 seo-title: 'Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e  AEM Forms JEE '
-description: 'null'
-seo-description: 'null'
+description: Ulteriori informazioni sulle differenze nelle azioni supportate da AEM Inbox e HTML Workspace, sulle differenze nelle funzionalità supportate dai flussi di lavoro AEM modulo su OSGi e  flussi di lavoro AEM Forms JEE e sulle differenze tra AEM Inbox e  funzionalità dell'app AEM Forms.
+seo-description: Ulteriori informazioni sulle differenze nelle azioni supportate da AEM Inbox e HTML Workspace, sulle differenze nelle funzionalità supportate dai flussi di lavoro AEM modulo su OSGi e  flussi di lavoro AEM Forms JEE e sulle differenze tra AEM Inbox e  funzionalità dell'app AEM Forms.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 20%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 
@@ -164,7 +164,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e  flussi di lavoro AEM For
    <td>Supportato <sup>[2]</sup></td> 
   </tr>
   <tr>
-   <td>Servizi documentali</td> 
+   <td>Document Services</td> 
    <td>Supportato <sup>[3]</sup></td> 
    <td>Supportato <sup>[3]</sup></td> 
   </tr>
