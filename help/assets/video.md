@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
+source-wordcount: '10456'
 ht-degree: 4%
 
 ---
@@ -414,7 +414,7 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
    <td><p>Origine</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificato</p> </td> 
@@ -901,19 +901,13 @@ Affinché i rapporti video funzionino correttamente, viene automaticamente creat
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
-### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato un predefinito per visualizzatori basato su un visualizzatore video preconfigurato, non è necessario effettuare ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’SDK per visualizzatori HTML5 di Scene7, utilizzate i seguenti passaggi per fare in modo che il visualizzatore video invii eventi di tracciamento ad Dynamic Media Video Reports.
+Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato un predefinito per visualizzatori basato su un visualizzatore video preconfigurato, non è necessario effettuare ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’API SDK per visualizzatori HTML5, utilizzate i seguenti passaggi per fare in modo che il visualizzatore video invii eventi di tracciamento ad Dynamic Media Video Reports.
 
-Per creare visualizzatori video personalizzati, usate Scene7 Viewers Reference e l’SDK per visualizzatori Scene7 HTML5.
+Per creare visualizzatori video personalizzati, utilizzate la [ Guida di riferimento visualizzatori Dynamic Media per Adobi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e l&#39;API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).[
 
-Consultate la [Guida di riferimento dei visualizzatori Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
-
-Scaricate l’SDK per visualizzatori HTML Scene7 da Adobe Developer Connection.
-
-Vedere [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
-
-Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Scene7:
+Per visualizzare i rapporti video basati su un visualizzatore video creato mediante l’API SDK per visualizzatori HTML5:
 
 1. Passate a qualsiasi risorsa video pubblicata.
 1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
@@ -940,7 +934,7 @@ Per visualizzare i rapporti video basati su un visualizzatore video creato con l
 
 1. Create il componente TrackingManager effettuando le seguenti operazioni:
 
-   * Dopo aver chiamato `s7sdk.Utils.init();` create un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
+   * Dopo aver chiamato `s7sdk.Util.init();` create un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1037,7 +1031,7 @@ Per semplificare la visualizzazione e la navigazione dei video di formato esteso
 >
 >Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
-Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nella guida  Adobe Scene7 Viewer SDK for HTML5 fate riferimento all’intestazione &quot;Customizing Behavior Using Modifiers&quot; (Personalizzazione del comportamento mediante i modificatori) nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`.  Adobe Scene7 Viewer SDK è disponibile come download da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nell’API SDK per visualizzatori HTML5  Adobe, fate riferimento all’intestazione &quot;Personalizzazione del comportamento mediante modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consultate la documentazione [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
 
 Potete creare un elenco di capitoli per il video nello stesso modo in cui create le didascalie. In altre parole, potete creare un file WebVTT. Tuttavia, si noti che questo file deve essere separato da qualsiasi file di sottotitoli WebVTT eventualmente utilizzato; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 
