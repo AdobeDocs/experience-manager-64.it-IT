@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 55%
+source-wordcount: '1681'
+ht-degree: 54%
 
 ---
 
@@ -137,7 +137,7 @@ La tabella seguente fornisce un confronto ad alto livello delle capacità suppor
 | Approccio | Primo approccio HTML5. Flash viene utilizzato solo per il fallback non HTML5. | Flash è utilizzato sulla maggior parte dei computer desktop. HTML5 è usato per dispositivi mobili e tablet. |
 | Consegna | Progressivo | Streaming adattivo |
 | Tracciamento | Sì | Sì |
-| Estensibilità | Sì | Sì (con visualizzatore SDK di Scene7) |
+| Estensibilità | Sì | Sì (con [Documentazione API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Video mobile | Sì | Sì |
 
 ### Impostazione  {#setting-up}
