@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -391,7 +391,8 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
      <li><strong>Applica a</strong>  - Determina se la non nitidezza viene applicata a ogni colore o luminosità.</li>
     </ul>
     <div>
-      La nitidezza è descritta in *  Adobe Dynamic Media Classic Image Quality and Sharpening Best practice</a> (Qualità delle immagini e nitidezza).
+      La nitidezza è descritta in  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf"> Adobe Dynamic Media Classic Image Quality and Sharpening Best practice</a> (Qualità delle immagini e nitidezza).
     </div> </td>
   </tr>
   <tr>
