@@ -1,18 +1,16 @@
 ---
 title: Gestione dei predefiniti per immagini Dynamic Media
 description: Comprendere i predefiniti per immagini di Dynamic Media e imparare a creare, modificare e gestire i predefiniti per immagini
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -106,31 +104,31 @@ Toccate Adobe Experience Manager in alto a sinistra, selezionate **[!UICONTROL S
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Argomento processo</strong></td> 
-   <td><strong>Impostazione predefinita</strong></td> 
-   <td><strong>Descrizione</strong></td> 
+   <td><strong>Argomento processo</strong></td>
+   <td><strong>Impostazione predefinita</strong></td>
+   <td><strong>Descrizione</strong></td>
   </tr> 
   <tr> 
-   <td>Tipi mime</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>Elenco di tipi mime di documenti considerati documenti PDF o  Illustrator.<br /> </td> 
+   <td>Tipi mime</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>Elenco di tipi mime di documenti considerati documenti PDF o  Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Larghezza max.</td> 
-   <td>2048</td> 
-   <td>Larghezza massima della rappresentazione di anteprima generata, in pixel.<br /> </td> 
+   <td>Larghezza max.</td>
+   <td>2048</td>
+   <td>Larghezza massima della rappresentazione di anteprima generata, in pixel.<br/> </td>
   </tr> 
   <tr> 
-   <td>Altezza max.</td> 
-   <td>2048</td> 
-   <td>Altezza massima della rappresentazione di anteprima generata, in pixel.<br /> </td> 
+   <td>Altezza max.</td>
+   <td>2048</td>
+   <td>Altezza massima della rappresentazione di anteprima generata, in pixel.<br/> </td>
   </tr> 
   <tr> 
-   <td>Risoluzione</td> 
-   <td>72</td> 
-   <td>Risoluzione per rasterizzare la prima pagina, in ppi (pixel per pollice).</td> 
-  </tr> 
- </tbody> 
+   <td>Risoluzione</td>
+   <td>72</td>
+   <td>Risoluzione per rasterizzare la prima pagina, in ppi (pixel per pollice).</td>
+  </tr>
+ </tbody>
 </table>
 
 Utilizzando gli argomenti di processo predefiniti, la prima pagina di un documento PDF/AI viene rasterizzata a 72 ppi e l&#39;immagine di anteprima generata viene ridimensionata a 2048 x 2048 pixel. Per una distribuzione tipica, potete aumentare la risoluzione fino a un minimo di 150 ppi o più. Ad esempio, un documento con dimensioni Lettera USA a 300 ppi richiede rispettivamente una larghezza e un&#39;altezza massime di 2550 x 3300 pixel.
@@ -158,24 +156,24 @@ I seguenti script sono utilizzati dall&#39;integrazione Dynamic Media:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Estendi nome script</strong></td> 
-   <td><strong>Predefiniti</strong></td> 
-   <td><strong>Descrizione</strong></td> 
+   <td><strong>Estendi nome script</strong></td>
+   <td><strong>Predefiniti</strong></td>
+   <td><strong>Descrizione</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Sì</td> 
-   <td>Genera una rappresentazione a 300 ppi <code>thumbnail.jpg</code> ottimizzata e trasformata in una rappresentazione PTIFF dal componente di processo <code>Dynamic Media Process Image Assets</code>.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>Sì</td>
+   <td>Genera una rappresentazione a 300 ppi <code>thumbnail.jpg</code> ottimizzata e trasformata in una rappresentazione PTIFF dal componente di processo <code>Dynamic Media Process Image Assets</code>.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Sì</td> 
-   <td>Genera una risorsa secondaria JPEG a 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign . È inoltre ottimizzata e trasformata in PTIFF dal flusso di lavoro <code>DAM Update Asset</code>.<br /> </td> 
+   <td>Genera una risorsa secondaria JPEG a 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign . È inoltre ottimizzata e trasformata in PTIFF dal flusso di lavoro <code>DAM Update Asset</code>.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>No</td> 
-   <td>Genera una risorsa secondaria PDF per ogni pagina. La risorsa secondaria PDF viene elaborata come descritto in precedenza. Poiché il PDF contiene una sola pagina, non vengono generate risorse secondarie.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>No</td>
+   <td>Genera una risorsa secondaria PDF per ogni pagina. La risorsa secondaria PDF viene elaborata come descritto in precedenza. Poiché il PDF contiene una sola pagina, non vengono generate risorse secondarie.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Campo</strong></td> 
-   <td><strong>Descrizione</strong></td> 
+   <td><strong>Campo</strong></td>
+   <td><strong>Descrizione</strong></td>
   </tr> 
   <tr> 
-   <td><strong>Nome</strong></td> 
-   <td>Inserisci un nome descrittivo senza spazi vuoti. Includi nel nome le dimensioni immagine per aiutare gli utenti a identificare questo predefinito immagine.</td> 
+   <td><strong>Nome</strong></td>
+   <td>Inserisci un nome descrittivo senza spazi vuoti. Includi nel nome le dimensioni immagine per aiutare gli utenti a identificare questo predefinito immagine.</td>
+  </tr>
+  <tr> 
+   <td><strong>Larghezza e Altezza</strong></td>
+   <td>Specificate le dimensioni in pixel per la distribuzione dell’immagine. Larghezza e altezza devono essere maggiori di 0 pixel. Se uno dei due valori è 0, non viene creato alcun predefinito. Se entrambi i valori sono vuoti, viene creato un predefinito per immagini reattivo.</td>
   </tr> 
   <tr> 
-   <td><strong>Larghezza e Altezza</strong></td> 
-   <td>Specificate le dimensioni in pixel per la distribuzione dell’immagine. Larghezza e altezza devono essere maggiori di 0 pixel. Se uno dei due valori è 0, non viene creato alcun predefinito. Se entrambi i valori sono vuoti, viene creato un predefinito per immagini reattivo.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Formato</strong></td> 
-   <td><p>Scegliete un formato dal menu.</p> <p>La scelta di <strong>JPEG</strong> offre le seguenti opzioni aggiuntive:</p> 
+   <td><strong>Formato</strong></td>
+   <td><p>Scegliete un formato dal menu.</p> <p>La scelta di <strong>JPEG</strong> offre le seguenti opzioni aggiuntive:</p>
     <ul> 
      <li><strong>Qualità</strong>  - Controlla il livello di compressione JPEG. Questa impostazione influisce sia sulla dimensione del file che sulla qualità dell’immagine. La scala di qualità JPEG va da 1 a 100. La scala è visibile quando trascinate il cursore.</li> 
-     <li><strong>Attiva il downsampling</strong>  della crominanza JPG - Poiché l'occhio è meno sensibile alle informazioni sui colori ad alta frequenza rispetto alla luminanza ad alta frequenza, le immagini JPEG dividono le informazioni sulle immagini in componenti luminanza e colore. Quando un’immagine JPEG viene compressa, il componente luminanza viene lasciato a risoluzione piena, mentre i componenti colore vengono sottoposti a downsampling calcolando la media di gruppi di pixel. Il downsampling riduce il volume dei dati di mezzo o di un terzo, senza quasi alcun impatto sulla qualità percepita. Il downsampling non è applicabile alle immagini in scala di grigio. Questa tecnica riduce la quantità di compressione utile per le immagini ad alto contrasto (ad esempio, per le immagini con testo sovrapposto).</li> 
+     <li><strong>Attiva il downsampling</strong>  della crominanza JPG - Poiché l'occhio è meno sensibile alle informazioni sui colori ad alta frequenza rispetto alla luminanza ad alta frequenza, le immagini JPEG dividono le informazioni sulle immagini in componenti luminanza e colore. Quando un’immagine JPEG viene compressa, il componente luminanza viene lasciato a risoluzione piena, mentre i componenti colore vengono sottoposti a downsampling calcolando la media di gruppi di pixel. Il downsampling riduce il volume dei dati di mezzo o di un terzo, senza quasi alcun impatto sulla qualità percepita. Il downsampling non è applicabile alle immagini in scala di grigio. Questa tecnica riduce la quantità di compressione utile per le immagini ad alto contrasto (ad esempio, per le immagini con testo sovrapposto).</li>
+    </ul>
+    <div>
+      Scelta
+     <strong>GIF</strong> o
+     <strong>GIF con alfa</strong> fornisce questi
+     <strong>Opzioni Quantizzazione colore GIF</strong>:
+    </div>
+    <ul> 
+     <li><strong>Tipo  </strong>- Selezionate  <strong>Adattato</strong>  (impostazione predefinita),  <strong>Web</strong> o  <strong>Macintosh</strong>. Se si seleziona <strong>GIF con Alpha</strong>, l'opzione Macintosh non è disponibile.</li>
+     <li><strong>Dithering</strong> - Selezionare  <strong></strong> Diffusore o  <strong>Disattivato</strong>.</li>
+     <li><strong>Numero di colori  </strong>- Immettere un numero compreso tra 2 e 256.</li>
+     <li><strong>Elenco</strong>  colori - Immettere un elenco separato da virgole. Ad esempio, per bianco, grigio e nero immettete 000000,888888,ffffff.</li>
     </ul> 
     <div>
-      Scelta 
-     <strong>GIF</strong> o 
-     <strong>GIF con alfa</strong> fornisce questi 
-     <strong>Opzioni Quantizzazione colore GIF</strong>: 
-    </div> 
-    <ul> 
-     <li><strong>Tipo  </strong>- Selezionate  <strong>Adattato</strong>  (impostazione predefinita),  <strong>Web</strong> o  <strong>Macintosh</strong>. Se si seleziona <strong>GIF con Alpha</strong>, l'opzione Macintosh non è disponibile.</li> 
-     <li><strong>Dithering</strong> - Selezionare  <strong></strong> Diffusore o  <strong>Disattivato</strong>.</li> 
-     <li><strong>Numero di colori  </strong>- Immettere un numero compreso tra 2 e 256.</li> 
-     <li><strong>Elenco</strong>  colori - Immettere un elenco separato da virgole. Ad esempio, per bianco, grigio e nero immettete 000000,888888,ffffff.</li> 
-    </ul> 
-    <div>
-      Scelta 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong> oppure 
-     <strong>TIFF con alfa</strong> offre questa opzione aggiuntiva: 
-    </div> 
-    <ul> 
-     <li><strong>Compressione</strong> - Selezionare un algoritmo di compressione. Le opzioni dell'algoritmo per PDF sono <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; per TIFF sono <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e per TIFF con Alpha sono <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li> 
-    </ul> <p>La scelta di <strong>PNG</strong>, <strong>PNG con Alpha,</strong> o <strong>EPS</strong> non offre opzioni aggiuntive.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Nitidezza</strong></td> 
-   <td>Selezionate l'opzione <strong>Abilita nitidezza semplice</strong> per applicare all'immagine un filtro di nitidezza di base dopo che è stato effettuato il ridimensionamento. La nitidezza può contribuire a compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </td> 
-  </tr> 
- </tbody> 
+      Scelta
+     <strong>PDF</strong>,
+     <strong>TIFF</strong> oppure
+     <strong>TIFF con alfa</strong> offre questa opzione aggiuntiva:
+    </div>
+    <ul>
+     <li><strong>Compressione</strong> - Selezionare un algoritmo di compressione. Le opzioni dell'algoritmo per PDF sono <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; per TIFF sono <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e per TIFF con Alpha sono <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
+    </ul> <p>La scelta di <strong>PNG</strong>, <strong>PNG con Alpha,</strong> o <strong>EPS</strong> non offre opzioni aggiuntive.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Nitidezza</strong></td>
+   <td>Selezionate l'opzione <strong>Abilita nitidezza semplice</strong> per applicare all'immagine un filtro di nitidezza di base dopo che è stato effettuato il ridimensionamento. La nitidezza può contribuire a compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Opzioni scheda avanzate {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Campo</strong></td> 
-   <td><strong>Descrizione</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Spazio colore</strong></td> 
-   <td>Selezionare <strong>RGB, CMYK,</strong> o <strong>Scala di grigio</strong> per lo spazio colore.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Profilo colore</strong></td> 
-   <td>Selezionate il profilo dello spazio colore di output in cui deve essere convertita la risorsa se è diversa dal profilo di lavoro.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Intento di rendering</strong></td> 
-   <td>Potete ignorare l'intento di rendering predefinito. Gli intenti di rendering determinano cosa accade ai colori che non possono essere riprodotti nel profilo colore di destinazione (fuori gamma). L'Intento di rendering viene ignorato se non è compatibile con il profilo ICC. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Campo</strong></td>
+   <td><strong>Descrizione</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Spazio colore</strong></td>
+   <td>Selezionare <strong>RGB, CMYK,</strong> o <strong>Scala di grigio</strong> per lo spazio colore.</td>
+  </tr>
+  <tr>
+   <td><strong>Profilo colore</strong></td>
+   <td>Selezionate il profilo dello spazio colore di output in cui deve essere convertita la risorsa se è diversa dal profilo di lavoro.</td>
+  </tr>
+  <tr>
+   <td><strong>Intento di rendering</strong></td>
+   <td>Potete ignorare l'intento di rendering predefinito. Gli intenti di rendering determinano cosa accade ai colori che non possono essere riprodotti nel profilo colore di destinazione (fuori gamma). L'Intento di rendering viene ignorato se non è compatibile con il profilo ICC.
     <ul> 
-     <li>Selezionare <strong>Perceptual</strong> per comprimere la gamma totale da uno spazio colore a un altro spazio colore quando uno o più colori nell'immagine originale non rientrano nella gamma dello spazio colore di destinazione.</li> 
-     <li>Selezionare <strong>Colorimetrico relativo</strong> quando un colore nello spazio colore corrente non è compreso nella gamma nello spazio colore di destinazione e si desidera mapparlo sul colore più vicino possibile all'interno della gamma dello spazio colore di destinazione senza influire su altri colori. </li> 
-     <li>Selezionare <strong>Saturazione</strong> per riprodurre la saturazione del colore dell'immagine originale durante la conversione nello spazio colore di destinazione. </li> 
-     <li>Selezionare <strong>Colorimetrico assoluto</strong> per far corrispondere esattamente i colori senza alcuna regolazione per il punto bianco o il punto nero che altererebbe la luminosità dell'immagine.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Compensazione punto nero</strong></td> 
-   <td>Selezionate questa opzione se il profilo di output supporta questa funzione. La compensazione punto nero viene ignorata se non è compatibile con il profilo ICC specificato.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Dithering</strong></td> 
-   <td>Selezionate questa opzione per evitare o ridurre eventuali artefatti di bande colori. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Tipo nitidezza</strong></td> 
-   <td><p>Selezionare <strong>None</strong>, <strong>Sharpen</strong> o <strong>Unsharp Mask</strong>. </p> 
+     <li>Selezionare <strong>Perceptual</strong> per comprimere la gamma totale da uno spazio colore a un altro spazio colore quando uno o più colori nell'immagine originale non rientrano nella gamma dello spazio colore di destinazione.</li>
+     <li>Selezionare <strong>Colorimetrico relativo</strong> quando un colore nello spazio colore corrente non è compreso nella gamma nello spazio colore di destinazione e si desidera mapparlo sul colore più vicino possibile all'interno della gamma dello spazio colore di destinazione senza influire su altri colori. </li>
+     <li>Selezionare <strong>Saturazione</strong> per riprodurre la saturazione del colore dell'immagine originale durante la conversione nello spazio colore di destinazione. </li>
+     <li>Selezionare <strong>Colorimetrico assoluto</strong> per far corrispondere esattamente i colori senza alcuna regolazione per il punto bianco o il punto nero che altererebbe la luminosità dell'immagine.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Compensazione punto nero</strong></td>
+   <td>Selezionate questa opzione se il profilo di output supporta questa funzione. La compensazione punto nero viene ignorata se non è compatibile con il profilo ICC specificato.</td>
+  </tr>
+  <tr>
+   <td><strong>Dithering</strong></td>
+   <td>Selezionate questa opzione per evitare o ridurre eventuali artefatti di bande colori. </td>
+  </tr>
+  <tr>
+   <td><strong>Tipo nitidezza</strong></td>
+   <td><p>Selezionare <strong>None</strong>, <strong>Sharpen</strong> o <strong>Unsharp Mask</strong>. </p>
+    <ul>
+     <li>Selezionare <strong>None</strong> per disattivare la nitidezza.</li>
+     <li>Selezionate <strong>Nitidezza </strong>per applicare all'immagine un filtro di nitidezza di base dopo che è stato eseguito il ridimensionamento. La nitidezza può contribuire a compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </li>
+     <li>Selezionate<strong> Maschera di contrasto</strong> per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata finale. Potete controllare l’intensità dell’effetto, il raggio (in pixel) e una soglia di contrasto che verrà ignorata. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li>
+    </ul> <p>In <strong>Maschera di contrasto</strong> sono disponibili le seguenti opzioni:</p>
     <ul> 
-     <li>Selezionare <strong>None</strong> per disattivare la nitidezza.</li> 
-     <li>Selezionate <strong>Nitidezza </strong>per applicare all'immagine un filtro di nitidezza di base dopo che è stato eseguito il ridimensionamento. La nitidezza può contribuire a compensare la sfocatura che può prodursi quando un’immagine viene visualizzata in dimensioni diverse. </li> 
-     <li>Selezionate<strong> Maschera di contrasto</strong> per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata finale. Potete controllare l’intensità dell’effetto, il raggio (in pixel) e una soglia di contrasto che verrà ignorata. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li> 
-    </ul> <p>In <strong>Maschera di contrasto</strong> sono disponibili le seguenti opzioni:</p> 
-    <ul> 
-     <li><strong>Fattore</strong>  - Controlla la quantità di contrasto applicata ai pixel lungo i bordi. Il valore predefinito del numero reale è 1,0. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5,0. Considerate l'importo come una misura dell'intensità del filtro.</li> 
-     <li><strong>Raggio</strong>  - Determina il numero di pixel attorno ai pixel del bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettete un numero reale da 1 a 2. Un valore basso rende più nitidi solo i pixel del bordo; un valore elevato rende più nitida una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell’immagine.</li> 
-     <li><strong>Soglia</strong>  - Determina l'intervallo di contrasto da ignorare quando viene applicato il filtro maschera di contrasto. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo e quindi resi più nitidi. Per evitare di introdurre disturbo, provate con valori interi compresi tra 2 e 20. </li> 
-     <li><strong>Applica a</strong>  - Determina se la non nitidezza viene applicata a ogni colore o luminosità.</li> 
-    </ul> 
+     <li><strong>Fattore</strong>  - Controlla la quantità di contrasto applicata ai pixel lungo i bordi. Il valore predefinito del numero reale è 1,0. Per le immagini ad alta risoluzione, è possibile aumentare la risoluzione fino a 5,0. Considerate l'importo come una misura dell'intensità del filtro.</li>
+     <li><strong>Raggio</strong>  - Determina il numero di pixel attorno ai pixel del bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettete un numero reale da 1 a 2. Un valore basso rende più nitidi solo i pixel del bordo; un valore elevato rende più nitida una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell’immagine.</li>
+     <li><strong>Soglia</strong>  - Determina l'intervallo di contrasto da ignorare quando viene applicato il filtro maschera di contrasto. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo e quindi resi più nitidi. Per evitare di introdurre disturbo, provate con valori interi compresi tra 2 e 20. </li>
+     <li><strong>Applica a</strong>  - Determina se la non nitidezza viene applicata a ogni colore o luminosità.</li>
+    </ul>
     <div>
-      La nitidezza è descritta in 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Immagini di nitidezza</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modalità ricampionamento</strong></td> 
-   <td>Selezionare un'opzione <strong>Modalità di ricampionamento</strong>. Queste opzioni aumentano la nitidezza dell’immagine durante il downsampling: 
-    <ul> 
-     <li><strong>Bi-Lineare</strong>  - Il metodo di ricampionamento più veloce. Sono visibili alcuni artefatti di alias.</li> 
-     <li><strong>Bicubico</strong> : aumenta l’utilizzo della CPU ma produce immagini più nitide con meno artefatti di alias.</li> 
-     <li><strong>Sharp2</strong> - Può produrre risultati leggermente più nitidi rispetto a Bicubico, ma con un costo CPU ancora più elevato.</li> 
-     <li><strong>Bi-Sharp</strong> : seleziona il ricampionamento predefinito Photoshop per ridurre le dimensioni dell'immagine, che viene chiamato  <strong>nitidezza </strong> bicubica  Adobe Photoshop.</li> 
-     <li><strong>Ogni </strong> colore e  <strong>luminosità</strong>  - ogni metodo può essere basato sul colore o sulla luminosità. Per impostazione predefinita, è selezionato <strong>Ciascun colore</strong>.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Risoluzione di stampa</strong></td> 
-   <td>Selezionare una risoluzione per la stampa dell'immagine; Il valore predefinito è 72 pixel.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modificatore immagine</strong></td> 
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori immagini</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p> 
-    <ul> 
-     <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li> 
-     <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li> 
-     <li><code>req=set</code> non è disponibile per l'uso generale.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Servizi Dynamic Media non core: SVG, Image Rendering e Web-stampa</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      La nitidezza è descritta in *  Adobe Dynamic Media Classic Image Quality and Sharpening Best practice</a> (Qualità delle immagini e nitidezza).
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Modalità ricampionamento</strong></td>
+   <td>Selezionare un'opzione <strong>Modalità di ricampionamento</strong>. Queste opzioni aumentano la nitidezza dell’immagine durante il downsampling:
+    <ul>
+     <li><strong>Bi-Lineare</strong>  - Il metodo di ricampionamento più veloce. Sono visibili alcuni artefatti di alias.</li>
+     <li><strong>Bicubico</strong> : aumenta l’utilizzo della CPU ma produce immagini più nitide con meno artefatti di alias.</li>
+     <li><strong>Sharp2</strong> - Può produrre risultati leggermente più nitidi rispetto a Bicubico, ma con un costo CPU ancora più elevato.</li>
+     <li><strong>Bi-Sharp</strong> : seleziona il ricampionamento predefinito Photoshop per ridurre le dimensioni dell'immagine, che viene chiamato  <strong>nitidezza </strong> bicubica  Adobe Photoshop.</li>
+     <li><strong>Ogni </strong> colore e  <strong>luminosità</strong>  - ogni metodo può essere basato sul colore o sulla luminosità. Per impostazione predefinita, è selezionato <strong>Ciascun colore</strong>.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Risoluzione di stampa</strong></td>
+   <td>Selezionare una risoluzione per la stampa dell'immagine; Il valore predefinito è 72 pixel.</td>
+  </tr>
+  <tr>
+   <td><strong>Modificatore immagine</strong></td>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori immagini</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+    <ul>
+     <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
+     <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
+     <li><code>req=set</code> non è disponibile per l'uso generale.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Servizi Dynamic Media non core: SVG, Image Rendering e Web-stampa</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Definizione delle opzioni per i predefiniti per immagini con i modificatori di immagini {#defining-image-preset-options-with-image-modifiers}
@@ -508,9 +505,6 @@ Se utilizzate la modalità Dynamic Media - Scene7, i predefiniti per immagini ve
 
 ## Eliminazione dei predefiniti per immagini Dynamic Media {#deleting-image-presets}
 
-**Per eliminare i predefiniti** immagine di Dynamic Media:
-
 1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale.
 1. Toccate l&#39;icona **[!UICONTROL Strumenti]**, quindi andate a **[!UICONTROL Risorse > Predefiniti immagine]**.
 1. Selezionate un predefinito, quindi toccate **[!UICONTROL Elimina]**. Dynamic Media conferma che si desidera eliminarla. Toccate **[!UICONTROL Elimina]**.
-
