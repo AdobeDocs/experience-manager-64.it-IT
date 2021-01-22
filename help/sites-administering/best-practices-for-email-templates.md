@@ -1,18 +1,14 @@
 ---
 title: Best practice per i modelli e-mail
-seo-title: Best practice per i modelli e-mail
-description: Best practice per la creazione di modelli per le e-mail in AEM.
-seo-description: Best practice per la creazione di modelli per le e-mail in AEM.
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: Scoprite le best practice relative alla progettazione delle e-mail che consentono di creare un modello di campagna e-mail ben sviluppato in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 1%
 
 ---
@@ -150,7 +146,7 @@ Attualmente sono disponibili [sette componenti da utilizzare nei modelli delle c
 | Testo e personalizzazione | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | Collegamento | /libs/mcm/campaign/components/reference |
-| Modello immagini Scene7 | /libs/mcm/campaign/s7image |
+| Modello per immagini Dynamic Media Classic (già Scene7) | /libs/mcm/campaign/s7image |
 | Riferimento mirato | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]
