@@ -4,9 +4,9 @@ description: Note sulla versione specifiche dei pacchetti di correzioni cumulati
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4219'
 ht-degree: 11%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager 6.4.8.3 fornisce delle correzioni per i seguenti proble
 
 * Nelle impostazioni del predefinito per immagini, quando l&#39;opzione [!UICONTROL Abilita downsampling crominanza JPG] è deselezionata in [!DNL Experience Manager], la modifica non viene sincronizzata con [!DNL Dynamic Media] (NPR-34284).
 * Nell&#39;editor [!UICONTROL Predefiniti visualizzatore], quando si modifica il predefinito [!UICONTROL PanoramicImage/PanoramicImage_VR], nel componente `PanoramicView` l&#39;etichetta del modificatore `PANORAMICVIEW_AUTOROTATE` non è disponibile (CQ-4302043).
-* L&#39;annullamento della pubblicazione di un video da [!DNL Experience Manager] non annulla la pubblicazione del set video adattivo sull&#39;Scene7 configurato. (CQ-4304405).
+* L&#39;annullamento della pubblicazione di un video da [!DNL Experience Manager] non annulla la pubblicazione del set video adattivo su Dynamic Media Classic configurato. (CQ-4304405).
 
 ### Platform {#platform-6483}
 
@@ -187,7 +187,7 @@ Adobe Experience Manager 6.4.8.2 fornisce delle correzioni per i seguenti proble
 
 * La funzionalità Smart Crop non riesce con un errore quando il profilo immagine viene aggiunto a una cartella con più proporzioni (ad esempio, 11) (NPR-34083).
 
-* Le modifiche ai predefiniti per immagini in [!UICONTROL Adobe Experience Manager] non si sincronizzano con Scene7 Publishing System (NPR-34284, CQ-4299713).
+* Le modifiche ai predefiniti per immagini in [!UICONTROL Adobe Experience Manager] non vengono sincronizzate con Dynamic Media Classic (NPR-34284, CQ-4299713).
 
 * L&#39;etichetta del modificatore [!UICONTROL PANORAMICVIEW_AUTOROTATE] non è presente nella scheda [!UICONTROL Behavior] nella pagina [!UICONTROL Viewer Preset Editor] (CQ-4302043).
 
