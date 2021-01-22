@@ -1,19 +1,15 @@
 ---
 title: Configurazione dei moduli di ricerca
-seo-title: Configurazione dei moduli di ricerca
 description: Scoprite come configurare Search Forms.
-seo-description: Scoprite come configurare Search Forms.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 13%
+source-wordcount: '2062'
+ht-degree: 12%
 
 ---
 
@@ -64,9 +60,9 @@ Le configurazioni predefinite disponibili sono:
 
    Questa configurazione definisce le opzioni disponibili per la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
 
-* **Editor pagina (ricerca di Scene7)**:
+* **Editor pagina (Dynamic Media Classic  [precedentemente Scene7] search)**:
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili per la ricerca di risorse Dynamic Media Classic nel browser Risorse (durante la modifica di una pagina).
 
 * **Barra di ricerca amministrazione sito**:
 
