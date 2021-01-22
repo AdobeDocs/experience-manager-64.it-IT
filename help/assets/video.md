@@ -1,18 +1,14 @@
 ---
 title: Video
-seo-title: Video
-description: Scopri come lavorare con i video in Dynamic Media
-seo-description: Scopri come lavorare con i video in Dynamic Media
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: Scoprite come lavorare con i video in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10456'
+source-wordcount: '10396'
 ht-degree: 4%
 
 ---
@@ -162,9 +158,9 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 * Configurate i lettori video per soddisfare le vostre esigenze di branding.
 * Integrare video nel sito Web, nel sito mobile o nell’applicazione mobile con un semplice URL o codice da incorporare.
 
-Vedere [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consultate anche [I visualizzatori HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7 .
+Consultate anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) nella guida di riferimento dei visualizzatori Dynamic Media per l’Adobe .
 
 ## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS (HTTP Live Streaming) è uno standard Apple per lo streaming di video adatti
 
 Il video progressivo viene distribuito scaricando e memorizzando localmente il video sullo schermo desktop o sul dispositivo mobile di un utente.
 
-La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano il visualizzatore video Scene7.
+La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano il visualizzatore video Dynamic Media.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Dispositivo</strong></td> 
-   <td><strong>Browser</strong></td> 
-   <td><strong>Modalità di riproduzione video</strong></td> 
-  </tr> 
+   <td><strong>Dispositivo</strong></td>
+   <td><strong>Browser</strong></td>
+   <td><strong>Modalità di riproduzione video</strong></td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Internet Explorer 9 e 10</td> 
-   <td>Download progressivo.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Internet Explorer 9 e 10</td>
+   <td>Download progressivo.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Internet Explorer 11+</td> 
-   <td>In Windows 8 e Windows 10 - Forza l'uso di HTTPS ogni volta che viene richiesto HLS. Limitazione nota: HTTP su HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> In Windows 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a HTTPS.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Internet Explorer 11+</td>
+   <td>In Windows 8 e Windows 10 - Forza l'uso di HTTPS ogni volta che viene richiesto HLS. Limitazione nota: HTTP su HLS non funziona in questa combinazione browser/sistema operativo<br /> <br /> In Windows 7 - Download progressivo. Utilizza la logica standard per selezionare il protocollo HTTP rispetto a HTTPS.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 23-44</td> 
-   <td>Download progressivo.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Firefox 23-44</td>
+   <td>Download progressivo.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 45 o versione successiva</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Firefox 45 o versione successiva</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Effetto cromatura</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Effetto cromatura</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Safari (Mac)</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Safari (Mac)</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 6 o versione precedente)</td> 
-   <td>Download progressivo.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (Android 6 o versione precedente)</td>
+   <td>Download progressivo.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 7 o successivo)</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (Android 7 o successivo)</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Android (browser predefinito)</td> 
-   <td>Download progressivo.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Android (browser predefinito)</td>
+   <td>Download progressivo.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Safari (iOS)</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Safari (iOS)</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (iOS)</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
+   <td>Mobile</td>
+   <td>Chrome (iOS)</td>
+   <td>Streaming video HLS.</td>
+  </tr>
   <tr> 
-   <td>Mobile</td> 
-   <td>Blackberry</td> 
-   <td>Streaming video HLS.</td> 
-  </tr> 
- </tbody> 
+   <td>Mobile</td>
+   <td>Blackberry</td>
+   <td>Streaming video HLS.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Architettura della soluzione video Dynamic Media {#architecture-of-dynamic-media-video-solution}
@@ -901,7 +897,7 @@ Affinché i rapporti video funzionino correttamente, viene automaticamente creat
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
-### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato un predefinito per visualizzatori basato su un visualizzatore video preconfigurato, non è necessario effettuare ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’API SDK per visualizzatori HTML5, utilizzate i seguenti passaggi per fare in modo che il visualizzatore video invii eventi di tracciamento ad Dynamic Media Video Reports.
 
@@ -962,7 +958,7 @@ Per visualizzare i rapporti video basati su un visualizzatore video creato media
       ```
    L&#39;oggetto appMeasurementBridge dispone di una funzione di tracciamento incorporata. Tuttavia, puoi fornire un supporto personalizzato per più sistemi di monitoraggio o altre funzionalità.
 
-   Per ulteriori informazioni, vedere *Utilizzo del componente TrackingManager* nella *Guida utente dell&#39;SDK per visualizzatori HTML5 di Scene7* disponibile per il download da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Aggiunta di sottotitoli a video {#adding-captions-to-video}
 
@@ -976,7 +972,7 @@ I sottotitoli consentono inoltre una maggiore accessibilità mediante l’uso di
 
 Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) (Distribuzione di contenuti statici (non immagini)) nella *Guida API di Scene7 Image Serving*.
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) (Distribuzione di contenuti statici (non immagini) in *Dynamic Media Image Serving and Rendering API Help*).
 
 **Per aggiungere sottotitoli o sottotitoli al video**:
 
@@ -1179,4 +1175,3 @@ Per configurare l’intervallo di tempo predefinito per la generazione delle min
 1. Dopo che l&#39;immagine è stata caricata correttamente, nella pagina **[!UICONTROL Change Thumbnail]**, toccare **[!UICONTROL Save Changes]**.
 
    La miniatura personalizzata viene aggiunta al video.
-
