@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Considerati questi fattori, è necessaria una metodologia per calcolare uno spaz
 1. Consente di determinare la dimensione e il numero di risorse che verranno caricate nel sistema.
 1. Ottenete un esempio rappresentativo delle risorse da caricare in AEM. Ad esempio, se intendete caricare nel sistema file PSD, JPG, AI e PDF, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi esempi devono essere rappresentativi delle diverse dimensioni di file e complessità delle immagini.
 1. Definire le rappresentazioni da utilizzare.
-1. Create le rappresentazioni in AEM utilizzando le applicazioni di Creative Cloud di ImageMagick o  Adobe. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Scene7, potete utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in AEM.
+1. Create le rappresentazioni in AEM utilizzando le applicazioni di Creative Cloud di ImageMagick o  Adobe. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Dynamic Media Classic, potete utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare in AEM.
 1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati. Consultate la documentazione online su come generare pagine di risorse secondarie da file InDesign  o file PNG/PDF  livelli Illustrator.
 1. Confrontate le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generate rappresentazioni e risorse secondarie con una dimensione combinata di 3 GB dopo aver elaborato 1 GB di risorse, il fattore di crescita della rappresentazione è 3.
 1. Determinate il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.
