@@ -7,10 +7,10 @@ user-guide-title: Guida utente per l’authoring con l’interfaccia classica AE
 breadcrumb-title: Guida all’authoring con l’interfaccia classica
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 85%
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 85%
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
    + [Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
-   + [Aggiunta di funzionalità di Scene7 alla pagina](manage-assets-classic-s7.md)
+   + [Aggiunta di funzioni di Dynamic Media Classic (Scene7) alla pagina](manage-assets-classic-s7.md)
    + [Utilizzo di Dynamic Media](dynamic-media-assets.md)
    + [Utilizzo delle risorse 3D](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
