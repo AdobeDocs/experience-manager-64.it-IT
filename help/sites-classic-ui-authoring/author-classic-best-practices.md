@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
-source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 82%
+source-wordcount: '310'
+ht-degree: 72%
 
 ---
 
@@ -55,7 +55,7 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
   <tr>
    <td>Imaging dinamico</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best practice relative all’imaging dinamico</a></td> 
-   <td><p>Spiega come aumentare la nitidezza di un’immagine per garantire risultati ottimali e il metodo migliore per ottimizzare la qualità delle immagini quando si utilizza la funzionalità Dynamic Media o si esegue l’integrazione con Scene7. </p> </td> 
+   <td><p>Descrive come rendere nitida un’immagine per ottenere risultati ottimali e come ottimizzare la qualità delle immagini se utilizzate la funzionalità Dynamic Media o se vi state integrando con Dynamic Media. </p> </td> 
   </tr>
   <tr>
    <td>Risorse multilingua</td> 
