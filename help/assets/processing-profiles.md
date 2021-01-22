@@ -1,18 +1,14 @@
 ---
 title: Profili per l’elaborazione di metadati, immagini e video
-seo-title: Profili per l’elaborazione di metadati, immagini e video
 description: Un profilo rappresenta un insieme di regole relative alle opzioni da applicare alle risorse caricate in una cartella. Specificate il profilo di metadati e il profilo di codifica video da applicare alle risorse video caricate. Per le risorse di immagini, potete anche specificare quale profilo di immagine applicare alle risorse di immagine per poterle ritagliare correttamente.
-seo-description: Un profilo rappresenta un insieme di regole relative alle opzioni da applicare alle risorse caricate in una cartella. Specificate il profilo di metadati e il profilo di codifica video da applicare alle risorse video caricate. Per le risorse di immagini, potete anche specificare quale profilo di immagine applicare alle risorse di immagine per poterle ritagliare correttamente.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -52,7 +48,7 @@ Ad esempio, se avete creato un profilo Immagine e lo avete assegnato a una carte
 
 Potete eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l&#39;elaborazione non è riuscita per la prima volta. Anche se non avete modificato un profilo di elaborazione o non avete applicato un profilo di elaborazione, potete comunque eseguire il flusso di lavoro di rielaborazione in una cartella di risorse in qualsiasi momento.
 
-Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando si esegue il _Scene7: Rielabora il flusso di lavoro di Risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
+Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando si esegue il _Scene7: Elaborate nuovamente il flusso di lavoro di Risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l&#39;elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
 
 Vedere [Regolazione delle dimensioni batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
@@ -106,7 +102,7 @@ Vedere [Regolazione delle dimensioni batch del flusso di lavoro di rielaborazion
 
    ![Componente Caricamento batch Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, impostare quanto segue:
+1. Nella finestra di dialogo **[!UICONTROL Caricamento batch in Proprietà passaggio Scene7]**, impostare quanto segue:
    * Nei campi di testo **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]**, immettete un nuovo titolo e una nuova descrizione per il processo, se necessario.
    * Selezionare **[!UICONTROL Handler Advance]** se il gestore avanzerà fino al passaggio successivo.
    * Nel campo **[!UICONTROL Timeout]**, immettere il timeout del processo esterno (secondi).
@@ -116,7 +112,7 @@ Vedere [Regolazione delle dimensioni batch del flusso di lavoro di rielaborazion
 
    ![Proprietà, finestra di dialogo](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell&#39;angolo superiore destro della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, toccare **[!UICONTROL Fine]**.
+1. Nell&#39;angolo superiore destro della finestra di dialogo **[!UICONTROL Caricamento batch in Proprietà passaggio Scene7]**, toccare **[!UICONTROL Fine]**.
 
 1. Nell&#39;angolo superiore destro dell&#39;Scene7: Rielabora la pagina del modello di flusso di lavoro Risorse, tocca **[!UICONTROL Sincronizza]**. Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare la risorsa in una cartella.
 
