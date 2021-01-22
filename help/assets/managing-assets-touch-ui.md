@@ -4,9 +4,9 @@ description: Scopri le diverse attività di gestione e modifica delle risorse ch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 3%
 
 ---
@@ -161,7 +161,7 @@ Dynamic Media consente il caricamento in batch delle risorse tramite server FTP.
 
    >[!NOTE]
    >
-   >Quando caricate le risorse tramite FTP, le opzioni di caricamento impostate in Dynamic Media Classic (Scene7) hanno un precedente rispetto ai parametri di elaborazione delle risorse impostati in AEM.
+   >Quando caricate le risorse tramite FTP, le opzioni di caricamento impostate in Dynamic Media Classic hanno un precedente rispetto ai parametri di elaborazione delle risorse impostati in AEM.
 
 1. Nell&#39;angolo inferiore destro della finestra di dialogo **[!UICONTROL Opzioni processo di caricamento]**, toccate **[!UICONTROL Salva]**.
 1. Nell&#39;angolo inferiore destro della pagina **[!UICONTROL Carica]**, toccate **[!UICONTROL Invia caricamento]**.
