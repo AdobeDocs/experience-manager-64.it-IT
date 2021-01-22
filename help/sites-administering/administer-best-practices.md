@@ -1,18 +1,14 @@
 ---
 title: 'Best practice  '
-seo-title: 'Best practice  '
-description: Scopri le best practice compilate dai team di progettazione e consulenza  Adobe per aiutare gli amministratori a iniziare a lavorare.
-seo-description: Scopri le best practice compilate dai team di progettazione e consulenza  Adobe per aiutare gli amministratori a iniziare a lavorare.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Scoprite le best practice di Adobe Experience Manager compilate dai team di consulenza e di progettazione  Adobe per aiutare gli amministratori a iniziare a utilizzare il prodotto.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -52,8 +48,8 @@ Le best practice relative alle risorse, inclusa la funzionalità Dynamic Media e
    <td>La maggior parte dei profili di elaborazione è basata su cartelle come video, metadati, elaborazione delle immagini vengono sempre applicati alle cartelle. Questo documento di best practice descrive come definire e impostare la gerarchia di cartelle in quanto ha un impatto significativo sulla modalità di elaborazione del contenuto. </td> 
   </tr>
   <tr>
-   <td>Integrazione di Scene7 e AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Procedure ottimali per l'integrazione di Scene7 con AEM</a></td> 
+   <td>Integrazione di Dynamic Media Classic e AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Procedure ottimali per l'integrazione di Dynamic Media Classic con AEM</a></td> 
    <td><p>Descrive quando attivare Importazione polling, come testare l’integrazione e quando utilizzare il browser del contenuto anziché caricare direttamente sulle risorse.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ Le best practice relative alle risorse, inclusa la funzionalità Dynamic Media e
    <td>Come parte della documentazione relativa alla <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti per immagini</a>, questi argomenti descrivono il significato dei predefiniti per immagini e le procedure ottimali per la selezione delle opzioni per i predefiniti per immagini.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media e integrazione diretta con Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Media</a></td> 
+   <td>Dynamic Media e integrazione diretta con Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Dynamic Media Classic/AEM rispetto a Dynamic Media</a></td> 
    <td>Descrive quando è meglio utilizzare la soluzione Dynamic Media, quando integrare S7 con AEM, o quando utilizzare entrambi.</td> 
   </tr>
  </tbody>
