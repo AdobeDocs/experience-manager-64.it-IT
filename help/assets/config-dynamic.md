@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Potete scegliere di implementare Dynamic Media solo per l&#39;imaging, solo per 
 
 Attivando Dynamic Media, le funzioni per i contenuti multimediali dinamici saranno disponibili nell&#39;interfaccia utente e ogni risorsa immagine caricata riceverà una rappresentazione `cqdam.pyramid.tiff` utilizzata per distribuire rapidamente rappresentazioni dinamiche delle immagini. Tali PTIFF presentano notevoli vantaggi, tra cui (1) la possibilità di gestire una sola immagine principale e generare al volo rappresentazioni illimitate senza ulteriore spazio di archiviazione e (2) la possibilità di utilizzare visualizzazioni interattive quali zoom, scorrimento, rotazione e così via.
 
-Se si desidera utilizzare Dynamic Media Classic (Scene7) in AEM, non è necessario abilitare Dynamic Media a meno che non si stia utilizzando uno scenario [specifico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media è disattivato a meno che non si attivi il supporto dinamico in modalità di esecuzione.
+Se si desidera utilizzare Dynamic Media Classic in AEM, non è necessario abilitare Dynamic Media a meno che non si stia utilizzando uno scenario [specifico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media è disattivato a meno che non sia possibile abilitare Dynamic Media in modalità di esecuzione.
 
 Per abilitare il supporto dinamico, è necessario abilitare la modalità di esecuzione del supporto dinamico dalla riga di comando o dal nome del file quickstart.
 
@@ -270,7 +270,7 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
-1. Nella pagina **[!UICONTROL Edit User Settings For dynamic-media-replica]** (Modifica impostazioni utente per la replica Dynamic-media&lt;a1/>), espandere l&#39;area **[!UICONTROL Add Private Key from KeyStore file]** e aggiungere quanto segue (vedere le immagini che seguono):
+1. Nella pagina **[!UICONTROL Edit User Settings For dynamic-media-replica]** (Modifica impostazioni utente per la replica Dynamic-media), espandere l&#39;area **[!UICONTROL Add Private Key from KeyStore file]** e aggiungere quanto segue (vedere le immagini che seguono):
 
    * Nel campo **[!UICONTROL Nuovo alias]**, immettere il nome di un alias che verrà utilizzato successivamente nella configurazione di replica; ad esempio **replica**.
    * Toccate **[!UICONTROL File KeyStore]**. Andate al file KeyStore fornito da  Adobe, selezionatelo, quindi toccate **[!UICONTROL Open]**.
@@ -676,7 +676,7 @@ Se si utilizza Dynamic Media per 1) imaging in produzione di immagini e video _o
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Integrazione con Dynamic Media Classic (Scene7)</td> 
+   <td>Integrazione con Dynamic Media Classic</td> 
    <td><p>filter-images</p> <p>set di filtri</p> <p>filter-video</p> </td> 
    <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>application/</strong> e termina con <strong>set</strong>.</p> <p>Inizia con <strong>video/</strong></p> </td> 
    <td><p>L’URI di trasporto viene configurato in modo da indirizzare il server di pubblicazione AEM invece dell’URL  del servizio di replica Dynamic Media Cloud di Adobe. L’impostazione di questo filtro consente ad Dynamic Media Classic di distribuire le risorse invece dell’istanza di pubblicazione AEM.</p> <p>I "filtri-immagini" integrati, i "set-filtri" e i "filtri-video" consentiranno di:</p> 
