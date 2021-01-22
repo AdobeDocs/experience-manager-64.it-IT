@@ -3,9 +3,9 @@ title: Guida all'ottimizzazione delle prestazioni di Assets
 description: Aree principali intorno AEM configurazione, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di  AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ A partire da AEM 6.2 e con un pacchetto di funzionalità per AEM 6.1, è possibi
 
 ### Configurazione risorsa aggiornamento DAM {#dam-update-asset-configuration}
 
-Il flusso di lavoro Aggiorna risorsa DAM contiene una suite completa di passaggi configurati per attività quali generazione Scene7 PTIFF e integrazione  InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi.  Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro Aggiorna risorsa DAM e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per DAM Update Asset in modo che puntino al nuovo modello.
+Il flusso di lavoro Aggiorna risorsa DAM contiene una suite completa di passaggi configurati per attività quali generazione di Dynamic Media Classic PTIFF e integrazione di InDesign Server . Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi.  Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro Aggiorna risorsa DAM e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per DAM Update Asset in modo che puntino al nuovo modello.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ I clienti utilizzano immagini di varie dimensioni e formati all&#39;interno del 
 
 Molti clienti di Sites implementano un servlet di immagini che ridimensiona e ritaglia le immagini al momento della richiesta, il che impone un carico aggiuntivo sull’istanza di pubblicazione. Tuttavia, finché queste immagini possono essere memorizzate nella cache, la sfida può essere attenuata.
 
-Un approccio alternativo consiste nell&#39;utilizzare la tecnologia Scene7 per distribuire completamente la manipolazione delle immagini. Inoltre, potete implementare Brand Portal, che non solo prende in consegna le responsabilità di generazione delle rappresentazioni dall’infrastruttura AEM, ma anche l’intero livello di pubblicazione.
+Un approccio alternativo consiste nell&#39;utilizzare la tecnologia Dynamic Media Classic per distribuire completamente la manipolazione delle immagini. Inoltre, potete implementare Brand Portal, che non solo prende in consegna le responsabilità di generazione delle rappresentazioni dall’infrastruttura AEM, ma anche l’intero livello di pubblicazione.
 
 #### ImageMagick {#imagemagick}
 
@@ -282,7 +282,7 @@ XMP writeback aggiorna la risorsa originale ogni volta che i metadati vengono mo
 
 I risultati elencati richiedono notevoli risorse. Pertanto,  Adobe consiglia di [disattivare XMP WriteBack](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), se non è richiesto.
 
-Se è selezionato il flag di esecuzione dei flussi di lavoro, l&#39;importazione di una grande quantità di metadati può comportare un&#39;attività di XMP di riscrittura delle risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
+Se è selezionato il flag di esecuzione dei flussi di lavoro, l&#39;importazione di una grande quantità di metadati può comportare un&#39;attività di XMP di riscrittura delle risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
 
 ## Replica {#replication}
 
