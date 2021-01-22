@@ -3,19 +3,19 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
 audience: end-user
-user-guide-title: Guida ad Assets
-breadcrumb-title: Guida ad Assets
+user-guide-title: Guida di Assets
+breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '723'
 ht-degree: 46%
 
 ---
 
 
-# Guida ad Assets {#assets}
+# Guida di Assets {#assets}
 
 + [Guida utente di Risorse](home.md)
 + [Note sulla versione di AEM 6.4 Assets](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -50,7 +50,7 @@ ht-degree: 46%
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Aggiunta di funzionalità Scene7 alla pagina](scene7.md)
+   + [Aggiunta di funzionalità di Dynamic Media Classic alla pagina](scene7.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
