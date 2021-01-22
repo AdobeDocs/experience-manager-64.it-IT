@@ -1,19 +1,15 @@
 ---
 title: Set 360 gradi
-seo-title: Set 360 gradi
-description: Scoprite come utilizzare i set 360 gradi in contenuti multimediali dinamici
-seo-description: Scoprite come utilizzare i set 360 gradi in contenuti multimediali dinamici
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: Scoprite come utilizzare i set 360 gradi in Dynamic Media. Un set 360 gradi simula la rotazione di un oggetto per esaminarlo da qualsiasi angolazione.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
-ht-degree: 7%
+source-wordcount: '1843'
+ht-degree: 6%
 
 ---
 
