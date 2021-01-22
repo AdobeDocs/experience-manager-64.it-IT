@@ -3,9 +3,9 @@ title: Migrazione delle risorse in massa ad Adobe Experience Manager Assets
 description: Come AEM le risorse, applicare i metadati, generare le rappresentazioni e attivarle per pubblicare le istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Quando le attività non vengono trasmesse in rete, le prestazioni complessive mi
 
 ### Elabora rappresentazioni {#process-renditions}
 
-Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro DAM Update Asset per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, dovete duplicare e modificare il flusso di lavoro DAM Update Asset (Aggiorna risorsa) in base alle vostre esigenze. Alcuni passaggi del flusso di lavoro predefinito potrebbero non essere necessari, ad esempio generazione Scene7 PTIFF o integrazione  server InDesign.
+Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro DAM Update Asset per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, dovete duplicare e modificare il flusso di lavoro DAM Update Asset (Aggiorna risorsa) in base alle vostre esigenze. Alcuni passaggi del flusso di lavoro predefinito potrebbero non essere necessari, ad esempio generazione di Dynamic Media Classic PTIFF o integrazione con  server InDesign.
 
 Dopo aver configurato il flusso di lavoro in base alle esigenze, avete due opzioni per eseguirlo:
 
