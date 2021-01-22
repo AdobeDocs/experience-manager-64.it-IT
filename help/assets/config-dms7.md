@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5571'
+source-wordcount: '5577'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ Per ulteriori informazioni, consultate [Installazione del feature pack 18912 per
 
 ## Configurazione di Cloud Services Dynamic Media {#configuring-dynamic-media-cloud-services}
 
-Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, per cambiare la password dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ad Dynamic Media Classic. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
+Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, è necessario [accedere](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) all&#39;applicazione desktop Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
 
 >[!NOTE]
 >
