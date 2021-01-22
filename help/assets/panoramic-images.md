@@ -1,18 +1,14 @@
 ---
 title: Immagini panoramiche
-seo-title: Immagini panoramiche
-description: Scoprite come utilizzare le immagini panoramiche in Dynamic Media.
-seo-description: Scoprite come utilizzare le immagini panoramiche in Dynamic Media.
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -46,7 +42,7 @@ Per caricare le risorse da usare con il visualizzatore immagini panoramiche, con
 
 Affinché il visualizzatore immagini panoramiche funzioni correttamente all’interno AEM, è necessario sincronizzare i predefiniti per visualizzatori immagini panoramiche con i metadati specifici di Dynamic Media Classic e Dynamic Media Classic, in modo che i predefiniti per visualizzatori vengano aggiornati nel JCR. A questo scopo, configura Dynamic Media Classic nel modo seguente:
 
-1. [Accedi alla tua istanza di Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicfor per ogni account aziendale.
+1. [Accedete all’](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) applicazione desktop Dynamic Media Classic per ogni account aziendale.
 
 1. Nell’angolo superiore destro della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server immagini]**.
 1. Nella pagina **[!UICONTROL Image Server Publish]**, dal menu a discesa **[!UICONTROL Contesto pubblicazione]** vicino alla parte superiore, selezionare **[!UICONTROL Image Serving]**.
@@ -75,10 +71,10 @@ Affinché il visualizzatore immagini panoramiche funzioni correttamente all’in
 
 Se un&#39;immagine è stata rilasciata nel componente **[!UICONTROL File multimediali panoramici]** in WCM e il segnaposto del componente è stato compresso, è possibile risolvere i seguenti problemi:
 
-* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Rivedete le impostazioni *Reply Image Size Limit* (Limite dimensioni immagine risposta) in [Configuring Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
+* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Rivedete le impostazioni *Reply Image Size Limit* (Limite dimensioni immagine risposta) in [Configuring Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 * Per un *blocco non valido* sulla risorsa o per un errore di analisi *Parsing* visualizzato sulla pagina, controllate **[!UICONTROL Modalità offuscamento richieste]** e **[!UICONTROL Modalità blocco richieste]** per assicurarsi che siano disattivate.
-* Per un errore canvas con tag, impostate un percorso per il file di definizione del set di regole e annullate CTN **[!UICONTROL per le richieste precedenti per la risorsa immagine.]**
+* Per un errore canvas con tag, impostate un percorso per il file di definizione del set di regole e annullate CTN ]**per le richieste precedenti per la risorsa immagine.**[!UICONTROL 
 * Se dopo una richiesta di immagini con dimensioni superiori al limite supportato la qualità delle immagini risulta molto bassa, verificate che l&#39;impostazione **[!UICONTROL JPEG Encoding Attributes > Quality]** non sia vuota. Un&#39;impostazione tipica per il campo **[!UICONTROL Quality]** è `95`. L&#39;impostazione è disponibile nella pagina **[!UICONTROL Image Server Publish]**. Per accedere alla pagina, vedere [Configurazione di Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 ## Anteprima delle immagini panoramiche {#previewing-panoramic-images}
