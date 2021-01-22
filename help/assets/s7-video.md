@@ -1,31 +1,27 @@
 ---
 title: Video
-seo-title: Video
-description: Scopri la gestione centralizzata delle risorse video  AEM Assets, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da  AEM Assets. L'integrazione con video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
-seo-description: Scopri la gestione centralizzata delle risorse video  AEM Assets, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da  AEM Assets. L'integrazione con video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Scopri la gestione centralizzata delle risorse video  AEM Assets, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da  AEM Assets. L'integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi con dispositivo automatico e rilevamento automatico della larghezza di banda.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 54%
+source-wordcount: '1617'
+ht-degree: 56%
 
 ---
 
 
 # Video {#video}
 
-Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic (Scene7) e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
+Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
 
 L&#39;integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
 
 * Il componente **[!UICONTROL Scene7 Video]** esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato corretto e la qualità video corretta su computer desktop, tablet e dispositivi mobili.
-* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows. Per ulteriori informazioni, vedi [la documentazione di Scene7 sui set di video adattivi](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows. <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Informazioni su FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
