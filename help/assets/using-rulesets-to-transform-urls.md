@@ -1,18 +1,14 @@
 ---
 title: Utilizzo dei set di regole per trasformare gli URL
-seo-title: Utilizzo dei set di regole per trasformare gli URL
 description: 'Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. '
-seo-description: 'Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. '
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -25,11 +21,11 @@ Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I 
 * Aggiunta di un suffisso di tipo MIME. Molti servizi e siti Web richiedono suffissi per immagini, ad esempio l&#39;aggiunta di `.jpg` a un URL.
 * Creazione di un percorso di cartella per l’URL per scopi SEO (Search Engine Optimization).
 
-   Consultate [Come  Adobe Scene7 Publishing System supporta SEO](/help/assets/assets/s7_seo.pdf).
+   Vedere [Come  Adobe Dynamic Media Classic supporta SEO](/help/assets/assets/s7_seo.pdf).
 
 * Aggiunta di metadati all’URL per scopi SEO (ottimizzazione motore di ricerca).
 
-   Consultate [Come  Adobe Scene7 Publishing System supporta SEO](/help/assets/assets/s7_seo.pdf).
+   Vedere [Come  Adobe Dynamic Media Classic supporta SEO](/help/assets/assets/s7_seo.pdf).
 
 * Impostazione della disposizione del contenuto per attivare un download.
 * Semplificare gli URL dei modelli di Image Server per la personalizzazione. Ad esempio, trasformare `rgb{XX,YY,ZZ}` in formato RTF`\redXX\greenYY\blueZZ`
@@ -53,19 +49,19 @@ Vedere anche [Set di regole per la risoluzione dei problemi](https://helpx.adobe
 Inoltre, verificare prima il set di regole in un ambiente di staging che non abbia alcun impatto sull&#39;ambiente di produzione live.\
 Gli ambienti di produzione e gli ambienti di pre-produzione in genere richiedono accessi diversi.
 
-* **Una pagina di login** dell&#39;ambiente di staging:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Pagina** di login dell&#39;ambiente di staging EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Pagina** di login dell&#39;ambiente di staging JAPAC:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Per informazioni sull&#39;accesso, vedere l&#39;applicazione desktop [ Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Vedere anche [Utilizzo dell&#39;immagine &#39;asset&#39; invece di &#39;is&#39; in un set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **Per distribuire i set di regole XML:**
 
-1. Accedete al vostro account Dynamic Media Classic:
+1. Accedi all&#39;applicazione desktop [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
+   Le credenziali e l&#39;accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Caricate il file del set di regole effettuando le seguenti operazioni:
 
