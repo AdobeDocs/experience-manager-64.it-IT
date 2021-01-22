@@ -3,9 +3,9 @@ title: Formati di file supportati in  AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da  AEM Assets e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 9%
 
 ---
@@ -289,7 +289,7 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| TTF | application/rtf |  |  |
+| RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shock-flash |  |  |
 | TAR | application/x-tar |  |  |
@@ -307,6 +307,6 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 
 >[!MORELIKETHIS]
 >
->* [Abilita il supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) dei parametri di processo di caricamento risorse/Scene7 basati su tipi MIME.
+>* [Abilita il supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) dei parametri di caricamento di risorse/Dynamic Media Classic basati su tipi MIME.
 >* [Configurare il supporto](config-dynamic.md) dei parametri di processo di caricamento in base al tipo MIME.
 
