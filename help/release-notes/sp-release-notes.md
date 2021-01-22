@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
+source-wordcount: '21617'
 ht-degree: 23%
 
 ---
@@ -71,7 +71,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### Assets {#assets}
 
-* In SPS (Scene7 Publishing System) viene creata una cartella senza nome durante lo spostamento di una risorsa da una cartella all’altra in  Experience Manager con configurazione Dynamic Media Scene7 (NPR-32440).
+* Una cartella senza nome viene creata in Dynamic Media Classic mentre si sposta una risorsa da una cartella all’altra in  Experience Manager con configurazione Dynamic Media Classic (NPR-32440).
 
 * La pagina dei dettagli delle risorse dei file PDF non mostra i pulsanti di azione nel Experience Manager  esecuzione in modalità Dynamic Media Scene7 (NPR-32316).
 
