@@ -1,18 +1,14 @@
 ---
 title: Set di file multimediali diversi
-seo-title: Set di file multimediali diversi
-description: Scoprite come utilizzare i set di file multimediali diversi nei contenuti multimediali dinamici
-seo-description: Scoprite come utilizzare i set di file multimediali diversi nei contenuti multimediali dinamici
-uuid: e37fa648-74e2-42e3-8611-8509c92ec00d
+description: Scoprite come utilizzare i set di file multimediali diversi (immagini, set di immagini, set 360 gradi e video) in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1469'
 ht-degree: 19%
 
 ---
