@@ -1,16 +1,16 @@
 ---
 title: Document Security | Gestione dei dati utente
 seo-title: Document Security | Gestione dei dati utente
-description: 'null'
-seo-description: 'null'
+description: ' protezione dei documenti AEM Forms consente di creare, archiviare e applicare ai documenti impostazioni di protezione predefinite. Essa garantisce che solo gli utenti autorizzati possano utilizzare i documenti. Scoprite come Document Security organizza i dati nelle tabelle del database, come accedere ed esportare i dati di protezione dei documenti per gli utenti nei database e, se necessario, come eliminarli definitivamente.'
+seo-description: ' protezione dei documenti AEM Forms consente di creare, archiviare e applicare ai documenti impostazioni di protezione predefinite. Essa garantisce che solo gli utenti autorizzati possano utilizzare i documenti. Scoprite come Document Security organizza i dati nelle tabelle del database, come accedere ed esportare i dati di protezione dei documenti per gli utenti nei database e, se necessario, come eliminarli definitivamente.'
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
