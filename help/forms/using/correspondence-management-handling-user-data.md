@@ -1,17 +1,17 @@
 ---
 title: Gestione della corrispondenza | Gestione dei dati utente
 seo-title: Gestione della corrispondenza | Gestione dei dati utente
-description: 'null'
-seo-description: 'null'
+description: ' AEM Forms Correspondence Management consente di creare, gestire e semplificare le corrispondenze dei clienti sicure e personalizzate. Scoprite come configurare la memorizzazione dei dati per le bozze e le lettere inviate AEM repository, accedere ai dati memorizzati ed eliminare i dati memorizzati.'
+seo-description: ' AEM Forms Correspondence Management consente di creare, gestire e semplificare le corrispondenze dei clienti sicure e personalizzate. Scoprite come configurare la memorizzazione dei dati per le bozze e le lettere inviate AEM repository, accedere ai dati memorizzati ed eliminare i dati memorizzati.'
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
