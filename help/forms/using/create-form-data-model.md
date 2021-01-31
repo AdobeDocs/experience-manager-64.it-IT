@@ -1,17 +1,17 @@
 ---
 title: '"Esercitazione: Crea modello dati modulo "'
 seo-title: Esercitazione Crea modello dati modulo
-description: 'null'
-seo-description: 'null'
+description: ' modulo di integrazione dei dati AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, come AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Scoprite come configurare il database MySQL come origine dati, creare, configurare e testare un modello dati del modulo.'
+seo-description: ' modulo di integrazione dei dati AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, come AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Scoprite come configurare il database MySQL come origine dati, creare, configurare e testare un modello dati del modulo.'
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
