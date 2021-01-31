@@ -1,18 +1,18 @@
 ---
 title: Forms Portal | Gestione dei dati utente
 seo-title: Forms Portal | Gestione dei dati utente
-description: 'null'
-seo-description: 'null'
+description: ' portale AEM Forms offre componenti utilizzabili per elencare moduli adattivi, moduli HTML5 e altre risorse Forms  pagina AEM Sites. Scoprite come Forms Portal memorizza i dati per le bozze e i moduli inviati. Approfondire le modalità di accesso ai dati dei moduli bozza e inviati per gli utenti connessi e anonimi negli archivi dati configurati e, se necessario, eliminarli.'
+seo-description: ' portale AEM Forms offre componenti utilizzabili per elencare moduli adattivi, moduli HTML5 e altre risorse Forms  pagina AEM Sites. Scoprite come Forms Portal memorizza i dati per le bozze e i moduli inviati. Approfondire le modalità di accesso ai dati dei moduli bozza e inviati per gli utenti connessi e anonimi negli archivi dati configurati e, se necessario, eliminarli.'
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
