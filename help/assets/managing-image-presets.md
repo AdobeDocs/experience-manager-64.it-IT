@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3837'
+ht-degree: 8%
 
 ---
 
@@ -412,7 +412,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori immagini</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori immagini</strong>. Questi parametri sono definiti nel <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
@@ -429,7 +429,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
 
 ## Definizione delle opzioni per i predefiniti per immagini con i modificatori di immagini {#defining-image-preset-options-with-image-modifiers}
 
-Oltre alle opzioni disponibili nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, potete definire modificatori di immagini per fornire ulteriori opzioni quando definite i predefiniti per immagini. Il rendering delle immagini si basa sull’API di rendering delle immagini di Dynamic Media. L&#39;API è definita in dettaglio in [HTTP Protocol Reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
+Oltre alle opzioni disponibili nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, potete definire modificatori di immagini per fornire ulteriori opzioni quando definite i predefiniti per immagini. Il rendering delle immagini si basa sull’API di rendering delle immagini di Dynamic Media. L&#39;API è definita in dettaglio in [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
 Di seguito sono riportati alcuni esempi di base delle operazioni che è possibile eseguire con i modificatori di immagini.
 
@@ -437,7 +437,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 >
 >Non è possibile utilizzare alcuni modificatori di immagini [in AEM](#advanced-tab-options).
 
-* [op_invert](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
 
    ```xml
    &op_invert=1
@@ -445,7 +445,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![chlimage_1-499](assets/chlimage_1-499.png)
 
-* [op_blur](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Applica un filtro di sfocatura all&#39;immagine.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Applica un filtro di sfocatura all&#39;immagine.
 
    ```xml
    &op_blur=25
@@ -461,7 +461,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![chlimage_1-501](assets/chlimage_1-501.png)
 
-* [op_bright](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Diminuisce o aumenta la luminosità.
+* [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Diminuisce o aumenta la luminosità.
 
    ```xml
    &op_brightness=75
@@ -469,7 +469,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
    ![chlimage_1-502](assets/chlimage_1-502.png)
 
-* [opaco](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l’opacità in primo piano.
+* [opaco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l’opacità in primo piano.
 
    ```xml
    opac=50
