@@ -7,10 +7,10 @@ user-guide-title: Guida utente all’amministrazione di AEM 6.4
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 17%
+source-wordcount: '658'
+ht-degree: 16%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 17%
    + [Riduzione dei problemi di serializzazione in AEM](mitigating-serialization-issues.md)
    + [Sincronizzazione utente](sync.md)
    + [Supporto token incapsulati](encapsulated-token.md)
-   + [Single Sign On](/help/sites-deploying/single-sign-on.md)
+   + [Single Sign On](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
    + [Come controllare le operazioni di gestione utenti in AEM](audit-user-management-operations.md)
    + [SSL per impostazione predefinita](ssl-by-default.md)
    + [Gestore autenticazione SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -155,11 +155,11 @@ ht-degree: 17%
    + [Integrazione con Target con i frammenti esperienza](experience-fragments-target.md)
 + Best practice    {#bestpractices}
    + [Best practice  ](administer-best-practices.md)
-   + [Tecniche consigliate per la traduzione](tc-bp.md)
-   + [Tecniche consigliate per MSM](msm-best-practices.md)
+   + [Tecniche consigliate per la traduzione](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
+   + [Tecniche consigliate per MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [ AEM Sites - Preparazione GDPR](gdpr-compliance-sites.md)
-   + [Gestione delle richieste GDPR per la AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM Commercio - Preparazione GDPR](gdpr-compliance-commerce.md)
+   + [Gestione delle richieste GDPR per la AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM Commercio - Preparazione GDPR](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + Gestione dei contenuti {#contentmanagement}
    + [Come lavorare con i pacchetti](package-manager.md)
    + [Offloader flusso di lavoro risorse](workflow-offloader.md)
