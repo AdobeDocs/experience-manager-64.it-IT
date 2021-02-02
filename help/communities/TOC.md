@@ -2,26 +2,26 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente ad AEM 6.4 Communities
-breadcrumb-title: Guida a Communities
+user-guide-title: Guida utente di AEM 6.4 Communities
+breadcrumb-title: Guida di Communities
 user-guide-description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '506'
 ht-degree: 11%
 
 ---
 
 
-# Guida utente ad AEM 6.4 Communities {#communities}
+# Guida utente di AEM 6.4 Communities {#communities}
 
 + [Panoramica di  AEM Communities](home.md)
 + Introduzione a  AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
    + [ Panoramica di AEM Communities](overview.md)
    + [Novità in AEM 6.4 Communities](whats-new-aem-communities.md)
-   + [Note sulla versione di AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Note sulla versione di AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [Guida introduttiva di AEM Communities](getting-started.md)
    + [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 11%
    + [Configurazione del dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
    + [Servizio di gestione di utenti e UGC in  AEM Communities](user-ugc-management-service.md)
-   + [Siti community](administer-landing.md)
+   + [Siti community](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Console community](consoles.md)
    + [Configurazione di Analytics per le funzioni Community](analytics.md)
    + [Configurazione delle funzioni di abilitazione](enablement.md)
@@ -166,4 +166,5 @@ ht-degree: 11%
    + [Tendenze attività](trends.md)
    + [Utilizzo di Social Tag Cloud](tagcloud.md)
    + [Utilizzo della votazione](voting.md)
-   + [Creare una pagina di esempio](create-sample-page.md)
+   + [Creare una pagina di esempio](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+
