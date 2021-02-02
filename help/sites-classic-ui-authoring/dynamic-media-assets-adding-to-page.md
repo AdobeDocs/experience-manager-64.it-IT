@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1718'
 ht-degree: 56%
 
 ---
@@ -35,7 +35,7 @@ L&#39;aggiunta del componente [!UICONTROL Dynamic Media] o [!UICONTROL Interacti
 Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una pagina:
 
 1. In AEM, apri la pagina in cui desideri aggiungere il Componente elementi multimediali dinamici.
-1. Se non è disponibile alcun componente Dynamic Media, fate clic sul righello nella barra laterale **[!UICONTROL Design]** per passare alla modalità &lt;a2/>Design&lt;a3/>, fate clic su **[!UICONTROL Edit]** parsys, quindi selezionate **[!UICONTROL Dynamic Media]** per rendere disponibili i componenti Dynamic Media.
+1. Se non è disponibile alcun componente Dynamic Media, fate clic sul righello nella barra laterale **[!UICONTROL Design]** per passare alla modalità [!UICONTROL Design], fate clic su **[!UICONTROL Edit]** parsys, quindi selezionate **[!UICONTROL Dynamic Media]** per rendere disponibili i componenti Dynamic Media.
 
    >[!NOTE]
    >
@@ -95,7 +95,7 @@ Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini,
 
 Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-**[!UICONTROL Modificatori]**  immagini - Per modificare gli effetti immagine, sono disponibili ulteriori comandi immagine. Sono descritte in [Gestione dei predefiniti per immagini](/help/assets/managing-viewer-presets.md) e [Riferimento comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificatori]**  immagini - Per modificare gli effetti immagine, sono disponibili ulteriori comandi immagine. Sono descritte in [Gestione dei predefiniti per immagini](/help/assets/managing-viewer-presets.md) e [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
@@ -141,7 +141,7 @@ Per modificare le seguenti impostazioni [!UICONTROL Avanzate], fare clic su **[!
 
 In AEM 6.2, quando installi [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) è possibile controllare se un video viene distribuito tramite una connessione SSL sicura (HTTPS) o una connessione non sicura (HTTP). Per impostazione predefinita, il protocollo di distribuzione video viene ereditato automaticamente dal protocollo della pagina web in cui è stato incorporato. Se la pagina web viene caricata tramite HTTPS, anche il video viene trasmesso tramite HTTPS. Viceversa, se la pagina web è su HTTP, il video viene trasmesso tramite HTTP. Nella maggior parte dei casi, questo funzionamento predefinito è corretto e non è necessario apportare modifiche alla configurazione. Tuttavia, è possibile scavalcare questa impostazione predefinita aggiungendo `VideoPlayer.ssl=on` alla fine di un percorso URL o all&#39;elenco degli altri parametri di configurazione del visualizzatore da incorporare nello snippet di codice, per forzare la distribuzione video sicura.
 
-Per ulteriori informazioni sulla distribuzione video sicura e su come usare l&#39;attributo di configurazione `VideoPlayer.ssl` nel vostro percorso URL, consultare [Distribuzione video sicura](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) nella Guida di riferimento per i visualizzatori. Oltre al visualizzatore per video, la distribuzione sicura dei video è disponibile per i visualizzatori per file multimediali diversi e per i visualizzatori per video interattivi.
+Per ulteriori informazioni sulla distribuzione video sicura e su come usare l&#39;attributo di configurazione `VideoPlayer.ssl` nel vostro percorso URL, consultare [Distribuzione video sicura](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) nella Guida di riferimento per i visualizzatori. Oltre al visualizzatore per video, la distribuzione sicura dei video è disponibile per i visualizzatori per file multimediali diversi e per i visualizzatori per video interattivi.
 
 ### Componente File multimediali interattivi {#interactive-media-component}
 
