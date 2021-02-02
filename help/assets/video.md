@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10392'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori di Adobi ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori di Adobi ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -172,7 +172,7 @@ Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente l
 
 Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione in HTML5 e CSS, di usufruire di riproduzione incorporata e di utilizzare lo streaming adattativo e progressivo a seconda delle funzionalità del browser, i contenuti multimediali potranno essere visti dagli utenti desktop e mobili e potranno così godere di un’esperienza video ottimizzata.
 
-Consultate anche [I visualizzatori HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori di Adobi .
+Consultate anche [I visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori di Adobi .
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
