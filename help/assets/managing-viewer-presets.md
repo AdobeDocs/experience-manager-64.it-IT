@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4234'
+ht-degree: 12%
 
 ---
 
@@ -56,7 +56,7 @@ Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e 
 
 Diverse pagine Web hanno esigenze diverse. Ad esempio, a volte desiderate una pagina Web che fornisca un collegamento per aprire il visualizzatore HTML5 in una finestra browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina host. In quest’ultimo caso, la pagina Web potrebbe avere un layout statico. Oppure può essere *reattivo* e può essere visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine Web statiche che quelle reattive.
 
-Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate [Libreria immagini reattive](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) nella *Guida API di Image Server*.
+Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate [Libreria immagini reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) nella *Guida API di Image Server*.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Vedere anche [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-275
 
 Per informazioni sui browser Web e sulle versioni del sistema operativo supportati per i visualizzatori, consultate le Note sulla versione dei visualizzatori.
 
-Consultate le *Note sulla versione dei visualizzatori* nel sommario della [Guida di riferimento dei visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consultate le *Note sulla versione dei visualizzatori* nel sommario della [Guida di riferimento dei visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 >[!NOTE]
 >
@@ -211,15 +211,15 @@ Consultate [Considerazioni speciali per la creazione di un predefinito per visua
 
       L&#39;editor visivo consente di visualizzare l&#39;effetto di una determinata proprietà su uno stile. È sufficiente impostare o regolare una qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando l’esempio a sinistra dell’editor.
 
-      Le proprietà di stile CSS per ciascun tipo di predefinito per visualizzatori sono descritte nell&#39;argomento della guida &quot;Personalizzazione di *&lt;nome_visualizzatore>* visualizzatore&quot; nella [Guida di riferimento visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+      Le proprietà di stile CSS per ciascun tipo di predefinito per visualizzatori sono descritte nell&#39;argomento della guida &quot;Personalizzazione di *&lt;nome_visualizzatore>* visualizzatore&quot; nella [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
-      Ad esempio, se state creando un predefinito per visualizzatori di tipo `Mixed_Media`, consultate [Customizing Mixed Media Viewer](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
+      Ad esempio, se state creando un predefinito per visualizzatori di tipo `Mixed_Media`, consultate [Customizing Mixed Media Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
 
    * Se hai definito le impostazioni stile in un file CSS separato, puoi caricarlo in AEM Assets. Toccate **[!UICONTROL Importa CSS]** sotto il menu a discesa **[!UICONTROL Tipo selezionato]** (potrebbe essere necessario scorrere l&#39;editor visivo per visualizzarlo) per trovare il file CSS caricato e associarlo al predefinito per visualizzatori.
 
       Quando importate un file CSS, l&#39;editor visivo verifica se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se create un visualizzatore zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della classe del visualizzatore `.s7mixedmediaviewer` definito su un elemento visualizzatore principale.
 
-      Potete importare CSS arbitrario, a mano, purché definisca correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in un qualsiasi argomento della guida &quot;Personalizzazione *&lt;nome visualizzatore>* del visualizzatore&quot; nella [Guida di riferimento dei visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consultate [Personalizzazione del visualizzatore zoom](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). È tuttavia possibile che l&#39;editor visivo non comprenda alcuni valori CSS. In tali casi, l&#39;editor visivo tenta di ignorare gli errori in modo che il CSS possa funzionare comunque.
+      Potete importare CSS arbitrario, a mano, purché definisca correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in un qualsiasi argomento della guida &quot;Personalizzazione *&lt;nome visualizzatore>* del visualizzatore&quot; nella [Guida di riferimento dei visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Ad esempio, per informazioni sui marcatori CSS per il visualizzatore zoom, consultate [Personalizzazione del visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). È tuttavia possibile che l&#39;editor visivo non comprenda alcuni valori CSS. In tali casi, l&#39;editor visivo tenta di ignorare gli errori in modo che il CSS possa funzionare comunque.
    >[!NOTE]
    >
    >Se preferisci modificare il CSS direttamente nel relativo modulo non elaborato, tocca **[!UICONTROL Mostra/Nascondi CSS]** nel menu a discesa Tipo selezionato (potrebbe essere necessario scorrere l’editor visivo per visualizzare l’opzione).****
@@ -236,7 +236,7 @@ Consultate [Considerazioni speciali per la creazione di un predefinito per visua
 
    A molti componenti nell’editor visivo è associata una descrizione dettagliata. Queste descrizioni vengono visualizzate all’interno di caselle blu quando si espande un componente per visualizzarne i parametri associati.
 
-   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **Comando IS**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
+   Alcuni tipi di Visualizzatore dispongono di componenti che consentono di specificare i comandi Image Server in un campo di testo **Comando IS**. Per un elenco dei comandi utilizzabili, consulta la sezione [Riferimento API di Server immagini](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
