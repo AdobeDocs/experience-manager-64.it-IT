@@ -7,10 +7,10 @@ user-guide-title: Guida alla distribuzione di AEM 6.4
 breadcrumb-title: Guida alla distribuzione
 user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.4, inclusa la distribuzione cloud di Adobe Managed Services.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 18%
+source-wordcount: '356'
+ht-degree: 17%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 18%
    + [Scaricamento dei processi](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Mapping delle risorse](resource-mapping.md)
-   + [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md)
+   + [Abilitazione di HTTP su SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [Controlli di coerenza e di transito](consistency-check.md)
    + [Linee guida sulle prestazioni](performance-guidelines.md)
    + [Ottimizzazione delle prestazioni](configuring-performance.md)
