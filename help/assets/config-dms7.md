@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5587'
 ht-degree: 4%
 
 ---
@@ -154,7 +154,7 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 * **[!UICONTROL Valori predefiniti per i campi]**  catalogo: queste impostazioni interessano la risoluzione e il tipo predefinito di miniatura delle immagini.
 * **[!UICONTROL Attributi]**  di gestione del colore: queste impostazioni determinano quali profili colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi]**  di compatibilità: questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
-* **[!UICONTROL Supporto]**  per la localizzazione: queste impostazioni consentono di gestire più attributi della lingua. Consente inoltre di specificare una stringa di mappa lingua in modo da definire le lingue da supportare per le varie descrizioni comandi nei visualizzatori. Per ulteriori informazioni sulla configurazione del supporto per la localizzazione, consultate [Considerazioni per la configurazione della localizzazione delle risorse](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Supporto]**  per la localizzazione: queste impostazioni consentono di gestire più attributi della lingua. Consente inoltre di specificare una stringa di mappa lingua in modo da definire le lingue da supportare per le varie descrizioni comandi nei visualizzatori. Per ulteriori informazioni sulla configurazione del supporto per la localizzazione, vedere [Considerazioni importanti per l&#39;implementazione del supporto per la localizzazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server).
 
 #### Configurazione delle impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
 
