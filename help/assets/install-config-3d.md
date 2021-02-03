@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1679'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzionalità delle risorse 3D in [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superiore.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzionalità delle risorse 3D in [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superiore.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 L&#39;installazione e la configurazione di AEM 3D (versione 3.0) prevede quanto segue:
 
