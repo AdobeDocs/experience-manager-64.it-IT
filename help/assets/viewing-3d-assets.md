@@ -1,18 +1,14 @@
 ---
 title: Visualizzazione di risorse 3D
-seo-title: Visualizzazione di risorse 3D
 description: Scoprite il visualizzatore 3D interattivo disponibile dalla pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
-seo-description: Scoprite il visualizzatore 3D interattivo disponibile dalla pagina dei dettagli delle risorse in AEM e come usarlo per visualizzare le risorse 3D.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1778'
 ht-degree: 32%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzione delle risorse 3D in [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superiore.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) per visualizzare le risorse 3D.
+>AEM 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzione delle risorse 3D in [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superiore.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) per visualizzare le risorse 3D.
 
 Questo documento descrive sia come visualizzare le risorse 3D nei dettagli delle risorse, sia come visualizzare le risorse che si trovano nel componente 3D nei siti.
 
