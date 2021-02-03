@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di  risorse Adobe Dimension
-seo-title: Utilizzo di  risorse Adobe Dimension
 description: Utilizzo  risorse Adobe Dimension in AEM 3D.
-seo-description: Utilizzo  risorse Adobe Dimension in AEM 3D.
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM feature pack 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzione delle risorse 3D in [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superiore.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) quando lavorate con  risorse Adobe Dimension.
+>AEM feature pack 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzione delle risorse 3D in [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superiore.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) quando lavorate con  risorse Adobe Dimension.
 
 AEM feature pack 3D supporta  risorse Adobe Dimension (`.dn` file) in  AEM Assets,  AEM Sites e  AEM Screens.
 
