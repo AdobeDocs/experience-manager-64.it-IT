@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '3426'
+source-wordcount: '3381'
 ht-degree: 31%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 31%
 
 # Aggiunta di funzionalità di Dynamic Media Classic alla pagina{#adding-scene-features-to-your-page}
 
-[ Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis è una soluzione in hosting per la gestione, il miglioramento, la pubblicazione e la distribuzione di risorse multimediali su display e stampe Web, mobili, e-mail e connessi a Internet.
+ Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali su schermi e stampe Web, mobili, e-mail e connessi a Internet.
 
 Potete visualizzare AEM risorse pubblicate in Dynamic Media Classic in vari visualizzatori:
 
@@ -149,8 +149,6 @@ Una volta resi disponibili in modalità **[!UICONTROL Progettazione]**, potete a
 
 A partire dal 31 gennaio 2017,  Adobe Dynamic Media Classic ha dichiarato ufficialmente terminato il supporto per la piattaforma di visualizzatori Flash.
 
-Per ulteriori informazioni su questa importante modifica, consultate [Domande frequenti sulla fine del ciclo di vita del visualizzatore di Flash](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
-
 ### Aggiunta di un componente Dynamic Media Classic a una pagina {#adding-a-scene-component-to-a-page}
 
 L’aggiunta di un componente Dynamic Media Classic a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti di Dynamic Media Classic sono descritti dettagliatamente nelle sezioni seguenti.
@@ -248,7 +246,7 @@ Il componente Immagine classica di Dynamic Media consente di aggiungere alle imm
 
 ### Modello immagini {#image-template}
 
-[I ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) modelli di immagini classici di Dynamic Media sono contenuti Photoshop con più livelli importati in Dynamic Media Classic, con contenuti e proprietà parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagini]** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
+[I ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) modelli di immagini classici di Dynamic Media sono contenuti Photoshop con più livelli importati in Dynamic Media Classic, con contenuti e proprietà parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagine]** consente di importare immagini e modificare il testo in AEM in modo dinamico. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
 
 Fai clic su **[!UICONTROL Modifica]** per configurare il componente. È possibile configurare le impostazioni [comuni a tutti i componenti di Dynamic Media Classic](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents), nonché altre impostazioni descritte in questa sezione.
 
