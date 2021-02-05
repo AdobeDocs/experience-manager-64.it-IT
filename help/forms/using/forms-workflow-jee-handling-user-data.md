@@ -1,16 +1,16 @@
 ---
 title: Flussi di lavoro Forms JEE | Gestione dei dati utente
 seo-title: Flussi di lavoro Forms JEE | Gestione dei dati utente
-description: 'null'
-seo-description: 'null'
+description: ' flussi di lavoro AEM Forms JEE forniscono strumenti per progettare, creare e gestire i processi aziendali. Per ulteriori informazioni su come accedere ai dati utente ed eliminarli, identificare gli ID dell’istanza del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto, identificare gli ID dell’istanza del processo quando i dati dell’utente vengono memorizzati in variabili primitive, eliminare i dati utente dalle istanze del flusso di lavoro in base agli ID dell’istanza del processo e lavorare con le attività orfane.'
+seo-description: ' flussi di lavoro AEM Forms JEE forniscono strumenti per progettare, creare e gestire i processi aziendali. Per ulteriori informazioni su come accedere ai dati utente ed eliminarli, identificare gli ID dell’istanza del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto, identificare gli ID dell’istanza del processo quando i dati dell’utente vengono memorizzati in variabili primitive, eliminare i dati utente dalle istanze del flusso di lavoro in base agli ID dell’istanza del processo e lavorare con le attività orfane.'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
