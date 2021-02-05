@@ -1,16 +1,16 @@
 ---
 title: Procedura dettagliata sul sito di riferimento We.Finance Auto Insurance Renewal
 seo-title: Procedura dettagliata sul sito di riferimento We.Finance Auto Insurance Renewal
-description: 'null'
-seo-description: 'null'
+description: Leggi la descrizione dettagliata del sito di riferimento We.Finance Auto Insurance use case che mostra come AEM moduli e la sua integrazione con Microsoft Dynamics aiutino a personalizzare l'esperienza dei clienti in una società di servizi finanziari.
+seo-description: Leggi la descrizione dettagliata del sito di riferimento We.Finance Auto Insurance use case che mostra come AEM moduli e la sua integrazione con Microsoft Dynamics aiutino a personalizzare l'esperienza dei clienti in una società di servizi finanziari.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Il sito We.Finance è un sito di servizi finanziari progettato per aiutarvi a ap
 
 Leggi la descrizione dettagliata del caso di utilizzo della funzione Assicurazione automatica We.Finance che mostra come AEM moduli e la sua integrazione con Microsoft Dynamics contribuiscano a personalizzare l&#39;esperienza dei clienti in una società di servizi finanziari. La procedura interattiva è stata progettata per semplificare l&#39;implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
 
-**Il viaggio inizia con il caso di utilizzo:**
+**L&#39;percorso inizia con il caso d&#39;uso:**
 
 Sarah Rose è un cliente esistente di We.Finance e ha acquistato una polizza di assicurazione auto. Ora è il momento dell’anno per il rinnovo della sua polizza assicurativa. Gloria Rios, agente assicurativo, We.Finance invia un promemoria a Sarah riguardo il rinnovo della sua polizza. Sarah segue le istruzioni fornite nell&#39;e-mail e completa con successo la procedura.
 
