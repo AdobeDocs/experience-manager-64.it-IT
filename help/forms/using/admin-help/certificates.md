@@ -39,7 +39,7 @@ I certificati richiesti per completare la verifica della firma devono trovarsi n
 1. Fare clic su Importa e, in Tipo archivio attendibili, selezionare una delle seguenti opzioni:
 
    * **Considera affidabili le connessioni SSL:** specifica che AEM moduli possono utilizzare certificati per connettersi a sistemi esterni tramite SSL.
-   * **Considera attendibile la firma certificata:** specifica che i certificati sono attendibili nelle operazioni di firma dei documenti per la certificazione delle firme digitali degli autori.
+   * **Considera attendibile la firma certificata:** Specifica che i certificati sono attendibili nelle operazioni di firma dei documenti per la certificazione delle firme digitali degli autori.
    * **Trust for Signature:** Specifica che i certificati sono attendibili nelle operazioni di firma dei documenti per le firme digitali non di autori.
    * **Trust for Certificate Authentication:** specifica AEM moduli utilizza certificati per l&#39;autenticazione degli utenti tramite l&#39;autenticazione tramite certificato o smart card.
    * **Trust for OCSP Server:** specifica che AEM moduli è possibile utilizzare certificati per connettersi ai rispondenti OCSP esterni
