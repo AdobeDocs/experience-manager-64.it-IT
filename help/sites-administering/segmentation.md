@@ -259,7 +259,7 @@ Se avete impostato un&#39;attività e un&#39;esperienza utilizzando l&#39;esempi
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-1. Passate a una persona che non corrisponde alla segmentazione configurata per l&#39;esperienza e verificate che l&#39;esperienza cambia di conseguenza.
+1. Passate a una persona che non corrisponde alla segmentazione configurata per l&#39;esperienza e controllate che l&#39;esperienza cambi di conseguenza.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
