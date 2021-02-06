@@ -59,7 +59,7 @@ Per le personalizzazioni avanzate che utilizzano l&#39;SDK, fare riferimento a [
 
 * Per creare esperienze personalizzate e visualizzazioni di dati, le app Livefyre possono essere create da zero utilizzando i dati Livefyre e social tramite l&#39;API [Bootstrap e Stream](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-Quando create l&#39;interfaccia per UGC, accertatevi di seguire le [linee guida di visualizzazione di &lt;a0/>Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand) e [Instagram](https://en.instagram-brand.com/).
+Quando create l&#39;interfaccia per UGC, accertatevi di seguire le [linee guida di visualizzazione di Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand) e [Instagram](https://en.instagram-brand.com/).
 
 ### Integrazione autenticazione di Media Wall {#media-wall-authentication-integration}
 
