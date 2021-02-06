@@ -39,7 +39,7 @@ Al termine di questa esercitazione, potrete:
 
 ## Caso di utilizzo {#use-case}
 
-Il viaggio inizia con l&#39;apprendimento del caso d&#39;uso:
+Il percorso inizia con l’apprendimento del caso d’uso:
 
 Un operatore di telecomunicazioni invia mensilmente ai clienti via e-mail. Il progetto di legge è una comunicazione interattiva. Il messaggio e-mail include:
 
