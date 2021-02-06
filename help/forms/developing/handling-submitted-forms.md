@@ -88,7 +88,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Una pagina Web contiene un collegamento che accede a un Servlet Java che richiama il servizio Forms.</p></td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
    <td><p>Il servizio Forms esegue il rendering di un modulo PDF interattivo nel browser Web del client.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>L'utente compila un modulo interattivo e fa clic su un pulsante di invio. Il modulo viene inviato nuovamente al servizio Forms come dati PDF. Questa opzione è impostata in Designer.</p></td>
   </tr>
   <tr>
@@ -212,7 +212,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 
    >[!NOTE]
    >
-   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il metodo `RenderOptionsSpec` dell&#39;oggetto &lt;a1/> e passando `setPDF2XDP`, nonché chiamando `true` e passando `setXMLData`. `true` È quindi possibile richiamare il metodo `FormsResult` dell&#39;oggetto `getOutputXML` per recuperare i dati XML che corrispondono ai dati XDP/XML. (L&#39;oggetto `FormsResult` viene restituito dal metodo `processFormSubmission`*, illustrato nel passaggio successivo.)*
+   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il metodo `setPDF2XDP` dell&#39;oggetto `RenderOptionsSpec` e passando `true`, nonché chiamando `setXMLData` e passando `true`. È quindi possibile richiamare il metodo `FormsResult` dell&#39;oggetto `getOutputXML` per recuperare i dati XML che corrispondono ai dati XDP/XML. (L&#39;oggetto `FormsResult` viene restituito dal metodo `processFormSubmission`*, illustrato nel passaggio successivo.)*
 
    * Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
 
@@ -230,7 +230,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 1. Determinare se l&#39;invio del modulo contiene file allegati
 
    * Richiamare il metodo `FormsResult` dell&#39;oggetto `getAttachments`. Questo metodo restituisce un oggetto `java.util.List` che contiene i file inviati con il modulo.
-   * Iterate l&#39;oggetto `java.util.List` per determinare se sono presenti allegati di file. Se sono presenti allegati, ogni elemento è un&#39;istanza `com.adobe.idp.Document`. È possibile salvare gli allegati richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando un oggetto &lt;a2/>.`java.io.File`
+   * Iterate l&#39;oggetto `java.util.List` per determinare se sono presenti allegati di file. Se sono presenti allegati, ogni elemento è un&#39;istanza `com.adobe.idp.Document`. È possibile salvare gli allegati richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando un oggetto `com.adobe.idp.Document`.
 
    >[!NOTE]
    >
@@ -250,7 +250,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 
       * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
       * Creare un oggetto `java.io.File` utilizzando il relativo costruttore pubblico. Accertatevi di specificare PDF come estensione del nome file.
-      * Compilare il file PDF richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando l&#39;oggetto &lt;a2/>.`java.io.File`
+      * Compilare il file PDF richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando l&#39;oggetto `com.adobe.idp.Document`.
 
 
 **Consulta anche**
