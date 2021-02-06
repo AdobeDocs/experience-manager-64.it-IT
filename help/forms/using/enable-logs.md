@@ -93,7 +93,7 @@ La configurazione del registro è composta dal livello di registro e dalla categ
    <td>DISATTIVATO<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
