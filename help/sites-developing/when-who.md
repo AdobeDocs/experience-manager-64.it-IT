@@ -37,7 +37,7 @@ Vari ruoli possono essere coinvolti nei test e nelle varie fasi di sviluppo dei 
   <tr> 
    <td>Team Quality Assurance</td> 
    <td><p>Sarà necessario un team di controllo qualità (di qualsiasi dimensione) per i test funzionali e di prestazioni.</p> <p>Questi sono tester neutrali e dedicati - una regola d'oro del software afferma sempre che uno sviluppatore non dovrebbe mai testare il proprio lavoro.</p> <p>I membri di questo team possono provenire dal team di progetto Day, dal partner e/o dal team di clienti.</p> </td> 
-   <td><p>Il primo rilascio di funzione deve essere reso disponibile ai tester (non appena realisticamente possibile). Anche se una versione intermedia iniziale può generare molti bug, può fornire un feedback rapido su problemi critici.</p> </td> 
+   <td><p>Il primo rilascio di funzione dovrebbe essere reso disponibile ai tester (non appena realisticamente possibile). Anche se una versione intermedia iniziale può generare molti bug, può fornire un feedback rapido su problemi critici.</p> </td> 
   </tr> 
   <tr> 
    <td>Team Test Cliente</td> 
