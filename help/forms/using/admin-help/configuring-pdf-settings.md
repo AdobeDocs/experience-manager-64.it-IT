@@ -180,7 +180,7 @@ Utilizzate le opzioni generali per specificare la versione di  Acrobat da utiliz
  </tbody> 
 </table>
 
-**Compressione a livello di oggetto:** Raggruppa piccoli oggetti (ciascuno dei quali non è comprimibile) in flussi che possono essere compressi in modo efficiente.
+**Compressione a livello di oggetto:** Raggruppa oggetti di piccole dimensioni (ciascuno dei quali non è comprimibile) in flussi che possono quindi essere compressi in modo efficiente.
 
 **Disattivato:** non comprime alcuna informazione strutturale nel documento PDF. Selezionate questa opzione se desiderate che gli utenti possano visualizzare, navigare e interagire con segnalibri e altre informazioni strutturali utilizzando  Acrobat 5 e versioni successive.
 
