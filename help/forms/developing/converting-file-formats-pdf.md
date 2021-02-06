@@ -160,7 +160,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
 1. Convertire il file in un documento PDF.
 
-   Per convertire il file in un documento PDF, richiamare il metodo `GeneratePdfServiceClient` dell&#39;oggetto &lt;a1/> e passare i valori seguenti:`createPDF2`
+   Per convertire il file in un documento PDF, richiamare il metodo `createPDF2` dell&#39;oggetto `GeneratePdfServiceClient` e passare i valori seguenti:
 
    * Un oggetto `com.adobe.idp.Document` che rappresenta il file da convertire.
    * Un oggetto `java.lang.String` che contiene l&#39;estensione del file.
@@ -230,7 +230,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
 1. Convertire il file in un documento PDF.
 
-   Per convertire il file in un documento PDF, richiamare il metodo `GeneratePDFServiceService` dell&#39;oggetto &lt;a1/> e passare i valori seguenti:`CreatePDF2`
+   Per convertire il file in un documento PDF, richiamare il metodo `CreatePDF2` dell&#39;oggetto `GeneratePDFServiceService` e passare i valori seguenti:
 
    * Un oggetto `BLOB` che rappresenta il file da convertire.
    * Una stringa che contiene l&#39;estensione del file.
@@ -383,7 +383,7 @@ Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Generate 
 
 1. Convertite il contenuto HTML in un documento PDF.
 
-   Convertite il contenuto HTML in un documento PDF richiamando il metodo `GeneratePDFServiceService` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`HtmlToPDF2`
+   Convertite il contenuto HTML in un documento PDF richiamando il metodo `HtmlToPDF2` dell&#39;oggetto `GeneratePDFServiceService` e passando i seguenti valori:
 
    * Una stringa che contiene il contenuto HTML da convertire.
    * Un oggetto `java.lang.String` che contiene le impostazioni del tipo di file da utilizzare nella conversione.
