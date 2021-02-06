@@ -419,7 +419,7 @@ Per impostare le opzioni di salvataggio del documento PDF, utilizzare l&#39;API 
 1. Impostare la modalità Salva
 
    * Creare un oggetto `PDFUtilitySaveMode` utilizzando il relativo costruttore.
-   * Impostare la modalità di salvataggio assegnando un valore stringa al metodo `PDFUtilitySaveMode` dell&#39;oggetto &lt;a1/> che specifica la modalità di salvataggio. `saveStyle` Ad esempio, per salvare la visualizzazione Web in modo rapido, specificate `FAST_WEB_VIEW`.
+   * Impostare la modalità di salvataggio assegnando un valore stringa al metodo `saveStyle` dell&#39;oggetto `PDFUtilitySaveMode` che specifica la modalità di salvataggio. Ad esempio, per salvare la visualizzazione Web in modo rapido, specificate `FAST_WEB_VIEW`.
 
 1. Richiamo dell&#39;operazione di salvataggio dello stile
 
