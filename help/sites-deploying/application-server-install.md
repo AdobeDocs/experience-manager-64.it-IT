@@ -223,7 +223,7 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
 
       `webapps/manager/WEB-INF/web.xml`
 
-      e aumentare le dimensioni massime dei file e massime delle richieste ad almeno 500 MB, vedere l&#39;esempio seguente di un file `multipart-config`:`web.xml`
+      e aumentare le dimensioni massime dei file e massime delle richieste ad almeno 500 MB, vedere l&#39;esempio seguente di un file `web.xml`:`multipart-config`
 
       ```
       <multipart-config>
