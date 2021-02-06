@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Spesso ai clienti viene richiesto di inviare più moduli per richiedere un servizio o un benefit. Si tratta di trovare tutti i moduli pertinenti; e riempirli, inviarli e tenerne traccia separatamente. Inoltre, devono compilare i dettagli comuni più volte tra i moduli. L&#39;intero processo diventa complesso e soggetto a errore se si tratta di un numero elevato di moduli. La funzione per i set di moduli di  AEM Forms consente di semplificare l&#39;esperienza utente in tali scenari.
+Spesso ai clienti viene richiesto di inviare più moduli per richiedere un servizio o un benefit. Si tratta di trovare tutti i moduli pertinenti; e riempirli, inviarli e tenerne traccia separatamente. Inoltre, devono compilare i dettagli comuni più volte nei diversi moduli. L&#39;intero processo diventa complesso e soggetto a errore se si tratta di un numero elevato di moduli. La funzione per i set di moduli di  AEM Forms consente di semplificare l&#39;esperienza utente in tali scenari.
 
 Un set di moduli è un insieme di moduli HTML5 raggruppati e presentati come un singolo set di moduli per gli utenti finali. Quando gli utenti finali iniziano a compilare un set di moduli, si passa direttamente da un modulo all&#39;altro. Alla fine, è possibile inviare tutti i moduli con un solo clic.
 
