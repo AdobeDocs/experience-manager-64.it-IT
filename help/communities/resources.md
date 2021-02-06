@@ -286,7 +286,7 @@ assegnatariUtilizzate il menu a discesa per selezionare tra  [i membri](#members
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-La creazione della risorsa di abilitazione ha avuto esito positivo e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
+La creazione della risorsa di abilitazione è riuscita e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
 
 ## Creare un percorso di apprendimento {#create-a-learning-path}
 
