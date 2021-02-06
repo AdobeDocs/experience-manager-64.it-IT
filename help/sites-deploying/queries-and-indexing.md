@@ -270,7 +270,7 @@ Considerate questa struttura di nodi come esempio:
 
 
 
-Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi factory. Pertanto:
+Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi di fabbrica. Pertanto:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` diventa  `standard`
 
