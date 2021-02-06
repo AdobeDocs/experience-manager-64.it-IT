@@ -176,7 +176,7 @@ Dovrebbe essere preparato un piano di test completo per gli aggiornamenti di tes
 
 ### Verifica della procedura di aggiornamento {#testing-the-upgrade-procedure}
 
-La procedura di aggiornamento descritta qui deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutti i passaggi non sono documentati nel registro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
+La procedura di aggiornamento descritta qui deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutte le fasi non sono documentate nel libro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
 
 ### Aree di test di implementazione {#implementation-test-areas-}
 
