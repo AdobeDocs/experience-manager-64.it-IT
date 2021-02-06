@@ -71,7 +71,7 @@ Nella maggior parte dei casi è necessario un solo candidato e la priorità può
 
 ## Creazione di tipi di moduli interfaccia utente ContextHub {#creating-contexthub-ui-module-types}
 
-Crea tipi di moduli di interfaccia utente personalizzati quando quelli installati con ContextHub[ non soddisfano i requisiti dell&#39;utente. ](/help/sites-developing/ch-samplemodules.md) Per creare un tipo di modulo dell&#39;interfaccia utente, create un nuovo renderer di moduli dell&#39;interfaccia utente estendendo la classe `ContextHub.UI.BaseModuleRenderer` e quindi registrandola con `ContextHub.UI`.
+Crea tipi di moduli di interfaccia utente personalizzati quando quelli installati con ContextHub](/help/sites-developing/ch-samplemodules.md) non soddisfano i requisiti dell&#39;utente. [ Per creare un tipo di modulo dell&#39;interfaccia utente, create un nuovo renderer di moduli dell&#39;interfaccia utente estendendo la classe `ContextHub.UI.BaseModuleRenderer` e quindi registrandola con `ContextHub.UI`.
 
 Per creare un renderer di modulatore dell&#39;interfaccia utente, create un oggetto `Class` che contenga la logica per il rendering del modulo dell&#39;interfaccia utente. Come minimo, la classe deve eseguire le azioni seguenti:
 
