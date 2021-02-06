@@ -168,7 +168,7 @@ Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calc
 
 **Rendering di un modulo PDF interattivo**
 
-Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con  Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `FormsServiceClient` dell&#39;oggetto `renderPDFForm` o il metodo &lt;a2/>.`renderPDFForm2`
+Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con  Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `renderPDFForm` dell&#39;oggetto `renderPDFForm2` o il metodo `FormsServiceClient`.
 
 L&#39;oggetto `renderPDFForm` utilizza un oggetto `URLSpec`. Il livello principale del contenuto del file XDP viene passato al servizio Forms utilizzando il metodo `URLSpec` dell&#39;oggetto `setContentRootURI`. Il nome della struttura del modulo ( `formQuery`) viene passato come valore di parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo.
 
