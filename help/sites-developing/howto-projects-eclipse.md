@@ -60,7 +60,7 @@ Eclipse può anche fornire supporto nell&#39;utilizzo di JSP, ad esempio
 
 Per farlo funzionare:
 
-1. Seguite le istruzioni riportate in [How-To Work with JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [How-To Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md) (Come lavorare con JSP&lt;a1/> in &lt;a2/>How-To Build Projects using Apache Maven).
+1. Seguite le istruzioni riportate in [How-To Work with JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [How-To Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md) (Come lavorare con JSP in How-To Build Projects using Apache Maven).
 1. Aggiungi quanto segue alla sezione &lt;build /> nel POM del modulo di contenuto.
 
    Il plugin di supporto Maven di Eclipse, m2e, non fornisce supporto per il maven-jspc-plugin, e questa configurazione dice a m2e di ignorare il plugin e il relativo compito di pulire i risultati di compilazione temporanea.
