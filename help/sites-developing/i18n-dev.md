@@ -77,7 +77,7 @@ Il primo argomento del metodo `get` deve essere conforme alle seguenti regole:
 
 * Il valore deve essere un valore letterale di stringa. Una variabile di tipo `String` non è accettabile.
 * La stringa letterale deve essere espressa su una sola riga.
-* La stringa fa distinzione tra maiuscole e minuscole.
+* Nella stringa viene fatta distinzione tra maiuscole e minuscole.
 
 ```xml
 i18n.get("Enter a search keyword");
