@@ -71,7 +71,7 @@ Per impostare i certificati, effettuate le seguenti operazioni:
 1. Accedete all&#39;istanza di AEM Author come amministratore.
 
 1. Fare clic su **Adobe Experience Manager** nella barra di navigazione globale. Accedete a **Strumenti** > **Sicurezza** > **Utenti**.
-1. Fare clic sul campo **name** dell&#39;account utente. Viene visualizzata la pagina **Edit User Settings** (Modifica impostazioni utente&lt;a1/>).
+1. Fare clic sul campo **name** dell&#39;account utente. Viene visualizzata la pagina **Edit User Settings** (Modifica impostazioni utente).
 1. Nell&#39;istanza di AEM Author, i certificati risiedono in un KeyStore. Se non avete creato un KeyStore in precedenza, fate clic su **Crea KeyStore** e impostate una nuova password per KeyStore. Se il server contiene già un KeyStore, ignora questo passaggio.
 
 1. Nella pagina **Edit User Settings**, fare clic su **Manage KeyStore**.
