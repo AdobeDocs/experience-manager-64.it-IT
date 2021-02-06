@@ -418,7 +418,7 @@ Dopo aver creato un dizionario dati, è possibile scaricarlo come file di dati d
 1. Selezionare **Scarica dati XML di esempio**.
 1. Toccate **OK** nel messaggio di avviso.
 
-   Gestione corrispondenza crea un file XML basato sulla struttura del dizionario dati selezionato e lo scarica nel computer con il nome &lt;data-dizionario-name>-SampleData. Ora è possibile modificare questo file in un editor XML o di testo per inserire i dati durante la creazione di una lettera[.](/help/forms/using/create-letter.md)
+   Gestione corrispondenza crea un file XML basato sulla struttura del dizionario dati selezionato e lo scarica nel computer con il nome &lt;data-dizionario-name>-SampleData. Ora è possibile modificare questo file in un editor XML o di testo per inserire i dati durante la creazione di una lettera](/help/forms/using/create-letter.md).[
 
 ## Internazionalizzazione dei metadati {#internationalization-of-meta-data}
 
