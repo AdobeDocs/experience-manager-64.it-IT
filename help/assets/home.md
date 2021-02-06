@@ -1,7 +1,7 @@
 ---
-title: Guida ad Assets
+title: Guida di Assets
 description: Questa guida descrive tutte  attività di AEM Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
-user-guide-title: Guida ad Assets
+user-guide-title: Guida di Assets
 translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 17%
 ---
 
 
-# Guida ad Assets
+# Guida di Assets
 
 Questa guida descrive tutte  attività di AEM Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 
