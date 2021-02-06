@@ -119,6 +119,6 @@ Quando scaricate le risorse dal collegamento condiviso utilizzando la funzione C
 
 * Le cartelle di risorse o le raccolte che contengono uno spazio vuoto nel loro nome potrebbero non essere condivise.
 * Se gli utenti non possono scaricare le risorse condivise, verificate con il vostro [!DNL Experience Manager] amministratore quali siano i [limiti di download](#configure-maximum-data-size).
-* Se non potete inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l&#39;e-mail, verificate con l&#39;amministratore [!DNL Experience Manager]se il &lt;a1/>servizio e-mail[ è configurato o meno.](#configure-day-cq-mail-service)
+* Se non potete inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l&#39;e-mail, verificate con l&#39;amministratore [se il [!DNL Experience Manager]servizio e-mail](#configure-day-cq-mail-service) è configurato o meno.
 * Se non potete condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti, accertatevi di disporre delle autorizzazioni appropriate. Consultate [condividere risorse](#share-assets).
 * Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Crea di nuovo il collegamento e condividi nuovamente con gli utenti.
