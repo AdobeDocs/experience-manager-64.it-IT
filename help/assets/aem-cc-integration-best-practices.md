@@ -258,7 +258,7 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
    * **C:** Al termine degli aggiornamenti, il file viene copiato o salvato nella cartella mappata
 
 * **3:** Gli aggiornamenti delle risorse si riflettono in DAM. Per sbloccare la risorsa, archiviatela.
-* **4:** Il bene viene messo in produzione.
+* **4:** Asset viene messo in produzione.
 
 Di seguito sono riportati alcuni consigli generali su come gestire le risorse nel corso di questo processo:
 
