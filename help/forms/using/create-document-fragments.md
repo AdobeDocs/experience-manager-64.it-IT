@@ -83,7 +83,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    ![variable_create_string](assets/variable_create_string.png)
 
-   Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
+   Ripetete i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Periodo di fatturazione: Tipo stringa
    * Data fatturazione: Tipo data
@@ -142,7 +142,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    1. Selezionare **String** come tipo.
    1. Toccate **Crea**.
 
-   Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
+   Ripetete i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Codice di stato: Tipo di numero
    * Numberconnection: Tipo di numero
