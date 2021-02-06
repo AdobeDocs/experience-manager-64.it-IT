@@ -125,7 +125,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API Java:
 
 1. Conversione del documento
 
-   Convertire il documento PDF in un documento PDF/A richiamando il metodo `DocConverterServiceClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`toPDFA`
+   Convertire il documento PDF in un documento PDF/A richiamando il metodo `toPDFA` dell&#39;oggetto `DocConverterServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF da convertire
    * L&#39;oggetto `PDFAConversionOptionSpec` che specifica le informazioni di tracciamento
@@ -136,7 +136,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API Java:
 
    * Recuperare il documento PDF/A richiamando il metodo `PDFAConversionResult` dell&#39;oggetto `getPDFA`. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che rappresenta il documento PDF/A.
    * Creare un oggetto `java.io.File` che rappresenti il file PDF/A. Accertatevi che l’estensione del nome file sia .pdf.
-   * Compilare il file con dati PDF/A richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando l&#39;oggetto &lt;a2/>.`java.io.File`
+   * Compilare il file con dati PDF/A richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando l&#39;oggetto `com.adobe.idp.Document`.
 
 **Consulta anche**
 
@@ -177,7 +177,7 @@ Convertire un documento PDF in un documento PDF/A utilizzando l&#39;API DocConve
 
 1. Conversione del documento
 
-   Convertire il documento PDF in un documento PDF/A richiamando il metodo `DocConverterServiceService` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`toPDFA`
+   Convertire il documento PDF in un documento PDF/A richiamando il metodo `toPDFA` dell&#39;oggetto `DocConverterServiceService` e passando i valori seguenti:
 
    * L&#39;oggetto `BLOB` che contiene il documento PDF da convertire
    * L&#39;oggetto `PDFAConversionOptionSpec` che specifica le informazioni di tracciamento
@@ -284,7 +284,7 @@ Determinare la conformità PDF/A utilizzando l&#39;API Java:
 
 1. Recupero di informazioni sul documento PDF
 
-   Determinare la conformità PDF/A richiamando il metodo `DocConverterServiceClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`isPDFA`
+   Determinare la conformità PDF/A richiamando il metodo `isPDFA` dell&#39;oggetto `DocConverterServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF.
    * L&#39;oggetto `PDFAValidationOptionSpec` che specifica le opzioni di esecuzione.
@@ -326,12 +326,12 @@ Determinare la conformità PDF/A utilizzando l&#39;API del servizio Web:
 1. Impostazione delle opzioni di esecuzione
 
    * Creare un oggetto `PDFAValidationOptionSpec` utilizzando il relativo costruttore.
-   * Impostare il livello di conformità assegnando al membro di dati `PDFAValidationOptionSpec` dell&#39;oggetto `compliance` il valore &lt;a2/>.`PDFAConversionOptionSpec_Compliance.PDFA_1B`
-   * Impostare il livello di tracciamento delle informazioni assegnando il membro di dati `PDFAValidationOptionSpec` dell&#39;oggetto con il valore `resultLevel`.`PDFAValidationOptionSpec_ResultLevel.DETAILED`
+   * Impostare il livello di conformità assegnando al membro di dati `compliance` dell&#39;oggetto `PDFAConversionOptionSpec_Compliance.PDFA_1B` il valore `PDFAValidationOptionSpec`.
+   * Impostare il livello di tracciamento delle informazioni assegnando il membro di dati `resultLevel` dell&#39;oggetto con il valore `PDFAValidationOptionSpec_ResultLevel.DETAILED`.`PDFAValidationOptionSpec`
 
 1. Recupero di informazioni sul documento PDF
 
-   Determinare la conformità PDF/A richiamando il metodo `DocConverterServiceService` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`isPDFA`
+   Determinare la conformità PDF/A richiamando il metodo `isPDFA` dell&#39;oggetto `DocConverterServiceService` e passando i valori seguenti:
 
    * L&#39;oggetto `BLOB` che contiene il documento PDF.
    * L&#39;oggetto `PDFAValidationOptionSpec` che contiene le opzioni di esecuzione.
