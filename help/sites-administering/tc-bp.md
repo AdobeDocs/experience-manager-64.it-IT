@@ -50,7 +50,7 @@ La creazione o l&#39;espansione di una presenza Web globale può essere un proce
 
 ## Processi e metodi di traduzione {#translation-processes-and-methods}
 
-* Coinvolgi un **provider di servizi di localizzazione (LSP)** con competenze in materia di traduzione e relative attività di localizzazione. I sistemi LSP possono contribuire a scalare la vostra attività globale fornendo un&#39;ampia gamma di risorse e tecnologie per migliorare l&#39;efficienza e risparmiare sui costi di traduzione:
+* Coinvolgi un **provider di servizi di localizzazione (LSP)** con competenze in materia di traduzione e relative attività di localizzazione. I sistemi LSP possono contribuire a scalare l&#39;attività globale fornendo un&#39;ampia gamma di risorse e tecnologie per migliorare l&#39;efficienza e risparmiare sui costi di traduzione:
 
    * Alcuni LSP sono sia fornitori di servizi che di tecnologie. Ci sono anche fornitori di tecnologie indipendenti che consentono a molti LSP di partecipare alle loro piattaforme di traduzione.
    * Il **AEM Framework di traduzione** supporta l&#39;integrazione con diversi fornitori di tecnologie di traduzione sia per la traduzione automatica che per la traduzione umana.
