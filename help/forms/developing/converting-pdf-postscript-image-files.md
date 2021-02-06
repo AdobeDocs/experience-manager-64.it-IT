@@ -119,7 +119,7 @@ Convertire un documento PDF in PostScript utilizzando l&#39;API Convert PDF Serv
 1. Impostare le opzioni di esecuzione della conversione.
 
    * Creare un oggetto `ToPSOptionsSpec` richiamandone il costruttore.
-   * Impostare le opzioni di esecuzione richiamando un metodo appropriato che appartiene all&#39;oggetto `ToPSOptionsSpec`. Ad esempio, per definire il livello PostScript creato, richiamare il metodo `ToPSOptionsSpec` dell&#39;oggetto `setPsLevel` e passare un valore di enumerazione &lt;a2/> che specifica il livello PostScript. `PSLevel` Per informazioni su tutti i valori di runtime che è possibile impostare, vedere il riferimento di classe `ToPSOptionsSpec` in [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Impostare le opzioni di esecuzione richiamando un metodo appropriato che appartiene all&#39;oggetto `ToPSOptionsSpec`. Ad esempio, per definire il livello PostScript creato, richiamare il metodo `setPsLevel` dell&#39;oggetto `PSLevel` e passare un valore di enumerazione `ToPSOptionsSpec` che specifica il livello PostScript. Per informazioni su tutti i valori di runtime che è possibile impostare, vedere il riferimento di classe `ToPSOptionsSpec` in [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Convertire il documento PDF in un file PostScript.
 
@@ -300,7 +300,7 @@ Convertire un documento PDF in un formato immagine utilizzando l&#39;API del ser
 
 1. Recuperate i file immagine da una raccolta.
 
-   Iterate l&#39;oggetto `java.util.List` per determinare se le immagini sono presenti. Ogni elemento è un&#39;istanza `com.adobe.idp.Document`. Salvate l&#39;immagine richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando un oggetto &lt;a2/>.`java.io.File`
+   Iterate l&#39;oggetto `java.util.List` per determinare se le immagini sono presenti. Ogni elemento è un&#39;istanza `com.adobe.idp.Document`. Salvate l&#39;immagine richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando un oggetto `com.adobe.idp.Document`.
 
 **Consulta anche**
 
