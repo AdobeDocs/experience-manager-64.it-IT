@@ -195,9 +195,9 @@ Per supportare questo, la ricerca di configurazione in AEM ha meccanismi di ered
 
 ### Utilizzo delle configurazioni {#using-configurations}
 
-Le configurazioni in AEM si basano sulle configurazioni Sling Context-Aware. I bundle Sling forniscono un&#39;API di servizio che può essere utilizzata per ottenere configurazioni basate sul contesto. Per configurazioni basate sul contesto si intendono le configurazioni correlate a una risorsa di contenuto o a una struttura di risorse, come descritto nell&#39;esempio precedente.[](#developer-example)
+Le configurazioni in AEM si basano sulle configurazioni Sling Context-Aware. I bundle Sling forniscono un&#39;API di servizio che può essere utilizzata per ottenere configurazioni basate sul contesto. Per configurazioni basate sul contesto si intendono le configurazioni correlate a una risorsa di contenuto o a una struttura di risorse, come descritto nell&#39;esempio precedente.](#developer-example)[
 
-Per ulteriori dettagli sulle configurazioni, gli esempi e le modalità di utilizzo in base al contesto, consultare la documentazione Sling.[](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Per ulteriori dettagli sulle configurazioni, gli esempi e le modalità di utilizzo in base al contesto, consultare la documentazione Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)[
 
 ### Console Web di ConfMgr {#confmgr-web-console}
 
