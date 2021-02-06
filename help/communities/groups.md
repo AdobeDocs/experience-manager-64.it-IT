@@ -220,7 +220,7 @@ Il pannello STRUTTURA consente di modificare la struttura creata inizialmente da
 
    * **`gear icon`**
 
-      Modificare le impostazioni, inclusi il titolo visualizzato e il nome dell&#39;URL, nonché i gruppi di membri privilegiati [](users.md#privilegedmembersgroups)
+      Modificare le impostazioni, inclusi il titolo visualizzato e il nome dell&#39;URL, nonché i gruppi di membri privilegiati ](users.md#privilegedmembersgroups)[
 
    * **`trashcan icon`**
 
