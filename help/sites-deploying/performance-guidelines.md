@@ -431,7 +431,7 @@ Di seguito sono illustrate le linee guida dell&#39;architettura per AEM siti e  
 
 ### Linee guida per le impostazioni TarMK {#tarmk-settings-guideline}
 
-Per ottenere buone prestazioni, seguite le linee guida delle impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, vedere questa pagina[.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+Per ottenere buone prestazioni, seguite le linee guida delle impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, vedere questa pagina](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).[
 
 <table> 
  <tbody> 
@@ -541,7 +541,7 @@ Per ottenere buone prestazioni quando si utilizza MongoMK, è necessario partire
 
 ### Linee guida sulle impostazioni MongoMK {#mongomk-settings-guidelines}
 
-Per ottenere buone prestazioni, seguite le linee guida delle impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, vedere questa pagina[.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+Per ottenere buone prestazioni, seguite le linee guida delle impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, vedere questa pagina](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).[
 
 <table> 
  <tbody> 
