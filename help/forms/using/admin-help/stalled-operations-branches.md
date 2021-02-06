@@ -41,7 +41,7 @@ Per ogni elemento in stallo, l&#39;elenco mostra le seguenti informazioni:
 
 **Data di arresto:** la data e l&#39;ora in cui l&#39;operazione o il ramo è bloccato.
 
-Nella pagina Operazioni bloccate o Brani bloccati potete effettuare le seguenti operazioni:
+Nella pagina Operazioni bloccate o Filiali bloccati potete effettuare le seguenti operazioni:
 
 * Selezionate un errore per visualizzarne i dettagli. Quando si seleziona un errore, viene visualizzata la pagina Dettagli errore.
 * Terminare o riprovare le operazioni in stallo o ripetere i rami in stallo.
