@@ -160,7 +160,7 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli con codice a bar
 
    * Iterate l&#39;oggetto `java.util.List` per ottenere ogni oggetto `org.w3c.dom.Document` presente nell&#39;elenco.
    * Per ciascun elemento nell&#39;elenco, convertire l&#39;oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document`. (La logica dell&#39;applicazione che converte un oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document` viene mostrata nei dati del modulo con codice a barre decodifica utilizzando l&#39;esempio di API Java).
-   * Salvare i dati XML come file XML richiamando l&#39;oggetto `com.adobe.idp.Document` e passando un oggetto File che rappresenta il file XML.`copyToFile`
+   * Salvare i dati XML come file XML richiamando l&#39;oggetto `copyToFile` e passando un oggetto File che rappresenta il file XML.`com.adobe.idp.Document`
 
 **Consulta anche**
 
