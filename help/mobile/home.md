@@ -1,6 +1,6 @@
 ---
-title: Guida utente ad AEM 6.4 Mobile
-seo-title: Guida utente ad AEM 6.4 Mobile
+title: Guida utente di AEM 6.4 Mobile
+seo-title: Guida utente di AEM 6.4 Mobile
 description: Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili.
 seo-description: Descrive come creare e gestire il contenuto per le applicazioni mobili.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 31%
 ---
 
 
-# Guida utente ad AEM 6.4 Mobile
+# Guida utente di AEM 6.4 Mobile
 
 Questa guida descrive tutte  attività AEM Mobile, ad esempio come creare e gestire il contenuto per le applicazioni mobili.
 
