@@ -175,7 +175,7 @@ Per impostare  Amazon SNS per le notifiche push, effettuate le seguenti operazio
    <table> 
     <tbody> 
      <tr> 
-     <td><p> </p> <p>{</p> <p> "Versione": "2012-10-17",</p> <p> "Dichiarazione": [</p> <p> {</p> <p> "Azione": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effetto": "Allow",</p> <p> "Risorsa": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> _</p> <p>}</p> <p> </p> </td> 
+     <td><p> </p> <p>{</p> <p> "Versione": "2012-10-17",</p> <p> "Dichiarazione": [</p> <p> {</p> <p> "Azione": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effetto": "Allow",</p> <p> "Risorsa": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
      </tr> 
     </tbody> 
     </table>
