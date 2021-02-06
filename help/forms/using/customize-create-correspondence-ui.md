@@ -32,7 +32,7 @@ Potete cambiare il logo nell’interfaccia utente Crea corrispondenza con il log
 
 Per impostare un’immagine logo desiderata, effettuate le seguenti operazioni:
 
-1. Create la struttura di cartelle appropriata in CRX[.](#creatingfolderstructure)
+1. Create la struttura di cartelle appropriata in CRX](#creatingfolderstructure).[
 1. [Caricate il nuovo ](#uploadlogo) file di logo nella cartella creata in CRX.
 
 1. [Impostate il ](#createcss) CSS su CRX per fare riferimento al nuovo logo.
