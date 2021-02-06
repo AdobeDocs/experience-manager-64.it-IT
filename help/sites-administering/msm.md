@@ -402,7 +402,7 @@ I rollout possono diventare complicati, soprattutto quando gli autori stanno mod
 
 Ogni pagina e componente di una Live Copy è associato alla relativa pagina di origine e al relativo componente tramite una relazione dal vivo. La relazione live configura la sincronizzazione del contenuto della live copy dall’origine.
 
-Potete **Sospendere** l&#39;ereditarietà Live Copy per una pagina Live Copy in modo da poter modificare le proprietà e i componenti della pagina. Quando si sospende l&#39;ereditarietà, le proprietà della pagina e i componenti non vengono più sincronizzati con l&#39;origine.
+Potete **Sospendere** l&#39;ereditarietà Live Copy per una pagina Live Copy in modo da poter modificare le proprietà e i componenti della pagina. Quando si sospende l’ereditarietà, le proprietà della pagina e i componenti non vengono più sincronizzati con l’origine.
 
 Quando si modifica una singola pagina, gli autori possono **Annulla ereditarietà** per un componente. Quando l&#39;ereditarietà viene annullata, la relazione live viene sospesa e la sincronizzazione non viene eseguita per quel componente. L’annullamento dell’ereditarietà e della sincronizzazione è utile quando è necessario personalizzare le sottosezioni del contenuto.
 
