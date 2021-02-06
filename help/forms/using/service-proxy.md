@@ -27,7 +27,7 @@ Il proxy di servizio elimina quanto segue:
 
 * Il flusso di lavoro dei moduli HTML5 richiede l’apertura del servizio di invio &quot;/content/xfaforms/submit/default&quot; per gli utenti dei moduli HTML5. Espone AEM server a un pubblico più vasto e non intenzionale.
 * L&#39;URL del servizio è incorporato nel modello runtime del modulo. Non è possibile modificare il percorso dell&#39;URL del servizio.
-* L&#39;invio è un processo in due fasi. Per inviare i dati del modulo, l&#39;invio richiede almeno due viaggi al server. Aumenta quindi il carico sul server.
+* L&#39;invio è un processo in due fasi. Per inviare i dati del modulo, l&#39;invio richiede almeno due percorsi al server. Aumenta quindi il carico sul server.
 * I moduli HTML5 inviano dati nella richiesta POST invece che nella richiesta PDF. Per i flussi di lavoro che coinvolgono moduli PDF e HTML5, sono necessari due metodi diversi per elaborare gli invii.
 
 ## Topologie {#topologies-br}
