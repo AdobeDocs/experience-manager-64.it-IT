@@ -68,7 +68,7 @@ Se la topologia è una [farm di pubblicazione](topologies.md) e la sincronizzazi
 
 ### Nuovo gruppo community creato su Pubblica {#new-community-group-is-created-on-publish}
 
-Anche se avviata da un’istanza di pubblicazione, la creazione di gruppi di community, che genera nuove pagine di sito e un nuovo gruppo di utenti, viene in realtà creata nell’istanza di creazione.
+Anche se avviata da un’istanza di pubblicazione, la creazione di gruppi di community, che genera nuove pagine di sito e un nuovo gruppo di utenti, viene effettivamente eseguita nell’istanza di creazione.
 
 Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze di pubblicazione. Il gruppo di utenti della community creato dinamicamente e la relativa appartenenza sono Sling distribuiti a tutte le istanze di pubblicazione.
 
