@@ -422,7 +422,7 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
    <td><p>Codificato</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificato</p> </td> 
