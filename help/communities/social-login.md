@@ -463,7 +463,7 @@ Per un’istanza di authoring, effettuate l’accesso con privilegi amministrati
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindex]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL reindexCount]**: 3
 
 1. Sotto il nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
