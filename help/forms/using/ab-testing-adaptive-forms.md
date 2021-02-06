@@ -51,7 +51,7 @@ Per integrare un server Target in esecuzione con  AEM Forms, effettua i seguenti
 1. Specificate i dettagli dell&#39;account Target, ad esempio codice cliente, e-mail e password.
 1. Selezionate **Rest** dall&#39;elenco a discesa Tipo API.
 1. Fate clic su **Connetti per  Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fare clic su **OK** sul messaggio, quindi su **OK** nella finestra di dialogo. L&#39;account Target è configurato.
-1. Create un framework Target come descritto in [Add a framework](/help/sites-administering/target.md) (Aggiungi un framework&lt;a1/>).
+1. Create un framework Target come descritto in [Add a framework](/help/sites-administering/target.md) (Aggiungi un framework).
 1. Andate a https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
 1. Fate clic su **AEM Forms Target Configuration**.
 1. Selezionare un **Framework di destinazione**.
@@ -143,7 +143,7 @@ Potete aggiornare le distribuzioni di audience ed esperienze di un test A/B in e
 
 Dopo aver consentito l&#39;esecuzione del test A/B per il periodo desiderato, potete generare un rapporto e verificare quale esperienza ha portato a una conversione migliore. Potete dichiarare vincente l&#39;esperienza con prestazioni migliori o scegliere di eseguire un altro test A/B. Per eseguire questa operazione, effettuare le seguenti operazioni:
 
-1. Selezionate il modulo adattivo, fate clic su **Altro**, quindi fate clic su **A/B Testing Report**. Il rapporto viene visualizzato.
+1. Selezionate il modulo adattivo, fate clic su **Altro**, quindi fate clic su **A/B Testing Report**. Viene visualizzato il rapporto.
 
    [ ![Report test A/B](assets/ab-test-report.png)](assets/ab-test-report-1.png)
 
