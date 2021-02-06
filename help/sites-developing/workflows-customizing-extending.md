@@ -858,7 +858,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
 
 1. È ora possibile aprire un modello di workflow per la modifica. Nel browser dei passaggi è possibile filtrare per vedere **My Custom Step**:
 
-   ![wf-34](assets/wf-36.png)
+   ![wf-36](assets/wf-36.png)
 
    Trascinate **My Custom Step** sul modello per visualizzare la scheda:
 
