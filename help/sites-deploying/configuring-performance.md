@@ -401,7 +401,7 @@ La verifica dei componenti in combinazione offre una migliore riflessione sul co
 | Media mista | Home page | 10 | 3 |  |  |
 |  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 10 | 2 |  |  |
-|  | Eventi | 10 | 3 |  |  |
+|  | Eventi | 10 | 1 |  |  |
 |  | Activations | 10 | 1 |  | Simulazione del comportamento dell’autore. |
 | Picco misto | Home page | 100 | 5 |  |  |
 |  | Ricerca | 50 | 5 |  |  |
@@ -432,7 +432,7 @@ Nel concepire questi test si dovrebbe ricordare che non tutti gli scenari si ver
 
 | Scenario di errore | Tipo errore | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Sovraccarico del componente di ricerca | Cerca nei caratteri jolly globali (asterisco) | 10 | 1 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
+| Sovraccarico del componente di ricerca | Cerca nei caratteri jolly globali (asterisco) | 10 | 3 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
 |  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto. |
 |  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
 |  | Caratteri speciali | 10 | 3 |  | Ricerca di caratteri speciali. |
@@ -443,10 +443,10 @@ Alcuni problemi si verificheranno solo dopo che il sistema è stato in funzione 
 
 | Scenario | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Prova di resistenza (72 ore) | Home page | 10 | 3 |  |  |
+| Prova di resistenza (72 ore) | Home page | 10 | 1 |  |  |
 |  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 20 | 2 |  |  |
-|  | Eventi | 10 | 3 |  |  |
+|  | Eventi | 10 | 1 |  |  |
 |  | Activations | 1 | 3 |  | Simulazione del comportamento dell’autore. |
 
 ### Ottimizzazione {#optimization}
