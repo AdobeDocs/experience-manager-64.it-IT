@@ -372,7 +372,7 @@ Le seguenti impostazioni sono disponibili per il servizio JMS.
 
 **WebLogic:** weblogic.jndi.WLInInitialContextFactory
 
-**WebSphere:** com.ibm.webfers.name.WsnInitialContextFactory
+**SferaWeb:** com.ibm.webfers.name.WsnInitialContextFactory
 
 **Nome utente connessione:** la password associata al nome utente specificato per Nome utente connessione. Il valore predefinito è guest.
 
