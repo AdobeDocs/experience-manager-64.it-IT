@@ -454,5 +454,5 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
 
 1. Configura il tema per utilizzare la configurazione TypeKit. Nell&#39;istanza di creazione, aprite **Tema globale** nell&#39;editor di temi. Nell&#39;editor di temi, passare a Opzioni tema ![opzioni tema](assets/theme-options.png) > Configura. Nel campo **Configurazione Typekit**, selezionate il kit e fate clic su **Salva**.
 
-   I font aggiunti al Typekit sono disponibili per la selezione in **Text**, nel pannello di controllo &lt;a0/>Text&lt;a1/> di tutti i componenti.
+   I font aggiunti al Typekit sono disponibili per la selezione in **Text**, nel pannello di controllo Text di tutti i componenti.
 
