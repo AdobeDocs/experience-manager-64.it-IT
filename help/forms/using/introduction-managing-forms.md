@@ -31,7 +31,7 @@ su un server portale per gli utenti finali. È possibile utilizzare l&#39;interf
 
 ## Accesso  componenti AEM Forms {#access-aem-forms-components}
 
-Oltre alle opzioni per creare moduli, documenti e risorse correlate, AEM offre opzioni per creare siti, risorse, gestire un&#39;istanza AEM e altro ancora. Potete fare clic sul logo ![adobeexperience emanager](assets/adobeexperiencemanager.png)  Experience Manager per passare a tutti gli strumenti disponibili. Oltre ai collegamenti alle console di altri componenti, contiene anche collegamenti per  AEM Forms . Per passare a  AEM Forms, fare clic sul logo **Experience Manager** ![adobeexperience emanager](assets/adobeexperiencemanager.png) > **navigation** ![ &lt;a6/>bussola](assets/compass.png) > **Forms**. Vengono visualizzati i collegamenti delle console seguenti:
+Oltre alle opzioni per creare moduli, documenti e risorse correlate, AEM offre opzioni per creare siti, risorse, gestire un&#39;istanza AEM e altro ancora. Potete fare clic sul logo ![adobeexperience emanager](assets/adobeexperiencemanager.png)  Experience Manager per passare a tutti gli strumenti disponibili. Oltre ai collegamenti alle console di altri componenti, contiene anche collegamenti per  AEM Forms . Per passare a  AEM Forms, fare clic sul logo **Experience Manager** ![adobeexperience emanager](assets/adobeexperiencemanager.png) > **navigation** ![ bussola](assets/compass.png) > **Forms**. Vengono visualizzati i collegamenti delle console seguenti:
 
 * Moduli e documenti
 * Temi
