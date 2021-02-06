@@ -134,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Il Garbage Collector tag è un servizio di sfondo che pulisce i tag nascosti e inutilizzati. I tag nascosti e inutilizzati sono tag inferiori a `/content/cq:tags` che hanno una proprietà `cq:movedTo` e non vengono utilizzati su un nodo di contenuto; hanno un conteggio pari a zero. Utilizzando questo processo di eliminazione pigra, il nodo di contenuto (ovvero la proprietà `cq:tags`) non deve essere aggiornato come parte dell&#39;operazione di spostamento o unione. I riferimenti nella proprietà `cq:tags` vengono aggiornati automaticamente quando la proprietà `cq:tags` viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
+Il Garbage Collector tag è un servizio di sfondo che pulisce i tag nascosti e inutilizzati. I tag nascosti e inutilizzati sono tag inferiori a `/content/cq:tags` che hanno una proprietà `cq:movedTo` e non vengono utilizzati su un nodo di contenuto; il conteggio è pari a zero. Utilizzando questo processo di eliminazione pigra, il nodo di contenuto (ovvero la proprietà `cq:tags`) non deve essere aggiornato come parte dell&#39;operazione di spostamento o unione. I riferimenti nella proprietà `cq:tags` vengono aggiornati automaticamente quando la proprietà `cq:tags` viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
 
 Per impostazione predefinita, il Garbage Collector tag viene eseguito una volta al giorno. È possibile configurare in:
 
