@@ -39,7 +39,7 @@ Un&#39;implementazione completa dei AEM moduli include un server applicazioni e 
 * *`[application server]`* per i moduli AEM
 * *`[database]`* per i moduli AEM
 
-In Windows, questi servizi sono accessibili tramite il **pannello** Strumenti di amministrazione&lt;a1/> > **Servizi**. Ad esempio, se AEM moduli installati su JBoss utilizzando il metodo chiavi in mano, nel sistema in uso sono disponibili i seguenti servizi:
+In Windows, questi servizi sono accessibili tramite il **pannello** Strumenti di amministrazione > **Servizi**. Ad esempio, se AEM moduli installati su JBoss utilizzando il metodo chiavi in mano, nel sistema in uso sono disponibili i seguenti servizi:
 
 * JBoss per moduli Adobe Experience Manager
 * MySQL per moduli Adobe Experience Manager
