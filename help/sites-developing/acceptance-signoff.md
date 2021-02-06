@@ -25,7 +25,7 @@ Come indicato, i [test di accettazione](/help/sites-developing/planning.md) sono
 * Project soddisfa i requisiti del cliente.
 * Il cliente accetta il progetto.
 
-Devono essere definiti dal cliente e dal project manager. Essi hanno particolare rilevanza in quanto sono spesso legati alla fatturazione finale.
+Devono essere definiti dal cliente e dal project manager. Essi hanno particolare rilevanza in quanto sono spesso connessi alla fatturazione finale.
 
 Per questo motivo devono essere:
 
