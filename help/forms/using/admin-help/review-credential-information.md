@@ -1,6 +1,6 @@
 ---
-title: Rivedere le informazioni sull'uso delle credenziali
-seo-title: Rivedere le informazioni sull'uso delle credenziali
+title: Verifica delle informazioni sull'uso delle credenziali
+seo-title: Verifica delle informazioni sull'uso delle credenziali
 description: Scoprite come esaminare le informazioni sull'uso delle credenziali.
 seo-description: Scoprite come esaminare le informazioni sull'uso delle credenziali.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
