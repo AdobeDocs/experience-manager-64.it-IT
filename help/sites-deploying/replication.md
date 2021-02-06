@@ -65,7 +65,7 @@ AEM [Communities](/help/communities/overview.md) non utilizza mai la replica per
 
 Il sito Web di Geometrixx incluso in un&#39;installazione standard di AEM può essere utilizzato per illustrare la replica.
 
-Per seguire questo esempio e utilizzare gli agenti di replica predefiniti è necessario installare AEM[ con:](/help/sites-deploying/deploy.md)
+Per seguire questo esempio e utilizzare gli agenti di replica predefiniti è necessario installare AEM](/help/sites-deploying/deploy.md) con:[
 
 * l&#39;ambiente di authoring sulla porta `4502`
 * l&#39;ambiente di pubblicazione sulla porta `4503`
