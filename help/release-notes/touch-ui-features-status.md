@@ -373,7 +373,7 @@ Si tratta di un elenco delle funzionalità dell&#39;editor pagina dell&#39;inter
   <tr>
    <td>Interrompi avvii</td> 
    <td>Rimosso</td> 
-   <td>Utilizzare Amministrazione sito per passare da un avvio all'altro<a href="/help/sites-authoring/launches-promoting.md">.</a><br /> </td> 
+   <td>Utilizzare Amministrazione sito per passare da un avvio all'altro</a>.<br /><a href="/help/sites-authoring/launches-promoting.md"> </a></td> 
   </tr>
   <tr>
    <td>Traduci pagina</td> 
