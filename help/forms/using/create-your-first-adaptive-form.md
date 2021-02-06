@@ -33,7 +33,7 @@ Questa esercitazione fornisce un framework end-to-end per creare un modulo adatt
 
 ![creazione di un flusso di lavoro basato su moduli adattativi](assets/create-daptive-form-workflow.png)
 
-Il viaggio inizia con l&#39;apprendimento del caso d&#39;uso:
+Il percorso inizia con l’apprendimento del caso d’uso:
 
 Un sito Web offre una serie di prodotti per clienti diversi. I clienti possono sfogliare il portale, selezionare e ordinare i prodotti. Ogni cliente crea un account e fornisce indirizzi di spedizione e fatturazione. Un cliente esistente, Sara Rose, sta cercando di aggiungere il suo indirizzo di spedizione al sito web. Il sito Web fornisce un modulo online per aggiungere e aggiornare gli indirizzi di spedizione.
 
