@@ -191,7 +191,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 1. Combinate tutti i pezzi precedentemente copiati per creare una stringa nell’ordine seguente:
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    Utilizzando, ad esempio, le informazioni copiate dagli esempi riportati di seguito, la stringa verrà visualizzata come segue:
 
