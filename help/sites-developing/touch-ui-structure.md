@@ -130,7 +130,7 @@ Nella scheda Componenti è possibile selezionare uno dei componenti disponibili.
 
 Questi elementi sovrappongono la cornice contenuto e vengono utilizzati dai [livelli](#layer) per comprendere quali sono le modalità di interazione (completamente trasparente) con i componenti e il relativo contenuto.
 
-Le sovrapposizioni sono live nella cornice dell’editor (con tutti gli altri elementi di authoring delle pagine), anche se sovrappongono effettivamente i componenti appropriati nella cornice contenuto.
+Le sovrapposizioni sono presenti nella cornice dell’editor (con tutti gli altri elementi di authoring delle pagine), ma in realtà sovrappongono i componenti appropriati nella cornice contenuto.
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
