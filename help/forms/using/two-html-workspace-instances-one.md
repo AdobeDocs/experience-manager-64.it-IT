@@ -25,7 +25,7 @@ L&#39;installazione e le impostazioni predefinite di  AEM Forms consentono la di
 
 Per configurare &#39;area di lavoro AEM Forms, effettuate le seguenti operazioni.
 
-1. Installate il pacchetto dev di  area di lavoro AEM Forms sul server. Per istruzioni su come creare il pacchetto [dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), vedere &lt;a0/>pacchetto dev&lt;a1/>.
+1. Installate il pacchetto dev di  area di lavoro AEM Forms sul server. Per istruzioni su come creare il pacchetto [dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), vedere pacchetto dev.
 1. Accedi al CRXDE Lite come amministratore, accedendo a `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Copiare il nodo era in /content e incollare in /content. Rinominare il nodo in ws2. Fare clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` in ws2. Fare clic su **[!UICONTROL Salva tutto]**.
 
