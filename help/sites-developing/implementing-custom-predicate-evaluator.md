@@ -173,7 +173,7 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 >
 >Il nome dell&#39; `PredicateEvaluator` è il nome del predicato, utilizzato per la creazione di query.
 
-1. Ignora:
+1. Sostituisci:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
