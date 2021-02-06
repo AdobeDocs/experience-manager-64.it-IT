@@ -36,7 +36,7 @@ Per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente son
 
 Quando esiste una [funzione community](functions.md) per una funzione, tutti i componenti e le configurazioni necessari, inclusi i clientlibs richiesti, saranno presenti nel sito community. Solo se agli autori devono essere disponibili componenti aggiuntivi, è necessario aggiungere altri clientlibé.
 
-Se mancano i clientlibs richiesti, l&#39;aggiunta di un componente Community a una pagina[ potrebbe causare errori javascript e un aspetto imprevisto.](author-communities.md)
+Se mancano i clientlibs richiesti, l&#39;aggiunta di un componente Community a una pagina](author-communities.md) potrebbe causare errori javascript e un aspetto imprevisto.[
 
 ### Esempio: Recensioni inserite senza Clientlibs {#example-placed-reviews-without-clientlibs}
 
