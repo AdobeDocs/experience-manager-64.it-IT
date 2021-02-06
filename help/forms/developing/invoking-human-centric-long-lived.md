@@ -188,7 +188,7 @@ Per richiamare il processo `FirstAppSolution/PreLoanProcess` utilizzando l&#39;A
    >
    >*Un processo di breve durata può essere invocato trasmettendo il valore true come quarto parametro del metodo createInvocationRequest. Passando il valore true si crea una richiesta sincrona.*
 
-1. Inviate la richiesta di chiamata a  AEM Forms richiamando il metodo `ServiceClient` dell&#39;oggetto `invoke` e passando l&#39;oggetto &lt;a2/>. `InvocationRequest` Il metodo `invoke` restituisce un oggetto `InvocationReponse`.
+1. Inviate la richiesta di chiamata a  AEM Forms richiamando il metodo `invoke` dell&#39;oggetto `InvocationRequest` e passando l&#39;oggetto `ServiceClient`. Il metodo `invoke` restituisce un oggetto `InvocationReponse`.
 1. Un processo di lunga durata restituisce un valore di stringa che rappresenta un valore identificativo della chiamata. Recuperare questo valore richiamando il metodo `InvocationReponse` dell&#39;oggetto `getInvocationId`.
 
    ```as3
