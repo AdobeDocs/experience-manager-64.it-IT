@@ -281,9 +281,9 @@ Esportate XMP metadati utilizzando l&#39;API XMP Utilities (Java):
 
 1. Richiamo dell’operazione di importazione dei metadati XMP
 
-   Per esaminare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportMetadata` e passare un oggetto &lt;a2/> che rappresenta il file PDF. `com.adobe.idp.Document` Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
+   Per esaminare i metadati XMP, richiamare il metodo `exportMetadata` dell&#39;oggetto `com.adobe.idp.Document` e passare un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
 
-   Per recuperare e salvare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportXMP` e trasmettere un oggetto &lt;a2/> che rappresenta il file PDF. `com.adobe.idp.Document` Il metodo restituisce un oggetto `com.adobe.idp.Document` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
+   Per recuperare e salvare i metadati XMP, richiamare il metodo `exportXMP` dell&#39;oggetto `com.adobe.idp.Document` e trasmettere un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `com.adobe.idp.Document` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
 
 **Consulta anche**
 
@@ -308,9 +308,9 @@ Esportate XMP metadati utilizzando l&#39;API XMP Utilities (servizio Web):
 
 1. Richiamo dell’operazione di importazione dei metadati XMP
 
-   Per esaminare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportMetadata` e passare un oggetto &lt;a2/> che rappresenta il file PDF. `BLOB` Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
+   Per esaminare i metadati XMP, richiamare il metodo `exportMetadata` dell&#39;oggetto `BLOB` e passare un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
 
-   Per recuperare e salvare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportXMP` e trasmettere un oggetto &lt;a2/> che rappresenta il file PDF. `BLOB` Il metodo restituisce un oggetto `BLOB` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
+   Per recuperare e salvare i metadati XMP, richiamare il metodo `exportXMP` dell&#39;oggetto `BLOB` e trasmettere un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `BLOB` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
 
 **Consulta anche**
 
