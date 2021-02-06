@@ -303,7 +303,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati del modulo al browser Web del client.
    * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent`.
    * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
-   * Per creare un array di byte, è necessario inserirlo nel flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto &lt;a1/> e passando l&#39;array di byte come argomento.`read`
+   * Per creare un array di byte, è necessario inserirlo nel flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando l&#39;array di byte come argomento.
    * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 
