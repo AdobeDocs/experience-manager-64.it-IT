@@ -8,8 +8,8 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1463'
+ht-degree: 6%
 
 ---
 
@@ -111,7 +111,7 @@ Questa combinazione di impostazioni produce ottimi risultati nella maggior parte
 
 Se l’immagine richiede un’ulteriore ottimizzazione, regolate gradualmente i parametri di nitidezza (maschera di contrasto) iniziando con un raggio impostato su 0.2 o 0.3. Quindi, aumentate gradualmente l&#39;importo da 1,75 a un massimo di 4 (equivalente a 400% in Photoshop). Verificate che il risultato desiderato sia raggiunto.
 
-Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori riportati sopra rappresentano un approccio convalidato dagli studi creativi, è possibile iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
+Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori sopra riportati sono un approccio convalidato dagli studi creativi, potete iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
 
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
