@@ -75,7 +75,7 @@ Qualsiasi routing statico funziona in base al principio [di portabilità](/help/
 
 ## Modelli di progettazione SPA {#spa-design-models}
 
-Se vengono seguiti i principi di sviluppo di SPA in AEM[, il SPA funzionerà con tutte le funzioni AEM di authoring dei contenuti supportate.](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
+Se vengono seguiti i principi di sviluppo di SPA in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem), il SPA funzionerà con tutte le funzioni AEM di authoring dei contenuti supportate.[
 
 Ci possono essere tuttavia dei casi in cui ciò non è del tutto necessario. La tabella seguente fornisce una panoramica dei vari modelli di progettazione, dei relativi vantaggi e dei relativi svantaggi.
 
