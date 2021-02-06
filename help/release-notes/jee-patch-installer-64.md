@@ -93,7 +93,7 @@ Se l’autenticazione SAML è stata configurata e si verificano problemi con met
 
 ## Moduli interessati {#impacted-modules}
 
-* Servizi documentali
+* Document Services
 * Sicurezza dei documenti
 * JEE per Foundation
 * Servizio PDFG
