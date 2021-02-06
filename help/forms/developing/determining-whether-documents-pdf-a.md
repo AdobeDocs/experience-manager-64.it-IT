@@ -38,7 +38,7 @@ Ai fini di questa discussione, si supponga di utilizzare il seguente documento D
 
 In questo documento DDX, l&#39;elemento `DocumentInformation` indica al servizio Assembler di restituire informazioni sul documento PDF di input. All&#39;interno dell&#39;elemento `DocumentInformation`, l&#39;elemento `PDFAValidation` indica al servizio Assembler se il documento PDF di input è conforme allo standard PDF/A.
 
-Il servizio Assembler restituisce informazioni che specificano se il documento PDF di input è conforme allo standard PDF/A in un documento XML contenente un elemento `PDFAConformance`. Se il documento PDF di input è conforme allo standard PDF/A, il valore dell&#39;attributo `PDFAConformance` dell&#39;elemento `isCompliant` è &lt;a2/>. `true` Se il documento PDF non è conforme allo standard PDF/A, il valore dell&#39;attributo `PDFAConformance` dell&#39;elemento `isCompliant` è &lt;a2/>.`false`
+Il servizio Assembler restituisce informazioni che specificano se il documento PDF di input è conforme allo standard PDF/A in un documento XML contenente un elemento `PDFAConformance`. Se il documento PDF di input è conforme allo standard PDF/A, il valore dell&#39;attributo `isCompliant` dell&#39;elemento `true` è `PDFAConformance`. Se il documento PDF non è conforme allo standard PDF/A, il valore dell&#39;attributo `isCompliant` dell&#39;elemento `false` è `PDFAConformance`.
 
 >[!NOTE]
 >
