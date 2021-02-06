@@ -1,5 +1,5 @@
 ---
-title: Guida a Forms di Adobe Experience Manager 6.4
+title: Guida di Adobe Experience Manager 6.4 Forms
 seo-title: Guida Forms di AEM 6.4
 description: Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 seo-description: Vengono  tutte le attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
@@ -12,7 +12,7 @@ ht-degree: 30%
 ---
 
 
-# Guida a Forms di Adobe Experience Manager 6.4
+# Guida di Adobe Experience Manager 6.4 Forms
 
 Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 
