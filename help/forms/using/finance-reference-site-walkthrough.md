@@ -144,7 +144,7 @@ In alternativa, può accedere alla sua bozza di applicazione in **[!UICONTROL My
 
 #### Come funziona {#how-it-works-1}
 
-Il pulsante Riprendi nell&#39;e-mail reindirizzerà Sarah al nodo che contiene la bozza dell&#39;applicazione.
+Il pulsante Riprendi nell&#39;e-mail reindirizzerà Sarah al nodo contenente la bozza dell&#39;applicazione.
 
 #### Vedere da soli {#see-it-yourself-1}
 
@@ -744,7 +744,7 @@ Sarah riceve un&#39;e-mail con un collegamento al contratto di assicurazione sul
 
 #### Come funziona {#how-it-works-16}
 
-Quando Sarah invia l&#39;applicazione di assicurazione per la casa, un Forms Workflow si attiva e un compito viene creato nella casella in AEM di Gloria. Mentre Gloria esamina la domanda e la approva, il compito è assegnato a Frank De Costa. Il flusso di attività da un soggetto all&#39;altro è definito nel flusso di lavoro AEM associato all&#39;applicazione di assicurazione. Per ulteriori informazioni sui flussi di lavoro, consultate [Flusso di lavoro Forms su OSGi](/help/forms/using/aem-forms-workflow.md).
+Quando Sarah invia l&#39;applicazione di assicurazione per la casa, un Forms Workflow si attiva e un compito viene creato nella inbox AEM Gloria. Mentre Gloria esamina la domanda e la approva, il compito è assegnato a Frank De Costa. Il flusso di attività da un soggetto all&#39;altro è definito nel flusso di lavoro AEM associato all&#39;applicazione di assicurazione. Per ulteriori informazioni sui flussi di lavoro, consultate [Flusso di lavoro Forms su OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Nell&#39;immagine seguente viene illustrato il flusso di lavoro AEM associato all&#39;applicazione di assicurazione.
 
