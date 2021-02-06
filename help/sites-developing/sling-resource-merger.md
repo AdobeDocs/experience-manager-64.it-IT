@@ -114,7 +114,7 @@ Per creare una sovrapposizione o una sostituzione, è necessario ricreare il nod
 
       Quindi aggiornate la proprietà `jcr:title` come necessario.
 
-* Override
+* Sostituisci
 
    * La definizione della finestra di dialogo touch per la console Testo è definita in:
 
@@ -253,7 +253,7 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* Ignora:
+* Sostituisci:
 
    * finalità: unire le risorse in base al relativo super-type
    * punto di montaggio: `/mnt/overide`
@@ -271,7 +271,7 @@ Alcuni esempi:
    * [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md)
    * [Personalizzazione dell’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Ignora:
+* Sostituisci:
 
    * [Configurazione delle proprietà pagina](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 
