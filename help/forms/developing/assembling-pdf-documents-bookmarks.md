@@ -322,7 +322,7 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` che contiene i documenti PDF risultanti.
    * Iterate l&#39;oggetto `Map` fino a trovare la chiave che corrisponde al nome del documento risultante. Quindi, inserire l&#39;elemento `value` del membro della matrice in un elemento `BLOB`.
-   * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo campo `BLOB` dell&#39;oggetto &lt;a1/>. `MTOM` Questo restituisce un array di byte che è possibile scrivere in un file PDF.
+   * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo campo `MTOM` dell&#39;oggetto `BLOB`. Questo restituisce un array di byte che è possibile scrivere in un file PDF.
 
 **Consulta anche**
 
