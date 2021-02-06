@@ -153,7 +153,7 @@ Assemblate un documento PDF che utilizza identificatori di pagina univoci (numer
 1. Impostate il valore numero Bates iniziale.
 
    * Creare un oggetto `AssemblerOptionSpec` che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare il numero Bates iniziale richiamando l&#39;oggetto `AssemblerOptionSpec` e passando un valore numerico che specifica il valore iniziale.`setFirstBatesNumber`
+   * Impostare il numero Bates iniziale richiamando l&#39;oggetto `setFirstBatesNumber` e passando un valore numerico che specifica il valore iniziale.`AssemblerOptionSpec`
 
 1. Assemblare i documenti PDF di input.
 
