@@ -223,8 +223,8 @@ Eseguire il rendering di un modulo HTML contenente una barra degli strumenti per
 1. Riferimento a un file XML personalizzato di fscmenu
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Specificare la posizione del file XML fscmenu richiamando il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica la posizione URI del file XML.`setToolbarURI`
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Specificare la posizione del file XML fscmenu richiamando il metodo `setToolbarURI` dell&#39;oggetto `HTMLRenderSpec` e passando un valore di stringa che specifica la posizione URI del file XML.
    * Se applicabile, impostare il valore delle impostazioni internazionali richiamando il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passando un valore di stringa che specifica il valore delle impostazioni internazionali. Il valore predefinito è Inglese.
 
    >[!NOTE]
@@ -279,8 +279,8 @@ Eseguire il rendering di un modulo HTML che contiene una barra degli strumenti p
 1. Riferimento a un file XML personalizzato di fscmenu
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Specificare la posizione del file XML fscmenu richiamando il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica la posizione URI del file XML.`setToolbarURI`
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Specificare la posizione del file XML fscmenu richiamando il metodo `setToolbarURI` dell&#39;oggetto `HTMLRenderSpec` e passando un valore di stringa che specifica la posizione URI del file XML.
    * Se applicabile, impostare il valore delle impostazioni internazionali richiamando il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passando un valore di stringa che specifica il valore delle impostazioni internazionali. Il valore predefinito è Inglese.
 
    >[!NOTE]
