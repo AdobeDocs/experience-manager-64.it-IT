@@ -237,11 +237,11 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
    | Nome | Titolo | Numero di colonne |
    |---|---|---|
    | dettagli cliente | Dettagli cliente | 1 |
-   | billsummary | Riepilogo fatturazione | 1 |
+   | billsummary | Riepilogo fatturazione | 3 |
    | riepiloghi | Riepilogo delle spese | 2 |
-   | itemisedCalls | Chiamate dettagliate | 3 |
+   | itemisedCalls | Chiamate dettagliate | 1 |
    | paynow | Paga ora | 2 |
-   | vas | Servizi a valore aggiunto | 1 |
+   | vas | Servizi a valore aggiunto | 3 |
 
    L&#39;immagine seguente rappresenta la struttura del contenuto dopo l&#39;aggiunta di tutti i pannelli al modello:
 
