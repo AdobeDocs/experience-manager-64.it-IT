@@ -443,7 +443,7 @@ Il tag `<cq:defineObjects>` espone i seguenti oggetti di script, utilizzati rego
 
 ### <cq:requestURL> {#cq-requesturl}
 
-Il tag `<cq:requestURL>` scrive l&#39;URL della richiesta corrente in JspWriter. I due tag [ `<cq:addParam>`](#amp-lt-cq-addparam) e [ `<cq:removeParam>`](#amp-lt-cq-removeparam) &lt;a3/> possono essere utilizzati all&#39;interno del corpo di questo tag per modificare l&#39;URL della richiesta corrente prima che venga scritto.
+Il tag `<cq:requestURL>` scrive l&#39;URL della richiesta corrente in JspWriter. I due tag [ `<cq:addParam>`](#amp-lt-cq-addparam) e [ `<cq:removeParam>`](#amp-lt-cq-removeparam)  possono essere utilizzati all&#39;interno del corpo di questo tag per modificare l&#39;URL della richiesta corrente prima che venga scritto.
 
 Consente di creare collegamenti alla pagina corrente con parametri variabili. Ad esempio, consente di trasformare la richiesta:
 
