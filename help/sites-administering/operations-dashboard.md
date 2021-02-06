@@ -702,7 +702,7 @@ Il **Pannello Panoramica sistema** visualizza una panoramica di alto livello del
 
 >[!NOTE]
 >
->Potete anche [guardare questo video](https://video.tv.adobe.com/v/21340?captions=ita) per un&#39;introduzione al Pannello Panoramica del sistema.
+>Potete anche [guardare questo video](https://video.tv.adobe.com/v/21340) per un&#39;introduzione al Pannello Panoramica del sistema.
 
 ### Come accedere a {#how-to-access}
 
