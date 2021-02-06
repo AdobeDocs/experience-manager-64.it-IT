@@ -97,7 +97,7 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
 1. Impostazione delle opzioni di esecuzione delle prestazioni
 
    * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
-   * Impostare l&#39;opzione della cache del modulo richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto `setCacheEnabled` e passando &lt;a2/>.`true`
+   * Impostare l&#39;opzione della cache del modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `true` e passando `PDFFormRenderSpec`.
    * Impostare l&#39;opzione linearizzata richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto `setLinearizedPDF` e passando `true.`
 
 1. Eseguire il rendering del modulo
@@ -146,7 +146,7 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
    * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
    * Impostare l&#39;opzione della cache del modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
    * Impostate l&#39;opzione standalone richiamando il metodo `setStandAlone` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
-   * Impostate l&#39;opzione linearizzata richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto e passando true.`setLinearizedPDF`
+   * Impostate l&#39;opzione linearizzata richiamando il metodo `setLinearizedPDF` dell&#39;oggetto e passando true.`PDFFormRenderSpec`
 
 1. Eseguire il rendering del modulo
 
