@@ -306,7 +306,7 @@ Creare indici personalizzati per le query eseguite spesso. Per informazioni dett
 
 ### Configurazioni indice Lucene {#lucene-index-configurations}
 
-Alcune ottimizzazioni possono essere eseguite sulle configurazioni dell&#39;indice Oak che possono aiutare a migliorare  le prestazioni di AEM Assets:
+Alcune ottimizzazioni possono essere eseguite sulle configurazioni dell&#39;indice Oak che possono aiutare a migliorare  prestazioni AEM Assets:
 
 Aggiorna la configurazione di LuceneIndexProvider:
 
