@@ -204,7 +204,7 @@ Nella scheda **[!UICONTROL Moderazione utente]**, specificate le impostazioni di
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Nella scheda **[!UICONTROL Tag field]** (Campo tag), specificare i tag che possono essere applicati se l&#39;opzione **[!UICONTROL Consenti tag]** è selezionata nella scheda **[!UICONTROL Settings]** (Impostazioni):
+Nella scheda **[!UICONTROL Campo tag]**, specificare i tag che possono essere applicati se l&#39;opzione **[!UICONTROL Consenti tag]** è selezionata nella scheda **[!UICONTROL Impostazioni]**:
 
 * **[!UICONTROL Namespace consentiti]**
 
