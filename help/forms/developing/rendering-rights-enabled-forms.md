@@ -129,7 +129,7 @@ Eseguire il rendering di un modulo abilitato per i diritti utilizzando l&#39;API
    * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
    * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
    * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
-   * Per creare un array di byte, è necessario inserirlo nel flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto &lt;a1/> e passando l&#39;array di byte come argomento.`read`
+   * Per creare un array di byte, è necessario inserirlo nel flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando l&#39;array di byte come argomento.
    * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
