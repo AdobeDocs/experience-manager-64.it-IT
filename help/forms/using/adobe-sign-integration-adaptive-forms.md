@@ -95,7 +95,7 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  A
 1. Nel campo **Consenti**, **selezionare** Tutti gli utenti - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **Salva.** L&#39;istanza Author è configurata per l&#39;utilizzo  Adobe Sign.
 1. Utilizzate [replica](/help/sites-deploying/replication.md) per creare una configurazione identica sulle istanze di pubblicazione corrispondenti.
 
- Adobe Sign è integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo adattivo](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
+ Adobe Sign è ora integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo adattivo](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
 
 ## Configurare  pianificazione Adobe Sign per sincronizzare lo stato di firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
