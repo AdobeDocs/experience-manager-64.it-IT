@@ -31,7 +31,7 @@ Per eseguire il rendering di un modulo come HTML, la struttura del modulo deve e
 
 >[!NOTE]
 >
->Quando si esegue il rendering di un modulo che contiene immagini TIFF utilizzando i metodi `FormServiceClient` dell&#39;oggetto &lt;a1/> e `(Deprecated) renderHTMLForm` dell&#39;oggetto, le immagini TIFF non sono visibili nel modulo HTML di cui è stato eseguito il rendering, visualizzato nei browser Internet Explorer o Mozilla Firefox. `renderHTMLForm2` Questi browser non forniscono supporto nativo per le immagini TIFF.
+>Quando si esegue il rendering di un modulo che contiene immagini TIFF utilizzando i metodi `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormServiceClient` e `renderHTMLForm2` dell&#39;oggetto, le immagini TIFF non sono visibili nel modulo HTML di cui è stato eseguito il rendering, visualizzato nei browser Internet Explorer o Mozilla Firefox. Questi browser non forniscono supporto nativo per le immagini TIFF.
 
 ## Pagine HTML {#html-pages}
 
@@ -271,9 +271,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
 1. Impostazione delle opzioni di runtime HTML
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore stringa che specifica il valore delle impostazioni internazionali. `setLocale` (Questa è un&#39;impostazione opzionale).
-   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setOutputType` e passare &lt;a2/>. `OutputType.FullHTMLTags` (Questa è un&#39;impostazione opzionale).
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passare un valore stringa che specifica il valore delle impostazioni internazionali. (Questa è un&#39;impostazione opzionale).
+   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `setOutputType` dell&#39;oggetto `OutputType.FullHTMLTags` e passare `HTMLRenderSpec`. (Questa è un&#39;impostazione opzionale).
 
    >[!NOTE]
    Il rendering Forms non viene eseguito correttamente in HTML quando l&#39;opzione `StandAlone` è `true` e l&#39; `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il valore `ApplicationWebRoot` viene specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm`). Quando `ApplicationWebRoot`* è un altro server da quello che ospita  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.*
@@ -328,9 +328,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API di Forms (servizio
 1. Impostazione delle opzioni di runtime HTML
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore stringa che specifica il valore delle impostazioni internazionali. `setLocale` Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setOutputType` e passare &lt;a2/>.`OutputType.FullHTMLTags`
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passare un valore stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `setOutputType` dell&#39;oggetto `OutputType.FullHTMLTags` e passare `HTMLRenderSpec`.
 
    >[!NOTE]
    Il rendering Forms non viene eseguito correttamente in HTML quando l&#39;opzione `StandAlone` è `true` e l&#39; `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il valore `ApplicationWebRoot` viene specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm`). Quando `ApplicationWebRoot`* è un altro server da quello che ospita  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni. *
