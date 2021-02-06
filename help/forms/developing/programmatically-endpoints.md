@@ -135,7 +135,7 @@ Aggiungete un endpoint EJB utilizzando l&#39;API Java:
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `EJB`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passare un valore di stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificate un carattere jolly ( `*`) che implica tutte le operazioni.
 
 1. Create un endpoint EJB.
@@ -240,7 +240,7 @@ Aggiungete un endpoint SOAP a un servizio utilizzando l&#39;API Java:
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `SOAP`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificate un carattere jolly ( `*`) che implica tutte le operazioni.
 
 1. Creare un endpoint SOAP.
@@ -408,7 +408,7 @@ Aggiungete un endpoint della cartella esaminata utilizzando l&#39;API Java di AE
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `WatchedFolder`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint di tipo Cartella esaminata per un servizio originato da un processo creato in Workbench, viene richiamato il nome dell&#39;operazione.
 
 1. Specificate i valori di configurazione.
@@ -653,7 +653,7 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `Email`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, quando si crea un endpoint e-mail per un servizio originato da un processo creato in Workbench, viene richiamato il nome dell&#39;operazione.
 
 1. Specificate i valori di configurazione.
@@ -838,7 +838,7 @@ Aggiungete un endpoint remoto utilizzando l&#39;API Java:
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `Remoting`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata dal metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passare un valore di stringa che specifica il nome dell&#39;operazione. Per un endpoint remoto, specificate un carattere jolly (&amp;ast;).
 
 1. Creare un endpoint remoto.
@@ -958,8 +958,8 @@ Aggiungete un endpoint TaskManager utilizzando l&#39;API Java:
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore della stringa `TaskManagerConnector`.
    * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del servizio.`setServiceId`
-   * Specificare la categoria a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il valore dell&#39;identificatore della categoria. `setCategoryId` È possibile richiamare il metodo `EndpointCategory` dell&#39;oggetto `getId` per ottenere il valore dell&#39;identificatore di questa categoria.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare la categoria a cui appartiene l&#39;endpoint richiamando il metodo `setCategoryId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il valore dell&#39;identificatore della categoria. È possibile richiamare il metodo `EndpointCategory` dell&#39;oggetto `getId` per ottenere il valore dell&#39;identificatore di questa categoria.
    * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint `TaskManager` per un servizio originato da un processo creato in Workbench, il nome dell&#39;operazione è `invoke`.
 
 1. Creare un endpoint TaskManager.
