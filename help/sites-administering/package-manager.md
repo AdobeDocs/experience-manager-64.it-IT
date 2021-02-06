@@ -824,7 +824,7 @@ Per scaricare i pacchetti da Package Share e installarli nell&#39;istanza locale
 
 1. Individuate il pacchetto da scaricare e fate clic su **Scarica**.
 
-1. Torna all&#39;istanza di **Package Manager** oppure passa a &lt;a0/>Package Manager&lt;a1/>. Individuate il pacchetto appena scaricato.
+1. Torna all&#39;istanza di **Package Manager** oppure passa a Package Manager. Individuate il pacchetto appena scaricato.
 
    >[!NOTE]
    >
