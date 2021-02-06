@@ -410,7 +410,7 @@ Potete impostare il numero di tentativi di errore e il successivo tempo di blocc
 
 ### Controllo e registrazione {#auditing-and-logging}
 
-L&#39;utilizzo corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
+L&#39;uso corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
 
 Potete utilizzare il controllo per rilevare molti tipi di attacchi, tra cui:
 
