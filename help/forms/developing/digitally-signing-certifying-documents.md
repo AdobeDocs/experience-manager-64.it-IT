@@ -129,7 +129,7 @@ Aggiungere un campo firma utilizzando l&#39;API Signature (Java):
 
    * Creare un oggetto `PositionRectangle` che specifica la posizione del campo firma utilizzando il relativo costruttore. All&#39;interno del costruttore, specificate i valori delle coordinate.
    * Se necessario, creare un oggetto `FieldMDPOptions` che specifica i campi bloccati quando si applica una firma digitale al campo firma.
-   * Aggiungere un campo firma a un documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`addSignatureField`
+   * Aggiungere un campo firma a un documento PDF richiamando il metodo `addSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i seguenti valori:
 
       * A `com.adobe.idp`. `Document` che rappresenta il documento PDF al quale viene aggiunto un campo firma.
       * Una stringa che specifica il nome del campo firma.
@@ -187,7 +187,7 @@ Per aggiungere un campo firma utilizzando l&#39;API Signature (servizio Web):
 
 1. Aggiunta di un campo firma
 
-   Aggiungere un campo firma al documento PDF richiamando il metodo `SignatureServiceClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`addSignatureField`
+   Aggiungere un campo firma al documento PDF richiamando il metodo `addSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
    * Un oggetto `BLOB` che rappresenta il documento PDF al quale viene aggiunto un campo firma.
    * Una stringa che specifica il nome del campo firma.
@@ -286,7 +286,7 @@ Recupera i nomi dei campi firma utilizzando l&#39;API Signature (Java):
 
 1. Recuperare i nomi dei campi firma
 
-   * Recuperare i nomi dei campi firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `getSignatureFieldList` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF contenente i campi firma. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `java.util.List`, in cui ogni elemento contiene un oggetto `PDFSignatureField`. Utilizzando questo oggetto, è possibile ottenere informazioni aggiuntive su un campo firma, ad esempio se è visibile o meno.
+   * Recuperare i nomi dei campi firma richiamando il metodo `getSignatureFieldList` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `SignatureServiceClient` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un oggetto `java.util.List`, in cui ogni elemento contiene un oggetto `PDFSignatureField`. Utilizzando questo oggetto, è possibile ottenere informazioni aggiuntive su un campo firma, ad esempio se è visibile o meno.
    * Eseguire un&#39;iterazione sull&#39;oggetto `java.util.List` per determinare se sono presenti nomi di campo firma. Per ciascun campo firma del documento PDF è possibile ottenere un oggetto `PDFSignatureField` separato. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName`. Questo metodo restituisce un valore di stringa che specifica il nome del campo firma.
 
 **Consulta anche**
@@ -334,7 +334,7 @@ Recuperare i nomi dei campi firma utilizzando l&#39;API Signature (servizio Web)
 
 1. Recuperare i nomi dei campi firma
 
-   * Recuperare i nomi dei campi firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto `getSignatureFieldList` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF contenente i campi firma. `BLOB` Questo metodo restituisce un oggetto raccolta `MyArrayOfPDFSignatureField` in cui ogni elemento contiene un oggetto `PDFSignatureField`.
+   * Recuperare i nomi dei campi firma richiamando il metodo `getSignatureFieldList` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `SignatureServiceClient` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un oggetto raccolta `MyArrayOfPDFSignatureField` in cui ogni elemento contiene un oggetto `PDFSignatureField`.
    * Eseguire un&#39;iterazione sull&#39;oggetto `MyArrayOfPDFSignatureField` per determinare se sono presenti nomi di campo firma. Per ciascun campo firma del documento PDF è possibile ottenere un oggetto `PDFSignatureField`. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName`. Questo metodo restituisce un valore di stringa che specifica il nome del campo firma.
 
 **Consulta anche**
@@ -456,11 +456,11 @@ Modificare un campo firma utilizzando l&#39;API Signature (Java):
 
    * Creare un oggetto `PDFSignatureFieldProperties` utilizzando il relativo costruttore. Un oggetto `PDFSignatureFieldProperties` memorizza il dizionario del blocco del campo firma e le informazioni sul dizionario dei valori iniziali.
    * Creare un oggetto `PDFSeedValueOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori del dizionario dei valori iniziali.
-   * Non consentire modifiche al documento PDF richiamando il metodo `PDFSeedValueOptionSpec` dell&#39;oggetto `setMdpValue` e passando il valore di enumerazione &lt;a2/>.`MDPPermissions.NoChanges`
+   * Non consentire modifiche al documento PDF richiamando il metodo `setMdpValue` dell&#39;oggetto `MDPPermissions.NoChanges` e passando il valore di enumerazione `PDFSeedValueOptionSpec`.
    * Creare un oggetto `FieldMDPOptionSpec` utilizzando il relativo costruttore. Questo oggetto consente di impostare i valori dei dizionari per il blocco dei campi firma.
-   * Bloccare tutti i campi nel documento PDF richiamando il metodo `FieldMDPOptionSpec` dell&#39;oggetto `setMdpValue` e passando il valore di enumerazione &lt;a2/>.`FieldMDPAction.ALL`
-   * Impostare le informazioni sul dizionario dei valori iniziali richiamando il metodo `PDFSignatureFieldProperties` dell&#39;oggetto `setSeedValue` e passando l&#39;oggetto &lt;a2/>.`PDFSeedValueOptionSpec`
-   * Per impostare le informazioni sul dizionario dei blocchi del campo firma, richiamare il metodo `PDFSignatureFieldProperties` dell&#39;oggetto `setFieldMDP` e passare l&#39;oggetto &lt;a2/>.`FieldMDPOptionSpec`
+   * Bloccare tutti i campi nel documento PDF richiamando il metodo `setMdpValue` dell&#39;oggetto `FieldMDPAction.ALL` e passando il valore di enumerazione `FieldMDPOptionSpec`.
+   * Impostare le informazioni sul dizionario dei valori iniziali richiamando il metodo `setSeedValue` dell&#39;oggetto `PDFSeedValueOptionSpec` e passando l&#39;oggetto `PDFSignatureFieldProperties`.
+   * Per impostare le informazioni sul dizionario dei blocchi del campo firma, richiamare il metodo `setFieldMDP` dell&#39;oggetto `FieldMDPOptionSpec` e passare l&#39;oggetto `PDFSignatureFieldProperties`.
 
    >[!NOTE]
    >
@@ -644,7 +644,7 @@ Durante la firma di un documento PDF, è possibile impostare le opzioni di esecu
 * Controllo revoca
 * Valori timestamp
 
-È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. Ad esempio, è possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `PDFSignatureAppearanceOptionSpec` dell&#39;oggetto `setShowDate` e passando &lt;a2/>.`true`
+È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. Ad esempio, è possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `setShowDate` dell&#39;oggetto `true` e passando `PDFSignatureAppearanceOptionSpec`.
 
 È inoltre possibile specificare se eseguire o meno un controllo di revoca che determini la revoca del certificato utilizzato per firmare digitalmente un documento PDF. Per eseguire il controllo della revoca, è possibile specificare uno dei seguenti valori:
 
@@ -878,7 +878,7 @@ Durante la firma di un documento PDF, è possibile impostare le opzioni di esecu
 * Controllo revoca
 * Valori timestamp
 
-È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. Ad esempio, è possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `PDFSignatureAppearanceOptionSpec` dell&#39;oggetto `setShowDate` e passando &lt;a2/>.`true`
+È possibile impostare le opzioni di aspetto utilizzando un oggetto `PDFSignatureAppearanceOptionSpec`. Ad esempio, è possibile visualizzare la data all&#39;interno di una firma richiamando il metodo `setShowDate` dell&#39;oggetto `true` e passando `PDFSignatureAppearanceOptionSpec`.
 
 **Salvare il documento PDF firmato**
 
@@ -1412,8 +1412,8 @@ Verificare una firma digitale utilizzando l&#39;API Signature Service (Java):
 1. Impostazione delle opzioni di esecuzione PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica richiamando il metodo `PKIOptions` dell&#39;oggetto `setVerificationTime` e passando un valore di enumerazione &lt;a2/> che specifica il tempo di verifica.`VerificationTime`
-   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `PKIOptions` dell&#39;oggetto e passando un valore di enumerazione `setRevocationCheckStyle` che specifica se eseguire il controllo della revoca.`RevocationCheckStyle`
+   * Impostare il tempo di verifica richiamando il metodo `setVerificationTime` dell&#39;oggetto `VerificationTime` e passando un valore di enumerazione `PKIOptions` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `setRevocationCheckStyle` dell&#39;oggetto e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.`PKIOptions`
 
 1. Verificare la firma digitale
 
@@ -1428,7 +1428,7 @@ Verificare una firma digitale utilizzando l&#39;API Signature Service (Java):
 
 1. Determinare lo stato della firma
 
-   * Determinare lo stato della firma richiamando il metodo `PDFSignatureVerificationInfo` dell&#39;oggetto &lt;a1/>. `getStatus` Questo metodo restituisce un oggetto `SignatureStatus` che specifica lo stato della firma. Ad esempio, se un documento PDF firmato non viene modificato, questo metodo restituisce `SignatureStatus.DocumentSigNoChanges`.
+   * Determinare lo stato della firma richiamando il metodo `getStatus` dell&#39;oggetto `PDFSignatureVerificationInfo`. Questo metodo restituisce un oggetto `SignatureStatus` che specifica lo stato della firma. Ad esempio, se un documento PDF firmato non viene modificato, questo metodo restituisce `SignatureStatus.DocumentSigNoChanges`.
 
 1. Identificazione del firmatario
 
@@ -1481,8 +1481,8 @@ Verificare una firma digitale utilizzando l&#39;API Signature Service (servizio 
 1. Impostazione delle opzioni di esecuzione PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica assegnando al membro di dati `PKIOptions` dell&#39;oggetto `verificationTime` un valore di enumerazione &lt;a2/> che specifica il tempo di verifica.`VerificationTime`
-   * Impostare l&#39;opzione di controllo della revoca assegnando al membro di dati `PKIOptions` dell&#39;oggetto `revocationCheckStyle` un valore di enumerazione &lt;a2/> che specifica se eseguire il controllo della revoca.`RevocationCheckStyle`
+   * Impostare il tempo di verifica assegnando al membro di dati `verificationTime` dell&#39;oggetto `VerificationTime` un valore di enumerazione `PKIOptions` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca assegnando al membro di dati `revocationCheckStyle` dell&#39;oggetto `RevocationCheckStyle` un valore di enumerazione `PKIOptions` che specifica se eseguire il controllo della revoca.
 
 1. Verificare la firma digitale
 
@@ -1630,8 +1630,8 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
 1. Impostazione delle opzioni di runtime PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica richiamando il metodo `PKIOptions` dell&#39;oggetto `setVerificationTime` e passando un valore di enumerazione &lt;a2/> che specifica il tempo di verifica.`VerificationTime`
-   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `PKIOptions` dell&#39;oggetto e passando un valore di enumerazione `setRevocationCheckStyle` che specifica se eseguire il controllo della revoca.`RevocationCheckStyle`
+   * Impostare il tempo di verifica richiamando il metodo `setVerificationTime` dell&#39;oggetto `VerificationTime` e passando un valore di enumerazione `PKIOptions` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca richiamando il metodo `setRevocationCheckStyle` dell&#39;oggetto e passando un valore di enumerazione `RevocationCheckStyle` che specifica se eseguire il controllo della revoca.`PKIOptions`
 
 1. Recuperare tutte le firme digitali
 
@@ -1645,7 +1645,7 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
 
 1. Itera attraverso tutte le firme
 
-   * Iterate tutte le firme richiamando il metodo `PDFDocumentVerificationInfo` dell&#39;oggetto &lt;a1/>. `getVerificationInfos` Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`. Utilizzare un oggetto `java.util.Iterator` per eseguire un&#39;iterazione nell&#39;elenco di firme.
+   * Iterate tutte le firme richiamando il metodo `getVerificationInfos` dell&#39;oggetto `PDFDocumentVerificationInfo`. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`. Utilizzare un oggetto `java.util.Iterator` per eseguire un&#39;iterazione nell&#39;elenco di firme.
    * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali determinare lo stato della firma richiamando il metodo `PDFSignatureVerificationInfo` dell&#39;oggetto `getStatus`. Questo metodo restituisce un oggetto `SignatureStatus` il cui membro dati statico ti informa sullo stato della firma. Ad esempio, se la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
 
 **Consulta anche**
@@ -1696,8 +1696,8 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (servizio
 1. Impostazione delle opzioni di runtime PKI
 
    * Creare un oggetto `PKIOptions` utilizzando il relativo costruttore.
-   * Impostare il tempo di verifica assegnando al membro di dati `PKIOptions` dell&#39;oggetto `verificationTime` un valore di enumerazione &lt;a2/> che specifica il tempo di verifica.`VerificationTime`
-   * Impostare l&#39;opzione di controllo della revoca assegnando al membro di dati `PKIOptions` dell&#39;oggetto `revocationCheckStyle` un valore di enumerazione &lt;a2/> che specifica se eseguire il controllo della revoca.`RevocationCheckStyle`
+   * Impostare il tempo di verifica assegnando al membro di dati `verificationTime` dell&#39;oggetto `VerificationTime` un valore di enumerazione `PKIOptions` che specifica il tempo di verifica.
+   * Impostare l&#39;opzione di controllo della revoca assegnando al membro di dati `revocationCheckStyle` dell&#39;oggetto `RevocationCheckStyle` un valore di enumerazione `PKIOptions` che specifica se eseguire il controllo della revoca.
 
 1. Recuperare tutte le firme digitali
 
@@ -1711,7 +1711,7 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (servizio
 
 1. Itera attraverso tutte le firme
 
-   * Iterare tutte le firme ottenendo il membro di dati `PDFDocumentVerificationInfo` dell&#39;oggetto &lt;a1/>. `verificationInfos` Questo membro dati restituisce un array `Object` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`.
+   * Iterare tutte le firme ottenendo il membro di dati `verificationInfos` dell&#39;oggetto `PDFDocumentVerificationInfo`. Questo membro dati restituisce un array `Object` in cui ogni elemento è un oggetto `PDFSignatureVerificationInfo`.
    * Utilizzando l&#39;oggetto `PDFSignatureVerificationInfo`, è possibile eseguire attività quali determinare lo stato della firma ottenendo il membro di dati `PDFSignatureVerificationInfo` dell&#39;oggetto `status`. Questo membro dati restituisce un oggetto `SignatureStatus` il cui membro dati statico ti informa sullo stato della firma. Ad esempio, se la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
 
 **Consulta anche**
@@ -1802,7 +1802,7 @@ Rimuovere una firma digitale utilizzando l&#39;API Signature (Java):
 
 1. Rimozione della firma digitale dal campo firma
 
-   Rimuovere una firma digitale da un campo firma richiamando il metodo `SignatureServiceClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`clearSignatureField`
+   Rimuovere una firma digitale da un campo firma richiamando il metodo `clearSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i seguenti valori:
 
    * Un oggetto `com.adobe.idp.Document` che rappresenta il documento PDF contenente la firma da rimuovere.
    * Una stringa che specifica il nome del campo firma contenente la firma digitale.
