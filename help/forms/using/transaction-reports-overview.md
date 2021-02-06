@@ -23,7 +23,7 @@ Conteggio di tutti i moduli inviati, di tutte le comunicazioni interattive, di d
 
 ## Introduzione {#introduction}
 
-I rapporti sulle transazioni in  AEM Forms consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nella distribuzione  AEM Forms. L&#39;obiettivo è quello di fornire informazioni sull&#39;utilizzo dei prodotti e aiutare gli operatori aziendali a comprendere i volumi di elaborazione digitale. Esempi di una transazione:
+I rapporti sulle transazioni in  AEM Forms consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nella distribuzione  AEM Forms. L&#39;obiettivo è quello di fornire informazioni sull&#39;utilizzo dei prodotti e aiutare i soggetti interessati a comprendere i volumi di elaborazione digitale. Esempi di una transazione:
 
 * Invio di un modulo adattivo, un modulo HTML5 o un set di moduli
 * Rendering di una versione cartacea o Web di una comunicazione interattiva
