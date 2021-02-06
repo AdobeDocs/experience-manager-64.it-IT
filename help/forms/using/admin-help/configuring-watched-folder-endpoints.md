@@ -240,7 +240,7 @@ L’output delle cartelle esaminate può essere un singolo documento, un elenco 
 
 Gli amministratori possono specificare il tipo di file che può richiamare un servizio. È possibile stabilire più pattern di file per ciascuna cartella esaminata. Un pattern di file può essere una delle seguenti proprietà:
 
-* file con estensioni di nomi file specifiche; ad esempio, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
+* File con estensioni di nomi file specifiche; ad esempio, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
 * File con nomi specifici; ad esempio, data.&amp;ast;
 * File con espressioni composite nel nome e nell&#39;estensione, come negli esempi seguenti:
 
