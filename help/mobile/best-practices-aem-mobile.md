@@ -66,7 +66,7 @@ Le seguenti linee guida aiuteranno AEM sviluppatori esperti per i siti che desid
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli script esterni [qui](https://developers.google.com/speed/docs/insights/BlockingJS) per il blocco del rendering, consultate &lt;a0/>.
+>Per ulteriori informazioni sugli script esterni [qui](https://developers.google.com/speed/docs/insights/BlockingJS) per il blocco del rendering, consultate .
 
 **Preferisci librerie JS e CSS lato client specifiche dell&#39;app a librerie specifiche per il Web**
 
