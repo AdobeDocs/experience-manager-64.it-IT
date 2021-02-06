@@ -37,7 +37,7 @@ Nel diagramma seguente è illustrato il rendering dei servizi di contenuto.
 
 ## Richiesta JSON {#requesting-json}
 
-Utilizzare **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto per richiedere JSON.**
+Utilizzare **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto per richiedere JSON.]
 
 <table>
  <tbody>
