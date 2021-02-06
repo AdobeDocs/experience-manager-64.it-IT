@@ -229,19 +229,19 @@ Create un criterio utilizzando l&#39;API di Document Security (Java):
    * Creare un oggetto `Policy` richiamando il metodo statico `InfomodelObjectFactory` dell&#39;oggetto `createPolicy`. Questo metodo restituisce un oggetto `Policy`.
    * Impostate l&#39;attributo nome del criterio richiamando il metodo `setName` dell&#39;oggetto `Policy` e passando un valore di stringa che specifica il nome del criterio.
    * Impostate la descrizione del criterio richiamando il metodo `setDescription` dell&#39;oggetto `Policy` e passando un valore di stringa che specifica la descrizione del criterio.
-   * Impostare il set di criteri a cui appartiene il nuovo criterio richiamando il metodo `Policy` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del set di criteri. `setPolicySetName` (È possibile specificare `null` per questo valore di parametro che determina l&#39;aggiunta del criterio al set di criteri *My Policies*.)
+   * Impostare il set di criteri a cui appartiene il nuovo criterio richiamando il metodo `setPolicySetName` dell&#39;oggetto `Policy` e passando un valore di stringa che specifica il nome del set di criteri. (È possibile specificare `null` per questo valore di parametro che determina l&#39;aggiunta del criterio al set di criteri *My Policies*.)
    * Creare il periodo di validità del criterio richiamando il metodo statico `InfomodelObjectFactory` dell&#39;oggetto `createValidityPeriod`. Questo metodo restituisce un oggetto `ValidityPeriod`.
    * Impostare il numero di giorni per i quali un documento protetto tramite criterio è accessibile richiamando il metodo `ValidityPeriod` dell&#39;oggetto `setRelativeExpirationDays` e passando un valore intero che specifica il numero di giorni.
-   * Impostare il periodo di validità del criterio richiamando il metodo `Policy` dell&#39;oggetto `setValidityPeriod` e passando l&#39;oggetto &lt;a2/>.`ValidityPeriod`
+   * Impostare il periodo di validità del criterio richiamando il metodo `setValidityPeriod` dell&#39;oggetto `ValidityPeriod` e passando l&#39;oggetto `Policy`.
 
 1. Creare una voce del criterio.
 
    * Creare una voce di criterio richiamando il metodo statico `createPolicyEntry` dell&#39;oggetto `InfomodelObjectFactory`. Questo metodo restituisce un oggetto `PolicyEntry`.
    * Specificare le autorizzazioni del criterio richiamando il metodo statico `InfomodelObjectFactory` dell&#39;oggetto `createPermission`. Passa un membro di dati statici appartenente all&#39;interfaccia `Permission` che rappresenta l&#39;autorizzazione. Questo metodo restituisce un oggetto `Permission`. Ad esempio, per aggiungere l&#39;autorizzazione che consente agli utenti di copiare dati da un documento PDF protetto tramite criterio, passare `Permission.COPY`. Ripetete questo passaggio per ogni autorizzazione da aggiungere.
-   * Aggiungete l&#39;autorizzazione alla voce del criterio richiamando il metodo `PolicyEntry` dell&#39;oggetto `addPermission` e passando l&#39;oggetto &lt;a2/>. `Permission` (Ripetere questo passaggio per ogni oggetto `Permission` creato).
+   * Aggiungete l&#39;autorizzazione alla voce del criterio richiamando il metodo `addPermission` dell&#39;oggetto `Permission` e passando l&#39;oggetto `PolicyEntry`. (Ripetere questo passaggio per ogni oggetto `Permission` creato).
    * Creare l&#39;entità del criterio richiamando il metodo statico `createSpecialPrincipal` dell&#39;oggetto `InfomodelObjectFactory`. Passa un membro di dati appartenente all&#39;oggetto `InfomodelObjectFactory` che rappresenta l&#39;entità. Questo metodo restituisce un oggetto `Principal`. Ad esempio, per aggiungere l&#39;editore del documento come entità, passare `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Aggiungete l&#39;entità alla voce del criterio richiamando il metodo `PolicyEntry` dell&#39;oggetto `setPrincipal` e passando l&#39;oggetto &lt;a2/>.`Principal`
-   * Aggiungete la voce del criterio richiamando il metodo `Policy` dell&#39;oggetto `addPolicyEntry` e passando l&#39;oggetto &lt;a2/>.`PolicyEntry`
+   * Aggiungete l&#39;entità alla voce del criterio richiamando il metodo `setPrincipal` dell&#39;oggetto `Principal` e passando l&#39;oggetto `PolicyEntry`.
+   * Aggiungete la voce del criterio richiamando il metodo `addPolicyEntry` dell&#39;oggetto `PolicyEntry` e passando l&#39;oggetto `Policy`.
 
 1. Registra il criterio.
 
@@ -360,7 +360,7 @@ Prima di poter eseguire un&#39;operazione Document Security Service a livello di
 
 Per modificare un criterio, modificate il valore degli attributi del criterio. L&#39;unico attributo di criterio che non potete modificare è l&#39;attributo name. Ad esempio, per modificare il periodo di tempo consentito dal criterio per l&#39;utilizzo non in linea, potete modificare il valore dell&#39;attributo del periodo consentito non in linea del criterio.
 
-Quando si modifica il periodo di tempo consentito per un criterio offline utilizzando un servizio Web, il campo `offlineLeasePeriod` nell&#39;interfaccia `PolicySpec` viene ignorato. Per aggiornare il periodo di tempo consentito per l&#39;utilizzo non in linea, modificare l&#39;elemento `OfflineLeasePeriod` nel documento XML PDRL. Fare quindi riferimento al documento PDF XML aggiornato utilizzando il membro di dati `PolicySpec` dell&#39;interfaccia &lt;a1/>.`policyXML`
+Quando si modifica il periodo di tempo consentito per un criterio offline utilizzando un servizio Web, il campo `offlineLeasePeriod` nell&#39;interfaccia `PolicySpec` viene ignorato. Per aggiornare il periodo di tempo consentito per l&#39;utilizzo non in linea, modificare l&#39;elemento `OfflineLeasePeriod` nel documento XML PDRL. Fare quindi riferimento al documento PDF XML aggiornato utilizzando il membro di dati `policyXML` dell&#39;interfaccia `PolicySpec`.
 
 >[!NOTE]
 >
@@ -442,7 +442,7 @@ Modificate un criterio esistente utilizzando l&#39;API di Document Security (ser
 
 1. Aggiornare il criterio.
 
-   Aggiornare il criterio richiamando il metodo `RightsManagementServiceClient` dell&#39;oggetto `updatePolicyFromSDK` e passando l&#39;oggetto &lt;a2/> che rappresenta il criterio da aggiornare.`PolicySpec`
+   Aggiornare il criterio richiamando il metodo `updatePolicyFromSDK` dell&#39;oggetto `PolicySpec` e passando l&#39;oggetto `RightsManagementServiceClient` che rappresenta il criterio da aggiornare.
 
 **Esempi di codice**
 
@@ -617,7 +617,7 @@ Applicare un criterio a un documento PDF utilizzando l&#39;API Document Security
 1. Applicare un criterio esistente al documento PDF.
 
    * Creare un oggetto `DocumentManager` richiamando il metodo `RightsManagementClient` dell&#39;oggetto `getDocumentManager`.
-   * Applicare un criterio al documento PDF richiamando il metodo `DocumentManager` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`protectDocument`
+   * Applicare un criterio al documento PDF richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i seguenti valori:
 
       * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF a cui viene applicato il criterio.
       * Una stringa che specifica il nome del documento.
@@ -679,13 +679,13 @@ Applicare un criterio a un documento PDF utilizzando l&#39;API di Document Secur
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento PDF a cui viene applicato un criterio.
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF e la modalità di apertura del file.
-   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione dell&#39;array di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto &lt;a1/>.`Length`
+   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione dell&#39;array di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
    * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read`. Passare l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` con il contenuto dell&#39;array di byte.
 
 1. Applicare un criterio esistente al documento PDF.
 
-   Applicare un criterio al documento PDF richiamando il metodo `RightsManagementServiceClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`protectDocument`
+   Applicare un criterio al documento PDF richiamando il metodo `protectDocument` dell&#39;oggetto `RightsManagementServiceClient` e passando i seguenti valori:
 
    * L&#39;oggetto `BLOB` che contiene il documento PDF a cui viene applicato il criterio.
    * Una stringa che specifica il nome del documento.
@@ -781,7 +781,7 @@ Rimuovere un criterio da un documento PDF protetto tramite criterio utilizzando 
 1. Rimuovere il criterio dal documento PDF.
 
    * Creare un oggetto `DocumentManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager`.
-   * Rimuovere un criterio dal documento PDF richiamando il metodo `DocumentManager` dell&#39;oggetto `removeSecurity` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF protetto tramite criterio. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF non protetto.
+   * Rimuovere un criterio dal documento PDF richiamando il metodo `removeSecurity` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `DocumentManager` che contiene il documento PDF protetto tramite criterio. Questo metodo restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF non protetto.
 
 1. Salvare il documento PDF non protetto.
 
@@ -830,7 +830,7 @@ Rimuovere un criterio da un documento PDF protetto tramite criterio utilizzando 
 
 1. Rimuovere il criterio dal documento PDF.
 
-   Rimuovere il criterio dal documento PDF richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto `removePolicySecurity` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF protetto tramite criterio. `BLOB` Questo metodo restituisce un oggetto `BLOB` contenente un documento PDF non protetto.
+   Rimuovere il criterio dal documento PDF richiamando il metodo `removePolicySecurity` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `DocumentSecurityServiceClient` che contiene il documento PDF protetto tramite criterio. Questo metodo restituisce un oggetto `BLOB` contenente un documento PDF non protetto.
 
 1. Salvare il documento PDF non protetto.
 
@@ -925,7 +925,7 @@ Revocare l&#39;accesso a un documento PDF protetto tramite criterio utilizzando 
    * Creare un oggetto `DocumentManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager`.
    * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite criterio richiamando il metodo `DocumentManager` dell&#39;oggetto `getLicenseId`. Passa l&#39;oggetto `com.adobe.idp.Document` che rappresenta il documento protetto tramite criterio. Questo metodo restituisce un valore di stringa che rappresenta il valore dell’identificatore di licenza.
    * Creare un oggetto `LicenseManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getLicenseManager`.
-   * Revocare il documento protetto tramite criterio richiamando il metodo `LicenseManager` dell&#39;oggetto e passando i seguenti valori:`revokeLicense`
+   * Revocare il documento protetto tramite criterio richiamando il metodo `revokeLicense` dell&#39;oggetto e passando i seguenti valori:`LicenseManager`
 
       * Un valore di stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite criterio (specificare il valore restituito dal metodo `DocumentManager` dell&#39;oggetto `getLicenseId`).
       * Un membro di dati statici dell&#39;interfaccia `License` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `License.DOCUMENT_REVISED`.
@@ -973,8 +973,8 @@ Revocare l&#39;accesso a un documento PDF protetto tramite criterio utilizzando 
 
 1. Revoca del documento protetto tramite criterio
 
-   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite criterio richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseID` e passando l&#39;oggetto &lt;a2/> che rappresenta il documento protetto tramite criterio. `BLOB` Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
-   * Revocare il documento protetto tramite criterio richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto e passando i seguenti valori:`revokeLicense`
+   * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite criterio richiamando il metodo `getLicenseID` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `DocumentSecurityServiceClient` che rappresenta il documento protetto tramite criterio. Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
+   * Revocare il documento protetto tramite criterio richiamando il metodo `revokeLicense` dell&#39;oggetto e passando i seguenti valori:`DocumentSecurityServiceClient`
 
       * Un valore di stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite criterio (specificare il valore restituito dal metodo `DocumentSecurityServiceService` dell&#39;oggetto `getLicenseId`).
       * Un membro di dati statici dell&#39;enum `Reason` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `Reason.DOCUMENT_REVISED`.
@@ -1056,12 +1056,12 @@ Ripristinate l&#39;accesso a un documento revocato utilizzando l&#39;API di Docu
    * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento PDF revocato utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del documento PDF.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
    * Creare un oggetto `DocumentManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager`.
-   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `DocumentManager` dell&#39;oggetto `getLicenseId` e passando l&#39;oggetto &lt;a2/> che rappresenta il documento revocato. `com.adobe.idp.Document` Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
+   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `getLicenseId` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `DocumentManager` che rappresenta il documento revocato. Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
 
 1. Ripristinare l&#39;accesso al documento PDF revocato.
 
    * Creare un oggetto `LicenseManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getLicenseManager`.
-   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `LicenseManager` dell&#39;oggetto &lt;a1/> e passando il valore dell&#39;identificatore di licenza del documento revocato.`unrevokeLicense`
+   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `unrevokeLicense` dell&#39;oggetto `LicenseManager` e passando il valore dell&#39;identificatore di licenza del documento revocato.
 
 **Esempi di codice**
 
@@ -1105,8 +1105,8 @@ Ripristinate l&#39;accesso a un documento revocato utilizzando l&#39;API di Docu
 
 1. Ripristinare l&#39;accesso al documento PDF revocato.
 
-   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseID` e passando l&#39;oggetto &lt;a2/> che rappresenta il documento revocato. `BLOB` Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
-   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto `unrevokeLicense` e passando un valore di stringa che specifica il valore dell&#39;identificatore di licenza del documento PDF revocato (passare il valore restituito dal metodo &lt;a2/> dell&#39;oggetto `DocumentSecurityServiceClient`).`getLicenseId`
+   * Recuperare il valore dell&#39;identificatore di licenza del documento revocato richiamando il metodo `getLicenseID` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `DocumentSecurityServiceClient` che rappresenta il documento revocato. Questo metodo restituisce un valore di stringa che rappresenta l’identificatore della licenza.
+   * Ripristinare l&#39;accesso al documento PDF revocato richiamando il metodo `unrevokeLicense` dell&#39;oggetto `DocumentSecurityServiceClient` e passando un valore di stringa che specifica il valore dell&#39;identificatore di licenza del documento PDF revocato (passare il valore restituito dal metodo `DocumentSecurityServiceClient` dell&#39;oggetto `getLicenseId`).
 
 **Esempi di codice**
 
@@ -1408,14 +1408,14 @@ Create una filigrana utilizzando l&#39;API di Document Security (Java):
 
    * Creare un oggetto `Watermark` richiamando il metodo statico `InfomodelObjectFactory` dell&#39;oggetto `createWatermark`. Questo metodo restituisce un oggetto `Watermark`.
    * Impostate l&#39;attributo nome della filigrana richiamando il metodo `setName` dell&#39;oggetto `Watermark` e passando un valore di stringa che specifica il nome del criterio.
-   * Impostare l&#39;attributo di sfondo della filigrana richiamando il metodo `Watermark` dell&#39;oggetto `setBackground` e passando &lt;a2/>. `true` Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
-   * Impostare l&#39;attributo di testo personalizzato della filigrana richiamando il metodo `Watermark` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che rappresenta il testo della filigrana.`setCustomText`
+   * Impostare l&#39;attributo di sfondo della filigrana richiamando il metodo `setBackground` dell&#39;oggetto `true` e passando `Watermark`. Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
+   * Impostare l&#39;attributo di testo personalizzato della filigrana richiamando il metodo `setCustomText` dell&#39;oggetto `Watermark` e passando un valore di stringa che rappresenta il testo della filigrana.
    * Impostare l&#39;attributo di opacità della filigrana richiamando il metodo `setOpacity` dell&#39;oggetto `Watermark` e passando un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che la filigrana è completamente trasparente.
 
 1. Registra la filigrana.
 
    * Creare un oggetto `WatermarkManager` richiamando il metodo `RightsManagementClient` dell&#39;oggetto `getWatermarkManager`. Questo metodo restituisce un oggetto `WatermarkManager`.
-   * Registrare la filigrana richiamando il metodo `WatermarkManager` dell&#39;oggetto `registerWatermark` e passando l&#39;oggetto &lt;a2/> che rappresenta la filigrana da registrare. `Watermark` Questo metodo restituisce un valore di stringa che rappresenta il valore di identificazione della filigrana.
+   * Registrare la filigrana richiamando il metodo `registerWatermark` dell&#39;oggetto `Watermark` e passando l&#39;oggetto `WatermarkManager` che rappresenta la filigrana da registrare. Questo metodo restituisce un valore di stringa che rappresenta il valore di identificazione della filigrana.
 
 **Esempi di codice**
 
@@ -1455,14 +1455,14 @@ Create una filigrana utilizzando l&#39;API di Document Security (servizio Web):
    * Impostare il nome della filigrana assegnando un valore stringa al membro di dati `WatermarkSpec` dell&#39;oggetto `name`.
    * Impostare l&#39;attributo della filigrana `id` assegnando un valore stringa al membro di dati `WatermarkSpec` dell&#39;oggetto `id`.
    * Per ogni proprietà della filigrana da impostare, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` separato.
-   * Impostare il valore chiave assegnando un valore al membro di dati `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key` (ad esempio, &lt;a2/>.`WaterBackCmd:OPACITY)`
-   * Impostare il valore assegnando un valore al membro di dati `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value` (ad esempio, &lt;a2/>).`.25`
+   * Impostare il valore chiave assegnando un valore al membro di dati `key` dell&#39;oggetto `WaterBackCmd:OPACITY)` (ad esempio, `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Impostare il valore assegnando un valore al membro di dati `value` dell&#39;oggetto `.25` (ad esempio, `MyMapOf_xsd_string_To_xsd_anyType_Item`).
    * Creare un oggetto `MyArrayOf_xsd_anyType`. Per ciascun oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, richiamare il metodo `MyArrayOf_xsd_anyType` dell&#39;oggetto `Add`. Passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Assegnare l&#39;oggetto `MyArrayOf_xsd_anyType` al membro di dati `WatermarkSpec` dell&#39;oggetto `values`.
 
 1. Registra la filigrana.
 
-   Registrare la filigrana richiamando il metodo `RightsManagementServiceClient` dell&#39;oggetto `registerWatermark` e passando l&#39;oggetto &lt;a2/> che rappresenta la filigrana da registrare.`WatermarkSpec`
+   Registrare la filigrana richiamando il metodo `registerWatermark` dell&#39;oggetto `WatermarkSpec` e passando l&#39;oggetto `RightsManagementServiceClient` che rappresenta la filigrana da registrare.
 
 **Esempi di codice**
 
@@ -1564,7 +1564,7 @@ Modificare una filigrana utilizzando l&#39;API di Document Security (Java):
 
 1. Aggiorna la filigrana.
 
-   * Aggiornare la filigrana richiamando il metodo `WatermarkManager` dell&#39;oggetto `updateWatermark` e passando l&#39;oggetto &lt;a2/> il cui attributo è stato modificato.`Watermark`
+   * Aggiornare la filigrana richiamando il metodo `updateWatermark` dell&#39;oggetto `Watermark` e passando l&#39;oggetto `WatermarkManager` il cui attributo è stato modificato.
 
 **Esempi di codice**
 
@@ -1603,14 +1603,14 @@ Modificare una filigrana utilizzando l&#39;API di Document Security (servizio We
 1. Impostate gli attributi della filigrana.
 
    * Per ogni proprietà della filigrana da aggiornare, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` separato.
-   * Impostare il valore chiave assegnando un valore al membro di dati `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key` (ad esempio, &lt;a2/>.`WaterBackCmd:OPACITY)`
-   * Impostare il valore assegnando un valore al membro di dati `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value` (ad esempio, &lt;a2/>).`.50`
+   * Impostare il valore chiave assegnando un valore al membro di dati `key` dell&#39;oggetto `WaterBackCmd:OPACITY)` (ad esempio, `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Impostare il valore assegnando un valore al membro di dati `value` dell&#39;oggetto `.50` (ad esempio, `MyMapOf_xsd_string_To_xsd_anyType_Item`).
    * Creare un oggetto `MyArrayOf_xsd_anyType`. Per ciascun oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`, richiamare il metodo `MyArrayOf_xsd_anyType` dell&#39;oggetto `Add`. Passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Assegnare l&#39;oggetto `MyArrayOf_xsd_anyType` al membro di dati `WatermarkSpec` dell&#39;oggetto `values`.
 
 1. Aggiorna la filigrana.
 
-   Aggiornare la filigrana richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto `updateWatermark` e passando l&#39;oggetto &lt;a2/> che rappresenta la filigrana da modificare.`WatermarkSpec`
+   Aggiornare la filigrana richiamando il metodo `updateWatermark` dell&#39;oggetto `WatermarkSpec` e passando l&#39;oggetto `DocumentSecurityServiceClient` che rappresenta la filigrana da modificare.
 
 **Esempi di codice**
 
@@ -1682,7 +1682,7 @@ Cercare eventi utilizzando l&#39;API Rights Management (Java):
 
    * Creare un oggetto `EventManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getEventManager`. Questo metodo restituisce un oggetto `EventManager`.
    * Creare un oggetto `EventSearchFilter` richiamandone il costruttore.
-   * Specificare l&#39;evento per il quale eseguire la ricerca richiamando il metodo `EventSearchFilter` dell&#39;oggetto e passando un membro di dati statico appartenente alla classe `setEventCode` che rappresenta l&#39;evento per il quale eseguire la ricerca. `EventManager` Ad esempio, per cercare l&#39;evento di creazione del criterio, passare `EventManager.POLICY_CREATE_EVENT`.
+   * Specificare l&#39;evento per il quale eseguire la ricerca richiamando il metodo `setEventCode` dell&#39;oggetto e passando un membro di dati statico appartenente alla classe `EventManager` che rappresenta l&#39;evento per il quale eseguire la ricerca. `EventSearchFilter` Ad esempio, per cercare l&#39;evento di creazione del criterio, passare `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
@@ -1690,7 +1690,7 @@ Cercare eventi utilizzando l&#39;API Rights Management (Java):
 
 1. Ricerca dell’evento
 
-   Cercare l&#39;evento richiamando il metodo `EventManager` dell&#39;oggetto `searchForEvents` e passando l&#39;oggetto &lt;a2/> che definisce i criteri di ricerca dell&#39;evento. `EventSearchFilter` Questo metodo restituisce un array di oggetti `Event`.
+   Cercare l&#39;evento richiamando il metodo `searchForEvents` dell&#39;oggetto `EventSearchFilter` e passando l&#39;oggetto `EventManager` che definisce i criteri di ricerca dell&#39;evento. Questo metodo restituisce un array di oggetti `Event`.
 
 **Esempi di codice**
 
@@ -1727,11 +1727,11 @@ Cercare eventi utilizzando l&#39;API Rights Management (servizio Web):
 1. Specificare gli eventi da cercare
 
    * Creare un oggetto `EventSpec` utilizzando il relativo costruttore.
-   * Specificare l&#39;inizio del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro di dati `EventSpec` dell&#39;oggetto `firstTime.date` con l&#39;istanza &lt;a2/> che rappresenta l&#39;inizio dell&#39;intervallo di date in cui si è verificato l&#39;evento.`DataTime`
+   * Specificare l&#39;inizio del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro di dati `firstTime.date` dell&#39;oggetto `DataTime` con l&#39;istanza `EventSpec` che rappresenta l&#39;inizio dell&#39;intervallo di date in cui si è verificato l&#39;evento.
    * Assegnare il valore `true` al membro di dati `EventSpec` dell&#39;oggetto `firstTime.dateSpecified`.
-   * Specificare la fine del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro di dati `EventSpec` dell&#39;oggetto `lastTime.date` con l&#39;istanza &lt;a2/> che rappresenta la fine dell&#39;intervallo di date in cui si è verificato l&#39;evento.`DataTime`
+   * Specificare la fine del periodo di tempo durante il quale si è verificato l&#39;evento impostando il membro di dati `lastTime.date` dell&#39;oggetto `DataTime` con l&#39;istanza `EventSpec` che rappresenta la fine dell&#39;intervallo di date in cui si è verificato l&#39;evento.
    * Assegnare il valore `true` al membro di dati `EventSpec` dell&#39;oggetto `lastTime.dateSpecified`.
-   * Impostare l&#39;evento da cercare assegnando un valore stringa al membro di dati `EventSpec` dell&#39;oggetto &lt;a1/>. `eventCode` Nella tabella seguente sono elencati i valori numerici che è possibile assegnare a questa proprietà:
+   * Impostare l&#39;evento da cercare assegnando un valore stringa al membro di dati `eventCode` dell&#39;oggetto `EventSpec`. Nella tabella seguente sono elencati i valori numerici che è possibile assegnare a questa proprietà:
 
    <table> 
     <thead> 
@@ -2018,7 +2018,7 @@ Applicate un criterio a un documento Word utilizzando l&#39;API di Document Secu
 1. Applicare un criterio esistente al documento Word.
 
    * Creare un oggetto `DocumentManager` richiamando il metodo `DocumentSecurityClient` dell&#39;oggetto `getDocumentManager`.
-   * Applicare un criterio al documento Word richiamando il metodo `DocumentManager` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`protectDocument`
+   * Applicare un criterio al documento Word richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i seguenti valori:
 
       * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento Word a cui viene applicato il criterio.
       * Una stringa che specifica il nome del documento.
@@ -2073,13 +2073,13 @@ Applicare un criterio a un documento Word utilizzando l&#39;API di Document Secu
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare un documento Word a cui viene applicato un criterio.
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento di Word e la modalità di apertura del file.
-   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione dell&#39;array di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto &lt;a1/>.`Length`
+   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la dimensione dell&#39;array di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
    * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo `System.IO.FileStream` dell&#39;oggetto `Read`. Passare l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` con il contenuto dell&#39;array di byte.
 
 1. Applicare un criterio esistente al documento Word.
 
-   Applicare un criterio al documento Word richiamando il metodo `DocumentSecurityServiceClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`protectDocument`
+   Applicare un criterio al documento Word richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentSecurityServiceClient` e passando i seguenti valori:
 
    * L&#39;oggetto `BLOB` che contiene il documento Word a cui viene applicato il criterio.
    * Una stringa che specifica il nome del documento.
@@ -2174,7 +2174,7 @@ Rimuovete un criterio da un documento Word protetto tramite criterio utilizzando
 1. Rimuovere il criterio dal documento Word
 
    * Creare un oggetto `DocumentManager` richiamando il metodo `RightsManagementClient` dell&#39;oggetto `getDocumentManager`.
-   * Rimuovere un criterio dal documento Word richiamando il metodo `DocumentManager` dell&#39;oggetto `removeSecurity` e passando l&#39;oggetto &lt;a2/> che contiene il documento Word protetto tramite criterio. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `com.adobe.idp.Document` che contiene un documento Word non protetto.
+   * Rimuovere un criterio dal documento Word richiamando il metodo `removeSecurity` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `DocumentManager` che contiene il documento Word protetto tramite criterio. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che contiene un documento Word non protetto.
 
 1. Salvare il documento Word non protetto
 
@@ -2223,7 +2223,7 @@ Rimuovete un criterio da un documento Word protetto tramite criterio utilizzando
 
 1. Rimuovere il criterio dal documento Word
 
-   Rimuovere il criterio dal documento Word richiamando il metodo `RightsManagementServiceClient` dell&#39;oggetto `removePolicySecurity` e passando l&#39;oggetto &lt;a2/> che contiene il documento Word protetto tramite criterio. `BLOB` Questo metodo restituisce un oggetto `BLOB` che contiene un documento Word non protetto.
+   Rimuovere il criterio dal documento Word richiamando il metodo `removePolicySecurity` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `RightsManagementServiceClient` che contiene il documento Word protetto tramite criterio. Questo metodo restituisce un oggetto `BLOB` che contiene un documento Word non protetto.
 
 1. Salvare il documento Word non protetto
 
