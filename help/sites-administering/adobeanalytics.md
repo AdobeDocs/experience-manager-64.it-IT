@@ -50,7 +50,7 @@ Per eseguire facilmente l&#39;integrazione è inoltre possibile utilizzare la [p
 Consulta:
 
 * [Estensione  ](/help/sites-developing/extending-analytics.md) Integrazione Adobe Analytics per informazioni sullo sviluppo di componenti che raccolgono dati utente e la personalizzazione del framework Adobe Analytics .
-* L&#39;articolo della knowledge base, [ integrazione Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all&#39;integrazione  Adobe Analytics.
+* L&#39;articolo della knowledge base, [ integrazione Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni su come risolvere i problemi dell&#39;integrazione  Adobe Analytics.
 
 >[!NOTE]
 >
