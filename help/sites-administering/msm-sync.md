@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 79%
+source-wordcount: '2705'
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,11 @@ Esegui le operazioni seguenti per controllare come e quando vengono sincronizzat
 
 Questa sezione fornisce informazioni sulle configurazioni di rollout installate e sulle azioni di sincronizzazione che utilizzano, nonché su come creare configurazioni personalizzate, se richiesto.
 
-### Attivatori di rollout  {#rollout-triggers}
+>[!CAUTION]
+>
+>L&#39;aggiornamento o la modifica di una configurazione di rollout (installata) è **non** consigliata. Se è necessaria un&#39;azione live personalizzata, questa deve essere aggiunta in una configurazione di rollout personalizzata.
+
+### Attivatori di rollout {#rollout-triggers}
 
 Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che determina l’esecuzione dell’implementazione. Le configurazioni di rollout possono utilizzare uno dei seguenti attivatori:
 
