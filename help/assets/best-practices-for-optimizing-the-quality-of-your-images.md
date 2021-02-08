@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 6%
@@ -79,7 +79,7 @@ Aumentare gradualmente l&#39;importo da 1,75 a 4. Se la nitidezza non è ancora 
 
 Lasciate l’impostazione del parametro monocromatico su 0.
 
-### Procedure ottimali per la compressione JPEF (&amp;qlt=) {#best-practices-for-jpef-compression-qlt}
+### Procedure ottimali per la compressione JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Questo parametro controlla la qualità di codifica JPG. Un valore più elevato indica un’immagine di qualità superiore ma con un file di grandi dimensioni; in alternativa, un valore inferiore indica un’immagine di qualità inferiore ma una dimensione file inferiore. L&#39;intervallo per questo parametro è compreso tra 0 e 100.
 * Per ottimizzare la qualità, non impostate il valore del parametro su 100. La differenza tra un’impostazione di 90 o 95 e 100 è quasi impercettibile, ma 100 aumenta inutilmente la dimensione del file immagine. Pertanto, per ottimizzare la qualità ma evitare che i file di immagine diventino troppo grandi, impostate il valore `qlt=<value>` su 90 o 95.
@@ -111,7 +111,7 @@ Questa combinazione di impostazioni produce ottimi risultati nella maggior parte
 
 Se l’immagine richiede un’ulteriore ottimizzazione, regolate gradualmente i parametri di nitidezza (maschera di contrasto) iniziando con un raggio impostato su 0.2 o 0.3. Quindi, aumentate gradualmente l&#39;importo da 1,75 a un massimo di 4 (equivalente a 400% in Photoshop). Verificate che il risultato desiderato sia raggiunto.
 
-Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori sopra riportati sono un approccio convalidato dagli studi creativi, potete iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
+Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggio in incrementi decimali. Per ogni incremento decimale, riavviate il valore a 1,75 e aumentatelo gradualmente a 4. Ripetere questa procedura fino a ottenere il risultato desiderato. Anche se i valori riportati sopra rappresentano un approccio convalidato dagli studi creativi, è possibile iniziare con altri valori e seguire altre strategie. Se i risultati sono soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
 
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
