@@ -3,10 +3,10 @@ title: Introduzione a [!DNL Adobe Experience Manager Assets]
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
+source-git-commit: 91fbe9d3368feb7ecae73c56b2484c305cfb94b8
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 34%
+source-wordcount: '854'
+ht-degree: 33%
 
 ---
 
@@ -96,5 +96,5 @@ Per informazioni sulle differenze, vedere [Risorse e Libreria supporti](medialib
 
 >[!MORELIKETHIS]
 >
->* [ risorse Experience Manager come moderno DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [Video Introduction -  Experience Manager Assets come DAM moderno](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 
