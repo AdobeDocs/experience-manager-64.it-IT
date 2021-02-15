@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 84%
 
 ---
 
@@ -51,6 +51,15 @@ Le proprietà sono distribuite su più schede.
 * **Nascondi in navigazione**
 
    Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
+
+* **Marchio**
+
+   Applicate un&#39;identità marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla release 2.14.0 o successiva dei [Componenti di base.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **Override**  - Selezionare questa opzione per definire il marchio slug in questa pagina.
+      * Il valore verrà ereditato da qualsiasi pagina figlia, a meno che non siano stati impostati anche i valori **Override**.
+   * **Valore**  di sostituzione - Testo del marchio da aggiungere al titolo della pagina.
+      * Il valore viene aggiunto al titolo della pagina dopo un carattere barra verticale, ad esempio &quot;Ciclismo in Toscana&quot; | Sempre pronto per il WKND&quot;
 
 * **Titolo pagina**
 
