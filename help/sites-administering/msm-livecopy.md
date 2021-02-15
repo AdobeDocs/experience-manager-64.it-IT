@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 2%
 
 ---
@@ -337,6 +337,10 @@ Potete sospendere l’ereditarietà Live Copy per una pagina Live Copy in modo d
 >
 >È inoltre possibile [scollegare una Live Copy](#detaching-a-live-copy) dal relativo blueprint per rimuovere tutte le connessioni. L&#39;azione Scollega è permanente e non reversibile.
 
+>[!NOTE]
+>
+>Se il componente è contrassegnato come contenitore, le azioni di annullamento e sospensione non si applicano ai componenti secondari. Per ulteriori informazioni, vedere anche [Best practice MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+
 #### Sospensione dell&#39;ereditarietà dalle proprietà pagina {#suspending-inheritance-from-page-properties}
 
 Per sospendere l’ereditarietà su una pagina:
@@ -443,6 +447,10 @@ Annulla l’ereditarietà Live Copy per un componente in modo che il componente 
 
 >[!NOTE]
 >
+>Se il componente è contrassegnato come contenitore, le azioni di annullamento e sospensione non si applicano ai componenti secondari. Per ulteriori informazioni, vedere anche [Best practice MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+
+>[!NOTE]
+>
 >Quando riattivate l’ereditarietà, il componente non viene sincronizzato automaticamente con l’origine. Se necessario, potete richiedere manualmente una sincronizzazione.
 
 Annulla ereditarietà per modificare il contenuto del componente o eliminare il componente:
@@ -475,7 +483,7 @@ Se una Live Copy contiene componenti che fanno parte di un sistema paragrafo, l�
 
 >[!NOTE]
 >
->Quando si ripristina un&#39;ereditarietà annullata in un sistema paragrafo, l&#39;ordine dei componenti **non verrà ripristinato automaticamente** dal blueprint. Se necessario, potete richiedere manualmente una sincronizzazione.
+>Quando si ripristina l&#39;ereditarietà annullata in un sistema paragrafo, l&#39;ordine dei componenti **non verrà ripristinato automaticamente** dal blueprint. Se necessario, potete richiedere manualmente una sincronizzazione.
 
 Per annullare l&#39;ereditarietà del sistema paragrafo, attenersi alla procedura descritta di seguito.
 
@@ -547,7 +555,7 @@ L&#39;azione [Reimposta è disponibile anche in Live Copy Overview](/help/sites-
 
 Per tenere traccia delle modifiche apportate, è possibile visualizzare la pagina di blueprint in **References** e confrontarla con la relativa pagina di Live Copy:
 
-1. Nella console **Siti**, [ individuate una pagina di blueprint o Live Copy e selezionatela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Nella console **Siti**, [passare a una pagina di blueprint o Live Copy e selezionarla](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Aprite il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e selezionate:
 
    * **Blueprint**  (quando è selezionata una pagina Live Copy)
