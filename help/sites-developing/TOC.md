@@ -7,7 +7,7 @@ user-guide-title: Guida utente allo sviluppo in AEM 6.4
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 11%
@@ -79,7 +79,7 @@ ht-degree: 11%
    + [Sviluppo di componenti AEM](developing-components.md)
    + [Sviluppo di componenti AEM - Esempi di codice](developing-components-samples.md)
    + [Esportatore JSON per Content Services](json-exporter.md)
-   + [Abilitazione dell&#39;esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [Abilitazione dell&#39;esportazione JSON per un componente](json-exporter-components.md)
    + [Editor immagine](image-editor.md)
    + [Tag Decoration](decoration-tag.md)
    + [Utilizzo di Nascondi condizioni](hide-conditions.md)
@@ -100,7 +100,7 @@ ht-degree: 11%
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e ibrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Abilitazione dell&#39;esportazione JSON per un componente](json-exporter-components.md)
+   + [Abilitazione dell&#39;esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Applicazioni a pagina singola{#spas}
       + [Introduzione SPA e Procedura dettagliata](spa-walkthrough.md)
       + [SPA Esercitazione WKND](spa-wknd.md)
