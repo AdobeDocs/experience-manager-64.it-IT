@@ -3,9 +3,9 @@ title: Best practice per l'integrazione di AEM e Creative Cloud
 description: Best practice per integrare un’implementazione AEM con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3572'
 ht-degree: 16%
 
 ---
@@ -200,7 +200,7 @@ In questi casi, potete sfruttare l&#39;integrazione AEM/Creative Cloud per migli
 
 Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/approvate:
 
-* Per consentire l’accesso a un gran numero di risorse: Utilizza [ Portale marchio AEM Assets](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) o l&#39;implementazione da parte del cliente di [Condivisione risorse](assets-finder-editor.md) nell&#39;infrastruttura AEM pubblicazione
+* Per consentire l’accesso a un gran numero di risorse: Utilizza [ Portale marchio AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) o l&#39;implementazione da parte del cliente di [Condivisione risorse](assets-finder-editor.md) nell&#39;infrastruttura AEM pubblicazione
 
 * Per consentire l’accesso ad alcune risorse: AEM condivisione delle cartelle con Adobe Creative Cloud può essere utilizzata in aggiunta  AEM Assets Brand Portal o Asset Share. Nota: esistono alcune limitazioni relative a questa integrazione, descritte più dettagliatamente in questo articolo.
 
@@ -258,7 +258,7 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
    * **C:** Al termine degli aggiornamenti, il file viene copiato o salvato nella cartella mappata
 
 * **3:** Gli aggiornamenti delle risorse si riflettono in DAM. Per sbloccare la risorsa, archiviatela.
-* **4:** Asset viene messo in produzione.
+* **4:** Il bene viene messo in produzione.
 
 Di seguito sono riportati alcuni consigli generali su come gestire le risorse nel corso di questo processo:
 
@@ -296,7 +296,7 @@ Per pianificare ed eseguire la migrazione delle risorse dal sistema esistente a 
 
 >[!MORELIKETHIS]
 >
->* [ collegamento risorsa Adobe](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [ collegamento risorsa Adobe](https://helpx.adobe.com/in/enterprise/admin-guide.html/in/enterprise/using/adobe-asset-link.ug.html)
 >* [Best practice per AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integrazione AEM e  Adobe Stock](aem-assets-adobe-stock.md)
