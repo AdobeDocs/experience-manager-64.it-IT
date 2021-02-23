@@ -3,9 +3,9 @@ title: Condivisione  cartelle AEM Assets con Creative Cloud
 description: Configurazione e procedure ottimali per consentire agli utenti di Adobe Experience Manager Assets di scambiare cartelle di risorse con gli utenti Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La funzione di AEM alla condivisione delle cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti come [ collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [AEM app desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Per saperne di più, consulta [Best practice per l&#39;integrazione AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione di AEM alla condivisione delle cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti come [ collegamento risorsa Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) o [AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Per saperne di più, consulta [Best practice per l&#39;integrazione AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) può essere configurato per consentire agli utenti  AEM Assets di condividere cartelle con gli utenti di Creative Cloud, in modo che siano disponibili come cartelle condivise nel servizio Creative Cloud risorse. La funzione può essere utilizzata per scambiare file tra team creativi e utenti  AEM Assets, soprattutto quando gli utenti creativi non hanno accesso all’istanza  AEM Assets (non sono sulla rete aziendale).
 
