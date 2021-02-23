@@ -3,10 +3,10 @@ title: Guida di Assets
 description: Questa guida descrive tutte  attività di AEM Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 17%
+source-wordcount: '317'
+ht-degree: 15%
 
 ---
 
@@ -17,10 +17,9 @@ Questa guida descrive tutte  attività di AEM Assets, ad esempio come creare, ge
 
 ## Articoli AEM chiave
 
-* [Guida introduttiva di AEM](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Note sulla versione di AEM 6.4](/help/release-notes/home.md)
-* [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
+* [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [AEM lista di controllo](/help/sites-administering/security-checklist.md)
 
 ## Guide utente AEM 6.4
 
@@ -41,7 +40,7 @@ Questa guida descrive tutte  attività di AEM Assets, ad esempio come creare, ge
 
 ## Risorse AEM chiave
 
-* [AEM esercitazioni](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guida utente del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [Guida utente HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
