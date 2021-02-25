@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
-ht-degree: 23%
+source-wordcount: '21579'
+ht-degree: 24%
 
 ---
 
@@ -383,7 +383,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 * (Interfaccia touch) Durante la procedura guidata di gestione della pubblicazione, le risorse vengono aggiunte alla coda di replica dopo l’aggiunta delle pagine, causando la visualizzazione di alcune delle risorse dopo alcuni secondi. NPR-29985: Hotfix per CQ-4270724
 * Se si ordinano le query di ricerca in base alla rilevanza, oltre ai modelli InDesign vengono restituiti documenti InDesign. Hotfix per CQ-4273864
 * Se l’utente dispone di un ID e-mail in maiuscolo, non potrà eseguire la consegna per le risorse ritirate in precedenza. Hotfix per CQ-4276575
-* La configurazione di Cloud Services Dynamic Media in modalità `DMHybrid` determina la creazione di più suite di rapporti vuote in Analytics, senza AEM di ID suite di rapporti archiviati, con conseguente duplicazione della suite di rapporti. Hotfix per CQ-4276855
+* La configurazione di Cloud Services Dynamic Media in modalità `DMHybrid` determina la creazione di più suite di rapporti vuote in Analytics, senza AEM di ID suite di rapporti memorizzato in, con conseguente duplicazione della suite di rapporti. Hotfix per CQ-4276855
 * La finestra di dialogo di avviso non viene visualizzata durante la promozione nella pagina &quot;Tag gestito&quot;. Hotfix per CQ-4252851
 * Quando si utilizza il carosello per la gestione dei tag, il pulsante di navigazione non funziona. Hotfix per CQ-4275499
 * La funzionalità per lo spostamento in massa delle risorse non funziona e non è possibile spostare le risorse. Hotfix per CQ-4272987
@@ -1292,7 +1292,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.8.7.
 * È stato aggiunto il supporto per le funzionalità HTML Template Language (HTL) Specification 1.4
 * È stato aggiunto il supporto per MongoDB Enterprise 3.6.
-* L&#39;Editor pagina siti aggiunge il supporto per la modifica e la composizione contestuali con componenti lato client creati in React o Angular in combinazione con <a href="../sites-developing/spa-walkthrough.md">AEM Editor JS SDK</a>.
+* L&#39;Editor pagina siti aggiunge il supporto per la modifica e la composizione contestuali con componenti lato client creati in React o  Angular in combinazione con <a href="../sites-developing/spa-walkthrough.md">AEM Editor JS SDK</a>.
 * Miglioramenti per i frammenti di contenuto: aggiunta la possibilità di inserire annotazioni nei campi di testo e confronto tra versioni affiancate.
 * È stata aggiunta l&#39;integrazione di [con  Adobe Stock](/help/assets/aem-assets-adobe-stock.md) per consentire agli utenti di effettuare ricerche, visualizzare in anteprima, salvare e concedere in licenza  risorse Adobe Stock direttamente dall&#39;interfaccia AEM utente. Per ulteriori informazioni, consultate [Utilizzo  risorse Adobe Stock con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Risorse ha aggiunto il supporto per il metaschema condizionale dinamico e la possibilità di impostare uno schema di metadati per le cartelle di risorse.
@@ -1662,7 +1662,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * È stata aggiunta l&#39;integrazione di [con  Adobe Stock](/help/assets/aem-assets-adobe-stock.md) per consentire agli utenti di effettuare ricerche, visualizzare in anteprima, salvare e concedere in licenza  risorse Adobe Stock direttamente dall&#39;interfaccia AEM utente. Per informazioni dettagliate, consultate [Utilizzo  risorse Adobe Stock con risorse AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix per CQ-30857
 * È stato aggiunto il supporto per il metaschema condizionale dinamico. Per ulteriori informazioni, vedere [Cascading Metadata](/help/assets/cascading-metadata.md). NPR-25189: Hotfix per CQ-4237413
 * Opzione &quot;Download risorsa&quot; attivata nei frammenti di contenuto. Per ulteriori informazioni, consultate [Report risorse](/help/assets/asset-reports.md). NPR-25186: Hotfix per CQ-4237410
-* Possibilità di impostare uno schema di metadati per le cartelle di risorse. Per ulteriori informazioni, vedere [Schema metadati cartella](/help/assets/folder-metadata-schema.md) e fare riferimento alle relative [Impostazioni di configurazione](#configuration-settings-required-for-npr) post AEM 6.4.2.0. NPR-21268: Hotfix per CQ-4221574
+* Possibilità di impostare uno schema di metadati per le cartelle di risorse. Per ulteriori informazioni, vedere [Schema metadati cartella](/help/assets/folder-metadata-schema.md) e fare riferimento alle [Impostazioni di configurazione](#configuration-settings-required-for-npr) post AEM 6.4.2.0. NPR-21268: Hotfix per CQ-4221574
 
 **Siti**
 
@@ -2155,7 +2155,7 @@ Per determinare la piattaforma certificata da eseguire con questa release di  AE
 
 ### Aggiornamento dei visualizzatori Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0 contiene la nuova versione dei visualizzatori Dynamic Media (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti Dynamic Media viene consigliato di eseguire il comando seguente per aggiornare i predefiniti per visualizzatori in scatola.
+<p id="Dynamic">AEM 6.4.8.0 contiene la nuova versione dei visualizzatori Dynamic Media (5.10.1) che consente di verificare la presenza di nomi duplicati nella pagina dei predefiniti per immagini. Ai clienti Dynamic Media viene consigliato di eseguire il comando seguente per riportare i predefiniti per visualizzatori box allo stato aggiornato.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2200,7 +2200,7 @@ Per impostazione predefinita, il conteggio per la coda condivisa non viene aggio
 1. Vai all&#39;interfaccia utente Amministratore -> Servizi -> Area di lavoro -> Amministrazione globale.
 1. Esporta impostazioni globali.
 1. Nel file XML scaricato, aggiungete il tag &lt;client_taskPollingInterval>10&lt;/client_taskPollingInterval> Qui, 10 è il valore di esempio in secondi. Potete modificarlo di conseguenza.
-1. Salvate il file.
+1. Salva il file.
 1. Torna all&#39;interfaccia utente Amministratore -> Servizi -> Area di lavoro -> Amministrazione globale.
 1. Importate il file xml nella sezione Importa impostazioni globali.
 1. Ora potete disconnettervi dal sistema ed effettuare di nuovo l&#39;accesso.
@@ -2236,15 +2236,10 @@ In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete i
 
 * Durante l&#39;installazione possono essere visualizzati i seguenti errori e avvisi:
 
-   * Errori durante la creazione dell’istanza del componente e la restituzione del valore null da parte di Service Factory a causa del riavvio dell’archivio:
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] Impossibile creare l’istanza di componente a causa di un errore nel binding di profileManager di riferimento
-      * org.apache.sling.commons.scheduler FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory ha restituito null. (Componente: com.day.cq.tagging.impl.TagGarbageCollector (1687))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del reg.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: Il metodo unbindEdit ha generato un&#39;eccezione (java.lang.IllegalStateException: Servizio già non registrato).
 Questi errori non richiedono alcuna azione in quanto non influiscono sull’istanza AEM.
-
 
 ### Problemi risolti {#resolved-issues}
 
