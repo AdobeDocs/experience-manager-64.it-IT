@@ -1,51 +1,52 @@
 ---
 title: Creare il primo modulo adattivo
 seo-title: Creare il primo modulo adattivo
-description: 'Scopri come creare moduli interattivi e reattivi di classe aziendale. '
-seo-description: 'Scopri come creare moduli interattivi e reattivi di classe aziendale. '
+description: 'Scopri come creare moduli interattivi, di classe aziendale e reattivi. '
+seo-description: 'Scopri come creare moduli interattivi, di classe aziendale e reattivi. '
 page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
 
 
-# Creare il primo modulo adattivo {#do-not-publish-create-your-first-adaptive-form}
+# Crea il tuo primo modulo adattivo {#do-not-publish-create-your-first-adaptive-form}
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## Introduzione {#introduction}
 
-State cercando un&#39;esperienza **mobile-friendly per i moduli** che semplifica l&#39;iscrizione, aumenta il coinvolgimento e riduce il tempo di esecuzione, **moduli adattivi** è la scelta ideale per voi. I moduli adattivi offrono un&#39;esperienza mobile, automatizzata e intuitiva in termini di analisi. È possibile creare moduli di natura reattiva e interattiva, utilizzare processi automatizzati per ridurre le attività amministrative e ripetitive e utilizzare l&#39;analisi dei dati per migliorare e personalizzare l&#39;esperienza dei clienti con i moduli.
+Sei alla ricerca di un&#39;esperienza **forms adatta ai dispositivi mobili** che semplifica l&#39;iscrizione, aumenta il coinvolgimento e riduce il tempo di esecuzione, **moduli adattivi** è la scelta ideale per te. I moduli adattivi offrono un’esperienza mobile, automatizzata e con moduli compatibili con le analisi. È possibile creare facilmente moduli di natura reattiva e interattiva, utilizzare processi automatizzati per ridurre le attività amministrative e ripetitive e utilizzare l’analisi dei dati per migliorare e personalizzare l’esperienza dei clienti con i moduli.
 
-Questa esercitazione fornisce un framework end-to-end per creare un modulo adattivo. L’esercitazione è organizzata in un caso d’uso e in più guide. Ogni guida è utile per apprendere e aggiungere nuove funzioni al modulo adattivo creato con questa esercitazione. Dopo ogni guida è disponibile un modulo adattivo funzionante. È disponibile la guida per la creazione di un modulo adattivo. Le guide successive saranno disponibili a breve. Al termine di questa esercitazione, potrete:
+Questa esercitazione fornisce un framework end-to-end per creare un modulo adattivo. L’esercitazione è organizzata in un caso d’uso e in più guide. Ogni guida è utile per apprendere e aggiungere nuove funzioni al modulo adattivo creato in questa esercitazione. Hai un modulo adattivo funzionante dopo ogni guida. È disponibile la guida per la creazione di un modulo adattivo . Le guide successive saranno presto disponibili. Al termine di questa esercitazione, potrai:
 
-* Creare un modulo adattivo e un modello dati modulo.
-* Applicare uno stile al modulo adattivo.
-* Utilizzare l&#39;editor di regole del modulo adattive per creare regole aziendali.
-* Verificare e pubblicare un modulo adattivo.
+* Creare un modello di dati modulo adattivo e modulo.
+* Assegna uno stile al modulo adattivo.
+* Utilizza l’editor di regole del modulo adattivo per creare regole aziendali.
+* Test e pubblicazione di un modulo adattivo.
 
-![creazione di un flusso di lavoro basato su moduli adattativi](assets/create-daptive-form-workflow.png)
+![creazione-adattamento-modulo-workflow](assets/create-daptive-form-workflow.png)
 
 Il percorso inizia con l’apprendimento del caso d’uso:
 
-Un sito Web offre una serie di prodotti per clienti diversi. I clienti possono sfogliare il portale, selezionare e ordinare i prodotti. Ogni cliente crea un account e fornisce indirizzi di spedizione e fatturazione. Un cliente esistente, Sara Rose, sta cercando di aggiungere il suo indirizzo di spedizione al sito web. Il sito Web fornisce un modulo online per aggiungere e aggiornare gli indirizzi di spedizione.
+Un sito web offre una gamma di prodotti per diversi clienti. I clienti navigano nel portale, selezionano e ordinano i prodotti. Ogni cliente crea un account e fornisce indirizzi di spedizione e fatturazione. Una cliente esistente, Sara Rose, sta cercando di aggiungere il suo indirizzo di spedizione al sito web. Il sito web fornisce un modulo online per aggiungere e aggiornare gli indirizzi di spedizione.
 
-Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza  AEM Forms per l’acquisizione e l’elaborazione dei dati. Il modulo di aggiunta e aggiornamento dell&#39;indirizzo è un modulo adattivo. Il sito Web memorizza i dettagli dei clienti in un database. Utilizzano il modulo di aggiunta e aggiornamento dell&#39;indirizzo per recuperare e visualizzare gli indirizzi disponibili. Inoltre, utilizzano il modulo adattivo per accettare indirizzi nuovi e aggiornati.
+Il sito web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM Forms per l’acquisizione e l’elaborazione dei dati. Il modulo di aggiunta e aggiornamento dell’indirizzo è un modulo adattivo. Il sito web memorizza i dettagli dei clienti in un database. Utilizzano il modulo di aggiunta e aggiornamento dell’indirizzo per recuperare e visualizzare gli indirizzi disponibili. Utilizzano anche il modulo adattivo per accettare indirizzi nuovi e aggiornati.
 
 ### Prerequisito {#prerequisite}
 
-* Impostazione di un’istanza di creazione AEM.
-* Installate [ AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di creazione.
-* Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione si basano sul database MySQL e utilizzano  driver di database Oracle [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Imposta un&#39;istanza di authoring AEM.
+* Installa [AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) sull&#39;istanza dell&#39;autore.
+* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione sono basati sul database MySQL e utilizzano il driver di database Oracle [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Configurate un database contenente i dati del cliente con i campi riportati di seguito. Un database non è essenziale per creare un modulo adattivo. Questa esercitazione utilizza un database per visualizzare il modello dati del modulo e le funzionalità di persistenza di  AEM Forms.
+* Imposta un database contenente i dati del cliente con i campi visualizzati di seguito. Un database non è essenziale per creare un modulo adattivo. Questa esercitazione utilizza un database per visualizzare il modello dati del modulo e le funzionalità di persistenza di AEM Forms.
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -53,13 +54,13 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza  AEM For
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e adattabili. L&#39;utilizzo di moduli adattivi consente di distribuire esperienze personalizzate e mirate.  AEM Forms fornisce un editor WYSIWYG con trascinamento per creare moduli adattivi. Per ulteriori informazioni sui moduli adattivi, vedere [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
+I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e adattivi in natura. Utilizzando i moduli adattivi, puoi fornire esperienze personalizzate e mirate. AEM Forms fornisce un editor WYSIWYG con trascinamento per creare moduli adattivi. Per ulteriori informazioni sui moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
 
 Obiettivi:
 
-* Creare un modulo adattivo che consenta al cliente di aggiungere un indirizzo di spedizione
-* Campi di layout di un modulo adattivo per visualizzare e accettare le informazioni di un cliente
-* Creare un&#39;azione di invio per inviare un&#39;e-mail contenente il contenuto del modulo
+* Creare un modulo adattivo che consenta a un cliente di aggiungere un indirizzo di spedizione
+* Layout dei campi di un modulo adattivo per visualizzare e accettare le informazioni di un cliente
+* Creare un’azione di invio per inviare un’e-mail contenente il contenuto del modulo
 * Anteprima e invio di un modulo adattivo
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
@@ -68,7 +69,7 @@ Obiettivi:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Un modello dati del modulo consente di collegare un modulo adattivo a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati Modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
+Un modello di dati modulo consente di collegare un modulo adattivo a diverse origini dati. Ad esempio, AEM profilo utente, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati Modulo è uno schema di rappresentazione dei dati unificato delle entità e dei servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
 
 Obiettivi:
 
@@ -76,53 +77,53 @@ Obiettivi:
 * Creare il modello dati del modulo utilizzando il database MySQL come origine dati
 * Aggiunta di oggetti del modello dati al modello dati del modulo
 * Configurare i servizi di lettura e scrittura per il modello dati del modulo
-* Verifica del modello di dati del modulo e dei servizi configurati con i dati di prova
+* Verificare il modello dati del modulo e i servizi configurati con i dati di prova
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
-## Passaggio 3: Applicazione di regole ai campi modulo adattivo {#step-apply-rules-to-adaptive-form-fields}
+## Passaggio 3: Applicare regole ai campi del modulo adattivo {#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-I moduli adattivi forniscono un editor per la scrittura di regole per gli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni predefinite, input dell&#39;utente e azioni dell&#39;utente sul modulo. Garantisce la precisione e velocizza la compilazione dei moduli.
+I moduli adattivi forniscono un editor per la scrittura di regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni preimpostate, input dell’utente e azioni dell’utente sul modulo. Consente di garantire l’accuratezza e di accelerare l’esperienza di compilazione dei moduli.
 
 Obiettivi:
 
-* Creazione e applicazione di regole ai campi modulo adattivi
-* Utilizzare le regole per attivare i servizi del modello dati del modulo per aggiornare i dati al database
+* Creazione e applicazione di regole ai campi del modulo adattivo
+* Utilizzare le regole per attivare i servizi del modello dati modulo per aggiornare i dati al database
 
-## Passaggio 4: Stile del modulo adattivo {#step-style-your-adaptive-form}
+## Passaggio 4: Personalizzare lo stile del modulo adattivo {#step-style-your-adaptive-form}
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-I moduli adattivi forniscono temi e un [editor](/help/forms/using/themes.md) per creare temi per i moduli adattivi. Un tema contiene dettagli di stile per componenti e pannelli e può essere riutilizzato in diversi moduli. Gli stili includono proprietà quali i colori di sfondo, i colori dello stato, la trasparenza, l’allineamento e le dimensioni. Quando si applica il tema al modulo, lo stile specificato si riflette sui componenti corrispondenti del modulo. I moduli adattivi supportano inoltre lo stile in linea per gli stili specifici di un modulo.
+I moduli adattivi forniscono temi e un [editor](/help/forms/using/themes.md) per creare temi per i moduli adattivi. Un tema contiene dettagli di stile per componenti e pannelli e può essere riutilizzato in diversi moduli. Gli stili includono proprietà quali colori di sfondo, colori dello stato, trasparenza, allineamento e dimensioni. Quando si applica il tema al modulo, lo stile specificato si riflette sui componenti corrispondenti del modulo. I moduli adattivi supportano anche lo stile in linea per gli stili specifici di un modulo.
 
 Obiettivi:
 
-* Applicazione di un tema out-of-box a un modulo adattivo
-* Creare un tema per un modulo adattivo utilizzando l&#39;editor di temi
-* Utilizzo di font Web in un tema personalizzato
+* Applicare un tema preconfigurato a un modulo adattivo
+* Creare un tema per un modulo adattivo utilizzando l’editor di temi
+* Utilizzare i font web in un tema personalizzato
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Passaggio 5: Verificare il modulo adattivo {#step-test-your-adaptive-form}
+## Passaggio 5: Test del modulo adattivo {#step-test-your-adaptive-form}
 
-![11 test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
+![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-I moduli adattivi sono parte integrante delle interazioni con i clienti. È importante verificare i moduli adattivi con tutte le modifiche apportate al modulo. Verificare ogni campo di un modulo è noioso.  AEM Forms fornisce un SDK (Calvin SDK) per automatizzare il test dei moduli adattivi. Calvin consente di automatizzare il test dei moduli adattivi nel browser Web.
+I moduli adattivi sono parte integrante delle interazioni dei clienti. È importante testare i moduli adattivi con ogni modifica apportata. Il test di ogni campo di un modulo è noioso. AEM Forms fornisce un SDK (Calvin SDK) per automatizzare il test dei moduli adattivi. Calvin consente di automatizzare i test dei moduli adattivi nel browser web.
 
 Obiettivi:
 
 * Installa Calvin SDK
-* Creazione di suite di test e di test case per il modulo di modifica dell&#39;indirizzo
+* Crea suite di test e casi di test per il modulo per l’indirizzo di modifica
 
-Per ulteriori informazioni sull&#39;SDK, vedere [Utilizzo di test automatici con AEM modulo adattivo](/help/forms/using/calvin.md).
+Per informazioni sull&#39;SDK, consulta [Utilizzo di test automatici con AEM modulo adattivo](/help/forms/using/calvin.md).
 
 ## Passaggio 6: Pubblicare il modulo adattivo {#step-publish-your-adaptive-form}
 
-![12-publish-your-adaptive-form-small](assets/12-publish-your-adaptive-form-_small.png)
+![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-È possibile pubblicare i moduli adattivi come modulo autonomo (applicazione a pagina singola), includerli AEM [pagina del sito](/help/forms/using/embed-adaptive-form-aem-sites.md) o elencarli in un sito AEM utilizzando [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
+È possibile pubblicare i moduli adattivi come modulo autonomo (applicazione a pagina singola), includerli in AEM [pagina siti](/help/forms/using/embed-adaptive-form-aem-sites.md) o in un elenco su un sito AEM utilizzando [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
 
 Obiettivi:
 
