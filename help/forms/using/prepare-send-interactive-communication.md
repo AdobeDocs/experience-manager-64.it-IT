@@ -1,16 +1,17 @@
 ---
-title: Preparazione e invio di comunicazioni interattive tramite l'interfaccia utente dell'agente
-seo-title: Preparazione e invio di comunicazioni interattive tramite l'interfaccia utente dell'agente
-description: 'L''interfaccia utente dell''agente consente agli agenti di preparare e inviare la comunicazione interattiva al processo di post. L''agente apporta le modifiche necessarie secondo quanto consentito e invia la comunicazione interattiva a un processo di pubblicazione, ad esempio e-mail o stampa. '
-seo-description: Preparazione e invio di comunicazioni interattive tramite l'interfaccia utente dell'agente
+title: Preparare e inviare comunicazioni interattive tramite l’interfaccia utente dell’agente
+seo-title: Preparare e inviare comunicazioni interattive tramite l’interfaccia utente dell’agente
+description: 'L’interfaccia utente dell’agente consente agli agenti di preparare e inviare comunicazioni interattive al processo di pubblicazione. L’agente apporta le modifiche necessarie e invia la comunicazione interattiva a un processo di pubblicazione, ad esempio e-mail o stampa. '
+seo-description: Preparare e inviare comunicazioni interattive tramite l’interfaccia utente dell’agente
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: Comunicazione interattiva
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -18,22 +19,22 @@ ht-degree: 0%
 
 # Preparare e inviare comunicazioni interattive utilizzando l&#39;interfaccia utente dell&#39;agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-L&#39;interfaccia utente dell&#39;agente consente agli agenti di preparare e inviare la comunicazione interattiva al processo di post. L&#39;agente apporta le modifiche necessarie secondo quanto consentito e invia la comunicazione interattiva a un processo di pubblicazione, ad esempio e-mail o stampa.
+L’interfaccia utente dell’agente consente agli agenti di preparare e inviare comunicazioni interattive al processo di pubblicazione. L’agente apporta le modifiche necessarie e invia la comunicazione interattiva a un processo di pubblicazione, ad esempio e-mail o stampa.
 
 ## Panoramica {#overview}
 
-Dopo aver creato una comunicazione interattiva, l&#39;agente può aprire la comunicazione interattiva nell&#39;interfaccia utente dell&#39;agente e preparare una copia specifica per il destinatario immettendo i dati e gestendo il contenuto e gli allegati. Infine, l&#39;agente può inviare la comunicazione interattiva a un processo di post.
+Dopo la creazione di una comunicazione interattiva, l’agente può aprire la comunicazione interattiva nell’interfaccia utente dell’agente e preparare una copia specifica per il destinatario immettendo i dati e gestendo il contenuto e gli allegati. Infine, l&#39;agente può inviare la comunicazione interattiva a un processo post.
 
-Durante la preparazione della comunicazione interattiva tramite l&#39;interfaccia utente dell&#39;agente, l&#39;agente gestisce i seguenti aspetti della comunicazione interattiva nell&#39;interfaccia utente dell&#39;agente prima di inviarla a un processo di post:
+Durante la preparazione della comunicazione interattiva tramite l’interfaccia utente dell’agente, l’agente gestisce i seguenti aspetti della comunicazione interattiva nell’interfaccia utente dell’agente prima di inviarla a un processo post:
 
-* **Dati**: Nella scheda Dati dell&#39;interfaccia utente dell&#39;agente vengono visualizzate tutte le variabili modificabili dall&#39;agente e le proprietà del modello di dati del modulo sbloccato nella comunicazione interattiva. Queste variabili/proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi creati nel modello XDP/canale di stampa. La scheda Dati viene visualizzata solo quando sono presenti variabili, proprietà del modello dati del modulo o campi nella comunicazione interattiva modificabili dall&#39;agente.
-* **Contenuto**: Nella scheda Contenuto, l&#39;agente gestisce il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva. Durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento, l&#39;agente può apportare le modifiche desiderate nel frammento di documento. L&#39;agente può inoltre riordinare, aggiungere o rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentito.
-* **Allegati**: La scheda Allegati viene visualizzata nell&#39;interfaccia utente dell&#39;agente solo se la comunicazione interattiva contiene degli allegati o se l&#39;agente dispone dell&#39;accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare gli allegati.
+* **Dati**: Nella scheda Dati dell’interfaccia utente dell’agente vengono visualizzate le variabili modificabili dall’agente e le proprietà del modello dati del modulo sbloccato nella comunicazione interattiva. Queste variabili/proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi generati nel modello di canale XDP/print. La scheda Dati viene visualizzata solo quando sono presenti variabili, proprietà del modello dati del modulo o campi nella comunicazione interattiva modificabili dall’agente.
+* **Contenuto**: Nella scheda Contenuto , l’agente gestisce il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva. Durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento, l&#39;agente può apportare le modifiche desiderate nel frammento di documento. L&#39;agente può inoltre riordinare, aggiungere o rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentito.
+* **Allegati**: La scheda Allegati viene visualizzata nell’interfaccia utente dell’agente solo se la comunicazione interattiva contiene allegati o se l’agente dispone dell’accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare o modificare gli allegati.
 
-## Preparazione della comunicazione interattiva tramite l&#39;interfaccia utente dell&#39;agente {#prepare-interactive-communication-using-the-agent-ui}
+## Preparare la comunicazione interattiva utilizzando l&#39;interfaccia utente dell&#39;agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. Selezionate la comunicazione interattiva appropriata e toccate **[!UICONTROL Apri interfaccia utente agente]**.
+1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
+1. Seleziona la comunicazione interattiva appropriata e tocca **[!UICONTROL Apri interfaccia utente agente]**.
 
    >[!NOTE]
    >
@@ -41,35 +42,35 @@ Durante la preparazione della comunicazione interattiva tramite l&#39;interfacci
 
    ![openagentiui](assets/openagentiui.png)
 
-   In base al contenuto e alle proprietà della comunicazione interattiva, l&#39;interfaccia utente dell&#39;agente viene visualizzata con le seguenti tre schede: Dati, contenuti e allegati.
+   In base al contenuto e alle proprietà della comunicazione interattiva, l’interfaccia utente dell’agente viene visualizzata con le tre schede seguenti: Dati, contenuto e allegati.
 
-   ![agentuitabo](assets/agentuitabs.png)
+   ![agentuitabs](assets/agentuitabs.png)
 
-   Immettete i dati, gestite il contenuto e gestite gli allegati.
+   Procedi all’immissione dei dati, alla gestione del contenuto e alla gestione degli allegati.
 
 ### Inserisci dati {#enter-data}
 
-1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello dati del modulo e i campi del modello di stampa (XDP), a seconda delle necessità. Compilare tutti i campi obbligatori contrassegnati con un asterisco (&amp;ast;) per attivare il pulsante **Invia**.
+1. Nella scheda Dati, immettere i dati necessari per i campi variabili, modello dati modulo e modello di stampa (XDP). Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare il pulsante **Submit** .
 
-   Toccate il valore di un campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
+   Tocca un valore del campo dati nell’anteprima Comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
 
 ### Gestione contenuto {#manage-content}
 
-Nella scheda Contenuto, gestite il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva.
+Nella scheda Contenuto , gestisci il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva.
 
-1. Selezionare **[!UICONTROL Content]**. Viene visualizzata la scheda del contenuto della comunicazione interattiva.
+1. Seleziona **[!UICONTROL Contenuto]**. Viene visualizzata la scheda del contenuto della comunicazione interattiva.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Modificare i frammenti di documento, come necessario, nella scheda Contenuto. Per attivare il frammento rilevante nella gerarchia dei contenuti, è possibile toccare la riga o il paragrafo corrispondente nell&#39;anteprima della comunicazione interattiva oppure toccare il frammento direttamente nella gerarchia Contenuto.
+1. Modificare i frammenti di documento, come necessario, nella scheda Contenuto. Per attivare il frammento pertinente nella gerarchia dei contenuti, tocca la riga o il paragrafo pertinente nell’anteprima Comunicazione interattiva oppure tocca il frammento direttamente nella gerarchia dei contenuti.
 
-   Ad esempio, il frammento di documento con la riga &quot;Effettuare un pagamento online ora... &quot; è selezionato nell&#39;anteprima nell&#39;immagine seguente e lo stesso frammento di documento è stato selezionato nella scheda Contenuto.
+   Ad esempio, il frammento di documento con la riga &quot;Make a payment online now ...&quot; viene selezionato nell&#39;anteprima nell&#39;immagine seguente e lo stesso frammento di documento è stato selezionato nella scheda Contenuto.
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlightmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra dell&#39;anteprima, è possibile disattivare o abilitare la funzionalità per passare al frammento del documento quando nell&#39;anteprima viene toccato o selezionato il testo, il paragrafo o il campo dati corrispondente.
+   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlight tselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra dell’anteprima, puoi disattivare o abilitare la funzionalità per passare al frammento di documento quando nell’anteprima viene toccato o selezionato il testo, il paragrafo o il campo dati pertinente.
 
-   Per i frammenti che possono essere modificati dall&#39;agente durante la creazione della comunicazione interattiva è presente l&#39;icona Modifica contenuto selezionato ( ![iconeditedselected content](assets/iconeditselectedcontent.png)). Toccate l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportare le modifiche necessarie. Utilizzate le seguenti opzioni per formattare e gestire il testo:
+   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva dispongono dell’icona Modifica contenuto selezionato ( ![iconeditediselezionedcontent](assets/iconeditselectedcontent.png)). Tocca l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportare le modifiche desiderate. Utilizzare le seguenti opzioni per la formattazione e la gestione del testo:
 
    * [Opzioni di formattazione](#formattingtext)
 
@@ -80,38 +81,38 @@ Nella scheda Contenuto, gestite il contenuto, ad esempio frammenti di documento 
 
    Per ulteriori informazioni sulle azioni disponibili per vari frammenti di documento nell&#39;interfaccia utente dell&#39;agente, vedere [Azioni e informazioni disponibili nell&#39;interfaccia utente dell&#39;agente](#actionsagentui).
 
-1. Per aggiungere un&#39;interruzione di pagina all&#39;output di stampa della comunicazione interattiva, posizionare il cursore nel punto in cui si desidera inserire un&#39;interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![pagebreakbefore](assets/pagebreakbeforeafter.png)).
+1. Per aggiungere un’interruzione di pagina all’output di stampa della comunicazione interattiva, posizionare il cursore nel punto in cui si desidera inserire un’interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![pagebreakbefore](assets/pagebreakbeforeafter.png)).
 
-   Nella comunicazione interattiva viene inserito un segnaposto per interruzione di pagina esplicito. Per vedere in che modo un&#39;interruzione di pagina esplicita influisce sulla comunicazione interattiva, consultate l&#39;anteprima di stampa.
+   Nella comunicazione interattiva viene inserito un segnaposto di interruzione di pagina esplicito. Per vedere in che modo un’interruzione di pagina esplicita influisce sulla comunicazione interattiva, vedere l’anteprima di stampa.
 
    ![esplicitpagebreak](assets/explicitpagebreak.png)
 
-   Continuate a gestire gli allegati della comunicazione interattiva.
+   Procedere alla gestione degli allegati della comunicazione interattiva.
 
 ### Gestisci allegati {#manage-attachments}
 
-1. Selezionare **[!UICONTROL Allegato]**. L&#39;interfaccia utente dell&#39;agente visualizza gli allegati disponibili come configurati durante la creazione della comunicazione interattiva.
+1. Selezionare **[!UICONTROL Allegato]**. Durante la creazione della comunicazione interattiva, l’interfaccia utente dell’agente visualizza gli allegati disponibili come configurati.
 
-   È possibile scegliere di non inviare un allegato insieme alla comunicazione interattiva toccando l&#39;icona della vista e toccando la croce nell&#39;allegato per eliminarlo (se l&#39;agente può eliminare o nascondere l&#39;allegato) dalla comunicazione interattiva. Per gli allegati specificati come obbligatori durante la creazione della comunicazione interattiva, le icone Visualizza ed Elimina sono disattivate.
+   È possibile scegliere di non inviare un allegato insieme alla comunicazione interattiva toccando l&#39;icona di visualizzazione e toccando la croce nell&#39;allegato per eliminarlo (se l&#39;agente è autorizzato a eliminare o nascondere l&#39;allegato) dalla comunicazione interattiva. Per gli allegati specificati come obbligatori durante la creazione della comunicazione interattiva, le icone Visualizza ed Elimina sono disabilitate.
 
-   ![Attachmentsagentui](assets/attachmentsagentui.png)
+   ![allegato sagentui](assets/attachmentsagentui.png)
 
-1. Toccate l&#39;icona Accesso libreria ( ![Accesso libreria](assets/libraryaccess.png)) per accedere alla libreria Contenuto per inserire risorse DAM come allegati.
+1. Tocca l’icona Accesso libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla libreria dei contenuti e inserire risorse DAM come allegati.
 
    >[!NOTE]
    >
    >L&#39;icona Accesso libreria è disponibile solo se l&#39;accesso alla libreria è stato abilitato durante la creazione della comunicazione interattiva (nelle proprietà Contenitore documento del canale Stampa).
 
-1. Se l&#39;ordine degli allegati non era bloccato durante la creazione della comunicazione interattiva, è possibile riordinare gli allegati selezionando un allegato e toccando le frecce verso il basso e verso l&#39;alto.
-1. Utilizzate Anteprima Web e Anteprima di stampa per verificare se le due uscite sono conformi alle vostre esigenze.
+1. Se l’ordine degli allegati non è stato bloccato durante la creazione della comunicazione interattiva, è possibile riordinare gli allegati selezionando un allegato e toccando le frecce verso il basso e verso l’alto.
+1. Utilizza Anteprima web e Anteprima di stampa per vedere se i due output sono conformi alle tue esigenze.
 
-   Se ritenete che le anteprime siano soddisfacenti, toccate **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo di pubblicazione. Oppure, per apportare modifiche, uscire dall’anteprima per tornare alle modifiche apportate.
+   Se trovi le anteprime soddisfacenti, tocca **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo post. Oppure per apportare modifiche, esci dall’anteprima per tornare alle modifiche apportate.
 
 ## Formattazione del testo {#formattingtext}
 
-Durante la modifica di un frammento di testo nell’interfaccia utente dell’agente, la barra degli strumenti cambia a seconda del tipo di modifiche che si desidera apportare: Font, Paragrafo o Elenco:
+Durante la modifica di un frammento di testo nell’interfaccia utente dell’agente, la barra degli strumenti cambia a seconda del tipo di modifica che scegli di apportare: Font, Paragrafo o Elenco:
 
-![typeofformattingtoolbarBarra degli strumenti ](assets/typeofformattingtoolbar.png) ![Font](do-not-localize/fonttoolbar.png)
+![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarFont barra degli strumenti](do-not-localize/fonttoolbar.png)
 
 Barra dei font
 
@@ -119,55 +120,55 @@ Barra dei font
 
 Barra degli strumenti Paragrafo
 
-![Elenco, barra degli strumenti](do-not-localize/listtoolbar.png)
+![Barra degli strumenti dell’elenco](do-not-localize/listtoolbar.png)
 
-Elenco, barra degli strumenti
+Barra degli strumenti dell’elenco
 
-### Evidenziare/mettere in evidenza parti di testo {#highlightemphasize}
+### Evidenziare/evidenziare parti di testo {#highlightemphasize}
 
-Per evidenziare\enfatizzare parti di testo in un frammento modificabile, selezionare il testo e toccare Evidenzia colore.
+Per evidenziare\enfatizzare parti di testo in un frammento modificabile, selezionarlo e toccare Evidenzia colore.
 
-![highlightextagentui](assets/highlighttextagentui.png)
+![highlightAgentui](assets/highlighttextagentui.png)
 
 ### Incolla il testo formattato {#pasteformattedtext}
 
-![pastedtext](assets/pastedtext.png)
+![testo incollato](assets/pastedtext.png)
 
 ### Inserisci caratteri speciali nel testo {#specialcharacters}
 
-L&#39;interfaccia utente dell&#39;agente supporta 210 caratteri speciali. L&#39;amministratore può [aggiungere supporto per più/personalizzare caratteri speciali mediante la personalizzazione](/help/forms/using/custom-special-characters.md).
+L&#39;interfaccia utente dell&#39;agente ha integrato il supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere supporto per caratteri speciali più/personalizzati tramite personalizzazione](/help/forms/using/custom-special-characters.md).
 
-#### Distribuzione allegati {#attachmentdelivery}
+#### Consegna allegato {#attachmentdelivery}
 
-* Quando viene eseguito il rendering della comunicazione interattiva utilizzando le API lato server come PDF interattivo o non interattivo, il PDF di cui è stato effettuato il rendering contiene allegati come allegati PDF.
-* Quando un processo di post associato a una comunicazione interattiva viene caricato come parte dell&#39;interfaccia utente Invia tramite agente, gli allegati vengono passati come parametro List&lt;com.adobe.idp.Document> inAttachmentDocs.
-* I flussi di lavoro che utilizzano il meccanismo di distribuzione, come l&#39;e-mail e la stampa, distribuiscono anche gli allegati insieme alla versione PDF della comunicazione interattiva.
+* Quando viene eseguito il rendering della comunicazione interattiva utilizzando API lato server come PDF interattivo o non interattivo, il PDF di cui è stato effettuato il rendering contiene allegati come allegati PDF.
+* Quando un processo post associato a una comunicazione interattiva viene caricato come parte dell&#39;interfaccia utente Invia tramite agente, gli allegati vengono passati come parametro List&lt;com.adobe.idp.Document> inAttachmentDocs .
+* I flussi di lavoro che utilizzano i meccanismi di distribuzione, ad esempio e-mail e stampa, distribuiscono anche allegati insieme alla versione PDF della comunicazione interattiva.
 
 ## Azioni e informazioni disponibili nell&#39;interfaccia utente dell&#39;agente {#actionsagentui}
 
-### Frammenti del documento {#document-fragments}
+### Frammenti di documento {#document-fragments}
 
 ![](do-not-localize/contentoptionsdocfragments.png)
 
 * **Frecce** Su/Giù: Frecce per spostare i frammenti di documento verso l’alto o il basso nella comunicazione interattiva.
-* **Elimina**: Se consentito, eliminare il frammento di documento dalla comunicazione interattiva.
-* **Interruzione di pagina prima**  (applicabile ai frammenti secondari dell&#39;area di destinazione): Inserisce un&#39;interruzione di pagina prima del frammento del documento.
-* **Rientro**: Aumentare o diminuire il rientro di un frammento di documento.
-* **Interruzione di pagina dopo**  (applicabile ai frammenti secondari dell&#39;area di destinazione): Inserisce un&#39;interruzione di pagina dopo il frammento del documento.
+* **Elimina**: Se consentito, elimina il frammento di documento dalla comunicazione interattiva.
+* **Interruzione di pagina prima di**  (applicabile per frammenti figlio dell’area di destinazione): Inserisce un’interruzione di pagina prima del frammento del documento.
+* **Rientro**: Aumenta o diminuisce il rientro di un frammento di documento.
+* **Interruzione di pagina dopo**  (applicabile per frammenti figlio dell’area di destinazione): Inserisce un’interruzione di pagina dopo il frammento del documento.
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* Modifica (solo frammenti di testo): Aprire l&#39;editor Rich Text per modificare il frammento del documento di testo. Per ulteriori informazioni, vedere [Formattazione del testo](#formattingtext).
+* Modifica (solo frammenti di testo): Apri l’editor Rich Text per modificare il frammento di documento di testo. Per ulteriori informazioni, vedere [Formattazione del testo](#formattingtext).
 
-* Selezione (icona occhio): Include\esclude frammento di documento dalla comunicazione interattiva.
-* Valori non compilati (info): Indica il numero di variabili non compilate nel frammento di documento.
+* Selezione (icona occhio): Include\esclude frammenti di documento dalla comunicazione interattiva.
+* Valori non compilati (informazioni): Indica il numero di variabili non compilate nel frammento di documento.
 
 ### Elenca frammenti di documento {#list-document-fragments}
 
-![list,](assets/listoptions.png)
+![listoptions](assets/listoptions.png)
 
-* Inserisci riga vuota: Inserisce una nuova riga vuota.
-* Selezione (icona occhio): Include\esclude frammento di documento dalla comunicazione interattiva.
-* Ignora elenchi puntati/numerati: Consente di saltare elenchi puntati/numerati nel frammento di documento elenco.
-* Valori non compilati (info): Indica il numero di variabili non compilate nel frammento di documento.
+* Inserisci linea vuota: Inserisce una nuova riga vuota.
+* Selezione (icona occhio): Include\esclude frammenti di documento dalla comunicazione interattiva.
+* Ignora punti/numeri: Consente di saltare elenchi puntati/numerati nel frammento di documento elenco.
+* Valori non compilati (informazioni): Indica il numero di variabili non compilate nel frammento di documento.
 
