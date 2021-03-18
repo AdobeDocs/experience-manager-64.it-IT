@@ -1,16 +1,17 @@
 ---
 title: Creare un modulo adattivo utilizzando un set di moduli adattivi
 seo-title: Creare un modulo adattivo utilizzando un set di moduli adattivi
-description: 'Con  AEM Forms è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
-seo-description: 'Con  AEM Forms è possibile unire moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
+description: 'Con AEM Forms, è possibile unire i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
+seo-description: 'Con AEM Forms, è possibile unire i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -20,15 +21,15 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-In un flusso di lavoro, ad esempio un&#39;applicazione per l&#39;apertura di un conto bancario, gli utenti possono compilare più moduli. Anziché chiedere loro di compilare un set di moduli, è possibile raggruppare i moduli e creare un modulo di grandi dimensioni (modulo principale). Quando si aggiunge un modulo adattivo al modulo più grande, questo viene aggiunto come pannello (modulo figlio). È possibile aggiungere un set di moduli secondari per creare un modulo principale. Potete visualizzare o nascondere i pannelli in base all’input dell’utente. I pulsanti del modulo principale, ad esempio Invia e Reimposta, sovrascrivono i pulsanti del modulo figlio. Per aggiungere un modulo adattivo al modulo principale, è possibile trascinare il modulo adattivo dal browser delle risorse (come i frammenti di modulo adattivo).
+In un flusso di lavoro, ad esempio un’applicazione per l’apertura di un conto bancario, gli utenti compilano più moduli. Anziché chiedere loro di compilare un set di moduli, è possibile sovrapporre i moduli e creare un modulo di grandi dimensioni (modulo principale). Quando si aggiunge un modulo adattivo al modulo più grande, questo viene aggiunto come pannello (modulo figlio). Per creare un modulo principale è possibile aggiungere un set di moduli figlio. Puoi mostrare o nascondere i pannelli in base all’input dell’utente. I pulsanti del modulo principale, ad esempio invio e ripristino, sovrascrivono i pulsanti del modulo figlio. Per aggiungere un modulo adattivo nel modulo principale, puoi trascinare il modulo adattivo dal browser delle risorse (come i frammenti di modulo adattivo).
 
 Le funzioni disponibili sono:
 
 * Authoring indipendente
-* Visualizzazione/nascondere i moduli appropriati
+* Visualizzazione/eliminazione dei moduli appropriati
 * Caricamento pigro
 
-Funzioni quali authoring indipendente e caricamento lento migliorano le prestazioni rispetto all’utilizzo di singoli componenti per creare il modulo principale.
+Funzioni quali authoring indipendente e caricamento lento migliorano le prestazioni rispetto all’utilizzo dei singoli componenti per creare il modulo principale.
 
 >[!NOTE]
 >
@@ -36,9 +37,9 @@ Funzioni quali authoring indipendente e caricamento lento migliorano le prestazi
 
 ## Dietro le quinte {#behind-the-scenes}
 
-È possibile aggiungere moduli adattivi e frammenti XSD nel modulo principale. La struttura del modulo padre è uguale a [qualsiasi modulo adattivo](/help/forms/using/prepopulate-adaptive-form-fields.md). Quando si aggiunge un modulo adattivo come modulo secondario, questo viene aggiunto come pannello nel modulo principale. I dati di un modulo figlio associato vengono memorizzati nella directory `data`principale della sezione `afBoundData` dello schema XML del modulo padre.
+È possibile aggiungere moduli adattivi basati su XSD e frammenti nel modulo principale. La struttura del modulo principale è la stessa di [qualsiasi modulo adattivo](/help/forms/using/prepopulate-adaptive-form-fields.md). Quando si aggiunge un modulo adattivo come modulo secondario, questo viene aggiunto come pannello nel modulo principale. I dati di un modulo figlio associato sono memorizzati nella directory `data`principale della sezione `afBoundData` dello schema XML del modulo padre.
 
-Ad esempio, i clienti compilano un modulo di richiesta. I primi due campi del modulo sono nome e identità. XML è:
+Ad esempio, i clienti compilano un modulo di richiesta. I primi due campi del modulo sono nome e identità. Il codice XML è:
 
 ```xml
 <afData>
@@ -54,7 +55,7 @@ Ad esempio, i clienti compilano un modulo di richiesta. I primi due campi del mo
 </afData>
 ```
 
-Nell&#39;applicazione è possibile aggiungere un altro modulo che consenta ai clienti di compilare l&#39;indirizzo dell&#39;ufficio. La radice dello schema del modulo secondario è `officeAddress`. Applicare `bindref` `/application/officeAddress` o `/officeAddress`. Se `bindref`non viene fornito, il modulo secondario viene aggiunto come sottostruttura `officeAddress`. Vedere l&#39;XML del modulo seguente:
+Nell’applicazione è aggiunto un altro modulo che consente ai clienti di compilare il proprio indirizzo dell’ufficio. La radice dello schema del modulo figlio è `officeAddress`. Applica `bindref` `/application/officeAddress` o `/officeAddress`. Se `bindref`non viene fornito, il modulo figlio viene aggiunto come sottoalbero `officeAddress`. Vedere l&#39;XML del modulo seguente:
 
 ```xml
 <afData>
@@ -74,7 +75,7 @@ Nell&#39;applicazione è possibile aggiungere un altro modulo che consenta ai cl
 </afData>
 ```
 
-Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indirizzo della casa, applicare l&#39;aspetto `bindref` `/application/houseAddress or /houseAddress.`XML:
+Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indirizzo della casa, applicare `bindref` `/application/houseAddress or /houseAddress.`L&#39;XML è simile al seguente:
 
 ```xml
 <afData>
@@ -98,9 +99,9 @@ Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indiriz
 </afData>
 ```
 
-Se si desidera mantenere lo stesso nome della radice dello schema ( `Address`in questo esempio), utilizzare bindrefs indicizzati.
+Se desideri mantenere lo stesso nome della radice secondaria della directory principale dello schema ( `Address`in questo esempio), utilizza i binding indicizzati.
 
-Ad esempio, applicare i bindrefs `/application/address[1]` o `/address[1]` e `/application/address[2]` o `/address[2]`. Il codice XML del modulo è:
+Ad esempio, applica i binari `/application/address[1]` o `/address[1]` e `/application/address[2]` o `/address[2]`. XML del modulo:
 
 ```xml
 <afData>
@@ -124,24 +125,24 @@ Ad esempio, applicare i bindrefs `/application/address[1]` o `/address[1]` e `/a
 </afData>
 ```
 
-È possibile modificare la struttura secondaria predefinita del modulo/frammento adattivo utilizzando la proprietà `bindRef`. La proprietà `bindRef` consente di specificare il percorso che punta a una posizione nella struttura ad albero dello schema XML.
+È possibile modificare la struttura secondaria predefinita del modulo/frammento adattivo utilizzando la proprietà `bindRef` . La proprietà `bindRef` consente di specificare il percorso che punta a una posizione nella struttura ad albero dello schema XML.
 
-Se il modulo figlio non è associato, i relativi dati vengono memorizzati nella directory `data`principale della sezione `afUnboundData` dello schema XML del modulo padre.
+Se il modulo figlio non è associato, i relativi dati vengono memorizzati nella directory principale `data`della sezione `afUnboundData` dello schema XML del modulo padre.
 
-È possibile aggiungere più volte un modulo adattivo come modulo secondario. Assicurarsi che la `bindRef` sia modificata correttamente in modo che ogni istanza utilizzata del modulo adattivo punti a un sottoprincipale diverso sotto la radice dei dati.
+È possibile aggiungere più volte un modulo adattivo come modulo secondario. Assicurati che la `bindRef` sia modificata correttamente in modo che ogni istanza utilizzata del modulo adattivo punti a una sottoradice diversa sotto la radice dati.
 
 >[!NOTE]
 >
->Se diversi moduli/frammenti sono mappati alla stessa subroot, i dati vengono sovrascritti.
+>Se diversi moduli/frammenti sono mappati sulla stessa radice secondaria, i dati vengono sovrascritti.
 
-## Aggiunta di un modulo adattivo come modulo secondario tramite il browser delle risorse {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
+## Aggiunta di un modulo adattivo come modulo figlio tramite il browser Risorse {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
 
-Per aggiungere un modulo adattivo come modulo secondario mediante il browser delle risorse, effettuate le seguenti operazioni.
+Esegui le seguenti operazioni per aggiungere un modulo adattivo come modulo figlio utilizzando il browser risorse.
 
 1. Aprire il modulo principale in modalità di modifica.
-1. Nella barra laterale, fate clic su **Risorse** ![assets-browser](assets/assets-browser.png). In Risorse, selezionate **Modulo adattivo** dall&#39;elenco a discesa.
-   [ ![Selezione del modulo adattivo in Risorse](assets/asset.png)](assets/asset-1.png)
+1. Nella barra laterale, fai clic su **Risorse** ![risorse-browser](assets/assets-browser.png). In Risorse, seleziona **Modulo adattivo** dal menu a discesa.
+   [ ![Selezione del modulo adattivo in Assets](assets/asset.png)](assets/asset-1.png)
 
-1. Trascinare il modulo adattivo che si desidera aggiungere come modulo secondario.
-   [ ![Trascinare il modulo adattivo nel ](assets/drag-drop.png)](assets/drag-drop-1.png)sitoIl modulo adattivo rilasciato viene aggiunto come modulo secondario.
+1. Trascina il modulo adattivo da aggiungere come modulo figlio.
+   [ ![Trascina il modulo adattivo nel ](assets/drag-drop.png)](assets/drag-drop-1.png)sitoIl modulo adattivo rilasciato viene aggiunto come modulo secondario.
 
