@@ -1,44 +1,45 @@
 ---
-title: Avvio rapido API Java del servizio credenziali (SOAP)
-seo-title: Avvio rapido API Java del servizio credenziali (SOAP)
-description: Utilizzate l'API Java del servizio credenziali per importare ed eliminare le credenziali.
-seo-description: Utilizzate l'API Java del servizio credenziali per importare ed eliminare le credenziali.
+title: QuickStart(SOAP) API Java per servizi creativi
+seo-title: QuickStart(SOAP) API Java per servizi creativi
+description: Utilizza l’API Java del servizio credenziali per importare ed eliminare le credenziali.
+seo-description: Utilizza l’API Java del servizio credenziali per importare ed eliminare le credenziali.
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 
-# Avvio rapido API Java del servizio credenziali (SOAP) {#credential-service-java-api-quickstart-soap}
+# Guida rapida a Java API per servizi credenziali (SOAP) {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) è disponibile per il servizio Credential.
+Java API Quick Start(SOAP) è disponibile per il servizio Credenziali.
 
-[Avvio rapido (modalità SOAP): Importazione di credenziali tramite l&#39;API Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Avvio rapido (modalità SOAP): Importazione di credenziali tramite l’API Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l&#39;API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l’API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sulla distribuzione di FormsServer su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su FormsServer distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >Non è possibile eseguire operazioni del servizio Credenziali utilizzando i servizi Web.
 
-## Avvio rapido (modalità SOAP): Importazione di credenziali tramite l&#39;API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Avvio rapido (modalità SOAP): Importazione di credenziali tramite l’API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (Vedere [Importazione di credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (Vedere [Importazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 
@@ -139,7 +140,7 @@ Nell&#39;esempio di codice seguente viene importata una credenziale basata su un
 
 ## Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l&#39;API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore alias *secure*. (Vedere [Eliminazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un valore alias *secure*. (Vedere [Eliminazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 
