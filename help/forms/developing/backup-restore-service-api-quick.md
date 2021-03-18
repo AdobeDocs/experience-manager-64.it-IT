@@ -1,40 +1,41 @@
 ---
 title: Avvio di APIQuick del servizio di backup e ripristino
 seo-title: Avvio di APIQuick del servizio di backup e ripristino
-description: Utilizzate l'API del servizio di backup e ripristino per accedere e uscire dalla modalità di backup tramite Java API Quick Start.
-seo-description: Utilizzate l'API del servizio di backup e ripristino per accedere e uscire dalla modalità di backup tramite Java API Quick Start.
+description: Utilizza l'API del servizio Backup e ripristino per accedere alla modalità di backup e uscire dalla modalità di backup utilizzando la Guida rapida dell'API Java.
+seo-description: Utilizza l'API del servizio Backup e ripristino per accedere alla modalità di backup e uscire dalla modalità di backup utilizzando la Guida rapida dell'API Java.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 
-# Avvio rapido dell&#39;API del servizio di backup e ripristino {#backup-and-restore-service-apiquick-starts}
+# Avvio rapido API del servizio di backup e ripristino {#backup-and-restore-service-apiquick-starts}
 
-Java API Quick Start(SOAP) è disponibile per l&#39;API del servizio di backup e ripristino.
+Java API Quick Start (SOAP) è disponibile per l’API del servizio di backup e ripristino.
 
-[Avvio rapido: Accesso alla modalità di backup tramite Java API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Avvio rapido: Accesso alla modalità di backup tramite l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Avvio rapido: Uscire dalla modalità di backup mediante l&#39;API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Avvio rapido: Uscita dalla modalità di backup tramite l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Accesso alla modalità di backup mediante l&#39;API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Avvio rapido (modalità SOAP): Entrare in modalità di backup utilizzando l&#39;API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità di backup con un&#39;etichetta univoca per due ore. Dopo la scadenza del tempo di backup o se la modalità di backup viene esplicitamente chiusa, il server moduli ritorna alla rimozione dei file dall&#39;archivio documenti globale. (Vedere [Accesso alla modalità di backup nel server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+Il seguente esempio di codice Java entra in modalità di backup con un&#39;etichetta univoca per due ore. Dopo la scadenza del tempo di backup o se la modalità di backup viene esplicitamente chiusa, il server dei moduli ritorna alla rimozione dei file dall&#39;archiviazione globale dei documenti. (Vedere [Accesso alla modalità di backup sul server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```as3
  /* 
@@ -148,9 +149,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità
  
 ```
 
-## Avvio rapido (modalità SOAP): Uscire dalla modalità di backup utilizzando l&#39;API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Avvio rapido (modalità SOAP): Uscita dalla modalità di backup utilizzando l&#39;API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene indicato che un server Forms lascia la modalità di backup e ritorna alla rimozione dei file dall&#39;Archiviazione documenti globale. (Vedere [Uscita dalla modalità di backup sul server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+Il seguente esempio di codice Java causa esplicitamente a un server Forms di uscire dalla modalità di backup e tornare alla rimozione dei file da Global Document Storage. (Vedere [Uscita dalla modalità di backup sul server dei moduli](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```as3
  /* 
