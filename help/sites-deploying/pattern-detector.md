@@ -1,61 +1,62 @@
 ---
-title: Valutazione della complessità dell'aggiornamento con il rilevamento dei pattern
-seo-title: Valutazione della complessità dell'aggiornamento con il rilevamento dei pattern
-description: Scopri come utilizzare il Rilevatore di pattern per valutare la complessità dell'aggiornamento.
-seo-description: Scopri come utilizzare il Rilevatore di pattern per valutare la complessità dell'aggiornamento.
+title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+seo-title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
+seo-description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: Aggiornamento
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 1%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
 
-# Valutazione della complessità dell&#39;aggiornamento con il rilevatore di pattern{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Valutazione della complessità dell&#39;aggiornamento con il rilevatore pattern{#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
 ## Panoramica {#overview}
 
-Questa funzione consente di controllare AEM istanze esistenti per verificarne la aggiornabilità rilevando i pattern in uso che:
+Questa funzione consente di controllare le istanze di AEM esistenti per la loro aggiornabilità rilevando i pattern utilizzati che:
 
-1. Violare determinate regole e vengono eseguite in aree che saranno interessate o sovrascritte dall&#39;aggiornamento
-1. Utilizzate una funzionalità AEM 6.x o un&#39;API non compatibile con le versioni precedenti di AEM 6.4 e che può interrompersi dopo l&#39;aggiornamento.
+1. Violano determinate regole e vengono eseguite in aree che saranno influenzate o sovrascritte dall&#39;aggiornamento
+1. Utilizza una funzionalità AEM 6.x o un&#39;API che non è compatibile con le versioni precedenti in AEM 6.4 e può potenzialmente interrompersi dopo l&#39;aggiornamento.
 
-Ciò potrebbe servire come valutazione dello sforzo di sviluppo che comporta l&#39;aggiornamento al AEM 6.4.
+Ciò potrebbe servire da valutazione dello sforzo di sviluppo che comporta l&#39;aggiornamento al AEM 6.4.
 
 ## Configurazione {#how-to-set-up}
 
-Il rilevamento dei pattern viene rilasciato separatamente come [un pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM sorgente da 6.1 a 6.5 per l&#39;AEM di destinazione 6.5. Può essere installato utilizzando la [Gestione pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM di origine dalla versione 6.1 alla versione 6.5 per il targeting AEM aggiornamento 6.5. Può essere installato utilizzando il [Package Manager](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Guida all’uso {#how-to-use}
 
 >[!NOTE]
 >
->Il rilevamento dei pattern può essere eseguito in qualsiasi ambiente, comprese le istanze di sviluppo locale. Tuttavia, al fine di:
+>Il rilevatore pattern può essere eseguito in qualsiasi ambiente, incluse le istanze di sviluppo locali. Tuttavia, al fine di:
 >
->* aumentare la velocità di rilevamento
->* evitare rallentamenti in casi business critical\
-   >allo stesso tempo si consiglia di eseguire **in ambienti di pre-produzione** che siano il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
+>* aumentare il tasso di rilevamento
+>* evitare rallentamenti nelle istanze business critical\
+   >allo stesso tempo, si consiglia di eseguirlo **negli ambienti di staging** che sono il più vicini possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
 
 
-È possibile utilizzare diversi metodi per controllare l&#39;output di Rilevamento pattern:
+È possibile utilizzare diversi metodi per controllare l’output del rilevatore pattern:
 
-* **Tramite la console di Felix Inventory:**
+* **Tramite la console Inventario Felix:**
 
-1. Andate alla console Web AEM sfogliando: https://<i></i>serveraddress:serverport/system/console/configMgr
-1. Selezionare **Stato - Rilevamento pattern** come illustrato nell&#39;immagine seguente:
+1. Passa alla Console Web AEM sfogliando: https://<i></i>serveraddress:server/system/console/configMgr
+1. Seleziona **Stato - Rilevatore pattern** come mostrato nell’immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Tramite un&#39;interfaccia JSON reattiva basata su testo o normale**
+* **Tramite un’interfaccia JSON reattiva basata su testo o normale**
 
-* **Tramite un&#39;interfaccia** di linee JSON reattiva, che genera un documento JSON separato in ogni riga.
+* **Tramite un’interfaccia** di linee JSON reattiva, che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
 
@@ -63,14 +64,14 @@ Entrambi i metodi sono descritti di seguito:
 
 L&#39;interfaccia reattiva consente l&#39;elaborazione della segnalazione di violazione non appena viene rilevato un sospetto.
 
-L’output è attualmente disponibile in 2 URL:
+L’output è attualmente disponibile sotto 2 URL:
 
-1. Interfaccia testo semplice
+1. Interfaccia di testo normale
 1. Interfaccia JSON
 
 ## Gestione dell&#39;interfaccia di testo normale {#handling-the-plain-text-interface}
 
-Le informazioni nell&#39;output sono formattate come una serie di voci dell&#39;evento. Esistono due canali: uno per pubblicare le violazioni e l’altro per pubblicare i progressi correnti.
+Le informazioni nell&#39;output vengono formattate come una serie di voci evento. Esistono due canali: uno per la pubblicazione delle violazioni e l’altro per la pubblicazione dell’avanzamento corrente.
 
 Possono essere ottenuti utilizzando i seguenti comandi:
 
@@ -84,13 +85,13 @@ L&#39;output sarà simile al seguente:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-L&#39;avanzamento può essere filtrato utilizzando il comando `grep`:
+L&#39;avanzamento può essere filtrato utilizzando il comando `grep` :
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
 ```
 
-che genera il seguente output:
+che produce il seguente output:
 
 ```
 2018-02-13T14:19:26.909+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.4), analysed=45780/16 MB items, found=0 suspicions so far in period=PT5.005S (throughput=34667 items/sec)
@@ -98,9 +99,9 @@ che genera il seguente output:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestione dell&#39;interfaccia JSON {#handling-the-json-interface}
+## Gestione dell’interfaccia JSON {#handling-the-json-interface}
 
-Allo stesso modo, JSON può essere elaborato utilizzando [jq tool](https://stedolan.github.io/jq/) non appena viene pubblicato.
+Allo stesso modo, JSON può essere elaborato utilizzando lo strumento [jq](https://stedolan.github.io/jq/) non appena viene pubblicato.
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -125,7 +126,7 @@ Con l&#39;uscita:
 }
 ```
 
-L&#39;avanzamento viene segnalato ogni 5 secondi e può essere ottenuto escludendo altri messaggi oltre a quelli contrassegnati come sospetti:
+I progressi vengono segnalati ogni 5 secondi e possono essere recuperati escludendo messaggi diversi da quelli contrassegnati come sospetti:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
@@ -210,15 +211,15 @@ Con l&#39;uscita:
 
 >[!NOTE]
 >
->L&#39;approccio consigliato consiste nel salvare l&#39;intero output dall&#39;archivio e quindi elaborarlo tramite `jq` o `grep` per filtrare il tipo di informazioni.
+>L&#39;approccio consigliato è quello di salvare l&#39;intero output da curl nel file e quindi elaborarlo tramite `jq` o `grep` per filtrare il tipo di informazioni.
 
 ## Ambito di rilevamento {#scope}
 
-Al momento il rilevamento dei pattern consente di controllare:
+Attualmente il rilevatore pattern consente di controllare:
 
-* Mancata corrispondenza tra esportazioni e importazioni di bundle OSGi
-* Sovrapposizioni per tipi di risorse Sling e super-tipi (con sovrapposizioni di contenuti per percorsi di ricerca)
-* definizioni di indici di quercia (compatibilità)
-* Pacchetti VLT (overuse)
-* rep:compatibilità dei nodi utente (nel contesto della configurazione OAuth)
+* Esportazioni e importazioni dei bundle OSGi non corrispondenti
+* Sovrapusi per tipi di risorse Sling e super type (con sovrapposizioni di contenuto del percorso di ricerca)
+* definizioni degli indici Oak (compatibilità)
+* Pacchetti VLT (utilizzo eccessivo)
+* rep:Compatibilità dei nodi utente (nel contesto della configurazione OAuth)
 
