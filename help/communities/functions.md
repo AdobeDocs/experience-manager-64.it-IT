@@ -1,18 +1,19 @@
 ---
 title: Funzioni per community
 seo-title: Funzioni per community
-description: Scoprite come accedere alla console Funzioni community
-seo-description: Scoprite come accedere alla console Funzioni community
+description: Scopri come accedere alla console Funzioni della community
+seo-description: Scopri come accedere alla console Funzioni della community
 uuid: 5cce05f5-1dd7-496d-94c2-8fccc0177d13
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2543'
 ht-degree: 3%
 
 ---
@@ -20,35 +21,35 @@ ht-degree: 3%
 
 # Funzioni per community {#community-functions}
 
-Il tipo di funzionalità previste da un&#39;esperienza di community è noto. Le funzioni della community Internet sono disponibili come funzioni della community Internet. Essenzialmente, si tratta di una o più pagine precollegate per implementare una funzione community che richiede più di un semplice aggiunta di un componente a una pagina in modalità di creazione. Si tratta dei componenti di base utilizzati per definire la struttura di un [modello di sito community](sites.md) da cui vengono creati i siti community [creati](sites-console.md).
+Il tipo di funzionalità previsto da un’esperienza community è noto. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine precablate per implementare una funzione community che richiede più che semplicemente l’aggiunta di un componente a una pagina in modalità di authoring. Si tratta dei blocchi costitutivi utilizzati per definire la struttura di un [modello di sito community](sites.md) da cui vengono [creati i siti community](sites-console.md).
 
 Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità di authoring standard [AEM](../../help/sites-authoring/editing-content.md).
 
-Una serie di funzioni della community sono immediatamente disponibili, come mostrato nella console delle funzioni della community. Ulteriori funzioni della community verranno fornite nelle release future e sarà possibile creare funzioni personalizzate.
+Una serie di funzioni della community sono immediatamente disponibili, come mostrato nella console delle funzioni della community. Nelle versioni future verranno fornite più funzioni della community e sarà possibile creare anche funzioni personalizzate.
 
 >[!NOTE]
 >
->Le console per la creazione di [siti community](sites-console.md), [modelli di siti community](sites.md), [modelli di gruppi community](tools-groups.md) e [funzioni community](functions.md) sono utilizzabili solo nell&#39;ambiente di authoring.
+>Le console per la creazione di [siti della community](sites-console.md), [modelli di sito della community](sites.md), [modelli di gruppo della community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
 ## Console funzioni community {#community-functions-console}
 
-Nell’ambiente di authoring, per accedere alla console delle funzioni per community
+Nell’ambiente di authoring, è possibile accedere alla console funzioni della community
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Funzioni community]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Funzioni della community]**
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
-## Funzioni pre-costruite {#pre-built-functions}
+## Funzioni predefinite {#pre-built-functions}
 
-Segue una breve descrizione delle funzioni fornite con  AEM Communities. Ogni funzione è composta da una o più pagine AEM contenenti componenti Community collegati tra loro in una funzione facilmente incorporata in un [modello di sito community](sites.md).
+Di seguito è riportata una breve descrizione delle funzioni fornite con AEM Communities. Ciascuna funzione è composta da una o più pagine AEM contenenti componenti di Communities collegati tra loro in una funzione facilmente incorporata in un [modello di sito community](sites.md).
 
-Un modello di sito community fornisce la struttura di un sito community, inclusi login, profili utente, notifiche, messaggi, menu del sito, ricerca, temi e funzioni di branding.
+Un modello di sito community fornisce la struttura di un sito community con login, profili utente, notifiche, messaggi, menu del sito, ricerca, temi e funzioni di branding.
 
 ### Impostazioni titolo e URL {#title-and-url-settings}
 
-**** Titolo e  **** URL sono proprietà comuni a tutte le funzioni della community.
+**** Titleand  **** URLsono proprietà comuni a tutte le funzioni della community.
 
-Quando una funzione community viene aggiunta a un modello di sito community o quando [modifica](sites-console.md#modifying-site-properties) la struttura di un sito community, si apre la finestra di dialogo della funzione in modo che sia possibile configurare il Titolo e l&#39;URL.
+Quando una funzione community viene aggiunta a un modello di sito community o quando [modifica](sites-console.md#modifying-site-properties) la struttura di un sito community, viene visualizzata la finestra di dialogo della funzione in modo che sia possibile configurare il Titolo e l’URL.
 
 #### Dettagli funzione di configurazione {#configuration-function-details}
 
@@ -56,180 +57,180 @@ Quando una funzione community viene aggiunta a un modello di sito community o qu
 
 * **[!UICONTROL Titolo]**
 (
-*richiesto*) Testo visualizzato nel menu delle funzioni per il sito
+*obbligatorio*) Testo visualizzato nel menu delle caratteristiche del sito
 
 * **[!UICONTROL URL]**
-(*obbligatorio*) Nome utilizzato per generare l’URI. Il nome deve essere conforme alle [convenzioni di denominazione](../../help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+ (*obbligatorio*) Il nome utilizzato per generare l’URI. Il nome deve essere conforme alle [convenzioni di denominazione](../../help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
 Ad esempio, utilizzando il sito creato seguendo l&#39;esercitazione [Guida introduttiva](getting-started.md), se
 
 * Titolo = Pagina Web
 * URL = page
 
-Quindi l’URL della pagina è http://local_host:4503/content/sites/engage/en/page.html e il collegamento del menu per la pagina viene visualizzato come:
+L’URL della pagina è quindi http://local_host:4503/content/sites/engage/en/page.html e il collegamento del menu per la pagina viene visualizzato come:
 
 ![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Funzione Flusso attività {#activity-stream-function}
 
-La funzione del flusso di attività è una pagina con un [componente Flussi di attività](activities.md) con tutte le viste selezionate (tutte le attività, le attività dell&#39;utente e così via). Vedere anche [Activity Stream Essentials](essentials-activities.md) per gli sviluppatori.
+La funzione flusso di attività è una pagina con un [componente Flussi di attività](activities.md) con tutte le visualizzazioni selezionate (tutte le attività, le attività dell&#39;utente e seguenti). Per gli sviluppatori, consulta anche [Activity Stream Essentials](essentials-activities.md) .
 
-Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
+Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 #### Dettagli funzione di configurazione {#configuration-function-details-1}
 
 ![chlimage_1-382](assets/chlimage_1-382.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Mostra]**
-visualizzazione &quot;Attività personali&quot;Se questa opzione è selezionata, la pagina Attività includerà una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
+visualizzazione &quot;Attività personali&quot; Se questa opzione è selezionata, la pagina Attività includerà una scheda che filtra le attività in base a quelle generate all’interno della community dal membro corrente. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Mostra]**
-visualizzazione &quot;Tutte le attività&quot;Se questa opzione è selezionata, la pagina Attività includerà una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
+visualizzazione &quot;Tutte le attività&quot; Se questa opzione è selezionata, la pagina Attività includerà una scheda che include tutte le attività generate all’interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Mostra]**
-visualizzazione &quot;Feed notizie&quot;: se questa opzione è selezionata, la pagina Attività includerà una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
+visualizzazione &quot;Feed notizie&quot; Se questa opzione è selezionata, la pagina Attività includerà una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
 
 ### Funzione Assegnazioni {#assignments-function}
 
-La funzione di assegnazione è la funzione di base che definisce un [sito community per l&#39;abilitazione](overview.md#enablement-community). Consente di assegnare le risorse di abilitazione ai membri della community. Vedere anche [Assignments Essentials](essentials-assignments.md) per gli sviluppatori.
+La funzione assegnazioni è la funzione di base che definisce un [sito community per l&#39;abilitazione](overview.md#enablement-community). Consente l&#39;assegnazione di risorse di abilitazione ai membri della community. Per gli sviluppatori, consulta anche [Assegnazioni Essentials](essentials-assignments.md) .
 
-Questa funzione è disponibile come funzione del componente aggiuntivo [enablement](enablement.md). Il componente aggiuntivo di abilitazione richiede licenze aggiuntive da utilizzare in un ambiente di produzione.
+Questa funzione è disponibile come funzione del componente aggiuntivo [enablement](enablement.md). Il componente aggiuntivo per l’abilitazione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
 
-Quando viene aggiunta a un modello, l&#39;unica configurazione è per le [Impostazioni titolo e URL](#title-and-url-settings).
+Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Blog {#blog-function}
 
-La funzione blog è una pagina con un [componente Blog](blog-feature.md) configurato per l&#39;assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per l&#39;automodifica, il voto e la moderazione. Vedere anche [Blog Essentials](blog-developer-basics.md) per gli sviluppatori.
+La funzione blog è una pagina con un [componente Blog](blog-feature.md) configurato per l&#39;assegnazione di tag, il caricamento di file, il seguito, i membri per la modifica automatica, il voto e la moderazione. Per gli sviluppatori, consulta anche [Blog Essentials](blog-developer-basics.md) .
 
-Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
+Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 ![chlimage_1-383](assets/chlimage_1-383.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il blog consente solo ai membri privilegiati di creare articoli consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
+membri privilegiatiSe questa opzione è selezionata, il blog consente solo ai membri privilegiati di creare articoli consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se non è selezionato, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
 caricamenti fileSe questa opzione è selezionata, il blog includerà la possibilità per i membri di caricare i file. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-risposte threadSe questa opzione non è selezionata, il blog consentirà di rispondere (commenti) a un articolo, ma non sarà possibile rispondere ai commenti. Il valore predefinito è selezionato.
+risposte threadSe non è selezionato, il blog consentirà le risposte (commenti) a un articolo, ma le risposte ai commenti non sono consentite. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come  [contenuto](featured.md) contenuti contenuti contenuti. Il valore predefinito è selezionato.
+contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
 ### Funzione Calendario {#calendar-function}
 
-La funzione Calendario è una pagina con un [componente Calendario](calendar.md) configurato per consentire l&#39;assegnazione di tag. Vedere anche [Calendar Essentials](calendar-basics-for-developers.md) per gli sviluppatori.
+La funzione Calendario è una pagina con un [componente Calendario](calendar.md) configurato per consentire l’assegnazione di tag. Per gli sviluppatori, consulta anche [Calendar Essentials](calendar-basics-for-developers.md) .
 
-Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
+Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 ![chlimage_1-384](assets/chlimage_1-384.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Consenti]**
-blocco: se questa opzione è selezionata, il forum consente di fissare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
+bloccoSe questa opzione è selezionata, il forum consente di associare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il blog consente solo ai membri privilegiati di creare articoli consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
+membri privilegiatiSe questa opzione è selezionata, il blog consente solo ai membri privilegiati di creare articoli consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se non è selezionato, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
 caricamenti fileSe questa opzione è selezionata, il blog includerà la possibilità per i membri di caricare i file. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-risposte threadSe questa opzione non è selezionata, il blog consentirà di rispondere (commenti) a un articolo, ma non sarà possibile rispondere ai commenti. Il valore predefinito è selezionato.
+risposte threadSe non è selezionato, il blog consentirà le risposte (commenti) a un articolo, ma le risposte ai commenti non sono consentite. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come  [contenuto](featured.md) contenuti contenuti contenuti. Il valore predefinito è selezionato.
+contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
 ### Funzione Catalogo {#catalog-function}
 
-La funzione di catalogo consente ai membri della [community di abilitazione](overview.md#enablement-community) di sfogliare le risorse di abilitazione che non sono loro assegnate. Per gli sviluppatori, consultate [Risorse per l&#39;abilitazione dei tag](tag-resources.md) e [Catalog Essentials](catalog-developer-essentials.md).
+La funzione di catalogo consente ai membri della [community di abilitazione](overview.md#enablement-community) di sfogliare le risorse di abilitazione che non sono loro assegnate. Per gli sviluppatori, consulta [Assegnazione tag alle risorse di abilitazione](tag-resources.md) e [Nozioni di base sul catalogo](catalog-developer-essentials.md) .
 
-Tutte le risorse di abilitazione e i percorsi di apprendimento per il sito community verranno visualizzati in tutti i cataloghi se la loro proprietà, ` [Show in Catalog](resources.md)`, è impostata su true. Per includere esplicitamente le risorse e i percorsi di apprendimento, è necessario applicare un [pre-filtro](catalog-developer-essentials.md#pre-filters) al catalogo.
+Tutte le risorse di abilitazione e i percorsi di apprendimento per il sito community verranno visualizzati in tutti i cataloghi se la loro proprietà, ` [Show in Catalog](resources.md)`, è impostata su true. Per includere in modo esplicito le risorse e i percorsi di apprendimento, è necessario applicare un [pre-filtro](catalog-developer-essentials.md#pre-filters) al catalogo.
 
-Quando viene aggiunta a un modello, la configurazione consente di specificare i nomi dei tag utilizzati per configurare il filtro dei tag presentato ai visitatori del sito:
+Quando viene aggiunta a un modello, la configurazione consente di specificare i namespace dei tag utilizzati per configurare il filtro tag presentato ai visitatori del sito:
 
 ![catalogfunc](assets/catalogfunc.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Seleziona tutti i namespace]**
 
    * Gli spazi dei nomi dei tag selezionati definiscono quali tag possono essere selezionati dai visitatori per filtrare l’elenco delle risorse di abilitazione elencate nel catalogo.
-   * Se questa opzione è attivata, sono disponibili tutti gli spazi dei nomi dei tag consentiti per il sito della community.
-   * Se questa opzione è deselezionata, è possibile selezionare uno o più spazi di nomi consentiti per il sito community.
+   * Se questa opzione è selezionata, sono disponibili tutti i namespace consentiti per il sito community.
+   * Se deselezionata, è possibile selezionare uno o più namespace consentiti per il sito community.
    * Il valore predefinito è selezionato.
 
-### Funzione contenuto in evidenza {#featured-content-function}
+### Funzione di contenuto in primo piano {#featured-content-function}
 
-La funzione di contenuto disponibile è una pagina con un [componente Contenuto in evidenza](featured.md) configurato per consentire l&#39;aggiunta e l&#39;eliminazione di commenti.
+La funzione di contenuto in primo piano è una pagina con un [componente Contenuto in primo piano](featured.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
-La capacità di visualizzare il contenuto può essere consentita o disabilitata per componente (vedere [Funzione blog](#blog-function), [Funzione calendario](#calendar-function), [Funzione forum](#forum-function), [Funzione ideazione](#ideation-function) e [Funzione QnA](#qna-function)).
+La possibilità di utilizzare il contenuto può essere consentita o disabilitata per componente (consulta [Funzione blog](#blog-function), [Funzione calendario](#calendar-function), [Funzione forum](#forum-function), [Funzione ideazione](#ideation-function) e [Funzione QnA](#qna-function)).
 
-Quando viene aggiunta a un modello, l&#39;unica configurazione è per le [Impostazioni titolo e URL](#title-and-url-settings).
+Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Libreria file {#file-library-function}
 
-La funzione di libreria dei file è una pagina con un [componente Libreria file](file-library.md) configurato per consentire l&#39;aggiunta e l&#39;eliminazione di commenti.
+La funzione libreria file è una pagina con un [componente Libreria file](file-library.md) configurato per consentire l&#39;aggiunta e l&#39;eliminazione di commenti.
 
-Quando viene aggiunta a un modello, l&#39;unica configurazione è per le [Impostazioni titolo e URL](#title-and-url-settings).
+Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Forum {#forum-function}
 
-La funzione forum è una pagina con un [componente Forum](forum.md) configurato per l&#39;assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per l&#39;automodifica, il voto e la moderazione.
+La funzione forum è una pagina con un [componente Forum](forum.md) configurato per l’assegnazione di tag, il caricamento di file, i seguenti membri per la modifica automatica, il voto e la moderazione.
 
-Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
+Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 #### Dettagli funzione di configurazione {#configuration-function-details-2}
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Consenti]**
-blocco: se questa opzione è selezionata, il forum consente di fissare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
+bloccoSe questa opzione è selezionata, il forum consente di associare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono essere inseriti. Il valore predefinito è deselezionato.
+membri con privilegiSe questa opzione è selezionata, il forum consente ai membri con privilegi di pubblicare argomenti solo consentendo la selezione di un gruppo [ di membri con ](users.md#privileged-members-group)privilegi. Se non è selezionato, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
 caricamenti fileSe questa opzione è selezionata, il forum includerà la possibilità per i membri di caricare i file. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-risposte threadSe questa opzione non è selezionata, il forum consente di inserire commenti su un argomento, ma le risposte a tali commenti non sono consentite. Il valore predefinito è selezionato.
+risposte threadSe non è selezionato, il forum consente di inserire commenti su un argomento, ma le risposte a tali commenti non sono consentite. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come  [contenuto](featured.md) contenuti contenuti contenuti. Il valore predefinito è selezionato.
+contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
 ### Funzione dei gruppi {#groups-function}
 
 >[!CAUTION]
 >
->La funzione dei gruppi deve *not* essere la *prima e la sola funzione* nella struttura di un sito o in un modello di sito community.
+>La funzione dei gruppi deve essere *not* la funzione *prima o la funzione unica* nella struttura di un sito o in un modello di sito community.
 >
->Qualsiasi altra funzione, come la funzione [page](#page-function), deve essere inclusa ed elencata per prima.
+>Qualsiasi altra funzione, come la [funzione pagina](#page-function), deve essere inclusa ed elencata per prima.
 
-La funzione Groups (Gruppi) consente ai membri della community di creare sub-community all&#39;interno del sito della community nell&#39;ambiente di pubblicazione.
+La funzione gruppi consente ai membri della community di creare sottocommunity all’interno del sito della community nell’ambiente di pubblicazione.
 
-A seconda delle [impostazioni](sites-console.md#groupmanagement) quando la funzione Groups è inclusa in un [modello di sito community](sites.md), i gruppi possono essere pubblici o privati e uno o più modelli di gruppo community possono essere configurati per fornire una scelta di modelli quando il gruppo community viene effettivamente creato (ad esempio dall&#39;ambiente di pubblicazione). Un [modello di gruppo community](tools-groups.md) specifica quali funzioni Community vengono create per le pagine del gruppo, ad esempio forum e calendari.
+A seconda delle [impostazioni](sites-console.md#groupmanagement) quando la funzione Groups è inclusa in un [modello di sito community](sites.md), i gruppi possono essere pubblici o privati e uno o più modelli di gruppo community possono essere configurati per fornire una scelta di modelli quando il gruppo community viene effettivamente creato (ad esempio dall&#39;ambiente di pubblicazione). Un [modello di gruppo community](tools-groups.md) specifica quali funzioni di Communities vengono create per le pagine del gruppo, ad esempio forum e calendari.
 
-Quando viene creato un gruppo di community, viene creato dinamicamente un gruppo membro per il nuovo gruppo a cui i membri possono essere assegnati o associati. Per ulteriori informazioni, vedere [Gestione di utenti e gruppi di utenti](users.md).
+Quando viene creato un gruppo di community, viene creato in modo dinamico un gruppo di membri per il nuovo gruppo, a cui è possibile assegnare o unire i membri. Per ulteriori informazioni, consulta [Gestione di utenti e gruppi di utenti](users.md).
 
-A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) Community, i gruppi community vengono creati nell&#39;ambiente di authoring utilizzando la [console Gruppi di siti community](groups.md) e possono essere creati nell&#39;ambiente di pubblicazione se attivato.
+A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) di Communities, i gruppi di community vengono creati nell&#39;ambiente di authoring utilizzando la [console Gruppi di siti di Communities](groups.md) e possono essere creati nell&#39;ambiente di pubblicazione quando abilitato.
 
-Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
+Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 ![chlimage_1-386](assets/chlimage_1-386.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
-* **[!UICONTROL Selezionate]**
-Modelli per gruppoUn menu a discesa che consente di selezionare uno o più modelli di gruppo abilitati da cui può scegliere il futuro creatore di un nuovo gruppo di community (nell’ambiente di pubblicazione).
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
+* **[!UICONTROL Seleziona]**
+Modelli di gruppoMenu a discesa che consente di selezionare uno o più modelli di gruppo abilitati da cui scegliere il futuro creatore di un nuovo gruppo di community (nell’ambiente di pubblicazione).
 
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un gruppo [ di protezione dei membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono essere inseriti. Il valore predefinito è deselezionato.
+membri con privilegiSe questa opzione è selezionata, il forum consente ai membri con privilegi di pubblicare argomenti solo consentendo la selezione di un gruppo [ di sicurezza dei membri con ](users.md#privileged-members-group)privilegi. Se non è selezionato, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
-creazione pubblicazione: se questa opzione è selezionata, i membri della community autorizzati possono creare un gruppo nell’ambiente di pubblicazione. Se questa opzione è deselezionata, è possibile creare nuovi gruppi (sub-community) solo nell’ambiente di authoring dalla console Gruppi di siti community.
+creazione pubblicazioneSe questa opzione è selezionata, i membri della community autorizzati possono creare un gruppo nell&#39;ambiente di pubblicazione. Se questa opzione è deselezionata, i nuovi gruppi (sottocommunity) possono essere creati solo nell’ambiente di authoring dalla console Gruppi di siti di Communities.
 
    Il valore predefinito è `checked`.
 
@@ -237,82 +238,82 @@ creazione pubblicazione: se questa opzione è selezionata, i membri della commun
 
 La funzione di ideazione è una pagina con un [componente Ideazione](ideation-feature.md).
 
-Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
+Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo seguente, che specifica il Titolo e i nomi URL predefiniti, nonché le impostazioni di visualizzazione predefinite per il modello:
 
 ![chlimage_1-387](assets/chlimage_1-387.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un gruppo [ di protezione dei membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono essere inseriti. Il valore predefinito è deselezionato.
+membri con privilegiSe questa opzione è selezionata, il forum consente ai membri con privilegi di pubblicare argomenti solo consentendo la selezione di un gruppo [ di sicurezza dei membri con ](users.md#privileged-members-group)privilegi. Se non è selezionato, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
 caricamenti fileSe questa opzione è selezionata, l&#39;idea includerà la possibilità per i membri di caricare i file. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-risposte concatenateSe non è selezionata, l&#39;idea consentirà di rispondere (commenti) a un argomento, ma non sarà possibile rispondere ai commenti. Il valore predefinito è selezionato.
+risposte threadSe non è selezionato, l&#39;idea consentirà di rispondere (commenti) a un argomento, ma le risposte ai commenti non sono consentite. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come  [contenuto](featured.md) contenuti contenuti contenuti. Il valore predefinito è selezionato.
+contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
 ### Funzione Classifica {#leaderboard-function}
 
-La funzione della classifica è una pagina con un componente [Leaderboard](enabling-leaderboard.md).
+La funzione della classifica è una pagina con un [componente della classifica](enabling-leaderboard.md).
 
-**NOTA**: il componente Leaderboard richiederà un&#39;ulteriore configurazione  ** dopo la creazione di un sito community da un modello community che include la funzione Leaderboard. È necessario specificare le [regole](enabling-leaderboard.md#rules-tab) del componente Leaderboard, che dipendono dalla configurazione di [punteggio e simboli](implementing-scoring.md) per il sito community.
+**NOTA**: il componente Leaderboard dovrà essere ulteriormente configurato  ** dopo la creazione di un sito community da un modello community che include la funzione Leaderboard. Sarà necessario specificare le [regole](enabling-leaderboard.md#rules-tab) del componente Leaderboard, che dipendono dalla configurazione del [punteggio e dei badge](implementing-scoring.md) per il sito della community.
 
-Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
+Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo seguente, che specifica il Titolo e i nomi URL predefiniti, nonché le impostazioni di visualizzazione predefinite per il modello:
 
 ![chlimage_1-388](assets/chlimage_1-388.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Visualizza]**
-badge: se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone dei simboli.
+badgeSe questa opzione è selezionata, nella classifica è inclusa una colonna per le icone del badge.
 
    Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Visualizza]**
-nome badge: se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del contrassegno.
+nome badgeSe questa opzione è selezionata, nella classifica è inclusa una colonna relativa al nome del badge.
 
    Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Visualizza]**
-avatar: se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo del membro.
+avatarSe questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al suo collegamento nome al suo profilo membro.
 
    Il valore predefinito è deselezionato.
 
 ### Funzione Pagina {#page-function}
 
-La funzione page aggiunge una pagina vuota al sito della community che viene collegata alle funzioni del sito della community: login, menu, notifiche, messaggi, temi e branding. Il contenuto può essere aggiunto alla pagina utilizzando la [modalità standard di authoring AEM](../../help/sites-authoring/editing-content.md).
+La funzione page aggiunge al sito community una pagina vuota che è collegata alle funzioni del sito community: accesso, menu, notifiche, messaggistica, temi e branding. Il contenuto può essere aggiunto alla pagina utilizzando la [modalità di authoring AEM standard](../../help/sites-authoring/editing-content.md).
 
-Quando viene aggiunta a un modello, l&#39;unica configurazione è per le [Impostazioni titolo e URL](#title-and-url-settings).
+Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione D/R {#qna-function}
 
-La funzione QnA è una pagina con un componente [QnA](working-with-qna.md) configurato per l&#39;assegnazione di tag, il caricamento di file, i seguenti, i membri per l&#39;automodifica, il voto e la moderazione.
+La funzione QnA è una pagina con un componente [QnA](working-with-qna.md) configurato per l&#39;assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione.
 
-Quando viene aggiunta a un modello, la configurazione consente restrizioni ai membri privilegiati:
+Quando viene aggiunta a un modello, la configurazione consente restrizioni ai membri con privilegi:
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-* Vedere [Impostazioni titolo e URL](#title-and-url-settings)
+* Consulta [Impostazioni titolo e URL](#title-and-url-settings)
 * **[!UICONTROL Consenti]**
-blocco: se questa opzione è selezionata, il forum consente di fissare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
+bloccoSe questa opzione è selezionata, il forum consente di associare le risposte dell&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-membri privilegiatiSe questa opzione è selezionata, il forum QnA consente solo ai membri privilegiati di porre domande consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se questa opzione non è selezionata, tutti i membri della community possono essere inseriti. Il valore predefinito è deselezionato.
+membri privilegiatiSe questa opzione è selezionata, il forum QnA consente solo ai membri privilegiati di inviare domande consentendo la selezione di un gruppo [ di membri ](users.md#privileged-members-group)privilegiati. Se non è selezionato, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti]**
 caricamenti fileSe questa opzione è selezionata, il forum QnA includerà la possibilità per i membri di caricare i file. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-risposte filettateSe non è selezionata, il forum QnA consente di inserire commenti (risposte) a una domanda pubblicata, ma le risposte alle risposte non sono consentite. Il valore predefinito è selezionato.
+risposte threadSe non è selezionato, il forum QnA consente l&#39;inserimento di commenti (risposte) a una domanda pubblicata, ma le risposte alle risposte non sono consentite. Il valore predefinito è selezionato.
 
 * **[!UICONTROL Consenti]**
-contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può essere identificata come  [contenuto](featured.md) contenuti contenuti contenuti. Il valore predefinito è selezionato.
+contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
 ## Crea funzione community {#create-community-function}
 
-È possibile creare una funzione community selezionando l&#39;icona `Create Community Function` nella parte superiore della console Funzioni community. Possono essere create più funzioni basate sulla stessa Blueprint AEM e successivamente personalizzate in modo univoco aprendo la modalità di modifica dell’autore.
+Per creare una funzione community, seleziona l’icona `Create Community Function` situata nella parte superiore della console Funzioni community . È possibile creare più funzioni basate sullo stesso Blueprint AEM e quindi personalizzate in modo univoco aprendo in modalità di modifica dell’autore.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -320,16 +321,16 @@ contenuti contenuti contenutiSe questa opzione è selezionata, l’idea può ess
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-Nel pannello Nome funzione community, sono configurati un nome, una descrizione e se la funzione è abilitata o disabilitata:
+Nel pannello Nome funzione community sono configurati un nome, una descrizione e se la funzione è abilitata o disabilitata:
 
-* **[!UICONTROL Nome]**
-funzione community: nome della funzione utilizzata per la visualizzazione e l&#39;archiviazione
+* **[!UICONTROL Nome della funzione]**
+della communityNome della funzione utilizzata per la visualizzazione e l&#39;archiviazione
 
 * **[!UICONTROL Descrizione]**
-della funzione CommunityDescrizione della funzione per la visualizzazione
+della funzione della communityDescrizione della funzione per la visualizzazione
 
-* **[!UICONTROL Disabilitato/]**
-AbilitatoUn interruttore per controllare se la funzione è referente
+* **[!UICONTROL Interruttore Disabilitato/]**
+AbilitatoA che controlla se la funzione è referenziabile
 
 ### Blueprint AEM {#aem-blueprint}
 
@@ -337,9 +338,9 @@ AbilitatoUn interruttore per controllare se la funzione è referente
 
 Nel pannello `AEM Blueprint` è possibile selezionare il modello che è l&#39;implementazione sottostante della funzione community.
 
-La funzione community è un mini-sito composto da una o più pagine, preconnesso per l&#39;inclusione in un sito community che include login, profili utente, notifiche, messaggi, menu del sito, ricerca, temi e funzioni di branding. Una volta creata la funzione, è possibile [aprire la funzione](#open-community-function) in modalità di modifica dell&#39;autore e personalizzare le impostazioni della pagina e/o del componente.
+La funzione community è un mini sito composto da una o più pagine, preconnesso per l’inclusione in un sito community che include login, profili utente, notifiche, messaggistica, menu del sito, ricerca, temi e funzioni di branding. Una volta creata la funzione, è possibile [aprire la funzione](#open-community-function) in modalità di modifica dell&#39;autore e personalizzare le impostazioni della pagina e/o del componente.
 
-Poiché la funzione community è implementata come [live copy](../../help/sites-administering/msm.md#live-copies) di un [blueprint](../../help/sites-administering/msm-livecopy.md#creatingablueprint), è possibile eseguire il rollout delle modifiche apportate a una funzione che interessa tutte le pagine di siti community create dal [modello di sito community](sites.md) o dal modello di gruppo [community](tools-groups.md) che include la funzione. È inoltre possibile dissociare una pagina dal relativo blueprint padre per apportare modifiche a livello di pagina.
+Poiché la funzione community è implementata come [Live Copy](../../help/sites-administering/msm.md#live-copies) di un [blueprint](../../help/sites-administering/msm-livecopy.md#creatingablueprint), è possibile eseguire il rollout delle modifiche apportate a una funzione che interessa tutte le pagine del sito community create dal [modello di sito community](sites.md) o dal [modello di gruppo community](tools-groups.md) che include la funzione. È inoltre possibile dissociare una pagina dalla relativa blueprint principale per apportare modifiche a livello di pagina.
 
 Vedere anche [Multi Site Manager](../../help/sites-administering/msm.md).
 
@@ -347,26 +348,26 @@ Vedere anche [Multi Site Manager](../../help/sites-administering/msm.md).
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
-Nel pannello Miniature, è possibile caricare un&#39;immagine da visualizzare nella [console Funzioni community](#community-functions-console).
+Nel pannello Miniatura, è possibile caricare un&#39;immagine da visualizzare nella [console Funzioni della community](#community-functions-console).
 
 ## Apri funzione community {#open-community-function}
 
 ![chlimage_1-394](assets/chlimage_1-394.png)
 
-Selezionate l&#39;icona `Open Community Function` per passare alla modalità di modifica dell&#39;autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
+Seleziona l’ icona `Open Community Function` per accedere alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
 
 ### Configurazione dei componenti {#configuring-components}
 
-Una funzione community è implementata come Live Copy di una Blueprint AEM, i cui dettagli sono documentati in [Multi Site Manager](../../help/sites-administering/msm.md).
+Una funzione community viene implementata come Live Copy di una blueprint AEM, i cui dettagli sono documentati in [Multi Site Manager](../../help/sites-administering/msm.md).
 
-È possibile creare non solo contenuti di pagina, ma anche componenti.
+È possibile non solo creare il contenuto della pagina, ma anche configurare i componenti.
 
-Se si configura un componente in una pagina di un sito community creato, potrebbe essere necessario annullare l&#39;ereditarietà [al fine di configurare il componente. ](../../help/sites-administering/msm-livecopy.md#changing-live-copy-content) L&#39;ereditarietà deve essere ristabilita al termine della configurazione.
+Se si configura un componente in una pagina di un sito community creato, potrebbe essere necessario annullare [ereditarietà](../../help/sites-administering/msm-livecopy.md#changing-live-copy-content) per configurare il componente. L’ereditarietà deve essere ristabilita al termine della configurazione.
 
-Per informazioni dettagliate sulla configurazione, visitare [Community Components](author-communities.md) per gli autori.
+Per informazioni sulla configurazione, visita [Componenti di Communities](author-communities.md) per gli autori.
 
 ## Funzione modifica per community {#edit-community-function}
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
 
-Selezionare l&#39;icona `Edit Community Function` per modificare le proprietà della funzione utilizzando gli stessi pannelli di [creazione di una funzione community](#create-community-function), compresa l&#39;attivazione o la disattivazione della funzione.
+Seleziona l&#39;icona `Edit Community Function` per modificare le proprietà della funzione utilizzando gli stessi pannelli di [creazione di una funzione community](#create-community-function), inclusa l&#39;abilitazione o la disattivazione della funzione.
