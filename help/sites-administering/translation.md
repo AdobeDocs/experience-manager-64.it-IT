@@ -1,8 +1,8 @@
 ---
 title: Traduzione di contenuti per siti multilingue
 seo-title: Traduzione di contenuti per siti multilingue
-description: Scoprite come tradurre i contenuti per siti multilingue.
-seo-description: Scoprite come tradurre i contenuti per siti multilingue.
+description: Scopri come tradurre i contenuti per siti multilingue.
+seo-description: Scopri come tradurre i contenuti per siti multilingue.
 uuid: b8047f6f-e86a-495d-9b80-731ac7d83c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,38 +10,39 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 67faa2ee-cb12-44b0-8bfb-534d1d6c360a
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
+feature: Copia lingua
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '269'
+ht-degree: 1%
 
 ---
 
 
 # Traduzione di contenuti per siti multilingue{#translating-content-for-multilingual-sites}
 
-Automatizzate la traduzione di contenuti di pagina, risorse e contenuti generati dagli utenti per creare e gestire siti Web multilingue. Per automatizzare i flussi di lavoro di traduzione, potete integrare i fornitori di servizi di traduzione con AEM e creare progetti per la traduzione dei contenuti in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
+Automatizza la traduzione di contenuti, risorse e contenuti generati dagli utenti per creare e gestire siti web multilingue. Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione dei contenuti in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
-* Traduzione umana: Il contenuto viene inviato al provider di traduzioni e tradotto da traduttori professionisti. Al termine, il contenuto convertito viene restituito e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
+* Traduzione umana: Il contenuto viene inviato al tuo provider di traduzioni e tradotto da traduttori professionisti. Una volta completato, il contenuto tradotto viene restituito e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
 * Traduzione automatica: Il servizio di traduzione automatica traduce immediatamente il contenuto.
 
-La conversione dei contenuti comporta i seguenti passaggi:
+La conversione del contenuto prevede i seguenti passaggi:
 
-1. [Collega AEM al ](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) provider del servizio di traduzione e  [crea configurazioni](/help/sites-administering/tc-tic.md) del framework di integrazione della traduzione.
+1. [Collega AEM al tuo ](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) provider di servizi di traduzione e  [crea configurazioni](/help/sites-administering/tc-tic.md) del framework di integrazione della traduzione.
 
-1. [Associate le pagine del vostro ](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) maestro di lingua alle configurazioni del servizio di traduzione e del framework.
-1. [Identificare il tipo di ](/help/sites-administering/tc-rules.md) contenuto da tradurre.
-1. [Preparate il contenuto per la ](/help/sites-administering/tc-prep.md) traduzione creando il master della lingua e le pagine principali delle copie della lingua.
-1. [Create ](/help/sites-administering/tc-manage.md) progetti di traduzione per raccogliere il contenuto da tradurre e preparare il processo di traduzione.
-1. Utilizzate i progetti di traduzione per [gestire il processo di traduzione del contenuto](/help/sites-administering/tc-manage.md).
+1. [Associa le pagine del tuo ](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) masterizzatore di linguaggio alle configurazioni del servizio di traduzione e del framework.
+1. [Identifica il tipo di ](/help/sites-administering/tc-rules.md) contenuto da tradurre.
+1. [Prepara il contenuto per la ](/help/sites-administering/tc-prep.md) traduzione creando il master lingua e le pagine principali delle copie della lingua.
+1. [Crea progetti di traduzione per ](/help/sites-administering/tc-manage.md) raccogliere i contenuti da tradurre e preparare il processo di traduzione.
+1. Utilizza i progetti di traduzione per [gestire il processo di traduzione dei contenuti](/help/sites-administering/tc-manage.md).
 
-Se il provider di servizi di traduzione non fornisce un connettore per l&#39;integrazione con AEM, AEM supporta l&#39;estrazione manuale e il reinserimento del contenuto di traduzione in formato XML.
+Se il provider di servizi di traduzione non fornisce un connettore per l’integrazione con AEM, AEM supporta l’estrazione e il reinserimento manuali del contenuto di traduzione in formato XML.
 
 >[!NOTE]
 >
->Per utilizzare le funzioni Copia lingua, l’utente deve essere membro del gruppo di amministratori del progetto.
+>Per utilizzare le funzioni Copia lingua, l’utente deve essere membro del gruppo amministratori di progetto.
 
 ## Best practice   {#best-practices}
 
-La pagina [Best practice di traduzione](/help/sites-administering/tc-bp.md) contiene informazioni importanti sull&#39;implementazione.
+La pagina [Best practice per la traduzione](/help/sites-administering/tc-bp.md) contiene informazioni importanti sull’implementazione.
