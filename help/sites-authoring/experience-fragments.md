@@ -1,7 +1,7 @@
 ---
-title: Frammenti esperienza
-seo-title: Frammenti esperienza
-description: 'null'
+title: Frammenti di esperienza
+seo-title: Frammenti di esperienza
+description: Frammenti di esperienza
 seo-description: 'null'
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
@@ -10,15 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1312'
 ht-degree: 83%
 
 ---
 
 
-# Frammenti esperienza{#experience-fragments}
+# Frammenti di esperienza{#experience-fragments}
 
 Un Frammento esperienza è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine. Possono contenere qualsiasi componente.
 
@@ -90,11 +90,11 @@ La creazione di cartelle consente di:
    >
    >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-authoring/templates.md).
 
-L&#39;esempio seguente mostra i frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
+L’esempio seguente mostra Frammenti esperienza strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 
 >[!CAUTION]
 >
->La schermata seguente è stata ripresa dal sito WKND utilizzando Adobe Experience Manager come Cloud Service.
+>La schermata seguente è stata scattata dal sito WKND utilizzando Adobe Experience Manager come Cloud Service.
 
 ![Cartelle per i frammenti esperienza](assets/xf-folders.png)
 
@@ -108,7 +108,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 
 >[!NOTE]
 >
->È anche possibile configurare i [Modelli consentiti per l&#39;istanza ](#configure-allowed-templates-instance), ma questo metodo è **not** consigliato in quanto i valori possono essere sovrascritti al momento dell&#39;aggiornamento.
+>È anche possibile configurare i [Modelli consentiti per la tua istanza](#configure-allowed-templates-instance), ma questo metodo è **non** consigliato in quanto i valori possono essere sovrascritti in seguito a un aggiornamento.
 
 ### Configurare i modelli consentiti per la cartella {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 
 >[!CAUTION]
 >
->Non è consigliabile modificare i **[!UICONTROL Modelli consentiti]** con questo metodo, in quanto i modelli specificati potrebbero essere sovrascritti al momento dell&#39;aggiornamento.
+>Si sconsiglia di modificare i **[!UICONTROL Modelli consentiti]** con questo metodo, in quanto i modelli specificati potrebbero essere sovrascritti in seguito a un aggiornamento.
 >
 >Utilizza questa finestra di dialogo solo a scopo informativo.
 
@@ -185,7 +185,7 @@ L’Editor di frammenti esperienza offre funzionalità simili al normale Editor 
 
 L’esempio seguente illustra come creare un teaser per un prodotto:
 
-1. Trascinare un **[!UICONTROL Teaser di categoria]** dal [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Trascina un **[!UICONTROL Teaser categoria]** dal [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ Puoi trascinare il blocco predefinito nel sistema di paragrafi di qualsiasi fram
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
-Utilizzando il selettore `.plain.` nell&#39;URL, potete accedere alla rappresentazione HTML semplice.
+Utilizzando il selettore `.plain.` nell’URL, puoi accedere al rendering HTML semplice.
 
-Questo è disponibile dal browser, ma il suo scopo principale è consentire ad altre applicazioni (ad esempio, app Web di terze parti, implementazioni mobili personalizzate) di accedere direttamente al contenuto del frammento esperienza, utilizzando solo l&#39;URL.
+Questo è disponibile dal browser, ma il suo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti, implementazioni mobili personalizzate) di accedere direttamente al contenuto del frammento esperienza, utilizzando solo l’URL.
 
-La rappresentazione HTML semplice aggiunge protocollo, host e percorso contestuale a percorsi che sono:
+Il rendering HTML semplice aggiunge il protocollo, l&#39;host e il percorso contestuale a percorsi che sono:
 
 * del tipo: `src`, `href` o `action`
 
-* o terminare con: `-src` o `-href`
+* o termina con: `-src` o `-href`
 
 Esempio:
 
@@ -305,7 +305,7 @@ Esempio:
 
 >[!NOTE]
 >
->I collegamenti fanno sempre riferimento all’istanza di pubblicazione. Sono destinati a essere utilizzati da terzi, pertanto il collegamento verrà sempre chiamato dall’istanza pubblica, non dall’autore.
+>I collegamenti fanno sempre riferimento all’istanza di pubblicazione. Sono destinati a essere utilizzati da terze parti, pertanto il collegamento verrà sempre chiamato dall’istanza di pubblicazione, non dall’autore.
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
@@ -313,5 +313,5 @@ Esempio:
 
 Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
 
-Per l’esportazione in  Adobe Target, viene utilizzato HTML. Per informazioni complete, consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md).
+Per l’esportazione in Adobe Target, viene utilizzato l’HTML. Per informazioni complete, consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md).
 
