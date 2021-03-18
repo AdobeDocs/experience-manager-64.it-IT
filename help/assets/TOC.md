@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: c3eeb3d4fc4b6ce7548c6385c21c6e4ed7b2f0e6
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 45%
+ht-degree: 49%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 45%
 + [Informazioni su DAM](assets.md)
 + [Miglioramenti dell’esperienza utente](ux-improvements.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
-+ Utilizzare AEM Assets {#using}
++ Utilizza AEM Assets {#using}
    + [Esperienza della home page di AEM Assets](assets-home-page.md)
    + [Cercare risorse in AEM](search-assets.md)
    + [Ricerca full-text GQL](gql-search.md)
@@ -39,7 +40,7 @@ ht-degree: 45%
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
+   + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -50,7 +51,7 @@ ht-degree: 45%
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Aggiunta di funzioni di Dynamic Media Classic alla pagina](scene7.md)
+   + [Aggiunta di funzionalità di Dynamic Media Classic alla pagina](scene7.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
@@ -77,7 +78,7 @@ ht-degree: 45%
    + [Personalizzazione ed estensione delle risorse](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori di contenuti multimediali e flussi di lavoro](media-handlers.md)
    + [Estensione della ricerca delle risorse](searchx.md)
-   + [Installare e configurare ImageMagick per lavorare con AEM Assets](best-practices-for-imagemagick.md)
+   + [Installare e configurare ImageMagick per l’utilizzo con AEM Assets](best-practices-for-imagemagick.md)
    + [Integrazione delle risorse con il flusso di attività](extending-activity-stream.md)
    + [Estensione di Asset Editor](asseteditorx.md)
    + [API HTTP di Assets](mac-api-assets.md)
@@ -89,7 +90,7 @@ ht-degree: 45%
    + [Write-back XMP per le rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
-   + [Tag avanzati migliorati](enhanced-smart-tags.md)
+   + [Sono stati migliorati i tag avanzati](enhanced-smart-tags.md)
    + [Profili per l’elaborazione di metadati, immagini e video](processing-profiles.md)
    + [Metadati a cascata](cascading-metadata.md)
    + [Creare e configurare le pagine dell’Editor risorse](assets-finder-editor.md)
@@ -104,14 +105,14 @@ ht-degree: 45%
    + [AEM Assets e AEM MediaLibrary a confronto](medialibrary.md)
    + [Utilizzo del rasterizzatore PDF](aem-pdf-rasterizer.md)
    + [Configurazione delle restrizioni di caricamento delle risorse](configuring-asset-upload-restrictions.md)
-   + [Best practice di integrazione di AEM e Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Best practice per l’integrazione di AEM e Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integrazione di AEM Assets con il server InDesign](indesign.md)
    + [Profili metadati](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Utilizzo del pacchetto dimostrativo per Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
-   + [Tecniche consigliate per l’offload delle risorse](assets-offloading-best-practices.md)
+   + [Best practice per l’offload di risorse](assets-offloading-best-practices.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
-   + [Tecniche consigliate per il monitoraggio delle risorse](assets-monitoring-best-practices.md)
+   + [Best practice per il monitoraggio in Assets](assets-monitoring-best-practices.md)
    + [Supporto di Camera Raw](camera-raw.md)
    + [Rilevamento di risorse di tipo MIME con Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Libreria di transcodifica delle immagini](imaging-transcoding-library.md)
@@ -167,11 +168,11 @@ ht-degree: 45%
    + [Linee guida per la formazione sui servizi di contenuti avanzati](smart-tags-training-guidelines.md)
    + [Rappresentazioni video](video-renditions.md)
 + Risorse 3D {#three-d}
-   + [Note sulla versione di AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Utilizzo delle risorse 3D](assets-3d.md)
+   + [Note sulla versione AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
+   + [Utilizzo di risorse 3D](assets-3d.md)
    + [Installazione e configurazione di AEM 3D](install-config-3d.md)
    + [Impostazioni di configurazione avanzate](advanced-config-3d.md)
-   + [Utilizzo delle risorse di Adobe Dimension](working-dimension-assets.md)
+   + [Utilizzo delle risorse Adobe Dimension](working-dimension-assets.md)
    + [Caricamento ed elaborazione di risorse 3D in AEM](upload-processing-3d-assets.md)
    + [Risoluzione delle dipendenze dei file](resolve-file-dependencies.md)
    + [Visualizzazione di risorse 3D](viewing-3d-assets.md)
@@ -179,7 +180,7 @@ ht-degree: 45%
    + [Utilizzo delle aree di visualizzazione in AEM 3D](about-the-use-of-stages-in-aem-3d.md)
    + [Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray](setting-up-stage-with-ad-mr.md)
    + [Utilizzo del componente Siti 3D](using-the-3d-sites-component.md)
-   + [Integrazione di AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
+   + [Integrazione AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
    + [Utilizzo delle aree di visualizzazione IBL](working-with-ibl-stages.md)
-   + [Integrazione di AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
+   + [Integrazione AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
    + [Configurazione di un’area di visualizzazione IBL con Autodesk Maya e Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
