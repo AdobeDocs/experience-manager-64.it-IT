@@ -1,18 +1,19 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: 'AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network. '
-seo-description: 'AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network. '
+description: 'AEM eCommerce aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate su diversi punti di contatto web, mobili e social. '
+seo-description: 'AEM eCommerce aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate su diversi punti di contatto web, mobili e social. '
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '779'
 ht-degree: 3%
 
 ---
@@ -21,23 +22,23 @@ ht-degree: 3%
 # eCommerce{#ecommerce}
 
 * [Concetti ](/help/sites-administering/concepts.md)
-* [Amministrazione (generica)](/help/sites-administering/generic.md)
-* [COMMERCE CLOUD SAP](/help/sites-administering/sap-commerce-cloud.md)
+* [Amministrazione (generico)](/help/sites-administering/generic.md)
+* [Commerce Cloud SAP](/help/sites-administering/sap-commerce-cloud.md)
 * [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 * [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 
- Adobe fornisce due versioni di Commerce Integration Framework:
+In Adobe sono disponibili due versioni di Commerce Integration Framework:
 
 |  | CIF on-prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versioni di AEM supportate | AEM on prem o AMS 6.x | AEM AMS 6.4 e 6.5 |
-| Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-compilazione (template)<br> - archivio JCR | - Magento <br>- Java e Javascript <br>- Nessun dato Commerce memorizzato nell&#39;archivio JCR |
-| Front-end | AEM pagine sottoposte a rendering sul lato server | Applicazione a pagina mista (rendering ibrido) |
-| Catalogo prodotti | - Importazione prodotti, editor, memorizzazione nella cache in AEM <br>- Cataloghi regolari con AEM o pagine proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati su richiesta tramite connettore |
-| Scalabilità | - Può supportare fino a pochi milioni di prodotti (dipende dal caso d&#39;uso) <br> - Caching on Dispatcher | - Nessuna limitazione del volume <br>- Memorizzazione nella cache del dispatcher o CDN |
-| Modello dati standardizzato | No | Sì, schema Magento GraphQL |
-| Disponibilità | Sì:<br> - Commerce Cloud SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantiene la compatibilità con l&#39;Commerce Cloud Hybris 4 <br>- Salesforce (connettore open source per supportare AEM 6.4) | Sì tramite open source tramite GitHub. <br> Magento Commerce (Supporta l&#39;Magento 2.3.2 (predefinito) e compatibile con Magento 2.3.1). |
-| Quando utilizzare | Casi di utilizzo limitati: Per gli scenari in cui potrebbe essere necessario importare cataloghi statici di piccole dimensioni | Soluzione preferita nella maggior parte dei casi di utilizzo |
+| Versioni di AEM supportate | AEM on-premise o AMS 6.x | AEM AMS 6.4 e 6.5 |
+| Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-compilazione (modello)<br> - archivio JCR | - Magento <br>- Java e Javascript <br>- Nessun dato Commerce memorizzato nell&#39;archivio JCR |
+| Front-end | AEM pagine di rendering lato server | Applicazione a pagina mista (rendering ibrido) |
+| Catalogo dei prodotti | - Importazione prodotti, editor, memorizzazione in cache in AEM <br>- Cataloghi regolari con pagine AEM o proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati su richiesta tramite connettore |
+| Scalabilità | - Può supportare fino a pochi milioni di prodotti (dipende dal caso d’uso) <br> - Memorizzazione in cache su Dispatcher | - Nessuna limitazione del volume <br>- Memorizzazione in cache su Dispatcher o CDN |
+| Modello dati standardizzato | No | Sì, Magento schema GraphQL |
+| Disponibilità | Sì:<br> - Commerce Cloud SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantiene la compatibilità con Hybris 4 <br>- Commerce Cloud Salesforce (connettore open source per supportare AEM 6.4) | Sì tramite open source tramite GitHub. <br> Magento Commerce (supporta Magenti 2.3.2 (predefinito) e compatibile con Magenti 2.3.1). |
+| Quando utilizzare | Casi d’uso limitati: Per gli scenari in cui possono essere necessari l’importazione di cataloghi statici di piccole dimensioni | Soluzione preferita nella maggior parte dei casi d&#39;uso |
 
 eCommerce, insieme a Product Information Management (PIM), gestisce le attività di un sito web incentrato sulla vendita di prodotti tramite un negozio online:
 
@@ -45,35 +46,35 @@ eCommerce, insieme a Product Information Management (PIM), gestisce le attività
 * Gestione dei prezzi
 * Gestione delle transazioni
 * Gestione di interi cataloghi
-* Record di archiviazione live e centralizzati
-* Interfacce Web
+* Record di storage live e centralizzati
+* Interfacce web
 
-AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network. L’ambiente di authoring AEM consente di personalizzare pagine e componenti in base al contesto del visitatore e alle strategie di merchandising; ad esempio:
+AEM eCommerce aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate su diversi punti di contatto web, mobili e social. L’ambiente di authoring AEM ti consente di personalizzare pagine e componenti in base al contesto del visitatore e alle strategie di merchandising di destinazione; ad esempio:
 
 * Pagine prodotto
-* Componenti per carrello acquisti
+* Componenti del carrello
 * Componenti di estrazione
 
-L&#39;implementazione consente l&#39;accesso in tempo reale alle informazioni sui prodotti. Può essere utilizzato per applicare:
+L’implementazione consente l’accesso in tempo reale alle informazioni di prodotto. Può essere utilizzato per applicare:
 
-* Integrità delle informazioni sui prodotti
+* Integrità delle informazioni sul prodotto
 * Prezzi
-* Scorte
+* Inventario delle scorte
 * Variazioni nello stato di un carrello
 
 >[!NOTE]
 >
->Per utilizzare il framework di integrazione con i provider di eCommerce esterni, è innanzitutto necessario installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/sites-deploying/ecommerce.md).
+>Per utilizzare il framework di integrazione con provider di eCommerce esterni, devi prima installare i pacchetti richiesti. Per ulteriori informazioni, consulta [Distribuzione di eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Per informazioni sull&#39;estensione delle funzionalità di eCommerce, vedere [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
+>Per informazioni sull’estensione delle funzionalità di eCommerce, consulta [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Funzioni principali {#main-features}
 
 AEM eCommerce fornisce:
 
-* Una serie di **componenti AEM out-of-the-box** per illustrare i risultati che è possibile ottenere per il progetto:
+* Alcuni **componenti AEM predefiniti** per illustrare i risultati ottenuti per il progetto:
 
-   * Visualizzazione del prodotto
+   * Display del prodotto
    * Carrello
    * Check-out
    * Prodotti visualizzati di recente
@@ -84,31 +85,31 @@ AEM eCommerce fornisce:
 
    >[!NOTE]
    >
-   >Il framework di integrazione fornito da AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di eCommerce, indipendentemente dal motore specifico utilizzato.
+   >Il framework di integrazione fornito da AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità commerce, indipendentemente dal motore di eCommerce specifico.
 
-* **Cerca** - utilizzando:
+* **Ricerca**  - utilizzando:
 
    * ricerca AEM
-   * la ricerca del sistema eCommerce
+   * ricerca del sistema eCommerce
    * una ricerca di terze parti (ad esempio, Search&amp;Promote)
    * o una loro combinazione.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Utilizza la capacità AEM di **presentare i contenuti su più canali**, indipendentemente dalla finestra del browser completa o dal dispositivo mobile. In questo modo, i contenuti vengono distribuiti nel formato richiesto dai visitatori.
+* Utilizza la capacità AEM di **presentare i contenuti su più canali**, che si tratti della finestra del browser completa o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* La capacità di **sviluppare la propria implementazione di integrazione in base al [AEM eCommerce framework](#the-framework)**.
+* La possibilità di **sviluppare la propria implementazione di integrazione in base al [framework eCommerce AEM](#the-framework)**.
 
-   Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa base, oltre all&#39;API generale (il framework). L&#39;implementazione di una nuova integrazione richiede solo l&#39;implementazione delle funzioni necessarie per l&#39;integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione utilizzando interfacce (in modo che siano indipendenti dall&#39;implementazione).
+   Le due implementazioni attualmente disponibili sono entrambe basate sullo stesso criterio, oltre all’API generale (il framework). L’implementazione di una nuova integrazione comporta solo l’implementazione delle funzioni necessarie per l’integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione durante l’utilizzo delle interfacce (in modo che siano indipendenti dall’implementazione).
 
-* La possibilità di sviluppare **e-commerce basato sull&#39;esperienza in base ai dati e alle attività dell&#39;acquirente**. Questo consente di realizzare molti scenari:
+* Possibilità di sviluppare **soluzioni commerce basate sull&#39;esperienza in base ai dati e alle attività dell&#39;acquirente**. Questo consente di realizzare molti scenari:
 
-   * Un esempio potrebbe consistere nel fornire riduzioni dei costi di spedizione quando l&#39;ordine totale supera un importo specifico.
-   * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano i dati del profilo (ad esempio la posizione). Questi possono quindi essere evidenziati, sempre in base ad altri fattori, se necessario.
+   * Un esempio potrebbe essere la riduzione dei costi di spedizione quando l&#39;ordine totale supera un importo specifico.
+   * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano i dati del profilo (ad esempio la posizione). Questi possono quindi essere evidenziati, sempre a seconda di altri fattori quando necessario.
 
-   Nell’esempio di seguito, un teaser viene visualizzato in quanto il contenuto del carrello è inferiore a $75:
+   Nell’esempio seguente viene mostrato un teaser con un contenuto inferiore a $75:
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
@@ -116,26 +117,26 @@ AEM eCommerce fornisce:
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-* Altre caratteristiche, tra cui:
+* E altre caratteristiche, tra cui:
 
-   * Contenuto del carrello acquisti conservato tra le sessioni
-   * Cronologia ordine completo
-   * Aggiornamento del catalogo espresso
+   * Contenuto del carrello conservato nelle sessioni
+   * Storico ordini completo
+   * Aggiornamento del catalogo Express
 
 ## Framework {#the-framework}
 
-La sezione [Concetti](/help/sites-administering/concepts.md) descrive il framework in modo più dettagliato, ma quanto segue fornisce una visualizzazione ad alto livello del framework:
+La sezione [Concetti](/help/sites-administering/concepts.md) copre il framework in modo più dettagliato, ma quanto segue fornisce una visualizzazione ad alto livello del framework:
 
 ### Cosa? {#what}
 
-* Il framework di integrazione fornisce l&#39;API, una serie di componenti per illustrare le funzionalità e diverse estensioni per fornire esempi di metodi di connessione.
-* Il quadro fornisce la struttura di base necessaria per l&#39;implementazione di un progetto.
+* Il framework di integrazione fornisce l’API , una serie di componenti per illustrare funzionalità e diverse estensioni per fornire esempi di metodi di connessione.
+* Il quadro fornisce la struttura di base necessaria per l’implementazione di un progetto.
 * Il framework è estensibile.
-* Il framework non fornisce un sito pronto all&#39;uso e pronto all&#39;uso. Per adattare il framework alle proprie specifiche, è sempre necessario un certo lavoro di sviluppo.
+* Il framework non fornisce un sito pronto all’uso pronto all’uso. Una certa quantità di lavoro di sviluppo è sempre necessaria per adattare il framework alle tue specifiche.
 
 ### Perché? {#why}
 
 * Fornire i meccanismi di base necessari per realizzare rapidamente un sito eCommerce personalizzato.
-* Tp offre la flessibilità necessaria per sviluppare un sito eCommerce reale.
+* Tp offre la flessibilità necessaria per lo sviluppo di un sito e-commerce reale.
 * Illustra le best practice.
 
