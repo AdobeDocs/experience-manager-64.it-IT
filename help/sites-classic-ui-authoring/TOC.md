@@ -3,22 +3,25 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guida utente per l’authoring con l’interfaccia classica AEM 6.4
-breadcrumb-title: Guida all’authoring con l’interfaccia classica
+user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6.4
+breadcrumb-title: Guida all’authoring con interfaccia classica
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
+feature-set: Experience Manager Sites
+feature: 'Authoring  '
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 83%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
 
-# AEM 6.4 Guida utente per l&#39;authoring con l&#39;interfaccia classica {#classic-ui}
+# Guida utente all’authoring dell’interfaccia classica AEM 6.4 {#classic-ui}
 
-+ [Panoramica della guida all’authoring con l’interfaccia classica](home.md)
-+ Introduzione all&#39;authoring con l&#39;interfaccia classica {#introduction}
++ [Panoramica sulla creazione nell’interfaccia classica](home.md)
++ Introduzione all’authoring con interfaccia classica {#introduction}
    + [Primi passi per gli autori](classic-page-author-first-steps.md)
    + [Authoring nell’interfaccia classica](classicui.md)
    + [Utilizzo dell’ambiente Authoring](author-env.md)
@@ -78,7 +81,7 @@ ht-degree: 83%
    + [Utilizzo di Adobe Campaign](classic-personalization-ac.md)
    + [Componenti di Adobe Campaign](classic-personalization-ac-components.md)
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
-+ Authoring delle risorse nell&#39;interfaccia classica {#assets}
++ Authoring delle risorse nell’interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Utilizzo delle aree di visualizzazione IBL](classicui-stages-aem3d-ibl.md)
    + [Rendering delle risorse 3D](classicui-rendering-3d.md)
@@ -86,9 +89,9 @@ ht-degree: 83%
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
    + [Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
-   + [Aggiunta di funzioni di Dynamic Media Classic (Scene7) alla pagina](manage-assets-classic-s7.md)
+   + [Aggiunta di funzionalità di Dynamic Media Classic (Scene7) alla pagina](manage-assets-classic-s7.md)
    + [Utilizzo di Dynamic Media](dynamic-media-assets.md)
-   + [Utilizzo delle risorse 3D](classicui-3dassets.md)
+   + [Utilizzo di risorse 3D](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Convenzioni di denominazione per il test delle risorse](asset-naming-conventions.md)
    + [Caricamento ed elaborazione di risorse 3D in AEM](classicui-upload-proc-3d.md)
