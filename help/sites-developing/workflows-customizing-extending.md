@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 1%
 
 ---
@@ -858,7 +858,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
 
 1. Ora puoi aprire un modello di flusso di lavoro per la modifica. Nel browser dei passaggi è possibile filtrare per vedere **Il mio passaggio personalizzato**:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    Trascinando **Il mio passaggio personalizzato** sul modello viene visualizzata la scheda:
 
@@ -1039,7 +1039,7 @@ L&#39;esempio `_cq_dialog/.content.xml` utilizzato in questo esempio:
 >
 >Le finestre di dialogo dell’editor modelli dell’interfaccia classica continueranno a funzionare con l’editor dell’interfaccia touch standard.
 >
->Anche se AEM uno strumento [conversione finestra di dialogo](/help/sites-developing/dialog-conversion.md) per aggiornare le finestre di dialogo dei passaggi dell&#39;interfaccia classica alle finestre di dialogo dell&#39;interfaccia utente standard. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che possono essere fatti alla finestra di dialogo per alcuni casi.
+>AEM dispone di [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo dei passaggi dell’interfaccia classica alle finestre di dialogo dell’interfaccia utente standard. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che possono essere fatti alla finestra di dialogo per alcuni casi.
 >
 >* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo in `/libs` che hanno funzionalità simili come esempi di come fornire una soluzione. Esempio:
    >
