@@ -1,66 +1,95 @@
 ---
-title: Confronto delle funzioni disponibili in  AEM Assets e AEM Media Library
-description: Domande frequenti su  AEM Assets e AEM Media Library, comprese le differenze.
+title: Utilizzare Media Library per la gestione di base delle risorse digitali
+description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
+role: Architetto, leader
 translation-type: tm+mt
-source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+source-git-commit: 200bb263d60ebd9f6abc79ce0c73dac95b06de53
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
 
-# AEM Assets e AEM MediaLibrary a confronto {#aem-assets-vs-aem-medialibrary}
+<!--
 
-Adobe Experience Manager (AEM) Assets è parte integrante della piattaforma AEM. Questa integrazione è vista come un vantaggio importante per la AEM e assicura la coerenza nella gestione dei contenuti e un&#39;elevata produttività per gli autori dei contenuti.
+Define Media Lib
+Define req for it
+Define use cases
+Define what is not included
 
-## Domande frequenti {#frequently-asked-questions}
+-->
 
-### Cos&#39;è  AEM Assets? {#what-is-aem-assets}
+# Utilizzare Media Library per la gestione delle risorse di base {#manage-assets-using-media-library}
 
- AEM Assets è un&#39;applicazione della piattaforma AEM che consente ai clienti di gestire le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web.  AEM Assets include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l&#39;interfaccia utente  di amministrazione AEM Assets.
+[!DNL Adobe Experience Manager] Platform offre diverse funzionalità per la gestione delle risorse. Media Library consente agli utenti di caricare nell’archivio un numero limitato di risorse, di eseguire ricerche e utilizzarle nelle pagine web e di eseguire semplici attività di gestione delle risorse.
 
-### Cos&#39;è la AEM Media Library? {#what-is-the-aem-media-library}
+Media Library è una soluzione leggera per la gestione delle risorse digitali (DAM), fornita in omaggio con la licenza [!DNL Adobe Experience Manager Sites] . [!DNL Sites] è un’offerta WCM (Web Content Management). Media Library funziona con tutte le funzionalità di Experience Manager.
 
-AEM Media Library è una parte designata dell&#39;archivio di contenuti WCM AEM in cui vengono memorizzate le immagini e altre risorse condivise. La libreria Media utilizza le funzionalità di gestione delle risorse digitali di AEM WCM.
+[!DNL Adobe Experience Manager Assets] licenza disponibile separatamente per l&#39;acquisto. [!DNL Experience Manager Assets] consente una gestione affidabile delle risorse tramite casi d’uso aziendali, personalizzazioni per metadati, schemi, ricerca e interfaccia utente e molte altre funzionalità oltre a quelle fornite da Media Library.
 
-### Cosa si ottiene da  AEM Assets che non fa parte di AEM WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## Requisiti di licenza {#avail-media-library-license}
 
-Le funzioni uniche disponibili solo per  clienti di AEM Assets sono:
+I clienti con [!DNL Sites] licenza possono utilizzare Media Library. Funziona con tutti i componenti di [!DNL Experience Manager].
 
-1. possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
-1.  AEM Assets Admin, disponibile dalla schermata di benvenuto facendo clic sul secondo pulsante accanto a `siteadmin`.
-1. Tutti i passaggi del flusso di lavoro relativi a Gestione delle risorse digitali, AEM l’assimilazione delle risorse,  l’eliminazione di AEM Assets,  gestione delle risorse secondarie AEM Assets,  l’estrazione dei metadati AEM Assets.
-1. librerie che includono `dam` spazio del pacchetto im.
+Media Library viene installato come parte di Sites. Non è richiesta alcuna licenza o pacchetto aggiuntivo oltre alla licenza e all’installazione di Sites.
 
-L&#39;utilizzo di queste funzioni richiede una licenza valida di  AEM Assets.
+## [!DNL Assets] rispetto a Media Library  {#assets-and-media-library}
 
-###  AEM Assets è disponibile come pacchetto separato? {#is-aem-assets-available-as-a-separate-package}
+Experience Manager Assets fornisce funzionalità DAM di livello Enterprise. La funzionalità Assets viene fornita con [!DNL Experience Manager] in un unico pacchetto. Tuttavia, gli utenti che non hanno acquistato una licenza di Assets non hanno il diritto di utilizzare le funzioni avanzate di DAM. Senza la licenza Assets, sono disponibili solo [funzioni della libreria multimediale](#use-media-library).
 
-No. Per semplificare l&#39;installazione e la distribuzione, tutte AEM applicazioni e componenti aggiuntivi vengono distribuiti in un unico pacchetto con tutte le funzionalità incluse. Ciò non implica che si disponga dell&#39;autorizzazione per utilizzare tutte le funzioni del pacchetto.
+Se desideri evitare l’utilizzo non intenzionale di funzionalità [!DNL Assets] prive di licenza, rimuovi tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore [!DNL Assets] specifici di [!DNL Experience Manager]. [!DNL Assets] In questo modo si evita agli utenti di utilizzare accidentalmente le funzioni [!DNL Assets] che non sono state autorizzate.
 
-#### Desidero modificare i metadati delle risorse digitali. Ho bisogno  AEM Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+## Usa libreria multimediale {#use-media-library}
 
-Se intendete modificare metadati diversi da titolo, descrizione e tag, è necessario disporre della licenza per  AEM Assets.
+Media Library copre in generale i seguenti casi di utilizzo:
 
-#### È possibile ridimensionare automaticamente le immagini al momento dell&#39;importazione. Ho bisogno  AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+* Fornisci funzioni DAM di base per le pagine web create utilizzando [!DNL Adobe Experience Manager Sites].
+* Moduli adattivi e comunicazioni create utilizzando [!DNL Adobe Experience Manager Forms].
+* Esperienze video digitali create utilizzando [!DNL Adobe Experience Manager Screens].
+* [!DNL Assets] API REST HTTP per operazioni headless.
 
-No. Il ridimensionamento e la trasformazione automatica basata sul flusso di lavoro delle immagini statiche e la possibilità di gestire le rappresentazioni fanno parte AEM Media Library. Queste funzioni non richiedono una licenza AEM Assets .
+<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-### Voglio ridimensionare le immagini utilizzando un componente immagine personalizzato. Ho bisogno  AEM Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
+* Comments and annotation
+-->
 
-Il componente immagine fa parte di AEM WCM. La libreria grafica utilizzata dal componente immagine (ma anche da  AEM Assets) fa parte della piattaforma AEM e non richiede una licenza  AEM Assets.
+Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;interfaccia utente predefinita [!DNL Experience Manager]. Media Library fa parte dell’ installazione di [!DNL Experience Manager Sites] e non è necessaria alcuna interfaccia o componente aggiuntivo separato. Utilizzando l’interfaccia esistente, gli utenti di Media Library sono autorizzati a eseguire le seguenti attività:
 
-### Come posso impedire ai miei utenti di utilizzare  AEM Assets se non ho ottenuto la licenza  AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+* Crea cartelle per organizzare le risorse.
+* Carica le risorse.
+* Pubblicare le risorse.
+* Modificare, spostare e copiare le risorse.
+* Sfogliare, filtrare e cercare (include la ricerca per similarità) le risorse.
+* Aggiungi i valori ai campi di metadati e modificali, ad eccezione del campo Tag avanzati, disponibili per impostazione predefinita nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] di una risorsa.
+* Aggiungi ed elimina rappresentazioni statiche.
+* Scaricare cartelle, risorse e rappresentazioni di risorse.
+* Creare versioni delle risorse.
+* Crea ed esegui attività di revisione sulle risorse.
+* Annotare le risorse.
+* Aggiungi le risorse alle pagine [!DNL Sites] tramite Content Finder.
+* Utilizzo [!DNL Content Fragments].
 
-Puoi rimuovere da AEM tutti  flussi di lavoro, componenti, tassonomie, opzioni specifici di AEM Assets e l’amministratore  AEM Assets. In questo modo si evita che gli utenti utilizzino accidentalmente  funzioni AEM Assets che non erano in licenza.
+<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+-->
 
-### Desidero aggiungere delle immagini a una pagina e ritagliarle e ridimensionarle. Ho bisogno  AEM Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+>[!IMPORTANT]
+>
+>Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza Media Library ti consente di soddisfare solo i casi d’uso elencati utilizzando Media Library. Se non è presente un caso d’uso, non utilizzarlo con la licenza Media Library. In caso di domande, contatta l’Assistenza clienti Adobe.
 
-Per questo caso d’uso non è necessario acquistare  AEM Assets, anche l’utilizzo di Media Library non è richiesto per utilizzare immagini su un sito Web, in quanto il componente per immagini intelligenti consente di caricare le immagini direttamente nella pagina.
+<!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [Elenco dettagliato delle differenze tra le funzioni](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [Funzioni di DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html)
 
