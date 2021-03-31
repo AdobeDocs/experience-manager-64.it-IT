@@ -2,11 +2,13 @@
 title: Modifica in blocco dei metadati di più risorse e raccolte
 description: Scopri come modificare contemporaneamente i metadati di più risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
+feature: Gestione risorse, Metadati, Raccolte
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 184aa0a7fcd3f89510295ddaff28624b8306b7d2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 13%
+source-wordcount: '442'
+ht-degree: 14%
 
 ---
 
