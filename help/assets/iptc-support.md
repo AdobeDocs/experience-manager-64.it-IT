@@ -1,11 +1,13 @@
 ---
 title: Supporto per i metadati IPTC
-description: Scoprite come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative.
+description: Scopri come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 contentOwner: AG
+feature: Metadati
+role: Professionista,Amministratore,Leader
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '374'
 ht-degree: 7%
 
 ---
@@ -13,38 +15,38 @@ ht-degree: 7%
 
 # Supporto per i metadati IPTC {#support-for-iptc-metadata}
 
-Scoprite come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative.
+Scopri come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 
-Adobe Experience Manager (AEM) Assets supporta lo standard di metadati IPTC ampiamente utilizzato per descrivere le risorse. In questo modo,  AEM Assets migliora l&#39;accettazione delle sue immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
+Adobe Experience Manager (AEM) Assets supporta lo standard di metadati IPTC, ampiamente utilizzato per descrivere le risorse. In questo modo, AEM Assets migliora l&#39;accettazione delle sue immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
 
-Lo schema di metadati predefinito per le risorse ora include gli schemi di metadati IPTC Core e IPTC Extension per definire proprietà complete di metadati che consentono agli utenti di aggiungere dati precisi e affidabili sulle persone, le posizioni e i prodotti visualizzati in un&#39;immagine. Supporta inoltre date, nomi e identificatori relativi alla creazione dell&#39;immagine e un modo flessibile per esprimere le informazioni sui diritti.
+Lo schema metadati predefinito per le risorse ora incorpora gli schemi di metadati IPTC Core e IPTC Extension per definire proprietà di metadati complete che consentono agli utenti di aggiungere dati precisi e affidabili su persone, posizioni e prodotti visualizzati in un&#39;immagine. Supporta inoltre date, nomi e identificatori relativi alla creazione dell&#39;immagine e un modo flessibile per esprimere le informazioni sui diritti.
 
-La pagina Proprietà delle risorse ora include schede separate per visualizzare i metadati IPTC Core e IPTC Extension nei campi modificabili.
+La pagina Proprietà per le risorse ora include schede separate per visualizzare i metadati IPTC Core e IPTC Extension nei campi modificabili.
 
-1. Dall’interfaccia utente Risorse, seleziona un’immagine.
-1. Tocca o fai clic sull&#39;icona **[!UICONTROL Proprietà]** dalla barra degli strumenti.
-1. Nella pagina Proprietà, tocca o fai clic sulla scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC per la risorsa.
-1. Modificate le proprietà dei metadati IPTC, a seconda delle necessità.
+1. Dall’interfaccia utente Assets, seleziona un’immagine.
+1. Tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Nella pagina Proprietà, tocca o fai clic sulla scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC della risorsa.
+1. Se necessario, modifica le proprietà dei metadati IPTC.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Per visualizzare i metadati dell’estensione IPTC della risorsa, tocca o fai clic sulla scheda **[!UICONTROL Estensione IPTC]**.
-1. Modificate le proprietà dei metadati dell&#39;estensione ITPC, a seconda delle necessità.
-1. Toccate/fate clic su **[!UICONTROL Salva e chiudi]** per salvare le modifiche.
+1. Modifica le proprietà dei metadati dell’estensione ITPC, a seconda delle necessità.
+1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]** per salvare le modifiche.
 
 ## Supporto per valutazione creativa {#creative-rating-support}
 
-Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, nella pagina Proprietà vengono ora visualizzate le valutazioni assegnate alle risorse tramite  Adobe Bridge e altre app Creative
+Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, la pagina Proprietà visualizza ora le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
 
 Queste valutazioni sono disponibili nella sezione **[!UICONTROL Valutazione creativa]** della scheda **[!UICONTROL Avanzate]**.
 
-Questa valutazione è una proprietà di sola lettura e ha un intervallo compreso tra 1 e 5. Potete cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
+Questa valutazione è una proprietà di sola lettura e ha un intervallo compreso tra 1 e 5. Puoi cercare le risorse in base al loro rating creativo dal pannello di ricerca.
 
 Tuttavia, questa proprietà non è attualmente indicizzata per evitare conflitti con le modifiche personalizzate apportate dagli utenti.
 
 ## Supporto parole chiave {#keyword-support}
 
-Nella scheda **[!UICONTROL IPTC]** della pagina Proprietà vengono visualizzate anche le parole chiave aggiunte alle risorse tramite  Adobe Bridge e altre app Creative. È inoltre possibile modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]**.
+La scheda **[!UICONTROL IPTC]** della pagina Proprietà visualizza anche le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative. Puoi anche modificare queste parole chiave e aggiungere altre parole chiave dalla scheda **[!UICONTROL IPTC]** .
 
 ![keywords](assets/keywords.png)
 
