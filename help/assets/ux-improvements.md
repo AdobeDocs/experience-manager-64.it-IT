@@ -1,79 +1,81 @@
 ---
-title: Miglioramenti dell’esperienza utente nelle risorse
+title: Miglioramenti dell’esperienza utente in Assets
 description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in AEM 6.4 Assets.
 contentOwner: AG
+feature: Informazioni sulla versione
+role: Leader,Professionista
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
 
 
-# Miglioramenti dell&#39;esperienza utente in Risorse {#user-experience-enhancements-in-assets}
+# Miglioramenti all’esperienza utente in Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che offrono agli utenti un&#39;esperienza senza soluzione di continuità e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare e gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
+AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
 
-L&#39;interfaccia è più reattiva e consente di gestire in modo efficiente un ampio portafoglio di risorse. Potete cercare, visualizzare, ordinare e scorrere rapidamente un lungo elenco di elementi.
+L’interfaccia è più reattiva e consente di gestire in modo efficiente un ampio portafoglio di risorse. È possibile eseguire rapidamente ricerche, visualizzazioni, ordinamenti e scorrere in modo fluido un lungo elenco di elementi.
 
-Potete personalizzare le diverse viste (viste a schede, a elenco e a colonne). Ad esempio, potete configurare la dimensione delle miniature da visualizzare nella vista a schede. Per la vista Elenco, potete configurare il livello di dettaglio che desiderate visualizzare per le risorse nell’elenco. AEM 6.4 Assets include una nuova vista ad albero che consente di navigare comodamente nell’archivio delle risorse e di trovare le risorse.
+Puoi personalizzare le diverse viste (a schede, a elenco e a colonne). Ad esempio, puoi configurare la dimensione delle miniature da visualizzare nella vista a schede. Nella vista Elenco, puoi configurare il livello di dettaglio da visualizzare per le risorse nell’elenco. AEM 6.4 Assets include una nuova vista ad albero che consente di navigare comodamente nell’archivio delle risorse e di trovarle.
 
 ## Caricamento pigro {#lazy-loading}
 
-Quando cercate le risorse in AEM 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si passa in rassegna un lungo elenco di risultati. Poiché un numero significativo di risorse vengono caricate alla volta, la navigazione risulta fluida.
+Quando sfoglia o cerchi risorse in AEM 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si esplora un lungo elenco di risultati. Poiché un numero significativo di risorse viene caricato alla volta, l’esperienza di navigazione è fluida.
 
-Se toccate o fate clic su una risorsa per visualizzarne la pagina dei dettagli, potete tornare alla pagina dei risultati semplicemente toccando o facendo clic sul pulsante Indietro nella barra degli strumenti.
+Se tocchi/fai clic su una risorsa per visualizzarne la pagina dei dettagli, puoi tornare alla pagina dei risultati semplicemente toccando/facendo clic sul pulsante Indietro nella barra degli strumenti.
 
 ## Miglioramenti alla vista a schede {#card-view-improvements}
 
-A seconda del dispositivo utilizzato e della quantità di dettagli necessaria, potete ridimensionare le miniature delle risorse nella vista Scheda. In questo modo, potete personalizzare la visualizzazione e controllare il numero di miniature visualizzate.
+A seconda del dispositivo utilizzato e della quantità di dettagli necessari, è possibile ridimensionare le miniature delle risorse nella vista Scheda. In questo modo, puoi personalizzare la visualizzazione e controllare il numero di miniature visualizzate.
 
 Per ridimensionare le miniature nella vista a schede, effettuate le seguenti operazioni:
 
-1. Toccate/fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]**.
+1. Tocca o fai clic sull’icona Layout nella barra degli strumenti, quindi scegli l’opzione **[!UICONTROL Visualizza impostazioni]** .
 
    ![view_settings](assets/view_settings.png)
 
-1. Dalla finestra di dialogo **[!UICONTROL Visualizza impostazioni]**, selezionare la dimensione della miniatura desiderata, quindi toccare o fare clic su **[!UICONTROL Aggiorna]**.
+1. Dalla finestra di dialogo **[!UICONTROL Visualizza impostazioni]**, seleziona la dimensione della miniatura desiderata, quindi tocca o fai clic su **[!UICONTROL Aggiorna]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
-1. Esaminate le miniature visualizzate nella dimensione scelta.
+1. Esamina le miniature visualizzate nella dimensione scelta.
 
-   ![thumbnail_changed](assets/thumbnails_changed.png)
+   ![thumbnails_changed](assets/thumbnails_changed.png)
 
-Nella vista a schede ora sono visualizzate informazioni aggiuntive, come lo stato di pubblicazione.
+Nella vista a schede sono ora visualizzate informazioni aggiuntive, ad esempio lo stato di pubblicazione.
 
 ![publish_status](assets/publish_status.png)
 
-## Miglioramenti alla visualizzazione a elenco {#list-view-improvements}
+## Miglioramenti alla vista a elenco {#list-view-improvements}
 
-Nella vista Elenco, la prima colonna ora mostra i nomi file delle risorse per impostazione predefinita. Vengono inoltre visualizzate informazioni aggiuntive, come lo stato di pubblicazione e elaborazione e le impostazioni internazionali.
+Nella vista Elenco, la prima colonna visualizza ora i nomi dei file delle risorse per impostazione predefinita. Vengono inoltre visualizzate informazioni aggiuntive, ad esempio lo stato di pubblicazione ed elaborazione e le impostazioni internazionali.
 
 ![list_view](assets/list_view.png)
 
-Potete scegliere di configurare la quantità di dettagli da visualizzare. Toccate/fate clic sull&#39;icona Layout, scegliete l&#39;opzione **[!UICONTROL Visualizza impostazioni]** e specificate le colonne da visualizzare nella finestra di dialogo **[!UICONTROL Visualizza impostazioni]**.
+Puoi scegliere di configurare la quantità di dettagli da visualizzare. Tocca o fai clic sull’icona Layout, scegli l’opzione **[!UICONTROL Visualizza impostazioni]** e specifica le colonne da visualizzare nella finestra di dialogo **[!UICONTROL Visualizza impostazioni]**.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
-## Miglioramenti alla visualizzazione delle colonne {#column-view-improvements}
+## Miglioramenti alla vista a colonne {#column-view-improvements}
 
-Oltre alle viste a schede e a elenco, ora potete passare alla pagina dei dettagli di una risorsa dalla vista a colonne. Selezionate una risorsa dalla vista Colonna, quindi toccate o fate clic su **[!UICONTROL Maggiori dettagli]** nello snapshot della risorsa.
+Oltre alle viste a schede e a elenco, ora puoi passare alla pagina dei dettagli di una risorsa dalla vista a colonne. Seleziona una risorsa dalla vista Colonna, quindi tocca o fai clic su **[!UICONTROL Maggiori dettagli]** nello snapshot della risorsa.
 
 ![more_details](assets/more_details.png)
 
-## Visualizzazione struttura {#tree-view}
+## Vista ad albero {#tree-view}
 
-AEM 6.4 Assets include una vista ad albero che consente di esplorare comodamente la gerarchia delle risorse e individuare la risorsa o la cartella desiderata.
+AEM 6.4 Assets include una vista ad albero che consente di navigare comodamente nella gerarchia delle risorse e passare alla risorsa o alla cartella desiderata.
 
-Per aprire la vista ad albero, toccate o fate clic sull&#39;icona di navigazione globale in `Assets UI`, quindi scegliete **[!UICONTROL Struttura contenuto]** dal menu.
+Per aprire la visualizzazione Struttura, tocca o fai clic sull&#39;icona Navigazione globale in `Assets UI` e scegli **[!UICONTROL Struttura contenuto]** dal menu.
 
 ![content_tree](assets/content_tree.png)
 
-Dalla gerarchia dei contenuti, individuate la risorsa desiderata.
+Dalla gerarchia dei contenuti, accedi alla risorsa desiderata.
 
-![navigate_contenttree](assets/navigate_contenttree.png)
+![naviga_contenttree](assets/navigate_contenttree.png)
 
 ## Navigazione nei dettagli delle risorse {#navigating-asset-details}
 
@@ -81,14 +83,14 @@ La pagina dei dettagli della risorsa ora include i pulsanti Precedente e Success
 
 A seconda del dispositivo, è inoltre possibile scorrere o utilizzare i tasti freccia sulla tastiera per spostarsi avanti e indietro tra le immagini.
 
-A seconda del layout scelto, potete aprire la pagina dei dettagli di una risorsa nei seguenti modi:
+A seconda del layout scelto, puoi aprire la pagina dei dettagli di una risorsa nei seguenti modi:
 
 | **Visualizza** | **Come aprire la pagina dei dettagli della risorsa** |
 |---|---|
-| [!UICONTROL Vista a schede] | Toccate o fate clic sulla sezione della risorsa. |
-| [!UICONTROL Vista a elenco] | Toccate o fate clic sulla voce della riga relativa alla risorsa nell’elenco. |
-| [!UICONTROL Vista a colonne] | Toccate/fate clic sul pulsante **[!UICONTROL Maggiori dettagli]** dall&#39;istantanea della risorsa. |
+| [!UICONTROL Vista a schede] | Tocca o fai clic sulla porzione di risorsa. |
+| [!UICONTROL Vista a elenco] | Tocca o fai clic sulla voce della riga relativa alla risorsa nell’elenco. |
+| [!UICONTROL Vista a colonne] | Tocca o fai clic sul pulsante **[!UICONTROL Maggiori dettagli]** dallo snapshot della risorsa. |
 
-Usate i pulsanti Precedente/Successivo per spostarvi avanti e indietro tra le risorse.
+Utilizza i pulsanti Precedente/Successivo per spostarsi avanti e indietro tra le risorse.
 
-![prev_next_buttons](assets/prev_next_buttons.png)
+![prev_next_button](assets/prev_next_buttons.png)
