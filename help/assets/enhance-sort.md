@@ -1,91 +1,93 @@
 ---
 title: Ordinamento migliorato delle risorse in AEM
-description: Scoprite come  AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca immediatamente anziché ordinarle in batch sul lato client.
+description: Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 contentOwner: AG
+feature: Ricerca
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 4%
+source-wordcount: '444'
+ht-degree: 5%
 
 ---
 
 
 # Ordinamento migliorato delle risorse in AEM {#enhanced-sorting-of-assets-in-aem}
 
-Scoprite come  AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca immediatamente anziché ordinarle in batch sul lato client.
+Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 
-La funzione di ricerca di Risorse Adobe Experience Manager (AEM) è stata migliorata per ordinare in modo efficiente un gran numero di risorse nelle pagine di elenco delle cartelle e di risultati della ricerca. Potete anche ordinare le voci della cronologia.
+La funzionalità di ricerca di Risorse Adobe Experience Manager (AEM) è stata migliorata per ordinare in modo efficiente un gran numero di risorse nelle pagine di visualizzazione elenco cartelle e di risultati di ricerca. Puoi anche ordinare le voci della timeline.
 
- AEM Assets distribuisce l’ordinamento lato server per ordinare l’intero set di risorse (indipendentemente dalle dimensioni) all’interno di una cartella o di una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client. In questo modo, i risultati pregenerati possono essere visualizzati rapidamente sull&#39;interfaccia utente, il che rende l&#39;operazione di ordinamento più reattiva e semplice.
+AEM Assets distribuisce l’ordinamento lato server per ordinare l’intero set di risorse (indipendentemente dalle dimensioni) all’interno di una cartella o di una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client. In questo modo, i risultati prerecuperati possono essere visualizzati rapidamente sull’interfaccia utente, il che rende l’operazione di ordinamento più reattiva e più chiara.
 
 ## Ordinamento delle risorse nella vista Elenco {#sorting-assets-in-list-view}
 
- AEM Assets consente di ordinare le risorse delle cartelle in base ai seguenti campi:
+AEM Assets consente di ordinare le risorse delle cartelle in base ai campi seguenti:
 
 * Paese
 * Stato
 * Tipo
 * Dimensione
 * Valutazione
-* Data modifica
+* Data di modifica
 * Data di pubblicazione
 * Utilizzo
 * Clic
 * Impression
 * Ritirato
 
-1. Individuate una cartella contenente un numero elevato di risorse.
+1. Passa a una cartella contenente un numero elevato di risorse.
 1. Tocca o fai clic sull’icona Layout e passa alla vista a elenco.
 
    ![chlimage_1-394](assets/chlimage_1-394.png)
 
-1. Toccate o fate clic sull’icona Ordina accanto all’intestazione di una colonna nell’elenco delle risorse.
+1. Tocca o fai clic sull’icona Ordina accanto all’intestazione di una colonna nell’elenco delle risorse.
 
    ![chlimage_1-395](assets/chlimage_1-395.png)
 
-   L&#39;elenco delle risorse è ordinato in base ai valori dei campi.
+   L’elenco delle risorse viene ordinato in base ai valori dei campi.
 
    ![chlimage_1-396](assets/chlimage_1-396.png)
 
 >[!NOTE]
 >
->Per ordinare i valori nelle `Name` o `Title`colonne, sovrapporre `/libs/dam/gui/content/commons/availablecolumns` e modificare il valore di `sortable` in `True`.
+>Per ordinare i valori nelle colonne `Name` o `Title`, sovrapponi `/libs/dam/gui/content/commons/availablecolumns` e modifica il valore di `sortable` in `True`.
 
-## Ordinamento delle risorse nei risultati di ricerca {#sorting-assets-in-search-results}
+## Ordinamento delle risorse nei risultati della ricerca {#sorting-assets-in-search-results}
 
-Potete ordinare i risultati della ricerca in base ai seguenti campi:
+Puoi ordinare i risultati della ricerca in base ai campi seguenti:
 
 * Titolo
 * Stato
 * Tipo
 * Dimensione
-* Data modifica
+* Data di modifica
 * Data di pubblicazione
 
-1. Dalla casella di ricerca Omni, cercate le risorse in base ai criteri desiderati.
+1. Dalla casella OmniSearch, cerca le risorse in base ai criteri desiderati.
 
    ![chlimage_1-397](assets/chlimage_1-397.png)
 
-1. Tocca o fai clic sull’icona Layout e passa alla vista a elenco. Se i risultati della ricerca sono già visualizzati nella vista a elenco, ignorate questo passaggio.
-1. Toccate o fate clic sull’icona Ordina accanto all’intestazione di una colonna nell’elenco delle risorse. L&#39;elenco delle risorse è ordinato in base ai valori dei campi.
+1. Tocca o fai clic sull’icona Layout e passa alla vista a elenco. Se i risultati della ricerca sono già visualizzati nella vista a elenco, salta questo passaggio.
+1. Tocca o fai clic sull’icona Ordina accanto all’intestazione di una colonna nell’elenco delle risorse. L’elenco delle risorse viene ordinato in base ai valori dei campi.
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## Ordinamento delle risorse nella cronologia {#sorting-assets-in-timeline}
+## Ordinamento delle risorse nella timeline {#sorting-assets-in-timeline}
 
- AEM Assets consente di ordinare cronologicamente le voci della cronologia, come annotazioni, versioni, flussi di lavoro e attività.
+AEM Assets consente di ordinare cronologicamente le voci della timeline, ad esempio annotazioni, versioni, flussi di lavoro e attività.
 
-1. Nell’interfaccia utente Risorse, seleziona una risorsa per la quale vuoi visualizzare la timeline.
-1. Tocca o fai clic sull&#39;icona Navigazione globale e seleziona **[!UICONTROL Timeline]**.
+1. Dall’interfaccia utente Assets, seleziona una risorsa per la quale vuoi visualizzare la timeline.
+1. Tocca o fai clic sull&#39;icona di navigazione globale e seleziona **[!UICONTROL Timeline]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Nella timeline, selezionate una voce dall’elenco. Ad esempio, selezionare **[!UICONTROL Commenti]** per visualizzare l&#39;elenco delle annotazioni associate alla risorsa.
+1. Nella timeline, seleziona una voce dall’elenco. Ad esempio, seleziona **[!UICONTROL Commenti]** per visualizzare l’elenco delle annotazioni associate alla risorsa.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Tocca o fai clic sull&#39;icona **[!UICONTROL Sort]** accanto all&#39;etichetta **[!UICONTROL Date]**. In base alla selezione effettuata, le annotazioni sono elencate in ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
+1. Tocca o fai clic sull&#39;icona **[!UICONTROL Ordina]** accanto all&#39;etichetta **[!UICONTROL Data]**. In base alla selezione, le annotazioni sono elencate nell’ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 
