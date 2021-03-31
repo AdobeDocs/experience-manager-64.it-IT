@@ -1,11 +1,13 @@
 ---
 title: Estensione della ricerca delle risorse
-description: Estendete le funzionalità di ricerca di  AEM Assets oltre alle ricerche out-of-the-box per le risorse in base alle stringhe.
+description: Estendi le funzionalità di ricerca di AEM Assets oltre la ricerca predefinita delle risorse in base alle stringhe.
 contentOwner: AG
+feature: Ricerca
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 15%
 
 ---
@@ -13,53 +15,53 @@ ht-degree: 15%
 
 # Estensione della ricerca delle risorse {#extending-assets-search}
 
-Puoi estendere le funzionalità di ricerca di Adobe Experience Manager (AEM) Assets. In questo caso,  AEM Assets cerca le risorse in base alle stringhe.
+Puoi estendere le funzionalità di ricerca di Adobe Experience Manager (AEM) Assets. Con AEM Assets è possibile cercare le risorse in base alle stringhe.
 
-La ricerca viene eseguita tramite l&#39;interfaccia QueryBuilder, in modo da personalizzare la ricerca con diversi predicati. Potete sovrapporre il set predefinito di predicati nella seguente directory: `/apps/dam/content/search/searchpanel/facets`.
+La ricerca viene eseguita tramite l’interfaccia QueryBuilder per personalizzare la ricerca con diversi predicati. Puoi sovrapporre il set predefinito di predicati nella seguente directory: `/apps/dam/content/search/searchpanel/facets`.
 
-Potete anche aggiungere schede aggiuntive al pannello di amministrazione  AEM Assets.
+Puoi anche aggiungere altre schede al pannello di amministrazione di AEM Assets.
 
 >[!CAUTION]
 >
->A partire da AEM 6.4, l’interfaccia classica è obsoleta. Per l&#39;annuncio, vedere [Funzioni obsolete e rimosse](../release-notes/deprecated-removed-features.md). È consigliabile utilizzare l’interfaccia touch. Per le personalizzazioni, vedere [Facet di ricerca](search-facets.md).
+>A partire da AEM 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consulta [Funzioni obsolete e rimosse](../release-notes/deprecated-removed-features.md). È consigliabile utilizzare l’interfaccia touch. Per le personalizzazioni, consulta [Facet di ricerca](search-facets.md).
 
-## Sovrapposizione di {#overlaying}
+## Sovrapposizione {#overlaying}
 
-Per sovrapporre i predicati preconfigurati, copiate il nodo `facets` da `/libs/dam/content/search/searchpanel` a `/apps/dam/content/search/searchpanel/` o specificate un&#39;altra proprietà `facetURL` nella configurazione del pannello di ricerca (l&#39;impostazione predefinita è `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Per sovrapporre i predicati preconfigurati, copia il nodo `facets` da `/libs/dam/content/search/searchpanel` a `/apps/dam/content/search/searchpanel/` o specifica un&#39;altra proprietà `facetURL` nella configurazione del pannello di ricerca (l&#39;impostazione predefinita è `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Per impostazione predefinita, la struttura di directory in / `apps` non esiste e deve essere creata. Assicurarsi che i tipi di nodo corrispondano a quelli in / `libs`.
+>Per impostazione predefinita, la struttura della directory sotto / `apps` non esiste e deve essere creata. Assicurati che i tipi di nodo corrispondano a quelli sotto / `libs`.
 
 
 ## Aggiunta di schede {#adding-tabs}
 
-Potete aggiungere ulteriori schede di ricerca configurandole nell&#39; AEM Assets Admin. Per creare schede aggiuntive:
+Puoi aggiungere ulteriori schede Ricerca configurandole nell’amministratore di AEM Assets. Per creare schede aggiuntive:
 
-1. Create la struttura di cartelle `/apps/wcm/core/content/damadmin/tabs,`se non esiste già, quindi copiate il nodo `tabs` da `/libs/wcm/core/content/damadmin` e incollatelo.
-1. Create e configurate la seconda scheda, come desiderato.
+1. Crea la struttura delle cartelle `/apps/wcm/core/content/damadmin/tabs,`se non esiste già, copia il nodo `tabs` da `/libs/wcm/core/content/damadmin` e incollalo.
+1. Crea e configura la seconda scheda, come desiderato.
 
    >[!NOTE]
    >
-   >Quando create un secondo siteadminsearch panel, accertatevi di impostare una proprietà `id` per evitare conflitti tra i moduli.
+   >Quando si crea un secondo siteadminsearchpanel, assicurarsi di impostare una proprietà `id` per evitare conflitti tra i moduli.
 
 ## Creazione di predicati personalizzati {#creating-custom-predicates}
 
- AEM Assets viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è descritta in [Creazione e configurazione di una pagina di condivisione di risorse](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+AEM Assets viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è descritta in [Creazione e configurazione di una pagina di condivisione di risorse](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Oltre a utilizzare i predicati preesistenti, AEM sviluppatori possono anche creare i propri predicati utilizzando l&#39;API [Query Builder](/help/sites-developing/querybuilder-api.md).
+Oltre a utilizzare predicati preesistenti, AEM sviluppatori possono anche creare i propri predicati utilizzando l’ [API Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La creazione di predicati personalizzati richiede conoscenze di base sul [framework dei widget](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La procedura ottimale consiste nel copiare e regolare un predicato esistente. I predicati di esempio si trovano in `/libs/cq/search/components/predicates`.
+La best practice prevede di copiare e regolare un predicato esistente. I predicati di esempio si trovano in `/libs/cq/search/components/predicates`.
 
 ### Esempio: Creare un predicato di proprietà semplice {#example-build-a-simple-property-predicate}
 
 Per creare un predicato di proprietà:
 
-1. Create una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/titlepredicate`.
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/titlepredicate`.
 1. Aggiungi `content.xml`:
 
    ```xml
@@ -142,20 +144,20 @@ Per creare un predicato di proprietà:
    </script>
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore **DELETE**.
-1. Andate al browser e nella pagina di esempio (ad esempio, `press.html`) passate alla modalità di progettazione e abilitate il nuovo componente per il sistema di paragrafi di predicato (ad esempio, **left**).
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo `cq:editConfig` di tipo principale `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore **DELETE**.
+1. Passa al browser e, nella pagina di esempio (ad esempio, `press.html`) passa alla modalità di progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 
-1. In modalità **Edit**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Search**). Inserite il componente nella colonna **Predicati** e digitate una parola di ricerca, ad esempio **Diamond**, quindi fate clic sulla lente di ingrandimento per avviare la ricerca.
+1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserisci il componente nella colonna **Predicati** e digita una parola di ricerca, ad esempio **Diamond**, quindi fai clic sulla lente di ingrandimento per avviare la ricerca.
 
    >[!NOTE]
    >
-   >Durante la ricerca, accertarsi di digitare esattamente il termine, compreso il caso corretto.
+   >Durante la ricerca, assicurati di digitare esattamente il termine, compreso il caso corretto.
 
 ### Esempio: Creare un predicato di gruppo semplice {#example-build-a-simple-group-predicate}
 
 Per creare un predicato di gruppo:
 
-1. Create una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/picspredicate`.
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/picspredicate`.
 1. Aggiungi `content.xml`:
 
    ```xml
@@ -249,9 +251,9 @@ Per creare un predicato di gruppo:
        });
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
-1. Andate al browser e nella pagina di esempio (ad esempio, `press.html`) passate alla modalità di progettazione e abilitate il nuovo componente per il sistema di paragrafi di predicato (ad esempio, **left**).
-1. In modalità **Edit**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Search**). Inserire il componente nella colonna **Predicati**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo `cq:editConfig` di tipo principale `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
+1. Passa al browser e, nella pagina di esempio (ad esempio, `press.html`) passa alla modalità di progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
+1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserisci il componente nella colonna **Predicati** .
 
 ### Widget predicato installati {#installed-predicate-widgets}
 
@@ -264,13 +266,13 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `fulltext` |
 | searchCallback | Funzione | Callback per attivare la ricerca sull&#39;evento `keyup`. Impostazione predefinita `CQ.wcm.SiteAdmin.doSearch` |
 
-### PropertyPredicate {#propertypredicate}
+### Predicato proprietà {#propertypredicate}
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `property` |
 | propertyName | Stringa | Nome della proprietà JCR. Impostazione predefinita `jcr:title` |
-| defaultValue | Stringa | Valore predefinito precompilato. |
+| defaultValue | Stringa | Valore predefinito. |
 
 ### PathPredicate {#pathpredicate}
 
@@ -286,23 +288,23 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `daterange` |
-| propertyName | Stringa | Nome della proprietà JCR. Impostazione predefinita `jcr:content/jcr:lastModified` |
+| nomeproprietà | Stringa | Nome della proprietà JCR. Impostazione predefinita `jcr:content/jcr:lastModified` |
 | defaultValue | Stringa | Valore predefinito precompilato |
 
 ### OptionsPredicate {#optionspredicate}
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
-| titolo | Stringa | Aggiunge un altro titolo superiore |
+| titolo | Stringa | Aggiunge un titolo superiore aggiuntivo |
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `daterange` |
-| propertyName | Stringa | Nome della proprietà JCR. Impostazione predefinita `jcr:content/metadata/cq:tags` |
+| nomeproprietà | Stringa | Nome della proprietà JCR. Impostazione predefinita `jcr:content/metadata/cq:tags` |
 | collassare | Stringa | Comprimi livello. Impostazione predefinita `level1` |
-| triggerSearch | Booleano | Flag per l’attivazione della ricerca al momento della verifica. Il valore predefinito è false |
+| triggerSearch | Booleano | Flag per l&#39;attivazione della ricerca su controllo. Predefinito su false |
 | searchCallback | Funzione | Callback per attivare la ricerca. Impostazione predefinita `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Numero | Timeout prima che searchCallback venga attivato. Il valore predefinito è 800 ms |
+| searchTimeoutTime | Numero | Timeout prima dell&#39;attivazione di searchCallback. Il valore predefinito è 800 ms |
 
 ## Personalizzazione dei risultati di ricerca {#customizing-search-results}
 
-La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato.  AEM Assets viene fornito con una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è descritta in [Creazione e configurazione di una pagina di condivisione di risorse](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La presentazione dei risultati di ricerca in una pagina Condivisione risorse è gestita dall’obiettivo selezionato. AEM Assets è dotato di una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è descritta in [Creazione e configurazione di una pagina di condivisione di risorse](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Oltre a utilizzare ottiche preesistenti, AEM sviluppatori possono anche creare ottiche proprie.
+Oltre a utilizzare ottiche preesistenti, gli sviluppatori AEM possono anche creare ottiche personalizzate.
