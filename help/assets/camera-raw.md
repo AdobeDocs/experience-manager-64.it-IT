@@ -1,48 +1,50 @@
 ---
-title: supporto Camera Raw
+title: Supporto Camera Raw
 description: Scopri come abilitare il supporto Camera Raw in Adobe Experience Manager Assets.
 contentOwner: AG
+feature: Strumenti per gli sviluppatori
+role: Administrator
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
 
-# Utilizzare Camera Raw per elaborare le immagini {#camera-raw-support}
+# Usa Camera Raw per elaborare le immagini {#camera-raw-support}
 
-Potete abilitare il supporto Camera Raw per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata in Adobe Experience Manager Assets mediante il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile da Distribuzione software.
+È possibile abilitare il supporto Camera Raw per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata in Adobe Experience Manager Assets utilizzando il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile da Distribuzione software.
 
 >[!NOTE]
 >
 >La funzionalità supporta solo le rappresentazioni JPEG. È supportato su Windows a 64 bit, Mac OS e RHEL 7.x.
 
-Per abilitare il supporto Camera Raw in Adobe Experience Manager Assets, procedi come segue:
+Per abilitare il supporto Camera Raw in Adobe Experience Manager Assets, effettua le seguenti operazioni:
 
-1. Scaricate il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dalla distribuzione del software.
+1. Scarica il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dalla Distribuzione di software.
 
-1. Accesso `https://[aem_server]:[port]/workflow`. Aprite il flusso di lavoro **[!UICONTROL DAM Update Asset]**.
+1. Accesso `https://[aem_server]:[port]/workflow`. Apri il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
 
-1. Aprire il passaggio **[!UICONTROL Miniature processo]**.
+1. Apri il passaggio **[!UICONTROL Elabora miniature]** .
 
-1. Fornire la seguente configurazione nella scheda **[!UICONTROL Miniature]**:
+1. Fornisci la seguente configurazione nella scheda **[!UICONTROL Miniature]** :
 
    * **[!UICONTROL Miniature]**:  `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Ignora tipi MIME]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
-   ![calce](assets/chlimage_1-334.png)
+   ![calcagno](assets/chlimage_1-334.png)
 
-1. Nella scheda **[!UICONTROL Immagine abilitata per il Web]**, nel campo **[!UICONTROL Skip List]** specificare `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Nella scheda **[!UICONTROL Immagine abilitata per il Web]**, nel campo **[!UICONTROL Ignora elenco]** , specifica `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![calce](assets/chlimage_1-335.png)
+   ![calcagno](assets/chlimage_1-335.png)
 
-1. Dal pannello laterale, aggiungete il passaggio **[!UICONTROL Camera Raw/DNG Handler]** sotto il passaggio **[!UICONTROL Creazione miniature]**.
+1. Dal pannello laterale, aggiungi il passaggio **[!UICONTROL Camera Raw/DNG Handler]** sotto il passaggio **[!UICONTROL Creazione miniature]** .
 
-1. Nel passaggio **[!UICONTROL Camera Raw/DNG Handler]**, aggiungere la seguente configurazione nella scheda **[!UICONTROL Argomenti]**:
+1. Nel passaggio **[!UICONTROL Camera Raw/DNG Handler]** , aggiungi la seguente configurazione nella scheda **[!UICONTROL Argomenti]** :
 
-   * **[!UICONTROL Tipi]** mime:  `image/dng` e  `image/x-raw-(.*)`
+   * **[!UICONTROL Tipi]** MIME:  `image/dng` e  `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -56,9 +58,9 @@ Per abilitare il supporto Camera Raw in Adobe Experience Manager Assets, procedi
 
 >[!NOTE]
 >
->Assicurarsi che la configurazione di cui sopra sia uguale alla configurazione **[!UICONTROL Sample DAM Update Asset With Camera Raw and DNG Handling Step]**.
+>Assicurati che la configurazione di cui sopra sia la stessa della configurazione **[!UICONTROL Sample DAM Update Asset With Camera Raw and DNG Handling Step]** .
 
-È ora possibile importare file Camera Raw  AEM Assets. Dopo aver installato il pacchetto Camera Raw e configurato il flusso di lavoro, nell&#39;elenco dei riquadri laterali viene visualizzata l&#39;opzione **[!UICONTROL Regolazione immagine]**.
+È ora possibile importare file non elaborati della fotocamera in AEM Assets. Dopo aver installato il pacchetto Camera Raw e configurato il flusso di lavoro richiesto, l&#39;opzione **[!UICONTROL Regolazione immagine]** viene visualizzata nell&#39;elenco dei riquadri laterali.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -66,14 +68,14 @@ Per abilitare il supporto Camera Raw in Adobe Experience Manager Assets, procedi
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Figura: Opzione per apportare modifiche leggere alle immagini*
+*Figura: Utilizza l’opzione per apportare modifiche leggere alle immagini*
 
-Dopo aver salvato le modifiche in un&#39;immagine Camera Raw, viene generata una nuova rappresentazione `AdjustedPreview.jpg` per l&#39;immagine. Per altri tipi di immagini, tranne Camera Raw, le modifiche vengono riportate in tutte le rappresentazioni.
+Dopo aver salvato le modifiche a un&#39;immagine Camera Raw, viene generato un nuovo rendering `AdjustedPreview.jpg` per l&#39;immagine. Per altri tipi di immagini, tranne Camera Raw, le modifiche vengono applicate a tutte le rappresentazioni.
 
 ## Best practice, problemi noti e limitazioni {#best-practices}
 
 La funzionalità presenta le seguenti limitazioni:
 
 * La funzionalità supporta solo le rappresentazioni JPEG. È supportato su Windows a 64 bit, Mac OS e RHEL 7.x.
-* Il writeback dei metadati non è supportato per i formati RAW e DNG.
-* La libreria Camera Raw presenta delle limitazioni rispetto ai pixel totali che può elaborare alla volta. Al momento, può elaborare un massimo di 65000 pixel sul lato lungo di un file o 512 MP, indipendentemente dai criteri rilevati per primi.
+* Il write-back di metadati non è supportato per i formati RAW e DNG.
+* La libreria Camera Raw presenta limitazioni rispetto ai pixel totali che può elaborare alla volta. Attualmente, può elaborare un massimo di 65000 pixel sul lato lungo di un file o 512 MP qualunque sia il criterio che viene rilevato per primo.
