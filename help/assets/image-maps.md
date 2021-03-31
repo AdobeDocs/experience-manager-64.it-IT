@@ -1,57 +1,59 @@
 ---
-title: Aggiungere mappe immagine
-description: Scoprite come aggiungere mappe immagine con collegamento ipertestuale alle risorse di immagini.
+title: Aggiungi mappe immagine
+description: Scopri come aggiungere mappe immagine con collegamento ipertestuale alle risorse immagine.
 contentOwner: AG
+feature: Gestione risorse
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '293'
 ht-degree: 2%
 
 ---
 
 
-# Aggiungere mappe immagine {#adding-image-maps}
+# Aggiungi mappe immagine {#adding-image-maps}
 
-Scoprite come aggiungere mappe immagine con collegamento ipertestuale alle risorse di immagini.
+Scopri come aggiungere mappe immagine con collegamento ipertestuale alle risorse immagine.
 
-Le mappe immagine consentono di aggiungere una o più aree con collegamento ipertestuale che funzionano come gli altri collegamenti ipertestuali.
+Le mappe immagine consentono di aggiungere una o più aree collegate che funzionano come gli altri collegamenti ipertestuali.
 
-1. Per aprire **[!UICONTROL Editor immagine locale]**, effettuate una delle seguenti operazioni:
+1. Effettua una delle seguenti operazioni per aprire **[!UICONTROL Editor immagini sul posto]**:
 
-   * Tramite Azioni rapide, toccate l&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista **[!UICONTROL Scheda]**. Nella vista Elenco, selezionate la risorsa e toccate l&#39;icona **Modifica** nella barra degli strumenti.
+   * Utilizzando Azioni rapide, tocca l’icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista **[!UICONTROL Scheda]**. Nella vista Elenco, seleziona la risorsa e tocca l’icona **Modifica** nella barra degli strumenti.
 
       >[!NOTE]
       >
       >Azioni rapide non è disponibile nella visualizzazione **[!UICONTROL Elenco]**.
 
-   * Nella vista **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]**, selezionate la risorsa e toccate l&#39;icona **[!UICONTROL Modifica]** sulla barra degli strumenti.
-   * Toccate l&#39;icona **[!UICONTROL Edit]** dalla pagina della risorsa.
+   * Nella visualizzazione **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]**, seleziona la risorsa e tocca l’icona **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Tocca l’icona **[!UICONTROL Modifica]** dalla pagina delle risorse.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. Per inserire una mappa immagine, toccate l&#39;icona **[!UICONTROL Avvia mappa]** dalla barra degli strumenti.
+1. Per inserire una mappa immagine, tocca l’icona **[!UICONTROL Avvia mappa]** nella barra degli strumenti.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
-1. Selezionate la forma della mappa immagine. Il punto di attivazione della forma selezionata viene posizionato sull&#39;immagine.
+1. Selezionare la forma della mappa immagine. Il punto attivo della forma selezionata viene posizionato sull&#39;immagine.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Toccate l’area sensibile e immettete il testo URL e Alt. Dall&#39;elenco **[!UICONTROL Target]**, specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
+1. Toccate il punto attivo e immettete il testo URL e Alt. Dall’elenco **[!UICONTROL Target]** , specifica dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immetti `https://www.adobe.com` come URL, `Adobe website` come testo Alt e specifica **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Toccate l&#39;icona **[!UICONTROL Confirm]**, quindi toccate l&#39;icona **[!UICONTROL Finish]** dalla barra degli strumenti per salvare le modifiche.
+1. Tocca l’icona **[!UICONTROL Conferma]**, quindi tocca l’icona **[!UICONTROL Fine]** nella barra degli strumenti per salvare le modifiche.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Per eliminare la mappa immagine, toccate l&#39;area sensibile e toccate l&#39;icona **[!UICONTROL Elimina]**.
+   Per eliminare la mappa immagine, tocca il punto attivo e tocca l’icona **[!UICONTROL Elimina]** .
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
-1. Per visualizzare la mappa immagine, andate alla pagina dei dettagli della risorsa e passate il cursore sull’immagine.
+1. Per visualizzare la mappa immagine, passa alla pagina dei dettagli della risorsa e passa il cursore sull’immagine.
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se l’opzione Dynamic Media è abilitata, andate all’editor risorse e toccate l’icona **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
+   Se l’opzione Dynamic Media è abilitata, accedi all’editor risorse e tocca l’icona **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
