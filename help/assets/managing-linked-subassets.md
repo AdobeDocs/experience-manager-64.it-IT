@@ -2,10 +2,12 @@
 title: Gestire le risorse composite e generare le risorse secondarie.
 description: Scopri come creare riferimenti a risorse AEM dai file InDesign, Adobe Illustrator e Photoshop. Inoltre, scopri come utilizzare la funzione Visualizzatore pagina per visualizzare singole pagine di file multipagina, inclusi file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
+feature: Gestione risorse
+role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
