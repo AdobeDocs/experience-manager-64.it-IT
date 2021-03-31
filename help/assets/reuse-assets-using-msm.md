@@ -3,10 +3,12 @@ title: Riutilizzare le risorse con MSM
 description: Utilizzare risorse su più pagine/cartelle derivate e collegate a risorse principali. Le risorse rimangono sincronizzate con una copia primaria e, con alcuni clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Gestione risorse,Gestione siti multipli
+role: Business Practices, Amministratore, Architetto
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '3176'
 ht-degree: 9%
 
 ---
@@ -79,7 +81,7 @@ Per creare Live Copy utilizzando il primo metodo, effettua le seguenti operazion
 
 Per creare Live Copy utilizzando il secondo metodo, effettua le seguenti operazioni:
 
-1. Nell&#39;interfaccia AEM, dall&#39;angolo in alto a destra, fai clic su **[!UICONTROL Crea > Live Copy]**.
+1. Nell&#39;interfaccia AEM, nell&#39;angolo in alto a destra, fai clic su **[!UICONTROL Crea > Live Copy]**.
    ![Creare una Live Copy dall’interfaccia AEM](assets/lc_create2.png)
 1. Seleziona la risorsa o la cartella di origine. Fai clic su **[!UICONTROL Avanti]**.
 1. Selezionare la cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
@@ -92,7 +94,7 @@ Per creare Live Copy utilizzando il secondo metodo, effettua le seguenti operazi
 
 ## Visualizza varie proprietà e stati dell&#39;origine e della Live Copy {#view-properties-statuses-source-and-lc}
 
-Puoi visualizzare le informazioni e gli stati relativi a MSM della Live Copy, ad esempio relazione, sincronizzazione, rollout e altro dalle varie aree dell’interfaccia utente di AEM. I due metodi seguenti funzionano per le risorse e le cartelle:
+Puoi visualizzare le informazioni e gli stati relativi a MSM della Live Copy, ad esempio relazione, sincronizzazione, rollout e altro dalle varie aree dell’interfaccia utente AEM. I due metodi seguenti funzionano per le risorse e le cartelle:
 
 * Seleziona la risorsa Live Copy e trova le informazioni nella relativa pagina **[!UICONTROL Proprietà]** .
 * Seleziona la cartella sorgente e trova le informazioni dettagliate di ciascuna Live Copy dalla **[!UICONTROL Live Copy Console]**.
@@ -219,7 +221,7 @@ Puoi annullare tutte le modifiche locali e ripristinare lo stato della risorsa a
 
 ## Rimuovi relazione live {#remove-live-relationship}
 
-È possibile rimuovere completamente la relazione tra un&#39;origine e una Live Copy utilizzando l&#39;azione Stacca. La Live Copy diventa una risorsa o una cartella autonoma dopo essere stata staccata. Viene visualizzato come una nuova risorsa nell’interfaccia di AEM, subito dopo lo scollegamento. Per scollegare una Live Copy dall’origine, effettua le seguenti operazioni.
+È possibile rimuovere completamente la relazione tra un&#39;origine e una Live Copy utilizzando l&#39;azione Stacca. La Live Copy diventa una risorsa o una cartella autonoma dopo essere stata staccata. Viene visualizzata come una nuova risorsa nell’interfaccia AEM, subito dopo lo scollegamento. Per scollegare una Live Copy dall’origine, effettua le seguenti operazioni.
 
 1. Seleziona una risorsa o una cartella Live Copy. Fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti. In alternativa, utilizza la scelta rapida da tastiera `p`.
 1. Fai clic su **[!UICONTROL Live Copy]**. Fare clic su **[!UICONTROL Stacca]** nella barra degli strumenti. Fai clic su **[!UICONTROL Stacca]** dalla finestra di dialogo visualizzata.
