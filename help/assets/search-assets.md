@@ -1,25 +1,27 @@
 ---
-title: Ricerca di risorse in AEM
-description: Scoprite come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
+title: Cercare risorse in AEM
+description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
+feature: Ricerca,Metadati
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
 
-# Cerca risorse in AEM {#search-assets-in-aem}
+# Cercare risorse in AEM {#search-assets-in-aem}
 
-Scoprite come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
+Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 
-Usate il pannello Filtri per cercare risorse, cartelle, tag e metadati. È possibile cercare parti di una stringa utilizzando l&#39;asterisco carattere jolly.
+Usa il pannello Filtri per cercare risorse, cartelle, tag e metadati. È possibile cercare parti di una stringa utilizzando l&#39;asterisco con carattere jolly.
 
-Il pannello Filtri offre diverse opzioni per la ricerca di risorse e cartelle in diversi modi anziché in un ordine tassonomico generico.
+Il pannello Filtri offre diverse opzioni per cercare risorse e cartelle in diversi modi anziché in un ordine tassonomico generico.
 
-Potete eseguire una ricerca in base alle seguenti opzioni (predicati):
+Puoi eseguire ricerche in base alle seguenti opzioni (predicati):
 
 * Tipo di file
 * Dimensione file
@@ -32,72 +34,72 @@ Potete eseguire una ricerca in base alle seguenti opzioni (predicati):
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Potete personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet di ricerca [facet](search-facets.md). Per visualizzare il pannello Filtri, effettuare le seguenti operazioni:
+Puoi personalizzare il pannello Filtri e aggiungere/rimuovere i predicati di ricerca utilizzando [facet di ricerca](search-facets.md). Per visualizzare il pannello Filtri, esegui questi passaggi:
 
-1. Nell’interfaccia utente di Assets, tocca o fai clic su ![search_icon](assets/search_icon.png) dalla barra degli strumenti per visualizzare la casella di ricerca Omnico.
-1. Inserite il termine da cercare e premete Invio. In alternativa, è sufficiente premere Invio senza immettere alcun termine di ricerca. Non inserire spazi iniziali, altrimenti la ricerca non funziona.
+1. Nell’interfaccia utente Assets, tocca o fai clic su ![icona di ricerca](assets/search_icon.png) nella barra degli strumenti per visualizzare la casella di ricerca Omnisearch.
+1. Inserisci il termine di ricerca e premi Invio. In alternativa, è sufficiente premere Invio senza inserire alcun termine di ricerca. Non inserire spazi iniziali, altrimenti la ricerca non funziona.
 
-1. Toccate o fate clic sull&#39;icona GlobalNav. Viene visualizzato il pannello Filtri.
+1. Tocca o fai clic sull’icona di Navigazione globale . Viene visualizzato il pannello Filtri .
 
-   ![filter_panel-1](assets/filters_panel-1.png)
+   ![filters_panel-1](assets/filters_panel-1.png)
 
    A seconda del tipo di elementi ricercati, il numero di corrispondenze è indicato nella parte superiore dei risultati della ricerca.
 
-   ![number_of_Search](assets/number_of_searches.png)
+   ![number_of_Searches](assets/number_of_searches.png)
 
 ## Cerca tipi di file {#search-for-file-types}
 
-Il pannello Filtri consente di aggiungere maggiore granularità alla ricerca e rende più versatile la funzionalità di ricerca. Potete facilmente approfondire fino al livello di dettaglio desiderato.
+Il pannello Filtri consente di aggiungere maggiore granularità all’esperienza di ricerca e rende più versatile la funzionalità di ricerca. È possibile espandere facilmente il livello di dettaglio desiderato.
 
-Ad esempio, se state cercando un&#39;immagine, utilizzate il predicato **[!UICONTROL Tipo file]** per scegliere se visualizzare un&#39;immagine bitmap o vettoriale.
+Ad esempio, se cerchi un&#39;immagine, utilizza il predicato **[!UICONTROL Tipo file]** per scegliere se desideri un&#39;immagine bitmap o un&#39;immagine vettoriale.
 
 ![image_type](assets/image_type.png)
 
-È possibile limitare ulteriormente l&#39;ambito della ricerca specificando il tipo MIME per l&#39;immagine.
+Puoi limitare ulteriormente l’ambito della ricerca specificando il tipo MIME per l’immagine.
 
 ![mime_type](assets/mime_type.png)
 
-Allo stesso modo, quando cercate documenti, potete specificare il formato, ad esempio PDF o MS Word.
+Allo stesso modo, durante la ricerca di documenti, è possibile specificare il formato, ad esempio PDF o MS Word.
 
-![document](assets/documents.png)
+![documenti](assets/documents.png)
 
-## Ricerca in base alla dimensione del file {#search-based-on-file-size}
+## Ricerca in base alle dimensioni del file {#search-based-on-file-size}
 
-Utilizzate il predicato **Dimensione file** per cercare le risorse in base alle loro dimensioni. Potete specificare i limiti inferiore e superiore dell’intervallo di dimensioni per limitare la ricerca. È inoltre possibile specificare l&#39;unità di misura, ad esempio Kilobyte, Megabyte e così via.
+Utilizza il predicato **Dimensione file** per cercare le risorse in base alle loro dimensioni. È possibile specificare i limiti inferiori e superiori dell’intervallo di dimensioni per limitare la ricerca. È inoltre possibile specificare l’unità di misura, ad esempio Kilobyte, Megabyte e così via.
 
-![unit_of_measurement](assets/unit_of_measure.png)
+![unità_di_misura](assets/unit_of_measure.png)
 
-## Ricerca in base all&#39;ultima modifica delle risorse {#search-based-on-when-assets-are-last-modified}
+## Ricerca basata sull’ultima modifica delle risorse {#search-based-on-when-assets-are-last-modified}
 
-Se gestite le risorse di lavoro in corso o monitorate un flusso di lavoro di revisione, potete cercare quando una risorsa è stata modificata per l’ultima volta in base a indicatori di ora precisi. Ad esempio, specificate le date prima o dopo le quali le risorse sono state modificate.
+Se gestisci le risorse in corso di lavorazione o controlli un flusso di lavoro di revisione, puoi cercare l’ultima modifica di una risorsa in base a marche temporali precise. Ad esempio, specifica le date prima o dopo le quali le risorse sono state modificate.
 
 ![last_modified_date](assets/last_modified_dates.png)
 
-Potete inoltre utilizzare le seguenti opzioni per ottenere un livello più elevato di granularità nella ricerca:
+Puoi inoltre utilizzare le seguenti opzioni per ottenere un livello di granularità più elevato nella ricerca:
 
 ![timestamp](assets/timestamp.png)
 
 ## Ricerca in base allo stato {#search-based-on-status}
 
-Utilizzate il predicato **Status** per cercare risorse in base a vari tipi di stato, ad esempio Pubblica, Approvazione, Checkout e Scadenza.
+Utilizza il predicato **Stato** per cercare le risorse in base a vari tipi di stato, ad esempio Pubblica, Approvazione, Pagamento e Scadenza.
 
 ![stato](assets/status.png)
 
-Ad esempio, durante il monitoraggio della pubblicazione delle risorse, potete utilizzare l’opzione appropriata per cercare le risorse pubblicate.
+Ad esempio, durante il monitoraggio della pubblicazione delle risorse, puoi utilizzare l’opzione appropriata per cercare le risorse pubblicate.
 
 ![pubblicazione](assets/publish.png)
 
-Durante il monitoraggio dello stato di revisione delle risorse, utilizzate l&#39;opzione appropriata per individuare le risorse approvate o in attesa di approvazione.
+Quando monitori lo stato di revisione delle risorse, utilizza l’opzione appropriata per individuare le risorse approvate o quelle in attesa di approvazione.
 
 ![approvazione](assets/approval.png)
 
-## Ricerca basata sui dati Insights {#search-based-on-insights-data}
+## Ricerca basata sui dati di Insights {#search-based-on-insights-data}
 
-Utilizzate il predicato **Insights** per cercare risorse in base alle statistiche di utilizzo ottenute da diverse app Creative. I dati di utilizzo sono raggruppati nelle seguenti categorie:
+Utilizza il predicato **Insights** per cercare le risorse in base alle statistiche di utilizzo ottenute da varie app Creative. I dati di utilizzo sono raggruppati nelle seguenti categorie:
 
-* Valutazione dell&#39;utilizzo
+* Punteggio di utilizzo
 * Impression
 * Clic
-* Canali multimediali in cui appaiono le risorse
+* Canali multimediali in cui vengono visualizzate le risorse
 
 ![approfondimenti](assets/insights.png)
