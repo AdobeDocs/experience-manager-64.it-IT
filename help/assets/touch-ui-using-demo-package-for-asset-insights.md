@@ -1,37 +1,39 @@
 ---
-title: Utilizzo del pacchetto dimostrativo per approfondimenti sulle risorse
-description: Utilizzate il pacchetto demo per abilitare  Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina Web.
+title: Utilizzo del pacchetto dimostrativo per Asset Insights
+description: Utilizza il pacchetto demo per abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web.
 contentOwner: AG
+feature: Informazioni sulla risorsa, rapporti sulle risorse
+role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 0%
+source-wordcount: '172'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo del pacchetto dimostrativo per informazioni sulle risorse {#using-demo-package-for-asset-insights}
+# Utilizzo del pacchetto demo per Asset Insights {#using-demo-package-for-asset-insights}
 
-Utilizzando il pacchetto demo, puoi abilitare  Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina Web di esempio.
+Utilizzando il pacchetto demo, puoi abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
 
-## Utilizzo di  AEM Assets Insights con una pagina Web di esempio {#using-aem-assets-insights-with-sample-web-page}
+## Utilizzo di AEM Assets Insights con la pagina web di esempio {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configura approfondimenti risorse seguendo le istruzioni riportate in [Configurazione di approfondimenti risorse](touch-ui-configuring-asset-insights.md).
-1. Scaricate l&#39;esempio  pacchetto AEM Assets da qui sotto e installate il pacchetto da CRXDE package manager.
+1. Configura Asset Insights seguendo le istruzioni disponibili in [Configurazione di Asset Insights](touch-ui-configuring-asset-insights.md).
+1. Scarica il pacchetto AEM Assets di esempio da qui e installa il pacchetto da CRXDE package manager.
 
    [Ottieni file](assets/insightsdemo.zip)
 
-1. Scaricate il file ZIP contenente la pagina Web di esempio dal seguente elenco ed estraetelo nel file system locale.
+1. Scarica il file ZIP contenente la pagina web di esempio da qui sotto ed estrai sul tuo file system locale.
 
    [Ottieni file](assets/demosite.zip)
 
-1. Fate clic sulla pagina Web per aprirla nel browser.
+1. Fare clic sulla pagina Web per aprirla nel browser Web.
 
    >[!CAUTION]
    >
-   >Pagina Web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione in un&#39;altra posizione, cambiare l&#39;indirizzo del server da localhost all&#39;indirizzo del server nel contenuto HTML della pagina Web.
+   >La pagina web è configurata per caricare la risorsa dal server localhost . Nel caso in cui il server sia in esecuzione in un altro punto, cambia l&#39;indirizzo del server da localhost a indirizzo del server nel contenuto HTML della pagina web.
 
    >[!NOTE]
    >
-   >La pagina Web esterna può essere AEM stessa.
+   >La pagina web esterna può essere in AEM.
