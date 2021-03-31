@@ -1,11 +1,13 @@
 ---
-title: Applicazione dei servizi di traduzione cloud alle cartelle
-description: Applicazione dei servizi di traduzione cloud alle cartelle
+title: Applicazione dei servizi cloud di traduzione alle cartelle
+description: Applicazione dei servizi cloud di traduzione alle cartelle
 contentOwner: AG
+feature: Traduzione
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 56%
 
 ---
@@ -13,21 +15,21 @@ ht-degree: 56%
 
 # Applicazione dei servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione di vostra scelta per garantire che le risorse vengano tradotte in base alle vostre esigenze.
+Adobe Experience Manager (AEM) consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione scelto per garantire che le risorse vengano tradotte in base alle tue esigenze.
 
-Potete applicare il servizio di traduzione cloud direttamente alla cartella delle risorse in modo che possa essere utilizzato durante i flussi di lavoro di traduzione.
+Puoi applicare il servizio cloud di traduzione direttamente alla cartella delle risorse in modo che possano essere utilizzati durante i flussi di lavoro di traduzione.
 
 ## Applicazione dei servizi di traduzione {#applying-the-translation-services}
 
-L’applicazione dei servizi di traduzione cloud direttamente nella cartella delle risorse elimina la necessità di configurare i servizi di traduzione al momento della creazione o dell’aggiornamento dei flussi di lavoro di traduzione.
+L’applicazione dei servizi cloud di traduzione direttamente nella cartella delle risorse elimina la necessità di configurare i servizi di traduzione quando crei o aggiorni flussi di lavoro di traduzione.
 
-1. Nell’interfaccia utente Risorse, seleziona la cartella a cui vuoi applicare i servizi di traduzione.
+1. Dall’interfaccia utente Assets, seleziona la cartella a cui desideri applicare i servizi di traduzione.
 1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Proprietà]** per visualizzare la pagina **[!UICONTROL Proprietà cartella]**.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vai alla scheda **[!UICONTROL Cloud Services]**.
-1. Dall’elenco Configurazioni Cloud Service, scegliete il provider di traduzione desiderato. Ad esempio, se desiderate utilizzare i servizi di traduzione di Microsoft, scegliete **[!UICONTROL Microsoft Translator]**.
+1. Dall’elenco Configurazioni Cloud Service, scegli il provider di traduzione desiderato. Ad esempio, se desideri usufruire di servizi di traduzione da Microsoft, scegli **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -41,8 +43,8 @@ L’applicazione dei servizi di traduzione cloud direttamente nella cartella del
 
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
-1. Installare il connettore da Package Manager.
-1. Tocca o fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Distribuzione > Cloud Services]**.
+1. Installa il connettore da Gestione pacchetti.
+1. Tocca o fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
