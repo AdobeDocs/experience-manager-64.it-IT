@@ -2,24 +2,26 @@
 title: Flusso di attività nella timeline
 description: 'Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline. '
 contentOwner: AG
+feature: Gestione risorse
+role: Business Practices, Amministratore
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 34%
+source-wordcount: '221'
+ht-degree: 33%
 
 ---
 
 
-# Flusso di attività nella cronologia {#activity-stream-in-timeline}
+# Flusso di attività nella timeline {#activity-stream-in-timeline}
 
-Questa funzione consente di visualizzare i registri attività per le risorse nella timeline. Se eseguite una delle seguenti operazioni relative alle risorse in Adobe Experience Manager (AEM) Assets, la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
+Questa funzione visualizza i registri attività per le risorse nella timeline. Se esegui una delle seguenti operazioni relative alle risorse in Adobe Experience Manager (AEM) Assets, la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
 
 Le seguenti operazioni vengono registrate nel flusso di attività:
 
 * Crea
 * Elimina
-* Download (comprese le rappresentazioni)
+* Download (incluse le rappresentazioni)
 * Pubblicazione
 * Annulla pubblicazione
 * Approva
@@ -34,7 +36,7 @@ Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse
 >
 >I flussi di lavoro transitori non vengono visualizzati nella timeline, perché per questi flussi di lavoro non vengono salvate informazioni sulla cronologia.
 
-Per visualizzare il flusso di attività, eseguite una o più operazioni sulla risorsa, selezionate la risorsa, quindi scegliete **[!UICONTROL Timeline]** dall&#39;elenco Navigazione globale.
+Per visualizzare il flusso di attività, esegui una o più operazioni sulla risorsa, seleziona la risorsa, quindi scegli **[!UICONTROL Timeline]** dall’elenco Navigazione globale.
 
 ![timeline-3](assets/timeline-3.png)
 
