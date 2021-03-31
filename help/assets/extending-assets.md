@@ -1,41 +1,43 @@
 ---
 title: Personalizzazione ed estensione delle risorse
-description: Scoprite come personalizzare ed estendere l’Editor risorse e condivisione di risorse, che offre agli utenti un’interfaccia e un set di funzionalità specifici.
+description: Scopri come personalizzare ed estendere Asset Share e Asset Editor, che offre agli utenti un’interfaccia e un set di funzionalità personalizzati.
 contentOwner: AG
+feature: Strumenti per gli sviluppatori
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 0%
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
 # Personalizzazione ed estensione delle risorse {#customizing-and-extending-assets}
 
-Asset Editor è il punto di accesso principale che gli utenti di un sito Web Enterprise Manager (AEM)  Adobe utilizzeranno per trovare, visualizzare e manipolare le risorse digitali presenti nell’archivio.
+Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager (AEM) utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
 
-In qualità di sviluppatore AEM, potete personalizzare ed estendere l’Editor risorse in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+In qualità di sviluppatore AEM, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
-* [Estensione dell’Editor risorse](asseteditorx.md)
+* [Estensione di Asset Editor](asseteditorx.md)
 * [Estensione della ricerca delle risorse](searchx.md)
-* [Elaborazione delle risorse tramite gestori e flussi di lavoro](media-handlers.md)
+* [Elaborazione delle risorse tramite gestori di contenuti multimediali e flussi di lavoro](media-handlers.md)
 * [Integrazione delle risorse con il flusso di attività](extending-activity-stream.md)
 * [Sviluppo proxy risorse](proxy.md)
 * [Best practice per la configurazione di ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzazione dell&#39;aspetto {#customizing-the-look-and-feel}
+## Personalizzazione del look and Feel {#customizing-the-look-and-feel}
 
-È possibile personalizzare i seguenti aspetti dell’aspetto e del comportamento dell’Editor risorse:
+Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di Asset Editor:
 
-* Logo: È possibile aggiungere il logo aziendale all&#39;interfaccia.
-* Colori e font: È possibile modificare i colori e i font utilizzati nell&#39;interfaccia.
-* Codice HTML: Per una personalizzazione più completa, potete modificare il codice HTML sottostante che definisce le interfacce.
+* Logo: Puoi aggiungere all’interfaccia il logo della tua organizzazione.
+* Colori e caratteri: È possibile modificare i colori e i font utilizzati nell’interfaccia.
+* Codice HTML: Per una personalizzazione più completa è possibile modificare il codice HTML sottostante che definisce le interfacce.
 
 ## Personalizzazione delle rappresentazioni {#customizing-renditions}
 
- terminologia di AEM Assets, una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
+Nella terminologia di AEM Assets, per rendering si intende il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
 
-Le rappresentazioni in cui è disponibile una particolare risorsa possono essere personalizzate e create nuove rappresentazioni.
+Le rappresentazioni disponibili in una particolare risorsa possono essere personalizzate e possono essere create nuove rappresentazioni.
