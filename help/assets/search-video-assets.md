@@ -1,31 +1,33 @@
 ---
 title: Ricerca di risorse video
-description: Utilizzate le parole chiave, le proprietà del file come il tipo Mime, le dimensioni o l'indicatore di ora modificato di recente per trovare rapidamente il file in  AEM Assets.
+description: Utilizza parole chiave, proprietà del file come un tipo MIME, dimensioni o timestamp modificato di recente per trovare rapidamente il tuo file in AEM Assets.
 contentOwner: AG
+feature: Video,Ricerca
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 4%
+source-wordcount: '582'
+ht-degree: 5%
 
 ---
 
 
 # Ricerca di risorse video {#searching-video-assets}
 
-Per risparmiare tempo e fatica a non dover sfogliare centinaia di video, utilizzate parole chiave, proprietà del file come il tipo di file o marca temporale modificata di recente per trovare rapidamente il file.
+Per risparmiare tempo e fatica a dover sfogliare potenzialmente centinaia di video, utilizza parole chiave, proprietà del file come il tipo di un file, o timestamp modificato di recente per trovare rapidamente il tuo file.
 
-Se il file ricercato non è visualizzato, è possibile modificare l’intero ambito di una ricerca facendo clic su una delle opzioni nella parte inferiore dei risultati della ricerca. Ad esempio, se cercate un file nella libreria Documenti ma non lo trovate, potete fare clic su Librerie per espandere la ricerca nelle altre librerie. Per ulteriori informazioni, vedere [Trovare un file o una cartella](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
+Se il file che stai cercando non viene visualizzato, puoi modificare l’intero ambito di una ricerca facendo clic su una delle opzioni nella parte inferiore dei risultati della ricerca. Ad esempio, se si cerca un file nella libreria Documenti ma non è possibile trovarlo, è possibile fare clic su Librerie per espandere la ricerca al resto delle librerie. Per ulteriori informazioni, vedere [Trova un file o una cartella](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
 
-Potete cercare risorse digitali in base a una o più delle seguenti proprietà:
+Puoi cercare le risorse digitali in base a una o più delle seguenti proprietà:
 
 | Campo di ricerca | Valori delle proprietà di ricerca |
 |---|---|
 | Tipi mime | [!UICONTROL Immagini],  [!UICONTROL Documenti],  [!UICONTROL Multimedia],  [!UICONTROL Archivi] o Altro. |
-| [!UICONTROL Ultima modifica] | Ora, Giorno, Settimana, Mese o Anno. |
+| [!UICONTROL Ultima modifica] | Ora, giorno, settimana, mese o anno. |
 | [!UICONTROL Dimensione file] | Piccolo, Medio o Grande. |
 | [!UICONTROL Stato pubblicazione] | Pubblicato o Non pubblicato. |
-| [!UICONTROL Stato approvazione] | Approvato o Rifiutato. |
+| [!UICONTROL Stato approvazione] | Approvato o rifiutato. |
 | [!UICONTROL Orientamento] | Orizzontale, Verticale o Quadrato. |
 | [!UICONTROL Stile] | Colore o Bianco e nero. |
 | Altezza video | Specificato come valore minimo e massimo.Value viene memorizzato solo nei metadati delle rappresentazioni video. |
@@ -36,26 +38,26 @@ Potete cercare risorse digitali in base a una o più delle seguenti proprietà:
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value è memorizzato solo nei metadati delle rappresentazioni video. |
 | Bitrate audio | Specificato come valore minimo e massimo.Value viene memorizzato solo nei metadati delle rappresentazioni video. |
 
-1. Nella pagina **[!UICONTROL Experience Manager]**, toccate **[!UICONTROL Risorse]** nella barra a sinistra.
+1. Nella pagina **[!UICONTROL Experience Manager]**, nella barra a sinistra, tocca **[!UICONTROL Risorse]**.
 
-   Se la barra a sinistra non è visibile, toccate l&#39;icona Attiva/disattiva barra laterale (le righe nell&#39;icona saranno di colore grigio scuro o blu).
+   Se la barra a sinistra non è visibile, tocca l’icona Attiva/Disattiva barra laterale (le linee nell’icona saranno grigie scure o blu).
 
-1. Aprite la cartella più appropriata come punto di partenza per la ricerca.
-1. Sulla barra degli strumenti, toccate l&#39;icona Ricerca (lente di ingrandimento).
-1. Cercate le risorse video effettuando una delle seguenti operazioni:
+1. Apri la cartella più adatta come punto di partenza per la ricerca.
+1. Sulla barra degli strumenti, tocca l’icona Ricerca (lente di ingrandimento).
+1. Cerca le risorse video effettuando una delle seguenti operazioni:
 
-   * Ricerca utilizzando le parole chiave
+   * Ricerca tramite parole chiave
 
-      Nel campo Inserisci parole chiave, iniziate a digitare e premete Invio.
+      Nel campo Inserisci parole chiave, inizia a digitare e quindi premi Invio.
 
       La visualizzazione corrente viene filtrata in base alle parole chiave digitate. I file vengono visualizzati come risultati di ricerca se le parole chiave corrispondono al nome del file, ai tag di metadati o ad altre proprietà.
 
    * Ricerca utilizzando le proprietà
 
-      Per cercare un file video basato su una proprietà come il tipo di video, potete limitare la ricerca selezionando una proprietà video o audio. Ad esempio, espandete il menu a discesa Formato video, quindi verificate uno o più valori. Per alcune proprietà è necessario immettere un valore minimo e massimo.
+      Per cercare un file video basato su una proprietà come il tipo di video, è possibile limitare la ricerca selezionando una proprietà video o audio. Ad esempio, espandere il menu a discesa Formato video e quindi controllare uno o più valori. Alcune proprietà richiedono l’immissione di un valore minimo e massimo.
 
-   * Ricerca mediante parole chiave e proprietà
+   * Ricerca tramite parole chiave e proprietà
 
-      Inserite una parola chiave ma, anziché premere Invio, espandete un elenco di proprietà video o audio e impostate i valori desiderati.
+      Immetti una parola chiave ma invece di premere Invio, espandi un elenco di proprietà video o audio e imposta i valori desiderati.
 
-1. (Facoltativo) Nella parte inferiore della pagina, toccate **[!UICONTROL Salva raccolta avanzata]**, immettete un nome per la ricerca. Selezionare **[!UICONTROL Public]** se si desidera che la ricerca salvata sia resa disponibile agli altri utenti dell&#39;account Adobe Experience Manager. Deselezionate questa opzione per rendere disponibile la ricerca solo al momento dell’accesso all’account. Toccate **[!UICONTROL Salva]**.
+1. (Facoltativo) Nella parte inferiore della pagina, tocca **[!UICONTROL Salva raccolta avanzata]**, immetti un nome per la ricerca. Seleziona **[!UICONTROL Pubblico]** se desideri che la ricerca salvata sia resa disponibile ad altri utenti dell&#39;account Adobe Experience Manager. Deseleziona se desideri che la ricerca sia resa disponibile solo al momento dell’accesso all’account. Tocca **[!UICONTROL Salva]**.
