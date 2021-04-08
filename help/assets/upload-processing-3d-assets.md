@@ -1,34 +1,36 @@
 ---
 title: Caricamento ed elaborazione di risorse 3D in AEM
 seo-title: Caricamento ed elaborazione di risorse 3D in AEM
-description: Procedure ottimali per il caricamento e l’elaborazione di risorse 3D.
-seo-description: Procedure ottimali per il caricamento e l’elaborazione di risorse 3D.
+description: Best practice per il caricamento e l’elaborazione di risorse 3D.
+seo-description: Best practice per il caricamento e l’elaborazione di risorse 3D.
 uuid: d8abf460-adff-4f0f-92ae-2c8651a17488
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: Risorse 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 67%
 
 ---
-
 
 # Caricamento ed elaborazione di risorse 3D in AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 non è più supportato.  Adobe consiglia di utilizzare la funzione delle risorse 3D in [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superiore.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
+>AEM 3D in AEM 6.4 non è più supportato. Adobe consiglia di utilizzare la funzione risorse 3D in [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superiore.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic).
 
 Utilizza i meccanismi standard di caricamento o sincronizzazione per portare le risorse 3D e i file di riferimento associati agli AEM Assets.
 
 Consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
 
- Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D principale. Tuttavia, questo non è un requisito.
+L&#39;Adobe consiglia di caricare tutti i file di riferimento prima o allo stesso tempo il file del modello 3D primario. Tuttavia, questo non è un requisito.
 
 Una volta completato il caricamento, i file 3D vengono convertiti e viene applicata un&#39;elaborazione aggiuntiva per preparare la risorsa per la visualizzazione e il rendering.
 
@@ -57,13 +59,13 @@ Una volta completato il caricamento, i file 3D vengono convertiti e viene applic
 
 La conversione e l&#39;elaborazione di file 3D in genere consumano notevoli risorse di CPU e di memoria su un server. Inoltre richiedono una notevole quantità di tempo. I tempi di elaborazione spesso variano notevolmente a seconda delle dimensioni del modello e delle capacità del server. Ad esempio, un tipico modello piccolo con meno di 100.000 facce è solitamente pronto per la visualizzazione in meno di un minuto e viene elaborato completamente in 2-3 minuti. Un grande modello con più di un milione di facce può invece richiedere decine di minuti per essere elaborato completamente.
 
-I lavori di conversione, elaborazione e rendering vengono messi in coda in base alle necessità per evitare di rallentare troppo il server. Messaggio &quot;In attesa di elaborazione...&quot; a volte viene visualizzata nella **[!UICONTROL vista a schede]** al momento del caricamento delle risorse. Questo stato indica che altri lavori di elaborazione o rendering devono terminare prima che l&#39;attività corrente venga elaborata.
+I lavori di conversione, elaborazione e rendering vengono messi in coda in base alle necessità per evitare di rallentare troppo il server. Messaggio &quot;In attesa di elaborazione...&quot; talvolta viene visualizzato nella **[!UICONTROL Vista a schede]** al momento del caricamento delle risorse. Questo stato indica che altri lavori di elaborazione o rendering devono terminare prima che l&#39;attività corrente venga elaborata.
 
-Sono disponibili meccanismi per limitare l’utilizzo della CPU per l’elaborazione dell’assimilazione e per il rendering. Per informazioni su come configurare i limiti della CPU, vedere [Impostazioni di configurazione avanzate](advanced-config-3d.md).
+Sono disponibili meccanismi per limitare l’utilizzo della CPU per l’elaborazione dell’acquisizione e per il rendering. Consulta [Impostazioni di configurazione avanzate](advanced-config-3d.md) per informazioni su come configurare i limiti della CPU.
 
 ## Monitoraggio dello stato di elaborazione dei file 3D caricati {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-Solo in **[!UICONTROL Vista a schede]**, lo stato e la progressione dell&#39;elaborazione vengono visualizzati come banner di avanzamento sulla scheda della risorsa. Ogni modello 3D caricato in genere si trova nelle seguenti fasi di elaborazione ordinata da 4 a 6:
+Solo in **[!UICONTROL Vista a schede]**, lo stato e la progressione di elaborazione vengono visualizzati come banner di avanzamento sulla scheda della risorsa. Ogni modello 3D caricato in genere subisce le seguenti 4-6 fasi di elaborazione ordinata:
 
 <table> 
  <tbody> 
@@ -79,38 +81,37 @@ Solo in **[!UICONTROL Vista a schede]**, lo stato e la progressione dell&#39;ela
   </tr> 
   <tr> 
    <td>2</td> 
-   <td>Conversione del formato</td> 
+   <td>Formato di conversione</td> 
    <td>Il modello 3D viene convertito da un formato nativo (Autodesk® Maya® o Autodesk® 3ds Max®) a un formato intermedio (FBX).</td> 
   </tr> 
   <tr> 
    <td>3</td> 
    <td>Creazione dell'anteprima</td> 
-   <td>Il file FBX o OBJ viene assimilato ed elaborato. Le dipendenze dei file vengono valutate e risolte, ove possibile, come riferimenti di risorse.</td> 
+   <td>Il file FBX o OBJ viene acquisito ed elaborato. Le dipendenze dei file vengono valutate e risolte, ove possibile, come riferimenti di risorse.</td> 
   </tr> 
   <tr> 
    <td>4</td> 
-   <td>Creazione di un’ombra esterna</td> 
-   <td>Facoltativo. Consente di generare un'ombreggiatura di occlusione ambiente sul piano terreno sotto l'oggetto 3D. Vedere <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> per attivare o disattivare questa elaborazione.</td> 
+   <td>Creazione dell'ombra di sfondo</td> 
+   <td>Facoltativo. Consente di generare un’ombreggiatura di occlusione ambiente sul piano terreno sotto l’oggetto 3D. Per abilitare o disabilitare questa elaborazione, consulta <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> .</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>Creazione di mappe luminose</td> 
-   <td>Facoltativo. Consente di aumentare la qualità dell'anteprima interattiva e accelerare il rendering con il modulo di rendering predefinito. Vedere <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> per attivare o disattivare questa elaborazione.</td> 
+   <td>Facoltativo. Consente di aumentare la qualità dell'anteprima interattiva e accelerare il rendering con il modulo di rendering predefinito. Per abilitare o disabilitare questa elaborazione, consulta <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> .</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
-   <td>Creazione di animazioni</td> 
-   <td>Facoltativo. Consente di generare una semplice animazione che viene poi utilizzata come miniatura visiva nella Vista a schede. Vedere <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> per attivare o disattivare questa elaborazione.</td> 
+   <td>Creazione di un'animazione</td> 
+   <td>Facoltativo. Consente di generare una semplice animazione che viene poi utilizzata come miniatura visiva nella Vista a schede. Per abilitare o disabilitare questa elaborazione, consulta <a href="/help/assets/advanced-config-3d.md">Impostazioni di configurazione avanzate</a> .</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
    <td>In attesa di elaborazione</td> 
-   <td>Visualizzato quando altre risorse 3D hanno priorità di elaborazione. Per esempio, risorse caricate in precedenza che non hanno ancora completato l'elaborazione.</td> 
+   <td>Mostrato quando altre risorse 3D hanno priorità di elaborazione. Per esempio, risorse caricate in precedenza che non hanno ancora completato l'elaborazione.</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Potete visualizzare una risorsa 3D in **[!UICONTROL Visualizzazione dettagli]** o eseguirne il rendering al termine dell’anteprima della creazione. Non è necessario attendere il completamento di tutti gli stadi di elaborazione.
-
+>Puoi visualizzare una risorsa 3D in **[!UICONTROL Vista dettagli]** o eseguirne il rendering al termine della fase Creazione anteprima. Non è necessario attendere il completamento di tutti gli stadi di elaborazione.
