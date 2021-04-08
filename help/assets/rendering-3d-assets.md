@@ -1,22 +1,24 @@
 ---
 title: Rendering delle risorse 3D
 seo-title: Rendering delle risorse 3D
-description: Scoprite come eseguire il rendering delle risorse 3D modificate e salvate in AEM per creare immagini 2D per le pagine Web.
-seo-description: Scoprite come eseguire il rendering delle risorse 3D modificate e salvate in AEM per creare immagini 2D per le pagine Web.
+description: Scopri come eseguire il rendering delle risorse 3D manipolate e salvate in AEM per creare immagini 2D per le pagine web.
+seo-description: Scopri come eseguire il rendering delle risorse 3D manipolate e salvate in AEM per creare immagini 2D per le pagine web.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: Risorse 3D
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 73%
 
 ---
-
 
 # Rendering delle risorse 3D {#rendering-d-assets}
 
@@ -51,14 +53,14 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
    Vedi [Visualizzazione delle risorse 3D](viewing-3d-assets.md).
 
 1. Da Adobe Experience Manager, nella pagina di **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Asset]**.
-1. Vicino all&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL View]**, toccare **[!UICONTROL Card View]**.
+1. Dall’elenco a discesa **[!UICONTROL Visualizza]** nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**.
 1. Passa all’oggetto 3D che desideri renderizzare.
 1. Tocca la scheda dell&#39;oggetto 3D per aprirla nella pagina dei dettagli della risorsa.
 1. Nell&#39;angolo in alto a sinistra della pagina, tocca il menu a discesa, poi seleziona **[!UICONTROL Rendering]**.
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. Nell’angolo superiore destro della pagina dei dettagli della risorsa, toccate l’icona **[!UICONTROL Selettore fase]** (evidenziatore), quindi selezionate un nome di area di visualizzazione con lo sfondo e l’illuminazione che desiderate applicare all’oggetto 3D.
+1. Nell’angolo in alto a destra della pagina dei dettagli della risorsa, tocca l’icona **[!UICONTROL Selettore area di visualizzazione]** (faretto), quindi seleziona un nome di area di visualizzazione con lo sfondo e l’illuminazione che desideri applicare all’oggetto 3D.
 
    Vedi [Utilizzo delle aree di visualizzazione in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
@@ -66,7 +68,7 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
    **[!UICONTROL Icona Selettore area di visualizzazione]**
 
-1. Nell&#39;elenco a discesa **[!UICONTROL Rendering]** a sinistra della pagina dei dettagli della risorsa, selezionate un renderer.
+1. Seleziona un renderer dall’elenco a discesa **[!UICONTROL Rendering]** sul lato sinistro della pagina dei dettagli della risorsa.
 
    Il modulo di rendering predefinito **Rapid Refine** è sempre disponibile. Se l’area di visualizzazione selezionata è un formato nativo, nell&#39;elenco viene reso disponibile anche il corrispondente modulo di rendering di terze parti.
 
@@ -74,12 +76,12 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 
 1. Effettua le seguenti operazioni:
 
-   * Nei campi **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**, immettere la larghezza e l&#39;altezza in pixel per cui si desidera eseguire il rendering dell&#39;immagine.
-   * Nel campo **[!UICONTROL Nome immagine]**, immettete il nome dell’immagine di cui è stato effettuato il rendering.
-   * Nel campo **[!UICONTROL Percorso di esportazione]**, immettete il percorso in cui memorizzare l&#39;immagine di cui si desidera eseguire il rendering. Oppure, toccate l&#39;icona **[!UICONTROL Browse]** e individuate una posizione.
-   * (Facoltativo) Selezionare o deselezionare la casella di controllo **[!UICONTROL Sovrascrivi immagine esistente]e**.
+   * Nei campi **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**, immetti la larghezza e l&#39;altezza dei pixel desiderati per il rendering dell&#39;immagine.
+   * Nel campo **[!UICONTROL Nome immagine]** , immetti il nome dell’immagine di cui è stato effettuato il rendering.
+   * Nel campo **[!UICONTROL Percorso di esportazione]**, immetti il percorso in cui memorizzare l&#39;immagine di cui hai effettuato il rendering. Oppure, tocca l&#39;icona **[!UICONTROL Sfoglia]** e passa a una posizione.
+   * (Facoltativo) Seleziona o deseleziona la casella di controllo **[!UICONTROL Sovrascrivi immagine esistente]e** .
 
-1. Nell&#39;angolo superiore destro della pagina dei dettagli della risorsa, toccate l&#39;icona **[!UICONTROL Selettore fotocamera]**. Seleziona una visualizzazione della videocamera da applicare all&#39;immagine renderizzata.
+1. Nell’angolo in alto a destra della pagina dei dettagli della risorsa, tocca l’icona **[!UICONTROL Selettore videocamera]** . Seleziona una visualizzazione della videocamera da applicare all&#39;immagine renderizzata.
 
    Le barre sinistra e destra o le barre superiore e inferiore sono un indicatore visivo di quali parti della visualizzazione saranno renderizzate. Quando la videocamera viene fornita dall’area di visualizzazione selezionata, è possibile selezionare una videocamera predefinita.
 
@@ -90,4 +92,3 @@ I lavori di conversione, elaborazione e rendering vengono messi in coda sul serv
 1. Tocca **[!UICONTROL Avvia rendering]** per iniziare il processo di rendering.
 
    Viene visualizzato temporaneamente un messaggio per indicare che il rendering è stato avviato. Per comodità, questo messaggio include anche un collegamento alla cartella di output selezionata in modo da potervi accedere direttamente.
-
