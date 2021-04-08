@@ -1,22 +1,24 @@
 ---
 title: Utilizzo di Dynamic Media
 seo-title: Utilizzo di Dynamic Media
-description: Scoprite come utilizzare Dynamic Media per distribuire risorse da utilizzare su siti Web, mobili e social network.
-seo-description: Scoprite come utilizzare Dynamic Media per distribuire risorse da utilizzare su siti Web, mobili e social network.
+description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
+seo-description: Scopri come utilizzare Dynamic Media per distribuire risorse da utilizzare sui siti web, mobili e social.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
+exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
+feature: Gestione risorse, rappresentazioni
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 28%
+source-wordcount: '461'
+ht-degree: 27%
 
 ---
-
 
 # Utilizzo di Dynamic Media {#working-with-dynamic-media}
 
@@ -26,13 +28,13 @@ Dynamic Media fornisce esperienze di visualizzazione interattive, con funzioni q
 
 >[!NOTE]
 >
->Un articolo della community è disponibile in [Utilizzo con Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>È disponibile un articolo della community su [Utilizzo di Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
 
-## Operazioni con Dynamic Media {#what-you-can-do-with-dynamic-media}
+## Operazioni possibili con Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media consente di gestire le risorse prima di pubblicarle. Come lavorare con le risorse in generale viene descritto dettagliatamente in [Utilizzo di Risorse digitali](managing-assets-touch-ui.md). Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse; visualizzare e modificare le proprietà e cercare le risorse.
+Dynamic Media consente di gestire le risorse prima di pubblicarle. Come lavorare con le risorse in generale viene descritto in dettaglio in [Utilizzo di risorse digitali](managing-assets-touch-ui.md). Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse; visualizzazione e modifica delle proprietà e ricerca delle risorse.
 
-Le funzioni solo per elementi multimediali dinamici includono quanto segue:
+Le funzioni solo Dynamic Media includono:
 
 * [Banner a carosello](carousel-banners.md)
 * [Set di immagini](image-sets.md)
@@ -51,19 +53,19 @@ Vedere anche [Configurazione di Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Per comprendere le differenze tra l&#39;utilizzo di Dynamic Media e l&#39;integrazione di Dynamic Media Classic con AEM, vedere [Integrazione di Dynamic Media Classic rispetto a Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Per comprendere le differenze tra l&#39;utilizzo di Dynamic Media e l&#39;integrazione di Dynamic Media Classic con AEM, vedere [Integrazione di Dynamic Media Classic con Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media abilitato e Dynamic Media disabilitato {#dynamic-media-on-versus-dynamic-media-off}
 
-Potete verificare se Dynamic Media è abilitato (attivato) dalle seguenti caratteristiche:
+È possibile verificare se Dynamic Media è abilitato (attivato) in base alle seguenti caratteristiche:
 
-* Le rappresentazioni dinamiche sono disponibili quando si scaricano o si visualizzano in anteprima le risorse.
+* Le rappresentazioni dinamiche sono disponibili quando si scaricano o visualizzano in anteprima le risorse.
 * Sono disponibili set di immagini, set 360 gradi e set di file multimediali diversi.
-* Vengono create delle rappresentazioni PTIFF.
+* Vengono create rappresentazioni PTIFF.
 
-Quando fate clic su una risorsa immagine, la visualizzazione della risorsa è diversa con Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilizza i visualizzatori HTML5 on-demand.
+Quando fai clic su una risorsa immagine, la visualizzazione della risorsa è diversa con Dynamic Media [abilitato](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilizza i visualizzatori HTML5 on-demand.
 
-### Rappresentazioni dinamiche {#dynamic-renditions}
+### Rendering dinamici {#dynamic-renditions}
 
 Le rappresentazioni dinamiche come i predefiniti per immagini e visualizzatori (in **[!UICONTROL Dynamic]**) sono disponibili quando Dynamic Media è abilitato.
 
@@ -71,19 +73,19 @@ Le rappresentazioni dinamiche come i predefiniti per immagini e visualizzatori (
 
 ### Set di immagini, set 360 gradi, set di file multimediali diversi {#image-sets-spins-sets-mixed-media-sets}
 
-Se è attivato Dynamic Media, sono disponibili set di immagini, set 360 gradi e set di file multimediali diversi.
+Se Dynamic Media è abilitato, sono disponibili set di immagini, set 360 gradi e set di file multimediali diversi.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### Rappresentazioni PTIFF {#ptiff-renditions}
+### Rendering PTIFF {#ptiff-renditions}
 
-Le risorse multimediali dinamiche abilitate includono `pyramid.tiffs`.
+Le risorse abilitate per gli elementi multimediali dinamici includono `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Modifica delle visualizzazioni delle risorse {#asset-views-change}
 
-Con Dynamic Media abilitato, è possibile ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. Potete anche fare clic o toccare per ingrandire una determinata area. Ripristina consente di passare alla versione originale e di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. L&#39;aspetto di Dynamic Media abilitato è simile al seguente:
+Con Dynamic Media abilitato, è possibile ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. Puoi anche fare clic o toccare per ingrandire una determinata area. Ripristina la versione originale consente di visualizzare l’immagine a schermo intero facendo clic sulle frecce diagonali. Dynamic Media abilitato si presenta così:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
