@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: Risorse 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 85%
+source-wordcount: '433'
+ht-degree: 84%
 
 ---
-
 
 # Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -43,15 +45,15 @@ ht-degree: 85%
 
    Configura le impostazioni di rendering con i seguenti suggerimenti:
 
-   * **** Commontab
+   * **** Scheda Commons
 
-      Deselezionare la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le videocamere con rendering.
+      Deseleziona la casella di controllo **[!UICONTROL Canale alfa (maschera)]** per tutte le videocamere renderizzabili.
 
    * **[!UICONTROL Scheda Qualità]**
 
-      * **[!UICONTROL Qualità]** `- 0.5` complessiva o inferiore
-      * **[!UICONTROL Modalità]**  Diffusione indiretta (GI) -  `Final Gather`
-      * **[!UICONTROL Dimensioni]**  filtro-  `2.0`,  `2.0`
+      * **[!UICONTROL Qualità globale]** `- 0.5` o inferiore
+      * **[!UICONTROL Modalità]**  Indirect Diffuse (GI) -  `Final Gather`
+      * **[!UICONTROL Dimensioni]**  filtro -  `2.0`,  `2.0`
    * Effettua il rendering della scena con le dimensioni immagine che prevedi di utilizzare. Se necessario, perfeziona le luci o le impostazioni di rendering, o entrambi, fino a ottenere il risultato desiderato.
 
        Tieni presente che il rendering con Mental Ray, utilizzando l’illuminazione basata sull’immagine, è molto lento e fa un uso intensivo della CPU. Adobe consiglia di configurare le impostazioni per qualità inferiore, che forniscono comunque una qualità di rendering accettabile.
@@ -66,6 +68,5 @@ ht-degree: 85%
 
    Se Autodesk® Maya® non è configurato sul server AEM, esporta un file FBX da Maya e caricalo in AEM.
 
-1. Apri Proprietà risorsa in AEM. Impostare **[!UICONTROL Title]** su una stringa appropriata che verrà visualizzata nell&#39;elenco a discesa **[!UICONTROL Selettore fase]**. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
+1. Apri Proprietà risorsa in AEM. Imposta **[!UICONTROL Titolo]** su una stringa adatta che verrà visualizzata nell&#39;elenco a discesa **[!UICONTROL Selettore stage]**. Verifica che **[!UICONTROL Class]** (Classe) sia impostato su **[!UICONTROL 3D Stage]** (Area di visualizzazione 3D). Salva e chiudi.
 1. Apri una risorsa 3D, seleziona la nuova area di visualizzazione e verifica che anteprima e rendering siano come previsto.
-
