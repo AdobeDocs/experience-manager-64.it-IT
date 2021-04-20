@@ -2,8 +2,8 @@
 title: Considerazioni sulla rete delle risorse
 description: Esamina considerazioni sulla rete durante la progettazione di un'implementazione AEM Assets.
 contentOwner: AG
-feature: Strumenti per gli sviluppatori
-role: Architetto,Amministratore
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

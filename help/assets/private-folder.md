@@ -2,8 +2,8 @@
 title: Condivisione di cartelle private
 description: Scopri come creare una cartella privata in Adobe Experience Manager (AEM) Assets e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
-feature: Collaborazione
-role: Professionista
+feature: Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

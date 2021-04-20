@@ -2,8 +2,8 @@
 title: Creare e configurare le pagine dell’Editor risorse
 description: Scopri come creare pagine dell’Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
-feature: Strumenti per sviluppatori,Gestione risorse
-role: Business Practices, Amministratore
+feature: Developer Tools,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

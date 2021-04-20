@@ -2,8 +2,8 @@
 title: Abilitazione del rilevamento dei duplicati
 description: Scopri come abilitare il rilevamento delle risorse duplicate in AEM.
 contentOwner: AG
-feature: Gestione delle risorse, rapporti sulle risorse
-role: Business Practices, Amministratore
+feature: Asset Management,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

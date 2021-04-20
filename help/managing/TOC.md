@@ -6,8 +6,8 @@ user-guide-title: Guida utente alla gestione di AEM 6.4
 breadcrumb-title: Guida alla gestione
 user-guide-description: Scopri come gestire un progetto AEM.
 feature-set: Experience Manager Sites
-feature: Distribuzione
-role: Professionista
+feature: Deploying
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

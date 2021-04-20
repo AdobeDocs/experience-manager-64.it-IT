@@ -3,8 +3,8 @@ title: Gestire le raccolte di risorse
 description: Scopri le attività per gestire le raccolte di risorse, ad esempio creare, visualizzare, eliminare, modificare e scaricare le raccolte.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Raccolte
-role: Professionista
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

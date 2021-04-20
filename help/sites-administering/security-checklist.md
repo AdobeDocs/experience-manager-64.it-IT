@@ -2,7 +2,7 @@
 title: Lista di controllo sicurezza
 seo-title: Lista di controllo sicurezza
 description: Scopri le varie considerazioni sulla sicurezza durante la configurazione e la distribuzione di AEM.
-feature: Sicurezza
+feature: Security
 seo-description: Scopri le varie considerazioni sulla sicurezza durante la configurazione e la distribuzione di AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

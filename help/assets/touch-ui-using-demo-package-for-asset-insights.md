@@ -2,8 +2,8 @@
 title: Utilizzo del pacchetto dimostrativo per Asset Insights
 description: Utilizza il pacchetto demo per abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web.
 contentOwner: AG
-feature: Informazioni sulla risorsa, rapporti sulle risorse
-role: Business Practices, Amministratore
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Guida all’ottimizzazione delle prestazioni di Assets
 description: Aree principali relative alla configurazione AEM, alle modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di AEM Assets.
 contentOwner: AG
-feature: Gestione risorse
-role: Architetto,Amministratore
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

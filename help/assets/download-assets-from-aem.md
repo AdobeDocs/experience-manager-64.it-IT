@@ -2,8 +2,8 @@
 title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scopri come scaricare le risorse da [!DNL Adobe Experience Manager] e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
-feature: Gestione risorse,Distribuzione risorse
-role: Professionista
+feature: Asset Management,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

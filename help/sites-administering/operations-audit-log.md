@@ -2,7 +2,7 @@
 title: Manutenzione del registro di controllo in AEM 6
 seo-title: Manutenzione del registro di controllo in AEM 6
 description: Scopri la Manutenzione del log di controllo in AEM.
-feature: Operazioni
+feature: Operations
 seo-description: Scopri la Manutenzione del log di controllo in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

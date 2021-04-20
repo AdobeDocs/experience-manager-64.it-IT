@@ -2,7 +2,7 @@
 title: Controllare le operazioni di gestione degli utenti in AEM
 seo-title: Controllare le operazioni di gestione degli utenti in AEM
 description: Scopri come eseguire il controllo delle operazioni di gestione degli utenti in AEM.
-feature: Operazioni
+feature: Operations
 seo-description: Scopri come eseguire il controllo delle operazioni di gestione degli utenti in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

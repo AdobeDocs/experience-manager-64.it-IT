@@ -2,8 +2,8 @@
 title: Guida di Assets
 description: Questa guida descrive tutte le attività di AEM Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
-feature: Gestione risorse
-role: Business Practices, Architetto, Amministratore
+feature: Asset Management
+role: Business Practitioner,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

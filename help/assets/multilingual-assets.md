@@ -2,7 +2,7 @@
 title: Risorse multilingue
 description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759

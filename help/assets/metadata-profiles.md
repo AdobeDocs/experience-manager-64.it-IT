@@ -2,8 +2,8 @@
 title: Utilizzare i profili di metadati per applicare i metadati predefiniti a tutte le risorse di una cartella
 description: Informazioni sui profili di metadati per le risorse. Scopri come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
-feature: Metadati
-role: Business Practices, Amministratore
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

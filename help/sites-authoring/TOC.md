@@ -7,8 +7,8 @@ user-guide-title: Guida utente all’authoring di AEM 6.4
 breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 feature-set: Experience Manager Sites
-feature: 'Authoring  '
-role: Professionista
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

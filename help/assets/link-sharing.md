@@ -2,8 +2,8 @@
 title: Condividere le risorse tramite un collegamento
 description: Condividi risorse, cartelle e raccolte come URL.
 contentOwner: AG
-feature: Condivisione collegamenti, Gestione risorse
-role: Professionista
+feature: Link Sharing,Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

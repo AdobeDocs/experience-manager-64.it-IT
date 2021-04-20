@@ -2,8 +2,8 @@
 title: Attività correlate
 description: Scopri come mettere in relazione le risorse che condividono alcuni attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
-feature: Gestione risorse, collaborazione
-role: Professionista
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Integrazione delle risorse con il flusso di attività
 description: Descrive le funzionalità di registrazione di AEM e come configurare AEM per registrare eventi specifici.
 contentOwner: AG
-feature: Gestione risorse
-role: Developer (Sviluppatore)
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

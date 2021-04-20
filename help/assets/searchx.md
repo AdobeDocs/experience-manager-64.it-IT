@@ -2,8 +2,8 @@
 title: Estensione della ricerca delle risorse
 description: Estendi le funzionalità di ricerca di AEM Assets oltre la ricerca predefinita delle risorse in base alle stringhe.
 contentOwner: AG
-feature: Ricerca
-role: Developer (Sviluppatore)
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

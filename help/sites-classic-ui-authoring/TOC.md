@@ -7,8 +7,8 @@ user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6
 breadcrumb-title: Guida all’authoring con interfaccia classica
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
 feature-set: Experience Manager Sites
-feature: 'Authoring  '
-role: Professionista
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Best practice per i formati di file delle risorse
 description: Best practice per il supporto dei file in AEM Assets.
 contentOwner: AG
-feature: Gestione delle risorse, Strumenti per sviluppatori
+feature: Asset Management,Developer Tools
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633

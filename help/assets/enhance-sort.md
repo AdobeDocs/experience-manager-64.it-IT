@@ -2,8 +2,8 @@
 title: Ordinamento migliorato delle risorse in AEM
 description: Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 contentOwner: AG
-feature: Ricerca
-role: Professionista
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

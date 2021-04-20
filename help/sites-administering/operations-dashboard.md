@@ -2,7 +2,7 @@
 title: Dashboard operazioni
 seo-title: Dashboard operazioni
 description: Scopri come utilizzare il dashboard delle operazioni.
-feature: Operazioni
+feature: Operations
 seo-description: Scopri come utilizzare il dashboard delle operazioni.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

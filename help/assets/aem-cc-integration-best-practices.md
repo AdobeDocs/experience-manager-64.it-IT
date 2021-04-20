@@ -2,7 +2,7 @@
 title: Best practice per l’integrazione di AEM e Creative Cloud
 description: Best practice per integrare un’implementazione AEM con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza
 contentOwner: AG
-feature: Collaborazione, Adobe Asset Link, App desktop
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt

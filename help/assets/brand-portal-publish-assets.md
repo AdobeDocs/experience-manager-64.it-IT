@@ -3,7 +3,7 @@ title: Pubblicare cartelle su Brand Portal
 description: Scopri come pubblicare e annullare la pubblicazione delle risorse su Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Professionista
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

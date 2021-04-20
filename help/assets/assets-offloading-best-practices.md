@@ -2,8 +2,8 @@
 title: Best practice per l’offload di risorse
 description: Casi d’uso e best practice consigliati per scaricare i flussi di lavoro di acquisizione e replica delle risorse in AEM Assets.
 contentOwner: AG
-feature: Gestione risorse
-role: Business Practices, Amministratore
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

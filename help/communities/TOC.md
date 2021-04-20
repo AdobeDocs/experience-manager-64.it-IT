@@ -7,7 +7,7 @@ breadcrumb-title: Guida di Communities
 user-guide-description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
 feature-set: Experience Manager
 feature: Communities
-role: Professionista
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

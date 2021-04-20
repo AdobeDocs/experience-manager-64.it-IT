@@ -2,8 +2,8 @@
 title: Rapporti sull’utilizzo e la condivisione delle risorse digitali.
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
-feature: Rapporti sulle risorse,Gestione delle risorse
-role: Business Practices, Amministratore
+feature: Asset Reports,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

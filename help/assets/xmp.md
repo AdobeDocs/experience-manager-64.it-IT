@@ -2,8 +2,8 @@
 title: Metadati XMP
 description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) utilizzato da AEM Assets per la gestione dei metadati. XMP fornisce un formato standard per la creazione, l'elaborazione e lo scambio di metadati per un'ampia varietà di applicazioni.
 contentOwner: AG
-feature: Metadati
-role: Business Practices, Amministratore
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

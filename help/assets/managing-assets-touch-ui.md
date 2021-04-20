@@ -3,7 +3,7 @@ title: Gestione delle risorse digitali tramite AEM Assets
 description: Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestione risorse, Ricerca, Rendering, Collaborazione
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

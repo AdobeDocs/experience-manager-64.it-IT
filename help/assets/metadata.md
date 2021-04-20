@@ -2,8 +2,8 @@
 title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
 description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
-feature: Assegnazione tag, metadati
-role: Architetto, leader
+feature: Tagging, Metadata
+role: Architect, Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

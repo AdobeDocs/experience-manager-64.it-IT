@@ -2,8 +2,8 @@
 title: Elabora risorse utilizzando gestori e flussi di lavoro per contenuti multimediali
 description: Scopri diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
-feature: Flusso di lavoro, rappresentazioni
-role: Professionista
+feature: Workflow,Renditions
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

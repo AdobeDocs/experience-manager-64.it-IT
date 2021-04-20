@@ -2,8 +2,8 @@
 title: Best practice per tradurre le risorse in modo efficiente
 description: Procedure consigliate per una gestione efficiente delle risorse, al fine di sincronizzare diverse versioni tradotte e semplificare i flussi di lavoro di traduzione.
 contentOwner: AG
-feature: Traduzione
-role: Business Practices, Amministratore
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

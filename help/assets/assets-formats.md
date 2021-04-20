@@ -2,8 +2,8 @@
 title: Formati di file supportati in AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da AEM Assets e delle funzioni supportate per ciascun formato.
 contentOwner: AG
-feature: Gestione risorse, rappresentazioni
-role: Business Practices, Amministratore
+feature: Asset Management,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

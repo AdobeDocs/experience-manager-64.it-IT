@@ -2,8 +2,8 @@
 title: Utilizza la funzione Asset Insights per tenere traccia dell’utilizzo delle immagini
 description: La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
-feature: Informazioni sulla risorsa, rapporti sulle risorse
-role: Business Practices, Amministratore
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

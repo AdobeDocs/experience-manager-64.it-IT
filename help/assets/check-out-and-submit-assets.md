@@ -2,8 +2,8 @@
 title: Archiviare ed estrarre le risorse digitali per la modifica
 description: Scopri come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
-feature: Gestione risorse
-role: Professionista
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

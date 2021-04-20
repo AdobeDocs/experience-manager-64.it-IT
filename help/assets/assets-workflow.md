@@ -2,8 +2,8 @@
 title: Elabora le risorse per eseguire processi aziendali, eseguire audit, raggiungere la conformità e mantenere un livello di integrità di base
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
-feature: Flusso di lavoro, rappresentazioni
-role: Business Practices, Amministratore
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

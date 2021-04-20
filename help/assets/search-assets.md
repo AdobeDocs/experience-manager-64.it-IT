@@ -2,8 +2,8 @@
 title: Cercare risorse in AEM
 description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
-feature: Ricerca,Metadati
-role: Professionista
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

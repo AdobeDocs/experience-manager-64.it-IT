@@ -2,8 +2,8 @@
 title: Sviluppo proxy risorse
 description: 'Un proxy è un''istanza AEM che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy AEM, le operazioni supportate, i componenti proxy e come sviluppare un proxy worker personalizzato. '
 contentOwner: AG
-feature: Elaborazione risorse
-role: Amministratore, architetto
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

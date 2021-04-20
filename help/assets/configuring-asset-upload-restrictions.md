@@ -2,7 +2,7 @@
 title: Configurare le restrizioni di caricamento delle risorse
 description: Scopri come configurare Risorse Adobe Experience Manager (AEM) per limitare il tipo di risorse (file) che gli utenti possono caricare.
 contentOwner: AG
-feature: Caricare, Acquisizione risorse, Gestione risorse
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

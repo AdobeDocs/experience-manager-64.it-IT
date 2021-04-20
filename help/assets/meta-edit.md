@@ -2,8 +2,8 @@
 title: Come modificare o aggiungere metadati
 description: Scopri i metadati delle risorse in AEM Assets e vari modi per modificarli.
 contentOwner: AG
-feature: Metadati
-role: Business Practices, Amministratore
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

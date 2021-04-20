@@ -2,8 +2,8 @@
 title: Introduzione a [!DNL Adobe Experience Manager Assets]
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi d’uso e l’offerta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Gestione risorse
-role: Leader,Architetto,Professionista aziendale
+feature: Asset Management
+role: Leader,Architect,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

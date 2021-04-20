@@ -3,8 +3,8 @@ title: Riutilizzare le risorse con MSM
 description: Utilizzare risorse su più pagine/cartelle derivate e collegate a risorse principali. Le risorse rimangono sincronizzate con una copia primaria e, con alcuni clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestione risorse,Gestione siti multipli
-role: Business Practices, Amministratore, Architetto
+feature: Asset Management,Multi Site Manager
+role: Business Practitioner,Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

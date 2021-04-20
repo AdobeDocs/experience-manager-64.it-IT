@@ -6,8 +6,8 @@ user-guide-title: Note sulla versione di Adobe Experience Manager 6.4
 breadcrumb-title: Note sulla versione
 user-guide-description: Scopri le nuove funzioni di AEM 6.4 nelle note sulla versione.
 feature-set: Experience Manager
-feature: Informazioni sulla versione
-role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

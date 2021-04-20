@@ -2,8 +2,8 @@
 title: Multi-tenancy per raccolte, snippet e modelli di snippet
 description: Segrega il contenuto nell’archivio CRX in base all’organizzazione del cliente per impedire accessi non autorizzati.
 contentOwner: AG
-feature: Raccolte
-role: Architetto,Amministratore,Leader
+feature: Collections
+role: Architect,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

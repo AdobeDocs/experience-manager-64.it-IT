@@ -2,8 +2,8 @@
 title: Ricerca full-text GQL
 description: Esplora la funzione di ricerca full-text GQL in AEM Assets. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
 contentOwner: AG
-feature: Ricerca,Metadati
-role: Professionista
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
