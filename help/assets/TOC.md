@@ -7,10 +7,10 @@ user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 49%
+source-wordcount: '627'
+ht-degree: 47%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 49%
    + [Condivisione di cartelle private](private-folder.md)
    + [Linee guida per la formazione sui servizi di contenuti avanzati](smart-tags-training-guidelines.md)
    + [Rappresentazioni video](video-renditions.md)
-+ Risorse 3D {#three-d}
-   + [Note sulla versione AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Utilizzo di risorse 3D](assets-3d.md)
-   + [Installazione e configurazione di AEM 3D](install-config-3d.md)
-   + [Impostazioni di configurazione avanzate](advanced-config-3d.md)
-   + [Utilizzo delle risorse Adobe Dimension](working-dimension-assets.md)
-   + [Caricamento ed elaborazione di risorse 3D in AEM](upload-processing-3d-assets.md)
-   + [Risoluzione delle dipendenze dei file](resolve-file-dependencies.md)
-   + [Visualizzazione di risorse 3D](viewing-3d-assets.md)
-   + [Rendering delle risorse 3D](rendering-3d-assets.md)
-   + [Utilizzo delle aree di visualizzazione in AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Utilizzo del componente Siti 3D](using-the-3d-sites-component.md)
-   + [Integrazione AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
-   + [Utilizzo delle aree di visualizzazione IBL](working-with-ibl-stages.md)
-   + [Integrazione AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Configurazione di un’area di visualizzazione IBL con Autodesk Maya e Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
