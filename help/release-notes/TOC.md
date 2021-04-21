@@ -8,10 +8,10 @@ user-guide-description: Scopri le nuove funzioni di AEM 6.4 nelle note sulla ver
 feature: Informazioni sulla versione
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 37%
+source-wordcount: '89'
+ht-degree: 39%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 37%
 + [Note sulla versione di AEM Forms](forms.md)
 + [Modulo di installazione delle patch di AEM Forms JEE](jee-patch-installer-64.md)
 + [Note sulla versione di AEM Communities](communities-release-notes.md)
-+ [Note sulla versione AEM 3D](aem3d-release-notes.md)
 + [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 + [Problemi noti](known-issues.md)
 + [AEM Foundation e Repository](wcm-platform.md)
