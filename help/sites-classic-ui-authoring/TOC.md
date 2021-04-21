@@ -9,10 +9,10 @@ user-guide-description: Questa guida descrive i concetti di authoring in AEM nel
 feature: 'Authoring  '
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 80%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 83%
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
 + Authoring delle risorse nell’interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
-   + [Utilizzo delle aree di visualizzazione IBL](classicui-stages-aem3d-ibl.md)
-   + [Rendering delle risorse 3D](classicui-rendering-3d.md)
-   + [Visualizzazione di risorse 3D](classicui-view-3d-assets.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
-   + [Configurazione di un’area di visualizzazione standard con Autodesk Maya e Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
    + [Aggiunta di funzionalità di Dynamic Media Classic (Scene7) alla pagina](manage-assets-classic-s7.md)
    + [Utilizzo di Dynamic Media](dynamic-media-assets.md)
-   + [Utilizzo di risorse 3D](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Convenzioni di denominazione per il test delle risorse](asset-naming-conventions.md)
-   + [Caricamento ed elaborazione di risorse 3D in AEM](classicui-upload-proc-3d.md)
-   + [Utilizzo delle aree di visualizzazione in AEM 3D](classicui-stages-aem3d.md)
-   + [Risoluzione delle dipendenze dei file](classicui-upload-proc-3d-resolve-dependencies.md)
