@@ -6,10 +6,9 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 47%
 
 ---
@@ -108,7 +107,7 @@ ht-degree: 47%
    + [Integrazione di AEM Assets con il server InDesign](indesign.md)
    + [Profili metadati](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
-   + [Utilizzo del pacchetto dimostrativo per Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Utilizzo del pacchetto demo per Assets Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Best practice per l’offload di risorse](assets-offloading-best-practices.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
    + [Best practice per il monitoraggio in Assets](assets-monitoring-best-practices.md)
@@ -155,13 +154,13 @@ ht-degree: 47%
    + [Scaricare risorse da AEM](download-assets-from-aem.md)
    + [Operazioni asincrone](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
-   + [Abilitazione di Asset Insights tramite DTM](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configurazione di Asset Insights](touch-ui-configuring-asset-insights.md)
+   + [Abilitazione di Assets Insights tramite DTM](touch-ui-using-dtm-for-asset-insights.md)
+   + [Configurazione di Assets Insights](touch-ui-configuring-asset-insights.md)
    + [Applicazione dei servizi cloud di traduzione alle cartelle](transition-cloud-services.md)
    + [Utilizzo del tracciamento pagina e del codice da incorporare nelle pagine web](touch-ui-using-page-tracker.md)
    + [Gestione delle risorse composte](managing-linked-subassets.md)
    + [Risorse correlate](related-assets.md)
-   + [Informazioni sulla risorsa](touch-ui-asset-insights.md)
+   + [Informazioni sulle risorse](touch-ui-asset-insights.md)
    + [Ricerca di risorse video](search-video-assets.md)
    + [Condivisione di cartelle private](private-folder.md)
    + [Linee guida per la formazione sui servizi di contenuti avanzati](smart-tags-training-guidelines.md)
