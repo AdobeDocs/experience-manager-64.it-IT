@@ -1,29 +1,28 @@
 ---
-title: Utilizza la funzione Asset Insights per tenere traccia dell’utilizzo delle immagini
-description: La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
+title: Utilizzare la funzione Assets Insights per tenere traccia dell’utilizzo delle immagini
+description: La funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Informazioni sulla risorsa, rapporti sulle risorse
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '794'
 ht-degree: 8%
 
 ---
 
+# Informazioni sulle risorse {#asset-insights}
 
-# Informazioni sulla risorsa {#asset-insights}
+Scopri come la funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle risorse utilizzate nei siti web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
 
-Scopri come la funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle risorse utilizzate nei siti web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
-
-La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle risorse utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe per ricavare informazioni sulle loro prestazioni e popolarità.
+La funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle risorse utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe per ricavare informazioni sulle loro prestazioni e popolarità.
 
 Informazioni sulle risorse acquisisce i dettagli delle attività dell’utente, ad esempio il numero di volte in cui una risorsa viene valutata, su cui è stato fatto clic e le impression (il numero di volte in cui la risorsa viene caricata sul sito web). Assegna punteggi alle risorse in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le risorse più comuni da includere nei cataloghi, nelle campagne di marketing e così via. Puoi anche formulare criteri di archiviazione e rinnovo delle licenze per le risorse in base a queste statistiche.
 
 Affinché Assets Insights possa acquisire le statistiche di utilizzo delle risorse da un sito web, devi includere il codice di incorporamento della risorsa nel codice del sito web.
 
-Per consentire a Asset Insights di visualizzare le statistiche di utilizzo per le risorse, configura innanzitutto la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per informazioni dettagliate, consulta [Configurare Asset Insights](touch-ui-configuring-asset-insights.md).
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo per le risorse, configura prima la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per informazioni dettagliate, consulta [Configurare Assets Insights](touch-ui-configuring-asset-insights.md). Per utilizzare questa funzione, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Per consentire a Asset Insights di visualizzare le statistiche di utilizzo per l
 
 ## Visualizzare le statistiche di una risorsa {#viewing-statistics-for-an-asset}
 
-Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
+Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
 1. Dall’interfaccia utente di Assets, seleziona la risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
 1. Dalla pagina Proprietà, tocca o fai clic sulla scheda **[!UICONTROL Informazioni]** .
@@ -52,7 +51,7 @@ Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
    >[!NOTE]
    >
-   >Poiché la funzione Asset Insights in genere recupera periodicamente i dati delle soluzioni da Adobe Analytics, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Asset Insights per il recupero dei dati di Analytics.
+   >La funzione Approfondimenti risorse recupera periodicamente i dati delle soluzioni da [!DNL Adobe Analytics]; è possibile che la sezione delle soluzioni non visualizzi i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Assets Insights per il recupero dei dati [!DNL Analytics].
 
 1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un arco di tempo, seleziona il periodo nella sezione **[!UICONTROL Statistiche di prestazioni]**. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
 
@@ -60,9 +59,9 @@ Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
    >[!NOTE]
    >
-   >A differenza dei dati nella sezione Soluzioni , la sezione Statistiche di prestazioni visualizza i dati più recenti.
+   >A differenza dei dati nella sezione delle soluzioni , la sezione statistiche sulle prestazioni visualizza i dati più recenti.
 
-1. Per ottenere il codice di incorporamento della risorsa inclusa nei siti web per ottenere i dati sulle prestazioni, tocca o fai clic su **[!UICONTROL Ottieni codice di incorporamento]** sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare in pagine web di terze parti, consulta [Utilizzo di tracciamento pagina e codice da incorporare nelle pagine web](touch-ui-using-page-tracker.md).
+1. Per ottenere il codice di incorporamento della risorsa inclusa nei siti web per ottenere i dati sulle prestazioni, fai clic su **[!UICONTROL Ottieni codice di incorporamento]** sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare in pagine web di terze parti, consulta [Utilizzo di tracciamento pagina e codice da incorporare nelle pagine web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -76,7 +75,7 @@ Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simulta
 
 ## Pianifica processo in background {#scheduling-background-job}
 
-Asset Insights recupera periodicamente i dati di utilizzo per le risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, puoi modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
+Assets Insights recupera periodicamente i dati di utilizzo per le risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Assets Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, puoi modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
 
 1. Tocca il logo AEM e vai a **[!UICONTROL Strumenti > Operazioni > Console web]**.
 1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
