@@ -3,11 +3,10 @@ title: Gestione delle risorse digitali tramite AEM Assets
 description: Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Gestione risorse, Ricerca, Rendering, Collaborazione
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 3%
@@ -368,7 +367,7 @@ Alcune limitazioni della funzione sono:
 
 1. Nel campo **[!UICONTROL Tag]** , seleziona uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e premi **[!UICONTROL Invio]**. Il nuovo tag viene salvato in AEM.
 
-   YouTube richiede tag per pubblicare e avere un collegamento a YouTube (se è possibile trovare un collegamento adatto).
+   YouTube richiede tag per pubblicare e dispone di un collegamento ad YouTube (se è possibile trovare un collegamento adatto).
 Per creare i tag, è necessaria l&#39;autorizzazione di scrittura per `/content/cq:tags/default` nell&#39;archivio CRX.
 
 1. Per assegnare una valutazione alla risorsa, tocca la scheda **[!UICONTROL Avanzate]** , quindi tocca la stella nella posizione appropriata per assegnare la valutazione desiderata.
@@ -619,7 +618,7 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
    Se non si specifica il percorso di una pagina di accesso, AEM visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l&#39;autenticazione AEM.
+1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l&#39;autenticazione AEM.
 
 ## Cercare risorse {#searching-assets}
 
