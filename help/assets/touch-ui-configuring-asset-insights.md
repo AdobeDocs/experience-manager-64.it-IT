@@ -1,21 +1,20 @@
 ---
-title: Configurazione di Asset Insights
-description: Scopri come configurare Asset Insights in AEM Assets.
+title: Configurazione di Assets Insights
+description: Scopri come configurare Assets Insights in AEM Assets.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Informazioni sulla risorsa, rapporti sulle risorse
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 11%
 
 ---
 
+# Configurazione di Assets Insights {#configuring-asset-insights}
 
-# Configurazione di Asset Insights {#configuring-asset-insights}
-
-Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse utilizzate da siti Web di terze parti da Adobe Analytics. Per abilitare Asset Insights al recupero di questi dati e alla generazione di informazioni, configura prima la funzione di integrazione con Adobe Analytics.
+Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse utilizzate da siti Web di terze parti da Adobe Analytics. Per abilitare Assets Insights al recupero di questi dati e alla generazione di informazioni, configura prima la funzione da integrare con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Adobe Experience Manager (AEM) Assets recupera i dati di utilizzo AEM risorse ut
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Tocca o fai clic su **[!UICONTROL Autentica]**.
-1. Dopo aver AEM autenticato le credenziali, dall’elenco **[!UICONTROL Suite di rapporti]**, scegli una suite di rapporti Adobe Analytics dalla quale desideri che Asset Insights recuperi i dati. Fate clic su **[!UICONTROL Aggiungi]**.
+1. Dopo aver AEM autenticato le credenziali, dall’elenco **[!UICONTROL Suite di rapporti]**, scegli una suite di rapporti Adobe Analytics dalla quale desideri che Assets Insights recuperi i dati. Fate clic su **[!UICONTROL Aggiungi]**.
 1. Dopo aver impostato AEM suite di rapporti, tocca o fai clic su **[!UICONTROL Fine]**.
 
 ## Tracciamento pagina {#page-tracker}
