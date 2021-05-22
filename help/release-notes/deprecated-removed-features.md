@@ -1,14 +1,13 @@
 ---
 title: Funzioni obsolete e rimosse
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.4.
-translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 26%
+source-wordcount: '1310'
+ht-degree: 25%
 
 ---
-
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
@@ -152,6 +151,7 @@ obsoleto.
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
+| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le tue risorse con [!DNL Experience Cloud] utilizzando una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente chiamato  [!DNL Adobe Marketing Cloud]. | Per eventuali domande, contatta l&#39; [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Activity Map di Analytics | Versione di Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. È ora necessario utilizzare il [plug-in ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/it/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) . |
 | Componenti-Forms | Modulo Captcha (foundation/components/form/captcha) | Utilizza invece il componente ReCaptcha di Google |
 | Componenti | Presentazione (foundation/components/slideshow) | Nessuna sostituzione |
