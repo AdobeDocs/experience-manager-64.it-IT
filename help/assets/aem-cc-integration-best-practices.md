@@ -2,13 +2,12 @@
 title: Best practice per l’integrazione di AEM e Creative Cloud
 description: Best practice per integrare un’implementazione AEM con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza
 contentOwner: AG
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: Collaborazione, Adobe Asset Link, App desktop
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-translation-type: tm+mt
-source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '3578'
+source-wordcount: '3576'
 ht-degree: 16%
 
 ---
@@ -44,7 +43,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche a AEM e il caricamento di nuovi file in AEM dall’ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, inclusi quelli non Adobi. | [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | AEM app desktop su desktop Win e Mac |
 | Gli addetti al marketing e gli utenti aziendali possono individuare, visualizzare in anteprima, concedere in licenza e salvare le risorse Adobe Stock e gestirle dall’interno di AEM. Le risorse concesse in licenza e salvate forniscono metadati selezionati di Adobe Stock per una migliore governance. | [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | Interfaccia web AEM |
 
-Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative come [Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html), che possono essere create in base ai componenti [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Condivisione collegamenti](/help/assets/link-sharing.md), che utilizzano [Risorse di Experience Manager](/help/assets/managing-assets-touch-ui.md) devono essere esaminate in base a requisiti specifici.
+Questo articolo si concentra principalmente sui primi due aspetti delle esigenze di collaborazione. La distribuzione e l’approvvigionamento delle risorse su scala viene brevemente citata come caso d’uso. Per tali esigenze, valuta prodotti come Adobe Brand Portal o Asset Share Commons. Le soluzioni alternative come [Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html), che possono essere create in base ai componenti [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Condivisione collegamenti](/help/assets/link-sharing.md), che utilizzano [Risorse Experienci Manager](/help/assets/managing-assets-touch-ui.md) devono essere esaminate in base a requisiti specifici.
 
 ![Creative Cloud connessioni per AEM: Decidere quale funzionalità utilizzare](assets/creative-connections-aem.png)
 
@@ -151,7 +150,7 @@ Per progettare un flusso di lavoro efficiente tra team creativi e di marketing/l
 
 L’archiviazione delle risorse in DAM le rende facilmente accessibili e accessibili. Garantisce che le risorse possano essere sfruttate da numerosi utenti nell’organizzazione o nell’ecosistema, inclusi partner, clienti e così via.
 
-La maggior parte delle organizzazioni sceglie di archiviare solo le risorse rilevanti per i processi di marketing/LOB a valle (pubblicazione su canali come il canale web tramite AEM Sites o altri canali gestiti da Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e misurati da Analytics Cloud, fornitura a utenti/partner e così via). Inoltre, le organizzazioni memorizzano risorse che possono essere soggette a un processo di revisione/approvazione in DAM. In questo modo, DAM memorizza principalmente risorse che hanno alte probabilità di essere sfruttate ed evita di archiviare le risorse inattive.
+La maggior parte delle organizzazioni sceglie di archiviare solo le risorse rilevanti per i processi di marketing/LOB a valle (pubblicazione su canali web come AEM Sites o altri canali gestiti da Adobe Experience Cloud, Advertising Cloud e misurati da Analytics Cloud, fornitura a utenti/partner e così via). Inoltre, le organizzazioni memorizzano risorse che possono essere soggette a un processo di revisione/approvazione in DAM. In questo modo, DAM memorizza principalmente risorse che hanno alte probabilità di essere sfruttate ed evita di archiviare le risorse inattive.
 
 La memorizzazione delle risorse è inoltre soggetta a considerazioni tecniche e relative all’utilizzo delle risorse. DAM fornisce servizi aggiuntivi sulle risorse memorizzate, tra cui l’estrazione dei metadati, il controllo delle versioni, la generazione di anteprime/transcodifica, la gestione dei riferimenti e l’aggiunta di informazioni sul controllo degli accessi. Questi servizi richiedono tempo e risorse aggiuntive per l&#39;infrastruttura.
 
@@ -202,9 +201,9 @@ In questi casi, puoi sfruttare l’integrazione AEM/Creative Cloud per migliorar
 
 Utilizza le seguenti strategie per fornire accesso alle risorse finali/approvate:
 
-* Per fornire accesso a un numero elevato di risorse: Utilizza [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) o l’implementazione da parte del cliente di [Asset Share](assets-finder-editor.md) nell’infrastruttura di pubblicazione AEM
+* Per fornire accesso a un numero elevato di risorse: Utilizza [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) o l&#39;implementazione da parte del cliente di [Asset Share](assets-finder-editor.md) sull&#39;infrastruttura di pubblicazione AEM
 
-* Per fornire accesso ad alcune risorse: È possibile utilizzare AEM condivisione di cartelle con Adobe Creative Cloud oltre ad AEM Assets Brand Portal o Asset Share. Tieni presente che esistono alcune limitazioni relative a questa integrazione, descritte più dettagliatamente in questo articolo.
+* Per fornire accesso ad alcune risorse: È possibile utilizzare AEM condivisione di cartelle con Adobe Creative Cloud oltre ad AEM Assets Brand Portal o Condivisione risorse. Tieni presente che esistono alcune limitazioni relative a questa integrazione, descritte più dettagliatamente in questo articolo.
 
 ### Casi d&#39;uso {#use-cases}
 
