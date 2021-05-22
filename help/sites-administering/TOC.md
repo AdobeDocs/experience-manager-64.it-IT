@@ -8,11 +8,10 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Amministrazione
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 19%
+source-wordcount: '649'
+ht-degree: 20%
 
 ---
 
@@ -143,7 +142,6 @@ ht-degree: 19%
    + [Integrazione con BrightEdge Content Optimizer](brightedge.md)
    + [Tecniche consigliate per i modelli e-mail](best-practices-for-email-templates.md)
    + [Produttore catalogo](catalog-producer.md)
-   + [Configurare l’integrazione di AEM Assets con Experience Cloud e Creative Cloud](configure-assets-cc-integration.md)
    + [Integrazione con Silverpop Engage](silverpop.md)
    + [Integrazione con Adobe Campaign](campaign.md)
    + [Integrazione con ExactTarget](exacttarget.md)
