@@ -10,10 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-translation-type: tm+mt
-source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
+source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2871'
 ht-degree: 5%
 
 ---
@@ -328,6 +327,11 @@ Sono inclusi tutti i componenti, standard di prodotto e specifici per i progetti
 ![](assets/reportcomponent.png) ![reportcomponenterportcompentall](assets/reportcompentall.png)
 
 ### Utilizzo disco {#disk-usage}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_diskusage"
+>title="Report sull&#39;utilizzo del disco"
+>abstract="In qualità di input per il calcolatore CTT, gli utenti possono stimare le dimensioni dell&#39;archivio AEM eseguendo il rapporto Utilizzo disco in &#39;http://HOST:PORT/etc/reports/diskusage.html&#39;. Gli utenti possono inoltre stimare le dimensioni di percorsi di archivio specifici utilizzando il parametro &quot;path&quot;, ad esempio: &quot;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;."
 
 Il rapporto sull&#39;utilizzo del disco mostra informazioni sui dati memorizzati nel repository.
 
