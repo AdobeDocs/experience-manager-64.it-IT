@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '798'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ Informazioni sulle risorse acquisisce i dettagli delle attività dell’utente, 
 
 Affinché Assets Insights possa acquisire le statistiche di utilizzo delle risorse da un sito web, devi includere il codice di incorporamento della risorsa nel codice del sito web.
 
-Per consentire a Assets Insights di visualizzare le statistiche di utilizzo per le risorse, configura prima la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per informazioni dettagliate, consulta [Configurare Assets Insights](touch-ui-configuring-asset-insights.md). Per utilizzare questa funzione, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo per le risorse, configura prima la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per informazioni dettagliate, consulta [Configurare Assets Insights](touch-ui-configuring-asset-insights.md). Per utilizzare questa funzione in un’installazione on-premise, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
