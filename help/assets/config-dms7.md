@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configurazione,Modalità Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse mast
 
 >[!WARNING]
 >
->Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7`sull’istanza di authoring di Experience Manager, *not* l’istanza di pubblicazione di Experience Manager.
+>Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, configura `runmode=dynamicmedia_scene7`nell’istanza di authoring di Experience Manager, *non* l’istanza Publish di Experience Manager.
 
 Per abilitare Dynamic Media, è necessario avviare l&#39;Experience Manager utilizzando la modalità di esecuzione `dynamicmedia_scene7` dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
