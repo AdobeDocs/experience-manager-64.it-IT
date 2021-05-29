@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configurazione,Modalità Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 3%
@@ -33,11 +33,11 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse mast
 
 ## Abilitazione di Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Per sfruttare le funzioni di Dynamic Media, è necessario abilitarle.
+[Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - La modalità Scene7 è riservata solo all’istanza di authoring di Experience Manager. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7`sull’istanza di authoring di Experience Manager, non l’istanza di pubblicazione di Experience Manager.
+>Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7`sull’istanza di authoring di Experience Manager, *not* l’istanza di pubblicazione di Experience Manager.
 
 Per abilitare Dynamic Media, è necessario avviare l&#39;Experience Manager utilizzando la modalità di esecuzione `dynamicmedia_scene7` dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
@@ -77,7 +77,7 @@ Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo a
 
 **Per configurare Cloud Services Dynamic Media:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media]**.
+1. Nell’istanza di authoring di Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media]**.
 1. Nella pagina Browser configurazione Dynamic Media, nel riquadro a sinistra, tocca **[!UICONTROL global]** e tocca **[!UICONTROL Create]**. Non toccare o selezionare l&#39;icona della cartella a sinistra di [!UICONTROL global].
 1. Nella pagina [!UICONTROL Crea configurazione Dynamic Media] , immetti un titolo, l&#39;indirizzo e-mail dell&#39;account Dynamic Media e la password. Seleziona la tua area geografica. Queste informazioni vengono fornite per Adobe nel messaggio e-mail di provisioning. Se non hai ricevuto l’e-mail, contatta l’Assistenza clienti di Adobe.
 
@@ -266,7 +266,7 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
 
 1. Digita `DWG=image/vnd.dwg` nel campo di testo vuoto appena aggiunto.
 
-   L’esempio `DWG=image/vnd.dwg` è solo a scopo illustrativo. Il tipo MIME che aggiungi qui può essere qualsiasi altro formato non supportato.
+   L’esempio `DWG=image/vnd.dwg` è solo a scopo dimostrativo. Il tipo MIME che aggiungi qui può essere qualsiasi altro formato non supportato.
 
    ![Esempio di aggiunta del tipo mime](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +306,7 @@ Quando carichi dei file, Dynamic Media crea automaticamente un set con tutti i f
 
 **Configurazione della denominazione predefinita**
 
-Crea una convenzione di denominazione predefinita utilizzata in qualsiasi ricetta predefinita per set di batch. La convenzione di denominazione predefinita selezionata nella definizione dei predefiniti per set di batch è probabilmente tutto ciò di cui la tua azienda ha bisogno per generare i set in batch. Viene creato un predefinito per set di batch per utilizzare la convenzione di denominazione predefinita definita dall’utente. È possibile creare un numero illimitato di predefiniti per set di batch con convenzioni di denominazione alternative e personalizzate necessarie per un determinato set di contenuti nei casi in cui vi sia un’eccezione alla denominazione predefinita definita dall’azienda.
+Crea una convenzione di denominazione predefinita utilizzata in qualsiasi ricetta predefinita per set di batch. La convenzione di denominazione predefinita selezionata nella definizione dei predefiniti per set di batch è probabilmente tutto ciò di cui la tua azienda ha bisogno per generare i set di batch. Viene creato un predefinito per set di batch per utilizzare la convenzione di denominazione predefinita definita dall’utente. È possibile creare un numero illimitato di predefiniti per set di batch con convenzioni di denominazione alternative e personalizzate necessarie per un determinato set di contenuti nei casi in cui vi sia un’eccezione alla denominazione predefinita definita dall’azienda.
 
 Sebbene non sia necessario impostare una convenzione di denominazione predefinita per utilizzare le funzionalità di preimpostazione di set di batch, è possibile utilizzarla per definire tutti gli elementi della convenzione di denominazione che si desidera raggruppare in un set. In questo modo è possibile semplificare la creazione dei set di batch.
 
@@ -444,7 +444,7 @@ Quando il set 360 gradi viene caricato e pubblicato, si attiva il nome della def
 
    `\w+-\w+-C(\d+)`
 
-   Queste espressioni sono esempi a scopo puramente illustrativo. Puoi creare l’espressione regolare in base alle tue esigenze.
+   Tieni presente che queste espressioni sono esempi solo a scopo dimostrativo. Puoi creare l’espressione regolare in base alle tue esigenze.
 
    >[!NOTE]
    >
