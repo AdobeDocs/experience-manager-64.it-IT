@@ -8,12 +8,11 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
-feature: Interactive Videos,Video
+feature: Video interattivi, video
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '6011'
+source-wordcount: '5975'
 ht-degree: 4%
 
 ---
@@ -34,7 +33,7 @@ Per visualizzare un video interattivo e acquistabile in azione, fai clic su [Liv
 
 * Fai clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fai clic sull&#39;immagine della miniatura di KitchenAid nel video per visualizzare una visualizzazione a 360 gradi del mixer, oppure ingrandisci per vedere i dettagli del mixer.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Un fotogramma da un ](assets/chlimage_1-126.png) *video interattivo e acquistabileUn fotogramma video da un video interattivo acquistabile.*
 
@@ -60,13 +59,13 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
 Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa pagina web dimostrativa iniziale a cui *non* è ancora stata aggiunta l’interattività:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Gli **esempi** illustrano i passaggi necessari per integrare i video interattivi nel sito web.
 
 Al termine dell’esercitazione nell’ultima sezione Esempio , la pagina Web demo finale con il video interattivo completamente integrato si presenta così:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 **Flusso di lavoro** video interattivo:
 
@@ -193,7 +192,7 @@ Prendi in considerazione i seguenti esempi di URL di Quickview e le relative var
 
 Quando l&#39;approccio di cui sopra viene applicato al nostro sito web Example, abbiamo una pagina web con una serie di miniature di prodotto, ognuna con un pulsante **[!UICONTROL SEE MORE]** :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Dopo aver attivato tutte le Quickview del prodotto disponibili sulla pagina, ottieni il seguente elenco di richieste Quickview effettuate al backend:
 
@@ -537,7 +536,7 @@ Tuttavia, se hai aggiunto interattività per attivare una visualizzazione rapida
 
 Utilizzo del sito web demo come esempio:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Nota che si tratta di codice di incorporamento video standard:
 
@@ -568,7 +567,7 @@ Nota che si tratta di codice di incorporamento video standard:
 
 L&#39;integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo da AEM. Puoi vedere il risultato al seguente URL. Mentre mostra un video interattivo presente sulla pagina, non è ancora integrato con le Quickview esistenti:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -771,7 +770,7 @@ Il codice sorgente completo è il seguente:
 
 Il sito web demo finale con il video interattivo completamente integrato si presenta così:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
