@@ -1,5 +1,5 @@
 ---
-title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate
+title: Creazione di pop-up personalizzati tramite Quickview
 seo-title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate
 description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei pop-up.
 seo-description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei pop-up.
@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Configuration
+feature: Configurazione
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 2%
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
-# Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
+# Crea pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore che utilizzi, questa funzionalità consente agli utenti di fare clic su un punto attivo, su un&#39;immagine in miniatura o su una mappa immagine per visualizzare informazioni o contenuti correlati.
 
@@ -32,7 +31,7 @@ Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
 
-**Per utilizzare le Quickview per creare pop-up personalizzati,**
+**Per creare pop-up personalizzati utilizzando le Quickview:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
