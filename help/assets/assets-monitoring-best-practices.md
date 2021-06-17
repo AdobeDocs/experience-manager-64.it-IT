@@ -2,16 +2,15 @@
 title: Best practice per il monitoraggio in Assets
 description: Procedure consigliate per il monitoraggio dell’ambiente e delle prestazioni dell’istanza AEM dopo la distribuzione.
 contentOwner: AG
-feature: Asset Management
+feature: Gestione risorse
 role: Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1766'
 ht-degree: 1%
 
 ---
-
 
 # Best practice per il monitoraggio delle risorse {#assets-monitoring-best-practices}
 
@@ -140,7 +139,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Verifiche di sistema
 
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health.check:name=systemcheck,type=HealthCheck*
    * Istanze: Un autore, tutti i server di pubblicazione
    * Soglia allarme: Quando lo stato non è OK
@@ -148,7 +147,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Coda di replica
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * Istanze: Un autore, tutti i server di pubblicazione
    * Soglia allarme: Quando lo stato non è OK
@@ -156,7 +155,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Prestazioni delle risposte
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * Istanze: Tutti i server
    * Durata dell&#39;allarme: Quando lo stato non è OK
@@ -164,7 +163,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Prestazioni delle query
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name= queryStatus,type=HealthCheck*
    * Istanze: Un autore, tutti i server di pubblicazione
    * Soglia allarme: Quando lo stato non è OK
@@ -172,7 +171,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Bundle attivi
 
-   * MBean: org.apache.sling.health.check:name=inactiveBundles,type=HealthCheck 
+   * MBean: org.apache.sling.health.check:name=inactiveBundles,type=HealthCheck
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
    * Istanze: Tutti i server
    * Soglia allarme: Quando lo stato non è OK
@@ -180,7 +179,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 * Errori registro
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * Istanze: Tutti i server
    * Soglia allarme: Quando lo stato non è OK
