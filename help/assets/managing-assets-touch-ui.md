@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Gestione risorse, Ricerca, Rendering, Collaborazione
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
+source-wordcount: '10131'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Scopri varie attività di gestione e modifica delle risorse che puoi eseguire ut
 
 Questo articolo descrive come gestire e modificare le risorse utilizzando l’interfaccia utente ottimizzata per il tocco di Adobe Experience Manager (AEM) Assets. Per informazioni elementari sull&#39;interfaccia utente, consulta [Gestione di base dell&#39;interfaccia Touch](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [Gestione dei frammenti di contenuto](content-fragments-managing.md) risorse .
 
-## Crea cartelle {#create-folders}
+## Creare cartelle {#create-folders}
 
 Quando organizzi una raccolta di risorse, ad esempio tutte le immagini `Nature`, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. AEM Assets non richiede di organizzare le risorse nelle cartelle per funzionare meglio.
 
@@ -39,7 +39,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 * il nome del file risorsa non deve contenere `* / : [ \ \ ] | # % { } ? &`
 * il nome della cartella di risorse non deve contenere `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-## Caricare risorse {#uploading-assets}
+## Caricare le risorse {#uploading-assets}
 
 Puoi caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) dalla cartella locale o da un’unità di rete in AEM Assets.
 
@@ -231,7 +231,7 @@ Quando carichi i file immagine PostScript (EPS) o Illustrator (AI), puoi formatt
 |  | Forza come CMYK | Si converte nello spazio colore CMYK. |
 |  | Forza come scala di grigi | Converte lo spazio colore in scala di grigi. |
 
-#### Imposta le opzioni di caricamento Photoshop {#setting-photoshop-upload-options}
+#### Impostare le opzioni di caricamento di Photoshop {#setting-photoshop-upload-options}
 
 I file PSD (Photoshop Document) vengono utilizzati più spesso per creare modelli di immagine. Quando carichi un file PSD, puoi creare automaticamente un modello di immagine dal file (seleziona l’opzione Crea modello nella schermata Carica ).
 
@@ -255,7 +255,7 @@ Utilizza le **[!UICONTROL Opzioni di ritaglio]** e **[!UICONTROL Opzioni profilo
 |  | Photoshop e nome livello | Assegna un nome alle immagini dopo il file PSD seguito dal nome del livello o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato Tag prezzo in un file PSD denominato SpringAd è denominato Tag ad_Price di primavera. Un livello con il nome predefinito Layer 2 si chiama Spring Ad_2. |
 | Ancoraggio |  | Specifica come le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine sostitutiva. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando fanno riferimento al modello e utilizzano la sostituzione di parametri, occupano effettivamente lo stesso spazio. Passa a un’impostazione diversa se l’applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
-#### Imposta opzioni di caricamento PDF {#setting-pdf-upload-options}
+#### Impostare le opzioni di caricamento PDF {#setting-pdf-upload-options}
 
 Quando carichi un file PDF, puoi formattarlo in vari modi. Ritagliate le pagine, estraete le parole di ricerca, immettete una risoluzione pixel per pollice e scegliete uno spazio colore. I file PDF contengono spesso un margine di taglio, indicatori di ritaglio, segni di registrazione e altri segni della stampante. È possibile ritagliare questi segni dai lati delle pagine durante il caricamento di un file PDF.
 
@@ -389,7 +389,7 @@ Per creare i tag, è necessaria l&#39;autorizzazione di scrittura per `/content/
 1. Tocca **[!UICONTROL Salva e chiudi]**.
 1. Passa all’interfaccia utente Assets. Le proprietà dei metadati modificati, quali titolo, descrizione, valutazioni e così via, vengono visualizzate sulla scheda delle risorse nella vista a schede e nelle relative colonne nella vista a elenco.
 
-## Copia risorse {#copying-assets}
+## Copiare le risorse {#copying-assets}
 
 Quando copi una risorsa o una cartella, viene copiata l’intera risorsa o la cartella insieme alla relativa struttura del contenuto. Una risorsa o una cartella copiata viene duplicata nel percorso di destinazione. La risorsa nella posizione di origine non viene modificata.
 
@@ -474,7 +474,7 @@ Per spostare risorse o cartelle:
 
    Se non aggiorni i riferimenti, continuano a indicare il percorso precedente della risorsa. Se regoli i riferimenti, vengono aggiornati al nuovo percorso della risorsa.
 
-### Spostare le risorse utilizzando l’operazione di trascinamento {#move-using-drag}
+### Spostare le risorse tramite trascinamento {#move-using-drag}
 
 È possibile spostare le risorse (o le cartelle) in una cartella di pari livello trascinandole nella posizione di destinazione, invece di utilizzare l&#39;opzione [!UICONTROL Sposta] nell&#39;interfaccia utente. Tuttavia, questa operazione è possibile solo nella vista a elenco.
 
@@ -637,7 +637,7 @@ Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta
 * Dispositivi touch: Toccare e tenere premuto. Ad esempio, su un iPad, puoi toccare e tenere premuto un contenuto per visualizzare le azioni rapide.
 * Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
 
-### Passa alle risorse {#navigating-and-selecting-assets} e selezionale
+### Passa alle risorse e selezionale {#navigating-and-selecting-assets}
 
 Puoi visualizzare, navigare e selezionare le risorse con una qualsiasi delle viste disponibili (scheda, colonna, elenco) utilizzando l’icona **[!UICONTROL Seleziona]**. **** La selezione viene visualizzata come un’azione rapida nella vista a schede.
 
@@ -653,7 +653,7 @@ Simile alla vista a elenco, **[!UICONTROL Seleziona]** viene visualizzato quando
 
 Per ulteriori informazioni, consulta [Visualizzazione e selezione delle risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-## Modifica immagini {#editing-images}
+## Modificare le immagini {#editing-images}
 
 Gli strumenti di modifica nell’interfaccia di AEM Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagini. È possibile ritagliare, ruotare, capovolgere ed eseguire altri lavori di modifica sulle immagini. Puoi anche aggiungere mappe immagine alle risorse.
 
@@ -781,6 +781,14 @@ Puoi aggiungere annotazioni alle risorse video. Durante l&#39;annotazione dei vi
 
 ### Visualizzare le annotazioni salvate {#viewing-saved-annotations}
 
+È possibile visualizzare una sola annotazione alla volta.
+
+>[!NOTE]
+>
+>Se selezioni più annotazioni, l’ultima sarà visibile nell’interfaccia utente.
+>
+>La selezione multipla è supportata solo per la stampa della risorsa annotata come PDF.
+
 1. Per visualizzare le annotazioni salvate per una risorsa, accedi alla posizione della risorsa e apri la pagina della risorsa.
 
 1. Tocca l’icona **[!UICONTROL Navigazione globale]** e tocca **[!UICONTROL Timeline]** dall’elenco.
@@ -802,6 +810,10 @@ Puoi aggiungere annotazioni alle risorse video. Durante l&#39;annotazione dei vi
 Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme ad annotazioni e rivederla come file PDF per la revisione offline.
 
 È inoltre possibile scegliere di stampare solo le annotazioni o lo stato di revisione.
+
+>[!NOTE]
+>
+>È possibile selezionare più annotazioni durante la stampa della risorsa annotata in formato PDF.
 
 Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, l’Adobe consiglia di limitare le annotazioni a 50 parole.
 
