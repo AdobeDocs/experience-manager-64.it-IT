@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: forms
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guida di Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 4%
@@ -121,7 +120,7 @@ ht-degree: 4%
       + [Portale Forms](using/forms-portal-handling-user-data.md)
       + [Gestione della corrispondenza](using/correspondence-management-handling-user-data.md)
       + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Sicurezza dei documenti](/help/forms/using/document-security-handling-user-data.md)
+      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Hardening dell&#39;ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Hardening e protezione dei moduli AEM in ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Considerazioni generali sulla sicurezza per AEM Forms su JEE](using/general-security-considerations.md)
@@ -135,7 +134,7 @@ ht-degree: 4%
    + [Utilizzare il modello dati del modulo](using/work-with-form-data-model.md)
    + [Utilizzare il modello dati del modulo](using/using-form-data-model.md)
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
-   + [Procedure consigliate per l&#39;utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md) 
+   + [Procedure consigliate per l&#39;utilizzo dei moduli adattivi ](using/adaptive-forms-best-practices.md)
    + [Creazione di un modulo adattivo](using/creating-adaptive-form.md)
    + [Frammenti di moduli adattivi](using/adaptive-form-fragments.md)
    + [Configurazione dell’azione Invia](using/configuring-submit-actions.md)
@@ -565,7 +564,7 @@ ht-degree: 4%
    + Servizio informazioni di sistema {#system-information-service}
       + [Configurazione del servizio informazioni di sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servizio informazioni di sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Reporting processi  {#process-reporting}
++ Reporting processi {#process-reporting}
    + [Introduzione alla generazione di rapporti sui processi](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Guida introduttiva alla generazione di rapporti sui processi](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Come funziona il reporting dei processi](/help/forms/using/process-reporting/process-reporting-architecture.md)
