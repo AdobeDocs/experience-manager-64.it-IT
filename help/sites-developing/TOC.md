@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.4
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Sviluppo
 role: Developer
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 16%
@@ -42,7 +41,7 @@ ht-degree: 16%
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
-      + [Modelli di pagina - Modificabili  ](page-templates-editable.md)
+      + [Modelli di pagina - Modificabili ](page-templates-editable.md)
       + [Modelli di pagina - Statici](page-templates-static.md)
       + [Modelli per frammenti di contenuto](content-fragment-templates.md)
       + [Rendering di modelli adattivi](templates-adaptive-rendering.md)
