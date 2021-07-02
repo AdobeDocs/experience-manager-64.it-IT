@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aggiornamento
+exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-
-# Ristrutturazione dell&#39;archivio in AEM 6.4{#repository-restructuring-in-aem}
+# Ristrutturazione dell’archivio in AEM 6.4{#repository-restructuring-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -39,13 +38,13 @@ Quando si esegue l’aggiornamento a AEM 6.4, un grande sottoinsieme di contenut
 * Con l&#39;aggiornamento 6.4 - una manciata delle modifiche alla ristrutturazione /etc non sono compatibili con le versioni precedenti e pertanto le modifiche dovrebbero essere pianificate e implementate come parte dell&#39;aggiornamento AEM 6.4.
 * Prima dell’aggiornamento alla versione 6.5 - la stragrande maggioranza delle modifiche alla ristrutturazione /etc può essere posticipata fino a qualche tempo nel futuro post-aggiornamento. Come accennato in precedenza, AEM codice 6.4 continuerà a fare riferimento alle posizioni precedenti fino a quando le modifiche non saranno implementate come parte di un rilascio da parte del cliente. Sebbene non vi sia una tempistica forzata per la quale le modifiche devono essere apportate, si consiglia di effettuarle prima dell’aggiornamento 6.5, in quanto le funzioni future potrebbero dipendere dalle nuove posizioni a cui si fa riferimento. Inoltre, la documentazione di una data funzione farà riferimento per convenzione alle nuove posizioni e potrebbe quindi confondere se le vecchie posizioni sono ancora in uso.
 
-### Guida alla ristrutturazione {#restructuring-guidance}
+### Orientamento alla ristrutturazione {#restructuring-guidance}
 
 Durante la pianificazione di un aggiornamento al AEM 6.4, per valutare lo sforzo di lavoro è necessario fare riferimento alle seguenti pagine per soluzione:
 
 * [Ristrutturazione dell’archivio comune a tutte le soluzioni AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Ristrutturazione dell’archivio AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Ristrutturazione dell’archivio AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [Ristrutturazione dell’archivio AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [Ristrutturazione dell’archivio AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Ristrutturazione dell’archivio AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Ristrutturazione dell’archivio AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
