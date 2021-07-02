@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Aggiornamento
+exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1139'
 ht-degree: 2%
 
 ---
-
 
 # Ristrutturazione dell’archivio risorse in AEM 6.4{#assets-repository-restructuring-in-aem}
 
@@ -24,21 +23,21 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
 
 **Con aggiornamento alla versione 6.4**
 
-* [Varie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Varie](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Prima dell’aggiornamento alla versione 6.5**
 
-* [Modello di notifica e-mail evento Asset/Collection](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Progettazioni di condivisione risorse classiche](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Scarica il modello di notifica per e-mail delle risorse](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Esempio di licenze DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Modello di notifica e-mail evento Asset/Collection](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Progettazioni di condivisione risorse classiche](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Scarica il modello di notifica per e-mail delle risorse](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Esempio di licenze DRM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [Modello di notifica della condivisione dei collegamenti e-mail](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [Script del flusso di lavoro di InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Configurazioni di transcodifica video](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Varie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Modello di notifica della condivisione dei collegamenti e-mail](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Script del flusso di lavoro di InDesign](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Configurazioni di transcodifica video](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Varie](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-## Aggiornamento 6.4 {#with-upgrade}
+## Con aggiornamento alla versione 6.4 {#with-upgrade}
 
 ### Varie {#misc}
 
@@ -63,7 +62,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
  </tbody> 
 </table>
 
-## Aggiornamento precedente alla versione 6.5 {#prior-to-upgrade}
+## Prima dell’aggiornamento alla versione 6.5 {#prior-to-upgrade}
 
 ### Modello di notifica e-mail evento Asset/Collection {#asset-collection-event-e-mail-notification-template}
 
@@ -98,7 +97,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
  </tbody> 
 </table>
 
-### Progettazioni di Condivisione risorse classiche {#classic-asset-share-designs}
+### Progettazioni di condivisione risorse classiche {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -202,7 +201,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
  </tbody> 
 </table>
 
-### Script del flusso di lavoro InDesign {#indesign-workflow-scripts}
+### Script del flusso di lavoro di InDesign {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -312,4 +311,3 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
   </tr> 
  </tbody> 
 </table>
-
