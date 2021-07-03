@@ -2,16 +2,15 @@
 title: Esaminare raccolte e risorse delle cartelle
 description: Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Collaborazione, Raccolte
+role: User
+exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 25%
 
 ---
-
 
 # Esaminare raccolte e risorse delle cartelle {#review-folder-assets-and-collections}
 
@@ -25,7 +24,7 @@ Dopo aver condiviso le risorse, i revisori possono approvarle o rifiutarle. Le n
 
 Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), riceverai una notifica di completamento della revisione.
 
-## Crea un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
+## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
 1. Dall’interfaccia utente Assets, seleziona la cartella per la quale desideri creare un’attività di revisione.
 1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Crea attività di revisione]** per aprire la pagina **[!UICONTROL Attività di revisione]**. Se l’icona non è visibile nella barra degli strumenti, tocca o fai clic su **[!UICONTROL More (Altro)]**, quindi seleziona l’icona.
@@ -73,7 +72,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## Crea un&#39;attività di revisione per le raccolte {#creating-a-review-task-for-collections}
+## Creare un’attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte selezionare la raccolta per la quale si desidera creare un&#39;attività di revisione.
 1. Dalla barra degli strumenti, tocca o fai clic sull’icona **[!UICONTROL Crea attività di revisione]** per aprire la pagina **[!UICONTROL Attività di revisione]**. Se l’icona non è visibile nella barra degli strumenti, tocca o fai clic su **[!UICONTROL More (Altro)]**, quindi seleziona l’icona.
