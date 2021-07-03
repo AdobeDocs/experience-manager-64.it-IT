@@ -3,18 +3,17 @@ title: Riutilizzare le risorse con MSM
 description: Utilizzare risorse su più pagine/cartelle derivate e collegate a risorse principali. Le risorse rimangono sincronizzate con una copia primaria e, con alcuni clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Multi Site Manager
-role: Business Practitioner,Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse,Gestione siti multipli
+role: User,Admin,Architect
+exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3172'
 ht-degree: 9%
 
 ---
 
-
-# Riutilizzare le risorse utilizzando MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
+# Riutilizzare le risorse con MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 La funzionalità Multi Site Manager (MSM) in [!DNL Adobe Experience Manager] consente agli utenti di riutilizzare contenuti creati una volta e riutilizzati in più posizioni web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità [!DNL Assets] . Utilizzando MSM per [!DNL Assets], puoi:
 
@@ -38,7 +37,7 @@ MSM mantiene una relazione live tra la risorsa di origine e le relative Live Cop
 
 * Puoi aggiornare le Live Copy sospendendo la relazione live o rimuovendo l’ereditarietà per alcuni campi limitati. Le modifiche all’origine non vengono più applicate alla Live Copy.
 
-### Glossario di MSM per i termini di risorse {#glossary-msm-for-assets}
+### Glossario di MSM per i termini di Assets {#glossary-msm-for-assets}
 
 * **Origine:** le risorse o le cartelle originali. Copia principale da cui derivano le Live Copy.
 
@@ -92,7 +91,7 @@ Per creare Live Copy utilizzando il secondo metodo, effettua le seguenti operazi
 >
 >Quando si sposta un&#39;origine o una Live Copy, le relazioni vengono mantenute. Quando una Live Copy viene eliminata, le relazioni vengono rimosse.
 
-## Visualizza varie proprietà e stati dell&#39;origine e della Live Copy {#view-properties-statuses-source-and-lc}
+## Visualizza varie proprietà e stati della sorgente e della Live Copy {#view-properties-statuses-source-and-lc}
 
 Puoi visualizzare le informazioni e gli stati relativi a MSM della Live Copy, ad esempio relazione, sincronizzazione, rollout e altro dalle varie aree dell’interfaccia utente AEM. I due metodi seguenti funzionano per le risorse e le cartelle:
 
@@ -179,7 +178,7 @@ In alternativa, puoi avviare un’azione di rollout dalla barra [!UICONTROL Rife
 
 ![Implementa le modifiche dell’origine nella Live Copy selezionata](assets/lc_rollout_dialog.png)
 
-### Informazioni sulla sincronizzazione dell&#39;azione {#about-synchronize-action}
+### Informazioni sull’azione di sincronizzazione {#about-synchronize-action}
 
 Un’azione di sincronizzazione richiama le modifiche da un’origine solo alla Live Copy selezionata. L’azione di sincronizzazione rispetta e mantiene le modifiche locali eseguite dopo l’annullamento dell’ereditarietà. Le modifiche locali non vengono sovrascritte e l’ereditarietà annullata non viene ristabilita. Puoi avviare un’azione di sincronizzazione in tre modi.
 
@@ -201,7 +200,7 @@ Per visualizzare gli stati e le informazioni relativi a un&#39;azione di sincron
 >
 >Se la relazione è sospesa, l’azione di sincronizzazione non è disponibile nella barra degli strumenti. Mentre l’azione di sincronizzazione è disponibile nella barra [!UICONTROL Riferimenti] , le modifiche non vengono propagate nemmeno in seguito a un rollout riuscito.
 
-## Sospendi e riprendi la relazione {#suspend-and-resume-relationship}
+## Sospendi e riprendi relazione {#suspend-and-resume-relationship}
 
 Puoi sospendere temporaneamente la relazione per impedire a una Live Copy di ricevere le modifiche apportate alla risorsa o alla cartella di origine. La relazione può anche essere ripresa per la Live Copy per iniziare a ricevere le modifiche dalla sorgente.
 
@@ -242,7 +241,7 @@ Se una cartella Live Copy contiene più risorse, l’avvio di azioni su ciascuna
 1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono **[!UICONTROL Modifica]**, **[!UICONTROL Sincronizza]**, **[!UICONTROL Ripristina]**, **[!UICONTROL Sospendi]** e **[!UICONTROL Stacca]**. Puoi avviare rapidamente queste azioni su qualsiasi risorsa presente in un numero qualsiasi di cartelle Live Copy che si trovano in una relazione diretta con la cartella sorgente selezionata.
    ![Aggiornare facilmente molte risorse nelle cartelle Live Copy dalla console Panoramica Live Copy](assets/lc_console_update_assets.png)
 
-## Estendere MSM per risorse {#extend-msm-for-assets}
+## Estendere MSM per Assets {#extend-msm-for-assets}
 
 AEM consente di estendere le funzionalità utilizzando le API Java MSM. Per Assets, l’estensione funziona esattamente come con MSM per Site. Per informazioni dettagliate, consulta [Estensione di MSM](../sites-developing/extending-msm.md) e le sezioni seguenti per informazioni su attività specifiche:
 
@@ -279,7 +278,7 @@ In più scenari, MSM per Assets corrisponde al comportamento della funzionalità
 * La configurazione dei blocchi MSM sulle proprietà di pagina (interfaccia touch) non è supportata in MSM per Assets.
 * Per MSM per Assets, utilizza solo la configurazione di rollout standard. Le altre configurazioni di rollout non sono disponibili per MSM per Assets.
 
-## Limitazioni di MSM per risorse {#limitations-of-msm-for-assets}
+## Limitazioni di MSM per Assets {#limitations-of-msm-for-assets}
 
 Di seguito sono riportate le limitazioni di MSM per Assets.
 
