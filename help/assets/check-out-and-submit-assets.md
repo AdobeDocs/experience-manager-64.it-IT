@@ -2,20 +2,19 @@
 title: Archiviare ed estrarre le risorse digitali per la modifica
 description: Scopri come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Gestione risorse
+role: User
+exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 7%
+source-wordcount: '401'
+ht-degree: 6%
 
 ---
 
-
 # Archiviazione e estrazione dei file in Assets {#check-in-and-check-out-files-in-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di estrarre le risorse per la modifica e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non accedi nuovamente ad AEM Assets. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
+Risorse Adobe Experience Manager (AEM) consente di estrarre le risorse per la modifica e di archiviarle nuovamente una volta completate le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non accedi nuovamente ad AEM Assets. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
 Per poter estrarre o archiviare le risorse, è necessario disporre dell’accesso in scrittura.
 
