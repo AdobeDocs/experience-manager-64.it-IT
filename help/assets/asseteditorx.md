@@ -2,16 +2,15 @@
 title: Estendi editor risorse
 description: Scopri come estendere le funzionalità di Asset Editor utilizzando componenti personalizzati.
 contentOwner: AG
-feature: Developer Tools
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Strumenti per gli sviluppatori
+role: User,Admin
+exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '703'
 ht-degree: 13%
 
 ---
-
 
 # Estendi editor risorse {#extending-asset-editor}
 
@@ -21,7 +20,7 @@ La configurazione dell’editor utilizzando i componenti di modifica predefiniti
 
 Oltre a utilizzare componenti dell’editor preesistenti, gli sviluppatori Adobe Experience Manager (AEM) possono anche creare i propri componenti.
 
-## Creazione di un modello di editor risorse {#creating-an-asset-editor-template}
+## Creazione di un modello di Editor risorse {#creating-an-asset-editor-template}
 
 Le pagine di esempio seguenti sono incluse in geometrixx:
 
@@ -63,7 +62,7 @@ Alcuni dei componenti di AEM Assets utilizzano la libreria di widget AEM. Per es
 
 I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Procedure consigliate: Copia tutti i selettori `.asseteditor` nel foglio di stile e regola le regole come desiderato.
 
-### Selettore modulo: Adeguamenti per risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
+### Selettore modulo: Adeguamenti per le risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Editor risorse utilizza il Selettore moduli, che consente di modificare le risorse, in questo caso le risorse, nella stessa pagina del modulo semplicemente aggiungendo un selettore di moduli e il percorso del modulo all’URL della risorsa.
 
