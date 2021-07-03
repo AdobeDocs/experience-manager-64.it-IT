@@ -2,16 +2,15 @@
 title: Formati di file supportati in AEM Assets
 description: Elenco dei formati di file e dei tipi MIME supportati da AEM Assets e delle funzioni supportate per ciascun formato.
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse, rappresentazioni
+role: User,Admin
+exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1651'
 ht-degree: 10%
 
 ---
-
 
 # Formati di file supportati in AEM Assets {#assets-supported-formats}
 
@@ -114,7 +113,7 @@ Consulta [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 La libreria Adobe Camera Raw consente ad AEM Assets di acquisire immagini crude. Consulta [Supporto Camera Raw](camera-raw.md).
 
-## Formati di documenti {#supported-document-formats}
+## Formati documento {#supported-document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
@@ -214,7 +213,7 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | FLAC | Flac nativo | Codec audio senza perdita |  |
 | MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
 
-## Formati di archivio {#supported-archive-formats}
+## Formati di archiviazione {#supported-archive-formats}
 
 I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
@@ -291,13 +290,13 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| TTF | application/rtf |  |  |
+| RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
