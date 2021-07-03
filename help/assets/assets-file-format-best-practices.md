@@ -2,18 +2,17 @@
 title: Best practice per i formati di file delle risorse
 description: Best practice per il supporto dei file in AEM Assets.
 contentOwner: AG
-feature: Asset Management,Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione delle risorse, Strumenti per sviluppatori
+role: Admin
+exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-
-# Best practice per il formato dei file delle risorse {#assets-file-format-best-practices}
+# Best practice per i formati di file delle risorse {#assets-file-format-best-practices}
 
 AEM Assets supporta numerose librerie di formati di file proprietari e di terze parti per soddisfare diversi requisiti di supporto dei file da parte degli utenti. Le librerie di Adobi supportate includono Adobe Camera Raw, Gibson, Adobe PDF Rasterizer e Adobe InDesign Server. Inoltre, AEM Assets supporta librerie di terze parti, tra cui ImageMagick, DodiciMonkeys e così via.
 
