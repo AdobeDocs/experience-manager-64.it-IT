@@ -5,16 +5,15 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Asset Management,Developer Tools
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione delle risorse, Strumenti per sviluppatori
+role: User
+exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1608'
 ht-degree: 2%
 
 ---
-
 
 # Modelli per risorse {#asset-templates}
 
@@ -48,7 +47,7 @@ Quando scegli un modello per il tuo materiale collaterale, AEM Assets crea una c
 
 È inoltre possibile scaricare l&#39;output in questi formati sul sistema locale.
 
-## Creare un collaterale {#creating-a-collateral}
+## Creare un contratto di garanzia {#creating-a-collateral}
 
 Considera uno scenario in cui desideri creare materiale collaterale stampabile digitale, come opuscoli, volantini e annunci per una prossima campagna e condividerlo con outlet store a livello globale. La creazione di materiale collaterale basato su un modello consente di offrire un&#39;esperienza cliente unificata su tutti i canali. I designer possono creare i modelli delle campagne (a pagina singola o a più pagine) utilizzando una soluzione creativa, ad esempio InDesign, e caricare i modelli in AEM Assets per te. Prima di creare una garanzia collaterale, fai caricare e rendere disponibili in Experience Manager uno o più modelli INDD.
 
@@ -81,7 +80,7 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Modificare un Materiale collaterale {#editing-a-collateral}
+## Modificare un contratto di garanzia {#editing-a-collateral}
 
 È possibile modificare un materiale collaterale immediatamente dopo averlo creato. In alternativa, puoi aprirlo dalla pagina Modelli o dalla pagina della risorsa.
 
@@ -167,7 +166,7 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Fascia di garanzia {#merge-collateral}
+## Unisci garanzia {#merge-collateral}
 
 
 1. Tocca o fai clic su **[!UICONTROL Strumenti > Risorse]**.
@@ -210,4 +209,3 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
    >[!NOTE]
    >
    >Non è possibile modificare un materiale collaterale unito in un secondo momento o utilizzarlo per creare altro materiale collaterale.
-
