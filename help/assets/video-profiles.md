@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
-feature: Video Profiles,Video
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Profili video,Video
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 18%
@@ -44,7 +43,7 @@ Al termine della creazione del profilo video, lo si applica a una cartella o a p
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurazione dell’elaborazione delle risorse](config-dms7.md#configuring-asset-processing).
 
-## Predefiniti di codifica per video adattivo {#adaptive-video-encoding-presets}
+## Predefiniti per la codifica video adattiva {#adaptive-video-encoding-presets}
 
 La tabella seguente identifica i profili di codifica best practice per lo streaming di video adattivo su dispositivi mobili e tablet e computer desktop. Puoi usare questi predefiniti per qualsiasi video con proporzioni.
 
@@ -324,7 +323,7 @@ Le cartelle a cui è assegnato un profilo sono indicate nell&#39;interfaccia ute
 
 Puoi applicare i profili video a cartelle specifiche o globalmente a tutte le risorse.
 
-### Applicazione dei profili video a cartelle specifiche {#applying-video-profiles-to-specific-folders}
+### Applicazione di profili video a cartelle specifiche {#applying-video-profiles-to-specific-folders}
 
 Puoi applicare un profilo video a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili video alle cartelle con entrambe le soluzioni.
 
