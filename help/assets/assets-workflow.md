@@ -2,16 +2,15 @@
 title: Elabora le risorse per eseguire processi aziendali, eseguire audit, raggiungere la conformità e mantenere un livello di integrità di base
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Flusso di lavoro, rappresentazioni
+role: User,Admin
+exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1049'
 ht-degree: 3%
 
 ---
-
 
 # Elabora risorse digitali {#process-assets}
 
@@ -87,11 +86,11 @@ Per applicare un flusso di lavoro a una risorsa, effettua le seguenti operazioni
 
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Avvia]**, quindi su **[!UICONTROL Conferma]**. Il flusso di lavoro viene eseguito su tutte le risorse selezionate.
 
-## Applicare un flusso di lavoro a più cartelle {#applying-a-workflow-to-multiple-folders}
+## Applicazione di un flusso di lavoro a più cartelle {#applying-a-workflow-to-multiple-folders}
 
 La procedura per applicare un flusso di lavoro a più cartelle è simile a quella per applicare un flusso di lavoro a più risorse. Seleziona le cartelle nella console Risorse ed esegui i passaggi 2-7 della procedura [applicare un flusso di lavoro a più risorse](assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
-## Applicare un flusso di lavoro a una raccolta {#applying-a-workflow-to-a-collection}
+## Applicazione di un flusso di lavoro a una raccolta {#applying-a-workflow-to-a-collection}
 
 Per informazioni dettagliate sull&#39;applicazione di un flusso di lavoro a una raccolta, consulta [applicare un flusso di lavoro a una raccolta](managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
@@ -112,8 +111,8 @@ Per un modello di flusso di lavoro, gli utenti possono creare un modulo di avvio
 >[!MORELIKETHIS]
 >
 >* [Applicare e partecipare ai flussi di lavoro](/help/sites-authoring/workflows.md)
->* [Creare modelli di flusso di lavoro ed estendere le funzionalità del flusso di lavoro](/help/sites-developing/workflows.md)
->* [Metodi per l’esecuzione dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
->* [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
->* [Articolo della community sulla modifica delle risorse utilizzando il flusso di lavoro](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+* [Creare modelli di flusso di lavoro ed estendere le funzionalità del flusso di lavoro](/help/sites-developing/workflows.md)
+* [Metodi per l’esecuzione dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
+* [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
+* [Articolo della community sulla modifica delle risorse utilizzando il flusso di lavoro](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
