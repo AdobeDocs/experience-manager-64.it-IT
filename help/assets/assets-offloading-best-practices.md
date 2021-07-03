@@ -2,16 +2,15 @@
 title: Best practice per l’offload di risorse
 description: Casi d’uso e best practice consigliati per scaricare i flussi di lavoro di acquisizione e replica delle risorse in AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: User,Admin
+exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1820'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per l’offload di risorse {#assets-offloading-best-practices}
 
@@ -23,7 +22,7 @@ La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in
 
 Lo scaricamento di queste attività alle istanze di lavoro dedicate può ridurre le spese generali di CPU, memoria e IO. In generale, l&#39;idea alla base dello scaricamento è quella di distribuire attività che consumano risorse CPU/Memory/IO intensive alle istanze di lavoro dedicate. Le sezioni seguenti includono casi d’uso consigliati per lo scaricamento delle risorse.
 
-## Offload AEM Assets {#aem-assets-offloading}
+## Offload di AEM Assets {#aem-assets-offloading}
 
 AEM Assets implementa un’estensione del flusso di lavoro nativa specifica per le risorse per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di offload, ma include funzionalità aggiuntive specifiche per le risorse nell’implementazione. Lo scopo dello scaricamento delle risorse è quello di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse ti consente di ottenere un maggiore controllo sui flussi di lavoro di acquisizione.
 
@@ -33,11 +32,11 @@ Il diagramma seguente illustra i componenti principali del processo di scaricame
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### Flusso di lavoro di aggiornamento risorsa DAM {#dam-update-asset-offloading-workflow}
+### Flusso di lavoro Aggiorna risorsa DAM {#dam-update-asset-offloading-workflow}
 
 Il flusso di lavoro DAM Update Asset Offloading viene eseguito sul server principale (autore) sul quale l’utente carica le risorse. Questo flusso di lavoro viene attivato da un modulo di avvio regolare del flusso di lavoro. Invece di elaborare la risorsa caricata, questo flusso di lavoro di offload crea un nuovo lavoro utilizzando l’argomento *com/adobe/granite/workflow/offloading*. Il flusso di lavoro di offload aggiunge il nome del flusso di lavoro di destinazione, in questo caso il flusso di lavoro Aggiorna risorsa DAM, e il percorso della risorsa al payload del processo. Dopo aver creato il processo di offload, il flusso di lavoro di offload nell’istanza primaria attende l’esecuzione del processo di offload.
 
-### Job manager {#job-manager}
+### Responsabile del lavoro {#job-manager}
 
 Il job manager distribuisce i nuovi job alle istanze del worker. Nella progettazione del meccanismo di distribuzione è importante tenere conto dell&#39;abilitazione degli argomenti. I processi possono essere assegnati solo alle istanze in cui è abilitato l’argomento del processo. Disabilitare l&#39;argomento `com/adobe/granite/workflow/offloading` nella pagina principale e attivarlo nel processo di lavoro per assicurarsi che il lavoro sia assegnato al lavoratore.
 
@@ -45,7 +44,7 @@ Il job manager distribuisce i nuovi job alle istanze del worker. Nella progettaz
 
 Il framework di offload identifica i processi di offload del flusso di lavoro assegnati alle istanze di lavoro e utilizza la replica per trasportarli fisicamente, compreso il carico utile (ad esempio, le immagini da acquisire), ai lavoratori.
 
-### Flusso di lavoro che scarica il consumer di processi {#workflow-offloading-job-consumer}
+### Flusso di lavoro che scarica il consumatore del lavoro {#workflow-offloading-job-consumer}
 
 Una volta scritto un lavoro sul lavoratore, il responsabile del lavoro chiama il consumatore responsabile dell&#39;argomento *com/adobe/granite/workflow/offloading*. Il consumatore del lavoro esegue quindi il flusso di lavoro Aggiorna risorsa DAM sulla risorsa.
 
@@ -61,7 +60,7 @@ I processi vengono distribuiti solo alle istanze che forniscono un consumer di l
 
 In questo contesto, il termine distribuzione indica l&#39;assegnazione di un lavoro a un&#39;istanza specifica che fornisce un consumatore di lavoro. L&#39;assegnazione a un&#39;istanza viene memorizzata nell&#39;archivio. In altre parole, i lavori distribuiti Sling possono essere assegnati a qualsiasi istanza della topologia per impostazione predefinita. Tuttavia, altri processi possono essere eseguiti solo da istanze che condividono lo stesso archivio. Ciò implica che questi processi possono essere eseguiti solo da istanze che fanno parte dello stesso cluster. I processi assegnati a istanze di un cluster diverso non vengono eseguiti.
 
-### Struttura di scarico Granite {#granite-offloading-framework}
+### Quadro di riferimento per lo scarico delle granaglie {#granite-offloading-framework}
 
 Il framework di offload di Granite integra la distribuzione dei processi Sling per eseguire i processi assegnati a istanze non raggruppate. Non esegue alcuna distribuzione (assegnazione di istanza). Tuttavia, identifica i processi Sling distribuiti alle istanze non cluster e li trasporta all&#39;istanza target per l&#39;esecuzione. Attualmente, lo scaricamento utilizza la replica per eseguire questo trasporto di lavoro. Per eseguire un processo, lo scaricamento definisce l&#39;input e l&#39;output, che vengono quindi combinati con il processo per generare il payload del processo.
 
@@ -88,7 +87,7 @@ Se ritieni che lo scaricamento delle risorse sia un approccio appropriato, l’A
 * Lo scaricamento delle risorse basate su TarMK non è progettato per una scalabilità orizzontale estesa
 * Assicurati che le prestazioni di rete tra l&#39;autore e i lavoratori siano soddisfacenti
 
-### Distribuzione di offload delle risorse consigliate {#recommended-assets-offloading-deployment}
+### Distribuzione offload delle risorse consigliate {#recommended-assets-offloading-deployment}
 
 Con AEM e Oak, ci sono diversi scenari di implementazione possibili. Per lo scaricamento delle risorse, si consiglia una distribuzione basata su TarMK con un datastore condiviso. Il diagramma seguente illustra la distribuzione consigliata:
 
@@ -117,7 +116,7 @@ Per impostazione predefinita, lo scaricamento del trasporto utilizza la replica 
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
-### Utilizzo del datastore condiviso e della replica senza binario tra autore e processi di lavoro {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+### Utilizzo del datastore condiviso e della replica senza binario tra autori e lavoratori  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 Si consiglia di utilizzare la replica senza binario per ridurre il sovraccarico di trasporto per lo scarico delle risorse. Per informazioni su come impostare la replica senza binario per un datastore condiviso, consulta [Configurazione di Node Stores e Data Store in AEM](/help/sites-deploying/data-store-config.md). La procedura non è diversa per lo scaricamento delle risorse, tranne per il fatto che coinvolge altri agenti di replica. Poiché la replica senza binario funziona solo con agenti di replica in avanti, è necessario utilizzare anche la replica in avanti per tutti gli agenti di offload.
 
@@ -143,7 +142,7 @@ Per disabilitare il trasporto del modello di flusso di lavoro, modifica il fluss
 1. Apri la scheda Argomenti e deseleziona le opzioni Aggiungi modello a input e Aggiungi modello a output .
 1. Salva le modifiche apportate al modello.
 
-### Ottimizzazione dell&#39;intervallo di polling {#optimizing-the-polling-interval}
+### Ottimizzazione dell’intervallo di polling {#optimizing-the-polling-interval}
 
 Lo scaricamento del flusso di lavoro viene implementato utilizzando un flusso di lavoro esterno sul flusso di lavoro primario, che esegue il polling per il completamento del flusso di lavoro scaricato sul processo di lavoro. L’intervallo di polling predefinito per i processi del flusso di lavoro esterno è di cinque secondi. L’Adobe consiglia di aumentare l’intervallo di polling del passaggio di offload delle risorse ad almeno 15 secondi per ridurre il sovraccarico di offload sul carico primario.
 
@@ -161,4 +160,3 @@ Questo documento si concentra sullo scarico delle risorse. Ecco alcuni documenti
 
 * [Offload dei processi](/help/sites-deploying/offloading.md)
 * [Offload del flusso di lavoro delle risorse](/help/sites-administering/workflow-offloader.md)
-
