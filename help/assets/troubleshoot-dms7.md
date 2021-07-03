@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Risoluzione dei problemi
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -35,7 +34,7 @@ Assicurati che Dynamic Media sia stato configurato correttamente eseguendo le op
 
    Questo agente di replica si trova in **[!UICONTROL Agenti]** sull&#39;autore.
 
-## Generale (tutte le risorse) {#general-all-assets}
+## Generale (tutte le attività) {#general-all-assets}
 
 Di seguito sono riportati alcuni suggerimenti generali per tutte le risorse.
 
@@ -62,7 +61,7 @@ Prima di eseguire un&#39;operazione Sposta, Copia o Elimina, eseguire le operazi
 * Per i predefiniti per immagini e visualizzatori, verifica che esista un valore `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` prima di eseguire le operazioni di spostamento, copia o eliminazione.
 * Se manca il valore dei metadati sopra riportato, è necessario ricaricare le risorse prima di spostare, copiare o eliminare le operazioni.
 
-### Controllo delle versioni {#version-control}
+### Controllo della versione {#version-control}
 
 Quando sostituisci una risorsa Dynamic Media esistente (nome e posizione identici), puoi mantenere entrambe le risorse o sostituirla o crearne una versione:
 
