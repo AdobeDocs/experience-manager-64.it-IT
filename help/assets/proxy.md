@@ -2,16 +2,15 @@
 title: Sviluppo proxy risorse
 description: 'Un proxy è un''istanza AEM che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy AEM, le operazioni supportate, i componenti proxy e come sviluppare un proxy worker personalizzato. '
 contentOwner: AG
-feature: Asset Processing
-role: Administrator, Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Elaborazione risorse
+role: Admin, Architect
+exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Sviluppo proxy risorse {#assets-proxy-development}
 
@@ -21,7 +20,7 @@ Un proxy è un&#39;istanza AEM specifica (e talvolta separata) che utilizza i pr
 
 Quando il proxy è un&#39;istanza AEM separata, questo aiuta a ridurre il carico sulle istanze di authoring AEM. Per impostazione predefinita, AEM Assets esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull’istanza di authoring AEM.
 
-## Proxy (HTTP Access) {#proxy-http-access}
+## Proxy (accesso HTTP) {#proxy-http-access}
 
 Un proxy è disponibile tramite il servlet HTTP quando è configurato per accettare processi di elaborazione in: `/libs/dam/cloud/proxy`. Questo servlet crea un lavoro sling dai parametri inviati. Questo viene quindi aggiunto alla coda del processo proxy e collegato al processo di lavoro proxy appropriato.
 
