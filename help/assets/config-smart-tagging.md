@@ -2,16 +2,15 @@
 title: Configura l’assegnazione tag alle risorse utilizzando il Servizio di contenuti avanzati.
 description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati migliorati in [!DNL Adobe Experience Manager] utilizzando il Servizio di contenuti avanzati.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tag avanzati, assegnazione tag
+role: Admin
+exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 53%
 
 ---
-
 
 # Configurare l’assegnazione tag delle risorse tramite il Servizio di contenuti avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
@@ -39,7 +38,7 @@ Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue per
 
 Per abilitare i tag avanzati migliorati, oltre a quanto indicato sopra, installa anche l’ ultimo [Service Pack di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it).
 
-## Creare una configurazione del Servizio di contenuti avanzati per ottenere il certificato pubblico {#obtain-public-certificate}
+## Creare una configurazione del Servizio di contenuti avanzati per ottenere un certificato pubblico {#obtain-public-certificate}
 
 Un certificato pubblico ti consente di autenticare il profilo su [!DNL Adobe Developer Console].
 
@@ -73,7 +72,7 @@ Un certificato pubblico ti consente di autenticare il profilo su [!DNL Adobe Dev
 
    *Figura: Impostazioni del servizio di assegnazione tag avanzati*
 
-### Riconfigura quando scade un certificato {#certrenew}
+### Riconfigura alla scadenza del certificato {#certrenew}
 
 Dopo la scadenza di un certificato, non è più attendibile. Non è possibile rinnovare un certificato scaduto. Per aggiungere un nuovo certificato, effettua le seguenti operazioni.
 
@@ -190,6 +189,6 @@ Dopo aver completato la configurazione, utilizza un MBean JMX per convalidare la
 >[!MORELIKETHIS]
 >
 >* [Gestire tag avanzati](managing-smart-tags.md)
->* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
->* [Linee guida e regole per la formazione del Servizio di contenuti avanzati](smart-tags-training-guidelines.md)
+* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
+* [Linee guida e regole per la formazione del Servizio di contenuti avanzati](smart-tags-training-guidelines.md)
 
