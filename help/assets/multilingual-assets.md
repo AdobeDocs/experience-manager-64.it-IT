@@ -2,20 +2,19 @@
 title: Risorse multilingue
 description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
-feature: Asset Management
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Gestione risorse
+role: Admin
+exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
-
 # Risorse multilingue {#multilingual-assets}
 
-Adobe Experience Manager (AEM) Assets consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
+Risorse Adobe Experience Manager (AEM) consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
 
 Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione delle risorse in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
