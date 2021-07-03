@@ -7,9 +7,8 @@ topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '10393'
 ht-degree: 4%
@@ -72,7 +71,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -84,7 +83,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
@@ -111,13 +110,13 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * Integra i video utilizzando il codice di incorporamento sulla pagina web:
 
          [Incorporare il visualizzatore video in una pagina](embed-code.md) web.
-   * [Pubblicazione di video su YouTube](#publishing-videos-to-youtube).
+   * [Pubblicazione di video in YouTube](#publishing-videos-to-youtube).
    * [Generazione di rapporti video](#viewing-video-reports).
    * [Aggiunta di sottotitoli al video](#adding-captions-to-video).
 
 
 
-## Utilizzo di video in Dynamic Media {#working-with-video-in-dynamic-media}
+## Utilizzo dei video in Dynamic Media {#working-with-video-in-dynamic-media}
 
 Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su più schermi, tra cui desktop, iOS, Android, Blackberry e dispositivi mobili Windows. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
@@ -269,7 +268,7 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Architettura di pubblicazione ibrida per video {#hybrid-publishing-architecture-for-videos}
+## Architettura di pubblicazione ibrida per i video {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
@@ -424,7 +423,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
    <td><p>Codificato</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificato</p> </td> 
@@ -439,22 +438,22 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264. Poiché i file MP4 utilizzano il codec video H.264, fornisce video di alta qualità ma in dimensioni file compresse.
 
-## Pubblicazione di video su YouTube {#publishing-videos-to-youtube}
+## Pubblicazione di video in YouTube {#publishing-videos-to-youtube}
 
 Puoi pubblicare risorse video on-premise AEM direttamente su un canale YouTube creato in precedenza.
 
-Per pubblicare risorse video su YouTube, imposta AEM Assets con i tag . Puoi associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. Se la risorsa video non ha un tag, non viene pubblicata su YouTube.
+Per pubblicare le risorse video in YouTube, imposta AEM Assets con i tag . Puoi associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato in YouTube. Se la risorsa video non ha un tag, non viene pubblicata in YouTube.
 
-La pubblicazione su YouTube ignora il sistema di elaborazione dei profili in AEM e, quindi, anche il profilo di codifica video. Questo bypass si verifica perché YouTube dispone di una propria codifica, pertanto non è necessario un profilo di elaborazione video. Nella maggior parte dei casi, tuttavia, ci si aspetta che le risorse video siano già passate attraverso un profilo di elaborazione video. Quando bypassi il profilo di elaborazione video e lo pubblichi direttamente su YouTube, significa semplicemente che la risorsa video in AEM Assets non ottiene una miniatura visibile. Significa anche che se esegui in modalità di esecuzione di Dynamic Media, i video non codificati non funzioneranno con nessuno dei tipi di risorse Dynamic Media.
+La pubblicazione in YouTube ignora il sistema di elaborazione dei profili in AEM e, quindi, anche il profilo di codifica video. Questo bypass si verifica perché YouTube dispone di una propria codifica, pertanto non è necessario un profilo di elaborazione video. Nella maggior parte dei casi, tuttavia, ci si aspetta che le risorse video siano già passate attraverso un profilo di elaborazione video. Se bypassi il profilo di elaborazione video e lo pubblichi direttamente in YouTube, significa semplicemente che la risorsa video in AEM risorsa non riceve una miniatura visibile. Significa anche che se esegui in modalità di esecuzione di Dynamic Media, i video non codificati non funzioneranno con nessuno dei tipi di risorse Dynamic Media.
 
-La pubblicazione di risorse video sui server YouTube comporta il completamento delle seguenti attività per garantire l’autenticazione sicura da server a server con YouTube:
+La pubblicazione delle risorse video sui server YouTube comporta il completamento delle seguenti attività per garantire l’autenticazione server-to-server sicura con YouTube:
 
 1. [Configurazione delle impostazioni di Google Cloud](#configuring-google-cloud-settings)
 1. [Creazione di un canale YouTube](#creating-a-youtube-channel)
 1. [Aggiunta di tag per la pubblicazione](#adding-tags-for-publishing)
-1. [Abilitazione dell’agente di replica per la pubblicazione su YouTube](#enabling-the-youtube-publish-replication-agent)
+1. [Abilitazione dell’agente di replica di pubblicazione di YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configurazione di YouTube in AEM](#setting-up-youtube-in-aem)
-1. [(Facoltativo) Automazione dell&#39;impostazione delle proprietà YouTube predefinite per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [(Facoltativo) Automazione dell&#39;impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Pubblicazione di video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
 1. [(Facoltativo) Verifica del video pubblicato su YouTube](video.md#optional-verifying-the-published-video-on-youtube)
 1. [Collegamento degli URL YouTube all’applicazione Web](#linking-youtube-urls-to-your-web-application)
@@ -463,7 +462,7 @@ Puoi anche [annullare la pubblicazione dei video per rimuoverli da YouTube](#unp
 
 ### Configurazione delle impostazioni di Google Cloud {#configuring-google-cloud-settings}
 
-Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, hai già un account Google. Se non hai un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video su YouTube. Se hai già creato un account, salta questa attività e passa a [Creazione di un canale YouTube](#creating-a-youtube-channel).
+Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, hai già un account Google. Se non hai un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa a [Creazione di un canale YouTube](#creating-a-youtube-channel).
 
 >[!NOTE]
 >
@@ -487,8 +486,8 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 
 1. Nella scheda **[!UICONTROL Dashboard]** del progetto, nella scheda **[!UICONTROL Guida introduttiva]**, tocca **[!UICONTROL Abilita API e ottieni credenziali come chiavi]**.
 1. Vicino alla parte superiore della pagina **[!UICONTROL Dashboard]**, tocca **[!UICONTROL Abilita API]**.
-1. Nella pagina **[!UICONTROL Libreria]**, sotto API di YouTube, tocca **[!UICONTROL API dati di YouTube]**.
-1. Vicino alla parte superiore della pagina **[!UICONTROL API dei dati di YouTube v3]**, tocca **[!UICONTROL Abilita]** per attivarla.
+1. Nella pagina **[!UICONTROL Libreria]**, in API YouTube, tocca **[!UICONTROL API dati YouTube]**.
+1. Vicino alla parte superiore della pagina **[!UICONTROL YouTube Data API v3]**, tocca **[!UICONTROL Abilita]** per attivarla.
 1. Per utilizzare l’API, potrebbero essere necessarie delle credenziali. Se necessario, tocca **[!UICONTROL Crea credenziali]**.
 1. Da **[!UICONTROL dove chiamerai l&#39;API?]** dall’elenco a discesa, seleziona Server  **[!UICONTROL web (ad esempio node.js, Tomcat)]**.
 1. Alla voce **[!UICONTROL A quali dati accederai?]** selezionare Dati  **[!UICONTROL utente]**.
@@ -514,13 +513,13 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 1. Nella pagina Credenziali, sotto l’intestazione **[!UICONTROL Imposta la schermata di consenso OAuth 2.0]** , seleziona l’indirizzo Gmail che stai utilizzando.
 1. Nel campo di testo sotto l&#39;intestazione **[!UICONTROL Nome prodotto visualizzato agli utenti]** , immetti ciò che desideri mostrare nella schermata di consenso.
 
-   Quando effettuano l’autenticazione su YouTube, viene visualizzata la schermata di consenso all’amministratore AEM; AEM contatterà YouTube per ottenere il permesso.
+   La schermata di consenso viene visualizzata all’amministratore AEM quando effettua l’autenticazione in YouTube; AEM contattare YouTube per l&#39;autorizzazione.
 
 1. Tocca **[!UICONTROL Continua]**.
 1. Nell&#39;intestazione **[!UICONTROL Scarica credenziali]**, tocca **[!UICONTROL Scarica]**.
 1. Salva il file `client_id.json`.
 
-   Sarà necessario questo file json scaricato quando configuri YouTube in Adobe Experience Manager in seguito.
+   Questo file json scaricato sarà necessario quando configuri YouTube in Adobe Experience Manager in un secondo momento.
 
 1. Toccate **[!UICONTROL Chiudi]**.
 
@@ -528,21 +527,21 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 
 ### Creazione di un canale YouTube {#creating-a-youtube-channel}
 
-Per pubblicare video su YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a **Aggiunta di tag per la pubblicazione**.
+Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a **Aggiunta di tag per la pubblicazione**.
 
 >[!CAUTION]
 >
->Assicurati di aver già configurato uno o più canali in YouTube &amp;ast;before&amp;ast; aggiungi i canali in Impostazioni YouTube in AEM (vedi [Configurazione YouTube in AEM](#setting-up-youtube-in-aem) qui sotto). Se non riesci a farlo, non riceverai alcun avviso relativo all’assenza di canali esistenti. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
+>Assicurati di aver già configurato uno o più canali in YouTube &amp;ast;before&amp;ast; aggiungi i canali in Impostazioni YouTube in AEM (consulta [Configurazione di YouTube in AEM](#setting-up-youtube-in-aem) di seguito). Se non riesci a farlo, non riceverai alcun avviso relativo all’assenza di canali esistenti. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
 
 **Per creare un canale** YouTube:
 
 1. Vai a [https://www.youtube.com](https://www.youtube.com/) e accedi utilizzando le tue credenziali del tuo account Google.
-1. Nell’angolo in alto a destra della pagina YouTube, tocca l’immagine del profilo (può anche apparire come lettera all’interno di un cerchio colorato), quindi tocca **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio circolare).
+1. Nell’angolo in alto a destra della pagina YouTube, tocca l’immagine del profilo (potrebbe anche essere visualizzata come lettera all’interno di un cerchio colorato), quindi tocca **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio circolare).
 1. Nella pagina **[!UICONTROL Panoramica]**, sotto l&#39;intestazione **[!UICONTROL Ulteriori funzionalità]**, tocca **[!UICONTROL Vedi tutti i miei canali o crea un nuovo canale]**.
 1. Nella pagina **[!UICONTROL Canali]**, tocca **[!UICONTROL Crea un nuovo canale]**.
 1. Nella pagina **[!UICONTROL Account marchio]**, nel campo **[!UICONTROL Nome account marchio]** , immetti un nome business o qualsiasi altro nome di canale scelto per pubblicare le risorse video, quindi tocca **[!UICONTROL Crea]**.
 
-   Ricordate il nome inserito qui perché dovrete immetterlo di nuovo quando si imposta YouTube in AEM.
+   Ricorda il nome immesso qui perché sarà necessario immetterlo nuovamente quando configuri YouTube in AEM.
 
 1. (Facoltativo) Se necessario, aggiungi altri canali.
 
@@ -550,19 +549,19 @@ Per pubblicare video su YouTube è necessario disporre di uno o più canali. Se 
 
 ### Aggiunta di tag per la pubblicazione {#adding-tags-for-publishing}
 
-Per pubblicare sui video su YouTube, AEM associa i tag a uno o più canali di YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrazione dei tag](/help/sites-administering/tags.md).
+Per pubblicare nei video in YouTube, AEM associa i tag a uno o più canali YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrazione dei tag](/help/sites-administering/tags.md).
 
-Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa attività e passare a [Abilitazione dell&#39;agente di replica di pubblicazione su YouTube](#enabling-the-youtube-publish-replication-agent).
+Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa attività e passare a [Abilitazione dell&#39;agente di replica di pubblicazione YouTube](#enabling-the-youtube-publish-replication-agent).
 
-### Abilitazione dell’agente di replica di pubblicazione su YouTube {#enabling-the-youtube-publish-replication-agent}
+### Abilitazione dell’agente di replica YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti > Implementazione > Replica > Agenti su autore]**.
-1. Nella pagina **[!UICONTROL Agenti autore]**, tocca **[!UICONTROL Pubblicazione su YouTube (youtube)]**.
+1. Nella pagina **[!UICONTROL Agenti autore]**, tocca **[!UICONTROL Pubblicazione YouTube (youtube)]**.
 1. Sulla barra degli strumenti, a destra di Impostazioni, tocca **[!UICONTROL Modifica]**.
 1. Selezionare la casella di controllo **[!UICONTROL Enabled]** per attivare l&#39;agente di replica.
 1. toccare **[!UICONTROL OK]**.
 
-   Ora imposterete YouTube in AEM.
+   Ora configurerai YouTube in AEM.
 
 ### Configurazione di YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -581,7 +580,7 @@ Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa att
 1. Torna alla finestra di dialogo **[!UICONTROL Impostazioni account YouTube]** . Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Toccare **[!UICONTROL OK]**.
 
-   Ora configurerai i canali di YouTube in AEM.
+   Ora configurerai i canali YouTube in AEM.
 
 1. A destra di **[!UICONTROL Canali disponibili]**, tocca **[!UICONTROL +]** (icona del segno più).
 1. Nella finestra di dialogo **[!UICONTROL Impostazioni canale YouTube]**, nel campo **[!UICONTROL Titolo]** , immetti il nome del canale creato nell&#39;attività **C[!UICONTROL che crea un canale YouTube]** precedente.
@@ -611,17 +610,17 @@ Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa att
 
 ### (Facoltativo) Automazione dell&#39;impostazione delle proprietà predefinite di YouTube per i video caricati {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-Puoi automatizzare l’impostazione delle proprietà di YouTube al caricamento dei tuoi video. A tal fine, crea un profilo di elaborazione dei metadati in AEM.
+Puoi automatizzare l’impostazione delle proprietà di YouTube al caricamento dei video. A tal fine, crea un profilo di elaborazione dei metadati in AEM.
 
 Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori dai campi **[!UICONTROL Etichetta campo]**, **[!UICONTROL Mappa su proprietà]** e **[!UICONTROL Scelte]**, tutti disponibili in Schemi metadati per i video. Quindi, puoi aggiungere i valori per creare il tuo profilo di elaborazione dei metadati video di YouTube.
 
-**Per automatizzare facoltativamente l’impostazione delle proprietà YouTube predefinite per i video** caricati:
+**Per automatizzare facoltativamente l’impostazione delle proprietà predefinite di YouTube per i video** caricati:
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**.
 1. Tocca **[!UICONTROL default]**. (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;.)
 1. Nella pagina **[!UICONTROL default]** , seleziona la casella a sinistra di **[!UICONTROL video]**, quindi tocca **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Editor schema metadati]**, tocca la scheda **[!UICONTROL Avanzate]** .
-1. Nell’intestazione Pubblicazione su YouTube, tocca **[!UICONTROL Categoria YouTube]**. (Non toccare l’elenco a discesa Categoria YouTube .)
+1. Sotto l’intestazione Pubblicazione YouTube, tocca **[!UICONTROL Categoria YouTube]**. (Non toccare l’elenco a discesa Categoria YouTube ).
 1. Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , procedi come segue:
 
    * Nel campo di testo **[!UICONTROL Etichetta campo]**, selezionare e copiare il valore.
@@ -636,7 +635,7 @@ Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori 
 
       Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando crei il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
-1. Nell’intestazione Pubblicazione su YouTube, tocca **[!UICONTROL Privacy su YouTube]**. (Non toccare l’elenco a discesa Privacy di YouTube.)
+1. Sotto l’intestazione Pubblicazione YouTube, tocca **[!UICONTROL Privacy YouTube]**. (Non toccare l’elenco a discesa Privacy di YouTube.)
 1. Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , procedi come segue:
 
    * Nel campo di testo **[!UICONTROL Etichetta campo]**, selezionare e copiare il valore.
@@ -662,33 +661,33 @@ Per creare il profilo di elaborazione dei metadati, devi prima copiare i valori 
    * Trascina a sinistra il componente con etichetta **[!UICONTROL Intestazione sezione]** e rilascialo nell’area del modulo.
    * Tocca **[!UICONTROL Etichetta campo]** per selezionare il componente.
    * Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]**, nel campo di testo **[!UICONTROL Etichetta campo]**, immetti `YouTube Publishing`.
-   * Tocca la scheda **[!UICONTROL Genera modulo]** , quindi trascina il componente con etichetta **[!UICONTROL Testo a riga singola]** e rilascialo sotto l’intestazione **[!UICONTROL Pubblicazione su YouTube]** appena creata.
+   * Tocca la scheda **[!UICONTROL Genera modulo]** , quindi trascina il componente con etichetta **[!UICONTROL Testo a riga singola]** e rilascialo sotto l&#39;intestazione **[!UICONTROL Pubblicazione YouTube]** appena creata.
    * Tocca **[!UICONTROL Etichetta campo]** per selezionare il componente.
-   * Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , incolla i valori **[!UICONTROL Pubblicazione su YouTube]** (**[!UICONTROL Etichetta campo]** e **[!UICONTROL Mappa su proprietà]**) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore **[!UICONTROL Choices]** nel campo **[!UICONTROL Valore predefinito]** .
+   * Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , incolla i valori **[!UICONTROL YouTube Publishing]** (**[!UICONTROL Etichetta campo]** e **[!UICONTROL Mappa su proprietà]**) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore **[!UICONTROL Choices]** nel campo **[!UICONTROL Valore predefinito]** .
 
-1. Aggiungi i valori di Privacy YouTube copiati al profilo facendo quanto segue:
+1. Aggiungi i valori di YouTube Privacy copiati al profilo facendo quanto segue:
 
    * Sul lato destro della pagina, tocca la scheda **[!UICONTROL Genera modulo]** .
    * Trascina a sinistra il componente con etichetta **[!UICONTROL Intestazione sezione]** e rilascialo nell’area del modulo.
    * Tocca **[!UICONTROL Etichetta campo]** per selezionare il componente.
    * Sul lato destro della pagina, sotto la scheda Impostazioni, nel campo di testo Etichetta campo, immetti `YouTube Privacy`.
-   * Tocca la scheda **[!UICONTROL Genera modulo]** , quindi trascina il componente con etichetta **[!UICONTROL Testo a riga singola]** e rilascialo sotto l’intestazione **[!UICONTROL Privacy YouTube]** appena creata.
+   * Tocca la scheda **[!UICONTROL Genera modulo]** , quindi trascina il componente con etichetta **[!UICONTROL Testo a riga singola]** e rilascialo sotto l’intestazione **[!UICONTROL YouTube Privacy]** appena creata.
    * Tocca **[!UICONTROL Etichetta campo]** per selezionare il componente.
-   * Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , incolla i valori **[!UICONTROL Pubblicazione su YouTube]** (**[!UICONTROL Etichetta campo]** e **[!UICONTROL Mappa su proprietà]**) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore **[!UICONTROL Choices]** nel campo **[!UICONTROL Valore predefinito]** .
+   * Sul lato destro della pagina, sotto la scheda **[!UICONTROL Impostazioni]** , incolla i valori **[!UICONTROL YouTube Publishing]** (**[!UICONTROL Etichetta campo]** e **[!UICONTROL Mappa su proprietà]**) copiati in precedenza, nei rispettivi campi del modulo. Incolla il valore **[!UICONTROL Choices]** nel campo **[!UICONTROL Valore predefinito]** .
 
 1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
-1. Applica il profilo di metadati Pubblicazione su YouTube alle cartelle in cui stai per caricare i video. Sarà necessario impostare sia il profilo metadati che il profilo video.
+1. Applica il profilo metadati Pubblicazione YouTube alle cartelle in cui stai per caricare i video. Sarà necessario impostare sia il profilo metadati che il profilo video.
 
    Consulta le sezioni [Profili di metadati](metadata-profiles.md) e [Profili video](video-profiles.md).
 
 ### Pubblicazione di video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
 
-Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo processo AEM sapere quali risorse pubblicare sul canale YouTube.
+Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo processo AEM sapere quali risorse pubblicare sul tuo canale YouTube.
 
 Per pubblicare contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Pubblica su YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-**Per pubblicare video sul tuo canale** YouTube:
+**Per pubblicare i video sul tuo canale** YouTube:
 
 1. In AEM, accedi a una risorsa video da pubblicare sul tuo canale YouTube.
 1. Seleziona la risorsa video.
@@ -706,7 +705,7 @@ Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazio
 
 ### (Facoltativo) Verifica del video pubblicato su YouTube {#optional-verifying-the-published-video-on-youtube}
 
-Puoi monitorare l’avanzamento della pubblicazione su YouTube (o l’annullamento della pubblicazione).
+Puoi monitorare l’avanzamento della pubblicazione (o dell’annullamento della pubblicazione) in YouTube.
 
 Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -714,21 +713,21 @@ I tempi di pubblicazione possono variare notevolmente a seconda di numerosi fatt
 
 Dopo otto ore se vedi ancora un messaggio di stato che dice **[!UICONTROL Caricato (elaborazione, attendi)]**, prova a rimuovere il video dal nostro sito e caricarlo di nuovo.
 
-### Collegamento di URL YouTube all&#39;applicazione Web {#linking-youtube-urls-to-your-web-application}
+### Collegamento degli URL YouTube all’applicazione Web {#linking-youtube-urls-to-your-web-application}
 
-Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare in base alle necessità nelle pagine del sito web o dell’applicazione.
+Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare come necessario nelle pagine del sito web o dell’applicazione.
 
-L’URL YouTube non è disponibile per la copia finché non hai pubblicato la risorsa video su YouTube.
+L’URL di YouTube non è disponibile per la copia finché non avrai pubblicato la risorsa video in YouTube.
 
-**Per collegare gli URL YouTube alla tua applicazione** web:
+**Per collegare gli URL di YouTube alla tua applicazione** web:
 
 1. Passa alla risorsa video YouTube *pubblicata* di cui desideri copiare l&#39;URL, quindi selezionala.
 
-   Gli URL di YouTube sono disponibili solo per copiare *dopo* hai prima *pubblicato* le risorse video su YouTube.
+   Gli URL di YouTube sono disponibili solo per copiare *dopo* le prime *risorse video pubblicate* in YouTube.
 
 1. Sulla barra degli strumenti, tocca **[!UICONTROL Proprietà]**.
 1. Tocca la scheda **[!UICONTROL Avanzate]** .
-1. Sotto l&#39;intestazione **[!UICONTROL Pubblicazione su YouTube]** , nell&#39; Elenco **[!UICONTROL URL YouTube]** , seleziona e copia il testo dell&#39;URL nel browser web per visualizzare l&#39;anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
+1. Sotto l’intestazione **[!UICONTROL Pubblicazione YouTube]**, nell’ Elenco **[!UICONTROL URL YouTube]** , seleziona e copia il testo dell’URL nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
 
 ### Annullamento della pubblicazione di video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
@@ -736,25 +735,25 @@ Quando annulli la pubblicazione di una risorsa video in AEM, il video viene rimo
 
 >[!CAUTION]
 >
->Se rimuovi un video direttamente da YouTube, AEM è ignaro e continua a comportarsi come se il video fosse ancora pubblicato su YouTube. Annulla sempre la pubblicazione di una risorsa video da YouTube tramite AEM.
+>Se rimuovi un video direttamente da YouTube, AEM ignora e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Annulla sempre la pubblicazione di una risorsa video da YouTube tramite AEM.
 
-Per rimuovere contenuti da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+Per rimuovere il contenuto da YouTube, AEM utilizza il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Per annullare la pubblicazione dei video e rimuoverli da YouTube**:
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti > Risorse]**.
-1. Passa alle risorse video di cui vuoi annullare la pubblicazione dal canale YouTube.
+1. Passa alle risorse video da cui desideri annullare la pubblicazione dal canale YouTube.
 1. In una modalità di selezione delle risorse, seleziona una o più risorse video pubblicate.
 1. Sulla barra degli strumenti, tocca **[!UICONTROL Annulla pubblicazione > Annulla pubblicazione]**.
 
-## Monitoraggio della codifica video e stato di pubblicazione su YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Monitoraggio della codifica video e stato della pubblicazione in YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o lo pubblichi su youtube, puoi monitorare l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione youtube in diversi modi. L’avanzamento effettivo della pubblicazione su YouTube è disponibile solo tramite i registri, ma se ha esito negativo o positivo è elencato in modi aggiuntivi descritti nella procedura seguente. Inoltre, puoi ricevere notifiche e-mail quando un flusso di lavoro di pubblicazione di YouTube o una codifica video viene completata o interrotta.
+Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o lo pubblichi su youtube, puoi monitorare l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione youtube in diversi modi. L’avanzamento effettivo della pubblicazione in YouTube è disponibile solo tramite i registri, ma se ha esito negativo o positivo è elencato in modi aggiuntivi descritti nella procedura seguente. Inoltre, puoi ricevere notifiche e-mail quando un flusso di lavoro o una codifica video di pubblicazione di YouTube viene completata o interrotta.
 
-### Monitoraggio dello stato di avanzamento {#monitoring-progress}
+### Monitoraggio dello stato {#monitoring-progress}
 
-Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione su YouTube):
+Per monitorare l’avanzamento (compresa la codifica non riuscita/pubblicazione YouTube):
 
 1. Visualizza l’avanzamento della codifica video nella cartella delle risorse:
 
@@ -770,11 +769,11 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
       ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Visualizza l’avanzamento nei dettagli della risorsa. Quando tocchi una risorsa, apri il menu a discesa e seleziona **[!UICONTROL Timeline]**. Per limitare l’attività al flusso di lavoro come la codifica o la pubblicazione su YouTube, seleziona **[!UICONTROL Flussi di lavoro]**.
+1. Visualizza l’avanzamento nei dettagli della risorsa. Quando tocchi una risorsa, apri il menu a discesa e seleziona **[!UICONTROL Timeline]**. Per limitare l&#39;attività del flusso di lavoro come la codifica o la pubblicazione YouTube, seleziona **[!UICONTROL Flussi di lavoro]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Nella timeline vengono visualizzate tutte le informazioni sul flusso di lavoro, ad esempio la codifica . Per la pubblicazione su YouTube, la timeline **[!UICONTROL Flusso di lavoro]** include anche il nome del canale YouTube e l’URL del video YouTube. Inoltre, puoi vedere eventuali notifiche di errore nella timeline **[!UICONTROL Flusso di lavoro]**.
+   Nella timeline vengono visualizzate tutte le informazioni sul flusso di lavoro, ad esempio la codifica . Per la pubblicazione YouTube, la timeline **[!UICONTROL Flusso di lavoro]** include anche il nome del canale YouTube e l’URL video YouTube. Inoltre, puoi vedere eventuali notifiche di errore nella timeline **[!UICONTROL Flusso di lavoro]**.
 
    >[!NOTE]
    >
@@ -833,14 +832,14 @@ Consulta [Configurazione delle notifiche e-mail](#configuring-e-mail-notificatio
 
 Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre di diritti amministrativi.
 
-La modalità di configurazione delle notifiche dipende dal fatto che desideri ricevere notifiche per i processi di codifica o pubblicazione su YouTube:
+La modalità di configurazione della notifica dipende dal fatto se si desidera ricevere notifiche per i processi di codifica o pubblicazione in YouTube:
 
 * Per i lavori di codifica, puoi accedere alla pagina di configurazione per tutte le notifiche e-mail AEM flusso di lavoro in **[!UICONTROL Strumenti > Operazioni > Console web]** e cercare **[!UICONTROL Servizio notifica e-mail flusso di lavoro di Day CQ]**. Consulta [Configurazione delle notifiche e-mail in AEM](/help/sites-administering/notification.md). È possibile selezionare o deselezionare le caselle di controllo per **[!UICONTROL Notifica su Abort]** o **[!UICONTROL Notifica su Complete]** di conseguenza.
 
-* Per i lavori di pubblicazione su YouTube, procedi come segue:
+* Per i lavori di pubblicazione di YouTube, procedi come segue:
 
 1. In AEM, seleziona **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
-1. Seleziona il flusso di lavoro **[!UICONTROL Pubblica su YouTube]**, quindi tocca **[!UICONTROL Modifica]**.
+1. Seleziona il flusso di lavoro **[!UICONTROL Pubblica in YouTube]**, quindi tocca **[!UICONTROL Modifica]**.
 1. Fai clic con il pulsante destro del mouse sul passaggio del flusso di lavoro **[!UICONTROL Caricamento YouTube]**, quindi tocca **[!UICONTROL Modifica]**.
 1. Tocca la scheda **[!UICONTROL Argomento]s** .
 1. È possibile selezionare o deselezionare le seguenti caselle di controllo:
@@ -849,11 +848,11 @@ La modalità di configurazione delle notifiche dipende dal fatto che desideri ri
    * **[!UICONTROL Errore di pubblicazione]**
    * **[!UICONTROL Completamento pubblicazione]**, che include informazioni sui canali e sugli URL
 
-   Se deselezioni una casella di controllo, non riceverai la notifica e-mail specificata dal flusso di lavoro Pubblicazione su YouTube.
+   Deselezionando una casella di controllo non riceverai la notifica e-mail specificata dal flusso di lavoro di pubblicazione di YouTube.
 
    >[!NOTE]
    >
-   >Queste e-mail sono specifiche di YouTube e sono in aggiunta alle notifiche e-mail generiche del flusso di lavoro. Di conseguenza, puoi ricevere due set di notifiche e-mail: la notifica generica disponibile nel **Servizio di notifica e-mail del flusso di lavoro del giorno CQ** e una specifica per YouTube a seconda delle impostazioni di configurazione.
+   >Queste e-mail sono specifiche di YouTube e si aggiungono alle notifiche e-mail generiche del flusso di lavoro. Di conseguenza, puoi ricevere due set di notifiche e-mail: la notifica generica disponibile nel **Servizio di notifica e-mail del flusso di lavoro del giorno CQ** e una specifica per YouTube a seconda delle impostazioni di configurazione.
 
 ## Visualizzazione dei rapporti video {#viewing-video-reports}
 
@@ -871,7 +870,7 @@ I rapporti video mostrano diverse metriche aggregate in un determinato periodo d
 
 Quando tocchi un nome video nell’elenco, questo ti mostra il rapporto di fidelizzazione (a discesa) del video sotto forma di grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento di tempo durante la riproduzione del video. Quando si riproduce il video, la barra verticale traccia in sincronizzazione con l&#39;indicatore del tempo nel lettore. Le perdite nei dati del grafico a linee indicano dove il pubblico si allontana dal disinteresse.
 
-Se il video è stato codificato all’esterno di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
+Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
 
 Vedi anche [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md).
 
@@ -962,7 +961,7 @@ Per visualizzare i rapporti video basati su un visualizzatore video creato utili
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Aggiunta di sottotitoli al video {#adding-captions-to-video}
+## Aggiunta di sottotitoli a video {#adding-captions-to-video}
 
 Puoi estendere la portata dei tuoi video sui mercati globali aggiungendo sottotitoli a singoli video o a set di video adattivi. Aggiungendo i sottotitoli si evita la necessità di duplicare l&#39;audio o la necessità di utilizzare gli altoparlanti nativi per registrare nuovamente l&#39;audio per ogni lingua diversa. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli in lingua straniera vengono visualizzati in modo che le persone di lingue diverse possano ancora comprendere la porzione audio.
 
