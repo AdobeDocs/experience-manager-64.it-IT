@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Viewer Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Predefiniti visualizzatore
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 12%
 
 ---
 
-# Gestione dei predefiniti visualizzatore Dynamic Media {#managing-viewer-presets}
+# Gestione dei predefiniti per visualizzatori Dynamic Media {#managing-viewer-presets}
 
 Un predefinito per visualizzatori Dynamic Media è una raccolta di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Gli amministratori possono creare i predefiniti visualizzatore. Le impostazioni sono disponibili per una serie di opzioni di configurazione del visualizzatore. Ad esempio, puoi modificare le dimensioni di visualizzazione o il comportamento di zoom del visualizzatore.
 
@@ -38,13 +37,13 @@ Questa sezione descrive come creare, modificare e gestire i predefiniti per visu
 >
 >Tenere presente che la modifica di qualsiasi *predefinito predefinito visualizzatore predefinito* non è uno scenario supportato. Se tenti di modificare un predefinito visualizzatore predefinito, ti viene richiesto di salvare il predefinito visualizzatore con un nuovo nome.
 
-## Accessibilità da tastiera per visualizzatori {#keyboard-accessibility-for-viewers}
+## Accessibilità della tastiera per i visualizzatori {#keyboard-accessibility-for-viewers}
 
 Tutti i visualizzatori predefiniti supportano l’accessibilità da tastiera.
 
 Vedere anche [Accessibilità alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
-## Gestione dei predefiniti visualizzatore Dynamic Media {#managing-presets}
+## Gestione dei predefiniti per visualizzatori Dynamic Media {#managing-presets}
 
 Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e visualizzare in anteprima i predefiniti visualizzatore in AEM, tocca **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
@@ -65,7 +64,7 @@ Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle p
 >Prima di utilizzarli, è necessario pubblicare tutti i visualizzatori predefiniti.\
 >Consulta [Pubblicazione dei predefiniti per visualizzatori.](#publishing-viewer-presets)
 
-## Compatibilità del sistema predefinito del visualizzatore {#viewer-preset-system-compatibility}
+## Compatibilità del sistema predefinito del visualizzatore  {#viewer-preset-system-compatibility}
 
 Tutti i predefiniti visualizzatore forniti con Dynamic Media sono completamente compatibili con i seguenti sistemi:
 
@@ -76,7 +75,7 @@ Tutti i predefiniti visualizzatore forniti con Dynamic Media sono completamente 
 * Tablet Android
 * Per i video, è disponibile un supporto aggiuntivo per la riproduzione MP4 per [Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
-### Tipi di contenuti multimediali avanzati per predefiniti visualizzatore {#rich-media-types-for-viewer-presets}
+### Tipi di contenuti multimediali avanzati per i predefiniti per visualizzatori {#rich-media-types-for-viewer-presets}
 
 Gli amministratori possono aggiungere e personalizzare i seguenti tipi di contenuti multimediali durante la creazione di nuovi predefiniti per visualizzatori.
 
@@ -146,7 +145,7 @@ Consulta *Note sulla versione visualizzatori* nel sommario della [Guida di rifer
 | ZoomVerticale_scura | Zoom_verticale | html5_zoomverticalviewer_dark.css |
 | Zoom_Verticale | Zoom_verticale | html5_zoomverticalviewer_light.css |
 
-### Matrice di gesti dei visualizzatori mobili supportati {#supported-mobile-viewers-gestures-matrix}
+### Matrice di gesti dei visualizzatori per dispositivi mobili supportati {#supported-mobile-viewers-gestures-matrix}
 
 La tabella seguente identifica i gesti del visualizzatore mobile supportati sui dispositivi iOS, Android 2.x e Android 3.x.
 
@@ -160,7 +159,7 @@ La tabella seguente identifica i gesti del visualizzatore mobile supportati sui 
 | **Passaggio del dito** | Barra dei campioni a scorrimento | Scorre le immagini | Giri |
 | **Flick** | Barra dei campioni a scorrimento | Scorre le immagini | Giri |
 
-## Aumento del numero di predefiniti visualizzatore Dynamic Media visualizzati {#increasing-the-number-of-viewer-presets-that-display}
+## Aumento del numero di predefiniti visualizzatore Dynamic Media da visualizzare {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi una risorsa da **[!UICONTROL Vista dettagli > Visualizzatori]**. È possibile aumentare o diminuire il numero di visualizzatori visualizzati.
 
@@ -305,7 +304,7 @@ Quando si creano i predefiniti visualizzatore per banner carosello, è possibile
 |---|---|---|
 | **Icona punto attivo** | Modificare l’icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona del punto attivo, nella scheda **[!UICONTROL Aspetto]**, in **[!UICONTROL Componente selezionato]**, tocca **[!UICONTROL ImageMapEffect]**. Seleziona **[!UICONTROL Sfondo]** alla voce **[!UICONTROL Icona]** e, nel campo **[!UICONTROL Immagine]**, individua l’immagine di sfondo desiderata. |
 
-## Attivazione o disattivazione dei predefiniti visualizzatore Dynamic Media {#activating-or-deactivating-viewer-presets}
+## Attivazione o disattivazione dei predefiniti per visualizzatori Dynamic Media {#activating-or-deactivating-viewer-presets}
 
 I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono da quelli attivi nella modalità Creazione. Per impostazione predefinita, un predefinito visualizzatore è *On* dopo averlo creato. Se disattiva il predefinito, questo non verrà visualizzato in modalità Autore. Se il predefinito viene pubblicato. verrà sempre pubblicato indipendentemente dal fatto che sia attivato o disattivato. Puoi disattivare i predefiniti per visualizzatori se l’elenco diventa troppo ingombrante o se non desideri che un predefinito per visualizzatori sia disponibile per l’uso.
 
@@ -316,7 +315,7 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
    I predefiniti visualizzatore attivati presentano l’interruttore a destra, all’interno di una casella blu; i predefiniti visualizzatore disattivati presentano l’interruttore a sinistra, all’interno di una casella di colore grigio chiaro.
 
-## Pubblicazione dei predefiniti visualizzatore Dynamic Media {#publishing-viewer-presets}
+## Pubblicazione dei predefiniti per visualizzatori Dynamic Media {#publishing-viewer-presets}
 
 Attivando (o ruotando *Attivato*) lo stato di un predefinito visualizzatore significa che è visibile nel componente Dynamic Media, nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa.
 
@@ -332,14 +331,14 @@ Consulta anche [Anteprima delle risorse](previewing-assets.md).
 1. Seleziona uno o più predefiniti visualizzatore da pubblicare.
 1. Sulla barra degli strumenti, tocca l’icona **[!UICONTROL Pubblica]** .
 
-## Ordinamento dei predefiniti visualizzatore Dynamic Media {#sorting-viewer-presets}
+## Ordinamento dei predefiniti per visualizzatori Dynamic Media {#sorting-viewer-presets}
 
 **Per ordinare i predefiniti** visualizzatore Dynamic Media:
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi, nella barra a sinistra, seleziona **Strumenti** (icona a forma di martello) > **[!UICONTROL Risorse > Predefiniti visualizzatore]**.
 1. Per ordinare in base all’intestazione della colonna, fai clic su **[!UICONTROL Titolo del predefinito]**, **[!UICONTROL Tipo]**, **[!UICONTROL Pubblicato]** o **[!UICONTROL Stato]**. Ad esempio, fai clic su **[!UICONTROL Tipo]** per ordinare i tipi di predefiniti visualizzatore in ordine alfabetico o inverso.
 
-## Modifica dei predefiniti visualizzatore Dynamic Media {#editing-viewer-presets}
+## Modifica dei predefiniti per visualizzatori Dynamic Media {#editing-viewer-presets}
 
 Tenere presente che la modifica di qualsiasi *predefinito predefinito visualizzatore predefinito* non è uno scenario supportato. Se modifichi un predefinito per visualizzatori preconfigurato, viene richiesto di salvarlo con un nuovo nome.
 
@@ -380,7 +379,7 @@ Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo av
 
    Puoi [copiare l&#39;URL da condividere](linking-urls-to-yourwebapplication.md) con altri utenti.
 
-## Distribuzione delle risorse con i predefiniti visualizzatore Dynamic Media {#delivering-assets-with-viewer-presets}
+## Distribuzione delle risorse con i predefiniti per visualizzatori Dynamic Media {#delivering-assets-with-viewer-presets}
 
 Per ottenere gli URL per i predefiniti per visualizzatori, consulta [Collegamento degli URL all’applicazione Web](linking-urls-to-yourwebapplication.md). Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
 
