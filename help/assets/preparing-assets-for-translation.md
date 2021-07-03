@@ -2,22 +2,21 @@
 title: Preparazione delle risorse per la traduzione
 description: Crea cartelle principali in lingua per preparare la traduzione di risorse multilingue.
 contentOwner: AG
-feature: Projects,Translation
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Progetti,Traduzione
+role: User,Admin
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '452'
 ht-degree: 4%
 
 ---
-
 
 # Preparazione delle risorse per la traduzione {#preparing-assets-for-translation}
 
 Per risorse multilingue si intendono le risorse con file binari, metadati e tag in più lingue. In genere, i binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Adobe Experience Manager (AEM) Assets, le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
+In Risorse Adobe Experience Manager (AEM), le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
 
 Ogni cartella della lingua è denominata copia della lingua. La cartella principale di una copia per lingua, nota come radice lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, */content/dam/it* è la directory principale della lingua italiana per la copia in lingua italiana. Le copie in lingua devono utilizzare una [directory principale della lingua configurata correttamente](preparing-assets-for-translation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata durante l&#39;esecuzione delle traduzioni delle risorse di origine.
 
@@ -37,7 +36,7 @@ La gerarchia delle cartelle di esempio include diverse directory principali dell
              |- zh
 ```
 
-Esegui i seguenti passaggi per preparare le risorse per la traduzione:
+Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
 
 1. Creare la directory principale lingua della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni contenute in [Creazione di una directory principale della lingua](preparing-assets-for-translation.md#creating-a-language-root).
 
@@ -72,4 +71,3 @@ L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco dell
 1. Nel riquadro Riferimenti, tocca o fai clic su **[!UICONTROL Copie per lingua]**. Il pannello Copie per lingua mostra le copie in lingua delle risorse.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-
