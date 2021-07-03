@@ -5,22 +5,21 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tagging,Metadata,Smart Tags
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Assegnazione tag, metadati, tag avanzati
+role: User
+exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 12%
 
 ---
 
-
-# Linee guida per la formazione sul servizio di contenuti avanzati {#smart-content-service-training-guidelines}
+# Linee guida per la formazione sui servizi di contenuti avanzati {#smart-content-service-training-guidelines}
 
 Per poter assegnare tag efficaci alle immagini del tuo marchio, il Servizio di contenuti avanzati richiede che le immagini di formazione siano conformi a determinate linee guida.
 
-## Linee guida per la formazione {#guidelines-for-training}
+## Orientamenti per la formazione {#guidelines-for-training}
 
 Per ottenere i migliori risultati, le immagini del set di formazione devono essere conformi alle seguenti linee guida:
 
@@ -63,4 +62,3 @@ Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ric
 >La capacità del Servizio di contenuti avanzati di addestrare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione.
 >
 >Per ottenere risultati ottimali, l’Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
-
