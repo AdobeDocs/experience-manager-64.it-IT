@@ -7,17 +7,16 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Image Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Predefiniti immagini
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3838'
 ht-degree: 8%
 
 ---
 
-# Gestione dei predefiniti immagine Dynamic Media {#managing-image-presets}
+# Gestione dei predefiniti per immagini Dynamic Media {#managing-image-presets}
 
 I predefiniti per immagini consentono ad AEM Assets di distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Ogni predefinito per immagini rappresenta un insieme predefinito di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito per immagini, scegli una dimensione per la distribuzione delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine sia ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
 
@@ -31,7 +30,7 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 >
 >La funzione Smart imaging funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base al browser o alla velocità di connessione di rete. Per ulteriori informazioni, consulta [Smart imaging](imaging-faq.md) .
 
-## Informazioni sui predefiniti immagine Dynamic Media {#understanding-image-presets}
+## Informazioni sui predefiniti per immagini Dynamic Media {#understanding-image-presets}
 
 Come una macro software, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponiamo che il tuo sito web richieda che ogni immagine del prodotto venga visualizzata in dimensioni diverse, in formati diversi e nei tassi di compressione per la distribuzione desktop e mobile.
 
@@ -41,7 +40,7 @@ Le immagini a dimensioni ridotte quando vengono consegnate in modo dinamico poss
 
 Gli amministratori possono creare i predefiniti per immagini. Per creare un predefinito per immagini, puoi iniziare da zero o da uno esistente e salvarlo con un nuovo nome.
 
-## Gestione dei predefiniti immagine Dynamic Media {#managing-image-presets-1}
+## Gestione dei predefiniti per immagini Dynamic Media {#managing-image-presets-1}
 
 Per gestire i predefiniti immagine in AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca l’icona Strumenti e passa a **[!UICONTROL Risorse > Predefiniti immagini]**.
 
@@ -97,7 +96,7 @@ Accedi alle opzioni del componente **[!UICONTROL Rasterizza rappresentazione ant
 
 Tocca Adobe Experience Manager in alto a sinistra, vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**. Nella pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona **[!UICONTROL Aggiorna risorsa DAM]**, quindi sulla barra degli strumenti tocca **[!UICONTROL Modifica]**. Nella pagina **[!UICONTROL Flusso di lavoro Aggiorna risorsa DAM]** , tocca due volte il componente **[!UICONTROL Rasterizza rappresentazione anteprima immagine PDF/AI]** per aprire la relativa finestra di dialogo **[!UICONTROL Proprietà passaggio]** .
 
-### Rasterizzare le opzioni di rendering dell&#39;anteprima immagine PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+### Rasterizzare le opzioni di rendering dell’anteprima immagine PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argomenti per rasterizzare il flusso di lavoro PDF o AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -180,13 +179,13 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
  </tbody> 
 </table>
 
-## Configurazione della dimensione della miniatura dell&#39;immagine {#configuring-image-thumbnail-size}
+## Configurazione della dimensione della miniatura dell’immagine {#configuring-image-thumbnail-size}
 
 Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se una (**[!UICONTROL Risorse di immagine di processo di Dynamic Media]**) viene utilizzata per le risorse di immagini dinamiche e l&#39;altra (**[!UICONTROL Miniature di processo]**) per la generazione di miniature statiche o quando tutti gli altri processi non generano miniature, *entrambe* devono avere le stesse impostazioni.
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature è definito nel seguente formato: **width:height:center**, ad esempio *80:80:false*. La larghezza e l&#39;altezza determinano le dimensioni in pixel della miniatura; il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature è definito nel seguente formato: **larghezza:height:centro**, ad esempio *80:80:false*. La larghezza e l&#39;altezza determinano le dimensioni in pixel della miniatura; il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >
@@ -214,7 +213,7 @@ Il dimensionamento delle miniature è definito nel seguente formato: **width:hei
 
 1. Tocca **[!UICONTROL Salva]** per salvare le modifiche al flusso di lavoro.
 
-### Aumento o riduzione del numero di predefiniti immagine Dynamic Media visualizzati {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Aumento o riduzione del numero di predefiniti immagine Dynamic Media da visualizzare {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche quando visualizzi in anteprima le risorse. AEM mostra diverse rappresentazioni dinamiche quando visualizzi una risorsa da **[!UICONTROL Vista dettagli > Rendering]**. Puoi aumentare o diminuire il limite di rappresentazioni visualizzate.
 
@@ -233,7 +232,7 @@ I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche q
 1. Nella proprietà limit , modifica il numero impostandolo sul numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tocca **[!UICONTROL Salva tutto]**.
 
-### Creazione di predefiniti immagine Dynamic Media {#creating-image-presets}
+### Creazione di predefiniti per immagini Dynamic Media {#creating-image-presets}
 
 La creazione di un predefinito per immagini Dynamic Media consente di applicare tali impostazioni a tutte le immagini durante l’anteprima o la pubblicazione.
 
@@ -284,7 +283,7 @@ Lasciandoli vuoti indica AEM che questo predefinito per immagini è reattivo. Se
 >
 >In Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predefiniti immagine e le risorse immagine.
 
-### Opzioni dei predefiniti per immagini {#image-preset-options}
+### Opzioni di Image Preset {#image-preset-options}
 
 Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in questa sezione. Inoltre, l&#39;Adobe consiglia di iniziare le seguenti tre opzioni di *best practice*:
 
@@ -292,7 +291,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
 * **[!UICONTROL Attiva nitidezza semplice]**  - Non selezionare  **[!UICONTROL Attiva nitidezza semplice]**  (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 * **[!UICONTROL Nitidezza: Modalità]**  di ricampionamento - Seleziona  **[!UICONTROL Bi-Cubic]**.
 
-#### Opzioni della scheda di base {#basic-tab-options}
+#### Opzioni della scheda Base {#basic-tab-options}
 
 <table> 
  <tbody> 
@@ -491,7 +490,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
 1. Seleziona un predefinito, quindi tocca **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Modifica predefiniti immagine]**, apporta le modifiche desiderate, quindi tocca **[!UICONTROL Salva]**.
 
-## Pubblicazione dei predefiniti immagine Dynamic Media {#publishing-image-presets}
+## Pubblicazione dei predefiniti immagine di Dynamic Media {#publishing-image-presets}
 
 Se esegui Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predefiniti per immagini.
 
@@ -506,7 +505,7 @@ Se esegui la modalità Dynamic Media - Scene7, i predefiniti immagine vengono pu
 
    ![chlimage_1-505](assets/chlimage_1-505.png)
 
-## Eliminazione dei predefiniti immagine Dynamic Media {#deleting-image-presets}
+## Eliminazione dei predefiniti immagine di Dynamic Media {#deleting-image-presets}
 
 1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale.
 1. Tocca l’icona **[!UICONTROL Strumenti]**, quindi vai a **[!UICONTROL Risorse > Predefiniti immagini]**.
