@@ -2,16 +2,15 @@
 title: Cercare risorse in AEM
 description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ricerca,Metadati
+role: User
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 3%
+source-wordcount: '554'
+ht-degree: 2%
 
 ---
-
 
 # Cercare risorse in AEM {#search-assets-in-aem}
 
@@ -47,7 +46,7 @@ Puoi personalizzare il pannello Filtri e aggiungere/rimuovere i predicati di ric
 
    ![number_of_Searches](assets/number_of_searches.png)
 
-## Cerca tipi di file {#search-for-file-types}
+## Ricerca di tipi di file {#search-for-file-types}
 
 Il pannello Filtri consente di aggiungere maggiore granularità all’esperienza di ricerca e rende più versatile la funzionalità di ricerca. È possibile espandere facilmente il livello di dettaglio desiderato.
 
@@ -69,7 +68,7 @@ Utilizza il predicato **Dimensione file** per cercare le risorse in base alle lo
 
 ![unità_di_misura](assets/unit_of_measure.png)
 
-## Ricerca basata sull’ultima modifica delle risorse {#search-based-on-when-assets-are-last-modified}
+## Ricerca in base all’ultima modifica apportata alle risorse {#search-based-on-when-assets-are-last-modified}
 
 Se gestisci le risorse in corso di lavorazione o controlli un flusso di lavoro di revisione, puoi cercare l’ultima modifica di una risorsa in base a marche temporali precise. Ad esempio, specifica le date prima o dopo le quali le risorse sono state modificate.
 
@@ -93,7 +92,7 @@ Quando monitori lo stato di revisione delle risorse, utilizza l’opzione approp
 
 ![approvazione](assets/approval.png)
 
-## Ricerca basata sui dati di Insights {#search-based-on-insights-data}
+## Ricerca basata sui dati Approfondimenti {#search-based-on-insights-data}
 
 Utilizza il predicato **Insights** per cercare le risorse in base alle statistiche di utilizzo ottenute da varie app Creative. I dati di utilizzo sono raggruppati nelle seguenti categorie:
 
