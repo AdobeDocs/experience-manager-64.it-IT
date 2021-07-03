@@ -2,16 +2,15 @@
 title: Creare e configurare le pagine dell’Editor risorse
 description: Scopri come creare pagine dell’Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Strumenti per sviluppatori,Gestione risorse
+role: User,Admin
+exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3318'
 ht-degree: 2%
 
 ---
-
 
 # Creare e configurare le pagine dell’Editor risorse {#creating-and-configuring-asset-editor-pages}
 
@@ -27,7 +26,7 @@ Il presente documento descrive quanto segue:
 
 ## Perché creare e configurare le pagine dell’Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-La gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
+La gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una Intranet dove i dipendenti possono caricare foto da visite a fiere commerciali o da un centro stampa in un sito web rivolto al pubblico, come l&#39;esempio fornito con Geometrixx. Le applicazioni incentrate sulle risorse possono anche estendersi a soluzioni complete, inclusi carrelli, checkout e processi di verifica.
 
@@ -233,7 +232,7 @@ Per impostare la pagina Editor risorse:
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Aggiungere componenti dell’editor risorse {#adding-asset-editor-components}
+#### Aggiungere componenti dell’Editor risorse {#adding-asset-editor-components}
 
 Puoi determinare le funzionalità di un editor risorse aggiungendo componenti alla pagina.
 
@@ -366,7 +365,7 @@ Di seguito è riportato un esempio di componente Titolo popolato:
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-#### Aggiungi azioni editor risorse {#adding-asset-editor-actions}
+#### Aggiungere azioni Editor risorse {#adding-asset-editor-actions}
 
 È possibile determinare le azioni che gli utenti possono eseguire sulle risorse digitali selezionate in base a una selezione di azioni predefinite.
 
