@@ -2,22 +2,21 @@
 title: Home page Experience di AEM Assets
 description: Personalizza la home page di AEM Assets per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Strumenti per sviluppatori,Gestione risorse
+role: Admin,User
+exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-
-# Esperienza della home page di AEM Assets {#aem-assets-home-page-experience}
+# Home page Experience di AEM Assets {#aem-assets-home-page-experience}
 
 Personalizza la home page di AEM Assets per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
 
-La pagina Home di Adobe Experience Manager (AEM) Assets offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
+La home page di Adobe Experience Manager (AEM) Assets offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
 
 Per impostazione predefinita, la home page delle risorse è disabilitata. Per abilitarlo, esegui le seguenti operazioni:
 
