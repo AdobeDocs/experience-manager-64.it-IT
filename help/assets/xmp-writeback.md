@@ -2,16 +2,15 @@
 title: Write-back XMP per le rappresentazioni
 description: Scopri in che modo la funzione di XMP write-back propaga le modifiche ai metadati di una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 4%
+source-wordcount: '779'
+ht-degree: 5%
 
 ---
-
 
 # Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
@@ -64,7 +63,7 @@ Le modifiche ai metadati vengono propagate alle rappresentazioni `thumbnail.140.
 >
 >Per ulteriori informazioni sulle piattaforme supportate, consulta [XMP prerequisiti per la riscrittura dei metadati](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-## Filtra metadati XMP {#filtering-xmp-metadata}
+## Filtrare i metadati XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] supporta sia il filtro elenco Bloccati che elenco Consentiti di proprietà/nodi per XMP metadati letti dai binari delle risorse e memorizzati in JCR quando le risorse vengono acquisite.
 
