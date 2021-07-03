@@ -3,16 +3,15 @@ title: Gestire le raccolte di risorse
 description: Scopri le attività per gestire le raccolte di risorse, ad esempio creare, visualizzare, eliminare, modificare e scaricare le raccolte.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Raccolte
+role: User
+exl-id: cadfc569-5725-4012-9f73-864243ba7743
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 16%
 
 ---
-
 
 # Gestire le raccolte {#managing-collections}
 
@@ -27,7 +26,7 @@ Le raccolte sono dei tipi seguenti, in base alla modalità di raccolta delle ris
 * Una raccolta contenente un elenco di riferimento statico di risorse, cartelle e altre raccolte.
 * Una raccolta avanzata che include in modo dinamico le risorse in base a un criterio di ricerca.
 
-## Accedi alla console Raccolte {#navigating-the-collections-console}
+## Accedere alla console Raccolte {#navigating-the-collections-console}
 
 Per aprire le **[!UICONTROL Raccolte]**, tocca o fai clic sul logo di Experience Manager. Dalla pagina di navigazione, passa a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
 
@@ -57,7 +56,7 @@ Puoi creare una raccolta con riferimenti statici, ad esempio una raccolta con ri
 
    Per aggiungere risorse alla raccolta, passa all’interfaccia utente Assets. Per informazioni dettagliate, consulta [Aggiungere risorse a una raccolta](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
-### Creare raccolte utilizzando la zona di rilascio {#create-collections-using-dropzone}
+### Creare raccolte con zona di rilascio {#create-collections-using-dropzone}
 
 Puoi trascinare le risorse dall’interfaccia utente di Assets in una raccolta. Puoi anche creare una copia di una raccolta e trascinarvi le risorse.
 
@@ -166,7 +165,7 @@ I metadati della raccolta includono dati sulla raccolta, compresi eventuali tag 
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** per visualizzare i metadati della raccolta.
 1. Modifica i metadati, se necessario, quindi tocca o fai clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti per salvare le modifiche.
 
-### Modifica metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
+### Modificare i metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
 
 Puoi modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
@@ -200,13 +199,13 @@ Puoi cercare le raccolte dalla console Raccolte . Quando esegui una ricerca con 
 
 Se cerchi raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all’interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all’interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
-## Cerca nelle raccolte {#searching-within-collections}
+## Ricerca nelle raccolte {#searching-within-collections}
 
 Nella console Raccolte, tocca o fai clic su una raccolta per aprirla.
 
 All’interno di una raccolta, AEM ricerca delle risorse è limitata alle risorse (e ai relativi tag e metadati) all’interno della raccolta che stai visualizzando. Quando esegui una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle secondarie corrispondenti all’interno della cartella corrente. Quando esegui una ricerca all’interno di una raccolta, vengono restituite solo le risorse, le cartelle e le altre raccolte corrispondenti ai membri diretti della raccolta.
 
-## Modifica impostazioni raccolta {#editing-collection-settings}
+## Modificare le impostazioni della raccolta {#editing-collection-settings}
 
 È possibile modificare le impostazioni della raccolta, ad esempio titolo e descrizione, o aggiungere membri a una raccolta.
 
@@ -225,7 +224,7 @@ All’interno di una raccolta, AEM ricerca delle risorse è limitata alle risors
    >
    >È inoltre possibile eliminare le raccolte avanzate eliminando le ricerche salvate](#deleting-saved-searches).[
 
-## Scarica una raccolta {#downloading-a-collection}
+## Scaricare una raccolta {#downloading-a-collection}
 
 Quando scarichi una raccolta, viene scaricata l’intera gerarchia delle risorse all’interno della raccolta, incluse le cartelle e le raccolte secondarie.
 
@@ -261,7 +260,7 @@ Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a d
 
 ![save_search_list](assets/saved_searches_list.png)
 
-### Crea ricerche salvate {#creating-saved-searches}
+### Creare ricerche salvate {#creating-saved-searches}
 
 Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. La query delle Ricerche salvate per la raccolta viene salvata nella proprietà `dam:query` in crxde nella posizione relativa `/content/dam/collections/`. Non ci sono limiti alle ricerche che puoi salvare e alle ricerche salvate visualizzate nell’elenco.
 
@@ -273,7 +272,7 @@ Le ricerche salvate vengono create quando generi una raccolta avanzata. Le racco
 
 La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzate. Per informazioni dettagliate, consulta [Modifica di una raccolta avanzata](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
 
-### Elimina le ricerche salvate {#deleting-saved-searches}
+### Eliminare le ricerche salvate {#deleting-saved-searches}
 
 1. Nell’interfaccia utente Assets, tocca o fai clic sull’icona di ricerca nella barra degli strumenti.
 
@@ -289,7 +288,7 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 
 1. Nella finestra di dialogo, tocca o fai clic su **[!UICONTROL Elimina]** per eliminare la ricerca salvata.
 
-## Eseguire un flusso di lavoro su una raccolta {#running-a-workflow-on-a-collection}
+## Esecuzione di un flusso di lavoro su una raccolta {#running-a-workflow-on-a-collection}
 
 Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all’interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
@@ -306,5 +305,5 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 >[!MORELIKETHIS]
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
+* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
