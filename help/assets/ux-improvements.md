@@ -2,18 +2,17 @@
 title: Miglioramenti dell’esperienza utente in Assets
 description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in AEM 6.4 Assets.
 contentOwner: AG
-feature: Release Information
-role: Leader,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Informazioni sulla versione
+role: Leader,User
+exl-id: 65029113-987e-46eb-86eb-8028233031f9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
 
-
-# Miglioramenti all’esperienza utente in Assets {#user-experience-enhancements-in-assets}
+# Miglioramenti dell’esperienza utente in Assets {#user-experience-enhancements-in-assets}
 
 AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
 
@@ -65,7 +64,7 @@ Oltre alle viste a schede e a elenco, ora puoi passare alla pagina dei dettagli 
 
 ![more_details](assets/more_details.png)
 
-## Vista ad albero {#tree-view}
+## Vista a albero {#tree-view}
 
 AEM 6.4 Assets include una vista ad albero che consente di navigare comodamente nella gerarchia delle risorse e passare alla risorsa o alla cartella desiderata.
 
@@ -77,7 +76,7 @@ Dalla gerarchia dei contenuti, accedi alla risorsa desiderata.
 
 ![naviga_contenttree](assets/navigate_contenttree.png)
 
-## Navigazione nei dettagli delle risorse {#navigating-asset-details}
+## Navigazione dei dettagli delle risorse {#navigating-asset-details}
 
 La pagina dei dettagli della risorsa ora include i pulsanti Precedente e Successivo nella barra degli strumenti, per consentire la visualizzazione di tutte le immagini in una cartella in successione.
 
