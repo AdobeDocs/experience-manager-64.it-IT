@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configurazione,Modalità Scene7
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5594'
 ht-degree: 3%
@@ -117,7 +117,7 @@ La configurazione di base è terminata. è possibile utilizzare la modalità Dyn
 
 Se desideri personalizzare ulteriormente la configurazione, puoi eventualmente completare una qualsiasi delle attività descritte in [(Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media - Modalità Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-## (Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media - Modalità Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Facoltativo) Configurazione delle impostazioni avanzate in modalità Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Se desideri personalizzare ulteriormente la configurazione e l’impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, puoi completare una o più delle seguenti attività facoltative:
 
@@ -567,7 +567,7 @@ Tuttavia, nelle implementazioni di Dynamic Media, poiché le risorse vengono dis
 
 I filtri ti consentono di *escludere* risorse dalla replica nel nodo Publish di Experience Manager.
 
-#### Utilizzo dei filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
+#### Utilizzo di filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
 
 Se utilizzi Dynamic Media per l’imaging, il video o entrambi, puoi utilizzare i filtri predefiniti forniti da Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
