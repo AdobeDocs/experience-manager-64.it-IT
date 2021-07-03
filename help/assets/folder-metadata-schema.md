@@ -4,16 +4,15 @@ description: Questo articolo descrive come creare uno schema di metadati per le 
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1086'
 ht-degree: 10%
 
 ---
-
 
 # Schema metadati cartelle {#folder-metadata-schema}
 
@@ -25,7 +24,7 @@ Adobe Experience Manager (AEM) Assets consente di creare schemi di metadati per 
 >
 >Questa funzionalità richiede AEM 6.4 con almeno Service Pack 2 implementato. Per AEM i dettagli del service pack 6.4, consulta le seguenti [note sulla versione](/help/release-notes/sp-release-notes.md).
 
-## Aggiungi un modulo schema metadati cartella {#add-a-folder-metadata-schema-form}
+## Aggiunta di un modulo schema metadati cartella {#add-a-folder-metadata-schema-form}
 
 Utilizza l’editor Forms per Schema metadati cartelle per creare e modificare schemi di metadati per le cartelle.
 
@@ -33,7 +32,7 @@ Utilizza l’editor Forms per Schema metadati cartelle per creare e modificare s
 1. Nella pagina Forms Schema metadati cartelle, tocca o fai clic su **[!UICONTROL Crea]**.
 1. Specifica un nome per il modulo e tocca o fai clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Forms schema.
 
-## Modifica moduli schema metadati cartelle {#edit-folder-metadata-schema-forms}
+## Modifica dei moduli dello schema metadati della cartella {#edit-folder-metadata-schema-forms}
 
 È possibile modificare un modulo schema metadati appena aggiunto o esistente, che include quanto segue:
 
@@ -63,7 +62,7 @@ Puoi mappare/configurare questi elementi del modulo su un campo all’interno di
 
 1. Tocca o fai clic su **[!UICONTROL Salva]** nella barra degli strumenti per salvare le modifiche.
 
-### Componenti per creare moduli {#components-to-build-forms}
+### Componenti per la creazione di moduli {#components-to-build-forms}
 
 La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizzati nel modulo schema metadati della cartella. La scheda **[!UICONTROL Impostazioni]** visualizza gli attributi per ogni elemento selezionato nella scheda **[!UICONTROL Genera modulo]** . Elenco degli elementi del modulo disponibili nella scheda **[!UICONTROL Genera modulo]** :
 
@@ -104,7 +103,7 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 **[!UICONTROL Classe]**: Classe oggetto a cui è associata la proprietà.
 
-## Elimina moduli schema metadati cartelle {#delete-folder-metadata-schema-forms}
+## Eliminare i moduli di schema metadati della cartella {#delete-folder-metadata-schema-forms}
 
 È possibile eliminare i moduli schema metadati cartelle dalla pagina Forms Schema metadati cartelle. Per eliminare un modulo, selezionalo e tocca o fai clic sull’icona Elimina sulla barra degli strumenti.
 
@@ -116,7 +115,7 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 Se si configura uno schema di metadati per una cartella, il percorso del modulo schema viene memorizzato nella proprietà `folderMetadataSchema` del nodo della cartella in .*/jcr:content*.
 
-### Assegna a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### Assegnare a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
 1. Nella pagina Forms Schema metadati cartelle selezionare il modulo schema da applicare a una cartella.
@@ -144,7 +143,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
 1. Per visualizzare i campi di metadati della cartella, tocca o fai clic sulla scheda **[!UICONTROL Folder Metadata (Metadati cartella)]**.
 
-## Utilizza lo schema metadati della cartella {#use-the-folder-metadata-schema}
+## Utilizzare lo schema metadati della cartella {#use-the-folder-metadata-schema}
 
 Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
