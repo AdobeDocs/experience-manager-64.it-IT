@@ -2,20 +2,19 @@
 title: Considerazioni sulla rete delle risorse
 description: Esamina considerazioni sulla rete durante la progettazione di un'implementazione AEM Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Strumenti per gli sviluppatori
+role: Architect,Admin
+exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
+# Considerazioni sulla rete Assets {#assets-network-considerations}
 
-# Considerazioni sulla rete delle risorse {#assets-network-considerations}
-
-La comprensione della rete è importante quanto la comprensione di Adobe Experience Manager (AEM) Assets. La rete può influenzare le esperienze di caricamento, download e utente. Il diagramma della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni di rete e l&#39;esperienza utente.
+La comprensione della rete è importante tanto quanto la comprensione delle risorse di Adobe Experience Manager (AEM). La rete può influenzare le esperienze di caricamento, download e utente. Il diagramma della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni di rete e l&#39;esperienza utente.
 
 Accertati di includere quanto segue nel diagramma di rete:
 
@@ -78,7 +77,7 @@ L&#39;istanza AEM condivide la sua connessione a 1 Gb/s con più servizi. Dal pu
 
 Esaminando la rete dal dispositivo client all&#39;istanza AEM, il punto di blocco più piccolo sembra essere la limitazione del firewall aziendale a 10 Mbit. Puoi utilizzare questi valori nel calcolatore delle dimensioni nella [Guida al dimensionamento delle risorse](assets-sizing-guide.md) per determinare l&#39;esperienza utente.
 
-## Flussi di lavoro definiti dell&#39;istanza AEM {#defined-workflows-of-the-aem-instance}
+## Flussi di lavoro definiti dell’istanza AEM {#defined-workflows-of-the-aem-instance}
 
 Quando si considerano le prestazioni di rete, può essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, le richieste S3 o altro storage collegato di rete che si utilizzano e I/O richiedono una larghezza di banda di rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
@@ -101,4 +100,3 @@ Di seguito sono riportati alcuni elementi da considerare:
 Ecco un esempio di cliente per la definizione di un flusso di lavoro delle risorse.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
