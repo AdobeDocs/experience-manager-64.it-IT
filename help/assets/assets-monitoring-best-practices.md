@@ -3,16 +3,16 @@ title: Best practice per il monitoraggio in Assets
 description: Procedure consigliate per il monitoraggio dell’ambiente e delle prestazioni dell’istanza AEM dopo la distribuzione.
 contentOwner: AG
 feature: Gestione risorse
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
 
 ---
 
-# Best practice per il monitoraggio delle risorse {#assets-monitoring-best-practices}
+# Best practice per il monitoraggio in Assets {#assets-monitoring-best-practices}
 
 Dal punto di vista di Adobe Experience Manager (AEM) Assets, il monitoraggio deve includere l’osservazione e la generazione di rapporti sui seguenti processi e tecnologie:
 
@@ -61,7 +61,7 @@ Il monitoraggio a lungo termine di un&#39;istanza AEM comporta il monitoraggio p
 
 Sono disponibili diversi strumenti per i registri aggregati, ad esempio Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Per valutare il tempo di attività dell’istanza AEM, è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e delle operazioni consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
 
-### Monitoraggio dell&#39;ambiente {#environment-monitoring}
+### Monitoraggio ambientale {#environment-monitoring}
 
 Il monitoraggio dell&#39;ambiente include il monitoraggio dei seguenti elementi:
 
@@ -185,7 +185,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
    * Soglia allarme: Quando lo stato non è OK
    * Definizione dell&#39;allarme: Ci sono errori nei file di log. Per ulteriori informazioni sulla causa del problema, consulta l’attributo di registro .
 
-## Problemi comuni e risoluzioni {#common-issues-and-resolutions}
+## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
 Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni con le istanze AEM:
 
