@@ -2,20 +2,19 @@
 title: Gestire le risorse composite e generare le risorse secondarie.
 description: Scopri come creare riferimenti a risorse AEM dai file InDesign, Adobe Illustrator e Photoshop. Inoltre, scopri come utilizzare la funzione Visualizzatore pagina per visualizzare singole pagine di file multipagina, inclusi file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
+feature: Gestione risorse
+role: User,Admin
+exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
 
+# Gestire le risorse composite con le risorse secondarie {#managing-compound-assets}
 
-# Gestire le risorse composite con risorse secondarie {#managing-compound-assets}
-
-Adobe Experience Manager (AEM) Le risorse possono identificare se un file caricato contiene riferimenti a risorse già esistenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a AEM risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui si fa riferimento.
+Le risorse di Adobe Experience Manager (AEM) possono identificare se un file caricato contiene riferimenti a risorse già esistenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a AEM risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui si fa riferimento.
 
 Oltre a eliminare la ridondanza, il riferimento AEM risorse nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l’efficienza e la produttività degli utenti.
 
@@ -23,7 +22,7 @@ AEM Assets supporta **riferimenti bidirezionali**. Puoi trovare le risorse a cui
 
 I riferimenti vengono risolti in base al percorso, all’ID documento e all’ID istanza delle risorse a cui si fa riferimento.
 
-## Adobe Illustrator: Aggiungi risorse come riferimenti {#refai}
+## Adobe Illustrator: Aggiungere risorse come riferimenti {#refai}
 
 Puoi fare riferimento a risorse AEM esistenti da un file Adobe Illustrator.
 
@@ -42,7 +41,7 @@ Puoi fare riferimento a risorse AEM esistenti da un file Adobe Illustrator.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-## Adobe InDesign: Aggiungi risorse come riferimenti {#add-aem-assets-as-references-in-adobe-indesign}
+## Adobe InDesign: Aggiungere risorse come riferimenti {#add-aem-assets-as-references-in-adobe-indesign}
 
 Per fare riferimento AEM risorse all’interno di un file InDesign, trascina AEM risorse nel file InDesign o esporta il file InDesign come file ZIP.
 
@@ -66,7 +65,7 @@ Questa procedura è simile a [Aggiungi risorse come riferimenti in Adobe Illustr
 1. Avvia il flusso di lavoro Annulla archiviazione.
 1. Al termine del flusso di lavoro, i riferimenti nella cartella Collegamenti vengono automaticamente indicati come risorse secondarie. Per visualizzare un elenco delle risorse a cui si fa riferimento, passa alla pagina dei dettagli delle risorse della risorsa InDesign e chiudi la barra [Barra](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Adobe Photoshop: Aggiungi risorse come riferimenti {#refps}
+## Adobe Photoshop: Aggiungere risorse come riferimenti {#refps}
 
 1. Utilizzando un client WebDav, monta AEM Assets come unità.
 1. Per creare riferimenti a AEM risorse in un file Photoshop, accedi alle risorse corrispondenti nell’unità montata utilizzando la funzionalità Posiziona collegamento in Photoshop.
@@ -110,7 +109,7 @@ Le risorse secondarie vengono visualizzate solo se sono generate e sono disponib
 
 ![Visualizzare le risorse secondarie di una risorsa multipagina](assets/view_subassets_simulation.gif)
 
-## Visualizzare le pagine di un file multipagina {#view-pages-of-a-multi-page-file}
+## Visualizzare pagine di un file multipagina {#view-pages-of-a-multi-page-file}
 
 È possibile visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e AI, utilizzando la funzione visualizzatore pagina di AEM Assets. Apri una risorsa multipagina e fai clic su **[!UICONTROL Visualizza pagine]** nell’angolo in alto a sinistra della pagina. Il visualizzatore pagina visualizzato mostra le pagine della risorsa e i controlli per sfogliare e ingrandire ciascuna pagina.
 
@@ -136,5 +135,5 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 >[!MORELIKETHIS]
 >
->* [Usa app desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Utilizzare l’app desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 
