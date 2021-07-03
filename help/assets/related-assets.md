@@ -2,24 +2,23 @@
 title: Attività correlate
 description: Scopri come mettere in relazione le risorse che condividono alcuni attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
-feature: Asset Management,Collaboration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse, collaborazione
+role: User
+exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '616'
 ht-degree: 3%
 
 ---
 
+# Attività correlate {#related-assets}
 
-# Risorse correlate {#related-assets}
-
-Risorse Adobe Experience Manager (AEM) consente di collegare manualmente le risorse in base alle esigenze della tua organizzazione tramite la funzione Risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un&#39;immagine/video su un argomento simile. È possibile correlare le risorse che condividono determinati attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
+Risorse Adobe Experience Manager (AEM) consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione tramite la funzione Risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un&#39;immagine/video su un argomento simile. È possibile correlare le risorse che condividono determinati attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
 
 In questo modo, puoi condividere un file a bassa risoluzione (ad esempio PDF/JPG) con fornitori/agenzie e rendere disponibile il file ad alta risoluzione (ad esempio INDD) solo su richiesta.
 
-## Risorse relative {#relating-assets}
+## Risorse correlate {#relating-assets}
 
 1. Dall’interfaccia di Assets, apri la pagina delle proprietà di una risorsa che desideri correlare.
 
