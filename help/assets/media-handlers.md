@@ -2,18 +2,17 @@
 title: Elabora risorse utilizzando gestori e flussi di lavoro per contenuti multimediali
 description: Scopri diversi gestori di contenuti multimediali e come utilizzarli nei flussi di lavoro per eseguire attività sulle risorse.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Flusso di lavoro, rappresentazioni
+role: User
+exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2230'
 ht-degree: 4%
 
 ---
 
-
-# Elabora le risorse utilizzando gestori di contenuti multimediali e flussi di lavoro {#processing-assets-using-media-handlers-and-workflows}
+# Elabora risorse utilizzando gestori e flussi di lavoro per contenuti multimediali {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets offre una serie di flussi di lavoro predefiniti e gestori di contenuti multimediali per elaborare le risorse. Un flusso di lavoro definisce una tipica attività di gestione ed elaborazione delle risorse, quindi delega le attività specifiche ai gestori dei contenuti multimediali, ad esempio la generazione di miniature o l’estrazione dei metadati.
 
@@ -439,7 +438,7 @@ Dopo aver eseguito la procedura seguente, quando carichi un file di testo in Exp
 1. Copia il bundle `myBundle-0.0.1-SNAPSHOT.jar` e archivialo in `/apps/myApp/install` (ad esempio con WebDAV). Il nuovo gestore di testo è ora attivo in Experience Manager.
 1. Nel browser, apri la console di gestione Web Apache Felix. Seleziona la scheda Componenti e disattiva il gestore di testo predefinito `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Gestore di file multimediali basati su riga di comando {#command-line-based-media-handler}
+## Gestore multimediale basato su riga di comando {#command-line-based-media-handler}
 
 L’Experience Manager consente di eseguire qualsiasi strumento a riga di comando all’interno di un flusso di lavoro per convertire le risorse (come ImageMagick) e aggiungere il nuovo rendering alla risorsa. Installa lo strumento della riga di comando sul disco che ospita il server di Experience Manager e aggiungi e configura un passaggio del processo al flusso di lavoro. Il processo richiamato, denominato `CommandLineProcess`, filtra in base a tipi MIME specifici e crea più miniature in base al nuovo rendering.
 
@@ -464,7 +463,7 @@ Il processo `CommandLineProcess` esegue le seguenti operazioni nell&#39;ordine i
 * Elimina la directory temporanea.
 * Crea miniature in base a tali rappresentazioni, se specificato. Il numero e le dimensioni delle miniature sono definiti dagli argomenti del passaggio.
 
-### Un esempio che utilizza ImageMagick {#an-example-using-imagemagick}
+### Esempio di utilizzo di ImageMagick {#an-example-using-imagemagick}
 
 Nell&#39;esempio seguente viene illustrato come impostare il passaggio del processo della riga di comando. Ogni volta che una risorsa con gif o tiff di tipo MIME viene aggiunta a `/content/dam` sul server di Experience Manager, un’immagine capovolta dell’originale viene creata insieme a altre tre miniature (140x100, 48x48 e 10x250).
 
