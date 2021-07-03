@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: Immagini interattive
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4261'
 ht-degree: 1%
@@ -123,7 +123,7 @@ Durante questo processo è importante visitare diverse aree del sito web, con di
 
 Nel caso più semplice, l’unica parte variabile nell’URL Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l’unico elemento dati necessario per aggiungere punti attivi all’immagine del banner.
 
-Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi in aggiunta all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
+Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi diversi rispetto all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
 
 Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le relative variabili di punti attivi risultanti:
 
@@ -226,7 +226,7 @@ Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [
 
    Ora puoi aggiungere punti attivi al banner immagine; consulta l’attività successiva di seguito.
 
-## Aggiunta di hotspot a un banner immagine {#adding-hotspots-to-an-image-banner}
+## Aggiunta di punti attivi a un banner immagine {#adding-hotspots-to-an-image-banner}
 
 Puoi aggiungere punti attivi a un banner immagine utilizzando l&#39;editor nella pagina **[!UICONTROL Gestione punti attivi]** .
 
@@ -333,7 +333,7 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine.](adding-dynamic-media-a
 1. Nell’elenco **[!UICONTROL Visualizzatori]**, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
 1. Tocca i punti attivi sull’immagine per testare le azioni associate.
 
-## Pubblicazione delle risorse di immagini interattive {#publishing-interactive-image-assets}
+## Pubblicazione delle risorse immagine interattive {#publishing-interactive-image-assets}
 
 Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md) .
 
@@ -381,7 +381,7 @@ Consultare [crop](https://experienceleague.adobe.com/docs/dynamic-media-develope
 
 È ora possibile integrare l’immagine interattiva con una Quickview esistente sul sito web.
 
-## Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrazione di un’immagine interattiva con una Quickview esistente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
