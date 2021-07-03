@@ -2,16 +2,15 @@
 title: Facet di ricerca
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
 contentOwner: AG
-feature: Search
-role: Administrator,Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ricerca
+role: Admin,Developer
+exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2538'
 ht-degree: 22%
 
 ---
-
 
 # Facet di ricerca {#search-facets}
 
@@ -224,6 +223,6 @@ Se non ti viene assegnato un ruolo di amministratore, compare un elenco di autor
 >[!MORELIKETHIS]
 >
 >* [Estensione della ricerca delle risorse](searchx.md)
->* [Ricerca delle risorse](search-assets.md)
->* [Ricerca delle risorse video](search-video-assets.md)
+* [Ricerca delle risorse](search-assets.md)
+* [Ricerca delle risorse video](search-video-assets.md)
 
