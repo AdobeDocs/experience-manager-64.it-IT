@@ -2,16 +2,15 @@
 title: Best practice per gestire le risorse tramite AEM
 description: Identifica e rispetta le best practice che migliorano la stabilità e le prestazioni del sistema sotto carico, a seconda della distribuzione AEM Assets e delle funzionalità utilizzate per acquisire ed elaborare le risorse.
 contentOwner: AG
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: Architect,Admin
+exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per AEM Assets {#best-practices-for-assets}
 
