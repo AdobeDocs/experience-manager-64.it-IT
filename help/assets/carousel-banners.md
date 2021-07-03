@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
-feature: Carousel Banners
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Banner a carosello
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4789'
 ht-degree: 4%
@@ -356,7 +355,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
    * Per applicare un predefinito, tocca l’elenco a discesa dei predefiniti nell’angolo in alto a destra della pagina, quindi seleziona un predefinito visualizzatore.
    * Per eliminare un intero set carosello, accedi al set carosello, selezionalo, quindi tocca **[!UICONTROL Elimina]**.
 
-## (Facoltativo) Anteprima dei banner carosello {#optional-previewing-carousel-banners}
+## (Facoltativo) Anteprima Dei Banner Carosello {#optional-previewing-carousel-banners}
 
 Puoi utilizzare **[!UICONTROL Anteprima]** per vedere come sarà il banner carosello per i clienti e per testare i punti attivi e le mappe immagine dei banner carosello per garantire che si comportino come previsto.
 
@@ -386,7 +385,7 @@ Puoi visualizzare in anteprima i banner carosello dall’Editor carosello (metod
 1. Nell’elenco **[!UICONTROL Visualizzatori]** nel pannello sul lato sinistro della pagina, tocca il nome del predefinito visualizzatore per banner carosello che desideri usare.
 1. Tocca i punti attivi o le mappe immagine sull’immagine per testare le azioni associate.
 
-## Pubblicazione dei banner carosello {#publishing-carousel-banners}
+## Pubblicazione dei banner a carosello {#publishing-carousel-banners}
 
 Per utilizzarlo, devi pubblicare il carosello. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica anche il carosello su Dynamic Media cloud, integrato con una rete CDN per una distribuzione scalabile e performante.
 
@@ -396,7 +395,7 @@ Inoltre, se modifichi un’immagine interattiva pubblicata precedentemente che u
 
 Per informazioni su come pubblicare i banner carosello, consulta [Pubblicazione di risorse Dynamic Media](publishing-dynamicmedia-assets.md) .
 
-## Aggiunta di un banner carosello alla pagina del sito Web {#adding-a-carousel-banner-to-your-website-page}
+## Aggiunta di un banner carosello alla pagina del sito web {#adding-a-carousel-banner-to-your-website-page}
 
 Dopo aver caricato le immagini del banner per creare un carosello, aggiunto gli hotspot e/o le mappe immagine al banner e pubblicato il set carosello, ora puoi aggiungerlo alla pagina del sito web esistente.
 
