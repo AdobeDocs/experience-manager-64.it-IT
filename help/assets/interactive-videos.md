@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Video interattivi, video
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 4%
@@ -569,7 +569,7 @@ L&#39;integrazione è semplice come rimuovere il codice di incorporamento video 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
+## Integrazione di un video interattivo con una Quickview esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 Questa attività si applica solo se sei un cliente AEM Assets autonomo.
