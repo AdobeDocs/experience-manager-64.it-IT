@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
-feature: Selectors
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Selettori
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 22%
@@ -72,7 +71,7 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selezione di siti {#selecting-sites}
+## Selezione dei siti {#selecting-sites}
 
 Utilizza il selettore del sito per scegliere una pagina web quando desideri che un punto attivo o una mappa immagine si colleghino a una pagina web gestita all’interno AEM siti.
 
