@@ -2,20 +2,19 @@
 title: Condivisione di cartelle private
 description: Scopri come creare una cartella privata in Adobe Experience Manager (AEM) Assets e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
-feature: Collaboration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Collaborazione
+role: User
+exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 8%
 
 ---
 
-
 # Condivisione di cartelle private {#private-folder-sharing}
 
-Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience Manager (AEM) Assets disponibile esclusivamente per l’utente. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificare le risorse.
+Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience Manager (AEM) Assets disponibile esclusivamente per te. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificare le risorse.
 
 1. Nella console Risorse, tocca o fai clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegli **[!UICONTROL Cartella]** dal menu.
 
@@ -60,4 +59,3 @@ Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience M
 >[!NOTE]
 >
 >Per poter creare una cartella privata, devi disporre delle autorizzazioni di lettura e modifica ACL per la cartella principale in cui desideri creare una cartella privata. Se non sei un amministratore, queste autorizzazioni non sono abilitate per impostazione predefinita in */content/dam*. In questo caso, prima di cercare di creare cartelle private o visualizzare le impostazioni della cartella, ottieni prima queste autorizzazioni per il tuo ID utente/gruppo.
-
