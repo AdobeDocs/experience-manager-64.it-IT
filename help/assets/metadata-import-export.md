@@ -2,22 +2,21 @@
 title: Importazione ed esportazione di metadati in blocco
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 9%
 
 ---
-
 
 # Importazione ed esportazione di metadati in blocco {#bulk-metadata-import-and-export}
 
 AEM Assets consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
 
-## Importa metadati {#import-metadata}
+## Importare metadati {#import-metadata}
 
 L’importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di XMP write-back se è selezionato il flag del flusso di lavoro. Pianifica un&#39;importazione di questo tipo durante l&#39;utilizzo snello del server per evitare un impatto sulle prestazioni per altri utenti.
 
