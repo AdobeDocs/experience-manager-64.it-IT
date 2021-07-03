@@ -2,16 +2,15 @@
 title: Flusso di attività nella timeline
 description: 'Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline. '
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: User,Admin
+exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '218'
 ht-degree: 33%
 
 ---
-
 
 # Flusso di attività nella timeline {#activity-stream-in-timeline}
 
