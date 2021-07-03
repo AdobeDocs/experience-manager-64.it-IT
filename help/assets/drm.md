@@ -2,22 +2,21 @@
 title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
-feature: DRM,Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: DRM,Gestione risorse
+role: User,Admin
+exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1433'
 ht-degree: 8%
 
 ---
-
 
 # Digital Rights Management per le risorse {#digital-rights-management-in-assets}
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata dell’utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la piattaforma [!DNL Experience Manager], puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e gli stati delle risorse. È inoltre possibile associare le informazioni sulle licenze alle risorse.
 
-## Scadenza risorsa {#asset-expiration}
+## Scadenza risorse {#asset-expiration}
 
 La scadenza delle risorse è un modo efficace per applicare i requisiti di licenza per le risorse. In questo modo la risorsa pubblicata viene annullata quando scade, evitando così la possibilità di eventuali violazioni della licenza. Un utente senza autorizzazioni di amministratore non può modificare, copiare, spostare, pubblicare e scaricare una risorsa scaduta.
 
@@ -58,7 +57,7 @@ Puoi anche visualizzare lo stato di scadenza delle risorse nella barra **[!UICON
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Cerca risorse scadute {#search-expired-assets}
+### Cercare risorse scadute {#search-expired-assets}
 
 Puoi cercare le risorse scadute, incluse le risorse secondarie scadute, nel pannello Ricerca.
 
