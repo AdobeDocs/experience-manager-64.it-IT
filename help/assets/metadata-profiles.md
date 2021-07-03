@@ -2,16 +2,15 @@
 title: Utilizzare i profili di metadati per applicare i metadati predefiniti a tutte le risorse di una cartella
 description: Informazioni sui profili di metadati per le risorse. Scopri come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1233'
 ht-degree: 17%
 
 ---
-
 
 # Profili metadati {#metadata-profiles}
 
@@ -101,7 +100,7 @@ Puoi applicare un profilo di metadati a una cartella direttamente dal menu **[!U
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-#### Applicare profili di metadati alle cartelle dall&#39;interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### Applicare profili di metadati alle cartelle dall’interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. Tocca il logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
 1. Seleziona il profilo di metadati da applicare a una o più cartelle.
