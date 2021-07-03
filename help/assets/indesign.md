@@ -2,16 +2,15 @@
 title: Integrare AEM Assets con Adobe InDesign Server
 description: Scopri come integrare AEM Assets con InDesign Server.
 contentOwner: AG
-feature: Publishing
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Pubblicazione
+role: Admin
+exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1703'
 ht-degree: 4%
 
 ---
-
 
 # Integrare AEM Assets con Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
@@ -40,7 +39,7 @@ Per caricare completamente i file in AEM Assets creati con Adobe InDesign viene 
 
 
 
-## Funzionamento dell’estrazione {#how-the-extraction-works}
+## Come funziona l’estrazione {#how-the-extraction-works}
 
 InDesign Server può essere integrato con AEM Assets in modo che i file creati con InDesign ( `.indd`) possano essere caricati, le rappresentazioni generate, tutti i file multimediali estratti (ad esempio, video) e memorizzati come risorse:**
 
@@ -185,7 +184,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 1. Fate clic su **[!UICONTROL OK]** per salvare. 
 
-### Configurazione dell’esternalizzatore di collegamenti Day CQ {#configuring-day-cq-link-externalizer}
+### Configurazione di Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
 Se InDesign Server e AEM si trovano su host diversi o se una o entrambe le applicazioni non funzionano sulle porte predefinite, configura **Day CQ Link Externalizer** per impostare il nome host, la porta e il percorso del contenuto per InDesign Server.
 
@@ -238,7 +237,7 @@ Per configurare il numero di processi IDS paralleli:
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Abilita il supporto per il server Adobe InDesign 10.0 o successivo {#enabling-support-for-indesign-server-or-higher}
+## Abilita il supporto per il server Adobe InDesign 10.0 o versione successiva {#enabling-support-for-indesign-server-or-higher}
 
 Per il server InDesign 10.0 o versione successiva, esegui i seguenti passaggi per abilitare il supporto per più sessioni.
 
