@@ -2,16 +2,15 @@
 title: Guida di Assets
 description: Questa guida descrive tutte le attività di AEM Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
-feature: Asset Management
-role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: User,Architect,Admin
+exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '319'
 ht-degree: 25%
 
 ---
-
 
 # Guida di Assets
 
@@ -47,6 +46,6 @@ Questa guida descrive tutte le attività di AEM Assets, ad esempio come creare, 
 * [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Guida utente ai componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
