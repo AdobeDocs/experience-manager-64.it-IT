@@ -7,9 +7,8 @@ topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 29%
@@ -94,7 +93,7 @@ Per configurare i predefiniti universali:
 
 1. I profili di codifica selezionati vengono applicati automaticamente a tutti i video caricati nella cartella di destinazione CQ DAM impostata per questa configurazione cloud di Scene7. Puoi impostare più configurazioni cloud di Scene7 con diverse cartelle di destinazione, per applicare profili di codifica diversi a seconda delle esigenze.
 
-## Aggiornamento del visualizzatore e dei predefiniti di codifica  {#updating-viewer-and-encoding-presets}
+## Aggiornamento del visualizzatore e dei predefiniti di codifica {#updating-viewer-and-encoding-presets}
 
 È necessario aggiornare il visualizzatore e i predefiniti di codifica video in Experience Manager se i predefiniti sono stati aggiornati in Scene7. In questi casi, accedi alla configurazione Scene7 nella configurazione cloud e fai clic su **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
 
@@ -125,7 +124,7 @@ La matrice seguente spiega quando utilizzare il componente:
 >
 >Preconfigurato, il componente video S7 utilizza il profilo video universale. Tuttavia, puoi ottenere in Experience Manager il lettore video basato su HTML5. È sufficiente copiare il codice di incorporamento del lettore video HTML5 predefinito e inserirlo nella pagina di Experience Manager.
 
-## Componente video di Experience Manager {#aem-video-component}
+## Componente video Experience Manager {#aem-video-component}
 
 Anche se si consiglia di utilizzare il componente video Scene7 per visualizzare i video Scene7, per motivi di completezza utilizza i video Scene7 con il componente video di base.
 
@@ -141,7 +140,7 @@ La tabella seguente fornisce un confronto ad alto livello delle funzionalità su
 | Estensibilità | Sì | Sì (con [Documentazione API SDK visualizzatore HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Video mobile | Sì | Sì |
 
-### Impostazione  {#setting-up}
+### Impostazione {#setting-up}
 
 #### Creazione di profili video {#creating-video-profiles}
 
