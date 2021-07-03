@@ -6,16 +6,15 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Smart Tags,Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Tag avanzati, ricerca
+role: User
+exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 18%
 
 ---
-
 
 # Sono stati migliorati i tag avanzati {#enhanced-smart-tags}
 
@@ -63,7 +62,7 @@ Il processo di onboarding è completo quando l’amministratore configura il ser
 >
 >Se utilizzi AEM versione 6.3 o precedente e hai bisogno del servizio di assegnazione tag automatica per le risorse, consulta [Tag avanzati](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di intelligenza artificiale e sono meno precisi della funzionalità di assegnazione tag avanzati migliorata.
 
-## Verifica delle risorse e dei tag {#reviewing-assets-and-tags}
+## Verifica di risorse e tag {#reviewing-assets-and-tags}
 
 Dopo l’onboarding, la prima cosa da fare è identificare un set di tag che descrivono al meglio queste immagini nel contesto della tua attività.
 
@@ -133,7 +132,7 @@ Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel se
 
 1. Per scaricare il rapporto, selezionalo dall’elenco e tocca o fai clic sull’icona **[!UICONTROL Scarica]** nella barra degli strumenti. Il rapporto viene scaricato come file Excel.
 
-## Assegnazione di tag alle risorse automaticamente {#tagging-assets-automatically}
+## Assegnazione automatica dei tag alle risorse {#tagging-assets-automatically}
 
 Dopo aver completato il training del Servizio di contenuti avanzati, puoi attivare il flusso di lavoro di assegnazione tag per applicare automaticamente i tag appropriati a un set diverso di risorse simili.
 
