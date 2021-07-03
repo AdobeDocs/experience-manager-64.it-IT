@@ -3,9 +3,9 @@ title: Utilizza PDF rasterizer per generare rappresentazioni
 description: Genera miniature e rappresentazioni di alta qualità utilizzando la libreria Adobe PDF Rasterizer.
 contentOwner: AG
 feature: Strumenti Per Sviluppatori, Rendering
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
