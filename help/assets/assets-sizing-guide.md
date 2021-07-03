@@ -5,16 +5,15 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: Architect,Admin
+exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Guida al dimensionamento di Assets {#assets-sizing-guide}
 
@@ -66,7 +65,7 @@ Per i datastore di grandi dimensioni, è possibile implementare un datastore con
 
 Il datastore può essere condiviso tra un’istanza di authoring primaria e standby per ridurre al minimo il tempo necessario per aggiornare l’istanza di standby con le modifiche apportate nell’istanza primaria. Adobe consiglia di condividere il datastore tra un’istanza dell’autore principale e di scaricare le istanze dell’autore per ridurre i costi comuni nello scaricamento del flusso di lavoro. Puoi anche condividere l’archivio dati tra le istanze di authoring e pubblicazione per ridurre al minimo il traffico durante la replica.
 
-#### Drawback {#drawbacks}
+#### Svantaggi {#drawbacks}
 
 A causa di alcune insidie, la condivisione di un datastore non è consigliata in tutti i casi.
 
@@ -82,7 +81,7 @@ I datastore condivisi aumentano anche la complessità delle operazioni, come la 
 
 Per le operazioni AWS, l&#39;implementazione di una singola posizione centrale (tramite S3), invece di costruire un array RAID di volumi EBS, può compensare in modo significativo la complessità e i rischi operativi del sistema.
 
-#### Problemi di prestazioni {#performance-concerns}
+#### Preoccupazioni in materia di prestazioni {#performance-concerns}
 
 Un datastore condiviso richiede che i binari siano memorizzati su un&#39;unità montata in rete condivisa tra tutte le istanze. Poiché questi binari sono accessibili tramite una rete, le prestazioni del sistema sono influenzate negativamente. È possibile attenuare parzialmente l&#39;impatto utilizzando una connessione di rete rapida a un array veloce di dischi. Tuttavia, questa è una proposta costosa. Nel caso di operazioni AWS, tutti i dischi sono remoti e richiedono connettività di rete. I volumi effimeri perdono i dati quando l&#39;istanza viene avviata o arrestata.
 
@@ -90,7 +89,7 @@ Un datastore condiviso richiede che i binari siano memorizzati su un&#39;unità 
 
 La latenza nelle implementazioni S3 viene introdotta dai thread di scrittura in background. Le procedure di backup devono tenere conto di tale latenza e di eventuali procedure di scarico. La risorsa S3 potrebbe non essere presente in S3 all’avvio di un processo di scarico. Inoltre, gli indici Lucene possono rimanere incompleti durante la creazione di un backup. Si applica a qualsiasi file sensibile al tempo scritto nel datastore S3 e a cui si accede da un&#39;altra istanza.
 
-### Archivio nodi/Archiviazione documenti {#node-store-document-store}
+### Archiviazione nodi/Archiviazione documenti {#node-store-document-store}
 
 È difficile ottenere cifre precise di dimensionamento per un NodeStore o DocumentStore a causa delle risorse utilizzate da quanto segue:
 
@@ -145,6 +144,6 @@ Se le rappresentazioni non sono generate correttamente, utilizza la libreria Cam
 
 È difficile stimare con precisione la dimensione del file TIFF supportato come OOTB (out-of-the-box) con un heap specifico per AEM perché fattori aggiuntivi, come l’elaborazione dell’influenza della dimensione dei pixel. È possibile che AEM elaborare un file di dimensioni di 255 MB OOTB, ma non può elaborare un file di dimensioni di 18 MB perché quest&#39;ultimo comprende un numero di pixel insolitamente più alto rispetto al primo.
 
-## Dimensione delle risorse {#size-of-assets}
+## Dimensioni delle risorse {#size-of-assets}
 
 Per impostazione predefinita, AEM consente di caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse di grandi dimensioni in AEM, consulta [Configurazione per caricare risorse di grandi dimensioni](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
