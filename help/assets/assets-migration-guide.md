@@ -1,17 +1,16 @@
 ---
-title: Eseguire la migrazione delle risorse in massa a Adobe Experience Manager Assets
+title: Eseguire la migrazione delle risorse in massa ad Adobe Experience Manager Assets
 description: Come portare le risorse in AEM, applicare i metadati, generare rappresentazioni e attivarle per pubblicare le istanze.
 contentOwner: AG
-feature: Migration,Renditions,Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Migrazione, Rappresentazioni, Gestione delle risorse
+role: Architect,Admin
+exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 11%
 
 ---
-
 
 # Guida alla migrazione delle risorse {#assets-migration-guide}
 
@@ -62,7 +61,7 @@ Le prestazioni e la stabilità sono fattori importanti per l’acquisizione dell
 
 Esistono due approcci per caricare le risorse nel sistema: un approccio basato su push tramite HTTP o un approccio basato su pull tramite le API JCR.
 
-#### Invia tramite HTTP {#push-through-http}
+#### Push-through HTTP {#push-through-http}
 
 Il team Managed Services di Adobe utilizza uno strumento chiamato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory in un&#39;altra directory su un&#39;istanza AEM. Invece di Glutton, puoi anche utilizzare strumenti come gli script Perl per pubblicare le risorse nell’archivio.
 
@@ -79,7 +78,7 @@ L’ [Importazione risorse CSV AEM strumenti ACS](https://adobe-consulting-servi
 
 Quando le attività non vengono trasmesse in rete, le prestazioni complessive migliorano notevolmente. Questo metodo è in genere il metodo più efficiente per caricare le risorse nell’archivio. Inoltre, puoi importare tutte le risorse e i metadati in un singolo passaggio, poiché lo strumento supporta l’acquisizione dei metadati. Per applicare i metadati, ad esempio utilizzando uno strumento separato, non è necessario alcun altro passaggio.
 
-### Elabora rendering {#process-renditions}
+### Rendering dei processi {#process-renditions}
 
 Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro Risorsa di aggiornamento DAM per estrarre i metadati e generare rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro Risorsa di aggiornamento DAM per adattarlo alle tue esigenze. Alcuni passaggi nel flusso di lavoro predefinito potrebbero non essere necessari, ad esempio la generazione di PTIFF Dynamic Media Classic o l’integrazione con il server InDesign.
 
