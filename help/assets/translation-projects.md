@@ -2,16 +2,15 @@
 title: Creazione di progetti di traduzione
 description: Scopri come creare progetti di traduzione in AEM.
 contentOwner: AG
-feature: Translation
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Traduzione
+role: Architect,Admin
+exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1935'
 ht-degree: 25%
 
 ---
-
 
 # Creazione di progetti di traduzione {#creating-translation-projects}
 
@@ -281,7 +280,7 @@ Se utilizzi questa opzione, il set di risorse viene aggiunto a un progetto di tr
 1. Tocca o fai clic su **[!UICONTROL Avvia]**.
 1. Per completare il resto della procedura, vedi i passaggi 9-14 di [Aggiungi al progetto di traduzione esistente](translation-projects.md#add-to-existing-translation-project) .
 
-## Creazione di copie in lingua temporanea {#creating-temporary-language-copies}
+## Creazione di copie temporanee della lingua {#creating-temporary-language-copies}
 
 Quando esegui un flusso di lavoro di traduzione per aggiornare una copia in lingua con le versioni modificate delle risorse originali, la copia in lingua esistente viene conservata fino all’approvazione delle risorse tradotte. AEM Assets archivia le risorse appena tradotte in una posizione temporanea e aggiorna la copia in lingua esistente dopo che le risorse sono state esplicitamente approvate. Se si rifiutano le risorse, la copia in lingua rimane invariata.
 
