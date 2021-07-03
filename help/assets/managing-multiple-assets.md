@@ -2,16 +2,15 @@
 title: Modifica in blocco dei metadati di più risorse e raccolte
 description: Scopri come modificare contemporaneamente i metadati di più risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
-feature: Asset Management,Metadata,Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse, Metadati, Raccolte
+role: User
+exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 14%
+source-wordcount: '440'
+ht-degree: 13%
 
 ---
-
 
 # Gestire più risorse e raccolte {#managing-multiple-assets-and-collections}
 
@@ -30,7 +29,7 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l’aggiunta
 >
 >I metodi di modifica collettiva funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile aggiornare i metadati in blocco dai risultati della ricerca delle risorse.
 
-## Modificare le proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
+## Modifica delle proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
 
 1. Nell’interfaccia utente di Assets, individua il percorso delle risorse da modificare.
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
@@ -57,3 +56,4 @@ Per modificare il limite, accedi a **[!UICONTROL Strumenti > Operazioni > Consol
 >[!MORELIKETHIS]
 >
 >* [Modificare i metadati di più raccolte in blocco](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
