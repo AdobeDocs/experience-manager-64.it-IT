@@ -3,9 +3,9 @@ title: Best practice per l’integrazione di AEM e Creative Cloud
 description: Best practice per integrare un’implementazione AEM con Adobe Creative Cloud per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere la massima efficienza
 contentOwner: AG
 feature: Collaborazione, Adobe Asset Link, App desktop
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 16%
@@ -27,7 +27,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 >
 >AEM alla condivisione delle cartelle di Creative Cloud è obsoleta e non è più inclusa in questa guida. Adobe consiglia di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) per fornire all’utente creativo l’accesso alle risorse gestite in AEM.
 
-## Necessità di collaborazione di creativi, esperti marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## Esigenze di collaborazione di creativi, esperti marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Requisiti | Caso d’uso | Superfici interessate |
 |---|---|---|
@@ -110,7 +110,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 * **Creative user (Utente creativo):** un professionista che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, è possibile che un utente creativo sia membro di un team creativo che utilizza Creative Cloud, ma che non crea risorse digitali, ad esempio un direttore creativo o un manager del team creativo.
 * **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, come un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
 
-### Considerazioni sull&#39;utilizzo dell&#39;integrazione di AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerazioni sull’utilizzo dell’integrazione AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * Consulta [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Vedi [Integrazione Adobe Stock](aem-assets-adobe-stock.md)
@@ -209,7 +209,7 @@ Utilizza le seguenti strategie per fornire accesso alle risorse finali/approvate
 
 I seguenti casi d’uso descrivono vari tipi di flussi di lavoro tra DAM e il desktop di designer.
 
-#### Crea nuove progettazioni utilizzando le risorse da DAM {#creating-new-designs-using-assets-from-dam}
+#### Creare nuove progettazioni utilizzando le risorse di DAM {#creating-new-designs-using-assets-from-dam}
 
 Il diagramma seguente illustra il ciclo di vita delle risorse digitali. Mostra come gli utenti creativi e gli utenti DAM (addetti al marketing, utenti LOB) sfruttano le risorse esistenti e le utilizzano per creare più risorse e inviarle per l’approvazione.
 
@@ -285,7 +285,7 @@ Puoi sfruttare le seguenti funzionalità se desideri caricare le risorse in bloc
 >
 >A seconda delle esigenze aziendali, puoi anche utilizzare caricatori personalizzati.
 
-#### Gestire le risorse digitali direttamente dal desktop {#managing-digital-assets-directly-from-desktop}
+#### Gestione delle risorse digitali direttamente dal desktop {#managing-digital-assets-directly-from-desktop}
 
 Se utilizzi Condivisione file di rete per gestire le risorse digitali, puoi considerare come un comodo sostituto solo l’utilizzo della condivisione di rete mappata AEM’app desktop. Durante la transizione da condivisioni di file di rete, ricorda che AEM&#39;interfaccia utente Web fornisce un set completo di funzionalità di Gestione delle risorse digitali che vanno ben oltre quanto possibile su una condivisione di rete (ricerca, raccolte, metadati, collaborazione, anteprime, ecc.), e AEM&#39;app desktop fornisce un comodo collegamento per collegare l&#39;archivio DAM lato server con il lavoro sul desktop.
 
