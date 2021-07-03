@@ -2,16 +2,15 @@
 title: Applicazione dei servizi cloud di traduzione alle cartelle
 description: Applicazione dei servizi cloud di traduzione alle cartelle
 contentOwner: AG
-feature: Translation
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Traduzione
+role: Admin
+exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 56%
 
 ---
-
 
 # Applicazione dei servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
 
@@ -39,7 +38,7 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 
 1. Dalla barra degli strumenti, fai clic o tocca **[!UICONTROL Salva]**, quindi fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo: il servizio di traduzione viene applicato alla cartella.
 
-## Applicazione del connettore di traduzione personalizzato {#applying-custom-translation-connector}
+## Applicazione del connettore di traduzione personalizzato  {#applying-custom-translation-connector}
 
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
