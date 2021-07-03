@@ -2,16 +2,15 @@
 title: Ricerca full-text GQL
 description: Esplora la funzione di ricerca full-text GQL in AEM Assets. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Ricerca,Metadati
+role: User
+exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '879'
 ht-degree: 2%
 
 ---
-
 
 # Ricerca full-text GQL {#gql-full-text-search}
 
@@ -64,10 +63,10 @@ La funzione di ricerca full-text GQL consente di cercare le risorse in base alle
 | [!UICONTROL Proprietario copyright] | copyrightowner: &quot;Adobe Systems&quot; |
 | [!UICONTROL Collaboratore] | collaboratore:John |
 | [!UICONTROL Condizioni d&#39;uso] | usageterms:&quot;CopyRights riservati&quot; |
-| [!UICONTROL Creato] | creato:YYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Data di scadenza] | scade:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Ora di attivazione] | ora:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
-| [!UICONTROL Ora di disattivazione] | tempo libero:AAAA-MM-DTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
+| [!UICONTROL Creato] | creato:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
+| [!UICONTROL Data di scadenza] | scade:YYYY-MM-DDTHH:MM:SS.000+05:30.AAAA-MM-DTHH:MM:SS.000+05:30 |
+| [!UICONTROL Ora di attivazione] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
+| [!UICONTROL Ora di disattivazione] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DTHH:MM:SS.000+05:30 |
 | [!UICONTROL Intervallo di tempo]  (dateontime, offtime) | campo facet: in basso..superiore |
 | [!UICONTROL Percorso] | /content/dam/&lt;nome cartella> |
 | [!UICONTROL Titolo PDF] | pdftitle:&quot;Documento di Adobe&quot; |
