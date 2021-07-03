@@ -2,18 +2,17 @@
 title: Guida all’ottimizzazione delle prestazioni di Assets
 description: Aree principali relative alla configurazione AEM, alle modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse
+role: Architect,Admin
+exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3208'
 ht-degree: 0%
 
 ---
 
-
-# Guida alla regolazione delle prestazioni di Assets {#assets-performance-tuning-guide}
+# Guida all’ottimizzazione delle prestazioni di Assets {#assets-performance-tuning-guide}
 
 Una configurazione di Adobe Experience Manager (AEM) Assets contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete per rimuovere i colli di bottiglia delle prestazioni.
 
@@ -70,7 +69,7 @@ Imposta i seguenti parametri JVM:
 
 È consigliabile separare l’archivio dati dall’archivio segmenti per tutti gli utenti AEM Assets. Inoltre, la configurazione dei parametri `maxCachedBinarySize` e `cacheSizeInMB` può contribuire a massimizzare le prestazioni. Imposta `maxCachedBinarySize` sulla dimensione più piccola del file che può essere mantenuta nella cache. Specifica la dimensione della cache in-memory da utilizzare per il datastore all&#39;interno di `cacheSizeInMB`. Adobe consiglia di impostare questo valore tra il 2 e il 10% della dimensione totale dell&#39;heap. Tuttavia, il test di carico/prestazioni può aiutare a determinare l&#39;impostazione ideale.
 
-### Configura le dimensioni massime della cache delle immagini bufferizzate {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configura la dimensione massima della cache delle immagini bufferizzate {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Quando si caricano grandi quantità di risorse in Adobe Experience Manager, per consentire picchi imprevisti nel consumo di memoria e per evitare errori JVM con OutOfMemoryErrors, ridurre la dimensione massima configurata della cache immagine bufferizzata. Considera un esempio di sistema con heap massimo (- `Xmx`param) di 5 GB, Oak BlobCache impostato a 1 GB e document cache impostato a 2 GB. In questo caso, la cache bufferizzata richiederebbe un massimo di 1,25 GB e memoria, lasciando solo 0,75 GB di memoria per picchi imprevisti.
 
@@ -78,11 +77,11 @@ Configura la dimensione della cache bufferizzata nella console Web OSGi. In `htt
 
 Da AEM 6.1 SP1, se utilizzi un nodo `sling:osgiConfig` per configurare questa proprietà, assicurati di impostare il tipo di dati su Long. Per ulteriori dettagli, consulta [CQBufferedImageCache consuma heap durante il caricamento delle risorse](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Archiviazione dati condivisi {#shared-data-stores}
+### Archiviazione dati condivisa {#shared-data-stores}
 
 L&#39;implementazione di un S3 o Shared File Datastore può aiutare a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta [Guida al dimensionamento delle risorse](assets-sizing-guide.md).
 
-### Archivio dati S3 {#s-data-store}
+### Archiviazione dati S3 {#s-data-store}
 
 La seguente configurazione dell’archivio dati S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ha aiutato Adobe a estrarre 12,8 TB di oggetti binari di grandi dimensioni (BLOB) da un archivio dati di file esistente in un archivio dati S3 in un sito clienti:
 
@@ -179,13 +178,13 @@ Il flusso di lavoro Aggiorna risorsa DAM contiene una suite completa di passaggi
 >
 >Se hai uno spazio su disco limitato ed esegui i flussi di lavoro Aggiorna risorsa DAM in modo intensivo, considera la pianificazione dell’attività di raccolta degli oggetti inattivi con maggiore frequenza.
 
-#### Generazione di rendering runtime {#runtime-rendition-generation}
+#### Generazione rendering runtime {#runtime-rendition-generation}
 
 I clienti utilizzano immagini di varie dimensioni e formati sul proprio sito web o per la distribuzione ai partner commerciali. Poiché ogni rendering viene aggiunto all’impronta della risorsa nell’archivio, Adobe consiglia di utilizzare questa funzione in modo giudizioso. Per ridurre la quantità di risorse necessarie per elaborare e archiviare le immagini, puoi generarle in fase di esecuzione anziché come rappresentazioni durante l’acquisizione.
 
 Molti clienti di Sites implementano un servlet immagine che ridimensiona e ritaglia le immagini al momento della richiesta, il che impone un carico aggiuntivo sull’istanza di pubblicazione. Tuttavia, finché queste immagini possono essere memorizzate nella cache, la sfida può essere attenuata.
 
-Un approccio alternativo è quello di utilizzare la tecnologia Dynamic Media Classic per distribuire completamente la manipolazione delle immagini. Inoltre, puoi distribuire Brand Portal che non solo assume le responsabilità di generazione del rendering dall’infrastruttura AEM, ma anche l’intero livello di pubblicazione.
+Un approccio alternativo è quello di utilizzare la tecnologia Dynamic Media Classic per distribuire completamente la manipolazione delle immagini. Inoltre, è possibile implementare Brand Portal che non solo assume le responsabilità di generazione del rendering dall’infrastruttura AEM, ma anche l’intero livello di pubblicazione.
 
 #### ImageMagick {#imagemagick}
 
@@ -274,7 +273,7 @@ To disable Page Extraction:
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
-### Write-back XMP {#xmp-writeback}
+### XMP {#xmp-writeback}
 
 XMP writeback aggiorna la risorsa originale ogni volta che i metadati vengono modificati in AEM, il che si traduce in quanto segue:
 
@@ -290,7 +289,7 @@ Se è selezionato il flag di esecuzione dei flussi di lavoro, l’importazione d
 
 Quando si replicano le risorse in un numero elevato di istanze di pubblicazione, ad esempio in un’implementazione di Sites, Adobe consiglia di utilizzare la replica a catena. In questo caso, l&#39;istanza dell&#39;autore si replica in una singola istanza di pubblicazione che a sua volta si replica alle altre istanze di pubblicazione, liberando l&#39;istanza dell&#39;autore.
 
-### Configura la replica a catena {#configure-chain-replication}
+### Configurare la replica a catena {#configure-chain-replication}
 
 1. Scegliere l&#39;istanza di pubblicazione da utilizzare per concatenare le replicazioni
 1. In quell&#39;istanza di pubblicazione aggiungi agenti di replica che puntano alle altre istanze di pubblicazione
@@ -373,7 +372,7 @@ Se gli utenti non devono essere in grado di cercare il contenuto delle risorse, 
 
 [Ottieni file](assets/disable_indexingbinarytextextraction-10.zip)
 
-### Indovina totale {#guess-total}
+### Totale Indovini {#guess-total}
 
 Quando crei query che generano set di risultati di grandi dimensioni, utilizza il parametro `guessTotal` per evitare un utilizzo eccessivo della memoria durante l’esecuzione.
 
@@ -399,7 +398,7 @@ Per tutti i problemi di prestazioni della rete da parte del cliente, eseguire le
 * Utilizzando uno strumento di benchmark della rete
 * Test contro il dispatcher
 
-### Test AEM istanza {#aem-instance-testing}
+### Test di istanza AEM {#aem-instance-testing}
 
 Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’utilizzo efficiente della CPU e alla condivisione del carico, controlla regolarmente le prestazioni dell’istanza AEM. In particolare:
 
