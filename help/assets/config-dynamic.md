@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configurazione,Modalità ibrida
-role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -30,7 +29,7 @@ Dynamic Media: l’ibrido deve essere abilitato e configurato per l’uso. A sec
 
 Ulteriori informazioni sull&#39;utilizzo di [video](video.md) in Dynamic Media.
 
-Se utilizzi Adobe Experience Manager configurato per ambienti diversi, ad esempio uno per lo sviluppo, uno per la gestione temporanea e uno per la produzione live, devi configurare i Cloud Services Dynamic Media per ciascuno di questi ambienti.
+Se utilizzi Adobe Experience Manager configurato per ambienti diversi, ad esempio uno per lo sviluppo, uno per la gestione temporanea e uno per la produzione live, devi configurare i Cloud Services Dynamic Media per ciascuno di tali ambienti.
 
 Se riscontri problemi con la configurazione di Dynamic Media, un punto importante da cercare sono i file di registro specifici per gli elementi multimediali dinamici. Questi vengono installati automaticamente quando si abilita il file multimediale dinamico:
 
@@ -39,17 +38,17 @@ Se riscontri problemi con la configurazione di Dynamic Media, un punto important
 
 Sono documentati in [Monitoraggio e manutenzione dell&#39;istanza AEM](/help/sites-deploying/monitoring-and-maintaining.md).
 
-La pubblicazione e la consegna ibride sono una funzione fondamentale dell’aggiunta di Dynamic Media a Adobe Experience Manager. La pubblicazione ibrida consente di distribuire risorse Dynamic Media, come immagini, set e video, dal cloud invece che dai nodi di pubblicazione AEM.
+La pubblicazione e la consegna ibrida è una funzione fondamentale dell’aggiunta di Dynamic Media ad Adobe Experience Manager. La pubblicazione ibrida consente di distribuire risorse Dynamic Media, come immagini, set e video, dal cloud invece che dai nodi di pubblicazione AEM.
 
 Altri contenuti, come visualizzatori Dynamic Media, pagine del sito e contenuto statico, continueranno a essere serviti dai nodi di pubblicazione AEM.
 
 Se sei un cliente di Dynamic Media, devi utilizzare la consegna ibrida come meccanismo di consegna per tutti i contenuti Dynamic Media.
 
-## Architettura di pubblicazione ibrida per video {#hybrid-publishing-architecture-for-videos}
+## Architettura di pubblicazione ibrida per i video {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-506](assets/chlimage_1-506.png)
 
-## Architettura di pubblicazione ibrida per immagini {#hybrid-publishing-architecture-for-images}
+## Architettura di pubblicazione ibrida per le immagini {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
@@ -176,7 +175,7 @@ Per abilitare i file multimediali dinamici, è necessario attivare la modalità 
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Il registro s7access registra ogni richiesta effettuata a Dynamic Media tramite `/is/image` e `/is/content`.
    Questi registri vengono utilizzati solo quando Dynamic Media è abilitato. Non sono inclusi nel pacchetto **Scarica completo** generato dalla pagina **[!UICONTROL system/console/status-Bundlelist]**; quando chiami l&#39;Assistenza clienti in caso di problemi con Dynamic Media, aggiungi entrambi i registri al problema.
 
-### Se AEM installato su una porta o un percorso contestuale diverso .. {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Se AEM installato su una porta o un percorso contestuale diverso ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 Se distribuisci [AEM a un server applicazioni](/help/sites-deploying/application-server-install.md) e hai abilitato Dynamic Media, devi configurare il dominio **self** nell&#39;esternalizzatore. In caso contrario, la generazione di miniature per le risorse non funzionerà correttamente per le risorse Dynamic Media.
 
@@ -194,7 +193,7 @@ In una distribuzione WAR QuickStart AEM non è possibile derivare il numero di p
 >[!NOTE]
 In una distribuzione autonoma [AEM Quickstart](/help/sites-deploying/deploy.md), non è necessario configurare un dominio **self** perché il numero di porta e il percorso del contesto possono essere configurati automaticamente. Tuttavia, se tutte le interfacce di rete sono disattivate, è necessario configurare il dominio **self** .
 
-## Disabilitazione di Dynamic Media {#disabling-dynamic-media}
+## Disabilitazione di Dynamic Media  {#disabling-dynamic-media}
 
 Gli elementi multimediali dinamici non sono attivati per impostazione predefinita. Tuttavia, se in precedenza è stato attivato l’elemento multimediale dinamico, è consigliabile disattivarlo in un secondo momento.
 
@@ -335,7 +334,7 @@ Replication test succeeded
 
 Durante la configurazione dell’autenticazione, potresti riscontrare alcuni problemi con le relative soluzioni. Prima di controllarli, assicurati di aver impostato la replica.
 
-#### Problema: Codice di stato HTTP 401 con messaggio - Autorizzazione necessaria {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Codice di stato HTTP 401 con messaggio - Autorizzazione richiesta {#problem-http-status-code-with-message-authorization-required}
 
 Questo problema può essere causato da un errore durante la configurazione del KeyStore per l&#39;utente `dynamic-media-replication`.
 
@@ -360,7 +359,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 
 **Soluzione**: Verifica che  `KeyStore` sia salvato in  **[!UICONTROL dynamic-media-]** replicationuser e che sia fornita la password corretta.
 
-#### Problema: Impossibile decrittografare la chiave - Impossibile decrittografare i dati {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### Problema: Impossibile Decrittare La Chiave - Impossibile Decrittografare I Dati {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -396,7 +395,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 
 **Soluzione**: Assicurati che la proprietà di sistema  **-Djavax.net.ssl.trustStore=** sia impostata su un truststore valido per il processo java su AEM Author.
 
-#### Problema: KeyStore non è configurato o non è inizializzato {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: KeyStore non configurato o non inizializzato {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Questo problema può essere causato da un hotfix o da un feature pack che sovrascrive il nodo **[!UICONTROL dynamic-media-user]** o **[!UICONTROL keystore]**.
 
@@ -427,7 +426,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. Tocca **[!UICONTROL Prova connessione]** per verificare che la configurazione sia valida.
 
-#### Problema: L&#39;agente di pubblicazione utilizza SSL invece di OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### Problema: L’agente di pubblicazione utilizza SSL invece di OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 Questo problema può essere causato da un hotfix o da un feature pack che non è stato installato correttamente o ha sovrascritto le impostazioni.
 
@@ -506,7 +505,7 @@ Prima di configurare i Cloud Services Dynamic Media, assicurati di aver impostat
 1. Tocca **[!UICONTROL Salva]** per tornare alla pagina del browser di configurazione Dynamic Media.
 1. Tocca il logo AEM per accedere alla console di navigazione globale.
 
-## Configurazione della generazione di rapporti video {#configuring-video-reporting}
+## Configurazione del reporting video {#configuring-video-reporting}
 
 È possibile configurare la generazione di rapporti video per più installazioni di AEM utilizzando la modalità ibrida Dynamic Media.
 
@@ -543,7 +542,7 @@ Assicurati che il pacchetto predefinito [!DNL Video Analytics] dal primo nodo Au
 1. Installa il pacchetto predefinito [!DNL Video Analytics].
 1. Configura **[!UICONTROL Configurazione Dynamic Media (Pre 6.3)]**.
 
-### Verifica e debugging dell&#39;installazione del pacchetto {#verifying-and-debugging-the-package-installation}
+### Verifica e debug dell’installazione del pacchetto {#verifying-and-debugging-the-package-installation}
 
 1. Esegui una delle seguenti operazioni per verificare e, se necessario, eseguire il debug dell&#39;installazione del pacchetto:
 
@@ -624,7 +623,7 @@ Devi pubblicare le tue impostazioni predefinite del catalogo come parte del proc
 1. Tocca la scheda **[!UICONTROL Replica]** .
 1. Tocca **[!UICONTROL Replicare]**.
 
-## Replicazione dei predefiniti visualizzatore {#replicating-viewer-presets}
+## Replica dei predefiniti per visualizzatori {#replicating-viewer-presets}
 
 Per fornire una risorsa con un predefinito visualizzatore, devi replicare/pubblicare il predefinito visualizzatore. Per ottenere l’URL o il codice di incorporamento di una risorsa, tutti i predefiniti visualizzatore devono essere attivati _e_ replicati. Per ulteriori informazioni, consulta [Pubblicazione dei predefiniti per visualizzatori](managing-viewer-presets.md#publishing-viewer-presets) .
 
@@ -693,7 +692,7 @@ Se utilizzi Dynamic Media per 1) imaging in produzione _o_ 2) imaging e video, p
 >[!NOTE]
 I filtri si applicano ai tipi mime e non possono essere specifici per il percorso.
 
-### Impostazione dei filtri delle risorse per le distribuzioni di solo video {#setting-up-asset-filters-for-video-only-deployments}
+### Impostazione dei filtri delle risorse per le distribuzioni solo video {#setting-up-asset-filters-for-video-only-deployments}
 
 Se utilizzi Dynamic Media solo per i video, segui questi passaggi per impostare i filtri delle risorse per la replica:
 
@@ -710,7 +709,7 @@ Se utilizzi Dynamic Media solo per i video, segui questi passaggi per impostare 
 
 Questo imposta l&#39;istanza di pubblicazione AEM per distribuire l&#39;immagine poster video e i metadati video necessari per la riproduzione, mentre il video stesso viene distribuito dal servizio cloud Dynamic Media. Il filtro escluderà anche dalla replica le rappresentazioni video originali e le miniature statiche, che non sono necessarie nell’istanza di pubblicazione.
 
-### Configurazione dei filtri delle risorse per l’imaging nelle distribuzioni non di produzione {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
+### Impostazione dei filtri delle risorse per l’imaging nelle distribuzioni non di produzione {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 Se utilizzi Dynamic Media per l’imaging in implementazioni non di produzione, segui questi passaggi per configurare i filtri risorse per la replica:
 
@@ -949,7 +948,7 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
  </tbody> 
 </table>
 
-## Configurazione di Dynamic Media Color Management {#configuring-dynamic-media-color-management}
+## Configurazione della gestione del colore Dynamic Media {#configuring-dynamic-media-color-management}
 
 La gestione del colore per gli elementi multimediali dinamici consente di colorare le risorse corrette per la visualizzazione dell’anteprima.
 
@@ -980,7 +979,7 @@ Il set standard di profili di colore di Adobe è disponibile solo se è installa
 
 1. Installare il feature pack.
 
-### Configurazione dei profili colore predefiniti {#configuring-the-default-color-profiles}
+### Configurazione dei profili di colore predefiniti {#configuring-the-default-color-profiles}
 
 Dopo aver installato il feature pack, è necessario configurare i profili di colore predefiniti appropriati per abilitare la correzione del colore quando si richiedono dati immagine RGB o CMYK.
 
@@ -1297,6 +1296,6 @@ Consulta [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-asset
  </tbody> 
 </table>
 
-### Componenti WCM Dynamic Media e File multimediali interattivi {#wcm-dynamic-media-and-interactive-media-components}
+### WCM Dynamic Media e componenti multimediali interattivi {#wcm-dynamic-media-and-interactive-media-components}
 
 Le pagine WCM che fanno riferimento a componenti Dynamic Media e Interactive Media fanno riferimento al servizio di consegna.
