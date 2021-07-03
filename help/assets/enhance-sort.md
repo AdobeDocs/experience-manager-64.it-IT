@@ -2,16 +2,15 @@
 title: Ordinamento migliorato delle risorse in AEM
 description: Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 contentOwner: AG
-feature: Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Ricerca
+role: User
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 5%
 
 ---
-
 
 # Ordinamento migliorato delle risorse in AEM {#enhanced-sorting-of-assets-in-aem}
 
@@ -90,4 +89,3 @@ AEM Assets consente di ordinare cronologicamente le voci della timeline, ad esem
 1. Tocca o fai clic sull&#39;icona **[!UICONTROL Ordina]** accanto all&#39;etichetta **[!UICONTROL Data]**. In base alla selezione, le annotazioni sono elencate nell’ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
-
