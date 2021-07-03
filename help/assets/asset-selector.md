@@ -2,16 +2,15 @@
 title: Selettore risorse
 description: Scopri come utilizzare il selettore delle risorse per cercare, filtrare, sfogliare e recuperare metadati per le risorse in Adobe Experience Manager (AEM) Assets. Inoltre, scopri come personalizzare l’interfaccia del selettore risorse.
 contentOwner: AG
-feature: Asset Management,Metadata,Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Gestione risorse, metadati, ricerca
+role: User
+exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 2%
+source-wordcount: '496'
+ht-degree: 1%
 
 ---
-
 
 # Selettore risorse {#asset-selector}
 
@@ -43,7 +42,7 @@ Puoi trasmettere i seguenti parametri di richiesta in un URL per avviare il sele
 | asset (S) | immagini, documenti, multimedia, archivi | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Utilizza questa opzione per filtrare i tipi di risorse in base al valore passato. |
 | mimetype | mimetype(i) (`/jcr:content/metadata/dc:format`) di una risorsa (supportato anche da caratteri jolly) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Utilizzalo per filtrare le risorse in base ai tipi MIME |
 
-## Utilizza il selettore risorse {#using-the-asset-selector}
+## Utilizzare il selettore risorse {#using-the-asset-selector}
 
 1. Per accedere all’interfaccia del selettore risorse, passa a `https://[AEM_server]:[port]/aem/assetpicker`.
 1. Individua la cartella desiderata e seleziona una o più risorse.
