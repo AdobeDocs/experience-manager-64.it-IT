@@ -2,16 +2,15 @@
 title: Libreria di transcodifica delle immagini
 description: Scopri come configurare e utilizzare la libreria di transcodifica delle immagini di Adobe, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
-feature: Renditions,Developer Tools,Asset Processing
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Rappresentazioni, Strumenti Per Sviluppatori, Elaborazione Delle Risorse
+role: Admin
+exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
-
 
 # Libreria di transcodifica delle immagini {#imaging-transcoding-library}
 
