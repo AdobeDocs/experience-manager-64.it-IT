@@ -2,16 +2,15 @@
 title: Best practice per tradurre le risorse in modo efficiente
 description: Procedure consigliate per una gestione efficiente delle risorse, al fine di sincronizzare diverse versioni tradotte e semplificare i flussi di lavoro di traduzione.
 contentOwner: AG
-feature: Translation
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Traduzione
+role: User,Admin
+exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
-
 
 # Best practice per tradurre le risorse in modo efficiente {#best-practices-for-translating-assets-efficiently}
 
@@ -48,4 +47,3 @@ Puoi anche apportare alcune modifiche alla configurazione di un paio di flussi d
 
 1. [Configura il ](/help/sites-administering/tc-tic.md) framework di integrazione della traduzione per interrompere la traduzione dei binari delle risorse. Deseleziona l’opzione &quot;Traduci risorse&quot; nella scheda Risorse per interrompere la traduzione dei file binari delle risorse.
 1. Traduci metadati/tag delle risorse utilizzando [Flussi di lavoro per risorse multilingue](multilingual-assets.md).
-
