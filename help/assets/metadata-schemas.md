@@ -2,16 +2,15 @@
 title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scopri come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2536'
 ht-degree: 13%
 
 ---
-
 
 # Schemi metadati {#metadata-schemas}
 
@@ -55,7 +54,7 @@ Per visualizzare un elenco di moduli/modelli, nell’interfaccia [!DNL Experienc
 >
 >Per visualizzare i moduli secondari di un modulo schema, fare clic o toccare il nome del modulo schema.
 
-## Aggiungi un modulo schema metadati {#adding-a-metadata-schema-form}
+## Aggiungere un modulo schema metadati {#adding-a-metadata-schema-form}
 
 1. Per aggiungere un modello personalizzato all’elenco, fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 
@@ -67,7 +66,7 @@ Per visualizzare un elenco di moduli/modelli, nell’interfaccia [!DNL Experienc
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## Modifica moduli schema metadati {#editing-metadata-schema-forms}
+## Modifica dei moduli schema metadati {#editing-metadata-schema-forms}
 
 È possibile modificare un modulo schema metadati nuovo aggiunto o esistente. Il modulo schema metadati include quanto segue:
 
@@ -109,7 +108,7 @@ La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizza
 | [!UICONTROL Valutazione risorsa] | Aggiungi per visualizzare le opzioni di valutazione della risorsa. |
 | [!UICONTROL Metadati contestuali] | Aggiungi per controllare la visualizzazione di altre schede di metadati nella pagina delle proprietà delle risorse. |
 
-### Modifica il componente metadati {#editing-the-metadata-component}
+### Modifica del componente metadati {#editing-the-metadata-component}
 
 Per modificare le proprietà di un componente metadati sul modulo, fai clic sul componente e modifica tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
@@ -163,7 +162,7 @@ Per includere una scheda nella pagina delle proprietà oltre alla scheda in cui 
 
 Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Impostazioni]**, puoi definire le opzioni in un file JSON, specificando le coppie chiave-valore corrispondenti. Nel campo **[!UICONTROL Percorso JSON]**, specifica il percorso del file JSON.
 
-### Aggiungi o elimina una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
+### Aggiunta o eliminazione di una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
 
 L’editor dello schema consente di aggiungere o eliminare una scheda. Per impostazione predefinita, il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]**, **[!UICONTROL IPTC]** ed **[!UICONTROL Estensione IPTC]**.
 
@@ -173,7 +172,7 @@ Fare clic su `+` per aggiungere una nuova scheda a un modulo schema. Per imposta
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## Elimina moduli schema metadati {#deleting-metadata-schema-forms}
+## Eliminare i moduli schema metadati {#deleting-metadata-schema-forms}
 
 AEM consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
 
@@ -191,7 +190,7 @@ Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona **[!UICONTROL E
 
 AEM Assets fornisce moduli predefiniti per vari tipi MIME pronti all’uso. Tuttavia, puoi aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
-### Aggiungi nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
+### Aggiungere nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
 
 Crea un nuovo modulo con il tipo appropriato. Ad esempio, per aggiungere un nuovo modello per il sottotipo `image/png`, creare il modulo sotto i moduli `image`. Il titolo del modulo schema è il nome del sottotipo. In questo caso, il titolo è `png`.
 
@@ -226,7 +225,7 @@ AEM Assets mappa i seguenti tipi MIME e moduli di schema:
 
 La funzione schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso agli utenti non amministratori fornendo le autorizzazioni **[!UICONTROL Create]**, **[!UICONTROL Modify]** e **[!UICONTROL Delete]** sulla cartella `/conf`.
 
-## Applica metadati specifici della cartella {#applying-folder-specific-metadata}
+## Applicare metadati specifici per le cartelle {#applying-folder-specific-metadata}
 
 AEM Assets consente di definire una variante di uno schema di metadati e di applicarlo a una cartella specifica.
 
