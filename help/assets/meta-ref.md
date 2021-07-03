@@ -2,16 +2,15 @@
 title: Riferimento schema metadati
 description: 'Scopri le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadati
+role: User,Admin
+exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '395'
 ht-degree: 3%
 
 ---
-
 
 # Riferimento schema metadati {#metadata-schemata-reference}
 
