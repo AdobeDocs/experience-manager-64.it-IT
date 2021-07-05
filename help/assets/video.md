@@ -71,7 +71,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
