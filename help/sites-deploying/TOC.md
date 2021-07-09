@@ -8,9 +8,9 @@ breadcrumb-title: Guida alla distribuzione
 user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.4, inclusa la distribuzione cloud di Adobe Managed Services.
 feature: Distribuzione
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 17%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 17%
    + [Controlli di coerenza e di transito](consistency-check.md)
    + [Linee guida sulle prestazioni](performance-guidelines.md)
    + [Ottimizzazione delle prestazioni](configuring-performance.md)
-   + [Guida alle prestazioni di Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Guida alle prestazioni di Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [Articoli dimostrativi sulla configurazione](ht-deploy.md)
    + [Rimozione dei siti di Geometrixx](removing-the-geometrixx-sites.md)
    + [Configurazione della console Web](configuring-web-console.md)
