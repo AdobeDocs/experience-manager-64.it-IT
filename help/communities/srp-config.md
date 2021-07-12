@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '207'
 ht-degree: 4%
 
 ---
-
 
 # Configurazione dell’archiviazione {#storage-configuration}
 
@@ -30,7 +29,7 @@ Per una discussione sulle opzioni di storage e sulle topologie di distribuzione,
 * [Archivio dei contenuti della community](working-with-srp.md)
 * [Topologie consigliate](topologies.md)
 
-## Console di configurazione dello storage {#storage-configuration-console}
+## Console di configurazione dell&#39;archiviazione {#storage-configuration-console}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -49,7 +48,7 @@ Per selezionare un&#39;opzione di archiviazione diversa dal JCR predefinito:
 
 * Seleziona **[!UICONTROL Invia]**
 
-### Informazioni su JCR Storage {#about-jcr-storage}
+### Informazioni sullo storage JCR {#about-jcr-storage}
 
 Se non viene effettuata alcuna selezione, l’impostazione predefinita è l’archivio AEM, JCR.
 
@@ -60,4 +59,3 @@ Visita [JCR Store](jsrp.md) per ulteriori informazioni.
 >[!NOTE]
 >
 >L&#39;assenza del nodo `srpc`sotto `/etc/socialconfig` indica il valore predefinito [JCR store](jsrp.md).
-
