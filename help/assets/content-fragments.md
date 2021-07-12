@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Frammenti di contenuto
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 7%
@@ -26,7 +25,7 @@ ht-degree: 7%
 >
 >Alcune funzionalità dei frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
-I frammenti di contenuto Adobe Experience Manager (AEM) consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
+I frammenti di contenuto di Adobe Experience Manager (AEM) consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
 
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione Sling Model (JSON) dei componenti core AEM. Questo tipo di consegna:
 
@@ -107,7 +106,7 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 >
 >AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta [Creazione di progetti di traduzione per frammenti di contenuto](creating-translation-projects-for-content-fragments.md) .
 
-## Tipi di frammento di contenuto {#types-of-content-fragment}
+## Tipi di frammenti di contenuto {#types-of-content-fragment}
 
 I frammenti di contenuto possono essere:
 
@@ -299,7 +298,7 @@ Per creare, modificare e utilizzare frammenti di contenuto è inoltre necessario
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
    * Quando si trascina un frammento su una pagina in fase di creazione, il componente richiesto viene associato automaticamente.
 
-## Esempio di utilizzo {#example-usage}
+## Utilizzo di esempio {#example-usage}
 
 Un frammento, con i relativi elementi e varianti, può essere utilizzato per creare contenuti coerenti per più canali. Durante la progettazione del frammento è necessario considerare gli elementi da utilizzare in che punto.
 
