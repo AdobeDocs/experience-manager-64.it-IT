@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 5%
 
 ---
-
 
 # Siti community {#communities-sites}
 
@@ -99,7 +98,7 @@ La natura dell&#39;utilizzo dei contenuti della community influenza la struttura
 
 Consulta la pagina di distribuzione per altre informazioni specifiche di Communities, ad esempio per [Aggiornamento](upgrade.md), [Dispatcher](dispatcher.md) e [Replica](deploy-communities.md#replication-agents-on-author).
 
-## Documentazione relativa a Communities {#related-communities-documentation}
+## Documentazione di Communities correlata {#related-communities-documentation}
 
 * Per informazioni sulle distribuzioni consigliate, visita [Implementazione di Communities](deploy-communities.md) .
 
