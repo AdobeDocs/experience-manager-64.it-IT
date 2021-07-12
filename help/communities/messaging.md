@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
-
 
 # Configurazione della messaggistica {#configuring-messaging}
 
@@ -37,7 +36,7 @@ Il [AEM Communities Messaging Operations Service](http://localhost:4502/system/c
 
 Per i siti della community creati utilizzando la [console Sites di Communities](sites-console.md), esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/community/inbox`.
 
-### Servizio per le operazioni di messaggistica community {#community-messaging-operations-service}
+### Servizio per le operazioni di messaggistica comunitaria {#community-messaging-operations-service}
 
 Come mostrato di seguito, esiste una configurazione del servizio per i siti creati con la [creazione guidata sito](sites-console.md). Per visualizzare o modificare la configurazione, seleziona l’icona a forma di matita accanto alla configurazione:
 
