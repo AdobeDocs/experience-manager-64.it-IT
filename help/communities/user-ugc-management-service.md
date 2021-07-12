@@ -9,15 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
-
 
 # Servizio di gestione utenti e UGC in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
@@ -41,7 +40,7 @@ Tuttavia, puoi anche creare un’interfaccia utente (interfaccia utente) per ges
 
 Queste API consentono di eseguire le seguenti funzioni.
 
-## Recupera l&#39;UGC di un utente {#retrieve-the-ugc-of-a-user}
+## Recuperare l’UGC di un utente {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` consente di esportare dal sistema tutti i contenuti UGC di un utente.
 
@@ -52,7 +51,7 @@ Ad esempio, per esportare l’UGC di un utente chiamato Weston McCall, che utili
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## Eliminare l&#39;UGC di un utente {#delete-the-ugc-of-a-user}
+## Eliminare l’UGC di un utente {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc(ResourceResolver resourceResolver, String user)** aiuta a eliminare dal sistema tutti gli UGC per un utente.
 
@@ -63,7 +62,7 @@ Ad esempio, per eliminare l’UGC di un utente con ID autorizzabile weston.mccal
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
 
-### Elimina UGC da Adobe Analytics {#delete-ugc-from-analytics}
+### Eliminare UGC da Adobe Analytics {#delete-ugc-from-analytics}
 
 Per eliminare i dati utente da Adobe Analytics, segui il flusso di lavoro di analisi RGPD; poiché l’API non elimina i dati utente da Adobe Analytics.
 
