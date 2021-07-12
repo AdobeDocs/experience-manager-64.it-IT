@@ -10,15 +10,14 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 48%
+source-wordcount: '165'
+ht-degree: 47%
 
 ---
-
 
 # Installazione e configurazione di Designer {#installing-and-configuring-designer}
 
@@ -36,4 +35,3 @@ Designer è disponibile come programma di installazione autonomo ed è fornito i
 1. (Facoltativo) Se si desidera installare Designer in una posizione di propria scelta, cambiare il percorso di installazione predefinito. Fai clic su Avanti.
 1. Fare clic su Indietro per modificare le preferenze. Per installare Designer, fare clic su Installa.
 1. Al completamento dell’installazione, fare clic su Fine.
-
