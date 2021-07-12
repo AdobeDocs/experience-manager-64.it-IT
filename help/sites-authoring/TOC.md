@@ -7,9 +7,8 @@ user-guide-title: Guida utente all’authoring di AEM 6.4
 breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 feature: 'Authoring  '
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 88%
@@ -27,8 +26,8 @@ ht-degree: 88%
    + [Operazioni di base](basic-handling.md)
    + [Ricerca](search.md)
    + [Configurazione dell’ambiente dell’account](user-properties.md)
-   + [Casella in entrata](inbox.md)
-   + [Scelte rapide da tastiera per le console](keyboard-shortcuts.md)
+   + [Casella in entrata  ](inbox.md)
+   + [Scelte rapide da tastiera per le console  ](keyboard-shortcuts.md)
    + [Selezione dell’interfaccia](select-ui.md)
 + Authoring {#authoring}
    + [Ambiente e strumenti di authoring](author-environment-tools.md)
@@ -39,21 +38,21 @@ ht-degree: 88%
    + [Modifica delle proprietà di una pagina](editing-page-properties.md)
    + [Pubblicazione delle pagine](publishing-pages.md)
    + [Authoring delle pagine con frammenti di contenuto](content-fragments.md)
-   + [Frammenti esperienza](experience-fragments.md)
-   + [Esportazione in formato CSV](csv-export.md)
+   + [Frammenti di esperienza](experience-fragments.md)
+   + [Esportazione in formato CSV  ](csv-export.md)
    + [Componenti](default-components.md)
-   + [Authoring di una pagina per dispositivi mobili ](mobile.md)
-   + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
+   + [Authoring di una pagina per dispositivi mobili](mobile.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
    + [Best practice  ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
-   + [Utilizzo dei tag](tags.md)
+   + [Utilizzo dei tag  ](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
    + [Utilizzo delle versioni di una pagina  ](working-with-page-versions.md)
-   + [Differenze tra pagine](page-diff.md)
+   + [Differenze tra pagine ](page-diff.md)
    + [Console Componenti](default-components-console.md)
-   + [Layout reattivo](responsive-layout.md)
+   + [Layout reattivo  ](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](creating-accessible-content.md)
    + [Scaffolding](scaffolding.md)
@@ -63,13 +62,13 @@ ht-degree: 88%
    + [Progetti](projects.md)
    + [Gestione dei progetti](touch-ui-managing-projects.md)
    + [Utilizzo delle attività](task-content.md)
-   + [Integrazione di Progetto creativo e PIM](managing-product-information.md)
-   + [Utilizzo dei flussi di lavoro del progetto](projects-with-workflows.md)
+   + [Integrazione Progetto creativo e PIM](managing-product-information.md)
+   + [Utilizzo dei flussi di lavoro per i progetti](projects-with-workflows.md)
 + Lanci {#launches}
    + [Lanci](launches.md)
-   + [Creazione di lanci](launches-creating.md)
+   + [Creazione dei lanci](launches-creating.md)
    + [Modifica dei lanci](launches-editing.md)
-   + [Promozione del lancio](launches-promoting.md)
+   + [Promozione dei lanci](launches-promoting.md)
 + Flussi di lavoro {#workflows}
    + [Utilizzo dei flussi di lavoro](workflows.md)
    + [Applicazione dei flussi di lavoro alle pagine](workflows-applying.md)
@@ -82,9 +81,9 @@ ht-degree: 88%
    + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](search-and-promote.md)
 + Personalizzazione {#personalization}
    + [Personalizzazione](personalization.md)
-   + [Anteprima delle pagine tramite i dati di ContextHub](ch-previewing.md)
-   + [Creazione di contenuti mirati utilizzando la modalità Targeting](content-targeting-touch.md)
-   + [Lavorare con i contenuti di destinazione in multisito](multisite-support-targeted-content.md)
+   + [Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub](ch-previewing.md)
+   + [Creazione di contenuti di destinazione utilizzando la modalità di targeting](content-targeting-touch.md)
+   + [Utilizzo dei contenuti di destinazione in più siti](multisite-support-targeted-content.md)
    + [Struttura della gestione multisito per contenuti di destinazione](technical-multisite-targeted.md)
    + [Gestione delle attività](activitylib.md)
    + [Gestione dei tipi di pubblico](managing-audiences.md)
