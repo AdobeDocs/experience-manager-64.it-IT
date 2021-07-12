@@ -7,15 +7,14 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
-
 
 # Flussi di lavoro incentrati su Forms su OSGi | Gestione dei dati utente {#forms-centric-workflows-on-osgi-handling-user-data}
 
@@ -31,7 +30,7 @@ I flussi di lavoro AEM incentrati su Forms consentono di automatizzare i process
 
 Per ulteriori informazioni sui flussi di lavoro e le funzionalità di AEM incentrati su Forms, consulta [Flusso di lavoro incentrato su Forms su OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Memorizzazione di dati e dati utente {#user-data-and-data-stores}
+## Archiviazione dati e dati utente {#user-data-and-data-stores}
 
 Quando un flusso di lavoro viene attivato, viene generato automaticamente un payload per l’istanza del flusso di lavoro. A ogni istanza del flusso di lavoro viene assegnato un ID istanza univoco e un ID payload associato. Il payload contiene le posizioni dell’archivio per i dati utente e modulo associati a un’istanza di flusso di lavoro. Inoltre, le bozze e i dati storici per un’istanza di flusso di lavoro sono memorizzati anche nell’archivio AEM.
 
@@ -126,7 +125,7 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza di fluss
 >
 >L’app AEM Forms memorizza anche i dati in modalità offline. È possibile che i dati per un’istanza di flusso di lavoro siano memorizzati localmente sui singoli dispositivi e vengano inviati al server Forms quando l’app si sincronizza con il server.
 
-### Elimina i dati utente {#delete-user-data}
+### Eliminare i dati utente {#delete-user-data}
 
 Per eliminare i dati utente dalle istanze del flusso di lavoro, devi essere un amministratore AEM eseguendo le operazioni seguenti:
 
@@ -162,4 +161,3 @@ Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per u
 * [Come accedere programmaticamente a AEM JCR](/help/sites-developing/access-jcr.md)
 * [Rimozione di nodi e proprietà](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Riferimento API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-
