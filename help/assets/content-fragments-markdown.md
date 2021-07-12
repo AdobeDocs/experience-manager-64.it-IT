@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Frammenti di contenuto
-role: Business Practitioner
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 4%
@@ -61,7 +61,7 @@ Facoltativamente, è possibile creare un H1 evidenziando il testo in segni ugual
 
     `-------------`
 
-## Interruzioni di paragrafi e righe {#paragraphs-and-line-breaks}
+## Paragrafi e interruzioni di riga {#paragraphs-and-line-breaks}
 
 Un paragrafo è costituito semplicemente da una o più righe di testo consecutive, separate da una o più righe vuote. Una riga vuota è una riga contenente solo spazi o tabulazioni. I paragrafi normali non devono presentare un rientro con spazi o tabulazioni.
 
@@ -115,7 +115,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Virgolette bloccate {#block-quotes}
+## Virgolette a blocchi {#block-quotes}
 
 È possibile citare il testo aggiungendo il simbolo > prima del testo. Esempio:
 
