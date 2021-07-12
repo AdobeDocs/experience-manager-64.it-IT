@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1100'
 ht-degree: 3%
 
 ---
 
-
-# Configurazione MySQL per le funzioni di abilitazione {#mysql-configuration-for-enablement-features}
+# Configurazione di MySQL per le funzionalità di abilitazione {#mysql-configuration-for-enablement-features}
 
 MySQL è un database relazionale utilizzato principalmente per il tracciamento SCORM e i dati di reporting per le risorse di abilitazione. Sono incluse tabelle per altre funzioni quali il tracciamento della pausa/ripresa del video.
 
@@ -64,7 +63,7 @@ Impostare il database MySQL come predefinito su UTF8:
 * Nella sezione `[mysqld]`, aggiungi la seguente riga:
    `character-set-server=utf8`
 
-## Installazione di MySQL Workbench {#installing-mysql-workbench}
+## Installazione di Workbench MySQL {#installing-mysql-workbench}
 
 Workbench di MySQL fornisce un&#39;interfaccia utente per l&#39;esecuzione di script SQL che installano lo schema e i dati iniziali.
 
@@ -107,7 +106,7 @@ All&#39;apertura della nuova connessione di abilitazione, noterai che esiste uno
 
 ![chlimage_1-330](assets/chlimage_1-330.png)
 
-### Ottieni script SQL {#obtain-sql-scripts}
+### Ottenere gli script SQL {#obtain-sql-scripts}
 
 Gli script SQL vengono ottenuti utilizzando CRXDE Lite nell&#39;istanza di authoring. Il [pacchetto SCORM](deploy-communities.md#scorm) deve essere installato:
 
@@ -143,13 +142,11 @@ Prima di installare i dati, assicurati di installare lo schema.
 >Se il nome del database viene modificato, assicurarsi di specificarlo correttamente in
 >
 >* [Configurazione JDBC](#configure-jdbc-connections)
->* [Configurazione SCORM](#configure-scorm)
-
->
+* [Configurazione SCORM](#configure-scorm)
 
 
 
-#### Passaggio 1: aprire il file SQL {#step-open-sql-file}
+#### Passaggio 1: apri file SQL {#step-open-sql-file}
 
 In MySQL Workbench
 
@@ -249,4 +246,3 @@ Per garantire il corretto funzionamento dei corsi di abilitazione in tutti i bro
 * Seleziona l&#39;icona `[+]` per aggiungere un agente utente sicuro
 * Inserisci `Mozilla/*`
 * Seleziona **[!UICONTROL Salva]**
-
