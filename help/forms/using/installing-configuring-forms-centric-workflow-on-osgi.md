@@ -6,15 +6,14 @@ seo-description: 'Installa e configura AEM Forms Interactive Communications per 
 uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1639'
 ht-degree: 5%
 
 ---
-
 
 # Installazione e configurazione del flusso di lavoro Forms-centric su OSGi {#installing-and-configuring-forms-centric-workflow-on-osgi}
 
@@ -97,7 +96,7 @@ Prima di iniziare a installare e configurare un flusso di lavoro Forms-centric s
  </tbody>
 </table>
 
-## Installa il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
+## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene un flusso di lavoro incentrato su Forms su OSGi e altre funzionalità. Esegui i seguenti passaggi per installare il pacchetto aggiuntivo:
 
@@ -121,7 +120,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e facoltative. Le config
 
 ### Configurazioni obbligatorie post-installazione {#mandatory-post-installation-configurations}
 
-#### Configurare le librerie RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la delega delle librerie:
 
@@ -146,7 +145,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la d
 1. Salva e chiudi il file e avvia l’istanza AEM.
 1. Ripeti i passaggi 1-4 su tutte le istanze Author e Publish.
 
-#### Configura l&#39;agente di serializzazione {#configure-the-serialization-agent}
+#### Configura l’agente di serializzazione {#configure-the-serialization-agent}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere il pacchetto all’inserire nell&#39;elenco Consentiti:
 
@@ -157,7 +156,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere i
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 
-#### Configurare il Dispatcher {#configure-dispatcher}
+#### Configurare Dispatcher {#configure-dispatcher}
 
 Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico per AEM. AEM Dispatcher aiuta anche a proteggere AEM server dagli attacchi. Puoi aumentare la sicurezza dell’istanza AEM utilizzando Dispatcher insieme a un server web di classe enterprise. Se utilizzi [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), esegui le seguenti configurazioni per AEM Forms:
 
@@ -173,7 +172,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
    Accedi al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **Configurazioni**, seleziona l&#39;opzione **Filtro di riferimento Apache Sling** . Nel campo Consenti host , immetti il nome host del dispatcher per consentirlo come referrer e fai clic su **Salva**. Il formato della voce è `https://[server]:[port]`.
 
-#### Configura la cache {#configure-cache}
+#### Configura cache {#configure-cache}
 
 La memorizzazione in cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo.
 
@@ -204,4 +203,3 @@ Hai configurato un ambiente per utilizzare un flusso di lavoro incentrato su For
 * [Utilizzo del flusso di lavoro Forms-centric su OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Guida di riferimento per i passaggi dei flussi di lavoro](/help/sites-developing/workflows-step-ref.md)
 * [Post-elaborazione di lettere e comunicazioni interattive](/help/forms/using/submit-letter-topostprocess.md)
-
