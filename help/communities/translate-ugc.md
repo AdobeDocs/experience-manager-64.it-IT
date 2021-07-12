@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
-
 
 # Traduzione di contenuti generati dagli utenti {#translating-user-generated-content}
 
@@ -91,7 +90,7 @@ Per creare una nuova integrazione di traduzione, che integra un connettore del s
 
 * Seleziona l&#39;icona `[+]` accanto a **[!UICONTROL Configurazioni disponibili]** per creare una nuova configurazione
 
-#### Finestra di dialogo di configurazione {#create-configuration-dialog}
+#### Finestra di dialogo Crea configurazione {#create-configuration-dialog}
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
