@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 54a4a053-ca44-451a-9a31-f1c1e8cb7002
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2886'
+source-wordcount: '2885'
 ht-degree: 2%
 
 ---
-
 
 # Punteggio e badge delle community {#communities-scoring-and-badges}
 
@@ -51,7 +50,7 @@ Se vengono memorizzati in una posizione diversa, tutti devono essere accessibili
 
 I distintivi sono differenziati in UGC per quanto riguarda il fatto che siano stati assegnati o sono stati guadagnati in base alle regole. Al momento, i badge assegnati vengono visualizzati come testo e i badge guadagnati vengono visualizzati come immagine.
 
-### Interfaccia utente di gestione dei badge {#badge-management-ui}
+### Interfaccia utente per la gestione dei badge {#badge-management-ui}
 
 La console Communities [Badges](badges.md) consente di aggiungere badge personalizzati che possono essere visualizzati per un membro al momento della maturazione (assegnazione) o quando assume un ruolo specifico nella community (assegnazione).
 
@@ -77,7 +76,7 @@ Nella versione sono inclusi tre badge basati sui ruoli:
 
 ![chlimage_1-366](assets/chlimage_1-366.png)
 
-### Badge assegnati {#awarded-badges}
+### Badge aggiudicati {#awarded-badges}
 
 I badge basati sui premi vengono assegnati dal servizio di punteggio ai membri della comunità in base alle regole applicate alla loro attività nella comunità.
 
@@ -274,7 +273,7 @@ Le sub-regole sono nodi di tipo `cq:Page` con proprietà sul relativo nodo `jcr:
  </tbody> 
 </table>
 
-### Regole di punteggio e sottorete incluse {#included-scoring-rules-and-sub-rules}
+### Regole di valutazione e sottoregole incluse {#included-scoring-rules-and-sub-rules}
 
 Nella versione sono incluse due regole di valutazione per la [Funzione forum](functions.md#forum-function) (una per ciascuna delle componenti Forum e Commenti della funzione Forum):
 
@@ -313,7 +312,7 @@ Nella versione sono incluse due regole di valutazione per la [Funzione forum](fu
 
    * I nomi delle regole devono essere univoci indipendentemente dalla posizione
 
-### Attivazione di regole di punteggio personalizzate {#activating-custom-scoring-rules}
+### Attivazione di regole di valutazione personalizzate {#activating-custom-scoring-rules}
 
 Eventuali modifiche o aggiunte apportate alle regole di punteggio o alle sotto-regole apportate nell’ambiente di authoring devono essere installate al momento della pubblicazione.
 
@@ -395,7 +394,7 @@ Nella versione sono incluse due regole di badging corrispondenti alle [Regole di
 
    * I nomi delle regole devono essere univoci indipendentemente dalla posizione
 
-### Attivazione di regole di badge personalizzate {#activating-custom-badging-rules}
+### Attivazione di regole di badging personalizzate {#activating-custom-badging-rules}
 
 Eventuali modifiche o aggiunte apportate alle regole di badging o alle immagini effettuate nell’ambiente di authoring devono essere installate al momento della pubblicazione.
 
@@ -436,13 +435,13 @@ ad esempio: https://&lt;server>:&lt;port>/home/users/community/riley/profile.soc
 
 ### Esempi: {#examples}
 
-#### Assegnare un badge moderatore {#assign-a-moderator-badge}
+#### Assegnare un badge del moderatore {#assign-a-moderator-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### Revoca di un contrassegno argento assegnato {#revoke-an-assigned-silver-badge}
+#### Revoca di un badge d&#39;argento assegnato {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -587,7 +586,7 @@ Se sono state applicate regole di punteggio e contrassegno al contenuto del sito
 
 Vedere la proprietà `scoringRules`di [Regole di contrassegno](#badging-rules).
 
-### Carattere di distinzione tra maiuscole e minuscole {#case-sensitive-typo}
+### Typo sensibile a maiuscole e minuscole {#case-sensitive-typo}
 
 La maggior parte delle proprietà e dei valori, in particolare i verbi, sono sensibili all&#39;uso di maiuscole e minuscole. I verbi devono essere tutti UPPERCASE quando utilizzati in una regola secondaria di punteggio.
 
