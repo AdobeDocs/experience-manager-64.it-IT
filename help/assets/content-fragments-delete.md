@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Frammenti di contenuto
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 12%
@@ -26,7 +25,7 @@ ht-degree: 12%
 >
 >Alcune funzionalità dei frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
-## Autorizzazioni - Elimina o non elimina {#permissions-delete-or-not-delete}
+## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
 La possibilità di eliminare i contenuti è potente, ma potenzialmente sensibile, e molti settori devono limitare e controllare come questi privilegi vengono distribuiti.
 
@@ -52,7 +51,7 @@ Per quanto riguarda le autorizzazioni di eliminazione, i frammenti di contenuto 
 >
 >Vedere anche [Come verificare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Autorizzazioni necessarie solo per la funzionalità dell&#39;editor {#permissions-required-for-editor-functionality-only}
+## Autorizzazioni necessarie solo per la funzionalità dell’editor {#permissions-required-for-editor-functionality-only}
 
 Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
