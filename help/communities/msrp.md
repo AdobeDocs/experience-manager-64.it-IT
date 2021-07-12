@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 65d37adc-d5fa-4171-bb7f-05b631cad180
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 2%
+source-wordcount: '1202'
+ht-degree: 1%
 
 ---
-
 
 # MSRP - Provider risorsa di archiviazione MongoDB {#msrp-mongodb-storage-resource-provider}
 
@@ -110,7 +109,7 @@ Per ulteriori informazioni sui set di repliche, visita la documentazione di Mong
 
 Per utilizzare i set di repliche e imparare a definire le connessioni tra le applicazioni e le istanze MongoDB, visita la documentazione di MongoDB [Formato URI stringa di connessione](https://docs.mongodb.org/manual/reference/connection-string/) .
 
-#### Url di esempio per la connessione a un set di replica {#example-url-for-connecting-to-a-replica-set}
+#### Url di esempio per la connessione a un set di replica  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -271,4 +270,3 @@ Se un tentativo di stabilire una connessione protetta al server MongoDB non ries
 
 * [AEM con MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentazione MongoDB](https://docs.mongodb.org/)
-
