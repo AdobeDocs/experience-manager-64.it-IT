@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Frammenti di contenuto
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 11%
@@ -124,7 +123,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 >
 >Molte di queste sono azioni [standard per Assets](managing-assets-touch-ui.md) e/o l’ [app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
 
-## Apertura dell’editor frammenti {#opening-the-fragment-editor}
+## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
 Per aprire il frammento per la modifica:
 
@@ -296,7 +295,7 @@ Vengono visualizzati uno accanto all’altro, dove:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Ripristino di una versione {#reverting-to-a-version}
+## Ripristino di una versione  {#reverting-to-a-version}
 
 È possibile ripristinare una versione specifica del frammento:
 
