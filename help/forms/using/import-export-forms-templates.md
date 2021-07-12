@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2f71c588-5616-440f-8e47-8d9665169b3b
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2534'
 ht-degree: 1%
 
 ---
-
 
 # Importazione ed esportazione di risorse in AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
@@ -30,7 +29,7 @@ ht-degree: 1%
 
 
 
-## Scarica o carica risorse Forms e Documenti {#download-or-upload-forms-amp-documents-assets}
+## Scaricare o caricare risorse Forms e Documenti {#download-or-upload-forms-amp-documents-assets}
 
 L’interfaccia utente di AEM Forms ti consente di esportare le risorse da un’istanza AEM scaricandole come AEM pacchetto CRX o file binari. Puoi quindi importare il file AEM CRX-package scaricato o il file binario in un&#39;altra istanza AEM.
 
@@ -38,7 +37,7 @@ L’esportazione e l’importazione tramite l’interfaccia utente di AEM Forms 
 
 Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server di AEM sorgente e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Uso dei pacchetti](/help/sites-administering/package-manager.md).
 
-### Scarica risorse Forms e documenti {#download-forms-amp-documents-assets}
+### Download delle risorse di Forms e Documenti {#download-forms-amp-documents-assets}
 
 Per scaricare le risorse di Forms e Documenti:
 
@@ -60,7 +59,7 @@ Per scaricare le risorse di Forms e Documenti:
    >
    >Sia il pacchetto AEM che i file binari vengono scaricati come archivio (file .zip). I modelli per le risorse non vengono scaricati insieme alle risorse. È necessario esportare i modelli di risorse separatamente.
 
-### Caricare risorse Forms e documenti {#upload-forms-amp-documents-assets}
+### Caricare risorse Forms e Documenti {#upload-forms-amp-documents-assets}
 
 Per caricare le risorse di Forms e Documenti:
 
@@ -128,7 +127,7 @@ Per condividere risorse, come dizionari di dati, lettere e frammenti di document
 
    Il file .cmp include le risorse esportate. Puoi condividere il file .cmp con altri utenti. Altri utenti possono importare il file .cmp in un server diverso per ottenere tutte le risorse nel nuovo server.
 
-### Esporta tutte le risorse di Gestione Corrispondenza come pacchetto {#export-all-the-correspondence-management-assets-as-a-package}
+### Esporta come pacchetto tutte le risorse di Gestione Corrispondenza {#export-all-the-correspondence-management-assets-as-a-package}
 
 Utilizza questa opzione per scaricare tutte le risorse di Gestione Corrispondenza e le dipendenze correlate come pacchetto da un’istanza di moduli AEM.
 
@@ -179,7 +178,7 @@ Puoi importare le risorse esportate in un file .cmp. Un file .cmp può contenere
    >
    >Per poter caricare XDP (come parte del file cmp o in altro modo), devi far parte del gruppo forms-power-users. Per i diritti di accesso, contatta l’amministratore.
 
-## Esportare un&#39;applicazione di flusso di lavoro {#export-a-workflow-application}
+## Esportare un’applicazione di flusso di lavoro {#export-a-workflow-application}
 
 Puoi utilizzare AEM gestore di pacchetti per esportare le applicazioni del flusso di lavoro. La procedura è la seguente:
 
@@ -227,7 +226,7 @@ Per creare una cartella, completa i passaggi seguenti:
 
    ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
 
-### Crea copie di una o più risorse o lettere {#create-copies-of-one-or-more-assets-or-letters}
+### Creare copie di una o più risorse o lettere {#create-copies-of-one-or-more-assets-or-letters}
 
 È possibile utilizzare una risorsa e una lettera esistenti per creare rapidamente risorse e lettere con proprietà, contenuto e risorse ereditate simili. È possibile copiare e incollare dizionari di dati, frammenti di documento e lettere.
 
