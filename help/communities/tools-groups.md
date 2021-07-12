@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 2%
 
 ---
-
 
 # Modelli per gruppi {#group-templates}
 
@@ -33,7 +32,7 @@ Nel momento in cui viene intrapresa l&#39;azione per creare un nuovo gruppo comm
 >
 >Le console per la creazione di [siti della community](sites-console.md), [modelli di sito della community](sites.md), [modelli di gruppo della community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
-## Console dei modelli di gruppo {#group-templates-console}
+## Console Modelli di gruppo {#group-templates-console}
 
 Nell’ambiente di creazione, per raggiungere la console dei modelli di gruppi
 
@@ -43,7 +42,7 @@ Questa console visualizza i modelli da cui è possibile creare un [sito communit
 
 ![branco](assets/groupstemplate.png)
 
-## Creare un modello di gruppo {#create-goup-template}
+## Crea modello di gruppo {#create-goup-template}
 
 Per iniziare a creare un nuovo modello di gruppo, seleziona **[!UICONTROL Crea]**
 
@@ -92,7 +91,7 @@ Trascina e rilascia tutte le altre funzioni della community desiderate per un si
 
 Una volta che tutte le funzioni desiderate sono state rilasciate nell&#39;area del generatore di modelli e configurate, seleziona **[!UICONTROL Salva]** nell&#39;angolo in alto a destra.
 
-##  Modifica modello gruppo{#edit-group-template}
+##  Modifica modello gruppo {#edit-group-template}
 
 Quando visualizzi i gruppi della community nella console principale [Modelli di gruppo](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
 
