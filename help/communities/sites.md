@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '463'
 ht-degree: 4%
 
 ---
-
 
 # Modelli per siti {#site-templates}
 
@@ -27,7 +26,7 @@ La console Modelli per sito è molto simile alla console [Modelli di gruppo](too
 >
 >Le console per la creazione di [siti della community](sites-console.md), [modelli di sito della community](sites.md), [modelli di gruppo della community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
-## Console dei modelli di sito {#site-templates-console}
+## Console Modelli per siti {#site-templates-console}
 
 Nell’ambiente di authoring, è possibile accedere alla console dei siti della community
 
@@ -84,7 +83,7 @@ La funzione page fornisce una pagina vuota. La funzione gruppi consente di crear
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### Funzione dei gruppi nei modelli di gruppo {#group-templates-for-groups-function}
+### Funzione Group Templates for Groups (Modelli di gruppo per gruppi) {#group-templates-for-groups-function}
 
 Quando si include una funzione di gruppi nel modello di sito, la configurazione richiede la specifica delle scelte di modelli di gruppo consentite quando si crea un nuovo gruppo nell&#39;ambiente di pubblicazione.
 
@@ -98,7 +97,7 @@ Selezionando due o più modelli di gruppo community, l’amministratore del grup
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## Modifica modello sito{#edit-site-template}
+## Modifica modello sito {#edit-site-template}
 
 Quando si visualizzano i modelli di sito nella [console principale Modelli di sito](#site-templates-console), è possibile selezionare un modello di sito esistente da modificare.
 
