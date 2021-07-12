@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1995'
 ht-degree: 1%
 
 ---
 
-
-# Gestire i metadati del modulo {#manage-form-metadata}
+# Gestire i metadati dei moduli {#manage-form-metadata}
 
 ## Panoramica  {#overview-nbsp}
 
@@ -43,7 +42,7 @@ In AEM Forms sono supportati i seguenti tipi di risorse:
 * Riferimenti
 * XFS
 
-### Elenco esteso di metadati {#extensive-list-of-metadata-nbsp}
+### Elenco completo dei metadati {#extensive-list-of-metadata-nbsp}
 
 Di seguito è riportato un elenco completo delle proprietà dei metadati supportate in AEM Forms:
 
@@ -174,7 +173,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
  </tbody> 
 </table>
 
-## Visualizza metadati modulo {#view-form-metadata-nbsp}
+## Visualizzare i metadati del modulo {#view-form-metadata-nbsp}
 
 Le risorse dispongono di valori di proprietà esistenti che possono essere visualizzati in modalità di sola lettura. Questi metadati vengono creati al momento del caricamento del modulo o della creazione del modulo.
 
@@ -204,11 +203,11 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
    * Il pannello a destra contiene le proprietà dei metadati in modalità di sola lettura, distribuite su varie schede.
 
 
-## Aggiungi/aggiorna i valori dei metadati del modulo {#add-update-form-metadata-values-nbsp}
+## Aggiungere/aggiornare i valori dei metadati del modulo {#add-update-form-metadata-values-nbsp}
 
 È possibile modificare il valore delle proprietà dei metadati esistenti o aggiungere nuovi valori a un campo di proprietà dei metadati esistente (ad esempio, quando un campo di metadati è vuoto).
 
-### Aggiorna i valori delle proprietà dei metadati {#update-metadata-property-values}
+### Aggiornare i valori delle proprietà dei metadati {#update-metadata-property-values}
 
 1. Segui i passaggi indicati nella sezione precedente per aprire la pagina delle proprietà in cui è possibile visualizzare i metadati esistenti del modulo selezionato.
 
@@ -272,7 +271,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
    ![Editor schema metadati per tipo di modulo adattivo](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   [Fare clic per ingrandire](assets/metadata-schema-editor-for-adaptive-form-type.png)
+[Fare clic per ingrandire](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    1. Il pannello a sinistra contiene sezioni a schede in cui i campi vengono posizionati e il pannello a destra visualizza tutti i componenti dell’interfaccia utente disponibili e le proprietà del campo selezionato dal pannello a sinistra.
 
