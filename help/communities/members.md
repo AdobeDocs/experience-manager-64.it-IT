@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
-
 
 # Console di gestione membri e gruppi {#members-groups-management-consoles}
 
@@ -29,7 +28,7 @@ Le funzioni di AEM Communities richiedono spesso la registrazione e l’accesso 
 
 Utilizzando le console Membri e Gruppi della community, i membri e i gruppi di membri registrati nell&#39;ambiente *pubblica* possono essere creati e gestiti dall&#39;ambiente *author* . Questo è possibile solo quando il [servizio tunnel](deploy-communities.md#tunnel-service-on-author) è abilitato.
 
-### Utenti sull&#39;autore {#users-on-author}
+### Utenti sull’autore {#users-on-author}
 
 Per gestire gli utenti e i gruppi registrati nell&#39;ambiente *author* , è necessario utilizzare la console di sicurezza della piattaforma:
 
@@ -40,7 +39,7 @@ Per gestire gli utenti e i gruppi registrati nell&#39;ambiente *author* , è nec
 >
 >Con il contenuto di esempio distribuito e abilitato, molti utenti di esempio esistono sia nell’ambiente di authoring che in quello di pubblicazione. Questi utenti non saranno presenti quando si esegue [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
-## Console membri {#members-console}
+## Console dei membri {#members-console}
 
 Nell’ambiente di authoring, per accedere alla console Membri per la gestione dei membri registrati nell’ambiente di pubblicazione:
 
@@ -78,7 +77,7 @@ Seleziona `Create Member` per creare un utente nell’ambiente di pubblicazione.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### GENERALE - Dettagli membro {#general-member-details}
+### GENERALE - Dettagli dei membri {#general-member-details}
 
 La maggior parte dei campi sono campi facoltativi che il membro può successivamente compilare sul proprio profilo.
 
@@ -158,7 +157,7 @@ Vedi anche [Punteggio e badge](implementing-scoring.md).
 * **[!UICONTROL Rimuovere i badge]**
    * Seleziona l’icona del cestino accanto a un badge per rimuoverlo
 
-## Console gruppi {#groups-console}
+## Console Gruppi {#groups-console}
 
 La console Gruppi, disponibile nell’ambiente di authoring, consente di creare e gestire i gruppi di membri registrati nell’ambiente di pubblicazione. È particolarmente utile per:
 * [Gruppi di membri privilegiati](users.md#privilegedmembersgroups)
@@ -169,7 +168,7 @@ Per accedere alla console Gruppi :
 
 >[!CAUTION]
 >
->Non sarà possibile utilizzare la console Gruppi se il servizio [tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
+>Non sarà possibile utilizzare la console Gruppi se il [servizio tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
 
 ### Crea nuovo gruppo {#create-new-group}
 
