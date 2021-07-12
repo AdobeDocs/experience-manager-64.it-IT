@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3316'
 ht-degree: 1%
 
 ---
-
 
 # Piattaforme supportate per AEM Forms su JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -69,7 +68,7 @@ L&#39;Adobe consiglia queste configurazioni e fornisce supporto completo o limit
 | E: Previsto lavoro | La configurazione dovrebbe funzionare e non ci sono rapporti al contrario. |
 | Z: Non supportato | Configurazione non supportata. L&#39;Adobe non fornisce istruzioni sul funzionamento della configurazione e non la supporta. |
 
-### Macchine virtuali Java (JVM) {#java-virtual-machines-jvm}
+### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
 Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtuale Java, fornita dalla distribuzione Java Development Kit (JDK). Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machines:
 
@@ -104,7 +103,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 
 ### Database e persistenza CRX {#databases-and-crx-persistence}
 
-#### Supporto AEM persistenza {#aem-persistence-support}
+#### Supporto della persistenza AEM {#aem-persistence-support}
 
 <table> 
  <tbody> 
@@ -189,7 +188,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
  </tbody> 
 </table>
 
-### Driver di database {#database-drivers}
+### Driver del database {#database-drivers}
 
 <table> 
  <tbody> 
@@ -529,7 +528,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 
 
 
-### Eccezioni al supporto per l&#39;accessibilità {#exceptions-to-accessibility-support}
+### Eccezioni al supporto per l’accessibilità {#exceptions-to-accessibility-support}
 
 I seguenti sottosistemi di AEM Forms non sono [508](https://www.section508.gov/) conformi:
 
@@ -748,7 +747,7 @@ Per ulteriori requisiti consulta:
 
 
 
-### App AEM Forms {#aem-forms-workspace-app}
+### app AEM Forms {#aem-forms-workspace-app}
 
 #### Supporto per dispositivi mobili {#mobile-device-support}
 
