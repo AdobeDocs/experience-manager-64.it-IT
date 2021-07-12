@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
-
 
 # Punteggio e badge avanzati {#advanced-scoring-and-badges}
 
@@ -97,7 +96,7 @@ Nel punteggio avanzato, la quantità necessaria viene costantemente adattata in 
 
 Se un membro ha guadagnato un badge esperto su un argomento che non è più attivo, c&#39;è la possibilità che perderà il loro badge a causa di decadimento nel tempo.
 
-### Tipo di punteggio {#scoringtype}
+### ScoringType {#scoringtype}
 
 Una regola di punteggio è un insieme di regole secondarie di punteggio, ciascuna delle quali dichiara il valore `scoringType`.
 
@@ -107,7 +106,7 @@ Consulta [Sottoregole di punteggio](implementing-scoring.md#scoring-sub-rules).
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
-### Stopwords {#stopwords}
+### Punte {#stopwords}
 
 Il pacchetto di valutazione avanzato installa una cartella di configurazione contenente un file di parole chiave:
 
@@ -119,7 +118,7 @@ Non è previsto che il file venga modificato.
 
 Se il file delle parole chiave è mancante, il motore di punteggio avanzato genererà un errore.
 
-## Regole di contrassegno avanzate {#advanced-badging-rules}
+## Regole di accesso avanzate {#advanced-badging-rules}
 
 Le proprietà avanzate della regola di badging sono diverse dalle proprietà [base della regola di badging](implementing-scoring.md#badging-rules).
 
@@ -156,7 +155,7 @@ Vedi le informazioni di base per:
 * [Abilitazione del contrassegno per un componente](implementing-scoring.md#enable-badges-for-component)
 * [Applicazione delle regole](implementing-scoring.md#apply-rules-to-content)
 
-### Regole di punteggio e sottorete incluse {#included-scoring-rules-and-sub-rules}
+### Regole di valutazione e sottoregole incluse {#included-scoring-rules-and-sub-rules}
 
 Nella versione beta sono incluse due regole di punteggio avanzate per la [funzione forum](functions.md#forum-function) (una per ogni componente forum e commenti della funzione forum):
 
