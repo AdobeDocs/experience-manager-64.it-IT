@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1855'
 ht-degree: 4%
 
 ---
-
 
 # Console di moderazione {#moderation-console}
 
@@ -49,7 +48,7 @@ Selezionando il collegamento Amministrazione, viene visualizzata la console Mode
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## Accesso all&#39;ambiente di authoring {#author-environment-access}
+## Accesso all’ambiente di authoring {#author-environment-access}
 
 Nell’ambiente di authoring, per raggiungere la console Moderazione
 
@@ -108,7 +107,7 @@ L&#39;area contenuto contiene informazioni per gli UGC pubblicati:
 >
 >L’area contenuto presenta un *scorrimento infinito*, che consente di continuare lo scorrimento fino alla fine del contenuto. La barra degli strumenti rimane in una posizione fissa e visibile sopra l’area contenuto anche durante lo scorrimento.
 
-### Barra dei filtri {#filter-rail}
+### Barra Filtro {#filter-rail}
 
 ![chlimage_1-472](assets/chlimage_1-472.png)
 
@@ -340,4 +339,3 @@ Per tornare alla visualizzazione dell’area contenuto di più post UGC, selezio
 Esempio:
 
 ![chlimage_1-488](assets/chlimage_1-488.png)
-
