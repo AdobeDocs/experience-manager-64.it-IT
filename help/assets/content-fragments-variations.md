@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Frammenti di contenuto
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 15%
@@ -49,7 +48,7 @@ Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifi
 >
 >Dopo la pubblicazione e/o il riferimento a un frammento, AEM un avviso quando un autore riapre il frammento per la modifica. In questo modo si avverte che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
-## Creazione di contenuti {#authoring-your-content}
+## Authoring dei contenuti {#authoring-your-content}
 
 Quando apri il frammento di contenuto per la modifica, la scheda **Variazioni** viene aperta per impostazione predefinita. Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Operazioni disponibili:
 
@@ -175,7 +174,7 @@ Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** v
 
 Per facilitare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
 
-### Riepilogo del testo {#summarizing-text}
+### Testo riepilogo {#summarizing-text}
 
 Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezza del testo a un numero predefinito di parole, mantenendo al tempo stesso i punti chiave e il significato generale.
 
@@ -238,7 +237,7 @@ Per annotare un frammento:
 
 1. Chiudi l’editor a schermo intero e **[!UICONTROL Salva]** il frammento.
 
-### Visualizzazione, modifica, eliminazione di annotazioni {#viewing-editing-deleting-annotations}
+### Visualizzazione, Modifica, Eliminazione Di Annotazioni {#viewing-editing-deleting-annotations}
 
 Annotazioni:
 
