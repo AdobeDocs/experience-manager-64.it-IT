@@ -10,10 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Frammenti di contenuto
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 2%
@@ -44,7 +43,7 @@ Il flusso di lavoro Crea e traduci include le seguenti opzioni. Le fasi procedur
 * Crea un nuovo progetto di traduzione: Per le fasi della procedura, consulta [Creare un nuovo progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
 * Aggiungi al progetto di traduzione esistente: Per le fasi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project).
 
-## Aggiorna il flusso di lavoro delle copie in lingua {#update-language-copies-workflow}
+## Aggiorna flusso di lavoro copie per lingua {#update-language-copies-workflow}
 
 Il flusso di lavoro per la copia in lingua di aggiornamento include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le attività.
 
@@ -53,7 +52,7 @@ Il flusso di lavoro per la copia in lingua di aggiornamento include le seguenti 
 
 È inoltre possibile creare copie in lingua temporanea per i frammenti in modo analogo a come si creano copie temporanee per le risorse. Per informazioni dettagliate, consulta [Creazione di copie in lingua temporanea per le risorse](translation-projects.md#creating-temporary-language-copies).
 
-## Traduzione di frammenti multimediali diversi {#translating-mixed-media-fragments}
+## Traduzione di frammenti di file multimediali diversi {#translating-mixed-media-fragments}
 
 AEM consente di tradurre frammenti di contenuto che includono vari tipi di risorse e raccolte multimediali. Se traduci un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
 
