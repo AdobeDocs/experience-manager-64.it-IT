@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2788'
-ht-degree: 5%
+source-wordcount: '2787'
+ht-degree: 4%
 
 ---
-
 
 # Funzionalità di configurazione di Analytics for Communities {#analytics-configuration-for-communities-features}
 
@@ -87,7 +86,7 @@ Per configurare le funzioni di Analytics for Communities, è necessario collabor
 
    Nome della suite di rapporti di Analytics da utilizzare
 
-## Suite di rapporti di Adobe Analytics per la generazione di rapporti video {#adobe-analytics-report-suite-for-video-reporting}
+## Suite di rapporti Adobe Analytics per la generazione di rapporti video {#adobe-analytics-report-suite-for-video-reporting}
 
 Utilizzando il [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) di Adobe Marketing Cloud, è possibile configurare le suite di rapporti di Analytics in modo che un sito community possa essere abilitato per fornire rapporti per le funzioni di Communities.
 
@@ -166,7 +165,7 @@ Per creare una nuova integrazione di Analytics, che integra Adobe Analytics con 
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
-### Finestra di dialogo di configurazione {#create-configuration-dialog}
+### Finestra di dialogo Crea configurazione {#create-configuration-dialog}
 
 * Seleziona l&#39;icona `[+]` accanto a **[!UICONTROL Configurazioni disponibili]** per creare una nuova configurazione
 
@@ -282,7 +281,7 @@ Lo scopo del framework è quello di mappare AEM variabili alle variabili di Anal
 
 ![chlimage_1-270](assets/chlimage_1-270.png)
 
-### Seleziona Suite di rapporti {#select-report-suite}
+### Seleziona suite di rapporti {#select-report-suite}
 
 Seleziona la suite di rapporti configurata per la generazione di rapporti video.
 
@@ -429,7 +428,7 @@ Se le variabili eVar ed eventi di Communities sovrascrivono le mappature esisten
 >
 >È importante eseguire il remap prima che il sito della community sia [pubblicato](#publishing-the-community-site) con Analytics abilitato, altrimenti c&#39;è il rischio di perdita di dati.
 
-#### Esempio 1: Trascinamento di Analytics evar14 nella tabella di mappatura {#example-step-dragging-analytics-evar-into-mapping-table}
+#### Esempio 1: Trascinamento dell’evar14 di Analytics nella tabella di mappatura {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -443,7 +442,7 @@ Se le variabili eVar ed eventi di Communities sovrascrivono le mappature esisten
 
 ## Pubblicazione del sito della community {#publishing-the-community-site}
 
-### Verificare Analytics per AEM mappatura variabile {#verify-analytics-to-aem-variable-mapping}
+### Verificare Analytics per AEM mappatura delle variabili {#verify-analytics-to-aem-variable-mapping}
 
 È opportuno verificare la mappatura delle variabili prima di pubblicare il sito community, che pubblica anche il servizio cloud e il framework di Analytics.
 
@@ -555,4 +554,3 @@ Adobe Analytics fornisce API che ti consentono di accedere, esportare ed elimina
 * Adobe Marketing Cloud: [Guida e riferimenti di Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrazione con Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics con fornitori esterni](../../help/sites-administering/external-providers.md)
-
