@@ -8,20 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptive Forms
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Moduli adattivi
+role: Admin
+exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-
 # Supporto di nuove impostazioni internazionali per la localizzazione di moduli adattivi {#supporting-new-locales-for-adaptive-forms-localization}
 
-## Informazioni sui dizionari locali {#about-locale-dictionaries}
+## Informazioni sui dizionari internazionali {#about-locale-dictionaries}
 
 La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
@@ -47,7 +46,7 @@ Una volta identificate le impostazioni internazionali, i moduli adattivi selezio
 
 Se non esiste una libreria client per le impostazioni internazionali richieste, cerca in una libreria client il codice della lingua presente nelle impostazioni internazionali. Ad esempio, se le impostazioni internazionali richieste sono `en_ZA` (Inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizzerà la libreria client per la lingua `en` (Inglese), se esiste. Tuttavia, se non ne esiste nessuna, il modulo adattivo utilizza il dizionario per le impostazioni internazionali `en`.
 
-## Aggiunta del supporto per la localizzazione per le impostazioni locali non supportate {#add-localization-support-for-non-supported-locales}
+## Aggiunta del supporto per la localizzazione per le impostazioni internazionali non supportate {#add-localization-support-for-non-supported-locales}
 
 AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi nelle impostazioni internazionali: inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR, cinese- (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
@@ -69,7 +68,7 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Aggiungi la libreria client XFA per un&#39;impostazione internazionale {#add-xfa-client-library-for-a-locale-br}
+### Aggiungere una libreria client XFA per le impostazioni internazionali {#add-xfa-client-library-for-a-locale-br}
 
 Crea un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria `xfaforms.I18N.<locale>` e aggiungi i seguenti file alla libreria client:
 
@@ -83,7 +82,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Aggiungere una libreria client per moduli adattivi per le impostazioni locali {#add-adaptive-form-client-library-for-a-locale-br}
+### Aggiungere una libreria client per moduli adattivi per le impostazioni internazionali {#add-adaptive-form-client-library-for-a-locale-br}
 
 Crea un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria come `guides.I18N.<locale>` e dipendenze come `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
 
@@ -100,7 +99,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Aggiungi il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary-br}
+### Aggiungere supporto per le impostazioni internazionali del dizionario {#add-locale-support-for-the-dictionary-br}
 
 Esegui questo passaggio solo se il `<locale>` che stai aggiungendo non è compreso tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
