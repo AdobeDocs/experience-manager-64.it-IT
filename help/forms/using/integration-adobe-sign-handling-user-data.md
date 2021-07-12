@@ -8,15 +8,14 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Adobe Sign
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Integrazione con Adobe Sign | Gestione dei dati utente {#integration-with-adobe-sign-handling-user-data}
 
@@ -26,7 +25,7 @@ Quando un firmatario o più firmatari firmano e inviano un modulo adattivo, vien
 
 Per ulteriori informazioni sull&#39;integrazione di AEM Forms con Adobe Sign, consulta [Uso di Adobe Sign in un modulo adattivo](/help/forms/using/working-with-adobe-sign.md).
 
-## Memorizzazione di dati e dati utente {#data}
+## Archiviazione dati e dati utente {#data}
 
 Il modulo adattivo abilitato per Adobe Sign include informazioni sui firmatari e può includere altri dati utente raccolti dal modulo adattivo. Il servizio Adobe Sign salva i dati utente con la firma all’interno del contratto. Il contratto viene salvato sul server Adobe Sign configurato in AEM Forms Cloud Services. Inoltre, se il modulo adattivo è configurato per utilizzare l’azione di invio di Forms Portal, i dati del contratto vengono salvati nell’archivio dati del portale dei moduli insieme ai dati del modulo.
 
