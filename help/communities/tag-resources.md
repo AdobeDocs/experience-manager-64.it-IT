@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
-
-# Assegnare tag alle risorse di abilitazione {#tagging-enablement-resources}
+# Risorse di abilitazione assegnazione tag {#tagging-enablement-resources}
 
 ## Panoramica {#overview}
 
@@ -96,7 +95,7 @@ apparirà in `Ski Catalog` dopo la pubblicazione della risorsa di abilitazione.
 
 ![chlimage_1-422](assets/chlimage_1-422.png)
 
-## Visualizzazione del catalogo su Pubblica {#viewing-catalog-on-publish}
+## Visualizzazione del catalogo in Pubblica {#viewing-catalog-on-publish}
 
 Una volta che tutto è stato configurato dall’ambiente di authoring e pubblicato, l’esperienza nell’utilizzo del catalogo per trovare le risorse di abilitazione può essere vissuta nell’ambiente di pubblicazione.
 
@@ -107,4 +106,3 @@ Se sono stati aggiunti e mancanti spazi dei nomi dei tag, assicurati che i tag e
 Se non vengono visualizzate risorse di abilitazione dopo aver selezionato un tag durante la visualizzazione del catalogo, accertati che alla risorsa di abilitazione sia applicato un tag dai namespace del catalogo.
 
 ![chlimage_1-423](assets/chlimage_1-423.png)
-
