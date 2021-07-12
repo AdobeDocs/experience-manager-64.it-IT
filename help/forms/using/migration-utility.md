@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
-
 
 # Migrare risorse e documenti AEM Forms {#migrate-aem-forms-assets-and-documents}
 
@@ -66,7 +65,7 @@ Per le attività di gestione della corrispondenza:
 * Le configurazioni del compositore risorse cambiano nelle configurazioni di Gestione Corrispondenza.
 * Le risorse vengono spostate in cartelle con nomi quali Testo esistente ed Elenco esistente.
 
-## Utilizzo dell&#39;utility di migrazione {#using-the-migration-utility}
+## Utilizzo dell’utility Migration {#using-the-migration-utility}
 
 ### Esecuzione dell&#39;utility di migrazione {#runningmigrationutility}
 
@@ -178,4 +177,3 @@ Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività 
 
 1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza dell’autore e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
 1. In AEM Forms 6.4 vengono modificati alcuni dei diritti dei gruppi di utenti dei moduli. Se desideri che uno qualsiasi dei tuoi utenti sia in grado di caricare XDP e Adaptive Forms contenenti script o utilizzare l&#39;editor di codice, devi aggiungerli al gruppo utenti di forms-power-users. Allo stesso modo, gli autori di modelli non possono più utilizzare l&#39;editor di codice nell&#39;editor di regole. Per consentire agli utenti di utilizzare l’editor di codice, aggiungili al gruppo af-template-script-writers. Per istruzioni su come aggiungere utenti ai gruppi, consulta [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
-
