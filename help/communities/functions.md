@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2542'
 ht-degree: 3%
 
 ---
-
 
 # Funzioni per community {#community-functions}
 
@@ -31,7 +30,7 @@ Una serie di funzioni della community sono immediatamente disponibili, come most
 >
 >Le console per la creazione di [siti della community](sites-console.md), [modelli di sito della community](sites.md), [modelli di gruppo della community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
-## Console funzioni community {#community-functions-console}
+## Console Funzioni community {#community-functions-console}
 
 Nell’ambiente di authoring, è possibile accedere alla console funzioni della community
 
@@ -162,7 +161,7 @@ Quando viene aggiunta a un modello, la configurazione consente di specificare i 
    * Se deselezionata, è possibile selezionare uno o più namespace consentiti per il sito community.
    * Il valore predefinito è selezionato.
 
-### Funzione di contenuto in primo piano {#featured-content-function}
+### Funzione di contenuto {#featured-content-function}
 
 La funzione di contenuto in primo piano è una pagina con un [componente Contenuto in primo piano](featured.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
@@ -202,7 +201,7 @@ risposte threadSe non è selezionato, il forum consente di inserire commenti su 
 * **[!UICONTROL Consenti]**
 contenuto in primo pianoSe questa opzione è selezionata, l&#39;idea può essere identificata come  [contenuto](featured.md) in primo piano. Il valore predefinito è selezionato.
 
-### Funzione dei gruppi {#groups-function}
+### Funzione Groups {#groups-function}
 
 >[!CAUTION]
 >
