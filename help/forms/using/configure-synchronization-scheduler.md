@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
-# Configurazione della pianificazione della sincronizzazione {#configuring-the-synchronization-scheduler}
+# Configurazione dell’utilità di pianificazione della sincronizzazione {#configuring-the-synchronization-scheduler}
 
 Per impostazione predefinita, la pianificazione della sincronizzazione viene eseguita dopo ogni 3 minuti per sincronizzare tutte le risorse modificate e aggiornate nell’archivio tramite LiveCycle Workbench 11. Le applicazioni contenenti moduli e risorse sono visibili nell’interfaccia utente di AEM Forms al termine del processo di sincronizzazione.
 
@@ -50,7 +49,7 @@ Puoi utilizzare l’opzione **Sincronizza risorse da archivio** per sincronizzar
 
    **Figura: finestra di dialogo** *Sincronizzazione*
 
-## Risoluzione dei problemi di errore di sincronizzazione {#troubleshooting-synchronization-error}
+## Errore di sincronizzazione della risoluzione dei problemi {#troubleshooting-synchronization-error}
 
 È possibile creare nuove applicazioni nella finestra di progettazione del flusso di lavoro (Workbench LiveCycle).
 
@@ -61,4 +60,3 @@ Per risolvere il conflitto, rinomina l’applicazione e sincronizza manualmente 
 ![Conflitti nella finestra di dialogo di sincronizzazione delle risorse](assets/sync-conflict.png)
 
 **Figura:** *conflitti nella finestra di dialogo di sincronizzazione delle risorse*
-
