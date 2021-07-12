@@ -1,18 +1,17 @@
 ---
 title: Configurare l’integrazione di AEM Assets con Experience Cloud
 description: Scopri come configurare l’integrazione di AEM Assets con Experience Cloud.
-feature: Asset Management
-role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: bf48918e9a549cb35dcbb32afa82ff1dd686402a
+feature: Gestione risorse
+role: User, Architect, Admin
+exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1017'
 ht-degree: 2%
 
 ---
 
-
-# Configurare l’integrazione AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# Configurare l’integrazione di AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Se sei un cliente Adobe Experience Cloud, puoi sincronizzare le tue risorse in Adobe Experience Manager Assets con Adobe Creative Cloud e viceversa. Puoi anche sincronizzare le tue risorse con Experience Cloud e vice versa. Puoi impostare questa sincronizzazione tramite [!DNL Adobe I/O]. Il nome aggiornato di [!DNL Adobe Marketing Cloud] è [!DNL Adobe Experience Cloud].
 
@@ -63,7 +62,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
    >
    >Assicurati di non copiare inavvertitamente il **[!UICONTROL Segreto applicazione]** invece del **[!UICONTROL ID applicazione]**.
 
-## Aggiungi una nuova configurazione all&#39;Experience Cloud {#add-a-new-configuration}
+## Aggiungi una nuova configurazione ad Experience Cloud {#add-a-new-configuration}
 
 1. Fai clic sul logo AEM sull&#39;interfaccia utente dell&#39;istanza AEM Assets locale e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services legacy]**.
 
@@ -101,7 +100,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 
 1. Fare clic su **[!UICONTROL Aggiorna]**. Sincronizza ora le risorse con l’istanza di AEM Assets.
 
-## Verifica la sincronizzazione {#test-the-synchronization}
+## Verificare la sincronizzazione {#test-the-synchronization}
 
 1. Fai clic sul logo AEM sull&#39;interfaccia utente dell&#39;istanza AEM Assets locale e passa a **[!UICONTROL Strumenti]**> **[!UICONTROL Implementazione]**> **[!UICONTROL Replica]**per individuare i profili di replica creati per la sincronizzazione.
 1. Nella pagina **[!UICONTROL Replica]**, fai clic su **[!UICONTROL Agenti sull&#39;autore]**.
@@ -112,7 +111,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 
 1. Al termine del resto della replica, controlla la presenza di un messaggio di successo alla fine dei risultati del test.
 
-## Aggiungi utenti all&#39;Experience Cloud {#add-users-to-experience-cloud}
+## Aggiungere utenti all’Experience Cloud {#add-users-to-experience-cloud}
 
 1. Accedi ad Experience Cloud utilizzando le credenziali di amministratore.
 1. Dalle barre, vai a **[!UICONTROL Amministrazione]** e fai clic su **[!UICONTROL Avvia Enterprise Dashboard]**.
@@ -165,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Best practice per l’integrazione di Assets e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Best practice per la condivisione delle cartelle da risorse a Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+* [Best practice per la condivisione delle cartelle da risorse a Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
