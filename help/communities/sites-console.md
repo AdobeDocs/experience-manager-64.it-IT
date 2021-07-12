@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f1408709-5402-4f55-bd37-9943fe828af0
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3241'
 ht-degree: 4%
 
 ---
-
 
 # Console Sites di Communities {#communities-sites-console}
 
@@ -113,17 +112,17 @@ Seleziona **[!UICONTROL Avanti]**
 
 Il pannello Progettazione contiene 2 pannelli secondari per la selezione del tema e del banner di branding:
 
-#### TEMA DEL SITO DELLA COMMUNITY {#community-site-theme}
+#### TEMA DEL SITO COMUNITARIO {#community-site-theme}
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-Il framework utilizza [Bootstrap Twitter](https://twitterbootstrap.org/) per portare un design reattivo e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di sito community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per portare un design dinamico e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di sito community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema viene sovrapposto con un segno di spunta blu opaco.
 
 Dopo la pubblicazione del sito community, è possibile [modificare le proprietà](#modifying-site-properties) e selezionare un tema diverso.
 
-#### MARCHIO DEL SITO COMMUNITY {#community-site-branding}
+#### MARCATURA DEL SITO COMMUNITY {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -166,7 +165,7 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano funz
 >
 >Questa operazione viene eseguita abilitando l’ ` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`per l’ambiente di authoring.
 
-#### GESTIONE UTENTI {#user-management}
+#### GESTIONE UTENTE {#user-management}
 
 ![createsitesettings-1](assets/createsitesettings-1.png)
 
@@ -202,7 +201,7 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano funz
 
 * **[!UICONTROL Consenti accesso social network: Facebook]**
 
-   Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le proprie credenziali account Facebook. La [configurazione cloud di Facebook](social-login.md#create-a-facebook-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo di membri del sito community una volta creato il sito community.
+   Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le credenziali del loro account Facebook. La [configurazione cloud Facebook](social-login.md#create-a-facebook-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo di membri del sito community una volta creato il sito community.
 
    Se questa opzione è deselezionata, non viene presentato alcun accesso a Facebook.
 
@@ -346,7 +345,7 @@ RenderSeleziona una delle seguenti opzioni
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
 
-#### ABILITAZIONE {#enablement}
+#### ABILITARE {#enablement}
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -542,7 +541,7 @@ Per informazioni dettagliate, consulta [Gestione di utenti e gruppi di utenti](u
 
 viene creato, il [servizio cloud Facebook](social-login.md#createafacebookcloudservice) applicato deve essere configurato per aggiungere utenti a questo gruppo.
 
-## Configura per l&#39;errore di autenticazione {#configure-for-authentication-error}
+## Configurazione per errore di autenticazione {#configure-for-authentication-error}
 
 Per impostazione predefinita, un sito della community effettua il reindirizzamento a una pagina di accesso di esempio quando l’utente immette le credenziali errate e non riesce ad accedere. Questo accesso di esempio non sarà presente su un [server di produzione](../../help/sites-administering/production-ready.md).
 
@@ -567,7 +566,7 @@ Per reindirizzare correttamente, dopo che un sito è stato configurato e inviato
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 
-### Reindirizzamento autenticazione test {#test-authentication-redirection}
+### Reindirizzamento dell&#39;autenticazione del test {#test-authentication-redirection}
 
 Nella stessa istanza di pubblicazione AEM configurata con una mappatura pagina di accesso per il sito della community:
 
@@ -588,4 +587,3 @@ Dalla console di navigazione globale Sites , i siti della community si trovano n
 Sebbene sia possibile accedere in questo modo a un sito della community, per attività amministrative, il sito della community è accessibile dalla console Sites di Communities.
 
 ![chlimage_1-470](assets/chlimage_1-470.png)
-
