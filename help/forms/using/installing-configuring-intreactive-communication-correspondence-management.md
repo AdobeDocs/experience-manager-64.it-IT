@@ -6,17 +6,16 @@ seo-description: 'Installa e configura AEM Forms Interactive Communications per 
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 5%
+source-wordcount: '1420'
+ht-degree: 6%
 
 ---
 
-
-# Installa e configura le comunicazioni interattive {#install-and-configure-interactive-communications}
+# Installare e configurare le comunicazioni interattive {#install-and-configure-interactive-communications}
 
 ## Introduzione {#introduction}
 
@@ -85,7 +84,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
  </tbody> 
 </table>
 
-## Installa il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
+## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene comunicazioni interattive AEM Forms, gestione della corrispondenza e altre funzionalità. Esegui i seguenti passaggi per installare il pacchetto aggiuntivo:
 
@@ -109,7 +108,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e facoltative. Le config
 
 ### Configurazioni obbligatorie post-installazione {#mandatory-post-installation-configurations}
 
-#### Configurare le librerie RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la delega delle librerie:
 
@@ -134,7 +133,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la d
 1. Salva e chiudi il file e avvia l’istanza AEM.
 1. Ripeti i passaggi 1-4 su tutte le istanze Author e Publish.
 
-#### Configura l&#39;agente di serializzazione {#configure-the-serialization-agent}
+#### Configura l’agente di serializzazione {#configure-the-serialization-agent}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere il pacchetto all’inserire nell&#39;elenco Consentiti:
 
@@ -156,7 +155,7 @@ Il pacchetto di compatibilità AEMFD consente di utilizzare le seguenti risorse 
 * Dizionari dati
 * Modelli e pagine obsolete per i moduli adattivi
 
-#### Configurare il Dispatcher {#configure-dispatcher}
+#### Configurare Dispatcher {#configure-dispatcher}
 
 Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico per AEM. AEM Dispatcher aiuta anche a proteggere AEM server dagli attacchi. Puoi aumentare la sicurezza dell’istanza AEM utilizzando Dispatcher insieme a un server web di classe enterprise. Se utilizzi [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), esegui le seguenti configurazioni per AEM Forms:
 
@@ -178,7 +177,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
 AEM forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per fornire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Per utilizzare Adobe Target per personalizzare una comunicazione interattiva, [Integra Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configurare la comunicazione SSL per il modello dati modulo {#configure-ssl-communcation-for-form-data-model}
+#### Configurare la comunicazione SSL per il modello dati del modulo  {#configure-ssl-communcation-for-form-data-model}
 
 È possibile abilitare la comunicazione SSL per il modello dati modulo. Per abilitare la comunicazione SSL per il modello dati modulo, prima di avviare un’istanza AEM Forms, aggiungi i certificati a Java Trust Store di tutte le istanze. Puoi eseguire il comando seguente per aggiungere i certificati:
 
@@ -193,4 +192,3 @@ Hai configurato un ambiente per utilizzare le funzionalità di comunicazione int
 * [Creare una comunicazione interattiva](/help/forms/using/create-interactive-communication.md)
 
 * [Creare una lettera di gestione della corrispondenza](/help/forms/using/create-letter.md)
-
