@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 9%
 
 ---
-
 
 # Installa il pacchetto di compatibilità {#compatibility-package}
 
@@ -36,7 +35,7 @@ Il pacchetto di compatibilità di AEMFD consente di utilizzare le seguenti risor
 
 Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.4 installando il pacchetto di compatibilità](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Aggiungere supporto per le risorse AEM Forms 6.3 e 6.2 in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Supporto per risorse AEM Forms 6.3 e 6.2 in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Dopo aver eseguito un aggiornamento, procedi come segue per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.4:
 
@@ -51,7 +50,7 @@ Assicurati di avere [AEM pacchetto di compatibilità](/help/sites-deploying/back
 
    Per ulteriori informazioni, consulta [utility di migrazione](/help/forms/using/migration-utility.md).
 
-## Risorse rese compatibili con AEM Forms 6.4 installando il pacchetto di compatibilità {#assetsmadecompatible}
+## Risorse rese compatibili con AEM Forms 6.4 mediante l’installazione del pacchetto di compatibilità {#assetsmadecompatible}
 
 Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM Forms 6.4 le risorse e i modelli seguenti:
 
@@ -78,4 +77,3 @@ Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM For
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenregistrazione
    * /libs/fd/afaddon/components/page/advancedensubscription
-
