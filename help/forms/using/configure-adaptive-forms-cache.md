@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
-
 
 # Configurare la cache dei moduli adattivi {#configure-adaptive-forms-cache}
 
@@ -30,7 +29,7 @@ Una cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la la
 >
 >Durante lo sviluppo di componenti personalizzati, sul server utilizzato per lo sviluppo, tieni disabilitata la cache dei moduli adattivi.
 
-## Configura la cache {#configure-the-cache}
+## Configurare la cache {#configure-the-cache}
 
 Esegui i seguenti passaggi per configurare la cache dei moduli adattivi:
 
@@ -45,4 +44,3 @@ Esegui i seguenti passaggi per configurare la cache dei moduli adattivi:
    ![Finestra di dialogo di configurazione per la cache HTML dei moduli adattivi](assets/cache-configuration-edit.png)
 
 1. Fai clic su **Salva** per salvare la configurazione.
-
