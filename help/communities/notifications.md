@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
-
 
 # Notifiche di Communities {#communities-notifications}
 
@@ -114,4 +113,3 @@ Quando visiti il sito pubblicato, selezionando il collegamento `Notifications` v
 Quando il canale e-mail è abilitato, il membro riceve un messaggio e-mail contenente un collegamento al contenuto sul web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
-
