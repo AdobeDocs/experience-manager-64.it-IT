@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1642'
 ht-degree: 2%
 
 ---
-
 
 # Console Gruppi per community {#community-groups-console}
 
@@ -97,11 +96,11 @@ Da questa console Gruppi è possibile creare nuovi gruppi.
 
 ### Passaggio 2: Progettazione {#step-design}
 
-#### TEMA DEL GRUPPO DELLA COMMUNITY {#community-group-theme}
+#### TEMA DEL GRUPPO COMUNITARIO {#community-group-theme}
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-Il framework utilizza [Bootstrap Twitter](https://twitterbootstrap.org/) per portare un design reattivo e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per portare un design dinamico e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema viene sovrapposto con un segno di spunta blu opaco.
 
@@ -109,7 +108,7 @@ Quando è selezionato, il tema viene sovrapposto con un segno di spunta blu opac
 
 Dopo la pubblicazione del sito community, è possibile [modificare le proprietà](#modifying-group-properties) e selezionare un tema diverso.
 
-#### MARCHIO DEL GRUPPO COMMUNITY {#community-group-branding}
+#### MARCHIO DEL GRUPPO COMUNITARIO {#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
