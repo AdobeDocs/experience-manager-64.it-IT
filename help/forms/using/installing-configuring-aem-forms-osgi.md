@@ -7,10 +7,9 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Administrator
+role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-translation-type: tm+mt
-source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 4%
@@ -88,7 +87,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
  </tbody> 
 </table>
 
-## Installa il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
+## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene l’acquisizione di dati AEM Forms e altre funzionalità. Esegui i seguenti passaggi per installare il pacchetto aggiuntivo:
 
@@ -112,7 +111,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e facoltative. Le config
 
 ### Configurazioni obbligatorie post-installazione {#mandatory-post-installation-configurations}
 
-#### Configurare le librerie RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la delega delle librerie:
 
@@ -137,7 +136,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la d
 1. Salva e chiudi il file e avvia l’istanza AEM.
 1. Ripeti i passaggi 1-4 su tutte le istanze Author e Publish.
 
-#### Configura l&#39;agente di serializzazione {#configure-the-serialization-agent}
+#### Configura l’agente di serializzazione {#configure-the-serialization-agent}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere il pacchetto all’inserire nell&#39;elenco Consentiti:
 
@@ -148,7 +147,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere i
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 
-#### Configurare il Dispatcher {#configure-dispatcher}
+#### Configurare Dispatcher {#configure-dispatcher}
 
 Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico per AEM. AEM Dispatcher aiuta anche a proteggere AEM server dagli attacchi. Puoi aumentare la sicurezza dell’istanza AEM utilizzando Dispatcher insieme a un server web di classe enterprise. Se utilizzi [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), esegui le seguenti configurazioni per AEM Forms:
 
@@ -164,7 +163,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
    Accedi al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **[!UICONTROL Configurazioni]**, seleziona l&#39;opzione **[!UICONTROL Filtro di riferimento Apache Sling]** . Nel campo Consenti host , immetti il nome host del dispatcher per consentirlo come referrer e fai clic su **[!UICONTROL Salva]**. Il formato della voce è `https://[server]:[port]`.
 
-#### Configura la cache {#configure-cache}
+#### Configura cache {#configure-cache}
 
 La memorizzazione in cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo.
 
@@ -180,7 +179,7 @@ Esegui i seguenti passaggi per configurare la cache dei moduli adattivi:
    >
    >Per disabilitare la cache, imposta il valore nel campo Numero di Forms adattivo su **0**. La cache viene reimpostata e tutti i moduli e i documenti vengono rimossi dalla cache quando si disabilita o si modifica la configurazione della cache.
 
-#### Configurare la comunicazione SSL per il modello dati modulo {#configure-ssl-communcation-for-form-data-model}
+#### Configurare la comunicazione SSL per il modello dati del modulo {#configure-ssl-communcation-for-form-data-model}
 
 È possibile abilitare la comunicazione SSL per il modello dati modulo. Per abilitare la comunicazione SSL per il modello dati modulo, prima di avviare un’istanza AEM Forms, aggiungi i certificati a Java Trust Store di tutte le istanze. Puoi eseguire il comando seguente per aggiungere i certificati: &quot;
 
