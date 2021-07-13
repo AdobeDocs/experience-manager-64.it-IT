@@ -3,9 +3,9 @@ title: Configurare i plug-in Editor Rich Text
 description: Scopri come configurare i plug-in dell’editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4216'
+source-wordcount: '4210'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Dopo aver attivato un plug-in, segui queste linee guida per configurare la propr
   <tr> 
    <td><strong>Tipo</strong></td> 
    <td>Stringa</td> 
-   <td>String[] (stringa multipla; impostare Tipo su Stringa e fare clic su Multi in CRXDE Lite)</td> 
+   <td>String (multi-stringa; impostare Tipo su Stringa e fare clic su Multi in CRXDE Lite)</td> 
    <td>Stringa</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Dopo aver attivato un plug-in, segui queste linee guida per configurare la propr
  </tbody> 
 </table>
 
-## Comprendere il plug-in più recente {#understand--findreplace-plugin}
+## Comprendere il plug-in più recente {#understand-findreplace-plugin}
 
 Il plug-in `findreplace` non richiede alcuna configurazione. Funziona fuori dagli schemi.
 
@@ -96,7 +96,7 @@ Quando si utilizza la funzionalità di sostituzione, la stringa di sostituzione 
 
 La finestra di dialogo trova e sostituisci diventa trasparente quando si fa clic su trova e diventa opaca quando si fa clic su sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore. Se gli utenti fanno clic su sostituisci tutto, la finestra di dialogo viene chiusa e viene visualizzato il numero di sostituzioni effettuate.
 
-## Configurare le modalità Incolla {#pastemodes}
+## Configurare le modalità Incolla {#paste-modes}
 
 Quando si utilizza l’editor Rich Text, gli autori possono incollare i contenuti in una delle tre modalità seguenti:
 
@@ -106,7 +106,7 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare i contenut
 
 * **Modalità** MS Word: Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e mantiene solo la formattazione parziale.
 
-### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’Editor Rich Text  {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’Editor Rich Text  {#configure-paste-options-toolbar}
 
 Puoi fornire alcune, tutte o nessuna di queste tre icone agli autori nella barra degli strumenti dell’editor Rich Text:
 
@@ -122,7 +122,7 @@ Per configurare l’editor Rich Text per visualizzare le icone richieste, effett
 1. Passa al nodo `rtePlugins/edit`. Consulta [attivare un plug-in](#activateplugin) se il nodo non esiste.
 1. Crea la proprietà `features` sul nodo `edit` e aggiungi una o più funzioni. Salva tutte le modifiche.
 
-### Configurare il comportamento dell’icona Incolla (Ctrl+V) e della scelta rapida {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configurare il comportamento dell’icona Incolla (Ctrl+V) e della scelta rapida {#configure-paste-icon-shortcut}
 
 Puoi preconfigurare il comportamento dell’icona **[!UICONTROL Incolla (Ctrl+V)]** seguendo i passaggi seguenti. Questa configurazione definisce anche il comportamento della scelta rapida da tastiera Ctrl+V che gli autori utilizzano per incollare il contenuto.
 
@@ -141,14 +141,14 @@ La configurazione consente i seguenti tre tipi di casi d’uso:
    * **Tipo** `String`
    * **** ValueUna delle modalità di incolla richieste  `browser`,  `plaintext` o  `wordhtml`.
 
-### Configurare i formati consentiti per incollare il contenuto {#pasteformats}
+### Configurare i formati consentiti per incollare il contenuto {#paste-formats}
 
 È possibile configurare ulteriormente la modalità incolla-come-Microsoft-Word (`paste-wordhtml`) in modo da poter definire in modo esplicito gli stili consentiti quando si incollano AEM da un altro programma, ad esempio Microsoft Word.
 
 Ad esempio, se è consentito incollare solo formati ed elenchi in grassetto, è possibile filtrare gli altri formati. Questa operazione è denominata filtro di incolla configurabile, che può essere eseguito per entrambi:
 
-* [Testo](#pastemodes)
-* [Collegamenti](#linkstyles)
+* [Testo](#paste-modes)
+* [Collegamenti](#link-styles)
 
 Per i collegamenti è inoltre possibile definire i protocolli accettati automaticamente.
 
@@ -212,7 +212,7 @@ Di seguito è riportato un esempio di struttura `htmlPasteRules` valida.
 }
 ```
 
-## Configurare gli stili di testo {#textstyles}
+## Configurare gli stili di testo {#text-styles}
 
 Gli autori possono applicare gli stili per modificare l’aspetto di una parte di testo. Gli stili si basano sulle classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l’attributo `class` per fare riferimento alla classe CSS. Esempio, `<span class=monospaced>Monospaced Text Here</span>`.
 
@@ -226,9 +226,9 @@ Per configurazioni successive, ad esempio per aggiungere altri stili, seguire so
 
 >[!NOTE]
 >
->È possibile definire gli stili per le tabelle o le celle di tabella [o](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Queste configurazioni richiedono procedure separate.
+>È possibile definire gli stili per le tabelle o le celle di tabella [o](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles). Queste configurazioni richiedono procedure separate.
 
-### Attiva l’elenco a discesa Stile {#styleselectorlist}
+### Attiva l’elenco a discesa Stile {#style-selector-list}
 
 A questo scopo, abilita il plug-in Stili.
 
@@ -245,7 +245,7 @@ A questo scopo, abilita il plug-in Stili.
 >
 >Una volta abilitato il plug-in Stili, l’elenco a discesa Stile viene visualizzato nella finestra di dialogo di modifica. Tuttavia, l’elenco è vuoto in quanto non è configurato alcun stile.
 
-### Specificare la posizione del foglio di stile {#locationofstylesheet}
+### Specificare la posizione del foglio di stile {#location-stylesheet}
 
 Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare riferimento:
 
@@ -262,21 +262,19 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
 
 1. Salva tutte le modifiche.
 
->[!NOTE]
->
->Quando si utilizza l’editor Rich Text in una finestra di dialogo (interfaccia classica) È possibile specificare fogli di stile ottimizzati per la modifica di testo RTF. A causa di limitazioni tecniche, il contesto CSS viene perso nell’editor, quindi potrebbe essere utile emulare questo contesto per migliorare l’esperienza WYSIWYG.
->
->L’editor Rich Text utilizza un elemento DOM contenitore con ID `CQrte` che può essere utilizzato per fornire stili diversi per la visualizzazione e la modifica:
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+Quando utilizzi l’editor Rich Text in una finestra di dialogo (interfaccia classica), puoi specificare fogli di stile ottimizzati per la modifica di testo RTF. A causa di limitazioni tecniche, il contesto CSS viene perso nell’editor, quindi puoi emulare questo contesto per migliorare l’esperienza WYSIWYG. L’editor Rich Text utilizza un elemento DOM contenitore con un ID `CQrte` che può essere utilizzato per fornire stili diversi per la visualizzazione e la modifica:
 
-### Specificare gli stili disponibili nell&#39;elenco a comparsa {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. Nella definizione del componente, accedi al nodo `<rtePlugins-node>/styles`, come creato in [Abilitazione del selettore a discesa Stile](#styleselectorlist).
+#CQrte td {
+// defines the style for editing }
+```
+
+### Specificare gli stili disponibili nell&#39;elenco a comparsa {#styles-popup-list}
+
+1. Nella definizione del componente, accedi al nodo `<rtePlugins-node>/styles`, come creato in [Abilitazione del selettore a discesa Stile](#style-selector-list).
 1. Sotto il nodo `styles`, crea un nuovo nodo (detto anche `styles`) per mantenere l’elenco disponibile:
 
    * **Nome** `styles`
@@ -303,7 +301,7 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
 
    Ripeti i passaggi precedenti per ogni stile richiesto.
 
-## Configurare i formati paragrafo {#paraformats}
+## Configurare i formati paragrafo {#para-formats}
 
 Qualsiasi testo creato nell’editor Rich Text viene inserito all’interno di un tag di blocco, il valore predefinito è `<p>`. Attivando il plug-in `paraformat` , è possibile specificare tag blocco aggiuntivi da assegnare ai paragrafi mediante un elenco a discesa di selezione. I formati paragrafo determinano il tipo di paragrafo assegnando il tag blocco corretto. L’autore può selezionarli e assegnarli utilizzando il selettore Formato. I tag blocco di esempio includono, tra gli altri, il paragrafo standard &lt;p>, i titoli &lt;h1>, &lt;h2> e così via.
 
@@ -322,9 +320,9 @@ Quando il plug-in Formati paragrafo è attivato per la prima volta, non sono dis
 
 Per configurazioni successive, ad esempio per aggiungere altri formati, seguire solo la parte pertinente delle istruzioni.
 
-### Attiva il selettore a discesa Formato {#formatselectorlist}
+### Attiva il selettore a discesa Formato {#format-selector-list}
 
-Per prima cosa, abilita il plug-in paraformat:
+Per prima cosa, abilita il plug-in `paraformat`:
 
 1. Nel componente , accedi al nodo `<rtePlugins-node>/paraformat`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Crea la proprietà `features` sul nodo `paraformat` :
@@ -345,11 +343,11 @@ Se il plug-in non è configurato ulteriormente, vengono abilitati i seguenti for
 >[!CAUTION]
 Durante la configurazione dei formati di paragrafo dell’editor Rich Text, non rimuovere il tag paragrafo &lt;p> come opzione di formattazione. Se il tag &lt;p> viene rimosso, l’autore del contenuto non può selezionare l’opzione **Formati di paragrafo** anche se sono configurati altri formati.
 
-### Specificare i formati paragrafo disponibili {#paraformatsindropdown}
+### Specificare i formati paragrafo disponibili {#para-formats-popup}
 
 I formati paragrafo possono essere resi disponibili per la selezione:
 
-1. Nella definizione del componente, accedi al nodo `<rtePlugins-node>/paraformat`, come creato in [Abilitazione del selettore a discesa del formato](#styleselectorlist).
+1. Nella definizione del componente, accedi al nodo `<rtePlugins-node>/paraformat`, come creato in [Abilitazione del selettore a discesa del formato](#style-selector-list).
 1. Sotto il nodo `paraformat` crea un nuovo nodo, per contenere l&#39;elenco dei formati:
 
    * **Nome** `formats`
@@ -381,7 +379,7 @@ I formati paragrafo possono essere resi disponibili per la selezione:
 >[!CAUTION]
 Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, `<h2>` e `<h3>`) vengono rimossi. Ricrea il formato `<p>` in quanto è il formato predefinito.
 
-## Configurare caratteri speciali {#spchar}
+## Configurare caratteri speciali {#special-char}
 
 In un&#39;installazione AEM standard, quando il plug-in `misctools` è abilitato per caratteri speciali (`specialchars`) è immediatamente disponibile per l&#39;uso una selezione predefinita; ad esempio, i simboli di copyright e marchio.
 
@@ -390,7 +388,7 @@ Puoi configurare l’editor Rich Text per rendere disponibile una tua selezione 
 >[!CAUTION]
 L’aggiunta di caratteri speciali personalizzati sostituisce la selezione predefinita. Se necessario, (ri)definisci questi caratteri nella tua selezione.
 
-### Definire un singolo carattere {#definesinglechar}
+### Definire un singolo carattere {#define-single-char}
 
 1. Nel componente , accedi al nodo `<rtePlugins-node>/misctools`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Crea la proprietà `features` sul nodo `misctools` :
@@ -430,9 +428,9 @@ Una volta salvata la proprietà, il carattere rappresentato viene visualizzato i
 
 
 
-### Definire un intervallo di caratteri {#definerangechar}
+### Definire un intervallo di caratteri {#define-range-char}
 
-1. Utilizza i passaggi da 1 a 3 di [Definizione di un singolo carattere](#definesinglechar).
+1. Utilizza i passaggi da 1 a 3 di [Definizione di un singolo carattere](#define-single-char).
 1. Sotto `chars` aggiungi un nuovo nodo per contenere la definizione dell&#39;intervallo di caratteri:
 
    * **** Il nome può essere specificato, ma deve riflettere l’intervallo di caratteri; per esempio, matite.
@@ -462,7 +460,7 @@ Una volta salvata la proprietà, il carattere rappresentato viene visualizzato i
 
          *I caratteri speciali disponibili nell’editor Rich Text vengono visualizzati agli autori in una finestra a comparsa*
 
-## Configurare gli stili di tabella {#tablestyles}
+## Configurare gli stili di tabella {#table-styles}
 
 Gli stili vengono in genere applicati al testo, ma è possibile applicare un set separato di Stili anche a una tabella o a alcune celle della tabella. Tali stili sono disponibili per gli autori dalla casella di selezione Stile della finestra di dialogo Proprietà cella o Proprietà tabella. Gli stili sono disponibili quando si modifica una tabella all’interno di un componente Testo (o derivato) e non nel componente Tabella standard.
 
@@ -488,12 +486,12 @@ Le tabelle copiate e incollate nel componente RTE o dal componente RTE dipendono
       * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
 
-1. Definisci la posizione dei fogli di stile CSS in modo da farvi riferimento. Vedere [Specifica della posizione del foglio di stile](#locationofstylesheet) come quando si definiscono gli stili [per il testo](#textstyles). La posizione può essere definita se hai definito altri stili.
+1. Definisci la posizione dei fogli di stile CSS in modo da farvi riferimento. Vedere [Specifica della posizione del foglio di stile](#location-stylesheet) come quando si definiscono gli stili [per il testo](#text-styles). La posizione può essere definita se hai definito altri stili.
 1. Sotto il nodo `table` crea i seguenti nuovi nodi (come richiesto):
 
    * Per definire gli stili per l’intera tabella (disponibile in **Proprietà tabella**):
 
-      * **Nome** `tableStyles`
+      * **Nome** `table-styles`
       * **Tipo** `cq:WidgetCollection`
    * Per definire gli stili per le singole celle (disponibile in **Proprietà cella**):
 
@@ -501,7 +499,7 @@ Le tabelle copiate e incollate nel componente RTE o dal componente RTE dipendono
       * **Tipo** `cq:WidgetCollection`
 
 
-1. Crea un nuovo nodo (sotto il nodo `tableStyles` o `cellStyles` a seconda dei casi) per rappresentare un singolo stile:
+1. Crea un nuovo nodo (sotto il nodo `table-styles` o `cellStyles` a seconda dei casi) per rappresentare un singolo stile:
 
    * **** È possibile specificare il nome, ma deve riflettere lo stile.
    * **Tipo** `nt:unstructured`
@@ -524,25 +522,25 @@ Le tabelle copiate e incollate nel componente RTE o dal componente RTE dipendono
 
 Ripeti i passaggi precedenti per ogni stile richiesto.
 
-### Configurare intestazioni nascoste nelle tabelle per l’accessibilità {#hiddenheader}
+### Configurare intestazioni nascoste nelle tabelle per l’accessibilità {#hidden-header}
 
 A volte è possibile creare tabelle di dati senza testo visivo in un’intestazione di colonna, partendo dal presupposto che lo scopo dell’intestazione sia determinato dalla relazione visiva della colonna con altre colonne. In questo caso, è necessario fornire un testo interno nascosto all’interno della cella di intestazione per consentire agli assistenti vocali e altre tecnologie per l’accessibilità di comprendere lo scopo della colonna.
 
 Per migliorare l’accessibilità in tali scenari, l’editor Rich Text supporta celle di intestazione nascoste. Inoltre, fornisce le impostazioni di configurazione relative alle intestazioni nascoste nelle tabelle. Queste impostazioni consentono di applicare stili CSS sulle intestazioni nascoste nelle modalità di modifica e anteprima. Per aiutare gli autori a identificare le intestazioni nascoste nella modalità di modifica, includi nel codice i seguenti parametri:
 
-* `hiddenHeaderEditingCSS`: Specifica il nome della classe CSS applicata alla cella di intestazione nascosta quando viene modificato l’editor Rich Text.
-* `hiddenHeaderEditingStyle`: Specifica una stringa di stile applicata alla cella di intestazione nascosta quando viene modificato l’editor Rich Text.
+* `hidden-headerEditingCSS`: Specifica il nome della classe CSS applicata alla cella di intestazione nascosta quando viene modificato l’editor Rich Text.
+* `hidden-headerEditingStyle`: Specifica una stringa di stile applicata alla cella di intestazione nascosta quando viene modificato l’editor Rich Text.
 
 Se si specificano sia il CSS che la stringa di stile nel codice, la classe CSS ha la precedenza sulla stringa di stile e può sovrascrivere eventuali modifiche di configurazione apportate dalla stringa di stile.
 
 Per aiutare gli autori ad applicare CSS sulle intestazioni nascoste nella modalità di anteprima, puoi includere nel codice i seguenti parametri:
 
-* `hiddenHeaderClassName`: Specifica il nome della classe CSS applicata alla cella di intestazione nascosta in modalità anteprima.
-* `hiddenHeaderStyle`: Specifica una stringa di stile applicata alla cella di intestazione nascosta in modalità anteprima.
+* `hidden-headerClassName`: Specifica il nome della classe CSS applicata alla cella di intestazione nascosta in modalità anteprima.
+* `hidden-headerStyle`: Specifica una stringa di stile applicata alla cella di intestazione nascosta in modalità anteprima.
 
 Se si specificano sia il CSS che la stringa di stile nel codice, la classe CSS ha la precedenza sulla stringa di stile e può sovrascrivere eventuali modifiche di configurazione apportate dalla stringa di stile.
 
-## Aggiungere dizionari per il controllo ortografia {#adddict}
+## Aggiungere dizionari per il controllo ortografia {#add-dict}
 
 Quando il plug-in per il controllo ortografia viene attivato, l’editor Rich Text utilizza dizionari per ogni lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito web, scegliendo la proprietà language della struttura secondaria o estraendo la lingua dall’URL; ad esempio. il ramo `/en/` viene selezionato come inglese, il ramo `/de/` come tedesco.
 
@@ -570,7 +568,7 @@ Un&#39;installazione standard AEM include i dizionari per inglese americano (`en
 Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo. Per eseguire il controllo ortografico, fai clic su [!UICONTROL Controllo ortografia] nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
 Se si incorpora una modifica suggerita dal controllo ortografia, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, toccare/fare di nuovo clic sul pulsante Controllo ortografia.
 
-## Configurare le dimensioni della cronologia per le azioni di annullamento e ripristino {#undohistory}
+## Configurare le dimensioni della cronologia per le azioni di annullamento e ripristino {#undo-history}
 
 L’editor Rich Text consente agli autori di annullare o ripristinare alcune ultime modifiche. Per impostazione predefinita, nella cronologia sono memorizzate 50 modifiche. Puoi configurare questo valore come necessario.
 
@@ -586,20 +584,20 @@ L’editor Rich Text consente agli autori di annullare o ripristinare alcune ult
 
 1. Salva le modifiche.
 
-## Configurare le dimensioni della scheda {#tabsize}
+## Configurare le dimensioni della scheda {#tab-size}
 
 Quando si preme il carattere di tabulazione all’interno di un testo, viene inserito un numero predefinito di spazi; per impostazione predefinita sono presenti tre spazi unificatori e uno spazio. Per definire la dimensione della scheda:
 
 1. Nel componente , accedi al nodo `<rtePlugins-node>/keys`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Sul nodo `keys` crea la proprietà:
 
-   * **Nome** `tabSize`
+   * **Nome** `tab-size`
    * **Tipo** `String`
    * **** Valutare il numero di caratteri di spazio da utilizzare per il tabulatore
 
 1. Salva le modifiche.
 
-## Imposta margine di rientro {#indentmargin}
+## Imposta margine di rientro {#indent-margin}
 
 Quando il rientro è abilitato (impostazione predefinita), è possibile definire le dimensioni del rientro:
 
@@ -613,7 +611,7 @@ Questa dimensione del rientro è applicata solo ai paragrafi (blocchi) di testo;
    * **Tipo**: `Long`
    * **Valore**: numero di pixel richiesti per il margine di rientro
 
-## Configurare l’altezza dello spazio modificabile {#editablespace}
+## Configurare l’altezza dello spazio modificabile {#editable-space}
 
 Puoi definire l’altezza dello spazio modificabile visualizzato nella finestra di dialogo del componente:
 
@@ -631,7 +629,7 @@ Puoi definire l’altezza dello spazio modificabile visualizzato nella finestra 
 >[!NOTE]
 Questa opzione è applicabile solo quando si utilizza l’editor Rich Text in una finestra di dialogo (non per la modifica locale nell’interfaccia classica).
 
-## Configurazione di stili e protocolli per i collegamenti {#linkstyles}
+## Configurazione di stili e protocolli per i collegamenti {#link-styles}
 
 Quando aggiungi collegamenti in AEM puoi definire:
 
