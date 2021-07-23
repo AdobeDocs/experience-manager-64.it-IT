@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Flusso di lavoro, rappresentazioni
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 4%
@@ -37,7 +37,7 @@ I seguenti gestori di contenuti multimediali sono disponibili in Experience Mana
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>applicazione/illustratore</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Quando carichi un file MP3, questo viene [elaborato utilizzando una libreria di terze parti](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La libreria calcola una lunghezza approssimativa non accurata se il MP3 ha un bitrate variabile (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Quando carichi un file MP3, questo viene [elaborato utilizzando una libreria di terze parti](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La libreria calcola una lunghezza approssimativa non accurata se il MP3 ha un bitrate variabile (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | immagine/immagine |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>applicazione/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>immagine/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -446,8 +446,8 @@ Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in
 
 * Trasformazione EPS e AI utilizzando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/)
 * transcodifica video FLV tramite [FFmpeg](https://ffmpeg.org/)
-* Codifica MP3 con [LAME](http://lame.sourceforge.net/)
-* Elaborazione audio tramite [SOX](http://sox.sourceforge.net/)
+* Codifica MP3 con [LAME](https://lame.sourceforge.net/)
+* Elaborazione audio tramite [SOX](https://sox.sourceforge.net/)
 
 >[!NOTE]
 >
