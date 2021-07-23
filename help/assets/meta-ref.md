@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadati
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 3%
@@ -22,7 +22,7 @@ I metadati Dublin Core forniscono un set standardizzato di convenzioni per la de
 
 Il semplice set di elementi di metadati di base di Dublino (DCMES) contiene 15 elementi di metadati, come indicato nella tabella seguente. Ogni elemento Dublin Core è facoltativo e può essere ripetuto. Puoi aggiungere o eliminare le informazioni sui metadati di base di Dublino come faresti per i metadati specifici per i tipi di file multimediali.
 
-Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa di base di Dublino. Per ulteriori informazioni, consulta l’ [Iniziativa di base di Dublino](http://dublincore.org/) .
+Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa di base di Dublino. Per ulteriori informazioni, consulta l’ [Iniziativa di base di Dublino](https://dublincore.org/) .
 
 | Proprietà | Descrizione |
 |---|---|
