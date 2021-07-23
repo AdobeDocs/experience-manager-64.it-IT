@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: Gestione risorse, rappresentazioni
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1464'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ Come best practice per il dimensionamento delle immagini, utilizza `&wid=<value>
 
 La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Prenditi del tempo per saperne di più su come funziona la nitidezza e la maschera di contrasto in AEM facendo riferimento alla guida [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) che si applica anche a AEM.
 
-Vedere anche [Nitidezza di un&#39;immagine con maschera di contrasto](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Vedere anche [Nitidezza di un&#39;immagine con maschera di contrasto](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
 Con AEM è possibile aumentare la nitidezza delle immagini durante l’acquisizione, la distribuzione o entrambe. Nella maggior parte dei casi, tuttavia, è necessario rendere più nitide le immagini utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini sulla consegna, su un URL, in genere fornisce i risultati migliori.
 
