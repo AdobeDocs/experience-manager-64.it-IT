@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '10393'
+source-wordcount: '10335'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
@@ -276,12 +276,12 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video flusso di lavoro, **[!UICONTROL Codifica video elementi multimediali dinamici]** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Media e hai impostato i servizi Video Cloud, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Media]** ha effetto automaticamente al momento di caricare un video. (Se non utilizzi Dynamic Media, il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** ha effetto.)
 
-Di seguito sono riportati alcuni suggerimenti utili per la codifica dei file video di origine.
+<!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
-Per consigli sulla codifica video, consulta:
+For advice about video encoding, see the following:
 
-* Articolo: *Streaming 101: Nozioni di base: codec, larghezza di banda, velocità dati e risoluzione:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* Video: *Nozioni di base sulla codifica video:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### File video di origine {#source-video-files}
 
@@ -411,7 +411,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
    <td><p>Origine</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificato</p> </td> 
