@@ -2,16 +2,15 @@
 title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
 description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Assegnazione tag, metadati
 role: Architect, Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Gestire i metadati delle risorse digitali {#managing-metadata-for-digital-assets}
 
@@ -138,7 +137,7 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadati del Digital Rights Management {#digital-rights-management-metadata}
+### Metadati Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -158,16 +157,16 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 ### Metadati specifici per la stampa {#print-specific-metadata}
 
 * PDF e PDF/X - Adobe PDF e applicazioni di terze parti.
-* PRISM - [Requisiti di pubblicazione per metadati standard di settore](https://www.prismstandard.org).
+* PRISM - [Requisiti di pubblicazione per metadati standard di settore](http://www.prismstandard.org/specifications/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per il testo di paging.
 
-### Metadati multimediali specifici {#multimedia-specific-metadata}
+### Metadati specifici per contenuti multimediali {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Gestione dei supporti.
 
-## Flussi di lavoro basati su metadati {#metadata-driven-workflows}
+## Workflow basati su metadati {#metadata-driven-workflows}
 
 La creazione di flussi di lavoro basati su metadati consente di automatizzare alcuni processi, migliorando l’efficienza. In un flusso di lavoro basato su metadati, il sistema di gestione del flusso di lavoro legge il flusso di lavoro e, di conseguenza, esegue alcune azioni predefinite. Ad esempio, alcuni dei modi per utilizzare flussi di lavoro basati su metadati:
 
