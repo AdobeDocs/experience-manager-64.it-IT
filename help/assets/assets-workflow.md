@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Flusso di lavoro, rappresentazioni
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -114,5 +114,4 @@ Per un modello di flusso di lavoro, gli utenti possono creare un modulo di avvio
 * [Creare modelli di flusso di lavoro ed estendere le funzionalità del flusso di lavoro](/help/sites-developing/workflows.md)
 * [Metodi per l’esecuzione dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
-* [Articolo della community sulla modifica delle risorse utilizzando il flusso di lavoro](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
