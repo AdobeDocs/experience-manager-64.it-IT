@@ -12,10 +12,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: Gestione risorse, rappresentazioni
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 27%
+source-wordcount: '440'
+ht-degree: 29%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 27%
 
 Dynamic Media fornisce esperienze di visualizzazione interattive, con funzioni quali zoom, rotazione a 360° e video. Dynamic Media include i flussi di lavoro della soluzione Adobe Experience Manager per la gestione delle risorse digitali (Assets) per semplificare e ottimizzare il processo di gestione delle campagne digitali.
 
->[!NOTE]
+<!-- DEAD ARTICLE >[!NOTE]
 >
->È disponibile un articolo della community su [Utilizzo di Adobe Experience Manager e Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Operazioni possibili con Dynamic Media {#what-you-can-do-with-dynamic-media}
 
