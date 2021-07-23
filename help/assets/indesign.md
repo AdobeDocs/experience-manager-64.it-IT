@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Pubblicazione
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 4%
@@ -64,7 +64,7 @@ InDesign Server può essere integrato con AEM Assets in modo che i file creati c
    >
    >IDML è un formato basato su XML che esegue il rendering di *tutto* nel file InDesign. Viene memorizzato come pacchetto compresso utilizzando la compressione [Zip](https://www.techterms.com/definition/zip).
    >
-   >Per ulteriori informazioni, consulta [Formati di interscambio Adobe InDesign INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) .
+   >Per ulteriori informazioni, consulta [Formati di interscambio Adobe InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) .
 
    >[!CAUTION]
    >
