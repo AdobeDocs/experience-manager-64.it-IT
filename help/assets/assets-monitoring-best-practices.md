@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gestione risorse
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
@@ -37,7 +37,7 @@ In genere, AEM Assets può essere monitorato in due modi, il monitoraggio live e
 * [Parte superiore](https://man7.org/linux/man-pages/man1/top.1.html): Top è un comando Linux che apre un dashboard, che visualizza le statistiche di utilizzo, tra cui CPU, memoria e utilizzo IO. Fornisce una panoramica di alto livello di ciò che sta accadendo in un&#39;istanza.
 * [Htop](https://hisham.hm/htop/): Htop è un visualizzatore di processi interattivo. Fornisce l&#39;utilizzo dettagliato della CPU e della memoria oltre a ciò che Top può fornire. Htop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install htop` o `apt-get install htop`.
 
-* [Iotop](http://guichaz.free.fr/iotop/): Iotop è un dashboard dettagliato per l&#39;utilizzo dell&#39;IO del disco. Visualizza barre e misuratori che rappresentano i processi che utilizzano l&#39;IO del disco e la quantità che utilizzano. Iotop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iotop` o `apt-get install iotop`.
+* [Iotop](https://guichaz.free.fr/iotop/): Iotop è un dashboard dettagliato per l&#39;utilizzo dell&#39;IO del disco. Visualizza barre e misuratori che rappresentano i processi che utilizzano l&#39;IO del disco e la quantità che utilizzano. Iotop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iotop` o `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop visualizza informazioni dettagliate sull&#39;utilizzo di ethernet/rete. Iftop visualizza le statistiche dei canali di comunicazione sulle entità che utilizzano ethernet e la quantità di larghezza di banda utilizzata. Iftop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iftop` o `apt-get install iftop`.
 
