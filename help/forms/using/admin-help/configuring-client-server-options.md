@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
-
 
 # Configurare il server di protezione dei documenti {#configure-the-document-security-server}
 
@@ -71,9 +70,9 @@ Altezza: Minimo = 450; massimo = 800
 
 **Abilita memorizzazione in cache delle credenziali client:** seleziona questa opzione per consentire agli utenti di memorizzare in cache le proprie credenziali (nome utente e password). Quando le credenziali degli utenti vengono memorizzate nella cache, non devono immettere le credenziali ogni volta che aprono un documento o quando fanno clic sul pulsante Aggiorna nella pagina Gestisci criteri di sicurezza in Adobe Acrobat. È possibile specificare il numero di giorni prima che gli utenti debbano fornire nuovamente le proprie credenziali. Impostando il numero di giorni su 0, le credenziali possono essere memorizzate nella cache a tempo indeterminato.
 
-## Configurazione di utenti e amministratori per la protezione dei documenti {#configuring-document-security-users-and-administrators}
+## Configurazione di utenti e amministratori per la sicurezza dei documenti {#configuring-document-security-users-and-administrators}
 
-### Assegnazione di ruoli di protezione dei documenti agli amministratori {#assigning-document-security-roles-to-administrators}
+### Assegnazione di ruoli di sicurezza dei documenti agli amministratori {#assigning-document-security-roles-to-administrators}
 
 L’ambiente AEM forms contiene uno o più utenti amministratori con i privilegi appropriati per la creazione di utenti e gruppi. Se l’organizzazione utilizza la protezione dei documenti, è necessario assegnare ad almeno un amministratore il privilegio per gestire gli utenti invitati e locali.
 
@@ -200,7 +199,7 @@ Quando il controllo è abilitato, è possibile visualizzare i dettagli degli eve
 * Eventi utente quali inviti e registrazioni di utenti esterni, account utente attivati e disattivati, modifiche alle password utente e aggiornamenti del profilo
 * Eventi AEM dei moduli, ad esempio mancata corrispondenza delle versioni, fornitori di autorizzazioni e server di directory non disponibili e modifiche alla configurazione del server
 
-### Attiva o disattiva il controllo eventi {#enable-or-disable-event-auditing}
+### Attiva o disattiva il controllo degli eventi {#enable-or-disable-event-auditing}
 
 È possibile abilitare e disabilitare il controllo degli eventi relativi al server, ai documenti protetti da policy, ai criteri, ai set di criteri e agli utenti. Quando si abilita il controllo degli eventi, è possibile scegliere di controllare tutti gli eventi possibili o selezionare eventi specifici da controllare.
 
@@ -221,7 +220,7 @@ Quando si abilita il controllo del server, è possibile visualizzare gli eventi 
 >
 >Quando lavori con le pagine web, evita di utilizzare i pulsanti del browser, ad esempio il pulsante Indietro, il pulsante di aggiornamento e la freccia indietro o avanti, perché questa azione può causare problemi indesiderati di acquisizione dati e visualizzazione dei dati.
 
-### Attiva o disattiva la notifica sulla privacy {#enable-or-disable-privacy-notification}
+### Attivare o disattivare la notifica della privacy {#enable-or-disable-privacy-notification}
 
 Puoi abilitare e disabilitare un messaggio di notifica della privacy. Quando si abilita la notifica sulla privacy, viene visualizzato un messaggio quando un destinatario tenta di aprire un documento protetto da policy. L&#39;avviso informa l&#39;utente che l&#39;utilizzo del documento è in corso di verifica. Puoi inoltre specificare un URL che l’utente può utilizzare per visualizzare la pagina dell’informativa sulla privacy, se disponibile.
 
@@ -254,7 +253,7 @@ Se si utilizza un&#39;applicazione per la protezione dei documenti che supporta 
 1. Selezionare la casella di controllo accanto al tipo di evento di controllo personalizzato da eliminare e fare clic su Elimina.
 1. Fai clic su OK.
 
-### Esporta eventi di controllo {#export-audit-events}
+### Esportare gli eventi di controllo {#export-audit-events}
 
 È possibile esportare gli eventi di controllo in un file a scopo di archiviazione.
 
@@ -373,7 +372,7 @@ Se si utilizza un&#39;applicazione per la protezione dei documenti che supporta 
 
 **Modifica alla configurazione del server:** modifiche alla configurazione del server che vengono effettuate tramite le pagine web o manualmente importando un file config.xml. Ciò include modifiche all&#39;URL di base, timeout sessione, blocchi di accesso, impostazioni della directory, rollover chiave, impostazioni del server SMTP per la registrazione esterna, configurazione della filigrana, opzioni di visualizzazione e così via.
 
-## Configurazione del tracciamento esteso dell&#39;utilizzo {#configuring-extended-usage-tracking}
+## Configurazione del tracciamento dell’utilizzo esteso {#configuring-extended-usage-tracking}
 
 La sicurezza dei documenti può tenere traccia di vari eventi personalizzati che possono essere eseguiti su un documento protetto. È possibile abilitare il tracciamento degli eventi dal server di sicurezza dei documenti a livello globale o a livello di policy. È quindi possibile impostare un JavaScript per acquisire azioni specifiche eseguite all’interno del documento PDF protetto, ad esempio facendo clic su un pulsante o salvando il documento. Questi dati di utilizzo vengono inviati come file XML in coppie chiave-valore, che puoi utilizzare per ulteriori analisi. Gli utenti finali che accedono ai documenti protetti possono consentire o rifiutare tale tracciamento dall&#39;applicazione client.
 
@@ -381,7 +380,7 @@ Se il tracciamento è abilitato a livello globale, puoi ignorare questa impostaz
 
 Dopo aver abilitato il tracciamento, per impostazione predefinita per tutti i criteri creati in seguito verrà attivato il tracciamento. I criteri creati prima che il tracciamento sia abilitato sul server dovranno essere aggiornati manualmente.
 
-### Attiva o disattiva il tracciamento esteso dell&#39;uso {#enable-or-disable-extended-usage-tracking}
+### Attiva o disattiva il tracciamento dell&#39;uso esteso {#enable-or-disable-extended-usage-tracking}
 
 Prima di iniziare, assicurati che Server Auditing sia abilitato. Per ulteriori informazioni sul controllo, consulta [Configurazione del controllo degli eventi e delle impostazioni della privacy](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) .
 
@@ -584,7 +583,7 @@ Le seguenti impostazioni si trovano nell’area Filtro restrizioni e-mail della 
 
 **Inclusione:** digita l’indirizzo e-mail di un utente o gruppo da includere. Per includere più utenti o gruppi, digitare ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un dominio specifico, immetti un carattere jolly e il nome del dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immetti &amp;ast;.example.com.
 
-### Parametri dell&#39;account server e registrazione {#server-and-registration-account-parameters}
+### Parametri dell&#39;account server e di registrazione {#server-and-registration-account-parameters}
 
 Le seguenti impostazioni si trovano nell’area Impostazioni generali della pagina Registrazione utente invitata .
 
@@ -628,7 +627,7 @@ Se richiesto dall&#39;host SMTP, digitare le informazioni richieste nelle casell
 >
 >Se apporti modifiche alle opzioni di Registrazione utente invitata , il file config.xml viene sovrascritto e TLS viene disattivato. Se sovrascrivi le modifiche, devi eseguire il passaggio precedente per riattivare il supporto TLS per la registrazione degli utenti invitati.
 
-### Impostazioni e-mail dell&#39;invito per la registrazione {#registration-invitation-email-settings}
+### Impostazioni e-mail dell’invito per la registrazione {#registration-invitation-email-settings}
 
 La sicurezza dei documenti invia automaticamente un messaggio e-mail di invito alla registrazione quando crei un nuovo account utente invitato o quando un utente esistente aggiunge un destinatario esterno che non si è precedentemente registrato o che è stato invitato a registrarsi a un criterio. L’e-mail contiene un collegamento che il destinatario può utilizzare per accedere alla pagina di registrazione e inserire le informazioni relative all’account personale, inclusi nome utente e password. La password può essere composta da una combinazione di otto caratteri.
 
@@ -664,7 +663,7 @@ Le seguenti impostazioni si trovano nell’area Configurazione e-mail di attivaz
 
 **Messaggio:** il testo che appare nel corpo del messaggio un messaggio che indica che l’account utente del destinatario deve essere attivato. È inoltre possibile includere informazioni quali la modalità di contatto con un amministratore per ottenere una nuova password.
 
-### Configurare un messaggio e-mail per la reimpostazione della password {#configure-a-password-reset-email}
+### Configurare un messaggio e-mail di ripristino della password {#configure-a-password-reset-email}
 
 Se devi reimpostare la password di un utente invitato, viene generato un messaggio e-mail di conferma che invita l’utente a scegliere una nuova password. Impossibile determinare la password di un utente; se l&#39;utente lo dimentica, è necessario reimpostarlo.
 
@@ -676,7 +675,7 @@ Le seguenti impostazioni si trovano nell&#39;area Ripristina e-mail password del
 
 **Messaggio:** il testo che appare nel corpo del messaggio un messaggio che indica che la password utente esterna del destinatario viene reimpostata.
 
-## Abilitare utenti e gruppi a creare criteri {#enable-users-and-groups-to-create-policies}
+## Consentire a utenti e gruppi di creare criteri {#enable-users-and-groups-to-create-policies}
 
 Nella pagina Configurazione è disponibile un collegamento alla pagina Criteri personali, in cui è possibile specificare quali utenti finali possono creare i miei criteri e quali utenti e gruppi sono visibili nei risultati della ricerca. La pagina Criteri personali presenta due schede:
 
@@ -709,7 +708,7 @@ Gli utenti e i gruppi selezionati ora dispongono delle autorizzazioni necessarie
 1. Seleziona la casella di controllo accanto agli utenti e ai gruppi da rimuovere da questa autorizzazione.
 1. Fare clic su Elimina, quindi su OK.
 
-### Specifica utenti e gruppi visibili nelle ricerche {#specify-users-and-groups-that-are-visible-in-searches}
+### Specificare utenti e gruppi visibili nelle ricerche {#specify-users-and-groups-that-are-visible-in-searches}
 
 Quando gli utenti gestiscono i propri criteri personalizzati, possono cercare utenti e gruppi da aggiungere ai propri criteri. Devi specificare i domini da cui gli utenti e i gruppi sono visibili in queste ricerche.
 
@@ -717,7 +716,7 @@ Quando gli utenti gestiscono i propri criteri personalizzati, possono cercare ut
 1. Nella pagina Criteri personali fare clic sulla scheda Utenti e gruppi visibili .
 1. Per rendere visibili gli utenti e i gruppi di un dominio, fai clic su Aggiungi domini, seleziona i domini e fai clic su Aggiungi. Per rimuovere un dominio, seleziona la casella di controllo accanto al nome di dominio e fai clic su Elimina.
 
-## Modifica manuale del file di configurazione della protezione del documento {#manually-editing-the-document-security-configuration-file}
+## Modifica manuale del file di configurazione della protezione dei documenti {#manually-editing-the-document-security-configuration-file}
 
 È possibile importare ed esportare le informazioni di configurazione memorizzate nel database di protezione dei documenti. Ad esempio, è possibile creare una copia di backup delle informazioni di configurazione quando si passa da un ambiente di staging a un ambiente di produzione oppure modificare opzioni avanzate che possono essere configurate solo per la modifica di questo file.
 
@@ -749,11 +748,6 @@ Puoi apportare le seguenti modifiche utilizzando il file di configurazione:
 1. Nella console di amministrazione, fare clic su Servizi > sicurezza documento 11 > Configurazione > Configurazione manuale.
 1. Fare clic su Sfoglia per passare al file di configurazione e quindi su Importa. Non è possibile digitare il percorso direttamente nella casella Nome file.
 1. Fai clic su OK.
-
-1. 
-1. 
-1. 
-1. 
 
 ### Specifica un periodo di timeout per la sincronizzazione offline {#specify-a-timeout-period-for-offline-synchronization}
 
@@ -902,7 +896,7 @@ In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
  </node>
 ```
 
-In questo esempio, l&#39;accesso a My Application versione 3.0 e My Other Application versione 2.0 è negato. Lo stesso URL di informazioni di rifiuto viene utilizzato indipendentemente dal motivo del rifiuto.
+In questo esempio, l&#39;accesso a My Application versione 3.0 e My Other Application versione 2.0 non è consentito. Lo stesso URL di informazioni di rifiuto viene utilizzato indipendentemente dal motivo del rifiuto.
 
 ```as3
  <node name="ClientVersionRules"> 
@@ -948,7 +942,7 @@ In questo esempio, tutte le richieste provenienti da un&#39;installazione di Mic
  </node
 ```
 
-### Modifica i parametri di configurazione della filigrana {#change-the-watermark-configuration-parameters}
+### Modificare i parametri di configurazione della filigrana {#change-the-watermark-configuration-parameters}
 
 Per impostazione predefinita, è possibile specificare un massimo di cinque elementi in una filigrana. Inoltre, la dimensione massima del file del documento PDF che si desidera utilizzare come filigrana è limitata a 100 KB. Puoi modificare questi parametri nel file config.xml.
 
@@ -969,7 +963,7 @@ Per impostazione predefinita, è possibile specificare un massimo di cinque elem
 
 1. Importa il file di configurazione. (Vedere [Modifica manuale del file di configurazione della protezione del documento](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Disabilitazione dei collegamenti esterni {#disabling-external-links}
+### Disattivazione dei collegamenti esterni {#disabling-external-links}
 
 Molti utenti della sicurezza dei documenti non hanno accesso a collegamenti esterni come **www.adobe.com** mentre utilizzano le interfacce utente di Gestione destra:
 
@@ -1005,7 +999,7 @@ Le seguenti modifiche al file config.xml abilitano il supporto TLS per la funzio
 1. Salva il `config.xml`.
 1. Importa il file di configurazione. (Vedere [Modifica manuale del file di configurazione della protezione del documento](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Disattiva gli endpoint SOAP per i documenti di sicurezza dei documenti {#disable-soap-endpoints-for-document-security-documents}
+### Disattivazione degli endpoint SOAP per i documenti Document Security {#disable-soap-endpoints-for-document-security-documents}
 
 Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per i documenti di sicurezza dei documenti.
 
@@ -1052,4 +1046,3 @@ Per impostazione predefinita, durante la sincronizzazione di un documento per l&
    >Per impostazione predefinita, il valore della chiave `DisableGlobalOfflineSynchronizationData`è impostato su `false`.
 
 1. Salva e importa il file di configurazione. (Vedere [Modifica manuale del file di configurazione della protezione del documento](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-
