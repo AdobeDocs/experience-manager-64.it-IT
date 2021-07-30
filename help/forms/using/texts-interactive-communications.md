@@ -7,15 +7,14 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Comunicazione interattiva
+exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
 
 ---
-
 
 # Testi nelle comunicazioni interattive {#texts-in-interactive-communications}
 
@@ -89,8 +88,6 @@ Se durante la creazione di un testo è stato specificato un modello dati modulo,
 
 * Per consentire agli agenti di modificare il valore di una proprietà FDM nell&#39;interfaccia utente dell&#39;agente durante la [Preparazione e invio della comunicazione interattiva](/help/forms/using/prepare-send-interactive-communication.md) tramite l&#39;interfaccia utente dell&#39;agente, tocca l&#39;icona **`[D]`** a forma di lucchetto per tale proprietà e assicurati che sia in uno stato sbloccato. Lo stato predefinito della proprietà è bloccato e un agente non può modificare la proprietà nell&#39;interfaccia utente dell&#39;agente.
 
-* 
-
 È inoltre possibile utilizzare le proprietà del modello dati del modulo per creare regole per visualizzare o nascondere parti di contenuto. Per ulteriori informazioni, consulta [Creare regole nel testo](#rules).
 
 ## Creazione e utilizzo di variabili in un frammento di documento di testo {#variables}
@@ -105,7 +102,7 @@ Le variabili sono segnaposto che possono essere associati durante la creazione d
 
 Durante la creazione o la modifica di un frammento di documento di testo, è possibile creare e inserire variabili. Le variabili create vengono visualizzate nella scheda Dati dell’interfaccia utente dell’agente. L&#39;agente specifica i valori delle variabili mentre [Prepara e invia comunicazioni interattive utilizzando l&#39;interfaccia utente dell&#39;agente](/help/forms/using/prepare-send-interactive-communication.md).
 
-### Crea variabili {#create-variables}
+### Creare variabili {#create-variables}
 
 1. Nel riquadro a sinistra, tocca **[!UICONTROL Variabili]**.
 
@@ -136,7 +133,7 @@ Durante la creazione o la modifica di un frammento di documento di testo, è pos
 
 1. Tocca **[!UICONTROL Salva]**.
 
-## Crea regole nel testo {#rules}
+## Creare regole nel testo {#rules}
 
 Utilizzando l&#39;editor di regole in un testo, puoi creare regole per visualizzare o nascondere stringhe di testo o parti di contenuto in base a **condizioni preimpostate**. Queste condizioni possono essere costruite in base a:
 
@@ -147,7 +144,7 @@ Utilizzando l&#39;editor di regole in un testo, puoi creare regole per visualizz
 * Proprietà del modello dati del modulo associato
 * Eventuali variabili create nel testo
 
-### Crea regole nel testo {#create-rules-in-text}
+### Creare regole nel testo {#create-rules-in-text}
 
 1. Durante la creazione o la modifica di un testo, selezionare la stringa di testo, il paragrafo o il contenuto da condizionalizzare utilizzando la regola.
 
