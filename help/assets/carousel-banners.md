@@ -12,9 +12,9 @@ discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Banner a carosello
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
-source-wordcount: '4789'
+source-wordcount: '4749'
 ht-degree: 4%
 
 ---
@@ -33,9 +33,9 @@ Sul sito web, un banner a carosello può essere visualizzato come segue:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Qui puoi navigare tra le immagini (facendo clic sui numeri). Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini aggiunte nel banner carosello supportano sia punti attivi che mappe immagine, dove gli utenti possono toccare o passare a un collegamento ipertestuale o accedere a una finestra di visualizzazione rapida.
+Qui puoi navigare tra le immagini (facendo clic sui numeri). Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini aggiunte nel banner carosello supportano sia punti attivi che mappe immagine, dove gli utenti possono toccare o passare a un collegamento ipertestuale o accedere a una finestra Quickview.
 
-In questo esempio, un utente ha toccato o fatto clic su una mappa immagine per accedere alla finestra di visualizzazione rapida dei guanti:
+In questo esempio, un utente ha toccato o fatto clic su una mappa immagine e ha effettuato l’accesso alla finestra Quickview per i guanti:
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -53,7 +53,7 @@ Per farti iniziare a lavorare velocemente:
 
 1. [Identificare le variabili di punti attivi e mappe immagine](#identifying-hotspot-and-image-map-variables)  (solo per i clienti che utilizzano AEM Assets + Dynamic Media)
 
-   Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione della visualizzazione rapida esistente in modo da poter inserire correttamente i punti attivi e i dati della mappa immagine durante il processo di creazione del banner carosello in AEM Assets.
+   Per iniziare, identifica le variabili dinamiche utilizzate dall&#39;implementazione Quickview esistente in modo da poter inserire correttamente i punti attivi e i dati della mappa immagine durante il processo di creazione del banner carosello in AEM Assets.
 
    >[!NOTE]
    >
@@ -97,9 +97,9 @@ Per modificare i set carosello, consulta [modifica di set carosello](#editing-ca
 
 ## Identificazione delle variabili dei punti attivi e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
 
-Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione della visualizzazione rapida esistente in modo da poter inserire correttamente i punti attivi o i dati della mappa immagine durante il processo di creazione del set carosello in AEM Assets.
+Per iniziare, identifica le variabili dinamiche utilizzate dall&#39;implementazione Quickview esistente in modo da poter inserire correttamente i punti attivi o i dati della mappa immagine durante il processo di creazione del set carosello in AEM Assets.
 
-Quando aggiungi punti attivi o mappe immagine a un&#39;immagine banner in AEM Assets, devi assegnare un SKU e variabili aggiuntive facoltative a ogni punto attivo o mappa immagine. Tali variabili vengono utilizzate in seguito per far corrispondere hotspot o mappe immagine con contenuto di visualizzazione rapida.
+Quando aggiungi punti attivi o mappe immagine a un&#39;immagine banner in AEM Assets, devi assegnare un SKU e variabili aggiuntive facoltative a ogni punto attivo o mappa immagine. Tali variabili vengono utilizzate in seguito per far corrispondere hotspot o mappe immagine con contenuto Quickview.
 
 >[!NOTE]
 >
@@ -111,31 +111,31 @@ Quando aggiungi punti attivi o mappe immagine a un&#39;immagine banner in AEM As
 
 Esistono diversi modi per identificare un set di variabili da utilizzare per i dati dei punti attivi o delle mappe immagine.
 
-A volte può essere sufficiente consultare gli specialisti IT responsabili dell&#39;implementazione della visualizzazione rapida esistente, in quanto è probabile che sappiano quale sia il set minimo di dati necessari per identificare la visualizzazione rapida nel sistema. Tuttavia, nella maggior parte dei casi è anche possibile analizzare semplicemente il comportamento esistente del codice front-end.
+A volte può essere sufficiente consultare gli specialisti IT responsabili dell&#39;implementazione di Quickview esistente, in quanto è probabile che sappiano quale sia il set minimo di dati necessari per identificare Quickview nel sistema. Tuttavia, nella maggior parte dei casi è anche possibile analizzare semplicemente il comportamento esistente del codice front-end.
 
-La maggior parte delle implementazioni di visualizzazioni rapide utilizza il seguente paradigma:
+La maggior parte delle implementazioni di Quickview utilizza il seguente paradigma:
 
 * L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, facendo clic su un pulsante **[!UICONTROL Visualizzazione rapida]** .
 * Il sito web invia una richiesta Ajax al backend per caricare i dati o il contenuto della visualizzazione rapida, se necessario.
-* I dati di visualizzazione rapida vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
+* I dati Quickview vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
 * Infine, il codice front-end esegue il rendering visivo di tali contenuti sullo schermo.
 
-L’approccio consiste quindi nel visitare diverse aree del sito web esistente in cui è implementata la funzione di visualizzazione rapida, attivare la visualizzazione rapida e acquisire l’URL Ajax inviato dalla pagina web per caricare i dati o il contenuto della visualizzazione rapida.
+L’approccio consiste quindi nel visitare diverse aree del sito web esistente in cui è implementata la funzione Quickview , attivare la visualizzazione rapida e acquisire l’URL Ajax inviato dalla pagina web per caricare i dati o il contenuto della visualizzazione rapida.
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
 * Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello Strumenti per sviluppatori, quindi tocca la scheda **[!UICONTROL Rete]** .
 * In Firefox, è possibile attivare il plug-in Firebug premendo F12 (Windows) o Comando-Opzione-I (Mac) e utilizzando la relativa scheda Net, oppure è possibile utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
 
-Quando il monitoraggio di rete è attivato nel browser, attiva la visualizzazione rapida sulla pagina.
+Quando il monitoraggio della rete è attivato nel browser, attiva la visualizzazione rapida nella pagina.
 
-Ora trova l&#39;URL Ajax della visualizzazione rapida nel registro di rete e copia l&#39;URL registrato per analisi future. Nella maggior parte dei casi, quando si attiva la visualizzazione rapida sono presenti numerose richieste inviate al server. In genere, l&#39;URL Ajax della visualizzazione rapida è uno dei primi dell&#39;elenco. Dispone di una porzione o di un percorso complesso della stringa di query e il relativo tipo MIME di risposta è `text/html`, `text/xml` o `text/javascript`.
+Ora trova l&#39;URL Ajax Quickview nel registro di rete e copia l&#39;URL registrato per analisi future. Nella maggior parte dei casi, quando si attiva la visualizzazione rapida sono presenti numerose richieste inviate al server. In genere, l’URL Ajax Quickview è uno dei primi dell’elenco. Dispone di una porzione o di un percorso complesso della stringa di query e il relativo tipo MIME di risposta è `text/html`, `text/xml` o `text/javascript`.
 
-Durante questo processo è importante visitare diverse aree del sito web, con diverse categorie di prodotti e tipi. Il motivo è che gli URL di visualizzazione rapida possono avere parti comuni per una determinata categoria di siti web, ma possono essere modificati solo se visiti un’area diversa del sito web.
+Durante questo processo è importante visitare diverse aree del sito web, con diverse categorie di prodotti e tipi. Il motivo è che gli URL Quickview possono avere parti comuni per una determinata categoria di siti web, ma possono essere modificati solo se visiti un’area diversa del sito web.
 
-Nel caso più semplice, l’unica parte variabile nell’URL della visualizzazione rapida è lo SKU del prodotto. In questo caso, il valore SKU è l’unico elemento dati necessario per aggiungere punti attivi o mappe immagine all’immagine del banner.
+Nel caso più semplice, l’unica parte variabile nell’URL Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l’unico elemento dati necessario per aggiungere punti attivi o mappe immagine all’immagine del banner.
 
-Tuttavia, in casi complessi, l’URL di visualizzazione rapida presenta diversi elementi diversi oltre all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo o della mappa immagine nella funzione del banner carosello.
+Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi diversi rispetto all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo o della mappa immagine nella funzione del banner carosello.
 
 Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le relative variabili di punti attivi o mappe immagine risultanti:
 
@@ -143,7 +143,7 @@ Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le
  <tbody> 
   <tr> 
    <td>SKU singolo, trovato nella stringa query.</td> 
-   <td><p>Gli URL di visualizzazione rapida registrati includono quanto segue:</p> 
+   <td><p>Gli URL registrati di Quickview includono quanto segue:</p> 
     <ul> 
      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li> 
      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
@@ -153,7 +153,7 @@ Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le
   </tr> 
   <tr> 
    <td>SKU singolo, trovato nel percorso URL.</td> 
-   <td><p>Gli URL di visualizzazione rapida registrati includono quanto segue:</p> 
+   <td><p>Gli URL registrati di Quickview includono quanto segue:</p> 
     <ul> 
      <li><p><code>https://server/product/6422350843</code></p> </li> 
      <li><p><code>https://server/product/1607745002</code></p> </li> 
@@ -162,7 +162,7 @@ Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le
   </tr> 
   <tr> 
    <td>SKU e ID categoria nella stringa query.</td> 
-   <td><p>Gli URL di visualizzazione rapida registrati includono quanto segue:</p> 
+   <td><p>Gli URL registrati di Quickview includono quanto segue:</p> 
     <ul> 
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
@@ -283,8 +283,8 @@ Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-car
       * Se non sei un cliente AEM Sites o Ecommerce
 
          * Consulta [Identificazione di variabili di punti attivi](#identifying-hotspot-and-image-map-variables) come desideri definire queste variabili.
-         * Quindi, inserisci manualmente il valore SKU. Nel campo di testo **[!UICONTROL Valore SKU]**, digita la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello di visualizzazione rapida in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida dello SKU.
-         * (Facoltativo) Se nella visualizzazione rapida sono presenti altre variabili da utilizzare per identificare ulteriormente un prodotto, tocca **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
+         * Quindi, inserisci manualmente il valore SKU. Nel campo di testo **[!UICONTROL Valore SKU]**, digita la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
+         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
          * Per ulteriori informazioni, consulta [Utilizzo dei selettori](working-with-selectors.md) .
    * Toccare **[!UICONTROL Collegamento ipertestuale]**.
 
@@ -415,16 +415,16 @@ Tuttavia, se sei un cliente di risorse AEM autonomo puoi aggiungere manualmente 
 
 Questa attività si applica solo se sei un cliente AEM Assets autonomo.
 
-L’ultimo passaggio di questo processo consiste nell’integrare il banner carosello con un’implementazione della visualizzazione rapida esistente sul sito web. Ogni implementazione di Quickview è unica ed è necessario un approccio specifico che molto probabilmente coinvolge l&#39;assistenza di una persona IT front-end.
+L’ultimo passaggio di questo processo consiste nell’integrare il banner carosello con un’implementazione Quickview esistente sul sito web. Ogni implementazione di Quickview è unica ed è necessario un approccio specifico che molto probabilmente coinvolge l&#39;assistenza di una persona IT front-end.
 
-L’implementazione della visualizzazione rapida esistente rappresenta normalmente una catena di azioni intercorrelate che avvengono sulla pagina web nel seguente ordine:
+L&#39;implementazione di Quickview esistente rappresenta normalmente una catena di azioni correlate che avvengono sulla pagina web nel seguente ordine:
 
 1. Un utente attiva un elemento nell’interfaccia utente del sito web.
-1. Il codice front-end ottiene un URL di visualizzazione rapida basato sull’elemento dell’interfaccia utente attivato nel passaggio 1.
+1. Il codice front-end ottiene un URL Quickview basato sull’elemento dell’interfaccia utente attivato nel passaggio 1.
 1. Il codice front-end invia una richiesta Ajax utilizzando l’URL ottenuto al passaggio 2.
-1. La logica di back-end restituisce i dati di visualizzazione rapida corrispondenti o il contenuto al codice front-end.
-1. Il codice front-end carica i dati o il contenuto della visualizzazione rapida.
-1. Facoltativamente, il codice front-end converte i dati di visualizzazione rapida caricati in una rappresentazione HTML.
+1. La logica di back-end restituisce i dati o il contenuto Quickview corrispondenti al codice front-end.
+1. Il codice front-end carica i dati o il contenuto di Quickview.
+1. Facoltativamente, il codice front-end converte i dati Quickview caricati in una rappresentazione HTML.
 1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l’utente finale.
 
 Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
@@ -435,7 +435,7 @@ In un tale gestore di eventi, il codice front-end effettua le seguenti operazion
 
 * Ascolta un evento emesso dal banner carosello.
 * Crea un URL di visualizzazione rapida basato sui dati del punto attivo o della mappa immagine.
-* Attiva il processo di caricamento della visualizzazione rapida dal backend e di rendering sullo schermo per la visualizzazione.
+* Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering sullo schermo per la visualizzazione.
 
 Il codice di incorporamento restituito da AEM Assets dispone già di un gestore eventi ready-to-use in posizione, che viene aggiunto un commento.
 
@@ -445,7 +445,7 @@ Il processo di costruzione dell’URL di visualizzazione rapida è sostanzialmen
 
 Consulta [Identificazione delle variabili di punti attivi e mappe immagine](#identifying-hotspot-and-image-map-variables).
 
-L&#39;ultimo passaggio per attivare l&#39;URL di visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede molto probabilmente l&#39;assistenza di una persona IT front-end dal reparto IT. Essi hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione della visualizzazione rapida dal passaggio appropriato, avendo un URL di visualizzazione rapida pronto all&#39;uso.
+L&#39;ultimo passaggio per attivare l&#39;URL Quickview e attivare il pannello Quickview richiede molto probabilmente l&#39;assistenza di un esperto IT front-end del reparto IT. Hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione di Quickview dal passaggio appropriato, avendo un URL di Quickview pronto all&#39;uso.
 
 ## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
