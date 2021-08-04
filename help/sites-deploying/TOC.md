@@ -8,9 +8,9 @@ breadcrumb-title: Guida alla distribuzione
 user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.4, inclusa la distribuzione cloud di Adobe Managed Services.
 feature: Distribuzione
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 17%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 17%
    + [Offload dei processi](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Mappatura delle risorse](resource-mapping.md)
-   + [Abilitazione di HTTP su SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [Abilitazione di HTTP su SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [Controlli di coerenza e di transito](consistency-check.md)
    + [Linee guida sulle prestazioni](performance-guidelines.md)
    + [Ottimizzazione delle prestazioni](configuring-performance.md)
-   + [Guida alle prestazioni di Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Guida alle prestazioni di Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)
    + [Articoli dimostrativi sulla configurazione](ht-deploy.md)
    + [Rimozione dei siti di Geometrixx](removing-the-geometrixx-sites.md)
    + [Configurazione della console Web](configuring-web-console.md)
