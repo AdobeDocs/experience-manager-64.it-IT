@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
+source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10387'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
@@ -1033,7 +1033,7 @@ Per rendere più semplice la visualizzazione e la navigazione dei video in forma
 >
 >Il lettore video utilizzato deve supportare l&#39;uso di marcatori capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
-Se lo desideri, puoi creare e assegnare un marchio al tuo visualizzatore video personalizzato con capitoli invece di utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un proprio visualizzatore HTML5 con navigazione nei capitoli, nell’API Adobe HTML5 Viewer SDK, fai riferimento all’intestazione &quot;Personalizzazione del comportamento utilizzando i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione [API SDK per visualizzatori HTML5]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) .
+Se lo desideri, puoi creare e assegnare un marchio al tuo visualizzatore video personalizzato con capitoli invece di utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un proprio visualizzatore HTML5 con navigazione nei capitoli, nell’API Adobe HTML5 Viewer SDK, fai riferimento all’intestazione &quot;Personalizzazione del comportamento utilizzando i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) .
 
 È possibile creare un elenco di capitoli per il video nello stesso modo in cui si creano le didascalie. In altre parole, si crea un file WebVTT. Si noti, tuttavia, che questo file deve essere separato da qualsiasi file di didascalia WebVTT che si potrebbe utilizzare; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 
