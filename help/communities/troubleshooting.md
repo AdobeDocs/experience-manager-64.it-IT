@@ -1,43 +1,42 @@
 ---
 title: Risoluzione dei problemi
 seo-title: Risoluzione dei problemi
-description: Risoluzione dei problemi della community, inclusi i problemi noti
-seo-description: Risoluzione dei problemi della community, inclusi i problemi noti
+description: Risoluzione dei problemi della community, compresi i problemi noti
+seo-description: Risoluzione dei problemi della community, compresi i problemi noti
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
 
 ---
 
-
 # Risoluzione dei problemi {#troubleshooting}
 
-Questa sezione contiene le preoccupazioni comuni e i problemi noti.
+Questa sezione contiene i problemi comuni e i problemi noti.
 
 ## Problemi noti {#known-issues}
 
 ### Recupero del dispatcher non riuscito {#dispatcher-refetch-fails}
 
-Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un recupero potrebbe causare l&#39;impossibilità di ricevere la risposta dal server remoto dopo l&#39;attesa del timeout della richiesta.
+Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un refetch potrebbe risultare in &quot;Impossibile ricevere la risposta dal server remoto&quot; dopo aver aspettato il timeout della richiesta.
 
-L&#39;utilizzo del dispatcher 4.1.6 o versione successiva risolverà il problema.
+Questo problema verrà risolto utilizzando Dispatcher 4.1.6 o versione successiva.
 
 ### Impossibile accedere al post del forum dopo l&#39;aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati, e quindi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
+Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati e poi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
 
-carattere pattern non valido &#39;a&#39;\
-Impossibile inviare la richiesta a /content/demoforums/forum-test.html su questo server
+carattere pattern non valido &quot;a&quot;\
+Impossibile elaborare la richiesta a /content/demoforums/forum-test.html su questo server
 
-I registri contengono le seguenti informazioni:
+E i registri contengono quanto segue:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -46,32 +45,32 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.call(DefaultSlingScri
 at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScript.java:171)
 ```
 
-Il problema è che la stringa di formato per com.day.cq.commons.date.RelativeTimeFormat è stata modificata tra 5.4 e 5.5 in modo che la stringa &quot;a&quot; per &quot;ago&quot; non venga più accettata.
+Il problema è che la stringa di formato per com.day.cq.commons.date.RelativeTimeFormat è stata modificata tra 5.4 e 5.5 in modo che la &quot;a&quot; per &quot;ago&quot; non venga più accettata.
 
-Pertanto, qualsiasi codice che utilizza l&#39;API RelativeTimeFormat() dovrebbe essere modificato
+Pertanto, qualsiasi codice che utilizzi l’API RelativeTimeFormat() dovrebbe essere modificato
 
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’errore è diverso in fase di creazione e pubblicazione. L’autore non riesce in modo invisibile e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, l’errore viene visualizzato sulla pagina.
+L’errore è diverso in fase di authoring e pubblicazione. L&#39;autore non riesce in modo silenzioso e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, genera l’errore sulla pagina.
 
-Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
+Per ulteriori informazioni, consulta l’ API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
 
 ## Preoccupazioni comuni {#common-concerns}
 
-### Avvertenza nei registri: Handlebars obsoleto {#warning-in-logs-handlebars-deprecated}
+### Avviso nei registri: Handlebars dichiarato obsoleto {#warning-in-logs-handlebars-deprecated}
 
-Durante l&#39;avvio (non il primo, ma ogni altro dopo) nei registri potrebbe essere visualizzato il seguente avviso:
+Durante l&#39;avvio (non il primo - ma ogni uno dopo) nei log può essere visualizzato il seguente avviso:
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Questo avviso può essere ignorato come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All&#39;avvio, viene sostituito con un [helper i18n specifico AEM](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato in modo sicuro in quanto jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato della propria utility helper i18n. All&#39;avvio, viene sostituito da un helper [i18n specifico AEM ](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;override di un helper esistente.
 
-### Avvertenza nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### Avviso nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-La pubblicazione di un certo numero di argomenti dei forum di Social Communities può dare luogo a enormi quantità di registri di avvisi e informazioni da OakResourceListener processOsgiEventQueue.
+La pubblicazione di un certo numero di argomenti del forum di Social Communities può comportare enormi quantità di log di avviso e informazioni da OakResourceListener processOsgiEventQueue.
 
-Questi avvisi possono essere ignorati in modo sicuro.
+Questi avvisi possono essere tranquillamente ignorati.
 
 ```xml
 23.04.2014 14:21:18.900 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/search-collections/ugc-sc/_m.frq/jcr:content not found, which is not expected for an added or modified node
@@ -84,7 +83,7 @@ Questi avvisi possono essere ignorati in modo sicuro.
 
 ### Errore nei registri: NoClassDefFoundError per IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-L&#39;aggiornamento AEM 5.6.1 GA alla versione più recente di cq-socialcommunity-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
+L&#39;aggiornamento AEM 5.6.1 GA all&#39;ultimo cq-socialcommunities-pkg-1.4.x o a AEM 6.0 causa errori nel file di log durante l&#39;avvio per una condizione che si risolverà come evidenziato dall&#39;errore non visto al riavvio.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
