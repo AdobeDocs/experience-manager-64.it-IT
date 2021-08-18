@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Visita [Personalizzazioni lato server](server-customize.md) per informazioni su 
 
 ## Handlebar JS Template Language {#handlebars-js-templating-language}
 
-Una delle modifiche più evidenti nel nuovo framework è l&#39;utilizzo del linguaggio dei modelli `Handlebars JS` (HBS), una popolare tecnologia open-source per il rendering server-client.
+Una delle modifiche più evidenti nel nuovo framework è l&#39;utilizzo del linguaggio di template [Handlebars JS](https://handlebarsjs.com/) (HBS), una popolare tecnologia open-source per il rendering server-client.
 
 Gli script HBS sono semplici, senza logica, compilati sia sul server che sul client, sono facili da sovrapporre e personalizzare e si legano naturalmente con l&#39;UX client, perché HBS supporta il rendering lato client.
 
