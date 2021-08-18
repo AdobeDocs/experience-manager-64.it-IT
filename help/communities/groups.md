@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1638'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Da questa console Gruppi è possibile creare nuovi gruppi.
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per portare un design dinamico e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza `Twitter Bootstrap` per apportare al sito una progettazione reattiva e flessibile. È possibile selezionare uno dei molti temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema viene sovrapposto con un segno di spunta blu opaco.
 
