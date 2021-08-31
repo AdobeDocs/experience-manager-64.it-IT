@@ -1,21 +1,20 @@
 ---
 title: Configurazione di Microsoft Dynamics OData
-seo-title: Configurazione di Microsoft Dynamics OData
+seo-title: Microsoft Dynamics ODtata configuration
 description: Utilizza, integra e lavora con i servizi Microsoft Dynamics online e on-premise tramite il modello dati del modulo.
-seo-description: Scopri come sfruttare l’integrazione e l’utilizzo di Microsoft Dynamics Services online e on-premise tramite il modello dati del modulo.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione di Microsoft Dynamics OData {#microsoft-dynamics-odata-configuration}
 
@@ -36,7 +35,7 @@ Quando il pacchetto è installato, le seguenti entità e servizi sono disponibil
 * Cloud Service MS Dynamics OData (servizio OData)
 * Modello dati modulo con entità e servizi Microsoft Dynamics preconfigurati.
 
-Il Cloud Service OData e il modello dati modulo con entità e servizi Microsoft Dynamics preconfigurati sono disponibili nell’istanza AEM Forms solo se la modalità di esecuzione per l’istanza AEM è impostata come `samplecontent`(impostazione predefinita). Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza AEM, vedere [Modalità di esecuzione](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+Il Cloud Service OData e il modello dati modulo con entità e servizi Microsoft Dynamics preconfigurati sono disponibili nell’istanza AEM Forms solo se la modalità di esecuzione per l’istanza AEM è impostata come `samplecontent`(impostazione predefinita). Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza AEM, vedere [Modalità di esecuzione](/help/sites-deploying/configure-runmodes.md).
 
 ## Prerequisiti {#prerequisites}
 
@@ -107,7 +106,7 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
       http://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
       ```
 
-1. Esegui il seguente comando per concedere l&#39;accesso al computer AD FS:
+1. Esegui il comando seguente per concedere l&#39;accesso al computer AD FS:
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
 

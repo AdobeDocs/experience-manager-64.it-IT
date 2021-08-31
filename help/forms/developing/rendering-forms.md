@@ -1,8 +1,8 @@
 ---
 title: Rendering di Forms
-seo-title: Rendering di Forms
+seo-title: Rendering Forms
 description: Utilizzare il servizio Forms per creare applicazioni client di acquisizione dati interattive per convalidare, elaborare, trasformare e distribuire i moduli generalmente creati in Designer. Gli autori dei moduli possono sviluppare una singola struttura del modulo che il servizio Forms esegue in formato PDF, SWF o HTML in vari ambienti del browser.
-seo-description: Utilizzare il servizio Forms per creare applicazioni client di acquisizione dati interattive per convalidare, elaborare, trasformare e distribuire i moduli generalmente creati in Designer. Gli autori dei moduli possono sviluppare una singola struttura del modulo che il servizio Forms esegue in formato PDF, SWF o HTML in vari ambienti del browser.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
-
 
 # Rendering di Forms {#rendering-forms}
 
@@ -57,6 +56,4 @@ Puoi eseguire queste attività utilizzando il servizio Forms:
 * Invio di documenti. (Consulta [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 * Calcolare i dati del modulo. (Vedere [Calcolo dei dati del modulo](/help/forms/developing/calculating-form-data.md).)
 * Ottimizzare un&#39;applicazione. (Vedi [Ottimizzazione delle prestazioni del servizio Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
-
-   ***Suggerimento **: Il sito Web Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che richiama il servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione del rendering dei moduli di applicazioni ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 

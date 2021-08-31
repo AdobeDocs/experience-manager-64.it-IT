@@ -1,24 +1,23 @@
 ---
 title: assistenti vocali per moduli HTML5
-seo-title: assistenti vocali per moduli HTML5
+seo-title: Screen readers for HTML5 forms
 description: Elenca gli assistenti vocali supportati con i moduli HTML5.
-seo-description: Elenca gli assistenti vocali supportati con i moduli HTML5.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c27eb771-d390-4534-8e67-f1277550e760
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
-
-# Assistenti vocali per moduli HTML5 {#screen-readers-for-html-forms}
+# assistenti vocali per moduli HTML5 {#screen-readers-for-html-forms}
 
 I componenti dei moduli HTML5 eseguono il rendering del modello di modulo XFA in un formato HTML5. Tutti i browser standard che supportano HTML5 possono eseguire il rendering di questi moduli. Per supportare un’esperienza di acquisizione dei dati simile nei moduli PDF e HTML5, il layout dei PDF forms viene mantenuto nei moduli HTML5.
 
@@ -26,7 +25,7 @@ I moduli HTML5 utilizzano costrutti HTML standard che consentono l’utilizzo di
 
 ## Standard di accessibilità {#accessibility-standards}
 
-I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità con eccezioni note. Per ulteriori informazioni, vedere [VPAT for HTML5 forms](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) .
+I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità con eccezioni note. Per ulteriori informazioni, vedere [VPAT for HTML5 forms](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) .
 
 ## assistenti vocali certificati per moduli HTML5 {#certified-screen-readers-for-html-forms}
 

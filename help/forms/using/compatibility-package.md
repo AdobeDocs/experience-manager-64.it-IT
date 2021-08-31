@@ -1,8 +1,8 @@
 ---
 title: Pacchetto di compatibilità
-seo-title: Pacchetto di compatibilità
+seo-title: Compatibility Package
 description: 'L’installazione del pacchetto di compatibilità su AEM Forms 6.4 consente di utilizzare le risorse Gestione Corrispondenza di AEM Forms 6.3 e i modelli e le pagine dei moduli adattivi obsoleti '
-seo-description: L’installazione del pacchetto di compatibilità su AEM Forms 6.4 consente di utilizzare le risorse Gestione Corrispondenza di AEM Forms 6.3 e i modelli e le pagine dei moduli adattivi obsoleti
+seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 9%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ L’installazione del pacchetto di compatibilità su AEM Forms 6.4 consente di u
 
 ## Panoramica {#overview}
 
-La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.4. Per continuare a utilizzare le lettere di AEM 6.3 Forms e AEM 6.2 Forms, è necessario installare il [pacchetto di compatibilità AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.4. Per continuare a utilizzare le lettere di AEM 6.3 Forms e AEM 6.2 Forms, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 Il pacchetto di compatibilità di AEMFD consente di utilizzare le seguenti risorse da AEM Forms 6.3 e 6.2 su AEM Forms 6.4:
 
@@ -41,7 +41,7 @@ Dopo aver eseguito un aggiornamento, procedi come segue per installare il pacche
 
 Assicurati di avere [AEM pacchetto di compatibilità](/help/sites-deploying/backward-compatibility.md) pre-installato.
 
-1. Installa il [pacchetto di compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+1. Installa il [pacchetto di compatibilità](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
    Per ulteriori informazioni sul caricamento e l&#39;installazione del pacchetto, consulta [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 

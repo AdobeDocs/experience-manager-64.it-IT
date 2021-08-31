@@ -1,8 +1,8 @@
 ---
 title: Java APIQuick Start(SOAP) per componenti e servizi
-seo-title: Java APIQuick Start(SOAP) per componenti e servizi
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Utilizza la Guida rapida ai componenti e ai servizi Java API per distribuire un componente, impostare il contesto di esecuzione di un servizio, disabilitare la sicurezza del servizio, avviare un servizio, modificare i valori di configurazione del servizio e rimuovere i componenti.
-seo-description: Utilizza la Guida rapida ai componenti e ai servizi Java API per distribuire un componente, impostare il contesto di esecuzione di un servizio, disabilitare la sicurezza del servizio, avviare un servizio, modificare i valori di configurazione del servizio e rimuovere i componenti.
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
-
 
 # Guida rapida ai componenti e ai servizi Java API (SOAP) {#components-and-services-java-apiquick-start-soap}
 
@@ -47,9 +46,9 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate cessano di funzionare dopo un aggiornamento, utilizza la strategia di invocazione in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
+>Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate cessano di funzionare dopo un aggiornamento, utilizza la strategia di invocazione in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
 
-## Avvio rapido (modalità SOAP): Distribuzione di un componente utilizzando l&#39;API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
 L&#39;esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
@@ -243,7 +242,7 @@ L&#39;esempio di codice Java seguente imposta il contesto di esecuzione di Run-A
  
 ```
 
-## Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite l&#39;API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal servizio di esempio EncryptDocument e dai servizi richiamati da questo servizio (i servizi Imposta valore e Crittografia).
 
@@ -356,7 +355,7 @@ Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal se
  
 ```
 
-## Avvio rapido (modalità SOAP): Avvio di un servizio utilizzando l&#39;API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Avvio di un servizio tramite l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente viene avviato un servizio denominato *SendEmailService*.
 
@@ -526,7 +525,7 @@ Il seguente esempio Java modifica i valori di configurazione appartenenti a Send
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l&#39;API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l’API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
 
 L’esempio di codice Java seguente rimuove un componente utilizzando l’API Java.
 
@@ -622,4 +621,3 @@ L’esempio di codice Java seguente rimuove un componente utilizzando l’API Ja
   
  
 ```
-

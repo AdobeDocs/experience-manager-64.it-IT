@@ -1,8 +1,8 @@
 ---
 title: Conversione tra formati di file e PDF
-seo-title: Conversione tra formati di file e PDF
+seo-title: Converting Between File Formatsand PDF
 description: Utilizzare il servizio Generate PDF per convertire i formati di file nativi in PDF. Il servizio Generate PDF converte anche i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
-seo-description: Utilizzare il servizio Generate PDF per convertire i formati di file nativi in PDF. Il servizio Generate PDF converte anche i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 79091a75-2669-453f-9560-e58bfffa3487
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7933'
+source-wordcount: '7872'
 ht-degree: 0%
 
 ---
-
 
 # Conversione tra formati di file e PDF {#converting-between-file-formatsand-pdf}
 
@@ -141,7 +140,7 @@ Dopo la conversione del file in un documento PDF, è possibile recuperare i risu
 
 [Generazione rapida API servizio PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Convertire documenti Word in documenti PDF utilizzando l&#39;API Java {#convert-word-documents-to-pdf-documents-using-the-java-api}
+### Conversione di documenti Word in documenti PDF tramite API Java {#convert-word-documents-to-pdf-documents-using-the-java-api}
 
 Convertire un documento di Microsoft Word in un documento PDF utilizzando Genera API PDF (Java):
 
@@ -196,7 +195,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando Genera
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertire documenti Word in documenti PDF utilizzando l&#39;API del servizio Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
+### Conversione di documenti Word in documenti PDF tramite API del servizio Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 Convertire un documento di Microsoft Word in un documento PDF utilizzando Genera API PDF (servizio Web):
 
@@ -308,7 +307,7 @@ Dopo aver convertito il contenuto HTML in un documento PDF, è possibile recuper
 
 [Generazione rapida API servizio PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Java {#convert-html-content-to-a-pdf-document-using-the-java-api}
+### Convertire il contenuto HTML in un documento PDF utilizzando l’API Java {#convert-html-content-to-a-pdf-document-using-the-java-api}
 
 Convertire un documento HTML in un documento PDF utilizzando l’API Generate PDF (Java):
 
@@ -353,7 +352,7 @@ Convertire un documento HTML in un documento PDF utilizzando l’API Generate PD
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API del servizio Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
+### Convertire il contenuto HTML in un documento PDF utilizzando l’API del servizio Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
 
 Convertire il contenuto HTML in un documento PDF utilizzando l’API Generate PDF (servizio Web):
 
@@ -458,7 +457,7 @@ Salva il file convertito. Ad esempio, se converti un documento PDF in un file RT
 
 [Generazione rapida API servizio PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Convertire un documento PDF in un file RTF utilizzando l&#39;API Java {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}
+### Convertire un documento PDF in un file RTF utilizzando l’API Java {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}
 
 Converti un documento PDF in un file RTF utilizzando l’API Generate PDF (Java):
 
@@ -504,7 +503,7 @@ Converti un documento PDF in un file RTF utilizzando l’API Generate PDF (Java)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertire un documento PDF in un file RTF utilizzando l&#39;API del servizio Web {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}
+### Convertire un documento PDF in un file RTF utilizzando l’API del servizio Web {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}
 
 Converti un documento PDF in un file RTF utilizzando l’API Generate PDF (servizio Web):
 
@@ -645,7 +644,7 @@ I file XML di script indirizzano il servizio Generate PDF per spostarsi tra le f
 
 Al contrario, i file XML di dialogo rispondono semplicemente a finestre di dialogo con gli stessi tipi di azioni utilizzati nei file XML di script.
 
-#### Terminologia della finestra di dialogo e dell’elemento della finestra {#dialog-box-and-window-element-terminology}
+#### Terminologia della finestra di dialogo e degli elementi della finestra {#dialog-box-and-window-element-terminology}
 
 Questa sezione e la sezione successiva utilizzano una terminologia diversa per le finestre di dialogo e i componenti che contengono, a seconda della prospettiva descritta. I componenti della finestra di dialogo sono elementi quali pulsanti, campi e caselle combinate.
 
@@ -721,7 +720,7 @@ Tieni presente i seguenti problemi:
 
 Se si prevede di lavorare su file XML di dialogo o script, installare l&#39;applicazione Microsoft Spy++.
 
-#### Estrazione del pacchetto della finestra di dialogo e dei file di script {#unpackaging-the-dialog-and-script-files}
+#### Estrazione della finestra di dialogo e dei file di script {#unpackaging-the-dialog-and-script-files}
 
 I file di dialogo e script si trovano nel file appmondata.jar . Prima di poter modificare uno qualsiasi di questi file o aggiungere nuovi file di script o di dialogo, devi rimuovere il pacchetto da questo file JAR. Ad esempio, si supponga di voler aggiungere il supporto per l&#39;applicazione EditPlus. Si creano due file XML denominati appmon.editplus.script.en_US.xml e appmon.editplus.script.addizione.en_US.xml. Questi script XML devono essere aggiunti al file adobe-appmondata.jar in due posizioni, come specificato di seguito:
 
@@ -772,7 +771,7 @@ Utilizza Microsoft Spy++ per ottenere le identità delle proprietà degli elemen
 
 #### Utilizzo di espressioni regolari negli attributi della didascalia {#using-regular-expressions-in-caption-attributes}
 
-È possibile utilizzare espressioni regolari nelle specifiche delle didascalie. Il servizio Genera PDF utilizza la classe `java.util.regex.Matcher` per supportare espressioni regolari. Questa utility supporta le espressioni regolari descritte in `java.util.regex.Pattern`. (Vai al sito web Java all&#39;indirizzo [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+È possibile utilizzare espressioni regolari nelle specifiche delle didascalie. Il servizio Genera PDF utilizza la classe `java.util.regex.Matcher` per supportare espressioni regolari. Questa utility supporta le espressioni regolari descritte in `java.util.regex.Pattern`.
 
 **Espressione regolare che gestisce il nome del file aggiunto al Blocco note nel banner Blocco note**
 
@@ -1144,4 +1143,3 @@ Questo esempio specifica come il servizio Generate PDF deve interagire con Notep
     <abortMessage msg="15078"/> 
 </application>
 ```
-

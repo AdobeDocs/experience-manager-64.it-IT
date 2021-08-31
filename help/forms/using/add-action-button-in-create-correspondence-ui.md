@@ -1,24 +1,23 @@
 ---
 title: Aggiungi azione/pulsante personalizzato nell’interfaccia utente Crea corrispondenza
-seo-title: Aggiungi azione/pulsante personalizzato nell’interfaccia utente Crea corrispondenza
+seo-title: Add custom action/button in Create Correspondence UI
 description: Scopri come aggiungere azione/pulsante personalizzato nell’interfaccia utente Crea corrispondenza
-seo-description: Scopri come aggiungere azione/pulsante personalizzato nell’interfaccia utente Crea corrispondenza
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
 
-
-# Aggiungi azione/pulsante personalizzato in Crea interfaccia utente Corrispondenza {#add-custom-action-button-in-create-correspondence-ui}
+# Aggiungi azione/pulsante personalizzato nell’interfaccia utente Crea corrispondenza {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Panoramica {#overview}
 
@@ -33,7 +32,7 @@ Per completare questo scenario, è necessario quanto segue:
 * Conoscenza di CRX e JavaScript
 * Server LiveCycle
 
-## Scenario: Crea il pulsante nell&#39;interfaccia utente Crea corrispondenza per inviare una lettera per la revisione {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scenario: Crea il pulsante nell’interfaccia utente Crea corrispondenza per inviare una lettera per la revisione {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 L’aggiunta di un pulsante con un’azione (qui invia lettera per la revisione) all’interfaccia utente Crea corrispondenza include:
 
@@ -323,7 +322,7 @@ La gestione dell’azione o del pulsante quando si fa clic su action/button incl
       '</div>';
       ```
 
-### Aggiungi il processo di LiveCycle per abilitare la gestione dell&#39;azione <span class="acrolinxCursorMarker"></span>{#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Aggiungi il processo di LiveCycle per abilitare la gestione dell&#39;azione <span class="acrolinxCursorMarker"></span>. {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In questo scenario, abilita i seguenti componenti, che fanno parte del file components.zip allegato:
 
@@ -425,11 +424,11 @@ Per ulteriori informazioni, consulta [Collegamento di AEM Forms con il LiveCycle
 
    >[!NOTE]
    >
-   >Ogni volta che apporti modifiche sul lato server, riavvia il server di LiveCycle. Per informazioni sulla creazione di un componente di LiveCycle personalizzato, consulta [Estensione del software ES di LiveCycle tramite lo sviluppo DSC personalizzato](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Ogni volta che apporti modifiche sul lato server, riavvia il server.
 
    Il file `DSCSample.jar` utilizza l&#39;API `renderLetter`. Per ulteriori informazioni sull&#39;API renderLetter, consulta [Interfaccia LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-#### Importa DSC in LiveCycle {#import-dsc-to-livecyle}
+#### Importare DSC in AEM Forms su JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar` Il file utilizza l’ `renderLetter` API per eseguire il rendering della lettera come byte PDF dai dati XML che C fornisce come input. Per ulteriori informazioni su renderLetter e altre API, consulta [Servizio di rendering delle lettere](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 

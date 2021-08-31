@@ -1,8 +1,8 @@
 ---
 title: Gestione programmatica degli endpoint
-seo-title: Gestione programmatica degli endpoint
+seo-title: Programmatically Managing Endpoints
 description: Utilizzare il servizio Registro di sistema degli endpoint per aggiungere endpoint EJB, aggiungere endpoint SOAP, aggiungere endpoint Watched Folder, aggiungere endpoint e-mail, aggiungere endpoint Remoting, aggiungere endpoint Task Manager, modificare endpoint, rimuovere endpoint e recuperare informazioni sul connettore degli endpoint.
-seo-description: Utilizzare il servizio Registro di sistema degli endpoint per aggiungere endpoint EJB, aggiungere endpoint SOAP, aggiungere endpoint Watched Folder, aggiungere endpoint e-mail, aggiungere endpoint Remoting, aggiungere endpoint Task Manager, modificare endpoint, rimuovere endpoint e recuperare informazioni sul connettore degli endpoint.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10850'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
-
 
 # Gestione programmatica degli endpoint {#programmatically-managing-endpoints}
 
@@ -117,7 +116,7 @@ Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Dopo aver abilitat
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiunta di un endpoint EJB utilizzando l&#39;API Java {#adding-an-ejb-endpoint-using-the-java-api}
+### Aggiunta di un endpoint EJB tramite l’API Java {#adding-an-ejb-endpoint-using-the-java-api}
 
 Aggiungi un endpoint EJB utilizzando l&#39;API Java:
 
@@ -222,7 +221,7 @@ Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando l’endpoin
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiungi un endpoint SOAP utilizzando l&#39;API Java {#add-a-soap-endpoint-using-the-java-api}
+### Aggiungere un endpoint SOAP utilizzando l’API Java {#add-a-soap-endpoint-using-the-java-api}
 
 Aggiungi un endpoint SOAP a un servizio utilizzando l&#39;API Java:
 
@@ -324,7 +323,7 @@ L&#39;elenco seguente specifica i valori di configurazione impostati durante l&#
 
 * **url**: Specifica il percorso della cartella controllata. In un ambiente cluster, questo valore deve puntare a una cartella di rete condivisa accessibile da ogni computer del cluster.
 * **asincrono**: Identifica il tipo di chiamata come asincrono o sincrono. I processi transitori e sincroni possono essere richiamati solo in modo sincrono. Il valore predefinito è vero. È consigliato l’utilizzo asincrono.
-* **cronExpression**: Utilizzato dal quarzo per pianificare il polling della directory di input. Per informazioni dettagliate sulla configurazione dell&#39;espressione cron, consulta [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **cronExpression**: Utilizzato dal quarzo per pianificare il polling della directory di input.
 * **purgeDuration**: Questo è un attributo obbligatorio. I file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore viene misurato in giorni. Questo attributo è utile per garantire che la cartella dei risultati non sia piena. Il valore -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
 * **repeatInterval**: L&#39;intervallo, in secondi, per la scansione della cartella sottoposta a controllo per l&#39;input. A meno che non sia abilitata la limitazione, questo valore deve essere più lungo del tempo necessario per elaborare un lavoro medio; in caso contrario, il sistema potrebbe sovraccaricarsi. Il valore predefinito è 5.
 * **repeatCount**: Il numero di volte in cui una cartella osservata esegue la scansione della cartella o della directory. Il valore -1 indica una scansione indefinita. Il valore predefinito è -1.
@@ -390,7 +389,7 @@ Dopo aver creato un endpoint per cartelle controllate, è necessario abilitarlo.
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiungi un endpoint per cartelle controllate utilizzando l&#39;API Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Aggiungi un endpoint per cartelle controllate utilizzando l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
 Aggiungi un endpoint per cartelle controllate utilizzando l’API Java di AEM Forms:
 
@@ -462,7 +461,7 @@ Aggiungi un endpoint per cartelle controllate utilizzando l’API Java di AEM Fo
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### File costante dei valori di configurazione delle cartelle controllate {#watched-folder-configuration-values-constant-file}
+### File costante dei valori di configurazione della cartella controllata {#watched-folder-configuration-values-constant-file}
 
 Avvio rapido [di: L&#39;aggiunta di un endpoint per cartelle controllate tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilizza un file costante che deve far parte del progetto Java per compilare il quick start. Questo file costante rappresenta i valori di configurazione che devono essere impostati quando si aggiunge un endpoint Watched Folder. Il seguente codice Java rappresenta il file costante.
 
@@ -635,7 +634,7 @@ Dopo aver creato un endpoint e-mail, devi attivarlo. Quando l’endpoint è abil
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiungi un endpoint e-mail utilizzando l&#39;API Java {#add-an-email-endpoint-using-the-java-api}
+### Aggiungi un endpoint e-mail utilizzando l’API Java {#add-an-email-endpoint-using-the-java-api}
 
 Aggiungi un endpoint e-mail utilizzando l’API Java:
 
@@ -707,7 +706,7 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### File costante dei valori di configurazione e-mail {#email-configuration-values-constant-file}
+### File costante valori di configurazione e-mail {#email-configuration-values-constant-file}
 
 Avvio rapido [di: L&#39;aggiunta di un endpoint e-mail tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilizza un file costante che deve far parte del progetto Java per compilare il quick start. Questo file costante rappresenta i valori di configurazione che devono essere impostati quando si aggiunge un endpoint e-mail. Il seguente codice Java rappresenta il file costante.
 
@@ -820,7 +819,7 @@ Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando un endpoint
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiungi un endpoint remoto utilizzando l&#39;API Java {#add-a-remoting-endpoint-using-the-java-api}
+### Aggiungere un endpoint remoto utilizzando l&#39;API Java {#add-a-remoting-endpoint-using-the-java-api}
 
 Aggiungi un endpoint remoto utilizzando l&#39;API Java:
 
@@ -931,7 +930,7 @@ Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando l’endpoin
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aggiungi un endpoint TaskManager utilizzando l&#39;API Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Aggiungere un endpoint TaskManager utilizzando l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
 Aggiungi un endpoint TaskManager utilizzando l&#39;API Java:
 
@@ -1043,7 +1042,7 @@ Quando modifichi un endpoint, specifica nuovi valori di configurazione. Ad esemp
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Modifica di un endpoint utilizzando l&#39;API Java {#modifying-an-endpoint-using-the-java-api}
+### Modifica di un endpoint utilizzando l’API Java {#modifying-an-endpoint-using-the-java-api}
 
 Modificare un endpoint utilizzando l&#39;API Java:
 
@@ -1171,7 +1170,7 @@ Rimuovi un endpoint utilizzando l&#39;API Java:
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Recupero informazioni sul connettore endpoint {#retrieving-endpoint-connector-information}
+## Recupero delle informazioni sul connettore endpoint {#retrieving-endpoint-connector-information}
 
 Puoi recuperare in modo programmatico informazioni sui connettori endpoint utilizzando l’API di AEM Forms. Un connettore consente a un endpoint di richiamare un servizio utilizzando vari metodi di chiamata. Ad esempio, un connettore per cartelle controllate consente a un endpoint di richiamare un servizio utilizzando cartelle controllate. Recuperando programmaticamente le informazioni sui connettori endpoint, puoi recuperare i valori di configurazione associati a un connettore, ad esempio quali valori di configurazione sono obbligatori e quali facoltativi.
 
@@ -1234,7 +1233,7 @@ Dopo aver specificato il tipo di connettore, puoi recuperare informazioni sul co
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Recupera le informazioni sul connettore endpoint utilizzando l&#39;API Java {#retrieve-endpoint-connector-information-using-the-java-api}
+### Recupera le informazioni sul connettore endpoint utilizzando l’API Java {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Recupera le informazioni sul connettore endpoint utilizzando l’API Java:
 

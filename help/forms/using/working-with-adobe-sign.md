@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di Adobe Sign in un modulo adattivo
-seo-title: Utilizzo di Adobe Sign in un modulo adattivo
+seo-title: Using Adobe Sign in an adaptive form
 description: 'Attiva i flussi di lavoro di firma elettronica (Adobe Sign) per un modulo adattivo per automatizzare i flussi di lavoro di firma, semplificare i processi di firma singola e multipla e per firmare elettronicamente i moduli dai dispositivi mobili. '
-seo-description: Attiva i flussi di lavoro di firma elettronica (Adobe Sign) per un modulo adattivo per automatizzare i flussi di lavoro di firma, semplificare i processi di firma singola e multipla e per firmare elettronicamente i moduli dai dispositivi mobili.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,13 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Adobe Sign
-translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di Adobe Sign in un modulo adattivo {#using-adobe-sign-in-an-adaptive-form}
 
@@ -145,7 +144,7 @@ Con questa opzione, Adobe Sign non è abilitato per un modulo adattivo. Esegui i
 1. Nel browser Contenuto, tocca **Contenitore modulo** e tocca l&#39;icona **Configura** ![configura](assets/configure.png) . Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandere il pannello a soffietto **Firma elettronica** e selezionare l&#39;opzione **Abilita Adobe Sign**. Abilita Adobe Sign per un modulo adattivo.
 
-### Seleziona Cloud Service Adobe Sign e ordine di firma {#selectadobesigncloudserviceforanadaptiveform}
+### Selezionare il Cloud Service Adobe Sign e l’ordine di firma {#selectadobesigncloudserviceforanadaptiveform}
 
 Puoi configurare più servizi Adobe Sign per un’istanza di AEM Forms. È consigliabile disporre di un insieme separato di servizi per ciascuna funzione (risorse umane, finanze e altro ancora). Semplifica il tracciamento e il reporting dei documenti firmati. Ad esempio, una banca ha più reparti. Puoi disporre di una configurazione separata per ogni reparto per un migliore monitoraggio dei documenti.
 
@@ -189,7 +188,7 @@ Per un modulo adattivo è possibile avere un solo firmatario o più firmatari. Q
 
    >[!NOTE]
    >
-   >* Per impostazione predefinita, l&#39;autenticazione basata sull&#39;identità social fornisce un&#39;opzione per l&#39;autenticazione tramite Facebook, Google e LinkedIn. Puoi contattare il supporto Adobe Sign per abilitare altri provider di autenticazione social.
+   >* Per impostazione predefinita, l’autenticazione basata sull’identità social fornisce un’opzione per l’autenticazione tramite Facebook, Google e LinkedIn. Puoi contattare il supporto Adobe Sign per abilitare altri provider di autenticazione social.
 
 
    * **Campi Adobe Sign da compilare o firmare:** seleziona i campi Adobe Sign per il firmatario. Un modulo adattivo può avere più campi Adobe Sign. Puoi scegliere di abilitare campi specifici per un firmatario. Nel campo vengono visualizzati tutti i blocchi Adobe Sign disponibili. Quando selezioni un blocco, vengono selezionati tutti i campi del blocco. Puoi usare l’icona X per deselezionare un campo.
@@ -258,7 +257,7 @@ Un utente può inoltre firmare un modulo adattivo durante la compilazione del mo
 
 ![esperienza di firma in-form](assets/in-form-signing-experience.png)
 
-### Aggiungi e configura il componente Passaggio firma {#add-and-configure-the-signature-step-component}
+### Aggiungere e configurare il componente Passaggio firma {#add-and-configure-the-signature-step-component}
 
 Utilizzare il componente Passaggio firma per fornire un’area per firmare elettronicamente il modulo compilato. Quando viene eseguito il rendering della sezione contenente il componente Passaggio firma, viene visualizzata una versione PDF segnalabile del modulo compilato. Il componente Passaggio firma occupa la larghezza completa disponibile per il modulo. Si consiglia di non avere alcun altro componente nella sezione contenente il componente Passaggio firma.
 
@@ -302,7 +301,7 @@ A questo punto, l’esperienza di firma in modulo è pronta. È possibile visual
 
 **D: Posso usare i tag di testo di Adobe Sign in un componente di testo statico di un modulo adattivo?**
 
-**Ans:** Sì, è possibile utilizzare i tag di testo in un componente di testo per aggiungere campi Adobe Sign a un modulo adattivo abilitato per  [Document of Record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (solo opzione per il documento di record generato automaticamente). Per informazioni sulla procedura e le regole per creare un tag di testo, consulta [Documentazione Adobe Sign](https://helpx.adobe.com/sign/help/text-tags.html). Inoltre, i moduli adattivi hanno un supporto limitato per i tag di testo. È possibile utilizzare i tag di testo per creare solo i campi supportati da Adobe Sign Block.
+**Ans:** Sì, è possibile utilizzare i tag di testo in un componente di testo per aggiungere campi Adobe Sign a un modulo adattivo abilitato per  [Document of Record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (solo opzione per il documento di record generato automaticamente). Per informazioni sulla procedura e le regole per creare un tag di testo, consulta [Documentazione Adobe Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Inoltre, i moduli adattivi hanno un supporto limitato per i tag di testo. È possibile utilizzare i tag di testo per creare solo i campi supportati da Adobe Sign Block.
 
 **D: AEM Forms fornisce sia componenti blocco Adobe Sign che componenti passo firma. Possono essere utilizzati simultaneamente in un modulo adattivo?**
 
@@ -311,4 +310,3 @@ A questo punto, l’esperienza di firma in modulo è pronta. È possibile visual
 **Blocco Adobe Sign:** puoi utilizzare il blocco Adobe Sign per aggiungere campi Adobe Sign in qualsiasi punto del modulo adattivo. Consente inoltre di assegnare campi specifici ai firmatari. Quando un modulo adattivo viene visualizzato in anteprima o pubblicato, il blocco Adobe Sign non è visibile, per impostazione predefinita. Questi blocchi sono abilitati solo nel documento di firma. Nel documento di firma sono abilitati solo i campi assegnati a un firmatario. Il blocco Adobe Sign può essere utilizzato con il primo e il successivo firmatario.
 
 **Componente Passaggio firma:** è possibile utilizzare il componente Passaggio firma per creare un’esperienza di firma all’interno del modulo. Consente la firma solo del primo firmatario durante la compilazione del modulo. Quando si esegue il rendering della sezione contenente il componente Passaggio firma, viene visualizzata una versione PDF del modulo segnalabile. Si tratta generalmente dell’ultima o della penultima sezione seguita dal componente di riepilogo di un modulo.
-

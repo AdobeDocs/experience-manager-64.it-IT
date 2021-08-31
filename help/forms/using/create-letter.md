@@ -1,21 +1,20 @@
 ---
 title: Crea lettera
-seo-title: Crea lettera
+seo-title: Create Letter
 description: 'Questo argomento descrive i passaggi necessari per creare una lettera, aggiungere moduli di dati e allegati e visualizzarne l’anteprima in Gestione Corrispondenza. '
-seo-description: 'Questo argomento descrive i passaggi necessari per creare una lettera, aggiungere moduli di dati e allegati e visualizzarne l’anteprima in Gestione Corrispondenza. '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 2%
 
 ---
-
 
 # Crea lettera {#create-letter}
 
@@ -76,13 +75,13 @@ Un frammento di layout è un layout utilizzabile all’interno di una o più let
 
 Esistono due modi per generare la corrispondenza inviata ai clienti: guidati dall&#39;utente e guidati dal sistema.
 
-#### Guidato dall&#39;utente {#user-driven}
+#### Basato su utente {#user-driven}
 
 I dipendenti rivolti al cliente, come i responsabili del trattamento dei sinistri o i collaboratori aziendali, possono creare una corrispondenza personalizzata. Utilizzando un&#39;interfaccia semplice e intuitiva per la compilazione delle lettere, gli utenti aziendali possono aggiungere testo facoltativo alla corrispondenza, personalizzare contenuti modificabili durante l&#39;anteprima della corrispondenza in tempo reale. Possono quindi inviare la corrispondenza personalizzata a un processo back-end.
 
 ![Corrispondenza personalizzata basata sull&#39;utente](assets/02.png)
 
-#### Sistema guidato {#system-driven}
+#### Sistema {#system-driven}
 
 La generazione della corrispondenza è automatizzata, guidata dai trigger degli eventi. Ad esempio, un avviso di promemoria inviato a un cittadino che le chiede di inoltrare una richiesta di anticipo fiscale viene generato dalla fusione del modello predefinito con i dati del cittadino. La lettera finale può essere inviata via e-mail, stampata, inviata via fax o archiviata.
 
@@ -232,7 +231,7 @@ Per creare una corrispondenza, è necessario disporre innanzitutto dei seguenti 
 * [Pacchetto di compatibilità](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Installa il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Forms**.
 
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
-* Altri XDP ([frammenti di layout](/help/forms/using/document-fragments.md)) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Altri XDP ([frammenti di layout](/help/forms/using/document-fragments.md)) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](http://www.adobe.com/go/learn_aemforms_designer_64).
 
 * Il [dizionario dati ](/help/forms/using/data-dictionary.md) pertinente (facoltativo).
 * I [moduli dati](/help/forms/using/document-fragments.md) che desideri utilizzare nella corrispondenza.
@@ -480,4 +479,3 @@ I seguenti valori nella tabella
 1. Tocca Incolla. Viene visualizzata la finestra di dialogo Incolla. Se si copiano e si incolla le lettere nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
 1. Se necessario, modificare il Titolo e il Nome con cui si desidera salvare la copia della lettera.
 1. Tocca Incolla. Viene creata la copia della lettera. Ora è possibile apportare le modifiche necessarie nella nuova lettera creata.
-

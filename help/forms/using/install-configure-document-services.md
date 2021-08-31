@@ -1,16 +1,16 @@
 ---
 title: Installazione e configurazione di document services
-seo-title: Installazione e configurazione di document services
+seo-title: Installing and configuring document services
 description: Installare AEM Forms Document Services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare moduli con codice a barre.
-seo-description: Installare AEM Forms Document Services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare moduli con codice a barre.
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,6 @@ Prima di iniziare a installare e configurare AEM Forms Document Services, assicu
 >* Nei sistemi operativi basati su UNIX, PDF Generator supporta percorsi di conversione WebKit e PhantomJS per convertire i file HTML in documenti PDF.
 
 >
-
 
 
 ### Requisiti aggiuntivi per il sistema operativo basato su UNIX {#extrarequirements}
@@ -208,7 +207,6 @@ Se si utilizza il servizio PDF Generator per convertire i formati di file nativi
 >
 
 
-
 Dopo aver installato Acrobat, apri Microsoft Word. Nella scheda **Acrobat** fare clic su **Crea PDF** e convertire un file .doc o .docx disponibile sul computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto per utilizzare Acrobat con il servizio PDF Generator.
 
 ### Variabili dell’ambiente di configurazione {#setup-environment-variables}
@@ -260,8 +258,7 @@ Imposta le variabili di ambiente per Java Development Kit a 32 bit e 64 bit, app
 >* Se si utilizza OpenOffice su una piattaforma basata su UNIX, eseguire il comando seguente per impostare la variabile del percorso:
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Solo per IBM WebSphere) Configura provider di socket SSL IBM {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ Copiare il font Unicode in una delle seguenti directory in base alle esigenze de
 >
 
 
-
 ## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene AEM Forms Document Services e altre funzionalità di AEM Forms. Esegui i seguenti passaggi per installare il pacchetto:
@@ -440,7 +436,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
 
 ### Configurare un account utente locale per eseguire il servizio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Per eseguire il servizio PDF Generator è necessario un account utente locale. Per i passaggi necessari per creare un utente locale, vedere [Creare un account utente in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o [creare un account utente nelle piattaforme basate su UNIX](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
+Per eseguire il servizio PDF Generator è necessario un account utente locale. Per i passaggi necessari per creare un utente locale, vedere [Creare un account utente in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o creare un account utente nelle piattaforme basate su UNIX.
 
 1. Apri la pagina [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html) .
 

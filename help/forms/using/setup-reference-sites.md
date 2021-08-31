@@ -1,22 +1,22 @@
 ---
 title: Configurare e configurare i siti di riferimento di AEM Forms
-seo-title: Configurare e configurare i siti di riferimento di AEM Forms
+seo-title: Set up and configure AEM Forms reference sites
 description: Nei siti di riferimento di AEM Forms viene illustrato come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
-seo-description: Nei siti di riferimento di AEM Forms viene illustrato come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
 
-# Configurare e configurare i siti di riferimento AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+# Configurare e configurare i siti di riferimento di AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms fornisce un’implementazione del sito di riferimento per dimostrare in che modo AEM Forms aiuta le organizzazioni del settore e del governo dei servizi finanziari a trasformare le loro transazioni complesse in esperienze digitali semplici e coinvolgenti ovunque, in qualsiasi momento, su qualsiasi dispositivo.
 
@@ -153,7 +153,7 @@ La configurazione SSL è necessaria per comunicare con i server Adobe Sign. Per 
 
 ## Configurare la configurazione Day CQ Link Externalizer {#externalizer}
 
-In AEM, il **esternalizzatore** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse (ad esempio /path/to/my/page) in un URL esterno e assoluto (ad esempio, https://www.mycompany.com/path/to/my/page) prefissando il percorso con un DNS preconfigurato. Consulta [Eternalizzazione degli URL](/help/sites-developing/externalizer.md).
+In AEM, il **esternalizzatore** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorsa (ad esempio, /path/to/my/page) in un URL esterno e assoluto (ad esempio, https://www.mycompany.com/path/to/my/page) prefissando il percorso con un DNS preconfigurato. Consulta [Eternalizzazione degli URL](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -233,7 +233,7 @@ Dopo aver installato i pacchetti e avviato le istanze di authoring e pubblicazio
 
 Se l’installazione ha esito positivo, puoi accedere alle pagine di destinazione dei siti di riferimento We.Gov e We.Finance.
 
-## (Facoltativo) Importa dati di esempio in Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}
+## (Facoltativo) Importare dati di esempio in Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}
 
 I siti di riferimento dell’applicazione di mutuo per la casa e dell’applicazione di assicurazione automatica sono configurati per utilizzare i record di Microsoft Dynamics. Il pacchetto del sito di riferimento installa un&#39;entità personalizzata e record di esempio che è possibile importare in Microsoft Dynamics per eseguire il sito di riferimento. Esegui i seguenti passaggi per eseguire la migrazione e impostare i dati di esempio:
 

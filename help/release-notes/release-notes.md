@@ -1,8 +1,8 @@
 ---
 title: Note generali sulla versione per Adobe Experience Manager 6.4
-seo-title: Note sulla versione
+seo-title: Release Notes
 description: 'Note di Adobe Experience Manager 6.4 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche. '
-seo-description: 'Note di Adobe Experience Manager 6.4 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,11 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-translation-type: tm+mt
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 29%
+source-wordcount: '2754'
+ht-degree: 27%
 
 ---
 
@@ -31,7 +30,7 @@ ht-degree: 29%
 
 ### Informazioni varie {#trivia}
 
-Il ciclo di rilascio per questa versione di Adobe Experience Manager è iniziato il 27 aprile 2017 ed è terminato il 22 marzo 2018 passando attraverso 22 fasi successive di controllo della qualità e risoluzione dei bug. Il numero complessivo di errori relativi ai clienti risolti in questa versione con miglioramenti e aggiunta di nuove funzioni è pari a 704. 
+Il ciclo di rilascio di questa versione di Adobe Experience Manager è iniziato il 27 aprile 2017 ed è terminato il 22 marzo 2018 passando attraverso 22 fasi successive di controllo della qualità e risoluzione dei bug. Il numero complessivo di errori relativi ai clienti risolti in questa versione con miglioramenti e aggiunta di nuove funzioni è pari a 704. 
 
 Adobe Experience Manager 6.4 è disponibile a livello generale dall’4 aprile 2018.
 
@@ -41,7 +40,7 @@ Adobe Experience Manager 6.4 è disponibile a livello generale dall’4 aprile 2
 
 ## Novità {#what-s-new}
 
-Adobe Experience Manager 6.4 è una versione di aggiornamento del codice di base di Adobe Experience Manager 6.3. Fornisce funzionalità nuove e migliorate, importanti correzioni di casi segnalati dai clienti, miglioramenti con priorità alta e correzioni di bug generali per migliorare la stabilità del prodotto. Include inoltre la maggior parte dei pacchetti di funzioni, degli hotfix e dei service pack di Adobe Experience Manager 6.3.
+Adobe Experience Manager 6.4 è una versione di aggiornamento del codice di base di Adobe Experience Manager 6.3. Fornisce funzionalità nuove e migliorate, importanti correzioni di casi segnalati dai clienti, miglioramenti con priorità alta e correzioni di bug generali per migliorare la stabilità del prodotto. Include anche la maggior parte di tutti i pacchetti di funzioni, gli hotfix e i service pack di Adobe Experience Manager 6.3.
 
 L’elenco seguente fornisce una panoramica, mentre nelle pagine successive sono riportati tutti i dettagli.
 
@@ -101,7 +100,7 @@ Per ulteriori informazioni, visita [questa pagina di documentazione](/help/sites
 
 ![screen_shot_2018-04-04at71143am](assets/screen_shot_2018-04-04at71143am.png)
 
-#### Aggiornamento dalla versione precedente {#upgrade-from-earlier-version}
+#### Aggiornamento da versione precedente {#upgrade-from-earlier-version}
 
 * [Compatibilità](/help/sites-deploying/backward-compatibility.md) con le versioni precedenti: Le funzioni retrocompatibili della versione 6.4 consentono di mantenere il codice personalizzato compatibile nella maggior parte dei casi e riducono lo sforzo di aggiornamento.
 * [Valutazione](/help/sites-deploying/pattern-detector.md) della complessità dell’aggiornamento: Nuovo strumento di rilevamento pattern per valutare la complessità degli aggiornamenti prima dell’aggiornamento.
@@ -128,11 +127,11 @@ Grazie alla funzionalità Blocchi predefiniti, ora è più efficiente creare var
 
 Sono stati apportati diversi miglioramenti a Sling Model Exporter e ai componenti core, allo scopo di fornire un output JSON affidabile per incorporare contenuti nelle app mobili e nelle esperienze create con app a pagina singola.
 
-#### Come creare i siti più rapidamente {#gettings-sites-built-quicker}
+#### Come Creare I Siti Più Rapidamente {#gettings-sites-built-quicker}
 
 AEM 6.4 completa la trasformazione al modello componente di nuova generazione. Il concetto dei componenti core introdotto in AEM 6.3 e ora unito al sistema di stili, fornisce un modo efficiente per creare nuovi siti ed estendere quelli esistenti.
 
-Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/it/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Add-on Screens {#screens-add-on}
 
@@ -176,7 +175,7 @@ AEM 6.4 Communities espone [API predefinite](/help/communities/user-ugc-manageme
 
 L’icona Elimina è ora disponibile sui rispettivi siti e gruppi durante la navigazione dalla navigazione globale. Questa icona elimina tutti gli elementi e i contenuti associati al sito o al gruppo e rimuove tutte le associazioni utente. Per ulteriori informazioni su questa funzionalità, consulta [gestione dei siti della community](/help/communities/create-site.md#main-pars-text-fe17) e [gestione dei gruppi della community](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Miglioramenti a Abilitazione {#enhancements-to-enablement}
+#### Miglioramenti all’abilitazione {#enhancements-to-enablement}
 
 Le funzioni Assegnazione e Catalogo sono ora disponibili all&#39;interno dei gruppi. Questo consente di creare, gestire e pubblicare contenuti di apprendimento per un set specifico di membri della community mirati. Per ulteriori informazioni sull&#39;abilitazione dei gruppi di community, consulta [gestione delle risorse di abilitazione](/help/communities/resource.md).
 
@@ -222,7 +221,7 @@ Sono stati apportati diversi miglioramenti per migliorare l’esperienza di navi
 
 Diversi miglioramenti in aree di metadati, reporting, diritti digitali, esperienza di accesso e prestazioni di pubblicazione per la distribuzione delle risorse. Per informazioni sui nuovi miglioramenti e funzioni, consulta [Novità di AEM Assets Brand Portal](https://docs.adobe.com/content/help/it/experience-manager-brand-portal/using/introduction/whats-new.html).
 
-#### Componente aggiuntivo Dynamic Media {#dynamic-media-add-on}
+#### Add-on Dynamic Media {#dynamic-media-add-on}
 
 AEM 6.4 include molte nuove funzioni e miglioramenti apportati a Dynamic Media. L&#39;elenco completo è disponibile in [AEM Assets](assets.md). Elementi di rilievo:
 
@@ -313,11 +312,11 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 * Pacchetti per le funzionalità di AEM Forms:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Lingue {#languages}
 
@@ -356,7 +355,7 @@ Adobe valuta costantemente le funzionalità del prodotto e, nel tempo, pianifica
 
 Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete e rimosse](deprecated-removed-features.md). La pagina contiene anche un pre-annuncio delle modifiche nel 2019 e un avviso importante per i clienti che aggiornano da versioni precedenti.
 
-## Elenchi di modifiche dettagliate {#detailed-changes-lists}
+## Elenchi di modifiche dettagliati {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 
@@ -372,7 +371,7 @@ Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete
 
 [Elenco dei problemi noti](known-issues.md)
 
-### Download e supporto del prodotto (siti con limitazioni)  {#product-download-and-support-restricted-sites}
+### Download e supporto del prodotto (siti con limitazioni) {#product-download-and-support-restricted-sites}
 
 Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
 

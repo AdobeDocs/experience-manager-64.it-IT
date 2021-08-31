@@ -1,8 +1,8 @@
 ---
 title: Migrare risorse e documenti AEM Forms
-seo-title: Migrare risorse e documenti AEM Forms
+seo-title: Migrate AEM Forms assets and documents
 description: L’utility Migration ti consente di migrare risorse e documenti AEM Forms da Forms 6.3 o versioni precedenti a AEM Forms 6.4.
-seo-description: L’utility Migration ti consente di migrare risorse e documenti AEM Forms da Forms 6.3 o versioni precedenti a AEM Forms 6.4.
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 2%
 
 ---
 
@@ -38,13 +38,13 @@ L&#39;utility Migration converte le [risorse Forms adattive](/help/forms/using/i
 
 **In caso di aggiornamento sul posto**
 
-Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, dovrai installare [pacchetto di compatibilità AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (incluso il pacchetto di compatibilità per la gestione della corrispondenza)
+Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, dovrai installare [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (incluso il pacchetto di compatibilità per la gestione della corrispondenza)
 
 Quindi devi aggiornare le risorse e i documenti [eseguendo l&#39;utility di migrazione](#runningmigrationutility).
 
 **In caso di installazione fuori luogo**
 
-Se si tratta di un&#39;installazione obsoleta (nuova), prima di poter utilizzare le risorse e i documenti, dovrai installare [Pacchetto compatibilità AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (include il pacchetto Compatibilità di gestione della corrispondenza).
+Se si tratta di un&#39;installazione obsoleta (nuova), prima di poter utilizzare le risorse e i documenti, dovrai installare [Pacchetto compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (include il pacchetto Compatibilità di gestione della corrispondenza).
 
 Quindi devi importare il pacchetto risorse (zip o cmp) nella nuova configurazione e quindi aggiornare le risorse e i documenti [eseguendo l&#39;utility Migrazione](#runningmigrationutility). A causa di [modifiche relative alla compatibilità con le versioni precedenti](/help/sites-deploying/backward-compatibility.md), le posizioni di alcune cartelle in crx-repository vengono modificate. Esporta e importa manualmente le dipendenze (librerie e risorse personalizzate) dalla configurazione precedente all’ambiente nuovo.
 
@@ -107,15 +107,12 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
    >È possibile migrare questi componenti aprendoli nell’editor di regole nell’editor di Forms adattivo.
    >
    >* Per eseguire la migrazione di regole e script (non necessari se si esegue l’aggiornamento dalla versione 6.3) nei componenti personalizzati, tocca Migrazione componenti personalizzati Forms adattivi e, nella schermata successiva, tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
-      >
-      >  
-   * Regole e script creati con l’editor di regole (6.1 FP1 e versioni successive)
+   >
+   >  * Regole e script creati con l’editor di regole (6.1 FP1 e versioni successive)
    >  * Script creati utilizzando la scheda Script nell’interfaccia utente di 6.1 e versioni precedenti
    >* Per migrare i modelli (non necessari se si esegue l’aggiornamento dalla versione 6.3), tocca Migrazione modelli di Forms adattivi e, nella schermata successiva, tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
-
-      >
-      >  
-   * Modelli precedenti - i modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Ciò include gli script definiti nei componenti del modello.
+   >
+   >  * Modelli precedenti - i modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Ciò include gli script definiti nei componenti del modello.
    >  * Nuovi modelli: modelli di moduli adattivi creati utilizzando l’editor di modelli in /conf. Ciò include la migrazione di regole e script creati utilizzando l&#39;editor di regole.
 
 
@@ -175,5 +172,5 @@ Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività 
    1. Apri il file XFA nella versione più recente di Designer e salvalo. La versione di XFA viene aggiornata a quella più recente.
    1. Carica l&#39;XFA nell&#39;interfaccia utente di Forms.
 
-1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza dell’autore e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
+1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza di authoring e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
 1. In AEM Forms 6.4 vengono modificati alcuni dei diritti dei gruppi di utenti dei moduli. Se desideri che uno qualsiasi dei tuoi utenti sia in grado di caricare XDP e Adaptive Forms contenenti script o utilizzare l&#39;editor di codice, devi aggiungerli al gruppo utenti di forms-power-users. Allo stesso modo, gli autori di modelli non possono più utilizzare l&#39;editor di codice nell&#39;editor di regole. Per consentire agli utenti di utilizzare l’editor di codice, aggiungili al gruppo af-template-script-writers. Per istruzioni su come aggiungere utenti ai gruppi, consulta [Gestione di utenti e gruppi di utenti](/help/communities/users.md).

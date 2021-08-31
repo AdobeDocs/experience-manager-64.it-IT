@@ -1,24 +1,23 @@
 ---
 title: Temi di riferimento
-seo-title: Temi di riferimento
-description: ' AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere da Distribuzione software e utilizzare per lo stile di un modulo. '
-seo-description: ' AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere da Distribuzione software e utilizzare per lo stile di un modulo. '
+seo-title: Reference Themes
+description: 'AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere dalla Distribuzione di software e utilizzare per personalizzare lo stile di un modulo. '
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
-translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-
 # Temi di riferimento {#reference-themes}
 
-[I ](/help/forms/using/themes.md) temi consentono di formattare i moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il pacchetto [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES):
+[](/help/forms/using/themes.md) I temi ti consentono di personalizzare lo stile dei moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il pacchetto aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Berile
 * Exec
@@ -26,66 +25,66 @@ ht-degree: 0%
 * Libertà
 * Ultramarina
 * Urbane
-* Standard di web design degli Stati Uniti
+* Standard di progettazione web degli Stati Uniti
 * Tranquillo
 
-Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare deliziosi moduli adattivi per gli utenti. Contiene uno stile univoco per i selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty consente di ottenere questo look.
+Ogni tema contiene uno stile unico ed elegante che può essere utilizzato per creare deliziosi moduli adattivi per i vostri utenti. Contiene uno stile univoco per selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con caratteri puliti. Il tema Liberty ti permette di ottenere quel look.
 
 ![Temi di riferimento](assets/ref-themes.png)
 
-I temi inclusi in questo pacchetto sono reattivi e lo stile di questi temi è definito per i display per dispositivi mobili e desktop. La maggior parte dei browser moderni su una varietà di dispositivi può eseguire il rendering dei moduli applicati con uno di questi temi senza problemi.
+I temi inclusi in questo pacchetto sono reattivi e lo stile in questi temi è definito per i display mobili e desktop. La maggior parte dei browser moderni su una varietà di dispositivi può eseguire il rendering dei moduli applicati con uno di questi temi senza problemi.
 
-Per ulteriori informazioni sull&#39;installazione del pacchetto, vedere [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
+Per ulteriori informazioni sull&#39;installazione del pacchetto, vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 
-## Beryl {#beryl}
+## Berile {#beryl}
 
-Il tema Beryl è utilizzato da [Modulo adattivo We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) e mette in evidenza l&#39;utilizzo di immagini di sfondo, trasparenza e icone grandi e semplici. Nella schermata seguente, è possibile vedere l&#39;aspetto del tema Beryl e come può migliorare lo stile del modulo.
+Il tema beryl è utilizzato da [Modulo adattivo We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) e enfatizza l&#39;uso di immagini di sfondo, trasparenza e icone grandi e piatte. Nella schermata seguente è possibile vedere l’aspetto del tema Beryl e come può migliorare lo stile del modulo.
 ![Beryl ](assets/beryl.png)
-[temaFare clic per ingrandire](assets/beryl-1.png)
+[themeClicca per ingrandire](assets/beryl-1.png)
 
 ## Exec {#exec}
 
-Il tema Exec evita riempimenti di sfondo pieni per enfatizzare i componenti del modulo. Selezionando e facendo clic sui componenti, i colori dei font vengono modificati. Rispetto al tema canvas predefinito, il colore del font del testo nella scheda selezionata diventa blu scuro. I pulsanti di navigazione e di invio sono diversi dal tema Beryl.
-![Exec, tema](assets/exec.png)
+Il tema Exec evita riempimenti di sfondo solidi per enfatizzare i componenti del modulo. Quando si selezionano e si fa clic sui componenti, i colori dei font vengono modificati. Rispetto al tema Area di lavoro predefinito, il colore del font del testo nella scheda selezionata diventa blu scuro. I pulsanti di navigazione e di invio sono diversi dal tema Beryl.
+![Tema Exec](assets/exec.png)
 
 [Fare clic per ingrandire](assets/exec-1.png)
 
-## Evidenziazione sez {#exec-light}
+## Luce {#exec-light}
 
-Il tema Exec Light utilizza lo spazio vuoto per creare un&#39;esperienza senza soluzione di continuità. I pulsanti Successivo e Invia consentono di ottenere un riempimento uniforme e un&#39;ombreggiatura 3D. Le schede selezionate a sinistra visualizzano una freccia invece dei doppi indicatori di spunta.
-![Titolo Exec](assets/exec-light.png)
+Il tema Exec Light utilizza lo spazio bianco per creare un&#39;esperienza senza soluzione di continuità. I pulsanti Avanti e Invia consentono di ottenere un riempimento continuo e un’ombreggiatura 3D. Le schede selezionate a sinistra hanno una freccia invece dei doppi segni di spunta.
+![Tema chiaro Exec](assets/exec-light.png)
 
 [Fare clic per ingrandire](assets/exec-light-1.png)
 
 ## Libertà {#liberty}
 
-Il tema Liberty utilizza un approccio minimalista per evidenziare l&#39;importante. Ad esempio, il colore del font della scheda visitata diventa verde. È possibile visualizzare solo il contorno inferiore della casella di testo che emula l&#39;aspetto di un modulo basato su carta con righe. La casella di testo attiva presenta un contorno inferiore nero, mentre gli altri presentano un contorno inferiore grigio chiaro.
-![Tema Liberty](assets/liberty.png)
+Il tema della libertà utilizza un approccio minimalista per evidenziare l&#39;importante. Ad esempio, il colore del font della scheda visitata diventa verde. È possibile visualizzare solo il contorno inferiore della casella di testo che emula l’aspetto di un modulo basato su carta con righe. La casella di testo attiva ha un contorno inferiore nero, mentre altri ottengono un contorno inferiore grigio chiaro.
+![Tema della libertà](assets/liberty.png)
 
 [Fare clic per ingrandire](assets/liberty-1.png)
 
 ## Tranquillo {#tranquil}
 
-Il tema Tranquillo fornisce sfumature chiare e scure della combinazione di colori Tranquillo per evidenziare i diversi componenti di un modulo. Ad esempio, i pulsanti di scelta, i pannelli e le schede hanno un&#39;ombreggiatura di verde diversa.
-![Tema di transito](assets/tranquil.png)
+Il tema Tranquil fornisce sfumature chiare e scure della combinazione di colori Tranquillo per evidenziare diversi componenti di un modulo. Ad esempio, i pulsanti di scelta, i pannelli e le schede presentano una tonalità di verde diversa.
+![Tema tranqual](assets/tranquil.png)
 
 [Fare clic per ingrandire](assets/tranquil-1.png)
 
 ## Ultramarina {#ultramarine}
 
-Il tema ultramarino utilizza sfumature blu profonde per evidenziare componenti quali schede, pannelli, caselle di testo e pulsanti.
+Il tema ultramarino utilizza tonalità blu profonde per evidenziare componenti quali schede, pannelli, caselle di testo e pulsanti.
 ![Tema ultramarino](assets/ultramarine.png)
 
 ## Urbane {#urbane}
 
-Il tema Urbane enfatizza un aspetto minimalista e funzionale per il modulo. Quando si applica il tema Urbane al modulo, è possibile vedere che i componenti sono piatti. I pannelli hanno contorni sottili per creare un aspetto moderno.
-![Tema Urbane](assets/urbane.png)
+Tema urbano enfatizza un aspetto minimalista e funzionale della vostra forma. Quando si applica il tema Urbane al modulo, è possibile vedere che i componenti sono piatti. I pannelli ottengono contorni sottili per creare un look moderno.
+![Tema urbano](assets/urbane.png)
 
 [Fare clic per ingrandire](assets/urbane-1.png)
 
-## Standard di progettazione Web USA {#u-s-web-design-standards}
+## Standard di progettazione web degli Stati Uniti {#u-s-web-design-standards}
 
-Il tema Standard di Progettazione Web degli Stati Uniti, come suggerisce il nome, utilizza i tipi di carattere e gli stili descritti nel sito Web Microsoft Design Standards. Lo standard web è utilizzato dalle organizzazioni federali per creare esperienze Web coerenti tra i siti web delle amministrazioni federali.
-![Tema statunitense per gli standard di progettazione Web](assets/us-web-standards.png)
+Come suggerisce il nome, il tema degli standard di progettazione web degli Stati Uniti utilizza tipi di carattere e stili descritti nel sito Bozza standard di progettazione web degli Stati Uniti. Lo standard web viene utilizzato dalle organizzazioni federali per creare esperienze web coerenti tra i siti web delle amministrazioni federali.
+![Tema degli standard di progettazione web degli Stati Uniti](assets/us-web-standards.png)
 
 [Fare clic per ingrandire](assets/usgov.png)

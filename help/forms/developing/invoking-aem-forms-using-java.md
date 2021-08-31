@@ -1,8 +1,8 @@
 ---
 title: Richiamo di AEM Forms tramite JavaAPI
-seo-title: Richiamo di AEM Forms tramite JavaAPI
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Utilizza l'API Java di AEM Forms per il protocollo di trasporto RMI per la chiamata remota, il trasporto VM per la chiamata locale, SOAP per la chiamata remota, l'autenticazione diversa, come nome utente e password, e le richieste di chiamata sincrone e asincrona.
-seo-description: Utilizza l'API Java di AEM Forms per il protocollo di trasporto RMI per la chiamata remota, il trasporto VM per la chiamata locale, SOAP per la chiamata remota, l'autenticazione diversa, come nome utente e password, e le richieste di chiamata sincrone e asincrona.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c239c05-e221-442a-a748-0c28704ee032
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5385'
 ht-degree: 0%
 
 ---
 
-
-# Richiamo di AEM Forms tramite l&#39;API Java {#invoking-aem-forms-using-the-javaapi}
+# Richiamo di AEM Forms tramite l’API Java {#invoking-aem-forms-using-the-javaapi}
 
 AEM Forms può essere richiamato utilizzando l’API Java di AEM Forms. Quando utilizzi l’API Java di AEM Forms, puoi utilizzare l’API di richiamo o le librerie client Java. Le librerie client Java sono disponibili per servizi come il servizio Rights Management. Queste API fortemente tipizzate consentono di sviluppare applicazioni Java che richiamano AEM Forms.
 
@@ -35,13 +34,6 @@ L’API Java supporta le seguenti funzioni:
 * Autenticazione diversa, ad esempio nome utente e password
 * Richieste di chiamata sincrone e asincrona
 
-**Sito web per sviluppatori di Adobe**
-
-Il sito web Adobe Developer contiene i seguenti articoli che discutono della chiamata dei servizi AEM Forms utilizzando l’API Java:
-
-[Utilizzo di servlet Java per richiamare i processi AEM Forms](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Richiamo dell’API Distiller di AEM Forms da Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Consulta anche**
 
@@ -61,7 +53,7 @@ Il sito web Adobe Developer contiene i seguenti articoli che discutono della chi
 
 [Creazione di un&#39;applicazione web Java che richiama un processo longevo incentrato sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Inclusione dei file libreria Java AEM Forms {#including-aem-forms-java-library-files}
+## Inclusione dei file libreria Java di AEM Forms {#including-aem-forms-java-library-files}
 
 Per richiamare un servizio AEM Forms a livello di programmazione utilizzando l’API Java, includi i file di libreria richiesti (file JAR) nel percorso di classe del progetto Java. I file JAR inclusi nel percorso di classe dell&#39;applicazione client dipendono da diversi fattori:
 
@@ -290,7 +282,7 @@ Nella tabella seguente sono elencati i file JAR che dipendono dalla modalità di
  </tbody>
 </table>
 
-### Richiamo di scenari {#invoking-scenarios}
+### Richiamo degli scenari {#invoking-scenarios}
 
 La tabella seguente specifica gli scenari di chiamata ed elenca i file JAR necessari per richiamare AEM Forms con successo.
 
@@ -628,7 +620,7 @@ L&#39;esempio di codice seguente mostra come utilizzare un oggetto `com.adobe.id
 >
 >Per informazioni complete sull&#39;autenticazione di un utente, consulta [Autenticazione degli utenti](/help/forms/developing/users.md#authenticating-users).
 
-### Richiamo di scenari {#invoking_scenarios-1}
+### Richiamo degli scenari {#invoking_scenarios-1}
 
 In questa sezione sono descritti i seguenti scenari di chiamata:
 
@@ -645,7 +637,7 @@ In questo scenario, un&#39;applicazione client è in esecuzione nella propria JV
 >
 >Questo scenario è lo scenario di richiamo su cui si basano tutti gli avvii rapidi.
 
-### Applicazione client che richiama istanze AEM Forms cluster {#client-application-invoking-clustered-aem-forms-instances}
+### Applicazione client che richiama istanze AEM Forms in cluster {#client-application-invoking-clustered-aem-forms-instances}
 
 Il diagramma seguente mostra un&#39;applicazione client in esecuzione nella propria JVM e che richiama le istanze AEM Forms situate in un cluster.
 
@@ -696,7 +688,7 @@ L&#39;esempio seguente mostra il contenuto di un file jndi.properties utilizzato
 
 [Richiamo di un servizio tramite una libreria client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Trasmissione di dati ai servizi AEM Forms tramite l&#39;API Java {#passing-data-to-aem-forms-services-using-the-java-api}
+## Trasmissione di dati ai servizi AEM Forms tramite l’API Java {#passing-data-to-aem-forms-services-using-the-java-api}
 
 Le operazioni del servizio AEM Forms in genere consumano o producono documenti PDF. Quando si richiama un servizio, a volte è necessario passare al servizio un documento PDF (o altri tipi di documento come i dati XML). Allo stesso modo, a volte è necessario gestire un documento PDF restituito dal servizio. La classe Java che consente di trasmettere dati a e dai servizi AEM Forms è `com.adobe.idp.Document`.
 
@@ -955,7 +947,7 @@ Nell&#39;esempio di codice seguente viene determinato il tipo di contenuto di un
 
 [Impostazione delle proprietà di connessione](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Eliminazione degli oggetti documento {#disposing-document-objects}
+### Disposizione degli oggetti documento {#disposing-document-objects}
 
 Se non è più necessario un oggetto `Document`, è consigliabile eliminarlo richiamandone il metodo `dispose`. Ogni oggetto `Document` consuma un descrittore di file e fino a 75 MB di spazio RAM sulla piattaforma host dell&#39;applicazione. Se un oggetto `Document` non viene eliminato, il processo di raccolta Java Garage lo dispone. Tuttavia, eliminandola prima utilizzando il metodo `dispose`, è possibile liberare la memoria occupata dall&#39;oggetto `Document`.
 
@@ -967,7 +959,7 @@ Se non è più necessario un oggetto `Document`, è consigliabile eliminarlo ric
 
 [Richiamo di un servizio tramite una libreria client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Richiamo di un servizio utilizzando una libreria client Java {#invoking-a-service-using-a-java-client-library}
+## Richiamo di un servizio tramite una libreria client Java {#invoking-a-service-using-a-java-client-library}
 
 Le operazioni del servizio AEM Forms possono essere richiamate utilizzando l’API fortemente tipizzata di un servizio, nota come libreria client Java. Una *libreria client Java* è un insieme di classi concrete che forniscono l&#39;accesso ai servizi distribuiti nel contenitore di servizi. È possibile creare un&#39;istanza di un oggetto Java che rappresenta il servizio da richiamare invece di creare un oggetto `InvocationRequest` utilizzando l&#39;API di vocazione. L’API di vocazione viene utilizzata per richiamare i processi creati in Workbench, ad esempio quelli di lunga durata. (Vedere [Richiamo di processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
@@ -1017,7 +1009,7 @@ Puoi richiamare il servizio Repository utilizzando una libreria client Java ed e
 
 [Inclusione dei file libreria Java di AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Richiamare un processo di breve durata utilizzando l&#39;API di richiamo {#invoking-a-short-lived-process-using-the-invocation-api}
+## Richiamare un processo di breve durata utilizzando l’API di richiamo {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Puoi richiamare un processo di breve durata utilizzando l’API Java Invocation. Quando invochi un processo di breve durata utilizzando l&#39;API di richiamo, trasmetti i valori dei parametri richiesti utilizzando un oggetto `java.util.HashMap` . Affinché ogni parametro passi a un servizio, richiama il metodo `put` dell&#39;oggetto `java.util.HashMap` e specifica la coppia nome-valore richiesta dal servizio per eseguire l&#39;operazione specificata. Specifica il nome esatto dei parametri che appartengono al processo di breve durata.
 

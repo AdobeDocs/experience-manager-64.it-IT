@@ -1,8 +1,8 @@
 ---
 title: Hardening del tuo AEM Forms sull'ambiente JEE
-seo-title: Hardening del tuo AEM Forms sull'ambiente JEE
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: Scopri diverse impostazioni di protezione per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
-seo-description: Scopri diverse impostazioni di protezione per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 1%
 
 ---
@@ -632,7 +632,7 @@ Alcuni URL vengono evidenziati come applicazioni web rivolte all’utente finale
 
 Un attacco CSRF (Cross-Site Request Forgery) sfrutta la fiducia che un sito web ha per l&#39;utente, per trasmettere comandi non autorizzati e non intenzionali da parte dell&#39;utente. L&#39;attacco è configurato includendo un collegamento o uno script in una pagina web, o un URL in un messaggio e-mail, per accedere a un altro sito a cui l&#39;utente è già stato autenticato.
 
-Ad esempio, puoi aver effettuato l’accesso ad Admin Console mentre navighi su un altro sito web. Una delle pagine web può includere un tag immagine HTML con un attributo `src` che esegue il targeting di uno script lato server sul sito web della vittima. Sfruttando il meccanismo di autenticazione della sessione basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherato come utente legittimo. Per ulteriori esempi, consulta [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples).
+Ad esempio, puoi aver effettuato l’accesso ad Admin Console mentre navighi su un altro sito web. Una delle pagine web può includere un tag immagine HTML con un attributo `src` che esegue il targeting di uno script lato server sul sito web della vittima. Sfruttando il meccanismo di autenticazione della sessione basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherato come utente legittimo.
 
 Le seguenti caratteristiche sono comuni al CSRF:
 
@@ -674,7 +674,7 @@ Il processo di filtraggio referente può essere descritto come segue:
 
 ### Gestione del filtro referente {#managing-referer-filtering}
 
-AEM Forms su JEE fornisce un filtro referente per specificare referente che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referente consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer da tale host, indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Filtro referente è disabilitato se tutte le voci nell’elenco Riferimenti consentiti vengono eliminate.
+AEM Forms su JEE fornisce un filtro referente per specificare referente che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio, GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referente consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer da tale host, indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Filtro referente è disabilitato se tutte le voci nell’elenco Riferimenti consentiti vengono eliminate.
 
 Quando si installa Document Services per la prima volta, l&#39;elenco Riferimenti consentiti viene aggiornato con l&#39;indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all’elenco Riferimenti consentiti vengono restituiti dal sistema operativo Host. Ad esempio, un server con indirizzo IP 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato) inserì nell&#39;elenco Consentiti non viene aggiornato. Modificare l&#39;elenco Riferimenti consentiti in base all&#39;ambiente aziendale. Non distribuire il server dei moduli nell’ambiente di produzione con l’elenco Riferimenti consentiti predefinito. Dopo aver modificato uno qualsiasi degli URI, eccezioni di riferimento o riferimenti consentiti, assicurati di riavviare il server per rendere effettive le modifiche.
 
@@ -697,7 +697,7 @@ AEM Forms su JEE fornisce API per gestire l’elenco di eccezioni referente cons
 
 Per ulteriori informazioni sulle API, consulta la documentazione di riferimento per le API di AEM Forms on JEE* .
 
-Utilizzare l&#39;elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** per Eccezioni referente consentite a livello globale, cioè per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con un percorso assoluto (ad es. `/index.html`) o un percorso relativo (ad esempio `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio `/sample/(.)*`.
+Utilizzare l&#39;elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** per Eccezioni referente consentite a livello globale, cioè per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con percorso assoluto (ad esempio, `/index.html`) o relativo (ad esempio, `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio `/sample/(.)*`.
 
 L&#39;ID elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** è definito come una costante nella classe `UMConstants` dello spazio dei nomi `com.adobe.idp.um.api`, disponibile in `adobe-usermanager-client.jar`. Puoi utilizzare le API di AEM Forms per creare, modificare o modificare questo elenco. Ad esempio, per creare l’elenco Eccezioni referente globale consentite utilizza:
 
@@ -848,7 +848,7 @@ Quando si configura un&#39;architettura di rete sicura come descritto nella sezi
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
-   <td><p>Adobe di applicazioni di Flash, in cui AEM Forms sui servizi server JEE è configurato con un endpoint Remoting</p> </td> 
+   <td><p>Adobe di applicazioni di Flash, in cui AEM Forms sui servizi server JEE è configurato con un endpoint remoto</p> </td> 
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 

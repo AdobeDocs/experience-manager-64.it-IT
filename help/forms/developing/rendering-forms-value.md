@@ -1,8 +1,8 @@
 ---
 title: Rendering di Forms per valore
-seo-title: Rendering di Forms per valore
+seo-title: Rendering Forms By Value
 description: Utilizza l’API Forms (Java) per eseguire il rendering di un modulo per valore utilizzando l’API Java e l’API di servizio Web.
-seo-description: Utilizza l’API Forms (Java) per eseguire il rendering di un modulo per valore utilizzando l’API Java e l’API di servizio Web.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 50c34781-45e3-4255-a997-44f694527c92
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
-
 
 # Rendering di Forms per valore {#rendering-forms-by-value}
 
@@ -78,7 +77,7 @@ Per eseguire il rendering di un modulo in base al valore, passare un’istanza `
 
 >[!NOTE]
 >
->Se si desidera visualizzare i dati all’interno del modulo, è necessario specificarli all’interno dell’elemento `xfa:datasets` . Per informazioni sull&#39;architettura XFA, visita [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Se si desidera visualizzare i dati all’interno del modulo, è necessario specificarli all’interno dell’elemento `xfa:datasets` . Per informazioni sull&#39;architettura XFA, visita [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Scrivere il flusso di dati del modulo sul browser Web client**
 

@@ -1,8 +1,8 @@
 ---
 title: Configurazione delle opzioni client e server
-seo-title: Configurazione delle opzioni client e server
+seo-title: Configuring client and server optionsn
 description: Scopri come configurare le varie opzioni client e server, ad esempio le impostazioni di configurazione del server, i ruoli di sicurezza dei documenti e il controllo degli eventi.
-seo-description: Scopri come configurare le varie opzioni client e server, ad esempio le impostazioni di configurazione del server, i ruoli di sicurezza dei documenti e il controllo degli eventi.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ La sicurezza dei documenti genera automaticamente un messaggio e-mail di invito 
 
 Il messaggio e-mail di registrazione contiene un collegamento a una pagina Registrazione e informazioni su come registrarsi. Dopo che l’utente invitato si è registrato, la sicurezza dei documenti genera un messaggio e-mail di attivazione con un collegamento a una pagina Attivazione. Quando viene attivato, l’account rimane valido fino a quando non viene disattivato o eliminato.
 
-Se si abilita la registrazione integrata, specificare il server SMTP, i dettagli dell&#39;e-mail di registrazione, le funzionalità di accesso e reimpostare le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, assicurati di aver creato un dominio locale in Gestione utente e aver assegnato il ruolo &quot;Utente invito sicurezza documento&quot; agli utenti e ai gruppi appropriati della tua organizzazione. (Consulta [Aggiungi un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se non si utilizza la registrazione integrata, è necessario che sia creato un proprio sistema di registrazione utente utilizzando l’SDK per moduli AEM. Consultare la guida sullo sviluppo di SPI per moduli AEM in [Programmazione con moduli AEM](https://www.adobe.com/go/learn-aemforms-programming-63). Se non utilizzi l’opzione Registrazione incorporata, ti consigliamo di configurare un messaggio nell’e-mail di attivazione e nella schermata di accesso al client per informare gli utenti su come contattare l’amministratore per una nuova password o per altre informazioni.
+Se si abilita la registrazione integrata, specificare il server SMTP, i dettagli dell&#39;e-mail di registrazione, le funzionalità di accesso e reimpostare le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, assicurati di aver creato un dominio locale in Gestione utente e aver assegnato il ruolo &quot;Utente invito sicurezza documento&quot; agli utenti e ai gruppi appropriati della tua organizzazione. (Consulta [Aggiungi un dominio locale](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se non si utilizza la registrazione integrata, è necessario che sia creato un proprio sistema di registrazione utente utilizzando l’SDK per moduli AEM. Consultare la guida sullo sviluppo di SPI per moduli AEM in [Programmazione con moduli AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se non utilizzi l’opzione Registrazione incorporata, ti consigliamo di configurare un messaggio nell’e-mail di attivazione e nella schermata di accesso al client per informare gli utenti su come contattare l’amministratore per una nuova password o per altre informazioni.
 
 **Abilita e configura la registrazione degli utenti invitati**
 
@@ -896,7 +896,7 @@ In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
  </node>
 ```
 
-In questo esempio, l&#39;accesso a My Application versione 3.0 e My Other Application versione 2.0 non è consentito. Lo stesso URL di informazioni di rifiuto viene utilizzato indipendentemente dal motivo del rifiuto.
+In questo esempio, l&#39;accesso a My Application versione 3.0 e My Other Application versione 2.0 è negato. Lo stesso URL di informazioni di rifiuto viene utilizzato indipendentemente dal motivo del rifiuto.
 
 ```as3
  <node name="ClientVersionRules"> 

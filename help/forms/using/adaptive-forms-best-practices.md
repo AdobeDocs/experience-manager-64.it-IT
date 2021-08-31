@@ -1,27 +1,26 @@
 ---
 title: 'Procedure consigliate per l''utilizzo dei moduli adattivi '
-seo-title: 'Procedure consigliate per l''utilizzo dei moduli adattivi '
+seo-title: Best practices for working with adaptive forms
 description: Illustra le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni per il sistema AEM Forms.
-seo-description: Illustra le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni per il sistema AEM Forms.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
 
-
-# Procedure consigliate per l&#39;utilizzo dei moduli adattivi{#best-practices-for-working-with-adaptive-forms} 
+# Procedure consigliate per l&#39;utilizzo dei moduli adattivi  {#best-practices-for-working-with-adaptive-forms}
 
 ## Panoramica {#overview}
 
-I moduli Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e accattivanti. Tuttavia, richiede uno sforzo concertato per implementare, costruire, eseguire e mantenere un ecosistema AEM Forms efficiente e produttivo.
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e accattivanti. Tuttavia, richiede uno sforzo concertato per implementare, costruire, eseguire e mantenere un ecosistema AEM Forms efficiente e produttivo.
 
 Questo documento fornisce linee guida e consigli di cui possono trarre vantaggio gli amministratori, gli autori e gli sviluppatori di moduli quando si lavora con AEM Forms, in particolare il componente Moduli adattivi. Descrive le best practice, dalla configurazione di un progetto di sviluppo di moduli alla configurazione, personalizzazione, authoring e ottimizzazione di AEM Forms. Queste best practice contribuiscono collettivamente alle prestazioni complessive dell’ecosistema AEM Forms.
 
@@ -49,7 +48,7 @@ Per ulteriori informazioni, consulta [Come creare progetti AEM utilizzando Apach
 
 * Se utilizzi un ambiente di sviluppo integrato con Eclipse, puoi utilizzare AEM strumenti per sviluppatori per un’integrazione diretta di Eclipse IDE con istanze AEM per creare applicazioni AEM. Per informazioni dettagliate, consulta [AEM strumenti per sviluppatori per Eclipse](/help/sites-developing/aem-eclipse.md).
 
-### Pianificazione dell&#39;ambiente di authoring {#planning-for-authoring-environment}
+### Pianificazione dell’ambiente di authoring {#planning-for-authoring-environment}
 
 Una volta impostato il progetto AEM, definisci la strategia per la creazione e la personalizzazione di modelli e componenti per moduli adattivi.
 
@@ -91,7 +90,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 ### Utilizzo dell’interfaccia touch per l’authoring {#using-touch-optimized-ui-for-authoring}
 
-* Utilizzare il browser Oggetti nella barra laterale per accedere rapidamente ai campi della gerarchia del modulo. È possibile utilizzare la casella di ricerca per cercare gli oggetti nel modulo o nella struttura degli oggetti per spostarsi da un oggetto all’altro.
+* Utilizzare il browser Oggetti nella barra laterale per accedere rapidamente ai campi nella gerarchia del modulo. È possibile utilizzare la casella di ricerca per cercare gli oggetti nel modulo o nella struttura degli oggetti per spostarsi da un oggetto all’altro.
 * Per visualizzare e modificare le proprietà di un componente nel browser Componenti nella barra laterale, selezionalo e fai clic su ![cmppr-1](assets/cmppr-1.png). Puoi anche fare doppio clic su un componente per visualizzarne le proprietà nel browser delle proprietà.
 * Utilizzare le scelte rapide da tastiera per eseguire azioni rapide sui moduli. Consulta [Scelte rapide da tastiera di AEM Forms](/help/forms/using/keyboard-shortcuts.md).
 
@@ -253,7 +252,7 @@ Di seguito sono riportate alcune best practice per la localizzazione di moduli a
 
 ## Preparare un progetto di moduli per la produzione {#prepare-forms-project-for-production}
 
-### Aggiunta del server di elaborazione dei moduli {#adding-forms-processing-server}
+### Aggiunta di un server di elaborazione moduli {#adding-forms-processing-server}
 
 È possibile configurare un&#39;istanza aggiuntiva del server AEM Forms che si trova dietro il firewall in un&#39;area protetta. Puoi utilizzare questa istanza per:
 
@@ -270,11 +269,11 @@ Spesso è necessario spostare i progetti AEM da un ambiente all’altro. Alcune 
 * (*AEM Forms solo su JEE*) Distribuire manualmente LCA e DSC sul server di Forms Workflow.
 * Utilizza la funzionalità [Export-Import](/help/forms/using/import-export-forms-templates.md) per spostare le risorse nel nuovo ambiente. Puoi anche configurare l’agente di replica e pubblicare le risorse.
 
-### Configurazione AEM {#configuring-aem}
+### Configurazione di AEM {#configuring-aem}
 
 Di seguito sono riportate alcune best practice per configurare AEM per migliorare le prestazioni complessive:
 
-* Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix. Vedere [Clientlibs spiegato da example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix.
 * Memorizza in cache tutte le librerie client in `/etc.clientlibs/fd` e tutte le librerie client personalizzate aggiuntive AEM dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, consulta [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Non memorizzare nella cache i percorsi `/content/forms/af/` e `/content/dam/formsanddocuments/*`. per informazioni dettagliate sulla configurazione della memorizzazione in cache dei moduli adattivi, vedere [Memorizzazione in cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md).
@@ -291,7 +290,7 @@ Di seguito sono riportate alcune best practice per configurare AEM per migliorar
 
 >[!VIDEO](https://vimeo.com/)
 
-### Configurazione della memorizzazione esterna per le bozze e i dati dei moduli inviati {#external-storage}
+### Configurazione dell’archiviazione esterna per le bozze e i dati dei moduli inviati {#external-storage}
 
 In un ambiente di produzione, si consiglia di non archiviare i dati del modulo inviati in AEM archivio. L’implementazione predefinita delle azioni di invio Forms Portal Store, Store Content e Store PDF memorizza i dati del modulo in AEM archivio. Queste azioni di invio sono intese solo a scopo dimostrativo. Inoltre, le funzioni Salva e Riprendi e Salva automaticamente utilizzano l&#39;archiviazione del portale per impostazione predefinita. Considera pertanto le seguenti raccomandazioni:
 
@@ -301,10 +300,9 @@ In un ambiente di produzione, si consiglia di non archiviare i dati del modulo i
 
    È inoltre possibile scrivere un’azione di invio personalizzata che memorizza i dati del modulo e l’allegato in un archivio protetto. Per ulteriori informazioni, consulta [Scrittura di un’azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md) .
 
-### Gestione delle informazioni personali identificabili {#handling-personally-identifiable-information}
+### Trattamento di informazioni personali identificabili {#handling-personally-identifiable-information}
 
 Una delle principali sfide per le organizzazioni è come gestire i dati personali identificabili (PII). Di seguito sono riportate alcune best practice per gestire questi dati:
 
 * Utilizzare un archivio sicuro ed esterno come database per memorizzare i dati dai moduli bozza e inviati. Consultare [Configurazione dell&#39;archiviazione esterna per le bozze e i dati dei moduli inviati](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilizza il componente Modulo Termini e Condizioni per ottenere il consenso esplicito dell’utente prima di abilitare il salvataggio automatico. In questo caso, abilita il salvataggio automatico solo quando l’utente accetta le condizioni nel componente Termini e condizioni.
-

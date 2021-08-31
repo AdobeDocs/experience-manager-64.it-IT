@@ -1,8 +1,8 @@
 ---
 title: Avvio rapido API di Forms Service
-seo-title: Avvio rapido API di Forms Service
+seo-title: Forms Service API Quick Starts
 description: Utilizza gli avvii rapidi per l’API del servizio Forms.
-seo-description: Utilizza gli avvii rapidi per l’API del servizio Forms.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
-
 
 # Avvio rapido API di Forms Service {#forms-service-api-quick-starts}
 
@@ -59,7 +58,6 @@ La logica dell’applicazione che utilizza l’API del servizio Forms viene impl
 >
 >Gli avvii rapidi disponibili in Programmazione con v si basano sul server dei moduli utilizzato da un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Suggerimento**: Il sito Web Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che richiama il servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione del rendering di moduli di applicazioni ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo PDF interattivo utilizzando l’API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -336,7 +334,7 @@ Nell&#39;esempio di codice seguente viene eseguito il rendering di un modulo den
  
 ```
 
-## Avvio rapido (modalità SOAP): Rendering di una guida (obsoleto) utilizzando l’API Java {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rendering di una guida (obsoleto) tramite l’API Java {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
 
 Nell&#39;esempio di codice seguente viene eseguito il rendering di una Guida (obsoleta) denominata *TLALifeClaim.xdp* in un browser Web client.
 
@@ -1058,7 +1056,7 @@ Nell’esempio di codice seguente viene eseguito il rendering di un modulo HTML 
  }
 ```
 
-## Avvio rapido (modalità SOAP): Rendering di un modulo HTML con una barra degli strumenti personalizzata utilizzando l’API Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l’API Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
 Nell&#39;esempio di codice seguente viene eseguito il rendering di un modulo HTML con una barra degli strumenti visualizzata in francese. Il percorso del file fscmenu.xml è C:\Adobe (questa cartella deve trovarsi sul server che ospita AEM Forms). Il valore locale è `fr_FR`. La sezione che illustra come eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata mostra la sintassi del file fscmenu.xml utilizzato in questo avvio rapido. (Vedere [Rendering di Forms HTML con barre degli strumenti personalizzate](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
@@ -1214,7 +1212,7 @@ Nell&#39;esempio di codice seguente viene eseguito il rendering di un modulo HTM
  
 ```
 
-## Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come XML utilizzando l’API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come XML tramite l’API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 Nell&#39;esempio di codice seguente viene gestito un modulo inviato come XML. Il valore del tipo di contenuto passato al metodo `processFormSubmission` è `CONTENT_TYPE=text/xml`. Vengono visualizzati i valori corrispondenti ai campi denominati `mortgageAmount`, `lastName` e `firstName`. In questo avvio rapido viene utilizzato un metodo definito dall&#39;utente denominato `getNodeText` . Accetta un&#39;istanza `org.w3c.dom.Document` e un valore stringa che specifica il nome del nodo. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. (Consulta [Gestione dei Forms inviati](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1965,7 +1963,7 @@ Nell&#39;esempio di codice Java seguente vengono gestiti i dati del modulo invia
  }
 ```
 
-## Avvio rapido (modalità SOAP): Precompilazione di Forms con layout fluidi tramite l&#39;API Java {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## Avvio rapido (modalità SOAP): Precompilazione di Forms con layout fluidi tramite l’API Java {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 Nell&#39;esempio di codice seguente un modulo viene precompilato con un&#39;origine dati dinamica. In altre parole, l&#39;origine dati viene creata in fase di esecuzione e non è contenuta in un file XML o creata in fase di progettazione. Questo esempio di codice contiene tre metodi definiti dall&#39;utente:
 
@@ -2368,7 +2366,7 @@ Nell&#39;esempio di codice seguente viene elaborato un modulo contenente uno scr
  }
 ```
 
-## Avvio rapido (modalità SOAP): Ottimizzazione delle prestazioni tramite l&#39;API Java {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
+## Avvio rapido (modalità SOAP): Ottimizzazione delle prestazioni tramite l’API Java {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
 
 L&#39;esempio di codice seguente ottimizza le prestazioni impostando le opzioni di memorizzazione in cache, autonoma e linearizzata. Un file linearizzato è ottimizzato per la distribuzione sul web. (Vedi [Ottimizzazione delle prestazioni del servizio Forms](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service).)
 
@@ -2496,7 +2494,7 @@ L&#39;esempio di codice seguente ottimizza le prestazioni impostando le opzioni 
  }
 ```
 
-## Avvio rapido (modalità SOAP): Rendering per valore utilizzando l&#39;API Java {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rendering per valore utilizzando l’API Java {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
 Il seguente avvio rapido Java esegue il rendering di un modulo PDF interattivo basato su una struttura del modulo denominata *Loan.xdp* per valore. Tenere presente che la struttura del modulo viene utilizzata per compilare un oggetto `com.adobe.idp.Document` denominato* inputXDP*. (Vedere [Rendering di Forms per valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
@@ -2623,7 +2621,7 @@ Il seguente avvio rapido Java esegue il rendering di un modulo PDF interattivo b
  }
 ```
 
-## Avvio rapido (modalità SOAP): Trasmissione di documenti al servizio Forms tramite l&#39;API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Trasmissione di documenti al servizio Forms tramite l’API Java {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
 Il seguente avvio rapido Java recupera il file Loan.xdp da Content Services (obsoleto). Questo file XDP si trova nello spazio `/Company Home/Form Designs`. Il file XDP viene restituito in un&#39;istanza `com.adobe.idp.Document`. L’istanza `com.adobe.idp.Document` viene passata al servizio Forms. Il modulo interattivo viene scritto in un browser Web client. (Vedere [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md).)
 
@@ -2770,4 +2768,3 @@ Il seguente avvio rapido Java recupera il file Loan.xdp da Content Services (obs
  } 
  
 ```
-
