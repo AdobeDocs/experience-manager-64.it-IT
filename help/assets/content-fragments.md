@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di frammenti di contenuto
-seo-title: Utilizzo di frammenti di contenuto
+seo-title: Working with Content Fragments
 description: Scopri come i frammenti di contenuto ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
-seo-description: Scopri come i frammenti di contenuto ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 7%
 
 ---
@@ -91,8 +91,7 @@ Insieme alle funzionalità di esportazione JSON dei componenti di base AEM, ques
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
 
 >
->
-I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
 >Per ulteriori informazioni, consulta anche [Informazioni sui frammenti di contenuto e i frammenti di esperienza in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
