@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >* Consulta [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md) e [Risoluzione dei problemi di Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
 
 >
-
 
 
 1. **Carica i** video Dynamic Media facendo quanto segue:
@@ -73,7 +72,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
@@ -163,7 +162,7 @@ Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. Puoi tr
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulta anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) nella Guida di riferimento per i visualizzatori Dynamic Media di Adobe.
+Consulta anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) nella Guida di riferimento per i visualizzatori Dynamic Media di Adobe.
 
 ## Procedure consigliate: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 

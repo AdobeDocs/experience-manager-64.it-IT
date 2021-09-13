@@ -6,11 +6,11 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: Immagini panoramiche
+feature: Panoramic Images
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '581'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Per caricare le risorse da utilizzare con il visualizzatore di immagini panorami
 
 Affinché il visualizzatore di immagini panoramiche funzioni correttamente all’interno di AEM, è necessario sincronizzare i predefiniti visualizzatore di immagini panoramiche con i metadati specifici di Dynamic Media Classic e Dynamic Media Classic in modo che i predefiniti visualizzatore vengano aggiornati nel JCR. A questo scopo, configura Dynamic Media Classic nel modo seguente:
 
-1. [Accedi all’](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) applicazione desktop Dynamic Media Classic per ogni account aziendale.
+1. [Accedi all’](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) applicazione desktop Dynamic Media Classic per ogni account aziendale.
 
 1. Nell’angolo in alto a destra della pagina, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Configurazione pubblicazione > Image Server]**.
 1. Nella pagina **[!UICONTROL Pubblicazione server immagini]**, dal menu a discesa **[!UICONTROL Contesto pubblicazione]** vicino alla parte superiore, seleziona **[!UICONTROL Image Serving]**.

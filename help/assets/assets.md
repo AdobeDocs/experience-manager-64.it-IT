@@ -2,12 +2,12 @@
 title: Introduzione a [!DNL Adobe Experience Manager Assets]
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi d’uso e l’offerta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '861'
 ht-degree: 33%
 
 ---
@@ -52,7 +52,7 @@ Per determinare se inserire un’immagine nell’archivio DAM o utilizzare un co
 
 Una risorsa è un documento, un’immagine, un video o dell’audio digitale (o parte di essi) che può avere più rappresentazioni e risorse secondarie (ad esempio, livelli in un file Photoshop, slide in un file PowerPoint, pagine in un file pdf, file in un file ZIP).
 
-Una risorsa, in pratica, è composta da un file binario, da metadati, da rappresentazioni e da risorse secondarie. Consulta la [Guida alle prestazioni di DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en) per informazioni dettagliate.
+Una risorsa, in pratica, è composta da un file binario, da metadati, da rappresentazioni e da risorse secondarie. Consulta la [Guida alle prestazioni di DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html) per informazioni dettagliate.
 
 >[!CAUTION]
 >

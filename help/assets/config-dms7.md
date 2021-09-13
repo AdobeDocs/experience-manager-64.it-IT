@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: Configurazione,Modalità Scene7
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 
 ## Configurazione dei Cloud Services Dynamic Media {#configuring-dynamic-media-cloud-services}
 
-Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, è necessario [accedere](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) all&#39;applicazione desktop Dynamic Media Classic per modificare la password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
+Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, è necessario [accedere](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) all&#39;applicazione desktop Dynamic Media Classic per modificare la password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
 
 >[!NOTE]
 >
@@ -432,7 +432,7 @@ Quando il set 360 gradi viene caricato e pubblicato, si attiva il nome della def
 
    `\w+-R([0-9]+)-\w+`
 
-   o
+   oppure
 
    `\w+-(\d+)-\w+`
 
@@ -440,7 +440,7 @@ Quando il set 360 gradi viene caricato e pubblicato, si attiva il nome della def
 
    `\w+-\w+-C([0-9]+)`
 
-   o
+   oppure
 
    `\w+-\w+-C(\d+)`
 

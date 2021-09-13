@@ -2,12 +2,12 @@
 title: Gestire le risorse composite e generare le risorse secondarie.
 description: Scopri come creare riferimenti a risorse AEM dai file InDesign, Adobe Illustrator e Photoshop. Inoltre, scopri come utilizzare la funzione Visualizzatore pagina per visualizzare singole pagine di file multipagina, inclusi file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Ad InDesign, è possibile estrarre pagine utilizzando il server InDesign. Se le 
 
 Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a sinistra e nei controlli Visualizzatore pagina:
 
-* **[!UICONTROL Azioni desktop]** per aprire o visualizzare una risorsa secondaria specifica utilizzando AEM’app desktop. Scopri come [configurare le azioni desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) se utilizzi AEM’app desktop.
+* **[!UICONTROL Azioni desktop]** per aprire o visualizzare una risorsa secondaria specifica utilizzando AEM’app desktop. Scopri come [configurare le azioni desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se utilizzi AEM’app desktop.
 
 * **** L’opzione Proprietà apre la pagina   Proprietà della risorsa secondaria specifica.
 
