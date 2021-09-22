@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.4
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
-feature: Sviluppo
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 16%
@@ -100,7 +100,7 @@ ht-degree: 16%
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
-   + [Senza testa e ibrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Senza testa e ibrido con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Applicazioni a pagina singola{#spas}
       + [Introduzione SPA e Procedura dettagliata](spa-walkthrough.md)
