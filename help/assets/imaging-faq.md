@@ -1,17 +1,17 @@
 ---
 title: Imaging avanzato
-description: L'imaging intelligente sfrutta le caratteristiche di visualizzazione esclusive di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
+description: La tecnologia di imaging intelligente applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
-feature: Servizi avanzati
+feature: Smart Services
 role: User
-source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
+source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2561'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Le immagini costituiscono la maggior parte del tempo di caricamento di una pagin
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
-* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano le più recenti Smart imaging.
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’imaging avanzato più recente.
 * Distribuisce immediatamente i contenuti ottimizzati (in fase di esecuzione).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (qlt) specificata nella richiesta di immagine.
 * L&#39;imaging avanzato può essere disattivato utilizzando il parametro URL &quot;bfc&quot;.
@@ -193,7 +193,7 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [Utilizza l’Admin Console per creare un caso di supporto.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Utilizza l’Admin Console per creare un caso di supporto.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    1. Nome contatto principale, e-mail, telefono.
@@ -237,7 +237,7 @@ Non vi è alcun rischio per una pagina web del cliente. Tuttavia, la transizione
 
 Durante la transizione iniziale, le immagini non memorizzate nella cache colpiscono direttamente i server di origine di Adobe fino a quando la cache non viene ricostruita nuovamente. Di conseguenza, Adobe pianifica di gestire alcune transizioni dei clienti alla volta in modo da mantenere prestazioni accettabili durante l’estrazione delle richieste dall’origine di Adobe. Per la maggior parte dei clienti, la cache è completamente integrata nuovamente nella rete CDN entro circa 1 - 2 giorni.
 
-## Come posso verificare se l’imaging intelligente funziona come previsto?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Come posso verificare se l’imaging intelligente funziona come previsto? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Dopo aver configurato l’account con l’imaging intelligente, carica un URL immagine Dynamic Media Classic/Dynamic Media sul browser.
 1. Apri il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
@@ -281,3 +281,9 @@ L’imaging intelligente determina se la conversione è utile o meno. Restituisc
 * I componenti core di Experience Manager Sites sono configurati per impostazione predefinita per l’ottimizzazione DPR. Per evitare immagini di dimensioni eccessive dovute all’ottimizzazione DPR per Smart imaging lato server, `dpr=off` viene sempre aggiunto alle immagini Dynamic Media dei componenti core di Experience Manager Sites.
 * Dato che il componente Dynamic Media Foundation è configurato per impostazione predefinita per l’ottimizzazione DPR, per evitare immagini di dimensioni eccessive a causa dell’ottimizzazione DPR Smart imaging lato server, `dpr=off` viene sempre aggiunto alle immagini dei componenti Dynamic Media Foundation. Anche se il cliente deseleziona l’ottimizzazione DPR nel componente di base DM, Smart imaging DPR lato server non viene avviato. In sintesi, nel componente di base DM, l’ottimizzazione DPR entra in vigore solo in base all’impostazione a livello di componente di base DM.
 * L’ottimizzazione DPR lato visualizzatore funziona in parallelo con l’ottimizzazione DPR per le immagini avanzate lato server e non produce immagini di dimensioni eccessive. In altre parole, ogni volta che il visualizzatore gestisce il DPR, ad esempio la visualizzazione principale solo in un visualizzatore abilitato per lo zoom, i valori DPR per l’imaging intelligente lato server non vengono attivati. Allo stesso modo, ogni volta che gli elementi del visualizzatore, come campioni e miniature, non dispongono di gestione DPR, viene attivato il valore DPR per l’imaging intelligente lato server.
+
+>[!MORELIKETHIS]
+>
+>* [Ottimizzazione delle immagini con i formati di immagine WebP e AVIF di nuova generazione.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
