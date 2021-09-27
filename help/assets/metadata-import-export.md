@@ -2,12 +2,12 @@
 title: Importazione ed esportazione di metadati in blocco
 description: Questo articolo descrive come importare ed esportare i metadati in blocco.
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ Per importare i metadati in blocco, effettua le seguenti operazioni:
    | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per cui devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | [!UICONTROL Separatore di campi] | Il valore predefinito è `,` - una virgola. È possibile specificare qualsiasi altro carattere. |
    | [!UICONTROL Delimitatore valori multipli] | Separatore dei valori dei metadati. Il valore predefinito è `|` - una tubazione. |
-   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su true e le impostazioni predefinite di Launcher sono attive per il `DAM Metadata WriteBack Workflow` (che scrive metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio ha un impatto sulle prestazioni sul sistema. |
+   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su true e le impostazioni predefinite sono attive per il `DAM Metadata WriteBack Workflow` (che scrive metadati nei dati XMP binari). L&#39;abilitazione dei flussi di lavoro ha un impatto sulle prestazioni sul sistema. |
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna del file CSV con le risorse. |
 
 1. Tocca o fai clic su **[!UICONTROL Importa]** nella barra degli strumenti. Una volta importati i metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica se i valori dei metadati sono stati importati correttamente per le risorse.

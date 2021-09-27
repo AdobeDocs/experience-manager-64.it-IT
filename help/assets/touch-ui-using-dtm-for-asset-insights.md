@@ -2,12 +2,12 @@
 title: Abilitazione di Assets Insights tramite DTM
 description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Assets Insights.
 contentOwner: AG
-feature: Informazioni sulla risorsa, rapporti sulle risorse
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di mar
 
 >[!CAUTION]
 >
->Adobe DTM è obsoleto a favore di Adobe Experience Platform Launch e raggiungerà presto [la fine del ciclo di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe consiglia di [utilizzare Launch per informazioni sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM è obsoleto a favore di [!DNL Adobe Experience Platform] e raggiungerà presto [la fine di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe consiglia di [utilizzare [!DNL Adobe Experience Platform] per informazioni sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Esegui questi passaggi per abilitare Assets Insights tramite DTM:
 
-1. Tocca/fai clic sul logo AEM e vai a **[!UICONTROL Strumenti > Risorse > Configurazione approfondimenti]**.
+1. Tocca/fai clic sul logo AEM e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione approfondimenti]**.
 1. [Configurare AEM&#39;istanza con il Cloud Service DTM](../sites-administering/dtm.md)
 
    Il token API deve essere disponibile una volta effettuato l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visita **[!UICONTROL Impostazioni account]** dall&#39;icona Profilo. Questo passaggio non è necessario dal punto di vista di Assets Insights, perché l’integrazione di AEM Sites con Assets Insights è ancora in corso.
