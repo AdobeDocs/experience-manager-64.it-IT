@@ -1,8 +1,8 @@
 ---
 title: Configurazione del framework di integrazione della traduzione
-seo-title: Configurazione del framework di integrazione della traduzione
+seo-title: Configuring the Translation Integration Framework
 description: Scopri come configurare il framework di integrazione della traduzione.
-seo-description: Scopri come configurare il framework di integrazione della traduzione.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,15 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
+source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
 
-
-# Configurazione di Translation Integration Framework{#configuring-the-translation-integration-framework}
+# Configurazione del framework di integrazione della traduzione{#configuring-the-translation-integration-framework}
 
 Il framework di integrazione della traduzione si integra con servizi di traduzione di terze parti per orchestrare la traduzione dei contenuti AEM.
 
@@ -39,7 +38,7 @@ I seguenti fornitori di traduzione forniscono un’implementazione della nuova A
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartphone](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -58,14 +57,13 @@ I seguenti fornitori di traduzione forniscono un’implementazione della nuova A
 >
 
 
-
 Dopo aver installato un pacchetto di connettore, puoi creare una configurazione cloud per il connettore. In genere, è necessario fornire le credenziali per l&#39;autenticazione con il servizio di traduzione. Per informazioni sull&#39;aggiunta di una configurazione cloud per il connettore Microsoft Translator, vedere [Integrazione con Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Se necessario, puoi creare più configurazioni cloud per lo stesso connettore. Ad esempio, crea una configurazione per ciascuno degli account o dei progetti che hai con lo stesso fornitore.
 
 Dopo aver configurato una connessione, puoi creare la configurazione del framework di integrazione di traduzione che la utilizza.
 
-## Creazione di una configurazione dell&#39;integrazione di traduzione {#creating-a-translation-integration-configuration}
+## Creazione di una configurazione dell’integrazione di traduzione {#creating-a-translation-integration-configuration}
 
 Crea una configurazione del framework di integrazione della traduzione per specificare come tradurre il contenuto. La configurazione include le seguenti informazioni:
 
@@ -131,7 +129,7 @@ Le proprietà Sites controllano la modalità di traduzione del contenuto della p
  </tbody> 
 </table>
 
-### Proprietà di configurazione delle community {#communities-configuration-properties}
+### Proprietà di configurazione di Communities {#communities-configuration-properties}
 
 Le proprietà di Communities controllano le modalità di traduzione dei contenuti generati dall’utente. La traduzione dei contenuti generati dall’utente utilizza sempre la traduzione automatica. Per ulteriori informazioni, consulta [Traduzione di contenuti generati dagli utenti](/help/communities/translate-ugc.md).
 
@@ -228,4 +226,3 @@ Associare una pagina a Translation Integration Framework che definisce come eseg
 1. Tocca o fai clic su Modifica , quindi tocca o fai clic sulla scheda Cloud Services .
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione di traduzione.
 1. Seleziona il framework di integrazione della traduzione da utilizzare, quindi tocca o fai clic su Fine.
-
