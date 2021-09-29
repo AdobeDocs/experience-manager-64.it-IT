@@ -2,19 +2,19 @@
 title: Attività correlate
 description: Scopri come mettere in relazione le risorse che condividono alcuni attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
-feature: Gestione risorse, collaborazione
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 3%
 
 ---
 
 # Attività correlate {#related-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione tramite la funzione Risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un&#39;immagine/video su un argomento simile. È possibile correlare le risorse che condividono determinati attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
+Risorse Adobe Experience Manager consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione tramite la funzione Risorse correlate. Ad esempio, puoi correlare un file di licenza con una risorsa o un&#39;immagine/video su un argomento simile. È possibile correlare le risorse che condividono determinati attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
 
 In questo modo, puoi condividere un file a bassa risoluzione (ad esempio PDF/JPG) con fornitori/agenzie e rendere disponibile il file ad alta risoluzione (ad esempio INDD) solo su richiesta.
 
@@ -65,11 +65,11 @@ In questo modo, puoi condividere un file a bassa risoluzione (ad esempio PDF/JPG
 
 ## Traduzione di risorse correlate {#translating-related-assets}
 
-La creazione di relazioni sorgente/derivate tra risorse tramite la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando esegui un flusso di lavoro di traduzione su una risorsa derivata, AEM Assets recupera automaticamente tutte le risorse a cui fa riferimento il file di origine e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene tradotta insieme alle risorse di origine e derivate. Ad esempio, considera uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
+La creazione di relazioni sorgente/derivate tra risorse tramite la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando esegui un flusso di lavoro di traduzione su una risorsa derivata, [!DNL Experience Manager] Assets recupera automaticamente tutte le risorse a cui fa riferimento il file di origine e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene tradotta insieme alle risorse di origine e derivate. Ad esempio, considera uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se il file di origine è correlato a un’altra risorsa, AEM Assets recupera la risorsa di riferimento e la include per la traduzione.
+Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manager] Assets recupera la risorsa di riferimento e la include per la traduzione.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

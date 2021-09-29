@@ -1,44 +1,44 @@
 ---
-title: Installare e configurare ImageMagick per l’utilizzo con AEM Assets
+title: Installa e configura ImageMagick per lavorare con [!DNL Experience Manager] Assets
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio del processo della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
-feature: Rappresentazioni,Strumenti per sviluppatori
+feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# Installare e configurare ImageMagick per l’utilizzo con AEM Assets {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Installa e configura ImageMagick per lavorare con [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick è un plug-in software per creare, modificare, comporre o convertire immagini bitmap. Può leggere e scrivere immagini in vari formati (oltre 200) tra cui PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF e SVG. Utilizza ImageMagick per ridimensionare, capovolgere, speculare, ruotare, distorcere, inclinare e trasformare le immagini. È inoltre possibile regolare i colori dell&#39;immagine, applicare vari effetti speciali o disegnare testo, linee, poligoni, ellissi e curve utilizzando ImageMagick.
 
-Utilizza il gestore di file multimediali Adobe Experience Manager (AEM) dalla riga di comando per elaborare le immagini tramite ImageMagick. Per lavorare con vari formati di file utilizzando ImageMagick, consultare [Best practice relative ai formati di file Assets](assets-file-format-best-practices.md). Per informazioni su tutti i formati di file supportati, consulta [Formati supportati dalle risorse](assets-formats.md).
+Utilizza il gestore di contenuti multimediali Adobe Experience Manager dalla riga di comando per elaborare le immagini tramite ImageMagick. Per lavorare con vari formati di file utilizzando ImageMagick, consultare [Best practice relative ai formati di file Assets](assets-file-format-best-practices.md). Per informazioni su tutti i formati di file supportati, consulta [Formati supportati dalle risorse](assets-formats.md).
 
-Per elaborare file di grandi dimensioni utilizzando ImageMagick, considera requisiti di memoria più elevati del solito, modifiche potenziali richieste ai criteri di IM e l&#39;impatto complessivo sulle prestazioni. I requisiti di memoria dipendono da vari fattori come la risoluzione, la profondità di bit, il profilo colore e il formato file. Se si intende elaborare file di grandi dimensioni utilizzando ImageMagick, eseguire correttamente il benchmark del server AEM. Alla fine vengono fornite alcune risorse utili.
+Per elaborare file di grandi dimensioni utilizzando ImageMagick, considera requisiti di memoria più elevati del solito, modifiche potenziali richieste ai criteri di IM e l&#39;impatto complessivo sulle prestazioni. I requisiti di memoria dipendono da vari fattori come la risoluzione, la profondità di bit, il profilo colore e il formato file. Se si intende elaborare file di grandi dimensioni utilizzando ImageMagick, eseguire correttamente il benchmark del server [!DNL Experience Manager]. Alla fine vengono fornite alcune risorse utili.
 
 >[!NOTE]
 >
->Se utilizzi AEM su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
+>Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
 ## Installa ImageMagick {#installing-imagemagick}
 
 Sono disponibili più versioni di file di installazione ImageMagic per vari sistemi operativi. Utilizzare la versione appropriata per il sistema operativo in uso.
 
 1. Scarica i file di installazione [ImageMagick ](https://www.imagemagick.org/script/download.php) appropriati per il tuo sistema operativo.
-1. Per installare ImageMagick sul disco che ospita il server AEM, avviare il file di installazione.
+1. Per installare ImageMagick sul disco che ospita il server [!DNL Experience Manager], avvia il file di installazione.
 
 1. Impostare la variabile del percorso Ambiente sulla directory di installazione ImageMagic.
 1. Per verificare se l&#39;installazione è riuscita, esegui il comando `identify -version` .
 
 ## Imposta il passaggio del processo della riga di comando {#set-up-the-command-line-process-step}
 
-Puoi impostare il passaggio del processo della riga di comando per il tuo caso d’uso specifico. Esegui questi passaggi per generare un’immagine capovolta e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungi un file immagine JPEG a `/content/dam` sul server di AEM:
+Puoi impostare il passaggio del processo della riga di comando per il tuo caso d’uso specifico. Esegui questi passaggi per generare un’immagine capovolta e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungi un file immagine JPEG a `/content/dam` sul server [!DNL Experience Manager]:
 
-1. Sul server AEM, vai alla console Flusso di lavoro (`https://[aem_server]:[Port]/workflow`) e apri il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
+1. Sul server [!DNL Experience Manager], vai alla console Flusso di lavoro (`https://[aem_server]:[Port]/workflow`) e apri il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
 1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]** , apri le miniature **[!UICONTROL EPS (fornite da ImageMagick)]** .
 1. Nella scheda **[!UICONTROL Argomenti]**, aggiungi `image/jpeg` all&#39;elenco **[!UICONTROL Tipi di MIME]**.
 
@@ -73,7 +73,7 @@ Puoi impostare il passaggio del processo della riga di comando per il tuo caso d
    ![web_enabled](assets/web_enabled.png)
 
 1. Salva il flusso di lavoro.
-1. Per verificare se ImageMagic è in grado di elaborare correttamente le immagini, carica un&#39;immagine JPG in AEM Assets. Verifica se per essa vengono generate un’immagine capovolta e le relative rappresentazioni.
+1. Per verificare se ImageMagic è in grado di elaborare correttamente le immagini, carica un&#39;immagine JPG in [!DNL Assets]. Verifica se per essa vengono generate un’immagine capovolta e le relative rappresentazioni.
 
 ## Riduzione delle vulnerabilità relative alla sicurezza {#mitigating-security-vulnerabilities}
 
@@ -88,10 +88,10 @@ Se utilizzi ImageMagick o una libreria interessata, Adobe consiglia di attenuare
 
 >[!MORELIKETHIS]
 >
->* [Procedure consigliate per l’elaborazione di vari formati di file con AEM Assets](assets-file-format-best-practices.md)
-* [Opzioni della riga di comando per ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
-* [Esempi di utilizzo di ImageMagick di base e avanzati](https://www.imagemagick.org/Usage/)
-* [Ottimizzazione delle prestazioni delle risorse per ImageMagick](performance-tuning-guidelines.md)
-* [Elenco completo dei formati di file supportati da AEM Assets](assets-formats.md)
-* [Comprendere i formati di file e i costi di memoria delle immagini](https://www.scantips.com/basics1d.html)
+>* [Procedure consigliate per l’elaborazione di vari formati di file tramite [!DNL Assets]](assets-file-format-best-practices.md)
+>* [Opzioni della riga di comando per ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
+>* [Esempi di utilizzo di ImageMagick di base e avanzati](https://www.imagemagick.org/Usage/)
+>* [Ottimizzazione delle prestazioni delle risorse per ImageMagick](performance-tuning-guidelines.md)
+>* [Elenco completo dei formati di file supportati da [!DNL Assets]](assets-formats.md)
+>* [Comprendere i formati di file e i costi di memoria delle immagini](https://www.scantips.com/basics1d.html)
 

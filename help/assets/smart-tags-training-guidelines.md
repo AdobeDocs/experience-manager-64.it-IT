@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Assegnazione tag, metadati, tag avanzati
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 12%
 
 ---
@@ -31,7 +31,7 @@ Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag *my-pa
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coherence.png)
 
-**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che AEM imparare a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
+**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che [!DNL Experience Manager] impari a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
 
 Ad esempio, per il tag *model-down-pose*, includi più immagini di formazione simili all&#39;immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
 
@@ -53,7 +53,7 @@ Gli smart tag migliorati si basano su modelli di apprendimento delle immagini de
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Incapacità di identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i loghi sulle T-shirt.
-* L’assegnazione tag è supportata nelle impostazioni internazionali supportate in AEM. Per un elenco delle lingue, consulta [Note sulla versione di Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
+* L’assegnazione tag è supportata nelle impostazioni internazionali in cui è supportato [!DNL Experience Manager]. Per un elenco delle lingue, consulta [Note sulla versione di Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
 Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ricerca Omni di Assets (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 

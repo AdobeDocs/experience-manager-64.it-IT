@@ -1,25 +1,24 @@
 ---
 title: Integrazione delle risorse con il flusso di attività
-description: Descrive le funzionalità di registrazione di AEM e come configurare AEM per registrare eventi specifici.
+description: Descrive le funzionalità di registrazione di  [!DNL Experience Manager] and how to configure [!DNL Experience Manager] per registrare eventi specifici.
 contentOwner: AG
 feature: Asset Management
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
-
 # Integrazione delle risorse con il flusso di attività {#integrating-assets-with-activity-stream}
 
-Gli utenti di Adobe Experience Manager (AEM) Assets eseguono molte azioni, come la creazione, il caricamento e l’eliminazione di Assets. Queste azioni possono essere registrate in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di AEM e come configurare AEM per registrare eventi specifici.
+Gli utenti di Adobe Experience Manager Assets eseguono molte azioni, come la creazione, il caricamento e l’eliminazione di Assets. Queste azioni possono essere registrate in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurare [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l’integrazione di AEM Assets con Activity Stream è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l’integrazione [!DNL Experience Manager] Assets con Activity Stream è disabilitata per impostazione predefinita.
 
 ## Eventi azione supportati {#supported-action-events}
 
@@ -41,9 +40,9 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configurazione della registrazione di eventi AEM Assets {#configuring-aem-assets-events-recording}
+## Configurazione della registrazione di eventi [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) consente di accedere alla regolazione del Registratore eventi di AEM Assets. Per configurare il registratore di eventi AEM Assets, procedere come segue:
+La [console Web](/help/sites-deploying/configuring-osgi.md) consente di accedere alla regolazione del [!DNL Assets] Registratore eventi. Per configurare il [!DNL Assets] Registratore eventi, procedere come segue:
 
 1. Passa alla **[!UICONTROL console Web]**
 

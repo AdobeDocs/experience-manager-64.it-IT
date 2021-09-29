@@ -2,12 +2,12 @@
 title: Aggiungi una filigrana alle risorse digitali
 description: Scopri come utilizzare la funzione Watermarking per aggiungere una filigrana digitale alle risorse.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle risorse, per consentire agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. [!DNL Experience Manager Assets] supporta il testo da utilizzare come filigrana nei file PNG e JPEG.
 
-Risorse Adobe Experience Manager (AEM) consente di aggiungere una filigrana digitale alle immagini per consentire agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. AEM Assets supporta il testo da utilizzare come filigrana nei file PNG e JPEG.
+Risorse Adobe Experience Manager consente di aggiungere una filigrana digitale alle immagini per consentire agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. [!DNL Experience Manager] Le risorse supportano il testo da utilizzare come filigrana nei file PNG e JPEG.
 
 Per applicare una filigrana alle risorse, aggiungi il passaggio di filigrana nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] .
 
@@ -37,9 +37,9 @@ Per applicare una filigrana alle risorse, aggiungi il passaggio di filigrana nel
    ![Fornisci gli argomenti nel passaggio Aggiungi filigrana in Assets](assets/arguments_add_watermark_aem_assets.png)
 
 1. Con il passaggio Filigrana, salva il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
-1. Dall’interfaccia utente AEM, carica una risorsa di esempio. La filigrana viene visualizzata con le dimensioni del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
+1. Dall’interfaccia utente di [!DNL Experience Manager] , carica una risorsa di esempio. La filigrana viene visualizzata con le dimensioni del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
 
-Per applicare una filigrana ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [AEM Document Services](/help/forms/using/overview-aem-document-services.md).
+Per applicare una filigrana ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [[!DNL Experience Manager] Document Services](/help/forms/using/overview-aem-document-services.md).
 
 ## Suggerimenti e limitazioni {#tips-limitations}
 

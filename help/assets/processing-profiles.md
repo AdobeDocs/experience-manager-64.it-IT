@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Flusso di lavoro, Gestione risorse, rappresentazioni
+feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1374'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Per creare, modificare ed eliminare metadati, immagini o profili video, è neces
 
 Dopo aver creato i metadati, le immagini o il profilo video, li assegni a una o più cartelle che utilizzi come destinazione per le risorse appena caricate.
 
-Un concetto importante relativo all’utilizzo dei profili in AEM Assets è che vengono assegnati alle cartelle. All’interno di un profilo, le impostazioni sono sotto forma di profili di metadati, insieme a profili video o di immagini. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, la modalità di denominazione di file e cartelle, la modalità di organizzazione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo. Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, insieme a buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e garantire che i file giusti vengano elaborati dal profilo giusto. Ad esempio, consulta [organizzare le risorse utilizzando le cartelle](organize-assets.md#organize-using-folders).
+Un concetto importante relativo all’utilizzo dei profili in [!DNL Experience Manager] Assets è che vengono assegnati alle cartelle. All’interno di un profilo, le impostazioni sono sotto forma di profili di metadati, insieme a profili video o di immagini. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, la modalità di denominazione di file e cartelle, la modalità di organizzazione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo. Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, insieme a buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e garantire che i file giusti vengano elaborati dal profilo giusto. Ad esempio, consulta [organizzare le risorse utilizzando le cartelle](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Un concetto importante relativo all’utilizzo dei profili in AEM Assets è che 
 
 >[!NOTE]
 >
->Si applica a *Dynamic Media - Modalità Scene7* solo in AEM 6.4.7.0 o versione successiva.
+>Si applica a *Dynamic Media - Modalità Scene7* solo in [!DNL Experience Manager] 6.4.7.0 o versione successiva.
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente che hai successivamente modificato.
 
@@ -84,11 +84,11 @@ Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazi
 
 1. Fai clic su **[!UICONTROL Start]**, quindi fai clic su **[!UICONTROL Conferma]**.
 
-   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale AEM fare clic su **[!UICONTROL Strumenti > Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, fai clic su **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale [!DNL Experience Manager] fai clic su **[!UICONTROL Strumenti > Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, fai clic su **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
 ### Regolazione della dimensione batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
-(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più elevato significa che in un singolo processo di rielaborazione saranno presenti molti file. Di conseguenza, il banner di elaborazione rimane AEM risorse per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l&#39;Adobe consiglia di aumentare il valore a diverse centinaia, ma mai più di 1000. Se la dimensione media del file è grande centinaia di megabyte, l&#39;Adobe consiglia di ridurre la dimensione del batch fino a 10.
+(Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più elevato significa che in un singolo processo di rielaborazione saranno presenti molti file. Di conseguenza, il banner di elaborazione rimane sulle risorse [!DNL Experience Manager] per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola-1 MB o inferiore, l&#39;Adobe consiglia di aumentare il valore a diverse centinaia, ma mai più di 1000. Se la dimensione media del file è grande centinaia di megabyte, l&#39;Adobe consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione**
 
@@ -138,5 +138,5 @@ Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazi
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main [!DNL Experience Manager] console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model. -->

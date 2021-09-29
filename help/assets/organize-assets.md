@@ -2,12 +2,12 @@
 title: Organizzazione delle risorse digitali
 description: Organizza le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
-feature: Gestione risorse,Ricerca
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Tutte le risorse digitali, i metadati e il contenuto di Microsoft Office e i documenti PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio nei metadati di Digital Asset Management.
 
-AEM Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
+[!DNL Experience Manager] Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
@@ -36,7 +36,7 @@ Il modo più semplice per organizzare le risorse è salvarle nelle cartelle. È 
    * **Cartelle basate su data** : contiene risorse digitali in base a una data di creazione o a un’ultima data di modifica.
 
 * Crea una directory di cartelle che non è probabile modificare in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già stata pubblicata, utilizza AEM per spostarla in un’altra cartella e ripubblicarla dalla nuova posizione, la posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è *persa* per AEM e non può essere annullata dalla pubblicazione. Di conseguenza, come best practice, prima annulla la pubblicazione di una risorsa e poi spostala in un’altra cartella.
+* Se una risorsa è già stata pubblicata, utilizza [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, la posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è *persa* in [!DNL Experience Manager] e non può essere annullata dalla pubblicazione. Di conseguenza, come best practice, prima annulla la pubblicazione di una risorsa e poi spostala in un’altra cartella.
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 

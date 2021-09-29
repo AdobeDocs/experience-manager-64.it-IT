@@ -2,12 +2,12 @@
 title: Preparazione delle risorse per la traduzione
 description: Crea cartelle principali in lingua per preparare la traduzione di risorse multilingue.
 contentOwner: AG
-feature: Progetti,Traduzione
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Per risorse multilingue si intendono le risorse con file binari, metadati e tag in più lingue. In genere, i binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Risorse Adobe Experience Manager (AEM), le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
+In Risorse Adobe Experience Manager, le risorse multilingue sono incluse nelle cartelle, in cui ogni cartella contiene le risorse in una lingua diversa.
 
 Ogni cartella della lingua è denominata copia della lingua. La cartella principale di una copia per lingua, nota come radice lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, */content/dam/it* è la directory principale della lingua italiana per la copia in lingua italiana. Le copie in lingua devono utilizzare una [directory principale della lingua configurata correttamente](preparing-assets-for-translation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata durante l&#39;esecuzione delle traduzioni delle risorse di origine.
 
@@ -61,7 +61,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 ## Visualizzazione delle radici della lingua {#viewing-language-roots}
 
-L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle radici della lingua create in AEM Assets.
+L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle radici della lingua create all’interno di [!DNL Experience Manager] Risorse.
 
 1. Nella console Assets, seleziona la lingua principale per la quale vuoi creare delle copie per lingua.
 1. Tocca o fai clic sull&#39;icona di navigazione globale e scegli **[!UICONTROL Riferimenti]** per aprire il riquadro Riferimento.

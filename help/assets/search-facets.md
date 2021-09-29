@@ -2,13 +2,13 @@
 title: Facet di ricerca
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
 contentOwner: AG
-feature: Ricerca
+feature: Search
 role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '2538'
-ht-degree: 22%
+source-wordcount: '2530'
+ht-degree: 21%
 
 ---
 
@@ -30,7 +30,7 @@ I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di 
 
 Per le ricerche full-text, aggiungere il predicato Fulltext al modulo. Utilizza il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizza il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create all’interno di un intervallo di date specificato.
 
-1. Tocca/fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Tocca/fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Ricerca in Forms, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Individua e seleziona la barra di ricerca amministrazione risorse](assets/assets_admin_searchrail.png)
@@ -39,7 +39,7 @@ Per le ricerche full-text, aggiungere il predicato Fulltext al modulo. Utilizza 
 
    >[!NOTE]
    >
-   >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra di ricerca preconfigurata **Risorse Admin** da una versione AEM precedente, esegui questi passaggi:
+   >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra di ricerca preconfigurata **Risorse Admin** da una versione precedente [!DNL Experience Manager], esegui questi passaggi:
    > 
    >1. Passa a */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
    >1. Elimina il nodo **type**.
@@ -117,7 +117,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >
 >Il predicato Opzioni è un wrapper personalizzato che include predicati di proprietà per dimostrare il comportamento descritto. Al momento, non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
-1. Tocca il logo AEM, quindi vai a **[!UICONTROL Strumenti > Generale > Cerca Forms]**.
+1. Tocca il logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti > Generale > Cerca in Forms]**.
 1. Dalla pagina **[!UICONTROL Moduli di ricerca]**, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi tocca l’icona Modifica.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
@@ -137,9 +137,9 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 
 ## Aggiunta di un predicato Proprietà con più valori {#adding-a-multi-value-property-predicate}
 
-Il predicato Proprietà con più valori consente di cercare le risorse per più valori. Considera uno scenario in cui hai immagini di più prodotti in AEM Assets e i metadati per ogni immagine includono un numero SKU associato al prodotto. Puoi utilizzare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
+Il predicato Proprietà con più valori consente di cercare le risorse per più valori. Considera uno scenario in cui hai immagini di più prodotti in [!DNL Experience Manager] Risorse e i metadati per ogni immagine includono un numero SKU associato al prodotto. Puoi utilizzare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Nella pagina Ricerca in Forms, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]** , immetti un’etichetta e un testo segnaposto per il predicato. Specifica il nome della proprietà in base al quale eseguire la ricerca nel campo della proprietà, ad esempio `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
@@ -150,9 +150,9 @@ Il predicato Proprietà con più valori consente di cercare le risorse per più 
 
 ## Aggiunta di un predicato Tag {#adding-a-tags-predicate}
 
-Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, AEM Assets cerca nelle risorse le corrispondenze di uno o più tag in base ai tag specificati. In altre parole, la query di ricerca esegue un’operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione di corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
+Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, [!DNL Experience Manager] Risorse cerca nelle risorse le corrispondenze di uno o più tag in base ai tag specificati. In altre parole, la query di ricerca esegue un’operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione di corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Ricerca in Forms, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi tocca **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca , trascina **[!UICONTROL Predicato tag]** dalla scheda Seleziona predicato al riquadro principale.
 1. Nella scheda Impostazioni , immetti un testo segnaposto per il predicato. Specifica il nome della proprietà in base al quale eseguire la ricerca nel campo della proprietà, ad esempio *jcr:content/metadata/cq:tags*. In alternativa, puoi selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
@@ -223,6 +223,6 @@ Se non ti viene assegnato un ruolo di amministratore, compare un elenco di autor
 >[!MORELIKETHIS]
 >
 >* [Estensione della ricerca delle risorse](searchx.md)
-* [Ricerca delle risorse](search-assets.md)
-* [Ricerca delle risorse video](search-video-assets.md)
+>* [Ricerca delle risorse](search-assets.md)
+>* [Ricerca delle risorse video](search-video-assets.md)
 

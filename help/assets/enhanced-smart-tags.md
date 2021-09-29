@@ -6,13 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Tag avanzati, ricerca
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 18%
+source-wordcount: '1514'
+ht-degree: 17%
 
 ---
 
@@ -32,7 +32,7 @@ Una volta che un tag è stato addestrato e pronto, il servizio può ora applicar
 
 In background, il Servizio di contenuti avanzati utilizza il framework AI di Adobe Sensei per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
 
-Il Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in Adobe Experience Manager (AEM), l’amministratore di sistema deve integrare l’istanza AEM con [!DNL Adobe I/O].
+Il Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in Adobe Experience Manager, l’amministratore di sistema deve integrare l’istanza [!DNL Experience Manager] con [!DNL Adobe I/O].
 
 In sintesi, ecco i passaggi principali per l’utilizzo del Servizio di contenuti avanzati:
 
@@ -52,15 +52,11 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 ## Onboarding {#onboarding}
 
-Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per AEM. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
+Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager] . Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
 
-L’amministratore può seguire il collegamento per integrare il Servizio di contenuti avanzati con AEM. Per integrare il servizio con AEM Assets, consulta [Configurare tag avanzati](config-smart-tagging.md).
+L’amministratore può seguire il collegamento per integrare il Servizio di contenuti avanzati con [!DNL Experience Manager] . Per integrare il servizio con [!DNL Experience Manager] risorse, consulta [Configurare tag avanzati](config-smart-tagging.md).
 
-Il processo di onboarding è completo quando l’amministratore configura il servizio e aggiunge utenti in AEM.
-
->[!NOTE]
->
->Se utilizzi AEM versione 6.3 o precedente e hai bisogno del servizio di assegnazione tag automatica per le risorse, consulta [Tag avanzati](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di intelligenza artificiale e sono meno precisi della funzionalità di assegnazione tag avanzati migliorata.
+Il processo di onboarding è completo quando l&#39;amministratore configura il servizio e aggiunge gli utenti in [!DNL Experience Manager] .
 
 ## Verifica di risorse e tag {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagi
 >1. Quando si prepara il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 >
-
 
 
 ## Formazione del Servizio di contenuti avanzati {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ Puoi abilitare il Servizio di contenuti avanzati per addestrare periodicamente l
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una volta selezionata questa opzione per una cartella, AEM esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse delle cartelle e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle 12:30 del sabato.
+Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per addestrare il Servizio di contenuti avanzati sulle risorse delle cartelle e sui relativi tag. Per impostazione predefinita, il flusso di lavoro di formazione viene eseguito settimanalmente alle 12:30 del sabato.
 
 ### Formazione on-demand {#on-demand-training}
 
 Puoi addestrare il Servizio di contenuti avanzati tutte le volte che lo desideri dalla console Flusso di lavoro.
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Apprendimento dei tag avanzati]**, quindi dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
 1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individua la cartella del payload che include le risorse con tag per la formazione del servizio.
 1. Specifica un titolo per il flusso di lavoro e un commento da aggiungere. Quindi, tocca o fai clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
@@ -119,7 +114,7 @@ Puoi addestrare il Servizio di contenuti avanzati tutte le volte che lo desideri
 
 Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel set di risorse di formazione, controlla il rapporto del flusso di lavoro di formazione dalla console Rapporti.
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
+1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, tocca o fai clic su **[!UICONTROL Crea]**.
 1. Seleziona il rapporto **[!UICONTROL Apprendimento dei tag avanzati]**, quindi tocca o fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi nella barra degli strumenti, tocca o fai clic su **[!UICONTROL Crea]**.
@@ -161,7 +156,7 @@ Puoi attivare il flusso di lavoro dei tag dalle seguenti opzioni per assegnare t
 
 #### Assegnazione di tag alle risorse dalla console Flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Risorse di tag avanzati DAM]**, quindi dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

@@ -1,20 +1,20 @@
 ---
 title: Best practice per i formati di file delle risorse
-description: Best practice per il supporto dei file in AEM Assets.
+description: Best practice per il supporto dei file in [!DNL Experience Manager] Risorse.
 contentOwner: AG
-feature: Gestione delle risorse, Strumenti per sviluppatori
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # Best practice per i formati di file delle risorse {#assets-file-format-best-practices}
 
-AEM Assets supporta numerose librerie di formati di file proprietari e di terze parti per soddisfare diversi requisiti di supporto dei file da parte degli utenti. Le librerie di Adobi supportate includono Adobe Camera Raw, Gibson, Adobe PDF Rasterizer e Adobe InDesign Server. Inoltre, AEM Assets supporta librerie di terze parti, tra cui ImageMagick, DodiciMonkeys e così via.
+[!DNL Experience Manager Assets] supporta numerose librerie di formati di file proprietari e di terze parti per soddisfare diversi requisiti di supporto dei file da parte degli utenti. Le librerie di Adobi supportate includono Adobe Camera Raw, Gibson, Adobe PDF Rasterizer e Adobe InDesign Server. Inoltre, [!DNL Assets] supporta librerie di terze parti, tra cui ImageMagick, DodiciMonkeys e così via.
 
 Per i formati di file supportati, consulta [Formati supportati da Assets](assets-formats.md).
 
@@ -27,7 +27,7 @@ Per ottenere prestazioni ottimali, Adobe consiglia di utilizzare la libreria Ado
 
 La libreria Adobe Camera Raw supporta il profilo colore CMYK come input. Tuttavia, genera l&#39;output nello spazio colore RGB e supporta l&#39;output solo in formato JPEG. Non mantiene lo spazio colore del file di origine (ad esempio CMYK) nelle miniature.
 
-Per ulteriori informazioni, consulta [Supporto Camera Raw](camera-raw.md) in AEM Assets.
+Per ulteriori informazioni, consulta [Supporto Camera Raw](camera-raw.md) in [!DNL Assets].
 
 ## Libreria Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Miniature e anteprime generate con PDF Rasterizer sono di qualità migliore risp
 
 ## Server Adobe InDesign {#adobe-indesign-cc-server}
 
-Adobe consiglia di utilizzare il server Adobe InDesign per estrarre rappresentazioni specifiche di Adobe InDesign, ad esempio IDML e HTML. Per ulteriori informazioni, consulta [Aggiunta di risorse AEM come riferimenti in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe consiglia di utilizzare il server Adobe InDesign per estrarre rappresentazioni specifiche di Adobe InDesign, ad esempio IDML e HTML. Per ulteriori informazioni, consulta [Aggiunta di [!DNL Experience Manager] risorse come riferimenti in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe consiglia di utilizzare la libreria ImageMagick nei seguenti scenari:
 * Per preservare la trasparenza
 * Per elaborare file PSD e PSB
 
-Per informazioni su come impostare la libreria ImageMagic in AEM, vedere [Uso di ImageMagick](media-handlers.md#an-example-using-imagemagick). Per un utilizzo ottimale, consulta [Best practice per la configurazione di ImageMagick](best-practices-for-imagemagick.md).
+Per informazioni su come impostare la libreria ImageMagic in [!DNL Experience Manager], vedere [Utilizzo di ImageMagick](media-handlers.md#an-example-using-imagemagick). Per un utilizzo ottimale, consulta [Best practice per la configurazione di ImageMagick](best-practices-for-imagemagick.md).
 
 ## Libreria di transcodifica delle immagini {#image-transcoding-library}
 

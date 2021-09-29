@@ -1,24 +1,24 @@
 ---
 title: Lightbox
-description: Informazioni su Lightbox in AEM Assets.
+description: Informazioni su Lightbox in [!DNL Experience Manager] Risorse.
 contentOwner: AG
-feature: Strumenti Per Sviluppatori, Rendering
+feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
 # Lightbox {#lightbox}
 
-Informazioni su Lightbox in AEM Assets.
+Informazioni su Lightbox in [!DNL Experience Manager] Assets.
 
 Lightbox è un tipo speciale di raccolta che consente di accedere facilmente alle risorse. Puoi accedere rapidamente a Lightbox per aggiungere o eliminare risorse. Funge da galleria di immagini personale.
 
-Se sei un utente di Adobe Experience Manager (AEM) Assets, la Lightbox viene creata automaticamente al primo accesso all’applicazione. È esclusivo per il tuo accesso. Altri utenti non possono accedere alla Lightbox.
+Se sei un utente di Adobe Experience Manager Assets, la Lightbox viene creata automaticamente al primo accesso all’applicazione. È esclusivo per il tuo accesso. Altri utenti non possono accedere alla Lightbox.
 
 ## Aggiunta di risorse a lightbox {#adding-assets-to-lightbox}
 

@@ -2,12 +2,12 @@
 title: Modifica in blocco dei metadati di più risorse e raccolte
 description: Scopri come modificare contemporaneamente i metadati di più risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
-feature: Gestione risorse, Metadati, Raccolte
+feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '433'
 ht-degree: 13%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 Scopri come modificare contemporaneamente i metadati di più risorse e raccolte per diffondere rapidamente le modifiche comuni ai metadati.
 
-Adobe Enterprise Manager (AEM) Assets consente di modificare contemporaneamente i metadati di più risorse, in modo da poter rapidamente propagare le modifiche comuni ai metadati delle risorse in blocco. Puoi anche modificare i metadati per più raccolte in blocco.
+Adobe Enterprise Manager Assets consente di modificare contemporaneamente i metadati di più risorse, in modo da poter rapidamente propagare le modifiche comuni ai metadati delle risorse in blocco. Puoi anche modificare i metadati per più raccolte in blocco.
 
 Utilizza la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
@@ -47,7 +47,7 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l’aggiunta
 
 ## Configura il limite per l&#39;aggiornamento in massa dei metadati {#configure-limit-for-bulk-metadata-update}
 
-Per evitare situazioni simili a DOS, AEM limita il numero di parametri supportati in una richiesta Sling. Quando aggiorni i metadati di molte risorse in una sola volta, potresti raggiungere il limite e i metadati non vengono aggiornati per altre risorse. AEM genera il seguente avviso nei registri:
+Per evitare situazioni simili a DOS, [!DNL Experience Manager] limita il numero di parametri supportati in una richiesta Sling. Quando aggiorni i metadati di molte risorse in una sola volta, potresti raggiungere il limite e i metadati non vengono aggiornati per altre risorse. [!DNL Experience Manager] genera il seguente avviso nei registri:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

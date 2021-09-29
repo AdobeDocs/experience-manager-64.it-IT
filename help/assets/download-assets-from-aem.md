@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Non è possibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set di
 
 Per scaricare le risorse, effettua le seguenti operazioni:
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Navigazione]**.
+1. Nell’angolo in alto a sinistra di AEM, tocca il logo [!DNL Experience Manager], quindi nella barra a sinistra tocca **[!UICONTROL Navigazione]**.
 1. Nella pagina Navigazione, tocca **[!UICONTROL Risorse]** > **[!UICONTROL File.]**
 1. Passa a una cartella contenente le risorse da scaricare.
 1. Seleziona la cartella o seleziona una o più risorse all’interno della cartella.

@@ -2,12 +2,12 @@
 title: 'Gestisci le risorse in [!DNL Adobe Experience Manager Assets]. [!DNL Adobe Stock] '
 description: Cerca, recupera, rilascia la licenza e gestisci [!DNL Adobe Stock] risorse all’interno di [!DNL Adobe Experience Manager]. Utilizza le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
-feature: Ricerca,Adobe Stock
+feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1114'
 ht-degree: 13%
 
 ---
@@ -32,13 +32,13 @@ Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 ### Creare una configurazione IMS {#create-an-ims-configuration}
 
-1. Nell&#39;interfaccia utente [!DNL Experience Manager] , passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni IMS di Adobe]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
+1. Nell&#39;interfaccia utente [!DNL Experience Manager] , passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Riutilizzare un certificato esistente o selezionare **[!UICONTROL Crea nuovo certificato]**.
-1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scarica la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**. Lascia aperta la schermata [!UICONTROL Adobe IMS Technical Account Configuration] per fornire i valori richiesti a breve.
+1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scarica la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**. Lascia aperta la schermata [!UICONTROL Configurazione account tecnico Adobe IMS] per fornire a breve i valori richiesti.
 1. Accedi a [Adobe Developer Console](https://console.adobe.io). Assicurati che il tuo account disponga delle autorizzazioni di amministratore per l’organizzazione per la quale è richiesta l’integrazione.
 1. Fai clic su **[!UICONTROL Crea nuovo progetto]** e fai clic su **[!UICONTROL Aggiungi API]**. Seleziona **[!UICONTROL Adobe Stock]** dall’elenco delle API disponibili. Selezionare [!UICONTROL OAUTH 2.0 Web].
 1. Fornisci valori **[!UICONTROL URI di reindirizzamento predefiniti]** e **[!UICONTROL pattern URI di reindirizzamento]**. Fai clic su **[!UICONTROL Salva API configurata]**. Copia l&#39;ID e il segreto generati.
-1. Nella schermata [!UICONTROL Configurazione account tecnico IMS di Adobe], inserisci i valori nelle caselle **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]** Per informazioni dettagliate su questi valori, consulta [Avvio rapido autenticazione JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Nella schermata [!UICONTROL Configurazione account tecnico Adobe IMS], inserisci i valori nelle caselle **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. Per informazioni dettagliate su questi valori, consulta [Avvio rapido autenticazione JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -123,7 +123,7 @@ Gli utenti possono visualizzare le proprietà sia delle risorse con licenza che 
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Aiuto per il piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
->* [Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Esercitazione video sull’ [!DNL Adobe Stock] utilizzo delle risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] aiuto per il piano aziendale](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
+>* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
 

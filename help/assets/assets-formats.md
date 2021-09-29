@@ -1,22 +1,22 @@
 ---
-title: Formati di file supportati in AEM Assets
-description: Elenco dei formati di file e dei tipi MIME supportati da AEM Assets e delle funzioni supportate per ciascun formato.
+title: Formati di file supportati in [!DNL Experience Manager] Risorse
+description: Elenco dei formati di file e dei tipi MIME supportati da Assets e delle funzioni supportate per ciascun formato.
 contentOwner: AG
-feature: Gestione risorse, rappresentazioni
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 10%
 
 ---
 
-# Formati di file supportati in AEM Assets {#assets-supported-formats}
+# Formati di file supportati in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets supporta un’ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME.
+[!DNL Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME.
 
-Per integrare AEM Assets con altre soluzioni di gestione delle risorse digitali (DAM) conformi agli standard e con il software desktop, utilizza l’Extensible Metadata Platform (XMP) di Adobe.
+Per integrare [!DNL Assets] con altre soluzioni di gestione delle risorse digitali (DAM) conformi agli standard e con il software desktop, utilizza l’Extensible Metadata Platform (XMP) di Adobe.
 
 Utilizza la legenda per comprendere il livello di supporto.
 
@@ -111,7 +111,7 @@ Consulta [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-La libreria Adobe Camera Raw consente ad AEM Assets di acquisire immagini crude. Consulta [Supporto Camera Raw](camera-raw.md).
+La libreria Adobe Camera Raw consente a [!DNL Assets] di acquisire immagini non elaborate. Consulta [Supporto Camera Raw](camera-raw.md).
 
 ## Formati documento {#supported-document-formats}
 
@@ -148,7 +148,7 @@ I formati dei documenti supportati per le funzioni Dynamic Media sono i seguenti
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -217,7 +217,7 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 
 I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | . | . | . | . | . |  |
 | JAR | . | . | . | . | . |  |
@@ -231,7 +231,7 @@ I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM c
 
 L’applicabilità dei flussi di lavoro DAM comuni per alcuni altri formati di file è descritta nella tabella seguente.
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | . | . | . | . | . |  |
 | SVG | . | . | . | . | . |  |
@@ -244,7 +244,7 @@ L’applicabilità dei flussi di lavoro DAM comuni per alcuni altri formati di f
 
 ## Tipi MIME supportati {#supported-mime-types}
 
-Per impostazione predefinita, AEM rileva il tipo di file utilizzando l’estensione file. AEM rilevarlo dal contenuto dei file. Per quest&#39;ultimo, seleziona l&#39;opzione [!UICONTROL Rileva MIME dal contenuto] in [!UICONTROL Servizio Day CQ DAM Mime Type Service] nella console Web AEM.
+Per impostazione predefinita, [!DNL Experience Manager] rileva il tipo di file utilizzando l’estensione file. [!DNL Experience Manager] può rilevarlo dal contenuto dei file. Per quest’ultimo, seleziona l’opzione [!UICONTROL Rileva MIME dal contenuto] in [!UICONTROL Servizio Day CQ DAM Mime Type] nella [!DNL Experience Manager] Console web.
 
 In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

@@ -1,8 +1,8 @@
 ---
 title: Creazione di progetti di traduzione per frammenti di contenuto
-seo-title: Creazione di progetti di traduzione per frammenti di contenuto
+seo-title: Creating Translation Projects for Content Fragments
 description: Scopri come tradurre i frammenti di contenuto.
-seo-description: Scopri come tradurre i frammenti di contenuto.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -54,13 +54,13 @@ Il flusso di lavoro per la copia in lingua di aggiornamento include le seguenti 
 
 ## Traduzione di frammenti di file multimediali diversi {#translating-mixed-media-fragments}
 
-AEM consente di tradurre frammenti di contenuto che includono vari tipi di risorse e raccolte multimediali. Se traduci un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
+[!DNL Experience Manager] consente di tradurre frammenti di contenuto che includono vari tipi di risorse e raccolte multimediali. Se traduci un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
 
 Se il frammento di contenuto include una raccolta, le risorse all’interno della raccolta vengono tradotte insieme al frammento di contenuto. Le copie tradotte delle risorse vengono memorizzate nella directory principale della lingua di destinazione appropriata in una posizione che corrisponde alla posizione fisica delle risorse di origine nella directory principale della lingua di origine.
 
 Per tradurre frammenti di contenuto che includono file multimediali diversi, modifica innanzitutto il framework di traduzione predefinito per abilitare la traduzione di risorse in linea e raccolte associate a frammenti di contenuto.
 
-1. Tocca o fai clic sul logo AEM e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
+1. Tocca o fai clic sul logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
 1. Individua **[!UICONTROL Integrazione di traduzione]** in **[!UICONTROL Adobe Marketing Cloud]** e tocca o fai clic su **[!UICONTROL Mostra configurazioni]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

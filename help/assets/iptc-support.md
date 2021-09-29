@@ -1,22 +1,22 @@
 ---
 title: Supporto per i metadati IPTC
-description: Scopri come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+description: Scopri come Adobe Experience Manager Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 7%
 
 ---
 
 # Supporto per i metadati IPTC {#support-for-iptc-metadata}
 
-Scopri come Adobe Experience Manager (AEM) Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+Scopri come Adobe Experience Manager Assets supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 
-Adobe Experience Manager (AEM) Assets supporta lo standard di metadati IPTC, ampiamente utilizzato per descrivere le risorse. In questo modo, AEM Assets migliora l&#39;accettazione delle sue immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
+Adobe Experience Manager Assets supporta lo standard di metadati IPTC, ampiamente utilizzato per descrivere le risorse. In questo modo, [!DNL Experience Manager Assets] migliora l&#39;accettazione delle sue immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
 
 Lo schema metadati predefinito per le risorse ora incorpora gli schemi di metadati IPTC Core e IPTC Extension per definire proprietà di metadati complete che consentono agli utenti di aggiungere dati precisi e affidabili su persone, posizioni e prodotti visualizzati in un&#39;immagine. Supporta inoltre date, nomi e identificatori relativi alla creazione dell&#39;immagine e un modo flessibile per esprimere le informazioni sui diritti.
 

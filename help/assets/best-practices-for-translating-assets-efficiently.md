@@ -2,19 +2,19 @@
 title: Best practice per tradurre le risorse in modo efficiente
 description: Procedure consigliate per una gestione efficiente delle risorse, al fine di sincronizzare diverse versioni tradotte e semplificare i flussi di lavoro di traduzione.
 contentOwner: AG
-feature: Traduzione
+feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Best practice per tradurre le risorse in modo efficiente {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager (AEM) Assets supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consulta [Risorse multilingue](multilingual-assets.md).
+Adobe Experience Manager Assets supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consulta [Risorse multilingue](multilingual-assets.md).
 
 Per una gestione efficiente delle risorse, affinché le diverse versioni tradotte rimangano sincronizzate, crea [copie in lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
 
@@ -43,7 +43,7 @@ Puoi anche apportare alcune modifiche alla configurazione di un paio di flussi d
 
 1. Attiva il flusso di lavoro *Imposta data ultima modifica* .
 
-   Il flusso di lavoro *DAM MetaData Writeback* configura l’ultima data di modifica per una risorsa. Poiché disattivi questo flusso di lavoro al passaggio 2, AEM Assets non è più in grado di mantenere aggiornata l’ultima data di modifica delle risorse. Abilita quindi il flusso di lavoro *Imposta data ultima modifica* per garantire che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
+   Il flusso di lavoro *DAM MetaData Writeback* configura l’ultima data di modifica per una risorsa. Poiché disattivi questo flusso di lavoro nel passaggio 2, [!DNL Experience Manager Assets] non è più in grado di mantenere aggiornata l’ultima data di modifica delle risorse. Abilita quindi il flusso di lavoro *Imposta data ultima modifica* per garantire che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
 
 1. [Configura il ](/help/sites-administering/tc-tic.md) framework di integrazione della traduzione per interrompere la traduzione dei binari delle risorse. Deseleziona l’opzione &quot;Traduci risorse&quot; nella scheda Risorse per interrompere la traduzione dei file binari delle risorse.
 1. Traduci metadati/tag delle risorse utilizzando [Flussi di lavoro per risorse multilingue](multilingual-assets.md).

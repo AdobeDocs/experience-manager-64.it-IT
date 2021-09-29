@@ -3,12 +3,12 @@ title: Gestire le raccolte di risorse
 description: Scopri le attività per gestire le raccolte di risorse, ad esempio creare, visualizzare, eliminare, modificare e scaricare le raccolte.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Raccolte
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 16%
 
 ---
@@ -195,7 +195,7 @@ Per personalizzare la pagina dei metadati [!UICONTROL Proprietà], inclusa l&#39
 
 ## Raccolte di ricerca {#searching-collections}
 
-Puoi cercare le raccolte dalla console Raccolte . Quando esegui una ricerca con parole chiave nella casella Omnisearch, AEM Assets cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Puoi cercare le raccolte dalla console Raccolte . Quando esegui una ricerca con parole chiave nella casella di ricerca Omnisearch, [!DNL Experience Manager] Risorse cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
 Se cerchi raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all’interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all’interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
@@ -203,7 +203,7 @@ Se cerchi raccolte dal livello principale, nei risultati della ricerca vengono r
 
 Nella console Raccolte, tocca o fai clic su una raccolta per aprirla.
 
-All’interno di una raccolta, AEM ricerca delle risorse è limitata alle risorse (e ai relativi tag e metadati) all’interno della raccolta che stai visualizzando. Quando esegui una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle secondarie corrispondenti all’interno della cartella corrente. Quando esegui una ricerca all’interno di una raccolta, vengono restituite solo le risorse, le cartelle e le altre raccolte corrispondenti ai membri diretti della raccolta.
+All’interno di una raccolta, la ricerca è limitata alle risorse (e ai relativi tag e metadati) all’interno della raccolta che stai visualizzando. Quando esegui una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle secondarie corrispondenti all’interno della cartella corrente. Quando esegui una ricerca all’interno di una raccolta, vengono restituite solo le risorse, le cartelle e le altre raccolte corrispondenti ai membri diretti della raccolta.
 
 ## Modificare le impostazioni della raccolta {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 >[!MORELIKETHIS]
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
-* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
+>* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
 

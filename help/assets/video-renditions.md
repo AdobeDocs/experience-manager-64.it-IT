@@ -2,19 +2,19 @@
 title: Rappresentazioni video
 description: Rappresentazioni video
 contentOwner: AG
-feature: Video, rappresentazioni
+feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 # Rappresentazioni video {#video-renditions}
 
-Adobe Experience Manager (AEM) Assets genera rappresentazioni video per risorse video di vari formati, inclusi OGG, FLV e così via.
+Adobe Experience Manager Assets genera rappresentazioni video per risorse video di vari formati, inclusi OGG, FLV e così via.
 
 AEM Assets supporta le rappresentazioni statiche e dinamiche (rappresentazioni con codifica DM) per le risorse multimediali.
 

@@ -2,13 +2,13 @@
 title: Eseguire la migrazione delle risorse in massa ad Adobe Experience Manager Assets
 description: Come portare le risorse in AEM, applicare i metadati, generare rappresentazioni e attivarle per pubblicare le istanze.
 contentOwner: AG
-feature: Migrazione, Rappresentazioni, Gestione delle risorse
+feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 11%
+source-wordcount: '1772'
+ht-degree: 8%
 
 ---
 
@@ -24,19 +24,18 @@ Prima di eseguire uno dei passaggi descritti di seguito, consulta e implementa l
 >
 >I seguenti strumenti di migrazione delle risorse non fanno parte di Adobe Experience Manager. L’Assistenza clienti di Adobe non supporta questi strumenti.
 >
->* Tag Maker per strumenti AEM ACS
->* Importazione risorse CSV AEM strumenti ACS
+>* Tag Maker ACS [!DNL Experience Manager] Strumenti
+>* Importazione risorse CSV degli strumenti ACS [!DNL Experience Manager]
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* Workflow sintetico
 
 >
->
-Questo software è open source ed è coperto dalla [Licenza Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Per porre una domanda o segnalare un problema, visita rispettivamente [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Questo software è open source ed è coperto dalla [Licenza Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Per porre una domanda o segnalare un problema, visita rispettivamente [ [!DNL Experience Manager] GitHub Issues for ACS Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e [ [!DNL Experience Manager] ACS Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrare a AEM {#migrate-to-aem}
+## Esegui migrazione a [!DNL Experience Manager] {#migrate-to-aem}
 
-La migrazione delle risorse a AEM richiede diversi passaggi e deve essere visualizzata come un processo graduale. Le fasi della migrazione sono le seguenti:
+La migrazione delle risorse a [!DNL Experience Manager] richiede diversi passaggi e deve essere visualizzata come un processo graduale. Le fasi della migrazione sono le seguenti:
 
 1. Disattiva i flussi di lavoro.
 1. Caricare i tag.
@@ -53,7 +52,7 @@ Prima di avviare una migrazione, disattiva i moduli di avvio per il flusso di la
 
 ### Caricare tag {#load-tags}
 
-È possibile che sia già attiva una tassonomia dei tag da applicare alle immagini. Strumenti come Importazione risorse CSV e la funzionalità dei profili di metadati consentono di automatizzare l’applicazione dei tag alle risorse. Prima di questo, aggiungi i tag nell’Experience Manager . La funzione [Strumenti di AEM ACS Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) consente di compilare i tag utilizzando un foglio di calcolo di Microsoft Excel caricato nel sistema.
+È possibile che sia già attiva una tassonomia dei tag da applicare alle immagini. Strumenti come Importazione risorse CSV e la funzionalità dei profili di metadati consentono di automatizzare l’applicazione dei tag alle risorse. Prima di questo, aggiungi i tag nell’Experience Manager . La funzione [ACS [!DNL Experience Manager] Strumenti Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) consente di popolare i tag utilizzando un foglio di calcolo di Microsoft Excel caricato nel sistema.
 
 ### Inserire risorse {#ingest-assets}
 
@@ -63,7 +62,7 @@ Esistono due approcci per caricare le risorse nel sistema: un approccio basato s
 
 #### Push-through HTTP {#push-through-http}
 
-Il team Managed Services di Adobe utilizza uno strumento chiamato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory in un&#39;altra directory su un&#39;istanza AEM. Invece di Glutton, puoi anche utilizzare strumenti come gli script Perl per pubblicare le risorse nell’archivio.
+Il team Managed Services di Adobe utilizza uno strumento chiamato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory in un&#39;altra directory su un&#39;istanza [!DNL Experience Manager]. Invece di Glutton, puoi anche utilizzare strumenti come gli script Perl per pubblicare le risorse nell’archivio.
 
 Ci sono due aspetti negativi principali dell&#39;utilizzo dell&#39;approccio di spingere attraverso https:
 
@@ -74,7 +73,7 @@ L’altro approccio per l’acquisizione delle risorse consiste nel estrarre le 
 
 #### Estrarre dal file system locale {#pull-from-the-local-file-system}
 
-L’ [Importazione risorse CSV AEM strumenti ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) richiama le risorse dal file system e i metadati delle risorse da un file CSV per l’importazione delle risorse. L’API AEM di Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà di metadati configurate. Idealmente, le risorse vengono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
+L’ [ACS [!DNL Experience Manager] Strumenti Importazione risorse CSV](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) richiama le risorse dal file system e i metadati delle risorse da un file CSV per l’importazione delle risorse. L’ [!DNL Experience Manager] API di Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurati. Idealmente, le risorse vengono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
 
 Quando le attività non vengono trasmesse in rete, le prestazioni complessive migliorano notevolmente. Questo metodo è in genere il metodo più efficiente per caricare le risorse nell’archivio. Inoltre, puoi importare tutte le risorse e i metadati in un singolo passaggio, poiché lo strumento supporta l’acquisizione dei metadati. Per applicare i metadati, ad esempio utilizzando uno strumento separato, non è necessario alcun altro passaggio.
 
@@ -85,7 +84,7 @@ Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di 
 Dopo aver configurato il flusso di lavoro in base alle tue esigenze, hai due opzioni per eseguirlo:
 
 1. L&#39;approccio più semplice è [ACS Commons’ Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Questo strumento ti consente di eseguire una query ed elaborare i risultati della query tramite un flusso di lavoro. Ci sono opzioni anche per l&#39;impostazione delle dimensioni batch.
-1. Puoi utilizzare [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) insieme a [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) (Flussi di lavoro sintetici). Questo approccio è molto più complesso, ma consente di rimuovere il sovraccarico del motore del flusso di lavoro AEM, ottimizzando l’utilizzo delle risorse del server. Inoltre, Fast Action Manager migliora ulteriormente le prestazioni monitorando dinamicamente le risorse del server e riducendo il carico posizionato sul sistema. Gli script di esempio sono stati forniti nella pagina delle funzioni di ACS Commons.
+1. Puoi utilizzare [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) insieme a [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) (Flussi di lavoro sintetici). Questo approccio è molto più complesso, ma consente di rimuovere il sovraccarico del motore del flusso di lavoro [!DNL Experience Manager] ottimizzando l’utilizzo delle risorse del server. Inoltre, Fast Action Manager migliora ulteriormente le prestazioni monitorando dinamicamente le risorse del server e riducendo il carico posizionato sul sistema. Gli script di esempio sono stati forniti nella pagina delle funzioni di ACS Commons.
 
 ### Attivare le risorse {#activate-assets}
 
@@ -93,7 +92,7 @@ Per le distribuzioni con un livello di pubblicazione, devi attivare le risorse n
 
 Per risolvere questo problema, puoi utilizzare [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) per gestire la replica delle risorse. Questo funziona senza l&#39;utilizzo delle code Sling, riducendo il sovraccarico e riducendo al contempo il carico di lavoro per evitare che il server venga sovraccaricato. Un esempio di utilizzo di FAM per gestire la replica è mostrato nella pagina di documentazione della funzione.
 
-Le altre opzioni per spostare le risorse nella farm di pubblicazione includono l’utilizzo di [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) o [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), forniti come strumenti nell’ambito di Jackrabbit. Un’altra opzione consiste nello sfruttare uno strumento open-source per l’infrastruttura AEM, detto [Grabbit](https://github.com/TWCable/grabbit), che promette prestazioni più veloci rispetto a vlt.
+Le altre opzioni per spostare le risorse nella farm di pubblicazione includono l’utilizzo di [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) o [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), forniti come strumenti nell’ambito di Jackrabbit. Un&#39;altra opzione consiste nell&#39;utilizzare uno strumento open-source per l&#39;infrastruttura [!DNL Experience Manager] denominata [Grabbit](https://github.com/TWCable/grabbit), che pretende di avere prestazioni più veloci rispetto a vlt.
 
 Per uno di questi approcci, è necessario che le risorse nell’istanza di authoring non vengano visualizzate come attivate. Per gestire il contrassegno di queste risorse con lo stato di attivazione corretto, è inoltre necessario eseguire uno script per contrassegnare le risorse come attivate.
 
@@ -117,20 +116,20 @@ Dopo l’attivazione delle risorse, puoi clonare l’istanza di pubblicazione pe
 
 Una volta completata la migrazione, i moduli di avvio per i flussi di lavoro Aggiorna risorsa DAM devono essere riabilitati per supportare la generazione di rendering e l’estrazione dei metadati per un utilizzo quotidiano del sistema.
 
-## Migrazione delle risorse tra implementazioni AEM {#migrate-between-aem-instances}
+## Migrazione delle risorse tra [!DNL Experience Manager] implementazioni {#migrate-between-aem-instances}
 
-Anche se non è così comune, a volte è necessario migrare grandi quantità di dati da un&#39;istanza AEM a un&#39;altra; ad esempio, quando esegui un aggiornamento AEM, aggiorna l’hardware o effettua la migrazione a un nuovo centro dati, ad esempio con una migrazione AMS.
+Anche se non è così comune, a volte è necessario migrare grandi quantità di dati da un&#39;istanza [!DNL Experience Manager] a un&#39;altra; ad esempio, quando esegui un [!DNL Experience Manager] aggiornamento, aggiorna l’hardware o esegui la migrazione a un nuovo centro dati, ad esempio con una migrazione AMS.
 
-In questo caso, le risorse sono già popolate con metadati e le rappresentazioni sono già generate. Puoi semplicemente concentrarti sullo spostamento delle risorse da un’istanza all’altra. Durante la migrazione tra AEM istanze, esegui le seguenti operazioni:
+In questo caso, le risorse sono già popolate con metadati e le rappresentazioni sono già generate. Puoi semplicemente concentrarti sullo spostamento delle risorse da un’istanza all’altra. Durante la migrazione tra le istanze [!DNL Experience Manager], esegui le seguenti operazioni:
 
 1. Disattiva i flussi di lavoro: Poiché stai eseguendo la migrazione delle rappresentazioni insieme alle nostre risorse, vuoi disattivare i moduli di avvio dei flussi di lavoro per DAM Update Asset.
 
-1. Esegui migrazione tag: Poiché hai già caricato dei tag nell&#39;istanza AEM di origine, puoi generarli in un pacchetto di contenuto e installare il pacchetto sull&#39;istanza di destinazione.
+1. Esegui migrazione tag: Poiché hai già caricato dei tag nell&#39;istanza [!DNL Experience Manager] di origine, puoi generarli in un pacchetto di contenuti e installare il pacchetto sull&#39;istanza di destinazione.
 
-1. Esegui migrazione risorse: Sono disponibili due strumenti consigliati per lo spostamento delle risorse da un’istanza AEM a un’altra:
+1. Esegui migrazione risorse: Sono disponibili due strumenti consigliati per lo spostamento delle risorse da un’istanza [!DNL Experience Manager] a un’altra:
 
    * **Vault Remote Copy**, o  `vlt rcp`, consente di utilizzare vlt in una rete. Puoi specificare una directory di origine e di destinazione e vlt scarica tutti i dati del repository da un&#39;istanza e li carica nell&#39;altra. Vlt rcp è documentato all&#39;indirizzo [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **** Grabbitis è uno strumento di sincronizzazione dei contenuti open source sviluppato da Time Warner Cable per la loro implementazione AEM. Poiché utilizza flussi di dati continui, rispetto a vlt rcp, ha una latenza inferiore e dichiara un miglioramento della velocità da due a dieci volte più veloce di vlt rcp. Grabbit supporta anche la sincronizzazione solo del contenuto delta, che consente di sincronizzare le modifiche dopo il completamento di un passaggio di migrazione iniziale.
+   * **** Grabbitis è uno strumento di sincronizzazione dei contenuti open source sviluppato da Time Warner Cable per la loro  [!DNL Experience Manager] implementazione. Poiché utilizza flussi di dati continui, rispetto a vlt rcp, ha una latenza inferiore e dichiara un miglioramento della velocità da due a dieci volte più veloce di vlt rcp. Grabbit supporta anche la sincronizzazione solo del contenuto delta, che consente di sincronizzare le modifiche dopo il completamento di un passaggio di migrazione iniziale.
 
 1. Attivare le risorse: Segui le istruzioni per [attivare le risorse](#activate-assets) documentate per la migrazione iniziale a AEM.
 

@@ -1,27 +1,27 @@
 ---
-title: Gestione delle risorse digitali tramite AEM Assets
-description: Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di AEM Assets
+title: Gestire le risorse digitali utilizzando [!DNL Experience Manager] Risorse
+description: Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di  [!DNL Experience Manager] Risorse
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gestione risorse, Ricerca, Rendering, Collaborazione
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10078'
 ht-degree: 3%
 
 ---
 
 # Gestire le risorse digitali {#managing-assets-with-the-touch-optimized-ui}
 
-Scopri varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di AEM Assets.
+Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di [!DNL Experience Manager] Risorse.
 
-Questo articolo descrive come gestire e modificare le risorse utilizzando l’interfaccia utente ottimizzata per il tocco di Adobe Experience Manager (AEM) Assets. Per informazioni elementari sull&#39;interfaccia utente, consulta [Gestione di base dell&#39;interfaccia Touch](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [Gestione dei frammenti di contenuto](content-fragments-managing.md) risorse .
+Questo articolo descrive come gestire e modificare le risorse utilizzando l’interfaccia utente ottimizzata per il tocco di Adobe Experience Manager Assets. Per informazioni elementari sull&#39;interfaccia utente, consulta [Gestione di base dell&#39;interfaccia Touch](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [Gestione dei frammenti di contenuto](content-fragments-managing.md) risorse .
 
 ## Creare cartelle {#create-folders}
 
-Quando organizzi una raccolta di risorse, ad esempio tutte le immagini `Nature`, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. AEM Assets non richiede di organizzare le risorse nelle cartelle per funzionare meglio.
+Quando organizzi una raccolta di risorse, ad esempio tutte le immagini `Nature`, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. [!DNL Experience Manager] Per migliorare il funzionamento di Assets non è necessario organizzare le risorse nelle cartelle.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 ## Caricare le risorse {#uploading-assets}
 
-Puoi caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) dalla cartella locale o da un’unità di rete in AEM Assets.
+Puoi caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) dalla cartella locale o da un’unità di rete in [!DNL Experience Manager] Risorse.
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Prima di caricare una risorsa, accertati che sia in un formato [supportato](asse
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Per annullare un caricamento in corso, fai clic sul pulsante `X` accanto alla barra di avanzamento. Quando annulli l’operazione di caricamento, AEM Assets elimina la parte parzialmente caricata della risorsa.
+   Per annullare un caricamento in corso, fai clic sul pulsante `X` accanto alla barra di avanzamento. Quando annulli l’operazione di caricamento, [!DNL Experience Manager] Risorse elimina la parte parzialmente caricata della risorsa.
 
    La possibilità di riprendere il caricamento è particolarmente utile in scenari con scarsa larghezza di banda e problemi di rete, in cui il caricamento di una risorsa di grandi dimensioni richiede molto tempo. Puoi sospendere l’operazione di caricamento e continuare in un secondo momento quando la situazione migliora. Quando riprendi, il caricamento inizia dal punto in cui l&#39;hai messo in pausa.
 
-   Durante l’operazione di caricamento, AEM salva le parti della risorsa caricata come blocchi di dati nell’archivio CRX. Al termine del caricamento, AEM consolida questi blocchi in un singolo blocco di dati nell’archivio.
+   Durante l’operazione di caricamento, [!DNL Experience Manager] salva le parti della risorsa caricata come blocchi di dati nell’archivio CRX. Al termine del caricamento, [!DNL Experience Manager] consolida questi blocchi in un singolo blocco di dati nell’archivio.
 
    Per configurare l&#39;attività di pulizia per i processi di caricamento dei blocchi non completati, vai a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
@@ -99,7 +99,7 @@ Prima di caricare una risorsa, accertati che sia in un formato [supportato](asse
    >
    >Se **[!UICONTROL Asset Insights]** è abilitato per tracciare impression/clic con Adobe Analytics, questo ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Adobe Analytics.
 
-   Se la risorsa caricata esiste in AEM Assets, la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che si sta tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore di checksum SHA 1 del binario della risorsa esistente corrisponde al valore di checksum della risorsa caricata. In questo caso, i nomi delle attività sono irrilevanti. In altre parole, la finestra di dialogo può persino essere visualizzata per le risorse con nomi diversi se i valori SHA 1 per i rispettivi binari sono gli stessi.
+   Se la risorsa caricata esiste in [!DNL Experience Manager] Risorse, la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che si sta tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore di checksum SHA 1 del binario della risorsa esistente corrisponde al valore di checksum della risorsa caricata. In questo caso, i nomi delle attività sono irrilevanti. In altre parole, la finestra di dialogo può persino essere visualizzata per le risorse con nomi diversi se i valori SHA 1 per i rispettivi binari sono gli stessi.
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ Prima di caricare una risorsa, accertati che sia in un formato [supportato](asse
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Tocca **[!UICONTROL Mantieni]** per mantenere la risorsa duplicata in AEM Assets. Tocca **[!UICONTROL Elimina]** per eliminare la risorsa duplicata caricata.
+   Tocca **[!UICONTROL Mantieni]** per mantenere la risorsa duplicata in [!DNL Experience Manager] Risorse. Tocca **[!UICONTROL Elimina]** per eliminare la risorsa duplicata caricata.
 
-   AEM Assets impedisce il caricamento di risorse con caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa che include i caratteri non consentiti, AEM Assets visualizza un messaggio di avviso relativo alla presenza di caratteri non consentiti nel nome del file e interrompe il caricamento fino a quando non rimuovi questi caratteri o li carichi con un nome consentito.
+   [!DNL Experience Manager] Le risorse impediscono il caricamento di risorse con caratteri non consentiti nei nomi dei file. Se tenti di caricare una risorsa che include i caratteri non consentiti, [!DNL Experience Manager] Risorse visualizza un messaggio di avviso relativo alla presenza di caratteri non consentiti nel nome file e interrompe il caricamento finché non rimuovi questi caratteri o li carichi con un nome consentito.
 
    Per rispettare convenzioni di denominazione dei file specifiche per la tua organizzazione, la finestra di dialogo **[!UICONTROL Carica risorse]** consente di specificare nomi lunghi per i file caricati.
 
@@ -125,13 +125,13 @@ Prima di caricare una risorsa, accertati che sia in un formato [supportato](asse
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Se annulli l’operazione di caricamento prima del caricamento dei file, AEM Assets interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+   Se annulli l’operazione di caricamento prima che i file vengano caricati, [!DNL Experience Manager] Assets interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
 
 ### Caricamenti seriali {#serial-uploads}
 
-Il caricamento di numerose risorse in blocco consuma risorse di sistema significative che possono influire negativamente sulle prestazioni della distribuzione AEM. I potenziali colli di bottiglia possono essere la connessione Internet, le operazioni di lettura e scrittura su disco, le limitazioni del browser web sul numero di richieste POST sul caricamento di risorse simultanee. L&#39;operazione di caricamento in blocco può non riuscire o terminare prematuramente. In altre parole, AEM risorse potrebbero perdere alcuni file durante l’acquisizione di una serie di file o nel complesso non riuscire a acquisire alcun file.
+Il caricamento di numerose risorse in blocco consuma risorse di sistema significative che possono influire negativamente sulle prestazioni della distribuzione [!DNL Experience Manager]. I potenziali colli di bottiglia possono essere la connessione Internet, le operazioni di lettura e scrittura su disco, le limitazioni del browser web sul numero di richieste POST sul caricamento di risorse simultanee. L&#39;operazione di caricamento in blocco può non riuscire o terminare prematuramente. In altre parole, le risorse [!DNL Experience Manager] potrebbero perdere alcuni file durante l’acquisizione di una serie di file o nel complesso non riuscire a acquisire alcun file.
 
-Per ovviare a questa situazione, durante un’operazione di caricamento in blocco AEM Assets acquisisce una risorsa alla volta (caricamento seriale), anziché tutte le risorse.
+Per ovviare a questa situazione, [!DNL Experience Manager] le risorse acquisiscono una risorsa alla volta (caricamento seriale) durante un’operazione di caricamento in blocco, anziché acquisire contemporaneamente tutte le risorse.
 
 Il caricamento seriale delle risorse è abilitato per impostazione predefinita. Per disattivare la funzione e consentire il caricamento simultaneo, sovrapponi il nodo `fileupload` in CRXDe e imposta il valore della proprietà `parallelUploads` su `true`.
 
@@ -145,9 +145,9 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in Dynamic Media - modalità di installazione Scene7 feature pack (FP) 18912 su AEM autore. Contatta l’Assistenza clienti Adobe per accedere a FP-18912 e completare la configurazione del tuo account FTP. Consulta [Installazione del feature pack 18912 per la migrazione in massa delle risorse](/help/assets/bulk-ingest-migrate.md).
+>Per caricare le risorse tramite FTP in Dynamic Media - modalità di installazione Scene7 feature pack (FP) 18912 su [!DNL Experience Manager] autore. Contatta l’Assistenza clienti Adobe per accedere a FP-18912 e completare la configurazione del tuo account FTP. Consulta [Installazione del feature pack 18912 per la migrazione in massa delle risorse](/help/assets/bulk-ingest-migrate.md).
 >
->Se utilizzi l’FTP per il caricamento delle risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file definite in Dynamic Media Classic.
+>Se utilizzi l’FTP per il caricamento delle risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
 
@@ -167,7 +167,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 1. Nell&#39;angolo in basso a destra della finestra di dialogo **[!UICONTROL Opzioni processo di caricamento]**, tocca **[!UICONTROL Salva]**.
 1. Nell’angolo in basso a destra della pagina **[!UICONTROL Carica]**, tocca **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l&#39;avanzamento del caricamento, nella barra di navigazione globale tocca **[!UICONTROL Processi]**. La pagina **[!UICONTROL Processi]** mostra l’avanzamento del caricamento. Puoi continuare a lavorare in AEM e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per rivedere un processo in corso.
+   Per visualizzare l&#39;avanzamento del caricamento, nella barra di navigazione globale tocca **[!UICONTROL Processi]**. La pagina **[!UICONTROL Processi]** mostra l’avanzamento del caricamento. Puoi continuare a lavorare in [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per rivedere un processo in corso.
 
    Per annullare un processo di caricamento in corso, tocca **[!UICONTROL Annulla]** accanto all&#39;ora **[!UICONTROL Durata]**.
 
@@ -177,11 +177,11 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome inserita dall’utente e la data e l’ora. Puoi utilizzare il nome predefinito o immettere un nome della tua creazione per questo processo di caricamento. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi , dove puoi controllare lo stato dei processi. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, lo stesso nome della risorsa di base indipendentemente dall’estensione |  | Seleziona questa opzione se desideri che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Carica su applicazione]** > **[!UICONTROL Sovrascrivi immagini]**. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione |  | Seleziona questa opzione se desideri che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Carica su applicazione]** > **[!UICONTROL Sovrascrivi immagini]**. |
 | Decomprimi file ZIP o TAR al caricamento |  |  |
 | Opzioni processo |  | Tocca o fai clic su **[!UICONTROL Opzioni processo]** per aprire la finestra di dialogo [!UICONTROL Opzioni processo di caricamento] e scegli le opzioni che interessano l&#39;intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Puoi scegliere le opzioni predefinite per il caricamento dei file a partire dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegli **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]**. Toccare il pulsante **[!UICONTROL Opzioni di caricamento predefinite]** per aprire la finestra di dialogo [!UICONTROL Opzioni processo di caricamento]. |
-|  | Quando | Selezionare Una tantum o Ricorrente. Per impostare un lavoro ricorrente, scegli un’opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando vuoi che il processo di caricamento FTP si ripeta. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
-|  | Includi sottocartelle | Carica tutte le sottocartelle all’interno della cartella che desideri caricare. I nomi della cartella e delle relative sottocartelle caricate vengono inseriti automaticamente in AEM Assets. |
+|  | Quando   | Selezionare Una tantum o Ricorrente. Per impostare un lavoro ricorrente, scegli un’opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando vuoi che il processo di caricamento FTP si ripeta. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
+|  | Includi sottocartelle | Carica tutte le sottocartelle all’interno della cartella che desideri caricare. I nomi della cartella e delle relative sottocartelle caricate vengono inseriti automaticamente in [!DNL Experience Manager] Risorse. |
 |  | Opzioni di ritaglio | Per ritagliare manualmente i lati di un’immagine, selezionate il menu Ritaglio e scegliete Manuale. Quindi immetti il numero di pixel da ritagliare da qualsiasi lato o lato dell’immagine. La quantità di immagine ritagliata dipende dall’impostazione ppi (pixel per pollice) nel file di immagine. Ad esempio, se l’immagine viene visualizzata a 150 ppi e immetti 75 nelle caselle di testo In alto, A destra, In basso e A sinistra, viene ritagliato mezzo pollice da ciascun lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un’immagine, aprite il menu Ritaglio, scegliete Manuale e immettete le misurazioni dei pixel nei campi In alto, A destra, In basso e A sinistra per ritagliare dai lati. Potete anche scegliere Rifila dal menu Ritaglia e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** : scegli l’opzione Colore. Selezionate quindi il menu Angolo (Corner) e scegliete l’angolo dell’immagine con il colore che rappresenta meglio lo spazio bianco da ritagliare.</li><li>**Trasparenza** : scegli l’opzione Trasparenza.<br> **Tolleranza** : trascinate il cursore per specificare una tolleranza da 0 a 1. Per il ritaglio in base al colore, specificate 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell&#39;angolo dell&#39;immagine. I numeri più vicini a 1 consentono una maggiore differenza di colore.<br>Per il ritaglio in base alla trasparenza, specificare 0 per ritagliare i pixel solo se sono trasparenti. I numeri più vicini a 1 consentono una maggiore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
 |  | Opzioni del profilo colore | Scegli una conversione del colore quando crei file ottimizzati utilizzati per la distribuzione:<ul><li>Conservazione colore predefinita: mantiene i colori dell&#39;immagine sorgente ogni volta che le immagini contengono informazioni sullo spazio colore; non vi è alcuna conversione del colore. Quasi tutte le immagini oggi hanno il profilo colore appropriato già incorporato. Tuttavia, se un&#39;immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti in spazio colore sRGB (standard Rosso Verde Blu). sRGB è lo spazio colore consigliato per la visualizzazione di immagini su pagine web.</li><li>Mantieni spazio colore originale: Mantiene i colori originali senza alcuna conversione al punto. Per le immagini prive di un profilo colore incorporato, qualsiasi conversione di colore viene effettuata utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati al colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l&#39;opzione Conservazione colore predefinita.</li><li>Personalizzato da > a<br> Apre i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata sostituisce tutte le informazioni sui colori incorporate nel file di origine. Selezionare questa opzione quando tutte le immagini che si stanno inviando contengono dati di profilo colore errati o mancanti.</li></ul> |
 |  | Opzioni di modifica delle immagini | È possibile mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta  [Impostazione delle opzioni di modifica delle immagini al momento del caricamento](#setting-image-editing-options-at-upload). |
@@ -206,7 +206,7 @@ Durante il caricamento di file di immagine, inclusi file AI, EPS e PSD, è possi
 | Opzione | Opzione secondaria | Descrizione |
 |---|---|---|
 | Crea maschera dal tracciato di ritaglio |  | Crea una maschera per l&#39;immagine in base alle informazioni del relativo tracciato di ritaglio. Questa opzione si applica alle immagini create con applicazioni di modifica delle immagini in cui è stato creato un tracciato di ritaglio. |
-| Maschera definizione dettagli |  | Consente di regolare con precisione un effetto filtro di nitidezza sull&#39;immagine ricampionata verso il basso finale, controllando l&#39;intensità dell&#39;effetto, il raggio dell&#39;effetto (misurato in pixel) e una soglia di contrasto da ignorare.<br> Questo effetto utilizza le stesse opzioni del filtro Maschera definizione dettagli di Photoshop. Contrariamente a quanto suggerisce il nome, Maschera definizione dettagli è un filtro di nitidezza. In Maschera definizione dettagli impostare le opzioni desiderate. Le opzioni di impostazione sono descritte in quanto segue: |
+| Maschera di contrasto |  | Consente di regolare con precisione un effetto filtro di nitidezza sull&#39;immagine ricampionata verso il basso finale, controllando l&#39;intensità dell&#39;effetto, il raggio dell&#39;effetto (misurato in pixel) e una soglia di contrasto da ignorare.<br> Questo effetto utilizza le stesse opzioni del filtro Maschera definizione dettagli di Photoshop. Contrariamente a quanto suggerisce il nome, Maschera definizione dettagli è un filtro di nitidezza. In Maschera definizione dettagli impostare le opzioni desiderate. Le opzioni di impostazione sono descritte in quanto segue: |
 |  | Quantità | Controlla la quantità di contrasto applicata ai pixel del bordo.<br> Pensatelo come l&#39;intensità dell&#39;effetto. La differenza principale tra i valori di quantità di Maschera definizione dettagli in Dynamic Media e i valori di quantità in Adobe Photoshop, è che Photoshop ha un intervallo di quantità compreso tra l’1% e il 500%. considerando che, in Dynamic Media, l&#39;intervallo di valori è compreso tra 0,0 e 5,0. Un valore pari a 5,0 corrisponde approssimativamente al 500% in Photoshop; il valore 0,9 equivale al 90% e così via. |
 |  | Raggio | Controlla il raggio dell&#39;effetto. L&#39;intervallo di valori è compreso tra 0 e 250.<br> L&#39;effetto viene eseguito su tutti i pixel di un&#39;immagine e si irradiano da tutti i pixel in tutte le direzioni. Il raggio viene misurato in pixel. Ad esempio, per ottenere un effetto di nitidezza simile per un&#39;immagine da 2000 x 2000 pixel e un&#39;immagine da 500 x 500 pixel, è necessario impostare un raggio di due pixel sull&#39;immagine da 2000 x 2000 pixel e un valore di raggio di un pixel sull&#39;immagine da 500 x 50 pixel. Per un’immagine con più pixel viene utilizzato un valore più grande. |
 |  | Soglia | La soglia è un intervallo di contrasto ignorato quando viene applicato il filtro Maschera definizione dettagli. È importante in modo che non venga introdotto alcun &quot;rumore&quot; a un&#39;immagine quando si utilizza questo filtro. L&#39;intervallo di valori è compreso tra 0 e 255, ovvero il numero di passaggi di luminosità in un&#39;immagine in scala di grigi. 0=nero, 128=grigio 50% e 255=bianco.<br> Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare l’aggiunta di rumore, ma viene comunque aggiunto il contrasto lungo i bordi delle aree di contrasto, ad esempio in cui le ciglia incontrano l’incarnato.<br> Ad esempio, se scegli una foto del volto di un utente, la Maschera definizione dettagli influisce sulle parti contrastanti dell’immagine, come ad esempio il punto in cui le ciglia e la pelle si incontrano per creare un’area di contrasto evidente e la pelle uniforme stessa. Anche la pelle più liscia presenta sottili cambiamenti nei valori di luminosità. Se non utilizzi un valore di soglia, il filtro accentua queste sottili modifiche nei pixel dell’interfaccia. A sua volta, viene creato un effetto rumoroso e indesiderato mentre il contrasto sulle ciglia viene aumentato, aumentando la nitidezza.<br> Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel che non cambiano radicalmente il contrasto, come la pelle liscia.<br> Nell&#39;immagine della cerniera mostrata in precedenza, notate la texture accanto alle cerniere. Il rumore dell&#39;immagine è visibile perché i valori di soglia erano troppo bassi per eliminare il rumore. |
@@ -248,7 +248,7 @@ Utilizza le **[!UICONTROL Opzioni di ritaglio]** e **[!UICONTROL Opzioni profilo
 | Gestisci livelli |  | Racchiude gli eventuali livelli della PSD in singole risorse. I livelli delle risorse rimangono associati alla PSD. È possibile visualizzarli aprendo il file PSD in visualizzazione Dettagli e selezionando il pannello dei livelli. |
 | Crea modello |  | Crea un modello dai livelli nel file PSD. |
 | Estrai testo |  | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
-| Estendi i livelli alle dimensioni dello sfondo |  | Estende le dimensioni dei livelli immagine ritagliati alle dimensioni del livello di sfondo. |
+| Estendi livelli a dimensione sfondo |  | Estende le dimensioni dei livelli immagine ritagliati alle dimensioni del livello di sfondo. |
 | Denominazione dei livelli |  | I livelli nel file PSD vengono caricati come immagini separate. |
 |  | Nome livello | Assegna un nome alle immagini dopo i loro nomi di livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un’immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. |
 |  | Photoshop e numero di livelli | Assegna un nome alle immagini dopo i loro numeri di livello nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd si chiama Spring Ad_2 anche se in Photoshop era presente un nome non predefinito. |
@@ -268,15 +268,15 @@ Scegli tra le seguenti opzioni:
 | Opzione | Opzione secondaria | Descrizione |
 |---|---|---|
 | Elaborazione | Rasterizza | (Impostazione predefinita) Esegue la rimozione delle pagine nel file PDF e converte la grafica vettoriale in immagini bitmap. Scegli questa opzione per creare un eCatalog. |
-| Estrai | Parole di ricerca | Estrae le parole dal file PDF in modo che la ricerca nel file possa essere eseguita per parola chiave in un visualizzatore di eCatalog. |
+| Estrai | Cerca parole | Estrae le parole dal file PDF in modo che la ricerca nel file possa essere eseguita per parola chiave in un visualizzatore di eCatalog. |
 |  | Collegamenti | Estrae i collegamenti dai file PDF e li converte in mappe immagine utilizzate in un visualizzatore di eCatalog. |
 | Genera automaticamente eCatalog da PDF a più pagine |  | Crea automaticamente un eCatalog dal file PDF. L’eCatalog prende il nome dal file PDF caricato. Questa opzione è disponibile solo se il file PDF viene rasterizzato durante il caricamento. |
 | Risoluzione |  | Determina l&#39;impostazione della risoluzione. Questa impostazione determina quanti pixel vengono visualizzati per pollice nel file PDF. Il valore predefinito è 150. |
 | Spazio colore |  | Selezionare il menu Spazio colore e scegliere uno spazio colore per il file PDF. La maggior parte dei file PDF ha sia immagini a colori RGB che CMYK. Lo spazio colore RGB è preferibile per la visualizzazione online. |
 |  | Rileva automaticamente | Mantiene lo spazio colore del file PDF. |
-|  | Forza come RGB | Converte nello spazio colore RGB. |
-|  | Forza come CMYK | Si converte nello spazio colore CMYK. |
-|  | Forza come scala di grigi | Converte lo spazio colore in scala di grigi. |
+|  | Converti in RGB | Converte nello spazio colore RGB. |
+|  | Converti in CMYK | Si converte nello spazio colore CMYK. |
+|  | Converti in scala di grigio | Converte lo spazio colore in scala di grigi. |
 
 #### Impostare le opzioni di caricamento di eVideo {#setting-evideo-upload-options}
 
@@ -298,17 +298,17 @@ Per ulteriori informazioni sulla creazione di predefiniti per set di batch, cons
 
 ### Caricamenti in streaming {#streamed-uploads}
 
-Se carichi numerose risorse, le chiamate di I/O al server AEM aumentano drasticamente, riducendo l’efficienza di caricamento e causando anche un timeout. AEM Assets supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando l’archiviazione delle risorse in una cartella temporanea sul server prima di copiarlo nell’archivio. Al contrario, i dati vengono trasferiti direttamente nell’archivio. In questo modo, il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout viene ridotto. Il caricamento in streaming è abilitato per impostazione predefinita in AEM Assets.
+Se carichi numerose risorse, le chiamate di I/O al server [!DNL Experience Manager] aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche un timeout. [!DNL Experience Manager] Le risorse supportano il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando l’archiviazione delle risorse in una cartella temporanea sul server prima di copiarlo nell’archivio. Al contrario, i dati vengono trasferiti direttamente nell’archivio. In questo modo, il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout viene ridotto. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Experience Manager] Risorse.
 
-Il caricamento in streaming è disattivato per AEM eseguito sul server JEE con la versione servlet-api inferiore alla 3.1.
+Il caricamento in streaming è disabilitato per [!DNL Experience Manager] in esecuzione sul server JEE con la versione servlet-api inferiore alla 3.1.
 
 ### Estrai archivio ZIP contenente risorse {#extract-zip-archive-containing-assets}
 
-Puoi caricare gli archivi ZIP come qualsiasi altra risorsa supportata. Le stesse regole del nome file si applicano ai file ZIP. AEM consente di estrarre un archivio ZIP in una posizione DAM.
+Puoi caricare gli archivi ZIP come qualsiasi altra risorsa supportata. Le stesse regole del nome file si applicano ai file ZIP. [!DNL Experience Manager] consente di estrarre un archivio ZIP in una posizione DAM.
 
 Seleziona un archivio ZIP alla volta, fai clic su **[!UICONTROL Extract Archive]** e seleziona una cartella di destinazione. Selezionare un&#39;opzione per gestire eventuali conflitti. Se le risorse nel file ZIP esistono già nella cartella di destinazione, puoi selezionare una delle seguenti opzioni: salta l’estrazione, sostituisci i file esistenti, mantieni entrambe le risorse rinominando o crea una nuova versione.
 
-Al termine dell’estrazione, AEM notifica nell’area di notifica. Mentre AEM estrae il file ZIP, puoi tornare al tuo lavoro senza interrompere l’estrazione.
+Al termine dell’estrazione, [!DNL Experience Manager] ti notifica nell’area di notifica. Mentre [!DNL Experience Manager] estrae il file ZIP, puoi tornare al tuo lavoro senza interrompere l’estrazione.
 
 ![Notifica dell’estrazione ZIP](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Non viene cre
 
    >[!NOTE]
    >
-   >Se copi una risorsa nella stessa posizione, AEM genera automaticamente una variante del nome. Ad esempio, se copi una risorsa denominata Quadrato, AEM genera automaticamente il titolo della sua copia come Quadrato1.
+   >Se copi una risorsa nella stessa posizione, [!DNL Experience Manager] genera automaticamente una variante del nome. Ad esempio, se copi una risorsa denominata Quadrato, [!DNL Experience Manager] genera automaticamente il titolo della relativa copia come Quadrato1.
 
 1. Tocca l’icona della risorsa **[!UICONTROL Incolla]** dalla barra degli strumenti:
 
@@ -500,7 +500,7 @@ Lo spostamento delle risorse trascinandole non consente di aprire la procedura g
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, AEM Assets non visualizza il rendering originale della risorsa in modalità anteprima. Gli amministratori possono utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali in modalità di anteprima.
+   >Per impostazione predefinita, [!DNL Experience Manager] Assets non visualizza il rendering originale della risorsa in modalità anteprima. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare [!DNL Experience Manager] Risorse per visualizzare le rappresentazioni originali in modalità di anteprima.
 
 1. Selezionare un rendering per visualizzare o eliminare il rendering.
 
@@ -520,7 +520,7 @@ Lo spostamento delle risorse trascinandole non consente di aprire la procedura g
    >
    >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni, ad esempio l&#39;icona **[!UICONTROL Carica rappresentazione]**, non vengono visualizzate. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
-   Puoi configurare le dimensioni per il rendering da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, AEM Assets visualizza il rendering con le dimensioni esatte o più vicine.
+   Puoi configurare le dimensioni per il rendering da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, [!DNL Experience Manager] Assets visualizza il rendering con le dimensioni esatte o più vicine.
 
    Per configurare le dimensioni di rendering di un&#39;immagine a livello di dettaglio della risorsa, sovrapponi il nodo **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` e configura il valore della proprietà width.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. Per la personalizzazione basata sulle dimensioni, la proprietà **[!UICONTROL PreferisciOriginale]** assegna le preferenze all&#39;originale se la dimensione del rendering corrispondente è maggiore dell&#39;originale.
 
@@ -615,10 +615,10 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
 
    ![login_page](assets/login_page.png)
 
-   Se non si specifica il percorso di una pagina di accesso, AEM visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
+   Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l&#39;autenticazione AEM.
+1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#searching-assets}
 
@@ -628,7 +628,7 @@ La ricerca di base è descritta nella sezione [Ricerca e filtro](/help/sites-aut
 
 Per le risorse caricate di recente, i relativi metadati (inclusi titoli, tag e così via) non sono immediatamente disponibili nell’elenco dei suggerimenti che vengono visualizzati quando digiti nella casella di ricerca Omnisearch.
 
-Questo perché AEM Assets attende la scadenza di un periodo di timeout (1 ora per impostazione predefinita) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse appena caricate/aggiornate e aggiungerle all’elenco dei suggerimenti.
+Questo perché [!DNL Experience Manager] Assets attende la scadenza di un periodo di timeout (1 ora per impostazione predefinita) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse appena caricate/aggiornate e aggiungerle all’elenco dei suggerimenti.
 
 ## Usa azioni rapide {#quick-actions}
 
@@ -655,7 +655,7 @@ Per ulteriori informazioni, consulta [Visualizzazione e selezione delle risorse]
 
 ## Modificare le immagini {#editing-images}
 
-Gli strumenti di modifica nell’interfaccia di AEM Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagini. È possibile ritagliare, ruotare, capovolgere ed eseguire altri lavori di modifica sulle immagini. Puoi anche aggiungere mappe immagine alle risorse.
+Gli strumenti di modifica nell’ interfaccia [!DNL Experience Manager] Assets consentono di eseguire piccoli processi di modifica sulle risorse di immagini. È possibile ritagliare, ruotare, capovolgere ed eseguire altri lavori di modifica sulle immagini. Puoi anche aggiungere mappe immagine alle risorse.
 
 La modifica delle immagini è supportata per i file con i seguenti formati:
 
@@ -715,7 +715,7 @@ La **[!UICONTROL Timeline]** consente di visualizzare vari eventi per un element
 
 Nella [console Raccolte](managing-collections-touch-ui.md#navigating-the-collections-console), l’elenco **[!UICONTROL Mostra tutto]** offre opzioni per visualizzare solo i commenti e i flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di primo livello elencate nella console. Non viene visualizzato se vi spostate all’interno di una qualsiasi delle raccolte.
 
-**** La timeline contiene diverse  [opzioni specifiche per i frammenti di contenuto](content-fragments-managing.md#timeline-for-content-fragments); questa funzionalità richiede  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
+**** La timeline contiene diverse  [opzioni specifiche per i frammenti di contenuto](content-fragments-managing.md#timeline-for-content-fragments); questa funzionalità richiede  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
 
 **Per utilizzare la timeline**:
 
@@ -732,9 +732,9 @@ Nella [console Raccolte](managing-collections-touch-ui.md#navigating-the-collect
 
 Le annotazioni sono commenti o note esplicative aggiunte a immagini o video. Le annotazioni consentono agli addetti al marketing di collaborare e lasciare un feedback sulle risorse.
 
-Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da AEM Assets dipendono dal browser.
+Le annotazioni video sono supportate solo sui browser con formati video compatibili con HTML5. I formati video supportati da [!DNL Experience Manager] Assets dipendono dal browser.
 
-Per i frammenti di contenuto, le [annotazioni vengono create nell&#39;editor](content-fragments-variations.md#annotating-a-content-fragment); questa funzionalità richiede [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
+Per i frammenti di contenuto, le [annotazioni vengono create nell&#39;editor](content-fragments-variations.md#annotating-a-content-fragment); questa funzionalità richiede [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
 
 È possibile aggiungere più annotazioni prima di salvarle.
 
@@ -769,7 +769,7 @@ Puoi aggiungere annotazioni alle risorse video. Durante l&#39;annotazione dei vi
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Tocca **[!UICONTROL Chiudi]** per uscire dalla modalità **[!UICONTROL Annotazione]**.
-1. Per visualizzare la notifica, accedi ad AEM Assets con le credenziali di Aaron MacDonald e tocca l&#39;icona **[!UICONTROL Notifications]** per visualizzare la notifica.
+1. Per visualizzare la notifica, accedi a [!DNL Experience Manager] Risorse con le credenziali di Aaron MacDonald e tocca l’icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
 
 1. Per scegliere un colore diverso in modo da poter differenziare gli utenti, tocca l&#39;icona **[!UICONTROL Profilo]** e tocca **[!UICONTROL Preferenze]**.
 
@@ -861,12 +861,12 @@ Per stampare le annotazioni e controllare lo stato, tocca l’icona **[!UICONTRO
 
    Torna al file PDF renderizzato e aggiornalo. Il PDF aggiornato riflette le modifiche apportate.
 
-**Per stampare annotazioni in lingue** straniere: Se una risorsa include annotazioni in lingue straniere (in particolare lingue non latine), devi prima configurare CQ-DAM-Handler-Gibson Font Manager Service sul server AEM per poter stampare queste annotazioni. Quando si configura CQ-DAM-Handler-Gibson Font Manager Service, fornisci il percorso in cui si trovano i font per le lingue desiderate.
+**Per stampare annotazioni in lingue** straniere: Se una risorsa include annotazioni in lingue straniere (in particolare lingue non latine), devi prima configurare CQ-DAM-Handler-Gibson Font Manager Service sul  [!DNL Experience Manager] server per poter stampare queste annotazioni. Quando si configura CQ-DAM-Handler-Gibson Font Manager Service, fornisci il percorso in cui si trovano i font per le lingue desiderate.
 
 1. Apri la pagina di configurazione **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** dall&#39;URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Per configurare **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]**, effettua una delle seguenti operazioni:
 
-   * Nell&#39;opzione di directory **[!UICONTROL Font di sistema]**, specifica il percorso completo della directory dei font sul sistema. Ad esempio, se sei un utente Mac, puoi specificare il percorso come `/Library/Fonts` nell&#39;opzione di directory **[!UICONTROL Font di sistema]**. AEM recupera i font da questa directory.
+   * Nell&#39;opzione di directory **[!UICONTROL Font di sistema]**, specifica il percorso completo della directory dei font sul sistema. Ad esempio, se sei un utente Mac, puoi specificare il percorso come `/Library/Fonts` nell&#39;opzione di directory **[!UICONTROL Font di sistema]**. [!DNL Experience Manager] recupera i font da questa directory.
    * Crea una directory denominata **fonts** all&#39;interno della cartella **[!UICONTROL crx-quickstart]** . **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service recupera automaticamente i font nella posizione  `crx-quickstart/fonts`. È possibile ignorare questo percorso predefinito dall&#39;interno dell&#39;opzione di directory **[!UICONTROL Adobe Server Fonts]** .
    * Crea una nuova cartella per i font nel sistema e archivia i font desiderati nella cartella. Quindi, specifica il percorso completo di tale cartella nell&#39;opzione di directory **[!UICONTROL Font cliente]**.
 
@@ -875,9 +875,9 @@ Per stampare le annotazioni e controllare lo stato, tocca l’icona **[!UICONTRO
 
    * Includi la stringa `<font_family_name_of_custom_font, sans-serif>` all&#39;interno dell&#39;opzione font-family. Ad esempio, se desideri stampare annotazioni in CJK (cinese, giapponese e coreano), includi la stringa `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` nell’opzione font-family. Se si desidera stampare le annotazioni in hindi, scaricare il font appropriato e configurare la famiglia di font come Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Riavvia l&#39;istanza AEM.
+1. Riavvia l&#39;istanza [!DNL Experience Manager].
 
-Di seguito è riportato un esempio di come configurare AEM per la stampa di annotazioni in cinese (cinese, giapponese e coreano):
+Di seguito è riportato un esempio di come configurare [!DNL Experience Manager] per la stampa di annotazioni in CJK (cinese, giapponese e coreano):
 
 1. Scarica i font Google Noto CJK dai seguenti collegamenti e memorizzali nella directory dei font configurata in Font Manager Service.
 
@@ -894,9 +894,9 @@ Il controllo delle versioni crea un’istantanea delle risorse digitali in un mo
 
 Di seguito sono riportati gli scenari in cui si creano versioni:
 
-* Puoi modificare un’immagine in un’altra applicazione e caricarla in AEM Assets. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
+* Puoi modificare un’immagine in un’altra applicazione e caricarla in [!DNL Experience Manager] Risorse. Viene creata una versione dell’immagine in modo che l’immagine originale non venga sovrascritta.
 * Puoi modificare i metadati di una risorsa.
-* Utilizza AEM’app desktop per estrarre una risorsa esistente e salvare le modifiche. A ogni salvataggio della risorsa viene creata una nuova versione.
+* Utilizza l’ app desktop [!DNL Experience Manager] per estrarre una risorsa esistente e salvare le modifiche. A ogni salvataggio della risorsa viene creata una nuova versione.
 
 È inoltre possibile abilitare il controllo delle versioni automatico tramite un flusso di lavoro. Quando crei una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono alternative di rendering delle stesse immagini, ad esempio, una rappresentazione PNG di un file JPEG caricato.
 
@@ -952,7 +952,7 @@ La funzionalità di controllo delle versioni consente di effettuare le seguenti 
 
 ### Avviare un flusso di lavoro su una risorsa {#starting-a-workflow-on-an-asset}
 
-Consulta [applicare un flusso di lavoro a una risorsa AEM](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Consulta [applicare un flusso di lavoro a una risorsa [!DNL Experience Manager] risorsa](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
 ## Informazioni sulle raccolte {#collections}
 

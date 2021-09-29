@@ -2,12 +2,12 @@
 title: Esaminare raccolte e risorse delle cartelle
 description: Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 contentOwner: AG
-feature: Collaborazione, Raccolte
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 25%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 25%
 
 Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 
-Adobe Experience Manager (AEM) Assets consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all’interno di una cartella o di una raccolta e di condividerlo con revisori o partner creativi per ottenere un feedback.
+Adobe Experience Manager Assets consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all’interno di una cartella o di una raccolta e di condividerlo con revisori o partner creativi per ottenere un feedback.
 
 È possibile associare il flusso di lavoro di revisione a un progetto o creare un&#39;attività di revisione indipendente.
 
@@ -52,7 +52,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![review_name](assets/review_name.png)
 
 1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi ad AEM Assets come Approvatore e passa all’interfaccia utente Assets. Per approvare le risorse, tocca o fai clic sull’icona **[!UICONTROL Notifiche]** e seleziona l’attività di revisione dall’elenco.
+1. Accedi a [!DNL Experience Manager] Risorse come Approvatore e passa all’interfaccia utente Assets. Per approvare le risorse, tocca o fai clic sull’icona **[!UICONTROL Notifiche]** e seleziona l’attività di revisione dall’elenco.
 
    ![notifica](assets/notification.png)
 
@@ -96,7 +96,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi ad AEM Assets come Approvatore e passa alla console Risorse . Per approvare le risorse, tocca o fai clic sull’icona **[!UICONTROL Notifiche]** , quindi seleziona l’attività di revisione dall’elenco.
+1. Accedi a [!DNL Experience Manager] Risorse come Approvatore e passa alla console Risorse . Per approvare le risorse, tocca o fai clic sull’icona **[!UICONTROL Notifiche]** , quindi seleziona l’attività di revisione dall’elenco.
 1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell’attività di revisione, quindi tocca o fai clic su **[!UICONTROL Review (Verifica)]**.
 1. Tutte le risorse nella raccolta sono visibili nella pagina di revisione. Seleziona le risorse e tocca o fai clic sull&#39;icona **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
 

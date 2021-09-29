@@ -1,28 +1,28 @@
 ---
 title: Ordinamento migliorato delle risorse in AEM
-description: Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
+description: Scopri come  [!DNL Experience Manager] Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 contentOwner: AG
-feature: Ricerca
+feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 5%
 
 ---
 
-# Ordinamento migliorato delle risorse in AEM {#enhanced-sorting-of-assets-in-aem}
+# Ordinamento migliorato delle risorse in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Scopri come AEM Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
+Scopri in che modo [!DNL Experience Manager] Assets implementa l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
 
-La funzionalità di ricerca di Risorse Adobe Experience Manager (AEM) è stata migliorata per ordinare in modo efficiente un gran numero di risorse nelle pagine di visualizzazione elenco cartelle e di risultati di ricerca. Puoi anche ordinare le voci della timeline.
+La funzionalità di ricerca di Adobe Experience Manager Assets è stata migliorata per ordinare in modo efficiente un gran numero di risorse nelle pagine di elenco cartelle e di risultati di ricerca. Puoi anche ordinare le voci della timeline.
 
-AEM Assets distribuisce l’ordinamento lato server per ordinare l’intero set di risorse (indipendentemente dalle dimensioni) all’interno di una cartella o di una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client. In questo modo, i risultati prerecuperati possono essere visualizzati rapidamente sull’interfaccia utente, il che rende l’operazione di ordinamento più reattiva e più chiara.
+[!DNL Experience Manager] Le risorse distribuiscono l’ordinamento lato server per ordinare l’intero set di risorse (indipendentemente dalle dimensioni) all’interno di una cartella o di una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client. In questo modo, i risultati prerecuperati possono essere visualizzati rapidamente sull’interfaccia utente, il che rende l’operazione di ordinamento più reattiva e più chiara.
 
 ## Ordinamento delle risorse nella vista Elenco {#sorting-assets-in-list-view}
 
-AEM Assets consente di ordinare le risorse delle cartelle in base ai campi seguenti:
+[!DNL Experience Manager] Assets consente di ordinare le risorse delle cartelle in base ai campi seguenti:
 
 * Paese
 * Stato
@@ -75,7 +75,7 @@ Puoi ordinare i risultati della ricerca in base ai campi seguenti:
 
 ## Ordinamento delle risorse nella timeline {#sorting-assets-in-timeline}
 
-AEM Assets consente di ordinare cronologicamente le voci della timeline, ad esempio annotazioni, versioni, flussi di lavoro e attività.
+[!DNL Assets] consente di ordinare in modo cronologico le voci della timeline, ad esempio annotazioni, versioni, flussi di lavoro e attività.
 
 1. Dall’interfaccia utente Assets, seleziona una risorsa per la quale vuoi visualizzare la timeline.
 1. Tocca o fai clic sull&#39;icona di navigazione globale e seleziona **[!UICONTROL Timeline]**.

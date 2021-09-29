@@ -2,19 +2,19 @@
 title: Archiviare ed estrarre le risorse digitali per la modifica
 description: Scopri come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '393'
 ht-degree: 6%
 
 ---
 
 # Archiviazione e estrazione dei file in Assets {#check-in-and-check-out-files-in-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di estrarre le risorse per la modifica e di archiviarle nuovamente una volta completate le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non accedi nuovamente ad AEM Assets. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
+Risorse Adobe Experience Manager consente di estrarre le risorse per la modifica e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non ricontrolli la risorsa in [!DNL Experience Manager] Risorse. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
 Per poter estrarre o archiviare le risorse, è necessario disporre dell’accesso in scrittura.
 
@@ -58,13 +58,13 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   La risorsa modificata viene archiviata in AEM Assets ed è disponibile per la modifica ad altri utenti.
+   La risorsa modificata viene archiviata in [!DNL Assets] ed è disponibile per la modifica ad altri utenti.
 
 ## Check-in forzato {#forced-check-in}
 
 Gli amministratori possono archiviare le risorse estratte da altri utenti.
 
-1. Accedi ad AEM Assets come amministratore.
+1. Accedi a [!DNL Assets] come amministratore.
 1. Dall’interfaccia utente Assets, seleziona una o più risorse sottoposte a Check-Out da altri utenti.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

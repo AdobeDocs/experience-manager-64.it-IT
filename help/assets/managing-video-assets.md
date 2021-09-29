@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 9%
 
 ---
 
 # Gestire le risorse video {#managing-video-assets}
 
-Scopri come gestire e modificare le risorse video in Risorse Adobe Experience Manager (AEM). Inoltre, se disponi di una licenza per l&#39;utilizzo di Dynamic Media, consulta la [documentazione video Dynamic Media](video.md).
+Scopri come gestire e modificare le risorse video in Risorse Adobe Experience Manager. Inoltre, se disponi di una licenza per l&#39;utilizzo di Dynamic Media, consulta la [documentazione video Dynamic Media](video.md).
 
 ## Caricare e visualizzare in anteprima le risorse video {#uploading-and-previewing-video-assets}
 
-AEM Assets genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installa il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Puoi visualizzare in anteprima tali rappresentazioni nell’interfaccia utente di AEM Assets.
+[!DNL Experience Manager] Assets genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installa il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Puoi visualizzare in anteprima tali rappresentazioni nell’interfaccia utente di [!DNL Experience Manager] Assets.
 
 1. Nella cartella o nelle sottocartelle Risorse digitali, individua il percorso in cui desideri aggiungere le risorse digitali.
 1. Per caricare la risorsa, tocca o fai clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegli **[!UICONTROL File]**. In alternativa, puoi rilasciarlo direttamente nell’area delle risorse. Per informazioni dettagliate sull’operazione di caricamento, consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets) .
@@ -39,16 +39,16 @@ AEM Assets genera anteprime per le risorse video con l’estensione MP4. Se il f
 
 ## Configurazione per caricare risorse di dimensioni superiori a 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Per impostazione predefinita, AEM Assets non consente di caricare risorse di dimensioni superiori a 2 GB a causa di un limite di dimensioni del file. Tuttavia, puoi sovrascrivere questo limite entrando in CRXDE Lite e creando un nodo sotto la directory `/apps` . Il nodo deve avere lo stesso nome del nodo, la struttura della directory e le proprietà del nodo confrontabili dell&#39;ordine.
+Per impostazione predefinita, le [!DNL Experience Manager] risorse non consentono di caricare risorse di dimensioni superiori a 2 GB a causa di un limite di dimensione del file. Tuttavia, puoi sovrascrivere questo limite entrando in CRXDE Lite e creando un nodo sotto la directory `/apps` . Il nodo deve avere lo stesso nome del nodo, la struttura della directory e le proprietà del nodo confrontabili dell&#39;ordine.
 
-Oltre alla configurazione di AEM Assets, modifica le seguenti configurazioni per caricare risorse di grandi dimensioni:
+Oltre alla configurazione [!DNL Experience Manager] Assets, modifica le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
 * Aumenta il tempo di scadenza del token. Consulta [!UICONTROL Adobe Granite CSRF Servlet] nella console Web all&#39;indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, consulta [Protezione CSRF](/help/sites-developing/csrf-protection.md).
 * Aumenta il `receiveTimeout` nella configurazione del Dispatcher. Per ulteriori informazioni, consulta [Configurazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
->L&#39;interfaccia utente di AEM Classic non dispone di un limite di dimensione del file di due gigabyte. Inoltre, il flusso di lavoro end-to-end per video di grandi dimensioni non è completamente supportato.
+>L&#39;interfaccia utente [!DNL Experience Manager] Classic non ha un limite di dimensione del file di due gigabyte. Inoltre, il flusso di lavoro end-to-end per video di grandi dimensioni non è completamente supportato.
 
 Per configurare un limite di dimensione del file più elevato, esegui i seguenti passaggi nella directory `/apps` .
 

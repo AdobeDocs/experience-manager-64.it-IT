@@ -1,16 +1,16 @@
 ---
 title: Modelli per risorse
-description: Scopri i modelli di risorse in AEM Assets e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
+description: Scopri i modelli di risorse in [!DNL Experience Manager] Risorse e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Gestione delle risorse, Strumenti per sviluppatori
+feature: Asset Management,Developer Tools
 role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -23,9 +23,9 @@ La sezione per la messaggistica fissa può contenere contenuti proprietari, ad e
 
 La flessibilità di apportare modifiche limitate e al tempo stesso la sicurezza dei sistemi di digital signage rende i modelli delle risorse gli elementi di base ideali per un rapido adattamento dei contenuti e la loro distribuzione, in quanto artefatti di contenuti per varie funzioni. La ridefinizione dei contenuti consente di ridurre i costi di gestione dei canali digitali e di stampa e di fornire esperienze complete e coerenti su questi canali.
 
-In qualità di addetto al marketing, puoi archiviare e gestire i modelli all’interno di AEM Assets e utilizzare un singolo modello di base per creare più esperienze di stampa personalizzate con facilità. Puoi creare diversi tipi di materiale collaterale di marketing, inclusi opuscoli, volantini, cartoline, biglietti da visita e così via, per trasmettere in modo lucido il messaggio di marketing ai clienti. È inoltre possibile assemblare uscite di stampa multipagina da uscite di stampa nuove o esistenti. Soprattutto, è possibile fornire simultaneamente esperienze digitali e di stampa con facilità, per offrire agli utenti un&#39;esperienza coerente e integrata.
+In qualità di addetto al marketing, puoi archiviare e gestire modelli all’interno di [!DNL Experience Manager] Risorse e utilizzare un singolo modello di base per creare più esperienze di stampa personalizzate in tutta facilità. Puoi creare diversi tipi di materiale collaterale di marketing, inclusi opuscoli, volantini, cartoline, biglietti da visita e così via, per trasmettere in modo lucido il messaggio di marketing ai clienti. È inoltre possibile assemblare uscite di stampa multipagina da uscite di stampa nuove o esistenti. Soprattutto, è possibile fornire simultaneamente esperienze digitali e di stampa con facilità, per offrire agli utenti un&#39;esperienza coerente e integrata.
 
-Anche se i modelli di risorse sono per lo più file InDesign, la competenza in InDesign non ostacola la creazione di artefatti stellari. Non è necessario mappare i campi del modello InDesign con i campi di prodotto che altrimenti saranno necessari per la creazione dei cataloghi. È possibile modificare i modelli in modalità WYSIWYG direttamente nell’interfaccia web. Tuttavia, affinché InDesign possa elaborare le modifiche, è innanzitutto necessario configurare AEM Assets per l’integrazione con il server InDesign.
+Anche se i modelli di risorse sono per lo più file InDesign, la competenza in InDesign non ostacola la creazione di artefatti stellari. Non è necessario mappare i campi del modello InDesign con i campi di prodotto che altrimenti saranno necessari per la creazione dei cataloghi. È possibile modificare i modelli in modalità WYSIWYG direttamente nell’interfaccia web. Tuttavia, affinché InDesign possa elaborare le modifiche, è innanzitutto necessario configurare le risorse [!DNL Experience Manager] per l’integrazione con il server InDesign.
 
 La possibilità di modificare i modelli di InDesign dall’interfaccia web aiuta a favorire una maggiore collaborazione tra il personale creativo e il personale di marketing, riducendo al contempo i tempi di commercializzazione per le iniziative di promozione locali.
 
@@ -37,7 +37,7 @@ Con i modelli di risorse puoi effettuare le seguenti operazioni:
 * Anteprima delle modifiche apportate al modello
 * Unire più file modello per creare un artefatto a più pagine
 
-Quando scegli un modello per il tuo materiale collaterale, AEM Assets crea una copia del modello che puoi modificare. Il modello originale viene mantenuto, in modo che il digital signage rimanga intatto e possa essere riutilizzato per garantire la coerenza del marchio.
+Quando scegli un modello per il tuo materiale collaterale, [!DNL Assets] crea una copia del modello che puoi modificare. Il modello originale viene mantenuto, in modo che il digital signage rimanga intatto e possa essere riutilizzato per garantire la coerenza del marchio.
 
 È possibile esportare il file aggiornato all’interno della cartella principale nei seguenti formati:
 
@@ -49,9 +49,9 @@ Quando scegli un modello per il tuo materiale collaterale, AEM Assets crea una c
 
 ## Creare un contratto di garanzia {#creating-a-collateral}
 
-Considera uno scenario in cui desideri creare materiale collaterale stampabile digitale, come opuscoli, volantini e annunci per una prossima campagna e condividerlo con outlet store a livello globale. La creazione di materiale collaterale basato su un modello consente di offrire un&#39;esperienza cliente unificata su tutti i canali. I designer possono creare i modelli delle campagne (a pagina singola o a più pagine) utilizzando una soluzione creativa, ad esempio InDesign, e caricare i modelli in AEM Assets per te. Prima di creare una garanzia collaterale, fai caricare e rendere disponibili in Experience Manager uno o più modelli INDD.
+Considera uno scenario in cui desideri creare materiale collaterale stampabile digitale, come opuscoli, volantini e annunci per una prossima campagna e condividerlo con outlet store a livello globale. La creazione di materiale collaterale basato su un modello consente di offrire un&#39;esperienza cliente unificata su tutti i canali. I designer possono creare i modelli delle campagne (a pagina singola o a più pagine) utilizzando una soluzione creativa, ad esempio InDesign, e caricare i modelli su [!DNL Assets] per te. Prima di creare una garanzia collaterale, fai caricare e rendere disponibili in Experience Manager uno o più modelli INDD.
 
-1. Tocca o fai clic sul logo AEM, quindi tocca o fai clic su **[!UICONTROL Risorse]** nella pagina Navigazione.
+1. Fai clic sul logo [!DNL Experience Manager], quindi fai clic su **[!UICONTROL Risorse]** nella pagina Navigazione.
 1. Dalle opzioni, scegli **[!UICONTROL Modelli]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -97,17 +97,17 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    È possibile utilizzare l’editor di testo per modificare il testo che si desidera visualizzare nel campo di testo. Puoi modificare le dimensioni, lo stile, il colore del font e il testo a livello di tag.
 
-   Utilizzando il ricerca risorse, puoi sfogliare o cercare immagini in AEM Assets e sostituire le immagini modificabili nel modello con immagini di tua scelta.
+   Utilizzando il Cercatore di risorse, puoi sfogliare o cercare immagini all’interno di [!DNL Assets] e sostituire le immagini modificabili nel modello con immagini di tua scelta.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   I modificabili vengono visualizzati a destra. Affinché un campo possa essere modificato in AEM Assets, i campi corrispondenti nel modello devono essere taggati in InDesign. In altre parole, devono essere rese modificabili in InDesign.
+   I modificabili vengono visualizzati a destra. Affinché un campo possa essere modificato in [!DNL Assets], è necessario che il campo corrispondente del modello sia contrassegnato in InDesign. In altre parole, devono essere rese modificabili in InDesign.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Assicurati che l’istanza AEM sia integrata con un server InDesign per consentire ad AEM Assets di estrarre dati dal modello di InDesign e renderli disponibili per la modifica. Per informazioni dettagliate, consulta [Integrazione di AEM Assets con InDesign Server](indesign.md).
+   >Assicurati che l’istanza [!DNL Experience Manager] sia integrata con un server InDesign per consentire a [!DNL Assets] di estrarre i dati dal modello InDesign e di renderli disponibili per la modifica. Per informazioni dettagliate, consulta [Integrazione [!DNL Assets] con InDesign Server](indesign.md).
 
 1. Per modificare il testo in un campo modificabile, tocca o fai clic sul campo di testo dall’elenco dei campi modificabili e modifica il testo nel campo.
 
@@ -127,7 +127,7 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Puoi anche cercare le immagini utilizzando parole chiave, tag e in base al loro stato di pubblicazione. Puoi sfogliare l’archivio AEM Assets e passare alla posizione dell’immagine desiderata.
+   Puoi anche cercare le immagini utilizzando parole chiave, tag e in base al loro stato di pubblicazione. Puoi sfogliare l’archivio [!DNL Assets] e passare alla posizione dell’immagine desiderata.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,19 +143,19 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    >[!NOTE]
    >
-   >Le icone Preview (Anteprima) e Done (Fine) sono abilitate solo quando i campi immagine modificabili all&#39;interno del materiale collaterale non contengono icone mancanti. Se le icone del tuo materiale collaterale mancano, è perché AEM non è in grado di risolvere le immagini nel modello di InDesign. Di solito, AEM non è in grado di risolvere le immagini nei seguenti casi:
+   >Le icone Preview (Anteprima) e Done (Fine) sono abilitate solo quando i campi immagine modificabili all&#39;interno del materiale collaterale non contengono icone mancanti. Se le icone del materiale collaterale sono mancanti, è perché [!DNL Experience Manager] non è in grado di risolvere le immagini nel modello di InDesign. Di solito, [!DNL Experience Manager] non è in grado di risolvere le immagini nei seguenti casi:
    >
-   >* Le immagini non vengono incorporate nel modello InDesign sottostante
+   >* Le immagini non sono incorporate nel modello InDesign sottostante
    >* Le immagini sono collegate dal file system locale
 
    >
-   >Per abilitare AEM risolvere le immagini, procedi come segue:
+   >Per abilitare [!DNL Experience Manager] alla risoluzione delle immagini, procedi come segue:
    >
    >* Incorpora le immagini durante la creazione di modelli di InDesign (consulta [Informazioni sui collegamenti e sugli elementi grafici incorporati](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >* AEM al file system locale, quindi mappa le icone mancanti con le risorse AEM esistenti.
+   >* Monta [!DNL Experience Manager] nel file system locale, quindi mappa le icone mancanti con le risorse [!DNL Experience Manager] esistenti.
 
    >
-   >Per ulteriori informazioni sull&#39;utilizzo dei documenti InDesign, vedere [Procedure consigliate per l&#39;utilizzo dei documenti InDesign in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Per ulteriori informazioni sull’utilizzo dei documenti InDesign, consulta [Tecniche consigliate per l’utilizzo dei documenti InDesign in [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Per generare un rendering PDF per la brochure, seleziona l’opzione Acrobat nella finestra di dialogo, quindi fai clic su **[!UICONTROL Continua]**.
 1. Il materiale collaterale viene creato nella cartella con cui hai iniziato. Per visualizzare le rappresentazioni, apri le risorse e scegli **[!UICONTROL Rappresentazioni]** dall&#39;elenco di Navigazione globale.
@@ -187,7 +187,7 @@ Considera uno scenario in cui desideri creare materiale collaterale stampabile d
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Puoi sfogliare l’archivio o le raccolte AEM Assets, passare alla posizione dei modelli desiderati, quindi selezionarli per l’unione.
+   È possibile sfogliare l&#39;archivio [!DNL Assets] o le raccolte, passare alla posizione dei modelli desiderati e quindi selezionarli per l&#39;unione.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 

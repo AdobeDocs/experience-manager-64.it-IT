@@ -1,20 +1,20 @@
 ---
 title: Ricerca full-text GQL
-description: Esplora la funzione di ricerca full-text GQL in AEM Assets. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
+description: Esplora la funzione di ricerca full-text di GQL in [!DNL Experience Manager] Risorse. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
 contentOwner: AG
-feature: Ricerca,Metadati
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
 
 # Ricerca full-text GQL {#gql-full-text-search}
 
-Esplora la funzione di ricerca full-text GQL in AEM Assets. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
+Esplora la funzione di ricerca full-text di GQL in [!DNL Experience Manager] Assets. Puoi utilizzarlo per cercare le risorse in base a metadati specifici, come titolo, descrizione e nome dell’autore.
 
 La funzione di ricerca full-text GQL consente di cercare le risorse in base a metadati specifici, come titolo, descrizione, autore e così via.
 
@@ -38,7 +38,7 @@ Ad esempio, per cercare le risorse con il titolo &quot;Target&quot;, effettua le
 
    ![gql_search](assets/gql_search.png)
 
-1. Premere **[!UICONTROL Invio]**. L’interfaccia utente di AEM Assets visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
+1. Premere **[!UICONTROL Invio]**. L’interfaccia utente di [!DNL Assets] visualizza solo le risorse il cui titolo corrisponde esattamente a &quot;Target&quot;.
 
 La funzione di ricerca full-text GQL consente di cercare le risorse in base ai seguenti elementi:
 
@@ -112,7 +112,6 @@ titolo:&quot;Riunione&quot;;
 >Il percorso, il limite, le dimensioni e l&#39;ordine delle proprietà non possono essere ORed con nessun&#39;altra proprietà.
 >
 >La parola chiave per una proprietà generata dall’utente è l’etichetta del relativo campo nell’editor delle proprietà in minuscolo, con gli spazi rimossi.
-
 
 >[!NOTE]
 >

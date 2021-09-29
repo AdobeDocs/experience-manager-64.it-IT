@@ -2,13 +2,13 @@
 title: Metadati a cascata
 description: Questo articolo descrive come definire i metadati a cascata per le risorse.
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 13%
+source-wordcount: '977'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali è possibile definire 
 * Modifica le opzioni visualizzate per un campo specifico in base al valore specificato in un altro campo.
 * Imposta il valore dei metadati predefiniti in un particolare campo in base al valore specificato in un altro campo.
 
-## Configurare i metadati a cascata in AEM {#configure-cascading-metadata-in-aem}
+## Configurare i metadati a cascata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considera uno scenario in cui desideri visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
@@ -42,7 +42,7 @@ Considera uno scenario in cui desideri visualizzare i metadati a cascata in base
 
 Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul copyright come campo obbligatorio.
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**.
+1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**.
 1. Nella pagina **[!UICONTROL Moduli schema]** seleziona un modulo schema, quindi, per modificare lo schema, dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Modifica]**.
 
    ![select_form](assets/select_form.png)
@@ -60,7 +60,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 1. Le coppie chiave-valore sono le opzioni fornite a un utente del modulo. Puoi fornire le coppie chiave-valore manualmente o da un file JSON.
 
    * Per specificare manualmente i valori, selezionare **[!UICONTROL Aggiungi manualmente]**, quindi toccare/fare clic su **[!UICONTROL Aggiungi scelta]** e specificare il testo e il valore dell&#39;opzione. Ad esempio, specifica i tipi di risorse Video, PDF, Word e Immagine.
-   * Per recuperare dinamicamente i valori da un file JSON, seleziona **[!UICONTROL Aggiungi tramite percorso JSON]** e fornisci il percorso del file JSON. AEM recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
+   * Per recuperare dinamicamente i valori da un file JSON, seleziona **[!UICONTROL Aggiungi tramite percorso JSON]** e fornisci il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
 
    Entrambe le opzioni si escludono a vicenda. Non puoi importare le opzioni da un file JSON e modificarle manualmente.
 

@@ -2,12 +2,12 @@
 title: Elabora le risorse per eseguire processi aziendali, eseguire audit, raggiungere la conformità e mantenere un livello di integrità di base
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
-feature: Flusso di lavoro, rappresentazioni
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Utilizza i flussi di lavoro nelle risorse digitali per attivare la risorsa o cre
 >
 >Se un flusso di lavoro disponibile nell&#39;interfaccia classica non è disponibile nell&#39;interfaccia touch, come [!UICONTROL Richiedi di attivare] e [!UICONTROL Richiedi di disattivare], vedi [Crea modelli di flusso di lavoro](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Applicare un flusso di lavoro a una risorsa AEM {#apply-a-workflow-to-an-aem-asset}
+## Applicare un flusso di lavoro a una risorsa [!DNL Experience Manager] {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Per un modello di flusso di lavoro, gli utenti possono creare un modulo di avvio
 >[!MORELIKETHIS]
 >
 >* [Applicare e partecipare ai flussi di lavoro](/help/sites-authoring/workflows.md)
-* [Creare modelli di flusso di lavoro ed estendere le funzionalità del flusso di lavoro](/help/sites-developing/workflows.md)
-* [Metodi per l’esecuzione dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
-* [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
+>* [Creare modelli di flusso di lavoro ed estendere le funzionalità del flusso di lavoro](/help/sites-developing/workflows.md)
+>* [Metodi per l’esecuzione dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
+>* [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
 

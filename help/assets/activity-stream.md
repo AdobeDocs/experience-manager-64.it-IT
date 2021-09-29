@@ -2,19 +2,19 @@
 title: Flusso di attività nella timeline
 description: 'Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline. '
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 33%
+source-wordcount: '211'
+ht-degree: 21%
 
 ---
 
 # Flusso di attività nella timeline {#activity-stream-in-timeline}
 
-Questa funzione visualizza i registri attività per le risorse nella timeline. Se esegui una delle seguenti operazioni relative alle risorse in Adobe Experience Manager (AEM) Assets, la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
+Questa funzione visualizza i registri attività per le risorse nella timeline. Se esegui una delle seguenti operazioni relative alle risorse in [!DNL Adobe Experience Manager Assets], la funzione Flusso di attività aggiorna la timeline per riflettere l’attività.
 
 Le seguenti operazioni vengono registrate nel flusso di attività:
 
@@ -29,7 +29,7 @@ Le seguenti operazioni vengono registrate nel flusso di attività:
 
 I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro.
 
-Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate in AEM tramite [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o l’[app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate in Experience Manager tramite [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >

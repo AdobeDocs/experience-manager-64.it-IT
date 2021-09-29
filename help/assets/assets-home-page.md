@@ -1,26 +1,26 @@
 ---
-title: Home page Experience di AEM Assets
-description: Personalizza la home page di AEM Assets per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
+title: '[!DNL Experience Manager Assets] Esperienza home page'
+description: Personalizza la home page delle risorse per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
-feature: Strumenti per sviluppatori,Gestione risorse
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
-# Home page Experience di AEM Assets {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Esperienza home page {#aem-assets-home-page-experience}
 
-Personalizza la home page di AEM Assets per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
+Personalizza la home page di [!DNL Experience Manager Assets] per un’esperienza ricca di schermate di benvenuto, inclusa un’istantanea delle attività recenti relative alle risorse.
 
-La home page di Adobe Experience Manager (AEM) Assets offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
+La home page [!DNL Adobe Experience Manager Assets] offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
 
 Per impostazione predefinita, la home page delle risorse è disabilitata. Per abilitarlo, esegui le seguenti operazioni:
 
-1. Per accedere AEM Configuration Manager, fare clic su **[!UICONTROL Strumenti > Operazione > Console Web]**.
+1. Per accedere a [!DNL Experience Manager] Configuration Manager, fare clic su **[!UICONTROL Strumenti > Operazione > Console Web]**.
 1. Apri il servizio **Day CQ DAM Event Recorder** .
 1. Seleziona il **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione delle attività.
 
@@ -70,7 +70,7 @@ Questa sezione viene visualizzata sotto la sezione Benvenuto e presenta i widget
 
 **Recenti**: Il  **widget** Visualizzato di recente in questa sezione visualizza le entità a cui l’utente ha effettuato l’accesso di recente, incluse cartelle, raccolte e progetti.
 
-**Scopri**: Il  **** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nell’istanza di AEM Assets.
+**Scopri**: Il  **** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nell’ [!DNL Assets] istanza.
 
 Per abilitare l&#39;eliminazione dei dati delle attività utente, abilita il **servizio di eliminazione degli eventi DAM** da Configuration Manager. Dopo aver abilitato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
@@ -78,7 +78,7 @@ La schermata introduttiva fornisce semplici strumenti di navigazione, ad esempio
 
 >[!NOTE]
 >
->L’abilitazione dei servizi Day CQ DAM Event Recorder e DAM Event Purge aumenta le operazioni di scrittura su JCR e l’indicizzazione della ricerca, che aumentano notevolmente il carico sul server AEM. Il carico aggiuntivo sul server AEM può influire sulle prestazioni.
+>L&#39;abilitazione dei servizi Day CQ DAM Event Recorder e DAM Event Purge aumenta le operazioni di scrittura su JCR e l&#39;indicizzazione della ricerca, che aumentano notevolmente il carico sul server [!DNL Experience Manager]. Il carico aggiuntivo sul server [!DNL Experience Manager] può influire sulle prestazioni.
 
 >[!CAUTION]
 >

@@ -1,35 +1,35 @@
 ---
 title: Gestire le risorse composite e generare le risorse secondarie.
-description: Scopri come creare riferimenti a risorse AEM dai file InDesign, Adobe Illustrator e Photoshop. Inoltre, scopri come utilizzare la funzione Visualizzatore pagina per visualizzare singole pagine di file multipagina, inclusi file PDF, INDD, PPT, PPTX e AI.
+description: Scopri come creare riferimenti a risorse [!DNL Experience Manager] da file InDesign, Adobe Illustrator e Photoshop. Inoltre, scopri come utilizzare la funzione Visualizzatore pagina per visualizzare singole pagine di file multipagina.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
 
 # Gestire le risorse composite con le risorse secondarie {#managing-compound-assets}
 
-Le risorse di Adobe Experience Manager (AEM) possono identificare se un file caricato contiene riferimenti a risorse già esistenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a AEM risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui si fa riferimento.
+Adobe Experience Manager Assets può identificare se un file caricato contiene riferimenti a risorse già esistenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a risorse [!DNL Experience Manager], viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui si fa riferimento.
 
-Oltre a eliminare la ridondanza, il riferimento AEM risorse nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l’efficienza e la produttività degli utenti.
+Oltre a eliminare la ridondanza, il riferimento alle risorse [!DNL Experience Manager] nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l’efficienza e la produttività degli utenti.
 
-AEM Assets supporta **riferimenti bidirezionali**. Puoi trovare le risorse a cui si fa riferimento nella pagina dei dettagli della risorsa del file caricato. Inoltre, puoi visualizzare i file di riferimento per le risorse AEM nella pagina dei dettagli delle risorse della risorsa a cui si fa riferimento.
+[!DNL Experience Manager] Le risorse supportano i riferimenti  **bidirezionali**. Puoi trovare le risorse a cui si fa riferimento nella pagina dei dettagli della risorsa del file caricato. Inoltre, puoi visualizzare i file di riferimento per le risorse [!DNL Experience Manager] nella pagina dei dettagli della risorsa a cui si fa riferimento.
 
 I riferimenti vengono risolti in base al percorso, all’ID documento e all’ID istanza delle risorse a cui si fa riferimento.
 
 ## Adobe Illustrator: Aggiungere risorse come riferimenti {#refai}
 
-Puoi fare riferimento a risorse AEM esistenti da un file Adobe Illustrator.
+Puoi fare riferimento a risorse [!DNL Experience Manager] esistenti all&#39;interno di un file Adobe Illustrator.
 
-1. Utilizzando [AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it), monta l&#39;archivio AEM Assets come unità sul computer locale. Nell&#39;unità montata, individuate la posizione della risorsa a cui desiderate fare riferimento.
+1. Utilizzando [[!DNL Experience Manager] l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it), monta l&#39;archivio [!DNL Experience Manager] Assets come unità sul computer locale. Nell&#39;unità montata, individuate la posizione della risorsa a cui desiderate fare riferimento.
 1. Trascina la risorsa dall’unità montata al file Illustrator.
-1. Salva il file Illustrator sull&#39;unità montata o [carica](managing-assets-touch-ui.md#uploading-assets) nell&#39;archivio AEM.
-1. Al termine del flusso di lavoro, passa alla pagina dei dettagli della risorsa. I riferimenti alle risorse AEM esistenti sono elencati in **[!UICONTROL Dipendenze]** nella colonna **[!UICONTROL Riferimenti]** .
+1. Salva il file Illustrator sull&#39;unità montata o [carica](managing-assets-touch-ui.md#uploading-assets) nell&#39;archivio [!DNL Experience Manager].
+1. Al termine del flusso di lavoro, passa alla pagina dei dettagli della risorsa. I riferimenti alle risorse [!DNL Experience Manager] esistenti sono elencati in **[!UICONTROL Dipendenze]** nella colonna **[!UICONTROL Riferimenti]** .
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -43,9 +43,9 @@ Puoi fare riferimento a risorse AEM esistenti da un file Adobe Illustrator.
 
 ## Adobe InDesign: Aggiungere risorse come riferimenti {#add-aem-assets-as-references-in-adobe-indesign}
 
-Per fare riferimento AEM risorse all’interno di un file InDesign, trascina AEM risorse nel file InDesign o esporta il file InDesign come file ZIP.
+Per fare riferimento a [!DNL Experience Manager] risorse all’interno di un file InDesign, trascina [!DNL Experience Manager] risorse nel file InDesign o esporta il file InDesign come file ZIP.
 
-Le risorse di riferimento esistono già in AEM Assets. È possibile estrarre le risorse secondarie da [configurare il server InDesign](indesign.md). Le risorse incorporate in un file InDesign vengono estratte come risorse secondarie.
+Le risorse di riferimento esistono già in [!DNL Experience Manager] Assets. È possibile estrarre le risorse secondarie da [configurare il server InDesign](indesign.md). Le risorse incorporate in un file InDesign vengono estratte come risorse secondarie.
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ Questa procedura è simile a [Aggiungi risorse come riferimenti in Adobe Illustr
 
 1. Esegui i passaggi descritti in [Creazione di modelli di flusso di lavoro](/help/sites-developing/workflows-models.md) per creare un nuovo flusso di lavoro.
 1. Utilizza la funzione [Pacchetto di Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) per esportare il documento. Adobe InDesign può esportare un documento e le risorse collegate come pacchetto. In questo caso, la cartella esportata contiene una cartella `Links` contenente risorse secondarie nel file InDesign. La cartella `Links` è presente nella stessa cartella del file INDD.
-1. Crea un file ZIP e caricalo nell’archivio AEM.
+1. Crea un file ZIP e caricalo nell&#39;archivio [!DNL Experience Manager].
 1. Avvia il flusso di lavoro Annulla archiviazione.
 1. Al termine del flusso di lavoro, i riferimenti nella cartella Collegamenti vengono automaticamente indicati come risorse secondarie. Per visualizzare un elenco delle risorse a cui si fa riferimento, passa alla pagina dei dettagli delle risorse della risorsa InDesign e chiudi la barra [Barra](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop: Aggiungere risorse come riferimenti {#refps}
 
-1. Utilizzando un client WebDav, monta AEM Assets come unità.
-1. Per creare riferimenti a AEM risorse in un file Photoshop, accedi alle risorse corrispondenti nell’unità montata utilizzando la funzionalità Posiziona collegamento in Photoshop.
+1. Utilizzando un client WebDav, monta [!DNL Experience Manager] Assets come unità.
+1. Per creare riferimenti a risorse [!DNL Experience Manager] in un file Photoshop, accedi alle risorse corrispondenti nell’unità montata utilizzando la funzionalità Posiziona collegamento in Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Salva nel file Photoshop sull&#39;unità montata o [carica](managing-assets-touch-ui.md#uploading-assets) nell&#39;archivio AEM.
-1. Al termine del flusso di lavoro, i riferimenti alle risorse AEM esistenti sono elencati nella pagina dei dettagli della risorsa.
+1. Salva il file in Photoshop sull&#39;unità montata o [carica](managing-assets-touch-ui.md#uploading-assets) nell&#39;archivio [!DNL Experience Manager].
+1. Al termine del flusso di lavoro, i riferimenti alle risorse [!DNL Experience Manager] esistenti sono elencati nella pagina dei dettagli della risorsa.
 
    Per visualizzare le risorse a cui si fa riferimento, chiudi la barra [Barra](/help/sites-authoring/basic-handling.md#rail-selector) nella pagina dei dettagli delle risorse.
 
@@ -85,7 +85,7 @@ Questa procedura è simile a [Aggiungi risorse come riferimenti in Adobe Illustr
 
 ## Creare risorse secondarie {#generate-subassets}
 
-Per le risorse supportate con formati a più pagine (file PDF, file AI, file Microsoft PowerPoint e Apple Keynote e file Adobe InDesign) AEM possono generare risorse secondarie corrispondenti a ogni singola pagina della risorsa originale. Queste risorse secondarie sono collegate alla risorsa *principale* e facilitano la visualizzazione multipagina. Per tutti gli altri scopi, le attività secondarie sono trattate come attività normali in AEM.
+Per le risorse supportate con formati a più pagine: file PDF, file AI, file Microsoft PowerPoint e Apple Keynote e file Adobe InDesign [!DNL Experience Manager] possono generare risorse secondarie corrispondenti a ogni singola pagina della risorsa originale. Queste risorse secondarie sono collegate alla risorsa *principale* e facilitano la visualizzazione multipagina. Per tutti gli altri scopi, le attività secondarie sono trattate come attività normali in AEM.
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per abilitare la generazione di risorse secondarie, procedi come segue:
 
@@ -111,7 +111,7 @@ Le risorse secondarie vengono visualizzate solo se sono generate e sono disponib
 
 ## Visualizzare pagine di un file multipagina {#view-pages-of-a-multi-page-file}
 
-È possibile visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e AI, utilizzando la funzione visualizzatore pagina di AEM Assets. Apri una risorsa multipagina e fai clic su **[!UICONTROL Visualizza pagine]** nell’angolo in alto a sinistra della pagina. Il visualizzatore pagina visualizzato mostra le pagine della risorsa e i controlli per sfogliare e ingrandire ciascuna pagina.
+Puoi visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e AI, utilizzando la funzione Visualizzatore pagina di [!DNL Experience Manager] Risorse. Apri una risorsa multipagina e fai clic su **[!UICONTROL Visualizza pagine]** nell’angolo in alto a sinistra della pagina. Il visualizzatore pagina visualizzato mostra le pagine della risorsa e i controlli per sfogliare e ingrandire ciascuna pagina.
 
 ![Visualizzare e visualizzare le pagine di una risorsa multipagina](assets/view_multipage_asset_fmr.gif)
 
@@ -119,7 +119,7 @@ Ad InDesign, è possibile estrarre pagine utilizzando il server InDesign. Se le 
 
 Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a sinistra e nei controlli Visualizzatore pagina:
 
-* **[!UICONTROL Azioni desktop]** per aprire o visualizzare una risorsa secondaria specifica utilizzando AEM’app desktop. Scopri come [configurare le azioni desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se utilizzi AEM’app desktop.
+* **[!UICONTROL Azioni desktop]** per aprire o visualizzare una risorsa secondaria specifica utilizzando l’app  [!DNL Experience Manager] desktop. Scopri come [configurare le azioni desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se utilizzi l’app desktop [!DNL Experience Manager].
 
 * **** L’opzione Proprietà apre la pagina   Proprietà della risorsa secondaria specifica.
 

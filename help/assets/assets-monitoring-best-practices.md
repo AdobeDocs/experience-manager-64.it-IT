@@ -1,20 +1,20 @@
 ---
 title: Best practice per il monitoraggio in Assets
-description: Procedure consigliate per il monitoraggio dell’ambiente e delle prestazioni dell’istanza AEM dopo la distribuzione.
+description: Best practice per il monitoraggio dell’ambiente e delle prestazioni dell’istanza [!DNL Experience Manager] dopo la distribuzione.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1745'
 ht-degree: 1%
 
 ---
 
 # Best practice per il monitoraggio in Assets {#assets-monitoring-best-practices}
 
-Dal punto di vista di Adobe Experience Manager (AEM) Assets, il monitoraggio deve includere l’osservazione e la generazione di rapporti sui seguenti processi e tecnologie:
+Dal punto di vista di Adobe Experience Manager Assets, il monitoraggio deve includere l’osservazione e la generazione di rapporti sui seguenti processi e tecnologie:
 
 * CPU di sistema
 * Utilizzo della memoria di sistema
@@ -27,7 +27,7 @@ Dal punto di vista di Adobe Experience Manager (AEM) Assets, il monitoraggio dev
 
 * Controlli dello stato della console OSGi
 
-In genere, AEM Assets può essere monitorato in due modi, il monitoraggio live e a lungo termine.
+In genere, [!DNL Assets] può essere monitorato in due modi, il monitoraggio live e a lungo termine.
 
 ## Monitoraggio live {#live-monitoring}
 
@@ -42,10 +42,10 @@ In genere, AEM Assets può essere monitorato in due modi, il monitoraggio live e
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop visualizza informazioni dettagliate sull&#39;utilizzo di ethernet/rete. Iftop visualizza le statistiche dei canali di comunicazione sulle entità che utilizzano ethernet e la quantità di larghezza di banda utilizzata. Iftop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iftop` o `apt-get install iftop`.
 
 * Registratore di volo Java (JFR): Uno strumento commerciale dall&#39;Oracle che può essere utilizzato liberamente in ambienti non di produzione. Per ulteriori dettagli, consulta [Come utilizzare il registratore di volo Java per diagnosticare i problemi runtime CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* AEM file error.log: È possibile esaminare il file error.log AEM per i dettagli degli errori registrati nel sistema. Usa il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
+* [!DNL Experience Manager] file error.log: È possibile esaminare il file  [!DNL Experience Manager] error.log per i dettagli degli errori registrati nel sistema. Usa il comando `tail -F quickstart/logs/error.log` per identificare gli errori da esaminare.
 * [Console](../sites-administering/workflows.md) del flusso di lavoro: Utilizza la console del flusso di lavoro per monitorare i flussi di lavoro in ritardo o bloccati.
 
-In genere, questi strumenti vengono utilizzati insieme per ottenere un&#39;idea completa delle prestazioni dell&#39;istanza AEM.
+In genere, questi strumenti vengono utilizzati insieme per ottenere un&#39;idea completa delle prestazioni dell&#39;istanza [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ In genere, questi strumenti vengono utilizzati insieme per ottenere un&#39;idea 
 
 ## Monitoraggio a lungo termine {#long-term-monitoring}
 
-Il monitoraggio a lungo termine di un&#39;istanza AEM comporta il monitoraggio per un periodo più lungo delle stesse parti monitorate in tempo reale. Include inoltre la definizione di avvisi specifici per l’ambiente.
+Il monitoraggio a lungo termine di un&#39;istanza [!DNL Experience Manager] comporta il monitoraggio per una durata più lunga delle stesse parti monitorate in tempo reale. Include inoltre la definizione di avvisi specifici per l’ambiente.
 
 ### Aggregazione dei registri e reporting {#log-aggregation-and-reporting}
 
-Sono disponibili diversi strumenti per i registri aggregati, ad esempio Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Per valutare il tempo di attività dell’istanza AEM, è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e delle operazioni consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
+Sono disponibili diversi strumenti per i registri aggregati, ad esempio Splunk(TM) e Elastic Search/Logstash/Kabana (ELK). Per valutare il tempo di attività dell&#39;istanza [!DNL Experience Manager], è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e delle operazioni consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
 
 ### Monitoraggio ambientale {#environment-monitoring}
 
@@ -76,7 +76,7 @@ Per monitorare ogni elemento sono necessari strumenti esterni, ad esempio NewRel
 
 #### Monitoraggio delle applicazioni interne {#internal-application-monitoring}
 
-Il monitoraggio interno delle applicazioni include il monitoraggio dei componenti dell&#39;applicazione che compongono lo stack AEM, tra cui JVM, l&#39;archivio dei contenuti e il monitoraggio tramite codice dell&#39;applicazione personalizzato generato sulla piattaforma. In generale, viene eseguito tramite JMX Mbeans che può essere monitorato direttamente da molte soluzioni di monitoraggio popolari, come SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) e altri. Per i sistemi che non supportano una connessione diretta a JMX, è possibile scrivere script di shell per estrarre i dati JMX ed esporli a questi sistemi in un formato che essi comprendono nativamente.
+Il monitoraggio interno delle applicazioni include il monitoraggio dei componenti dell&#39;applicazione che compongono lo stack [!DNL Experience Manager], tra cui JVM, l&#39;archivio dei contenuti e il monitoraggio tramite codice dell&#39;applicazione personalizzato generato sulla piattaforma. In generale, viene eseguito tramite JMX Mbeans che può essere monitorato direttamente da molte soluzioni di monitoraggio popolari, come SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) e altri. Per i sistemi che non supportano una connessione diretta a JMX, è possibile scrivere script di shell per estrarre i dati JMX ed esporli a questi sistemi in un formato che essi comprendono nativamente.
 
 L&#39;accesso remoto ai Mbeans JMX non è abilitato per impostazione predefinita. Per ulteriori informazioni sul monitoraggio tramite JMX, consulta [Monitoraggio e gestione utilizzando la tecnologia JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -84,7 +84,7 @@ In molti casi, è necessaria una linea di base per monitorare efficacemente una 
 
 **Monitoraggio JVM**
 
-Come per qualsiasi stack di applicazioni basato su Java, AEM dipende dalle risorse che gli vengono fornite tramite la macchina virtuale Java sottostante. Puoi monitorare lo stato di molte di queste risorse tramite Platform MXBeans esposti da JVM. Per ulteriori informazioni su MXBeans, consulta [Utilizzo del server MBean e della piattaforma MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Come per qualsiasi stack di applicazioni basato su Java, [!DNL Experience Manager] dipende dalle risorse che gli vengono fornite tramite la macchina virtuale Java sottostante. Puoi monitorare lo stato di molte di queste risorse tramite Platform MXBeans esposti da JVM. Per ulteriori informazioni su MXBeans, consulta [Utilizzo del server MBean e della piattaforma MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Di seguito sono riportati alcuni parametri di base che è possibile monitorare per JVM:
 
@@ -106,11 +106,11 @@ Thread
 * Soglia allarme: Quando il numero di thread è maggiore del 150% della linea di base.
 * Definizione dell&#39;allarme: Esiste un processo di runtime attivo o un&#39;operazione inefficiente consuma una grande quantità di risorse. Analizza un dump di thread per arrivare a una definizione.
 
-**Monitoraggio AEM**
+**[!DNL Experience Manager]monitoraggio**
 
-AEM inoltre espone una serie di statistiche e operazioni attraverso JMX. Questi possono aiutare a valutare lo stato di salute del sistema e individuare potenziali problemi prima che influiscano sugli utenti. Per ulteriori informazioni, consulta [documentazione](/help/sites-administering/jmx-console.md) su AEM MBeans JMX.
+[!DNL Experience Manager] espone inoltre una serie di statistiche e operazioni attraverso JMX. Questi possono aiutare a valutare lo stato di salute del sistema e individuare potenziali problemi prima che influiscano sugli utenti. Per ulteriori informazioni, consulta [documentazione](/help/sites-administering/jmx-console.md) su [!DNL Experience Manager] MBeans JMX.
 
-Di seguito sono riportati alcuni parametri di base che è possibile monitorare per AEM:
+Di seguito sono riportati alcuni parametri di base che è possibile monitorare per [!DNL Experience Manager]:
 
 Agenti di replica
 
@@ -187,13 +187,13 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 
 ## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
-Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni con le istanze AEM:
+Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni con le istanze [!DNL Experience Manager]:
 
 * Se utilizzi TarMK, esegui spesso la compattazione Tar. Per ulteriori dettagli, vedere [Mantenimento del repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Controlla i registri `OutOfMemoryError`. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 * Controlla i registri per eventuali riferimenti a query non indicizzate, traversate ad albero o traversate di indici. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le best practice sull’ottimizzazione delle prestazioni di query e indicizzazione, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizza la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, riduci più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o un elevato numero di consumatori di risorse specifiche.
-* Indagare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze AEM, incluso il dispatcher. Spesso si tratta di aree a collo di bottiglia. Per ulteriori informazioni, consulta [Considerazioni sulla rete Assets](assets-network-considerations.md).
-* Aggiorna il server AEM. Potresti avere una dimensione insufficiente della tua istanza AEM. L’Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni inferiori.
+* Indagare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze [!DNL Experience Manager], incluso il dispatcher. Spesso si tratta di aree a collo di bottiglia. Per ulteriori informazioni, consulta [Considerazioni sulla rete Assets](assets-network-considerations.md).
+* Aggiorna il server [!DNL Experience Manager]. È possibile che le dimensioni dell&#39;istanza [!DNL Experience Manager] siano insufficienti. L’Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni inferiori.
 * Esamina i file `access.log` e `error.log` per verificare la presenza di voci nel momento in cui si è verificato un errore. Cerca pattern che possano indicare anomalie nel codice personalizzato. Aggiungili all’elenco degli eventi monitorati.

@@ -2,13 +2,13 @@
 title: Schemi metadati
 description: 'Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scopri come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.  '
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 13%
+source-wordcount: '2524'
+ht-degree: 12%
 
 ---
 
@@ -174,7 +174,7 @@ Fare clic su `+` per aggiungere una nuova scheda a un modulo schema. Per imposta
 
 ## Eliminare i moduli schema metadati {#deleting-metadata-schema-forms}
 
-AEM consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
+[!DNL Experience Manager] consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
 
 Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona **[!UICONTROL Elimina]**.
 
@@ -184,11 +184,11 @@ Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona **[!UICONTROL E
 
 >[!NOTE]
 >
->Non è possibile eliminare i moduli di schema metadati predefiniti in AEM Assets.
+>Non è possibile eliminare i moduli di schema metadati predefiniti in [!DNL Experience Manager] Risorse.
 
 ## Moduli schema per tipi MIME {#schema-forms-for-mime-types}
 
-AEM Assets fornisce moduli predefiniti per vari tipi MIME pronti all’uso. Tuttavia, puoi aggiungere moduli personalizzati per risorse di vari tipi MIME.
+[!DNL Experience Manager] Assets fornisce moduli predefiniti per vari tipi MIME pronti all’uso. Tuttavia, puoi aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
 ### Aggiungere nuovi moduli per i tipi MIME {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ In questo caso, crea un nuovo nodo in `/etc/dam/metadataeditor/mimetypemappings`
 | `exposedmimetype` | Nome del modulo esistente da mappare | `String` | `image/jpeg` |
 | `mimetypes` | Elenco dei tipi MIME che utilizzano il modulo definito nell’attributo `exposedmimetype` | `String` | `image/png` |
 
-AEM Assets mappa i seguenti tipi MIME e moduli di schema:
+[!DNL Experience Manager] Le risorse mappano i seguenti tipi MIME e moduli di schema:
 
 | Modulo schema | Tipi MIME |
 |---|---|
@@ -227,7 +227,7 @@ La funzione schema metadati è disponibile solo per gli amministratori. Tuttavia
 
 ## Applicare metadati specifici per le cartelle {#applying-folder-specific-metadata}
 
-AEM Assets consente di definire una variante di uno schema di metadati e di applicarlo a una cartella specifica.
+[!DNL Experience Manager] Assets consente di definire una variante di uno schema di metadati e di applicarlo a una cartella specifica.
 
 Ad esempio, puoi definire una variante dello schema metadati predefinito e applicarlo a una cartella. Quando si applica lo schema modificato, questo sostituisce lo schema metadati predefinito originale applicato alle risorse all’interno della cartella.
 
@@ -239,7 +239,7 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
 Se la cartella dispone di una sottocartella, le risorse all’interno della sottocartella ereditano i metadati dallo schema applicato a livello di sottocartella se viene applicato uno schema diverso a livello di sottocartella. Se tuttavia non viene applicato alcuno schema o lo stesso schema a livello di sottocartella, le risorse della sottocartella ereditano i metadati dallo schema applicato a livello di cartella principale.
 
-1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo metadati predefinito, quindi fare clic o toccare l&#39;icona **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,9 +269,9 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
 >[!NOTE]
 >
->Un campo di metadati può essere definito obbligatorio in base al valore di un altro campo. Nella vista Schede, AEM non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
+>Un campo di metadati può essere definito obbligatorio in base al valore di un altro campo. Nella vista Schede, [!DNL Experience Manager] non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
-1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salvare il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
@@ -286,8 +286,8 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (Facoltativo) Accedi a `http://[server]:[port]/system/console/components/`. Configura e attiva il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disattivato per impostazione predefinita. Imposta una frequenza con cui AEM verifica la validità dei metadati sulle risorse.
-Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content delle risorse. Utilizzando questa proprietà, AEM filtrare i risultati in una ricerca.
+1. (Facoltativo) Accedi a `http://[server]:[port]/system/console/components/`. Configura e attiva il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disattivato per impostazione predefinita. Imposta una frequenza con cui [!DNL Experience Manager] controlla la validità dei metadati sulle risorse.
+Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content delle risorse. Utilizzando questa proprietà, [!DNL Experience Manager] può filtrare i risultati in una ricerca.
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ Questa configurazione aggiunge una proprietà `hasValidMetadata` a jcr:content d
 
 >[!CAUTION]
 >
->I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianifica i controlli di conseguenza. Se la distribuzione AEM presenta problemi di prestazioni, prova a disabilitare questo processo.
+>I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianifica i controlli di conseguenza. Se la distribuzione [!DNL Experience Manager] presenta problemi di prestazioni, prova a disabilitare questo processo.

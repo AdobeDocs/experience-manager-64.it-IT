@@ -1,20 +1,20 @@
 ---
 title: Condivisione di cartelle private
-description: Scopri come creare una cartella privata in Adobe Experience Manager (AEM) Assets e condividerla con altri utenti e assegnare loro vari privilegi.
+description: Scopri come creare una cartella privata in Adobe Experience Manager Assets e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
-feature: Collaborazione
+feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '445'
 ht-degree: 8%
 
 ---
 
 # Condivisione di cartelle private {#private-folder-sharing}
 
-Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience Manager (AEM) Assets disponibile esclusivamente per te. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificare le risorse.
+Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience Manager Assets disponibile esclusivamente per l’utente. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificare le risorse.
 
 1. Nella console Risorse, tocca o fai clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegli **[!UICONTROL Cartella]** dal menu.
 
@@ -44,9 +44,9 @@ Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience M
    >
    >Puoi assegnare diversi ruoli, ad esempio Editor, Proprietario o Visualizzatore, all’utente con cui condividi la cartella. Se assegni un ruolo Proprietario all&#39;utente, quest&#39;ultimo dispone dei privilegi di Editor nella cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegni un ruolo Editor, l’utente può modificare le risorse nella tua cartella privata. Se assegni un ruolo Visualizzatore, l’utente può visualizzare solo le risorse presenti nella cartella privata.
 
-1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi sulla cartella privata quando accede ad AEM Assets.
+1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi sulla cartella privata quando accede a [!DNL Experience Manager] Risorse.
 1. Fai clic su **[!UICONTROL Ok]** per chiudere il messaggio di conferma.
-1. L’utente con cui condividi la cartella riceve una notifica di condivisione. Accedi ad AEM Assets con le credenziali dell’utente per visualizzare la notifica.
+1. L’utente con cui condividi la cartella riceve una notifica di condivisione. Accedi a [!DNL Experience Manager] Risorse con le credenziali dell’utente per visualizzare la notifica.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

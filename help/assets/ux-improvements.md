@@ -1,28 +1,28 @@
 ---
 title: Miglioramenti dell’esperienza utente in Assets
-description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in AEM 6.4 Assets.
+description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in  [!DNL Experience Manager] 6.4 Assets.
 contentOwner: AG
-feature: Informazioni sulla versione
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
 
 # Miglioramenti dell’esperienza utente in Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
+[!DNL Experience Manager] 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
 
 L’interfaccia è più reattiva e consente di gestire in modo efficiente un ampio portafoglio di risorse. È possibile eseguire rapidamente ricerche, visualizzazioni, ordinamenti e scorrere in modo fluido un lungo elenco di elementi.
 
-Puoi personalizzare le diverse viste (a schede, a elenco e a colonne). Ad esempio, puoi configurare la dimensione delle miniature da visualizzare nella vista a schede. Nella vista Elenco, puoi configurare il livello di dettaglio da visualizzare per le risorse nell’elenco. AEM 6.4 Assets include una nuova vista ad albero che consente di navigare comodamente nell’archivio delle risorse e di trovarle.
+Puoi personalizzare le diverse viste (a schede, a elenco e a colonne). Ad esempio, puoi configurare la dimensione delle miniature da visualizzare nella vista a schede. Nella vista Elenco, puoi configurare il livello di dettaglio da visualizzare per le risorse nell’elenco. [!DNL Experience Manager] 6.4 Assets include una nuova vista ad albero che consente di navigare comodamente nell’archivio delle risorse e di trovarle.
 
 ## Caricamento pigro {#lazy-loading}
 
-Quando sfoglia o cerchi risorse in AEM 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si esplora un lungo elenco di risultati. Poiché un numero significativo di risorse viene caricato alla volta, l’esperienza di navigazione è fluida.
+Quando sfoglia/cerchi risorse in [!DNL Experience Manager] 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si esplora un lungo elenco di risultati. Poiché un numero significativo di risorse viene caricato alla volta, l’esperienza di navigazione è fluida.
 
 Se tocchi/fai clic su una risorsa per visualizzarne la pagina dei dettagli, puoi tornare alla pagina dei risultati semplicemente toccando/facendo clic sul pulsante Indietro nella barra degli strumenti.
 
@@ -66,7 +66,7 @@ Oltre alle viste a schede e a elenco, ora puoi passare alla pagina dei dettagli 
 
 ## Vista a albero {#tree-view}
 
-AEM 6.4 Assets include una vista ad albero che consente di navigare comodamente nella gerarchia delle risorse e passare alla risorsa o alla cartella desiderata.
+[!DNL Experience Manager] 6.4 Assets include una vista ad albero che consente di navigare comodamente nella gerarchia delle risorse e passare alla risorsa o alla cartella desiderata.
 
 Per aprire la visualizzazione Struttura, tocca o fai clic sull&#39;icona Navigazione globale in `Assets UI` e scegli **[!UICONTROL Struttura contenuto]** dal menu.
 

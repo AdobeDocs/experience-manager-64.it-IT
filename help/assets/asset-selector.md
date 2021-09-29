@@ -1,13 +1,13 @@
 ---
 title: Selettore risorse
-description: Scopri come utilizzare il selettore delle risorse per cercare, filtrare, sfogliare e recuperare metadati per le risorse in Adobe Experience Manager (AEM) Assets. Inoltre, scopri come personalizzare l’interfaccia del selettore risorse.
+description: Scopri come utilizzare il selettore delle risorse per cercare, filtrare, sfogliare e recuperare metadati per le risorse in Adobe Experience Manager Assets. Inoltre, scopri come personalizzare l’interfaccia del selettore risorse.
 contentOwner: AG
-feature: Gestione risorse, metadati, ricerca
+feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Il selettore Risorsa era denominato [Selettore risorse](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di AEM.
+>Il selettore delle risorse è stato chiamato [Selettore risorse](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di [!DNL Experience Manager].
 
 Il selettore delle risorse consente di sfogliare, cercare e filtrare le risorse in [!DNL Adobe Experience Manager] Risorse. Puoi anche recuperare i metadati delle risorse selezionate utilizzando il selettore delle risorse. Per personalizzare l’interfaccia del selettore risorse, puoi avviarla con i parametri di richiesta supportati. Questi parametri impostano il contesto del selettore delle risorse per un particolare scenario.
 

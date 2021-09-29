@@ -4,20 +4,19 @@ description: Scopri come personalizzare ed estendere Asset Share e Asset Editor,
 contentOwner: AG
 feature: Developer Tools
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
-
 # Personalizzazione ed estensione delle risorse {#customizing-and-extending-assets}
 
-Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager (AEM) utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
+Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
 
-In qualità di sviluppatore AEM, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+In qualità di sviluppatore [!DNL Experience Manager], puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
@@ -28,7 +27,7 @@ In qualità di sviluppatore AEM, puoi personalizzare ed estendere Asset Editor i
 * [Sviluppo proxy risorse](proxy.md)
 * [Best practice per la configurazione di ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzazione del look and Feel {#customizing-the-look-and-feel}
+## Personalizzazione dell&#39;aspetto {#customizing-the-look-and-feel}
 
 Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di Asset Editor:
 
@@ -38,6 +37,6 @@ Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di A
 
 ## Personalizzazione delle rappresentazioni {#customizing-renditions}
 
-Nella terminologia di AEM Assets, per rendering si intende il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
+Nella terminologia [!DNL Experience Manager Assets] un rendering è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
 
 Le rappresentazioni disponibili in una particolare risorsa possono essere personalizzate e possono essere create nuove rappresentazioni.

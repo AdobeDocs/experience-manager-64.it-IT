@@ -1,20 +1,20 @@
 ---
 title: Utilizza Apache Tika per rilevare il tipo MIME delle risorse digitali
-description: Abilita Apache Tika per aiutare AEM Assets a rilevare il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
+description: Abilita Apache Tika per aiutare [!DNL Experience Manager] Assets a rilevare il tipo MIME di risorse dal flusso di contenuto durante l'operazione di caricamento invece che l'estensione del file.
 contentOwner: AG
-feature: Metadati, Strumenti per sviluppatori, Gestione risorse
+feature: Metadata,Developer Tools,Asset Management
 role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 3%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
 # Utilizza Apache Tika per rilevare il tipo MIME delle risorse digitali {#detecting-mime-type-of-assets-using-apache-tika}
 
-In genere, Risorse Adobe Experience Manager (AEM) rileva il tipo MIME di risorse caricate dalla loro estensione di file. Se utilizzi Apache Tika per caricare le risorse, AEM Assets rileva il loro tipo MIME dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
+In genere, Adobe Experience Manager Assets rileva il tipo MIME di risorse caricate dall’estensione del file. Se utilizzi Apache Tika per caricare le risorse, [!DNL Experience Manager] le risorse rilevano il loro tipo MIME dal flusso di contenuto durante l’operazione di caricamento anziché dall’estensione del file.
 
 Questa funzione è disabilitata per impostazione predefinita. Per abilitare la funzione, configura il servizio **Day CQ DAM Mime Type** da Configuration Manager.
 

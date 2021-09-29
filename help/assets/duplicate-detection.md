@@ -2,19 +2,19 @@
 title: Abilitazione del rilevamento dei duplicati
 description: Scopri come abilitare il rilevamento delle risorse duplicate in AEM.
 contentOwner: AG
-feature: Gestione delle risorse, rapporti sulle risorse
+feature: Asset Management,Asset Reports
 role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
 # Abilitazione del rilevamento dei duplicati {#enabling-duplicate-detection}
 
-Se tenti di caricare una risorsa esistente in Adobe Experience Manager (AEM) Assets, la funzione di rilevamento duplicato la identifica come duplicato. Il rilevamento dei duplicati è disattivato per impostazione predefinita. Per abilitare la funzione, procedi come segue:
+Se tenti di caricare una risorsa esistente in Adobe Experience Manager Assets, la funzione di rilevamento duplicato la identifica come duplicato. Il rilevamento dei duplicati è disattivato per impostazione predefinita. Per abilitare la funzione, procedi come segue:
 
 1. Apri la pagina **[!UICONTROL Configurazione della console Web Adobe Experience Manager]** in `https://[server]:[port]/system/console/configMgr`.
 1. Modifica la configurazione del servlet **[!UICONTROL Day CQ DAM Create Asset]**.
@@ -22,7 +22,7 @@ Se tenti di caricare una risorsa esistente in Adobe Experience Manager (AEM) Ass
 
    ![Seleziona l’opzione per rilevare i duplicati nel servlet](assets/chlimage_1-377.png)
 
-La funzione di rilevamento duplicati è ora abilitata in AEM Assets. Quando un utente tenta di caricare una risorsa esistente in AEM, il sistema verifica la presenza di un conflitto e lo indica. Le risorse vengono identificate utilizzando l’hash SHA-1 memorizzato in `jcr:content/metadata/dam:sha1`, il che significa che le risorse duplicate vengono rilevate indipendentemente dai nomi dei file.
+La funzione di rilevamento duplicati è ora abilitata nelle risorse [!DNL Experience Manager] . Quando un utente tenta di caricare una risorsa esistente in AEM, il sistema verifica la presenza di un conflitto e lo indica. Le risorse vengono identificate utilizzando l’hash SHA-1 memorizzato in `jcr:content/metadata/dam:sha1`, il che significa che le risorse duplicate vengono rilevate indipendentemente dai nomi dei file.
 
 >[!MORELIKETHIS]
 >

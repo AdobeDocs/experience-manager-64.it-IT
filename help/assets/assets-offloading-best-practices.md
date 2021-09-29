@@ -1,13 +1,13 @@
 ---
 title: Best practice per l’offload di risorse
-description: Casi d’uso e best practice consigliati per scaricare i flussi di lavoro di acquisizione e replica delle risorse in AEM Assets.
+description: Casi d’uso e best practice consigliati per scaricare i flussi di lavoro di acquisizione e replica delle risorse in [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Questa funzione è obsoleta AEM 6.4 e viene rimossa in AEM 6.5. Pianifica di conseguenza.
+>Questa funzione è obsoleta a partire da [!DNL Experience Manager] 6.4 e viene rimossa in [!DNL Experience Manager] 6.5. Pianifica di conseguenza.
 
-La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Adobe Experience Manager (AEM) Assets può utilizzare notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’inserimento delle risorse possono influenzare le prestazioni complessive del sistema. Le operazioni più impegnative in termini di risorse includono flussi di lavoro di assimilazione e replica delle risorse AEM. L’utilizzo intensivo di questi flussi di lavoro in un’unica istanza di authoring AEM può influire negativamente sull’efficienza dell’authoring.
+La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in Adobe Experience Manager Assets può utilizzare notevoli risorse di CPU, memoria e I/O. In particolare, le dimensioni delle risorse, i flussi di lavoro, il numero di utenti e la frequenza dell’inserimento delle risorse possono influenzare le prestazioni complessive del sistema. Le operazioni più impegnative in termini di risorse includono flussi di lavoro di acquisizione e replica delle risorse. L’utilizzo intensivo di questi flussi di lavoro in una singola istanza di authoring può influire negativamente sull’efficienza dell’authoring.
 
 Lo scaricamento di queste attività alle istanze di lavoro dedicate può ridurre le spese generali di CPU, memoria e IO. In generale, l&#39;idea alla base dello scaricamento è quella di distribuire attività che consumano risorse CPU/Memory/IO intensive alle istanze di lavoro dedicate. Le sezioni seguenti includono casi d’uso consigliati per lo scaricamento delle risorse.
 
-## Offload di AEM Assets {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Offload {#aem-assets-offloading}
 
-AEM Assets implementa un’estensione del flusso di lavoro nativa specifica per le risorse per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di offload, ma include funzionalità aggiuntive specifiche per le risorse nell’implementazione. Lo scopo dello scaricamento delle risorse è quello di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse ti consente di ottenere un maggiore controllo sui flussi di lavoro di acquisizione.
+[!DNL Experience Manager] Assets implementa un’estensione del flusso di lavoro nativa specifica per le risorse per lo scaricamento. Si basa sull’estensione del flusso di lavoro generica fornita dal framework di offload, ma include funzionalità aggiuntive specifiche per le risorse nell’implementazione. Lo scopo dello scaricamento delle risorse è quello di eseguire in modo efficiente il flusso di lavoro Aggiorna risorsa DAM su una risorsa caricata. Lo scaricamento delle risorse ti consente di ottenere un maggiore controllo sui flussi di lavoro di acquisizione.
 
-## Componenti di offload di AEM Assets {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Componenti di offload delle risorse {#aem-assets-offloading-components}
 
 Il diagramma seguente illustra i componenti principali del processo di scaricamento delle risorse:
 
@@ -40,7 +40,7 @@ Il flusso di lavoro DAM Update Asset Offloading viene eseguito sul server princi
 
 Il job manager distribuisce i nuovi job alle istanze del worker. Nella progettazione del meccanismo di distribuzione è importante tenere conto dell&#39;abilitazione degli argomenti. I processi possono essere assegnati solo alle istanze in cui è abilitato l’argomento del processo. Disabilitare l&#39;argomento `com/adobe/granite/workflow/offloading` nella pagina principale e attivarlo nel processo di lavoro per assicurarsi che il lavoro sia assegnato al lavoratore.
 
-### scarico AEM {#aem-offloading}
+### [!DNL Experience Manager] scarico {#aem-offloading}
 
 Il framework di offload identifica i processi di offload del flusso di lavoro assegnati alle istanze di lavoro e utilizza la replica per trasportarli fisicamente, compreso il carico utile (ad esempio, le immagini da acquisire), ai lavoratori.
 
@@ -50,7 +50,7 @@ Una volta scritto un lavoro sul lavoratore, il responsabile del lavoro chiama il
 
 ## Topologia Sling {#sling-topology}
 
-La topologia Sling raggruppa AEM istanze e consente loro di essere consapevoli l’uno dell’altro, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling ti consente di creare topologie per scenari non raggruppati, raggruppati e misti. Un’istanza può esporre le proprietà all’intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche della topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
+La topologia Sling raggruppa le istanze [!DNL Experience Manager] e consente loro di essere consapevoli l’uno dell’altro, indipendentemente dalla persistenza sottostante. Questa caratteristica della topologia Sling ti consente di creare topologie per scenari non raggruppati, raggruppati e misti. Un’istanza può esporre le proprietà all’intera topologia. Il framework fornisce callback per l&#39;ascolto delle modifiche della topologia (istanze e proprietà). La topologia Sling fornisce le basi per i lavori distribuiti Sling.
 
 ### Processi distribuiti Sling {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Se ritieni che lo scaricamento delle risorse sia un approccio appropriato, l’A
 
 ### Distribuzione offload delle risorse consigliate {#recommended-assets-offloading-deployment}
 
-Con AEM e Oak, ci sono diversi scenari di implementazione possibili. Per lo scaricamento delle risorse, si consiglia una distribuzione basata su TarMK con un datastore condiviso. Il diagramma seguente illustra la distribuzione consigliata:
+Con [!DNL Experience Manager] e Oak, sono possibili diversi scenari di distribuzione. Per lo scaricamento delle risorse, si consiglia una distribuzione basata su TarMK con un datastore condiviso. Il diagramma seguente illustra la distribuzione consigliata:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

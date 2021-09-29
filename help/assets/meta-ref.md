@@ -2,13 +2,13 @@
 title: Riferimento schema metadati
 description: 'Scopri le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
 contentOwner: AG
-feature: Metadati
+feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Il riferimento seguente include informazioni su uno specifico schema di metadati
 
 ## Dublin Core {#dublin-core}
 
-I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse al fine di facilitarne la ricerca. In AEM Assets, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
+I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse al fine di facilitarne la ricerca. In [!DNL Experience Manager] Assets, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
 
 Il semplice set di elementi di metadati di base di Dublino (DCMES) contiene 15 elementi di metadati, come indicato nella tabella seguente. Ogni elemento Dublin Core è facoltativo e può essere ripetuto. Puoi aggiungere o eliminare le informazioni sui metadati di base di Dublino come faresti per i metadati specifici per i tipi di file multimediali.
 
@@ -31,7 +31,7 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa d
 | creatore | La persona o l’azienda responsabile della creazione del contenuto. |
 | data | Data o periodo di tempo associato all’attività. |
 | descrizione | Ulteriori informazioni sulla risorsa. |
-| format | Il formato file, il supporto fisico o le dimensioni della risorsa. AEM utilizza dc:format per indicare il tipo di MIME della risorsa. |
+| format | Il formato file, il supporto fisico o le dimensioni della risorsa. [!DNL Experience Manager] utilizza dc:format per indicare il tipo mime della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
 | language | La lingua della risorsa (ad esempio, en per inglese). |
 | editore | La persona o l’azienda responsabile della messa a disposizione del bene. |

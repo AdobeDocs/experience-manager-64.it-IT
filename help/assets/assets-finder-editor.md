@@ -2,12 +2,12 @@
 title: Creare e configurare le pagine dell’Editor risorse
 description: Scopri come creare pagine dell’Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
-feature: Strumenti per sviluppatori,Gestione risorse
+feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3300'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,13 @@ Il presente documento descrive quanto segue:
 
 ## Perché creare e configurare le pagine dell’Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-La gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
+La gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di [!DNL Adobe Experience Manager Assets] per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una Intranet dove i dipendenti possono caricare foto da visite a fiere commerciali o da un centro stampa in un sito web rivolto al pubblico, come l&#39;esempio fornito con Geometrixx. Le applicazioni incentrate sulle risorse possono anche estendersi a soluzioni complete, inclusi carrelli, checkout e processi di verifica.
 
-La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, che include solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con AEM Assets sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
+La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, che include solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con [!DNL Assets] sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in AEM è costituita da una pagina Asset Editor , che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Asset Editor consente anche di modificare i metadati, purché l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in [!DNL Experience Manager] è costituita da una pagina Asset Editor che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Asset Editor consente anche di modificare i metadati, purché l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 ## Creare e configurare una pagina Condivisione risorse {#creating-and-configuring-an-asset-share-page}
 
@@ -161,7 +161,7 @@ Per personalizzare il generatore di query:
 
 #### Aggiungi predicati {#adding-predicates}
 
-AEM Assets include diversi predicati che puoi aggiungere alla pagina Condivisione risorse . Questi consentono agli utenti di limitare ulteriormente le ricerche. In alcuni casi, possono sovrascrivere un parametro del generatore di query (ad esempio, il parametro Path).
+[!DNL Experience Manager Assets] include una serie di predicati che è possibile aggiungere alla pagina Condivisione risorse. Questi consentono agli utenti di limitare ulteriormente le ricerche. In alcuni casi, possono sovrascrivere un parametro del generatore di query (ad esempio, il parametro Path).
 
 Per aggiungere predicati:
 
@@ -279,7 +279,7 @@ Il modulo metadati è un modulo che include un’azione iniziale e finale. Nel m
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Consulta [Personalizzazione ed estensione di AEM Assets](extending-assets.md) per informazioni sulla modifica dei namespace disponibili nel modulo di metadati.
+   Per informazioni sulla modifica dei namespace disponibili nel modulo di metadati, consulta [Personalizzazione ed estensione [!DNL Assets]](extending-assets.md) .
 
 1. Fare clic sulla scheda **[!UICONTROL Vincoli]**. Qui è possibile selezionare se un campo è obbligatorio e, se necessario, aggiungere eventuali vincoli.
 
@@ -384,7 +384,7 @@ Per aggiungere azioni alla pagina Editor risorse:
    | [!UICONTROL Lightbox] | Salva le risorse in un   &quot;lightbox&quot; per eseguire altre azioni su di esse. Questo è   utile quando si lavora con risorse su più pagine. |
    | [!UICONTROL Blocco] | Consente agli utenti di bloccare una risorsa. Questo   funzionalità non abilitata per impostazione predefinita e deve essere abilitata nell’elenco   di componenti. |
    | [!UICONTROL Riferimenti] | Fai clic qui per visualizzare le pagine   la risorsa viene utilizzata. |
-   | [!UICONTROL Gestione versioni] | Consente di creare e ripristinare   versioni di una risorsa. |
+   | [!UICONTROL Controllo delle versioni] | Consente di creare e ripristinare   versioni di una risorsa. |
 
 1. Trascina l’azione appropriata nell’area **Azioni** della pagina. In questo modo viene creato un pulsante utilizzato per eseguire l’azione.
 
@@ -392,7 +392,7 @@ Per aggiungere azioni alla pagina Editor risorse:
 
 ## Modificare più risorse con la pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Con AEM Assets puoi apportare modifiche a più risorse contemporaneamente. Dopo aver selezionato le risorse, puoi modificarle simultaneamente:
+Con [!DNL Assets] puoi apportare modifiche a più risorse contemporaneamente. Dopo aver selezionato le risorse, puoi modificarle simultaneamente:
 
 * Tag
 * Metadati
