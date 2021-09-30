@@ -1,8 +1,8 @@
 ---
 title: Aggiornamento ad AEM 6.4 Communities
-seo-title: Aggiornamento ad AEM 6.4 Communities
+seo-title: Upgrading to AEM 6.4 Communities
 description: Come effettuare l’aggiornamento da una versione precedente a AEM community 6.4
-seo-description: Come effettuare l’aggiornamento da una versione precedente a AEM community 6.4
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
@@ -51,17 +51,17 @@ Se il sito aggiornato è stato configurato per l’utilizzo dell’archiviazione
 
 Pertanto, esiste la possibilità di istruire l’ASRP affinché utilizzi `AEM 6.0 compatability-mode` per accedere all’UGC.
 
-Per tutte le istanze di authoring e pubblicazione AEM 6.3
+Per tutte le istanze di authoring e pubblicazione AEM 6.3:
 
-1. Accesso con privilegi di amministratore
-2. Configura [ASRP](asrp.md)
-3. Segui questi passaggi per rendere visibile un UGC preesistente:
-i. Passa alla console Web, ad esempio
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. Individua la configurazione **[!UICONTROL Utilità AEM Communities]**
-iii) Seleziona per espandere il pannello di configurazione
-   * *Deseleziona* **`Cloud Storage`**
-   * Seleziona **[!UICONTROL Salva]**
+1. Accedi con privilegi di amministratore e configura [ASRP](asrp.md).
+1. Segui questi passaggi per rendere visibile l’UGC esistente:
+
+   i. Passa alla console Web. L’URL predefinito è
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii) Individua la configurazione **[!UICONTROL Utilità AEM Communities]** e seleziona per espandere il pannello di configurazione.
+
+   iii) Deseleziona **[!UICONTROL Cloud Storage]** e fai clic su **[!UICONTROL Salva]**.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
