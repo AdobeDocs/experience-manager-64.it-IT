@@ -1,19 +1,19 @@
 ---
 title: Come eseguire AEM con lo standby a freddo TarMK
-seo-title: Come eseguire AEM con lo standby a freddo TarMK
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Scopri come creare, configurare e mantenere una configurazione di standby a freddo TarMK.
-seo-description: Scopri come creare, configurare e mantenere una configurazione di standby a freddo TarMK.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configurazione
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,16 @@ Il contenuto viene sincronizzato in modo lineare tra l’istanza primaria e le i
 >La funzione Standby a freddo ha lo scopo di proteggere gli scenari in cui è richiesta un&#39;elevata disponibilità sulle istanze **author**. Per le situazioni in cui è richiesta un&#39;elevata disponibilità sulle istanze **publish** utilizzando il Kernel Tar Micro, l&#39;Adobe consiglia di utilizzare una farm di pubblicazione.
 >
 >Per informazioni su ulteriori distribuzioni disponibili, consulta la pagina [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md) .
+
+>[!NOTE]
+>
+>Quando l’istanza Standby viene impostata o derivata dal nodo Principale, consente l’accesso solo alle due console seguenti (per le attività relative all’amministrazione):
+>
+>* CRXDE Lite
+>* Console web OSGI
+
+>
+>Altre console non sono accessibili.
 
 ## Come funziona {#how-it-works}
 
@@ -83,8 +93,7 @@ Supponendo che tutte le istanze siano eseguite nella stessa area di sicurezza In
 >* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
+>Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
 
 Per creare una configurazione di standby a freddo TarMK, devi prima creare le istanze di standby eseguendo una copia del file system dell&#39;intera cartella di installazione della cartella principale in una nuova posizione. È quindi possibile avviare ogni istanza con una modalità runmode che ne specifichi il ruolo ( `primary` o `standby`).
 
@@ -207,7 +216,6 @@ Il servizio può essere configurato anche tramite la console Web tramite:
 >
 >Per farlo, vai su *http://localhost:4502/system/console/status-slingsettings* e controlla la riga **&quot;Run Modes&quot;**.
 
-
 ## Prima sincronizzazione {#first-time-synchronization}
 
 Una volta completata la preparazione e avviato lo standby per la prima volta, il traffico di rete tra le istanze sarà intenso, in quanto lo standby raggiunge il livello principale. È possibile consultare i registri per osservare lo stato della sincronizzazione.
@@ -306,7 +314,7 @@ Nel caso in cui l&#39;istanza primaria non riesca per qualsiasi motivo, è possi
 1. Aggiungi il nuovo primario al load balancer.
 1. Crea e avvia una nuova istanza di standby. Per ulteriori informazioni, consulta la procedura precedente su [Creazione di una configurazione di standby a freddo AEM TarMK](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
-## Applicazione degli hotfix a una configurazione dello standby a freddo {#applying-hotfixes-to-a-cold-standby-setup}
+## Applicazione degli hotfix a una configurazione di standby a freddo {#applying-hotfixes-to-a-cold-standby-setup}
 
 Il modo consigliato per applicare gli hotfix a una configurazione stanby a freddo è installarli nell&#39;istanza primaria e poi clonarli in una nuova istanza standby a freddo con gli hotfix installati.
 
