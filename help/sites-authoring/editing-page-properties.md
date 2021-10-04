@@ -1,28 +1,27 @@
 ---
 title: Modifica delle proprietà di una pagina
-seo-title: Modifica delle proprietà di una pagina
+seo-title: Editing Page Properties
 description: Puoi impostare le proprietà richieste per una pagina.
-seo-description: Puoi impostare le proprietà richieste per una pagina.
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
-translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
-# Modifica delle proprietà di una pagina{#editing-page-properties}
+# Modifica delle proprietà di una pagina  {#editing-page-properties}
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
 
-## Proprietà pagina {#page-properties}
+## Proprietà pagina   {#page-properties}
 
 Le proprietà sono distribuite su più schede.
 
@@ -54,12 +53,12 @@ Le proprietà sono distribuite su più schede.
 
 * **Marchio**
 
-   Applicate un&#39;identità marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla release 2.14.0 o successiva dei [Componenti di base.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Applica un’identità di marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla versione 2.14.0 o successiva dei [Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
-   * **Override**  - Selezionare questa opzione per definire il marchio slug in questa pagina.
-      * Il valore verrà ereditato da qualsiasi pagina figlia, a meno che non siano stati impostati anche i valori **Override**.
-   * **Valore**  di sostituzione - Testo del marchio da aggiungere al titolo della pagina.
-      * Il valore viene aggiunto al titolo della pagina dopo un carattere barra verticale, ad esempio &quot;Ciclismo in Toscana&quot; | Sempre pronto per il WKND&quot;
+   * **Override** : seleziona per definire il brand lumg in questa pagina.
+      * Il valore viene ereditato da qualsiasi pagina figlia a meno che non siano impostati anche i valori **Override**.
+   * **Valore di sostituzione** : il testo del marchio da aggiungere al titolo della pagina.
+      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Ciclismo in Toscana | Sempre pronto per il WKND&quot;
 
 * **Titolo pagina**
 
@@ -93,7 +92,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
 
-   Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,`, h `ttp://example.com/welcome`sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
+   Ad esempio, se l’URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito web h `ttp://example.com,` , h `ttp://example.com/welcome`sarà l’URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -117,7 +116,7 @@ Le proprietà sono distribuite su più schede.
 
    Indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente.
 
-* **Progettazione**
+* **Design**
 
    Indica il [design](/help/sites-developing/designer.md) da utilizzare per la pagina.
 
@@ -125,13 +124,10 @@ Le proprietà sono distribuite su più schede.
 
    Specifica un alias da utilizzare per la pagina.
 
-   >[!NOTE]
-   >
-   > L’alias consente di impostare la proprietà `sling:alias` per definire un nome di alias per la risorsa (influisce solo sulla risorsa, non sul percorso).
-   >
-   >Ad esempio, se definisci un alias di `latin-lang` per il nodo `/content/we-retail/spanish`, è possibile accedere a questa pagina tramite `/content/we-retail/latin-language`.
-   >
-   >Per ulteriori dettagli, consultate [Nomi delle pagine localizzate in SEO e Tecniche consigliate per la gestione degli URL](/help/managing/seo-and-url-management.md#localized-page-names)
+   * Ad esempio, se definisci un alias di `private` per la pagina `/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina anche tramite `/content/wknd/us/en/magazine/private`.
+   * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa e non sul percorso dell’archivio.
+   * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. [Le opzioni di pubblicazione ](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+   * Per ulteriori dettagli, consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO (Search Engine Optimization) e URL](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modelli consentiti**
 
@@ -145,7 +141,7 @@ Le proprietà sono distribuite su più schede.
 
    >[!CAUTION]
    >
-   >La scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete basate sulla presenza della proprietà cq:cugEnabled, in **Autenticazione richiesta** verrà visualizzato un messaggio di avviso e l&#39;opzione non sarà modificabile, né le [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) saranno modificabili.
+   >La scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete, basate sulla proprietà cq:cugEnabled , verrà visualizzato un messaggio di avviso in **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né le [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) saranno modificabili.
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -158,7 +154,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 1. **Miniatura pagina**
 
@@ -195,7 +191,7 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
    Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-authoring/personalization.md).
 
-### Autorizzazioni    {#permissions}
+### Autorizzazioni   {#permissions}
 
 * **Autorizzazioni**
 
@@ -207,14 +203,14 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
    >[!CAUTION]
    >
-   >La scheda **Autorizzazioni** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
+   >La scheda **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Per ulteriori informazioni, consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md).
+   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Per ulteriori informazioni, consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) .
 
 ### Blueprint {#blueprint}
 
@@ -222,13 +218,13 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito   {#site-structure}
+### Struttura sito  {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
@@ -275,7 +271,7 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selezionare **Apri proprietà** e si apre una finestra di dialogo che consente di modificare le proprietà, ordinate in base alla scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
+1. Seleziona **Apri proprietà** per aprire una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
 
    * **Annulla**
    * **Salva e chiudi**
@@ -299,7 +295,7 @@ Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-Dopo aver selezionato le pagine e aver fatto clic o toccato l&#39;opzione **Proprietà**, vengono visualizzate le proprietà collettive:
+Dopo aver selezionato le pagine e aver toccato o fatto clic sull&#39;opzione **Proprietà**, vengono visualizzate le proprietà di gruppo:
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
@@ -347,4 +343,3 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 >[!NOTE]
 >
 >Il componente di pagina può essere configurato in modo da specificare i campi disponibili per la modifica collettiva. Consulta [Configurazione della pagina per la modifica collettiva delle proprietà di pagina](/help/sites-developing/bulk-editing.md).
-

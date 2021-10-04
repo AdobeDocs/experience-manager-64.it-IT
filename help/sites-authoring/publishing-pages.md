@@ -1,19 +1,18 @@
 ---
 title: Pubblicazione delle pagine
-seo-title: Pubblicazione delle pagine
+seo-title: Publishing Pages
 description: Pubblicazione delle pagine
-seo-description: 'null'
+seo-description: null
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,16 +31,13 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >* **Pubblicare/Annullare la pubblicazione**
    >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
-   >
-   >
-* **Attivare/Disattivare**
+>
+>* **Attivare/Disattivare**
    >  Sinonimi di pubblicare/annullare la pubblicazione.
-   >
-   >
-* **Replicare/Replica**
+>
+>* **Replicare/Replica**
    >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di pagina, file, codice, commenti degli utenti) da un ambiente all’altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
-
 
 
 >[!NOTE]
@@ -53,7 +49,6 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
 
 >
-
 
 
 ## Pubblicazione delle pagine {#publishing-pages-2}
@@ -93,12 +88,16 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 >
 >La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
+>[!NOTE]
+>
+>Non è possibile pubblicare le pagine accessibili da [alias](/help/sites-authoring/editing-page-properties.md#advanced) nell’editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
 Nella console Sites vi sono due opzioni di modifica:
 
-* [Pubblicazione rapida](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Pubblicazione rapida ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gestisci pubblicazione ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Pubblicazione rapida  {#quick-publish}
 
@@ -120,7 +119,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 >
 >La pubblicazione rapida è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
-#### Gestisci pubblicazione   {#manage-publication}
+#### Gestisci pubblicazione  {#manage-publication}
 
 **Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
 
@@ -218,11 +217,15 @@ Con una procedura [simile alla pubblicazione](/help/sites-authoring/publishing-p
 * [Dall’editor di pagine](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Dalla console Sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Annullamento della pubblicazione dall’editor   {#unpublishing-from-the-editor}
+### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
 Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**. La procedura è simile a quella di [pubblicazione della pagina](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Annullamento della pubblicazione dalla console   {#unpublishing-from-the-console}
+>[!NOTE]
+>
+>Le pagine a cui si accede da [alias](/help/sites-authoring/editing-page-properties.md#advanced) nell&#39;editor non possono essere annullate. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+
+### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication), ma anche per annullarla.
 
