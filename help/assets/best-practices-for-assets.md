@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ La gestione di file di grandi dimensioni e l’esecuzione di flussi di lavoro in
 * [[!DNL Experience Manager] e Creative Cloud ](aem-cc-integration-best-practices.md)
 le best practice per l’integrazioneÈ possibile integrare la  [!DNL Experience Manager] distribuzione con Creative Cloud in diversi modi. Seguendo alcune best practice per semplificare l’integrazione e i flussi di lavoro di trasferimento delle risorse, ottieni la massima efficienza. Questa guida include best practice sull’integrazione di [!DNL Experience Manager] risorse con Adobe Creative Cloud.
 * (Obsoleto) [[!DNL Experience Manager] per Creative Cloud delle best practice per la condivisione delle cartelle](aem-cc-folder-sharing-best-practices.md)
-Puoi configurare [!DNL Experience Manager] per consentire agli utenti in DAM di condividere cartelle con gli utenti Creative Cloud (CC), in modo che siano disponibili come cartelle condivise nel servizio Creative Cloud Assets. La funzione può essere utilizzata per scambiare file tra team creativi e utenti DAM. Questa guida illustra le best practice per sfruttare la funzione [!DNL Experience Manager] per Creative Cloud della condivisione delle cartelle.
+Puoi configurare [!DNL Experience Manager] per consentire agli utenti in DAM di condividere cartelle con gli utenti di Creative Cloud, in modo che siano disponibili come cartelle condivise nel servizio Creative Cloud Assets. La funzione può essere utilizzata per scambiare file tra team creativi e utenti DAM. Questa guida illustra le best practice per sfruttare la funzione [!DNL Experience Manager] per Creative Cloud della condivisione delle cartelle.

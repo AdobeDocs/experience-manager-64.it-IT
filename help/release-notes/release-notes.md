@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2751'
 ht-degree: 27%
 
 ---
@@ -117,7 +117,7 @@ L’introduzione di Esperienze fluide all’inizio del 2017, con il supporto di 
 
 **[Frammenti di contenuto](/help/assets/content-fragments.md)**
 
-La novità della versione 6.4 è un editor visivo [content model](/help/assets/content-fragments-models.md) e un nuovo [componente configurabile](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) per fornire un output HTML flessibile e JSON da includere in Content Services.
+La novità della versione 6.4 è un editor [content model](/help/assets/content-fragments-models.md) visivo e un nuovo [componente configurabile](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) per fornire un output HTML flessibile e JSON da includere in Content Services.
 
 **Frammenti esperienza**
 
@@ -131,7 +131,7 @@ Sono stati apportati diversi miglioramenti a Sling Model Exporter e ai component
 
 AEM 6.4 completa la trasformazione al modello componente di nuova generazione. Il concetto dei componenti core introdotto in AEM 6.3 e ora unito al sistema di stili, fornisce un modo efficiente per creare nuovi siti ed estendere quelli esistenti.
 
-Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/it/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Add-on Screens {#screens-add-on}
 
@@ -187,7 +187,7 @@ AEM 6.4 introduce diverse nuove funzioni e miglioramenti per Assets, tra cui nuo
 
 **Adobe Asset Link**
 
-Adobe Asset Link in Creative Cloud for enterprise semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. È una nuova funzionalità nativa di Creative Cloud per le aziende che collega Photoshop CC, Illustrator CC e InDesign CC a AEM, senza dover lasciare i propri strumenti di scelta.
+Adobe Asset Link in Creative Cloud for enterprise semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Si tratta di una nuova funzionalità nativa nella Creative Cloud per le aziende che collega Photoshop, Illustrator e InDesign a AEM, senza dover lasciare il proprio strumento di scelta.
 
 Per ulteriori informazioni su questa funzionalità, sui prerequisiti e su come accedervi, consulta [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 
@@ -255,7 +255,7 @@ AEM 6.4 Forms offre diverse nuove funzioni e miglioramenti. Le caratteristiche p
 * Precompilare le comunicazioni interattive dalle applicazioni aziendali
 * Modernizzazione del flusso di lavoro e supporto per i lavoratori mobili
 * Frammenti di carico pigri
-* Aggiornamento single-hop da LiveCycle ad Experience Manager Forms 6.4
+* Aggiornamento single-hop da LiveCycle a Experience Manager Forms 6.4
 
 Maggiori dettagli sulla pagina delle note sulla versione [AEM Forms](forms.md). Inoltre, consulta il [Riepilogo delle nuove funzioni e dei miglioramenti in AEM 6.4 Forms](/help/forms/using/whats-new.md) per informazioni sulle funzioni nuove e migliorate e risorse di documentazione.
 
@@ -304,7 +304,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 * App desktop Adobe Experience Manager ([ulteriori informazioni](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) e [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* Pacchetto per aggiungere PDF Rasterizer migliorato ([ulteriori informazioni](/help/assets/aem-pdf-rasterizer.md) e [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Pacchetto per aggiungere un potenziato PDF Rasterizer ([ulteriori informazioni](/help/assets/aem-pdf-rasterizer.md) e [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Pacchetto per aggiungere il supporto esteso per le immagini RAW ([ulteriori informazioni](/help/assets/camera-raw.md))
 
@@ -376,5 +376,5 @@ Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete
 Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
-* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 * [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuovo Adobe sull’esperienza di accesso all’Assistenza clienti](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
