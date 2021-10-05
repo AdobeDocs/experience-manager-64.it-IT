@@ -1,8 +1,8 @@
 ---
 title: Giorno difficile
-seo-title: Giorno difficile
+seo-title: Tough Day
 description: Il test Tough Day simula il carico giornaliero di circa 1000 autori in uno scenario peggiore con tutte le operazioni in corso allo stesso tempo.
-seo-description: Il test Tough Day simula il carico giornaliero di circa 1000 autori in uno scenario peggiore con tutte le operazioni in corso allo stesso tempo.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,23 +10,22 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-translation-type: tm+mt
-source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
+source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
 
-# Giorno duro{#tough-day}
+# Giorno difficile{#tough-day}
 
-## Che cosa è il giorno 2 {#what-is-tough-day}
+## Che cosa è difficile il giorno 2 {#what-is-tough-day}
 
 Tough Day 2 è un&#39;applicazione che ti consente di testare allo stress i limiti della tua istanza AEM. Può essere eseguito con la suite di test predefinita oppure può essere configurato per soddisfare le tue esigenze di test. È possibile guardare [questa registrazione](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
 
 ## Come eseguire Tough Day 2 {#how-to-run-tough-day}
 
-Scarica la versione più recente di Tough Day 2 dal [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fuori dalla casella fornendo il parametro `host` . Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo che venga utilizzato il valore `localhost` :
+Scarica la versione più recente di Tough Day 2 dal [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fuori dalla casella fornendo il parametro `host` . Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo che venga utilizzato il valore `localhost` :
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -53,7 +52,6 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >[!NOTE]
 >
 >Il Duro Giorno 2 non ha un passo di pulizia. Di conseguenza, si consiglia di eseguire Tough Day 2 su un&#39;istanza di staging clonata e non sull&#39;istanza di produzione principale. L&#39;istanza di staging deve essere eliminata dopo i test.
-
 
 ### Assistenza {#getting-help}
 
@@ -141,7 +139,7 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 | `--loglevel=<Val>` | Livello di log per il motore Tough Day 2. | INFO | TUTTO, DEBUG, INFORMAZIONI, AVVERTENZA, ERRORE, GRASSETTO, DISATTIVATO |
 | `--dryrun=<Val>` | Se true, stampa la configurazione risultante e non esegue alcun test. | false | true o false |
 
-## Personalizzazione di {#customizing}
+## Personalizzazione {#customizing}
 
 La personalizzazione può essere ottenuta in due modi: parametri della riga di comando o file di configurazione dello stile. **I file di configurazione vengono generalmente utilizzati per le suite personalizzate di grandi dimensioni e sostituiranno i parametri predefiniti del Giorno 2 difficile. I parametri della riga di comando sostituiscono sia i file di configurazione che i parametri predefiniti.**
 
@@ -166,7 +164,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Aggiunta di più istanze dello stesso test {#adding-multiple-instances-of-the-same-test}
+### Aggiunta di più istanze dello stesso test  {#adding-multiple-instances-of-the-same-test}
 
 Puoi anche aggiungere ed eseguire più istanze dello stesso test, ma ogni istanza deve avere un nome univoco. Gli esempi seguenti mostrano come aggiungere due istanze dello stesso test utilizzando i parametri della riga di comando o un file di configurazione dello stile.
 
@@ -318,7 +316,7 @@ Inoltre, i test possono avere una proprietà `count` che limita il numero di ese
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
 ```
 
-o
+oppure
 
 ```xml
 - add : CreateAssetTreeTest
