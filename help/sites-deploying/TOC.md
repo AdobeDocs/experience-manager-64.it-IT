@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.4
 breadcrumb-title: Guida alla distribuzione
 user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.4, inclusa la distribuzione cloud di Adobe Managed Services.
-feature: Distribuzione
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 17%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 17%
    + [Ristrutturazione dell’archivio in AEM 6.4](repository-restructuring.md)
    + [Ristrutturazione dell’archivio comune in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell’archivio siti in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Ristrutturazione dell’archivio risorse in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [Ristrutturazione dell’archivio risorse in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
    + [Ristrutturazione dell’archivio Dynamic Media in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell’archivio Forms in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Ristrutturazione dell’archivio di e-commerce in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
