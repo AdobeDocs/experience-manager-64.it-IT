@@ -1,19 +1,18 @@
 ---
 title: Amministrazione di diritti di accesso, gruppi e utenti
-seo-title: Amministrazione di diritti di accesso, gruppi e utenti
+seo-title: User, Group and Access Rights Administration
 description: Scopri l’amministrazione di utenti, gruppi e diritti di accesso in AEM.
 feature: Security
-seo-description: Scopri l’amministrazione di utenti, gruppi e diritti di accesso in AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -64,11 +63,11 @@ CRX ti consente di configurare i diritti di accesso per gli account utente e per
 
 >[!NOTE]
 >
->CRX implementa [il controllo degli accessi come definito da JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [il controllo degli accessi come definito da JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Un’installazione standard di un archivio CRX è configurata per utilizzare elenchi di controllo degli accessi basati sulle risorse. Questa è una possibile implementazione del controllo degli accessi JSR-283 e una delle implementazioni presenti con Jackrabbit.
 
-### Soggetti e entità {#subjects-and-principals}
+### Argomenti e Principali {#subjects-and-principals}
 
 CRX utilizza due concetti chiave durante la valutazione dei diritti di accesso:
 
@@ -115,8 +114,7 @@ L&#39;elenco dei diritti di accesso applicabili all&#39;oggetto è costituito da
 >
 
 
-
-### Risoluzione dei diritti di richiesta e accesso {#resolving-request-and-access-rights}
+### Risoluzione dei diritti di richiesta e di accesso {#resolving-request-and-access-rights}
 
 Quando CRX gestisce la richiesta confronta la richiesta di accesso dall&#39;oggetto con l&#39;elenco di controllo accessi sul nodo del repository:
 
@@ -258,7 +256,7 @@ Se un account ne impersona un altro è molto difficile da vedere. I file di regi
 1. Fare clic su **Crea utente**.
 1. Puoi quindi immettere le Proprietà :
 
-   * **** UserIDutilizzato come nome dell&#39;account.
+   * **** UserIDusato come nome dell&#39;account.
    * **** Password necessaria per l&#39;accesso.
    * **Nome principale** per fornire un nome di testo completo.
    * **Percorsi intermedi** che possono essere utilizzati per formare una struttura ad albero.
@@ -278,7 +276,6 @@ Se un account ne impersona un altro è molto difficile da vedere. I file di regi
 >* groups con molti membri
 
 >
-
 
 
 ### Aggiornamento di un account utente {#updating-a-user-account}
@@ -348,7 +345,7 @@ Devi aver effettuato l’accesso all’area di lavoro appropriata, quindi puoi a
 **Proprietà**
 
 * ****
-Nome dell&#39;account di gruppo GroupIDShort.
+Nome dell&#39;account GroupIDShort per l&#39;account del gruppo.
 
 * **Nome principaleNome**
 completo per l&#39;account del gruppo.
@@ -464,11 +461,11 @@ I criteri possono essere selezionati per:
 Verranno mostrate le politiche per questo &quot;percorso attuale&quot;.
 
 * ****
-RepositorySeleziona il controllo dell&#39;accesso a livello di archivio. Ad esempio, quando si imposta il 
+RepositorySeleziona il controllo di accesso a livello di archivio. Ad esempio, quando si imposta il 
 `jcr:namespaceManagement` privilegio, che è rilevante solo per l&#39;archivio, non un nodo.
 
 * ****
-PrincipalUn&#39;entità registrata nell&#39;archivio.
+PrincipaleEntità registrata nell&#39;archivio.
 
    È possibile digitare il nome **Principale** oppure fare clic sull&#39;icona a destra del campo per aprire la finestra di dialogo **Seleziona entità**.
 
@@ -593,7 +590,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
 
 1. Fai clic su **OK** per salvare. Il privilegio sarà ora disponibile per la selezione.
 
-### Aggiunta di una voce del controllo di accesso {#adding-an-access-control-entry}
+### Aggiunta di una voce di controllo di accesso {#adding-an-access-control-entry}
 
 1. Seleziona la risorsa e apri la scheda **Controllo accessi** .
 
@@ -622,7 +619,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
 
 CRX convalida la tua selezione; per un dato entità principale esiste (al massimo) 1 negazione e 1 permette l&#39;ingresso su un dato nodo. L&#39;implementazione cancella sempre le voci ridondanti e si assicura che lo stesso privilegio non sia elencato sia nelle voci allow che deny.
 
-### Ordinamento dei criteri per il controllo degli accessi locali {#ordering-local-access-control-policies}
+### Ordinamento dei criteri di controllo accessi locali {#ordering-local-access-control-policies}
 
 L&#39;ordine nell&#39;elenco indica l&#39;ordine in cui vengono applicati i criteri.
 
@@ -632,13 +629,13 @@ L&#39;ordine nell&#39;elenco indica l&#39;ordine in cui vengono applicati i crit
 
 1. Le modifiche verranno visualizzate sia nelle tabelle relative a **Locale** che in quelle relative a **Criteri di controllo accessi effettivi**.
 
-### Rimozione di un criterio di controllo accessi {#removing-an-access-control-policy}
+### Rimozione di un criterio di controllo degli accessi {#removing-an-access-control-policy}
 
 1. Nella tabella di **Criteri di controllo accessi locali** fare clic sull&#39;icona rossa (-) a destra della voce.
 
 1. La voce verrà rimossa sia dalle tabelle relative a **Locale** che da **Criteri di controllo accessi effettivi**.
 
-### Verifica dei criteri di controllo degli accessi {#testing-an-access-control-policy}
+### Verifica di un criterio di controllo degli accessi {#testing-an-access-control-policy}
 
 1. Dalla barra degli strumenti di CRXDE Lite selezionare **Strumenti**, quindi **Controllo accesso di prova...**.
 
