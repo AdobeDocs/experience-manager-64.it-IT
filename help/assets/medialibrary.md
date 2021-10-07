@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: a3289431adb80162340a1acdbc9b91e0c29e99a0
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -52,15 +52,9 @@ Media Library copre ampiamente i seguenti casi di utilizzo:
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-* Basic metadata properties
-* Tag management
-* Version control
 * Static renditions
-* Projects, tasks, workflow authoring
+* Projects, tasks authoring
 * Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -79,13 +73,22 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;int
 * Annotare le risorse.
 * Aggiungi le risorse alle pagine [!DNL Sites] tramite Content Finder.
 * Utilizzo [!DNL Content Fragments].
+* Utilizza le API REST HTTP e GraphQL per [!DNL Content Fragments] e le risorse multimediali a cui si fa riferimento, con licenza Sites.
+* Integrazione del Marketing Cloud.
+* Personalizza ed espandi l’interfaccia utente per la gestione delle risorse.
+* Accedi all’API di Query Builder per estendere la funzionalità di ricerca.
+* Creare tag statici.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
 >Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza Media Library ti consente di soddisfare solo i casi d’uso elencati utilizzando Media Library. Se non è presente un caso d’uso, non utilizzarlo con una licenza Media Library. In caso di domande, contatta l’Assistenza clienti Adobe.
+
+Non è possibile utilizzare tag avanzati, collegamenti [!DNL Asset], selettore [!DNL Asset], assegnazione tag in blocco, modifica flussi di lavoro risorse senza [!DNL Assets] licenza.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
