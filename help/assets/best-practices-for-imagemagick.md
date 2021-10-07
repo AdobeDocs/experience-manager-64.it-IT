@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Per elaborare file di grandi dimensioni utilizzando ImageMagick, considera requi
 
 >[!NOTE]
 >
->Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
+>Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti di Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
 ## Installa ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ Sono disponibili più versioni di file di installazione ImageMagic per vari sist
 Puoi impostare il passaggio del processo della riga di comando per il tuo caso d’uso specifico. Esegui questi passaggi per generare un’immagine capovolta e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungi un file immagine JPEG a `/content/dam` sul server [!DNL Experience Manager]:
 
 1. Sul server [!DNL Experience Manager], vai alla console Flusso di lavoro (`https://[aem_server]:[Port]/workflow`) e apri il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
-1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]** , apri le miniature **[!UICONTROL EPS (fornite da ImageMagick)]** .
+1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]** , apri le miniature di **[!UICONTROL EPS (fornite da ImageMagick)]** .
 1. Nella scheda **[!UICONTROL Argomenti]**, aggiungi `image/jpeg` all&#39;elenco **[!UICONTROL Tipi di MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)

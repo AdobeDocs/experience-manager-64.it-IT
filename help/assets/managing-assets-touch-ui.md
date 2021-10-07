@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '10078'
 ht-degree: 3%
@@ -41,7 +41,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 ## Caricare le risorse {#uploading-assets}
 
-Puoi caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) dalla cartella locale o da un’unità di rete in [!DNL Experience Manager] Risorse.
+Puoi caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) dalla cartella locale o da un’unità di rete su [!DNL Experience Manager] Risorse.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 |  | Opzioni di modifica delle immagini | È possibile mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta  [Impostazione delle opzioni di modifica delle immagini al momento del caricamento](#setting-image-editing-options-at-upload). |
 |  | Opzioni Postscript | È possibile rasterizzare file di PostScript®, ritagliare file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta  [Impostazione delle opzioni di caricamento PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opzioni Photoshop | È possibile creare modelli da file Adobe® Photoshop®, mantenere i livelli, specificare il nome dei livelli, estrarre il testo e specificare il modo in cui le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in AEM.<br> Consulta  [Impostazione delle opzioni di caricamento di Photoshop](#setting-photoshop-upload-options). |
-|  | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br> Gli eCatalog non sono supportati in AEM. <br> Consulta  [Impostazione delle opzioni di caricamento PDF](#setting-pdf-upload-options). |
+|  | Opzioni di PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br> Gli eCatalog non sono supportati in AEM. <br> Consulta  [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options). |
 |  | Opzioni Illustrator | È possibile rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta  [Impostazione delle opzioni di caricamento PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opzioni eVideo | È possibile transcodificare un file video scegliendo un predefinito per video.<br> Consulta  [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
 |  | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito da utilizzare. Puoi selezionare più di un predefinito. Puoi creare i predefiniti nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Per ulteriori informazioni sulla creazione di predefiniti per set di batch, consulta  [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) set 360 gradi.<br> Consulta  [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
@@ -227,7 +227,7 @@ Quando carichi i file immagine PostScript (EPS) o Illustrator (AI), puoi formatt
 | Risoluzione |  | Determina l&#39;impostazione della risoluzione. Questa impostazione determina quanti pixel vengono visualizzati per pollice nel file. |
 | Spazio colore |  | Selezionare il menu Spazio colore e scegliere tra le seguenti opzioni di spazio colore: |
 |  | Rileva automaticamente | Mantiene lo spazio colore del file. |
-|  | Forza come RGB | Converte nello spazio colore RGB. |
+|  | Forza come RGB | Si converte nello spazio colore di RGB. |
 |  | Forza come CMYK | Si converte nello spazio colore CMYK. |
 |  | Forza come scala di grigi | Converte lo spazio colore in scala di grigi. |
 
@@ -245,17 +245,17 @@ Utilizza le **[!UICONTROL Opzioni di ritaglio]** e **[!UICONTROL Opzioni profilo
 
 | Opzione | Opzione secondaria | Descrizione |
 |---|---|---|
-| Gestisci livelli |  | Racchiude gli eventuali livelli della PSD in singole risorse. I livelli delle risorse rimangono associati alla PSD. È possibile visualizzarli aprendo il file PSD in visualizzazione Dettagli e selezionando il pannello dei livelli. |
+| Gestisci livelli |  | Racchiude gli eventuali livelli di PSD in singole risorse. I livelli delle risorse rimangono associati al PSD. Per visualizzarli, aprite il file PSD in visualizzazione Dettagli e selezionate il pannello dei livelli. |
 | Crea modello |  | Crea un modello dai livelli nel file PSD. |
 | Estrai testo |  | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
 | Estendi livelli a dimensione sfondo |  | Estende le dimensioni dei livelli immagine ritagliati alle dimensioni del livello di sfondo. |
 | Denominazione dei livelli |  | I livelli nel file PSD vengono caricati come immagini separate. |
-|  | Nome livello | Assegna un nome alle immagini dopo i loro nomi di livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un’immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. |
-|  | Photoshop e numero di livelli | Assegna un nome alle immagini dopo i loro numeri di livello nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd si chiama Spring Ad_2 anche se in Photoshop era presente un nome non predefinito. |
-|  | Photoshop e nome livello | Assegna un nome alle immagini dopo il file PSD seguito dal nome del livello o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato Tag prezzo in un file PSD denominato SpringAd è denominato Tag ad_Price di primavera. Un livello con il nome predefinito Layer 2 si chiama Spring Ad_2. |
-| Ancoraggio |  | Specifica come le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine sostitutiva. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando fanno riferimento al modello e utilizzano la sostituzione di parametri, occupano effettivamente lo stesso spazio. Passa a un’impostazione diversa se l’applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
+|  | Nome livello | Assegna un nome alle immagini dopo i relativi nomi di livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un’immagine denominata Tag prezzo . Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. |
+|  | Photoshop e numero di livelli | Assegna un nome alle immagini dopo i relativi numeri di livello nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd si chiama Spring Ad_2 anche se in Photoshop era presente un nome non predefinito. |
+|  | Photoshop e nome livello | Assegna un nome alle immagini dopo il file PSD seguito dal nome del livello o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato Tag prezzo in un file PSD denominato SpringAd è denominato Tag Ad_Price di primavera. Un livello con il nome predefinito Layer 2 si chiama Spring Ad_2. |
+| Ancoraggio |  | Specifica il modo in cui le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine sostitutiva. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando fanno riferimento al modello e utilizzano la sostituzione di parametri, occupano effettivamente lo stesso spazio. Passa a un’impostazione diversa se l’applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
-#### Impostare le opzioni di caricamento PDF {#setting-pdf-upload-options}
+#### Impostare le opzioni di caricamento di PDF {#setting-pdf-upload-options}
 
 Quando carichi un file PDF, puoi formattarlo in vari modi. Ritagliate le pagine, estraete le parole di ricerca, immettete una risoluzione pixel per pollice e scegliete uno spazio colore. I file PDF contengono spesso un margine di taglio, indicatori di ritaglio, segni di registrazione e altri segni della stampante. È possibile ritagliare questi segni dai lati delle pagine durante il caricamento di un file PDF.
 
@@ -267,14 +267,14 @@ Scegli tra le seguenti opzioni:
 
 | Opzione | Opzione secondaria | Descrizione |
 |---|---|---|
-| Elaborazione | Rasterizza | (Impostazione predefinita) Esegue la rimozione delle pagine nel file PDF e converte la grafica vettoriale in immagini bitmap. Scegli questa opzione per creare un eCatalog. |
+| Elaborazione | Rasterizza | (Impostazione predefinita) Esegue l’striping delle pagine nel file PDF e converte la grafica vettoriale in immagini bitmap. Scegli questa opzione per creare un eCatalog. |
 | Estrai | Cerca parole | Estrae le parole dal file PDF in modo che la ricerca nel file possa essere eseguita per parola chiave in un visualizzatore di eCatalog. |
 |  | Collegamenti | Estrae i collegamenti dai file PDF e li converte in mappe immagine utilizzate in un visualizzatore di eCatalog. |
-| Genera automaticamente eCatalog da PDF a più pagine |  | Crea automaticamente un eCatalog dal file PDF. L’eCatalog prende il nome dal file PDF caricato. Questa opzione è disponibile solo se il file PDF viene rasterizzato durante il caricamento. |
+| Genera automaticamente eCatalog da più PDF di pagina |  | Crea automaticamente un eCatalog dal file PDF. L’eCatalog prende il nome dal file PDF caricato. Questa opzione è disponibile solo se il file PDF viene rasterizzato durante il caricamento. |
 | Risoluzione |  | Determina l&#39;impostazione della risoluzione. Questa impostazione determina quanti pixel vengono visualizzati per pollice nel file PDF. Il valore predefinito è 150. |
-| Spazio colore |  | Selezionare il menu Spazio colore e scegliere uno spazio colore per il file PDF. La maggior parte dei file PDF ha sia immagini a colori RGB che CMYK. Lo spazio colore RGB è preferibile per la visualizzazione online. |
+| Spazio colore |  | Selezionare il menu Spazio colore e scegliere uno spazio colore per il file PDF. La maggior parte dei file PDF dispone sia di immagini a colori RGB che CMYK. Lo spazio colore RGB è preferibile per la visualizzazione online. |
 |  | Rileva automaticamente | Mantiene lo spazio colore del file PDF. |
-|  | Converti in RGB | Converte nello spazio colore RGB. |
+|  | Converti in RGB | Si converte nello spazio colore di RGB. |
 |  | Converti in CMYK | Si converte nello spazio colore CMYK. |
 |  | Converti in scala di grigio | Converte lo spazio colore in scala di grigi. |
 
@@ -287,8 +287,8 @@ Puoi transcodificare un file video scegliendo tra diversi predefiniti video.
 | Video adattivo |  | Un singolo predefinito di codifica che funziona con qualsiasi proporzione per creare video da distribuire a dispositivi mobili, tablet e desktop. I video sorgente caricati codificati con questo predefinito sono impostati con un’altezza fissa. Tuttavia, la larghezza viene ridimensionata automaticamente per mantenere le proporzioni del video. <br>Si consiglia di utilizzare la codifica video adattiva. |
 | Predefiniti di codifica singoli | Ordina predefiniti di codifica | Selezionare Nome o Dimensione per ordinare i predefiniti di codifica elencati in Desktop, Mobile e Tablet in base al nome o alla dimensione della risoluzione. |
 |  | Desktop | Crea un file MP4 per fornire un&#39;esperienza video in streaming o progressiva ai computer desktop.Seleziona una o più proporzioni con la dimensione di risoluzione e la velocità dati target desiderati. |
-|  | Mobile | Crea un file MP4 da consegnare su iPhone o dispositivi mobili Android.Seleziona una o più proporzioni con la dimensione di risoluzione e la velocità dati target desiderati. |
-|  | Tablet | Crea un file MP4 per la consegna su dispositivi iPad o tablet Android.Seleziona una o più proporzioni con la dimensione di risoluzione e la velocità dati target desiderati. |
+|  | Mobile | Crea un file MP4 per la distribuzione su dispositivi mobili iPhone o Android.Seleziona una o più proporzioni con la dimensione di risoluzione e la velocità dati target desiderati. |
+|  | Tablet | Crea un file MP4 per la distribuzione su dispositivi tablet iPad o Android. Seleziona una o più proporzioni con la dimensione di risoluzione e la velocità dati target desiderati. |
 
 #### Imposta predefiniti set di batch al caricamento {#setting-batch-set-presets-at-upload}
 
@@ -618,7 +618,7 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
    Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#searching-assets}
 
@@ -634,12 +634,12 @@ Questo perché [!DNL Experience Manager] Assets attende la scadenza di un period
 
 Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta. A seconda del dispositivo, esegui le seguenti azioni per visualizzare le icone delle azioni rapide:
 
-* Dispositivi touch: Toccare e tenere premuto. Ad esempio, su un iPad, puoi toccare e tenere premuto un contenuto per visualizzare le azioni rapide.
+* Dispositivi touch: Toccare e tenere premuto. Ad esempio, in un iPad, puoi toccare e tenere premuto una risorsa per visualizzare le azioni rapide.
 * Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
 
 ### Passa alle risorse e selezionale {#navigating-and-selecting-assets}
 
-Puoi visualizzare, navigare e selezionare le risorse con una qualsiasi delle viste disponibili (scheda, colonna, elenco) utilizzando l’icona **[!UICONTROL Seleziona]**. **** La selezione viene visualizzata come un’azione rapida nella vista a schede.
+Puoi visualizzare, navigare e selezionare le risorse con una qualsiasi delle viste disponibili (scheda, colonna, elenco) utilizzando l’icona **[!UICONTROL Seleziona]**. **** Nella vista a schede, la selezione viene visualizzata come un’azione rapida.
 
 ![select_quick_action](assets/select_quick_action.png)
 
@@ -715,7 +715,7 @@ La **[!UICONTROL Timeline]** consente di visualizzare vari eventi per un element
 
 Nella [console Raccolte](managing-collections-touch-ui.md#navigating-the-collections-console), l’elenco **[!UICONTROL Mostra tutto]** offre opzioni per visualizzare solo i commenti e i flussi di lavoro. Inoltre, la timeline viene visualizzata solo per le raccolte di primo livello elencate nella console. Non viene visualizzato se vi spostate all’interno di una qualsiasi delle raccolte.
 
-**** La timeline contiene diverse  [opzioni specifiche per i frammenti di contenuto](content-fragments-managing.md#timeline-for-content-fragments); questa funzionalità richiede  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
+**** La timeline contiene diverse  [opzioni specifiche per i frammenti](content-fragments-managing.md#timeline-for-content-fragments) di contenuto; questa funzionalità richiede  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o versione successiva.
 
 **Per utilizzare la timeline**:
 
@@ -807,13 +807,13 @@ Puoi aggiungere annotazioni alle risorse video. Durante l&#39;annotazione dei vi
 
 ### Stampa annotazioni {#printing-annotations}
 
-Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme ad annotazioni e rivederla come file PDF per la revisione offline.
+Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme a annotazioni e rivederne lo stato come file PDF per la revisione offline.
 
 È inoltre possibile scegliere di stampare solo le annotazioni o lo stato di revisione.
 
 >[!NOTE]
 >
->È possibile selezionare più annotazioni durante la stampa della risorsa annotata in formato PDF.
+>È possibile selezionare più annotazioni durante la stampa della risorsa annotata come PDF.
 
 Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, l’Adobe consiglia di limitare le annotazioni a 50 parole.
 
@@ -837,13 +837,13 @@ Per stampare le annotazioni e controllare lo stato, tocca l’icona **[!UICONTRO
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. Dalla finestra di dialogo **[!UICONTROL Stampa]**, scegliere la posizione in cui visualizzare le annotazioni o lo stato di revisione sul PDF. Ad esempio, se desideri che le annotazioni o lo stato vengano stampati in alto a destra della pagina contenente l’immagine stampata, utilizza l’impostazione **[!UICONTROL In alto a sinistra]** (impostazione predefinita).
+1. Dalla finestra di dialogo **[!UICONTROL Stampa]**, scegliere la posizione in cui visualizzare le annotazioni o lo stato di revisione in PDF. Ad esempio, se desideri che le annotazioni o lo stato vengano stampati in alto a destra della pagina contenente l’immagine stampata, utilizza l’impostazione **[!UICONTROL In alto a sinistra]** (impostazione predefinita).
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
    È possibile scegliere altre impostazioni a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se desideri che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
-1. Tocca **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, nel PDF generato vengono visualizzate le annotazioni o lo stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **[!UICONTROL In alto a sinistra]**, l’output generato sarà simile al file PDF qui riportato.
+1. Tocca **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, PDF generato visualizza le annotazioni o lo stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **[!UICONTROL In alto a sinistra]**, l’output generato sarà simile al file PDF qui riportato.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -855,7 +855,7 @@ Per stampare le annotazioni e controllare lo stato, tocca l’icona **[!UICONTRO
    >
    >Se la risorsa dispone di risorse secondarie, puoi stampare tutte le risorse secondarie insieme alle relative annotazioni specifiche a livello di pagina.
 
-   Per modificare l&#39;aspetto del file PDF renderizzato, ad esempio il colore, la dimensione e lo stile del font, il colore di sfondo dei commenti e degli stati, aprire la **[!UICONTROL Configurazione PDF di annotazione]** da **[!UICONTROL Gestione configurazione]** e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificare il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del font delle annotazioni, vedere [Annotazione](managing-assets-touch-ui.md#annotating).
+   Per modificare l&#39;aspetto del file PDF renderizzato, ad esempio il colore, la dimensione e lo stile del font, il colore di sfondo dei commenti e degli stati, apri la **[!UICONTROL configurazione di PDF Annotation]** da **[!UICONTROL Configuration Manager]** e modifica le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificare il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del font delle annotazioni, vedere [Annotazione](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -870,7 +870,7 @@ Per stampare le annotazioni e controllare lo stato, tocca l’icona **[!UICONTRO
    * Crea una directory denominata **fonts** all&#39;interno della cartella **[!UICONTROL crx-quickstart]** . **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service recupera automaticamente i font nella posizione  `crx-quickstart/fonts`. È possibile ignorare questo percorso predefinito dall&#39;interno dell&#39;opzione di directory **[!UICONTROL Adobe Server Fonts]** .
    * Crea una nuova cartella per i font nel sistema e archivia i font desiderati nella cartella. Quindi, specifica il percorso completo di tale cartella nell&#39;opzione di directory **[!UICONTROL Font cliente]**.
 
-1. Accedi alla configurazione **[!UICONTROL PDF di annotazione]** dall&#39;URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
+1. Accedi alla configurazione **[!UICONTROL Annotation PDF]** dall&#39;URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
 1. Configura il **[!UICONTROL PDF di annotazione]** con il set corretto di font-family come segue:
 
    * Includi la stringa `<font_family_name_of_custom_font, sans-serif>` all&#39;interno dell&#39;opzione font-family. Ad esempio, se desideri stampare annotazioni in CJK (cinese, giapponese e coreano), includi la stringa `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` nell’opzione font-family. Se si desidera stampare le annotazioni in hindi, scaricare il font appropriato e configurare la famiglia di font come Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
@@ -885,7 +885,7 @@ Di seguito è riportato un esempio di come configurare [!DNL Experience Manager]
    * Noto Sans (per le lingue europee): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * Nessun carattere per una lingua scelta: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Configura il file PDF di annotazione impostando il parametro font-family su `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Questa configurazione è disponibile per impostazione predefinita e funziona per tutte le lingue europee e CJK.
+1. Configura il file PDF dell’annotazione impostando il parametro font-family su `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Questa configurazione è disponibile per impostazione predefinita e funziona per tutte le lingue europee e CJK.
 1. Se la lingua scelta è diversa dalle lingue menzionate al punto 2, aggiungi una voce appropriata (separata da virgole) alla famiglia di font predefinita.
 
 ## Creare il controllo delle versioni delle risorse {#asset-versioning}

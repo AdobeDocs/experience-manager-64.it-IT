@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -151,16 +151,16 @@ obsoleto.
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le tue risorse con [!DNL Experience Cloud] utilizzando una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente chiamato  [!DNL Adobe Marketing Cloud]. | Per eventuali domande, contatta l&#39; [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le tue risorse con [!DNL Experience Cloud] utilizzando una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente chiamato  [!DNL Adobe Marketing Cloud]. | Se hai delle domande, contatta il [Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Activity Map di Analytics | Versione di Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. È ora necessario utilizzare il [plug-in ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/it/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) . |
-| Componenti-Forms | Modulo Captcha (foundation/components/form/captcha) | Utilizza invece il componente ReCaptcha di Google |
+| Componenti-Forms | Modulo Captcha (foundation/components/form/captcha) | Utilizza invece il componente ReCaptcha per Google |
 | Componenti | Presentazione (foundation/components/slideshow) | Nessuna sostituzione |
 | Componenti | Flash (foundation/components/flash) | Nessuna sostituzione |
 | Componenti | Supporto per la riproduzione di file SWF nel componente video (foundation/components/video) | Utilizzare formati video basati su non-flash. |
 | Componenti | Tabella prodotti (commerce/components/product_table) | Nessuna sostituzione |
 | Gestione attività | Gestione attività interfaccia utente classica (/libs/cq/taskmanagement/content/taskmanager.html) | Obsoleto a partire dalla versione 6.0. Utilizza la nuova gestione attività combinata con l&#39;interfaccia utente del flusso di lavoro. |
 | Flusso di lavoro | Interfaccia per le notifiche utilizzata tra le versioni 5.6-6.2 (/libs/cq/workflow/content/notifications.html) | Casella in entrata per i flussi di lavoro /aem/inbox |
-| Forms | L’Export PDF al formato PDF/E-1 che utilizza PDF Generator è stato rimosso. | PDF Generator continua a supportare l’esportazione di PDF nei formati PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
+| Forms | È stato rimosso l’Export PDF al formato PDF/E-1 che utilizza PDF Generator. | PDF Generator continua a supportare l’esportazione di PDF nei formati PDF/A-1a/b, PDF/A-2a/b e PDF/A-3a/b. |
 | Forms | Il supporto per le immagini nei frammenti di documento è stato rimosso. | Le comunicazioni interattive consentono di utilizzare direttamente le immagini nei canali web e di stampa. |
 | Forms | Aggiornamento fuori sede | Il supporto per eseguire l&#39;aggiornamento locale non è disponibile |
 | Forms | Sidegrade per le migrazioni da TarMK a DocumentMK | Puoi esportare i dati dal sistema precedente e quindi importarli in un sistema di configurazione di recente. Per istruzioni dettagliate, consulta la documentazione relativa all’aggiornamento di AEM Forms su JEE |
@@ -170,7 +170,7 @@ obsoleto.
 | Forms | È stato rimosso AEM Forms sulla pagina di destinazione specifica di JEE. | AEM Forms sulla pagina di destinazione JEE viene sostituito con AEM pagina di destinazione (/aem/start.html) |
 | Forms | Supporto rimosso per Captcha predefinito | Utilizza il servizio reCAPTCHA di Google. |
 | Forms | È stato rimosso il supporto per i campi Flash in AEM Designer. AEM Designer non consente di modificare i campi Flash utilizzati in un modulo. | È possibile utilizzare AEM Designer rilasciato per una versione precedente per modificare tali moduli. |
-| Communities | Il supporto per la verifica Captcha è stato rimosso. | Utilizza l’integrazione captcha personalizzata (ad esempio reCAPTCHA di Google) per la verifica. |
+| Communities | Il supporto per la verifica Captcha è stato rimosso. | Utilizza l’integrazione captcha personalizzata (ad esempio reCAPTCHA by Google) per la verifica. |
 
 ## Pre-annuncio per rilascio successivo {#pre-announcement-for-next-release}
 
@@ -178,5 +178,5 @@ La tabella seguente fornisce un elenco delle modifiche per le versioni future, c
 
 | Area | Funzione obsoleta | Annuncio |
 |---|---|---|
-| Supporto browser | Microsoft Internet Explorer | AEM 6.4 è l&#39;ultima versione che supporta Microsoft Internet Explorer 11. |
+| Supporto del browser | Microsoft Internet Explorer | AEM 6.4 è l’ultima versione che supporta Microsoft Internet Explorer 11. |
 | Foundation | Framework interfaccia utente | Nel 2019 Adobe dichiarerà obsoleti i componenti Coral UI 2 . AEM 6.4 è completamente basato su Coral UI 3 (introdotto con AEM 6.2). Adobe consiglia ai suoi clienti e partner che hanno creato interfacce utente personalizzate con Coral 2 di eseguire il refactoring di queste interfacce con Coral 3. Adobe offre uno strumento per convertire le finestre di dialogo Coral 2 in Coral 3 - [Ulteriori informazioni.](/help/sites-developing/modernization-tools.md) |

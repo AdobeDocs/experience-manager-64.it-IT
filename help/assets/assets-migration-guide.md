@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 8%
@@ -79,7 +79,7 @@ Quando le attività non vengono trasmesse in rete, le prestazioni complessive mi
 
 ### Rendering dei processi {#process-renditions}
 
-Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro Risorsa di aggiornamento DAM per estrarre i metadati e generare rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro Risorsa di aggiornamento DAM per adattarlo alle tue esigenze. Alcuni passaggi nel flusso di lavoro predefinito potrebbero non essere necessari, ad esempio la generazione di PTIFF Dynamic Media Classic o l’integrazione con il server InDesign.
+Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro Risorsa di aggiornamento DAM per estrarre i metadati e generare rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro Risorsa di aggiornamento DAM per adattarlo alle tue esigenze. Alcuni passaggi nel flusso di lavoro predefinito potrebbero non essere necessari, ad esempio la generazione di Dynamic Media Classic PTIFF o l’integrazione con il server InDesign.
 
 Dopo aver configurato il flusso di lavoro in base alle tue esigenze, hai due opzioni per eseguirlo:
 

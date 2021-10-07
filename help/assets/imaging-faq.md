@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Gli esempi di risorse immagine seguenti illustrano l’ottimizzazione Smart Imag
 | [Immagine 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![immagine4](assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Media = 51% |
 
-Simile a quanto sopra, Adobe ha anche eseguito un test con 7009 URL dai siti dei clienti live. Sono stati in grado di raggiungere una media del 38% in più di ottimizzazione delle dimensioni del file per JPEG. Per PNG con formato WebP, sono stati in grado di raggiungere una media di 31% ulteriore ottimizzazione delle dimensioni del file. Questo tipo di ottimizzazione è possibile grazie alla capacità di Smart imaging.
+Simile a quanto sopra, Adobe ha anche eseguito un test con 7009 URL dai siti dei clienti live. Sono stati in grado di ottenere in media un ulteriore ottimizzazione del 38% delle dimensioni dei file per JPEG. Per PNG con formato WebP, sono stati in grado di raggiungere una media di 31% ulteriore ottimizzazione delle dimensioni del file. Questo tipo di ottimizzazione è possibile grazie alla capacità di Smart imaging.
 
 Sul web mobile, le sfide sono aggravate da due fattori:
 
@@ -91,7 +91,7 @@ Le immagini costituiscono la maggior parte del tempo di caricamento di una pagin
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
-* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’imaging avanzato più recente.
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’immagine avanzata più recente.
 * Distribuisce immediatamente i contenuti ottimizzati (in fase di esecuzione).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (qlt) specificata nella richiesta di immagine.
 * L&#39;imaging avanzato può essere disattivato utilizzando il parametro URL &quot;bfc&quot;.
@@ -118,14 +118,14 @@ Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controll
    * Chrome
    * Firefox
    * Microsoft® Edge
-   * Safari (su iOS, macOS, iPadOS), supporto per la versione del browser e del sistema operativo WebP
+   * Safari (in iOS, macOS, iPadOS), supporto del browser e della versione del sistema operativo WebP
    * Android™
    * Opera
 * Supporto di browser legacy per i seguenti elementi:
 
    | Browser | Versione browser/sistema operativo | Formato |
    | --- | --- | --- |
-   | Safari | Precedente a iOS/iPad 14.0 o macOS BigSur | JPEG2000 |
+   | Safari | Precedente ad iOS/iPad 14.0 o macOS BigSur | JPEG2000 |
    | Bordo | Anteriore a 18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * Per i browser che non supportano questi formati, viene distribuito il formato immagine richiesto originariamente.
@@ -199,7 +199,7 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
    1. Nome contatto principale, e-mail, telefono.
    1. Tutti i domini da abilitare per l’imaging intelligente (ovvero i`mages.company.com` o `mycompany.scene7.com`).
 
-      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
+      Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
@@ -207,14 +207,14 @@ Per impostazione predefinita, Smart imaging DPR e l’ottimizzazione della rete 
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
    1. Verifica di utilizzare un dominio dedicato come `images.company.com` o `mycompany.scene7.com` e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
+      Per trovare i tuoi domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
       Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
-      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico Dynamic Media Classic, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
+      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio Dynamic Media Classic generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indica se è anche necessario utilizzare l’imaging intelligente per utilizzare HTTP/2.
 
-1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa del cliente Smart imaging in base all’ordine in cui sono state inviate le richieste.
+1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa dei clienti di Smart imaging in base all’ordine in cui sono state inviate le richieste.
 1. Quando Adobe è pronto per gestire la richiesta, è necessario contattare il supporto per coordinare e impostare una data di destinazione.
 1. **Facoltativo**: Facoltativamente, puoi testare l’imaging intelligente in Staging prima che Adobe introduca la nuova funzione in produzione.
 1. Dopo il completamento dell&#39;attività, riceverai una notifica tramite supporto.
@@ -272,7 +272,7 @@ Attualmente, è possibile abilitare o disabilitare l&#39;imaging avanzato. Nessu
 
 L&#39;attuale Smart imaging non è in grado di effettuare il provisioning.
 
-## A volte, un&#39;immagine JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché? (#jpeg-webp)
+## A volte, un&#39;immagine di JPEG viene restituita a Chrome invece di un&#39;immagine WebP. Perché? (#jpeg-webp)
 
 L’imaging intelligente determina se la conversione è utile o meno. Restituisce la nuova immagine solo se la conversione si traduce in una dimensione file più piccola con qualità comparabile.
 

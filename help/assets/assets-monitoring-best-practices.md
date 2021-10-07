@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 1%
@@ -195,5 +195,5 @@ Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di riso
 * Utilizza la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, riduci più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o un elevato numero di consumatori di risorse specifiche.
 * Indagare i punti di uscita dalla rete client e i punti di ingresso alla rete di istanze [!DNL Experience Manager], incluso il dispatcher. Spesso si tratta di aree a collo di bottiglia. Per ulteriori informazioni, consulta [Considerazioni sulla rete Assets](assets-network-considerations.md).
-* Aggiorna il server [!DNL Experience Manager]. È possibile che le dimensioni dell&#39;istanza [!DNL Experience Manager] siano insufficienti. L’Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni inferiori.
+* Aggiorna il server [!DNL Experience Manager]. È possibile che le dimensioni dell&#39;istanza [!DNL Experience Manager] siano insufficienti. Ad Adobe, l’Assistenza clienti può aiutarti a identificare se il server è di dimensioni inferiori.
 * Esamina i file `access.log` e `error.log` per verificare la presenza di voci nel momento in cui si è verificato un errore. Cerca pattern che possano indicare anomalie nel codice personalizzato. Aggiungili all’elenco degli eventi monitorati.

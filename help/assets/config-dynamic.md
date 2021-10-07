@@ -1,19 +1,19 @@
 ---
 title: Configurazione di Dynamic Media - Modalità ibrida
-seo-title: Configurazione di Dynamic Media - Modalità ibrida
+seo-title: Configuring Dynamic Media - Hybrid mode
 description: Scopri come configurare Dynamic Media - Modalità ibrida.
-seo-description: Scopri come configurare Dynamic Media - Modalità ibrida.
+seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
-feature: Configurazione,Modalità ibrida
+feature: Configuration,Hybrid Mode
 role: Admin,User,Developer
-source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '7796'
-ht-degree: 1%
+source-wordcount: '7780'
+ht-degree: 2%
 
 ---
 
@@ -141,7 +141,7 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
 
 Attivando Dynamic Media, le funzioni per i file multimediali dinamici saranno disponibili nell’interfaccia utente e ogni risorsa immagine caricata riceverà un rendering `cqdam.pyramid.tiff` utilizzato per la distribuzione rapida di rappresentazioni dinamiche delle immagini. Tali PTIFF presentano vantaggi significativi, tra cui (1) la possibilità di gestire una sola immagine master e generare al volo rappresentazioni infinite senza ulteriore spazio di archiviazione e (2) la possibilità di utilizzare visualizzazioni interattive quali zoom, pan, spin e così via.
 
-Se desideri utilizzare Dynamic Media Classic in AEM, non devi abilitare Dynamic Media a meno che tu non utilizzi un [scenario specifico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media è disattivato a meno che non si attivi Dynamic Media in modalità runmode.
+Se desideri utilizzare Dynamic Media Classic in AEM, non devi abilitare Dynamic Media a meno che non utilizzi uno [scenario specifico](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media è disattivato a meno che non si attivi Dynamic Media in modalità runmode.
 
 Per abilitare i file multimediali dinamici, è necessario attivare la modalità di esecuzione dei file multimediali dinamici dalla riga di comando o dal nome del file quickstart.
 
@@ -254,7 +254,7 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
 
 **Per impostare l’autenticazione**:
 
-1. Contatta l’Assistenza clienti per conoscere il tuo file KeyStore e la tua password, se non lo hai già. Fa parte del provisioning e associa le chiavi al tuo account.
+1. Se non lo hai già fatto, contatta l&#39;Assistenza clienti per il tuo file KeyStore e la relativa password. Fa parte del provisioning e associa le chiavi al tuo account.
 1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Protezione > Utenti]**.
 1. Nella pagina Gestione utente , individua l&#39;utente **[!UICONTROL dynamic-media-replication]** , quindi tocca per aprire.
 
@@ -275,7 +275,7 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
 
    * Nel campo **[!UICONTROL Nuovo alias]**, immetti il nome di un alias che utilizzerai successivamente nella configurazione di replica; ad esempio, **replica**.
    * Tocca **[!UICONTROL File KeyStore]**. Passa al file KeyStore fornito per Adobe, selezionalo, quindi tocca **[!UICONTROL Apri]**.
-   * Nel campo **[!UICONTROL Password file KeyStore]** , immetti la password del file KeyStore. Si tratta di _not_ la password KeyStore che hai creato nel passaggio 5, ma è l&#39;Adobe di password del file KeyStore fornito nel messaggio e-mail di benvenuto che ti è stato inviato durante il provisioning. Se non hai ricevuto una password del file KeyStore, contatta l’Assistenza clienti Adobe.
+   * Nel campo **[!UICONTROL Password file KeyStore]** , immetti la password del file KeyStore. Si tratta di _not_ la password KeyStore che hai creato nel passaggio 5, ma è l&#39;Adobe di password del file KeyStore fornito nel messaggio e-mail di benvenuto che ti è stato inviato durante il provisioning. Se non hai ricevuto una password del file KeyStore, contatta l’Assistenza clienti di Adobe.
    * Nel campo **[!UICONTROL Password chiave privata]** , immetti la password della chiave privata (potrebbe essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto una password di chiave privata, contatta l’Assistenza clienti di Adobe.
    * Nel campo **[!UICONTROL Alias chiave privata]**, immettere l&#39;alias della chiave privata. Esempio, `companyname-alias`. Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti di Adobe.
 
@@ -294,7 +294,7 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
 
    * **[!UICONTROL Abilitato]** : seleziona questa casella di controllo per abilitare l’agente di replica.
    * **[!UICONTROL Regione]** : imposta l&#39;area appropriata: Nord America, Europa o Asia
-   * **[!UICONTROL ID tenant]** : questo valore è il nome della società/tenant che esegue la pubblicazione nel servizio di replica. Questo valore è l’ID tenant fornito in Adobe nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto questa richiesta, contatta l’Assistenza clienti Adobe.
+   * **[!UICONTROL ID tenant]** : questo valore è il nome della società/tenant che esegue la pubblicazione nel servizio di replica. Questo valore è l’ID tenant fornito in Adobe nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto questa richiesta, contatta l’Assistenza clienti di Adobe.
    * **[!UICONTROL Alias]**  archivio chiavi: questo valore è lo stesso del valore** Nuovo alias** impostato durante la generazione della chiave in  [Impostazione dell&#39;autenticazione](#setting-up-authentication); ad esempio,  `replication`. (Vedere il passaggio 7 in [Configurazione dell&#39;autenticazione](#setting-up-authentication).)
    * **[!UICONTROL Password archivio chiavi]** : password KeyStore creata quando hai toccato  **[!UICONTROL Create KeyStore]**. Adobe non fornisce questa password. Vedi il passaggio 5 di [Configurazione dell&#39;autenticazione](#setting-up-authentication).
 
@@ -680,10 +680,10 @@ Se utilizzi Dynamic Media per 1) imaging in produzione _o_ 2) imaging e video, p
    <td>Integrazione Dynamic Media Classic</td> 
    <td><p>filter-images</p> <p>set di filtri</p> <p>filter-video</p> </td> 
    <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>application/</strong> e termina con <strong>set</strong>.</p> <p>Inizia con <strong>video/</strong></p> </td> 
-   <td><p>Puoi configurare l’URI di trasporto in modo che punti al server di pubblicazione AEM invece dell’URL del servizio Adobe Dynamic Media Cloud Replication Service. L’impostazione di questo filtro consentirà a Dynamic Media Classic di distribuire le risorse invece dell’istanza di pubblicazione AEM.</p> <p>I filtri-immagine, i "set-filtri" e i "filtri-video" preconfigurati:</p> 
+   <td><p>Puoi configurare l’URI di trasporto in modo che punti al server di pubblicazione AEM invece dell’URL del servizio Adobe Dynamic Media Cloud Replication Service. L’impostazione di questo filtro consentirà a Dynamic Media Classic di consegnare le risorse invece dell’istanza di pubblicazione AEM.</p> <p>I filtri-immagine, i "set-filtri" e i "filtri-video" preconfigurati:</p> 
     <ul> 
-     <li>Includi immagini PTIFF, rappresentazioni video proxy e metadati per la replica. Tuttavia, poiché non esistono nel JCR-per coloro che eseguono AEM - integrazione Dynamic Media Classic - non fa nulla.</li> 
-     <li>Escludere dalla replica l'immagine originale, le rappresentazioni statiche dell'immagine, il video originale e le rappresentazioni statiche delle miniature. Al contrario, Dynamic Media Classic fornirà risorse immagine e video.</li> 
+     <li>Includi immagini PTIFF, rappresentazioni video proxy e metadati per la replica. Tuttavia, poiché non esistono nel JCR-per coloro che eseguono AEM - l'integrazione Dynamic Media Classic-non fa nulla.</li> 
+     <li>Escludere dalla replica l'immagine originale, le rappresentazioni statiche dell'immagine, il video originale e le rappresentazioni statiche delle miniature. Al contrario, Dynamic Media Classic fornirà risorse di immagini e video.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -801,7 +801,7 @@ La configurazione di Dynamic Media Image Server comporta la modifica del bundle 
 >[!NOTE]
 Dynamic Media funziona preconfigurato [dopo che è abilitato](#enabling-dynamic-media). Tuttavia, è possibile scegliere di perfezionare l&#39;installazione configurando Dynamic Media Image Server per soddisfare determinate specifiche o requisiti.
 
-**Prerequisito**:  __ Prima di configurare Dynamic Media Image Server, assicurati che la VM di Windows includa un&#39;installazione delle librerie Microsoft Visual C++. Le librerie sono necessarie per eseguire Dynamic Media Image Server. È possibile [scaricare il pacchetto ridistribuibile Microsoft Visual C++ 2010 (x64) qui](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**Prerequisito**:  __ Prima di configurare Dynamic Media Image Server, assicurati che la VM di Windows includa un&#39;installazione delle librerie di Microsoft Visual C++. Le librerie sono necessarie per eseguire Dynamic Media Image Server. È possibile [scaricare il pacchetto ridistribuibile di Microsoft Visual C++ 2010 (x64) qui](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 **Per configurare le impostazioni** di Dynamic Media Image Server:
 
@@ -875,7 +875,7 @@ Dynamic Media funziona preconfigurato [dopo che è abilitato](#enabling-dynamic-
 
 ### Impostazioni Manifest predefinite {#default-manifest-settings}
 
-Il manifesto predefinito ti consente di configurare i valori predefiniti utilizzati per generare le risposte di Dynamic Media Delivery. È possibile ottimizzare la qualità (qualità JPEG, risoluzione, modalità di ricampionamento), la memorizzazione in cache (scadenza) e impedire il rendering di immagini troppo grandi (valori predefiniti, defaultthumbpix, maxpix).
+Il manifesto predefinito ti consente di configurare i valori predefiniti utilizzati per generare le risposte di Dynamic Media Delivery. È possibile ottimizzare la qualità (qualità JPEG, risoluzione, modalità di ricampionamento), la memorizzazione in cache (scadenza) ed evitare il rendering di immagini troppo grandi (valori predefiniti, defaultpix, defaultthumbpix, maxpix).
 
 La posizione della configurazione del manifesto predefinito viene presa dal valore predefinito **[!UICONTROL Directory principale del catalogo]** del bundle **[!UICONTROL Adobe CQ Scene7 PlatformServer]**. Per impostazione predefinita questo valore si trova nel seguente percorso all&#39;interno di **[!UICONTROL Strumenti > Generale > CRXDE Lite]**:
 
@@ -903,7 +903,7 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>Colore di sfondo predefinito. Valore RGB utilizzato per compilare un'area dell'immagine di risposta che non contiene dati immagine effettivi.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> nell'API Image Serving.</p> </td> 
+   <td><p>Colore di sfondo predefinito. Valore RGB utilizzato per compilare un'area di un'immagine di risposta che non contiene dati immagine effettivi.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> nell'API Image Serving.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultpix</td> 
@@ -918,12 +918,12 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
   <tr> 
    <td>scadenza</td> 
    <td>36000000</td> 
-   <td><p>Tempo predefinito della cache del client per la durata. Fornisce un intervallo di scadenza predefinito nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Expiration.</p> <p>Numero reale, 0 o superiore. Numero di millisecondi fino alla scadenza dalla generazione dei dati di risposta. Imposta su 0 per far scadere sempre l'immagine di risposta immediatamente, il che disabilita in modo efficace il caching del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se una nuova immagine viene pubblicata, occorrono 10 ore perché la vecchia immagine lasci la cache dell’utente. Contatta l’Assistenza clienti se hai bisogno di cancellare la cache prima.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Scadenza</a> nell'API di Image Server.</p> </td> 
+   <td><p>Tempo predefinito della cache del client per la durata. Fornisce un intervallo di scadenza predefinito nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Expiration.</p> <p>Numero reale, 0 o superiore. Numero di millisecondi fino alla scadenza dalla generazione dei dati di risposta. Imposta su 0 per far scadere sempre l'immagine di risposta immediatamente, il che disabilita in modo efficace il caching del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se una nuova immagine viene pubblicata, occorrono 10 ore perché la vecchia immagine lasci la cache dell’utente. Contatta il supporto clienti se hai bisogno di cancellare la cache prima.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Scadenza</a> nell'API di Image Server.</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>Attributi di codifica JPEG predefiniti. Specifica gli attributi predefiniti per le immagini di risposta JPEG.</p> <p>Numero intero e flag, separati da una virgola. Il primo valore è compreso nell'intervallo 1.100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale, o 1 per disabilitare il campionamento al ribasso della cromaticità RGB solitamente utilizzato dagli encoder JPEG.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> nell'API Image Server.</p> </td> 
+   <td><p>Attributi di codifica predefiniti di JPEG. Specifica gli attributi predefiniti per le immagini di risposta di JPEG.</p> <p>Numero intero e flag, separati da una virgola. Il primo valore è compreso nell'intervallo 1.100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale o 1 per disabilitare il campionamento al ribasso della cromaticità RGB solitamente utilizzato dagli encoder JPEG.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> nell'API Image Server.</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
@@ -952,11 +952,11 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
 
 La gestione del colore per gli elementi multimediali dinamici consente di colorare le risorse corrette per la visualizzazione dell’anteprima.
 
-Con la correzione del colore, le risorse acquisite mantengono lo spazio colore (RGB, CMYK, Grigio) e il profilo colore incorporato nella rappresentazione TIFF piramidale generata. Quando si richiede un rendering dinamico, il colore dell&#39;immagine viene corretto nello spazio colore di destinazione. Puoi configurare il profilo del colore di output nelle impostazioni di pubblicazione di contenuti multimediali dinamici in JCR.
+Con la correzione del colore, le risorse acquisite mantengono lo spazio colore (RGB, CMYK, Grigio) e il profilo colore incorporato nel rendering generato di TIFF a piramide. Quando si richiede un rendering dinamico, il colore dell&#39;immagine viene corretto nello spazio colore di destinazione. Puoi configurare il profilo del colore di output nelle impostazioni di pubblicazione di contenuti multimediali dinamici in JCR.
 
 La gestione del colore in Adobe utilizza i profili ICC, un formato definito dall’International Color Consortium (ICC).
 
-È possibile configurare la gestione del colore per gli elementi multimediali dinamici e configurare i predefiniti per immagini utilizzando l’output CMYK, RGB o Grigio. Consulta [Configurazione dei predefiniti per immagini](managing-image-presets.md).
+È possibile configurare la gestione del colore per gli elementi multimediali dinamici e configurare i predefiniti per immagini utilizzando CMYK, RGB o Grigio. Consulta [Configurazione dei predefiniti per immagini](managing-image-presets.md).
 
 I casi d&#39;uso avanzati possono utilizzare un modificatore di configurazione manuale **[!UICONTROL icc=]** per selezionare esplicitamente un profilo colore di output:
 
@@ -965,7 +965,7 @@ I casi d&#39;uso avanzati possono utilizzare un modificatore di configurazione m
 * **[!UICONTROL iccEmbed]**  - Profilo colore  [da incorporare.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Il set standard di profili di colore di Adobe è disponibile solo se è installato [Feature Pack 12445 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Tutti i pacchetti di funzioni e i service pack sono disponibili in [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il Feature Pack 12445 fornisce i profili di colore Adobe.
+Il set standard di profili di colore di Adobe è disponibile solo se è installato [Feature Pack 12445 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Tutti i pacchetti di funzioni e i service pack sono disponibili in [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). Il Feature Pack 12445 fornisce i profili di colore Adobe.
 
 ### Installazione del feature pack 12445 {#installing-feature-pack}
 
@@ -981,7 +981,7 @@ Il set standard di profili di colore di Adobe è disponibile solo se è installa
 
 ### Configurazione dei profili di colore predefiniti {#configuring-the-default-color-profiles}
 
-Dopo aver installato il feature pack, è necessario configurare i profili di colore predefiniti appropriati per abilitare la correzione del colore quando si richiedono dati immagine RGB o CMYK.
+Dopo aver installato il feature pack, è necessario configurare i profili di colore predefiniti appropriati per abilitare la correzione del colore durante la richiesta di dati immagine RGB o CMYK.
 
 **Per configurare i profili** colore predefiniti:
 
@@ -1011,7 +1011,7 @@ Dopo aver installato il feature pack, è necessario configurare i profili di col
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td> 
       <td>Stringa</td> 
       <td>&lt;empty&gt;</td> 
-      <td>Nome del profilo colore RGB predefinito.</td> 
+      <td>Nome del profilo colore predefinito di RGB.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td> 
@@ -1091,7 +1091,7 @@ Dopo aver installato il feature pack, è necessario configurare i profili di col
       <tr> 
       <td>CIERGB</td> 
       <td>RGB</td> 
-      <td>CIE RGB</td> 
+      <td>RGB CIE</td> 
       </tr> 
       <tr> 
       <td>Fogra27 rivestito</td> 
@@ -1111,7 +1111,7 @@ Dopo aver installato il feature pack, è necessario configurare i profili di col
       <tr> 
       <td>ColorMatchRGB</td> 
       <td>RGB</td> 
-      <td>ColorMatch RGB</td> 
+      <td>RGB ColorMatch</td> 
       </tr> 
       <tr> 
       <td>EuropaISOCoated</td> 
@@ -1236,7 +1236,7 @@ Dopo aver installato il feature pack, è necessario configurare i profili di col
       <tr> 
       <td>WideGamutRGB</td> 
       <td>RGB</td> 
-      <td>Wide Gamut RGB</td> 
+      <td>RGB Wide Gamut</td> 
       </tr> 
     </tbody> 
     </table>
@@ -1246,9 +1246,9 @@ Dopo aver installato il feature pack, è necessario configurare i profili di col
 Ad esempio, puoi impostare **[!UICONTROL iccprofilergb]** su `sRGB` e **[!UICONTROL iccprofilecmyk]** su `WebCoated`. In questo modo si effettua quanto segue:
 
 * Abilita la correzione del colore per le immagini RGB e CMYK.
-* Le immagini RGB che non hanno un profilo colore sono considerate nello spazio colore `sRGB`.
+* Le immagini di RGB prive di un profilo colore sono considerate nello spazio colore `sRGB`.
 * Le immagini CMYK prive di un profilo colore sono considerate nello spazio colore `WebCoated`.
-* Rendering dinamici che restituiscono l’output RGB, restituiscilo nello spazio colore `sRGB`.
+* Rendering dinamici che restituiscono l’output RGB, restituiscilo nello spazio colore `sRGB` .
 * Rendering dinamici che restituiscono l’output CMYK, restituiscilo nello spazio colore `WebCoated` .
 
 ## Distribuzione delle risorse {#delivering-assets}

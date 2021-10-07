@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 41%
@@ -37,7 +37,7 @@ Le informazioni fornite si basano sul presupposto che chiunque legga questa Guid
 
 * Installazione, configurazione e amministrazione dei pacchetti Adobe Experience Manager e AEM
 
-* Utilizzo di sistemi operativi Linux e Microsoft Windows
+* Utilizzo dei sistemi operativi Windows Linux e Microsoft
 
 ## Prerequisiti {#prerequisites}
 
@@ -67,14 +67,14 @@ Per istruzioni dettagliate, vedi
 
 * [Note sulla versione di AEM 6.4 Service Pack](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Se non riesci a trovare l&#39;ultimo pacchetto AEM o Service Pack, contatta l&#39;** assistenza clienti.
+**Se non riesci a trovare l&#39;ultimo pacchetto AEM o Service Pack, contatta l&#39;** Assistenza clienti.
 
 ## Creare la configurazione {#configure-new-integration-64}
 
 Esegui i seguenti passaggi nella sequenza elencata se stai configurando AEM Assets con Brand Portal per la prima volta:
 
 1. [Recuperare il certificato pubblico](#public-certificate)
-1. [ [!DNL Adobe I/O] Creare l’integrazione](#createnewintegration)
+1. [ [!DNL Adobe I/O] Integrazione creativa](#createnewintegration)
 1. [Creare la configurazione dell’account IMS](#create-ims-account-configuration)
 1. [Configurare il servizio cloud](#configure-the-cloud-service)
 1. [Verificare la configurazione](#test-integration)

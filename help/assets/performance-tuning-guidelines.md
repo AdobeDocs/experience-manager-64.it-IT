@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -166,7 +166,7 @@ A partire da [!DNL Experience Manager] 6.2 e con un pacchetto di funzioni per [!
 
 ### Configurazione risorsa di aggiornamento DAM {#dam-update-asset-configuration}
 
-Il flusso di lavoro Aggiorna risorsa DAM contiene una suite completa di passaggi configurati per attività quali la generazione di PTIFF Dynamic Media Classic e l’integrazione con InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro Aggiorna risorsa DAM e di rimuovere eventuali passaggi superflui. In questo caso, aggiorna i moduli di avvio per DAM Update Asset in modo che faccia riferimento al nuovo modello.
+Il flusso di lavoro Risorsa di aggiornamento DAM contiene una suite completa di passaggi configurati per attività quali la generazione PTIFF di Dynamic Media Classic e l’integrazione con InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro Aggiorna risorsa DAM e di rimuovere eventuali passaggi superflui. In questo caso, aggiorna i moduli di avvio per DAM Update Asset in modo che faccia riferimento al nuovo modello.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 >
 >I file ImageMagick `policy.xml` e `configure.xml` si trovano in `/usr/lib64/ImageMagick-*/config/` invece di `/etc/ImageMagick/`. Per informazioni sulle posizioni dei file di configurazione, consulta la [documentazione ImageMagick](https://www.imagemagick.org/script/resources.php) .
 
-Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
+Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti di Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. L&#39;Experience Manager potrebbe non elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
 <!-- 
 
@@ -365,7 +365,7 @@ Aggiorna le configurazioni dell&#39;indice per migliorare il tempo di reindicizz
 
 Disattiva estrazione testo Lucene:
 
-Se gli utenti non devono essere in grado di cercare il contenuto delle risorse, ad esempio, cercando il testo contenuto nei documenti PDF, puoi migliorare le prestazioni dell’indice disattivando questa funzione.
+Se gli utenti non devono essere in grado di cercare il contenuto delle risorse, ad esempio ricercando il testo contenuto nei documenti di PDF, puoi migliorare le prestazioni dell’indice disattivando questa funzione.
 
 1. Vai al gestore dei pacchetti [!DNL Experience Manager] /crx/packmgr/index.jsp
 1. Carica e installa il pacchetto qui sotto
@@ -418,6 +418,6 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’u
 * Rimuovi i passaggi superflui dal flusso di lavoro Risorsa di aggiornamento DAM .
 * Configura la pulizia del flusso di lavoro e delle versioni.
 * Ottimizza la configurazione dell&#39;indice Lucene.
-* Ottimizza gli indici con i service pack e gli hotfix più recenti. Consulta l’Assistenza clienti di Adobe per eventuali ottimizzazioni aggiuntive dell’indice disponibili.
+* Ottimizza gli indici con i service pack e gli hotfix più recenti. Consulta Adobe Customer Support per eventuali ottimizzazioni aggiuntive dell&#39;indice disponibili.
 * Utilizza `guessTotal` per ottimizzare le prestazioni della query.
 * Se configuri [!DNL Experience Manager] per rilevare i tipi di file dal contenuto dei file (configurando [!UICONTROL Day CQ DAM Mime Type Service] nella [!UICONTROL [!DNL Experience Manager] Web Console]), carica molti file in blocco nelle ore non di picco, poiché l&#39;operazione richiede un uso intensivo di risorse.

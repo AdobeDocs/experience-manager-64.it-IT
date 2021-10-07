@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 3%
@@ -63,7 +63,7 @@ Per tutti gli aggiornamenti, con o senza il pacchetto di compatibilità, puoi co
 
 ## (Facoltativo) Installazione del feature pack 18912 per la migrazione di massa delle risorse {#installing-feature-pack}
 
-Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare le risorse da Dynamic Media - modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7 in Experience Manager. È disponibile da Adobe Professional Services.
+Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare, ad Experience Manager, le risorse da Dynamic Media - Modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7. È disponibile da Adobe Professional Services.
 
 Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per la migrazione di massa delle risorse](bulk-ingest-migrate.md) .
 
@@ -159,11 +159,11 @@ La schermata Image Server stabilisce le impostazioni predefinite per la distribu
 
 #### Configurazione delle impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
 
-Per aprire la pagina [!UICONTROL Impostazioni generali applicazione], nella barra di navigazione globale di Dynamic Media Classic, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
+Per aprire la pagina [!UICONTROL Impostazioni generali dell&#39;applicazione], nella barra di navigazione globale di Dynamic Media Classic, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione dell&#39;applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
 **[!UICONTROL Server]**  - Al momento del provisioning dell’account, Dynamic Media fornisce automaticamente i server assegnati alla tua azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account. Non modificare nessuno dei nomi dei server, a meno che non venga esplicitamente richiesto dal supporto Experience Manager.
 
-**[!UICONTROL Sovrascrivi immagini]** : Dynamic Media non consente a due file di avere lo stesso nome. L&#39;ID URL di ogni elemento (il nome del file meno l&#39;estensione) deve essere univoco. Queste opzioni specificano come vengono caricate le risorse sostitutive: se sostituiscono l&#39;originale o diventano duplicati. Le risorse duplicate vengono rinominate con un &quot;-1&quot; (ad esempio, chair.tif viene rinominato chair-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione di nome file diversa dall’originale (come JPG, TIF o PNG).
+**[!UICONTROL Sovrascrivi immagini]** : Dynamic Media non consente a due file di avere lo stesso nome. L&#39;ID URL di ogni elemento (il nome del file meno l&#39;estensione) deve essere univoco. Queste opzioni specificano come vengono caricate le risorse sostitutive: se sostituiscono l&#39;originale o diventano duplicati. Le risorse duplicate vengono rinominate con un &quot;-1&quot; (ad esempio, chair.tif viene rinominato chair-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione di nome file diversa dall’originale (ad esempio JPG, TIF o PNG).
 
 * **[!UICONTROL Sovrascrivi nella cartella corrente, nome/estensione]**  immagine di base - Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato.
 
@@ -194,7 +194,7 @@ La gestione del colore dei contenuti multimediali dinamici consente di colorare 
 
    * [!UICONTROL Spazio colore predefinito CMYK]  - Nome del profilo colore CMYK predefinito
    * [!UICONTROL Spazio colore predefinito su scala di grigi]  - Nome del profilo colore grigio predefinito
-   * [!UICONTROL Spazio]  colore predefinito RGB - Nome del profilo colore RGB predefinito
+   * [!UICONTROL Spazio colore predefinito]  di RGB - Nome del profilo colore predefinito di RGB
    * [!UICONTROL Intento di rendering della conversione colore]  - Specifica l&#39;intento di rendering. I valori accettabili sono `perceptual`, `relative` `colometric`, `saturation` e `absolute colometric`. L’Adobe consiglia `relative` come impostazione predefinita.
 
 1. Tocca **[!UICONTROL Salva]**.
@@ -204,9 +204,9 @@ Ad esempio, puoi impostare **[!UICONTROL Spazio colore predefinito RGB]** su `sR
 In questo modo si effettua quanto segue:
 
 * Abilita la correzione del colore per le immagini RGB e CMYK.
-* Le immagini RGB che non hanno un profilo colore sono considerate nello spazio colore `sRGB`.
+* Le immagini di RGB prive di un profilo colore sono considerate nello spazio colore `sRGB`.
 * Le immagini CMYK prive di un profilo colore sono considerate nello spazio colore `WebCoated`.
-* Rendering dinamici che restituiscono l’output RGB, lo restituisce nello spazio colore `sRGB`.
+* Rendering dinamico che restituisce l’output di RGB, lo restituisce nello spazio colore `sRGB` .
 * Rendering dinamici che restituiscono l’output CMYK, lo restituisce nello spazio colore `WebCoated`.
 
 #### Modifica dei tipi MIME per i formati supportati {#editing-mime-types-for-supported-formats}
@@ -452,7 +452,7 @@ Quando il set 360 gradi viene caricato e pubblicato, si attiva il nome della def
 
 1. Per **[!UICONTROL Imposta denominazione]** e **[!UICONTROL Convenzione di creazione]**, specifica il suffisso o il prefisso al nome di base definito in **[!UICONTROL Convenzione di denominazione delle risorse]**.
 
-   Inoltre, definisci dove viene creato il set 360 gradi all’interno della struttura di cartelle di Dynamic Media Classic.
+   Inoltre, definisci dove viene creato il set 360 gradi all’interno della struttura delle cartelle Dynamic Media Classic.
 
    Se definisci un numero elevato di set, tenili separati dalle cartelle contenenti le risorse stesse. Ad esempio, crea una cartella Set 360 gradi in cui inserire i set generati.
 
@@ -478,7 +478,7 @@ Se desideri attivare la creazione di modelli, utilizza i seguenti parametri: `pr
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PDF, PostScript® e PSD:
+Adobe consiglia di utilizzare i seguenti parametri di processo &quot;ottimizzati&quot; per i file PDF, PostScript® e PSD:
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -492,7 +492,7 @@ L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sinto
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Dynamic Media Classic/Assets basato su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento Dynamic Media Classic/Assets basato su tipo MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) .
 
 #### Aggiornamento della coda del flusso di lavoro transitorio di Granite {#updating-the-granite-transient-workflow-queue}
 
@@ -542,7 +542,7 @@ La coda del flusso di lavoro Granite viene utilizzata per i flussi di lavoro non
 
 #### Aggiornamento della connessione di caricamento Scene7 {#updating-the-scene-upload-connection}
 
-L’impostazione Scene7 Upload Connection sincronizza le risorse di Experience Manager con i server Dynamic Media Classic.
+L’impostazione Scene7 Upload Connection sincronizza Experience Manager Assets con i server Dynamic Media Classic.
 
 **Per aggiornare la connessione di caricamento Scene7:**
 

@@ -4,7 +4,7 @@ description: Scopri come configurare l’integrazione di AEM Assets con Experien
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 2%
