@@ -2,7 +2,7 @@
 title: Note sulla versione di AEM Assets
 seo-title: AEM Assets
 description: Note sulla versione specifiche di Adobe Experience Manager 6.4 Assets.
-seo-description: Note sulla versione specifiche di Adobe Experience Manager 6.4 Assets.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,10 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -28,7 +27,7 @@ Adobe Asset Link in Creative Cloud for enterprise semplifica la collaborazione t
 
 Per ulteriori informazioni su funzionalità, prerequisiti e modalità di accesso, consulta la pagina [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) .
 
-## Tag avanzati migliorati (con tecnologia Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
+## Tag avanzati migliorati (basati su Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
 AEM 6.4 introduce la funzionalità Tag avanzati avanzati avanzati basati su intelligenza artificiale in aggiunta ai tag avanzati lanciati in AEM 6.3.
 
@@ -61,7 +60,7 @@ Miglioramenti alla ricerca
 
 * Nuovo pulsante Ricerca indietro con la possibilità di passare a un elemento di ricerca e tornare alla stessa posizione nei risultati di ricerca senza eseguire nuovamente la query di ricerca.
 * Conteggio dei nuovi risultati di ricerca per visualizzare il numero di risultati di ricerca.
-* È stato migliorato il Filtro di ricerca per tipo di file con la possibilità di filtrare i risultati di ricerca in base a tipi di MIME a grana fine, come JPG, PNG e PSD, rispetto alle opzioni precedenti per immagini, documenti e contenuti multimediali.
+* È stato migliorato il Filtro di ricerca per tipo di file con la possibilità di filtrare i risultati di ricerca in base a tipi di MIME a grana fine come JPG, PNG e PSD, rispetto alle opzioni precedenti per immagini, documenti e contenuti multimediali.
 * Filtri di ricerca migliorati con marche temporali precise invece della funzionalità precedente del cursore temporale.
 
 Miglioramenti a risorse multipagina
@@ -90,19 +89,19 @@ AEM 6.4 include funzionalità avanzate di gestione dei metadati per gestire i me
 AEM 6.4 offre significativi miglioramenti alla generazione di rapporti sulle risorse:
 
 * Nuovo framework di rapporti scalabile a livello aziendale (per archivi di grandi dimensioni) che applica processi Sling per l’elaborazione asincrona delle richieste di rapporti. Puoi pianificare il rapporto in una data e in un&#39;ora specifiche. Puoi anche aggiungere colonne personalizzate a un rapporto.
-* I nuovi rapporti OOTB più comunemente richiesti dai clienti quali Utilizzo del disco, File, Condivisione collegamenti, Pubblica su Brand Portal e Formazione sui tag avanzati.
+* I nuovi report OOTB più comunemente richiesti dai clienti come Utilizzo del disco, File, Condivisione collegamenti, Pubblica su Brand Portal e Formazione sui tag avanzati.
 * Nuova interfaccia utente per la creazione e la gestione di report con opzioni a grana fine, possibilità di accedere ai report archiviati, stato di esecuzione dei report (riuscito, non riuscito, in coda e così via).
 
 ## Brand Portal {#brand-portal}
 
 * **6.3 Aggiornamento** della piattaforma: Brand Portal è stato aggiornato da AEM 6.0 a AEM 6.3, con nuove funzioni e miglioramenti delle prestazioni.
-* **Pubblicazione** parallela: Si possono verificare fino a repliche tra AEM Assets e Brand Portal (precedentemente 1), il che migliora notevolmente le prestazioni di pubblicazione
-* **Pubblicazione** facet schema e ricerca: Possibilità di pubblicare schemi di metadati e facet di ricerca personalizzati su Brand Portal, eliminando la duplicazione degli sforzi.
-* **Pubblicazione** di tag in blocco: Possibilità di pubblicare la tassonomia (insieme alla gerarchia) su Brand Portal, eliminando la duplicazione degli sforzi.
-* **Iscriviti o richiedi accesso**: Flusso di lavoro per gli utenti non registrati su Brand Portal.
+* **Pubblicazione** parallela: Possono verificarsi fino a repliche tra AEM Assets e Brand Portal (prima 1), il che migliora notevolmente le prestazioni di pubblicazione
+* **Pubblicazione** facet schema e ricerca: Possibilità di pubblicare schemi di metadati e facet di ricerca personalizzati in Brand Portal, eliminando la duplicazione degli sforzi.
+* **Pubblicazione** di tag in blocco: Possibilità di pubblicare la tassonomia (insieme alla gerarchia) in Brand Portal, eliminando la duplicazione degli sforzi.
+* **Iscriviti o richiedi accesso**: Flusso di lavoro per gli utenti non registrati in Brand Portal.
 * **Notifica** di manutenzione in-app (sullo schermo): Le notifiche vengono visualizzate con largo anticipo per evitare interruzioni nel business.
 * **Miglioramenti al reporting**: Sono disponibili tre report OOTB: download, pubblicazione e condivisione dei collegamenti.
-* **Restrizioni** basate su DRM: Alla scadenza di una risorsa con licenza, non è più disponibile per il download da Brand Portal.
+* **Restrizioni** basate su DRM: Dopo la scadenza di una risorsa con licenza, non è più disponibile per il download da Brand Portal.
 
 ## App desktop AEM {#aem-desktop-app}
 
@@ -139,11 +138,11 @@ Per una panoramica delle piattaforme supportate, consulta la [Documentazione sui
 
 Dynamic Media in 6.4 supporta una nuova modalità, in cui le risorse master vengono caricate e gestite con l’interfaccia utente web di AEM Assets, mentre le rappresentazioni dinamiche e altre funzioni per contenuti multimediali dinamici vengono gestite in background dal servizio di distribuzione cloud di Dynamic Media.
 
-In questa modalità (introdotta per la prima volta con il rilascio dei [AEM 6.3 Feature Pack 14410 e 18912](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), gli utenti possono usufruire di funzioni di gestione delle risorse end-to-end e di contenuti multimediali dinamici utilizzando la moderna interfaccia utente web AEM Assets e continuare a utilizzare i servizi di consegna che sono retrocompatibili con Dynamic Media Classic (Scene7), inclusi gli URL di consegna, che rimangono invariati.
+In questa modalità (introdotta per la prima volta con il rilascio dei [AEM 6.3 Feature Pack 14410 e 18912](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), gli utenti possono sfruttare le funzioni di gestione delle risorse end-to-end e di contenuti multimediali dinamici utilizzando la moderna interfaccia utente web AEM Assets e continuare a utilizzare i servizi di consegna che sono compatibili con Dynamic Media Classic (Scene7), inclusi gli URL di consegna, che rimangono invariati.
 
 Inoltre, AEM 6.4 introduce nuove funzioni fornite da Adobe Sensei, miglioramenti per i media emergenti come VR e 3D, visualizzatori Dynamic Media e supporto per i frammenti esperienza nelle immagini interattive e nei banner carosello.
 
-### Ritaglio avanzato (con tecnologia Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
+### Ritaglio avanzato (basato su Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
 
 * Il ritaglio avanzato fornisce automaticamente un ritaglio non distruttivo delle immagini per preservare il punto di interesse del design reattivo. Potete visualizzare in anteprima i suggerimenti ritagliati e, se necessario, regolarli manualmente.
 * Questa funzione consente anche la generazione automatizzata dei campioni per le immagini dei prodotti. La generazione automatizzata dei campioni consente di aggiungere automaticamente campioni colore, campioni pattern o entrambi alle immagini del prodotto.
@@ -160,7 +159,7 @@ Per ulteriori informazioni sull’utilizzo del ritaglio avanzato con il componen
 
 Per ulteriori informazioni, consulta la documentazione [Smart imaging](../assets/imaging-faq.md) .
 
-### Miglioramenti a supporti e visualizzatori emergenti {#emerging-media-amp-viewer-enhancements}
+### Miglioramenti a media e visualizzatori emergenti {#emerging-media-amp-viewer-enhancements}
 
 * Sono supportati nuovi visualizzatori, che forniscono esperienze migliori e coinvolgenti per l’utente.
 * Il visualizzatore panoramico consente di coinvolgere l’utente e di offrire la possibilità di sperimentare meglio scene, proprietà, posizioni e paesaggi della stanza. Per informazioni, consulta la documentazione [Immagini panoramiche](../assets/panoramic-images.md) .
