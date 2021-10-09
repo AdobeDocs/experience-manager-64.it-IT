@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: a3289431adb80162340a1acdbc9b91e0c29e99a0
+source-git-commit: 50ba3937ef5d3f6e5b56df99ebdca337e5e9eac9
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,6 @@ Media Library copre ampiamente i seguenti casi di utilizzo:
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
-* Projects, tasks authoring
-* Activity stream (timeline)
-* Comments and annotation
 -->
 
 Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;interfaccia utente predefinita [!DNL Experience Manager]. Media Library fa parte dell&#39;installazione di [!DNL Experience Manager Sites] e non è richiesta alcuna interfaccia o componente aggiuntivo separato. Utilizzando l’interfaccia esistente, gli utenti di Media Library possono eseguire le seguenti attività:
@@ -78,6 +75,9 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;int
 * Personalizza ed espandi l’interfaccia utente per la gestione delle risorse.
 * Accedi all’API di Query Builder per estendere la funzionalità di ricerca.
 * Creare tag statici.
+* Progetti e attività di authoring.
+* Flusso di attività (timeline).
+* Commenti e annotazioni.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
@@ -88,7 +88,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza Media Library ti consente di soddisfare solo i casi d’uso elencati utilizzando Media Library. Se non è presente un caso d’uso, non utilizzarlo con una licenza Media Library. In caso di domande, contatta l’Assistenza clienti Adobe.
 
-Non è possibile utilizzare tag avanzati, collegamenti [!DNL Asset], selettore [!DNL Asset], assegnazione tag in blocco, modifica flussi di lavoro risorse senza [!DNL Assets] licenza.
+Tieni presente che non puoi utilizzare tag avanzati, collegamenti [!DNL Asset], selettore [!DNL Asset], assegnazione tag in blocco, modifica flussi di lavoro di risorse o interfaccia utente standard [!DNL Adobe Experience Manager] per accedere a Media Library senza una licenza [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
