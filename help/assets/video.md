@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '10384'
 ht-degree: 4%
@@ -72,7 +72,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
 
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+[Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -84,7 +84,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
 
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+[Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
@@ -144,9 +144,9 @@ Per la gestione di set video singoli e di set video adattivi, sono supportati i 
 
 * sottotitoli video in tutti i visualizzatori video HTML5.
 * Organizza, sfoglia e cerca video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
-* Distribuire set video adattivi sul web, sui desktop e sui dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
+* Distribuisci set video adattivi sul web, sui desktop e sui dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consulta la [Guida di riferimento visualizzatori di Adobi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consulta la [Guida di riferimento visualizzatori di Adobi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. Puoi trovare i dispositivi Blackberry che supportano questo formato video nel seguente sito: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,17 +162,17 @@ Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. Puoi tr
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulta anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) nella Guida di riferimento per i visualizzatori Dynamic Media di Adobe.
+Consulta anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) nella Guida di riferimento visualizzatori di Adobe Dynamic Media.
 
 ## Procedure consigliate: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
-I predefiniti per visualizzatori video HTML5 di Dynamic Media sono lettori video affidabili. Puoi utilizzarli per evitare molti problemi comuni relativi alla riproduzione video HTML5 e problemi associati ai dispositivi mobili, come la mancanza di distribuzione di streaming adattivo e la portata limitata del browser desktop.
+I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. È possibile utilizzarli per evitare molti problemi comuni relativi alla riproduzione video di HTML5 e problemi associati a dispositivi mobili, come la mancanza di distribuzione dello streaming adattivo e la portata limitata del browser desktop.
 
 Dal lato del design del lettore, puoi progettare tutte le funzionalità del lettore video utilizzando gli strumenti standard di sviluppo web. Ad esempio, puoi progettare pulsanti, controlli e sfondo personalizzato dell’immagine miniatura utilizzando HTML5 e CSS per aiutarti a raggiungere i clienti con un aspetto personalizzato.
 
-Dal lato della riproduzione del visualizzatore, rileva automaticamente la funzionalità video del browser. Quindi distribuisce il video usando lo streaming HLS (streaming video adattivo). Oppure, se tali metodi di consegna non sono presenti, viene invece utilizzato il progressivo HTML5.
+Dal lato della riproduzione del visualizzatore, rileva automaticamente la funzionalità video del browser. Quindi distribuisce il video usando lo streaming HLS (streaming video adattivo). Oppure, se tali metodi di consegna non sono presenti, viene invece utilizzato HTML5 progressive.
 
-Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione utilizzando HTML5 e CSS, di incorporare la riproduzione e di utilizzare lo streaming adattivo e progressivo a seconda delle funzionalità del browser, estendi la portata dei contenuti rich media sia agli utenti desktop che ai dispositivi mobili, garantendo un’esperienza video semplificata.
+Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione utilizzando HTML5 e CSS, di incorporare la riproduzione e di utilizzare lo streaming adattivo e progressivo a seconda delle funzionalità del browser, è possibile estendere la portata dei contenuti rich media sia agli utenti desktop che mobili e garantire un’esperienza video semplificata.
 
 Consulta anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella Guida di riferimento visualizzatori di Adobi.
 
@@ -253,7 +253,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr> 
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>Streaming video HLS.</td>
+   <td>HLS video streaming.</td>
   </tr>
   <tr> 
    <td>Mobile</td>
@@ -275,7 +275,7 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 ## Best practice per la codifica dei video {#best-practices-for-encoding-videos}
 
-Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video flusso di lavoro, **[!UICONTROL Codifica video elementi multimediali dinamici]** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Media e hai impostato i servizi Video Cloud, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Media]** ha effetto automaticamente al momento di caricare un video. (Se non utilizzi Dynamic Media, il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** ha effetto.)
+Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video flusso di lavoro, **[!UICONTROL Codifica video elementi multimediali dinamici]** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up Video Cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (Se non utilizzi Dynamic Media, il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** ha effetto.)
 
 <!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
@@ -389,9 +389,9 @@ Quando scegli (o crei) un predefinito di codifica video per il file video princi
 
 ### Fps (fotogrammi al secondo) {#fps-frames-per-second}
 
-Negli Stati Uniti e in Giappone la maggior parte dei video viene girata a 29,97 fotogrammi al secondo (fps); in Europa, la maggior parte dei video viene girata a 25 fps. Il film è girato a 24 fps.
+Negli Stati Uniti e in Giappone la maggior parte dei video viene girata a 29,97 fotogrammi al secondo (fps); in Europa, la maggior parte dei video viene girata a 25 fps. Film is shot at 24 fps.
 
-Scegli un predefinito di codifica video che corrisponda alla frequenza fps del file video principale. Ad esempio, se il video principale è 25 fps, scegli un predefinito di codifica con 25 fps. Per impostazione predefinita, tutte le codifiche personalizzate utilizzano fps del file video principale. Per questo motivo, non è necessario specificare esplicitamente l’impostazione fps quando si crea un predefinito di codifica video.
+Choose a video encoding preset that matches the fps rate of your master video file. Ad esempio, se il video principale è 25 fps, scegli un predefinito di codifica con 25 fps. Per impostazione predefinita, tutte le codifiche personalizzate utilizzano fps del file video principale. Per questo motivo, non è necessario specificare esplicitamente l’impostazione fps quando si crea un predefinito di codifica video.
 
 ### Dimensioni di codifica video {#video-encoding-dimensions}
 
@@ -399,9 +399,9 @@ Per risultati ottimali, seleziona dimensioni di codifica tali che il video sorge
 
 Per calcolare questo rapporto, dividete la larghezza sorgente per la larghezza codificata per ottenere il rapporto di larghezza. Poi, dividi l&#39;altezza della sorgente per l&#39;altezza codificata per ottenere il rapporto di altezza.
 
-Se il rapporto risultante è un numero intero, significa che il video viene ridimensionato in modo ottimale. Se il rapporto risultante non è un numero intero, influisce sulla qualità video lasciando sul display gli artefatti dei pixel rimasti. Questo effetto è più evidente quando il video ha del testo.
+Se il rapporto risultante è un numero intero, significa che il video viene ridimensionato in modo ottimale. If the resulting ratio is not a whole integer, it impacts video quality by leaving leftover pixel artifacts on the display. Questo effetto è più evidente quando il video ha del testo.
 
-Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella seguente, i tre video codificati forniscono le impostazioni di codifica ottimali da utilizzare.
+As an example, suppose that your source video is 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
 
 <table> 
  <tbody> 
@@ -427,7 +427,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
    <td><p>Codificato</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificato</p> </td> 
@@ -464,15 +464,15 @@ La pubblicazione delle risorse video sui server YouTube comporta il completament
 
 Puoi anche [annullare la pubblicazione dei video per rimuoverli da YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configurare le impostazioni di Google Cloud {#configuring-google-cloud-settings}
+### Configurare le impostazioni Google Cloud {#configuring-google-cloud-settings}
 
-Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, hai già un account Google. Se non hai un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa a [Creazione di un canale YouTube](#creating-a-youtube-channel).
+Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google. Se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa a [Creazione di un canale YouTube](#creating-a-youtube-channel).
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i propri siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
-**Per configurare le impostazioni di Google Cloud:**
+**Per configurare le impostazioni Google Cloud:**
 
 1. Crea un nuovo account Google.
 
@@ -481,7 +481,7 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
    Se disponi già di un account Google, passa al passaggio successivo.
 
 1. Vai a [https://cloud.google.com/](https://cloud.google.com/).
-1. Nella pagina Piattaforma Google Cloud, nella parte superiore, tocca **[!UICONTROL Console]**. Potrebbe essere necessario **Accedere** utilizzando le credenziali del tuo account Google.
+1. Nella pagina Google Cloud Platform, nella parte superiore, tocca **[!UICONTROL Console]**. Potrebbe essere necessario **Accedere** utilizzando le credenziali del tuo account Google.
 1. Nella pagina **[!UICONTROL Dashboard]**, tocca **[!UICONTROL Crea progetto]**.
 1. Nella finestra di dialogo **[!UICONTROL Nuovo progetto]**, immetti un nome di progetto.
 
@@ -573,9 +573,9 @@ Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa att
 1. Sotto l&#39;intestazione **[!UICONTROL Servizi di terze parti]**, sotto YouTube, tocca **[!UICONTROL Configura ora]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, immetti un titolo (obbligatorio) e un nome (facoltativo) nei rispettivi campi.
 1. Tocca **[!UICONTROL Crea]**.
-1. Nella finestra di dialogo **[!UICONTROL Impostazioni account YouTube]**, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]** .
+1. Nella finestra di dialogo **[!UICONTROL Impostazioni account YouTube]**, immetti l&#39;ID progetto Google nel campo **[!UICONTROL Nome applicazione]** .
 
-   Hai specificato l’ID del progetto al momento della configurazione iniziale delle impostazioni di Google Cloud.
+   Hai specificato l’ID del progetto quando hai inizialmente configurato le impostazioni di Google Cloud in precedenza.
 
    Lascia aperta la finestra di dialogo **[!UICONTROL Impostazione account YouTube]**; ritornerà su di esso tra un momento.
 
@@ -594,7 +594,7 @@ Oppure, se desideri utilizzare i tag predefiniti in AEM, puoi saltare questa att
 1. Toccare **[!UICONTROL OK]**.
 1. Viene visualizzata l’autenticazione YouTube/Google. Se non hai già effettuato l’accesso all’account Google Cloud, salta questo passaggio.
 
-   * Immetti il nome utente e la password Google associati all’ID progetto Google e il testo JSON sopra.
+   * Immetti il nome utente e la password Google associati all’ID progetto Google e al testo JSON sopra riportato.
    * A seconda del numero di canali di cui dispone l’account, vengono visualizzati due o più elementi. Seleziona un canale. Non selezionare l&#39;indirizzo di posta elettronica.
    * Nella pagina successiva, tocca **[!UICONTROL Accetta]** per consentire l’accesso a questo canale.
 
@@ -856,7 +856,7 @@ La modalità di configurazione della notifica dipende dal fatto se si desidera r
 
    >[!NOTE]
    >
-   >Queste e-mail sono specifiche di YouTube e si aggiungono alle notifiche e-mail generiche del flusso di lavoro. Di conseguenza, puoi ricevere due set di notifiche e-mail: la notifica generica disponibile nel **Servizio di notifica e-mail del flusso di lavoro del giorno CQ** e una specifica per YouTube a seconda delle impostazioni di configurazione.
+   >Queste e-mail sono specifiche di YouTube e si aggiungono alle notifiche e-mail generiche del flusso di lavoro. As a result, you may receive two sets of email notification - the generic notification available in the **Day CQ Workflow Email Notification Service** and one specific to YouTube depending on your configuration settings.
 
 ## Visualizzare i rapporti video {#viewing-video-reports}
 
@@ -902,11 +902,11 @@ Affinché i rapporti video funzionino correttamente, viene automaticamente creat
 
 1. Nella tabella in cui sono elencati i video più pubblicati, tocca un nome video per riprodurre il video e guarda anche il rapporto di fidelizzazione (drop-off) del video.
 
-### Visualizzare rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzare rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media o se hai creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video preconfigurato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK per visualizzatori HTML5, procedi come segue per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video Dynamic Media.
 
-Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e l’ [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) e l’ [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
 Per visualizzare i rapporti video basati su un visualizzatore video creato utilizzando l’API SDK per visualizzatori HTML5:
 
@@ -991,7 +991,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
    [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   Per risultati ottimali, utilizza lo strumento in Internet Explorer 9 o versioni successive, Google Chrome o Safari.
+   Per ottenere risultati ottimali, utilizza lo strumento in Internet Explorer 9 o versioni successive, Google Chrome o Safari.
 
    Nello strumento, nel campo **[!UICONTROL Enter URL of video file]** (Inserisci URL del file video), incolla l&#39;URL copiato del file video, quindi tocca **[!UICONTROL Load]**. Consulta la sezione [Ottenere l’URL per una risorsa](linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per conoscere l’URL del file video stesso, che potrai incollare nel campo **[!UICONTROL Enter URL of video file (Inserisci URL del file video)]**. A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
 
@@ -1032,7 +1032,7 @@ Per rendere più semplice la visualizzazione e la navigazione dei video in forma
 >
 >Il lettore video utilizzato deve supportare l&#39;uso di marcatori capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
-Se lo desideri, puoi creare e assegnare un marchio al tuo visualizzatore video personalizzato con capitoli invece di utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un proprio visualizzatore HTML5 con navigazione nei capitoli, nell’API Adobe HTML5 Viewer SDK, fai riferimento all’intestazione &quot;Personalizzazione del comportamento utilizzando i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) .
+Se lo desideri, puoi creare e assegnare un marchio al tuo visualizzatore video personalizzato con capitoli invece di utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 personalizzato con navigazione nei capitoli, nell’API SDK per visualizzatori di Adobe HTML5 fai riferimento all’intestazione &quot;Personalizzazione del comportamento utilizzando i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) .
 
 È possibile creare un elenco di capitoli per il video nello stesso modo in cui si creano le didascalie. In altre parole, si crea un file WebVTT. Si noti, tuttavia, che questo file deve essere separato da qualsiasi file di didascalia WebVTT che si potrebbe utilizzare; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 
@@ -1056,21 +1056,21 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Nell’esempio precedente, `Chapter 1` è l’identificatore del cue ed è facoltativo. Il tempo di cue di `00:00:000 --> 01:04:364` specifica l&#39;ora di inizio e di fine del capitolo, in formato `00:00:000`. Le ultime tre cifre sono millisecondi e possono essere lasciate come `000`, se necessario. Il titolo del capitolo di `The bicycle store behind it all` è la descrizione effettiva del contenuto del capitolo. L’identificatore di cue, il tempo di cue iniziale e il titolo del capitolo vengono visualizzati in un pop-up nel lettore video quando un utente passa il puntatore del mouse su un punto di cue visivo nella timeline del video.
+Nell’esempio precedente, `Chapter 1` è l’identificatore del cue ed è facoltativo. Il tempo di cue di `00:00:000 --> 01:04:364` specifica l&#39;ora di inizio e di fine del capitolo, in formato `00:00:000`. Le ultime tre cifre sono millisecondi e possono essere lasciate come `000`, se necessario. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the video’s timeline.
 
-Poiché utilizzi un visualizzatore video HTML5, accertati che il file dei capitoli creato sia conforme allo standard WebVTT (web Video Text Tracks). L&#39;estensione del nome del capitolo è .vtt. Per ulteriori informazioni sullo standard WebVTT per i sottotitoli, consulta
+Poiché si utilizza un visualizzatore video HTML5, assicurarsi che il file capitolo creato segua lo standard WebVTT (Web Video Text Tracks). L&#39;estensione del nome del capitolo è .vtt. Per ulteriori informazioni sullo standard WebVTT per i sottotitoli, consulta
 
-Consultare [WebVTT: Il formato Tracce testo video web](https://dev.w3.org/html5/webvtt/)
+See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
-**Per aggiungere marcatori capitolo al video:**
+**To add chapter markers to video:**
 
 1. Utilizzando un semplice editor di testo esterno a AEM, crea il file dei capitoli video.
 
    Per il supporto globale dei capitoli video in lingue diverse dall&#39;inglese, tieni presente che lo standard WebVTT richiede la creazione di file .vtt separati e di chiamate per ogni lingua che desideri supportare.
 
-1. Salva il file `.vtt` nella codifica UTF8 per evitare problemi con il rendering dei caratteri nel testo del titolo del capitolo.
+1. Save the `.vtt` file in UTF8 encoding to avoid problems with character rendition in the chapter title text.
 
-   Generalmente, si desidera assegnare al file VTT capitolo lo stesso nome del file video e aggiungerlo con capitoli. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
+   Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 1. In AEM, carica il file del capitolo WebVTT.
 
    Consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).

@@ -6,20 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 9%
 
 ---
 
-
 # Fine del ciclo di vita del visualizzatore DHTML {#dhtml-viewer-end-of-life-}
 
-A partire dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente fuori uso.
+A partire dal 31 gennaio 2014, la piattaforma di visualizzatori DHTML è ufficialmente scaduta.
 
-Per gli ultimi visualizzatori supportati, consultate la [Guida di riferimento dei visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Per gli ultimi visualizzatori supportati, consulta la [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) .
 
 <!-- **What is the change?**
 
