@@ -1,145 +1,146 @@
 ---
 title: Problemi noti in AEM 6.4
-seo-title: Problemi noti in AEM 6.4
+seo-title: Known Issues in AEM 6.4
 description: Problemi noti in Adobe Experience Manager 6.4
-seo-description: Problemi noti in Adobe Experience Manager 6.4.
+seo-description: Known Issues in Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
-translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
+source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1073'
 ht-degree: 4%
 
 ---
 
-
 # Problemi noti {#known-issues}
 
-Questa pagina contiene un elenco dei problemi noti che Adobe Experience Manager 6.4 ha rilasciato ad aprile 2018. Per ulteriori informazioni sui problemi noti, [contattare il supporto](https://helpx.adobe.com/it/support/experience-manager.html).
+Questa pagina tiene un elenco dei problemi noti rilasciati da Adobe Experience Manager 6.4 ad aprile 2018. Per ulteriori informazioni sui problemi noti, [contattare il supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
 ## Dispositivi ibridi {#hybrid-devices}
 
-I dispositivi ibridi non sono supportati. Durante l&#39;utilizzo di tali dispositivi possono verificarsi diversi problemi. Le procedure suggerite di seguito consentono di risolvere molti problemi:
+I dispositivi ibridi non sono supportati. Durante l’utilizzo di tali dispositivi è possibile rilevare diversi problemi. Le seguenti procedure suggerite aiutano a risolvere molti problemi:
 
-Se utilizzate Google Chrome come browser:
+Se utilizzi Google Chrome come browser:
 
-* Digitare `chrome://flags/` nella barra degli indirizzi e premere Invio.
-* Fate clic su Attiva eventi di tocco > Disattivato.
-* Riavviate il browser (tutte le schede e le finestre).
+* Tipo `chrome://flags/` nella barra degli indirizzi e premere Invio.
+* Fai clic su Abilita eventi touch > Disabilitato.
+* Riavvia il browser (tutte le schede e le finestre).
 
-Se si utilizza Mozilla Firefox come browser:
+Se utilizzi Mozilla Firefox come browser:
 
-* Digitare `about:config` nella barra degli indirizzi e premere Invio.
-* Filtrare le impostazioni su `dom.w3c`.
-* Assicurarsi che le impostazioni siano `0` e `false`.
-* Riavviate il browser.
+* Tipo `about:config` nella barra degli indirizzi e premere Invio.
+* Filtra le impostazioni in `dom.w3c`.
+* Assicurati che le impostazioni siano `0` e `false`.
+* Riavvia il browser.
 
-Se utilizzate Microsoft Edge come browser:
+Se utilizzi Microsoft Edge come browser:
 
-* Digitare `about:flags` nella barra degli indirizzi e premere Invio.
-* Scorrete fino alle funzioni sperimentali, quindi **[!UICONTROL Touch]**.
-* Fare clic su **[!UICONTROL Abilita eventi di tocco]**.
-* Selezionare **[!UICONTROL Always Off]**.
-* Riavviate il browser.
+* Tipo `about:flags` nella barra degli indirizzi e premere Invio.
+* Scorri fino a Funzioni sperimentali **[!UICONTROL Touch]**.
+* Fai clic su **[!UICONTROL Abilita eventi touch]**.
+* Seleziona **[!UICONTROL Sempre disattivato]**.
+* Riavvia il browser.
 
 ## Platform {#platform}
 
-* **Pannello delle operazioni: la barra di** avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
-* **HTL:oggetto** Java Use con spazi vuoti finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
+* **Dashboard delle operazioni:** La barra di avanzamento non viene visualizzata quando nel file di backup manca l&#39;estensione .zip. (GRANITE-10713)
+* **HTL:** L&#39;oggetto Java Use con spazi bianchi finali nella dichiarazione del pacchetto blocca il servizio SightlyJavaCompilerService (GRANITE-20836)
 * **Apache Felix/Sling:** File di configurazione ancora presente nell&#39;archivio anche dopo configuration.delete() (GRANITE-20618)
-* **Impostazioni cloud:** Console viene interrotta dopo la modifica del contenitore di configurazione (GRANITE-20726)
-* **Protezione:integrazione** IMS non riuscita con il percorso contestuale personalizzato (GRANITE-20639)
-* **Protezione:** Migliorare la classificazione JAAS predefinita di SSO, moduli di login esterni e predefiniti (GRANITE-20590)
-* **Tooling - CRX DE Lite:** Ridge della vista delle proprietà continua a salire (GRANITE-12040)
-* **Strumenti - CRX DE Lite:** non è possibile salvare le modifiche in &quot;Long&quot; Value Types a meno che non si faccia doppio clic su Property Name (GRANITE-12351)
+* **Impostazioni cloud:** La console viene interrotta dopo aver modificato il contenitore di configurazione (GRANITE-20726)
+* **Sicurezza:** L&#39;integrazione IMS non riesce con il percorso contestuale personalizzato (GRANITE-20639)
+* **Sicurezza:** Migliorare la classificazione JAAS predefinita dei moduli di accesso SSO, esterni e predefiniti (GRANITE-20590)
+* **Tooling - CRX DE Lite:** L&#39;onda della vista delle proprietà continua a muoversi verso l&#39;alto (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Impossibile salvare le modifiche a Tipi di valore &quot;lunghi&quot; a meno che non si faccia doppio clic su Nome proprietà (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** ctrl+F ricerca su file di testo aperti si blocca nella ricerca RegExp (GRANITE-5996)
+* **Tooling - CRX DE Lite:** la ricerca ctrl+F sui file di testo aperti si blocca alla ricerca RegExp (GRANITE-5996)
 
-* **Strumenti - CRX DE Lite:proprietà** Node non visualizzata dopo la ridenominazione del nodo (GRANITE-7160)
-* **Interfaccia utente:** Pulldown &quot;more...&quot; non visualizza tutti gli elementi quando viene aperto in un elemento del puntatore su IE e Firefox (GRANITE-16326)
-* **Interfaccia utente:** La descrizione comandi Info viene nascosta quando si utilizza il layout delle colonne fisse con 2 colonne affiancate (GRANITE-16869)
-* **UI:errore** non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione per [implementazione di un gestore errori](/help/sites-developing/customizing-errorhandler-pages.md) per personalizzare il messaggio di errore.
+* **Tooling - CRX DE Lite:** Proprietà del nodo non visualizzata dopo aver rinominato il nodo (GRANITE-7160)
+* **Interfaccia utente:** Pulldown &quot;more...&quot; non mostra tutti gli elementi quando viene aperto in un elemento pover su IE e Firefox (GRANITE-16326)
+* **Interfaccia utente:** La descrizione comando Info viene nascosta quando si utilizza il layout a colonne fisse con 2 colonne affiancate (GRANITE-16869)
+* **Interfaccia utente:** Errore non gestito durante la rappresentazione come utente inesistente (GRANITE-23228). Soluzione alternativa [implementazione di un gestore di errori](/help/sites-developing/customizing-errorhandler-pages.md) personalizzare il messaggio di errore.
 
-* **Omnisearch:** Ricerche con l&#39;eccezione di causa barra rovesciata (GRANITE-11769)
-* **Omnisearch:** Aprire &quot;Visualizza impostazioni&quot; nella vista a elenco causando la modifica del filtro di ricerca (GRANITE-16524)
-* **Omnisearch:** Elenco errato di configurazioni di colonne visualizzate durante la ricerca di Risorse da Siti (GRANITE-16527)
+* **Omnisearch:** Ricerche con eccezione di causa barra rovesciata (GRANITE-11769)
+* **Omnisearch:** Apri &quot;Visualizza impostazioni&quot; nella vista a elenco e causa la modifica del filtro di ricerca (GRANITE-16524)
+* **Omnisearch:** Elenco errato di configurazioni colonna visualizzate durante la ricerca di Assets da Sites (GRANITE-16527)
 
-* **Omnisearch: i predicati della barra a** sinistra stanno seguendo la richiesta del server Omnisearch (GRANITE-20524)
+* **Omnisearch:** I predicati della barra a sinistra vanno d&#39;accordo con la richiesta del server Omnisearch (GRANITE-20524)
 * **Omnisearch:** Omnisearch non supporta i percorsi contestuali (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Ricerca**: La ricerca non restituisce alcun risultato se la stringa di ricerca inizia con uno spazio vuoto  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Ricerca**: La ricerca non restituisce alcun risultato se la stringa di ricerca inizia con uno spazio vuoto [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
-* **Ricerca**: Nell’interfaccia classica i tag non sono visibili nella ricerca (CQ-4235239)
+* **Ricerca**: Nell’interfaccia classica e i tag non sono visibili nella ricerca (CQ-4235239)
 
-* **Interfaccia**: L&#39;interfaccia utente delle risorse non risponde più dopo Copy-Paste e Select-All (CQ-4236142)
+* **Interfaccia**: L’interfaccia utente delle risorse non risponde dopo l’opzione Copia-incolla e Seleziona-tutto (CQ-4236142)
 
-* **Interfaccia**: Impossibile spostare le risorse dopo il caricamento inattivo (CQ-4236134)
+* **Interfaccia**: Impossibile spostare le risorse dopo il caricamento lento (CQ-4236134)
 
-* **Rapporti**: Errore nella creazione del report sulla modifica delle risorse (CQ-4239744)
+* **Rapporti**: Errore nella creazione del rapporto sulla modifica delle risorse (CQ-4239744)
 
-* **Rapporti**: Generazione del rapporto sulle risorse pianificata e regolare non coerente (alcuni rapporti rimangono in coda) (CQ-4239089)
+* **Rapporti**: La generazione regolare dei rapporti sulle risorse pianificata fallisce in modo incoerente (alcuni rapporti rimangono in coda) (CQ-4239089)
 
-* **Metadati**: Quando si aggiunge un campo di testo con più valori allo schema delle risorse, la regola di CSS del campo richiesto non funziona (CQ-423933)
+* **Metadati**: Quando si aggiunge un campo di testo con più valori allo schema delle risorse, la regola di CSS del campo richiesto non funziona (CQ-4239333)
 
-* **BrandPortal**: Publish to BrandPortal non funziona per le raccolte (CQ-4238731)
+* **BrandPortal**: La pubblicazione su BrandPortal non funziona per le raccolte (CQ-4238731)
 
-* **Carica**: Durante il caricamento di risorse con caratteri speciali nel nome del file, per ogni risorsa non viene visualizzato il messaggio di errore di convalida relativo ai caratteri non consentiti. Anche se viene visualizzata solo per la prima risorsa, l&#39;interfaccia indica chiaramente all&#39;utente che il nome file della risorsa fornita non è consentito. (CQ-4256876)
+* **Carica**: Durante il caricamento di risorse con caratteri speciali nel nome del file, il messaggio di errore di convalida relativo ai caratteri non consentiti non viene visualizzato per ciascuna risorsa. Anche se viene visualizzata solo per la prima risorsa, l’interfaccia indica chiaramente all’utente che il nome file della risorsa fornita non è consentito. (CQ-4256876)
 
 ## Communities {#communities}
 
-* **Moderazione** : impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
+* **Moderazione** - Impossibile eliminare il post principale come singola operazione di eliminazione dall&#39;interfaccia utente di moderazione in blocco (CQ-4236797)
 
-* **Console** : il collegamento Password o Nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
+* **Console** - Il collegamento Password o nome utente dimenticato viene reindirizzato alla pagina di accesso invece del modulo di recupero password corrispondente (CQ-4237682)
 
 ## Forms {#forms}
 
-### Installazione e implementazione
+### Installazione
 
-* ( solo AEM Forms JEE) Quando si esegue l&#39;avvio del server applicazioni JBoss durante l&#39;esecuzione di Configuration Manager, vengono restituiti errori di chiamata EJB e di avvio automatico. Tuttavia, potete ignorarli. (Ref. CQ-4229793)
-* Quando  AEM Forms viene avviato, viene visualizzato l&#39;avviso `SAX Security Manager could not be setup`. (CQ-4297403)
+* (Solo JEE per AEM Forms) Quando si avvia il server applicazioni JBoss mentre si esegue Configuration Manager, vengono restituiti errori di chiamata EJB e di errore di avvio. Tuttavia, puoi ignorarli. (Ref. CQ-4229793)
+* Quando AEM Forms viene avviato, la `SAX Security Manager could not be setup` viene visualizzato un avviso. (CQ-4297403)
 
 ### Comunicazioni interattive
 
-* L&#39;interfaccia utente dell&#39;agente richiede un po&#39; di tempo per caricare comunicazioni interattive che includono elementi grafici o immagini. (CQ-4236630)
-* Il formato di visualizzazione dei dati nell&#39;anteprima di stampa è gg-mm-aaaa mentre nell&#39;anteprima Web è `dd-mmm-yy` (CQ-4237045)
-* Il canale Web di comunicazione interattiva supporta solo elenchi ordinati e non ordinati. Nei frammenti di documento elenco, l&#39;elenco composto e il rientro non sono supportati per il canale Web della comunicazione interattiva. (CQ-4233672)
-* Quando il canale Web si sincronizza con il canale di stampa si verificano i seguenti problemi:
+* L&#39;interfaccia utente dell&#39;agente impiega un po&#39; a caricare comunicazioni interattive che includono elementi grafico o immagine. (CQ-4236630)
+* Il formato di visualizzazione dei dati nell&#39;anteprima di stampa è gg-mm-aaaa mentre nell&#39;anteprima web è `dd-mmm-yy` (CQ-4237045)
+* Il canale Web di comunicazione interattiva supporta solo elenchi ordinati e non ordinati. Nei frammenti di documento elenco, l’elenco composto e il rientro non sono supportati per il canale Web della comunicazione interattiva. (CQ-4233672)
+* I seguenti problemi vengono osservati quando il canale web si sincronizza con il canale di stampa:
 
    * La sincronizzazione del canale Web richiede un po&#39; di tempo quando si passa dal canale di stampa per la prima volta.
-   * Il canale Web non si sincronizza se il canale di stampa include un componente grafico non configurato. Per risolvere il problema, eliminare il componente grafico e sincronizzarlo di nuovo.
-   * A volte la sincronizzazione non riesce con l&#39;errore &quot;Errore durante la sincronizzazione della Live Copy&quot;. Per risolvere il problema, aggiornate la pagina.
+   * Il canale web non si sincronizza se il canale di stampa include un componente grafico non configurato. Per risolvere il problema, elimina il componente grafico e sincronizza di nuovo.
+   * A volte la sincronizzazione non riesce con l&#39;errore &quot;Errore durante la sincronizzazione della Live Copy&quot;. Per risolvere il problema, aggiorna la pagina.
    * Il testo statico in un frammento di layout viene sostituito con il nome della cella della tabella quando la prima colonna della tabella è una colonna di intestazione nel modello del canale di stampa.
-   * Impossibile aggiungere componenti o risorse in qualsiasi posizione diversa dalla parte inferiore della comunicazione tramite canale Web. Per posizionarlo in un’altra posizione, aggiungete un pannello nella parte inferiore del canale Web e riordinatelo utilizzando la struttura ad albero del contenuto.
-   * Può spostare il contenuto nell&#39;area di destinazione ereditata del canale Web senza rimuovere l&#39;ereditarietà Live Copy.
+   * Impossibile aggiungere componenti o risorse in qualsiasi posizione diversa dalla parte inferiore di una comunicazione canale web. Per posizionarlo in un’altra posizione, aggiungi un pannello nella parte inferiore del canale web e riordinalo utilizzando la struttura dei contenuti.
+   * Può spostare il contenuto nell’area di destinazione ereditata del canale web senza rimuovere l’ereditarietà della Live Copy.
 
 (CQ-4239780)
 
 ### Integrazione dei dati
 
-* Le configurazioni di autenticazione per i servizi Web basati su SOAP non sono visibili e pertanto non possono essere configurate nei servizi cloud. Per risolvere il problema:
+* Le configurazioni di autenticazione per i servizi Web basati su SOAP non sono visibili e pertanto non possono essere configurate in Cloud Services. Per risolvere il problema:
 
-   1. Nella console CRXDE Lite, passare al seguente nodo.\
-      /libs/fd/fdm/gui/components/admin/fdmcloudservice/create_loudconfigWizard/cloudservices/\
-      wsdlauthenticationsettings/items/fissedcolumn/items/container/items/wsdl/items/\
+   1. Nella console CRXDE Lite, passa al seguente nodo.\
+      /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigWizard/cloudservices/\
+      wsdlauthenticationsettings/items/fixedcolumns/items/container/items/wsdl/items/\
       selectAuthentication/items/custom.
-   1. Aggiornare il valore della proprietà value in modo che corrisponda al valore della proprietà text.
-   1. Fate clic su Salva tutto per salvare la configurazione.
+   1. Aggiorna il valore della proprietà value allo stesso valore della proprietà text.
+   1. Fai clic su Salva tutto per salvare la configurazione.
 
 (CQ-4238462)
 
-### Integrazione  Adobe Sign
+### Integrazione Adobe Sign
 
-*  pianificazione Adobe Sign smette di funzionare in modo intermittente e pertanto i moduli in attesa di firma non passano all&#39;invio. Per risolvere il problema, riavviare il pacchetto **Apache Sling Scheduler Support** dalla console Web AEM all&#39;indirizzo https://[*server*]:[*port*]/system/console/bundle.
+* La pianificazione di Adobe Sign smette di funzionare in modo intermittente, pertanto il segno in sospeso dei moduli non passa all’invio. Per risolvere il problema, riavvia il **Supporto per l&#39;utilità di pianificazione Apache Sling** dalla console Web AEM all&#39;indirizzo https://[*server*]:[*porta*]/system/console/bundles.
 
 ### Authoring Forms adattivo
 
-* Il componente Grafico nei moduli adattivi occupa più spazio di quanto non lo sia normalmente.
-* Viene restituita un’eccezione quando si salvano le proprietà per moduli adattivi, frammenti di moduli adattivi o comunicazioni interattive nell’interfaccia utente di Forms Manager.
+* Il componente Grafico nei moduli adattivi occupa più spazio di quanto lo sia normalmente.
+* Viene restituita un’eccezione quando si salvano proprietà per moduli adattivi, frammenti di moduli adattivi o comunicazioni interattive nell’interfaccia utente di Forms Manager.
 * Nei dispositivi Samsung con Android 6.0 non viene rispettato il numero massimo di caratteri specificato per una casella di testo di modulo adattivo. (Ref. CQ-4235205)
+* Quando si invia un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file a 0 byte dall’altro lato. Apple iOS 15.1 fornisce una correzione al problema.
+
