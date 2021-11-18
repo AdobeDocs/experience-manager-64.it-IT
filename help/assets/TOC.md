@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '636'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 46%
 + [Informazioni su DAM](assets.md)
 + [Miglioramenti dell’esperienza utente](ux-improvements.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
-+ Utilizza AEM Assets {#using}
++ Utilizzare AEM Assets {#using}
    + [Esperienza della home page di AEM Assets](assets-home-page.md)
    + [Cercare risorse in AEM](search-assets.md)
    + [Ricerca full-text GQL](gql-search.md)
@@ -72,7 +72,7 @@ ht-degree: 46%
    + [Annullare la validità di contenuti CDN memorizzati nella cache](invalidate-cdn-cached-content.md)
    + [Installazione del Feature Pack 18912 per la migrazione in massa delle risorse](bulk-ingest-migrate.md)
    + [Utilizzo dei selettori](working-with-selectors.md)
-+ Estendere le risorse {#extending}
++ Estendi risorse {#extending}
    + [Personalizzazione ed estensione delle risorse](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori di contenuti multimediali e flussi di lavoro](media-handlers.md)
    + [Estensione della ricerca delle risorse](searchx.md)
@@ -101,13 +101,13 @@ ht-degree: 46%
    + [Metadati XMP](xmp.md)
    + [Considerazioni sulla rete Assets](assets-network-considerations.md)
    + [AEM Assets e AEM MediaLibrary a confronto](medialibrary.md)
-   + [Utilizzo del rasterizzatore PDF](aem-pdf-rasterizer.md)
+   + [Utilizzo di PDF rasterizzatore](aem-pdf-rasterizer.md)
    + [Configurazione delle restrizioni di caricamento delle risorse](configuring-asset-upload-restrictions.md)
    + [Best practice per l’integrazione di AEM e Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integrazione di AEM Assets con il server InDesign](indesign.md)
    + [Profili metadati](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
-   + [Utilizzo del pacchetto demo per Assets Insights](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Utilizzo del pacchetto dimostrativo per Assets Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Best practice per l’offload di risorse](assets-offloading-best-practices.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
    + [Best practice per il monitoraggio in Assets](assets-monitoring-best-practices.md)
@@ -165,3 +165,7 @@ ht-degree: 46%
    + [Condivisione di cartelle private](private-folder.md)
    + [Linee guida per la formazione sui servizi di contenuti avanzati](smart-tags-training-guidelines.md)
    + [Rappresentazioni video](video-renditions.md)
++ Integrazione con altre soluzioni {#integrations}
+   + [Integrazioni con [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installa [!DNL enhanced connector] per [!DNL Workfront]](workfront-connector-install.md)
+   + [Configura [!DNL enhanced connector] per [!DNL Workfront]](workfront-connector-configure.md)
