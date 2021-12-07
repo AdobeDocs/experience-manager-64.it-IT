@@ -4,8 +4,7 @@ description: Configura Experience Manager Assets da utilizzare con l’estension
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-exl-id: null
-source-git-commit: 5228db46ddbf08905477ddbab721f2b1ef7279ed
+source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
 workflow-type: tm+mt
 source-wordcount: '3135'
 ht-degree: 1%
