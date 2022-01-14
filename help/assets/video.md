@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 7f4e44eb75ccae4a9ab1d95171b95a5e9fe48f64
+source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
 workflow-type: tm+mt
-source-wordcount: '10383'
+source-wordcount: '10401'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * Ulteriori informazioni [Organizzazione delle risorse digitali](organize-assets.md).
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
-      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
       * Puoi caricare file video fino a 15 GB ciascuno.
       * [Caricare i video](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Ulteriori informazioni [Formati di file di input supportati](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +288,7 @@ For advice about video encoding, see the following:
 
 Quando codifichi un file video, utilizza un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità scadente.
 
-* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
 * È possibile caricare file video di origine primaria fino a 15 GB ciascuno.
 
 La tabella seguente descrive le dimensioni consigliate, le proporzioni e il bit rate minimo che i file video sorgente dovrebbero avere prima di codificarli:
