@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 45%
+source-wordcount: '639'
+ht-degree: 48%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 45%
    + [Aggiunta di mappe immagine](image-maps.md)
    + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Archivio newsletter Dynamic Media per Experience League](dynamic-media-newsletter.md)
+   + [Newsletter di Dynamic Media curata da Experience League](dynamic-media-newsletter.md)
    + [Impostazione di Dynamic Media](administering-dynamic-media.md)
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
@@ -49,7 +49,6 @@ ht-degree: 45%
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Aggiunta di funzionalità di Dynamic Media Classic alla pagina](scene7.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 45%
    + [Distribuzione di immagini ottimizzate per un sito reattivo](responsive-site.md)
    + [Anteprima delle risorse Dynamic Media](previewing-assets.md)
    + [Aggiunta di risorse Dynamic Media alle pagine](adding-dynamic-media-assets-to-pages.md)
+   + [Aggiunta di componenti Dynamic Media Classic alle pagine](scene7.md)
    + [Incorporare il visualizzatore Dynamic Video o Immagine in una pagina web](embed-code.md)
    + [Collegamento di URL all’applicazione web](linking-urls-to-yourwebapplication.md)
    + [Utilizzo di set di regole per la trasformazione degli URL](using-rulesets-to-transform-urls.md)
