@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 642ade44cac29d38533cfe724f69ba95e691a647
+source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
 workflow-type: tm+mt
 source-wordcount: '10401'
 ht-degree: 4%
@@ -29,7 +29,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >
 >* Vedi [Configurazione dei Cloud Services Dynamic Media in Configurazione di Dynamic Media - Modalità ibrida.](/help/assets/config-dynamic.md)
 >* Vedi [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md) e [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
-
 >
 
 
@@ -46,7 +45,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * Ulteriori informazioni [Organizzazione delle risorse digitali](organize-assets.md).
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
-      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
+      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 25 x 25.
       * Puoi caricare file video fino a 15 GB ciascuno.
       * [Caricare i video](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Ulteriori informazioni [Formati di file di input supportati](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +287,7 @@ For advice about video encoding, see the following:
 
 Quando codifichi un file video, utilizza un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità scadente.
 
-* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
+* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 25 x 25.
 * È possibile caricare file video di origine primaria fino a 15 GB ciascuno.
 
 La tabella seguente descrive le dimensioni consigliate, le proporzioni e il bit rate minimo che i file video sorgente dovrebbero avere prima di codificarli:
