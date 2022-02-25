@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Experience Manager Assets] Esperienza home page'
+title: '"[!DNL Experience Manager Assets] Home Page Experience"'
 description: Personalizza la home page delle risorse per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -14,30 +14,30 @@ ht-degree: 1%
 
 # [!DNL Adobe Experience Manager Assets] Esperienza home page {#aem-assets-home-page-experience}
 
-Personalizza la home page di [!DNL Experience Manager Assets] per un’esperienza ricca di schermate di benvenuto, inclusa un’istantanea delle attività recenti relative alle risorse.
+Personalizza le [!DNL Experience Manager Assets] Pagina principale per un’esperienza ricca di schermate di benvenuto, che include un’istantanea delle attività recenti relative alle risorse.
 
-La home page [!DNL Adobe Experience Manager Assets] offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
+La [!DNL Adobe Experience Manager Assets] La home page offre un’esperienza ricca e personalizzata con schermata di benvenuto, che include un’istantanea delle attività recenti, come le risorse visualizzate o caricate di recente.
 
 Per impostazione predefinita, la home page delle risorse è disabilitata. Per abilitarlo, esegui le seguenti operazioni:
 
-1. Per accedere a [!DNL Experience Manager] Configuration Manager, fare clic su **[!UICONTROL Strumenti > Operazione > Console Web]**.
-1. Apri il servizio **Day CQ DAM Event Recorder** .
-1. Seleziona il **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione delle attività.
+1. Per accedere [!DNL Experience Manager] Gestione configurazione, fai clic su **[!UICONTROL Strumenti > Operazione > Console web]**.
+1. Apri **Day CQ DAM Event Recorder** servizio.
+1. Seleziona la **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell’attività.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Dall’elenco **Tipi di eventi**, seleziona gli eventi da registrare e salva le modifiche.
+1. Da **Tipi di eventi** seleziona gli eventi da registrare e salva le modifiche.
 
    >[!CAUTION]
    >
    >Attivando le opzioni di visualizzazione Risorsa visualizzata, Progetti visualizzati e Raccolte, si aumenta in modo significativo il numero di eventi registrati.
 
-1. Apri il servizio **[!UICONTROL DAM Asset Home Page Feature Flag]** da Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Seleziona l’opzione **[!UICONTROL isEnabled.name]** per abilitare la funzione Home page di Assets. Salva le modifiche.
+1. Apri **[!UICONTROL Flag di funzione della pagina iniziale della risorsa DAM]** servizio da Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Seleziona la **[!UICONTROL isEnabled.name]** per abilitare la funzionalità Home page delle risorse. Salva le modifiche.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Apri la finestra di dialogo **[!UICONTROL Preferenze utente]** e seleziona **[!UICONTROL Abilita pagina iniziale risorse]**. Salva le modifiche.
+1. Apri **[!UICONTROL Preferenze utente]** e seleziona **[!UICONTROL Abilita pagina iniziale risorse]**. Salva le modifiche.
 
    ![user_preferences](assets/user_preferences.png)
 
@@ -45,7 +45,7 @@ Dopo aver abilitato la home page di Assets, passa all’interfaccia utente Asset
 
 ![home_page](assets/home_page.png)
 
-Tocca/fai clic su **[!UICONTROL Fai clic qui per configurare il collegamento esperienza]** per aggiungere nome utente, immagine di sfondo e immagine di profilo.
+Tocca o fai clic sul pulsante **[!UICONTROL Fai clic qui per configurare il collegamento esperienza]** per aggiungere nome utente, immagine di sfondo e immagine di profilo.
 
 La home page delle risorse include le sezioni seguenti:
 
@@ -66,19 +66,19 @@ Questa sezione viene visualizzata sotto la sezione Benvenuto e presenta i widget
 * Recente
 * Scopri
 
-**Attività**: In questa sezione, il  **widget** Attività personale visualizza le attività recenti eseguite dall’utente connesso con risorse (incluse risorse senza rendering), ad esempio caricamenti di risorse, download, creazione di risorse, modifiche, commenti, annotazioni e condivisioni.
+**Attività**: In questa sezione, il **Attività personale** widget visualizza le attività recenti eseguite dall’utente connesso con risorse (incluse risorse senza rendering), ad esempio caricamenti di risorse, download, creazione di risorse, modifiche, commenti, annotazioni e condivisioni.
 
-**Recenti**: Il  **widget** Visualizzato di recente in questa sezione visualizza le entità a cui l’utente ha effettuato l’accesso di recente, incluse cartelle, raccolte e progetti.
+**Recente**: La **Visualizzato di recente** in questa sezione vengono visualizzate le entità a cui l&#39;utente ha effettuato l&#39;accesso, incluse cartelle, raccolte e progetti.
 
-**Scopri**: Il  **** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nell’ [!DNL Assets] istanza.
+**Scopri**: La **Nuovo** in questa sezione vengono visualizzate le risorse e i rendering caricati di recente in [!DNL Assets] istanza.
 
-Per abilitare l&#39;eliminazione dei dati delle attività utente, abilita il **servizio di eliminazione degli eventi DAM** da Configuration Manager. Dopo aver abilitato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
+Per abilitare l’eliminazione dei dati dell’attività utente, abilita **Servizio di eliminazione degli eventi DAM** da Configuration Manager. Dopo aver abilitato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
 La schermata introduttiva fornisce semplici strumenti di navigazione, ad esempio icone sulla barra degli strumenti per accedere a cartelle, raccolte e cataloghi.
 
 >[!NOTE]
 >
->L&#39;abilitazione dei servizi Day CQ DAM Event Recorder e DAM Event Purge aumenta le operazioni di scrittura su JCR e l&#39;indicizzazione della ricerca, che aumentano notevolmente il carico sul server [!DNL Experience Manager]. Il carico aggiuntivo sul server [!DNL Experience Manager] può influire sulle prestazioni.
+>L’abilitazione dei servizi Day CQ DAM Event Recorder e DAM Event Purge aumenta le operazioni di scrittura su JCR e l’indicizzazione della ricerca, che aumentano notevolmente il carico sul JCR. [!DNL Experience Manager] server. Il carico aggiuntivo sul [!DNL Experience Manager] il server può influire sulle sue prestazioni.
 
 >[!CAUTION]
 >
