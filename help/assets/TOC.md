@@ -1,12 +1,12 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager 6.4, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: 4e3fc838d62c716ea0c46ba4c152b6686d85ffd9
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 48%
@@ -34,7 +34,7 @@ ht-degree: 48%
    + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
    + [Newsletter di Dynamic Media curata da Experience League](dynamic-media-newsletter.md)
-   + [Impostazione di Dynamic Media](administering-dynamic-media.md)
+   + [Configurazione di Dynamic Media](administering-dynamic-media.md)
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
