@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.4
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 16%
+ht-degree: 26%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 16%
       + [Internazionalizzazione delle stringhe di interfaccia utente](i18n-dev.md)
       + [Utilizzo di Translator per gestire i dizionari](i18n-translator.md)
       + [Estrazione di stringhe per la traduzione](i18n-extract.md)
-   + Componenti dell&#39;interfaccia classica{#classic-ui-components}
+   + Componenti dell’interfaccia classica{#classic-ui-components}
       + [Sviluppo di componenti AEM (interfaccia classica)](developing-components-classic.md)
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
@@ -103,17 +103,17 @@ ht-degree: 16%
    + [Senza testa e ibrido con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Applicazioni a pagina singola{#spas}
-      + [Introduzione SPA e Procedura dettagliata](spa-walkthrough.md)
-      + [Tutorial WKND SPA](spa-wknd.md)
+      + [Introduzione a SPA e procedura dettagliata](spa-walkthrough.md)
+      + [Tutorial WKND per SPA](spa-wknd.md)
       + [Guida introduttiva a SPA in AEM - React](spa-getting-started-react.md)
       + [Guida introduttiva a SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Implementazione di un Componente React per applicazioni a pagina singola (SPA)](spa-implementing-react-component.md)
-      + [SPA Dives profondi](spa-deep-dives.md)
+      + [Approfondimenti su SPA](spa-deep-dives.md)
       + [Panoramica dell’editor di SPA](spa-overview.md)
       + [Sviluppo di SPA per AEM](spa-architecture.md)
       + [Blueprint SPA](spa-blueprint.md)
       + [Componente pagina SPA](spa-page-component.md)
-      + [Mappatura dinamica da modello a componente per SPA](spa-dynamic-model-to-component-mapping.md)
+      + [Mappatura di un modello dinamico a un componente per SPA](spa-dynamic-model-to-component-mapping.md)
       + [Indirizzamento modello SPA](spa-routing.md)
       + [Integrazione di SPA e Adobe Experience Platform Launch](spa-launch.md)
       + [Rendering lato SPA e server](spa-ssr.md)
@@ -124,7 +124,7 @@ ht-degree: 16%
    + [Informazioni su frammenti di contenuto e servizi di contenuto in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Strumenti di sviluppo{#devtools}
    + [Strumenti di sviluppo](dev-tools.md)
-   + [Strumenti di modernizzazione AEM](modernization-tools.md)
+   + [Strumenti AEM Modernization Tools](modernization-tools.md)
    + [Editor finestre di dialogo](dialog-editor.md)
    + [Strumento di conversione finestra di dialogo](dialog-conversion.md)
    + [Sviluppo con CRXDE Lite](developing-with-crxde-lite.md)
@@ -135,7 +135,7 @@ ht-degree: 16%
    + [Come utilizzare lo strumento VLT](ht-vlttool.md)
    + [Come utilizzare lo strumento Proxy Server](ht-proxy-server.md)
    + [Estensione Bracket AEM](aem-brackets.md)
-   + [AEM Developer Tools per Eclipse](aem-eclipse.md)
+   + [Strumenti AEM Developer per Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
 + Personalizzazione{#personlization}
    + [ContextHub](contexthub.md)
@@ -149,7 +149,7 @@ ht-degree: 16%
    + ClientContext{#client-context}
       + [Contesto client in dettaglio](client-context.md)
       + [API JavaScript per il contesto client](ccjsapi.md)
-+ Estensione di AEM{#extending-aem}
++ Estensione AEM{#extending-aem}
    + [Personalizzazione dell’authoring delle pagine](customizing-page-authoring-touch.md)
    + [Personalizzazione delle console](customizing-consoles-touch.md)
    + [Personalizzazione delle visualizzazioni delle proprietà pagina](page-properties-views.md)
@@ -164,7 +164,7 @@ ht-degree: 16%
       + [Best practice per i flussi di lavoro](workflows-best-practices.md)
       + [Guida di riferimento per il processo dei flusso di lavoro](workflows-process-ref.md)
    + [Estensione di Multi Site Manager](extending-msm.md)
-   + Tracking e Analytics{#extending-analytics}
+   + Tracciamento e analisi{#extending-analytics}
       + [Estensione del tracciamento degli eventi](extending-analytics.md)
       + [Aggiunta del tracciamento di Adobe Analytics ai componenti](extending-analytics-components.md)
       + [Personalizzazione del framework Adobe Analytics](extending-analytics-framework.md)
@@ -179,7 +179,7 @@ ht-degree: 16%
       + [Script di analisi delle richieste](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/jmx-integration.html)
    + [Sviluppo dell’editor in blocco](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-bulk-editor.html)
-   + Estensione dell&#39;interfaccia classica{#extending-classic-ui}
+   + Estensione dell’interfaccia classica{#extending-classic-ui}
       + [Personalizzazione della console Siti web (interfaccia classica)](customizing-siteadmin.md)
       + [Personalizzazione della console di benvenuto (interfaccia classica)](customizing-the-welcome-console.md)
       + [Sviluppo di rapporti](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-reports.html)
@@ -198,11 +198,11 @@ ht-degree: 16%
    + [Verifica dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Best practice  {#bestpractices}
    + [Panoramica delle best practice](best-practices.md)
-   + [Linee guida per lo sviluppo AEM e best practice](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
+   + [Linee guida per lo sviluppo AEM e best practice](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=it)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
    + [Architettura dei contenuti](content-architecture.md)
    + [Architettura del software](software-architecture.md)
-   + Implementazione di riferimento We.Retail{#we-retail}
+   + Implementazione di riferimento di We.Retail{#we-retail}
       + [Implementazione di riferimento di We.Retail](we-retail.md)
       + [Prova di frammenti di contenuto in We.Retail](we-retail-content-fragments.md)
       + [Prova dei componenti core in We.Retail](we-retail-core-components.md)
@@ -220,5 +220,5 @@ ht-degree: 16%
    + [Web per dispositivi mobili](mobile-web.md)
    + [Creazione di filtri per i gruppi di dispositivi](groupfilters.md)
    + [Progettazione reattiva per le pagine web](responsive.md)
-   + [Creazione di siti per dispositivi mobili](mobile.md)
+   + [Creazione di siti per dispositivi Mobile](mobile.md)
    + [Emulatori](emulators.md)
