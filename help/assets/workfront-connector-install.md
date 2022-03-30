@@ -3,17 +3,21 @@ title: Installare la versione [!DNL Workfront for Experience Manager enhanced co
 description: Installare la versione [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+exl-id: 967391db-e7ba-4cf8-af9e-28c28d2d96d5
+source-git-commit: 26fa19ebae96fab713250bcaf9f51a161d9cb9fd
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-
 # Installare la versione [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] installa il connettore avanzato. Prima di eseguire l’installazione, controlla il supporto della piattaforma e altri [prerequisiti per il connettore](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+
+>[!TIP]
+>
+>Stai cercando il [!DNL Workfront for Experience Manager enhanced connector] documentazione per AEM as a Cloud Service? Fai clic su [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en).
 
 >[!IMPORTANT]
 >
@@ -56,3 +60,13 @@ Per creare una connessione con Workfront, effettua le seguenti operazioni:
    ![Connetti [!DNL Experience Manager] e [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Per verificare la connessione, accedervi in [!DNL Workfront] e verifica che la chiave API sia la stessa e che la connessione sia **[!UICONTROL Abilitato]**. A questo scopo, seleziona **[!UICONTROL Configurazione]** > **[!UICONTROL Documenti]** > **[!UICONTROL Integrazioni personalizzate]** in [!DNL Workfront].
+
+## Aggiorna [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+
+Experience Manager Assets consente di aggiornare [!DNL Workfront for Experience Manager enhanced connector] da una versione precedente alla versione più recente.
+
+Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] all’ultima versione:
+
+1. Scarica la versione più recente del connettore avanzato da [[!DNL Software Distribution] collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. Installa il pacchetto utilizzando [!UICONTROL Gestione pacchetti]. Per informazioni su come installare i pacchetti, consulta [Documentazione su Gestione pacchetti](/help/sites-administering/package-manager.md).
