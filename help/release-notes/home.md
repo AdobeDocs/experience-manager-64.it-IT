@@ -1,24 +1,23 @@
 ---
 title: Note sulla versione di Adobe Experience Manager 6.4
-seo-title: Note sulla versione di AEM 6.4
+seo-title: AEM 6.4 Release Notes
 description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
-seo-description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
-translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
+exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 46%
+source-wordcount: '373'
+ht-degree: 42%
 
 ---
-
 
 # Note sulla versione di Adobe Experience Manager 6.4
 
 Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 
-## Articoli principali su AEM
+## Articoli principali AEM
 
-* [Guida introduttiva ad AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
+* [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
 
@@ -32,7 +31,7 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 | [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM. |
 | [Guida all’authoring con interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM nell’interfaccia utente classica. |
-| [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
+| [Guida utente di Screens](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare la tua istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
@@ -41,17 +40,17 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 
 ## Risorse AEM chiave
 
-* [Tutorial su AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Esercitazioni AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guida utente di Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
 ## Copyright, licenze e disclaimer {#copyright-licenses-and-disclaimers}
 
-Per ulteriori informazioni, consulta [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Per ulteriori informazioni consulta [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Avviso di titoli di terzi: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
