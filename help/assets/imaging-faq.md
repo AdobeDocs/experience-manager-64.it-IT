@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+source-git-commit: 50d6ca4d7ead2b132f185590554d00c518fab996
 workflow-type: tm+mt
-source-wordcount: '3518'
+source-wordcount: '3519'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ No. Smart imaging è incluso nella licenza esistente. Questa regola è valida pe
 
 ## Come funziona l&#39;imaging intelligente? {#how-does-smart-imaging-work}
 
-Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controlla le caratteristiche dell&#39;utente e la conversione nel formato immagine appropriato in base al browser in uso. Queste conversioni di formato vengono effettuate in modo da non compromettere la fedeltà visiva. La funzione Smart imaging converte automaticamente le immagini in formati diversi in base alla funzionalità del browser nel modo seguente.
+Quando un&#39;immagine viene richiesta da un consumatore, Smart imaging controlla le caratteristiche dell&#39;utente e la converte nel formato immagine appropriato in base al browser in uso. Queste conversioni di formato vengono effettuate in modo da non compromettere la fedeltà visiva. La funzione Smart imaging converte automaticamente le immagini in formati diversi in base alla funzionalità del browser nel modo seguente.
 
 * Converti automaticamente in AVIF se il browser supporta il formato
 * Converti automaticamente in WebP se la conversione AVIF non è vantaggiosa o il browser non supporta AVIF
