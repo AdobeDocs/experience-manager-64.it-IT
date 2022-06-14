@@ -4,10 +4,10 @@ description: Installare la versione [!DNL Workfront for Experience Manager enhan
 role: Admin
 feature: Integrations
 exl-id: 967391db-e7ba-4cf8-af9e-28c28d2d96d5
-source-git-commit: 26fa19ebae96fab713250bcaf9f51a161d9cb9fd
+source-git-commit: 6f9a682f441c1087558f86da65e092e549f75a17
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 0%
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
@@ -21,9 +21,14 @@ Un utente con accesso amministratore in [!DNL Adobe Experience Manager] installa
 
 >[!IMPORTANT]
 >
->L&#39;Adobe richiede la distribuzione e la configurazione del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo tramite partner certificati o [!DNL Adobe Professional Services]. Se implementato e configurato senza un partner certificato o [!DNL Adobe Professional Services], non è supportato da Adobe.
+>* L&#39;Adobe richiede la distribuzione e la configurazione del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo tramite partner certificati o [!DNL Adobe Professional Services]. Se implementato e configurato senza un partner certificato o [!DNL Adobe Professional Services], non è supportato da Adobe.
 >
->Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono tale connettore ridondante; in questo caso, potrebbe essere richiesto ai clienti di effettuare la transizione dall’utilizzo di questo connettore.
+>* Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono tale connettore ridondante; in questo caso, potrebbe essere richiesto ai clienti di effettuare la transizione dall’utilizzo di questo connettore.
+>
+>* Adobe supporta le versioni di connettore avanzate 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per controllare la versione del connettore avanzato, passa alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+>
+>* Vedi [Esame di certificazione dei partner per Workfront per il connettore avanzato Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedi [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 Per installare il connettore, effettua le seguenti operazioni:
 
