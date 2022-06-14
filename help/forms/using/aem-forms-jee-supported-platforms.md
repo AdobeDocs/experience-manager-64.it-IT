@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ In questo documento sono elencate le piattaforme client e server supportate per 
 >
 >* Per un elenco completo delle eccezioni alle piattaforme server supportate, vedi [Eccezioni alle piattaforme server supportate](#exceptions-to-supported-server-platforms).
 >* AEM Forms su JEE supporta solo le versioni inglese, francese, tedesca e giapponese dei sistemi operativi e delle applicazioni supportati.
-
 >
 
 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 >
 >* AEM Forms su JEE supporta solo JVM a 64 bit in ambienti di produzione.
 >* Si consiglia di tenere traccia dei bollettini sulla sicurezza dal fornitore Java per garantire la sicurezza degli ambienti di produzione e installare gli ultimi aggiornamenti Java.
-
 >
 
 
@@ -113,27 +111,27 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
   <tr> 
    <td><p>File system</p> </td> 
    <td><p>Microkernel dell'archivio (file TAR MK)</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
   <tr> 
    <td><p>MongoDB Enterprise 3.4</p> </td> 
    <td><p>Microkernel dell'archivio</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
   <tr> 
    <td>IBM DB2 11.1</td> 
    <td>Microkernel dell'archivio</td> 
-   <td>Supportata</td> 
+   <td>Funzione supportata</td> 
   </tr> 
   <tr> 
    <td><p>Oracle Database 12c versione 1</p> </td> 
    <td><p>Microkernel dell'archivio</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
    <td><p>Microkernel dell'archivio</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -175,13 +173,13 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
    <td><p>MySQL 5.7.19<br /> </p> </td> 
    <td><p>Microkernel dell'archivio</p> </td> 
    <td><p>Previsto lavoro</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
    <td><p>Microkernel dell'archivio</p> </td> 
    <td><p>Previsto lavoro</p> </td> 
-   <td><p>Supportata</p> </td> 
+   <td><p>Funzione supportata</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>Connettore MySQL/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar(versione 5.1.30)</p> </td> 
+   <td><p>Connettore MySQL/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(versione 5.1.44)</p> </td> 
    <td><p>Fornito con AEM Forms per l’installazione JEE</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Driver JDBC di Microsoft® SQL Server 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Driver JDBC di Microsoft® SQL Server 6.2.1.0 (obsoleto) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>Fornito con AEM Forms per l’installazione JEE.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Driver JDBC di Microsoft® SQL Server 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Scarica dal sito web Microsoft.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -332,7 +335,6 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 >
 >* AEM Forms su JEE supporta solo sistemi operativi a 64 bit.
 >* Il servizio PDF Generator non è supportato in Windows 10.
-
 >
 
 
@@ -520,7 +522,6 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 >* Il servizio HTML2PDF è obsoleto su AIX.
 >* Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
 >* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ Per ulteriori requisiti consulta:
 >[!NOTE]
 >
 >* Forms Portal è supportato solo su Safari in iPad.
-
 >
 
 
