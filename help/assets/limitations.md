@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 3%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -28,12 +28,13 @@ Questo argomento include le sezioni seguenti:
 
 Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazione della pagina, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
+| Risorsa - Tipo limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
 | --- | --- | --- | --- |
-| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 |  |
-| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
-| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
-| **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
+| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
+| **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 | Non applicabile |
+| **Tutti i set** - Numero massimo di risorse per set | 5-10 immagini per set | 1000 | Non applicabile |
+| **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 | Non applicabile |
+| **PDF** - Numero massimo di pagine per un PDF da considerare per l’estrazione |  | 5000 (per nuovi caricamenti) | 100 (per tutti i PDF) |
 
 <!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->

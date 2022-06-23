@@ -12,9 +12,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 8d049122fd2a5b39274d0fdcb268dcf660fbc40f
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2729'
 ht-degree: 12%
 
 ---
@@ -36,9 +36,9 @@ Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al mome
 
 Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
-| --- | --- | --- |
-| Numero di ritagli avanzati per immagine | 5 | 100 |
+| Tipo di limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
+| --- | --- | --- | --- |
+| Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 

@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 6%
@@ -31,7 +31,7 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
@@ -117,7 +117,7 @@ L&#39;ordine in cui le immagini appaiono in un set 360 gradi ha importanza. Assi
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 

@@ -12,9 +12,9 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2146'
 ht-degree: 11%
 
 ---
@@ -39,10 +39,10 @@ Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di co
 
 Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
-| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
@@ -140,10 +140,10 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
 Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
-| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
