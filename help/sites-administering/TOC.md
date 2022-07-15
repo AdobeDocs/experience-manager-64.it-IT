@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guida utente all’amministrazione di AEM 6.4
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
-feature: Amministrazione
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 20%
+source-wordcount: '648'
+ht-degree: 34%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 20%
 # Guida utente all’amministrazione di AEM 6.4 {#administering}
 
 + [Panoramica sull’amministrazione della Guida utente](home.md)
-+ Funzioni dei siti {#introduction}
++ Funzioni di Sites {#introduction}
    + [Amministrazione di siti Web](msm-and-translation.md)
    + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
-   + [Console Panoramica di Live Copy](msm-livecopy-overview.md)
+   + [Panoramica Live Copy](msm-livecopy-overview.md)
    + [Configurazione della sincronizzazione di una Live Copy](msm-sync.md)
    + [Creazione e sincronizzazione di Live Copy](msm-livecopy.md)
    + [Conflitti di rollout MSM](msm-rollout-conflicts.md)
@@ -32,7 +32,7 @@ ht-degree: 20%
    + [Identificazione del contenuto da tradurre](tc-rules.md)
    + [Preparazione del contenuto per la traduzione](tc-prep.md)
    + [Creazione di una directory principale della lingua utilizzando l’interfaccia classica](tc-lroot-classic.md)
-   + [Connessione a Microsoft Translator](tc-msconf.md)
+   + [Connetti a Microsoft Translator](tc-msconf.md)
    + [Configurazione del framework di integrazione della traduzione](tc-tic.md)
    + [Creazione guidata copia lingua](tc-wizard.md)
    + [Miglioramenti alla traduzione](tc-enhancements.md)
@@ -77,12 +77,12 @@ ht-degree: 20%
    + [OWASP Top 10](owasp-top10.md)
    + [Esecuzione di AEM in modalità pronta per la produzione](production-ready.md)
    + [Gestione identità](identity-management.md)
-   + [Autenticazione Adobe IMS e supporto Admin Console per AEM Managed Services](ims-config-and-admin-console.md)
+   + [Autenticazione Adobe IMS e supporto per Admin Console per AEM Managed Services](ims-config-and-admin-console.md)
    + [Creazione di un gruppo utenti chiuso](cug.md)
    + [Riduzione dei problemi di serializzazione in AEM](mitigating-serialization-issues.md)
    + [Sincronizzazione utente](sync.md)
    + [Supporto token incapsulati](encapsulated-token.md)
-   + [Single Sign On](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
+   + [Single Sign On](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html?lang=it)
    + [Controllare le operazioni di gestione degli utenti in AEM](audit-user-management-operations.md)
    + [SSL per impostazione predefinita](ssl-by-default.md)
    + [Gestore di autenticazione SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -124,7 +124,7 @@ ht-degree: 20%
    + [Configurazione del tracciamento video per Adobe Analytics](adobeanalytics-video.md)
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](scene7-http2faq.md)
    + [Risoluzione dei problemi relativi all’integrazione di Adobe Campaign](troubleshooting-campaignintegration.md)
-   + [Licenze di SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
+   + [Licenze SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
    + [Connettore SharePoint](sharepoint-connector.md)
    + [Domande frequenti sulla fine del ciclo di vita del visualizzatore DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Integrazione con Adobe Campaign Classic](campaignonpremise.md)

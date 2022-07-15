@@ -220,5 +220,5 @@ ht-degree: 26%
    + [Web per dispositivi mobili](mobile-web.md)
    + [Creazione di filtri per i gruppi di dispositivi](groupfilters.md)
    + [Progettazione reattiva per le pagine web](responsive.md)
-   + [Creazione di siti per dispositivi Mobile](mobile.md)
+   + [Creazione di siti per dispositivi mobili](mobile.md)
    + [Emulatori](emulators.md)
