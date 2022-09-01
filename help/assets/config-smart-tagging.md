@@ -1,20 +1,27 @@
 ---
 title: Configura l’assegnazione tag alle risorse utilizzando il Servizio di contenuti avanzati.
-description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati migliorati in [!DNL Adobe Experience Manager] utilizzando il Servizio di contenuti avanzati.
+description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati in [!DNL Adobe Experience Manager], utilizzando il Servizio di contenuti avanzati.
 contentOwner: AG
-feature: Tag avanzati, assegnazione tag
+feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 53%
+source-wordcount: '1304'
+ht-degree: 50%
 
 ---
 
 # Configurare l’assegnazione tag delle risorse tramite il Servizio di contenuti avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
-Puoi integrare [!DNL Adobe Experience Manager] con il Servizio di contenuti avanzati utilizzando [!DNL Adobe Developer Console]. Utilizza questa configurazione per accedere al Servizio di contenuti avanzati da [!DNL Experience Manager].
+È possibile integrare [!DNL Adobe Experience Manager] con il Servizio di contenuti avanzati utilizzando [!DNL Adobe Developer Console]. Utilizza questa configurazione per accedere al Servizio di contenuti avanzati da [!DNL Experience Manager].
+
+>[!NOTE]
+>
+>* I servizi di contenuti avanzati non sono più disponibili per la nuova [!DNL Experience Manager Assets] Clienti on-premise. I clienti on-premise esistenti che dispongono già di questa funzionalità abilitata possono continuare a utilizzare i Servizi di contenuti avanzati.
+>* Smart Content Services è disponibile per i servizi esistenti [!DNL Experience Manager Assets] Clienti Managed Services che dispongono già di questa funzionalità abilitata.
+>* Nuovo [!DNL Experience Manager Assets] I clienti Managed Services possono seguire le istruzioni riportate in questo articolo per configurare i servizi per contenuti avanzati.
+
 
 L’articolo descrive le seguenti attività chiave necessarie per configurare il Servizio di contenuti avanzati. Nel back-end, il server di [!DNL Experience Manager] autentica le credenziali del servizio con il gateway di prima di inoltrare la richiesta al Servizio di contenuti avanzati.[!DNL Adobe Developer Console]
 
@@ -22,11 +29,11 @@ L’articolo descrive le seguenti attività chiave necessarie per configurare il
 
 1. [Crea un’integrazione in Adobe Developer Console](#create-adobe-i-o-integration) e carica la chiave pubblica generata.
 
-1. [Configura la ](#configure-smart-content-service) distribuzione utilizzando la chiave API e altre credenziali di  [!DNL Adobe Developer Console].
+1. [Configurare la distribuzione](#configure-smart-content-service) utilizzo della chiave API e di altre credenziali da [!DNL Adobe Developer Console].
 
 1. [Verifica la configurazione](#validate-the-configuration).
 
-1. Facoltativamente, [abilita l&#39;assegnazione tag automatica al caricamento delle risorse](#enable-smart-tagging-in-the-update-asset-workflow-optional).
+1. Facoltativamente, [abilitare l’assegnazione tag automatica al caricamento delle risorse](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## Prerequisiti {#prerequisites}
 
@@ -36,21 +43,28 @@ Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue per
 
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 
-Per abilitare i tag avanzati migliorati, oltre a quanto indicato sopra, installa anche l’ ultimo [Service Pack di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it).
+Per abilitare i tag avanzati migliorati, oltre a quanto sopra, installa anche l’ [Service Pack di Experience Manager](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
 
 ## Creare una configurazione del Servizio di contenuti avanzati per ottenere un certificato pubblico {#obtain-public-certificate}
 
-Un certificato pubblico ti consente di autenticare il profilo su [!DNL Adobe Developer Console].
+Un certificato pubblico consente di autenticare il profilo su [!DNL Adobe Developer Console].
 
 1. Nell’interfaccia di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**.
 
-1. Nella pagina Cloud Services, fai clic su **[!UICONTROL Configura ora]** in **[!UICONTROL Tag avanzati risorse]**.
+1. Nella pagina Cloud Services, fai clic su **[!UICONTROL Configura ora]** sotto **[!UICONTROL Tag avanzati risorse]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la configurazione di tag avanzati. Fai clic su **[!UICONTROL Crea]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Servizio di contenuti avanzati AEM]**, usa i seguenti valori:
 
-   **[!UICONTROL URL servizio]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   Esempio: `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
+
+   >[!NOTE]
+   >
+   >Se il provisioning di Experience Manager Managed Service è precedente al 10 settembre 2022, utilizza il seguente URL di servizio:
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Server autorizzazioni]**: `https://ims-na1.adobelogin.com`
 
@@ -63,7 +77,7 @@ Un certificato pubblico ti consente di autenticare il profilo su [!DNL Adobe Dev
 
    >[!NOTE]
    >
-   >L&#39;URL fornito come [!UICONTROL URL del servizio] non è accessibile tramite il browser e genera un errore 404. La configurazione funziona correttamente con lo stesso valore del parametro [!UICONTROL URL servizio] . Per informazioni sullo stato generale del servizio e sul programma di manutenzione, consulta [https://status.adobe.com](https://status.adobe.com).
+   >L’URL fornito come [!UICONTROL URL servizio] non è accessibile tramite browser e genera un errore 404. La configurazione funziona correttamente con lo stesso valore del [!UICONTROL URL servizio] parametro . Per informazioni sullo stato generale del servizio e sul programma di manutenzione, consulta [https://status.adobe.com](https://status.adobe.com).
 
 1. Fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]** e scarica il file del certificato pubblico `AEM-SmartTags.crt`.
 
@@ -78,7 +92,7 @@ Dopo la scadenza di un certificato, non è più attendibile. Non è possibile ri
 
 1. Accedi alla tua implementazione di [!DNL Experience Manager] come amministratore. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
 
-1. Individua e fai clic sull’utente **[!UICONTROL dam-update-service]**. Fare clic sulla scheda **[!UICONTROL Registro chiavi]**.
+1. Individua e fai clic sull’utente **[!UICONTROL dam-update-service]**. Fai clic su **[!UICONTROL Keystore]** scheda .
 
 1. Elimina il registro chiavi esistente **[!UICONTROL similaritysearch]** con il certificato scaduto. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
@@ -90,17 +104,17 @@ Dopo la scadenza di un certificato, non è più attendibile. Non è possibile ri
 
 1. Per scaricare un certificato pubblico, fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]**.
 
-1. Accedi a [https://console.adobe.io](https://console.adobe.io) e passa ai Servizi di contenuti avanzati esistenti nella pagina **[!UICONTROL Integrazioni]**. Carica il nuovo certificato. Per ulteriori informazioni, consulta le istruzioni in [Creare l’integrazione di Adobe Developer Console](#create-adobe-i-o-integration).
+1. Accedi a [https://console.adobe.io](https://console.adobe.io) e passa ai Servizi di contenuti avanzati esistenti nella pagina **[!UICONTROL Integrazioni]**. Carica il nuovo certificato. Per ulteriori informazioni, consulta le istruzioni in [Creare l’integrazione con la console Adobe Developer](#create-adobe-i-o-integration).
 
-## Creare l’integrazione con Adobe Developer Console {#create-adobe-i-o-integration}
+## Creare l’integrazione con la console Adobe Developer {#create-adobe-i-o-integration}
 
-Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione in Adobe Developer Console per ottenere [!UICONTROL Chiave API] (generata nel campo [!UICONTROL ID CLIENT] dell’integrazione Adobe Developer Console), [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE] e [!UICONTROL ID ACCOUNT CLIENT SECRET] per [!UICONTROL Assets Smart Tagging Service Settings] della configurazione cloud in [!DNL Experience Manager].
+Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione nella console Adobe Developer per ottenere [!UICONTROL Chiave API] (generato in [!UICONTROL ID CLIENT] campo dell’integrazione della console Adobe Developer), [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE]e [!UICONTROL SEGRETO CLIENT] per [!UICONTROL Impostazioni del servizio di assegnazione tag avanzati delle risorse] della configurazione cloud in [!DNL Experience Manager].
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io/) in un browser. Seleziona l’account appropriato e verifica che il ruolo aziendale associato sia quello di amministratore di sistema.
 
 1. Crea un progetto con il nome desiderato. Fai clic su **[!UICONTROL Aggiungi API]**.
 
-1. Nella pagina **[!UICONTROL Aggiungi un API]**, seleziona **[!UICONTROL Experience Cloud]**, quindi seleziona **[!UICONTROL Contenuto avanzato]**. Fai clic su **[!UICONTROL Avanti]**.
+1. Sulla **[!UICONTROL Aggiungere un’API]** pagina, seleziona **[!UICONTROL Experience Cloud]** quindi seleziona **[!UICONTROL Contenuto avanzato]**. Fai clic su **[!UICONTROL Avanti]**.
 
 1. Seleziona **[!UICONTROL Carica la chiave pubblica]**. Fornisci il file del certificato scaricato da [!DNL Experience Manager]. Viene visualizzato il messaggio [!UICONTROL Chiavi pubbliche caricate correttamente]. Fai clic su **[!UICONTROL Avanti]**.
 
@@ -110,15 +124,15 @@ Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione
 
 1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**.
 
-   In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in [!UICONTROL Impostazioni del servizio di tag avanzati risorse] della configurazione cloud in [!DNL Experience Manager] per configurare tag avanzati.
+   In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in [!UICONTROL Impostazioni del servizio di assegnazione tag avanzati delle risorse] della configurazione cloud in [!DNL Experience Manager] per configurare tag avanzati.
 
    ![Nella scheda Panoramica, puoi esaminare le informazioni fornite sull’integrazione.](assets/integration_details.png)
 
-   *Figura: Dettagli dell’integrazione in Adobe Developer Console*
+   *Figura: Dettagli dell’integrazione nella console Adobe Developer*
 
 ## Configurare il Servizio di contenuti avanzati {#configure-smart-content-service}
 
-Per configurare l’integrazione, utilizza i valori dei campi [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL CLIENT SECRET] e [!UICONTROL ID CLIENT] dall’integrazione di Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l’autenticazione delle richieste API dalla distribuzione [!DNL Experience Manager].
+Per configurare l’integrazione, utilizza i valori di [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL SEGRETO CLIENT]e [!UICONTROL ID CLIENT] campi dell’integrazione della console Adobe Developer. La creazione di una configurazione cloud di tag avanzati consente l’autenticazione delle richieste API da [!DNL Experience Manager] distribuzione.
 
 1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Cloud Service > Servizi cloud precedenti]** per aprire la console [!UICONTROL Cloud Services].
 
@@ -126,7 +140,7 @@ Per configurare l’integrazione, utilizza i valori dei campi [!UICONTROL ID ACC
 
 1. Nella finestra di dialogo **[!UICONTROL Servizio di contenuti avanzati AEM]**, utilizza i valori precompilati per i campi **[!UICONTROL URL servizio]** e **[!UICONTROL Server autorizzazioni]**.
 
-1. Per i campi [!UICONTROL Chiave API], [!UICONTROL ID account tecnico], [!UICONTROL ID organizzazione] e [!UICONTROL Segreto client], copia e utilizza i seguenti valori generati in [Integrazione Adobe Developer Console](#create-adobe-i-o-integration).
+1. Per i campi [!UICONTROL Chiave Api], [!UICONTROL ID account tecnico], [!UICONTROL ID organizzazione]e [!UICONTROL Segreto client], copia e utilizza i seguenti valori generati in [Integrazione con la console Adobe Developer](#create-adobe-i-o-integration).
 
    | [!UICONTROL Impostazioni servizio tag avanzati di Assets] | [!DNL Adobe Developer Console] campi di integrazione |
    |--- |--- |
@@ -189,6 +203,6 @@ Dopo aver completato la configurazione, utilizza un MBean JMX per convalidare la
 >[!MORELIKETHIS]
 >
 >* [Gestire tag avanzati](managing-smart-tags.md)
-* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
-* [Linee guida e regole per la formazione del Servizio di contenuti avanzati](smart-tags-training-guidelines.md)
+>* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
+>* [Linee guida e regole per la formazione del Servizio di contenuti avanzati](smart-tags-training-guidelines.md)
 
