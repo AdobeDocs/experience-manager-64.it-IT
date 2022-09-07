@@ -8,10 +8,10 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
-ht-degree: 4%
+source-wordcount: '5619'
+ht-degree: 3%
 
 ---
 
@@ -93,8 +93,8 @@ Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo a
 
       >[!IMPORTANT]
       >
-      >In un’istanza di Experience Manager è supportata una sola configurazione Dynamic Media in Cloud Services; non aggiungere più di una configurazione. Configurazioni Dynamic Media multiple su un&#39;istanza di Experience Manager è _not_ supportato o consigliato dall’Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL Percorso cartella principale della società]**
+      >In un’istanza di Experience Manager è supportata una sola configurazione Dynamic Media in Cloud Services; non aggiungere più di una configurazione. Configurazioni Dynamic Media multiple su un&#39;istanza di Experience Manager è *not* supportato o consigliato dall’Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Percorso cartella principale della società]** - Percorso della cartella principale della tua azienda.
    * **[!UICONTROL Pubblicazione delle risorse]** - l&#39;opzione **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l’URL/da incorporare immediatamente. Non è necessario alcun intervento degli utenti per pubblicare le risorse. Opzione **[!UICONTROL All&#39;attivazione]** significa che devi pubblicare esplicitamente la risorsa prima prima di fornire un collegamento URL/Incorpora .
    * **[!UICONTROL Server di anteprima protetto]** - consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, Experience Manager può accedere in modo sicuro e visualizzare in anteprima le rappresentazioni Dynamic Media remote (nessun file binario viene inviato nuovamente all’istanza di Experience Manager).
 
