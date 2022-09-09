@@ -8,10 +8,10 @@ breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 87%
 
 ---
 
@@ -78,7 +78,6 @@ ht-degree: 0%
    + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analisi delle prestazioni della pagina](ci-analyze.md)
    + [Visualizzazione dei dati analitici sulle pagine](pa-using.md)
-   + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](search-and-promote.md)
 + Personalizzazione {#personalization}
    + [Personalizzazione](personalization.md)
    + [Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub](ch-previewing.md)

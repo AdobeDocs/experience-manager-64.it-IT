@@ -8,7 +8,7 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -117,7 +117,7 @@ ht-degree: 0%
    + [Integrazione con Salesforce](salesforce.md)
    + [Integrazione con Adobe Target](target.md)
    + [Integrazione con Livefyre](livefyre.md)
-   + [Integrazione con Adobe Analytics](adobeanalytics.md)
+   + [Integrazione con Adobe Analytics ](adobeanalytics.md)
    + [Connessione ad Adobe Analytics e creazione di framework](adobeanalytics-connect.md)
    + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](adobeanalytics-link.md)
    + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](adobeanalytics-mapping.md)
@@ -132,7 +132,6 @@ ht-degree: 0%
    + [Integrazione con Adobe Campaign Standard](campaignstandard.md)
    + [Avviso sulla fine del ciclo di vita dei visualizzatori Flash](flash-viewers-eol.md)
    + [Integrazione con Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [Feed di prodotto](product-feed.md)
    + [Integrazione con Adobe Dynamic Tag Management](dtm.md)
    + [Accesso ad Adobe Analytics e Adobe Target](opt-in.md)
    + [Portali AEM e portlet](aem-as-portal.md)
@@ -150,7 +149,6 @@ ht-degree: 0%
    + [Configurazione manuale dell’integrazione con Adobe Target](target-configuring.md)
    + [Prerequisiti per l’integrazione con Adobe Target](target-requirements.md)
    + [Classificazioni Adobe](adobeanalytics-classifications.md)
-   + [Integrazione con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
    + [Integrazione di Target con i frammenti esperienza](experience-fragments-target.md)
 + Best practice   {#bestpractices}

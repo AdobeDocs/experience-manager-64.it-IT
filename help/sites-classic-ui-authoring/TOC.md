@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6.4
 breadcrumb-title: Guida all’authoring con interfaccia classica
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
-feature: 'Authoring  '
+feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 80%
+source-wordcount: '265'
+ht-degree: 78%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 80%
    + [Configurazione dell’ambiente dell’account](author-env-user-props.md)
    + [Selezione dell’interfaccia](author-env-select-ui.md)
    + [Ricerca](author-env-search.md)
-   + [Casella in entrata  ](author-env-inbox.md)
-   + [Scelte rapide da tastiera per le console  ](author-env-keyboard-shortcuts.md)
+   + [Casella in entrata](author-env-inbox.md)
+   + [Scelte rapide da tastiera per console](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Authoring delle pagine](classic-page-author.md)
    + [Ambiente e strumenti di authoring](classic-page-author-env-tools.md)
@@ -45,12 +45,11 @@ ht-degree: 80%
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
-   + [Layout reattivo  ](classic-page-author-responsive-layout.md)
+   + [Layout reattivo](classic-page-author-responsive-layout.md)
    + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
-   + [Utilizzo dei tag  ](classic-feature-tags.md)
+   + [Utilizzo dei tag](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](classic-page-author-design-mode.md)
-   + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](classic-feature-search-promote.md)
    + [Componenti](classic-page-author-default-components.md)
 + Flussi di lavoro {#workflows}
    + [Partecipazione ai flussi di lavoro](classic-workflows-participating.md)
