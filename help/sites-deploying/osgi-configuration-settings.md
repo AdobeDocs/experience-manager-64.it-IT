@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ Per ulteriori informazioni, consulta: [https://cwiki.apache.org/confluence/displ
 * **Utente script** - questa proprietà opzionale può specificare l&#39;account utente dell&#39;archivio utilizzato per leggere gli script. Se non viene specificato alcun account, `admin` l&#39;utente viene utilizzato per impostazione predefinita.
 
 * **Estensioni predefinite** Elenco di estensioni per le quali verrà utilizzato il comportamento predefinito. Questo significa che l’ultimo segmento del percorso del tipo di risorsa può essere utilizzato come nome dello script.
-
-**Helper font GFX Day Commons** Quando si esegue il rendering di immagini, è possibile utilizzare DrawText per incorporare il testo. Per questo è anche possibile installare i propri font:
 
 * Definisci la **Percorso font** per cercare font specifici per il progetto.
 
