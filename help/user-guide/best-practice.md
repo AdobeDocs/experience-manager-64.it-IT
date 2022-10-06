@@ -1,64 +1,62 @@
 ---
-title: Tecniche consigliate per AEM 6.4
-seo-title: Tecniche consigliate per AEM 6.4
-description: Risorse per procedure ottimali, risoluzione dei problemi e formazione per AEM 6.4
-seo-description: Risorse per procedure ottimali, risoluzione dei problemi e formazione per AEM 6.4
+title: Best practice per AEM 6.4
+seo-title: AEM 6.4 Best Practices
+description: Risorse per procedure consigliate, risoluzione dei problemi e formazione per AEM 6.4
+seo-description: Resources for best practices, troubleshooting and training for AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+exl-id: ba222869-1268-481d-b342-27ea12b15999
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 51%
+source-wordcount: '409'
+ht-degree: 52%
 
 ---
 
-
-# AEM 6.4 Best practice {#aem-64-best-practices}
+# Best practice per AEM 6.4 {#aem-64-best-practices}
 
 ## Dove è possibile trovare ulteriori istruzioni e risorse formative per AEM? {#training}
 
 Adobe offre numerose risorse per imparare a sfruttare al meglio AEM.
 
 * [Il nostro catalogo ufficiale AEM formazione è qui.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
-* Per ottenere la certificazione su AEM, la nostra [guida completa alle AEM Certificazioni ufficiali è disponibile qui.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
+* Se stai cercando di ottenere la certificazione su AEM, la nostra [la guida completa alle Certificazioni AEM ufficiali è disponibile qui.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
 
 La community AEM produce costantemente flussi di lavoro di esempio, esercitazioni e campioni di codice per contenuti basati sui suggerimenti ricevuti e sul lavoro di squadra.
 
-* [L&#39;elenco completo delle esercitazioni e dei video AEM 6.4 è disponibile qui.](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [È disponibile un elenco completo degli articoli di guida AEM Community.](https://helpx.adobe.com/it/experience-manager/topics/how-to.html)
+* [Un elenco completo delle esercitazioni e dei video AEM 6.4 è disponibile qui.](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html#videos-and-tutorials)
 * [Un elenco completo degli articoli AEM knowledge base è disponibile qui.](https://helpx.adobe.com/it/experience-manager/kb/index/full_kb_list.html)
 
 ## Best practice per AEM {#best-practices}
 
-* [Procedure ottimali per la gestione di un progetto da implementare AEM](/help/managing/best-practices.md)
+* [Best practice per la gestione di un progetto da implementare AEM](/help/managing/best-practices.md)
 * [Best practice per l’authoring in AEM](/help/sites-authoring/best-practices.md)
 * [Best practice per l’amministrazione di AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practice per lo sviluppo in AEM](/help/sites-developing/best-practices.md)
 * [Best practice per l’ottimizzazione per i motori di ricerca e la gestione degli URL](/help/managing/seo-and-url-management.md)
 * [Linee guida sull’accessibilità di AEM per il Web](/help/managing/web-accessibility.md)
-* [AEM e GDPR](/help/managing/data-protection-and-privacy.md)
+* [Preparazione AEM e RGPD](/help/managing/data-protection-and-privacy.md)
 
 ## Guide introduttive per diverse funzionalità di AEM {#getting-started}
 
 AEM viene impiegato in molti modi diversi nelle organizzazioni e la sua ampia gamma di funzionalità risponde alle diverse esigenze all’interno di una stessa azienda. Se sei alle prime armi, ti consigliamo di consultare le nostre guide introduttive:
 
-* [Guida introduttiva alla piattaforma AEM e ai siti](/help/sites-deploying/deploy.md#getting-started)
+* [Guida introduttiva a AEM Platform e Sites](/help/sites-deploying/deploy.md#getting-started)
 * [Guida introduttiva di AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Guida introduttiva di AEM Communities](/help/communities/getting-started.md)
-* [Guida introduttiva di AEM Livefyre](https://answers.livefyre.com/developers/getting-started/)
+* [Guida introduttiva di AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-Abbiamo anche una nuova [Esercitazione WKND, che è una guida passo-passo alla creazione del primo sito Web utilizzando AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), nonché una [ricetta passo-passo per distribuire la nostra soluzione Digital Foundation](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), per la quale AEM è un elemento chiave.
+Abbiamo anche un nuovo [Esercitazione WKND, una guida dettagliata alla creazione del primo sito web utilizzando AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) nonché [ricetta passo per l&#39;implementazione della soluzione Digital Foundation](https://experienceleague.adobe.com/#courses), per il quale AEM un elemento fondamentale.
 
 ## Implementazioni consigliate per AEM {#deployments}
 
 I MicroKernel operano come gestori di persistenza; è importante comprenderne il funzionamento per la corretta implementazione di AEM. La scelta di un MicroKernel adatto alle tue esigenze dipende dallo scopo della tua istanza e dal tipo di implementazione che prevedi di effettuare. [Scopri gli utilizzi raccomandati nelle configurazioni più comuni di AEM.](/help/sites-deploying/recommended-deploys.md)
 
-## AEM elenco di controllo della protezione {#security-checklist}
+## Lista di controllo AEM {#security-checklist}
 
-La sicurezza è un fattore chiave da considerare nell’installazione di AEM. [Scoprite i vari passaggi e le misure necessarie per garantire che l&#39;installazione AEM sia sicura al momento della distribuzione.](/help/sites-administering/security-checklist.md) Le misure dovrebbero essere applicate nell’ordine in cui sono elencate.
+La sicurezza è un fattore chiave da considerare nell’installazione di AEM. [Scopri i vari passaggi e le misure necessarie per garantire che l’installazione di AEM sia sicura quando distribuita.](/help/sites-administering/security-checklist.md) Le misure dovrebbero essere applicate nell’ordine in cui sono elencate.
 
-## AEM domande frequenti {#faq}
+## Domande frequenti AEM {#faq}
 
-Controllate le [AEM FAQ](/help/sites-administering/aem-faqs.md) per ottenere le risposte ad alcune delle domande più frequenti sui AEM.
+Controlla la [Domande frequenti su AEM](/help/sites-administering/aem-faqs.md) per ottenere le risposte ad alcune delle domande più frequenti su AEM.
