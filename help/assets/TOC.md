@@ -8,8 +8,8 @@ breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 49%
 
 ---
 
@@ -48,12 +48,12 @@ ht-degree: 0%
    + [Profili video di Dynamic Media](video-profiles.md)
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
-   + [Imaging avanzato con rapporto pixel del dispositivo lato client](client-side-dpr.md)
+   + [Imaging avanzato con proporzioni pixel del dispositivo lato client](client-side-dpr.md)
    + [Video](s7-video.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
-   + [Limiti Dynamic Media](limitations.md)
+   + [Limiti di Dynamic Media](limitations.md)
    + [Set di immagini](image-sets.md)
    + [Set di file multimediali diversi](mixed-media-sets.md)
    + [Set 360 gradi](spin-sets.md)
@@ -135,7 +135,7 @@ ht-degree: 0%
    + [Utilizzo di frammenti di contenuto](content-fragments.md)
    + [Gestione dei frammenti di contenuto](content-fragments-managing.md)
    + [Modelli per frammenti di contenuto](content-fragments-models.md)
-   + [Varianti - Authoring dei contenuti di frammenti](content-fragments-variations.md)
+   + [Varianti - Authoring dei contenuti di frammenti ](content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments-metadata.md)
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments-delete.md)
