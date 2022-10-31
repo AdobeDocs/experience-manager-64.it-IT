@@ -9,7 +9,7 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 39518ffbbcd1368cff02c356246dc5b430cc14d6
+source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per co
 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | Indicatore generale che il nodo è collegato a Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | Indicatore generale che il nodo è collegato a Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** o testo di errore | Stato del caricamento della risorsa in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Deve essere popolato per generare URL per la risorsa remota di Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` oppure `failed:<error text>` | Stato di sincronizzazione di set (set 360 gradi, set di immagini e così via), predefiniti immagine, predefiniti visualizzatore, aggiornamenti mappa immagine per una risorsa o immagini modificate. |
@@ -249,7 +249,7 @@ Esempio:
 Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:
 
 1. Passa a CRXDE Lite.
-1. Eliminare `<sync-folder>/_CSS/_OOTB`.
+1. Elimina `<sync-folder>/_CSS/_OOTB`.
 1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
 1. Cerca il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Seleziona **Reinstalla**.
