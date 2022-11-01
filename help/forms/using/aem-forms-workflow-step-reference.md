@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Passaggi Forms Workflow {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi ti consentono di creare rapidamente flussi di lavoro incentrati su Forms basati su moduli adattivi su OSGi. Questi flussi di lavoro possono essere utilizzati per lo sviluppo di flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi di Forms Workflow per avviare document services, integrarsi con il flusso di lavoro della firma Adobe Sign ed eseguire altre operazioni AEM Forms. Richiedi [Componente aggiuntivo AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) per utilizzare questi passaggi in un flusso di lavoro.
+I passaggi del flusso di lavoro Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi ti consentono di creare rapidamente flussi di lavoro incentrati su Forms basati su moduli adattivi su OSGi. Questi flussi di lavoro possono essere utilizzati per lo sviluppo di flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi di Forms Workflow per avviare document services, integrarsi con il flusso di lavoro della firma Acrobat Sign ed eseguire altre operazioni AEM Forms. Richiedi [Componente aggiuntivo AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) per utilizzare questi passaggi in un flusso di lavoro.
 
 ## Assegna passaggio attività {#assign-task-step}
 
@@ -214,11 +214,11 @@ Il passaggio Invoke Form Data Model Service presenta i campi elencati di seguito
 
 ## Passaggio Firma documento {#sign-document-step}
 
-Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i documenti. Il passaggio Firma documento ha le seguenti proprietà:
+Il passaggio Firma documento consente di utilizzare Acrobat Sign per firmare i documenti. Il passaggio Firma documento ha le seguenti proprietà:
 
 * **Nome accordo:** Specifica il titolo del contratto. Il nome del contratto fa parte dell’oggetto e del corpo del messaggio e-mail inviato ai firmatari.
 * **Impostazioni internazionali:** Specifica la lingua per le opzioni di e-mail e verifica.
-* **Configurazione di Adobe Sign Cloud**: Scegli una configurazione cloud di Adobe Sign. Se non hai configurato Adobe Sign per AEM Forms, consulta [Integrare Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Configurazione di Acrobat Sign Cloud**: Scegli una configurazione cloud di Acrobat Sign. Se non hai configurato Acrobat Sign per AEM Forms, consulta [Integrare Acrobat Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Documento da firmare:** È possibile scegliere un documento da una posizione relativa al payload, utilizzare il payload come documento o specificare un percorso assoluto del documento.
 * **Percorso allegato di input:** Selezionare un allegato. Questi allegati sono inclusi nel documento di firma. È possibile mantenere gli allegati in una posizione relativa al payload o specificare un percorso assoluto degli allegati.
@@ -234,8 +234,8 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 * **Selezionare i firmatari:** Specificare il metodo per scegliere i firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
 * **Script o servizio per selezionare i firmatari:** L’opzione è disponibile solo se nel campo Seleziona firmatari è selezionata l’opzione Dinamicamente . È possibile specificare uno script ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica di un documento.
 
-* **Dettagli del firmatario:** L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari . Specifica l’indirizzo e-mail e scegli un meccanismo di verifica facoltativo. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato.
-* **Variabile di stato:** Un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un&#39;istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene lo stato di una variabile.
+* **Dettagli del firmatario:** L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona firmatari . Specifica l’indirizzo e-mail e scegli un meccanismo di verifica facoltativo. Prima di selezionare un meccanismo di verifica in due fasi, assicurati che l’opzione di verifica corrispondente sia abilitata per l’account Acrobat Sign configurato.
+* **Variabile di stato:** Un documento abilitato per Acrobat Sign memorizza lo stato di firma del documento in una variabile. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un&#39;istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene lo stato di una variabile.
 * **Percorso documento firmato:** Specificare il percorso in cui conservare i documenti firmati. È possibile scegliere di sovrascrivere il file di payload o posizionare il documento firmato in una posizione all’interno della directory di payload.
 
 ## Passaggi di Document Services {#document-services-steps}

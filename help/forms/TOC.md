@@ -8,7 +8,7 @@ user-guide-title: Guida di Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 4%
@@ -119,7 +119,7 @@ ht-degree: 4%
       + [Flussi di lavoro JEE Forms](using/forms-workflow-jee-handling-user-data.md)
       + [Portale Forms](using/forms-portal-handling-user-data.md)
       + [Gestione della corrispondenza](using/correspondence-management-handling-user-data.md)
-      + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [Integrazione con Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Hardening dell’ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Hardening e protezione dei moduli AEM in ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 4%
 + Forms adattivo - Authoring avanzato {#adaptive-forms-advanced-authoring}
    + [Creazione di moduli adattivi tramite lo schema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Creazione di moduli adattivi tramite schema XML](using/adaptive-form-xml-schema-form-model.md)
-   + [Utilizzo di Adobe Sign in un modulo adattivo](using/working-with-adobe-sign.md)
+   + [Utilizzo di Acrobat Sign in un modulo adattivo](using/working-with-adobe-sign.md)
    + [Creazione e utilizzo dei temi](using/themes.md)
    + [Editor di regole per moduli adattivi](using/rule-editor.md)
    + [API per richiamare il servizio del modello dati modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 4%
    + [Verifica automatica dei moduli adattivi](using/calvin.md)
    + [Costruzioni di stile per i moduli adattivi](using/styling-constructs-adaptive-forms.md)
    + [Sincronizzazione di Adaptive Forms con i modelli di moduli XFA](using/synchronizing-adaptive-forms-xfa.md)
-   + [Integrare Adobe Sign con AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [Integrare Acrobat Sign con AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Creazione e gestione di revisioni per le risorse nei moduli](using/create-reviews-forms.md)
    + [Messaggi di errore di convalida standard per i moduli adattivi](using/standard-validation-error-messages-adaptive-forms.md)
 + Comunicazioni interattive {#interactive-communications}

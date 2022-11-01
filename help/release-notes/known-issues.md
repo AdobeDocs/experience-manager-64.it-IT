@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 4%
@@ -133,9 +133,9 @@ Se utilizzi Microsoft Edge come browser:
 
 (CQ-4238462)
 
-### Integrazione Adobe Sign
+### Integrazione Acrobat Sign
 
-* La pianificazione di Adobe Sign smette di funzionare in modo intermittente, pertanto il segno in sospeso dei moduli non passa all’invio. Per risolvere il problema, riavvia il **Supporto per l&#39;utilità di pianificazione Apache Sling** dalla console Web AEM all&#39;indirizzo https://[*server*]:[*porta*]/system/console/bundles.
+* La pianificazione di Acrobat Sign smette di funzionare in modo intermittente, pertanto il segno in sospeso dei moduli non passa all’invio. Per risolvere il problema, riavvia il **Supporto per l&#39;utilità di pianificazione Apache Sling** dalla console Web AEM all&#39;indirizzo https://[*server*]:[*porta*]/system/console/bundles.
 
 ### Authoring Forms adattivo
 

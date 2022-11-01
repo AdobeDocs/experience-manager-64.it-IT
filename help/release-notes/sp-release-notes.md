@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 1537055fd88cbc3b01e4df7855a99f993f2052e4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '21547'
 ht-degree: 26%
@@ -942,7 +942,7 @@ Elementi di rilievo di AEM 6.4.4.0 Forms:
 
 **Pacchetto di componenti aggiuntivi per Forms**
 
-**Integrazione Adobe Sign**
+**Integrazione Acrobat Sign**
 
 * AEM 6.4 Forms Client SDK non contiene il pacchetto adobesign-recipent. NPR-27735: Hotfix per CQ-4259372
 
@@ -1185,7 +1185,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.3.0 sono:
 * Le modifiche alle esperienze AEM create tramite il motore di targeting non vengono pubblicate. NPR-24869: Hotfix per CQ-4247832
 * Non è possibile creare più attività ed esperienze se i loro nomi includono caratteri giapponesi. NPR-27271: Hotfix per CQ-4256857
 * Aggiorna l&#39;endpoint API di Launch. NPR-26790: Hotfix per CQ-4254380
-* (Personalization) BrandsRetriever percorre l&#39;intero albero. NPR-27060: Hotfix per CQ-4255790
+* (Personalizzazione) BrandsRetriever percorre l’intero albero. NPR-27060: Hotfix per CQ-4255790
 
 **WCM - Interfaccia utente amministratore**
 
@@ -1568,7 +1568,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 
 * (Area di lavoro HTML) Quando un utente richiede un’attività, il numero nella coda viene aggiornato per quel particolare utente, ma non per altri utenti, a meno che la pagina non venga aggiornata. Questo problema è stato risolto da una nuova proprietà. Per configurare questa nuova proprietà nell&#39;istanza AEM, consulta le relative impostazioni di configurazione. NPR-24536: Hotfix per CQ-4233665
 * Impossibile caricare il modulo di grandi dimensioni nell&#39;app AEM Forms alla versione 6.4. NPR-24463: Hotfix per CQ-4245091
-* Problema nell&#39;app di Mobile Workspace quando si tenta di visualizzare l&#39;attività condivisa. NPR-25177: Hotfix per CQ-4248733
+* Problema nell’app di Workspace mobile quando si tenta di visualizzare l’attività condivisa. NPR-25177: Hotfix per CQ-4248733
 * Comportamento di convalida incoerente tra Web e APK. NPR-25670: Hotfix per CQ-4248178
 * Quando si effettua una chiamata a un servizio Web e si apre un modulo HTML5 all’interno del client, questa non riesce e viene restituito un messaggio di errore. NPR-26048: Hotfix per CQ-4244716
 * Problema durante la chiamata del servizio in AEM forms Windows app 6.3. NPR-26468: Hotfix per CQ-4252341
@@ -1752,12 +1752,12 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 * TargetContentImpl rallenta l’esecuzione di AEM durante le query con tempi di esecuzione lunghi. NPR-22359: Hotfix per CQ-4236907
 * Il motore target (mbox.js, at.js) non utilizza URL gestiti e utilizza URL contenenti due punti, che potrebbero non riuscire con determinate implementazioni. NPR-22434: Hotfix per CQ-4237854
 * In modalità Target gli autori possono modificare un componente ereditato dalla blueprint senza annullare l’ereditarietà. NPR-22865: Hotfix per CQ-4237907
-* (Personalization) Le icone sono deformate quando si passa alla vista a schede. NPR-23373, NPR-23374: Hotfix per CQ-4240018, CQ-4240019
-* (Personalization) La console Pubblico non mostra i tipi di cartella nt:folder. NPR-23375: Hotfix per CQ-4242293
+* (Personalizzazione) Le icone sono deformate quando si passa alla vista Scheda. NPR-23373, NPR-23374: Hotfix per CQ-4240018, CQ-4240019
+* (Personalizzazione) La console Pubblico non mostra i tipi di cartella nt:folder. NPR-23375: Hotfix per CQ-4242293
 * Quando un componente è destinato a un’istanza di pubblicazione, un effetto sfarfallio rende brevemente visibile l’esperienza predefinita prima di quella di destinazione. NPR-23415: Hotfix per CQ-4242038
 * (Console Adobe IMS) La configurazione del servizio AccessTokenProvider OSGi viene visualizzata nuovamente dopo l’eliminazione. NPR-23520: Hotfix per CQ-4208250
 * Impossibile eseguire la replica dei riferimenti di configurazione con la struttura di cartelle intermedia. NPR-23485: Hotfix per CQ-4242751
-* (Personalization) clientlib bloccato dal servlet proxy. NPR-23521: Hotfix per CQ-4240995
+* (Personalizzazione) clientlib bloccato dal servlet proxy. NPR-23521: Hotfix per CQ-4240995
 * (Console Adobe IMS) Le soluzioni Cloud registrate non vengono raccolte nella procedura guidata di configurazione. NPR-23977: Hotfix per CQ-4244549
 * Ciclo infinito durante il caricamento di contenuto mirato su pagine senza estensione HTML. NPR-23522: Hotfix per CQ-4223600
 * L&#39;attivazione non riesce per una pagina con riferimenti di configurazione Dynamic Tag Management ereditati. NPR-23485: Hotfix per CQ-4242751
@@ -1806,7 +1806,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 * Casella in entrata progetto: il passaggio alla visualizzazione calendario mostra il contenuto della casella in entrata principale. Hotfix per CQ-4244436
 * Impossibile selezionare le finestre di dialogo nel passaggio Partecipante finestra di dialogo. Hotfix per CQ-4244532
 * Backport proattivo per correzioni granite.omnisearch.core. NPR-23536
-* Problema nell’app Mobile Workspace 6.4 con attività condivisa. NPR-26383
+* Problema nell’app Workspace 6.4 per dispositivi mobili con attività condivisa. NPR-26383
 
 **WCM - Traduzione**
 
@@ -1832,7 +1832,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 
 **Gestione dei frammenti di contenuto**
 
-* L’eliminazione del componente riempie i registri con tracce di stack. Hotfix per CQ-4242315
+* L’eliminazione del componente riempie i registri con le tracce di stack. Hotfix per CQ-4242315
 
 **DAM - Generale**
 
@@ -1947,7 +1947,7 @@ Gli elementi di rilievo di AEM Forms sono:
 * Errori nei registri di migrazione per l’istanza di authoring e pubblicazione. Hotfix per CQ-4239365
 * Errori nei registri di migrazione per l’istanza di authoring e pubblicazione. Hotfix per CQ-4239635
 * Errore di deserializzazione come &quot;Deserializzazione non consentita per la classe sun.util.calendar.ZoneInfo&quot; nei registri di errore dopo l&#39;invio di un Modulo adattivo. Hotfix per CQ-4240419
-* Il campo Stato non viene compilato nel rendering del modulo Mobile. Hotfix per CQ-4240597
+* Il campo Stato non viene compilato nel rendering dei moduli mobili. Hotfix per CQ-4240597
 * Rimuovere l&#39;utilizzo di riferimento dei componenti nei modelli dall&#39;elenco anti-pattern. Hotfix per CQ-4239217
 * La casella numerica di HTML5 impostata come Mobile o Decimal restituisce risultati di convalida diversi in browser diversi. NPR-23528: Hotfix per CQ-4244097
 * (Caricamento immagine) L&#39;immagine non viene visualizzata nell&#39;anteprima DOR. Hotfix per CQ-4243178
